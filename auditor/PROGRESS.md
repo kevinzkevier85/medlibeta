@@ -42,4 +42,4 @@ node auditor/tools/check_site.mjs END 52                     # QA ในเว�
 - ยังไม่ได้ทำ `tools/run.py` (§7) กับ `crop_images.py` (ชุดนี้ไม่มีรูป)
 
 ## Last session
-2026-11-07: pilot end_52_MCQ ครบทุก phase
+2026-11-07: pilot end_52_MCQ ครบทุก phase · MedLib v0.4.0: export ใช้ `papers` (ไม่ใช่ lectures) + `time_limit_min`; เว็บแสดงเป็นชุดแบบ CVS

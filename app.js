@@ -27,6 +27,31 @@
   const enabledBlocks = () => APP.blocks.filter((b) => S().showSample || !b._sample);
   const visibleBlocks = () => enabledBlocks().filter((b) => !S().hiddenBlocks.includes(b.id));
   const findBlock = (id) => APP.blocks.find((b) => b.id === id);
+  // a PDF in a block: a lecture or an original exam/key paper
+  const docOf = (b, id) => b.lectures.find((x) => x.id === id) || b.papers.find((x) => x.id === id) || null;
+  const refDoc = (r) => r.lecture || r.paper;
+  const findSet = (b, sid) => b && b.sets.find((s) => s.id === sid);
+  const TYPE_TH = { MCQ: "Multiple Choice Question — ปรนัยเลือกตอบ", KF: "Key Feature — สถานการณ์ จุดตัดสินใจ", OSPE: "Objective Structured Practical Exam — สถานี/รูป" };
+
+  /* ---------- quiz progress per set (browser storage) ---------- */
+  const QKEY = "medlib.quiz.v1";
+  let QUIZ = (() => { try { const q = JSON.parse(localStorage.getItem(QKEY) || "null"); return q && typeof q === "object" ? q : {}; } catch (e) { return {}; } })();
+  const saveQuiz = () => { try { localStorage.setItem(QKEY, JSON.stringify(QUIZ)); } catch (e) { /* storage blocked */ } };
+  const freshQuiz = () => ({ mode: "practice", ans: {}, chk: {}, flag: {}, submitted: false, elapsed: 0, filter: "all", rounds: 0 });
+  function quizOf(b, s) {
+    const k = `${b.id}/${s.id}`;
+    if (!QUIZ[k] || typeof QUIZ[k] !== "object") QUIZ[k] = freshQuiz();
+    return Object.assign(QUIZ[k], Object.assign(freshQuiz(), QUIZ[k]));
+  }
+  const isRight = (st, q) => st.chk[q.id] && st.ans[q.id] === q.answer;
+  const isWrong = (st, q) => st.chk[q.id] && st.ans[q.id] !== q.answer;
+  function quizStats(b, s) {
+    const st = quizOf(b, s); const qs = s.questions;
+    const checked = qs.filter((q) => st.chk[q.id]).length, right = qs.filter((q) => isRight(st, q)).length;
+    const answered = qs.filter((q) => st.ans[q.id]).length;
+    return { st, total: qs.length, checked, right, wrong: checked - right, answered, flagged: qs.filter((q) => st.flag[q.id]).length };
+  }
+  const mmss = (sec) => `${Math.floor(sec / 60)}:${String(Math.floor(sec % 60)).padStart(2, "0")}`;
   const allExams = (b) => b.exams.concat(USER.questions.filter((q) => q.block === b.id).map((q) => Object.assign({}, q, { _personal: true })));
   const examsOf = (b) => (S().showDrafts ? allExams(b) : allExams(b).filter((q) => q.answer_status === "verified"));
   function findQuestion(id) {
@@ -54,13 +79,17 @@
         const be = V.validateBlock(b);
         if (be.length) { APP.problems.push(`บล็อก ${id}: ${be.slice(0, 3).join(" · ")}`); continue; }
         if (findBlock(b.id)) { APP.problems.push(`รหัสบล็อก ${b.id} ซ้ำ`); continue; }
-        Object.assign(b, { _base: `${base}/${id}`, _sample: !!sample, exams: [] });
+        Object.assign(b, { _base: `${base}/${id}`, _sample: !!sample, exams: [], sets: [], papers: b.papers || [] });
         for (const sid of b.exam_sets) {
           try {
             const set = await getJSON(`${b._base}/exams/${sid}.json`);
             const se = V.validateExamSet(set, b);
             if (se.length) { APP.problems.push(`${id}/${sid}: ${se.slice(0, 3).join(" · ")}`); continue; }
-            b.exams.push(...set.questions);
+            const qs = set.questions.slice().sort((x, y) => x.n - y.n);
+            qs.forEach((q) => { q._set = sid; });
+            const m = set.meta || {};
+            b.sets.push({ id: sid, meta: m, cohort: m.cohort || (qs[0] && qs[0].cohort) || 0, type: m.type || "MCQ", title: m.title || sid, questions: qs });
+            b.exams.push(...qs);
           } catch (e) { APP.problems.push(e.message); }
         }
         APP.blocks.push(b);
@@ -70,7 +99,7 @@
 
   /* ---------- menu ---------- */
   function side(view, args) {
-    const cur = ["b", "l", "q", "pdf"].includes(view) ? (view === "q" ? (findQuestion(args[0]) || {}).b?.id : args[0]) : null;
+    const cur = ["b", "l", "q", "pdf", "set"].includes(view) ? (view === "q" ? (findQuestion(args[0]) || {}).b?.id : args[0]) : null;
     const v = APP.version;
     $("#side").innerHTML = [
       `<span class="lbl">บล็อก</span>`,
@@ -95,7 +124,7 @@
       return `<a class="card" href="#/b/${enc(b.id)}">
         <span class="code">${esc(b.id)}${b._sample ? `<span class="pill exam">ตัวอย่าง</span>` : ""}</span>
         <span style="font-weight:600">${esc(b.name)}${b.year ? ` <span class="hint">· ${esc(b.year)}</span>` : ""}</span>
-        <span class="stats"><span>${b.lectures.length} บท</span><span>${ex.length} ข้อสอบ</span></span>
+        <span class="stats"><span>${b.lectures.length} บท</span><span>${b.sets.length} ชุดข้อสอบ</span><span>${ex.length} ข้อ</span></span>
         <span class="meter"><span style="width:${done}%"></span></span>
         <span class="hint">เฉลยยืนยันแล้ว ${done}%</span></a>`;
     }).join("");
@@ -113,7 +142,7 @@
   function viewBlock(id, tab) {
     const b = findBlock(id);
     if (!b) return notFound(`ไม่พบบล็อก ${id}`);
-    tab = tab === "exam" || tab === "lec" ? tab : S().defaultTab;
+    tab = tab === "exam" || tab === "lec" ? tab : !b.lectures.length ? "exam" : S().defaultTab;
     const ex = examsOf(b);
     const lec = b.lectures.map((l) => {
       const n = ex.filter((e) => e.refs.some((r) => r.lecture === l.id)).length;
@@ -121,13 +150,42 @@
         <span class="t">${esc(l.title)}<span class="sub">${l.lecturer ? esc(l.lecturer) + " · " : ""}${l.pages} หน้า${l.drive_file_id || l.file ? "" : " · ยังไม่มีไฟล์ PDF"}</span></span>
         <span class="meta">${n ? `<span class="pill exam">ออกสอบ ${n} ข้อ</span>` : ""}</span></a>`;
     }).join("");
-    const exRows = ex.map((e) => `<a class="row" href="#/q/${enc(e.id)}"><span class="id">${e.cohort} · ข้อ ${e.n}</span>
-        <span class="t">${esc(e.stem.slice(0, 80))}${e.stem.length > 80 ? "…" : ""}<span class="sub">${esc(e.tags.join(" · "))}</span></span>
-        <span class="meta">${e._personal ? `<span class="pill">ของฉัน</span>` : ""}${e.answer_status !== "verified" ? `<span class="pill exam">${e.answer_status === "disputed" ? "มีข้อโต้แย้ง" : "เฉลยร่าง"}</span>` : ""}</span></a>`).join("");
+    const nSetQ = b.sets.reduce((a, s) => a + s.questions.length, 0);
+    const mine = USER.questions.filter((q) => q.block === b.id);
+    const body = tab === "lec"
+      ? `<div class="rows">${lec || `<p class="hint">ยังไม่มี lecture ในบล็อกนี้${b.papers.length || b.sets.length ? " · ข้อสอบเก่าและไฟล์เฉลยอยู่ในแท็บ <a href=\"#/b/" + enc(b.id) + "/exam\">ข้อสอบ</a>" : ""}</p>`}</div>`
+      : examSetsHtml(b) + (mine.length ? `<h3>ข้อที่ฉันเพิ่มเอง (${mine.length})</h3><div class="rows">${mine.map((e) => `<a class="row" href="#/q/${enc(e.id)}"><span class="id">${e.cohort} · ข้อ ${e.n}</span><span class="t">${esc(e.stem.slice(0, 80))}${e.stem.length > 80 ? "…" : ""}</span><span class="meta"><span class="pill">ของฉัน</span></span></a>`).join("")}</div>` : "");
     main.innerHTML = `<div class="crumbs"><a href="#/">ทั้งหมด</a><span>/</span><span>${esc(b.name)}</span></div>
       <div class="head"><h2>${esc(b.name)} <span class="mono hint">${esc(b.id)}</span></h2>${b._sample ? `<p class="hint">บล็อกนี้เป็นข้อมูลตัวอย่าง ไฟล์ PDF ไม่ใช่ lecture จริง</p>` : ""}</div>
-      <div class="tabs"><a class="tab ${tab === "lec" ? "on" : ""}" href="#/b/${enc(b.id)}/lec">Lecture (${b.lectures.length})</a><a class="tab ${tab === "exam" ? "on" : ""}" href="#/b/${enc(b.id)}/exam">ข้อสอบ (${ex.length})</a></div>
-      <div class="rows">${tab === "lec" ? lec || `<p class="hint" style="padding:12px 0">ยังไม่มี lecture</p>` : exRows || `<p class="hint" style="padding:12px 0">ยังไม่มีข้อสอบ</p>`}</div>`;
+      <div class="tabs"><a class="tab ${tab === "lec" ? "on" : ""}" href="#/b/${enc(b.id)}/lec">Lecture (${b.lectures.length})</a><a class="tab ${tab === "exam" ? "on" : ""}" href="#/b/${enc(b.id)}/exam">ข้อสอบ (${b.sets.length} ชุด · ${nSetQ} ข้อ)</a></div>
+      ${body}`;
+  }
+
+  // Exam tab: one card per cohort (newest first); inside, one tile per exam type set + the original PDFs.
+  function examSetsHtml(b) {
+    const cohorts = [...new Set([...b.sets.map((s) => s.cohort), ...b.papers.map((p) => p.cohort)])].sort((x, y) => y - x);
+    if (!cohorts.length) return `<p class="hint" style="padding:12px 0">ยังไม่มีข้อสอบในบล็อกนี้</p>`;
+    const cards = cohorts.map((c) => {
+      const sets = b.sets.filter((s) => s.cohort === c);
+      const types = [...new Set([...sets.map((s) => s.type), ...b.papers.filter((p) => p.cohort === c).map((p) => p.type)])];
+      const total = sets.reduce((a, s) => a + s.questions.length, 0);
+      const tiles = types.map((t) => {
+        const s = sets.find((x) => x.type === t);
+        const pdfs = b.papers.filter((p) => p.cohort === c && p.type === t)
+          .map((p) => `<a class="pdflink" href="#/pdf/${enc(b.id)}/${enc(p.id)}/1">${p.role === "key" ? "PDF เฉลย" : "PDF ข้อสอบ"}</a>`).join("");
+        if (!s) return `<div class="settile off"><span class="settype">${esc(t)}</span><span class="hint">ยังไม่ได้ทำเป็นข้อสอบออนไลน์</span><span class="pdfs">${pdfs}</span></div>`;
+        const k = quizStats(b, s);
+        const prog = k.checked ? `ทำแล้ว ${k.checked}/${k.total} · ถูก ${k.right}` : k.answered ? `ตอบแล้ว ${k.answered}/${k.total}` : "ยังไม่ได้ทำ";
+        const pct = k.total ? Math.round((k.checked / k.total) * 100) : 0;
+        return `<div class="settile"><a class="setmain" href="#/set/${enc(b.id)}/${enc(s.id)}">
+            <span class="settype">${esc(t)}<span class="setn">${s.questions.length} ข้อ</span></span>
+            <span class="hint">${esc(TYPE_TH[t] || "")}</span>
+            <span class="meter"><span style="width:${pct}%"></span></span><span class="hint">${prog}</span></a>
+          ${pdfs ? `<span class="pdfs">${pdfs}</span>` : ""}</div>`;
+      }).join("");
+      return `<section class="cohort"><h3>รุ่น ${c} <span class="hint">${total} ข้อ</span></h3><div class="settiles">${tiles}</div></section>`;
+    }).join("");
+    return `<p class="hint">เลือกรุ่นและประเภทข้อสอบ · ความคืบหน้าเก็บไว้ในเบราว์เซอร์นี้</p>${cards}`;
   }
 
   function viewLecture(bid, lid) {
@@ -156,19 +214,122 @@
       const cls = p ? (k === q.answer ? "right" : k === p ? "wrong" : "") : "";
       return `<button class="opt ${cls}" data-pick="${esc(k)}"><b>${esc(k)}</b><span>${esc(v)}</span></button>`;
     }).join("");
-    const refs = q.refs.map((r) => {
-      const l = b.lectures.find((x) => x.id === r.lecture);
-      return `<a class="ref" href="#/pdf/${enc(b.id)}/${enc(r.lecture)}/${r.pages[0]}"><span class="mono">${esc(r.lecture)}</span>${esc(l ? l.title : "")} · หน้า ${pagesText(r.pages)} <span class="hint">เปิด PDF</span></a>`;
-    }).join("");
-    const status = q.answer_status === "verified" ? `<span class="pill good">เฉลยยืนยันแล้ว</span>` : q.answer_status === "disputed" ? `<span class="pill bad">เฉลยมีข้อโต้แย้ง</span>` : `<span class="pill exam">เฉลยร่าง · รอตรวจ</span>`;
-    main.innerHTML = `<div class="crumbs"><a href="#/">ทั้งหมด</a><span>/</span><a href="#/b/${enc(b.id)}/exam">${esc(b.name)}</a><span>/</span><span>รุ่น ${q.cohort} ข้อ ${q.n}</span></div>
-      <div class="chips"><span class="pill">รุ่น ${q.cohort}</span><span class="pill">MCQ</span>${status}${q._personal ? `<span class="pill">ของฉัน</span>` : ""}</div>
+    const refs = refsHtml(b, q);
+    const status = statusPill(q);
+    const s = findSet(b, q._set);
+    const setLink = s ? `<a href="#/set/${enc(b.id)}/${enc(s.id)}/${s.questions.indexOf(q) + 1}">รุ่น ${q.cohort} · ${esc(s.type)}</a><span>/</span>` : "";
+    main.innerHTML = `<div class="crumbs"><a href="#/">ทั้งหมด</a><span>/</span><a href="#/b/${enc(b.id)}/exam">${esc(b.name)}</a><span>/</span>${setLink}<span>ข้อ ${q.n}</span></div>
+      <div class="chips"><span class="pill">รุ่น ${q.cohort}</span><span class="pill">MCQ</span>${status}${q._personal ? `<span class="pill">ของฉัน</span>` : ""}${s ? `<a class="pill" href="#/set/${enc(b.id)}/${enc(s.id)}/${s.questions.indexOf(q) + 1}">ทำทั้งชุด</a>` : ""}</div>
       <p class="stem ${S().fontSize === "large" ? "large" : ""}">${esc(q.stem)}</p>
       <div class="opts">${opts}</div>
       ${p ? `<div class="explain"><h3>${p === q.answer ? "ถูกต้อง" : `ยังไม่ใช่ คำตอบคือ ${esc(q.answer)}`}</h3>${q.explanation ? `<p>${esc(q.explanation)}</p>` : ""}
-        <div class="section" style="padding:0;gap:8px"><span class="hint">อ่านเพิ่มใน lecture</span>${refs}</div>
+        <div class="section" style="padding:0;gap:8px"><span class="hint">ดูต้นฉบับ / อ่านเพิ่ม</span>${refs}</div>
         <div class="btns"><button class="btn" data-act="retry">ลองใหม่</button></div></div>`
-      : `<p class="hint">เลือกคำตอบเพื่อดูเฉลยและหน้า lecture ที่เกี่ยวข้อง</p>`}`;
+      : `<p class="hint">เลือกคำตอบเพื่อดูเฉลยและหน้าต้นฉบับที่เกี่ยวข้อง</p>`}`;
+  }
+
+  const statusPill = (q) => q.answer_status === "verified" ? `<span class="pill good">เฉลยยืนยันแล้ว</span>`
+    : q.answer_status === "disputed" ? `<span class="pill bad">เฉลยรอตรวจ</span>` : `<span class="pill exam">เฉลยร่าง</span>`;
+  function refsHtml(b, q) {
+    return q.refs.map((r) => {
+      const id = refDoc(r); const d = docOf(b, id);
+      const label = r.paper ? (d && d.role === "key" ? "ต้นฉบับเฉลย" : "ต้นฉบับข้อสอบ") : esc(id);
+      return `<a class="ref" href="#/pdf/${enc(b.id)}/${enc(id)}/${r.pages[0]}"><span class="mono">${label}</span>${esc(d ? d.title : "")} · หน้า ${pagesText(r.pages)} <span class="hint">เปิด PDF</span></a>`;
+    }).join("");
+  }
+
+  /* ---------- exam set runner (whole set, like the CVS quiz) ---------- */
+  let QT = null; // timer interval
+  function stopTimer() { if (QT) { clearInterval(QT); QT = null; } }
+  function setList(st, s) {
+    const f = st.filter;
+    return s.questions.filter((q) => f === "wrong" ? isWrong(st, q) : f === "flag" ? st.flag[q.id] : f === "todo" ? !(st.mode === "exam" ? st.ans[q.id] : st.chk[q.id]) : true);
+  }
+  function viewSet(bid, sid, arg) {
+    const b = findBlock(bid); const s = findSet(b, sid);
+    if (!s) return notFound("ไม่พบชุดข้อสอบนี้");
+    const st = quizOf(b, s); const k = quizStats(b, s);
+    const sum = arg === "sum";
+    const base = `#/set/${enc(b.id)}/${enc(s.id)}`;
+    const limit = Number(s.meta.time_limit_min) || 0;
+    const timerTxt = () => limit ? (st.elapsed >= limit * 60 ? `หมดเวลา · ${mmss(st.elapsed)}` : `เหลือ ${mmss(limit * 60 - st.elapsed)}`) : `เวลา ${mmss(st.elapsed)}`;
+    const head = `<div class="crumbs"><a href="#/">ทั้งหมด</a><span>/</span><a href="#/b/${enc(b.id)}/exam">${esc(b.name)}</a><span>/</span><span>รุ่น ${s.cohort} · ${esc(s.type)}</span></div>
+      <div class="head"><h2>${esc(s.title)}</h2><p class="hint">${s.questions.length} ข้อ${limit ? ` · เวลาสอบจริง ${limit} นาที` : ""} · ความคืบหน้าเก็บไว้ในเบราว์เซอร์นี้</p></div>
+      <div class="tabs"><a class="tab ${sum ? "" : "on"}" href="${base}">ทำข้อสอบ</a><a class="tab ${sum ? "on" : ""}" href="${base}/sum">สรุปผล${k.checked ? ` (${k.right}/${k.checked})` : ""}</a></div>`;
+    stopTimer();
+    if (sum) { main.innerHTML = head + setSummaryHtml(b, s, st, k, base, limit); return; }
+
+    const list = setList(st, s);
+    let i = Math.max(1, Math.min(s.questions.length, Number(arg) || 0));
+    if (!Number(arg)) { const first = s.questions.findIndex((q) => !(st.mode === "exam" ? st.ans[q.id] : st.chk[q.id])); i = first >= 0 ? first + 1 : 1; }
+    const q = s.questions[i - 1];
+    const pos = list.indexOf(q);
+    const prev = pos > 0 ? list[pos - 1] : pos === -1 ? list.filter((x) => x.n < q.n).pop() : null;
+    const next = pos >= 0 ? list[pos + 1] : list.find((x) => x.n > q.n);
+    const idx = (x) => s.questions.indexOf(x) + 1;
+    const a = st.ans[q.id], shown = !!st.chk[q.id];
+    const exam = st.mode === "exam" && !st.submitted;
+
+    const grid = list.map((x) => {
+      const cls = [x === q ? "cur" : "", st.chk[x.id] ? (st.ans[x.id] === x.answer ? "right" : "wrong") : st.ans[x.id] ? "ans" : "", st.flag[x.id] ? "flag" : ""].join(" ");
+      return `<button class="qn ${cls}" data-qgo="${idx(x)}" title="ข้อ ${x.n}">${x.n}</button>`;
+    }).join("") || `<span class="hint">ไม่มีข้อที่ตรงกับตัวกรองนี้ เปลี่ยนตัวกรองเพื่อดูข้ออื่น</span>`;
+    const opts = Object.entries(q.options).map(([key, v]) => {
+      const cls = shown ? (key === q.answer ? "right" : key === a ? "wrong" : "") : key === a ? "sel" : "";
+      return `<button class="opt ${cls}" data-qpick="${esc(key)}" ${shown ? "disabled" : ""}><b>${esc(key)}</b><span>${esc(v)}</span></button>`;
+    }).join("");
+    const fb = shown ? `<div class="explain"><h3>${!a ? `ไม่ได้ตอบ · คำตอบคือ ${esc(q.answer)}` : a === q.answer ? "ถูกต้อง" : `ยังไม่ใช่ คำตอบคือ ${esc(q.answer)}`}</h3>
+        ${q.explanation ? `<p>${esc(q.explanation)}</p>` : ""}
+        <div class="section" style="padding:0;gap:8px"><span class="hint">ดูต้นฉบับ</span>${refsHtml(b, q)}</div>
+        ${st.mode === "practice" ? `<div class="btns"><button class="btn" data-qact="redo">ลองข้อนี้ใหม่</button></div>` : ""}</div>`
+      : st.mode === "practice" ? `<p class="hint">เลือกคำตอบแล้วเฉลยจะขึ้นทันที · กด A–E เลือก, ← → เปลี่ยนข้อ, F ปักธง</p>`
+      : `<p class="hint">โหมดจับเวลา: เลือกคำตอบได้จนกว่าจะส่ง เฉลยจะขึ้นหลังกด "ส่งคำตอบทั้งหมด"</p>`;
+    const sel = (v, label) => `<option value="${v}" ${st.filter === v ? "selected" : ""}>${label}</option>`;
+    main.innerHTML = head + `
+      <div class="qbar">
+        <div class="seg"><button class="${st.mode === "practice" ? "on" : ""}" data-qmode="practice">ฝึก (เฉลยทันที)</button><button class="${st.mode === "exam" ? "on" : ""}" data-qmode="exam">จับเวลา</button></div>
+        ${st.mode === "exam" ? `<span class="timer ${limit && st.elapsed >= limit * 60 ? "over" : ""}" id="qtimer">${st.submitted ? `ส่งแล้ว · ใช้เวลา ${mmss(st.elapsed)}` : timerTxt()}</span>` : ""}
+        <span class="hint">${st.mode === "exam" && !st.submitted ? `ตอบแล้ว ${k.answered}/${k.total}` : `ตรวจแล้ว ${k.checked}/${k.total} · ถูก ${k.right}`}</span>
+        <label class="qfilter">แสดง <select data-qfilter="1">${sel("all", "ทุกข้อ")}${sel("todo", "ยังไม่ได้ทำ")}${sel("wrong", "เฉพาะข้อที่ผิด")}${sel("flag", "เฉพาะข้อที่ปักธง")}</select></label>
+        <button class="btn danger sm" data-qact="reset">เริ่มชุดนี้ใหม่</button>
+      </div>
+      <details class="qnav" ${window.matchMedia("(min-width: 761px)").matches || st.navOpen ? "open" : ""}><summary>ตารางข้อ <span class="hint">ข้อ ${q.n} · ${i}/${s.questions.length}${k.flagged ? ` · ปักธง ${k.flagged}` : ""}</span></summary><div class="qgrid">${grid}</div></details>
+      <div class="qcard">
+        <div class="chips"><span class="pill">ข้อ ${q.n}</span><span class="hint">ลำดับ ${i}/${s.questions.length}</span>${q.answer_status !== "verified" ? statusPill(q) : ""}${st.flag[q.id] ? `<span class="pill exam">ปักธงไว้</span>` : ""}</div>
+        <p class="stem ${S().fontSize === "large" ? "large" : ""}">${esc(q.stem)}</p>
+        <div class="opts">${opts}</div>
+        ${fb}
+      </div>
+      <div class="qfoot">
+        <button class="btn" data-qgo="${prev ? idx(prev) : ""}" ${prev ? "" : "disabled"}>← ข้อก่อนหน้า</button>
+        <button class="btn ${st.flag[q.id] ? "pri" : ""}" data-qact="flag">${st.flag[q.id] ? "เอาธงออก" : "ปักธงไว้ทบทวน"}</button>
+        ${exam ? `<button class="btn pri" data-qact="submit">ส่งคำตอบทั้งหมด</button>` : ""}
+        <button class="btn" data-qgo="${next ? idx(next) : ""}" ${next ? "" : "disabled"}>ข้อถัดไป →</button>
+      </div>`;
+    const qc = $(".qcard"); if (qc && qc.getBoundingClientRect().top < 0) qc.scrollIntoView({ block: "start" });
+    if (exam) {
+      let tick = 0;
+      QT = setInterval(() => {
+        const el = $("#qtimer"); if (!el) return stopTimer();
+        st.elapsed++; el.textContent = timerTxt(); el.classList.toggle("over", !!limit && st.elapsed >= limit * 60);
+        if (++tick % 5 === 0) saveQuiz();
+      }, 1000);
+    }
+  }
+  function setSummaryHtml(b, s, st, k, base, limit) {
+    if (!k.checked) return `<div class="note"><h3>ยังไม่มีข้อที่ตรวจแล้ว</h3><p class="hint">${st.mode === "exam" ? "โหมดจับเวลา: กด \"ส่งคำตอบทั้งหมด\" เมื่อทำเสร็จ" : "โหมดฝึก: เลือกคำตอบแล้วเฉลยจะขึ้นทันที"} แล้วผลจะสรุปที่นี่</p><a class="btn pri" href="${base}">ไปทำข้อสอบ</a></div>`;
+    const pct = Math.round((k.right / k.checked) * 100);
+    const wrong = s.questions.filter((q) => isWrong(st, q));
+    const flagged = s.questions.filter((q) => st.flag[q.id]);
+    const unsure = s.questions.filter((q) => q.answer_status !== "verified");
+    const row = (q, extra) => `<a class="row" href="${base}/${s.questions.indexOf(q) + 1}"><span class="id">ข้อ ${q.n}</span><span class="t">${esc(q.stem.slice(0, 90))}${q.stem.length > 90 ? "…" : ""}</span><span class="meta">${extra}</span></a>`;
+    return `<div class="score"><div><b>${k.right}</b><span>/ ${k.checked} ข้อที่ตรวจแล้ว</span></div><div><b>${pct}%</b><span>ถูก</span></div>
+        <div><b>${k.total - k.checked}</b><span>ข้อที่ยังไม่ได้ทำ</span></div>${st.mode === "exam" && st.elapsed ? `<div><b>${mmss(st.elapsed)}</b><span>เวลาที่ใช้${limit ? ` (จาก ${limit} นาที)` : ""}</span></div>` : ""}</div>
+      <div class="btns">${wrong.length ? `<button class="btn pri" data-qact="redowrong">ทำซ้ำเฉพาะข้อที่ผิด (${wrong.length} ข้อ)</button>` : `<span class="pill good">ไม่มีข้อที่ผิด</span>`}
+        <button class="btn danger" data-qact="reset">เริ่มชุดนี้ใหม่</button>${st.rounds ? `<span class="hint">วนทำซ้ำมาแล้ว ${st.rounds} รอบ</span>` : ""}</div>
+      <h3>ข้อที่ผิด (${wrong.length})</h3><div class="rows">${wrong.map((q) => row(q, `<span class="pill bad">ตอบ ${esc(st.ans[q.id] || "–")}</span><span class="pill good">เฉลย ${esc(q.answer)}</span>`)).join("") || `<p class="hint">ไม่มี</p>`}</div>
+      ${flagged.length ? `<h3>ข้อที่ปักธงไว้ (${flagged.length})</h3><div class="rows">${flagged.map((q) => row(q, st.chk[q.id] ? (isRight(st, q) ? `<span class="pill good">ถูก</span>` : `<span class="pill bad">ผิด</span>`) : `<span class="pill">ยังไม่ทำ</span>`)).join("")}</div>` : ""}
+      ${unsure.length ? `<h3>ข้อที่เฉลยยังไม่ยืนยัน (${unsure.length})</h3><p class="hint">เฉลยมาจากต้นฉบับ แต่โจทย์/ช้อยส์อาจไม่ครบหรือมีมากกว่าหนึ่งคำตอบ อ่านเหตุผลท้ายคำอธิบาย</p><div class="rows">${unsure.map((q) => row(q, statusPill(q))).join("")}</div>` : ""}`;
   }
 
   function viewSearch(query) {
@@ -244,14 +405,15 @@
   }
 
   async function viewPdf(bid, lid, page) {
-    const b = findBlock(bid); const l = b && b.lectures.find((x) => x.id === lid);
-    if (!l) return notFound("ไม่พบ lecture นี้");
+    const b = findBlock(bid); const l = b && docOf(b, lid);
+    if (!l) return notFound("ไม่พบไฟล์ PDF นี้");
     const src = pdfSource(b, l);
-    const qs = examsOf(b).filter((e) => e.refs.some((r) => r.lecture === l.id && r.pages.includes(page)));
+    const qs = examsOf(b).filter((e) => e.refs.some((r) => refDoc(r) === l.id && r.pages.includes(page)));
+    const isPaper = b.papers.includes(l);
     const shellKey = `${bid}/${lid}`;
     if (!$("#pdfstage") || main.dataset.pdf !== shellKey) {
       main.dataset.pdf = shellKey;
-      main.innerHTML = `<div class="crumbs"><a href="#/">ทั้งหมด</a><span>/</span><a href="#/b/${enc(b.id)}">${esc(b.name)}</a><span>/</span><a href="#/l/${enc(b.id)}/${enc(l.id)}">${esc(l.id)}</a><span>/</span><span id="pgcrumb">หน้า ${page}</span></div>
+      main.innerHTML = `<div class="crumbs"><a href="#/">ทั้งหมด</a><span>/</span><a href="#/b/${enc(b.id)}${isPaper ? "/exam" : ""}">${esc(b.name)}</a><span>/</span>${isPaper ? `<span>${esc(l.title)}</span>` : `<a href="#/l/${enc(b.id)}/${enc(l.id)}">${esc(l.id)}</a>`}<span>/</span><span id="pgcrumb">หน้า ${page}</span></div>
         <div class="pdfbar">
           <button class="btn" data-pg="-1" aria-label="หน้าก่อน">‹</button>
           <label for="pgin" class="hint">หน้า</label><input id="pgin" type="number" min="1" value="${page}"><span id="pgtotal" class="hint">/ ${l.pages}</span>
@@ -263,7 +425,7 @@
     }
     $("#pgcrumb").textContent = `หน้า ${page}`;
     $("#pgin").value = page;
-    $("#pdfrefs").innerHTML = qs.length ? `<div class="chips"><span class="hint">ข้อสอบที่อ้างถึงหน้านี้:</span>${qs.map((e) => `<a class="pill exam" href="#/q/${enc(e.id)}">รุ่น ${e.cohort} ข้อ ${e.n}</a>`).join("")}</div>` : "";
+    $("#pdfrefs").innerHTML = qs.length ? `<div class="chips"><span class="hint">${isPaper ? "ข้อในหน้านี้:" : "ข้อสอบที่อ้างถึงหน้านี้:"}</span>${qs.map((e) => { const st = findSet(b, e._set); return `<a class="pill exam" href="${st ? `#/set/${enc(b.id)}/${enc(st.id)}/${st.questions.indexOf(e) + 1}` : `#/q/${enc(e.id)}`}">รุ่น ${e.cohort} ข้อ ${e.n}</a>`; }).join("")}</div>` : "";
     if (!src) return pdfStatus("บทนี้ยังไม่มีไฟล์ PDF ใส่ drive_file_id ของบทนี้ใน block.json แล้วจะเปิดได้", true);
     if (!window.pdfjsLib) return pdfStatus("โหลดตัวอ่าน PDF ไม่ได้ ต้องมีโฟลเดอร์ vendor อยู่ข้าง index.html", true);
     const token = ++P.token;
@@ -465,12 +627,14 @@
   function route() {
     const [view, ...a] = parseHash();
     if (view !== "pdf") { delete main.dataset.pdf; P.token++; }
+    if (QT) { stopTimer(); saveQuiz(); }
     if (view !== "search") $("#q").value = "";
     side(view, a);
     switch (view) {
       case "b": return viewBlock(a[0], a[1]);
       case "l": return viewLecture(a[0], a[1]);
       case "q": return viewQuestion(a[0]);
+      case "set": return viewSet(a[0], a[1], a[2]);
       case "pdf": return viewPdf(a[0], a[1], Number(a[2]) || 1);
       case "search": { const qv = a.join("/"); if ($("#q").value !== qv) $("#q").value = qv; return viewSearch(qv); }
       case "settings": return viewSettings(a[0]);
@@ -478,11 +642,64 @@
       default: return viewHome();
     }
   }
-  window.addEventListener("hashchange", () => { route(); if (!location.hash.startsWith("#/pdf") && !location.hash.startsWith("#/settings/about")) window.scrollTo(0, 0); });
+  let lastHash = location.hash;
+  window.addEventListener("hashchange", () => {
+    const h = location.hash, prev = lastHash; lastHash = h;
+    route();
+    const setTab = (x) => (x.startsWith("#/set/") ? x.split("/").slice(0, 4).join("/") + (x.endsWith("/sum") ? "#sum" : "#run") : "");
+    if (h.startsWith("#/pdf") || h.startsWith("#/settings/about")) return;
+    if (!h.startsWith("#/set/") || setTab(h) !== setTab(prev)) window.scrollTo(0, 0); // new page, new set or run↔summary
+  });
+  window.addEventListener("pagehide", () => saveQuiz());
+
+  function setAction(t) {
+    const [, bid, sid, cur] = parseHash();
+    const b = findBlock(bid), s = findSet(b, sid); if (!s) return;
+    const st = quizOf(b, s); const i = Number(cur) || 0;
+    const q = s.questions[(i || 1) - 1];
+    const go = (n) => { location.replace(`#/set/${enc(bid)}/${enc(sid)}/${n}`); route(); };
+    if (t.dataset.qgo !== undefined) { if (t.dataset.qgo) go(Number(t.dataset.qgo)); return; }
+    if (t.dataset.qmode) {
+      if (st.mode !== t.dataset.qmode) { st.mode = t.dataset.qmode; if (st.mode === "exam") st.submitted = false; saveQuiz(); }
+      return go(i || 1);
+    }
+    if (t.dataset.qpick) {
+      const qq = s.questions[(i || 1) - 1] || q;
+      if (st.chk[qq.id]) return;
+      st.ans[qq.id] = t.dataset.qpick;
+      if (st.mode === "practice" || st.submitted) st.chk[qq.id] = true;
+      saveQuiz(); go(i || s.questions.indexOf(qq) + 1);
+      const ex = $(".qcard .explain"); if (ex) ex.scrollIntoView({ block: "nearest", behavior: "smooth" });
+      return;
+    }
+    const act = t.dataset.qact;
+    if (act === "flag") { if (st.flag[q.id]) delete st.flag[q.id]; else st.flag[q.id] = true; saveQuiz(); return go(i || 1); }
+    if (act === "redo") { delete st.ans[q.id]; delete st.chk[q.id]; saveQuiz(); return go(i || 1); }
+    if (act === "submit") {
+      const left = s.questions.filter((x) => !st.ans[x.id]).length;
+      if (!armed(t, left ? `ยังไม่ตอบ ${left} ข้อ · กดอีกครั้งเพื่อส่ง` : "กดอีกครั้งเพื่อส่ง")) return;
+      s.questions.forEach((x) => { st.chk[x.id] = true; });
+      st.submitted = true; saveQuiz(); stopTimer();
+      location.replace(`#/set/${enc(bid)}/${enc(sid)}/sum`); return route();
+    }
+    if (act === "redowrong") {
+      const wrong = s.questions.filter((x) => isWrong(st, x));
+      wrong.forEach((x) => { delete st.ans[x.id]; delete st.chk[x.id]; });
+      s.questions.filter((x) => !wrong.includes(x)).forEach((x) => { if (!st.chk[x.id]) delete st.ans[x.id]; });
+      Object.assign(st, { mode: "practice", submitted: false, filter: "todo", rounds: st.rounds + 1 }); saveQuiz();
+      return go(wrong.length ? s.questions.indexOf(wrong[0]) + 1 : 1);
+    }
+    if (act === "reset") {
+      if (!armed(t)) return;
+      QUIZ[`${b.id}/${s.id}`] = Object.assign(freshQuiz(), { mode: st.mode }); saveQuiz();
+      location.replace(`#/set/${enc(bid)}/${enc(sid)}/1`); return route();
+    }
+  }
 
   /* ---------- events ---------- */
   document.addEventListener("click", async (ev) => {
     const t = ev.target.closest("button"); if (!t) return;
+    if (t.dataset.qpick || t.dataset.qgo !== undefined || t.dataset.qmode || t.dataset.qact) return setAction(t);
     if (t.dataset.pick) { const id = parseHash()[1]; if (!picked[id]) { picked[id] = t.dataset.pick; route(); } return; }
     if (t.dataset.pg) return pdfGo(Number(t.dataset.pg));
     const act = t.dataset.act;
@@ -515,6 +732,7 @@
       if (same) delete USER.settings.hiddenBlocks; else USER.settings.hiddenBlocks = h;
       saveUser(); return route();
     }
+    if (t.dataset.qfilter) { const [, bid, sid] = parseHash(); const b = findBlock(bid), s = findSet(b, sid); if (s) { quizOf(b, s).filter = t.value; saveQuiz(); const l = setList(quizOf(b, s), s); location.replace(`#/set/${enc(bid)}/${enc(sid)}/${l.length ? s.questions.indexOf(l[0]) + 1 : 1}`); route(); } return; }
     if (t.id === "importfile" && t.files[0]) { toastMsg = await importUser(t.files[0]); return route(); }
     if (t.id === "pgin") { const [, bid, lid] = parseHash(); location.replace(`#/pdf/${enc(bid)}/${enc(lid)}/${Math.max(1, Number(t.value) || 1)}`); return; }
     if (t.dataset.f && t.tagName === "SELECT") {
@@ -534,7 +752,15 @@
     }
   });
   document.addEventListener("keydown", (ev) => {
-    if (!location.hash.startsWith("#/pdf") || /INPUT|TEXTAREA|SELECT/.test(ev.target.tagName)) return;
+    if (/INPUT|TEXTAREA|SELECT/.test(ev.target.tagName) || ev.ctrlKey || ev.metaKey || ev.altKey) return;
+    if (location.hash.startsWith("#/set/") && !location.hash.endsWith("/sum")) {
+      const k = ev.key.toUpperCase();
+      const btn = /^[A-E]$/.test(k) ? $(`[data-qpick="${k}"]`) : /^[1-5]$/.test(k) ? $(`[data-qpick="${"ABCDE"[Number(k) - 1]}"]`)
+        : ev.key === "ArrowRight" ? $(".qfoot [data-qgo]:last-child") : ev.key === "ArrowLeft" ? $(".qfoot [data-qgo]") : k === "F" ? $('[data-qact="flag"]') : null;
+      if (btn && !btn.disabled) { ev.preventDefault(); btn.click(); }
+      return;
+    }
+    if (!location.hash.startsWith("#/pdf")) return;
     if (ev.key === "ArrowRight" || ev.key === "PageDown") pdfGo(1);
     if (ev.key === "ArrowLeft" || ev.key === "PageUp") pdfGo(-1);
   });

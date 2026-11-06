@@ -17,7 +17,7 @@ for (const base of ["data/blocks", "samples/blocks"]) {
     be.forEach((m) => console.log(`✗ ${base}/${id}/block.json: ${m}`));
     problems += be.length;
     blocks++;
-    for (const l of b.lectures || []) {
+    for (const l of [...(b.lectures || []), ...(b.papers || [])]) {
       if (l.file && !fs.existsSync(path.join(ROOT, base, id, l.file))) {
         console.log(`✗ ${base}/${id}: ไม่พบไฟล์ ${l.file}`); problems++;
       }

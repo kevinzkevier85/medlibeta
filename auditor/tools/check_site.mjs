@@ -37,32 +37,42 @@ let pass = 0, fail = 0;
 const ok = (c, msg) => { if (c) { pass++; console.log("ok  ", msg); } else { fail++; console.log("FAIL", msg); } };
 
 await send("Runtime.enable");
-await send("Page.navigate", { url: BASE + `#/b/${B}/exam` });
-ok(await waitFor("document.querySelectorAll('.rows .row').length > 0"), "exam tab lists questions");
-ok((await ev("document.querySelectorAll('.rows .row').length")) === set.questions.length, `exam tab shows all ${set.questions.length} questions`);
+await send("Page.navigate", { url: BASE + `#/b/${B}/lec` });
+await waitFor("!!document.querySelector('.tabs')");
+ok((await ev("document.querySelectorAll('.rows .row').length")) === 0, "lecture tab has no exam PDFs in it");
+await go(`#/b/${B}/exam`);
+ok(await waitFor("document.querySelectorAll('.cohort').length > 0"), "exam tab shows cohort cards");
+ok((await ev("document.querySelector('.cohort h3').innerText")).includes(`รุ่น ${C}`), `cohort card รุ่น ${C}`);
+ok((await ev("document.querySelector('.setmain .setn').innerText")).includes(String(set.questions.length)), `set tile shows ${set.questions.length} questions`);
+ok((await ev("[...document.querySelectorAll('.pdflink')].map(a => a.innerText).join('|')")).includes("PDF เฉลย"), "set tile links the exam and key PDFs");
 
-// every question page renders stem + all options
-let bad = [];
-for (const q of set.questions) {
-  await go(`#/q/${q.id}`);
-  const okq = await waitFor(`document.querySelectorAll('[data-pick]').length === ${Object.keys(q.options).length}`, 3000);
-  if (!okq) bad.push(q.id);
+await ev("localStorage.removeItem('medlib.quiz.v1')");
+await go(`#/set/${B}/${C}_MCQ`);
+ok(await waitFor(`document.querySelectorAll('.qgrid .qn').length === ${set.questions.length}`), `navigator lists all ${set.questions.length} questions`);
+const bad = [];
+for (let i = 1; i <= set.questions.length; i++) {
+  const q = set.questions[i - 1];
+  await ev(`location.replace('#/set/${B}/${C}_MCQ/${i}')`); await sleep(60);
+  const okq = await waitFor(`document.querySelectorAll('[data-qpick]').length === ${Object.keys(q.options).length} && document.querySelector('.qcard .stem').innerText.length > 10`, 3000);
+  if (!okq) bad.push(q.n);
 }
-ok(bad.length === 0, `all question pages render with their options ${bad.length ? "(bad: " + bad.join(",") + ")" : ""}`);
+ok(bad.length === 0, `every question renders in the set runner ${bad.length ? "(bad: " + bad.join(",") + ")" : ""}`);
 
-// answer → explanation, and the reference opens the original exam PDF from Drive
 const q = set.questions.find((x) => x.n === 42) || set.questions[0];
-await go(`#/q/${q.id}`);
-await ev(`document.querySelector('[data-pick="${q.answer}"]').click()`); await sleep(200);
-ok(await ev("!!document.querySelector('.opt.right')"), `picking ${q.answer} on ${q.id} is marked right`);
-ok((await ev("document.querySelector('.explain')?.innerText || ''")).includes("ถูกต้อง"), "right pick shows 'ถูกต้อง' + explanation");
-await ev("document.querySelector('.ref').click()");
-ok(await waitFor("!!document.querySelector('#pdfstage canvas')", 20000), "reference opens the original PDF page (from Google Drive)");
+const qi = set.questions.indexOf(q) + 1;
+await go(`#/set/${B}/${C}_MCQ/${qi}`);
+await ev(`document.querySelector('[data-qpick="${q.answer}"]').click()`); await sleep(250);
+ok(await ev("!!document.querySelector('.opt.right') && (document.querySelector('.explain')?.innerText || '').includes('ถูกต้อง')"), `practice: ${q.id} right answer → 'ถูกต้อง' + explanation`);
+ok((await ev("document.querySelectorAll('.explain .ref').length")) === 2, "explanation links both original PDFs (exam + key page)");
+await ev("document.querySelector('.explain .ref').click()");
+ok(await waitFor("!!document.querySelector('#pdfstage canvas') || !!document.querySelector('iframe.drivepreview')", 20000), "reference opens the original exam PDF page");
+ok((await ev("document.querySelector('.crumbs').innerText")).includes("MCQ"), "PDF breadcrumb names the exam paper, not a lecture");
 
 // online without key/Worker (GitHub Pages): falls back to Google Drive preview
 await ev("indexedDB.deleteDatabase('medlib'); window.__medlib.APP.config = {}; true"); await sleep(300);
-await go(`#/pdf/${B}/MCQ${C}-ANS/3`); // a file not yet open in this tab
+await go(`#/pdf/${B}/MCQ${C}-KEY/3`);
 ok(await waitFor("!!document.querySelector('iframe.drivepreview')"), "no key → Google Drive preview iframe instead of an error");
+await ev("localStorage.removeItem('medlib.quiz.v1')");
 
 ok(errs.length === 0, `no JS errors ${errs.length ? errs.join(" | ") : ""}`);
 console.log(`\n${pass} passed, ${fail} failed`);

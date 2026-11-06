@@ -44,7 +44,30 @@ ok(await waitFor("document.querySelector('.card')"), "home shows block cards");
 ok((await ev("document.querySelector('.ver').innerText")).includes("v" + JSON.parse(fs.readFileSync(path.join(ROOT, "version.json"), "utf8")).version), "version + date shown in menu");
 
 await go("#/b/DEMO/exam");
-ok((await ev("document.querySelectorAll('.rows .row').length")) === 3, "DEMO block lists 3 questions");
+ok((await ev("document.querySelectorAll('.cohort').length")) === 1 && (await ev("document.querySelector('.setmain .setn').innerText")).includes("3"), "exam tab shows exam sets by cohort (DEMO: 1 set, 3 questions)");
+await go("#/b/DEMO/lec");
+ok((await ev("document.querySelectorAll('.rows .row').length")) === 3, "lecture tab lists only lectures");
+
+// whole-set runner (like the CVS quiz)
+await ev("localStorage.removeItem('medlib.quiz.v1')");
+await go("#/set/DEMO/52_MCQ");
+ok(await waitFor("document.querySelectorAll('.qgrid .qn').length === 3"), "set runner shows a navigator with every question");
+await click('[data-qpick="C"]'); await sleep(200);
+ok(await ev("!!document.querySelector('.opt.wrong') && !!document.querySelector('.opt.right') && !!document.querySelector('.qn.cur.wrong')"), "practice mode: instant feedback + navigator marks wrong");
+await click('.qfoot [data-qgo]:last-child'); await sleep(200);
+ok((await ev("location.hash")).endsWith("/2"), "next question");
+await click('[data-qact="flag"]'); await sleep(150);
+ok(await ev("!!document.querySelector('.qn.cur.flag')"), "flag shows on navigator");
+await click('[data-qmode="exam"]'); await sleep(200);
+ok(await ev("!!document.querySelector('#qtimer')"), "exam mode shows a timer");
+await click('[data-qpick="A"]'); await sleep(150);
+ok(await ev("!!document.querySelector('.opt.sel') && !document.querySelector('.explain')"), "exam mode: answer selected, no feedback before submit");
+await click('[data-qact="submit"]'); await sleep(100); await click('[data-qact="submit"]'); await sleep(300);
+ok((await ev("location.hash")).endsWith("/sum") && (await text()).includes("ข้อที่ผิด"), "submit (two clicks) → summary with score and wrong list");
+ok(await ev("JSON.parse(localStorage.getItem('medlib.quiz.v1'))['DEMO/52_MCQ'].submitted === true"), "progress saved in browser");
+await click('[data-qact="redowrong"]'); await sleep(300);
+ok(await ev("JSON.parse(localStorage.getItem('medlib.quiz.v1'))['DEMO/52_MCQ'].rounds === 1") && (await ev("location.hash")).includes("/set/DEMO/52_MCQ/"), "redo wrong questions starts a new round");
+await ev("localStorage.removeItem('medlib.quiz.v1')");
 
 await go("#/q/DEMO-52-MCQ-005");
 await click('[data-pick="C"]'); await sleep(150);

@@ -166,39 +166,60 @@ def medlib_status(a):
 
 
 def build_medlib(sets):
-    """Copy audited questions into the MedLib site (data/blocks/<BLOCK>/exams/)."""
+    """Copy audited questions into the MedLib site.
+
+    The original exam / answer-key PDFs go to block.json `papers` (NOT lectures); every question
+    refs its page in both PDFs. One exam_set per set_id → data/blocks/<BLOCK>/exams/<cohort>_<type>.json
+    """
+    inv = {x["set_id"]: x for x in load(AUD / "data" / "inventory.json")["sets"]}
     for s in sets:
         B = s["block"].upper()
         bdir = ROOT / "data" / "blocks" / B
         block = load(bdir / "block.json")
-        lec_exam, lec_key = f"MCQ{s['cohort']}", f"MCQ{s['cohort']}-ANS"
-        lec_ids = {l["id"] for l in block["lectures"]}
-        set_name = f"{s['cohort']}_{s['type']}"
+        meta = inv[s["set_id"]]
+        c, t = int(s["cohort"]), s["type"]
+        pid = {"exam": f"{t}{c}", "key": f"{t}{c}-KEY"}
+        papers = [x for x in block.get("papers", []) if x["id"] not in pid.values()]
+        for role, f in meta["files"].items():
+            papers.append({"id": pid[role], "title": f"{'เฉลย ' if role == 'key' else ''}{t} {meta['block_name']} [Med PSU {c}]",
+                           "cohort": c, "type": t, "role": role, "pages": f["pages"],
+                           "drive_file_id": f["drive_file_id"], "drive_path": f["drive_path"]})
+        papers.sort(key=lambda x: (-x["cohort"], x["type"], x["role"] != "exam"))
+        # exam PDFs used to be listed as lectures by mistake — drop them
+        lectures = [l for l in block["lectures"] if l["id"] not in (f"MCQ{c}", f"MCQ{c}-ANS")]
+        set_name = f"{c}_{t}"
         qs = []
         for q in s["questions"]:
             a = q["audit"]
             if a["answer_status"] == "skipped":
                 continue
-            refs = []
-            if lec_exam in lec_ids: refs.append({"lecture": lec_exam, "pages": [a["page"]]})
-            if lec_key in lec_ids and a["key_page"]: refs.append({"lecture": lec_key, "pages": [a["key_page"]]})
-            exp = re.sub(r"^\((.*?)\)\*\* — ", r"\1 — ", q["explanation"])
+            refs = [{"paper": pid["exam"], "pages": [a["page"]]}]
+            if a["key_page"]:
+                refs.append({"paper": pid["key"], "pages": [a["key_page"]]})
+            exp = re.sub(r"^\((.*?)\)\*\* — ", lambda m: m.group(1) + " — ", q["explanation"])
             if q["issues"]:
                 exp += "\n⚠️ " + " · ".join(q["issues"])
             n = int(q["number"])
-            qs.append({"id": f"{B}-{s['cohort']}-MCQ-{n:03d}", "block": B, "cohort": int(s["cohort"]), "n": n, "type": "MCQ",
+            qs.append({"id": f"{B}-{c}-MCQ-{n:03d}", "block": B, "cohort": c, "n": n, "type": "MCQ",
                        "stem": q["stem"], "options": {k: v for k, v in q["choices"].items() if v},
                        "answer": q["correct"], "answer_status": medlib_status(a), "explanation": exp,
-                       "refs": refs, "tags": [t for t in [a["duplicate_group"]] if t], "source": "import",
+                       "refs": refs, "tags": [x for x in [a["duplicate_group"]] if x], "source": "import",
                        "audit_ref": q["id"]})
-        out = {"meta": {"set_id": set_name, "block": B, "cohort": int(s["cohort"]), "type": s["type"], "title": s["name"],
+        out = {"meta": {"set_id": set_name, "block": B, "cohort": c, "type": t,
+                        "title": f"{t} {meta['block_name']} · Med PSU {c}",
+                        "time_limit_min": meta.get("time_limit_min"), "n_source_items": s["n_source_items"],
+                        "skipped": [q["number"] for q in s["questions"] if q["audit"]["answer_status"] == "skipped"],
                         "generated_by": "auditor/tools/build_outputs.py — do not edit by hand"},
                "questions": qs}
         (bdir / "exams").mkdir(exist_ok=True)
         (bdir / "exams" / f"{set_name}.json").write_text(json.dumps(out, ensure_ascii=False, indent=1), encoding="utf-8")
+        block["lectures"] = lectures
+        block["papers"] = papers
         if set_name not in block["exam_sets"]:
             block["exam_sets"].append(set_name)
-            (bdir / "block.json").write_text(json.dumps(block, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        order = ["id", "name", "year", "lectures", "papers", "exam_sets"]
+        block = {k: block[k] for k in order if k in block} | {k: v for k, v in block.items() if k not in order}
+        (bdir / "block.json").write_text(json.dumps(block, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
 
 def main():

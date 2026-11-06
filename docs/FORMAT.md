@@ -23,17 +23,25 @@ samples/blocks/...              same layout, DEMO data only — never put real d
 | `year` | | e.g. `ปี 2` |
 | `lectures[]` | ✓ | see below |
 | `exam_sets[]` | ✓ | file names in `exams/` without `.json` |
+| `papers[]` | | original exam / answer-key PDFs (NOT lectures), see below |
 
 Lecture: `id` (unique in the block, e.g. `L02`), `title`, `pages` (page count), `lecturer?`,
 and where the PDF is: `drive_file_id` (Google Drive file, shared "anyone with the link") or `file`
 (path relative to the block folder). With neither, the lecture shows but cannot be opened.
 
+Paper (original exam or answer-key PDF — shown in the ข้อสอบ tab next to its set, never in the Lecture tab):
+`id` (unique across lectures and papers, e.g. `MCQ52`, `MCQ52-KEY`), `title`, `pages`, `cohort`, `type` (`MCQ` / `KF` / `OSPE`),
+`role` (`exam` / `key`), and `drive_file_id` or `file`.
+
 ## exams/<set>.json
 
 ```json
-{ "meta": { "set_id": "52_MCQ", "block": "END", "cohort": 52, "type": "MCQ", "title": "" },
+{ "meta": { "set_id": "52_MCQ", "block": "END", "cohort": 52, "type": "MCQ", "title": "", "time_limit_min": 120 },
   "questions": [ { ...question... } ] }
 ```
+
+One file = one set; the website shows it as a whole set (cohort card → set runner with practice/timed modes).
+`time_limit_min` (optional) drives the countdown in timed mode.
 
 ## Question
 
@@ -47,7 +55,7 @@ and where the PDF is: `drive_file_id` (Google Drive file, shared "anyone with th
 | `answer` | ✓ | one of the option keys |
 | `answer_status` | ✓ | `verified` / `draft` / `disputed` |
 | `explanation` | | text |
-| `refs[]` | ✓ | `{ "lecture": "L02", "pages": [14, 15] }`, lecture must exist in the block, pages within its page count |
+| `refs[]` | ✓ | `{ "lecture": "L02", "pages": [14, 15] }` or `{ "paper": "MCQ52", "pages": [6] }` — must exist in the block, pages within its page count |
 | `tags[]` | ✓ | list of words (may be empty) |
 | `source` | ✓ | `manual` (web form) / `claude-mcp` (Claude) / `import` (bulk import) |
 
