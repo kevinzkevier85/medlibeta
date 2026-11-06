@@ -275,6 +275,7 @@
         let blob = rec && rec.blob;
         P.cached = !!blob;
         if (!blob) {
+          if (!src.url && l.drive_file_id) return drivePreview(l.drive_file_id, page, token); // no key/Worker: Google's own viewer
           if (!src.url) throw new Error("ยังไม่ได้ตั้งค่าการดึงไฟล์จาก Google Drive (ใส่ drive_proxy_url ใน site.json หรือ API key ใน config.json)");
           blob = await download(src, (pct) => { if (token === P.token) pdfStatus(`กำลังดาวน์โหลดจาก ${src.from}… ${pct}%`); });
           await idbPut({ id: src.id, blob, saved: Date.now() }).catch(() => {});
@@ -294,6 +295,18 @@
     } catch (e) {
       if (token === P.token) pdfStatus(e.message || "เปิดไฟล์นี้ไม่ได้ ไฟล์อาจเสียหรือไม่ใช่ PDF", true);
     }
+  }
+
+  // Fallback when the site has neither a Worker nor a key (e.g. GitHub Pages before the Worker is set up):
+  // embed Google Drive's preview of a file shared "anyone with the link". It cannot jump to a page.
+  function drivePreview(fileId, page, token) {
+    if (token !== P.token) return;
+    if (P.doc) { P.doc.destroy(); P.doc = null; }
+    P.docId = null;
+    const stage = $("#pdfstage"); if (!stage) return;
+    $("#pdfinfo").textContent = ` · เปิดผ่าน Google Drive — เลื่อนไปหน้า ${page} เอง`;
+    stage.innerHTML = `<iframe class="drivepreview" src="https://drive.google.com/file/d/${enc(fileId)}/preview" allow="autoplay" title="PDF จาก Google Drive"></iframe>
+      <p class="hint"><a href="https://drive.google.com/file/d/${enc(fileId)}/view" target="_blank" rel="noopener">เปิดใน Google Drive</a></p>`;
   }
 
   async function renderPage(token) {

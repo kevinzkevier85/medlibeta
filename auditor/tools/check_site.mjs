@@ -59,6 +59,11 @@ ok((await ev("document.querySelector('.explain')?.innerText || ''")).includes("à
 await ev("document.querySelector('.ref').click()");
 ok(await waitFor("!!document.querySelector('#pdfstage canvas')", 20000), "reference opens the original PDF page (from Google Drive)");
 
+// online without key/Worker (GitHub Pages): falls back to Google Drive preview
+await ev("indexedDB.deleteDatabase('medlib'); window.__medlib.APP.config = {}; true"); await sleep(300);
+await go(`#/pdf/${B}/MCQ${C}-ANS/3`); // a file not yet open in this tab
+ok(await waitFor("!!document.querySelector('iframe.drivepreview')"), "no key â†’ Google Drive preview iframe instead of an error");
+
 ok(errs.length === 0, `no JS errors ${errs.length ? errs.join(" | ") : ""}`);
 console.log(`\n${pass} passed, ${fail} failed`);
 chrome.kill();
