@@ -8,7 +8,8 @@
 - **กติกาข้อมูลมีที่เดียว: `lib/validate.js`** ทุกทางที่เพิ่มข้อมูล (ฟอร์มเว็บ, MCP, import) ต้องเรียกตัวนี้ ห้ามเขียนกติกาซ้ำ เอกสาร: `docs/FORMAT.md`
 - ข้อมูลจริงอยู่ `data/blocks/` เท่านั้น ข้อมูลตัวอย่างอยู่ `samples/blocks/` ห้ามปนกัน
 - PDF จริงอยู่ Google Drive (แชร์ "ทุกคนที่มีลิงก์") ใน repo เก็บแค่ `drive_file_id`
-- `config.json` มี Drive API key ซึ่งเป็น key สำหรับเบราว์เซอร์ ต้องจำกัด HTTP referrer ไว้ที่โดเมนเว็บ
+- `config.json` มี Drive API key (เฉพาะเครื่อง, gitignored) **ห้ามเปิดอ่าน** สคริปต์อ่านเองได้แต่ห้ามพิมพ์ key · เว็บออนไลน์ใช้ Cloudflare Worker (`worker/drive-proxy.js`) ผ่าน `site.json › drive_proxy_url`
+- ข้อสอบที่ตรวจแล้วมาจาก `auditor/` (แผน: `prompt-exam-auditor.md`, สถานะ: `auditor/PROGRESS.md`) — ไฟล์ `data/blocks/*/exams/*.json` ที่มี `generated_by` ห้ามแก้มือ ให้แก้ที่ `auditor/data/work` แล้ว build ใหม่
 - ค่ากลาง `defaults.json` / ค่าส่วนตัว localStorage key `medlib.user.v1` / PDF cache IndexedDB `medlib`
 
 ## ออกเวอร์ชันใหม่ (ทุกครั้งที่ส่งมอบ)

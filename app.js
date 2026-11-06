@@ -212,9 +212,12 @@
 
   function pdfSource(b, l) {
     if (l.drive_file_id) {
+      // Prefer the Cloudflare Worker (key stays on Cloudflare); fall back to a local key in config.json.
+      const proxy = (APP.config.drive_proxy_url || "").replace(/\/+$/, "");
       const key = APP.config.drive_api_key;
-      return { id: "drive:" + l.drive_file_id, from: "Google Drive",
-        url: key ? `https://www.googleapis.com/drive/v3/files/${enc(l.drive_file_id)}?alt=media&key=${enc(key)}` : null };
+      const url = proxy ? `${proxy}/file/${enc(l.drive_file_id)}`
+        : key ? `https://www.googleapis.com/drive/v3/files/${enc(l.drive_file_id)}?alt=media&key=${enc(key)}` : null;
+      return { id: "drive:" + l.drive_file_id, from: "Google Drive", url };
     }
     if (l.file) return { id: "file:" + b._base + "/" + l.file, from: "ไฟล์ในโปรเจกต์", url: b._base + "/" + l.file.split("/").map(enc).join("/") };
     return null;
@@ -228,7 +231,9 @@
     const r = await fetch(src.url);
     if (!r.ok) {
       if (src.from === "Google Drive" && (r.status === 403 || r.status === 404))
-        throw new Error("เปิดไฟล์จาก Google Drive ไม่ได้ ตรวจว่าไฟล์แชร์เป็น \"ทุกคนที่มีลิงก์\" และ API key ใน config.json ถูกต้อง");
+        throw new Error(APP.config.drive_proxy_url
+          ? `เปิดไฟล์จาก Google Drive ไม่ได้ (HTTP ${r.status}) ตรวจว่าไฟล์แชร์เป็น "ทุกคนที่มีลิงก์" และ Worker ตั้งค่า DRIVE_API_KEY กับ ALLOWED_ORIGINS ถูกต้อง`
+          : "เปิดไฟล์จาก Google Drive ไม่ได้ ตรวจว่าไฟล์แชร์เป็น \"ทุกคนที่มีลิงก์\" และ API key ใน config.json ถูกต้อง");
       throw new Error(`ดาวน์โหลดไฟล์ไม่ได้ (HTTP ${r.status})`);
     }
     const total = +r.headers.get("content-length") || 0;
@@ -270,7 +275,7 @@
         let blob = rec && rec.blob;
         P.cached = !!blob;
         if (!blob) {
-          if (!src.url) throw new Error("ยังไม่ได้ใส่ Google Drive API key ใน config.json จึงโหลดไฟล์จาก Drive ไม่ได้");
+          if (!src.url) throw new Error("ยังไม่ได้ตั้งค่าการดึงไฟล์จาก Google Drive (ใส่ drive_proxy_url ใน site.json หรือ API key ใน config.json)");
           blob = await download(src, (pct) => { if (token === P.token) pdfStatus(`กำลังดาวน์โหลดจาก ${src.from}… ${pct}%`); });
           await idbPut({ id: src.id, blob, saved: Date.now() }).catch(() => {});
           P.cached = true;
@@ -357,7 +362,7 @@
         </div></div>
 
       <div class="section"><h3>ไฟล์ PDF ในเครื่อง</h3>
-        <p class="hint">เก็บไว้ ${pdfCount} ไฟล์ ไฟล์ที่เคยเปิดแล้วจะเปิดได้แม้ไม่มีเน็ต · Google Drive API key: ${APP.config.drive_api_key ? "ใส่แล้ว" : "ยังไม่ได้ใส่ (ใส่ใน config.json)"}</p>
+        <p class="hint">เก็บไว้ ${pdfCount} ไฟล์ ไฟล์ที่เคยเปิดแล้วจะเปิดได้แม้ไม่มีเน็ต · ดึงไฟล์จาก Google Drive: ${APP.config.drive_proxy_url ? "ผ่าน Cloudflare Worker" : APP.config.drive_api_key ? "ใช้ API key ในเครื่อง (config.json)" : "ยังไม่ได้ตั้งค่า"}</p>
         <div class="btns"><button class="btn danger" data-act="clearpdf" ${pdfCount ? "" : "disabled"}>ลบไฟล์ PDF ที่เก็บไว้</button></div></div>
       ${toastMsg ? `<p class="toast ${toastMsg.err ? "err" : ""}">${esc(toastMsg.text)}</p>` : ""}
 
@@ -529,12 +534,14 @@
       main.innerHTML = `<div class="note"><h3>ต้องเปิดผ่าน start.bat</h3><p class="hint">เบราว์เซอร์ไม่ยอมให้เว็บอ่านไฟล์ข้อมูลเมื่อเปิดไฟล์ index.html ตรง ๆ ให้ดับเบิลคลิก <code>start.bat</code> ในโฟลเดอร์ medlib แทน</p></div>`;
       return;
     }
-    const [ver, defs, cfg] = await Promise.all([
+    const [ver, defs, site, cfg] = await Promise.all([
       getJSON("version.json").catch((e) => { APP.problems.push(e.message); return APP.version; }),
       getJSON("defaults.json").catch((e) => { APP.problems.push(e.message); return { settings: {} }; }),
-      getJSON("config.json").catch(() => ({})),
+      getJSON("site.json").catch(() => ({})),   // public, on GitHub: worker URL only, no secrets
+      getJSON("config.json").catch(() => ({})), // local only (gitignored): may hold a key; non-empty values win
     ]);
-    APP.version = ver; APP.config = cfg;
+    APP.version = ver;
+    APP.config = Object.assign({}, site, Object.fromEntries(Object.entries(cfg).filter(([, v]) => v)));
     APP.defaults = { settings: Object.assign({ defaultTab: "lec", showDrafts: true, fontSize: "normal", hiddenBlocks: [], showSample: true }, defs.settings) };
     await loadBlocks("data/blocks", false);
     await loadBlocks("samples/blocks", true);
