@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>MedLib</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anuphan:wght@500;600;700&family=IBM+Plex+Sans+Thai:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="styles.css?v=0.2.0">
+</head>
+<body>
+<div class="shell">
+  <header class="bar">
+    <a class="brand" href="#/"><i aria-hidden="true"></i>MedLib</a>
+    <label class="search" for="q">
+      <span aria-hidden="true">⌕</span>
+      <input id="q" type="search" placeholder="ค้นทุกบล็อก: หัวข้อ, ยา, โรค…" autocomplete="off">
+    </label>
+  </header>
+  <nav class="side" id="side" aria-label="เมนู"></nav>
+  <main class="main" id="main" aria-live="polite"><p class="hint">กำลังโหลด…</p></main>
+</div>
+<script src="vendor/pdf.min.js"></script>
+<script src="lib/validate.js?v=0.2.0"></script>
+<script src="app.js?v=0.2.0"></script>
+</body>
+</html>
