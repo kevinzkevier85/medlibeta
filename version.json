@@ -1,7 +1,19 @@
 {
-  "version": "0.2.0",
+  "version": "0.3.0",
   "date": "2026-11-07",
   "history": [
+    {
+      "version": "0.3.0",
+      "date": "2026-11-07",
+      "title": "ข้อสอบจริงชุดแรก + Drive ผ่าน Worker",
+      "changes": [
+        "ข้อสอบจริงชุดแรก: Endocrine MCQ รุ่น 52 (67 ข้อ) ตรวจเฉลยและเขียนคำอธิบายทุกข้อด้วย PSU Exam Auditor",
+        "ข้อที่ต้องตรวจขึ้นสถานะ disputed / ต้นฉบับไม่แน่นอนขึ้น draft พร้อมเหตุผลท้ายคำอธิบาย",
+        "แต่ละข้อลิงก์ไปหน้าต้นฉบับของข้อสอบและเฉลยใน Google Drive",
+        "ดึง PDF ผ่าน Cloudflare Worker ได้ (site.json › drive_proxy_url) key จึงไม่ต้องอยู่ในเว็บ",
+        "เครื่องมือ: tools/drive-list.cjs (รายชื่อไฟล์ใน Drive), auditor/tools/* (extract → audit → build)"
+      ]
+    },
     {
       "version": "0.2.0",
       "date": "2026-11-07",

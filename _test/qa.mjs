@@ -61,7 +61,7 @@ await go("#/pdf/DEMO/L05/4");
 ok(await waitFor("(document.querySelector('.status.err')||{}).innerText?.includes('ยังไม่มีไฟล์ PDF')"), "lecture without file explains why");
 
 await go("#/search/ADH");
-ok((await text()).includes("1 รายการ"), "search finds ADH question");
+ok(/\d+ รายการ/.test(await text()) && (await text()).includes("DEMO"), "search finds the DEMO ADH question");
 
 await go("#/settings");
 await setVal("#s-font", "large");
@@ -69,13 +69,15 @@ ok((await ev("JSON.parse(localStorage.getItem('medlib.user.v1')).settings.fontSi
 ok((await text()).includes("ค่าส่วนตัว"), "changed setting is labelled personal");
 await click('[data-act="reset"]'); await sleep(100); await click('[data-act="reset"]'); await sleep(200);
 ok((await ev("Object.keys(JSON.parse(localStorage.getItem('medlib.user.v1')).settings).length")) === 0, "reset (two clicks) returns to defaults");
+const navBefore = await ev("document.querySelectorAll('#side .nav').length");
 await setVal("#s-sample", "false");
-ok((await ev("document.querySelectorAll('#side .nav').length")) === 3, "hiding sample removes DEMO from menu");
+ok((await ev("document.querySelectorAll('#side .nav').length")) === navBefore - 1, "hiding sample removes DEMO from menu");
 await setVal("#s-sample", "true");
 
 await go("#/add");
 await click('[data-act="save"]'); await sleep(150);
 ok((await text()).includes("ยังบันทึกไม่ได้"), "empty form is rejected");
+await setVal("#f-block", "DEMO"); await sleep(150); // real blocks may exist; the form test targets the sample block
 for (const [k, v] of Object.entries({ "#f-cohort": "52", "#f-n": "40", "#f-stem": "ข้อใดเป็นฮอร์โมนที่หลั่งจาก posterior pituitary", "#f-A": "ADH", "#f-B": "TSH", "#f-pages": "2" }))
   await setVal(k, v, "input");
 await setVal("#f-answer", "A");
@@ -84,7 +86,7 @@ await click('[data-act="save"]'); await sleep(200);
 ok((await ev("JSON.parse(localStorage.getItem('medlib.user.v1')).questions[0].id")) === "DEMO-52-MCQ-040", "saved question has canonical id");
 await go("#/q/DEMO-52-MCQ-040");
 ok((await text()).includes("ของฉัน"), "personal question shows with 'ของฉัน' badge");
-const sameShape = await ev(`(() => { const V = window.MedLibValidate; const b = window.__medlib.APP.blocks[0]; return V.validateQuestion(window.__medlib.USER.questions[0], { block: b }).length === 0; })()`);
+const sameShape = await ev(`(() => { const V = window.MedLibValidate; const b = window.__medlib.APP.blocks.find((x) => x.id === 'DEMO'); return V.validateQuestion(window.__medlib.USER.questions[0], { block: b }).length === 0; })()`);
 ok(sameShape, "saved record re-validates with lib/validate.js");
 
 // phone width: no sideways scroll
