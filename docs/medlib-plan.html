@@ -239,6 +239,38 @@ select:focus,input:focus,textarea:focus{outline:2px solid var(--accent);outline-
   </section>
 
   <section>
+    <span class="eyebrow">เชื่อม Google Drive</span>
+    <h2>ใครทำอะไร ทีละขั้น</h2>
+    <p class="col" style="color:var(--muted)">A เป็นเจ้าของ Google Drive ส่วน B เป็นเจ้าของ GitHub และดูแลเว็บ ตัวเลขในกล่องคือลำดับที่ทำ</p>
+    <div style="background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:16px;overflow-x:auto">
+<pre class="mermaid">
+flowchart TD
+  subgraph A["👤 A · เจ้าของ Google Drive"]
+    A1["1 อัปโหลด PDF<br/>ใส่โฟลเดอร์ MedLib"] --> A2["2 แชร์โฟลเดอร์<br/>ทุกคนที่มีลิงก์"]
+  end
+  subgraph B["👤 B · เจ้าของ GitHub"]
+    B1["3 ขอ API key<br/>ด้วยบัญชีตัวเอง ฟรี"] --> B2["4 ใส่ key ใน config.json<br/>อยู่ในเครื่อง B เท่านั้น"]
+  end
+  subgraph C["🤖 Claude"]
+    C1["5 sync: อ่านรายชื่อไฟล์<br/>ในโฟลเดอร์"] --> C2["6 จับคู่ไฟล์กับ lecture<br/>+ ดึงข้อความ"] --> C3["7 บันทึกลง data/"]
+  end
+  subgraph W["🌐 คนใช้เว็บ"]
+    W1["เปิดข้อสอบ กดดู lecture"] --> W2["เว็บใช้ key ดึง PDF<br/>จาก Drive"] --> W3["เปิดตรงหน้า<br/>+ เก็บไว้ในเครื่อง"]
+  end
+  A2 -- "ส่งลิงก์โฟลเดอร์" --> B1
+  B2 --> C1
+  C3 -- "B ตรวจแล้ว push" --> GH[("GitHub")]
+  GH --> W1
+  A2 -. "ไฟล์ PDF" .-> W2
+</pre>
+    </div>
+    <div class="two">
+      <div class="q"><h3>A ส่งให้ B แค่ลิงก์โฟลเดอร์</h3><p>ไม่ต้องให้รหัสผ่านหรือ key อะไรเลย A ไม่ต้องเข้า Google Cloud</p></div>
+      <div class="q"><h3>B ไม่ส่ง key ให้ใคร</h3><p>key อยู่ในเครื่อง B ไม่ขึ้น GitHub ห้ามผูกบัตรเครดิตกับโปรเจกต์ Google Cloud นี้ ถ้า key หลุดก็จะไม่เสียเงิน</p></div>
+    </div>
+  </section>
+
+  <section>
     <span class="eyebrow">ตัวอย่าง UX/UI</span>
     <h2>ลองกดเล่นได้</h2>
     <p class="col" style="color:var(--muted)">ข้อมูลในหน้านี้เป็นตัวอย่างทั้งหมด ลองกดเข้าบล็อก END กดข้อสอบแล้วเลือกคำตอบ แล้วกดลิงก์ lecture เพื่อเปิด PDF ที่หน้านั้น หรือพิมพ์ <code>ADH</code> ในช่องค้นหา เมนู <strong>ตั้งค่า</strong> กับ <strong>เพิ่มข้อมูล</strong> อยู่ท้ายแถบด้านซ้าย</p>

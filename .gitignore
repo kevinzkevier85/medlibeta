@@ -1,3 +1,12 @@
 _test/chrome-*/
 _test/*.png
 _test/shots/
+
+# Drive API key stays on this computer only (see config.example.json)
+config.json
+
+# Python venv + exam auditor caches (source PDFs and rendered pages are not committed)
+.venv/
+auditor/source/
+auditor/raw/
+__pycache__/
