@@ -55,6 +55,18 @@ await t("2 due in END (+1 gone id) → button shows 2, opens a 2-question set", 
   const mix = await p.evaluate(() => Object.values(window.__medlib.PROG.mixes)[0]);
   assert.deepStrictEqual(mix.qids.sort(), ids.sort());
 });
+await t("self-grading a written answer moves the queue too", async () => {
+  const p = await open("#/q/END-52-KF-001");
+  await p.waitForSelector("textarea[data-item]");
+  for (const el of await p.$$("textarea[data-item]")) { await el.fill("zzz"); await el.dispatchEvent("input"); }
+  await p.click('[data-z="check"]');
+  const inQ = () => p.evaluate(() => !!(window.__medlib.PROG.review || {})["END-52-KF-001"]);
+  assert.ok(await inQ(), "wrong → queued");
+  for (const id of ["1.1", "1.2"]) await p.click(`[data-ov="1"][data-item="${id}"]`);
+  assert.ok(!(await inQ()), "marked right by hand → back to how it was (not queued)");
+  for (const id of ["1.1", "1.2"]) await p.click(`[data-ov="0"][data-item="${id}"]`);
+  assert.ok(await inQ(), "marked wrong by hand → queued");
+});
 await t("no page errors", async () => { for (const p of pages) assert.deepStrictEqual(p.errors, []); });
 await browser.close(); server.kill();
 console.log(`\n${pass} ผ่าน`);

@@ -139,8 +139,9 @@ t("review: uncounted never queued; right answer outside queue ignored; flag adds
   const p = {}, now = Date.UTC(2026, 10, 7, 10);
   Q.reviewUpdate(p, dr, 0, now, {}); Q.reviewUpdate(p, mcq, 1, now, {});
   assert.deepStrictEqual(p.review || {}, {});
-  Q.reviewAdd(p, "X", now); const e = p.review.X; Q.reviewAdd(p, "X", now + DAY); assert.strictEqual(p.review.X, e);
+  Q.reviewAdd(p, mcq, now, {}); const e = p.review[mcq.id]; Q.reviewAdd(p, mcq, now + DAY, {}); assert.strictEqual(p.review[mcq.id], e);
   assert.strictEqual(e.step, 0); assert.strictEqual(e.due, day0(now) + DAY);
+  Q.reviewAdd(p, dr, now, {}); assert.ok(!(dr.id in p.review), "flagged draft never queued");
 });
 t("review: merge keeps the newer change, including leaving the queue", () => {
   const a = { review: { q1: { step: 2, due: 50, t: 40 } }, ts: { "review:q1": 40 } };

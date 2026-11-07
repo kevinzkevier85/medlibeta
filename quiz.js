@@ -34,7 +34,14 @@ window.MedLibQuizUI = function (ML) {
   const qmapOf = (s) => Object.fromEntries(s.questions.map((q) => [q.id, q]));
   const kov = () => marks().keyOverride;
   // an answer was just checked → move it in the review queue (wrong → back tomorrow)
-  const graded = (q, r) => { if (q && r) C.reviewUpdate(P(), q, C.qScore(q, r, kov()), Date.now(), kov()); };
+  // Self-grading (ถูก/ผิด) after the check re-grades: start again from the queue entry as it was before this round graded it.
+  const graded = (q, r) => {
+    if (!q || !r) return;
+    const R = P().review = P().review || {}; r.rv0 = r.rv0 || {};
+    if (!(q.id in r.rv0)) r.rv0[q.id] = R[q.id] ? { ...R[q.id] } : null;
+    else { if (r.rv0[q.id]) R[q.id] = { ...r.rv0[q.id] }; else delete R[q.id]; C.touch(P(), "review", q.id); }
+    C.reviewUpdate(P(), q, C.qScore(q, r, kov()), Date.now(), kov());
+  };
   const lastDone = (b, s) => roundsOf(b, s).filter((r) => r.done && !r.abandoned).pop() || null;
   const base = (b, s) => `#/set/${enc(b.id)}/${enc(s.id)}`;
 
@@ -560,7 +567,7 @@ window.MedLibQuizUI = function (ML) {
 
   // review queue of one block: due now / waiting (questions removed from the block are left out)
   function reviewCounts(b) {
-    const R = P().review || {}, ids = ML.examsOf(b).map((q) => q.id).filter((id) => R[id]);
+    const R = P().review || {}, ids = ML.examsOf(b).filter((q) => C.counts(q, kov())).map((q) => q.id).filter((id) => R[id]);
     return { due: C.reviewDue(P(), ids, Date.now()).length, queued: ids.length };
   }
 
@@ -660,6 +667,7 @@ window.MedLibQuizUI = function (ML) {
       const q = curQ(c), r = c.r; if (!q || !r) return true;
       const o = r.ov[q.id] = r.ov[q.id] || {};
       if (t.dataset.ov === "auto") delete o[t.dataset.item]; else o[t.dataset.item] = Number(t.dataset.ov);
+      if (r.chk[q.id]) graded(q, r);
       if (!c.single) save(); rerender(); return true;
     }
     const z = t.dataset.z; if (!z) return false;
@@ -672,7 +680,7 @@ window.MedLibQuizUI = function (ML) {
     }
     if (z === "abandon") { if (!ML.armed(t)) return true; const r = activeRound(c.b, c.s); if (r) { r.done = true; r.abandoned = true; r.finished = Date.now(); save(); } rerender(); return true; }
     if (z === "navtoggle") { c.r.navOpen = !c.r.navOpen; save(); rerender(); return true; }
-    if (z === "flag") { const id = t.dataset.q || (q && q.id); if (id) { if (marks().flag[id]) delete marks().flag[id]; else { marks().flag[id] = true; C.reviewAdd(P(), id, Date.now()); } C.touch(P(), "flag", id); save(); rerender(); } return true; }
+    if (z === "flag") { const id = t.dataset.q || (q && q.id); if (id) { if (marks().flag[id]) delete marks().flag[id]; else { marks().flag[id] = true; C.reviewAdd(P(), (ML.findQuestion(id) || {}).q, Date.now(), kov()); } C.touch(P(), "flag", id); save(); rerender(); } return true; }
     if (z === "check") { if (q && c.r) { c.r.chk[q.id] = true; graded(q, c.r); save(); rerender(); } return true; }
     if (z === "singleredo") { delete single[c.q.id]; rerender(); return true; }
     if (z === "finish") {
@@ -705,7 +713,7 @@ window.MedLibQuizUI = function (ML) {
     }
     if (z === "review") {
       const b = ML.findBlock(t.dataset.b); if (!b) return true;
-      const ids = C.reviewDue(P(), ML.examsOf(b).map((x) => x.id), Date.now());
+      const ids = C.reviewDue(P(), ML.examsOf(b).filter((x) => C.counts(x, kov())).map((x) => x.id), Date.now());
       makeMix(b, `ทบทวนวันนี้ · ${new Date().toLocaleDateString("th-TH", { day: "numeric", month: "short" })}`, ids); return true;
     }
     if (z === "mixtopic") {
