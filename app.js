@@ -24,7 +24,7 @@
     p = p && typeof p === "object" ? p : {};
     const m = p.marks = p.marks && typeof p.marks === "object" ? p.marks : {};
     ["flag", "notes", "setNotes", "keyOverride", "reported"].forEach((k) => { if (!m[k] || typeof m[k] !== "object") m[k] = {}; });
-    ["rounds", "read", "mixes", "prefs"].forEach((k) => { if (!p[k] || typeof p[k] !== "object") p[k] = {}; });
+    ["rounds", "read", "mixes", "prefs", "ts"].forEach((k) => { if (!p[k] || typeof p[k] !== "object") p[k] = {}; });
     return p;
   }
   let PROG = normProg((() => { try { return JSON.parse(localStorage.getItem(PKEY) || "null"); } catch (e) { return null; } })());
