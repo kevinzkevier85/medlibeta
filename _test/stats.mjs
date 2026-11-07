@@ -89,6 +89,21 @@ await t("block without topics (DEMO) → score card, no topic table", async () =
   assert.ok(await p.$('[data-blk="DEMO"]'), "DEMO card");
   assert.strictEqual(await p.$('[data-blk="DEMO"] table'), null);
 });
+await t("broken progress entries and rounds without dates don't break the page", async () => {
+  const prog = progress();
+  prog.rounds["END/51_MCQ"] = [null, { id: "x" }, { id: "y", done: true, qids: "bad" }];
+  prog.rounds["END/50_MCQ"] = "oops";
+  const r = prog.rounds["END/52_MCQ"][0]; delete r.started; delete r.finished;
+  const ctx = await browser.newContext({ serviceWorkers: "block" });
+  await ctx.addInitScript((p) => localStorage.setItem("medlib.progress.v1", p), JSON.stringify(prog));
+  const page = await ctx.newPage(); page.errors = []; page.setDefaultTimeout(10000);
+  page.on("pageerror", (e) => page.errors.push(e.message));
+  await page.goto(BASE + "#/stats");
+  await page.waitForFunction(() => window.__medlib && window.__medlib.APP.blocks.length > 0);
+  await page.waitForSelector("#stats"); pages.push(page);
+  assert.ok(await page.$('[data-blk="END"]'), "END card still shows");
+  assert.ok(!/Invalid Date/.test(await page.content()));
+});
 await t("no page errors", async () => { for (const p of pages) assert.deepStrictEqual(p.errors, []); });
 
 await browser.close(); server.kill();

@@ -48,7 +48,7 @@ window.MedLibQuizUI = function (ML) {
   // Latest result of every question in a block (across sets and mixes)
   function blockResults(b) {
     const qmap = Object.fromEntries(ML.examsOf(b).map((q) => [q.id, q]));
-    const rounds = Object.entries(P().rounds).filter(([k]) => k.startsWith(b.id + "/")).flatMap(([, v]) => v);
+    const rounds = Object.entries(P().rounds).filter(([k, v]) => k.startsWith(b.id + "/") && Array.isArray(v)).flatMap(([, v]) => v);
     return C.latestResults(rounds, qmap, kov());
   }
   function setProgress(b, s) {   // only questions that count (draft/disputed answers are left out)
@@ -595,19 +595,19 @@ window.MedLibQuizUI = function (ML) {
       const names = Object.fromEntries((b.topics || []).map((x) => [x.id, x.name]));
       const tops = (b.topics || []).length ? C.groupStats(qs, res, kov(), (q) => q.topic) : [];
       tops.forEach((x) => { if (x.done >= 5 && names[x.key]) weak.push({ b, x, name: names[x.key] }); });
-      const rows = tops.map((x) => `<tr><td>${esc(names[x.key] || x.key)}</td><td>${x.done}/${x.total}</td><td>${pctTxt(x)}</td>
+      const rows = tops.filter((x) => names[x.key]).map((x) => `<tr><td>${esc(names[x.key] || x.key)}</td><td>${x.done}/${x.total}</td><td>${pctTxt(x)}</td>
         <td><button class="btn sm" data-z="mixtopic" data-b="${esc(b.id)}" data-tp="${esc(x.key)}">ฝึก</button></td></tr>`).join("");
       cards.push(`<div class="statcard" data-blk="${esc(b.id)}" style="--blk:${esc(b.color || "var(--artery)")}">
         <div class="ptop"><b>${esc(b.name)}</b><span class="n">${pctTxt(all)}</span></div>
         <span class="sbar"><i style="width:${all.pct || 0}%"></i></span>
         <span class="prog">ทำแล้ว ${all.done}/${all.total} ข้อ · ถูก ${all.ok}</span>
         ${rows ? `<div class="tablewrap"><table><thead><tr><th>หัวข้อ (อ่อนสุดก่อน)</th><th>ทำแล้ว</th><th>คะแนน</th><th></th></tr></thead><tbody>${rows}</tbody></table></div>` : ""}</div>`);
-      Object.entries(P().rounds).filter(([k]) => k.startsWith(b.id + "/")).forEach(([k, list]) => {
+      const qmap = Object.fromEntries(qs.map((q) => [q.id, q]));   // same questions as the cards (respects showDrafts)
+      Object.entries(P().rounds).filter(([k, list]) => k.startsWith(b.id + "/") && Array.isArray(list)).forEach(([k, list]) => {
         const s = setLike(b, k.slice(b.id.length + 1)); if (!s) return;
-        const qmap = qmapOf(s);
-        list.filter((r) => r.done && !r.abandoned && r.kind !== "retry").forEach((r) => {
-          const st = C.roundStats(r, qmap, kov());
-          if (st.checked) pts.push({ t: r.finished || r.started || 0, pct: st.pct, label: `${new Date(r.started).toLocaleDateString("th-TH")} · ${b.name} ${s.title || s.id}` });
+        list.filter((r) => r && Array.isArray(r.qids) && r.chk && r.done && !r.abandoned && r.kind !== "retry").forEach((r) => {
+          const st = C.roundStats(r, qmap, kov()), when = r.finished || r.started || 0;
+          if (st.checked) pts.push({ t: when, pct: st.pct, label: `${when ? new Date(when).toLocaleDateString("th-TH") + " · " : ""}${b.name} ${s.title || s.id}` });
         });
       });
     });
