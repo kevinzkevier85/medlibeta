@@ -33,6 +33,8 @@ window.MedLibQuizUI = function (ML) {
   const activeRound = (b, s) => roundsOf(b, s).filter((r) => !r.done).pop() || null;
   const qmapOf = (s) => Object.fromEntries(s.questions.map((q) => [q.id, q]));
   const kov = () => marks().keyOverride;
+  // an answer was just checked → move it in the review queue (wrong → back tomorrow)
+  const graded = (q, r) => { if (q && r) C.reviewUpdate(P(), q, C.qScore(q, r, kov()), Date.now(), kov()); };
   const lastDone = (b, s) => roundsOf(b, s).filter((r) => r.done && !r.abandoned).pop() || null;
   const base = (b, s) => `#/set/${enc(b.id)}/${enc(s.id)}`;
 
@@ -326,7 +328,7 @@ window.MedLibQuizUI = function (ML) {
 
   function finishRound(b, s, r, all) {
     stop();
-    if (all) r.qids.forEach((id) => { r.chk[id] = true; });
+    if (all) { const qm = qmapOf(s); r.qids.forEach((id) => { if (!r.chk[id]) { r.chk[id] = true; graded(qm[id], r); } }); }
     r.done = true; r.finished = Date.now(); save();
     location.hash = `${base(b, s)}/sum/${r.id}`;
     if (ML.syncSoon) ML.syncSoon();
@@ -556,6 +558,12 @@ window.MedLibQuizUI = function (ML) {
     save(); location.hash = `#/set/${enc(b.id)}/@${enc(id)}`;
   }
 
+  // review queue of one block: due now / waiting (questions removed from the block are left out)
+  function reviewCounts(b) {
+    const R = P().review || {}, ids = ML.examsOf(b).map((q) => q.id).filter((id) => R[id]);
+    return { due: C.reviewDue(P(), ids, Date.now()).length, queued: ids.length };
+  }
+
   /* ---------- personal stats (#/stats) ---------- */
   function viewStats() {
     const blocks = ML.visibleBlocks().filter((b) => ML.examsOf(b).length);
@@ -642,7 +650,7 @@ window.MedLibQuizUI = function (ML) {
     if (t.dataset.opt) {
       const q = curQ(c), r = c.r; if (!q || !r || r.chk[q.id]) return true;
       r.ans[q.id] = t.dataset.opt;
-      if (c.single || r.mode === "practice") r.chk[q.id] = true;
+      if (c.single || r.mode === "practice") { r.chk[q.id] = true; graded(q, r); }
       if (!c.single) save();
       rerender();
       const ex = $(".qcard .explain"); if (ex) ex.scrollIntoView({ block: "nearest", behavior: "smooth" });
@@ -664,8 +672,8 @@ window.MedLibQuizUI = function (ML) {
     }
     if (z === "abandon") { if (!ML.armed(t)) return true; const r = activeRound(c.b, c.s); if (r) { r.done = true; r.abandoned = true; r.finished = Date.now(); save(); } rerender(); return true; }
     if (z === "navtoggle") { c.r.navOpen = !c.r.navOpen; save(); rerender(); return true; }
-    if (z === "flag") { const id = t.dataset.q || (q && q.id); if (id) { if (marks().flag[id]) delete marks().flag[id]; else marks().flag[id] = true; C.touch(P(), "flag", id); save(); rerender(); } return true; }
-    if (z === "check") { if (q && c.r) { c.r.chk[q.id] = true; if (!c.single) save(); rerender(); } return true; }
+    if (z === "flag") { const id = t.dataset.q || (q && q.id); if (id) { if (marks().flag[id]) delete marks().flag[id]; else { marks().flag[id] = true; C.reviewAdd(P(), id, Date.now()); } C.touch(P(), "flag", id); save(); rerender(); } return true; }
+    if (z === "check") { if (q && c.r) { c.r.chk[q.id] = true; graded(q, c.r); save(); rerender(); } return true; }
     if (z === "singleredo") { delete single[c.q.id]; rerender(); return true; }
     if (z === "finish") {
       const r = c.r, left = r.qids.filter((id) => !r.chk[id]).length;
@@ -694,6 +702,11 @@ window.MedLibQuizUI = function (ML) {
       const s = ML.findSet(c.b, t.dataset.s); if (!s) return true;
       const pref = P().prefs || {};
       startRound(c.b, s, { mode: pref.mode || "practice", shuffleQ: !!pref.shuffleQ, shuffleC: !!pref.shuffleC }); return true;
+    }
+    if (z === "review") {
+      const b = ML.findBlock(t.dataset.b); if (!b) return true;
+      const ids = C.reviewDue(P(), ML.examsOf(b).map((x) => x.id), Date.now());
+      makeMix(b, `ทบทวนวันนี้ · ${new Date().toLocaleDateString("th-TH", { day: "numeric", month: "short" })}`, ids); return true;
     }
     if (z === "mixtopic") {
       const b = (t.dataset.b && ML.findBlock(t.dataset.b)) || c.b; if (!b) return true;
@@ -776,5 +789,5 @@ window.MedLibQuizUI = function (ML) {
     return false;
   }
 
-  return { counts: (q) => C.counts(q, kov()), qPos, view, viewSingle, viewStats, examTabHTML, planHTML, onClick, onChange, onInput, onKey, stop, blockResults };
+  return { counts: (q) => C.counts(q, kov()), qPos, view, viewSingle, viewStats, reviewCounts, examTabHTML, planHTML, onClick, onChange, onInput, onKey, stop, blockResults };
 };
