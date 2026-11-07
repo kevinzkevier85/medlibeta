@@ -556,6 +556,43 @@ window.MedLibQuizUI = function (ML) {
     save(); location.hash = `#/set/${enc(b.id)}/@${enc(id)}`;
   }
 
+  /* ---------- personal stats (#/stats) ---------- */
+  function viewStats() {
+    const blocks = ML.visibleBlocks().filter((b) => ML.examsOf(b).length);
+    const pctTxt = (x) => (x.pct === null ? "—" : `${x.pct}%`);
+    const cards = [], weak = [], pts = [];
+    blocks.forEach((b) => {
+      const qs = ML.examsOf(b), res = blockResults(b);
+      const all = C.groupStats(qs, res, kov(), () => b.id)[0];
+      if (!all || !all.done) return;
+      const names = Object.fromEntries((b.topics || []).map((x) => [x.id, x.name]));
+      const tops = (b.topics || []).length ? C.groupStats(qs, res, kov(), (q) => q.topic) : [];
+      tops.forEach((x) => { if (x.done >= 5 && names[x.key]) weak.push({ b, x, name: names[x.key] }); });
+      const rows = tops.map((x) => `<tr><td>${esc(names[x.key] || x.key)}</td><td>${x.done}/${x.total}</td><td>${pctTxt(x)}</td>
+        <td><button class="btn sm" data-z="mixtopic" data-b="${esc(b.id)}" data-tp="${esc(x.key)}">ฝึก</button></td></tr>`).join("");
+      cards.push(`<div class="statcard" data-blk="${esc(b.id)}" style="--blk:${esc(b.color || "var(--artery)")}">
+        <div class="ptop"><b>${esc(b.name)}</b><span class="n">${pctTxt(all)}</span></div>
+        <span class="sbar"><i style="width:${all.pct || 0}%"></i></span>
+        <span class="prog">ทำแล้ว ${all.done}/${all.total} ข้อ · ถูก ${all.ok}</span>
+        ${rows ? `<div class="tablewrap"><table><thead><tr><th>หัวข้อ (อ่อนสุดก่อน)</th><th>ทำแล้ว</th><th>คะแนน</th><th></th></tr></thead><tbody>${rows}</tbody></table></div>` : ""}</div>`);
+      Object.entries(P().rounds).filter(([k]) => k.startsWith(b.id + "/")).forEach(([k, list]) => {
+        const s = setLike(b, k.slice(b.id.length + 1)); if (!s) return;
+        const qmap = qmapOf(s);
+        list.filter((r) => r.done && !r.abandoned && r.kind !== "retry").forEach((r) => {
+          const st = C.roundStats(r, qmap, kov());
+          if (st.checked) pts.push({ t: r.finished || r.started || 0, pct: st.pct, label: `${new Date(r.started).toLocaleDateString("th-TH")} · ${b.name} ${s.title || s.id}` });
+        });
+      });
+    });
+    let h = `<div class="head"><h2>สถิติของฉัน</h2><p class="hint">ใช้ผลล่าสุดของแต่ละข้อ ไม่นับข้อที่เฉลยยังไม่ยืนยัน</p></div><div id="stats">`;
+    if (!cards.length) { ML.main.innerHTML = h + `<div class="empty">ยังไม่มีข้อมูล ทำข้อสอบสักชุดก่อน แล้วสถิติจะขึ้นที่นี่</div></div>`; return; }
+    weak.sort((a, b) => a.x.pct - b.x.pct);
+    if (weak.length) h += `<div class="quickrow"><button class="btn primary weakest" data-z="mixtopic" data-b="${esc(weak[0].b.id)}" data-tp="${esc(weak[0].x.key)}">ฝึกหัวข้อที่อ่อนสุด: ${esc(weak[0].name)} (${weak[0].x.pct}%)</button></div>`;
+    pts.sort((a, b) => a.t - b.t);
+    h += pts.length >= 2 ? `<h3>คะแนนแต่ละรอบ</h3>${chartSVG(pts)}` : `<p class="hint">ทำครบ 2 รอบขึ้นไปจะเห็นกราฟ</p>`;
+    ML.main.innerHTML = h + `<div class="statgrid">${cards.join("")}</div></div>`;
+  }
+
   /* ---------- floating notepad per set ---------- */
   let padOpen = false;
   function notepadHTML(b, s) {
@@ -659,8 +696,9 @@ window.MedLibQuizUI = function (ML) {
       startRound(c.b, s, { mode: pref.mode || "practice", shuffleQ: !!pref.shuffleQ, shuffleC: !!pref.shuffleC }); return true;
     }
     if (z === "mixtopic") {
-      const tp = (c.b.topics || []).find((x) => x.id === t.dataset.tp); if (!tp) return true;
-      makeMix(c.b, `${tp.name} · ทุกชุด`, ML.examsOf(c.b).filter((x) => x.topic === tp.id).map((x) => x.id)); return true;
+      const b = (t.dataset.b && ML.findBlock(t.dataset.b)) || c.b; if (!b) return true;
+      const tp = (b.topics || []).find((x) => x.id === t.dataset.tp); if (!tp) return true;
+      makeMix(b, `${tp.name} · ทุกชุด`, ML.examsOf(b).filter((x) => x.topic === tp.id).map((x) => x.id)); return true;
     }
     if (z === "mixlec") {
       const l = t.dataset.l, qs = ML.examsOf(c.b).filter((x) => (x.refs || []).some((y) => y.lecture === l));
@@ -738,5 +776,5 @@ window.MedLibQuizUI = function (ML) {
     return false;
   }
 
-  return { counts: (q) => C.counts(q, kov()), qPos, view, viewSingle, examTabHTML, planHTML, onClick, onChange, onInput, onKey, stop, blockResults };
+  return { counts: (q) => C.counts(q, kov()), qPos, view, viewSingle, viewStats, examTabHTML, planHTML, onClick, onChange, onInput, onKey, stop, blockResults };
 };
