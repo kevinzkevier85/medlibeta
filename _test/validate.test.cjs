@@ -36,4 +36,12 @@ t("exam set: a question without topic does not fail the set (the site would hide
   assert.deepStrictEqual(V.validateExamSet(set, blk(TOP)), []);
   assert.deepStrictEqual(V.untagged(set, blk(TOP)), []);
 });
+t("refs: a lecture ref may leave out pages; a paper ref may not", () => {
+  const b = blk(), L = b.lectures[0].id;
+  const P = (b.papers || [])[0].id;
+  const q = (refs) => ({ ...q0(), refs });
+  assert.deepStrictEqual(V.validateQuestion(q([{ lecture: L }]), { block: b }), []);
+  assert.ok(V.validateQuestion(q([{ paper: P }]), { block: b }).length > 0);
+  assert.ok(V.validateQuestion(q([{ lecture: L, pages: [99999] }]), { block: b }).length > 0);
+});
 console.log(`\n${pass} ผ่าน`);
