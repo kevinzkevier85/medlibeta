@@ -105,10 +105,10 @@ window.MedLibQuizUI = function (ML) {
   const figureHTML = (b, q) => (q.image ? `<figure><img src="${esc(b._base + "/" + q.image)}" alt="${esc(q.image_caption || "ภาพประกอบโจทย์")}" data-zoom="1" loading="lazy">${q.image_caption ? `<figcaption>${txt(q.image_caption)}</figcaption>` : ""}</figure>` : "");
 
   // Box under a revealed question: answer, original key, mechanism, key concept, refs, my note, report / my key
-  function explainHTML(b, q, extra) {
+  function explainHTML(b, q, extra, tone) {
     const mine = kov()[q.id];
     let h = `<div class="explain"><h3>คำอธิบาย${badgeHTML(q)}</h3>`;
-    if (q.explanation || extra) h += `<div class="answerline">${extra || ""}${q.explanation ? kcHTML(q.explanation) : ""}</div>`;
+    if (q.explanation || extra) h += `<div class="answerline${tone ? " " + tone : ""}">${extra || ""}${q.explanation ? kcHTML(q.explanation) : ""}</div>`;
     if (q.source_answer || q.source_answer_text) h += `<div class="keyrow src"><span class="kl">เฉลยต้นฉบับ: ${esc(q.source_answer || q.source_answer_text)}${q.type === "MCQ" ? " (ไม่ใช้ให้คะแนน)" : ""}</span>${q.source_answer_note ? kcHTML(q.source_answer_note) : ""}</div>`;
     else if (q.source_answer_note && q.answer_status !== "verified") h += `<div class="keyrow src"><span class="kl">หมายเหตุจากต้นฉบับ</span>${kcHTML(q.source_answer_note)}</div>`;
     if (q.mechanism && q.mechanism.length) h += `<h4>ลำดับกลไก</h4>${chainHTML(q.mechanism)}`;
@@ -153,7 +153,7 @@ window.MedLibQuizUI = function (ML) {
       if (reveal) {
         const disp = r.shuffleC ? "ABCDE"[order.indexOf(key)] : key;
         const extra = key ? `<p><b>${!chosen ? "ไม่ได้ตอบ · " : chosen === key ? "ถูกต้อง · " : "ยังไม่ใช่ · "}คำตอบ ${esc(disp)}${r.shuffleC && disp !== key ? ` (ช้อยส์ ${esc(key)} ในต้นฉบับ)` : ""}${q.answer_status === "corrected" ? " (เฉลยใหม่)" : q.answer_status === "draft" ? " (ร่างเฉลย)" : ""}</b></p>` : "";
-        h += explainHTML(b, q, extra);
+        h += explainHTML(b, q, extra, !chosen ? "none" : chosen === key ? "" : "bad");
       }
       return h;
     }

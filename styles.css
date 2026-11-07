@@ -300,6 +300,9 @@ textarea { width: 100%; min-height: 68px; border: 1px solid var(--line); border-
 .explain h3 { margin: 0 0 8px; font-size: 1rem; }
 .answerline { padding: 10px 12px; border-left: 4px solid var(--ok); background: var(--ok-soft); border-radius: var(--r-sm); }
 .answerline p { margin: 0 0 4px; }
+.answerline.bad { border-left-color: var(--artery); background: var(--artery-soft); }
+.answerline.bad > p:first-child b { color: var(--artery); }
+.answerline.none { border-left-color: var(--muted); background: var(--hover); }
 .keyrow { margin-top: 8px; padding: 8px 10px; border-radius: var(--r-sm); font-size: .93rem; }
 .keyrow .kl { display: block; font-weight: 700; font-size: .82rem; }
 .keyrow.src { background: var(--paper); border: 1px solid var(--line); }
