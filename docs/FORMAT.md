@@ -59,7 +59,7 @@ One file = one set; the website shows it as a whole set (cohort card → set run
 | `explanation` | | text |
 | `refs[]` | ✓ | `{ "lecture": "L02", "pages": [14, 15] }` or `{ "paper": "MCQ52", "pages": [6] }` — must exist in the block, pages within its page count |
 | `tags[]` | ✓ | list of words (may be empty) |
-| `topic` | | a topic `id` from `block.json › topics`. Required in exam files once the block has `topics`; questions added in the web form may leave it out |
+| `topic` | | a topic `id` from `block.json › topics`. Every exam question should have one once the block has `topics` (`node tools/validate.cjs` warns about missing ones; the set still shows). Questions added in the web form may leave it out |
 | `source` | ✓ | `manual` (web form) / `claude-mcp` (Claude) / `import` (bulk import) |
 
 ## KF / OSPE question
