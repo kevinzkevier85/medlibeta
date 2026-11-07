@@ -5,6 +5,8 @@ Usage:  python3 auditor/tools/crop_images.py [--block end] [--set end_52_KF] [--
 Reads auditor/data/images.json (question id → page + rectangle, every pairing checked by eye) and the cached
 PDF in auditor/source/. Writes data/blocks/<BLOCK>/img/<MedLib question id>.jpg (≤ 1200 px wide, JPEG).
   "role": "key"   → crop from the answer-key PDF; file name gets "-key" (picture shown with the answer)
+  "file": "img/…jpg" → output name (relative to the block folder) when one question needs more than one picture;
+                    the images.json key is then any unique id that starts with the question id, e.g. end_50_KF_009_b
   "native": true  → take the embedded picture that sits in rect at its own full resolution, whole —
                     no hand-drawn box, so no edge of the picture can be cut off (use whenever the
                     picture is a single embedded image; check the page by eye that nothing sits outside it)
@@ -57,7 +59,7 @@ def main():
     inv = {s["set_id"]: s for s in json.loads((AUD / "data" / "inventory.json").read_text(encoding="utf-8"))["sets"]}
     docs, n = {}, 0
     for qid, im in cfg["images"].items():
-        sid = qid.rsplit("_", 1)[0]
+        sid = next(s for s in inv if qid.startswith(s + "_"))
         if inv[sid]["block"] != a.block or (a.set and sid != a.set):
             continue
         role = im.get("role", "exam")
@@ -76,7 +78,8 @@ def main():
             img = Image.open(io.BytesIO(pix.tobytes("png"))).convert("RGB")
         if img.width > MAX_W:
             img = img.resize((MAX_W, round(img.height * MAX_W / img.width)), Image.LANCZOS)
-        out = ROOT / "data" / "blocks" / a.block.upper() / "img" / f"{medlib_id(qid, inv)}{'-key' if role == 'key' else ''}.jpg"
+        bdir = ROOT / "data" / "blocks" / a.block.upper()
+        out = bdir / im["file"] if im.get("file") else bdir / "img" / f"{medlib_id(qid, inv)}{'-key' if role == 'key' else ''}.jpg"
         out.parent.mkdir(parents=True, exist_ok=True)
         img.save(out, "JPEG", quality=82, optimize=True)
         n += 1

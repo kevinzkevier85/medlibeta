@@ -52,9 +52,9 @@ def main():
 
     # every picture registered for this set must be used by some question/item
     for qid, im in load(Path(a.images) if a.images else AUD / "data" / "images.json")["images"].items():
-        if qid.rsplit("_", 1)[0] != a.set:
+        if not qid.startswith(a.set + "_"):
             continue
-        f = f"img/{B}-{c}-KF-{int(qid.rsplit('_', 1)[1]):03d}{'-key' if im.get('role') == 'key' else ''}.jpg"
+        f = im.get("file") or f"img/{B}-{c}-KF-{int(qid[len(a.set) + 1:]):03d}{'-key' if im.get('role') == 'key' else ''}.jpg"
         if f not in used:
             sys.exit(f"ERROR: รูป {f} ({qid}) อยู่ใน images.json แต่ไม่มีข้อไหนใช้")
 
