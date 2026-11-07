@@ -1,0 +1,1001 @@
+{
+ "meta": {
+  "set_id": "52_KF",
+  "block": "END",
+  "cohort": 52,
+  "type": "KF",
+  "title": "KF Endocrine · Med PSU 52",
+  "time_limit_min": 90,
+  "generated_by": "auditor/tools/build_kf.py from auditor/data/work/end_52_KF.kf.json — do not edit by hand"
+ },
+ "questions": [
+  {
+   "id": "END-52-KF-001",
+   "block": "END",
+   "cohort": 52,
+   "n": 1,
+   "type": "KF",
+   "case": "During parturition, oxytocin release is high to stimulate uterine contraction. To exert its cellular action, please indicate the linked enzyme and its second messenger of oxytocin.",
+   "items": [
+    {
+     "id": "1.1",
+     "prompt": "Linked enzyme",
+     "format": "short",
+     "accepted": [
+      "phospholipase c",
+      "plc"
+     ],
+     "source_key": "Phospholipase C",
+     "explanation": "Oxytocin จับ receptor ชนิด Gq-coupled GPCR ซึ่งกระตุ้น phospholipase C (PLC)"
+    },
+    {
+     "id": "1.2",
+     "prompt": "Second messenger",
+     "format": "short",
+     "accepted": [
+      "ip3/dag",
+      "ip3",
+      "dag",
+      "inositol trisphosphate",
+      "diacylglycerol"
+     ],
+     "source_key": "IP3/DAG\nGPCR Gq(receptor) → PLC → IP3/DAG → Ca²⁺ → uterine contraction",
+     "mechanism": [
+      "Oxytocin จับ OT receptor (Gq)",
+      "Phospholipase C ทำงาน",
+      "PIP2 → IP3 + DAG",
+      "IP3 ปล่อย Ca²⁺ จาก SR; DAG กระตุ้น PKC",
+      {
+       "s": "Ca²⁺–calmodulin → MLCK → มดลูกบีบตัว",
+       "answer": true
+      }
+     ],
+     "explanation": "PLC ตัด PIP2 ได้ IP3 (ปล่อย Ca²⁺) และ DAG (กระตุ้น PKC)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF52",
+     "pages": [
+      1
+     ]
+    },
+    {
+     "paper": "KF52-KEY",
+     "pages": [
+      1
+     ]
+    }
+   ],
+   "tags": [
+    "oxytocin",
+    "second messenger"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "Oxytocin receptor = GPCR (Gq) → phospholipase C → IP3 + DAG → Ca²⁺ ↑ → มดลูกบีบตัว"
+  },
+  {
+   "id": "END-52-KF-002",
+   "block": "END",
+   "cohort": 52,
+   "n": 2,
+   "type": "KF",
+   "case": "A laboratory report shows a patient's serum total calcium is within normal range. Calcium in plasma exists in different forms that vary in physiological activity.",
+   "items": [
+    {
+     "id": "2.1",
+     "prompt": "Please indicate three different forms of calcium present in the plasma",
+     "format": "short",
+     "keywords_all": [
+      "ion",
+      "protein",
+      "complex"
+     ],
+     "key_text": "ionized form (free form), bound to proteins, complex form with anions",
+     "source_key": "ionized form (free form), bound to proteins, complex form with anions",
+     "explanation": "ionized/free Ca²⁺, Ca²⁺ ที่จับโปรตีน (albumin) และ Ca²⁺ ที่จับ anion (citrate, carbonate, oxalate, phosphate)"
+    },
+    {
+     "id": "2.2",
+     "prompt": "Which form of calcium is the most prevalent in the plasma?",
+     "format": "short",
+     "accepted": [
+      "ionized",
+      "ionised",
+      "free form",
+      "free calcium",
+      "ionized calcium"
+     ],
+     "source_key": "ionized form (free form)",
+     "key_image": "img/END-52-KF-002-key.jpg",
+     "key_image_caption": "สไลด์ที่แนบในเฉลยต้นฉบับ: Calcium distribution in the body (SDL) — ionized 50%, complexed 10%, protein bound 40%",
+     "explanation": "ตามสไลด์ SDL (Koeppen & Stanton): ionized 50% > protein-bound 40% > complexed 10% ตำราบางเล่มให้ ionized กับ protein-bound ใกล้กัน (~45%) แต่ข้อนี้ตอบ ionized ตาม lecture"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF52",
+     "pages": [
+      1
+     ]
+    },
+    {
+     "paper": "KF52-KEY",
+     "pages": [
+      1
+     ]
+    }
+   ],
+   "tags": [
+    "calcium"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "Ca²⁺ ในพลาสมา: ionized (free) ~50% — ตัวเดียวที่ออกฤทธิ์, protein-bound ~40% (ส่วนใหญ่ albumin), complexed กับ anion ~10%"
+  },
+  {
+   "id": "END-52-KF-003",
+   "block": "END",
+   "cohort": 52,
+   "n": 3,
+   "type": "KF",
+   "case": "Which one of the following are the main functions of thyroid follicular cells? (Select 4 correct answers from the choices below)",
+   "items": [
+    {
+     "id": "3",
+     "prompt": "เลือก 4 ข้อ",
+     "format": "select",
+     "max_answers": 4,
+     "options": [
+      {
+       "key": "A",
+       "text": "synthesize thyroxine"
+      },
+      {
+       "key": "B",
+       "text": "control calcitonin level"
+      },
+      {
+       "key": "C",
+       "text": "synthesize thyroglobulin"
+      },
+      {
+       "key": "D",
+       "text": "take up iodinated thyroglobulin"
+      },
+      {
+       "key": "E",
+       "text": "modulate parathyroid hormone level"
+      },
+      {
+       "key": "F",
+       "text": "transport TSH"
+      },
+      {
+       "key": "G",
+       "text": "take up iodide from blood circulation"
+      },
+      {
+       "key": "H",
+       "text": "control calcitonin production"
+      },
+      {
+       "key": "I",
+       "text": "respond to TSH"
+      }
+     ],
+     "answer": [
+      "C",
+      "D",
+      "G",
+      "I"
+     ],
+     "source_key": "C, D, G, I",
+     "explanation": "B, H = หน้าที่ของ parafollicular (C) cell · E, F ไม่ใช่หน้าที่ของ follicular cell · A (synthesize thyroxine) ถูกในแง่กว้าง แต่ T4 เกิดบน thyroglobulin ใน colloid (TPO ที่ apical membrane) เฉลยจึงไม่เลือก — โจทย์ให้เลือกได้แค่ 4"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF52",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "KF52-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [
+    "thyroid",
+    "follicular cell"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "Follicular cell: นำ iodide เข้า (NIS), สร้าง thyroglobulin, endocytose iodinated thyroglobulin กลับเข้าเซลล์, ตอบสนองต่อ TSH · calcitonin มาจาก parafollicular C cell"
+  },
+  {
+   "id": "END-52-KF-004",
+   "block": "END",
+   "cohort": 52,
+   "n": 4,
+   "type": "KF",
+   "case": "A 32-year-old female office worker presents with weight loss despite increased appetite, palpitations, heat intolerance, and tremors for the past 2 months. On examination, she has tachycardia, warm moist skin, and a fine tremor of her hands. What would you expect her laboratory findings to be? (high, normal, low)",
+   "items": [
+    {
+     "id": "4.1",
+     "prompt": "Serum T3/T4",
+     "format": "short",
+     "accepted": [
+      "high",
+      "สูง",
+      "increased"
+     ],
+     "source_key": "high",
+     "explanation": "อาการ hyperthyroidism → T3/T4 สูง"
+    },
+    {
+     "id": "4.2",
+     "prompt": "Serum TSH",
+     "format": "short",
+     "accepted": [
+      "low",
+      "ต่ำ",
+      "decreased"
+     ],
+     "source_key": "Low\nhyperthyroidism: T3/T4 สูง TSH ต่ำลงจาก negative feedback",
+     "explanation": "T3/T4 สูงกด TRH/TSH (negative feedback) → TSH ต่ำ"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF52",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "KF52-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [
+    "hyperthyroidism",
+    "thyroid function test"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "Primary hyperthyroidism: T3/T4 สูง → negative feedback → TSH ต่ำ"
+  },
+  {
+   "id": "END-52-KF-005",
+   "block": "END",
+   "cohort": 52,
+   "n": 5,
+   "type": "KF",
+   "case": "Addison's disease is classically associated with hyperpigmentation caused by a deficiency of hormone A (____). This deficiency leads to a compensatory increase in hormone B (____), which binds to C receptor (____) located on D cells (____) in the skin.",
+   "items": [
+    {
+     "id": "5.A",
+     "prompt": "A — hormone ที่ขาด",
+     "format": "short",
+     "accepted": [
+      "cortisol"
+     ],
+     "source_key": "cortisol",
+     "explanation": "Primary adrenal insufficiency → cortisol ต่ำ"
+    },
+    {
+     "id": "5.B",
+     "prompt": "B — hormone ที่เพิ่มขึ้นชดเชย",
+     "format": "short",
+     "accepted": [
+      "acth",
+      "adrenocorticotropic"
+     ],
+     "source_key": "ACTH",
+     "explanation": "ขาด feedback → ACTH (จาก POMC) สูง"
+    },
+    {
+     "id": "5.C",
+     "prompt": "C — receptor",
+     "format": "short",
+     "accepted": [
+      "melanocortin-1",
+      "melanocortin 1",
+      "mc1r",
+      "mc1"
+     ],
+     "source_key": "Melanocortin-1 receptor (MC1R)",
+     "explanation": "ACTH มีลำดับเดียวกับ α-MSH จึงจับ MC1R ได้"
+    },
+    {
+     "id": "5.D",
+     "prompt": "D — cells ในผิวหนัง",
+     "format": "short",
+     "accepted": [
+      "melanocyte"
+     ],
+     "source_key": "Melanocytes",
+     "explanation": "MC1R อยู่บน melanocyte → สร้าง melanin มากขึ้น → ผิวคล้ำ"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF52",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "KF52-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [
+    "Addison's disease",
+    "ACTH",
+    "MC1R"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "Cortisol ↓ → ไม่มี negative feedback → POMC/ACTH ↑ → ACTH จับ MC1R บน melanocyte → melanin ↑"
+  },
+  {
+   "id": "END-52-KF-006",
+   "block": "END",
+   "cohort": 52,
+   "n": 6,
+   "type": "KF",
+   "case": "A 50-year-old man presents with polyuria, polydipsia, excessive thirst, frequent urination, and generalized weakness. He also reports blurry vision and mild confusion but denies nausea, vomiting, or abdominal pain. Laboratory tests reveal a fasting blood glucose of 160 mg/dL, serum osmolality elevated at 320 mOsm/kg, and absence of ketones in both blood and urine.",
+   "items": [
+    {
+     "id": "6.1",
+     "prompt": "The most likely diagnosis is",
+     "format": "short",
+     "accepted": [
+      "type 2 diabetes",
+      "type 2 dm",
+      "t2dm",
+      "dm type 2",
+      "type ii diabetes"
+     ],
+     "source_key": "Type 2 Diabetes Mellitus (T2DM)\nไม่มี ketone → ไม่ใช่ DKA → เข้ากับ T2DM",
+     "explanation": "อายุ 50, ไม่มี ketone, FBG 160 mg/dL (≥ 126) → T2DM · ยังไม่ถึงเกณฑ์ HHS (glucose > 600 mg/dL, osmolality > 320)"
+    },
+    {
+     "id": "6.2",
+     "prompt": "The glucose transporter that is primarily defective or insufficient in this condition is",
+     "format": "short",
+     "accepted": [
+      "glut4",
+      "glut-4",
+      "glut 4"
+     ],
+     "source_key": "GLUT4\ninsulin resistance → การนำ GLUT4 ขึ้นมาบน cell membrane ลดลง → glucose uptake น้อยลง",
+     "explanation": "GLUT4 ที่กล้ามเนื้อและไขมันขึ้นกับ insulin; insulin resistance ทำให้ translocation ลดลง"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF52",
+     "pages": [
+      3
+     ]
+    },
+    {
+     "paper": "KF52-KEY",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [
+    "diabetes mellitus",
+    "GLUT4"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "ไม่มี ketone → ไม่ใช่ DKA; FBG ≥ 126 ในผู้ใหญ่ → T2DM ซึ่งพื้นฐานคือ insulin resistance ทำให้ GLUT4 ขึ้นมาที่ผิวเซลล์น้อยลง"
+  },
+  {
+   "id": "END-52-KF-007",
+   "block": "END",
+   "cohort": 52,
+   "n": 7,
+   "type": "KF",
+   "case": "A 32 years old woman had has difficulty concentrating at work in the past month. She complains that her work area is hot and she had been eat more but weight loss 5 kg in the past 2 month and have no neck discomfort during chewing and swallowing. On physical examination, Her body temperature is 37.5 C, Pulse rate 101/min, respiratory rate 22/min, and blood pressure 135/85 mm Hg. Upon neck palpation and slightly diffusely enlarged thyroid gland are noted.",
+   "items": [
+    {
+     "id": "7.1",
+     "prompt": "The most likely diagnosis is",
+     "format": "short",
+     "accepted": [
+      "graves"
+     ],
+     "source_key": "Graves' disease\nอาการ hyperthyroidism + diffuse goiter + ไม่มี neck pain → Graves' disease",
+     "explanation": "ไม่เจ็บคอ แยกจาก subacute (de Quervain) thyroiditis; ต่อมโตแบบ diffuse แยกจาก toxic nodular goiter"
+    },
+    {
+     "id": "7.2",
+     "prompt": "Describe the typical histopathological features of this condition.",
+     "format": "short",
+     "keywords_all": [
+      "columnar",
+      "scallop"
+     ],
+     "key_text": "tall columnar follicular epithelial cells, scalloped colloid, hyperplasia and hypertrophy of follicular cells",
+     "source_key": "tall columnar follicular epithelial cells, scalloped colloid, hyperplasia and hypertrophy of follicular",
+     "explanation": "Diffuse hyperplasia: follicular cell สูงแบบ tall columnar เบียดกันจนเกิด papillary infolding, colloid จางและขอบเป็นหยัก (scalloping), อาจมี lymphoid infiltrate"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF52",
+     "pages": [
+      3
+     ]
+    },
+    {
+     "paper": "KF52-KEY",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [
+    "Graves' disease",
+    "thyroid pathology"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "Hyperthyroidism + diffuse goiter + ไม่เจ็บคอ → Graves' disease · พยาธิ: tall columnar follicular cells, papillary infolding, scalloped colloid"
+  },
+  {
+   "id": "END-52-KF-008",
+   "block": "END",
+   "cohort": 52,
+   "n": 8,
+   "type": "KF",
+   "case": "A 65-year-old man presents to the clinic complaining of severe headache and persistent high blood pressure. On examination, his blood pressure is 180/100 mmHg and his heart rate is 80 beats per minute. Laboratory investigations reveal a normal morning serum cortisol level of 15 µg/dL (reference range 6-23 µg/dL), a suppressed plasma renin activity of 1.2 ng/mL/hr (reference 1.9-3.7 ng/mL/hr), an elevated serum aldosterone level of 44 ng/dL (reference 4.0-31.0 ng/dL), and hypokalemia with serum potassium at 2.5 mmol/L.",
+   "items": [
+    {
+     "id": "8.1",
+     "prompt": "Which type of hyperaldosteronism is the most likely diagnosis? (ต้นฉบับพิมพ์ว่า \"hyperthyroidism\")",
+     "format": "select",
+     "max_answers": 1,
+     "options": [
+      {
+       "key": "A",
+       "text": "Primary hyperaldosteronism"
+      },
+      {
+       "key": "B",
+       "text": "Secondary hyperaldosteronism"
+      }
+     ],
+     "answer": [
+      "A"
+     ],
+     "source_key": "A) Primary hyperaldosteronism\nAldosterone สูงผิดปกติจาก adrenal gland โดยตรงทำให้ renin ต่ำ (เพราะ negative feedback)",
+     "explanation": "Secondary hyperaldosteronism จะมี renin สูง (เช่น renal artery stenosis, heart failure) ผู้ป่วยรายนี้ renin ถูกกด"
+    },
+    {
+     "id": "8.2",
+     "prompt": "Identify the two pathologies responsible for this patient's condition.",
+     "format": "short",
+     "keywords_all": [
+      "adenoma",
+      "hyperplasia"
+     ],
+     "key_text": "Aldosterone-producing adenoma, Bilateral adrenal hyperplasia",
+     "source_key": "Aldosterone-producing adenoma, Bilateral adrenal hyperplasia",
+     "explanation": "Aldosterone-producing adenoma (Conn syndrome) และ bilateral (idiopathic) adrenal hyperplasia เป็นสาเหตุส่วนใหญ่ของ primary hyperaldosteronism"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF52",
+     "pages": [
+      4
+     ]
+    },
+    {
+     "paper": "KF52-KEY",
+     "pages": [
+      4
+     ]
+    }
+   ],
+   "tags": [
+    "hyperaldosteronism",
+    "Conn syndrome"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "Aldosterone สูง + renin ต่ำ = primary hyperaldosteronism (ต่อมหมวกไตสร้างเอง) · สาเหตุหลัก: aldosterone-producing adenoma, bilateral adrenal hyperplasia"
+  },
+  {
+   "id": "END-52-KF-009",
+   "block": "END",
+   "cohort": 52,
+   "n": 9,
+   "type": "KF",
+   "case": "Fill in the blank \"Answer with only one drug name. More than one answer will not be add scored.\"",
+   "items": [
+    {
+     "id": "9.1",
+     "prompt": "Primarily used as thyroid hormone replacement therapy in hypothyroidism?",
+     "format": "short",
+     "accepted": [
+      "levothyroxine",
+      "l-thyroxine",
+      "l-t4"
+     ],
+     "source_key": "Levothyroxine",
+     "explanation": "Levothyroxine (synthetic T4) ครึ่งชีวิตยาว กินวันละครั้ง ร่างกายแปลงเป็น T3 เอง"
+    },
+    {
+     "id": "9.2",
+     "prompt": "Inhibits peripheral conversion of T4 to T3 and is used to rapidly control symptoms in hyperthyroidism?",
+     "format": "short",
+     "accepted": [
+      "propylthiouracil",
+      "ptu"
+     ],
+     "source_key": "Propylthiouracil\nPTU นอกจากยับยั้ง TPO (organification, coupling) ยังยับยั้ง 5'-deiodinase → ลด conversion T4 → T3",
+     "explanation": "PTU ต่างจาก methimazole ตรงที่ยับยั้ง type 1 5'-deiodinase ด้วย จึงลด T3 ได้เร็วกว่า (ใช้ใน thyroid storm)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF52",
+     "pages": [
+      4
+     ]
+    },
+    {
+     "paper": "KF52-KEY",
+     "pages": [
+      4
+     ]
+    }
+   ],
+   "tags": [
+    "thyroid drugs"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "Levothyroxine (T4) = ยาทดแทนหลักของ hypothyroidism · PTU ยับยั้งทั้ง TPO และ peripheral 5'-deiodinase"
+  },
+  {
+   "id": "END-52-KF-010",
+   "block": "END",
+   "cohort": 52,
+   "n": 10,
+   "type": "KF",
+   "case": "Fill in the blank \"Answer with only one drug name. More than one answer will not be add scored.\"",
+   "items": [
+    {
+     "id": "10.1",
+     "prompt": "Name one drug commonly used to medically treat severe Cushing's syndrome by inhibiting cortisol synthesis",
+     "format": "short",
+     "accepted": [
+      "etomidate",
+      "metyrapone",
+      "ketoconazole",
+      "osilodrostat"
+     ],
+     "source_key": "Etomidate\nยับยั้ง enzyme 11β-hydroxylase → ลด cortisol synthesis อย่างรวดเร็ว",
+     "explanation": "เฉลยต้นฉบับตอบ etomidate (ยับยั้ง 11β-hydroxylase, IV ใช้ในรายรุนแรง) · ระบบนับ metyrapone, ketoconazole, osilodrostat เป็นคำตอบที่ถูกด้วย เพราะเป็นยายับยั้ง steroidogenesis ที่ใช้รักษา Cushing's เหมือนกัน (โจทย์ให้ตอบชื่อยาเดียว)"
+    },
+    {
+     "id": "10.2",
+     "prompt": "Name the drug used to replace mineralocorticoid deficiency in patients",
+     "format": "short",
+     "accepted": [
+      "fludrocortisone"
+     ],
+     "source_key": "Fludrocortisone\nเป็น synthetic mineralocorticoid",
+     "explanation": "Fludrocortisone = 9α-fluorocortisol ฤทธิ์ mineralocorticoid สูง"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF52",
+     "pages": [
+      5
+     ]
+    },
+    {
+     "paper": "KF52-KEY",
+     "pages": [
+      5
+     ]
+    }
+   ],
+   "tags": [
+    "Cushing's syndrome",
+    "adrenal drugs"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "ยาที่ยับยั้งการสร้าง cortisol: etomidate (IV, ออกฤทธิ์เร็ว ใช้ในรายรุนแรง), metyrapone, ketoconazole, osilodrostat · ทดแทน mineralocorticoid = fludrocortisone"
+  },
+  {
+   "id": "END-52-KF-011",
+   "block": "END",
+   "cohort": 52,
+   "n": 11,
+   "type": "KF",
+   "case": "Fill in the blank \"Answer with only one drug name. More than one answer will not be add scored.\"",
+   "items": [
+    {
+     "id": "11.1",
+     "prompt": "Name a drug that inhibits ATP citrate lyase (ACL), an enzyme involved in converting citrate to acetyl-CoA in cholesterol synthesis",
+     "format": "short",
+     "accepted": [
+      "bempedoic"
+     ],
+     "source_key": "Bempedoic acid",
+     "explanation": "Bempedoic acid เป็น prodrug ถูก activate ที่ตับ (ไม่ใช่กล้ามเนื้อ) จึงปวดกล้ามเนื้อน้อยกว่า statin"
+    },
+    {
+     "id": "11.2",
+     "prompt": "Name a drug that inhibits NPC1L1 protein critical for intestinal cholesterol absorption",
+     "format": "short",
+     "accepted": [
+      "ezetimibe"
+     ],
+     "source_key": "Ezetimibe",
+     "explanation": "Ezetimibe ยับยั้ง NPC1L1 ที่ brush border ของลำไส้เล็ก ลดการดูดซึม cholesterol"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF52",
+     "pages": [
+      5
+     ]
+    },
+    {
+     "paper": "KF52-KEY",
+     "pages": [
+      5
+     ]
+    }
+   ],
+   "tags": [
+    "lipid-lowering drugs"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "Bempedoic acid ยับยั้ง ACL (ก่อน HMG-CoA reductase) · Ezetimibe ยับยั้ง NPC1L1 ที่ลำไส้"
+  },
+  {
+   "id": "END-52-KF-012",
+   "block": "END",
+   "cohort": 52,
+   "n": 12,
+   "type": "KF",
+   "case": "A 52-year-old man with a history of chronic high-dose glucocorticoid therapy for an autoimmune disease abruptly stops his medication. Two weeks later, he develops fatigue, generalized weakness, and loss of appetite. On examination, he appears dehydrated with low blood pressure. Laboratory investigations reveal:",
+   "items": [
+    {
+     "id": "12.1",
+     "prompt": "Cortisol",
+     "format": "short",
+     "accepted": [
+      "low",
+      "ต่ำ",
+      "decreased"
+     ],
+     "source_key": "Low",
+     "explanation": "หยุด steroid ทันทีขณะที่ HPA axis ยังถูกกด → cortisol ต่ำ"
+    },
+    {
+     "id": "12.2",
+     "prompt": "Plasma ACTH",
+     "format": "short",
+     "accepted": [
+      "low",
+      "ต่ำ",
+      "decreased"
+     ],
+     "source_key": "Low\nHPA axis ถูกกดจาก steroid",
+     "explanation": "ACTH ต่ำ ต่างจาก primary (Addison) ที่ ACTH สูง"
+    },
+    {
+     "id": "12.3",
+     "prompt": "Multiple day ACTH stimulation test",
+     "format": "short",
+     "accepted": [
+      "response",
+      "responsive",
+      "respond",
+      "increase",
+      "ตอบสนอง"
+     ],
+     "source_key": "response\nMultiple-day ACTH stimulation test = ให้ ACTH กระตุ้นต่อมหมวกไตต่อเนื่องหลายวัน ใช้แยก secondary adrenal insufficiency ออกจาก primary adrenal insufficiency / ถ้าตาม Short ACTH test ตอบ non response",
+     "explanation": "ต่อมหมวกไตที่ฝ่อจากขาด ACTH ค่อย ๆ ตอบสนองเมื่อกระตุ้นหลายวัน · ใน primary จะไม่ตอบสนองเลย · ถ้าเป็น short (1-hour) ACTH test อาจตอบสนองน้อย"
+    },
+    {
+     "id": "12.4",
+     "prompt": "What is the most likely diagnosis?",
+     "format": "short",
+     "accepted": [
+      "secondary adrenal insufficiency",
+      "tertiary adrenal insufficiency",
+      "secondary adrenal",
+      "tertiary adrenal",
+      "secondary hypoadrenalism"
+     ],
+     "source_key": "Secondary adrenal insufficiency\nเพราะใช้ glucocorticoid เป็นเวลานานและหยุดใช้ยากะทันหัน",
+     "explanation": "Exogenous glucocorticoid กดทั้ง CRH และ ACTH บางตำราจึงเรียก tertiary; ระบบนับทั้ง secondary และ tertiary adrenal insufficiency"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF52",
+     "pages": [
+      5
+     ]
+    },
+    {
+     "paper": "KF52-KEY",
+     "pages": [
+      5
+     ]
+    }
+   ],
+   "tags": [
+    "adrenal insufficiency",
+    "glucocorticoid withdrawal"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "Steroid ภายนอกกด HPA axis นาน → ACTH ต่ำ, ต่อมหมวกไตฝ่อแต่ยังตอบสนองเมื่อกระตุ้นหลายวัน → secondary (ทางเทคนิคคือ tertiary) adrenal insufficiency"
+  },
+  {
+   "id": "END-52-KF-013",
+   "block": "END",
+   "cohort": 52,
+   "n": 13,
+   "type": "KF",
+   "case": "A 40-year-old woman presents with a painless, solitary nodule on the anterior aspect of her neck. She denies any difficulty swallowing, voice changes, fever, or weight loss. Physical examination reveals a firm, well-defined thyroid nodule approximately 2 cm in diameter without cervical lymphadenopathy.",
+   "items": [
+    {
+     "id": "13.1",
+     "prompt": "What is the best initial diagnostic test to evaluate this thyroid nodule?",
+     "format": "short",
+     "accepted": [
+      "fine-needle aspiration",
+      "fine needle aspiration",
+      "fna",
+      "fnab"
+     ],
+     "source_key": "Fine-needle aspiration",
+     "explanation": "FNA บอกได้ว่าก้อนเป็น benign/malignant (Bethesda) · ในเวชปฏิบัติมักส่ง TSH + ultrasound ก่อน FNA"
+    },
+    {
+     "id": "13.2a",
+     "prompt": "Give an example of a non-tumor pathological lesion that can cause a thyroid nodule",
+     "format": "short",
+     "accepted": [
+      "multinodular goiter",
+      "nodular goiter",
+      "colloid nodule",
+      "colloid goiter",
+      "thyroid cyst",
+      "hashimoto",
+      "thyroiditis"
+     ],
+     "source_key": "multinodular goiter",
+     "explanation": "Non-tumor: multinodular goiter, colloid nodule, cyst, nodular thyroiditis"
+    },
+    {
+     "id": "13.2b",
+     "prompt": "Give an example of a tumor lesion that can cause a thyroid nodule",
+     "format": "short",
+     "accepted": [
+      "follicular adenoma",
+      "papillary thyroid carcinoma",
+      "papillary carcinoma",
+      "follicular carcinoma",
+      "medullary carcinoma",
+      "adenoma",
+      "carcinoma"
+     ],
+     "source_key": "follicular adenoma, papillary thyroid carcinoma",
+     "explanation": "Tumor: follicular adenoma (benign ที่พบบ่อยสุด), papillary thyroid carcinoma (มะเร็งที่พบบ่อยสุด)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF52",
+     "pages": [
+      6
+     ]
+    },
+    {
+     "paper": "KF52-KEY",
+     "pages": [
+      6
+     ]
+    }
+   ],
+   "tags": [
+    "thyroid nodule",
+    "FNA"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "Thyroid nodule: FNA เป็นการตรวจที่ให้การวินิจฉัยทางเซลล์ (ในทางคลินิกมักเริ่มที่ TSH + ultrasound ก่อน) · non-tumor: multinodular goiter, colloid nodule, cyst · tumor: follicular adenoma, papillary carcinoma",
+   "audit_note": "เฉลยตอบ FNA ซึ่งเป็นคำตอบมาตรฐานของวิชาพยาธิ แนวทางคลินิก (ATA) เริ่มที่ serum TSH และ thyroid ultrasound แล้วจึงทำ FNA ตามขนาด/ลักษณะ"
+  },
+  {
+   "id": "END-52-KF-014",
+   "block": "END",
+   "cohort": 52,
+   "n": 14,
+   "type": "KF",
+   "case": "A 20-year-old male patient with T1DM (Diabetes mellitus type1) is brought to emergency room for abnormal pian, nausea and vomiting. Answer the following question. Fill in the blanks in the table below. (normal/increased/decreased)",
+   "items": [
+    {
+     "id": "14.1",
+     "prompt": "Serum ketone",
+     "format": "short",
+     "accepted": [
+      "increased",
+      "increase",
+      "high",
+      "สูง",
+      "เพิ่ม"
+     ],
+     "source_key": "Increased",
+     "explanation": "ขาด insulin + glucagon สูง → β-oxidation → ketone bodies มากขึ้น"
+    },
+    {
+     "id": "14.2",
+     "prompt": "Blood pH",
+     "format": "short",
+     "accepted": [
+      "decreased",
+      "decrease",
+      "low",
+      "ต่ำ",
+      "ลด"
+     ],
+     "source_key": "Decreased",
+     "explanation": "Ketoacid (β-hydroxybutyrate, acetoacetate) → high anion gap metabolic acidosis"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF52",
+     "pages": [
+      6
+     ]
+    },
+    {
+     "paper": "KF52-KEY",
+     "pages": [
+      6
+     ]
+    }
+   ],
+   "tags": [
+    "DKA",
+    "T1DM"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "T1DM ขาด insulin → lipolysis → ketone ↑ → metabolic acidosis (pH ↓) = DKA"
+  },
+  {
+   "id": "END-52-KF-015",
+   "block": "END",
+   "cohort": 52,
+   "n": 15,
+   "type": "KF",
+   "case": "A 60-year-old man presents with polyuria polydipsia and plasma glucose level of 156 mg/dl. He is diagnosed with type 2 diabetes mellitus. The physician prescribes oral hypoglycemic agents including Metformin and Saxagliptin. Explain the primary mechanism of action of each of the following drugs.",
+   "items": [
+    {
+     "id": "15.1",
+     "prompt": "Metformin — MOA",
+     "format": "short",
+     "keywords_all": [
+      "gluconeogenesis"
+     ],
+     "key_text": "activates AMPK in liver and muscle to decrease hepatic gluconeogenesis and increase peripheral insulin sensitivity",
+     "source_key": "activates AMPK in liver and muscle to decrease hepatic gluconeogenesis and increase peripheral insulin sensitivity",
+     "explanation": "กลไกหลัก = ลดการสร้างกลูโคสที่ตับ (ผ่าน AMPK) ไม่กระตุ้นการหลั่ง insulin จึงไม่ทำให้ hypoglycemia เมื่อใช้เดี่ยว"
+    },
+    {
+     "id": "15.2",
+     "prompt": "Saxagliptin — MOA",
+     "format": "short",
+     "accepted": [
+      "dpp-4",
+      "dpp4",
+      "dpp 4",
+      "dipeptidyl peptidase"
+     ],
+     "key_text": "inhibits DPP-4 enzyme to prolong incretin action, enhancing glucose-dependent insulin secretion, reducing glucagon release, and delaying gastric emptying",
+     "source_key": "inhibits DPP-4 enzyme to prolong incretin action, enhancing glucose-dependent insulin secretion, reducing glucagon release, and delaying gastric emptying",
+     "explanation": "ยับยั้ง DPP-4 ที่ทำลาย GLP-1/GIP → incretin อยู่นาน → insulin หลั่งตามระดับกลูโคส, glucagon ลด"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF52",
+     "pages": [
+      6
+     ]
+    },
+    {
+     "paper": "KF52-KEY",
+     "pages": [
+      6
+     ]
+    }
+   ],
+   "tags": [
+    "metformin",
+    "DPP-4 inhibitor"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "Metformin: AMPK ↑ → hepatic gluconeogenesis ↓ · Saxagliptin: DPP-4 inhibitor → incretin (GLP-1/GIP) อยู่นานขึ้น"
+  },
+  {
+   "id": "END-52-KF-016",
+   "block": "END",
+   "cohort": 52,
+   "n": 16,
+   "type": "KF",
+   "case": "Explain two mechanisms to prevent accumulation of excess uncertificated (unesterified) cholesterol in hepatocytes.",
+   "items": [
+    {
+     "id": "16",
+     "prompt": "Explain two mechanisms",
+     "format": "short",
+     "keywords_all": [
+      "acat",
+      "hmg"
+     ],
+     "key_text": "Esterification by ACAT → converts free cholesterol to cholesteryl esters, Feedback inhibition of HMG-CoA reductase → reduces de novo cholesterol synthesis",
+     "source_key": "Esterification by ACAT → converts free cholesterol to cholesteryl esters, Feedback inhibition of HMG-CoA reductase → reduces de novo cholesterol synthesis",
+     "explanation": "ตอบกลไกอื่นก็ถูก (ใช้ปุ่มตัดสินเอง): ลด LDL receptor (SREBP-2), เปลี่ยนเป็น bile acid (CYP7A1), หลั่งไปกับ VLDL, ส่งออกทาง ABCA1 ให้ HDL · ระบบตรวจอัตโนมัติต้องมีทั้ง ACAT และ HMG"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF52",
+     "pages": [
+      7
+     ]
+    },
+    {
+     "paper": "KF52-KEY",
+     "pages": [
+      7
+     ]
+    }
+   ],
+   "tags": [
+    "cholesterol",
+    "hepatocyte"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "Free cholesterol ล้นในเซลล์ตับ → ACAT esterify เก็บเป็น cholesteryl ester + กด SREBP-2 (HMG-CoA reductase ↓, LDL receptor ↓) + เปลี่ยนเป็น bile acid / ส่งออกเป็น VLDL / ABCA1 → HDL"
+  }
+ ]
+}

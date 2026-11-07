@@ -90,6 +90,15 @@ for (const f of quizFiles) {
       o.items = (q.items || []).map((it) => {
         const c = Object.assign({}, it);
         if (!["short", "select"].includes(c.format)) c.format = c.options ? "select" : "short";
+        // pictures on a sub-question (image = part of the question, key_image = shown with the answer) → files
+        for (const [k, suffix] of [["image", ""], ["key_image", "-key"]]) {
+          const mm = c[k] && String(c[k]).match(/^data:image\/(\w+);base64,(.+)$/);
+          if (!mm) continue;
+          const name = `img/${sid}_${pad(q.n)}_${String(c.id).replace(/[^\w.-]/g, "_")}${suffix}.${mm[1] === "jpeg" ? "jpg" : mm[1]}`;
+          const buf = Buffer.from(mm[2], "base64");
+          fs.writeFileSync(path.join(OUT, name), buf); imgBytes += buf.length;
+          c[k] = name;
+        }
         return c;
       });
       if (q.source_answer) o.source_answer_text = String(q.source_answer);
