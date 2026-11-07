@@ -26,10 +26,8 @@
       "antidiuretic",
       "growth hormone",
       "acth",
-      "tsh",
       "thyroid stimulating",
       "fsh",
-      "lh",
       "luteinizing",
       "follicle stimulating",
       "prolactin",
@@ -40,11 +38,8 @@
       "norepinephrine",
       "noradrenaline",
       "somatostatin",
-      "trh",
       "gnrh",
-      "crh",
       "ghrh",
-      "hcg",
       "peptide"
      ],
      "source_key": "Peptide: Oxytocin",
@@ -55,9 +50,12 @@
      "prompt": "Form of transportation ของ hydrophilic hormone",
      "format": "short",
      "accepted": [
-      "free",
-      "dissolved",
-      "unbound"
+      "free form",
+      "free hormone",
+      "freely dissolved",
+      "dissolved in plasma",
+      "dissolved in blood",
+      "unbound form"
      ],
      "source_key": "free form",
      "explanation": "Hydrophilic ละลายในพลาสมาได้ จึงเดินทางเป็น free form (unbound) ไม่ต้องมี carrier"
@@ -97,8 +95,7 @@
       "transcortin",
       "cbg",
       "shbg",
-      "tbg",
-      "bound"
+      "tbg"
      ],
      "source_key": "จับกับ Protein ในกระแสเลือด (bound to carrier protein)",
      "explanation": "Hydrophobic ละลายน้ำไม่ดี ต้องจับ carrier protein เช่น transcortin (CBG), SHBG, TBG, albumin; free fraction น้อยแต่เป็นส่วนที่ออกฤทธิ์"
@@ -241,8 +238,8 @@
       "follicular carcinoma",
       "medullary",
       "anaplastic",
-      "adenoma",
-      "carcinoma"
+      "thyroid adenoma",
+      "thyroid carcinoma"
      ],
      "source_key": "Benign: Follicular adenoma\nMalignant: Papillary carcinoma",
      "explanation": "Tumor ของไทรอยด์ที่พบบ่อย: follicular adenoma (benign), papillary carcinoma (malignant ที่พบบ่อยสุด)"
@@ -318,7 +315,7 @@
   },
   {
    "n": 8,
-   "page": 2,
+   "page": 3,
    "tags": [
     "hyperaldosteronism",
     "Conn syndrome"
@@ -326,14 +323,17 @@
    "case": "65-year-old man presents with severe headache. PE: BP 180/100 mmHg, HR 80 bpm. Lab: Morning cortisol 15 ug/dL (Ref 6 – 23), plasma renin activity 1.2 ng/mL/hr (Ref 1.9 – 3.7), serum aldosterone 44 ng/dL (Ref 4.0 – 31.0), serum potassium 2.5 mmol/dL. (ข้อ 7 ในต้นฉบับพิมพ์ไม่ครบ มีหมายเหตุ 'โจทย์ไม่ครบน้า' แล้วต่อที่ข้อ 8)",
    "key_concept": "Aldosterone สูง + renin ต่ำ + K⁺ ต่ำ + HT = primary hyperaldosteronism (ต่อมหมวกไตสร้างเอง)",
    "answer_status": "draft",
-   "audit_note": "ไฟล์เฉลยต้นฉบับ (ท้ายหน้ามี 'BY VICHAKARN MEDPSU 50') เป็นเฉลยของข้อสอบรุ่น 50 ซึ่งโจทย์ข้อ 7 เป็นต้นไปไม่ตรงกับข้อสอบรุ่น 51 ฉบับนี้ ข้อนี้จึงไม่มีเฉลยต้นฉบับ คำตอบเป็นของผู้ตรวจ (draft) · ข้อ 7 ในต้นฉบับเป็นโจทย์ไม่ครบ จึงรวมไว้ในข้อ 8 นี้",
+   "audit_note": "ไฟล์เฉลยต้นฉบับ (ท้ายหน้ามี 'BY VICHAKARN MEDPSU 50') เป็นเฉลยของข้อสอบรุ่น 50 ซึ่งโจทย์ข้อ 7 เป็นต้นไปไม่ตรงกับข้อสอบรุ่น 51 ฉบับนี้ ข้อนี้จึงไม่มีเฉลยต้นฉบับ (KEY PDF ไม่มีเฉลยของข้อนี้ หน้าเฉลยที่อ้างอิงเป็นแค่หน้าที่ใกล้เคียง) คำตอบเป็นของผู้ตรวจ (draft) · ข้อ 7 ในต้นฉบับเป็นโจทย์ไม่ครบ จึงรวมไว้ในข้อ 8 นี้",
    "items": [
     {
      "id": "8.1",
      "prompt": "ถามเกี่ยวกับว่าเป็น hyperaldosterone type ไหน (ไม่แน่ใจ)",
      "format": "short",
      "accepted": [
-      "primary"
+      "primary hyperaldosteronism",
+      "primary aldosteronism",
+      "conn syndrome",
+      "conn's syndrome"
      ],
      "source_key": "(ไม่มีเฉลยต้นฉบับ)",
      "explanation": "Renin ถูกกด (1.2 < 1.9) ขณะที่ aldosterone สูง → aldosterone หลั่งอิสระจาก RAAS = primary · secondary จะ renin สูง"
@@ -351,7 +351,7 @@
    "case": "Fill in the blank (บอกชื่อยา)",
    "key_concept": "Metyrapone ยับยั้ง 11β-hydroxylase (CYP11B1) · Glucocorticoid ออกฤทธิ์ต้านการอักเสบโดยเหนี่ยวนำ lipocortin (annexin-1) ยับยั้ง PLA2 — long-acting = dexamethasone/betamethasone",
    "answer_status": "draft",
-   "audit_note": "ข้อ 9.1: ไฟล์เฉลย (ของรุ่น 50) ตอบ metyrapone 'inhibits 11β-hydroxylase (CYP11B1)' ซึ่งตรงกับโจทย์ข้อนี้ จึงใช้ตามนั้น (ยังนับ etomidate/osilodrostat ที่ยับยั้ง 11β-hydroxylase ด้วย) · ข้อ 9.2 ไม่มีเฉลยต้นฉบับ (เฉลยรุ่น 50 ข้อ 9.2 คือ fludrocortisone ซึ่งเป็นโจทย์คนละข้อ) คำตอบเป็นของผู้ตรวจ",
+   "audit_note": "KEY PDF ไม่มีเฉลยของข้อ 9 (ทั้ง 9.1 และ 9.2) · ข้อ 9.1: คำตอบ metyrapone เป็นของผู้ตรวจเอง บังเอิญตรงกับเฉลยรุ่น 50 แต่โจทย์รุ่น 50 ถามคนละอย่าง ('ยับยั้งหลาย enzyme และทำให้ตับเสียหาย' ซึ่งตรงกับ ketoconazole มากกว่า) จึงไม่ใช่หลักฐาน · ยังนับ etomidate/osilodrostat ที่ยับยั้ง 11β-hydroxylase ด้วย · ข้อ 9.2: เฉลยรุ่น 50 คือ fludrocortisone ซึ่งเป็นโจทย์คนละข้อ คำตอบเป็นของผู้ตรวจ",
    "items": [
     {
      "id": "9.1",
@@ -363,7 +363,7 @@
       "etomidate",
       "osilodrostat"
      ],
-     "source_key": "Metyrapone\nMOA: inhibits 11β-hydroxylase (CYP11B1) — enzymes involved in the final steps of cortisol synthesis",
+     "source_key": "(ไม่มีเฉลยต้นฉบับ)",
      "explanation": "Metyrapone ยับยั้ง 11β-hydroxylase ขั้นสุดท้ายของการสร้าง cortisol (ใช้ทดสอบ HPA axis และรักษา Cushing's) · etomidate, osilodrostat ก็ยับยั้งเอนไซม์เดียวกัน"
     },
     {
@@ -388,7 +388,7 @@
    "case": "จากอาการข้างต้น ผู้ป่วยน่าจะเป็น hyperthyroidism แบบใดต่อไปนี้ (วงกลม) (เคสเดียวกับข้อ 8: 65-year-old man presents with severe headache. PE: BP 180/100 mmHg, HR 80 bpm. Lab: Morning cortisol 15 ug/dL (Ref 6 – 23), plasma renin activity 1.2 ng/mL/hr (Ref 1.9 – 3.7), serum aldosterone 44 ng/dL (Ref 4.0 – 31.0), serum potassium 2.5 mmol/dL.)",
    "key_concept": "Aldosterone สูง + renin ต่ำ = primary hyperaldosteronism",
    "answer_status": "draft",
-   "audit_note": "ไฟล์เฉลยต้นฉบับ (ท้ายหน้ามี 'BY VICHAKARN MEDPSU 50') เป็นเฉลยของข้อสอบรุ่น 50 ซึ่งโจทย์ข้อ 7 เป็นต้นไปไม่ตรงกับข้อสอบรุ่น 51 ฉบับนี้ ข้อนี้จึงไม่มีเฉลยต้นฉบับ คำตอบเป็นของผู้ตรวจ (draft) · โจทย์พิมพ์ผิดเป็น 'hyperthyroidism' (ตัวเลือก 'primary/secondary hyperthyroidism') ที่ตั้งใจจะถามคือ hyperaldosteronism ตามเคส · ข้อ 10.2 ในต้นฉบับเป็น '-' (ว่าง)",
+   "audit_note": "ไฟล์เฉลยต้นฉบับ (ท้ายหน้ามี 'BY VICHAKARN MEDPSU 50') เป็นเฉลยของข้อสอบรุ่น 50 ซึ่งโจทย์ข้อ 7 เป็นต้นไปไม่ตรงกับข้อสอบรุ่น 51 ฉบับนี้ ข้อนี้จึงไม่มีเฉลยต้นฉบับ (KEY PDF ไม่มีเฉลยของข้อนี้ หน้าเฉลยที่อ้างอิงเป็นแค่หน้าที่ใกล้เคียง) คำตอบเป็นของผู้ตรวจ (draft) · โจทย์พิมพ์ผิดเป็น 'hyperthyroidism' (ตัวเลือก 'primary/secondary hyperthyroidism') ที่ตั้งใจจะถามคือ hyperaldosteronism ตามเคส · ข้อ 10.2 ในต้นฉบับเป็น '-' (ว่าง)",
    "items": [
     {
      "id": "10.1",
@@ -423,7 +423,7 @@
    "case": "65-year-old man presents with severe headache. PE: BP 180/100 mmHg, HR 80 bpm. Lab: Morning cortisol 15 ug/dL (Ref 6 – 23), plasma renin activity 1.2 ng/mL/hr (Ref 1.9 – 3.7), serum aldosterone 44 ng/dL (Ref 4.0 – 31.0), serum potassium 2.5 mmol/dL. Which 2 pathologies are the causes of this patient condition?",
    "key_concept": "สาเหตุของ primary hyperaldosteronism: aldosterone-producing adenoma (Conn) และ bilateral adrenal hyperplasia",
    "answer_status": "draft",
-   "audit_note": "ไฟล์เฉลยต้นฉบับ (ท้ายหน้ามี 'BY VICHAKARN MEDPSU 50') เป็นเฉลยของข้อสอบรุ่น 50 ซึ่งโจทย์ข้อ 7 เป็นต้นไปไม่ตรงกับข้อสอบรุ่น 51 ฉบับนี้ ข้อนี้จึงไม่มีเฉลยต้นฉบับ คำตอบเป็นของผู้ตรวจ (draft)",
+   "audit_note": "ไฟล์เฉลยต้นฉบับ (ท้ายหน้ามี 'BY VICHAKARN MEDPSU 50') เป็นเฉลยของข้อสอบรุ่น 50 ซึ่งโจทย์ข้อ 7 เป็นต้นไปไม่ตรงกับข้อสอบรุ่น 51 ฉบับนี้ ข้อนี้จึงไม่มีเฉลยต้นฉบับ (KEY PDF ไม่มีเฉลยของข้อนี้ หน้าเฉลยที่อ้างอิงเป็นแค่หน้าที่ใกล้เคียง) คำตอบเป็นของผู้ตรวจ (draft)",
    "items": [
     {
      "id": "11",
@@ -448,7 +448,7 @@
    "case": "Fill in the blank (บอกชื่อยา) (ต้นฉบับใช้เลขข้อย่อย 13.1 และ 14.2 ภายใต้ข้อ 12)",
    "key_concept": "Bempedoic acid ยับยั้ง ATP-citrate lyase (ก่อน HMG-CoA reductase) · Ezetimibe ยับยั้ง NPC1L1 ที่ลำไส้",
    "answer_status": "draft",
-   "audit_note": "ไฟล์เฉลยต้นฉบับ (ท้ายหน้ามี 'BY VICHAKARN MEDPSU 50') เป็นเฉลยของข้อสอบรุ่น 50 ซึ่งโจทย์ข้อ 7 เป็นต้นไปไม่ตรงกับข้อสอบรุ่น 51 ฉบับนี้ ข้อนี้จึงไม่มีเฉลยต้นฉบับ คำตอบเป็นของผู้ตรวจ (draft)",
+   "audit_note": "ไฟล์เฉลยต้นฉบับ (ท้ายหน้ามี 'BY VICHAKARN MEDPSU 50') เป็นเฉลยของข้อสอบรุ่น 50 ซึ่งโจทย์ข้อ 7 เป็นต้นไปไม่ตรงกับข้อสอบรุ่น 51 ฉบับนี้ ข้อนี้จึงไม่มีเฉลยต้นฉบับ (KEY PDF ไม่มีเฉลยของข้อนี้ หน้าเฉลยที่อ้างอิงเป็นแค่หน้าที่ใกล้เคียง) คำตอบเป็นของผู้ตรวจ (draft)",
    "items": [
     {
      "id": "12.1",
@@ -483,17 +483,18 @@
    "case": "คนไข้ได้รับยา thiazide หมอกังวลว่าจะส่งผลต่อสมดุลของ calcium ในเลือด โจทย์ถามว่าการได้รับยา thiazide จะส่งผลให้ plasma calcium reabsorption เพิ่มขึ้นหรือลดลง และให้อธิบายกลไกของ thiazide ที่ส่งผลให้เกิดภาวะดังกล่าว",
    "key_concept": "Thiazide ยับยั้ง Na⁺-Cl⁻ cotransporter (NCC) ที่ DCT → Na⁺ ในเซลล์ลดลง → Na⁺/Ca²⁺ exchanger (NCX) ดึง Ca²⁺ ออกฝั่ง basolateral มากขึ้น + Ca²⁺ เข้าทาง TRPV5 มากขึ้น → Ca²⁺ reabsorption เพิ่ม (calciuria ลด)",
    "answer_status": "draft",
-   "audit_note": "ไฟล์เฉลยต้นฉบับ (ท้ายหน้ามี 'BY VICHAKARN MEDPSU 50') เป็นเฉลยของข้อสอบรุ่น 50 ซึ่งโจทย์ข้อ 7 เป็นต้นไปไม่ตรงกับข้อสอบรุ่น 51 ฉบับนี้ ข้อนี้จึงไม่มีเฉลยต้นฉบับ คำตอบเป็นของผู้ตรวจ (draft) · ข้อ 13-15 ในต้นฉบับเป็น '-' (ว่าง) และข้อ 5 เป็น '-'",
+   "audit_note": "ไฟล์เฉลยต้นฉบับ (ท้ายหน้ามี 'BY VICHAKARN MEDPSU 50') เป็นเฉลยของข้อสอบรุ่น 50 ซึ่งโจทย์ข้อ 7 เป็นต้นไปไม่ตรงกับข้อสอบรุ่น 51 ฉบับนี้ ข้อนี้จึงไม่มีเฉลยต้นฉบับ (KEY PDF ไม่มีเฉลยของข้อนี้ หน้าเฉลยที่อ้างอิงเป็นแค่หน้าที่ใกล้เคียง) คำตอบเป็นของผู้ตรวจ (draft) · ข้อ 13-15 ในต้นฉบับเป็น '-' (ว่าง) และข้อ 5 เป็น '-'",
    "items": [
     {
      "id": "16.1",
      "prompt": "Plasma calcium reabsorption เพิ่มขึ้นหรือลดลง",
      "format": "short",
      "accepted": [
-      "increase",
-      "เพิ่ม",
-      "enhance",
-      "higher"
+      "increased reabsorption",
+      "increase reabsorption",
+      "reabsorption increase",
+      "enhanced reabsorption",
+      "เพิ่มขึ้น"
      ],
      "source_key": "(ไม่มีเฉลยต้นฉบับ)",
      "explanation": "Thiazide ทำให้ Ca²⁺ reabsorption เพิ่ม → urinary Ca²⁺ ลด จึงใช้ใน hypercalciuria/นิ่ว และอาจเกิด hypercalcemia"
@@ -509,9 +510,7 @@
       "sodium calcium exchanger",
       "ncx",
       "trpv5",
-      "na+/ca2+",
-      "nacl cotransporter",
-      "ncc"
+      "na+/ca2+"
      ],
      "source_key": "(ไม่มีเฉลยต้นฉบับ)",
      "explanation": "ยับยั้ง NCC ที่ DCT → intracellular Na⁺ ลด → basolateral Na⁺/Ca²⁺ exchanger (NCX1) ทำงานมากขึ้น และเซลล์ hyperpolarize เปิด Ca²⁺ channel (TRPV5) → Ca²⁺ เข้าเซลล์/ถูกดูดกลับมากขึ้น · ยังมีผลจาก volume contraction → proximal Na⁺ และ Ca²⁺ reabsorption เพิ่ม"
