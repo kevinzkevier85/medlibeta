@@ -32,6 +32,7 @@
 | gi_51_MCQ | 99 | recall · เฉลยวงแดงอ่านด้วยตา · source_agree 36, source_disagree 8, ai_generated 10, drafted 2, skipped 43 |
 | gi_50_MCQ | 101 | recall · เฉลยอ่านด้วยตา · source_agree 51, source_disagree 6, ai_generated 17, drafted 4, skipped 23 · needs_review 11 |
 | gi_49_MCQ | 65 | recall (65 จาก 128 ข้อ) · เฉลยอ่านด้วยตา · source_agree 52, source_disagree 5, ai_generated 6, drafted 1, skipped 1 · needs_review 7 |
+| gi_48_MCQ | 75 | recall (75 จาก 128) · เลขข้อไม่มีจุด → `parse_mcq/parse_key --bare-numbers` · ไฮไลต์เหลืองเขียว (parse_key อ่านได้แล้ว) ตรวจด้วยตาทุกหน้า · source_agree 58, source_disagree 11, ai_generated 4, drafted 2 · needs_review 12 |
 
 ## Waiting for user
 - `REVIEW.md`: 89 รายการ (Endocrine MCQ ทุกรุ่น)

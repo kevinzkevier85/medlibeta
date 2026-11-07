@@ -1,6 +1,6 @@
 """Phase 1 — read the original answer key: pink highlight = answer, blue text = note.
 
-Usage:  .venv/Scripts/python auditor/tools/parse_key.py --set end_52_MCQ [--print]
+Usage:  .venv/Scripts/python auditor/tools/parse_key.py --set end_52_MCQ [--print] [--bare-numbers]
 
 The highlight is baked into page graphics (no annotation objects), so we render each page and
 measure pink pixels inside each black option line's bounding box.
@@ -20,7 +20,9 @@ PINK_MIN = 0.12  # fraction of pink pixels in an option box that counts as highl
 
 
 def is_pink(r, g, b):
-    return r >= 220 and 100 <= g <= 215 and b >= 190 and r - g >= 25   # light pink (END) or magenta-pink (GI 52)
+    pink = r >= 220 and 100 <= g <= 215 and b >= 190 and r - g >= 25   # light pink (END) or magenta-pink (GI 52)
+    lime = g >= 235 and r >= 180 and b <= 200 and g - b >= 50          # yellow-green highlighter (GI 48)
+    return pink or lime
 
 
 def pink_fraction(pix, rect):
@@ -55,7 +57,7 @@ def lines_of(page):
     return black, blue
 
 
-def parse(set_id):
+def parse(set_id, bare_numbers=False):
     doc = pymupdf.open(AUD / "source" / f"{set_id}__key.pdf")
     fix_zero_bbox(doc)
     out, cur, expect = {}, None, 1
@@ -66,7 +68,7 @@ def parse(set_id):
         for rect, txt in black:
             if HEADER.match(txt):
                 continue
-            m = Q_START.match(txt)
+            m = Q_START.match(txt) or (bare_numbers and re.fullmatch(r"\s*(\d{1,3})\s*", txt))
             if m and int(m.group(1)) == expect and rect.x0 < 100:
                 cur = m.group(1)
                 expect += 1
@@ -110,8 +112,9 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--set", required=True)
     ap.add_argument("--print", action="store_true")
+    ap.add_argument("--bare-numbers", action="store_true", help="a line holding only the next question number starts that question")
     a = ap.parse_args()
-    d = parse(a.set)
+    d = parse(a.set, a.bare_numbers)
     (AUD / "data" / "work" / f"{a.set}.key.json").write_text(json.dumps(d, ensure_ascii=False, indent=1), encoding="utf-8")
     multi = [k for k, v in d.items() if len(v["answers"]) > 1]
     none_ = [k for k, v in d.items() if not v["answers"] and v["score"]]

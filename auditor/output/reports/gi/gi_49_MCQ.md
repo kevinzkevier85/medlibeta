@@ -68,9 +68,12 @@ AI ตอบตรงกับเฉลยต้นฉบับ **52/65** ข้
 ## กลุ่มข้อที่ถามเรื่องเดียวกันในชุดนี้
 
 - `gi-acid-reflux-secondary-peristalsis`: ข้อ 14
+- `gi-alcoholic-lft`: ข้อ 31
+- `gi-hydatid`: ข้อ 37
 - `gi-ehec-hus`: ข้อ 40
 - `gi-salmonella-h2s`: ข้อ 41
 - `gi-ileal-resection-bile-acid`: ข้อ 47
 - `gi-botulinum`: ข้อ 55
 - `gi-capillaria`: ข้อ 60
 - `gi-hpylori-complication`: ข้อ 61
+- `gi-unconjugated-urine`: ข้อ 63

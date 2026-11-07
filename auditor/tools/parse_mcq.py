@@ -1,6 +1,6 @@
 """Phase 1 — split the exam text layer into questions (stem + choices A–E + page).
 
-Usage:  .venv/Scripts/python auditor/tools/parse_mcq.py --set end_52_MCQ [--print]
+Usage:  .venv/Scripts/python auditor/tools/parse_mcq.py --set end_52_MCQ [--print] [--bare-numbers]
 
 Reads only the EXAM pages (raw/<set>/exam_p###.txt) so the blind answer pass never sees the key.
 Writes auditor/data/work/<set>.parsed.json
@@ -27,7 +27,7 @@ def norm(s):
     return s.strip()
 
 
-def parse(set_id):
+def parse(set_id, bare_numbers=False):
     raw = AUD / "raw" / set_id
     lines = []
     for p in sorted(raw.glob("exam_p*.txt")):
@@ -39,6 +39,9 @@ def parse(set_id):
     preamble = []
     for page, ln in lines:
         t = norm(ln)
+        bare = bare_numbers and re.fullmatch(r"\d{1,3}", t) and int(t) == expect
+        if bare:
+            t = f"{t}."  # some cohorts print the number alone on its line ("12" then the stem)
         if not t or HEADER.match(t) or INSTR.match(t) or re.fullmatch(r"\d{1,3}", t):  # bare page numbers
             continue
         m = Q_START.match(t)
@@ -49,7 +52,7 @@ def parse(set_id):
         n = int(m.group(1)) if m else 0
         jump = m and expect < n <= expect + 20 and len(m.group(2)) >= 15 and re.search(r"[A-Za-zก-๙]{3}", m.group(2)) and (len(cur["choices"]) >= 2 or not cur["choices"] if cur is not None else re.search(r"[A-Za-z]{3}", m.group(2)))
         if m and (n == expect or (jump and not (cur is not None and field != "stem" and cur["choices"] and len(cur["choices"]) < 2))):
-            if cur is None and int(m.group(1)) == 1 and not re.search(r"[A-Za-z]{3}", m.group(2)):
+            if cur is None and int(m.group(1)) == 1 and not bare and not re.search(r"[A-Za-z]{3}", m.group(2)):
                 preamble.append(t)  # header "1. ข้อสอบมีทั้งหมด 81 ข้อ" etc.
                 continue
             cur = {"number": m.group(1), "page": page, "stem": m.group(2), "choices": {}, "raw_tail": ""}
@@ -85,8 +88,9 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--set", required=True)
     ap.add_argument("--print", action="store_true")
+    ap.add_argument("--bare-numbers", action="store_true", help="a line holding only the next question number starts that question")
     a = ap.parse_args()
-    d = parse(a.set)
+    d = parse(a.set, a.bare_numbers)
     out = AUD / "data" / "work"
     out.mkdir(parents=True, exist_ok=True)
     (out / f"{a.set}.parsed.json").write_text(json.dumps(d, ensure_ascii=False, indent=1), encoding="utf-8")
