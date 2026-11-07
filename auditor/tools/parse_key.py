@@ -9,6 +9,7 @@ Writes auditor/data/work/<set>.key.json  { "<n>": {"answers": [...], "score": {.
 import argparse, json, re
 from pathlib import Path
 import pymupdf
+from extract import fix_zero_bbox
 
 AUD = Path(__file__).resolve().parents[1]
 ZOOM = 2.0
@@ -56,6 +57,7 @@ def lines_of(page):
 
 def parse(set_id):
     doc = pymupdf.open(AUD / "source" / f"{set_id}__key.pdf")
+    fix_zero_bbox(doc)
     out, cur, expect = {}, None, 1
     for pno, page in enumerate(doc, 1):
         pix = page.get_pixmap(matrix=pymupdf.Matrix(ZOOM, ZOOM), alpha=False)

@@ -12,6 +12,9 @@ AUD = Path(__file__).resolve().parents[1]
 Q_START = re.compile(r"^\s*(\d{1,3})\s*[.)]\s*(.*)$")
 OPT = re.compile(r"^\s*([A-E])\s*[.)]\s*(.*)$")
 HEADER = re.compile(r"^VICHAKARN MED PSU \d+$", re.I)  # running page header of this archive
+# Instruction box printed inside page 1 of later cohorts ("1. ข้อสอบ MCQ มีทั้งหมด 75 ข้อ", "2. นักศึกษามีเวลา…").
+# Its numbered lines would otherwise be read as questions 2, 3, …
+INSTR = re.compile(r"^(\d\.\s*)?(ข้อสอบ\s*MCQ\s*มีทั้งหมด|นักศึกษามีเวลา|ข้อสอบเป็นภาษา|หมายเหตุ\s*:|ฝ่ายวิชาการ|-?\s*Vichakarn\s*Med|\d{3}-\d{3}\s+Endocrine)", re.I)
 
 
 def norm(s):
@@ -32,7 +35,7 @@ def parse(set_id):
     preamble = []
     for page, ln in lines:
         t = norm(ln)
-        if not t or HEADER.match(t):
+        if not t or HEADER.match(t) or INSTR.match(t):
             continue
         m = Q_START.match(t)
         # A new question must be the next expected number. Blank-recall items ("3. –") have no choices,

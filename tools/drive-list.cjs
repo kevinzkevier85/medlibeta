@@ -11,6 +11,8 @@ const ROOT = path.join(__dirname, "..");
 const REFERER = "http://localhost:8765/";
 
 function loadKey() {
+  // No config.json (cloud session): the network proxy adds the key to www.googleapis.com itself.
+  if (!fs.existsSync(path.join(ROOT, "config.json"))) return "";
   let cfg = {};
   try { cfg = JSON.parse(fs.readFileSync(path.join(ROOT, "config.json"), "utf8")); }
   catch (e) { fail("อ่าน config.json ไม่ได้ (ไม่มีไฟล์ หรือรูปแบบ JSON ผิด)"); }
@@ -35,14 +37,14 @@ async function listChildren(key, folderId) {
       fields: "nextPageToken, files(id, name, mimeType, size, modifiedTime)",
       pageSize: "1000",
       orderBy: "name",
-      key,
     });
+    if (key) params.set("key", key);
     if (pageToken) params.set("pageToken", pageToken);
     const r = await fetch("https://www.googleapis.com/drive/v3/files?" + params, { headers: { Referer: REFERER } });
     if (!r.ok) {
       let reason = "";
       try { const j = await r.json(); reason = (j.error && (j.error.message || j.error.status)) || ""; } catch {}
-      fail(`Google ตอบกลับ ${r.status}: ${reason.replace(key, "<key>")}`);
+      fail(`Google ตอบกลับ ${r.status}: ${(key ? reason.replace(key, "<key>") : reason)}`);
     }
     const j = await r.json();
     out.push(...j.files);
