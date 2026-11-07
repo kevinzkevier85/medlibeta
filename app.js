@@ -152,12 +152,12 @@
   function viewHome() {
     const blocks = visibleBlocks();
     const cards = blocks.map((b) => {
-      const ex = allExams(b), res = QZ.blockResults(b);
+      const ex = allExams(b).filter((q) => QZ.counts(q)), res = QZ.blockResults(b);   // draft/disputed do not count
       const done = ex.filter((q) => q.id in res).length, ok = ex.filter((q) => res[q.id] >= 0.999).length, pct = ex.length ? Math.round((done / ex.length) * 100) : 0;
       return `<a class="card" href="#/b/${enc(b.id)}" style="--blk:${esc(b.color || "var(--artery)")}">
         <span class="code">${esc(b.id)}${b._sample ? `<span class="pill">ตัวอย่าง</span>` : ""}</span>
         <span class="cname">${esc(b.name)}${b.year ? ` <span class="hint">· ${esc(b.year)}</span>` : ""}</span>
-        <span class="stats"><span>${b.sets.length} ชุดข้อสอบ</span><span>${ex.length} ข้อ</span></span>
+        <span class="stats"><span>${b.sets.length} ชุดข้อสอบ</span><span>${allExams(b).length} ข้อ</span></span>
         <span class="meter"><span style="width:${pct}%"></span></span>
         <span class="hint">${done ? `ทำแล้ว ${done}/${ex.length} ข้อ · ถูกล่าสุด ${ok}` : "ยังไม่ได้เริ่ม"}</span></a>`;
     }).join("");
