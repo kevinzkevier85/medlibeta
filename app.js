@@ -157,7 +157,7 @@
       return `<a class="card" href="#/b/${enc(b.id)}" style="--blk:${esc(b.color || "var(--artery)")}">
         <span class="code">${esc(b.id)}${b._sample ? `<span class="pill">ตัวอย่าง</span>` : ""}</span>
         <span class="cname">${esc(b.name)}${b.year ? ` <span class="hint">· ${esc(b.year)}</span>` : ""}</span>
-        <span class="stats"><span>${b.sets.length} ชุดข้อสอบ</span><span>${ex.length} ข้อ</span><span>${[...new Set(b.sets.map((s) => s.cohort))].length} รุ่น</span></span>
+        <span class="stats"><span>${b.sets.length} ชุดข้อสอบ</span><span>${ex.length} ข้อ</span></span>
         <span class="meter"><span style="width:${pct}%"></span></span>
         <span class="hint">${done ? `ทำแล้ว ${done}/${ex.length} ข้อ · ถูกล่าสุด ${ok}` : "ยังไม่ได้เริ่ม"}</span></a>`;
     }).join("");
@@ -177,7 +177,7 @@
       <div class="head blockhead" style="--blk:${esc(b.color || "var(--artery)")}"><h2><i class="dot"></i>${esc(b.name)}</h2>
         <p class="hint">${nSetQ} ข้อ${b._sample ? " · ข้อมูลตัวอย่าง" : ""}</p></div>
       ${QZ.examTabHTML(b)}
-      ${mine.length ? `<h3>ข้อที่ฉันเพิ่มเอง (${mine.length})</h3><div class="rows">${mine.map((e) => `<a class="row" href="#/q/${enc(e.id)}"><span class="id">${e.cohort} · ข้อ ${e.n}</span><span class="t">${esc(stem(e).slice(0, 80))}</span><span class="meta"><span class="pill">ของฉัน</span></span></a>`).join("")}</div>` : ""}`;
+      ${mine.length ? `<h3>ข้อที่ฉันเพิ่มเอง (${mine.length})</h3><div class="rows">${mine.map((e) => `<a class="row" href="#/q/${enc(e.id)}"><span class="id">ชุด ${e.cohort} · ข้อ ${e.n}</span><span class="t">${esc(stem(e).slice(0, 80))}</span><span class="meta"><span class="pill">ของฉัน</span></span></a>`).join("")}</div>` : ""}`;
   }
 
   // Exam mode list of the questions that point at a lecture (or one page of it)
@@ -188,7 +188,7 @@
     const qs = examsOf(b).filter((e) => (e.refs || []).some((r) => r.lecture === l.id && (!p || r.pages.includes(p))));
     main.innerHTML = `<div class="crumbs"><a href="#/">ข้อสอบ</a><span>/</span><a href="#/b/${enc(b.id)}">${esc(b.name)}</a><span>/</span><span>${esc(l.id)}${p ? ` หน้า ${p}` : ""}</span></div>
       <div class="head"><h2>ข้อสอบที่อ้างถึง ${esc(l.id)}${p ? ` หน้า ${p}` : ""}</h2><p class="hint">${esc(l.title)} · ${qs.length} ข้อ · <a href="#/lec/${enc(b.id)}/${enc(l.id)}/${p || 1}">กลับไปอ่าน lecture</a></p></div>
-      <div class="rows">${qs.map((e) => { const x = e.refs.find((y) => y.lecture === l.id); return `<a class="row" href="#/q/${enc(e.id)}"><span class="id">รุ่น ${e.cohort} · ${e.type} ${e.n}</span><span class="t">${esc(stem(e).slice(0, 110))}…<span class="sub">หน้า ${pagesText(x.pages)}${x.focus ? " · " + esc(x.focus) : ""}</span></span></a>`; }).join("") || `<p class="hint">ยังไม่มีข้อสอบที่อ้างถึง</p>`}</div>`;
+      <div class="rows">${qs.map((e) => { const x = e.refs.find((y) => y.lecture === l.id); return `<a class="row" href="#/q/${enc(e.id)}"><span class="id">ชุด ${e.cohort} · ${e.type} ข้อ ${QZ.qPos(e)}</span><span class="t">${esc(stem(e).slice(0, 110))}…<span class="sub">หน้า ${pagesText(x.pages)}${x.focus ? " · " + esc(x.focus) : ""}</span></span></a>`; }).join("") || `<p class="hint">ยังไม่มีข้อสอบที่อ้างถึง</p>`}</div>`;
   }
 
   /* ---------- lecture mode (CVS-style: list on the left, continuous PDF on the right) ---------- */
@@ -381,7 +381,7 @@
     note() {
       const el = $("#examnote"); if (!el || !this.b) return;
       const e = examPages(this.b, this.l.id)[this.cur || 1];
-      el.innerHTML = e ? `<div class="examnote sm">หน้า ${this.cur || 1} เคยออกสอบ รุ่น ${[...e.years].sort().join(", ")} · <a href="#/refs/${enc(this.b.id)}/${enc(this.l.id)}/${this.cur || 1}">ดูข้อสอบที่อ้างถึงหน้านี้ (${e.qs.length})</a></div>` : "";
+      el.innerHTML = e ? `<div class="examnote sm">หน้า ${this.cur || 1} เคยออกสอบ ชุด ${[...e.years].sort().join(", ")} · <a href="#/refs/${enc(this.b.id)}/${enc(this.l.id)}/${this.cur || 1}">ดูข้อสอบที่อ้างถึงหน้านี้ (${e.qs.length})</a></div>` : "";
       document.querySelectorAll(".hotpages .hp").forEach((a) => a.classList.toggle("cur", Number(a.dataset.hp) === this.cur));
     },
     zoomBy(d) {
@@ -427,7 +427,7 @@
       ? `<a class="row" href="#/lec/${enc(h.b.id)}/${enc(h.l.id)}"><span class="id">${esc(h.b.id)} · ${esc(h.l.id)}</span><span class="t">${hl(h.l.title)}<span class="sub">Lecture · ${h.l.pages} หน้า</span></span><span class="meta"><span class="pill">lecture</span></span></a>`
       : h.kind === "page"
         ? `<a class="row" href="#/lec/${enc(h.b.id)}/${enc(h.l.id)}/${h.p.page}"><span class="id">${esc(h.l.id)} · หน้า ${h.p.page}</span><span class="t">${hl(h.p.heading)}<span class="sub">${hl(h.p.summary || "")}</span></span><span class="meta"><span class="pill">หน้า lecture</span></span></a>`
-        : `<a class="row" href="#/q/${enc(h.e.id)}"><span class="id">${esc(h.b.id)} · ${h.e.cohort} · ${h.e.type}</span><span class="t">${hl(stem(h.e).slice(0, 110))}…<span class="sub">${hl((h.e.tags || []).join(" · "))}</span></span><span class="meta"><span class="pill exam">ข้อสอบ</span></span></a>`).join("");
+        : `<a class="row" href="#/q/${enc(h.e.id)}"><span class="id">${esc(h.b.id)} · ชุด ${h.e.cohort} · ${h.e.type}</span><span class="t">${hl(stem(h.e).slice(0, 110))}…<span class="sub">${hl((h.e.tags || []).join(" · "))}</span></span><span class="meta"><span class="pill exam">ข้อสอบ</span></span></a>`).join("");
     main.innerHTML = `<div class="head"><h2>ผลค้นหา "${esc(query)}"</h2><p class="hint">${hits.length} รายการ${hits.length > 300 ? " (แสดง 300 รายการแรก)" : ""} · ค้นจากชื่อบท สารบัญรายหน้าของ lecture โจทย์ ตัวเลือก คำอธิบาย และ tag · ค้นในเนื้อหา PDF ทั้งไฟล์ได้จากช่องค้นหาในตัวอ่าน PDF</p></div>
       <div class="rows">${rows || `<p class="hint">ไม่พบ ลองใช้คำอื่น หรือสะกดเป็นภาษาอังกฤษ</p>`}</div>`;
   }
@@ -516,7 +516,7 @@
     $("#pgcrumb").textContent = `หน้า ${page}`;
     $("#pgin").value = page;
     document.querySelectorAll(".hotpages .hp").forEach((a) => a.classList.toggle("cur", Number(a.dataset.hp) === page));
-    $("#pdfrefs").innerHTML = qs.length ? `<div class="examnote"><b>${isPaper ? "ข้อในหน้านี้" : `หน้านี้เคยออกสอบ (รุ่น ${[...ep[page].years].sort().join(", ")})`}</b>${qs.map((e) => `<a class="pill exam" href="#/q/${enc(e.id)}">รุ่น ${e.cohort} ${e.type} ข้อ ${e.n}</a>`).join("")}</div>` : "";
+    $("#pdfrefs").innerHTML = qs.length ? `<div class="examnote"><b>${isPaper ? "ข้อในหน้านี้" : `หน้านี้เคยออกสอบ (ชุด ${[...ep[page].years].sort().join(", ")})`}</b>${qs.map((e) => `<a class="pill exam" href="#/q/${enc(e.id)}">ชุด ${e.cohort} ${e.type} ข้อ ${QZ.qPos(e)}</a>`).join("")}</div>` : "";
     if (!src) return pdfStatus("บทนี้ยังไม่มีไฟล์ PDF ใส่ drive_file_id หรือ url ของบทนี้ใน block.json แล้วจะเปิดได้", true);
     if (!window.pdfjsLib) return pdfStatus("โหลดตัวอ่าน PDF ไม่ได้ ต้องมีโฟลเดอร์ vendor อยู่ข้าง index.html", true);
     const token = ++P.token;
@@ -617,6 +617,88 @@
     const next = Math.min(max, Math.max(1, (Number(pg) || 1) + delta));
     location.replace(`#/pdf/${enc(bid)}/${enc(lid)}/${next}`);
   }
+
+  /* ---------- PDF pop-up over the question (exam / answer-key papers) ----------
+     Opens on the question's page with zoom and page buttons. ✕, Esc or the browser's Back button closes it
+     and leaves you on the same question (it pushes one history entry and closes on popstate). */
+  const POP = { doc: null, docId: null, page: 1, zoom: 1, token: 0, open: false };
+  async function openPdfPop(bid, lid, page) {
+    const b = findBlock(bid); const l = b && docOf(b, lid);
+    if (!l) return toast("ไม่พบไฟล์ PDF นี้");
+    closePdfPop(true);
+    POP.open = true; POP.page = Math.max(1, Number(page) || 1); POP.zoom = 1; const token = ++POP.token;
+    const el = document.createElement("div");
+    el.className = "pdfpop"; el.setAttribute("role", "dialog"); el.setAttribute("aria-label", l.title || "PDF");
+    el.innerHTML = `<div class="popbox"><div class="popbar">
+        <b class="poptitle">${esc(l.title || l.id)}</b>
+        <span class="popnav"><button class="btn sm" data-pop="prev" aria-label="หน้าก่อน">‹</button><span id="poppg" class="hint">หน้า ${POP.page}</span><button class="btn sm" data-pop="next" aria-label="หน้าถัดไป">›</button></span>
+        <span class="popzoom"><button class="btn sm" data-pop="zout" aria-label="ย่อ">−</button><button class="btn sm" data-pop="zin" aria-label="ขยาย">+</button></span>
+        <button class="btn sm popclose" data-pop="close" aria-label="ปิด">✕</button></div>
+      <div class="popstage" id="popstage"><p class="status">กำลังโหลด…</p></div></div>`;
+    document.body.appendChild(el); document.body.classList.add("noscroll");
+    history.pushState({ pdfpop: true }, "");
+    const src = pdfSource(b, l);
+    const stage = $("#popstage");
+    try {
+      if (!src) throw new Error("ไฟล์นี้ยังไม่มีลิงก์ PDF");
+      if (POP.docId !== src.id) {
+        if (POP.doc) { POP.doc.destroy(); POP.doc = null; POP.docId = null; }
+        const rec = await idbGet(src.id).catch(() => null);
+        let blob = rec && rec.blob;
+        if (!blob) {
+          if (!src.url && l.drive_file_id) {   // no Worker / key: Google's viewer cannot jump to a page
+            if (token !== POP.token) return;
+            stage.innerHTML = `<p class="hint popnote">เปิดผ่าน Google Drive — เลื่อนไปหน้า ${POP.page} เอง</p><iframe class="drivepreview" src="https://drive.google.com/file/d/${enc(l.drive_file_id)}/preview" title="PDF จาก Google Drive"></iframe>`;
+            el.classList.add("iframe"); return;
+          }
+          if (!src.url) throw new Error("ยังไม่ได้ตั้งค่าการดึงไฟล์");
+          blob = await download(src, (pct) => { if (token === POP.token) stage.innerHTML = `<p class="status">กำลังดาวน์โหลด… ${pct}%</p>`; });
+          await idbPut({ id: src.id, blob, saved: Date.now() }).catch(() => {});
+        }
+        if (token !== POP.token) return;
+        const doc = await window.pdfjsLib.getDocument({ data: new Uint8Array(await blob.arrayBuffer()), isEvalSupported: false }).promise;
+        if (token !== POP.token) { doc.destroy(); return; }
+        POP.doc = doc; POP.docId = src.id;
+      }
+      POP.page = Math.min(POP.page, POP.doc.numPages);
+      await popRender(token);
+    } catch (e) {
+      if (token === POP.token) stage.innerHTML = `<p class="status err">${esc(e.message || "เปิดไฟล์นี้ไม่ได้")}</p>`;
+    }
+  }
+  async function popRender(token) {
+    const stage = $("#popstage"); if (!stage || !POP.doc || token !== POP.token) return;
+    const page = await POP.doc.getPage(POP.page);
+    const base = page.getViewport({ scale: 1 });
+    const scale = Math.min(4, (Math.max(240, stage.clientWidth - 16) / base.width) * POP.zoom);
+    const vp = page.getViewport({ scale }), dpr = Math.min(window.devicePixelRatio || 1, 2);
+    const canvas = document.createElement("canvas");
+    canvas.width = Math.floor(vp.width * dpr); canvas.height = Math.floor(vp.height * dpr); canvas.style.width = Math.floor(vp.width) + "px";
+    await page.render({ canvasContext: canvas.getContext("2d"), viewport: vp, transform: dpr !== 1 ? [dpr, 0, 0, dpr, 0, 0] : null }).promise;
+    if (token !== POP.token) return;
+    stage.replaceChildren(canvas); stage.scrollTop = 0;
+    $("#poppg").textContent = `หน้า ${POP.page} / ${POP.doc.numPages}`;
+  }
+  function popAction(a) {
+    if (a === "close") { history.back(); return; }
+    if (!POP.doc) return;
+    if (a === "prev" || a === "next") POP.page = Math.min(POP.doc.numPages, Math.max(1, POP.page + (a === "next" ? 1 : -1)));
+    if (a === "zin") POP.zoom = Math.min(3, POP.zoom + 0.25);
+    if (a === "zout") POP.zoom = Math.max(0.5, POP.zoom - 0.25);
+    popRender(POP.token);
+  }
+  function closePdfPop(silent) {
+    const el = $(".pdfpop"); if (!el) return false;
+    POP.open = false; POP.token++; el.remove(); document.body.classList.remove("noscroll");
+    return !silent;
+  }
+  window.addEventListener("popstate", () => { if (POP.open) closePdfPop(); });
+  document.addEventListener("click", (ev) => {
+    const a = ev.target.closest("a[data-pdfpop]");
+    if (a && !ev.ctrlKey && !ev.metaKey && !ev.shiftKey) { ev.preventDefault(); const [bid, lid, pg] = a.dataset.pdfpop.split("|"); openPdfPop(bid, lid, pg); return; }
+    const pb = ev.target.closest("[data-pop]"); if (pb) { popAction(pb.dataset.pop); return; }
+    if (ev.target.classList && ev.target.classList.contains("pdfpop")) history.back();   // click on the dimmed backdrop
+  }, true);
 
   /* ---------- settings + personal data file ---------- */
   let toastMsg = null;
@@ -733,7 +815,7 @@
     main.innerHTML = `<div class="head"><h2>เพิ่มข้อสอบ</h2><p class="hint">ฟอร์มนี้ใช้กติกาข้อมูลชุดเดียวกับตอนให้ Claude เพิ่ม (<code>lib/validate.js</code>) ข้อที่เพิ่มเองเก็บในเบราว์เซอร์นี้ และขึ้นป้าย "ของฉัน"</p></div>
       <div class="form"><div class="fields">
         <div class="two"><label for="f-block">บล็อก<select id="f-block" data-f="block">${blocks.map((x) => `<option value="${esc(x.id)}" ${x.id === b.id ? "selected" : ""}>${esc(x.id)} · ${esc(x.name)}</option>`).join("")}</select></label>
-          <label for="f-cohort">รุ่น<input type="number" id="f-cohort" data-f="cohort" value="${esc(draft.cohort)}" placeholder="52"></label></div>
+          <label for="f-cohort">ชุด<input type="number" id="f-cohort" data-f="cohort" value="${esc(draft.cohort)}" placeholder="52"></label></div>
         <label for="f-n">เลขข้อ<input type="number" id="f-n" data-f="n" value="${esc(draft.n)}" placeholder="12"></label>
         <label for="f-stem">โจทย์<textarea id="f-stem" data-f="stem" rows="4" placeholder="พิมพ์โจทย์">${esc(draft.stem)}</textarea></label>
         <div class="two">${f("A", "ตัวเลือก A")}${f("B", "ตัวเลือก B")}${f("C", "ตัวเลือก C")}${f("D", "ตัวเลือก D")}</div>
@@ -887,7 +969,8 @@
     }
   });
   document.addEventListener("keydown", (ev) => {
-    if (ev.key === "Escape") { const z = $("img.zoom"); if (z) { z.classList.remove("zoom"); return; } }
+    if (ev.key === "Escape") { const z = $("img.zoom"); if (z) { z.classList.remove("zoom"); return; } if (POP.open) { history.back(); return; } }
+    if (POP.open) { if (ev.key === "ArrowRight") popAction("next"); if (ev.key === "ArrowLeft") popAction("prev"); return; }
     if (/INPUT|TEXTAREA|SELECT/.test(ev.target.tagName) || ev.ctrlKey || ev.metaKey || ev.altKey) return;
     if (QZ.onKey(ev)) return;
     if (location.hash.startsWith("#/lec/") && RD.doc) {
