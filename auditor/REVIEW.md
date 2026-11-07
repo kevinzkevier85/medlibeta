@@ -1,6 +1,6 @@
 # REVIEW — รายการรอผู้ใช้ตัดสิน
 
-ทั้งหมด 89 รายการ
+ทั้งหมด 96 รายการ
 วิธีตอบ: พิมพ์ในแชทเป็นบรรทัด เช่น `end_52_MCQ_027: คงเดิม` / `end_52_MCQ_063: C` / `end_52_MCQ_046: ตรวจใหม่`
 Claude จะบันทึกลง `auditor/data/decisions.json` แล้ว build ใหม่
 
@@ -95,3 +95,10 @@ Claude จะบันทึกลง `auditor/data/decisions.json` แล้ว
 | end_51_MCQ_071 | None | A | low | หน้าเฉลยต้นฉบับขาดหลังช้อยส์ A ไม่ทราบตัวที่เลือก; ถ้อยคำโจทย์กำกวม (chylomicron ก็ขน TG); ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ | เฉลยต้นฉบับหมดที่หน้า 12 (หลังช้อยส์ A) มีแต่โน้ต 'storage energy = Triglyceride' — ทั้ง VLDL และ chylomicron ขน TG; AI เลือก VLDL ความมั่นใจต่ำ — A: TG จากตับ ไปเก็บที่ adipose; B: IDL เป็นตัวกลางระหว่าง VLDL กับ LDL; C: HDL ขน cholesterol กลับตับ; D: LDL ขน cholesterol ไป peripheral; E: ขน TG จากอาหาร — ถ้าโจทย์หมายถึงหลังกินอาหาร ตัวนี้จะถูก |
 | end_51_MCQ_074 | None | None | None | ต้นฉบับจำช้อยส์ได้ตัวเดียว และเฉลยหมดก่อนถึงข้อนี้; AI เขียนข้อนี้ขึ้นใหม่จากโน้ตความจำในต้นฉบับ |  — A: OPG ลดลง; B: ถูก; C: osteoclast อายุยืนขึ้นเมื่อขาด estrogen; D: ไม่ใช่กลไกหลัก; E: ไม่ใช่กลไกหลัก |
 | end_51_MCQ_075 | None | A | high | เฉลยต้นฉบับหมดก่อนถึงข้อนี้; ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |  — A: ถูก; B: remodeling ไม่เปลี่ยนขนาด/รูปร่าง; C: เป็นส่วนหนึ่งของ modeling เท่านั้น; D: ไม่เกี่ยวข้อง; E: ไม่เกี่ยวข้อง |
+| gi_52_MCQ_006 | C | D | low | เฉลยขัดกับ AI |   |
+| gi_52_MCQ_033 | C | B | high | โจทย์ไม่ครบ: ไม่มีค่า ALP (ผู้เฉลยหมายเหตุ); เฉลยขัดกับ AI | เฉลยต้นฉบับตอบ C (cholestasis) โดยบอกว่าโจทย์ลืมให้ ALP; จากค่าที่ให้จริง AI ตอบ B (alcoholic)  |
+| gi_52_MCQ_034 | C | C | low | โจทย์ต้นฉบับเขียน hypertension แต่ตารางและเฉลยเข้ากับ chronic liver disease (cirrhosis) | ผู้เฉลยหมายเหตุว่าโจทย์ผิด น่าจะถาม chronic cirrhosis ตอบ C (albumin ต่ำ + AST/ALT > 1)  |
+| gi_52_MCQ_037 | B | A | medium | เฉลยขัดกับ AI |   |
+| gi_52_MCQ_042 | C | C | low | ไม่มีตัวเลือก nausea/vomiting of pregnancy ตรงๆ |   |
+| gi_52_MCQ_061 | E | B | medium | เฉลยขัดกับ AI |   |
+| gi_52_MCQ_073 | ['B', 'C'] | B | low | ต้นฉบับวงไว้หลายตัว |   |

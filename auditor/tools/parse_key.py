@@ -20,7 +20,7 @@ PINK_MIN = 0.12  # fraction of pink pixels in an option box that counts as highl
 
 
 def is_pink(r, g, b):
-    return r >= 220 and 150 <= g <= 215 and b >= 190 and r - g >= 25
+    return r >= 220 and 100 <= g <= 215 and b >= 190 and r - g >= 25   # light pink (END) or magenta-pink (GI 52)
 
 
 def pink_fraction(pix, rect):
