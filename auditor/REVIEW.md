@@ -1,11 +1,24 @@
 # REVIEW — รายการรอผู้ใช้ตัดสิน
 
-ทั้งหมด 37 รายการ
+ทั้งหมด 50 รายการ
 วิธีตอบ: พิมพ์ในแชทเป็นบรรทัด เช่น `end_52_MCQ_027: คงเดิม` / `end_52_MCQ_063: C` / `end_52_MCQ_046: ตรวจใหม่`
 Claude จะบันทึกลง `auditor/data/decisions.json` แล้ว build ใหม่
 
 | id | ต้นฉบับ | AI | ความมั่นใจ | เรื่อง | ตัวเลือกที่เป็นไปได้ / เหตุผล |
 |---|---|---|---|---|---|
+| end_45_MCQ_002 | D | C | medium | คำตอบขึ้นกับตำรา: Golgi (lecture/BRS) หรือ secretory vesicle (USMLE); เฉลยขัดกับ AI | เฉลยต้นฉบับวง D (vesicle); ข้อ 13 ในชุดเดียวกันผู้เฉลยวงทั้ง vesicle และ Golgi และเขียนว่า lecture/BRS บอก Golgi — AI เลือก C (Golgi) อาจนับถูกทั้ง C และ D — A: ไม่เกี่ยว; B: SER สร้าง steroid; C: การตัดเริ่มที่ trans-Golgi (lecture); D: การตัดเกิดต่อใน secretory vesicle (USMLE); E: ไม่เกี่ยว |
+| end_45_MCQ_005 | E | E | low | ถ้อยคำโจทย์กว้าง (ตะคริวมีหลายสาเหตุ) |   |
+| end_45_MCQ_013 | ['A', 'E'] | E | high | ผู้เฉลยวงทั้ง Golgi และ secretory vesicle; ต้นฉบับวงไว้หลายตัว | เฉลยต้นฉบับวงทั้ง A (lysosomal/secretory vesicle) และ E (Golgi) โดยเขียนว่า lecture/BRS บอก Golgi, USMLE บอก secretory granule — AI เลือก E — A: secretory vesicle (ไม่ใช่ lysosome) — ตามตำราบางเล่ม; B: ไม่เกี่ยว; C: เป็นที่ตัด prepro → pro; D: ไม่เกี่ยว; E: Golgi (lecture) |
+| end_45_MCQ_014 | ['A', 'B'] | B | medium | ผู้จำจำได้ 2 ช้อยส์ และผู้เฉลยวงทั้งสองตัว; ช้อยส์ C, D, E AI เติมให้ครบ 5 ตัว; ต้นฉบับวงไว้หลายตัว | ต้นฉบับมีแค่ A (hyponatremia) และ B (hyperkalemia) ผู้เฉลยวงทั้งคู่ ซึ่งถูกทั้งคู่จริง AI เติม C–E เป็นตัวลวง — ควรนับถูกทั้ง A และ B — A: ถูกเช่นกัน (Na⁺ loss); B: ถูก — ลักษณะเด่น; C: ผิดทิศ (acidosis); D: ผิดทิศ (hypotension); E: ผิดทิศ (ECF ลด) |
+| end_45_MCQ_039 | None | None | None | AI เขียนข้อนี้ขึ้นใหม่จากโน้ตความจำในต้นฉบับ |  — A: ถูก — neuromuscular excitability ↑; B: อาการ hypercalcemia; C: อาการ hypercalcemia; D: อาการ hypercalcemia; E: hypocalcemia ทำให้ QT ยาว |
+| end_45_MCQ_040 | None | None | None | AI เขียนข้อนี้ขึ้นใหม่จากโน้ตความจำในต้นฉบับ |  — A: PTH ลด phosphate reabsorption (phosphaturia); B: PTH กระตุ้น 1α-hydroxylase; C: ถูก; D: ผิดทิศ; E: PTH เพิ่ม cAMP |
+| end_45_MCQ_042 | None | None | None | AI เขียนข้อนี้ขึ้นใหม่จากโน้ตความจำในต้นฉบับ |  — A: osteoclast ไม่มี PTH receptor; B: ถูก — PTH1R อยู่บน osteoblast/osteocyte; C: ไม่เกี่ยว; D: ไม่เกี่ยว; E: สร้าง calcitonin |
+| end_45_MCQ_043 | ['B', 'D'] | B | high | ผู้เฉลยวงทั้ง B (cAMP) และ D (2-deoxyglucose); ต้นฉบับวงไว้หลายตัว | เฉลยต้นฉบับวงทั้ง B และ D โดยอ้าง PubMed ว่า 2-deoxyglucose กระตุ้น insulin ได้ — ในตำราหลัก (Guyton) 2-deoxyglucose ถูกจัดเป็นตัวยับยั้ง (inhibitor) การหลั่ง insulin AI เลือก B — A: K⁺ depletion ยับยั้งการหลั่ง; B: ถูก; C: ยับยั้ง; D: ตามตาราง Guyton เป็น inhibitor (แต่มีรายงานว่ากระตุ้นได้); E: ยับยั้งผ่าน α2 |
+| end_45_MCQ_044 | None | None | None | AI เขียนข้อนี้ขึ้นใหม่จากโน้ตความจำในต้นฉบับ |  — A: ยับยั้ง; B: ยับยั้ง; C: ยับยั้ง; D: ถูก — incretin; E: เปิด K-ATP ยับยั้งการหลั่ง |
+| end_45_MCQ_045 | None | None | None | AI เขียนข้อนี้ขึ้นใหม่จากโน้ตความจำในต้นฉบับ |  — A: ผิดทิศ; B: ผิดทิศ; C: ถูก; D: Ca²⁺ channel เปิด; E: หลั่งแบบ exocytosis |
+| end_45_MCQ_048 | None | None | None | AI เขียนข้อนี้ขึ้นใหม่จากโน้ตความจำในต้นฉบับ |  — A: ผิดทิศ (glycogenolysis ↑); B: ถูก; C: F2,6BP ลดลง; D: ลดลง (acetyl-CoA carboxylase ถูกยับยั้ง); E: cAMP เพิ่มขึ้น |
+| end_45_MCQ_054 | A | A | low | ไม่มี BMD (DXA) ในช้อยส์; ผู้เฉลยต้นฉบับเขียนว่าไม่แน่ใจ |   |
+| end_45_MCQ_057 | None | None | None | AI เขียนข้อนี้ขึ้นใหม่จากโน้ตความจำในต้นฉบับ |  — A: เฉพาะ free hormone เท่านั้นที่ผ่าน membrane; B: binding protein ไม่ได้ activate receptor; C: ถูก; D: binding protein ลด clearance; E: ไม่ใช่หน้าที่ |
 | end_46_MCQ_021 | None | None | None | ต้นฉบับมีแต่คำตอบ ไม่มีช้อยส์; AI เขียนข้อนี้ขึ้นใหม่จากโน้ตความจำในต้นฉบับ |  — A: เป็นหน้าที่ของ LCAT; B: ถูก (ตรงกับคำตอบในต้นฉบับ); C: เป็นหน้าที่ของ LPL; D: เป็นหน้าที่ของ SR-BI; E: เป็นหน้าที่ของ ABCA1 |
 | end_46_MCQ_043 | A | A | low | ไม่มี BMD (DXA) ในช้อยส์ ซึ่งเป็นการตรวจหลัก |   |
 | end_46_MCQ_049 | A | D | high | ช้อยส์ E AI เติมให้ครบ 5 ตัว; เฉลยขัดกับ AI | เฉลยต้นฉบับวง A (preserve bone mass) โดยแปะสไลด์ที่ list เป้าหมาย 4 ข้อ (preserve bone mass, prevent fractures, decrease pain, maintain function) — ตาม guideline เป้าหมายหลัก (primary) คือป้องกัน fracture (D) ขึ้นกับสไลด์ที่สอน — A: เป็นเป้าหมายรอง/วิธีการ (อยู่บนสุดของสไลด์); B: เป้าหมายรอง; C: เป้าหมายรอง; D: เป้าหมายหลักตาม guideline; E: ไม่ใช่เป้าหมาย |
