@@ -94,6 +94,7 @@ curl -s -o /dev/null -w "%{http_code}\n" -H "Origin: https://evil.example" "<URL
 |---|---|
 | `403 this site is not allowed` | `ALLOWED_ORIGINS` ไม่ตรงกับเว็บ (เช็ก http/https, ไม่มี `/` ท้าย) |
 | `501 sync is not set up` | ยังไม่ผูก KV หรือชื่อไม่ใช่ `SYNC` |
+| `503 sync storage is busy` | KV เขียนเกินโควตาฟรีของวันนั้น (รีเซ็ตทุกวัน) ข้อมูลในเครื่องผู้ใช้ไม่หาย |
 | PDF ได้ `Google Drive returned 403/404` | key ผิด, ยังไม่เปิด Drive API, หรือไฟล์ไม่ได้แชร์ "ทุกคนที่มีลิงก์" |
 | PDF ได้ `500 DRIVE_API_KEY is not set` | ยังไม่ได้ใส่ `DRIVE_API_KEY` |
 | แจ้งเฉลยไม่ขึ้น Issue (`GitHub returned 401/403/404`) | token หมดอายุ / ไม่ได้ให้สิทธิ์ Issues / `GITHUB_REPO` ผิด |

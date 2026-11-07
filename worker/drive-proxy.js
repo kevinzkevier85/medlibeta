@@ -54,28 +54,30 @@ export default {
     if (sm) {
       if (!env.SYNC) return reply(501, "sync is not set up on the worker");
       const json = (status, obj) => new Response(JSON.stringify(obj), { status, headers: { ...cors, "Content-Type": "application/json" } });
-      if (sm[1] === "new") {
-        if (request.method !== "POST") return reply(405, "use POST");
-        let code = newCode();
-        for (let i = 0; i < 3 && (await env.SYNC.get("p:" + code)) !== null; i++) code = newCode();
-        await env.SYNC.put("p:" + code, JSON.stringify({ format: "medlib-sync", progress: {} }));
-        return json(201, { code });
-      }
-      const code = sm[1];
-      if (!CODE.test(code)) return reply(400, "bad sync code");
-      if (request.method === "GET") {
-        const v = await env.SYNC.get("p:" + code);
-        return v === null ? reply(404, "no such sync code") : new Response(v, { status: 200, headers: { ...cors, "Content-Type": "application/json", "Cache-Control": "no-store" } });
-      }
-      if (request.method === "PUT") {
-        const raw = await request.text();
-        if (new TextEncoder().encode(raw).length > SYNC_MAX) return reply(413, "progress file is too big");
-        let d; try { d = JSON.parse(raw); } catch { return reply(400, "bad json"); }
-        if (!d || d.format !== "medlib-sync" || typeof d.progress !== "object") return reply(400, "not a MedLib progress file");
-        await env.SYNC.put("p:" + code, raw);
-        return json(200, { ok: true });
-      }
-      return reply(405, "method not allowed");
+      try {
+        if (sm[1] === "new") {
+          if (request.method !== "POST") return reply(405, "use POST");
+          let code = newCode();
+          // No KV write here (free plan: 1,000 writes/day) — the first PUT creates the entry.
+          for (let i = 0; i < 3 && (await env.SYNC.get("p:" + code)) !== null; i++) code = newCode();
+          return json(201, { code });
+        }
+        const code = sm[1];
+        if (!CODE.test(code)) return reply(400, "bad sync code");
+        if (request.method === "GET") {
+          const v = await env.SYNC.get("p:" + code);
+          return v === null ? reply(404, "no such sync code") : new Response(v, { status: 200, headers: { ...cors, "Content-Type": "application/json", "Cache-Control": "no-store" } });
+        }
+        if (request.method === "PUT") {
+          const raw = await request.text();
+          if (new TextEncoder().encode(raw).length > SYNC_MAX) return reply(413, "progress file is too big");
+          let d; try { d = JSON.parse(raw); } catch { return reply(400, "bad json"); }
+          if (!d || d.format !== "medlib-sync" || !d.progress || typeof d.progress !== "object" || Array.isArray(d.progress)) return reply(400, "not a MedLib progress file");
+          await env.SYNC.put("p:" + code, raw);
+          return json(200, { ok: true });
+        }
+        return reply(405, "method not allowed");
+      } catch (e) { return reply(503, "sync storage is busy, try again later"); }   // e.g. KV write limits
     }
 
     if (url.pathname === "/report") {

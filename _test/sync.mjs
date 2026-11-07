@@ -15,7 +15,7 @@ process.on("exit", () => server.kill());
 for (let i = 0; i < 50; i++) { try { await fetch(BASE); break; } catch { await sleep(100); } }
 
 const KV = new Map();           // code -> stored body (string)
-let mode = "ok";                // ok | 404 | 500 | down
+let mode = "ok", newCount = 0;                // ok | 404 | 500 | down
 const log = [];                 // "METHOD /path"
 const browser = await chromium.launch();
 
@@ -31,10 +31,10 @@ async function device(withWorker = true) {
     if (m === "OPTIONS") return r.fulfill({ status: 204, headers: cors });
     log.push(`${m} ${u.pathname}`);
     if (mode === "down") return r.abort("failed");
+    if (mode === "slow") await sleep(800);
     if (mode === "500") return r.fulfill({ status: 500, headers: cors, body: "boom" });
     if (u.pathname === "/sync/new" && m === "POST") {
-      const code = "a2b3-c4d5-e6f" + "23456789"[KV.size];
-      KV.set(code, JSON.stringify({ format: "medlib-sync", progress: {} }));
+      const code = "a2b3-c4d5-e6f" + "23456789"[newCount++];
       return r.fulfill({ status: 201, headers: cors, json: { code } });
     }
     const code = u.pathname.split("/")[2];
@@ -66,7 +66,8 @@ await t("A: create a code → shown in settings", async () => {
   await A.click('[data-act="syncnew"]');
   await A.waitForSelector(".synccode");
   code = (await A.textContent(".synccode")).trim();
-  assert.ok(KV.has(code), "code made on the worker");
+  for (let i = 0; i < 30 && !KV.has(code); i++) await sleep(100);
+  assert.ok(KV.has(code), "first PUT stores the new code on the worker");
   assert.match(await A.textContent("#sync"), /ใครรู้รหัสจะเห็นความคืบหน้าของคุณ/);
 });
 await t("A: finishing a round sends a PUT", async () => {
@@ -92,6 +93,20 @@ await t("no change → no PUT", async () => {
   const n = log.length; await settings(A); await A.click('[data-act="syncnow"]');
   assert.ok(await waitLog(`GET /sync/${code}`, n)); await sleep(300);
   assert.ok(!log.slice(n).some((x) => x.startsWith("PUT")));
+});
+
+await t("prefs differ only → no PUT", async () => {
+  await A.evaluate(() => { window.__medlib.PROG.prefs = { planTier: 3 }; });
+  const n = log.length; await A.click('[data-act="syncnow"]');
+  assert.ok(await waitLog(`GET /sync/${code}`, n)); await sleep(300);
+  assert.ok(!log.slice(n).some((x) => x.startsWith("PUT")));
+});
+await t("stop syncing while a sync runs stays stopped", async () => {
+  mode = "slow"; await settings(A);
+  await A.click('[data-act="syncnow"]'); await A.click('[data-act="syncoff"]'); await A.click('[data-act="syncoff"]');
+  await sleep(1500); mode = "ok";
+  assert.strictEqual(await A.evaluate(() => localStorage.getItem("medlib.sync.v1")), null);
+  await A.evaluate((c) => localStorage.setItem("medlib.sync.v1", JSON.stringify({ code: c })), code);
 });
 
 const C = await device();

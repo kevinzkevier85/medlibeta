@@ -41,6 +41,17 @@ await t("put: too big 413, not json 400, wrong format 400", async () => {
   assert.strictEqual((await call("PUT", `/sync/${code}`, "x".repeat(524289))).status, 413);
   assert.strictEqual((await call("PUT", `/sync/${code}`, "not json")).status, 400);
   assert.strictEqual((await call("PUT", `/sync/${code}`, JSON.stringify({ rounds: {} }))).status, 400);
+  for (const progress of [null, [], "x"]) assert.strictEqual((await call("PUT", `/sync/${code}`, JSON.stringify({ format: "medlib-sync", progress }))).status, 400);
+});
+await t("new code writes nothing (first PUT creates it)", async () => {
+  const e = fakeEnv(); let writes = 0; const put = e.SYNC.put; e.SYNC.put = async (...a) => { writes++; return put(...a); };
+  const { code } = await (await call("POST", "/sync/new", null, ORIGIN, e)).json();
+  assert.strictEqual(writes, 0); assert.strictEqual((await call("GET", `/sync/${code}`, null, ORIGIN, e)).status, 404);
+});
+await t("KV error → 503 with CORS header", async () => {
+  const e = fakeEnv(); e.SYNC.put = async () => { throw new Error("429 too many writes"); };
+  const r = await call("PUT", "/sync/2222-3333-4444", good, ORIGIN, e);
+  assert.strictEqual(r.status, 503); assert.strictEqual(r.headers.get("Access-Control-Allow-Origin"), ORIGIN);
 });
 await t("no KV binding → 501", async () => {
   const e = fakeEnv(); delete e.SYNC;

@@ -47,33 +47,40 @@
   // JSON with sorted keys, so two equal progress objects compare equal
   const canon = (o) => JSON.stringify(o, (k, v) => (v && typeof v === "object" && !Array.isArray(v) ? Object.fromEntries(Object.keys(v).sort().map((x) => [x, v[x]])) : v));
   const onSettings = () => location.hash.startsWith("#/settings");
-  function syncFail(text, changed) { SY.msg = { err: true, text }; if (changed || onSettings()) route(); return false; }
+  function syncFail(text) { SY.msg = { err: true, text }; if (onSettings()) route(); return false; }
   // Pull, merge into this device, push back only if the worker copy is missing something. Never deletes local data.
-  function syncNow(code) {
-    const base = syncBase(); code = code || (syncState() || {}).code;
+  // fresh: a code just made by /sync/new — nothing on the worker yet, so skip the GET and always PUT.
+  function syncNow(code, fresh) {
+    const base = syncBase(), had = (syncState() || {}).code; code = code || had;
     if (!base || !code) return Promise.resolve(false);
     if (SY.busy) return SY.busy;
     const url = `${base}/sync/${code}`;
     const FAIL = "ซิงก์ไม่สำเร็จ (ไม่มีเน็ตหรือ Worker ไม่ตอบ) ข้อมูลในเครื่องยังอยู่ครบ";
     SY.busy = (async () => {
-      let res, remote = null;
-      try { res = await fetch(url, { cache: "no-store" }); } catch (e) { return syncFail(FAIL); }
-      if (res.status === 404) return syncFail("ไม่พบรหัสนี้ ตรวจรหัสอีกครั้ง");
-      try { remote = res.ok ? await res.json() : null; } catch (e) { remote = null; }
-      if (!remote || remote.format !== "medlib-sync" || !remote.progress || typeof remote.progress !== "object") return syncFail(FAIL);
+      let res, remote = { format: "medlib-sync", progress: {} };
+      if (!fresh) {
+        try { res = await fetch(url, { cache: "no-store" }); } catch (e) { return syncFail(FAIL); }
+        if (res.status === 404) return syncFail("ไม่พบรหัสนี้ ตรวจรหัสอีกครั้ง");
+        try { remote = res.ok ? await res.json() : null; } catch (e) { remote = null; }
+      }
+      if (!remote || remote.format !== "medlib-sync" || !remote.progress || typeof remote.progress !== "object" || Array.isArray(remote.progress)) return syncFail(FAIL);
       const theirs = normProg(remote.progress);
       const merged = normProg(QC.mergeProgress(PROG, theirs));
       const changed = canon(merged) !== canon(PROG);
-      if (changed) { PROG = merged; saveProg(); }
-      if (canon(PROG) !== canon(theirs)) {
+      // Swap in the merged copy and redraw at once, so an open exam (and its timer) works on the new objects.
+      if (changed) { PROG = merged; saveProg(); route(); }
+      // Push only if the worker copy would gain something (prefs stay per device).
+      const noPrefs = (p) => canon(Object.assign({}, p, { prefs: null }));
+      if (fresh || noPrefs(normProg(QC.mergeProgress(theirs, PROG))) !== noPrefs(theirs)) {
         try {
           const put = await fetch(url, { method: "PUT", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ format: "medlib-sync", progress: PROG, saved: new Date().toISOString() }) });
-          if (!put.ok) return syncFail(put.status === 413 ? "ซิงก์ไม่สำเร็จ ข้อมูลใหญ่เกินกว่าที่ Worker รับได้" : FAIL, changed);
-        } catch (e) { return syncFail(FAIL, changed); }
+          if (!put.ok) return syncFail(put.status === 413 ? "ซิงก์ไม่สำเร็จ ข้อมูลใหญ่เกินกว่าที่ Worker รับได้" : FAIL);
+        } catch (e) { return syncFail(FAIL); }
       }
-      setSyncState({ code, last: Date.now() });
+      const now = (syncState() || {}).code;
+      if (now === code || (!had && !now)) setSyncState({ code, last: Date.now() });   // not if "stop syncing" was pressed meanwhile
       SY.msg = { text: changed ? "ซิงก์แล้ว รวมข้อมูลจากเครื่องอื่นเข้ามาแล้ว" : "ซิงก์แล้ว" };
-      if (changed || onSettings()) route();
+      if (onSettings()) route();
       return true;
     })().finally(() => { SY.busy = null; });
     return SY.busy;
@@ -84,7 +91,7 @@
     let code = null;
     try { const r = await fetch(`${base}/sync/new`, { method: "POST" }); const j = r.ok ? await r.json() : null; code = j && SYNC_CODE.test(j.code) ? j.code : null; } catch (e) { code = null; }
     if (!code) return syncFail("สร้างรหัสไม่สำเร็จ (ไม่มีเน็ตหรือ Worker ไม่ตอบ)");
-    return syncNow(code);
+    return syncNow(code, true);
   }
   function syncHTML() {
     if (!syncBase()) return "";
