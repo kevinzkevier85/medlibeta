@@ -498,7 +498,7 @@ window.MedLibQuizUI = function (ML) {
     const linkQ = (id) => `#/q/${enc(id)}`;
     const tierF = (P().prefs || {}).planTier || 3;
     const lecs = guideLectures(b, topics.filter((t) => t.tier <= tierF));
-    const withLec = qs.filter((q) => (q.refs || []).some((x) => x.lecture));
+    const withLec = qs.filter((q) => (q.refs || []).some((x) => x.lecture && x.pages));   // the plan works on lecture pages; page-less "read this lecture" refs do not count
     const t1pages = topics.filter((t) => t.tier === 1).reduce((a, t) => a + t.pages[1] - t.pages[0] + 1, 0);
     const t1q = new Set(topics.filter((t) => t.tier === 1).flatMap((t) => t.own));
     const cohorts = [...new Set(qs.map((q) => q.cohort))].sort();

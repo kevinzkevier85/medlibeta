@@ -69,6 +69,11 @@ await t("lecture pages of END open with page-less refs (reader, question list, p
   await p.waitForFunction(() => location.hash.includes("/@"));
   assert.deepStrictEqual(errors, []);
 });
+await t("END plan page: no page-level links yet → says so, not '0 หัวข้อ'", async () => {
+  await go("#/lec/END/plan"); await sleep(800);
+  const txt = await p.textContent("#main");
+  assert.match(txt, /ยังไม่ได้โยงกับหน้า lecture/); assert.ok(!/0 หน้า\s*Tier 1/.test(txt));
+});
 await t("no page errors", async () => assert.deepStrictEqual(errors, []));
 await browser.close(); server.kill();
 console.log(`\n${pass} ผ่าน`);
