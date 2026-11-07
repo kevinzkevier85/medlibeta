@@ -979,7 +979,7 @@
     if (act === "toc") { const el = $("#toc"); el.innerHTML = el.innerHTML ? "" : tocHTML(RD.b, RD.l); return; }
     if (act === "install" && PWA.prompt) { PWA.prompt.prompt(); const c = await PWA.prompt.userChoice.catch(() => null); PWA.prompt = null; if (c && c.outcome === "accepted") toast("ติดตั้งแล้ว เปิดได้จากหน้าจอหลัก"); return route(); }
     if (act === "cacheimg") {
-      const urls = APP.blocks.flatMap((b) => b.exams.filter((q) => q.image).map((q) => new URL(b._base + "/" + q.image, location.href).href));
+      const urls = APP.blocks.flatMap((b) => b.exams.flatMap((q) => [q.image, ...(q.items || []).flatMap((it) => [it.image, it.key_image])]).filter(Boolean).map((f) => new URL(b._base + "/" + f, location.href).href));
       const ctl = navigator.serviceWorker && navigator.serviceWorker.controller;
       if (!ctl) { $("#cachemsg").textContent = "ยังไม่พร้อม ลองรีเฟรชหน้าแล้วกดอีกครั้ง"; return; }
       $("#cachemsg").textContent = urls.length ? `กำลังเก็บ 0/${urls.length}…` : "ไม่มีรูปให้เก็บ";
