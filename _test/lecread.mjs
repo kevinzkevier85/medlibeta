@@ -63,16 +63,25 @@ await t("stats page: Lecture ที่ผิดบ่อย", async () => {
   assert.match(await p.textContent('[data-blk="END"]'), /Lecture ที่ผิดบ่อย/);
 });
 await t("lecture pages of END open with page-less refs (reader, question list, plan, lecture tab)", async () => {
-  for (const h of ["#/lec/END/L6", "#/refs/END/L6", "#/lec/END/plan", "#/set/END/52_MCQ/plan"]) { await go(h); await sleep(600); }
+  for (const h of ["#/lec/END/L6", "#/refs/END/L6", "#/lec/END/plan", "#/set/END/52_MCQ/guide"]) { await go(h); await sleep(600); }
   await go("#/b/END"); await p.waitForSelector('[data-z="etab"][data-t="lec"]');
   await p.click('[data-z="etab"][data-t="lec"]'); await p.click('[data-z="mixlec"]');
   await p.waitForFunction(() => location.hash.includes("/@"));
   assert.deepStrictEqual(errors, []);
 });
-await t("END plan page: no page-level links yet → says so, not '0 หัวข้อ'", async () => {
-  await go("#/lec/END/plan"); await sleep(800);
-  const txt = await p.textContent("#main");
-  assert.match(txt, /ยังไม่ได้โยงกับหน้า lecture/); assert.ok(!/0 หน้า\s*Tier 1/.test(txt));
+await t("END plan page: lectures ranked by how many exam questions point at them; practice button works", async () => {
+  await go("#/lec/END/plan"); await p.waitForSelector("table.lecplan");
+  const rows = await p.$$eval("table.lecplan tbody tr", (trs) => trs.map((tr) => ({ name: tr.cells[0].textContent, n: parseInt(tr.cells[1].textContent, 10) })));
+  assert.ok(rows.length >= 10, "many lectures");
+  for (let i = 1; i < rows.length; i++) assert.ok(rows[i - 1].n >= rows[i].n, "sorted by count");
+  assert.ok(!/0 หน้า\s*Tier 1/.test(await p.textContent("#main")));
+  await p.click("table.lecplan tbody tr:first-child [data-z=\"mixlec\"]");
+  await p.waitForFunction(() => location.hash.includes("/@"));
+  const mix = await p.evaluate(() => Object.values(window.__medlib.PROG.mixes).pop());
+  assert.strictEqual(mix.block, "END"); assert.strictEqual(mix.qids.length, rows[0].n);
+});
+await t("END set plan: lecture table too", async () => {
+  await go("#/set/END/52_MCQ/guide"); await p.waitForSelector("table.lecplan");
 });
 await t("no page errors", async () => assert.deepStrictEqual(errors, []));
 await browser.close(); server.kill();
