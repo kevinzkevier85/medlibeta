@@ -1,6 +1,6 @@
 # Next tasks
 
-## เสร็จแล้ว — v0.14.0 (2026-11-07) KF Endocrine ชุด 52 · branch kel-end-kf-52
+## เสร็จแล้ว — v0.15.0 (2026-11-07) KF Endocrine ชุด 52 · branch kel-end-kf-52
 - ข้อย่อยแสดงรูปได้ (image / key_image) · CVS KF 52 ข้อ 9.3 รูปเพิ่งแสดงครั้งแรก
 - ตรวจ: node tools/validate.cjs · node _test/kf_check.mjs END 52 · node _test/quizcore.test.cjs
 - ถัดไป: KF Endocrine 51, 50, 49, 47, 46, 45, 44, 42-43 (ทำตาม auditor/PROGRESS.md › KF) · OSPE
@@ -16,7 +16,7 @@
 - ตรวจ: node tools/validate.cjs · node _test/quizcore.test.cjs · node _test/qa.mjs (63 ข้อ)
 
 ## ถัดไป (ลำดับ)
-1. ผู้ใช้ตั้ง Worker: DRIVE_API_KEY, GITHUB_TOKEN (Issues only), GITHUB_REPO, ALLOWED_ORIGINS → ใส่ URL ใน site.json (drive_proxy_url / report_url)
+1. kevinzkevier85 ตั้ง Worker ตามคู่มือ `docs/worker-setup.md` (PDF + แจ้งเฉลย + ซิงก์ KV `SYNC`) → ใส่ URL ใน site.json (drive_proxy_url)
 2. Auditor ส่ง field v2: option_why, mechanism, key_concept, refs ไปหน้า lecture (+ ลงทะเบียน lecture ของ END)
 3. ตัดสิน REVIEW.md 7 ข้อ (END 52)
 4. รัน Auditor ทุกชุดใน Drive โดยใช้ psu-quiz data.json เป็นตัวเทียบตอนแยกข้อ

@@ -34,6 +34,82 @@
     catch (e) { if (!progWarned) { progWarned = true; toast("บันทึกความคืบหน้าไม่ได้ พื้นที่เบราว์เซอร์อาจเต็ม ลองส่งออกข้อมูลในหน้าตั้งค่า"); } return false; }
   }
 
+  /* ---------- sync across devices: worker /sync/<code>, the code is the key ---------- */
+  const SYNC_KEY = "medlib.sync.v1";   // { code, last } on this device only
+  const SYNC_CODE = /^[2-9a-hjkmnp-z]{4}-[2-9a-hjkmnp-z]{4}-[2-9a-hjkmnp-z]{4}$/;
+  const SY = { busy: null, msg: null };
+  function syncState() {
+    try { const s = JSON.parse(localStorage.getItem(SYNC_KEY) || "null"); return s && SYNC_CODE.test(s.code) ? s : null; } catch (e) { return null; }
+  }
+  function setSyncState(s) { try { if (s) localStorage.setItem(SYNC_KEY, JSON.stringify(s)); else localStorage.removeItem(SYNC_KEY); } catch (e) { /* storage blocked */ } }
+  const syncBase = () => String(APP.config.drive_proxy_url || "").replace(/\/+$/, "");
+  const normCode = (s) => String(s || "").trim().toLowerCase();
+  // JSON with sorted keys, so two equal progress objects compare equal
+  const canon = (o) => JSON.stringify(o, (k, v) => (v && typeof v === "object" && !Array.isArray(v) ? Object.fromEntries(Object.keys(v).sort().map((x) => [x, v[x]])) : v));
+  const onSettings = () => location.hash.startsWith("#/settings");
+  function syncFail(text) { SY.msg = { err: true, text }; if (onSettings()) route(); return false; }
+  // Pull, merge into this device, push back only if the worker copy is missing something. Never deletes local data.
+  // fresh: a code just made by /sync/new — nothing on the worker yet, so skip the GET and always PUT.
+  function syncNow(code, fresh) {
+    const base = syncBase(), had = (syncState() || {}).code; code = code || had;
+    if (!base || !code) return Promise.resolve(false);
+    if (SY.busy) return SY.busy;
+    const url = `${base}/sync/${code}`;
+    const FAIL = "ซิงก์ไม่สำเร็จ (ไม่มีเน็ตหรือ Worker ไม่ตอบ) ข้อมูลในเครื่องยังอยู่ครบ";
+    SY.busy = (async () => {
+      let res, remote = { format: "medlib-sync", progress: {} };
+      if (!fresh) {
+        try { res = await fetch(url, { cache: "no-store" }); } catch (e) { return syncFail(FAIL); }
+        if (res.status === 404) return syncFail("ไม่พบรหัสนี้ ตรวจรหัสอีกครั้ง");
+        try { remote = res.ok ? await res.json() : null; } catch (e) { remote = null; }
+      }
+      if (!remote || remote.format !== "medlib-sync" || !remote.progress || typeof remote.progress !== "object" || Array.isArray(remote.progress)) return syncFail(FAIL);
+      const theirs = normProg(remote.progress);
+      const merged = normProg(QC.mergeProgress(PROG, theirs));
+      const changed = canon(merged) !== canon(PROG);
+      // Swap in the merged copy and redraw at once, so an open exam (and its timer) works on the new objects.
+      if (changed) { PROG = merged; saveProg(); route(); }
+      // Push only if the worker copy would gain something (prefs stay per device).
+      const noPrefs = (p) => canon(Object.assign({}, p, { prefs: null }));
+      if (fresh || noPrefs(normProg(QC.mergeProgress(theirs, PROG))) !== noPrefs(theirs)) {
+        try {
+          const put = await fetch(url, { method: "PUT", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ format: "medlib-sync", progress: PROG, saved: new Date().toISOString() }) });
+          if (!put.ok) return syncFail(put.status === 413 ? "ซิงก์ไม่สำเร็จ ข้อมูลใหญ่เกินกว่าที่ Worker รับได้" : FAIL);
+        } catch (e) { return syncFail(FAIL); }
+      }
+      const now = (syncState() || {}).code;
+      if (now === code || (!had && !now)) setSyncState({ code, last: Date.now() });   // not if "stop syncing" was pressed meanwhile
+      SY.msg = { text: changed ? "ซิงก์แล้ว รวมข้อมูลจากเครื่องอื่นเข้ามาแล้ว" : "ซิงก์แล้ว" };
+      if (onSettings()) route();
+      return true;
+    })().finally(() => { SY.busy = null; });
+    return SY.busy;
+  }
+  const syncSoon = () => { if (syncState()) setTimeout(() => syncNow(), 0); };
+  async function syncNew() {
+    const base = syncBase(); if (!base || SY.busy) return;
+    let code = null;
+    try { const r = await fetch(`${base}/sync/new`, { method: "POST" }); const j = r.ok ? await r.json() : null; code = j && SYNC_CODE.test(j.code) ? j.code : null; } catch (e) { code = null; }
+    if (!code) return syncFail("สร้างรหัสไม่สำเร็จ (ไม่มีเน็ตหรือ Worker ไม่ตอบ)");
+    return syncNow(code, true);
+  }
+  function syncHTML() {
+    if (!syncBase()) return "";
+    const st = syncState(), m = SY.msg; SY.msg = null;
+    const when = st && st.last ? new Date(st.last).toLocaleString("th-TH", { dateStyle: "medium", timeStyle: "short" }) : "";
+    const msg = m ? `<p class="toast ${m.err ? "err" : ""}">${esc(m.text)}</p>` : "";
+    const body = st
+      ? `<p>รหัสของคุณ <b class="mono synccode">${esc(st.code)}</b> <button class="btn sm" data-copy="${esc(st.code)}">คัดลอก</button></p>
+        <p class="hint">ใส่รหัสนี้ที่เครื่องอื่นเพื่อใช้ความคืบหน้าเดียวกัน · ซิงก์เองตอนเปิดเว็บและหลังจบรอบ${when ? ` · ซิงก์ล่าสุด ${esc(when)}` : ""}</p>
+        <div class="btns"><button class="btn primary" data-act="syncnow">ซิงก์ตอนนี้</button>
+          <button class="btn danger" data-act="syncoff">เลิกซิงก์ในเครื่องนี้</button><span class="hint">ลบแค่รหัสในเครื่องนี้ ความคืบหน้ายังอยู่</span></div>`
+      : `<div class="btns"><button class="btn primary" data-act="syncnew">สร้างรหัสใหม่</button></div>
+        <form class="btns" data-syncjoin="1"><input id="syncin" placeholder="มีรหัสแล้ว ใส่ที่นี่" aria-label="รหัสซิงก์" autocomplete="off" autocapitalize="off" spellcheck="false"><button class="btn">เชื่อมรหัส</button></form>`;
+    return `<div class="section" id="sync"><h3>ซิงก์ข้ามเครื่อง</h3>
+      <p class="hint">ใช้รหัสเดียวกันทุกเครื่อง ความคืบหน้าจะรวมกันรายข้อ ไม่ทับของเดิม · ใครรู้รหัสจะเห็นความคืบหน้าของคุณ (ไม่มีข้อมูลส่วนตัวอื่น) อย่าแชร์รหัสในที่สาธารณะ</p>
+      ${body}${msg}</div>`;
+  }
+
   /* ---------- app data ---------- */
   const APP = { version: { version: "?", date: "", history: [] }, defaults: { settings: {} }, config: {}, blocks: [], problems: [] };
   const S = () => Object.assign({}, APP.defaults.settings, USER.settings);
@@ -725,6 +801,7 @@
       </div>
       <div class="btns"><button class="btn danger" data-act="reset">รีเซ็ตการตั้งค่ากลับค่ากลาง</button><span class="hint">ปรับเป็นค่าส่วนตัวไว้ ${Object.keys(mine).length} เรื่อง</span></div>
 
+      ${syncHTML()}
       <div class="section"><h3>ย้ายข้อมูลไปเครื่องอื่น / สำรองข้อมูล</h3>
         <p class="hint">ในเครื่องนี้มี: ${nRounds} รอบที่ทำข้อสอบ · ปักธง ${Object.keys(PROG.marks.flag).length} ข้อ · โน้ต ${Object.keys(PROG.marks.notes).length} ข้อ · เฉลยของฉัน ${Object.keys(PROG.marks.keyOverride).length} ข้อ · อ่าน lecture ${Object.keys(PROG.read).length} บท · ข้อสอบที่เพิ่มเอง ${USER.questions.length} ข้อ</p>
         <p class="hint">ส่งออกเป็นไฟล์ แล้วนำเข้าที่อีกเครื่อง (มือถือ ↔ คอม) ข้อมูลจะรวมกันรายข้อ ไม่ทับของเดิม</p>
@@ -861,7 +938,7 @@
   }
 
   const ML = { $, esc, enc, main, APP, S, findBlock, findSet, docOf, findQuestion, examsOf, allExams, armed, toast, parseHash, notFound,
-    route: () => route(), prog: () => PROG, saveProg };
+    route: () => route(), prog: () => PROG, saveProg, syncSoon };
   const QZ = window.MedLibQuizUI(ML);
 
   let lastHash = location.hash;
@@ -910,6 +987,9 @@
       return;
     }
     if (act === "reset") { if (!armed(t)) return; USER.settings = {}; saveUser(); applyTheme(); toastMsg = { text: "กลับไปใช้ค่ากลางทั้งหมดแล้ว" }; return route(); }
+    if (act === "syncnew") return syncNew();
+    if (act === "syncnow") return syncNow();
+    if (act === "syncoff") { if (!armed(t)) return; setSyncState(null); SY.msg = { text: "เลิกซิงก์ในเครื่องนี้แล้ว ความคืบหน้ายังอยู่ในเครื่อง" }; return route(); }
     if (act === "export") { toastMsg = { text: await exportUser() }; return route(); }
     if (act === "clearprog") {
       if (!armed(t)) return;
@@ -931,6 +1011,12 @@
   });
   document.addEventListener("submit", (ev) => {
     if (ev.target.dataset.pdfsearch) { ev.preventDefault(); pdfSearch($("#pdfq").value); }
+    if (ev.target.dataset.syncjoin) {
+      ev.preventDefault();
+      const code = normCode($("#syncin").value);
+      if (!SYNC_CODE.test(code)) { SY.msg = { err: true, text: "รหัสไม่ถูกต้อง รหัสมี 12 ตัว แบบ xxxx-xxxx-xxxx" }; return route(); }
+      syncNow(code);
+    }
   });
   document.addEventListener("change", async (ev) => {
     const t = ev.target;
@@ -1005,6 +1091,7 @@
     await loadBlocks("data/blocks", false);
     await loadBlocks("samples/blocks", true);
     route();
+    syncSoon();
   }
   /* ---------- PWA: install + offline (sw.js) ---------- */
   const PWA = { prompt: null, sw: false };
