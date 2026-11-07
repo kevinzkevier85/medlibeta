@@ -664,7 +664,7 @@ window.MedLibQuizUI = function (ML) {
 
   async function onClick(t) {
     const c = ctx();
-    if (t.dataset.zoom) { t.classList.toggle("zoom"); return true; }
+    if (t.dataset.zoom) { t.classList.toggle("zoom"); t.style.transform = ""; return true; }
     if (t.dataset.go !== undefined) { if (t.dataset.go && c.s) location.replace(`${base(c.b, c.s)}/run/${t.dataset.go}`); return true; }
     if (t.dataset.opt) {
       const q = curQ(c), r = c.r; if (!q || !r || r.chk[q.id]) return true;

@@ -59,6 +59,24 @@ await t("zoomed picture: two-finger pinch scales it, closing resets", async () =
   await p.evaluate(() => document.querySelector("img.zoom").click());
   assert.strictEqual(await p.evaluate(() => document.querySelector("img[data-zoom]").style.transform), "");
 });
+// a tap = touchstart + touchend at one point; returns false when the page blocked it (then no click would follow on a phone)
+const tap = (sel) => p.evaluate((sel) => {
+  const el = document.querySelector(sel), pt = [new Touch({ identifier: 0, target: el, clientX: 200, clientY: 400 })];
+  el.dispatchEvent(new TouchEvent("touchstart", { bubbles: true, cancelable: true, touches: pt, targetTouches: pt, changedTouches: pt }));
+  return el.dispatchEvent(new TouchEvent("touchend", { bubbles: true, cancelable: true, touches: [], targetTouches: [], changedTouches: pt }));
+}, sel);
+await t("after a pinch, a plain tap still closes the picture", async () => {
+  await go("#/q/END-51-MCQ-001"); await p.waitForSelector("img[data-zoom]");
+  await p.click("img[data-zoom]"); await p.waitForSelector("img.zoom");
+  await touch("img.zoom", [[150, 400], [250, 400]], [[100, 400], [300, 400]]);
+  assert.strictEqual(await tap("img.zoom"), true, "tap not blocked");
+});
+await t("leaving the page while zoomed: the next picture starts fresh", async () => {
+  await go("#/q/END-50-MCQ-001"); await p.waitForSelector("img[data-zoom]");
+  await p.click("img[data-zoom]"); await p.waitForSelector("img.zoom");
+  assert.strictEqual(await p.evaluate(() => document.querySelector("img.zoom").style.transform), "");
+  assert.strictEqual(await tap("img.zoom"), true);
+});
 await t("no page errors", async () => assert.deepStrictEqual(errors, []));
 await browser.close(); server.kill();
 console.log(`\n${pass} ผ่าน`);

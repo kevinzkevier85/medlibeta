@@ -1074,7 +1074,7 @@
     }
   });
   document.addEventListener("keydown", (ev) => {
-    if (ev.key === "Escape") { const z = $("img.zoom"); if (z) { z.classList.remove("zoom"); return; } if (POP.open) { history.back(); return; } }
+    if (ev.key === "Escape") { const z = $("img.zoom"); if (z) { z.classList.remove("zoom"); z.style.transform = ""; return; } if (POP.open) { history.back(); return; } }
     if (POP.open) { if (ev.key === "ArrowRight") popAction("next"); if (ev.key === "ArrowLeft") popAction("prev"); return; }
     if (/INPUT|TEXTAREA|SELECT/.test(ev.target.tagName) || ev.ctrlKey || ev.metaKey || ev.altKey) return;
     if (QZ.onKey(ev)) return;
@@ -1088,11 +1088,12 @@
     if (ev.key === "ArrowLeft" || ev.key === "PageUp") pdfGo(-1);
   });
   /* ---------- touch: swipe between questions, pinch/pan a zoomed picture ---------- */
-  const TCH = { x: 0, y: 0, t: 0, n: 0, d0: 0, s0: 1, sc: 1, tx: 0, ty: 0, px: 0, py: 0 };
+  const TCH = { x: 0, y: 0, t: 0, n: 0, d0: 0, s0: 1, sc: 1, tx: 0, ty: 0, px: 0, py: 0, img: null };
   const dist = (ts) => Math.hypot(ts[0].clientX - ts[1].clientX, ts[0].clientY - ts[1].clientY);
   const setTf = (img) => { img.style.transform = TCH.sc > 1.01 ? `translate(${TCH.tx}px, ${TCH.ty}px) scale(${TCH.sc.toFixed(2)})` : ""; };
   document.addEventListener("touchstart", (ev) => {
     const ts = ev.touches, z = ev.target.closest && ev.target.closest("img.zoom");
+    if (z && z !== TCH.img) { TCH.img = z; TCH.sc = 1; TCH.tx = TCH.ty = 0; }   // a new picture starts fresh
     TCH.n = Math.max(TCH.n, ts.length);
     if (ts.length === 1) { TCH.n = 1; TCH.x = TCH.px = ts[0].clientX; TCH.y = TCH.py = ts[0].clientY; TCH.t = Date.now(); }
     if (z && ts.length === 2) { TCH.d0 = dist(ts); TCH.s0 = TCH.sc; }
@@ -1108,7 +1109,14 @@
   document.addEventListener("touchend", (ev) => {
     const c = ev.changedTouches[0]; if (!c) return;
     const z = ev.target.closest && ev.target.closest("img.zoom");
-    if (z) { if (TCH.n > 1 || TCH.sc > 1) ev.preventDefault(); if (!ev.touches.length) TCH.n = 0; return; }   // no click (which would close it) after a pinch
+    if (z) {
+      // a plain short tap still closes the picture; after a pinch or a drag, no click (which would close it)
+      const tapped = TCH.n === 1 && Math.hypot(c.clientX - TCH.x, c.clientY - TCH.y) < 10 && Date.now() - TCH.t < 300;
+      if (!tapped && (TCH.n > 1 || TCH.sc > 1)) ev.preventDefault();
+      if (ev.touches.length === 1) { TCH.px = ev.touches[0].clientX; TCH.py = ev.touches[0].clientY; }   // one finger left: drag from here
+      if (!ev.touches.length) TCH.n = 0;
+      return;
+    }
     if (TCH.n !== 1 || !/^#\/set\/[^/]+\/[^/]+\/run\//.test(location.hash)) return;
     if (!ev.target.closest || !ev.target.closest(".qcard") || ev.target.closest("input, textarea, select")) return;
     const dx = c.clientX - TCH.x, dy = c.clientY - TCH.y;
@@ -1116,9 +1124,6 @@
     const btn = document.querySelector(dx < 0 ? ".qfoot [data-go]:last-child" : ".qfoot [data-go]");
     if (btn && !btn.disabled) btn.click();
   }, { passive: false });
-  // a picture that is zoomed out again starts fresh
-  new MutationObserver(() => { const z = document.querySelector("img.zoom"); if (!z) { TCH.sc = 1; TCH.tx = TCH.ty = 0; document.querySelectorAll("img[data-zoom]").forEach((i) => { if (i.style.transform) i.style.transform = ""; }); } })
-    .observe(document.body, { subtree: true, attributes: true, attributeFilter: ["class"] });
 
   let rz = 0;
   window.addEventListener("resize", () => { clearTimeout(rz); rz = setTimeout(() => { if (P.doc && $("#pdfstage")) renderPage(P.token); if (RD.doc && $("#lecpages")) { const w = $("#lecpages").clientWidth; if (w !== RD.lastW) { RD.lastW = w; RD.layout(RD.cur || 1); } } }, 200); });
