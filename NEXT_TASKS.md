@@ -9,7 +9,7 @@
 - ตรวจ: node tools/validate.cjs · node _test/quizcore.test.cjs · node _test/qa.mjs (63 ข้อ)
 
 ## ถัดไป (ลำดับ)
-1. ผู้ใช้ตั้ง Worker: DRIVE_API_KEY, GITHUB_TOKEN (Issues only), GITHUB_REPO, ALLOWED_ORIGINS → ใส่ URL ใน site.json (drive_proxy_url / report_url)
+1. kevinzkevier85 ตั้ง Worker ตามคู่มือ `docs/worker-setup.md` (PDF + แจ้งเฉลย + ซิงก์ KV `SYNC`) → ใส่ URL ใน site.json (drive_proxy_url)
 2. Auditor ส่ง field v2: option_why, mechanism, key_concept, refs ไปหน้า lecture (+ ลงทะเบียน lecture ของ END)
 3. ตัดสิน REVIEW.md 7 ข้อ (END 52)
 4. รัน Auditor ทุกชุดใน Drive โดยใช้ psu-quiz data.json เป็นตัวเทียบตอนแยกข้อ
