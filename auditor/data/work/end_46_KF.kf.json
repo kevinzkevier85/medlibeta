@@ -99,6 +99,11 @@
      "accepted": [
       "none",
       "no storage",
+      "not stored",
+      "nil",
+      "no vesicle",
+      "cannot store",
+      "nothing",
       "ไม่มี"
      ],
      "source_key": "None",
@@ -124,7 +129,8 @@
       "intracellular",
       "cytoplasm",
       "nucleus",
-      "nuclear"
+      "nuclear",
+      "inside the cell"
      ],
      "source_key": "Intracellular receptor",
      "explanation": "Steroid ผ่าน plasma membrane ได้ จับ receptor ใน cytoplasm/nucleus แล้วปรับ gene transcription"
@@ -136,7 +142,8 @@
      "accepted": [
       "cell membrane",
       "plasma membrane",
-      "cell surface"
+      "cell surface",
+      "membrane receptor"
      ],
      "source_key": "Target receptor on cell membrane",
      "explanation": "Peptide ละลายน้ำ ผ่าน membrane ไม่ได้ จึงจับ receptor บน cell membrane แล้วส่งสัญญาณผ่าน second messenger/kinase"
@@ -309,7 +316,9 @@
       "trpv6",
       "trpv5",
       "calbindin",
-      "pmca"
+      "pmca",
+      "ca transporter",
+      "calcium transporter"
      ],
      "key_text": "Vitamin D จับ vitamin D receptor ใน intestinal cell เพิ่ม expression ของ Ca transporter ได้แก่ TRPV5/6, calbindin และ PMCA ทำให้ ↑ Ca absorption",
      "source_key": "Vitamin D จับกับ vitamin D receptor ใน intestinal cell ช่วยเพิ่ม expression of Ca transporter ได้แก่ TRPV5/6, calbindin และ PMCA ทำให้ ↑ Ca absorption",
@@ -556,8 +565,7 @@
      "prompt": "Low dose dexamethasone suppression test",
      "format": "short",
      "keywords_all": [
-      "no",
-      "suppress"
+      "no suppress"
      ],
      "source_key": "No suppression",
      "explanation": "Low-dose DST: ในคนปกติ cortisol ถูกกด แต่ Cushing's syndrome ทุกชนิด (รวม adrenal tumor) ไม่ถูกกด"
@@ -567,8 +575,7 @@
      "prompt": "High dose dexamethasone suppression test",
      "format": "short",
      "keywords_all": [
-      "no",
-      "suppress"
+      "no suppress"
      ],
      "source_key": "No suppression",
      "explanation": "High-dose DST: pituitary adenoma (Cushing's disease) มักถูกกด แต่ adrenal tumor และ ectopic ACTH ไม่ถูกกด เพราะหลั่ง cortisol/ACTH เองโดยไม่ขึ้นกับ feedback"
@@ -622,7 +629,8 @@
      "accepted": [
       "primary hyperaldosteronism",
       "primary aldosteronism",
-      "conn"
+      "conn's",
+      "conn syndrome"
      ],
      "source_key": "primary hyperaldosteronism",
      "key_image": "img/END-46-KF-012-key.jpg",
@@ -633,22 +641,28 @@
      "id": "12.2",
      "prompt": "What is(are) the laboratory result(s) supporting your diagnosis?",
      "format": "short",
-     "accepted": [
-      "high aldosterone",
-      "increased aldosterone",
-      "elevated aldosterone",
-      "low renin",
-      "decreased renin",
-      "renin low",
-      "renin decrease",
-      "suppressed renin",
-      "low k",
-      "hypokalemia",
-      "hypokalaemia"
-     ],
      "key_text": "High aldosterone but low renin activity and low K⁺ level",
      "source_key": "High aldosterone but low renin activity and low K⁺ level",
-     "explanation": "aldosterone ↑ ร่วมกับ renin activity ↓ (ไม่ใช่ renin สูง) และ K⁺ ต่ำ (aldosterone ขับ K⁺ ที่ collecting duct) = primary hyperaldosteronism"
+     "explanation": "aldosterone ↑ ร่วมกับ renin activity ↓ (ไม่ใช่ renin สูง) และ K⁺ ต่ำ (aldosterone ขับ K⁺ ที่ collecting duct) = primary hyperaldosteronism",
+     "keywords_all": [
+      "high aldosterone",
+      "low renin"
+     ],
+     "accepted": [
+      "aldosterone/renin ratio",
+      "aldosterone renin ratio",
+      "high aldosterone with suppressed renin",
+      "high aldosterone suppressed renin",
+      "increased aldosterone decreased renin",
+      "increased aldosterone and decreased renin",
+      "elevated aldosterone suppressed renin",
+      "elevated aldosterone and suppressed renin",
+      "elevated aldosterone low renin",
+      "increased aldosterone low renin",
+      "high aldosterone decreased renin",
+      "aldosterone high renin low",
+      "aldosterone increased renin decreased"
+     ]
     }
    ]
   },
