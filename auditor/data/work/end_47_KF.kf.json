@@ -1,0 +1,224 @@
+{
+  "set_id": "end_47_KF",
+  "note": "KF Endocrine Med PSU 47 — written by hand from the exam + key PDFs (every page read by eye, 2026-11-07). The key is handwritten on the exam pages; source_key = what it says. build_kf.py turns this into data/blocks/END/exams/47_KF.json.",
+  "time_limit_min": 120,
+  "questions": [
+    {
+      "n": 1, "page": 2, "tags": ["peptide hormone", "steroid hormone"],
+      "case": "Fill in the information in the table below about how peptide and steroid hormones are transported in circulation and their cellular action.",
+      "key_concept": "Peptide hormone: ละลายอิสระในเลือด → จับ membrane receptor → second messenger · Steroid hormone: จับ carrier protein → เข้าเซลล์ → intracellular receptor → ควบคุม gene expression",
+      "items": [
+        { "id": "1.1", "prompt": "Peptide hormone — transport in circulation", "format": "short", "accepted": ["free", "unbound", "dissolved"],
+          "source_key": "free / unbound",
+          "explanation": "Peptide hormone ละลายน้ำ จึงเดินทางในพลาสมาแบบอิสระ (free/unbound) ส่วนใหญ่ half-life สั้น" },
+        { "id": "1.2", "prompt": "Steroid hormone — transport in circulation", "format": "short", "accepted": ["bound to protein", "protein", "carrier", "binding globulin", "albumin"],
+          "source_key": "bound to protein",
+          "explanation": "Steroid ไม่ละลายน้ำ จึงจับกับ carrier protein (เช่น CBG, SHBG, albumin) ในเลือด มีเฉพาะส่วน free ที่ออกฤทธิ์" },
+        { "id": "1.3", "prompt": "Peptide hormone — cellular action", "format": "short", "accepted": ["membrane receptor", "cell surface receptor", "surface receptor", "second messenger", "cellular signaling"],
+          "key_text": "binds to membrane receptor, triggers cellular signaling",
+          "source_key": "- binds to membrane receptor\n- trigger cellular signaling",
+          "explanation": "Peptide ผ่านเยื่อหุ้มเซลล์ไม่ได้ จึงจับ receptor บน cell membrane (GPCR, RTK ฯลฯ) แล้วกระตุ้น signaling cascade/second messenger" },
+        { "id": "1.4", "prompt": "Steroid hormone — cellular action", "format": "short", "accepted": ["gene expression", "transcription", "intracellular receptor", "nuclear receptor", "cytoplasmic receptor"],
+          "key_text": "regulate gene expression",
+          "source_key": "regulate gene expression.",
+          "explanation": "Steroid lipophilic ผ่านเยื่อหุ้มเซลล์ จับ intracellular (cytoplasmic/nuclear) receptor แล้วไปควบคุม gene transcription" }
+      ]
+    },
+    {
+      "n": 2, "page": 2, "tags": ["saxagliptin", "DPP-4 inhibitor"],
+      "case": "A 70-year-old man with polydipsia, polyuria and his fasting plasma glucose level is 180 mg/dl. The physician prescribes metformin and saxagliptin. What is mechanism of action of saxagliptin?",
+      "key_concept": "Saxagliptin: DPP-4 inhibitor → GLP-1/GIP อยู่นานขึ้น → insulin ↑ (glucose-dependent), glucagon ↓, gastric emptying ช้าลง",
+      "items": [
+        { "id": "2", "prompt": "Mechanism of action of saxagliptin", "format": "short", "accepted": ["dpp-4", "dpp4", "dpp 4", "dipeptidyl peptidase"],
+          "key_text": "inhibition of DPP-4 → longer half-life of GLP-1 → ↓ glucagon, ↑ insulin secretion, delayed gastric emptying (↑ satiety)",
+          "source_key": "inhibition of DPP-4 → longer half-life of GLP-1 → ↓ glucagon, ↑ insulin secretion, delayed gastric emptying (↑ satiety)",
+          "explanation": "ยับยั้ง enzyme DPP-4 ที่ย่อย GLP-1/GIP → incretin อยู่นาน → insulin หลั่งตามระดับกลูโคส, glucagon ลด, ชะลอ gastric emptying" }
+      ]
+    },
+    {
+      "n": 3, "page": 2, "tags": ["ADH", "water balance"],
+      "case": "When ADH level increase in patient with hypernatremia. Please fill in the table below how are these factors affected in this condition? (increase/decrease/no change)",
+      "key_concept": "ADH ↑ → V2 receptor → aquaporin-2 → reabsorb น้ำที่ collecting duct: urine volume ↓, urine osmolarity ↑, blood volume ↑, blood osmolarity ↓ (แก้ hypernatremia)",
+      "items": [
+        { "id": "3.1", "prompt": "Urine volume", "format": "short", "accepted": ["decrease", "ลด", "ลดลง"], "source_key": "decrease",
+          "explanation": "ADH ทำให้ดูดน้ำกลับที่ collecting duct → ปัสสาวะน้อยลง" },
+        { "id": "3.2", "prompt": "Urine osmolarity", "format": "short", "accepted": ["increase", "เพิ่ม", "สูงขึ้น"], "source_key": "increase",
+          "explanation": "น้ำถูกดูดกลับ แต่ solute ยังอยู่ → ปัสสาวะเข้มข้นขึ้น" },
+        { "id": "3.3", "prompt": "Blood volume", "format": "short", "accepted": ["increase", "เพิ่ม", "สูงขึ้น"], "source_key": "increase",
+          "explanation": "น้ำที่ดูดกลับเพิ่ม volume ในเลือด" },
+        { "id": "3.4", "prompt": "Blood osmolarity", "format": "short", "accepted": ["decrease", "ลด", "ลดลง"],
+          "source_key": "decrease (โจทย์ระบุว่า change หลัง ADH หลั่ง)",
+          "explanation": "น้ำที่ดูดกลับเจือจาง plasma → osmolarity ลดลงสู่ปกติ (ผู้เฉลยหมายเหตุว่าเป็นการเปลี่ยนแปลงหลัง ADH หลั่ง)" }
+      ]
+    },
+    {
+      "n": 4, "page": 3, "tags": ["hyperthyroidism", "thyroiditis"],
+      "case": "A 53-year-old man went to see a doctor in clinic because he felt discomfort in his neck over the past 5 days. PE: palpated diffuse, symmetrical enlargement with mild tenderness in the region of thyroid gland. Thyroid function test: T4 22.0 ng/dl (ref 0.7-1.7), serum TSH 0.19 mU/L (ref 0.25-4.00). Then, the patient was referred to an endocrinologist BUT the next available appointment is in 2 months later. When the endocrinologist examines the patient, his thyroid gland was no longer palpable and there is NO pain. Repeat thyroid function tests reveal: T4 0.8 ng/dl and serum TSH 3.0 mU/L",
+      "key_concept": "T4 สูง/TSH ต่ำ = thyrotoxicosis · สาเหตุ: Graves, subacute thyroiditis, toxic multinodular goiter, Hashitoxicosis · ต่อมเจ็บ → หายเองใน 2 เดือน + ค่ากลับปกติ = subacute (granulomatous) thyroiditis",
+      "items": [
+        { "id": "4.1a", "prompt": "What are 3 thyroid diseases cause in increasing of thyroxine? (1)", "format": "short",
+          "accepted": ["graves", "subacute", "de quervain", "granulomatous", "toxic multinodular", "toxic nodular", "multinodular goiter", "toxic adenoma", "hashi", "silent thyroiditis", "painless thyroiditis", "lymphocytic thyroiditis"],
+          "key_text": "Graves' disease / Subacute thyroiditis / Toxic multinodular goiter / Hashimoto thyroiditis (Hashitoxicosis)",
+          "source_key": "1. Graves' disease\n2. Subacute thyroiditis\n3. Toxic multinodular goiter\n4. Hashimoto thyroiditis (Hashitoxicosis)",
+          "explanation": "เฉลยให้ 4 โรค (ข้อสอบขอ 3): Graves, subacute thyroiditis, toxic multinodular goiter, Hashitoxicosis · ตอบโรคใดก็ได้ที่ทำให้ T4 สูง (ระบบนับโรคเหล่านี้ รวม silent thyroiditis, toxic adenoma)" },
+        { "id": "4.1b", "prompt": "What are 3 thyroid diseases cause in increasing of thyroxine? (2)", "format": "short",
+          "accepted": ["graves", "subacute", "de quervain", "granulomatous", "toxic multinodular", "toxic nodular", "multinodular goiter", "toxic adenoma", "hashi", "silent thyroiditis", "painless thyroiditis", "lymphocytic thyroiditis"],
+          "key_text": "Graves' disease / Subacute thyroiditis / Toxic multinodular goiter / Hashimoto thyroiditis (Hashitoxicosis)",
+          "source_key": "(ดูข้อ 4.1a — เฉลยเขียน 4 โรค)",
+          "explanation": "ตอบโรคที่ต่างจากข้อ 4.1a ก็ได้ (ระบบตรวจแค่ว่าเป็นโรคที่ถูก ไม่ได้เช็คว่าซ้ำกัน)" },
+        { "id": "4.1c", "prompt": "What are 3 thyroid diseases cause in increasing of thyroxine? (3)", "format": "short",
+          "accepted": ["graves", "subacute", "de quervain", "granulomatous", "toxic multinodular", "toxic nodular", "multinodular goiter", "toxic adenoma", "hashi", "silent thyroiditis", "painless thyroiditis", "lymphocytic thyroiditis"],
+          "key_text": "Graves' disease / Subacute thyroiditis / Toxic multinodular goiter / Hashimoto thyroiditis (Hashitoxicosis)",
+          "source_key": "(ดูข้อ 4.1a — เฉลยเขียน 4 โรค)",
+          "explanation": "ตอบโรคที่ต่างจากข้อ 4.1a/4.1b ก็ได้ (ระบบตรวจแค่ว่าเป็นโรคที่ถูก)" },
+        { "id": "4.2", "prompt": "Which thyroid disease is mostly like to produce these finding? (ต่อมไม่โตแล้ว ไม่เจ็บ T4 และ TSH กลับปกติ)", "format": "short",
+          "accepted": ["subacute", "de quervain", "granulomatous"],
+          "source_key": "Subacute thyroiditis",
+          "explanation": "Subacute (de Quervain/granulomatous) thyroiditis มักตามหลัง viral infection: ต่อมเจ็บ → thyrotoxic phase → หายเองใน 2–3 เดือนจนค่ากลับปกติ (ต่อมไม่โต/ไม่เจ็บ) · Graves และ toxic MNG ต้องมีต่อมโตและไม่หายเอง" }
+      ]
+    },
+    {
+      "n": 5, "page": 3, "tags": ["CAH", "21-hydroxylase"],
+      "case": "A patient is diagnosed congenital null mutation of 21β-hydroxylase (CYP21A2) deficiency. Please fill in the table below how this abnormality affected these factors. (increase/decrease/no change)",
+      "key_concept": "21-OH deficiency: cortisol ↓ และ aldosterone ↓ → ACTH ↑ (ขาด negative feedback) → ต่อมหมวกไตโต, precursor เบนเข้า androgen pathway → androgen ↑ · aldosterone ↓ → เสีย Na⁺ (plasma Na ↓)",
+      "items": [
+        { "id": "5.1", "prompt": "Cortisol", "format": "short", "accepted": ["decrease", "low", "ลด", "ต่ำ"], "source_key": "decrease",
+          "explanation": "21-hydroxylase จำเป็นต่อการสร้าง cortisol (11-deoxycortisol) → cortisol ลดลง" },
+        { "id": "5.2", "prompt": "ACTH", "format": "short", "accepted": ["increase", "high", "เพิ่ม", "สูง"], "source_key": "increase",
+          "explanation": "Cortisol ต่ำ → ไม่กด CRH/ACTH → ACTH สูง" },
+        { "id": "5.3", "prompt": "Androgen (in women)", "format": "short", "accepted": ["increase", "high", "เพิ่ม", "สูง"], "source_key": "increase",
+          "explanation": "17-OH-progesterone สะสมและเข้าสู่ androgen pathway → androgen สูง (ambiguous genitalia / virilization ในหญิง)" },
+        { "id": "5.4", "prompt": "Plasma sodium level", "format": "short", "accepted": ["decrease", "low", "ลด", "ต่ำ"], "source_key": "decrease",
+          "explanation": "ขาด aldosterone (salt-wasting form) → เสีย Na⁺ ทางไต → plasma Na ต่ำ" }
+      ]
+    },
+    {
+      "n": 6, "page": 4, "tags": ["reverse cholesterol transport", "lipoprotein", "CETP"],
+      "case": "Cholesterol from peripheral tissues is transported to liver directly by HDL or indirectly by other lipoproteins. Give a short explanation of the mechanism involve in the transport of cholesterol from peripheral tissues is transported to liver by OTHER lipoprotein (except HDL).",
+      "key_concept": "Reverse cholesterol transport ทางอ้อม: HDL รับ cholesterol จากเนื้อเยื่อ (ABCA1/ABCG1) → CETP แลก cholesteryl ester ของ HDL กับ triglyceride ของ VLDL/chylomicron → cholesterol เข้า VLDL→IDL→LDL → ตับ uptake ผ่าน LDL receptor",
+      "items": [
+        { "id": "6", "prompt": "Explain the mechanism", "format": "short", "keywords_all": ["cetp", "ldl"],
+          "key_text": "HDL picks up cholesterol from peripheral tissue via transporters (ABCA1, ABCG1, SR-BI). HDL meets other lipoproteins (VLDL, chylomicron) → CETP exchanges cholesteryl ester in HDL for triglyceride from the other lipoproteins → cholesterol goes into the VLDL–IDL–LDL pathway → taken up by the liver via LDL receptor",
+          "source_key": "(ลายมือไทยปนอังกฤษ ถอดโดยประมาณ) HDL ใน circulation จะรับ cholesterol จาก peripheral tissue ผ่านทาง transporter ต่างๆ เช่น ABCA1, ABCG1, SR-BI · เมื่อ HDL เจอกับ other lipoprotein เช่น VLDL, chylomicron จะส่ง cholesteryl ester ใน HDL แลกกับ triglyceride จาก other lipoprotein โดยใช้ enzyme CETP (cholesteryl ester transfer protein) ทำให้ cholesterol ที่ HDL ได้จาก peripheral tissue ถูกส่งเข้าสู่ VLDL-IDL-LDL pathway ซึ่ง cholesterol ถูกส่งไปที่ตับโดยอาศัย LDL receptor · ตับจึง uptake cholesterol จาก peripheral tissue ผ่าน other lipoprotein ได้",
+          "audit_note": "ตัวอักษรลายมือไทยในเฉลย (ส่วนที่เป็นภาษาไทย) อ่านยาก — ถอดตามความเข้าใจ ส่วนศัพท์อังกฤษอ่านชัด",
+          "explanation": "กุญแจคือ CETP (HDL → VLDL/LDL แลก cholesteryl ester กับ TG) แล้ว LDL/IDL remnant ถูกตับรับผ่าน LDL receptor · ระบบตรวจอัตโนมัติต้องมีทั้งคำว่า CETP และ LDL" }
+      ]
+    },
+    {
+      "n": 7, "page": 4, "tags": ["vitamin D", "calcium absorption"],
+      "case": "A 28-year-old pregnant woman was informed that she had a high risk of inadequate calcium intake. The doctor advises her to take vitamin D supplementation to promote normal growth of fetus and maintain her calcium balance. Regarding intestinal calcium absorption briefly indicated action and mechanism of vitamin D in regulating intestinal calcium absorption.",
+      "key_concept": "Calcitriol (1,25-(OH)₂D₃) → VDR ในเซลล์ลำไส้ → ↑ expression ของ Ca²⁺ transport proteins (TRPV6, calbindin-D9K, PMCA1b) → ↑ Ca²⁺ absorption",
+      "items": [
+        { "id": "7", "prompt": "Action and mechanism of vitamin D on intestinal calcium absorption", "format": "short", "keywords_all": ["receptor", "transport"],
+          "key_text": "Vitamin D binds to vitamin D receptor in intestinal cells → ↑ expression of Ca²⁺ transporter (TRPV6, calbindin-D9K, PMCA1b) → ↑ Ca absorption through intestinal cells",
+          "source_key": "Vitamin D binds to Vitamin D receptor in intestinal cells\n↓\nExpression of Ca²⁺ transporter (TRPV6, Calbindin-D9K, PMCA1b)\n↓\n↑ Ca absorption through intestinal cells",
+          "explanation": "Active vitamin D จับ VDR (nuclear receptor) → transcription ของ TRPV6 (ดูด Ca เข้าที่ apical), calbindin-D9K (พา Ca ข้ามเซลล์) และ PMCA1b (pump ออก basolateral) → Ca²⁺ ดูดซึมมากขึ้น · ระบบตรวจต้องมีคำว่า receptor และ transport" }
+      ]
+    },
+    {
+      "n": 8, "page": 5, "tags": ["C-peptide", "insulin secretion"],
+      "case": "Since the measurement of plasma insulin concentrations by radioimmunoassay is limited by the fact that about 50% of insulin produced by pancreas is extracted by the liver without reaching the systemic circulation. To measure an effective rate of beta cell insulin secretion in DM patient, what factor or substrate can be measured and why?",
+      "key_concept": "C-peptide หลั่งพร้อม insulin 1:1 แต่ตับไม่ดึงออก → half-life นานกว่า, ความเข้มข้นสูงกว่า, ไม่ถูกรบกวนจาก exogenous insulin",
+      "items": [
+        { "id": "8.1", "prompt": "What factor or substrate can be measured?", "format": "short", "accepted": ["c-peptide", "c peptide", "cpeptide", "connecting peptide"],
+          "source_key": "C-peptide, a component of proinsulin",
+          "explanation": "Proinsulin ถูกตัดเป็น insulin + C-peptide (หลั่งออกมาโมลต่อโมลเท่ากัน)" },
+        { "id": "8.2", "prompt": "Why?", "format": "short", "keywords_all": ["half"],
+          "accepted": ["exogenous insulin", "not extracted by the liver", "not extracted by liver", "bypass the liver"],
+          "key_text": "When endogenous proinsulin is synthesized, C-peptide is cleaved to yield physiologically active insulin; C-peptide has a longer half-life than insulin, is not disturbed by exogenous insulin administration, and has a higher concentration than insulin",
+          "source_key": "→ when endogenous proinsulin is synthesized, C-peptide is cleaved to yield physiologically active insulin\n→ longer half life than insulin, not disturbed by exogenous insulin administration, higher concentration than insulin",
+          "explanation": "C-peptide ตับดึงออกน้อยมาก จึงสะท้อน β-cell secretion จริง, half-life ~30 นาที (insulin ~5 นาที), ไม่ปนกับ insulin ที่ฉีด จึงใช้แยกชนิดของ DM / hypoglycemia จาก insulin ฉีด · ตอบเหตุผลข้อใดข้อหนึ่งที่ถูกก็ได้" }
+      ]
+    },
+    {
+      "n": 9, "page": 5, "tags": ["primary hyperaldosteronism", "Conn syndrome", "cortisol"],
+      "case": "A 65-year-old man presents with severe headache. PE: BP 180/100 mmHg, HR 80 per minutes. Lab: Morning cortisol 15 ug/dl (ref 6-23), plasma renin activity 1.2 ng/mL/hr (ref 1.9-3.7), serum aldosterone 44 ng/dL (ref 4.0-31.0), serum potassium 2.5 mmol/dL",
+      "key_concept": "Aldosterone ↑ + renin ↓ + K⁺ ↓ + HTN = primary hyperaldosteronism (ต้นเหตุที่ adrenal gland) · cortisol วัดตอนเช้าเพราะเป็นเวลาที่สูงสุดตาม diurnal rhythm",
+      "items": [
+        { "id": "9.1", "prompt": "Which organ will the physician search for the cause of this patient condition?", "format": "short", "accepted": ["adrenal"],
+          "source_key": "Adrenal gland",
+          "explanation": "Aldosterone-producing adenoma หรือ bilateral adrenal hyperplasia ที่ zona glomerulosa ของต่อมหมวกไต" },
+        { "id": "9.2", "prompt": "What disease might the patient have?", "format": "short", "accepted": ["primary hyperaldosteronism", "primary aldosteronism", "conn"],
+          "source_key": "primary hyperaldosteronism",
+          "explanation": "Renin ต่ำ (ถูกกดจาก volume/Na⁺ ที่มากเกิน) ต่างจาก secondary hyperaldosteronism ที่ renin สูง" },
+        { "id": "9.3", "prompt": "Why physician ONLY uses morning cortisol?", "format": "short", "accepted": ["highest", "peak", "diurnal", "circadian"],
+          "key_text": "Morning is the time that is physiologically has highest cortisol level",
+          "source_key": "- morning = the time that is physiologically has highest cortisol level.\n(เฉลยแนบกราฟ normal diurnal rhythm ของ serum cortisol)",
+          "key_image": "img/END-47-KF-009-key.jpg",
+          "key_image_caption": "กราฟที่แนบในเฉลยต้นฉบับ: normal diurnal rhythm ของ serum cortisol — สูงสุดราว 8–9 am ต่ำสุดช่วงดึก",
+          "explanation": "Cortisol มี diurnal rhythm (peak ~6–9 am, ต่ำสุดเที่ยงคืน) การวัดตอนเช้าจึงมี sensitivity สูงสุดสำหรับดูว่า cortisol ต่ำผิดปกติหรือไม่ และช่วยเทียบกับค่าอ้างอิง ผู้ป่วยรายนี้ cortisol ปกติ จึงไม่ใช่ Cushing/ปัญหา cortisol" }
+      ]
+    },
+    {
+      "n": 10, "page": 6, "tags": ["levothyroxine", "thyroid hormone receptor"],
+      "case": "Regarding to thyroid hormone for treatment of hypothyroidism.",
+      "key_concept": "Levothyroxine (L-T4) = ยาเลือกใช้ → เข้าเซลล์ → ถูก 5'-deiodinase เปลี่ยนเป็น T3 → จับ thyroid receptor/RXR → ปลด corepressor → gene transcription",
+      "items": [
+        { "id": "10.1", "prompt": "What is preparation of choice?", "format": "short", "accepted": ["levothyroxine", "l-thyroxine", "l-t4", "thyroxine"],
+          "source_key": "levothyroxine",
+          "explanation": "Levothyroxine (synthetic L-T4) half-life ~7 วัน กินวันละครั้ง ร่างกายแปลงเป็น T3 เองตามต้องการ" },
+        { "id": "10.2", "prompt": "What is its mechanism of action?", "format": "short", "keywords_all": ["receptor", "transcription"],
+          "accepted": ["gene expression"],
+          "key_text": "Levothyroxine = L-isomer of T4 → uptake by peripheral cell → metabolized to T3 by 5'-deiodinase → binds to thyroid receptor. Normally the thyroid receptor is bound to RXR (retinoid X receptor) and corepressor, which results in no transcription of the suppressed gene → if T3 is present, the gene is no longer suppressed → gene transcription → effect of thyroid hormone",
+          "source_key": "• levothyroxine = L-isomer of T4 → uptake by peripheral cell → metabolized to T3 by 5'-deiodinase → binds to thyroid receptor\n• normally, thyroid receptor is bound to RXR (retinoid X receptors) and corepressor which results in no transcription of the suppressed gene → if T3 is present, the gene is no longer suppressed → gene transcription → ↑ effect of thyroid",
+          "explanation": "T3 จับ TR (heterodimer กับ RXR) ที่ thyroid response element แทนที่ corepressor ด้วย coactivator → transcription ของยีนที่ตอบสนองต่อ thyroid hormone" }
+      ]
+    },
+    {
+      "n": 11, "page": 6, "tags": ["dyslipidemia drugs", "Cushing's syndrome drugs"],
+      "case": "Fill the answer in the blank. (MOA/ADR → drug)",
+      "key_concept": "Niacin ยับยั้ง DGAT2 · PCSK9 mAb (evolocumab, alirocumab) · Mitotane ทำให้ adrenocortical cell necrosis · Dexamethasone กด ACTH (negative feedback)",
+      "items": [
+        { "id": "11.1", "prompt": "Inhibit DGAT2", "format": "short", "accepted": ["niacin", "nicotinic acid"], "source_key": "Niacin",
+          "explanation": "Niacin (nicotinic acid) ยับยั้ง DGAT2 ในตับ → ลดการสร้าง TG/VLDL; ADR: flushing" },
+        { "id": "11.2", "prompt": "Inhibit PCSK9–LDL receptor interaction", "format": "short", "accepted": ["evolocumab", "alirocumab"], "source_key": "evolocumab, alirocumab",
+          "explanation": "Monoclonal antibody ต่อ PCSK9 → LDL receptor ไม่ถูกย่อย → รีไซเคิลกลับผิวเซลล์ → LDL-C ลดลง" },
+        { "id": "11.3", "prompt": "Induce adrenocortical cell necrosis", "format": "short", "accepted": ["mitotane"], "source_key": "Mitotane",
+          "explanation": "Mitotane เป็น adrenolytic ใช้ใน adrenocortical carcinoma (และ Cushing)" },
+        { "id": "11.4", "prompt": "ACTH suppression", "format": "short", "accepted": ["dexamethasone", "prednisolone", "betamethasone", "glucocorticoid"], "source_key": "dexamethasone",
+          "explanation": "Dexamethasone (glucocorticoid potent) กด ACTH ผ่าน negative feedback ที่ pituitary/hypothalamus · ระบบนับ glucocorticoid ตัวอื่นด้วย" }
+      ]
+    },
+    {
+      "n": 12, "page": 7, "tags": ["Addison's disease", "primary adrenal insufficiency"],
+      "case": "A 45-year-old patient complained of unusual fatigue, weakness, frequent diarrhoea, nausea, vomiting, weight loss and dizziness. The examination revealed hyperpigmentation of multiple area of skin, low blood sugar, generalized muscle weakness and painful joints during palpation.",
+      "key_concept": "Primary adrenal insufficiency (Addison): cortisol ↓, aldosterone ↓, ACTH ↑ (→ hyperpigmentation), ACTH stimulation test ไม่ตอบสนอง",
+      "items": [
+        { "id": "12.1a", "prompt": "Serum cortisol", "format": "short", "accepted": ["low", "decrease", "ต่ำ", "ลด"], "source_key": "low",
+          "explanation": "ต่อมหมวกไตถูกทำลาย → cortisol ต่ำ" },
+        { "id": "12.1b", "prompt": "Plasma aldosterone", "format": "short", "accepted": ["low", "decrease", "ต่ำ", "ลด"], "source_key": "low",
+          "explanation": "Primary → ทั้ง zona fasciculata และ glomerulosa เสีย → aldosterone ต่ำ (ต่างจาก secondary ที่ aldosterone ปกติ)" },
+        { "id": "12.1c", "prompt": "Plasma ACTH", "format": "short", "accepted": ["high", "increase", "สูง", "เพิ่ม"],
+          "source_key": "high\n(โน้ตลายมือเหนือโจทย์: ACTH ↑ — ถ้าเป็น pituitary disease จะมี bilateral hemianopia ด้วย; ถอดไม่ครบ)",
+          "explanation": "Cortisol ต่ำ → ACTH สูง → hyperpigmentation · ถ้าเป็นโรคของ pituitary เอง ACTH จะต่ำ และมักมีอาการจากก้อนกดเช่น bitemporal hemianopia" },
+        { "id": "12.1d", "prompt": "ACTH stimulation test", "format": "short", "accepted": ["no resp", "non resp", "unresponsive", "not respon", "ไม่ตอบสนอง"],
+          "source_key": "No response.",
+          "explanation": "ต่อมหมวกไตเสียหายจริง จึง cortisol ไม่เพิ่มหลังฉีด ACTH · ใน secondary จะตอบสนอง (อย่างน้อยในการทดสอบหลายวัน)" },
+        { "id": "12.2", "prompt": "What is mostly diagnosis?", "format": "short", "accepted": ["primary adrenal", "addison", "primary hypoadrenalism"],
+          "source_key": "primary adrenal insufficiency",
+          "explanation": "Hyperpigmentation + ACTH สูง + aldosterone ต่ำ = Primary adrenal insufficiency (Addison's disease; ใน PSU มักเกิดจาก autoimmune/TB)" }
+      ]
+    },
+    {
+      "n": 13, "page": 7, "tags": ["thyroid", "follicular cell"],
+      "case": "Which of the following are THREE main functions of thyroid follicular cells? (Select 3 correct answers from the choices below)",
+      "key_concept": "Follicular cell: ดึง iodide เข้า (NIS), สร้าง thyroglobulin, endocytose iodinated thyroglobulin กลับเข้าเซลล์ · thyroxine ถูกสร้างใน colloid ไม่ใช่ในเซลล์ · calcitonin มาจาก parafollicular C cell",
+      "items": [
+        { "id": "13", "prompt": "เลือก 3 ข้อ", "format": "select", "max_answers": 3,
+          "options": [
+            { "key": "A", "text": "Transport TSH" },
+            { "key": "B", "text": "Take up iodide from blood circulation" },
+            { "key": "C", "text": "Synthesize thyroglobulin" },
+            { "key": "D", "text": "Control calcitonin level" },
+            { "key": "E", "text": "Modulation parathyroid hormone level" },
+            { "key": "F", "text": "Synthesize thyroxin" },
+            { "key": "G", "text": "Take up iodinated thyroglobulin" },
+            { "key": "H", "text": "Control enzyme producing calcitonin" }
+          ],
+          "answer": ["B", "C", "G"],
+          "source_key": "B, C, G (เฉลยขีดทับ B, C, G; หมายเหตุที่ F: \"→ colloid\")",
+          "explanation": "ข้อ F ผิดเพราะ thyroxine ถูกสังเคราะห์ใน colloid (บน thyroglobulin ด้วย TPO ที่ apical membrane) ไม่ใช่ในเซลล์เอง · D, H เกี่ยวกับ parafollicular cell · A, E ไม่ใช่หน้าที่ของ follicular cell" }
+      ]
+    }
+  ]
+}
