@@ -51,6 +51,14 @@ window.MedLibQuizUI = function (ML) {
 
   /* ---------- small renderers ---------- */
   const lecName = (b, id) => { const l = b.lectures.find((x) => x.id === id); return l ? `${id} ${l.title}` : id; };
+  // Display number of a question = its position in its own set (1, 2, 3 …). The original paper number (q.n)
+  // stays in the data (ids, refs) but is not shown: recalled papers skip numbers nobody remembered.
+  function qPos(q) {
+    const b = q && ML.APP.blocks.find((x) => x.id === q.block);
+    const s = b && ML.findSet(b, q._set);
+    const i = s ? s.questions.indexOf(q) : -1;
+    return i >= 0 ? i + 1 : q.n;
+  }
   const pgTxt = (p) => (!p || !p.length ? "" : p.length > 1 && p[p.length - 1] - p[0] === p.length - 1 ? `หน้า ${p[0]}–${p[p.length - 1]}` : `หน้า ${p.join(", ")}`);
   const pdfHref = (b, id, page) => (b.lectures.some((l) => l.id === id) ? `#/lec/${enc(b.id)}/${enc(id)}/${page || 1}` : `#/pdf/${enc(b.id)}/${enc(id)}/${page || 1}`);
 
@@ -96,7 +104,7 @@ window.MedLibQuizUI = function (ML) {
     return `<div class="refs">${q.refs.map((r) => {
       if (r.paper) {
         const d = ML.docOf(b, r.paper);
-        return `<div class="ref"><span class="hint">ต้นฉบับ:</span><a href="${pdfHref(b, r.paper, r.pages[0])}">${d && d.role === "key" ? "PDF เฉลย" : "PDF ข้อสอบ"} ${pgTxt(r.pages)}</a></div>`;
+        return `<div class="ref"><span class="hint">ต้นฉบับ:</span><a href="${pdfHref(b, r.paper, r.pages[0])}" data-pdfpop="${esc(b.id)}|${esc(r.paper)}|${r.pages[0] || 1}">${d && d.role === "key" ? "PDF เฉลย" : "PDF ข้อสอบ"} ${pgTxt(r.pages)}</a></div>`;
       }
       const hot = r.hotspot ? (r.hotspot.years.length >= 2 ? `<span class="hot">ออกซ้ำ ${r.hotspot.years.length} ปี</span>` : r.hotspot.years.length ? `<span class="tier">เคยออกปี ${r.hotspot.years.join(", ")}</span>` : "") + `<span class="tier">Tier ${r.hotspot.tier}</span>` : "";
       return `<div class="ref"><span class="hint">อ่านเพิ่ม:</span><a href="${pdfHref(b, r.lecture, r.pages[0])}">${esc(lecName(b, r.lecture))} ${pgTxt(r.pages)}</a>${hot}${r.focus ? `<span class="hint">${esc(r.focus)}</span>` : ""}</div>`;
@@ -160,7 +168,7 @@ window.MedLibQuizUI = function (ML) {
       return h;
     }
     const lead = q.type === "KF" ? `<div class="case"><div class="lbl">สถานการณ์</div>${txt(q.case || q.stem)}</div>`
-      : `<div class="case"><div class="lbl">สถานี ${esc(q.station || q.n)}</div>${txt(q.stem || "")}</div>`;
+      : `<div class="case"><div class="lbl">สถานี${q.station ? " " + esc(q.station) : ""}</div>${txt(q.stem || "")}</div>`;
     const A = r.ans[q.id] || {}, ov = (r.ov && r.ov[q.id]) || {};
     let h = lead + figureHTML(b, q);
     (q.items || []).forEach((it, n) => {
@@ -202,8 +210,8 @@ window.MedLibQuizUI = function (ML) {
     const B = base(b, s);
     const papers = s.mix ? [] : b.papers.filter((p) => p.cohort === s.cohort && p.type === s.type);
     const tabs = [["", "ทำข้อสอบ"], ["guide", "Guidereader"], ["sum", "สรุปผล"], ["hist", "ประวัติ"]];
-    return `<div class="crumbs"><a href="#/">ทั้งหมด</a><span>/</span><a href="#/b/${enc(b.id)}">${esc(b.name)}</a><span>/</span><span>${s.mix ? "ชุดฝึกข้ามชุด" : `รุ่น ${s.cohort} · ${esc(s.type)}`}</span></div>
-      <div class="sethead"><div><h2>${esc(s.title)}</h2><p class="hint">${s.questions.length} ข้อ${s.meta.time_limit_min && !s.mix ? ` · เวลาสอบจริง ${s.meta.time_limit_min} นาที` : ""}${papers.length ? " · " + papers.map((p) => `<a href="#/pdf/${enc(b.id)}/${enc(p.id)}/1">${p.role === "key" ? "PDF เฉลย" : "PDF ข้อสอบ"}</a>`).join(" · ") : ""}</p></div></div>
+    return `<div class="crumbs"><a href="#/">ทั้งหมด</a><span>/</span><a href="#/b/${enc(b.id)}">${esc(b.name)}</a><span>/</span><span>${s.mix ? "ชุดฝึกข้ามชุด" : `ชุด ${s.cohort} · ${esc(s.type)}`}</span></div>
+      <div class="sethead"><div><h2>${esc(s.title)}</h2><p class="hint">${s.questions.length} ข้อ${s.meta.time_limit_min && !s.mix ? ` · เวลาสอบจริง ${s.meta.time_limit_min} นาที` : ""}${papers.length ? " · " + papers.map((p) => `<a href="#/pdf/${enc(b.id)}/${enc(p.id)}/1" data-pdfpop="${esc(b.id)}|${esc(p.id)}|1">${p.role === "key" ? "PDF เฉลย" : "PDF ข้อสอบ"}</a>`).join(" · ") : ""}</p></div></div>
       <nav class="tabs">${tabs.map(([k, l]) => `<a class="tab ${tab === k ? "on" : ""}" href="${B}${k ? "/" + k : ""}">${l}</a>`).join("")}</nav>`;
   }
 
@@ -268,7 +276,7 @@ window.MedLibQuizUI = function (ML) {
     const strip = vis.map((x) => {
       const ss = C.status(x, r, kov()), graded = ss === "ok" || ss === "wrong" || ss === "partial", fl = marks().flag[x.id];
       const cls = ["qc", graded ? ss : fl ? "flag" : ss === "answered" ? "answered" : "", graded && fl ? "flag-ring" : "", x === q ? "cur" : ""].join(" ");
-      return `<button class="${cls}" data-go="${at(x)}" title="ข้อ ${esc(x.n)}">${esc(x.n)}</button>`;
+      return `<button class="${cls}" data-go="${at(x)}" title="ข้อ ${at(x)}">${at(x)}</button>`;
     }).join("") || `<span class="hint">ไม่มีข้อที่ตรงกับตัวกรอง</span>`;
     const lecs = [...new Set(s.questions.flatMap((x) => (x.refs || []).filter((y) => y.lecture).map((y) => y.lecture)))].sort();
     const sel = (v, l, cur) => `<option value="${esc(v)}" ${cur === v ? "selected" : ""}>${esc(l)}</option>`;
@@ -285,7 +293,7 @@ window.MedLibQuizUI = function (ML) {
         <select data-zf="filter" aria-label="กรองตามสถานะ">${sel("all", "ทุกข้อ", r.filter || "all")}${sel("blank", "ยังไม่ได้ทำ", r.filter)}${sel("wrong", "เฉพาะข้อที่ผิด", r.filter)}${sel("flag", "เฉพาะข้อที่ปักธง", r.filter)}</select>
         <span class="timer" id="ztimer">${timerTxt()}</span></div>
       <article class="qcard">
-        <div class="qhead"><div class="qnum">ข้อ ${esc(q.n)} <small>${esc(q.type)}${s.mix ? ` · รุ่น ${q.cohort}` : ""} · ${i + 1}/${r.qids.length}</small></div>
+        <div class="qhead"><div class="qnum">ข้อ ${i + 1} <small>/ ${r.qids.length} · ${esc(q.type)}${s.mix ? ` · ชุด ${q.cohort}` : ""}</small></div>
           <button class="flagbtn" data-z="flag" aria-pressed="${!!marks().flag[q.id]}">${marks().flag[q.id] ? "ปักธงไว้ทบทวนแล้ว" : "ปักธงไว้ทบทวน"}</button></div>
         ${questionHTML(b, q, r, reveal, instant)}
         ${noteHTML(q)}
@@ -330,6 +338,7 @@ window.MedLibQuizUI = function (ML) {
     const flagged = qs.filter((q) => marks().flag[q.id]);
     const unsure = qs.filter((q) => q.answer_status !== "verified");
     const jump = (q) => (r.done ? `#/q/${enc(q.id)}` : `${B}/run/${r.qids.indexOf(q.id) + 1}`);
+    const no = (q) => r.qids.indexOf(q.id) + 1;
     const by = {};
     qs.filter((q) => r.chk[q.id]).forEach((q) => {
       const ls = [...new Set((q.refs || []).filter((x) => x.lecture).map((x) => x.lecture))];
@@ -338,15 +347,15 @@ window.MedLibQuizUI = function (ML) {
     h += `<div class="scorebox"><div class="big">${st.score} / ${st.checked}</div><div><b>${st.pct}%</b> · ${MODE_TH[r.mode]} · ${KIND_TH[r.kind] || ""}${r.mode !== "practice" || r.elapsed ? ` · ใช้เวลา ${mmss(r.elapsed)}` : ""}<div class="hint">${new Date(r.started).toLocaleString("th-TH", { dateStyle: "medium", timeStyle: "short" })}${blank.length ? ` · ยังไม่ได้ทำ ${blank.length} ข้อ` : ""}${r.done ? "" : " · รอบนี้ยังไม่จบ"}</div></div></div>`;
     if (!r.done) h += `<div class="btns"><a class="btn primary" href="${B}/run/${(r.idx || 0) + 1}">กลับไปทำต่อ</a></div>`;
     if (wrong.length && r.done) {
-      h += `<h3>ข้อที่ผิด (${wrong.length}) · เลือกข้อที่จะทำซ้ำ</h3><div class="pickwrong">${wrong.map((q) => `<label class="chk"><input type="checkbox" data-wrongpick="${esc(q.id)}" checked> <a href="${jump(q)}">ข้อ ${esc(q.n)}</a> <span class="hint">${esc(String(q.stem || q.case || "").slice(0, 70))}…</span></label>`).join("")}</div>
+      h += `<h3>ข้อที่ผิด (${wrong.length}) · เลือกข้อที่จะทำซ้ำ</h3><div class="pickwrong">${wrong.map((q) => `<label class="chk"><input type="checkbox" data-wrongpick="${esc(q.id)}" checked> <a href="${jump(q)}">ข้อ ${no(q)}</a> <span class="hint">${esc(String(q.stem || q.case || "").slice(0, 70))}…</span></label>`).join("")}</div>
         <div class="btns"><button class="btn primary" data-z="retry" data-r="${r.id}">ทำข้อที่เลือกซ้ำเป็นรอบใหม่</button><a class="btn" href="${B}">ทำทั้งชุดอีกครั้ง</a></div>`;
     } else if (r.done) h += `<div class="btns"><span class="badge good">ไม่มีข้อที่ผิด</span><a class="btn" href="${B}">ทำทั้งชุดอีกครั้ง</a></div>`;
     const keys = Object.keys(by).sort((x, y) => by[x].s / by[x].n - by[y].s / by[y].n);
-    if (keys.length) h += `<h3>คะแนนราย Lecture (อ่อนสุดอยู่บน)</h3><div class="tablewrap"><table><thead><tr><th>Lecture</th><th>คะแนน</th><th>ข้อที่ควรทบทวน</th></tr></thead><tbody>${keys.map((l) => `<tr><td>${esc(lecName(b, l))}</td><td>${Math.round(by[l].s * 10) / 10}/${by[l].n}</td><td>${by[l].ids.map((q) => `<a class="jump" href="${jump(q)}">ข้อ ${esc(q.n)}</a>`).join("")}</td></tr>`).join("")}</tbody></table></div>`;
+    if (keys.length) h += `<h3>คะแนนราย Lecture (อ่อนสุดอยู่บน)</h3><div class="tablewrap"><table><thead><tr><th>Lecture</th><th>คะแนน</th><th>ข้อที่ควรทบทวน</th></tr></thead><tbody>${keys.map((l) => `<tr><td>${esc(lecName(b, l))}</td><td>${Math.round(by[l].s * 10) / 10}/${by[l].n}</td><td>${by[l].ids.map((q) => `<a class="jump" href="${jump(q)}">ข้อ ${no(q)}</a>`).join("")}</td></tr>`).join("")}</tbody></table></div>`;
     const reread = rereadHTML(b, wrong);
     if (reread) h += `<h3>อ่านซ่อมจากข้อที่ผิด</h3>${reread}`;
-    if (flagged.length) h += `<h3>ปักธงไว้ทบทวน (${flagged.length})</h3><p>${flagged.map((q) => `<a class="jump" href="${jump(q)}">ข้อ ${esc(q.n)}</a>`).join("")}</p>`;
-    if (unsure.length) h += `<h3>เฉลยยังไม่ยืนยัน / แก้จากต้นฉบับ (${unsure.length})</h3><p class="hint">อ่านเหตุผลในกล่องคำอธิบาย ถ้าไม่เห็นด้วยกด "แจ้งเฉลยน่าสงสัย"</p><p>${unsure.map((q) => `<a class="jump" href="${jump(q)}">ข้อ ${esc(q.n)}</a>`).join("")}</p>`;
+    if (flagged.length) h += `<h3>ปักธงไว้ทบทวน (${flagged.length})</h3><p>${flagged.map((q) => `<a class="jump" href="${jump(q)}">ข้อ ${no(q)}</a>`).join("")}</p>`;
+    if (unsure.length) h += `<h3>เฉลยยังไม่ยืนยัน / แก้จากต้นฉบับ (${unsure.length})</h3><p class="hint">อ่านเหตุผลในกล่องคำอธิบาย ถ้าไม่เห็นด้วยกด "แจ้งเฉลยน่าสงสัย"</p><p>${unsure.map((q) => `<a class="jump" href="${jump(q)}">ข้อ ${no(q)}</a>`).join("")}</p>`;
     ML.main.innerHTML = h + notepadHTML(b, s);
   }
   function rereadHTML(b, qs) {
@@ -358,7 +367,7 @@ window.MedLibQuizUI = function (ML) {
     }));
     const list = Object.values(g).sort((x, y) => x.tier - y.tier || y.qs.length - x.qs.length);
     if (!list.length) return "";
-    return `<div class="lcard">${list.map((t) => `<div class="topic"><div class="pg"><a href="${pdfHref(b, t.lec, t.pages[0])}">${pgTxt(t.pages)}</a><span class="td t${t.tier}"></span></div><div><div class="hd">${esc(lecName(b, t.lec))}${t.focus ? ": " + esc(t.focus) : ""}</div><div class="hint">ข้อที่ผิด: ${t.qs.map((q) => `ข้อ ${esc(q.n)}${q.cohort && t.qs.some((x) => x.cohort !== q.cohort) ? ` (${q.cohort})` : ""}`).join(", ")}</div></div></div>`).join("")}</div>`;
+    return `<div class="lcard">${list.map((t) => `<div class="topic"><div class="pg"><a href="${pdfHref(b, t.lec, t.pages[0])}">${pgTxt(t.pages)}</a><span class="td t${t.tier}"></span></div><div><div class="hd">${esc(lecName(b, t.lec))}${t.focus ? ": " + esc(t.focus) : ""}</div><div class="hint">ข้อที่ผิด: ${t.qs.map((q) => `ข้อ ${qPos(q)}${q.cohort && t.qs.some((x) => x.cohort !== q.cohort) ? ` (ชุด ${q.cohort})` : ""}`).join(", ")}</div></div></div>`).join("")}</div>`;
   }
 
   /* ---------- history + graph ---------- */
@@ -418,7 +427,7 @@ window.MedLibQuizUI = function (ML) {
       <div class="ref">${t.years && t.years.length >= 2 ? `<span class="hot">ออกซ้ำ ${t.years.length} ปี</span>` : t.years && t.years.length ? `<span class="tier">ออกปี ${t.years.join(", ")}</span>` : ""}<span class="tier">Tier ${t.tier} ${TIER_TXT[t.tier]}</span></div>
       ${ids.length ? `<div class="hint">ข้อ: ${ids.map((id) => `<a class="jump" href="${linkQ(id)}">${esc(qLabel(b, id))}</a>`).join("")}</div>` : ""}</div></div>`;
   }
-  function qLabel(b, id) { const q = ML.examsOf(b).find((x) => x.id === id); return q ? `${q.cohort}·${q.n}` : id; }
+  function qLabel(b, id) { const q = ML.examsOf(b).find((x) => x.id === id); return q ? `ชุด ${q.cohort}·ข้อ ${qPos(q)}` : id; }
   function guideLectures(b, topics) {
     const by = {};
     topics.forEach((t) => (by[t.lecture] = by[t.lecture] || []).push(t));
@@ -464,7 +473,7 @@ window.MedLibQuizUI = function (ML) {
     const t1pages = topics.filter((t) => t.tier === 1).reduce((a, t) => a + t.pages[1] - t.pages[0] + 1, 0);
     const t1q = new Set(topics.filter((t) => t.tier === 1).flatMap((t) => t.own));
     const cohorts = [...new Set(qs.map((q) => q.cohort))].sort();
-    let h = `<p class="lead">หน้า lecture ที่ข้อสอบรุ่น ${cohorts.join(", ")} อ้างถึง เรียงจาก Lecture ที่ออกมากสุด · กดเลขหน้าเพื่อเปิดอ่านตรงหน้านั้น</p>`;
+    let h = `<p class="lead">หน้า lecture ที่ข้อสอบชุด ${cohorts.join(", ")} อ้างถึง เรียงจาก Lecture ที่ออกมากสุด · กดเลขหน้าเพื่อเปิดอ่านตรงหน้านั้น</p>`;
     if (!withLec.length) return h + `<div class="empty">ข้อสอบในบล็อกนี้ยังไม่ได้โยงกับหน้า lecture แผนอ่านจะขึ้นเมื่อมี lecture และ Auditor ใส่หน้าอ้างอิงแล้ว</div>`;
     h += `<div class="statrow"><div><b>${t1pages}</b><span>หน้า Tier 1</span></div><div><b>${withLec.length ? Math.round((t1q.size / withLec.length) * 100) : 0}%</b><span>ของข้อที่โยง lecture ได้ อยู่ในหน้า Tier 1</span></div><div><b>${topics.length}</b><span>หัวข้อทั้งหมด</span></div></div>`;
     h += `<div class="toolbar">${tierLegend}<label>แสดง <select data-zplan="1"><option value="1" ${tierF === 1 ? "selected" : ""}>Tier 1 อย่างเดียว</option><option value="2" ${tierF === 2 ? "selected" : ""}>Tier 1–2</option><option value="3" ${tierF === 3 ? "selected" : ""}>ทุก Tier</option></select></label></div>`;
@@ -475,8 +484,15 @@ window.MedLibQuizUI = function (ML) {
     return h;
   }
 
-  /* ---------- block exam page: weak spots, quick random, cohort | lecture cards ---------- */
-  let examTab = "cohort";
+  /* ---------- block exam page: weak spots, quick random, MCQ | KF | OSPE | Lecture tabs ---------- */
+  const TYPE_ORDER = ["MCQ", "KF", "OSPE"];
+  const examTab = { block: null, tab: "MCQ" };   // a block page opens on MCQ; the choice is kept while you stay in that block
+  function tabOf(b, types, hasLec) {
+    if (examTab.block !== b.id) { examTab.block = b.id; examTab.tab = types[0] || (hasLec ? "lec" : "MCQ"); }
+    if (examTab.tab !== "lec" && !types.includes(examTab.tab)) examTab.tab = types[0] || "lec";
+    if (examTab.tab === "lec" && !hasLec) examTab.tab = types[0];
+    return examTab.tab;
+  }
   function examTabHTML(b) {
     const qs = ML.examsOf(b), res = blockResults(b);
     const lecCount = {};
@@ -485,13 +501,14 @@ window.MedLibQuizUI = function (ML) {
     const wrongN = qs.filter((q) => q.id in res && res[q.id] < 0.999).length;
     const flagN = qs.filter((q) => marks().flag[q.id]).length;
     const mixes = Object.entries(P().mixes).filter(([, m]) => m.block === b.id);
-    const cohorts = [...new Set([...b.sets.map((s) => s.cohort), ...b.papers.map((p) => p.cohort)])].sort((x, y) => y - x);
-    if (!cohorts.length) return `<div class="empty">ยังไม่มีข้อสอบในบล็อกนี้</div>`;
-    const tab = lecs.length ? examTab : "cohort";
+    const types = TYPE_ORDER.filter((t) => b.sets.some((s) => s.type === t) || b.papers.some((p) => p.type === t));
+    if (!types.length) return `<div class="empty">ยังไม่มีข้อสอบในบล็อกนี้</div>`;
+    const tab = tabOf(b, types, lecs.length > 0);
+    const pool = tab === "lec" ? qs : qs.filter((q) => q.type === tab);
     let h = "";
     if (wrongN + flagN) h += `<button class="weakbar" data-z="mixweak"><span><b>ทบทวนจุดอ่อน</b><small>ผิดล่าสุด ${wrongN} ข้อ · ปักธง ${flagN} ข้อ</small></span><i aria-hidden="true">→</i></button>`;
-    if (qs.length) h += `<div class="quickrow"><button class="btn primary" data-z="mixrand">สุ่ม ${Math.min(30, qs.length)} ข้อจากทั้งบล็อก</button></div>`;
-    if (lecs.length) h += `<nav class="tabs etabs">${[["cohort", "รุ่น"], ["lec", "Lecture"]].map(([k, l]) => `<button class="tab ${tab === k ? "on" : ""}" data-z="etab" data-t="${k}">${l}</button>`).join("")}</nav>`;
+    h += `<nav class="tabs etabs">${[...types.map((t) => [t, t]), ...(lecs.length ? [["lec", "Lecture"]] : [])].map(([k, l]) => `<button class="tab ${tab === k ? "on" : ""}" data-z="etab" data-t="${k}">${l}</button>`).join("")}</nav>`;
+    if (pool.length) h += `<div class="quickrow"><button class="btn primary" data-z="mixrand" data-t="${tab}">สุ่ม ${Math.min(30, pool.length)} ข้อ${tab === "lec" ? "จากทั้งบล็อก" : ` ${tab} จากทุกชุด`}</button></div>`;
     const card = (attrs, title, n, pct, prog) => `<${attrs.startsWith("href") ? "a" : "button"} class="pcard" ${attrs}><span class="ptop"><b>${title}</b><span class="n">${n} ข้อ</span></span>${prog ? `<span class="sbar"><i style="width:${pct}%"></i></span><span class="prog">${prog}</span>` : ""}</${attrs.startsWith("href") ? "a" : "button"}>`;
     if (tab === "lec") {
       h += `<div class="pgrid">${lecs.map((l) => {
@@ -500,19 +517,16 @@ window.MedLibQuizUI = function (ML) {
         return card(`data-z="mixlec" data-l="${esc(l)}"`, esc(lecName(b, l).slice(0, 60)), lq.length, Math.round((done / lq.length) * 100), done ? `ทำแล้ว ${done}/${lq.length} · ถูก ${ok}` : "");
       }).join("")}</div>`;
     } else {
+      const cohorts = [...new Set([...b.sets.filter((s) => s.type === tab).map((s) => s.cohort), ...b.papers.filter((p) => p.type === tab).map((p) => p.cohort)])].sort((x, y) => y - x);
       h += `<div class="pgrid">${cohorts.map((c) => {
-        const sets = b.sets.filter((s) => s.cohort === c);
-        const types = [...new Set([...sets.map((s) => s.type), ...b.papers.filter((p) => p.cohort === c).map((p) => p.type)])].sort((x, y) => ["MCQ", "KF", "OSPE"].indexOf(x) - ["MCQ", "KF", "OSPE"].indexOf(y));
-        return types.map((t) => {
-          const s = sets.find((x) => x.type === t);
-          if (!s) {
-            const pdfs = b.papers.filter((p) => p.cohort === c && p.type === t).map((p) => `<a class="pdflink" href="#/pdf/${enc(b.id)}/${enc(p.id)}/1">${p.role === "key" ? "PDF เฉลย" : "PDF ข้อสอบ"}</a>`).join("");
-            return `<div class="pcard off"><span class="ptop"><b>รุ่น ${c} · ${esc(t)}</b></span><span class="prog">ยังไม่มีแบบออนไลน์</span>${pdfs ? `<span class="pdfs">${pdfs}</span>` : ""}</div>`;
-          }
-          const pr = setProgress(b, s), act = activeRound(b, s), pct = pr.total ? Math.round((pr.done / pr.total) * 100) : 0;
-          const prog = act ? `ทำต่อ · ข้อ ${(act.idx || 0) + 1}` : pr.done ? `ทำแล้ว ${pr.done}/${pr.total} · ถูก ${pr.ok}` : "";
-          return card(act ? `href="${base(b, s)}/run/${(act.idx || 0) + 1}"` : `data-z="qstart" data-s="${esc(s.id)}"`, `รุ่น ${c} · ${esc(t)}`, s.questions.length, pct, prog);
-        }).join("");
+        const s = b.sets.find((x) => x.cohort === c && x.type === tab);
+        if (!s) {
+          const pdfs = b.papers.filter((p) => p.cohort === c && p.type === tab).map((p) => `<a class="pdflink" href="#/pdf/${enc(b.id)}/${enc(p.id)}/1" data-pdfpop="${esc(b.id)}|${esc(p.id)}|1">${p.role === "key" ? "PDF เฉลย" : "PDF ข้อสอบ"}</a>`).join("");
+          return `<div class="pcard off"><span class="ptop"><b>ชุด ${c} · ${esc(tab)}</b></span><span class="prog">ยังไม่มีแบบออนไลน์</span>${pdfs ? `<span class="pdfs">${pdfs}</span>` : ""}</div>`;
+        }
+        const pr = setProgress(b, s), act = activeRound(b, s), pct = pr.total ? Math.round((pr.done / pr.total) * 100) : 0;
+        const prog = act ? `ทำต่อ · ข้อ ${(act.idx || 0) + 1}` : pr.done ? `ทำแล้ว ${pr.done}/${pr.total} · ถูก ${pr.ok}` : "";
+        return card(act ? `href="${base(b, s)}/run/${(act.idx || 0) + 1}"` : `data-z="qstart" data-s="${esc(s.id)}"`, `ชุด ${c} · ${esc(tab)}`, s.questions.length, pct, prog);
       }).join("")}</div>`;
     }
     if (mixes.length) h += `<div class="mixlist"><span class="hint">ชุดที่สร้างไว้:</span>${mixes.map(([id, m]) => `<span class="mixitem"><a href="#/set/${enc(b.id)}/@${enc(id)}">${esc(m.title)} (${m.qids.length})</a><button class="linkbtn" data-z="delmix" data-m="${esc(id)}" title="ลบชุดนี้">✕</button></span>`).join("")}</div>`;
@@ -540,8 +554,8 @@ window.MedLibQuizUI = function (ML) {
   function viewSingle(b, q) {
     const s = ML.findSet(b, q._set);
     const r = single[q.id] = single[q.id] || { qids: [q.id], ans: {}, chk: {}, ov: {}, choiceOrder: {} };
-    ML.main.innerHTML = `<div class="crumbs"><a href="#/">ทั้งหมด</a><span>/</span><a href="#/b/${enc(b.id)}">${esc(b.name)}</a><span>/</span>${s ? `<a href="${base(b, s)}">รุ่น ${q.cohort} · ${esc(s.type)}</a><span>/</span>` : ""}<span>ข้อ ${esc(q.n)}</span></div>
-      <article class="qcard single"><div class="qhead"><div class="qnum">ข้อ ${esc(q.n)} <small>${esc(q.type)} · รุ่น ${q.cohort}</small></div>
+    ML.main.innerHTML = `<div class="crumbs"><a href="#/">ทั้งหมด</a><span>/</span><a href="#/b/${enc(b.id)}">${esc(b.name)}</a><span>/</span>${s ? `<a href="${base(b, s)}">ชุด ${q.cohort} · ${esc(s.type)}</a><span>/</span>` : ""}<span>ข้อ ${qPos(q)}</span></div>
+      <article class="qcard single"><div class="qhead"><div class="qnum">ข้อ ${qPos(q)} <small>${esc(q.type)} · ชุด ${q.cohort}</small></div>
         <button class="flagbtn" data-z="flag" data-q="${esc(q.id)}" aria-pressed="${!!marks().flag[q.id]}">${marks().flag[q.id] ? "ปักธงไว้ทบทวนแล้ว" : "ปักธงไว้ทบทวน"}</button></div>
         ${questionHTML(b, q, r, !!r.chk[q.id], true)}${noteHTML(q)}
         ${r.chk[q.id] ? `<div class="btns"><button class="btn" data-z="singleredo">ลองใหม่</button></div>` : ""}</article>`;
@@ -623,7 +637,7 @@ window.MedLibQuizUI = function (ML) {
     }
     if (z === "clearhist") { if (!ML.armed(t)) return true; P().rounds[keyOfSet(c.b, c.s)] = []; save(); rerender(); return true; }
     if (z === "pad") { padOpen = !padOpen; rerender(); return true; }
-    if (z === "etab") { examTab = t.dataset.t; rerender(); return true; }
+    if (z === "etab") { examTab.tab = t.dataset.t; rerender(); return true; }
     if (z === "qstart") {
       const s = ML.findSet(c.b, t.dataset.s); if (!s) return true;
       const pref = P().prefs || {};
@@ -632,11 +646,12 @@ window.MedLibQuizUI = function (ML) {
     if (z === "mixlec") {
       const l = t.dataset.l, qs = ML.examsOf(c.b).filter((x) => (x.refs || []).some((y) => y.lecture === l));
       qs.sort((x, y) => (x.refs.find((r) => r.lecture === l).pages[0] - y.refs.find((r) => r.lecture === l).pages[0]) || y.cohort - x.cohort);
-      makeMix(c.b, `${lecName(c.b, l)} · ทุกรุ่น`, qs.map((x) => x.id)); return true;
+      makeMix(c.b, `${lecName(c.b, l)} · ทุกชุด`, qs.map((x) => x.id)); return true;
     }
     if (z === "mixrand") {
-      const n = 30, pool = ML.examsOf(c.b);
-      makeMix(c.b, `สุ่ม ${Math.min(n, pool.length)} ข้อ · ${new Date().toLocaleDateString("th-TH", { day: "numeric", month: "short" })}`, C.shuffle(pool).slice(0, n).map((x) => x.id)); return true;
+      const ty = TYPE_ORDER.includes(t.dataset.t) ? t.dataset.t : "";
+      const n = 30, pool = ML.examsOf(c.b).filter((x) => !ty || x.type === ty);
+      makeMix(c.b, `สุ่ม ${Math.min(n, pool.length)} ข้อ${ty ? " " + ty : ""} · ${new Date().toLocaleDateString("th-TH", { day: "numeric", month: "short" })}`, C.shuffle(pool).slice(0, n).map((x) => x.id)); return true;
     }
     if (z === "mixweak") {
       const res = blockResults(c.b);
@@ -704,5 +719,5 @@ window.MedLibQuizUI = function (ML) {
     return false;
   }
 
-  return { view, viewSingle, examTabHTML, planHTML, onClick, onChange, onInput, onKey, stop, blockResults };
+  return { qPos, view, viewSingle, examTabHTML, planHTML, onClick, onChange, onInput, onKey, stop, blockResults };
 };

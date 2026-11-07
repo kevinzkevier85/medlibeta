@@ -491,3 +491,22 @@ pre { background: var(--surface); border: 1px solid var(--line); border-radius: 
   .lecpad { padding: 12px 14px 60px; }
   .pdfsearch input { width: 120px; }
 }
+
+/* PDF pop-up over the question (exam / answer-key paper) */
+body.noscroll { overflow: hidden; }
+.pdfpop { position: fixed; inset: 0; z-index: 60; background: rgba(0, 0, 0, .55); display: flex; align-items: center; justify-content: center; padding: 24px; }
+.popbox { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r-lg); width: min(900px, 100%); height: min(92vh, 100%); display: flex; flex-direction: column; overflow: hidden; box-shadow: var(--shadow); }
+.popbar { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; padding: 10px 12px; border-bottom: 1px solid var(--line); }
+.poptitle { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: .95rem; }
+.popnav, .popzoom { display: inline-flex; align-items: center; gap: 6px; }
+.popclose { font-size: 1rem; }
+.popstage { flex: 1; overflow: auto; padding: 8px; display: flex; flex-direction: column; align-items: center; background: var(--paper); }
+.popstage canvas { max-width: none; box-shadow: var(--shadow); background: #fff; }
+.popstage .drivepreview { width: 100%; flex: 1; min-height: 70vh; border: 0; }
+.pdfpop.iframe .popnav, .pdfpop.iframe .popzoom { display: none; }
+.popnote { margin: 4px 0 8px; }
+@media (max-width: 760px) {
+  .pdfpop { padding: 0; }
+  .popbox { width: 100%; height: 100%; border-radius: 0; border: 0; padding-top: env(safe-area-inset-top, 0px); }
+  .poptitle { flex-basis: 100%; order: -1; }
+}
