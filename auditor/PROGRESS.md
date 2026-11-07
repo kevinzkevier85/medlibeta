@@ -49,7 +49,8 @@ node auditor/tools/check_site.mjs END 52                     # QA ในเว�
 - เฉลยรุ่น 52 เป็น PDF มี text layer แต่ไฮไลต์ฝังในภาพหน้า → `parse_key.py` วัดพิกเซลสีชมพู; เฉลยรุ่นเก่า (30–108 MB) น่าจะเป็นภาพสแกน ต้องใช้ OCR/vision
 - text layer ภาษาไทยของไฟล์นี้ทำวรรณยุกต์หาย ("เปน") → โน้ตต้นฉบับเก็บไว้ใน `audit.source_answer_note` เท่านั้น คำอธิบายเขียนใหม่
 - ข้อที่มีแค่ "–" ไม่มีข้อมูล → skipped (เก็บใน work file) รอ Phase 4 เติมจากข้อซ้ำรุ่นอื่น
-- ยังไม่ได้ทำ `tools/run.py` (§7) กับ `crop_images.py` (ชุดนี้ไม่มีรูป)
+- ยังไม่ได้ทำ `tools/run.py` (§7)
+- รูปในข้อ: `data/images.json` (คู่ข้อ ↔ หน้า + กรอบ ตรวจด้วยตาทุกรูป) → `crop_images.py` → `data/blocks/<B>/img/<id>.jpg`; build_work ล้มถ้าโจทย์อ้างถึงรูปแต่ไม่มีรูป (ยกเว้นใน `no_image`)
 
 ## Last session
 2026-11-07: pilot end_52_MCQ ครบทุก phase · MedLib v0.4.0: export ใช้ `papers` (ไม่ใช่ lectures) + `time_limit_min`; เว็บแสดงเป็นชุดแบบ CVS
