@@ -999,7 +999,7 @@
     ]);
     APP.version = ver;
     APP.config = Object.assign({}, site, Object.fromEntries(Object.entries(cfg).filter(([, v]) => v)));
-    APP.defaults = { settings: Object.assign({ defaultTab: "exam", showDrafts: true, fontSize: "normal", hiddenBlocks: [], showSample: true, theme: "auto" }, defs.settings) };
+    APP.defaults = { settings: Object.assign({ defaultTab: "exam", showDrafts: true, fontSize: "normal", hiddenBlocks: [], showSample: false, theme: "auto" }, defs.settings) };
     applyTheme();
     document.documentElement.classList.toggle("bigtext", S().fontSize === "large");
     await loadBlocks("data/blocks", false);
