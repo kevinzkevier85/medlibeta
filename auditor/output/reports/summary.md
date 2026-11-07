@@ -2,6 +2,7 @@
 
 | set_id | ข้อ | agree | disagree | drafted | unverified | ai_gen | skipped | needs_review |
 |---|---|---|---|---|---|---|---|---|
+| gi_47_MCQ | 99 | 82 | 12 | 0 | 0 | 5 | 0 | 14 |
 | gi_48_MCQ | 75 | 58 | 11 | 2 | 0 | 4 | 0 | 12 |
 | gi_49_MCQ | 65 | 52 | 5 | 1 | 0 | 6 | 1 | 7 |
 | gi_50_MCQ | 101 | 51 | 6 | 4 | 0 | 17 | 23 | 11 |

@@ -69,8 +69,10 @@ AI ตอบตรงกับเฉลยต้นฉบับ **58/75** ข้
 
 ## กลุ่มข้อที่ถามเรื่องเดียวกันในชุดนี้
 
+- `gi-gastrin-pernicious`: ข้อ 18
 - `gi-alcoholic-lft`: ข้อ 31, 34
 - `gi-unconjugated-urine`: ข้อ 32
 - `gi-hydatid`: ข้อ 51, 74
+- `gi-listeria-transplacental`: ข้อ 52
 - `gi-ehec-hus`: ข้อ 56
 - `gi-salmonella-h2s`: ข้อ 60

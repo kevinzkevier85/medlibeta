@@ -1,6 +1,6 @@
 # REVIEW — รายการรอผู้ใช้ตัดสิน
 
-ทั้งหมด 173 รายการ
+ทั้งหมด 192 รายการ
 วิธีตอบ: พิมพ์ในแชทเป็นบรรทัด เช่น `end_52_MCQ_027: คงเดิม` / `end_52_MCQ_063: C` / `end_52_MCQ_046: ตรวจใหม่`
 Claude จะบันทึกลง `auditor/data/decisions.json` แล้ว build ใหม่
 
@@ -95,6 +95,25 @@ Claude จะบันทึกลง `auditor/data/decisions.json` แล้ว
 | end_51_MCQ_071 | None | A | low | หน้าเฉลยต้นฉบับขาดหลังช้อยส์ A ไม่ทราบตัวที่เลือก; ถ้อยคำโจทย์กำกวม (chylomicron ก็ขน TG); ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ | เฉลยต้นฉบับหมดที่หน้า 12 (หลังช้อยส์ A) มีแต่โน้ต 'storage energy = Triglyceride' — ทั้ง VLDL และ chylomicron ขน TG; AI เลือก VLDL ความมั่นใจต่ำ — A: TG จากตับ ไปเก็บที่ adipose; B: IDL เป็นตัวกลางระหว่าง VLDL กับ LDL; C: HDL ขน cholesterol กลับตับ; D: LDL ขน cholesterol ไป peripheral; E: ขน TG จากอาหาร — ถ้าโจทย์หมายถึงหลังกินอาหาร ตัวนี้จะถูก |
 | end_51_MCQ_074 | None | None | None | ต้นฉบับจำช้อยส์ได้ตัวเดียว และเฉลยหมดก่อนถึงข้อนี้; AI เขียนข้อนี้ขึ้นใหม่จากโน้ตความจำในต้นฉบับ |  — A: OPG ลดลง; B: ถูก; C: osteoclast อายุยืนขึ้นเมื่อขาด estrogen; D: ไม่ใช่กลไกหลัก; E: ไม่ใช่กลไกหลัก |
 | end_51_MCQ_075 | None | A | high | เฉลยต้นฉบับหมดก่อนถึงข้อนี้; ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |  — A: ถูก; B: remodeling ไม่เปลี่ยนขนาด/รูปร่าง; C: เป็นส่วนหนึ่งของ modeling เท่านั้น; D: ไม่เกี่ยวข้อง; E: ไม่เกี่ยวข้อง |
+| gi_47_MCQ_001 | D | A | high | เฉลยขัดกับ AI |   |
+| gi_47_MCQ_004 | D | C | med | เฉลยขัดกับ AI |   |
+| gi_47_MCQ_006 | E | C | high | เฉลยขัดกับ AI |   |
+| gi_47_MCQ_015 | None | Terminal digestion and nutrient absorption | med | AI เขียนข้อนี้ขึ้นใหม่จากโน้ตความจำในต้นฉบับ |   |
+| gi_47_MCQ_017 | B | A | med | ช้อยส์ C, D, E AI เติมให้ครบ 5 ตัว; เฉลยขัดกับ AI |   |
+| gi_47_MCQ_020 | B | C | high | เฉลยขัดกับ AI |   |
+| gi_47_MCQ_033 | D | A | low | เฉลยขัดกับ AI |   |
+| gi_47_MCQ_041 | None | Elimination of H. pylori | med | AI เขียนข้อนี้ขึ้นใหม่จากโน้ตความจำในต้นฉบับ |   |
+| gi_47_MCQ_042 | D | D | low |  |   |
+| gi_47_MCQ_045 | B | A | low | เฉลยขัดกับ AI |   |
+| gi_47_MCQ_049 | D | E | low | เฉลยขัดกับ AI |   |
+| gi_47_MCQ_058 | None | HCN | high | AI เขียนข้อนี้ขึ้นใหม่จากโน้ตความจำในต้นฉบับ |   |
+| gi_47_MCQ_059 | None | Block voltage-gated sodium channel | med | AI เขียนข้อนี้ขึ้นใหม่จากโน้ตความจำในต้นฉบับ |   |
+| gi_47_MCQ_061 | E | C | med | เฉลยขัดกับ AI |   |
+| gi_47_MCQ_074 | B | C | low | ช้อยส์ E AI เติมให้ครบ 5 ตัว; เฉลยขัดกับ AI |   |
+| gi_47_MCQ_078 | B | D | high | เฉลยขัดกับ AI |   |
+| gi_47_MCQ_085 | None | Inhibit gastric H+/K+ ATPase | high | AI เขียนข้อนี้ขึ้นใหม่จากโน้ตความจำในต้นฉบับ |   |
+| gi_47_MCQ_087 | D | B | high | เฉลยขัดกับ AI |   |
+| gi_47_MCQ_098 | B | B | low |  |   |
 | gi_48_MCQ_008 | None | C | high | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
 | gi_48_MCQ_016 | D | C | low | ช้อยส์ E AI เติมให้ครบ 5 ตัว; เฉลยขัดกับ AI |   |
 | gi_48_MCQ_017 | E | A | high | ช้อยส์ E AI เติมให้ครบ 5 ตัว; เฉลยขัดกับ AI |   |
