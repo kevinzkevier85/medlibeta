@@ -48,7 +48,7 @@ window.MedLibQuizUI = function (ML) {
   // Latest result of every question in a block (across sets and mixes)
   function blockResults(b) {
     const qmap = Object.fromEntries(ML.examsOf(b).map((q) => [q.id, q]));
-    const rounds = Object.entries(P().rounds).filter(([k]) => k.startsWith(b.id + "/")).flatMap(([, v]) => v);
+    const rounds = Object.entries(P().rounds).filter(([k, v]) => k.startsWith(b.id + "/") && Array.isArray(v)).flatMap(([, v]) => v);
     return C.latestResults(rounds, qmap, kov());
   }
   function setProgress(b, s) {   // only questions that count (draft/disputed answers are left out)
@@ -570,7 +570,9 @@ window.MedLibQuizUI = function (ML) {
     let best = null;
     ML.visibleBlocks().forEach((b) => Object.entries(P().rounds).filter(([k]) => k.startsWith(b.id + "/")).forEach(([k, list]) => {
       const s = setLike(b, k.slice(b.id.length + 1)); if (!s || !Array.isArray(list)) return;
-      list.forEach((r) => { if (r && !r.done && Array.isArray(r.qids) && (!best || (r.at || r.started || 0) > (best.r.at || best.r.started || 0))) best = { b, s, r }; });
+      // the same round the set page opens (activeRound), so the button and the page agree
+      const r = list.filter((x) => x && !x.done && Array.isArray(x.qids)).pop();
+      if (r && (!best || (r.at || r.started || 0) > (best.r.at || best.r.started || 0))) best = { b, s, r };
     }));
     if (!best) return null;
     const { b, s, r } = best;
@@ -595,19 +597,19 @@ window.MedLibQuizUI = function (ML) {
       const names = Object.fromEntries((b.topics || []).map((x) => [x.id, x.name]));
       const tops = (b.topics || []).length ? C.groupStats(qs, res, kov(), (q) => q.topic) : [];
       tops.forEach((x) => { if (x.done >= 5 && names[x.key]) weak.push({ b, x, name: names[x.key] }); });
-      const rows = tops.map((x) => `<tr><td>${esc(names[x.key] || x.key)}</td><td>${x.done}/${x.total}</td><td>${pctTxt(x)}</td>
+      const rows = tops.filter((x) => names[x.key]).map((x) => `<tr><td>${esc(names[x.key] || x.key)}</td><td>${x.done}/${x.total}</td><td>${pctTxt(x)}</td>
         <td><button class="btn sm" data-z="mixtopic" data-b="${esc(b.id)}" data-tp="${esc(x.key)}">ฝึก</button></td></tr>`).join("");
       cards.push(`<div class="statcard" data-blk="${esc(b.id)}" style="--blk:${esc(b.color || "var(--artery)")}">
         <div class="ptop"><b>${esc(b.name)}</b><span class="n">${pctTxt(all)}</span></div>
         <span class="sbar"><i style="width:${all.pct || 0}%"></i></span>
         <span class="prog">ทำแล้ว ${all.done}/${all.total} ข้อ · ถูก ${all.ok}</span>
         ${rows ? `<div class="tablewrap"><table><thead><tr><th>หัวข้อ (อ่อนสุดก่อน)</th><th>ทำแล้ว</th><th>คะแนน</th><th></th></tr></thead><tbody>${rows}</tbody></table></div>` : ""}</div>`);
-      Object.entries(P().rounds).filter(([k]) => k.startsWith(b.id + "/")).forEach(([k, list]) => {
+      const qmap = Object.fromEntries(qs.map((q) => [q.id, q]));   // same questions as the cards (respects showDrafts)
+      Object.entries(P().rounds).filter(([k, list]) => k.startsWith(b.id + "/") && Array.isArray(list)).forEach(([k, list]) => {
         const s = setLike(b, k.slice(b.id.length + 1)); if (!s) return;
-        const qmap = qmapOf(s);
-        list.filter((r) => r.done && !r.abandoned && r.kind !== "retry").forEach((r) => {
-          const st = C.roundStats(r, qmap, kov());
-          if (st.checked) pts.push({ t: r.finished || r.started || 0, pct: st.pct, label: `${new Date(r.started).toLocaleDateString("th-TH")} · ${b.name} ${s.title || s.id}` });
+        list.filter((r) => r && Array.isArray(r.qids) && r.chk && r.done && !r.abandoned && r.kind !== "retry").forEach((r) => {
+          const st = C.roundStats(r, qmap, kov()), when = r.finished || r.started || 0;
+          if (st.checked) pts.push({ t: when, pct: st.pct, label: `${when ? new Date(when).toLocaleDateString("th-TH") + " · " : ""}${b.name} ${s.title || s.id}` });
         });
       });
     });
@@ -670,7 +672,7 @@ window.MedLibQuizUI = function (ML) {
       const q = curQ(c), r = c.r; if (!q || !r || r.chk[q.id]) return true;
       r.ans[q.id] = t.dataset.opt;
       if (c.single || r.mode === "practice") { r.chk[q.id] = true; graded(q, r); }
-      if (!c.single) save();
+      save();   // also on the single-question page: the review queue may have changed
       rerender();
       const ex = $(".qcard .explain"); if (ex) ex.scrollIntoView({ block: "nearest", behavior: "smooth" });
       return true;
@@ -680,7 +682,7 @@ window.MedLibQuizUI = function (ML) {
       const o = r.ov[q.id] = r.ov[q.id] || {};
       if (t.dataset.ov === "auto") delete o[t.dataset.item]; else o[t.dataset.item] = Number(t.dataset.ov);
       if (r.chk[q.id]) graded(q, r);
-      if (!c.single) save(); rerender(); return true;
+      save(); rerender(); return true;
     }
     const z = t.dataset.z; if (!z) return false;
     const q = curQ(c);
@@ -726,7 +728,15 @@ window.MedLibQuizUI = function (ML) {
     if (z === "review") {
       const b = ML.findBlock(t.dataset.b); if (!b) return true;
       const ids = C.reviewDue(P(), ML.examsOf(b).filter((x) => C.counts(x, kov())).map((x) => x.id), Date.now());
-      makeMix(b, `ทบทวนวันนี้ · ${new Date().toLocaleDateString("th-TH", { day: "numeric", month: "short" })}`, ids); return true;
+      if (!ids.length) return true;
+      // one review set per block, refreshed each time (old ones would pile up); an unfinished round of the old list is closed
+      const id = `review-${b.id}`, old = P().mixes[id];
+      if (!old || old.qids.join() !== ids.join()) {
+        (P().rounds[`${b.id}/@${id}`] || []).forEach((r) => { if (r && !r.done) { r.done = true; r.abandoned = true; r.finished = Date.now(); } });
+        P().mixes[id] = { block: b.id, title: `ทบทวนวันนี้ · ${new Date().toLocaleDateString("th-TH", { day: "numeric", month: "short" })}`, qids: ids, created: Date.now() };
+        C.touch(P(), "mixes", id); save();
+      }
+      location.hash = `#/set/${enc(b.id)}/@${enc(id)}`; return true;
     }
     if (z === "mixtopic") {
       const b = (t.dataset.b && ML.findBlock(t.dataset.b)) || c.b; if (!b) return true;

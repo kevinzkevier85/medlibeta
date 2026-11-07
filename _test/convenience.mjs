@@ -77,6 +77,18 @@ await t("leaving the page while zoomed: the next picture starts fresh", async ()
   assert.strictEqual(await p.evaluate(() => document.querySelector("img.zoom").style.transform), "");
   assert.strictEqual(await tap("img.zoom"), true);
 });
+await t("two unfinished rounds of one set (after a sync): resume goes where the set page goes", async () => {
+  const qids = Array.from({ length: 10 }, (_, i) => `END-52-MCQ-${String(i + 1).padStart(3, "0")}`);
+  const mk = (id, idx, at) => ({ id, kind: "full", mode: "practice", qids, ans: {}, chk: {}, ov: {}, choiceOrder: {}, idx, started: at - 1000, at, elapsed: 0, done: false });
+  const prog = { rounds: { "END/52_MCQ": [mk("a", 5, Date.now()), mk("b", 2, Date.now() - 60000)] }, marks: {}, read: {}, mixes: {}, prefs: {} };
+  const c2 = await browser.newContext({ serviceWorkers: "block" });
+  await c2.addInitScript((x) => localStorage.setItem("medlib.progress.v1", x), JSON.stringify(prog));
+  const q = await c2.newPage(); q.setDefaultTimeout(10000);
+  await q.goto(BASE + "#/"); await q.waitForSelector("#resume");
+  assert.match(await q.textContent("#resume"), /ข้อ 3\//);
+  assert.match(await q.getAttribute("#resume", "href"), /\/run\/3$/);
+  await c2.close();
+});
 await t("no page errors", async () => assert.deepStrictEqual(errors, []));
 await browser.close(); server.kill();
 console.log(`\n${pass} ผ่าน`);

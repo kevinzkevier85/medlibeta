@@ -67,6 +67,23 @@ await t("self-grading a written answer moves the queue too", async () => {
   for (const id of ["1.1", "1.2"]) await p.click(`[data-ov="0"][data-item="${id}"]`);
   assert.ok(await inQ(), "marked wrong by hand → queued");
 });
+await t("pressing review again reuses one set per block (no pile of old sets)", async () => {
+  const due = Date.now() - 1000, ids = okQ.slice(0, 3).map((q) => q.id);
+  const review = Object.fromEntries(ids.map((id) => [id, { step: 0, due, t: due }]));
+  const p = await open("#/", { rounds: {}, marks: {}, read: {}, mixes: {}, prefs: {}, review });
+  await p.click('#review [data-z="review"][data-b="END"]'); await p.waitForFunction(() => location.hash.includes("/@"));
+  await p.evaluate((id) => { delete window.__medlib.PROG.review[id]; location.hash = "#/"; }, ids[0]);
+  await p.click('#review [data-z="review"][data-b="END"]'); await p.waitForFunction(() => location.hash.includes("/@"));
+  const mixes = await p.evaluate(() => Object.values(window.__medlib.PROG.mixes));
+  assert.strictEqual(mixes.length, 1); assert.strictEqual(mixes[0].qids.length, 2);
+});
+await t("answering on the single-question page is saved right away", async () => {
+  const q = okQ[5], wrong = Object.keys(q.options).find((k) => k !== q.answer);
+  const p = await open("#/q/" + q.id); await p.waitForSelector(`.opt[data-opt="${wrong}"]`);
+  await p.click(`.opt[data-opt="${wrong}"]`);
+  const saved = await p.evaluate((id) => !!(JSON.parse(localStorage.getItem("medlib.progress.v1") || "{}").review || {})[id], q.id);
+  assert.ok(saved);
+});
 await t("no page errors", async () => { for (const p of pages) assert.deepStrictEqual(p.errors, []); });
 await browser.close(); server.kill();
 console.log(`\n${pass} ผ่าน`);
