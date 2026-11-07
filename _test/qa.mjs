@@ -44,11 +44,14 @@ ok(await waitFor("document.querySelector('.card')"), "home shows block cards");
 ok((await ev("document.querySelector('.ver').innerText")).includes("v" + JSON.parse(fs.readFileSync(path.join(ROOT, "version.json"), "utf8")).version), "version + date shown in menu");
 ok(await ev("[...document.querySelectorAll('.card .code')].some((x) => x.innerText.includes('CVS'))"), "CVS block imported and shown");
 
-await go("#/b/DEMO/exam");
+await go("#/b/DEMO");
 ok((await ev("document.querySelectorAll('.cohort').length")) === 1 && (await ev("document.querySelector('.set .n').innerText")).includes("3"), "exam tab: cohort card with set tile (DEMO 3 questions)");
 ok(await ev("!!document.querySelector('.mixbox')"), "exam tab: cross-set practice box");
-await go("#/b/DEMO/lec");
-ok((await ev("document.querySelectorAll('.rows .lrow').length")) === 3, "lecture tab lists lectures with read toggles");
+ok(await ev("document.querySelectorAll('#modes .mode').length === 2 && document.querySelector('#modes .mode.on').innerText === 'ข้อสอบ'"), "header switches between ข้อสอบ / Lecture modes");
+await go("#/lec/DEMO");
+ok((await ev("document.querySelectorAll('#leclist .lecitem').length")) === 3 && (await ev("!!document.querySelector('.shell.lecmode')")), "lecture mode: own page with lecture list on the left");
+await go("#/b/DEMO/lec"); await sleep(200);
+ok((await ev("location.hash")) === "#/lec/DEMO", "old block lecture link redirects to lecture mode");
 
 // rounds: practice
 await ev("localStorage.removeItem('medlib.progress.v1')"); await ev("location.reload()"); await sleep(500);
@@ -83,17 +86,21 @@ ok((await ev("document.querySelectorAll('tbody tr').length")) === 2, "history li
 await go("#/q/DEMO-52-MCQ-005");
 await click('.opt[data-opt="C"]'); await sleep(150);
 ok((await ev("!!document.querySelector('.opt.wrong') && !!document.querySelector('.opt.correct')")) && (await text()).includes("คำตอบ B"), "single question: feedback + correct answer");
-await click('.refs a[href="#/pdf/DEMO/L02/5"]');
-ok(await waitFor("location.hash === '#/pdf/DEMO/L02/5'"), "lecture ref opens PDF at page 5");
-ok(await waitFor("!!document.querySelector('#pdfstage canvas')", 10000), "PDF page renders to canvas");
+await click('.refs a[href="#/lec/DEMO/L02/5"]');
+ok(await waitFor("location.hash === '#/lec/DEMO/L02/5'"), "lecture ref opens the lecture reader at page 5");
+ok(await waitFor("!!document.querySelector('#lecpages .pgbox[data-n=\"5\"] canvas')", 10000), "reader renders page 5 (continuous pages)");
+ok(await ev("document.querySelector('#leclist .lecitem.on') && document.querySelector('#leclist .lecitem.on').innerText.includes('L02')"), "current lecture highlighted in the list");
 ok((await ev("document.querySelector('#pgtotal').innerText")).includes("8"), "page count read from PDF");
-await click('[data-pg="1"]');
-ok(await waitFor("location.hash === '#/pdf/DEMO/L02/6' && !!document.querySelector('#pdfstage canvas')"), "next page works");
+await click('[data-pg="1"]'); await sleep(900);
+ok((await ev("location.hash")) === "#/lec/DEMO/L02/6" && (await ev("document.querySelector('#pgin').value")) === "6", "next page scrolls the reader");
 ok(await ev("window.__medlib.PROG.read['DEMO/L02'].page === 6"), "reading position remembered");
+ok(await ev("(() => { const p = document.querySelector('#lecpages'), d = p.querySelector('.pgbox[data-n=\"6\"]'); return Math.abs(d.getBoundingClientRect().top - p.getBoundingClientRect().top) < 40; })()"), "page 6 is at the top of the reader (no drift)");
+await click('[data-zm="1"]'); await sleep(400);
+ok(await waitFor("document.querySelector('#zlabel').innerText.includes('%') && !!document.querySelector('#lecpages .pgbox[data-n=\"6\"] canvas')"), "zoom in re-renders at the same page");
 await setVal("#pdfq", "a", "input"); await ev("document.querySelector('[data-pdfsearch]').requestSubmit()");
 ok(await waitFor("(document.querySelector('#pdfhits')||{}).innerText?.includes('พบใน')", 8000), "search inside the open PDF");
-await go("#/pdf/DEMO/L05/4");
-ok(await waitFor("(document.querySelector('.status.err')||{}).innerText?.includes('ยังไม่มีไฟล์ PDF')"), "lecture without file explains why");
+await go("#/lec/DEMO/L05/4");
+ok(await waitFor("(document.querySelector('#lecpages .status.err')||{}).innerText?.includes('ยังไม่มีไฟล์ PDF')"), "lecture without file explains why");
 
 // CVS: rich explanation, original key, my key, report fallback
 await go("#/q/CVS-52-MCQ-005");
@@ -117,13 +124,18 @@ await click('.override [data-ov="1"]'); await sleep(150);
 ok(await ev("document.querySelector('.override [data-ov=\"1\"]').getAttribute('aria-pressed') === 'true'"), "override saved");
 
 // block plan + lecture page + cross-set
-await go("#/b/CVS/plan");
+await go("#/lec/CVS/plan");
 ok((await ev("document.querySelectorAll('.lcard').length")) > 5 && (await text()).includes("Tier"), "reading plan per block");
 await go("#/set/CVS/52_MCQ/guide");
 ok((await ev("document.querySelectorAll('.lcard').length")) > 3, "set Guidereader");
-await go("#/l/CVS/L04");
-ok((await ev("document.querySelectorAll('.toc').length")) > 10 && (await ev("document.querySelectorAll('.toc.hotpage').length")) > 0, "lecture page: page index with examined pages highlighted");
-await go("#/b/CVS/exam");
+await go("#/l/CVS/L04"); await sleep(300);
+ok((await ev("location.hash")).startsWith("#/lec/CVS/L04"), "old lecture link redirects to the reader");
+ok(await ev("document.querySelectorAll('.hotpages .hp').length > 0"), "reader shows pages that were examined");
+await click('[data-act="toc"]'); await sleep(150);
+ok((await ev("document.querySelectorAll('#toc .toc').length")) > 10 && (await ev("document.querySelectorAll('#toc .toc.hotpage').length")) > 0, "table of contents with examined pages highlighted");
+await go("#/refs/CVS/L04/6");
+ok((await ev("document.querySelectorAll('.rows .row').length")) > 0, "'ดูข้อสอบที่อ้างถึงหน้านี้' lists the questions in exam mode");
+await go("#/b/CVS");
 await setVal("#mixN", "10", "input"); await click('[data-z="mixrand"]');
 ok(await waitFor("location.hash.startsWith('#/set/CVS/@')"), "random 10 from block creates a practice set");
 ok((await waitFor("!!document.querySelector('[data-z=\"start\"]')")) && (await text()).includes("10 ข้อ"), "mix set has 10 questions");
@@ -183,10 +195,16 @@ await send("Network.emulateNetworkConditions", { offline: false, latency: 0, dow
 
 // phone width: no sideways scroll
 await send("Emulation.setDeviceMetricsOverride", { width: 390, height: 844, deviceScaleFactor: 2, mobile: true });
-for (const h of ["#/", "#/b/CVS/exam", "#/b/CVS/lec", "#/b/CVS/plan", "#/q/CVS-52-MCQ-005", "#/set/CVS/52_MCQ", "#/set/CVS/52_OSPE/run/1", "#/set/DEMO/52_MCQ/hist", "#/settings", "#/add", "#/pdf/DEMO/L08/3", "#/l/CVS/L04"]) {
+for (const h of ["#/", "#/b/CVS", "#/lec/CVS", "#/lec/CVS/plan", "#/lec/DEMO/L02/3", "#/q/CVS-52-MCQ-005", "#/set/CVS/52_MCQ", "#/set/CVS/52_OSPE/run/1", "#/set/DEMO/52_MCQ/hist", "#/settings", "#/add", "#/refs/CVS/L04/6"]) {
   await go(h); await sleep(400);
   ok((await ev("document.documentElement.scrollWidth <= window.innerWidth + 1")), `no horizontal scroll at 390px: ${h}`);
 }
+await go("#/lec/DEMO/L02/2"); await sleep(600);
+await click('.rdbar [data-act="drawer"]'); await sleep(300);
+ok(await ev("document.querySelector('.lec').classList.contains('drawer') && document.querySelector('.lecside').getBoundingClientRect().left >= 0"), "phone: lecture list opens as a drawer");
+let shot0 = await send("Page.captureScreenshot", { format: "png" }); fs.writeFileSync(path.join(ROOT, "_test", "phone-lec-drawer.png"), Buffer.from(shot0.data, "base64"));
+await click('.lecscrim'); await sleep(300);
+shot0 = await send("Page.captureScreenshot", { format: "png" }); fs.writeFileSync(path.join(ROOT, "_test", "phone-lec.png"), Buffer.from(shot0.data, "base64"));
 await go("#/set/CVS/52_OSPE/run/1"); await sleep(400);
 const shot = await send("Page.captureScreenshot", { format: "png" });
 fs.writeFileSync(path.join(ROOT, "_test", "phone-run.png"), Buffer.from(shot.data, "base64"));

@@ -1,5 +1,7 @@
 # Next tasks
 
+## เสร็จแล้ว — v0.6.0 (2026-11-07) แยกโหมด ข้อสอบ / Lecture (หน้าอ่านแบบ CVS) · QA 72 ข้อ
+
 ## เสร็จแล้ว — v0.5.0–0.5.1 (2026-11-07) อยู่บน main แล้ว (commit df8f93f)
 - เทียบ CVS-pdf + psu-quiz: docs/reference-comparison.md · ตัดสินใจ: docs/superpowers/specs/2026-11-07-medlib-v05-design.md
 - format v2 (KF/OSPE), บล็อก CVS 11 ชุด (tools/import_cvs.cjs), หน้าทำข้อสอบแบบรอบ, แผนอ่าน, lecture อ่านต่อ/ค้นใน PDF, ส่งออก-นำเข้าความคืบหน้า, ธีม CVS

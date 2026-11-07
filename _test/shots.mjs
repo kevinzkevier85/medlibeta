@@ -24,12 +24,12 @@ const send = (method, params = {}) => new Promise((r) => { const i = id++; pend.
 const ev = (expr) => send("Runtime.evaluate", { expression: expr, awaitPromise: true });
 if (dark) await send("Emulation.setEmulatedMedia", { features: [{ name: "prefers-color-scheme", value: "dark" }] });
 await send("Page.navigate", { url: "http://localhost:8765/#/" }); await sleep(1500);
-const views = [["home", "#/"], ["block", "#/b/CVS/exam"], ["plan", "#/b/CVS/plan"], ["lec", "#/b/CVS/lec"], ["set", "#/set/CVS/52_MCQ"], ["question", "#/q/CVS-52-MCQ-005", "document.querySelector('.opt[data-opt=A]')?.click()"],
-  ["lecture", "#/l/CVS/L04"], ["kf", "#/q/CVS-52-KF-002"], ["guide", "#/set/CVS/52_MCQ/guide"], ["settings", "#/settings"]];
+const views = [["home", "#/"], ["block", "#/b/CVS"], ["plan", "#/lec/CVS/plan"], ["lec", "#/lec/CVS/L04/6"], ["set", "#/set/CVS/52_MCQ"], ["question", "#/q/CVS-52-MCQ-005", "document.querySelector('.opt[data-opt=A]')?.click()"],
+  ["lecture", "#/lec/CVS"], ["kf", "#/q/CVS-52-KF-002"], ["guide", "#/set/CVS/52_MCQ/guide"], ["settings", "#/settings"]];
 for (const [w, h, mobile] of [[1280, 900, false], [390, 844, true]]) {
   await send("Emulation.setDeviceMetricsOverride", { width: w, height: h, deviceScaleFactor: 1, mobile });
   for (const [name, hash, act] of views) {
-    await ev(`location.hash = ${JSON.stringify(hash)}`); await sleep(name === "pdf" ? 1500 : 400);
+    await ev(`location.hash = ${JSON.stringify(hash)}`); await sleep(name === "lec" ? 6000 : 500);
     if (act) { await ev(act); await sleep(500); }
     const s = await send("Page.captureScreenshot", { format: "png" });
     fs.writeFileSync(path.join(OUT, `${dark ? "dark-" : ""}${mobile ? "phone" : "desk"}-${name}.png`), Buffer.from(s.data, "base64"));

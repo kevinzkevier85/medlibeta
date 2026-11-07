@@ -31,7 +31,7 @@ users can only change things on their own device and report doubtful keys to the
 | History | every round per set + progress graph |
 | Notes | per question + floating notepad per set |
 | Report queue | existing Worker gets `POST /report` → opens a GitHub Issue |
-| Block page | tabs: ข้อสอบ / Lecture / แผนอ่าน |
+| Block page | ~~tabs~~ → v0.6 (2026-11-07): two site-wide modes ข้อสอบ / Lecture like CVS; Lecture = list left + continuous PDF right; reading plan lives in Lecture mode; lecture pages show only examined-page marks + link to the questions |
 | Look | CVS style (calm, artery red + vein blue, Anuphan), light/dark |
 | Number bar | horizontal sticky strip + "ดูทั้งหมด" |
 | Admin mode in web | none (maintainer works through Claude / REVIEW.md) |

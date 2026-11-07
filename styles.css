@@ -399,3 +399,75 @@ pre { background: var(--surface); border: 1px solid var(--line); border-radius: 
   .scorebox .big { font-size: 2.1rem; }
 }
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
+
+/* ---------- v0.6: modes (ข้อสอบ / Lecture) + CVS-style lecture reader ---------- */
+.modes { display: inline-flex; border: 1px solid var(--line); border-radius: 999px; padding: 3px; background: var(--paper); flex: none; }
+.mode { padding: 4px 14px; border-radius: 999px; color: var(--muted); text-decoration: none; font-weight: 600; font-size: .92rem; }
+.mode.on { background: var(--artery); color: #fff; }
+.shell.lecmode { grid-template-columns: minmax(0, 1fr); }
+.shell.lecmode .side { display: none; }
+.shell.lecmode .main { max-width: none; padding: 0; }
+.lec { display: grid; grid-template-columns: 300px minmax(0, 1fr); height: calc(100vh - 57px); height: calc(100dvh - 57px); }
+.lecside { display: flex; flex-direction: column; border-right: 1px solid var(--line); background: var(--surface); min-height: 0; }
+.lechead { display: flex; flex-direction: column; gap: 8px; padding: 12px; border-bottom: 1px solid var(--line); }
+.lechead select, .lechead input { border: 1px solid var(--line); border-radius: var(--r-sm); padding: 6px 8px; background: var(--surface); width: 100%; }
+.lechead select { font-weight: 600; }
+.lecprog { display: flex; flex-direction: column; gap: 4px; font-size: .85rem; color: var(--muted); }
+.lecbtns { display: flex; gap: 6px; flex-wrap: wrap; }
+.leclist { overflow-y: auto; flex: 1; min-height: 0; }
+.lecitem { display: flex; gap: 8px; align-items: flex-start; padding: 8px 10px; border-bottom: 1px solid var(--line); }
+.lecitem a { flex: 1; min-width: 0; color: var(--ink); text-decoration: none; font-size: .92rem; line-height: 1.4; }
+.lecitem a:hover { color: var(--vein); }
+.lecitem .lid { font-family: var(--mono); font-size: .8rem; color: var(--muted); }
+.lecitem .sub { display: block; color: var(--muted); font-size: .8rem; margin-top: 2px; }
+.lecitem .hotn { color: var(--artery); }
+.lecitem.on { background: var(--artery-soft); box-shadow: inset 3px 0 0 var(--artery); }
+.lecitem.on a { font-weight: 600; }
+.lecitem.isdone a { color: var(--muted); }
+.lecitem .readchk { width: 22px; height: 22px; margin-top: 1px; font-size: .8rem; }
+.lecmain { display: flex; flex-direction: column; min-width: 0; min-height: 0; background: var(--paper); }
+.lecpad { padding: 18px 24px 60px; overflow-y: auto; }
+.lectop { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
+.rdbar { display: flex; flex-wrap: wrap; gap: 6px 8px; align-items: center; padding: 8px 14px; background: var(--surface); border-bottom: 1px solid var(--line); }
+.rdbar.sub { background: var(--paper); }
+.rdbar input[type="number"] { width: 60px; border: 1px solid var(--line); border-radius: var(--r-sm); padding: 3px 6px; background: var(--surface); }
+.rdtitle { flex: 1; min-width: 120px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.rdtitle b { font-family: var(--mono); color: var(--artery); margin-right: 4px; }
+.zoom { display: inline-flex; gap: 2px; }
+.drawerbtn, .srchbtn { display: none; }
+.lecmain .hotpages { padding: 0 14px; margin: 6px 0 0; }
+.lecmain #examnote, .lecmain #toc, .lecmain #pdfhits { padding: 0 14px; }
+.lecmain #toc .tocs { max-height: 40vh; overflow-y: auto; margin: 8px 0; }
+.examnote.sm { font-size: .88rem; padding: 6px 10px; margin: 6px 0; }
+.lecpages { position: relative; flex: 1; min-height: 0; overflow: auto; padding: 12px 14px 40vh; display: flex; flex-direction: column; align-items: center; gap: 12px; }
+.lecpages .status { align-self: flex-start; }
+.lecpages .drivepreview { height: 100%; min-height: 70vh; }
+.pgbox { position: relative; flex: none; background: #fff; box-shadow: var(--shadow); max-width: none; }
+.pgbox canvas { display: block; }
+.pgbox.examined { outline: 3px solid var(--artery); outline-offset: 2px; }
+.pgnum { position: absolute; right: 6px; bottom: 4px; font-size: .72rem; color: #8A93A3; font-family: var(--mono); }
+.pgtag { position: absolute; left: -3px; top: -3px; z-index: 1; background: var(--artery); color: #fff; font-size: .72rem; font-weight: 600; padding: 1px 8px; border-radius: 0 0 6px 0; }
+.lecscrim { display: none; border: 0; padding: 0; }
+@media (max-width: 760px) {
+  .brand { font-size: 0; gap: 0; }
+  .brand i { margin-right: 6px; }
+  .search { min-width: 0; padding: 5px 10px; }
+  .mode { padding: 3px 10px; font-size: .86rem; }
+  .lec { grid-template-columns: minmax(0, 1fr); height: calc(100dvh - 53px); position: relative; }
+  .lecside { position: fixed; left: 0; top: 0; bottom: 0; width: min(320px, 86vw); z-index: 70; transform: translateX(-102%); transition: transform .2s; box-shadow: var(--shadow); }
+  .lec.drawer .lecside { transform: none; }
+  .lec.drawer .lecscrim { display: block; position: fixed; inset: 0; z-index: 65; background: rgba(0,0,0,.35); }
+  .drawerbtn, .srchbtn { display: inline-flex; }
+  .rdbar { padding: 6px 8px; gap: 4px 6px; }
+  .rdbar .btn.sm { padding: 3px 8px; }
+  .rdtitle { order: -1; flex-basis: calc(100% - 50px); font-size: .92rem; }
+  .rdbar.sub .pdfsearch, #pdfinfo { display: none; }
+  .rdbar.sub.showsearch .pdfsearch { display: flex; flex-basis: 100%; }
+  .rdbar.sub.showsearch .pdfsearch input { flex: 1; }
+  .rdbar input[type="number"] { width: 48px; }
+  .lecmain .hotpages { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; padding-bottom: 2px; }
+  .hp { flex: none; }
+  .lecpages { padding: 8px 6px 40vh; }
+  .lecpad { padding: 12px 14px 60px; }
+  .pdfsearch input { width: 120px; }
+}

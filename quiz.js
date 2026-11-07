@@ -52,7 +52,7 @@ window.MedLibQuizUI = function (ML) {
   /* ---------- small renderers ---------- */
   const lecName = (b, id) => { const l = b.lectures.find((x) => x.id === id); return l ? `${id} ${l.title}` : id; };
   const pgTxt = (p) => (!p || !p.length ? "" : p.length > 1 && p[p.length - 1] - p[0] === p.length - 1 ? `หน้า ${p[0]}–${p[p.length - 1]}` : `หน้า ${p.join(", ")}`);
-  const pdfHref = (b, id, page) => `#/pdf/${enc(b.id)}/${enc(id)}/${page || 1}`;
+  const pdfHref = (b, id, page) => (b.lectures.some((l) => l.id === id) ? `#/lec/${enc(b.id)}/${enc(id)}/${page || 1}` : `#/pdf/${enc(b.id)}/${enc(id)}/${page || 1}`);
 
   function listHTML(parts, ordered) { const t = ordered ? "ol" : "ul"; return `<${t} class="kc">${parts.map((p) => `<li>${txt(p.trim())}</li>`).join("")}</${t}>`; }
   // key concept / explanation text → readable blocks: bullets, "(1) (2)" lists, "a; b; c" lists and a ⚠️ trap box
@@ -200,7 +200,7 @@ window.MedLibQuizUI = function (ML) {
     const B = base(b, s);
     const papers = s.mix ? [] : b.papers.filter((p) => p.cohort === s.cohort && p.type === s.type);
     const tabs = [["", "ทำข้อสอบ"], ["guide", "Guidereader"], ["sum", "สรุปผล"], ["hist", "ประวัติ"]];
-    return `<div class="crumbs"><a href="#/">ทั้งหมด</a><span>/</span><a href="#/b/${enc(b.id)}/exam">${esc(b.name)}</a><span>/</span><span>${s.mix ? "ชุดฝึกข้ามชุด" : `รุ่น ${s.cohort} · ${esc(s.type)}`}</span></div>
+    return `<div class="crumbs"><a href="#/">ทั้งหมด</a><span>/</span><a href="#/b/${enc(b.id)}">${esc(b.name)}</a><span>/</span><span>${s.mix ? "ชุดฝึกข้ามชุด" : `รุ่น ${s.cohort} · ${esc(s.type)}`}</span></div>
       <div class="sethead"><div><h2>${esc(s.title)}</h2><p class="hint">${s.questions.length} ข้อ${s.meta.time_limit_min && !s.mix ? ` · เวลาสอบจริง ${s.meta.time_limit_min} นาที` : ""}${papers.length ? " · " + papers.map((p) => `<a href="#/pdf/${enc(b.id)}/${enc(p.id)}/1">${p.role === "key" ? "PDF เฉลย" : "PDF ข้อสอบ"}</a>`).join(" · ") : ""}</p></div></div>
       <nav class="tabs">${tabs.map(([k, l]) => `<a class="tab ${tab === k ? "on" : ""}" href="${B}${k ? "/" + k : ""}">${l}</a>`).join("")}</nav>`;
   }
@@ -427,7 +427,7 @@ window.MedLibQuizUI = function (ML) {
   }
   function lcardHTML(b, L, linkQ, sub) {
     const inset = L.topics.filter((t) => t.in_set !== false), other = L.topics.filter((t) => t.in_set === false);
-    return `<div class="lcard"><div class="lh"><a class="ln" href="#/l/${enc(b.id)}/${enc(L.lecture)}">${esc(lecName(b, L.lecture))}</a><span class="hint">${sub}</span></div>
+    return `<div class="lcard"><div class="lh"><a class="ln" href="#/lec/${enc(b.id)}/${enc(L.lecture)}">${esc(lecName(b, L.lecture))}</a><span class="hint">${sub}</span></div>
       ${inset.map((t) => topicRow(b, t, linkQ)).join("")}
       ${other.length ? `<div class="subhead">หัวข้ออื่นใน Lecture นี้ที่ออกบ่อย แต่ไม่อยู่ในชุดนี้</div>${other.map((t) => topicRow(b, t, linkQ)).join("")}` : ""}</div>`;
   }
@@ -528,7 +528,7 @@ window.MedLibQuizUI = function (ML) {
   function viewSingle(b, q) {
     const s = ML.findSet(b, q._set);
     const r = single[q.id] = single[q.id] || { qids: [q.id], ans: {}, chk: {}, ov: {}, choiceOrder: {} };
-    ML.main.innerHTML = `<div class="crumbs"><a href="#/">ทั้งหมด</a><span>/</span><a href="#/b/${enc(b.id)}/exam">${esc(b.name)}</a><span>/</span>${s ? `<a href="${base(b, s)}">รุ่น ${q.cohort} · ${esc(s.type)}</a><span>/</span>` : ""}<span>ข้อ ${esc(q.n)}</span></div>
+    ML.main.innerHTML = `<div class="crumbs"><a href="#/">ทั้งหมด</a><span>/</span><a href="#/b/${enc(b.id)}">${esc(b.name)}</a><span>/</span>${s ? `<a href="${base(b, s)}">รุ่น ${q.cohort} · ${esc(s.type)}</a><span>/</span>` : ""}<span>ข้อ ${esc(q.n)}</span></div>
       <article class="qcard single"><div class="qhead"><div class="qnum">ข้อ ${esc(q.n)} <small>${esc(q.type)} · รุ่น ${q.cohort}</small></div>
         <button class="flagbtn" data-z="flag" data-q="${esc(q.id)}" aria-pressed="${!!marks().flag[q.id]}">${marks().flag[q.id] ? "ปักธงไว้ทบทวนแล้ว" : "ปักธงไว้ทบทวน"}</button></div>
         ${questionHTML(b, q, r, !!r.chk[q.id], true)}${noteHTML(q)}
