@@ -2510,9 +2510,10 @@
    "items": [
     {
      "id": "17.1",
-     "prompt": "17.1 Diagnosis (specify the type)",
+     "prompt": "17.1 จง diagnosis",
      "format": "short",
      "accepted": [
+      "diabetes mellitus",
       "type 2 diabetes",
       "type ii diabetes",
       "type 2 dm",
@@ -2526,9 +2527,9 @@
       "เบาหวานชนิดที่ 2",
       "เบาหวาน type 2"
      ],
-     "key_text": "Diabetes mellitus — type 2 (ตอบสนองต่อ sulfonylurea; เฉลยทั้ง 3 ไฟล์เขียนแค่ Diabetes mellitus)",
+     "key_text": "Diabetes mellitus (เฉลยทั้ง 3 ไฟล์เขียนแค่นี้) — เคสชี้ไปทาง type 2: ชายอายุ 40 ปี ตอบสนองต่อ sulfonylurea",
      "source_key": "Diabetes mellitus (key, key2, key3)",
-     "explanation": "Hyperglycemia 320 + polyuria/nocturia + น้ำหนักลด + glucosuria = diabetes mellitus; ketone trace + ให้ sulfonylurea (ต้องมี β-cell function เหลือ) ชวนคิด type 2"
+     "explanation": "Hyperglycemia 320 + polyuria/nocturia + น้ำหนักลด + glucosuria = diabetes mellitus; เคสนี้ชี้ไปทาง type 2 เพราะชายอายุ 40 ปี ได้ sulfonylurea (ต้องมี β-cell function เหลือ) และ ketone แค่ trace"
     },
     {
      "id": "17.2a",
@@ -2661,7 +2662,7 @@
    ],
    "source": "claude-mcp",
    "key_concept": "Polyuria/nocturia, weight loss, glucose 320, glucosuria, ketone trace + ตอบสนองต่อ sulfonylurea (ยังมี β-cell เหลือ) → diabetes mellitus (type 2) · เซลล์ที่คุมน้ำตาล: β-cell (insulin ↓ glucose), α-cell (glucagon ↑ glucose), chromaffin cell (epinephrine ↑ glucose), enterocyte/L-cell (incretin)",
-   "audit_note": "key2 เขียนกำกับว่า 'เสี่ยง DKA' (urine ketone trace ที่ยังไม่ใช่ DKA) ไม่กระทบคำตอบ · key และ key3 ตอบ Diabetes mellitus (ไม่ระบุ type); การให้ sulfonylurea สอดคล้อง type 2"
+   "audit_note": "key2 เขียนกำกับว่า 'เสี่ยง DKA' (urine ketone trace ที่ยังไม่ใช่ DKA) ไม่กระทบคำตอบ · key และ key3 ตอบ Diabetes mellitus (ไม่ระบุ type); การให้ sulfonylurea สอดคล้อง type 2 · autoMatch ของข้อ 17.1: 'type 1 diabetes mellitus' ก็จะผ่านอัตโนมัติด้วย เพราะรับ 'diabetes mellitus' เปล่าไว้ ระบบตัดคำตอบนี้ออกไม่ได้ ให้ผู้เรียนตัดสินเอง"
   }
  ]
 }
