@@ -19,9 +19,6 @@
      "format": "short",
      "accepted": [
       "none",
-      "no storage",
-      "not stored",
-      "no storage pool",
       "ไม่มี",
       "ไม่เก็บ"
      ],
@@ -33,15 +30,17 @@
      "prompt": "Steroid hormone — site of receptor",
      "format": "short",
      "accepted": [
-      "intracellular",
-      "cytoplasm",
       "nuclear",
       "nucleus",
+      "cytoplasm",
       "ในเซลล์",
       "ภายในเซลล์"
      ],
      "source_key": "Intracellular R",
-     "explanation": "Steroid ผ่านเยื่อหุ้มเซลล์เข้าไปจับ receptor ภายในเซลล์ (cytoplasm/nucleus) แล้วควบคุม gene transcription"
+     "explanation": "Steroid ผ่านเยื่อหุ้มเซลล์เข้าไปจับ receptor ภายในเซลล์ (cytoplasm/nucleus) แล้วควบคุม gene transcription",
+     "keywords_all": [
+      "intracellular"
+     ]
     },
     {
      "id": "1.3",
@@ -62,15 +61,16 @@
      "prompt": "Thyroid hormone — site of receptor",
      "format": "short",
      "accepted": [
-      "intracellular",
       "nuclear",
       "nucleus",
       "ในเซลล์",
-      "ภายในเซลล์",
-      "ใน nucleus"
+      "ภายในเซลล์"
      ],
      "source_key": "Intracellular R",
-     "explanation": "T3 จับ thyroid hormone receptor ที่ nucleus (ภายในเซลล์) ต่างจาก peptide hormone ที่ใช้ receptor บนผิวเซลล์ แม้เป็น amine hormone"
+     "explanation": "T3 จับ thyroid hormone receptor ที่ nucleus (ภายในเซลล์) ต่างจาก peptide hormone ที่ใช้ receptor บนผิวเซลล์ แม้เป็น amine hormone",
+     "keywords_all": [
+      "intracellular"
+     ]
     }
    ]
   },
@@ -90,13 +90,14 @@
      "id": "2.1",
      "prompt": "PDGF",
      "format": "short",
-     "accepted": [
-      "paracrine"
-     ],
+     "accepted": [],
      "key_image": "img/END-45-KF-002-key.jpg",
      "key_image_caption": "สไลด์ Coordination of Body Functions by Chemical Messengers ที่แนบในเฉลยต้นฉบับ (neurotransmitter / endocrine / neuroendocrine / paracrine / autocrine)",
      "source_key": "Paracrine",
-     "explanation": "PDGF หลั่งสู่ ECF และออกฤทธิ์กับเซลล์ข้างเคียงที่ต่างชนิดกัน (paracrine) ตามสไลด์ในเฉลย"
+     "explanation": "PDGF หลั่งสู่ ECF และออกฤทธิ์กับเซลล์ข้างเคียงที่ต่างชนิดกัน (paracrine) ตามสไลด์ในเฉลย",
+     "keywords_all": [
+      "paracrine"
+     ]
     },
     {
      "id": "2.2",
@@ -112,25 +113,23 @@
      "id": "2.3",
      "prompt": "Oxytocin",
      "format": "short",
-     "accepted": [
-      "neuroendocrine",
-      "neuro endocrine",
-      "neurohormone"
-     ],
+     "accepted": [],
      "source_key": "Neuroendocrine",
-     "explanation": "Oxytocin สร้างจาก neuron ใน hypothalamus แล้วเก็บ/หลั่งเข้าเลือดที่ posterior pituitary จึงเป็น neuroendocrine"
+     "explanation": "Oxytocin สร้างจาก neuron ใน hypothalamus แล้วเก็บ/หลั่งเข้าเลือดที่ posterior pituitary จึงเป็น neuroendocrine",
+     "keywords_all": [
+      "neuroendocrine"
+     ]
     },
     {
      "id": "2.4",
      "prompt": "Acetylcholine",
      "format": "short",
-     "accepted": [
-      "neurotransmitter",
-      "neuro transmitter",
-      "synaptic"
-     ],
+     "accepted": [],
      "source_key": "Neurotransmitter",
-     "explanation": "ACh ถูกปล่อยจากปลาย axon ข้าม synaptic cleft ไปยังเซลล์เป้าหมาย (neurotransmitter / synaptic signaling)"
+     "explanation": "ACh ถูกปล่อยจากปลาย axon ข้าม synaptic cleft ไปยังเซลล์เป้าหมาย (neurotransmitter / synaptic signaling)",
+     "keywords_all": [
+      "neurotransmitter"
+     ]
     }
    ]
   },
@@ -385,70 +384,45 @@
      "id": "5.1",
      "prompt": "Calcitonin หลั่งจาก cell อะไร",
      "format": "short",
-     "accepted": [
-      "parafollicular",
-      "c cell",
-      "c-cell",
-      "c cells",
-      "clear cell"
-     ],
+     "accepted": [],
      "source_key": "parafollicular cell (C-cell) of thyroid gland",
-     "explanation": "Calcitonin สร้างจาก parafollicular cell (C cell) ซึ่งอยู่ระหว่าง follicle ของต่อมไทรอยด์ (ไม่ใช่ follicular cell ที่สร้าง T3/T4)"
+     "explanation": "Calcitonin สร้างจาก parafollicular cell (C cell) ซึ่งอยู่ระหว่าง follicle ของต่อมไทรอยด์ (ไม่ใช่ follicular cell ที่สร้าง T3/T4)",
+     "keywords_all": [
+      "parafollicular"
+     ],
+     "key_text": "parafollicular cell (C-cell) of thyroid gland"
     },
     {
      "id": "5.2",
      "prompt": "Calcitonin มีผลต่อระดับ Ca²⁺ ในเลือดอย่างไร (increase/decrease)",
      "format": "short",
      "accepted": [
-      "decrease calcium",
-      "decreased calcium",
-      "decrease ca",
-      "decreased ca",
-      "decrease serum calcium",
-      "decrease blood calcium",
-      "lower calcium",
-      "reduce calcium",
-      "calcium decrease",
-      "ลดแคลเซียม",
-      "ลด ca",
-      "ลดcalcium",
-      "↓ca",
-      "↓ calcium",
-      "ca↓",
-      "calcium↓"
+      "↓ ca²⁺",
+      "↓ca²⁺"
      ],
      "key_image": "img/END-45-KF-005-key.jpg",
      "key_image_caption": "ตาราง Comparative actions of vitamin D, PTH and calcitonin ที่แนบในเฉลยต้นฉบับ",
      "source_key": "↓ Ca²⁺ (↓ Ca²⁺, ↓ PO₄³⁻ in blood)",
-     "explanation": "Calcitonin ลด Ca²⁺ ในเลือด โดยยับยั้ง osteoclast (↓ bone resorption) และ ↓ reabsorption ของ Ca²⁺ ที่ไต"
+     "explanation": "Calcitonin ลด Ca²⁺ ในเลือด โดยยับยั้ง osteoclast (↓ bone resorption) และ ↓ reabsorption ของ Ca²⁺ ที่ไต",
+     "keywords_all": [
+      "decrease",
+      "calcium"
+     ]
     },
     {
      "id": "5.3",
      "prompt": "Calcitonin มีผลต่อระดับ phosphate (PO₄³⁻) ในเลือดอย่างไร (increase/decrease)",
      "format": "short",
      "accepted": [
-      "decrease phosphate",
-      "decreased phosphate",
-      "decrease po4",
-      "decreased po4",
-      "decrease serum phosphate",
-      "decrease blood phosphate",
-      "lower phosphate",
-      "reduce phosphate",
-      "phosphate decrease",
-      "ลดฟอสเฟต",
-      "ลด po4",
-      "ลด phosphate",
-      "↓po4",
-      "↓ po4",
-      "↓ po₄",
-      "↓po₄",
-      "↓phosphate",
-      "↓ phosphate",
-      "po4↓"
+      "↓ po₄³⁻",
+      "↓po₄³⁻"
      ],
      "source_key": "↓ PO₄³⁻ in blood",
-     "explanation": "Calcitonin ลดระดับ phosphate ในเลือดด้วย (↓ bone resorption และ ↓ phosphate reabsorption ที่ไต) ต่างจาก PTH ที่ ↑ Ca²⁺ แต่ ↓ phosphate reabsorption (phosphaturic)"
+     "explanation": "Calcitonin ลดระดับ phosphate ในเลือดด้วย (↓ bone resorption และ ↓ phosphate reabsorption ที่ไต) ต่างจาก PTH ที่ ↑ Ca²⁺ แต่ ↓ phosphate reabsorption (phosphaturic)",
+     "keywords_all": [
+      "decrease",
+      "phosphate"
+     ]
     }
    ]
   },
@@ -519,59 +493,28 @@
      "id": "7.2",
      "prompt": "Ezetimibe — consequent of action ข้อ 1)",
      "format": "short",
-     "accepted": [
-      "decrease chylomicron",
-      "decreased chylomicron",
-      "reduce chylomicron",
-      "reduced chylomicron",
-      "↓chylomicron",
-      "↓ chylomicron",
-      "less chylomicron",
-      "ลด chylomicron",
-      "decrease cholesterol absorption",
-      "decrease cholesterol uptake",
-      "reduce cholesterol absorption",
-      "reduce cholesterol uptake",
-      "↓ cholesterol absorption",
-      "↓ cholesterol uptake",
-      "↓cholesterol absorption",
-      "↓cholesterol uptake",
-      "ลดการดูดซึม cholesterol"
-     ],
+     "accepted": [],
      "source_key": "↓ chylomicron remnant-derived cholesterol to liver",
-     "explanation": "เมื่อ cholesterol ถูกดูดซึมน้อยลง chylomicron remnant ที่ส่ง cholesterol ไปตับจึงลดลง"
+     "explanation": "เมื่อ cholesterol ถูกดูดซึมน้อยลง chylomicron remnant ที่ส่ง cholesterol ไปตับจึงลดลง",
+     "keywords_all": [
+      "decrease",
+      "chylomicron"
+     ],
+     "key_text": "decrease chylomicron remnant-derived cholesterol to liver"
     },
     {
      "id": "7.3",
      "prompt": "Ezetimibe — consequent of action ข้อ 2)",
      "format": "short",
-     "accepted": [
-      "increase expression of ldl",
-      "increased expression of ldl",
-      "increase ldl receptor",
-      "increase ldl-r",
-      "increase ldlr",
-      "upregulate ldl",
-      "upregulation of ldl",
-      "↑ expression of ldl",
-      "↑expression of ldl",
-      "↑ ldl receptor",
-      "↑ldl receptor",
-      "↑ldlr",
-      "↑ ldlr",
-      "decrease ldl-c",
-      "decreased ldl-c",
-      "decrease ldl cholesterol",
-      "reduce ldl-c",
-      "reduced ldl-c",
-      "reduce ldl cholesterol",
-      "lower ldl-c",
-      "↓ ldl-c",
-      "↓ldl-c",
-      "ลด ldl-c"
-     ],
+     "accepted": [],
      "source_key": "↑ Expression of LDL-C ® → ↓ LDL-C in blood",
-     "explanation": "ตับได้ cholesterol จาก chylomicron remnant น้อยลง จึง upregulate LDL receptor (SREBP-2) ดึง LDL จากเลือดมากขึ้น → LDL-C ในเลือดลดลง"
+     "explanation": "ตับได้ cholesterol จาก chylomicron remnant น้อยลง จึง upregulate LDL receptor (SREBP-2) ดึง LDL จากเลือดมากขึ้น → LDL-C ในเลือดลดลง",
+     "keywords_all": [
+      "increase",
+      "ldl",
+      "receptor"
+     ],
+     "key_text": "increase expression of LDL receptor → decrease LDL-C in blood"
     },
     {
      "id": "7.4",
@@ -581,6 +524,8 @@
       "dpp-4",
       "dpp4",
       "dpp 4",
+      "dpp-iv",
+      "dpp iv",
       "dipeptidyl peptidase"
      ],
      "key_text": "Inhibit DPP-4 that deactivates GLP-1",
@@ -593,93 +538,52 @@
      "id": "7.5",
      "prompt": "Saxagliptin — consequent of action (1): ผลต่อ active GLP-1",
      "format": "short",
-     "accepted": [
-      "prolong glp",
-      "prolonged glp",
-      "prolong active glp",
-      "prolonged active glp",
-      "increase glp",
-      "increased glp",
-      "↑ glp",
-      "↑glp",
-      "longer glp",
-      "prevent glp-1 degradation",
-      "prevent degradation of glp",
-      "ยืดอายุ glp",
-      "เพิ่ม glp"
-     ],
+     "accepted": [],
      "source_key": "Prolong active GLP-1",
-     "explanation": "เมื่อ DPP-4 ถูกยับยั้ง active GLP-1 (incretin) ไม่ถูกย่อย จึงอยู่ในเลือดนานขึ้น (half-life ยาวขึ้น)"
+     "explanation": "เมื่อ DPP-4 ถูกยับยั้ง active GLP-1 (incretin) ไม่ถูกย่อย จึงอยู่ในเลือดนานขึ้น (half-life ยาวขึ้น)",
+     "keywords_all": [
+      "prolong",
+      "glp"
+     ]
     },
     {
      "id": "7.6",
      "prompt": "Saxagliptin — consequent of action (2): ผลต่อ insulin",
      "format": "short",
-     "accepted": [
-      "increase insulin",
-      "increased insulin",
-      "↑ insulin",
-      "↑insulin",
-      "enhance insulin",
-      "more insulin",
-      "stimulate insulin",
-      "insulin release ↑",
-      "insulin secretion ↑",
-      "↑ glucose-dependent insulin",
-      "increase glucose-dependent insulin",
-      "↑ insulin release",
-      "increase insulin release",
-      "เพิ่ม insulin",
-      "เพิ่มอินซูลิน",
-      "เพิ่มการหลั่ง insulin"
-     ],
+     "accepted": [],
      "source_key": "↑ glucose-dependent insulin release",
-     "explanation": "GLP-1 กระตุ้น β-cell หลั่ง insulin แบบขึ้นกับระดับ glucose (เมื่อ glucose สูงเท่านั้น) จึงเสี่ยง hypoglycemia ต่ำ"
+     "explanation": "GLP-1 กระตุ้น β-cell หลั่ง insulin แบบขึ้นกับระดับ glucose (เมื่อ glucose สูงเท่านั้น) จึงเสี่ยง hypoglycemia ต่ำ",
+     "keywords_all": [
+      "increase",
+      "insulin"
+     ],
+     "key_text": "increase glucose-dependent insulin release"
     },
     {
      "id": "7.7",
      "prompt": "Saxagliptin — consequent of action (3): ผลต่อ glucagon",
      "format": "short",
-     "accepted": [
-      "decrease glucagon",
-      "decreased glucagon",
-      "reduce glucagon",
-      "reduced glucagon",
-      "suppress glucagon",
-      "inhibit glucagon",
-      "less glucagon",
-      "↓ glucagon",
-      "↓glucagon",
-      "glucagon ↓",
-      "ลด glucagon"
-     ],
+     "accepted": [],
      "source_key": "↓ glucagon",
-     "explanation": "GLP-1 ยับยั้ง glucagon จาก α-cell (แบบ glucose-dependent) → ลดการสร้างกลูโคสที่ตับ"
+     "explanation": "GLP-1 ยับยั้ง glucagon จาก α-cell (แบบ glucose-dependent) → ลดการสร้างกลูโคสที่ตับ",
+     "keywords_all": [
+      "decrease",
+      "glucagon"
+     ],
+     "key_text": "decrease glucagon"
     },
     {
      "id": "7.8",
      "prompt": "Saxagliptin — consequent of action (4): ผลต่อ gastric emptying",
      "format": "short",
-     "accepted": [
-      "decrease gastric emptying",
-      "decreased gastric emptying",
-      "reduce gastric emptying",
-      "delay gastric",
-      "delayed gastric",
-      "delays gastric",
-      "slow gastric",
-      "slower gastric",
-      "slows gastric",
-      "↓ gastric",
-      "↓gastric",
-      "gastric emptying ↓",
-      "ชะลอการระบาย",
-      "ชะลอ gastric",
-      "ลด gastric",
-      "ช้าลง"
-     ],
+     "accepted": [],
      "source_key": "↓ gastric emptying",
-     "explanation": "GLP-1 ชะลอการระบายของกระเพาะอาหาร ช่วยให้อิ่มนานและลด postprandial glucose"
+     "explanation": "GLP-1 ชะลอการระบายของกระเพาะอาหาร ช่วยให้อิ่มนานและลด postprandial glucose",
+     "keywords_all": [
+      "delay",
+      "gastric"
+     ],
+     "key_text": "delay gastric emptying"
     }
    ]
   }
