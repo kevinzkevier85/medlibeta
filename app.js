@@ -137,13 +137,12 @@
     $("#side").innerHTML = [
       `<span class="lbl">${lecMode ? "Lecture · บล็อก" : "ข้อสอบ · บล็อก"}</span>`,
       `<a class="nav ${!cur && (view === undefined || view === "" || view === "lec") ? "on" : ""}" href="${lecMode ? "#/lec" : "#/"}">ทั้งหมด</a>`,
-      ...visibleBlocks().map((b) => `<a class="nav ${cur === b.id ? "on" : ""}" href="${lecMode ? `#/lec/${enc(b.id)}` : `#/b/${enc(b.id)}`}" style="--blk:${esc(b.color || "var(--artery)")}"><i class="dot"></i>${esc(b.name)}<small>${esc(b.id)}</small></a>`),
-      `<span class="lbl">เครื่องมือ</span>`,
-      `<a class="nav ${view === "add" ? "on" : ""}" href="#/add">เพิ่มข้อสอบ</a>`,
-      `<a class="nav ${view === "settings" ? "on" : ""}" href="#/settings">ตั้งค่า / ส่งออกข้อมูล</a>`,
-      `<button class="nav themebtn" data-act="theme" title="สลับโหมดสว่าง/มืด">${{ auto: "ธีม: ตามเครื่อง", light: "ธีม: สว่าง", dark: "ธีม: มืด" }[S().theme || "auto"]}</button>`,
-      `<a class="ver" href="#/settings/about" title="ดูว่าเวอร์ชันนี้มีอะไรใหม่"><b>v${esc(v.version)}</b> · ${esc(fmtDate(v.date))}</a>`,
+      ...visibleBlocks().map((b) => `<a class="nav ${cur === b.id ? "on" : ""}" href="${lecMode ? `#/lec/${enc(b.id)}` : `#/b/${enc(b.id)}`}" style="--blk:${esc(b.color || "var(--artery)")}"><i class="dot"></i>${esc(b.name)}</a>`),
     ].join("");
+    const th = { auto: ["◐", "ธีม: ตามเครื่อง"], light: ["☀", "ธีม: สว่าง"], dark: ["☾", "ธีม: มืด"] }[S().theme || "auto"];
+    $("#tools").innerHTML = `<a class="ibtn ${view === "add" ? "on" : ""}" href="#/add" title="เพิ่มข้อสอบ" aria-label="เพิ่มข้อสอบ">＋</a>`
+      + `<button class="ibtn" data-act="theme" title="${th[1]} (กดเพื่อสลับ)" aria-label="${th[1]}">${th[0]}</button>`
+      + `<a class="ibtn ${view === "settings" ? "on" : ""}" href="#/settings" title="ตั้งค่า / ส่งออกข้อมูล · v${esc(v.version)}" aria-label="ตั้งค่า">⚙</a>`;
   }
 
   /* ---------- exam mode ---------- */
@@ -175,8 +174,8 @@
     const nSetQ = b.sets.reduce((a, s) => a + s.questions.length, 0);
     const mine = USER.questions.filter((q) => q.block === b.id);
     main.innerHTML = `<div class="crumbs"><a href="#/">ข้อสอบ</a><span>/</span><span>${esc(b.name)}</span></div>
-      <div class="head blockhead" style="--blk:${esc(b.color || "var(--artery)")}"><h2><i class="dot"></i>${esc(b.name)} <span class="mono hint">${esc(b.id)}</span></h2>
-        <p class="hint">${b.sets.length} ชุด · ${nSetQ} ข้อ${b.lectures.length ? ` · <a href="#/lec/${enc(b.id)}">อ่าน lecture ของบล็อกนี้ (${b.lectures.length} บท) →</a>` : ""}${b._sample ? " · บล็อกนี้เป็นข้อมูลตัวอย่าง" : ""}</p></div>
+      <div class="head blockhead" style="--blk:${esc(b.color || "var(--artery)")}"><h2><i class="dot"></i>${esc(b.name)}</h2>
+        <p class="hint">${nSetQ} ข้อ${b._sample ? " · ข้อมูลตัวอย่าง" : ""}</p></div>
       ${QZ.examTabHTML(b)}
       ${mine.length ? `<h3>ข้อที่ฉันเพิ่มเอง (${mine.length})</h3><div class="rows">${mine.map((e) => `<a class="row" href="#/q/${enc(e.id)}"><span class="id">${e.cohort} · ข้อ ${e.n}</span><span class="t">${esc(stem(e).slice(0, 80))}</span><span class="meta"><span class="pill">ของฉัน</span></span></a>`).join("")}</div>` : ""}`;
   }
