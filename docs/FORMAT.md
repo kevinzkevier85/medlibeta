@@ -53,6 +53,7 @@ One file = one set; the website shows it as a whole set (cohort card → set run
 | `stem` | ✓ | ≥ 10 characters |
 | `options` | ✓ | object with keys from `A`–`E`, at least 2 |
 | `answer` | ✓ | one of the option keys |
+| `also_accept` | | other option keys that also score, e.g. `["C"]` (a question with more than one right choice; must not repeat `answer`) |
 | `answer_status` | ✓ | `verified` / `draft` / `disputed` |
 | `explanation` | | text |
 | `refs[]` | ✓ | `{ "lecture": "L02", "pages": [14, 15] }` or `{ "paper": "MCQ52", "pages": [6] }` — must exist in the block, pages within its page count |

@@ -139,12 +139,12 @@ window.MedLibQuizUI = function (ML) {
   // One question body. r = round (answers), reveal = show key
   function questionHTML(b, q, r, reveal, instant) {
     if (q.type === "MCQ") {
-      const chosen = r.ans[q.id], key = C.keyOf(q, kov());
+      const chosen = r.ans[q.id], key = C.keyOf(q, kov()), oks = C.okKeys(q, kov()), right = oks.includes(chosen);
       const order = (r.choiceOrder && r.choiceOrder[q.id]) || Object.keys(q.options);
       let h = `<div class="stem">${txt(q.stem)}</div>${figureHTML(b, q)}<ul class="opts">`;
       order.forEach((k, i) => {
         let cls = "";
-        if (reveal) { if (k === key) cls = "correct"; else if (k === chosen) cls = "wrong"; }
+        if (reveal) { if (oks.includes(k)) cls = "correct"; else if (k === chosen) cls = "wrong"; }
         const why = reveal && q.option_why && q.option_why[k] ? `<span class="why">${txt(q.option_why[k])}</span>` : "";
         const label = r.shuffleC ? "ABCDE"[i] : k;
         h += `<li><button class="opt ${cls}" data-opt="${esc(k)}" aria-pressed="${chosen === k}" ${reveal ? "disabled" : ""}><span class="k">${label}</span><span>${txt(q.options[k])}${why}</span></button></li>`;
@@ -152,8 +152,10 @@ window.MedLibQuizUI = function (ML) {
       h += `</ul>`;
       if (reveal) {
         const disp = r.shuffleC ? "ABCDE"[order.indexOf(key)] : key;
-        const extra = key ? `<p><b>${!chosen ? "ไม่ได้ตอบ · " : chosen === key ? "ถูกต้อง · " : "ยังไม่ใช่ · "}คำตอบ ${esc(disp)}${r.shuffleC && disp !== key ? ` (ช้อยส์ ${esc(key)} ในต้นฉบับ)` : ""}${q.answer_status === "corrected" ? " (เฉลยใหม่)" : q.answer_status === "draft" ? " (ร่างเฉลย)" : ""}</b></p>` : "";
-        h += explainHTML(b, q, extra, !chosen ? "none" : chosen === key ? "" : "bad");
+        const lbl = (k) => (r.shuffleC ? "ABCDE"[order.indexOf(k)] : k);
+        const alsoTxt = oks.length > 1 ? ` (${oks.slice(1).map(lbl).join(", ")} ก็นับถูก)` : "";
+        const extra = key ? `<p><b>${!chosen ? "ไม่ได้ตอบ · " : right ? "ถูกต้อง · " : "ยังไม่ใช่ · "}คำตอบ ${esc(disp)}${esc(alsoTxt)}${r.shuffleC && disp !== key ? ` (ช้อยส์ ${esc(key)} ในต้นฉบับ)` : ""}${q.answer_status === "corrected" ? " (เฉลยใหม่)" : q.answer_status === "draft" ? " (ร่างเฉลย)" : ""}</b></p>` : "";
+        h += explainHTML(b, q, extra, !chosen ? "none" : right ? "" : "bad");
       }
       return h;
     }
