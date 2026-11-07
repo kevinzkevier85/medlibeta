@@ -279,7 +279,7 @@ window.MedLibQuizUI = function (ML) {
     if (!r) { location.replace(base(b, s)); return; }
     const qmap = qmapOf(s);
     const i = Math.max(0, Math.min(r.qids.length - 1, (Number(pos) || 1) - 1));
-    r.idx = i;
+    r.idx = i; r.at = Date.now();   // "at" = last time this round was open, for ทำต่อจากล่าสุด
     const q = qmap[r.qids[i]];
     const instant = r.mode === "practice";
     const reveal = !!r.chk[q.id];
@@ -565,6 +565,18 @@ window.MedLibQuizUI = function (ML) {
     save(); location.hash = `#/set/${enc(b.id)}/@${enc(id)}`;
   }
 
+  // the round in progress that was open most recently (any visible block), for the home page
+  function lastActive() {
+    let best = null;
+    ML.visibleBlocks().forEach((b) => Object.entries(P().rounds).filter(([k]) => k.startsWith(b.id + "/")).forEach(([k, list]) => {
+      const s = setLike(b, k.slice(b.id.length + 1)); if (!s || !Array.isArray(list)) return;
+      list.forEach((r) => { if (r && !r.done && Array.isArray(r.qids) && (!best || (r.at || r.started || 0) > (best.r.at || best.r.started || 0))) best = { b, s, r }; });
+    }));
+    if (!best) return null;
+    const { b, s, r } = best;
+    return { href: `${base(b, s)}/run/${(r.idx || 0) + 1}`, title: s.mix ? s.title : `${b.name} · ชุด ${s.cohort} ${s.type}`, pos: (r.idx || 0) + 1, n: r.qids.length };
+  }
+
   // review queue of one block: due now / waiting (questions removed from the block are left out)
   function reviewCounts(b) {
     const R = P().review || {}, ids = ML.examsOf(b).filter((q) => C.counts(q, kov())).map((q) => q.id).filter((id) => R[id]);
@@ -797,5 +809,5 @@ window.MedLibQuizUI = function (ML) {
     return false;
   }
 
-  return { counts: (q) => C.counts(q, kov()), qPos, view, viewSingle, viewStats, reviewCounts, examTabHTML, planHTML, onClick, onChange, onInput, onKey, stop, blockResults };
+  return { counts: (q) => C.counts(q, kov()), qPos, view, viewSingle, viewStats, reviewCounts, lastActive, examTabHTML, planHTML, onClick, onChange, onInput, onKey, stop, blockResults };
 };

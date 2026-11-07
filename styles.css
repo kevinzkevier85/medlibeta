@@ -516,3 +516,7 @@ body.noscroll { overflow: hidden; }
   .popbox { width: 100%; height: 100%; border-radius: 0; border: 0; padding-top: env(safe-area-inset-top, 0px); }
   .poptitle { flex-basis: 100%; order: -1; }
 }
+figure img.zoom { touch-action: none; transform-origin: center; }
+.resume { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; padding: 14px 18px; margin: 0 0 12px; border: 1px solid var(--line); border-radius: var(--r-lg); background: var(--surface); color: var(--ink); text-decoration: none; }
+.resume b { flex: 1; min-width: 0; }
+.resume i { font-style: normal; color: var(--artery); }
