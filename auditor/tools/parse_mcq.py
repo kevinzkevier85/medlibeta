@@ -17,7 +17,11 @@ HEADER = re.compile(r"^VICHAKARN MED PSU \d+$", re.I)  # running page header of 
 INSTR = re.compile(r"^(\d\.\s*)?(ข้อสอบ\s*MCQ\s*มีทั้งหมด|นักศึกษามีเวลา|ข้อสอบเป็นภาษา|หมายเหตุ\s*:|ฝ่ายวิชาการ|-?\s*Vichakarn\s*Med|\d{3}-\d{3}\s+Endocrine)", re.I)
 
 
+FOOTER = re.compile(r"BY VICHAKARN MEDPSU \d+(\s+\d+)?|-\s*[\u201c\"]\s*GOOD LUCK\s*[\u201d\"]\s*-", re.I)  # page footers glued to text
+
+
 def norm(s):
+    s = FOOTER.sub(" ", s)
     s = unicodedata.normalize("NFC", s).replace(" ", " ")
     s = re.sub(r"[ \t]+", " ", s)
     return s.strip()
@@ -35,7 +39,7 @@ def parse(set_id):
     preamble = []
     for page, ln in lines:
         t = norm(ln)
-        if not t or HEADER.match(t) or INSTR.match(t):
+        if not t or HEADER.match(t) or INSTR.match(t) or re.fullmatch(r"\d{1,3}", t):  # bare page numbers
             continue
         m = Q_START.match(t)
         # A new question must be the next expected number. Blank-recall items ("3. –") have no choices,
