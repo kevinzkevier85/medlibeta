@@ -36,6 +36,7 @@
 | gi_47_MCQ | 99 | ข้อสอบ 2 คอลัมน์ มีลายน้ำ (รูปต้องตัดจากหน้า ไม่ใช้ native) · เฉลยเป็นขีด / ด้วยมือ อ่านด้วยตา · source_agree 82, source_disagree 12, ai_generated 5 · needs_review 14 |
 | gi_46_MCQ | 78 | recall (78 จาก 129) · ไฮไลต์ชมพู parse_key อ่านได้ (ช้อยส์คอลัมน์ขวา/ตัวอักษรซ้ำ ตรวจด้วยตา) · source_agree 65, source_disagree 4, ai_generated 7, drafted 2 · needs_review 4 |
 | gi_45_MCQ | 46 | recall · ตัวอักษรไทยใน text layer เพี้ยน (U→้, j→่) แก้ใน parsed.json · ข้อ 28/29, 45/46 ติดกัน แยกด้วยมือ · เฉลยขีด / อ่านด้วยตา · ⚠ เปิดหน้าเฉลย 1, 10, 15 ก่อนตอบ (ข้อ 1–3, 28–31, 44–46 ติด needs_review) · source_agree 41, source_disagree 5 · needs_review 14 |
+| gi_44_MCQ | 73 | recall (เลข 2–125) · ไฮไลต์ส้มอ่อน (เพิ่มสีใน parse_key แต่ตัวอักษรสีเกือบดำทำให้ parse_key หาเลขข้อไม่เจอ → วัดสีเองต่อช้อยส์ + ดูด้วยตา) · แยกข้อ 32/67/82/100/102/104 ด้วยมือ · ไม่มีรูปใน PDF (ข้อ 78, 95) · source_agree 52, source_disagree 12, ai_generated 3, drafted 6 · needs_review 15 |
 
 ## Waiting for user
 - `REVIEW.md`: 89 รายการ (Endocrine MCQ ทุกรุ่น)

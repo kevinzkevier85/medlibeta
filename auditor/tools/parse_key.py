@@ -22,7 +22,8 @@ PINK_MIN = 0.12  # fraction of pink pixels in an option box that counts as highl
 def is_pink(r, g, b):
     pink = r >= 220 and 100 <= g <= 215 and b >= 190 and r - g >= 25   # light pink (END) or magenta-pink (GI 52)
     lime = g >= 235 and r >= 180 and b <= 200 and g - b >= 50          # yellow-green highlighter (GI 48)
-    return pink or lime
+    salmon = r >= 240 and 185 <= g <= 215 and 175 <= b <= 210 and r - b >= 30   # pale salmon highlighter (GI 44)
+    return pink or lime or salmon
 
 
 def pink_fraction(pix, rect):
