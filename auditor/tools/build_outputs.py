@@ -204,7 +204,7 @@ def build_medlib(sets):
                        "stem": q["stem"], "options": {k: v for k, v in q["choices"].items() if v},
                        "answer": q["correct"], "answer_status": medlib_status(a), "explanation": exp,
                        "refs": refs, "tags": [x for x in [a["duplicate_group"]] if x], "source": "import",
-                       "audit_ref": q["id"]})
+                       "audit_ref": q["id"]} | ({"also_accept": q["also_accept"]} if q.get("also_accept") else {}))
         out = {"meta": {"set_id": set_name, "block": B, "cohort": c, "type": t,
                         "title": f"{t} {meta['block_name']} · Med PSU {c}",
                         "time_limit_min": meta.get("time_limit_min"), "n_source_items": s["n_source_items"],
