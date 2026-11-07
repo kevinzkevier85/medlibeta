@@ -1,11 +1,14 @@
 # REVIEW — รายการรอผู้ใช้ตัดสิน
 
-ทั้งหมด 34 รายการ
+ทั้งหมด 37 รายการ
 วิธีตอบ: พิมพ์ในแชทเป็นบรรทัด เช่น `end_52_MCQ_027: คงเดิม` / `end_52_MCQ_063: C` / `end_52_MCQ_046: ตรวจใหม่`
 Claude จะบันทึกลง `auditor/data/decisions.json` แล้ว build ใหม่
 
 | id | ต้นฉบับ | AI | ความมั่นใจ | เรื่อง | ตัวเลือกที่เป็นไปได้ / เหตุผล |
 |---|---|---|---|---|---|
+| end_46_MCQ_021 | None | None | None | ต้นฉบับมีแต่คำตอบ ไม่มีช้อยส์; AI เขียนข้อนี้ขึ้นใหม่จากโน้ตความจำในต้นฉบับ |  — A: เป็นหน้าที่ของ LCAT; B: ถูก (ตรงกับคำตอบในต้นฉบับ); C: เป็นหน้าที่ของ LPL; D: เป็นหน้าที่ของ SR-BI; E: เป็นหน้าที่ของ ABCA1 |
+| end_46_MCQ_043 | A | A | low | ไม่มี BMD (DXA) ในช้อยส์ ซึ่งเป็นการตรวจหลัก |   |
+| end_46_MCQ_049 | A | D | high | ช้อยส์ E AI เติมให้ครบ 5 ตัว; เฉลยขัดกับ AI | เฉลยต้นฉบับวง A (preserve bone mass) โดยแปะสไลด์ที่ list เป้าหมาย 4 ข้อ (preserve bone mass, prevent fractures, decrease pain, maintain function) — ตาม guideline เป้าหมายหลัก (primary) คือป้องกัน fracture (D) ขึ้นกับสไลด์ที่สอน — A: เป็นเป้าหมายรอง/วิธีการ (อยู่บนสุดของสไลด์); B: เป้าหมายรอง; C: เป้าหมายรอง; D: เป้าหมายหลักตาม guideline; E: ไม่ใช่เป้าหมาย |
 | end_47_MCQ_002 | A | E | medium | ถ้อยคำโจทย์น่าจะขาดคำว่า 'not' (iodine is NOT indicated as sole therapy); เฉลยขัดกับ AI | เฉลยต้นฉบับวง A (enhanced Wolff-Chaikoff block) — ถ้าโจทย์ถามว่าทำไม iodide ใช้ได้ผล A ถูก; แต่ถ้าถามว่าทำไม 'ไม่ใช้เป็นยาเดี่ยว' (ตามหลักเภสัช) คำตอบคือ escape phenomenon (E) ถ้อยคำในต้นฉบับกำกวม — A: เป็นกลไกที่ทำให้ iodide ได้ผล (ถ้าโจทย์ถามข้อดี); B: iodide ลด vascularity; C: เป็นของ RAI; D: ไม่ใช่เหตุผลหลัก; E: escape ใน 1–2 สัปดาห์ จึงใช้เดี่ยวไม่ได้ |
 | end_47_MCQ_006 | A | E | high | เฉลยขัดกับ AI | เฉลยต้นฉบับวง A (ATP-gated K⁺ channel is activated) ซึ่งผิดทิศ — sulfonylurea ปิด K-ATP ทำให้ depolarization (E) ข้อเดียวกันในรุ่น 50 (ข้อ 36) เฉลยเลือก depolarization — A: ผิดทิศ — K-ATP ถูกปิด; B: insulin หลั่งโดย exocytosis ที่กระตุ้นด้วย Ca²⁺ ไม่ใช่ผ่าน channel; C: ผิดทิศ — Ca²⁺ channel เปิด; D: ผิดทิศ — Ca²⁺ เพิ่มขึ้น; E: ถูก |
 | end_47_MCQ_012 | A | E | medium | ไม่มีช้อยส์ที่ตรงที่สุด (TG ใน chylomicron ไม่ถูกย่อย); เฉลยขัดกับ AI | เฉลยต้นฉบับวง A (chylomicron remnant uptake ผิดปกติ = type III) แต่ภาพ milky fasting serum + eruptive xanthoma + abdominal pain ในเด็กเข้ากับ LPL deficiency (type I) มากกว่า ช้อยส์ที่ใกล้ที่สุดคือ E — A: type III: remnant ค้าง แต่ serum ไม่ milky และพบในผู้ใหญ่; B: abetalipoproteinemia ไม่มี chylomicron (TG ต่ำ); C: Tangier disease (HDL ต่ำ ต่อมทอนซิลสีส้ม); D: เป็นส่วนของ type III; E: LPL ย่อยไม่ได้ (ใกล้ type I ที่สุด) |
