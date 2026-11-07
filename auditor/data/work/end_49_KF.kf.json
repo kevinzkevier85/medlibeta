@@ -1,0 +1,202 @@
+{
+  "set_id": "end_49_KF",
+  "note": "KF Endocrine Med PSU 49 — written by hand from the exam + key PDFs (every page read by eye, 2026-11-07). Header says 13 questions (the real exam had 16). source_key = what the original key says. build_kf.py turns this into data/blocks/END/exams/49_KF.json.",
+  "time_limit_min": 120,
+  "questions": [
+    {
+      "n": 1, "page": 1, "tags": ["lipoprotein metabolism", "apolipoprotein"],
+      "case": "Use these words to answer the questions below.\nApolipoprotein AI (apo AI) · Apolipoprotein B100 (apo B100) · Apolipoprotein CII (apo CII) · Apolipoprotein E (apo E) · Lipoprotein lipase · Hepatic lipase · LDL receptor · Lecithin cholesterol acyl transferase · Cholesteryl ester transfer protein",
+      "key_concept": "IDL → LDL ด้วย hepatic lipase · LDL จับ LDL receptor ด้วย apo B100 · CETP แลก CE กับ TG ระหว่าง HDL และ VLDL · LCAT เปลี่ยน discoidal → spherical HDL · apo E บน IDL เป็น ligand ของ LDL receptor",
+      "items": [
+        { "id": "1.1", "prompt": "The enzyme that hydrolysis the triglyceride of IDL", "format": "short", "accepted": ["hepatic lipase"],
+          "source_key": "Hepatic lipase",
+          "explanation": "Hepatic lipase ย่อย TG (และ phospholipid) ใน IDL ทำให้กลายเป็น LDL · Lipoprotein lipase ทำงานกับ chylomicron/VLDL ที่ capillary เป็นหลัก" },
+        { "id": "1.2", "prompt": "Most protein component that LDL used bind to LDL receptor", "format": "short", "accepted": ["apo b100", "apob100", "b100", "apolipoprotein b100"],
+          "source_key": "apo B100",
+          "explanation": "LDL มี apo B100 เป็นโปรตีนหลักและเป็น ligand จับ LDL receptor" },
+        { "id": "1.3", "prompt": "The protein that exchanges cholesterol ester and triglyceride between HDL and VLDL", "format": "short", "accepted": ["cholesteryl ester transfer protein", "cholesterol ester transfer protein", "cetp"],
+          "source_key": "Cholesteryl ester transfer protein",
+          "explanation": "CETP ย้าย cholesteryl ester จาก HDL ไป VLDL/LDL แลกกับ TG" },
+        { "id": "1.4", "prompt": "The protein that change discoidal HDL to spherical HDL", "format": "short", "accepted": ["lecithin cholesterol acyltransferase", "lecithin cholesterol acyl transferase", "lecithin cholesterol acyl", "lcat"],
+          "source_key": "Lecithin cholesterol acyl transferase",
+          "explanation": "LCAT (activate โดย apo AI) esterify cholesterol บน nascent discoidal HDL → cholesteryl ester เข้าแกนกลาง → spherical HDL" },
+        { "id": "1.5", "prompt": "Function of Apo E on IDL to activate", "format": "short", "accepted": ["ldl receptor", "ldlr"],
+          "source_key": "LDL receptor",
+          "explanation": "Apo E บน IDL (และ chylomicron remnant) เป็น ligand ให้ตับดึงเข้าผ่าน LDL receptor / LRP" }
+      ]
+    },
+    {
+      "n": 2, "page": 2, "tags": ["Addison's disease", "ACTH", "MC1R"],
+      "case": "Addison's disease is classically seen with hyperpigmentation caused by Hormone A deficiency that cause increasing hormone B and hormone B bind with C receptor in D cell. What is A, B, C, D",
+      "key_concept": "Cortisol ↓ → ไม่มี negative feedback → POMC/ACTH ↑ → ACTH จับ MC1R บน melanocyte → melanin ↑ ผิวคล้ำ",
+      "items": [
+        { "id": "2.A", "prompt": "Hormone A is", "format": "short", "accepted": ["cortisol"], "source_key": "Cortisol", "explanation": "Primary adrenal insufficiency → cortisol ต่ำ" },
+        { "id": "2.B", "prompt": "Hormone B is", "format": "short", "accepted": ["acth", "adrenocorticotropic"], "source_key": "ACTH", "explanation": "ขาด feedback → ACTH (จาก POMC) สูง" },
+        { "id": "2.C", "prompt": "Receptor C is", "format": "short", "accepted": ["melanocortin-1", "melanocortin 1", "mc1r", "mc1"], "source_key": "MC1R", "explanation": "ACTH มีลำดับส่วนต้นเหมือน α-MSH จึงจับ MC1R ได้" },
+        { "id": "2.D", "prompt": "D cell is", "format": "short", "accepted": ["melanocyte"], "source_key": "Melanocyte", "explanation": "MC1R อยู่บน melanocyte → melanin เพิ่ม → ผิวคล้ำ" }
+      ]
+    },
+    {
+      "n": 3, "page": 2, "tags": ["calcium absorption", "intestine"],
+      "case": "A previous study reported that low-income countries have higher risk of low calcium intake. Regarding intestinal calcium absorption,",
+      "key_concept": "เมื่อ Ca²⁺ ในอาหารต่ำ ลำไส้ใช้ transcellular (active, vitamin D-dependent: TRPV6 → calbindin → PMCA1b) · paracellular เด่นเมื่อ intake สูง",
+      "items": [
+        { "id": "3.1", "prompt": "Indicate a major pathway of intestinal calcium transport during low calcium intake", "format": "short", "accepted": ["transcellular", "active transport", "active"],
+          "source_key": "Transcellular transport",
+          "explanation": "Low Ca intake → calcitriol ↑ → ผ่านเซลล์ (TRPV6 → calbindin-D9k → PMCA1b/NCX1) ซึ่งอิ่มตัวได้ · paracellular (passive) ทำงานเมื่อ Ca ใน lumen สูง" },
+        { "id": "3.2", "prompt": "Indicate the intestinal segment with highest absorption rate per area in the dietary calcium deficiency", "format": "short", "accepted": ["cecum", "caecum", "duodenum"],
+          "source_key": "cecum",
+          "explanation": "เฉลยต้นฉบับตอบ cecum (อัตราดูดซึมต่อพื้นที่สูงสุดตามข้อมูลจากเอกสาร lecture) · duodenum ก็เป็นส่วนที่ active transport (TRPV6, calbindin) สูงสุดตามตำราทั่วไป จึงนับเป็นคำตอบที่ถูกด้วย" }
+      ],
+      "audit_note": "เฉลยตอบ cecum ตามที่เรียนในรายวิชา ตำรา (Koeppen/Berne & Levy) ว่า duodenum มี active Ca²⁺ transport ต่อความยาวสูงสุด จึงรับ duodenum เพิ่ม"
+    },
+    {
+      "n": 4, "page": 2, "tags": ["antihyperlipidemic drugs", "ezetimibe"],
+      "case": "Give one example of antihyperlipidemic drug that has the mechanism of action as given below. (ตารางต้นฉบับ: คอลัมน์ Drug / Mechanism of action — เฉลยเขียนชื่อยาลงในช่องขวา)",
+      "key_concept": "Bile acid sequestrant ดัก bile acid → ตับดึง cholesterol ไปสร้าง bile acid เพิ่ม → LDL receptor ↑ · PCSK9 inhibitor กัน LDL receptor ไม่ให้ถูกทำลายจึง recycle กลับ membrane · Ezetimibe ยับยั้ง NPC1L1",
+      "items": [
+        { "id": "4.1", "prompt": "Recycle LDL receptor", "format": "short",
+          "accepted": ["bile acid sequestrant", "bile acid binding resin", "bas", "cholestyramine", "colestipol", "colesevelam", "pcsk9", "evolocumab", "alirocumab", "inclisran", "inclisiran"],
+          "source_key": "BAS",
+          "explanation": "เฉลยตอบ BAS (bile acid sequestrant: cholestyramine, colestipol, colesevelam) ซึ่งทำให้ LDL receptor ที่ตับเพิ่มขึ้น · ระบบรับ PCSK9 inhibitor (evolocumab, alirocumab) ด้วย เพราะกัน LDL receptor ไม่ให้ถูกย่อยทำให้ recycle กลับมาที่ผิวเซลล์ตรงกับคำว่า recycle ที่สุด" },
+        { "id": "4.2", "prompt": "Inhibit NPC1L1", "format": "short", "accepted": ["ezetimibe"],
+          "source_key": "ezetimibe (เฉลยเขียนผิดเป็น \"czetimibe\")",
+          "explanation": "Ezetimibe ยับยั้ง NPC1L1 ที่ brush border ของลำไส้เล็ก ลดการดูดซึม cholesterol" }
+      ]
+    },
+    {
+      "n": 5, "page": 2, "tags": ["metformin", "DPP-4 inhibitor"],
+      "case": "A 60-year-old man with polyuria, polydipsia, and plasma glucose level of 156 mg/dl. The physician prescribes metformin and saxagliptin give mechanism of action of these drug",
+      "key_concept": "Metformin: AMPK ↑ → hepatic gluconeogenesis ↓ · Saxagliptin: DPP-4 inhibitor → incretin (GLP-1/GIP) อยู่นานขึ้น",
+      "items": [
+        { "id": "5.1", "prompt": "Metformin — mechanism of action", "format": "short", "accepted": ["ampk", "gluconeogenesis"],
+          "key_text": "activate AMPK in liver & muscle to improve glucose & lipid metabolism",
+          "source_key": "activate AMPK in liver & muscle to improve glucose & lipid met.",
+          "explanation": "Metformin กระตุ้น AMPK → ลด hepatic gluconeogenesis และเพิ่ม insulin sensitivity ที่กล้ามเนื้อ ไม่กระตุ้นการหลั่ง insulin" },
+        { "id": "5.2", "prompt": "Saxagliptin — mechanism of action", "format": "short", "accepted": ["dpp-4", "dpp4", "dpp 4", "dipeptidyl peptidase"],
+          "source_key": "inhibit DPP-4",
+          "explanation": "ยับยั้ง DPP-4 ที่ย่อย GLP-1/GIP → incretin อยู่นาน → insulin หลั่งตามระดับกลูโคส, glucagon ลด" }
+      ]
+    },
+    {
+      "n": 6, "page": 3, "tags": ["adverse drug effect", "glucocorticoid", "mitotane"],
+      "case": "Give 1 name of Synthetic steroid / inhibitor / antagonist drug match with ADR (ตารางต้นฉบับ: Adverse drug effect / Drug)",
+      "key_concept": "Glucocorticoid สังเคราะห์ (prednisolone) ใช้นาน → osteoporosis · Mitotane (adrenolytic inhibitor) → neurotoxicity ร่วมกับ GI และ adrenal insufficiency",
+      "items": [
+        { "id": "6.1", "prompt": "Osteoporosis — drug (synthetic steroid)", "format": "short",
+          "accepted": ["prednisolone", "prednisone", "dexamethasone", "methylprednisolone", "hydrocortisone", "betamethasone", "triamcinolone", "glucocorticoid", "corticosteroid"],
+          "source_key": "prednisolone (synthetic steroid)",
+          "explanation": "Glucocorticoid สังเคราะห์ใช้ระยะยาว → ยับยั้ง osteoblast, ลดการดูด Ca ที่ลำไส้, เพิ่ม bone resorption → osteoporosis ตัวใดก็ได้ในกลุ่มนี้" },
+        { "id": "6.2", "prompt": "Neurotoxicity — drug (inhibitor)", "format": "short", "accepted": ["mitotane"],
+          "source_key": "mitotane (ตัวหนังสือสีม่วงกำกับว่า \"และ inhibitor\")",
+          "explanation": "Mitotane เป็น adrenolytic ที่ทำลาย adrenal cortex ผลข้างเคียงเด่น: neurotoxicity (ง่วง, ซึม, ataxia), GI upset" }
+      ]
+    },
+    {
+      "n": 7, "page": 3, "tags": ["thyroid hormone therapy", "levothyroxine"],
+      "case": "Give only one answer for each of the following questions regarding to thyroid hormone therapy",
+      "key_concept": "Levothyroxine (L-T4) ใช้ทดแทน hypothyroidism/myxedema coma · ผลเสีย = อาการเหมือน hyperthyroidism · T4 → T3 ด้วย 5'-deiodinase แล้ว T3 เข้า nucleus จับ thyroid receptor",
+      "items": [
+        { "id": "7.1", "prompt": "Preparation of choice", "format": "short", "accepted": ["levothyroxine", "thyroxine", "l-t4", "lt4"],
+          "source_key": "Thyroxine (levothyroxine; L-T4)",
+          "explanation": "Levothyroxine ครึ่งชีวิตยาว (~7 วัน) กินวันละครั้ง ร่างกายแปลงเป็น T3 เอง" },
+        { "id": "7.2", "prompt": "Clinical use", "format": "short", "accepted": ["hypothyroidism", "hypothyroid", "myxedema", "myxoedema"],
+          "source_key": "ใช้ฮอร์โมนทดแทนในผู้ป่วยภาวะ hypothyroidism, myxedema coma",
+          "explanation": "ใช้ทดแทนในผู้ป่วยขาดฮอร์โมนไทรอยด์ รวมถึง myxedema coma (ให้ IV)" },
+        { "id": "7.3", "prompt": "Adverse effect", "format": "short", "accepted": ["hyperthyroidism", "thyrotoxicosis", "toxicity", "nervousness", "palpitation", "tachycardia", "tremor", "arrhythmia", "heat intolerance", "anxiety", "weight loss"],
+          "source_key": "คล้ายภาวะ hyperthyroidism (มากไป → toxicity เช่น nervousness, palpitation)",
+          "explanation": "ให้เกินขนาด → อาการ thyrotoxicosis: ใจสั่น หัวใจเต้นเร็ว/arrhythmia, ประสาท, ทนร้อนไม่ได้, น้ำหนักลด" },
+        { "id": "7.4", "prompt": "Mechanism of action", "format": "short", "accepted": ["thyroid receptor", "thyroid hormone receptor", "nuclear receptor", "deiodinase"],
+          "key_text": "T4 เปลี่ยนเป็น T3 โดย 5'-deiodinase → T3 เข้าสู่ nucleus จับ thyroid receptor (TR)",
+          "source_key": "T4 เปลี่ยนเป็น T3 โดย 5'-deiodinase → T3 เข้าสู่ nucleus → จับ thyroid receptor (TR)",
+          "explanation": "T4 (prohormone) ถูก 5'-deiodinase เปลี่ยนเป็น T3 ที่ active → จับ TR-RXR ใน nucleus → กระตุ้น gene transcription เพิ่ม metabolism" }
+      ]
+    },
+    {
+      "n": 8, "page": 3, "tags": ["DKA", "T1DM"],
+      "case": "A 20-year-old man patient with T1DM (Diabetes mellitus Type 1) is brought to emergency room for abdominal pain, nausea, and vomiting. Answer the following question. Fill in the blanks in the table below. (normal/increased/decreased)",
+      "key_concept": "T1DM ขาด insulin → lipolysis → ketone ↑ → metabolic acidosis (pH ↓) = DKA",
+      "items": [
+        { "id": "8.1", "prompt": "Serum ketones", "format": "short", "accepted": ["increased", "increase", "high", "สูง", "เพิ่ม"], "source_key": "increased", "explanation": "ขาด insulin + glucagon สูง → β-oxidation → ketone bodies มากขึ้น" },
+        { "id": "8.2", "prompt": "Blood pH", "format": "short", "accepted": ["decreased", "decrease", "low", "ต่ำ", "ลด"], "source_key": "decreased", "explanation": "Ketoacid (β-hydroxybutyrate, acetoacetate) → high anion gap metabolic acidosis" }
+      ]
+    },
+    {
+      "n": 9, "page": 3, "tags": ["hyperaldosteronism", "Conn syndrome"],
+      "case": "A 65-year-old man presents with severe headache. PE: BP 180/100 mmHg, HR 80 bpm. Lab: morning cortisol 15 ug/dl (Ref 6-23), plasma renin activity 1.2 ng/mL/hr (Ref 1.9-3.7), serum aldosterone 44 ng/dL (Ref 4.0-31.0), serum potassium 2.5 mmol/dL. Which 2 pathologies are the causes of this patient condition?",
+      "key_concept": "Aldosterone สูง + renin ต่ำ + K ต่ำ + HT = primary hyperaldosteronism · สาเหตุ: aldosterone-producing adenoma (Conn) และ bilateral adrenal hyperplasia",
+      "items": [
+        { "id": "9", "prompt": "Which 2 pathologies are the causes of this patient condition?", "format": "short", "keywords_all": ["adenoma", "hyperplasia"],
+          "key_text": "Adrenal hyperplasia, Adrenal cortex adenoma",
+          "source_key": "1. Adrenal hyperplasia  2. Adrenal cortex adenoma",
+          "explanation": "Primary hyperaldosteronism (renin ถูกกด) จาก aldosterone-producing adenoma และ bilateral idiopathic adrenal hyperplasia · ระบบตรวจอัตโนมัติต้องมีทั้ง adenoma และ hyperplasia" }
+      ]
+    },
+    {
+      "n": 10, "page": 4, "tags": ["Addison's disease", "primary adrenal insufficiency"],
+      "case": "A 45-year-old patient complained of unusual fatigue, weakness, frequent diarrhea, nausea, vomiting, weight loss and dizziness. The examination revealed hyperpigmentation of multiple area of skin, low blood sugar, generalized muscle weakness and painful joints during palpation. 10.1 Give possible results of the following laboratory finding.",
+      "key_concept": "Primary adrenal insufficiency (Addison): ต่อมหมวกไตเสีย → cortisol ↓, aldosterone ↓, ACTH ↑ (hyperpigmentation), ACTH stimulation test ไม่ตอบสนอง",
+      "items": [
+        { "id": "10.1a", "prompt": "Serum cortisol", "format": "short", "accepted": ["low", "ต่ำ", "decreased"], "source_key": "low", "explanation": "ต่อมหมวกไตถูกทำลาย → cortisol ต่ำ" },
+        { "id": "10.1b", "prompt": "Plasma aldosterone", "format": "short", "accepted": ["low", "ต่ำ", "decreased"], "source_key": "low", "explanation": "Primary: zona glomerulosa เสียด้วย → aldosterone ต่ำ (ต่างจาก secondary ที่ aldosterone ปกติ)" },
+        { "id": "10.1c", "prompt": "Plasma ACTH", "format": "short", "accepted": ["high", "สูง", "increased", "elevated"], "source_key": "high (เขียนกำกับ \"↑ ACTH\" ที่ hyperpigmentation)", "explanation": "ขาด negative feedback → ACTH สูง → ผิวคล้ำจาก MC1R" },
+        { "id": "10.1d", "prompt": "ACTH stimulation test", "format": "short", "accepted": ["no response", "non response", "nonresponse", "not respon", "ไม่ตอบสนอง"], "source_key": "no response", "explanation": "ต่อมหมวกไตเสียหายจริง จึงไม่ตอบสนองต่อ ACTH (cortisol ไม่เพิ่ม)" },
+        { "id": "10.2", "prompt": "What is mostly diagnosis?", "format": "short", "accepted": ["primary adrenal insufficiency", "primary adrenocortical insufficiency", "primary hypoadrenalism", "addison"],
+          "source_key": "primary adrenal insufficiency", "explanation": "Hyperpigmentation + cortisol ต่ำ + ACTH สูง = primary adrenal insufficiency (Addison's disease)" }
+      ]
+    },
+    {
+      "n": 11, "page": 4, "tags": ["hypothalamo-hypophyseal portal", "hypothalamic hormones"],
+      "case": "Circle the following hormones that secret to hypothalamo-hypophyseal portal circulation. (only 3 choice)",
+      "key_concept": "Portal circulation ของ hypothalamus นำ releasing/inhibiting hormone (TRH, CRH, GnRH, GHRH, somatostatin, dopamine) ไป anterior pituitary · ACTH, GH, FSH, LH, prolactin หลั่งจาก anterior pituitary เข้า systemic · ADH, oxytocin ลง posterior pituitary",
+      "answer_status": "disputed",
+      "audit_note": "เฉลยวงกลม TRH, LH, Prolactin แต่ LH และ prolactin เป็นฮอร์โมนของ anterior pituitary ที่หลั่งเข้า systemic circulation ไม่ใช่ฮอร์โมนที่ส่งเข้า portal · ตัวเลือกที่เป็นฮอร์โมน hypothalamus จริงในลิสต์มีแค่ TRH และ CRH (ตัวที่สามไม่ชัดเจน อาจเป็น ADH ที่ co-release กับ CRH) ตั้งเป็น disputed ไม่นับคะแนนจนกว่าจะตรวจเฉลยกับอาจารย์ · ที่เก็บไว้ในช่อง answer = ตามเฉลยต้นฉบับ",
+      "items": [
+        { "id": "11", "prompt": "เลือก 3 ข้อ", "format": "select", "max_answers": 3,
+          "options": [
+            { "key": "A", "text": "TRH" }, { "key": "B", "text": "LH" }, { "key": "C", "text": "CRH" }, { "key": "D", "text": "Prolactin" },
+            { "key": "E", "text": "ACTH" }, { "key": "F", "text": "Calcitonin" }, { "key": "G", "text": "GH" }, { "key": "H", "text": "ADH" },
+            { "key": "I", "text": "FSH" }, { "key": "J", "text": "Oxytocin" }
+          ],
+          "answer": ["A", "B", "D"],
+          "source_key": "TRH, LH, Prolactin (วงกลมในไฟล์เฉลย)",
+          "explanation": "เฉลยต้นฉบับ = TRH, LH, Prolactin แต่น่าจะผิด: CRH เป็นฮอร์โมน hypothalamus ที่ส่งเข้า portal แน่นอน ขณะที่ LH และ prolactin หลั่งจาก anterior pituitary ไป systemic circulation" }
+      ]
+    },
+    {
+      "n": 12, "page": 4, "tags": ["Laron syndrome", "GH", "IGF-1"],
+      "case": "A 14-year-old boy with Laron dwarfs has short stature for his age. Answer the following questions. 12.1 Levels (normal/low/high/deficiency)",
+      "key_concept": "Laron syndrome = GH receptor mutation → GH สูง, IGF-1 ต่ำ (ตับสร้างไม่ได้), IGF-1 receptor ปกติ → รักษาด้วย recombinant IGF-1 (mecasermin)",
+      "items": [
+        { "id": "12.1a", "prompt": "Serum growth hormone", "format": "short", "accepted": ["high", "สูง", "increased", "elevated"],
+          "source_key": "high",
+          "key_image": "img/END-49-KF-012-key.jpg",
+          "key_image_caption": "สไลด์ที่แนบในเฉลยต้นฉบับ: Normal growth vs Laron syndrome — GH-R กลายพันธุ์ ไม่มี feedback inhibition ของ GH, IGF-1 ต่ำ, เติบโตช้า",
+          "explanation": "GHR กลายพันธุ์ → ไม่มี IGF-1 มา feedback ยับยั้งต่อมใต้สมอง → GH สูง" },
+        { "id": "12.1b", "prompt": "Serum IGF-1", "format": "short", "accepted": ["low", "ต่ำ", "decreased", "deficien"],
+          "source_key": "low", "explanation": "ตับตอบสนอง GH ไม่ได้ (GH receptor เสีย) → IGF-1 ต่ำ" },
+        { "id": "12.1c", "prompt": "IGF-1 receptor expression", "format": "short", "accepted": ["normal", "ปกติ"],
+          "source_key": "normal", "explanation": "ความผิดปกติอยู่ที่ GH receptor ไม่ใช่ IGF-1 receptor จึงปกติ" },
+        { "id": "12.2", "prompt": "In this boy should treat with ........ (One hormone) will correct this growth deficiency.", "format": "short", "accepted": ["igf-1", "igf1", "igf 1", "mecasermin", "somatomedin"],
+          "source_key": "recombinant human IGF-1",
+          "explanation": "ให้ recombinant human IGF-1 (mecasermin) · ให้ GH ไม่ได้ผลเพราะ receptor เสีย" }
+      ]
+    },
+    {
+      "n": 13, "page": 5, "tags": ["peptide hormone", "hormone synthesis"],
+      "case": "ฮอร์โมนที่เริ่มต้นจาก preprohormone จากนั้นถูกเปลี่ยนเป็น prohormone ที่ RER จากนั้นจะถูกเปลี่ยนเป็น hormone แล้วบรรจุใน secretory vesicle รอการกระตุ้นเพื่อปล่อยออกสู่ Blood circulation",
+      "key_concept": "Peptide hormone: สร้างเป็น preprohormone ที่ ribosome → prohormone ใน ER → ตัดเป็น hormone ที่ Golgi → เก็บใน secretory vesicle → exocytosis เมื่อ Ca²⁺ ใน cytoplasm สูง",
+      "items": [
+        { "id": "13.1", "prompt": "ฮอร์โมนนั้นคือประเภทฮอร์โมนอะไร", "format": "short", "accepted": ["peptide", "polypeptide", "protein hormone"],
+          "source_key": "peptide hormone",
+          "key_image": "img/END-49-KF-013-key.jpg",
+          "key_image_caption": "สไลด์ที่แนบในเฉลยต้นฉบับ: Synthesis and Secretion of Peptide Hormones (Koeppen & Stanton)",
+          "explanation": "Peptide/protein hormone สร้างเป็น preprohormone → prohormone → hormone เก็บใน vesicle (ต่างจาก steroid ที่ไม่เก็บ)" },
+        { "id": "13.2", "prompt": "ยกตัวอย่างชื่อฮอร์โมน", "format": "short",
+          "accepted": ["adh", "vasopressin", "oxytocin", "msh", "tsh", "acth", "fsh", "prolactin", "growth hormone", "luteinizing", "trh", "pth", "parathyroid hormone", "insulin", "glucagon", "somatostatin", "calcitonin"],
+          "source_key": "ADH, oxytocin, MSH, GH, TSH, ACTH, FSH, LH, PRL, TRH, PTH",
+          "explanation": "ตัวอย่างใดก็ได้ที่เป็น peptide hormone เช่น ADH, oxytocin, insulin, glucagon, ACTH, TSH, PTH" }
+      ]
+    }
+  ]
+}
