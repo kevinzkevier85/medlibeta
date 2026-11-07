@@ -37,11 +37,10 @@ function applyTopics(blockDir) {
   const raws = files.map((f) => fs.readFileSync(f, "utf8")), sets = raws.map((r) => JSON.parse(r));
   // check everything before writing anything
   const seen = new Set(sets.flatMap((s) => s.questions.map((q) => q.id)));
-  const bad = Object.entries(map.questions || {}).flatMap(([qid, tp]) => [
-    ...(ids.has(tp) ? [] : [`${qid}: ไม่มีหัวข้อ ${tp} ในรายชื่อ`]),
-    ...(seen.has(qid) ? [] : [`${qid}: ไม่มีข้อนี้ในไฟล์ข้อสอบ`]),
-  ]);
+  const bad = Object.entries(map.questions || {}).filter(([, tp]) => !ids.has(tp)).map(([qid, tp]) => `${qid}: ไม่มีหัวข้อ ${tp} ในรายชื่อ`);
   if (bad.length) throw new Error(`topics.json ของ ${block.id} ผิด:\n  ${bad.join("\n  ")}`);
+  // a question removed from the exams but still in topics.json: skip it (warn), never block the rebuild
+  const stale = Object.keys(map.questions || {}).filter((qid) => !seen.has(qid));
 
   let tagged = 0; const untagged = [];
   sets.forEach((s, i) => {
@@ -56,7 +55,7 @@ function applyTopics(blockDir) {
   for (const [k, v] of Object.entries(block)) { if (k !== "topics") nb[k] = v; if (k === "exam_sets") nb.topics = map.topics; }
   if (!("topics" in nb)) nb.topics = map.topics;
   writeLike(blockFile, blockRaw, nb);
-  return { tagged, untagged };
+  return { tagged, untagged, stale };
 }
 
 if (require.main === module) {
@@ -70,6 +69,7 @@ if (require.main === module) {
     try {
       const r = applyTopics(dir);
       console.log(`${b}: ติดหัวข้อ ${r.tagged} ข้อ · ยังไม่มีหัวข้อ ${r.untagged.length} ข้อ${r.untagged.length ? ` (${r.untagged.slice(0, 5).join(", ")}${r.untagged.length > 5 ? " …" : ""})` : ""}`);
+      if (r.stale.length) console.log(`⚠ ${b}: topics.json มีข้อที่ไม่อยู่ในไฟล์ข้อสอบแล้ว ${r.stale.length} ข้อ (${r.stale.slice(0, 5).join(", ")}) ลบออกจาก topics.json ได้`);
     } catch (e) { console.log(`✗ ${e.message}`); fail = true; }
   }
   process.exit(fail ? 1 : 0);

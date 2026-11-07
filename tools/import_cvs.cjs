@@ -164,6 +164,8 @@ if (!idx.blocks.includes("CVS")) { idx.blocks.push("CVS"); fs.writeFileSync(idxF
 console.log(`CVS: ${lectures.length} lectures, ${sets.length} sets, ${nq} questions, images ${(imgBytes / 1e6).toFixed(1)} MB`);
 // topic tags live in data/blocks/CVS/topics.json; put them back into the files just written
 if (fs.existsSync(path.join(OUT, "topics.json"))) {
-  const r = require("./apply_topics.cjs").applyTopics(OUT);
-  console.log(`CVS topics: ${r.tagged} tagged, ${r.untagged.length} without a topic`);
+  try {
+    const r = require("./apply_topics.cjs").applyTopics(OUT);
+    console.log(`CVS topics: ${r.tagged} tagged, ${r.untagged.length} without a topic${r.stale.length ? `, ${r.stale.length} stale ids in topics.json` : ""}`);
+  } catch (e) { console.error(`✗ ${e.message}\n  แก้ data/blocks/CVS/topics.json แล้วรัน node tools/apply_topics.cjs CVS`); process.exit(1); }
 }

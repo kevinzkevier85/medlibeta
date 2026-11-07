@@ -43,11 +43,15 @@ t("running twice changes nothing; indents kept", () => {
   assert.deepStrictEqual(snap(dir), a);
   assert.match(a[0], /^\{\n  "id"/); assert.match(a[1], /^\{\n "meta"/); assert.ok(a[0].endsWith("\n")); assert.ok(!a[1].endsWith("\n"));
 });
-t("unknown topic or question id → throws, nothing written", () => {
-  for (const map of [{ "X-1-MCQ-001": "nope" }, { "X-1-MCQ-009": "thyroid" }]) {
-    const dir = makeBlock(map), before = snap(dir);
-    assert.throws(() => applyTopics(dir), (e) => /nope|X-1-MCQ-009/.test(e.message));
-    assert.deepStrictEqual(snap(dir), before);
-  }
+t("unknown topic → throws, nothing written", () => {
+  const dir = makeBlock({ "X-1-MCQ-001": "nope" }), before = snap(dir);
+  assert.throws(() => applyTopics(dir), (e) => /nope/.test(e.message));
+  assert.deepStrictEqual(snap(dir), before);
+});
+t("question id no longer in the exams → listed as stale, the rest still tagged", () => {
+  const dir = makeBlock({ "X-1-MCQ-001": "thyroid", "X-1-MCQ-009": "thyroid" });
+  const r = applyTopics(dir);
+  assert.deepStrictEqual(r.stale, ["X-1-MCQ-009"]); assert.strictEqual(r.tagged, 1);
+  assert.strictEqual(JSON.parse(read(dir, "exams/1_MCQ.json")).questions[0].topic, "thyroid");
 });
 console.log(`\n${pass} ผ่าน`);
