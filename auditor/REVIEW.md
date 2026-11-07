@@ -1,11 +1,13 @@
 # REVIEW — รายการรอผู้ใช้ตัดสิน
 
-ทั้งหมด 61 รายการ
+ทั้งหมด 63 รายการ
 วิธีตอบ: พิมพ์ในแชทเป็นบรรทัด เช่น `end_52_MCQ_027: คงเดิม` / `end_52_MCQ_063: C` / `end_52_MCQ_046: ตรวจใหม่`
 Claude จะบันทึกลง `auditor/data/decisions.json` แล้ว build ใหม่
 
 | id | ต้นฉบับ | AI | ความมั่นใจ | เรื่อง | ตัวเลือกที่เป็นไปได้ / เหตุผล |
 |---|---|---|---|---|---|
+| end_44_MCQ_058 | ['B', 'C'] | C | high | ผู้เฉลยวงทั้ง inhibit COX2 และ inhibit cytokine production; ช้อยส์ E AI เติมให้ครบ 5 ตัว; ต้นฉบับวงไว้หลายตัว | เฉลยต้นฉบับวงทั้ง B (inhibit COX2) และ C (inhibit cytokine production) — glucocorticoid ลดทั้ง COX-2 expression และ cytokine production จริง; ควรนับถูกทั้ง B และ C — A: ไม่ใช่ (NSAID ไม่ใช่ steroid); B: ลด COX-2 expression (ถูกได้); C: ถูก — ยับยั้ง NF-κB; D: ลด phagocytosis; E: ไม่ใช่กลไกของ steroid |
+| end_44_MCQ_093 | B | B | low | gemfibrozil ก็เสริมฤทธิ์ warfarin ได้มาก; การแยกเวลากินช่วยกับ bile acid sequestrant (ลดการดูดซึม) มากกว่า interaction แบบ CYP |   |
 | end_45_MCQ_002 | D | C | medium | คำตอบขึ้นกับตำรา: Golgi (lecture/BRS) หรือ secretory vesicle (USMLE); เฉลยขัดกับ AI | เฉลยต้นฉบับวง D (vesicle); ข้อ 13 ในชุดเดียวกันผู้เฉลยวงทั้ง vesicle และ Golgi และเขียนว่า lecture/BRS บอก Golgi — AI เลือก C (Golgi) อาจนับถูกทั้ง C และ D — A: ไม่เกี่ยว; B: SER สร้าง steroid; C: การตัดเริ่มที่ trans-Golgi (lecture); D: การตัดเกิดต่อใน secretory vesicle (USMLE); E: ไม่เกี่ยว |
 | end_45_MCQ_005 | E | E | low | ถ้อยคำโจทย์กว้าง (ตะคริวมีหลายสาเหตุ) |   |
 | end_45_MCQ_013 | ['A', 'E'] | E | high | ผู้เฉลยวงทั้ง Golgi และ secretory vesicle; ต้นฉบับวงไว้หลายตัว | เฉลยต้นฉบับวงทั้ง A (lysosomal/secretory vesicle) และ E (Golgi) โดยเขียนว่า lecture/BRS บอก Golgi, USMLE บอก secretory granule — AI เลือก E — A: secretory vesicle (ไม่ใช่ lysosome) — ตามตำราบางเล่ม; B: ไม่เกี่ยว; C: เป็นที่ตัด prepro → pro; D: ไม่เกี่ยว; E: Golgi (lecture) |
