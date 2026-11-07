@@ -236,7 +236,7 @@ window.MedLibQuizUI = function (ML) {
       <div class="opts-row"><label class="chk"><input type="checkbox" id="shufQ" ${pref.shuffleQ ? "checked" : ""}> สุ่มลำดับข้อ</label><label class="chk"><input type="checkbox" id="shufC" ${pref.shuffleC ? "checked" : ""}> สุ่มลำดับช้อยส์ (MCQ)</label></div>
       <button class="btn primary big" data-z="start">${act ? "เริ่มรอบใหม่ (รอบเดิมจะถูกเก็บเป็นประวัติแบบไม่ครบ)" : "เริ่มทำ"}</button></section>`;
     const pr = setProgress(b, s);
-    h += `<section class="minihist"><h3>ความคืบหน้า</h3><p class="hint">เคยทำแล้ว ${pr.done}/${pr.total} ข้อ · ถูกล่าสุด ${pr.ok} ข้อ${last ? ` · รอบล่าสุด ${C.roundStats(last, qmapOf(s), kov()).pct}% (<a href="${B}/sum/${last.id}">ดูผล</a> · <a href="${B}/hist">ประวัติทั้งหมด</a>)` : ""}</p></section>`;
+    h += `<section class="minihist"><h3>ความคืบหน้า</h3><p class="hint">${pr.total ? `เคยทำแล้ว ${pr.done}/${pr.total} ข้อ · ถูกล่าสุด ${pr.ok} ข้อ` : "เฉลยทั้งชุดยังไม่ยืนยัน จึงไม่นับคะแนน"}${last ? ` · รอบล่าสุด ${C.roundStats(last, qmapOf(s), kov()).pct}% (<a href="${B}/sum/${last.id}">ดูผล</a> · <a href="${B}/hist">ประวัติทั้งหมด</a>)` : ""}</p></section>`;
     ML.main.innerHTML = h + notepadHTML(b, s);
   }
 
@@ -290,7 +290,7 @@ window.MedLibQuizUI = function (ML) {
     ML.main.innerHTML = headHTML(b, s, "") + `
       <div class="qhdr">
         <div class="qnav ${r.navOpen ? "open" : ""}"><div class="qrow">${strip}</div><button class="qexp" data-z="navtoggle">${r.navOpen ? "ย่อ" : "ดูทั้งหมด"}</button></div>
-        <div class="qlegend"><span><i class="lg ok"></i>ถูก</span><span><i class="lg wrong"></i>ผิด</span><span><i class="lg partial"></i>ถูกบางส่วน</span><span><i class="lg flag"></i>ปักธง</span><span><i class="lg answered"></i>ตอบแล้ว รอตรวจ</span><span class="done">${r.mode === "practice" ? `ทำแล้ว ${st.checked}/${st.total} · ถูก ${st.ok}` : `ตอบแล้ว ${st.answered}/${st.total}`}</span></div>
+        <div class="qlegend"><span><i class="lg ok"></i>ถูก</span><span><i class="lg wrong"></i>ผิด</span><span><i class="lg partial"></i>ถูกบางส่วน</span><span><i class="lg flag"></i>ปักธง</span><span><i class="lg answered"></i>ตอบแล้ว รอตรวจ</span><span class="done">${r.mode === "practice" ? `ทำแล้ว ${st.checked + st.uncounted}/${st.total} · ถูก ${st.ok}` : `ตอบแล้ว ${st.answered}/${st.total}`}</span></div>
       </div>
       <div class="toolbar"><span class="pill">${MODE_TH[r.mode]}</span>${r.kind !== "full" ? `<span class="pill">${KIND_TH[r.kind]}</span>` : ""}
         ${lecs.length ? `<select data-zf="lec" aria-label="กรองตาม Lecture">${sel("all", "ทุก Lecture", r.lec || "all")}${lecs.map((l) => sel(l, lecName(b, l).slice(0, 48), r.lec)).join("")}</select>` : ""}
@@ -389,7 +389,7 @@ window.MedLibQuizUI = function (ML) {
     const rounds = roundsOf(b, s).filter((r) => !r.abandoned || Object.keys(r.chk).length);
     let h = headHTML(b, s, "hist");
     if (!rounds.length) { ML.main.innerHTML = h + `<div class="empty">ยังไม่มีประวัติ ทุกรอบที่ทำจะถูกเก็บไว้ที่นี่</div>`; return; }
-    const pts = rounds.filter((r) => r.done && !r.abandoned && r.kind !== "retry").map((r) => ({ pct: C.roundStats(r, qmap, kov()).pct, label: new Date(r.started).toLocaleDateString("th-TH") }));
+    const pts = rounds.filter((r) => r.done && !r.abandoned && r.kind !== "retry" && C.roundStats(r, qmap, kov()).checked).map((r) => ({ pct: C.roundStats(r, qmap, kov()).pct, label: new Date(r.started).toLocaleDateString("th-TH") }));
     h += pts.length >= 2 ? `<h3>พัฒนาการ (รอบทั้งชุด)</h3>${chartSVG(pts)}` : `<p class="hint">ทำทั้งชุดครบ 2 รอบขึ้นไปจะเห็นกราฟพัฒนาการ</p>`;
     h += `<div class="tablewrap"><table><thead><tr><th>วันที่</th><th>แบบ</th><th>โหมด</th><th>คะแนน</th><th>เวลา</th><th></th></tr></thead><tbody>${rounds.slice().reverse().map((r) => {
       const st = C.roundStats(r, qmap, kov());
@@ -517,8 +517,9 @@ window.MedLibQuizUI = function (ML) {
     if (tab === "lec") {
       h += `<div class="pgrid">${lecs.map((l) => {
         const lq = qs.filter((q) => (q.refs || []).some((x) => x.lecture === l));
-        const done = lq.filter((q) => q.id in res).length, ok = lq.filter((q) => res[q.id] >= 0.999).length;
-        return card(`data-z="mixlec" data-l="${esc(l)}"`, esc(lecName(b, l).slice(0, 60)), lq.length, Math.round((done / lq.length) * 100), done ? `ทำแล้ว ${done}/${lq.length} · ถูก ${ok}` : "");
+        const cq = lq.filter((q) => C.counts(q, kov()));   // progress over questions that count
+        const done = cq.filter((q) => q.id in res).length, ok = cq.filter((q) => res[q.id] >= 0.999).length;
+        return card(`data-z="mixlec" data-l="${esc(l)}"`, esc(lecName(b, l).slice(0, 60)), lq.length, cq.length ? Math.round((done / cq.length) * 100) : 0, done ? `ทำแล้ว ${done}/${cq.length} · ถูก ${ok}` : "");
       }).join("")}</div>`;
     } else {
       const cohorts = [...new Set([...b.sets.filter((s) => s.type === tab).map((s) => s.cohort), ...b.papers.filter((p) => p.type === tab).map((p) => p.cohort)])].sort((x, y) => y - x);
@@ -529,7 +530,7 @@ window.MedLibQuizUI = function (ML) {
           return `<div class="pcard off"><span class="ptop"><b>ชุด ${c} · ${esc(tab)}</b></span><span class="prog">ยังไม่มีแบบออนไลน์</span>${pdfs ? `<span class="pdfs">${pdfs}</span>` : ""}</div>`;
         }
         const pr = setProgress(b, s), act = activeRound(b, s), pct = pr.total ? Math.round((pr.done / pr.total) * 100) : 0;
-        const prog = act ? `ทำต่อ · ข้อ ${(act.idx || 0) + 1}` : pr.done ? `ทำแล้ว ${pr.done}/${pr.total} · ถูก ${pr.ok}` : "";
+        const prog = act ? `ทำต่อ · ข้อ ${(act.idx || 0) + 1}` : !pr.total ? "เฉลยทั้งชุดยังไม่ยืนยัน · ไม่นับคะแนน" : pr.done ? `ทำแล้ว ${pr.done}/${pr.total} · ถูก ${pr.ok}` : "";
         return card(act ? `href="${base(b, s)}/run/${(act.idx || 0) + 1}"` : `data-z="qstart" data-s="${esc(s.id)}"`, `ชุด ${c} · ${esc(tab)}`, s.questions.length, pct, prog);
       }).join("")}</div>`;
     }
