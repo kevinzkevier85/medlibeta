@@ -115,4 +115,40 @@ t("touch records the time of a change", () => {
   const p = mk(); Q.touch(p, "flag", "q1", 123); assert.strictEqual(p.ts["flag:q1"], 123);
   const p2 = {}; Q.touch(p2, "clear", "X/s"); assert.ok(p2.ts["clear:X/s"] > 0);
 });
+const DAY = 864e5, day0 = (t) => { const d = new Date(t); d.setHours(0, 0, 0, 0); return d.getTime(); };
+t("review: wrong → due tomorrow; 3 right on time → 3 days, 7 days, out", () => {
+  const p = {}, now = Date.UTC(2026, 10, 7, 10);
+  Q.reviewUpdate(p, mcq, 0, now, {});
+  assert.deepStrictEqual([p.review[mcq.id].step, p.review[mcq.id].due], [0, day0(now) + DAY]);
+  let t1 = p.review[mcq.id].due + 3600e3;
+  Q.reviewUpdate(p, mcq, 1, t1, {}); assert.deepStrictEqual([p.review[mcq.id].step, p.review[mcq.id].due], [1, day0(t1) + 3 * DAY]);
+  t1 = p.review[mcq.id].due; Q.reviewUpdate(p, mcq, 1, t1, {}); assert.deepStrictEqual([p.review[mcq.id].step, p.review[mcq.id].due], [2, day0(t1) + 7 * DAY]);
+  t1 = p.review[mcq.id].due; Q.reviewUpdate(p, mcq, 1, t1, {}); assert.ok(!(mcq.id in p.review));
+  assert.ok(p.ts["review:" + mcq.id] > 0);
+});
+t("review: right before due does nothing; wrong restarts", () => {
+  const p = {}, now = Date.UTC(2026, 10, 7, 10);
+  Q.reviewUpdate(p, mcq, 0, now, {}); const before = JSON.stringify(p.review);
+  Q.reviewUpdate(p, mcq, 1, now + 3600e3, {}); assert.strictEqual(JSON.stringify(p.review), before);
+  const t1 = p.review[mcq.id].due; Q.reviewUpdate(p, mcq, 1, t1, {}); Q.reviewUpdate(p, mcq, 0.5, t1 + 1, {});
+  assert.strictEqual(p.review[mcq.id].step, 0);
+  assert.deepStrictEqual(Q.reviewDue(p, [mcq.id, "nope"], t1 + 1), []);
+  assert.deepStrictEqual(Q.reviewDue(p, [mcq.id, "nope"], p.review[mcq.id].due), [mcq.id]);
+});
+t("review: uncounted never queued; right answer outside queue ignored; flag adds once", () => {
+  const p = {}, now = Date.UTC(2026, 10, 7, 10);
+  Q.reviewUpdate(p, dr, 0, now, {}); Q.reviewUpdate(p, mcq, 1, now, {});
+  assert.deepStrictEqual(p.review || {}, {});
+  Q.reviewAdd(p, mcq, now, {}); const e = p.review[mcq.id]; Q.reviewAdd(p, mcq, now + DAY, {}); assert.strictEqual(p.review[mcq.id], e);
+  assert.strictEqual(e.step, 0); assert.strictEqual(e.due, day0(now) + DAY);
+  Q.reviewAdd(p, dr, now, {}); assert.ok(!(dr.id in p.review), "flagged draft never queued");
+});
+t("review: merge keeps the newer change, including leaving the queue", () => {
+  const a = { review: { q1: { step: 2, due: 50, t: 40 } }, ts: { "review:q1": 40 } };
+  const b = { review: {}, ts: { "review:q1": 60 } };
+  for (const m of [Q.mergeProgress(a, b), Q.mergeProgress(b, a)]) assert.ok(!("q1" in m.review));
+  const c = { review: { q2: { step: 0, due: 30, t: 1 } } }, d = { review: { q2: { step: 1, due: 90, t: 1 } } };
+  assert.strictEqual(Q.mergeProgress(c, d).review.q2.due, 30);
+  assert.strictEqual(Q.mergeProgress(d, c).review.q2.due, 30);
+});
 console.log(`\n${pass} ผ่าน`);

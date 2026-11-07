@@ -24,7 +24,7 @@
     p = p && typeof p === "object" ? p : {};
     const m = p.marks = p.marks && typeof p.marks === "object" ? p.marks : {};
     ["flag", "notes", "setNotes", "keyOverride", "reported"].forEach((k) => { if (!m[k] || typeof m[k] !== "object") m[k] = {}; });
-    ["rounds", "read", "mixes", "prefs", "ts"].forEach((k) => { if (!p[k] || typeof p[k] !== "object") p[k] = {}; });
+    ["rounds", "read", "mixes", "prefs", "ts", "review"].forEach((k) => { if (!p[k] || typeof p[k] !== "object") p[k] = {}; });
     return p;
   }
   let PROG = normProg((() => { try { return JSON.parse(localStorage.getItem(PKEY) || "null"); } catch (e) { return null; } })());
@@ -240,7 +240,19 @@
     }).join("");
     main.innerHTML = `${problemsBanner()}
       <div class="head"><h2>ข้อสอบเก่า</h2><p class="hint">เลือกบล็อกเพื่อทำข้อสอบทีละชุดหรือฝึกข้ามชุด · อ่าน lecture ได้ที่โหมด <a href="#/lec">Lecture</a> ด้านบน · ความคืบหน้าเก็บในเบราว์เซอร์นี้</p></div>
+      ${reviewBox(blocks)}
       <div class="grid">${cards || `<div class="card empty"><span>ไม่มีบล็อกที่แสดงอยู่</span><a href="#/settings">เปิดการแสดงบล็อกในหน้าตั้งค่า</a></div>`}</div>`;
+  }
+
+  // "ทบทวนวันนี้": one button per block with questions due; hidden when the queue is empty
+  function reviewBox(blocks) {
+    const rc = blocks.map((b) => [b, QZ.reviewCounts(b)]).filter(([, c]) => c.queued);
+    if (!rc.length) return "";
+    const due = rc.filter(([, c]) => c.due), queued = rc.reduce((a, [, c]) => a + c.queued, 0);
+    return `<div class="reviewbox" id="review"><b>ทบทวนวันนี้</b>
+      ${due.length ? `<div class="btns">${due.map(([b, c]) => `<button class="btn primary" data-z="review" data-b="${esc(b.id)}">${esc(b.name)} · ${c.due} ข้อ</button>`).join("")}</div>`
+        : `<span class="hint">ยังไม่มีข้อครบกำหนดวันนี้ · ในคิว ${queued} ข้อ</span>`}
+      <span class="hint">ข้อที่ตอบผิดหรือปักธงจะกลับมาใน 1 → 3 → 7 วัน ตอบถูกครบ 3 ครั้งออกจากคิว</span></div>`;
   }
 
   function notFound(msg) { main.innerHTML = `<div class="note"><h3>${esc(msg)}</h3><a href="#/">กลับหน้าแรก</a></div>`; }
@@ -282,6 +294,7 @@
         <span class="hint">อ่านจบ ${done}/${n} บท${last ? ` · ล่าสุด ${esc(last.l.id)} หน้า ${last.r.page}` : ""}</span></a>`;
     }).join("");
     main.innerHTML = `<div class="head"><h2>Lecture</h2><p class="hint">เลือกบล็อกเพื่ออ่าน lecture · ติ๊กอ่านจบ อ่านต่อจากหน้าที่ค้าง และดูแผนอ่านว่าหน้าไหนออกสอบบ่อย</p></div>
+      ${reviewBox(blocks)}
       <div class="grid">${cards || `<div class="card empty"><span>ยังไม่มีบล็อกที่มี lecture</span></div>`}</div>`;
   }
   function lastRead(b) {
