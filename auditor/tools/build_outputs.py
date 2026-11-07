@@ -243,6 +243,13 @@ def main():
     build_reports(sets)
     n_review = build_review(work_sets())
     build_medlib(sets)
+    # topic tags live in data/blocks/<B>/topics.json; put them back into the files just rebuilt
+    for B in sorted({s["block"].upper() for s in sets}):
+        if (ROOT / "data" / "blocks" / B / "topics.json").exists():
+            r = subprocess.run(["node", str(ROOT / "tools" / "apply_topics.cjs"), B], capture_output=True, text=True, encoding="utf-8")
+            print(r.stdout.strip())
+            if r.returncode:
+                sys.exit(1)
     v = subprocess.run(["node", str(ROOT / "tools" / "validate.cjs")], capture_output=True, text=True, encoding="utf-8")
     nq = sum(len(e["questions"]) for b in allb for e in b["exams"])
     print(f"quiz JSON: {nq} ข้อ, schema errors {len(errs)} | REVIEW {n_review} รายการ | MedLib validate: {v.stdout.strip().splitlines()[-1] if v.stdout.strip() else v.stderr.strip()}")
