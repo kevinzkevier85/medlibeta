@@ -63,6 +63,8 @@ def main():
                     "title": f"KF {meta['block_name']} · Med PSU {c}", "time_limit_min": work.get("time_limit_min") or meta.get("time_limit_min"),
                     "generated_by": f"auditor/tools/build_kf.py from auditor/data/work/{a.set}.kf.json — do not edit by hand"},
            "questions": qs}
+    if not out["meta"]["time_limit_min"]:
+        del out["meta"]["time_limit_min"]  # exam header gives no time; validate.js accepts only a positive number or no key
     (bdir / "exams" / f"{set_name}.json").write_text(json.dumps(out, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
 
     if a.no_block:
