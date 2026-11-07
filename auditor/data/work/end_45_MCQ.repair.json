@@ -1,0 +1,787 @@
+{
+ "set_id": "end_45_MCQ",
+ "note": "Phase 3 — repair layer. Key = 'Edited by Med46' file (blue circle = answer), read by vision. A second key file (key2) exists in Drive and was not used.",
+ "skipped": [],
+ "skipped_reason": "ต้นฉบับมีแค่ \"–\" (ผู้จำจำโจทย์ไม่ได้) และในเฉลยก็ไม่มีโน้ตของข้อนี้",
+ "duplicate_groups": {
+  "end-45-acth-independent-cushing": [
+   "35",
+   "36"
+  ],
+  "end-45-prednisolone-interaction": [
+   "32",
+   "60"
+  ],
+  "end-45-glucocorticoid-pla2": [
+   "18",
+   "31",
+   "56"
+  ],
+  "end-45-neuroendocrine": [
+   "1",
+   "59"
+  ]
+ },
+ "questions": {
+  "1": {
+   "explanation": "(Neuroendocrine)** — oxytocin สร้างที่ magnocellular neuron ของ hypothalamus แล้วหลั่งจาก axon terminal ที่ posterior pituitary เข้ากระแสเลือด = neurohormone (neuroendocrine)\nTrap: neurotransmitter ออกฤทธิ์ที่ synapse"
+  },
+  "2": {
+   "explanation": "(Golgi body / secretory vesicle)** — prohormone ถูก prohormone convertase (PC1/3, PC2) ตัดเริ่มใน trans-Golgi และต่อเนื่องใน immature secretory vesicle\nTrap: signal peptide ถูกตัดใน RER (prepro → pro)",
+   "issues": [
+    "คำตอบขึ้นกับตำรา: Golgi (lecture/BRS) หรือ secretory vesicle (USMLE)"
+   ],
+   "audit_note": "เฉลยต้นฉบับวง D (vesicle); ข้อ 13 ในชุดเดียวกันผู้เฉลยวงทั้ง vesicle และ Golgi และเขียนว่า lecture/BRS บอก Golgi — AI เลือก C (Golgi) อาจนับถูกทั้ง C และ D",
+   "why": {
+    "A": "ไม่เกี่ยว",
+    "B": "SER สร้าง steroid",
+    "C": "การตัดเริ่มที่ trans-Golgi (lecture)",
+    "D": "การตัดเกิดต่อใน secretory vesicle (USMLE)",
+    "E": "ไม่เกี่ยว"
+   },
+   "edits": [
+    {
+     "field": "stem",
+     "old": "Peptide prohormone is cleavage into active hormone",
+     "new": "A peptide prohormone is cleaved into the active hormone"
+    }
+   ]
+  },
+  "3": {
+   "explanation": "(Adrenal cortex)** — adrenal cortex (และ gonad) เปลี่ยน cholesterol → pregnenolone → steroid hormone (cortisol, aldosterone, androgen)\nTrap: adrenal medulla สร้าง catecholamine จาก tyrosine"
+  },
+  "4": {
+   "explanation": "(Chromaffin cell)** — adrenal medulla chromaffin cell (modified postganglionic sympathetic neuron) หลั่ง epinephrine เข้ากระแสเลือดเป็น hormone\nTrap: oxyphil cell อยู่ใน parathyroid",
+   "edits": [
+    {
+     "field": "stem",
+     "old": "Epinephrine is qualified neurotransmitter, but can be hormone in critical condition.",
+     "new": "Epinephrine is a neurotransmitter but acts as a hormone in critical conditions."
+    }
+   ]
+  },
+  "5": {
+   "explanation": "(Parathyroid gland)** — ตะคริว/tetany จาก hypocalcemia → parathyroid หลั่ง PTH เพิ่ม Ca ในเลือด (bone resorption, renal reabsorption, calcitriol)\nTrap: calcitonin ลด Ca",
+   "flags": [
+    "needs_review"
+   ],
+   "issues": [
+    "ถ้อยคำโจทย์กว้าง (ตะคริวมีหลายสาเหตุ)"
+   ]
+  },
+  "6": {
+   "explanation": "(Transsphenoidal approach)** — ผ่าตัด pituitary ผ่านโพรงจมูก → sphenoid sinus → sella turcica\nTrap: transcranial ใช้เมื่อก้อนใหญ่ลามขึ้นบน",
+   "edits": [
+    {
+     "field": "choices.E",
+     "old": "Trans occipital approach",
+     "new": "Transoccipital approach"
+    }
+   ]
+  },
+  "7": {
+   "explanation": "(Thyroid gland)** — หลังดื่มนม Ca ในเลือดสูงขึ้น → parafollicular (C) cell ของ thyroid หลั่ง calcitonin ลด bone resorption (และ PTH ลด)\nTrap: parathyroid ตอบสนองต่อ Ca ต่ำ",
+   "edits": [
+    {
+     "field": "stem",
+     "old": "which of the following organ regulate Ca2+?",
+     "new": "which of the following organs regulates Ca²⁺?"
+    }
+   ]
+  },
+  "8": {
+   "explanation": "(Paraventricular nucleus)** — magnocellular neuron ของ paraventricular และ supraoptic nucleus ส่ง axon (hypothalamo-hypophyseal tract) ไป posterior pituitary\nTrap: arcuate nucleus ส่งสัญญาณไป anterior pituitary ทาง portal system"
+  },
+  "9": {
+   "explanation": "(Transformation of T4 to T3)** — deiodinase (type 1, 2) ตัด iodine ที่ outer ring ของ T4 → T3 (active); type 3 → reverse T3\nTrap: TPO ทำ oxidation/iodination/coupling"
+  },
+  "10": {
+   "explanation": "(Thyroid hormone forms a heterodimer with RXR)** — T3 เข้าเซลล์ทาง transporter (MCT8) → จับ TR ใน nucleus → TR-RXR heterodimer ที่ TRE → transcription\nTrap: TR มี affinity ต่อ T3 สูงกว่า T4 ~10 เท่า; T4 ถูกเปลี่ยนเป็น T3 ในเซลล์ (ไม่ใช่กลับกัน)",
+   "issues": [
+    "ผู้เฉลยเขียนว่าน่าจะจำช้อยส์ผิด (ที่ถูกคือ thyroid hormone 'receptor' จับ RXR)"
+   ],
+   "edits": [
+    {
+     "field": "choices.D",
+     "old": "Thyroid hormone forms a heterodimer with retinoid X receptor (RXR)",
+     "new": "Thyroid hormone receptor forms a heterodimer with retinoid X receptor (RXR)"
+    }
+   ]
+  },
+  "11": {
+   "explanation": "(Mental age)** — hypothyroid ในเด็กที่รักษาช้า (4–5 ปี): ความสูง/น้ำหนัก/bone age catch-up ได้ แต่ mental development แก้คืนไม่ได้ (critical period ช่วงขวบปีแรก)\nTrap: จึงต้องคัดกรอง congenital hypothyroidism แรกเกิด",
+   "edits": [
+    {
+     "field": "stem",
+     "old": "Which of the following is less likely be treated by thyroxin",
+     "new": "Which of the following is least likely to improve with thyroxine treatment"
+    }
+   ]
+  },
+  "12": {
+   "explanation": "(Mitochondria)** — StAR นำ cholesterol เข้า inner mitochondrial membrane → CYP11A1 (side-chain cleavage) → pregnenolone (rate-limiting)\nTrap: ขั้นต่อไปเกิดใน SER"
+  },
+  "13": {
+   "explanation": "(Golgi body)** — proPTH ถูกตัดเป็น PTH (1-84) ที่ Golgi แล้วเก็บใน secretory granule\nTrap: preproPTH → proPTH ที่ RER",
+   "issues": [
+    "ผู้เฉลยวงทั้ง Golgi และ secretory vesicle"
+   ],
+   "audit_note": "เฉลยต้นฉบับวงทั้ง A (lysosomal/secretory vesicle) และ E (Golgi) โดยเขียนว่า lecture/BRS บอก Golgi, USMLE บอก secretory granule — AI เลือก E",
+   "why": {
+    "A": "secretory vesicle (ไม่ใช่ lysosome) — ตามตำราบางเล่ม",
+    "B": "ไม่เกี่ยว",
+    "C": "เป็นที่ตัด prepro → pro",
+    "D": "ไม่เกี่ยว",
+    "E": "Golgi (lecture)"
+   }
+  },
+  "14": {
+   "explanation": "(Hyperkalemia)** — aldosterone ขาด → principal cell หลั่ง K⁺ ไม่ได้ → hyperkalemia + Na⁺ loss (hyponatremia, volume ↓) + type 4 RTA (metabolic acidosis)\nTrap: hyponatremia ก็เกิดได้ (ช้อยส์ A)",
+   "choices_override": {
+    "A": "Hyponatremia",
+    "B": "Hyperkalemia",
+    "C": "Metabolic alkalosis",
+    "D": "Hypertension",
+    "E": "Increased ECF volume"
+   },
+   "ai_choices": [
+    "C",
+    "D",
+    "E"
+   ],
+   "issues": [
+    "ผู้จำจำได้ 2 ช้อยส์ และผู้เฉลยวงทั้งสองตัว"
+   ],
+   "audit_note": "ต้นฉบับมีแค่ A (hyponatremia) และ B (hyperkalemia) ผู้เฉลยวงทั้งคู่ ซึ่งถูกทั้งคู่จริง AI เติม C–E เป็นตัวลวง — ควรนับถูกทั้ง A และ B",
+   "why": {
+    "A": "ถูกเช่นกัน (Na⁺ loss)",
+    "B": "ถูก — ลักษณะเด่น",
+    "C": "ผิดทิศ (acidosis)",
+    "D": "ผิดทิศ (hypotension)",
+    "E": "ผิดทิศ (ECF ลด)"
+   },
+   "edits": [
+    {
+     "field": "stem",
+     "old": "Which of following is the consequence",
+     "new": "Which of the following is a consequence"
+    }
+   ]
+  },
+  "15": {
+   "explanation": "(Stimulate protein degradation in the muscle)** — cortisol: protein catabolism ที่ muscle → amino acid → hepatic gluconeogenesis ↑; ลด glucose uptake ที่ peripheral (ไม่ใช่สมอง); permissive ต่อ catecholamine (vasoconstriction)\nTrap: cortisol เพิ่ม gluconeogenesis"
+  },
+  "16": {
+   "explanation": "(Increase plasma potassium)** — aldosterone ถูกกระตุ้นโดย angiotensin II (renin ↑) และ K⁺ สูง (โดยตรงที่ zona glomerulosa), ACTH เล็กน้อย\nTrap: blood volume เพิ่ม → renin ↓ → aldosterone ↓"
+  },
+  "17": {
+   "explanation": "(Corticotroph is inhibited by cortisol)** — cortisol feedback ยับยั้ง corticotroph (ACTH) และ CRH neuron\nTrap: paraventricular nucleus หลั่ง CRH ไป anterior pituitary (ทาง portal) ไม่ใช่ posterior",
+   "choices_override": {
+    "A": "Corticotroph is inhibited by ACTH",
+    "B": "Corticotroph is inhibited by cortisol",
+    "C": "Paraventricular nuclei via posterior pituitary gland is inhibited by CRH",
+    "D": "Paraventricular nuclei via posterior pituitary gland is inhibited by AVP",
+    "E": "CRH neurons are stimulated by cortisol"
+   },
+   "ai_choices": [
+    "E"
+   ],
+   "edits": [
+    {
+     "field": "stem",
+     "old": "Which of the following is correct due to Hypothalamic-pituitary axis?",
+     "new": "Which of the following is correct about the hypothalamic-pituitary-adrenal axis?"
+    }
+   ]
+  },
+  "18": {
+   "explanation": "(Reduce leukotriene secretion)** — cortisol → annexin A1 (lipocortin) → ยับยั้ง PLA₂ → arachidonic acid ↓ → prostaglandin และ leukotriene ↓; ลด COX-2, IL-1, capillary permeability\nTrap: PLA₂ ลดลง (ไม่ใช่เพิ่ม)",
+   "edits": [
+    {
+     "field": "choices.E",
+     "old": "Increase PLA",
+     "new": "Increase PLA₂"
+    }
+   ]
+  },
+  "19": {
+   "explanation": "(CRH hyposecretion)** — Cushing disease: pituitary adenoma หลั่ง ACTH มาก → cortisol สูง → negative feedback กด CRH จาก hypothalamus\nTrap: ACTH สูง (ไม่ใช่ต่ำ); hyperglycemia; bone resorption ↑; adrenal androgen ↑"
+  },
+  "20": {
+   "explanation": "(Melanin pigmentation)** — Addison: cortisol ↓ → ACTH (จาก POMC พร้อม MSH) ↑ → hyperpigmentation; aldosterone ↓ → hyperkalemia, ECF ↓\nTrap: hypoglycemia (ไม่ใช่ hyper), ทน stress ไม่ได้",
+   "edits": [
+    {
+     "field": "choices.E",
+     "old": "Hyper-responsibility to stress",
+     "new": "Hyper-responsiveness to stress"
+    }
+   ]
+  },
+  "21": {
+   "explanation": "(Causes hirsutism in women)** — adrenal androgen (DHEA, androstenedione) ฤทธิ์อ่อนกว่า testosterone แต่ในหญิงเป็นแหล่ง androgen หลัก → เกินจะทำ hirsutism/virilization; ในเด็กชายก่อนวัยรุ่นทำ precocious pseudopuberty\nTrap: ใน adult male ไม่มีผลชัดเพราะ testosterone จากอัณฑะสูงกว่ามาก",
+   "choices_override": {
+    "A": "More potent than testosterone",
+    "B": "Causes pseudo-precocious puberty in adult males",
+    "C": "Causes hirsutism in women",
+    "D": "Highly bound to plasma proteins",
+    "E": "Is converted to cortisol in the liver"
+   },
+   "ai_choices": [
+    "E"
+   ],
+   "issues": [
+    "ช้อยส์เดิมเป็นภาษาไทยปนอังกฤษ แปลให้เป็นอังกฤษ"
+   ]
+  },
+  "22": {
+   "explanation": "(Conversion of norepinephrine to epinephrine)** — cortisol ความเข้มข้นสูงจาก cortex ผ่าน intra-adrenal portal blood กระตุ้น PNMT ที่ medulla\nTrap: tyrosine hydroxylase (rate-limiting) ถูกกระตุ้นด้วย sympathetic/ACTH"
+  },
+  "23": {
+   "explanation": "(Hyperplastic)** — CKD → PO₄ ↑ calcitriol ↓ Ca ↓ → PTH ↑ เรื้อรัง → secondary hyperparathyroidism: parathyroid hyperplasia ทั้ง 4 ต่อม\nTrap: calcification เป็นภาวะแทรกซ้อน ไม่ใช่สาเหตุ",
+   "choices_override": {
+    "A": "Calcified parathyroid",
+    "B": "Atrophic parathyroid",
+    "C": "Hyperplastic parathyroid",
+    "D": "Paraneoplastic",
+    "E": "Parathyroid carcinoma"
+   },
+   "ai_choices": [
+    "E"
+   ]
+  },
+  "24": {
+   "explanation": "(Iodide)** — ให้ iodide (Lugol/SSKI) 7–10 วันก่อน thyroidectomy ใน Graves → ลด vascularity และขนาดต่อม → เสียเลือดน้อยลง (หลังคุมด้วย thionamide แล้ว)\nTrap: RAI ไม่ใช้ก่อนผ่าตัด",
+   "edits": [
+    {
+     "field": "stem",
+     "old": "The doctor gives him a medication",
+     "new": "The doctor gives the patient a medication"
+    }
+   ]
+  },
+  "25": {
+   "explanation": "(Levothyroxine)** — myxedema (severe hypothyroidism/myxedema coma) รักษาด้วย levothyroxine (synthetic T4; IV ในภาวะ coma) + hydrocortisone\nTrap: RAI และ iodide ใช้รักษา hyperthyroid",
+   "edits": [
+    {
+     "field": "choices.C",
+     "old": "Dessicated",
+     "new": "Desiccated thyroid"
+    },
+    {
+     "field": "choices.E",
+     "old": "iodide",
+     "new": "Iodide"
+    }
+   ]
+  },
+  "26": {
+   "explanation": "(Lugol's solution)** — iodide ขนาดสูง → Wolff–Chaikoff effect: ยับยั้ง organification และการปล่อย T4/T3\nTrap: thionamide ยับยั้ง TPO โดยตรง",
+   "edits": [
+    {
+     "field": "stem",
+     "old": "exerts its action",
+     "new": "exerts its action"
+    }
+   ]
+  },
+  "27": {
+   "explanation": "(Exchange HDL cholesteryl ester for VLDL triglyceride)** — CETP ย้าย CE จาก HDL ไป apoB-lipoprotein แลก TG; ขาด CETP → HDL สูงมาก\nTrap: esterification เป็นหน้าที่ของ LCAT"
+  },
+  "28": {
+   "explanation": "(Hydrolyze triglyceride in VLDL)** — LPL (บน capillary endothelium, apoC-II activator) ย่อย TG ใน VLDL และ chylomicron\nTrap: TG ใน IDL และ HDL ถูกย่อยด้วย hepatic lipase",
+   "choices_override": {
+    "A": "Oxidation of fatty acid within cell",
+    "B": "Hydrolyze triglyceride in IDL",
+    "C": "Hydrolyze triglyceride in VLDL",
+    "D": "Hydrolyze triglyceride in adipocytes",
+    "E": "Esterify cholesterol in HDL"
+   },
+   "ai_choices": [
+    "D",
+    "E"
+   ]
+  },
+  "29": {
+   "explanation": "(Chylomicron)** — creamy layer ลอยด้านบนหลังแช่เย็นข้ามคืน = chylomicron; ขุ่นด้านล่าง = VLDL; ในเด็ก + pancreatitis + eruptive xanthoma = type I (LPL/apoC-II deficiency)\nTrap: VLDL ทำให้ขุ่นทั้งหลอดไม่ลอยเป็นชั้น"
+  },
+  "30": {
+   "explanation": "(Hepatic lipase)** — hepatic lipase ย่อย TG และ phospholipid ใน IDL, LDL และ HDL; ขาด → TG-rich LDL และ HDL, remnant สูง\nTrap: LPL ย่อย TG ใน chylomicron/VLDL"
+  },
+  "31": {
+   "explanation": "(Inhibit phospholipase A₂)** — prednisolone → annexin A1 (lipocortin) ↑ → ยับยั้ง PLA₂ → prostaglandin/leukotriene ↓ (+ ลด COX-2 expression)\nTrap: lipocortin ถูกกระตุ้น (ไม่ใช่ยับยั้ง)",
+   "issues": [
+    "ช้อยส์ B ในต้นฉบับเขียนว่า prostaglandin A2 น่าจะหมายถึง phospholipase A2"
+   ],
+   "edits": [
+    {
+     "field": "choices.B",
+     "old": "Inhibit prostaglandin A2",
+     "new": "Inhibit phospholipase A2"
+    },
+    {
+     "field": "choices.C",
+     "old": "Inhibit lipocortin?",
+     "new": "Inhibit lipocortin"
+    }
+   ]
+  },
+  "32": {
+   "explanation": "(Ethinyl estradiol)** — estrogen (oral contraceptive) เพิ่ม CBG และลด metabolism → ระดับ prednisolone ไม่ลด (อาจเพิ่ม); phenytoin, phenobarbital, rifampicin เป็น CYP3A4 inducer ลดระดับมาก; cholestyramine ลดการดูดซึม\nTrap: ถ้าถามตัวที่ลดมากที่สุดคือ rifampicin",
+   "stem_override": "A patient has been taking prednisolone for several months. Which drug would have the least effect in lowering the plasma level of prednisolone?",
+   "original_text": "Which drug would cause the lowest plasma level of prednisolone? (ผู้เฉลยขีดฆ่าแล้วเขียนใหม่ว่า 'ส่งผลในการลดระดับ prednisolone น้อยที่สุด')",
+   "issues": [
+    "แก้ถ้อยคำโจทย์ตามที่ผู้เฉลยต้นฉบับแก้ไว้"
+   ]
+  },
+  "33": {
+   "explanation": "(Hydrocortisone)** — adrenal crisis: IV hydrocortisone 100 mg ทันที (ขนาดสูงมีฤทธิ์ mineralocorticoid พอ) + IV fluid (NSS + dextrose)\nTrap: fludrocortisone ไม่จำเป็นช่วงแรก; synthetic ACTH ใช้ทดสอบ",
+   "edits": [
+    {
+     "field": "choices.D",
+     "old": "Fludocortisone",
+     "new": "Fludrocortisone"
+    }
+   ]
+  },
+  "34": {
+   "explanation": "(Increase insulin secretion)** — glucocorticoid ขนาดสูง → hyperglycemia + insulin resistance → insulin ↑ → lipogenesis ที่ trunk/face/supraclavicular (insulin-sensitive) ขณะที่ lipolysis ที่แขนขา → fat redistribution\nTrap: cortisol เพิ่ม lipolysis โดยรวม",
+   "edits": [
+    {
+     "field": "stem",
+     "old": "A 40 years old male patient taking dexamethasone 0.5mg 12tab/day",
+     "new": "A 40-year-old man has been taking dexamethasone 0.5 mg, 12 tablets/day,"
+    }
+   ]
+  },
+  "35": {
+   "explanation": "(Adrenal adenoma)** — cortisol สูง + ACTH ต่ำมาก (ACTH-independent) + ไม่กดทั้ง low- และ high-dose DST = adrenal tumor (adenoma)\nTrap: pituitary adenoma กดได้ด้วย high-dose DST; ectopic ACTH มี ACTH สูง"
+  },
+  "36": {
+   "explanation": "(Adrenal tumor)** — ข้อซ้ำกับข้อ 35: ACTH-independent Cushing → adrenal adenoma/carcinoma\nTrap: zona glomerulosa สร้าง aldosterone ไม่ใช่ cortisol"
+  },
+  "37": {
+   "explanation": "(VMA)** — pheochromocytoma: ตรวจ catecholamine metabolite (urine VMA, metanephrines) ก่อนทำ imaging\nTrap: cortisol/aldosterone ใช้ตรวจ Cushing/Conn",
+   "choices_override": {
+    "A": "Cortisol",
+    "B": "ADH",
+    "C": "VMA",
+    "D": "Aldosterone",
+    "E": "Plasma renin activity"
+   },
+   "ai_choices": [
+    "E"
+   ],
+   "edits": [
+    {
+     "field": "stem",
+     "old": "what additional tests should be performed?",
+     "new": "which additional test should be performed?"
+    }
+   ]
+  },
+  "38": {
+   "explanation": "(Secondary hyperaldosteronism)** — HT + hypokalemia + ARR ต่ำ (10; primary มัก > 20–30) → renin สูงด้วย = secondary (เช่น renal artery stenosis, renin-secreting tumor); hyponatremia ก็เข้ากับ secondary มากกว่า\nTrap: primary มี renin ต่ำ ARR สูง Na ปกติ/สูง"
+  },
+  "39": {
+   "explanation": "(Tetany)** — Ca²⁺ ต่ำ → threshold ของ Na⁺ channel ลด → neuromuscular excitability ↑ → tetany, Chvostek/Trousseau sign, paresthesia, laryngospasm, QT ยาว\nTrap: constipation, stone, polyuria, QT สั้น เป็นของ hypercalcemia",
+   "flags": [
+    "ai_generated"
+   ],
+   "answer": "A",
+   "stem_override": "What is a clinical manifestation of hypocalcemia?",
+   "choices_override": {
+    "A": "Tetany",
+    "B": "Constipation",
+    "C": "Kidney stones",
+    "D": "Polyuria",
+    "E": "Shortened QT interval"
+   },
+   "original_text": "Hypocalcemia จะทำให้เกิดอาการอะไร ตอบ tetany",
+   "why": {
+    "A": "ถูก — neuromuscular excitability ↑",
+    "B": "อาการ hypercalcemia",
+    "C": "อาการ hypercalcemia",
+    "D": "อาการ hypercalcemia",
+    "E": "hypocalcemia ทำให้ QT ยาว"
+   }
+  },
+  "40": {
+   "explanation": "(Decreases calcium excretion)** — PTH ที่ไต: Ca²⁺ reabsorption ที่ DCT ↑ (TRPV5), phosphate reabsorption ที่ PCT ↓ (NaPi-IIa endocytosis), 1α-hydroxylase ↑ → calcitriol\nTrap: PTH ทำให้ phosphaturia",
+   "flags": [
+    "ai_generated"
+   ],
+   "answer": "C",
+   "stem_override": "Which of the following is an action of parathyroid hormone (PTH) on the kidney?",
+   "choices_override": {
+    "A": "Increases phosphate reabsorption in the proximal tubule",
+    "B": "Inhibits 1α-hydroxylase",
+    "C": "Decreases calcium excretion by increasing distal reabsorption",
+    "D": "Increases calcium excretion",
+    "E": "Decreases cAMP in tubular cells"
+   },
+   "original_text": "PTH function ตอบ ลด excretion of calcium ที่ kidney",
+   "why": {
+    "A": "PTH ลด phosphate reabsorption (phosphaturia)",
+    "B": "PTH กระตุ้น 1α-hydroxylase",
+    "C": "ถูก",
+    "D": "ผิดทิศ",
+    "E": "PTH เพิ่ม cAMP"
+   }
+  },
+  "41": {
+   "explanation": "(Cotransport with Na⁺)** — phosphate ถูกดูดกลับที่ proximal tubule และดูดซึมที่ลำไส้ผ่าน Na⁺-Pi cotransporter (NaPi-IIa/IIc ที่ไต, NaPi-IIb ที่ลำไส้) แบบ transcellular\nTrap: Ca²⁺ ดูดกลับแบบ paracellular ที่ PCT/TAL",
+   "choices_override": {
+    "A": "Paracellular",
+    "B": "Cotransport with Na",
+    "C": "Antiport with Na",
+    "D": "Primary active transport (Pi-ATPase)",
+    "E": "Simple diffusion"
+   },
+   "ai_choices": [
+    "D",
+    "E"
+   ],
+   "edits": [
+    {
+     "field": "stem",
+     "old": "What is the pathway of inorganic phosphate (Pi) in the body?",
+     "new": "By which pathway is inorganic phosphate (Pi) reabsorbed in the proximal tubule?"
+    }
+   ]
+  },
+  "42": {
+   "explanation": "(Osteoblast)** — PTH จับ PTH1R บน osteoblast/osteocyte → RANKL ↑, OPG ↓, IL-6 ↑ → osteoclast differentiation/activation (osteoclast ไม่มี PTH receptor)\nTrap: PTH แบบ intermittent (teriparatide) กลับเพิ่ม bone formation",
+   "flags": [
+    "ai_generated"
+   ],
+   "answer": "B",
+   "stem_override": "PTH stimulates which cell to increase the secretion of IL-6 and RANKL, leading to osteoclast activation?",
+   "choices_override": {
+    "A": "Osteoclast",
+    "B": "Osteoblast",
+    "C": "Chondrocyte",
+    "D": "Macrophage",
+    "E": "Parafollicular cell"
+   },
+   "original_text": "PTH กระตุ้นอะไร เพื่อเพิ่มการหลั่ง IL-6 และ RANKL ตอบ osteoblast",
+   "why": {
+    "A": "osteoclast ไม่มี PTH receptor",
+    "B": "ถูก — PTH1R อยู่บน osteoblast/osteocyte",
+    "C": "ไม่เกี่ยว",
+    "D": "ไม่เกี่ยว",
+    "E": "สร้าง calcitonin"
+   }
+  },
+  "43": {
+   "explanation": "(cAMP)** — cAMP (จาก incretin GLP-1/GIP, glucagon) → PKA/Epac เสริมการหลั่ง insulin; 2-deoxyglucose ก็ถูกรายงานว่ากระตุ้นได้\nTrap: somatostatin และ adrenaline (α2) ยับยั้ง; K⁺ depletion ยับยั้ง",
+   "issues": [
+    "ผู้เฉลยวงทั้ง B (cAMP) และ D (2-deoxyglucose)"
+   ],
+   "audit_note": "เฉลยต้นฉบับวงทั้ง B และ D โดยอ้าง PubMed ว่า 2-deoxyglucose กระตุ้น insulin ได้ — ในตำราหลัก (Guyton) 2-deoxyglucose ถูกจัดเป็นตัวยับยั้ง (inhibitor) การหลั่ง insulin AI เลือก B",
+   "why": {
+    "A": "K⁺ depletion ยับยั้งการหลั่ง",
+    "B": "ถูก",
+    "C": "ยับยั้ง",
+    "D": "ตามตาราง Guyton เป็น inhibitor (แต่มีรายงานว่ากระตุ้นได้)",
+    "E": "ยับยั้งผ่าน α2"
+   }
+  },
+  "44": {
+   "explanation": "(GLP-1)** — กระตุ้น insulin: glucose, amino acid (arginine, leucine), incretin (GLP-1, GIP), glucagon, acetylcholine (vagal), β-adrenergic, sulfonylurea\nTrap: α-adrenergic, somatostatin, hypokalemia, diazoxide ยับยั้ง",
+   "flags": [
+    "ai_generated"
+   ],
+   "answer": "D",
+   "stem_override": "Which of the following factors stimulates insulin secretion?",
+   "choices_override": {
+    "A": "Somatostatin",
+    "B": "α-adrenergic stimulation",
+    "C": "Hypokalemia",
+    "D": "Glucagon-like peptide-1 (GLP-1)",
+    "E": "Diazoxide"
+   },
+   "original_text": "Factor ที่ stimulate insulin secretion (ไม่มีช้อยส์; เฉลยแปะตาราง factors affecting insulin secretion)",
+   "why": {
+    "A": "ยับยั้ง",
+    "B": "ยับยั้ง",
+    "C": "ยับยั้ง",
+    "D": "ถูก — incretin",
+    "E": "เปิด K-ATP ยับยั้งการหลั่ง"
+   }
+  },
+  "45": {
+   "explanation": "(ATP ↑ → K-ATP close → depolarization)** — glucose เข้าทาง GLUT2 → glucokinase → glycolysis/OXPHOS → ATP/ADP ↑ → ปิด K-ATP → depolarization → voltage-gated Ca²⁺ เปิด → Ca²⁺ ↑ → exocytosis ของ insulin granule\nTrap: sulfonylurea ใช้กลไกเดียวกันที่ SUR1",
+   "flags": [
+    "ai_generated"
+   ],
+   "answer": "C",
+   "stem_override": "What happens in pancreatic β-cells when they are exposed to glucose?",
+   "choices_override": {
+    "A": "ATP decreases and K-ATP channels open",
+    "B": "The cell hyperpolarizes",
+    "C": "ATP increases, K-ATP channels close and the membrane depolarizes",
+    "D": "Voltage-gated Ca²⁺ channels close",
+    "E": "Insulin is released by simple diffusion"
+   },
+   "original_text": "เกิดกระบวนการอะไรใน beta cell เมื่อได้รับ glucose ตอบ Increase ATP cause K+ channel close แล้วทำให้เซลล์เกิด depolarize",
+   "why": {
+    "A": "ผิดทิศ",
+    "B": "ผิดทิศ",
+    "C": "ถูก",
+    "D": "Ca²⁺ channel เปิด",
+    "E": "หลั่งแบบ exocytosis"
+   }
+  },
+  "46": {
+   "explanation": "(Increase triglyceride synthesis)** — insulin ที่ adipose: GLUT4 ↑, LPL ↑ (รับ FA จาก lipoprotein), lipogenesis ↑, hormone-sensitive lipase ↓ → เก็บ TG\nTrap: insulin ลดการปล่อย fatty acid",
+   "choices_override": {
+    "A": "Increase triglyceride synthesis",
+    "B": "Decrease fat uptake",
+    "C": "Decrease glucose uptake",
+    "D": "Increase release of fatty acid",
+    "E": "Activate hormone-sensitive lipase"
+   },
+   "ai_choices": [
+    "E"
+   ]
+  },
+  "47": {
+   "explanation": "(Plasma insulin level)** — T1DM: autoimmune ทำลาย β-cell → insulin/C-peptide ต่ำมาก; T2DM: insulin ปกติหรือสูง (insulin resistance) ในระยะแรก\nTrap: glucagon สูงได้ในทั้งสองแบบ",
+   "choices_override": {
+    "A": "Plasma insulin level",
+    "B": "Plasma glucagon level",
+    "C": "Presence of hyperglycemia",
+    "D": "Presence of glucosuria",
+    "E": "Risk of microvascular complications"
+   },
+   "ai_choices": [
+    "C",
+    "D",
+    "E"
+   ],
+   "issues": [
+    "ผู้จำจำได้ 2 ช้อยส์ AI เติมให้ครบ"
+   ]
+  },
+  "48": {
+   "explanation": "(Gluconeogenesis and ketogenesis ↑)** — glucagon → Gs → cAMP → PKA ที่ตับ: glycogenolysis ↑, gluconeogenesis ↑ (F2,6BP ↓, PEPCK ↑), ketogenesis ↑ (ACC ↓ → malonyl-CoA ↓ → CPT-1 ↑); lipolysis ที่ adipose\nTrap: glycogen synthesis และ fatty acid synthesis ลดลง",
+   "flags": [
+    "ai_generated"
+   ],
+   "answer": "B",
+   "stem_override": "Which of the following is an effect of glucagon on the liver?",
+   "choices_override": {
+    "A": "Increased glycogen synthesis",
+    "B": "Increased gluconeogenesis and ketogenesis",
+    "C": "Increased fructose-2,6-bisphosphate",
+    "D": "Increased fatty acid synthesis",
+    "E": "Decreased cAMP"
+   },
+   "original_text": "Effect of glucagon (ไม่มีช้อยส์; เฉลยแปะตาราง effects of glucagon)",
+   "why": {
+    "A": "ผิดทิศ (glycogenolysis ↑)",
+    "B": "ถูก",
+    "C": "F2,6BP ลดลง",
+    "D": "ลดลง (acetyl-CoA carboxylase ถูกยับยั้ง)",
+    "E": "cAMP เพิ่มขึ้น"
+   }
+  },
+  "49": {
+   "explanation": "(Epinephrine)** — ลำดับการตอบสนองต่อ hypoglycemia: insulin ↓ (80–85 mg/dL) → glucagon ↑ (65–70) → epinephrine ↑ (65–70) → cortisol/GH (ระยะยาว, ชั่วโมง); ในช้อยส์ไม่มี glucagon จึงเป็น epinephrine\nTrap: cortisol/GH ช่วยเมื่อ hypoglycemia นานหลายชั่วโมง"
+  },
+  "50": {
+   "explanation": "(Metformin)** — biguanide → lactic acidosis (ยับยั้ง gluconeogenesis จาก lactate, เสี่ยงใน CKD, hypoxia)\nTrap: repaglinide/insulin → hypoglycemia",
+   "choices_override": {
+    "A": "Metformin",
+    "B": "Acarbose",
+    "C": "Repaglinide",
+    "D": "Insulin lispro",
+    "E": "Sitagliptin"
+   },
+   "ai_choices": [
+    "E"
+   ]
+  },
+  "51": {
+   "explanation": "(Release insulin from pancreas)** — glyburide (2nd-gen sulfonylurea) = insulin secretagogue ปิด K-ATP\nTrap: C = metformin/TZD; D = TZD",
+   "choices_override": {
+    "A": "Increase insulin synthesis",
+    "B": "Release insulin from pancreas",
+    "C": "Enhance glucose uptake",
+    "D": "Decrease insulin resistance",
+    "E": "Delay carbohydrate absorption"
+   },
+   "ai_choices": [
+    "E"
+   ],
+   "edits": [
+    {
+     "field": "stem",
+     "old": "What is the mechanism of action of glyburide that distinguishes it from other antidiabetic drugs?",
+     "new": "What mechanism of action of glyburide distinguishes it from other antidiabetic drugs?"
+    }
+   ]
+  },
+  "52": {
+   "explanation": "(Niacin)** — niacin ลด TG/LDL เพิ่ม HDL มากที่สุด แต่ทำ insulin resistance → glucose สูงขึ้น (ระวังใน IFG/DM) + flushing, hepatotoxicity, uric acid ↑\nTrap: fenofibrate ไม่ทำ glucose สูง",
+   "edits": [
+    {
+     "field": "choices.B",
+     "old": "Cholestipol",
+     "new": "Colestipol"
+    }
+   ]
+  },
+  "53": {
+   "explanation": "(Decrease LDL receptor degradation)** — PCSK9 mAb (alirocumab, evolocumab) จับ PCSK9 ในเลือด → PCSK9 ไม่จับ LDL receptor → receptor recycle กลับผิวเซลล์ไม่ถูกทำลายใน lysosome → LDL ↓; inclisiran (siRNA) ลดการสร้าง PCSK9\nTrap: PCSK9 mAb ไม่ได้ลดการหลั่ง PCSK9",
+   "choices_override": {
+    "A": "Decrease PCSK9 secretion",
+    "B": "Decrease LDL receptor degradation",
+    "C": "Inhibit PCSK9-bound LDL receptor entry into hepatocytes",
+    "D": "Inhibit HMG-CoA reductase",
+    "E": "Inhibit intestinal cholesterol absorption"
+   },
+   "ai_choices": [
+    "D",
+    "E"
+   ],
+   "issues": [
+    "ช้อยส์เดิมเป็นภาษาไทย แปลให้เป็นอังกฤษ"
+   ]
+  },
+  "54": {
+   "explanation": "(Bone turnover marker)** — ก่อนเริ่มยา osteoporosis หลัง fragility fracture: baseline bone turnover marker (CTX, P1NP) ใช้ติดตามการตอบสนองยา + ประเมิน BMD และหาสาเหตุทุติยภูมิ\nTrap: ข้อเดียวกับรุ่น 46 ข้อ 43",
+   "flags": [
+    "needs_review"
+   ],
+   "issues": [
+    "ไม่มี BMD (DXA) ในช้อยส์",
+    "ผู้เฉลยต้นฉบับเขียนว่าไม่แน่ใจ"
+   ],
+   "edits": [
+    {
+     "field": "choices.A",
+     "old": "Bone turn over marker",
+     "new": "Bone turnover marker"
+    }
+   ]
+  },
+  "55": {
+   "explanation": "(Increase prolactin)** — amenorrhea + bilateral galactorrhea = hyperprolactinemia: prolactin กด GnRH → FSH/LH ↓ → estrogen ↓\nTrap: FSH, LH, estrogen, GnRH ลดลง"
+  },
+  "56": {
+   "explanation": "(Inhibit phospholipase A₂)** — corticosteroid → annexin A1 → ยับยั้ง PLA₂ → arachidonic acid ↓ → PG และ LT ↓ (+ ลด COX-2 expression, IL-1)\nTrap: ไม่ได้ยับยั้ง COX-2 enzyme โดยตรงแบบ NSAID",
+   "choices_override": {
+    "A": "Inhibit COX2",
+    "B": "Increase IL-1 secretion",
+    "C": "Inhibit Phospholipase A2",
+    "D": "Increase capillary permeability",
+    "E": "Activate NF-κB"
+   },
+   "ai_choices": [
+    "D",
+    "E"
+   ]
+  },
+  "57": {
+   "explanation": "(Circulating reservoir and prolong half-life)** — steroid ละลายน้ำไม่ดี → จับ CBG (transcortin), SHBG, albumin → ขนส่งในเลือด เป็น reservoir ลดความผันผวน ยืด half-life ลด clearance; เฉพาะ free hormone ที่ออกฤทธิ์\nTrap: binding protein ไม่ได้ช่วยให้เข้าเซลล์",
+   "flags": [
+    "ai_generated"
+   ],
+   "answer": "C",
+   "stem_override": "What is the main purpose of steroid hormones binding to plasma proteins?",
+   "choices_override": {
+    "A": "To allow steroids to cross the cell membrane",
+    "B": "To activate the steroid receptor",
+    "C": "To act as a circulating reservoir and prolong half-life",
+    "D": "To increase renal clearance of steroids",
+    "E": "To convert steroids into active forms"
+   },
+   "original_text": "Plasma binding protein จับกับ steroid เพื่อ? (ผู้เฉลยแปะสไลด์ CBG/albumin และใส่ ?)",
+   "why": {
+    "A": "เฉพาะ free hormone เท่านั้นที่ผ่าน membrane",
+    "B": "binding protein ไม่ได้ activate receptor",
+    "C": "ถูก",
+    "D": "binding protein ลด clearance",
+    "E": "ไม่ใช่หน้าที่"
+   }
+  },
+  "58": {
+   "explanation": "(Cortical adenoma)** — adrenal mass ขอบเขตชัด เนื้อสีเหลือง = adrenocortical adenoma (lipid-rich)\nTrap: carcinoma ก้อนใหญ่ เลือดออก เนื้อตาย",
+   "choices_override": {
+    "A": "Lipoma",
+    "B": "Granuloma",
+    "C": "Cortical carcinoma",
+    "D": "Cortical adenoma",
+    "E": "Metastatic carcinoma"
+   },
+   "edits": [
+    {
+     "field": "stem",
+     "old": "ให้อาการมาเยอะ ๆ สุดท้ายบอกว่าพบ Mass ที่มี Yellow tissue ให้การวินิจฉัยว่าเป็นอะไร?",
+     "new": "A patient has an adrenal mass composed of well-circumscribed yellow tissue. What is the most likely diagnosis?"
+    }
+   ],
+   "original_text": "ให้อาการมาเยอะ ๆ (ผู้จำจำอาการไม่ได้)",
+   "flags": [
+    "source_unverified"
+   ]
+  },
+  "59": {
+   "explanation": "(Neuroendocrine hormone)** — neuron หลั่งสารเข้ากระแสเลือด = neuroendocrine (เช่น ADH, oxytocin, hypothalamic releasing hormone)\nTrap: neurotransmitter หลั่งที่ synapse"
+  },
+  "60": {
+   "explanation": "(Ethinyl estradiol)** — estrogen เพิ่ม CBG และลด metabolism → ไม่ลดระดับ prednisone (อาจเพิ่ม); rifampin เป็น CYP3A4 inducer → ลดระดับมาก (ข้อซ้ำกับข้อ 32)\nTrap: ถามตัวที่ลด 'น้อยที่สุด'",
+   "choices_override": {
+    "A": "Ethinyl estradiol",
+    "B": "Phenobarbital",
+    "C": "Rifampin",
+    "D": "Phenytoin",
+    "E": "Cholestyramine"
+   },
+   "ai_choices": [
+    "B",
+    "D",
+    "E"
+   ],
+   "original_text": "B. Pyrolin (ชื่อยาไม่มีจริง น่าจะจำผิด)",
+   "issues": [
+    "ช้อยส์ B ในต้นฉบับ (Pyrolin) ไม่ใช่ชื่อยาที่มีจริง AI แทนด้วยยาจากข้อ 32"
+   ],
+   "edits": [
+    {
+     "field": "stem",
+     "old": "Which factor has the least effect on reducing blood levels of Prednisone?",
+     "new": "Which drug has the least effect in reducing blood levels of prednisone?"
+    }
+   ]
+  },
+  "61": {
+   "explanation": "(Activates protein kinase A)** — PTH/PTHrP receptor (PTH1R) จับ Gs → adenylyl cyclase → cAMP ↑ → PKA (และ Gq → PLC → IP₃ ในบางเซลล์)\nTrap: cAMP เพิ่มขึ้น (ไม่ใช่ลด)",
+   "choices_override": {
+    "A": "Decreases cAMP",
+    "B": "Increases IP₃ as the main pathway",
+    "C": "Activates phospholipase A₂",
+    "D": "Activates protein kinase A",
+    "E": "Activates JAK-STAT"
+   },
+   "ai_choices": [
+    "E"
+   ],
+   "issues": [
+    "ผู้จำไม่แน่ใจว่าโจทย์ถามแบบนี้หรือไม่"
+   ],
+   "flags": [
+    "source_unverified"
+   ],
+   "edits": [
+    {
+     "field": "stem",
+     "old": "What does the hPTH/PTHr receptor do?",
+     "new": "What is the main signaling action of the PTH/PTHrP receptor?"
+    }
+   ]
+  }
+ },
+ "extra_edits": {}
+}

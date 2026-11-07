@@ -86,15 +86,25 @@ def main():
                  "ai_answer": b["ai"] if b else None, "ai_confidence": b["conf"] if b else None,
                  "ai_reason": b["why"] if b else None,
                  "audit_note": r.get("audit_note"), "why": r.get("why"),
-                 "ai_generated": False, "ai_choices": [], "original_text": r.get("original_text"),
-                 "filled_from": None, "edits": edits, "duplicate_group": dup_of.get(n),
+                 "ai_generated": "ai_generated" in flags, "ai_choices": list(r.get("ai_choices", [])),
+                 "original_text": r.get("original_text"), "filled_from": r.get("filled_from"), "edits": edits, "duplicate_group": dup_of.get(n),
                  "off_block": "off_block" in flags, "needs_review": "needs_review" in flags,
                  "locked": False}
+
+        if audit["ai_choices"]:
+            q["issues"].append(f"ช้อยส์ {', '.join(audit['ai_choices'])} AI เติมให้ครบ 5 ตัว")
 
         if skipped:
             audit["answer_status"] = "skipped"
             audit["audit_note"] = rep.get("skipped_reason")
             q["issues"].append("ข้อนี้ผู้จำจำโจทย์ไม่ได้")
+        elif audit["ai_generated"] and qid not in decisions:
+            # Rule 3.3: the original is only a recall note → AI wrote the full question (answer in the repair layer)
+            q["correct"] = r.get("answer")
+            audit["answer_status"] = "ai_generated"
+            q["issues"].append("AI เขียนข้อนี้ขึ้นใหม่จากโน้ตความจำในต้นฉบับ")
+            if not q["correct"]:
+                problems.append(f"ข้อ {n}: ai_generated แต่ไม่มี answer ใน repair")
         elif qid in decisions:
             d = decisions[qid]
             if d.get("answer") and d["answer"] != audit["source_answer"]:

@@ -1,0 +1,507 @@
+{
+ "set_id": "end_49_MCQ",
+ "note": "Phase 3 — repair layer. Key read by vision (circle / X / tick = answer). Exam note: real exam had 68 items, 38 recalled.",
+ "skipped": [],
+ "skipped_reason": "",
+ "duplicate_groups": {
+  "end-49-fed-state": [
+   "5"
+  ],
+  "end-49-cushing-acth-independent": [
+   "21"
+  ]
+ },
+ "questions": {
+  "1": {
+   "explanation": "(OPG)** — osteoprotegerin (จาก osteoblast) เป็น soluble decoy receptor จับ RANKL → RANKL จับ RANK ไม่ได้ → ยับยั้ง osteoclast differentiation, activation และ survival\nTrap: RANKL กระตุ้น; RUNX2/BMP-2/ALP เป็นของ osteoblast"
+  },
+  "2": {
+   "explanation": "(Acetylcholine)** — preganglionic sympathetic fiber (splanchnic nerve) หลั่ง acetylcholine → nicotinic receptor บน chromaffin cell → Ca²⁺ influx → exocytosis ของ epinephrine/norepinephrine\nTrap: norepinephrine เป็นสิ่งที่ถูกหลั่งออกมา ไม่ใช่สัญญาณกระตุ้น",
+   "issues": [
+    "ผู้เฉลยวงทั้ง acetylcholine และ norepinephrine และเขียนว่าไม่แน่ใจว่าโจทย์ถามอะไร"
+   ],
+   "audit_note": "เฉลยต้นฉบับวงทั้ง C (acetylcholine) และ D (norepinephrine) พร้อมโน้ตว่าไม่แน่ใจว่าถามอะไร — สัญญาณกระตุ้นการหลั่งคือ ACh; NE เป็นผลผลิต AI เลือก C",
+   "why": {
+    "A": "ไม่ใช่สัญญาณหลัก",
+    "B": "ยับยั้งการหลั่งฮอร์โมน",
+    "C": "ถูก — preganglionic ACh",
+    "D": "เป็นฮอร์โมนที่หลั่งออกมา",
+    "E": "ไม่ใช่สัญญาณหลัก"
+   },
+   "edits": [
+    {
+     "field": "choices.E",
+     "old": "Vasoactive",
+     "new": "Vasoactive intestinal peptide"
+    }
+   ]
+  },
+  "3": {
+   "explanation": "(Elevated glucose)** — GLUT2 (low-affinity, high-capacity) ที่ β-cell และตับเป็น glucose sensor; loss-of-function → β-cell หลั่ง insulin ช้า/น้อย และตับเก็บ glucose ได้น้อย → hyperglycemia หลังอาหาร (Fanconi-Bickel syndrome ในรายรุนแรง)\nTrap: insulin ต่ำ ไม่ใช่สูง"
+  },
+  "4": {
+   "explanation": "(JAK2-STAT pathway)** — prolactin receptor (class I cytokine receptor เหมือน GH receptor) ไม่มี intrinsic kinase → JAK2 → STAT5 → transcription ของ milk protein\nTrap: adenylyl cyclase/PLC เป็นของ GPCR",
+   "edits": [
+    {
+     "field": "choices.C",
+     "old": "IPC",
+     "new": "Phospholipase C"
+    },
+    {
+     "field": "choices.D",
+     "old": "IPA",
+     "new": "Phospholipase A2"
+    }
+   ]
+  },
+  "5": {
+   "explanation": "(Increased glucose uptake in muscle tissue)** — fed state: insulin → GLUT4 translocation ที่ muscle/adipose + hepatic glycogenesis ↑; hepatic glycogenolysis และ glucose production ลดลง\nTrap: สมองใช้ GLUT1/3 ไม่ขึ้นกับ insulin",
+   "audit_note": "เฉลยต้นฉบับวงช้อยส์ 'increased hepatic glycogenolysis' แต่โน้ตที่แปะเองบอกว่า fed state ตับสังเคราะห์ glycogen — glycogenolysis เกิดตอน fasting; คำตอบที่ถูกคือ muscle glucose uptake (E) ซึ่งเป็นเฉลยของข้อเดียวกันในรุ่น 47, 50",
+   "why": {
+    "A": "สมองไม่ขึ้นกับ insulin",
+    "B": "ลดลงใน fed state",
+    "C": "ลดลงใน fed state (เกิดตอน fasting)",
+    "D": "เกิดเมื่อ glucose > 180 เท่านั้น",
+    "E": "ถูก"
+   },
+   "issues": [
+    "ต้นฉบับพิมพ์ตัวอักษรช้อยส์ซ้ำ (a. a. b. c. d.) จัดเรียงใหม่เป็น A–E"
+   ]
+  },
+  "6": {
+   "explanation": "(Prostaglandin)** — niacin จับ GPR109A บน Langerhans cell/keratinocyte → PGD₂ และ PGE₂ → cutaneous vasodilation → flushing, คัน; ป้องกันด้วย aspirin 30 นาทีก่อน\nTrap: ไม่ได้เกิดจาก histamine",
+   "choices_override": {
+    "A": "Prostaglandin",
+    "B": "Histamine",
+    "C": "Acetylcholine",
+    "D": "Substance P",
+    "E": "Bradykinin"
+   },
+   "ai_choices": [
+    "E"
+   ],
+   "edits": [
+    {
+     "field": "stem",
+     "old": "กิน niacin คันและเปqนผื่นแดง เกิดจากสารใด",
+     "new": "A patient taking niacin develops pruritus and skin flushing. Which mediator causes this?"
+    }
+   ]
+  },
+  "7": {
+   "explanation": "(ลด intracellular Na⁺)** — thiazide ปิด NCC ที่ DCT → Na⁺ ในเซลล์ ↓ → basolateral NCX1 ทำงานมากขึ้น → Ca²⁺ reabsorption ↑ → hypercalcemia\nTrap: NKCC2 เป็นเป้าของ loop diuretic",
+   "choices_override": {
+    "A": "Decreased TRPV6 activity",
+    "B": "Decreased intracellular Na⁺",
+    "C": "Decreased Na⁺-K⁺-2Cl⁻ cotransporter activity",
+    "D": "Increased Na⁺-Cl⁻ cotransporter activity",
+    "E": "Increased NaPi-IIa cotransporter expression"
+   },
+   "edits": [
+    {
+     "field": "stem",
+     "old": "A 55-year-old man กิน thiazide diuretics เพื่อลด hypertension ตÑอมาเกิด constipation, fatigue, plasma Ca2+ 12.5 mg/dL โจทยâถามวÑา Thiazide diuretics มี MOA อยÑางไร",
+     "new": "A 55-year-old man takes a thiazide diuretic for hypertension and later develops constipation, fatigue and plasma Ca²⁺ 12.5 mg/dL. Which mechanism of thiazide explains his hypercalcemia?"
+    }
+   ]
+  },
+  "8": {
+   "explanation": "(To predict fracture risk)** — การวินิจฉัย osteoporosis (BMD T-score + clinical risk factor/FRAX) มีเป้าหมายเพื่อประเมินความเสี่ยง fracture และตัดสินใจรักษา\nTrap: BMD วัดได้แต่ไม่ใช่เป้าหมาย",
+   "choices_override": {
+    "A": "To predict bone density",
+    "B": "To predict bone quality",
+    "C": "To predict fracture risk",
+    "D": "To predict for survival",
+    "E": "To predict serum calcium level"
+   },
+   "ai_choices": [
+    "E"
+   ],
+   "edits": [
+    {
+     "field": "stem",
+     "old": "เปåาหมายของการวินิจฉัยโรคกระดูกพรุน",
+     "new": "What is the goal of diagnosing osteoporosis?"
+    }
+   ]
+  },
+  "9": {
+   "explanation": "(VLDL)** — VLDL ขน TG ที่ตับสร้าง ไปให้ LPL ปล่อย FFA ให้ muscle ใช้เป็นพลังงานและ adipose เก็บ\nTrap: chylomicron ขน TG จากอาหาร"
+  },
+  "10": {
+   "explanation": "(Tetany)** — หลังผ่าตัด thyroid → hypoparathyroidism → Ca 1.5 mmol/L (ต่ำ) → tetany, Chvostek/Trousseau sign\nTrap: osteoporosis, kidney stone, constipation สัมพันธ์กับ hypercalcemia/hyperparathyroidism",
+   "issues": [
+    "ค่า calcium ในต้นฉบับเขียนซ้อนกัน (2.0 1.5 mmol/L)"
+   ],
+   "edits": [
+    {
+     "field": "stem",
+     "old": "(2.0 1.5 mmol/L)",
+     "new": "(1.5 mmol/L)"
+    }
+   ],
+   "audit_note": "เฉลยต้นฉบับกากบาทที่ช้อยส์ c (osteoporosis) — hypocalcemia หลังตัด parathyroid ทำให้ tetany (B) ข้อเดียวกันในรุ่น 47 และ 50 เฉลย tetany น่าจะกากบาทผิดบรรทัด",
+   "why": {
+    "A": "อาการ hypercalcemia",
+    "B": "ถูก",
+    "C": "ไม่ใช่อาการของ hypocalcemia เฉียบพลัน",
+    "D": "อาการ hypercalcemia",
+    "E": "อาการ hypercalcemia"
+   }
+  },
+  "11": {
+   "explanation": "(Metformin)** — biguanide → lactic acidosis (ยับยั้ง gluconeogenesis จาก lactate)\nTrap: repaglinide/insulin → hypoglycemia",
+   "edits": [
+    {
+     "field": "stem",
+     "old": "with type 2 diabetics developed",
+     "new": "with type 2 diabetes developed"
+    }
+   ]
+  },
+  "12": {
+   "explanation": "(Induce CYP3A4)** — ยาอื่นที่เป็น CYP3A4 inducer (rifampicin, phenytoin) เร่ง metabolism ของ prednisolone → ระดับยาลด → adrenal insufficiency (คลื่นไส้ อ่อนแรง)\nTrap: CYP3A4 inhibitor ทำให้ระดับ steroid สูง → Cushingoid",
+   "flags": [
+    "needs_review"
+   ],
+   "issues": [
+    "ถ้อยคำโจทย์กำกวม (ไม่ระบุยาอื่น)"
+   ],
+   "audit_note": "เฉลยต้นฉบับกากบาท b (inhibit CYP3A4) — CYP3A4 inhibition ทำให้ prednisolone สูงขึ้น (Cushingoid) ไม่ใช่คลื่นไส้อ่อนแรง; อาการเข้ากับระดับ steroid ลดลงจาก inducer มากกว่า แต่โจทย์ไม่ระบุยาอื่น",
+   "why": {
+    "A": "ยาอื่นเป็น inducer → prednisolone ↓ → adrenal insufficiency",
+    "B": "inhibitor → prednisolone ↑ (Cushingoid)",
+    "C": "11β-HSD1 เปลี่ยน prednisone → prednisolone",
+    "D": "ไม่เกี่ยว"
+   },
+   "choices_override": {
+    "A": "Induction of CYP3A4",
+    "B": "Inhibition of CYP3A4",
+    "C": "Induction of 11β-HSD1",
+    "D": "Inhibition of 11β-HSD",
+    "E": "Increased CBG synthesis"
+   },
+   "ai_choices": [
+    "E"
+   ],
+   "edits": [
+    {
+     "field": "stem",
+     "old": "Patient take prednisolone with other drug and then having nausea and weakness. What is the following mechanism of prednisolone cause this symptom?",
+     "new": "A patient takes prednisolone with another drug and then develops nausea and weakness. Which drug-interaction mechanism explains these symptoms?"
+    }
+   ]
+  },
+  "13": {
+   "explanation": "(Salt waste)** — StAR defect (lipoid CAH): ไม่มี steroid ทุกตัว → aldosterone ↓ → salt wasting, hyperkalemia, hypotension; ACTH ↑ → ต่อมโตมีไขมันคั่ง\nTrap: hypokalemia/hypertension เป็นของ 11β-OH หรือ 17α-OH deficiency",
+   "edits": [
+    {
+     "field": "stem",
+     "old": "show low level of STAR protein expression. This mutation lead to",
+     "new": "shows a low level of StAR protein expression. This mutation leads to"
+    },
+    {
+     "field": "choices.A",
+     "old": "salt waste",
+     "new": "Salt wasting"
+    }
+   ]
+  },
+  "14": {
+   "explanation": "(Lipoprotein lipase)** — fibrate (PPAR-α agonist) → LPL synthesis ↑, apoC-III ↓, fatty acid β-oxidation ↑ → TG ↓\nTrap: PCSK9 และ HMG-CoA reductase เกี่ยวกับ statin/LDL"
+  },
+  "15": {
+   "explanation": "(Increased insulin secretion)** — insulin resistance: β-cell ชดเชยด้วย compensatory hyperinsulinemia → glucose ปกติจนกว่า β-cell ล้า\nTrap: สมองใช้ glucose แบบ insulin-independent ไม่ได้เพิ่มขึ้นเพื่อชดเชย",
+   "audit_note": "เฉลยต้นฉบับขีดช้อยส์ e (increased glucose uptake in brain) — ข้อเดียวกันในรุ่น 47, 51, 52 เฉลย increased insulin secretion (D) ซึ่งเป็นกลไกชดเชยจริง",
+   "why": {
+    "A": "ไม่ใช่กลไกหลัก",
+    "B": "ไม่ใช่กลไกของร่างกาย",
+    "C": "เกิดเมื่อ glucose > 180",
+    "D": "ถูก",
+    "E": "สมองไม่ขึ้นกับ insulin"
+   }
+  },
+  "16": {
+   "explanation": "(Aldosterone)** — ภาพ: hormone ผ่าน membrane → จับ receptor ใน cytoplasm → hormone-receptor complex เข้า nucleus → mRNA → protein = steroid hormone (aldosterone, cortisol)\nTrap: ADH, epinephrine, PTH จับ receptor บน membrane",
+   "issues": [
+    "ภาพประกอบโจทย์ไม่มีในไฟล์ข้อสอบ (เห็นในหน้าเฉลย) เขียนคำบรรยายภาพแทน"
+   ],
+   "stem_override": "A hormone diffuses across the plasma membrane, binds a receptor in the cytoplasm, and the hormone–receptor complex enters the nucleus to change mRNA and protein synthesis. Which hormone acts this way?",
+   "original_text": "From this following picture. What is this hormone? (ภาพ intracellular receptor)",
+   "edits": [
+    {
+     "field": "choices.D",
+     "old": "Thyroid",
+     "new": "Thyroid-stimulating hormone"
+    },
+    {
+     "field": "choices.E",
+     "old": "Parathyroid",
+     "new": "Parathyroid hormone"
+    }
+   ]
+  },
+  "17": {
+   "explanation": "(Diffuse enlargement)** — ทารก 10 วัน น้ำหนักลด ขาดน้ำ hyperpigmentation = salt-wasting 21-hydroxylase deficiency (CAH) → ACTH ↑ → bilateral diffuse adrenal hyperplasia\nTrap: atrophy พบใน autoimmune adrenalitis ในผู้ใหญ่",
+   "choices_override": {
+    "A": "Normal size with dark pigmentation",
+    "B": "Atrophy of both glands",
+    "C": "One normal, one atrophic",
+    "D": "Bilateral diffuse enlargement",
+    "E": "Multinodular enlargement"
+   },
+   "edits": [
+    {
+     "field": "stem",
+     "old": "เด็กชายอายุ 10 วัน น้ำหนักลด ปากแหSง skin pigmentation โจทยâถาม gross adrenal",
+     "new": "A 10-day-old boy has weight loss, dry lips and skin hyperpigmentation. What is the gross appearance of his adrenal glands?"
+    }
+   ],
+   "audit_note": "เฉลยต้นฉบับขีด b (atrophy both glands) โดยอ้าง autoimmune adrenalitis — แต่ทารกแรกเกิด salt wasting + hyperpigmentation คือ CAH ซึ่งต่อมโตทั้งสองข้าง (D) ข้อเดียวกันในรุ่น 46, 47 เฉลย bilateral diffuse enlargement",
+   "why": {
+    "A": "ไม่เข้ากับ CAH",
+    "B": "autoimmune Addison ในผู้ใหญ่",
+    "C": "ไม่ใช่ภาพนี้",
+    "D": "ถูก — CAH",
+    "E": "ACTH-independent macronodular hyperplasia"
+   }
+  },
+  "18": {
+   "explanation": "(ลด 1α-hydroxylase)** — CYP27B1 = 1α-hydroxylase; mutation → calcitriol ↓ (vitamin D-dependent rickets type 1) → Ca ↓ → PTH ↑ → rickets\nTrap: PTH เพิ่มขึ้น (ไม่ใช่ลด); TRPV6 และ NaPi-IIb ลดลง",
+   "choices_override": {
+    "A": "Increased calcitonin",
+    "B": "Increased TRPV6 expression",
+    "C": "Increased NaPi-IIb expression",
+    "D": "Decreased 1α-hydroxylase activity",
+    "E": "Decreased PTH"
+   },
+   "original_text": "d. ลด 17 hydroxylase (ผู้เฉลยแก้เป็น 1α)",
+   "issues": [
+    "ช้อยส์ D ในไฟล์ข้อสอบพิมพ์ผิดเป็น 17 hydroxylase"
+   ],
+   "edits": [
+    {
+     "field": "stem",
+     "old": "แพทยâวินิจฉัยวÑาเปqน autosomal recessive disorder เนื่องมาจาก mutation of CYP27B1 Which following is contribute of these signs/symptoms?",
+     "new": "A patient is diagnosed with an autosomal recessive disorder caused by a mutation of CYP27B1. Which of the following contributes to the signs and symptoms?"
+    }
+   ]
+  },
+  "19": {
+   "explanation": "(Primary hyperaldosteronism)** — HT + hypokalemia + aldosterone สูงมาก (160) + renin ต่ำมาก (0.05) → primary hyperaldosteronism (Conn)\nTrap: secondary มี renin สูง",
+   "edits": [
+    {
+     "field": "stem",
+     "old": "40 years old female มาหSองฉุกเฉิน ดSวยอาการ headache.",
+     "new": "A 40-year-old woman presents to the emergency room with headache."
+    }
+   ],
+   "issues": [
+    "หน่วยในต้นฉบับ (mmol/dL, ng/dL/hour) น่าจะพิมพ์ผิด"
+   ]
+  },
+  "20": {
+   "explanation": "(Truncal obesity)** — cortisol เกิน → truncal obesity, moon face, buffalo hump, hyperglycemia, hypokalemia, osteoporosis\nTrap: hypoglycemia และ hyperkalemia ผิดทิศ",
+   "edits": [
+    {
+     "field": "stem",
+     "old": "Which of the following excess cortisol cause in Cushing patient?",
+     "new": "Which of the following is caused by excess cortisol in a patient with Cushing syndrome?"
+    }
+   ]
+  },
+  "21": {
+   "explanation": "(Adrenal adenoma)** — cortisol สูง + circadian หาย + ACTH < 5 (ถูกกด) = ACTH-independent → adrenal adenoma\nTrap: pituitary tumor และ ectopic ACTH มี ACTH สูง"
+  },
+  "22": {
+   "explanation": "(Iodide)** — iodide ขนาดสูง → Wolff–Chaikoff (organification ↓) ชั่วคราว → ต่อมปรับ NIS ลดลงแล้ว escape ใน 1–2 สัปดาห์\nTrap: thionamide ไม่เกิด escape",
+   "edits": [
+    {
+     "field": "stem",
+     "old": "Which of followings cause",
+     "new": "Which of the following causes"
+    }
+   ]
+  },
+  "23": {
+   "explanation": "(ควบคุมปริมาณน้ำในร่างกาย)** — pars nervosa (posterior pituitary) เก็บและหลั่ง ADH (water reabsorption) และ oxytocin\nTrap: TSH มาจาก anterior pituitary; Ca ควบคุมโดย PTH/calcitonin",
+   "choices_override": {
+    "A": "Regulating thyroid function",
+    "B": "Regulating body water",
+    "C": "Regulating plasma calcium",
+    "D": "Regulating egg development",
+    "E": "Regulating blood glucose"
+   },
+   "ai_choices": [
+    "E"
+   ],
+   "edits": [
+    {
+     "field": "stem",
+     "old": "Pars nervosa มีผลตÑอการทำงานกระบวนการอะไรในรÑางกาย",
+     "new": "The pars nervosa affects which body process?"
+    }
+   ]
+  },
+  "24": {
+   "explanation": "(Sheehan syndrome)** — หลังคลอดไม่มีประจำเดือน + ACTH/cortisol ต่ำ + hyponatremia, hypoglycemia, postural hypotension = postpartum pituitary necrosis\nTrap: Addison มี ACTH สูง",
+   "edits": [
+    {
+     "field": "choices.B",
+     "old": "Waterhouse-Friedrichsen syndrome",
+     "new": "Waterhouse-Friderichsen syndrome"
+    }
+   ]
+  },
+  "25": {
+   "explanation": "(200 mg/dL)** — Friedewald: LDL-C = TC − HDL-C − TG/5 = 280 − 50 − 30 = 200 mg/dL\nTrap: อย่าลืมหาร TG ด้วย 5",
+   "flags": [
+    "ai_generated"
+   ],
+   "answer": "D",
+   "stem_override": "A patient has total cholesterol 280 mg/dL, TG 150 mg/dL and HDL-C 50 mg/dL. What is the calculated LDL-C?",
+   "choices_override": {
+    "A": "80 mg/dL",
+    "B": "130 mg/dL",
+    "C": "170 mg/dL",
+    "D": "200 mg/dL",
+    "E": "230 mg/dL"
+   },
+   "original_text": "ให้ total cholesterol = 280 mg/dL, TG =150 mg/dL, HDL-c = 50 mg/dL ถามว่า LDL-c เท่าไหร่ ตอบ (ไม่มีช้อยส์)",
+   "why": {
+    "A": "ผิด",
+    "B": "ผิด (ลบ TG ทั้งหมด)",
+    "C": "ผิด",
+    "D": "ถูก (ตรงกับเฉลยต้นฉบับ 200)",
+    "E": "= TC − HDL (non-HDL)"
+   }
+  },
+  "26": {
+   "explanation": "(Papillary carcinoma)** — FNA: nuclear groove + intranuclear inclusion + Orphan Annie eye = papillary thyroid carcinoma\nTrap: follicular carcinoma วินิจฉัยจาก invasion",
+   "edits": [
+    {
+     "field": "stem",
+     "old": "groups of follicular having nuclear inclusion and nuclear groove.",
+     "new": "groups of follicular cells having nuclear inclusions and nuclear grooves. What is the most likely diagnosis?"
+    }
+   ]
+  },
+  "27": {
+   "explanation": "(Pancreatic β-cell membrane depolarization)** — sulfonylurea ปิด K-ATP → depolarization → voltage-gated Ca²⁺ เปิด → Ca²⁺ ↑ → exocytosis\nTrap: K-ATP ถูกปิด (ไม่ใช่ activate)"
+  },
+  "28": {
+   "explanation": "(GH)** — bitemporal (lateral) visual field defect + prognathism + มือเท้าโต = acromegaly จาก GH-secreting pituitary macroadenoma → GH และ IGF-1 สูง\nTrap: ACTH adenoma ทำให้ Cushing disease",
+   "edits": [
+    {
+     "field": "stem",
+     "old": "คนไขSมี lateral visual defect แตÑ residual vision 20/20 และมีอาการคางยื่น มือเทSาใหญÑ จะตรวจพบ คÑาใดที่มีปริมาณที่สูง",
+     "new": "A patient has a lateral (bitemporal) visual field defect with residual acuity 20/20, a protruding jaw and enlarged hands and feet. Which hormone level is expected to be high?"
+    }
+   ],
+   "audit_note": "เฉลยต้นฉบับวง e (ACTH) โดยเขียน pituitary tumor → ACTH ↑ — แต่คางยื่น มือเท้าใหญ่ คือ acromegaly จาก GH (B)",
+   "why": {
+    "A": "ไม่เกี่ยว",
+    "B": "ถูก — acromegaly",
+    "C": "ไม่เข้ากับอาการ",
+    "D": "prolactinoma ไม่ทำ acromegaly",
+    "E": "ทำ Cushing ไม่ใช่ acromegaly"
+   }
+  },
+  "29": {
+   "explanation": "(Decrease protein synthesis)** — steroid myopathy: glucocorticoid ลด protein synthesis + เพิ่ม protein catabolism (atrogin-1, MuRF1) → proximal muscle weakness (type II fiber atrophy)\nTrap: ลด Ca absorption ทำให้ osteoporosis (ปวดกระดูก) ไม่ใช่ muscle weakness",
+   "audit_note": "เฉลยต้นฉบับวง e (decrease calcium absorption) โดยแปะสไลด์ bone/calcium — แต่ muscle pain และ weakness จาก dexamethasone ระยะยาวคือ steroid myopathy (protein catabolism, C)",
+   "why": {
+    "A": "ไม่ใช่กลไกหลัก",
+    "B": "เป็นกลไกของ statin myopathy",
+    "C": "ถูก — steroid myopathy",
+    "D": "ไม่ใช่กลไกหลัก",
+    "E": "ทำให้ osteoporosis"
+   }
+  },
+  "30": {
+   "explanation": "(Creatine kinase)** — colchicine + simvastatin (ทั้งคู่ผ่าน CYP3A4/P-gp) → myopathy/rhabdomyolysis → CK สูง โดยเฉพาะผู้สูงอายุ ไตเสื่อม\nTrap: uric acid ลดลงจากการรักษา gout ไม่ใช่ parameter ของ ADR",
+   "edits": [
+    {
+     "field": "stem",
+     "old": "อายุ 70 ป§ กิน colchicine กับ simvastatin เพื่อรักษาโรค gout และ hyperlipidemia ตามลำดับ what parameters could be found in this patient?",
+     "new": "A 70-year-old patient takes colchicine for gout and simvastatin for hyperlipidemia. Which abnormal laboratory parameter could be found?"
+    }
+   ]
+  },
+  "31": {
+   "explanation": "(Low insulin)** — fasting: glucose ต่ำ → β-cell หลั่ง insulin น้อยลง → ปลด intra-islet inhibition ต่อ α-cell → glucagon ↑ (ร่วมกับ low glucose sensing ของ α-cell เอง)\nTrap: high glucose และ somatostatin ยับยั้ง glucagon; FFA สูงยับยั้งเล็กน้อย",
+   "flags": [
+    "needs_review"
+   ],
+   "issues": [
+    "ตัวกระตุ้นโดยตรงที่สุดคือ hypoglycemia ซึ่งไม่มีในช้อยส์",
+    "ในเฉลยต้นฉบับไม่ได้วงคำตอบ (ใส่ ?)"
+   ],
+   "why": {
+    "A": "intra-islet insulin ↓ ปลด inhibition",
+    "B": "ยับยั้ง glucagon",
+    "C": "FFA สูงยับยั้งเล็กน้อย",
+    "D": "ยับยั้ง glucagon",
+    "E": "กระตุ้นได้ (vagal) แต่ไม่ใช่ตัวหลักใน fasting"
+   }
+  },
+  "32": {
+   "explanation": "(Hypoglycemia)** — mecasermin (rhIGF-1) มีฤทธิ์คล้าย insulin → hypoglycemia เป็น ADR ที่พบบ่อยที่สุด\nTrap: carpal tunnel เป็น ADR ของ GH",
+   "edits": [
+    {
+     "field": "choices.C",
+     "old": "Capel tunnel syndrome",
+     "new": "Carpal tunnel syndrome"
+    }
+   ]
+  },
+  "33": {
+   "explanation": "(PTU: peripheral conversion of T4)** — PTU ยับยั้ง TPO + peripheral deiodinase (T4 → T3); MMI ยับยั้ง TPO อย่างเดียว; iodide ยับยั้ง release/organification; RAI ทำลายต่อม\nTrap: coupling ถูกยับยั้งโดย thionamide ไม่ใช่ iodide",
+   "edits": [
+    {
+     "field": "stem",
+     "old": "MOA of anti-thyroid drugs ขSอใดถูกตSอง",
+     "new": "Which pairing of antithyroid drug and mechanism is correct?"
+    }
+   ]
+  },
+  "34": {
+   "explanation": "(Prolactin)** — pituitary stalk เสียหาย → dopamine จาก hypothalamus ไปไม่ถึง lactotroph → prolactin ↑ (stalk effect); ฮอร์โมนอื่นลดลง\nTrap: prolactin ถูกควบคุมแบบยับยั้งเป็นหลัก"
+  },
+  "35": {
+   "explanation": "(Panhypopituitarism)** — ฉายแสงศีรษะ-คอ (nasopharyngeal cancer) ทำลาย hypothalamus/pituitary → central hypothyroid (bradycardia, puffy face, slow relaxation) + hypogonadism (small testes) → osteoporosis + vertebral fracture\nTrap: adrenal insufficiency/GH deficiency เป็นส่วนหนึ่ง แต่ภาพรวมคือหลายแกน"
+  },
+  "36": {
+   "explanation": "(Other specific type of diabetes)** — DM จาก pancreatectomy = diseases of the exocrine pancreas (type 3c) ใน ADA classification\nTrap: ต้องฉีด insulin แต่ไม่ใช่ T1DM (autoimmune)",
+   "audit_note": "เฉลยต้นฉบับกากบาท a (type 1 diabetes) — ตาม ADA classification DM หลัง total pancreatectomy เป็น other specific type (C) ข้อเดียวกันในรุ่น 46, 47, 50 เฉลย C",
+   "why": {
+    "A": "T1DM = autoimmune β-cell destruction",
+    "B": "ไม่ใช่",
+    "C": "ถูก",
+    "D": "ทราบสาเหตุ",
+    "E": "คำเก่าที่ไม่ใช้แล้ว"
+   },
+   "edits": [
+    {
+     "field": "choices.E",
+     "old": "Insulin dependent mellitus",
+     "new": "Insulin-dependent diabetes mellitus"
+    }
+   ]
+  },
+  "37": {
+   "explanation": "(Increased risk of hypothyroidism)** — RAI → hypothyroidism ถาวร ~80% (ต้องให้ levothyroxine ตลอดชีวิต) เป็นข้อเสียหลัก; ข้อดี: ราคาถูก ไม่เจ็บ ได้ผลดี\nTrap: ไม่เพิ่ม thyroid cancer และไม่ห้ามในผู้สูงอายุ (ห้ามใน pregnancy)"
+  },
+  "38": {
+   "explanation": "(IDL)** — apoE ผิดปกติ (E2/E2) → IDL และ chylomicron remnant จับ receptor ไม่ได้ → type III dysbetalipoproteinemia\nTrap: chylomicron remnant ก็เพิ่มด้วย",
+   "edits": [
+    {
+     "field": "choices.B",
+     "old": "DHL",
+     "new": "HDL"
+    }
+   ]
+  }
+ },
+ "extra_edits": {}
+}

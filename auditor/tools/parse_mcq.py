@@ -10,11 +10,18 @@ from pathlib import Path
 
 AUD = Path(__file__).resolve().parents[1]
 Q_START = re.compile(r"^\s*(\d{1,3})\s*[.)]\s*(.*)$")
-OPT = re.compile(r"^\s*([A-E])\s*[.)]\s*(.*)$")
+OPT = re.compile(r"^\s*([A-Ea-e])\s*[.)]\s*(.*)$")  # older cohorts use a. b. c.
 HEADER = re.compile(r"^VICHAKARN MED PSU \d+$", re.I)  # running page header of this archive
+# Instruction box printed inside page 1 of later cohorts ("1. ข้อสอบ MCQ มีทั้งหมด 75 ข้อ", "2. นักศึกษามีเวลา…").
+# Its numbered lines would otherwise be read as questions 2, 3, …
+INSTR = re.compile(r"^(\d\.\s*)?(ข้อสอบ\s*MCQ\s*มีทั้งหมด|นักศึกษามีเวลา|ข้อสอบเป็นภาษา|หมายเหตุ\s*:|ฝ่ายวิชาการ|-?\s*Vichakarn\s*Med|\d{3}-\d{3}\s+Endocrine)", re.I)
+
+
+FOOTER = re.compile(r"ทีมวิชาการ\s*Med\s*\d+|MCQ Endocrine Med\s*\d+|BY VICHAKARN MEDPSU \d+(\s+\d+)?|-\s*[\u201c\"]\s*GOOD LUCK\s*[\u201d\"]\s*-", re.I)  # page footers glued to text
 
 
 def norm(s):
+    s = FOOTER.sub(" ", s)
     s = unicodedata.normalize("NFC", s).replace(" ", " ")
     s = re.sub(r"[ \t]+", " ", s)
     return s.strip()
@@ -32,28 +39,36 @@ def parse(set_id):
     preamble = []
     for page, ln in lines:
         t = norm(ln)
-        if not t or HEADER.match(t):
+        if not t or HEADER.match(t) or INSTR.match(t) or re.fullmatch(r"\d{1,3}", t):  # bare page numbers
             continue
         m = Q_START.match(t)
         # A new question must be the next expected number. Blank-recall items ("3. –") have no choices,
         # so a question may start right after one; header lines before Q1 are kept as preamble.
-        if m and int(m.group(1)) == expect:
+        # Older recalled papers skip numbers (questions nobody remembered) and may start above 1:
+        # accept a jump forward when the line reads like a question, not like a numbered list item.
+        n = int(m.group(1)) if m else 0
+        jump = m and expect < n <= expect + 20 and len(m.group(2)) >= 15 and re.search(r"[A-Za-zก-๙]{3}", m.group(2)) and (len(cur["choices"]) >= 2 or not cur["choices"] if cur is not None else re.search(r"[A-Za-z]{3}", m.group(2)))
+        if m and (n == expect or (jump and not (cur is not None and field != "stem" and cur["choices"] and len(cur["choices"]) < 2))):
             if cur is None and int(m.group(1)) == 1 and not re.search(r"[A-Za-z]{3}", m.group(2)):
                 preamble.append(t)  # header "1. ข้อสอบมีทั้งหมด 81 ข้อ" etc.
                 continue
             cur = {"number": m.group(1), "page": page, "stem": m.group(2), "choices": {}, "raw_tail": ""}
             qs.append(cur)
             field = "stem"
-            expect += 1
+            expect = n + 1
             continue
         if cur is None:
             preamble.append(t)
             continue
         mo = OPT.match(t)
-        if mo and (mo.group(1) not in cur["choices"]):
-            field = mo.group(1)
-            cur["choices"][field] = mo.group(2)
-            continue
+        if mo:
+            k = mo.group(1).upper()
+            if k in cur["choices"] and mo.group(1).islower() and len(cur["choices"]) < 5:
+                k = "ABCDE"[len(cur["choices"])]  # recalled papers sometimes repeat a letter ("a. … a. …")
+            if k not in cur["choices"]:
+                field = k
+                cur["choices"][field] = mo.group(2)
+                continue
         if field == "stem":
             cur["stem"] = (cur["stem"] + " " + t).strip()
         else:
