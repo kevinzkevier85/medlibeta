@@ -485,11 +485,29 @@ window.MedLibQuizUI = function (ML) {
       h += `<p class="lead">หน้าที่ข้อในชุดนี้อ้างถึง จัดกลุ่มตาม Lecture · Tier คิดจากจำนวนปีที่หน้านั้นออกสอบในบล็อกนี้</p>`;
     }
     h += tierLegend;
-    h += lectures.length ? lectures.map((L) => lcardHTML(b, L, linkQ, L.sub)).join("") : `<div class="empty">ข้อในชุดนี้ยังไม่ได้โยงกับหน้า lecture (มีแค่หน้าต้นฉบับข้อสอบ) เมื่อ Auditor ใส่หน้า lecture แล้ว แผนอ่านจะขึ้นที่นี่</div>`;
+    h += lectures.length ? lectures.map((L) => lcardHTML(b, L, linkQ, L.sub)).join("") : lecPlanHTML(b, s.questions) || `<div class="empty">ข้อในชุดนี้ยังไม่ได้โยงกับหน้า lecture (มีแค่หน้าต้นฉบับข้อสอบ) เมื่อ Auditor ใส่หน้า lecture แล้ว แผนอ่านจะขึ้นที่นี่</div>`;
     const res = blockResults(b);
     const wrong = s.questions.filter((q) => q.id in res && res[q.id] < 0.999);
     h += `<h3>อ่านซ่อมจากข้อที่ผิดในชุดนี้</h3>${rereadHTML(b, wrong) || `<div class="empty">ยังไม่มีข้อที่ผิด เมื่อตรวจคำตอบแล้ว หน้าที่ควรอ่านซ่อมจะขึ้นที่นี่</div>`}`;
     ML.main.innerHTML = h;
+  }
+  // Reading plan per lecture, for blocks whose questions point at lectures but not at pages yet (END)
+  function lecPlanHTML(b, qs) {
+    const res = blockResults(b), by = {};
+    qs.forEach((q) => [...new Set((q.refs || []).filter((x) => x && x.lecture).map((x) => x.lecture))].forEach((l) => {
+      const o = by[l] = by[l] || { n: 0, years: new Set(), wrong: 0 };
+      o.n++; if (q.cohort) o.years.add(q.cohort);
+      if (C.counts(q, kov()) && q.id in res && res[q.id] < 0.999) o.wrong++;
+    }));
+    const ls = Object.keys(by).sort((x, y) => by[y].n - by[x].n || by[y].years.size - by[x].years.size || x.localeCompare(y));
+    if (!ls.length) return "";
+    return `<p class="hint">เรียง lecture ที่ข้อสอบอ้างถึงบ่อยสุดขึ้นก่อน · ข้อสอบชุดนี้ยังไม่มีเลขหน้า lecture จึงแสดงเป็นรายบท</p>
+      <div class="tablewrap"><table class="lecplan"><thead><tr><th>Lecture</th><th>ข้อสอบ</th><th></th></tr></thead><tbody>${ls.map((l) => {
+        const o = by[l], yrs = [...o.years].sort((x, y) => y - x);
+        const meta = [`ออก ${yrs.length} ปี${yrs.length ? ` (${yrs[yrs.length - 1]}–${yrs[0]})` : ""}`, o.wrong ? `<b>ฉันผิด ${o.wrong} ข้อ</b>` : ""].filter(Boolean).join(" · ");
+        return `<tr><td>${esc(lecName(b, l))}<div class="hint">${meta}</div></td><td>${o.n}</td>
+          <td class="lpbtn"><a class="btn sm" href="#/lec/${enc(b.id)}/${enc(l)}">อ่าน</a><button class="btn sm" data-z="mixlec" data-b="${esc(b.id)}" data-l="${esc(l)}">ฝึก</button></td></tr>`;
+      }).join("")}</tbody></table></div>`;
   }
   // Block tab "แผนอ่าน": every exam question of the block → pages to read, by tier
   function planHTML(b) {
@@ -503,7 +521,7 @@ window.MedLibQuizUI = function (ML) {
     const t1q = new Set(topics.filter((t) => t.tier === 1).flatMap((t) => t.own));
     const cohorts = [...new Set(qs.map((q) => q.cohort))].sort();
     let h = `<p class="lead">หน้า lecture ที่ข้อสอบชุด ${cohorts.join(", ")} อ้างถึง เรียงจาก Lecture ที่ออกมากสุด · กดเลขหน้าเพื่อเปิดอ่านตรงหน้านั้น</p>`;
-    if (!withLec.length) return h + `<div class="empty">ข้อสอบในบล็อกนี้ยังไม่ได้โยงกับหน้า lecture แผนอ่านจะขึ้นเมื่อมี lecture และ Auditor ใส่หน้าอ้างอิงแล้ว</div>`;
+    if (!withLec.length) return lecPlanHTML(b, qs) || h + `<div class="empty">ข้อสอบในบล็อกนี้ยังไม่ได้โยงกับหน้า lecture แผนอ่านจะขึ้นเมื่อมี lecture และ Auditor ใส่หน้าอ้างอิงแล้ว</div>`;
     h += `<div class="statrow"><div><b>${t1pages}</b><span>หน้า Tier 1</span></div><div><b>${withLec.length ? Math.round((t1q.size / withLec.length) * 100) : 0}%</b><span>ของข้อที่โยง lecture ได้ อยู่ในหน้า Tier 1</span></div><div><b>${topics.length}</b><span>หัวข้อทั้งหมด</span></div></div>`;
     h += `<div class="toolbar">${tierLegend}<label>แสดง <select data-zplan="1"><option value="1" ${tierF === 1 ? "selected" : ""}>Tier 1 อย่างเดียว</option><option value="2" ${tierF === 2 ? "selected" : ""}>Tier 1–2</option><option value="3" ${tierF === 3 ? "selected" : ""}>ทุก Tier</option></select></label></div>`;
     h += lecs.map((L) => lcardHTML(b, L, linkQ, `${L.n} ข้อ · ${L.topics.length} หัวข้อ · ${L.pages} หน้า`)).join("");
@@ -762,10 +780,11 @@ window.MedLibQuizUI = function (ML) {
       makeMix(b, `${tp.name} · ทุกชุด`, ML.examsOf(b).filter((x) => x.topic === tp.id).map((x) => x.id)); return true;
     }
     if (z === "mixlec") {
-      const l = t.dataset.l, qs = ML.examsOf(c.b).filter((x) => (x.refs || []).some((y) => y.lecture === l));
+      const bb = (t.dataset.b && ML.findBlock(t.dataset.b)) || c.b; if (!bb) return true;
+      const l = t.dataset.l, qs = ML.examsOf(bb).filter((x) => (x.refs || []).some((y) => y.lecture === l));
       const pg = (q) => ((q.refs.find((r) => r.lecture === l) || {}).pages || [0])[0];
       qs.sort((x, y) => (pg(x) - pg(y)) || y.cohort - x.cohort);
-      makeMix(c.b, `${lecName(c.b, l)} · ทุกชุด`, qs.map((x) => x.id)); return true;
+      makeMix(bb, `${lecName(bb, l)} · ทุกชุด`, qs.map((x) => x.id)); return true;
     }
     if (z === "mixrand") {
       const ty = TYPE_ORDER.includes(t.dataset.t) ? t.dataset.t : "";
