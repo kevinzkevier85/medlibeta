@@ -1,0 +1,1179 @@
+{
+ "meta": {
+  "set_id": "44_KF",
+  "block": "END",
+  "cohort": 44,
+  "type": "KF",
+  "title": "KF Endocrine · Med PSU 44",
+  "generated_by": "auditor/tools/build_kf.py from auditor/data/work/end_44_KF.kf.json — do not edit by hand"
+ },
+ "questions": [
+  {
+   "id": "END-44-KF-001",
+   "block": "END",
+   "cohort": 44,
+   "n": 1,
+   "type": "KF",
+   "case": "Fill the table below: Hormone / Pattern of secretion — LH, Prolactin",
+   "items": [
+    {
+     "id": "1.1",
+     "prompt": "LH — pattern of secretion",
+     "format": "short",
+     "accepted": [
+      "pulsatile",
+      "pulses",
+      "surge"
+     ],
+     "source_key": "key: cAMP (signaling pathway, ไม่ตรงโจทย์) · key2: Pulsatile ?",
+     "key_image": "img/END-44-KF-001-key.jpg",
+     "key_image_caption": "สไลด์ Signaling pathways of endocrine hormones ที่แนบในไฟล์ key (LH = cAMP, prolactin = JAK/STAT)",
+     "explanation": "LH หลั่งเป็น pulse ตาม GnRH pulse จาก hypothalamus (ผู้หญิงมี LH surge กลางรอบเดือน) · ไฟล์ key ตอบ cAMP ซึ่งเป็น signaling pathway ของ LH receptor (Gs → adenylyl cyclase → cAMP) ไม่ใช่ pattern of secretion"
+    },
+    {
+     "id": "1.2",
+     "prompt": "Prolactin — pattern of secretion",
+     "format": "short",
+     "accepted": [
+      "tonic",
+      "pulsatile",
+      "inhibited by dopamine"
+     ],
+     "source_key": "key: JAK/STAT pathway (signaling pathway, ไม่ตรงโจทย์) · key2: (เว้นว่าง) แนบสไลด์ Prolactin — secretion tonically inhibited by dopamine",
+     "key_image": "img/END-44-KF-001-key2.jpg",
+     "key_image_caption": "สไลด์ Prolactin (regulation) ที่แนบในไฟล์ key2 — tonically inhibited by dopamine",
+     "explanation": "Prolactin ถูก dopamine (จาก tuberoinfundibular pathway) ยับยั้งแบบ tonic ตลอดเวลา เป็น anterior pituitary hormone ที่ถูกควบคุมด้วย inhibition เป็นหลัก และหลั่งเป็น pulse โดยเพิ่มช่วงหลับ · ไฟล์ key ตอบ JAK/STAT ซึ่งเป็น signaling ของ prolactin receptor (cytokine receptor → JAK2/STAT5)"
+    }
+   ],
+   "answer_status": "disputed",
+   "refs": [
+    {
+     "paper": "KF44",
+     "pages": [
+      1
+     ]
+    },
+    {
+     "paper": "KF44-KEY",
+     "pages": [
+      1
+     ]
+    }
+   ],
+   "tags": [
+    "LH",
+    "prolactin",
+    "secretion pattern"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "LH: หลั่งเป็น pulse ตาม GnRH pulse (ผู้หญิงมี LH surge กลางรอบ) · Prolactin: ถูก dopamine จาก hypothalamus ยับยั้งอยู่ตลอด (tonic inhibition) และหลั่งเป็น pulse โดยสูงขึ้นช่วงหลับ",
+   "audit_note": "เฉลยทั้งสองไฟล์ไม่ตรงโจทย์/ขัดกัน: ไฟล์ key เขียนว่า LH = cAMP, Prolactin = JAK/STAT pathway ซึ่งเป็นคำตอบของ signaling pathway ไม่ใช่ pattern of secretion (ในไฟล์เดียวกันแนบสไลด์ Signaling pathways of endocrine hormones) ส่วน key2 ผู้จดเขียนว่า \"ไม่เข้าใจ\" และเดาว่า LH = Pulsatile ? พร้อมสไลด์ prolactin (tonically inhibited by dopamine). เป็นไปได้ว่าเพื่อนจดโจทย์ผิด (จริง ๆ อาจถาม signaling pathway). ตั้ง disputed ไม่นับคะแนน; ระบบตรวจตามโจทย์ที่พิมพ์ (pattern of secretion) คือ LH = pulsatile, prolactin = tonic dopamine inhibition/pulsatile ส่วน signaling จาก key ใส่ไว้ใน explanation"
+  },
+  {
+   "id": "END-44-KF-002",
+   "block": "END",
+   "cohort": 44,
+   "n": 2,
+   "type": "KF",
+   "case": "Nuclei ของ hypothalamus และ hormone ที่หลั่ง ในการควบคุมการหลั่ง GH",
+   "items": [
+    {
+     "id": "2.1",
+     "prompt": "Nucleus และ hormone ที่กระตุ้นการหลั่ง GH",
+     "format": "short",
+     "accepted": [
+      "arcuate nucleus ghrh",
+      "arcuate ghrh",
+      "arcuate nucleus growth hormone releasing hormone",
+      "arcuate growth hormone releasing hormone"
+     ],
+     "keywords_all": [
+      "arcuate",
+      "ghrh"
+     ],
+     "source_key": "Arcuate nucleus ของ hypothalamus → GHRH (neurosecretory cell) จับ GHRH receptor ที่ somatotrope ใน anterior pituitary (Gs → adenylyl cyclase) → หลั่ง GH",
+     "key_image": "img/END-44-KF-002-key.jpg",
+     "key_image_caption": "แผนภาพลายมือในไฟล์ key: Arcuate nucleus → GHRH → Ant. pituitary → GH → Liver → IGF-1 และ Periventricular nucleus → somatostatin",
+     "explanation": "Arcuate nucleus หลั่ง GHRH ผ่าน hypophyseal portal ไปจับ GHRH receptor (Gs-coupled → cAMP/PKA → Ca²⁺) ที่ somatotroph → หลั่ง GH"
+    },
+    {
+     "id": "2.2",
+     "prompt": "Nucleus และ hormone ที่ยับยั้งการหลั่ง GH",
+     "format": "short",
+     "accepted": [
+      "periventricular nucleus somatostatin",
+      "periventricular somatostatin",
+      "periventricular nucleus ghih",
+      "periventricular growth hormone inhibiting hormone"
+     ],
+     "keywords_all": [
+      "periventricular",
+      "somatostatin"
+     ],
+     "source_key": "Periventricular nucleus ของ hypothalamus → somatostatin (GHIH) จับ somatostatin receptor ที่ somatotrope → ยับยั้งการหลั่ง GH",
+     "key_image": "img/END-44-KF-002-key2.jpg",
+     "key_image_caption": "สไลด์ Regulation ในไฟล์ key2: Arcuate nucleus → GHRH, Periventricular nucleus → somatostatin",
+     "explanation": "Periventricular nucleus หลั่ง somatostatin (GHIH) ไปจับ receptor (Gi) ที่ somatotroph → ยับยั้ง GH"
+    },
+    {
+     "id": "2.3",
+     "prompt": "(เสริม) Hormone จากตับที่ยับยั้งการหลั่ง GH แบบ negative feedback",
+     "format": "short",
+     "accepted": [
+      "igf-1",
+      "igf1",
+      "somatomedin",
+      "insulin like growth factor",
+      "insulin-like growth factor"
+     ],
+     "source_key": "Somatomedin C (IGF-1) จาก liver → inhibit การหลั่ง GH (key2 ข้อ 3: ± ตอบได้)",
+     "key_image": "img/END-44-KF-002-key2-b.jpg",
+     "key_image_caption": "สไลด์ Growth hormone (ไฟล์ key2): GHRH, somatostatin และ IGF-1 feedback",
+     "explanation": "GH กระตุ้นตับให้สร้าง IGF-1 ซึ่งยับยั้ง GH ทั้งที่ pituitary และกระตุ้น somatostatin ที่ hypothalamus (negative feedback)"
+    },
+    {
+     "id": "2.4",
+     "prompt": "(เสริม) Hormone จากกระเพาะที่กระตุ้น GH หลังอาหาร",
+     "format": "short",
+     "accepted": [
+      "ghrelin"
+     ],
+     "source_key": "Ghrelin จาก mucosal layer ของ stomach → เพิ่ม postmeal GH secretion (key2 ข้อ 4: ผู้จดไม่แน่ใจ)",
+     "explanation": "Ghrelin (จาก stomach) จับ GHS receptor ที่ pituitary/hypothalamus กระตุ้นการหลั่ง GH"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF44",
+     "pages": [
+      1
+     ]
+    },
+    {
+     "paper": "KF44-KEY",
+     "pages": [
+      1
+     ]
+    }
+   ],
+   "tags": [
+    "GH",
+    "hypothalamus",
+    "GHRH",
+    "somatostatin"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "Arcuate nucleus หลั่ง GHRH กระตุ้น somatotroph (Gs-cAMP) หลั่ง GH · Periventricular nucleus หลั่ง somatostatin (GHIH) ยับยั้ง GH · IGF-1 จากตับเป็น negative feedback · ghrelin จากกระเพาะกระตุ้น GH หลังอาหาร",
+   "audit_note": "ไฟล์ key2 ระบุว่าข้อ 1 และ 2 (GHRH/arcuate และ somatostatin/periventricular) ต้องตอบแน่ ๆ, IGF-1 น่าจะได้, ghrelin ผู้จดไม่แน่ใจ (จึงเพิ่มเป็นข้อเสริม 2.3-2.4)"
+  },
+  {
+   "id": "END-44-KF-003",
+   "block": "END",
+   "cohort": 44,
+   "n": 3,
+   "type": "KF",
+   "case": "จงวาด diagram ของ reverse cholesterol transport (แบ่งเป็นข้อย่อยตามองค์ประกอบหลักของ diagram)",
+   "items": [
+    {
+     "id": "3.1",
+     "prompt": "HDL เริ่มต้น (nascent particle) ที่รับ cholesterol จาก peripheral cell คืออะไร",
+     "format": "short",
+     "accepted": [
+      "pre-beta hdl",
+      "pre-β hdl",
+      "preβ hdl",
+      "prebeta hdl",
+      "nascent hdl",
+      "apoa-i",
+      "apoai",
+      "discoid hdl",
+      "disc shape"
+     ],
+     "source_key": "ApoA-I (pre-β HDL) สร้างจาก small intestine และ liver หรือจาก chylomicron หลัง lipolysis → pre-β HDL รูปแบน/disc",
+     "key_image": "img/END-44-KF-003-key.jpg",
+     "key_image_caption": "แผนภาพลายมือ HDL metabolism / reverse cholesterol transport ในไฟล์ key",
+     "explanation": "ApoA-I จับ phospholipid เป็น pre-β HDL (discoid) แล้วรับ free cholesterol และ phospholipid จาก peripheral cell (macrophage) ผ่าน ABCA1/ABCG1/SR-B1"
+    },
+    {
+     "id": "3.2",
+     "prompt": "Enzyme ที่เปลี่ยน free cholesterol บน HDL เป็น cholesteryl ester",
+     "format": "short",
+     "accepted": [
+      "lcat",
+      "lecithin cholesterol acyltransferase",
+      "lecithin-cholesterol acyltransferase",
+      "lecithin cholesteryl acyltransferase"
+     ],
+     "source_key": "LCAT (Lecithin cholesterol acyltransferase) → HDL3 (globular) → HDL2 → HDL1 (รับ ApoE)",
+     "key_image": "img/END-44-KF-003-key2.jpg",
+     "key_image_caption": "สไลด์ Metabolism of HDL in reverse cholesterol transport และคำอธิบาย 6 ข้อ ในไฟล์ key2",
+     "explanation": "LCAT (activated by ApoA-I) esterify free cholesterol เป็น CE เก็บไว้ใน core ทำให้ HDL เปลี่ยนจาก disc เป็น sphere (HDL3 → HDL2 → HDL1/HDL-E)"
+    },
+    {
+     "id": "3.3",
+     "prompt": "Protein ที่แลก cholesteryl ester จาก HDL กับ triglyceride ของ VLDL/IDL/LDL",
+     "format": "short",
+     "accepted": [
+      "cetp",
+      "cholesteryl ester transfer protein",
+      "cholesterol ester transfer protein"
+     ],
+     "source_key": "CETP (cholesteryl ester transfer protein) — HDL2 ส่ง CE ให้ VLDL และรับ TG ทำให้เป็น HDL2 ที่มี TG มากขึ้น",
+     "key_image": "img/END-44-KF-003-key2-b.jpg",
+     "key_image_caption": "แผนภาพ HDL cycle: HL, CE/TG exchange กับ VLDL → IDL → LDL และ LDL-R ในไฟล์ key2",
+     "explanation": "CETP แลก CE ของ HDL กับ TG ของ lipoprotein ที่มี apoB (VLDL → IDL → LDL) ทำให้ CE ไปที่ตับผ่าน LDL receptor"
+    },
+    {
+     "id": "3.4",
+     "prompt": "HDL ส่ง cholesterol กลับตับด้วย receptor ใด",
+     "format": "short",
+     "accepted": [
+      "sr-b1",
+      "srb1",
+      "sr-bi",
+      "srbi",
+      "scavenger receptor",
+      "ldl receptor",
+      "ldlr",
+      "apoe"
+     ],
+     "source_key": "HDL1 (HDL-E, มี ApoE) → จับ LDL receptor · HDL2 → จับ SR-BI (Scavenger receptor B1); HDL2 กลับเป็น HDL3 โดย hepatic lipase",
+     "explanation": "HDL2 ส่ง CE เข้าตับผ่าน SR-B1 (selective uptake) และ HDL ที่มี ApoE (HDL-E) ถูกดึงเข้าตับผ่าน LDL receptor; hepatic lipase เปลี่ยน HDL2 กลับเป็น HDL3 เพื่อวนรับ cholesterol ใหม่"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF44",
+     "pages": [
+      1
+     ]
+    },
+    {
+     "paper": "KF44-KEY",
+     "pages": [
+      1
+     ]
+    }
+   ],
+   "tags": [
+    "HDL",
+    "reverse cholesterol transport",
+    "LCAT",
+    "CETP"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "ApoA-I → pre-β HDL (discoid) รับ FC/PL จาก peripheral cell (ABCA1) → LCAT esterify เป็น CE → HDL3 → HDL2 → HDL1 (HDL-E); CETP แลก CE กับ TG ของ VLDL/IDL/LDL; ตับรับ CE ผ่าน SR-B1 (HDL2) หรือ LDL receptor (HDL-E) · hepatic lipase เปลี่ยน HDL2 → HDL3",
+   "audit_note": "โจทย์ให้วาด diagram จึงแปลงเป็นข้อย่อยตามองค์ประกอบหลักของ diagram ในเฉลย (key p2 เป็นแผนภาพลายมือ, key2 p6 เป็นสไลด์และคำอธิบาย 6 ข้อ) ผู้เรียนควรเทียบรูปด้วยตัวเอง"
+  },
+  {
+   "id": "END-44-KF-004",
+   "block": "END",
+   "cohort": 44,
+   "n": 4,
+   "type": "KF",
+   "case": "จงบอก Mechanism of action และ consequence of action ของ simvastatin และ Gemfibrozil",
+   "items": [
+    {
+     "id": "4.1",
+     "prompt": "Simvastatin — mechanism of action",
+     "format": "short",
+     "accepted": [
+      "inhibit hmg",
+      "inhibits hmg",
+      "inhibitor of hmg",
+      "inhibition of hmg",
+      "hmg-coa reductase inhibitor",
+      "reductase inhibitor",
+      "block hmg",
+      "blocks hmg",
+      "ยับยั้ง hmg"
+     ],
+     "source_key": "Inhibit HMG-CoA reductase (key2: structural analog ของ HMG-CoA → competitive inhibitor)",
+     "key_image": "img/END-44-KF-004-key2.jpg",
+     "key_image_caption": "สไลด์ Statin — mechanism of action ในไฟล์ key2 (HMG-CoA reductase, LDL receptor)",
+     "explanation": "Simvastatin เป็น structural analog ของ HMG-CoA จึงยับยั้ง HMG-CoA reductase แบบ competitive (rate-limiting step ของการสร้าง cholesterol)"
+    },
+    {
+     "id": "4.2",
+     "prompt": "Simvastatin — consequence of action",
+     "format": "short",
+     "accepted": [
+      "increase ldl receptor",
+      "increases ldl receptor",
+      "increased ldl receptor",
+      "upregulate ldl receptor",
+      "upregulation of ldl receptor",
+      "↑ ldl receptor",
+      "↑ldlr",
+      "decrease ldl-c",
+      "decreases ldl-c",
+      "decrease plasma ldl",
+      "decreases plasma ldl",
+      "reduce ldl-c",
+      "reduces ldl-c",
+      "lower ldl-c",
+      "lowers ldl-c",
+      "lower ldl cholesterol",
+      "↓ ldl-c",
+      "↓ldlc",
+      "decrease cholesterol synthesis",
+      "decreases cholesterol synthesis",
+      "decrease hepatic cholesterol synthesis",
+      "reduce cholesterol synthesis",
+      "↓ cholesterol synthesis",
+      "ลด ldl"
+     ],
+     "source_key": "↓ Cholesterol synthesis ในตับ → ↓ VLDL synthesis; ↑ LDL receptor synthesis → ↓ LDL-C",
+     "explanation": "Cholesterol ในเซลล์ตับลดลง → SREBP-2 กระตุ้น ↑ LDL receptor → ดึง LDL จากเลือดเข้าตับมากขึ้น → LDL-C ในเลือดลด (และ VLDL synthesis ลดลง)"
+    },
+    {
+     "id": "4.3",
+     "prompt": "Gemfibrozil — mechanism of action",
+     "format": "short",
+     "accepted": [
+      "ppar-α",
+      "ppar-alpha",
+      "pparα",
+      "ppar alpha",
+      "ppar-a",
+      "ppara"
+     ],
+     "source_key": "⊕ PPAR-α (agonist) · key2: กระตุ้น PPARα ที่ liver และ peripheral tissue",
+     "key_image": "img/END-44-KF-004-key2-b.jpg",
+     "key_image_caption": "สไลด์ Fibric acid derivatives (fibrates) — MOA ในไฟล์ key2",
+     "explanation": "Gemfibrozil (fibrate) เป็น agonist ของ PPAR-α (nuclear receptor) เปลี่ยนการ transcription ของยีนที่เกี่ยวกับ lipid metabolism"
+    },
+    {
+     "id": "4.4",
+     "prompt": "Gemfibrozil — consequence of action",
+     "format": "short",
+     "accepted": [
+      "increase lipoprotein lipase",
+      "increases lipoprotein lipase",
+      "increased lipoprotein lipase",
+      "↑ lipoprotein lipase",
+      "increase lpl",
+      "increase beta oxidation",
+      "increase β-oxidation",
+      "increases β-oxidation",
+      "↑ β-oxidation",
+      "decrease triglyceride",
+      "decreases triglyceride",
+      "decrease tg",
+      "decreases tg",
+      "reduce triglyceride",
+      "reduces triglyceride",
+      "lower triglyceride",
+      "lowers triglyceride",
+      "↓ triglyceride",
+      "↓ tg",
+      "↓tg",
+      "increase hdl",
+      "increases hdl",
+      "↑ hdl",
+      "increase apoa",
+      "increases apoa",
+      "↑ apoa"
+     ],
+     "source_key": "↑ lipoprotein lipase activity, ↑ β-oxidation → ↓ fatty acid → ↓ triglyceride · ↑ ApoA-I, ApoA-II → ↑ HDL synthesis",
+     "explanation": "PPAR-α ↑ lipoprotein lipase และ ↑ β-oxidation ของ fatty acid, ↓ ApoC-III → VLDL clearance ดีขึ้น → TG ลด; ↑ ApoA-I/ApoA-II → HDL เพิ่ม"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF44",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "KF44-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [
+    "statin",
+    "fibrate",
+    "lipid-lowering drugs"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "Simvastatin: competitive inhibitor ของ HMG-CoA reductase → ↓ cholesterol synthesis ในตับ → ↑ LDL receptor → ↓ LDL-C (และ ↓ VLDL synthesis) · Gemfibrozil: PPAR-α agonist → ↑ lipoprotein lipase, ↑ β-oxidation → ↓ TG; ↑ ApoA-I/ApoA-II → ↑ HDL"
+  },
+  {
+   "id": "END-44-KF-005",
+   "block": "END",
+   "cohort": 44,
+   "n": 5,
+   "type": "KF",
+   "case": "จงบอก mechanism of action ของ metformin และ exenatide",
+   "items": [
+    {
+     "id": "5.1",
+     "prompt": "Metformin — mechanism of action",
+     "format": "short",
+     "accepted": [
+      "activate ampk",
+      "activates ampk",
+      "ampk activation",
+      "activation of ampk",
+      "decrease hepatic gluconeogenesis",
+      "decreases hepatic gluconeogenesis",
+      "decrease gluconeogenesis",
+      "decreases gluconeogenesis",
+      "reduce gluconeogenesis",
+      "reduces gluconeogenesis",
+      "inhibit gluconeogenesis",
+      "inhibits hepatic gluconeogenesis",
+      "inhibit hepatic gluconeogenesis",
+      "↓ gluconeogenesis",
+      "↓ hepatic gluconeogenesis",
+      "increase insulin sensitivity",
+      "increases insulin sensitivity",
+      "↑ insulin sensitivity",
+      "insulin sensitizer"
+     ],
+     "source_key": "⊕ AMPK → ↓ gluconeogenesis, ↑ insulin sensitivity (↑ glycolysis, ↑ peripheral glucose uptake) · key2: ↓ hepatic gluconeogenesis, ↓ intestinal absorption of glucose, ↑ anaerobic glycolysis, ↓ fatty liver/LDL/TG",
+     "key_image": "img/END-44-KF-005-key2.jpg",
+     "key_image_caption": "แผนภาพ Metformin → AMPK (liver, muscle) ในไฟล์ key2",
+     "explanation": "Metformin (biguanide) กระตุ้น AMPK ที่ตับ → ↓ gluconeogenesis; เพิ่ม insulin sensitivity ทำให้กล้ามเนื้อรับกลูโคสมากขึ้น และ ↑ anaerobic glycolysis (ผลข้างเคียง lactic acidosis)"
+    },
+    {
+     "id": "5.2",
+     "prompt": "Exenatide — mechanism of action",
+     "format": "short",
+     "accepted": [
+      "glp-1 receptor",
+      "glp1 receptor",
+      "glp-1 agonist",
+      "glp-1 analog",
+      "glp-1 analogue",
+      "glp-1 mimetic",
+      "incretin mimetic",
+      "glucose-dependent insulin",
+      "increase insulin secretion",
+      "increases insulin secretion",
+      "↑ insulin secretion",
+      "decrease glucagon",
+      "decreases glucagon",
+      "↓ glucagon",
+      "slow gastric emptying",
+      "slows gastric emptying",
+      "delay gastric emptying",
+      "delays gastric emptying"
+     ],
+     "source_key": "GLP-1 analog (Incretin mimetic) → ↑ glucose-dependent insulin release, ↓ glucagon, ↓ gastric emptying",
+     "key_image": "img/END-44-KF-005-key2-b.jpg",
+     "key_image_caption": "แผนภาพ GLP-1R signaling ใน β-cell (Exenatide) ในไฟล์ key2",
+     "explanation": "Exenatide เป็น GLP-1 receptor agonist (Gs-cAMP ที่ β-cell) → หลั่ง insulin เมื่อกลูโคสสูงเท่านั้น, ยับยั้ง glucagon, ชะลอ gastric emptying (และ satiety)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF44",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "KF44-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [
+    "metformin",
+    "exenatide",
+    "diabetes drugs"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "Metformin: activate AMPK → ↓ hepatic gluconeogenesis, ↑ insulin sensitivity (↑ peripheral glucose uptake/glycolysis) · Exenatide: GLP-1 receptor agonist (incretin mimetic) → ↑ glucose-dependent insulin secretion, ↓ glucagon, ↓ gastric emptying"
+  },
+  {
+   "id": "END-44-KF-006",
+   "block": "END",
+   "cohort": 44,
+   "n": 6,
+   "type": "KF",
+   "case": "Explain why glucocorticoid can leads to hyperglycemia.",
+   "items": [
+    {
+     "id": "6.1",
+     "prompt": "ผลที่ตับ",
+     "format": "short",
+     "accepted": [
+      "increase gluconeogenesis",
+      "increases gluconeogenesis",
+      "increased gluconeogenesis",
+      "increase hepatic gluconeogenesis",
+      "increases hepatic gluconeogenesis",
+      "↑ gluconeogenesis",
+      "↑ hepatic gluconeogenesis",
+      "เพิ่ม gluconeogenesis",
+      "stimulate gluconeogenesis",
+      "stimulates gluconeogenesis"
+     ],
+     "source_key": "↑ Hepatic gluconeogenesis จาก amino acid, glycerol",
+     "key_image": "img/END-44-KF-006-key2.jpg",
+     "key_image_caption": "แผนภาพ Cortisol: ผลต่อ muscle, liver, adipose tissue ในไฟล์ key2",
+     "explanation": "Cortisol กระตุ้น enzyme ของ gluconeogenesis ที่ตับ (เช่น PEPCK, G6Pase) → ตับสร้างกลูโคสออกมามากขึ้น"
+    },
+    {
+     "id": "6.2",
+     "prompt": "ผลต่อเนื้อเยื่อส่วนปลาย (muscle & adipose) ต่อการใช้กลูโคส",
+     "format": "short",
+     "accepted": [
+      "decrease glucose uptake",
+      "decreases glucose uptake",
+      "decreased glucose uptake",
+      "reduce glucose uptake",
+      "reduces glucose uptake",
+      "inhibit glucose uptake",
+      "inhibits glucose uptake",
+      "↓ glucose uptake",
+      "↓glucose uptake",
+      "ลด glucose uptake",
+      "decrease insulin sensitivity",
+      "decreases insulin sensitivity",
+      "↓ insulin sensitivity",
+      "insulin resistance",
+      "reduce insulin sensitivity"
+     ],
+     "source_key": "Inhibit glucose uptake & utilization ของ muscle & tissue; ↓ insulin sensitivity",
+     "explanation": "Cortisol ลด insulin sensitivity (GLUT4-mediated uptake ลดลง) ทำให้ muscle และ adipose ดึงกลูโคสจากเลือดน้อยลง (insulin resistance)"
+    },
+    {
+     "id": "6.3",
+     "prompt": "การส่ง substrate ให้ gluconeogenesis (จาก muscle และ adipose)",
+     "format": "short",
+     "accepted": [
+      "increase protein degradation",
+      "increases protein degradation",
+      "↑ protein degradation",
+      "increase protein breakdown",
+      "increases protein breakdown",
+      "protein catabolism",
+      "increase lipolysis",
+      "increases lipolysis",
+      "↑ lipolysis",
+      "increased lipolysis",
+      "เพิ่ม lipolysis",
+      "เพิ่ม protein degradation"
+     ],
+     "source_key": "↑ Protein degradation (esp. ใน muscle) ได้ amino acid → gluconeogenesis; ↑ lipolysis ใน adipose ได้ free fatty acid และ glycerol → gluconeogenesis",
+     "explanation": "Muscle ปล่อย amino acid (จาก proteolysis) และ adipose ปล่อย glycerol (จาก lipolysis) เป็น substrate ให้ตับสร้างกลูโคส"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF44",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "KF44-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [
+    "glucocorticoid",
+    "hyperglycemia",
+    "cortisol"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "Glucocorticoid: ↑ hepatic gluconeogenesis, ↓ glucose uptake/utilization ใน muscle และ adipose (↓ insulin sensitivity), ↑ protein degradation ใน muscle และ ↑ lipolysis ใน adipose เพื่อส่ง substrate (amino acid, glycerol) ให้ตับ"
+  },
+  {
+   "id": "END-44-KF-007",
+   "block": "END",
+   "cohort": 44,
+   "n": 7,
+   "type": "KF",
+   "case": "Tell two function of hormone binding protein",
+   "items": [
+    {
+     "id": "7.1",
+     "prompt": "Function 1",
+     "format": "short",
+     "accepted": [
+      "transport hormone",
+      "transports hormone",
+      "transport steroid",
+      "transport thyroid",
+      "carrier",
+      "solubilize",
+      "increase solubility",
+      "carry hormone",
+      "carries hormone",
+      "reservoir",
+      "storage",
+      "increase half-life",
+      "increases half-life",
+      "increase half life",
+      "increases half life",
+      "prolong half-life",
+      "prolongs half-life",
+      "longer half-life",
+      "↑ half-life",
+      "decrease clearance",
+      "decreases clearance",
+      "reduce clearance",
+      "reduces clearance",
+      "slow clearance",
+      "↓ clearance",
+      "buffer free hormone",
+      "maintain free hormone"
+     ],
+     "source_key": "① ช่วยให้ hormone ที่ไม่ละลายน้ำ/ละลายน้ำยาก เช่น steroid hormone และ thyroid hormone ละลายอยู่ใน plasma ได้ดีขึ้น → transport hormone ไปใน blood stream · ② เสมือนเป็น reservoir ของ hormone (hormone ยังอยู่ใน blood stream แต่ยังไม่ออกฤทธิ์) ทำให้เพิ่ม t½ ของ hormone หรือ clearance ช้าลง และรักษาระดับ free hormone",
+     "explanation": "หน้าที่หลักคือ (1) transport lipophilic hormone ในเลือดโดยทำให้ละลายใน plasma ได้ (2) เป็น reservoir/buffer รักษาระดับ free hormone และยืด half-life (ลด clearance)"
+    },
+    {
+     "id": "7.2",
+     "prompt": "Function 2",
+     "format": "short",
+     "accepted": [
+      "transport hormone",
+      "transports hormone",
+      "transport steroid",
+      "transport thyroid",
+      "carrier",
+      "solubilize",
+      "increase solubility",
+      "carry hormone",
+      "carries hormone",
+      "reservoir",
+      "storage",
+      "increase half-life",
+      "increases half-life",
+      "increase half life",
+      "increases half life",
+      "prolong half-life",
+      "prolongs half-life",
+      "longer half-life",
+      "↑ half-life",
+      "decrease clearance",
+      "decreases clearance",
+      "reduce clearance",
+      "reduces clearance",
+      "slow clearance",
+      "↓ clearance",
+      "buffer free hormone",
+      "maintain free hormone"
+     ],
+     "source_key": "ดูข้อ 7.1 (key: ① ช่วย transport steroid HM และ thyroid HM ② reservoir of HM ช่วยให้ HM อยู่ได้นานขึ้น ↑ half life, ↓ clearance)",
+     "explanation": "ตัวอย่าง binding protein: CBG (cortisol), TBG/transthyretin/albumin (thyroid hormone), SHBG (sex steroids), IGFBP (IGF-1)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF44",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "KF44-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [
+    "hormone binding protein",
+    "transport"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "Hormone binding protein: ① ช่วย transport hormone ที่ไม่ละลายน้ำ (steroid, thyroid hormone) ในเลือด ② เป็น reservoir ของ hormone → ↑ half-life, ↓ clearance, รักษาระดับ free hormone",
+   "audit_note": "ต้นฉบับให้ตอบ 2 ข้อ (ลำดับไหนก็ได้) ระบบรับคำตอบของทั้งสองหน้าที่ในทั้ง 2 ช่อง"
+  },
+  {
+   "id": "END-44-KF-008",
+   "block": "END",
+   "cohort": 44,
+   "n": 8,
+   "type": "KF",
+   "case": "Hypothalamus transported hormone to anterior pituitary via .............................. vessel",
+   "items": [
+    {
+     "id": "8",
+     "prompt": "Hypothalamus transported hormone to anterior pituitary via ........ vessel",
+     "format": "short",
+     "accepted": [
+      "hypothalamic-hypophyseal portal",
+      "hypothalamic hypophyseal portal",
+      "hypophyseal portal",
+      "hypophysial portal",
+      "hypothalamic-hypophysial portal",
+      "hypothalamo-hypophyseal portal",
+      "hypophysioportal",
+      "pituitary portal"
+     ],
+     "source_key": "hypothalamic–hypophyseal portal system (key2: Primary plexus → Portal plexus → Secondary plexus → Trophic cells เรียกว่า \"Portal hypophyseal circulation\")",
+     "key_image": "img/END-44-KF-008-key2.jpg",
+     "key_image_caption": "แผนภาพ Hypothalamic–hypophyseal portal system ในไฟล์ key2",
+     "explanation": "Hypothalamus ส่ง releasing/inhibiting hormone ผ่าน hypothalamic-hypophyseal portal system (primary plexus ที่ median eminence → portal veins → secondary plexus ใน anterior pituitary)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF44",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "KF44-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [
+    "hypothalamus",
+    "portal system",
+    "pituitary"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "Hypothalamic releasing/inhibiting hormones → primary capillary plexus → portal vessels (hypophyseal portal vein) → secondary plexus ใน anterior pituitary → trophic cells"
+  },
+  {
+   "id": "END-44-KF-009",
+   "block": "END",
+   "cohort": 44,
+   "n": 9,
+   "type": "KF",
+   "case": "ให้รูป pituitary tumor มา (ไม่มีรูปในไฟล์ต้นฉบับ)",
+   "items": [
+    {
+     "id": "9.1a",
+     "prompt": "ฮอร์โมนที่ได้รับผลกระทบโดยตรง (ตัวที่ 1)",
+     "format": "short",
+     "accepted": [
+      "gh",
+      "growth hormone",
+      "acth",
+      "tsh",
+      "thyroid stimulating hormone",
+      "prolactin",
+      "prl",
+      "fsh",
+      "lh",
+      "follicle stimulating",
+      "luteinizing"
+     ],
+     "source_key": "key: GH, PRL, ACTH, TSH, FSH/LH · key2: TSH, GH, ACTH",
+     "explanation": "ตอบฮอร์โมน anterior pituitary ตัวใดก็ได้ 3 ตัว: GH, PRL, ACTH, TSH, FSH, LH (ADH/oxytocin เป็น posterior pituitary ที่สร้างจาก hypothalamus จึงไม่ใช่ตัวที่ถูกกระทบโดยตรง)"
+    },
+    {
+     "id": "9.1b",
+     "prompt": "ฮอร์โมนที่ได้รับผลกระทบโดยตรง (ตัวที่ 2)",
+     "format": "short",
+     "accepted": [
+      "gh",
+      "growth hormone",
+      "acth",
+      "tsh",
+      "thyroid stimulating hormone",
+      "prolactin",
+      "prl",
+      "fsh",
+      "lh",
+      "follicle stimulating",
+      "luteinizing"
+     ],
+     "source_key": "key: GH, PRL, ACTH, TSH, FSH/LH · key2: TSH, GH, ACTH",
+     "explanation": "ดูข้อ 9.1a"
+    },
+    {
+     "id": "9.1c",
+     "prompt": "ฮอร์โมนที่ได้รับผลกระทบโดยตรง (ตัวที่ 3)",
+     "format": "short",
+     "accepted": [
+      "gh",
+      "growth hormone",
+      "acth",
+      "tsh",
+      "thyroid stimulating hormone",
+      "prolactin",
+      "prl",
+      "fsh",
+      "lh",
+      "follicle stimulating",
+      "luteinizing"
+     ],
+     "source_key": "key: GH, PRL, ACTH, TSH, FSH/LH · key2: TSH, GH, ACTH",
+     "explanation": "ดูข้อ 9.1a"
+    },
+    {
+     "id": "9.2",
+     "prompt": "เส้นประสาทที่ได้รับผลกระทบ",
+     "format": "short",
+     "accepted": [
+      "optic nerve",
+      "cranial nerve ii",
+      "cn ii",
+      "cn2",
+      "cranial nerve 2",
+      "nerve ii",
+      "optic chiasm"
+     ],
+     "source_key": "Optic nerve (Cranial nerve II)",
+     "explanation": "Pituitary tumor ขยายขึ้นบนกด optic chiasm/optic nerve (CN II) → bitemporal hemianopia (ถ้า invade ด้านข้างเข้า cavernous sinus อาจกระทบ CN III, IV, VI แต่เฉลยตอบ optic nerve)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF44",
+     "pages": [
+      3
+     ]
+    },
+    {
+     "paper": "KF44-KEY",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [
+    "pituitary tumor",
+    "anterior pituitary",
+    "optic nerve"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "Pituitary tumor/macroadenoma กด anterior pituitary ทำให้ฮอร์โมน GH, PRL, ACTH, TSH, FSH/LH ผิดปกติ และกด optic chiasm/optic nerve (CN II) → visual field defect (bitemporal hemianopia)",
+   "audit_note": "โจทย์อ้างถึงรูป pituitary tumor แต่รูปไม่อยู่ในไฟล์ที่เพื่อนส่งมา (ไม่ได้ตัดรูปข้อ 9). เฉลยสองไฟล์ให้ฮอร์โมนไม่เหมือนกัน: key = GH, PRL, ACTH, TSH, FSH/LH; key2 = TSH, GH, ACTH — ทุกตัวเป็น anterior pituitary hormone จึงรับทุกตัวใน 3 ช่อง (ให้ตอบคนละตัว)"
+  },
+  {
+   "id": "END-44-KF-010",
+   "block": "END",
+   "cohort": 44,
+   "n": 10,
+   "type": "KF",
+   "case": "Give 2 organ that increase glucose uptake after the meal",
+   "items": [
+    {
+     "id": "10.1",
+     "prompt": "Organ ที่ 1",
+     "format": "short",
+     "accepted": [
+      "skeletal muscle",
+      "muscle",
+      "adipose",
+      "fat tissue",
+      "liver",
+      "hepatocyte",
+      "small intestine",
+      "enterocyte"
+     ],
+     "source_key": "key: Muscle, adipose tissue · key2: skeletal muscle, adipose tissue ? หรือ small intestine, liver ?",
+     "explanation": "Skeletal muscle และ adipose tissue ดึงกลูโคสผ่าน insulin-stimulated GLUT4; ตับดึงกลูโคสผ่าน GLUT2 แล้วเก็บเป็น glycogen; small intestine ดูดซึมกลูโคสเข้าเลือด"
+    },
+    {
+     "id": "10.2",
+     "prompt": "Organ ที่ 2",
+     "format": "short",
+     "accepted": [
+      "skeletal muscle",
+      "muscle",
+      "adipose",
+      "fat tissue",
+      "liver",
+      "hepatocyte",
+      "small intestine",
+      "enterocyte"
+     ],
+     "source_key": "key: Muscle, adipose tissue · key2: skeletal muscle, adipose tissue ? หรือ small intestine, liver ?",
+     "explanation": "ดูข้อ 10.1"
+    }
+   ],
+   "answer_status": "disputed",
+   "refs": [
+    {
+     "paper": "KF44",
+     "pages": [
+      3
+     ]
+    },
+    {
+     "paper": "KF44-KEY",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [
+    "insulin",
+    "glucose uptake",
+    "postprandial"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "หลังอาหาร insulin กระตุ้นการดูดซึมกลูโคสที่ skeletal muscle และ adipose tissue (GLUT4) ส่วนตับก็ดึงกลูโคสเข้ามากหลังอาหาร (GLUT2 + glucokinase) และ small intestine ดูดซึมกลูโคสจากอาหาร",
+   "audit_note": "ไฟล์ key ให้ Muscle, adipose tissue; ไฟล์ key2 ให้ 2 ชุดและติดเครื่องหมาย ?: (1) skeletal muscle + adipose tissue หรือ (2) small intestine + liver (ผู้จดไม่แน่ใจ). ตามสรีรวิทยา muscle และ adipose คือเนื้อเยื่อที่ insulin กระตุ้น uptake ส่วนตับมี net uptake หลังอาหารด้วย และ small intestine ดูดซึม (ไม่ใช่ insulin-stimulated uptake) จึงตั้ง disputed ไม่นับคะแนน; ระบบรับคำตอบทั้งสี่อวัยวะ"
+  },
+  {
+   "id": "END-44-KF-011",
+   "block": "END",
+   "cohort": 44,
+   "n": 11,
+   "type": "KF",
+   "case": "What is cellular response to exenatide and metformin",
+   "items": [
+    {
+     "id": "11.1",
+     "prompt": "Metformin — cellular response",
+     "format": "short",
+     "accepted": [
+      "activate ampk",
+      "activates ampk",
+      "ampk activation",
+      "activation of ampk",
+      "decrease hepatic gluconeogenesis",
+      "decreases hepatic gluconeogenesis",
+      "decrease gluconeogenesis",
+      "decreases gluconeogenesis",
+      "reduce gluconeogenesis",
+      "inhibit gluconeogenesis",
+      "inhibits gluconeogenesis",
+      "inhibit hepatic gluconeogenesis",
+      "↓ gluconeogenesis",
+      "↓ hepatic gluconeogenesis",
+      "increase insulin sensitivity",
+      "increases insulin sensitivity",
+      "↑ insulin sensitivity",
+      "increase peripheral glucose uptake",
+      "increases peripheral glucose uptake",
+      "↑ peripheral glucose uptake",
+      "increase glycolysis",
+      "increases glycolysis",
+      "↑ glycolysis",
+      "increase anaerobic glycolysis"
+     ],
+     "source_key": "key: ⊕ AMPK → ↓ gluconeogenesis, ↑ insulin sensitivity (↑ glycolysis, ↑ peripheral glucose uptake) · key2: ↓ hepatic gluconeogenesis & glucagon action, ↑ insulin sensitivity → ↑ peripheral glucose uptake and utilization ex. muscle, ↑ anaerobic glycolysis",
+     "key_image": "img/END-44-KF-011-key2.jpg",
+     "key_image_caption": "สไลด์ Oral drugs — Biguanides: Metformin (ไฟล์ key2)",
+     "explanation": "ในเซลล์: AMPK ถูกกระตุ้น → ↓ gluconeogenic gene/enzyme ที่ตับ และ ↓ ผลของ glucagon (ยับยั้ง mitochondrial glycerophosphate dehydrogenase), ↑ glucose uptake ใน muscle และ ↑ anaerobic glycolysis"
+    },
+    {
+     "id": "11.2",
+     "prompt": "Exenatide — cellular response",
+     "format": "short",
+     "accepted": [
+      "increase insulin synthesis",
+      "increases insulin synthesis",
+      "↑ insulin synthesis",
+      "increase insulin secretion",
+      "increases insulin secretion",
+      "↑ insulin secretion",
+      "glucose-dependent insulin",
+      "glp-1 receptor",
+      "glp1 receptor",
+      "glp-1 agonist",
+      "glp-1 analog",
+      "incretin mimetic",
+      "decrease glucagon",
+      "decreases glucagon",
+      "↓ glucagon",
+      "slow gastric emptying",
+      "slows gastric emptying",
+      "increase β-cell proliferation",
+      "increase beta cell proliferation",
+      "increases beta cell proliferation",
+      "↑ β-cell proliferation",
+      "decrease β-cell apoptosis",
+      "decrease beta cell apoptosis",
+      "decreases beta cell apoptosis",
+      "↓ β-cell apoptosis"
+     ],
+     "source_key": "key: GLP-1 analog (Incretin mimetic) → ↑ glucose-dependent insulin release, ↓ glucagon, ↓ gastric emptying · key2: จับ GLP-1 receptor ที่ β-cell → เพิ่ม insulin synthesis, เพิ่ม β-cell proliferation, ลด β-cell apoptosis",
+     "key_image": "img/END-44-KF-011-key2-b.jpg",
+     "key_image_caption": "แผนภาพ GLP-1R signaling ใน β-cell ในไฟล์ key2 (ข้อ 11)",
+     "explanation": "GLP-1R (Gs) → ↑ cAMP → PKA/Epac → ↑ Ca²⁺ → insulin secretion (glucose-dependent) และ ↑ insulin synthesis, ↑ β-cell proliferation (PI3K/Akt), ↓ apoptosis/ER stress"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF44",
+     "pages": [
+      3
+     ]
+    },
+    {
+     "paper": "KF44-KEY",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [
+    "metformin",
+    "exenatide",
+    "cellular response"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "Metformin: activate AMPK → ↓ hepatic gluconeogenesis และ glucagon action, ↑ insulin sensitivity/peripheral glucose uptake · Exenatide: GLP-1R บน β-cell → ↑ insulin synthesis/secretion, ↑ β-cell proliferation, ↓ β-cell apoptosis",
+   "audit_note": "ไฟล์ key (ลายมือสั้น) ตอบเหมือนข้อ 5 ส่วน key2 (ผู้จดเขียนว่าไม่น่าต้องลงลึกถึงระดับนี้) ตอบ cellular response เพิ่ม: exenatide ↑ insulin synthesis, ↑ β-cell proliferation, ↓ β-cell apoptosis. ระบบรับคำตอบจากทั้งสองไฟล์"
+  },
+  {
+   "id": "END-44-KF-012",
+   "block": "END",
+   "cohort": 44,
+   "n": 12,
+   "type": "KF",
+   "case": "Fill the table below: System / Cortisol effect — Immune, Liver, Skeletal, adipose",
+   "items": [
+    {
+     "id": "12.1a",
+     "prompt": "Immune — cortisol effect",
+     "format": "short",
+     "accepted": [
+      "immunosuppress",
+      "immune suppression",
+      "anti-inflammatory",
+      "anti inflammatory",
+      "antiinflammatory",
+      "suppress immune",
+      "decrease immune",
+      "inhibit immune",
+      "inhibit prostaglandin",
+      "inhibit phospholipase",
+      "lipocortin",
+      "↓ immune"
+     ],
+     "source_key": "key: Anti-inflammatory effect, Immune suppression (⊖ PG, leukotriene; ⊖ WBC) · key2: Immunosuppression",
+     "key_image": "img/END-44-KF-012-key2.jpg",
+     "key_image_caption": "สไลด์ Anti-inflammation & immunosuppression ในไฟล์ key2",
+     "explanation": "Cortisol ยับยั้ง immune/inflammation: ↓ cytokine และ Ig, ↓ monocyte → macrophage, ↓ phagocytosis, กระตุ้น lymphocyte apoptosis, stabilize mast cell/basophil membrane"
+    },
+    {
+     "id": "12.1b",
+     "prompt": "(เสริม) กลไกสำคัญของผล anti-inflammatory ของ cortisol",
+     "format": "short",
+     "accepted": [
+      "lipocortin",
+      "inhibit phospholipase",
+      "inhibits phospholipase",
+      "inhibit cox",
+      "inhibits cox",
+      "decrease prostaglandin",
+      "decreases prostaglandin",
+      "↓ prostaglandin",
+      "↓ prostaglandins",
+      "decrease leukotriene",
+      "reduce prostaglandin",
+      "inhibit prostaglandin",
+      "inhibits prostaglandin",
+      "inhibit leukotriene",
+      "↓ pg"
+     ],
+     "source_key": "key: ⊖ PG, leukotriene · key2: ↓ Prostaglandins & Leukotrienes synthesis โดย ↑ lipocortin ซึ่งไป inhibit phospholipase A2 → ไม่เกิด arachidonic acid และ ↓ transcription ของ gene COX-II",
+     "key_image": "img/END-44-KF-012-key2-b.jpg",
+     "key_image_caption": "แผนภาพ Important MOA (lipocortin, PLA2, COX-2) ในไฟล์ key2",
+     "explanation": "Cortisol ↑ lipocortin (annexin-1) → ยับยั้ง phospholipase A2 → ไม่เกิด arachidonic acid และ ↓ COX-2 transcription → prostaglandin/leukotriene ลดลง"
+    },
+    {
+     "id": "12.2",
+     "prompt": "Liver — cortisol effect",
+     "format": "short",
+     "accepted": [
+      "increase gluconeogenesis",
+      "increases gluconeogenesis",
+      "increased gluconeogenesis",
+      "increase hepatic gluconeogenesis",
+      "↑ gluconeogenesis",
+      "↑ hepatic gluconeogenesis",
+      "เพิ่ม gluconeogenesis",
+      "increase glycogen",
+      "increases glycogen",
+      "↑ glycogen storage",
+      "↑ glycogen"
+     ],
+     "source_key": "key: ↑ gluconeogenesis, ↑ glycogen storage · key2: เพิ่ม Gluconeogenesis",
+     "key_image": "img/END-44-KF-012-key.jpg",
+     "key_image_caption": "แผนภาพ Cortisol effects (muscle, liver, adipose) ในไฟล์ key",
+     "explanation": "Cortisol ↑ gluconeogenesis และ glycogen storage ที่ตับ (↑ activity/amount ของ enzymes) ทำให้ปล่อยกลูโคสสู่เลือด"
+    },
+    {
+     "id": "12.3",
+     "prompt": "Skeletal muscle — cortisol effect",
+     "format": "short",
+     "accepted": [
+      "increase protein degradation",
+      "increases protein degradation",
+      "increased protein degradation",
+      "↑ protein degradation",
+      "เพิ่ม protein degradation",
+      "increase protein breakdown",
+      "increases protein breakdown",
+      "protein catabolism",
+      "proteolysis",
+      "muscle wasting",
+      "decrease glucose uptake",
+      "decreases glucose uptake",
+      "↓ glucose uptake",
+      "reduce glucose uptake"
+     ],
+     "source_key": "key: ↓ glucose uptake, ↑ protein degradation · key2: เพิ่ม Protein degradation",
+     "key_image": "img/END-44-KF-012-key2-c.jpg",
+     "key_image_caption": "แผนภาพ Cortisol effects พร้อมเลขกำกับ (ไฟล์ key2) ① Immune ② Liver ③ Muscle ④ Adipose",
+     "explanation": "ใน skeletal muscle cortisol ↑ protein degradation (ให้ amino acid ไป gluconeogenesis), ↓ protein synthesis, ↓ glucose utilization และ ↓ insulin sensitivity"
+    },
+    {
+     "id": "12.4",
+     "prompt": "Adipose — cortisol effect",
+     "format": "short",
+     "accepted": [
+      "increase lipolysis",
+      "increases lipolysis",
+      "increased lipolysis",
+      "↑ lipolysis",
+      "เพิ่ม lipolysis",
+      "stimulate lipolysis",
+      "stimulates lipolysis",
+      "decrease glucose uptake",
+      "decreases glucose uptake",
+      "↓ glucose uptake",
+      "reduce glucose uptake"
+     ],
+     "source_key": "key: ↓ glucose uptake, ↑ lipolysis · key2: เพิ่ม Lipolysis",
+     "explanation": "ใน adipose tissue cortisol ↑ lipolysis (ปล่อย FFA + glycerol; glycerol ไป gluconeogenesis ที่ตับ), ↓ glucose utilization, ↓ insulin sensitivity"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF44",
+     "pages": [
+      3
+     ]
+    },
+    {
+     "paper": "KF44-KEY",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [
+    "cortisol",
+    "glucocorticoid effects"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "Cortisol: immune ↓ (anti-inflammatory, immunosuppression: ↓ prostaglandin/leukotriene, ↓ WBC function) · liver ↑ gluconeogenesis (↑ glycogen storage) · skeletal muscle ↑ protein degradation (↓ glucose uptake) · adipose ↑ lipolysis (↓ glucose uptake)"
+  }
+ ]
+}
