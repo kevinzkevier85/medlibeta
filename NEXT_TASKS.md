@@ -1,5 +1,12 @@
 # Next tasks
 
+## เสร็จแล้ว — v0.15.0 (2026-11-07) KF Endocrine ชุด 52 · branch kel-end-kf-52
+- ข้อย่อยแสดงรูปได้ (image / key_image) · CVS KF 52 ข้อ 9.3 รูปเพิ่งแสดงครั้งแรก
+- ตรวจ: node tools/validate.cjs · node _test/kf_check.mjs END 52 · node _test/quizcore.test.cjs
+- ถัดไป: KF Endocrine 51, 50, 49, 47, 46, 45, 44, 42-43 (ทำตาม auditor/PROGRESS.md › KF) · OSPE
+- ค้าง: `_test/qa.mjs` ล้มตั้งแต่ข้อ 2 เพราะหา `.ver` ที่ถูกเอาออกตั้งแต่ v0.7.0 (เป็นมาก่อนรอบนี้)
+- ค้าง: รูปเฉลย CVS KF 52 ข้อ 9.3 (`img/52_KF_009_9.3-key.jpg`) ครอปชิดเกิน มีเศษไฮไลต์ที่มุมซ้ายบน ต้องครอปใหม่จาก PDF ในโปรเจกต์ CVS
+
 ## เสร็จแล้ว — v0.6.0 (2026-11-07) แยกโหมด ข้อสอบ / Lecture (หน้าอ่านแบบ CVS) · QA 72 ข้อ
 
 ## เสร็จแล้ว — v0.5.0–0.5.1 (2026-11-07) อยู่บน main แล้ว (commit df8f93f)

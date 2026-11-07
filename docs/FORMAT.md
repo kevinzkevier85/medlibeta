@@ -62,6 +62,26 @@ One file = one set; the website shows it as a whole set (cohort card → set run
 | `topic` | | a topic `id` from `block.json › topics`. Required in exam files once the block has `topics`; questions added in the web form may leave it out |
 | `source` | ✓ | `manual` (web form) / `claude-mcp` (Claude) / `import` (bulk import) |
 
+## KF / OSPE question
+
+Same common fields (`id` = `<block>-<cohort>-KF-<nnn>`, `answer_status`, `refs`, `tags`, `source`, …) but instead of
+`stem`/`options`/`answer`: `case` (KF scenario; OSPE uses `stem` + `station`) and `items[]` (sub-questions).
+A question-level `image` / `image_caption` is shown under the case.
+
+| item field | notes |
+|---|---|
+| `id`, `prompt`, `format` | `format` = `short` (typed answer) or `select` (tick boxes) |
+| `accepted[]`, `keywords_all[]` | `short`: right if the answer matches one accepted answer, or contains every keyword |
+| `options[] {key,text}`, `answer[]`, `max_answers` | `select` |
+| `key_text`, `source_key`, `explanation`, `mechanism[]` | shown after checking (`source_key` = what the original key says) |
+| `image`, `image_caption` | picture that belongs to this sub-question, shown under its prompt |
+| `key_image`, `key_image_caption` | picture from the answer key, shown only with the answer |
+
+Picture fields are file names inside the block folder (`img/…jpg`), never `data:` URLs.
+**Pictures must be the whole picture** — every edge, label, legend and caption that belongs to it. In the auditor,
+prefer `"native": true` in `auditor/data/images.json` (takes the embedded image itself); when drawing a `rect` by hand,
+leave a margin and open the cropped file to check all four edges before building.
+
 ## Personal data export (`medlib-personal-YYYY-MM-DD.json`)
 
 ```json
