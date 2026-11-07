@@ -151,6 +151,10 @@ th { color: var(--muted); font-weight: 600; }
 .etabs .tab { background: none; border-top: 0; border-left: 0; border-right: 0; cursor: pointer; }
 .pgrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 12px; margin: 14px 0 18px; }
 .pcard { display: flex; flex-direction: column; gap: 8px; min-height: 92px; padding: 16px 18px; text-align: left; border: 1px solid var(--line); border-radius: var(--r-lg); background: var(--surface); color: var(--ink); text-decoration: none; cursor: pointer; transition: border-color .15s, transform .15s; font: inherit; }
+.statgrid { display: grid; gap: 14px; margin: 14px 0 18px; }
+.statcard { display: flex; flex-direction: column; gap: 8px; padding: 16px 18px; border: 1px solid var(--line); border-left: 4px solid var(--blk); border-radius: var(--r-lg); background: var(--surface); }
+.statcard .ptop { display: flex; justify-content: space-between; gap: 8px; }
+.statcard table { margin-top: 4px; }
 .pcard:hover { border-color: var(--artery); transform: translateY(-1px); }
 .pcard .ptop { display: flex; align-items: baseline; justify-content: space-between; gap: 8px; }
 .pcard .ptop b { font-size: 1.08rem; }

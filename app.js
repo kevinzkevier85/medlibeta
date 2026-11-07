@@ -216,7 +216,8 @@
       ...visibleBlocks().map((b) => `<a class="nav ${cur === b.id ? "on" : ""}" href="${lecMode ? `#/lec/${enc(b.id)}` : `#/b/${enc(b.id)}`}" style="--blk:${esc(b.color || "var(--artery)")}"><i class="dot"></i>${esc(b.name)}</a>`),
     ].join("");
     const th = { auto: ["◐", "ธีม: ตามเครื่อง"], light: ["☀", "ธีม: สว่าง"], dark: ["☾", "ธีม: มืด"] }[S().theme || "auto"];
-    $("#tools").innerHTML = `<a class="ibtn ${view === "add" ? "on" : ""}" href="#/add" title="เพิ่มข้อสอบ" aria-label="เพิ่มข้อสอบ">＋</a>`
+    $("#tools").innerHTML = `<a class="ibtn ${view === "stats" ? "on" : ""}" href="#/stats" title="สถิติของฉัน" aria-label="สถิติ">📊</a>`
+      + `<a class="ibtn ${view === "add" ? "on" : ""}" href="#/add" title="เพิ่มข้อสอบ" aria-label="เพิ่มข้อสอบ">＋</a>`
       + `<button class="ibtn" data-act="theme" title="${th[1]} (กดเพื่อสลับ)" aria-label="${th[1]}">${th[0]}</button>`
       + `<a class="ibtn ${view === "settings" ? "on" : ""}" href="#/settings" title="ตั้งค่า / ส่งออกข้อมูล · v${esc(v.version)}" aria-label="ตั้งค่า">⚙</a>`;
   }
@@ -933,11 +934,12 @@
       case "search": { const qv = a.join("/"); if ($("#q").value !== qv) $("#q").value = qv; return viewSearch(qv); }
       case "settings": return viewSettings(a[0]);
       case "add": return viewAdd();
+      case "stats": return QZ.viewStats();
       default: return viewHome();
     }
   }
 
-  const ML = { $, esc, enc, main, APP, S, findBlock, findSet, docOf, findQuestion, examsOf, allExams, armed, toast, parseHash, notFound,
+  const ML = { $, esc, enc, main, APP, S, visibleBlocks, findBlock, findSet, docOf, findQuestion, examsOf, allExams, armed, toast, parseHash, notFound,
     route: () => route(), prog: () => PROG, saveProg, syncSoon };
   const QZ = window.MedLibQuizUI(ML);
 
