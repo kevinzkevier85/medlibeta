@@ -201,11 +201,10 @@
      "format": "short",
      "accepted": [
       "cecum",
-      "caecum",
-      "duodenum"
+      "caecum"
      ],
      "source_key": "cecum",
-     "explanation": "เฉลยต้นฉบับตอบ cecum (อัตราดูดซึมต่อพื้นที่สูงสุดตามข้อมูลจากเอกสาร lecture) · duodenum ก็เป็นส่วนที่ active transport (TRPV6, calbindin) สูงสุดตามตำราทั่วไป จึงนับเป็นคำตอบที่ถูกด้วย"
+     "explanation": "ตามเฉลยต้นฉบับ: cecum · หมายเหตุ: ตำราทั่วไปมักกล่าวถึง duodenum เป็นบริเวณที่ active transport สูง แต่ระบบนับเฉพาะ cecum ตามเฉลย (ถ้าตอบ duodenum ให้ตัดสินเองด้วยปุ่มให้คะแนนเอง)"
     }
    ],
    "answer_status": "verified",
@@ -229,7 +228,7 @@
    ],
    "source": "claude-mcp",
    "key_concept": "เมื่อ Ca²⁺ ในอาหารต่ำ ลำไส้ใช้ transcellular (active, vitamin D-dependent: TRPV6 → calbindin → PMCA1b) · paracellular เด่นเมื่อ intake สูง",
-   "audit_note": "เฉลยตอบ cecum ตามที่เรียนในรายวิชา ตำรา (Koeppen/Berne & Levy) ว่า duodenum มี active Ca²⁺ transport ต่อความยาวสูงสุด จึงรับ duodenum เพิ่ม"
+   "audit_note": "เฉลยต้นฉบับตอบ cecum จึงนับเฉพาะ cecum · ผู้ตรวจยังยืนยันที่มาของข้อมูลนี้ไม่ได้ (ไม่มีแหล่งอ้างอิงที่ตรวจสอบได้)"
   },
   {
    "id": "END-49-KF-004",
@@ -895,6 +894,9 @@
      "prompt": "ยกตัวอย่างชื่อฮอร์โมน",
      "format": "short",
      "accepted": [
+      "gh",
+      "lh",
+      "prl",
       "adh",
       "vasopressin",
       "oxytocin",

@@ -44,11 +44,11 @@
         { "id": "3.1", "prompt": "Indicate a major pathway of intestinal calcium transport during low calcium intake", "format": "short", "accepted": ["transcellular", "active transport", "active"],
           "source_key": "Transcellular transport",
           "explanation": "Low Ca intake → calcitriol ↑ → ผ่านเซลล์ (TRPV6 → calbindin-D9k → PMCA1b/NCX1) ซึ่งอิ่มตัวได้ · paracellular (passive) ทำงานเมื่อ Ca ใน lumen สูง" },
-        { "id": "3.2", "prompt": "Indicate the intestinal segment with highest absorption rate per area in the dietary calcium deficiency", "format": "short", "accepted": ["cecum", "caecum", "duodenum"],
+        { "id": "3.2", "prompt": "Indicate the intestinal segment with highest absorption rate per area in the dietary calcium deficiency", "format": "short", "accepted": ["cecum", "caecum"],
           "source_key": "cecum",
-          "explanation": "เฉลยต้นฉบับตอบ cecum (อัตราดูดซึมต่อพื้นที่สูงสุดตามข้อมูลจากเอกสาร lecture) · duodenum ก็เป็นส่วนที่ active transport (TRPV6, calbindin) สูงสุดตามตำราทั่วไป จึงนับเป็นคำตอบที่ถูกด้วย" }
+          "explanation": "ตามเฉลยต้นฉบับ: cecum · หมายเหตุ: ตำราทั่วไปมักกล่าวถึง duodenum เป็นบริเวณที่ active transport สูง แต่ระบบนับเฉพาะ cecum ตามเฉลย (ถ้าตอบ duodenum ให้ตัดสินเองด้วยปุ่มให้คะแนนเอง)" }
       ],
-      "audit_note": "เฉลยตอบ cecum ตามที่เรียนในรายวิชา ตำรา (Koeppen/Berne & Levy) ว่า duodenum มี active Ca²⁺ transport ต่อความยาวสูงสุด จึงรับ duodenum เพิ่ม"
+      "audit_note": "เฉลยต้นฉบับตอบ cecum จึงนับเฉพาะ cecum · ผู้ตรวจยังยืนยันที่มาของข้อมูลนี้ไม่ได้ (ไม่มีแหล่งอ้างอิงที่ตรวจสอบได้)"
     },
     {
       "n": 4, "page": 2, "tags": ["antihyperlipidemic drugs", "ezetimibe"],
@@ -193,7 +193,7 @@
           "key_image_caption": "สไลด์ที่แนบในเฉลยต้นฉบับ: Synthesis and Secretion of Peptide Hormones (Koeppen & Stanton)",
           "explanation": "Peptide/protein hormone สร้างเป็น preprohormone → prohormone → hormone เก็บใน vesicle (ต่างจาก steroid ที่ไม่เก็บ)" },
         { "id": "13.2", "prompt": "ยกตัวอย่างชื่อฮอร์โมน", "format": "short",
-          "accepted": ["adh", "vasopressin", "oxytocin", "msh", "tsh", "acth", "fsh", "prolactin", "growth hormone", "luteinizing", "trh", "pth", "parathyroid hormone", "insulin", "glucagon", "somatostatin", "calcitonin"],
+          "accepted": ["gh", "lh", "prl", "adh", "vasopressin", "oxytocin", "msh", "tsh", "acth", "fsh", "prolactin", "growth hormone", "luteinizing", "trh", "pth", "parathyroid hormone", "insulin", "glucagon", "somatostatin", "calcitonin"],
           "source_key": "ADH, oxytocin, MSH, GH, TSH, ACTH, FSH, LH, PRL, TRH, PTH",
           "explanation": "ตัวอย่างใดก็ได้ที่เป็น peptide hormone เช่น ADH, oxytocin, insulin, glucagon, ACTH, TSH, PTH" }
       ]
