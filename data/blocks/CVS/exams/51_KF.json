@@ -1,0 +1,6388 @@
+{
+ "meta": {
+  "set_id": "51_KF",
+  "block": "CVS",
+  "cohort": 51,
+  "type": "KF",
+  "title": "KF CVS · Med PSU 51",
+  "time_limit_min": 120,
+  "generated_by": "tools/import_cvs.cjs from the CVS-pdf project — do not edit by hand"
+ },
+ "questions": [
+  {
+   "id": "CVS-51-KF-001",
+   "block": "CVS",
+   "cohort": 51,
+   "n": 1,
+   "type": "KF",
+   "case": "นักศึกษาไปตามศิลปิน K-pop ที่สนามบิน แล้วมีอาการหน้ามืด วิงเวียนเหมือนจะเป็นลม เพื่อนปฐมพยาบาลด้วยการให้นอนยกขาสูง อาการดีขึ้น",
+   "items": [
+    {
+     "id": "1.1",
+     "prompt": "จงบอกกลไกที่ทำให้มีอาการหน้ามืด",
+     "format": "short",
+     "accepted": [
+      "vasovagal",
+      "bradycardia",
+      "vasodilation"
+     ],
+     "keywords_all": [
+      "hypotension"
+     ],
+     "mechanism": [
+      "ตื่นเต้น/ยืนนาน → sympathetic ↑ + venous pooling",
+      "Ventricle บีบแรงขณะ preload ต่ำ → mechanoreceptor ใน ventricle กระตุ้น",
+      {
+       "s": "Vagal ↑ (bradycardia) + sympathetic ↓ (vasodilation)",
+       "note": "vasovagal / neurocardiogenic reflex"
+      },
+      "CO ↓ + TPR ↓ → BP ↓",
+      {
+       "s": "Cerebral perfusion ↓ → หน้ามืด/เป็นลม",
+       "answer": true
+      }
+     ],
+     "explanation": "Vasovagal (neurocardiogenic) syncope: ตื่นเต้น → reflex เพิ่ม vagal + ลด sympathetic → bradycardia + vasodilation → BP ↓ → เลือดไปสมองลดลง"
+    },
+    {
+     "id": "1.2",
+     "prompt": "จากข้างต้นเป็น reflex อะไร",
+     "format": "short",
+     "accepted": [
+      "vasovagal",
+      "baroreceptor",
+      "neurocardiogenic",
+      "bezold"
+     ],
+     "review": "เฉลยต้นฉบับ 'Baroreceptor reflex' — คำที่ตรงกว่าคือ vasovagal (neurocardiogenic) reflex; quiz รับทั้งสองคำตอบ",
+     "explanation": "Vasovagal (neurocardiogenic) reflex — เฉลยต้นฉบับตอบ baroreceptor reflex (เป็น reflex ที่ทำงานผิดทิศ: แทนที่จะเพิ่ม sympathetic กลับเพิ่ม vagal)"
+    },
+    {
+     "id": "1.3",
+     "prompt": "การให้นอนแล้วยกขาสูงช่วยให้อาการดีขึ้นได้อย่างไร",
+     "format": "short",
+     "accepted": [
+      "venous return",
+      "preload"
+     ],
+     "mechanism": [
+      "นอนราบ + ยกขาสูง",
+      "เลือดจากขาไหลกลับหัวใจ (gravity)",
+      {
+       "s": "Venous return ↑ → preload ↑",
+       "answer": true
+      },
+      "SV ↑ → CO ↑ → BP ↑",
+      "Cerebral perfusion กลับมา → รู้สึกตัวดีขึ้น"
+     ],
+     "explanation": "ยกขาสูง → venous return ↑ → SV/CO ↑ → BP ↑ → เลือดไปสมองเพิ่ม"
+    },
+    {
+     "id": "1.4",
+     "prompt": "นักศึกษาวิ่งตามรถศิลปิน: cutaneous, renal และ muscular blood flow เปลี่ยนอย่างไร และใช้กลไกใดควบคุม (neural / metabolite control)",
+     "format": "short",
+     "accepted": [
+      "muscle เพิ่ม"
+     ],
+     "keywords_all": [
+      "muscle",
+      "kidney"
+     ],
+     "status": "source_disagree",
+     "source_answer": "Skin ↓ metabolite, Kidney ↑ neural, Muscle ↓ metabolite",
+     "proposed": "Muscle ↑ metabolite; Kidney ↓ neural; Skin ↓ ช่วงแรก (neural) แล้ว ↑ เมื่อร่างกายร้อน (neural)",
+     "audit_note": "เฉลยต้นฉบับกลับทิศของ kidney และ muscle",
+     "explanation": "• Muscle: เพิ่ม — metabolite control (K⁺, adenosine, CO₂, H⁺)\n• Kidney: ลด — neural control (sympathetic vasoconstriction)\n• Skin: ลดช่วงแรก แล้วเพิ่มเมื่อร่างกายร้อน — neural control (thermoregulation)\n(เฉลยเดิมจากต้นฉบับ: skin ↓ metabolite, kidney ↑ neural, muscle ↓ metabolite)"
+    }
+   ],
+   "answer_status": "disputed",
+   "explanation": "หน้ามืดจาก vasovagal reflex แก้ด้วยยกขาสูง; ขณะวิ่ง muscle ↑ (metabolite) kidney ↓ (neural)",
+   "key_concept": "• Vasovagal syncope = ตัวกระตุ้น (อารมณ์ ยืนนาน ร้อน) → vagal ↑ + sympathetic ↓ → bradycardia + vasodilation\n• แก้ด้วยนอนราบยกขาสูงเพิ่ม venous return\n• ขณะออกกำลังกาย: กล้ามเนื้อที่ทำงานคุมด้วย metabolites (flow ↑) ส่วนอวัยวะอื่นคุมด้วย sympathetic (flow ↓)\nTrap: ไตไม่ได้รับเลือดเพิ่มขณะออกกำลังกาย — ลดลงจาก sympathetic",
+   "refs": [
+    {
+     "lecture": "L10",
+     "pages": [
+      17
+     ],
+     "focus": "Vasovagal: parasympathetic ↑ + sympathetic withdrawal → HR ↓, vasodilation → syncope",
+     "hotspot": {
+      "tier": 1,
+      "years": [
+       49,
+       50,
+       51,
+       52
+      ]
+     }
+    },
+    {
+     "lecture": "L17",
+     "pages": [
+      31
+     ],
+     "focus": "Exercise: muscle vasodilation (metabolites) + vasoconstriction อวัยวะอื่น",
+     "hotspot": {
+      "tier": 1,
+      "years": [
+       49,
+       50,
+       51,
+       52
+      ]
+     }
+    },
+    {
+     "lecture": "L17",
+     "pages": [
+      35
+     ],
+     "focus": "การกระจาย CO ขณะพัก vs exercise",
+     "hotspot": {
+      "tier": 1,
+      "years": [
+       49,
+       50,
+       51,
+       52
+      ]
+     }
+    }
+   ],
+   "tags": [
+    "Vasovagal syncope & blood flow in exercise",
+    "physiology",
+    "apply"
+   ],
+   "source": "import"
+  },
+  {
+   "id": "CVS-51-KF-002",
+   "block": "CVS",
+   "cohort": 51,
+   "n": 2,
+   "type": "KF",
+   "case": "จงตอบคำถามเกี่ยวกับการแลกเปลี่ยนก๊าซและการหายใจระหว่างออกกำลังกาย (ภาพด้านบนคือคำตอบของข้อ 2.1–2.2 — ลองวาดเองก่อนดู)",
+   "items": [
+    {
+     "id": "2.1",
+     "prompt": "วาดกราฟ blood O₂ content ใน artery และ vein เทียบกับ O₂ consumption",
+     "format": "short",
+     "accepted": [
+      "arterial คงที่ venous ลด"
+     ],
+     "keywords_all": [
+      "arterial",
+      "venous"
+     ],
+     "explanation": "• Arterial O₂ content คงที่ (~20 mL/dL)\n• Mixed-venous O₂ content ลดลงเรื่อยๆ เมื่อ VO₂ เพิ่ม\n• ช่องห่าง = a-vO₂ difference กว้างขึ้น (กล้ามเนื้อดึง O₂ มากขึ้น) — ใช้ตัดสินเอง"
+    },
+    {
+     "id": "2.2",
+     "prompt": "วาดกราฟ lung volume ระหว่าง rest และ exercise",
+     "format": "short",
+     "accepted": [
+      "tidal volume เพิ่ม"
+     ],
+     "keywords_all": [
+      "tidal"
+     ],
+     "explanation": "• TV เพิ่ม กินทั้ง IRV และ ERV\n• IRV ↓, ERV ↓ (FRC ↓)\n• RV และ TLC คงที่ — ใช้ตัดสินเอง"
+    },
+    {
+     "id": "2.3",
+     "prompt": "วาดแผนผัง gas transfer จาก inspired air → alveolus → artery → skeletal muscle → vein",
+     "format": "short",
+     "accepted": [
+      "po2 100",
+      "po2 40"
+     ],
+     "keywords_all": [
+      "alveol"
+     ],
+     "explanation": "• Inspired air PO₂ ~159 (ที่ trachea ~149) mmHg\n• Alveolus = arterial: PO₂ 100, PCO₂ 40\n• Tissue/venous: PO₂ 40, PCO₂ 46\n• ก๊าซเคลื่อนที่ตาม partial pressure gradient — ใช้ตัดสินเอง"
+    },
+    {
+     "id": "2.4",
+     "prompt": "จงบอกปัจจัย 4 ข้อที่กระตุ้น medulla ให้เพิ่ม ventilation",
+     "format": "short",
+     "accepted": [
+      "chemoreceptor",
+      "proprioceptor",
+      "temperature",
+      "central command",
+      "stretch receptor"
+     ],
+     "explanation": "• Chemoreceptors (PO₂, PCO₂, pH)\n• Proprioceptors (การเคลื่อนไหวของแขนขา)\n• Body temperature\n• Lung receptors (stretch receptors)\n• Central command จาก cortex (ตอบเพิ่มได้)"
+    }
+   ],
+   "answer_status": "verified",
+   "explanation": "ออกกำลังกาย: a-vO₂ difference กว้างขึ้น, TV เพิ่ม, ventilation ถูกกระตุ้นจากหลายปัจจัย",
+   "key_concept": "• ออกกำลังกาย: arterial O₂ content คงที่ แต่ venous ลด → a-vO₂ difference กว้างขึ้น\n• VO₂ = CO × (CaO₂ − CvO₂) (Fick)\n• Ventilation เพิ่มจาก neural (central command, proprioceptor) ช่วงแรก และ humoral (chemoreceptor, temperature) ช่วงหลัง",
+   "image": "img/51_KF_002.jpg",
+   "image_caption": "(เฉลย) ซ้าย: arterial vs mixed-venous O₂ content ตาม O₂ consumption / ขวา: lung volumes ขณะพักและออกกำลังกาย",
+   "refs": [
+    {
+     "lecture": "L17",
+     "pages": [
+      15
+     ],
+     "focus": "Alveolar PO2/PCO2 ระหว่าง exercise",
+     "hotspot": {
+      "tier": 1,
+      "years": [
+       49,
+       50,
+       51,
+       52
+      ]
+     }
+    },
+    {
+     "lecture": "L17",
+     "pages": [
+      16,
+      17,
+      18,
+      19
+     ],
+     "focus": "ปัจจัยคุม ventilation: chemical, neural (central command, proprioceptor), temperature",
+     "hotspot": {
+      "tier": 1,
+      "years": [
+       49,
+       50,
+       51,
+       52
+      ]
+     }
+    },
+    {
+     "lecture": "L17",
+     "pages": [
+      21,
+      22,
+      23,
+      24
+     ],
+     "focus": "Ventilatory/lactate threshold, OBLA",
+     "hotspot": {
+      "tier": 1,
+      "years": [
+       50,
+       51,
+       52
+      ]
+     }
+    }
+   ],
+   "tags": [
+    "Gas exchange & ventilation in exercise",
+    "physiology",
+    "understand"
+   ],
+   "source": "import"
+  },
+  {
+   "id": "CVS-51-KF-003",
+   "block": "CVS",
+   "cohort": 51,
+   "n": 3,
+   "type": "KF",
+   "case": "(ต้นฉบับจำโจทย์และตัวเลขไม่ได้) ตอบคำถามเชิงหลักการต่อไปนี้",
+   "items": [
+    {
+     "id": "3.1",
+     "prompt": "จงเขียนสูตรหา Mean arterial pressure (MAP) และ Pulse pressure (PP)",
+     "format": "short",
+     "accepted": [
+      "dbp + 1/3",
+      "sbp - dbp",
+      "sbp-dbp"
+     ],
+     "keywords_all": [
+      "dbp"
+     ],
+     "explanation": "• PP = SBP − DBP\n• MAP ≈ DBP + ⅓(SBP − DBP) = DBP + PP/3"
+    },
+    {
+     "id": "3.2",
+     "prompt": "จงบอกกลไกการเกิด pulsus paradoxus",
+     "format": "short",
+     "accepted": [
+      "septum",
+      "interventricular"
+     ],
+     "keywords_all": [
+      "inspiration"
+     ],
+     "mechanism": [
+      "หายใจเข้า → intrathoracic pressure ↓",
+      "Venous return เข้าหัวใจขวา ↑ → RV ขยาย",
+      "Septum ดันไปทาง LV (ventricular interdependence) + เลือดคั่งในปอดที่ขยาย",
+      {
+       "s": "LV filling ↓ → SV ↓",
+       "answer": true
+      },
+      "SBP ลด > 10 mmHg ขณะหายใจเข้า (พบใน tamponade, severe asthma)"
+     ],
+     "explanation": "หายใจเข้า → RV ขยาย ดัน septum เข้า LV + pooling ในปอด → LV filling ↓ → SBP ลด > 10 mmHg"
+    },
+    {
+     "id": "3.3",
+     "prompt": "จงเขียนสูตรหา total O₂ consumption",
+     "format": "short",
+     "accepted": [
+      "fick",
+      "co ×",
+      "co x"
+     ],
+     "keywords_all": [
+      "o2"
+     ],
+     "explanation": "Fick principle: VO₂ = CO × ([O₂]a − [O₂]v) หรือ CO = VO₂ / ([O₂]a − [O₂]v)"
+    }
+   ],
+   "answer_status": "verified",
+   "explanation": "สูตร MAP/PP/Fick และกลไก pulsus paradoxus",
+   "key_concept": "• สูตรที่ต้องจำ: PP = SBP − DBP; MAP = DBP + PP/3; CO = VO₂ / (CaO₂ − CvO₂)\n• Pulsus paradoxus = SBP ลด > 10 mmHg ตอนหายใจเข้า จาก ventricular interdependence\nTrap: pulsus paradoxus ไม่ได้ 'กลับทิศ' จากปกติ — เป็นการลดของ BP ตอนหายใจเข้าที่มากเกินปกติ",
+   "refs": [
+    {
+     "lecture": "CC1",
+     "pages": [
+      3,
+      4,
+      5,
+      6,
+      7
+     ],
+     "focus": "สูตร MAP = DBP + ⅓PP, MAP − CVP = CO × SVR, EF",
+     "hotspot": {
+      "tier": 1,
+      "years": [
+       49,
+       51,
+       52
+      ]
+     }
+    },
+    {
+     "lecture": "L07",
+     "pages": [
+      22,
+      23
+     ],
+     "focus": "PP = SBP − DBP และปัจจัยกำหนด",
+     "hotspot": {
+      "tier": 1,
+      "years": [
+       49,
+       51,
+       52
+      ]
+     }
+    },
+    {
+     "lecture": "CC1",
+     "pages": [
+      30,
+      31
+     ],
+     "focus": "Pulsus paradoxus (tamponade): SBP ↓ > 10 mmHg ตอนหายใจเข้า",
+     "hotspot": {
+      "tier": 1,
+      "years": [
+       50,
+       51,
+       52
+      ]
+     }
+    }
+   ],
+   "tags": [
+    "Hemodynamic formulas & pulsus paradoxus",
+    "physiology",
+    "understand"
+   ],
+   "source": "import"
+  },
+  {
+   "id": "CVS-51-KF-004",
+   "block": "CVS",
+   "cohort": 51,
+   "n": 4,
+   "type": "KF",
+   "case": "ผู้ป่วยอายุ 60 ปี เจ็บหน้าอกร้าวไปกรามและไหล่ นั่งพักแล้วไม่ลดลง สูบบุหรี่วันละ 1 ซอง 10 ปี BP 150/90 (โจทย์จริงมี ECG — คาดว่าเป็น STEMI จาก LAD occlusion)",
+   "items": [
+    {
+     "id": "4.1",
+     "prompt": "จงบอก 3 โรคที่เป็นไปได้",
+     "format": "short",
+     "accepted": [
+      "stemi",
+      "nstemi",
+      "unstable angina"
+     ],
+     "explanation": "STEMI, NSTEMI, Unstable angina (ACS ทั้ง 3 แบบ)"
+    },
+    {
+     "id": "4.2",
+     "prompt": "จาก ECG ให้การวินิจฉัยที่จำเพาะ",
+     "format": "short",
+     "accepted": [
+      "anterior stemi",
+      "lad"
+     ],
+     "keywords_all": [
+      "stemi"
+     ],
+     "explanation": "Anterior wall STEMI จาก LAD occlusion (ST elevation V1–V4) — ต้นฉบับไม่มีภาพ ECG"
+    },
+    {
+     "id": "4.3",
+     "prompt": "ปัจจัยเสี่ยงจากประวัติ",
+     "format": "short",
+     "accepted": [
+      "smoking",
+      "สูบบุหรี่"
+     ],
+     "keywords_all": [
+      "อายุ"
+     ],
+     "explanation": "อายุ 60 ปี, สูบบุหรี่, ความดันสูง"
+    }
+   ],
+   "answer_status": "verified",
+   "explanation": "เจ็บอกขณะพัก = ACS; ECG = anterior STEMI",
+   "key_concept": "• ข้อนี้ออกซ้ำทุกคำใน 52_KF ข้อ 4\n• ACS: unstable angina (troponin ปกติ), NSTEMI (troponin ขึ้น), STEMI (ST elevation)\nTrap: เจ็บขณะพักไม่หาย ≠ stable angina",
+   "refs": [
+    {
+     "lecture": "CC2",
+     "pages": [
+      44,
+      45,
+      46
+     ],
+     "focus": "ACS spectrum + ECG criteria",
+     "hotspot": {
+      "tier": 1,
+      "years": [
+       49,
+       51,
+       52
+      ]
+     }
+    },
+    {
+     "lecture": "CC2",
+     "pages": [
+      51
+     ],
+     "focus": "Lead territories + evolution of STEMI",
+     "hotspot": {
+      "tier": 1,
+      "years": [
+       51,
+       52
+      ]
+     }
+    },
+    {
+     "lecture": "CC3",
+     "pages": [
+      30,
+      31,
+      32
+     ],
+     "focus": "Biomarker timeline และ stable vs ACS",
+     "hotspot": {
+      "tier": 2,
+      "years": [
+       49,
+       51
+      ]
+     }
+    }
+   ],
+   "tags": [
+    "Acute coronary syndrome",
+    "clinical",
+    "apply"
+   ],
+   "source": "import"
+  },
+  {
+   "id": "CVS-51-KF-005",
+   "block": "CVS",
+   "cohort": 51,
+   "n": 5,
+   "type": "KF",
+   "case": "ชายไทย 70 ปี เหนื่อยมากขึ้นตอนเดิน 1 เดือน, 1 สัปดาห์ต้องหนุนหมอน 2 ใบจากเดิม 1 ใบ, บวมเท้า 2 ข้าง, 1 เดือนก่อนทำบอลลูนใส่ขดลวด, HT 20 ปีกินยาไม่สม่ำเสมอ, สูบบุหรี่ 0.5 ซอง/วัน 40 ปี\nBP 170/90, PR 120/min (irregular), RR 20/min, JVP 8 cm above sternal angle; fine crepitation + wheezing ทั้งสองข้าง; PMI 5th ICS MCL, pansystolic murmur grade 3 ที่ apex, S3 gallop; pitting edema 2 ขา",
+   "items": [
+    {
+     "id": "5.1",
+     "prompt": "จงให้การวินิจฉัยโรค",
+     "format": "short",
+     "accepted": [
+      "heart failure",
+      "chf"
+     ],
+     "explanation": "Congestive heart failure (± atrial fibrillation จากชีพจรไม่สม่ำเสมอ)"
+    },
+    {
+     "id": "5.2",
+     "prompt": "ลักษณะภาพรังสีที่ช่วยวินิจฉัย",
+     "format": "short",
+     "accepted": [
+      "cardiomegaly",
+      "cephalization",
+      "kerley",
+      "pleural effusion",
+      "bat wing",
+      "batwing"
+     ],
+     "explanation": "Cardiomegaly, cephalization, Kerley B lines, pleural effusion, alveolar edema (bat-wing)"
+    },
+    {
+     "id": "5.3",
+     "prompt": "จงบอกสาเหตุของภาวะในผู้ป่วยรายนี้ 4 ข้อ",
+     "format": "short",
+     "accepted": [
+      "coronary artery disease",
+      "cad",
+      "hypertension",
+      "atrial fibrillation",
+      "smoking"
+     ],
+     "explanation": "CAD (เพิ่งทำ PCI), hypertension คุมไม่ได้, atrial fibrillation (tachycardia), smoking; murmur ที่ apex = MR ซ้ำเติม"
+    },
+    {
+     "id": "5.4",
+     "prompt": "จงบอกยาที่ใช้รักษา heart failure 2 ชื่อ",
+     "format": "short",
+     "accepted": [
+      "furosemide",
+      "enalapril",
+      "metoprolol",
+      "carvedilol",
+      "bisoprolol",
+      "spironolactone",
+      "sacubitril",
+      "dapagliflozin",
+      "empagliflozin",
+      "losartan"
+     ],
+     "explanation": "Furosemide (ลดน้ำเกิน), enalapril/ACEi, metoprolol/β-blocker, spironolactone, SGLT2 inhibitor"
+    }
+   ],
+   "answer_status": "verified",
+   "explanation": "Orthopnea + S3 + JVP สูง + edema = CHF",
+   "key_concept": "• ข้อนี้ออกซ้ำทุกคำใน 52_KF ข้อ 5\n• Left HF: orthopnea, crepitation, S3; Right HF: JVP สูง, edema\n• GDMT ของ HFrEF = ACEi/ARNI + β-blocker + MRA + SGLT2i; furosemide ลดอาการ",
+   "image": "img/51_KF_005.jpg",
+   "image_caption": "CXR ของผู้ป่วย",
+   "refs": [
+    {
+     "lecture": "CC4",
+     "pages": [
+      8
+     ],
+     "focus": "Left vs right HF",
+     "hotspot": {
+      "tier": 1,
+      "years": [
+       51,
+       52
+      ]
+     }
+    },
+    {
+     "lecture": "CC4",
+     "pages": [
+      22
+     ],
+     "focus": "CXR ABCDE",
+     "hotspot": {
+      "tier": 1,
+      "years": [
+       51,
+       52
+      ]
+     }
+    },
+    {
+     "lecture": "CC4",
+     "pages": [
+      29,
+      30,
+      31,
+      32
+     ],
+     "focus": "Hemodynamic profile + GDMT",
+     "hotspot": {
+      "tier": 1,
+      "years": [
+       49,
+       50,
+       51,
+       52
+      ]
+     }
+    }
+   ],
+   "tags": [
+    "Heart failure",
+    "clinical",
+    "apply"
+   ],
+   "source": "import"
+  },
+  {
+   "id": "CVS-51-KF-006",
+   "block": "CVS",
+   "cohort": 51,
+   "n": 6,
+   "type": "KF",
+   "case": "หญิง 62 ปี stage 1 hypertension ได้รับการรักษาด้วย hydrochlorothiazide",
+   "items": [
+    {
+     "id": "6.1",
+     "prompt": "Hydrochlorothiazide เป็นยากลุ่มไหน",
+     "format": "short",
+     "accepted": [
+      "thiazide"
+     ],
+     "explanation": "Thiazide diuretic"
+    },
+    {
+     "id": "6.2",
+     "prompt": "กลไกการลดความดันของ hydrochlorothiazide ทั้งระยะสั้นและระยะยาว",
+     "format": "short",
+     "accepted": [
+      "na-cl",
+      "nacl",
+      "na+/cl-"
+     ],
+     "keywords_all": [
+      "volume"
+     ],
+     "mechanism": [
+      "ยับยั้ง Na⁺–Cl⁻ symporter ที่ distal convoluted tubule",
+      "ระยะสั้น: Na⁺/water excretion ↑ → plasma volume ↓ → VR ↓ → CO ↓ → BP ↓",
+      {
+       "s": "ระยะยาว: plasma volume กลับใกล้ปกติ แต่ TPR ↓ (Na⁺/Ca²⁺ ใน vascular smooth muscle ↓ → vasodilation)",
+       "answer": true
+      }
+     ],
+     "explanation": "• ระยะสั้น: ขับ Na⁺/น้ำ → volume ↓ → CO ↓\n• ระยะยาว: TPR ↓ จาก vasodilation (volume กลับใกล้ปกติ)"
+    },
+    {
+     "id": "6.3",
+     "prompt": "ผลข้างเคียงของ hydrochlorothiazide 4 ข้อ",
+     "format": "short",
+     "accepted": [
+      "hypokalemia",
+      "hyperuricemia",
+      "hyperglycemia",
+      "hyperlipidemia",
+      "hyponatremia",
+      "hypercalcemia"
+     ],
+     "explanation": "'Hyper-GLUC': hyperGlycemia, hyperLipidemia, hyperUricemia, hyperCalcemia; และ hypokalemia, hyponatremia, hypomagnesemia, orthostatic hypotension"
+    },
+    {
+     "id": "6.4",
+     "prompt": "ข้อควรระวังในการใช้ยา 3 ข้อ",
+     "format": "short",
+     "accepted": [
+      "gout",
+      "diabetes",
+      "hypokalemia",
+      "digoxin",
+      "sulfa",
+      "lithium",
+      "renal"
+     ],
+     "status": "source_disagree",
+     "source_answer": "Pulmonary edema, CHF, intracranial hemorrhage, renal failure",
+     "proposed": "Gout, DM, hypokalemia (+ digoxin), แพ้ sulfa, eGFR < 30, lithium",
+     "audit_note": "เฉลยต้นฉบับไม่ใช่ข้อควรระวังของ thiazide (CHF/pulmonary edema กลับเป็นข้อบ่งใช้ของ diuretic)",
+     "explanation": "• Gout/hyperuricemia\n• DM (น้ำตาลสูงขึ้น)\n• Hypokalemia โดยเฉพาะผู้ใช้ digoxin (เสี่ยง digoxin toxicity)\n• แพ้ยากลุ่ม sulfonamide\n• ไตเสื่อม eGFR < 30 (ได้ผลน้อย)\n• ใช้ร่วมกับ lithium (ระดับ lithium สูงขึ้น)\n(เฉลยเดิมจากต้นฉบับ: pulmonary edema, CHF, intracranial hemorrhage, renal failure)"
+    },
+    {
+     "id": "6.5",
+     "prompt": "วิธีป้องกัน hypertension 5 ข้อ",
+     "format": "short",
+     "accepted": [
+      "ลดเกลือ",
+      "ออกกำลังกาย",
+      "ลดน้ำหนัก",
+      "งดสูบบุหรี่",
+      "แอลกอฮอล์",
+      "dash"
+     ],
+     "explanation": "ลดเกลือ, ออกกำลังกาย ≥ 150 นาที/สัปดาห์, คุมน้ำหนัก, จำกัดแอลกอฮอล์, งดบุหรี่, DASH diet, ลดความเครียด"
+    }
+   ],
+   "answer_status": "disputed",
+   "explanation": "Thiazide: ระยะสั้นลด volume ระยะยาวลด TPR; ADR hyper-GLUC + hypokalemia",
+   "key_concept": "• Thiazide ออกฤทธิ์ที่ DCT (Na⁺–Cl⁻ symporter)\n• ADR จำ 'hyper-GLUC' + hypo-K/Na/Mg\n• ระวังใน gout, DM, digoxin, lithium, แพ้ sulfa\nTrap: thiazide ลด Ca²⁺ ในปัสสาวะ (hypercalcemia) ต่างจาก loop diuretic ที่ขับ Ca²⁺",
+   "refs": [
+    {
+     "lecture": "L13",
+     "pages": [
+      14,
+      15,
+      16,
+      17
+     ],
+     "focus": "Thiazide: Na-Cl symporter, ADR (hypoK, hyperuricemia, hyperglycemia, lipid), interaction",
+     "hotspot": {
+      "tier": 1,
+      "years": [
+       49,
+       50,
+       51,
+       52
+      ]
+     }
+    }
+   ],
+   "tags": [
+    "Thiazide diuretics",
+    "pharmacology",
+    "understand"
+   ],
+   "source": "import"
+  },
+  {
+   "id": "CVS-51-KF-007",
+   "block": "CVS",
+   "cohort": 51,
+   "n": 7,
+   "type": "KF",
+   "case": "ผู้ป่วยเป็น Tetralogy of Fallot",
+   "items": [
+    {
+     "id": "7.1",
+     "prompt": "จงบอกลักษณะเด่น 4 อย่างของโรคนี้",
+     "format": "short",
+     "accepted": [
+      "vsd",
+      "overriding aorta",
+      "rvh",
+      "right ventricular hypertrophy",
+      "pulmonary stenosis",
+      "rvot"
+     ],
+     "keywords_all": [
+      "vsd"
+     ],
+     "explanation": "• RVOT obstruction (pulmonary stenosis)\n• VSD\n• Overriding aorta (dextroposition)\n• Right ventricular hypertrophy"
+    },
+    {
+     "id": "7.2",
+     "prompt": "จงบอกพยาธิสรีรวิทยาของ hypoxic (tet) spell และปัจจัยกระตุ้น",
+     "format": "short",
+     "accepted": [
+      "infundibular spasm",
+      "svr",
+      "right to left",
+      "right-to-left"
+     ],
+     "mechanism": [
+      "ตัวกระตุ้น: ร้องไห้ ดูดนม ถ่าย ตื่นนอน ไข้ ขาดน้ำ",
+      "Infundibular spasm (PVR/RVOT resistance ↑) และ/หรือ SVR ↓",
+      {
+       "s": "Right-to-left shunt ผ่าน VSD ↑",
+       "answer": true
+      },
+      "Pulmonary blood flow ↓ → hypoxemia ↑ → acidosis",
+      "Hyperpnea → venous return ↑ → shunt ↑ (วงจรเลวร้าย)"
+     ],
+     "explanation": "Infundibular spasm หรือ SVR ลด → R→L shunt ↑ → เลือดไปปอดลด → เขียวมาก; กระตุ้นด้วยร้องไห้ ดูดนม ตื่นนอนเช้า ไข้ ขาดน้ำ"
+    },
+    {
+     "id": "7.3",
+     "prompt": "ท่า knee-chest ทำให้ hypoxic spell ดีขึ้นได้อย่างไร (ตอบคำตอบเดียว)",
+     "format": "short",
+     "accepted": [
+      "svr",
+      "systemic vascular resistance"
+     ],
+     "explanation": "เพิ่ม SVR → ลด right-to-left shunt → pulmonary blood flow ↑"
+    }
+   ],
+   "answer_status": "verified",
+   "explanation": "TOF: R→L shunt ผ่าน VSD; tet spell แก้ด้วยเพิ่ม SVR",
+   "key_concept": "• TOF 4 ลักษณะ: PS (RVOT obstruction), VSD, overriding aorta, RVH\n• ความเขียวขึ้นกับ RVOT obstruction เทียบกับ SVR\n• Tet spell: เพิ่ม SVR (knee-chest, phenylephrine), ลด spasm (propranolol, morphine), O₂, IV fluid\nTrap: ห้ามให้ยาที่ลด SVR หรือเพิ่ม contractility (เช่น digoxin) ใน tet spell",
+   "refs": [
+    {
+     "lecture": "CCX",
+     "pages": [
+      21,
+      22
+     ],
+     "focus": "TOF: 4 ลักษณะ, SEM + single S2, boot-shaped",
+     "hotspot": {
+      "tier": 1,
+      "years": [
+       50,
+       51,
+       52
+      ]
+     }
+    },
+    {
+     "lecture": "CCX",
+     "pages": [
+      30,
+      31,
+      32
+     ],
+     "focus": "Hypoxic spell: triggers, pathophysiology, treatment (knee-chest, NE, morphine, O2)",
+     "hotspot": {
+      "tier": 1,
+      "years": [
+       49,
+       50,
+       51,
+       52
+      ]
+     }
+    }
+   ],
+   "tags": [
+    "Tetralogy of Fallot & tet spell",
+    "clinical",
+    "understand"
+   ],
+   "source": "import"
+  },
+  {
+   "id": "CVS-51-KF-008",
+   "block": "CVS",
+   "cohort": 51,
+   "n": 8,
+   "type": "KF",
+   "case": "(ต้นฉบับจำโจทย์ไม่ได้) จงตอบคำถามจากภาพ",
+   "items": [
+    {
+     "id": "8.1",
+     "prompt": "พยาธิสภาพในรูปแรกคืออะไร",
+     "format": "short",
+     "accepted": [
+      "conjunctival hemorrhage",
+      "conjunctival petechiae",
+      "petechiae"
+     ],
+     "explanation": "Conjunctival hemorrhage/petechiae"
+    },
+    {
+     "id": "8.2",
+     "prompt": "พยาธิสภาพในรูปที่สองคืออะไร",
+     "format": "short",
+     "accepted": [
+      "osler",
+      "janeway"
+     ],
+     "explanation": "รับทั้ง Osler's node (เฉลยต้นฉบับ: ก้อนนูนเจ็บที่ปลายนิ้ว) และ Janeway lesion (ผื่นแบนไม่เจ็บที่ฝ่ามือ/ฝ่าเท้า ซึ่งเข้ากับภาพมากกว่า) — ตามที่ผู้ใช้ตัดสินใน 52_KF"
+    },
+    {
+     "id": "8.3",
+     "prompt": "จงให้การวินิจฉัย",
+     "format": "short",
+     "accepted": [
+      "infective endocarditis",
+      "endocarditis"
+     ],
+     "explanation": "Infective endocarditis"
+    },
+    {
+     "id": "8.4",
+     "prompt": "ควรตรวจอะไรเพิ่ม",
+     "format": "short",
+     "accepted": [
+      "blood culture",
+      "hemoculture",
+      "echo"
+     ],
+     "explanation": "Blood culture 3 ชุด + echocardiography"
+    },
+    {
+     "id": "8.5",
+     "prompt": "เชื้อใดพบได้บ่อยที่สุด",
+     "format": "short",
+     "accepted": [
+      "viridans"
+     ],
+     "explanation": "Viridans streptococci (subacute IE)"
+    }
+   ],
+   "answer_status": "verified",
+   "explanation": "Stigmata ของ infective endocarditis → blood culture; เชื้อ viridans streptococci",
+   "key_concept": "• ข้อนี้ออกซ้ำทุกคำใน 52_KF ข้อ 8\n• Stigmata ของ IE: Osler's node (เจ็บ), Janeway lesion (ไม่เจ็บ), Roth spot, splinter hemorrhage, conjunctival petechiae\nTrap: Osler = Ouch (เจ็บ นูน ปลายนิ้ว) vs Janeway = ผื่นแบนไม่เจ็บที่ฝ่ามือฝ่าเท้า",
+   "image": "img/51_KF_008.jpg",
+   "image_caption": "ภาพซ้าย: จุดเลือดออกที่ conjunctiva / ภาพขวา: ผื่นแดงที่ฝ่าเท้าและปลายนิ้วเท้า",
+   "refs": [
+    {
+     "lecture": "L14",
+     "pages": [
+      47,
+      48,
+      49,
+      50
+     ],
+     "focus": "IE: organism, risk, stigmata (splinter, Osler, Janeway, Roth)",
+     "hotspot": {
+      "tier": 1,
+      "years": [
+       49,
+       50,
+       51,
+       52
+      ]
+     }
+    },
+    {
+     "lecture": "L14",
+     "pages": [
+      55
+     ],
+     "focus": "Complications ของ IE",
+     "hotspot": {
+      "tier": 1,
+      "years": [
+       49,
+       50,
+       51,
+       52
+      ]
+     }
+    }
+   ],
+   "tags": [
+    "Infective endocarditis stigmata",
+    "microbiology",
+    "apply"
+   ],
+   "source": "import"
+  },
+  {
+   "id": "CVS-51-KF-009",
+   "block": "CVS",
+   "cohort": 51,
+   "n": 9,
+   "type": "KF",
+   "case": "ผลตรวจ hs-cTnT ที่ 0, 3 และ 6 ชั่วโมงของผู้ป่วย 4 คน (กราฟ) — A ลดลงจากระดับสูง, B สูงคงที่, C เพิ่มขึ้นข้าม URL, D ต่ำคงที่ใต้ URL",
+   "items": [
+    {
+     "id": "9.1",
+     "prompt": "ผู้ป่วยรายใดเป็น acute MI",
+     "format": "select",
+     "max_answers": 4,
+     "options": [
+      {
+       "key": "A",
+       "text": "A (ลดลงจากระดับสูง)"
+      },
+      {
+       "key": "B",
+       "text": "B (สูงคงที่)"
+      },
+      {
+       "key": "C",
+       "text": "C (เพิ่มขึ้นข้าม URL)"
+      },
+      {
+       "key": "D",
+       "text": "D (ต่ำคงที่)"
+      }
+     ],
+     "answer": [
+      "A",
+      "C"
+     ],
+     "explanation": "A และ C มี rise/fall ของ troponin เกิน URL = acute MI; B สูงคงที่ = chronic myocardial injury (เช่น CKD, HF); D ปกติ"
+    },
+    {
+     "id": "9.3",
+     "prompt": "ถ้าแพทย์สงสัยภาวะหัวใจล้มเหลว ควรเลือกตรวจ cardiac marker ใด",
+     "format": "short",
+     "accepted": [
+      "bnp",
+      "nt-probnp",
+      "natriuretic"
+     ],
+     "explanation": "BNP / NT-proBNP"
+    },
+    {
+     "id": "9.4",
+     "prompt": "จงอธิบายกลไกการเปลี่ยนแปลงของ marker นี้ในภาวะหัวใจล้มเหลว",
+     "format": "short",
+     "accepted": [
+      "wall stress",
+      "stretch"
+     ],
+     "mechanism": [
+      "Heart failure → ventricular volume/pressure overload",
+      {
+       "s": "Myocardial stretch / wall stress ↑"
+      },
+      "BNP gene expression ใน ventricular myocyte ↑",
+      "proBNP → BNP (active) + NT-proBNP (inactive)",
+      {
+       "s": "Serum BNP/NT-proBNP ↑",
+       "answer": true
+      }
+     ],
+     "explanation": "Ventricular wall stress ↑ → กระตุ้นการสร้าง proBNP → แตกเป็น BNP + NT-proBNP ในเลือด"
+    }
+   ],
+   "answer_status": "verified",
+   "explanation": "Rise/fall ของ troponin = acute MI (A, C); HF ตรวจ BNP/NT-proBNP",
+   "key_concept": "• Acute MI = troponin มี rise และ/หรือ fall โดยมีค่าเกิน URL อย่างน้อย 1 ค่า\n• สูงคงที่ = chronic injury ไม่ใช่ acute MI\n• BNP/NT-proBNP สร้างจาก ventricle เมื่อถูกยืด ใช้ rule out HF ได้ดี (ค่าต่ำ = HF ไม่น่าเป็น)",
+   "image": "img/51_KF_009.jpg",
+   "image_caption": "ระดับ hs-cTnT ของผู้ป่วย A–D ตามเวลา (เส้นประ = 99th percentile URL)",
+   "refs": [
+    {
+     "lecture": "L16",
+     "pages": [
+      18
+     ],
+     "focus": "Troponin kinetics",
+     "hotspot": {
+      "tier": 1,
+      "years": [
+       49,
+       51,
+       52
+      ]
+     }
+    },
+    {
+     "lecture": "L16",
+     "pages": [
+      30,
+      31
+     ],
+     "focus": "ESC 0/3 h, 0/1 h algorithm",
+     "hotspot": {
+      "tier": 1,
+      "years": [
+       49,
+       51,
+       52
+      ]
+     }
+    },
+    {
+     "lecture": "L16",
+     "pages": [
+      38,
+      39,
+      40,
+      41
+     ],
+     "focus": "BNP/NT-proBNP ใน HF + cut-off",
+     "hotspot": {
+      "tier": 1,
+      "years": [
+       50,
+       51,
+       52
+      ]
+     }
+    }
+   ],
+   "tags": [
+    "Troponin kinetics & natriuretic peptides",
+    "biochem",
+    "analyze"
+   ],
+   "source": "import"
+  }
+ ],
+ "guide": {
+  "recent_years": [
+   50,
+   51,
+   52
+  ],
+  "set_summary": [
+   {
+    "lecture": "L17",
+    "count": 2
+   },
+   {
+    "lecture": "L10",
+    "count": 1
+   },
+   {
+    "lecture": "CC1",
+    "count": 1
+   },
+   {
+    "lecture": "L07",
+    "count": 1
+   },
+   {
+    "lecture": "CC2",
+    "count": 1
+   },
+   {
+    "lecture": "CC3",
+    "count": 1
+   },
+   {
+    "lecture": "CC4",
+    "count": 1
+   },
+   {
+    "lecture": "L13",
+    "count": 1
+   },
+   {
+    "lecture": "CCX",
+    "count": 1
+   },
+   {
+    "lecture": "L14",
+    "count": 1
+   },
+   {
+    "lecture": "L16",
+    "count": 1
+   }
+  ],
+  "lectures": [
+   {
+    "lecture": "L17",
+    "topics": [
+     {
+      "heading": "Lung volumes during rest and exercise",
+      "pages": [
+       9,
+       9
+      ],
+      "tier": 1,
+      "years": [
+       51,
+       52
+      ],
+      "summary": "ขณะออกกำลังกาย TV เพิ่มโดยใช้ IRV และ ERV",
+      "focus": [
+       {
+        "text": "Ventilation ↑ ระยะแรกจาก tidal volume",
+        "years": [
+         51
+        ]
+       },
+       {
+        "text": "Ventilation ↑ จาก tidal volume ↑ (ใช้ IRV/ERV) + RR",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 2
+     },
+     {
+      "heading": "Minute ventilation during exercise",
+      "pages": [
+       10,
+       10
+      ],
+      "tier": 1,
+      "years": [
+       50,
+       51,
+       52
+      ],
+      "summary": "VE ↑ จาก TV ↑ และ breathing rate ↑; ปรับโดยอัตโนมัติ การฝืนจังหวะหายใจไม่ช่วย performance",
+      "focus": [],
+      "role": "supporting",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 0
+     },
+     {
+      "heading": "Valsalva maneuver",
+      "pages": [
+       11,
+       11
+      ],
+      "tier": 1,
+      "years": [
+       50
+      ],
+      "summary": "ปิด glottis หายใจออกแรง → intrathoracic pressure ↑ → BP ขึ้นชั่วคราว → กด IVC → venous return ↓ → arterial BP ↓ (ขณะยกของหนัก)",
+      "focus": [
+       {
+        "text": "Valsalva: ปิด glottis เบ่ง (ยกของหนัก) → intrathoracic pressure ↑ → VR ↓",
+        "years": [
+         50
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 1
+     },
+     {
+      "heading": "Medullary control of ventilation",
+      "pages": [
+       14,
+       14
+      ],
+      "tier": 1,
+      "years": [
+       51
+      ],
+      "summary": "Respiratory center ใน medulla รับสัญญาณจาก temperature, lung receptors, proprioceptors (joints/muscles), central chemoreceptors, peripheral chemoreceptors, motor cortex, subcortical regions",
+      "focus": [
+       {
+        "text": "Respiratory center รับ proprioceptor input",
+        "years": [
+         51
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": true,
+      "n_all_years": 1
+     },
+     {
+      "heading": "Alveolar gases during exercise",
+      "pages": [
+       15,
+       15
+      ],
+      "tier": 1,
+      "years": [
+       49,
+       50,
+       51,
+       52
+      ],
+      "summary": "Alveolar PO2 คงที่/ขึ้นเล็กน้อย, alveolar PCO2 คงที่ (~40) จนถึงหนักจึงลดลง, mixed venous PCO2 ↑ ตาม VO2 → ventilation เพิ่มพอดีกับ CO2 production (ออก KF)",
+      "focus": [
+       {
+        "text": "Alveolar PO2 คงที่/ขึ้นเล็กน้อย, PCO2 คงที่จนออกแรงหนักจึงลดลง",
+        "years": [
+         49
+        ]
+       },
+       {
+        "text": "Exercise หนัก: alveolar PO2 ↑ PCO2 ↓ (respiratory compensation)",
+        "years": [
+         50
+        ]
+       },
+       {
+        "text": "Alveolar PO2/PCO2 ระหว่าง exercise",
+        "years": [
+         51
+        ]
+       },
+       {
+        "text": "Alveolar PO2/PCO2 คงที่ในระดับปานกลาง; ventilation ตาม CO2 production",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [
+       "CVS-51-KF-002"
+      ],
+      "in_set": true,
+      "n_all_years": 4
+     },
+     {
+      "heading": "Chemical factors on ventilation",
+      "pages": [
+       16,
+       16
+      ],
+      "tier": 1,
+      "years": [
+       51
+      ],
+      "summary": "Arterial PO2, PCO2, H+ ไม่เปลี่ยนมากพอจะอธิบาย ventilation ↑ ในระดับปานกลาง; ช่วงหนัก CO2 + H+ (lactate) ↑ จึงกระตุ้นเพิ่ม",
+      "focus": [
+       {
+        "text": "ปัจจัยคุม ventilation: chemical, neural (central command, proprioceptor), temperature",
+        "years": [
+         51
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [
+       "CVS-51-KF-002"
+      ],
+      "in_set": true,
+      "n_all_years": 1
+     },
+     {
+      "heading": "Non-chemical factors of ventilation",
+      "pages": [
+       17,
+       17
+      ],
+      "tier": 1,
+      "years": [
+       49,
+       50,
+       51,
+       52
+      ],
+      "summary": "Ventilation ↑ ทันทีตั้งแต่รอบแรก → plateau ~20 s → ค่อยๆ เพิ่มตาม metabolic demand; หยุดออกกำลัง ventilation ลดลงทันทีเหลือ ~40% แล้วค่อยกลับ",
+      "focus": [],
+      "role": "supporting",
+      "question_ids": [],
+      "in_set": true,
+      "n_all_years": 0
+     },
+     {
+      "heading": "Neurogenic factors and temperature",
+      "pages": [
+       18,
+       18
+      ],
+      "tier": 1,
+      "years": [
+       49,
+       51,
+       52
+      ],
+      "summary": "Central command จาก motor cortex (anticipation + เริ่มออกกำลัง → ventilation ↑ ทันที); peripheral mechanoreceptors (joints, tendons, muscles); temperature ขึ้นช้าอธิบาย ventilation ระยะแรกไม่ได้; integrated regulation",
+      "focus": [
+       {
+        "text": "Central command (anticipation) + peripheral neural factors",
+        "years": [
+         49
+        ]
+       },
+       {
+        "text": "Ventilation ขณะออกกำลัง: neural factors เป็นหลัก",
+        "years": [
+         49
+        ]
+       },
+       {
+        "text": "Peripheral mechanoreceptors (joints, muscles) + central command",
+        "years": [
+         51
+        ]
+       },
+       {
+        "text": "Neural/central command ควบคุมการหายใจช่วงแรก",
+        "years": [
+         52
+        ]
+       },
+       {
+        "text": "Central command จาก motor cortex → ventilation ↑ ทันทีเมื่อเริ่ม/คาดว่าจะออกกำลัง",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": true,
+      "n_all_years": 5
+     },
+     {
+      "heading": "Factors in total ventilation",
+      "pages": [
+       19,
+       19
+      ],
+      "tier": 1,
+      "years": [
+       49,
+       50,
+       51,
+       52
+      ],
+      "summary": "กราฟ VE vs VO2: neural factors (response to movement) เป็นฐานใหญ่สุด + temperature + ΔpH ช่วงหนัก",
+      "focus": [],
+      "role": "supporting",
+      "question_ids": [],
+      "in_set": true,
+      "n_all_years": 0
+     },
+     {
+      "heading": "Ventilatory and lactate thresholds",
+      "pages": [
+       21,
+       21
+      ],
+      "tier": 1,
+      "years": [
+       50,
+       51,
+       52
+      ],
+      "summary": "กราฟ VE และ blood lactate vs VO2: lactate threshold → ventilatory threshold → OBLA (4 mM) → respiratory compensation",
+      "focus": [
+       {
+        "text": "Ventilatory threshold / respiratory compensation",
+        "years": [
+         50
+        ]
+       },
+       {
+        "text": "Ventilatory/lactate threshold, OBLA",
+        "years": [
+         51
+        ]
+       },
+       {
+        "text": "Respiratory compensation เกิดหลัง OBLA (lactate สะสม → H+ ↑)",
+        "years": [
+         51
+        ]
+       },
+       {
+        "text": "เกิน ventilatory threshold: CO2 จาก buffering lactate → respiratory compensation",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [
+       "CVS-51-KF-002"
+      ],
+      "in_set": true,
+      "n_all_years": 4
+     },
+     {
+      "heading": "Ventilatory threshold",
+      "pages": [
+       22,
+       22
+      ],
+      "tier": 1,
+      "years": [
+       50,
+       51,
+       52
+      ],
+      "summary": "Graded exercise: VE เพิ่มไม่สัมพันธ์ VO2 (VE/VO2 ถึง 35–40) เพราะ CO2 จาก buffering lactate (HCO3−) = anaerobic threshold",
+      "focus": [],
+      "role": "supporting",
+      "question_ids": [],
+      "in_set": true,
+      "n_all_years": 0
+     },
+     {
+      "heading": "Ventilatory threshold (continued)",
+      "pages": [
+       23,
+       23
+      ],
+      "tier": 1,
+      "years": [
+       50,
+       51,
+       52
+      ],
+      "summary": "CO2 ส่วนเกิน → ventilation ↑ ไม่สมส่วน → onset of anaerobiosis",
+      "focus": [],
+      "role": "supporting",
+      "question_ids": [],
+      "in_set": true,
+      "n_all_years": 0
+     },
+     {
+      "heading": "Onset of blood lactate accumulation",
+      "pages": [
+       24,
+       24
+      ],
+      "tier": 1,
+      "years": [
+       50,
+       51,
+       52
+      ],
+      "summary": "OBLA = lactate > 4 mM; 55–65% VO2max ใน untrained, ~80% ในนักกีฬา; สาเหตุ = production > clearance (ไม่ใช่ hypoxia อย่างเดียว)",
+      "focus": [],
+      "role": "supporting",
+      "question_ids": [],
+      "in_set": true,
+      "n_all_years": 0
+     },
+     {
+      "heading": "Rhythmic exercise and BP",
+      "pages": [
+       28,
+       28
+      ],
+      "tier": 1,
+      "years": [
+       49,
+       52
+      ],
+      "summary": "Dynamic/aerobic: กล้ามเนื้อทำงานหลอดเลือดขยาย; SBP ↑ ช่วงแรกแล้วคงที่, DBP แทบไม่เปลี่ยน → pulse pressure ↑",
+      "focus": [
+       {
+        "text": "Rhythmic (aerobic) vs resistance exercise กับ BP",
+        "years": [
+         49
+        ]
+       },
+       {
+        "text": "BP ใน dynamic exercise: SBP ↑ DBP คงที่ PP ↑; resistance exercise BP ↑↑",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 2
+     },
+     {
+      "heading": "Resistance exercise and BP",
+      "pages": [
+       29,
+       29
+      ],
+      "tier": 1,
+      "years": [
+       49,
+       51,
+       52
+      ],
+      "summary": "Resistance หนัก (กล้ามเนื้อมาก) กดหลอดเลือด → BP ↑↑↑ (2-leg press > 2-arm curl > aerobic) เสี่ยงต่อคนเป็น HT — ใช้ตอบ static vs dynamic",
+      "focus": [
+       {
+        "text": "Resistance exercise (leg press) → BP สูงสุด",
+        "years": [
+         49
+        ]
+       },
+       {
+        "text": "Static/resistance exercise ขาหนัก → BP ↑ สูงสุด",
+        "years": [
+         51
+        ]
+       },
+       {
+        "text": "Resistance (static) exercise ใช้กล้ามเนื้อมาก → BP ↑ สูงสุด (2-leg press)",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 3
+     },
+     {
+      "heading": "Integrated adjustments before and during exercise",
+      "pages": [
+       31,
+       31
+      ],
+      "tier": 1,
+      "years": [
+       49,
+       51,
+       52
+      ],
+      "summary": "ก่อนออกกำลัง (anticipatory): motor cortex → sympathetic ↑ parasympathetic ↓ → HR, contractility ↑, muscle vasodilation (cholinergic); ระหว่าง: metabolites (↓O2, ↑CO2, H+, K+, adenosine, NO, temp) ขยายกล้ามเนื้อ, sympathetic หดหลอดเลือดอวัยวะอื่น, venoconstriction เพิ่ม VR",
+      "focus": [
+       {
+        "text": "Anticipatory adjustment ก่อนออกกำลัง",
+        "years": [
+         49
+        ]
+       },
+       {
+        "text": "Exercise: muscle vasodilation (metabolites) + vasoconstriction อวัยวะอื่น",
+        "years": [
+         51
+        ]
+       },
+       {
+        "text": "Exercise: sympathetic หดหลอดเลือดอวัยวะอื่น + metabolic dilation ในกล้ามเนื้อ",
+        "years": [
+         51
+        ]
+       },
+       {
+        "text": "Anticipatory response (motor cortex → sympathetic)",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [
+       "CVS-51-KF-001"
+      ],
+      "in_set": true,
+      "n_all_years": 4
+     },
+     {
+      "heading": "CO, HR, SV: trained vs untrained",
+      "pages": [
+       32,
+       32
+      ],
+      "tier": 1,
+      "years": [
+       49,
+       50
+      ],
+      "summary": "พัก: CO 5000 ทั้งคู่ — untrained HR 70 SV 71, trained HR 50 SV 100; ออกกำลังสูงสุด: untrained CO 22,000 HR 195 SV 113, trained CO 35,000 HR 195 SV 179 (ออก KF)",
+      "focus": [
+       {
+        "text": "CO, HR, SV ของ trained vs untrained ขณะพักและ max exercise",
+        "years": [
+         49
+        ]
+       },
+       {
+        "text": "Trained vs untrained: HR พักต่ำ SV สูง max CO สูงกว่า",
+        "years": [
+         50
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": true,
+      "n_all_years": 2
+     },
+     {
+      "heading": "Cardiac output distribution",
+      "pages": [
+       35,
+       35
+      ],
+      "tier": 1,
+      "years": [
+       49,
+       51,
+       52
+      ],
+      "summary": "พัก (5 L): ตับ >¼, ไตและกล้ามเนื้อ >⅕; aerobic หนัก (25 L): กล้ามเนื้อ ~84% (flow สูงสุด 50–75 mL/100 g), หัวใจ ↑, ผิวหนัง/ไต/ตับลดสัดส่วน, สมองคงที่",
+      "focus": [
+       {
+        "text": "การกระจาย CO ขณะพัก vs ออกกำลัง",
+        "years": [
+         49
+        ]
+       },
+       {
+        "text": "การกระจาย CO ขณะพัก vs exercise",
+        "years": [
+         51
+        ]
+       },
+       {
+        "text": "พัก: ตับ > ¼ ของ CO",
+        "years": [
+         51
+        ]
+       },
+       {
+        "text": "Exercise: CO ส่วนใหญ่ไป skeletal muscle (~84%)",
+        "years": [
+         52
+        ]
+       },
+       {
+        "text": "Exercise: splanchnic flow ↓ จาก sympathetic vasoconstriction",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [
+       "CVS-51-KF-001"
+      ],
+      "in_set": true,
+      "n_all_years": 5
+     },
+     {
+      "heading": "Max cardiac output and VO2max",
+      "pages": [
+       36,
+       36
+      ],
+      "tier": 1,
+      "years": [
+       50
+      ],
+      "summary": "Max CO สัมพันธ์เส้นตรงกับ VO2max (นักกีฬา CO ~35–40 L/min)",
+      "focus": [
+       {
+        "text": "Max CO, VO2max และ O2 extraction",
+        "years": [
+         50
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": true,
+      "n_all_years": 1
+     },
+     {
+      "heading": "Oxygen extraction",
+      "pages": [
+       37,
+       37
+      ],
+      "tier": 1,
+      "years": [
+       49
+      ],
+      "summary": "Max exercise ต้องการ O2 ถึง 20 เท่า: เพิ่ม tissue blood flow + ดึง O2 ที่ปกติไม่ใช้ (a-vO2 difference ↑)",
+      "focus": [
+       {
+        "text": "O2 ต้องการ 20 เท่า: tissue blood flow ↑ + a–vO2 difference ↑",
+        "years": [
+         49
+        ]
+       },
+       {
+        "text": "Oxygen extraction ของแต่ละอวัยวะ",
+        "years": [
+         49
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": true,
+      "n_all_years": 2
+     },
+     {
+      "heading": "Effect of training on CV parameters",
+      "pages": [
+       39,
+       39
+      ],
+      "tier": 2,
+      "years": [
+       49,
+       50
+      ],
+      "summary": "Training: max SV ↑ (ไม่เพิ่ม max HR) → max CO ↑ (ส่วนใหญ่จาก SV) และ a-vO2 difference ↑ เล็กน้อย; bed rest ตรงข้าม",
+      "focus": [
+       {
+        "text": "Training: max SV ↑, max HR ไม่เปลี่ยน → max CO ↑",
+        "years": [
+         49
+        ]
+       },
+       {
+        "text": "Training: max SV ↑ (max HR ไม่เปลี่ยน), a-vO2 diff ↑",
+        "years": [
+         50
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 2
+     }
+    ],
+    "best_tier": 1,
+    "pages_total": 15,
+    "n_in_set": 2
+   },
+   {
+    "lecture": "L10",
+    "topics": [
+     {
+      "heading": "The vasomotor center",
+      "pages": [
+       6,
+       6
+      ],
+      "tier": 2,
+      "years": [
+       52
+      ],
+      "summary": "VMC อยู่ใน reticular substance ของ medulla + lower pons; sensory area (รับจาก pons, hypothalamus, cortex, limbic), vasoconstrictor area (sympathetic noradrenergic), vasodilator area (sympathetic cholinergic)",
+      "focus": [
+       {
+        "text": "Vasomotor center ส่ง sympathetic noradrenergic ไป arterioles (คุม SVR)",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 1
+     },
+     {
+      "heading": "Short-term: baroreceptor reflex",
+      "pages": [
+       13,
+       13
+      ],
+      "tier": 1,
+      "years": [
+       49,
+       52
+      ],
+      "summary": "Afferent จาก aortic arch (vagus) และ carotid sinus (glossopharyngeal) → nucleus tractus solitarius (NTS); กระตุ้นเมื่อเปลี่ยนท่า ตกใจ เปลี่ยนจากเดินเป็นวิ่ง",
+      "focus": [
+       {
+        "text": "Baroreceptor reflex: carotid sinus/aortic arch → NTS → sympathetic ↑, vagal ↓",
+        "years": [
+         49
+        ]
+       },
+       {
+        "text": "Baroreceptor reflex: carotid sinus (IX), aortic arch (X) → NTS → sympathetic ↑ vagal ↓",
+        "years": [
+         52
+        ]
+       },
+       {
+        "text": "Short-term BP regulation = baroreceptor reflex → sympathetic ↑ HR, contractility, TPR",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 3
+     },
+     {
+      "heading": "Response of baroreceptor to pressure change",
+      "pages": [
+       14,
+       14
+      ],
+      "tier": 1,
+      "years": [
+       51,
+       52
+      ],
+      "summary": "Carotid sinus ทำงานเมื่อ ABP > 60, aortic > 90 mmHg (ไม่ทำงาน < 50); BP ↑ → firing ↑ → NTS → ยับยั้ง vasoconstrictor + กระตุ้น vagal → HR ↓ contractility ↓ vasodilation → BP ↓",
+      "focus": [
+       {
+        "text": "BP ↓ → baroreceptor firing ↓ → sympathetic ↑ → TPR ↑",
+        "years": [
+         51
+        ]
+       },
+       {
+        "text": "Carotid ถูกกด/BP ↓ → baroreceptor firing ↓ → cardioaccelerator ↑, vasoconstriction",
+        "years": [
+         52
+        ]
+       },
+       {
+        "text": "Volume expansion → BP ↑ → baroreceptor firing ↑ → sympathetic ↓",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 3
+     },
+     {
+      "heading": "Baroreflex flowchart",
+      "pages": [
+       15,
+       15
+      ],
+      "tier": 1,
+      "years": [
+       49,
+       51,
+       52
+      ],
+      "summary": "BP ↑ → firing ↑ → cardioinhibitory ↑, accelerator/vasomotor ↓ → CO ↓ + vasodilation → BP ลง; BP ↓ → firing ↓ → ตรงข้าม → vasoconstriction, CO ↑ → BP ขึ้น (ใช้ตอบ orthostatic, hemorrhage, carotid clamp)",
+      "focus": [],
+      "role": "supporting",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 0
+     },
+     {
+      "heading": "Summary of autonomic reflexes",
+      "pages": [
+       17,
+       17
+      ],
+      "tier": 1,
+      "years": [
+       49,
+       50,
+       51
+      ],
+      "summary": "ตารางสรุป reflex: arterial baroreceptor, Bainbridge (atrial stretch → HR ↑), cardiopulmonary, chemoreceptor, Cushing, pain, diving reflex ฯลฯ พร้อม sympathetic/parasympathetic response; ภาพเส้นทาง vagal + sympathetic",
+      "focus": [
+       {
+        "text": "Baroreflex: BP ↑ → vagal ↑ → HR ↓",
+        "years": [
+         49
+        ]
+       },
+       {
+        "text": "Valsalva ในตาราง autonomic reflexes",
+        "years": [
+         50
+        ]
+       },
+       {
+        "text": "Vasovagal: parasympathetic ↑ + sympathetic withdrawal → HR ↓, vasodilation → syncope",
+        "years": [
+         51
+        ]
+       },
+       {
+        "text": "Bainbridge reflex: atrial stretch → HR ↑ (ตารางสรุป autonomic reflexes)",
+        "years": [
+         51
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [
+       "CVS-51-KF-001"
+      ],
+      "in_set": true,
+      "n_all_years": 4
+     },
+     {
+      "heading": "Long-term: RAAS",
+      "pages": [
+       18,
+       18
+      ],
+      "tier": 1,
+      "years": [
+       50,
+       52
+      ],
+      "summary": "Renal perfusion ↓ → renin (JG cells) → angiotensinogen → Ang I → (ACE ที่ปอด) Ang II → sympathetic ↑, arteriolar vasoconstriction, aldosterone (Na/H2O retention), ADH, thirst → BP/volume ↑",
+      "focus": [
+       {
+        "text": "Long-term: RAAS, ANP, ADH และ time course",
+        "years": [
+         50
+        ]
+       },
+       {
+        "text": "Long-term: RAAS → aldosterone → Na/H2O retention",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": true,
+      "n_all_years": 2
+     },
+     {
+      "heading": "Long-term: ANP",
+      "pages": [
+       19,
+       19
+      ],
+      "tier": 1,
+      "years": [
+       52
+      ],
+      "summary": "Cardiac distension (+ sympathetic, Ang II) → ANP/BNP → vasodilation, GFR ↑, renin ↓, Ang II + aldosterone ↓ → natriuresis/diuresis → blood volume ↓, BP ↓",
+      "focus": [
+       {
+        "text": "ANP หลั่งเมื่อ atrial stretch",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": true,
+      "n_all_years": 1
+     },
+     {
+      "heading": "Long-term: ADH",
+      "pages": [
+       20,
+       20
+      ],
+      "tier": 1,
+      "years": [
+       49,
+       50,
+       51,
+       52
+      ],
+      "summary": "ADH (vasopressin) จาก posterior pituitary เมื่อ osmolality ↑ / volume ↓: ลดปัสสาวะ ลดเหงื่อ arteriole หด → BP ↑; dehydration → ADH ↑, overhydration → ADH ↓",
+      "focus": [],
+      "role": "supporting",
+      "question_ids": [],
+      "in_set": true,
+      "n_all_years": 0
+     },
+     {
+      "heading": "Time course of BP control mechanisms",
+      "pages": [
+       21,
+       21
+      ],
+      "tier": 1,
+      "years": [
+       52
+      ],
+      "summary": "กราฟ gain vs เวลา: baroreceptor, chemoreceptor, CNS ischemic response ทำงานในวินาที–นาที; RAAS, stress relaxation, capillary fluid shift ในนาที–ชั่วโมง; aldosterone และ renal blood volume–pressure control (gain ∞) ในวัน = long-term",
+      "focus": [
+       {
+        "text": "Time course: baroreflex ทำงานในวินาที",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": true,
+      "n_all_years": 1
+     },
+     {
+      "heading": "Postural changes",
+      "pages": [
+       22,
+       22
+      ],
+      "tier": 1,
+      "years": [
+       49,
+       52
+      ],
+      "summary": "ยืน → venous pooling + capillary filtration → central blood volume ↓ → SV ↓ → CO ↓ → baroreflex → HR ↑, vasoconstriction (splanchnic), humoral activation; skeletal muscle pump ช่วย — ใช้ตอบ KF syncope",
+      "focus": [
+       {
+        "text": "Postural changes: ผลของการยืนต่อ CVS และการชดเชย",
+        "years": [
+         49
+        ]
+       },
+       {
+        "text": "Postural change: BP ↓ → baroreflex → sympathetic ↑ TPR ↑",
+        "years": [
+         49
+        ]
+       },
+       {
+        "text": "ยืน → venous pooling → SV/CO/BP ↓ → baroreflex (HR ↑, TPR ↑, venoconstriction)",
+        "years": [
+         52
+        ]
+       },
+       {
+        "text": "ยืน → venous pooling → baroreflex → HR ↑ + arteriolar constriction (TPR ↑)",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": true,
+      "n_all_years": 4
+     },
+     {
+      "heading": "Blood loss",
+      "pages": [
+       23,
+       23
+      ],
+      "tier": 1,
+      "years": [
+       49,
+       50,
+       52
+      ],
+      "summary": "Hemorrhage → venous return ↓ → SV/CO/BP ↓ → baroreceptor ↓ + chemoreceptor → sympathetic ↑: HR, contractility, arteriolar + venous constriction, renin/AVP → TPR ↑, fluid shift เข้าหลอดเลือด",
+      "focus": [
+       {
+        "text": "Blood loss: การตอบสนองของ CVS ต่อการเสียเลือด",
+        "years": [
+         49
+        ]
+       },
+       {
+        "text": "Hypovolemia/hemorrhage → baroreflex + chemoreflex → sympathetic, RAAS, ADH",
+        "years": [
+         50
+        ]
+       },
+       {
+        "text": "Hemorrhage → CO ↓ → baroreflex compensation",
+        "years": [
+         50
+        ]
+       },
+       {
+        "text": "Hemorrhage → baroreflex → sympathetic ↑ → arteriolar constriction (TPR ↑), HR ↑",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": true,
+      "n_all_years": 4
+     }
+    ],
+    "best_tier": 1,
+    "pages_total": 7,
+    "n_in_set": 1
+   },
+   {
+    "lecture": "CC1",
+    "topics": [
+     {
+      "heading": "Mean arterial pressure",
+      "pages": [
+       3,
+       3
+      ],
+      "tier": 1,
+      "years": [
+       49,
+       51,
+       52
+      ],
+      "summary": "MAP − CVP = CO × SVR (V = IR); ถ้า CVP = 0: MAP = CO × SVR; MAP = (SBP + 2DBP)/3 = DBP + ⅓(SBP − DBP)",
+      "focus": [
+       {
+        "text": "สูตร MAP = DBP + ⅓PP, SV = CO/HR, EF = SV/EDV",
+        "years": [
+         49
+        ]
+       },
+       {
+        "text": "สูตร MAP = DBP + ⅓PP, MAP − CVP = CO × SVR, EF",
+        "years": [
+         51
+        ]
+       },
+       {
+        "text": "สูตร MAP, MAP − CVP = CO × SVR, EDV × EF × HR × SVR",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [
+       "CVS-51-KF-003"
+      ],
+      "in_set": true,
+      "n_all_years": 3
+     },
+     {
+      "heading": "MAP formulas",
+      "pages": [
+       4,
+       4
+      ],
+      "tier": 1,
+      "years": [
+       49,
+       51,
+       52
+      ],
+      "summary": "MAP = (SBP + 2DBP)/3 = DBP + ⅓PP (ใช้คำนวณใน KF ทุกปี)",
+      "focus": [],
+      "role": "supporting",
+      "question_ids": [],
+      "in_set": true,
+      "n_all_years": 0
+     },
+     {
+      "heading": "Mean systemic filling pressure",
+      "pages": [
+       5,
+       5
+      ],
+      "tier": 1,
+      "years": [
+       49,
+       51,
+       52
+      ],
+      "summary": "Pms/Pmsf = ความดันในระบบไหลเวียนเมื่อหัวใจหยุดเต้นทันที (สะท้อน stressed volume)",
+      "focus": [],
+      "role": "supporting",
+      "question_ids": [],
+      "in_set": true,
+      "n_all_years": 0
+     },
+     {
+      "heading": "Venous return",
+      "pages": [
+       6,
+       6
+      ],
+      "tier": 1,
+      "years": [
+       49,
+       51,
+       52
+      ],
+      "summary": "VR = (Pmsf − RAP)/RVR (resistance to venous return); vasopressor/venoconstriction ↑ Pmsf",
+      "focus": [],
+      "role": "supporting",
+      "question_ids": [],
+      "in_set": true,
+      "n_all_years": 0
+     },
+     {
+      "heading": "Hemodynamic formula",
+      "pages": [
+       7,
+       7
+      ],
+      "tier": 1,
+      "years": [
+       49,
+       51,
+       52
+      ],
+      "summary": "MAP − CVP = CO × SVR = SV × HR × SVR = EDV × EF × HR × SVR → preload × contractility × HR × afterload (ใช้แยกกลไก shock)",
+      "focus": [],
+      "role": "supporting",
+      "question_ids": [],
+      "in_set": true,
+      "n_all_years": 0
+     },
+     {
+      "heading": "Regulation of MAP",
+      "pages": [
+       19,
+       19
+      ],
+      "tier": 1,
+      "years": [
+       50,
+       52
+      ],
+      "summary": "MAP ↓ → baroreceptor firing ↓ → sympathetic ↑: HR, contractility (β1) → CO ↑, venous tone (α) → VR ↑, TPR (α) ↑; ไต: RBF ↓ → RAAS → Ang II (vasoconstriction) + aldosterone (blood volume ↑)",
+      "focus": [
+       {
+        "text": "Regulation of MAP เมื่อ MAP ↓",
+        "years": [
+         50,
+         52
+        ]
+       },
+       {
+        "text": "Regulation of MAP",
+        "years": [
+         50
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 3
+     },
+     {
+      "heading": "Pulsus paradoxus: mechanism",
+      "pages": [
+       30,
+       30
+      ],
+      "tier": 1,
+      "years": [
+       51
+      ],
+      "summary": "Tamponade: หายใจเข้า VR ฝั่งขวา ↑ → RV ขยายดัน septum ไป LV + เลือดค้างในปอด → LV filling ↓ → SV และ pulse amplitude ↓",
+      "focus": [
+       {
+        "text": "Pulsus paradoxus (tamponade): SBP ↓ > 10 mmHg ตอนหายใจเข้า",
+        "years": [
+         51
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [
+       "CVS-51-KF-003"
+      ],
+      "in_set": true,
+      "n_all_years": 1
+     },
+     {
+      "heading": "Pulsus paradoxus: waveform",
+      "pages": [
+       31,
+       31
+      ],
+      "tier": 1,
+      "years": [
+       50,
+       51,
+       52
+      ],
+      "summary": "SBP ลดลง > 10 mmHg ขณะหายใจเข้า (ปกติ < 10 mmHg)",
+      "focus": [],
+      "role": "supporting",
+      "question_ids": [],
+      "in_set": true,
+      "n_all_years": 0
+     },
+     {
+      "heading": "Distributive shock",
+      "pages": [
+       32,
+       32
+      ],
+      "tier": 1,
+      "years": [
+       50,
+       52
+      ],
+      "summary": "สาเหตุ: anaphylactic, septic shock (neurogenic); primary = SVR ↓ (vasodilation) → CO ↑ ผิวอุ่น",
+      "focus": [
+       {
+        "text": "Distributive shock",
+        "years": [
+         50
+        ]
+       },
+       {
+        "text": "Septic (distributive) shock: SVR ↓ CO ↑ CVP/PAOP ↓; ตาราง hemodynamic profile",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": true,
+      "n_all_years": 2
+     },
+     {
+      "heading": "Venous return in septic shock",
+      "pages": [
+       33,
+       33
+      ],
+      "tier": 1,
+      "years": [
+       50,
+       51,
+       52
+      ],
+      "summary": "Vasodilation + capillary leak → Pmsf ↓ และ RVR ↓; contractility ↑ ระยะแรก ↓ ระยะหลัง (septic cardiomyopathy)",
+      "focus": [],
+      "role": "supporting",
+      "question_ids": [],
+      "in_set": true,
+      "n_all_years": 0
+     },
+     {
+      "heading": "Hemodynamic profile in shock",
+      "pages": [
+       34,
+       34
+      ],
+      "tier": 1,
+      "years": [
+       50,
+       51,
+       52
+      ],
+      "summary": "Hypovolemic: CVP ↓ PAOP ↓ CO ↓ SVR ↑; cardiogenic: CVP ↑ PAOP ↑ CO ↓ SVR ↑; distributive: CVP ↓ PAOP ↓ CO ↑ SVR ↓; obstructive: CVP ↑ PAOP ↓/↑ CO ↓ SVR ↑ (★ ใช้ตอบ KF ทุกปี)",
+      "focus": [],
+      "role": "supporting",
+      "question_ids": [],
+      "in_set": true,
+      "n_all_years": 0
+     },
+     {
+      "heading": "Receptor profile of vasoactive agents",
+      "pages": [
+       40,
+       40
+      ],
+      "tier": 1,
+      "years": [
+       50,
+       52
+      ],
+      "summary": "Dobutamine: β1 ++ (inotrope, cardiogenic); dopamine low dose: DA, moderate: β, high: α; epinephrine: α +++ β1 ++++ β2 +++ (anaphylaxis); norepinephrine: α +++ β1 + (septic shock first line)",
+      "focus": [
+       {
+        "text": "Anaphylactic shock: epinephrine (α + β1 + β2)",
+        "years": [
+         50
+        ]
+       },
+       {
+        "text": "เลือก vasopressor: norepinephrine first line ใน septic shock",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 2
+     },
+     {
+      "heading": "Vasoactive agent map",
+      "pages": [
+       41,
+       41
+      ],
+      "tier": 1,
+      "years": [
+       50,
+       52
+      ],
+      "summary": "แกน vasoconstriction ↔ vasodilation และ inotropy: phenylephrine/vasopressin (หดอย่างเดียว), norepinephrine, epinephrine/dopamine high (หด + inotropy), dobutamine/milrinone (inotropy + dilate), isoproterenol, nitroglycerin/nitroprusside (dilate)",
+      "focus": [],
+      "role": "supporting",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 0
+     },
+     {
+      "heading": "Adult cardiac arrest algorithm",
+      "pages": [
+       44,
+       44
+      ],
+      "tier": 1,
+      "years": [
+       52
+      ],
+      "summary": "CPR + O2 → shockable? VF/pVT: shock → CPR 2 นาที → shock → epinephrine ทุก 3–5 นาที → shock → amiodarone/lidocaine; asystole/PEA: epinephrine ASAP + CPR + หา reversible causes (Hs & Ts)",
+      "focus": [
+       {
+        "text": "ACLS: VF/pVT → shock + epinephrine + amiodarone 300 mg",
+        "years": [
+         52
+        ]
+       },
+       {
+        "text": "Refractory VF หลัง shock + epinephrine → amiodarone (หรือ lidocaine)",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 2
+     },
+     {
+      "heading": "Case study: Mr. Harry",
+      "pages": [
+       45,
+       45
+      ],
+      "tier": 1,
+      "years": [
+       50,
+       52
+      ],
+      "summary": "ชาย 66 ปี DM, HT, chronic stable angina, เพิ่ง admit ด้วย CHF มาด้วยคลื่นไส้ เจ็บอก แขนชา (ACS/arrhythmia/ยา)",
+      "focus": [],
+      "role": "supporting",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 0
+     },
+     {
+      "heading": "ACLS emergency drugs",
+      "pages": [
+       46,
+       46
+      ],
+      "tier": 1,
+      "years": [
+       50
+      ],
+      "summary": "Epinephrine 1 mg IV ทุก 3–5 นาที (arrest, anaphylaxis); amiodarone 300 mg แล้ว 150 mg (VF/pVT); lidocaine 1–1.5 mg/kg; atropine 1 mg ทุก 3–5 นาที (max 3 mg, bradycardia); adenosine 6 mg rapid push แล้ว 12 mg (stable SVT)",
+      "focus": [
+       {
+        "text": "Epinephrine dose",
+        "years": [
+         50
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 1
+     }
+    ],
+    "best_tier": 1,
+    "pages_total": 10,
+    "n_in_set": 1
+   },
+   {
+    "lecture": "L07",
+    "topics": [
+     {
+      "heading": "Pressure, flow, resistance",
+      "pages": [
+       6,
+       6
+      ],
+      "tier": 1,
+      "years": [
+       50
+      ],
+      "summary": "Blood flow (mL/min) พักเท่ากับ CO ~5 L/min; F = ΔP/R (เทียบ V = IR)",
+      "focus": [
+       {
+        "text": "F = ΔP/R; ความต้านทานลด → flow ↑ ตามสัดส่วน",
+        "years": [
+         50
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 1
+     },
+     {
+      "heading": "Pressure–flow–resistance figure",
+      "pages": [
+       7,
+       7
+      ],
+      "tier": 1,
+      "years": [
+       49,
+       50,
+       52
+      ],
+      "summary": "ภาพความสัมพันธ์ pressure gradient, flow, resistance (series/parallel)",
+      "focus": [],
+      "role": "supporting",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 0
+     },
+     {
+      "heading": "Total peripheral resistance",
+      "pages": [
+       8,
+       8
+      ],
+      "tier": 1,
+      "years": [
+       49
+      ],
+      "summary": "TPR/SVR = ความต้านทานรวม systemic; constricted ~4 PRU, dilated ~0.2 PRU, pulmonary ~0.1 PRU (1/10); ตัดขา/ไต (ตัดวงจรขนาน) → TPR ↑ flow รวม ↓; SVR = (MAP − RAP)/CO (ออกคำนวณทุกปี)",
+      "focus": [
+       {
+        "text": "TPR = (MAP − RAP)/CO",
+        "years": [
+         49
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 1
+     },
+     {
+      "heading": "Arterioles: major resistance vessels",
+      "pages": [
+       9,
+       9
+      ],
+      "tier": 1,
+      "years": [
+       52
+      ],
+      "summary": "Arteriole คุม tissue flow, SVR, BP; กลไก: myogenic (stretch → หด) และ sympathetic tone (NE ต่อเนื่อง)",
+      "focus": [
+       {
+        "text": "Myogenic response ของ arteriole",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 1
+     },
+     {
+      "heading": "Poiseuille's law and viscosity",
+      "pages": [
+       10,
+       10
+      ],
+      "tier": 1,
+      "years": [
+       50
+      ],
+      "summary": "F = ΔP·πr⁴/8ηl (fourth power law): radius ลดนิดเดียว flow ลดมาก (r ½ → flow 1/16); blood หนืดกว่าน้ำ 2–4 เท่า (plasma 1.5); viscosity ขึ้นกับ hematocrit และ plasma protein",
+      "focus": [
+       {
+        "text": "Poiseuille's law",
+        "years": [
+         50
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 1
+     },
+     {
+      "heading": "Autonomic control of vascular tone",
+      "pages": [
+       16,
+       16
+      ],
+      "tier": 2,
+      "years": [
+       52
+      ],
+      "summary": "Sympathetic NE → α1 vasoconstriction ส่วนใหญ่; epinephrine → β2 ขยายในกล้ามเนื้อลาย; parasympathetic ACh → M3 → NO ขยาย (salivary glands, erectile tissue); local metabolic control เด่นในเนื้อเยื่อที่ทำงาน",
+      "focus": [
+       {
+        "text": "Sympathetic NE → α1 vasoconstriction",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 1
+     },
+     {
+      "heading": "Arterial pressure wave",
+      "pages": [
+       21,
+       21
+      ],
+      "tier": 1,
+      "years": [
+       49,
+       52
+      ],
+      "summary": "Pressure wave วิ่งเร็วกว่าเลือด; systolic upstroke จาก LV ejection → dicrotic notch (aortic valve ปิด) → diastolic runoff ค่อยๆ ลด",
+      "focus": [
+       {
+        "text": "Arterial pressure wave + dicrotic notch",
+        "years": [
+         49
+        ]
+       },
+       {
+        "text": "Arterial pressure wave: systolic → dicrotic notch → diastolic runoff",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": true,
+      "n_all_years": 2
+     },
+     {
+      "heading": "Systolic, diastolic, pulse and mean pressure",
+      "pages": [
+       22,
+       22
+      ],
+      "tier": 1,
+      "years": [
+       49,
+       51
+      ],
+      "summary": "SBP = peak, DBP = trough, PP = SBP − DBP, MAP ≈ DBP + ⅓PP",
+      "focus": [
+       {
+        "text": "MAP ≈ DBP + ⅓ PP",
+        "years": [
+         49
+        ]
+       },
+       {
+        "text": "PP = SBP − DBP และปัจจัยกำหนด",
+        "years": [
+         51
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [
+       "CVS-51-KF-003"
+      ],
+      "in_set": true,
+      "n_all_years": 2
+     },
+     {
+      "heading": "Determinants of SBP, DBP and PP",
+      "pages": [
+       23,
+       23
+      ],
+      "tier": 1,
+      "years": [
+       49,
+       51,
+       52
+      ],
+      "summary": "SBP ↑: SV ↑, aortic compliance ↓, ejection เร็ว; DBP ↑: elastic recoil, HR ↑ (runoff สั้น), TPR ↑; PP ↑: SV ↑ หรือ arterial compliance ↓ (stiffness → PP กว้าง — ผู้สูงอายุ/atherosclerosis)",
+      "focus": [],
+      "role": "supporting",
+      "question_ids": [],
+      "in_set": true,
+      "n_all_years": 0
+     },
+     {
+      "heading": "Abnormal pressure pulse contours",
+      "pages": [
+       24,
+       24
+      ],
+      "tier": 1,
+      "years": [
+       49
+      ],
+      "summary": "ภาพ pulse contour ผิดปกติ (เช่น AR: two-way diastolic runoff → PP กว้าง, AS, PDA)",
+      "focus": [
+       {
+        "text": "Abnormal pulse contours",
+        "years": [
+         49
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": true,
+      "n_all_years": 1
+     },
+     {
+      "heading": "Laminar vs turbulent flow",
+      "pages": [
+       26,
+       26
+      ],
+      "tier": 2,
+      "years": [
+       49,
+       52
+      ],
+      "summary": "Laminar: ชั้นขนาน เร็วสุดตรงกลาง (parabolic); turbulent: velocity ↑, diameter ↑, ตีบ/ผนังขรุขระ, density ↑ (viscosity ↓) → เสียง; Reynolds > 2000 (หลอดตรง), 200–400 (จุดแยก)",
+      "focus": [
+       {
+        "text": "Korotkoff: turbulent flow ระหว่าง SBP–DBP",
+        "years": [
+         49
+        ]
+       },
+       {
+        "text": "Turbulence ↑ เมื่อ velocity, diameter, density ↑ หรือ viscosity ↓ (Reynolds number)",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 2
+     },
+     {
+      "heading": "Clinical BP measurement",
+      "pages": [
+       27,
+       27
+      ],
+      "tier": 2,
+      "years": [
+       49,
+       52
+      ],
+      "summary": "Palpatory: ชีพจรแรกที่ข้อมือ = SBP (หา DBP ไม่ได้); auscultatory: Korotkoff sound แรก = SBP (turbulent flow ผ่านหลอดที่ถูกกด), เสียงหาย = DBP",
+      "focus": [],
+      "role": "supporting",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 0
+     },
+     {
+      "heading": "Continuous nonfenestrated capillaries",
+      "pages": [
+       30,
+       30
+      ],
+      "tier": 2,
+      "years": [
+       52
+      ],
+      "summary": "พบมากสุด clefts เล็ก permeability ต่ำสุด; nervous system, skin, lung",
+      "focus": [
+       {
+        "text": "Permeability และตำแหน่งของ capillary แต่ละชนิด",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 1
+     },
+     {
+      "heading": "Fenestrated capillaries",
+      "pages": [
+       31,
+       31
+      ],
+      "tier": 2,
+      "years": [
+       52
+      ],
+      "summary": "มี fenestrations permeability สูง; ไต ลำไส้เล็ก ต่อมไร้ท่อ (filtration/absorption)",
+      "focus": [],
+      "role": "supporting",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 0
+     },
+     {
+      "heading": "Sinusoidal capillaries",
+      "pages": [
+       32,
+       32
+      ],
+      "tier": 2,
+      "years": [
+       52
+      ],
+      "summary": "ช่องใหญ่ permeable สุด ให้โปรตีน/เซลล์ผ่าน; liver, spleen, lymph node, bone marrow",
+      "focus": [],
+      "role": "supporting",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 0
+     },
+     {
+      "heading": "Starling's hypothesis",
+      "pages": [
+       33,
+       33
+      ],
+      "tier": 2,
+      "years": [
+       52
+      ],
+      "summary": "Net filtration = Kf[(Pc − Pi) − σ(πc − πi)]; filtration ที่ arteriolar end, reabsorption ที่ venular end, ส่วนเกินกลับทาง lymph (ออกคำนวณ net filtration)",
+      "focus": [
+       {
+        "text": "Starling forces",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 1
+     }
+    ],
+    "best_tier": 1,
+    "pages_total": 4,
+    "n_in_set": 1
+   },
+   {
+    "lecture": "CC2",
+    "topics": [
+     {
+      "heading": "AV block",
+      "pages": [
+       17,
+       17
+      ],
+      "tier": 1,
+      "years": [
+       50,
+       51,
+       52
+      ],
+      "summary": "1st-degree AVB: P–QRS 1:1 แต่ PR > 200 ms; 3rd-degree AVB: P และ QRS dissociation",
+      "focus": [
+       {
+        "text": "AV block types",
+        "years": [
+         50,
+         51
+        ]
+       },
+       {
+        "text": "1st-degree vs 3rd-degree AV block",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 3
+     },
+     {
+      "heading": "Precordial QRS formation",
+      "pages": [
+       20,
+       20
+      ],
+      "tier": 1,
+      "years": [
+       50,
+       51
+      ],
+      "summary": "(1) septal depolarization ซ้าย → ขวา: V1 r เล็ก V6 q เล็ก (2) LV lateral + RV free wall (ขวา → ซ้าย): V1 S ลึก V6 R สูง",
+      "focus": [
+       {
+        "text": "Precordial QRS formation",
+        "years": [
+         50,
+         51
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 2
+     },
+     {
+      "heading": "Pacemaker automaticity",
+      "pages": [
+       23,
+       23
+      ],
+      "tier": 2,
+      "years": [
+       50
+      ],
+      "summary": "SA node 60–100 bpm, AV node 40–60, Purkinje 20–40 (pacemaker hierarchy)",
+      "focus": [
+       {
+        "text": "Intrinsic rate: SA 60–100, AV 40–60, Purkinje 20–40",
+        "years": [
+         50
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 1
+     },
+     {
+      "heading": "Atrial fibrillation",
+      "pages": [
+       26,
+       26
+      ],
+      "tier": 2,
+      "years": [
+       52
+      ],
+      "summary": "RR ไม่สม่ำเสมอโดยสิ้นเชิง, ไม่มี P wave ชัด, มี fibrillation wave",
+      "focus": [
+       {
+        "text": "AF ECG",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 1
+     },
+     {
+      "heading": "Ventricular tachycardia",
+      "pages": [
+       27,
+       27
+      ],
+      "tier": 2,
+      "years": [
+       49
+      ],
+      "summary": "Wide QRS tachycardia สม่ำเสมอ (VT)",
+      "focus": [
+       {
+        "text": "Ventricular tachycardia",
+        "years": [
+         49
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 2
+     },
+     {
+      "heading": "Spectrum of ACS",
+      "pages": [
+       44,
+       44
+      ],
+      "tier": 1,
+      "years": [
+       49,
+       51,
+       52
+      ],
+      "summary": "Unstable angina: plaque rupture อุดบางส่วน ECG ปกติ/T inversion/ST depression troponin ปกติ; NSTEMI: subendocardial infarct ECG คล้าย UA troponin ↑; STEMI: อุดสมบูรณ์ transmural hyperacute T/ST elevation troponin ↑",
+      "focus": [
+       {
+        "text": "Occlusive thrombus → transmural (STEMI) vs non-occlusive → subendocardial (NSTE-ACS)",
+        "years": [
+         49
+        ]
+       },
+       {
+        "text": "ACS spectrum + ECG criteria",
+        "years": [
+         51
+        ]
+       },
+       {
+        "text": "UA/NSTEMI/STEMI และ ECG criteria ของ ischemia",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [
+       "CVS-51-KF-004"
+      ],
+      "in_set": true,
+      "n_all_years": 3
+     },
+     {
+      "heading": "UA/NSTEMI vs STEMI",
+      "pages": [
+       45,
+       45
+      ],
+      "tier": 1,
+      "years": [
+       49,
+       51,
+       52
+      ],
+      "summary": "UA/NSTEMI = non-occlusive thrombus → subendocardial infarct; STEMI = occlusive thrombus → transmural infarct",
+      "focus": [],
+      "role": "supporting",
+      "question_ids": [],
+      "in_set": true,
+      "n_all_years": 0
+     },
+     {
+      "heading": "ECG criteria of ischemia (universal definition)",
+      "pages": [
+       46,
+       46
+      ],
+      "tier": 1,
+      "years": [
+       51
+      ],
+      "summary": "ST elevation ใหม่ที่ J point ใน 2 contiguous leads ตาม cut-point; ST depression แนวนอน/ลาดลง ≥ 0.5 mm ใน 2 contiguous leads; T inversion > 1 mm ใน 2 contiguous leads ที่ R เด่น",
+      "focus": [
+       {
+        "text": "ECG criteria ของ ischemia/infarction",
+        "years": [
+         51
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": true,
+      "n_all_years": 1
+     },
+     {
+      "heading": "Evolution of STEMI",
+      "pages": [
+       51,
+       51
+      ],
+      "tier": 1,
+      "years": [
+       51,
+       52
+      ],
+      "summary": "Normal → hyperacute T + ST elevation (นาที) → R ลดลง Q เริ่ม (ชั่วโมง) → T inversion Q ลึก (1–2 วัน) → ST กลับปกติ T กลับหัว (วัน) → Q ค้างถาวร (สัปดาห์); ตาราง lead: I, aVL, V5–V6 lateral; II, III, aVF inferior; V1–V2 septal; V3–V4 anterior",
+      "focus": [
+       {
+        "text": "Lead territories + evolution of STEMI",
+        "years": [
+         51
+        ]
+       },
+       {
+        "text": "Pathological Q wave ใน evolution of STEMI (Q ≥ 25% ของ R)",
+        "years": [
+         51
+        ]
+       },
+       {
+        "text": "Lead territories: II, III, aVF inferior; V1–V4 anterior; I, aVL, V5–6 lateral",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [
+       "CVS-51-KF-004"
+      ],
+      "in_set": true,
+      "n_all_years": 3
+     },
+     {
+      "heading": "Coronary artery territories",
+      "pages": [
+       54,
+       54
+      ],
+      "tier": 2,
+      "years": [
+       52
+      ],
+      "summary": "RCA: SA node (60%), RV, AV node (>80%), inferior wall, posterior wall LV (75%); LAD: septum, anterior, lateral wall, RBB, left anterior fascicle; LCx: SA node 40%, AV node 20%, inferior, posterior, บางส่วนของ lateral",
+      "focus": [
+       {
+        "text": "Culprit artery: RCA/LAD/LCx territory",
+        "years": [
+         52
+        ]
+       },
+       {
+        "text": "Territory ของ RCA/LAD/LCx (posterior wall = RCA 75%)",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 2
+     },
+     {
+      "heading": "Acute inferior wall STEMI",
+      "pages": [
+       57,
+       57
+      ],
+      "tier": 2,
+      "years": [
+       51
+      ],
+      "summary": "ST elevation II, III, aVF (RCA) + reciprocal ST depression I, aVL",
+      "focus": [
+       {
+        "text": "Inferior STEMI: ST ↑ II, III, aVF (RCA)",
+        "years": [
+         51
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 1
+     },
+     {
+      "heading": "Inferior STEMI with RV infarction",
+      "pages": [
+       58,
+       58
+      ],
+      "tier": 2,
+      "years": [
+       49
+      ],
+      "summary": "ST elevation ใน V3R–V4R บ่ง RV infarction → hypotension, ห้ามให้ nitrate, ให้สารน้ำ (ออกสอบ: ต้องทำ right-sided leads)",
+      "focus": [
+       {
+        "text": "Inferior STEMI + RV infarction: V3R/V4R",
+        "years": [
+         49
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 1
+     },
+     {
+      "heading": "STEMI ECG and coronary artery",
+      "pages": [
+       64,
+       64
+      ],
+      "tier": 2,
+      "years": [
+       49,
+       51
+      ],
+      "summary": "RCA → inferior/posterior wall LV + posterior septum + RV; LAD → anterior wall + anterior septum; LCx → lateral wall",
+      "focus": [
+       {
+        "text": "STEMI ECG ↔ coronary artery (II, III, aVF = inferior = RCA)",
+        "years": [
+         49
+        ]
+       },
+       {
+        "text": "Culprit artery ตามผนัง",
+        "years": [
+         51
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 2
+     }
+    ],
+    "best_tier": 1,
+    "pages_total": 4,
+    "n_in_set": 1
+   },
+   {
+    "lecture": "CC4",
+    "topics": [
+     {
+      "heading": "Left- vs right-sided heart failure",
+      "pages": [
+       8,
+       8
+      ],
+      "tier": 1,
+      "years": [
+       51,
+       52
+      ],
+      "summary": "Left HF (ischemic CM, DCM, valvular): orthopnea, PND, pink frothy sputum; right HF (RV infarction, RV CM, pulmonary HT, จาก left HF): JVD, peripheral edema, ตับโต ascites, GI congestion (เบื่ออาหาร น้ำหนักลด)",
+      "focus": [
+       {
+        "text": "Left vs right HF",
+        "years": [
+         51
+        ]
+       },
+       {
+        "text": "Left HF: orthopnea, PND, S3",
+        "years": [
+         51
+        ]
+       },
+       {
+        "text": "Left vs right HF: orthopnea, PND, JVD, edema",
+        "years": [
+         52
+        ]
+       },
+       {
+        "text": "Left HF: orthopnea, PND, pink frothy sputum; right HF: JVD, edema, ascites",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [
+       "CVS-51-KF-005"
+      ],
+      "in_set": true,
+      "n_all_years": 4
+     },
+     {
+      "heading": "Typical symptoms and signs",
+      "pages": [
+       12,
+       12
+      ],
+      "tier": 1,
+      "years": [
+       51
+      ],
+      "summary": "Typical: DOE, orthopnea, PND, exercise tolerance ↓, fatigue, ข้อเท้าบวม; less typical: ไอกลางคืน, wheeze, bendopnea, confusion (ผู้สูงอายุ); signs: JVP ↑, hepatojugular reflux, S3, displaced apex, edema, crepitation, pleural effusion",
+      "focus": [
+       {
+        "text": "Typical signs: S3, crepitation",
+        "years": [
+         51
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 1
+     },
+     {
+      "heading": "Orthopnea and PND",
+      "pages": [
+       13,
+       13
+      ],
+      "tier": 1,
+      "years": [
+       52
+      ],
+      "summary": "Orthopnea: นอนหงายเลือดจากขาและ splanchnic กลับเข้าปอด → เหนื่อย ลุกนั่งดีขึ้น; PND: ตื่นหลังหลับ 1–2 ชั่วโมงเพราะเหนื่อย ดีขึ้นเมื่อลุกนั่ง",
+      "focus": [
+       {
+        "text": "กลไก orthopnea และ PND",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 1
+     },
+     {
+      "heading": "S3 gallop",
+      "pages": [
+       18,
+       18
+      ],
+      "tier": 2,
+      "years": [
+       51
+      ],
+      "summary": "ฟังด้วย bell ที่ apex ในท่านอนตะแคงซ้าย 30°",
+      "focus": [
+       {
+        "text": "การฟัง S3 gallop",
+        "years": [
+         51
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 1
+     },
+     {
+      "heading": "CXR in heart failure (ABCDE)",
+      "pages": [
+       22,
+       22
+      ],
+      "tier": 1,
+      "years": [
+       51,
+       52
+      ],
+      "summary": "A alveolar opacification, B bat-wing, C cardiomegaly, D diffuse interstitial thickening (Kerley lines) + diversion (cephalization), E effusion",
+      "focus": [
+       {
+        "text": "CXR ABCDE",
+        "years": [
+         51
+        ]
+       },
+       {
+        "text": "CXR ABCDE ของ HF",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [
+       "CVS-51-KF-005"
+      ],
+      "in_set": true,
+      "n_all_years": 3
+     },
+     {
+      "heading": "Classification of HF by LVEF",
+      "pages": [
+       26,
+       26
+      ],
+      "tier": 2,
+      "years": [
+       50
+      ],
+      "summary": "HFrEF ≤ 40%; HFmrEF 41–49% + filling pressure ↑; HFpEF ≥ 50% + filling pressure ↑; HFimpEF: เดิม ≤ 40% ปัจจุบัน > 40%",
+      "focus": [
+       {
+        "text": "HFrEF ≤ 40%, HFpEF ≥ 50%",
+        "years": [
+         50
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 1
+     },
+     {
+      "heading": "Acute HF: hemodynamic profiles",
+      "pages": [
+       29,
+       29
+      ],
+      "tier": 1,
+      "years": [
+       51
+      ],
+      "summary": "Congestion (wet): orthopnea, JVD, edema, HJR, ascites; hypoperfusion (cold): hypotension, PP แคบ, ปลายมือเท้าเย็น, สับสน, oliguria → warm-dry, warm-wet, cold-dry, cold-wet; precipitant CHAMP-IT: ACS, HT emergency, arrhythmia, mechanical, PE, infection, tamponade",
+      "focus": [
+       {
+        "text": "Hemodynamic profile + GDMT",
+        "years": [
+         51
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [
+       "CVS-51-KF-005"
+      ],
+      "in_set": true,
+      "n_all_years": 1
+     },
+     {
+      "heading": "Acute HF treatment by profile",
+      "pages": [
+       30,
+       30
+      ],
+      "tier": 1,
+      "years": [
+       49,
+       50,
+       51,
+       52
+      ],
+      "summary": "Warm-dry: ปรับ GDMT; warm-wet: diuretic + vasodilator; cold-dry: fluid challenge ± inotrope; cold-wet: inotrope + diuretic ± vasopressor, mechanical support",
+      "focus": [],
+      "role": "supporting",
+      "question_ids": [],
+      "in_set": true,
+      "n_all_years": 0
+     },
+     {
+      "heading": "Case management",
+      "pages": [
+       31,
+       31
+      ],
+      "tier": 1,
+      "years": [
+       49,
+       50,
+       51,
+       52
+      ],
+      "summary": "ผู้ป่วย warm-wet, LVEF 20% → HFrEF → diuretic",
+      "focus": [],
+      "role": "supporting",
+      "question_ids": [],
+      "in_set": true,
+      "n_all_years": 0
+     },
+     {
+      "heading": "GDMT by LVEF",
+      "pages": [
+       32,
+       32
+      ],
+      "tier": 1,
+      "years": [
+       49,
+       50,
+       52
+      ],
+      "summary": "HFrEF: ACEI/ARNI + β-blocker + MRA + SGLT2i (4 pillars) + loop diuretic สำหรับ fluid retention; HFpEF: SGLT2i + loop diuretic (ออกสอบ: GDMT, ยาที่ไม่ลด mortality)",
+      "focus": [
+       {
+        "text": "GDMT ที่ลด mortality vs ลดอาการ",
+        "years": [
+         49
+        ]
+       },
+       {
+        "text": "GDMT HFrEF; digoxin ไม่ลด mortality (ลดอาการเท่านั้น)",
+        "years": [
+         50
+        ]
+       },
+       {
+        "text": "GDMT HFrEF: ACEI/ARNI, β-blocker, MRA, SGLT2i + loop diuretic",
+        "years": [
+         52
+        ]
+       },
+       {
+        "text": "GDMT HFrEF 4 pillars: ACEI/ARNI, β-blocker, MRA, SGLT2i (ล่าสุด)",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": true,
+      "n_all_years": 4
+     },
+     {
+      "heading": "SGLT2 inhibitors in HFrEF",
+      "pages": [
+       33,
+       33
+      ],
+      "tier": 1,
+      "years": [
+       49,
+       50,
+       51,
+       52
+      ],
+      "summary": "Empagliflozin, dapagliflozin ลด mortality/hospitalization ใน HFrEF (ยาใหม่ล่าสุดในกลุ่ม GDMT)",
+      "focus": [],
+      "role": "supporting",
+      "question_ids": [],
+      "in_set": true,
+      "n_all_years": 0
+     }
+    ],
+    "best_tier": 1,
+    "pages_total": 7,
+    "n_in_set": 1
+   },
+   {
+    "lecture": "L13",
+    "topics": [
+     {
+      "heading": "Management: lifestyle modification",
+      "pages": [
+       9,
+       9
+      ],
+      "tier": 2,
+      "years": [
+       49,
+       52
+      ],
+      "summary": "งดบุหรี่, คุมน้ำหนัก, ออกกำลังกาย, alcohol ≤30 cc/d, ลดเครียด, Na ≤1–2 g/d, จำกัด caffeine, Ca/K/Mg เพียงพอ — ออก KF ทุกปี (บอก 4 ข้อ)",
+      "focus": [
+       {
+        "text": "Lifestyle modification: งดบุหรี่, น้ำหนัก, ออกกำลังกาย, alcohol, เกลือ",
+        "years": [
+         49
+        ]
+       },
+       {
+        "text": "Lifestyle modification",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 2
+     },
+     {
+      "heading": "Diuretics: thiazide mechanism",
+      "pages": [
+       14,
+       14
+      ],
+      "tier": 1,
+      "years": [
+       49,
+       50,
+       51
+      ],
+      "summary": "Thiazide ยับยั้ง Na+-Cl− symporter (DCT) → body Na ↓ → blood volume ↓ → VR ↓ → SV/CO ↓ → BP ↓; ระยะยาว direct vasodilation → PVR ↓ (ปัสสาวะมี Cl− ↑)",
+      "focus": [
+       {
+        "text": "Thiazide: block Na+/Cl− symporter ที่ DCT",
+        "years": [
+         49
+        ]
+       },
+       {
+        "text": "Thiazide: กลไก, ADR (hypoK, hyperuricemia, hyperglycemia), interaction",
+        "years": [
+         50
+        ]
+       },
+       {
+        "text": "Thiazide: Na-Cl symporter, ADR (hypoK, hyperuricemia, hyperglycemia, lipid), interaction",
+        "years": [
+         51
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [
+       "CVS-51-KF-006"
+      ],
+      "in_set": true,
+      "n_all_years": 3
+     },
+     {
+      "heading": "Types of diuretics",
+      "pages": [
+       15,
+       15
+      ],
+      "tier": 1,
+      "years": [
+       51
+      ],
+      "summary": "Thiazide: HCTZ, chlorthalidone, indapamide; loop: furosemide; K-sparing: spironolactone, amiloride, triamterene; thiazide = first line HT stage 1–2 และเสริมฤทธิ์ยาอื่น",
+      "focus": [
+       {
+        "text": "Thiazide = first line ทางเลือก",
+        "years": [
+         51
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": true,
+      "n_all_years": 1
+     },
+     {
+      "heading": "Diuretics: side effects",
+      "pages": [
+       16,
+       16
+      ],
+      "tier": 1,
+      "years": [
+       49,
+       50,
+       51,
+       52
+      ],
+      "summary": "Hypokalemia, hypomagnesemia (ตะคริว arrhythmia), metabolic alkalosis, hyperglycemia, hyperlipidemia, orthostatic hypotension, hyperuricemia (gout), impotence; ลดได้ด้วย low dose HCTZ 12.5–25 mg",
+      "focus": [],
+      "role": "supporting",
+      "question_ids": [],
+      "in_set": true,
+      "n_all_years": 0
+     },
+     {
+      "heading": "Diuretics: drug interactions",
+      "pages": [
+       17,
+       17
+      ],
+      "tier": 1,
+      "years": [
+       49,
+       50,
+       51,
+       52
+      ],
+      "summary": "ลดฤทธิ์ oral anticoagulant; digitalis toxicity (hypoK → arrhythmia); amphotericin B/corticosteroid → hypoK มากขึ้น; NSAIDs ลดฤทธิ์ thiazide",
+      "focus": [],
+      "role": "supporting",
+      "question_ids": [],
+      "in_set": true,
+      "n_all_years": 0
+     },
+     {
+      "heading": "Centrally acting sympatholytics: methyldopa",
+      "pages": [
+       18,
+       18
+      ],
+      "tier": 1,
+      "years": [
+       50,
+       52
+      ],
+      "summary": "Methyldopa → α-methylnorepinephrine กระตุ้น presynaptic α2 ใน brainstem → sympathetic outflow ↓ → PVR, HR, CO ↓; ใช้ HT ในหญิงตั้งครรภ์",
+      "focus": [
+       {
+        "text": "Methyldopa ใช้ได้ใน pregnancy",
+        "years": [
+         50
+        ]
+       },
+       {
+        "text": "HTN ในครรภ์: methyldopa (และ nifedipine, labetalol) ได้; ห้าม ACEI/ARB",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": true,
+      "n_all_years": 2
+     },
+     {
+      "heading": "β-blockers: preferred indications",
+      "pages": [
+       28,
+       28
+      ],
+      "tier": 2,
+      "years": [
+       49,
+       51
+      ],
+      "summary": "Negative chronotropic + inotropic; เลือกใช้ใน HT ร่วม CAD, post-MI, HF, AF, pregnancy",
+      "focus": [
+       {
+        "text": "β-blocker preferred indications: angina/IHD",
+        "years": [
+         49
+        ]
+       },
+       {
+        "text": "β-blocker เลือกใช้ใน HT ร่วม CAD/angina",
+        "years": [
+         51
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 2
+     },
+     {
+      "heading": "CCBs: dihydropyridines vs non-DHP",
+      "pages": [
+       34,
+       34
+      ],
+      "tier": 1,
+      "years": [
+       49
+      ],
+      "summary": "DHP (amlodipine, nifedipine, nicardipine): จับ L-type α1 subunit, vascular > myocardium → vasodilation; non-DHP (verapamil, diltiazem): myocardium > vessel → HR และ contractility ↓",
+      "focus": [
+       {
+        "text": "DHP CCB: isolated systolic HT",
+        "years": [
+         49
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 1
+     },
+     {
+      "heading": "CCBs: mechanisms of action",
+      "pages": [
+       35,
+       35
+      ],
+      "tier": 1,
+      "years": [
+       49,
+       51,
+       52
+      ],
+      "summary": "ภาพ L-type Ca channel ใน vascular smooth muscle และ cardiac myocyte ที่ยาแต่ละกลุ่มบล็อก",
+      "focus": [],
+      "role": "supporting",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 0
+     },
+     {
+      "heading": "CCBs: therapeutic use",
+      "pages": [
+       36,
+       36
+      ],
+      "tier": 1,
+      "years": [
+       51,
+       52
+      ],
+      "summary": "ใช้เดี่ยวหรือร่วม diuretic; (non-DHP ห้ามร่วม β-blocker); เป็นยาที่เลือกใน isolated systolic HT",
+      "focus": [
+       {
+        "text": "ISH: CCB/thiazide",
+        "years": [
+         51
+        ]
+       },
+       {
+        "text": "CCB (DHP) เป็นยาที่เลือกใน isolated systolic HT",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 2
+     },
+     {
+      "heading": "CCBs: comparative adverse effects",
+      "pages": [
+       37,
+       37
+      ],
+      "tier": 1,
+      "years": [
+       52
+      ],
+      "summary": "DHP: hypotension, headache, peripheral edema มากสุด (reflex tachycardia); verapamil: constipation, AV block, CHF แย่ลง, ระวังร่วม β-blocker; diltiazem อยู่กลาง",
+      "focus": [
+       {
+        "text": "DHP CCB ADR: peripheral edema, headache, flushing, reflex tachycardia",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 1
+     },
+     {
+      "heading": "ACE inhibitors: mechanism",
+      "pages": [
+       41,
+       41
+      ],
+      "tier": 1,
+      "years": [
+       49,
+       52
+      ],
+      "summary": "ลด Ang II → vasodilation; ลด aldosterone → Na/น้ำ ↓; เพิ่ม bradykinin → PVR ↓; first line HT stage 1–2 ที่มี DM, LVH, post-MI",
+      "focus": [
+       {
+        "text": "ACEI: กลไก (Ang II ↓, bradykinin ↑) และ adverse effects",
+        "years": [
+         49
+        ]
+       },
+       {
+        "text": "ACEI: กลไก (Ang II ↓, bradykinin ↑), ADR (ไอ, hyperK, angioedema), ข้อห้าม (pregnancy, bilateral RAS)",
+        "years": [
+         52
+        ]
+       },
+       {
+        "text": "ACEI/ARB first line ใน HT + DM (nephroprotection)",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 3
+     },
+     {
+      "heading": "ACE inhibitors: adverse effects",
+      "pages": [
+       42,
+       42
+      ],
+      "tier": 1,
+      "years": [
+       52
+      ],
+      "summary": "Hypotension, ไอแห้ง (bradykinin/substance P), hyperkalemia, acute renal failure, fetopathic (ไตรมาส 2–3), angioedema, rash, proteinuria, dysgeusia, neutropenia (captopril), hepatotoxicity",
+      "focus": [
+       {
+        "text": "ACEI ADR: ไอแห้ง (bradykinin), angioedema, hyperkalemia, fetotoxic",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 1
+     },
+     {
+      "heading": "ACEIs: contraindications",
+      "pages": [
+       43,
+       43
+      ],
+      "tier": 1,
+      "years": [
+       50,
+       51,
+       52
+      ],
+      "summary": "Pregnancy, เคย angioedema, bilateral renal artery stenosis, renal artery stenosis ในไตข้างเดียว",
+      "focus": [
+       {
+        "text": "ACEI (captopril) ห้ามใน pregnancy (fetotoxic)",
+        "years": [
+         50
+        ]
+       },
+       {
+        "text": "ACEI ข้อห้าม: pregnancy, angioedema, bilateral RAS",
+        "years": [
+         51
+        ]
+       },
+       {
+        "text": "ACEI/ARB ห้ามใน pregnancy",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 3
+     },
+     {
+      "heading": "Drug interactions with ACE inhibitors",
+      "pages": [
+       44,
+       44
+      ],
+      "tier": 1,
+      "years": [
+       49,
+       50,
+       51,
+       52
+      ],
+      "summary": "Antacids ลด bioavailability; capsaicin → ไอ; NSAIDs ลดฤทธิ์; K-sparing diuretics → hyperkalemia",
+      "focus": [],
+      "role": "supporting",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 0
+     },
+     {
+      "heading": "Angiotensin II receptor blockers",
+      "pages": [
+       45,
+       45
+      ],
+      "tier": 1,
+      "years": [
+       51,
+       52
+      ],
+      "summary": "Losartan, valsartan, candesartan, irbesartan, telmisartan; บล็อก AT1 → vasodilation, aldosterone ↓; ไม่กระทบ bradykinin; ใช้เดี่ยวใน HT stage 1–2",
+      "focus": [
+       {
+        "text": "ARB ไม่ทำให้ไอ",
+        "years": [
+         51
+        ]
+       },
+       {
+        "text": "ARB (valsartan) ใช้แทน ACEI",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 2
+     },
+     {
+      "heading": "ARBs: adverse effects",
+      "pages": [
+       46,
+       46
+      ],
+      "tier": 1,
+      "years": [
+       49,
+       50,
+       51,
+       52
+      ],
+      "summary": "ไม่ไอ, angioedema น้อยกว่า; ยังมี fetopathic, hypotension, ARF, hyperkalemia",
+      "focus": [],
+      "role": "supporting",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 0
+     },
+     {
+      "heading": "Drug treatment strategy for HTN",
+      "pages": [
+       52,
+       52
+      ],
+      "tier": 1,
+      "years": [
+       49,
+       51
+      ],
+      "summary": "First line: ACEI, ARB, DHP-CCB, thiazide; β-blocker เมื่อมีข้อบ่งชี้เฉพาะ (IHD, HF, AF, หญิงวัยเจริญพันธุ์/วางแผนตั้งครรภ์)",
+      "focus": [
+       {
+        "text": "Drug strategy ตามกลุ่มผู้ป่วย",
+        "years": [
+         49
+        ]
+       },
+       {
+        "text": "First-line drugs",
+        "years": [
+         51
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 2
+     },
+     {
+      "heading": "Compelling contraindications (1)",
+      "pages": [
+       53,
+       53
+      ],
+      "tier": 1,
+      "years": [
+       49
+      ],
+      "summary": "Thiazide: gout (possible: metabolic syndrome, glucose intolerance, pregnancy, hyperCa, hypoK); β-blocker: asthma, high-grade SA/AV block, HR < 60; DHP: tachyarrhythmia, HF, severe leg edema; verapamil/diltiazem: high-grade SA/AV block, severe LV dysfunction",
+      "focus": [
+       {
+        "text": "Compelling contraindications: β-blocker ใน asthma",
+        "years": [
+         49
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 1
+     },
+     {
+      "heading": "Compelling contraindications (2)",
+      "pages": [
+       54,
+       54
+      ],
+      "tier": 1,
+      "years": [
+       49,
+       51
+      ],
+      "summary": "ACEI: pregnancy, angioedema, hyperK, bilateral RAS (possible: หญิงวัยเจริญพันธุ์); ARB: เหมือนกัน; MRA: eGFR < 30, hyperK",
+      "focus": [
+       {
+        "text": "Compelling contraindications ของ ACEI: pregnancy, angioedema, hyperK, bilateral RAS",
+        "years": [
+         49
+        ]
+       },
+       {
+        "text": "ACEI/ARB ห้ามในครรภ์; methyldopa ใช้ได้",
+        "years": [
+         49
+        ]
+       },
+       {
+        "text": "เลือกยาตามโรคร่วม/ข้อห้าม (ACEI ไอ → ARB)",
+        "years": [
+         51
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 3
+     },
+     {
+      "heading": "Initial two-drug combination",
+      "pages": [
+       55,
+       55
+      ],
+      "tier": 1,
+      "years": [
+       49,
+       51,
+       52
+      ],
+      "summary": "เริ่มด้วย 2 ยาร่วมกัน (ยกเว้นคนชรา frail หรือ low risk grade 1); preferred: ACEI/ARB + CCB หรือ diuretic ใน single pill; ห้ามใช้ ACEI + ARB ร่วมกัน",
+      "focus": [
+       {
+        "text": "Initial two-drug combination (ACEI/ARB + thiazide)",
+        "years": [
+         49
+        ]
+       },
+       {
+        "text": "Combination: ACEI/ARB + CCB/thiazide",
+        "years": [
+         51
+        ]
+       },
+       {
+        "text": "Combination: RAS blocker + CCB หรือ thiazide; ห้าม ACEI + ARB",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 3
+     },
+     {
+      "heading": "Core treatment strategy for uncomplicated HTN",
+      "pages": [
+       56,
+       56
+      ],
+      "tier": 1,
+      "years": [
+       49,
+       51,
+       52
+      ],
+      "summary": "แผนภาพขั้นตอน: 2 ยา (RAS + CCB/diuretic) → 3 ยา (RAS + CCB + diuretic) → resistant HT เพิ่ม spironolactone",
+      "focus": [],
+      "role": "supporting",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 0
+     }
+    ],
+    "best_tier": 1,
+    "pages_total": 5,
+    "n_in_set": 1
+   },
+   {
+    "lecture": "CCX",
+    "topics": [
+     {
+      "heading": "Classification of cyanotic heart disease",
+      "pages": [
+       16,
+       16
+      ],
+      "tier": 2,
+      "years": [
+       50
+      ],
+      "summary": "PBF ↑: parallel circulation (TGA), mixing chamber (common atrium/ventricle); PBF ↓: RVOT obstruction (TOF)",
+      "focus": [
+       {
+        "text": "Cyanotic CHD: PBF ↑ vs ↓",
+        "years": [
+         50
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 1
+     },
+     {
+      "heading": "Cyanotic CHD: PBF and presentation",
+      "pages": [
+       17,
+       17
+      ],
+      "tier": 2,
+      "years": [
+       50
+      ],
+      "summary": "PBF ↑ → cyanosis + heart failure; PBF ↓ → cyanosis + spell",
+      "focus": [],
+      "role": "supporting",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 0
+     },
+     {
+      "heading": "Transposition of great arteries",
+      "pages": [
+       19,
+       19
+      ],
+      "tier": 1,
+      "years": [
+       50,
+       52
+      ],
+      "summary": "ชายมากกว่า; เขียวรุนแรงตั้งแต่แรกเกิด (sat < 70%, PaO2 < 30) ภายในชั่วโมงแรก–วันแรก; ไม่รักษาตาย 90% ใน 6 เดือน; single S2 ไม่มี murmur; HF; CXR egg-on-string แคบ mediastinum; ECG RVH",
+      "focus": [
+       {
+        "text": "TGA: parallel circulation → cyanosis รุนแรง",
+        "years": [
+         50
+        ]
+       },
+       {
+        "text": "TGA clinical + CXR egg on string",
+        "years": [
+         52
+        ]
+       },
+       {
+        "text": "TGA: parallel circulation; รอดได้จาก mixing (PFO/PDA) → balloon septostomy",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": true,
+      "n_all_years": 3
+     },
+     {
+      "heading": "TGA circulation and septostomy",
+      "pages": [
+       20,
+       20
+      ],
+      "tier": 1,
+      "years": [
+       50,
+       51,
+       52
+      ],
+      "summary": "Parallel circulation: VC → RA → RV → aorta, PV → LA → LV → PA; มีชีวิตรอดได้จาก mixing (PFO/ASD, PDA, VSD) → balloon atrial septostomy (cyanosis จากวงจรขนาน — ออกสอบ)",
+      "focus": [],
+      "role": "supporting",
+      "question_ids": [],
+      "in_set": true,
+      "n_all_years": 0
+     },
+     {
+      "heading": "Tetralogy of Fallot: anatomy",
+      "pages": [
+       21,
+       21
+      ],
+      "tier": 1,
+      "years": [
+       51,
+       52
+      ],
+      "summary": "RVOT obstruction, large malaligned VSD, overriding aorta, RVH; ความรุนแรงขึ้นกับ RVOT obstruction",
+      "focus": [
+       {
+        "text": "TOF: 4 ลักษณะ, SEM + single S2, boot-shaped",
+        "years": [
+         51
+        ]
+       },
+       {
+        "text": "TOF anatomy",
+        "years": [
+         51
+        ]
+       },
+       {
+        "text": "TOF anatomy + CXR",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [
+       "CVS-51-KF-007"
+      ],
+      "in_set": true,
+      "n_all_years": 3
+     },
+     {
+      "heading": "Tetralogy of Fallot: clinical",
+      "pages": [
+       22,
+       22
+      ],
+      "tier": 1,
+      "years": [
+       50,
+       51,
+       52
+      ],
+      "summary": "เขียวตั้งแต่เกิด 25%, ถึง 75% เมื่อ 1 ปี (แย่ลงตามเวลา); hypercyanotic spell, squatting; SEM (จาก RVOT ไม่ใช่ VSD) + single S2; ECG RVH; CXR boot-shaped",
+      "focus": [],
+      "role": "supporting",
+      "question_ids": [],
+      "in_set": true,
+      "n_all_years": 0
+     },
+     {
+      "heading": "TOF: spell triggers",
+      "pages": [
+       30,
+       30
+      ],
+      "tier": 1,
+      "years": [
+       50,
+       51,
+       52
+      ],
+      "summary": "Infundibular spasm (catecholamine, ร้องไห้ → PVR ↑), tachycardia, RV volume ↓ (ขาดน้ำ), SVR ↓ (ตื่นเช้า หลังนอน ไข้ ติดเชื้อ ยา) → R→L shunt ↑",
+      "focus": [
+       {
+        "text": "TOF: SVR ↓ → R→L shunt ↑ → cyanosis",
+        "years": [
+         50
+        ]
+       },
+       {
+        "text": "Hypoxic spell: triggers, pathophysiology, treatment (knee-chest, NE, morphine, O2)",
+        "years": [
+         51
+        ]
+       },
+       {
+        "text": "TOF: SVR ↓ → R→L shunt ↑ → cyanosis/spell",
+        "years": [
+         51
+        ]
+       },
+       {
+        "text": "Tet spell: infundibular spasm, SVR ↓ → รักษาด้วยเพิ่ม SVR (knee-chest, NE), O2, morphine",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [
+       "CVS-51-KF-007"
+      ],
+      "in_set": true,
+      "n_all_years": 4
+     },
+     {
+      "heading": "Hypoxic spell: pathophysiology",
+      "pages": [
+       31,
+       31
+      ],
+      "tier": 1,
+      "years": [
+       49
+      ],
+      "summary": "(1) infundibular spasm (2) SVR ↓ (3) RV volume ↓ → pulmonary blood flow ↓ (ออก KF: 3 กลไก)",
+      "focus": [
+       {
+        "text": "Hypoxic spell: pulmonary blood flow ↓ + การรักษา",
+        "years": [
+         49
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": true,
+      "n_all_years": 1
+     },
+     {
+      "heading": "Treatment of hypoxic spell",
+      "pages": [
+       32,
+       32
+      ],
+      "tier": 1,
+      "years": [
+       50
+      ],
+      "summary": "SVR ↑: knee-chest position, norepinephrine (Levophed); ลด infundibular spasm: ปลอบให้สงบ, morphine/ketamine, bicarbonate; volume load; O2 100% (ออกสอบ: knee-chest เพิ่ม SVR)",
+      "focus": [
+       {
+        "text": "Tet spell: เพิ่ม SVR (knee-chest, norepinephrine)",
+        "years": [
+         50
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": true,
+      "n_all_years": 1
+     }
+    ],
+    "best_tier": 1,
+    "pages_total": 7,
+    "n_in_set": 1
+   },
+   {
+    "lecture": "L14",
+    "topics": [
+     {
+      "heading": "Edema and effusion: causes",
+      "pages": [
+       5,
+       5
+      ],
+      "tier": 1,
+      "years": [
+       49,
+       50,
+       51,
+       52
+      ],
+      "summary": "แรงที่คุมน้ำข้าม capillary: hydrostatic, colloid osmotic pressure, lymphatic drainage; สาเหตุ edema 5 ข้อ: hydrostatic ↑, plasma oncotic ↓, lymphatic obstruction, vascular permeability ↑, Na/water retention — ออกทุกปี (Starling forces)",
+      "focus": [
+       {
+        "text": "Starling forces และสาเหตุ edema",
+        "years": [
+         49
+        ]
+       },
+       {
+        "text": "Edema causes: lymphatic obstruction",
+        "years": [
+         49
+        ]
+       },
+       {
+        "text": "กลไก edema: Pc ↑, πc ↓, permeability, lymph",
+        "years": [
+         49
+        ]
+       },
+       {
+        "text": "Edema mechanisms: lymphatic obstruction",
+        "years": [
+         50
+        ]
+       },
+       {
+        "text": "Edema: lymphatic obstruction",
+        "years": [
+         51
+        ]
+       },
+       {
+        "text": "สาเหตุ edema: lymphatic obstruction (หลัง axillary dissection) ฯลฯ",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 6
+     },
+     {
+      "heading": "Edema: reduced plasma oncotic pressure",
+      "pages": [
+       6,
+       6
+      ],
+      "tier": 1,
+      "years": [
+       49,
+       50,
+       51,
+       52
+      ],
+      "summary": "Albumin ≈ ครึ่งหนึ่งของ plasma protein → การสร้างน้อย (liver failure, malnutrition) หรือเสียมาก (nephrotic) ทำให้ oncotic pressure ↓ → edema",
+      "focus": [],
+      "role": "supporting",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 0
+     },
+     {
+      "heading": "Edema: systemic mechanisms",
+      "pages": [
+       7,
+       7
+      ],
+      "tier": 1,
+      "years": [
+       49,
+       50,
+       51,
+       52
+      ],
+      "summary": "แผนภาพกลไก systemic edema ใน heart failure (venous pressure ↑ + RAAS), renal failure, malnutrition, hepatic failure, nephrotic syndrome",
+      "focus": [],
+      "role": "supporting",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 0
+     },
+     {
+      "heading": "Pulmonary embolism",
+      "pages": [
+       17,
+       17
+      ],
+      "tier": 2,
+      "years": [
+       52
+      ],
+      "summary": "PE ส่วนใหญ่มาจาก DVT; 60–80% ไม่มีอาการ; ก้อนใหญ่ → sudden death, acute right HF, saddle embolus ที่ bifurcation; ก้อนผ่าน ASD/VSD → paradoxical embolism",
+      "focus": [
+       {
+        "text": "PE จาก DVT; ผ่าน ASD/VSD → paradoxical embolism ไป systemic",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 1
+     },
+     {
+      "heading": "Sequential progression of coronary artery lesions",
+      "pages": [
+       30,
+       30
+      ],
+      "tier": 1,
+      "years": [
+       49,
+       50,
+       52
+      ],
+      "summary": "Plaque <70% → asymptomatic; >70% (critical stenosis) → stable angina; plaque disruption (thin cap, lipid core ↑, inflammation) → mural thrombus = unstable angina/subendocardial MI, occlusive thrombus = transmural MI/sudden death (ACS)",
+      "focus": [
+       {
+        "text": "Plaque disruption → MI; patterns of infarction ตาม coronary artery",
+        "years": [
+         49
+        ]
+       },
+       {
+        "text": "Plaque disruption → ACS",
+        "years": [
+         50,
+         52
+        ]
+       },
+       {
+        "text": "Plaque disruption → thrombus → ACS",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 4
+     },
+     {
+      "heading": "Myocardial infarction",
+      "pages": [
+       31,
+       31
+      ],
+      "tier": 1,
+      "years": [
+       49,
+       50,
+       51,
+       52
+      ],
+      "summary": "MI = myocyte necrosis จาก ischemia; ส่วนใหญ่จาก acute thrombosis บน atherosclerotic plaque ที่แตก",
+      "focus": [],
+      "role": "supporting",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 0
+     },
+     {
+      "heading": "Patterns of infarction",
+      "pages": [
+       32,
+       32
+      ],
+      "tier": 1,
+      "years": [
+       49,
+       50,
+       51,
+       52
+      ],
+      "summary": "Transmural: LAD → anterior wall + septum; LCx → lateral wall; RCA → posterior/inferior wall + posterior septum; non-transmural: reperfusion → regional subendocardial, global hypotension → circumferential subendocardial, small vessel → microinfarcts",
+      "focus": [],
+      "role": "supporting",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 0
+     },
+     {
+      "heading": "MI: gross and microscopic",
+      "pages": [
+       33,
+       33
+      ],
+      "tier": 1,
+      "years": [
+       50,
+       51,
+       52
+      ],
+      "summary": "Acute anterior wall MI ขนาดใหญ่มีเลือดออก; histology: necrosis + contraction bands (reperfusion)",
+      "focus": [
+       {
+        "text": "Gross MI",
+        "years": [
+         50,
+         51
+        ]
+       },
+       {
+        "text": "Gross MI (hemorrhagic, mottling)",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 3
+     },
+     {
+      "heading": "Evolution of morphologic changes in MI",
+      "pages": [
+       34,
+       34
+      ],
+      "tier": 1,
+      "years": [
+       51,
+       52
+      ],
+      "summary": "ตาราง gross/LM/EM ตามเวลา: 0–½ h reversible; ½–4 h wavy fibers; 4–12 h early coagulative necrosis; 12–24 h dark mottling, contraction band, early neutrophils; 1–3 d coagulative necrosis + brisk neutrophils (yellow-tan); 3–7 d macrophages; 7–10 d yellow-tan soft, granulation เริ่ม; 10–14 d granulation tissue; 2–8 wk collagen; >2 mo scar",
+      "focus": [
+       {
+        "text": "MI histology timeline",
+        "years": [
+         51
+        ]
+       },
+       {
+        "text": "MI timeline: wavy fibers, coagulative necrosis, neutrophils 1–3 d, macrophages, granulation, scar",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 2
+     },
+     {
+      "heading": "Evolution of MI: histology",
+      "pages": [
+       35,
+       35
+      ],
+      "tier": 1,
+      "years": [
+       49,
+       50,
+       51,
+       52
+      ],
+      "summary": "ภาพ: 12 h–1 d coagulative necrosis + wavy fibers; 3–4 d neutrophils; 7–10 d phagocytosis โดย macrophage; 2 wk collagen deposition — ออก OSPE ทุกปี",
+      "focus": [],
+      "role": "supporting",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 0
+     },
+     {
+      "heading": "Cardiac biomarker for diagnosis of MI",
+      "pages": [
+       36,
+       36
+      ],
+      "tier": 1,
+      "years": [
+       49
+      ],
+      "summary": "Troponin หลุดจาก myofilament เมื่อเยื่อหุ้มเซลล์รั่ว; กราฟ: myoglobin ขึ้นเร็วสุดลงเร็ว (~1 วัน), CK-MB peak ~ 20 h กลับปกติ 2–3 วัน, troponin I สูงสุดและค้างนานสุด (ใช้ดู late MI; re-infarction ใช้ CK-MB)",
+      "focus": [
+       {
+        "text": "Biomarker curves: myoglobin, CK-MB, troponin",
+        "years": [
+         49
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 1
+     },
+     {
+      "heading": "Complications of MI",
+      "pages": [
+       37,
+       37
+      ],
+      "tier": 1,
+      "years": [
+       50,
+       51,
+       52
+      ],
+      "summary": "Arrhythmia (VF → sudden death), contractile dysfunction (hypotension, pulmonary edema), myocardial rupture (1–5%), papillary muscle rupture, pericarditis (fibrinous), chamber dilation, mural thrombus, ventricular aneurysm, progressive HF",
+      "focus": [
+       {
+        "text": "MI complications",
+        "years": [
+         50
+        ]
+       },
+       {
+        "text": "MI complication: VF เป็นสาเหตุ sudden death",
+        "years": [
+         51
+        ]
+       },
+       {
+        "text": "MI complications (rupture, aneurysm)",
+        "years": [
+         51
+        ]
+       },
+       {
+        "text": "Complications of MI: arrhythmia (VF → sudden death) พบบ่อยและเร็วสุด, rupture, papillary muscle, pericarditis",
+        "years": [
+         52
+        ]
+       },
+       {
+        "text": "Complications of MI (rupture, aneurysm, mural thrombus)",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 5
+     },
+     {
+      "heading": "Rheumatic fever and rheumatic heart disease",
+      "pages": [
+       42,
+       42
+      ],
+      "tier": 1,
+      "years": [
+       50
+      ],
+      "summary": "RF = immune-mediated multisystem inflammation หลัง group A strep pharyngitis ไม่กี่สัปดาห์; acute rheumatic carditis → chronic RHD; ผลสำคัญสุด = valvular deformity โดยเฉพาะ mitral stenosis",
+      "focus": [
+       {
+        "text": "Rheumatic fever → chronic RHD (mitral stenosis, fish-mouth, commissural fusion), Aschoff body",
+        "years": [
+         50
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": true,
+      "n_all_years": 1
+     },
+     {
+      "heading": "Pathogenesis of rheumatic fever",
+      "pages": [
+       43,
+       43
+      ],
+      "tier": 1,
+      "years": [
+       52
+      ],
+      "summary": "Antibody/T cell ต่อ streptococcal antigen (M protein) cross-react กับโปรตีนของหัวใจ = molecular mimicry (type II hypersensitivity)",
+      "focus": [
+       {
+        "text": "RF = molecular mimicry (type II hypersensitivity) ต่อ group A strep M protein",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": true,
+      "n_all_years": 1
+     },
+     {
+      "heading": "Clinical features of RF: Jones criteria",
+      "pages": [
+       44,
+       44
+      ],
+      "tier": 1,
+      "years": [
+       52
+      ],
+      "summary": "เกิด 10 วัน–6 สัปดาห์หลัง strep (~3%); Revised Jones: หลักฐาน strep + 2 major หรือ 1 major + 2 minor; major: carditis, polyarthritis, chorea, erythema marginatum, subcutaneous nodules; minor: fever, arthralgia, ESR/CRP ↑, prolonged PR (ช่วยจำ: ไข้ ข้อ คอ คา คิว ผิวแดง)",
+      "focus": [
+       {
+        "text": "Jones criteria major: carditis, polyarthritis, chorea, erythema marginatum, subcutaneous nodules",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": true,
+      "n_all_years": 1
+     },
+     {
+      "heading": "Acute rheumatic carditis",
+      "pages": [
+       45,
+       45
+      ],
+      "tier": 1,
+      "years": [
+       50,
+       51,
+       52
+      ],
+      "summary": "Vegetations เล็กๆ (verrucae) ตามแนวปิดของลิ้น; Aschoff bodies = T lymphocytes, plasma cells, Anitschkow cells (caterpillar cells) — ออก OSPE/KF",
+      "focus": [
+       {
+        "text": "Rheumatic: verrucous vegetation เล็กตามแนวปิดลิ้น",
+        "years": [
+         50
+        ]
+       },
+       {
+        "text": "Aschoff body, Anitschkow cells",
+        "years": [
+         51
+        ]
+       },
+       {
+        "text": "Aschoff body + Anitschkow cells",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": true,
+      "n_all_years": 3
+     },
+     {
+      "heading": "Chronic rheumatic heart disease",
+      "pages": [
+       46,
+       46
+      ],
+      "tier": 1,
+      "years": [
+       49,
+       50,
+       51,
+       52
+      ],
+      "summary": "Mitral stenosis: ลิ้นหนา fibrosis, commissural fusion, chordae หนาสั้น (fish-mouth); rheumatic aortic stenosis: cusp หนา commissure ติดกัน",
+      "focus": [],
+      "role": "supporting",
+      "question_ids": [],
+      "in_set": true,
+      "n_all_years": 0
+     },
+     {
+      "heading": "Infective endocarditis",
+      "pages": [
+       47,
+       47
+      ],
+      "tier": 1,
+      "years": [
+       50,
+       51,
+       52
+      ],
+      "summary": "การติดเชื้อที่ลิ้นหรือ mural endocardium → vegetation (thrombus + เชื้อ) ทำลายเนื้อเยื่อ; เชื้อเข้ากระแสเลือดจาก dental/surgical procedure, IV drug use, gut/oral source; ป้องกันด้วย antibiotic prophylaxis",
+      "focus": [
+       {
+        "text": "IE: organism, risk, stigmata, Duke criteria, complications",
+        "years": [
+         50
+        ]
+       },
+       {
+        "text": "IE: organism, risk, stigmata (splinter, Osler, Janeway, Roth)",
+        "years": [
+         51
+        ]
+       },
+       {
+        "text": "IE: organism (viridans subacute, S. aureus acute), stigmata (splinter, Osler, Janeway, Roth)",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [
+       "CVS-51-KF-008"
+      ],
+      "in_set": true,
+      "n_all_years": 3
+     },
+     {
+      "heading": "IE: risk and causative organisms",
+      "pages": [
+       48,
+       48
+      ],
+      "tier": 1,
+      "years": [
+       49,
+       50
+      ],
+      "summary": "ความเสี่ยง: valvular disease, prosthetic valve, CHD; เชื้อ: Strep viridans 50–60% (ลิ้นเดิมเสีย, subacute), S. aureus 20–30% (ลิ้นปกติ, IVDU, acute), enterococci, HACEK; prosthetic valve: S. aureus, S. epidermidis; culture negative 10%",
+      "focus": [
+       {
+        "text": "IE: risk, causative organisms, peripheral stigmata (splinter, Osler, Janeway, Roth)",
+        "years": [
+         49
+        ]
+       },
+       {
+        "text": "IE organisms: prosthetic valve = S. aureus, S. epidermidis",
+        "years": [
+         49
+        ]
+       },
+       {
+        "text": "S. aureus เป็นเชื้อของ IE (acute) ไม่ใช่ myocarditis ทั่วไป",
+        "years": [
+         50
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": true,
+      "n_all_years": 3
+     },
+     {
+      "heading": "Clinical features of IE",
+      "pages": [
+       49,
+       49
+      ],
+      "tier": 1,
+      "years": [
+       49,
+       50,
+       51,
+       52
+      ],
+      "summary": "Acute IE: ไข้สูง หนาวสั่น murmur; subacute IE: ไข้นาน อ่อนเพลีย น้ำหนักลด murmur, petechiae, splinter (subungual) hemorrhage, Roth spots",
+      "focus": [],
+      "role": "supporting",
+      "question_ids": [],
+      "in_set": true,
+      "n_all_years": 0
+     },
+     {
+      "heading": "IE: peripheral stigmata",
+      "pages": [
+       50,
+       50
+      ],
+      "tier": 1,
+      "years": [
+       49,
+       50,
+       51,
+       52
+      ],
+      "summary": "ภาพ stigmata ของ IE (เช่น splinter hemorrhage, Janeway lesion, Osler node, Roth spot) — ออก KF ทุกปีตั้งแต่ 49",
+      "focus": [],
+      "role": "supporting",
+      "question_ids": [],
+      "in_set": true,
+      "n_all_years": 0
+     },
+     {
+      "heading": "Diagnosis of IE: modified Duke criteria",
+      "pages": [
+       51,
+       51
+      ],
+      "tier": 1,
+      "years": [
+       52
+      ],
+      "summary": "Modified Duke criteria ใช้ predisposition, clinical findings, blood culture, imaging (echo) และ lab",
+      "focus": [
+       {
+        "text": "Modified Duke criteria และ complications ของ IE",
+        "years": [
+         52
+        ]
+       },
+       {
+        "text": "Modified Duke criteria: blood culture + echo เป็น major criteria",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": true,
+      "n_all_years": 2
+     },
+     {
+      "heading": "Diagnosis of IE",
+      "pages": [
+       52,
+       52
+      ],
+      "tier": 1,
+      "years": [
+       49,
+       50,
+       51,
+       52
+      ],
+      "summary": "ตาราง major/minor criteria ของ modified Duke",
+      "focus": [],
+      "role": "supporting",
+      "question_ids": [],
+      "in_set": true,
+      "n_all_years": 0
+     },
+     {
+      "heading": "IE: pathology",
+      "pages": [
+       53,
+       53
+      ],
+      "tier": 1,
+      "years": [
+       50
+      ],
+      "summary": "Vegetation เปราะ ใหญ่ ทำลายลิ้น; ring abscess",
+      "focus": [
+       {
+        "text": "IE: vegetation ใหญ่ เปราะ ทำลายลิ้น",
+        "years": [
+         50
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": true,
+      "n_all_years": 1
+     },
+     {
+      "heading": "IE: pathology images",
+      "pages": [
+       54,
+       54
+      ],
+      "tier": 1,
+      "years": [
+       49,
+       50,
+       51,
+       52
+      ],
+      "summary": "ภาพ gross/histology ของ IE",
+      "focus": [],
+      "role": "supporting",
+      "question_ids": [],
+      "in_set": true,
+      "n_all_years": 0
+     },
+     {
+      "heading": "Complications of IE",
+      "pages": [
+       55,
+       55
+      ],
+      "tier": 1,
+      "years": [
+       49,
+       51
+      ],
+      "summary": "หัวใจ: HF, valve insufficiency/stenosis, ring abscess + perforation, suppurative pericarditis; emboli: vegetation ซ้าย → brain/spleen/kidney abscess, vegetation ขวา → lung abscess",
+      "focus": [
+       {
+        "text": "Complications ของ IE: HF, valve insufficiency, abscess, emboli",
+        "years": [
+         49
+        ]
+       },
+       {
+        "text": "Complications ของ IE",
+        "years": [
+         51
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [
+       "CVS-51-KF-008"
+      ],
+      "in_set": true,
+      "n_all_years": 2
+     },
+     {
+      "heading": "Myocarditis",
+      "pages": [
+       56,
+       56
+      ],
+      "tier": 1,
+      "years": [
+       50,
+       52
+      ],
+      "summary": "การอักเสบของกล้ามเนื้อหัวใจจากเชื้อหรือ inflammation; ไวรัสพบบ่อยสุด (Coxsackie A/B, enterovirus); อาการตั้งแต่ไม่มี → arrhythmia, CHF, ไข้ เหนื่อย ใจสั่น",
+      "focus": [
+       {
+        "text": "Myocarditis: viral (Coxsackie) พบบ่อยสุด; histology",
+        "years": [
+         50
+        ]
+       },
+       {
+        "text": "Myocarditis ส่วนใหญ่จาก Coxsackievirus; lymphocytic infiltrate",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": true,
+      "n_all_years": 2
+     },
+     {
+      "heading": "Myocarditis: histology",
+      "pages": [
+       57,
+       57
+      ],
+      "tier": 1,
+      "years": [
+       51
+      ],
+      "summary": "Viral: lymphocytic infiltrate กระจาย; hypersensitivity: eosinophils + mononuclear cells",
+      "focus": [
+       {
+        "text": "Myocarditis histology (lymphocytic) เทียบ MI",
+        "years": [
+         51
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": true,
+      "n_all_years": 1
+     },
+     {
+      "heading": "Vascular pathology in hypertension",
+      "pages": [
+       67,
+       67
+      ],
+      "tier": 2,
+      "years": [
+       50
+      ],
+      "summary": "Hyaline arteriolosclerosis (ผนังหนาสีชมพูเนียน — HT ไม่รุนแรง/DM) vs hyperplastic arteriolosclerosis (onion-skin, SMC — malignant HT)",
+      "focus": [
+       {
+        "text": "Vascular pathology in hypertension (arteriolosclerosis)",
+        "years": [
+         50
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 1
+     },
+     {
+      "heading": "Aneurysm and dissection",
+      "pages": [
+       74,
+       74
+      ],
+      "tier": 1,
+      "years": [
+       49,
+       50,
+       51,
+       52
+      ],
+      "summary": "Aneurysm = การโป่งของหลอดเลือดทุกชั้น (true); dissection = เลือดแทรกแยกชั้น media เป็นช่องเลือด",
+      "focus": [
+       {
+        "text": "AAA และ rupture",
+        "years": [
+         49
+        ]
+       },
+       {
+        "text": "Aneurysm: AAA (atherosclerosis), TAA (HT)",
+        "years": [
+         50
+        ]
+       },
+       {
+        "text": "Aneurysm definition + AAA (atherosclerosis)",
+        "years": [
+         51
+        ]
+       },
+       {
+        "text": "Aneurysm (AAA, TAA) และ aortic dissection",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 4
+     },
+     {
+      "heading": "Abdominal aortic aneurysm",
+      "pages": [
+       75,
+       75
+      ],
+      "tier": 1,
+      "years": [
+       49,
+       50,
+       51,
+       52
+      ],
+      "summary": "จาก atherosclerosis มัก abdominal aorta + common iliac; มักคลำได้ก้อนเต้น; rupture → ปวดท้อง เลือดออกถึงตาย; อุดตันแขนง, emboli, กดอวัยวะข้างเคียง; risk rupture ตามขนาด",
+      "focus": [],
+      "role": "supporting",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 0
+     },
+     {
+      "heading": "Thoracic aortic aneurysm",
+      "pages": [
+       76,
+       76
+      ],
+      "tier": 1,
+      "years": [
+       49,
+       50,
+       51,
+       52
+      ],
+      "summary": "สัมพันธ์ HT; อาการจากการกด: ปวดอก (กร่อนกระดูก), ischemia (กด coronary), กลืนลำบาก (esophagus), เสียงแหบ (recurrent laryngeal n.), หายใจ (bronchi)",
+      "focus": [],
+      "role": "supporting",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 0
+     },
+     {
+      "heading": "Aortic dissection",
+      "pages": [
+       77,
+       77
+      ],
+      "tier": 1,
+      "years": [
+       52
+      ],
+      "summary": "2 กลุ่ม: ชาย 40–60 ปี + HT (>90%) และคนอายุน้อยที่มี Marfan; HT = risk หลัก; อาการ: เจ็บหน้าอกฉับพลันร้าวไปหลัง; ตายจาก rupture",
+      "focus": [
+       {
+        "text": "Aortic dissection: HT/Marfan, เจ็บอกฉับพลันร้าวหลัง",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 1
+     },
+     {
+      "heading": "Aortic dissection: pathology",
+      "pages": [
+       78,
+       78
+      ],
+      "tier": 1,
+      "years": [
+       49,
+       50,
+       51,
+       52
+      ],
+      "summary": "ภาพ gross/histology ของ dissection (false lumen ใน media) และ classification",
+      "focus": [],
+      "role": "supporting",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 0
+     },
+     {
+      "heading": "Varicose veins",
+      "pages": [
+       82,
+       82
+      ],
+      "tier": 2,
+      "years": [
+       52
+      ],
+      "summary": "หลอดเลือดดำโป่งคดเคี้ยวจาก intraluminal pressure ↑ นาน + venous valve incompetence; มักขา เพราะยืนนานความดันสูงได้ถึง 10 เท่า",
+      "focus": [
+       {
+        "text": "Varicose veins: valve incompetence",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 1
+     },
+     {
+      "heading": "Varicose veins: clinical features",
+      "pages": [
+       83,
+       83
+      ],
+      "tier": 2,
+      "years": [
+       52
+      ],
+      "summary": "Stasis, congestion, edema, ปวด, thrombosis; tissue ischemia, ulcer, แผลหายช้า, ติดเชื้อซ้ำ",
+      "focus": [],
+      "role": "supporting",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 0
+     }
+    ],
+    "best_tier": 1,
+    "pages_total": 16,
+    "n_in_set": 1
+   },
+   {
+    "lecture": "L16",
+    "topics": [
+     {
+      "heading": "Clinical significance of CK-MB: relative index",
+      "pages": [
+       12,
+       12
+      ],
+      "tier": 1,
+      "years": [
+       51,
+       52
+      ],
+      "summary": "RI = CK-MB mass/total CK × 100: < 3% = skeletal muscle, 3–5% gray zone, > 5% = myocardial damage (ใช้เมื่อ total CK และ CK-MB สูงทั้งคู่); sensitivity: 2–8 h 60%, 8–24 h 95%, 24–72 h 75%, > 72 h 50%; ไม่ดีสำหรับ < 6 h และ late MI > 72 h",
+      "focus": [
+       {
+        "text": "Relative index CK-MB/total CK > 5% → myocardial",
+        "years": [
+         51
+        ]
+       },
+       {
+        "text": "CK-MB relative index = CK-MB/total CK × 100: > 5% = myocardial damage",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 2
+     },
+     {
+      "heading": "CK-MB for re-infarction",
+      "pages": [
+       13,
+       13
+      ],
+      "tier": 1,
+      "years": [
+       49
+      ],
+      "summary": "CK-MB ลดลงเร็ว (2–3 วัน) จึงใช้ตรวจ re-infarction ได้ (troponin ยังสูงอยู่)",
+      "focus": [
+       {
+        "text": "CK-MB ลดลงเร็ว ใช้ดู re-infarction",
+        "years": [
+         49
+        ]
+       },
+       {
+        "text": "CK-MB ลดเร็ว → ใช้ดู re-infarction",
+        "years": [
+         49
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 2
+     },
+     {
+      "heading": "Troponin complex",
+      "pages": [
+       16,
+       16
+      ],
+      "tier": 1,
+      "years": [
+       52
+      ],
+      "summary": "TnT, TnI, TnC คุม actin–myosin; แต่ละตัวมี 3 isoforms (cardiac, slow, fast skeletal); cTnT และ cTnI ลำดับกรดอะมิโนต่างจาก skeletal → cardiospecific",
+      "focus": [
+       {
+        "text": "Cardiac troponin I/T = biomarker จำเพาะสุด ค้าง 7–10 วัน",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": true,
+      "n_all_years": 1
+     },
+     {
+      "heading": "Cardiac troponins",
+      "pages": [
+       17,
+       17
+      ],
+      "tier": 1,
+      "years": [
+       49,
+       51,
+       52
+      ],
+      "summary": "94–97% จับ tropomyosin; cTnT ~34 kDa free 6–8%; cTnI ~24 kDa free 2–4% (ปล่อยแบบ I-C complex)",
+      "focus": [],
+      "role": "supporting",
+      "question_ids": [],
+      "in_set": true,
+      "n_all_years": 0
+     },
+     {
+      "heading": "Rise and fall pattern of cTn",
+      "pages": [
+       18,
+       18
+      ],
+      "tier": 1,
+      "years": [
+       49,
+       51,
+       52
+      ],
+      "summary": "ขึ้น 4–8 h peak 12–48 h กลับปกติ 6–10 วัน (cTnI 5–7, cTnT 6–14 วัน); sensitivity 2–8 h 55–65% (hs 75–80%), > 8 h 95–98% → ใช้ได้ทั้ง early และ late MI",
+      "focus": [
+       {
+        "text": "Rise and fall pattern ของ cTn",
+        "years": [
+         49
+        ]
+       },
+       {
+        "text": "Troponin kinetics",
+        "years": [
+         51,
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [
+       "CVS-51-KF-009"
+      ],
+      "in_set": true,
+      "n_all_years": 3
+     },
+     {
+      "heading": "Clinical significance of cTn",
+      "pages": [
+       20,
+       20
+      ],
+      "tier": 2,
+      "years": [
+       52
+      ],
+      "summary": "Gold standard biomarker (specific + sensitive สูง); ตรวจ MI เล็กได้ ประเมินขนาด infarct",
+      "focus": [
+       {
+        "text": "Troponin = gold standard",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 1
+     },
+     {
+      "heading": "Fourth universal definition of MI",
+      "pages": [
+       28,
+       28
+      ],
+      "tier": 1,
+      "years": [
+       49,
+       52
+      ],
+      "summary": "Myocardial injury = cTn > 99th percentile URL; acute MI = injury + rise/fall + clinical ischemia อย่างน้อย 1: อาการ, ECG ใหม่, pathological Q, imaging, thrombus",
+      "focus": [
+       {
+        "text": "Fourth universal definition of MI",
+        "years": [
+         49
+        ]
+       },
+       {
+        "text": "4th universal definition: > 99th URL + rise/fall",
+        "years": [
+         49
+        ]
+       },
+       {
+        "text": "Fourth universal definition of MI และ ESC hs-cTn 0/1 h, 0/3 h algorithm",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": true,
+      "n_all_years": 3
+     },
+     {
+      "heading": "Algorithm overview",
+      "pages": [
+       29,
+       29
+      ],
+      "tier": 1,
+      "years": [
+       49,
+       51,
+       52
+      ],
+      "summary": "ESC guideline 2020: 0/1 h algorithm (hs-cTn) แนะนำ; 0/2 h เป็นทางเลือก; 0/3 h เมื่อไม่มีทางอื่น; แบ่ง rule-out / observe / rule-in",
+      "focus": [],
+      "role": "supporting",
+      "question_ids": [],
+      "in_set": true,
+      "n_all_years": 0
+     },
+     {
+      "heading": "ESC 0/3-hour algorithm",
+      "pages": [
+       30,
+       30
+      ],
+      "tier": 1,
+      "years": [
+       51,
+       52
+      ],
+      "summary": "Rule-in เมื่อ Δ (rise) ≥ 50% URL หรือ > 5×URL; rule-out เมื่อ Δ < 20% ของค่าแรก/ปกติ (ใช้แปลผล troponin ผู้ป่วยหลายคน — ออก KF)",
+      "focus": [
+       {
+        "text": "ESC 0/3 h, 0/1 h algorithm",
+        "years": [
+         51
+        ]
+       },
+       {
+        "text": "Serial hs-cTn (0/1 h, 0/3 h) ดู rise/fall ก่อน rule-in/out",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [
+       "CVS-51-KF-009"
+      ],
+      "in_set": true,
+      "n_all_years": 2
+     },
+     {
+      "heading": "ESC 0/1 h algorithm flow",
+      "pages": [
+       31,
+       31
+      ],
+      "tier": 1,
+      "years": [
+       49,
+       51,
+       52
+      ],
+      "summary": "Very low หรือ low + no Δ → rule-out; high หรือ Δ 1h สูง → rule-in; ที่เหลือ observe → ตรวจซ้ำ 3 h + echo",
+      "focus": [],
+      "role": "supporting",
+      "question_ids": [],
+      "in_set": true,
+      "n_all_years": 0
+     },
+     {
+      "heading": "BNP and NT-proBNP",
+      "pages": [
+       38,
+       38
+      ],
+      "tier": 1,
+      "years": [
+       50,
+       51,
+       52
+      ],
+      "summary": "proBNP จาก ventricular myocyte → BNP (32 aa, active, t½ 20 นาที) + NT-proBNP (inactive, t½ 1.5–2 h)",
+      "focus": [
+       {
+        "text": "NT-proBNP: วินิจฉัย HF, cut-off acute/chronic",
+        "years": [
+         50
+        ]
+       },
+       {
+        "text": "BNP/NT-proBNP ใน HF + cut-off",
+        "years": [
+         51
+        ]
+       },
+       {
+        "text": "BNP/NT-proBNP หลั่งจาก ventricle เมื่อ wall stretch — ใช้วินิจฉัย HF",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [
+       "CVS-51-KF-009"
+      ],
+      "in_set": true,
+      "n_all_years": 3
+     },
+     {
+      "heading": "BNP and NT-proBNP in HF",
+      "pages": [
+       39,
+       39
+      ],
+      "tier": 1,
+      "years": [
+       50,
+       51,
+       52
+      ],
+      "summary": "ขึ้นภายใน 2 h; NT-proBNP เสถียร > 3 วันใน sample (BNP ~4 h); ใช้วินิจฉัย acute/chronic HF, prognosis, ติดตามการรักษา",
+      "focus": [],
+      "role": "supporting",
+      "question_ids": [],
+      "in_set": true,
+      "n_all_years": 0
+     },
+     {
+      "heading": "Natriuretic peptides in acute dyspnea",
+      "pages": [
+       40,
+       40
+      ],
+      "tier": 1,
+      "years": [
+       52
+      ],
+      "summary": "Acute: BNP < 100 หรือ NT-proBNP < 300 pg/mL → HF unlikely; NT-proBNP > 450 (<50 y), > 900 (50–75 y), > 1800 (>75 y) → HF likely; ค่าระหว่าง = gray zone",
+      "focus": [
+       {
+        "text": "NT-proBNP cut-off วินิจฉัย HF",
+        "years": [
+         52
+        ]
+       },
+       {
+        "text": "NT-proBNP cut-off: acute < 300 unlikely, ตามอายุ > 450/900/1800 likely; chronic ≥ 125",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": true,
+      "n_all_years": 2
+     },
+     {
+      "heading": "Chronic HF algorithm",
+      "pages": [
+       41,
+       41
+      ],
+      "tier": 1,
+      "years": [
+       50,
+       51,
+       52
+      ],
+      "summary": "Non-acute: BNP ≥ 35 หรือ NT-proBNP ≥ 125 pg/mL → HF likely ส่ง echo; ต่ำกว่า → HF unlikely",
+      "focus": [],
+      "role": "supporting",
+      "question_ids": [],
+      "in_set": true,
+      "n_all_years": 0
+     }
+    ],
+    "best_tier": 1,
+    "pages_total": 11,
+    "n_in_set": 1
+   },
+   {
+    "lecture": "CC3",
+    "topics": [
+     {
+      "heading": "Positive remodeling",
+      "pages": [
+       5,
+       5
+      ],
+      "tier": 1,
+      "years": [
+       49
+      ],
+      "summary": "Plaque เล็ก–กลาง → หลอดเลือดขยายออก (compensatory expansion) lumen คงเดิม; เมื่อเกินกำลังชดเชย lumen จึงแคบ",
+      "focus": [
+       {
+        "text": "Positive remodeling (Glagov) และ fate ของ plaque: rupture, healing, thrombosis",
+        "years": [
+         49
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 1
+     },
+     {
+      "heading": "Vulnerable plaque (TCFA)",
+      "pages": [
+       6,
+       6
+      ],
+      "tier": 1,
+      "years": [
+       50,
+       52
+      ],
+      "summary": "Thin-cap fibroatheroma: necrotic core ใหญ่, fibrous cap บาง < 65 µm, macrophage/lymphocyte แทรก, SMC น้อย — เสี่ยงแตก (ออกสอบ: plaque ที่ทำให้เกิด ACS)",
+      "focus": [
+       {
+        "text": "Vulnerable plaque: thin fibrous cap",
+        "years": [
+         50
+        ]
+       },
+       {
+        "text": "Vulnerable plaque (TCFA): fibrous cap บาง < 65 µm, necrotic core ใหญ่, macrophage",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 2
+     },
+     {
+      "heading": "Fate of TCFA",
+      "pages": [
+       7,
+       7
+      ],
+      "tier": 1,
+      "years": [
+       49,
+       50,
+       52
+      ],
+      "summary": "TCFA → quiescent / rupture + healing (เงียบ, plaque โตเร็วขึ้น) / rupture + thrombosis = ACS",
+      "focus": [],
+      "role": "supporting",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 0
+     },
+     {
+      "heading": "Plaque rupture",
+      "pages": [
+       8,
+       8
+      ],
+      "tier": 1,
+      "years": [
+       49,
+       50,
+       52
+      ],
+      "summary": "ภาพ plaque rupture + thrombus",
+      "focus": [],
+      "role": "supporting",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 0
+     },
+     {
+      "heading": "Cardiac enzymes timeline",
+      "pages": [
+       30,
+       30
+      ],
+      "tier": 2,
+      "years": [
+       49,
+       51
+      ],
+      "summary": "CK/CK-MB onset 4–6 h peak 18–30 h กลับ 3–4 วัน; myoglobin 2–6 h peak 4–6 h กลับ 24–36 h; troponin I 3–5 h peak 14–21 h กลับ 7 วัน; LDH 24–48 h peak 3–6 วัน กลับ 14 วัน",
+      "focus": [
+       {
+        "text": "Timeline ของ CK-MB, myoglobin, troponin",
+        "years": [
+         49
+        ]
+       },
+       {
+        "text": "Biomarker timeline และ stable vs ACS",
+        "years": [
+         51
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [
+       "CVS-51-KF-004"
+      ],
+      "in_set": true,
+      "n_all_years": 2
+     },
+     {
+      "heading": "Cardiac enzyme curves",
+      "pages": [
+       31,
+       31
+      ],
+      "tier": 2,
+      "years": [
+       49,
+       51
+      ],
+      "summary": "กราฟ biomarker หลัง MI",
+      "focus": [],
+      "role": "supporting",
+      "question_ids": [],
+      "in_set": true,
+      "n_all_years": 0
+     },
+     {
+      "heading": "Chronic stable angina vs ACS",
+      "pages": [
+       32,
+       32
+      ],
+      "tier": 2,
+      "years": [
+       49,
+       51
+      ],
+      "summary": "Stable: กระตุ้นจากการออกแรง หายในไม่กี่นาทีด้วยพัก/SL NTG; ACS: ขณะพักหรือออกแรงเล็กน้อย > 20 นาที รุนแรง ใหม่ หรือ crescendo",
+      "focus": [],
+      "role": "supporting",
+      "question_ids": [],
+      "in_set": true,
+      "n_all_years": 0
+     },
+     {
+      "heading": "Aortic dissection",
+      "pages": [
+       51,
+       51
+      ],
+      "tier": 2,
+      "years": [
+       52
+      ],
+      "summary": "Intimal tear → เลือดแทรกเข้า media; intimal flap เป็นลักษณะเฉพาะ; 90% มาด้วยเจ็บอก",
+      "focus": [
+       {
+        "text": "Dissection: tearing pain, pulse differential, widened mediastinum",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 1
+     },
+     {
+      "heading": "Aortic dissection: location",
+      "pages": [
+       52,
+       52
+      ],
+      "tier": 2,
+      "years": [
+       52
+      ],
+      "summary": "Ascending → เจ็บกลางอกด้านหน้า; descending → เจ็บหลัง (interscapular); ร้าวไปหลัง",
+      "focus": [],
+      "role": "supporting",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 0
+     },
+     {
+      "heading": "Aortic dissection: quality",
+      "pages": [
+       53,
+       53
+      ],
+      "tier": 2,
+      "years": [
+       52
+      ],
+      "summary": "เจ็บรุนแรงมาก ฉีกขาด (tearing, knife-like) เริ่มทันทีและแรงสุดตั้งแต่แรก ต่อเนื่อง",
+      "focus": [],
+      "role": "supporting",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 0
+     },
+     {
+      "heading": "Aortic dissection: branch obstruction",
+      "pages": [
+       54,
+       54
+      ],
+      "tier": 2,
+      "years": [
+       52
+      ],
+      "summary": "อุดแขนง: carotid → stroke, brachial → limb ischemia, coronary ostium → AMI",
+      "focus": [],
+      "role": "supporting",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 0
+     },
+     {
+      "heading": "Aortic dissection: rupture",
+      "pages": [
+       55,
+       55
+      ],
+      "tier": 2,
+      "years": [
+       52
+      ],
+      "summary": "รั่ว/แตก: cardiac tamponade, hemothorax, AR (ถ้าเป็นที่ root)",
+      "focus": [],
+      "role": "supporting",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 0
+     },
+     {
+      "heading": "Aortic dissection: predisposing factors",
+      "pages": [
+       56,
+       56
+      ],
+      "tier": 2,
+      "years": [
+       52
+      ],
+      "summary": "Uncontrolled HT 60–70%, Marfan (อายุ < 40), trauma",
+      "focus": [],
+      "role": "supporting",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 0
+     },
+     {
+      "heading": "Aortic dissection: examination",
+      "pages": [
+       57,
+       57
+      ],
+      "tier": 2,
+      "years": [
+       52
+      ],
+      "summary": "BP/pulse ต่างกันระหว่างแขน, AR murmur, CXR mediastinum กว้าง 50%",
+      "focus": [],
+      "role": "supporting",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 0
+     },
+     {
+      "heading": "Urgent ECG triage",
+      "pages": [
+       77,
+       77
+      ],
+      "tier": 2,
+      "years": [
+       52
+      ],
+      "summary": "ECG: ST elevation → urgent revascularization (STEMI); ischemic change → NSTEACS; ปกติ → NTG + observe 6–12 h + serial ECG/troponin",
+      "focus": [
+       {
+        "text": "ECG ปกติ → observe + serial ECG/troponin 6–12 h",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 1
+     },
+     {
+      "heading": "Treatment of CAD",
+      "pages": [
+       92,
+       92
+      ],
+      "tier": 2,
+      "years": [
+       51
+      ],
+      "summary": "ตามการวินิจฉัย: reperfusion (pharmacologic = fibrinolytic, mechanical = PCI), ยา, คุม risk factor",
+      "focus": [
+       {
+        "text": "Reperfusion: pharmacologic vs mechanical",
+        "years": [
+         51
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 1
+     },
+     {
+      "heading": "Targets for therapy in STEMI",
+      "pages": [
+       95,
+       95
+      ],
+      "tier": 1,
+      "years": [
+       52
+      ],
+      "summary": "Thrombin/fibrin (antithrombins, fibrinolytics) และ platelets (antiplatelets)",
+      "focus": [
+       {
+        "text": "Targets for therapy in STEMI: platelets (antiplatelet)",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 1
+     },
+     {
+      "heading": "Aspirin mechanism",
+      "pages": [
+       96,
+       96
+      ],
+      "tier": 1,
+      "years": [
+       51,
+       52
+      ],
+      "summary": "Aspirin acetylate COX-1 แบบถาวร → thromboxane A2 ↓ → platelet aggregation ↓",
+      "focus": [],
+      "role": "supporting",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 0
+     },
+     {
+      "heading": "Fibrinolytic drugs",
+      "pages": [
+       97,
+       97
+      ],
+      "tier": 1,
+      "years": [
+       51
+      ],
+      "summary": "Fibrinolytic (streptokinase, tPA) เปลี่ยน plasminogen → plasmin สลาย fibrin (ออกสอบ: กลไก streptokinase)",
+      "focus": [
+       {
+        "text": "Fibrinolytic (streptokinase/tPA): plasminogen → plasmin",
+        "years": [
+         51
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 1
+     },
+     {
+      "heading": "Symptom vs mortality drugs in HF",
+      "pages": [
+       152,
+       152
+      ],
+      "tier": 2,
+      "years": [
+       50
+      ],
+      "summary": "ลดอาการ: diuretic, digoxin, dopamine; ลด mortality: β-blocker, ACEI, ARB, aldosterone antagonist (ออกสอบ: ยาที่ไม่ลด mortality)",
+      "focus": [
+       {
+        "text": "ยาลดอาการ vs ยาลด mortality ใน HF",
+        "years": [
+         50
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 1
+     }
+    ],
+    "best_tier": 2,
+    "pages_total": 3,
+    "n_in_set": 1
+   }
+  ],
+  "minimum_set": {
+   "target": 0.8,
+   "ranks": [
+    29,
+    41,
+    7,
+    50,
+    52,
+    9,
+    12,
+    56,
+    60,
+    64,
+    16,
+    10,
+    11,
+    33,
+    81,
+    37,
+    8,
+    25,
+    54,
+    55,
+    78,
+    79,
+    36,
+    6,
+    19,
+    48,
+    70,
+    86,
+    94,
+    97,
+    98,
+    100,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    110,
+    112,
+    23,
+    24,
+    4,
+    63,
+    68,
+    71,
+    28,
+    18,
+    1,
+    34,
+    39,
+    42,
+    46,
+    58,
+    75,
+    114,
+    116,
+    120,
+    122,
+    44,
+    27,
+    2
+   ],
+   "pages_total": 155,
+   "coverage": 0.827,
+   "recent_items": 243
+  }
+ }
+}

@@ -1,0 +1,5836 @@
+{
+ "meta": {
+  "set_id": "51_OSPE",
+  "block": "CVS",
+  "cohort": 51,
+  "type": "OSPE",
+  "title": "OSPE CVS · Med PSU 51",
+  "time_limit_min": 28,
+  "generated_by": "tools/import_cvs.cjs from the CVS-pdf project — do not edit by hand"
+ },
+ "questions": [
+  {
+   "id": "CVS-51-OSPE-001",
+   "block": "CVS",
+   "cohort": 51,
+   "n": 1,
+   "type": "OSPE",
+   "station": 1,
+   "stem": "ภาพ electron micrograph ของหลอดเลือดขนาดเล็ก",
+   "items": [
+    {
+     "id": "1.1",
+     "prompt": "จงบอกลักษณะของหลอดเลือดในภาพ",
+     "format": "short",
+     "accepted": [
+      "tight junction",
+      "continuous endothelium",
+      "no fenestra"
+     ],
+     "explanation": "Endothelium ต่อเนื่องไม่มีรู (no fenestrae) เชื่อมกันด้วย tight junction, basal lamina ต่อเนื่อง ± pericyte"
+    },
+    {
+     "id": "1.2",
+     "prompt": "จากภาพเป็นหลอดเลือดอะไร",
+     "format": "short",
+     "accepted": [
+      "continuous capillary"
+     ],
+     "explanation": "Continuous capillary (พบใน muscle, lung, CNS)"
+    }
+   ],
+   "answer_status": "verified",
+   "explanation": "Endothelium ต่อเนื่องไม่มีรู = continuous capillary",
+   "key_concept": "• Continuous: endothelium ต่อเนื่อง + tight junction (muscle, CNS = BBB)\n• Fenestrated: มีรู 60–80 nm (ลำไส้, glomerulus, endocrine)\n• Sinusoidal: ช่องใหญ่ basal lamina ไม่ต่อเนื่อง (liver, spleen, marrow)",
+   "image": "img/51_OSPE_001.jpg",
+   "refs": [
+    {
+     "lecture": "L06",
+     "pages": [
+      21,
+      22,
+      23,
+      24
+     ],
+     "focus": "Capillary 3 ชนิด: continuous, fenestrated, sinusoid",
+     "hotspot": {
+      "tier": 1,
+      "years": [
+       49,
+       50,
+       51,
+       52
+      ]
+     }
+    }
+   ],
+   "tags": [
+    "Types of capillaries",
+    "anatomy",
+    "recall"
+   ],
+   "source": "import"
+  },
+  {
+   "id": "CVS-51-OSPE-002",
+   "block": "CVS",
+   "cohort": 51,
+   "n": 2,
+   "type": "OSPE",
+   "station": 2,
+   "stem": "ภาพ histology ของผนังหัวใจ (ลูกศรดำ, วงกลมแดง, วงกลมเขียว)",
+   "items": [
+    {
+     "id": "2.1",
+     "prompt": "ชื่อเซลล์ที่ลูกศรชี้",
+     "format": "short",
+     "accepted": [
+      "endothelial",
+      "endothelium"
+     ],
+     "explanation": "Endothelial cell ของ endocardium"
+    },
+    {
+     "id": "2.2",
+     "prompt": "ชื่อเซลล์ในวงกลมสีแดง",
+     "format": "short",
+     "accepted": [
+      "purkinje"
+     ],
+     "explanation": "Purkinje fibers (ใหญ่ สีจาง มี glycogen มาก อยู่ subendocardium)"
+    },
+    {
+     "id": "2.3",
+     "prompt": "ชื่อเซลล์ในวงกลมสีเขียว",
+     "format": "short",
+     "accepted": [
+      "cardiac muscle",
+      "cardiomyocyte",
+      "myocardium"
+     ],
+     "explanation": "Cardiac muscle cells (cardiomyocytes)"
+    }
+   ],
+   "answer_status": "verified",
+   "explanation": "Endothelium, Purkinje fibers, cardiomyocytes",
+   "key_concept": "• ภาพนี้ออกซ้ำทุกปี (เหมือน 52_OSPE ข้อ 5)\n• Endocardium = endothelium + subendothelial CT + subendocardial layer (มี Purkinje fibers)\nTrap: Purkinje fiber ใหญ่กว่าและสีจางกว่า cardiomyocyte เพราะ glycogen มาก myofibril น้อย",
+   "image": "img/51_OSPE_002.jpg",
+   "refs": [
+    {
+     "lecture": "L06",
+     "pages": [
+      4,
+      5,
+      6,
+      7,
+      8
+     ],
+     "focus": "ผนังหัวใจ + Purkinje fibers ใน subendocardium",
+     "hotspot": {
+      "tier": 1,
+      "years": [
+       51,
+       52
+      ]
+     }
+    }
+   ],
+   "tags": [
+    "Histology of heart wall",
+    "anatomy",
+    "recall"
+   ],
+   "source": "import"
+  },
+  {
+   "id": "CVS-51-OSPE-003",
+   "block": "CVS",
+   "cohort": 51,
+   "n": 3,
+   "type": "OSPE",
+   "station": 3,
+   "stem": "ภาพ histology ของหลอดเลือด (ต้นฉบับระบุว่าไม่ใช่รูปจริงในข้อสอบ)",
+   "items": [
+    {
+     "id": "3.1",
+     "prompt": "โครงสร้างที่ลูกศรชี้คืออะไร",
+     "format": "short",
+     "accepted": [
+      "smooth muscle"
+     ],
+     "explanation": "Smooth muscle cells ใน tunica media"
+    },
+    {
+     "id": "3.2",
+     "prompt": "โครงสร้างในวงกลมคืออะไร",
+     "format": "short",
+     "accepted": [
+      "vasa vasorum"
+     ],
+     "explanation": "Vasa vasorum (หลอดเลือดเลี้ยงผนังหลอดเลือดใน adventitia)"
+    },
+    {
+     "id": "3.3",
+     "prompt": "จงบอกขนาดและชนิดของหลอดเลือด",
+     "format": "short",
+     "accepted": [
+      "medium artery",
+      "medium-sized artery",
+      "muscular artery",
+      "large artery",
+      "elastic artery"
+     ],
+     "keywords_all": [
+      "artery"
+     ],
+     "review": "เฉลยต้นฉบับ medium-sized artery แต่ media หนามากและมี vasa vasorum ชัด อาจเป็น large (elastic) artery ได้ — quiz รับทั้งสองแบบ",
+     "explanation": "เฉลยต้นฉบับ: medium-sized (muscular) artery — media หนามี smooth muscle มาก (ถ้า media เต็มไปด้วย elastic lamellae จะเป็น elastic artery)"
+    }
+   ],
+   "answer_status": "draft",
+   "explanation": "Smooth muscle, vasa vasorum, medium-sized artery",
+   "key_concept": "• Artery: tunica media หนาที่สุด\n• Vasa vasorum พบใน adventitia ของหลอดเลือดขนาดกลาง–ใหญ่\nTrap: แยก muscular vs elastic artery ด้วยองค์ประกอบของ media (smooth muscle vs elastic lamellae)",
+   "image": "img/51_OSPE_003.jpg",
+   "refs": [
+    {
+     "lecture": "L06",
+     "pages": [
+      11,
+      12,
+      13,
+      14
+     ],
+     "focus": "Elastic vs muscular artery: elastic laminae vs IEL หยัก + smooth muscle",
+     "hotspot": {
+      "tier": 1,
+      "years": [
+       49,
+       50,
+       51,
+       52
+      ]
+     }
+    }
+   ],
+   "tags": [
+    "Histology of arteries",
+    "anatomy",
+    "understand"
+   ],
+   "source": "import"
+  },
+  {
+   "id": "CVS-51-OSPE-004",
+   "block": "CVS",
+   "cohort": 51,
+   "n": 4,
+   "type": "OSPE",
+   "station": 4,
+   "stem": "ภาพ histology ของหลอดเลือด (ต้นฉบับระบุว่าไม่ใช่รูปจริงในข้อสอบ)",
+   "items": [
+    {
+     "id": "4.1",
+     "prompt": "โครงสร้างในวงกลมคืออะไร",
+     "format": "short",
+     "accepted": [
+      "smooth muscle"
+     ],
+     "explanation": "Smooth muscle bundles (longitudinal)"
+    },
+    {
+     "id": "4.2",
+     "prompt": "โครงสร้างในข้อ 4.1 อยู่ในชั้นใด",
+     "format": "short",
+     "accepted": [
+      "adventitia"
+     ],
+     "explanation": "Tunica adventitia"
+    },
+    {
+     "id": "4.3",
+     "prompt": "จงบอกขนาดและชนิดของหลอดเลือด",
+     "format": "short",
+     "accepted": [
+      "large vein"
+     ],
+     "keywords_all": [
+      "large",
+      "vein"
+     ],
+     "explanation": "Large vein (เช่น IVC, portal vein)"
+    }
+   ],
+   "answer_status": "verified",
+   "explanation": "Smooth muscle bundles ใน adventitia = large vein",
+   "key_concept": "• Large vein: adventitia หนาที่สุด และมี longitudinal smooth muscle bundles\n• ลักษณะนี้ออกทั้ง MCQ และ OSPE ทุกปี (52_MCQ ข้อ 11, 51_MCQ ข้อ 9)",
+   "image": "img/51_OSPE_004.jpg",
+   "refs": [
+    {
+     "lecture": "L06",
+     "pages": [
+      16,
+      17
+     ],
+     "focus": "Large vein: adventitia หนา smooth muscle ตามยาว",
+     "hotspot": {
+      "tier": 1,
+      "years": [
+       49,
+       50,
+       51,
+       52
+      ]
+     }
+    }
+   ],
+   "tags": [
+    "Histology of large veins",
+    "anatomy",
+    "understand"
+   ],
+   "source": "import"
+  },
+  {
+   "id": "CVS-51-OSPE-005",
+   "block": "CVS",
+   "cohort": 51,
+   "n": 5,
+   "type": "OSPE",
+   "station": 5,
+   "stem": "ECG บันทึกด้วยกระดาษมาตรฐาน 25 mm/s (ต้นฉบับระบุว่าไม่ใช่รูปจริงในข้อสอบ)",
+   "items": [
+    {
+     "id": "5.1",
+     "prompt": "หา duration ของ PR interval",
+     "format": "short",
+     "accepted": [
+      "0.24"
+     ],
+     "explanation": "6 ช่องเล็ก × 0.04 = 0.24 s (> 0.20 s = first-degree AV block)"
+    },
+    {
+     "id": "5.2",
+     "prompt": "หา duration ของ ST segment",
+     "format": "short",
+     "accepted": [
+      "0.08"
+     ],
+     "explanation": "2 ช่องเล็ก × 0.04 = 0.08 s"
+    },
+    {
+     "id": "5.3",
+     "prompt": "หา duration ของ QRS complex",
+     "format": "short",
+     "accepted": [
+      "0.08"
+     ],
+     "explanation": "2 ช่องเล็ก × 0.04 = 0.08 s (ปกติ < 0.12 s)"
+    }
+   ],
+   "answer_status": "verified",
+   "explanation": "PR 0.24 s, ST 0.08 s, QRS 0.08 s",
+   "key_concept": "• 25 mm/s: ช่องเล็ก 1 mm = 0.04 s, ช่องใหญ่ 5 mm = 0.20 s\n• ค่าปกติ: PR 0.12–0.20 s, QRS < 0.12 s, QTc < 0.44 s\n• PR interval = ต้น P ถึงต้น QRS; ST segment = ปลาย QRS (J point) ถึงต้น T\nTrap: interval รวม wave (PR interval รวม P) แต่ segment ไม่รวม wave (PR segment ไม่รวม P)",
+   "image": "img/51_OSPE_005.jpg",
+   "refs": [
+    {
+     "lecture": "L03",
+     "pages": [
+      19,
+      20
+     ],
+     "focus": "ECG paper + ค่าปกติ P, PR, QRS, QT",
+     "hotspot": {
+      "tier": 1,
+      "years": [
+       49,
+       50,
+       51,
+       52
+      ]
+     }
+    }
+   ],
+   "tags": [
+    "ECG intervals",
+    "physiology",
+    "apply"
+   ],
+   "source": "import"
+  },
+  {
+   "id": "CVS-51-OSPE-006",
+   "block": "CVS",
+   "cohort": 51,
+   "n": 6,
+   "type": "OSPE",
+   "station": 6,
+   "stem": "ECG rhythm strip",
+   "items": [
+    {
+     "id": "6.1",
+     "prompt": "จงคำนวณ ventricular rate ของผู้ป่วย",
+     "format": "short",
+     "accepted": [
+      "37",
+      "38"
+     ],
+     "explanation": "1500 / 40 ช่องเล็ก ≈ 37.5 ครั้ง/นาที (ต้นฉบับพิมพ์ว่า 'ventilation rate')"
+    },
+    {
+     "id": "6.2",
+     "prompt": "คำนวณ net potential ของ QRS complex ตรงกลาง",
+     "format": "short",
+     "accepted": [
+      "+10",
+      "10"
+     ],
+     "explanation": "R − Q − S = +15 − 2 − 3 = +10 (ช่องเล็ก)"
+    },
+    {
+     "id": "6.3",
+     "prompt": "จงให้การวินิจฉัย",
+     "format": "short",
+     "accepted": [
+      "second degree",
+      "2nd degree",
+      "mobitz",
+      "2:1"
+     ],
+     "keywords_all": [
+      "block"
+     ],
+     "explanation": "Second-degree AV block แบบ 2:1 (P 2 ตัวต่อ QRS 1 ตัว, PR ของ beat ที่ผ่านคงที่) — เฉลยต้นฉบับ: Mobitz type II"
+    }
+   ],
+   "answer_status": "verified",
+   "explanation": "Rate ≈ 37.5, net QRS +10, second-degree AV block (2:1)",
+   "key_concept": "• HR = 1500 / ช่องเล็กระหว่าง R–R\n• Net QRS = ความสูงส่วนบวก − ส่วนลบ (ใช้หา axis)\n• 2:1 AV block: P ทุกตัวที่ 2 ไม่มี QRS\nTrap: 2:1 block แยก Mobitz I/II จากแถบเดียวไม่ได้แน่นอน แต่ PR คงที่ + QRS กว้างชี้ไปทาง Mobitz II",
+   "image": "img/51_OSPE_006.jpg",
+   "refs": [
+    {
+     "lecture": "CC2",
+     "pages": [
+      17
+     ],
+     "focus": "AV block types",
+     "hotspot": {
+      "tier": 1,
+      "years": [
+       50,
+       51,
+       52
+      ]
+     }
+    },
+    {
+     "lecture": "L03",
+     "pages": [
+      30
+     ],
+     "focus": "คำนวณ HR",
+     "hotspot": {
+      "tier": 1,
+      "years": [
+       51,
+       52
+      ]
+     }
+    }
+   ],
+   "tags": [
+    "AV block & ECG calculation",
+    "clinical",
+    "apply"
+   ],
+   "source": "import"
+  },
+  {
+   "id": "CVS-51-OSPE-007",
+   "block": "CVS",
+   "cohort": 51,
+   "n": 7,
+   "type": "OSPE",
+   "station": 7,
+   "stem": "ECG precordial leads 6 ภาพ (หมายเลข 1–6 เรียงสลับ)",
+   "items": [
+    {
+     "id": "7.1",
+     "prompt": "บอกชื่อ precordial lead หมายเลข 1",
+     "format": "short",
+     "accepted": [
+      "v6"
+     ],
+     "explanation": "V6 — R เด่น S เล็ก"
+    },
+    {
+     "id": "7.2",
+     "prompt": "บอกชื่อ precordial lead หมายเลข 3",
+     "format": "short",
+     "accepted": [
+      "v4"
+     ],
+     "review": "ลายมือในช่องคำตอบอ่านได้คล้าย 'V3' แต่ป้ายกำกับบนภาพเฉลยเขียน #3 = V4 และ #4 = V3 — ใช้ V4 (R > S)",
+     "explanation": "V4 — R สูงกว่า S (transition ผ่านไปแล้ว) ส่วน V3 (#4) R ≈ S"
+    },
+    {
+     "id": "7.3",
+     "prompt": "บอกชื่อ precordial lead หมายเลข 5",
+     "format": "short",
+     "accepted": [
+      "v2"
+     ],
+     "explanation": "V2 — r เล็ก S ลึก"
+    }
+   ],
+   "answer_status": "verified",
+   "explanation": "เรียงตาม R-wave progression: 1 = V6, 3 = V4, 5 = V2",
+   "key_concept": "• R-wave progression: V1 rS (r เล็ก S ลึก) → R สูงขึ้นเรื่อยๆ → V3–V4 R ≈ S (transition zone) → V5–V6 R เด่น S เล็ก\n• ลำดับในภาพ: 1 = V6, 2 = V1, 3 = V4, 4 = V3, 5 = V2, 6 = V5",
+   "image": "img/51_OSPE_007.jpg",
+   "refs": [
+    {
+     "lecture": "L03",
+     "pages": [
+      18
+     ],
+     "focus": "Chest leads: V1 QRS ลบ → V6 บวก (R-wave progression)",
+     "hotspot": {
+      "tier": 1,
+      "years": [
+       49,
+       50,
+       51,
+       52
+      ]
+     }
+    },
+    {
+     "lecture": "CC2",
+     "pages": [
+      20
+     ],
+     "focus": "Precordial QRS formation",
+     "hotspot": {
+      "tier": 1,
+      "years": [
+       50,
+       51
+      ]
+     }
+    }
+   ],
+   "tags": [
+    "Precordial R-wave progression",
+    "physiology",
+    "apply"
+   ],
+   "source": "import"
+  },
+  {
+   "id": "CVS-51-OSPE-008",
+   "block": "CVS",
+   "cohort": 51,
+   "n": 8,
+   "type": "OSPE",
+   "station": 8,
+   "stem": "12-lead ECG (ต้นฉบับ: ภาพจริงคล้ายแบบนี้ แต่ aVR ลบมากกว่านี้)",
+   "items": [
+    {
+     "id": "8.1",
+     "prompt": "หา mean electrical axis ด้วย quadrant method",
+     "format": "short",
+     "accepted": [
+      "normal axis",
+      "normal"
+     ],
+     "explanation": "Lead I บวก + aVF บวก → normal axis (0° ถึง +90°)"
+    },
+    {
+     "id": "8.2",
+     "prompt": "หา mean electrical axis ด้วย 3-lead method",
+     "format": "short",
+     "accepted": [
+      "60",
+      "70",
+      "75",
+      "80"
+     ],
+     "explanation": "Lead I, II, III บวกทั้งหมด โดย II/III สูงกว่า I → axis ประมาณ +60° ถึง +80° (ใช้ตัดสินเอง)"
+    },
+    {
+     "id": "8.3",
+     "prompt": "จงให้การวินิจฉัย โดยบอก axis ของผู้ป่วย",
+     "format": "short",
+     "accepted": [
+      "normal axis"
+     ],
+     "explanation": "Normal axis (aVR ลบมาก = vector ชี้ไปทางตรงข้าม aVR คือ +30° ถึง +90°)"
+    }
+   ],
+   "answer_status": "draft",
+   "explanation": "Lead I และ aVF บวก = normal axis",
+   "key_concept": "• Quadrant: ดู lead I กับ aVF — (+,+) normal, (+,−) LAD, (−,+) RAD, (−,−) extreme\n• 3-lead method: lead ที่ isoelectric ที่สุด → axis ตั้งฉากกับ lead นั้น; lead ที่บวกมากที่สุด → axis ใกล้ lead นั้น\n• aVR ลบมาก = vector ชี้ลงซ้าย (normal)",
+   "audit_note": "ไฟล์เฉลยไม่มีคำตอบข้อนี้ — ร่างเอง",
+   "image": "img/51_OSPE_008.jpg",
+   "refs": [
+    {
+     "lecture": "L03",
+     "pages": [
+      17
+     ],
+     "focus": "Hexaxial reference",
+     "hotspot": {
+      "tier": 1,
+      "years": [
+       49,
+       50,
+       51,
+       52
+      ]
+     }
+    },
+    {
+     "lecture": "L03",
+     "pages": [
+      35
+     ],
+     "focus": "Axis quadrant method",
+     "hotspot": {
+      "tier": 1,
+      "years": [
+       50,
+       51,
+       52
+      ]
+     }
+    }
+   ],
+   "tags": [
+    "Mean electrical axis",
+    "physiology",
+    "apply"
+   ],
+   "source": "import"
+  },
+  {
+   "id": "CVS-51-OSPE-009",
+   "block": "CVS",
+   "cohort": 51,
+   "n": 9,
+   "type": "OSPE",
+   "station": 9,
+   "stem": "ภาพ gross ของ aorta",
+   "items": [
+    {
+     "id": "9.1",
+     "prompt": "บอกโรคที่เป็นไปได้ 2 โรค",
+     "format": "short",
+     "accepted": [
+      "aortic aneurysm",
+      "aneurysm",
+      "dissection"
+     ],
+     "explanation": "Abdominal aortic aneurysm (มี laminated mural thrombus) ± aortic dissection"
+    },
+    {
+     "id": "9.2",
+     "prompt": "บอกปัจจัยเสี่ยง 2 อย่าง",
+     "format": "short",
+     "accepted": [
+      "atherosclerosis",
+      "smoking",
+      "hypertension",
+      "สูบบุหรี่"
+     ],
+     "explanation": "Atherosclerosis, smoking, hypertension, ชายสูงอายุ, family history"
+    }
+   ],
+   "answer_status": "verified",
+   "explanation": "Aorta โป่งพองมี thrombus = AAA",
+   "key_concept": "• ภาพนี้ออกซ้ำ (52_OSPE ข้อ 13)\n• AAA ส่วนใหญ่ infrarenal จาก atherosclerosis; smoking เป็นปัจจัยเสี่ยงที่สำคัญที่สุด",
+   "image": "img/51_OSPE_009.jpg",
+   "refs": [
+    {
+     "lecture": "L14",
+     "pages": [
+      74,
+      75
+     ],
+     "focus": "Aneurysm definition + AAA (atherosclerosis)",
+     "hotspot": {
+      "tier": 1,
+      "years": [
+       49,
+       50,
+       51,
+       52
+      ]
+     }
+    },
+    {
+     "lecture": "CC5",
+     "pages": [
+      21,
+      22
+     ],
+     "focus": "Aortic aneurysm 1.5×, Laplace",
+     "hotspot": {
+      "tier": 1,
+      "years": [
+       50,
+       51,
+       52
+      ]
+     }
+    }
+   ],
+   "tags": [
+    "Aortic aneurysm",
+    "pathology",
+    "apply"
+   ],
+   "source": "import"
+  },
+  {
+   "id": "CVS-51-OSPE-010",
+   "block": "CVS",
+   "cohort": 51,
+   "n": 10,
+   "type": "OSPE",
+   "station": 10,
+   "stem": "ภาพ histology ของ myocardium",
+   "items": [
+    {
+     "id": "10.1",
+     "prompt": "บอกองค์ประกอบที่เห็นในรูป 2 อย่าง",
+     "format": "short",
+     "accepted": [
+      "aschoff",
+      "anitschkow"
+     ],
+     "explanation": "Aschoff body + Anitschkow (caterpillar) cells"
+    },
+    {
+     "id": "10.2",
+     "prompt": "จงให้การวินิจฉัย",
+     "format": "short",
+     "accepted": [
+      "rheumatic"
+     ],
+     "explanation": "Rheumatic heart disease (acute rheumatic carditis)"
+    }
+   ],
+   "answer_status": "verified",
+   "explanation": "Aschoff body = rheumatic carditis",
+   "key_concept": "• ภาพนี้ออกซ้ำ (52_OSPE ข้อ 14)\n• Aschoff body = pathognomonic ของ acute rheumatic fever",
+   "image": "img/51_OSPE_010.jpg",
+   "refs": [
+    {
+     "lecture": "L14",
+     "pages": [
+      45
+     ],
+     "focus": "Aschoff body, Anitschkow cells",
+     "hotspot": {
+      "tier": 1,
+      "years": [
+       49,
+       50,
+       51,
+       52
+      ]
+     }
+    }
+   ],
+   "tags": [
+    "Rheumatic carditis histology",
+    "pathology",
+    "apply"
+   ],
+   "source": "import"
+  },
+  {
+   "id": "CVS-51-OSPE-011",
+   "block": "CVS",
+   "cohort": 51,
+   "n": 11,
+   "type": "OSPE",
+   "station": 11,
+   "stem": "ภาพ histology ของ myocardium",
+   "items": [
+    {
+     "id": "11.1",
+     "prompt": "บอกลักษณะที่พบใน histology 2 อย่าง",
+     "format": "short",
+     "accepted": [
+      "coagulative necrosis",
+      "neutrophil"
+     ],
+     "explanation": "Coagulative necrosis ของ myocyte + neutrophil infiltration"
+    },
+    {
+     "id": "11.2",
+     "prompt": "จงให้การวินิจฉัย",
+     "format": "short",
+     "accepted": [
+      "acute myocardial infarction",
+      "acute mi",
+      "myocardial infarction"
+     ],
+     "status": "source_disagree",
+     "source_answer": "Myocarditis",
+     "proposed": "Acute myocardial infarction (1–3 วัน)",
+     "explanation": "Acute myocardial infarction (~1–3 วัน)\n(เฉลยเดิมจากต้นฉบับ: Myocarditis — แต่ myocarditis จะเห็น lymphocytes ไม่ใช่ neutrophils + coagulative necrosis)"
+    }
+   ],
+   "answer_status": "disputed",
+   "explanation": "Necrosis + neutrophils = acute MI (เฉลยต้นฉบับตอบ myocarditis)",
+   "key_concept": "• Coagulative necrosis + neutrophils = acute MI วันที่ 1–3\n• Myocarditis = lymphocytic infiltrate + myocyte damage (มักหลังติดเชื้อไวรัส)\nTrap: ดูชนิดเซลล์อักเสบ — neutrophil = MI ระยะแรก, lymphocyte = myocarditis, macrophage = MI วันที่ 3–7",
+   "audit_note": "เฉลยต้นฉบับวินิจฉัย myocarditis แต่ภาพเป็น coagulative necrosis + neutrophil infiltrate ซึ่งเป็น acute MI (วันที่ 1–3); myocarditis จะเป็น lymphocytic infiltrate",
+   "image": "img/51_OSPE_011.jpg",
+   "refs": [
+    {
+     "lecture": "L14",
+     "pages": [
+      34,
+      35
+     ],
+     "focus": "MI histology timeline",
+     "hotspot": {
+      "tier": 1,
+      "years": [
+       49,
+       50,
+       51,
+       52
+      ]
+     }
+    },
+    {
+     "lecture": "L14",
+     "pages": [
+      57
+     ],
+     "focus": "Myocarditis histology (lymphocytic) เทียบ MI",
+     "hotspot": {
+      "tier": 1,
+      "years": [
+       49,
+       50,
+       51,
+       52
+      ]
+     }
+    }
+   ],
+   "tags": [
+    "MI histology vs myocarditis",
+    "pathology",
+    "apply"
+   ],
+   "source": "import"
+  },
+  {
+   "id": "CVS-51-OSPE-012",
+   "block": "CVS",
+   "cohort": 51,
+   "n": 12,
+   "type": "OSPE",
+   "station": 12,
+   "stem": "ภาพ gross ของหัวใจตัดขวาง",
+   "items": [
+    {
+     "id": "12.1",
+     "prompt": "บรรยายพยาธิสภาพที่พบ",
+     "format": "short",
+     "accepted": [
+      "fibrosis",
+      "scar"
+     ],
+     "explanation": "Fibrosis/scar สีขาวแทนที่กล้ามเนื้อหัวใจ + ผนังบางลงบริเวณ scar"
+    },
+    {
+     "id": "12.2",
+     "prompt": "จงให้การวินิจฉัย",
+     "format": "short",
+     "accepted": [
+      "old myocardial infarction",
+      "chronic myocardial infarction",
+      "old mi",
+      "healed"
+     ],
+     "explanation": "Chronic (old/healed) myocardial infarction"
+    }
+   ],
+   "answer_status": "verified",
+   "explanation": "แผลเป็นสีขาวในกล้ามเนื้อหัวใจ = old MI",
+   "key_concept": "• ภาพนี้ออกซ้ำ (52_OSPE ข้อ 16)\n• แผลเป็นสีขาว-เทา = MI ที่หายแล้ว (> 2 เดือน)",
+   "image": "img/51_OSPE_012.jpg",
+   "refs": [
+    {
+     "lecture": "L14",
+     "pages": [
+      33
+     ],
+     "focus": "Gross MI",
+     "hotspot": {
+      "tier": 1,
+      "years": [
+       49,
+       50,
+       51,
+       52
+      ]
+     }
+    },
+    {
+     "lecture": "L14",
+     "pages": [
+      37
+     ],
+     "focus": "MI complications (rupture, aneurysm)",
+     "hotspot": {
+      "tier": 1,
+      "years": [
+       49,
+       50,
+       51,
+       52
+      ]
+     }
+    }
+   ],
+   "tags": [
+    "Gross pathology of MI",
+    "pathology",
+    "apply"
+   ],
+   "source": "import"
+  },
+  {
+   "id": "CVS-51-OSPE-013",
+   "block": "CVS",
+   "cohort": 51,
+   "n": 13,
+   "type": "OSPE",
+   "station": 13,
+   "stem": "Chest X-ray PA view (ลูกศร A–D ที่ขอบซ้ายของหัวใจ)",
+   "items": [
+    {
+     "id": "13.1",
+     "prompt": "A คือ",
+     "format": "short",
+     "accepted": [
+      "aortic knob",
+      "aortic knuckle",
+      "aortic arch"
+     ],
+     "explanation": "Aortic knob"
+    },
+    {
+     "id": "13.2",
+     "prompt": "B คือ",
+     "format": "short",
+     "accepted": [
+      "main pulmonary artery",
+      "pulmonary trunk"
+     ],
+     "explanation": "Main pulmonary artery (pulmonary trunk)"
+    },
+    {
+     "id": "13.3",
+     "prompt": "C คือ",
+     "format": "short",
+     "accepted": [
+      "left atrium",
+      "left atrial appendage",
+      "la"
+     ],
+     "explanation": "Left atrium (left atrial appendage)"
+    },
+    {
+     "id": "13.4",
+     "prompt": "D คือ",
+     "format": "short",
+     "accepted": [
+      "left ventricle",
+      "lv"
+     ],
+     "explanation": "Left ventricle"
+    }
+   ],
+   "answer_status": "verified",
+   "explanation": "A aortic knob, B main PA, C LA, D LV",
+   "key_concept": "• ขอบซ้ายของหัวใจบน PA CXR บนลงล่าง: aortic knob → main PA → LA appendage → LV\n• ขอบขวา: SVC → RA",
+   "image": "img/51_OSPE_013.jpg",
+   "refs": [
+    {
+     "lecture": "L12",
+     "pages": [
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+     ],
+     "focus": "Cardiac silhouette: ขอบซ้าย aortic knob → MPA → LAA → LV",
+     "hotspot": {
+      "tier": 1,
+      "years": [
+       49,
+       50,
+       51,
+       52
+      ]
+     }
+    }
+   ],
+   "tags": [
+    "Cardiac silhouette on CXR",
+    "anatomy",
+    "recall"
+   ],
+   "source": "import"
+  },
+  {
+   "id": "CVS-51-OSPE-014",
+   "block": "CVS",
+   "cohort": 51,
+   "n": 14,
+   "type": "OSPE",
+   "station": 14,
+   "stem": "Chest X-ray PA view",
+   "items": [
+    {
+     "id": "14.1",
+     "prompt": "บอกลักษณะของหัวใจ (morphology/configuration)",
+     "format": "short",
+     "accepted": [
+      "cardiomegaly",
+      "double density",
+      "widened carina",
+      "mitral configuration"
+     ],
+     "explanation": "Cardiomegaly + double density + carina กว้าง + LA appendage นูน = mitral configuration"
+    },
+    {
+     "id": "14.2",
+     "prompt": "บอกสาเหตุที่ทำให้หัวใจมีลักษณะนี้ 2 ข้อ",
+     "format": "short",
+     "accepted": [
+      "mitral stenosis",
+      "mitral regurgitation",
+      "mitral",
+      "heart failure"
+     ],
+     "explanation": "Mitral valve disease (MS, MR) → LA โต; heart failure"
+    }
+   ],
+   "answer_status": "verified",
+   "explanation": "LA โต (mitral configuration) จาก mitral valve disease",
+   "key_concept": "• Mitral configuration = LA enlargement (double density, carina กว้าง > 90°, straight left heart border) ± pulmonary venous HTN + RV โต\n• สาเหตุ: mitral stenosis (rheumatic) และ mitral regurgitation",
+   "image": "img/51_OSPE_014.jpg",
+   "refs": [
+    {
+     "lecture": "L12",
+     "pages": [
+      45,
+      46
+     ],
+     "focus": "Mitral configuration",
+     "hotspot": {
+      "tier": 2,
+      "years": [
+       51
+      ]
+     }
+    },
+    {
+     "lecture": "L12",
+     "pages": [
+      22,
+      23
+     ],
+     "focus": "LA enlargement signs",
+     "hotspot": {
+      "tier": 1,
+      "years": [
+       50,
+       51,
+       52
+      ]
+     }
+    }
+   ],
+   "tags": [
+    "Mitral configuration on CXR",
+    "clinical",
+    "apply"
+   ],
+   "source": "import"
+  },
+  {
+   "id": "CVS-51-OSPE-015",
+   "block": "CVS",
+   "cohort": 51,
+   "n": 15,
+   "type": "OSPE",
+   "station": 15,
+   "stem": "[ฉบับ 2 ข้อ 5 — สอบร่วม Respiratory & CVS] ภาพหัวใจด้านหน้า",
+   "items": [
+    {
+     "id": "15.1",
+     "prompt": "โครงสร้างหมายเลข 1",
+     "format": "short",
+     "accepted": [
+      "ascending aorta",
+      "aorta",
+      "pulmonary trunk"
+     ],
+     "explanation": "น่าจะเป็น ascending aorta (หรือ pulmonary trunk ตามตำแหน่งลูกศร) — ใช้ตัดสินเอง"
+    },
+    {
+     "id": "15.2",
+     "prompt": "โครงสร้างหมายเลข 2",
+     "format": "short",
+     "accepted": [
+      "right auricle",
+      "right atrial appendage"
+     ],
+     "explanation": "Right auricle (right atrial appendage)"
+    },
+    {
+     "id": "15.3",
+     "prompt": "โครงสร้างหมายเลข 3",
+     "format": "short",
+     "accepted": [
+      "pulmonary trunk",
+      "right marginal",
+      "conus arteriosus",
+      "infundibulum"
+     ],
+     "explanation": "ลูกศร 3 บน = pulmonary trunk/conus arteriosus; ลูกศร 3 ล่าง = right marginal artery — ใช้ตัดสินเอง"
+    },
+    {
+     "id": "15.4",
+     "prompt": "โครงสร้างหมายเลข 4",
+     "format": "short",
+     "accepted": [
+      "right coronary artery",
+      "rca",
+      "anterior cardiac vein"
+     ],
+     "explanation": "Right coronary artery ใน AV groove ขวา (หรือ anterior cardiac vein ที่ข้ามร่อง)"
+    }
+   ],
+   "answer_status": "draft",
+   "explanation": "Anterior surface ของหัวใจ: great vessels, right auricle, RCA และแขนง",
+   "key_concept": "• ผิวหน้าของหัวใจ: RV เป็นส่วนใหญ่, RA + right auricle ทางขวา, LV ขอบซ้าย/apex\n• Great vessels ด้านบน: pulmonary trunk อยู่หน้า-ซ้ายของ ascending aorta\n• RCA วิ่งใน right AV groove ให้ right marginal branch ตามขอบล่าง",
+   "audit_note": "ต้นฉบับไม่มีเฉลย และภาพมีลูกศรไม่ระบุเลขหลายอัน + เลข 3 ซ้ำ 2 ตำแหน่ง — ร่างเฉลยเองด้วยความมั่นใจต่ำ",
+   "image": "img/51_OSPE_015.jpg",
+   "refs": [
+    {
+     "lecture": "L01",
+     "pages": [
+      13,
+      14
+     ],
+     "focus": "Surfaces, borders, sulci",
+     "hotspot": {
+      "tier": 1,
+      "years": [
+       49,
+       50,
+       51,
+       52
+      ]
+     }
+    },
+    {
+     "lecture": "L01",
+     "pages": [
+      31,
+      32
+     ],
+     "focus": "Coronary arteries/veins บนผิวหัวใจ",
+     "hotspot": {
+      "tier": 1,
+      "years": [
+       49,
+       50,
+       51,
+       52
+      ]
+     }
+    }
+   ],
+   "tags": [
+    "External features of the heart",
+    "anatomy",
+    "recall"
+   ],
+   "source": "import"
+  },
+  {
+   "id": "CVS-51-OSPE-016",
+   "block": "CVS",
+   "cohort": 51,
+   "n": 16,
+   "type": "OSPE",
+   "station": 16,
+   "stem": "[ฉบับ 2 ข้อ 6] ภาพภายในหัวใจห้องบนขวา (right atrium)",
+   "items": [
+    {
+     "id": "16.1",
+     "prompt": "โครงสร้างหมายเลข 1",
+     "format": "short",
+     "accepted": [
+      "pectinate"
+     ],
+     "explanation": "Pectinate muscles"
+    },
+    {
+     "id": "16.2",
+     "prompt": "โครงสร้างหมายเลข 2",
+     "format": "short",
+     "accepted": [
+      "fossa ovalis",
+      "limbus"
+     ],
+     "explanation": "Fossa ovalis (ร่องรอยของ foramen ovale) / limbus fossae ovalis"
+    },
+    {
+     "id": "16.3",
+     "prompt": "โครงสร้างหมายเลข 3",
+     "format": "short",
+     "accepted": [
+      "crista terminalis"
+     ],
+     "explanation": "Crista terminalis (สันแบ่งส่วนผนังขรุขระ–เรียบ)"
+    },
+    {
+     "id": "16.4",
+     "prompt": "โครงสร้างหมายเลข 4",
+     "format": "short",
+     "accepted": [
+      "coronary sinus",
+      "inferior vena cava",
+      "ivc"
+     ],
+     "explanation": "Opening of coronary sinus (± valve of coronary sinus) — หรือ IVC opening ตามตำแหน่ง"
+    }
+   ],
+   "answer_status": "draft",
+   "explanation": "Pectinate muscles, fossa ovalis, crista terminalis, coronary sinus opening",
+   "key_concept": "• RA แบ่งเป็นส่วนขรุขระ (pectinate muscles, มาจาก primitive atrium) กับส่วนเรียบ (sinus venarum, มาจาก sinus venosus) คั่นด้วย crista terminalis\n• ผนังกั้น: fossa ovalis + limbus\n• รูเปิด: SVC, IVC (Eustachian valve), coronary sinus (Thebesian valve)",
+   "audit_note": "ต้นฉบับไม่มีเฉลย — ร่างเอง",
+   "image": "img/51_OSPE_016.jpg",
+   "refs": [
+    {
+     "lecture": "L01",
+     "pages": [
+      17
+     ],
+     "focus": "RA: pectinate, crista terminalis, fossa ovalis, coronary sinus opening",
+     "hotspot": {
+      "tier": 1,
+      "years": [
+       50,
+       51,
+       52
+      ]
+     }
+    },
+    {
+     "lecture": "L05",
+     "pages": [
+      30,
+      31,
+      32
+     ],
+     "focus": "Embryology: sinus venarum, crista terminalis",
+     "hotspot": {
+      "tier": 1,
+      "years": [
+       50,
+       51,
+       52
+      ]
+     }
+    }
+   ],
+   "tags": [
+    "Internal features of RA",
+    "anatomy",
+    "recall"
+   ],
+   "source": "import"
+  },
+  {
+   "id": "CVS-51-OSPE-017",
+   "block": "CVS",
+   "cohort": 51,
+   "n": 17,
+   "type": "OSPE",
+   "station": 17,
+   "stem": "[ฉบับ 2 ข้อ 7] ภาพ mediastinum ด้านซ้าย (เปิดหัวใจห้องล่างซ้าย)",
+   "items": [
+    {
+     "id": "17.1",
+     "prompt": "โครงสร้างหมายเลข 1 คือ",
+     "format": "short",
+     "accepted": [
+      "ligamentum arteriosum"
+     ],
+     "explanation": "Ligamentum arteriosum (เชื่อม left pulmonary artery กับ aortic arch)"
+    },
+    {
+     "id": "17.2",
+     "prompt": "โครงสร้างหมายเลข 1 พัฒนามาจากส่วนใดในครรภ์",
+     "format": "short",
+     "accepted": [
+      "ductus arteriosus"
+     ],
+     "explanation": "Ductus arteriosus (จาก left 6th aortic arch) ปิดหลังคลอดกลายเป็น ligamentum arteriosum"
+    },
+    {
+     "id": "17.3",
+     "prompt": "โครงสร้างหมายเลข 3 คือ",
+     "format": "short",
+     "accepted": [
+      "chordae tendineae"
+     ],
+     "explanation": "Chordae tendineae ของ mitral valve"
+    },
+    {
+     "id": "17.4",
+     "prompt": "ชื่อจำเพาะของโครงสร้างหมายเลข 2",
+     "format": "short",
+     "accepted": [
+      "left recurrent laryngeal",
+      "recurrent laryngeal"
+     ],
+     "explanation": "Left recurrent laryngeal nerve (วนใต้ arch ข้าง ligamentum arteriosum)"
+    }
+   ],
+   "answer_status": "draft",
+   "explanation": "Ligamentum arteriosum (จาก ductus arteriosus), left recurrent laryngeal n., chordae tendineae",
+   "key_concept": "• Fetal remnants: ductus arteriosus → ligamentum arteriosum; foramen ovale → fossa ovalis; umbilical vein → ligamentum teres; ductus venosus → ligamentum venosum\n• Left recurrent laryngeal nerve วนใต้ aortic arch ข้าง ligamentum arteriosum",
+   "audit_note": "ต้นฉบับไม่มีเฉลย — ร่างเองตามคำถาม (7.2 ถามว่าหมายเลข 1 พัฒนามาจากอะไร)",
+   "image": "img/51_OSPE_017.jpg",
+   "refs": [
+    {
+     "lecture": "L01",
+     "pages": [
+      37
+     ],
+     "focus": "Ligamentum arteriosum (ductus arteriosus) + L recurrent laryngeal",
+     "hotspot": {
+      "tier": 1,
+      "years": [
+       50,
+       51,
+       52
+      ]
+     }
+    },
+    {
+     "lecture": "L05",
+     "pages": [
+      55
+     ],
+     "focus": "Fetal remnants: ligamentum teres, ligamentum venosum",
+     "hotspot": {
+      "tier": 2,
+      "years": [
+       51
+      ]
+     }
+    },
+    {
+     "lecture": "L05",
+     "pages": [
+      68
+     ],
+     "focus": "6th arch → ductus arteriosus",
+     "hotspot": {
+      "tier": 1,
+      "years": [
+       49,
+       50,
+       51
+      ]
+     }
+    }
+   ],
+   "tags": [
+    "Fetal remnants & left mediastinum",
+    "anatomy",
+    "recall"
+   ],
+   "source": "import"
+  }
+ ],
+ "guide": {
+  "recent_years": [
+   50,
+   51,
+   52
+  ],
+  "set_summary": [
+   {
+    "lecture": "L06",
+    "count": 4
+   },
+   {
+    "lecture": "L03",
+    "count": 4
+   },
+   {
+    "lecture": "L14",
+    "count": 4
+   },
+   {
+    "lecture": "L01",
+    "count": 3
+   },
+   {
+    "lecture": "CC2",
+    "count": 2
+   },
+   {
+    "lecture": "L12",
+    "count": 2
+   },
+   {
+    "lecture": "L05",
+    "count": 2
+   },
+   {
+    "lecture": "CC5",
+    "count": 1
+   }
+  ],
+  "lectures": [
+   {
+    "lecture": "L06",
+    "topics": [
+     {
+      "heading": "Layers of the heart wall",
+      "pages": [
+       4,
+       4
+      ],
+      "tier": 1,
+      "years": [
+       51,
+       52
+      ],
+      "summary": "Endocardium, myocardium (cardiac muscle), epicardium (visceral serous pericardium)",
+      "focus": [
+       {
+        "text": "ผนังหัวใจ + Purkinje fibers ใน subendocardium",
+        "years": [
+         51
+        ]
+       },
+       {
+        "text": "ผนังหัวใจ: endocardium, subendocardium + Purkinje fibers, myocardium (intercalated disc), epicardium",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [
+       "CVS-51-OSPE-002"
+      ],
+      "in_set": true,
+      "n_all_years": 2
+     },
+     {
+      "heading": "Endocardium",
+      "pages": [
+       5,
+       5
+      ],
+      "tier": 1,
+      "years": [
+       51,
+       52
+      ],
+      "summary": "3 ชั้น: endothelium (squamous), subendothelial layer (dense CT + smooth muscle), subendocardium (มี Purkinje fibers)",
+      "focus": [],
+      "role": "supporting",
+      "question_ids": [],
+      "in_set": true,
+      "n_all_years": 0
+     },
+     {
+      "heading": "Purkinje fibers",
+      "pages": [
+       6,
+       6
+      ],
+      "tier": 1,
+      "years": [
+       51,
+       52
+      ],
+      "summary": "Specialized cardiac muscle นำไฟฟ้า อยู่ใน subendocardium ของ ventricle: เซลล์ใหญ่ ติดสีจาง myofibril น้อย nucleus ชัด (ออก OSPE)",
+      "focus": [],
+      "role": "supporting",
+      "question_ids": [],
+      "in_set": true,
+      "n_all_years": 0
+     },
+     {
+      "heading": "Myocardium: cardiac muscle",
+      "pages": [
+       7,
+       7
+      ],
+      "tier": 1,
+      "years": [
+       51,
+       52
+      ],
+      "summary": "เซลล์แตกแขนง nucleus เดียวอยู่กลาง มีลาย (striation) และ intercalated discs",
+      "focus": [],
+      "role": "supporting",
+      "question_ids": [],
+      "in_set": true,
+      "n_all_years": 0
+     },
+     {
+      "heading": "Epicardium",
+      "pages": [
+       8,
+       8
+      ],
+      "tier": 1,
+      "years": [
+       51,
+       52
+      ],
+      "summary": "Visceral serous pericardium: mesothelium + connective tissue, ไขมัน, หลอดเลือด (coronary vessels)",
+      "focus": [],
+      "role": "supporting",
+      "question_ids": [],
+      "in_set": true,
+      "n_all_years": 0
+     },
+     {
+      "heading": "Generalized structure of blood vessels",
+      "pages": [
+       11,
+       11
+      ],
+      "tier": 1,
+      "years": [
+       49,
+       51,
+       52
+      ],
+      "summary": "Intima: endothelium, subendothelial layer, internal elastic lamina; media: smooth muscle, collagen, elastic lamellae (elastic artery), external elastic lamina; adventitia: collagen, elastic fibers, fibroblast, macrophage, vasa vasorum",
+      "focus": [
+       {
+        "text": "3 ชั้นของหลอดเลือด: adventitia มี vasa vasorum",
+        "years": [
+         49
+        ]
+       },
+       {
+        "text": "Elastic vs muscular artery: elastic laminae vs IEL หยัก + smooth muscle",
+        "years": [
+         51
+        ]
+       },
+       {
+        "text": "Histology หลอดเลือด: elastic/muscular artery, large/medium vein",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [
+       "CVS-51-OSPE-003"
+      ],
+      "in_set": true,
+      "n_all_years": 3
+     },
+     {
+      "heading": "Large (elastic) artery",
+      "pages": [
+       12,
+       12
+      ],
+      "tier": 1,
+      "years": [
+       49,
+       50,
+       51,
+       52
+      ],
+      "summary": "Aorta, pulmonary trunk, สาขาหลัก: ช่วยให้เลือดไหลต่อเนื่อง; TI บาง; TM มี fenestrated elastic laminae 40–60 ชั้น + smooth muscle; TA บาง มี vasa vasorum; IEL/EEL ไม่ชัด",
+      "focus": [],
+      "role": "supporting",
+      "question_ids": [],
+      "in_set": true,
+      "n_all_years": 0
+     },
+     {
+      "heading": "Medium (muscular) artery",
+      "pages": [
+       13,
+       13
+      ],
+      "tier": 1,
+      "years": [
+       50,
+       52
+      ],
+      "summary": "Carotid, brachial, radial, ulnar, femoral, renal, mesenteric, intercostal: TI มี IEL หยักเด่นชัด; TM smooth muscle วงกลม 25–40 ชั้น; มี EEL; TA หนาเท่า TM (ออก OSPE ทุกปี)",
+      "focus": [
+       {
+        "text": "Muscular artery: IEL หยัก smooth muscle หนา",
+        "years": [
+         50
+        ]
+       },
+       {
+        "text": "Muscular artery: IEL หยักชัด, smooth muscle 25–40 ชั้น, EEL",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": true,
+      "n_all_years": 2
+     },
+     {
+      "heading": "Elastic vs muscular artery",
+      "pages": [
+       14,
+       14
+      ],
+      "tier": 1,
+      "years": [
+       49,
+       50,
+       51,
+       52
+      ],
+      "summary": "เทียบภาพ elastic artery (elastic เต็ม media) กับ muscular artery (smooth muscle เด่น, external elastic membrane)",
+      "focus": [],
+      "role": "supporting",
+      "question_ids": [],
+      "in_set": true,
+      "n_all_years": 0
+     },
+     {
+      "heading": "Arteriole",
+      "pages": [
+       15,
+       15
+      ],
+      "tier": 1,
+      "years": [
+       50,
+       52
+      ],
+      "summary": "คุมความต้านทาน (หดตัวลด flow); ผนังหนาเทียบกับ lumen; TI มีแต่ endothelium ไม่มี IEL/EEL; TM smooth muscle 1–5 ชั้น; TA บาง",
+      "focus": [
+       {
+        "text": "Arteriole: smooth muscle 1–5 ชั้น ผนังหนาเทียบ lumen",
+        "years": [
+         50
+        ]
+       },
+       {
+        "text": "Arteriole: endothelium + smooth muscle 1–5 ชั้น ไม่มี IEL/EEL",
+        "years": [
+         52
+        ]
+       },
+       {
+        "text": "Arteriole",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": true,
+      "n_all_years": 3
+     },
+     {
+      "heading": "Large vein",
+      "pages": [
+       16,
+       16
+      ],
+      "tier": 1,
+      "years": [
+       50,
+       51,
+       52
+      ],
+      "summary": "SVC, IVC, internal jugular, portal vein: TI พัฒนาดี; TM บาง; TA หนาที่สุดมี smooth muscle เรียงตามยาว (ยืดหดตามการหายใจ) — ออก OSPE",
+      "focus": [
+       {
+        "text": "Large vein (SVC): adventitia หนา smooth muscle ตามยาว",
+        "years": [
+         50
+        ]
+       },
+       {
+        "text": "Large/medium vein + venous valve",
+        "years": [
+         50
+        ]
+       },
+       {
+        "text": "Large vein vs medium vein (radial vein = medium vein)",
+        "years": [
+         51
+        ]
+       },
+       {
+        "text": "Large vein: adventitia หนา smooth muscle ตามยาว",
+        "years": [
+         51
+        ]
+       },
+       {
+        "text": "Large vein (SVC, IVC, portal): adventitia หนา มี smooth muscle ตามยาว",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [
+       "CVS-51-OSPE-004"
+      ],
+      "in_set": true,
+      "n_all_years": 5
+     },
+     {
+      "heading": "Large artery vs large vein",
+      "pages": [
+       17,
+       17
+      ],
+      "tier": 1,
+      "years": [
+       49,
+       50,
+       51,
+       52
+      ],
+      "summary": "เทียบ: elastic artery media หนา; large vein adventitia หนา media บาง",
+      "focus": [],
+      "role": "supporting",
+      "question_ids": [],
+      "in_set": true,
+      "n_all_years": 0
+     },
+     {
+      "heading": "Medium vein",
+      "pages": [
+       18,
+       18
+      ],
+      "tier": 1,
+      "years": [
+       49,
+       50,
+       51,
+       52
+      ],
+      "summary": "Brachial, radial, femoral, renal, mesenteric, basilic, cephalic veins: lumen ใหญ่ยุบ ผนังบาง; TM บาง smooth muscle น้อย collagen มาก; TA loose fibroelastic + vasa vasorum",
+      "focus": [],
+      "role": "supporting",
+      "question_ids": [],
+      "in_set": true,
+      "n_all_years": 0
+     },
+     {
+      "heading": "Valve of vein",
+      "pages": [
+       19,
+       19
+      ],
+      "tier": 1,
+      "years": [
+       49,
+       50,
+       51,
+       52
+      ],
+      "summary": "Venous valve = การพับของ tunica intima",
+      "focus": [],
+      "role": "supporting",
+      "question_ids": [],
+      "in_set": true,
+      "n_all_years": 0
+     },
+     {
+      "heading": "Venule",
+      "pages": [
+       20,
+       20
+      ],
+      "tier": 1,
+      "years": [
+       50,
+       52
+      ],
+      "summary": "Lumen ใหญ่ยุบ ผนังบาง; TI endothelium แบน 1 ชั้น; TM CT น้อย; TA collagen + fibroblast",
+      "focus": [
+       {
+        "text": "Venule: ผนังบาง lumen ใหญ่ยุบ",
+        "years": [
+         50
+        ]
+       },
+       {
+        "text": "Venule และ capillary 3 ชนิด (continuous, fenestrated, sinusoid)",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": true,
+      "n_all_years": 2
+     },
+     {
+      "heading": "Capillaries",
+      "pages": [
+       21,
+       21
+      ],
+      "tier": 1,
+      "years": [
+       50,
+       51,
+       52
+      ],
+      "summary": "หลอดเลือดเล็กสุด ผนัง endothelium ชั้นเดียว ให้ RBC ผ่านทีละเซลล์; pericytes ช่วยค้ำ; 3 ชนิด: continuous, fenestrated, sinusoid",
+      "focus": [
+       {
+        "text": "Capillary 3 ชนิด",
+        "years": [
+         50
+        ]
+       },
+       {
+        "text": "Capillary 3 ชนิด: continuous, fenestrated, sinusoid",
+        "years": [
+         51
+        ]
+       },
+       {
+        "text": "ชนิด capillary: continuous, fenestrated (ไต ลำไส้ ต่อมไร้ท่อ), sinusoid",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [
+       "CVS-51-OSPE-001"
+      ],
+      "in_set": true,
+      "n_all_years": 3
+     },
+     {
+      "heading": "Continuous capillary",
+      "pages": [
+       22,
+       22
+      ],
+      "tier": 1,
+      "years": [
+       49,
+       50,
+       51,
+       52
+      ],
+      "summary": "Endothelium ต่อเนื่องเชื่อมด้วย tight junction มี intercellular cleft ให้ของเหลวผ่าน; พบใน muscle, CT, lung, skin (สมอง = BBB)",
+      "focus": [],
+      "role": "supporting",
+      "question_ids": [],
+      "in_set": true,
+      "n_all_years": 0
+     },
+     {
+      "heading": "Fenestrated capillary",
+      "pages": [
+       23,
+       23
+      ],
+      "tier": 1,
+      "years": [
+       49,
+       50,
+       51,
+       52
+      ],
+      "summary": "มี fenestrations, basement membrane ต่อเนื่อง, permeability สูง; พบที่ลำไส้เล็ก ต่อมไร้ท่อ ไต",
+      "focus": [],
+      "role": "supporting",
+      "question_ids": [],
+      "in_set": true,
+      "n_all_years": 0
+     },
+     {
+      "heading": "Sinusoidal capillary",
+      "pages": [
+       24,
+       24
+      ],
+      "tier": 1,
+      "years": [
+       49,
+       50,
+       51,
+       52
+      ],
+      "summary": "Leaky lumen ใหญ่ ให้โปรตีน/เซลล์ผ่าน flow ช้า; พบใน liver, bone marrow, lymphoid tissue (ออก OSPE: sinusoid ในตับ)",
+      "focus": [],
+      "role": "supporting",
+      "question_ids": [],
+      "in_set": true,
+      "n_all_years": 0
+     },
+     {
+      "heading": "Conclusions: comparison of vessels",
+      "pages": [
+       26,
+       26
+      ],
+      "tier": 2,
+      "years": [
+       52
+      ],
+      "summary": "Elastic a.: elastic มากใน TM, IEL/EEL ไม่ชัด; muscular a.: 3 ชั้นชัด IEL หยักชัดสุด smooth muscle มาก; arteriole: ชั้นไม่ชัด smooth muscle ≤5 ชั้น; large v.: TI/TM บาง TA มี smooth muscle มาก; medium v.: ผนังบางเทียบ lumen TA หนา; venule: endothelium บางบน CT",
+      "focus": [
+       {
+        "text": "สรุปเทียบลักษณะหลอดเลือดแต่ละชนิด",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 1
+     }
+    ],
+    "best_tier": 1,
+    "pages_total": 19,
+    "n_in_set": 4
+   },
+   {
+    "lecture": "L03",
+    "topics": [
+     {
+      "heading": "Propagation of action potential",
+      "pages": [
+       3,
+       3
+      ],
+      "tier": 1,
+      "years": [
+       50,
+       51
+      ],
+      "summary": "SA node → atria (endo → epi) = P wave; ventricle: septum = Q, ventricles = R, LV base = S; ventricular repolarization epi → endo = T wave; atrial repolarization ซ่อนใน QRS",
+      "focus": [
+       {
+        "text": "Septum → ventricles → base",
+        "years": [
+         50
+        ]
+       },
+       {
+        "text": "Septum = Q, ventricles = R, base = S",
+        "years": [
+         51
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 2
+     },
+     {
+      "heading": "Ventricular depolarization vectors",
+      "pages": [
+       10,
+       10
+      ],
+      "tier": 1,
+      "years": [
+       50,
+       51
+      ],
+      "summary": "(1) septum ก่อน → septal vector เล็ก (ซ้าย → ขวา) (2) main vector ใหญ่ เด่นด้วย LV (3) LV base สุดท้าย → terminal vector เล็ก",
+      "focus": [
+       {
+        "text": "ลำดับ ventricular depolarization: LV base สุดท้าย",
+        "years": [
+         50
+        ]
+       },
+       {
+        "text": "ลำดับ ventricular depolarization: septum → main → LV base สุดท้าย",
+        "years": [
+         51
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 2
+     },
+     {
+      "heading": "Hexaxial reference system",
+      "pages": [
+       17,
+       17
+      ],
+      "tier": 1,
+      "years": [
+       49,
+       50,
+       51,
+       52
+      ],
+      "summary": "มุม lead: I 0°, II +60°, III +120°, aVF +90°, aVL −30°, aVR −150°; normal QRS axis −30° ถึง +90°",
+      "focus": [
+       {
+        "text": "Hexaxial: lead ตรงข้าม vector → ลบมากสุด",
+        "years": [
+         49
+        ]
+       },
+       {
+        "text": "Hexaxial",
+        "years": [
+         50
+        ]
+       },
+       {
+        "text": "Hexaxial: lead ตั้งฉากกับ axis จะ biphasic; lead ตรงข้ามจะลบมากสุด",
+        "years": [
+         51
+        ]
+       },
+       {
+        "text": "Hexaxial reference",
+        "years": [
+         51
+        ]
+       },
+       {
+        "text": "Hexaxial: มุมของแต่ละ lead",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [
+       "CVS-51-OSPE-008"
+      ],
+      "in_set": true,
+      "n_all_years": 5
+     },
+     {
+      "heading": "The chest leads",
+      "pages": [
+       18,
+       18
+      ],
+      "tier": 1,
+      "years": [
+       50,
+       51
+      ],
+      "summary": "V1–V2 QRS ลบ (electrode อยู่ฝั่ง base), V4–V6 QRS บวก (ใกล้ apex) → R-wave progression",
+      "focus": [
+       {
+        "text": "R-wave progression V1–V6",
+        "years": [
+         50
+        ]
+       },
+       {
+        "text": "Chest leads: V1 QRS ลบ → V6 บวก (R-wave progression)",
+        "years": [
+         51
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [
+       "CVS-51-OSPE-007"
+      ],
+      "in_set": true,
+      "n_all_years": 2
+     },
+     {
+      "heading": "Electrocardiogram paper",
+      "pages": [
+       19,
+       19
+      ],
+      "tier": 1,
+      "years": [
+       50,
+       51,
+       52
+      ],
+      "summary": "1 ช่องเล็ก = 0.04 s, 1 ช่องใหญ่ = 0.20 s; 10 mm = 1 mV (1 ช่องเล็ก = 0.1 mV); speed 25 mm/s — ใช้คำนวณ OSPE",
+      "focus": [
+       {
+        "text": "ECG paper + interval ปกติ",
+        "years": [
+         50
+        ]
+       },
+       {
+        "text": "ECG paper + ค่าปกติ P, PR, QRS, QT",
+        "years": [
+         51
+        ]
+       },
+       {
+        "text": "ECG paper: 1 ช่องเล็ก 0.04 s, ใหญ่ 0.20 s",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [
+       "CVS-51-OSPE-005"
+      ],
+      "in_set": true,
+      "n_all_years": 3
+     },
+     {
+      "heading": "ECG waveform and normal values",
+      "pages": [
+       20,
+       20
+      ],
+      "tier": 1,
+      "years": [
+       49,
+       50,
+       51,
+       52
+      ],
+      "summary": "P < 0.12 s, < 2.5 mm; PR 0.12–0.20 s (AV conduction); QRS < 0.12 s; ST isoelectric (early repolarization); T upright ในเกือบทุก lead; QT ขึ้นกับ HR",
+      "focus": [],
+      "role": "supporting",
+      "question_ids": [],
+      "in_set": true,
+      "n_all_years": 0
+     },
+     {
+      "heading": "PR interval: AV conduction",
+      "pages": [
+       26,
+       26
+      ],
+      "tier": 1,
+      "years": [
+       50,
+       52
+      ],
+      "summary": "PR ปกติ 0.12–0.20 s; ยาวขึ้น = AV conduction ผิดปกติ (inflammation, ischemia, ยา, vagal)",
+      "focus": [
+       {
+        "text": "PR interval และ AV block",
+        "years": [
+         50
+        ]
+       },
+       {
+        "text": "PR interval และ AV conduction",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 2
+     },
+     {
+      "heading": "QRS complex: ventricular depolarization",
+      "pages": [
+       27,
+       27
+      ],
+      "tier": 1,
+      "years": [
+       50,
+       52
+      ],
+      "summary": "Q = ลงแรกก่อน R, R = ขึ้นแรก, S = ลงหลัง R; wide QRS > 0.12 s: BBB, ventricular rhythm, hyperkalemia, WPW; high voltage = LVH; low voltage < 5 mm: pericardial effusion, obesity, COPD",
+      "focus": [
+       {
+        "text": "WPW: delta wave, short PR, wide QRS (accessory pathway)",
+        "years": [
+         50
+        ]
+       },
+       {
+        "text": "QRS high voltage = LVH (สาเหตุบ่อย: HT)",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 2
+     },
+     {
+      "heading": "Cardiac rhythms: heart rate methods",
+      "pages": [
+       30,
+       30
+      ],
+      "tier": 1,
+      "years": [
+       51,
+       52
+      ],
+      "summary": "วิธีหา HR: large square (300/ช่องใหญ่), small square (1500/ช่องเล็ก), 10-second strip (จำนวน QRS × 6), R-to-R",
+      "focus": [
+       {
+        "text": "คำนวณ HR",
+        "years": [
+         51
+        ]
+       },
+       {
+        "text": "วิธีคำนวณ HR (300/1500/6-second)",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [
+       "CVS-51-OSPE-006"
+      ],
+      "in_set": true,
+      "n_all_years": 2
+     },
+     {
+      "heading": "Sinus rhythms",
+      "pages": [
+       32,
+       32
+      ],
+      "tier": 1,
+      "years": [
+       51
+      ],
+      "summary": "NSR; sinus tachycardia > 100 (ไข้, sympathetic, hyperthyroid); sinus bradycardia < 60 (hypothermia, vagal, carotid sinus, นักกีฬา); sinus arrhythmia: หายใจเข้า vagal ↓ HR ↑, หายใจออก vagal ↑ HR ↓",
+      "focus": [
+       {
+        "text": "Respiratory sinus arrhythmia: หายใจเข้า vagal ↓ HR ↑",
+        "years": [
+         51
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 1
+     },
+     {
+      "heading": "Atrial flutter and fibrillation",
+      "pages": [
+       33,
+       33
+      ],
+      "tier": 1,
+      "years": [
+       52
+      ],
+      "summary": "Flutter: วงจร circus movement มีระเบียบ, AV block 4:1, 3:1, 2:1 (sawtooth); AF: chaotic ไม่มี P wave ชัด, RR ไม่สม่ำเสมอ",
+      "focus": [
+       {
+        "text": "AF: ไม่มี P, RR ไม่สม่ำเสมอ",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 1
+     },
+     {
+      "heading": "Cardiac axis",
+      "pages": [
+       35,
+       35
+      ],
+      "tier": 1,
+      "years": [
+       50,
+       51,
+       52
+      ],
+      "summary": "Normal −30° ถึง +90°; LAD −30° ถึง −90°; RAD +90° ถึง +180°; extreme −90° ถึง 180°; หาแบบ quadrant (lead I + aVF) หรือ geometric; horizontal plane: transition ปกติที่ V3–V4",
+      "focus": [
+       {
+        "text": "Axis quadrant/deviation",
+        "years": [
+         50
+        ]
+       },
+       {
+        "text": "การหา axis",
+        "years": [
+         51
+        ]
+       },
+       {
+        "text": "Axis quadrant method",
+        "years": [
+         51
+        ]
+       },
+       {
+        "text": "Quadrant method, LAD/RAD",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [
+       "CVS-51-OSPE-008"
+      ],
+      "in_set": true,
+      "n_all_years": 4
+     },
+     {
+      "heading": "Mission 2: axis deviation in LVH",
+      "pages": [
+       41,
+       41
+      ],
+      "tier": 2,
+      "years": [
+       52
+      ],
+      "summary": "LVH → mean axis เบี่ยงซ้าย: QRS lead I บวกมากขึ้น, aVF ลบ",
+      "focus": [
+       {
+        "text": "LVH → left axis deviation",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 1
+     }
+    ],
+    "best_tier": 1,
+    "pages_total": 6,
+    "n_in_set": 4
+   },
+   {
+    "lecture": "L14",
+    "topics": [
+     {
+      "heading": "Edema and effusion: causes",
+      "pages": [
+       5,
+       5
+      ],
+      "tier": 1,
+      "years": [
+       49,
+       50,
+       51,
+       52
+      ],
+      "summary": "แรงที่คุมน้ำข้าม capillary: hydrostatic, colloid osmotic pressure, lymphatic drainage; สาเหตุ edema 5 ข้อ: hydrostatic ↑, plasma oncotic ↓, lymphatic obstruction, vascular permeability ↑, Na/water retention — ออกทุกปี (Starling forces)",
+      "focus": [
+       {
+        "text": "Starling forces และสาเหตุ edema",
+        "years": [
+         49
+        ]
+       },
+       {
+        "text": "Edema causes: lymphatic obstruction",
+        "years": [
+         49
+        ]
+       },
+       {
+        "text": "กลไก edema: Pc ↑, πc ↓, permeability, lymph",
+        "years": [
+         49
+        ]
+       },
+       {
+        "text": "Edema mechanisms: lymphatic obstruction",
+        "years": [
+         50
+        ]
+       },
+       {
+        "text": "Edema: lymphatic obstruction",
+        "years": [
+         51
+        ]
+       },
+       {
+        "text": "สาเหตุ edema: lymphatic obstruction (หลัง axillary dissection) ฯลฯ",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 6
+     },
+     {
+      "heading": "Edema: reduced plasma oncotic pressure",
+      "pages": [
+       6,
+       6
+      ],
+      "tier": 1,
+      "years": [
+       49,
+       50,
+       51,
+       52
+      ],
+      "summary": "Albumin ≈ ครึ่งหนึ่งของ plasma protein → การสร้างน้อย (liver failure, malnutrition) หรือเสียมาก (nephrotic) ทำให้ oncotic pressure ↓ → edema",
+      "focus": [],
+      "role": "supporting",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 0
+     },
+     {
+      "heading": "Edema: systemic mechanisms",
+      "pages": [
+       7,
+       7
+      ],
+      "tier": 1,
+      "years": [
+       49,
+       50,
+       51,
+       52
+      ],
+      "summary": "แผนภาพกลไก systemic edema ใน heart failure (venous pressure ↑ + RAAS), renal failure, malnutrition, hepatic failure, nephrotic syndrome",
+      "focus": [],
+      "role": "supporting",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 0
+     },
+     {
+      "heading": "Pulmonary embolism",
+      "pages": [
+       17,
+       17
+      ],
+      "tier": 2,
+      "years": [
+       52
+      ],
+      "summary": "PE ส่วนใหญ่มาจาก DVT; 60–80% ไม่มีอาการ; ก้อนใหญ่ → sudden death, acute right HF, saddle embolus ที่ bifurcation; ก้อนผ่าน ASD/VSD → paradoxical embolism",
+      "focus": [
+       {
+        "text": "PE จาก DVT; ผ่าน ASD/VSD → paradoxical embolism ไป systemic",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 1
+     },
+     {
+      "heading": "Sequential progression of coronary artery lesions",
+      "pages": [
+       30,
+       30
+      ],
+      "tier": 1,
+      "years": [
+       49,
+       50,
+       52
+      ],
+      "summary": "Plaque <70% → asymptomatic; >70% (critical stenosis) → stable angina; plaque disruption (thin cap, lipid core ↑, inflammation) → mural thrombus = unstable angina/subendocardial MI, occlusive thrombus = transmural MI/sudden death (ACS)",
+      "focus": [
+       {
+        "text": "Plaque disruption → MI; patterns of infarction ตาม coronary artery",
+        "years": [
+         49
+        ]
+       },
+       {
+        "text": "Plaque disruption → ACS",
+        "years": [
+         50,
+         52
+        ]
+       },
+       {
+        "text": "Plaque disruption → thrombus → ACS",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": true,
+      "n_all_years": 4
+     },
+     {
+      "heading": "Myocardial infarction",
+      "pages": [
+       31,
+       31
+      ],
+      "tier": 1,
+      "years": [
+       49,
+       50,
+       51,
+       52
+      ],
+      "summary": "MI = myocyte necrosis จาก ischemia; ส่วนใหญ่จาก acute thrombosis บน atherosclerotic plaque ที่แตก",
+      "focus": [],
+      "role": "supporting",
+      "question_ids": [],
+      "in_set": true,
+      "n_all_years": 0
+     },
+     {
+      "heading": "Patterns of infarction",
+      "pages": [
+       32,
+       32
+      ],
+      "tier": 1,
+      "years": [
+       49,
+       50,
+       51,
+       52
+      ],
+      "summary": "Transmural: LAD → anterior wall + septum; LCx → lateral wall; RCA → posterior/inferior wall + posterior septum; non-transmural: reperfusion → regional subendocardial, global hypotension → circumferential subendocardial, small vessel → microinfarcts",
+      "focus": [],
+      "role": "supporting",
+      "question_ids": [],
+      "in_set": true,
+      "n_all_years": 0
+     },
+     {
+      "heading": "MI: gross and microscopic",
+      "pages": [
+       33,
+       33
+      ],
+      "tier": 1,
+      "years": [
+       50,
+       51,
+       52
+      ],
+      "summary": "Acute anterior wall MI ขนาดใหญ่มีเลือดออก; histology: necrosis + contraction bands (reperfusion)",
+      "focus": [
+       {
+        "text": "Gross MI",
+        "years": [
+         50,
+         51
+        ]
+       },
+       {
+        "text": "Gross MI (hemorrhagic, mottling)",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [
+       "CVS-51-OSPE-012"
+      ],
+      "in_set": true,
+      "n_all_years": 3
+     },
+     {
+      "heading": "Evolution of morphologic changes in MI",
+      "pages": [
+       34,
+       34
+      ],
+      "tier": 1,
+      "years": [
+       51,
+       52
+      ],
+      "summary": "ตาราง gross/LM/EM ตามเวลา: 0–½ h reversible; ½–4 h wavy fibers; 4–12 h early coagulative necrosis; 12–24 h dark mottling, contraction band, early neutrophils; 1–3 d coagulative necrosis + brisk neutrophils (yellow-tan); 3–7 d macrophages; 7–10 d yellow-tan soft, granulation เริ่ม; 10–14 d granulation tissue; 2–8 wk collagen; >2 mo scar",
+      "focus": [
+       {
+        "text": "MI histology timeline",
+        "years": [
+         51
+        ]
+       },
+       {
+        "text": "MI timeline: wavy fibers, coagulative necrosis, neutrophils 1–3 d, macrophages, granulation, scar",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [
+       "CVS-51-OSPE-011"
+      ],
+      "in_set": true,
+      "n_all_years": 2
+     },
+     {
+      "heading": "Evolution of MI: histology",
+      "pages": [
+       35,
+       35
+      ],
+      "tier": 1,
+      "years": [
+       49,
+       50,
+       51,
+       52
+      ],
+      "summary": "ภาพ: 12 h–1 d coagulative necrosis + wavy fibers; 3–4 d neutrophils; 7–10 d phagocytosis โดย macrophage; 2 wk collagen deposition — ออก OSPE ทุกปี",
+      "focus": [],
+      "role": "supporting",
+      "question_ids": [],
+      "in_set": true,
+      "n_all_years": 0
+     },
+     {
+      "heading": "Cardiac biomarker for diagnosis of MI",
+      "pages": [
+       36,
+       36
+      ],
+      "tier": 1,
+      "years": [
+       49
+      ],
+      "summary": "Troponin หลุดจาก myofilament เมื่อเยื่อหุ้มเซลล์รั่ว; กราฟ: myoglobin ขึ้นเร็วสุดลงเร็ว (~1 วัน), CK-MB peak ~ 20 h กลับปกติ 2–3 วัน, troponin I สูงสุดและค้างนานสุด (ใช้ดู late MI; re-infarction ใช้ CK-MB)",
+      "focus": [
+       {
+        "text": "Biomarker curves: myoglobin, CK-MB, troponin",
+        "years": [
+         49
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": true,
+      "n_all_years": 1
+     },
+     {
+      "heading": "Complications of MI",
+      "pages": [
+       37,
+       37
+      ],
+      "tier": 1,
+      "years": [
+       50,
+       51,
+       52
+      ],
+      "summary": "Arrhythmia (VF → sudden death), contractile dysfunction (hypotension, pulmonary edema), myocardial rupture (1–5%), papillary muscle rupture, pericarditis (fibrinous), chamber dilation, mural thrombus, ventricular aneurysm, progressive HF",
+      "focus": [
+       {
+        "text": "MI complications",
+        "years": [
+         50
+        ]
+       },
+       {
+        "text": "MI complication: VF เป็นสาเหตุ sudden death",
+        "years": [
+         51
+        ]
+       },
+       {
+        "text": "MI complications (rupture, aneurysm)",
+        "years": [
+         51
+        ]
+       },
+       {
+        "text": "Complications of MI: arrhythmia (VF → sudden death) พบบ่อยและเร็วสุด, rupture, papillary muscle, pericarditis",
+        "years": [
+         52
+        ]
+       },
+       {
+        "text": "Complications of MI (rupture, aneurysm, mural thrombus)",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [
+       "CVS-51-OSPE-012"
+      ],
+      "in_set": true,
+      "n_all_years": 5
+     },
+     {
+      "heading": "Rheumatic fever and rheumatic heart disease",
+      "pages": [
+       42,
+       42
+      ],
+      "tier": 1,
+      "years": [
+       50
+      ],
+      "summary": "RF = immune-mediated multisystem inflammation หลัง group A strep pharyngitis ไม่กี่สัปดาห์; acute rheumatic carditis → chronic RHD; ผลสำคัญสุด = valvular deformity โดยเฉพาะ mitral stenosis",
+      "focus": [
+       {
+        "text": "Rheumatic fever → chronic RHD (mitral stenosis, fish-mouth, commissural fusion), Aschoff body",
+        "years": [
+         50
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": true,
+      "n_all_years": 1
+     },
+     {
+      "heading": "Pathogenesis of rheumatic fever",
+      "pages": [
+       43,
+       43
+      ],
+      "tier": 1,
+      "years": [
+       52
+      ],
+      "summary": "Antibody/T cell ต่อ streptococcal antigen (M protein) cross-react กับโปรตีนของหัวใจ = molecular mimicry (type II hypersensitivity)",
+      "focus": [
+       {
+        "text": "RF = molecular mimicry (type II hypersensitivity) ต่อ group A strep M protein",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": true,
+      "n_all_years": 1
+     },
+     {
+      "heading": "Clinical features of RF: Jones criteria",
+      "pages": [
+       44,
+       44
+      ],
+      "tier": 1,
+      "years": [
+       52
+      ],
+      "summary": "เกิด 10 วัน–6 สัปดาห์หลัง strep (~3%); Revised Jones: หลักฐาน strep + 2 major หรือ 1 major + 2 minor; major: carditis, polyarthritis, chorea, erythema marginatum, subcutaneous nodules; minor: fever, arthralgia, ESR/CRP ↑, prolonged PR (ช่วยจำ: ไข้ ข้อ คอ คา คิว ผิวแดง)",
+      "focus": [
+       {
+        "text": "Jones criteria major: carditis, polyarthritis, chorea, erythema marginatum, subcutaneous nodules",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": true,
+      "n_all_years": 1
+     },
+     {
+      "heading": "Acute rheumatic carditis",
+      "pages": [
+       45,
+       45
+      ],
+      "tier": 1,
+      "years": [
+       50,
+       51,
+       52
+      ],
+      "summary": "Vegetations เล็กๆ (verrucae) ตามแนวปิดของลิ้น; Aschoff bodies = T lymphocytes, plasma cells, Anitschkow cells (caterpillar cells) — ออก OSPE/KF",
+      "focus": [
+       {
+        "text": "Rheumatic: verrucous vegetation เล็กตามแนวปิดลิ้น",
+        "years": [
+         50
+        ]
+       },
+       {
+        "text": "Aschoff body, Anitschkow cells",
+        "years": [
+         51
+        ]
+       },
+       {
+        "text": "Aschoff body + Anitschkow cells",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [
+       "CVS-51-OSPE-010"
+      ],
+      "in_set": true,
+      "n_all_years": 3
+     },
+     {
+      "heading": "Chronic rheumatic heart disease",
+      "pages": [
+       46,
+       46
+      ],
+      "tier": 1,
+      "years": [
+       49,
+       50,
+       51,
+       52
+      ],
+      "summary": "Mitral stenosis: ลิ้นหนา fibrosis, commissural fusion, chordae หนาสั้น (fish-mouth); rheumatic aortic stenosis: cusp หนา commissure ติดกัน",
+      "focus": [],
+      "role": "supporting",
+      "question_ids": [],
+      "in_set": true,
+      "n_all_years": 0
+     },
+     {
+      "heading": "Infective endocarditis",
+      "pages": [
+       47,
+       47
+      ],
+      "tier": 1,
+      "years": [
+       50,
+       51,
+       52
+      ],
+      "summary": "การติดเชื้อที่ลิ้นหรือ mural endocardium → vegetation (thrombus + เชื้อ) ทำลายเนื้อเยื่อ; เชื้อเข้ากระแสเลือดจาก dental/surgical procedure, IV drug use, gut/oral source; ป้องกันด้วย antibiotic prophylaxis",
+      "focus": [
+       {
+        "text": "IE: organism, risk, stigmata, Duke criteria, complications",
+        "years": [
+         50
+        ]
+       },
+       {
+        "text": "IE: organism, risk, stigmata (splinter, Osler, Janeway, Roth)",
+        "years": [
+         51
+        ]
+       },
+       {
+        "text": "IE: organism (viridans subacute, S. aureus acute), stigmata (splinter, Osler, Janeway, Roth)",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": true,
+      "n_all_years": 3
+     },
+     {
+      "heading": "IE: risk and causative organisms",
+      "pages": [
+       48,
+       48
+      ],
+      "tier": 1,
+      "years": [
+       49,
+       50
+      ],
+      "summary": "ความเสี่ยง: valvular disease, prosthetic valve, CHD; เชื้อ: Strep viridans 50–60% (ลิ้นเดิมเสีย, subacute), S. aureus 20–30% (ลิ้นปกติ, IVDU, acute), enterococci, HACEK; prosthetic valve: S. aureus, S. epidermidis; culture negative 10%",
+      "focus": [
+       {
+        "text": "IE: risk, causative organisms, peripheral stigmata (splinter, Osler, Janeway, Roth)",
+        "years": [
+         49
+        ]
+       },
+       {
+        "text": "IE organisms: prosthetic valve = S. aureus, S. epidermidis",
+        "years": [
+         49
+        ]
+       },
+       {
+        "text": "S. aureus เป็นเชื้อของ IE (acute) ไม่ใช่ myocarditis ทั่วไป",
+        "years": [
+         50
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": true,
+      "n_all_years": 3
+     },
+     {
+      "heading": "Clinical features of IE",
+      "pages": [
+       49,
+       49
+      ],
+      "tier": 1,
+      "years": [
+       49,
+       50,
+       51,
+       52
+      ],
+      "summary": "Acute IE: ไข้สูง หนาวสั่น murmur; subacute IE: ไข้นาน อ่อนเพลีย น้ำหนักลด murmur, petechiae, splinter (subungual) hemorrhage, Roth spots",
+      "focus": [],
+      "role": "supporting",
+      "question_ids": [],
+      "in_set": true,
+      "n_all_years": 0
+     },
+     {
+      "heading": "IE: peripheral stigmata",
+      "pages": [
+       50,
+       50
+      ],
+      "tier": 1,
+      "years": [
+       49,
+       50,
+       51,
+       52
+      ],
+      "summary": "ภาพ stigmata ของ IE (เช่น splinter hemorrhage, Janeway lesion, Osler node, Roth spot) — ออก KF ทุกปีตั้งแต่ 49",
+      "focus": [],
+      "role": "supporting",
+      "question_ids": [],
+      "in_set": true,
+      "n_all_years": 0
+     },
+     {
+      "heading": "Diagnosis of IE: modified Duke criteria",
+      "pages": [
+       51,
+       51
+      ],
+      "tier": 1,
+      "years": [
+       52
+      ],
+      "summary": "Modified Duke criteria ใช้ predisposition, clinical findings, blood culture, imaging (echo) และ lab",
+      "focus": [
+       {
+        "text": "Modified Duke criteria และ complications ของ IE",
+        "years": [
+         52
+        ]
+       },
+       {
+        "text": "Modified Duke criteria: blood culture + echo เป็น major criteria",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": true,
+      "n_all_years": 2
+     },
+     {
+      "heading": "Diagnosis of IE",
+      "pages": [
+       52,
+       52
+      ],
+      "tier": 1,
+      "years": [
+       49,
+       50,
+       51,
+       52
+      ],
+      "summary": "ตาราง major/minor criteria ของ modified Duke",
+      "focus": [],
+      "role": "supporting",
+      "question_ids": [],
+      "in_set": true,
+      "n_all_years": 0
+     },
+     {
+      "heading": "IE: pathology",
+      "pages": [
+       53,
+       53
+      ],
+      "tier": 1,
+      "years": [
+       50
+      ],
+      "summary": "Vegetation เปราะ ใหญ่ ทำลายลิ้น; ring abscess",
+      "focus": [
+       {
+        "text": "IE: vegetation ใหญ่ เปราะ ทำลายลิ้น",
+        "years": [
+         50
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": true,
+      "n_all_years": 1
+     },
+     {
+      "heading": "IE: pathology images",
+      "pages": [
+       54,
+       54
+      ],
+      "tier": 1,
+      "years": [
+       49,
+       50,
+       51,
+       52
+      ],
+      "summary": "ภาพ gross/histology ของ IE",
+      "focus": [],
+      "role": "supporting",
+      "question_ids": [],
+      "in_set": true,
+      "n_all_years": 0
+     },
+     {
+      "heading": "Complications of IE",
+      "pages": [
+       55,
+       55
+      ],
+      "tier": 1,
+      "years": [
+       49,
+       51
+      ],
+      "summary": "หัวใจ: HF, valve insufficiency/stenosis, ring abscess + perforation, suppurative pericarditis; emboli: vegetation ซ้าย → brain/spleen/kidney abscess, vegetation ขวา → lung abscess",
+      "focus": [
+       {
+        "text": "Complications ของ IE: HF, valve insufficiency, abscess, emboli",
+        "years": [
+         49
+        ]
+       },
+       {
+        "text": "Complications ของ IE",
+        "years": [
+         51
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": true,
+      "n_all_years": 2
+     },
+     {
+      "heading": "Myocarditis",
+      "pages": [
+       56,
+       56
+      ],
+      "tier": 1,
+      "years": [
+       50,
+       52
+      ],
+      "summary": "การอักเสบของกล้ามเนื้อหัวใจจากเชื้อหรือ inflammation; ไวรัสพบบ่อยสุด (Coxsackie A/B, enterovirus); อาการตั้งแต่ไม่มี → arrhythmia, CHF, ไข้ เหนื่อย ใจสั่น",
+      "focus": [
+       {
+        "text": "Myocarditis: viral (Coxsackie) พบบ่อยสุด; histology",
+        "years": [
+         50
+        ]
+       },
+       {
+        "text": "Myocarditis ส่วนใหญ่จาก Coxsackievirus; lymphocytic infiltrate",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": true,
+      "n_all_years": 2
+     },
+     {
+      "heading": "Myocarditis: histology",
+      "pages": [
+       57,
+       57
+      ],
+      "tier": 1,
+      "years": [
+       51
+      ],
+      "summary": "Viral: lymphocytic infiltrate กระจาย; hypersensitivity: eosinophils + mononuclear cells",
+      "focus": [
+       {
+        "text": "Myocarditis histology (lymphocytic) เทียบ MI",
+        "years": [
+         51
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [
+       "CVS-51-OSPE-011"
+      ],
+      "in_set": true,
+      "n_all_years": 1
+     },
+     {
+      "heading": "Vascular pathology in hypertension",
+      "pages": [
+       67,
+       67
+      ],
+      "tier": 2,
+      "years": [
+       50
+      ],
+      "summary": "Hyaline arteriolosclerosis (ผนังหนาสีชมพูเนียน — HT ไม่รุนแรง/DM) vs hyperplastic arteriolosclerosis (onion-skin, SMC — malignant HT)",
+      "focus": [
+       {
+        "text": "Vascular pathology in hypertension (arteriolosclerosis)",
+        "years": [
+         50
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 1
+     },
+     {
+      "heading": "Aneurysm and dissection",
+      "pages": [
+       74,
+       74
+      ],
+      "tier": 1,
+      "years": [
+       49,
+       50,
+       51,
+       52
+      ],
+      "summary": "Aneurysm = การโป่งของหลอดเลือดทุกชั้น (true); dissection = เลือดแทรกแยกชั้น media เป็นช่องเลือด",
+      "focus": [
+       {
+        "text": "AAA และ rupture",
+        "years": [
+         49
+        ]
+       },
+       {
+        "text": "Aneurysm: AAA (atherosclerosis), TAA (HT)",
+        "years": [
+         50
+        ]
+       },
+       {
+        "text": "Aneurysm definition + AAA (atherosclerosis)",
+        "years": [
+         51
+        ]
+       },
+       {
+        "text": "Aneurysm (AAA, TAA) และ aortic dissection",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [
+       "CVS-51-OSPE-009"
+      ],
+      "in_set": true,
+      "n_all_years": 4
+     },
+     {
+      "heading": "Abdominal aortic aneurysm",
+      "pages": [
+       75,
+       75
+      ],
+      "tier": 1,
+      "years": [
+       49,
+       50,
+       51,
+       52
+      ],
+      "summary": "จาก atherosclerosis มัก abdominal aorta + common iliac; มักคลำได้ก้อนเต้น; rupture → ปวดท้อง เลือดออกถึงตาย; อุดตันแขนง, emboli, กดอวัยวะข้างเคียง; risk rupture ตามขนาด",
+      "focus": [],
+      "role": "supporting",
+      "question_ids": [],
+      "in_set": true,
+      "n_all_years": 0
+     },
+     {
+      "heading": "Thoracic aortic aneurysm",
+      "pages": [
+       76,
+       76
+      ],
+      "tier": 1,
+      "years": [
+       49,
+       50,
+       51,
+       52
+      ],
+      "summary": "สัมพันธ์ HT; อาการจากการกด: ปวดอก (กร่อนกระดูก), ischemia (กด coronary), กลืนลำบาก (esophagus), เสียงแหบ (recurrent laryngeal n.), หายใจ (bronchi)",
+      "focus": [],
+      "role": "supporting",
+      "question_ids": [],
+      "in_set": true,
+      "n_all_years": 0
+     },
+     {
+      "heading": "Aortic dissection",
+      "pages": [
+       77,
+       77
+      ],
+      "tier": 1,
+      "years": [
+       52
+      ],
+      "summary": "2 กลุ่ม: ชาย 40–60 ปี + HT (>90%) และคนอายุน้อยที่มี Marfan; HT = risk หลัก; อาการ: เจ็บหน้าอกฉับพลันร้าวไปหลัง; ตายจาก rupture",
+      "focus": [
+       {
+        "text": "Aortic dissection: HT/Marfan, เจ็บอกฉับพลันร้าวหลัง",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": true,
+      "n_all_years": 1
+     },
+     {
+      "heading": "Aortic dissection: pathology",
+      "pages": [
+       78,
+       78
+      ],
+      "tier": 1,
+      "years": [
+       49,
+       50,
+       51,
+       52
+      ],
+      "summary": "ภาพ gross/histology ของ dissection (false lumen ใน media) และ classification",
+      "focus": [],
+      "role": "supporting",
+      "question_ids": [],
+      "in_set": true,
+      "n_all_years": 0
+     },
+     {
+      "heading": "Varicose veins",
+      "pages": [
+       82,
+       82
+      ],
+      "tier": 2,
+      "years": [
+       52
+      ],
+      "summary": "หลอดเลือดดำโป่งคดเคี้ยวจาก intraluminal pressure ↑ นาน + venous valve incompetence; มักขา เพราะยืนนานความดันสูงได้ถึง 10 เท่า",
+      "focus": [
+       {
+        "text": "Varicose veins: valve incompetence",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 1
+     },
+     {
+      "heading": "Varicose veins: clinical features",
+      "pages": [
+       83,
+       83
+      ],
+      "tier": 2,
+      "years": [
+       52
+      ],
+      "summary": "Stasis, congestion, edema, ปวด, thrombosis; tissue ischemia, ulcer, แผลหายช้า, ติดเชื้อซ้ำ",
+      "focus": [],
+      "role": "supporting",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 0
+     }
+    ],
+    "best_tier": 1,
+    "pages_total": 29,
+    "n_in_set": 4
+   },
+   {
+    "lecture": "L01",
+    "topics": [
+     {
+      "heading": "Thoracic cavity",
+      "pages": [
+       2,
+       2
+      ],
+      "tier": 1,
+      "years": [
+       49
+      ],
+      "summary": "Thoracic cavity = left/right pleural cavities + mediastinum; mediastinum แบ่ง superior และ inferior (anterior, middle, posterior) โดยเส้นระดับ sternal angle",
+      "focus": [
+       {
+        "text": "Thoracic cavity: mediastinum กั้นซ้าย-ขวา",
+        "years": [
+         49
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 1
+     },
+     {
+      "heading": "Superior mediastinum",
+      "pages": [
+       3,
+       3
+      ],
+      "tier": 1,
+      "years": [
+       51,
+       52
+      ],
+      "summary": "ขอบเขต: thoracic inlet → sternal angle (T4/T5), หน้า manubrium, หลัง T1–4; contents: thymus, SVC + brachiocephalic v. (L brachiocephalic v. วิ่งหลัง thymus), aortic arch + 3 branches, vagus/phrenic/recurrent laryngeal n., esophagus, trachea, thoracic duct",
+      "focus": [
+       {
+        "text": "Superior mediastinum contents (thoracic duct, esophagus, trachea อยู่หลังสุด)",
+        "years": [
+         51
+        ]
+       },
+       {
+        "text": "Superior mediastinum: thymus อยู่หน้า L brachiocephalic vein",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 2
+     },
+     {
+      "heading": "Middle mediastinum",
+      "pages": [
+       5,
+       5
+      ],
+      "tier": 1,
+      "years": [
+       51
+      ],
+      "summary": "อยู่ระหว่าง anterior–posterior; contents: pericardium, heart + great vessels, phrenic nerves, main bronchi",
+      "focus": [
+       {
+        "text": "Phrenic nerve อยู่ใน middle mediastinum",
+        "years": [
+         51
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 1
+     },
+     {
+      "heading": "Posterior mediastinum",
+      "pages": [
+       6,
+       6
+      ],
+      "tier": 1,
+      "years": [
+       49,
+       50,
+       51,
+       52
+      ],
+      "summary": "ขอบเขต: sternal angle → diaphragm, หน้า pericardium, หลัง T5–T12; contents: thoracic aorta, thoracic duct, azygos/hemiazygos v., esophagus + esophageal plexus, sympathetic trunks, thoracic splanchnic nerves (ออกสอบบ่อย: T9–10 lesion)",
+      "focus": [
+       {
+        "text": "Posterior mediastinum contents",
+        "years": [
+         49,
+         50,
+         51
+        ]
+       },
+       {
+        "text": "Contents ของ posterior mediastinum (sympathetic trunk, splanchnic nerves)",
+        "years": [
+         52
+        ]
+       },
+       {
+        "text": "Posterior mediastinum: thoracic aorta, azygos, thoracic duct, sympathetic trunk, splanchnic nerves",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 6
+     },
+     {
+      "heading": "Pericardial sinuses",
+      "pages": [
+       10,
+       10
+      ],
+      "tier": 1,
+      "years": [
+       50,
+       52
+      ],
+      "summary": "Transverse sinus = อุโมงค์หลัง aorta + pulmonary trunk (หน้าต่อ SVC/pulmonary veins → ใช้ clamp aorta/PT ระหว่างผ่าตัด); Oblique sinus = ถุงตันหลัง left atrium ระหว่าง pulmonary veins",
+      "focus": [
+       {
+        "text": "Transverse sinus: หลัง aorta + pulmonary trunk (คีบ aorta/PT ได้)",
+        "years": [
+         50
+        ]
+       },
+       {
+        "text": "Transverse sinus: หลัง aorta + pulmonary trunk, หน้าต่อ SVC (นิ้วผ่าน sinus → SVC อยู่หลัง)",
+        "years": [
+         52
+        ]
+       },
+       {
+        "text": "Transverse pericardial sinus",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 3
+     },
+     {
+      "heading": "Blood and nerve supplies of pericardium",
+      "pages": [
+       11,
+       11
+      ],
+      "tier": 1,
+      "years": [
+       51
+      ],
+      "summary": "เลือด: pericardiacophrenic a. (หลัก), musculophrenic a., coronary a. (visceral layer); venous: pericardiacophrenic v.; nerve: phrenic n. (ปวด pericarditis ร้าวไหล่)",
+      "focus": [
+       {
+        "text": "Phrenic nerve เลี้ยง pericardium → ปวดร้าวไหล่ (C3–5)",
+        "years": [
+         51
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 1
+     },
+     {
+      "heading": "Heart: surfaces, borders, apex",
+      "pages": [
+       13,
+       14
+      ],
+      "tier": 1,
+      "years": [
+       49,
+       50,
+       51,
+       52
+      ],
+      "summary": "Base = LA (หลัก) + RA; apex = inferolateral LV ที่ 5th L ICS–MCL; anterior (sternocostal) = RA, RV (ส่วนใหญ่), LV; inferior (diaphragmatic) = RV + LV; posterior = LA (4 pulmonary veins); sulci: anterior/posterior interventricular, coronary sulcus ซ้ำหน้า 13 พร้อมภาพ: borders — right (RA), left (LV), inferior (RV), superior (great vessels)",
+      "focus": [
+       {
+        "text": "Surfaces/borders: right border = RA",
+        "years": [
+         49
+        ]
+       },
+       {
+        "text": "Sternocostal surface ส่วนใหญ่ = RV",
+        "years": [
+         50
+        ]
+       },
+       {
+        "text": "Surfaces/borders: left border และ apex = LV",
+        "years": [
+         51
+        ]
+       },
+       {
+        "text": "Posterior surface (base) = LA",
+        "years": [
+         51
+        ]
+       },
+       {
+        "text": "Surfaces, borders, sulci",
+        "years": [
+         51
+        ]
+       },
+       {
+        "text": "Sternocostal surface ส่วนใหญ่ = RV; inferior = RV+LV; base = LA",
+        "years": [
+         52
+        ]
+       },
+       {
+        "text": "Posterior surface/base = LA (หน้าต่อ esophagus)",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [
+       "CVS-51-OSPE-015"
+      ],
+      "in_set": true,
+      "n_all_years": 7
+     },
+     {
+      "heading": "Right atrium",
+      "pages": [
+       17,
+       17
+      ],
+      "tier": 1,
+      "years": [
+       50,
+       51,
+       52
+      ],
+      "summary": "รับเลือดดำจาก SVC, IVC, coronary sinus; ผนังหลังเรียบ (sinus venarum) / ผนังหน้ามี pectinate muscles คั่นด้วย crista terminalis; fossa ovalis (ซากของ foramen ovale) และ opening of coronary sinus (ออก OSPE บ่อย)",
+      "focus": [
+       {
+        "text": "Opening of coronary sinus ใน RA",
+        "years": [
+         50
+        ]
+       },
+       {
+        "text": "RA: pectinate, crista terminalis, fossa ovalis, coronary sinus opening",
+        "years": [
+         51
+        ]
+       },
+       {
+        "text": "RA (pectinate, crista terminalis, fossa ovalis, coronary sinus opening) และ RV (moderator band, papillary muscle)",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [
+       "CVS-51-OSPE-016"
+      ],
+      "in_set": true,
+      "n_all_years": 3
+     },
+     {
+      "heading": "Left atrium",
+      "pages": [
+       18,
+       18
+      ],
+      "tier": 1,
+      "years": [
+       51,
+       52
+      ],
+      "summary": "สร้าง base ของหัวใจ รับเลือดแดงจาก 4 pulmonary veins; ผนังเรียบยกเว้น pectinate ใน auricle",
+      "focus": [
+       {
+        "text": "LA รับ pulmonary veins",
+        "years": [
+         51
+        ]
+       },
+       {
+        "text": "LA รับ 4 pulmonary veins สร้าง base",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": true,
+      "n_all_years": 2
+     },
+     {
+      "heading": "Ventricles",
+      "pages": [
+       19,
+       19
+      ],
+      "tier": 1,
+      "years": [
+       50,
+       51,
+       52
+      ],
+      "summary": "ห้องสูบเลือด แยกด้วย interventricular sulcus/septum; trabeculae carneae, papillary muscles ยึด chordae tendineae",
+      "focus": [],
+      "role": "supporting",
+      "question_ids": [],
+      "in_set": true,
+      "n_all_years": 0
+     },
+     {
+      "heading": "Right ventricle",
+      "pages": [
+       20,
+       20
+      ],
+      "tier": 1,
+      "years": [
+       50,
+       51,
+       52
+      ],
+      "summary": "รับเลือดจาก RA; septomarginal (moderator) band เชื่อม anterior papillary muscle กับ septum (นำ right bundle branch) — ออก OSPE บ่อย",
+      "focus": [],
+      "role": "supporting",
+      "question_ids": [],
+      "in_set": true,
+      "n_all_years": 0
+     },
+     {
+      "heading": "Left ventricle",
+      "pages": [
+       21,
+       21
+      ],
+      "tier": 1,
+      "years": [
+       50,
+       51,
+       52
+      ],
+      "summary": "รับจาก LA ส่งไป aorta; septum มี membranous + muscular part; papillary muscles, trabeculae carneae; ไม่มี moderator band",
+      "focus": [],
+      "role": "supporting",
+      "question_ids": [],
+      "in_set": true,
+      "n_all_years": 0
+     },
+     {
+      "heading": "Auscultation of heart valves",
+      "pages": [
+       27,
+       27
+      ],
+      "tier": 1,
+      "years": [
+       49,
+       50,
+       51,
+       52
+      ],
+      "summary": "ตำแหน่งฟัง (APT-M 2245): Aortic = R 2nd ICS PSL, Pulmonary = L 2nd ICS PSL, Tricuspid = L 4th–5th ICS PSL, Mitral = L 5th ICS MCL (apex) — ออกทุกปี",
+      "focus": [
+       {
+        "text": "Pulmonary area = L 2nd ICS parasternal",
+        "years": [
+         49
+        ]
+       },
+       {
+        "text": "Pulmonary area = L 2nd ICS parasternal (APT-M)",
+        "years": [
+         50
+        ]
+       },
+       {
+        "text": "ตำแหน่งฟัง aortic area (R 2nd ICS)",
+        "years": [
+         51
+        ]
+       },
+       {
+        "text": "ตำแหน่งฟังลิ้น APT-M: pulmonary = L 2nd ICS parasternal",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 4
+     },
+     {
+      "heading": "Arterial supply of the heart",
+      "pages": [
+       31,
+       31
+      ],
+      "tier": 1,
+      "years": [
+       49,
+       51,
+       52
+      ],
+      "summary": "RCA (ใน coronary groove) → SA nodal br., right marginal br., AV nodal br., posterior interventricular br.; LCA → LAD (anterior interventricular) + circumflex (→ left marginal), lateral diagonal — ใช้ตอบ LAD/LCx/RCA territory",
+      "focus": [
+       {
+        "text": "Coronary territory: AV node = RCA, septum/bundle = LAD",
+        "years": [
+         49
+        ]
+       },
+       {
+        "text": "Coronary arteries/veins บนผิวหัวใจ",
+        "years": [
+         51
+        ]
+       },
+       {
+        "text": "LCx/RCA territory: posterior wall LV ได้เลือดจาก RCA (PIV) ± LCx",
+        "years": [
+         52
+        ]
+       },
+       {
+        "text": "Coronary arteries และ cardiac veins",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [
+       "CVS-51-OSPE-015"
+      ],
+      "in_set": true,
+      "n_all_years": 4
+     },
+     {
+      "heading": "Venous drainage of the heart",
+      "pages": [
+       32,
+       32
+      ],
+      "tier": 1,
+      "years": [
+       50,
+       52
+      ],
+      "summary": "Great cardiac v. (คู่ LAD) → coronary sinus; middle cardiac v. (คู่ PIV), small cardiac v. (คู่ right marginal), left posterior ventricular v., oblique v. of LA → coronary sinus; anterior cardiac v. เข้า RA ตรง; venae cordis minimae",
+      "focus": [
+       {
+        "text": "Cardiac veins → coronary sinus (great, middle, small cardiac veins)",
+        "years": [
+         50
+        ]
+       },
+       {
+        "text": "Great cardiac vein วิ่งคู่ LAD ใน anterior interventricular groove → coronary sinus",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": true,
+      "n_all_years": 2
+     },
+     {
+      "heading": "Aorta",
+      "pages": [
+       35,
+       35
+      ],
+      "tier": 2,
+      "years": [
+       52
+      ],
+      "summary": "Ascending aorta (จาก LV ที่ 2nd L costal cartilage; แขนง R/L coronary) → arch (sternal angle T4; brachiocephalic trunk, L common carotid, L subclavian) → descending (thoracic, abdominal)",
+      "focus": [
+       {
+        "text": "Great vessels: aortic arch, brachiocephalic trunk, L common carotid, L subclavian",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 1
+     },
+     {
+      "heading": "Ligamentum arteriosum",
+      "pages": [
+       37,
+       37
+      ],
+      "tier": 1,
+      "years": [
+       50,
+       51,
+       52
+      ],
+      "summary": "Ligamentum arteriosum (ซากของ ductus arteriosus) เชื่อม L pulmonary a. กับใต้ aortic arch; L recurrent laryngeal n. คล้องใต้ arch ข้างๆ ligament (ตัด PDA เสี่ยงเส้นนี้ → เสียงแหบ); superficial cardiac plexus อยู่ใต้ arch",
+      "focus": [
+       {
+        "text": "Ductus/ligamentum arteriosum ติด L recurrent laryngeal nerve",
+        "years": [
+         50
+        ]
+       },
+       {
+        "text": "Ligamentum arteriosum (fetal ductus) + L recurrent laryngeal",
+        "years": [
+         50
+        ]
+       },
+       {
+        "text": "Ligamentum arteriosum (ductus arteriosus) + L recurrent laryngeal",
+        "years": [
+         51
+        ]
+       },
+       {
+        "text": "Ligamentum arteriosum ติดกับ L recurrent laryngeal n. (ตัด PDA → เสียงแหบ)",
+        "years": [
+         52
+        ]
+       },
+       {
+        "text": "Ligamentum arteriosum + L recurrent laryngeal",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [
+       "CVS-51-OSPE-017"
+      ],
+      "in_set": true,
+      "n_all_years": 5
+     },
+     {
+      "heading": "Large veins of the thorax",
+      "pages": [
+       38,
+       38
+      ],
+      "tier": 1,
+      "years": [
+       52
+      ],
+      "summary": "Brachiocephalic v. = IJV + subclavian; ขวาสั้นแนวตั้ง / ซ้ายยาวแนวนอน (ผ่านหลัง thymus) รับ vertebral, internal thoracic, inferior thyroid, thymic v.; SVC เริ่มที่ 1st R costal cartilage รับ azygos เข้า RA ที่ 3rd R costal cartilage",
+      "focus": [
+       {
+        "text": "L brachiocephalic v. ยาว แนวนอน วิ่งหลัง thymus",
+        "years": [
+         52
+        ]
+       },
+       {
+        "text": "SVC = R + L brachiocephalic veins ที่ 1st R costal cartilage",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": true,
+      "n_all_years": 2
+     },
+     {
+      "heading": "Azygos system of veins",
+      "pages": [
+       40,
+       40
+      ],
+      "tier": 1,
+      "years": [
+       50,
+       52
+      ],
+      "summary": "Posterior intercostal v.: ที่ 1 → brachiocephalic; 2–4 → superior intercostal v. (ขวา → azygos arch, ซ้าย → L brachiocephalic); 5–12 ขวา → azygos, ซ้าย → accessory hemiazygos (5–8) / hemiazygos (9–12)",
+      "focus": [
+       {
+        "text": "Azygos system",
+        "years": [
+         50,
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 2
+     },
+     {
+      "heading": "Azygos vein",
+      "pages": [
+       41,
+       41
+      ],
+      "tier": 1,
+      "years": [
+       50,
+       52
+      ],
+      "summary": "เริ่มจาก R subcostal + R ascending lumbar v. ผ่าน aortic opening (T12) ขึ้นด้านขวาของกระดูกสันหลัง รับ hemiazygos (T9), accessory hemiazygos (T8) โค้งเหนือ root of R lung ที่ T4 เข้า SVC",
+      "focus": [],
+      "role": "supporting",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 0
+     },
+     {
+      "heading": "Vagus and recurrent laryngeal nerves",
+      "pages": [
+       44,
+       44
+      ],
+      "tier": 1,
+      "years": [
+       50,
+       52
+      ],
+      "summary": "Vagus ใน carotid sheath → cardiac, pulmonary, esophageal plexuses; R recurrent laryngeal คล้อง R subclavian a.; L vagus ผ่านหน้า aortic arch lateral ต่อ ligamentum arteriosum, L recurrent laryngeal คล้อง aortic arch → tracheoesophageal groove → larynx",
+      "focus": [
+       {
+        "text": "L recurrent laryngeal คล้อง aortic arch",
+        "years": [
+         50
+        ]
+       },
+       {
+        "text": "L recurrent laryngeal คล้อง aortic arch lateral ต่อ ligamentum arteriosum",
+        "years": [
+         52
+        ]
+       },
+       {
+        "text": "Vagus และ recurrent laryngeal nerves รอบ arch",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 3
+     },
+     {
+      "heading": "Thoracic sympathetic trunk",
+      "pages": [
+       47,
+       47
+      ],
+      "tier": 1,
+      "years": [
+       49,
+       50,
+       51,
+       52
+      ],
+      "summary": "อยู่ lateral ต่อ thoracic vertebrae; T1 + inferior cervical gg. = stellate gg.; postganglionic → spinal nerves และ T1–5 → cardiac/pulmonary/esophageal plexus; greater splanchnic (T5–9) → celiac gg., lesser (T10–11) → aorticorenal gg., least (T12) → renal plexus",
+      "focus": [
+       {
+        "text": "Greater splanchnic (T5–9) วางบน vertebral body",
+        "years": [
+         49
+        ]
+       },
+       {
+        "text": "Greater splanchnic (T5–9) → celiac ganglion",
+        "years": [
+         50
+        ]
+       },
+       {
+        "text": "Greater splanchnic nerve (T5–9) → celiac ganglion",
+        "years": [
+         51
+        ]
+       },
+       {
+        "text": "Greater splanchnic (T5–9) → celiac; lesser T10–11; least T12",
+        "years": [
+         52
+        ]
+       },
+       {
+        "text": "Sympathetic trunk/splanchnic nerves และ thoracic duct",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 5
+     },
+     {
+      "heading": "Angina pectoris: referred pain",
+      "pages": [
+       48,
+       48
+      ],
+      "tier": 1,
+      "years": [
+       49,
+       50,
+       51,
+       52
+      ],
+      "summary": "อาการเจ็บอกจาก CAD ร้าวไป left pectoral, ไหล่, medial arm, คอ, กราม, subcostal = referred pain (afferent เข้า T1–T4 ร่วมกับ dermatome เดียวกัน)",
+      "focus": [],
+      "role": "supporting",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 0
+     },
+     {
+      "heading": "Thoracic duct",
+      "pages": [
+       49,
+       49
+      ],
+      "tier": 1,
+      "years": [
+       50,
+       51
+      ],
+      "summary": "เริ่มจาก cisterna chyli (หน้า L1–2) ผ่าน aortic hiatus ระหว่าง thoracic aorta กับ azygos v.; ที่ T4 ข้ามไปซ้าย ขึ้น superior mediastinum เทเข้า L IJV–subclavian junction",
+      "focus": [
+       {
+        "text": "Thoracic duct ระหว่าง aorta กับ azygos",
+        "years": [
+         50
+        ]
+       },
+       {
+        "text": "Thoracic duct ข้ามไปซ้ายที่ T4 ขึ้น superior mediastinum",
+        "years": [
+         51
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 2
+     }
+    ],
+    "best_tier": 1,
+    "pages_total": 11,
+    "n_in_set": 3
+   },
+   {
+    "lecture": "CC2",
+    "topics": [
+     {
+      "heading": "AV block",
+      "pages": [
+       17,
+       17
+      ],
+      "tier": 1,
+      "years": [
+       50,
+       51,
+       52
+      ],
+      "summary": "1st-degree AVB: P–QRS 1:1 แต่ PR > 200 ms; 3rd-degree AVB: P และ QRS dissociation",
+      "focus": [
+       {
+        "text": "AV block types",
+        "years": [
+         50,
+         51
+        ]
+       },
+       {
+        "text": "1st-degree vs 3rd-degree AV block",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [
+       "CVS-51-OSPE-006"
+      ],
+      "in_set": true,
+      "n_all_years": 3
+     },
+     {
+      "heading": "Precordial QRS formation",
+      "pages": [
+       20,
+       20
+      ],
+      "tier": 1,
+      "years": [
+       50,
+       51
+      ],
+      "summary": "(1) septal depolarization ซ้าย → ขวา: V1 r เล็ก V6 q เล็ก (2) LV lateral + RV free wall (ขวา → ซ้าย): V1 S ลึก V6 R สูง",
+      "focus": [
+       {
+        "text": "Precordial QRS formation",
+        "years": [
+         50,
+         51
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [
+       "CVS-51-OSPE-007"
+      ],
+      "in_set": true,
+      "n_all_years": 2
+     },
+     {
+      "heading": "Pacemaker automaticity",
+      "pages": [
+       23,
+       23
+      ],
+      "tier": 2,
+      "years": [
+       50
+      ],
+      "summary": "SA node 60–100 bpm, AV node 40–60, Purkinje 20–40 (pacemaker hierarchy)",
+      "focus": [
+       {
+        "text": "Intrinsic rate: SA 60–100, AV 40–60, Purkinje 20–40",
+        "years": [
+         50
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 1
+     },
+     {
+      "heading": "Atrial fibrillation",
+      "pages": [
+       26,
+       26
+      ],
+      "tier": 2,
+      "years": [
+       52
+      ],
+      "summary": "RR ไม่สม่ำเสมอโดยสิ้นเชิง, ไม่มี P wave ชัด, มี fibrillation wave",
+      "focus": [
+       {
+        "text": "AF ECG",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 1
+     },
+     {
+      "heading": "Ventricular tachycardia",
+      "pages": [
+       27,
+       27
+      ],
+      "tier": 2,
+      "years": [
+       49
+      ],
+      "summary": "Wide QRS tachycardia สม่ำเสมอ (VT)",
+      "focus": [
+       {
+        "text": "Ventricular tachycardia",
+        "years": [
+         49
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 2
+     },
+     {
+      "heading": "Spectrum of ACS",
+      "pages": [
+       44,
+       44
+      ],
+      "tier": 1,
+      "years": [
+       49,
+       51,
+       52
+      ],
+      "summary": "Unstable angina: plaque rupture อุดบางส่วน ECG ปกติ/T inversion/ST depression troponin ปกติ; NSTEMI: subendocardial infarct ECG คล้าย UA troponin ↑; STEMI: อุดสมบูรณ์ transmural hyperacute T/ST elevation troponin ↑",
+      "focus": [
+       {
+        "text": "Occlusive thrombus → transmural (STEMI) vs non-occlusive → subendocardial (NSTE-ACS)",
+        "years": [
+         49
+        ]
+       },
+       {
+        "text": "ACS spectrum + ECG criteria",
+        "years": [
+         51
+        ]
+       },
+       {
+        "text": "UA/NSTEMI/STEMI และ ECG criteria ของ ischemia",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 3
+     },
+     {
+      "heading": "UA/NSTEMI vs STEMI",
+      "pages": [
+       45,
+       45
+      ],
+      "tier": 1,
+      "years": [
+       49,
+       51,
+       52
+      ],
+      "summary": "UA/NSTEMI = non-occlusive thrombus → subendocardial infarct; STEMI = occlusive thrombus → transmural infarct",
+      "focus": [],
+      "role": "supporting",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 0
+     },
+     {
+      "heading": "ECG criteria of ischemia (universal definition)",
+      "pages": [
+       46,
+       46
+      ],
+      "tier": 1,
+      "years": [
+       51
+      ],
+      "summary": "ST elevation ใหม่ที่ J point ใน 2 contiguous leads ตาม cut-point; ST depression แนวนอน/ลาดลง ≥ 0.5 mm ใน 2 contiguous leads; T inversion > 1 mm ใน 2 contiguous leads ที่ R เด่น",
+      "focus": [
+       {
+        "text": "ECG criteria ของ ischemia/infarction",
+        "years": [
+         51
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 1
+     },
+     {
+      "heading": "Evolution of STEMI",
+      "pages": [
+       51,
+       51
+      ],
+      "tier": 1,
+      "years": [
+       51,
+       52
+      ],
+      "summary": "Normal → hyperacute T + ST elevation (นาที) → R ลดลง Q เริ่ม (ชั่วโมง) → T inversion Q ลึก (1–2 วัน) → ST กลับปกติ T กลับหัว (วัน) → Q ค้างถาวร (สัปดาห์); ตาราง lead: I, aVL, V5–V6 lateral; II, III, aVF inferior; V1–V2 septal; V3–V4 anterior",
+      "focus": [
+       {
+        "text": "Lead territories + evolution of STEMI",
+        "years": [
+         51
+        ]
+       },
+       {
+        "text": "Pathological Q wave ใน evolution of STEMI (Q ≥ 25% ของ R)",
+        "years": [
+         51
+        ]
+       },
+       {
+        "text": "Lead territories: II, III, aVF inferior; V1–V4 anterior; I, aVL, V5–6 lateral",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 3
+     },
+     {
+      "heading": "Coronary artery territories",
+      "pages": [
+       54,
+       54
+      ],
+      "tier": 2,
+      "years": [
+       52
+      ],
+      "summary": "RCA: SA node (60%), RV, AV node (>80%), inferior wall, posterior wall LV (75%); LAD: septum, anterior, lateral wall, RBB, left anterior fascicle; LCx: SA node 40%, AV node 20%, inferior, posterior, บางส่วนของ lateral",
+      "focus": [
+       {
+        "text": "Culprit artery: RCA/LAD/LCx territory",
+        "years": [
+         52
+        ]
+       },
+       {
+        "text": "Territory ของ RCA/LAD/LCx (posterior wall = RCA 75%)",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 2
+     },
+     {
+      "heading": "Acute inferior wall STEMI",
+      "pages": [
+       57,
+       57
+      ],
+      "tier": 2,
+      "years": [
+       51
+      ],
+      "summary": "ST elevation II, III, aVF (RCA) + reciprocal ST depression I, aVL",
+      "focus": [
+       {
+        "text": "Inferior STEMI: ST ↑ II, III, aVF (RCA)",
+        "years": [
+         51
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 1
+     },
+     {
+      "heading": "Inferior STEMI with RV infarction",
+      "pages": [
+       58,
+       58
+      ],
+      "tier": 2,
+      "years": [
+       49
+      ],
+      "summary": "ST elevation ใน V3R–V4R บ่ง RV infarction → hypotension, ห้ามให้ nitrate, ให้สารน้ำ (ออกสอบ: ต้องทำ right-sided leads)",
+      "focus": [
+       {
+        "text": "Inferior STEMI + RV infarction: V3R/V4R",
+        "years": [
+         49
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 1
+     },
+     {
+      "heading": "STEMI ECG and coronary artery",
+      "pages": [
+       64,
+       64
+      ],
+      "tier": 2,
+      "years": [
+       49,
+       51
+      ],
+      "summary": "RCA → inferior/posterior wall LV + posterior septum + RV; LAD → anterior wall + anterior septum; LCx → lateral wall",
+      "focus": [
+       {
+        "text": "STEMI ECG ↔ coronary artery (II, III, aVF = inferior = RCA)",
+        "years": [
+         49
+        ]
+       },
+       {
+        "text": "Culprit artery ตามผนัง",
+        "years": [
+         51
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 2
+     }
+    ],
+    "best_tier": 1,
+    "pages_total": 2,
+    "n_in_set": 2
+   },
+   {
+    "lecture": "L12",
+    "topics": [
+     {
+      "heading": "Cardiac borders on PA film",
+      "pages": [
+       7,
+       7
+      ],
+      "tier": 1,
+      "years": [
+       49,
+       50,
+       51,
+       52
+      ],
+      "summary": "ภาพระบุหมายเลขโครงสร้างบนเงาหัวใจ: ขวา = SVC, RA; ซ้าย = aortic knob, MPA, LA appendage, LV; trachea, carina",
+      "focus": [
+       {
+        "text": "Cardiac borders on PA film: right border SVC → RA",
+        "years": [
+         49
+        ]
+       },
+       {
+        "text": "โครงสร้างบนเงาหัวใจ (aorta, MPA)",
+        "years": [
+         50
+        ]
+       },
+       {
+        "text": "Cardiac silhouette: ขอบซ้าย aortic knob → MPA → LAA → LV",
+        "years": [
+         51
+        ]
+       },
+       {
+        "text": "เงาหัวใจบน CXR: ขอบขวา SVC/RA, ขอบซ้าย aortic knob, MPA, LAA, LV",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [
+       "CVS-51-OSPE-013"
+      ],
+      "in_set": true,
+      "n_all_years": 4
+     },
+     {
+      "heading": "Right- vs left-sided heart on CXR",
+      "pages": [
+       8,
+       8
+      ],
+      "tier": 1,
+      "years": [
+       49,
+       50,
+       51,
+       52
+      ],
+      "summary": "ขอบขวา = RA (บน SVC); ขอบซ้าย = aortic knob → MPA → LAA → LV",
+      "focus": [],
+      "role": "supporting",
+      "question_ids": [],
+      "in_set": true,
+      "n_all_years": 0
+     },
+     {
+      "heading": "Lateral view anatomy",
+      "pages": [
+       9,
+       9
+      ],
+      "tier": 1,
+      "years": [
+       49,
+       50,
+       51,
+       52
+      ],
+      "summary": "ภาพ lateral: ด้านหน้า = RV (retrosternal space), ด้านหลัง = LA และ LV, IVC",
+      "focus": [],
+      "role": "supporting",
+      "question_ids": [],
+      "in_set": true,
+      "n_all_years": 0
+     },
+     {
+      "heading": "Anatomy of CV structures on CXR",
+      "pages": [
+       10,
+       10
+      ],
+      "tier": 1,
+      "years": [
+       49,
+       50,
+       51,
+       52
+      ],
+      "summary": "ภาพ CT/3D เทียบตำแหน่งห้องหัวใจกับเงาบน CXR",
+      "focus": [],
+      "role": "supporting",
+      "question_ids": [],
+      "in_set": true,
+      "n_all_years": 0
+     },
+     {
+      "heading": "Labelled CXR: PA and lateral",
+      "pages": [
+       11,
+       11
+      ],
+      "tier": 1,
+      "years": [
+       49,
+       50,
+       51,
+       52
+      ],
+      "summary": "PA: RA, RUL PA, RDPA, LV, LAA, MPA, aortic knob; lateral: RVOT–MPA, RV, LA, LV, IVC, aortic arch, descending aorta, RPA, LPA",
+      "focus": [],
+      "role": "supporting",
+      "question_ids": [],
+      "in_set": true,
+      "n_all_years": 0
+     },
+     {
+      "heading": "Left-sided mediastinal contours",
+      "pages": [
+       12,
+       12
+      ],
+      "tier": 1,
+      "years": [
+       49,
+       50,
+       51,
+       52
+      ],
+      "summary": "ขอบซ้ายจากบนลงล่าง: aortic knob → pulmonary trunk → LA appendage → LV/apex (ออกสอบเรียงลำดับ)",
+      "focus": [],
+      "role": "supporting",
+      "question_ids": [],
+      "in_set": true,
+      "n_all_years": 0
+     },
+     {
+      "heading": "Cardiothoracic ratio",
+      "pages": [
+       14,
+       14
+      ],
+      "tier": 1,
+      "years": [
+       50,
+       52
+      ],
+      "summary": "CTR = maximal transverse diameter ของหัวใจ / greatest internal diameter ของทรวงอก ≤ 0.5 (PA film)",
+      "focus": [
+       {
+        "text": "CTR > 0.5 = cardiomegaly; สาเหตุ CTR ↑",
+        "years": [
+         50
+        ]
+       },
+       {
+        "text": "CTR ≤ 0.5",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 2
+     },
+     {
+      "heading": "Increased CT ratio",
+      "pages": [
+       15,
+       15
+      ],
+      "tier": 1,
+      "years": [
+       52
+      ],
+      "summary": "Pericardial effusion, pericardial cyst/mass, AP portable film, obesity, cardiomegaly (cardiomyopathy, HF, volume overload, valvular disease)",
+      "focus": [
+       {
+        "text": "Effusion และเงาหัวใจ/ทรวงอก",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 1
+     },
+     {
+      "heading": "LA enlargement: causes",
+      "pages": [
+       21,
+       21
+      ],
+      "tier": 1,
+      "years": [
+       51
+      ],
+      "summary": "LV failure, AF, mitral stenosis/regurgitation (rheumatic), LA myxoma, restrictive CM, VSD/PDA; LA อยู่หลังสุด ไม่เป็นขอบหัวใจยกเว้น LAA",
+      "focus": [
+       {
+        "text": "LA enlargement",
+        "years": [
+         51
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": true,
+      "n_all_years": 1
+     },
+     {
+      "heading": "LA enlargement: directions",
+      "pages": [
+       22,
+       22
+      ],
+      "tier": 1,
+      "years": [
+       50,
+       51,
+       52
+      ],
+      "summary": "ซ้าย: เต็มใต้เงา PA, LAA นูน (sign แรกสุด); ขวา: double density sign ถึง/เกินขอบขวา; บน: left main bronchus ยก, carinal angle > 90°; หลัง: left main bronchus ถูกดันไปหลัง, ดัน esophagus",
+      "focus": [
+       {
+        "text": "LA enlargement: double density, carinal angle",
+        "years": [
+         50
+        ]
+       },
+       {
+        "text": "LA enlargement signs",
+        "years": [
+         51
+        ]
+       },
+       {
+        "text": "LA enlargement: double density, LAA นูน, carinal angle > 90°",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [
+       "CVS-51-OSPE-014"
+      ],
+      "in_set": true,
+      "n_all_years": 3
+     },
+     {
+      "heading": "LA enlargement: PA signs",
+      "pages": [
+       23,
+       23
+      ],
+      "tier": 1,
+      "years": [
+       50,
+       51,
+       52
+      ],
+      "summary": "Double density > 7 cm, LAA โต, carinal angle กว้าง > 90°",
+      "focus": [],
+      "role": "supporting",
+      "question_ids": [],
+      "in_set": true,
+      "n_all_years": 0
+     },
+     {
+      "heading": "LA enlargement: lateral film",
+      "pages": [
+       24,
+       24
+      ],
+      "tier": 1,
+      "years": [
+       50,
+       51,
+       52
+      ],
+      "summary": "Left main bronchus ถูกดันไปหลัง (walking man sign), convexity ด้านหลังบน",
+      "focus": [],
+      "role": "supporting",
+      "question_ids": [],
+      "in_set": true,
+      "n_all_years": 0
+     },
+     {
+      "heading": "Increased vascularity (overcirculation)",
+      "pages": [
+       39,
+       39
+      ],
+      "tier": 1,
+      "years": [
+       50
+      ],
+      "summary": "L→R shunt, cyanotic CHD ที่มี bidirectional shunt, high cardiac output",
+      "focus": [
+       {
+        "text": "Overcirculation causes",
+        "years": [
+         50
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 1
+     },
+     {
+      "heading": "Decreased vascularity",
+      "pages": [
+       40,
+       40
+      ],
+      "tier": 1,
+      "years": [
+       50,
+       51
+      ],
+      "summary": "R→L shunt, pulmonary atresia/stenosis, RVOT obstruction (TOF), right HF, pericardial disease (tamponade), pulmonary embolism",
+      "focus": [
+       {
+        "text": "Decreased pulmonary vascularity: TOF (RVOT obstruction)",
+        "years": [
+         50
+        ]
+       },
+       {
+        "text": "Decreased vascularity: R→L shunt, RVOT obstruction (TOF)",
+        "years": [
+         51
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 2
+     },
+     {
+      "heading": "Pulmonary venous hypertension stages",
+      "pages": [
+       41,
+       41
+      ],
+      "tier": 1,
+      "years": [
+       49,
+       52
+      ],
+      "summary": "Stage 1 PCWP 12–19: cephalization (upper lobe diversion — early HF); stage 2 PCWP 20–25: interstitial edema, Kerley lines, peribronchial cuffing; stage 3 PCWP > 25: alveolar edema, bat-wing (สุดท้าย)",
+      "focus": [
+       {
+        "text": "Pulmonary venous hypertension stages: cephalization ก่อน",
+        "years": [
+         49
+        ]
+       },
+       {
+        "text": "Stage 2 PVH (PCWP 20–25): interstitial edema, Kerley B lines",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 2
+     },
+     {
+      "heading": "Pulmonary arterial hypertension",
+      "pages": [
+       42,
+       42
+      ],
+      "tier": 1,
+      "years": [
+       50
+      ],
+      "summary": "MPA โต, RDPA > 17–20 mm, pruning (หลอดเลือดส่วนปลายหาย), centralization, ± RV enlargement",
+      "focus": [
+       {
+        "text": "Pulmonary arterial hypertension (pruning, MPA โต)",
+        "years": [
+         50
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 1
+     },
+     {
+      "heading": "Mitral configuration",
+      "pages": [
+       45,
+       46
+      ],
+      "tier": 2,
+      "years": [
+       51
+      ],
+      "summary": "แผนภาพ mitral stenosis: เลือดคั่งใน LA และ pulmonary vein LAE + pulmonary venous HT + RVH (ระยะหลัง) = mitral configuration (ขอบซ้ายตรง)",
+      "focus": [
+       {
+        "text": "Mitral configuration = LAE + PVH + RVH (mitral stenosis/regurgitation)",
+        "years": [
+         51
+        ]
+       },
+       {
+        "text": "Mitral configuration",
+        "years": [
+         51
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [
+       "CVS-51-OSPE-014"
+      ],
+      "in_set": true,
+      "n_all_years": 2
+     },
+     {
+      "heading": "Boot-shaped heart",
+      "pages": [
+       50,
+       50
+      ],
+      "tier": 2,
+      "years": [
+       52
+      ],
+      "summary": "TOF: overriding aorta, VSD, RVOT obstruction (MPA เว้า), RVH (apex ยก); pulmonary vascularity ลดตามความรุนแรง RVOT obstruction",
+      "focus": [
+       {
+        "text": "Boot-shaped heart = TOF (RVH ยก apex, MPA เว้า)",
+        "years": [
+         52
+        ]
+       },
+       {
+        "text": "Boot-shaped heart ใน TOF",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 2
+     },
+     {
+      "heading": "Boot-shaped heart diagram",
+      "pages": [
+       51,
+       51
+      ],
+      "tier": 2,
+      "years": [
+       52
+      ],
+      "summary": "แผนภาพ TOF: VSD, RVOT/pulmonary stenosis, overriding aorta",
+      "focus": [],
+      "role": "supporting",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 0
+     },
+     {
+      "heading": "ASD on CXR",
+      "pages": [
+       53,
+       53
+      ],
+      "tier": 2,
+      "years": [
+       52
+      ],
+      "summary": "RA + RV โต, PA โต, vascularity ↑ (ตามขนาดรู)",
+      "focus": [
+       {
+        "text": "CXR ASD: RA/RV โต, PA โต, vascularity ↑",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 1
+     },
+     {
+      "heading": "Radiographic approach to cyanotic CHD",
+      "pages": [
+       57,
+       57
+      ],
+      "tier": 1,
+      "years": [
+       50,
+       51,
+       52
+      ],
+      "summary": "Vascularity ↑: TGA (egg-on-string), truncus arteriosus, TAPVR (snowman); vascularity ↓: TOF (boot), Ebstein (box-shaped)",
+      "focus": [
+       {
+        "text": "Cyanotic CHD with ↑ vascularity: TGA (egg-on-string)",
+        "years": [
+         50
+        ]
+       },
+       {
+        "text": "Approach CXR cyanotic/situs",
+        "years": [
+         50
+        ]
+       },
+       {
+        "text": "Approach cyanotic CHD",
+        "years": [
+         51
+        ]
+       },
+       {
+        "text": "Approach CXR ของ cyanotic CHD",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 4
+     },
+     {
+      "heading": "Transposition of great arteries",
+      "pages": [
+       58,
+       58
+      ],
+      "tier": 1,
+      "years": [
+       52
+      ],
+      "summary": "D-TGA: aorta ออกจาก RV, PA ออกจาก LV (วงจรขนาน); L-TGA: ventricle สลับ (congenitally corrected)",
+      "focus": [
+       {
+        "text": "D-TGA: egg-on-a-string (mediastinum แคบ)",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 1
+     },
+     {
+      "heading": "D-TGA: egg-on-a-string",
+      "pages": [
+       59,
+       59
+      ],
+      "tier": 1,
+      "years": [
+       50,
+       51,
+       52
+      ],
+      "summary": "Egg = หัวใจกลมจาก RA นูน + LA โต; string = superior mediastinum แคบ (thymus ฝ่อ + great vessels เรียงหน้า-หลัง)",
+      "focus": [],
+      "role": "supporting",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 0
+     },
+     {
+      "heading": "Ebstein's anomaly",
+      "pages": [
+       62,
+       62
+      ],
+      "tier": 2,
+      "years": [
+       52
+      ],
+      "summary": "Tricuspid leaflet (posterior, septal) เลื่อนลง → RA ใหญ่ (atrialized RV), RV เล็ก, vascularity ↓",
+      "focus": [
+       {
+        "text": "Ebstein: tricuspid เลื่อนลง RA ใหญ่ → box-shaped heart, vascularity ↓",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 1
+     },
+     {
+      "heading": "Ebstein's anomaly: box-shaped heart",
+      "pages": [
+       63,
+       63
+      ],
+      "tier": 2,
+      "years": [
+       52
+      ],
+      "summary": "RA โตมาก (ขอบขวา), RVOT ถูกดันไปซ้าย, vascularity ↓ → box-shaped heart",
+      "focus": [],
+      "role": "supporting",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 0
+     }
+    ],
+    "best_tier": 1,
+    "pages_total": 12,
+    "n_in_set": 2
+   },
+   {
+    "lecture": "L05",
+    "topics": [
+     {
+      "heading": "C-shaped looping",
+      "pages": [
+       16,
+       16
+      ],
+      "tier": 1,
+      "years": [
+       51,
+       52
+      ],
+      "summary": "Heart tube ยาวขึ้นใน pericardium จำกัด → bulbus cordis ไปล่างขวา ventricle ไปซ้าย = C-shape (dextral/right looping); ผิดปกติ → dextrocardia (ออกสอบ)",
+      "focus": [
+       {
+        "text": "Bulboventricular looping ผิดปกติ → dextrocardia",
+        "years": [
+         51
+        ]
+       },
+       {
+        "text": "Bulboventricular (C→S) looping ผิดปกติ → dextrocardia",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 2
+     },
+     {
+      "heading": "S-shaped looping",
+      "pages": [
+       17,
+       17
+      ],
+      "tier": 1,
+      "years": [
+       51,
+       52
+      ],
+      "summary": "Atrium เคลื่อนขึ้นไปหลังต่อ ventricle (dorsocranial) → S-shaped loop ~day 28",
+      "focus": [],
+      "role": "supporting",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 0
+     },
+     {
+      "heading": "Differentiation of atrium I",
+      "pages": [
+       30,
+       30
+      ],
+      "tier": 1,
+      "years": [
+       50,
+       51,
+       52
+      ],
+      "summary": "สัปดาห์ที่ 5: ส่วน trabeculated = auricles; right sinus horn รวมเข้าผนังหลัง RA เป็น sinus venarum (เรียบ); single pulmonary vein งอกจาก LA แตก 2 ครั้ง → 4 veins",
+      "focus": [
+       {
+        "text": "Sinus venosus: right horn → sinus venarum ผนังหลัง RA (sinus venosus ASD)",
+        "years": [
+         50
+        ]
+       },
+       {
+        "text": "Embryology: sinus venarum, crista terminalis",
+        "years": [
+         51
+        ]
+       },
+       {
+        "text": "Right sinus horn รวมเข้าผนังหลัง RA (sinus venarum) — sinus venosus ASD ใกล้ช่องเปิด SVC",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [
+       "CVS-51-OSPE-016"
+      ],
+      "in_set": true,
+      "n_all_years": 3
+     },
+     {
+      "heading": "Differentiation of atrium II",
+      "pages": [
+       31,
+       31
+      ],
+      "tier": 1,
+      "years": [
+       50,
+       51,
+       52
+      ],
+      "summary": "Pulmonary veins incorporate เข้าผนังหลังเป็น LA เรียบ; right horn → ช่องเปิด SVC, IVC; left horn → coronary sinus; venous valves → septum spurium, valve of IVC/coronary sinus",
+      "focus": [],
+      "role": "supporting",
+      "question_ids": [],
+      "in_set": true,
+      "n_all_years": 0
+     },
+     {
+      "heading": "Differentiation of atrium III",
+      "pages": [
+       32,
+       32
+      ],
+      "tier": 1,
+      "years": [
+       50,
+       51,
+       52
+      ],
+      "summary": "Crista terminalis แยก trabeculated RA กับ sinus venarum (นำไฟฟ้า SA → AV); 4 pulmonary veins ทำให้ LA เรียบ",
+      "focus": [],
+      "role": "supporting",
+      "question_ids": [],
+      "in_set": true,
+      "n_all_years": 0
+     },
+     {
+      "heading": "Septation of atria I",
+      "pages": [
+       33,
+       33
+      ],
+      "tier": 1,
+      "years": [
+       50,
+       52
+      ],
+      "summary": "Septum primum งอกจากหลังคา atrium เป็นรูปจันทร์เสี้ยว เหลือช่อง foramen primum; ปิดเมื่อเชื่อม endocardial cushion",
+      "focus": [
+       {
+        "text": "Atrial septation",
+        "years": [
+         50
+        ]
+       },
+       {
+        "text": "Embryology ของ atrial septation (secundum ASD)",
+        "years": [
+         52
+        ]
+       },
+       {
+        "text": "Septum primum/secundum, foramen ovale (secundum ASD)",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": true,
+      "n_all_years": 3
+     },
+     {
+      "heading": "Septation of atria II",
+      "pages": [
+       34,
+       34
+      ],
+      "tier": 1,
+      "years": [
+       50,
+       51,
+       52
+      ],
+      "summary": "ก่อน foramen primum ปิด เกิดรูใน septum primum = foramen secundum; septum secundum งอกทางขวาของ septum primum",
+      "focus": [],
+      "role": "supporting",
+      "question_ids": [],
+      "in_set": true,
+      "n_all_years": 0
+     },
+     {
+      "heading": "Septation of atria III",
+      "pages": [
+       35,
+       35
+      ],
+      "tier": 1,
+      "years": [
+       50,
+       51,
+       52
+      ],
+      "summary": "Septum secundum เหลือช่อง = foramen ovale (ให้เลือด R → L ในทารก); หลังคลอด septum primum เชื่อมกับ septum secundum = fossa ovalis (ASD secundum = ข้อบกพร่องตรงนี้)",
+      "focus": [],
+      "role": "supporting",
+      "question_ids": [],
+      "in_set": true,
+      "n_all_years": 0
+     },
+     {
+      "heading": "Septation of cardiac outflow I",
+      "pages": [
+       39,
+       39
+      ],
+      "tier": 1,
+      "years": [
+       49,
+       50,
+       52
+      ],
+      "summary": "สัปดาห์ที่ 5: conotruncal swellings ขวา–ซ้าย งอกเป็นเกลียว (spiral) เชื่อม cranial → caudal = conotruncal (aorticopulmonary) septum แยก aorta (LV) กับ pulmonary trunk (RV); ไม่หมุนเกลียว → TGA, แบ่งไม่เท่า → TOF, ไม่สร้าง → truncus arteriosus",
+      "focus": [
+       {
+        "text": "Aorticopulmonary septum แบ่ง truncus/conus → TGA ถ้าไม่หมุน",
+        "years": [
+         49
+        ]
+       },
+       {
+        "text": "Conotruncal septum ไม่สร้าง → persistent truncus arteriosus",
+        "years": [
+         50
+        ]
+       },
+       {
+        "text": "Conotruncal septum ไม่สร้าง → persistent truncus arteriosus; หมุนผิด → TGA",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 3
+     },
+     {
+      "heading": "Septation of cardiac outflow II",
+      "pages": [
+       40,
+       40
+      ],
+      "tier": 1,
+      "years": [
+       49,
+       50,
+       52
+      ],
+      "summary": "สัปดาห์ที่ 9: ปลาย caudal ของ conotruncal septum ถึง muscular IVS และ AV septum → ปิด IVS สมบูรณ์ (membranous part)",
+      "focus": [],
+      "role": "supporting",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 0
+     },
+     {
+      "heading": "Vitelline and umbilical veins",
+      "pages": [
+       55,
+       55
+      ],
+      "tier": 2,
+      "years": [
+       51
+      ],
+      "summary": "Vitelline → portal system; left vitelline และ right umbilical หายไป; left umbilical v. → ductus venosus → IVC; หลังคลอด left umbilical → ligamentum teres, ductus venosus → ligamentum venosum",
+      "focus": [
+       {
+        "text": "Fetal remnants: ligamentum teres, ligamentum venosum",
+        "years": [
+         51
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [
+       "CVS-51-OSPE-017"
+      ],
+      "in_set": true,
+      "n_all_years": 1
+     },
+     {
+      "heading": "Derivatives of 4th arch",
+      "pages": [
+       65,
+       65
+      ],
+      "tier": 1,
+      "years": [
+       51
+      ],
+      "summary": "Left 4th → ส่วนหนึ่งของ arch of aorta; right 4th → proximal right subclavian a. (ไม่มี left subclavian ← 4th/7th; double arch = right 4th + right dorsal aorta คงอยู่)",
+      "focus": [
+       {
+        "text": "Aortic arch derivatives: left 4th = arch, left 6th distal = ductus arteriosus; coarctation ใกล้ ductus",
+        "years": [
+         51
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": true,
+      "n_all_years": 1
+     },
+     {
+      "heading": "Arch of aorta",
+      "pages": [
+       66,
+       66
+      ],
+      "tier": 1,
+      "years": [
+       49,
+       50,
+       51
+      ],
+      "summary": "ส่วนต้น = aortic sac; กลาง = left 4th arch; ปลาย = left dorsal aorta",
+      "focus": [],
+      "role": "supporting",
+      "question_ids": [],
+      "in_set": true,
+      "n_all_years": 0
+     },
+     {
+      "heading": "Subclavian arteries",
+      "pages": [
+       67,
+       67
+      ],
+      "tier": 1,
+      "years": [
+       49,
+       50,
+       51
+      ],
+      "summary": "Right subclavian = right 4th arch + right dorsal aorta + right 7th intersegmental; left subclavian = left 7th intersegmental a.",
+      "focus": [],
+      "role": "supporting",
+      "question_ids": [],
+      "in_set": true,
+      "n_all_years": 0
+     },
+     {
+      "heading": "Derivatives of 6th arch",
+      "pages": [
+       68,
+       68
+      ],
+      "tier": 1,
+      "years": [
+       49,
+       50,
+       51
+      ],
+      "summary": "Left 6th: ต้น → proximal left pulmonary a., ปลาย → ductus arteriosus; right 6th: ต้น → proximal right pulmonary a., ปลายสลาย",
+      "focus": [
+       {
+        "text": "Ductus arteriosus = derivative ของ 6th arch",
+        "years": [
+         49
+        ]
+       },
+       {
+        "text": "6th arch → ductus arteriosus; RLN สัมพันธ์ aortic arches",
+        "years": [
+         50
+        ]
+       },
+       {
+        "text": "6th arch → ductus arteriosus",
+        "years": [
+         51
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [
+       "CVS-51-OSPE-017"
+      ],
+      "in_set": true,
+      "n_all_years": 3
+     },
+     {
+      "heading": "Changes in the aortic arch system",
+      "pages": [
+       69,
+       69
+      ],
+      "tier": 1,
+      "years": [
+       49,
+       50,
+       51
+      ],
+      "summary": "สลาย: arch 1–2 ส่วนใหญ่, arch 5 ทั้งหมด, ปลาย right 6th, dorsal aorta ระหว่าง arch 3–4 (carotid duct), right dorsal aorta ระหว่าง 7th intersegmental กับจุดเชื่อม",
+      "focus": [],
+      "role": "supporting",
+      "question_ids": [],
+      "in_set": true,
+      "n_all_years": 0
+     },
+     {
+      "heading": "Recurrent laryngeal nerves and aortic arches",
+      "pages": [
+       70,
+       70
+      ],
+      "tier": 1,
+      "years": [
+       49,
+       50,
+       51
+      ],
+      "summary": "RLN เดิมคล้องใต้ 6th arch ทั้งสองข้าง; ซ้าย คล้องใต้ ductus arteriosus (→ ligamentum arteriosum/aortic arch); ขวา 6th + 5th หาย → คล้องใต้ 4th = right subclavian a.",
+      "focus": [],
+      "role": "supporting",
+      "question_ids": [],
+      "in_set": true,
+      "n_all_years": 0
+     }
+    ],
+    "best_tier": 1,
+    "pages_total": 13,
+    "n_in_set": 2
+   },
+   {
+    "lecture": "CC5",
+    "topics": [
+     {
+      "heading": "Aortic aneurysm",
+      "pages": [
+       21,
+       21
+      ],
+      "tier": 1,
+      "years": [
+       50,
+       51,
+       52
+      ],
+      "summary": "นิยาม = เส้นผ่านศูนย์กลาง ≥ 1.5 เท่าของปกติ; hoop stress (Laplace) = P × R / h → aneurysm ยิ่งใหญ่ แรงตึงผนังยิ่งมาก เสี่ยงแตก",
+      "focus": [
+       {
+        "text": "Aneurysm definition",
+        "years": [
+         50
+        ]
+       },
+       {
+        "text": "Aortic aneurysm 1.5×, Laplace",
+        "years": [
+         51
+        ]
+       },
+       {
+        "text": "Aneurysm definition (1.5×), acute aortic syndrome",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [
+       "CVS-51-OSPE-009"
+      ],
+      "in_set": true,
+      "n_all_years": 3
+     },
+     {
+      "heading": "Ruptured aortic aneurysm",
+      "pages": [
+       22,
+       22
+      ],
+      "tier": 1,
+      "years": [
+       50,
+       51,
+       52
+      ],
+      "summary": "ภาพ aneurysm ที่แตก",
+      "focus": [],
+      "role": "supporting",
+      "question_ids": [],
+      "in_set": true,
+      "n_all_years": 0
+     },
+     {
+      "heading": "Acute aortic syndrome",
+      "pages": [
+       23,
+       23
+      ],
+      "tier": 1,
+      "years": [
+       52
+      ],
+      "summary": "Aortic dissection, intramural hematoma (IMH), penetrating aortic ulcer (PAU); BP สูงเป็นตัวกระตุ้น; complication: cardiac tamponade, AR, rupture",
+      "focus": [
+       {
+        "text": "Acute aortic syndrome",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": true,
+      "n_all_years": 1
+     },
+     {
+      "heading": "Central vein steno-occlusive disease",
+      "pages": [
+       31,
+       31
+      ],
+      "tier": 1,
+      "years": [
+       50,
+       52
+      ],
+      "summary": "Central vein stenosis ในผู้ป่วยฟอกไต; external compression → SVC syndrome (หน้า คอ แขนบวม เส้นเลือดโป่ง)",
+      "focus": [
+       {
+        "text": "SVC syndrome จาก external compression",
+        "years": [
+         50
+        ]
+       },
+       {
+        "text": "External compression → SVC syndrome",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 2
+     },
+     {
+      "heading": "Chronic venous insufficiency",
+      "pages": [
+       32,
+       32
+      ],
+      "tier": 1,
+      "years": [
+       52
+      ],
+      "summary": "Venous hypertension → interstitial leakage → chronic inflammation → venous leg ulcer; CEAP C1 telangiectasia → C2 varicose → C3 edema → C4 skin change → C5 healed ulcer → C6 active ulcer",
+      "focus": [
+       {
+        "text": "Chronic venous insufficiency = valvular incompetence → venous hypertension → ulcer (CEAP)",
+        "years": [
+         52
+        ]
+       }
+      ],
+      "role": "core",
+      "question_ids": [],
+      "in_set": false,
+      "n_all_years": 1
+     }
+    ],
+    "best_tier": 1,
+    "pages_total": 3,
+    "n_in_set": 1
+   }
+  ],
+  "minimum_set": {
+   "target": 0.8,
+   "ranks": [
+    29,
+    41,
+    7,
+    50,
+    52,
+    9,
+    12,
+    56,
+    60,
+    64,
+    16,
+    10,
+    11,
+    33,
+    81,
+    37,
+    8,
+    25,
+    54,
+    55,
+    78,
+    79,
+    36,
+    6,
+    19,
+    48,
+    70,
+    86,
+    94,
+    97,
+    98,
+    100,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    110,
+    112,
+    23,
+    24,
+    4,
+    63,
+    68,
+    71,
+    28,
+    18,
+    1,
+    34,
+    39,
+    42,
+    46,
+    58,
+    75,
+    114,
+    116,
+    120,
+    122,
+    44,
+    27,
+    2
+   ],
+   "pages_total": 155,
+   "coverage": 0.827,
+   "recent_items": 243
+  }
+ }
+}

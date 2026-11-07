@@ -1,0 +1,691 @@
+/* MedLib exam pages: set overview, rounds (practice / timed / untimed), runner, summary, history, Guidereader,
+   cross-set practice ("mix") and the block reading plan. Logic without DOM lives in lib/quizcore.js.
+   app.js calls window.MedLibQuizUI(ML) once and routes #/set/... here. */
+window.MedLibQuizUI = function (ML) {
+  "use strict";
+  const C = window.MedLibQuiz;
+  const { $, esc, enc } = ML;
+  const MODE_TH = { practice: "ฝึก (เฉลยทันที)", timed: "จำลองสอบจริง (จับเวลา)", untimed: "สอบไม่จับเวลา" };
+  const MODE_SHORT = { practice: "ฝึก", timed: "จับเวลา", untimed: "ไม่จับเวลา" };
+  const KIND_TH = { full: "ทั้งชุด", retry: "ทำข้อผิดซ้ำ", mix: "ชุดที่สร้างเอง" };
+  const TIER_TXT = { 1: "ต้องอ่าน", 2: "ควรอ่าน", 3: "อ่านถ้ามีเวลา" };
+  const mmss = (sec) => `${Math.floor(sec / 60)}:${String(Math.floor(sec % 60)).padStart(2, "0")}`;
+  const txt = (s) => esc(s).replace(/\n/g, "<br>");
+  const P = () => ML.prog();
+  const marks = () => P().marks;
+  const save = () => ML.saveProg();
+
+  /* ---------- sets, mixes, rounds ---------- */
+  function setLike(b, sid) {
+    if (!b) return null;
+    if (sid && sid.startsWith("@")) {
+      const m = P().mixes[sid.slice(1)];
+      if (!m || m.block !== b.id) return null;
+      const all = ML.examsOf(b); const byId = Object.fromEntries(all.map((q) => [q.id, q]));
+      const qs = m.qids.map((id) => byId[id]).filter(Boolean);
+      const limit = Math.max(5, Math.round(qs.reduce((a, q) => a + (q.type === "MCQ" ? 1.5 : 6), 0)));
+      return { id: sid, mix: true, title: m.title, type: "ชุดฝึกข้ามชุด", cohort: null, meta: { time_limit_min: limit }, questions: qs, guide: null };
+    }
+    return ML.findSet(b, sid);
+  }
+  const keyOfSet = (b, s) => `${b.id}/${s.id}`;
+  const roundsOf = (b, s) => (P().rounds[keyOfSet(b, s)] = P().rounds[keyOfSet(b, s)] || []);
+  const activeRound = (b, s) => roundsOf(b, s).filter((r) => !r.done).pop() || null;
+  const qmapOf = (s) => Object.fromEntries(s.questions.map((q) => [q.id, q]));
+  const kov = () => marks().keyOverride;
+  const lastDone = (b, s) => roundsOf(b, s).filter((r) => r.done && !r.abandoned).pop() || null;
+  const base = (b, s) => `#/set/${enc(b.id)}/${enc(s.id)}`;
+
+  // Latest result of every question in a block (across sets and mixes)
+  function blockResults(b) {
+    const qmap = Object.fromEntries(ML.examsOf(b).map((q) => [q.id, q]));
+    const rounds = Object.entries(P().rounds).filter(([k]) => k.startsWith(b.id + "/")).flatMap(([, v]) => v);
+    return C.latestResults(rounds, qmap, kov());
+  }
+  function setProgress(b, s) {
+    const res = blockResults(b);
+    const done = s.questions.filter((q) => q.id in res);
+    const ok = done.filter((q) => res[q.id] >= 0.999).length;
+    return { total: s.questions.length, done: done.length, ok };
+  }
+
+  /* ---------- small renderers ---------- */
+  const lecName = (b, id) => { const l = b.lectures.find((x) => x.id === id); return l ? `${id} ${l.title}` : id; };
+  const pgTxt = (p) => (!p || !p.length ? "" : p.length > 1 && p[p.length - 1] - p[0] === p.length - 1 ? `หน้า ${p[0]}–${p[p.length - 1]}` : `หน้า ${p.join(", ")}`);
+  const pdfHref = (b, id, page) => `#/pdf/${enc(b.id)}/${enc(id)}/${page || 1}`;
+
+  function listHTML(parts, ordered) { const t = ordered ? "ol" : "ul"; return `<${t} class="kc">${parts.map((p) => `<li>${txt(p.trim())}</li>`).join("")}</${t}>`; }
+  // key concept / explanation text → readable blocks: bullets, "(1) (2)" lists, "a; b; c" lists and a ⚠️ trap box
+  function kcHTML(s) {
+    s = String(s || ""); let trap = "";
+    const m = s.match(/\s*(?:Classic trap|Trap|จุดที่มักสับสน|จุดหลอก)\s*:\s*/i);
+    if (m) { trap = s.slice(m.index + m[0].length); s = s.slice(0, m.index); }
+    let warn = "";
+    const w = s.match(/\n?\s*⚠️\s*([^\n]+)\s*$/);
+    if (w) { warn = w[1]; s = s.slice(0, w.index); }
+    const tw = trap.match(/\n?\s*⚠️\s*([^\n]+)\s*$/);
+    if (tw) { warn = warn || tw[1]; trap = trap.slice(0, tw.index); }
+    let body;
+    if (/\n\s*[•\-]/.test("\n" + s)) {
+      const lines = s.split(/\n/).map((x) => x.replace(/^\s*[•\-]\s*/, "")).filter((x) => x.trim());
+      body = lines.length > 1 ? listHTML(lines) : `<div>${txt(lines.join(" "))}</div>`;
+    } else if ((s.match(/\(\d\)/g) || []).length >= 2) {
+      const pre = s.split(/\(\d\)\s*/), head = pre.shift();
+      body = (head.trim() ? `<div>${txt(head.trim().replace(/[:：]\s*$/, ""))}</div>` : "") + listHTML(pre.filter((x) => x.trim()).map((x) => x.replace(/[;,]\s*$/, "")), true);
+    } else if (s.split(/;\s+/).length >= 3) body = listHTML(s.split(/;\s+/));
+    else body = s.trim() ? `<div>${txt(s.trim())}</div>` : "";
+    if (trap.trim()) body += `<div class="trap"><b>⚠️ จุดที่มักสับสน</b>${txt(trap.trim())}</div>`;
+    if (warn.trim()) body += `<div class="warnline">⚠️ ${txt(warn.trim())}</div>`;
+    return body;
+  }
+  function chainHTML(m) {
+    if (!m || !m.length) return "";
+    const st = m.map((x) => (typeof x === "string" ? { s: x } : x));
+    let h = `<div class="chain">${st.map((x, i) => `${i ? '<span class="ar">→</span>' : ""}<span class="st${x.answer ? " ans" : ""}">${esc(x.s)}</span>`).join("")}</div>`;
+    if (st.some((x) => x.note)) h += `<ol class="steps">${st.map((x, i) => (x.note ? `<li value="${i + 1}"><b>${esc(x.s)}</b> — ${txt(x.note)}</li>` : "")).join("")}</ol>`;
+    return h;
+  }
+  function badgeHTML(q) {
+    if (q.answer_status === "corrected") return `<span class="badge bad">แก้เฉลยจากต้นฉบับแล้ว</span>`;
+    if (q.answer_status === "disputed") return `<span class="badge bad">เฉลยต้นฉบับอาจคลาดเคลื่อน</span>`;
+    if (q.answer_status === "draft") return `<span class="badge warn">เฉลยยังไม่ยืนยัน</span>`;
+    return "";
+  }
+  function refsHTML(b, q) {
+    if (!q.refs || !q.refs.length) return "";
+    return `<div class="refs">${q.refs.map((r) => {
+      if (r.paper) {
+        const d = ML.docOf(b, r.paper);
+        return `<div class="ref"><span class="hint">ต้นฉบับ:</span><a href="${pdfHref(b, r.paper, r.pages[0])}">${d && d.role === "key" ? "PDF เฉลย" : "PDF ข้อสอบ"} ${pgTxt(r.pages)}</a></div>`;
+      }
+      const hot = r.hotspot ? (r.hotspot.years.length >= 2 ? `<span class="hot">ออกซ้ำ ${r.hotspot.years.length} ปี</span>` : r.hotspot.years.length ? `<span class="tier">เคยออกปี ${r.hotspot.years.join(", ")}</span>` : "") + `<span class="tier">Tier ${r.hotspot.tier}</span>` : "";
+      return `<div class="ref"><span class="hint">อ่านเพิ่ม:</span><a href="${pdfHref(b, r.lecture, r.pages[0])}">${esc(lecName(b, r.lecture))} ${pgTxt(r.pages)}</a>${hot}${r.focus ? `<span class="hint">${esc(r.focus)}</span>` : ""}</div>`;
+    }).join("")}</div>`;
+  }
+  const figureHTML = (b, q) => (q.image ? `<figure><img src="${esc(b._base + "/" + q.image)}" alt="${esc(q.image_caption || "ภาพประกอบโจทย์")}" data-zoom="1" loading="lazy">${q.image_caption ? `<figcaption>${txt(q.image_caption)}</figcaption>` : ""}</figure>` : "");
+
+  // Box under a revealed question: answer, original key, mechanism, key concept, refs, my note, report / my key
+  function explainHTML(b, q, extra) {
+    const mine = kov()[q.id];
+    let h = `<div class="explain"><h3>คำอธิบาย${badgeHTML(q)}</h3>`;
+    if (q.explanation || extra) h += `<div class="answerline">${extra || ""}${q.explanation ? kcHTML(q.explanation) : ""}</div>`;
+    if (q.source_answer || q.source_answer_text) h += `<div class="keyrow src"><span class="kl">เฉลยต้นฉบับ: ${esc(q.source_answer || q.source_answer_text)}${q.type === "MCQ" ? " (ไม่ใช้ให้คะแนน)" : ""}</span>${q.source_answer_note ? kcHTML(q.source_answer_note) : ""}</div>`;
+    else if (q.source_answer_note && q.answer_status !== "verified") h += `<div class="keyrow src"><span class="kl">หมายเหตุจากต้นฉบับ</span>${kcHTML(q.source_answer_note)}</div>`;
+    if (q.mechanism && q.mechanism.length) h += `<h4>ลำดับกลไก</h4>${chainHTML(q.mechanism)}`;
+    if (q.key_concept) h += `<h4>หลักการ</h4>${kcHTML(q.key_concept)}`;
+    if (q.audit_note) h += `<p class="auditnote">หมายเหตุการตรวจเฉลย: ${txt(q.audit_note)}</p>`;
+    h += refsHTML(b, q);
+    h += reportHTML(b, q, mine);
+    return h + `</div>`;
+  }
+  function reportHTML(b, q, mine) {
+    const rep = marks().reported[q.id];
+    const opts = q.type === "MCQ" ? Object.keys(q.options) : [];
+    return `<div class="doubtrow">
+      ${mine ? `<span class="badge mine">เครื่องนี้ใช้เฉลย ${esc(mine)} ของฉัน</span><button class="linkbtn" data-z="unkey" data-q="${esc(q.id)}">กลับไปใช้เฉลยกลาง</button>` : ""}
+      ${rep ? `<span class="badge">แจ้งผู้ดูแลแล้ว</span>` : ""}
+      <details class="report"><summary>แจ้งเฉลยน่าสงสัย${opts.length ? " / ใช้เฉลยของฉัน" : ""}</summary>
+        ${opts.length ? `<label>ฉันคิดว่าคำตอบที่ถูกคือ <select data-rep-key="1"><option value="">ไม่แน่ใจ</option>${opts.map((k) => `<option ${mine === k ? "selected" : ""}>${k}</option>`).join("")}</select></label>
+        <label class="chk"><input type="checkbox" data-rep-local="1" ${mine ? "checked" : ""}> ใช้คำตอบนี้ให้คะแนนในเครื่องฉัน ระหว่างรอผู้ดูแลตรวจ</label>` : ""}
+        <label>เหตุผล / แหล่งอ้างอิง<textarea data-rep-reason="1" rows="3" placeholder="เช่น ตาม lecture L04 หน้า 12 ..."></textarea></label>
+        <div class="btns"><button class="btn primary sm" data-z="report" data-q="${esc(q.id)}">ส่งถึงผู้ดูแล</button>${opts.length ? `<button class="btn sm" data-z="setkey" data-q="${esc(q.id)}">บันทึกเฉลยของฉันอย่างเดียว</button>` : ""}<span class="hint" data-rep-msg="1"></span></div>
+      </details></div>`;
+  }
+  function noteHTML(q) {
+    const n = marks().notes[q.id];
+    return `<details class="qnote" ${n && n.text ? "open" : ""}><summary>โน้ตของฉัน${n && n.text ? " ·" : ""}</summary><textarea data-qnote="${esc(q.id)}" rows="3" placeholder="จดสิ่งที่อยากจำของข้อนี้ (เก็บในเครื่องนี้ ส่งออกได้)">${esc(n ? n.text : "")}</textarea></details>`;
+  }
+
+  // One question body. r = round (answers), reveal = show key
+  function questionHTML(b, q, r, reveal, instant) {
+    if (q.type === "MCQ") {
+      const chosen = r.ans[q.id], key = C.keyOf(q, kov());
+      const order = (r.choiceOrder && r.choiceOrder[q.id]) || Object.keys(q.options);
+      let h = `<div class="stem">${txt(q.stem)}</div>${figureHTML(b, q)}<ul class="opts">`;
+      order.forEach((k, i) => {
+        let cls = "";
+        if (reveal) { if (k === key) cls = "correct"; else if (k === chosen) cls = "wrong"; }
+        const why = reveal && q.option_why && q.option_why[k] ? `<span class="why">${txt(q.option_why[k])}</span>` : "";
+        const label = r.shuffleC ? "ABCDE"[i] : k;
+        h += `<li><button class="opt ${cls}" data-opt="${esc(k)}" aria-pressed="${chosen === k}" ${reveal ? "disabled" : ""}><span class="k">${label}</span><span>${txt(q.options[k])}${why}</span></button></li>`;
+      });
+      h += `</ul>`;
+      if (reveal) {
+        const disp = r.shuffleC ? "ABCDE"[order.indexOf(key)] : key;
+        const extra = key ? `<p><b>${!chosen ? "ไม่ได้ตอบ · " : chosen === key ? "ถูกต้อง · " : "ยังไม่ใช่ · "}คำตอบ ${esc(disp)}${r.shuffleC && disp !== key ? ` (ช้อยส์ ${esc(key)} ในต้นฉบับ)` : ""}${q.answer_status === "corrected" ? " (เฉลยใหม่)" : q.answer_status === "draft" ? " (ร่างเฉลย)" : ""}</b></p>` : "";
+        h += explainHTML(b, q, extra);
+      }
+      return h;
+    }
+    const lead = q.type === "KF" ? `<div class="case"><div class="lbl">สถานการณ์</div>${txt(q.case || q.stem)}</div>`
+      : `<div class="case"><div class="lbl">สถานี ${esc(q.station || q.n)}</div>${txt(q.stem || "")}</div>`;
+    const A = r.ans[q.id] || {}, ov = (r.ov && r.ov[q.id]) || {};
+    let h = lead + figureHTML(b, q);
+    (q.items || []).forEach((it, n) => {
+      const a = A[it.id] || {};
+      h += `<div class="item"><div class="prompt">${n + 1}. ${txt(it.prompt)}</div>`;
+      if (it.format === "select") {
+        h += `<div class="hint">เลือกได้ไม่เกิน ${it.max_answers || "—"} ข้อ (เลือกเกินได้ 0 คะแนน)</div><div class="checks">`;
+        (it.options || []).forEach((o) => {
+          const on = (a.sel || []).includes(o.key); let cls = "";
+          if (reveal) { if ((it.answer || []).includes(o.key)) cls = "correct"; else if (on) cls = "wrong"; }
+          h += `<label class="${cls}"><input type="checkbox" data-item="${esc(it.id)}" value="${esc(o.key)}" ${on ? "checked" : ""} ${reveal ? "disabled" : ""}><span>${txt(o.text)}</span></label>`;
+        });
+        h += `</div>`;
+      } else h += `<textarea data-item="${esc(it.id)}" placeholder="พิมพ์คำตอบ" ${reveal ? "readonly" : ""}>${esc(a.text || "")}</textarea>`;
+      if (reveal) {
+        const sc = C.itemScore(it, a, ov[it.id]), cls = sc >= 0.999 ? "ok" : sc <= 0.001 ? "bad" : "part";
+        const keyTxt = it.format === "select" ? (it.options || []).filter((o) => (it.answer || []).includes(o.key)).map((o) => o.text).join(", ") : it.key_text || (it.accepted || []).join(" / ");
+        h += `<div class="verdict ${cls}"><b>${sc >= 0.999 ? "ถูก" : sc <= 0.001 ? "ยังไม่ถูก" : `ถูกบางส่วน (${Math.round(sc * 100)}%)`}</b>`
+          + (it.source_key ? `<div class="keyrow src"><span class="kl">เฉลยต้นฉบับ${it.new_key ? " (ไม่ใช้)" : ""}</span><div>${txt(it.source_key)}</div></div>` : "")
+          + (it.new_key ? `<div class="keyrow new"><span class="kl">เฉลยใหม่</span><div>${txt(it.new_key)}</div>${it.new_key_reason ? kcHTML(it.new_key_reason) : ""}</div>` : "")
+          + (!it.source_key && !it.new_key && keyTxt ? `<div class="keyrow src"><span class="kl">เฉลย</span><div>${txt(keyTxt)}</div></div>` : "")
+          + (it.mechanism ? chainHTML(it.mechanism) : "")
+          + (it.explanation && it.explanation !== keyTxt ? `<div class="itemexp">${kcHTML(it.explanation)}</div>` : "");
+        if (it.format !== "select") {
+          const o = ov[it.id];
+          h += `<div class="override"><span class="hint">ตัดสินเอง:</span><button data-ov="1" data-item="${esc(it.id)}" aria-pressed="${o === 1}">ถูก</button><button data-ov="0" data-item="${esc(it.id)}" aria-pressed="${o === 0}">ผิด</button><button data-ov="auto" data-item="${esc(it.id)}" aria-pressed="${o == null}">อัตโนมัติ</button></div>`;
+        }
+        h += `</div>`;
+      }
+      h += `</div>`;
+    });
+    if (instant && !reveal) h += `<button class="btn primary" data-z="check">ตรวจคำตอบข้อนี้</button>`;
+    if (reveal) h += explainHTML(b, q, "");
+    return h;
+  }
+
+  /* ---------- set header + tabs ---------- */
+  function headHTML(b, s, tab) {
+    const B = base(b, s);
+    const papers = s.mix ? [] : b.papers.filter((p) => p.cohort === s.cohort && p.type === s.type);
+    const tabs = [["", "ทำข้อสอบ"], ["guide", "Guidereader"], ["sum", "สรุปผล"], ["hist", "ประวัติ"]];
+    return `<div class="crumbs"><a href="#/">ทั้งหมด</a><span>/</span><a href="#/b/${enc(b.id)}/exam">${esc(b.name)}</a><span>/</span><span>${s.mix ? "ชุดฝึกข้ามชุด" : `รุ่น ${s.cohort} · ${esc(s.type)}`}</span></div>
+      <div class="sethead"><div><h2>${esc(s.title)}</h2><p class="hint">${s.questions.length} ข้อ${s.meta.time_limit_min && !s.mix ? ` · เวลาสอบจริง ${s.meta.time_limit_min} นาที` : ""}${papers.length ? " · " + papers.map((p) => `<a href="#/pdf/${enc(b.id)}/${enc(p.id)}/1">${p.role === "key" ? "PDF เฉลย" : "PDF ข้อสอบ"}</a>`).join(" · ") : ""}</p></div></div>
+      <nav class="tabs">${tabs.map(([k, l]) => `<a class="tab ${tab === k ? "on" : ""}" href="${B}${k ? "/" + k : ""}">${l}</a>`).join("")}</nav>`;
+  }
+
+  /* ---------- overview: start a round / resume ---------- */
+  function viewOverview(b, s) {
+    const act = activeRound(b, s), last = lastDone(b, s), B = base(b, s);
+    const limit = Number(s.meta.time_limit_min) || 0;
+    const pref = P().prefs || {};
+    let h = headHTML(b, s, "");
+    if (act) {
+      const st = C.roundStats(act, qmapOf(s), kov());
+      h += `<div class="resume"><div><b>รอบที่ค้างอยู่</b> <span class="pill">${MODE_SHORT[act.mode]}</span> <span class="pill">${KIND_TH[act.kind] || ""}</span><div class="hint">ตอบแล้ว ${st.answered}/${st.total}${act.mode === "practice" ? ` · ถูก ${st.ok}` : ""} · เริ่ม ${new Date(act.started).toLocaleString("th-TH", { dateStyle: "short", timeStyle: "short" })}</div></div>
+        <div class="btns"><a class="btn primary" href="${B}/run/${(act.idx || 0) + 1}">ทำต่อ</a><button class="btn" data-z="abandon">ทิ้งรอบนี้</button></div></div>`;
+    }
+    const m = act ? null : pref.mode || "practice";
+    h += `<section class="startbox"><h3>${act ? "หรือเริ่มรอบใหม่" : "เริ่มทำชุดนี้"}</h3>
+      <div class="modecards">${["practice", "timed", "untimed"].map((k) => `<label class="modecard"><input type="radio" name="mode" value="${k}" ${(m || "practice") === k ? "checked" : ""}><b>${MODE_TH[k]}</b><span class="hint">${k === "practice" ? "เลือกแล้วเห็นเฉลยและคำอธิบายทันที" : k === "timed" ? `นับถอยหลัง ${limit || "—"} นาที หมดเวลาส่งเอง เฉลยขึ้นหลังส่ง` : "ทำครบแล้วกดส่ง เฉลยขึ้นหลังส่ง ไม่กดดันเรื่องเวลา"}</span></label>`).join("")}</div>
+      <div class="opts-row"><label class="chk"><input type="checkbox" id="shufQ" ${pref.shuffleQ ? "checked" : ""}> สุ่มลำดับข้อ</label><label class="chk"><input type="checkbox" id="shufC" ${pref.shuffleC ? "checked" : ""}> สุ่มลำดับช้อยส์ (MCQ)</label></div>
+      <button class="btn primary big" data-z="start">${act ? "เริ่มรอบใหม่ (รอบเดิมจะถูกเก็บเป็นประวัติแบบไม่ครบ)" : "เริ่มทำ"}</button></section>`;
+    const pr = setProgress(b, s);
+    h += `<section class="minihist"><h3>ความคืบหน้า</h3><p class="hint">เคยทำแล้ว ${pr.done}/${pr.total} ข้อ · ถูกล่าสุด ${pr.ok} ข้อ${last ? ` · รอบล่าสุด ${C.roundStats(last, qmapOf(s), kov()).pct}% (<a href="${B}/sum/${last.id}">ดูผล</a> · <a href="${B}/hist">ประวัติทั้งหมด</a>)` : ""}</p></section>`;
+    ML.main.innerHTML = h + notepadHTML(b, s);
+  }
+
+  function startRound(b, s, opts) {
+    const act = activeRound(b, s);
+    if (act) { act.done = true; act.abandoned = true; act.finished = Date.now(); }
+    const r = C.newRound(s.questions, Object.assign({ kind: s.mix ? "mix" : "full" }, opts));
+    roundsOf(b, s).push(r); save();
+    location.hash = `${base(b, s)}/run/1`;
+  }
+
+  /* ---------- runner ---------- */
+  let TIMER = null;
+  function stop() { if (TIMER) { clearInterval(TIMER); TIMER = null; } }
+  const visible = (b, s, r) => {
+    const qmap = qmapOf(s), f = r.filter || "all", lf = r.lec || "all";
+    return r.qids.map((id) => qmap[id]).filter((q) => {
+      if (!q) return false;
+      if (lf !== "all" && !(q.refs || []).some((x) => x.lecture === lf)) return false;
+      const st = C.status(q, r, kov());
+      if (f === "wrong") return st === "wrong" || st === "partial";
+      if (f === "flag") return !!marks().flag[q.id];
+      if (f === "blank") return st === "blank";
+      return true;
+    });
+  };
+  function viewRun(b, s, pos) {
+    const r = activeRound(b, s);
+    if (!r) { location.replace(base(b, s)); return; }
+    const qmap = qmapOf(s);
+    const i = Math.max(0, Math.min(r.qids.length - 1, (Number(pos) || 1) - 1));
+    r.idx = i;
+    const q = qmap[r.qids[i]];
+    const instant = r.mode === "practice";
+    const reveal = !!r.chk[q.id];
+    const vis = visible(b, s, r), vpos = vis.indexOf(q);
+    const prev = vpos > 0 ? vis[vpos - 1] : vpos < 0 ? vis.filter((x) => r.qids.indexOf(x.id) < i).pop() : null;
+    const next = vpos >= 0 ? vis[vpos + 1] : vis.find((x) => r.qids.indexOf(x.id) > i);
+    const at = (x) => r.qids.indexOf(x.id) + 1, B = base(b, s);
+    const st = C.roundStats(r, qmap, kov());
+    const strip = vis.map((x) => {
+      const ss = C.status(x, r, kov()), graded = ss === "ok" || ss === "wrong" || ss === "partial", fl = marks().flag[x.id];
+      const cls = ["qc", graded ? ss : fl ? "flag" : ss === "answered" ? "answered" : "", graded && fl ? "flag-ring" : "", x === q ? "cur" : ""].join(" ");
+      return `<button class="${cls}" data-go="${at(x)}" title="ข้อ ${esc(x.n)}">${esc(x.n)}</button>`;
+    }).join("") || `<span class="hint">ไม่มีข้อที่ตรงกับตัวกรอง</span>`;
+    const lecs = [...new Set(s.questions.flatMap((x) => (x.refs || []).filter((y) => y.lecture).map((y) => y.lecture)))].sort();
+    const sel = (v, l, cur) => `<option value="${esc(v)}" ${cur === v ? "selected" : ""}>${esc(l)}</option>`;
+    const limit = r.mode === "timed" ? (Number(s.meta.time_limit_min) || 0) * 60 : 0;
+    const timerTxt = () => (r.mode === "practice" ? "" : limit ? `เหลือ ${mmss(Math.max(0, limit - r.elapsed))}` : `เวลา ${mmss(r.elapsed)}`);
+    const isLast = !next;
+    ML.main.innerHTML = headHTML(b, s, "") + `
+      <div class="qhdr">
+        <div class="qnav ${r.navOpen ? "open" : ""}"><div class="qrow">${strip}</div><button class="qexp" data-z="navtoggle">${r.navOpen ? "ย่อ" : "ดูทั้งหมด"}</button></div>
+        <div class="qlegend"><span><i class="lg ok"></i>ถูก</span><span><i class="lg wrong"></i>ผิด</span><span><i class="lg partial"></i>ถูกบางส่วน</span><span><i class="lg flag"></i>ปักธง</span><span><i class="lg answered"></i>ตอบแล้ว รอตรวจ</span><span class="done">${r.mode === "practice" ? `ทำแล้ว ${st.checked}/${st.total} · ถูก ${st.ok}` : `ตอบแล้ว ${st.answered}/${st.total}`}</span></div>
+      </div>
+      <div class="toolbar"><span class="pill">${MODE_TH[r.mode]}</span>${r.kind !== "full" ? `<span class="pill">${KIND_TH[r.kind]}</span>` : ""}
+        ${lecs.length ? `<select data-zf="lec" aria-label="กรองตาม Lecture">${sel("all", "ทุก Lecture", r.lec || "all")}${lecs.map((l) => sel(l, lecName(b, l).slice(0, 48), r.lec)).join("")}</select>` : ""}
+        <select data-zf="filter" aria-label="กรองตามสถานะ">${sel("all", "ทุกข้อ", r.filter || "all")}${sel("blank", "ยังไม่ได้ทำ", r.filter)}${sel("wrong", "เฉพาะข้อที่ผิด", r.filter)}${sel("flag", "เฉพาะข้อที่ปักธง", r.filter)}</select>
+        <span class="timer" id="ztimer">${timerTxt()}</span></div>
+      <article class="qcard">
+        <div class="qhead"><div class="qnum">ข้อ ${esc(q.n)} <small>${esc(q.type)}${s.mix ? ` · รุ่น ${q.cohort}` : ""} · ${i + 1}/${r.qids.length}</small></div>
+          <button class="flagbtn" data-z="flag" aria-pressed="${!!marks().flag[q.id]}">${marks().flag[q.id] ? "ปักธงไว้ทบทวนแล้ว" : "ปักธงไว้ทบทวน"}</button></div>
+        ${questionHTML(b, q, r, reveal, instant)}
+        ${noteHTML(q)}
+      </article>
+      <div class="qfoot">
+        <button class="btn" data-go="${prev ? at(prev) : ""}" ${prev ? "" : "disabled"}>← ข้อก่อนหน้า</button>
+        ${r.mode === "practice" ? `<button class="btn ${isLast ? "primary" : "ghost"}" data-z="finish">${isLast ? "จบรอบ ดูผลสรุป" : "จบรอบนี้"}</button>` : `<button class="btn primary" data-z="submit">ส่งคำตอบทั้งหมด</button>`}
+        <button class="btn" data-go="${next ? at(next) : ""}" ${next ? "" : "disabled"}>ข้อถัดไป →</button>
+      </div>
+      <p class="hint keys">คีย์ลัด: A–E หรือ 1–5 เลือกคำตอบ · ← → เปลี่ยนข้อ · F ปักธง</p>` + notepadHTML(b, s);
+    const cur = ML.main.querySelector(".qc.cur"), row = ML.main.querySelector(".qrow");
+    if (cur && row && !r.navOpen) row.scrollLeft += cur.getBoundingClientRect().left - row.getBoundingClientRect().left - row.clientWidth / 2 + cur.clientWidth / 2;
+    save();
+    stop();
+    let tick = 0;
+    TIMER = setInterval(() => {
+      if (!document.body.contains($("#ztimer"))) return stop();
+      r.elapsed++;
+      $("#ztimer").textContent = timerTxt();
+      if (limit && r.elapsed >= limit) { finishRound(b, s, r, true); return; }
+      if (++tick % 5 === 0) save();
+    }, 1000);
+  }
+
+  function finishRound(b, s, r, all) {
+    stop();
+    if (all) r.qids.forEach((id) => { r.chk[id] = true; });
+    r.done = true; r.finished = Date.now(); save();
+    location.hash = `${base(b, s)}/sum/${r.id}`;
+  }
+
+  /* ---------- summary of one round ---------- */
+  function viewSummary(b, s, rid) {
+    const rounds = roundsOf(b, s);
+    const r = (rid && rounds.find((x) => x.id === rid)) || lastDone(b, s) || activeRound(b, s);
+    let h = headHTML(b, s, "sum");
+    if (!r) { ML.main.innerHTML = h + `<div class="empty">ยังไม่มีผล เริ่มทำชุดนี้ก่อน <a href="${base(b, s)}">ไปเริ่มทำ</a></div>`; return; }
+    const qmap = qmapOf(s), st = C.roundStats(r, qmap, kov()), B = base(b, s);
+    const qs = r.qids.map((id) => qmap[id]).filter(Boolean);
+    const wrong = qs.filter((q) => { const x = C.status(q, r, kov()); return x === "wrong" || x === "partial"; });
+    const blank = qs.filter((q) => !r.chk[q.id]);
+    const flagged = qs.filter((q) => marks().flag[q.id]);
+    const unsure = qs.filter((q) => q.answer_status !== "verified");
+    const jump = (q) => (r.done ? `#/q/${enc(q.id)}` : `${B}/run/${r.qids.indexOf(q.id) + 1}`);
+    const by = {};
+    qs.filter((q) => r.chk[q.id]).forEach((q) => {
+      const ls = [...new Set((q.refs || []).filter((x) => x.lecture).map((x) => x.lecture))];
+      (ls.length ? ls : ["ไม่ระบุ"]).forEach((l) => { const o = by[l] = by[l] || { n: 0, s: 0, ids: [] }; const sc = C.qScore(q, r, kov()) || 0; o.n++; o.s += sc; if (sc < 0.999) o.ids.push(q); });
+    });
+    h += `<div class="scorebox"><div class="big">${st.score} / ${st.checked}</div><div><b>${st.pct}%</b> · ${MODE_TH[r.mode]} · ${KIND_TH[r.kind] || ""}${r.mode !== "practice" || r.elapsed ? ` · ใช้เวลา ${mmss(r.elapsed)}` : ""}<div class="hint">${new Date(r.started).toLocaleString("th-TH", { dateStyle: "medium", timeStyle: "short" })}${blank.length ? ` · ยังไม่ได้ทำ ${blank.length} ข้อ` : ""}${r.done ? "" : " · รอบนี้ยังไม่จบ"}</div></div></div>`;
+    if (!r.done) h += `<div class="btns"><a class="btn primary" href="${B}/run/${(r.idx || 0) + 1}">กลับไปทำต่อ</a></div>`;
+    if (wrong.length && r.done) {
+      h += `<h3>ข้อที่ผิด (${wrong.length}) · เลือกข้อที่จะทำซ้ำ</h3><div class="pickwrong">${wrong.map((q) => `<label class="chk"><input type="checkbox" data-wrongpick="${esc(q.id)}" checked> <a href="${jump(q)}">ข้อ ${esc(q.n)}</a> <span class="hint">${esc(String(q.stem || q.case || "").slice(0, 70))}…</span></label>`).join("")}</div>
+        <div class="btns"><button class="btn primary" data-z="retry" data-r="${r.id}">ทำข้อที่เลือกซ้ำเป็นรอบใหม่</button><a class="btn" href="${B}">ทำทั้งชุดอีกครั้ง</a></div>`;
+    } else if (r.done) h += `<div class="btns"><span class="badge good">ไม่มีข้อที่ผิด</span><a class="btn" href="${B}">ทำทั้งชุดอีกครั้ง</a></div>`;
+    const keys = Object.keys(by).sort((x, y) => by[x].s / by[x].n - by[y].s / by[y].n);
+    if (keys.length) h += `<h3>คะแนนราย Lecture (อ่อนสุดอยู่บน)</h3><div class="tablewrap"><table><thead><tr><th>Lecture</th><th>คะแนน</th><th>ข้อที่ควรทบทวน</th></tr></thead><tbody>${keys.map((l) => `<tr><td>${esc(lecName(b, l))}</td><td>${Math.round(by[l].s * 10) / 10}/${by[l].n}</td><td>${by[l].ids.map((q) => `<a class="jump" href="${jump(q)}">ข้อ ${esc(q.n)}</a>`).join("")}</td></tr>`).join("")}</tbody></table></div>`;
+    const reread = rereadHTML(b, wrong);
+    if (reread) h += `<h3>อ่านซ่อมจากข้อที่ผิด</h3>${reread}`;
+    if (flagged.length) h += `<h3>ปักธงไว้ทบทวน (${flagged.length})</h3><p>${flagged.map((q) => `<a class="jump" href="${jump(q)}">ข้อ ${esc(q.n)}</a>`).join("")}</p>`;
+    if (unsure.length) h += `<h3>เฉลยยังไม่ยืนยัน / แก้จากต้นฉบับ (${unsure.length})</h3><p class="hint">อ่านเหตุผลในกล่องคำอธิบาย ถ้าไม่เห็นด้วยกด "แจ้งเฉลยน่าสงสัย"</p><p>${unsure.map((q) => `<a class="jump" href="${jump(q)}">ข้อ ${esc(q.n)}</a>`).join("")}</p>`;
+    ML.main.innerHTML = h + notepadHTML(b, s);
+  }
+  function rereadHTML(b, qs) {
+    const g = {};
+    qs.forEach((q) => (q.refs || []).filter((x) => x.lecture).forEach((x) => {
+      const k = x.lecture + "|" + x.pages[0];
+      const o = g[k] = g[k] || { lec: x.lecture, pages: x.pages, focus: x.focus || "", tier: (x.hotspot || {}).tier || 3, qs: [] };
+      if (!o.qs.includes(q)) o.qs.push(q);
+    }));
+    const list = Object.values(g).sort((x, y) => x.tier - y.tier || y.qs.length - x.qs.length);
+    if (!list.length) return "";
+    return `<div class="lcard">${list.map((t) => `<div class="topic"><div class="pg"><a href="${pdfHref(b, t.lec, t.pages[0])}">${pgTxt(t.pages)}</a><span class="td t${t.tier}"></span></div><div><div class="hd">${esc(lecName(b, t.lec))}${t.focus ? ": " + esc(t.focus) : ""}</div><div class="hint">ข้อที่ผิด: ${t.qs.map((q) => `ข้อ ${esc(q.n)}${q.cohort && t.qs.some((x) => x.cohort !== q.cohort) ? ` (${q.cohort})` : ""}`).join(", ")}</div></div></div>`).join("")}</div>`;
+  }
+
+  /* ---------- history + graph ---------- */
+  function chartSVG(points) {
+    if (points.length < 2) return "";
+    const W = 640, H = 180, pad = 28;
+    const x = (i) => pad + (i * (W - pad * 2)) / (points.length - 1), y = (v) => H - pad - (v / 100) * (H - pad * 2);
+    const line = points.map((p, i) => `${i ? "L" : "M"}${x(i).toFixed(1)},${y(p.pct).toFixed(1)}`).join(" ");
+    return `<svg class="chart" viewBox="0 0 ${W} ${H}" role="img" aria-label="คะแนนแต่ละรอบ">
+      ${[0, 50, 100].map((v) => `<line x1="${pad}" x2="${W - pad}" y1="${y(v)}" y2="${y(v)}" class="gl"/><text x="4" y="${y(v) + 4}" class="ax">${v}%</text>`).join("")}
+      <path d="${line}" class="lnp"/>${points.map((p, i) => `<circle cx="${x(i)}" cy="${y(p.pct)}" r="4" class="pt"><title>${esc(p.label)} · ${p.pct}%</title></circle>`).join("")}</svg>`;
+  }
+  function viewHistory(b, s) {
+    const qmap = qmapOf(s), B = base(b, s);
+    const rounds = roundsOf(b, s).filter((r) => !r.abandoned || Object.keys(r.chk).length);
+    let h = headHTML(b, s, "hist");
+    if (!rounds.length) { ML.main.innerHTML = h + `<div class="empty">ยังไม่มีประวัติ ทุกรอบที่ทำจะถูกเก็บไว้ที่นี่</div>`; return; }
+    const pts = rounds.filter((r) => r.done && !r.abandoned && r.kind !== "retry").map((r) => ({ pct: C.roundStats(r, qmap, kov()).pct, label: new Date(r.started).toLocaleDateString("th-TH") }));
+    h += pts.length >= 2 ? `<h3>พัฒนาการ (รอบทั้งชุด)</h3>${chartSVG(pts)}` : `<p class="hint">ทำทั้งชุดครบ 2 รอบขึ้นไปจะเห็นกราฟพัฒนาการ</p>`;
+    h += `<div class="tablewrap"><table><thead><tr><th>วันที่</th><th>แบบ</th><th>โหมด</th><th>คะแนน</th><th>เวลา</th><th></th></tr></thead><tbody>${rounds.slice().reverse().map((r) => {
+      const st = C.roundStats(r, qmap, kov());
+      return `<tr><td>${new Date(r.started).toLocaleString("th-TH", { dateStyle: "short", timeStyle: "short" })}</td><td>${KIND_TH[r.kind] || ""}${r.abandoned ? " · ไม่ครบ" : !r.done ? " · กำลังทำ" : ""}</td><td>${MODE_SHORT[r.mode]}</td><td>${st.score}/${st.checked} (${st.pct}%)</td><td>${mmss(r.elapsed || 0)}</td><td><a href="${B}/sum/${r.id}">ดูผล</a></td></tr>`;
+    }).join("")}</tbody></table></div>
+      <div class="btns"><button class="btn danger" data-z="clearhist">ลบประวัติชุดนี้ทั้งหมด</button></div>`;
+    ML.main.innerHTML = h;
+  }
+
+  /* ---------- Guidereader: set level + block plan ---------- */
+  function topicsFromQuestions(b, qs, allQs) {
+    // cluster refs by lecture + first page; years from every question in the block that points at the same pages
+    const T = {};
+    const add = (q, x, own) => {
+      const k = x.lecture + "|" + x.pages[0];
+      const t = T[k] = T[k] || { lecture: x.lecture, pages: [x.pages[0], x.pages[x.pages.length - 1]], heading: "", years: new Set(), own: [], all: [], tiers: [] };
+      if (x.focus && !t.heading) t.heading = x.focus;
+      if (q.cohort) t.years.add(q.cohort);
+      if (x.hotspot) { t.tiers.push(x.hotspot.tier); (x.hotspot.years || []).forEach((y) => t.years.add(y)); }
+      t.pages[1] = Math.max(t.pages[1], x.pages[x.pages.length - 1]);
+      if (own && !t.own.includes(q.id)) t.own.push(q.id);
+      if (!t.all.includes(q.id)) t.all.push(q.id);
+    };
+    qs.forEach((q) => (q.refs || []).filter((x) => x.lecture).forEach((x) => add(q, x, true)));
+    if (allQs) allQs.forEach((q) => (q.refs || []).filter((x) => x.lecture && T[x.lecture + "|" + x.pages[0]]).forEach((x) => add(q, x, false)));
+    return Object.values(T).map((t) => {
+      const years = [...t.years].sort();
+      const tier = t.tiers.length ? Math.min(...t.tiers) : years.length >= 3 ? 1 : years.length === 2 ? 2 : 3;
+      return Object.assign(t, { years, tier });
+    });
+  }
+  function topicRow(b, t, linkQ) {
+    const span = t.pages[0] === t.pages[1] ? `หน้า ${t.pages[0]}` : `หน้า ${t.pages[0]}–${t.pages[1]}`;
+    const ids = t.question_ids || t.own || [];
+    return `<div class="topic${t.role === "supporting" ? " support" : ""}${t.in_set === false ? " other" : ""}"><div class="pg"><a href="${pdfHref(b, t.lecture, t.pages[0])}">${span}</a><span class="td t${t.tier}" title="Tier ${t.tier}"></span></div><div>
+      <div class="hd">${esc(t.heading || span)}${t.role === "supporting" ? ' <span class="tier">อ่านประกอบ</span>' : ""}</div>
+      ${t.summary ? `<div class="hint">${esc(t.summary)}</div>` : ""}
+      ${t.focus && t.focus.length ? `<ul class="focus">${t.focus.map((f) => `<li>${esc(f.text)} <span class="hint">${(f.years || []).join(", ")}</span></li>`).join("")}</ul>` : ""}
+      <div class="ref">${t.years && t.years.length >= 2 ? `<span class="hot">ออกซ้ำ ${t.years.length} ปี</span>` : t.years && t.years.length ? `<span class="tier">ออกปี ${t.years.join(", ")}</span>` : ""}<span class="tier">Tier ${t.tier} ${TIER_TXT[t.tier]}</span></div>
+      ${ids.length ? `<div class="hint">ข้อ: ${ids.map((id) => `<a class="jump" href="${linkQ(id)}">${esc(qLabel(b, id))}</a>`).join("")}</div>` : ""}</div></div>`;
+  }
+  function qLabel(b, id) { const q = ML.examsOf(b).find((x) => x.id === id); return q ? `${q.cohort}·${q.n}` : id; }
+  function guideLectures(b, topics) {
+    const by = {};
+    topics.forEach((t) => (by[t.lecture] = by[t.lecture] || []).push(t));
+    return Object.entries(by).map(([lec, ts]) => ({ lecture: lec, topics: ts.sort((x, y) => x.pages[0] - y.pages[0]),
+      weight: ts.reduce((a, t) => a + (4 - t.tier) * Math.max(1, t.years.length), 0),
+      pages: ts.reduce((a, t) => a + t.pages[1] - t.pages[0] + 1, 0), n: new Set(ts.flatMap((t) => t.own || t.question_ids || [])).size }))
+      .sort((x, y) => y.weight - x.weight);
+  }
+  function lcardHTML(b, L, linkQ, sub) {
+    const inset = L.topics.filter((t) => t.in_set !== false), other = L.topics.filter((t) => t.in_set === false);
+    return `<div class="lcard"><div class="lh"><a class="ln" href="#/l/${enc(b.id)}/${enc(L.lecture)}">${esc(lecName(b, L.lecture))}</a><span class="hint">${sub}</span></div>
+      ${inset.map((t) => topicRow(b, t, linkQ)).join("")}
+      ${other.length ? `<div class="subhead">หัวข้ออื่นใน Lecture นี้ที่ออกบ่อย แต่ไม่อยู่ในชุดนี้</div>${other.map((t) => topicRow(b, t, linkQ)).join("")}` : ""}</div>`;
+  }
+  const tierLegend = `<div class="qlegend"><span><i class="lg t1"></i>Tier 1 ต้องอ่าน</span><span><i class="lg t2"></i>Tier 2 ควรอ่าน</span><span><i class="lg t3"></i>Tier 3 ถ้ามีเวลา</span></div>`;
+  function viewGuide(b, s) {
+    const linkQ = (id) => `#/q/${enc(id)}`;
+    let h = headHTML(b, s, "guide");
+    let lectures;
+    if (s.guide && s.guide.lectures) {
+      lectures = s.guide.lectures.map((L) => ({ lecture: L.lecture, topics: L.topics.map((t) => Object.assign({}, t, { lecture: L.lecture, pages: [t.pages[0], t.pages[t.pages.length - 1]] })),
+        sub: `${L.n_in_set || 0} ข้อในชุดนี้ · อ่าน ${L.pages_total || "?"} หน้า` }));
+      h += `<p class="lead">อ่านอะไรก่อนทำชุดนี้ แยกตาม Lecture เรียงจากสำคัญมากไปน้อย ความสำคัญคิดจากข้อสอบปี ${esc((s.guide.recent_years || []).join(", "))}</p>`;
+    } else {
+      lectures = guideLectures(b, topicsFromQuestions(b, s.questions, ML.examsOf(b))).map((L) => Object.assign(L, { sub: `${L.n} ข้อในชุดนี้ · ${L.pages} หน้า` }));
+      h += `<p class="lead">หน้าที่ข้อในชุดนี้อ้างถึง จัดกลุ่มตาม Lecture · Tier คิดจากจำนวนปีที่หน้านั้นออกสอบในบล็อกนี้</p>`;
+    }
+    h += tierLegend;
+    h += lectures.length ? lectures.map((L) => lcardHTML(b, L, linkQ, L.sub)).join("") : `<div class="empty">ข้อในชุดนี้ยังไม่ได้โยงกับหน้า lecture (มีแค่หน้าต้นฉบับข้อสอบ) เมื่อ Auditor ใส่หน้า lecture แล้ว แผนอ่านจะขึ้นที่นี่</div>`;
+    const res = blockResults(b);
+    const wrong = s.questions.filter((q) => q.id in res && res[q.id] < 0.999);
+    h += `<h3>อ่านซ่อมจากข้อที่ผิดในชุดนี้</h3>${rereadHTML(b, wrong) || `<div class="empty">ยังไม่มีข้อที่ผิด เมื่อตรวจคำตอบแล้ว หน้าที่ควรอ่านซ่อมจะขึ้นที่นี่</div>`}`;
+    ML.main.innerHTML = h;
+  }
+  // Block tab "แผนอ่าน": every exam question of the block → pages to read, by tier
+  function planHTML(b) {
+    const qs = ML.examsOf(b);
+    const topics = topicsFromQuestions(b, qs, null);
+    const linkQ = (id) => `#/q/${enc(id)}`;
+    const tierF = (P().prefs || {}).planTier || 3;
+    const lecs = guideLectures(b, topics.filter((t) => t.tier <= tierF));
+    const withLec = qs.filter((q) => (q.refs || []).some((x) => x.lecture));
+    const t1pages = topics.filter((t) => t.tier === 1).reduce((a, t) => a + t.pages[1] - t.pages[0] + 1, 0);
+    const t1q = new Set(topics.filter((t) => t.tier === 1).flatMap((t) => t.own));
+    const cohorts = [...new Set(qs.map((q) => q.cohort))].sort();
+    let h = `<p class="lead">หน้า lecture ที่ข้อสอบรุ่น ${cohorts.join(", ")} อ้างถึง เรียงจาก Lecture ที่ออกมากสุด · กดเลขหน้าเพื่อเปิดอ่านตรงหน้านั้น</p>`;
+    if (!withLec.length) return h + `<div class="empty">ข้อสอบในบล็อกนี้ยังไม่ได้โยงกับหน้า lecture แผนอ่านจะขึ้นเมื่อมี lecture และ Auditor ใส่หน้าอ้างอิงแล้ว</div>`;
+    h += `<div class="statrow"><div><b>${t1pages}</b><span>หน้า Tier 1</span></div><div><b>${withLec.length ? Math.round((t1q.size / withLec.length) * 100) : 0}%</b><span>ของข้อที่โยง lecture ได้ อยู่ในหน้า Tier 1</span></div><div><b>${topics.length}</b><span>หัวข้อทั้งหมด</span></div></div>`;
+    h += `<div class="toolbar">${tierLegend}<label>แสดง <select data-zplan="1"><option value="1" ${tierF === 1 ? "selected" : ""}>Tier 1 อย่างเดียว</option><option value="2" ${tierF === 2 ? "selected" : ""}>Tier 1–2</option><option value="3" ${tierF === 3 ? "selected" : ""}>ทุก Tier</option></select></label></div>`;
+    h += lecs.map((L) => lcardHTML(b, L, linkQ, `${L.n} ข้อ · ${L.topics.length} หัวข้อ · ${L.pages} หน้า`)).join("");
+    const res = blockResults(b);
+    const wrong = qs.filter((q) => q.id in res && res[q.id] < 0.999);
+    h += `<h3>อ่านซ่อมจากข้อที่ผิด (ทุกชุดในบล็อก)</h3>${rereadHTML(b, wrong) || `<div class="empty">ยังไม่มีข้อที่ผิด</div>`}`;
+    return h;
+  }
+
+  /* ---------- block exam tab: cohort cards + cross-set practice ---------- */
+  const TYPE_TH = { MCQ: "Multiple Choice Question — ปรนัยเลือกตอบ", KF: "Key Feature — สถานการณ์ จุดตัดสินใจ", OSPE: "Objective Structured Practical Exam — สถานี/รูป" };
+  function examTabHTML(b) {
+    const qs = ML.examsOf(b), res = blockResults(b);
+    const lecCount = {};
+    qs.forEach((q) => new Set((q.refs || []).filter((x) => x.lecture).map((x) => x.lecture)).forEach((l) => { lecCount[l] = (lecCount[l] || 0) + 1; }));
+    const wrongN = qs.filter((q) => q.id in res && res[q.id] < 0.999).length;
+    const flagN = qs.filter((q) => marks().flag[q.id]).length;
+    const mixes = Object.entries(P().mixes).filter(([, m]) => m.block === b.id);
+    let h = "";
+    if (qs.length) {
+      h += `<section class="mixbox"><h3>ฝึกข้ามชุด</h3><div class="mixgrid">
+        <div class="mixcard"><b>ตาม Lecture (ทุกรุ่น)</b>${Object.keys(lecCount).length ? `<select id="mixLec">${Object.keys(lecCount).sort().map((l) => `<option value="${esc(l)}">${esc(lecName(b, l).slice(0, 50))} (${lecCount[l]})</option>`).join("")}</select><button class="btn" data-z="mixlec">สร้างชุด</button>` : `<span class="hint">ยังไม่มีข้อที่โยงกับ lecture</span>`}</div>
+        <div class="mixcard"><b>สุ่มจากทั้งบล็อก</b><label class="inline"><input type="number" id="mixN" min="5" max="${qs.length}" value="${Math.min(30, qs.length)}"> ข้อ</label><select id="mixType"><option value="">ทุกประเภท</option>${[...new Set(qs.map((q) => q.type))].map((t) => `<option>${t}</option>`).join("")}</select><button class="btn" data-z="mixrand">สุ่ม</button></div>
+        <div class="mixcard"><b>จุดอ่อนของฉัน</b><span class="hint">ผิดล่าสุด ${wrongN} ข้อ · ปักธง ${flagN} ข้อ</span><button class="btn" data-z="mixweak" ${wrongN + flagN ? "" : "disabled"}>รวมทำทีเดียว</button></div>
+      </div>${mixes.length ? `<div class="mixlist"><span class="hint">ชุดที่สร้างไว้:</span>${mixes.map(([id, m]) => `<span class="mixitem"><a href="#/set/${enc(b.id)}/@${enc(id)}">${esc(m.title)} (${m.qids.length})</a><button class="linkbtn" data-z="delmix" data-m="${esc(id)}" title="ลบชุดนี้">✕</button></span>`).join("")}</div>` : ""}</section>`;
+    }
+    const cohorts = [...new Set([...b.sets.map((s) => s.cohort), ...b.papers.map((p) => p.cohort)])].sort((x, y) => y - x);
+    if (!cohorts.length) return h + `<div class="empty">ยังไม่มีข้อสอบในบล็อกนี้</div>`;
+    h += cohorts.map((c) => {
+      const sets = b.sets.filter((s) => s.cohort === c);
+      const types = [...new Set([...sets.map((s) => s.type), ...b.papers.filter((p) => p.cohort === c).map((p) => p.type)])].sort((x, y) => ["MCQ", "KF", "OSPE"].indexOf(x) - ["MCQ", "KF", "OSPE"].indexOf(y));
+      const total = sets.reduce((a, s) => a + s.questions.length, 0);
+      const tiles = types.map((t) => {
+        const s = sets.find((x) => x.type === t);
+        const pdfs = b.papers.filter((p) => p.cohort === c && p.type === t).map((p) => `<a class="pdflink" href="#/pdf/${enc(b.id)}/${enc(p.id)}/1">${p.role === "key" ? "PDF เฉลย" : "PDF ข้อสอบ"}</a>`).join("");
+        if (!s) return `<div class="set off"><div class="top"><b>${esc(t)}</b></div><div class="what">ยังไม่ได้ทำเป็นข้อสอบออนไลน์</div>${pdfs ? `<div class="pdfs">${pdfs}</div>` : ""}</div>`;
+        const pr = setProgress(b, s), act = activeRound(b, s), pct = pr.total ? Math.round((pr.done / pr.total) * 100) : 0;
+        return `<div class="set"><a class="setmain" href="${base(b, s)}"><div class="top"><b>${esc(t)}</b><span class="n">${s.questions.length} ข้อ</span></div><div class="what">${esc(TYPE_TH[t] || "")}</div>
+          <div class="sbar"><i style="width:${pct}%"></i></div><div class="prog">${act ? "มีรอบที่ค้างอยู่ · " : ""}${pr.done ? `ทำแล้ว ${pr.done}/${pr.total} · ถูก ${pr.ok}` : "ยังไม่ได้เริ่ม"}</div></a>${pdfs ? `<div class="pdfs">${pdfs}</div>` : ""}</div>`;
+      }).join("");
+      return `<section class="cohort"><h3>รุ่น ${c} <small>${total} ข้อ</small></h3><div class="sets">${tiles}</div></section>`;
+    }).join("");
+    return h;
+  }
+  function makeMix(b, title, qids) {
+    if (!qids.length) return;
+    const id = Date.now().toString(36);
+    P().mixes[id] = { block: b.id, title, qids, created: Date.now() };
+    save(); location.hash = `#/set/${enc(b.id)}/@${enc(id)}`;
+  }
+
+  /* ---------- floating notepad per set ---------- */
+  let padOpen = false;
+  function notepadHTML(b, s) {
+    const n = marks().setNotes[keyOfSet(b, s)];
+    return `<div class="notepad ${padOpen ? "open" : ""}">${padOpen ? `<div class="padbox"><div class="padhead"><b>โน้ตของชุดนี้</b><button class="linkbtn" data-z="pad">ปิด</button></div><textarea data-setnote="${esc(keyOfSet(b, s))}" rows="8" placeholder="จดศัพท์ / สิ่งที่อยากจำ (เก็บในเครื่องนี้)">${esc(n ? n.text : "")}</textarea></div>` : ""}
+      <button class="fab" data-z="pad" title="โน้ตของชุดนี้" aria-label="โน้ตของชุดนี้">${padOpen ? "✕" : "✎"}${!padOpen && n && n.text ? "<i></i>" : ""}</button></div>`;
+  }
+
+  /* ---------- single question page (#/q/<id>): try it once, not saved as a round ---------- */
+  const single = {};
+  function viewSingle(b, q) {
+    const s = ML.findSet(b, q._set);
+    const r = single[q.id] = single[q.id] || { qids: [q.id], ans: {}, chk: {}, ov: {}, choiceOrder: {} };
+    ML.main.innerHTML = `<div class="crumbs"><a href="#/">ทั้งหมด</a><span>/</span><a href="#/b/${enc(b.id)}/exam">${esc(b.name)}</a><span>/</span>${s ? `<a href="${base(b, s)}">รุ่น ${q.cohort} · ${esc(s.type)}</a><span>/</span>` : ""}<span>ข้อ ${esc(q.n)}</span></div>
+      <article class="qcard single"><div class="qhead"><div class="qnum">ข้อ ${esc(q.n)} <small>${esc(q.type)} · รุ่น ${q.cohort}</small></div>
+        <button class="flagbtn" data-z="flag" data-q="${esc(q.id)}" aria-pressed="${!!marks().flag[q.id]}">${marks().flag[q.id] ? "ปักธงไว้ทบทวนแล้ว" : "ปักธงไว้ทบทวน"}</button></div>
+        ${questionHTML(b, q, r, !!r.chk[q.id], true)}${noteHTML(q)}
+        ${r.chk[q.id] ? `<div class="btns"><button class="btn" data-z="singleredo">ลองใหม่</button></div>` : ""}</article>`;
+  }
+
+  /* ---------- routing + events (called by app.js) ---------- */
+  function view(bid, sid, sub, arg) {
+    stop();
+    const b = ML.findBlock(bid), s = setLike(b, sid);
+    if (!s) return ML.notFound("ไม่พบชุดข้อสอบนี้");
+    if (sub && /^\d+$/.test(sub)) return location.replace(`${base(b, s)}/run/${sub}`);
+    if (sub === "run") return viewRun(b, s, arg);
+    if (sub === "sum") return viewSummary(b, s, arg);
+    if (sub === "hist") return viewHistory(b, s);
+    if (sub === "guide") return viewGuide(b, s);
+    return viewOverview(b, s);
+  }
+  function ctx() {
+    const h = ML.parseHash();
+    if (h[0] === "set") { const b = ML.findBlock(h[1]), s = setLike(b, h[2]); return { b, s, r: b && s ? activeRound(b, s) : null, sub: h[3], arg: h[4] }; }
+    if (h[0] === "q") { const f = ML.findQuestion(h[1]); return f ? { b: f.b, s: null, q: f.q, r: single[f.q.id], single: true } : {}; }
+    if (h[0] === "b") return { b: ML.findBlock(h[1]) };
+    return {};
+  }
+  const curQ = (c) => (c.single ? c.q : c.r && c.s ? qmapOf(c.s)[c.r.qids[c.r.idx || 0]] : null);
+  const rerender = () => ML.route();
+
+  async function onClick(t) {
+    const c = ctx();
+    if (t.dataset.zoom) { t.classList.toggle("zoom"); return true; }
+    if (t.dataset.go !== undefined) { if (t.dataset.go && c.s) location.replace(`${base(c.b, c.s)}/run/${t.dataset.go}`); return true; }
+    if (t.dataset.opt) {
+      const q = curQ(c), r = c.r; if (!q || !r || r.chk[q.id]) return true;
+      r.ans[q.id] = t.dataset.opt;
+      if (c.single || r.mode === "practice") r.chk[q.id] = true;
+      if (!c.single) save();
+      rerender();
+      const ex = $(".qcard .explain"); if (ex) ex.scrollIntoView({ block: "nearest", behavior: "smooth" });
+      return true;
+    }
+    if (t.dataset.ov) {
+      const q = curQ(c), r = c.r; if (!q || !r) return true;
+      const o = r.ov[q.id] = r.ov[q.id] || {};
+      if (t.dataset.ov === "auto") delete o[t.dataset.item]; else o[t.dataset.item] = Number(t.dataset.ov);
+      if (!c.single) save(); rerender(); return true;
+    }
+    const z = t.dataset.z; if (!z) return false;
+    const q = curQ(c);
+    if (z === "start") {
+      const mode = (document.querySelector('input[name="mode"]:checked') || {}).value || "practice";
+      const shuffleQ = $("#shufQ").checked, shuffleC = $("#shufC").checked;
+      P().prefs = Object.assign(P().prefs || {}, { mode, shuffleQ, shuffleC });
+      startRound(c.b, c.s, { mode, shuffleQ, shuffleC }); return true;
+    }
+    if (z === "abandon") { if (!ML.armed(t)) return true; const r = activeRound(c.b, c.s); if (r) { r.done = true; r.abandoned = true; r.finished = Date.now(); save(); } rerender(); return true; }
+    if (z === "navtoggle") { c.r.navOpen = !c.r.navOpen; save(); rerender(); return true; }
+    if (z === "flag") { const id = t.dataset.q || (q && q.id); if (id) { if (marks().flag[id]) delete marks().flag[id]; else marks().flag[id] = true; save(); rerender(); } return true; }
+    if (z === "check") { if (q && c.r) { c.r.chk[q.id] = true; if (!c.single) save(); rerender(); } return true; }
+    if (z === "singleredo") { delete single[c.q.id]; rerender(); return true; }
+    if (z === "finish") {
+      const r = c.r, left = r.qids.filter((id) => !r.chk[id]).length;
+      if (left && !ML.armed(t, `ยังไม่ได้ทำ ${left} ข้อ · กดอีกครั้งเพื่อจบรอบ`)) return true;
+      finishRound(c.b, c.s, r, false); return true;
+    }
+    if (z === "submit") {
+      const r = c.r, left = r.qids.filter((id) => !C.answered(qmapOf(c.s)[id], r)).length;
+      if (!ML.armed(t, left ? `ยังไม่ตอบ ${left} ข้อ · กดอีกครั้งเพื่อส่ง` : "กดอีกครั้งเพื่อส่ง")) return true;
+      finishRound(c.b, c.s, r, true); return true;
+    }
+    if (z === "retry") {
+      const ids = [...document.querySelectorAll("[data-wrongpick]:checked")].map((x) => x.dataset.wrongpick);
+      if (!ids.length) { ML.toast("เลือกข้อที่จะทำซ้ำอย่างน้อย 1 ข้อ"); return true; }
+      const from = roundsOf(c.b, c.s).find((x) => x.id === t.dataset.r) || {};
+      const qmap = qmapOf(c.s), order = (from.qids || ids).filter((id) => ids.includes(id));
+      startRound(c.b, c.s, { kind: "retry", mode: "practice", shuffleQ: !!from.shuffleQ, shuffleC: !!from.shuffleC, parent: from.id || null });
+      const r = activeRound(c.b, c.s); r.qids = from.shuffleQ ? C.shuffle(order) : order;
+      r.choiceOrder = Object.fromEntries(Object.entries(r.choiceOrder).filter(([k]) => qmap[k] && ids.includes(k)));
+      save(); return true;
+    }
+    if (z === "clearhist") { if (!ML.armed(t)) return true; P().rounds[keyOfSet(c.b, c.s)] = []; save(); rerender(); return true; }
+    if (z === "pad") { padOpen = !padOpen; rerender(); return true; }
+    if (z === "mixlec") {
+      const l = $("#mixLec").value, qs = ML.examsOf(c.b).filter((x) => (x.refs || []).some((y) => y.lecture === l));
+      qs.sort((x, y) => (x.refs.find((r) => r.lecture === l).pages[0] - y.refs.find((r) => r.lecture === l).pages[0]) || y.cohort - x.cohort);
+      makeMix(c.b, `${lecName(c.b, l)} · ทุกรุ่น`, qs.map((x) => x.id)); return true;
+    }
+    if (z === "mixrand") {
+      const n = Math.max(1, Number($("#mixN").value) || 30), ty = $("#mixType").value;
+      const pool = ML.examsOf(c.b).filter((x) => !ty || x.type === ty);
+      makeMix(c.b, `สุ่ม ${Math.min(n, pool.length)} ข้อ${ty ? " " + ty : ""} · ${new Date().toLocaleDateString("th-TH", { day: "numeric", month: "short" })}`, C.shuffle(pool).slice(0, n).map((x) => x.id)); return true;
+    }
+    if (z === "mixweak") {
+      const res = blockResults(c.b);
+      const ids = ML.examsOf(c.b).filter((x) => (x.id in res && res[x.id] < 0.999) || marks().flag[x.id]).map((x) => x.id);
+      makeMix(c.b, `จุดอ่อน: ผิด + ปักธง · ${new Date().toLocaleDateString("th-TH", { day: "numeric", month: "short" })}`, ids); return true;
+    }
+    if (z === "delmix") { if (!ML.armed(t, "ลบ?")) return true; delete P().mixes[t.dataset.m]; delete P().rounds[`${c.b.id}/@${t.dataset.m}`]; save(); rerender(); return true; }
+    if (z === "unkey") { delete marks().keyOverride[t.dataset.q]; save(); rerender(); return true; }
+    if (z === "setkey" || z === "report") {
+      const box = t.closest(".report"), id = t.dataset.q;
+      const qq = ML.findQuestion(id); if (!qq) return true;
+      const k = box.querySelector("[data-rep-key]"), local = box.querySelector("[data-rep-local]");
+      const reason = box.querySelector("[data-rep-reason]").value.trim(), msg = box.querySelector("[data-rep-msg]");
+      const want = k ? k.value : "";
+      if (z === "setkey") { if (!want) { msg.textContent = "เลือกคำตอบที่คิดว่าถูกก่อน"; return true; } marks().keyOverride[id] = want; save(); rerender(); return true; }
+      if (reason.length < 3) { msg.textContent = "ใส่เหตุผลสั้น ๆ ก่อนส่ง"; return true; }
+      if (want && local && local.checked) marks().keyOverride[id] = want;
+      const payload = { qid: id, set: qq.q._set || "", answer: qq.q.type === "MCQ" ? qq.q.answer : "(KF/OSPE)", override: want, reason, page: location.href };
+      const url = (ML.APP.config.report_url || ML.APP.config.drive_proxy_url || "").replace(/\/+$/, "");
+      msg.textContent = "กำลังส่ง…";
+      let sent = false;
+      if (url) {
+        try { const res = await fetch(url + "/report", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(payload) }); sent = res.ok; } catch (e) { sent = false; }
+      }
+      if (sent) { marks().reported[id] = Date.now(); save(); ML.toast("ส่งถึงผู้ดูแลแล้ว ขอบคุณที่ช่วยตรวจ"); rerender(); return true; }
+      const body = `ข้อ ${id}\nเฉลยในเว็บ: ${payload.answer}\nควรเป็น: ${want || "-"}\nเหตุผล: ${reason}\n${location.href}`;
+      const repo = ML.APP.config.repo;
+      save();
+      msg.innerHTML = `ส่งอัตโนมัติไม่ได้ (ยังไม่ได้ตั้งคิวแจ้ง) · <button class="linkbtn" data-copy="${esc(body)}">คัดลอกข้อความ</button>${repo ? ` · <a target="_blank" rel="noopener" href="https://github.com/${esc(repo)}/issues/new?labels=answer-report&title=${enc("[เฉลย] " + id)}&body=${enc(body)}">เปิด GitHub Issue</a>` : ""}`;
+      return true;
+    }
+    return false;
+  }
+  function onChange(t) {
+    const c = ctx();
+    if (t.dataset.zf && c.r) { c.r[t.dataset.zf] = t.value; save(); const v = visible(c.b, c.s, c.r); location.replace(`${base(c.b, c.s)}/run/${v.length ? c.r.qids.indexOf(v[0].id) + 1 : 1}`); return true; }
+    if (t.dataset.zplan) { P().prefs = Object.assign(P().prefs || {}, { planTier: Number(t.value) }); save(); rerender(); return true; }
+    if (t.dataset.item && t.type === "checkbox" && c.r) {
+      const q = curQ(c); const A = c.r.ans[q.id] = c.r.ans[q.id] || {}; const a = A[t.dataset.item] = A[t.dataset.item] || {};
+      a.sel = (a.sel || []).filter((k) => k !== t.value); if (t.checked) a.sel.push(t.value);
+      if (!c.single) save(); return true;
+    }
+    return false;
+  }
+  let typing = 0;
+  function onInput(t) {
+    const c = ctx();
+    if (t.dataset.item && t.tagName === "TEXTAREA" && c.r) {
+      const q = curQ(c); const A = c.r.ans[q.id] = c.r.ans[q.id] || {};
+      (A[t.dataset.item] = A[t.dataset.item] || {}).text = t.value;
+      clearTimeout(typing); if (!c.single) typing = setTimeout(save, 400);
+      return true;
+    }
+    if (t.dataset.qnote) { const v = t.value; if (v.trim()) marks().notes[t.dataset.qnote] = { t: Date.now(), text: v }; else delete marks().notes[t.dataset.qnote]; clearTimeout(typing); typing = setTimeout(save, 400); return true; }
+    if (t.dataset.setnote) { const v = t.value; if (v.trim()) marks().setNotes[t.dataset.setnote] = { t: Date.now(), text: v }; else delete marks().setNotes[t.dataset.setnote]; clearTimeout(typing); typing = setTimeout(save, 400); return true; }
+    return false;
+  }
+  function onKey(ev) {
+    const h = location.hash;
+    if (!(/^#\/set\/[^/]+\/[^/]+\/run\//.test(h) || h.startsWith("#/q/"))) return false;
+    const k = ev.key.toUpperCase();
+    const btn = /^[A-E]$/.test(k) ? document.querySelectorAll(".opts .opt")["ABCDE".indexOf(k)] : /^[1-5]$/.test(k) ? document.querySelectorAll(".opts .opt")[Number(k) - 1]
+      : ev.key === "ArrowRight" ? $(".qfoot [data-go]:last-child") : ev.key === "ArrowLeft" ? $(".qfoot [data-go]") : k === "F" ? $('[data-z="flag"]') : null;
+    if (btn && !btn.disabled) { ev.preventDefault(); btn.click(); return true; }
+    return false;
+  }
+
+  return { view, viewSingle, examTabHTML, planHTML, onClick, onChange, onInput, onKey, stop, blockResults };
+};

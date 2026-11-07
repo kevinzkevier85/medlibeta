@@ -42,65 +42,122 @@ await send("Runtime.enable");
 await send("Page.navigate", { url: BASE + "#/" });
 ok(await waitFor("document.querySelector('.card')"), "home shows block cards");
 ok((await ev("document.querySelector('.ver').innerText")).includes("v" + JSON.parse(fs.readFileSync(path.join(ROOT, "version.json"), "utf8")).version), "version + date shown in menu");
+ok(await ev("[...document.querySelectorAll('.card .code')].some((x) => x.innerText.includes('CVS'))"), "CVS block imported and shown");
 
 await go("#/b/DEMO/exam");
-ok((await ev("document.querySelectorAll('.cohort').length")) === 1 && (await ev("document.querySelector('.setmain .setn').innerText")).includes("3"), "exam tab shows exam sets by cohort (DEMO: 1 set, 3 questions)");
+ok((await ev("document.querySelectorAll('.cohort').length")) === 1 && (await ev("document.querySelector('.set .n').innerText")).includes("3"), "exam tab: cohort card with set tile (DEMO 3 questions)");
+ok(await ev("!!document.querySelector('.mixbox')"), "exam tab: cross-set practice box");
 await go("#/b/DEMO/lec");
-ok((await ev("document.querySelectorAll('.rows .row').length")) === 3, "lecture tab lists only lectures");
+ok((await ev("document.querySelectorAll('.rows .lrow').length")) === 3, "lecture tab lists lectures with read toggles");
 
-// whole-set runner (like the CVS quiz)
-await ev("localStorage.removeItem('medlib.quiz.v1')");
+// rounds: practice
+await ev("localStorage.removeItem('medlib.progress.v1')"); await ev("location.reload()"); await sleep(500);
+await waitFor("window.__medlib && window.__medlib.APP.blocks.length > 1");
 await go("#/set/DEMO/52_MCQ");
-ok(await waitFor("document.querySelectorAll('.qgrid .qn').length === 3"), "set runner shows a navigator with every question");
-await click('[data-qpick="C"]'); await sleep(200);
-ok(await ev("!!document.querySelector('.opt.wrong') && !!document.querySelector('.opt.right') && !!document.querySelector('.qn.cur.wrong')"), "practice mode: instant feedback + navigator marks wrong");
-await click('.qfoot [data-qgo]:last-child'); await sleep(200);
-ok((await ev("location.hash")).endsWith("/2"), "next question");
-await click('[data-qact="flag"]'); await sleep(150);
-ok(await ev("!!document.querySelector('.qn.cur.flag')"), "flag shows on navigator");
-await click('[data-qmode="exam"]'); await sleep(200);
-ok(await ev("!!document.querySelector('#qtimer')"), "exam mode shows a timer");
-await click('[data-qpick="A"]'); await sleep(150);
-ok(await ev("!!document.querySelector('.opt.sel') && !document.querySelector('.explain')"), "exam mode: answer selected, no feedback before submit");
-await click('[data-qact="submit"]'); await sleep(100); await click('[data-qact="submit"]'); await sleep(300);
-ok((await ev("location.hash")).endsWith("/sum") && (await text()).includes("ข้อที่ผิด"), "submit (two clicks) → summary with score and wrong list");
-ok(await ev("JSON.parse(localStorage.getItem('medlib.quiz.v1'))['DEMO/52_MCQ'].submitted === true"), "progress saved in browser");
-await click('[data-qact="redowrong"]'); await sleep(300);
-ok(await ev("JSON.parse(localStorage.getItem('medlib.quiz.v1'))['DEMO/52_MCQ'].rounds === 1") && (await ev("location.hash")).includes("/set/DEMO/52_MCQ/"), "redo wrong questions starts a new round");
-await ev("localStorage.removeItem('medlib.quiz.v1')");
+ok(await waitFor("!!document.querySelector('[data-z=\"start\"]')"), "set overview offers to start a round");
+await click('input[name="mode"][value="practice"]'); await click('[data-z="start"]');
+ok(await waitFor("document.querySelectorAll('.qrow .qc').length === 3"), "runner: number strip with every question");
+await click('.opt[data-opt="C"]'); await sleep(200);
+ok(await ev("!!document.querySelector('.opt.wrong') && !!document.querySelector('.opt.correct') && !!document.querySelector('.qc.cur.wrong') && !!document.querySelector('.explain')"), "practice: instant feedback, strip marks wrong, explanation box");
+await click('.qfoot [data-go]:last-child'); await sleep(200);
+ok((await ev("location.hash")).endsWith("/run/2"), "next question");
+await click('[data-z="flag"]'); await sleep(150);
+ok(await ev("!!document.querySelector('.qc.cur.flag')"), "flag shows on strip");
+await click('[data-z="finish"]'); await sleep(100); await click('[data-z="finish"]'); await sleep(300);
+ok((await ev("location.hash")).includes("/sum/") && (await text()).includes("ข้อที่ผิด"), "finish (two clicks) → summary with wrong list");
+await click('[data-z="retry"]'); await sleep(300);
+ok(await ev("(() => { const r = window.__medlib.PROG.rounds['DEMO/52_MCQ']; const a = r[r.length-1]; return r.length === 2 && a.kind === 'retry' && a.qids.length === 1 && !a.done; })()"), "retry wrong starts a new round with only the picked wrong question");
 
+// exam round without timer + history
+await go("#/set/DEMO/52_MCQ");
+await click('input[name="mode"][value="untimed"]'); await click('[data-z="start"]'); await sleep(300);
+ok(await ev("document.querySelector('#ztimer').innerText.includes('เวลา')"), "untimed exam shows elapsed time");
+await click('.opt[data-opt="A"]'); await sleep(150);
+ok(await ev("!!document.querySelector('.opt[aria-pressed=\"true\"]') && !document.querySelector('.explain')"), "exam mode: no key before submit");
+await click('[data-z="submit"]'); await sleep(100); await click('[data-z="submit"]'); await sleep(300);
+ok((await ev("location.hash")).includes("/sum/"), "submit → summary");
+await go("#/set/DEMO/52_MCQ/hist");
+ok((await ev("document.querySelectorAll('tbody tr').length")) === 2, "history lists finished rounds (empty abandoned rounds hidden)");
+
+// single question page + PDF
 await go("#/q/DEMO-52-MCQ-005");
-await click('[data-pick="C"]'); await sleep(150);
-ok((await ev("!!document.querySelector('.opt.wrong') && !!document.querySelector('.opt.right')")), "wrong pick marks wrong + right answer");
-ok((await text()).includes("คำตอบคือ B"), "explanation shows the correct answer");
-
-await click('.ref'); // opens PDF at the referenced page
+await click('.opt[data-opt="C"]'); await sleep(150);
+ok((await ev("!!document.querySelector('.opt.wrong') && !!document.querySelector('.opt.correct')")) && (await text()).includes("คำตอบ B"), "single question: feedback + correct answer");
+await click('.refs a[href="#/pdf/DEMO/L02/5"]');
 ok(await waitFor("location.hash === '#/pdf/DEMO/L02/5'"), "lecture ref opens PDF at page 5");
 ok(await waitFor("!!document.querySelector('#pdfstage canvas')", 10000), "PDF page renders to canvas");
 ok((await ev("document.querySelector('#pgtotal').innerText")).includes("8"), "page count read from PDF");
 await click('[data-pg="1"]');
 ok(await waitFor("location.hash === '#/pdf/DEMO/L02/6' && !!document.querySelector('#pdfstage canvas')"), "next page works");
+ok(await ev("window.__medlib.PROG.read['DEMO/L02'].page === 6"), "reading position remembered");
+await setVal("#pdfq", "a", "input"); await ev("document.querySelector('[data-pdfsearch]').requestSubmit()");
+ok(await waitFor("(document.querySelector('#pdfhits')||{}).innerText?.includes('พบใน')", 8000), "search inside the open PDF");
 await go("#/pdf/DEMO/L05/4");
 ok(await waitFor("(document.querySelector('.status.err')||{}).innerText?.includes('ยังไม่มีไฟล์ PDF')"), "lecture without file explains why");
 
+// CVS: rich explanation, original key, my key, report fallback
+await go("#/q/CVS-52-MCQ-005");
+await click('.opt[data-opt="A"]'); await sleep(200);
+ok(await ev("!!document.querySelector('.why') && !!document.querySelector('.chain') && !!document.querySelector('.keyrow.src')"), "CVS: why per choice + mechanism chain + original key row");
+await ev("document.querySelector('.report').open = true");
+await setVal('[data-rep-key]', "A"); await click('[data-z="setkey"]'); await sleep(200);
+ok(await ev("window.__medlib.PROG.marks.keyOverride['CVS-52-MCQ-005'] === 'A' && !!document.querySelector('.badge.mine')"), "my key saved on this device and shown");
+await click('[data-z="unkey"]'); await sleep(150);
+await ev("document.querySelector('.report').open = true");
+await setVal('[data-rep-reason]', "ทดสอบ เหตุผลยาวพอ", "input"); await click('[data-z="report"]'); await sleep(400);
+ok((await text()).includes("คัดลอกข้อความ"), "report without a queue falls back to copy / GitHub issue link");
+
+// KF / OSPE
+await go("#/set/CVS/52_OSPE");
+await click('input[name="mode"][value="practice"]'); await click('[data-z="start"]'); await sleep(300);
+ok(await ev("!!document.querySelector('.case') && !!document.querySelector('figure img') && !!document.querySelector('textarea[data-item]')"), "OSPE: station, image and typed answers");
+await setVal('textarea[data-item]', "transverse sinus", "input"); await click('[data-z="check"]'); await sleep(200);
+ok(await ev("!!document.querySelector('.verdict') && !!document.querySelector('.override')"), "check → verdict + judge-it-yourself buttons");
+await click('.override [data-ov="1"]'); await sleep(150);
+ok(await ev("document.querySelector('.override [data-ov=\"1\"]').getAttribute('aria-pressed') === 'true'"), "override saved");
+
+// block plan + lecture page + cross-set
+await go("#/b/CVS/plan");
+ok((await ev("document.querySelectorAll('.lcard').length")) > 5 && (await text()).includes("Tier"), "reading plan per block");
+await go("#/set/CVS/52_MCQ/guide");
+ok((await ev("document.querySelectorAll('.lcard').length")) > 3, "set Guidereader");
+await go("#/l/CVS/L04");
+ok((await ev("document.querySelectorAll('.toc').length")) > 10 && (await ev("document.querySelectorAll('.toc.hotpage').length")) > 0, "lecture page: page index with examined pages highlighted");
+await go("#/b/CVS/exam");
+await setVal("#mixN", "10", "input"); await click('[data-z="mixrand"]');
+ok(await waitFor("location.hash.startsWith('#/set/CVS/@')"), "random 10 from block creates a practice set");
+ok((await waitFor("!!document.querySelector('[data-z=\"start\"]')")) && (await text()).includes("10 ข้อ"), "mix set has 10 questions");
+
 await go("#/search/ADH");
 ok(/\d+ รายการ/.test(await text()) && (await text()).includes("DEMO"), "search finds the DEMO ADH question");
+await go("#/search/dicrotic");
+ok((await text()).includes("หน้า lecture"), "search finds lecture page index entries");
 
+// settings + personal file round trip
 await go("#/settings");
 await setVal("#s-font", "large");
 ok((await ev("JSON.parse(localStorage.getItem('medlib.user.v1')).settings.fontSize")) === "large", "personal setting saved in browser");
-ok((await text()).includes("ค่าส่วนตัว"), "changed setting is labelled personal");
 await click('[data-act="reset"]'); await sleep(100); await click('[data-act="reset"]'); await sleep(200);
 ok((await ev("Object.keys(JSON.parse(localStorage.getItem('medlib.user.v1')).settings).length")) === 0, "reset (two clicks) returns to defaults");
-const navBefore = await ev("document.querySelectorAll('#side .nav').length");
+const navBefore = await ev("document.querySelectorAll('#side a.nav').length");
 await setVal("#s-sample", "false");
-ok((await ev("document.querySelectorAll('#side .nav').length")) === navBefore - 1, "hiding sample removes DEMO from menu");
+ok((await ev("document.querySelectorAll('#side a.nav').length")) === navBefore - 1, "hiding sample removes DEMO from menu");
 await setVal("#s-sample", "true");
+const imported = await ev(`(async () => {
+  const before = window.__medlib.PROG.rounds['DEMO/52_MCQ'].length;
+  const other = { format: 'medlib-personal', schema: 2, settings: {}, questions: [], progress: { rounds: { 'DEMO/52_MCQ': [{ id: 'fromphone', kind: 'full', mode: 'practice', qids: ['DEMO-52-MCQ-005'], ans: { 'DEMO-52-MCQ-005': 'B' }, chk: { 'DEMO-52-MCQ-005': true }, ov: {}, started: 5, elapsed: 0, done: true }] }, marks: { flag: { 'CVS-52-MCQ-001': true } } } };
+  const inp = document.querySelector('#importfile'); const dt = new DataTransfer();
+  dt.items.add(new File([JSON.stringify(other)], 'p.json', { type: 'application/json' })); inp.files = dt.files;
+  inp.dispatchEvent(new Event('change', { bubbles: true }));
+  for (let i = 0; i < 30 && window.__medlib.PROG.rounds['DEMO/52_MCQ'].length === before; i++) await new Promise((r) => setTimeout(r, 100));
+  const P = window.__medlib.PROG; return P.rounds['DEMO/52_MCQ'].length === before + 1 && P.marks.flag['CVS-52-MCQ-001'] === true;
+})()`);
+ok(imported, "import a progress file from another device merges rounds and flags");
 
 await go("#/add");
 await click('[data-act="save"]'); await sleep(150);
 ok((await text()).includes("ยังบันทึกไม่ได้"), "empty form is rejected");
-await setVal("#f-block", "DEMO"); await sleep(150); // real blocks may exist; the form test targets the sample block
+await setVal("#f-block", "DEMO"); await sleep(150);
 for (const [k, v] of Object.entries({ "#f-cohort": "52", "#f-n": "40", "#f-stem": "ข้อใดเป็นฮอร์โมนที่หลั่งจาก posterior pituitary", "#f-A": "ADH", "#f-B": "TSH", "#f-pages": "2" }))
   await setVal(k, v, "input");
 await setVal("#f-answer", "A");
@@ -108,18 +165,31 @@ ok((await text()).includes("ผ่านการตรวจ format แล้�
 await click('[data-act="save"]'); await sleep(200);
 ok((await ev("JSON.parse(localStorage.getItem('medlib.user.v1')).questions[0].id")) === "DEMO-52-MCQ-040", "saved question has canonical id");
 await go("#/q/DEMO-52-MCQ-040");
-ok((await text()).includes("ของฉัน"), "personal question shows with 'ของฉัน' badge");
-const sameShape = await ev(`(() => { const V = window.MedLibValidate; const b = window.__medlib.APP.blocks.find((x) => x.id === 'DEMO'); return V.validateQuestion(window.__medlib.USER.questions[0], { block: b }).length === 0; })()`);
-ok(sameShape, "saved record re-validates with lib/validate.js");
+ok(await ev("!!document.querySelector('.qcard')"), "personal question opens");
+
+// PWA: service worker + offline
+await ev("location.reload()"); await sleep(1200);
+ok(await waitFor("!!(navigator.serviceWorker && navigator.serviceWorker.controller)", 8000), "service worker controls the page");
+ok(await ev("fetch('manifest.webmanifest').then((r) => r.json()).then((m) => m.icons.length >= 3)"), "manifest with icons");
+await go("#/set/CVS/52_OSPE"); await sleep(300); // load a set while online
+await send("Network.enable");
+await send("Network.emulateNetworkConditions", { offline: true, latency: 0, downloadThroughput: -1, uploadThroughput: -1 });
+await ev("location.hash = '#/'; location.reload()"); await sleep(1500);
+ok(await waitFor("document.querySelectorAll('.card').length >= 2", 8000), "offline: app opens from cache with every block");
+await go("#/set/CVS/52_MCQ"); await click('input[name="mode"][value="practice"]'); await click('[data-z="start"]'); await sleep(300);
+await click('.opt[data-opt="A"]'); await sleep(200);
+ok(await ev("!!document.querySelector('.explain')"), "offline: can practise an exam set");
+await send("Network.emulateNetworkConditions", { offline: false, latency: 0, downloadThroughput: -1, uploadThroughput: -1 });
 
 // phone width: no sideways scroll
 await send("Emulation.setDeviceMetricsOverride", { width: 390, height: 844, deviceScaleFactor: 2, mobile: true });
-for (const h of ["#/", "#/q/DEMO-52-MCQ-005", "#/settings", "#/add", "#/pdf/DEMO/L08/3"]) {
+for (const h of ["#/", "#/b/CVS/exam", "#/b/CVS/lec", "#/b/CVS/plan", "#/q/CVS-52-MCQ-005", "#/set/CVS/52_MCQ", "#/set/CVS/52_OSPE/run/1", "#/set/DEMO/52_MCQ/hist", "#/settings", "#/add", "#/pdf/DEMO/L08/3", "#/l/CVS/L04"]) {
   await go(h); await sleep(400);
   ok((await ev("document.documentElement.scrollWidth <= window.innerWidth + 1")), `no horizontal scroll at 390px: ${h}`);
 }
+await go("#/set/CVS/52_OSPE/run/1"); await sleep(400);
 const shot = await send("Page.captureScreenshot", { format: "png" });
-fs.writeFileSync(path.join(ROOT, "_test", "phone-pdf.png"), Buffer.from(shot.data, "base64"));
+fs.writeFileSync(path.join(ROOT, "_test", "phone-run.png"), Buffer.from(shot.data, "base64"));
 
 ok(errs.length === 0, "no JS errors" + (errs.length ? ": " + errs.join(" | ") : ""));
 console.log(`\n${pass} passed, ${fail} failed`);
