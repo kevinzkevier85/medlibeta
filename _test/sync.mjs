@@ -89,6 +89,17 @@ await t("B: own round syncs; A reopened sees both", async () => {
   for (let i = 0; i < 50 && (await rounds(A)) < 2; i++) await sleep(100);
   assert.strictEqual(await rounds(A), 2);
 });
+await t("unflag on B stays unflagged on A after sync", async () => {
+  const qid = await A.evaluate(() => window.__medlib.APP.blocks.find((b) => b.id === "END").exams[0].id);
+  const flagged = (p) => p.evaluate((id) => !!window.__medlib.PROG.marks.flag[id], qid);
+  const toggle = async (p) => { await p.evaluate((id) => { location.hash = "#/q/" + id; }, qid); await p.click('[data-z="flag"]'); };
+  const syncAndWait = async (p) => { const n = log.length; await settings(p); await p.click('[data-act="syncnow"]'); assert.ok(await waitLog(`PUT /sync/${code}`, n)); };
+  const reopen = async (p) => { await p.reload(); await p.waitForFunction(() => window.__medlib && window.__medlib.APP.blocks.length > 0); await sleep(600); };
+  await toggle(A); assert.ok(await flagged(A)); await syncAndWait(A);
+  await reopen(B); assert.ok(await flagged(B), "B got the flag");
+  await sleep(5); await toggle(B); assert.ok(!(await flagged(B))); await syncAndWait(B);
+  await reopen(A); assert.ok(!(await flagged(A)), "flag stays removed on A");
+});
 await t("no change → no PUT", async () => {
   const n = log.length; await settings(A); await A.click('[data-act="syncnow"]');
   assert.ok(await waitLog(`GET /sync/${code}`, n)); await sleep(300);

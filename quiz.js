@@ -552,7 +552,7 @@ window.MedLibQuizUI = function (ML) {
     const same = Object.entries(P().mixes).find(([, m]) => m.block === b.id && m.title === title && m.qids.join() === qids.join());
     if (same) { location.hash = `#/set/${enc(b.id)}/@${enc(same[0])}`; return; }
     const id = Date.now().toString(36);
-    P().mixes[id] = { block: b.id, title, qids, created: Date.now() };
+    P().mixes[id] = { block: b.id, title, qids, created: Date.now() }; C.touch(P(), "mixes", id);
     save(); location.hash = `#/set/${enc(b.id)}/@${enc(id)}`;
   }
 
@@ -664,7 +664,7 @@ window.MedLibQuizUI = function (ML) {
     }
     if (z === "abandon") { if (!ML.armed(t)) return true; const r = activeRound(c.b, c.s); if (r) { r.done = true; r.abandoned = true; r.finished = Date.now(); save(); } rerender(); return true; }
     if (z === "navtoggle") { c.r.navOpen = !c.r.navOpen; save(); rerender(); return true; }
-    if (z === "flag") { const id = t.dataset.q || (q && q.id); if (id) { if (marks().flag[id]) delete marks().flag[id]; else marks().flag[id] = true; save(); rerender(); } return true; }
+    if (z === "flag") { const id = t.dataset.q || (q && q.id); if (id) { if (marks().flag[id]) delete marks().flag[id]; else marks().flag[id] = true; C.touch(P(), "flag", id); save(); rerender(); } return true; }
     if (z === "check") { if (q && c.r) { c.r.chk[q.id] = true; if (!c.single) save(); rerender(); } return true; }
     if (z === "singleredo") { delete single[c.q.id]; rerender(); return true; }
     if (z === "finish") {
@@ -687,7 +687,7 @@ window.MedLibQuizUI = function (ML) {
       r.choiceOrder = Object.fromEntries(Object.entries(r.choiceOrder).filter(([k]) => qmap[k] && ids.includes(k)));
       save(); return true;
     }
-    if (z === "clearhist") { if (!ML.armed(t)) return true; P().rounds[keyOfSet(c.b, c.s)] = []; save(); rerender(); return true; }
+    if (z === "clearhist") { if (!ML.armed(t)) return true; P().rounds[keyOfSet(c.b, c.s)] = []; C.touch(P(), "clear", keyOfSet(c.b, c.s)); save(); rerender(); return true; }
     if (z === "pad") { padOpen = !padOpen; rerender(); return true; }
     if (z === "etab") { examTab.tab = t.dataset.t; rerender(); return true; }
     if (z === "qstart") {
@@ -715,17 +715,17 @@ window.MedLibQuizUI = function (ML) {
       const ids = ML.examsOf(c.b).filter((x) => (x.id in res && res[x.id] < 0.999) || marks().flag[x.id]).map((x) => x.id);
       makeMix(c.b, `จุดอ่อน: ผิด + ปักธง · ${new Date().toLocaleDateString("th-TH", { day: "numeric", month: "short" })}`, ids); return true;
     }
-    if (z === "delmix") { if (!ML.armed(t, "ลบ?")) return true; delete P().mixes[t.dataset.m]; delete P().rounds[`${c.b.id}/@${t.dataset.m}`]; save(); rerender(); return true; }
-    if (z === "unkey") { delete marks().keyOverride[t.dataset.q]; save(); rerender(); return true; }
+    if (z === "delmix") { if (!ML.armed(t, "ลบ?")) return true; delete P().mixes[t.dataset.m]; delete P().rounds[`${c.b.id}/@${t.dataset.m}`]; C.touch(P(), "mixes", t.dataset.m); C.touch(P(), "clear", `${c.b.id}/@${t.dataset.m}`); save(); rerender(); return true; }
+    if (z === "unkey") { delete marks().keyOverride[t.dataset.q]; C.touch(P(), "keyOverride", t.dataset.q); save(); rerender(); return true; }
     if (z === "setkey" || z === "report") {
       const box = t.closest(".report"), id = t.dataset.q;
       const qq = ML.findQuestion(id); if (!qq) return true;
       const k = box.querySelector("[data-rep-key]"), local = box.querySelector("[data-rep-local]");
       const reason = box.querySelector("[data-rep-reason]").value.trim(), msg = box.querySelector("[data-rep-msg]");
       const want = k ? k.value : "";
-      if (z === "setkey") { if (!want) { msg.textContent = "เลือกคำตอบที่คิดว่าถูกก่อน"; return true; } marks().keyOverride[id] = want; save(); rerender(); return true; }
+      if (z === "setkey") { if (!want) { msg.textContent = "เลือกคำตอบที่คิดว่าถูกก่อน"; return true; } marks().keyOverride[id] = want; C.touch(P(), "keyOverride", id); save(); rerender(); return true; }
       if (reason.length < 3) { msg.textContent = "ใส่เหตุผลสั้น ๆ ก่อนส่ง"; return true; }
-      if (want && local && local.checked) marks().keyOverride[id] = want;
+      if (want && local && local.checked) { marks().keyOverride[id] = want; C.touch(P(), "keyOverride", id); }
       const payload = { qid: id, set: qq.q._set || "", answer: qq.q.type === "MCQ" ? qq.q.answer : "(KF/OSPE)", override: want, reason, page: location.href };
       const url = (ML.APP.config.report_url || ML.APP.config.drive_proxy_url || "").replace(/\/+$/, "");
       msg.textContent = "กำลังส่ง…";
@@ -733,7 +733,7 @@ window.MedLibQuizUI = function (ML) {
       if (url) {
         try { const res = await fetch(url + "/report", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(payload) }); sent = res.ok; } catch (e) { sent = false; }
       }
-      if (sent) { marks().reported[id] = Date.now(); save(); ML.toast("ส่งถึงผู้ดูแลแล้ว ขอบคุณที่ช่วยตรวจ"); rerender(); return true; }
+      if (sent) { marks().reported[id] = Date.now(); C.touch(P(), "reported", id); save(); ML.toast("ส่งถึงผู้ดูแลแล้ว ขอบคุณที่ช่วยตรวจ"); rerender(); return true; }
       const body = `ข้อ ${id}\nเฉลยในเว็บ: ${payload.answer}\nควรเป็น: ${want || "-"}\nเหตุผล: ${reason}\n${location.href}`;
       const repo = ML.APP.config.repo;
       save();
@@ -762,8 +762,8 @@ window.MedLibQuizUI = function (ML) {
       clearTimeout(typing); if (!c.single) typing = setTimeout(save, 400);
       return true;
     }
-    if (t.dataset.qnote) { const v = t.value; if (v.trim()) marks().notes[t.dataset.qnote] = { t: Date.now(), text: v }; else delete marks().notes[t.dataset.qnote]; clearTimeout(typing); typing = setTimeout(save, 400); return true; }
-    if (t.dataset.setnote) { const v = t.value; if (v.trim()) marks().setNotes[t.dataset.setnote] = { t: Date.now(), text: v }; else delete marks().setNotes[t.dataset.setnote]; clearTimeout(typing); typing = setTimeout(save, 400); return true; }
+    if (t.dataset.qnote) { const v = t.value; if (v.trim()) marks().notes[t.dataset.qnote] = { t: Date.now(), text: v }; else delete marks().notes[t.dataset.qnote]; C.touch(P(), "notes", t.dataset.qnote); clearTimeout(typing); typing = setTimeout(save, 400); return true; }
+    if (t.dataset.setnote) { const v = t.value; if (v.trim()) marks().setNotes[t.dataset.setnote] = { t: Date.now(), text: v }; else delete marks().setNotes[t.dataset.setnote]; C.touch(P(), "setNotes", t.dataset.setnote); clearTimeout(typing); typing = setTimeout(save, 400); return true; }
     return false;
   }
   function onKey(ev) {
