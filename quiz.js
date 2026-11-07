@@ -178,6 +178,7 @@ window.MedLibQuizUI = function (ML) {
     (q.items || []).forEach((it, n) => {
       const a = A[it.id] || {};
       h += `<div class="item"><div class="prompt">${n + 1}. ${txt(it.prompt)}</div>`;
+      if (it.image) h += `<figure><img src="${esc(b._base + "/" + it.image)}" alt="${esc(it.image_caption || "ภาพประกอบข้อย่อย")}" data-zoom="1" loading="lazy">${it.image_caption ? `<figcaption>${txt(it.image_caption)}</figcaption>` : ""}</figure>`;
       if (it.format === "select") {
         h += `<div class="hint">เลือกได้ไม่เกิน ${it.max_answers || "—"} ข้อ (เลือกเกินได้ 0 คะแนน)</div><div class="checks">`;
         (it.options || []).forEach((o) => {
@@ -194,6 +195,7 @@ window.MedLibQuizUI = function (ML) {
           + (it.source_key ? `<div class="keyrow src"><span class="kl">เฉลยต้นฉบับ${it.new_key ? " (ไม่ใช้)" : ""}</span><div>${txt(it.source_key)}</div></div>` : "")
           + (it.new_key ? `<div class="keyrow new"><span class="kl">เฉลยใหม่</span><div>${txt(it.new_key)}</div>${it.new_key_reason ? kcHTML(it.new_key_reason) : ""}</div>` : "")
           + (!it.source_key && !it.new_key && keyTxt ? `<div class="keyrow src"><span class="kl">เฉลย</span><div>${txt(keyTxt)}</div></div>` : "")
+          + (it.key_image ? `<figure class="keyfig"><img src="${esc(b._base + "/" + it.key_image)}" alt="${esc(it.key_image_caption || "ภาพจากเฉลยต้นฉบับ")}" data-zoom="1" loading="lazy"><figcaption>${txt(it.key_image_caption || "ภาพจากเฉลยต้นฉบับ")}</figcaption></figure>` : "")
           + (it.mechanism ? chainHTML(it.mechanism) : "")
           + (it.explanation && it.explanation !== keyTxt ? `<div class="itemexp">${kcHTML(it.explanation)}</div>` : "");
         if (it.format !== "select") {

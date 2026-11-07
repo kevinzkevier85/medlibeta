@@ -18,6 +18,7 @@
 | set_id | extract | audit (agree/disagree/drafted/unverified/ai_gen/skipped) | repair | build | PR |
 |---|---|---|---|---|---|
 | end_51_MCQ | ✓ 75 (exam text · key iOS PDF หน้าว่าง → แก้ BBox, อ่านเฉลยด้วยตา: วงชมพู/แถบส้ม · เฉลยหมดที่ข้อ 71) | 24/3/3/3/6/36 | ✓ | ✓ json · report · MedLib | finn-end-mcq-all |
+| end_52_KF | ✓ 16 ข้อ 35 ข้อย่อย (ต้นฉบับ `projects/END/ข้อสอบ/KF` = ไฟล์เดียวกับ Drive) อ่านด้วยตาทุกหน้า | เห็นด้วยกับเฉลยทุกข้อ · เพิ่มคำตอบอื่นที่ถูก 10.1, 12.4, 13.2 · audit_note 13.1 (FNA vs TSH/US) | — | ✓ `build_kf.py` · MedLib v0.14.0 · รูปเฉลยข้อ 2.2 (native) | kel-end-kf-52 |
 | end_52_MCQ | ✓ 81/81 (text layer; key = ไฮไลต์ชมพู + โน้ตน้ำเงิน) | 62/0/0/5/0/14 · AI ตรงต้นฉบับ 67/67 | ✓ | ✓ json · report · pdf · MedLib | ดูแชท |
 
 ## Waiting for user
@@ -44,6 +45,21 @@ node auditor/tools/check_site.mjs END 52                     # QA ในเว�
 - Drive key อยู่ใน cloud environment `medlibeta` (Network secret host `www.googleapis.com`, header `X-goog-api-key`) ไม่มี `config.json` → สคริปต์ไม่ใส่ `key=` เอง proxy ใส่ให้ · node ต้องรันด้วย `NODE_USE_ENV_PROXY=1`
 - ใช้ `python3` แทน `.venv/Scripts/python` (ต้อง `pip install pymupdf`)
 
+## KF — ขั้นตอนต่อชุด (เริ่ม 2026-11-07 ที่ชุด 52 แล้วไล่ลง)
+```
+cp "../END/ข้อสอบ/KF/<ข้อสอบ>.pdf" auditor/source/end_<c>_KF__exam.pdf  (และ __key.pdf)   # หรือดาวน์โหลดจาก Drive
+python auditor/tools/drive_walk_public.py 1xM-kIO6FthQ021JfvWnYB3kkwh1Ht3HZ --path preclinic/2/endocrine/kf   # id ไฟล์ใน Drive (ไม่ต้องมี key)
+  → เพิ่มชุดใน data/inventory.json · AI อ่านทุกหน้าของข้อสอบและเฉลยด้วยตา → data/work/end_<c>_KF.kf.json
+  → รูปทุกรูปใส่ data/images.json → crop_images.py --set end_<c>_KF → เปิดดูไฟล์ที่ได้ทุกรูป
+.venv/Scripts/python auditor/tools/build_kf.py --set end_<c>_KF && node tools/validate.cjs && node _test/kf_check.mjs END <c>
+```
+### กติกาแคปรูป (ผู้ใช้ย้ำ 2026-11-07 — รอบ KF CVS เคยแคปไม่ครบ)
+- **ต้องได้ทั้งภาพ** ทุกขอบ ทุก label/legend/คำบรรยายใต้ภาพที่เป็นของรูปนั้น ห้ามตัดชิดจนขอบหาย
+- ไล่ดูทุกหน้าของ **ทั้งไฟล์ข้อสอบและไฟล์เฉลย** (เฉลยมักมีสไลด์/รูปอธิบายเพิ่ม → `role: key` แสดงเป็น `key_image` ตอนเฉลย)
+- ถ้ารูปเป็นภาพฝังภาพเดียว ใช้ `native: true` (ดึงไฟล์ภาพเต็มความละเอียดเดิม ตีกรอบพลาดไม่ได้) · ถ้าเป็นภาพวาด/ตาราง vector หรือหลายชิ้นรวมกัน ตีกรอบ `rect` เผื่อขอบ แล้วเปิดไฟล์ที่ได้เทียบกับหน้าเต็มทุกครั้ง
+- `build_kf.py` ล้มถ้ารูปใน images.json ไม่มีข้อไหนใช้ หรือข้อไหนอ้างรูปที่ไม่มีไฟล์
+- ตารางเปล่าให้กรอกคำตอบ (เช่น Laboratory Test | Result) ไม่ใช่รูป ให้แปลงเป็นข้อย่อย · โลโก้รุ่นหัวกระดาษไม่ใช่รูปโจทย์
+
 ## ข้อสังเกตจาก pilot (ใช้กับชุดถัดไป)
 - รุ่น 51: เฉลยเป็น PDF จาก iOS ที่ทุกหน้าวาดใน form BBox [0 0 0 0] → render ว่าง; `extract.py` แก้ให้แล้ว · ผู้เฉลยวงคำตอบเป็นวงชมพูหรือแถบส้ม/เหลือง `parse_key.py` จับไม่ได้ ต้องอ่านด้วยตาแล้วเขียน `<set>.key.json` เอง
 - เฉลยรุ่น 52 เป็น PDF มี text layer แต่ไฮไลต์ฝังในภาพหน้า → `parse_key.py` วัดพิกเซลสีชมพู; เฉลยรุ่นเก่า (30–108 MB) น่าจะเป็นภาพสแกน ต้องใช้ OCR/vision
@@ -53,6 +69,7 @@ node auditor/tools/check_site.mjs END 52                     # QA ในเว�
 - รูปในข้อ: `data/images.json` (คู่ข้อ ↔ หน้า + กรอบ ตรวจด้วยตาทุกรูป) → `crop_images.py` → `data/blocks/<B>/img/<id>.jpg`; build_work ล้มถ้าโจทย์อ้างถึงรูปแต่ไม่มีรูป (ยกเว้นใน `no_image`)
 
 ## Last session
+2026-11-07 (เย็น): KF Endocrine ชุด 52 เสร็จ (branch kel-end-kf-52) · ถัดไป KF 51 → 42-43
 2026-11-07: pilot end_52_MCQ ครบทุก phase · MedLib v0.4.0: export ใช้ `papers` (ไม่ใช่ lectures) + `time_limit_min`; เว็บแสดงเป็นชุดแบบ CVS
 
 ## Endocrine MCQ — สรุปทุกรุ่น (2026-11-07)
