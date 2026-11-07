@@ -196,7 +196,7 @@
     const out = {};
     examsOf(b).forEach((q) => (q.refs || []).forEach((r) => {
       if (refDoc(r) !== docId) return;
-      r.pages.forEach((p) => { const o = out[p] = out[p] || { years: new Set(), qs: [] }; o.years.add(q.cohort); if (!o.qs.includes(q)) o.qs.push(q); });
+      (r.pages || []).forEach((p) => { const o = out[p] = out[p] || { years: new Set(), qs: [] }; o.years.add(q.cohort); if (!o.qs.includes(q)) o.qs.push(q); });
     }));
     return out;
   }
@@ -278,10 +278,10 @@
     const b = findBlock(bid); const l = b && b.lectures.find((x) => x.id === lid);
     if (!l) return notFound("ไม่พบ lecture นี้");
     const p = Number(page) || 0;
-    const qs = examsOf(b).filter((e) => (e.refs || []).some((r) => r.lecture === l.id && (!p || r.pages.includes(p))));
+    const qs = examsOf(b).filter((e) => (e.refs || []).some((r) => r.lecture === l.id && (!p || (r.pages || []).includes(p))));
     main.innerHTML = `<div class="crumbs"><a href="#/">ข้อสอบ</a><span>/</span><a href="#/b/${enc(b.id)}">${esc(b.name)}</a><span>/</span><span>${esc(l.id)}${p ? ` หน้า ${p}` : ""}</span></div>
       <div class="head"><h2>ข้อสอบที่อ้างถึง ${esc(l.id)}${p ? ` หน้า ${p}` : ""}</h2><p class="hint">${esc(l.title)} · ${qs.length} ข้อ · <a href="#/lec/${enc(b.id)}/${enc(l.id)}/${p || 1}">กลับไปอ่าน lecture</a></p></div>
-      <div class="rows">${qs.map((e) => { const x = e.refs.find((y) => y.lecture === l.id); return `<a class="row" href="#/q/${enc(e.id)}"><span class="id">ชุด ${e.cohort} · ${e.type} ข้อ ${QZ.qPos(e)}</span><span class="t">${esc(stem(e).slice(0, 110))}…<span class="sub">หน้า ${pagesText(x.pages)}${x.focus ? " · " + esc(x.focus) : ""}</span></span></a>`; }).join("") || `<p class="hint">ยังไม่มีข้อสอบที่อ้างถึง</p>`}</div>`;
+      <div class="rows">${qs.map((e) => { const x = e.refs.find((y) => y.lecture === l.id); return `<a class="row" href="#/q/${enc(e.id)}"><span class="id">ชุด ${e.cohort} · ${e.type} ข้อ ${QZ.qPos(e)}</span><span class="t">${esc(stem(e).slice(0, 110))}…<span class="sub">${x.pages ? `หน้า ${pagesText(x.pages)}` : "ทั้งบท"}${x.focus ? " · " + esc(x.focus) : ""}</span></span></a>`; }).join("") || `<p class="hint">ยังไม่มีข้อสอบที่อ้างถึง</p>`}</div>`;
   }
 
   /* ---------- lecture mode (CVS-style: list on the left, continuous PDF on the right) ---------- */
