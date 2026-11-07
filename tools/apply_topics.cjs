@@ -29,6 +29,14 @@ function withTopic(q, topic) {
   return out;
 }
 
+// "read this lecture" refs ({lecture} without pages) come from topics.json › lectures; refs with pages are left alone
+function withLectures(q, ls) {
+  if (!Array.isArray(q.refs)) return q;
+  const keep = q.refs.filter((r) => !(r && r.lecture && r.pages === undefined));
+  const add = (Array.isArray(ls) ? ls : ls ? [ls] : []).filter((l, i, a) => a.indexOf(l) === i && !keep.some((r) => r && r.lecture === l));
+  return { ...q, refs: [...keep, ...add.map((l) => ({ lecture: l }))] };
+}
+
 function applyTopics(blockDir) {
   const map = readJSON(path.join(blockDir, "topics.json"));
   const ids = new Set((map.topics || []).map((x) => x.id));
@@ -37,7 +45,11 @@ function applyTopics(blockDir) {
   const raws = files.map((f) => fs.readFileSync(f, "utf8")), sets = raws.map((r) => JSON.parse(r));
   // check everything before writing anything
   const seen = new Set(sets.flatMap((s) => s.questions.map((q) => q.id)));
-  const bad = Object.entries(map.questions || {}).filter(([, tp]) => !ids.has(tp)).map(([qid, tp]) => `${qid}: ไม่มีหัวข้อ ${tp} ในรายชื่อ`);
+  const lecIds = new Set((block.lectures || []).map((l) => l.id)), lecMap = map.lectures || {};
+  const bad = [
+    ...Object.entries(map.questions || {}).filter(([, tp]) => !ids.has(tp)).map(([qid, tp]) => `${qid}: ไม่มีหัวข้อ ${tp} ในรายชื่อ`),
+    ...Object.entries(lecMap).flatMap(([qid, ls]) => (Array.isArray(ls) ? ls : [ls]).filter((l) => !lecIds.has(l)).map((l) => `${qid}: ไม่มี lecture ${l} ในบล็อก`)),
+  ];
   if (bad.length) throw new Error(`topics.json ของ ${block.id} ผิด:\n  ${bad.join("\n  ")}`);
   // a question removed from the exams but still in topics.json: skip it (warn), never block the rebuild
   const stale = Object.keys(map.questions || {}).filter((qid) => !seen.has(qid));
@@ -47,7 +59,7 @@ function applyTopics(blockDir) {
     s.questions = s.questions.map((q) => {
       const tp = map.questions[q.id];
       if (tp) tagged++; else untagged.push(q.id);
-      return withTopic(q, tp);
+      return withLectures(withTopic(q, tp), lecMap[q.id]);
     });
     writeLike(files[i], raws[i], s);
   });
