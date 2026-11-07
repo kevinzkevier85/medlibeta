@@ -75,6 +75,13 @@ def main():
     block["exam_sets"].sort(key=lambda s: (-int(s.split("_")[0]), s.split("_")[1]))
     (bdir / "block.json").write_text(json.dumps(block, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"{set_name}: {len(qs)} ข้อ, {sum(len(q['items']) for q in qs)} ข้อย่อย, รูป {len(used)} → {(bdir / 'exams' / (set_name + '.json')).relative_to(ROOT)}")
+    # topic tags live in data/blocks/<B>/topics.json; put them back into the files just written
+    if (bdir / "topics.json").exists():
+        import subprocess
+        r = subprocess.run(["node", str(ROOT / "tools" / "apply_topics.cjs"), B], capture_output=True, text=True, encoding="utf-8")
+        print(r.stdout.strip())
+        if r.returncode:
+            sys.exit(1)
 
 
 if __name__ == "__main__":
