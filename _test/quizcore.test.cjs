@@ -74,4 +74,32 @@ t("latestResults leaves out uncounted unless own key", () => {
   assert.deepStrictEqual(Object.keys(Q.latestResults([r], qm2)), [mcq.id]);
   assert.ok(dr.id in Q.latestResults([r], qm2, { [dr.id]: "A" }));
 });
+const mk = (o) => ({ rounds: {}, marks: { flag: {}, notes: {}, setNotes: {}, keyOverride: {}, reported: {} }, mixes: {}, ts: {}, ...o });
+t("merge: newer delete beats older add (flag, key, note, mix)", () => {
+  const a = mk({ marks: { flag: {}, keyOverride: {}, notes: {}, setNotes: {}, reported: {} }, mixes: {}, ts: { "flag:q1": 20, "keyOverride:q1": 20, "notes:q1": 20, "mixes:m1": 20 } });
+  const b = mk({ marks: { flag: { q1: true }, keyOverride: { q1: "B" }, notes: { q1: { t: 10, text: "x" } }, setNotes: {}, reported: {} }, mixes: { m1: { qids: [] } }, ts: { "flag:q1": 10, "keyOverride:q1": 10, "notes:q1": 10, "mixes:m1": 10 } });
+  for (const m of [Q.mergeProgress(a, b), Q.mergeProgress(b, a)]) {
+    assert.ok(!m.marks.flag.q1 && !m.marks.keyOverride.q1 && !m.marks.notes.q1 && !m.mixes.m1);
+    assert.strictEqual(m.ts["flag:q1"], 20);
+  }
+});
+t("merge: newer add beats older delete", () => {
+  const a = mk({ ts: { "flag:q1": 10 } });
+  const b = mk({ marks: { flag: { q1: 30 }, keyOverride: { q1: "C" }, notes: {}, setNotes: {}, reported: {} }, ts: { "flag:q1": 30, "keyOverride:q1": 30 } });
+  const m = Q.mergeProgress(a, b);
+  assert.ok(m.marks.flag.q1); assert.strictEqual(m.marks.keyOverride.q1, "C");
+});
+t("merge: cleared history drops older rounds, keeps newer", () => {
+  const a = mk({ ts: { "clear:X/s": 15 } });
+  const b = mk({ rounds: { "X/s": [{ id: "r1", started: 10, chk: {}, qids: [] }, { id: "r2", started: 20, chk: {}, qids: [] }] } });
+  for (const m of [Q.mergeProgress(a, b), Q.mergeProgress(b, a)]) assert.deepStrictEqual(m.rounds["X/s"].map((r) => r.id), ["r2"]);
+});
+t("merge: no times (old data) keeps union", () => {
+  const m = Q.mergeProgress(mk({ marks: { flag: { q1: true }, keyOverride: {}, notes: {}, setNotes: {}, reported: {} } }), mk({ marks: { flag: { q2: true }, keyOverride: {}, notes: {}, setNotes: {}, reported: {} } }));
+  assert.ok(m.marks.flag.q1 && m.marks.flag.q2);
+});
+t("touch records the time of a change", () => {
+  const p = mk(); Q.touch(p, "flag", "q1", 123); assert.strictEqual(p.ts["flag:q1"], 123);
+  const p2 = {}; Q.touch(p2, "clear", "X/s"); assert.ok(p2.ts["clear:X/s"] > 0);
+});
 console.log(`\n${pass} ผ่าน`);
