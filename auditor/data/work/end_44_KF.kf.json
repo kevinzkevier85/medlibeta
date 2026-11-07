@@ -102,16 +102,19 @@
           "prompt": "(เสริม) Hormone จากตับที่ยับยั้งการหลั่ง GH แบบ negative feedback",
           "format": "short",
           "accepted": [
-            "igf-1",
-            "igf1",
             "somatomedin",
-            "insulin like growth factor",
-            "insulin-like growth factor"
+            "igf",
+            "igf-i"
           ],
           "source_key": "Somatomedin C (IGF-1) จาก liver → inhibit การหลั่ง GH (key2 ข้อ 3: ± ตอบได้)",
           "key_image": "img/END-44-KF-002-key2-b.jpg",
           "key_image_caption": "สไลด์ Growth hormone (ไฟล์ key2): GHRH, somatostatin และ IGF-1 feedback",
-          "explanation": "GH กระตุ้นตับให้สร้าง IGF-1 ซึ่งยับยั้ง GH ทั้งที่ pituitary และกระตุ้น somatostatin ที่ hypothalamus (negative feedback)"
+          "explanation": "GH กระตุ้นตับให้สร้าง IGF-1 ซึ่งยับยั้ง GH ทั้งที่ pituitary และกระตุ้น somatostatin ที่ hypothalamus (negative feedback)",
+          "keywords_all": [
+            "insulin",
+            "growth",
+            "factor"
+          ]
         },
         {
           "id": "2.4",
@@ -151,7 +154,9 @@
             "apoa-i",
             "apoai",
             "discoid hdl",
-            "disc shape"
+            "disc shape",
+            "apoa1",
+            "apoa-1"
           ],
           "source_key": "ApoA-I (pre-β HDL) สร้างจาก small intestine และ liver หรือจาก chylomicron หลัง lipolysis → pre-β HDL รูปแบน/disc",
           "key_image": "img/END-44-KF-003-key.jpg",
@@ -242,13 +247,6 @@
           "prompt": "Simvastatin — consequence of action",
           "format": "short",
           "accepted": [
-            "increase ldl receptor",
-            "increases ldl receptor",
-            "increased ldl receptor",
-            "upregulate ldl receptor",
-            "upregulation of ldl receptor",
-            "↑ ldl receptor",
-            "↑ldlr",
             "decrease ldl-c",
             "decreases ldl-c",
             "decrease plasma ldl",
@@ -268,7 +266,12 @@
             "ลด ldl"
           ],
           "source_key": "↓ Cholesterol synthesis ในตับ → ↓ VLDL synthesis; ↑ LDL receptor synthesis → ↓ LDL-C",
-          "explanation": "Cholesterol ในเซลล์ตับลดลง → SREBP-2 กระตุ้น ↑ LDL receptor → ดึง LDL จากเลือดเข้าตับมากขึ้น → LDL-C ในเลือดลด (และ VLDL synthesis ลดลง)"
+          "explanation": "Cholesterol ในเซลล์ตับลดลง → SREBP-2 กระตุ้น ↑ LDL receptor → ดึง LDL จากเลือดเข้าตับมากขึ้น → LDL-C ในเลือดลด (และ VLDL synthesis ลดลง)",
+          "keywords_all": [
+            "increase",
+            "ldl",
+            "receptor"
+          ]
         },
         {
           "id": "4.3",
@@ -317,7 +320,13 @@
             "↑ hdl",
             "increase apoa",
             "increases apoa",
-            "↑ apoa"
+            "↑ apoa",
+            "reduce tg",
+            "reduces tg",
+            "lower tg",
+            "lowers tg",
+            "↑ lpl",
+            "increase lipoprotein lipase activity"
           ],
           "source_key": "↑ lipoprotein lipase activity, ↑ β-oxidation → ↓ fatty acid → ↓ triglyceride · ↑ ApoA-I, ApoA-II → ↑ HDL synthesis",
           "explanation": "PPAR-α ↑ lipoprotein lipase และ ↑ β-oxidation ของ fatty acid, ↓ ApoC-III → VLDL clearance ดีขึ้น → TG ลด; ↑ ApoA-I/ApoA-II → HDL เพิ่ม"
@@ -609,37 +618,43 @@
           "prompt": "ฮอร์โมนที่ได้รับผลกระทบโดยตรง (ตัวที่ 1)",
           "format": "short",
           "accepted": [
-            "gh",
             "growth hormone",
+            "somatotropin",
             "acth",
+            "adrenocorticotropic",
+            "corticotropin",
             "tsh",
-            "thyroid stimulating hormone",
+            "thyroid stimulating",
+            "thyrotropin",
             "prolactin",
             "prl",
             "fsh",
-            "lh",
             "follicle stimulating",
-            "luteinizing"
+            "luteinizing",
+            "lh"
           ],
           "source_key": "key: GH, PRL, ACTH, TSH, FSH/LH · key2: TSH, GH, ACTH",
-          "explanation": "ตอบฮอร์โมน anterior pituitary ตัวใดก็ได้ 3 ตัว: GH, PRL, ACTH, TSH, FSH, LH (ADH/oxytocin เป็น posterior pituitary ที่สร้างจาก hypothalamus จึงไม่ใช่ตัวที่ถูกกระทบโดยตรง)"
+          "explanation": "ตอบฮอร์โมน anterior pituitary ตัวใดก็ได้ 3 ตัว: GH, PRL, ACTH, TSH, FSH, LH (ADH/oxytocin เป็น posterior pituitary ที่สร้างจาก hypothalamus จึงไม่ใช่ตัวที่ถูกกระทบโดยตรง) · พิมพ์ชื่อเต็ม (growth hormone) หรือตัวย่อ ACTH/TSH/FSH/LH/PRL (ไม่รับตัวย่อ GH เพราะระบบจับปนกับ GHRH/ghrelin ได้)"
         },
         {
           "id": "9.1b",
           "prompt": "ฮอร์โมนที่ได้รับผลกระทบโดยตรง (ตัวที่ 2)",
           "format": "short",
           "accepted": [
-            "gh",
             "growth hormone",
+            "somatotropin",
             "acth",
+            "adrenocorticotropic",
+            "corticotropin",
             "tsh",
-            "thyroid stimulating hormone",
+            "thyroid stimulating",
+            "thyrotropin",
             "prolactin",
             "prl",
             "fsh",
-            "lh",
             "follicle stimulating",
-            "luteinizing"
+            "luteinizing",
+            "lh"
           ],
           "source_key": "key: GH, PRL, ACTH, TSH, FSH/LH · key2: TSH, GH, ACTH",
           "explanation": "ดูข้อ 9.1a"
@@ -649,17 +664,20 @@
           "prompt": "ฮอร์โมนที่ได้รับผลกระทบโดยตรง (ตัวที่ 3)",
           "format": "short",
           "accepted": [
-            "gh",
             "growth hormone",
+            "somatotropin",
             "acth",
+            "adrenocorticotropic",
+            "corticotropin",
             "tsh",
-            "thyroid stimulating hormone",
+            "thyroid stimulating",
+            "thyrotropin",
             "prolactin",
             "prl",
             "fsh",
-            "lh",
             "follicle stimulating",
-            "luteinizing"
+            "luteinizing",
+            "lh"
           ],
           "source_key": "key: GH, PRL, ACTH, TSH, FSH/LH · key2: TSH, GH, ACTH",
           "explanation": "ดูข้อ 9.1a"
@@ -670,12 +688,10 @@
           "format": "short",
           "accepted": [
             "optic nerve",
-            "cranial nerve ii",
-            "cn ii",
-            "cn2",
+            "optic",
             "cranial nerve 2",
-            "nerve ii",
-            "optic chiasm"
+            "second cranial nerve",
+            "cn2"
           ],
           "source_key": "Optic nerve (Cranial nerve II)",
           "explanation": "Pituitary tumor ขยายขึ้นบนกด optic chiasm/optic nerve (CN II) → bitemporal hemianopia (ถ้า invade ด้านข้างเข้า cavernous sinus อาจกระทบ CN III, IV, VI แต่เฉลยตอบ optic nerve)"
@@ -887,10 +903,15 @@
             "↑ gluconeogenesis",
             "↑ hepatic gluconeogenesis",
             "เพิ่ม gluconeogenesis",
-            "increase glycogen",
-            "increases glycogen",
             "↑ glycogen storage",
-            "↑ glycogen"
+            "increase glycogen storage",
+            "increases glycogen storage",
+            "increased glycogen storage",
+            "increase glycogen synthesis",
+            "increase glycogenesis",
+            "↑ glycogen synthesis",
+            "increases glycogen synthesis",
+            "increases glycogenesis"
           ],
           "source_key": "key: ↑ gluconeogenesis, ↑ glycogen storage · key2: เพิ่ม Gluconeogenesis",
           "key_image": "img/END-44-KF-012-key.jpg",
