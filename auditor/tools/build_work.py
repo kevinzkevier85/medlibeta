@@ -105,6 +105,10 @@ def main():
                 audit["answer_status"] = "source_agree"
             audit["answer_verified"] = True
             audit["user_decision"] = d
+            if d.get("also_accept"):
+                q["also_accept"] = [k for k in d["also_accept"] if k != q["correct"]]
+            if d.get("note"):
+                q["issues"].append(d["note"])
         elif not src:
             q["correct"] = audit["ai_answer"]
             audit["answer_status"] = "drafted"

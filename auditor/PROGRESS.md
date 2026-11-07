@@ -20,7 +20,11 @@
 | end_52_MCQ | ✓ 81/81 (text layer; key = ไฮไลต์ชมพู + โน้ตน้ำเงิน) | 62/0/0/5/0/14 · AI ตรงต้นฉบับ 67/67 | ✓ | ✓ json · report · pdf · MedLib | ดูแชท |
 
 ## Waiting for user
-- `REVIEW.md`: 7 รายการ (ข้อ 18, 27, 32, 46, 63, 73, 81)
+- Drive API key ใน cloud environment `medlibeta` (Network secret: host `www.googleapis.com`, header `X-goog-api-key`) — สำหรับรัน MCQ Endocrine รุ่นอื่นบน cloud
+- ✓ REVIEW 7 ข้อของ end_52_MCQ ตัดสินแล้ว (2026-11-07) อยู่ใน `data/decisions.json` · decision รองรับ `also_accept` (นับถูกหลายช้อยส์) ส่งเข้า MedLib เท่านั้น (psu-quiz JSON ยังเฉลยเดียว)
+
+## Next
+- MCQ Endocrine ทุกรุ่น (ผู้ใช้สั่ง 2026-11-07) — ทำ inventory จาก Drive ก่อน แล้วรันทีละชุด
 
 ## ขั้นตอนต่อชุด (สิ่งที่สคริปต์ทำ / สิ่งที่ AI ทำ)
 ```
