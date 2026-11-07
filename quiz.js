@@ -494,10 +494,10 @@ window.MedLibQuizUI = function (ML) {
   /* ---------- block exam page: weak spots, quick random, MCQ | KF | OSPE | Lecture tabs ---------- */
   const TYPE_ORDER = ["MCQ", "KF", "OSPE"];
   const examTab = { block: null, tab: "MCQ" };   // a block page opens on MCQ; the choice is kept while you stay in that block
-  function tabOf(b, types, hasLec) {
+  function tabOf(b, types, hasLec, hasTopic) {
     if (examTab.block !== b.id) { examTab.block = b.id; examTab.tab = types[0] || (hasLec ? "lec" : "MCQ"); }
-    if (examTab.tab !== "lec" && !types.includes(examTab.tab)) examTab.tab = types[0] || "lec";
-    if (examTab.tab === "lec" && !hasLec) examTab.tab = types[0];
+    if (examTab.tab !== "lec" && examTab.tab !== "topic" && !types.includes(examTab.tab)) examTab.tab = types[0] || "lec";
+    if ((examTab.tab === "lec" && !hasLec) || (examTab.tab === "topic" && !hasTopic)) examTab.tab = types[0];
     return examTab.tab;
   }
   function examTabHTML(b) {
@@ -510,20 +510,27 @@ window.MedLibQuizUI = function (ML) {
     const mixes = Object.entries(P().mixes).filter(([, m]) => m.block === b.id);
     const types = TYPE_ORDER.filter((t) => b.sets.some((s) => s.type === t) || b.papers.some((p) => p.type === t));
     if (!types.length) return `<div class="empty">ยังไม่มีข้อสอบในบล็อกนี้</div>`;
-    const tab = tabOf(b, types, lecs.length > 0);
-    const pool = tab === "lec" ? qs : qs.filter((q) => q.type === tab);
+    const topics = (b.topics || []).filter((tp) => qs.some((q) => q.topic === tp.id));
+    const tab = tabOf(b, types, lecs.length > 0, topics.length > 0);
+    const whole = tab === "lec" || tab === "topic";
+    const pool = whole ? qs : qs.filter((q) => q.type === tab);
     let h = "";
     if (wrongN + flagN) h += `<button class="weakbar" data-z="mixweak"><span><b>ทบทวนจุดอ่อน</b><small>ผิดล่าสุด ${wrongN} ข้อ · ปักธง ${flagN} ข้อ</small></span><i aria-hidden="true">→</i></button>`;
-    h += `<nav class="tabs etabs">${[...types.map((t) => [t, t]), ...(lecs.length ? [["lec", "Lecture"]] : [])].map(([k, l]) => `<button class="tab ${tab === k ? "on" : ""}" data-z="etab" data-t="${k}">${l}</button>`).join("")}</nav>`;
-    if (pool.length) h += `<div class="quickrow"><button class="btn primary" data-z="mixrand" data-t="${tab}">สุ่ม ${Math.min(30, pool.length)} ข้อ${tab === "lec" ? "จากทั้งบล็อก" : ` ${tab} จากทุกชุด`}</button></div>`;
+    h += `<nav class="tabs etabs">${[...types.map((t) => [t, t]), ...(lecs.length ? [["lec", "Lecture"]] : []), ...(topics.length ? [["topic", "หัวข้อ"]] : [])].map(([k, l]) => `<button class="tab ${tab === k ? "on" : ""}" data-z="etab" data-t="${k}">${l}</button>`).join("")}</nav>`;
+    if (pool.length) h += `<div class="quickrow"><button class="btn primary" data-z="mixrand" data-t="${tab}">สุ่ม ${Math.min(30, pool.length)} ข้อ${whole ? "จากทั้งบล็อก" : ` ${tab} จากทุกชุด`}</button></div>`;
     const card = (attrs, title, n, pct, prog) => `<${attrs.startsWith("href") ? "a" : "button"} class="pcard" ${attrs}><span class="ptop"><b>${title}</b><span class="n">${n} ข้อ</span></span>${prog ? `<span class="sbar"><i style="width:${pct}%"></i></span><span class="prog">${prog}</span>` : ""}</${attrs.startsWith("href") ? "a" : "button"}>`;
+    // one card per lecture or topic; progress counts only questions that count toward scores
+    const groupCard = (attrs, title, lq, noneText) => {
+      const cq = lq.filter((q) => C.counts(q, kov()));
+      const done = cq.filter((q) => q.id in res).length, ok = cq.filter((q) => res[q.id] >= 0.999).length;
+      return card(attrs, title, lq.length, cq.length ? Math.round((done / cq.length) * 100) : 0, !cq.length ? noneText : done ? `ทำแล้ว ${done}/${cq.length} · ถูก ${ok}` : "");
+    };
     if (tab === "lec") {
-      h += `<div class="pgrid">${lecs.map((l) => {
-        const lq = qs.filter((q) => (q.refs || []).some((x) => x.lecture === l));
-        const cq = lq.filter((q) => C.counts(q, kov()));   // progress over questions that count
-        const done = cq.filter((q) => q.id in res).length, ok = cq.filter((q) => res[q.id] >= 0.999).length;
-        return card(`data-z="mixlec" data-l="${esc(l)}"`, esc(lecName(b, l).slice(0, 60)), lq.length, cq.length ? Math.round((done / cq.length) * 100) : 0, done ? `ทำแล้ว ${done}/${cq.length} · ถูก ${ok}` : "");
-      }).join("")}</div>`;
+      h += `<div class="pgrid">${lecs.map((l) => groupCard(`data-z="mixlec" data-l="${esc(l)}"`, esc(lecName(b, l).slice(0, 60)),
+        qs.filter((q) => (q.refs || []).some((x) => x.lecture === l)), "")).join("")}</div>`;
+    } else if (tab === "topic") {
+      h += `<div class="pgrid">${topics.map((tp) => groupCard(`data-z="mixtopic" data-tp="${esc(tp.id)}"`, esc(tp.name),
+        qs.filter((q) => q.topic === tp.id), "เฉลยทั้งหัวข้อยังไม่ยืนยัน · ไม่นับคะแนน")).join("")}</div>`;
     } else {
       const cohorts = [...new Set([...b.sets.filter((s) => s.type === tab).map((s) => s.cohort), ...b.papers.filter((p) => p.type === tab).map((p) => p.cohort)])].sort((x, y) => y - x);
       h += `<div class="pgrid">${cohorts.map((c) => {
@@ -650,6 +657,10 @@ window.MedLibQuizUI = function (ML) {
       const s = ML.findSet(c.b, t.dataset.s); if (!s) return true;
       const pref = P().prefs || {};
       startRound(c.b, s, { mode: pref.mode || "practice", shuffleQ: !!pref.shuffleQ, shuffleC: !!pref.shuffleC }); return true;
+    }
+    if (z === "mixtopic") {
+      const tp = (c.b.topics || []).find((x) => x.id === t.dataset.tp); if (!tp) return true;
+      makeMix(c.b, `${tp.name} · ทุกชุด`, ML.examsOf(c.b).filter((x) => x.topic === tp.id).map((x) => x.id)); return true;
     }
     if (z === "mixlec") {
       const l = t.dataset.l, qs = ML.examsOf(c.b).filter((x) => (x.refs || []).some((y) => y.lecture === l));
