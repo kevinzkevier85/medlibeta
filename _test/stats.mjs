@@ -67,7 +67,7 @@ await t("no progress → ยังไม่มีข้อมูล, no NaN", as
 });
 await t("weakest topic first, practice button, chart with 2 points", async () => {
   const p = await open(progress());
-  const rows = await p.$$eval('[data-blk="END"] tbody tr', (trs) => trs.map((tr) => tr.cells[0].textContent));
+  const rows = await p.$$eval('[data-blk="END"] table.toptbl tbody tr', (trs) => trs.map((tr) => tr.cells[0].textContent));
   assert.strictEqual(rows[0], "Thyroid");
   assert.strictEqual(await p.$$eval("svg.chart circle", (c) => c.length), 2);
   assert.ok(!/NaN/.test(await p.textContent("#main")));
@@ -87,7 +87,7 @@ await t("under 5 done in every topic → no weakest button; 1 round → chart hi
 await t("block without topics (DEMO) → score card, no topic table", async () => {
   const p = await open(progress({ demo: true }), true);
   assert.ok(await p.$('[data-blk="DEMO"]'), "DEMO card");
-  assert.strictEqual(await p.$('[data-blk="DEMO"] table'), null);
+  assert.strictEqual(await p.$('[data-blk="DEMO"] table.toptbl'), null);
 });
 await t("broken progress entries and rounds without dates don't break the page", async () => {
   const prog = progress();

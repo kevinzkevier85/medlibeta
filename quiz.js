@@ -120,15 +120,23 @@ window.MedLibQuizUI = function (ML) {
         return `<div class="ref"><span class="hint">ต้นฉบับ:</span><a href="${pdfHref(b, r.paper, r.pages[0])}" data-pdfpop="${esc(b.id)}|${esc(r.paper)}|${r.pages[0] || 1}">${d && d.role === "key" ? "PDF เฉลย" : "PDF ข้อสอบ"} ${pgTxt(r.pages)}</a></div>`;
       }
       const hot = r.hotspot ? (r.hotspot.years.length >= 2 ? `<span class="hot">ออกซ้ำ ${r.hotspot.years.length} ปี</span>` : r.hotspot.years.length ? `<span class="tier">เคยออกปี ${r.hotspot.years.join(", ")}</span>` : "") + `<span class="tier">Tier ${r.hotspot.tier}</span>` : "";
-      return `<div class="ref"><span class="hint">อ่านเพิ่ม:</span><a href="${pdfHref(b, r.lecture, r.pages[0])}">${esc(lecName(b, r.lecture))} ${pgTxt(r.pages)}</a>${hot}${r.focus ? `<span class="hint">${esc(r.focus)}</span>` : ""}</div>`;
+      return `<div class="ref"><span class="hint">อ่านเพิ่ม:</span><a href="${pdfHref(b, r.lecture, (r.pages || [])[0])}">${esc(lecName(b, r.lecture))} ${pgTxt(r.pages)}</a>${hot}${r.focus ? `<span class="hint">${esc(r.focus)}</span>` : ""}</div>`;
     }).join("")}</div>`;
   }
   const figureHTML = (b, q) => (q.image ? `<figure><img src="${esc(b._base + "/" + q.image)}" alt="${esc(q.image_caption || "ภาพประกอบโจทย์")}" data-zoom="1" loading="lazy">${q.image_caption ? `<figcaption>${txt(q.image_caption)}</figcaption>` : ""}</figure>` : "");
 
   // Box under a revealed question: answer, original key, mechanism, key concept, refs, my note, report / my key
-  function explainHTML(b, q, extra, tone) {
+  // lectures a question points at (CVS: with pages; END: lecture only), first page if any
+  const lecRefs = (q) => { const seen = {}; (q.refs || []).forEach((x) => { if (x && x.lecture && !(x.lecture in seen)) seen[x.lecture] = x.pages ? x.pages[0] : null; }); return seen; };
+  const lecLink = (b, l, page) => `<a href="#/lec/${enc(b.id)}/${enc(l)}${page ? "/" + page : ""}">${esc(lecName(b, l))}</a>`;
+  function readFirstHTML(b, q) {
+    const ls = lecRefs(q), ids = Object.keys(ls);
+    return ids.length ? `<div class="readfirst"><b>ควรอ่าน:</b> ${ids.map((l) => lecLink(b, l, ls[l])).join(" · ")}</div>` : "";
+  }
+  function explainHTML(b, q, extra, tone, wrong) {
     const mine = kov()[q.id];
     let h = `<div class="explain"><h3>คำอธิบาย${badgeHTML(q)}</h3>`;
+    if (wrong) h += readFirstHTML(b, q);
     if (q.explanation || extra) h += `<div class="answerline${tone ? " " + tone : ""}">${extra || ""}${q.explanation ? kcHTML(q.explanation) : ""}</div>`;
     if (q.source_answer || q.source_answer_text) h += `<div class="keyrow src"><span class="kl">เฉลยต้นฉบับ: ${esc(q.source_answer || q.source_answer_text)}${q.type === "MCQ" ? " (ไม่ใช้ให้คะแนน)" : ""}</span>${q.source_answer_note ? kcHTML(q.source_answer_note) : ""}</div>`;
     else if (q.source_answer_note && q.answer_status !== "verified") h += `<div class="keyrow src"><span class="kl">หมายเหตุจากต้นฉบับ</span>${kcHTML(q.source_answer_note)}</div>`;
@@ -176,7 +184,7 @@ window.MedLibQuizUI = function (ML) {
         const lbl = (k) => (r.shuffleC ? "ABCDE"[order.indexOf(k)] : k);
         const alsoTxt = oks.length > 1 ? ` (${oks.slice(1).map(lbl).join(", ")} ก็นับถูก)` : "";
         const extra = key ? `<p><b>${!chosen ? "ไม่ได้ตอบ · " : right ? "ถูกต้อง · " : "ยังไม่ใช่ · "}คำตอบ ${esc(disp)}${esc(alsoTxt)}${r.shuffleC && disp !== key ? ` (ช้อยส์ ${esc(key)} ในต้นฉบับ)` : ""}${q.answer_status === "corrected" ? " (เฉลยใหม่)" : q.answer_status === "draft" ? " (ร่างเฉลย)" : ""}</b></p>` : "";
-        h += explainHTML(b, q, extra, !chosen ? "none" : right ? "" : "bad");
+        h += explainHTML(b, q, extra, !chosen ? "none" : right ? "" : "bad", !right);
       }
       return h;
     }
@@ -216,7 +224,7 @@ window.MedLibQuizUI = function (ML) {
       h += `</div>`;
     });
     if (instant && !reveal) h += `<button class="btn primary" data-z="check">ตรวจคำตอบข้อนี้</button>`;
-    if (reveal) h += explainHTML(b, q, "");
+    if (reveal) h += explainHTML(b, q, "", "", (C.qScore(q, r, kov()) || 0) < 0.999);
     return h;
   }
 
@@ -366,6 +374,11 @@ window.MedLibQuizUI = function (ML) {
       h += `<h3>ข้อที่ผิด (${wrong.length}) · เลือกข้อที่จะทำซ้ำ</h3><div class="pickwrong">${wrong.map((q) => `<label class="chk"><input type="checkbox" data-wrongpick="${esc(q.id)}" checked> <a href="${jump(q)}">ข้อ ${no(q)}</a> <span class="hint">${esc(String(q.stem || q.case || "").slice(0, 70))}…</span></label>`).join("")}</div>
         <div class="btns"><button class="btn primary" data-z="retry" data-r="${r.id}">ทำข้อที่เลือกซ้ำเป็นรอบใหม่</button><a class="btn" href="${B}">ทำทั้งชุดอีกครั้ง</a></div>`;
     } else if (r.done) h += `<div class="btns"><span class="badge good">ไม่มีข้อที่ผิด</span><a class="btn" href="${B}">ทำทั้งชุดอีกครั้ง</a></div>`;
+    // lectures behind this round's wrong answers, most wrong first
+    const toRead = {};
+    wrong.filter((q) => C.counts(q, kov())).forEach((q) => Object.keys(lecRefs(q)).forEach((l) => { toRead[l] = (toRead[l] || 0) + 1; }));
+    const readKeys = Object.keys(toRead).sort((x, y) => toRead[y] - toRead[x] || x.localeCompare(y));
+    if (readKeys.length) h += `<h3>Lecture ที่ควรอ่านก่อน</h3><ol class="readlist">${readKeys.map((l) => `<li>${lecLink(b, l)} <span class="hint">ผิด ${toRead[l]} ข้อ</span></li>`).join("")}</ol>`;
     const keys = Object.keys(by).sort((x, y) => by[x].s / by[x].n - by[y].s / by[y].n);
     if (keys.length) h += `<h3>คะแนนราย Lecture (อ่อนสุดอยู่บน)</h3><div class="tablewrap"><table><thead><tr><th>Lecture</th><th>คะแนน</th><th>ข้อที่ควรทบทวน</th></tr></thead><tbody>${keys.map((l) => `<tr><td>${esc(lecName(b, l))}</td><td>${Math.round(by[l].s * 10) / 10}/${by[l].n}</td><td>${by[l].ids.map((q) => `<a class="jump" href="${jump(q)}">ข้อ ${no(q)}</a>`).join("")}</td></tr>`).join("")}</tbody></table></div>`;
     const reread = rereadHTML(b, wrong);
@@ -376,7 +389,7 @@ window.MedLibQuizUI = function (ML) {
   }
   function rereadHTML(b, qs) {
     const g = {};
-    qs.forEach((q) => (q.refs || []).filter((x) => x.lecture).forEach((x) => {
+    qs.forEach((q) => (q.refs || []).filter((x) => x.lecture && x.pages).forEach((x) => {
       const k = x.lecture + "|" + x.pages[0];
       const o = g[k] = g[k] || { lec: x.lecture, pages: x.pages, focus: x.focus || "", tier: (x.hotspot || {}).tier || 3, qs: [] };
       if (!o.qs.includes(q)) o.qs.push(q);
@@ -425,8 +438,8 @@ window.MedLibQuizUI = function (ML) {
       if (own && !t.own.includes(q.id)) t.own.push(q.id);
       if (!t.all.includes(q.id)) t.all.push(q.id);
     };
-    qs.forEach((q) => (q.refs || []).filter((x) => x.lecture).forEach((x) => add(q, x, true)));
-    if (allQs) allQs.forEach((q) => (q.refs || []).filter((x) => x.lecture && T[x.lecture + "|" + x.pages[0]]).forEach((x) => add(q, x, false)));
+    qs.forEach((q) => (q.refs || []).filter((x) => x.lecture && x.pages).forEach((x) => add(q, x, true)));
+    if (allQs) allQs.forEach((q) => (q.refs || []).filter((x) => x.lecture && x.pages && T[x.lecture + "|" + x.pages[0]]).forEach((x) => add(q, x, false)));
     return Object.values(T).map((t) => {
       const years = [...t.years].sort();
       const tier = t.tiers.length ? Math.min(...t.tiers) : years.length >= 3 ? 1 : years.length === 2 ? 2 : 3;
@@ -485,7 +498,7 @@ window.MedLibQuizUI = function (ML) {
     const linkQ = (id) => `#/q/${enc(id)}`;
     const tierF = (P().prefs || {}).planTier || 3;
     const lecs = guideLectures(b, topics.filter((t) => t.tier <= tierF));
-    const withLec = qs.filter((q) => (q.refs || []).some((x) => x.lecture));
+    const withLec = qs.filter((q) => (q.refs || []).some((x) => x.lecture && x.pages));   // the plan works on lecture pages; page-less "read this lecture" refs do not count
     const t1pages = topics.filter((t) => t.tier === 1).reduce((a, t) => a + t.pages[1] - t.pages[0] + 1, 0);
     const t1q = new Set(topics.filter((t) => t.tier === 1).flatMap((t) => t.own));
     const cohorts = [...new Set(qs.map((q) => q.cohort))].sort();
@@ -599,11 +612,16 @@ window.MedLibQuizUI = function (ML) {
       tops.forEach((x) => { if (x.done >= 5 && names[x.key]) weak.push({ b, x, name: names[x.key] }); });
       const rows = tops.filter((x) => names[x.key]).map((x) => `<tr><td>${esc(names[x.key] || x.key)}</td><td>${x.done}/${x.total}</td><td>${pctTxt(x)}</td>
         <td><button class="btn sm" data-z="mixtopic" data-b="${esc(b.id)}" data-tp="${esc(x.key)}">ฝึก</button></td></tr>`).join("");
+      // lectures behind the latest wrong answers in this block (top 5)
+      const miss = {};
+      qs.filter((q) => C.counts(q, kov()) && q.id in res && res[q.id] < 0.999).forEach((q) => Object.keys(lecRefs(q)).forEach((l) => { miss[l] = (miss[l] || 0) + 1; }));
+      const top = Object.keys(miss).sort((x, y) => miss[y] - miss[x] || x.localeCompare(y)).slice(0, 5);
+      const lecTable = top.length ? `<div class="tablewrap"><table class="lectbl"><thead><tr><th>Lecture ที่ผิดบ่อย</th><th>ผิด</th><th></th></tr></thead><tbody>${top.map((l) => `<tr><td>${esc(lecName(b, l))}</td><td>${miss[l]}</td><td><a class="btn sm" href="#/lec/${enc(b.id)}/${enc(l)}">อ่าน</a></td></tr>`).join("")}</tbody></table></div>` : "";
       cards.push(`<div class="statcard" data-blk="${esc(b.id)}" style="--blk:${esc(b.color || "var(--artery)")}">
         <div class="ptop"><b>${esc(b.name)}</b><span class="n">${pctTxt(all)}</span></div>
         <span class="sbar"><i style="width:${all.pct || 0}%"></i></span>
         <span class="prog">ทำแล้ว ${all.done}/${all.total} ข้อ · ถูก ${all.ok}</span>
-        ${rows ? `<div class="tablewrap"><table><thead><tr><th>หัวข้อ (อ่อนสุดก่อน)</th><th>ทำแล้ว</th><th>คะแนน</th><th></th></tr></thead><tbody>${rows}</tbody></table></div>` : ""}</div>`);
+        ${lecTable}${rows ? `<div class="tablewrap"><table class="toptbl"><thead><tr><th>หัวข้อ (อ่อนสุดก่อน)</th><th>ทำแล้ว</th><th>คะแนน</th><th></th></tr></thead><tbody>${rows}</tbody></table></div>` : ""}</div>`);
       const qmap = Object.fromEntries(qs.map((q) => [q.id, q]));   // same questions as the cards (respects showDrafts)
       Object.entries(P().rounds).filter(([k, list]) => k.startsWith(b.id + "/") && Array.isArray(list)).forEach(([k, list]) => {
         const s = setLike(b, k.slice(b.id.length + 1)); if (!s) return;
@@ -745,7 +763,8 @@ window.MedLibQuizUI = function (ML) {
     }
     if (z === "mixlec") {
       const l = t.dataset.l, qs = ML.examsOf(c.b).filter((x) => (x.refs || []).some((y) => y.lecture === l));
-      qs.sort((x, y) => (x.refs.find((r) => r.lecture === l).pages[0] - y.refs.find((r) => r.lecture === l).pages[0]) || y.cohort - x.cohort);
+      const pg = (q) => ((q.refs.find((r) => r.lecture === l) || {}).pages || [0])[0];
+      qs.sort((x, y) => (pg(x) - pg(y)) || y.cohort - x.cohort);
       makeMix(c.b, `${lecName(c.b, l)} · ทุกชุด`, qs.map((x) => x.id)); return true;
     }
     if (z === "mixrand") {
