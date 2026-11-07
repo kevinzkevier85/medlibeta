@@ -34,6 +34,7 @@
 | gi_49_MCQ | 65 | recall (65 จาก 128 ข้อ) · เฉลยอ่านด้วยตา · source_agree 52, source_disagree 5, ai_generated 6, drafted 1, skipped 1 · needs_review 7 |
 | gi_48_MCQ | 75 | recall (75 จาก 128) · เลขข้อไม่มีจุด → `parse_mcq/parse_key --bare-numbers` · ไฮไลต์เหลืองเขียว (parse_key อ่านได้แล้ว) ตรวจด้วยตาทุกหน้า · source_agree 58, source_disagree 11, ai_generated 4, drafted 2 · needs_review 12 |
 | gi_47_MCQ | 99 | ข้อสอบ 2 คอลัมน์ มีลายน้ำ (รูปต้องตัดจากหน้า ไม่ใช้ native) · เฉลยเป็นขีด / ด้วยมือ อ่านด้วยตา · source_agree 82, source_disagree 12, ai_generated 5 · needs_review 14 |
+| gi_46_MCQ | 78 | recall (78 จาก 129) · ไฮไลต์ชมพู parse_key อ่านได้ (ช้อยส์คอลัมน์ขวา/ตัวอักษรซ้ำ ตรวจด้วยตา) · source_agree 65, source_disagree 4, ai_generated 7, drafted 2 · needs_review 4 |
 
 ## Waiting for user
 - `REVIEW.md`: 89 รายการ (Endocrine MCQ ทุกรุ่น)
