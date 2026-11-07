@@ -1094,18 +1094,19 @@
   document.addEventListener("touchstart", (ev) => {
     const ts = ev.touches, z = ev.target.closest && ev.target.closest("img.zoom");
     if (z && z !== TCH.img) { TCH.img = z; TCH.sc = 1; TCH.tx = TCH.ty = 0; }   // a new picture starts fresh
+    if (z) document.addEventListener("touchmove", onZoomMove, { passive: false });   // only while touching a zoomed picture: page scrolling stays fast
     TCH.n = Math.max(TCH.n, ts.length);
     if (ts.length === 1) { TCH.n = 1; TCH.x = TCH.px = ts[0].clientX; TCH.y = TCH.py = ts[0].clientY; TCH.t = Date.now(); }
     if (z && ts.length === 2) { TCH.d0 = dist(ts); TCH.s0 = TCH.sc; }
   }, { passive: true });
-  document.addEventListener("touchmove", (ev) => {
+  const onZoomMove = (ev) => {
     const z = ev.target.closest && ev.target.closest("img.zoom"); if (!z) return;
     const ts = ev.touches;
     if (ts.length === 2 && TCH.d0) { TCH.sc = Math.max(1, Math.min(5, (TCH.s0 * dist(ts)) / TCH.d0)); }
     else if (ts.length === 1 && TCH.sc > 1) { TCH.tx += ts[0].clientX - TCH.px; TCH.ty += ts[0].clientY - TCH.py; TCH.px = ts[0].clientX; TCH.py = ts[0].clientY; }
     else return;
     ev.preventDefault(); setTf(z);
-  }, { passive: false });
+  };
   document.addEventListener("touchend", (ev) => {
     const c = ev.changedTouches[0]; if (!c) return;
     const z = ev.target.closest && ev.target.closest("img.zoom");
@@ -1114,11 +1115,12 @@
       const tapped = TCH.n === 1 && Math.hypot(c.clientX - TCH.x, c.clientY - TCH.y) < 10 && Date.now() - TCH.t < 300;
       if (!tapped && (TCH.n > 1 || TCH.sc > 1)) ev.preventDefault();
       if (ev.touches.length === 1) { TCH.px = ev.touches[0].clientX; TCH.py = ev.touches[0].clientY; }   // one finger left: drag from here
-      if (!ev.touches.length) TCH.n = 0;
+      if (!ev.touches.length) { TCH.n = 0; document.removeEventListener("touchmove", onZoomMove); }
       return;
     }
     if (TCH.n !== 1 || !/^#\/set\/[^/]+\/[^/]+\/run\//.test(location.hash)) return;
     if (!ev.target.closest || !ev.target.closest(".qcard") || ev.target.closest("input, textarea, select")) return;
+    if ((window.visualViewport && window.visualViewport.scale > 1.05) || String(window.getSelection && window.getSelection()).trim()) return;   // page zoomed in, or selecting text
     const dx = c.clientX - TCH.x, dy = c.clientY - TCH.y;
     if (Math.abs(dx) < 60 || Math.abs(dx) < 2 * Math.abs(dy) || Date.now() - TCH.t > 800) return;
     const btn = document.querySelector(dx < 0 ? ".qfoot [data-go]:last-child" : ".qfoot [data-go]");

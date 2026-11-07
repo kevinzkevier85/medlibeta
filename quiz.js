@@ -570,7 +570,9 @@ window.MedLibQuizUI = function (ML) {
     let best = null;
     ML.visibleBlocks().forEach((b) => Object.entries(P().rounds).filter(([k]) => k.startsWith(b.id + "/")).forEach(([k, list]) => {
       const s = setLike(b, k.slice(b.id.length + 1)); if (!s || !Array.isArray(list)) return;
-      list.forEach((r) => { if (r && !r.done && Array.isArray(r.qids) && (!best || (r.at || r.started || 0) > (best.r.at || best.r.started || 0))) best = { b, s, r }; });
+      // the same round the set page opens (activeRound), so the button and the page agree
+      const r = list.filter((x) => x && !x.done && Array.isArray(x.qids)).pop();
+      if (r && (!best || (r.at || r.started || 0) > (best.r.at || best.r.started || 0))) best = { b, s, r };
     }));
     if (!best) return null;
     const { b, s, r } = best;
