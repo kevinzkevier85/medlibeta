@@ -23,7 +23,11 @@
       "ไม่เก็บ"
      ],
      "source_key": "none",
-     "explanation": "Steroid ละลายไขมันและผ่านเยื่อหุ้มเซลล์ได้ จึงไม่ถูกเก็บในถุง (ไม่มี storage pool) สร้างตามต้องการแล้วหลั่งทันที โดยเก็บเพียง precursor (cholesterol esters)"
+     "explanation": "Steroid ละลายไขมันและผ่านเยื่อหุ้มเซลล์ได้ จึงไม่ถูกเก็บในถุง (ไม่มี storage pool) สร้างตามต้องการแล้วหลั่งทันที โดยเก็บเพียง precursor (cholesterol esters)",
+     "keywords_all": [
+      "no",
+      "storage"
+     ]
     },
     {
      "id": "1.2",
@@ -90,7 +94,9 @@
      "id": "2.1",
      "prompt": "PDGF",
      "format": "short",
-     "accepted": [],
+     "accepted": [
+      "พาราไครน์"
+     ],
      "key_image": "img/END-45-KF-002-key.jpg",
      "key_image_caption": "สไลด์ Coordination of Body Functions by Chemical Messengers ที่แนบในเฉลยต้นฉบับ (neurotransmitter / endocrine / neuroendocrine / paracrine / autocrine)",
      "source_key": "Paracrine",
@@ -113,7 +119,9 @@
      "id": "2.3",
      "prompt": "Oxytocin",
      "format": "short",
-     "accepted": [],
+     "accepted": [
+      "นิวโรเอนโดครีน"
+     ],
      "source_key": "Neuroendocrine",
      "explanation": "Oxytocin สร้างจาก neuron ใน hypothalamus แล้วเก็บ/หลั่งเข้าเลือดที่ posterior pituitary จึงเป็น neuroendocrine",
      "keywords_all": [
@@ -397,8 +405,14 @@
      "prompt": "Calcitonin มีผลต่อระดับ Ca²⁺ ในเลือดอย่างไร (increase/decrease)",
      "format": "short",
      "accepted": [
+      "↓ ca",
       "↓ ca²⁺",
-      "↓ca²⁺"
+      "↓ca²⁺",
+      "lower ca",
+      "reduce ca",
+      "reduced ca",
+      "ลดแคลเซียม",
+      "ลด ca"
      ],
      "key_image": "img/END-45-KF-005-key.jpg",
      "key_image_caption": "ตาราง Comparative actions of vitamin D, PTH and calcitonin ที่แนบในเฉลยต้นฉบับ",
@@ -414,8 +428,14 @@
      "prompt": "Calcitonin มีผลต่อระดับ phosphate (PO₄³⁻) ในเลือดอย่างไร (increase/decrease)",
      "format": "short",
      "accepted": [
+      "↓ po4",
       "↓ po₄³⁻",
-      "↓po₄³⁻"
+      "↓po₄³⁻",
+      "lower po4",
+      "reduce po4",
+      "reduced po4",
+      "ลดฟอสเฟต",
+      "ลด po4"
      ],
      "source_key": "↓ PO₄³⁻ in blood",
      "explanation": "Calcitonin ลดระดับ phosphate ในเลือดด้วย (↓ bone resorption และ ↓ phosphate reabsorption ที่ไต) ต่างจาก PTH ที่ ↑ Ca²⁺ แต่ ↓ phosphate reabsorption (phosphaturic)",
@@ -493,28 +513,44 @@
      "id": "7.2",
      "prompt": "Ezetimibe — consequent of action ข้อ 1)",
      "format": "short",
-     "accepted": [],
+     "accepted": [
+      "reduce chylomicron",
+      "reduced chylomicron",
+      "↓ chylomicron",
+      "↓chylomicron",
+      "less chylomicron",
+      "reduce cholesterol absorption",
+      "reduced cholesterol absorption",
+      "↓ cholesterol absorption",
+      "less cholesterol absorption",
+      "↓ chylomicron remnant-derived cholesterol to liver"
+     ],
      "source_key": "↓ chylomicron remnant-derived cholesterol to liver",
      "explanation": "เมื่อ cholesterol ถูกดูดซึมน้อยลง chylomicron remnant ที่ส่ง cholesterol ไปตับจึงลดลง",
      "keywords_all": [
       "decrease",
       "chylomicron"
-     ],
-     "key_text": "decrease chylomicron remnant-derived cholesterol to liver"
+     ]
     },
     {
      "id": "7.3",
      "prompt": "Ezetimibe — consequent of action ข้อ 2)",
      "format": "short",
-     "accepted": [],
+     "accepted": [
+      "↑ Expression of LDL-C ® → ↓ LDL-C in blood",
+      "upregulate ldl receptor",
+      "upregulation of ldl receptor",
+      "up-regulate ldl receptor",
+      "↑ expression of ldl receptor",
+      "↑expression of ldl receptor"
+     ],
      "source_key": "↑ Expression of LDL-C ® → ↓ LDL-C in blood",
      "explanation": "ตับได้ cholesterol จาก chylomicron remnant น้อยลง จึง upregulate LDL receptor (SREBP-2) ดึง LDL จากเลือดมากขึ้น → LDL-C ในเลือดลดลง",
      "keywords_all": [
       "increase",
       "ldl",
       "receptor"
-     ],
-     "key_text": "increase expression of LDL receptor → decrease LDL-C in blood"
+     ]
     },
     {
      "id": "7.4",
@@ -538,11 +574,21 @@
      "id": "7.5",
      "prompt": "Saxagliptin — consequent of action (1): ผลต่อ active GLP-1",
      "format": "short",
-     "accepted": [],
+     "accepted": [
+      "prolong glp",
+      "prolonged glp",
+      "prolong active glp",
+      "prevent glp-1 degradation",
+      "prevent glp degradation",
+      "↑ glp",
+      "↑glp",
+      "↑ active glp",
+      "longer glp"
+     ],
      "source_key": "Prolong active GLP-1",
      "explanation": "เมื่อ DPP-4 ถูกยับยั้ง active GLP-1 (incretin) ไม่ถูกย่อย จึงอยู่ในเลือดนานขึ้น (half-life ยาวขึ้น)",
      "keywords_all": [
-      "prolong",
+      "increase",
       "glp"
      ]
     },
@@ -550,40 +596,70 @@
      "id": "7.6",
      "prompt": "Saxagliptin — consequent of action (2): ผลต่อ insulin",
      "format": "short",
-     "accepted": [],
+     "accepted": [
+      "↑ glucose-dependent insulin release",
+      "↑ insulin",
+      "↑insulin",
+      "enhance insulin",
+      "stimulate insulin",
+      "insulin secretion ↑",
+      "insulin release ↑",
+      "เพิ่มการหลั่ง insulin",
+      "เพิ่มอินซูลิน"
+     ],
      "source_key": "↑ glucose-dependent insulin release",
      "explanation": "GLP-1 กระตุ้น β-cell หลั่ง insulin แบบขึ้นกับระดับ glucose (เมื่อ glucose สูงเท่านั้น) จึงเสี่ยง hypoglycemia ต่ำ",
      "keywords_all": [
       "increase",
       "insulin"
-     ],
-     "key_text": "increase glucose-dependent insulin release"
+     ]
     },
     {
      "id": "7.7",
      "prompt": "Saxagliptin — consequent of action (3): ผลต่อ glucagon",
      "format": "short",
-     "accepted": [],
+     "accepted": [
+      "reduce glucagon",
+      "reduced glucagon",
+      "suppress glucagon",
+      "suppressed glucagon",
+      "inhibit glucagon",
+      "less glucagon",
+      "↓ glucagon",
+      "↓glucagon",
+      "glucagon ↓",
+      "ลด glucagon"
+     ],
      "source_key": "↓ glucagon",
      "explanation": "GLP-1 ยับยั้ง glucagon จาก α-cell (แบบ glucose-dependent) → ลดการสร้างกลูโคสที่ตับ",
      "keywords_all": [
       "decrease",
       "glucagon"
-     ],
-     "key_text": "decrease glucagon"
+     ]
     },
     {
      "id": "7.8",
      "prompt": "Saxagliptin — consequent of action (4): ผลต่อ gastric emptying",
      "format": "short",
-     "accepted": [],
+     "accepted": [
+      "reduce gastric emptying",
+      "reduced gastric emptying",
+      "↓ gastric emptying",
+      "↓gastric emptying",
+      "slow gastric emptying",
+      "slows gastric emptying",
+      "slower gastric emptying",
+      "delay gastric emptying",
+      "delayed gastric emptying",
+      "delays gastric emptying",
+      "ชะลอการระบาย"
+     ],
      "source_key": "↓ gastric emptying",
      "explanation": "GLP-1 ชะลอการระบายของกระเพาะอาหาร ช่วยให้อิ่มนานและลด postprandial glucose",
      "keywords_all": [
-      "delay",
+      "decrease",
       "gastric"
-     ],
-     "key_text": "delay gastric emptying"
+     ]
     }
    ]
   }
