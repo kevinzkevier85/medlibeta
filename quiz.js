@@ -327,6 +327,7 @@ window.MedLibQuizUI = function (ML) {
     if (all) r.qids.forEach((id) => { r.chk[id] = true; });
     r.done = true; r.finished = Date.now(); save();
     location.hash = `${base(b, s)}/sum/${r.id}`;
+    if (ML.syncSoon) ML.syncSoon();
   }
 
   /* ---------- summary of one round ---------- */
