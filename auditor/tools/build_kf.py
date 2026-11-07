@@ -21,6 +21,8 @@ def load(p):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--set", required=True)
+    ap.add_argument("--images", help="picture list file instead of data/images.json (per-set draft)")
+    ap.add_argument("--no-block", action="store_true", help="write only the exam set file, leave block.json alone")
     a = ap.parse_args()
     inv = {s["set_id"]: s for s in load(AUD / "data" / "inventory.json")["sets"]}
     meta = inv[a.set]
@@ -49,7 +51,7 @@ def main():
         qs.append(q)
 
     # every picture registered for this set must be used by some question/item
-    for qid, im in load(AUD / "data" / "images.json")["images"].items():
+    for qid, im in load(Path(a.images) if a.images else AUD / "data" / "images.json")["images"].items():
         if qid.rsplit("_", 1)[0] != a.set:
             continue
         f = f"img/{B}-{c}-KF-{int(qid.rsplit('_', 1)[1]):03d}{'-key' if im.get('role') == 'key' else ''}.jpg"
@@ -63,6 +65,9 @@ def main():
            "questions": qs}
     (bdir / "exams" / f"{set_name}.json").write_text(json.dumps(out, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
 
+    if a.no_block:
+        print(f"{set_name}: {len(qs)} ข้อ, {sum(len(q['items']) for q in qs)} ข้อย่อย, รูป {len(used)} (ไม่แตะ block.json)")
+        return
     block = load(bdir / "block.json")
     papers = [x for x in block.get("papers", []) if x["id"] not in pid.values()]
     for role, f in meta["files"].items():

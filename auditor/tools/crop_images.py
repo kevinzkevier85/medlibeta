@@ -50,9 +50,10 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--block", default="end")
     ap.add_argument("--set", help="only this set (others need their source PDFs cached)")
+    ap.add_argument("--images", help="read picture list from this file instead of data/images.json (per-set draft)")
     ap.add_argument("--dpi", type=int, default=150)
     a = ap.parse_args()
-    cfg = json.loads((AUD / "data" / "images.json").read_text(encoding="utf-8"))
+    cfg = json.loads(Path(a.images or AUD / "data" / "images.json").read_text(encoding="utf-8"))
     inv = {s["set_id"]: s for s in json.loads((AUD / "data" / "inventory.json").read_text(encoding="utf-8"))["sets"]}
     docs, n = {}, 0
     for qid, im in cfg["images"].items():
