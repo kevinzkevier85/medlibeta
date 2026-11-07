@@ -74,4 +74,17 @@ t("latestResults leaves out uncounted unless own key", () => {
   assert.deepStrictEqual(Object.keys(Q.latestResults([r], qm2)), [mcq.id]);
   assert.ok(dr.id in Q.latestResults([r], qm2, { [dr.id]: "A" }));
 });
+t("groupStats: weakest first, untouched last, uncounted left out", () => {
+  const g = (id, topic, extra = {}) => ({ id, type: "MCQ", topic, options: { A: "a", B: "b" }, answer: "A", ...extra });
+  const qs = [g("t1", "thyroid"), g("t2", "thyroid"), g("a1", "adrenal"), g("l1", "lipid"), g("t3", "thyroid", { answer_status: "draft" }), g("d1", "dm", { answer_status: "draft" })];
+  const res = { t1: 1, t2: 0, a1: 1, t3: 0, d1: 1 };
+  const out = Q.groupStats(qs, res, {}, (q) => q.topic);
+  assert.deepStrictEqual(out.map((x) => x.key), ["thyroid", "adrenal", "lipid"]);
+  assert.deepStrictEqual(out[0], { key: "thyroid", total: 2, done: 2, ok: 1, pct: 50 });
+  assert.strictEqual(out[1].pct, 100); assert.strictEqual(out[2].pct, null); assert.strictEqual(out[2].done, 0);
+});
+t("groupStats: partial KF score averages", () => {
+  const out = Q.groupStats([{ id: "k1", type: "KF", topic: "x", items: [] }], { k1: 0.5 }, {}, (q) => q.topic);
+  assert.deepStrictEqual(out, [{ key: "x", total: 1, done: 1, ok: 0, pct: 50 }]);
+});
 console.log(`\n${pass} ผ่าน`);
