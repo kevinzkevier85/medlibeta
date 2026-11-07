@@ -1,5 +1,18 @@
 # Next tasks
 
+## เสร็จแล้ว — v0.5.0–0.5.1 (2026-11-07) อยู่บน main แล้ว (commit df8f93f)
+- เทียบ CVS-pdf + psu-quiz: docs/reference-comparison.md · ตัดสินใจ: docs/superpowers/specs/2026-11-07-medlib-v05-design.md
+- format v2 (KF/OSPE), บล็อก CVS 11 ชุด (tools/import_cvs.cjs), หน้าทำข้อสอบแบบรอบ, แผนอ่าน, lecture อ่านต่อ/ค้นใน PDF, ส่งออก-นำเข้าความคืบหน้า, ธีม CVS
+- PWA: manifest + sw.js (ออฟไลน์), ปุ่มติดตั้ง/เก็บรูป
+- ตรวจ: node tools/validate.cjs · node _test/quizcore.test.cjs · node _test/qa.mjs (63 ข้อ)
+
+## ถัดไป (ลำดับ)
+1. ผู้ใช้ตั้ง Worker: DRIVE_API_KEY, GITHUB_TOKEN (Issues only), GITHUB_REPO, ALLOWED_ORIGINS → ใส่ URL ใน site.json (drive_proxy_url / report_url)
+2. Auditor ส่ง field v2: option_why, mechanism, key_concept, refs ไปหน้า lecture (+ ลงทะเบียน lecture ของ END)
+3. ตัดสิน REVIEW.md 7 ข้อ (END 52)
+4. รัน Auditor ทุกชุดใน Drive โดยใช้ psu-quiz data.json เป็นตัวเทียบตอนแยกข้อ
+5. อ่านคิวแจ้งเฉลย: gh issue list -l answer-report
+
 ## เสร็จแล้ว — v0.2.0 (2026-11-07) หน้าตาใหม่
 - ออกแบบใหม่ด้วย ui-ux-pro-max + frontend-design: gentian violet + ไฮไลต์เหลือง, เมนูสันแฟ้ม, ฟอนต์ Anuphan, dark mode
 - แก้แค่ `styles.css` ชื่อ class เดิมทั้งหมด (`app.js` ไม่ได้แตะ)
