@@ -31,7 +31,6 @@ AI ตอบตรงกับเฉลยต้นฉบับ **58/63** ข้
 | 4 | ช้อยส์ E AI เติมให้ครบ 5 ตัว |  |
 | 7 | chylomicron (remnant) ก็เพิ่มขึ้นใน apoE defect |  |
 | 52 | ค่า calcium ในต้นฉบับเขียนซ้อนกัน (2.0 1.5 mmol/L) |  |
-| 60 | ตารางผลแล็บในต้นฉบับเป็นภาพ: TC 300, TG 220, HDL-C 50 mg/dL |  |
 
 ## การแก้ไขข้อความ (edits)
 
@@ -51,7 +50,6 @@ AI ตอบตรงกับเฉลยต้นฉบับ **58/63** ข้
 | 53 | choices.D | Increased Ilb Na+/Pi cotransporter expression in the intestine | Increased IIb Na+/Pi cotransporter expression in the intestine |
 | 59 | choices.D | lodine reduction | Iodine reduction |
 | 59 | choices.E | lodide trapping | Iodide trapping |
-| 60 | stem | The laboratory results of the patient showed as the following: Which of the following LDL-c results | The laboratory results of the patient are: total cholesterol 300 mg/dL, triglyceride 220 mg/dL, HDL-C 50 mg/dL. Which of the following LDL-C results |
 | 61 | choices.E | Increased Ila Na+/Pi cotransporter expression | Increased IIa Na+/Pi cotransporter expression |
 | 63 | choices.E | bacterial organism in follicles *หมายเหตุ ข้อสอบจริงมี 66 ข้อ แต่มีข้อซ้ำกับข้อฟรีทำให้คะแนนเต็ม เหลือแค่ 62 คะแนน | Bacterial organisms in follicles |
 

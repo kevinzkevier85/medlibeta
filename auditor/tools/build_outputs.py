@@ -9,7 +9,7 @@ Writes:
   auditor/REVIEW.md                                   items waiting for the user's decision
   data/blocks/<BLOCK>/exams/<cohort>_<type>.json      MedLib website copy (validated by lib/validate.js rules)
 """
-import argparse, json, re, subprocess, sys
+import argparse, base64, json, re, subprocess, sys
 from collections import Counter, defaultdict
 from pathlib import Path
 
@@ -32,15 +32,19 @@ def work_sets(block=None):
     return [s for s in sets if not block or s["block"] == block]
 
 
-def quiz_question(q):
+def quiz_question(q, block):
     keep = ("id", "number", "sourceNumber", "stem", "choices", "correct", "explanation", "image", "issues", "audit")
-    return {k: q[k] for k in keep}
+    out = {k: q.get(k) for k in keep}
+    if q.get("image"):   # psu-quiz needs the picture inline (§6.1): embed the cropped JPEG as a data URI
+        f = ROOT / "data" / "blocks" / block.upper() / q["image"]
+        out["image"] = "data:image/jpeg;base64," + base64.b64encode(f.read_bytes()).decode()
+    return out
 
 
 def build_quiz(sets):
     by_block = defaultdict(list)
     for s in sets:
-        qs = [quiz_question(q) for q in s["questions"] if q["audit"]["answer_status"] != "skipped"]
+        qs = [quiz_question(q, s["block"]) for q in s["questions"] if q["audit"]["answer_status"] != "skipped"]
         skipped = [q["number"] for q in s["questions"] if q["audit"]["answer_status"] == "skipped"]
         by_block[s["block"]].append({
             "id": s["set_id"], "name": s["name"], "history": {"exam": [], "practice": []},
@@ -209,7 +213,9 @@ def build_medlib(sets):
                        "stem": q["stem"], "options": {k: v for k, v in q["choices"].items() if v},
                        "answer": q["correct"], "answer_status": medlib_status(a), "explanation": exp,
                        "refs": refs, "tags": [x for x in [a["duplicate_group"]] if x], "source": "import",
-                       "audit_ref": q["id"]} | ({"also_accept": q["also_accept"]} if q.get("also_accept") else {}))
+                       "audit_ref": q["id"]} | ({"also_accept": q["also_accept"]} if q.get("also_accept") else {})
+                      | ({"image": q["image"]} if q.get("image") else {})
+                      | ({"image_caption": q["image_caption"]} if q.get("image_caption") else {}))
         out = {"meta": {"set_id": set_name, "block": B, "cohort": c, "type": t,
                         "title": f"{t} {meta['block_name']} · Med PSU {s['cohort']}",
                         **({"time_limit_min": meta["time_limit_min"]} if meta.get("time_limit_min") else {}), "n_source_items": s["n_source_items"],

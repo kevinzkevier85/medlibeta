@@ -35,7 +35,6 @@ AI ตอบตรงกับเฉลยต้นฉบับ **27/37** ข้
 |---|---|---|
 | 6 | ช้อยส์ E AI เติมให้ครบ 5 ตัว |  |
 | 8 | ช้อยส์ E AI เติมให้ครบ 5 ตัว |  |
-| 16 | ภาพประกอบโจทย์ไม่มีในไฟล์ข้อสอบ (เห็นในหน้าเฉลย) เขียนคำบรรยายภาพแทน |  |
 | 18 | ช้อยส์ D ในไฟล์ข้อสอบพิมพ์ผิดเป็น 17 hydroxylase |  |
 | 19 | หน่วยในต้นฉบับ (mmol/dL, ng/dL/hour) น่าจะพิมพ์ผิด |  |
 | 23 | ช้อยส์ E AI เติมให้ครบ 5 ตัว |  |
@@ -56,8 +55,7 @@ AI ตอบตรงกับเฉลยต้นฉบับ **27/37** ข้
 | 12 | stem | Patient take prednisolone with other drug and then having nausea and weakness. What is the following mechanism of prednisolone cause this symptom? | A patient takes prednisolone with another drug and then develops nausea and weakness. Which drug-interaction mechanism explains these symptoms? |
 | 13 | stem | show low level of STAR protein expression. This mutation lead to | shows a low level of StAR protein expression. This mutation leads to |
 | 13 | choices.A | salt waste | Salt wasting |
-| 16 | choices.D | Thyroid | Thyroid-stimulating hormone |
-| 16 | choices.E | Parathyroid | Parathyroid hormone |
+| 16 | stem | From this following picture. What is this hormone? | From the following picture, what is this hormone? |
 | 17 | stem | เด็กชายอายุ 10 วัน น้ำหนักลด ปากแหSง skin pigmentation โจทยâถาม gross adrenal | A 10-day-old boy has weight loss, dry lips and skin hyperpigmentation. What is the gross appearance of his adrenal glands? |
 | 18 | stem | แพทยâวินิจฉัยวÑาเปqน autosomal recessive disorder เนื่องมาจาก mutation of CYP27B1 Which following is contribute of these signs/symptoms? | A patient is diagnosed with an autosomal recessive disorder caused by a mutation of CYP27B1. Which of the following contributes to the signs and symptoms? |
 | 19 | stem | 40 years old female มาหSองฉุกเฉิน ดSวยอาการ headache. | A 40-year-old woman presents to the emergency room with headache. |

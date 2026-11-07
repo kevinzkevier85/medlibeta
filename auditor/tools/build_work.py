@@ -5,7 +5,7 @@ Usage:  .venv/Scripts/python auditor/tools/build_work.py --set end_52_MCQ
 Rules (CLAUDE.md §3): original answer is always kept; disagreement → source_disagree (never overridden
 unless data/decisions.json says so → corrected); locked questions are never rebuilt.
 """
-import argparse, json, sys
+import argparse, json, re, sys
 from pathlib import Path
 
 AUD = Path(__file__).resolve().parents[1]
@@ -47,6 +47,8 @@ def main():
     if not (parsed and key and blind and rep):
         sys.exit("ERROR: ต้องมี parsed/key/blind/repair ครบก่อน (ดู CLAUDE.md Phase 1–3)")
     decisions = load(AUD / "data" / "decisions.json", {}) or {}
+    imgcfg = load(AUD / "data" / "images.json", {}) or {}
+    images, no_image = imgcfg.get("images", {}), imgcfg.get("no_image", {})
     old = load(W / f"{sid}.json", {"questions": []})
     locked = {q["id"]: q for q in old["questions"] if q.get("audit", {}).get("locked")}
 
@@ -68,6 +70,11 @@ def main():
              "choices": {L: "" for L in "ABCDE"}, "correct": None,
              "explanation": r.get("explanation", ""), "image": None, "issues": list(r.get("issues", []))}
         q["choices"].update(r.get("choices_override", pq["choices"]))
+        if qid in images:   # cropped by crop_images.py; path is relative to the MedLib block folder
+            c = meta.get("medlib_cohort") or meta["cohort"]
+            q["image"] = f"img/{meta['block'].upper()}-{c}-{meta['type']}-{int(n):03d}.jpg"
+            if images[qid].get("caption"):
+                q["image_caption"] = images[qid]["caption"]
 
         edits = []
         for e in r.get("edits", []) + rep.get("extra_edits", {}).get(n, []):
@@ -141,6 +148,10 @@ def main():
             audit["needs_review"] = True
             q["issues"].append("เฉลยขัดกับ AI")
 
+        # a question that points at a picture/table must carry one (or be listed in images.json › no_image)
+        if (not skipped and not q["image"] and qid not in no_image and
+                re.search(r"(following|this|the) (picture|photo|figure|image|table|graph|diagram)|shown (below|in the (photo|picture|figure|table))|as the following|ภาพ|รูป", q["stem"], re.I)):
+            problems.append(f"ข้อ {n}: โจทย์อ้างถึงรูป/ตาราง แต่ยังไม่มีรูป (ใส่ใน data/images.json)")
         if not skipped and not q["explanation"]:
             problems.append(f"ข้อ {n}: ยังไม่มี explanation")
         if not skipped and sum(1 for v in q["choices"].values() if v) < 5:
