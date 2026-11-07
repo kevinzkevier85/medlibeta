@@ -1,11 +1,37 @@
 # REVIEW — รายการรอผู้ใช้ตัดสิน
 
-ทั้งหมด 63 รายการ
+ทั้งหมด 89 รายการ
 วิธีตอบ: พิมพ์ในแชทเป็นบรรทัด เช่น `end_52_MCQ_027: คงเดิม` / `end_52_MCQ_063: C` / `end_52_MCQ_046: ตรวจใหม่`
 Claude จะบันทึกลง `auditor/data/decisions.json` แล้ว build ใหม่
 
 | id | ต้นฉบับ | AI | ความมั่นใจ | เรื่อง | ตัวเลือกที่เป็นไปได้ / เหตุผล |
 |---|---|---|---|---|---|
+| end_42-43_MCQ_001 | E | D | medium | เฉลยขัดกับ AI | เฉลยต้นฉบับวง E (vesicle) — การตัด prohormone เริ่มใน trans-Golgi และต่อเนื่องใน secretory vesicle; lecture/BRS ใช้คำว่า Golgi AI เลือก D อาจนับถูกทั้ง D และ E — D: trans-Golgi (lecture); E: secretory vesicle (USMLE); A: ไม่ใช่; B: สร้าง steroid; C: ตัด signal peptide |
+| end_42-43_MCQ_005 | None | None | None | AI เขียนข้อนี้ขึ้นใหม่จากโน้ตความจำในต้นฉบับ |  — A: เป็นกลไกของ peptide hormone; B: ไม่ใช่; C: เป็นของ insulin/growth factor; D: ถูก (ตรงกับคำตอบในเฉลยต้นฉบับ); E: เป็นของ Gq |
+| end_42-43_MCQ_023 | E | B | high | เฉลยขัดกับ AI | เฉลยต้นฉบับขีดช้อยส์ E (PNMT) แล้วเขียนว่า plasma/urine catecholamine/metanephrine/VMA (ไม่มีในช้อยส์) — chromogranin A (B) เป็น biomarker ของ neuroendocrine tumor รวม pheochromocytoma — B: ถูก — chromogranin A; E: เป็นเอนไซม์ ไม่ใช่ biomarker ที่ใช้; A: MTC; C: DOC เป็นของ 11β-OHD; D: เอนไซม์ใน medulla |
+| end_42-43_MCQ_039 | B | C | high | ช้อยส์ E AI เติมให้ครบ 5 ตัว; เฉลยขัดกับ AI | เฉลยต้นฉบับวง B (adrenal cyst) โดยแปะภาพ adrenal cyst — ก้อนกลมรี 2 cm ที่พบบังเอิญส่วนใหญ่เป็น cortical adenoma (C) — B: พบน้อยกว่า; C: incidentaloma ที่พบบ่อยที่สุด; A: ไม่ใช่รอยโรคของ adrenal (โรคตา); D: รอยโรคของ thyroid; E: มักมีอาการ |
+| end_42-43_MCQ_043 | None | None | None | AI เขียนข้อนี้ขึ้นใหม่จากโน้ตความจำในต้นฉบับ |  — A: ไม่มี nuclear groove; B: มี giant cell; C: lymphoid follicle + Hürthle cell; D: ถูก — nuclear groove; E: วินิจฉัยจาก invasion ไม่ใช่ลักษณะนิวเคลียส |
+| end_42-43_MCQ_045 | C | None | None | ช้อยส์ A, B, C, D, E AI เติมให้ครบ 5 ตัว; เฉลยขัดกับ AI |   |
+| end_42-43_MCQ_050 | B | D | medium | เฉลยขัดกับ AI | เฉลยต้นฉบับวง B (TG lower than normal) ตีความว่าขาด lipoprotein → ขน TG จากอาหารไม่ได้ (abetalipoproteinemia); AI ตีความเป็น LPL deficiency (D) — ถ้อยคำ 'lipoprotein depleted' กำกวม — B: abetalipoproteinemia: ไม่มี chylomicron → TG ต่ำ; D: LPL deficiency: TG สูง; A: ก็ต่ำในกรณีนี้; C: ไม่ใช่; E: ไม่ใช่ |
+| end_42-43_MCQ_051 | D | C | medium | เฉลยขัดกับ AI | เฉลยต้นฉบับวง D (CETP); AI เลือก C (apoA-I) — reverse cholesterol transport ต้องอาศัยทั้ง apoA-I (รับ cholesterol ผ่าน ABCA1, กระตุ้น LCAT) และ CETP (ย้าย CE ไป apoB-lipoprotein) ถ้อยคำโจทย์กำกวม — C: apoA-I รับ cholesterol จาก tissue; D: CETP ย้าย CE ระหว่าง lipoprotein; A: ไม่ใช่; B: ย่อย TG/PL ของ HDL; E: esterify cholesterol ในเซลล์ |
+| end_42-43_MCQ_054 | ['A', 'B'] | A | high | ผู้เฉลยวงไว้ 2 ตัว (A, B); ช้อยส์ E AI เติมให้ครบ 5 ตัว; ต้นฉบับวงไว้หลายตัว |   |
+| end_42-43_MCQ_055 | D | B | high | ช้อยส์ E AI เติมให้ครบ 5 ตัว; เฉลยขัดกับ AI | เฉลยต้นฉบับวง D (ลด severe hypothyroidism) — เหตุผลหลักที่หยุด MMI 3–7 วันก่อน RAI คือให้ต่อมจับ RAI ได้ดี (B); ข้อ D ไม่ใช่เหตุผล — B: ถูก — MMI ลด iodine organification ทำให้ RAI ไม่สะสม; D: ไม่ใช่เหตุผลหลัก; A: ไม่ใช่; C: ไม่ใช่; E: ไม่ใช่ |
+| end_42-43_MCQ_066 | ['C', 'E'] | C | high | ผู้เฉลยวงไว้ 2 ตัว (C, E); ต้นฉบับวงไว้หลายตัว |   |
+| end_42-43_MCQ_076 | ['C', 'D'] | C | high | ผู้เฉลยวงไว้ 2 ตัว (C, D); ต้นฉบับวงไว้หลายตัว |   |
+| end_42-43_MCQ_077 | None | None | None | AI เขียนข้อนี้ขึ้นใหม่จากโน้ตความจำในต้นฉบับ |  — A: ถูก; B: GI side effect; C: hypoglycemia; D: hypoglycemia; E: edema/HF |
+| end_42-43_MCQ_079 | A | None | None | ช้อยส์ B, C, D, E AI เติมให้ครบ 5 ตัว; เฉลยขัดกับ AI |   |
+| end_42-43_MCQ_084 | B | None | None | ช้อยส์ A, B, C, D, E AI เติมให้ครบ 5 ตัว; เฉลยขัดกับ AI |   |
+| end_42-43_MCQ_090 | A | B | medium | เฉลยขัดกับ AI | เฉลยต้นฉบับวง A (additive) อ้าง PubMed ว่า GH และ cortisol เพิ่ม lipolysis แบบ additive; AI เลือก B (synergistic/permissive) — ขึ้นกับที่ lecture สอน — A: additive (ตามงานวิจัยที่อ้าง); B: synergistic/permissive; C: ไม่ใช่; D: ไม่ใช่ศัพท์มาตรฐาน; E: ไม่ใช่ |
+| end_42-43_MCQ_105 | ['A', 'C'] | A | medium | ผู้เฉลยวงไว้ 2 ตัว (A, C); ต้นฉบับวงไว้หลายตัว |   |
+| end_42-43_MCQ_108 | None | None | None | AI เขียนข้อนี้ขึ้นใหม่จากโน้ตความจำในต้นฉบับ |  — A: K⁺ ต่ำ; B: ถูก; C: ไม่บวมเพราะ escape; D: renin ถูกกด; E: เกิด metabolic alkalosis |
+| end_42-43_MCQ_122 | ['A', 'B', 'D'] | A | high | ผู้เฉลยวงไว้ 3 ตัว (A, B, D); ต้นฉบับวงไว้หลายตัว |   |
+| end_42-43_MCQ_123 | ['C', 'E'] | E | high | ผู้เฉลยวงไว้ 2 ตัว (C, E); ต้นฉบับวงไว้หลายตัว |   |
+| end_42-43_MCQ_127 | A | None | None | ช้อยส์ B, C, D, E AI เติมให้ครบ 5 ตัว; เฉลยขัดกับ AI |   |
+| end_42-43_MCQ_142 | None | E | low | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| end_42-43_MCQ_144 | C | B | medium | ช้อยส์ E AI เติมให้ครบ 5 ตัว; เฉลยขัดกับ AI | เฉลยต้นฉบับวง C (cholesterol transferred from liver ผ่าน VLDL) และกากบาท B; AI เลือก B — CETP ย้าย 'cholesteryl ester' ไม่ใช่ free cholesterol ทั้งสองข้อถ้อยคำไม่สมบูรณ์ — B: CETP ย้าย cholesteryl ester; C: VLDL/LDL ขน cholesterol จากตับ; A: chylomicron ถูกย่อยโดย LPL; D: ถ้อยคำผิด; E: LDL ขนไป tissue |
+| end_42-43_MCQ_153 | D | B | high | เฉลยขัดกับ AI | เฉลยต้นฉบับวง D (gluconeogenesis) โดยเขียนว่าคิดว่า gluconeogenesis เริ่มตอน 6 ชม.; ช่วง 4–16 ชม. แรกของการอดอาหาร hepatic glycogenolysis เป็นแหล่งหลัก (B) ส่วน gluconeogenesis เพิ่มขึ้นตามมา — B: แหล่ง glucose หลักช่วงต้น; D: เริ่มเพิ่มขึ้นแต่ยังไม่ใช่หลัก; A: fed state; C: เพิ่มขึ้นเช่นกัน; E: ช่วงหลัง |
+| end_42-43_MCQ_156 | B | A | high | เฉลยขัดกับ AI | เฉลยต้นฉบับวง B (พี่น้องเป็น T1DM) — ตาม ADA ประวัติคลอดทารก ≥ 4 kg เป็นข้อบ่งชี้คัดกรอง T2DM (A); การมีพี่น้องเป็น T1DM เพิ่มความเสี่ยงไม่มากและไม่ใช่เกณฑ์คัดกรองทั่วไป — A: ADA risk factor; B: ความเสี่ยงเพิ่มเล็กน้อย; C: ไม่ใช่; D: FPG 126 วินิจฉัยได้แล้ว (ไม่ต้องคัดกรอง); E: HDL ปกติ |
+| end_42-43_MCQ_157 | ['C', 'E'] | B | medium | ผู้เฉลยวงไว้ 2 ตัว (C, E); ต้นฉบับวงไว้หลายตัว | เฉลยต้นฉบับวงทั้ง C และ E (insulin resistance ที่ adipose และ muscle); AI เลือก B (hepatic gluconeogenesis ↑) — ทั้ง B, C, E เกิดใน T2DM จริง — B: เป็นสาเหตุ fasting hyperglycemia; C: ถูก; E: ถูก; A: ผิดทิศ; D: ไม่ใช่ |
 | end_44_MCQ_058 | ['B', 'C'] | C | high | ผู้เฉลยวงทั้ง inhibit COX2 และ inhibit cytokine production; ช้อยส์ E AI เติมให้ครบ 5 ตัว; ต้นฉบับวงไว้หลายตัว | เฉลยต้นฉบับวงทั้ง B (inhibit COX2) และ C (inhibit cytokine production) — glucocorticoid ลดทั้ง COX-2 expression และ cytokine production จริง; ควรนับถูกทั้ง B และ C — A: ไม่ใช่ (NSAID ไม่ใช่ steroid); B: ลด COX-2 expression (ถูกได้); C: ถูก — ยับยั้ง NF-κB; D: ลด phagocytosis; E: ไม่ใช่กลไกของ steroid |
 | end_44_MCQ_093 | B | B | low | gemfibrozil ก็เสริมฤทธิ์ warfarin ได้มาก; การแยกเวลากินช่วยกับ bile acid sequestrant (ลดการดูดซึม) มากกว่า interaction แบบ CYP |   |
 | end_45_MCQ_002 | D | C | medium | คำตอบขึ้นกับตำรา: Golgi (lecture/BRS) หรือ secretory vesicle (USMLE); เฉลยขัดกับ AI | เฉลยต้นฉบับวง D (vesicle); ข้อ 13 ในชุดเดียวกันผู้เฉลยวงทั้ง vesicle และ Golgi และเขียนว่า lecture/BRS บอก Golgi — AI เลือก C (Golgi) อาจนับถูกทั้ง C และ D — A: ไม่เกี่ยว; B: SER สร้าง steroid; C: การตัดเริ่มที่ trans-Golgi (lecture); D: การตัดเกิดต่อใน secretory vesicle (USMLE); E: ไม่เกี่ยว |

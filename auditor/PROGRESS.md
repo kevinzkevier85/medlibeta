@@ -21,7 +21,7 @@
 | end_52_MCQ | ✓ 81/81 (text layer; key = ไฮไลต์ชมพู + โน้ตน้ำเงิน) | 62/0/0/5/0/14 · AI ตรงต้นฉบับ 67/67 | ✓ | ✓ json · report · pdf · MedLib | ดูแชท |
 
 ## Waiting for user
-- `REVIEW.md`: 12 รายการของ end_51_MCQ
+- `REVIEW.md`: 89 รายการ (Endocrine MCQ ทุกรุ่น)
 - ✓ REVIEW 7 ข้อของ end_52_MCQ ตัดสินแล้ว (2026-11-07) อยู่ใน `data/decisions.json` · decision รองรับ `also_accept` (นับถูกหลายช้อยส์) ส่งเข้า MedLib เท่านั้น (psu-quiz JSON ยังเฉลยเดียว)
 
 ## Next
@@ -53,3 +53,19 @@ node auditor/tools/check_site.mjs END 52                     # QA ในเว�
 
 ## Last session
 2026-11-07: pilot end_52_MCQ ครบทุก phase · MedLib v0.4.0: export ใช้ `papers` (ไม่ใช่ lectures) + `time_limit_min`; เว็บแสดงเป็นชุดแบบ CVS
+
+## Endocrine MCQ — สรุปทุกรุ่น (2026-11-07)
+| set_id | ข้อในต้นฉบับ | สถานะ |
+|---|---|---|
+| end_52_MCQ | 81 | skipped 14, source_agree 62, source_unverified 5 |
+| end_51_MCQ | 75 | ai_generated 6, drafted 3, skipped 36, source_agree 24, source_disagree 3, source_unverified 3 |
+| end_50_MCQ | 71 | ai_generated 5, drafted 1, skipped 12, source_agree 42, source_disagree 8, source_unverified 3 |
+| end_49_MCQ | 38 | ai_generated 1, drafted 1, source_agree 27, source_disagree 9 |
+| end_47_MCQ | 63 | drafted 1, source_agree 58, source_disagree 4 |
+| end_46_MCQ | 51 | ai_generated 1, source_agree 47, source_disagree 1, source_unverified 2 |
+| end_45_MCQ | 61 | ai_generated 7, source_agree 48, source_disagree 4, source_unverified 2 |
+| end_44_MCQ | 48 | source_agree 46, source_disagree 1, source_unverified 1 |
+| end_42-43_MCQ | 154 | ai_generated 4, drafted 1, skipped 1, source_agree 127, source_disagree 21 |
+- เฉลยทุกรุ่นอ่านด้วยตา (ไฮไลต์/วง/กากบาท) บันทึกใน `<set>.key.json` (42-43 มี `keyread.txt`)
+- 42-43 เป็นไฟล์รวม 2 รุ่น แสดงใน MedLib เป็นรุ่น 43 (`medlib_cohort`)
+- ยังไม่ทำ: Phase 4 cross-year (duplicate_group ข้ามรุ่น), สุ่มตรวจซ้ำ 10%, key2 ของรุ่น 45

@@ -1,0 +1,5413 @@
+{
+ "meta": {
+  "set_id": "43_MCQ",
+  "block": "END",
+  "cohort": 43,
+  "type": "MCQ",
+  "title": "MCQ Endocrine · Med PSU 42-43",
+  "n_source_items": 154,
+  "skipped": [
+   "16"
+  ],
+  "generated_by": "auditor/tools/build_outputs.py — do not edit by hand"
+ },
+ "questions": [
+  {
+   "id": "END-43-MCQ-001",
+   "block": "END",
+   "cohort": 43,
+   "n": 1,
+   "type": "MCQ",
+   "stem": "In which organelle, peptide prohormone is cleavage into active hormone?",
+   "options": {
+    "A": "Mitochondria",
+    "B": "SER",
+    "C": "RER",
+    "D": "Golgi apparatus",
+    "E": "vesicle"
+   },
+   "answer": "E",
+   "answer_status": "disputed",
+   "explanation": "vesicle — prohormone convertase ตัด prohormone ที่ trans-Golgi ต่อเนื่องใน secretory vesicle (Golgi apparatus ตาม lecture)\n⚠️ เฉลยขัดกับ AI",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      1
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      1
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_001"
+  },
+  {
+   "id": "END-43-MCQ-002",
+   "block": "END",
+   "cohort": 43,
+   "n": 2,
+   "type": "MCQ",
+   "stem": "In the first step of steroid hormone synthesis, cholesterol is converted into which substance?",
+   "options": {
+    "A": "Low density lipid",
+    "B": "Fatty acid",
+    "C": "Pregnenolone",
+    "D": "Cholesteryl ester",
+    "E": "Corticosterone"
+   },
+   "answer": "C",
+   "answer_status": "verified",
+   "explanation": "Pregnenolone — ขั้นแรกของ steroidogenesis: cholesterol → pregnenolone (CYP11A1)\n⚠️ ช้อยส์ E AI เติมให้ครบ 5 ตัว",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      1
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      1
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_002"
+  },
+  {
+   "id": "END-43-MCQ-003",
+   "block": "END",
+   "cohort": 43,
+   "n": 3,
+   "type": "MCQ",
+   "stem": "What precursor is used to produce IP3 and DAG following activation of target cell by peptide hormone via Phospholipase C?",
+   "options": {
+    "A": "Phospholipid",
+    "B": "Arachidonic acid",
+    "C": "Prostaglandin",
+    "D": "Triglyceride",
+    "E": "Cholesteryl ester"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "Phospholipid — PLC ตัด PIP2 (membrane phospholipid) เป็น IP3 + DAG\n⚠️ ช้อยส์ E AI เติมให้ครบ 5 ตัว",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_003"
+  },
+  {
+   "id": "END-43-MCQ-005",
+   "block": "END",
+   "cohort": 43,
+   "n": 5,
+   "type": "MCQ",
+   "stem": "Which of the following is the mechanism of action of steroid hormones on target cells?",
+   "options": {
+    "A": "Increase cAMP via a membrane GPCR",
+    "B": "Open ligand-gated Ca²⁺ channels",
+    "C": "Activate receptor tyrosine kinase",
+    "D": "Bind an intracellular receptor and regulate gene transcription",
+    "E": "Activate phospholipase C"
+   },
+   "answer": "D",
+   "answer_status": "draft",
+   "explanation": "Bind intracellular receptor → gene transcription — steroid ละลายในไขมัน ผ่าน membrane → จับ receptor ใน cytoplasm/nucleus → hormone-receptor complex จับ HRE บน DNA → transcription → โปรตีนใหม่ (ออกฤทธิ์ช้า ชั่วโมง–วัน)\nTrap: cAMP/IP₃ เป็น second messenger ของ peptide hormone\n⚠️ AI เขียนข้อนี้ขึ้นใหม่จากโน้ตความจำในต้นฉบับ",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_005"
+  },
+  {
+   "id": "END-43-MCQ-006",
+   "block": "END",
+   "cohort": 43,
+   "n": 6,
+   "type": "MCQ",
+   "stem": "Which of following regulation is categorized as a positive feedback?",
+   "options": {
+    "A": "effect of beta cell of pancreas on gluconeogenesis by liver",
+    "B": "effect of alpha cell of pancreas on gluconeogenesis by liver",
+    "C": "effect of cervix stretching on oxytocin secretion",
+    "D": "interaction between TSH and TH secretion",
+    "E": "interaction between GHRH and GH secretion"
+   },
+   "answer": "C",
+   "answer_status": "verified",
+   "explanation": "effect of cervix stretching on oxytocin secretion — Ferguson reflex: cervix stretch → oxytocin → contraction → stretch มากขึ้น",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_006"
+  },
+  {
+   "id": "END-43-MCQ-007",
+   "block": "END",
+   "cohort": 43,
+   "n": 7,
+   "type": "MCQ",
+   "stem": "Which hormone diffuses to ISF and doesn't bind to binding protein?",
+   "options": {
+    "A": "Cortisol",
+    "B": "Aldosterone",
+    "C": "Estrogen",
+    "D": "Glucagon",
+    "E": "Thyroxine"
+   },
+   "answer": "D",
+   "answer_status": "verified",
+   "explanation": "Glucagon — glucagon (peptide) ละลายน้ำ ไม่จับ binding protein; steroid/thyroid จับ",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      3
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_007"
+  },
+  {
+   "id": "END-43-MCQ-008",
+   "block": "END",
+   "cohort": 43,
+   "n": 8,
+   "type": "MCQ",
+   "stem": "Which is the following condition has inhibitory effect on the releasing of GH?",
+   "options": {
+    "A": "Decrease blood glucose",
+    "B": "Deep sleep",
+    "C": "Starvation",
+    "D": "Trauma",
+    "E": "Increase blood fatty acid"
+   },
+   "answer": "E",
+   "answer_status": "verified",
+   "explanation": "Increase blood fatty acid — FFA สูงยับยั้ง GH; hypoglycemia, deep sleep, starvation, trauma กระตุ้น",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      3
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_008"
+  },
+  {
+   "id": "END-43-MCQ-009",
+   "block": "END",
+   "cohort": 43,
+   "n": 9,
+   "type": "MCQ",
+   "stem": "Which of following is correct about negative feedback of growth hormone?",
+   "options": {
+    "A": "Inhibiting somatostatin by IGF-1",
+    "B": "inhibiting somatostatin by GH",
+    "C": "Inhibiting GH releasing hormone by IGF-1",
+    "D": "Stimulating somatotroph by IGF-1",
+    "E": "Stimulating somatotroph by GH"
+   },
+   "answer": "C",
+   "answer_status": "verified",
+   "explanation": "Inhibiting GH releasing hormone by IGF-1 — IGF-1 feedback ยับยั้ง GHRH และ somatotroph กระตุ้น somatostatin",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      3
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_009"
+  },
+  {
+   "id": "END-43-MCQ-010",
+   "block": "END",
+   "cohort": 43,
+   "n": 10,
+   "type": "MCQ",
+   "stem": "What happen in the endocrine system when feeling thirsty?",
+   "options": {
+    "A": "Decrease of ADH secretion",
+    "B": "Increase of blood ANP level",
+    "C": "Increase of nerve impulse in axon of ADH neuron",
+    "D": "Increase in size of ADH neuron at supraoptic nuclei",
+    "E": "Increase in size of ADH neuron at paraventricular nuclei"
+   },
+   "answer": "C",
+   "answer_status": "verified",
+   "explanation": "Increase of nerve impulse in axon of ADH neuron — กระหายน้ำ/hyperosmolality → ADH neuron firing ↑",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      4
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      4
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_010"
+  },
+  {
+   "id": "END-43-MCQ-011",
+   "block": "END",
+   "cohort": 43,
+   "n": 11,
+   "type": "MCQ",
+   "stem": "Which of the followings is the milk ejection mechanism in breast feeding?",
+   "options": {
+    "A": "The oxytocin neuron is inhibited",
+    "B": "Oxytocin stimulates the milk production",
+    "C": "Nerve impulse in thalamus is increased",
+    "D": "Myoepithelial cells in the mammary gland contract",
+    "E": "Prolactin causes milk ejection"
+   },
+   "answer": "D",
+   "answer_status": "verified",
+   "explanation": "Myoepithelial cells in the mammary gland contract — oxytocin → myoepithelial contraction\n⚠️ ช้อยส์ E AI เติมให้ครบ 5 ตัว",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      4
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      4
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_011"
+  },
+  {
+   "id": "END-43-MCQ-012",
+   "block": "END",
+   "cohort": 43,
+   "n": 12,
+   "type": "MCQ",
+   "stem": "When Asian people move to north pole, what is the direct effect that stimulates the increasing of thyroid hormone pathway?",
+   "options": {
+    "A": "Stimulation of hypothalamus",
+    "B": "Inhibition of hypothalamus",
+    "C": "Stimulation of pituitary gland",
+    "D": "Inhibition of pituitary gland",
+    "E": "Stimulation of thyroid gland"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "Stimulation of hypothalamus — อากาศหนาว → hypothalamus หลั่ง TRH ↑",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      4
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      4
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_012"
+  },
+  {
+   "id": "END-43-MCQ-013",
+   "block": "END",
+   "cohort": 43,
+   "n": 13,
+   "type": "MCQ",
+   "stem": "What mechanism is suppressed by excessive intake of raw cabbage that might lead to thyroid goiter?",
+   "options": {
+    "A": "Peroxidase activity",
+    "B": "Iodide trapping",
+    "C": "Iodide absorption at stomach",
+    "D": "TSH secretion",
+    "E": "Deiodination"
+   },
+   "answer": "B",
+   "answer_status": "verified",
+   "explanation": "Iodide trapping — goitrogen ในกะหล่ำ (thiocyanate) ยับยั้ง iodide trapping (goitrin ยับยั้ง TPO)",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      5
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      5
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_013"
+  },
+  {
+   "id": "END-43-MCQ-014",
+   "block": "END",
+   "cohort": 43,
+   "n": 14,
+   "type": "MCQ",
+   "stem": "Which following substance mediated of negative feedback Thyroid-stimulating hormone?",
+   "options": {
+    "A": "Fatty acids",
+    "B": "Glucose",
+    "C": "Thyroxine",
+    "D": "Thyroid-stimulating hormone",
+    "E": "Thyroid-releasing hormone"
+   },
+   "answer": "C",
+   "answer_status": "verified",
+   "explanation": "Thyroxine — thyroxine (T4/T3) feedback ยับยั้ง TSH",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      5
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      5
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_014"
+  },
+  {
+   "id": "END-43-MCQ-015",
+   "block": "END",
+   "cohort": 43,
+   "n": 15,
+   "type": "MCQ",
+   "stem": "Autoimmune disease and TSI level elevate, what would be found?",
+   "options": {
+    "A": "High TSH",
+    "B": "High TRH",
+    "C": "Low TSH",
+    "D": "Low T3",
+    "E": "Low TSI receptor expression"
+   },
+   "answer": "C",
+   "answer_status": "verified",
+   "explanation": "Low TSH — TSI กระตุ้น TSH receptor → T4/T3 สูง → TSH ต่ำ\n⚠️ ช้อยส์ E AI เติมให้ครบ 5 ตัว",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      5
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      5
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_015"
+  },
+  {
+   "id": "END-43-MCQ-017",
+   "block": "END",
+   "cohort": 43,
+   "n": 17,
+   "type": "MCQ",
+   "stem": "Hormone from which part of pituitary gland is carried by portal circulation?",
+   "options": {
+    "A": "Par distalis",
+    "B": "Par Intermedia",
+    "C": "Par nervosa",
+    "D": "Par terbularis",
+    "E": "Par infundibulum"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "Par distalis — hypophyseal portal นำ hypothalamic hormone ไป pars distalis (anterior pituitary)",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      6
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      6
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_017"
+  },
+  {
+   "id": "END-43-MCQ-018",
+   "block": "END",
+   "cohort": 43,
+   "n": 18,
+   "type": "MCQ",
+   "stem": "Which of the following hormone is produced by adrenal medulla?",
+   "options": {
+    "A": "Pregnenolone",
+    "B": "Dihydroepiandrosterone",
+    "C": "Dopamine",
+    "D": "Deoxycorticosterone",
+    "E": "Androstenedione"
+   },
+   "answer": "C",
+   "answer_status": "verified",
+   "explanation": "Dopamine — adrenal medulla สร้าง catecholamine (รวม dopamine)",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      6
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      6
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_018"
+  },
+  {
+   "id": "END-43-MCQ-019",
+   "block": "END",
+   "cohort": 43,
+   "n": 19,
+   "type": "MCQ",
+   "stem": "Catecholamines สรWางจากเซลล_ไหน?",
+   "options": {
+    "A": "Delta-cell",
+    "B": "Beta-cell",
+    "C": "Chromaffin cell",
+    "D": "C-cell",
+    "E": "Follicular cell"
+   },
+   "answer": "C",
+   "answer_status": "verified",
+   "explanation": "Chromaffin cell — chromaffin cell",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      7
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      7
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_019"
+  },
+  {
+   "id": "END-43-MCQ-021",
+   "block": "END",
+   "cohort": 43,
+   "n": 21,
+   "type": "MCQ",
+   "stem": "ตำแหนfงของ thyroid gland อยูfระดับไหน?",
+   "options": {
+    "A": "C5 - T1",
+    "B": "C1 - C2",
+    "C": "C1 - C5",
+    "D": "T1 - T5",
+    "E": "None of above"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "C5 - T1 — thyroid อยู่ระดับ C5–T1",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      7
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      7
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_021"
+  },
+  {
+   "id": "END-43-MCQ-022",
+   "block": "END",
+   "cohort": 43,
+   "n": 22,
+   "type": "MCQ",
+   "stem": "Which is the following condition stimulate aldosterone?",
+   "options": {
+    "A": "High levels of extracellular K",
+    "B": "High levels of ANP",
+    "C": "High blood pressure in the afferent arteriole of glomeruli",
+    "D": "Low levels of angiotensin II",
+    "E": "Low activity of renal sympathetic activity"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "High levels of extracellular K — K สูงกระตุ้น aldosterone โดยตรง",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      7
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      7
+     ]
+    }
+   ],
+   "tags": [
+    "end-4243-aldosterone-stim"
+   ],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_022"
+  },
+  {
+   "id": "END-43-MCQ-023",
+   "block": "END",
+   "cohort": 43,
+   "n": 23,
+   "type": "MCQ",
+   "stem": "Which of the following is the biomarker for pheochromocytoma?",
+   "options": {
+    "A": "Calcitonin",
+    "B": "Chromogranin",
+    "C": "DOC",
+    "D": "Tyrosine hydrolase",
+    "E": "PMNT"
+   },
+   "answer": "E",
+   "answer_status": "disputed",
+   "explanation": "PMNT — chromogranin A เป็น biomarker ของ NET/pheochromocytoma\n⚠️ เฉลยขัดกับ AI",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      8
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      8
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_023"
+  },
+  {
+   "id": "END-43-MCQ-024",
+   "block": "END",
+   "cohort": 43,
+   "n": 24,
+   "type": "MCQ",
+   "stem": "Why cannot zona fasiculata and zona reticularis cannot produce aldosterone?",
+   "options": {
+    "A": "Lack of CYP11A1",
+    "B": "Lack of CYP21A1",
+    "C": "Lack of CYP11B2",
+    "D": "Lack of 3b-HSD",
+    "E": "Lack of CYP17"
+   },
+   "answer": "C",
+   "answer_status": "verified",
+   "explanation": "Lack of CYP11B2 — zona fasciculata/reticularis ไม่มี aldosterone synthase (CYP11B2)",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      8
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      8
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_024"
+  },
+  {
+   "id": "END-43-MCQ-025",
+   "block": "END",
+   "cohort": 43,
+   "n": 25,
+   "type": "MCQ",
+   "stem": "25 years-old women BP 155/95 mmHg Eat licorice 3 days per week ลด 3B-HSD type2 อะไรคือสาเหตุของ BP สูง?",
+   "options": {
+    "A": "Catecholamine effect",
+    "B": "Glucocorticoid effect to cortisol",
+    "C": "Glucocorticoid effect to cortisone",
+    "D": "Mineralocorticoid effect to cortisol",
+    "E": "Mineralocorticoid effect to aldosterone"
+   },
+   "answer": "D",
+   "answer_status": "verified",
+   "explanation": "Mineralocorticoid effect to cortisol — licorice (glycyrrhizin) ยับยั้ง 11β-HSD2 → cortisol จับ MR (mineralocorticoid effect ของ cortisol)",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      8
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      8
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_025"
+  },
+  {
+   "id": "END-43-MCQ-026",
+   "block": "END",
+   "cohort": 43,
+   "n": 26,
+   "type": "MCQ",
+   "stem": "Which is the following condition stimulate aldosterone?",
+   "options": {
+    "A": "High levels of extracellular K",
+    "B": "High levels of ANP",
+    "C": "High blood pressure in the afferent arteriole of glomeruli",
+    "D": "Low levels of angiotensin II",
+    "E": "Low activity of renal sympathetic activity"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "High levels of extracellular K — ข้อซ้ำกับข้อ 22",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      9
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      9
+     ]
+    }
+   ],
+   "tags": [
+    "end-4243-aldosterone-stim"
+   ],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_026"
+  },
+  {
+   "id": "END-43-MCQ-028",
+   "block": "END",
+   "cohort": 43,
+   "n": 28,
+   "type": "MCQ",
+   "stem": "What is the physiological effect of cortisol?",
+   "options": {
+    "A": "Increase protein synthesis",
+    "B": "Increase sensitivity to insulin",
+    "C": "Decrease glucose utilization",
+    "D": "Decrease central fat deposit",
+    "E": "Decrease amino acid derived gluconeogenesis"
+   },
+   "answer": "C",
+   "answer_status": "verified",
+   "explanation": "Decrease glucose utilization — cortisol ลด peripheral glucose utilization",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      9
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      9
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_028"
+  },
+  {
+   "id": "END-43-MCQ-029",
+   "block": "END",
+   "cohort": 43,
+   "n": 29,
+   "type": "MCQ",
+   "stem": "ขWอใดตfอไปนี้ เปyน rate limiting step ในการสังเคราะห_ cortisol?",
+   "options": {
+    "A": "conversion of cholesterol to pregnenolone",
+    "B": "conversion of progesterone to 17-hydroxyprogesterone",
+    "C": "conversion of 17-hydroxyprogesterone to 11-deoxycortisol",
+    "D": "conversion of 11-deoxycortisol to cortisol",
+    "E": "conversion of pregnenolone to progesterone"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "conversion of cholesterol to pregnenolone — rate-limiting: cholesterol → pregnenolone (StAR/CYP11A1)\n⚠️ ช้อยส์ E AI เติมให้ครบ 5 ตัว",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      9
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      9
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_029"
+  },
+  {
+   "id": "END-43-MCQ-030",
+   "block": "END",
+   "cohort": 43,
+   "n": 30,
+   "type": "MCQ",
+   "stem": "ในคนที่เปyน primary aldosteronism มีอาการอยfางไร?",
+   "options": {
+    "A": "Hypertension",
+    "B": "Hyponatremia",
+    "C": "Hyperkalemia",
+    "D": "Metabolic acidosis",
+    "E": "Edema"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "Hypertension — primary aldosteronism → hypertension (K ต่ำ, alkalosis)\n⚠️ ช้อยส์ E AI เติมให้ครบ 5 ตัว",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      10
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      10
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_030"
+  },
+  {
+   "id": "END-43-MCQ-031",
+   "block": "END",
+   "cohort": 43,
+   "n": 31,
+   "type": "MCQ",
+   "stem": "What is the consequence of deficiency of 21a-hydroxylase?",
+   "options": {
+    "A": "Increasing of ATCH level",
+    "B": "Increasing of cortisol level",
+    "C": "Increasing of Aldosterone level",
+    "D": "Decreasing of ATCH level",
+    "E": "Decreasing of Androstenedione level"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "Increasing of ATCH level — 21-OHD → cortisol ↓ → ACTH ↑",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      10
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      10
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_031"
+  },
+  {
+   "id": "END-43-MCQ-032",
+   "block": "END",
+   "cohort": 43,
+   "n": 32,
+   "type": "MCQ",
+   "stem": "In post-menopause the ovaries are unable to produce estrogen, however, there are hormone that compensate the lack of estrogen production. Which of the following is an important precursor of estrogen for post-menopause?",
+   "options": {
+    "A": "Cortisol",
+    "B": "Aldosterone",
+    "C": "Androgen",
+    "D": "Deoxycorticosterone",
+    "E": "Progesterone"
+   },
+   "answer": "C",
+   "answer_status": "verified",
+   "explanation": "Androgen — androgen (androstenedione) จาก adrenal → aromatase ที่ adipose → estrone",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      10
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      10
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_032"
+  },
+  {
+   "id": "END-43-MCQ-033",
+   "block": "END",
+   "cohort": 43,
+   "n": 33,
+   "type": "MCQ",
+   "stem": "38 years old truck driver difficulty using side mirror. No medication problem before. Found Bilateral hemianopia. Which is pathological lesion?",
+   "options": {
+    "A": "Pituitary adenoma",
+    "B": "Lymphoma",
+    "C": "Astrocytoma",
+    "D": "Langerhans cell histiocytosis",
+    "E": "Meningioma"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "Pituitary adenoma — bitemporal hemianopia = pituitary adenoma กด optic chiasm\n⚠️ ช้อยส์ E AI เติมให้ครบ 5 ตัว",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      11
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      11
+     ]
+    }
+   ],
+   "tags": [
+    "end-4243-pituitary-adenoma"
+   ],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_033"
+  },
+  {
+   "id": "END-43-MCQ-034",
+   "block": "END",
+   "cohort": 43,
+   "n": 34,
+   "type": "MCQ",
+   "stem": "The 10-day boy weight 2.9 kg (weight born 3.2 kg) PE: dry skin hyperpigmentation. Na+ level = 125, K+ level = 6.5, 17-hydroxyprogesterone (normal<300) What is gross finding in patient?",
+   "options": {
+    "A": "Atrophy",
+    "B": "Bilateral diffuse enlargement",
+    "C": "Nodular hyperplasia",
+    "D": "One-sided enlargement",
+    "E": "Coagulative necrosis"
+   },
+   "answer": "B",
+   "answer_status": "verified",
+   "explanation": "Bilateral diffuse enlargement — CAH → bilateral diffuse enlargement",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      11
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      11
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_034"
+  },
+  {
+   "id": "END-43-MCQ-035",
+   "block": "END",
+   "cohort": 43,
+   "n": 35,
+   "type": "MCQ",
+   "stem": "หญิง 40 ป‡ เหนื่อย อfอนเพลีย เบื่ออาหาร Hyperpigmentation Na+ = 128, K+ = 6.5, CI- CO2 = 16, Cortisol = 2.5, ACTH = 225. What is the most likely diagnosis?",
+   "options": {
+    "A": "Conn disease",
+    "B": "Addison disease",
+    "C": "Cushing syndrome",
+    "D": "Sheehan syndrome",
+    "E": "Waterhouse-Friderichsen syndrome"
+   },
+   "answer": "B",
+   "answer_status": "verified",
+   "explanation": "Addison disease — Addison\n⚠️ ช้อยส์ E AI เติมให้ครบ 5 ตัว",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      11
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      11
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_035"
+  },
+  {
+   "id": "END-43-MCQ-036",
+   "block": "END",
+   "cohort": 43,
+   "n": 36,
+   "type": "MCQ",
+   "stem": "ผูWหญิง ทWอง GA 38 weeks มี vaginal bleeding ตัดรก มีความดันต่ำ 4 ชม ใหWเลือด 10 packed RBC unit ตfอมาใหW นมบุตรไมfไดW ไมfมี normal menstruation period ตรวจ LAB hyponatremia, hyperkalemia, hypoglycemia คนนี้เปyนไร ถามวfาเกิดจากอะไร",
+   "options": {
+    "A": "Pituitary necrosis",
+    "B": "Amniotic fluid embolism",
+    "C": "Acute renal injury",
+    "D": "Subacute thyroiditis",
+    "E": "Postpartum thyroiditis"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "Pituitary necrosis — Sheehan (postpartum pituitary necrosis)\n⚠️ ช้อยส์ E AI เติมให้ครบ 5 ตัว",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      12
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      12
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_036"
+  },
+  {
+   "id": "END-43-MCQ-037",
+   "block": "END",
+   "cohort": 43,
+   "n": 37,
+   "type": "MCQ",
+   "stem": "38 years old truck driver difficulty using side mirror. No medication problem before. Found Bilateral hemianopia. Which is pathological lesion?",
+   "options": {
+    "A": "Pituitary adenoma",
+    "B": "Lymphoma",
+    "C": "Astrocytoma",
+    "D": "Langerhans cell histiocytosis",
+    "E": "Meningioma"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "Pituitary adenoma — bitemporal hemianopia = pituitary adenoma\n⚠️ ช้อยส์ E AI เติมให้ครบ 5 ตัว",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      12
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      12
+     ]
+    }
+   ],
+   "tags": [
+    "end-4243-pituitary-adenoma"
+   ],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_037"
+  },
+  {
+   "id": "END-43-MCQ-038",
+   "block": "END",
+   "cohort": 43,
+   "n": 38,
+   "type": "MCQ",
+   "stem": "32 years old woman had complained constant back pain over past month. Signs muscle weakness, weight gain, PE : BP 165/110 mmHg. Lab a glucose serum 155 mg/dL",
+   "options": {
+    "A": "Pheochromocytoma",
+    "B": "Adrenal cortical carcinoma",
+    "C": "Medullary carcinoma",
+    "D": "Anaplastic thyroid carcinoma",
+    "E": "Conn syndrome"
+   },
+   "answer": "B",
+   "answer_status": "verified",
+   "explanation": "Adrenal cortical carcinoma — Cushing (weight gain, HT, hyperglycemia, muscle weakness) จาก adrenocortical carcinoma\n⚠️ ช้อยส์ E AI เติมให้ครบ 5 ตัว",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      12
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      12
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_038"
+  },
+  {
+   "id": "END-43-MCQ-039",
+   "block": "END",
+   "cohort": 43,
+   "n": 39,
+   "type": "MCQ",
+   "stem": "A 2 cm oval mass in left adrenal gland is accidentally found during the surgical removal of renal stone in a 50 years old man. What is the most likely pathogenic lesion?",
+   "options": {
+    "A": "Glaucoma",
+    "B": "Adrenal cyst",
+    "C": "Cortical adenoma",
+    "D": "Follicular adenoma",
+    "E": "Pheochromocytoma"
+   },
+   "answer": "B",
+   "answer_status": "disputed",
+   "explanation": "Adrenal cyst — incidental adrenal mass 2 cm = cortical adenoma\n⚠️ ช้อยส์ E AI เติมให้ครบ 5 ตัว · เฉลยขัดกับ AI",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      13
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      13
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_039"
+  },
+  {
+   "id": "END-43-MCQ-040",
+   "block": "END",
+   "cohort": 43,
+   "n": 40,
+   "type": "MCQ",
+   "stem": "Rubbery firm nodule in the right lobe of thyroid gland. Cytotoxic smear from fine needle aspirations has shown up the follicular cell with nuclear groove. What is the most likely diagnosis?",
+   "options": {
+    "A": "Multinodular goiter",
+    "B": "Subacute thyroiditis",
+    "C": "Hashimoto disease",
+    "D": "Papillary carcinoma",
+    "E": "Follicular carcinoma"
+   },
+   "answer": "D",
+   "answer_status": "verified",
+   "explanation": "Papillary carcinoma — nuclear groove = papillary carcinoma",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      13
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      13
+     ]
+    }
+   ],
+   "tags": [
+    "end-4243-papillary"
+   ],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_040"
+  },
+  {
+   "id": "END-43-MCQ-041",
+   "block": "END",
+   "cohort": 43,
+   "n": 41,
+   "type": "MCQ",
+   "stem": "A 20 years old developed neck pain. On examination found swelling with mild tenderness at neck. Free T4 1.9 (สูง), TSH 0.05 (ต่ำ), which one is right?",
+   "options": {
+    "A": "Hashimoto's thyroiditis",
+    "B": "Multinucleated giant cell",
+    "C": "Caseous necrosis",
+    "D": "First is hypoglycemia >> hyperglycemia",
+    "E": "Lymphoid follicles with germinal centers"
+   },
+   "answer": "B",
+   "answer_status": "verified",
+   "explanation": "Multinucleated giant cell — subacute thyroiditis = multinucleated giant cell\n⚠️ ช้อยส์ E AI เติมให้ครบ 5 ตัว",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      13
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      13
+     ]
+    }
+   ],
+   "tags": [
+    "end-4243-subacute"
+   ],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_041"
+  },
+  {
+   "id": "END-43-MCQ-042",
+   "block": "END",
+   "cohort": 43,
+   "n": 42,
+   "type": "MCQ",
+   "stem": "หญิง 30 ป‡ มาดWวยอาการคอโต พบ normal follicular cell มี hemosiderin macrophage colloid มีขนาด ใหญfขึ้น จงบอกรอยโรคที่เกิดขึ้น?",
+   "options": {
+    "A": "Normal thyroid",
+    "B": "Nodular goiter",
+    "C": "Thyroiditis",
+    "D": "Papillary carcinoma",
+    "E": "Thyroid neoplasm"
+   },
+   "answer": "B",
+   "answer_status": "verified",
+   "explanation": "Nodular goiter — colloid มาก + hemosiderin macrophage = nodular goiter",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      14
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      14
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_042"
+  },
+  {
+   "id": "END-43-MCQ-043",
+   "block": "END",
+   "cohort": 43,
+   "n": 43,
+   "type": "MCQ",
+   "stem": "A patient feels a lump in his neck. Fine-needle aspiration shows follicular cells with nuclear grooves. What is the diagnosis?",
+   "options": {
+    "A": "Multinodular goiter",
+    "B": "Subacute thyroiditis",
+    "C": "Hashimoto thyroiditis",
+    "D": "Papillary carcinoma",
+    "E": "Follicular carcinoma"
+   },
+   "answer": "D",
+   "answer_status": "draft",
+   "explanation": "Papillary carcinoma — nuclear groove, intranuclear pseudoinclusion, Orphan Annie eye = papillary thyroid carcinoma (ข้อซ้ำกับข้อ 40, 120)\nTrap: follicular carcinoma ต้องเห็น capsular/vascular invasion\n⚠️ AI เขียนข้อนี้ขึ้นใหม่จากโน้ตความจำในต้นฉบับ",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      14
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      14
+     ]
+    }
+   ],
+   "tags": [
+    "end-4243-papillary"
+   ],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_043"
+  },
+  {
+   "id": "END-43-MCQ-044",
+   "block": "END",
+   "cohort": 43,
+   "n": 44,
+   "type": "MCQ",
+   "stem": "ผูWหญิงเกิด goiterมา 1 เดือน, low T4, high TSH (ใหWคfา+คfาปกติมาใหW) positive autoantibody to thyroid ถามลักษณะทาง histology ที่เจอ",
+   "options": {
+    "A": "fibrosis with cystic change",
+    "B": "follicular hyperplasia and scalloped appearance",
+    "C": "lymphoid follicle and increased colloid",
+    "D": "lymphoid follicle and eosinophilic cytoplasm cell",
+    "E": "Multinucleated giant cells engulfing colloid"
+   },
+   "answer": "D",
+   "answer_status": "verified",
+   "explanation": "lymphoid follicle and eosinophilic cytoplasm cell — Hashimoto = lymphoid follicle + Hürthle cell\n⚠️ ช้อยส์ E AI เติมให้ครบ 5 ตัว",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      14
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      14
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_044"
+  },
+  {
+   "id": "END-43-MCQ-045",
+   "block": "END",
+   "cohort": 43,
+   "n": 45,
+   "type": "MCQ",
+   "stem": "คนไขWมาดWวยอาการ thyroid nodule หมอวินิจฉัยวfาเปyน Follicular carcinoma ถามวfา ลักษณะ pathology ที่พบเปyนอยfางไร?",
+   "options": {
+    "A": "Nuclear grooves",
+    "B": "Psammoma bodies",
+    "C": "Vascular invasion",
+    "D": "Orphan Annie eye nuclei",
+    "E": "Multinucleated giant cells"
+   },
+   "answer": "C",
+   "answer_status": "disputed",
+   "explanation": "Vascular invasion — \n⚠️ ช้อยส์ A, B, C, D, E AI เติมให้ครบ 5 ตัว · เฉลยขัดกับ AI",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      15
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      15
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_045"
+  },
+  {
+   "id": "END-43-MCQ-046",
+   "block": "END",
+   "cohort": 43,
+   "n": 46,
+   "type": "MCQ",
+   "stem": "A 60-year-old man, chronic renal failure, has serum calcium 6 (8-9.5), phosphate 7.5 (3.5- 5.5) mg/dl Which of the following is pathological effect?",
+   "options": {
+    "A": "Atrophy parathyroid gland",
+    "B": "Calcification of parathyroid gland",
+    "C": "Fibrosis of parathyroid gland",
+    "D": "Hyperplasia parathyroid gland",
+    "E": "Nodular one of parathyroid gland"
+   },
+   "answer": "D",
+   "answer_status": "verified",
+   "explanation": "Hyperplasia parathyroid gland — CKD → parathyroid hyperplasia\n⚠️ ช้อยส์ B AI เติมให้ครบ 5 ตัว",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      15
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      15
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_046"
+  },
+  {
+   "id": "END-43-MCQ-047",
+   "block": "END",
+   "cohort": 43,
+   "n": 47,
+   "type": "MCQ",
+   "stem": "คุณสมบัติของ apoprotein คืออะไร?",
+   "options": {
+    "A": "Beta helical structure",
+    "B": "Hydrophilic molecule",
+    "C": "Have Polar whole the molecule",
+    "D": "Interact with hormone receptor",
+    "E": "Non-covalent binding hydrophobic lipids"
+   },
+   "answer": "E",
+   "answer_status": "verified",
+   "explanation": "Non-covalent binding hydrophobic lipids — apolipoprotein เป็น amphipathic จับ lipid แบบ non-covalent",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      15
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      15
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_047"
+  },
+  {
+   "id": "END-43-MCQ-048",
+   "block": "END",
+   "cohort": 43,
+   "n": 48,
+   "type": "MCQ",
+   "stem": "ขWอใดเปลี่ยน nascent chylomicron เปyน mature chylomicron?",
+   "options": {
+    "A": "Bile salt",
+    "B": "2-monoacylglycerol",
+    "C": "LPL",
+    "D": "HDL",
+    "E": "Lymphatic system"
+   },
+   "answer": "D",
+   "answer_status": "verified",
+   "explanation": "HDL — HDL ให้ apoC-II และ apoE กับ nascent chylomicron",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      16
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      16
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_048"
+  },
+  {
+   "id": "END-43-MCQ-050",
+   "block": "END",
+   "cohort": 43,
+   "n": 50,
+   "type": "MCQ",
+   "stem": "Which of the following is found in the serum of a lipoprotein depleted patient after food intake?",
+   "options": {
+    "A": "Chylomicron lever is lower than normal",
+    "B": "Triglyceride is lower than normal",
+    "C": "TG is normal",
+    "D": "TG is higher than normal",
+    "E": "VLDL is higher than normal"
+   },
+   "answer": "B",
+   "answer_status": "disputed",
+   "explanation": "Triglyceride is lower than normal — น่าจะหมายถึง LPL deficiency → หลังอาหาร TG สูงกว่าปกติ\n⚠️ เฉลยขัดกับ AI",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      16
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      16
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_050"
+  },
+  {
+   "id": "END-43-MCQ-051",
+   "block": "END",
+   "cohort": 43,
+   "n": 51,
+   "type": "MCQ",
+   "stem": "HDL is a \"good cholesterol.\" ถามวfาอะไรเปyนตัวชfวย transport จาก tissue to blood and back to tissue?",
+   "options": {
+    "A": "Acid Lipase",
+    "B": "Hepatic Lipase",
+    "C": "Apo A-1",
+    "D": "CETP",
+    "E": "ACAT"
+   },
+   "answer": "D",
+   "answer_status": "disputed",
+   "explanation": "CETP — apoA-I (activate LCAT, จับ ABCA1) ทำ reverse cholesterol transport\n⚠️ เฉลยขัดกับ AI",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      16
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      16
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_051"
+  },
+  {
+   "id": "END-43-MCQ-052",
+   "block": "END",
+   "cohort": 43,
+   "n": 52,
+   "type": "MCQ",
+   "stem": "ผูWป—วย เปyน uncontrollable grave's disease. What is side effect from using RAI?",
+   "options": {
+    "A": "Hypothyroidism",
+    "B": "Tremor",
+    "C": "Arrhythmia",
+    "D": "Thyroiditis",
+    "E": "Agranulocytosis"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "Hypothyroidism — RAI → hypothyroidism\n⚠️ ช้อยส์ E AI เติมให้ครบ 5 ตัว",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      17
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      17
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_052"
+  },
+  {
+   "id": "END-43-MCQ-053",
+   "block": "END",
+   "cohort": 43,
+   "n": 53,
+   "type": "MCQ",
+   "stem": "ผูWหญิง อายุ 25 ป‡ ตั้งครรภ_ อายุครรภ_ 12 week ใจสั่น T4 สูง TSH ต่ำ อะไรเปyน first-line drug?",
+   "options": {
+    "A": "Propranolol",
+    "B": "MMI",
+    "C": "PTU",
+    "D": "RAI",
+    "E": "Iodine"
+   },
+   "answer": "C",
+   "answer_status": "verified",
+   "explanation": "PTU — ตั้งครรภ์ไตรมาสแรก (12 สัปดาห์) → PTU",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      17
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      17
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_053"
+  },
+  {
+   "id": "END-43-MCQ-054",
+   "block": "END",
+   "cohort": 43,
+   "n": 54,
+   "type": "MCQ",
+   "stem": "What is PTU mechanism?",
+   "options": {
+    "A": "Inhibit organification",
+    "B": "Inhibit coupling",
+    "C": "Inhibit trapping",
+    "D": "Inhibit t3-->t4 conversion",
+    "E": "Inhibit thyroglobulin proteolysis"
+   },
+   "answer": "A",
+   "answer_status": "disputed",
+   "explanation": "Inhibit organification — PTU ยับยั้ง TPO (organification, coupling) + peripheral T4→T3\n⚠️ ผู้เฉลยวงไว้ 2 ตัว (A, B) · ช้อยส์ E AI เติมให้ครบ 5 ตัว · ต้นฉบับวงไว้หลายตัว",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      17
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      17
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_054"
+  },
+  {
+   "id": "END-43-MCQ-055",
+   "block": "END",
+   "cohort": 43,
+   "n": 55,
+   "type": "MCQ",
+   "stem": "Patient has uncontrolled grave disease. He has to treat with radioactive Iodine next week. But he used MMI before so he has to stop use it today. Why?",
+   "options": {
+    "A": "To increase blood vessel to thyroid gland",
+    "B": "To increase uptake Radioactive Iodine",
+    "C": "To decrease dose of Radioactive Iodine",
+    "D": "To decrease risk of severe hypothyroidism",
+    "E": "To prevent agranulocytosis"
+   },
+   "answer": "D",
+   "answer_status": "disputed",
+   "explanation": "To decrease risk of severe hypothyroidism — หยุด MMI ก่อน RAI 3–7 วัน เพื่อให้ต่อมจับ RAI ได้ดี\n⚠️ ช้อยส์ E AI เติมให้ครบ 5 ตัว · เฉลยขัดกับ AI",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      18
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      18
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_055"
+  },
+  {
+   "id": "END-43-MCQ-056",
+   "block": "END",
+   "cohort": 43,
+   "n": 56,
+   "type": "MCQ",
+   "stem": "ผูWป—วยหญิงอายุ 45 ป‡ กินยา prednisolone present with polyuria, weight loss. What is pathophysiology of this symptoms?",
+   "options": {
+    "A": "Decrease insulin secretion",
+    "B": "Increase gluconeogenesis",
+    "C": "Decrease vasopressin level",
+    "D": "Decrease renal water reabsorption",
+    "E": "Decrease glycogenolysis"
+   },
+   "answer": "B",
+   "answer_status": "verified",
+   "explanation": "Increase gluconeogenesis — prednisolone → steroid diabetes (gluconeogenesis ↑) → osmotic diuresis, weight loss",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      18
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      18
+     ]
+    }
+   ],
+   "tags": [
+    "end-4243-prednisolone-dm"
+   ],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_056"
+  },
+  {
+   "id": "END-43-MCQ-057",
+   "block": "END",
+   "cohort": 43,
+   "n": 57,
+   "type": "MCQ",
+   "stem": "What is the drug of choice to suppress ACTH production a diagnosis of Cushing's syndrome?",
+   "options": {
+    "A": "Hydrocortisone",
+    "B": "Dexamethasone",
+    "C": "Prednisolone",
+    "D": "Fludrocortisone",
+    "E": "Methylprednisolone"
+   },
+   "answer": "B",
+   "answer_status": "verified",
+   "explanation": "Dexamethasone — dexamethasone ใช้กด ACTH ใน dexamethasone suppression test\n⚠️ ช้อยส์ E AI เติมให้ครบ 5 ตัว",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      18
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      18
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_057"
+  },
+  {
+   "id": "END-43-MCQ-058",
+   "block": "END",
+   "cohort": 43,
+   "n": 58,
+   "type": "MCQ",
+   "stem": "45 years old woman take prednisolone 5mg 5 tab twice a day, presentation with polyuria and weight loss. What is mostly pathogenesis?",
+   "options": {
+    "A": "Decrease insulin secretion",
+    "B": "Decrease glycogenolysis",
+    "C": "Increase gluconeogenesis",
+    "D": "Decrease vasopressin secretion",
+    "E": "Decrease water reabsorption at renal"
+   },
+   "answer": "C",
+   "answer_status": "verified",
+   "explanation": "Increase gluconeogenesis — ข้อซ้ำกับข้อ 56",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      19
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      19
+     ]
+    }
+   ],
+   "tags": [
+    "end-4243-prednisolone-dm"
+   ],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_058"
+  },
+  {
+   "id": "END-43-MCQ-059",
+   "block": "END",
+   "cohort": 43,
+   "n": 59,
+   "type": "MCQ",
+   "stem": "A 31 years-old patient has taken prednisolone for 6 months to treat severe asthma. After 2 months of therapy, his physician gives slowly taper dose of prednisolone while inhaled corticosteroid. Why does the patient require taper dose?",
+   "options": {
+    "A": "To avoid rebound asthma",
+    "B": "To allow hypothalamus-pituitary axis recovery",
+    "C": "To suppress aldosterone secretion",
+    "D": "To minimize development hypothalamus-pituitary axis suppression",
+    "E": "To mimic normal cortisol secretion"
+   },
+   "answer": "B",
+   "answer_status": "verified",
+   "explanation": "To allow hypothalamus-pituitary axis recovery — taper เพื่อให้ HPA axis ฟื้นตัว",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      19
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      19
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_059"
+  },
+  {
+   "id": "END-43-MCQ-060",
+   "block": "END",
+   "cohort": 43,
+   "n": 60,
+   "type": "MCQ",
+   "stem": "A 55 years-old female with history its SLE treatment glucocorticoid for 1 year she has recently diagnosis osteoporosis what is the mechanism explain the patient",
+   "options": {
+    "A": "Increase apoptosis osteoclast",
+    "B": "Decrease osteoclast formation",
+    "C": "Decrease vitamin d production",
+    "D": "Increase calcium excretion",
+    "E": "Increase PTH secretion"
+   },
+   "answer": "D",
+   "answer_status": "verified",
+   "explanation": "Increase calcium excretion — glucocorticoid → urinary Ca ↑ + intestinal Ca absorption ↓ + osteoblast ↓",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      19
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      19
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_060"
+  },
+  {
+   "id": "END-43-MCQ-061",
+   "block": "END",
+   "cohort": 43,
+   "n": 61,
+   "type": "MCQ",
+   "stem": "Lab result showed Plasma Aldosterone 1320 pg/ml (normal 100-300 pg/ml) Plasma Renin Activity 0.5 pg/min/ml (normal 1.1- 3 pg/min/ml) Plasma Aldosterone : Renin (ARR) > 2600 What is likely diagnosis?",
+   "options": {
+    "A": "Conn disease",
+    "B": "Addison disease",
+    "C": "Cushing disease",
+    "D": "Adrenal insufficiency",
+    "E": "Congenital adrenal hyperplasia"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "Conn disease — aldosterone สูง renin ต่ำ ARR สูงมาก = Conn",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      20
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      20
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_061"
+  },
+  {
+   "id": "END-43-MCQ-062",
+   "block": "END",
+   "cohort": 43,
+   "n": 62,
+   "type": "MCQ",
+   "stem": "Women 60 years present headache, palpitation and excessive sweating. PE: PR 140/min BP 200/120 mmHg, CT brain: mass 3 cm right adrenal medulla. Which following substance is produced by this tumor?",
+   "options": {
+    "A": "Aldosterone",
+    "B": "DHEA",
+    "C": "Metanephrine",
+    "D": "Progesterone",
+    "E": "Cortisol"
+   },
+   "answer": "C",
+   "answer_status": "verified",
+   "explanation": "Metanephrine — pheochromocytoma → catecholamine/metanephrine",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      20
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      20
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_062"
+  },
+  {
+   "id": "END-43-MCQ-063",
+   "block": "END",
+   "cohort": 43,
+   "n": 63,
+   "type": "MCQ",
+   "stem": "A 30 year-old women present 10 kg weight gain in 3 months. PE : BP 150/100 mmHg , weight 80 kg , facial acne , abdominal obesity with purplish striae. Serum cortisol level at different time is shown below. Time : 8 am, 4 pm, 10.00 pm Serum cortisol (ug/ml) : 33.5, 34, 36.9 (respectively) Which of the followings is the correct interpretation ?",
+   "options": {
+    "A": "Normal response",
+    "B": "Peak nighttime cortisol",
+    "C": "Loss of diurnal variation",
+    "D": "Suppressible morning cortisol",
+    "E": "Non-suppressible morning cortisol"
+   },
+   "answer": "C",
+   "answer_status": "verified",
+   "explanation": "Loss of diurnal variation — Cushing → loss of diurnal variation",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      21
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      21
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_063"
+  },
+  {
+   "id": "END-43-MCQ-064",
+   "block": "END",
+   "cohort": 43,
+   "n": 64,
+   "type": "MCQ",
+   "stem": "What is the consequence of bone resorption when PTH deficiency after parathyroidectomy?",
+   "options": {
+    "A": "Increase osteoid synthesis",
+    "B": "Increase OPG Production",
+    "C": "Increase RANKL excess in the osteoblast",
+    "D": "Decrease multinucleated osteoclast",
+    "E": "Decrease RANKL receptor on osteoclast"
+   },
+   "answer": "D",
+   "answer_status": "verified",
+   "explanation": "Decrease multinucleated osteoclast — PTH ขาด → RANKL ↓ → osteoclast ↓",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      21
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      21
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_064"
+  },
+  {
+   "id": "END-43-MCQ-065",
+   "block": "END",
+   "cohort": 43,
+   "n": 65,
+   "type": "MCQ",
+   "stem": "A 70 year-old man came for check up and his blood test reveals as shown Calcium 11.5 mg/dl (9-10) Phosphorus 5.1 mg/dl(2.4-4.2) What is the major factor explained this condition?",
+   "options": {
+    "A": "Klotho resistance",
+    "B": "Decrease calcitonin secretion",
+    "C": "Increase 1,25(OH)D3 synthesis",
+    "D": "Increase FGF-23 secretion",
+    "E": "Increase PTH secretion"
+   },
+   "answer": "C",
+   "answer_status": "verified",
+   "explanation": "Increase 1,25(OH)D3 synthesis — Ca สูง + PO4 สูง (PTH ถูกกด) → vitamin D (calcitriol) เกิน",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      21
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      21
+     ]
+    }
+   ],
+   "tags": [
+    "end-4243-ca-po4-high"
+   ],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_065"
+  },
+  {
+   "id": "END-43-MCQ-066",
+   "block": "END",
+   "cohort": 43,
+   "n": 66,
+   "type": "MCQ",
+   "stem": "A female doctor works indoor most of the time and rarely expose to sunlight Which found in this female?",
+   "options": {
+    "A": "Increase calcitonin production",
+    "B": "Increase plasma PO4 concentration",
+    "C": "Increase parathyroid secretion",
+    "D": "Increase 1,25(OH)2D3",
+    "E": "Decrease plasma calcium concentration"
+   },
+   "answer": "C",
+   "answer_status": "disputed",
+   "explanation": "Increase parathyroid secretion — ไม่ถูกแดด → vit D ขาด → Ca absorption ↓ → PTH ↑ (secondary)\n⚠️ ผู้เฉลยวงไว้ 2 ตัว (C, E) · ต้นฉบับวงไว้หลายตัว",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      22
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      22
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_066"
+  },
+  {
+   "id": "END-43-MCQ-067",
+   "block": "END",
+   "cohort": 43,
+   "n": 67,
+   "type": "MCQ",
+   "stem": "อะไรถูกคาดหวังวfาจะเกิดขึ้นในคนเปyน hyperparathyroidism?",
+   "options": {
+    "A": "Decreased 1,24,25(OH)3D3 conversion",
+    "B": "Increased 1(OH)D synthesis",
+    "C": "Decreased 1,25(OH)2D3 conversion",
+    "D": "Increased 25(OH)D3 conversion",
+    "E": "Decreased cholecalciferol synthesis"
+   },
+   "answer": "D",
+   "answer_status": "verified",
+   "explanation": "Increased 25(OH)D3 conversion — hyperparathyroidism → 1α-hydroxylase ↑ → การเปลี่ยน 25(OH)D3 เป็น 1,25(OH)2D3 เพิ่มขึ้น",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      22
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      22
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_067"
+  },
+  {
+   "id": "END-43-MCQ-068",
+   "block": "END",
+   "cohort": 43,
+   "n": 68,
+   "type": "MCQ",
+   "stem": "70 years old man came for check-up and found blood test results as shown Calcium 11.5 [normal 9.0-10.0] Phosphorus 5.1[normal 2.4-4.2] What is the major cause explained this condition?",
+   "options": {
+    "A": "Klotho resistant",
+    "B": "Decrease calcitonin secretion",
+    "C": "Increase parathyroid hormone secretion",
+    "D": "Increase 1,25(OH)2D3 synthesis",
+    "E": "Increase FGF-23 secretion"
+   },
+   "answer": "D",
+   "answer_status": "verified",
+   "explanation": "Increase 1,25(OH)2D3 synthesis — ข้อซ้ำกับข้อ 65: Ca สูง PO4 สูง → calcitriol เกิน",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      22
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      22
+     ]
+    }
+   ],
+   "tags": [
+    "end-4243-ca-po4-high"
+   ],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_068"
+  },
+  {
+   "id": "END-43-MCQ-069",
+   "block": "END",
+   "cohort": 43,
+   "n": 69,
+   "type": "MCQ",
+   "stem": "What change in blood parameter is found in non-treated diabetic patients?",
+   "options": {
+    "A": "Decrease keto acid",
+    "B": "Decrease HCO3-",
+    "C": "Increase pH",
+    "D": "Increase Cl-",
+    "E": "Decrease cholesterol"
+   },
+   "answer": "B",
+   "answer_status": "verified",
+   "explanation": "Decrease HCO3- — DM ที่ไม่รักษา → ketoacid ↑ → HCO3 ↓",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      23
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      23
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_069"
+  },
+  {
+   "id": "END-43-MCQ-071",
+   "block": "END",
+   "cohort": 43,
+   "n": 71,
+   "type": "MCQ",
+   "stem": "Which of the following is effect of glucagon?",
+   "options": {
+    "A": "Decrease plasma glucose",
+    "B": "Increase glycogenolysis",
+    "C": "Decrease gluconeogenesis",
+    "D": "Increase lipid uptake in adipose",
+    "E": "Increase TG synthesis in liver"
+   },
+   "answer": "B",
+   "answer_status": "verified",
+   "explanation": "Increase glycogenolysis — glucagon → glycogenolysis ↑\n⚠️ ช้อยส์ E AI เติมให้ครบ 5 ตัว",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      23
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      23
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_071"
+  },
+  {
+   "id": "END-43-MCQ-072",
+   "block": "END",
+   "cohort": 43,
+   "n": 72,
+   "type": "MCQ",
+   "stem": "What is effect of insulin to lipid metabolism?",
+   "options": {
+    "A": "Increased B-oxidation",
+    "B": "Decreases triglyceride synthesis in adipocyte",
+    "C": "Decreased pyruvate level in liver",
+    "D": "Decreased acetyl-CoA levels in liver",
+    "E": "Increased lipoprotein lipase activity on adipocyte membrane"
+   },
+   "answer": "E",
+   "answer_status": "verified",
+   "explanation": "Increased lipoprotein lipase activity on adipocyte membrane — insulin เพิ่ม LPL ที่ adipose",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      23
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      23
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_072"
+  },
+  {
+   "id": "END-43-MCQ-073",
+   "block": "END",
+   "cohort": 43,
+   "n": 73,
+   "type": "MCQ",
+   "stem": "What is the mechanism of releasing insulin from B cell?",
+   "options": {
+    "A": "Decrease oxidation",
+    "B": "Close ATP-dependent K+ channel",
+    "C": "Close Ca+ channel",
+    "D": "Inhibit glucokinase",
+    "E": "Enhance endocytosis of insulin"
+   },
+   "answer": "B",
+   "answer_status": "verified",
+   "explanation": "Close ATP-dependent K+ channel — ปิด K-ATP → depolarization",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      24
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      24
+     ]
+    }
+   ],
+   "tags": [
+    "end-4243-insulin-release"
+   ],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_073"
+  },
+  {
+   "id": "END-43-MCQ-074",
+   "block": "END",
+   "cohort": 43,
+   "n": 74,
+   "type": "MCQ",
+   "stem": "Which of the following is a major cause of cellular dehydration in diabetic patients?",
+   "options": {
+    "A": "Osmotic pressure",
+    "B": "High blood cholesterol",
+    "C": "Acidosis",
+    "D": "Hyponatremia",
+    "E": "Low ECF bicarbonate"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "Osmotic pressure — hyperglycemia → osmotic pressure ดึงน้ำออกจากเซลล์",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      24
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      24
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_074"
+  },
+  {
+   "id": "END-43-MCQ-076",
+   "block": "END",
+   "cohort": 43,
+   "n": 76,
+   "type": "MCQ",
+   "stem": "46 year-old-man diagnosis DM2 with AIDS. He receive antidiabetic drug and Bactrim for diabetic treatment and prophylaxis of P. jiroveci pneumonia. After 2 day, he presents hypoglycemia. What diabetic drug cause this symptom?",
+   "options": {
+    "A": "Miglitol",
+    "B": "Metformin",
+    "C": "Glipizide",
+    "D": "Repaglinide",
+    "E": "Pioglitazone"
+   },
+   "answer": "C",
+   "answer_status": "disputed",
+   "explanation": "Glipizide — Bactrim (sulfamethoxazole) ยับยั้ง CYP2C9 → glipizide ↑ → hypoglycemia\n⚠️ ผู้เฉลยวงไว้ 2 ตัว (C, D) · ต้นฉบับวงไว้หลายตัว",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      24
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      24
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_076"
+  },
+  {
+   "id": "END-43-MCQ-077",
+   "block": "END",
+   "cohort": 43,
+   "n": 77,
+   "type": "MCQ",
+   "stem": "A 38-year-old woman with type 2 diabetes develops lactic acidosis after starting an oral antidiabetic drug. Which drug is responsible?",
+   "options": {
+    "A": "Metformin",
+    "B": "Acarbose",
+    "C": "Repaglinide",
+    "D": "Insulin lispro",
+    "E": "Pioglitazone"
+   },
+   "answer": "A",
+   "answer_status": "draft",
+   "explanation": "Metformin — biguanide ยับยั้ง hepatic gluconeogenesis จาก lactate → lactic acidosis (เสี่ยงใน CKD, hypoxia)\nTrap: secretagogue/insulin → hypoglycemia\n⚠️ AI เขียนข้อนี้ขึ้นใหม่จากโน้ตความจำในต้นฉบับ",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      25
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      25
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_077"
+  },
+  {
+   "id": "END-43-MCQ-078",
+   "block": "END",
+   "cohort": 43,
+   "n": 78,
+   "type": "MCQ",
+   "stem": "คนไขWไดWรับยาลดน้ำตาล ระดับยาคงที่ตลอด ยานั้นคือยาอะไร?",
+   "options": {
+    "A": "NPH",
+    "B": "Insulin glargine",
+    "C": "Detemir",
+    "D": "Insulin lispro",
+    "E": "Regular insulin"
+   },
+   "answer": "B",
+   "answer_status": "verified",
+   "explanation": "Insulin glargine — insulin glargine: peakless ระดับคงที่",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      25
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      25
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_078"
+  },
+  {
+   "id": "END-43-MCQ-079",
+   "block": "END",
+   "cohort": 43,
+   "n": 79,
+   "type": "MCQ",
+   "stem": "39 years-old man เปyนเบาหวานไดWรับยาเบาหวาน 2 ตัว ตfอมาเกิดอาการ hypoglycemia แกWไขโดย การใหW sucrose อาการไมfดีขึ้น ยารักษาเบาหวานที่ใหWคืออะไร?",
+   "options": {
+    "A": "Acarbose",
+    "B": "Glipizide",
+    "C": "Metformin",
+    "D": "Pioglitazone",
+    "E": "Sitagliptin"
+   },
+   "answer": "A",
+   "answer_status": "disputed",
+   "explanation": "Acarbose — \n⚠️ ช้อยส์ B, C, D, E AI เติมให้ครบ 5 ตัว · เฉลยขัดกับ AI",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      25
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      25
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_079"
+  },
+  {
+   "id": "END-43-MCQ-080",
+   "block": "END",
+   "cohort": 43,
+   "n": 80,
+   "type": "MCQ",
+   "stem": "19 years-old man hyperglycemia episode มา5ป‡ ตรวจไมfพบ c-peptide ใหWยาอะไร ?",
+   "options": {
+    "A": "Exenatide",
+    "B": "Regular insulin",
+    "C": "Metformin",
+    "D": "Pioglitazone",
+    "E": "Glyburide"
+   },
+   "answer": "B",
+   "answer_status": "verified",
+   "explanation": "Regular insulin — ไม่มี C-peptide (T1DM) → insulin",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      25
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      25
+     ]
+    }
+   ],
+   "tags": [
+    "end-4243-t1dm-insulin"
+   ],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_080"
+  },
+  {
+   "id": "END-43-MCQ-081",
+   "block": "END",
+   "cohort": 43,
+   "n": 81,
+   "type": "MCQ",
+   "stem": "The boy 15 years old recently diagnosed Type 1 diabetes, ใหWยาชนิดหนึ่งซึ่ง no peak but rather long plateau ถามวfายานั้นคือยาอะไร",
+   "options": {
+    "A": "Aspro insulin",
+    "B": "Regular insulin",
+    "C": "Lente insulin",
+    "D": "Insulin glargine",
+    "E": "NPH"
+   },
+   "answer": "D",
+   "answer_status": "verified",
+   "explanation": "Insulin glargine — glargine: no peak, long plateau",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      26
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      26
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_081"
+  },
+  {
+   "id": "END-43-MCQ-082",
+   "block": "END",
+   "cohort": 43,
+   "n": 82,
+   "type": "MCQ",
+   "stem": "DM type 2 ไดWรับ glyburide. What is main mechanism?",
+   "options": {
+    "A": "Increase releasing insulin",
+    "B": "Enhance renal clearance",
+    "C": "Enhance glucose uptake in muscle, adipose and liver",
+    "D": "Decrease intestinal carbohydrate absorption",
+    "E": "Decrease insulin resistance"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "Increase releasing insulin — glyburide → insulin release\n⚠️ ช้อยส์ C, D, E AI เติมให้ครบ 5 ตัว",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      26
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      26
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_082"
+  },
+  {
+   "id": "END-43-MCQ-083",
+   "block": "END",
+   "cohort": 43,
+   "n": 83,
+   "type": "MCQ",
+   "stem": "ด.ช. 14 ป‡มาน น้ำตาลสูงตรวจไมfเจอ c-peptide ควรใชWยาอะไร?",
+   "options": {
+    "A": "Metformin",
+    "B": "Regular insulin",
+    "C": "Pioglitazone",
+    "D": "Acarbose",
+    "E": "Glipizide"
+   },
+   "answer": "B",
+   "answer_status": "verified",
+   "explanation": "Regular insulin — C-peptide วัดไม่ได้ (T1DM) → insulin\n⚠️ ช้อยส์ E AI เติมให้ครบ 5 ตัว",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      26
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      26
+     ]
+    }
+   ],
+   "tags": [
+    "end-4243-t1dm-insulin"
+   ],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_083"
+  },
+  {
+   "id": "END-43-MCQ-084",
+   "block": "END",
+   "cohort": 43,
+   "n": 84,
+   "type": "MCQ",
+   "stem": "หญิงอายุ 47 monotherapy ใชWยาไปเกิด unconsciousness weakness glucose 41 mg/l เกิดจาก ยาอะไร?",
+   "options": {
+    "A": "Pioglitazone",
+    "B": "Pramlintide",
+    "C": "Voglibose",
+    "D": "Glibenclamide",
+    "E": "Metformin"
+   },
+   "answer": "B",
+   "answer_status": "disputed",
+   "explanation": "Pramlintide — \n⚠️ ช้อยส์ A, B, C, D, E AI เติมให้ครบ 5 ตัว · เฉลยขัดกับ AI",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      26
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      26
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_084"
+  },
+  {
+   "id": "END-43-MCQ-085",
+   "block": "END",
+   "cohort": 43,
+   "n": 85,
+   "type": "MCQ",
+   "stem": "A 60 years old with hypertension to present physician for a yearly. His lipid profile is LDL-c level 175 mg/dL. His physician want to lower LDL-c level. What the following medication to lower LDL-c?",
+   "options": {
+    "A": "HMG-coA reductase",
+    "B": "Bile acid sequestant",
+    "C": "NPC1L1 inhibitor",
+    "D": "Nicotinic acid",
+    "E": "Fibrate"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "HMG-coA reductase — LDL สูง → statin (HMG-CoA reductase inhibitor)",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      27
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      27
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_085"
+  },
+  {
+   "id": "END-43-MCQ-086",
+   "block": "END",
+   "cohort": 43,
+   "n": 86,
+   "type": "MCQ",
+   "stem": "45 years-old man with history of hyperlipidemia complains of general myalgia for 2 weeks. His laboratory data shows liver enzymes elevate. Which medication is thought to be cause of this symptoms?",
+   "options": {
+    "A": "Cholestyramine",
+    "B": "Cholesevelam",
+    "C": "Ezetimibe",
+    "D": "Niacin",
+    "E": "Simvastatin"
+   },
+   "answer": "E",
+   "answer_status": "verified",
+   "explanation": "Simvastatin — statin → myalgia + transaminase ↑",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      27
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      27
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_086"
+  },
+  {
+   "id": "END-43-MCQ-087",
+   "block": "END",
+   "cohort": 43,
+   "n": 87,
+   "type": "MCQ",
+   "stem": "A 50 years-old male has hypertriglyceridemia. Physician prescribe high-dose niacin and aspirin. The side effect physician is trying to avoid is mediated through what mechanism?",
+   "options": {
+    "A": "Macrophage degranulation",
+    "B": "Release of prostaglandin",
+    "C": "Immune complex respond",
+    "D": "Increase of Nitric oxide",
+    "E": "Neurologic control of cutaneous vasculature change"
+   },
+   "answer": "B",
+   "answer_status": "verified",
+   "explanation": "Release of prostaglandin — niacin flushing จาก prostaglandin → aspirin ป้องกัน",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      27
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      27
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_087"
+  },
+  {
+   "id": "END-43-MCQ-088",
+   "block": "END",
+   "cohort": 43,
+   "n": 88,
+   "type": "MCQ",
+   "stem": "Physician order cholestyramine แตfปžจจุบันผูWป—วยใชWยา propranolol อยูfแลWว ควรใหWคำแนะนำ ผูWป—วย อยfางไรเพื่อปŸองกัน drug interaction?",
+   "options": {
+    "A": "ทาน cholestyramine กnอนยา propranolol 1 ชม.",
+    "B": "ทานยา propranolol กnอน cholestyramine 1 ชม.",
+    "C": "ทาน cholestyramine กnอนนอนและยา propranolol กnอนมื้ออาหาร",
+    "D": "หยุด propranolol จนกวnา LDL จะลดลง",
+    "E": "ไมnใช} cholestyramine เพื่อป•องกัน drug interaction"
+   },
+   "answer": "B",
+   "answer_status": "verified",
+   "explanation": "ทานยา propranolol กnอน cholestyramine 1 ชม. — ยาอื่นกิน 1 ชม. ก่อน หรือ 4–6 ชม. หลัง cholestyramine",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      28
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      28
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_088"
+  },
+  {
+   "id": "END-43-MCQ-089",
+   "block": "END",
+   "cohort": 43,
+   "n": 89,
+   "type": "MCQ",
+   "stem": "Which one is the physiological positive feedback?",
+   "options": {
+    "A": "LH and estrogen after ovulation",
+    "B": "Uterine contraction and oxytocin secretion",
+    "C": "Glucagon stimulates glucose production",
+    "D": "Glucose stimulates insulin production",
+    "E": "Growth hormone and glucose"
+   },
+   "answer": "B",
+   "answer_status": "verified",
+   "explanation": "Uterine contraction and oxytocin secretion — oxytocin-uterine contraction (Ferguson reflex)",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      28
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      28
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_089"
+  },
+  {
+   "id": "END-43-MCQ-090",
+   "block": "END",
+   "cohort": 43,
+   "n": 90,
+   "type": "MCQ",
+   "stem": "What is the type of effect in glycerol production by hGH and dexamethasone?",
+   "options": {
+    "A": "Addition effect",
+    "B": "Synergistic effect",
+    "C": "Antagonist effect",
+    "D": "Summate effect",
+    "E": "Inhibitory effect"
+   },
+   "answer": "A",
+   "answer_status": "disputed",
+   "explanation": "Addition effect — GH และ glucocorticoid กระตุ้น lipolysis (glycerol) ร่วมกันแบบ permissive/synergistic\n⚠️ เฉลยขัดกับ AI",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      28
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      28
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_090"
+  },
+  {
+   "id": "END-43-MCQ-091",
+   "block": "END",
+   "cohort": 43,
+   "n": 91,
+   "type": "MCQ",
+   "stem": "What is the consequence phospholipase C activation?",
+   "options": {
+    "A": "Increases cAMP",
+    "B": "Decreased intracellular Ca2+",
+    "C": "Decreased diacylglycerol",
+    "D": "Activates adenylate cyclase",
+    "E": "Activates phosphokinase C"
+   },
+   "answer": "E",
+   "answer_status": "verified",
+   "explanation": "Activates phosphokinase C — PLC → DAG → PKC (+ IP3 → Ca)",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      29
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      29
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_091"
+  },
+  {
+   "id": "END-43-MCQ-092",
+   "block": "END",
+   "cohort": 43,
+   "n": 92,
+   "type": "MCQ",
+   "stem": "Where is the pituitary gland is located?",
+   "options": {
+    "A": "Sella turcica",
+    "B": "Occipital bone",
+    "C": "Foramen Magnum",
+    "D": "Frontal bone",
+    "E": "Lateral of hypothalamus"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "Sella turcica — sella turcica",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      29
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      29
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_092"
+  },
+  {
+   "id": "END-43-MCQ-093",
+   "block": "END",
+   "cohort": 43,
+   "n": 93,
+   "type": "MCQ",
+   "stem": "Which pituitary hormone has direct effect on the body, rather than trigger another endocrine gland?",
+   "options": {
+    "A": "FSH",
+    "B": "LH",
+    "C": "GH",
+    "D": "TSH",
+    "E": "ACTH"
+   },
+   "answer": "C",
+   "answer_status": "verified",
+   "explanation": "GH — GH ออกฤทธิ์ตรงต่อเนื้อเยื่อ (ไม่ใช่ tropic ต่อต่อมไร้ท่อ)",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      29
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      29
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_093"
+  },
+  {
+   "id": "END-43-MCQ-094",
+   "block": "END",
+   "cohort": 43,
+   "n": 94,
+   "type": "MCQ",
+   "stem": "Which of following has anti-inflammation effect?",
+   "options": {
+    "A": "Cortisol",
+    "B": "Epinephrine",
+    "C": "Norepinephrine",
+    "D": "Glucagon",
+    "E": "Thyroid Hormone"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "Cortisol — cortisol",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      30
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      30
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_094"
+  },
+  {
+   "id": "END-43-MCQ-095",
+   "block": "END",
+   "cohort": 43,
+   "n": 95,
+   "type": "MCQ",
+   "stem": "What is the substance located within the lumen of thyroid follicles?",
+   "options": {
+    "A": "Thyrotropin",
+    "B": "Parathyroid hormone",
+    "C": "Thyroglobulin binding protein",
+    "D": "Calcitonin",
+    "E": "Thyroglobulin"
+   },
+   "answer": "E",
+   "answer_status": "verified",
+   "explanation": "Thyroglobulin — thyroglobulin ใน colloid",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      30
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      30
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_095"
+  },
+  {
+   "id": "END-43-MCQ-096",
+   "block": "END",
+   "cohort": 43,
+   "n": 96,
+   "type": "MCQ",
+   "stem": "What is the following structure regulate secretion of thyroid follicular cell?",
+   "options": {
+    "A": "Mammotroph",
+    "B": "Corticotroph",
+    "C": "Thyrotroph",
+    "D": "Somatotroph",
+    "E": "Lactotroph"
+   },
+   "answer": "C",
+   "answer_status": "verified",
+   "explanation": "Thyrotroph — thyrotroph (TSH)",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      30
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      30
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_096"
+  },
+  {
+   "id": "END-43-MCQ-097",
+   "block": "END",
+   "cohort": 43,
+   "n": 97,
+   "type": "MCQ",
+   "stem": "What is primary target of calcitonin?",
+   "options": {
+    "A": "Osteoblast",
+    "B": "Osteoclast",
+    "C": "Osteocyte",
+    "D": "Fibroblast",
+    "E": "Chondrocyte"
+   },
+   "answer": "B",
+   "answer_status": "verified",
+   "explanation": "Osteoclast — calcitonin ยับยั้ง osteoclast",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      31
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      31
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_097"
+  },
+  {
+   "id": "END-43-MCQ-098",
+   "block": "END",
+   "cohort": 43,
+   "n": 98,
+   "type": "MCQ",
+   "stem": "Which site of brain is synthesis of hormone released in posterior pituitary gland?",
+   "options": {
+    "A": "Brainstem",
+    "B": "Hypothalamus",
+    "C": "Thalamus",
+    "D": "Limbic",
+    "E": "Anterior pituitary gland"
+   },
+   "answer": "B",
+   "answer_status": "verified",
+   "explanation": "Hypothalamus — hypothalamus (SON/PVN)",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      31
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      31
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_098"
+  },
+  {
+   "id": "END-43-MCQ-099",
+   "block": "END",
+   "cohort": 43,
+   "n": 99,
+   "type": "MCQ",
+   "stem": "Through which molecule does GHRH activate GH secretion?",
+   "options": {
+    "A": "cAMP",
+    "B": "cGMP",
+    "C": "Ca2+",
+    "D": "Calmodulin",
+    "E": "Diacylglycerol"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "cAMP — GHRH → Gs → cAMP",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      31
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      31
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_099"
+  },
+  {
+   "id": "END-43-MCQ-100",
+   "block": "END",
+   "cohort": 43,
+   "n": 100,
+   "type": "MCQ",
+   "stem": "What molecule is needed for negative feedback of GH secretion?",
+   "options": {
+    "A": "IGF-1",
+    "B": "Glucose",
+    "C": "Fatty acid",
+    "D": "Cholesterol",
+    "E": "Triglyceride"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "IGF-1 — IGF-1",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      32
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      32
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_100"
+  },
+  {
+   "id": "END-43-MCQ-101",
+   "block": "END",
+   "cohort": 43,
+   "n": 101,
+   "type": "MCQ",
+   "stem": "Which of condition that decrease ADH secretion in posterior pituitary?",
+   "options": {
+    "A": "Hypoglycemia",
+    "B": "Hypotension",
+    "C": "Hypervolemia",
+    "D": "Dehydration",
+    "E": "Starvation"
+   },
+   "answer": "C",
+   "answer_status": "verified",
+   "explanation": "Hypervolemia — hypervolemia ลด ADH",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      32
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      32
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_101"
+  },
+  {
+   "id": "END-43-MCQ-102",
+   "block": "END",
+   "cohort": 43,
+   "n": 102,
+   "type": "MCQ",
+   "stem": "What is the enzyme that recycle iodine in thyroid hormone synthesis?",
+   "options": {
+    "A": "Iodinase",
+    "B": "Peroxidase",
+    "C": "Deiodinase",
+    "D": "Protease",
+    "E": "Oxidase"
+   },
+   "answer": "C",
+   "answer_status": "verified",
+   "explanation": "Deiodinase — iodotyrosine deiodinase recycle iodine จาก MIT/DIT",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      32
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      32
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_102"
+  },
+  {
+   "id": "END-43-MCQ-103",
+   "block": "END",
+   "cohort": 43,
+   "n": 103,
+   "type": "MCQ",
+   "stem": "In which space of the thyroid gland does the iodination of tyrosine take place?",
+   "options": {
+    "A": "Colloid",
+    "B": "Cytoplasm of follicular cell",
+    "C": "Endoplasmic Reticulum",
+    "D": "Plasma",
+    "E": "Cell membrane"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "Colloid — iodination เกิดที่ apical membrane–colloid interface",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      33
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      33
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_103"
+  },
+  {
+   "id": "END-43-MCQ-104",
+   "block": "END",
+   "cohort": 43,
+   "n": 104,
+   "type": "MCQ",
+   "stem": "What is the enzyme that catalyzes oxidation of iodine in thyroid hormone synthesis?",
+   "options": {
+    "A": "Iodinase",
+    "B": "Deiodinase",
+    "C": "Peroxidase",
+    "D": "Hydroxylase",
+    "E": "Carboxylase"
+   },
+   "answer": "C",
+   "answer_status": "verified",
+   "explanation": "Peroxidase — TPO",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      33
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      33
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_104"
+  },
+  {
+   "id": "END-43-MCQ-105",
+   "block": "END",
+   "cohort": 43,
+   "n": 105,
+   "type": "MCQ",
+   "stem": "What will happen if TSI level is elevated?",
+   "options": {
+    "A": "High T3, T4",
+    "B": "Low T3, T4",
+    "C": "Low TSH",
+    "D": "High TSH",
+    "E": "High TRH"
+   },
+   "answer": "A",
+   "answer_status": "disputed",
+   "explanation": "High T3, T4 — TSI → T3/T4 สูง (และ TSH ต่ำ)\n⚠️ ผู้เฉลยวงไว้ 2 ตัว (A, C) · ต้นฉบับวงไว้หลายตัว",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      33
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      33
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_105"
+  },
+  {
+   "id": "END-43-MCQ-106",
+   "block": "END",
+   "cohort": 43,
+   "n": 106,
+   "type": "MCQ",
+   "stem": "What is effect of hypothyroidism?",
+   "options": {
+    "A": "Osteoporosis",
+    "B": "Weight lost",
+    "C": "Increase fat metabolism",
+    "D": "Decrease blood volume",
+    "E": "Short sleep duration"
+   },
+   "answer": "D",
+   "answer_status": "verified",
+   "explanation": "Decrease blood volume — hypothyroid → blood volume ลดเล็กน้อย; ตัวอื่นเป็นของ hyperthyroid",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      34
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      34
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_106"
+  },
+  {
+   "id": "END-43-MCQ-107",
+   "block": "END",
+   "cohort": 43,
+   "n": 107,
+   "type": "MCQ",
+   "stem": "What is the mechanism that stimulate ACTH to adrenocorticoid steroid synthesis?",
+   "options": {
+    "A": "Increase LDL Receptor",
+    "B": "Suppression of lysozyme activity",
+    "C": "Inhibit cleavage of cholesterol from VLDL",
+    "D": "Enter the cells to stimulate DNA on chromosome",
+    "E": "Activate phospholipase C"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "Increase LDL Receptor — ACTH → LDL receptor ↑, cholesterol esterase, StAR → steroidogenesis",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      34
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      34
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_107"
+  },
+  {
+   "id": "END-43-MCQ-108",
+   "block": "END",
+   "cohort": 43,
+   "n": 108,
+   "type": "MCQ",
+   "stem": "What happens in chronic primary hyperaldosteronism?",
+   "options": {
+    "A": "Hyperkalemia",
+    "B": "Hypertension with hypokalemia and normal plasma sodium (aldosterone escape)",
+    "C": "Severe edema",
+    "D": "High plasma renin",
+    "E": "Metabolic acidosis"
+   },
+   "answer": "B",
+   "answer_status": "draft",
+   "explanation": "Hypertension + hypokalemia, Na⁺ ปกติ — aldosterone เกินเรื้อรัง → Na⁺/water retention → BP ↑ → pressure natriuresis (escape) ทำให้ไม่บวม Na⁺ ปกติหรือสูงเล็กน้อย; K⁺ และ H⁺ ถูกขับ → hypokalemia, metabolic alkalosis; renin ต่ำ\nTrap: edema ไม่ใช่ลักษณะเด่น\n⚠️ AI เขียนข้อนี้ขึ้นใหม่จากโน้ตความจำในต้นฉบับ",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      34
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      34
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_108"
+  },
+  {
+   "id": "END-43-MCQ-109",
+   "block": "END",
+   "cohort": 43,
+   "n": 109,
+   "type": "MCQ",
+   "stem": "What will happen if corticotroph is triggered by CRH?",
+   "options": {
+    "A": "Active adenylate cyclase",
+    "B": "Active protein kinase C",
+    "C": "Active tyrosine kinase",
+    "D": "Increase intracellular Ca2+",
+    "E": "Active protein phospholipase A2"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "Active adenylate cyclase — CRH receptor → Gs → adenylyl cyclase",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      34
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      34
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_109"
+  },
+  {
+   "id": "END-43-MCQ-110",
+   "block": "END",
+   "cohort": 43,
+   "n": 110,
+   "type": "MCQ",
+   "stem": "What is the hormone that can cause hyperpigmentation?",
+   "options": {
+    "A": "ACTH",
+    "B": "TSH",
+    "C": "FSH",
+    "D": "GH",
+    "E": "LH"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "ACTH — ACTH (MSH จาก POMC) → hyperpigmentation",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      35
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      35
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_110"
+  },
+  {
+   "id": "END-43-MCQ-111",
+   "block": "END",
+   "cohort": 43,
+   "n": 111,
+   "type": "MCQ",
+   "stem": "What is the consequence of mineralocorticoid deficiency?",
+   "options": {
+    "A": "Increase ECF volume",
+    "B": "Increase Na+ reabsorption",
+    "C": "Increase K+ excretion",
+    "D": "Decrease HCO3- reabsorption",
+    "E": "Decrease H+ excretion"
+   },
+   "answer": "E",
+   "answer_status": "verified",
+   "explanation": "Decrease H+ excretion — aldosterone ขาด → H+ excretion ↓ (acidosis), K excretion ↓",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      35
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      35
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_111"
+  },
+  {
+   "id": "END-43-MCQ-112",
+   "block": "END",
+   "cohort": 43,
+   "n": 112,
+   "type": "MCQ",
+   "stem": "What is the effect of cortisol to attenuate fever?",
+   "options": {
+    "A": "Stimulate leukotrienes synthesis",
+    "B": "Inhibit bradykinin",
+    "C": "Inhibit substance P",
+    "D": "Inhibit mast cell",
+    "E": "Inhibit releasing of interleukin-1"
+   },
+   "answer": "E",
+   "answer_status": "verified",
+   "explanation": "Inhibit releasing of interleukin-1 — cortisol ยับยั้ง IL-1 release",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      35
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      35
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_112"
+  },
+  {
+   "id": "END-43-MCQ-113",
+   "block": "END",
+   "cohort": 43,
+   "n": 113,
+   "type": "MCQ",
+   "stem": "What is the product when proopiomelanocortin is only catalyzed by prohormone convertase I?",
+   "options": {
+    "A": "Gamma-MSH",
+    "B": "Alpha-MSH",
+    "C": "CLIP",
+    "D": "ACTH",
+    "E": "Beta-endorphin"
+   },
+   "answer": "D",
+   "answer_status": "verified",
+   "explanation": "ACTH — PC1 ตัด POMC → ACTH + β-lipotropin",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      36
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      36
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_113"
+  },
+  {
+   "id": "END-43-MCQ-114",
+   "block": "END",
+   "cohort": 43,
+   "n": 114,
+   "type": "MCQ",
+   "stem": "A patient with ambiguous genitalia, hyperpigmentation. Na+ level = 125, K+ level = 6.5, serum 17-ketosteroid is high. What is the possible adrenal gland condition in this patient?",
+   "options": {
+    "A": "Atrophy",
+    "B": "Bilateral diffuse enlargement",
+    "C": "Nodular hyperplasia",
+    "D": "One-sided enlargement",
+    "E": "Coagulative necrosis"
+   },
+   "answer": "B",
+   "answer_status": "verified",
+   "explanation": "Bilateral diffuse enlargement — CAH (ambiguous genitalia, salt wasting) → bilateral diffuse enlargement",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      36
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      36
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_114"
+  },
+  {
+   "id": "END-43-MCQ-115",
+   "block": "END",
+   "cohort": 43,
+   "n": 115,
+   "type": "MCQ",
+   "stem": "Which of the followings is correct about adrenocortical adenoma?",
+   "options": {
+    "A": "In children, usually found adenoma rather than carcinoma.",
+    "B": "In children, usually found nonfunctional rather than functional.",
+    "C": "Usually in 10-15 cm in both adult and children.",
+    "D": "In adult, usually found nonfunctional rather than functional.",
+    "E": "In adult, usually found carcinoma rather than adenoma"
+   },
+   "answer": "D",
+   "answer_status": "verified",
+   "explanation": "In adult, usually found nonfunctional rather than functional. — ผู้ใหญ่ adenoma ส่วนใหญ่ nonfunctional",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      36
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      36
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_115"
+  },
+  {
+   "id": "END-43-MCQ-116",
+   "block": "END",
+   "cohort": 43,
+   "n": 116,
+   "type": "MCQ",
+   "stem": "A patient with blood pressure 86/60 mmHg, Na+ = 128, K+ = 6.5, CO2 = 16, ACTH = 225 (Normal = 9-52), Cortisol = 2.5 (Normal 5-18). What disease could this patient have?",
+   "options": {
+    "A": "Addison's disease",
+    "B": "Waterhouse-Friderichsen syndrome",
+    "C": "Cushing's syndrome",
+    "D": "Conn's syndrome",
+    "E": "Sheehan's syndrome"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "Addison's disease — Addison",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      37
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      37
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_116"
+  },
+  {
+   "id": "END-43-MCQ-117",
+   "block": "END",
+   "cohort": 43,
+   "n": 117,
+   "type": "MCQ",
+   "stem": "A patient has developed pain at neck when swallow and fever. His thyroid gland is palpable. What disease could he have?",
+   "options": {
+    "A": "De quervain thyroiditis",
+    "B": "Lymphoplasmosis",
+    "C": "Silent thyroiditis",
+    "D": "Reidel thyroiditis",
+    "E": "Lymphoplasmacytic lymphoma"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "De quervain thyroiditis — de Quervain (painful neck, fever)",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      37
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      37
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_117"
+  },
+  {
+   "id": "END-43-MCQ-118",
+   "block": "END",
+   "cohort": 43,
+   "n": 118,
+   "type": "MCQ",
+   "stem": "A 35-year-old man presents with enlargement of cervical lymph node for 3 months. On fine needle aspiration found normal follicular formation with scantly colloid. What is the origin of this founding?",
+   "options": {
+    "A": "Pancreas",
+    "B": "Thyroid gland",
+    "C": "Parathyroid gland",
+    "D": "Adrenal gland",
+    "E": "Ovary"
+   },
+   "answer": "B",
+   "answer_status": "verified",
+   "explanation": "Thyroid gland — ectopic thyroid tissue/metastatic papillary → thyroid gland",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      37
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      37
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_118"
+  },
+  {
+   "id": "END-43-MCQ-119",
+   "block": "END",
+   "cohort": 43,
+   "n": 119,
+   "type": "MCQ",
+   "stem": "A 20-year-old developed neck pain. On examination found swelling with mild tenderness at neck. Free T4 = 1.9, TSH = 0.05, which one is right?",
+   "options": {
+    "A": "Its cause is bacterial infection",
+    "B": "Cytotoxic T-cells are found",
+    "C": "Multinucleated giant cells are found",
+    "D": "At first, patient developed hypothyroidism then hyperthyroidism",
+    "E": "Granulomatous with caseous necrosis"
+   },
+   "answer": "C",
+   "answer_status": "verified",
+   "explanation": "Multinucleated giant cells are found — subacute thyroiditis: multinucleated giant cell",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      38
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      38
+     ]
+    }
+   ],
+   "tags": [
+    "end-4243-subacute"
+   ],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_119"
+  },
+  {
+   "id": "END-43-MCQ-120",
+   "block": "END",
+   "cohort": 43,
+   "n": 120,
+   "type": "MCQ",
+   "stem": "A 50-year-old man has felt a \"lump\" in his neck. PE: rubbery-firm nodule in the right lobe of thyroid gland. Cytotoxic smear from fine needle aspirations has shown up the follicular cell with nuclear groove. What is the most likely diagnosis?",
+   "options": {
+    "A": "Multinodular goiter",
+    "B": "Subacute thyroiditis",
+    "C": "Hashimoto disease",
+    "D": "Papillary carcinoma",
+    "E": "Follicular carcinoma"
+   },
+   "answer": "D",
+   "answer_status": "verified",
+   "explanation": "Papillary carcinoma — papillary carcinoma",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      38
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      38
+     ]
+    }
+   ],
+   "tags": [
+    "end-4243-papillary"
+   ],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_120"
+  },
+  {
+   "id": "END-43-MCQ-121",
+   "block": "END",
+   "cohort": 43,
+   "n": 121,
+   "type": "MCQ",
+   "stem": "Which organ converts 25-hydroxycalciferol into 1,25-dihydroxycalciferol?",
+   "options": {
+    "A": "Skin",
+    "B": "Liver",
+    "C": "Kidney",
+    "D": "Intestine",
+    "E": "Parathyroid gland"
+   },
+   "answer": "C",
+   "answer_status": "verified",
+   "explanation": "Kidney — kidney",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      38
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      38
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_121"
+  },
+  {
+   "id": "END-43-MCQ-122",
+   "block": "END",
+   "cohort": 43,
+   "n": 122,
+   "type": "MCQ",
+   "stem": "How does 1,25-dihydroxycalciferol effect to intestinal calcium absorption?",
+   "options": {
+    "A": "Increase calbindin amount",
+    "B": "Increase TRPV5",
+    "C": "Increase chemical gradient of cation",
+    "D": "Increase brush border transporter",
+    "E": "Decrease basolateral Ca2+ concentration"
+   },
+   "answer": "A",
+   "answer_status": "disputed",
+   "explanation": "Increase calbindin amount — calcitriol ↑ calbindin, TRPV6\n⚠️ ผู้เฉลยวงไว้ 3 ตัว (A, B, D) · ต้นฉบับวงไว้หลายตัว",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      39
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      39
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_122"
+  },
+  {
+   "id": "END-43-MCQ-123",
+   "block": "END",
+   "cohort": 43,
+   "n": 123,
+   "type": "MCQ",
+   "stem": "What is the mechanism of intestinal phosphate absorption?",
+   "options": {
+    "A": "Carrier protein",
+    "B": "Diffusion through epithelial cell",
+    "C": "Paracellular diffusion",
+    "D": "Exchange with sodium",
+    "E": "Cotransporter with sodium"
+   },
+   "answer": "E",
+   "answer_status": "disputed",
+   "explanation": "Cotransporter with sodium — Na-Pi cotransporter (NaPi-IIb)\n⚠️ ผู้เฉลยวงไว้ 2 ตัว (C, E) · ต้นฉบับวงไว้หลายตัว",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      39
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      39
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_123"
+  },
+  {
+   "id": "END-43-MCQ-124",
+   "block": "END",
+   "cohort": 43,
+   "n": 124,
+   "type": "MCQ",
+   "stem": "What is function of parathyroid hormone?",
+   "options": {
+    "A": "Decrease calcium resorption at bone",
+    "B": "Decrease phosphate resorption at bone",
+    "C": "Decrease calcium excretion at kidneys",
+    "D": "Decrease phosphate excretion at kidneys",
+    "E": "None of above"
+   },
+   "answer": "C",
+   "answer_status": "verified",
+   "explanation": "Decrease calcium excretion at kidneys — PTH ลด Ca excretion",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      39
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      39
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_124"
+  },
+  {
+   "id": "END-43-MCQ-125",
+   "block": "END",
+   "cohort": 43,
+   "n": 125,
+   "type": "MCQ",
+   "stem": "Which of the following can bind with RANKL to slower response of bone resorption?",
+   "options": {
+    "A": "Monocyte colony-stimulating factor",
+    "B": "Leukotriene-8",
+    "C": "Proopiomelanocortin",
+    "D": "Osteoprotegerin",
+    "E": "Interleukin-6"
+   },
+   "answer": "D",
+   "answer_status": "verified",
+   "explanation": "Osteoprotegerin — OPG",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      40
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      40
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_125"
+  },
+  {
+   "id": "END-43-MCQ-126",
+   "block": "END",
+   "cohort": 43,
+   "n": 126,
+   "type": "MCQ",
+   "stem": "What is the mechanism of methimazole for treating hyperthyroidism?",
+   "options": {
+    "A": "Inhibit peripheral T4 conversion",
+    "B": "Inhibit Na+-I+ symporter",
+    "C": "Inhibit thyroid peroxidase",
+    "D": "Inhibit iodine uptake",
+    "E": "None of above"
+   },
+   "answer": "C",
+   "answer_status": "verified",
+   "explanation": "Inhibit thyroid peroxidase — MMI ยับยั้ง TPO",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      40
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      40
+     ]
+    }
+   ],
+   "tags": [
+    "end-4243-thionamide"
+   ],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_126"
+  },
+  {
+   "id": "END-43-MCQ-127",
+   "block": "END",
+   "cohort": 43,
+   "n": 127,
+   "type": "MCQ",
+   "stem": "Which of the followings is correct about radioactive iodine?",
+   "options": {
+    "A": "Common side effect is permanent hypothyroidism",
+    "B": "Safe in pregnancy",
+    "C": "Rapid onset within hours",
+    "D": "Commonly causes thyroid cancer",
+    "E": "Contraindicated in elderly"
+   },
+   "answer": "A",
+   "answer_status": "disputed",
+   "explanation": "Common side effect is permanent hypothyroidism — \n⚠️ ช้อยส์ B, C, D, E AI เติมให้ครบ 5 ตัว · เฉลยขัดกับ AI",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      40
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      40
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_127"
+  },
+  {
+   "id": "END-43-MCQ-128",
+   "block": "END",
+   "cohort": 43,
+   "n": 128,
+   "type": "MCQ",
+   "stem": "In which condition will Lugol’s solution be used?",
+   "options": {
+    "A": "Before thyroid operation",
+    "B": "Before using PTU",
+    "C": "Hyperthyroidism with pregnancy",
+    "D": "Multinodular goiter with heart failure",
+    "E": "Thyroid cancer"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "Before thyroid operation — Lugol ก่อนผ่าตัด thyroid",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      40
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      40
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_128"
+  },
+  {
+   "id": "END-43-MCQ-129",
+   "block": "END",
+   "cohort": 43,
+   "n": 129,
+   "type": "MCQ",
+   "stem": "What is the mechanism of thionamide derivatives?",
+   "options": {
+    "A": "Inhibit peripheral T4 conversion",
+    "B": "Inhibit Na+-I+ symporter",
+    "C": "Inhibit thyroid peroxidase",
+    "D": "Inhibit iodine uptake",
+    "E": "None of above"
+   },
+   "answer": "C",
+   "answer_status": "verified",
+   "explanation": "Inhibit thyroid peroxidase — thionamide ยับยั้ง TPO",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      41
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      41
+     ]
+    }
+   ],
+   "tags": [
+    "end-4243-thionamide"
+   ],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_129"
+  },
+  {
+   "id": "END-43-MCQ-130",
+   "block": "END",
+   "cohort": 43,
+   "n": 130,
+   "type": "MCQ",
+   "stem": "What is the sever side effect of steroid drugs?",
+   "options": {
+    "A": "Osteoporosis",
+    "B": "Heart failure",
+    "C": "Hepatotoxicity",
+    "D": "Ataxia",
+    "E": "Nephrotoxicity"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "Osteoporosis — steroid ระยะยาว → osteoporosis",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      41
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      41
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_130"
+  },
+  {
+   "id": "END-43-MCQ-131",
+   "block": "END",
+   "cohort": 43,
+   "n": 131,
+   "type": "MCQ",
+   "stem": "What is the therapeutic use of prednisolone?",
+   "options": {
+    "A": "Hyperglycemia",
+    "B": "Cardiac arrhythmia",
+    "C": "Hyperlipidemia",
+    "D": "Rheumatoid arthritis",
+    "E": "Hypercholesterolemia"
+   },
+   "answer": "D",
+   "answer_status": "verified",
+   "explanation": "Rheumatoid arthritis — prednisolone รักษา RA",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      41
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      41
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_131"
+  },
+  {
+   "id": "END-43-MCQ-132",
+   "block": "END",
+   "cohort": 43,
+   "n": 132,
+   "type": "MCQ",
+   "stem": "What is the withdrawal effect of synthetic steroid?",
+   "options": {
+    "A": "Acute adrenal insufficiency",
+    "B": "Cirrhosis",
+    "C": "Hyperglycemia",
+    "D": "Cushing disease",
+    "E": "Hypercholesterolemia"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "Acute adrenal insufficiency — หยุด steroid ทันที → acute adrenal insufficiency",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      42
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      42
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_132"
+  },
+  {
+   "id": "END-43-MCQ-133",
+   "block": "END",
+   "cohort": 43,
+   "n": 133,
+   "type": "MCQ",
+   "stem": "A 37-year-old lost her weight 10 kg and amenorrhoea for a year. She also has purple bruises, thin skin, skin hyperpigmentation and bitemporal hemianopia. Which cell is the cause of these symptoms?",
+   "options": {
+    "A": "Thyrotroph",
+    "B": "Mammotroph",
+    "C": "Corticotroph",
+    "D": "Lactotroph",
+    "E": "Somatotroph"
+   },
+   "answer": "C",
+   "answer_status": "verified",
+   "explanation": "Corticotroph — ACTH macroadenoma (Cushing disease + bitemporal hemianopia) = corticotroph",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      42
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      42
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_133"
+  },
+  {
+   "id": "END-43-MCQ-134",
+   "block": "END",
+   "cohort": 43,
+   "n": 134,
+   "type": "MCQ",
+   "stem": "A 50-year-old female has had traumatic brain injury and been admitted for a day. She has developed polyuria. On laboratory examination found low urine osmolarity and high plasma osmolarity. Which of the followings is defect in this patient?",
+   "options": {
+    "A": "Hypothalamic nuclei",
+    "B": "Anterior lobe of pituitary",
+    "C": "Bilateral cerebral cortex",
+    "D": "Corpus callosum",
+    "E": "Pineal gland"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "Hypothalamic nuclei — head injury → central DI (hypothalamic nuclei)",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      42
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      42
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_134"
+  },
+  {
+   "id": "END-43-MCQ-135",
+   "block": "END",
+   "cohort": 43,
+   "n": 135,
+   "type": "MCQ",
+   "stem": "A 45-year-old man presents hypertension and loud snoring. His blood pressure is 180/90 mmHg. He also has macroglossia, frontal bossing, big hand and leg. What is his condition?",
+   "options": {
+    "A": "Acromegaly",
+    "B": "Gigantism",
+    "C": "Hypothyroidism",
+    "D": "Graves’ disease",
+    "E": "Hashimoto's thyroiditis"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "Acromegaly — acromegaly",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      43
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      43
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_135"
+  },
+  {
+   "id": "END-43-MCQ-136",
+   "block": "END",
+   "cohort": 43,
+   "n": 136,
+   "type": "MCQ",
+   "stem": "A 40-year-old woman presented with amenorrhoea for 1 year. She has a past with hypovolemic shock from vaginal bleeding after giving birth 10 years ago. PE: BP (supine) 100/70 mmHg, BP (upright) 70/40 mmHg, PR 55/min HEENT: Mild pale, Puffy eyelid Extremities: Dry skin, slow relaxation of DTR What is the most likely affected organ?",
+   "options": {
+    "A": "Ovaries",
+    "B": "Adrenal gland",
+    "C": "Thyroid gland",
+    "D": "Pituitary gland",
+    "E": "Hypothalamus"
+   },
+   "answer": "D",
+   "answer_status": "verified",
+   "explanation": "Pituitary gland — Sheehan → pituitary",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      43
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      43
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_136"
+  },
+  {
+   "id": "END-43-MCQ-137",
+   "block": "END",
+   "cohort": 43,
+   "n": 137,
+   "type": "MCQ",
+   "stem": "What is glucagon effect?",
+   "options": {
+    "A": "Decrease plasma glucose",
+    "B": "Decrease gluconeogenesis",
+    "C": "Increase glycogenolysis",
+    "D": "Increase fatty acid and TGA in adipose cell",
+    "E": "Increase lipase in adipose cell"
+   },
+   "answer": "C",
+   "answer_status": "verified",
+   "explanation": "Increase glycogenolysis — glucagon → glycogenolysis",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      44
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      44
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_137"
+  },
+  {
+   "id": "END-43-MCQ-138",
+   "block": "END",
+   "cohort": 43,
+   "n": 138,
+   "type": "MCQ",
+   "stem": "What is the difference between T1DM and T2DM?",
+   "options": {
+    "A": "Insulin level",
+    "B": "Glucose level",
+    "C": "Weight",
+    "D": "Onset Age",
+    "E": "Waist circumference"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "Insulin level — insulin level",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      44
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      44
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_138"
+  },
+  {
+   "id": "END-43-MCQ-139",
+   "block": "END",
+   "cohort": 43,
+   "n": 139,
+   "type": "MCQ",
+   "stem": "What is the effect of insulin on fat metabolism?",
+   "options": {
+    "A": "Increase beta-oxidation",
+    "B": "Decrease pyruvate",
+    "C": "Decrease acetyl-CoA",
+    "D": "Decrease triglyceride",
+    "E": "Increase lipoprotein lipase activity"
+   },
+   "answer": "E",
+   "answer_status": "verified",
+   "explanation": "Increase lipoprotein lipase activity — insulin ↑ LPL",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      44
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      44
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_139"
+  },
+  {
+   "id": "END-43-MCQ-140",
+   "block": "END",
+   "cohort": 43,
+   "n": 140,
+   "type": "MCQ",
+   "stem": "What is the mechanism of releasing insulin from B cell?",
+   "options": {
+    "A": "Decrease oxidation",
+    "B": "Close ATP-dependent K+ channel",
+    "C": "Close ATP-dependent Ca2+ channel",
+    "D": "Inhibit glucokinase",
+    "E": "Enhance endocytosis of insulin"
+   },
+   "answer": "B",
+   "answer_status": "verified",
+   "explanation": "Close ATP-dependent K+ channel — ปิด K-ATP",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      45
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      45
+     ]
+    }
+   ],
+   "tags": [
+    "end-4243-insulin-release"
+   ],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_140"
+  },
+  {
+   "id": "END-43-MCQ-141",
+   "block": "END",
+   "cohort": 43,
+   "n": 141,
+   "type": "MCQ",
+   "stem": "What is the possible plasma laboratory findings in diabetic patient without treatment?",
+   "options": {
+    "A": "Increase pH",
+    "B": "Increase HCO3-",
+    "C": "Increase cholesterol",
+    "D": "Increase Cl-",
+    "E": "Increase keto acid"
+   },
+   "answer": "E",
+   "answer_status": "verified",
+   "explanation": "Increase keto acid — DM ไม่รักษา → keto acid ↑",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      45
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      45
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_141"
+  },
+  {
+   "id": "END-43-MCQ-142",
+   "block": "END",
+   "cohort": 43,
+   "n": 142,
+   "type": "MCQ",
+   "stem": "Which enzyme affects the decreased cholesterol ester in lipoprotein molecule?",
+   "options": {
+    "A": "Hepatic lipase",
+    "B": "Cyclooxygenase",
+    "C": "Lipoprotein lipase",
+    "D": "3-hydroxy-3-methylglutaryl-CoA-reductase",
+    "E": "ACAT"
+   },
+   "answer": "E",
+   "answer_status": "draft",
+   "explanation": "ACAT — ACAT esterify cholesterol ก่อนประกอบเป็น chylomicron/VLDL (LCAT ไม่มีในช้อยส์)\n⚠️ ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      45
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      45
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_142"
+  },
+  {
+   "id": "END-43-MCQ-143",
+   "block": "END",
+   "cohort": 43,
+   "n": 143,
+   "type": "MCQ",
+   "stem": "Which of the following structures is inner layer of lipoprotein?",
+   "options": {
+    "A": "Triglyceride",
+    "B": "Sphingolipid",
+    "C": "Apo-BII",
+    "D": "Phospholipid",
+    "E": "Wax"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "Triglyceride — แกนของ lipoprotein = TG + cholesteryl ester",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      46
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      46
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_143"
+  },
+  {
+   "id": "END-43-MCQ-144",
+   "block": "END",
+   "cohort": 43,
+   "n": 144,
+   "type": "MCQ",
+   "stem": "Which of the following is correct about lipoprotein?",
+   "options": {
+    "A": "Chylomicron is digested by hepatic lipase",
+    "B": "Cholesterol is transferred by CETP",
+    "C": "Cholesterol is transferred from liver",
+    "D": "After VLDL is catalyze by LPL, it will be stored at adipose tissue, skeletal muscle, cardiac muscle",
+    "E": "LDL carries cholesterol from peripheral tissue to liver"
+   },
+   "answer": "C",
+   "answer_status": "disputed",
+   "explanation": "Cholesterol is transferred from liver — CETP ย้าย cholesteryl ester ระหว่าง lipoprotein\n⚠️ ช้อยส์ E AI เติมให้ครบ 5 ตัว · เฉลยขัดกับ AI",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      46
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      46
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_144"
+  },
+  {
+   "id": "END-43-MCQ-145",
+   "block": "END",
+   "cohort": 43,
+   "n": 145,
+   "type": "MCQ",
+   "stem": "Which of these insulins has the shortest onset?",
+   "options": {
+    "A": "Insulin glargine",
+    "B": "NPH",
+    "C": "Insulin aspart",
+    "D": "Regular insulin",
+    "E": "Insulin detemir"
+   },
+   "answer": "C",
+   "answer_status": "verified",
+   "explanation": "Insulin aspart — insulin aspart (rapid-acting) onset เร็วสุด",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      46
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      46
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_145"
+  },
+  {
+   "id": "END-43-MCQ-146",
+   "block": "END",
+   "cohort": 43,
+   "n": 146,
+   "type": "MCQ",
+   "stem": "What is the action of insulin?",
+   "options": {
+    "A": "Inhibit glycogen synthesis in liver",
+    "B": "Inhibit FA Production in liver",
+    "C": "Inhibit TGA Product at adipose tissue",
+    "D": "Increase GLUT4 at cell membrane",
+    "E": "Increase gluconeogenesis at muscle"
+   },
+   "answer": "D",
+   "answer_status": "verified",
+   "explanation": "Increase GLUT4 at cell membrane — insulin → GLUT4 translocation",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      47
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      47
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_146"
+  },
+  {
+   "id": "END-43-MCQ-147",
+   "block": "END",
+   "cohort": 43,
+   "n": 147,
+   "type": "MCQ",
+   "stem": "What is the mechanism of glibenclamide and repaglinide?",
+   "options": {
+    "A": "Decrease oxidation",
+    "B": "Close ATP-dependent K+ channel",
+    "C": "Close ATP-dependent Ca2+ channel",
+    "D": "Inhibit glucokinase",
+    "E": "Enhance endocytosis of insulin"
+   },
+   "answer": "B",
+   "answer_status": "verified",
+   "explanation": "Close ATP-dependent K+ channel — sulfonylurea/meglitinide ปิด K-ATP",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      47
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      47
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_147"
+  },
+  {
+   "id": "END-43-MCQ-148",
+   "block": "END",
+   "cohort": 43,
+   "n": 148,
+   "type": "MCQ",
+   "stem": "What is the first line drug of DM type 2?",
+   "options": {
+    "A": "Sitagliptin",
+    "B": "Metformin",
+    "C": "Pioglitazone",
+    "D": "Exenatide",
+    "E": "Canagliflozin"
+   },
+   "answer": "B",
+   "answer_status": "verified",
+   "explanation": "Metformin — metformin first-line",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      47
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      47
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_148"
+  },
+  {
+   "id": "END-43-MCQ-149",
+   "block": "END",
+   "cohort": 43,
+   "n": 149,
+   "type": "MCQ",
+   "stem": "Which of the followings is the mechanism of statins?",
+   "options": {
+    "A": "Decrease VLDL production",
+    "B": "Decrease LDL production",
+    "C": "HMG-CoA reductase inhibitor",
+    "D": "Bind to bile acid in intestinal lumen",
+    "E": "Increase sensitivity of LDL receptors"
+   },
+   "answer": "C",
+   "answer_status": "verified",
+   "explanation": "HMG-CoA reductase inhibitor — statin = HMG-CoA reductase inhibitor",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      48
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      48
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_149"
+  },
+  {
+   "id": "END-43-MCQ-150",
+   "block": "END",
+   "cohort": 43,
+   "n": 150,
+   "type": "MCQ",
+   "stem": "What is the action of colestipol to treat the hypercholesterolemia?",
+   "options": {
+    "A": "Decrease VLDL production",
+    "B": "Decrease LDL production",
+    "C": "HMG-CoA reductase inhibitor",
+    "D": "Bind to bile acid in intestinal lumen",
+    "E": "Increase sensitivity of LDL receptors"
+   },
+   "answer": "D",
+   "answer_status": "verified",
+   "explanation": "Bind to bile acid in intestinal lumen — colestipol จับ bile acid",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      48
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      48
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_150"
+  },
+  {
+   "id": "END-43-MCQ-151",
+   "block": "END",
+   "cohort": 43,
+   "n": 151,
+   "type": "MCQ",
+   "stem": "What is the effect of gemfibrozil?",
+   "options": {
+    "A": "Decrease VLDL production",
+    "B": "Decrease LDL production",
+    "C": "HMG-CoA reductase inhibitor",
+    "D": "Bind to bile acid in intestinal lumen",
+    "E": "Increase sensitivity of LDL receptors"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "Decrease VLDL production — fibrate ลด VLDL production (+ LPL ↑)",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      48
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      48
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_151"
+  },
+  {
+   "id": "END-43-MCQ-152",
+   "block": "END",
+   "cohort": 43,
+   "n": 152,
+   "type": "MCQ",
+   "stem": "What is therapeutic use of niacin?",
+   "options": {
+    "A": "Hepatomegaly",
+    "B": "Pancreatitis",
+    "C": "Cushing disease",
+    "D": "Addison’s disease",
+    "E": "Hepatitis"
+   },
+   "answer": "B",
+   "answer_status": "verified",
+   "explanation": "Pancreatitis — niacin ลด TG → ป้องกัน pancreatitis จาก hypertriglyceridemia",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      49
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      49
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_152"
+  },
+  {
+   "id": "END-43-MCQ-153",
+   "block": "END",
+   "cohort": 43,
+   "n": 153,
+   "type": "MCQ",
+   "stem": "What is the initiate consequences after 6 hours of fasting?",
+   "options": {
+    "A": "Glycogenesis",
+    "B": "Glycogenolysis",
+    "C": "Lipolysis",
+    "D": "Gluconeogenesis",
+    "E": "Proteolysis"
+   },
+   "answer": "D",
+   "answer_status": "disputed",
+   "explanation": "Gluconeogenesis — fasting 6 ชม. → hepatic glycogenolysis\n⚠️ เฉลยขัดกับ AI",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      49
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      49
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_153"
+  },
+  {
+   "id": "END-43-MCQ-154",
+   "block": "END",
+   "cohort": 43,
+   "n": 154,
+   "type": "MCQ",
+   "stem": "What is the main cause of cellular dehydration in DM patient?",
+   "options": {
+    "A": "Hyponatremia",
+    "B": "Hypokalemia",
+    "C": "Hyperlipidemia",
+    "D": "Acidosis",
+    "E": "Hyperosmolarity"
+   },
+   "answer": "E",
+   "answer_status": "verified",
+   "explanation": "Hyperosmolarity — hyperosmolarity",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      49
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      49
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_154"
+  },
+  {
+   "id": "END-43-MCQ-155",
+   "block": "END",
+   "cohort": 43,
+   "n": 155,
+   "type": "MCQ",
+   "stem": "In diabetic patient, ketoacidosis is usually found. What is the cause of ketoacidosis?",
+   "options": {
+    "A": "Insulin resistance",
+    "B": "Hyperinsulinemia",
+    "C": "Shifting to fat metabolism as fuel resource",
+    "D": "High breakdown of peripheral muscle causes high level plasma amino acid",
+    "E": "Decrease beta-oxidation"
+   },
+   "answer": "C",
+   "answer_status": "verified",
+   "explanation": "Shifting to fat metabolism as fuel resource — insulin ขาด → ใช้ fat เป็นพลังงาน → ketone",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      50
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      50
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_155"
+  },
+  {
+   "id": "END-43-MCQ-156",
+   "block": "END",
+   "cohort": 43,
+   "n": 156,
+   "type": "MCQ",
+   "stem": "Who should undergo diabetes screening the most?",
+   "options": {
+    "A": "A woman who just deliver 4000-gram infant",
+    "B": "A 20 year-old man who his sister has DM type 1",
+    "C": "A 3 year-old children who his great-grandfather died with DM2",
+    "D": "A 30-year-old woman who plasma glucose is 126 mg/dl",
+    "E": "A 30-year-old man who HDL level is 50 mg/dl"
+   },
+   "answer": "B",
+   "answer_status": "disputed",
+   "explanation": "A 20 year-old man who his sister has DM type 1 — คลอดลูก 4000 g (macrosomia) → เสี่ยง GDM/T2DM\n⚠️ เฉลยขัดกับ AI",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      50
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      50
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_156"
+  },
+  {
+   "id": "END-43-MCQ-157",
+   "block": "END",
+   "cohort": 43,
+   "n": 157,
+   "type": "MCQ",
+   "stem": "What is mechanism of hyperglycemia T2DM?",
+   "options": {
+    "A": "Increase hepatic insulin sensitivity",
+    "B": "Increase hepatic gluconeogenesis",
+    "C": "Increase adipocyte insulin resistance",
+    "D": "Decrease renal glucose excretion",
+    "E": "Decrease glucose uptake in muscle."
+   },
+   "answer": "C",
+   "answer_status": "disputed",
+   "explanation": "Increase adipocyte insulin resistance — T2DM: hepatic gluconeogenesis ↑ (+ insulin resistance ที่ muscle/adipose)\n⚠️ ผู้เฉลยวงไว้ 2 ตัว (C, E) · ต้นฉบับวงไว้หลายตัว",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      50
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      50
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_157"
+  },
+  {
+   "id": "END-43-MCQ-158",
+   "block": "END",
+   "cohort": 43,
+   "n": 158,
+   "type": "MCQ",
+   "stem": "A 26-year-old man T2DM with heart failure comes to the doctor. After the attending, the doctor stops his oral hyperglycemia. His symptoms improved. What is his oral hyperglycemia?",
+   "options": {
+    "A": "Biguanide",
+    "B": "Thiazolidenedione",
+    "C": "Sulfonylurea",
+    "D": "DDP-4 inhibitor",
+    "E": "Alpha-glucosidase inhibitor"
+   },
+   "answer": "B",
+   "answer_status": "verified",
+   "explanation": "Thiazolidenedione — TZD → HF",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      51
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      51
+     ]
+    }
+   ],
+   "tags": [
+    "end-4243-tzd-hf"
+   ],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_158"
+  },
+  {
+   "id": "END-43-MCQ-159",
+   "block": "END",
+   "cohort": 43,
+   "n": 159,
+   "type": "MCQ",
+   "stem": "Why does hypoglycemia occur in Addison’s disease patient?",
+   "options": {
+    "A": "Decrease insulin",
+    "B": "Increase glycogen synthesis",
+    "C": "Decrease glycolysis",
+    "D": "Decrease gluconeogenesis",
+    "E": "Increase GLUT1"
+   },
+   "answer": "D",
+   "answer_status": "verified",
+   "explanation": "Decrease gluconeogenesis — cortisol ขาด → gluconeogenesis ↓",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      51
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      51
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_159"
+  },
+  {
+   "id": "END-43-MCQ-160",
+   "block": "END",
+   "cohort": 43,
+   "n": 160,
+   "type": "MCQ",
+   "stem": "Which one of following hypoglycemic agent is associated with congestive heart failure?",
+   "options": {
+    "A": "Biguanide",
+    "B": "Thiazolidinedione",
+    "C": "Sulfonylurea",
+    "D": "DPP-4inhibitor",
+    "E": "Alpha-glucosidase inhibitor"
+   },
+   "answer": "B",
+   "answer_status": "verified",
+   "explanation": "Thiazolidinedione — TZD สัมพันธ์กับ CHF",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      51
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      51
+     ]
+    }
+   ],
+   "tags": [
+    "end-4243-tzd-hf"
+   ],
+   "source": "import",
+   "audit_ref": "end_42-43_MCQ_160"
+  }
+ ]
+}

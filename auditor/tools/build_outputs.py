@@ -177,7 +177,8 @@ def build_medlib(sets):
         bdir = ROOT / "data" / "blocks" / B
         block = load(bdir / "block.json")
         meta = inv[s["set_id"]]
-        c, t = int(s["cohort"]), s["type"]
+        # combined archives ("42-43") are listed on the site under one cohort number (inventory: medlib_cohort)
+        c, t = int(meta.get("medlib_cohort") or s["cohort"]), s["type"]
         pid = {"exam": f"{t}{c}", "key": f"{t}{c}-KEY"}
         # a second answer key (another person's) is listed as key too: key2 → <T><c>-KEY2 (only once downloaded)
         files = {r: f for r, f in meta["files"].items() if f.get("pages")}
@@ -185,7 +186,7 @@ def build_medlib(sets):
         papers = [x for x in block.get("papers", []) if x["id"] not in pid.values() and not (x.get("cohort") == c and x.get("type") == t)]
         for role, f in files.items():
             base_role = "key" if role.startswith("key") else role
-            papers.append({"id": pid[role], "title": f"{'เฉลย ' if base_role == 'key' else ''}{t} {meta['block_name']} [Med PSU {c}]{' (ฉบับที่ ' + role[3:] + ')' if role.startswith('key') and role != 'key' else ''}",
+            papers.append({"id": pid[role], "title": f"{'เฉลย ' if base_role == 'key' else ''}{t} {meta['block_name']} [Med PSU {s['cohort']}]{' (ฉบับที่ ' + role[3:] + ')' if role.startswith('key') and role != 'key' else ''}",
                            "cohort": c, "type": t, "role": base_role, "pages": f["pages"],
                            "drive_file_id": f["drive_file_id"], "drive_path": f["drive_path"]})
         papers.sort(key=lambda x: (-x["cohort"], x["type"], x["role"] != "exam"))
@@ -210,7 +211,7 @@ def build_medlib(sets):
                        "refs": refs, "tags": [x for x in [a["duplicate_group"]] if x], "source": "import",
                        "audit_ref": q["id"]} | ({"also_accept": q["also_accept"]} if q.get("also_accept") else {}))
         out = {"meta": {"set_id": set_name, "block": B, "cohort": c, "type": t,
-                        "title": f"{t} {meta['block_name']} · Med PSU {c}",
+                        "title": f"{t} {meta['block_name']} · Med PSU {s['cohort']}",
                         **({"time_limit_min": meta["time_limit_min"]} if meta.get("time_limit_min") else {}), "n_source_items": s["n_source_items"],
                         "skipped": [q["number"] for q in s["questions"] if q["audit"]["answer_status"] == "skipped"],
                         "generated_by": "auditor/tools/build_outputs.py — do not edit by hand"},
