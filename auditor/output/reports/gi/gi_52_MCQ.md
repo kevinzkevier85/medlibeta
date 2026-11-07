@@ -48,5 +48,20 @@ AI ตอบตรงกับเฉลยต้นฉบับ **88/97** ข้
 
 ## กลุ่มข้อที่ถามเรื่องเดียวกันในชุดนี้
 
+- `gi-caput-medusae`: ข้อ 2
+- `gi-stab-right-hypochondrium`: ข้อ 4
+- `gi-posterior-gastric-perforation-supine`: ข้อ 5
 - `gi-gastrin-mucosal-hypertrophy`: ข้อ 14, 39
+- `gi-acid-tide-secretin`: ข้อ 28
 - `gi-ileal-resection-bile-acid`: ข้อ 30, 37, 82
+- `gi-acid-reflux-secondary-peristalsis`: ข้อ 36
+- `gi-hbv-varices`: ข้อ 40
+- `gi-barrett`: ข้อ 43
+- `gi-hpylori-complication`: ข้อ 44
+- `gi-reflux-esophagitis-obese`: ข้อ 45
+- `gi-hemorrhoid-pregnancy`: ข้อ 46
+- `gi-capillaria`: ข้อ 64
+- `gi-opv-reversion`: ข้อ 66
+- `gi-post-polio`: ข้อ 67
+- `gi-hev-pregnancy`: ข้อ 68
+- `gi-salmonella-h2s`: ข้อ 71

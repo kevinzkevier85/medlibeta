@@ -29,6 +29,7 @@
 | set_id | ข้อ | สถานะ |
 |---|---|---|
 | gi_52_MCQ | 100 | source_agree 86, source_disagree 5, source_unverified 4, skipped 5 |
+| gi_51_MCQ | 99 | recall · เฉลยวงแดงอ่านด้วยตา · source_agree 36, source_disagree 8, ai_generated 10, drafted 2, skipped 43 |
 
 ## Waiting for user
 - `REVIEW.md`: 89 รายการ (Endocrine MCQ ทุกรุ่น)
