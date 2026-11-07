@@ -1,5 +1,11 @@
 # Next tasks
 
+## เสร็จแล้ว — v0.16.0 (2026-11-07) KF Endocrine 51, 50, 49, 47 · branch kel-end-kf-51-47
+- ทำด้วย subagent ทีละปี + review ทุกชุด (แผน: docs/superpowers/plans/2026-11-07-end-kf-51-47.md)
+- ถัดไป: KF Endocrine 46, 45, 44 (เฉลย 2 ไฟล์), 42-43 (ไฟล์รวม 2 รุ่น, เฉลย 3 ไฟล์)
+- ผู้ใช้: หาเฉลย KF 51 ที่ครบ (ไฟล์ปัจจุบันหน้า 3–4 เป็นของชุด 50)
+- ค้าง (minor จาก review): autoMatch เป็น substring ไม่สนคำปฏิเสธ — คำตอบทิศตรงข้ามบางแบบยังได้คะแนน ต้องใช้ปุ่มตัดสินเอง; พิจารณาเพิ่มกติกาตรวจคำปฏิเสธใน quizcore
+
 ## เสร็จแล้ว — v0.15.0 (2026-11-07) KF Endocrine ชุด 52 · branch kel-end-kf-52
 - ข้อย่อยแสดงรูปได้ (image / key_image) · CVS KF 52 ข้อ 9.3 รูปเพิ่งแสดงครั้งแรก
 - ตรวจ: node tools/validate.cjs · node _test/kf_check.mjs END 52 · node _test/quizcore.test.cjs
