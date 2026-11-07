@@ -670,7 +670,7 @@ window.MedLibQuizUI = function (ML) {
       const q = curQ(c), r = c.r; if (!q || !r || r.chk[q.id]) return true;
       r.ans[q.id] = t.dataset.opt;
       if (c.single || r.mode === "practice") { r.chk[q.id] = true; graded(q, r); }
-      if (!c.single) save();
+      save();   // also on the single-question page: the review queue may have changed
       rerender();
       const ex = $(".qcard .explain"); if (ex) ex.scrollIntoView({ block: "nearest", behavior: "smooth" });
       return true;
@@ -680,7 +680,7 @@ window.MedLibQuizUI = function (ML) {
       const o = r.ov[q.id] = r.ov[q.id] || {};
       if (t.dataset.ov === "auto") delete o[t.dataset.item]; else o[t.dataset.item] = Number(t.dataset.ov);
       if (r.chk[q.id]) graded(q, r);
-      if (!c.single) save(); rerender(); return true;
+      save(); rerender(); return true;
     }
     const z = t.dataset.z; if (!z) return false;
     const q = curQ(c);
@@ -726,7 +726,15 @@ window.MedLibQuizUI = function (ML) {
     if (z === "review") {
       const b = ML.findBlock(t.dataset.b); if (!b) return true;
       const ids = C.reviewDue(P(), ML.examsOf(b).filter((x) => C.counts(x, kov())).map((x) => x.id), Date.now());
-      makeMix(b, `ทบทวนวันนี้ · ${new Date().toLocaleDateString("th-TH", { day: "numeric", month: "short" })}`, ids); return true;
+      if (!ids.length) return true;
+      // one review set per block, refreshed each time (old ones would pile up); an unfinished round of the old list is closed
+      const id = `review-${b.id}`, old = P().mixes[id];
+      if (!old || old.qids.join() !== ids.join()) {
+        (P().rounds[`${b.id}/@${id}`] || []).forEach((r) => { if (r && !r.done) { r.done = true; r.abandoned = true; r.finished = Date.now(); } });
+        P().mixes[id] = { block: b.id, title: `ทบทวนวันนี้ · ${new Date().toLocaleDateString("th-TH", { day: "numeric", month: "short" })}`, qids: ids, created: Date.now() };
+        C.touch(P(), "mixes", id); save();
+      }
+      location.hash = `#/set/${enc(b.id)}/@${enc(id)}`; return true;
     }
     if (z === "mixtopic") {
       const b = (t.dataset.b && ML.findBlock(t.dataset.b)) || c.b; if (!b) return true;
