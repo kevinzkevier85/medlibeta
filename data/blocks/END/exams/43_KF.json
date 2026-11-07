@@ -1,0 +1,2546 @@
+{
+ "meta": {
+  "set_id": "43_KF",
+  "block": "END",
+  "cohort": 43,
+  "type": "KF",
+  "title": "KF Endocrine · Med PSU 43",
+  "generated_by": "auditor/tools/build_kf.py from auditor/data/work/end_42-43_KF.kf.json — do not edit by hand"
+ },
+ "questions": [
+  {
+   "id": "END-43-KF-001",
+   "block": "END",
+   "cohort": 43,
+   "n": 1,
+   "type": "KF",
+   "case": "Hormone แบ่งเป็นประเภทต่างๆตามการ transport to target cell ได้ 2 forms โจทย์ถามว่า 2 forms ที่ว่านี้คืออะไร และให้ยกตัวอย่าง hormone ในแต่ละ form มาอย่างละ 2 ตัว",
+   "items": [
+    {
+     "id": "1.1",
+     "prompt": "Form 1 of hormone transport to the target cell",
+     "format": "short",
+     "accepted": [
+      "free form",
+      "free hormone",
+      "freely",
+      "free in plasma",
+      "unbound",
+      "dissolve",
+      "water-soluble",
+      "water soluble",
+      "ละลาย"
+     ],
+     "source_key": "Water-soluble : ละลายไปกับ plasma ได้เลย (key) · Free form : ละลายใน plasma แล้วแพร่ออกจาก capillaries → ISF → target cell (key2) · Free form : ละลายใน plasma แล้วแพร่ออกจาก capillaries เข้า ISF ไปยัง target (key3)",
+     "explanation": "Hormone ที่ละลายน้ำ (peptide, catecholamine) เดินทางในพลาสมาแบบอิสระ (free form) แล้วแพร่ออกจากหลอดเลือดฝอยสู่ interstitial fluid และ target cell"
+    },
+    {
+     "id": "1.2",
+     "prompt": "Give 2 examples of hormones in form 1 (free / water-soluble)",
+     "format": "short",
+     "accepted": [
+      "insulin",
+      "glucagon",
+      "tsh",
+      "acth",
+      "luteinizing",
+      "follicle",
+      "fsh",
+      "growth hormone",
+      "prolactin",
+      "oxytocin",
+      "vasopressin",
+      "adh",
+      "epinephrine",
+      "norepinephrine",
+      "adrenaline",
+      "noradrenaline",
+      "catecholamine",
+      "parathyroid hormone",
+      "pth",
+      "gnrh",
+      "trh",
+      "crh",
+      "ghrh",
+      "somatostatin",
+      "hcg",
+      "calcitonin"
+     ],
+     "key_text": "e.g. TSH, ACTH, insulin, LH, epinephrine, norepinephrine",
+     "source_key": "ex. TSH, ACTH (key) · Catecholamine เช่น NE และ Peptide เช่น LH (key2) · insulin (peptide), epinephrine (amine) (key3)",
+     "explanation": "ตัวอย่างฮอร์โมนกลุ่มละลายน้ำ: peptide (TSH, ACTH, LH, insulin) และ amine ชนิด catecholamine (epinephrine, norepinephrine) ซึ่งไม่ต้องจับ carrier protein"
+    },
+    {
+     "id": "1.3",
+     "prompt": "Form 2 of hormone transport to the target cell",
+     "format": "short",
+     "accepted": [
+      "protein binding",
+      "protein-binding",
+      "protein bound",
+      "protein-bound",
+      "bound to protein",
+      "bound to plasma protein",
+      "plasma protein",
+      "carrier protein",
+      "binding protein",
+      "binding globulin",
+      "จับกับ plasma protein",
+      "จับ plasma protein",
+      "จับกับ protein"
+     ],
+     "source_key": "Steroid hormone : ขนส่งโดยจับกับ plasma protein เช่น globulin, actin [sic] (key) · Protein binding → จับ plasma protein (key2) · Protein binding : ขนส่งโดยจับกับ plasma protein (Albumin, CBG, SHBG, ABG) (key3)",
+     "explanation": "Hormone ที่ไม่ละลายน้ำ (steroid, thyroid hormone) ขนส่งโดยจับกับ plasma protein (albumin, CBG, SHBG, TBG) มีเฉพาะส่วน free เท่านั้นที่เข้า target cell ได้ ([sic] 'actin' ในเฉลย key น่าจะหมายถึง albumin)"
+    },
+    {
+     "id": "1.4",
+     "prompt": "Give 2 examples of hormones in form 2 (protein-bound)",
+     "format": "short",
+     "accepted": [
+      "cortisol",
+      "aldosterone",
+      "thyroxine",
+      "thyroid hormone",
+      "testosterone",
+      "estradiol",
+      "estrogen",
+      "oestrogen",
+      "progesterone",
+      "t4",
+      "t3",
+      "triiodothyronine",
+      "calcitriol",
+      "vitamin d",
+      "dhea"
+     ],
+     "key_text": "e.g. cortisol, aldosterone, thyroxine (T4), testosterone, estradiol",
+     "source_key": "ex cortisol, aldosterone (key) · Thyroid hormone เช่น Thyroxine และ Steroid hormone เช่น Cortisol (key2) · Thyroid HM และ steroid HM เช่น thyroxine, cortisol (key3)",
+     "explanation": "กลุ่มที่ต้องจับ carrier protein: steroid hormone (cortisol, aldosterone, sex steroids) และ thyroid hormone (T4, T3)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF43",
+     "pages": [
+      1
+     ]
+    },
+    {
+     "paper": "KF43-KEY",
+     "pages": [
+      1
+     ]
+    }
+   ],
+   "tags": [
+    "Med42-43",
+    "hormone transport",
+    "peptide hormone",
+    "steroid hormone"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "Free form (water-soluble: peptide, catecholamine) ละลายใน plasma ไปได้เลย · Protein-binding form (steroid, thyroid hormone) ต้องจับ plasma protein (albumin, CBG, SHBG, TBG) ขนส่ง"
+  },
+  {
+   "id": "END-43-KF-002",
+   "block": "END",
+   "cohort": 43,
+   "n": 2,
+   "type": "KF",
+   "case": "Explain the main structure & characters of hypothalamic control on: 2.1) Anterior pituitary  2.2) Posterior pituitary",
+   "items": [
+    {
+     "id": "2.1a",
+     "prompt": "2.1 Anterior pituitary — the vascular link between hypothalamus and anterior pituitary",
+     "format": "short",
+     "accepted": [
+      "portal",
+      "hypophyseal portal",
+      "hypothalamic-hypophyseal portal",
+      "hypothalamo-hypophyseal portal",
+      "hypophysial portal"
+     ],
+     "source_key": "มี hypophyseal portal circulation ใช้ transport hormone จาก hypothalamus มาที่ anterior pituitary (key) · hypothalamic-hypophyseal-portal system ในการส่ง releasing/inhibiting factor (key2) · primary plexus → portal plexus → secondary plexus เรียกว่า Portal Hypophyseal Circulation (key2/key3)",
+     "explanation": "Hypothalamus ควบคุม anterior pituitary ทางเลือด: capillary primary plexus ที่ median eminence → portal veins (hypophyseal portal circulation) → secondary plexus ใน anterior pituitary"
+    },
+    {
+     "id": "2.1b",
+     "prompt": "2.1 Anterior pituitary — what do hypothalamic neurons send to the anterior pituitary?",
+     "format": "short",
+     "accepted": [
+      "releasing",
+      "inhibiting",
+      "inhibitory",
+      "releasing hormone",
+      "releasing factor",
+      "inhibiting hormone",
+      "inhibiting factor",
+      "สร้าง hormone"
+     ],
+     "key_text": "releasing / inhibiting factors (hormones) from small-bodied (parvocellular) neurons in hypothalamic nuclei (arcuate, paraventricular, ventromedial, medial preoptic, periventricular) → act on the 5 tropes (gonadotroph, thyrotroph, corticotroph, somatotroph, lactotroph)",
+     "source_key": "มีท่อหมด 5 troph ในการสร้าง hormone ได้แก่ Gonadotroph, Thyrotroph, Corticotroph, Somatotroph, Lactotroph ทำงานเมื่อมี hormone จาก hypothalamus มากระตุ้น (key) · small-bodied neurons จาก nuclei ใน 3rd ventricle เช่น Arcuate nuclei หลั่ง releasing/inhibitory factor ... จับกับ receptor บน tropes (key2) · nucleus จาก hypothalamus ได้แก่ arcuate, paraventricular, ventromedial nucleus และ medial preoptic, periventricular area (key3)",
+     "explanation": "Small (parvocellular) neurosecretory neurons ใน hypothalamic nuclei หลั่ง releasing hormone (เช่น TRH, CRH, GnRH, GHRH) หรือ inhibiting hormone (เช่น dopamine, somatostatin) ไปควบคุมการหลั่ง hormone ของแต่ละ troph"
+    },
+    {
+     "id": "2.2a",
+     "prompt": "2.2 Posterior pituitary — hormone made in the supraoptic nucleus and released from the posterior pituitary",
+     "format": "short",
+     "accepted": [
+      "adh",
+      "vasopressin",
+      "antidiuretic"
+     ],
+     "source_key": "ADH (vasopressin) (key) · Supraoptic nucleus → ADH (vasopressin) (key2/key3)",
+     "explanation": "Magnocellular neuron ใน supraoptic nucleus สร้าง ADH (vasopressin) ส่งมาเก็บและหลั่งที่ posterior pituitary"
+    },
+    {
+     "id": "2.2b",
+     "prompt": "2.2 Posterior pituitary — hormone made in the paraventricular nucleus and released from the posterior pituitary",
+     "format": "short",
+     "accepted": [
+      "oxytocin"
+     ],
+     "source_key": "Oxytocin (key) · Paraventricular nucleus → oxytocin (key2/key3)",
+     "explanation": "Magnocellular neuron ใน paraventricular nucleus สร้าง oxytocin ส่งมาหลั่งที่ posterior pituitary"
+    },
+    {
+     "id": "2.2c",
+     "prompt": "2.2 Posterior pituitary — how do the hormones get from the hypothalamus to the posterior pituitary?",
+     "format": "short",
+     "accepted": [
+      "axon",
+      "hypothalamo-hypophyseal",
+      "hypothalamohypophyseal",
+      "hypothalamic-hypophyseal tract",
+      "hypothalamic hypophyseal tract",
+      "hypophyseal tract",
+      "nerve tract",
+      "neuronal"
+     ],
+     "key_text": "axons from hypothalamus extend to the posterior pituitary (hypothalamo-hypophyseal tract); hormones are stored in axon terminals and released into the blood; the posterior pituitary itself does not synthesize hormone",
+     "source_key": "ไม่มีหน้าที่ในการสร้าง hormone แต่เป็นแหล่งเก็บ hormone ที่หลั่งจาก hypothalamus คือ ADH และ Oxytocin; มี Axon ยื่นยาวจาก Hypothalamus มาที่ Posterior pituitary เลย (key) · Axon ผ่าน hypothalamo-hypophyseal tract (key2) · axon ยื่นยาวจาก hypothalamus มายัง posterior pituitary gland และเก็บ HM ไว้ใน axon terminal แล้วหลั่ง HM เข้า blood circulation (key3)",
+     "explanation": "Posterior pituitary ไม่สร้าง hormone: axon ของ magnocellular neuron ยื่นลงมาตาม hypothalamo-hypophyseal tract เก็บ ADH/oxytocin ที่ axon terminal แล้วหลั่งเข้า blood โดยตรง ไม่มี portal system"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF43",
+     "pages": [
+      1
+     ]
+    },
+    {
+     "paper": "KF43-KEY",
+     "pages": [
+      1
+     ]
+    }
+   ],
+   "tags": [
+    "Med42-43",
+    "hypothalamus",
+    "anterior pituitary",
+    "posterior pituitary"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "Anterior pituitary (adenohypophysis): hypothalamic neurons ส่ง releasing/inhibiting factor ผ่าน hypophyseal portal circulation ไปควบคุม 5 trophs · Posterior pituitary (neurohypophysis): ไม่สร้าง hormone เป็นแหล่งเก็บ ADH (supraoptic) และ oxytocin (paraventricular) ที่ส่งมาตาม axon (hypothalamo-hypophyseal tract)"
+  },
+  {
+   "id": "END-43-KF-003",
+   "block": "END",
+   "cohort": 43,
+   "n": 3,
+   "type": "KF",
+   "case": "ให้อธิบายว่าทำไมเลือดเป็นกรดในคนที่มี insulin deficiency and no treatment",
+   "items": [
+    {
+     "id": "3.1",
+     "prompt": "Insulin deficiency — what process increases in adipose tissue?",
+     "format": "short",
+     "accepted": [
+      "lipolysis",
+      "fat breakdown",
+      "ย่อยไขมัน",
+      "สลายไขมัน"
+     ],
+     "source_key": "↑ lipolysis ใน adipose tissue (key, key3) · lipolysis เพื่อเพิ่ม blood fatty acid (key2)",
+     "explanation": "ขาด insulin → hormone-sensitive lipase ถูก disinhibit → lipolysis ใน adipose เพิ่ม ได้ free fatty acid และ glycerol"
+    },
+    {
+     "id": "3.2",
+     "prompt": "The fatty acids undergo β-oxidation in the liver and produce what?",
+     "format": "short",
+     "accepted": [
+      "ketone",
+      "ketogenesis",
+      "acetoacetate",
+      "acetoacetic",
+      "hydroxybutyrate",
+      "hydroxybutyric",
+      "คีโตน"
+     ],
+     "source_key": "↑ fatty acid ในเลือด → ↑ ketone body (key) · β-oxidation/ketogenesis → acetoacetic acid และ β-hydroxybutyric acid (key2) · ↑ ketone body (key3)",
+     "explanation": "Acetyl-CoA จาก β-oxidation ที่ตับถูกเปลี่ยนเป็น ketone bodies (acetoacetate, β-hydroxybutyrate, acetone) ซึ่งเป็นกรด"
+    },
+    {
+     "id": "3.3",
+     "prompt": "Result: the blood becomes acidic — name the condition",
+     "format": "short",
+     "accepted": [
+      "ketoacidosis",
+      "metabolic acidosis",
+      "dka",
+      "keto acidosis"
+     ],
+     "source_key": "ketoacidosis (Metabolic acidosis) (key, key2, key3)",
+     "explanation": "Ketone bodies สะสม → H⁺ เพิ่ม HCO₃⁻ ลด = diabetic ketoacidosis (anion-gap metabolic acidosis)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF43",
+     "pages": [
+      1
+     ]
+    },
+    {
+     "paper": "KF43-KEY",
+     "pages": [
+      1
+     ]
+    }
+   ],
+   "tags": [
+    "Med42-43",
+    "diabetic ketoacidosis",
+    "insulin deficiency"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "Insulin deficiency → ↑ hormone-sensitive lipase → ↑ lipolysis → ↑ FFA ในเลือด → β-oxidation + ketogenesis → ↑ ketone bodies (acetoacetate, β-hydroxybutyrate) → ketoacidosis (metabolic acidosis)"
+  },
+  {
+   "id": "END-43-KF-004",
+   "block": "END",
+   "cohort": 43,
+   "n": 4,
+   "type": "KF",
+   "case": "ผู้หญิงเป็น Cushing syndrome แล้วเกิด Masculinization และ Irregular menstruation จงอธิบายเหตุผลที่เป็นไปได้มา 2 ข้อ",
+   "items": [
+    {
+     "id": "4.1",
+     "prompt": "Reason 1 — cause of excess androgen: ACTH-dependent (which condition?)",
+     "format": "short",
+     "accepted": [
+      "cushing's disease",
+      "cushing disease",
+      "cushing’s disease",
+      "pituitary",
+      "acth-secreting",
+      "acth secreting",
+      "acth-producing",
+      "acth producing",
+      "ectopic acth",
+      "acth-dependent",
+      "acth dependent"
+     ],
+     "key_text": "Cushing's disease: anterior pituitary (adenoma) หลั่ง ACTH ↑ → adrenal ผลิต androgen ↑",
+     "source_key": "Cushing's disease → anterior pituitary gl. หลั่ง ACTH ↑ → androgen ↑ → masculinization, irregular menstruation (key) · การเพิ่มขึ้นของ ACTH อาจมาจาก pituitary หรือจาก tumor ที่อื่น กระตุ้น adrenal cortex สร้าง adrenal androgen มากผิดปกติ (key2) · Cushing's disease → Ant. pituitary หลั่ง ACTH ↑ → ↑androgen → masculinization (key3)",
+     "explanation": "ACTH สูงจาก pituitary adenoma (Cushing's disease) หรือ ectopic ACTH กระตุ้น zona reticularis ของ adrenal cortex ให้สร้าง adrenal androgen (DHEA, androstenedione) มากเกิน ในผู้หญิงทำให้ masculinization"
+    },
+    {
+     "id": "4.2",
+     "prompt": "Reason 2 — adrenal cause of excess androgen (ACTH-independent)",
+     "format": "short",
+     "accepted": [
+      "adrenal adenoma",
+      "adrenal tumor",
+      "adrenal tumour",
+      "adrenal carcinoma",
+      "adrenal neoplasm",
+      "adrenal cortex tumor",
+      "adrenal cortical tumor",
+      "adrenal cortex adenoma",
+      "adrenal cortical adenoma",
+      "adrenal cortex abnormal",
+      "adrenal cortex เกิดความผิดปกติ"
+     ],
+     "key_text": "Adrenal adenoma/tumor ที่ adrenal cortex หลั่ง androgen ↑ เอง",
+     "source_key": "Adrenal adenoma → adrenal cortex หลั่ง androgen ↑ → masculinization, irregular menstruation (key) · Adrenal cortex เกิดความผิดปกติ → สร้าง adrenal androgen มากผิดปกติ (key2) · Adrenal tumor → หลั่ง androgen ↑ → masculinization (key3)",
+     "explanation": "เนื้องอก adrenal cortex (adenoma/carcinoma) สร้าง androgen เองโดยไม่ขึ้นกับ ACTH ทำให้เกิด virilization ในผู้หญิง"
+    },
+    {
+     "id": "4.3",
+     "prompt": "Why does the excess androgen (and cortisol) cause irregular menstruation?",
+     "format": "short",
+     "accepted": [
+      "gnrh",
+      "negative feedback",
+      "gonadotropin",
+      "gonadotrophin",
+      "fsh",
+      "ovulation",
+      "anovulation"
+     ],
+     "key_text": "androgen/cortisol ↑ → ⊖ GnRH → ↓ FSH, LH → ไม่ ovulate → irregular menstruation",
+     "source_key": "androgen ↑ → irregular menstruation (key, key2) · ↑ACTH → ↑cortisol → ⊖GnRH → ↓FSH,LH → irregular menstruation; ↑androgen → ⊖GnRH → ↓FSH,LH → irregular menstruation (key3)",
+     "explanation": "ฮอร์โมนเพศชายและ cortisol ที่เกินไปกด GnRH จาก hypothalamus (negative feedback/ยับยั้งตรง) → LH/FSH ลดลง → ไม่มี ovulation → ประจำเดือนผิดปกติ"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF43",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "KF43-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [
+    "Med42-43",
+    "Cushing syndrome",
+    "androgen",
+    "adrenal"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "สาเหตุ ACTH-dependent (Cushing's disease จาก pituitary หรือ ectopic ACTH) กระตุ้น adrenal cortex สร้าง androgen เกิน · หรือ adrenal tumor/adenoma หลั่ง androgen เอง → androgen ↑ → masculinization; androgen/cortisol เกิน ยับยั้ง GnRH → ↓ FSH/LH → irregular menstruation"
+  },
+  {
+   "id": "END-43-KF-005",
+   "block": "END",
+   "cohort": 43,
+   "n": 5,
+   "type": "KF",
+   "case": "Why does an Addison's disease patient has skin darkening?",
+   "items": [
+    {
+     "id": "5.1",
+     "prompt": "Which hormone is deficient in Addison's disease (removing the negative feedback)?",
+     "format": "short",
+     "accepted": [
+      "cortisol",
+      "glucocorticoid"
+     ],
+     "source_key": "Aldosterone, cortisol ↓ (key) · ↓ Cortisol และ Aldosterone (key2) · ↓ cortisol & ↓ aldosterone (key3)",
+     "explanation": "Primary adrenal insufficiency ทำให้ cortisol (และ aldosterone) ลดลง ไม่มี negative feedback ต่อ pituitary"
+    },
+    {
+     "id": "5.2",
+     "prompt": "Effect on ACTH (anterior pituitary) — increase or decrease?",
+     "format": "short",
+     "accepted": [
+      "acth increase",
+      "acth increased",
+      "acth increases",
+      "acth ↑",
+      "acth↑",
+      "↑acth",
+      "↑ acth",
+      "increased acth",
+      "increase acth",
+      "high acth",
+      "elevated acth",
+      "acth high",
+      "acth elevated",
+      "acth สูง",
+      "acth เพิ่ม",
+      "acth มากขึ้น"
+     ],
+     "source_key": "(Negative feedback) ACTH ↑ ⇒ MSH ↑ (precursor เดียวกัน) (key) · feedback ⊕ การหลั่ง ACTH จาก anterior pituitary (key2) · negative feedback ⊕ การหลั่ง ACTH ↑ (key3)",
+     "explanation": "Cortisol ต่ำ → ACTH จาก anterior pituitary หลั่งมากขึ้น (loss of negative feedback)"
+    },
+    {
+     "id": "5.3",
+     "prompt": "What is the common precursor of ACTH and MSH, and what does MSH act on to darken the skin?",
+     "format": "short",
+     "accepted": [
+      "pomc",
+      "proopiomelanocortin",
+      "pro-opiomelanocortin",
+      "msh",
+      "melanocortin",
+      "melanocyte",
+      "melanin"
+     ],
+     "key_text": "POMC → ACTH + MSH ; MSH จับ melanocortin-1 receptor ที่ melanocyte → melanin synthesis ↑ → hyperpigmentation",
+     "source_key": "MSH ↑ (precursor เดียวกัน) → hyperpigmentation (key) · precursor ในการผลิต ACTH และ MSH เป็นชนิดเดียวกันคือ POMC ... จับ Melanocortin-1 receptor ที่ melanocyte → melanin pigment เพิ่มมากขึ้น (key2) · POMC → ↑ MSH จับ melanocortin R ที่ melanocyte → ⊕ melanin synthesis → hyperpigmentation → dark skin (key3)",
+     "explanation": "ACTH และ α-MSH ถูกตัดมาจาก POMC เดียวกัน ACTH ที่สูงจึงมี MSH สูงตาม ไปจับ MC1R ที่ melanocyte เพิ่ม melanin สร้างสีผิวเข้ม"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF43",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "KF43-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [
+    "Med42-43",
+    "Addison disease",
+    "hyperpigmentation",
+    "POMC"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "Addison's (primary adrenal insufficiency) → cortisol ↓ → ไม่มี negative feedback → ACTH ↑ · ACTH และ MSH มี precursor เดียวกันคือ POMC → MSH ↑ → จับ melanocortin-1 receptor ที่ melanocyte → melanin ↑ → hyperpigmentation"
+  },
+  {
+   "id": "END-43-KF-006",
+   "block": "END",
+   "cohort": 43,
+   "n": 6,
+   "type": "KF",
+   "case": "What is the physiologic basis for polyuria in hyperparathyroidism?",
+   "items": [
+    {
+     "id": "6.1",
+     "prompt": "Hyperparathyroidism causes what change in serum calcium?",
+     "format": "short",
+     "accepted": [
+      "hypercalcemia",
+      "hypercalcaemia",
+      "high calcium",
+      "high serum calcium",
+      "increased calcium",
+      "increased serum calcium",
+      "calcium สูง",
+      "ca2+ สูง",
+      "ca สูง",
+      "↑ ca",
+      "↑ca",
+      "ca2+ ในเลือดสูง",
+      "ca ในเลือด ↑",
+      "ca2+ ในเลือด ↑"
+     ],
+     "source_key": "↑ Ca²⁺ reabsorption, ↑ Ca²⁺ ในเลือด (key, key3) · ผู้ป่วย hyperparathyroidism จะมีภาวะ hypercalcemia (key2)",
+     "explanation": "PTH เพิ่ม Ca²⁺ reabsorption ที่ distal tubule และเพิ่ม bone resorption → serum Ca สูง (และ PO₄³⁻ excretion เพิ่ม)"
+    },
+    {
+     "id": "6.2",
+     "prompt": "What does the hypercalcemia do to the kidney, leading to polyuria?",
+     "format": "short",
+     "accepted": [
+      "nephrogenic",
+      "loss of concentrat",
+      "lose the ability to concentrate",
+      "lose ability to concentrate",
+      "unable to concentrate",
+      "cannot concentrate",
+      "can't concentrate",
+      "impaired concentrat",
+      "ไม่สามารถ concentrate",
+      "สูญเสียความสามารถ",
+      "สูญเสียความสามารถในการ concentrate",
+      "aquaporin",
+      "adh resistan",
+      "adh insensitiv",
+      "concentrating ability",
+      "concentrate urine"
+     ],
+     "key_text": "ไตสูญเสียความสามารถในการ concentrate urine (Ca²⁺ สูงลด aquaporin-2 และ medullary osmotic gradient) → polyuria",
+     "source_key": "Ca²⁺ ในเลือด↑ ⇒ สูญเสียความสามารถในการ concentrate urine ⇒ nephrogenic diabetes insipidus → polyuria (key, key3) · ทำให้ไตสูญเสียความสามารถในการ concentrate urine → polyuria (key2)",
+     "explanation": "Ca²⁺ สูงในท่อไตลดการแสดงออกของ aquaporin-2 และการเกาะตัวของ Ca ใน medulla ทำให้ osmotic gradient ลดลง ไตดูดน้ำกลับไม่เต็มที่ แม้มี ADH → ปัสสาวะมาก"
+    },
+    {
+     "id": "6.3",
+     "prompt": "Name the renal condition that results",
+     "format": "short",
+     "accepted": [
+      "nephrogenic diabetes insipidus",
+      "nephrogenic di",
+      "nephrogenic dm insipidus",
+      "nephrogenic"
+     ],
+     "key_image": "img/END-43-KF-006-key2.jpg",
+     "key_image_caption": "ข้อความอ้างอิงที่แปะในเฉลย key2 (AFP Hyperparathyroidism: nocturia/polyuria จากผลของ calcium ต่อ renal tubule; Nephrogenic DI: ↓ aquaporin-2 และ medullary Ca)",
+     "source_key": "Nephrogenic diabetes insipidus (key, key3 และข้อความอ้างอิงใน key2)",
+     "explanation": "ไตตอบสนองต่อ ADH ลดลง = nephrogenic diabetes insipidus (ADH สูง/ปกติแต่ไตไม่ตอบสนอง)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF43",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "KF43-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [
+    "Med42-43",
+    "hyperparathyroidism",
+    "polyuria",
+    "nephrogenic diabetes insipidus"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "PTH ↑ → hypercalcemia (↑ Ca²⁺ reabsorption ที่ไต/ดึง Ca จากกระดูก) → ไตสูญเสียความสามารถ concentrate urine (nephrogenic diabetes insipidus: ↓ aquaporin-2, ↓ medullary osmotic gradient) → polyuria",
+   "audit_note": "key2 (ผู้เฉลย) ทำเครื่องหมายว่าข้อนี้ 'อยากตอบให้ได้ระดับ channel' (aquaporin-2) แต่คำตอบหลักของทั้ง 3 เฉลยตรงกัน"
+  },
+  {
+   "id": "END-43-KF-007",
+   "block": "END",
+   "cohort": 43,
+   "n": 7,
+   "type": "KF",
+   "case": "อธิบายประโยชน์ และ mechanism ของ RAI มาอย่างละ 1 ข้อ",
+   "items": [
+    {
+     "id": "7.1",
+     "prompt": "Mechanism of RAI",
+     "format": "short",
+     "accepted": [
+      "beta radiation",
+      "beta emission",
+      "beta ray",
+      "beta particle",
+      "β-ray",
+      "β ray",
+      "β-emission",
+      "β emission",
+      "β particle",
+      "β-particle",
+      "β radiation",
+      "ionizing radiation",
+      "radiation",
+      "destroy thyroid",
+      "destroys thyroid",
+      "thyroid parenchyma",
+      "thyroid follicular cell",
+      "รังสี"
+     ],
+     "source_key": "β-ray emission ทำลาย Thyroid gl. → ลดการหลั่ง Thyroid hormone (key) · ปล่อยรังสี β ทำลาย thyroid parenchyma (key2) · แผ่รังสี β ทำลาย thyroid parenchyma → ↓ thyroid hormone (key3)",
+     "explanation": "I-131 ถูก thyroid follicular cell ดูดเข้าไป (ผ่าน NIS) แล้วปล่อยรังสี β ทำลายเซลล์ในต่อม → thyroid hormone ลดลง"
+    },
+    {
+     "id": "7.2",
+     "prompt": "One advantage of RAI",
+     "format": "short",
+     "accepted": [
+      "easy",
+      "simple",
+      "convenient",
+      "oral",
+      "cheap",
+      "inexpensive",
+      "low cost",
+      "no surgery",
+      "without surgery",
+      "non-invasive",
+      "noninvasive",
+      "painless",
+      "outpatient",
+      "บริหารง่าย",
+      "ราคาถูก",
+      "ไม่เจ็บ",
+      "ไม่ต้องผ่าตัด",
+      "ไม่ปวด",
+      "ได้ผลดี",
+      "severe thyrotoxicosis",
+      "mmi"
+     ],
+     "source_key": "รักษา severe thyrotoxicosis กรณีผู้ป่วยไม่ตอบสนอง/แพ้ MMI (key) · บริหารง่าย (easy administration), ไม่ทำให้อาการปวด (key2) · บริหารง่าย, ได้ผลดี, ราคาถูก และไม่ทำให้เจ็บป่วด (key3)",
+     "explanation": "ข้อดี: ให้โดยกินครั้งเดียว บริหารง่าย ราคาถูก ไม่ต้องผ่าตัด ไม่เจ็บ ใช้ได้เมื่อยา antithyroid (MMI) ไม่ได้ผล/แพ้"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF43",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "KF43-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [
+    "Med42-43",
+    "radioactive iodine",
+    "hyperthyroidism"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "RAI (I-131) ถูก follicular cell จับเข้าไป ปล่อยรังสี β ทำลาย thyroid parenchyma → ลดการสร้าง thyroid hormone · ประโยชน์: รักษา severe thyrotoxicosis ผู้ป่วยไม่ต้องผ่าตัด/แพ้ MMI, บริหารง่าย (กิน), ราคาถูก, ไม่เจ็บ"
+  },
+  {
+   "id": "END-43-KF-008",
+   "block": "END",
+   "cohort": 43,
+   "n": 8,
+   "type": "KF",
+   "case": "Glucocorticoid ไป regulate gene transcription อย่างไร",
+   "items": [
+    {
+     "id": "8.1",
+     "prompt": "How does glucocorticoid get into the target cell?",
+     "format": "short",
+     "accepted": [
+      "diffuse",
+      "diffusion",
+      "lipophilic",
+      "lipid soluble",
+      "lipid-soluble",
+      "cross the membrane",
+      "cross cell membrane",
+      "passes through"
+     ],
+     "source_key": "diffuse เข้า cell membrane ได้เลย (key) · diffuse เข้าไปจับกับ intracellular receptor (key2) · Diffuse เข้า cell (key3)",
+     "explanation": "Glucocorticoid เป็น steroid ละลายไขมัน จึงแพร่ผ่าน plasma membrane ได้โดยตรง"
+    },
+    {
+     "id": "8.2",
+     "prompt": "Where is its receptor located, and what does the ligand-receptor complex form?",
+     "format": "short",
+     "accepted": [
+      "cytoplasm",
+      "cytosol",
+      "intracellular",
+      "cytoplasmic",
+      "dimer",
+      "gr-ligand",
+      "nuclear receptor"
+     ],
+     "source_key": "จับกับ receptor ใน cytoplasm (key) · intracellular receptor ใน cytoplasm โดย form เป็น dimer ของ steroid-receptor (GR-ligand complex) (key2) · intracellular R ใน cytoplasm แล้วเกิดเป็น dimerized GR-ligand complex (key3)",
+     "explanation": "Glucocorticoid receptor (GR) อยู่ใน cytoplasm (จับ heat-shock protein) เมื่อจับ ligand จะแยก HSP รวมเป็น dimer แล้วเข้า nucleus"
+    },
+    {
+     "id": "8.3",
+     "prompt": "The complex binds which DNA element, to regulate gene transcription?",
+     "format": "short",
+     "accepted": [
+      "glucocorticoid response element",
+      "glucocorticoid-response element",
+      "glucocorticoid responsive element",
+      "hormone response element",
+      "response element",
+      "gre"
+     ],
+     "source_key": "GRE : Glucocorticoid response element (key, key2, key3)",
+     "explanation": "Complex จับ glucocorticoid response element (GRE) บน DNA แล้วเพิ่มหรือลด transcription ของ gene เป้าหมาย"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF43",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "KF43-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [
+    "Med42-43",
+    "glucocorticoid",
+    "gene transcription",
+    "steroid receptor"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "Glucocorticoid ขนส่งจับ plasma protein → lipophilic ผ่าน cell membrane ได้ → จับ receptor ใน cytoplasm (GR) → dimer GR-ligand complex เข้า nucleus → จับ glucocorticoid response element (GRE) บน DNA → regulate gene transcription"
+  },
+  {
+   "id": "END-43-KF-009",
+   "block": "END",
+   "cohort": 43,
+   "n": 9,
+   "type": "KF",
+   "case": "Simvastatin มีกลไกในการลด cholesterol ในเลือดได้อย่างไร",
+   "items": [
+    {
+     "id": "9.1",
+     "prompt": "Target enzyme of simvastatin",
+     "format": "short",
+     "accepted": [
+      "hmg-coa reductase",
+      "hmg coa reductase",
+      "hmgcoa reductase",
+      "hmg-coa",
+      "hmg coa",
+      "3-hydroxy-3-methylglutaryl"
+     ],
+     "source_key": "HMG-CoA reductase inhibitor (key) · Structural analog ของ HMG-CoA → competitive inhibit HMG-CoA reductase (key2, key3)",
+     "explanation": "Simvastatin ยับยั้งแบบ competitive ที่ HMG-CoA reductase ซึ่งเป็น rate-limiting step ของการสังเคราะห์ cholesterol (HMG-CoA → mevalonate)"
+    },
+    {
+     "id": "9.2",
+     "prompt": "Because hepatic cholesterol falls, what happens to hepatic LDL receptors, and what is the effect on blood LDL?",
+     "format": "short",
+     "accepted": [
+      "increase ldl receptor",
+      "increased ldl receptor",
+      "increases ldl receptor",
+      "↑ ldl receptor",
+      "↑ldl receptor",
+      "ldl receptor ↑",
+      "ldl receptor เพิ่ม",
+      "ldl receptor synthesis",
+      "ldl receptor expression",
+      "upregulat",
+      "ldl uptake",
+      "เพิ่ม ldl receptor",
+      "ตับดึง ldl",
+      "ldl-c ลด",
+      "ldl ลด",
+      "ลด ldl"
+     ],
+     "key_text": "ลดการสร้าง cholesterol ที่ตับ → ↑ LDL receptor → ↑ LDL uptake จากเลือด → LDL-C ในเลือดลดลง (และ ↓ VLDL synthesis)",
+     "key_image": "img/END-43-KF-009-key2.jpg",
+     "key_image_caption": "สไลด์ mechanism of action ของ statin ในเฉลย key2 (inhibit hepatic cholesterol synthesis → ↑ LDL receptor → ↑ LDL uptake, ↓ VLDL secretion)",
+     "source_key": "LDL-C กลับเข้าตับมากขึ้น → LDL-C ในเลือดลดลง; ลดการสร้าง cholesterol ที่ตับ → จับเพิ่ม LDL receptor (key) · ↑ LDL receptor synthesis เพิ่ม LDL uptake จากเลือดเข้าสู่ตับ และลด VLDL synthesis (key2) · ⊕ LDL receptor synthesis → ↑ LDL-C uptake from blood และ ↓ VLDL synthesis → ↓ cholesterol ในเลือด (key3)",
+     "explanation": "Cholesterol ในเซลล์ตับต่ำ → SREBP กระตุ้น gene LDL receptor → ตับดึง LDL จากเลือดมากขึ้น LDL-C ลด; การสร้าง VLDL ลดลงด้วย"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF43",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "KF43-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [
+    "Med42-43",
+    "simvastatin",
+    "HMG-CoA reductase",
+    "cholesterol"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "Statin = HMG-CoA reductase inhibitor (structural analog ของ HMG-CoA, competitive) → ↓ hepatic cholesterol synthesis → ↑ LDL receptor synthesis → ↑ LDL uptake จากเลือดเข้าตับ → LDL-C ในเลือด ↓ (และ ↓ VLDL synthesis)"
+  },
+  {
+   "id": "END-43-KF-010",
+   "block": "END",
+   "cohort": 43,
+   "n": 10,
+   "type": "KF",
+   "case": "อธิบาย Mechanism ของ Metformin กับ Saxagliptin",
+   "items": [
+    {
+     "id": "10.1",
+     "prompt": "Metformin — mechanism of action",
+     "format": "short",
+     "accepted": [
+      "ampk",
+      "↓ hepatic gluconeogenesis",
+      "↓hepatic gluconeogenesis",
+      "decrease hepatic gluconeogenesis",
+      "decreased hepatic gluconeogenesis",
+      "decreases hepatic gluconeogenesis",
+      "reduce hepatic gluconeogenesis",
+      "reduces hepatic gluconeogenesis",
+      "inhibit hepatic gluconeogenesis",
+      "inhibits hepatic gluconeogenesis",
+      "ลด hepatic gluconeogenesis",
+      "↑ insulin sensitivity",
+      "↑insulin sensitivity",
+      "increase insulin sensitivity",
+      "increases insulin sensitivity",
+      "increased insulin sensitivity",
+      "improve insulin sensitivity",
+      "improves insulin sensitivity",
+      "insulin sensitizer",
+      "insulin sensitiser",
+      "เพิ่ม insulin sensitivity"
+     ],
+     "key_text": "activate AMPK → ↓ hepatic gluconeogenesis; ↑ insulin sensitivity → ↑ peripheral glucose uptake (muscle)",
+     "source_key": "↑ insulin sensitivity → ↑ glucose uptake @ muscle; ↓ gluconeogenesis @ liver (key) · activate AMPK ทำให้ ↓ hepatic gluconeogenesis, ↑ insulin sensitivity → เพิ่ม peripheral glucose uptake & utilization (key2) · ⊕ AMPK → ↓ hepatic gluconeogenesis และ ↑ insulin sensitivity ทำให้ ↑ peripheral glucose uptake & utilization (key3)",
+     "explanation": "Metformin กระตุ้น AMPK ที่ตับ → ลด gluconeogenesis และเพิ่ม insulin sensitivity ที่ muscle (glucose uptake ↑); ไม่กระตุ้น insulin secretion จึงไม่ค่อยเกิด hypoglycemia"
+    },
+    {
+     "id": "10.2",
+     "prompt": "Metformin — important adverse effect",
+     "format": "short",
+     "accepted": [
+      "lactic acidosis",
+      "lactic acid",
+      "lactate",
+      "กรดแลคติก"
+     ],
+     "source_key": "side effect : lactic acidosis (key) · ↑ anaerobic glycolysis (อาจทำให้เกิด lactic acid) (key2, ข้อความที่แปะ)",
+     "explanation": "Metformin ยับยั้ง hepatic gluconeogenesis จาก lactate และเพิ่ม anaerobic glycolysis → lactic acidosis (พบน้อยแต่รุนแรง โดยเฉพาะในผู้ที่ไตเสื่อม)"
+    },
+    {
+     "id": "10.3",
+     "prompt": "Saxagliptin — mechanism of action (which enzyme is inhibited, and which incretin is prolonged?)",
+     "format": "short",
+     "accepted": [
+      "dpp-4",
+      "dpp4",
+      "dpp 4",
+      "dpp-iv",
+      "dpp iv",
+      "dipeptidyl peptidase"
+     ],
+     "key_text": "DPP-4 inhibitor → GLP-1 active นานขึ้น → ↑ glucose-dependent insulin secretion, ↓ glucagon, ↓ gastric emptying",
+     "key_image": "img/END-43-KF-010-key2.jpg",
+     "key_image_caption": "ภาพที่แปะหัวหน้า key2: DPP-IV ย่อย active GLP-1 → inactive; GLP-1 ↑ insulin (glucose-dependent), ↓ glucagon, ↓ gastric emptying, ↓ food intake; ข้างขวาคือโน้ต metformin activate AMPK",
+     "source_key": "Saxagliptin : DPP4-inhibitor → GLP-1 active → ↑ insulin secretion (key) · inhibit DPP-4 → prolonged active GLP-1 เพิ่ม insulin synthesis & secretion, ↓ glucagon secretion → ↓ hepatic gluconeogenesis (key2) · inhibit DPP-4 → prolong active GLP-1 → ↑ glucose-dependent insulin release, ↓ glucagon, ↓ gastric emptying (key3)",
+     "explanation": "ยับยั้ง DPP-4 ที่ย่อย GLP-1/GIP → incretin อยู่นาน → insulin หลั่งตามระดับกลูโคส, glucagon ↓, gastric emptying ช้าลง"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF43",
+     "pages": [
+      3
+     ]
+    },
+    {
+     "paper": "KF43-KEY",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [
+    "Med42-43",
+    "metformin",
+    "saxagliptin",
+    "DPP-4 inhibitor"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "Metformin: activate AMPK → ↓ hepatic gluconeogenesis, ↑ insulin sensitivity (↑ peripheral glucose uptake/utilization ที่กล้ามเนื้อ), ↓ intestinal glucose absorption; ผลข้างเคียง lactic acidosis · Saxagliptin: DPP-4 inhibitor → GLP-1 active นานขึ้น → ↑ glucose-dependent insulin secretion, ↓ glucagon, ↓ gastric emptying"
+  },
+  {
+   "id": "END-43-KF-011",
+   "block": "END",
+   "cohort": 43,
+   "n": 11,
+   "type": "KF",
+   "case": "A 60 year-old man, comes with severe headache. BP: 170/100 mmHg, Pulse 80/min. Fasting plasma glucose 155 mg/dL. Serum Na+ 150 mmol/dL. Serum K+ 2.5 mmol/dL. 11.1 What disorder/condition can be cause according to the setting? หลังจากนั้น จึงได้ผลแลปแสดงค่าต่างๆของฮอร์โมนในเลือด ได้ผลดังนี้: Serum cortisol 8.00 am 15 ug/dL · Serum aldosterone 44 ng/dL · Plasma renin activity 1.2 ng/mL/hr. 11.2 What is the disorder this patient most likely to have? 11.3 What is the pathological cause of this disorder?",
+   "items": [
+    {
+     "id": "11.1a",
+     "prompt": "11.1 Blood pressure 170/100 — condition",
+     "format": "short",
+     "accepted": [
+      "hypertension",
+      "high blood pressure",
+      "hypertensive",
+      "ความดันสูง"
+     ],
+     "source_key": "hypertension (key) · ↑ BP (key3)",
+     "explanation": "BP 170/100 mmHg = hypertension (ใน primary aldosteronism จาก Na⁺/น้ำคั่ง ECF volume เพิ่ม)"
+    },
+    {
+     "id": "11.1b",
+     "prompt": "11.1 Fasting plasma glucose 155 mg/dL — condition",
+     "format": "short",
+     "accepted": [
+      "hyperglycemia",
+      "hyperglycaemia",
+      "high blood glucose",
+      "high blood sugar",
+      "น้ำตาลสูง"
+     ],
+     "source_key": "hyperglycemia (key) · ↑ glucose (key3: ปวดหัว → stress → ↑ epinephrine → ↑ blood glucose)",
+     "explanation": "FPG 155 ≥ 126 mg/dL = hyperglycemia (เกินเกณฑ์; key2/key3 อธิบายเพิ่มว่า BP สูง ปวดหัว → stress → epinephrine ↑ และ hypokalemia ลดการหลั่ง insulin)"
+    },
+    {
+     "id": "11.1c",
+     "prompt": "11.1 Serum Na+ 150 — condition",
+     "format": "short",
+     "accepted": [
+      "hypernatremia",
+      "hypernatraemia",
+      "hypernatrimia",
+      "high sodium",
+      "sodium สูง",
+      "na สูง"
+     ],
+     "source_key": "hypernatrimia [sic] (key) · hypernatremia (key3)",
+     "explanation": "Na⁺ 150 (ปกติ 135-145) = hypernatremia เล็กน้อย (aldosterone ดูดกลับ Na⁺ + น้ำตาม; plasma Na ไม่ค่อยเพิ่มมากตามที่ key2 อธิบาย)"
+    },
+    {
+     "id": "11.1d",
+     "prompt": "11.1 Serum K+ 2.5 — condition",
+     "format": "short",
+     "accepted": [
+      "hypokalemia",
+      "hypokalaemia",
+      "hypokalemic",
+      "low potassium",
+      "potassium ต่ำ",
+      "k ต่ำ"
+     ],
+     "source_key": "hypokalaemia (key) · hypokalemia (key3)",
+     "explanation": "K⁺ 2.5 (ปกติ 3.5-5.0) = hypokalemia จาก aldosterone เพิ่ม K⁺ excretion ที่ collecting duct"
+    },
+    {
+     "id": "11.1e",
+     "prompt": "11.1 Which single disorder explains this whole setting (HT, Na ↑, K ↓)?",
+     "format": "short",
+     "accepted": [
+      "hyperaldosteronism",
+      "aldosteronism",
+      "conn's",
+      "conns",
+      "conn’s",
+      "conn syndrome",
+      "excess aldosterone",
+      "aldosterone excess"
+     ],
+     "key_image": "img/END-43-KF-011-key2-b.jpg",
+     "key_image_caption": "กราฟในเฉลย key2: aldosterone infusion → MAP ↑, ECF volume ↑, urinary Na ลดเฉพาะช่วงแรกแล้วกลับ (aldosterone escape) ดังนั้น plasma Na ไม่เปลี่ยนมาก",
+     "source_key": "Hyperaldosteronism → ↑ renal tubular Na⁺ reabsorption และ ↑ K⁺ excretion ... ↑ Blood volume, ↑ BP และ hypokalemia (key2) · Hyperaldosteronism → ↑ renal tubular Na⁺ reabsorption & ↑ K⁺ excretion & ↑ H₂O reabsorption → ↑ Blood volume, ↑ BP, hypernatremia, hypokalemia (key3)",
+     "explanation": "HT + hypokalemia + Na สูงเล็กน้อย (+ metabolic alkalosis) ชี้ไปที่ aldosterone เกิน"
+    },
+    {
+     "id": "11.2",
+     "prompt": "11.2 Most likely disorder",
+     "format": "short",
+     "accepted": [
+      "primary hyperaldosteronism",
+      "primary aldosteronism",
+      "1° hyperaldosteronism",
+      "1 hyperaldosteronism",
+      "conn's",
+      "conns",
+      "conn’s",
+      "conn syndrome"
+     ],
+     "key_text": "Primary hyperaldosteronism (Conn's syndrome) — aldosterone สูง, renin ต่ำ, ARR > 30",
+     "key_image": "img/END-43-KF-011-key3.jpg",
+     "key_image_caption": "สไลด์ Laboratory Investigations for Conn's Syndrome ในเฉลย key3: ARR (PA ng/dL ÷ PRA ng/mL/h) > 30 = diagnosis very likely (key2 มีภาพ ARR ชุดเดียวกัน)",
+     "source_key": "Primary hyperaldosteronism (Conn's syndrome); 44/1.2 = 33.33 → 1st hyperaldosteronism (key) · Primary hyperaldosteronism; ARR > 30 (key2) · Primary hyperaldosteronism (Conn's syndrome); ARR > 30 (key3)",
+     "explanation": "Aldosterone สูง + renin ต่ำ (ARR = 44/1.2 ≈ 37 > 30) = primary hyperaldosteronism; cortisol 15 µg/dL ปกติ ไม่ใช่ Cushing"
+    },
+    {
+     "id": "11.3a",
+     "prompt": "11.3 Pathological cause (adrenal lesion producing the aldosterone)",
+     "format": "short",
+     "accepted": [
+      "adrenal adenoma",
+      "aldosterone-producing adenoma",
+      "aldosterone producing adenoma",
+      "aldosteronoma",
+      "conn's adenoma",
+      "adrenal hyperplasia",
+      "nodular hyperplasia",
+      "adrenal cortex tumor",
+      "adrenal cortex tumour",
+      "adrenal tumor",
+      "adrenal tumour",
+      "adrenal cortical adenoma",
+      "adrenal cortex adenoma",
+      "adrenal cortex tumor",
+      "idiopathic hyperaldosteronism",
+      "autonomous overproduction of aldosterone",
+      "autonomous aldosterone"
+     ],
+     "key_text": "Aldosterone-producing adrenal cortex adenoma (Conn's) หรือ bilateral nodular (idiopathic) hyperplasia → aldosterone ↑ อิสระจาก renin",
+     "key_image": "img/END-43-KF-011-key2.jpg",
+     "key_image_caption": "แผนภาพ primary hyperaldosteronism ใน key2: idiopathic hyperaldosteronism (พบบ่อยสุด), adenoma, glucocorticoid-suppressible (hybrid gland) → aldosterone → Na reabsorption/K excretion → hypertension",
+     "source_key": "Aldosterone ↑ (key — ไม่ระบุรอยโรค) · Autonomous overproduction of aldosterone จาก Adrenal cortex adenoma (Conn's syndrome) or Bilateral nodular hyperplasia (key2) · Adrenal cortex tumor หรือ Adrenal hyperplasia ทำให้สร้าง ↑↑ aldosterone (key3)",
+     "explanation": "สาเหตุมักเป็น aldosterone-producing adenoma (Conn's) หรือ bilateral adrenal hyperplasia → aldosterone สูงอิสระจาก renin-angiotensin และกด renin"
+    },
+    {
+     "id": "11.3b",
+     "prompt": "11.3 Effect of excess aldosterone on Na⁺ at the renal tubule",
+     "format": "short",
+     "accepted": [
+      "↑ na",
+      "↑na",
+      "increase na",
+      "increased na",
+      "increases na",
+      "na+ retention",
+      "na retention",
+      "sodium retention",
+      "increase sodium reabsorption",
+      "increased sodium reabsorption",
+      "increases sodium reabsorption",
+      "↑ sodium reabsorption",
+      "เพิ่ม na",
+      "เพิ่มการดูดกลับ na",
+      "na reabsorption เพิ่ม"
+     ],
+     "key_text": "↑ Na⁺ reabsorption → ↑ water retention → ↑ ECF volume → hypertension",
+     "source_key": "↑ Na⁺ reabsorption → hypernatremia → ↑ water retention → ↑ ECF volume → hypertension (key) · ↑ renal tubular Na⁺ reabsorption (key2, key3)",
+     "explanation": "Aldosterone ที่ principal cell ของ collecting duct เพิ่ม ENaC และ Na⁺/K⁺-ATPase → ดูดกลับ Na⁺ (น้ำตาม) → ECF volume ↑ → BP ↑"
+    },
+    {
+     "id": "11.3c",
+     "prompt": "11.3 Effect of excess aldosterone on K⁺ at the renal tubule",
+     "format": "short",
+     "accepted": [
+      "↑ k+",
+      "↑k+",
+      "↑ k excretion",
+      "↑k excretion",
+      "increase k+",
+      "increased k+",
+      "increases k+",
+      "increase k excretion",
+      "increased k excretion",
+      "increases k excretion",
+      "increase potassium excretion",
+      "increased potassium excretion",
+      "increases potassium excretion",
+      "↑ potassium",
+      "potassium wasting",
+      "k wasting",
+      "k+ wasting",
+      "เพิ่ม k",
+      "k excretion เพิ่ม"
+     ],
+     "key_text": "↑ K⁺ excretion → hypokalemia → metabolic alkalosis, muscle weakness, ไตสูญเสียความสามารถ concentrate urine → polyuria",
+     "source_key": "↑ K⁺ excretion → hypokalemia → metabolic alkalosis, muscle weakness, renal damage → polyuria (loss of concentrate urine) (key) · ↑ K⁺ excretion → hypokalemia → metabolic alkalosis, muscle weakness, ไตสูญเสียความสามารถในการ conc. urine → polyuria (key3)",
+     "explanation": "Aldosterone เพิ่ม K⁺ secretion → hypokalemia → (H⁺ เข้าเซลล์ และ H⁺ secretion เพิ่ม) metabolic alkalosis, กล้ามเนื้ออ่อนแรง, nephrogenic DI-like polyuria"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF43",
+     "pages": [
+      3
+     ]
+    },
+    {
+     "paper": "KF43-KEY",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [
+    "Med42-43",
+    "primary hyperaldosteronism",
+    "Conn syndrome",
+    "hypokalemia"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "HT + hypernatremia (เล็กน้อย) + hypokalemia + metabolic alkalosis, renin ต่ำ, aldosterone สูง, ARR = 44/1.2 ≈ 36.7 (> 30) → primary hyperaldosteronism (Conn's); cortisol 15 ปกติ ตัด Cushing · สาเหตุ: aldosterone-producing adrenal adenoma หรือ bilateral adrenal hyperplasia → ↑ Na⁺ reabsorption + ↑ K⁺ excretion",
+   "audit_note": "11.1 ตีความไม่ตรงกัน: key = ระบุภาวะที่ผู้ป่วยมี (hypertension, hyperglycemia, hypernatremia, hypokalemia) ส่วน key2/key3 = ตอบว่าความผิดปกติที่อธิบายได้คือ hyperaldosteronism (ซึ่งอธิบาย HT, Na ↑, K ↓) จึงแตกเป็น 11.1a-d (ตาม key) และ 11.1e (ตาม key2/key3) · key ทำ ARR 44/1.2 = '33.33' (จริง 36.7, > 30 เหมือนกัน) · ค่า Na 150 mmol/dL ในโจทย์คือพิมพ์ผิดของ mmol/L (ไม่แก้ข้อความโจทย์)"
+  },
+  {
+   "id": "END-43-KF-012",
+   "block": "END",
+   "cohort": 43,
+   "n": 12,
+   "type": "KF",
+   "case": "อาการ Weight loss, palpitation มี diffuse thyroid enlargement. ผลแลป: FT4 สูง TSH ต่ำ. PE: Pulse 120/min, BP 140/80 mmHg. 12.1 เขียน clinical signs and symptoms (อย่างน้อย 4 ข้อ) 12.2 เขียน pathogenesis 12.3 เขียน Pathological feature",
+   "items": [
+    {
+     "id": "12.1a",
+     "prompt": "12.1 Clinical sign/symptom (1 of ≥ 4)",
+     "format": "short",
+     "accepted": [
+      "weight loss",
+      "palpitation",
+      "tachycardia",
+      "sweating",
+      "moist skin",
+      "warm skin",
+      "warm, moist",
+      "heat intolerance",
+      "tremor",
+      "diarrhea",
+      "diarrhoea",
+      "increased appetite",
+      "hyperphagia",
+      "hyperactivity",
+      "exophthalmos",
+      "proptosis",
+      "hypertension",
+      "dyspnea",
+      "dyspnoea",
+      "myopathy",
+      "anxiety",
+      "lid lag",
+      "goiter",
+      "goitre",
+      "น้ำหนักลด",
+      "ใจสั่น",
+      "เหงื่อออก",
+      "มือสั่น",
+      "ขี้ร้อน",
+      "กินจุ",
+      "ตาโปน",
+      "ท้องเสีย",
+      "หัวใจเต้นเร็ว"
+     ],
+     "key_text": "weight loss, palpitation/tachycardia, hypertension (systolic), ↑ appetite, sweating/moist skin, dyspnea, diarrhea, hyperactivity, thyrotoxic myopathy, heat intolerance, tremor",
+     "key_image": "img/END-43-KF-012-key2.jpg",
+     "key_image_caption": "ตาราง Physiologic effects of thyroid hormones ใน key2 (heart: chronotropic/inotropic ↑β-receptor; adipose: lipolysis ↑; muscle: catabolic; gut: carbohydrate absorption ↑; calorigenic)",
+     "source_key": "Weight loss, Palpitation, Hypertension, หน้าเหงื่อ/ผิวชื้น (?), กินจุ (↑ appetite) (key) · Palpitation → tachycardia, sweating/moist skin, weight loss, dyspnea (key2) · Weight loss, palpitation, tachycardia, warm moist skin, diarrhea, ↑ appetite, hyperactivity, thyrotoxic myopathy (key3)",
+     "explanation": "อาการ hyperthyroidism: น้ำหนักลดทั้งที่กินมาก, ใจสั่น/tachycardia, systolic HT (pulse pressure กว้าง), เหงื่อออก ผิวอุ่นชื้น, ขี้ร้อน, tremor, ถ่ายบ่อย, hyperactivity, กล้ามเนื้ออ่อนแรง, dyspnea"
+    },
+    {
+     "id": "12.1b",
+     "prompt": "12.1 Clinical sign/symptom (2 of ≥ 4)",
+     "format": "short",
+     "accepted": [
+      "weight loss",
+      "palpitation",
+      "tachycardia",
+      "sweating",
+      "moist skin",
+      "warm skin",
+      "warm, moist",
+      "heat intolerance",
+      "tremor",
+      "diarrhea",
+      "diarrhoea",
+      "increased appetite",
+      "hyperphagia",
+      "hyperactivity",
+      "exophthalmos",
+      "proptosis",
+      "hypertension",
+      "dyspnea",
+      "dyspnoea",
+      "myopathy",
+      "anxiety",
+      "lid lag",
+      "goiter",
+      "goitre",
+      "น้ำหนักลด",
+      "ใจสั่น",
+      "เหงื่อออก",
+      "มือสั่น",
+      "ขี้ร้อน",
+      "กินจุ",
+      "ตาโปน",
+      "ท้องเสีย",
+      "หัวใจเต้นเร็ว"
+     ],
+     "key_text": "weight loss, palpitation/tachycardia, hypertension (systolic), ↑ appetite, sweating/moist skin, dyspnea, diarrhea, hyperactivity, thyrotoxic myopathy, heat intolerance, tremor",
+     "source_key": "(ดู 12.1a — เฉลยทั้ง 3 ไฟล์ให้หลายข้อ)",
+     "explanation": "ตอบอาการอื่นของ hyperthyroidism ที่ต่างจาก 12.1a ก็ได้ (ระบบตรวจแค่ว่าถูก ไม่เช็คความซ้ำ)"
+    },
+    {
+     "id": "12.1c",
+     "prompt": "12.1 Clinical sign/symptom (3 of ≥ 4)",
+     "format": "short",
+     "accepted": [
+      "weight loss",
+      "palpitation",
+      "tachycardia",
+      "sweating",
+      "moist skin",
+      "warm skin",
+      "warm, moist",
+      "heat intolerance",
+      "tremor",
+      "diarrhea",
+      "diarrhoea",
+      "increased appetite",
+      "hyperphagia",
+      "hyperactivity",
+      "exophthalmos",
+      "proptosis",
+      "hypertension",
+      "dyspnea",
+      "dyspnoea",
+      "myopathy",
+      "anxiety",
+      "lid lag",
+      "goiter",
+      "goitre",
+      "น้ำหนักลด",
+      "ใจสั่น",
+      "เหงื่อออก",
+      "มือสั่น",
+      "ขี้ร้อน",
+      "กินจุ",
+      "ตาโปน",
+      "ท้องเสีย",
+      "หัวใจเต้นเร็ว"
+     ],
+     "key_text": "weight loss, palpitation/tachycardia, hypertension (systolic), ↑ appetite, sweating/moist skin, dyspnea, diarrhea, hyperactivity, thyrotoxic myopathy, heat intolerance, tremor",
+     "source_key": "(ดู 12.1a)",
+     "explanation": "ตอบอาการอื่นของ hyperthyroidism ที่ไม่ซ้ำ 12.1a/b"
+    },
+    {
+     "id": "12.1d",
+     "prompt": "12.1 Clinical sign/symptom (4 of ≥ 4)",
+     "format": "short",
+     "accepted": [
+      "weight loss",
+      "palpitation",
+      "tachycardia",
+      "sweating",
+      "moist skin",
+      "warm skin",
+      "warm, moist",
+      "heat intolerance",
+      "tremor",
+      "diarrhea",
+      "diarrhoea",
+      "increased appetite",
+      "hyperphagia",
+      "hyperactivity",
+      "exophthalmos",
+      "proptosis",
+      "hypertension",
+      "dyspnea",
+      "dyspnoea",
+      "myopathy",
+      "anxiety",
+      "lid lag",
+      "goiter",
+      "goitre",
+      "น้ำหนักลด",
+      "ใจสั่น",
+      "เหงื่อออก",
+      "มือสั่น",
+      "ขี้ร้อน",
+      "กินจุ",
+      "ตาโปน",
+      "ท้องเสีย",
+      "หัวใจเต้นเร็ว"
+     ],
+     "key_text": "weight loss, palpitation/tachycardia, hypertension (systolic), ↑ appetite, sweating/moist skin, dyspnea, diarrhea, hyperactivity, thyrotoxic myopathy, heat intolerance, tremor",
+     "source_key": "(ดู 12.1a)",
+     "explanation": "ตอบอาการอื่นของ hyperthyroidism ที่ไม่ซ้ำ 12.1a-c"
+    },
+    {
+     "id": "12.2a",
+     "prompt": "12.2 Pathogenesis — the autoantibody that drives Graves' disease",
+     "format": "short",
+     "accepted": [
+      "tsi",
+      "thyroid-stimulating immunoglobulin",
+      "thyroid stimulating immunoglobulin",
+      "thyroid-stimulating antibod",
+      "thyroid stimulating antibod",
+      "tsh receptor antibod",
+      "tsh-receptor antibod",
+      "tsh receptor autoantibod",
+      "antibody to tsh receptor",
+      "antibody against tsh receptor",
+      "autoantibody to tsh receptor",
+      "autoantibody against tsh receptor",
+      "autoantibody ต่อ tsh receptor",
+      "autoantibody ต่อ tsh r",
+      "anti-tsh receptor",
+      "trab"
+     ],
+     "key_text": "Autoantibody (IgG, thyroid-stimulating immunoglobulin/TSI) ต่อ TSH receptor ที่ follicular cell → กระตุ้นเหมือน TSH",
+     "key_image": "img/END-43-KF-012-key2-b.jpg",
+     "key_image_caption": "ข้อความที่แปะใน key2: Graves' = type II hypersensitivity, TSI (IgG) กระตุ้น TSH receptor → hyperthyroidism, diffuse goiter, pretibial myxedema, orbitopathy/exophthalmos (HLA-DR3, HLA-B8)",
+     "source_key": "Autoantibody ต่อ TSH receptor → T4,T3 ↑ → diffuse thyroid enlargement (key) · Thyroid-stimulating immunoglobulin (TSI) จับ TSH receptor ที่ follicular cell → proliferation → diffuse thyroid enlargement (key2) · TSI (thyroid-stimulating Ig) จับ TSH R ที่ follicular cell ของ thyroid gland → cell proliferation, hyperplasia, hypertrophy (key3)",
+     "explanation": "Graves' = type II hypersensitivity: TSI (IgG) จับและกระตุ้น TSH receptor ที่ follicular cell → proliferation (diffuse goiter) และสร้าง/หลั่ง T4/T3 มากเกิน โดยไม่ขึ้นกับ TSH"
+    },
+    {
+     "id": "12.2b",
+     "prompt": "12.2 Pathogenesis — why is TSH low?",
+     "format": "short",
+     "accepted": [
+      "negative feedback"
+     ],
+     "source_key": "TSH ต่ำ (negative feedback) (key) · TSH ถูก suppress (key2/key3 implied; key3: 'TSI ⊕ การสร้างและหลั่ง thyroid HM → ↑ BMR')",
+     "explanation": "T4/T3 สูงกด pituitary ผ่าน negative feedback → TSH ต่ำ (ต่างจาก secondary hyperthyroidism ที่ TSH สูง)"
+    },
+    {
+     "id": "12.2c",
+     "prompt": "12.2 Pathogenesis — mechanism of palpitation/tachycardia and hypertension (what increases in the heart?)",
+     "format": "short",
+     "accepted": [
+      "β-adrenergic",
+      "beta-adrenergic",
+      "beta adrenergic",
+      "adrenergic receptor",
+      "β1",
+      "beta 1",
+      "beta-1",
+      "chronotropic",
+      "inotropic",
+      "contractility",
+      "catecholamine",
+      "sympathetic",
+      "β receptor",
+      "beta receptor",
+      "β-receptor",
+      "beta-receptor"
+     ],
+     "key_text": "↑ β-adrenergic receptor (number/sensitivity) และ α-myosin heavy chain → ↑ chronotropic & inotropic → tachycardia, palpitation, systolic HT; ↑ BMR → weight loss",
+     "source_key": "↑ HR → palpitation → hypertension; ↑ basal metabolic rate → weight loss (key) · เพิ่มจำนวน β-adrenergic receptor และ α-myosin heavy chain → chronotropic & inotropic → tachycardia, palpitation, HT; lipolysis ↑ & metabolic rate → weight loss (key2) · ↑ BMR, ↑ lipolysis → weight loss; ↑ contractility & peripheral O₂ requirement → tachycardia, palpitation; ↑ β-adrenergic receptor sensitivity → systolic HTN (key3)",
+     "explanation": "Thyroid hormone เพิ่มจำนวน β₁-adrenergic receptor และ α-myosin heavy chain (ATPase สูง) ที่หัวใจ → HR และ contractility เพิ่ม → ใจสั่น, systolic HT"
+    },
+    {
+     "id": "12.3a",
+     "prompt": "12.3 Pathological feature of the thyroid gland",
+     "format": "short",
+     "accepted": [
+      "diffuse hyperplasia",
+      "hyperplasia",
+      "hypertrophy",
+      "diffuse",
+      "scalloped",
+      "tall columnar",
+      "columnar",
+      "crowded follicles",
+      "follicular hyperplasia",
+      "lymphocytic infiltration",
+      "goiter",
+      "goitre"
+     ],
+     "key_text": "Diffuse hyperplasia ของ follicular cell: tall columnar epithelium, crowded follicles ยื่นเข้า lumen, scalloped colloid; (ต่อมโตแบบ diffuse, vascular)",
+     "key_image": "img/END-43-KF-012-key3.jpg",
+     "key_image_caption": "สไลด์ Graves' disease ใน key3: toxic goiter, 1° hyperplasia (diffuse), Ab (IgG) to TSH R, exophthalmos, pretibial myxedema, specimen ต่อมโต และ histology diffuse hyperplasia (tall columnar, scalloped colloid)",
+     "source_key": "(key เว้นว่าง) · Hyperthyroidism, Exophthalmos, Dermopathy (key2, key3) · key3 แปะสไลด์ Graves: diffuse hyperplasia, tall columnar epithelium, scalloped colloid",
+     "explanation": "ต่อมโตแบบ diffuse จาก hyperplasia/hypertrophy ของ follicular cell (เซลล์ tall columnar, follicle หนาแน่น, colloid ขอบเว้า scalloped จากการดูด colloid) ร่วมกับ lymphocytic infiltration เล็กน้อย"
+    },
+    {
+     "id": "12.3b",
+     "prompt": "12.3 Extrathyroidal features of Graves' disease",
+     "format": "short",
+     "accepted": [
+      "exophthalmos",
+      "ophthalmopathy",
+      "orbitopathy",
+      "proptosis",
+      "dermopathy",
+      "pretibial myxedema",
+      "pretibial myxoedema",
+      "myxedema",
+      "ตาโปน",
+      "ผิวหนังอักเสบ"
+     ],
+     "source_key": "Hyperthyroidism, Exophthalmos, Dermopathy (key2, key3)",
+     "explanation": "autoAb ต่อ orbital fibroblast/eye muscle → exophthalmos; ต่อ dermal fibroblast → GAG/mucopolysaccharide สะสม → pretibial myxedema (dermopathy)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF43",
+     "pages": [
+      4
+     ]
+    },
+    {
+     "paper": "KF43-KEY",
+     "pages": [
+      4
+     ]
+    }
+   ],
+   "tags": [
+    "Med42-43",
+    "Graves disease",
+    "hyperthyroidism"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "Graves' disease: TSH receptor stimulating autoantibody (TSI, IgG) → follicular cell proliferation (diffuse goiter) + ↑ T4/T3 → TSH ↓ (negative feedback) · ↑ BMR/lipolysis → weight loss; ↑ β-adrenergic receptor sensitivity → tachycardia, palpitation, systolic HT · extrathyroid: exophthalmos, pretibial myxedema (dermopathy)",
+   "audit_note": "key (เล่มแรก) ไม่ได้เขียน 12.3 (เว้นว่างพร้อมคำถาม 'ลักษณะทางพยาธิ?') — 12.3 อ้างอิง key2 และ key3 (Hyperthyroidism, exophthalmos, dermopathy; key3 แปะสไลด์ Graves ที่มี histology: diffuse hyperplasia, tall columnar epithelium, scalloped colloid) · key2 หัวข้อเขียนแค่ 'Hyperthyroidism' ไม่ระบุ Graves แต่ pathogenesis ที่เขียนคือ TSI/Graves ตรงกัน"
+  },
+  {
+   "id": "END-43-KF-013",
+   "block": "END",
+   "cohort": 43,
+   "n": 13,
+   "type": "KF",
+   "case": "A 60 years old woman presents with fatigue and nausea for 2 months. She had use herbal 6 months ago but stop for 2 months prior this visit. On physical examination, she reveals round face, increased supraclavicular fat pad and thin skin. Other examination is normal. Her pituitary hormones panel was as shown: Cortisol 6.12 ug/ml (5.9-26.1 ug/dL) · ACTH 5.0 pg/ml (10-60) · Free T4 0.74 ng/ml (0.7-1.75) · TSH 3.21 mIU/L (0.25-4.00) · E2 6.7 pg/ml (15-350) · FSH 54.8 pg/ml (2-12 mIU/ml) · LH 64.2 pg/ml (1-18 mIU/ml) · IGF-1 156 ng/ml (72-207) · PRL 12.07 ng/ml (3.6-18.9). 13.1 Interpret this hormones panel 13.2 Give a provisional diagnosis 13.3 Please give reasons to support your provisional diagnosis",
+   "items": [
+    {
+     "id": "13.1a",
+     "prompt": "13.1 ACTH 5.0 pg/ml (ref 10-60) — interpretation",
+     "format": "short",
+     "accepted": [
+      "acth ต่ำ",
+      "low acth",
+      "acth low",
+      "↓acth",
+      "↓ acth",
+      "acth ↓",
+      "acth↓",
+      "decreased acth",
+      "acth decrease",
+      "acth decreased",
+      "suppressed acth",
+      "acth suppress",
+      "acth ลด",
+      "acth ลดลง"
+     ],
+     "source_key": "ACTH ต่ำ (key) · ACTH ↓ (key2, key3: possible cortisol excess from exogenous steroid)",
+     "explanation": "ACTH ต่ำกว่าปกติ แต่ cortisol ไม่สูง/ต่ำ-ปกติ ชี้ว่า cortisol ภายในร่างกายถูกกด (HPA suppression) ไม่ใช่ ACTH-dependent Cushing"
+    },
+    {
+     "id": "13.1b",
+     "prompt": "13.1 Cortisol 6.12 (ref 5.9-26.1) — interpretation",
+     "format": "short",
+     "accepted": [
+      "low-normal",
+      "low normal",
+      "normal-low",
+      "normal low",
+      "lower normal",
+      "lower limit",
+      "borderline",
+      "cortisol ปกติ",
+      "ปกติค่อนต่ำ",
+      "ต่ำ-ปกติ"
+     ],
+     "source_key": "ปกติ/ที่ lower normal limit (key2: cortisol ใกล้ lower normal limit, adrenal cortex ฟื้นตัวบ้าง) · key และ key3 ทำเครื่องหมาย ✓ (ปกติ)",
+     "explanation": "6.12 เกือบเท่าขอบล่างของช่วงปกติ (5.9) = low-normal ทั้งที่ ACTH ต่ำ → adrenal ไม่ได้ถูกกระตุ้นเต็มที่ ร่วมกับ cushingoid จาก exogenous steroid ที่ไม่วัดใน cortisol assay"
+    },
+    {
+     "id": "13.1c",
+     "prompt": "13.1 FSH 54.8 / LH 64.2 high and E2 6.7 low in a 60-year-old woman — interpretation",
+     "format": "short",
+     "accepted": [
+      "postmenopausal",
+      "post-menopausal",
+      "post menopausal",
+      "menopause",
+      "menopausal",
+      "หมดประจำเดือน",
+      "วัยทอง",
+      "ovarian failure"
+     ],
+     "source_key": "FSH, LH สูง; E₂ ต่ำ (key) · เป็นปกติ เพราะเป็น post-menopausal women → ↓ estrogen ทำให้ ↑ FSH, ↑ LH (key3)",
+     "explanation": "หญิง 60 ปี รังไข่หยุดทำงาน → E₂ ต่ำ → ไม่มี negative feedback → FSH/LH สูง = ภาวะ postmenopause ตามปกติ (primary ovarian failure ตามวัย) ไม่ได้เกี่ยวกับ pituitary ผิดปกติ"
+    },
+    {
+     "id": "13.2",
+     "prompt": "13.2 Provisional diagnosis",
+     "format": "short",
+     "accepted": [
+      "iatrogenic",
+      "exogenous cushing",
+      "exogenous corticosteroid",
+      "exogenous steroid",
+      "exogenous glucocorticoid",
+      "exogenous cortico",
+      "steroid-induced",
+      "steroid induced",
+      "herbal steroid",
+      "cushing syndrome from steroid",
+      "cushing's syndrome from steroid",
+      "steroid ที่ปนใน herbal"
+     ],
+     "key_text": "Iatrogenic (exogenous glucocorticoid-induced) Cushing syndrome จากสมุนไพรที่ปนสเตียรอยด์ ร่วมกับ HPA axis suppression (secondary adrenal insufficiency)",
+     "key_image": "img/END-43-KF-013-key3.jpg",
+     "key_image_caption": "ภาพใน key3: paraneoplastic Cushing (ACTH จากมะเร็งปอด → adrenal hyperplasia) และ iatrogenic Cushing (กิน steroid นาน → ⊖ feedback ต่อ pituitary → ACTH ไม่หลั่ง → adrenal atrophy)",
+     "source_key": "Iatrogenic Cushing's syndrome (key, key3) · Cushing syndrome with Adrenal insufficiency from exogenous corticosteroid (key2)",
+     "explanation": "Cushingoid + ACTH ต่ำ + cortisol ไม่สูง + ประวัติสมุนไพร (อาจปนสเตียรอยด์) = iatrogenic Cushing syndrome; การหยุดยาแล้ว HPA axis ยังถูกกดอยู่ จึงเสี่ยง adrenal insufficiency (อ่อนเพลีย คลื่นไส้)"
+    },
+    {
+     "id": "13.3a",
+     "prompt": "13.3 Reason 1 — physical findings",
+     "format": "short",
+     "accepted": [
+      "round face",
+      "moon face",
+      "supraclavicular",
+      "fat pad",
+      "thin skin",
+      "cushingoid",
+      "cushing appearance",
+      "cushing's appearance",
+      "หน้ากลม"
+     ],
+     "source_key": "(key เขียนเฉพาะประวัติและ ACTH) · Round face, supraclavicular fat pad & thin skin → Cushingoid appearance (key2, key3)",
+     "explanation": "Moon face, supraclavicular fat pad, thin skin เป็นลักษณะ Cushingoid จาก glucocorticoid ส่วนเกิน"
+    },
+    {
+     "id": "13.3b",
+     "prompt": "13.3 Reason 2 — history",
+     "format": "short",
+     "accepted": [
+      "herbal",
+      "exogenous",
+      "steroid",
+      "corticosteroid",
+      "สมุนไพร",
+      "ยาชุด",
+      "ยาลูกกลอน"
+     ],
+     "source_key": "มีประวัติการใช้สมุนไพรมานาน 6 เดือน แต่หยุดไป 2 เดือน → อาจกินยา steroid (key) · Hx of taking herbal 6 months ago → suspected long-term exogenous corticosteroid intake (key2, key3)",
+     "explanation": "สมุนไพร/ยาชุด/ยาลูกกลอนบางชนิดแอบปนสเตียรอยด์ (เช่น dexamethasone, prednisolone)"
+    },
+    {
+     "id": "13.3c",
+     "prompt": "13.3 Reason 3 — lab finding explaining why cortisol is not high despite Cushingoid",
+     "format": "short",
+     "accepted": [
+      "acth ต่ำ",
+      "low acth",
+      "acth low",
+      "↓ acth",
+      "↓acth",
+      "acth ↓",
+      "acth↓",
+      "hpa",
+      "negative feedback",
+      "suppress",
+      "acth ลด",
+      "acth decrease",
+      "decreased acth"
+     ],
+     "source_key": "มี ACTH ต่ำ อาจเป็นผลจากการกินยามานาน เกิด HPA suppress (key) · adrenal insufficiency (cortisol ใกล้ lower normal limit) (key2)",
+     "explanation": "Exogenous glucocorticoid กด CRH/ACTH ผ่าน negative feedback (HPA suppression) → ACTH ต่ำ, adrenal ฝ่อ; cortisol assay ไม่วัด synthetic steroid บางชนิด จึงไม่สูงตามอาการ"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF43",
+     "pages": [
+      5
+     ]
+    },
+    {
+     "paper": "KF43-KEY",
+     "pages": [
+      5
+     ]
+    }
+   ],
+   "tags": [
+    "Med42-43",
+    "iatrogenic Cushing syndrome",
+    "HPA axis suppression",
+    "hormone panel"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "ACTH ต่ำ (cortisol ต่ำ-ปกติ ไม่สูงทั้งที่มี cushingoid) + ประวัติใช้ herbal (อาจปนสเตียรอยด์) → iatrogenic/exogenous Cushing syndrome, exogenous glucocorticoid กด HPA axis (negative feedback) ทำให้ ACTH ต่ำ และ adrenal atrophy · FSH/LH สูง + E₂ ต่ำ = ภาวะหลังหมดประจำเดือน (อายุ 60) ปกติตามวัย · T4, TSH, IGF-1, PRL ปกติ",
+   "audit_note": "key2 มีโน้ต 'ไม่แน่ใจว่าโจทย์ถูกหมดมั้ย' และตอบ 13.1 ว่า 'Adrenal insufficiency' / 13.2 'Cushing syndrome with adrenal insufficiency from exogenous corticosteroid' (ผู้เฉลยกังวลว่าถ้ากินสเตียรอยด์มาแล้วหยุด ACTH ควรกลับ normal/rising) ส่วน key และ key3 ตอบ Iatrogenic Cushing's syndrome เหมือนกัน — ใช้ iatrogenic Cushing (exogenous steroid, HPA suppression) เป็นคำตอบหลักและรับคำตอบ exogenous steroid ทุกแบบ · key (เล่มแรก) เขียน E₂ ที่ท้ายบรรทัด 'FSH, LH สูง / E₂ ...' อ่านจากลายมือเป็น 'ต่ำ' ตรงกับค่าแลป (6.7, ต่ำกว่า 15) และตรงกับ key3"
+  },
+  {
+   "id": "END-43-KF-014",
+   "block": "END",
+   "cohort": 43,
+   "n": 14,
+   "type": "KF",
+   "case": "ให้บอกยาที่รักษาเบาหวานชนิดรับประทานมา 4 กลุ่ม พร้อมยกตัวอย่างยา ยกเว้นกลุ่ม Sulfonylurea",
+   "items": [
+    {
+     "id": "14.1",
+     "prompt": "Class 1 (with example drug)",
+     "format": "short",
+     "accepted": [
+      "biguanide",
+      "metformin",
+      "thiazolidinedione",
+      "tzd",
+      "glitazone",
+      "pioglitazone",
+      "rosiglitazone",
+      "alpha-glucosidase",
+      "α-glucosidase",
+      "alpha glucosidase",
+      "acarbose",
+      "voglibose",
+      "miglitol",
+      "dpp-4",
+      "dpp4",
+      "gliptin",
+      "sitagliptin",
+      "saxagliptin",
+      "linagliptin",
+      "vildagliptin",
+      "sglt2",
+      "sglt-2",
+      "sglt 2",
+      "gliflozin",
+      "dapagliflozin",
+      "empagliflozin",
+      "canagliflozin",
+      "meglitinide",
+      "glinide",
+      "repaglinide",
+      "nateglinide"
+     ],
+     "source_key": "Biguanide: Metformin · Glitazone: Pioglitazone · α-glucosidase inhibitor: acarbose · DPP4 inhibitor: Saxagliptin, Sitagliptin · SGLT2 inhibitor: dapagliflozin (key; glipizide เขียนกำกับเป็นตัวอย่าง sulfonylurea ที่ยกเว้น) · key2: Biguanides (Metformin), DPP-4 inhibitors (Sitagliptin, Linagliptin), α₁-glucosidase inhibitors (Acarbose), Thiazolidinedione (Pioglitazone) · key3: Biguanide (Metformin), Thiazolidinedione (Pioglitazone), α-glucosidase inhibitor (Acarbose), DPP-4 inhibitor (Saxagliptin), Meglitinide (repaglinide)",
+     "explanation": "Biguanide (metformin) ลด hepatic gluconeogenesis; TZD (pioglitazone) เป็น PPARγ agonist เพิ่ม insulin sensitivity; α-glucosidase inhibitor (acarbose) ชะลอการดูดซึมแป้ง; DPP-4i (sitagliptin, saxagliptin, linagliptin) เพิ่ม incretin; SGLT2i (dapagliflozin) ขับกลูโคสทางปัสสาวะ; meglitinide (repaglinide) กระตุ้น insulin หลั่ง"
+    },
+    {
+     "id": "14.2",
+     "prompt": "Class 2 (with example drug)",
+     "format": "short",
+     "accepted": [
+      "biguanide",
+      "metformin",
+      "thiazolidinedione",
+      "tzd",
+      "glitazone",
+      "pioglitazone",
+      "rosiglitazone",
+      "alpha-glucosidase",
+      "α-glucosidase",
+      "alpha glucosidase",
+      "acarbose",
+      "voglibose",
+      "miglitol",
+      "dpp-4",
+      "dpp4",
+      "gliptin",
+      "sitagliptin",
+      "saxagliptin",
+      "linagliptin",
+      "vildagliptin",
+      "sglt2",
+      "sglt-2",
+      "sglt 2",
+      "gliflozin",
+      "dapagliflozin",
+      "empagliflozin",
+      "canagliflozin",
+      "meglitinide",
+      "glinide",
+      "repaglinide",
+      "nateglinide"
+     ],
+     "source_key": "(ดู 14.1)",
+     "explanation": "ตอบกลุ่มอื่นที่ต่างจาก 14.1 (ยกเว้น sulfonylurea)"
+    },
+    {
+     "id": "14.3",
+     "prompt": "Class 3 (with example drug)",
+     "format": "short",
+     "accepted": [
+      "biguanide",
+      "metformin",
+      "thiazolidinedione",
+      "tzd",
+      "glitazone",
+      "pioglitazone",
+      "rosiglitazone",
+      "alpha-glucosidase",
+      "α-glucosidase",
+      "alpha glucosidase",
+      "acarbose",
+      "voglibose",
+      "miglitol",
+      "dpp-4",
+      "dpp4",
+      "gliptin",
+      "sitagliptin",
+      "saxagliptin",
+      "linagliptin",
+      "vildagliptin",
+      "sglt2",
+      "sglt-2",
+      "sglt 2",
+      "gliflozin",
+      "dapagliflozin",
+      "empagliflozin",
+      "canagliflozin",
+      "meglitinide",
+      "glinide",
+      "repaglinide",
+      "nateglinide"
+     ],
+     "source_key": "(ดู 14.1)",
+     "explanation": "ตอบกลุ่มอื่นที่ต่างจาก 14.1-14.2"
+    },
+    {
+     "id": "14.4",
+     "prompt": "Class 4 (with example drug)",
+     "format": "short",
+     "accepted": [
+      "biguanide",
+      "metformin",
+      "thiazolidinedione",
+      "tzd",
+      "glitazone",
+      "pioglitazone",
+      "rosiglitazone",
+      "alpha-glucosidase",
+      "α-glucosidase",
+      "alpha glucosidase",
+      "acarbose",
+      "voglibose",
+      "miglitol",
+      "dpp-4",
+      "dpp4",
+      "gliptin",
+      "sitagliptin",
+      "saxagliptin",
+      "linagliptin",
+      "vildagliptin",
+      "sglt2",
+      "sglt-2",
+      "sglt 2",
+      "gliflozin",
+      "dapagliflozin",
+      "empagliflozin",
+      "canagliflozin",
+      "meglitinide",
+      "glinide",
+      "repaglinide",
+      "nateglinide"
+     ],
+     "source_key": "(ดู 14.1)",
+     "explanation": "ตอบกลุ่มอื่นที่ต่างจาก 14.1-14.3"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF43",
+     "pages": [
+      6
+     ]
+    },
+    {
+     "paper": "KF43-KEY",
+     "pages": [
+      6
+     ]
+    }
+   ],
+   "tags": [
+    "Med42-43",
+    "oral antidiabetic drugs",
+    "diabetes pharmacology"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "กลุ่มยากินนอกเหนือ sulfonylurea: Biguanide (metformin) · Thiazolidinedione (pioglitazone) · α-glucosidase inhibitor (acarbose) · DPP-4 inhibitor (saxagliptin, sitagliptin, linagliptin) · SGLT2 inhibitor (dapagliflozin) · Meglitinide (repaglinide)",
+   "audit_note": "เฉลยทั้ง 3 ไฟล์ตรงกันทุกกลุ่มที่เขียน (key: 5 กลุ่ม, key2: 4 กลุ่ม, key3: 5 กลุ่ม) — key เขียน glipizide เป็นตัวอย่าง sulfonylurea (กลุ่มที่โจทย์ยกเว้น) จึงไม่รับเป็นคำตอบ · แต่ละ item รับกลุ่มหรือชื่อยาใดก็ได้ใน 6 กลุ่ม (ระบบไม่เช็คความซ้ำ)"
+  },
+  {
+   "id": "END-43-KF-015",
+   "block": "END",
+   "cohort": 43,
+   "n": 15,
+   "type": "KF",
+   "case": "มือเท้าใหญ่ สูง 188 cm Pituitary โต Bilateral hemianopia. 15.1 ถามว่าฮอร์โมนที่ผิดปกติจากอาการแสดงข้างต้นและเซลล์ใดที่สร้าง 15.2 นอกจากฮอร์โมนดังกล่าวแล้ว เคสนี้อาจจะมีความผิดปกติของฮอร์โมนใดได้อีกให้บอกมา 7 ตัว 15.3 ยกตัวอย่างฮอร์โมนในข้อ 15.2 มาสามข้อ และบอกอาการแสดงที่ผิดปกติไป 15.4 ยกตัวอย่างการตรวจร่างกายจากความผิดปกติข้างต้น",
+   "items": [
+    {
+     "id": "15.1a",
+     "prompt": "15.1 Abnormal hormone",
+     "format": "short",
+     "accepted": [
+      "growth hormone",
+      "somatotropin",
+      "hgh",
+      "gh"
+     ],
+     "source_key": "Growth hormone จาก Somatotroph ใน Anterior pituitary gl. (key) · GH จาก Somatotrope (key2) · Growth hormone (GH) สร้างจาก Somatotroph; Acromegaly (key3)",
+     "explanation": "มือเท้าใหญ่ + สูง 188 cm = excess GH (gigantism ถ้าเกิดก่อน epiphyseal closure, acromegaly ถ้าหลัง) จาก pituitary adenoma"
+    },
+    {
+     "id": "15.1b",
+     "prompt": "15.1 The cell that makes it",
+     "format": "short",
+     "accepted": [
+      "somatotroph",
+      "somatotrope",
+      "somatotrop"
+     ],
+     "source_key": "Somatotroph (key, key2, key3)",
+     "explanation": "GH สร้างจาก somatotroph (acidophil) ใน anterior pituitary"
+    },
+    {
+     "id": "15.2a",
+     "prompt": "15.2 Other hormone that may be abnormal (1 of 7)",
+     "format": "short",
+     "accepted": [
+      "prolactin",
+      "prl",
+      "acth",
+      "tsh",
+      "fsh",
+      "luteinizing",
+      "gonadotropin",
+      "adh",
+      "vasopressin",
+      "oxytocin",
+      "msh",
+      "melanocyte-stimulating",
+      "corticotropin",
+      "thyroid stimulating",
+      "thyroid-stimulating",
+      "follicle",
+      "igf",
+      "cortisol",
+      "lh"
+     ],
+     "key_text": "Prolactin, ACTH, TSH, FSH, LH, (MSH, ADH, oxytocin; IGF-1, cortisol ตาม key เล่มแรก)",
+     "source_key": "Prolactin, ACTH, TSH, FSH, LH, IGF-1, Cortisol (key) · TSH, FSH/LH, ACTH, MSH, Prolactin, ADH, Oxytocin (key2) · TSH, ACTH, PRL, FSH/LH, MSH, ADH, Oxytocin (key3)",
+     "explanation": "Pituitary macroadenoma อาจกดเนื้อ pituitary ปกติ (hypopituitarism) หรือหลั่งฮอร์โมนหลายชนิด; hormone ของ posterior pituitary (ADH, oxytocin) ก็อาจผิดปกติได้หากก้อนใหญ่/กดก้าน pituitary"
+    },
+    {
+     "id": "15.2b",
+     "prompt": "15.2 Other hormone that may be abnormal (2 of 7)",
+     "format": "short",
+     "accepted": [
+      "prolactin",
+      "prl",
+      "acth",
+      "tsh",
+      "fsh",
+      "luteinizing",
+      "gonadotropin",
+      "adh",
+      "vasopressin",
+      "oxytocin",
+      "msh",
+      "melanocyte-stimulating",
+      "corticotropin",
+      "thyroid stimulating",
+      "thyroid-stimulating",
+      "follicle",
+      "igf",
+      "cortisol",
+      "lh"
+     ],
+     "key_text": "Prolactin, ACTH, TSH, FSH, LH, (MSH, ADH, oxytocin; IGF-1, cortisol ตาม key เล่มแรก)",
+     "source_key": "(ดู 15.2a)",
+     "explanation": "ตอบฮอร์โมนอื่นที่ไม่ซ้ำ 15.2a"
+    },
+    {
+     "id": "15.2c",
+     "prompt": "15.2 Other hormone that may be abnormal (3 of 7)",
+     "format": "short",
+     "accepted": [
+      "prolactin",
+      "prl",
+      "acth",
+      "tsh",
+      "fsh",
+      "luteinizing",
+      "gonadotropin",
+      "adh",
+      "vasopressin",
+      "oxytocin",
+      "msh",
+      "melanocyte-stimulating",
+      "corticotropin",
+      "thyroid stimulating",
+      "thyroid-stimulating",
+      "follicle",
+      "igf",
+      "cortisol",
+      "lh"
+     ],
+     "key_text": "Prolactin, ACTH, TSH, FSH, LH, (MSH, ADH, oxytocin; IGF-1, cortisol ตาม key เล่มแรก)",
+     "source_key": "(ดู 15.2a)",
+     "explanation": "ตอบฮอร์โมนอื่นที่ไม่ซ้ำ 15.2a-b"
+    },
+    {
+     "id": "15.2d",
+     "prompt": "15.2 Other hormone that may be abnormal (4 of 7)",
+     "format": "short",
+     "accepted": [
+      "prolactin",
+      "prl",
+      "acth",
+      "tsh",
+      "fsh",
+      "luteinizing",
+      "gonadotropin",
+      "adh",
+      "vasopressin",
+      "oxytocin",
+      "msh",
+      "melanocyte-stimulating",
+      "corticotropin",
+      "thyroid stimulating",
+      "thyroid-stimulating",
+      "follicle",
+      "igf",
+      "cortisol",
+      "lh"
+     ],
+     "key_text": "Prolactin, ACTH, TSH, FSH, LH, (MSH, ADH, oxytocin; IGF-1, cortisol ตาม key เล่มแรก)",
+     "source_key": "(ดู 15.2a)",
+     "explanation": "ตอบฮอร์โมนอื่นที่ไม่ซ้ำ 15.2a-c"
+    },
+    {
+     "id": "15.2e",
+     "prompt": "15.2 Other hormone that may be abnormal (5 of 7)",
+     "format": "short",
+     "accepted": [
+      "prolactin",
+      "prl",
+      "acth",
+      "tsh",
+      "fsh",
+      "luteinizing",
+      "gonadotropin",
+      "adh",
+      "vasopressin",
+      "oxytocin",
+      "msh",
+      "melanocyte-stimulating",
+      "corticotropin",
+      "thyroid stimulating",
+      "thyroid-stimulating",
+      "follicle",
+      "igf",
+      "cortisol",
+      "lh"
+     ],
+     "key_text": "Prolactin, ACTH, TSH, FSH, LH, (MSH, ADH, oxytocin; IGF-1, cortisol ตาม key เล่มแรก)",
+     "source_key": "(ดู 15.2a)",
+     "explanation": "ตอบฮอร์โมนอื่นที่ไม่ซ้ำ 15.2a-d"
+    },
+    {
+     "id": "15.2f",
+     "prompt": "15.2 Other hormone that may be abnormal (6 of 7)",
+     "format": "short",
+     "accepted": [
+      "prolactin",
+      "prl",
+      "acth",
+      "tsh",
+      "fsh",
+      "luteinizing",
+      "gonadotropin",
+      "adh",
+      "vasopressin",
+      "oxytocin",
+      "msh",
+      "melanocyte-stimulating",
+      "corticotropin",
+      "thyroid stimulating",
+      "thyroid-stimulating",
+      "follicle",
+      "igf",
+      "cortisol",
+      "lh"
+     ],
+     "key_text": "Prolactin, ACTH, TSH, FSH, LH, (MSH, ADH, oxytocin; IGF-1, cortisol ตาม key เล่มแรก)",
+     "source_key": "(ดู 15.2a)",
+     "explanation": "ตอบฮอร์โมนอื่นที่ไม่ซ้ำ 15.2a-e"
+    },
+    {
+     "id": "15.2g",
+     "prompt": "15.2 Other hormone that may be abnormal (7 of 7)",
+     "format": "short",
+     "accepted": [
+      "prolactin",
+      "prl",
+      "acth",
+      "tsh",
+      "fsh",
+      "luteinizing",
+      "gonadotropin",
+      "adh",
+      "vasopressin",
+      "oxytocin",
+      "msh",
+      "melanocyte-stimulating",
+      "corticotropin",
+      "thyroid stimulating",
+      "thyroid-stimulating",
+      "follicle",
+      "igf",
+      "cortisol",
+      "lh"
+     ],
+     "key_text": "Prolactin, ACTH, TSH, FSH, LH, (MSH, ADH, oxytocin; IGF-1, cortisol ตาม key เล่มแรก)",
+     "source_key": "(ดู 15.2a)",
+     "explanation": "ตอบฮอร์โมนอื่นที่ไม่ซ้ำ 15.2a-f"
+    },
+    {
+     "id": "15.3a",
+     "prompt": "15.3 Pick a hormone from 15.2 and give its abnormal manifestation (1)",
+     "format": "short",
+     "accepted": [
+      "galactorrhea",
+      "galactorrhoea",
+      "amenorrhea",
+      "amenorrhoea",
+      "irregular menstruation",
+      "loss of libido",
+      "low libido",
+      "↓ libido",
+      "infertility",
+      "cushing",
+      "moon face",
+      "adrenal insufficiency",
+      "hypoglycemia",
+      "hypothyroid",
+      "cold intolerance",
+      "bradycardia",
+      "dry skin",
+      "hyperthyroid",
+      "palpitation",
+      "weight loss",
+      "moist skin",
+      "hyperpigmentation",
+      "น้ำนมไหล",
+      "หลั่งน้ำนม",
+      "ประจำเดือนขาด",
+      "ประจำเดือนผิดปกติ",
+      "libido ลด",
+      "ใจสั่น"
+     ],
+     "key_text": "Prolactin ↑ → galactorrhea, amenorrhea, ↓ libido · ACTH ↑ → Cushing (moon face, fat pad, HT, polyuria, polydipsia, insulin resistance) / ACTH ↓ → 2° adrenal insufficiency (↓glucose, HT?, ↓Na, ↑K ตามที่ key3 เขียน) · TSH ↑ → palpitation, weight loss, moist skin, ↑ appetite, HT / TSH ↓ → hypothyroid (cold intolerance, bradycardia, dry skin) · FSH/LH ↓ → infertility, amenorrhea · MSH ↑ → hyperpigmentation",
+     "source_key": "Prolactin → หลั่งน้ำนมมากเกินไป · ACTH → Cushing's disease: moon face, fat pad, hypertension, polyuria, polydipsia, insulin resistance · TSH → palpitation, weight loss, moist skin, ↑ appetite, hypertension (key) · ACTH: Cushing syndrome; Prolactin: loss of libido; MSH: hyperpigmentation; TSH: moist skin, tachycardia (key2) · ↓ACTH → 2° adrenal insufficiency (↓glucose, HTN [sic], ↓Na⁺, ↑K⁺); ↓FSH/LH → infertility, amenorrhea; ↓TSH → ↓ thyroid hormone → cold intolerance, bradycardia, dry-cool skin; ↑ Prolactin → galactorrhea, irregular menstruation, ↓ libido (key3)",
+     "explanation": "ตัวอย่าง: PRL ↑ (stalk effect หรือ prolactinoma) → galactorrhea, amenorrhea, ↓libido; FSH/LH ↓ → infertility, amenorrhea; TSH ↓ → secondary hypothyroidism (cold intolerance, bradycardia, dry skin); ACTH ↓ → secondary adrenal insufficiency; ACTH ↑ → Cushing's disease"
+    },
+    {
+     "id": "15.3b",
+     "prompt": "15.3 Pick a hormone from 15.2 and give its abnormal manifestation (2)",
+     "format": "short",
+     "accepted": [
+      "galactorrhea",
+      "galactorrhoea",
+      "amenorrhea",
+      "amenorrhoea",
+      "irregular menstruation",
+      "loss of libido",
+      "low libido",
+      "↓ libido",
+      "infertility",
+      "cushing",
+      "moon face",
+      "adrenal insufficiency",
+      "hypoglycemia",
+      "hypothyroid",
+      "cold intolerance",
+      "bradycardia",
+      "dry skin",
+      "hyperthyroid",
+      "palpitation",
+      "weight loss",
+      "moist skin",
+      "hyperpigmentation",
+      "น้ำนมไหล",
+      "หลั่งน้ำนม",
+      "ประจำเดือนขาด",
+      "ประจำเดือนผิดปกติ",
+      "libido ลด",
+      "ใจสั่น"
+     ],
+     "key_text": "ดู 15.3a",
+     "source_key": "(ดู 15.3a)",
+     "explanation": "ตอบฮอร์โมนและอาการอื่นที่ไม่ซ้ำ 15.3a"
+    },
+    {
+     "id": "15.3c",
+     "prompt": "15.3 Pick a hormone from 15.2 and give its abnormal manifestation (3)",
+     "format": "short",
+     "accepted": [
+      "galactorrhea",
+      "galactorrhoea",
+      "amenorrhea",
+      "amenorrhoea",
+      "irregular menstruation",
+      "loss of libido",
+      "low libido",
+      "↓ libido",
+      "infertility",
+      "cushing",
+      "moon face",
+      "adrenal insufficiency",
+      "hypoglycemia",
+      "hypothyroid",
+      "cold intolerance",
+      "bradycardia",
+      "dry skin",
+      "hyperthyroid",
+      "palpitation",
+      "weight loss",
+      "moist skin",
+      "hyperpigmentation",
+      "น้ำนมไหล",
+      "หลั่งน้ำนม",
+      "ประจำเดือนขาด",
+      "ประจำเดือนผิดปกติ",
+      "libido ลด",
+      "ใจสั่น"
+     ],
+     "key_text": "ดู 15.3a",
+     "source_key": "(ดู 15.3a)",
+     "explanation": "ตอบฮอร์โมนและอาการอื่นที่ไม่ซ้ำ 15.3a-b"
+    },
+    {
+     "id": "15.4a",
+     "prompt": "15.4 Physical examination for the abnormality (1)",
+     "format": "short",
+     "accepted": [
+      "confrontation",
+      "visual field",
+      "visual fields",
+      "perimetry",
+      "motor power",
+      "muscle power",
+      "muscle strength",
+      "thyroid examination",
+      "thyroid gland",
+      "palpate thyroid",
+      "thyroid palpation",
+      "คลำต่อมไทรอยด์",
+      "คลำไทรอยด์",
+      "ตรวจลานสายตา",
+      "visual-field"
+     ],
+     "key_text": "Confrontation test (visual field: bitemporal hemianopia) · ตรวจ thyroid gland (คลำต่อมไทรอยด์) · ตรวจ motor power grade",
+     "source_key": "คลำต่อมไทรอยด์บริเวณคอ; (เจาะเลือดตรวจระดับ hormone — ไม่ใช่ PE); ตรวจ motor power grade (key) · Confrontation test; Motor power (key2; ผู้เฉลยสงสัยว่าให้ตอบจากโจทย์หรือจาก 15.3) · Confrontation test: bilateral hemianopia (จากโจทย์); Thyroid gland examination, Motor power grade (จากข้อ 15.3) (key3)",
+     "explanation": "จาก bilateral hemianopia: confrontation test/visual field testing; จากอาการ hormone ที่ผิดปกติใน 15.3: คลำต่อมไทรอยด์ (TSH), ตรวจ motor power (กล้ามเนื้ออ่อนแรง)"
+    },
+    {
+     "id": "15.4b",
+     "prompt": "15.4 Physical examination for the abnormality (2)",
+     "format": "short",
+     "accepted": [
+      "confrontation",
+      "visual field",
+      "visual fields",
+      "perimetry",
+      "motor power",
+      "muscle power",
+      "muscle strength",
+      "thyroid examination",
+      "thyroid gland",
+      "palpate thyroid",
+      "thyroid palpation",
+      "คลำต่อมไทรอยด์",
+      "คลำไทรอยด์",
+      "ตรวจลานสายตา",
+      "visual-field"
+     ],
+     "key_text": "Confrontation test (visual field) · ตรวจ thyroid gland · ตรวจ motor power grade",
+     "source_key": "(ดู 15.4a)",
+     "explanation": "ตอบการตรวจร่างกายอื่นที่ไม่ซ้ำ 15.4a"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF43",
+     "pages": [
+      6
+     ]
+    },
+    {
+     "paper": "KF43-KEY",
+     "pages": [
+      6
+     ]
+    }
+   ],
+   "tags": [
+    "Med42-43",
+    "acromegaly",
+    "pituitary adenoma",
+    "hypopituitarism"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "GH-secreting pituitary macroadenoma (Acromegaly/gigantism, somatotroph ใน anterior pituitary) กดทับ optic chiasm → bilateral (bitemporal) hemianopia · tumor กดเนื้อ pituitary ปกติ (hypopituitarism: TSH, ACTH, FSH/LH ↓) และ stalk effect → prolactin ↑ · tumor อาจหลั่ง prolactin/ACTH/TSH เกินเอง",
+   "audit_note": "โจทย์ 15.2 เปิดกว้าง — key เล่มแรกยกฮอร์โมน 7 ตัว: Prolactin, ACTH, TSH, FSH, LH, IGF-1, Cortisol (IGF-1 และ cortisol ไม่ใช่ pituitary hormone โดยตรง); key2: TSH, FSH/LH, ACTH, MSH, Prolactin, ADH, Oxytocin; key3: TSH, ACTH, PRL, FSH/LH, MSH, ADH, Oxytocin · 15.3 ทิศทางต่างกันระหว่างเฉลย: key เล่มแรก/key2 อธิบายแบบ 'ฮอร์โมนเกิน' (ACTH → Cushing, TSH → hyperthyroid, MSH → hyperpigmentation) ส่วน key3 อธิบายแบบ hypopituitarism จาก mass effect (↓ACTH → 2° adrenal insufficiency, ↓FSH/LH → infertility, ↓TSH → hypothyroid) และ prolactin ↑ จาก stalk effect — ทั้งสองแบบเป็นไปได้ทางคลินิก ระบบรับทั้งสองแบบ · key เล่มแรก 15.4 บันทึก: คลำต่อมไทรอยด์บริเวณคอ, เจาะเลือดตรวจระดับ hormone, ตรวจ motor power grade (เจาะเลือดไม่ใช่ PE)"
+  },
+  {
+   "id": "END-43-KF-016",
+   "block": "END",
+   "cohort": 43,
+   "n": 16,
+   "type": "KF",
+   "case": "ให้อาการมา hyperpigmentation, scantly pubic hair, weight loss, anorexia, fatique. ผลตรวจห้องปฏิบัติการ: glucose ต่ำ, Na ต่ำ, K สูง, CO2 ต่ำ. CBC เหมือน case study ข้อสามเลย [sic — ในไฟล์นี้ข้อ 3 ไม่มี CBC]. 16.1 จง diagnosis 16.2 จงอธิบายผลตรวจห้องปฏิบัติการที่ผิดปกติทุกอย่างพร้อมบอกฮอร์โมนใดที่ผิดไปติ 16.3 คาดว่าเคสนี้น่าจะต้องส่งตรวจฮอร์โมนใดเพิ่มเติมดี 3 ให้บอกมา hormone พร้อมบอกว่าฮอร์โมนดังกล่าวน่าจะสูงหรือต่ำ",
+   "items": [
+    {
+     "id": "16.1",
+     "prompt": "16.1 Diagnosis",
+     "format": "short",
+     "accepted": [
+      "addison",
+      "primary adrenal insufficiency",
+      "primary adrenal failure",
+      "primary adrenocortical insufficiency",
+      "adrenal insufficiency",
+      "adrenocortical insufficiency",
+      "hypoadrenal"
+     ],
+     "key_text": "Addison's disease (primary adrenal insufficiency)",
+     "source_key": "Addison's disease (Primary adrenal insufficiency) (key) · Adrenal insufficiency (key2) · Primary adrenal insufficiency (key3)",
+     "explanation": "Hyperpigmentation (ACTH/MSH สูง) แยกว่าเป็น primary (adrenal) ไม่ใช่ secondary ที่ ACTH ต่ำและไม่คล้ำ"
+    },
+    {
+     "id": "16.2a",
+     "prompt": "16.2 Hypoglycemia is due to deficiency of which hormone?",
+     "format": "short",
+     "accepted": [
+      "cortisol",
+      "glucocorticoid"
+     ],
+     "source_key": "Cortisol ↓ = glucose ↓ (key, key2, key3)",
+     "explanation": "Cortisol ช่วย gluconeogenesis และต้านฤทธิ์ insulin → ขาดแล้วน้ำตาลต่ำ"
+    },
+    {
+     "id": "16.2b",
+     "prompt": "16.2 Hyponatremia, hyperkalemia and low CO₂ (metabolic acidosis) are due to deficiency of which hormone?",
+     "format": "short",
+     "accepted": [
+      "aldosterone",
+      "mineralocorticoid"
+     ],
+     "source_key": "Aldosterone ↓ = Na⁺ ↓, K⁺ ↑, CO₂ ↓ (key) · Hyponatremia, Hyperkalemia, Acidosis : Aldosterone (key2) · Hyponatremia, hyperkalemia, metabolic acidosis : ↓ Aldosterone (key3)",
+     "explanation": "Aldosterone ต่ำ → เสีย Na⁺/น้ำ (hyponatremia), เก็บ K⁺ และ H⁺ (hyperkalemia, metabolic acidosis → CO₂/HCO₃⁻ ต่ำ)"
+    },
+    {
+     "id": "16.3a",
+     "prompt": "16.3 Add-on hormone test: ACTH — expected high or low?",
+     "format": "short",
+     "accepted": [
+      "high",
+      "↑",
+      "สูง",
+      "increase",
+      "elevated",
+      "เพิ่ม"
+     ],
+     "source_key": "ACTH → น่าจะสูง เพราะไม่มี negative feedback จาก cortisol, aldosterone และเกิด hyperpigmentation (key) · ACTH สูง (key2, key3)",
+     "explanation": "Primary adrenal failure: cortisol ต่ำ → ไม่มี negative feedback → ACTH (และ MSH) สูง → hyperpigmentation"
+    },
+    {
+     "id": "16.3b",
+     "prompt": "16.3 Add-on hormone test: cortisol — expected high or low?",
+     "format": "short",
+     "accepted": [
+      "low",
+      "↓",
+      "ต่ำ",
+      "decrease",
+      "reduced",
+      "ลด"
+     ],
+     "source_key": "Cortisol ต่ำ (key2, key3; key: ↓ ในข้อ 16.2)",
+     "explanation": "เนื้อ adrenal cortex ถูกทำลาย (เช่น autoimmune) จึง cortisol ต่ำ แม้ ACTH กระตุ้น"
+    },
+    {
+     "id": "16.3c",
+     "prompt": "16.3 Add-on hormone test: aldosterone — expected high or low?",
+     "format": "short",
+     "accepted": [
+      "low",
+      "↓",
+      "ต่ำ",
+      "decrease",
+      "reduced",
+      "ลด"
+     ],
+     "source_key": "Aldosterone ต่ำ (key2, key3; key: ↓ ในข้อ 16.2)",
+     "explanation": "Primary adrenal insufficiency กระทบ zona glomerulosa ด้วย → aldosterone ต่ำ (renin สูง)"
+    },
+    {
+     "id": "16.3d",
+     "prompt": "16.3 Add-on hormone test: sex hormone / adrenal androgen (DHEA) — expected high or low? (scanty pubic hair)",
+     "format": "short",
+     "accepted": [
+      "low",
+      "↓",
+      "ต่ำ",
+      "decrease",
+      "reduced",
+      "ลด"
+     ],
+     "source_key": "↓ Sex hormone (key และ key3 เขียนกำกับเหนือโจทย์ 16; key2 เขียน 'sex hormone' ที่หัวข้อ)",
+     "explanation": "Adrenal androgen (DHEA/DHEA-S) จาก zona reticularis ลดลง → ขนหัวหน่าวบาง (โดยเฉพาะในผู้หญิง)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF43",
+     "pages": [
+      7
+     ]
+    },
+    {
+     "paper": "KF43-KEY",
+     "pages": [
+      7
+     ]
+    }
+   ],
+   "tags": [
+    "Med42-43",
+    "Addison disease",
+    "primary adrenal insufficiency"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "Hyperpigmentation + hypoglycemia + hyponatremia + hyperkalemia + low CO₂ (metabolic acidosis) = Addison's disease (primary adrenal insufficiency) · cortisol ↓ → hypoglycemia · aldosterone ↓ → Na ↓, K ↑, metabolic acidosis · adrenal androgen ↓ → scanty pubic hair · ACTH ↑ (จาก loss of negative feedback) → hyperpigmentation",
+   "audit_note": "โจทย์อ้าง 'CBC เหมือน case study ข้อสาม' — ชุดนี้ไม่มีข้อสามที่มี CBC (น่าจะมาจากชุดเดิมที่มี case เพิ่ม) ไม่กระทบคำตอบ · 16.1: key/key3 ตอบ Primary adrenal insufficiency (Addison) ส่วน key2 ตอบสั้นว่า Adrenal insufficiency · 16.3: key = ACTH ↑ (+ cortisol/aldosterone ↓ ตามคำอธิบาย); key2 = Cortisol ↓, ACTH ↑, Aldosterone ↓ (+ 'sex hormone'); key3 = Cortisol ↓, ACTH ↑, Aldosterone ↓ (+ 'sex hormone ↓' เขียนกำกับ) — 16.3d (sex hormone/androgen ↓) มาจากลายมือกำกับของ key2/key3"
+  },
+  {
+   "id": "END-43-KF-017",
+   "block": "END",
+   "cohort": 43,
+   "n": 17,
+   "type": "KF",
+   "case": "ชายอายุ 40 ปี น้ำหนักลด ปัสสาวะบ่อย ตื่นมาปัสสาวะตอนกลางคืน พบน้ำตาลในเลือดสูง 320 mg/dl. Urinalysis: glucose 3+ ketone: trace. ให้ยา sulfonylurea. 17.1 จง diagnosis 17.2 ยกตัวอย่างสามเซลล์ที่เกี่ยวข้องกับการควบคุมระดับน้ำตาลในเลือด",
+   "items": [
+    {
+     "id": "17.1",
+     "prompt": "17.1 Diagnosis",
+     "format": "short",
+     "accepted": [
+      "diabetes mellitus",
+      "type 2 diabetes",
+      "type ii diabetes",
+      "type 2 dm",
+      "type ii dm",
+      "dm type 2",
+      "t2dm",
+      "เบาหวาน"
+     ],
+     "key_text": "Diabetes mellitus (น่าจะ type 2 — ตอบสนองต่อ sulfonylurea)",
+     "source_key": "Diabetes mellitus (key, key2, key3)",
+     "explanation": "Hyperglycemia 320 + polyuria/nocturia + น้ำหนักลด + glucosuria = diabetes mellitus; ketone trace + ให้ sulfonylurea (ต้องมี β-cell function เหลือ) ชวนคิด type 2"
+    },
+    {
+     "id": "17.2a",
+     "prompt": "17.2 Cell involved in blood glucose control (1)",
+     "format": "short",
+     "accepted": [
+      "beta cell",
+      "β cell",
+      "β-cell",
+      "β-cells",
+      "beta-cell",
+      "alpha cell",
+      "α cell",
+      "α-cell",
+      "α-cells",
+      "alpha-cell",
+      "delta cell",
+      "δ cell",
+      "chromaffin",
+      "enterocyte",
+      "l cell",
+      "l-cell",
+      "k cell",
+      "k-cell",
+      "enteroendocrine",
+      "hepatocyte",
+      "adipocyte",
+      "myocyte",
+      "somatotroph",
+      "adrenal cortex"
+     ],
+     "key_text": "β-cell (insulin), α-cell (glucagon), chromaffin cell (epinephrine), enterocyte/L-cell (incretin), δ-cell (somatostatin)",
+     "source_key": "β-cell ใน islet of Langerhans ของ pancreas (insulin) · α-cell (glucagon) · Chromaffin cell ใน adrenal medulla (epinephrine) (key) · β-cell (insulin ลดระดับน้ำตาล), α-cell (glucagon เพิ่มระดับน้ำตาล), Enterocyte (incretin ลดระดับน้ำตาล → เพิ่มการหลั่ง insulin) (key2) · β-cell, α-cell, Chromaffin cell (epinephrine), Enterocyte (incretin/GLP-1 ⊕ insulin release) (key3)",
+     "explanation": "β-cell หลั่ง insulin (ลดน้ำตาล); α-cell หลั่ง glucagon (เพิ่มน้ำตาล); chromaffin cell หลั่ง epinephrine (เพิ่มน้ำตาล); enterocyte (L-cell) หลั่ง GLP-1 ซึ่งเพิ่ม insulin"
+    },
+    {
+     "id": "17.2b",
+     "prompt": "17.2 Cell involved in blood glucose control (2)",
+     "format": "short",
+     "accepted": [
+      "beta cell",
+      "β cell",
+      "β-cell",
+      "β-cells",
+      "beta-cell",
+      "alpha cell",
+      "α cell",
+      "α-cell",
+      "α-cells",
+      "alpha-cell",
+      "delta cell",
+      "δ cell",
+      "chromaffin",
+      "enterocyte",
+      "l cell",
+      "l-cell",
+      "k cell",
+      "k-cell",
+      "enteroendocrine",
+      "hepatocyte",
+      "adipocyte",
+      "myocyte",
+      "somatotroph",
+      "adrenal cortex"
+     ],
+     "key_text": "β-cell (insulin), α-cell (glucagon), chromaffin cell (epinephrine), enterocyte/L-cell (incretin), δ-cell (somatostatin)",
+     "source_key": "(ดู 17.2a)",
+     "explanation": "ตอบเซลล์อื่นที่ไม่ซ้ำ 17.2a"
+    },
+    {
+     "id": "17.2c",
+     "prompt": "17.2 Cell involved in blood glucose control (3)",
+     "format": "short",
+     "accepted": [
+      "beta cell",
+      "β cell",
+      "β-cell",
+      "β-cells",
+      "beta-cell",
+      "alpha cell",
+      "α cell",
+      "α-cell",
+      "α-cells",
+      "alpha-cell",
+      "delta cell",
+      "δ cell",
+      "chromaffin",
+      "enterocyte",
+      "l cell",
+      "l-cell",
+      "k cell",
+      "k-cell",
+      "enteroendocrine",
+      "hepatocyte",
+      "adipocyte",
+      "myocyte",
+      "somatotroph",
+      "adrenal cortex"
+     ],
+     "key_text": "β-cell (insulin), α-cell (glucagon), chromaffin cell (epinephrine), enterocyte/L-cell (incretin), δ-cell (somatostatin)",
+     "source_key": "(ดู 17.2a)",
+     "explanation": "ตอบเซลล์อื่นที่ไม่ซ้ำ 17.2a-b"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF43",
+     "pages": [
+      7
+     ]
+    },
+    {
+     "paper": "KF43-KEY",
+     "pages": [
+      7
+     ]
+    }
+   ],
+   "tags": [
+    "Med42-43",
+    "diabetes mellitus",
+    "glucose homeostasis"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "Polyuria/nocturia, weight loss, glucose 320, glucosuria, ketone trace + ตอบสนองต่อ sulfonylurea (ยังมี β-cell เหลือ) → diabetes mellitus (type 2) · เซลล์ที่คุมน้ำตาล: β-cell (insulin ↓ glucose), α-cell (glucagon ↑ glucose), chromaffin cell (epinephrine ↑ glucose), enterocyte/L-cell (incretin)",
+   "audit_note": "key2 เขียนกำกับว่า 'เสี่ยง DKA' (urine ketone trace ที่ยังไม่ใช่ DKA) ไม่กระทบคำตอบ · key และ key3 ตอบ Diabetes mellitus (ไม่ระบุ type); การให้ sulfonylurea สอดคล้อง type 2"
+  }
+ ]
+}
