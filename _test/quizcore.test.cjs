@@ -50,4 +50,28 @@ t("merge progress files", () => {
   assert.strictEqual(m.marks.notes.q.text, "new");
   assert.ok(m.marks.flag.q1 && m.marks.flag.q2);
 });
+const dr = { id: "X-1-MCQ-002", type: "MCQ", options: { A: "a", B: "b" }, answer: "A", answer_status: "draft" };
+const dp = { ...dr, id: "X-1-MCQ-003", answer_status: "disputed" };
+const qm2 = { [mcq.id]: mcq, [dr.id]: dr, [dp.id]: dp };
+t("counts: draft/disputed no, verified/corrected/missing yes, own key yes", () => {
+  assert.strictEqual(Q.counts(dr), false); assert.strictEqual(Q.counts(dp), false);
+  assert.strictEqual(Q.counts(mcq), true); assert.strictEqual(Q.counts({ ...mcq, answer_status: "corrected" }), true);
+  assert.strictEqual(Q.counts(dr, { [dr.id]: "B" }), true);
+});
+t("roundStats skips uncounted, still grades them", () => {
+  const r = Q.newRound([mcq, dr, dp]);
+  [mcq, dr, dp].forEach((q) => { r.ans[q.id] = "A"; r.chk[q.id] = true; });
+  const s = Q.roundStats(r, qm2);
+  assert.strictEqual(s.checked, 1); assert.strictEqual(s.wrong, 1); assert.strictEqual(s.uncounted, 2);
+  assert.strictEqual(Q.status(dr, r), "ok");
+});
+t("roundStats: all uncounted gives 0%, not NaN", () => {
+  const r = Q.newRound([dr]); r.ans[dr.id] = "A"; r.chk[dr.id] = true;
+  const s = Q.roundStats(r, qm2); assert.strictEqual(s.pct, 0); assert.strictEqual(s.checked, 0);
+});
+t("latestResults leaves out uncounted unless own key", () => {
+  const r = Q.newRound([mcq, dr]); r.ans[mcq.id] = "B"; r.ans[dr.id] = "A"; r.chk[mcq.id] = r.chk[dr.id] = true;
+  assert.deepStrictEqual(Object.keys(Q.latestResults([r], qm2)), [mcq.id]);
+  assert.ok(dr.id in Q.latestResults([r], qm2, { [dr.id]: "A" }));
+});
 console.log(`\n${pass} ผ่าน`);
