@@ -7,7 +7,7 @@ auditor/data/images.json via crop_images.py; this script stops if a work item na
 does not exist, or if images.json has a picture for this set that no item uses (picture left out).
 Run `node tools/validate.cjs` afterwards.
 """
-import argparse, json, sys
+import argparse, json, re, sys
 from pathlib import Path
 
 AUD = Path(__file__).resolve().parents[1]
@@ -33,10 +33,11 @@ def main():
     for w in work["questions"]:
         n = w["n"]
         for it in w["items"]:
-            if it.get("key_image"):
-                if not (bdir / it["key_image"]).exists():
-                    sys.exit(f"ERROR: ข้อ {n} item {it['id']}: ไม่มีไฟล์ {it['key_image']} — รัน crop_images.py --set {a.set}")
-                used.add(it["key_image"])
+            for fld in ("key_image", "image"):
+                if it.get(fld):
+                    if not (bdir / it[fld]).exists():
+                        sys.exit(f"ERROR: ข้อ {n} item {it['id']}: ไม่มีไฟล์ {it[fld]} — รัน crop_images.py --set {a.set}")
+                    used.add(it[fld])
         q = {"id": f"{B}-{c}-KF-{n:03d}", "block": B, "cohort": c, "n": n, "type": "KF", "case": w["case"], "items": w["items"],
              "answer_status": w.get("answer_status", "verified"),
              "refs": [{"paper": pid["exam"], "pages": [w["page"]]}, {"paper": pid["key"], "pages": [w["page"]]}],
@@ -52,7 +53,8 @@ def main():
     for qid, im in load(AUD / "data" / "images.json")["images"].items():
         if qid.rsplit("_", 1)[0] != a.set:
             continue
-        f = f"img/{B}-{c}-KF-{int(qid.rsplit('_', 1)[1]):03d}{'-key' if im.get('role') == 'key' else ''}.jpg"
+        num = re.fullmatch(r"(\d+)([a-z]*)", qid.rsplit("_", 1)[1])  # "010b" = 2nd picture of question 10
+        f = f"img/{B}-{c}-KF-{int(num.group(1)):03d}{num.group(2)}{'-key' if im.get('role') == 'key' else ''}.jpg"
         if f not in used:
             sys.exit(f"ERROR: รูป {f} ({qid}) อยู่ใน images.json แต่ไม่มีข้อไหนใช้")
 

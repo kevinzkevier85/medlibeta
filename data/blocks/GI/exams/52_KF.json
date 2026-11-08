@@ -1,0 +1,1630 @@
+{
+ "meta": {
+  "set_id": "52_KF",
+  "block": "GI",
+  "cohort": 52,
+  "type": "KF",
+  "title": "KF Gastrointestinal · Med PSU 52",
+  "time_limit_min": 120,
+  "generated_by": "auditor/tools/build_kf.py from auditor/data/work/gi_52_KF.kf.json — do not edit by hand"
+ },
+ "questions": [
+  {
+   "id": "GI-52-KF-001",
+   "block": "GI",
+   "cohort": 52,
+   "n": 1,
+   "type": "KF",
+   "case": "The figure shows a recording of gastric/intestinal smooth-muscle electrical activity (voltage in mV against time). Six slow-wave cycles occur within 30 seconds; arrow A marks the baseline rhythm and arrow B marks the fast potentials riding on it (the exam text calls them X and Y).",
+   "items": [
+    {
+     "id": "1.1",
+     "prompt": "X (arrow A in the figure) is?",
+     "format": "short",
+     "accepted": [
+      "slow wave",
+      "slow waves",
+      "basic electrical rhythm",
+      "ber"
+     ],
+     "key_text": "Slow wave",
+     "source_key": "Slow wave",
+     "explanation": "slow wave (basic electrical rhythm, BER) = คลื่นไฟฟ้าที่ ICC สร้างเป็นจังหวะ ไม่ทำให้กล้ามเนื้อหดตัวเองถ้าไม่ถึง threshold"
+    },
+    {
+     "id": "1.2",
+     "prompt": "Y (arrow B in the figure) is?",
+     "format": "short",
+     "accepted": [
+      "spike potential",
+      "spike potentials",
+      "spike",
+      "spikes",
+      "action potential"
+     ],
+     "key_text": "Spike potential",
+     "source_key": "Spike potential",
+     "explanation": "spike (action) potential เกิดเมื่อ slow wave ขึ้นเกิน threshold → กล้ามเนื้อหดตัว"
+    },
+    {
+     "id": "1.3",
+     "prompt": "Force and duration of contraction are directly related to the frequency of ______",
+     "format": "short",
+     "accepted": [
+      "spike potential",
+      "spike potentials",
+      "spike",
+      "spikes",
+      "action potential",
+      "action potentials"
+     ],
+     "key_text": "Spike potentials",
+     "source_key": "Spike potentials",
+     "explanation": "ยิ่งมี spike มาก (ถี่) ยิ่งบีบแรงและนาน"
+    },
+    {
+     "id": "1.4",
+     "prompt": "When the muscle is stimulated, the contraction frequency is ______ times/min (count from the spike potentials in the figure)",
+     "format": "short",
+     "keywords_all": [
+      "6"
+     ],
+     "key_text": "6 ครั้ง/นาที (3 ครั้ง/30 วินาที)",
+     "source_key": "3 ครั้ง/30 วินาที → 6 ครั้ง/1 min (ดูจาก spike potential)",
+     "explanation": "spike เกิดบน slow wave รอบที่ 2, 4, 6 = 3 รอบใน 30 วินาที → 6 ครั้ง/นาที (slow wave ทั้งหมด 6 รอบใน 30 วินาที = 12/นาที)"
+    },
+    {
+     "id": "1.5",
+     "prompt": "Which special pacemaker cell makes the slow wave?",
+     "format": "short",
+     "accepted": [
+      "interstitial cells of cajal",
+      "interstitial cell of cajal",
+      "icc"
+     ],
+     "key_text": "Interstitial cells of Cajal (ICC)",
+     "source_key": "Interstitial cells of Cajal (ICC)",
+     "explanation": "ICC เป็น pacemaker ของทางเดินอาหาร กำหนดความถี่ของ slow wave (กระเพาะ ~3/นาที, duodenum ~12/นาที)"
+    },
+    {
+     "id": "1.6",
+     "prompt": "Give 1 example of a neurotransmitter that can stimulate duodenal smooth muscle.",
+     "format": "short",
+     "accepted": [
+      "acetylcholine",
+      "ach",
+      "substance p"
+     ],
+     "key_text": "Acetylcholine",
+     "source_key": "Acetylcholine",
+     "explanation": "ACh (parasympathetic/enteric excitatory neuron) และ substance P กระตุ้นการหดตัว · NO, VIP ยับยั้ง"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF52",
+     "pages": [
+      1
+     ]
+    },
+    {
+     "paper": "KF52-KEY",
+     "pages": [
+      1
+     ]
+    }
+   ],
+   "tags": [
+    "motility",
+    "slow wave"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "Slow wave จาก ICC เป็นจังหวะ · spike potential ที่เกาะบน slow wave เป็นตัวกำหนดแรงบีบ",
+   "audit_note": "โจทย์พิมพ์ว่า X, Y แต่รูปใช้ป้าย A, B (A = slow wave, B = spike potential ตามเฉลย) · ข้อ 1.4 เฉลยนับจากจำนวนรอบ slow wave ที่มี spike",
+   "image": "img/GI-52-KF-001.jpg",
+   "image_caption": "กราฟไฟฟ้ากล้ามเนื้อเรียบ: slow wave 6 รอบใน 30 วินาที มี spike potential บางรอบ"
+  },
+  {
+   "id": "GI-52-KF-002",
+   "block": "GI",
+   "cohort": 52,
+   "n": 2,
+   "type": "KF",
+   "case": "Complete the table: for each stimulus in the duodenum, name the stimulated hormone and its function.",
+   "items": [
+    {
+     "id": "2.1",
+     "prompt": "Glucose → which hormone is stimulated?",
+     "format": "short",
+     "accepted": [
+      "gip",
+      "glucose-dependent insulinotropic peptide",
+      "gastric inhibitory peptide"
+     ],
+     "key_text": "GIP",
+     "source_key": "GIP",
+     "explanation": "glucose ใน duodenum → K cell หลั่ง GIP (incretin)"
+    },
+    {
+     "id": "2.2",
+     "prompt": "Glucose → function of that hormone?",
+     "format": "short",
+     "keywords_all": [
+      "insulin"
+     ],
+     "key_text": "Stimulates insulin secretion",
+     "source_key": "Stimulates insulin secretion",
+     "explanation": "GIP กระตุ้นการหลั่ง insulin ก่อนน้ำตาลเข้าเลือด (incretin effect)"
+    },
+    {
+     "id": "2.3",
+     "prompt": "HCl → which hormone is stimulated?",
+     "format": "short",
+     "accepted": [
+      "secretin"
+     ],
+     "key_text": "Secretin",
+     "source_key": "Secretin",
+     "explanation": "กรดใน duodenum → S cell หลั่ง secretin"
+    },
+    {
+     "id": "2.4",
+     "prompt": "HCl → function of that hormone?",
+     "format": "short",
+     "keywords_all": [
+      "bicarbonate"
+     ],
+     "key_text": "Stimulates bicarbonate secretion",
+     "source_key": "Stimulates bicarbonate secretion",
+     "explanation": "secretin กระตุ้นตับอ่อน (duct cell) และท่อน้ำดีหลั่ง HCO₃⁻ เพื่อลดกรด"
+    },
+    {
+     "id": "2.5",
+     "prompt": "Fatty acid → which hormone is stimulated?",
+     "format": "short",
+     "accepted": [
+      "cck",
+      "cholecystokinin"
+     ],
+     "key_text": "CCK",
+     "source_key": "CCK",
+     "explanation": "กรดไขมัน/กรดอะมิโนใน duodenum → I cell หลั่ง CCK"
+    },
+    {
+     "id": "2.6",
+     "prompt": "Fatty acid → function of that hormone?",
+     "format": "short",
+     "keywords_all": [
+      "enzyme",
+      "gallbladder"
+     ],
+     "key_text": "Stimulates pancreatic enzyme secretion and gallbladder contraction",
+     "source_key": "Stimulates pancreatic enzyme secretion and gallbladder contraction",
+     "explanation": "CCK กระตุ้นตับอ่อนหลั่งเอนไซม์ ถุงน้ำดีบีบ และ sphincter of Oddi คลาย"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF52",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "KF52-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [
+    "GI hormones"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "GIP (glucose) · secretin (acid) · CCK (fat/protein)"
+  },
+  {
+   "id": "GI-52-KF-003",
+   "block": "GI",
+   "cohort": 52,
+   "n": 3,
+   "type": "KF",
+   "case": "A male patient presents with epigastric pain and hematemesis. Endoscopy shows the lesion in the figure.",
+   "items": [
+    {
+     "id": "3.1",
+     "prompt": "Make the diagnosis.",
+     "format": "short",
+     "accepted": [
+      "peptic ulcer",
+      "peptic ulcer disease",
+      "pud",
+      "gastric ulcer",
+      "duodenal ulcer"
+     ],
+     "key_text": "Peptic ulcer disease",
+     "source_key": "Peptic ulcer disease",
+     "explanation": "แผลที่ผนังกระเพาะ/duodenum มีเลือดออก"
+    },
+    {
+     "id": "3.2",
+     "prompt": "List 3 risk factors for this disease.",
+     "format": "short",
+     "keywords_all": [
+      "nsaid",
+      "pylori",
+      "smok"
+     ],
+     "key_text": "NSAID use, Helicobacter pylori infection, smoking",
+     "source_key": "NSAID use, Helicobacter pylori infection, smoking",
+     "explanation": "ปัจจัยเสี่ยง: NSAID, H. pylori, สูบบุหรี่ (อื่นๆ: แอลกอฮอล์, steroid, ZES, stress)"
+    },
+    {
+     "id": "3.3",
+     "prompt": "A biopsy shows curved bacilli. Which 2 conditions can develop from this?",
+     "format": "short",
+     "keywords_all": [
+      "adenocarcinoma",
+      "malt"
+     ],
+     "key_text": "Gastric adenocarcinoma and MALT lymphoma",
+     "source_key": "Gastric adenocarcinoma and MALT lymphoma",
+     "explanation": "H. pylori (curved/spiral bacilli) เรื้อรัง → gastric adenocarcinoma และ MALT lymphoma"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF52",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "KF52-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [
+    "peptic ulcer",
+    "H. pylori"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "Peptic ulcer: NSAID + H. pylori + smoking · H. pylori → adenocarcinoma, MALT lymphoma",
+   "image": "img/GI-52-KF-003.jpg",
+   "image_caption": "ภาพส่องกล้อง: แผลในทางเดินอาหารส่วนบน"
+  },
+  {
+   "id": "GI-52-KF-004",
+   "block": "GI",
+   "cohort": 52,
+   "n": 4,
+   "type": "KF",
+   "case": "A 70-year-old man has had increasing difficulty swallowing and 4 kg weight loss over the past 2 months. Endoscopy shows a 3 cm ulcerated fungating mass in the mid-esophagus. The biopsy is shown in the figure.",
+   "items": [
+    {
+     "id": "4.1",
+     "prompt": "What is the diagnosis?",
+     "format": "short",
+     "accepted": [
+      "squamous cell carcinoma",
+      "squamous cell carcinoma of esophagus",
+      "scc",
+      "esophageal squamous cell carcinoma"
+     ],
+     "key_text": "Squamous cell carcinoma of esophagus",
+     "source_key": "Squamous cell carcinoma of esophagus",
+     "explanation": "หลอดอาหารส่วนกลาง + keratin pearl (ภาพซ้าย) และ intercellular bridges = squamous cell carcinoma"
+    },
+    {
+     "id": "4.2",
+     "prompt": "What are the 2 risk factors of the diagnosis?",
+     "format": "short",
+     "keywords_all": [
+      "smok",
+      "alcohol"
+     ],
+     "key_text": "Smoking and alcohol consumption",
+     "source_key": "Smoking and alcohol consumption",
+     "explanation": "ปัจจัยเสี่ยง SCC หลอดอาหาร: บุหรี่ แอลกอฮอล์ (รวม achalasia, อาหารร้อนจัด, esophageal web) · Barrett/GERD เสี่ยง adenocarcinoma"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF52",
+     "pages": [
+      3
+     ]
+    },
+    {
+     "paper": "KF52-KEY",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [
+    "esophageal cancer"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "หลอดอาหารส่วนบน/กลาง = SCC (บุหรี่ เหล้า) · ส่วนล่าง = adenocarcinoma (Barrett)",
+   "image": "img/GI-52-KF-004.jpg",
+   "image_caption": "ภาพจุลพยาธิวิทยา (H&E) จากชิ้นเนื้อ"
+  },
+  {
+   "id": "GI-52-KF-005",
+   "block": "GI",
+   "cohort": 52,
+   "n": 5,
+   "type": "KF",
+   "case": "Complete the table: state the mechanism of action (MOA) of each antiemetic drug.",
+   "items": [
+    {
+     "id": "5.1",
+     "prompt": "Aprepitant",
+     "format": "short",
+     "accepted": [
+      "nk1 receptor antagonist",
+      "nk1 antagonist",
+      "nk₁ receptor antagonist",
+      "substance p receptor antagonist",
+      "substance p antagonist",
+      "neurokinin 1 antagonist"
+     ],
+     "key_text": "NK₁ (substance P) receptor antagonist",
+     "source_key": "NK₁ (substance P) receptor antagonist",
+     "explanation": "aprepitant ยับยั้ง NK₁ receptor ของ substance P (ใช้ใน CINV ระยะล่าช้า)"
+    },
+    {
+     "id": "5.2",
+     "prompt": "Metoclopramide",
+     "format": "short",
+     "accepted": [
+      "d2 receptor antagonist",
+      "d2 antagonist",
+      "dopamine antagonist",
+      "dopamine d2 antagonist"
+     ],
+     "keywords_all": [
+      "d2",
+      "antagon"
+     ],
+     "key_text": "D₂ receptor antagonist (high dose: 5-HT₄ agonist, 5-HT₃ antagonist)",
+     "source_key": "D₂ receptor antagonist (high dose: 5-HT₄ agonist, 5-HT₃ antagonist)",
+     "explanation": "ยับยั้ง D₂ ที่ CTZ และเพิ่ม ACh ที่ myenteric plexus (5-HT₄ agonist) จึงเป็น prokinetic ด้วย"
+    },
+    {
+     "id": "5.3",
+     "prompt": "Ondansetron",
+     "format": "short",
+     "keywords_all": [
+      "5-ht3",
+      "antagon"
+     ],
+     "key_text": "5-HT₃ receptor antagonist (blocks serotonin receptors in CTZ and vagal afferents)",
+     "source_key": "5-HT₃ receptor antagonist (blocks serotonin receptors in CTZ and vagal afferents)",
+     "explanation": "ยับยั้ง 5-HT₃ ที่ CTZ และปลายประสาท vagus ใช้ใน CINV (ผลข้างเคียง: QT ยาว, ท้องผูก)",
+     "accepted": [
+      "5ht3 antagonist",
+      "5-ht3 receptor antagonist",
+      "serotonin antagonist",
+      "5-ht₃ receptor antagonist"
+     ]
+    },
+    {
+     "id": "5.4",
+     "prompt": "Promethazine",
+     "format": "short",
+     "accepted": [
+      "h1 antagonist",
+      "histamine h1 antagonist",
+      "antihistamine",
+      "h1 receptor antagonist"
+     ],
+     "keywords_all": [
+      "h1"
+     ],
+     "key_text": "Blocks D₂, H₁, M₁ and α₁ receptors",
+     "source_key": "Blocks D₂, H₁, M₁ and α₁ receptors",
+     "explanation": "phenothiazine ที่ต้าน D₂, H₁, M₁, α₁ → ง่วง ปากแห้ง ความดันตก ใช้ต้านอาเจียน/เมารถ"
+    },
+    {
+     "id": "5.5",
+     "prompt": "Dronabinol",
+     "format": "short",
+     "accepted": [
+      "cannabinoid receptor agonist",
+      "cannabinoid agonist",
+      "cb1 agonist",
+      "cb1 receptor agonist",
+      "cb₁ receptor agonist"
+     ],
+     "keywords_all": [
+      "cb1"
+     ],
+     "key_text": "Cannabinoid CB₁ receptor agonist",
+     "source_key": "Cannabinoid CB₁ receptor agonist",
+     "explanation": "THC สังเคราะห์ กระตุ้น CB₁ ในสมอง ลดคลื่นไส้ (ใช้ CINV ที่ดื้อยา)"
+    },
+    {
+     "id": "5.6",
+     "prompt": "Domperidone",
+     "format": "short",
+     "accepted": [
+      "peripheral d2 receptor antagonist",
+      "peripheral d2 antagonist",
+      "d2 receptor antagonist",
+      "d2 antagonist",
+      "dopamine antagonist"
+     ],
+     "keywords_all": [
+      "d2",
+      "peripheral"
+     ],
+     "key_text": "Peripheral D₂ receptor antagonist",
+     "source_key": "Peripheral D₂ receptor antagonist",
+     "explanation": "ต้าน D₂ นอกสมอง (ไม่ผ่าน BBB) → prokinetic โดยไม่มี EPS มาก"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF52",
+     "pages": [
+      3
+     ]
+    },
+    {
+     "paper": "KF52-KEY",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [
+    "antiemetics"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "Aprepitant NK₁ · metoclopramide/domperidone D₂ · ondansetron 5-HT₃ · promethazine H₁ · dronabinol CB₁"
+  },
+  {
+   "id": "GI-52-KF-006",
+   "block": "GI",
+   "cohort": 52,
+   "n": 6,
+   "type": "KF",
+   "case": "A 45-year-old man with inflammatory bowel disease and gastroesophageal reflux disease is enrolled in a clinical trial of a new gastrointestinal drug, dexloxiglumide, an antagonist of receptor X, during the intestinal phase of digestion. Ultrasound monitoring shows reduced gallbladder contraction.",
+   "items": [
+    {
+     "id": "6.1",
+     "prompt": "Give 1 possible factor that can cause gallbladder contraction.",
+     "format": "short",
+     "accepted": [
+      "cck",
+      "cholecystokinin",
+      "acetylcholine",
+      "vagal stimulation",
+      "vagus nerve"
+     ],
+     "key_text": "Cholecystokinin (CCK)",
+     "source_key": "Cholecystokinin (CCK)",
+     "explanation": "CCK จาก I cell กระตุ้นถุงน้ำดีบีบ · ACh จาก vagus ก็กระตุ้นได้"
+    },
+    {
+     "id": "6.2",
+     "prompt": "What is receptor X?",
+     "format": "short",
+     "accepted": [
+      "cck1",
+      "cck-1",
+      "cck1 receptor",
+      "cck-a",
+      "ccka",
+      "cck a receptor",
+      "cck-a receptor",
+      "cck₁ receptor"
+     ],
+     "key_text": "CCK₁ receptor",
+     "source_key": "CCK₁ receptor",
+     "explanation": "dexloxiglumide เป็นตัวต้าน CCK₁ (CCK-A) receptor ที่ถุงน้ำดีและตับอ่อน"
+    },
+    {
+     "id": "6.3",
+     "prompt": "What is the effect of this drug on the sphincter of Oddi?",
+     "format": "short",
+     "keywords_all": [
+      "contract"
+     ],
+     "key_text": "Contraction of the sphincter of Oddi",
+     "source_key": "Contraction of the sphincter of Oddi",
+     "explanation": "CCK ปกติทำให้ sphincter of Oddi คลาย → ถ้าถูกต้าน sphincter จะหดตัว/ไม่คลาย น้ำดีไหลลงลำไส้ลดลง"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF52",
+     "pages": [
+      4
+     ]
+    },
+    {
+     "paper": "KF52-KEY",
+     "pages": [
+      4
+     ]
+    }
+   ],
+   "tags": [
+    "CCK",
+    "gallbladder"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "CCK₁: ถุงน้ำดีบีบ + sphincter of Oddi คลาย + ตับอ่อนหลั่งเอนไซม์"
+  },
+  {
+   "id": "GI-52-KF-007",
+   "block": "GI",
+   "cohort": 52,
+   "n": 7,
+   "type": "KF",
+   "case": "A mother brings her child to the doctor because the child has swallowed a coin. X-ray shows the coin in the stomach. The doctor gives no treatment and explains that the coin will definitely be passed out in the stool.",
+   "items": [
+    {
+     "id": "7.1",
+     "prompt": "Which condition can stimulate gastrointestinal motility that allows the coin to be excreted in the stool?",
+     "format": "short",
+     "accepted": [
+      "fasting",
+      "fasting state",
+      "fasting stage",
+      "fasting period",
+      "interdigestive",
+      "interdigestive period",
+      "interdigestive state"
+     ],
+     "key_text": "Fasting stage",
+     "source_key": "Fasting stage",
+     "explanation": "ช่วงอดอาหาร (interdigestive) ลำไส้บีบเป็นคลื่นกวาดเศษอาหารและของแข็งไปข้างหน้า"
+    },
+    {
+     "id": "7.2",
+     "prompt": "State the name of that motility.",
+     "format": "short",
+     "accepted": [
+      "migrating motor complex",
+      "mmc",
+      "migrating myoelectric complex",
+      "migrating motility complex"
+     ],
+     "key_text": "Migrating Motor Complex (MMC)",
+     "source_key": "Migrating Motor Complex (MMC)",
+     "explanation": "MMC เกิดทุก 90–120 นาทีตอนอดอาหาร ควบคุมโดย motilin จากกระเพาะถึง ileum"
+    },
+    {
+     "id": "7.3",
+     "prompt": "Draw a diagram describing the action potential in the 3 different phases of the motility. (In the real exam you draw it; here describe each phase.)",
+     "format": "short",
+     "key_text": "Phase I: slow wave ไม่มี spike (เงียบ) · Phase II: spike ไม่สม่ำเสมอ บีบเป็นพักๆ · Phase III: spike ถี่ บีบแรง เป็นคลื่นต่อเนื่อง",
+     "source_key": "(ข้อวาดรูป) เฉลยเป็นรูป MMC phases: Phase I slow wave ไม่มีการหดตัว · Phase II spike ไม่สม่ำเสมอ · Phase III spike ถี่แรง",
+     "explanation": "ให้ตัดสินเองด้วยปุ่ม 'ตัดสินเอง' เพราะเป็นข้อวาดรูป",
+     "key_image": "img/GI-52-KF-007-key.jpg",
+     "key_image_caption": "เฉลยต้นฉบับ: MMC phases"
+    },
+    {
+     "id": "7.4",
+     "prompt": "If this contraction is abnormal, what condition or disease may result?",
+     "format": "short",
+     "keywords_all": [
+      "bacterial",
+      "overgrowth"
+     ],
+     "key_text": "Small intestinal bacterial overgrowth (SIBO)",
+     "source_key": "Small intestinal bacterial overgrowth (SIBO) — impaired MMC reduces intestinal cleansing waves, allowing bacteria to accumulate in the small intestine",
+     "explanation": "MMC เสีย → ไม่มีคลื่นกวาดแบคทีเรีย → bacteria สะสมในลำไส้เล็ก (SIBO)",
+     "accepted": [
+      "sibo",
+      "small intestinal bacterial overgrowth"
+     ]
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF52",
+     "pages": [
+      5
+     ]
+    },
+    {
+     "paper": "KF52-KEY",
+     "pages": [
+      5
+     ]
+    }
+   ],
+   "tags": [
+    "MMC",
+    "motility"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "MMC ช่วงอดอาหาร: phase I เงียบ · II spike ไม่สม่ำเสมอ · III spike ถี่ · ผิดปกติ → SIBO"
+  },
+  {
+   "id": "GI-52-KF-008",
+   "block": "GI",
+   "cohort": 52,
+   "n": 8,
+   "type": "KF",
+   "case": "People living in the countryside hit by a flood are forced to drink unclear water. Within the next several days many people develop diarrhea and about half of them die. Samples of the drinking water are positive for Vibrio cholerae.",
+   "items": [
+    {
+     "id": "8.1",
+     "prompt": "Which second messenger does cholera toxin activate?",
+     "format": "short",
+     "accepted": [
+      "camp",
+      "cyclic amp",
+      "cyclic adenosine monophosphate"
+     ],
+     "key_text": "cAMP",
+     "source_key": "cAMP",
+     "explanation": "cholera toxin ทำ ADP-ribosylation ของ Gs → adenylate cyclase ทำงาน → cAMP สูง"
+    },
+    {
+     "id": "8.2",
+     "prompt": "Which type of ion channel is irreversibly opened?",
+     "format": "short",
+     "accepted": [
+      "cftr",
+      "cftr chloride channel",
+      "chloride channel",
+      "cl channel",
+      "cl- channel"
+     ],
+     "key_text": "CFTR chloride channel",
+     "source_key": "CFTR chloride channel",
+     "explanation": "cAMP → PKA → CFTR เปิดค้าง → Cl⁻ และน้ำออกสู่ lumen ท้องเสียเป็นน้ำ"
+    },
+    {
+     "id": "8.3",
+     "prompt": "How does glucose in ORS correct dehydration in diarrhea?",
+     "format": "short",
+     "keywords_all": [
+      "sglt1",
+      "na"
+     ],
+     "key_text": "Glucose stimulates Na⁺ absorption via the Na⁺-glucose cotransporter (SGLT1), and water follows osmotically",
+     "source_key": "Glucose stimulates Na⁺ absorption via the Na⁺-glucose cotransporter (SGLT1), and water follows osmotically",
+     "explanation": "SGLT1 ดูด glucose คู่ Na⁺ ซึ่งไม่ถูกขัดขวางโดย cholera toxin น้ำตามเข้าเซลล์",
+     "accepted": [
+      "glucose enhances sodium absorption via sglt1 and water follows"
+     ]
+    },
+    {
+     "id": "8.4",
+     "prompt": "In the intestinal epithelium, which transporter is responsible for the absorption of glucose? (the printed question says sucrose)",
+     "format": "short",
+     "accepted": [
+      "sglt1",
+      "sglt-1",
+      "sglt 1"
+     ],
+     "key_text": "SGLT1",
+     "source_key": "SGLT1 (ผู้เฉลยหมายเหตุ: ข้อนี้จริงๆ ถาม glucose ไม่ใช่ sucrose)",
+     "explanation": "sucrose ถูกย่อยด้วย sucrase เป็น glucose + fructose ที่ brush border · glucose ดูดผ่าน SGLT1",
+     "audit_note": "โจทย์พิมพ์ว่า sucrose แต่เฉลยตอบ SGLT1 (ตัวดูด glucose) ตามหมายเหตุผู้เฉลย"
+    },
+    {
+     "id": "8.5",
+     "prompt": "In the intestinal epithelium, which transporter is responsible for the absorption of fructose?",
+     "format": "short",
+     "accepted": [
+      "glut5",
+      "glut-5",
+      "glut 5"
+     ],
+     "key_text": "GLUT5",
+     "source_key": "GLUT5",
+     "explanation": "fructose ดูดผ่าน GLUT5 (facilitated) ที่ apical membrane แล้วออกทาง GLUT2"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF52",
+     "pages": [
+      6
+     ]
+    },
+    {
+     "paper": "KF52-KEY",
+     "pages": [
+      6
+     ]
+    }
+   ],
+   "tags": [
+    "cholera",
+    "ORS",
+    "transporters"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "Cholera: Gs → cAMP → CFTR เปิด · ORS: SGLT1 (glucose+Na⁺) · fructose: GLUT5",
+   "audit_note": "ข้อ 8.4 โจทย์พิมพ์ว่า sucrose แต่เฉลย SGLT1 (ตัวดูด glucose) · ผู้เฉลยหมายเหตุไว้ว่าข้อสอบจริงถาม glucose"
+  },
+  {
+   "id": "GI-52-KF-009",
+   "block": "GI",
+   "cohort": 52,
+   "n": 9,
+   "type": "KF",
+   "case": "A man has an accident and needs a total colectomy (removal of the whole colon).",
+   "items": [
+    {
+     "id": "9.1",
+     "prompt": "How does total colectomy affect the level of urinary urobilinogen? (increase, decrease, no change)",
+     "format": "short",
+     "accepted": [
+      "decrease",
+      "decreased",
+      "decreases",
+      "ลด"
+     ],
+     "key_text": "Decrease",
+     "source_key": "Decrease",
+     "explanation": "urobilinogen เกิดจากแบคทีเรียในลำไส้ (ส่วนใหญ่ที่ลำไส้ใหญ่) เปลี่ยน bilirubin → ตัดลำไส้ใหญ่ → แบคทีเรียลด → urobilinogen ในปัสสาวะลด"
+    },
+    {
+     "id": "9.2",
+     "prompt": "What is the reason of 9.1?",
+     "format": "short",
+     "keywords_all": [
+      "bacteria"
+     ],
+     "key_text": "Total colectomy → loss of intestinal bacteria → ↓ conversion of bilirubin to urobilinogen → ↓ urinary urobilinogen",
+     "source_key": "Total colectomy → loss of intestinal bacteria → ↓ conversion of bilirubin to urobilinogen → ↓ urinary urobilinogen",
+     "explanation": "แบคทีเรียในลำไส้ใหญ่เปลี่ยน conjugated bilirubin เป็น urobilinogen (ส่วนหนึ่งถูกดูดกลับไปขับทางปัสสาวะ)"
+    }
+   ],
+   "answer_status": "disputed",
+   "refs": [
+    {
+     "paper": "KF52",
+     "pages": [
+      6
+     ]
+    },
+    {
+     "paper": "KF52-KEY",
+     "pages": [
+      6
+     ]
+    }
+   ],
+   "tags": [
+    "bilirubin",
+    "urobilinogen"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "urobilinogen มาจากแบคทีเรียในลำไส้เปลี่ยน bilirubin",
+   "audit_note": "ผู้เฉลยเขียนว่า 'ไม่แน่ใจ' และไม่ชัวร์ว่าข้อสอบจริงตัดแค่ terminal ileum หรือไม่ · การคิดอีกแบบ: แบคทีเรียที่ ileum ปลายยังสร้าง urobilinogen ได้บ้าง คำตอบจึงอาจเป็นลดลงบางส่วน"
+  },
+  {
+   "id": "GI-52-KF-010",
+   "block": "GI",
+   "cohort": 52,
+   "n": 10,
+   "type": "KF",
+   "case": "A 19-year-old man is advised to see his physician because genetic screening has detected a disease in other family members. His stool is positive for occult blood. Colonoscopy is performed, followed by colectomy. The first figure shows the gross appearance of the mucosal surface of the colectomy specimen.",
+   "items": [
+    {
+     "id": "10.1",
+     "prompt": "Describe 1 main finding of this figure.",
+     "format": "short",
+     "keywords_all": [
+      "polyp"
+     ],
+     "key_text": "Numerous small adenomatous polyps throughout the colon mucosa",
+     "source_key": "Numerous small adenomatous polyps throughout the colon mucosa",
+     "explanation": "เยื่อบุลำไส้ใหญ่มี polyp ขนาดเล็กจำนวนมากทั่วลำไส้ (>100)"
+    },
+    {
+     "id": "10.2",
+     "prompt": "Microscopic examination is shown in the second figure. What is the diagnosis of this figure?",
+     "format": "short",
+     "accepted": [
+      "tubular adenoma",
+      "adenoma"
+     ],
+     "key_text": "Tubular adenoma",
+     "source_key": "Tubular adenoma",
+     "explanation": "ต่อมเรียงตัวเป็นท่อ เซลล์ dysplasia ระดับต่ำ",
+     "image": "img/GI-52-KF-010b.jpg",
+     "image_caption": "ภาพจุลพยาธิวิทยาของ polyp"
+    },
+    {
+     "id": "10.3",
+     "prompt": "What is the diagnosis of this patient?",
+     "format": "short",
+     "accepted": [
+      "familial adenomatous polyposis",
+      "fap",
+      "familial polyposis"
+     ],
+     "key_text": "Familial adenomatous polyposis (FAP)",
+     "source_key": "Familial adenomatous polyposis (FAP)",
+     "explanation": "polyp หลายร้อย + ประวัติครอบครัว อายุน้อย = FAP"
+    },
+    {
+     "id": "10.4",
+     "prompt": "What gene mutation is most commonly found in this patient?",
+     "format": "short",
+     "accepted": [
+      "apc",
+      "apc gene"
+     ],
+     "key_text": "APC gene",
+     "source_key": "APC gene",
+     "explanation": "การกลายพันธุ์ของ APC (tumor suppressor บน chromosome 5q) ทำให้ Wnt/β-catenin ทำงานเกิน"
+    },
+    {
+     "id": "10.5",
+     "prompt": "What is the mode of inheritance?",
+     "format": "short",
+     "accepted": [
+      "autosomal dominant",
+      "ad"
+     ],
+     "key_text": "Autosomal dominant",
+     "source_key": "Autosomal dominant",
+     "explanation": "FAP ถ่ายทอดแบบ autosomal dominant"
+    },
+    {
+     "id": "10.6",
+     "prompt": "Why did this patient undergo colectomy? (1 short answer)",
+     "format": "short",
+     "keywords_all": [
+      "cancer"
+     ],
+     "key_text": "To prevent colorectal cancer (FAP develops colorectal cancer ~100%)",
+     "source_key": "To prevent colorectal cancer (FAP develops colorectal cancer ~100%)",
+     "explanation": "FAP ไม่รักษาจะเป็นมะเร็งลำไส้ใหญ่ทุกราย (ก่อนอายุ ~40)"
+    },
+    {
+     "id": "10.7",
+     "prompt": "If colectomy had not been done, what specific disease would develop in this patient?",
+     "format": "short",
+     "accepted": [
+      "colorectal adenocarcinoma",
+      "colorectal cancer",
+      "colon cancer",
+      "adenocarcinoma of colon",
+      "adenocarcinoma"
+     ],
+     "key_text": "Colorectal adenocarcinoma",
+     "source_key": "Colorectal adenocarcinoma",
+     "explanation": "adenoma → carcinoma sequence ใน FAP เกิดเกือบ 100%"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF52",
+     "pages": [
+      7
+     ]
+    },
+    {
+     "paper": "KF52-KEY",
+     "pages": [
+      7
+     ]
+    }
+   ],
+   "tags": [
+    "FAP",
+    "colon polyp"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "FAP: APC · autosomal dominant · polyp หลายร้อย · colectomy ป้องกันมะเร็ง",
+   "image": "img/GI-52-KF-010.jpg",
+   "image_caption": "ภาพถ่ายลำไส้ใหญ่ที่ตัดออกมา (gross)"
+  },
+  {
+   "id": "GI-52-KF-011",
+   "block": "GI",
+   "cohort": 52,
+   "n": 11,
+   "type": "KF",
+   "case": "A 65-year-old man with a history of alcohol abuse has had hematemesis for the past day. Physical examination shows mild jaundice, spider nevi and gynecomastia, mild pedal edema, normal jugular venous pulsation and a massively distended abdomen. Paracentesis shows protein-poor fluid free of inflammatory cells.",
+   "items": [
+    {
+     "id": "11.1",
+     "prompt": "What is the medical term for fluid collection in the abdominal cavity?",
+     "format": "short",
+     "accepted": [
+      "ascites"
+     ],
+     "key_text": "Ascites",
+     "source_key": "Ascites",
+     "explanation": "น้ำในช่องท้อง · ที่นี่เป็น transudate (โปรตีนต่ำ) จาก portal hypertension + albumin ต่ำ"
+    },
+    {
+     "id": "11.2",
+     "prompt": "What is the most likely pathology of his liver?",
+     "format": "short",
+     "accepted": [
+      "cirrhosis",
+      "liver cirrhosis",
+      "alcoholic cirrhosis"
+     ],
+     "key_text": "Cirrhosis",
+     "source_key": "Cirrhosis",
+     "explanation": "ดื่มหนัก + portal hypertension + spider nevi + gynecomastia = cirrhosis"
+    },
+    {
+     "id": "11.3",
+     "prompt": "What is the histology of his liver?",
+     "format": "short",
+     "keywords_all": [
+      "fibrosis",
+      "nodule"
+     ],
+     "key_text": "Diffuse fibrosis with regenerative nodules",
+     "source_key": "Diffuse fibrosis with regenerative nodules",
+     "explanation": "พังผืดทั่วตับล้อม regenerative nodule ทำลายโครงสร้างปกติ"
+    },
+    {
+     "id": "11.4",
+     "prompt": "What is the most likely cause of liver disease in this patient?",
+     "format": "short",
+     "accepted": [
+      "alcohol",
+      "alcohol abuse",
+      "chronic alcohol abuse",
+      "alcoholic liver disease",
+      "chronic alcohol use",
+      "alcohol consumption"
+     ],
+     "key_text": "Chronic alcohol abuse (alcoholic liver disease)",
+     "source_key": "Chronic alcohol abuse (alcoholic liver disease)",
+     "explanation": "alcoholic liver disease: fatty liver → alcoholic hepatitis → cirrhosis"
+    },
+    {
+     "id": "11.5",
+     "prompt": "What is the complication of liver disease that causes abdominal fluid and hematemesis?",
+     "format": "short",
+     "accepted": [
+      "portal hypertension"
+     ],
+     "key_text": "Portal hypertension",
+     "source_key": "Portal hypertension",
+     "explanation": "portal hypertension → ascites (+ hypoalbuminemia) และ esophageal varices แตก → hematemesis"
+    },
+    {
+     "id": "11.6",
+     "prompt": "What signs or symptoms can develop from this complication?",
+     "format": "short",
+     "keywords_all": [
+      "varices"
+     ],
+     "key_text": "Esophageal varices, splenomegaly, caput medusae, hepatic encephalopathy, hemorrhoids",
+     "source_key": "Esophageal varices, splenomegaly, caput medusae, hepatic encephalopathy, hemorrhoid",
+     "explanation": "portal–systemic shunt: esophageal varices, caput medusae, hemorrhoid, splenomegaly, ascites, hepatic encephalopathy"
+    },
+    {
+     "id": "11.7",
+     "prompt": "What is the mechanism that causes spider nevi and gynecomastia in this patient?",
+     "format": "short",
+     "keywords_all": [
+      "estrogen"
+     ],
+     "key_text": "Cirrhosis decreases hepatic metabolism of estrogen → ↑ estrogen → vasodilation (spider nevi) and breast tissue proliferation (gynecomastia)",
+     "source_key": "Cirrhosis decreases hepatic metabolism of estrogen → ↑ estrogen → vasodilation (spider nevi) and breast tissue proliferation (gynecomastia)",
+     "explanation": "ตับตายสลาย estrogen ไม่ได้ → estrogen สูง → หลอดเลือดขยาย (spider nevi) และเต้านมโต (gynecomastia)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF52",
+     "pages": [
+      9
+     ]
+    },
+    {
+     "paper": "KF52-KEY",
+     "pages": [
+      9
+     ]
+    }
+   ],
+   "tags": [
+    "cirrhosis",
+    "portal hypertension"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "Cirrhosis → portal hypertension (ascites, varices) · estrogen สูง → spider nevi, gynecomastia"
+  },
+  {
+   "id": "GI-52-KF-012",
+   "block": "GI",
+   "cohort": 52,
+   "n": 12,
+   "type": "KF",
+   "case": "A 30-year-old man presents with acute onset of severe diarrhea after returning from a trip to India. He passes loose watery stools more than 10 times per day without blood or mucus, has abdominal cramps and dizziness on standing, and is dehydrated. Wet-mount microscopy of the stool shows an actively motile 'shooting star'-like organism.",
+   "items": [
+    {
+     "id": "12.1",
+     "prompt": "Name 2 culture media that can be used to isolate the causative organism.",
+     "format": "short",
+     "keywords_all": [
+      "tcbs"
+     ],
+     "key_text": "TCBS agar, alkaline peptone water (APW)",
+     "source_key": "TCBS, APW (ผู้เฉลย: ข้อสอบจริงถามแค่อันเดียว ตอบแค่ TCBS agar พอ)",
+     "explanation": "Vibrio ใช้ TCBS (selective) และ alkaline peptone water (enrichment) · เฉลยต้นฉบับหมายเหตุว่าข้อสอบจริงถามอย่างเดียว ตอบ TCBS พอ",
+     "accepted": [
+      "tcbs and apw",
+      "tcbs, apw",
+      "tcbs agar",
+      "tcbs agar and alkaline peptone water"
+     ]
+    },
+    {
+     "id": "12.2",
+     "prompt": "What are the expected results on each culture medium?",
+     "format": "short",
+     "keywords_all": [
+      "yellow"
+     ],
+     "key_text": "TCBS agar: yellow colonies (sucrose fermentation) · APW: rapid growth/turbidity from Vibrio enrichment",
+     "source_key": "TCBS agar: yellow colonies (sucrose fermentation) · APW: rapid growth/turbidity from Vibrio enrichment",
+     "explanation": "V. cholerae ย่อย sucrose บน TCBS ให้โคโลนีสีเหลือง · APW เพิ่มจำนวน Vibrio ให้ขุ่น"
+    },
+    {
+     "id": "12.3",
+     "prompt": "What is the most likely causative organism in this patient?",
+     "format": "short",
+     "accepted": [
+      "vibrio cholerae",
+      "v. cholerae",
+      "v cholerae",
+      "cholera"
+     ],
+     "key_text": "Vibrio cholerae",
+     "source_key": "Vibrio cholerae",
+     "explanation": "ท้องเสียเป็นน้ำจำนวนมาก (rice-water) หลังไปอินเดีย + เคลื่อนที่แบบ shooting star = Vibrio cholerae"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF52",
+     "pages": [
+      10
+     ]
+    },
+    {
+     "paper": "KF52-KEY",
+     "pages": [
+      10
+     ]
+    }
+   ],
+   "tags": [
+    "Vibrio cholerae"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "V. cholerae: shooting-star motility · TCBS สีเหลือง · APW เพิ่มจำนวน"
+  },
+  {
+   "id": "GI-52-KF-013",
+   "block": "GI",
+   "cohort": 52,
+   "n": 13,
+   "type": "KF",
+   "case": "Match the following microorganisms (1 Coxsackie A, 2 Coxsackie B, 3 Enterovirus 71, 4 Enterovirus 72, 5 Norovirus, 6 Astrovirus, 7 Poliovirus) with the conditions below.",
+   "items": [
+    {
+     "id": "13.1",
+     "prompt": "Herpangina",
+     "format": "short",
+     "accepted": [
+      "coxsackie a",
+      "coxsackie a virus",
+      "1"
+     ],
+     "key_text": "Coxsackie A",
+     "source_key": "Coxsackie A",
+     "explanation": "herpangina (แผลที่เพดานอ่อน) จาก Coxsackie A"
+    },
+    {
+     "id": "13.2",
+     "prompt": "Traveler's diarrhea",
+     "format": "short",
+     "accepted": [
+      "norovirus",
+      "5"
+     ],
+     "key_text": "Norovirus",
+     "source_key": "Norovirus",
+     "explanation": "ตามเฉลยต้นฉบับ: Norovirus (Traveler's diarrhea ที่เกิดจากไวรัส)"
+    },
+    {
+     "id": "13.3",
+     "prompt": "Bornholm syndrome",
+     "format": "short",
+     "accepted": [
+      "coxsackie b",
+      "coxsackie b virus",
+      "2"
+     ],
+     "key_text": "Coxsackie B",
+     "source_key": "Coxsackie B",
+     "explanation": "Bornholm disease (epidemic pleurodynia) จาก Coxsackie B"
+    },
+    {
+     "id": "13.4",
+     "prompt": "Hand-foot-mouth disease",
+     "format": "short",
+     "accepted": [
+      "enterovirus71",
+      "enterovirus 71",
+      "ev71",
+      "ev 71",
+      "3"
+     ],
+     "key_text": "Enterovirus 71",
+     "source_key": "Enterovirus 71",
+     "explanation": "HFMD ที่มีภาวะแทรกซ้อนทางสมองจาก EV71 (Coxsackie A16 ก็ทำ HFMD)"
+    },
+    {
+     "id": "13.5",
+     "prompt": "Star-like appearance",
+     "format": "short",
+     "accepted": [
+      "astrovirus",
+      "6"
+     ],
+     "key_text": "Astrovirus",
+     "source_key": "Astrovirus",
+     "explanation": "astrovirus เห็นเป็นรูปดาวใน EM"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF52",
+     "pages": [
+      10
+     ]
+    },
+    {
+     "paper": "KF52-KEY",
+     "pages": [
+      10
+     ]
+    }
+   ],
+   "tags": [
+    "enterovirus",
+    "viral gastroenteritis"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "Herpangina–Cox A · Bornholm–Cox B · HFMD–EV71 · star–astrovirus",
+   "audit_note": "ข้อ 13.2 เฉลยตอบ Norovirus (ตามเฉลยต้นฉบับ) ตำราทั่วไปมักตอบ ETEC/ไวรัสหลายชนิดสำหรับ traveler's diarrhea"
+  },
+  {
+   "id": "GI-52-KF-014",
+   "block": "GI",
+   "cohort": 52,
+   "n": 14,
+   "type": "KF",
+   "case": "A 58-year-old man with chronic systolic heart failure (HFrEF) and hypertension is started on carvedilol as part of his long-term management. Compared with other β₁-selective blockers, carvedilol provides additional hemodynamic benefits in this patient.",
+   "items": [
+    {
+     "id": "14.1",
+     "prompt": "Besides its β-adrenergic blocking effect, what additional pharmacologic property of carvedilol makes it especially useful in this patient?",
+     "format": "short",
+     "accepted": [
+      "alpha1 blockade",
+      "alpha-1 blockade",
+      "alpha 1 blockade",
+      "alpha1 adrenergic blockade",
+      "alpha-1 adrenergic blocking",
+      "α1 blockade",
+      "alpha1 antagonist",
+      "alpha-1 antagonist"
+     ],
+     "keywords_all": [
+      "alpha"
+     ],
+     "key_text": "Anti-α₁-adrenergic activity (non-selective β blocker + α₁ blocker → vasodilation)",
+     "source_key": "Anti-α₁-adrenergic activity (non-selective β blocker + α₁ blocker → vasodilation)",
+     "explanation": "carvedilol ต้าน β₁, β₂ และ α₁ → หลอดเลือดขยาย afterload ลด · ข้อนี้ไม่เกี่ยวกับ GI เป็นข้อเภสัชวิทยาหัวใจ"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF52",
+     "pages": [
+      11
+     ]
+    },
+    {
+     "paper": "KF52-KEY",
+     "pages": [
+      11
+     ]
+    }
+   ],
+   "tags": [
+    "carvedilol"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "Carvedilol = non-selective β-blocker + α₁-blocker"
+  },
+  {
+   "id": "GI-52-KF-015",
+   "block": "GI",
+   "cohort": 52,
+   "n": 15,
+   "type": "KF",
+   "case": "A 20-year-old man has intermittent diarrhea, bloating, excessive gas and foul-smelling stool for 2 weeks after accidentally swallowing contaminated water during the floods. No fever, mild abdominal pain. What are the appropriate instructions for specimen collection for parasite or ova examination? (answer 4 points)",
+   "items": [
+    {
+     "id": "15.1",
+     "prompt": "State 4 instructions for collecting the stool specimen.",
+     "format": "short",
+     "key_text": "1) เก็บอุจจาระสดใส่ภาชนะสะอาดแห้ง 2) ส่งห้องปฏิบัติการทันที 3) เก็บอย่างน้อย 3 ตัวอย่างต่างวัน 4) ถ้าส่งล่าช้าให้เก็บในน้ำยารักษาสภาพ (10% formalin หรือ PVA)",
+     "source_key": "1. Collect fresh stool in a clean, dry container · 2. Send to the laboratory immediately · 3. Collect at least 3 stool specimens on different days · 4. If examination is delayed, preserve the stool in fixative (10% formalin or PVA)",
+     "explanation": "ห้ามแช่เย็นเพราะ trophozoite ตายง่าย · อย่าให้ปนปัสสาวะ/น้ำ · อาจเก็บ 3 ตัวอย่างใน 3 วันเพราะปล่อยเชื้อไม่สม่ำเสมอ"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF52",
+     "pages": [
+      11
+     ]
+    },
+    {
+     "paper": "KF52-KEY",
+     "pages": [
+      11
+     ]
+    }
+   ],
+   "tags": [
+    "stool exam",
+    "parasites"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "ตัวอย่างอุจจาระตรวจปรสิต: สด สะอาด ส่งทันที 3 ตัวอย่างต่างวัน ใส่ fixative ถ้าช้า"
+  },
+  {
+   "id": "GI-52-KF-016",
+   "block": "GI",
+   "cohort": 52,
+   "n": 16,
+   "type": "KF",
+   "case": "A school-aged child living in a rural area develops chronic diarrhea after drinking untreated river water. The diarrhea is foul-smelling, bulky and greasy without blood or mucus, with bloating, flatulence and gradual weight loss. Stool microscopy shows a pear-shaped protozoan with bilateral symmetry, two nuclei giving a 'face-like' appearance, multiple flagella and a ventral adhesive disc that attaches to the intestinal mucosa without invading it; it interferes with fat absorption (steatorrhea).",
+   "items": [
+    {
+     "id": "16.1",
+     "prompt": "Identify the causative organism.",
+     "format": "short",
+     "accepted": [
+      "giardia lamblia",
+      "giardia",
+      "giardia duodenalis",
+      "giardia intestinalis",
+      "g. lamblia"
+     ],
+     "key_text": "Giardia lamblia",
+     "source_key": "Giardia lamblia",
+     "explanation": "trophozoite รูปลูกแพร์ 2 nuclei หน้าตาเหมือนใบหน้า + ventral adhesive disc + steatorrhea = Giardia lamblia"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF52",
+     "pages": [
+      11
+     ]
+    },
+    {
+     "paper": "KF52-KEY",
+     "pages": [
+      11
+     ]
+    }
+   ],
+   "tags": [
+    "Giardia"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "Giardia: pear-shaped, 2 nuclei (face), adhesive disc, steatorrhea"
+  },
+  {
+   "id": "GI-52-KF-017",
+   "block": "GI",
+   "cohort": 52,
+   "n": 17,
+   "type": "KF",
+   "case": "A 3-year-old child is brought to the hospital with acute watery diarrhea for 2 days after drinking contaminated water, frequent loose stools without blood or mucus, and signs of mild to moderate dehydration (dry mouth, decreased urine output). The physician treats the child with oral rehydration solution (ORS).",
+   "items": [
+    {
+     "id": "17.1",
+     "prompt": "What is the main therapeutic goal of giving ORS in this patient?",
+     "format": "short",
+     "keywords_all": [
+      "fluid",
+      "electrolyte"
+     ],
+     "key_text": "Maintenance of fluid and electrolyte balance to prevent or correct the dehydration caused by diarrhea",
+     "source_key": "Maintenance of fluid and electrolyte balance to prevent or correct the dehydration caused by diarrhea",
+     "explanation": "เป้าหมายหลักของ ORS คือแก้/ป้องกันภาวะขาดน้ำและเสียสมดุลเกลือแร่",
+     "accepted": [
+      "rehydration",
+      "correct dehydration",
+      "prevent dehydration",
+      "correct dehydration and electrolyte balance"
+     ]
+    },
+    {
+     "id": "17.2",
+     "prompt": "What is the MOA by which ORS corrects dehydration in patients with diarrhea?",
+     "format": "short",
+     "keywords_all": [
+      "glucose",
+      "sodium"
+     ],
+     "key_text": "Na⁺, K⁺, Cl⁻ replace body losses · glucose facilitates sodium absorption · bicarbonate or citrate corrects the acidosis from diarrhea and dehydration",
+     "source_key": "Na⁺, K⁺, Cl⁻ replace body losses · glucose facilitates sodium absorption · bicarbonate or citrate corrects the acidosis from diarrhea and dehydration",
+     "explanation": "glucose ดูดผ่าน SGLT1 พร้อม Na⁺ น้ำตามเข้าเซลล์ · HCO₃⁻/citrate แก้ acidosis · K⁺ ชดเชยที่เสียไป"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF52",
+     "pages": [
+      12
+     ]
+    },
+    {
+     "paper": "KF52-KEY",
+     "pages": [
+      12
+     ]
+    }
+   ],
+   "tags": [
+    "ORS"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "ORS: Na⁺ K⁺ Cl⁻ + glucose (SGLT1) + bicarbonate/citrate"
+  },
+  {
+   "id": "GI-52-KF-018",
+   "block": "GI",
+   "cohort": 52,
+   "n": 18,
+   "type": "KF",
+   "case": "A 50-year-old man was in a car accident with multiple fractures and had surgery 2 weeks ago. He developed pneumonia and is intubated on mechanical ventilation in the ICU. Body weight 50 kg, height 170 cm.",
+   "items": [
+    {
+     "id": "18.1",
+     "prompt": "What is his nutritional status?",
+     "format": "short",
+     "accepted": [
+      "underweight",
+      "under weight",
+      "ผอม",
+      "น้ำหนักต่ำกว่าเกณฑ์"
+     ],
+     "key_text": "Underweight",
+     "source_key": "Underweight",
+     "explanation": "BMI < 18.5 = underweight"
+    },
+    {
+     "id": "18.2",
+     "prompt": "How do you assess nutritional status?",
+     "format": "short",
+     "keywords_all": [
+      "bmi"
+     ],
+     "key_text": "BMI (body mass index) — below 18.5 = underweight",
+     "source_key": "BMI (body mass index) — below 18.5 = underweight",
+     "explanation": "ประเมินภาวะโภชนาการผู้ใหญ่ด้วย BMI (WHO: <18.5 underweight, 18.5–24.9 normal, 25+ overweight)",
+     "accepted": [
+      "body mass index"
+     ]
+    },
+    {
+     "id": "18.3",
+     "prompt": "How is the answer derived? (give formula and answer)",
+     "format": "short",
+     "keywords_all": [
+      "17.3"
+     ],
+     "key_text": "BMI = weight / height² = 50 / (1.70²) = 17.3 kg/m²",
+     "source_key": "BMI = weight / height² = 50 / (1.70²) = 17.3 kg/m²",
+     "explanation": "50 ÷ 2.89 = 17.3 kg/m² (< 18.5)",
+     "key_image": "img/GI-52-KF-018-key.jpg",
+     "key_image_caption": "สไลด์ในเฉลย: Starvation vs Stress — metabolic rate, weight, energy, nitrogen, hormones (ผู้เฉลยว่าข้อ 18 มีถามตารางนี้ด้วย)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF52",
+     "pages": [
+      12
+     ]
+    },
+    {
+     "paper": "KF52-KEY",
+     "pages": [
+      12
+     ]
+    }
+   ],
+   "tags": [
+    "nutrition",
+    "BMI"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "BMI = kg/m² · <18.5 underweight · stress vs starvation ต่างกันที่ metabolic rate, nitrogen, hormone"
+  },
+  {
+   "id": "GI-52-KF-022",
+   "block": "GI",
+   "cohort": 52,
+   "n": 22,
+   "type": "KF",
+   "case": "A 28-year-old man presents with recurrent seizures and chronic headache. He lives in an area with poor sanitation and has a history of eating undercooked pork. Brain MRI shows multiple cystic lesions with surrounding edema in the cerebral parenchyma, some with a central scolex. The diagnosis of neurocysticercosis is made.",
+   "items": [
+    {
+     "id": "22.1",
+     "prompt": "What drugs are used in the treatment of neurocysticercosis?",
+     "format": "short",
+     "keywords_all": [
+      "albendazole"
+     ],
+     "key_text": "Albendazole + glucocorticoid",
+     "source_key": "Albendazole + glucocorticoid",
+     "explanation": "albendazole (หรือ praziquantel) ฆ่า cyst · ต้องให้ glucocorticoid ร่วมเพื่อลดการอักเสบจากพยาธิตายในสมอง (ผู้เฉลย) · ให้ยากันชักถ้ามี seizure",
+     "accepted": [
+      "albendazole and steroid",
+      "albendazole + corticosteroid",
+      "albendazole + dexamethasone",
+      "praziquantel"
+     ]
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF52",
+     "pages": [
+      13
+     ]
+    },
+    {
+     "paper": "KF52-KEY",
+     "pages": [
+      13
+     ]
+    }
+   ],
+   "tags": [
+    "Taenia solium",
+    "neurocysticercosis"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "neurocysticercosis: albendazole + glucocorticoid"
+  },
+  {
+   "id": "GI-52-KF-023",
+   "block": "GI",
+   "cohort": 52,
+   "n": 23,
+   "type": "KF",
+   "case": "A 23-year-old woman presents with vaginal itching and foul-smelling, frothy, yellow-green discharge. Examination shows an erythematous cervix with punctate hemorrhages ('strawberry cervix'). Motile flagellated protozoa are seen on wet mount. She is diagnosed with Trichomonas vaginalis infection.",
+   "items": [
+    {
+     "id": "23.1",
+     "prompt": "What is the drug of choice for treatment of this infection?",
+     "format": "short",
+     "accepted": [
+      "metronidazole",
+      "tinidazole",
+      "metronidazole or tinidazole"
+     ],
+     "key_text": "Metronidazole",
+     "source_key": "Metronidazole",
+     "explanation": "metronidazole (หรือ tinidazole) · ห้ามดื่มแอลกอฮอล์ (disulfiram-like) และควรรักษาคู่นอนด้วย"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF52",
+     "pages": [
+      13
+     ]
+    },
+    {
+     "paper": "KF52-KEY",
+     "pages": [
+      13
+     ]
+    }
+   ],
+   "tags": [
+    "Trichomonas",
+    "metronidazole"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "Trichomonas vaginalis → metronidazole"
+  },
+  {
+   "id": "GI-52-KF-024",
+   "block": "GI",
+   "cohort": 52,
+   "n": 24,
+   "type": "KF",
+   "case": "A middle-aged man from a tropical region presents with chronic swelling of the lower limbs and scrotum, with a long history of recurrent fever and lymphatic inflammation. Examination shows non-pitting edema and skin thickening consistent with elephantiasis. The disease is caused by a filarial nematode transmitted by mosquitoes.",
+   "items": [
+    {
+     "id": "24.1",
+     "prompt": "List 3 drugs commonly used in the treatment and control of lymphatic filariasis.",
+     "format": "short",
+     "keywords_all": [
+      "diethylcarbamazine",
+      "albendazole",
+      "ivermectin"
+     ],
+     "key_text": "Diethylcarbamazine (DEC), albendazole, ivermectin",
+     "source_key": "Diethylcarbamazine (DEC), albendazole, ivermectin",
+     "explanation": "DEC เป็นยาหลัก · albendazole และ ivermectin ใช้ร่วม (mass drug administration: DEC + albendazole ± ivermectin)",
+     "accepted": [
+      "dec albendazole ivermectin"
+     ]
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF52",
+     "pages": [
+      13
+     ]
+    },
+    {
+     "paper": "KF52-KEY",
+     "pages": [
+      13
+     ]
+    }
+   ],
+   "tags": [
+    "filariasis"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "Lymphatic filariasis: DEC, albendazole, ivermectin"
+  }
+ ]
+}

@@ -10,7 +10,7 @@ PDF in auditor/source/. Writes data/blocks/<BLOCK>/img/<MedLib question id>.jpg 
                     picture is a single embedded image; check the page by eye that nothing sits outside it)
 build_work.py puts the path into the work file; build_outputs.py embeds it as a data URI in the quiz JSON.
 """
-import argparse, io, json, sys
+import argparse, io, json, re, sys
 from pathlib import Path
 import pymupdf
 from PIL import Image
@@ -26,7 +26,8 @@ def medlib_id(qid, inv):
     sid, n = qid.rsplit("_", 1)
     meta = inv[sid]
     c = meta.get("medlib_cohort") or meta["cohort"]
-    return f"{meta['block'].upper()}-{c}-{meta['type']}-{int(n):03d}"
+    m = re.fullmatch(r"(\d+)([a-z]*)", n)  # KF/OSPE: a letter suffix (010b) = a 2nd picture of the same question
+    return f"{meta['block'].upper()}-{c}-{meta['type']}-{int(m.group(1)):03d}{m.group(2)}"
 
 
 def native_image(doc, page, rect, qid):
