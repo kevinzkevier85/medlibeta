@@ -19,9 +19,9 @@ AI ตอบตรงกับเฉลยต้นฉบับ **74/81** ข้
 | ข้อ | ต้นฉบับ | AI | ความมั่นใจ | ปัญหา | รายละเอียด |
 |---|---|---|---|---|---|
 | 20 | B | C | hi | เฉลยขัดกับ AI |  |
-| 27 | A | B | hi | เฉลยขัดกับ AI | ไตเล็กผิวเป็นเม็ด (chronic/hypertensive nephrosclerosis) มักสัมพันธ์กับ hypertension เฉลยเลือก hemoptysis |
+| 27 | A | B | hi | เฉลยขัดกับ AI | AI ตอบ hypertension (small granular kidney = end-stage/nephrosclerosis) ต้นฉบับ hemoptysis — ปี 51 ข้อเดียวกันเฉลย hypertension ควรให้คนตัดสิน |
 | 45 | B | A | mid | เฉลยขัดกับ AI |  |
-| 60 | B | A | mid | เฉลยขัดกับ AI |  |
+| 60 | B | A | mid | เฉลยขัดกับ AI | AI ตอบ Leydig cell; ต้นฉบับ Sertoli cell (tumor หลั่ง estrogen) |
 | 96 | D | C | mid | เฉลยขัดกับ AI |  |
 
 ## ปัญหาอื่นที่พบ (ไม่กระทบเฉลย)

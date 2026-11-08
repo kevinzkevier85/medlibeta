@@ -319,7 +319,7 @@ Claude จะบันทึกลง `auditor/data/decisions.json` แล้ว
 | kub_51_MCQ_075 | None | None | None | AI เขียนข้อนี้ขึ้นใหม่จากโน้ตความจำในต้นฉบับ |   |
 | kub_51_MCQ_093 | C | A | lo | ช้อยส์ D, E AI เติมให้ครบ 5 ตัว; เฉลยขัดกับ AI | AI blind ตอบ Treponema; เฉลยต้นฉบับเขียน Reiter syndrome → Chlamydia สมเหตุผล  |
 | kub_52_MCQ_020 | B | C | hi | เฉลยขัดกับ AI |   |
-| kub_52_MCQ_027 | A | B | hi | เฉลยขัดกับ AI | ไตเล็กผิวเป็นเม็ด (chronic/hypertensive nephrosclerosis) มักสัมพันธ์กับ hypertension เฉลยเลือก hemoptysis  |
+| kub_52_MCQ_027 | A | B | hi | เฉลยขัดกับ AI | AI ตอบ hypertension (small granular kidney = end-stage/nephrosclerosis) ต้นฉบับ hemoptysis — ปี 51 ข้อเดียวกันเฉลย hypertension ควรให้คนตัดสิน  |
 | kub_52_MCQ_045 | B | A | mid | เฉลยขัดกับ AI |   |
-| kub_52_MCQ_060 | B | A | mid | เฉลยขัดกับ AI |   |
+| kub_52_MCQ_060 | B | A | mid | เฉลยขัดกับ AI | AI ตอบ Leydig cell; ต้นฉบับ Sertoli cell (tumor หลั่ง estrogen)  |
 | kub_52_MCQ_096 | D | C | mid | เฉลยขัดกับ AI |   |
