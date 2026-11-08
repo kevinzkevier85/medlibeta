@@ -1,6 +1,6 @@
 # REVIEW — รายการรอผู้ใช้ตัดสิน
 
-ทั้งหมด 313 รายการ
+ทั้งหมด 317 รายการ
 วิธีตอบ: พิมพ์ในแชทเป็นบรรทัด เช่น `end_52_MCQ_027: คงเดิม` / `end_52_MCQ_063: C` / `end_52_MCQ_046: ตรวจใหม่`
 Claude จะบันทึกลง `auditor/data/decisions.json` แล้ว build ใหม่
 
@@ -311,9 +311,13 @@ Claude จะบันทึกลง `auditor/data/decisions.json` แล้ว
 | kub_50_MCQ_063 | None | A | mid | AI เขียนข้อนี้ขึ้นใหม่จากโน้ตความจำในต้นฉบับ |   |
 | kub_50_MCQ_071 | E | A | mid | เฉลยขัดกับ AI | AI blind ตอบ follicular; แต่รอบ 24 วัน ตกไข่วันที่ 10 วันที่ 14 อยู่ luteal phase → granulosa lutein ถูก (ต้นฉบับถูก)  |
 | kub_50_MCQ_091 | None | None | None | AI เขียนข้อนี้ขึ้นใหม่จากโน้ตความจำในต้นฉบับ |   |
-| kub_51_MCQ_013 | C | E | lo | เฉลยขัดกับ AI |   |
-| kub_51_MCQ_070 | D | C | hi | เฉลยขัดกับ AI |   |
-| kub_51_MCQ_093 | C | A | lo | เฉลยขัดกับ AI |   |
+| kub_51_MCQ_013 | C | E | lo | เฉลยขัดกับ AI | AI blind ตอบ E; แต่ FF สูงทำให้ oncotic pressure ใน peritubular capillary 'เพิ่ม' ไม่ใช่ลด → E ผิด ต้นฉบับ C (renal stone) อธิบายยาก ควรให้คนตรวจ  |
+| kub_51_MCQ_020 | None | None | None | AI เขียนข้อนี้ขึ้นใหม่จากโน้ตความจำในต้นฉบับ |   |
+| kub_51_MCQ_042 | None | None | None | AI เขียนข้อนี้ขึ้นใหม่จากโน้ตความจำในต้นฉบับ |   |
+| kub_51_MCQ_066 | None | None | None | AI เขียนข้อนี้ขึ้นใหม่จากโน้ตความจำในต้นฉบับ |   |
+| kub_51_MCQ_070 | D | C | hi | เฉลยขัดกับ AI | AI blind ตอบ fertile woman; ต้นฉบับ pregnant (corpus luteum คงอยู่ ไม่มี corpus albicans) สมเหตุผลกว่า  |
+| kub_51_MCQ_075 | None | None | None | AI เขียนข้อนี้ขึ้นใหม่จากโน้ตความจำในต้นฉบับ |   |
+| kub_51_MCQ_093 | C | A | lo | ช้อยส์ D, E AI เติมให้ครบ 5 ตัว; เฉลยขัดกับ AI | AI blind ตอบ Treponema; เฉลยต้นฉบับเขียน Reiter syndrome → Chlamydia สมเหตุผล  |
 | kub_52_MCQ_020 | B | C | hi | เฉลยขัดกับ AI |   |
 | kub_52_MCQ_027 | A | B | hi | เฉลยขัดกับ AI | ไตเล็กผิวเป็นเม็ด (chronic/hypertensive nephrosclerosis) มักสัมพันธ์กับ hypertension เฉลยเลือก hemoptysis  |
 | kub_52_MCQ_045 | B | A | mid | เฉลยขัดกับ AI |   |
