@@ -25,7 +25,8 @@ def is_pink(r, g, b):
     salmon = r >= 240 and 185 <= g <= 215 and 175 <= b <= 210 and r - b >= 30   # pale salmon highlighter (GI 44)
     yellow = r >= 235 and g >= 185 and b <= 130                                  # yellow highlighter (GI 41-43)
     orange = r >= 240 and 195 <= g <= 225 and 115 <= b <= 165 and r - b >= 80     # orange pill highlight (KUB 52)
-    return pink or lime or salmon or yellow or orange
+    blue = b >= 245 and 170 <= r <= 210 and 200 <= g <= 232                      # light-blue pill highlight (KUB 44)
+    return pink or lime or salmon or yellow or orange or blue
 
 
 def pink_fraction(pix, rect):
@@ -52,8 +53,9 @@ def lines_of(page):
             if not spans:
                 continue
             txt = "".join(s["text"] for s in l["spans"]).strip()
-            colored = sum(len(s["text"]) for s in spans if s["color"] != 0)
-            plain = sum(len(s["text"]) for s in spans if s["color"] == 0)
+            dark = lambda c: max(c >> 16 & 255, c >> 8 & 255, c & 255) < 90   # black or near-black (KUB 44 uses dark grey)
+            colored = sum(len(s["text"]) for s in spans if not dark(s["color"]))
+            plain = sum(len(s["text"]) for s in spans if dark(s["color"]))
             (blue if colored > plain else black).append((pymupdf.Rect(l["bbox"]), txt))
     black.sort(key=lambda t: (round(t[0].y0), t[0].x0))
     blue.sort(key=lambda t: (round(t[0].y0), t[0].x0))

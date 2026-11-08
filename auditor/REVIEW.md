@@ -1,6 +1,6 @@
 # REVIEW — รายการรอผู้ใช้ตัดสิน
 
-ทั้งหมด 293 รายการ
+ทั้งหมด 304 รายการ
 วิธีตอบ: พิมพ์ในแชทเป็นบรรทัด เช่น `end_52_MCQ_027: คงเดิม` / `end_52_MCQ_063: C` / `end_52_MCQ_046: ตรวจใหม่`
 Claude จะบันทึกลง `auditor/data/decisions.json` แล้ว build ใหม่
 
@@ -281,6 +281,17 @@ Claude จะบันทึกลง `auditor/data/decisions.json` แล้ว
 | gi_52_MCQ_042 | C | C | low | ไม่มีตัวเลือก nausea/vomiting of pregnancy ตรงๆ |   |
 | gi_52_MCQ_061 | E | B | medium | เฉลยขัดกับ AI |   |
 | gi_52_MCQ_073 | ['B', 'C'] | B | low | ต้นฉบับวงไว้หลายตัว |   |
+| kub_44_MCQ_003 | None | A | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| kub_44_MCQ_006 | E | C | mid | เฉลยขัดกับ AI |   |
+| kub_44_MCQ_008 | None | C | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| kub_44_MCQ_019 | C | D | mid | เฉลยขัดกับ AI |   |
+| kub_44_MCQ_021 | None | D | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| kub_44_MCQ_022 | None | E | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| kub_44_MCQ_028 | D | B | mid | เฉลยขัดกับ AI |   |
+| kub_44_MCQ_040 | D | A | mid | เฉลยขัดกับ AI |   |
+| kub_44_MCQ_047 | None | A | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| kub_44_MCQ_050 | D | B | mid | เฉลยขัดกับ AI |   |
+| kub_44_MCQ_054 | A | C | mid | เฉลยขัดกับ AI |   |
 | kub_49_MCQ_006 | A | B | mid | เฉลยขัดกับ AI |   |
 | kub_49_MCQ_009 | E | D | mid | เฉลยขัดกับ AI |   |
 | kub_49_MCQ_011 | E | C | mid | เฉลยขัดกับ AI |   |
