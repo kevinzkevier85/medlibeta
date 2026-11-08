@@ -39,6 +39,10 @@ for (const s of block.exam_sets) {
     await go(`#/set/GI/${s}/run`); await p.waitForSelector(".opt, .case, .kfitem, textarea, input");
     assert.ok((await p.textContent("body")).trim().length > 50);
   });
+  const imgs = []; JSON.stringify(set, (k, v) => { if (typeof v === "string" && /^img\/.+\.jpg$/.test(v)) imgs.push(v); return v; });
+  await t(`  ${imgs.length} picture file(s) in ${s} exist`, async () => {
+    for (const f of new Set(imgs)) assert.strictEqual((await ctx.request.get(BASE + "data/blocks/GI/" + f)).status(), 200, f);
+  });
   const withImg = set.questions.filter((q) => q.image).slice(0, 3);
   for (const q of withImg) {
     await t(`  ${q.id}: picture loads`, async () => {
@@ -50,6 +54,12 @@ for (const s of block.exam_sets) {
     });
   }
 }
+await t("KF: answering shows the key picture (GI-52-KF-007 → MMC phases)", async () => {
+  await go("#/q/GI-52-KF-007"); await p.waitForSelector("textarea[data-item]");
+  for (const ta of await p.$$("textarea[data-item]")) await ta.fill("fasting");
+  await p.click("button[data-z='check']"); await p.waitForSelector(".keyfig img");
+  await p.waitForFunction(() => [...document.querySelectorAll(".keyfig img")].every((i) => i.complete && i.naturalWidth > 0));
+});
 await t("no broken GI files, no pageerror", async () => { assert.deepStrictEqual(bad, []); assert.deepStrictEqual(errors, []); });
 console.log(`\n${pass} passed`);
 await browser.close(); server.kill();
