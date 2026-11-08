@@ -17,7 +17,7 @@ HEADER = re.compile(r"^VICHAKARN MED PSU \d+$", re.I)  # running page header of 
 INSTR = re.compile(r"^(\d\.\s*)?(ข้อสอบ\s*MCQ\s*มีทั้งหมด|นักศึกษามีเวลา|ข้อสอบเป็นภาษา|หมายเหตุ\s*:|ฝ่ายวิชาการ|-?\s*Vichakarn\s*Med|\d{3}-\d{3}\s+Endocrine)", re.I)
 
 
-FOOTER = re.compile(r"ทีมวิชาการ\s*Med\s*\d+|MCQ Endocrine Med\s*\d+|BY VICHAKARN MEDPSU \d+(\s+\d+)?|-\s*[\u201c\"]\s*GOOD LUCK\s*[\u201d\"]\s*-", re.I)  # page footers glued to text
+FOOTER = re.compile(r"ทีมวิชาการ\s*Med\s*\d+|MCQ Endocrine Med\s*\d+|BY VICHAKARN MEDPSU \d+(\s+\d+)?|-\s*[\u201c\"]\s*GOOD LUCK\s*[\u201d\"]\s*-|311-2\d\d\s+Urinary(\s+and)?(\s+R\w*)?(\s+S\w*)?", re.I)  # page footers glued to text
 
 
 def norm(s):
