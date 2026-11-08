@@ -40,7 +40,7 @@ def main():
                     used.add(it[fld])
         q = {"id": f"{B}-{c}-KF-{n:03d}", "block": B, "cohort": c, "n": n, "type": "KF", "case": w["case"], "items": w["items"],
              "answer_status": w.get("answer_status", "verified"),
-             "refs": [{"paper": pid["exam"], "pages": [w["page"]]}, {"paper": pid["key"], "pages": [w["page"]]}],
+             "refs": [{"paper": pid["exam"], "pages": [w.get("exam_page", w["page"])]}, {"paper": pid["key"], "pages": [w["page"]]}],  # exam_page when the key PDF paginates differently
              "tags": w.get("tags", []), "source": "claude-mcp"}
         for k in ("key_concept", "explanation", "audit_note", "image", "image_caption"):
             if w.get(k):

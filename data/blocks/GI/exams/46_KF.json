@@ -1,0 +1,1566 @@
+{
+ "meta": {
+  "set_id": "46_KF",
+  "block": "GI",
+  "cohort": 46,
+  "type": "KF",
+  "title": "KF Gastrointestinal · Med PSU 46",
+  "generated_by": "auditor/tools/build_kf.py from auditor/data/work/gi_46_KF.kf.json — do not edit by hand",
+  "time_limit_min": 150
+ },
+ "questions": [
+  {
+   "id": "GI-46-KF-001",
+   "block": "GI",
+   "cohort": 46,
+   "n": 1,
+   "type": "KF",
+   "case": "The figure shows the enteric nervous system of the gut wall (sympathetic and parasympathetic inputs, sensory neurons, epithelium). Structure A is the upper ganglionated layer; structure B is the lower one, nearer the epithelium.",
+   "items": [
+    {
+     "id": "1.1",
+     "prompt": "What is the name of structure A?",
+     "format": "short",
+     "accepted": [
+      "myenteric plexus",
+      "auerbach's plexus",
+      "auerbachs plexus",
+      "auerbach plexus",
+      "myenteric plexus (auerbach's plexus)"
+     ],
+     "key_text": "Myenteric plexus (Auerbach's plexus)",
+     "source_key": "Myenteric plexus (Auerbach's plexus)",
+     "explanation": "อยู่ระหว่าง circular และ longitudinal muscle"
+    },
+    {
+     "id": "1.2",
+     "prompt": "What is the function of structure A?",
+     "format": "short",
+     "keywords_all": [
+      "motility",
+      "movement",
+      "contraction"
+     ],
+     "key_text": "Controls motility (การเคลื่อนไหว)",
+     "source_key": "ควบคุมการเคลื่อนไหว",
+     "explanation": "myenteric plexus คุมการบีบตัว/motility ของลำไส้",
+     "accepted": [
+      "control motility",
+      "regulates gut movement",
+      "controls gi motility"
+     ]
+    },
+    {
+     "id": "1.3",
+     "prompt": "What is the name of structure B?",
+     "format": "short",
+     "accepted": [
+      "submucosal plexus",
+      "meissner's plexus",
+      "meissners plexus",
+      "meissner plexus",
+      "submucosal plexus (meissner's plexus)"
+     ],
+     "key_text": "Submucosal plexus (Meissner's plexus)",
+     "source_key": "Submucosal plexus (Meissner's plexus)",
+     "explanation": "อยู่ใน submucosa"
+    },
+    {
+     "id": "1.4",
+     "prompt": "What is the function of structure B?",
+     "format": "short",
+     "keywords_all": [
+      "secretion",
+      "enzyme",
+      "absorption",
+      "blood flow"
+     ],
+     "key_text": "Per the original key: controls movement between the circular and longitudinal muscle layers; produces enzymes (สร้าง enzyme)",
+     "source_key": "ควบคุม movement ระหว่างชั้น circular muscle และ longitudinal muscle · สร้าง Enzyme",
+     "explanation": "ตามตำรา submucosal plexus คุมการหลั่ง (secretion/เอนไซม์) การดูดซึม และเลือดที่มาเลี้ยงเยื่อบุ · ส่วนการคุมการเคลื่อนไหวระหว่างชั้นกล้ามเนื้อเป็นของ myenteric plexus (A)",
+     "accepted": [
+      "controls secretion",
+      "regulates secretion and absorption",
+      "secretion and blood flow"
+     ],
+     "audit_note": "ลายมือเฉลย 1.4 ('ควบคุม movement ระหว่างชั้น cir muscle และ long muscle · สร้าง enzyme') เหมือนบรรยายตำแหน่งของ myenteric plexus (A) มากกว่า B · จึงยอมรับคำว่า secretion/enzyme/absorption ด้วย"
+    },
+    {
+     "id": "1.5",
+     "prompt": "If the nerve supplies of the intestine are removed, can the intestine still function?",
+     "format": "select",
+     "options": [
+      {
+       "key": "A",
+       "text": "Yes, it still functions"
+      },
+      {
+       "key": "B",
+       "text": "No, it stops functioning completely"
+      }
+     ],
+     "answer": [
+      "A"
+     ],
+     "key_text": "Yes (still functions)",
+     "source_key": "ยัง function",
+     "explanation": "ลำไส้ยังทำงานได้เองจาก ICC (pacemaker) และ enteric nervous system"
+    },
+    {
+     "id": "1.6",
+     "prompt": "Explain your answer in 1.5.",
+     "format": "short",
+     "keywords_all": [
+      "icc",
+      "cajal",
+      "pacemaker"
+     ],
+     "key_text": "Because of the ICCs (interstitial cells of Cajal), which are normally the pacemaker cells that generate the slow wave and set the maximum frequency of contraction, the intestine can still contract somewhat",
+     "source_key": "เพราะมี ICCs (Interstitial cells of Cajal) ซึ่งปกติเป็น pacemaker cell ในการสร้าง slow wave กำหนดความถี่ในการหดตัว (f maximum) ทำให้ยังมีการบีบตัวบ้าง",
+     "explanation": "ICC สร้าง slow wave เอง ไม่ต้องพึ่งเส้นประสาท · ประสาทแค่ปรับแรง (ทำให้ spike เกิดมาก/น้อย)",
+     "key_image": "img/GI-46-KF-001b-key.jpg",
+     "key_image_caption": "สไลด์ในเฉลย: Smooth muscle (GI tract) — ICC เป็น pacemaker, gap junction ทำให้หดตัวพร้อมกัน"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF46",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "KF46-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [
+    "enteric nervous system",
+    "ICC"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "myenteric = motility · submucosal = secretion/absorption · ICC = pacemaker",
+   "audit_note": "ข้อ 1.4 เฉลยต้นฉบับอ่านเหมือนบรรยาย myenteric plexus (ตำแหน่งระหว่างชั้นกล้ามเนื้อ) ไม่ใช่หน้าที่ของ submucosal plexus ตามตำรา",
+   "image": "img/GI-46-KF-001.jpg",
+   "image_caption": "ระบบประสาทลำไส้ (enteric nervous system): โครงสร้าง A และ B"
+  },
+  {
+   "id": "GI-46-KF-002",
+   "block": "GI",
+   "cohort": 46,
+   "n": 2,
+   "type": "KF",
+   "case": "Fill in the blanks of the table (substance, primary target, function).",
+   "items": [
+    {
+     "id": "2.1",
+     "prompt": "Motilin — what does it do / where is its primary target? (row: primary target = intestinal smooth muscle; function = ______)",
+     "format": "short",
+     "keywords_all": [
+      "motility",
+      "interdigestive"
+     ],
+     "key_text": "Stimulates motility during the interdigestive stage (target: intestinal smooth muscle)",
+     "source_key": "Motilin → intestinal smooth muscle → กระตุ้น motility ระหว่าง interdigestive stage",
+     "explanation": "motilin จาก M cell ของลำไส้เล็ก กระตุ้น MMC ช่วงอดอาหาร",
+     "key_image": "img/GI-46-KF-002-key.jpg",
+     "key_image_caption": "สไลด์ในเฉลย: Gastrointestinal regulatory substances (motilin, somatostatin, cholecystokinin)"
+    },
+    {
+     "id": "2.2",
+     "prompt": "Somatostatin — primary target (row function: inhibits gastrin secretion at the antrum)",
+     "format": "short",
+     "keywords_all": [
+      "d cell"
+     ],
+     "key_text": "D cell (pancreatic islets, GI mucosa) — as written in the original key",
+     "source_key": "D cell (pancreatic islets, GI mucosa)",
+     "explanation": "เฉลยต้นฉบับเขียน D cell ซึ่งในสไลด์เป็นแหล่งผลิต (source) · เซลล์เป้าหมายที่ถูกยับยั้งคือ G cell ที่ antrum",
+     "accepted": [
+      "d cells",
+      "g cell",
+      "g cells",
+      "g cell of antrum"
+     ],
+     "audit_note": "เฉลยตอบ D cell (แหล่งผลิต) ทั้งที่คอลัมน์คือ primary target (เป้าหมายคือ G cell)"
+    },
+    {
+     "id": "2.3",
+     "prompt": "Which substance acts on the acinar cells of the pancreas to stimulate pancreatic enzymes?",
+     "format": "short",
+     "accepted": [
+      "cholecystokinin",
+      "cck"
+     ],
+     "key_text": "Cholecystokinin",
+     "source_key": "Cholecystokinin",
+     "explanation": "CCK จาก I cell กระตุ้น acinar cell หลั่งเอนไซม์"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF46",
+     "pages": [
+      3
+     ]
+    },
+    {
+     "paper": "KF46-KEY",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [
+    "GI hormones"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "motilin–MMC · somatostatin–D cell · CCK–acinar cell",
+   "audit_note": "ข้อ 2.2: เฉลยต้นฉบับตอบ D cell ซึ่งเป็นแหล่งผลิตของ somatostatin ไม่ใช่เป้าหมาย"
+  },
+  {
+   "id": "GI-46-KF-003",
+   "block": "GI",
+   "cohort": 46,
+   "n": 3,
+   "type": "KF",
+   "case": "Fill in the blanks (increase, decrease, no change) if the part of the intestine below is resected.",
+   "items": [
+    {
+     "id": "3.1a",
+     "prompt": "Resection of the colon — urobilinogen",
+     "format": "short",
+     "accepted": [
+      "decrease",
+      "decreased",
+      "decreases",
+      "ลด",
+      "↓"
+     ],
+     "key_text": "Decrease",
+     "source_key": "Decrease (ปกติถูกดูดกลับที่ colon)",
+     "explanation": "ตามเฉลยรุ่น 46: urobilinogen เกิดจากแบคทีเรียและถูกดูดกลับที่ colon จึงลดลง",
+     "key_image": "img/GI-46-KF-003-key.jpg",
+     "key_image_caption": "สไลด์ในเฉลย: วงจร bilirubin–urobilinogen (ผู้เฉลยวงใหญ่ที่ large intestine)"
+    },
+    {
+     "id": "3.1b",
+     "prompt": "Resection of the colon — bilirubin",
+     "format": "short",
+     "accepted": [
+      "no change",
+      "no changes",
+      "not change"
+     ],
+     "key_text": "No change",
+     "source_key": "No change",
+     "explanation": "bilirubin ในเลือดไม่เปลี่ยน"
+    },
+    {
+     "id": "3.1c",
+     "prompt": "Resection of the colon — lithocholic acid",
+     "format": "short",
+     "accepted": [
+      "no change",
+      "no changes",
+      "not change"
+     ],
+     "key_text": "No change",
+     "source_key": "No change",
+     "explanation": "lithocholic acid สร้างโดยแบคทีเรียลำไส้ใหญ่ แต่เฉลยตอบ no change"
+    },
+    {
+     "id": "3.2a",
+     "prompt": "Resection of the ileum — cholic acid",
+     "format": "short",
+     "accepted": [
+      "decrease",
+      "decreased",
+      "decreases",
+      "ลด"
+     ],
+     "key_text": "Decrease",
+     "source_key": "Decrease",
+     "explanation": "ตัด ileum → bile acid สูญเสียไปทางอุจจาระ → bile acid pool ลด",
+     "key_image": "img/GI-46-KF-003b-key.jpg",
+     "key_image_caption": "สไลด์ในเฉลย: enterohepatic circulation และ bile acid synthesis (cholic acid, chenodeoxycholic acid)"
+    },
+    {
+     "id": "3.2b",
+     "prompt": "Resection of the ileum — bile secretion",
+     "format": "short",
+     "accepted": [
+      "decrease",
+      "decreased",
+      "decreases",
+      "ลด"
+     ],
+     "key_text": "Decrease",
+     "source_key": "Decrease",
+     "explanation": "น้ำดีย้อนกลับ terminal ileum ไม่ได้ → สูญเสียน้ำดี → bile secretion ลดลง"
+    },
+    {
+     "id": "3.2c",
+     "prompt": "Resection of the ileum — bile synthesis",
+     "format": "short",
+     "accepted": [
+      "increase",
+      "increased",
+      "increases",
+      "เพิ่ม"
+     ],
+     "key_text": "Increase",
+     "source_key": "Increase",
+     "explanation": "ตับเพิ่มการสร้าง bile acid จาก cholesterol ชดเชย"
+    }
+   ],
+   "answer_status": "disputed",
+   "refs": [
+    {
+     "paper": "KF46",
+     "pages": [
+      3
+     ]
+    },
+    {
+     "paper": "KF46-KEY",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [
+    "bile acid",
+    "urobilinogen"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "ตัด colon: urobilinogen ↓ · ตัด ileum: bile acid ↓ แต่ตับสร้างเพิ่ม",
+   "audit_note": "ข้อ 3.1a (urobilinogen หลังตัด colon) เฉลยรุ่น 46 = decrease ตรงกับรุ่น 52 แต่ขัดกับรุ่น 48 ที่ตอบ no change (ดูดซึมที่ terminal ileum)"
+  },
+  {
+   "id": "GI-46-KF-004",
+   "block": "GI",
+   "cohort": 46,
+   "n": 4,
+   "type": "KF",
+   "case": "A mother brings her child to see a doctor because the child has swallowed a coin. X-ray shows the coin in the stomach. The doctor gives no treatment and says the coin will definitely be passed in the stool.",
+   "items": [
+    {
+     "id": "4.1",
+     "prompt": "Which condition can stimulate the motility that expels the coin?",
+     "format": "short",
+     "accepted": [
+      "fasting",
+      "fasting state",
+      "fasting stage",
+      "อดอาหาร",
+      "interdigestive"
+     ],
+     "key_text": "Fasting (อดอาหาร)",
+     "source_key": "Fasting (อดอาหาร)",
+     "explanation": "ช่วงอดอาหาร → MMC"
+    },
+    {
+     "id": "4.2",
+     "prompt": "State the name of that motility.",
+     "format": "short",
+     "accepted": [
+      "migrating motor complex",
+      "mmc",
+      "migrating myoelectric complex"
+     ],
+     "key_text": "Migrating motor complex (MMC)",
+     "source_key": "Migrating motor complex (MMC)",
+     "explanation": "MMC กวาดจากกระเพาะลงสู่ลำไส้เล็ก"
+    },
+    {
+     "id": "4.3",
+     "prompt": "Draw a diagram describing the action potential in 3 different phases of the motility. (describe the phases here)",
+     "format": "short",
+     "key_text": "Phase 1: all slow waves (ไม่มี spike) · Phase 2: slow wave พร้อม spike บางรอบ · Phase 3: slow wave + spike ทุกรอบ (ถี่และแรง)",
+     "source_key": "(ข้อวาดรูป) Phase 1: All slow wave · Phase 2: slow wave มี spike บางรอบ · Phase 3: slow wave + spike ทุกรอบ",
+     "explanation": "ให้ตัดสินเองด้วยปุ่ม 'ตัดสินเอง' เพราะเป็นข้อวาดรูป",
+     "key_image": "img/GI-46-KF-004-key.jpg",
+     "key_image_caption": "เฉลยต้นฉบับ (วาดเอง): สัญญาณไฟฟ้า 3 phase ของ MMC"
+    },
+    {
+     "id": "4.4",
+     "prompt": "Which condition can inhibit this motility?",
+     "format": "short",
+     "accepted": [
+      "eating",
+      "eat",
+      "feeding",
+      "food intake",
+      "รับประทานอาหาร",
+      "กินอาหาร",
+      "meal"
+     ],
+     "key_text": "Eating (รับประทานอาหาร)",
+     "source_key": "Eating (รับประทานอาหาร)",
+     "explanation": "กินอาหารทำให้เข้าสู่ fed state ยับยั้ง MMC",
+     "key_image": "img/GI-46-KF-004b-key.jpg",
+     "key_image_caption": "สไลด์ในเฉลย: Motility (tonic, segmentation, peristalsis, MMC), electrical activity ของ GI smooth muscle, action potential และ slow wave"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF46",
+     "pages": [
+      4
+     ]
+    },
+    {
+     "paper": "KF46-KEY",
+     "pages": [
+      5
+     ]
+    }
+   ],
+   "tags": [
+    "MMC"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "MMC ตอน fasting · กินอาหารยับยั้ง"
+  },
+  {
+   "id": "GI-46-KF-005",
+   "block": "GI",
+   "cohort": 46,
+   "n": 5,
+   "type": "KF",
+   "case": "A patient is diagnosed with enterotoxigenic E. coli diarrhea. (What is the mechanism of this diarrhea? Fill in the blanks.)",
+   "items": [
+    {
+     "id": "5.1",
+     "prompt": "E. coli activates ______ which increases intracellular cGMP and secretion of ______ via CFTR.",
+     "format": "short",
+     "keywords_all": [
+      "adenylate",
+      "adenylyl"
+     ],
+     "key_text": "Adenylate cyclase (as written in the original key) — and Cl⁻ is secreted via CFTR",
+     "source_key": "adenylate cyclase · Cl⁻",
+     "explanation": "เฉลยต้นฉบับตอบ adenylate cyclase และ Cl⁻ · (โจทย์พิมพ์ว่า cGMP แต่ adenylate cyclase ทำให้ cAMP สูง; ST ของ ETEC ใช้ guanylate cyclase → cGMP)",
+     "accepted": [
+      "adenylate cyclase",
+      "adenylyl cyclase",
+      "guanylate cyclase",
+      "guanylyl cyclase"
+     ]
+    },
+    {
+     "id": "5.2",
+     "prompt": "Secretion of ______ via CFTR (the ion)",
+     "format": "short",
+     "accepted": [
+      "cl-",
+      "cl",
+      "chloride",
+      "chloride ion",
+      "cl−",
+      "cl⁻"
+     ],
+     "key_text": "Cl⁻",
+     "source_key": "Cl⁻",
+     "explanation": "CFTR หลั่ง Cl⁻ ออกสู่ lumen"
+    },
+    {
+     "id": "5.3",
+     "prompt": "Both sodium and water follow the ion into the lumen, resulting in ______ diarrhea (travelers' diarrhea).",
+     "format": "short",
+     "accepted": [
+      "watery",
+      "watery diarrhea",
+      "secretory"
+     ],
+     "key_text": "Watery (travelers') diarrhea",
+     "source_key": "Watery (travelers') diarrhea",
+     "explanation": "Na⁺ และน้ำตาม Cl⁻ ออกสู่ lumen → ถ่ายเป็นน้ำ"
+    }
+   ],
+   "answer_status": "disputed",
+   "refs": [
+    {
+     "paper": "KF46",
+     "pages": [
+      5
+     ]
+    },
+    {
+     "paper": "KF46-KEY",
+     "pages": [
+      6
+     ]
+    }
+   ],
+   "tags": [
+    "ETEC",
+    "travelers diarrhea"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "ETEC: cyclase → cAMP/cGMP → CFTR หลั่ง Cl⁻ → watery diarrhea",
+   "audit_note": "โจทย์พิมพ์ว่า adenylate cyclase ทำให้ cGMP สูง (ไม่สอดคล้อง: adenylate cyclase → cAMP, guanylate cyclase → cGMP) เก็บตามเฉลยต้นฉบับ"
+  },
+  {
+   "id": "GI-46-KF-006",
+   "block": "GI",
+   "cohort": 46,
+   "n": 6,
+   "type": "KF",
+   "case": "A 50-year-old man came to hospital with heartburn and regurgitation of gastric juice. He has chronic cough and morbid obesity as underlying disease. Physical examination revealed an abnormal position of the stomach.",
+   "items": [
+    {
+     "id": "6.1",
+     "prompt": "What is the most likely diagnosis of this case?",
+     "format": "short",
+     "accepted": [
+      "hiatal hernia",
+      "hiatus hernia",
+      "sliding hiatal hernia"
+     ],
+     "key_text": "Hiatal hernia",
+     "source_key": "Hiatal hernia",
+     "explanation": "กระเพาะเลื่อนเข้าช่องอก · อ้วน ไอเรื้อรัง ดันช่องท้องสูง"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF46",
+     "pages": [
+      5
+     ]
+    },
+    {
+     "paper": "KF46-KEY",
+     "pages": [
+      6
+     ]
+    }
+   ],
+   "tags": [
+    "hiatal hernia"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "hiatal hernia: ตำแหน่งกระเพาะผิดปกติ + GERD"
+  },
+  {
+   "id": "GI-46-KF-007",
+   "block": "GI",
+   "cohort": 46,
+   "n": 7,
+   "type": "KF",
+   "case": "A 20-year-old pregnant woman has severe vomiting with hematemesis following.",
+   "items": [
+    {
+     "id": "7.1",
+     "prompt": "What is the most likely diagnosis?",
+     "format": "short",
+     "accepted": [
+      "mallory-weiss tear",
+      "mallory weiss tear",
+      "mallory-weiss syndrome",
+      "mallory weiss"
+     ],
+     "key_text": "Mallory-Weiss tear",
+     "source_key": "Mallory-Weiss tear",
+     "explanation": "อาเจียนแรง → รอยฉีกยาวตามแนว longitudinal ที่ gastroesophageal junction (≈10% ของเลือดออกทางเดินอาหารส่วนบน)",
+     "key_image": "img/GI-46-KF-007-key.jpg",
+     "key_image_caption": "สไลด์ในเฉลย: Lacerations — Mallory-Weiss tear"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF46",
+     "pages": [
+      5
+     ]
+    },
+    {
+     "paper": "KF46-KEY",
+     "pages": [
+      6
+     ]
+    }
+   ],
+   "tags": [
+    "Mallory-Weiss"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "อาเจียนแรง → hematemesis = Mallory-Weiss"
+  },
+  {
+   "id": "GI-46-KF-008",
+   "block": "GI",
+   "cohort": 46,
+   "n": 8,
+   "type": "KF",
+   "case": "Barrett's esophagus is associated with what disease?",
+   "items": [
+    {
+     "id": "8.1",
+     "prompt": "Which disease?",
+     "format": "short",
+     "accepted": [
+      "adenocarcinoma",
+      "esophageal adenocarcinoma",
+      "gerd",
+      "chronic gerd"
+     ],
+     "key_text": "Adenocarcinoma",
+     "source_key": "Adenocarcinoma",
+     "explanation": "Barrett (intestinal metaplasia) เป็นภาวะก่อนมะเร็ง adenocarcinoma ของหลอดอาหาร"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF46",
+     "pages": [
+      5
+     ]
+    },
+    {
+     "paper": "KF46-KEY",
+     "pages": [
+      6
+     ]
+    }
+   ],
+   "tags": [
+    "Barrett"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "Barrett → adenocarcinoma (สาเหตุ: GERD)"
+  },
+  {
+   "id": "GI-46-KF-009",
+   "block": "GI",
+   "cohort": 46,
+   "n": 9,
+   "type": "KF",
+   "case": "Fill in the blanks about H. pylori and autoimmune gastritis.",
+   "items": [
+    {
+     "id": "9.1a",
+     "prompt": "H. pylori — location",
+     "format": "short",
+     "accepted": [
+      "antrum"
+     ],
+     "key_text": "Antrum",
+     "source_key": "Antrum",
+     "explanation": "H. pylori อยู่ antrum",
+     "key_image": "img/GI-46-KF-009-key.jpg",
+     "key_image_caption": "สไลด์ในเฉลย: Characteristics of H. pylori and autoimmune gastritis"
+    },
+    {
+     "id": "9.1b",
+     "prompt": "Autoimmune — location",
+     "format": "short",
+     "accepted": [
+      "body",
+      "body of stomach"
+     ],
+     "key_text": "Body",
+     "source_key": "Body",
+     "explanation": "parietal cell อยู่ body/fundus"
+    },
+    {
+     "id": "9.2a",
+     "prompt": "H. pylori — cell infiltration",
+     "format": "short",
+     "keywords_all": [
+      "neutrophil",
+      "plasma"
+     ],
+     "key_text": "Neutrophil, plasma cell",
+     "source_key": "Neutrophil, plasma cell",
+     "explanation": "อักเสบเรื้อรังแบบมี neutrophil + plasma cell",
+     "accepted": [
+      "neutrophil, plasma cell"
+     ]
+    },
+    {
+     "id": "9.2b",
+     "prompt": "Autoimmune — cell infiltration",
+     "format": "short",
+     "keywords_all": [
+      "lymphocyte",
+      "macrophage"
+     ],
+     "key_text": "Lymphocyte, macrophage",
+     "source_key": "Lymphocyte, macrophage",
+     "explanation": "lymphocyte + macrophage",
+     "accepted": [
+      "lymphocyte, macrophage"
+     ]
+    },
+    {
+     "id": "9.3a",
+     "prompt": "H. pylori — sequelae",
+     "format": "short",
+     "accepted": [
+      "adenocarcinoma",
+      "peptic ulcer"
+     ],
+     "key_text": "Adenocarcinoma",
+     "source_key": "Adenocarcinoma",
+     "explanation": "อื่นๆ peptic ulcer, MALT lymphoma"
+    },
+    {
+     "id": "9.3b",
+     "prompt": "Autoimmune — sequelae",
+     "format": "short",
+     "keywords_all": [
+      "pernicious",
+      "atrophy"
+     ],
+     "key_text": "Atrophy, pernicious anemia, carcinoma",
+     "source_key": "Atrophy, pernicious anemia, carcinoma",
+     "explanation": "atrophic gastritis → pernicious anemia · เสี่ยง carcinoma",
+     "accepted": [
+      "atrophy, pernicious anemia, carcinoma",
+      "pernicious anemia"
+     ]
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF46",
+     "pages": [
+      5
+     ]
+    },
+    {
+     "paper": "KF46-KEY",
+     "pages": [
+      6
+     ]
+    }
+   ],
+   "tags": [
+    "gastritis",
+    "H. pylori"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "H. pylori: antrum, neutrophil+plasma → adenocarcinoma · autoimmune: body, lymphocyte+macrophage → atrophy, pernicious anemia"
+  },
+  {
+   "id": "GI-46-KF-010",
+   "block": "GI",
+   "cohort": 46,
+   "n": 10,
+   "type": "KF",
+   "case": "A patient's liver function test report: AST ↑, ALT ↑, ALP ↑, GGT ↑, direct bilirubin ↑, albumin normal, total protein normal.",
+   "items": [
+    {
+     "id": "10.1",
+     "prompt": "This patient has which type of jaundice?",
+     "format": "short",
+     "accepted": [
+      "obstructive jaundice",
+      "cholestatic jaundice",
+      "posthepatic jaundice",
+      "post-hepatic jaundice",
+      "obstructive",
+      "cholestasis"
+     ],
+     "key_text": "Obstructive jaundice",
+     "source_key": "Obstructive jaundice",
+     "explanation": "ALP และ GGT สูง + direct bilirubin สูง + albumin ปกติ = cholestasis/obstructive"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF46",
+     "pages": [
+      6
+     ]
+    },
+    {
+     "paper": "KF46-KEY",
+     "pages": [
+      7
+     ]
+    }
+   ],
+   "tags": [
+    "jaundice",
+    "cholestasis"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "ALP↑ GGT↑ direct bilirubin↑ = obstructive jaundice"
+  },
+  {
+   "id": "GI-46-KF-011",
+   "block": "GI",
+   "cohort": 46,
+   "n": 11,
+   "type": "KF",
+   "case": "A mother has HBV infection. Her son has no history of vaccination. His test shows no HBsAg.",
+   "items": [
+    {
+     "id": "11.1",
+     "prompt": "Which marker(s) should be checked in addition?",
+     "format": "short",
+     "keywords_all": [
+      "anti-hbc"
+     ],
+     "key_text": "Anti-HBc, Anti-HBe",
+     "source_key": "Anti-HBc, Anti-HBe",
+     "explanation": "ถ้า HBsAg ลบ ต้องแยก window period/หายแล้ว/ภูมิคุ้มกันจากวัคซีน: ตรวจ anti-HBc (และ anti-HBs) · เฉลยต้นฉบับเขียน Anti-HBc, Anti-HBe",
+     "accepted": [
+      "anti-hbc and anti-hbe",
+      "anti-hbc, anti-hbe",
+      "anti-hbc, anti-hbs",
+      "anti-hbc",
+      "anti-hbs",
+      "anti hbc",
+      "igm anti-hbc"
+     ],
+     "key_image": "img/GI-46-KF-011-key.jpg",
+     "key_image_caption": "ตารางในเฉลย: รูปแบบ marker ของ HBV (HBsAg, Anti-HBs, Anti-HBc, Anti-HBe, HBeAg) ตามระยะของโรค"
+    },
+    {
+     "id": "11.2",
+     "prompt": "Later, a patient presents with nausea, vomiting, abdominal cramp, dark urine, ALT 600, jaundice and right upper quadrant pain. HBsAg negative, HBsAb positive, HBcAb positive, HBeAg positive, HBeAb negative, IgM HBc negative. What is the phase of the virus in this patient?",
+     "format": "short",
+     "accepted": [
+      "exponential phase",
+      "exponential",
+      "replicative phase"
+     ],
+     "key_text": "Exponential phase",
+     "source_key": "Exponential phase",
+     "explanation": "HBeAg บวก บ่งบอกการแบ่งตัวของไวรัส (replication)"
+    },
+    {
+     "id": "11.3",
+     "prompt": "What is the goal of treatment?",
+     "format": "short",
+     "keywords_all": [
+      "replicat",
+      "แบ่งตัว",
+      "inhibit"
+     ],
+     "key_text": "Inhibit viral replication (ยับยั้งการแบ่งตัวของไวรัส)",
+     "source_key": "ยับยั้งการแบ่งตัวของไวรัส",
+     "explanation": "ยาต้านไวรัส (เช่น tenofovir, entecavir) ลดการแบ่งตัวของ HBV",
+     "accepted": [
+      "inhibit viral replication",
+      "suppress viral replication",
+      "ยับยั้งการแบ่งตัวของไวรัส"
+     ]
+    }
+   ],
+   "answer_status": "disputed",
+   "refs": [
+    {
+     "paper": "KF46",
+     "pages": [
+      6
+     ]
+    },
+    {
+     "paper": "KF46-KEY",
+     "pages": [
+      7
+     ]
+    }
+   ],
+   "tags": [
+    "hepatitis B"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "HBeAg + = ไวรัสแบ่งตัว (exponential) → รักษาเพื่อยับยั้งการแบ่งตัว",
+   "audit_note": "ชุดเครื่องหมาย HBsAg ลบ + HBsAb บวก + HBcAb บวก + HBeAg บวก ในโจทย์ขัดกันเอง (HBeAg บวกมักไปกับ HBsAg บวก) เฉลยตอบ exponential phase ตามที่ผู้เฉลยเขียน"
+  },
+  {
+   "id": "GI-46-KF-012",
+   "block": "GI",
+   "cohort": 46,
+   "n": 12,
+   "type": "KF",
+   "case": "Which type of the hepatitis viruses is a defective virus?",
+   "items": [
+    {
+     "id": "12.1",
+     "prompt": "Which type of the hepatitis viruses is a defective virus?",
+     "format": "select",
+     "options": [
+      {
+       "key": "A",
+       "text": "Hepatitis A"
+      },
+      {
+       "key": "B",
+       "text": "Hepatitis B"
+      },
+      {
+       "key": "C",
+       "text": "Hepatitis C"
+      },
+      {
+       "key": "D",
+       "text": "Hepatitis D"
+      },
+      {
+       "key": "E",
+       "text": "Hepatitis E"
+      }
+     ],
+     "answer": [
+      "D"
+     ],
+     "max_answers": 1,
+     "key_text": "Hepatitis D",
+     "source_key": "Hepatitis D",
+     "explanation": "HDV เป็น defective virus ต้องอาศัย HBsAg ของ HBV จึงจะประกอบอนุภาคได้"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF46",
+     "pages": [
+      6
+     ]
+    },
+    {
+     "paper": "KF46-KEY",
+     "pages": [
+      7
+     ]
+    }
+   ],
+   "tags": [
+    "hepatitis D"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "HDV defective ต้องมี HBV"
+  },
+  {
+   "id": "GI-46-KF-013",
+   "block": "GI",
+   "cohort": 46,
+   "n": 13,
+   "type": "KF",
+   "case": "Which type of the hepatitis viruses has a different genetic material from the others? (the key's notes: A ssRNA, B dsDNA, C ssRNA, D 'high GC nucleotide content')",
+   "items": [
+    {
+     "id": "13.1",
+     "prompt": "Which type has a different genetic material from the others?",
+     "format": "select",
+     "options": [
+      {
+       "key": "A",
+       "text": "Hepatitis A"
+      },
+      {
+       "key": "B",
+       "text": "Hepatitis B"
+      },
+      {
+       "key": "C",
+       "text": "Hepatitis C"
+      },
+      {
+       "key": "D",
+       "text": "Hepatitis D"
+      },
+      {
+       "key": "E",
+       "text": "Hepatitis E"
+      }
+     ],
+     "answer": [
+      "D"
+     ],
+     "max_answers": 1,
+     "key_text": "Hepatitis D (as marked in the original key: 'high GC nucleotide content')",
+     "source_key": "D (ผู้เฉลยกากบาทที่ Hepatitis D และเขียน 'high GC nucleotide content')",
+     "explanation": "เฉลยต้นฉบับเลือก D (HDV: circular ssRNA GC สูง) · แต่ตามตำราทั่วไป HBV (B) เป็นไวรัสตับอักเสบชนิดเดียวที่เป็น DNA virus (dsDNA บางส่วน) ส่วน A, C, D, E เป็น RNA virus",
+     "audit_note": "เฉลยต้นฉบับกากบาท D แต่ B (HBV, DNA) คือคำตอบตามตำรา (ไวรัสตับอักเสบอื่นเป็น RNA)"
+    }
+   ],
+   "answer_status": "disputed",
+   "refs": [
+    {
+     "paper": "KF46",
+     "pages": [
+      7
+     ]
+    },
+    {
+     "paper": "KF46-KEY",
+     "pages": [
+      8
+     ]
+    }
+   ],
+   "tags": [
+    "hepatitis viruses"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "HBV = DNA virus เดียว · ต้นฉบับเลือก D (GC สูง)",
+   "audit_note": "เฉลยต้นฉบับเลือก Hepatitis D (กากบาท + 'high GC nucleotide content') ขัดกับตำราที่ถือว่า HBV (DNA) ต่างจากไวรัสตับอักเสบอื่น (RNA) · เก็บตามต้นฉบับ รอผู้ตรวจตัดสิน"
+  },
+  {
+   "id": "GI-46-KF-014",
+   "block": "GI",
+   "cohort": 46,
+   "n": 14,
+   "type": "KF",
+   "case": "Explain the mechanism of action of the following drugs.",
+   "items": [
+    {
+     "id": "14.1",
+     "prompt": "Diphenhydramine",
+     "format": "short",
+     "keywords_all": [
+      "h1"
+     ],
+     "key_text": "H₁ receptor antagonist",
+     "source_key": "H₁ receptor antagonist",
+     "explanation": "antihistamine รุ่นแรก",
+     "accepted": [
+      "h1 antagonist",
+      "h1 blocker"
+     ]
+    },
+    {
+     "id": "14.2",
+     "prompt": "Ondansetron",
+     "format": "short",
+     "keywords_all": [
+      "5ht3",
+      "5-ht3"
+     ],
+     "key_text": "5-HT₃ receptor antagonist",
+     "source_key": "5-HT₃ receptor antagonist",
+     "explanation": "ต้าน 5-HT₃ ที่ vagal afferent และ CTZ",
+     "accepted": [
+      "5-ht3 antagonist",
+      "5ht3 antagonist",
+      "5-ht₃ receptor antagonist"
+     ]
+    },
+    {
+     "id": "14.3",
+     "prompt": "Metoclopramide",
+     "format": "short",
+     "keywords_all": [
+      "d2"
+     ],
+     "key_text": "D₂ blocker; 5-HT₃ antagonist, 5-HT₄ agonist",
+     "source_key": "D₂ blocker | 5HT3, 5HT4 receptor antagonist",
+     "explanation": "ต้าน D₂ + 5-HT₃ antagonist + 5-HT₄ agonist (เฉลยต้นฉบับเขียน 5-HT₄ antagonist ซึ่งน่าจะหมายถึง agonist)",
+     "accepted": [
+      "d2 antagonist",
+      "d2 blocker"
+     ],
+     "audit_note": "เฉลยเขียน 'SHT3, SHT4 receptor antagonist' แต่ metoclopramide เป็น 5-HT₄ agonist"
+    },
+    {
+     "id": "14.4",
+     "prompt": "Promethazine",
+     "format": "short",
+     "keywords_all": [
+      "d2",
+      "h1"
+     ],
+     "key_text": "D₂, H₁, M₁, α₁ receptor antagonist",
+     "source_key": "D₂, H₁, M₁, α₁ receptor antagonist",
+     "explanation": "phenothiazine ต้านหลายตัวรับ",
+     "accepted": [
+      "d2 h1 m1 alpha1 antagonist"
+     ]
+    },
+    {
+     "id": "14.5",
+     "prompt": "Dronabinol",
+     "format": "short",
+     "keywords_all": [
+      "cb1"
+     ],
+     "key_text": "Stimulates CB₁ receptor (cannabinoid agonist)",
+     "source_key": "Stimulates CB₁ receptor (cannabinoid agonist)",
+     "explanation": "THC สังเคราะห์ กระตุ้น CB₁",
+     "accepted": [
+      "cb1 agonist",
+      "cannabinoid agonist",
+      "stimulate cb1 receptor"
+     ]
+    },
+    {
+     "id": "14.6",
+     "prompt": "Pyridoxine",
+     "format": "short",
+     "keywords_all": [
+      "gaba"
+     ],
+     "key_text": "Cofactor in GABA synthesis",
+     "source_key": "Cofactor in GABA synthesis",
+     "explanation": "PLP เป็น coenzyme ของ glutamate decarboxylase",
+     "accepted": [
+      "cofactor in gaba synthesis",
+      "cofactor for gad"
+     ]
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF46",
+     "pages": [
+      7
+     ]
+    },
+    {
+     "paper": "KF46-KEY",
+     "pages": [
+      8
+     ]
+    }
+   ],
+   "tags": [
+    "antiemetics",
+    "pharmacology"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "diphenhydramine H₁ · ondansetron 5-HT₃ · metoclopramide D₂ · promethazine D₂/H₁/M₁/α₁ · dronabinol CB₁ · pyridoxine GABA"
+  },
+  {
+   "id": "GI-46-KF-015",
+   "block": "GI",
+   "cohort": 46,
+   "n": 15,
+   "type": "KF",
+   "case": "Questions about drugs: loperamide.",
+   "items": [
+    {
+     "id": "15.1",
+     "prompt": "What is the mechanism of action of loperamide?",
+     "format": "short",
+     "keywords_all": [
+      "peristalsis",
+      "transit"
+     ],
+     "key_text": "↓ propulsive peristalsis, ↑ intestinal transit time, ↑ tone of the anal sphincter",
+     "source_key": "↓ propulsive peristalsis, ↑ intestinal transit time, ↑ tone of the anal sphincter",
+     "explanation": "μ-opioid agonist ที่ผนังลำไส้ ลด propulsive peristalsis ทำให้อุจจาระอยู่ในลำไส้นานขึ้น และเพิ่ม tone ของหูรูดทวาร",
+     "accepted": [
+      "decreases propulsive peristalsis",
+      "opioid agonist"
+     ]
+    },
+    {
+     "id": "15.2",
+     "prompt": "List 2 side effects of loperamide.",
+     "format": "short",
+     "keywords_all": [
+      "torsade",
+      "arrhythm"
+     ],
+     "key_text": "Torsades de pointes; ventricular arrhythmias",
+     "source_key": "Torsades de pointes; ventricular arrhythmias",
+     "explanation": "ขนาดสูงมากทำให้ QT ยาว",
+     "accepted": [
+      "torsades de pointes",
+      "ventricular arrhythmias",
+      "torsades de pointes, ventricular arrhythmias"
+     ]
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF46",
+     "pages": [
+      7
+     ]
+    },
+    {
+     "paper": "KF46-KEY",
+     "pages": [
+      8
+     ]
+    }
+   ],
+   "tags": [
+    "loperamide"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "loperamide: μ-opioid · ↓ propulsion · โดสสูง → torsades"
+  },
+  {
+   "id": "GI-46-KF-016",
+   "block": "GI",
+   "cohort": 46,
+   "n": 16,
+   "type": "KF",
+   "case": "A 40-year-old French woman arrived in Thailand 5 days ago. She has had watery diarrhea with foul smell since last night. Stool examination shows steatorrhea and the typical 'falling leaf motility' trophozoite.",
+   "items": [
+    {
+     "id": "16.1",
+     "prompt": "What is the most likely diagnosis?",
+     "format": "short",
+     "accepted": [
+      "giardiasis",
+      "giardia lamblia",
+      "giardia",
+      "giardia lamblia infection"
+     ],
+     "key_text": "Giardiasis",
+     "source_key": "Giardiasis",
+     "explanation": "falling-leaf motility + steatorrhea = Giardia lamblia",
+     "key_image": "img/GI-46-KF-016-key.jpg",
+     "key_image_caption": "สไลด์ในเฉลย: วงจรชีวิตและรูปร่าง trophozoite ของ Giardia lamblia (monkey face, falling leaf motility)"
+    },
+    {
+     "id": "16.2",
+     "prompt": "What is the best suggestion for specimen collection in this case?",
+     "format": "short",
+     "accepted": [
+      "stool",
+      "stool examination",
+      "stool sample"
+     ],
+     "key_text": "Stool",
+     "source_key": "Stool",
+     "explanation": "ตรวจอุจจาระสด (ระยะ trophozoite ต้องส่งทันที) · วิธีตรวจอื่นในสไลด์: duodenal fluid, biopsy, string test, PCR, antigen detection",
+     "key_image": "img/GI-46-KF-016b-key.jpg",
+     "key_image_caption": "สไลด์ในเฉลย: ตัวอย่างที่ใช้ตรวจ Giardia และวิธีตรวจ (wet film, stain, antigen, PCR)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF46",
+     "pages": [
+      8
+     ]
+    },
+    {
+     "paper": "KF46-KEY",
+     "pages": [
+      9
+     ]
+    }
+   ],
+   "tags": [
+    "Giardia"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "Giardia: stool สด · falling leaf · steatorrhea"
+  },
+  {
+   "id": "GI-46-KF-017",
+   "block": "GI",
+   "cohort": 46,
+   "n": 17,
+   "type": "KF",
+   "case": "A 12-year-old girl has a fever and bloody diarrhea for 2 days after eating raw roti dough. No history of drug use or food allergy. Stool culture shows a non-motile, oxidase-negative, facultative anaerobic pathogen. RBC and WBC are present in the stool examination and lactoferrin (+).",
+   "items": [
+    {
+     "id": "17.1",
+     "prompt": "Describe an appropriate specimen collection and transportation for stool culture.",
+     "format": "short",
+     "keywords_all": [
+      "cary"
+     ],
+     "key_text": "Use Cary-Blair transport medium; do not refrigerate",
+     "source_key": "ใช้ Cary-Blair transport medium · ไม่ควรแช่ตู้เย็น",
+     "explanation": "Shigella ไวต่ออุณหภูมิต่ำและตายเร็ว จึงไม่ควรแช่เย็นและใช้ Cary-Blair เป็น transport medium",
+     "accepted": [
+      "cary-blair transport medium",
+      "cary blair"
+     ],
+     "key_image": "img/GI-46-KF-017-key.jpg",
+     "key_image_caption": "สไลด์ในเฉลย: การเลือก transport medium (Cary-Blair) และ stool specimen ไม่ควรแช่เย็น"
+    },
+    {
+     "id": "17.2",
+     "prompt": "In routine culture, list at least 2 culture media and the result that reveals the causative organism.",
+     "format": "short",
+     "keywords_all": [
+      "msrv",
+      "tsi"
+     ],
+     "key_text": "1) MSRV: no swarming (non-motile) 2) TSI: no H₂S",
+     "source_key": "1) MSRV: ไม่พบ swarming 2) TSI: ไม่พบ H₂S",
+     "explanation": "Shigella non-motile ไม่ swarm บน MSRV · ไม่สร้าง H₂S บน TSI (ต่างจาก Salmonella) · MacConkey: non-lactose fermenter",
+     "accepted": [
+      "msrv no swarming tsi no h2s",
+      "msrv, tsi"
+     ],
+     "key_image": "img/GI-46-KF-017b-key.jpg",
+     "key_image_caption": "สไลด์ในเฉลย: Stool culture work-up และ Lab identification ของ Shigella และ Salmonella"
+    },
+    {
+     "id": "17.3",
+     "prompt": "What is the most likely causative organism?",
+     "format": "short",
+     "accepted": [
+      "shigella",
+      "shigella spp",
+      "shigella species",
+      "shigella spp."
+     ],
+     "key_text": "Shigella spp.",
+     "source_key": "Shigella spp.",
+     "explanation": "non-motile, oxidase negative, lactoferrin + (invasive), ไม่สร้าง H₂S"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF46",
+     "pages": [
+      8
+     ]
+    },
+    {
+     "paper": "KF46-KEY",
+     "pages": [
+      9
+     ]
+    }
+   ],
+   "tags": [
+    "Shigella"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "Shigella: non-motile · ไม่ swarm · ไม่ H₂S · Cary-Blair ห้ามแช่เย็น"
+  },
+  {
+   "id": "GI-46-KF-018",
+   "block": "GI",
+   "cohort": 46,
+   "n": 18,
+   "type": "KF",
+   "case": "A 35-year-old man presents with abdominal discomfort, dyspepsia and fatigue. He usually eats spicy raw fish salad (ลาบก้อย). PE: icteric sclera and hepatomegaly. Ultrasonogram: enlargement of the gallbladder and non-shadowing echogenic foci within the bile duct. An unstained wet mount of concentrated stool is shown.",
+   "items": [
+    {
+     "id": "18.1",
+     "prompt": "State the specific name of the parasite infecting this patient.",
+     "format": "short",
+     "accepted": [
+      "opisthorchis viverrini",
+      "o. viverrini",
+      "opisthorchis"
+     ],
+     "key_text": "Opisthorchis viverrini",
+     "source_key": "Opisthorchis viverrini",
+     "explanation": "ปลาน้ำจืดดิบ (ก้อยปลา) + ท่อน้ำดีอุดกั้น = พยาธิใบไม้ตับ"
+    },
+    {
+     "id": "18.2a",
+     "prompt": "Name 2 appropriate medications — first drug and its mechanism of action",
+     "format": "short",
+     "keywords_all": [
+      "praziquantel",
+      "ca"
+     ],
+     "key_text": "Praziquantel: promotes an influx of Ca²⁺",
+     "source_key": "Praziquantel: promotes an influx of Ca²⁺",
+     "explanation": "praziquantel ทำให้ Ca²⁺ ไหลเข้ากล้ามเนื้อพยาธิ → หดเกร็งแล้วอัมพาต",
+     "accepted": [
+      "praziquantel"
+     ],
+     "key_image": "img/GI-46-KF-018b-key.jpg",
+     "key_image_caption": "สไลด์ในเฉลย: Opisthorchis treatment (praziquantel 1st line, albendazole alternative), กลไกของ praziquantel และ benzimidazoles"
+    },
+    {
+     "id": "18.2b",
+     "prompt": "… second drug and its mechanism of action",
+     "format": "short",
+     "keywords_all": [
+      "albendazole",
+      "tubulin"
+     ],
+     "key_text": "Albendazole: inhibits β-tubulin polymerization",
+     "source_key": "Albendazole: inhibits β-tubulin polymerization",
+     "explanation": "albendazole จับ β-tubulin ยับยั้ง microtubule",
+     "accepted": [
+      "albendazole"
+     ]
+    },
+    {
+     "id": "18.3",
+     "prompt": "Give one complication from chronic infection of this parasite.",
+     "format": "short",
+     "accepted": [
+      "cholangiocarcinoma",
+      "bile duct cancer",
+      "cca"
+     ],
+     "key_text": "Cholangiocarcinoma",
+     "source_key": "Cholangiocarcinoma",
+     "explanation": "ติดเรื้อรังเสี่ยงมะเร็งท่อน้ำดี (นอกจากนี้ cholangitis, ท่อน้ำดีอุดกั้น, ตับโต)",
+     "key_image": "img/GI-46-KF-018-key.jpg",
+     "key_image_caption": "สไลด์ในเฉลย: ผลของ Opisthorchis (cholangitis, ท่อน้ำดีอุดกั้น, ตับโต, cholangiocarcinoma), การวินิจฉัย และ life cycle"
+    },
+    {
+     "id": "18.4",
+     "prompt": "How can the infection from this parasite be prevented?",
+     "format": "short",
+     "keywords_all": [
+      "cook",
+      "toilet",
+      "fish"
+     ],
+     "key_text": "Eat cooked freshwater fish; defecate in a proper toilet",
+     "source_key": "ทานปลาน้ำจืดปรุงสุก · ขับถ่ายลงส้วมอย่างถูกลักษณะ",
+     "explanation": "ตัดวงจร: ไม่กินปลาดิบ/สุกๆ ดิบๆ และถ่ายลงส้วม",
+     "accepted": [
+      "eat well-cooked fish",
+      "cook fish thoroughly and use toilet"
+     ]
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF46",
+     "pages": [
+      9
+     ]
+    },
+    {
+     "paper": "KF46-KEY",
+     "pages": [
+      10
+     ]
+    }
+   ],
+   "tags": [
+    "Opisthorchis"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "O. viverrini: ปลาดิบ · praziquantel (Ca²⁺) / albendazole (β-tubulin) · cholangiocarcinoma"
+  },
+  {
+   "id": "GI-46-KF-019",
+   "block": "GI",
+   "cohort": 46,
+   "n": 19,
+   "type": "KF",
+   "case": "A woman has chronic diarrhea for a month. The diarrhea happens after any meal, 5 times a day in total. Her stool is bloody and mucous. She came to the hospital and got normal saline IV. She is tall and thin, conscious but fatigued. Physical examination: guarding positive and mild tenderness at the left lower quadrant. Colonoscopy shows extensive ulcer at the sigmoid and rectum.",
+   "items": [
+    {
+     "id": "19.0",
+     "prompt": "What is the most likely diagnosis? (written by the key's author next to the case)",
+     "format": "short",
+     "accepted": [
+      "ulcerative colitis",
+      "uc"
+     ],
+     "key_text": "Ulcerative colitis",
+     "source_key": "Ulcerative colitis",
+     "explanation": "แผลต่อเนื่องที่ rectum–sigmoid + ถ่ายมูกเลือดเรื้อรัง = UC",
+     "key_image": "img/GI-46-KF-019b-key.jpg",
+     "key_image_caption": "สไลด์ในเฉลย: Crohn disease vs ulcerative colitis (ตำแหน่ง ลักษณะแผล การอักเสบ ความเสี่ยงมะเร็ง)"
+    },
+    {
+     "id": "19.1",
+     "prompt": "Give 3 causes of diarrhea in this patient.",
+     "format": "short",
+     "keywords_all": [
+      "inflammation",
+      "mucosal"
+     ],
+     "key_text": "1) Inflammation 2) Mucosal damage 3) Altered ion balance (สมดุล ion เปลี่ยนไป)",
+     "source_key": "1) Inflammation 2) Mucosal damage 3) Altered ion balance (สมดุล ion เปลี่ยนไป)",
+     "explanation": "IBD: การอักเสบ เยื่อบุเสียหาย การขนส่ง ion ของเยื่อบุผิดปกติ (↓ absorption, ↑ secretion)",
+     "key_image": "img/GI-46-KF-019-key.jpg",
+     "key_image_caption": "ข้อความในเฉลย: กลไกท้องเสียใน IBD (การอักเสบ เยื่อบุเสียหาย การขนส่ง ion และ barrier function เสีย)"
+    },
+    {
+     "id": "19.2",
+     "prompt": "Choose the 3 best recommended examinations to find the cause of the symptoms.",
+     "format": "select",
+     "options": [
+      {
+       "key": "A",
+       "text": "CBC"
+      },
+      {
+       "key": "B",
+       "text": "CEA"
+      },
+      {
+       "key": "C",
+       "text": "Urine test"
+      },
+      {
+       "key": "D",
+       "text": "Stool exam"
+      }
+     ],
+     "answer": [
+      "A",
+      "B",
+      "D"
+     ],
+     "max_answers": 3,
+     "key_text": "A. CBC (anemia?) · B. CEA (UC carries up to 10% cancer risk) · D. Stool exam (rule out parasites / blood)",
+     "source_key": "CBC → anemia หรือเปล่า? · stool exam → rule out parasite ดูว่ามีเลือดมั้ย? · CEA → เพราะ UC มีโอกาสพัฒนาไปเป็นมะเร็งได้ถึง 10%",
+     "explanation": "ผู้เฉลยเลือด CBC, stool exam, CEA และมีหมายเหตุว่าตามข้อสอบจริงเขียนต่างกันได้ (เช่น สอบเนื้อเยื่อด้วย colonoscopy)",
+     "key_image": "img/GI-46-KF-019c-key.jpg",
+     "key_image_caption": "สไลด์ในเฉลย: Ulcerative colitis diagnosis (blood tests, stool samples, sigmoidoscopy, colonoscopy, X-ray)"
+    },
+    {
+     "id": "19.3",
+     "prompt": "List 3 immediate complications of this woman.",
+     "format": "short",
+     "keywords_all": [
+      "bleeding",
+      "dehydration"
+     ],
+     "key_text": "1) Bleeding 2) Dehydration 3) Inflammation",
+     "source_key": "1) Bleeding 2) Dehydration 3) Inflammation",
+     "explanation": "ภาวะแทรกซ้อนของ UC ตามสไลด์: bleeding, osteoporosis, dehydration, inflammation, fulminant colitis, megacolon, liver disease, colon cancer",
+     "accepted": [
+      "bleeding, dehydration, inflammation",
+      "megacolon",
+      "fulminant colitis"
+     ],
+     "key_image": "img/GI-46-KF-019d-key.jpg",
+     "key_image_caption": "สไลด์ในเฉลย: ภาวะแทรกซ้อนของ ulcerative colitis"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF46",
+     "pages": [
+      10
+     ]
+    },
+    {
+     "paper": "KF46-KEY",
+     "pages": [
+      11
+     ]
+    }
+   ],
+   "tags": [
+    "ulcerative colitis",
+    "IBD"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "UC: rectum+sigmoid ต่อเนื่อง · CBC, stool, CEA · ภาวะแทรกซ้อน: เลือดออก ขาดน้ำ อักเสบ"
+  }
+ ]
+}
