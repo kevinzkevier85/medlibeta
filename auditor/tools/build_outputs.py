@@ -197,6 +197,9 @@ def build_medlib(sets):
         # exam PDFs used to be listed as lectures by mistake — drop them
         lectures = [l for l in block["lectures"] if l["id"] not in (f"MCQ{c}", f"MCQ{c}-ANS")]
         set_name = f"{c}_{t}"
+        # disputed id → {same question in another cohort: which side ("source"/"ai"/"none") its key agrees with}
+        sp = AUD / "data" / "same" / f"{B.lower()}.json"
+        same = load(sp) if sp.exists() else {}
         qs = []
         for q in s["questions"]:
             a = q["audit"]
@@ -209,11 +212,14 @@ def build_medlib(sets):
             if q["issues"]:
                 exp += "\n⚠️ " + " · ".join(q["issues"])
             n = int(q["number"])
+            qid_ml = f"{B}-{c}-MCQ-{n:03d}"
             qs.append({"id": f"{B}-{c}-MCQ-{n:03d}", "block": B, "cohort": c, "n": n, "type": "MCQ",
                        "stem": q["stem"], "options": {k: v for k, v in q["choices"].items() if v},
                        "answer": q["correct"], "answer_status": medlib_status(a), "explanation": exp,
                        "refs": refs, "tags": [x for x in [a["duplicate_group"]] if x], "source": "import",
                        "audit_ref": q["id"]} | ({"also_accept": q["also_accept"]} if q.get("also_accept") else {})
+                      | ({"ai_answer": a["ai_answer"]} | ({"same_side": same[qid_ml]} if qid_ml in same else {})
+                         if medlib_status(a) == "disputed" and a["ai_answer"] in q["choices"] and q["choices"].get(a["ai_answer"]) and a["ai_answer"] != q["correct"] else {})
                       | ({"image": q["image"]} if q.get("image") else {})
                       | ({"image_caption": q["image_caption"]} if q.get("image_caption") else {}))
         out = {"meta": {"set_id": set_name, "block": B, "cohort": c, "type": t,
