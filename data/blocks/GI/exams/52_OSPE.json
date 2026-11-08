@@ -1,0 +1,1457 @@
+{
+ "meta": {
+  "set_id": "52_OSPE",
+  "block": "GI",
+  "cohort": 52,
+  "type": "OSPE",
+  "title": "OSPE Gastrointestinal · Med PSU 52",
+  "time_limit_min": 48,
+  "generated_by": "auditor/tools/build_kf.py from auditor/data/work/gi_52_OSPE.kf.json — do not edit by hand"
+ },
+ "questions": [
+  {
+   "id": "GI-52-OSPE-001",
+   "block": "GI",
+   "cohort": 52,
+   "n": 1,
+   "type": "OSPE",
+   "station": 1,
+   "stem": "Station 1. Dissection of the anterior abdominal wall; arrow A points at a muscle layer and arrow B at a vessel running on the rectus sheath.",
+   "items": [
+    {
+     "id": "1.1",
+     "prompt": "Identify muscle A",
+     "format": "short",
+     "accepted": [
+      "external abdominal oblique",
+      "external oblique",
+      "external abdominal oblique muscle",
+      "external oblique muscle"
+     ],
+     "key_text": "External abdominal oblique muscle",
+     "source_key": "External abdominal oblique muscle",
+     "explanation": "ชั้นนอกสุดของกล้ามเนื้อกว้างของหน้าท้อง เส้นใยทิศ 'มือล้วงกระเป๋า'"
+    },
+    {
+     "id": "1.2",
+     "prompt": "Identify vessel B",
+     "format": "short",
+     "accepted": [
+      "inferior epigastric artery",
+      "inferior epigastric"
+     ],
+     "key_text": "Inferior epigastric artery",
+     "source_key": "Inferior epigastric artery",
+     "explanation": "แขนงของ external iliac a. ขึ้นหลัง rectus abdominis ต่อกับ superior epigastric a."
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE52",
+     "pages": [
+      1
+     ]
+    },
+    {
+     "paper": "OSPE52-KEY",
+     "pages": [
+      1
+     ]
+    }
+   ],
+   "tags": [
+    "anterior abdominal wall"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "external oblique · inferior epigastric a.",
+   "image": "img/GI-52-OSPE-001.jpg",
+   "image_caption": "ผนังหน้าท้อง: A = กล้ามเนื้อ, B = หลอดเลือด"
+  },
+  {
+   "id": "GI-52-OSPE-002",
+   "block": "GI",
+   "cohort": 52,
+   "n": 2,
+   "type": "OSPE",
+   "station": 2,
+   "stem": "Station 2. Ileocecal region of a dissected specimen; arrow A points into the opening between the ileum and cecum, arrow B at a blind tube arising from the cecum.",
+   "items": [
+    {
+     "id": "2.1",
+     "prompt": "Identify valve A",
+     "format": "short",
+     "accepted": [
+      "ileocecal valve",
+      "ileocaecal valve",
+      "ileocecal"
+     ],
+     "key_text": "Ileocecal valve",
+     "source_key": "Ileocecal valve",
+     "explanation": "ลิ้นระหว่าง ileum กับ cecum"
+    },
+    {
+     "id": "2.2",
+     "prompt": "Identify structure B",
+     "format": "short",
+     "accepted": [
+      "appendix",
+      "vermiform appendix"
+     ],
+     "key_text": "Appendix",
+     "source_key": "Appendix",
+     "explanation": "ติ่งเนื้อรูปหนอนที่ยื่นจาก cecum"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE52",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "OSPE52-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [
+    "ileocecal valve",
+    "appendix"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "ileocecal valve + appendix",
+   "image": "img/GI-52-OSPE-002.jpg",
+   "image_caption": "บริเวณ ileocecal ของชิ้นเนื้อ"
+  },
+  {
+   "id": "GI-52-OSPE-003",
+   "block": "GI",
+   "cohort": 52,
+   "n": 3,
+   "type": "OSPE",
+   "station": 3,
+   "stem": "Station 3. Posterior abdominal wall showing the lumbar plexus and its branches; arrow A points at a nerve emerging high on the lateral border of psoas, arrow B at a nerve running along the pelvic brim.",
+   "items": [
+    {
+     "id": "3.1",
+     "prompt": "Identify nerve A",
+     "format": "short",
+     "accepted": [
+      "iliohypogastric nerve",
+      "iliohypogastric"
+     ],
+     "key_text": "Iliohypogastric nerve",
+     "source_key": "Iliohypogastric nerve",
+     "explanation": "L1 โผล่ด้านข้าง psoas ใต้ subcostal n."
+    },
+    {
+     "id": "3.2",
+     "prompt": "Identify nerve B",
+     "format": "short",
+     "accepted": [
+      "obturator nerve",
+      "obturator"
+     ],
+     "key_text": "Obturator nerve",
+     "source_key": "Obturator nerve",
+     "explanation": "L2–L4 โผล่ที่ medial border ของ psoas ผ่านขอบเชิงกรานออก obturator canal"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE52",
+     "pages": [
+      3
+     ]
+    },
+    {
+     "paper": "OSPE52-KEY",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [
+    "lumbar plexus"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "iliohypogastric (L1) · obturator (L2–4)",
+   "image": "img/GI-52-OSPE-003.jpg",
+   "image_caption": "lumbar plexus ผนังหลังช่องท้อง"
+  },
+  {
+   "id": "GI-52-OSPE-004",
+   "block": "GI",
+   "cohort": 52,
+   "n": 4,
+   "type": "OSPE",
+   "station": 4,
+   "stem": "Station 4. Dissection of the upper abdomen after retracting the liver; arrow A points at an artery running behind the first part of the duodenum, arrow B at an artery emerging from behind the neck of the pancreas.",
+   "items": [
+    {
+     "id": "4.1",
+     "prompt": "Identify vessel A",
+     "format": "short",
+     "accepted": [
+      "gastroduodenal artery",
+      "gastroduodenal"
+     ],
+     "key_text": "Gastroduodenal artery",
+     "source_key": "Gastroduodenal artery",
+     "explanation": "แขนงของ common hepatic a. วิ่งหลัง D1"
+    },
+    {
+     "id": "4.2",
+     "prompt": "Identify vessel B",
+     "format": "short",
+     "accepted": [
+      "superior mesenteric artery",
+      "sma"
+     ],
+     "key_text": "Superior mesenteric artery",
+     "source_key": "Superior mesenteric artery",
+     "explanation": "ออกจาก aorta L1 หลังคอตับอ่อน"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE52",
+     "pages": [
+      4
+     ]
+    },
+    {
+     "paper": "OSPE52-KEY",
+     "pages": [
+      4
+     ]
+    }
+   ],
+   "tags": [
+    "abdominal arteries"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "gastroduodenal a. · SMA",
+   "image": "img/GI-52-OSPE-004.jpg",
+   "image_caption": "หลอดเลือดช่องท้องส่วนบน"
+  },
+  {
+   "id": "GI-52-OSPE-005",
+   "block": "GI",
+   "cohort": 52,
+   "n": 5,
+   "type": "OSPE",
+   "station": 5,
+   "stem": "Station 5. In portal hypertension. Diagram of portosystemic anastomoses: 1 = the esophageal site, 2 = the rectal site.",
+   "items": [
+    {
+     "id": "5.1",
+     "prompt": "Identify the pathology labeled as number 1",
+     "format": "short",
+     "accepted": [
+      "esophageal varices",
+      "esophageal varice",
+      "esophageal varix"
+     ],
+     "key_text": "Esophageal varices",
+     "source_key": "Esophageal varices",
+     "explanation": "left gastric v. ↔ esophageal veins (azygos)"
+    },
+    {
+     "id": "5.2",
+     "prompt": "Identify the pathology labeled as number 2",
+     "format": "short",
+     "accepted": [
+      "hemorrhoid",
+      "hemorrhoids",
+      "haemorrhoids",
+      "internal hemorrhoid"
+     ],
+     "key_text": "Hemorrhoid",
+     "source_key": "Hemorrhoid",
+     "explanation": "superior rectal v. ↔ middle/inferior rectal v."
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE52",
+     "pages": [
+      4
+     ]
+    },
+    {
+     "paper": "OSPE52-KEY",
+     "pages": [
+      4
+     ]
+    }
+   ],
+   "tags": [
+    "portal hypertension"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "portosystemic: esophageal varices, hemorrhoids, caput medusae",
+   "image": "img/GI-52-OSPE-005.jpg",
+   "image_caption": "แผนภาพ portosystemic anastomosis"
+  },
+  {
+   "id": "GI-52-OSPE-006",
+   "block": "GI",
+   "cohort": 52,
+   "n": 6,
+   "type": "OSPE",
+   "station": 6,
+   "stem": "Station 6. Anterior view of the opened peritoneal cavity; arrow A points at a fold attached to the anterior abdominal wall above the liver; arrow B at a large fatty apron hanging from the stomach.",
+   "items": [
+    {
+     "id": "6.1",
+     "prompt": "Identify ligament A",
+     "format": "short",
+     "accepted": [
+      "falciform ligament",
+      "falciform"
+     ],
+     "key_text": "Falciform ligament",
+     "source_key": "Falciform ligament",
+     "explanation": "เยื่อบุช่องท้องจากตับถึงผนังหน้าท้อง มี ligamentum teres ที่ขอบล่าง"
+    },
+    {
+     "id": "6.2",
+     "prompt": "Identify structure B",
+     "format": "short",
+     "accepted": [
+      "greater omentum"
+     ],
+     "key_text": "Greater omentum",
+     "source_key": "Greater omentum",
+     "explanation": "ผ้ากันเปื้อนไขมันห้อยจาก greater curvature"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE52",
+     "pages": [
+      5
+     ]
+    },
+    {
+     "paper": "OSPE52-KEY",
+     "pages": [
+      5
+     ]
+    }
+   ],
+   "tags": [
+    "peritoneum"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "falciform ligament · greater omentum",
+   "image": "img/GI-52-OSPE-006.jpg",
+   "image_caption": "ช่องท้องด้านหน้า"
+  },
+  {
+   "id": "GI-52-OSPE-007",
+   "block": "GI",
+   "cohort": 52,
+   "n": 7,
+   "type": "OSPE",
+   "station": 7,
+   "stem": "Station 7. H&E sections. A: pancreatic tissue with a pale island of cells among acini; B: serous glandular tissue of a salivary gland.",
+   "items": [
+    {
+     "id": "7.1",
+     "prompt": "Identify organ A",
+     "format": "short",
+     "accepted": [
+      "pancreas"
+     ],
+     "key_text": "Pancreas",
+     "source_key": "Pancreas",
+     "explanation": "มี islets of Langerhans (กลุ่มเซลล์ซีด) ท่ามกลาง serous acini",
+     "audit_note": "ข้อความเฉลยใน PDF เรียง Parotid / Pancreas แต่ตามรูปแถว A มี islet = Pancreas"
+    },
+    {
+     "id": "7.2",
+     "prompt": "Identify organ B",
+     "format": "short",
+     "accepted": [
+      "parotid gland",
+      "parotid"
+     ],
+     "key_text": "Parotid gland",
+     "source_key": "Parotid gland",
+     "explanation": "serous acini ล้วน ไม่มี islet · ท่อ striated duct"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE52",
+     "pages": [
+      5
+     ]
+    },
+    {
+     "paper": "OSPE52-KEY",
+     "pages": [
+      5
+     ]
+    }
+   ],
+   "tags": [
+    "histology",
+    "pancreas",
+    "salivary gland"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "pancreas: islet · parotid: serous acini",
+   "image": "img/GI-52-OSPE-007.jpg",
+   "image_caption": "เนื้อเยื่อ A และ B (H&E)"
+  },
+  {
+   "id": "GI-52-OSPE-008",
+   "block": "GI",
+   "cohort": 52,
+   "n": 8,
+   "type": "OSPE",
+   "station": 8,
+   "stem": "Station 8. Figure 1: low-power H&E section of the tongue surface with a circled structure. Figure 2: section of a tooth in its socket with a blue arrow at a thin band between the tooth root and bone.",
+   "items": [
+    {
+     "id": "8.1",
+     "prompt": "Identify the structure in figure 1",
+     "format": "short",
+     "accepted": [
+      "circumvallate papilla",
+      "circumvallate papillae",
+      "vallate papilla"
+     ],
+     "key_text": "Circumvallate papilla",
+     "source_key": "Circumvallate papilla",
+     "explanation": "papilla ใหญ่ล้อมด้วยร่อง (trench) มี taste bud ที่ข้างและ von Ebner gland ที่ก้นร่อง"
+    },
+    {
+     "id": "8.2",
+     "prompt": "Which layer is indicated by the blue arrow in figure 2?",
+     "format": "short",
+     "accepted": [
+      "periodontal ligament"
+     ],
+     "key_text": "Periodontal ligament",
+     "source_key": "Periodontal ligament",
+     "explanation": "เส้นใยคอลลาเจนยึด cementum กับ alveolar bone",
+     "key_image": "img/GI-52-OSPE-008b-key.jpg",
+     "key_image_caption": "สไลด์ในเฉลย: ชั้นต่างๆ ของฟัน (dentin, cementum, cementicle, periodontal ligament, alveolar bone)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE52",
+     "pages": [
+      6
+     ]
+    },
+    {
+     "paper": "OSPE52-KEY",
+     "pages": [
+      6
+     ]
+    }
+   ],
+   "tags": [
+    "histology",
+    "tongue",
+    "tooth"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "circumvallate papilla · periodontal ligament",
+   "image": "img/GI-52-OSPE-008.jpg",
+   "image_caption": "ภาพที่ 1 ลิ้น (วงกลม) และภาพที่ 2 ฟัน (ลูกศรน้ำเงิน)"
+  },
+  {
+   "id": "GI-52-OSPE-009",
+   "block": "GI",
+   "cohort": 52,
+   "n": 9,
+   "type": "OSPE",
+   "station": 9,
+   "stem": "Station 9. Low-power H&E section of small intestine with long, closely packed villi; bracket A spans the transverse folds of the wall.",
+   "items": [
+    {
+     "id": "9.1",
+     "prompt": "Identify this organ (be specific)",
+     "format": "short",
+     "accepted": [
+      "jejunum"
+     ],
+     "key_text": "Jejunum",
+     "source_key": "Jejunum",
+     "explanation": "villi สูง เรียวยาว พร้อม plicae circulares เด่น ไม่มี Brunner gland/Peyer patch"
+    },
+    {
+     "id": "9.2",
+     "prompt": "Identify structure A",
+     "format": "short",
+     "accepted": [
+      "plicae circulares",
+      "plica circularis",
+      "plicae circularis",
+      "circular folds",
+      "valves of kerckring"
+     ],
+     "key_text": "Plicae circulares",
+     "source_key": "Plicae circulares",
+     "explanation": "รอยพับถาวรของ mucosa + submucosa เพิ่มพื้นที่ดูดซึม"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE52",
+     "pages": [
+      6
+     ]
+    },
+    {
+     "paper": "OSPE52-KEY",
+     "pages": [
+      6
+     ]
+    }
+   ],
+   "tags": [
+    "histology",
+    "jejunum"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "jejunum: villi สูง + plicae circulares",
+   "image": "img/GI-52-OSPE-009.jpg",
+   "image_caption": "ลำไส้เล็กกำลังขยายต่ำ มีวงเล็บ A"
+  },
+  {
+   "id": "GI-52-OSPE-010",
+   "block": "GI",
+   "cohort": 52,
+   "n": 10,
+   "type": "OSPE",
+   "station": 10,
+   "stem": "Station 10. H&E sections. 10.1: a folded tube with a stratified squamous lining and a thick muscular wall; 10.2: a small tube with lymphoid nodules in the wall, no villi.",
+   "items": [
+    {
+     "id": "10.1",
+     "prompt": "Identify this organ",
+     "format": "short",
+     "accepted": [
+      "esophagus",
+      "oesophagus"
+     ],
+     "key_text": "Esophagus",
+     "source_key": "Esophagus",
+     "explanation": "stratified squamous nonkeratinized + muscularis mucosae หนา (ข้อสอบจริงอาจถามส่วน: ดูจากชั้นกล้ามเนื้อ)",
+     "audit_note": "ผู้เฉลยหมายเหตุว่าข้อสอบจริงน่าจะต้องบอกว่าเป็น part ไหน ดูจาก muscular layer ซึ่งยากมากและภาพไม่ชัด"
+    },
+    {
+     "id": "10.2",
+     "prompt": "Identify this organ",
+     "format": "short",
+     "accepted": [
+      "appendix",
+      "vermiform appendix"
+     ],
+     "key_text": "Appendix",
+     "source_key": "Appendix",
+     "explanation": "มีก้อน lymphoid จำนวนมากใน wall (Peyer's-patch-like) แต่ไม่มี villi"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE52",
+     "pages": [
+      7
+     ]
+    },
+    {
+     "paper": "OSPE52-KEY",
+     "pages": [
+      7
+     ]
+    }
+   ],
+   "tags": [
+    "histology",
+    "esophagus",
+    "appendix"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "esophagus: squamous · appendix: lymphoid nodules, ไม่มี villi",
+   "image": "img/GI-52-OSPE-010.jpg",
+   "image_caption": "เนื้อเยื่อ 10.1 และ 10.2 (H&E)"
+  },
+  {
+   "id": "GI-52-OSPE-011",
+   "block": "GI",
+   "cohort": 52,
+   "n": 11,
+   "type": "OSPE",
+   "station": 11,
+   "stem": "Station 11. 11.1: H&E section of liver with a yellow polygon outlining a classic lobule/acinus; central veins (CV) and labeled areas A–D. 11.2: H&E section of a hollow organ with tall, branched mucosal folds and a thick lamina propria.",
+   "items": [
+    {
+     "id": "11.1",
+     "prompt": "Which labeled area is most susceptible to ischemia?",
+     "format": "select",
+     "options": [
+      {
+       "key": "A",
+       "text": "A (near the portal triad)"
+      },
+      {
+       "key": "B",
+       "text": "B"
+      },
+      {
+       "key": "C",
+       "text": "C"
+      },
+      {
+       "key": "D",
+       "text": "D (nearest a central vein)"
+      }
+     ],
+     "answer": [
+      "D"
+     ],
+     "max_answers": 1,
+     "key_text": "D (zone 3, nearest the central vein)",
+     "source_key": "D (Zone 3 ใกล้ central vein สุด)",
+     "explanation": "zone 3 ไกลหลอดเลือดที่เข้ามากที่สุด ได้ O₂ น้อย ไวต่อ ischemia และ acetaminophen",
+     "image": "img/GI-52-OSPE-011.jpg",
+     "image_caption": "ตับ (H&E) พื้นที่ A–D รอบเส้นสีเหลือง"
+    },
+    {
+     "id": "11.2",
+     "prompt": "Identify this organ",
+     "format": "short",
+     "accepted": [
+      "gallbladder",
+      "gall bladder"
+     ],
+     "key_text": "Gallbladder",
+     "source_key": "Gallbladder",
+     "explanation": "mucosal folds สูงแตกแขนง ไม่มี submucosa/muscularis mucosae ชัด",
+     "image": "img/GI-52-OSPE-011b.jpg",
+     "image_caption": "อวัยวะกลวง (H&E) ผนังพับสูงแตกแขนง"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE52",
+     "pages": [
+      8
+     ]
+    },
+    {
+     "paper": "OSPE52-KEY",
+     "pages": [
+      8
+     ]
+    }
+   ],
+   "tags": [
+    "histology",
+    "liver",
+    "gallbladder"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "zone 3 ใกล้ central vein ไวต่อ ischemia · gallbladder: mucosal folds"
+  },
+  {
+   "id": "GI-52-OSPE-012",
+   "block": "GI",
+   "cohort": 52,
+   "n": 12,
+   "type": "OSPE",
+   "station": 12,
+   "stem": "Station 12. Two H&E sections of small intestine. 12.1: mucosa with long villi and submucosal glands beneath; 12.2: mucosa with villi and aggregated lymphoid follicles.",
+   "items": [
+    {
+     "id": "12.1",
+     "prompt": "Identify this organ (be specific)",
+     "format": "short",
+     "accepted": [
+      "duodenum"
+     ],
+     "key_text": "Duodenum",
+     "source_key": "duodenum (มี Brunner's gland)",
+     "explanation": "มี Brunner's gland ใน submucosa"
+    },
+    {
+     "id": "12.2",
+     "prompt": "Identify this organ (be specific)",
+     "format": "short",
+     "accepted": [
+      "ileum"
+     ],
+     "key_text": "Ileum",
+     "source_key": "Ileum (มี Peyer's patches, villi)",
+     "explanation": "มี Peyer's patches และ villi"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE52",
+     "pages": [
+      9
+     ]
+    },
+    {
+     "paper": "OSPE52-KEY",
+     "pages": [
+      9
+     ]
+    }
+   ],
+   "tags": [
+    "histology",
+    "duodenum",
+    "ileum"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "duodenum: Brunner · ileum: Peyer's patch",
+   "image": "img/GI-52-OSPE-012.jpg",
+   "image_caption": "ลำไส้เล็ก 12.1 และ 12.2 (H&E)"
+  },
+  {
+   "id": "GI-52-OSPE-013",
+   "block": "GI",
+   "cohort": 52,
+   "n": 13,
+   "type": "OSPE",
+   "station": 13,
+   "stem": "Station 13. Left: low-power H&E section through a gastric lesion with an arrow A at a thick pink layer beneath the lesion. Right: gross photograph of a gastric mucosal defect with a clean, punched-out base.",
+   "items": [
+    {
+     "id": "13.1",
+     "prompt": "What is the diagnosis?",
+     "format": "short",
+     "accepted": [
+      "peptic ulcer disease",
+      "peptic ulcer",
+      "gastric ulcer",
+      "pud"
+     ],
+     "key_text": "Peptic ulcer disease",
+     "source_key": "Peptic ulcer disease",
+     "explanation": "แผลลึกถึงชั้นกล้ามเนื้อ ฐานสะอาด"
+    },
+    {
+     "id": "13.2",
+     "prompt": "What structure is labeled A?",
+     "format": "short",
+     "accepted": [
+      "muscularis propria",
+      "muscularis externa"
+     ],
+     "key_text": "Muscularis propria",
+     "source_key": "Muscularis propria",
+     "explanation": "ผู้เฉลยเขียนว่าไม่มั่นใจ ชั้นกล้ามเนื้อใต้แผล",
+     "audit_note": "ผู้เฉลยหมายเหตุ 'ไม่มั่นใจ'"
+    },
+    {
+     "id": "13.3",
+     "prompt": "Which organism causes this condition?",
+     "format": "short",
+     "accepted": [
+      "helicobacter pylori",
+      "h. pylori",
+      "h pylori"
+     ],
+     "key_text": "Helicobacter pylori",
+     "source_key": "Helicobacter pylori",
+     "explanation": "สาเหตุหลักของแผลกระเพาะ/duodenum (รองคือ NSAID)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE52",
+     "pages": [
+      9
+     ]
+    },
+    {
+     "paper": "OSPE52-KEY",
+     "pages": [
+      9
+     ]
+    }
+   ],
+   "tags": [
+    "peptic ulcer",
+    "H. pylori"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "peptic ulcer: muscularis propria · H. pylori",
+   "image": "img/GI-52-OSPE-013.jpg",
+   "image_caption": "แผลกระเพาะ (H&E และภาพ gross)"
+  },
+  {
+   "id": "GI-52-OSPE-014",
+   "block": "GI",
+   "cohort": 52,
+   "n": 14,
+   "type": "OSPE",
+   "station": 14,
+   "stem": "Station 14. Left: gross photograph of the esophagus with an ulcerated fungating mass. Right: H&E section showing nests of squamous cells with concentric pink whorls.",
+   "items": [
+    {
+     "id": "14.1",
+     "prompt": "Describe two histologic findings.",
+     "format": "short",
+     "keywords_all": [
+      "keratin",
+      "differentiated"
+     ],
+     "key_text": "Moderate to well differentiated; keratin pearls",
+     "source_key": "Moderate to well differentiated; keratin pearls",
+     "explanation": "เห็น keratin pearl (วงสีชมพูซ้อนกัน) และ intercellular bridge",
+     "accepted": [
+      "keratin pearls and well differentiated",
+      "keratin pearl, well differentiated"
+     ]
+    },
+    {
+     "id": "14.2",
+     "prompt": "What is the diagnosis?",
+     "format": "short",
+     "accepted": [
+      "squamous cell carcinoma of esophagus",
+      "squamous cell carcinoma",
+      "esophageal squamous cell carcinoma",
+      "scc of esophagus",
+      "esophageal scc"
+     ],
+     "key_text": "Squamous cell carcinoma of esophagus",
+     "source_key": "Squamous cell carcinoma of esophagus",
+     "explanation": "หลอดอาหารส่วนกลาง/บน; ปัจจัยเสี่ยง บุหรี่ เหล้า อาหารร้อน"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE52",
+     "pages": [
+      10
+     ]
+    },
+    {
+     "paper": "OSPE52-KEY",
+     "pages": [
+      10
+     ]
+    }
+   ],
+   "tags": [
+    "esophageal cancer"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "keratin pearl → SCC ของหลอดอาหาร",
+   "image": "img/GI-52-OSPE-014.jpg",
+   "image_caption": "มะเร็งหลอดอาหาร (gross และ H&E)"
+  },
+  {
+   "id": "GI-52-OSPE-015",
+   "block": "GI",
+   "cohort": 52,
+   "n": 15,
+   "type": "OSPE",
+   "station": 15,
+   "stem": "Station 15. Gross photograph of an opened gallbladder filled with numerous small, faceted yellow-brown stones.",
+   "items": [
+    {
+     "id": "15.1",
+     "prompt": "What is the diagnosis (including type)?",
+     "format": "short",
+     "accepted": [
+      "cholelithiasis",
+      "cholesterol stone",
+      "cholesterol gallstone",
+      "gallstone"
+     ],
+     "key_text": "Cholelithiasis (cholesterol stone)",
+     "source_key": "Cholelithiasis (cholesterol stone)",
+     "explanation": "นิ่วหลายก้อนขนาดเล็กหน้าตัดเหลี่ยม สีเหลืองน้ำตาล = cholesterol (mixed) stones"
+    },
+    {
+     "id": "15.2",
+     "prompt": "List risk factors associated with this disease. (4 answers)",
+     "format": "short",
+     "keywords_all": [
+      "female",
+      "forty",
+      "fat",
+      "fertile"
+     ],
+     "key_text": "4F: Female, Forty (age), Fat (obesity), Fertile (pregnancy/high estrogen)",
+     "source_key": "4F: Female, Forty (age), Fat (obesity), Fertile (pregnancy/high estrogen)",
+     "explanation": "ปัจจัยเสี่ยงนิ่วคอเลสเตอรอล: female, forty, fat, fertile",
+     "accepted": [
+      "female, forty, fat, fertile",
+      "4f"
+     ]
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE52",
+     "pages": [
+      11
+     ]
+    },
+    {
+     "paper": "OSPE52-KEY",
+     "pages": [
+      11
+     ]
+    }
+   ],
+   "tags": [
+    "gallstones"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "cholesterol stone: 4F",
+   "image": "img/GI-52-OSPE-015.jpg",
+   "image_caption": "ถุงน้ำดีที่มีนิ่ว (gross)"
+  },
+  {
+   "id": "GI-52-OSPE-016",
+   "block": "GI",
+   "cohort": 52,
+   "n": 16,
+   "type": "OSPE",
+   "station": 16,
+   "stem": "Station 16. Left: H&E section of colon with a large irregular crowded glandular mucosa and an arrow at the deepest tumor edge. Right: gross photograph of a colonic segment with an ulcerated mass.",
+   "items": [
+    {
+     "id": "16.1",
+     "prompt": "What is the diagnosis?",
+     "format": "short",
+     "accepted": [
+      "adenocarcinoma of colon",
+      "colon adenocarcinoma",
+      "colonic adenocarcinoma",
+      "adenocarcinoma of the colon",
+      "colorectal adenocarcinoma",
+      "adenocarcinoma"
+     ],
+     "key_text": "Adenocarcinoma of colon",
+     "source_key": "Adenocarcinoma of colon",
+     "explanation": "ต่อมผิดปกติ หนาแน่น ลุกลาม"
+    },
+    {
+     "id": "16.2",
+     "prompt": "What is the deepest layer the lesion has invaded?",
+     "format": "short",
+     "accepted": [
+      "submucosa"
+     ],
+     "key_text": "Submucosa",
+     "source_key": "Submucosa",
+     "explanation": "ตามลูกศรในภาพ (ผู้เฉลยหมายเหตุว่าเป็นคนละภาพกับข้อสอบจริง)",
+     "key_image": "img/GI-52-OSPE-016b-key.jpg",
+     "key_image_caption": "สไลด์ในเฉลย: ชั้นของผนังลำไส้ใหญ่ (mucosa, submucosa, muscularis propria, subserosa)",
+     "audit_note": "ผู้เฉลยหมายเหตุว่าภาพในชุดที่แชร์ไม่ตรงกับข้อสอบจริง"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE52",
+     "pages": [
+      11
+     ]
+    },
+    {
+     "paper": "OSPE52-KEY",
+     "pages": [
+      11
+     ]
+    }
+   ],
+   "tags": [
+    "colon cancer"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "adenocarcinoma ลำไส้ใหญ่ · ลุกลามถึง submucosa",
+   "image": "img/GI-52-OSPE-016.jpg",
+   "image_caption": "มะเร็งลำไส้ใหญ่ (H&E และ gross)"
+  },
+  {
+   "id": "GI-52-OSPE-017",
+   "block": "GI",
+   "cohort": 52,
+   "n": 17,
+   "type": "OSPE",
+   "station": 17,
+   "stem": "Station 17. Gross photograph of a resected organ: a tubular, blind-ended structure that is thickened and swollen.",
+   "items": [
+    {
+     "id": "17.1",
+     "prompt": "Describe gross appearances. (2 answers)",
+     "format": "short",
+     "keywords_all": [
+      "dilated",
+      "fibrinopurulent",
+      "exudate"
+     ],
+     "key_text": "1. The appendix is dilated and swollen. 2. Serosal surface is covered by fibripurulent exudate.",
+     "source_key": "1. The appendix is dilated and swollen. 2. Serosal surface is covered by fibripurulent exudate.",
+     "explanation": "ไส้ติ่งบวมโต ผิว serosa มี fibrinopurulent exudate คลุม",
+     "accepted": [
+      "dilated and swollen",
+      "serosal fibrinopurulent exudate"
+     ]
+    },
+    {
+     "id": "17.2",
+     "prompt": "What is the diagnosis?",
+     "format": "short",
+     "accepted": [
+      "acute appendicitis",
+      "appendicitis"
+     ],
+     "key_text": "Acute appendicitis",
+     "source_key": "Acute appendicitis",
+     "explanation": "neutrophil แทรกผนังไส้ติ่ง"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE52",
+     "pages": [
+      12
+     ]
+    },
+    {
+     "paper": "OSPE52-KEY",
+     "pages": [
+      12
+     ]
+    }
+   ],
+   "tags": [
+    "appendicitis"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "acute appendicitis: บวม + fibrinopurulent exudate",
+   "image": "img/GI-52-OSPE-017.jpg",
+   "image_caption": "ไส้ติ่ง (gross)"
+  },
+  {
+   "id": "GI-52-OSPE-018",
+   "block": "GI",
+   "cohort": 52,
+   "n": 18,
+   "type": "OSPE",
+   "station": 18,
+   "stem": "Station 18. Gross photograph of a sliced liver with multiple well-circumscribed pale tumor nodules scattered through the parenchyma.",
+   "items": [
+    {
+     "id": "18.1",
+     "prompt": "List two differential diagnoses.",
+     "format": "short",
+     "keywords_all": [
+      "metastatic",
+      "hepatocellular"
+     ],
+     "key_text": "Metastatic carcinoma; multifocal hepatocellular carcinoma",
+     "source_key": "Metastatic carcinoma; multifocal hepatocellular carcinoma",
+     "explanation": "ก้อนหลายก้อนในตับ: ส่วนใหญ่เป็น metastasis · อีกอย่างคือ multifocal HCC",
+     "accepted": [
+      "metastatic carcinoma, multifocal hepatocellular carcinoma",
+      "metastasis and hcc"
+     ]
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE52",
+     "pages": [
+      12
+     ]
+    },
+    {
+     "paper": "OSPE52-KEY",
+     "pages": [
+      12
+     ]
+    }
+   ],
+   "tags": [
+    "liver tumor"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "ก้อนหลายก้อนในตับ: metastasis / multifocal HCC",
+   "image": "img/GI-52-OSPE-018.jpg",
+   "image_caption": "ตับตัดตามขวาง (gross)"
+  },
+  {
+   "id": "GI-52-OSPE-019",
+   "block": "GI",
+   "cohort": 52,
+   "n": 19,
+   "type": "OSPE",
+   "station": 19,
+   "stem": "Station 19. Light-microscope view of a stool preparation: a barrel-shaped, brown egg with a clear plug at each pole.",
+   "items": [
+    {
+     "id": "19.1",
+     "prompt": "What is the scientific name of this parasite?",
+     "format": "short",
+     "accepted": [
+      "trichuris trichiura",
+      "t. trichiura",
+      "whipworm"
+     ],
+     "key_text": "Trichuris trichiura",
+     "source_key": "Trichuris trichiura",
+     "explanation": "ไข่รูปถัง/มะนาวมี polar plug 2 ข้าง"
+    },
+    {
+     "id": "19.2",
+     "prompt": "Where is the normal habitat in humans?",
+     "format": "short",
+     "accepted": [
+      "large intestine",
+      "colon",
+      "cecum",
+      "caecum"
+     ],
+     "key_text": "Large intestine",
+     "source_key": "Large intestine",
+     "explanation": "ตัวเต็มวัยฝังที่ mucosa ของ cecum/colon (ฝังหัว)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE52",
+     "pages": [
+      13
+     ]
+    },
+    {
+     "paper": "OSPE52-KEY",
+     "pages": [
+      13
+     ]
+    }
+   ],
+   "tags": [
+    "Trichuris"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "Trichuris: ไข่ถัง 2 plug · large intestine",
+   "image": "img/GI-52-OSPE-019.jpg",
+   "image_caption": "ไข่พยาธิในอุจจาระ"
+  },
+  {
+   "id": "GI-52-OSPE-020",
+   "block": "GI",
+   "cohort": 52,
+   "n": 20,
+   "type": "OSPE",
+   "station": 20,
+   "stem": "Station 20. Light-microscope view of several slender larvae with a red arrow at a small cluster of cells in the mid-body.",
+   "items": [
+    {
+     "id": "20.1",
+     "prompt": "What is the scientific name of this parasite?",
+     "format": "short",
+     "accepted": [
+      "strongyloides stercoralis",
+      "s. stercoralis"
+     ],
+     "key_text": "Strongyloides stercoralis",
+     "source_key": "Strongyloides stercoralis",
+     "explanation": "rhabditiform larva หลอดอาหารสั้น (rhabditoid) + genital primordium"
+    },
+    {
+     "id": "20.2",
+     "prompt": "What is the structure indicated by the red arrow?",
+     "format": "short",
+     "accepted": [
+      "genital primordium"
+     ],
+     "key_text": "Genital primordium",
+     "source_key": "Genital primordium",
+     "explanation": "กลุ่มเซลล์เล็กกลางลำตัว ใช้แยก rhabditiform ของ Strongyloides จาก hookworm"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE52",
+     "pages": [
+      13
+     ]
+    },
+    {
+     "paper": "OSPE52-KEY",
+     "pages": [
+      13
+     ]
+    }
+   ],
+   "tags": [
+    "Strongyloides"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "Strongyloides rhabditiform: genital primordium",
+   "image": "img/GI-52-OSPE-020.jpg",
+   "image_caption": "ตัวอ่อนพยาธิ (ลูกศรแดง)"
+  },
+  {
+   "id": "GI-52-OSPE-021",
+   "block": "GI",
+   "cohort": 52,
+   "n": 21,
+   "type": "OSPE",
+   "station": 21,
+   "stem": "Station 21. Light-microscope view of a small, ovoid, light-brown egg with a lid and a shoulder at one pole.",
+   "items": [
+    {
+     "id": "21.1",
+     "prompt": "What is the scientific name of this parasite?",
+     "format": "short",
+     "accepted": [
+      "opisthorchis viverrini",
+      "o. viverrini",
+      "opisthorchis"
+     ],
+     "key_text": "Opisthorchis viverrini",
+     "source_key": "Opisthorchis viverrini",
+     "explanation": "ไข่เล็กรูปไข่ มี operculum และ shoulder"
+    },
+    {
+     "id": "21.2",
+     "prompt": "Where is the normal habitat of the adult stage?",
+     "format": "short",
+     "accepted": [
+      "bile duct",
+      "biliary tract",
+      "bile ducts"
+     ],
+     "key_text": "Bile duct",
+     "source_key": "Bile duct",
+     "explanation": "ตัวเต็มวัยอยู่ในท่อน้ำดีในตับ"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE52",
+     "pages": [
+      14
+     ]
+    },
+    {
+     "paper": "OSPE52-KEY",
+     "pages": [
+      14
+     ]
+    }
+   ],
+   "tags": [
+    "Opisthorchis"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "O. viverrini: ไข่เล็ก มีฝา · bile duct",
+   "image": "img/GI-52-OSPE-021.jpg",
+   "image_caption": "ไข่พยาธิในอุจจาระ"
+  },
+  {
+   "id": "GI-52-OSPE-022",
+   "block": "GI",
+   "cohort": 52,
+   "n": 22,
+   "type": "OSPE",
+   "station": 22,
+   "stem": "Station 22. Light-microscope view of an oval protozoan structure with a thin clear wall and several nuclei and fibrils inside.",
+   "items": [
+    {
+     "id": "22.0",
+     "prompt": "What is the organism? (shown in the key beside the picture)",
+     "format": "short",
+     "accepted": [
+      "giardia lamblia",
+      "giardia",
+      "giardia duodenalis"
+     ],
+     "key_text": "Giardia lamblia",
+     "source_key": "Giardia lamblia",
+     "explanation": "cyst รูปไข่ผนังบาง นิวเคลียส 4 อัน มี axoneme"
+    },
+    {
+     "id": "22.1",
+     "prompt": "What is the definitive host of this parasite?",
+     "format": "short",
+     "accepted": [
+      "human",
+      "humans",
+      "man"
+     ],
+     "key_text": "Human",
+     "source_key": "Human",
+     "explanation": "คนเป็น host เดียว (ไม่มี intermediate host)"
+    },
+    {
+     "id": "22.2",
+     "prompt": "What is the infective stage?",
+     "format": "short",
+     "accepted": [
+      "cyst"
+     ],
+     "key_text": "Cyst",
+     "source_key": "Cyst",
+     "explanation": "กิน cyst จากน้ำ/อาหารปนเปื้อน (trophozoite ติดต่อไม่ได้)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE52",
+     "pages": [
+      14
+     ]
+    },
+    {
+     "paper": "OSPE52-KEY",
+     "pages": [
+      14
+     ]
+    }
+   ],
+   "tags": [
+    "Giardia"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "Giardia: cyst = ระยะติดต่อ · host = คน",
+   "image": "img/GI-52-OSPE-022.jpg",
+   "image_caption": "โปรโตซัวในอุจจาระ"
+  },
+  {
+   "id": "GI-52-OSPE-023",
+   "block": "GI",
+   "cohort": 52,
+   "n": 23,
+   "type": "OSPE",
+   "station": 23,
+   "stem": "Station 23. Two rapid immunochip cassettes for C. difficile (control line C, antigen line Ag, toxin line Tox), before and after applying the stool sample. After: the C and Ag lines are visible, the Tox line is absent.",
+   "items": [
+    {
+     "id": "23.1",
+     "prompt": "What is the most appropriate interpretation?",
+     "format": "short",
+     "keywords_all": [
+      "gdh",
+      "pcr"
+     ],
+     "key_text": "GDH antigen positive, toxin EIA negative → C. difficile is present but no toxin was detected; PCR should be added",
+     "source_key": "GDH antigen positive, toxin EIA negative มีเชื้อ C. difficile แต่ไม่พบ toxin ควรทำ PCR เพิ่มเติม",
+     "explanation": "ตามอัลกอริทึม: GDH + / toxin EIA − → ทำ PCR เพื่อแยกเชื้อที่สร้าง toxin (CDI) กับ carrier",
+     "accepted": [
+      "gdh positive toxin negative do pcr",
+      "gdh antigen positive, toxin negative, pcr needed"
+     ],
+     "key_image": "img/GI-52-OSPE-023b-key.jpg",
+     "key_image_caption": "ไดอะแกรมในเฉลย: อัลกอริทึมตรวจ C. difficile (GDH/toxin A/B EIA → PCR)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE52",
+     "pages": [
+      15
+     ]
+    },
+    {
+     "paper": "OSPE52-KEY",
+     "pages": [
+      15
+     ]
+    }
+   ],
+   "tags": [
+    "C. difficile"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "GDH + / toxin − → PCR",
+   "image": "img/GI-52-OSPE-023.jpg",
+   "image_caption": "ชุดตรวจ C. difficile ก่อนและหลังหยดตัวอย่าง"
+  },
+  {
+   "id": "GI-52-OSPE-024",
+   "block": "GI",
+   "cohort": 52,
+   "n": 24,
+   "type": "OSPE",
+   "station": 24,
+   "stem": "Station 24. Left: photograph of a foot with a red serpiginous track on the skin. Right: light-microscope view of a thin-shelled oval egg with a segmented embryo.",
+   "items": [
+    {
+     "id": "24.1",
+     "prompt": "Identify the parasite causing this condition.",
+     "format": "short",
+     "accepted": [
+      "ancylostoma duodenale",
+      "hookworm",
+      "necator americanus"
+     ],
+     "key_text": "Ancylostoma duodenale",
+     "source_key": "Ancylostoma duodenale",
+     "explanation": "ไข่เปลือกบางใส มี blastomere · ตัวอ่อนไชผิวหนังเท้า (creeping eruption)",
+     "audit_note": "รอยคืบคลานบนผิวหนัง (cutaneous larva migrans) ปกติมาจาก Ancylostoma braziliense/caninum ของสัตว์ เฉลยตอบ A. duodenale"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE52",
+     "pages": [
+      15
+     ]
+    },
+    {
+     "paper": "OSPE52-KEY",
+     "pages": [
+      15
+     ]
+    }
+   ],
+   "tags": [
+    "hookworm"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "hookworm: ไข่เปลือกบาง · ไชผิวหนังเท้า",
+   "image": "img/GI-52-OSPE-024.jpg",
+   "image_caption": "รอยโรคที่เท้า และไข่พยาธิ"
+  }
+ ]
+}

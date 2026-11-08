@@ -1,0 +1,1042 @@
+{
+ "meta": {
+  "set_id": "51_OSPE",
+  "block": "GI",
+  "cohort": 51,
+  "type": "OSPE",
+  "title": "OSPE Gastrointestinal · Med PSU 51",
+  "time_limit_min": 34,
+  "generated_by": "auditor/tools/build_kf.py from auditor/data/work/gi_51_OSPE.kf.json — do not edit by hand"
+ },
+ "questions": [
+  {
+   "id": "GI-51-OSPE-001",
+   "block": "GI",
+   "cohort": 51,
+   "n": 1,
+   "type": "OSPE",
+   "station": 1,
+   "stem": "Station 1. H&E section of a hollow organ wall: a mucosa of long, straight, closely packed glands with a thin layer of smooth muscle at its base.",
+   "items": [
+    {
+     "id": "1.1",
+     "prompt": "Identify this organ",
+     "format": "short",
+     "accepted": [
+      "colon",
+      "large intestine",
+      "colon (large intestine)"
+     ],
+     "key_text": "Colon",
+     "source_key": "Colon",
+     "explanation": "ต่อมตรงยาวชิดกันเรียงเหมือนหลอดทดลอง ไม่มี villi มี goblet cell มาก"
+    },
+    {
+     "id": "1.2",
+     "prompt": "Point to the muscularis mucosae (the printed question says: in the real exam it was near an artery)",
+     "format": "short",
+     "keywords_all": [
+      "muscularis",
+      "smooth muscle",
+      "base"
+     ],
+     "key_text": "The thin layer of smooth muscle at the base of the mucosa, between the lamina propria and the submucosa (AI draft — the original is a pointing question with no written answer)",
+     "source_key": "(ต้นฉบับเป็นข้อชี้ ไม่มีคำตอบเป็นตัวหนังสือ) AI ร่างคำตอบ",
+     "explanation": "muscularis mucosae = ชั้นกล้ามเนื้อเรียบบางๆ ที่ฐานของ mucosa คั่นกับ submucosa",
+     "accepted": [
+      "thin smooth muscle layer below the mucosa",
+      "layer at the base of the mucosa"
+     ],
+     "audit_note": "ต้นฉบับ 1.2 สั่งให้ชี้ตำแหน่งในภาพ ไม่มีเฉลยเป็นข้อความ AI ร่างให้"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "OSPE51",
+     "pages": [
+      1
+     ]
+    },
+    {
+     "paper": "OSPE51-KEY",
+     "pages": [
+      1
+     ]
+    }
+   ],
+   "tags": [
+    "histology",
+    "colon"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "colon: ต่อมตรง ไม่มี villi · muscularis mucosae ฐาน mucosa",
+   "audit_note": "ข้อ 1.2 ต้นฉบับเป็นข้อชี้ ไม่มีเฉลย (AI ร่าง)",
+   "image": "img/GI-51-OSPE-001.jpg",
+   "image_caption": "ผนังลำไส้ใหญ่ (H&E)"
+  },
+  {
+   "id": "GI-51-OSPE-002",
+   "block": "GI",
+   "cohort": 51,
+   "n": 2,
+   "type": "OSPE",
+   "station": 2,
+   "stem": "Station 2. H&E section of a mucosal junction. Arrows label the muscularis mucosae and an area 'A' of branched coiled glands in the submucosa.",
+   "items": [
+    {
+     "id": "2.1",
+     "prompt": "Identify this organ",
+     "format": "short",
+     "accepted": [
+      "gastroduodenal junction",
+      "gastro-duodenal junction",
+      "pyloroduodenal junction",
+      "pylorus and duodenum"
+     ],
+     "key_text": "Gastroduodenal junction",
+     "source_key": "Gastroduodenal junction",
+     "explanation": "รอยต่อกระเพาะ–duodenum: villi ของ duodenum ต่อกับ pit ของกระเพาะ และมี Brunner's gland ใน submucosa"
+    },
+    {
+     "id": "2.2",
+     "prompt": "What is A?",
+     "format": "short",
+     "accepted": [
+      "brunner's glands",
+      "brunner glands",
+      "brunner's gland",
+      "brunners glands"
+     ],
+     "key_text": "Brunner's glands",
+     "source_key": "Brunner's glands",
+     "explanation": "ต่อม mucous ใน submucosa ของ duodenum หลั่งเมือกด่างปกป้องจากกรด"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE51",
+     "pages": [
+      1
+     ]
+    },
+    {
+     "paper": "OSPE51-KEY",
+     "pages": [
+      1
+     ]
+    }
+   ],
+   "tags": [
+    "histology",
+    "duodenum"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "gastroduodenal junction + Brunner's glands",
+   "image": "img/GI-51-OSPE-002.jpg",
+   "image_caption": "รอยต่อกระเพาะ–duodenum (H&E)"
+  },
+  {
+   "id": "GI-51-OSPE-003",
+   "block": "GI",
+   "cohort": 51,
+   "n": 3,
+   "type": "OSPE",
+   "station": 3,
+   "stem": "Station 3. H&E section of liver parenchyma with an outlined hepatic acinus; zones A, B and C are drawn as arcs from the central vein (A, bottom) to the portal triad (C, top).",
+   "items": [
+    {
+     "id": "3.1",
+     "prompt": "Which position is at the greatest risk of hypoxia?",
+     "format": "select",
+     "options": [
+      {
+       "key": "A",
+       "text": "A"
+      },
+      {
+       "key": "B",
+       "text": "B"
+      },
+      {
+       "key": "C",
+       "text": "C"
+      }
+     ],
+     "answer": [
+      "A"
+     ],
+     "max_answers": 1,
+     "key_text": "A (zone 3, nearest the central vein)",
+     "source_key": "A (zone 3, nearest the central vein)",
+     "explanation": "zone 3 ไกลหลอดเลือดที่เข้ามากที่สุด ได้ O₂ น้อยสุด ไวต่อ ischemia"
+    },
+    {
+     "id": "3.2",
+     "prompt": "Which position receives the most oxygen?",
+     "format": "select",
+     "options": [
+      {
+       "key": "A",
+       "text": "A"
+      },
+      {
+       "key": "B",
+       "text": "B"
+      },
+      {
+       "key": "C",
+       "text": "C"
+      }
+     ],
+     "answer": [
+      "C"
+     ],
+     "max_answers": 1,
+     "key_text": "C (zone 1, nearest the portal triad)",
+     "source_key": "C (zone 1, nearest the portal triad)",
+     "explanation": "zone 1 ติด hepatic artery/portal vein ได้เลือดมี O₂ สูงสุด"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE51",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "OSPE51-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [
+    "histology",
+    "liver",
+    "acinus"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "acinus: zone 1 (portal) O₂ สูงสุด · zone 3 (central vein) เสี่ยง hypoxia",
+   "image": "img/GI-51-OSPE-003.jpg",
+   "image_caption": "hepatic acinus พร้อมโซน A–C"
+  },
+  {
+   "id": "GI-51-OSPE-004",
+   "block": "GI",
+   "cohort": 51,
+   "n": 4,
+   "type": "OSPE",
+   "station": 4,
+   "stem": "Station 4. Two H&E sections of the GI wall, each with an arrow: A (upper) at a mucosal fold and gland base; B (lower, in red stain) at a deep recess of the mucosa.",
+   "items": [
+    {
+     "id": "4.1",
+     "prompt": "Identify this organ",
+     "format": "short",
+     "accepted": [
+      "rugae",
+      "stomach",
+      "gastric rugae",
+      "stomach (rugae)"
+     ],
+     "key_text": "Rugae (stomach)",
+     "source_key": "Rugae (stomach)",
+     "explanation": "rugae = รอยพับของ mucosa ของกระเพาะ (ผู้เฉลยเขียนว่า Rugae)",
+     "audit_note": "เฉลยเขียนเพียง 'Rugae' (ตอบเป็นโครงสร้างของกระเพาะ)"
+    },
+    {
+     "id": "4.2",
+     "prompt": "What are the pointed structures?",
+     "format": "short",
+     "accepted": [
+      "paneth cell",
+      "paneth cells",
+      "paneth"
+     ],
+     "key_text": "Paneth cell",
+     "source_key": "Paneth cell",
+     "explanation": "เซลล์ที่ฐาน crypt มี eosinophilic granule ใหญ่ หลั่ง lysozyme/defensin",
+     "audit_note": "Paneth cell พบที่ crypt ของลำไส้เล็ก (ไม่ใช่กระเพาะ) ภาพอ้างอิงในไฟล์ชัดไม่พอจะตรวจซ้ำ เก็บตามเฉลยต้นฉบับ"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE51",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "OSPE51-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [
+    "histology"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "rugae = รอยพับ mucosa กระเพาะ · Paneth cell ที่ crypt",
+   "audit_note": "ภาพ A, B ซ้อนกัน 2 ภาพในหน้าเดียว ตัดรวมกรอบเดียว · เฉลยข้อ 4.2 ตามต้นฉบับ",
+   "image": "img/GI-51-OSPE-004.jpg",
+   "image_caption": "2 ภาพ A และ B พร้อมลูกศร"
+  },
+  {
+   "id": "GI-51-OSPE-005",
+   "block": "GI",
+   "cohort": 51,
+   "n": 5,
+   "type": "OSPE",
+   "station": 5,
+   "stem": "Station 5. H&E section through a wall of a muscular tube; numbers 1–7 label layers from the lumen outwards and a mucosal nodule is seen on the right.",
+   "items": [
+    {
+     "id": "5.1",
+     "prompt": "Identify this organ",
+     "format": "short",
+     "accepted": [
+      "les",
+      "lower esophageal sphincter",
+      "lower oesophageal sphincter",
+      "esophagogastric junction"
+     ],
+     "key_text": "LES (lower esophageal sphincter)",
+     "source_key": "LES (lower esophageal sphincter)",
+     "explanation": "บริเวณหูรูดล่างของหลอดอาหาร (รอยต่อกับกระเพาะ)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE51",
+     "pages": [
+      3
+     ]
+    },
+    {
+     "paper": "OSPE51-KEY",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [
+    "histology",
+    "esophagus"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "LES: รอยต่อ esophagus–stomach",
+   "image": "img/GI-51-OSPE-005.jpg",
+   "image_caption": "ผนังท่อกล้ามเนื้อ มีหมายเลข 1–7"
+  },
+  {
+   "id": "GI-51-OSPE-006",
+   "block": "GI",
+   "cohort": 51,
+   "n": 6,
+   "type": "OSPE",
+   "station": 6,
+   "stem": "Station 6. Gross photograph of a gastric mucosa with a sharply demarcated, punched-out defect with a clean base.",
+   "items": [
+    {
+     "id": "6.1",
+     "prompt": "Give the diagnosis",
+     "format": "short",
+     "accepted": [
+      "peptic ulcer",
+      "peptic ulcer disease",
+      "gastric ulcer",
+      "pud"
+     ],
+     "key_text": "Peptic ulcer",
+     "source_key": "Peptic ulcer",
+     "explanation": "แผลลึกขอบชัด ฐานสะอาด"
+    },
+    {
+     "id": "6.2",
+     "prompt": "Which organism causes this disease?",
+     "format": "short",
+     "accepted": [
+      "helicobacter pylori",
+      "h. pylori",
+      "h pylori"
+     ],
+     "key_text": "Helicobacter pylori",
+     "source_key": "Helicobacter pylori",
+     "explanation": "สาเหตุหลัก (รองคือ NSAID)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE51",
+     "pages": [
+      3
+     ]
+    },
+    {
+     "paper": "OSPE51-KEY",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [
+    "peptic ulcer"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "peptic ulcer · H. pylori",
+   "image": "img/GI-51-OSPE-006.jpg",
+   "image_caption": "แผลกระเพาะ (gross)"
+  },
+  {
+   "id": "GI-51-OSPE-007",
+   "block": "GI",
+   "cohort": 51,
+   "n": 7,
+   "type": "OSPE",
+   "station": 7,
+   "stem": "Station 7. Gross photograph of an opened gallbladder filled with numerous small black stones next to a centimeter ruler.",
+   "items": [
+    {
+     "id": "7.1",
+     "prompt": "Give the diagnosis and identify the specific type in this picture",
+     "format": "short",
+     "accepted": [
+      "cholelithiasis",
+      "gallstones",
+      "pigment stones"
+     ],
+     "key_text": "Cholelithiasis (pigmented stones)",
+     "source_key": "Cholelithiasis (pigmented stones)",
+     "explanation": "นิ่วสีดำเล็กจำนวนมาก = pigment stone (เกี่ยวกับ hemolysis)",
+     "audit_note": "เฉลยเขียนเฉพาะ 'Cholelithiasis' แต่ปัจจัยเสี่ยงที่ให้ (hemolytic anemia, biliary infection) บ่งชี้ pigmented stone"
+    },
+    {
+     "id": "7.2",
+     "prompt": "Give 2 associated risk factors",
+     "format": "short",
+     "keywords_all": [
+      "hemoly",
+      "biliary"
+     ],
+     "key_text": "1. Chronic hemolytic anemias 2. Biliary infection",
+     "source_key": "1. Chronic hemolytic anemias 2. Biliary infection",
+     "explanation": "ปัจจัยเสี่ยงของ pigment stone: chronic hemolysis, biliary infection (อื่นๆ: alcoholic cirrhosis, อายุมาก)",
+     "accepted": [
+      "chronic hemolytic anemia and biliary infection",
+      "hemolysis, biliary infection"
+     ]
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE51",
+     "pages": [
+      4
+     ]
+    },
+    {
+     "paper": "OSPE51-KEY",
+     "pages": [
+      4
+     ]
+    }
+   ],
+   "tags": [
+    "gallstones"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "นิ่วสีดำ = pigment stone · hemolysis + biliary infection",
+   "image": "img/GI-51-OSPE-007.jpg",
+   "image_caption": "ถุงน้ำดีที่มีนิ่วสีดำ (gross)"
+  },
+  {
+   "id": "GI-51-OSPE-008",
+   "block": "GI",
+   "cohort": 51,
+   "n": 8,
+   "type": "OSPE",
+   "station": 8,
+   "stem": "Station 8. H&E section showing nests of atypical squamous cells with keratinization.",
+   "items": [
+    {
+     "id": "8.1",
+     "prompt": "Give the diagnosis",
+     "format": "short",
+     "accepted": [
+      "squamous cell carcinoma",
+      "scc"
+     ],
+     "key_text": "Squamous cell carcinoma",
+     "source_key": "Squamous cell carcinoma",
+     "explanation": "keratin pearl + intercellular bridge"
+    },
+    {
+     "id": "8.2",
+     "prompt": "Describe the histology",
+     "format": "short",
+     "keywords_all": [
+      "keratin",
+      "differentiated"
+     ],
+     "key_text": "Moderate to well differentiated; keratin pearl",
+     "source_key": "Moderate to well differentiated; keratin pearl",
+     "explanation": "เซลล์สร้าง keratin เป็นวงซ้อน (keratin pearl)",
+     "accepted": [
+      "keratin pearls",
+      "well differentiated"
+     ]
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE51",
+     "pages": [
+      4
+     ]
+    },
+    {
+     "paper": "OSPE51-KEY",
+     "pages": [
+      4
+     ]
+    }
+   ],
+   "tags": [
+    "squamous cell carcinoma"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "SCC: keratin pearl",
+   "image": "img/GI-51-OSPE-008.jpg",
+   "image_caption": "มะเร็งเซลล์สความัส (H&E)"
+  },
+  {
+   "id": "GI-51-OSPE-009",
+   "block": "GI",
+   "cohort": 51,
+   "n": 9,
+   "type": "OSPE",
+   "station": 9,
+   "stem": "Station 9. H&E section of the colon wall with crowded, back-to-back, irregular glands lined by hyperchromatic cells invading beneath the mucosa.",
+   "items": [
+    {
+     "id": "9.1",
+     "prompt": "Give the diagnosis",
+     "format": "short",
+     "accepted": [
+      "colorectal adenocarcinoma",
+      "colon adenocarcinoma",
+      "adenocarcinoma of colon",
+      "adenocarcinoma",
+      "colorectal cancer"
+     ],
+     "key_text": "Colorectal adenocarcinoma",
+     "source_key": "Colorectal adenocarcinoma",
+     "explanation": "ต่อมผิดปกติหนาแน่นลุกลามเข้าชั้นลึก"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE51",
+     "pages": [
+      5
+     ]
+    },
+    {
+     "paper": "OSPE51-KEY",
+     "pages": [
+      5
+     ]
+    }
+   ],
+   "tags": [
+    "colon cancer"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "adenocarcinoma ลำไส้ใหญ่",
+   "image": "img/GI-51-OSPE-009.jpg",
+   "image_caption": "มะเร็งต่อมลำไส้ใหญ่ (H&E)"
+  },
+  {
+   "id": "GI-51-OSPE-010",
+   "block": "GI",
+   "cohort": 51,
+   "n": 10,
+   "type": "OSPE",
+   "station": 10,
+   "stem": "Station 10. Gross photograph of a sliced liver with multiple well-circumscribed, pale yellow nodules scattered through the parenchyma.",
+   "items": [
+    {
+     "id": "10.1",
+     "prompt": "Describe this gross pathology",
+     "format": "short",
+     "keywords_all": [
+      "nodular",
+      "multiple"
+     ],
+     "key_text": "Multiple yellow nodular masses scattered throughout the hepatic parenchyma",
+     "source_key": "Multiple yellow nodular masses scattered throughout the hepatic parenchyma",
+     "explanation": "ก้อนสีเหลืองซีดหลายก้อน ขอบชัด กระจายทั่วตับ",
+     "accepted": [
+      "multiple yellow nodules scattered in the liver"
+     ]
+    },
+    {
+     "id": "10.2",
+     "prompt": "Give 2 differential diagnoses",
+     "format": "short",
+     "keywords_all": [
+      "hcc",
+      "cholangiocarcinoma"
+     ],
+     "key_text": "HCC, cholangiocarcinoma",
+     "source_key": "HCC, cholangiocarcinoma",
+     "explanation": "รุ่น 52 (ภาพเดียวกัน) ตอบ metastatic carcinoma / multifocal HCC · ในรุ่นนี้ตอบ HCC, cholangiocarcinoma",
+     "accepted": [
+      "hcc and cholangiocarcinoma",
+      "hepatocellular carcinoma, cholangiocarcinoma",
+      "metastatic carcinoma",
+      "metastasis"
+     ],
+     "audit_note": "ภาพเดียวกับรุ่น 52 ข้อ 18 ซึ่งเฉลยตอบ metastatic carcinoma และ multifocal HCC"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE51",
+     "pages": [
+      5
+     ]
+    },
+    {
+     "paper": "OSPE51-KEY",
+     "pages": [
+      5
+     ]
+    }
+   ],
+   "tags": [
+    "liver tumor"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "ก้อนหลายก้อนในตับ: metastasis / HCC / cholangiocarcinoma",
+   "image": "img/GI-51-OSPE-010.jpg",
+   "image_caption": "ตับตัดตามขวาง (gross)"
+  },
+  {
+   "id": "GI-51-OSPE-011",
+   "block": "GI",
+   "cohort": 51,
+   "n": 11,
+   "type": "OSPE",
+   "station": 11,
+   "stem": "Station 11. Gross photograph of a longitudinally opened, thick-walled blind-ended tube with reddened, ulcerated lining and a yellow-white exudate; two yellow lines mark an area of the wall.",
+   "items": [
+    {
+     "id": "11.1",
+     "prompt": "Describe this gross pathology",
+     "format": "short",
+     "keywords_all": [
+      "ulcer",
+      "exudate"
+     ],
+     "key_text": "Mucosal ulceration; fibrinopurulent serosal exudate",
+     "source_key": "Mucosal ulceration; fibrinopurulent serosal exudate",
+     "explanation": "เยื่อบุเป็นแผล ผิว serosa มีหนอง/ไฟบริน",
+     "accepted": [
+      "mucosal ulceration, fibrinopurulent serosal exudate"
+     ]
+    },
+    {
+     "id": "11.2",
+     "prompt": "Give the diagnosis",
+     "format": "short",
+     "accepted": [
+      "acute appendicitis",
+      "appendicitis"
+     ],
+     "key_text": "Acute appendicitis",
+     "source_key": "Acute appendicitis",
+     "explanation": "neutrophil แทรกผนังไส้ติ่ง"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE51",
+     "pages": [
+      6
+     ]
+    },
+    {
+     "paper": "OSPE51-KEY",
+     "pages": [
+      6
+     ]
+    }
+   ],
+   "tags": [
+    "appendicitis"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "acute appendicitis",
+   "image": "img/GI-51-OSPE-011.jpg",
+   "image_caption": "ไส้ติ่งที่ตัดตามยาว (gross)"
+  },
+  {
+   "id": "GI-51-OSPE-012",
+   "block": "GI",
+   "cohort": 51,
+   "n": 12,
+   "type": "OSPE",
+   "station": 12,
+   "stem": "Station 12. A stool occult-blood test card (guaiac) after developing: blue-green color in the two stool windows (blue arrow) and a red control spot (red arrow).",
+   "items": [
+    {
+     "id": "12.1",
+     "prompt": "Which blood component causes the blue result?",
+     "format": "short",
+     "accepted": [
+      "hemoglobin",
+      "haemoglobin",
+      "heme",
+      "hb"
+     ],
+     "key_text": "Hemoglobin",
+     "source_key": "Hemoglobin",
+     "explanation": "heme (peroxidase-like) ออกซิไดซ์ guaiac ได้สีฟ้า"
+    },
+    {
+     "id": "12.2",
+     "prompt": "Which kind of food can cause a false positive?",
+     "format": "short",
+     "keywords_all": [
+      "peroxidase",
+      "red meat",
+      "เนื้อแดง"
+     ],
+     "key_text": "Foods containing peroxidase, e.g., red meat",
+     "source_key": "อาหารที่มี peroxidase เช่น เนื้อแดง",
+     "explanation": "ผักบางชนิด (เช่น หัวไชเท้า) และเนื้อแดงทำให้ผลบวกปลอม · vitamin C ทำให้ลบปลอม",
+     "accepted": [
+      "red meat",
+      "raw vegetables",
+      "foods with peroxidase"
+     ]
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE51",
+     "pages": [
+      6
+     ]
+    },
+    {
+     "paper": "OSPE51-KEY",
+     "pages": [
+      6
+     ]
+    }
+   ],
+   "tags": [
+    "FOBT"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "guaiac: heme → ฟ้า · false positive: peroxidase (เนื้อแดง ผักบางชนิด)",
+   "image": "img/GI-51-OSPE-012.jpg",
+   "image_caption": "การ์ดตรวจเลือดแฝงในอุจจาระ"
+  },
+  {
+   "id": "GI-51-OSPE-013",
+   "block": "GI",
+   "cohort": 51,
+   "n": 13,
+   "type": "OSPE",
+   "station": 13,
+   "stem": "Station 13. Draw the result of a positive C. difficile toxin A/B test. (The answer sheet is an empty box; the key adds a picture of a rapid test cassette.)",
+   "items": [
+    {
+     "id": "13.1",
+     "prompt": "Draw (or describe) a positive result for GDH and toxin A/B on the cassette.",
+     "format": "short",
+     "keywords_all": [
+      "gdh",
+      "toxin"
+     ],
+     "key_text": "A cassette showing GDH positive, toxin A positive and toxin B positive (lines visible for GDH, toxin A and toxin B, plus the control line)",
+     "source_key": "(ข้อวาดรูป) เฉลยเป็นรูปตลับตรวจ: GDH Positive · Toxin A Positive · Toxin B Positive",
+     "explanation": "ให้ตัดสินเองด้วยปุ่ม 'ตัดสินเอง' เพราะเป็นข้อวาดรูป",
+     "key_image": "img/GI-51-OSPE-013-key.jpg",
+     "key_image_caption": "เฉลยต้นฉบับ: ตลับตรวจ C. difficile ผลบวก (GDH +, toxin A +, toxin B +)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE51",
+     "pages": [
+      7
+     ]
+    },
+    {
+     "paper": "OSPE51-KEY",
+     "pages": [
+      7
+     ]
+    }
+   ],
+   "tags": [
+    "C. difficile"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "C. difficile rapid test: GDH + toxin A + toxin B"
+  },
+  {
+   "id": "GI-51-OSPE-014",
+   "block": "GI",
+   "cohort": 51,
+   "n": 14,
+   "type": "OSPE",
+   "station": 14,
+   "stem": "Station 14. Light-microscope view of a thin-shelled oval egg with a segmented embryo.",
+   "items": [
+    {
+     "id": "14.1",
+     "prompt": "Identify the scientific name of this parasite",
+     "format": "short",
+     "accepted": [
+      "ancylostoma duodenale",
+      "hookworm",
+      "a. duodenale",
+      "ancylostoma"
+     ],
+     "key_text": "Ancylostoma duodenale",
+     "source_key": "Ancylostoma duodenale",
+     "explanation": "ไข่เปลือกบางใส มี blastomere 4–8 เซลล์"
+    },
+    {
+     "id": "14.2",
+     "prompt": "What stage is this parasite?",
+     "format": "short",
+     "accepted": [
+      "egg",
+      "ova"
+     ],
+     "key_text": "Egg",
+     "source_key": "Egg",
+     "explanation": "ไข่ในอุจจาระ"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE51",
+     "pages": [
+      7
+     ]
+    },
+    {
+     "paper": "OSPE51-KEY",
+     "pages": [
+      7
+     ]
+    }
+   ],
+   "tags": [
+    "hookworm"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "hookworm egg: เปลือกบางใส",
+   "image": "img/GI-51-OSPE-014.jpg",
+   "image_caption": "ไข่พยาธิในอุจจาระ"
+  },
+  {
+   "id": "GI-51-OSPE-015",
+   "block": "GI",
+   "cohort": 51,
+   "n": 15,
+   "type": "OSPE",
+   "station": 15,
+   "stem": "Station 15. Light-microscope view of a large, ovoid, brown cyst with a thick wall covered by fine hair-like cilia.",
+   "items": [
+    {
+     "id": "15.1",
+     "prompt": "Identify the scientific name of this parasite",
+     "format": "short",
+     "accepted": [
+      "balantidium coli",
+      "b. coli"
+     ],
+     "key_text": "Balantidium coli",
+     "source_key": "Balantidium coli",
+     "explanation": "โปรโตซัวชนิดมี cilia ขนาดใหญ่ที่สุดที่ก่อโรคในคน (cyst มีผนังหนา)"
+    },
+    {
+     "id": "15.2",
+     "prompt": "What is the habitat of this parasite?",
+     "format": "short",
+     "accepted": [
+      "colon",
+      "large intestine",
+      "large bowel"
+     ],
+     "key_text": "Colon",
+     "source_key": "Colon",
+     "explanation": "อาศัยใน colon ติดจากหมู"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE51",
+     "pages": [
+      7
+     ]
+    },
+    {
+     "paper": "OSPE51-KEY",
+     "pages": [
+      7
+     ]
+    }
+   ],
+   "tags": [
+    "Balantidium coli"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "Balantidium coli: ciliate · colon",
+   "image": "img/GI-51-OSPE-015.jpg",
+   "image_caption": "โปรโตซัวในอุจจาระ"
+  },
+  {
+   "id": "GI-51-OSPE-016",
+   "block": "GI",
+   "cohort": 51,
+   "n": 16,
+   "type": "OSPE",
+   "station": 16,
+   "stem": "Station 16. Light-microscope view of an oval protozoal structure with a thin wall and internal fibrils.",
+   "items": [
+    {
+     "id": "16.1",
+     "prompt": "Identify the scientific name of this parasite",
+     "format": "short",
+     "accepted": [
+      "giardia lamblia",
+      "giardia",
+      "giardia duodenalis"
+     ],
+     "key_text": "Giardia lamblia",
+     "source_key": "Giardia lamblia",
+     "explanation": "cyst รูปไข่ผนังบาง มีนิวเคลียส 4 อัน"
+    },
+    {
+     "id": "16.2",
+     "prompt": "What stage is this parasite?",
+     "format": "short",
+     "accepted": [
+      "cyst"
+     ],
+     "key_text": "Cyst",
+     "source_key": "Cyst",
+     "explanation": "ระยะติดต่อ"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE51",
+     "pages": [
+      8
+     ]
+    },
+    {
+     "paper": "OSPE51-KEY",
+     "pages": [
+      8
+     ]
+    }
+   ],
+   "tags": [
+    "Giardia"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "Giardia cyst",
+   "image": "img/GI-51-OSPE-016.jpg",
+   "image_caption": "โปรโตซัวในอุจจาระ"
+  },
+  {
+   "id": "GI-51-OSPE-017",
+   "block": "GI",
+   "cohort": 51,
+   "n": 17,
+   "type": "OSPE",
+   "station": 17,
+   "stem": "Station 17. Light-microscope view of three colorless, oval eggs, one flattened on one side, with a clear shell, containing a coiled larva.",
+   "items": [
+    {
+     "id": "17.1",
+     "prompt": "Give the scientific name of this parasite",
+     "format": "short",
+     "accepted": [
+      "enterobius vermicularis",
+      "e. vermicularis",
+      "pinworm"
+     ],
+     "key_text": "Enterobius vermicularis",
+     "source_key": "Enterobius vermicularis",
+     "explanation": "ไข่รูปไข่แบนด้านหนึ่ง (D-shaped) มีตัวอ่อนข้างใน"
+    },
+    {
+     "id": "17.2",
+     "prompt": "Where is their habitat in humans?",
+     "format": "short",
+     "accepted": [
+      "large intestine",
+      "colon",
+      "cecum",
+      "large bowel"
+     ],
+     "key_text": "Large intestine",
+     "source_key": "Large intestine",
+     "explanation": "ตัวเต็มวัยอยู่ cecum และ colon ตัวเมียออกมาวางไข่รอบทวาร"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE51",
+     "pages": [
+      8
+     ]
+    },
+    {
+     "paper": "OSPE51-KEY",
+     "pages": [
+      8
+     ]
+    }
+   ],
+   "tags": [
+    "Enterobius"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "Enterobius: ไข่แบนข้างหนึ่ง · large intestine",
+   "image": "img/GI-51-OSPE-017.jpg",
+   "image_caption": "ไข่พยาธิเข็มหมุด"
+  }
+ ]
+}

@@ -1,4 +1,5 @@
-"""KF set → MedLib: auditor/data/work/<set>.kf.json → data/blocks/<BLOCK>/exams/<cohort>_KF.json + block.json papers.
+"""KF / OSPE set → MedLib: auditor/data/work/<set>.kf.json → data/blocks/<BLOCK>/exams/<cohort>_<TYPE>.json + block.json papers.
+The type (KF or OSPE) comes from the set's inventory entry; an OSPE work question keeps its station text in "case" and is written as stem + station.
 
 Usage:  .venv/Scripts/python auditor/tools/build_kf.py --set end_52_KF
 
@@ -27,7 +28,10 @@ def main():
     work = load(AUD / "data" / "work" / f"{a.set}.kf.json")
     B, c = meta["block"].upper(), int(meta.get("medlib_cohort") or meta["cohort"])
     bdir = ROOT / "data" / "blocks" / B
-    pid = {"exam": f"KF{c}", "key": f"KF{c}-KEY"}
+    T = meta["type"]  # KF or OSPE
+    pid = {"exam": f"{T}{c}", "key": f"{T}{c}-KEY"}
+    m_ = re.search(r"\[Med PSU ([^\]]+)\]", meta.get("original_name", ""))
+    label = m_.group(1) if m_ else str(c)  # combined archives show their whole range (e.g. 37-43)
 
     used, qs = set(), []
     for w in work["questions"]:
@@ -38,9 +42,16 @@ def main():
                     if not (bdir / it[fld]).exists():
                         sys.exit(f"ERROR: ข้อ {n} item {it['id']}: ไม่มีไฟล์ {it[fld]} — รัน crop_images.py --set {a.set}")
                     used.add(it[fld])
-        q = {"id": f"{B}-{c}-KF-{n:03d}", "block": B, "cohort": c, "n": n, "type": "KF", "case": w["case"], "items": w["items"],
+        q = {"id": f"{B}-{c}-{T}-{n:03d}", "block": B, "cohort": c, "n": n, "type": T}
+        if T == "OSPE":
+            q["station"] = w.get("station", n)
+            q["stem"] = w["case"]
+        else:
+            q["case"] = w["case"]
+        q |= {"items": w["items"],
              "answer_status": w.get("answer_status", "verified"),
-             "refs": [{"paper": pid["exam"], "pages": [w.get("exam_page", w["page"])]}, {"paper": pid["key"], "pages": [w["page"]]}],  # exam_page when the key PDF paginates differently
+             "refs": [{"paper": pid["exam"], "pages": [w.get("exam_page", w["page"])]}]
+                     + ([{"paper": pid["key"], "pages": [w["page"]]}] if "key" in meta["files"] else []),  # exam_page when the key PDF paginates differently; no key ref when the set has no key file
              "tags": w.get("tags", []), "source": "claude-mcp"}
         for k in ("key_concept", "explanation", "audit_note", "image", "image_caption"):
             if w.get(k):
@@ -54,25 +65,27 @@ def main():
         if qid.rsplit("_", 1)[0] != a.set:
             continue
         num = re.fullmatch(r"(\d+)([a-z]*)", qid.rsplit("_", 1)[1])  # "010b" = 2nd picture of question 10
-        f = f"img/{B}-{c}-KF-{int(num.group(1)):03d}{num.group(2)}{'-key' if im.get('role') == 'key' else ''}.jpg"
+        f = f"img/{B}-{c}-{T}-{int(num.group(1)):03d}{num.group(2)}{'-key' if im.get('role') == 'key' else ''}.jpg"
         if f not in used:
             sys.exit(f"ERROR: รูป {f} ({qid}) อยู่ใน images.json แต่ไม่มีข้อไหนใช้")
 
-    set_name = f"{c}_KF"
-    out = {"meta": {"set_id": set_name, "block": B, "cohort": c, "type": "KF",
-                    "title": f"KF {meta['block_name']} · Med PSU {c}",
+    set_name = f"{c}_{T}"
+    out = {"meta": {"set_id": set_name, "block": B, "cohort": c, "type": T,
+                    "title": f"{T} {meta['block_name']} · Med PSU {label}",
                     "generated_by": f"auditor/tools/build_kf.py from auditor/data/work/{a.set}.kf.json — do not edit by hand"},
            "questions": qs}
     tl = work.get("time_limit_min") or meta.get("time_limit_min")
     if tl:  # leave it out when the paper does not say (the app treats a missing time as unknown)
+        gen = out["meta"].pop("generated_by")
         out["meta"]["time_limit_min"] = tl
+        out["meta"]["generated_by"] = gen
     (bdir / "exams" / f"{set_name}.json").write_text(json.dumps(out, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
 
     block = load(bdir / "block.json")
     papers = [x for x in block.get("papers", []) if x["id"] not in pid.values()]
     for role, f in meta["files"].items():
-        papers.append({"id": pid[role], "title": f"{'เฉลย ' if role == 'key' else ''}KF {meta['block_name']} [Med PSU {c}]", "cohort": c,
-                       "type": "KF", "role": role, "pages": f["pages"], "drive_file_id": f["drive_file_id"], "drive_path": f["drive_path"]})
+        papers.append({"id": pid[role], "title": f"{'เฉลย ' if role == 'key' else ''}{T} {meta['block_name']} [Med PSU {label}]", "cohort": c,
+                       "type": T, "role": role, "pages": f["pages"], "drive_file_id": f["drive_file_id"], "drive_path": f["drive_path"]})
     papers.sort(key=lambda x: (-x["cohort"], x["type"], x["role"] != "exam"))
     block["papers"] = papers
     if set_name not in block["exam_sets"]:
