@@ -1,0 +1,1471 @@
+{
+ "meta": {
+  "set_id": "49_KF",
+  "block": "GI",
+  "cohort": 49,
+  "type": "KF",
+  "title": "KF Gastrointestinal · Med PSU 49",
+  "generated_by": "auditor/tools/build_kf.py from auditor/data/work/gi_49_KF.kf.json — do not edit by hand",
+  "time_limit_min": 180
+ },
+ "questions": [
+  {
+   "id": "GI-49-KF-001",
+   "block": "GI",
+   "cohort": 49,
+   "n": 1,
+   "type": "KF",
+   "case": "Answer the following questions from the figure: two recordings of intestinal smooth-muscle electrical activity over 30 seconds. Trace A oscillates regularly between about −28 and −32 mV; trace B is a flat line at −58 mV.",
+   "items": [
+    {
+     "id": "1.1a",
+     "prompt": "The tracing of electrical activity shown in Figure A is called ______",
+     "format": "short",
+     "accepted": [
+      "slow wave",
+      "slow waves",
+      "basic electrical rhythm",
+      "ber"
+     ],
+     "key_text": "Slow wave",
+     "source_key": "Slow wave",
+     "explanation": "trace A = slow wave (BER)"
+    },
+    {
+     "id": "1.1b",
+     "prompt": "It is absent in Figure B because the intestinal smooth muscle is deficient in a group of cells called ______",
+     "format": "short",
+     "accepted": [
+      "interstitial cells of cajal",
+      "interstitial cell of cajal",
+      "icc"
+     ],
+     "key_text": "Interstitial cells of Cajal",
+     "source_key": "Interstitial cells of Cajal",
+     "explanation": "ไม่มี ICC (pacemaker) → ไม่มี slow wave"
+    },
+    {
+     "id": "1.2a",
+     "prompt": "If duodenal smooth muscle is stimulated, the maximal frequency of contraction in Figure A is ______ times/minute",
+     "format": "short",
+     "keywords_all": [
+      "48"
+     ],
+     "key_text": "48 times/min",
+     "source_key": "48 times/min",
+     "explanation": "slow wave ~24 รอบใน 30 วินาที = 48 รอบ/นาที (ตำราทั่วไป duodenum ~12 ครั้ง/นาที แต่ข้อนี้เฉลยตามกราฟ)"
+    },
+    {
+     "id": "1.2b",
+     "prompt": "… and in Figure B is ______ times/minute",
+     "format": "short",
+     "keywords_all": [
+      "0"
+     ],
+     "key_text": "0 times/min",
+     "source_key": "0 times/min",
+     "explanation": "ไม่มี slow wave → ไม่มีการหดตัวเป็นจังหวะ",
+     "accepted": [
+      "0",
+      "zero",
+      "none"
+     ]
+    },
+    {
+     "id": "1.3",
+     "prompt": "Give one example of a neurotransmitter that can stimulate duodenal smooth muscle.",
+     "format": "short",
+     "accepted": [
+      "acetylcholine",
+      "ach",
+      "substance p",
+      "serotonin"
+     ],
+     "key_text": "Acetylcholine",
+     "source_key": "Acetylcholine",
+     "explanation": "ACh จาก excitatory enteric neuron / parasympathetic"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF49",
+     "pages": [
+      1
+     ]
+    },
+    {
+     "paper": "KF49-KEY",
+     "pages": [
+      1
+     ]
+    }
+   ],
+   "tags": [
+    "motility",
+    "slow wave",
+    "ICC"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "slow wave จาก ICC · ACh กระตุ้น",
+   "audit_note": "ข้อสอบรุ่น 49 เป็นรูปเดียวกับรุ่น 50 ถามต่างกัน: ที่นี่ 1.3 ถามสารที่กระตุ้น (รุ่น 50 ถามสารที่ยับยั้ง)",
+   "image": "img/GI-49-KF-001.jpg",
+   "image_caption": "กราฟไฟฟ้ากล้ามเนื้อเรียบลำไส้ 30 วินาที: Figure A และ B"
+  },
+  {
+   "id": "GI-49-KF-002",
+   "block": "GI",
+   "cohort": 49,
+   "n": 2,
+   "type": "KF",
+   "case": "A 45-year-old man has drunk alcohol for 10 years. His history includes loss of appetite and mild abdominal discomfort. He presents with a sore tongue (glossitis). Examination shows cracks of the lip and the corner of the mouth (angular stomatitis). The physician diagnoses nutrient deficiency.",
+   "items": [
+    {
+     "id": "2.1",
+     "prompt": "What is the cause of this condition?",
+     "format": "short",
+     "keywords_all": [
+      "b2"
+     ],
+     "key_text": "Alcohol reduces absorption of vitamin B₂ (riboflavin) and loss of appetite lowers vitamin B₂ intake",
+     "source_key": "Alcohol ทำให้ดูดซึม Vitamin B2 ลดลง + lost appetite ทำให้ได้รับ Vitamin B2 น้อย",
+     "explanation": "angular stomatitis + glossitis = ขาด riboflavin (B₂) · ผู้ดื่มเหล้าขาดวิตามิน B หลายตัว",
+     "accepted": [
+      "vitamin b2 deficiency",
+      "riboflavin deficiency",
+      "riboflavin",
+      "vitamin b2",
+      "vitamin b₂ deficiency"
+     ]
+    },
+    {
+     "id": "2.2",
+     "prompt": "Name 1 type of food that helps treat this condition.",
+     "format": "short",
+     "accepted": [
+      "milk",
+      "egg",
+      "eggs",
+      "liver",
+      "นม",
+      "ไข่",
+      "ตับ",
+      "cheese",
+      "leafy vegetables",
+      "mushrooms",
+      "almonds",
+      "legumes",
+      "kidney"
+     ],
+     "key_text": "Milk, egg, liver (also cheese, leafy vegetables, legumes, mushrooms, almonds)",
+     "source_key": "นม, ไข่, ตับ",
+     "explanation": "แหล่ง riboflavin: นม ไข่ ตับ ชีส ผักใบเขียว ถั่ว เห็ด อัลมอนด์"
+    },
+    {
+     "id": "2.3",
+     "prompt": "State the role and function of the related nutrient (keywords: metabolic reaction and enzyme).",
+     "format": "short",
+     "keywords_all": [
+      "electron",
+      "flavoprotein"
+     ],
+     "key_text": "Electron transport chain; flavoprotein enzymes (FAD, FMN cofactors)",
+     "source_key": "Electron transport chain; flavoprotein enzymes (FAD, FMN cofactors)",
+     "explanation": "B₂ เป็นส่วนประกอบของ FAD และ FMN ซึ่งเป็น cofactor ของเอนไซม์กลุ่ม flavoprotein ใน electron transport chain, TCA cycle, β-oxidation",
+     "key_image": "img/GI-49-KF-002-key.jpg",
+     "key_image_caption": "สไลด์ในเฉลย: ภาวะขาดสารอาหารในผู้ติดแอลกอฮอล์ และ Vitamin B₂ (riboflavin)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF49",
+     "pages": [
+      1
+     ]
+    },
+    {
+     "paper": "KF49-KEY",
+     "pages": [
+      1
+     ]
+    }
+   ],
+   "tags": [
+    "vitamin B2",
+    "alcohol"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "ดื่มเหล้า + angular stomatitis/glossitis = ขาด B₂"
+  },
+  {
+   "id": "GI-49-KF-003",
+   "block": "GI",
+   "cohort": 49,
+   "n": 3,
+   "type": "KF",
+   "case": "Answer the following drug questions: ORS and diphenoxylate.",
+   "items": [
+    {
+     "id": "3.1",
+     "prompt": "What does ORS contain? (composition)",
+     "format": "short",
+     "keywords_all": [
+      "glucose"
+     ],
+     "key_text": "Na⁺, K⁺, Cl⁻, glucose, bicarbonate or citrate",
+     "source_key": "Na⁺, K⁺, Cl⁻, glucose, bicarbonate or citrate",
+     "explanation": "ส่วนประกอบ ORS: Na⁺ K⁺ Cl⁻ glucose bicarbonate/citrate",
+     "accepted": [
+      "na k cl glucose bicarbonate citrate"
+     ]
+    },
+    {
+     "id": "3.2",
+     "prompt": "Explain the mechanism of action of each component.",
+     "format": "short",
+     "keywords_all": [
+      "sodium",
+      "acidosis"
+     ],
+     "key_text": "Na⁺, K⁺, Cl⁻ replace the body losses · glucose facilitates absorption of sodium · bicarbonate or citrate corrects the acidosis from diarrhea and dehydration",
+     "source_key": "Na⁺, K⁺, Cl⁻ replace the body losses · glucose facilitates absorption of sodium · bicarbonate or citrate corrects the acidosis from diarrhea and dehydration",
+     "explanation": "glucose คู่ Na⁺ ผ่าน SGLT1 · HCO₃⁻/citrate แก้ acidosis",
+     "key_image": "img/GI-49-KF-003-key.jpg",
+     "key_image_caption": "สไลด์ในเฉลย: Composition of ORS"
+    },
+    {
+     "id": "3.3",
+     "prompt": "Diphenoxylate — MOA (2 points)",
+     "format": "short",
+     "keywords_all": [
+      "opioid",
+      "motility"
+     ],
+     "key_text": "μ-opioid: intestinal motility ↓ (inhibits ACh release from excitatory cholinergic neurons, ↓ propulsion); δ-receptors: intestinal secretion ↓ (inhibits NO/VIP release from inhibitory neurons) and ↑ segmentation; μ and δ on submucous plexus: ↑ absorption of salt and water",
+     "source_key": "μ-opioid: intestinal motility ↓ (inhibits ACh release from excitatory cholinergic neurons, ↓ propulsion); δ-receptors: intestinal secretion ↓ (inhibits NO/VIP release from inhibitory neurons) and ↑ segmentation; μ and δ on submucous plexus: ↑ absorption of salt and water",
+     "explanation": "โอปิออยด์ที่ผนังลำไส้: ลดการบีบตัวแบบ propulsion, ลดการหลั่ง, เพิ่มการดูดซึมเกลือและน้ำ",
+     "accepted": [
+      "opioid receptor agonist",
+      "mu opioid agonist",
+      "μ-opioid receptor agonist",
+      "decreases motility"
+     ],
+     "key_image": "img/GI-49-KF-003b-key.jpg",
+     "key_image_caption": "สไลด์ในเฉลย: MOA ของ diphenoxylate"
+    },
+    {
+     "id": "3.4",
+     "prompt": "Diphenoxylate — adverse drug reactions (2 points)",
+     "format": "short",
+     "keywords_all": [
+      "cns",
+      "anticholinergic"
+     ],
+     "key_text": "CNS effects (drowsiness, dizziness, headache, tiredness) and anticholinergic effects from atropine (dry mouth, blurred vision); overdose: severe drowsiness, muscle weakness, fast heartbeat, high fever, unusual breathing, seizures, loss of consciousness, iron deficiency",
+     "source_key": "CNS effects (drowsiness, dizziness, headache, tiredness) and anticholinergic effects from atropine (dry mouth, blurred vision); overdose: severe drowsiness, muscle weakness, fast heartbeat, high fever, unusual breathing, seizures, loss of consciousness, iron deficiency",
+     "explanation": "diphenoxylate ผสม atropine จึงมีฤทธิ์ anticholinergic ร่วมด้วย",
+     "accepted": [
+      "cns effects and anticholinergic effects",
+      "drowsiness and dry mouth",
+      "drowsiness, dry mouth"
+     ],
+     "key_image": "img/GI-49-KF-003c-key.jpg",
+     "key_image_caption": "สไลด์ในเฉลย: ADR ของ diphenoxylate"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF49",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "KF49-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [
+    "ORS",
+    "diphenoxylate"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "ORS: Na/K/Cl/glucose/bicarbonate · diphenoxylate: opioid + atropine",
+   "audit_note": "ข้อ 3 ต้นฉบับไม่มีลายมือเฉลย เฉลยเป็นสไลด์ที่แนบใต้ข้อ (ORS, diphenoxylate MOA, ADR) จึงเฉลยตามสไลด์"
+  },
+  {
+   "id": "GI-49-KF-004",
+   "block": "GI",
+   "cohort": 49,
+   "n": 4,
+   "type": "KF",
+   "case": "What would the plasma levels of glucose, albumin and ammonia be in a patient with end-stage liver disease? (increase or decrease)",
+   "items": [
+    {
+     "id": "4.1",
+     "prompt": "Glucose",
+     "format": "short",
+     "accepted": [
+      "increase",
+      "increased",
+      "increases",
+      "เพิ่ม"
+     ],
+     "key_text": "Increase (from insulin resistance) — per the original key",
+     "source_key": "Glucose increase (เกิด insulin resistance)",
+     "explanation": "ตามเฉลยต้นฉบับ: ตับวายระยะท้ายมี insulin resistance ทำให้น้ำตาลในเลือดสูง · แต่เฉลยรุ่น 50–52 ตอบ decrease (ตับสลาย glycogen/ทำ gluconeogenesis ไม่ได้ → hypoglycemia) ดูหมายเหตุตรวจสอบ"
+    },
+    {
+     "id": "4.2",
+     "prompt": "Albumin",
+     "format": "short",
+     "accepted": [
+      "decrease",
+      "decreased",
+      "decreases",
+      "ลด"
+     ],
+     "key_text": "Decrease (liver synthesizes less)",
+     "source_key": "Albumin decrease (สร้างได้น้อยลง)",
+     "explanation": "ตับสร้าง albumin ได้น้อยลง"
+    },
+    {
+     "id": "4.3",
+     "prompt": "Ammonia",
+     "format": "short",
+     "accepted": [
+      "increase",
+      "increased",
+      "increases",
+      "เพิ่ม"
+     ],
+     "key_text": "Increase (cannot convert to urea)",
+     "source_key": "Ammonia increase (แปลงเป็น urea ไม่ได้)",
+     "explanation": "ตับสร้าง urea ไม่ได้ → NH₃ สูง"
+    }
+   ],
+   "answer_status": "disputed",
+   "refs": [
+    {
+     "paper": "KF49",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "KF49-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [
+    "liver failure"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "albumin↓ ammonia↑ · glucose: เฉลยรุ่นนี้ตอบเพิ่ม (insulin resistance) ต่างจากรุ่น 50–52",
+   "audit_note": "ข้อ 4.1 เฉลยต้นฉบับรุ่น 49 ตอบ glucose 'increase' (insulin resistance) ขัดกับเฉลยรุ่น 50, 51, 52 ที่ตอบ 'decrease' ตำราทั่วไปในตับวายเฉียบพลัน/ระยะท้ายพบน้ำตาลต่ำจากสร้างน้ำตาลไม่ได้ · เก็บตามเฉลยต้นฉบับและให้ผู้ตรวจตัดสิน"
+  },
+  {
+   "id": "GI-49-KF-005",
+   "block": "GI",
+   "cohort": 49,
+   "n": 5,
+   "type": "KF",
+   "case": "A boy swallowed a coin. X-ray shows the coin in the stomach. The doctor gives no treatment and says the coin will definitely be passed in the stool.",
+   "items": [
+    {
+     "id": "5.1",
+     "prompt": "Which state can stimulate the motility that expels the coin?",
+     "format": "short",
+     "accepted": [
+      "fasting",
+      "fasting state",
+      "fasting stage",
+      "interdigestive"
+     ],
+     "key_text": "Fasting",
+     "source_key": "Fasting",
+     "explanation": "ช่วงอดอาหาร → MMC"
+    },
+    {
+     "id": "5.2",
+     "prompt": "State the name of that motility.",
+     "format": "short",
+     "accepted": [
+      "migrating motor complex",
+      "mmc",
+      "migrating myoelectric complex"
+     ],
+     "key_text": "MMC (migrating motor complex)",
+     "source_key": "MMC (migrating motor complex)",
+     "explanation": "MMC เกิดทุก ~90–120 นาทีช่วงอดอาหาร"
+    },
+    {
+     "id": "5.3",
+     "prompt": "Draw a diagram showing the contraction of this motility. (describe here)",
+     "format": "short",
+     "key_text": "แผนภูมิ 3 phase ของ MMC: Phase I ไม่หดตัว · Phase II หดตัวไม่สม่ำเสมอ · Phase III หดตัวแรงสม่ำเสมอ เลื่อนจาก antrum → ileum ตามเวลา (ชั่วโมง)",
+     "source_key": "(ข้อวาดรูป) เฉลยเป็นกราฟ MMC phase I–III ตามเวลาของ antrum → distal ileum",
+     "explanation": "ให้ตัดสินเองด้วยปุ่ม 'ตัดสินเอง' เพราะเป็นข้อวาดรูป",
+     "key_image": "img/GI-49-KF-005-key.jpg",
+     "key_image_caption": "เฉลยต้นฉบับ: กราฟ MMC phase I–III"
+    },
+    {
+     "id": "5.4",
+     "prompt": "Which neurotransmitter stimulates this contraction?",
+     "format": "short",
+     "accepted": [
+      "acetylcholine",
+      "ach"
+     ],
+     "key_text": "Acetylcholine",
+     "source_key": "Acetylcholine",
+     "explanation": "ACh จาก excitatory enteric neuron"
+    },
+    {
+     "id": "5.5",
+     "prompt": "If this contraction is abnormal, what condition or disease results?",
+     "format": "short",
+     "keywords_all": [
+      "irritable"
+     ],
+     "key_text": "Irritable bowel syndrome",
+     "source_key": "Irritable bowel syndrome",
+     "explanation": "ตามเฉลยต้นฉบับ (รุ่น 50–52 ตอบ SIBO สำหรับ MMC ผิดปกติ)",
+     "accepted": [
+      "ibs",
+      "irritable bowel syndrome"
+     ]
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF49",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "KF49-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [
+    "MMC"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "MMC ช่วง fasting · ACh",
+   "audit_note": "ข้อ 5.5 เฉลยตอบ irritable bowel syndrome ส่วนรุ่น 52 ตอบ SIBO (small intestinal bacterial overgrowth)"
+  },
+  {
+   "id": "GI-49-KF-006",
+   "block": "GI",
+   "cohort": 49,
+   "n": 6,
+   "type": "KF",
+   "case": "A 55-year-old woman has nausea, vomiting, weight loss and right upper quadrant pain. Laboratory: total bilirubin 7.2 mg/dL (↑), direct bilirubin 6.8 mg/dL (↑), AST 35 U/L, ALT 40 U/L, ALP 650 U/L (↑), total protein 6.5 g/dL, albumin 4.2 g/dL (all normal except the arrows).",
+   "items": [
+    {
+     "id": "6.1",
+     "prompt": "Which type of jaundice does the patient have? (explain from the laboratory results)",
+     "format": "short",
+     "keywords_all": [
+      "cholestasis"
+     ],
+     "key_text": "Isolated conjugated hyperbilirubinemia and AST/ALP fold-ULN ratio < 2 with no protein abnormality suggest cholestasis",
+     "source_key": "Isolated conjugated hyperbilirubinemia and AST/ALP fold URL ratio < 2 with no protein abnormality suggest cholestasis",
+     "explanation": "AST/ULN ÷ ALP/ULN = (35/34) ÷ (650/150) ≈ 0.24 < 2 → cholestatic pattern",
+     "accepted": [
+      "cholestatic jaundice",
+      "cholestasis"
+     ],
+     "key_image": "img/GI-49-KF-006-key.jpg",
+     "key_image_caption": "ตารางค่าอ้างอิงจากเฉลย (AST 5–34, ALT 0–55, ALP 40–150, GGT)"
+    },
+    {
+     "id": "6.2",
+     "prompt": "What are the causes of this type of jaundice? (give 2)",
+     "format": "short",
+     "keywords_all": [
+      "stone",
+      "biliary",
+      "hcc",
+      "cca",
+      "cholangiocarcinoma"
+     ],
+     "key_text": "1. Stone in bile duct 2. Primary biliary cirrhosis 3. HCC 4. CCA (cholangiocarcinoma)",
+     "source_key": "1. Stone in bile duct 2. Primary biliary cirrhosis 3. HCC 4. CCA (cholangiocarcinoma)",
+     "explanation": "สาเหตุของ cholestasis: นิ่วท่อน้ำดี, PBC/PSC, มะเร็งท่อน้ำดี, มะเร็งตับ/ตับอ่อนกดท่อน้ำดี",
+     "accepted": [
+      "bile duct stone",
+      "primary biliary cirrhosis",
+      "hepatocellular carcinoma",
+      "cholangiocarcinoma",
+      "pancreatic cancer"
+     ]
+    },
+    {
+     "id": "6.3",
+     "prompt": "Expected urobilirubin (urine bilirubin) and urobilinogen (increase / decrease / normal)",
+     "format": "short",
+     "keywords_all": [
+      "positive",
+      "decrease"
+     ],
+     "key_text": "Urine bilirubin positive, urobilinogen decreased / absent",
+     "source_key": "Urine bilirubin positive, urobilinogen decreased / absent",
+     "explanation": "conjugated bilirubin ละลายน้ำออกทางปัสสาวะ · bilirubin ไม่ถึงลำไส้ → urobilinogen ลด",
+     "accepted": [
+      "urine bilirubin positive urobilinogen decreased"
+     ]
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF49",
+     "pages": [
+      3
+     ]
+    },
+    {
+     "paper": "KF49-KEY",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [
+    "cholestasis",
+    "jaundice"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "cholestasis: conjugated bilirubin ↑ ALP ↑ AST/ALT ปกติ · urine bilirubin + · urobilinogen ↓"
+  },
+  {
+   "id": "GI-49-KF-007",
+   "block": "GI",
+   "cohort": 49,
+   "n": 7,
+   "type": "KF",
+   "case": "A 19-year-old man is advised to see his physician because genetic screening has detected a disease in other family members. His stool is positive for occult blood. Colonoscopy is performed, followed by colectomy. The figure shows the gross appearance of the mucosal surface of the colectomy specimen.",
+   "items": [
+    {
+     "id": "7.1",
+     "prompt": "Describe the main finding of this figure. (1 short answer, 1 point)",
+     "format": "short",
+     "keywords_all": [
+      "polyp"
+     ],
+     "key_text": "Innumerable small polyps",
+     "source_key": "Innumerable small polyps",
+     "explanation": "polyp ขนาดเล็กจำนวนมากทั่วเยื่อบุลำไส้ใหญ่"
+    },
+    {
+     "id": "7.2",
+     "prompt": "Microscopic examination is shown in the figure. What is the diagnosis of this figure? (1 point)",
+     "format": "short",
+     "accepted": [
+      "tubular adenoma",
+      "adenoma"
+     ],
+     "key_text": "Tubular adenoma",
+     "source_key": "Tubular adenoma",
+     "explanation": "ต่อมเรียงเป็นท่อ มี dysplasia ระดับต่ำ",
+     "image": "img/GI-49-KF-007b.jpg",
+     "image_caption": "ภาพจุลพยาธิวิทยาของ polyp"
+    },
+    {
+     "id": "7.3",
+     "prompt": "What is the diagnosis of this patient? (2 points)",
+     "format": "short",
+     "accepted": [
+      "familial adenomatous polyposis",
+      "fap",
+      "familial polyposis"
+     ],
+     "key_text": "Familial adenomatous polyposis",
+     "source_key": "Familial adenomatous polyposis",
+     "explanation": "polyp หลายร้อย อายุน้อย ประวัติครอบครัว"
+    },
+    {
+     "id": "7.4",
+     "prompt": "What gene mutation is most commonly found in this patient? (1 point)",
+     "format": "short",
+     "accepted": [
+      "apc",
+      "apc gene",
+      "apc gene on 5q21"
+     ],
+     "key_text": "APC gene on 5q21",
+     "source_key": "APC gene on 5q21",
+     "explanation": "APC/WNT pathway · autosomal dominant",
+     "key_image": "img/GI-49-KF-007c-key.jpg",
+     "key_image_caption": "ตารางในเฉลย: Familial adenomatous polyposis — APC/WNT pathway, target gene APC, autosomal dominant, histology tubular/villous"
+    },
+    {
+     "id": "7.5",
+     "prompt": "What is the mode of inheritance? (1 point)",
+     "format": "short",
+     "accepted": [
+      "autosomal dominant",
+      "ad"
+     ],
+     "key_text": "Autosomal dominant",
+     "source_key": "Autosomal dominant",
+     "explanation": "FAP เป็น autosomal dominant"
+    },
+    {
+     "id": "7.6",
+     "prompt": "Why did this patient undergo colectomy? (1 short answer, 2 points)",
+     "format": "short",
+     "keywords_all": [
+      "cancer"
+     ],
+     "key_text": "To prevent colon cancer",
+     "source_key": "To prevent colon cancer",
+     "explanation": "FAP เป็นมะเร็งเกือบ 100% ถ้าไม่ตัดลำไส้",
+     "accepted": [
+      "prevent colorectal cancer"
+     ]
+    },
+    {
+     "id": "7.7",
+     "prompt": "If colectomy had not been done, what specific disease would develop? (1 point)",
+     "format": "short",
+     "accepted": [
+      "colorectal adenocarcinoma",
+      "colorectal cancer",
+      "colon cancer",
+      "adenocarcinoma"
+     ],
+     "key_text": "Colorectal adenocarcinoma",
+     "source_key": "Colorectal adenocarcinoma",
+     "explanation": "adenoma → carcinoma sequence"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF49",
+     "pages": [
+      3
+     ]
+    },
+    {
+     "paper": "KF49-KEY",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [
+    "FAP",
+    "colon polyp"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "FAP: APC · AD · colectomy ป้องกันมะเร็ง",
+   "image": "img/GI-49-KF-007.jpg",
+   "image_caption": "ภาพถ่ายลำไส้ใหญ่ที่ตัดออกมา (gross)"
+  },
+  {
+   "id": "GI-49-KF-008",
+   "block": "GI",
+   "cohort": 49,
+   "n": 8,
+   "type": "KF",
+   "case": "A 30-year-old woman with Crohn's disease undergoes terminal ileum resection. After recovering from the surgery she develops chronic diarrhea, with a volume 10 times more than normal.",
+   "items": [
+    {
+     "id": "8.1",
+     "prompt": "What endogenous substance is likely primarily responsible for her symptoms?",
+     "format": "short",
+     "accepted": [
+      "bile salt",
+      "bile salts",
+      "bile acid",
+      "bile acids"
+     ],
+     "key_text": "Bile salt",
+     "source_key": "Bile salt",
+     "explanation": "ตัด terminal ileum → ดูดน้ำดีกลับไม่ได้"
+    },
+    {
+     "id": "8.2",
+     "prompt": "How does this substance cause diarrhea? Explain the mechanism.",
+     "format": "short",
+     "keywords_all": [
+      "colon"
+     ],
+     "key_text": "Terminal ileum resection → ↓ bile salt reabsorption → excessive bile acid reaching the colon → ↑ water and electrolyte secretion",
+     "source_key": "Terminal ileum resection → ↓ bile salt reabsorption → excessive bile acid reaching the colon → ↑ water and electrolyte secretion",
+     "explanation": "bile acid ที่ colon กระตุ้นการหลั่งน้ำและเกลือแร่ (รักษาด้วย cholestyramine)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF49",
+     "pages": [
+      5
+     ]
+    },
+    {
+     "paper": "KF49-KEY",
+     "pages": [
+      5
+     ]
+    }
+   ],
+   "tags": [
+    "bile acid diarrhea"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "ตัด ileum → bile acid ไป colon → หลั่งน้ำ/เกลือแร่"
+  },
+  {
+   "id": "GI-49-KF-009",
+   "block": "GI",
+   "cohort": 49,
+   "n": 9,
+   "type": "KF",
+   "case": "A 4-year-old boy has an itchy small rash. A stool examination then shows the parasite egg in the figure.",
+   "items": [
+    {
+     "id": "9.1",
+     "prompt": "Give the most likely diagnosis.",
+     "format": "short",
+     "accepted": [
+      "ancylostomiasis",
+      "hookworm infection",
+      "hookworm",
+      "ancylostoma duodenale",
+      "ancylostoma"
+     ],
+     "key_text": "Ancylostomiasis (hookworm infection)",
+     "source_key": "Ancylostomiasis (hookworm infection)",
+     "explanation": "ไข่เปลือกบางใส มี 4–8 blastomere = hookworm · ตัวอ่อนไชผิวหนังทำให้ผื่นคัน (ground itch)",
+     "image": "img/GI-49-KF-009.jpg",
+     "image_caption": "ไข่พยาธิในอุจจาระ"
+    },
+    {
+     "id": "9.2",
+     "prompt": "State how to prevent this infection in this patient.",
+     "format": "short",
+     "keywords_all": [
+      "barefoot"
+     ],
+     "key_text": "Do not walk barefoot in a high-risk area",
+     "source_key": "Do not walk barefoot in a high-risk area",
+     "explanation": "ใส่รองเท้า/ถุงมือ เมื่ออยู่ในดินหรือพื้นที่เสี่ยง · ถ่ายลงส้วม",
+     "accepted": [
+      "wear shoes",
+      "wear shoes in high risk area",
+      "not walking barefoot",
+      "avoid walking barefoot",
+      "wear footwear"
+     ]
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF49",
+     "pages": [
+      5
+     ]
+    },
+    {
+     "paper": "KF49-KEY",
+     "pages": [
+      5
+     ]
+    }
+   ],
+   "tags": [
+    "hookworm"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "hookworm: ไข่เปลือกบางใส · ไชผ่านผิวหนังเท้า → ใส่รองเท้า"
+  },
+  {
+   "id": "GI-49-KF-010",
+   "block": "GI",
+   "cohort": 49,
+   "n": 10,
+   "type": "KF",
+   "case": "A woman with breast cancer and diabetes has gastroesophageal reflux and vomiting caused by the cancer treatment.",
+   "items": [
+    {
+     "id": "10.1",
+     "prompt": "Which drug is used?",
+     "format": "short",
+     "accepted": [
+      "ondansetron",
+      "granisetron",
+      "dolasetron"
+     ],
+     "key_text": "Ondansetron",
+     "source_key": "Ondansetron",
+     "explanation": "5-HT₃ antagonist เป็นยาหลักของ CINV"
+    },
+    {
+     "id": "10.2",
+     "prompt": "Explain the mechanism.",
+     "format": "short",
+     "keywords_all": [
+      "5-ht3",
+      "ctz"
+     ],
+     "key_text": "Binds 5-HT₃ receptors at the intestinal afferent (vagal) nerves, the vomiting center and the chemoreceptor trigger zone",
+     "source_key": "Binds 5-HT₃ receptors at the intestinal afferent (vagal) nerves, the vomiting center and the chemoreceptor trigger zone",
+     "explanation": "ยับยั้ง serotonin ที่ vagal afferent ลำไส้ vomiting center และ CTZ",
+     "key_image": "img/GI-49-KF-010-key.jpg",
+     "key_image_caption": "ข้อความในเฉลย: 5-HT₃ antagonists และ metoclopramide เป็นยา CINV ที่ได้ผลดีที่สุด มักใช้ร่วมกับยาอื่น"
+    },
+    {
+     "id": "10.3",
+     "prompt": "What are the adverse drug reactions?",
+     "format": "short",
+     "keywords_all": [
+      "headache",
+      "constipation"
+     ],
+     "key_text": "Headache, dizziness, drowsiness, constipation and diarrhea",
+     "source_key": "Headache, dizziness, drowsiness, constipation and diarrhea",
+     "explanation": "ผลข้างเคียงที่พบบ่อยของ 5-HT₃ antagonist (ยังอาจทำให้ QT ยาว)",
+     "accepted": [
+      "headache dizziness drowsiness constipation diarrhea"
+     ]
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF49",
+     "pages": [
+      5
+     ]
+    },
+    {
+     "paper": "KF49-KEY",
+     "pages": [
+      5
+     ]
+    }
+   ],
+   "tags": [
+    "antiemetics",
+    "ondansetron"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "CINV: ondansetron (5-HT₃)"
+  },
+  {
+   "id": "GI-49-KF-011",
+   "block": "GI",
+   "cohort": 49,
+   "n": 11,
+   "type": "KF",
+   "case": "Match the words in the box (Coxsackie A virus, Coxsackie B virus, Enterovirus 72, Rotavirus, Astrovirus, Hepatitis E virus, mRNA, dsDNA, Enterovirus 71, Norovirus, Poliovirus, flaccid paralysis) with the disease/symptom/feature in the table (words may be reused).",
+   "items": [
+    {
+     "id": "11.1",
+     "prompt": "Herpangina",
+     "format": "short",
+     "accepted": [
+      "coxsackie a virus",
+      "coxsackie a"
+     ],
+     "key_text": "Coxsackie A virus",
+     "source_key": "Coxsackie A virus",
+     "explanation": "herpangina จาก Coxsackie A"
+    },
+    {
+     "id": "11.2",
+     "prompt": "Bornholm disease",
+     "format": "short",
+     "accepted": [
+      "coxsackie b virus",
+      "coxsackie b"
+     ],
+     "key_text": "Coxsackie B virus",
+     "source_key": "Coxsackie B virus",
+     "explanation": "Bornholm disease (pleurodynia) จาก Coxsackie B"
+    },
+    {
+     "id": "11.3",
+     "prompt": "Hand-foot-mouth disease",
+     "format": "short",
+     "accepted": [
+      "enterovirus 71 and coxsackie a16",
+      "ev71, coxsackie a16"
+     ],
+     "key_text": "Enterovirus 71, Coxsackie A16",
+     "source_key": "Enterovirus 71, Coxsackie A16",
+     "explanation": "HFMD จาก EV71 หรือ Coxsackie A16"
+    },
+    {
+     "id": "11.4",
+     "prompt": "Segmented genome",
+     "format": "short",
+     "accepted": [
+      "rotavirus"
+     ],
+     "key_text": "Rotavirus",
+     "source_key": "Rotavirus",
+     "explanation": "rotavirus เป็น dsRNA 11 ท่อน"
+    },
+    {
+     "id": "11.5",
+     "prompt": "Star-like appearance",
+     "format": "short",
+     "accepted": [
+      "astrovirus"
+     ],
+     "key_text": "Astrovirus",
+     "source_key": "Astrovirus",
+     "explanation": "astrovirus เห็นรูปดาวใน EM"
+    },
+    {
+     "id": "11.6",
+     "prompt": "May cause stillbirth in pregnant women",
+     "format": "short",
+     "accepted": [
+      "hepatitis e virus",
+      "hepatitis e",
+      "hev"
+     ],
+     "key_text": "Hepatitis E virus",
+     "source_key": "Hepatitis E virus",
+     "explanation": "HEV ในหญิงตั้งครรภ์ทำให้ตับวายเฉียบพลันและทารกเสียชีวิตได้"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF49",
+     "pages": [
+      6
+     ]
+    },
+    {
+     "paper": "KF49-KEY",
+     "pages": [
+      6
+     ]
+    }
+   ],
+   "tags": [
+    "enterovirus",
+    "viral gastroenteritis"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "Cox A–herpangina · Cox B–Bornholm · EV71–HFMD · rota–segmented · astro–star · HEV–pregnancy"
+  },
+  {
+   "id": "GI-49-KF-012",
+   "block": "GI",
+   "cohort": 49,
+   "n": 12,
+   "type": "KF",
+   "case": "Explain the mechanism of action of each drug.",
+   "items": [
+    {
+     "id": "12.1",
+     "prompt": "Diphenhydramine",
+     "format": "short",
+     "keywords_all": [
+      "h1"
+     ],
+     "key_text": "Blocks H₁ and M₁ receptors",
+     "source_key": "Blocks H₁ and M₁ receptors",
+     "explanation": "antihistamine รุ่นแรก ต้านทั้ง H₁ และ muscarinic",
+     "accepted": [
+      "h1 antagonist",
+      "h1 and m1 antagonist"
+     ]
+    },
+    {
+     "id": "12.2",
+     "prompt": "Metoclopramide",
+     "format": "short",
+     "keywords_all": [
+      "d2"
+     ],
+     "key_text": "Low dose: D₂ antagonist; high dose: 5-HT₃ antagonist; 5-HT₄ agonist",
+     "source_key": "Low dose: D₂ antagonist; high dose: 5-HT₃ antagonist; 5-HT₄ agonist",
+     "explanation": "ต้าน D₂ ที่ CTZ + 5-HT₃ antagonist + 5-HT₄ agonist (prokinetic)",
+     "accepted": [
+      "d2 antagonist"
+     ]
+    },
+    {
+     "id": "12.3",
+     "prompt": "Vitamin B₆",
+     "format": "short",
+     "keywords_all": [
+      "glutamate",
+      "gaba"
+     ],
+     "key_text": "Cofactor for glutamate decarboxylase to synthesize GABA",
+     "source_key": "Cofactor for glutamate decarboxylase to synthesize GABA",
+     "explanation": "pyridoxal phosphate เป็น coenzyme ของ decarboxylase (GABA, serotonin, histamine)",
+     "accepted": [
+      "cofactor for glutamate decarboxylase",
+      "cofactor of glutamate decarboxylase to synthesize gaba"
+     ]
+    },
+    {
+     "id": "12.4",
+     "prompt": "Bismuth subsalicylate",
+     "format": "short",
+     "keywords_all": [
+      "secretory",
+      "microbial"
+     ],
+     "key_text": "Anti-secretory, anti-inflammatory and antimicrobial effects",
+     "source_key": "Anti-secretory, anti-inflammatory and antimicrobial effects",
+     "explanation": "ใช้ใน traveler's diarrhea",
+     "accepted": [
+      "antisecretory antiinflammatory antimicrobial",
+      "anti-secretory",
+      "antimicrobial"
+     ]
+    },
+    {
+     "id": "12.5",
+     "prompt": "Clonidine",
+     "format": "short",
+     "keywords_all": [
+      "alpha",
+      "α"
+     ],
+     "key_text": "α₂ agonist → ↓ ACh release, ↑ enterocyte absorption",
+     "source_key": "α₂ agonist → ↓ ACh release, ↑ enterocyte absorption",
+     "explanation": "α₂ agonist ลดการหลั่ง ACh และเพิ่มการดูดซึมที่ enterocyte",
+     "accepted": [
+      "alpha-2 agonist",
+      "α2 agonist",
+      "alpha 2 agonist"
+     ]
+    },
+    {
+     "id": "12.6",
+     "prompt": "Cholestyramine",
+     "format": "short",
+     "keywords_all": [
+      "bile"
+     ],
+     "key_text": "Forms an insoluble complex with bile acid",
+     "source_key": "Forms an insoluble complex with bile acid",
+     "explanation": "จับ bile acid ใช้ใน bile acid diarrhea",
+     "accepted": [
+      "binds bile acids",
+      "bile acid sequestrant"
+     ]
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF49",
+     "pages": [
+      6
+     ]
+    },
+    {
+     "paper": "KF49-KEY",
+     "pages": [
+      6
+     ]
+    }
+   ],
+   "tags": [
+    "pharmacology",
+    "antidiarrheal"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "diphenhydramine H₁/M₁ · metoclopramide D₂ · B₆ GAD · bismuth · clonidine α₂ · cholestyramine จับ bile acid"
+  },
+  {
+   "id": "GI-49-KF-013",
+   "block": "GI",
+   "cohort": 49,
+   "n": 13,
+   "type": "KF",
+   "case": "A 65-year-old man with a history of alcohol abuse has had hematemesis for the past day. Physical examination shows mild jaundice, spider nevi, gynecomastia, mild pedal edema, normal JVP and a massively distended abdomen. Paracentesis shows protein-poor fluid free of inflammatory cells.",
+   "items": [
+    {
+     "id": "13.1",
+     "prompt": "What is the medical term for fluid collection in the abdominal cavity?",
+     "format": "short",
+     "accepted": [
+      "ascites"
+     ],
+     "key_text": "Ascites",
+     "source_key": "Ascites",
+     "explanation": "น้ำในช่องท้อง (transudate)"
+    },
+    {
+     "id": "13.2",
+     "prompt": "What is the most likely pathology of his liver?",
+     "format": "short",
+     "accepted": [
+      "cirrhosis",
+      "liver cirrhosis",
+      "alcoholic cirrhosis"
+     ],
+     "key_text": "Cirrhosis",
+     "source_key": "Cirrhosis",
+     "explanation": "alcoholic cirrhosis"
+    },
+    {
+     "id": "13.3",
+     "prompt": "What is the histology of his liver? (describe 2 features)",
+     "format": "short",
+     "keywords_all": [
+      "regenerative",
+      "fibrosis"
+     ],
+     "key_text": "1) Regenerative nodules with fibrosis 2) Fibrosis surrounding regenerative nodules with scattered lymphocytes",
+     "source_key": "1) มี regenerative nodule และ fibrosis 2) บริเวณ fibrosis ห้อมล้อม regenerative nodule มี lymphocyte ร่วมด้วย",
+     "explanation": "พังผืดล้อม regenerative nodule ทั่วตับ มี lymphocyte แทรก"
+    },
+    {
+     "id": "13.4",
+     "prompt": "What is the complication that causes abdominal fluid and hematemesis?",
+     "format": "short",
+     "keywords_all": [
+      "portal"
+     ],
+     "key_text": "Portal hypertension → splanchnic vasodilation → ↓ effective circulating volume → RAAS activation → ↑ hydrostatic pressure → ascites; and ↑ collateral circulation → esophageal varices → rupture → hematemesis",
+     "source_key": "Portal hypertension → splanchnic vasodilation → ↓ effective circulating volume → RAAS activation → ↑ hydrostatic pressure → ascites; and ↑ collateral circulation → esophageal varices → rupture → hematemesis",
+     "explanation": "portal HT → ascites และ varices แตก",
+     "accepted": [
+      "portal hypertension"
+     ]
+    },
+    {
+     "id": "13.5",
+     "prompt": "What signs or symptoms develop from this complication? (3 points)",
+     "format": "short",
+     "keywords_all": [
+      "peritonitis",
+      "variceal",
+      "hepatorenal"
+     ],
+     "key_text": "1) Bacterial peritonitis from ascites 2) Variceal hemorrhage from esophageal varices 3) Hepatorenal syndrome from renal hypoperfusion",
+     "source_key": "1) Bacterial peritonitis from ascites 2) Variceal hemorrhage from esophageal varices 3) Hepatorenal syndrome from renal hypoperfusion",
+     "explanation": "ภาวะแทรกซ้อนของ cirrhosis ที่มี portal HT",
+     "accepted": [
+      "spontaneous bacterial peritonitis",
+      "esophageal varices",
+      "hepatorenal syndrome",
+      "splenomegaly",
+      "caput medusae"
+     ]
+    },
+    {
+     "id": "13.6",
+     "prompt": "What is the mechanism that causes spider nevi and gynecomastia?",
+     "format": "short",
+     "keywords_all": [
+      "estr"
+     ],
+     "key_text": "↓ estradiol degradation in the liver → ↑ vasodilating substance → spider nevi; ↑ conversion of androstenedione → estrone → gynecomastia",
+     "source_key": "↓ estradiol degradation in the liver → ↑ vasodilating substance → spider nevi; ↑ conversion of androstenedione → estrone → gynecomastia",
+     "explanation": "ตับสลาย estrogen ไม่ได้ + androgen ถูกเปลี่ยนเป็น estrone มากขึ้น"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF49",
+     "pages": [
+      6
+     ]
+    },
+    {
+     "paper": "KF49-KEY",
+     "pages": [
+      6
+     ]
+    }
+   ],
+   "tags": [
+    "cirrhosis",
+    "portal hypertension"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "cirrhosis → portal HT; estrogen ↑ → spider nevi, gynecomastia"
+  },
+  {
+   "id": "GI-49-KF-014",
+   "block": "GI",
+   "cohort": 49,
+   "n": 14,
+   "type": "KF",
+   "case": "A patient has a history of traveling to India, eating rice and drinking water, then develops diarrhea more than 10 times, loose and watery stool without blood, abdominal cramp and dizziness on standing. The laboratory finds an actively motile 'shooting' organism.",
+   "items": [
+    {
+     "id": "14.1",
+     "prompt": "What is the correct way to collect the sample and which transport medium is used?",
+     "format": "short",
+     "keywords_all": [
+      "cary",
+      "rectal"
+     ],
+     "key_text": "Feces or rectal swab; Cary-Blair or Stuart's transport medium",
+     "source_key": "Feces / Rectal swab, Cary-Blair หรือ Stuart's transport medium",
+     "explanation": "Vibrio cholerae ใช้ Cary-Blair เป็น transport medium (Stuart's ก็ใช้ได้)",
+     "accepted": [
+      "cary-blair",
+      "cary blair",
+      "rectal swab cary-blair",
+      "stool in cary-blair"
+     ]
+    },
+    {
+     "id": "14.2",
+     "prompt": "Give 2 culture media that make the organism grow.",
+     "format": "short",
+     "keywords_all": [
+      "tcbs"
+     ],
+     "key_text": "TCBS, TTGA (selective and differential media)",
+     "source_key": "TCBS, TTGA (selective and differential media)",
+     "explanation": "TCBS: V. cholerae เหลือง · TTGA (tellurite-taurocholate-gelatin agar) คัดเลือก Vibrio",
+     "accepted": [
+      "tcbs and ttga",
+      "tcbs, ttga",
+      "tcbs agar"
+     ]
+    },
+    {
+     "id": "14.3",
+     "prompt": "What organism was found?",
+     "format": "short",
+     "accepted": [
+      "vibrio cholerae",
+      "v. cholerae",
+      "cholera"
+     ],
+     "key_text": "Vibrio cholerae",
+     "source_key": "Vibrio cholerae",
+     "explanation": "shooting-star motility + ท้องเสียเป็นน้ำหลังไปอินเดีย"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF49",
+     "pages": [
+      7
+     ]
+    },
+    {
+     "paper": "KF49-KEY",
+     "pages": [
+      7
+     ]
+    }
+   ],
+   "tags": [
+    "Vibrio cholerae"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "V. cholerae: Cary-Blair · TCBS/TTGA"
+  },
+  {
+   "id": "GI-49-KF-015",
+   "block": "GI",
+   "cohort": 49,
+   "n": 15,
+   "type": "KF",
+   "case": "A 45-year-old man eats a high-fat diet and sweets regularly and does not exercise. Weight 84 kg, height 170 cm, waist circumference 96 cm, blood pressure 160/90 mmHg, heart rate 88/min, respiratory rate 20/min, lungs and heart normal, hyperpigmentation at the neck.",
+   "items": [
+    {
+     "id": "15.1",
+     "prompt": "State the nutrient status of this person and explain why.",
+     "format": "short",
+     "keywords_all": [
+      "bmi",
+      "overnutrition"
+     ],
+     "key_text": "Overnutrition: BMI = 84/1.7² ≈ 29 kg/m² (obese class 1); waist-to-height ratio = 96/170 > 0.5; cardiovascular disorder (high BP); acanthosis nigricans (hyperpigmentation at neck)",
+     "source_key": "Overnutrition: BMI = 84/1.7² ≈ 29 kg/m² (obese class 1); waist-to-height ratio = 96/170 > 0.5; cardiovascular disorder (high BP); acanthosis nigricans (hyperpigmentation at neck)",
+     "explanation": "BMI 29 ≥ 25 · WHtR > 0.5 = central obesity · acanthosis nigricans = insulin resistance",
+     "accepted": [
+      "overnutrition",
+      "obesity",
+      "obese"
+     ]
+    },
+    {
+     "id": "15.2",
+     "prompt": "Explain how this nutrient status occurs (by the energy principle).",
+     "format": "short",
+     "keywords_all": [
+      "energy"
+     ],
+     "key_text": "High energy intake from a high-fat, high-sugar diet and low energy expenditure from no exercise → positive energy balance",
+     "source_key": "ได้รับพลังงานมากจากอาหารไขมันสูงและของหวาน ใช้พลังงาน/สูญเสียพลังงานน้อยเพราะไม่ออกกำลังกาย",
+     "explanation": "รับพลังงานเกินใช้ → สะสมเป็นไขมัน"
+    },
+    {
+     "id": "15.3",
+     "prompt": "Give 3 sequelae or co-morbidities that may occur.",
+     "format": "short",
+     "keywords_all": [
+      "diabetes",
+      "stroke",
+      "fatty"
+     ],
+     "key_text": "Type 2 diabetes, stroke, fatty liver disease",
+     "source_key": "Type 2 diabetes, stroke, fatty liver disease",
+     "explanation": "โรคร่วมของโรคอ้วน/metabolic syndrome",
+     "accepted": [
+      "type 2 diabetes, stroke, fatty liver disease"
+     ]
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF49",
+     "pages": [
+      8
+     ]
+    },
+    {
+     "paper": "KF49-KEY",
+     "pages": [
+      8
+     ]
+    }
+   ],
+   "tags": [
+    "obesity",
+    "nutrition"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "BMI 29, WHtR > 0.5 → overnutrition · positive energy balance"
+  },
+  {
+   "id": "GI-49-KF-016",
+   "block": "GI",
+   "cohort": 49,
+   "n": 16,
+   "type": "KF",
+   "case": "Fill in the table about the pathogenesis of stomach disease: H. pylori gastritis versus autoimmune gastritis.",
+   "items": [
+    {
+     "id": "16.1a",
+     "prompt": "H. pylori — location (most common)",
+     "format": "short",
+     "accepted": [
+      "antrum"
+     ],
+     "key_text": "Antrum",
+     "source_key": "Antrum",
+     "explanation": "H. pylori อยู่ที่ antrum เป็นหลัก",
+     "key_image": "img/GI-49-KF-016-key.jpg",
+     "key_image_caption": "สไลด์ในเฉลย: Characteristics of H. pylori and autoimmune gastritis"
+    },
+    {
+     "id": "16.1b",
+     "prompt": "Autoimmune — location (most common)",
+     "format": "short",
+     "accepted": [
+      "body",
+      "body of stomach"
+     ],
+     "key_text": "Body",
+     "source_key": "Body",
+     "explanation": "parietal cell อยู่ที่ body/fundus"
+    },
+    {
+     "id": "16.2a",
+     "prompt": "H. pylori — cell infiltration",
+     "format": "short",
+     "keywords_all": [
+      "neutrophil"
+     ],
+     "key_text": "Neutrophils, plasma cells",
+     "source_key": "Neutrophils, plasma cells",
+     "explanation": "อักเสบเรื้อรังแบบมี neutrophil และ plasma cell"
+    },
+    {
+     "id": "16.2b",
+     "prompt": "Autoimmune — cell infiltration",
+     "format": "short",
+     "keywords_all": [
+      "lymphocyte"
+     ],
+     "key_text": "Lymphocytes, macrophages",
+     "source_key": "Lymphocytes, macrophages",
+     "explanation": "lymphocyte + macrophage"
+    },
+    {
+     "id": "16.3a",
+     "prompt": "H. pylori — sequelae",
+     "format": "short",
+     "keywords_all": [
+      "ulcer"
+     ],
+     "key_text": "Peptic ulcer, adenocarcinoma",
+     "source_key": "Peptic ulcer, adenocarcinoma",
+     "explanation": "อื่นๆ MALT lymphoma",
+     "accepted": [
+      "peptic ulcer and adenocarcinoma"
+     ]
+    },
+    {
+     "id": "16.3b",
+     "prompt": "Autoimmune — sequelae",
+     "format": "short",
+     "keywords_all": [
+      "pernicious"
+     ],
+     "key_text": "Atrophy, pernicious anemia, carcinoma",
+     "source_key": "Atrophy, pernicious anemia, carcinoma",
+     "explanation": "ขาด intrinsic factor → pernicious anemia · เสี่ยง adenocarcinoma",
+     "accepted": [
+      "pernicious anemia"
+     ]
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF49",
+     "pages": [
+      8
+     ]
+    },
+    {
+     "paper": "KF49-KEY",
+     "pages": [
+      8
+     ]
+    }
+   ],
+   "tags": [
+    "gastritis",
+    "H. pylori"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "H. pylori: antrum, neutrophil → ulcer · autoimmune: body, lymphocyte → pernicious anemia",
+   "audit_note": "ตารางในต้นฉบับว่างทั้งหมด เฉลยคือสไลด์ 'Characteristics of H. pylori and autoimmune gastritis' ที่แนบใต้ตาราง (คำตอบเอามาจากสไลด์)"
+  }
+ ]
+}
