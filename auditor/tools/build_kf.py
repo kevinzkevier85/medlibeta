@@ -30,6 +30,8 @@ def main():
     bdir = ROOT / "data" / "blocks" / B
     T = meta["type"]  # KF or OSPE
     pid = {"exam": f"{T}{c}", "key": f"{T}{c}-KEY"}
+    m_ = re.search(r"\[Med PSU ([^\]]+)\]", meta.get("original_name", ""))
+    label = m_.group(1) if m_ else str(c)  # combined archives show their whole range (e.g. 37-43)
 
     used, qs = set(), []
     for w in work["questions"]:
@@ -69,7 +71,7 @@ def main():
 
     set_name = f"{c}_{T}"
     out = {"meta": {"set_id": set_name, "block": B, "cohort": c, "type": T,
-                    "title": f"{T} {meta['block_name']} · Med PSU {c}",
+                    "title": f"{T} {meta['block_name']} · Med PSU {label}",
                     "generated_by": f"auditor/tools/build_kf.py from auditor/data/work/{a.set}.kf.json — do not edit by hand"},
            "questions": qs}
     tl = work.get("time_limit_min") or meta.get("time_limit_min")
@@ -82,7 +84,7 @@ def main():
     block = load(bdir / "block.json")
     papers = [x for x in block.get("papers", []) if x["id"] not in pid.values()]
     for role, f in meta["files"].items():
-        papers.append({"id": pid[role], "title": f"{'เฉลย ' if role == 'key' else ''}{T} {meta['block_name']} [Med PSU {c}]", "cohort": c,
+        papers.append({"id": pid[role], "title": f"{'เฉลย ' if role == 'key' else ''}{T} {meta['block_name']} [Med PSU {label}]", "cohort": c,
                        "type": T, "role": role, "pages": f["pages"], "drive_file_id": f["drive_file_id"], "drive_path": f["drive_path"]})
     papers.sort(key=lambda x: (-x["cohort"], x["type"], x["role"] != "exam"))
     block["papers"] = papers
