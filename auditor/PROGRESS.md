@@ -21,6 +21,24 @@
 | end_52_KF | ✓ 16 ข้อ 35 ข้อย่อย (ต้นฉบับ `projects/END/ข้อสอบ/KF` = ไฟล์เดียวกับ Drive) อ่านด้วยตาทุกหน้า | เห็นด้วยกับเฉลยทุกข้อ · เพิ่มคำตอบอื่นที่ถูก 10.1, 12.4, 13.2 · audit_note 13.1 (FNA vs TSH/US) | — | ✓ `build_kf.py` · MedLib v0.15.0 · รูปเฉลยข้อ 2.2 (native) | kel-end-kf-52 |
 | end_52_MCQ | ✓ 81/81 (text layer; key = ไฮไลต์ชมพู + โน้ตน้ำเงิน) | 62/0/0/5/0/14 · AI ตรงต้นฉบับ 67/67 | ✓ | ✓ json · report · pdf · MedLib | ดูแชท |
 
+## GI (เริ่ม 2026-11-07, ผู้ใช้สั่ง "ทำ block ต่อไปเรื่อยๆ" เลือก GI ครบ MCQ+KF+OSPE)
+- Drive: `preclinic/2/gi` — MCQ 10 ชุด (41-43, 44–52), KF 9, OSPE 7 · ไม่มี lecture · ไล่ด้วย `auditor/tools/drive_walk_api.py` (drive.google.com ถูกบล็อกใน cloud)
+- เฉลย GI 52 ไฮไลต์สีชมพูอมม่วง (g≈128) → ขยายช่วงสีใน `parse_key.py`
+- ข้อรูป: เปิดดูรูปในหน้า **ข้อสอบ** ก่อนตอบ blind (ชุด 52 ไม่ได้ดู → ข้อ 51–54 ตั้งเป็น source_unverified)
+
+| set_id | ข้อ | สถานะ |
+|---|---|---|
+| gi_52_MCQ | 100 | source_agree 86, source_disagree 5, source_unverified 4, skipped 5 |
+| gi_51_MCQ | 99 | recall · เฉลยวงแดงอ่านด้วยตา · source_agree 36, source_disagree 8, ai_generated 10, drafted 2, skipped 43 |
+| gi_50_MCQ | 101 | recall · เฉลยอ่านด้วยตา · source_agree 51, source_disagree 6, ai_generated 17, drafted 4, skipped 23 · needs_review 11 |
+| gi_49_MCQ | 65 | recall (65 จาก 128 ข้อ) · เฉลยอ่านด้วยตา · source_agree 52, source_disagree 5, ai_generated 6, drafted 1, skipped 1 · needs_review 7 |
+| gi_48_MCQ | 75 | recall (75 จาก 128) · เลขข้อไม่มีจุด → `parse_mcq/parse_key --bare-numbers` · ไฮไลต์เหลืองเขียว (parse_key อ่านได้แล้ว) ตรวจด้วยตาทุกหน้า · source_agree 58, source_disagree 11, ai_generated 4, drafted 2 · needs_review 12 |
+| gi_47_MCQ | 99 | ข้อสอบ 2 คอลัมน์ มีลายน้ำ (รูปต้องตัดจากหน้า ไม่ใช้ native) · เฉลยเป็นขีด / ด้วยมือ อ่านด้วยตา · source_agree 82, source_disagree 12, ai_generated 5 · needs_review 14 |
+| gi_46_MCQ | 78 | recall (78 จาก 129) · ไฮไลต์ชมพู parse_key อ่านได้ (ช้อยส์คอลัมน์ขวา/ตัวอักษรซ้ำ ตรวจด้วยตา) · source_agree 65, source_disagree 4, ai_generated 7, drafted 2 · needs_review 4 |
+| gi_45_MCQ | 46 | recall · ตัวอักษรไทยใน text layer เพี้ยน (U→้, j→่) แก้ใน parsed.json · ข้อ 28/29, 45/46 ติดกัน แยกด้วยมือ · เฉลยขีด / อ่านด้วยตา · ⚠ เปิดหน้าเฉลย 1, 10, 15 ก่อนตอบ (ข้อ 1–3, 28–31, 44–46 ติด needs_review) · source_agree 41, source_disagree 5 · needs_review 14 |
+| gi_44_MCQ | 73 | recall (เลข 2–125) · ไฮไลต์ส้มอ่อน (เพิ่มสีใน parse_key แต่ตัวอักษรสีเกือบดำทำให้ parse_key หาเลขข้อไม่เจอ → วัดสีเองต่อช้อยส์ + ดูด้วยตา) · แยกข้อ 32/67/82/100/102/104 ด้วยมือ · ไม่มีรูปใน PDF (ข้อ 78, 95) · source_agree 52, source_disagree 12, ai_generated 3, drafted 6 · needs_review 15 |
+| gi_41-43_MCQ | 229 | ไฟล์รวม 3 รุ่น (PART 1–3 เลขเริ่มใหม่ → `parse_mcq --part-offsets 0,100,300,400`; PART 4 = ข้อเขียนรุ่น 41 ไม่มีช้อยส์ ข้าม 20 ข้อ) · ไฮไลต์เหลืองวัดต่อช้อยส์ (สีทองเหลือบเขียวหลายเฉด) + อ่านโน้ตน้ำเงิน/แดงจาก text layer · ข้ามรวม 29 (กำกวม/ไม่มีเฉลย/ซ้ำ) · source_agree 166, source_disagree 26, drafted 6, ai_generated 2 · needs_review 38 · เลขข้อในแอป = ออฟเซ็ต (เช่น 301 = MED43 ข้อ 1) |
+
 ## Waiting for user
 - `REVIEW.md`: 89 รายการ (Endocrine MCQ ทุกรุ่น)
 - ✓ REVIEW 7 ข้อของ end_52_MCQ ตัดสินแล้ว (2026-11-07) อยู่ใน `data/decisions.json` · decision รองรับ `also_accept` (นับถูกหลายช้อยส์) ส่งเข้า MedLib เท่านั้น (psu-quiz JSON ยังเฉลยเดียว)

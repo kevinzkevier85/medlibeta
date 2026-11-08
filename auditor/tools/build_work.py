@@ -103,8 +103,8 @@ def main():
 
         if skipped:
             audit["answer_status"] = "skipped"
-            audit["audit_note"] = rep.get("skipped_reason")
-            q["issues"].append("ข้อนี้ผู้จำจำโจทย์ไม่ได้")
+            audit["audit_note"] = r.get("skip_reason") or rep.get("skipped_reason")
+            q["issues"].append(r.get("skip_reason") or "ข้อนี้ผู้จำจำโจทย์ไม่ได้")  # per-question reason when the paper is not a recall exam
         elif audit["ai_generated"] and qid not in decisions:
             # Rule 3.3: the original is only a recall note → AI wrote the full question (answer in the repair layer)
             q["correct"] = r.get("answer")
