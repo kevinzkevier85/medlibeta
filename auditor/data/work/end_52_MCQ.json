@@ -1939,7 +1939,7 @@
    "id": "end_52_MCQ_046",
    "number": "46",
    "sourceNumber": "46",
-   "stem": "A 65-year-old man arrives at the emergency department with several days of progressive weakness, confusion, and frequent urination. He has no known history of diabetes or other chronic diseases. On examination, he appears severely dehydrated. Laboratory tests reveal a blood glucose level of 460 mg/dL, normal arterial blood pH of 7.10, and negative serum ketones. What is the most likely diagnosis?",
+   "stem": "A 65-year-old man arrives at the emergency department with several days of progressive weakness, confusion, and frequent urination. He has no known history of diabetes or other chronic diseases. On examination, he appears severely dehydrated. Laboratory tests reveal a blood glucose level of 460 mg/dL, normal arterial blood pH of 7.38, and negative serum ketones. What is the most likely diagnosis?",
    "choices": {
     "A": "Diabetic ketoacidosis (DKA)",
     "B": "Hyperosmolar hyperglycemic state (HHS)",
@@ -1948,10 +1948,10 @@
     "E": "Hypoglycemic coma"
    },
    "correct": "B",
-   "explanation": "(Hyperosmolar hyperglycemic state)** — ผู้สูงอายุ glucose > 600 (ในโจทย์ 460) dehydration รุนแรง ซึม และ ketone (−) → HHS\nTrap: HHS pH มักมากกว่า 7.30; pH 7.10 จะเข้ากับ DKA มากกว่า",
+   "explanation": "Hyperosmolar hyperglycemic state — ผู้สูงอายุ glucose สูง dehydration รุนแรง ซึม ketone (−) pH ปกติ → HHS\nTrap: ถ้า pH < 7.30 + ketone (+) จะเป็น DKA",
    "image": null,
    "issues": [
-    "โจทย์ขัดกันเอง: เขียนว่า normal pH แต่ค่า 7.10"
+    "ต้นฉบับเขียนค่า pH 7.10 ซึ่งขัดกับคำว่า normal จึงแก้เป็น 7.38 (pH ปกติ) ให้ตรงกับเฉลย HHS"
    ],
    "audit": {
     "source_file": "preclinic/2/endocrine/mcq/ข้อสอบ mcq/MCQ_Endocrine [MED PSU 52].pdf",
@@ -1965,13 +1965,20 @@
     "ai_answer": "B",
     "ai_confidence": "medium",
     "ai_reason": "Glucose 460 ketone (−) ซึม dehydrated = HHS; แต่โจทย์เขียน 'normal pH 7.10' ขัดกันเอง (7.10 คือ acidosis) น่าจะจำผิด",
-    "audit_note": "'normal arterial blood pH of 7.10' ขัดกัน (7.10 = acidosis) น่าจะจำค่าผิด — ไม่ได้แก้ตัวเลขเพราะเปลี่ยนความหมาย; ทั้ง AI และต้นฉบับตอบ HHS จาก ketone (−)",
+    "audit_note": "แก้ pH 7.10 → 7.38 ตาม issue #26 (ผู้ใช้ขอแก้โจทย์) · ต้นฉบับและ AI ตอบ HHS",
     "why": null,
     "ai_generated": false,
     "ai_choices": [],
     "original_text": null,
     "filled_from": null,
-    "edits": [],
+    "edits": [
+     {
+      "field": "stem",
+      "old": "normal arterial blood pH of 7.10",
+      "new": "normal arterial blood pH of 7.38",
+      "why": "issue #26: ต้นฉบับเขียน 'normal pH of 7.10' ขัดกันเอง แก้ตัวเลขให้เข้ากับคำว่า normal และเฉลย HHS"
+     }
+    ],
     "duplicate_group": null,
     "off_block": false,
     "needs_review": true,

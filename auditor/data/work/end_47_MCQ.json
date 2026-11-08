@@ -248,19 +248,19 @@
     "D": "Decreased intracellular concentration of Ca2+",
     "E": "Pancreatic ß cell membrane depolarization"
    },
-   "correct": "A",
+   "correct": "E",
    "explanation": "(Pancreatic β-cell membrane depolarization)** — glibenclamide จับ SUR1 → ปิด K-ATP → depolarization → voltage-gated Ca²⁺ เปิด → Ca²⁺ ↑ → insulin exocytosis\nTrap: K-ATP ถูก 'ปิด' ไม่ใช่ activate",
    "image": null,
    "issues": [
-    "เฉลยขัดกับ AI"
+    "แก้เฉลยตาม issue #29: glibenclamide ปิด K-ATP → β-cell depolarization (E) · ตัวเลือก A ผิดเพราะ K-ATP ถูกปิด ไม่ใช่ activate"
    ],
    "audit": {
     "source_file": "preclinic/2/endocrine/mcq/ข้อสอบ mcq/MCQ_Endocrine [Med PSU 47].pdf",
     "page": 2,
     "key_file": "preclinic/2/endocrine/mcq/เฉลย mcq/เฉลย MCQ_Endocrine [Med PSU 47].pdf",
     "key_page": 2,
-    "answer_status": "source_disagree",
-    "answer_verified": false,
+    "answer_status": "corrected",
+    "answer_verified": true,
     "source_answer": "A",
     "source_answer_note": null,
     "ai_answer": "E",
@@ -287,8 +287,13 @@
     ],
     "duplicate_group": null,
     "off_block": false,
-    "needs_review": true,
-    "locked": false
+    "needs_review": false,
+    "locked": false,
+    "user_decision": {
+     "answer": "E",
+     "note": "แก้เฉลยตาม issue #29: glibenclamide ปิด K-ATP → β-cell depolarization (E) · ตัวเลือก A ผิดเพราะ K-ATP ถูกปิด ไม่ใช่ activate",
+     "date": "2026-11-08"
+    }
    }
   },
   {
