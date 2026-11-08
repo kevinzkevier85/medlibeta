@@ -60,9 +60,12 @@ def main():
 
     set_name = f"{c}_KF"
     out = {"meta": {"set_id": set_name, "block": B, "cohort": c, "type": "KF",
-                    "title": f"KF {meta['block_name']} · Med PSU {c}", "time_limit_min": work.get("time_limit_min") or meta.get("time_limit_min"),
+                    "title": f"KF {meta['block_name']} · Med PSU {c}",
                     "generated_by": f"auditor/tools/build_kf.py from auditor/data/work/{a.set}.kf.json — do not edit by hand"},
            "questions": qs}
+    tl = work.get("time_limit_min") or meta.get("time_limit_min")
+    if tl:  # leave it out when the paper does not say (the app treats a missing time as unknown)
+        out["meta"]["time_limit_min"] = tl
     (bdir / "exams" / f"{set_name}.json").write_text(json.dumps(out, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
 
     block = load(bdir / "block.json")
