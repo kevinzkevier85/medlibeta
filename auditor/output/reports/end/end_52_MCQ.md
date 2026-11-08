@@ -20,7 +20,7 @@ AI ตอบตรงกับเฉลยต้นฉบับ **67/67** ข้
 | 18 | D | D | low | โจทย์ไม่มีข้อมูลแยก CAH กับ Addison | lab ในโจทย์เข้าได้ทั้ง salt-wasting 21-OHD และ Addison disease; AI เลือก 21-OHD (ตรงกับเฉลย) เพราะอยู่ในชุดข้อ CAH แต่ถ้าข้อสอบจริงมีข้อมูลเพิ่ม (ambiguous genitalia, 17-OHP) ควรเติม |
 | 27 | C | C | medium | ช้อยส์ B อาจถูกด้วย | cortisol เพิ่มการสะสม glycogen ที่ตับ (ช้อยส์ B) ได้จริง — ถ้าข้อจริงเขียนว่า 'muscle glycogen' จะผิด; ต้นฉบับเลือก C ตรงกับ AI |
 | 32 | C | C | high | โจทย์อ้างถึงรูป แต่ไม่มีรูปในต้นฉบับ | โจทย์เขียน 'as shown in the photo' แต่ไฟล์ข้อสอบและเฉลยไม่มีรูปประกอบ ตอบได้จากคำบรรยายอย่างเดียว |
-| 46 | B | B | medium | โจทย์ขัดกันเอง: เขียนว่า normal pH แต่ค่า 7.10 | 'normal arterial blood pH of 7.10' ขัดกัน (7.10 = acidosis) น่าจะจำค่าผิด — ไม่ได้แก้ตัวเลขเพราะเปลี่ยนความหมาย; ทั้ง AI และต้นฉบับตอบ HHS จาก ketone (−) |
+| 46 | B | B | medium | ต้นฉบับเขียนค่า pH 7.10 ซึ่งขัดกับคำว่า normal จึงแก้เป็น 7.38 (pH ปกติ) ให้ตรงกับเฉลย HHS | แก้ pH 7.10 → 7.38 ตาม issue #26 (ผู้ใช้ขอแก้โจทย์) · ต้นฉบับและ AI ตอบ HHS |
 | 63 | A | A | medium | ช้อยส์ C อาจถูกด้วย | ทั้ง ketogenesis ↑ (A) และ gluconeogenesis ↑ (C) เกิดใน T1DM ที่ไม่ได้รักษา — มีคำตอบถูกมากกว่า 1 ตัว; ต้นฉบับเลือก A ตรงกับ AI |
 | 73 | E | E | medium | ช้อยส์ B อาจถูกด้วย | PTH ↓ ทำทั้ง bone resorption ↓ (B) และ gut Ca absorption ↓ ผ่าน vit D (E) — มีคำตอบถูกมากกว่า 1 ตัว; ต้นฉบับเลือก E ตรงกับ AI |
 | 81 | E | E | low | ช้อยส์ B กับ E เป็นการตรวจเดียวกัน | BMD test (B) วัดด้วย DXA (E) — ช้อยส์ซ้ำซ้อน ข้อจริงอาจเขียนต่างจากนี้; ต้นฉบับเลือก E ตรงกับ AI |
@@ -51,6 +51,7 @@ AI ตอบตรงกับเฉลยต้นฉบับ **67/67** ข้
 | 20 | stem | What is the most likely diagnosis? (ถามประมาณว่า 11β-hydroxylase ใช้ไม่ได้ จะเกิดอะไรขึ้น) | What is the most likely diagnosis? |
 | 35 | stem | through which of the following mechanisms? (จำช้อยไม่ได้ แต่พยายามเติมให้) | through which of the following mechanisms? |
 | 42 | choices | ตาราง 5 คอลัมน์ในต้นฉบับ (text layer อ่านเป็นข้อความต่อกัน) | แปลงแต่ละแถวเป็นข้อความในช้อยส์ A–E |
+| 46 | stem | normal arterial blood pH of 7.10 | normal arterial blood pH of 7.38 |
 | 69 | stem | at this site? (จำได้ ไม่หมด แต่เติมช้อยให้แล้ว) | at this site? |
 | 70 | stem | Which of following lipoprotein particles involved in storing fat after eating a meal? | Which of the following lipoprotein particles is involved in storing fat after eating a meal? |
 | 75 | stem | Which of the following factors associated with this condition? (ไม่แน่ใจ) | Which of the following factors is associated with this condition? |

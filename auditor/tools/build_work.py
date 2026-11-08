@@ -16,6 +16,18 @@ def load(p, default=None):
     return json.loads(p.read_text(encoding="utf-8")) if p.exists() else default
 
 
+# PDF text layers with a broken Thai font map tone marks to Latin/symbol glyphs (seen in end_42-43_MCQ:
+# "เปyน" = เป็น, "ขWอ" = ข้อ, "ไมf" = ไม่). Only a glyph right after a Thai letter is replaced, and a Latin
+# letter only when no Latin letter follows it, so English words next to Thai ("ดูfilm") are left alone.
+THAI_GLYPHS = {"W": "\u0e49", "f": "\u0e48", "y": "\u0e47", "n": "\u0e48", "_": "\u0e4c", "\u2021": "\u0e35",
+               "\u2014": "\u0e48", "}": "\u0e48", "\u2022": "\u0e49", "\u017e": "\u0e31"}
+_GLYPH = re.compile(r"(?<=[\u0e01-\u0e4e])(?:[Wfyn](?![A-Za-z])|[_\u2021\u2014}\u2022\u017e])")
+
+
+def fix_thai(t):
+    return _GLYPH.sub(lambda m: THAI_GLYPHS[m.group()], t) if t else t
+
+
 def apply_edit(q, e):
     f = e["field"]
     if f == "stem":
@@ -70,6 +82,8 @@ def main():
              "choices": {L: "" for L in "ABCDE"}, "correct": None,
              "explanation": r.get("explanation", ""), "image": None, "issues": list(r.get("issues", []))}
         q["choices"].update(r.get("choices_override", pq["choices"]))
+        q["stem"] = fix_thai(q["stem"])
+        q["choices"] = {L: fix_thai(v) for L, v in q["choices"].items()}
         if qid in images:   # cropped by crop_images.py; path is relative to the MedLib block folder
             c = meta.get("medlib_cohort") or meta["cohort"]
             q["image"] = f"img/{meta['block'].upper()}-{c}-{meta['type']}-{int(n):03d}.jpg"

@@ -1702,19 +1702,19 @@
     "D": "Diabetes of undetermined cause",
     "E": "Insulin-dependent diabetes mellitus"
    },
-   "correct": "A",
+   "correct": "C",
    "explanation": "(Other specific type of diabetes)** — DM จาก pancreatectomy = diseases of the exocrine pancreas (type 3c) ใน ADA classification\nTrap: ต้องฉีด insulin แต่ไม่ใช่ T1DM (autoimmune)",
    "image": null,
    "issues": [
-    "เฉลยขัดกับ AI"
+    "แก้เฉลยตาม issue #28: DM หลัง total pancreatectomy = other specific type (โรคของตับอ่อนส่วน exocrine) แม้ต้องฉีด insulin"
    ],
    "audit": {
     "source_file": "preclinic/2/endocrine/mcq/ข้อสอบ mcq/MCQ_Endocrine [Med PSU 49].pdf",
     "page": 10,
     "key_file": "preclinic/2/endocrine/mcq/เฉลย mcq/เฉลย MCQ_Endocrine [Med PSU 49].pdf",
     "key_page": 10,
-    "answer_status": "source_disagree",
-    "answer_verified": false,
+    "answer_status": "corrected",
+    "answer_verified": true,
     "source_answer": "A",
     "source_answer_note": null,
     "ai_answer": "C",
@@ -1741,8 +1741,13 @@
     ],
     "duplicate_group": null,
     "off_block": false,
-    "needs_review": true,
-    "locked": false
+    "needs_review": false,
+    "locked": false,
+    "user_decision": {
+     "answer": "C",
+     "note": "แก้เฉลยตาม issue #28: DM หลัง total pancreatectomy = other specific type (โรคของตับอ่อนส่วน exocrine) แม้ต้องฉีด insulin",
+     "date": "2026-11-08"
+    }
    }
   },
   {
