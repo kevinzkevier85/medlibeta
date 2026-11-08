@@ -1,6 +1,6 @@
 # REVIEW — รายการรอผู้ใช้ตัดสิน
 
-ทั้งหมด 89 รายการ
+ทั้งหมด 275 รายการ
 วิธีตอบ: พิมพ์ในแชทเป็นบรรทัด เช่น `end_52_MCQ_027: คงเดิม` / `end_52_MCQ_063: C` / `end_52_MCQ_046: ตรวจใหม่`
 Claude จะบันทึกลง `auditor/data/decisions.json` แล้ว build ใหม่
 
@@ -19,8 +19,6 @@ Claude จะบันทึกลง `auditor/data/decisions.json` แล้ว
 | end_42-43_MCQ_066 | ['C', 'E'] | C | high | ผู้เฉลยวงไว้ 2 ตัว (C, E); ต้นฉบับวงไว้หลายตัว |   |
 | end_42-43_MCQ_076 | ['C', 'D'] | C | high | ผู้เฉลยวงไว้ 2 ตัว (C, D); ต้นฉบับวงไว้หลายตัว |   |
 | end_42-43_MCQ_077 | None | None | None | AI เขียนข้อนี้ขึ้นใหม่จากโน้ตความจำในต้นฉบับ |  — A: ถูก; B: GI side effect; C: hypoglycemia; D: hypoglycemia; E: edema/HF |
-| end_42-43_MCQ_079 | A | None | None | ช้อยส์ B, C, D, E AI เติมให้ครบ 5 ตัว; เฉลยขัดกับ AI |   |
-| end_42-43_MCQ_084 | B | None | None | ช้อยส์ A, B, C, D, E AI เติมให้ครบ 5 ตัว; เฉลยขัดกับ AI |   |
 | end_42-43_MCQ_090 | A | B | medium | เฉลยขัดกับ AI | เฉลยต้นฉบับวง A (additive) อ้าง PubMed ว่า GH และ cortisol เพิ่ม lipolysis แบบ additive; AI เลือก B (synergistic/permissive) — ขึ้นกับที่ lecture สอน — A: additive (ตามงานวิจัยที่อ้าง); B: synergistic/permissive; C: ไม่ใช่; D: ไม่ใช่ศัพท์มาตรฐาน; E: ไม่ใช่ |
 | end_42-43_MCQ_105 | ['A', 'C'] | A | medium | ผู้เฉลยวงไว้ 2 ตัว (A, C); ต้นฉบับวงไว้หลายตัว |   |
 | end_42-43_MCQ_108 | None | None | None | AI เขียนข้อนี้ขึ้นใหม่จากโน้ตความจำในต้นฉบับ |  — A: K⁺ ต่ำ; B: ถูก; C: ไม่บวมเพราะ escape; D: renin ถูกกด; E: เกิด metabolic alkalosis |
@@ -51,7 +49,6 @@ Claude จะบันทึกลง `auditor/data/decisions.json` แล้ว
 | end_46_MCQ_043 | A | A | low | ไม่มี BMD (DXA) ในช้อยส์ ซึ่งเป็นการตรวจหลัก |   |
 | end_46_MCQ_049 | A | D | high | ช้อยส์ E AI เติมให้ครบ 5 ตัว; เฉลยขัดกับ AI | เฉลยต้นฉบับวง A (preserve bone mass) โดยแปะสไลด์ที่ list เป้าหมาย 4 ข้อ (preserve bone mass, prevent fractures, decrease pain, maintain function) — ตาม guideline เป้าหมายหลัก (primary) คือป้องกัน fracture (D) ขึ้นกับสไลด์ที่สอน — A: เป็นเป้าหมายรอง/วิธีการ (อยู่บนสุดของสไลด์); B: เป้าหมายรอง; C: เป้าหมายรอง; D: เป้าหมายหลักตาม guideline; E: ไม่ใช่เป้าหมาย |
 | end_47_MCQ_002 | A | E | medium | ถ้อยคำโจทย์น่าจะขาดคำว่า 'not' (iodine is NOT indicated as sole therapy); เฉลยขัดกับ AI | เฉลยต้นฉบับวง A (enhanced Wolff-Chaikoff block) — ถ้าโจทย์ถามว่าทำไม iodide ใช้ได้ผล A ถูก; แต่ถ้าถามว่าทำไม 'ไม่ใช้เป็นยาเดี่ยว' (ตามหลักเภสัช) คำตอบคือ escape phenomenon (E) ถ้อยคำในต้นฉบับกำกวม — A: เป็นกลไกที่ทำให้ iodide ได้ผล (ถ้าโจทย์ถามข้อดี); B: iodide ลด vascularity; C: เป็นของ RAI; D: ไม่ใช่เหตุผลหลัก; E: escape ใน 1–2 สัปดาห์ จึงใช้เดี่ยวไม่ได้ |
-| end_47_MCQ_006 | A | E | high | เฉลยขัดกับ AI | เฉลยต้นฉบับวง A (ATP-gated K⁺ channel is activated) ซึ่งผิดทิศ — sulfonylurea ปิด K-ATP ทำให้ depolarization (E) ข้อเดียวกันในรุ่น 50 (ข้อ 36) เฉลยเลือก depolarization — A: ผิดทิศ — K-ATP ถูกปิด; B: insulin หลั่งโดย exocytosis ที่กระตุ้นด้วย Ca²⁺ ไม่ใช่ผ่าน channel; C: ผิดทิศ — Ca²⁺ channel เปิด; D: ผิดทิศ — Ca²⁺ เพิ่มขึ้น; E: ถูก |
 | end_47_MCQ_012 | A | E | medium | ไม่มีช้อยส์ที่ตรงที่สุด (TG ใน chylomicron ไม่ถูกย่อย); เฉลยขัดกับ AI | เฉลยต้นฉบับวง A (chylomicron remnant uptake ผิดปกติ = type III) แต่ภาพ milky fasting serum + eruptive xanthoma + abdominal pain ในเด็กเข้ากับ LPL deficiency (type I) มากกว่า ช้อยส์ที่ใกล้ที่สุดคือ E — A: type III: remnant ค้าง แต่ serum ไม่ milky และพบในผู้ใหญ่; B: abetalipoproteinemia ไม่มี chylomicron (TG ต่ำ); C: Tangier disease (HDL ต่ำ ต่อมทอนซิลสีส้ม); D: เป็นส่วนของ type III; E: LPL ย่อยไม่ได้ (ใกล้ type I ที่สุด) |
 | end_47_MCQ_020 | E | B | high | เฉลยขัดกับ AI | เฉลยต้นฉบับวง E (FRAX Thailand) — FRAX เป็นเครื่องมือทำนายความเสี่ยง 10 ปีที่ใช้จริงในไทย ส่วน BMD T-score ที่ femoral neck เป็นตัวพยากรณ์มาตรฐานของ WHO; ขึ้นกับว่า lecture ใช้คำว่า 'standard predictor' กับอะไร อาจนับถูกทั้ง B และ E — A: ไม่ใช่ตัวพยากรณ์มาตรฐาน; B: WHO standard (femoral neck T-score); C: Z-score ไม่ใช้ในหญิงหลังหมดประจำเดือน; D: เป็นแค่ปัจจัยเสี่ยง; E: FRAX ใช้ทำนายความเสี่ยง 10 ปี (ใช้ BMD femoral neck ร่วมได้) |
 | end_47_MCQ_033 | None | D | low | ตารางผล Na/K หายไปจากต้นฉบับ ตอบได้ไม่แน่นอน; ในเฉลยต้นฉบับไม่ได้วงคำตอบ (เขียนว่าโจทย์ไม่ครบ); ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |  — A: secondary AI BP ต่ำ; B: renin สูง เช่น renal artery stenosis — ต้องดู renin; C: BP ต่ำ; D: HT + (สมมติ) K ต่ำ; E: ขึ้นกับชนิด |
@@ -66,7 +63,6 @@ Claude จะบันทึกลง `auditor/data/decisions.json` แล้ว
 | end_49_MCQ_028 | E | B | high | เฉลยขัดกับ AI | เฉลยต้นฉบับวง e (ACTH) โดยเขียน pituitary tumor → ACTH ↑ — แต่คางยื่น มือเท้าใหญ่ คือ acromegaly จาก GH (B) — A: ไม่เกี่ยว; B: ถูก — acromegaly; C: ไม่เข้ากับอาการ; D: prolactinoma ไม่ทำ acromegaly; E: ทำ Cushing ไม่ใช่ acromegaly |
 | end_49_MCQ_029 | E | C | high | เฉลยขัดกับ AI | เฉลยต้นฉบับวง e (decrease calcium absorption) โดยแปะสไลด์ bone/calcium — แต่ muscle pain และ weakness จาก dexamethasone ระยะยาวคือ steroid myopathy (protein catabolism, C) — A: ไม่ใช่กลไกหลัก; B: เป็นกลไกของ statin myopathy; C: ถูก — steroid myopathy; D: ไม่ใช่กลไกหลัก; E: ทำให้ osteoporosis |
 | end_49_MCQ_031 | None | A | medium | ตัวกระตุ้นโดยตรงที่สุดคือ hypoglycemia ซึ่งไม่มีในช้อยส์; ในเฉลยต้นฉบับไม่ได้วงคำตอบ (ใส่ ?); ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |  — A: intra-islet insulin ↓ ปลด inhibition; B: ยับยั้ง glucagon; C: FFA สูงยับยั้งเล็กน้อย; D: ยับยั้ง glucagon; E: กระตุ้นได้ (vagal) แต่ไม่ใช่ตัวหลักใน fasting |
-| end_49_MCQ_036 | A | C | high | เฉลยขัดกับ AI | เฉลยต้นฉบับกากบาท a (type 1 diabetes) — ตาม ADA classification DM หลัง total pancreatectomy เป็น other specific type (C) ข้อเดียวกันในรุ่น 46, 47, 50 เฉลย C — A: T1DM = autoimmune β-cell destruction; B: ไม่ใช่; C: ถูก; D: ทราบสาเหตุ; E: คำเก่าที่ไม่ใช้แล้ว |
 | end_50_MCQ_003 | None | D | high | ในเฉลยต้นฉบับผู้จำเขียนว่าจำช้อยส์ไม่ได้เลย ช้อยส์ในไฟล์ข้อสอบอาจแต่งขึ้น; ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |  — A: Gs/cAMP คลาย smooth muscle; B: Gi ไม่ใช่ทางของ oxytocin; C: ไม่ใช่กลไกของ oxytocin; D: ถูก; E: JAK-STAT เป็นของ GH/prolactin/cytokine |
 | end_50_MCQ_009 | E | C | medium | ถ้อยคำโจทย์กำกวม: 'TRH markedly increase when she is given'; เฉลยขัดกับ AI | เฉลยต้นฉบับเลือก E (pituitary) โดยตีความว่า TRH สูง TSH ต่ำ = pituitary เสีย; แต่ถ้าโจทย์หมายถึง TRH stimulation test แล้ว TSH ขึ้นมาก จะเป็น hypothalamus (C) — ขึ้นกับถ้อยคำจริง — A: อาการเป็น hypothyroid; B: อาการเป็น hypothyroid; C: ถ้า TSH ตอบสนอง TRH ดี → hypothalamus; D: primary hypothyroid TSH จะสูง; E: ถ้า TRH ในเลือดสูงแต่ TSH ต่ำ → pituitary (การตีความของเฉลยต้นฉบับ) |
 | end_50_MCQ_011 | A | B | high | เฉลยขัดกับ AI | เฉลยต้นฉบับเลือก A (Graves) จาก lab ที่เป็น hyperthyroid แต่ไม่ได้ใช้อาการปวดคอและต่อมกดเจ็บ ซึ่งเป็นลักษณะเฉพาะของ subacute thyroiditis (B) — ทั้งสองโรคมี FT4 ↑ TSH ↓ — A: thyrotoxicosis ได้ แต่ต่อมไม่เจ็บ; B: ปวดคอ + ต่อมกดเจ็บ + thyrotoxicosis; C: มักเป็นก้อน ไม่มี thyrotoxicosis; D: มักเป็นก้อน ไม่มี thyrotoxicosis; E: มัก hypothyroid ไม่ปวด |
@@ -95,3 +91,193 @@ Claude จะบันทึกลง `auditor/data/decisions.json` แล้ว
 | end_51_MCQ_071 | None | A | low | หน้าเฉลยต้นฉบับขาดหลังช้อยส์ A ไม่ทราบตัวที่เลือก; ถ้อยคำโจทย์กำกวม (chylomicron ก็ขน TG); ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ | เฉลยต้นฉบับหมดที่หน้า 12 (หลังช้อยส์ A) มีแต่โน้ต 'storage energy = Triglyceride' — ทั้ง VLDL และ chylomicron ขน TG; AI เลือก VLDL ความมั่นใจต่ำ — A: TG จากตับ ไปเก็บที่ adipose; B: IDL เป็นตัวกลางระหว่าง VLDL กับ LDL; C: HDL ขน cholesterol กลับตับ; D: LDL ขน cholesterol ไป peripheral; E: ขน TG จากอาหาร — ถ้าโจทย์หมายถึงหลังกินอาหาร ตัวนี้จะถูก |
 | end_51_MCQ_074 | None | None | None | ต้นฉบับจำช้อยส์ได้ตัวเดียว และเฉลยหมดก่อนถึงข้อนี้; AI เขียนข้อนี้ขึ้นใหม่จากโน้ตความจำในต้นฉบับ |  — A: OPG ลดลง; B: ถูก; C: osteoclast อายุยืนขึ้นเมื่อขาด estrogen; D: ไม่ใช่กลไกหลัก; E: ไม่ใช่กลไกหลัก |
 | end_51_MCQ_075 | None | A | high | เฉลยต้นฉบับหมดก่อนถึงข้อนี้; ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |  — A: ถูก; B: remodeling ไม่เปลี่ยนขนาด/รูปร่าง; C: เป็นส่วนหนึ่งของ modeling เท่านั้น; D: ไม่เกี่ยวข้อง; E: ไม่เกี่ยวข้อง |
+| gi_41-43_MCQ_001 | None | B | low | ช้อยส์ E AI เติมให้ครบ 5 ตัว; ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| gi_41-43_MCQ_005 | D | C | low | ช้อยส์ E AI เติมให้ครบ 5 ตัว; เฉลยขัดกับ AI |   |
+| gi_41-43_MCQ_011 | C | D | high | เฉลยขัดกับ AI |   |
+| gi_41-43_MCQ_028 | None | A | low | AI เขียนข้อนี้ขึ้นใหม่จากโน้ตความจำในต้นฉบับ |   |
+| gi_41-43_MCQ_029 | D | A | med | เฉลยขัดกับ AI |   |
+| gi_41-43_MCQ_030 | E | A | low | เฉลยขัดกับ AI |   |
+| gi_41-43_MCQ_101 | D | C | med | เฉลยขัดกับ AI |   |
+| gi_41-43_MCQ_122 | E | C | med | เฉลยขัดกับ AI |   |
+| gi_41-43_MCQ_128 | None | D | high | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| gi_41-43_MCQ_137 | A | D | high | เฉลยขัดกับ AI |   |
+| gi_41-43_MCQ_141 | E | E | low |  |   |
+| gi_41-43_MCQ_150 | None | C | high | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| gi_41-43_MCQ_162 | E | C | med | เฉลยขัดกับ AI |   |
+| gi_41-43_MCQ_167 | A | D | low | เฉลยขัดกับ AI |   |
+| gi_41-43_MCQ_168 | ['B', 'C', 'D'] | D | high | ต้นฉบับวงไว้หลายตัว |   |
+| gi_41-43_MCQ_173 | A | E | high | เฉลยขัดกับ AI |   |
+| gi_41-43_MCQ_179 | B | D | med | เฉลยขัดกับ AI |   |
+| gi_41-43_MCQ_192 | None | A | low | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| gi_41-43_MCQ_193 | C | B | high | เฉลยขัดกับ AI |   |
+| gi_41-43_MCQ_211 | D | A | med | เฉลยขัดกับ AI |   |
+| gi_41-43_MCQ_213 | C | B | high | ช้อยส์ E AI เติมให้ครบ 5 ตัว; เฉลยขัดกับ AI |   |
+| gi_41-43_MCQ_215 | C | B | high | ช้อยส์ D, E AI เติมให้ครบ 5 ตัว; เฉลยขัดกับ AI |   |
+| gi_41-43_MCQ_306 | B | B | low |  |   |
+| gi_41-43_MCQ_324 | A | E | high | เฉลยขัดกับ AI |   |
+| gi_41-43_MCQ_330 | C | A | low | เฉลยขัดกับ AI |   |
+| gi_41-43_MCQ_336 | A | E | high | เฉลยขัดกับ AI |   |
+| gi_41-43_MCQ_339 | D | D | med |  |   |
+| gi_41-43_MCQ_341 | E | B | med | เฉลยขัดกับ AI |   |
+| gi_41-43_MCQ_346 | E | A | med | เฉลยขัดกับ AI |   |
+| gi_41-43_MCQ_348 | B | B | low |  |   |
+| gi_41-43_MCQ_350 | D | C | med | เฉลยขัดกับ AI |   |
+| gi_41-43_MCQ_355 | None | Blastocystis hominis | med | AI เขียนข้อนี้ขึ้นใหม่จากโน้ตความจำในต้นฉบับ |   |
+| gi_41-43_MCQ_367 | D | E | high | เฉลยขัดกับ AI |   |
+| gi_41-43_MCQ_368 | E | B | low | เฉลยขัดกับ AI |   |
+| gi_41-43_MCQ_369 | None | A | high | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| gi_41-43_MCQ_370 | None | A | med | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| gi_41-43_MCQ_373 | A | B | high | เฉลยขัดกับ AI |   |
+| gi_41-43_MCQ_380 | E | C | high | เฉลยขัดกับ AI |   |
+| gi_44_MCQ_010 | C | D | high | เฉลยขัดกับ AI |   |
+| gi_44_MCQ_014 | None | D | low | ช้อยส์ E AI เติมให้ครบ 5 ตัว; ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| gi_44_MCQ_015 | B | Pancreatic duct | med | AI เขียนข้อนี้ขึ้นใหม่จากโน้ตความจำในต้นฉบับ |   |
+| gi_44_MCQ_019 | None | E | low | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| gi_44_MCQ_027 | C | E | low | ช้อยส์ B AI เติมให้ครบ 5 ตัว; เฉลยขัดกับ AI |   |
+| gi_44_MCQ_034 | A | C | low | เฉลยขัดกับ AI |   |
+| gi_44_MCQ_047 | B | B | med | ช้อยส์ A, D, E AI เติมให้ครบ 5 ตัว |   |
+| gi_44_MCQ_048 | A | D | low | ช้อยส์ E AI เติมให้ครบ 5 ตัว; เฉลยขัดกับ AI |   |
+| gi_44_MCQ_053 | D | B | high | เฉลยขัดกับ AI |   |
+| gi_44_MCQ_058 | None | B | low | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| gi_44_MCQ_062 | A | C | low | เฉลยขัดกับ AI |   |
+| gi_44_MCQ_063 | None | Clostridioides difficile | high | AI เขียนข้อนี้ขึ้นใหม่จากโน้ตความจำในต้นฉบับ |   |
+| gi_44_MCQ_078 | None | B | low | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ | ต้นฉบับอ้างภาพ plain film แต่ไม่มีรูป และไม่มีเฉลย  |
+| gi_44_MCQ_085 | D | B | med | เฉลยขัดกับ AI |   |
+| gi_44_MCQ_089 | D | E | high | เฉลยขัดกับ AI |   |
+| gi_44_MCQ_095 | D | E | low | เฉลยขัดกับ AI |   |
+| gi_44_MCQ_103 | C | A | low | เฉลยขัดกับ AI |   |
+| gi_44_MCQ_110 | None | B | high | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| gi_44_MCQ_116 | A | C | high | ช้อยส์ E AI เติมให้ครบ 5 ตัว; เฉลยขัดกับ AI |   |
+| gi_44_MCQ_117 | D | E | med | เฉลยขัดกับ AI |   |
+| gi_44_MCQ_121 | None | Pyridoxine (vitamin B6) | high | AI เขียนข้อนี้ขึ้นใหม่จากโน้ตความจำในต้นฉบับ | ต้นฉบับไม่มีรูปโครงสร้างโมเลกุล และไม่มีเฉลย AI เขียนโจทย์ใหม่ให้ตอบได้โดยไม่ต้องดูรูป  |
+| gi_44_MCQ_125 | None | B | high | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| gi_45_MCQ_001 | A | A | high | ช้อยส์ D, E AI เติมให้ครบ 5 ตัว | AI เปิดหน้าเฉลยก่อนตอบข้อนี้ (ผิดขั้นตอน) จึงไม่นับว่าตรวจซ้ำอิสระ  |
+| gi_45_MCQ_002 | D | D | high |  | AI เปิดหน้าเฉลยก่อนตอบข้อนี้ (ผิดขั้นตอน) จึงไม่นับว่าตรวจซ้ำอิสระ  |
+| gi_45_MCQ_003 | D | D | med |  | AI เปิดหน้าเฉลยก่อนตอบข้อนี้ (ผิดขั้นตอน) จึงไม่นับว่าตรวจซ้ำอิสระ  |
+| gi_45_MCQ_006 | C | A | low | เฉลยขัดกับ AI |   |
+| gi_45_MCQ_012 | A | B | low | ช้อยส์ D, E AI เติมให้ครบ 5 ตัว; เฉลยขัดกับ AI |   |
+| gi_45_MCQ_020 | B | A | med | เฉลยขัดกับ AI |   |
+| gi_45_MCQ_022 | A | B | low | ช้อยส์ E AI เติมให้ครบ 5 ตัว; เฉลยขัดกับ AI |   |
+| gi_45_MCQ_028 | C | C | high | ช้อยส์ D, E AI เติมให้ครบ 5 ตัว | AI เปิดหน้าเฉลยก่อนตอบข้อนี้ (ผิดขั้นตอน) จึงไม่นับว่าตรวจซ้ำอิสระ  |
+| gi_45_MCQ_029 | B | B | high |  | AI เปิดหน้าเฉลยก่อนตอบข้อนี้ (ผิดขั้นตอน) จึงไม่นับว่าตรวจซ้ำอิสระ  |
+| gi_45_MCQ_030 | C | C | high | ช้อยส์ D, E AI เติมให้ครบ 5 ตัว | AI เปิดหน้าเฉลยก่อนตอบข้อนี้ (ผิดขั้นตอน) จึงไม่นับว่าตรวจซ้ำอิสระ  |
+| gi_45_MCQ_031 | D | E | med | เฉลยขัดกับ AI |   |
+| gi_45_MCQ_044 | B | B | med |  | AI เปิดหน้าเฉลยก่อนตอบข้อนี้ (ผิดขั้นตอน) จึงไม่นับว่าตรวจซ้ำอิสระ  |
+| gi_45_MCQ_045 | C | C | high | ช้อยส์ E AI เติมให้ครบ 5 ตัว | AI เปิดหน้าเฉลยก่อนตอบข้อนี้ (ผิดขั้นตอน) จึงไม่นับว่าตรวจซ้ำอิสระ  |
+| gi_45_MCQ_046 | E | E | high |  | AI เปิดหน้าเฉลยก่อนตอบข้อนี้ (ผิดขั้นตอน) จึงไม่นับว่าตรวจซ้ำอิสระ  |
+| gi_46_MCQ_018 | None | C | high | ช้อยส์ E AI เติมให้ครบ 5 ตัว; ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| gi_46_MCQ_022 | A | D | med | เฉลยขัดกับ AI |   |
+| gi_46_MCQ_027 | D | C | med | ช้อยส์ E AI เติมให้ครบ 5 ตัว; เฉลยขัดกับ AI |   |
+| gi_46_MCQ_030 | None | Stellate cell | high | AI เขียนข้อนี้ขึ้นใหม่จากโน้ตความจำในต้นฉบับ |   |
+| gi_46_MCQ_033 | None | Gastrocolic reflex | high | AI เขียนข้อนี้ขึ้นใหม่จากโน้ตความจำในต้นฉบับ |   |
+| gi_46_MCQ_036 | None | Intestinal metaplasia with goblet cells | high | AI เขียนข้อนี้ขึ้นใหม่จากโน้ตความจำในต้นฉบับ |   |
+| gi_46_MCQ_055 | None | Reversion to virulent (wild-type-like) virus | high | AI เขียนข้อนี้ขึ้นใหม่จากโน้ตความจำในต้นฉบับ |   |
+| gi_46_MCQ_056 | None | Overuse and degeneration of enlarged surviving motor units | low | AI เขียนข้อนี้ขึ้นใหม่จากโน้ตความจำในต้นฉบับ |   |
+| gi_46_MCQ_061 | D | C | low | เฉลยขัดกับ AI |   |
+| gi_46_MCQ_067 | None | Metronidazole | high | AI เขียนข้อนี้ขึ้นใหม่จากโน้ตความจำในต้นฉบับ |   |
+| gi_46_MCQ_068 | None | Lactulose | high | AI เขียนข้อนี้ขึ้นใหม่จากโน้ตความจำในต้นฉบับ |   |
+| gi_46_MCQ_069 | C | A | high | เฉลยขัดกับ AI |   |
+| gi_46_MCQ_074 | None | C | high | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| gi_47_MCQ_001 | D | A | high | เฉลยขัดกับ AI |   |
+| gi_47_MCQ_004 | D | C | med | เฉลยขัดกับ AI |   |
+| gi_47_MCQ_006 | E | C | high | เฉลยขัดกับ AI |   |
+| gi_47_MCQ_015 | None | Terminal digestion and nutrient absorption | med | AI เขียนข้อนี้ขึ้นใหม่จากโน้ตความจำในต้นฉบับ |   |
+| gi_47_MCQ_017 | B | A | med | ช้อยส์ C, D, E AI เติมให้ครบ 5 ตัว; เฉลยขัดกับ AI |   |
+| gi_47_MCQ_020 | B | C | high | เฉลยขัดกับ AI |   |
+| gi_47_MCQ_033 | D | A | low | เฉลยขัดกับ AI |   |
+| gi_47_MCQ_041 | None | Elimination of H. pylori | med | AI เขียนข้อนี้ขึ้นใหม่จากโน้ตความจำในต้นฉบับ |   |
+| gi_47_MCQ_042 | D | D | low |  |   |
+| gi_47_MCQ_045 | B | A | low | เฉลยขัดกับ AI |   |
+| gi_47_MCQ_049 | D | E | low | เฉลยขัดกับ AI |   |
+| gi_47_MCQ_058 | None | HCN | high | AI เขียนข้อนี้ขึ้นใหม่จากโน้ตความจำในต้นฉบับ |   |
+| gi_47_MCQ_059 | None | Block voltage-gated sodium channel | med | AI เขียนข้อนี้ขึ้นใหม่จากโน้ตความจำในต้นฉบับ |   |
+| gi_47_MCQ_061 | E | C | med | เฉลยขัดกับ AI |   |
+| gi_47_MCQ_074 | B | C | low | ช้อยส์ E AI เติมให้ครบ 5 ตัว; เฉลยขัดกับ AI |   |
+| gi_47_MCQ_078 | B | D | high | เฉลยขัดกับ AI |   |
+| gi_47_MCQ_085 | None | Inhibit gastric H+/K+ ATPase | high | AI เขียนข้อนี้ขึ้นใหม่จากโน้ตความจำในต้นฉบับ |   |
+| gi_47_MCQ_087 | D | B | high | เฉลยขัดกับ AI |   |
+| gi_47_MCQ_098 | B | B | low |  |   |
+| gi_48_MCQ_008 | None | C | high | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| gi_48_MCQ_016 | D | C | low | ช้อยส์ E AI เติมให้ครบ 5 ตัว; เฉลยขัดกับ AI |   |
+| gi_48_MCQ_017 | E | A | high | ช้อยส์ E AI เติมให้ครบ 5 ตัว; เฉลยขัดกับ AI |   |
+| gi_48_MCQ_019 | B | E | high | เฉลยขัดกับ AI |   |
+| gi_48_MCQ_022 | B | E | med | เฉลยขัดกับ AI |   |
+| gi_48_MCQ_026 | None | A | low | AI เขียนข้อนี้ขึ้นใหม่จากโน้ตความจำในต้นฉบับ |   |
+| gi_48_MCQ_031 | None | AST/ALT > 2 | med | AI เขียนข้อนี้ขึ้นใหม่จากโน้ตความจำในต้นฉบับ |   |
+| gi_48_MCQ_032 | None | Urine bilirubin negative, urobilinogen increased | low | AI เขียนข้อนี้ขึ้นใหม่จากโน้ตความจำในต้นฉบับ |   |
+| gi_48_MCQ_039 | C | E | med | เฉลยขัดกับ AI |   |
+| gi_48_MCQ_044 | ['A', 'B'] | A | high | ต้นฉบับวงไว้หลายตัว |   |
+| gi_48_MCQ_045 | C | B | low | เฉลยขัดกับ AI |   |
+| gi_48_MCQ_048 | None | Blastocystis hominis | low | AI เขียนข้อนี้ขึ้นใหม่จากโน้ตความจำในต้นฉบับ |   |
+| gi_48_MCQ_058 | C | D | low | เฉลยขัดกับ AI |   |
+| gi_48_MCQ_060 | A | B | high | ช้อยส์ E AI เติมให้ครบ 5 ตัว; เฉลยขัดกับ AI |   |
+| gi_48_MCQ_070 | A | C | high | เฉลยขัดกับ AI |   |
+| gi_48_MCQ_071 | None | A | high | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| gi_48_MCQ_073 | D | A | low | ช้อยส์ E AI เติมให้ครบ 5 ตัว; เฉลยขัดกับ AI |   |
+| gi_49_MCQ_003 | E | D | low | เฉลยขัดกับ AI | ลบหัวกระดาษที่ติดมากับช้อยส์ E  |
+| gi_49_MCQ_035 | None | Small intestine (Ascaris lumbricoides) | med | AI เขียนข้อนี้ขึ้นใหม่จากโน้ตความจำในต้นฉบับ |   |
+| gi_49_MCQ_043 | A | B | med | เฉลยขัดกับ AI |   |
+| gi_49_MCQ_045 | A | C | med | เฉลยขัดกับ AI |   |
+| gi_49_MCQ_048 | None | A | low | AI เขียนข้อนี้ขึ้นใหม่จากโน้ตความจำในต้นฉบับ |   |
+| gi_49_MCQ_051 | C | E | low | เฉลยขัดกับ AI |   |
+| gi_49_MCQ_052 | C | C | med | ช้อยส์ C, D, E AI เติมให้ครบ 5 ตัว |   |
+| gi_49_MCQ_059 | None | A | low | ช้อยส์ D, E AI เติมให้ครบ 5 ตัว; ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| gi_49_MCQ_060 | D | E | low | เฉลยขัดกับ AI |   |
+| gi_49_MCQ_062 | None | Vitamin C | high | AI เขียนข้อนี้ขึ้นใหม่จากโน้ตความจำในต้นฉบับ |   |
+| gi_49_MCQ_063 | None | Urine bilirubin normal, urine urobilinogen normal/increased | low | AI เขียนข้อนี้ขึ้นใหม่จากโน้ตความจำในต้นฉบับ |   |
+| gi_49_MCQ_064 | None | Patent urachus | high | AI เขียนข้อนี้ขึ้นใหม่จากโน้ตความจำในต้นฉบับ |   |
+| gi_49_MCQ_065 | None | Motilin | med | AI เขียนข้อนี้ขึ้นใหม่จากโน้ตความจำในต้นฉบับ |   |
+| gi_50_MCQ_001 | E | C | medium | ต้นฉบับช้อยส์ A เป็น "-"; ช้อยส์ A AI เติมให้ครบ 5 ตัว; เฉลยขัดกับ AI |   |
+| gi_50_MCQ_004 | E | C | high | เฉลยขัดกับ AI |   |
+| gi_50_MCQ_006 | B | C | medium | เฉลยขัดกับ AI |   |
+| gi_50_MCQ_014 | A | None | None | AI เขียนข้อนี้ขึ้นใหม่จากโน้ตความจำในต้นฉบับ |   |
+| gi_50_MCQ_018 | None | D | low | ต้นฉบับไม่มีช้อยส์ที่ถูก (ผู้เฉลยเขียน muscularis externa ไว้ข้างๆ); ช้อยส์ E AI เติมให้ครบ 5 ตัว; ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| gi_50_MCQ_024 | None | None | None | AI เขียนข้อนี้ขึ้นใหม่จากโน้ตความจำในต้นฉบับ |   |
+| gi_50_MCQ_027 | A | None | None | AI เขียนข้อนี้ขึ้นใหม่จากโน้ตความจำในต้นฉบับ |   |
+| gi_50_MCQ_029 | None | None | None | AI เขียนข้อนี้ขึ้นใหม่จากโน้ตความจำในต้นฉบับ |   |
+| gi_50_MCQ_030 | A | None | None | AI เขียนข้อนี้ขึ้นใหม่จากโน้ตความจำในต้นฉบับ |   |
+| gi_50_MCQ_031 | A | None | None | AI เขียนข้อนี้ขึ้นใหม่จากโน้ตความจำในต้นฉบับ |   |
+| gi_50_MCQ_032 | None | None | None | เฉลยต้นฉบับแก้เป็น Gastrin ขัดกับคำตอบของ AI; AI เขียนข้อนี้ขึ้นใหม่จากโน้ตความจำในต้นฉบับ | ข้อสอบเดิมให้ Secretin; ผู้เฉลยขีดฆ่าแล้วเขียน Gastrin โดยบอกว่า secretin ทำให้เกิด base tide แต่ alkaline tide มาจากการหลั่งกรดของกระเพาะ (gastrin) ส่วน acid tide มาจากการหลั่ง HCO₃⁻ ของตับอ่อน (secretin) AI จึงตอบ Secretin  |
+| gi_50_MCQ_037 | A | None | None | AI เขียนข้อนี้ขึ้นใหม่จากโน้ตความจำในต้นฉบับ |   |
+| gi_50_MCQ_038 | None | E | low | ต้นฉบับไม่มีช้อยส์ที่ถูก (ผู้เฉลยเขียน 'ไม่มีช้อย') AI แทนช้อยส์ A (Esophageal web) ด้วยคำตอบที่ถูก; ช้อยส์ A AI เติมให้ครบ 5 ตัว; ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| gi_50_MCQ_043 | None | A | high | ต้นฉบับจำ lab ได้ไม่ครบ (TP ?); ช้อยส์ C, D, E AI เติมให้ครบ 5 ตัว; ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| gi_50_MCQ_047 | B | A | medium | ช้อยส์ E AI เติมให้ครบ 5 ตัว; เฉลยขัดกับ AI |   |
+| gi_50_MCQ_048 | A | None | None | AI เขียนข้อนี้ขึ้นใหม่จากโน้ตความจำในต้นฉบับ |   |
+| gi_50_MCQ_051 | A | None | None | AI เขียนข้อนี้ขึ้นใหม่จากโน้ตความจำในต้นฉบับ |   |
+| gi_50_MCQ_055 | None | None | None | AI เขียนข้อนี้ขึ้นใหม่จากโน้ตความจำในต้นฉบับ |   |
+| gi_50_MCQ_057 | A | A | high | AI เขียนข้อนี้ขึ้นใหม่จากโน้ตความจำในต้นฉบับ |   |
+| gi_50_MCQ_061 | A | None | None | เฉลยต้นฉบับวง Coxsackie A16; AI เขียนข้อนี้ขึ้นใหม่จากโน้ตความจำในต้นฉบับ | ผู้เฉลยวง Coxsackie A16 และเขียน 'or Enterovirus 71' · โจทย์ระบุ 'ขึ้นสมองบ่อย' จึงเขียนข้อให้ถาม EV71  |
+| gi_50_MCQ_080 | None | B | low | ต้นฉบับไม่มีรูป (ผู้จำบอกว่าภาพไม่เหมือนข้อสอบจริง และผู้เฉลยเขียนว่าไม่มีภาพ); ช้อยส์ E AI เติมให้ครบ 5 ตัว; ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| gi_50_MCQ_082 | C | B | high | เฉลยขัดกับ AI |   |
+| gi_50_MCQ_087 | A | None | None | ช้อยส์ B, C, D, E AI เติมให้ครบ 5 ตัว; เฉลยขัดกับ AI |   |
+| gi_50_MCQ_089 | None | None | None | AI เขียนข้อนี้ขึ้นใหม่จากโน้ตความจำในต้นฉบับ |   |
+| gi_50_MCQ_090 | None | None | None | AI เขียนข้อนี้ขึ้นใหม่จากโน้ตความจำในต้นฉบับ |   |
+| gi_50_MCQ_099 | None | None | None | AI เขียนข้อนี้ขึ้นใหม่จากโน้ตความจำในต้นฉบับ |   |
+| gi_50_MCQ_101 | None | None | None | AI เขียนข้อนี้ขึ้นใหม่จากโน้ตความจำในต้นฉบับ |   |
+| gi_51_MCQ_009 | A | C | low | ช้อยส์ E AI เติมให้ครบ 5 ตัว; เฉลยขัดกับ AI |   |
+| gi_51_MCQ_010 | A | B | low | เฉลยขัดกับ AI |   |
+| gi_51_MCQ_022 | A | A | medium | AI เขียนข้อนี้ขึ้นใหม่จากโน้ตความจำในต้นฉบับ |   |
+| gi_51_MCQ_030 | D | B | medium | เฉลยขัดกับ AI |   |
+| gi_51_MCQ_031 | D | B | low | โจทย์ต้นฉบับจำมาไม่ชัด ('Increase absense of motility pattern') เขียนใหม่ตามเฉลย; ช้อยส์ E AI เติมให้ครบ 5 ตัว; เฉลยขัดกับ AI |   |
+| gi_51_MCQ_037 | D | C | medium | เฉลยขัดกับ AI |   |
+| gi_51_MCQ_040 | None | None | None | AI เขียนข้อนี้ขึ้นใหม่จากโน้ตความจำในต้นฉบับ |   |
+| gi_51_MCQ_047 | C | A | low | ต้นฉบับเขียน LDL น่าจะหมายถึง LDH; ช้อยส์ D, E AI เติมให้ครบ 5 ตัว; เฉลยขัดกับ AI |   |
+| gi_51_MCQ_050 | A | B | low | เฉลยขัดกับ AI |   |
+| gi_51_MCQ_054 | None | None | None | AI เขียนข้อนี้ขึ้นใหม่จากโน้ตความจำในต้นฉบับ |   |
+| gi_51_MCQ_056 | None | E | high | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| gi_51_MCQ_061 | None | A | medium | ต้นฉบับให้ 2 ช้อยส์ (Coxsackievirus A, Enterovirus) ซึ่งเป็นสาเหตุทั้งคู่ เฉลยไม่ได้วง; ช้อยส์ C, D, E AI เติมให้ครบ 5 ตัว; ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| gi_51_MCQ_062 | None | None | None | AI เขียนข้อนี้ขึ้นใหม่จากโน้ตความจำในต้นฉบับ |   |
+| gi_51_MCQ_073 | A | None | None | AI เขียนข้อนี้ขึ้นใหม่จากโน้ตความจำในต้นฉบับ |   |
+| gi_51_MCQ_074 | None | None | None | AI เขียนข้อนี้ขึ้นใหม่จากโน้ตความจำในต้นฉบับ |   |
+| gi_51_MCQ_083 | None | None | None | AI เขียนข้อนี้ขึ้นใหม่จากโน้ตความจำในต้นฉบับ |   |
+| gi_51_MCQ_085 | None | None | None | AI เขียนข้อนี้ขึ้นใหม่จากโน้ตความจำในต้นฉบับ |   |
+| gi_51_MCQ_086 | B | A | medium | เฉลยขัดกับ AI |   |
+| gi_51_MCQ_094 | None | None | None | ไม่มีเฉลยต้นฉบับ; AI เขียนข้อนี้ขึ้นใหม่จากโน้ตความจำในต้นฉบับ |   |
+| gi_51_MCQ_095 | None | None | None | AI เขียนข้อนี้ขึ้นใหม่จากโน้ตความจำในต้นฉบับ |   |
+| gi_52_MCQ_006 | C | D | low | เฉลยขัดกับ AI |   |
+| gi_52_MCQ_033 | C | B | high | โจทย์ไม่ครบ: ไม่มีค่า ALP (ผู้เฉลยหมายเหตุ); เฉลยขัดกับ AI | เฉลยต้นฉบับตอบ C (cholestasis) โดยบอกว่าโจทย์ลืมให้ ALP; จากค่าที่ให้จริง AI ตอบ B (alcoholic)  |
+| gi_52_MCQ_034 | C | C | low | โจทย์ต้นฉบับเขียน hypertension แต่ตารางและเฉลยเข้ากับ chronic liver disease (cirrhosis) | ผู้เฉลยหมายเหตุว่าโจทย์ผิด น่าจะถาม chronic cirrhosis ตอบ C (albumin ต่ำ + AST/ALT > 1)  |
+| gi_52_MCQ_037 | B | A | medium | เฉลยขัดกับ AI |   |
+| gi_52_MCQ_042 | C | C | low | ไม่มีตัวเลือก nausea/vomiting of pregnancy ตรงๆ |   |
+| gi_52_MCQ_061 | E | B | medium | เฉลยขัดกับ AI |   |
+| gi_52_MCQ_073 | ['B', 'C'] | B | low | ต้นฉบับวงไว้หลายตัว |   |

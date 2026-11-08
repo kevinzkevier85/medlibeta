@@ -1,0 +1,803 @@
+{
+  "set_id": "gi_50_MCQ",
+  "note": "Phase 3 — recall exam (MED 50). Key read by eye (red circles + notes).",
+  "skipped": [
+    "3",
+    "28",
+    "34",
+    "39",
+    "40",
+    "42",
+    "44",
+    "46",
+    "53",
+    "56",
+    "58",
+    "59",
+    "70",
+    "71",
+    "72",
+    "75",
+    "76",
+    "81",
+    "83",
+    "85",
+    "93",
+    "94",
+    "97"
+  ],
+  "skipped_reason": "ต้นฉบับมีแค่ \"–\" (ผู้จำจำโจทย์ไม่ได้)",
+  "duplicate_groups": {
+    "gi-umbilical-ligament-bleeding": [
+      "6"
+    ],
+    "gi-acid-tide-secretin": [
+      "32"
+    ],
+    "gi-hbv-varices": [
+      "41"
+    ],
+    "gi-hemorrhoid-pregnancy": [
+      "49"
+    ],
+    "gi-strongyloides-larva": [
+      "51"
+    ],
+    "gi-opv-reversion": [
+      "63"
+    ],
+    "gi-post-polio": [
+      "64"
+    ],
+    "gi-hpylori-urease": [
+      "67"
+    ],
+    "gi-ehec-hus": [
+      "68",
+      "73"
+    ],
+    "gi-bmi-asian": [
+      "99"
+    ],
+    "gi-botulinum": [
+      "101"
+    ],
+    "gi-tetrodotoxin": [
+      "100"
+    ],
+    "gi-hepatic-encephalopathy-lactulose": [
+      "87"
+    ]
+  },
+  "questions": {
+    "1": {
+      "choices_override": {
+        "A": "Urinary bladder",
+        "B": "Esophagus",
+        "C": "1st duodenum",
+        "D": "2nd duodenum",
+        "E": "Transverse colon"
+      },
+      "ai_choices": [
+        "A"
+      ],
+      "issues": [
+        "ต้นฉบับช้อยส์ A เป็น \"-\""
+      ],
+      "explanation": "(Transverse colon)** — transpyloric plane (L1) ผ่าน pylorus, neck of pancreas, duodenojejunal flexure, hila ของไต และตัดผ่าน transverse colon บางส่วน เฉลยต้นฉบับเลือก transverse colon\nTrap: esophagus อยู่สูงกว่า (T10)"
+    },
+    "18": {
+      "choices_override": {
+        "A": "Mucosa",
+        "B": "Submucosa",
+        "C": "Muscularis mucosae",
+        "D": "Adventitia",
+        "E": "Muscularis externa with both skeletal and smooth muscle"
+      },
+      "ai_choices": [
+        "E"
+      ],
+      "issues": [
+        "ต้นฉบับไม่มีช้อยส์ที่ถูก (ผู้เฉลยเขียน muscularis externa ไว้ข้างๆ)"
+      ],
+      "flags": [
+        "needs_review"
+      ],
+      "explanation": "(Muscularis externa with both skeletal and smooth muscle)** — หลอดอาหารส่วนกลางมี muscularis externa เป็นกล้ามเนื้อผสม skeletal + smooth (ส่วนบน skeletal ส่วนล่าง smooth) ต้นฉบับไม่มีช้อยส์นี้ AI จึงเติม (ผู้เฉลยเขียนไว้)"
+    },
+    "22": {
+      "choices_override": {
+        "A": "Segmentation,",
+        "B": "Haustration",
+        "C": "Power propulsion",
+        "D": "MMC",
+        "E": "Mass movement"
+      },
+      "ai_choices": [
+        "E"
+      ],
+      "explanation": "(Segmentation,)** — segmentation ผสม chyme และสัมผัส mucosa → ดูดซึมดีที่สุด\nTrap: haustration = colon, MMC = ช่วงอด"
+    },
+    "23": {
+      "choices_override": {
+        "A": "Increase salivary secretion",
+        "B": "Increase salivary osmolarity.",
+        "C": "Decrease salivary secretion",
+        "D": "Decrease salivary osmolarity.",
+        "E": "No change in salivary secretion"
+      },
+      "ai_choices": [
+        "E"
+      ],
+      "explanation": "(Decrease salivary secretion)** — ยาจิตเวชหลายตัว (TCA, antipsychotic) มีฤทธิ์ anticholinergic → น้ำลายลด ปากแห้ง แบคทีเรียโต ฟันผุ",
+      "stem_override": "After taking psychiatric drugs, a patient's oral health worsens. Which mechanism does the drug cause?",
+      "original_text": "หลังจากทานยา psychiatric drugs เข้าไปแล้วทำให้คุณภาพปากแย่ขึ้น ยานี้ทำให้เกิดกลไกอะไร"
+    },
+    "24": {
+      "stem_override": "A patient has dysphagia to both solids and liquids caused by destruction of the myenteric (Auerbach) plexus in the lower esophagus. What is the most likely diagnosis?",
+      "choices_override": {
+        "A": "Achalasia",
+        "B": "Gastroesophageal reflux disease",
+        "C": "Esophageal squamous cell carcinoma",
+        "D": "Zenker diverticulum",
+        "E": "Esophageal web"
+      },
+      "answer": "A",
+      "flags": [
+        "ai_generated"
+      ],
+      "original_text": "A patient with dysphagia because of the myenteric destruction??? (incomplete question)",
+      "explanation": "(Achalasia)** — การทำลาย myenteric plexus (inhibitory neurons NO/VIP) ที่หลอดอาหารส่วนล่าง → LES ไม่คลาย + ไม่มี peristalsis = achalasia"
+    },
+    "27": {
+      "stem_override": "What is the main laboratory abnormality in Gilbert syndrome?",
+      "choices_override": {
+        "A": "Increased unconjugated bilirubin",
+        "B": "Increased conjugated bilirubin",
+        "C": "Increased ALP",
+        "D": "Increased AST and ALT",
+        "E": "Decreased serum albumin"
+      },
+      "answer": "A",
+      "flags": [
+        "ai_generated"
+      ],
+      "original_text": "Gilbert’s syndrome ทำให้เกิดอะไร??? (incomplete question) · A. Increase unconjugated bilirubin",
+      "explanation": "(Increased unconjugated bilirubin)** — Gilbert: UGT1A1 activity ลด → unconjugated bilirubin สูงเล็กน้อยเป็นพักๆ (อดอาหาร/เครียด) ตับปกติ"
+    },
+    "29": {
+      "stem_override": "A patient with type 2 diabetes and hypercholesterolemia is treated with cholestyramine. Which of the following increases as a result?",
+      "choices_override": {
+        "A": "Hepatic conversion of cholesterol to bile acids",
+        "B": "Serum LDL cholesterol",
+        "C": "Ileal reabsorption of bile acids",
+        "D": "Absorption of fat-soluble vitamins",
+        "E": "Hepatic cholesterol content"
+      },
+      "answer": "A",
+      "flags": [
+        "ai_generated"
+      ],
+      "original_text": "Type 2 DM มีอะไรเกี่ยวกับน้ำดีสักอย่าง ได้รับยา cholestyramine ถามว่าค่าอะไรเพิ่มขึ้นบ้าง",
+      "explanation": "(Hepatic conversion of cholesterol to bile acids)** — cholestyramine จับ bile acid ในลำไส้ → bile acid กลับตับน้อย → ตับเปลี่ยน cholesterol เป็น bile acid มากขึ้น (7α-hydroxylase ↑) และเพิ่ม LDL receptor → LDL ลด (อาจทำให้ TG สูงในคนเบาหวาน)\nTrap: ดูดซึม vitamin ละลายในไขมันลดลง"
+    },
+    "30": {
+      "stem_override": "Which cell in the liver synthesizes collagen and causes hepatic fibrosis?",
+      "choices_override": {
+        "A": "Stellate (Ito) cell",
+        "B": "Kupffer cell",
+        "C": "Hepatocyte",
+        "D": "Cholangiocyte",
+        "E": "Sinusoidal endothelial cell"
+      },
+      "answer": "A",
+      "flags": [
+        "ai_generated"
+      ],
+      "original_text": "Which cell in the liver synthesis collagen is the cause of fibrosis? · A. Stellate cell",
+      "explanation": "(Stellate (Ito) cell)** — hepatic stellate (Ito) cell เก็บ vitamin A เมื่อถูกกระตุ้นจะกลายเป็น myofibroblast สร้าง collagen → fibrosis/cirrhosis\nTrap: Kupffer cell เป็น macrophage"
+    },
+    "31": {
+      "stem_override": "A patient has congenital enterokinase (enteropeptidase) deficiency. Which enzyme activity is primarily decreased?",
+      "choices_override": {
+        "A": "Trypsin",
+        "B": "Pancreatic amylase",
+        "C": "Pancreatic lipase",
+        "D": "Lactase",
+        "E": "Pepsin"
+      },
+      "answer": "A",
+      "flags": [
+        "ai_generated"
+      ],
+      "original_text": "The patient has the condition of enterokinase deficiency (the small intestine cannot secrete). Which of the following enzymes is decreased due to this condition? · A. Trypsin",
+      "explanation": "(Trypsin)** — enterokinase (จาก brush border ของ duodenum) เปลี่ยน trypsinogen → trypsin แล้ว trypsin ไปกระตุ้นเอนไซม์อื่น ขาด enterokinase → trypsin ลดเป็นหลัก"
+    },
+    "32": {
+      "stem_override": "After a meal, pancreatic duct cells secrete HCO₃⁻ into the duct and return H⁺ to the blood (the 'acid tide'). Which hormone mainly drives this?",
+      "choices_override": {
+        "A": "Secretin",
+        "B": "Gastrin",
+        "C": "CCK",
+        "D": "Motilin",
+        "E": "Ghrelin"
+      },
+      "answer": "A",
+      "flags": [
+        "ai_generated",
+        "needs_review"
+      ],
+      "original_text": "Which hormone is the cause of the acid tide? · A. Secretin",
+      "audit_note": "ข้อสอบเดิมให้ Secretin; ผู้เฉลยขีดฆ่าแล้วเขียน Gastrin โดยบอกว่า secretin ทำให้เกิด base tide แต่ alkaline tide มาจากการหลั่งกรดของกระเพาะ (gastrin) ส่วน acid tide มาจากการหลั่ง HCO₃⁻ ของตับอ่อน (secretin) AI จึงตอบ Secretin",
+      "issues": [
+        "เฉลยต้นฉบับแก้เป็น Gastrin ขัดกับคำตอบของ AI"
+      ],
+      "explanation": "(Secretin)** — acid tide: ตับอ่อนหลั่ง HCO₃⁻ เข้าท่อ และส่ง H⁺ กลับเข้าเลือด (กระตุ้นโดย secretin) · alkaline tide หลังอาหารมาจากการหลั่งกรดของกระเพาะ (gastrin) เฉลยต้นฉบับแก้เป็น gastrin"
+    },
+    "37": {
+      "stem_override": "A newborn infant has regurgitation of feeds with choking and cyanosis during feeding. What is the most likely diagnosis?",
+      "choices_override": {
+        "A": "Tracheoesophageal fistula",
+        "B": "Hypertrophic pyloric stenosis",
+        "C": "Duodenal atresia",
+        "D": "Gastroesophageal reflux",
+        "E": "Hirschsprung disease"
+      },
+      "answer": "A",
+      "flags": [
+        "ai_generated"
+      ],
+      "original_text": "A newborn infant has regurgitation with suffocation. What is the diagnosis of this patient? · A. Tracheoesophageal fistula",
+      "explanation": "(Tracheoesophageal fistula)** — ทารกแรกเกิดสำลัก ไอ เขียวตอนดูดนม + regurgitation = tracheoesophageal fistula (มักร่วม esophageal atresia)"
+    },
+    "38": {
+      "choices_override": {
+        "A": "Loss of inhibitory (NO/VIP) neurons in the myenteric plexus",
+        "B": "Esophageal ring",
+        "C": "Esophagitis",
+        "D": "Barrett's esophagus",
+        "E": "GERD"
+      },
+      "ai_choices": [
+        "A"
+      ],
+      "issues": [
+        "ต้นฉบับไม่มีช้อยส์ที่ถูก (ผู้เฉลยเขียน 'ไม่มีช้อย') AI แทนช้อยส์ A (Esophageal web) ด้วยคำตอบที่ถูก"
+      ],
+      "flags": [
+        "needs_review"
+      ],
+      "explanation": "(Loss of inhibitory (NO/VIP) neurons in the myenteric plexus)** — achalasia เกิดจากการสูญเสีย inhibitory neurons (NO, VIP) ใน myenteric plexus (idiopathic หรือ Chagas disease) → LES คลายไม่ได้ · ต้นฉบับไม่มีช้อยส์ที่ถูก"
+    },
+    "43": {
+      "choices_override": {
+        "A": "ALT=60 , AST=75 , ALP=155 (URL=150) , TB สูง , TP ? , albumin ต่ำ",
+        "B": "ALT=320 , AST=650 , ALP=130?(URL=150) , TB สูง , TP ? , albumin ปกติ",
+        "C": "ALT 40, AST 35, ALP 600 (URL 150), TB high, albumin normal",
+        "D": "ALT 25, AST 30, ALP 90, TB normal, albumin normal",
+        "E": "ALT 1500, AST 1200, ALP 100, TB normal, albumin normal"
+      },
+      "ai_choices": [
+        "C",
+        "D",
+        "E"
+      ],
+      "issues": [
+        "ต้นฉบับจำ lab ได้ไม่ครบ (TP ?)"
+      ],
+      "explanation": "(ALT=60 , AST=75 , ALP=155 (URL=150) , TB สูง , TP ? , albumin ต่ำ)** — chronic HBV + spider angioma + บวม + albumin ต่ำ + ALT/AST สูงเล็กน้อย = chronic liver disease (cirrhosis) → แบบ A\nTrap: B เป็น acute hepatitis (ALT/AST หลายร้อย albumin ปกติ)"
+    },
+    "48": {
+      "stem_override": "A patient with colonic diverticulosis develops diverticulitis that perforates. Which complication follows?",
+      "choices_override": {
+        "A": "Peritonitis",
+        "B": "Achalasia",
+        "C": "Intussusception",
+        "D": "Hemorrhoids",
+        "E": "Volvulus"
+      },
+      "answer": "A",
+      "flags": [
+        "ai_generated"
+      ],
+      "original_text": "ให้อาการ ตรวจเจอ Outpouching น่าจะเป็น diverticulosis ถาม complication · A. Peritonitis",
+      "explanation": "(Peritonitis)** — diverticulosis → diverticulitis → แตก → peritonitis/abscess (ภาวะแทรกซ้อนอีกอย่างที่พบบ่อยคือเลือดออก)"
+    },
+    "49": {
+      "choices_override": {
+        "A": "Intussusception",
+        "B": "Hemorrhoids",
+        "C": "Volvulus",
+        "D": "Angiodysplasia",
+        "E": "Ischemic colitis"
+      },
+      "ai_choices": [
+        "D",
+        "E"
+      ],
+      "explanation": "(Hemorrhoids)** — ตั้งครรภ์ไตรมาส 3 ถ่ายเจ็บมีเลือดสด หายหลังคลอด = hemorrhoids"
+    },
+    "51": {
+      "stem_override": "The characteristic of this parasite found in a patient’s stool are rhabditiform larvae with a large genital primordium. Which of the following is the most likely causative organism?",
+      "choices_override": {
+        "A": "Strongyloides stercoralis",
+        "B": "Ancylostoma duodenale",
+        "C": "Enterobius vermicularis",
+        "D": "Trichuris trichiura",
+        "E": "Ascaris lumbricoides"
+      },
+      "answer": "A",
+      "flags": [
+        "ai_generated"
+      ],
+      "original_text": "The characteristic of this parasite found in a patient stool are rhabditiform larvae with large genital primordium. Which of the following parasite scientific name is found in this case? · A. Strongyloides stercolaris",
+      "filled_from": "gi_52_MCQ_058",
+      "explanation": "(Strongyloides stercoralis)** — rhabditiform larva ที่มี genital primordium ใหญ่ buccal cavity สั้น = Strongyloides stercoralis"
+    },
+    "52": {
+      "choices_override": {
+        "A": "Ectoparasite",
+        "B": "Accidental parasite",
+        "C": "Facultative parasite",
+        "D": "Obligate parasite",
+        "E": "Temporary parasite"
+      },
+      "ai_choices": [
+        "D",
+        "E"
+      ],
+      "explanation": "(Accidental parasite)** — พยาธิปากขอสุนัข (Ancylostoma caninum) ไชผิวคน แต่โตต่อในคนไม่ได้ = accidental parasite (คนไม่ใช่ definitive host)\nTrap: facultative parasite อยู่อิสระได้"
+    },
+    "55": {
+      "stem_override": "A patient has hypochromic microcytic anemia, and stool shows thin-shelled eggs of a hookworm. What is the habitat of the adult worm?",
+      "choices_override": {
+        "A": "Small intestine (duodenum/jejunum)",
+        "B": "Cecum and colon",
+        "C": "Bile duct",
+        "D": "Lung",
+        "E": "Skeletal muscle"
+      },
+      "answer": "A",
+      "flags": [
+        "ai_generated"
+      ],
+      "original_text": "The characteristic of this parasite: Thin egg parasite shell with hypochromic microcytic anemia in this infested patient. Which of the following organs are this parasite habitat? Ans.",
+      "explanation": "(Small intestine (duodenum/jejunum))** — hookworm (Ancylostoma duodenale, Necator americanus) ไข่เปลือกบาง ตัวเต็มวัยเกาะผนังลำไส้เล็ก (duodenum/jejunum) ดูดเลือด → iron deficiency anemia"
+    },
+    "57": {
+      "stem_override": "From this figure (trophozoite in stool), what is the parasite?",
+      "choices_override": {
+        "A": "Entamoeba histolytica",
+        "B": "Giardia lamblia",
+        "C": "Ascaris lumbricoides",
+        "D": "Clonorchis sinensis",
+        "E": "Taenia saginata"
+      },
+      "answer": "A",
+      "flags": [
+        "ai_generated"
+      ],
+      "original_text": "From this figure, what parasite name is this? · A. Entamoeba histolytica",
+      "filled_from": "gi_52_MCQ_060",
+      "explanation": "(Entamoeba histolytica)** — trophozoite ที่มี karyosome กลางและกิน RBC = Entamoeba histolytica"
+    },
+    "60": {
+      "choices_override": {
+        "A": "Ingested Taenia solium egg from raw vegetables",
+        "B": "Ingested Taenia solium cyst from pork",
+        "C": "Ingested Taenia saginata cyst from beef",
+        "D": "Skin penetration by filariform larvae",
+        "E": "Ingested Echinococcus egg from dog feces"
+      },
+      "ai_choices": [
+        "C",
+        "D",
+        "E"
+      ],
+      "issues": [
+        "โจทย์ไม่ครบ (ผู้จำบอกไว้)"
+      ],
+      "explanation": "(Ingested Taenia solium egg from raw vegetables)** — ภาพเป็น cysticercus ของ Taenia solium (rostellum มี hook ในถุง) = cysticercosis ซึ่งติดจากการกิน**ไข่** (ผักสด/fecal-oral) · การกิน cyst ในหมูทำให้เป็น taeniasis (ตัวเต็มวัยในลำไส้)"
+    },
+    "61": {
+      "stem_override": "A child has hand, foot, and mouth disease complicated by brainstem encephalitis. Which virus most often causes HFMD with CNS complications?",
+      "choices_override": {
+        "A": "Coxsackievirus A16",
+        "B": "Enterovirus 71",
+        "C": "Coxsackievirus B3",
+        "D": "Poliovirus",
+        "E": "Echovirus"
+      },
+      "answer": "B",
+      "flags": [
+        "ai_generated",
+        "needs_review"
+      ],
+      "original_text": "Hand food mouse + ขึ้นสมองบ่อย (Incomplete question) · A. Coxsackie A16",
+      "audit_note": "ผู้เฉลยวง Coxsackie A16 และเขียน 'or Enterovirus 71' · โจทย์ระบุ 'ขึ้นสมองบ่อย' จึงเขียนข้อให้ถาม EV71",
+      "issues": [
+        "เฉลยต้นฉบับวง Coxsackie A16"
+      ],
+      "explanation": "(Enterovirus 71)** — HFMD ที่ภาวะแทรกซ้อนทางสมองบ่อย (brainstem encephalitis, pulmonary edema) = Enterovirus 71 · Coxsackie A16 เป็นสาเหตุที่พบบ่อยแต่ไม่รุนแรง (ผู้เฉลยวง A16 และเขียน EV71 ไว้)"
+    },
+    "63": {
+      "choices_override": {
+        "A": "Low IgG titer",
+        "B": "Require booster",
+        "C": "Herd immunity",
+        "D": "Reversion of vaccine to wild type virus",
+        "E": "Intestinal irritation"
+      },
+      "filled_from": "gi_52_MCQ_066",
+      "explanation": "(Reversion of vaccine to wild type virus)** — OPV กลายพันธุ์กลับ (back mutation) เป็นเชื้อก่อโรค → vaccine-associated paralytic polio"
+    },
+    "65": {
+      "choices_override": {
+        "A": "Enterotoxigenic Escherichia coli (ETEC)",
+        "B": "Enterohemorrhagic Escherichia coli (EHEC)",
+        "C": "Enteropathogenic Escherichia coli (EPEC)",
+        "D": "Shigella dysenteriae",
+        "E": "Vibrio cholerae"
+      },
+      "filled_from": "gi_52_MCQ_074",
+      "explanation": "(Enterotoxigenic Escherichia coli (ETEC))** — ETEC สาเหตุอันดับ 1 ของ traveler's diarrhea (LT/ST → CFTR → Cl⁻)"
+    },
+    "68": {
+      "choices_override": {
+        "A": "ETEC",
+        "B": "Listeria monocytogenes",
+        "C": "Salmonella typhi",
+        "D": "Shigella dysenteriae",
+        "E": "Vibrio cholerae"
+      },
+      "ai_choices": [
+        "E"
+      ],
+      "explanation": "(Shigella dysenteriae)** — hemolytic anemia + thrombocytopenia + ไตวาย = HUS จาก Shiga toxin (Shigella dysenteriae, EHEC O157:H7)"
+    },
+    "77": {
+      "choices_override": {
+        "A": "Ascaris lumbricoides",
+        "B": "Necator americanus",
+        "C": "Giardia lamblia",
+        "D": "Trichuris trichiura",
+        "E": "Enterobius vermicularis"
+      },
+      "ai_choices": [
+        "D",
+        "E"
+      ],
+      "explanation": "(Giardia lamblia)** — cyst รูปรี 7–10 × 11–14 µm มี 2–4 nuclei = Giardia lamblia"
+    },
+    "79": {
+      "choices_override": {
+        "A": "Achalasia",
+        "B": "Esophageal cancer",
+        "C": "Esophagitis",
+        "D": "Esophageal stricture",
+        "E": "Hiatal hernia"
+      },
+      "ai_choices": [
+        "D",
+        "E"
+      ],
+      "issues": [
+        "ต้นฉบับจำช้อยส์ C, D ไม่ครบ"
+      ],
+      "explanation": "(Achalasia)** — barium swallow หลอดอาหารขยาย ปลายเรียวเป็น bird's beak ที่ GEJ = achalasia"
+    },
+    "80": {
+      "choices_override": {
+        "A": "Achalasia",
+        "B": "Hiatal hernia",
+        "C": "Gastric cancer",
+        "D": "Esophageal cancer",
+        "E": "Zenker diverticulum"
+      },
+      "ai_choices": [
+        "E"
+      ],
+      "flags": [
+        "needs_review"
+      ],
+      "issues": [
+        "ต้นฉบับไม่มีรูป (ผู้จำบอกว่าภาพไม่เหมือนข้อสอบจริง และผู้เฉลยเขียนว่าไม่มีภาพ)"
+      ],
+      "explanation": "(Hiatal hernia)** — หญิงอ้วน + ภาพ X-ray (ต้นฉบับไม่มีภาพ) ภาวะที่สัมพันธ์กับความอ้วนคือ hiatal hernia\nTrap: ข้อนี้ต้องดูภาพจริงจึงตัดสินได้"
+    },
+    "89": {
+      "stem_override": "What is the mechanism of action of metronidazole?",
+      "choices_override": {
+        "A": "Reduced to free radicals that damage DNA (strand breaks)",
+        "B": "Inhibits cell wall synthesis",
+        "C": "Binds the 30S ribosomal subunit",
+        "D": "Inhibits DNA gyrase",
+        "E": "Inhibits folate synthesis"
+      },
+      "answer": "A",
+      "flags": [
+        "ai_generated"
+      ],
+      "original_text": "What is the mechanism of metronidazole?",
+      "explanation": "(Reduced to free radicals that damage DNA (strand breaks))** — metronidazole ถูก reduce ในเชื้อ anaerobe/protozoa เป็น free radical → ทำลายโครงสร้าง DNA และทำให้ DNA strand break"
+    },
+    "90": {
+      "stem_override": "A patient with onchocerciasis (river blindness) is treated with ivermectin. What is the mechanism of this drug?",
+      "choices_override": {
+        "A": "Opens glutamate-gated chloride channels → hyperpolarization and paralysis of the parasite",
+        "B": "Inhibits microtubule polymerization",
+        "C": "Increases Ca²⁺ permeability of the tegument",
+        "D": "Depolarizing neuromuscular blockade",
+        "E": "Inhibits DNA synthesis"
+      },
+      "answer": "A",
+      "flags": [
+        "ai_generated"
+      ],
+      "original_text": "A patient with river blindness is treated with ivermectin. What is the mechanism of this prescribed drug?",
+      "explanation": "(Opens glutamate-gated chloride channels → hyperpolarization and paralysis of the parasite)** — ivermectin เปิด glutamate-gated Cl⁻ channel ของพยาธิ → hyperpolarization → อัมพาต (ฆ่า microfilariae)"
+    },
+    "92": {
+      "choices_override": {
+        "A": "Folate",
+        "B": "Cobalamin",
+        "C": "Thiamine",
+        "D": "Biotin",
+        "E": "Pyridoxine"
+      },
+      "ai_choices": [
+        "E"
+      ],
+      "explanation": "(Cobalamin)** — pernicious anemia: ขาด intrinsic factor → ดูดซึม cobalamin (B12) ที่ ileum ไม่ได้"
+    },
+    "98": {
+      "choices_override": {
+        "A": "Fiber",
+        "B": "Saturated fatty acid",
+        "C": "Unsaturated fatty acid",
+        "D": "Vegetables",
+        "E": "Whole grains"
+      },
+      "ai_choices": [
+        "D",
+        "E"
+      ],
+      "explanation": "(Saturated fatty acid)** — saturated fatty acid เพิ่ม LDL → atherosclerosis ไม่ควรกินในเด็กอ้วนที่มี CAD"
+    },
+    "99": {
+      "stem_override": "A woman weighs 70 kg and is 170 cm tall. According to the Asian BMI cut-offs, how is she classified?",
+      "choices_override": {
+        "A": "Underweight",
+        "B": "Normal",
+        "C": "Overweight",
+        "D": "Obese class I",
+        "E": "Obese class II"
+      },
+      "answer": "C",
+      "flags": [
+        "ai_generated"
+      ],
+      "original_text": "A patient with 70 kg and 170 cm??? (Incomplete question) Ans. Overweight?",
+      "explanation": "(Overweight)** — BMI = 70/1.7² = 24.2 kg/m² เกณฑ์เอเชีย 23–24.9 = overweight"
+    },
+    "101": {
+      "stem_override": "A patient develops descending flaccid paralysis after eating home-canned food. What is the mechanism of the toxin?",
+      "choices_override": {
+        "A": "Inhibits acetylcholine release",
+        "B": "Blocks nicotinic receptor",
+        "C": "Blocks Na⁺ channel",
+        "D": "Blocks muscarinic receptor",
+        "E": "Inhibits acetylcholinesterase"
+      },
+      "answer": "A",
+      "flags": [
+        "ai_generated"
+      ],
+      "original_text": "กินอาหารกระป๋องเกิดอาการ…..กลไกของอาหารกระป๋อง (Incomplete question) Ans. ประมาณลด Ach? Additional questions that cannot directly identify the number of the questions. - ผู้ป่วยมีประวัติไปเที่ยวที่อินเดีย ได้ดื่มน้ำ และรับประทานอาหารจำพวก local food แล้วเกิดอาการ ท้องเสีย จากการเลี้ยงเชื่อในอาหารเลี้ยง APW broth โจทย์น่าจะถามว่าเชื้ออะไรที่จะเจอได้ใน อาหารเลี้ยงเชื้อนี้ => Vibrio cholerae (ไม่ใช่ Vibrio parahaemolyticus เพราะส่วนใหญ่จะพบในการทานดิบ อาหาร seafood/กินน้ำทะเล) - ถ้าตัด terminal ileum จะไม่สามารถดูซึมวิตามินใดได้ => Cobalamin (Vitamin 12) - ตรวจ bacteria มีลักษณะ gull wing คือชื่อวิทยาศาสตร์อะไร => Campylobacter jejuni - Capillaria philippinensis infestation ร่วมกับ severe diarrhea สามารถเจออะไรในอุจจาระได้ => egg and adult (same as med49 No.60) - เหมือนปีเก่าๆ คนไข้นอนโรงพยาบาลมาเป็นระยะเวลานาน ร่วมกับได้รับ antibiotics เป็นระยะเวลา นานด้วยเช่นกัน ผู้ป่วยสามารถเป็นโรคอะไรได้ และเชื้อใดจากกรณีนี้ => Pseudomembranous colitis from Clostridium difficile - ผู้ป่วยมี gastrointestinal ulcers associated with H. pylori จะต้องรักษาด้วยยาอะไร => Metronidazole",
+      "explanation": "(Inhibits acetylcholine release)** — botulinum toxin ยับยั้งการหลั่ง ACh → flaccid paralysis แบบ descending"
+    },
+    "14": {
+      "stem_override": "Which nerves carry parasympathetic supply to the descending colon?",
+      "choices_override": {
+        "A": "Pelvic splanchnic nerves (S2–S4)",
+        "B": "Vagus nerve",
+        "C": "Greater splanchnic nerve (T5–T9)",
+        "D": "Lumbar splanchnic nerves (L1–L2)",
+        "E": "Pudendal nerve"
+      },
+      "answer": "A",
+      "flags": [
+        "ai_generated"
+      ],
+      "original_text": "Which nerve is innervating at the descending colon? · A. S2-S4",
+      "explanation": "(Pelvic splanchnic nerves (S2–S4))** — hindgut (descending colon) ได้ parasympathetic จาก pelvic splanchnic nerves S2–S4 · ส่วน midgut ได้จาก vagus"
+    },
+    "2": {
+      "explanation": "(Right shoulder)** — ถุงน้ำดีอักเสบระคายกระบังลม (C3–C5 ผ่าน phrenic n.) → ปวดร้าวไปไหล่ขวา/ใต้สะบักขวา\nTrap: umbilical region = midgut (appendix ระยะแรก)"
+    },
+    "4": {
+      "explanation": "(3rd-4th part)** — SMA syndrome (น้ำหนักลดมาก ไขมันรอบ SMA หาย) → SMA กด duodenum ส่วนที่ 3 (horizontal) ที่วิ่งผ่านระหว่าง aorta กับ SMA (เฉลยต้นฉบับวง 3rd–4th part)\nTrap: ส่วนที่ 1–2 อยู่สูงกว่า SMA"
+    },
+    "5": {
+      "explanation": "(Gallbladder)** — จุดที่ linea semilunaris ตัด costal margin ขวา (9th costal cartilage) = ตำแหน่ง fundus ของถุงน้ำดี"
+    },
+    "6": {
+      "explanation": "(Umbilical vein)** — เฉลยต้นฉบับวง umbilical vein (ligamentum teres) · ในชุด 52 ข้อเดียวกันเฉลยวง umbilical artery (medial umbilical ligament) จึงต้องให้ผู้ตัดสินดู\nTrap: median umbilical ligament = urachus"
+    },
+    "7": {
+      "explanation": "(Aglanglionic colon)** — ทารกไม่ถ่ายขี้เทา ทวารปกติ แต่อุจจาระคั่งใน colon = Hirschsprung disease (aganglionic segment ที่ rectum/sigmoid หดตัวค้าง)\nTrap: imperforate anus/atresia ตรวจเจอความผิดปกติที่ทวาร"
+    },
+    "8": {
+      "explanation": "(Extrahepatic biliary atresia)** — ทารก 2 เดือน jaundice + ปัสสาวะเข้ม (conjugated bilirubin) + อุจจาระซีด (ไม่มี stercobilin) = extrahepatic biliary atresia",
+      "choices_override": {
+        "A": "Esophageal stenosis",
+        "B": "Duodenal atresia",
+        "C": "Annular pancreas",
+        "D": "Extrahepatic biliary atresia",
+        "E": "Hypertrophic pyloric stenosis"
+      },
+      "ai_choices": [
+        "E"
+      ]
+    },
+    "9": {
+      "explanation": "(Hypertrophic pyloric stenosis)** — อาเจียนพุ่ง (projectile) ไม่มีน้ำดี อายุ 3–6 สัปดาห์ = hypertrophic pyloric stenosis",
+      "choices_override": {
+        "A": "Extrahepatic biliary obstruction",
+        "B": "Annular pancreas",
+        "C": "Hypertrophic pyloric stenosis",
+        "D": "Duodenal stenosis",
+        "E": "Esophageal atresia"
+      },
+      "ai_choices": [
+        "E"
+      ]
+    },
+    "10": {
+      "explanation": "(Inferior rectal vein)** — portal hypertension → hemorrhoidal (rectal) varices ที่ portosystemic anastomosis ระหว่าง superior rectal (portal) กับ middle/inferior rectal veins (systemic) เลือดออกทางทวาร"
+    },
+    "11": {
+      "explanation": "(Rectouterine pouch)** — ท่ายืน เลือดในช่องท้องไหลลงจุดต่ำสุด = rectouterine pouch (pouch of Douglas) ในผู้หญิง\nTrap: hepatorenal recess ต่ำสุดในท่านอนหงาย"
+    },
+    "12": {
+      "explanation": "(Achalasia)** — เด็กโต dysphagia + อาหารค้างไม่ย่อย (regurgitation ของอาหารที่ไม่ผ่านกระเพาะ) = achalasia\nTrap: GERD มี heartburn, Zenker ในผู้สูงอายุ"
+    },
+    "13": {
+      "explanation": "(Submucosa)** — rugae ของกระเพาะและ plicae circulares ของลำไส้เล็กมีแกนเป็น submucosa (mucosa + submucosa ยกตัวเป็นรอยพับ)\nTrap: villi ยกตัวเฉพาะ mucosa (แกนเป็น lamina propria)"
+    },
+    "15": {
+      "explanation": "(Peyer’s patches)** — Peyer's patches (aggregated lymphoid nodules) เด่นที่สุดที่ terminal ileum ใช้แยกจาก colon\nTrap: goblet cells มีทั้งสองที่ (colon มากกว่า), Paneth cell อยู่ในลำไส้เล็ก"
+    },
+    "16": {
+      "explanation": "(Mucous cell)** — pyloric glands เป็น mucous cells เป็นหลัก ไม่มี chief/parietal cell มากแบบ fundus/body"
+    },
+    "17": {
+      "explanation": "(Lamina propria)** — แกนของ villus = lamina propria มี capillaries และ lacteal\nTrap: plicae circulares มีแกนเป็น submucosa"
+    },
+    "19": {
+      "explanation": "(Hyperpolarization)** — norepinephrine (α2/β2) → hyperpolarization ของ smooth muscle ลำไส้ → หดตัวน้อยลง"
+    },
+    "20": {
+      "explanation": "(Stimulate migrating motor complex)** — motilin กระตุ้น MMC ช่วงอดอาหาร ขาด motilin → MMC ไม่กวาด → SIBO"
+    },
+    "21": {
+      "explanation": "(Zollinger-Eillison syndrome)** — Zollinger-Ellison: กรดมากลงลำไส้ → กระตุ้นการหลั่ง secretin สูง\nTrap: achlorhydria กรดน้อย secretin ต่ำ"
+    },
+    "25": {
+      "explanation": "(Cephalic phase)** — เห็น/ได้กลิ่นอาหาร → cephalic phase ผ่าน vagus"
+    },
+    "26": {
+      "explanation": "(Gastrin)** — H. pylori ทำลาย D cells → somatostatin ลด → G cell ถูกยับยั้งน้อยลง → gastrin สูง"
+    },
+    "33": {
+      "explanation": "(CFTR)** — cholera toxin → cAMP ↑ → CFTR หลั่ง Cl⁻ น้ำและ Na⁺ ตามผ่าน paracellular"
+    },
+    "35": {
+      "explanation": "(Ileogastric reflex)** — ileogastric reflex: ileum ยืด → ยับยั้งการบีบ/การว่างของกระเพาะ → อืดแน่น (เฉลยต้นฉบับ)\nTrap: gastrocolic reflex ทำให้อยากถ่าย"
+    },
+    "36": {
+      "explanation": "(Power propulsion)** — power propulsion = การบีบแรงต่อเนื่องเคลื่อนเนื้อหาเร็ว (เช่นจาก irritant)\nTrap: segmentation ผสม, MMC ช่วงอด"
+    },
+    "41": {
+      "explanation": "(Esophageal varices)** — cirrhosis + เลือดออกทางเดินอาหารส่วนบนมาก = esophageal varices แตก\nTrap: Mallory-Weiss tear เกิดหลังอาเจียนรุนแรง ไม่ใช่จาก cirrhosis",
+      "choices_override": {
+        "A": "Barrett’s esophagus",
+        "B": "Squamous cell carcinoma",
+        "C": "Esophageal varices",
+        "D": "Mallory-Weiss tear",
+        "E": "Peptic ulcer of the esophagus"
+      },
+      "ai_choices": [
+        "D",
+        "E"
+      ]
+    },
+    "45": {
+      "explanation": "(Hepatic adenoma)** — หญิงกินยาคุม + ก้อนใต้แคปซูลตับขอบชัด แตกตอนตั้งครรภ์ = hepatic adenoma (estrogen กระตุ้น)\nTrap: FNH ไม่สัมพันธ์กับการแตก"
+    },
+    "47": {
+      "explanation": "(Volvulus)** — ทารกปกติดีมาก่อน ท้องอืดเฉียบพลัน ลมมากในลำไส้เล็ก = volvulus (เฉลยต้นฉบับ: ลำไส้เล็กบิด เลือดไม่ไปเลี้ยง)\nTrap: intussusception มักมีปวดเป็นพักๆ อุจจาระมูกเลือด (currant jelly)",
+      "choices_override": {
+        "A": "Intussusception",
+        "B": "Volvulus",
+        "C": "Duodenal atresia",
+        "D": "Hirschsprung’s disease",
+        "E": "Meckel diverticulum"
+      },
+      "ai_choices": [
+        "E"
+      ]
+    },
+    "50": {
+      "explanation": "(Adenocarcinoma)** — ถ่ายเหลวเป็นพักๆ 20 ปี + continuous superficial lesion ตั้งแต่ rectum = ulcerative colitis → เสี่ยง colorectal adenocarcinoma สูงสุด\nTrap: fistula/stricture เป็นของ Crohn"
+    },
+    "54": {
+      "explanation": "(Larvae in tissue biopsy)** — trichinellosis วินิจฉัยจาก muscle biopsy เห็น larva encyst (และ serology) ไม่พบในอุจจาระ"
+    },
+    "62": {
+      "explanation": "(Coxsackie A virus)** — herpangina (แผลในคอหอย ไข้ ไม่มีผื่น) = Coxsackievirus group A"
+    },
+    "64": {
+      "explanation": "(Cytolysis from aging)** — post-polio muscle atrophy ไม่ได้เกิดจากเชื้อค้าง แต่ motor neuron ที่เหลือเสื่อมตามอายุ"
+    },
+    "66": {
+      "explanation": "(Botulinum toxin)** — botulinum toxin ตัด SNARE → ยับยั้งการหลั่ง ACh ที่ NMJ"
+    },
+    "67": {
+      "explanation": "(Urease)** — urease เปลี่ยน urea → NH₃ (ด่าง) ช่วยให้ H. pylori อยู่รอดในกรด"
+    },
+    "69": {
+      "explanation": "(Shiga toxin)** — ถ่ายเป็นเลือดปวดบิดรุนแรง = Shiga toxin (ยับยั้ง protein synthesis → เซลล์ตาย)\nTrap: LT/ST ทำให้ถ่ายเป็นน้ำ"
+    },
+    "73": {
+      "explanation": "(Enterohaemorhagic E.coli)** — เนื้อวัว + ถ่ายเป็นเลือด + EIA verotoxin (Shiga-like) บวก = EHEC (O157:H7)"
+    },
+    "74": {
+      "explanation": "(Salmonella spp.)** — สัตว์เลื้อยคลาน (กิ้งก่า) เป็นพาหะ Salmonella · colorless บน MacConkey (non-lactose) + red colony black center บน XLD (H₂S) = Salmonella"
+    },
+    "78": {
+      "explanation": "(Large bowel obstruction with pneumoperitoneum)** — ภาพยืนเห็นลมใต้กระบังลมทั้งสองข้าง + ภาพนอนเห็น colon ขยายใหญ่รอบขอบท้อง = large bowel obstruction with pneumoperitoneum"
+    },
+    "82": {
+      "explanation": "(Domperidone)** — domperidone เป็น D2 antagonist ที่ไม่ผ่าน BBB จึงแทบไม่ทำ EPS (เฉลยต้นฉบับ) · ondansetron (5-HT3) ก็ไม่ทำ EPS\nTrap: prochlorperazine, haloperidol ทำ EPS มาก"
+    },
+    "84": {
+      "explanation": "(Cholera toxin)** — secretory diarrhea ที่พบบ่อยจาก cholera toxin (cAMP → CFTR → Cl⁻)\nTrap: lactase deficiency = osmotic diarrhea"
+    },
+    "86": {
+      "explanation": "(Loperamide)** — IBS ถ่ายเหลวเรื้อรัง → loperamide (μ-opioid agonist ไม่ผ่าน BBB)"
+    },
+    "87": {
+      "explanation": "(Lactulose)** — hepatic encephalopathy → lactulose (จับ NH₃ เป็น NH₄⁺ ขับออก)",
+      "choices_override": {
+        "A": "Lactulose",
+        "B": "Loperamide",
+        "C": "Furosemide",
+        "D": "Diazepam",
+        "E": "Omeprazole"
+      },
+      "ai_choices": [
+        "B",
+        "C",
+        "D",
+        "E"
+      ]
+    },
+    "88": {
+      "explanation": "(Amphotericin B)** — leishmaniasis รักษาด้วย amphotericin B (หรือ pentavalent antimonials, miltefosine)"
+    },
+    "91": {
+      "explanation": "(Diethylcarbamazine)** — lymphatic filariasis (Wuchereria bancrofti) → diethylcarbamazine (ฆ่าทั้ง microfilaria และตัวเต็มวัย)"
+    },
+    "95": {
+      "explanation": "(Cyanocobalamin)** — ตัดกระเพาะทั้งหมด → ไม่มี intrinsic factor → ขาด cyanocobalamin (B12)"
+    },
+    "96": {
+      "explanation": "(Increased metabolism)** — บาดเจ็บรุนแรง + sepsis = metabolic stress → hypermetabolism, catabolism ของไขมันและโปรตีนเพิ่ม, insulin resistance"
+    },
+    "100": {
+      "explanation": "(Tetrodotoxin)** — ชารอบปาก ลิ้น หน้า กลืนลำบาก หายใจลำบาก ทันทีหลังกินปลา (ปักเป้า) = tetrodotoxin บล็อก Na⁺ channel"
+    }
+  },
+  "extra_edits": {}
+}

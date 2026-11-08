@@ -33,13 +33,22 @@ window.MedLibQuizUI = function (ML) {
   const activeRound = (b, s) => roundsOf(b, s).filter((r) => !r.done).pop() || null;
   const qmapOf = (s) => Object.fromEntries(s.questions.map((q) => [q.id, q]));
   const kov = () => marks().keyOverride;
+  // an answer was just checked → move it in the review queue (wrong → back tomorrow)
+  // Self-grading (ถูก/ผิด) after the check re-grades: start again from the queue entry as it was before this round graded it.
+  const graded = (q, r) => {
+    if (!q || !r) return;
+    const R = P().review = P().review || {}; r.rv0 = r.rv0 || {};
+    if (!(q.id in r.rv0)) r.rv0[q.id] = R[q.id] ? { ...R[q.id] } : null;
+    else { if (r.rv0[q.id]) R[q.id] = { ...r.rv0[q.id] }; else delete R[q.id]; C.touch(P(), "review", q.id); }
+    C.reviewUpdate(P(), q, C.qScore(q, r, kov()), Date.now(), kov());
+  };
   const lastDone = (b, s) => roundsOf(b, s).filter((r) => r.done && !r.abandoned).pop() || null;
   const base = (b, s) => `#/set/${enc(b.id)}/${enc(s.id)}`;
 
   // Latest result of every question in a block (across sets and mixes)
   function blockResults(b) {
     const qmap = Object.fromEntries(ML.examsOf(b).map((q) => [q.id, q]));
-    const rounds = Object.entries(P().rounds).filter(([k]) => k.startsWith(b.id + "/")).flatMap(([, v]) => v);
+    const rounds = Object.entries(P().rounds).filter(([k, v]) => k.startsWith(b.id + "/") && Array.isArray(v)).flatMap(([, v]) => v);
     return C.latestResults(rounds, qmap, kov());
   }
   function setProgress(b, s) {   // only questions that count (draft/disputed answers are left out)
@@ -111,15 +120,23 @@ window.MedLibQuizUI = function (ML) {
         return `<div class="ref"><span class="hint">ต้นฉบับ:</span><a href="${pdfHref(b, r.paper, r.pages[0])}" data-pdfpop="${esc(b.id)}|${esc(r.paper)}|${r.pages[0] || 1}">${d && d.role === "key" ? "PDF เฉลย" : "PDF ข้อสอบ"} ${pgTxt(r.pages)}</a></div>`;
       }
       const hot = r.hotspot ? (r.hotspot.years.length >= 2 ? `<span class="hot">ออกซ้ำ ${r.hotspot.years.length} ปี</span>` : r.hotspot.years.length ? `<span class="tier">เคยออกปี ${r.hotspot.years.join(", ")}</span>` : "") + `<span class="tier">Tier ${r.hotspot.tier}</span>` : "";
-      return `<div class="ref"><span class="hint">อ่านเพิ่ม:</span><a href="${pdfHref(b, r.lecture, r.pages[0])}">${esc(lecName(b, r.lecture))} ${pgTxt(r.pages)}</a>${hot}${r.focus ? `<span class="hint">${esc(r.focus)}</span>` : ""}</div>`;
+      return `<div class="ref"><span class="hint">อ่านเพิ่ม:</span><a href="${pdfHref(b, r.lecture, (r.pages || [])[0])}">${esc(lecName(b, r.lecture))} ${pgTxt(r.pages)}</a>${hot}${r.focus ? `<span class="hint">${esc(r.focus)}</span>` : ""}</div>`;
     }).join("")}</div>`;
   }
   const figureHTML = (b, q) => (q.image ? `<figure><img src="${esc(b._base + "/" + q.image)}" alt="${esc(q.image_caption || "ภาพประกอบโจทย์")}" data-zoom="1" loading="lazy">${q.image_caption ? `<figcaption>${txt(q.image_caption)}</figcaption>` : ""}</figure>` : "");
 
   // Box under a revealed question: answer, original key, mechanism, key concept, refs, my note, report / my key
-  function explainHTML(b, q, extra, tone) {
+  // lectures a question points at (CVS: with pages; END: lecture only), first page if any
+  const lecRefs = (q) => { const seen = {}; (q.refs || []).forEach((x) => { if (x && x.lecture && !(x.lecture in seen)) seen[x.lecture] = x.pages ? x.pages[0] : null; }); return seen; };
+  const lecLink = (b, l, page) => `<a href="#/lec/${enc(b.id)}/${enc(l)}${page ? "/" + page : ""}">${esc(lecName(b, l))}</a>`;
+  function readFirstHTML(b, q) {
+    const ls = lecRefs(q), ids = Object.keys(ls);
+    return ids.length ? `<div class="readfirst"><b>ควรอ่าน:</b> ${ids.map((l) => lecLink(b, l, ls[l])).join(" · ")}</div>` : "";
+  }
+  function explainHTML(b, q, extra, tone, wrong) {
     const mine = kov()[q.id];
     let h = `<div class="explain"><h3>คำอธิบาย${badgeHTML(q)}</h3>`;
+    if (wrong) h += readFirstHTML(b, q);
     if (q.explanation || extra) h += `<div class="answerline${tone ? " " + tone : ""}">${extra || ""}${q.explanation ? kcHTML(q.explanation) : ""}</div>`;
     if (q.source_answer || q.source_answer_text) h += `<div class="keyrow src"><span class="kl">เฉลยต้นฉบับ: ${esc(q.source_answer || q.source_answer_text)}${q.type === "MCQ" ? " (ไม่ใช้ให้คะแนน)" : ""}</span>${q.source_answer_note ? kcHTML(q.source_answer_note) : ""}</div>`;
     else if (q.source_answer_note && q.answer_status !== "verified") h += `<div class="keyrow src"><span class="kl">หมายเหตุจากต้นฉบับ</span>${kcHTML(q.source_answer_note)}</div>`;
@@ -127,8 +144,19 @@ window.MedLibQuizUI = function (ML) {
     if (q.key_concept) h += `<h4>หลักการ</h4>${kcHTML(q.key_concept)}`;
     if (q.audit_note) h += `<p class="auditnote">หมายเหตุการตรวจเฉลย: ${txt(q.audit_note)}</p>`;
     h += refsHTML(b, q);
+    h += disputeHTML(q, mine);
     h += reportHTML(b, q, mine);
     return h + `</div>`;
+  }
+  // Disputed MCQ: source key vs AI key vs other cohorts, and one tap to pick a side (stored as keyOverride).
+  function disputeHTML(q, mine) {
+    if (!q.ai_answer) return "";
+    const side = Object.entries(q.same_side || {}), nAi = side.filter((x) => x[1] === "ai").length, nSrc = side.filter((x) => x[1] === "source").length;
+    const others = side.length ? ` · รุ่นอื่น: ${nAi > nSrc ? "ตรงกับ AI" : nSrc > nAi ? "ตรงกับต้นฉบับ" : "ไม่ชี้ขาด"} (${side.map((x) => esc(x[0].split("-")[1]) + (x[1] === "ai" ? " AI" : x[1] === "source" ? " ต้นฉบับ" : " ?")).join(", ")})` : " · ไม่มีรุ่นอื่นออกซ้ำ";
+    const use = C.keyOf(q, kov()), why = mine ? "ที่ฉันเลือก" : use === q.ai_answer ? "ตามรุ่นอื่น" : "ตามต้นฉบับ";
+    const btn = (k, label) => `<button class="btn sm${mine === k ? " primary" : ""}" data-z="${mine === k ? "unkey" : "pickkey"}" data-q="${esc(q.id)}" data-k="${k}">${label}</button>`;
+    return `<div class="dispute"><p><b>เฉลยไม่ตรงกัน</b> — ต้นฉบับ: <b>${esc(q.answer)}</b> · AI: <b>${esc(q.ai_answer)}</b>${others}</p>
+      <p>ตอนนี้ตัดสินด้วย <b>${esc(use)}</b> (${why})</p><div class="btns">${btn(q.answer, "เชื่อต้นฉบับ")}${btn(q.ai_answer, "เชื่อ AI")}</div></div>`;
   }
   function reportHTML(b, q, mine) {
     const rep = marks().reported[q.id];
@@ -167,7 +195,7 @@ window.MedLibQuizUI = function (ML) {
         const lbl = (k) => (r.shuffleC ? "ABCDE"[order.indexOf(k)] : k);
         const alsoTxt = oks.length > 1 ? ` (${oks.slice(1).map(lbl).join(", ")} ก็นับถูก)` : "";
         const extra = key ? `<p><b>${!chosen ? "ไม่ได้ตอบ · " : right ? "ถูกต้อง · " : "ยังไม่ใช่ · "}คำตอบ ${esc(disp)}${esc(alsoTxt)}${r.shuffleC && disp !== key ? ` (ช้อยส์ ${esc(key)} ในต้นฉบับ)` : ""}${q.answer_status === "corrected" ? " (เฉลยใหม่)" : q.answer_status === "draft" ? " (ร่างเฉลย)" : ""}</b></p>` : "";
-        h += explainHTML(b, q, extra, !chosen ? "none" : right ? "" : "bad");
+        h += explainHTML(b, q, extra, !chosen ? "none" : right ? "" : "bad", !right);
       }
       return h;
     }
@@ -207,7 +235,7 @@ window.MedLibQuizUI = function (ML) {
       h += `</div>`;
     });
     if (instant && !reveal) h += `<button class="btn primary" data-z="check">ตรวจคำตอบข้อนี้</button>`;
-    if (reveal) h += explainHTML(b, q, "");
+    if (reveal) h += explainHTML(b, q, "", "", (C.qScore(q, r, kov()) || 0) < 0.999);
     return h;
   }
 
@@ -270,7 +298,7 @@ window.MedLibQuizUI = function (ML) {
     if (!r) { location.replace(base(b, s)); return; }
     const qmap = qmapOf(s);
     const i = Math.max(0, Math.min(r.qids.length - 1, (Number(pos) || 1) - 1));
-    r.idx = i;
+    r.idx = i; r.at = Date.now();   // "at" = last time this round was open, for ทำต่อจากล่าสุด
     const q = qmap[r.qids[i]];
     const instant = r.mode === "practice";
     const reveal = !!r.chk[q.id];
@@ -326,7 +354,7 @@ window.MedLibQuizUI = function (ML) {
 
   function finishRound(b, s, r, all) {
     stop();
-    if (all) r.qids.forEach((id) => { r.chk[id] = true; });
+    if (all) { const qm = qmapOf(s); r.qids.forEach((id) => { if (!r.chk[id]) { r.chk[id] = true; graded(qm[id], r); } }); }
     r.done = true; r.finished = Date.now(); save();
     location.hash = `${base(b, s)}/sum/${r.id}`;
     if (ML.syncSoon) ML.syncSoon();
@@ -357,6 +385,11 @@ window.MedLibQuizUI = function (ML) {
       h += `<h3>ข้อที่ผิด (${wrong.length}) · เลือกข้อที่จะทำซ้ำ</h3><div class="pickwrong">${wrong.map((q) => `<label class="chk"><input type="checkbox" data-wrongpick="${esc(q.id)}" checked> <a href="${jump(q)}">ข้อ ${no(q)}</a> <span class="hint">${esc(String(q.stem || q.case || "").slice(0, 70))}…</span></label>`).join("")}</div>
         <div class="btns"><button class="btn primary" data-z="retry" data-r="${r.id}">ทำข้อที่เลือกซ้ำเป็นรอบใหม่</button><a class="btn" href="${B}">ทำทั้งชุดอีกครั้ง</a></div>`;
     } else if (r.done) h += `<div class="btns"><span class="badge good">ไม่มีข้อที่ผิด</span><a class="btn" href="${B}">ทำทั้งชุดอีกครั้ง</a></div>`;
+    // lectures behind this round's wrong answers, most wrong first
+    const toRead = {};
+    wrong.filter((q) => C.counts(q, kov())).forEach((q) => Object.keys(lecRefs(q)).forEach((l) => { toRead[l] = (toRead[l] || 0) + 1; }));
+    const readKeys = Object.keys(toRead).sort((x, y) => toRead[y] - toRead[x] || x.localeCompare(y));
+    if (readKeys.length) h += `<h3>Lecture ที่ควรอ่านก่อน</h3><ol class="readlist">${readKeys.map((l) => `<li>${lecLink(b, l)} <span class="hint">ผิด ${toRead[l]} ข้อ</span></li>`).join("")}</ol>`;
     const keys = Object.keys(by).sort((x, y) => by[x].s / by[x].n - by[y].s / by[y].n);
     if (keys.length) h += `<h3>คะแนนราย Lecture (อ่อนสุดอยู่บน)</h3><div class="tablewrap"><table><thead><tr><th>Lecture</th><th>คะแนน</th><th>ข้อที่ควรทบทวน</th></tr></thead><tbody>${keys.map((l) => `<tr><td>${esc(lecName(b, l))}</td><td>${Math.round(by[l].s * 10) / 10}/${by[l].n}</td><td>${by[l].ids.map((q) => `<a class="jump" href="${jump(q)}">ข้อ ${no(q)}</a>`).join("")}</td></tr>`).join("")}</tbody></table></div>`;
     const reread = rereadHTML(b, wrong);
@@ -367,7 +400,7 @@ window.MedLibQuizUI = function (ML) {
   }
   function rereadHTML(b, qs) {
     const g = {};
-    qs.forEach((q) => (q.refs || []).filter((x) => x.lecture).forEach((x) => {
+    qs.forEach((q) => (q.refs || []).filter((x) => x.lecture && x.pages).forEach((x) => {
       const k = x.lecture + "|" + x.pages[0];
       const o = g[k] = g[k] || { lec: x.lecture, pages: x.pages, focus: x.focus || "", tier: (x.hotspot || {}).tier || 3, qs: [] };
       if (!o.qs.includes(q)) o.qs.push(q);
@@ -416,8 +449,8 @@ window.MedLibQuizUI = function (ML) {
       if (own && !t.own.includes(q.id)) t.own.push(q.id);
       if (!t.all.includes(q.id)) t.all.push(q.id);
     };
-    qs.forEach((q) => (q.refs || []).filter((x) => x.lecture).forEach((x) => add(q, x, true)));
-    if (allQs) allQs.forEach((q) => (q.refs || []).filter((x) => x.lecture && T[x.lecture + "|" + x.pages[0]]).forEach((x) => add(q, x, false)));
+    qs.forEach((q) => (q.refs || []).filter((x) => x.lecture && x.pages).forEach((x) => add(q, x, true)));
+    if (allQs) allQs.forEach((q) => (q.refs || []).filter((x) => x.lecture && x.pages && T[x.lecture + "|" + x.pages[0]]).forEach((x) => add(q, x, false)));
     return Object.values(T).map((t) => {
       const years = [...t.years].sort();
       const tier = t.tiers.length ? Math.min(...t.tiers) : years.length >= 3 ? 1 : years.length === 2 ? 2 : 3;
@@ -463,11 +496,29 @@ window.MedLibQuizUI = function (ML) {
       h += `<p class="lead">หน้าที่ข้อในชุดนี้อ้างถึง จัดกลุ่มตาม Lecture · Tier คิดจากจำนวนปีที่หน้านั้นออกสอบในบล็อกนี้</p>`;
     }
     h += tierLegend;
-    h += lectures.length ? lectures.map((L) => lcardHTML(b, L, linkQ, L.sub)).join("") : `<div class="empty">ข้อในชุดนี้ยังไม่ได้โยงกับหน้า lecture (มีแค่หน้าต้นฉบับข้อสอบ) เมื่อ Auditor ใส่หน้า lecture แล้ว แผนอ่านจะขึ้นที่นี่</div>`;
+    h += lectures.length ? lectures.map((L) => lcardHTML(b, L, linkQ, L.sub)).join("") : lecPlanHTML(b, s.questions) || `<div class="empty">ข้อในชุดนี้ยังไม่ได้โยงกับหน้า lecture (มีแค่หน้าต้นฉบับข้อสอบ) เมื่อ Auditor ใส่หน้า lecture แล้ว แผนอ่านจะขึ้นที่นี่</div>`;
     const res = blockResults(b);
     const wrong = s.questions.filter((q) => q.id in res && res[q.id] < 0.999);
     h += `<h3>อ่านซ่อมจากข้อที่ผิดในชุดนี้</h3>${rereadHTML(b, wrong) || `<div class="empty">ยังไม่มีข้อที่ผิด เมื่อตรวจคำตอบแล้ว หน้าที่ควรอ่านซ่อมจะขึ้นที่นี่</div>`}`;
     ML.main.innerHTML = h;
+  }
+  // Reading plan per lecture, for blocks whose questions point at lectures but not at pages yet (END)
+  function lecPlanHTML(b, qs) {
+    const res = blockResults(b), by = {};
+    qs.forEach((q) => [...new Set((q.refs || []).filter((x) => x && x.lecture).map((x) => x.lecture))].forEach((l) => {
+      const o = by[l] = by[l] || { n: 0, years: new Set(), wrong: 0 };
+      o.n++; if (q.cohort) o.years.add(q.cohort);
+      if (C.counts(q, kov()) && q.id in res && res[q.id] < 0.999) o.wrong++;
+    }));
+    const ls = Object.keys(by).sort((x, y) => by[y].n - by[x].n || by[y].years.size - by[x].years.size || x.localeCompare(y));
+    if (!ls.length) return "";
+    return `<p class="hint">เรียง lecture ที่ข้อสอบอ้างถึงบ่อยสุดขึ้นก่อน · ข้อสอบชุดนี้ยังไม่มีเลขหน้า lecture จึงแสดงเป็นรายบท</p>
+      <div class="tablewrap"><table class="lecplan"><thead><tr><th>Lecture</th><th>ข้อสอบ</th><th></th></tr></thead><tbody>${ls.map((l) => {
+        const o = by[l], yrs = [...o.years].sort((x, y) => y - x);
+        const meta = [`ออก ${yrs.length} ปี${yrs.length ? ` (${yrs[yrs.length - 1]}–${yrs[0]})` : ""}`, o.wrong ? `<b>ฉันผิด ${o.wrong} ข้อ</b>` : ""].filter(Boolean).join(" · ");
+        return `<tr><td>${esc(lecName(b, l))}<div class="hint">${meta}</div></td><td>${o.n}</td>
+          <td class="lpbtn"><a class="btn sm" href="#/lec/${enc(b.id)}/${enc(l)}">อ่าน</a><button class="btn sm" data-z="mixlec" data-b="${esc(b.id)}" data-l="${esc(l)}">ฝึก</button></td></tr>`;
+      }).join("")}</tbody></table></div>`;
   }
   // Block tab "แผนอ่าน": every exam question of the block → pages to read, by tier
   function planHTML(b) {
@@ -476,12 +527,12 @@ window.MedLibQuizUI = function (ML) {
     const linkQ = (id) => `#/q/${enc(id)}`;
     const tierF = (P().prefs || {}).planTier || 3;
     const lecs = guideLectures(b, topics.filter((t) => t.tier <= tierF));
-    const withLec = qs.filter((q) => (q.refs || []).some((x) => x.lecture));
+    const withLec = qs.filter((q) => (q.refs || []).some((x) => x.lecture && x.pages));   // the plan works on lecture pages; page-less "read this lecture" refs do not count
     const t1pages = topics.filter((t) => t.tier === 1).reduce((a, t) => a + t.pages[1] - t.pages[0] + 1, 0);
     const t1q = new Set(topics.filter((t) => t.tier === 1).flatMap((t) => t.own));
     const cohorts = [...new Set(qs.map((q) => q.cohort))].sort();
     let h = `<p class="lead">หน้า lecture ที่ข้อสอบชุด ${cohorts.join(", ")} อ้างถึง เรียงจาก Lecture ที่ออกมากสุด · กดเลขหน้าเพื่อเปิดอ่านตรงหน้านั้น</p>`;
-    if (!withLec.length) return h + `<div class="empty">ข้อสอบในบล็อกนี้ยังไม่ได้โยงกับหน้า lecture แผนอ่านจะขึ้นเมื่อมี lecture และ Auditor ใส่หน้าอ้างอิงแล้ว</div>`;
+    if (!withLec.length) return lecPlanHTML(b, qs) || h + `<div class="empty">ข้อสอบในบล็อกนี้ยังไม่ได้โยงกับหน้า lecture แผนอ่านจะขึ้นเมื่อมี lecture และ Auditor ใส่หน้าอ้างอิงแล้ว</div>`;
     h += `<div class="statrow"><div><b>${t1pages}</b><span>หน้า Tier 1</span></div><div><b>${withLec.length ? Math.round((t1q.size / withLec.length) * 100) : 0}%</b><span>ของข้อที่โยง lecture ได้ อยู่ในหน้า Tier 1</span></div><div><b>${topics.length}</b><span>หัวข้อทั้งหมด</span></div></div>`;
     h += `<div class="toolbar">${tierLegend}<label>แสดง <select data-zplan="1"><option value="1" ${tierF === 1 ? "selected" : ""}>Tier 1 อย่างเดียว</option><option value="2" ${tierF === 2 ? "selected" : ""}>Tier 1–2</option><option value="3" ${tierF === 3 ? "selected" : ""}>ทุก Tier</option></select></label></div>`;
     h += lecs.map((L) => lcardHTML(b, L, linkQ, `${L.n} ข้อ · ${L.topics.length} หัวข้อ · ${L.pages} หน้า`)).join("");
@@ -494,10 +545,10 @@ window.MedLibQuizUI = function (ML) {
   /* ---------- block exam page: weak spots, quick random, MCQ | KF | OSPE | Lecture tabs ---------- */
   const TYPE_ORDER = ["MCQ", "KF", "OSPE"];
   const examTab = { block: null, tab: "MCQ" };   // a block page opens on MCQ; the choice is kept while you stay in that block
-  function tabOf(b, types, hasLec) {
+  function tabOf(b, types, hasLec, hasTopic) {
     if (examTab.block !== b.id) { examTab.block = b.id; examTab.tab = types[0] || (hasLec ? "lec" : "MCQ"); }
-    if (examTab.tab !== "lec" && !types.includes(examTab.tab)) examTab.tab = types[0] || "lec";
-    if (examTab.tab === "lec" && !hasLec) examTab.tab = types[0];
+    if (examTab.tab !== "lec" && examTab.tab !== "topic" && !types.includes(examTab.tab)) examTab.tab = types[0] || "lec";
+    if ((examTab.tab === "lec" && !hasLec) || (examTab.tab === "topic" && !hasTopic)) examTab.tab = types[0];
     return examTab.tab;
   }
   function examTabHTML(b) {
@@ -510,20 +561,27 @@ window.MedLibQuizUI = function (ML) {
     const mixes = Object.entries(P().mixes).filter(([, m]) => m.block === b.id);
     const types = TYPE_ORDER.filter((t) => b.sets.some((s) => s.type === t) || b.papers.some((p) => p.type === t));
     if (!types.length) return `<div class="empty">ยังไม่มีข้อสอบในบล็อกนี้</div>`;
-    const tab = tabOf(b, types, lecs.length > 0);
-    const pool = tab === "lec" ? qs : qs.filter((q) => q.type === tab);
+    const topics = (b.topics || []).filter((tp) => qs.some((q) => q.topic === tp.id));
+    const tab = tabOf(b, types, lecs.length > 0, topics.length > 0);
+    const whole = tab === "lec" || tab === "topic";
+    const pool = whole ? qs : qs.filter((q) => q.type === tab);
     let h = "";
     if (wrongN + flagN) h += `<button class="weakbar" data-z="mixweak"><span><b>ทบทวนจุดอ่อน</b><small>ผิดล่าสุด ${wrongN} ข้อ · ปักธง ${flagN} ข้อ</small></span><i aria-hidden="true">→</i></button>`;
-    h += `<nav class="tabs etabs">${[...types.map((t) => [t, t]), ...(lecs.length ? [["lec", "Lecture"]] : [])].map(([k, l]) => `<button class="tab ${tab === k ? "on" : ""}" data-z="etab" data-t="${k}">${l}</button>`).join("")}</nav>`;
-    if (pool.length) h += `<div class="quickrow"><button class="btn primary" data-z="mixrand" data-t="${tab}">สุ่ม ${Math.min(30, pool.length)} ข้อ${tab === "lec" ? "จากทั้งบล็อก" : ` ${tab} จากทุกชุด`}</button></div>`;
+    h += `<nav class="tabs etabs">${[...types.map((t) => [t, t]), ...(lecs.length ? [["lec", "Lecture"]] : []), ...(topics.length ? [["topic", "หัวข้อ"]] : [])].map(([k, l]) => `<button class="tab ${tab === k ? "on" : ""}" data-z="etab" data-t="${k}">${l}</button>`).join("")}</nav>`;
+    if (pool.length) h += `<div class="quickrow"><button class="btn primary" data-z="mixrand" data-t="${tab}">สุ่ม ${Math.min(30, pool.length)} ข้อ${whole ? "จากทั้งบล็อก" : ` ${tab} จากทุกชุด`}</button></div>`;
     const card = (attrs, title, n, pct, prog) => `<${attrs.startsWith("href") ? "a" : "button"} class="pcard" ${attrs}><span class="ptop"><b>${title}</b><span class="n">${n} ข้อ</span></span>${prog ? `<span class="sbar"><i style="width:${pct}%"></i></span><span class="prog">${prog}</span>` : ""}</${attrs.startsWith("href") ? "a" : "button"}>`;
+    // one card per lecture or topic; progress counts only questions that count toward scores
+    const groupCard = (attrs, title, lq, noneText) => {
+      const cq = lq.filter((q) => C.counts(q, kov()));
+      const done = cq.filter((q) => q.id in res).length, ok = cq.filter((q) => res[q.id] >= 0.999).length;
+      return card(attrs, title, lq.length, cq.length ? Math.round((done / cq.length) * 100) : 0, !cq.length ? noneText : done ? `ทำแล้ว ${done}/${cq.length} · ถูก ${ok}` : "");
+    };
     if (tab === "lec") {
-      h += `<div class="pgrid">${lecs.map((l) => {
-        const lq = qs.filter((q) => (q.refs || []).some((x) => x.lecture === l));
-        const cq = lq.filter((q) => C.counts(q, kov()));   // progress over questions that count
-        const done = cq.filter((q) => q.id in res).length, ok = cq.filter((q) => res[q.id] >= 0.999).length;
-        return card(`data-z="mixlec" data-l="${esc(l)}"`, esc(lecName(b, l).slice(0, 60)), lq.length, cq.length ? Math.round((done / cq.length) * 100) : 0, done ? `ทำแล้ว ${done}/${cq.length} · ถูก ${ok}` : "");
-      }).join("")}</div>`;
+      h += `<div class="pgrid">${lecs.map((l) => groupCard(`data-z="mixlec" data-l="${esc(l)}"`, esc(lecName(b, l).slice(0, 60)),
+        qs.filter((q) => (q.refs || []).some((x) => x.lecture === l)), "")).join("")}</div>`;
+    } else if (tab === "topic") {
+      h += `<div class="pgrid">${topics.map((tp) => groupCard(`data-z="mixtopic" data-tp="${esc(tp.id)}"`, esc(tp.name),
+        qs.filter((q) => q.topic === tp.id), "เฉลยทั้งหัวข้อยังไม่ยืนยัน · ไม่นับคะแนน")).join("")}</div>`;
     } else {
       const cohorts = [...new Set([...b.sets.filter((s) => s.type === tab).map((s) => s.cohort), ...b.papers.filter((p) => p.type === tab).map((p) => p.cohort)])].sort((x, y) => y - x);
       h += `<div class="pgrid">${cohorts.map((c) => {
@@ -545,8 +603,70 @@ window.MedLibQuizUI = function (ML) {
     const same = Object.entries(P().mixes).find(([, m]) => m.block === b.id && m.title === title && m.qids.join() === qids.join());
     if (same) { location.hash = `#/set/${enc(b.id)}/@${enc(same[0])}`; return; }
     const id = Date.now().toString(36);
-    P().mixes[id] = { block: b.id, title, qids, created: Date.now() };
+    P().mixes[id] = { block: b.id, title, qids, created: Date.now() }; C.touch(P(), "mixes", id);
     save(); location.hash = `#/set/${enc(b.id)}/@${enc(id)}`;
+  }
+
+  // the round in progress that was open most recently (any visible block), for the home page
+  function lastActive() {
+    let best = null;
+    ML.visibleBlocks().forEach((b) => Object.entries(P().rounds).filter(([k]) => k.startsWith(b.id + "/")).forEach(([k, list]) => {
+      const s = setLike(b, k.slice(b.id.length + 1)); if (!s || !Array.isArray(list)) return;
+      // the same round the set page opens (activeRound), so the button and the page agree
+      const r = list.filter((x) => x && !x.done && Array.isArray(x.qids)).pop();
+      if (r && (!best || (r.at || r.started || 0) > (best.r.at || best.r.started || 0))) best = { b, s, r };
+    }));
+    if (!best) return null;
+    const { b, s, r } = best;
+    return { href: `${base(b, s)}/run/${(r.idx || 0) + 1}`, title: s.mix ? s.title : `${b.name} · ชุด ${s.cohort} ${s.type}`, pos: (r.idx || 0) + 1, n: r.qids.length };
+  }
+
+  // review queue of one block: due now / waiting (questions removed from the block are left out)
+  function reviewCounts(b) {
+    const R = P().review || {}, ids = ML.examsOf(b).filter((q) => C.counts(q, kov())).map((q) => q.id).filter((id) => R[id]);
+    return { due: C.reviewDue(P(), ids, Date.now()).length, queued: ids.length };
+  }
+
+  /* ---------- personal stats (#/stats) ---------- */
+  function viewStats() {
+    const blocks = ML.visibleBlocks().filter((b) => ML.examsOf(b).length);
+    const pctTxt = (x) => (x.pct === null ? "—" : `${x.pct}%`);
+    const cards = [], weak = [], pts = [];
+    blocks.forEach((b) => {
+      const qs = ML.examsOf(b), res = blockResults(b);
+      const all = C.groupStats(qs, res, kov(), () => b.id)[0];
+      if (!all || !all.done) return;
+      const names = Object.fromEntries((b.topics || []).map((x) => [x.id, x.name]));
+      const tops = (b.topics || []).length ? C.groupStats(qs, res, kov(), (q) => q.topic) : [];
+      tops.forEach((x) => { if (x.done >= 5 && names[x.key]) weak.push({ b, x, name: names[x.key] }); });
+      const rows = tops.filter((x) => names[x.key]).map((x) => `<tr><td>${esc(names[x.key] || x.key)}</td><td>${x.done}/${x.total}</td><td>${pctTxt(x)}</td>
+        <td><button class="btn sm" data-z="mixtopic" data-b="${esc(b.id)}" data-tp="${esc(x.key)}">ฝึก</button></td></tr>`).join("");
+      // lectures behind the latest wrong answers in this block (top 5)
+      const miss = {};
+      qs.filter((q) => C.counts(q, kov()) && q.id in res && res[q.id] < 0.999).forEach((q) => Object.keys(lecRefs(q)).forEach((l) => { miss[l] = (miss[l] || 0) + 1; }));
+      const top = Object.keys(miss).sort((x, y) => miss[y] - miss[x] || x.localeCompare(y)).slice(0, 5);
+      const lecTable = top.length ? `<div class="tablewrap"><table class="lectbl"><thead><tr><th>Lecture ที่ผิดบ่อย</th><th>ผิด</th><th></th></tr></thead><tbody>${top.map((l) => `<tr><td>${esc(lecName(b, l))}</td><td>${miss[l]}</td><td><a class="btn sm" href="#/lec/${enc(b.id)}/${enc(l)}">อ่าน</a></td></tr>`).join("")}</tbody></table></div>` : "";
+      cards.push(`<div class="statcard" data-blk="${esc(b.id)}" style="--blk:${esc(b.color || "var(--artery)")}">
+        <div class="ptop"><b>${esc(b.name)}</b><span class="n">${pctTxt(all)}</span></div>
+        <span class="sbar"><i style="width:${all.pct || 0}%"></i></span>
+        <span class="prog">ทำแล้ว ${all.done}/${all.total} ข้อ · ถูก ${all.ok}</span>
+        ${lecTable}${rows ? `<div class="tablewrap"><table class="toptbl"><thead><tr><th>หัวข้อ (อ่อนสุดก่อน)</th><th>ทำแล้ว</th><th>คะแนน</th><th></th></tr></thead><tbody>${rows}</tbody></table></div>` : ""}</div>`);
+      const qmap = Object.fromEntries(qs.map((q) => [q.id, q]));   // same questions as the cards (respects showDrafts)
+      Object.entries(P().rounds).filter(([k, list]) => k.startsWith(b.id + "/") && Array.isArray(list)).forEach(([k, list]) => {
+        const s = setLike(b, k.slice(b.id.length + 1)); if (!s) return;
+        list.filter((r) => r && Array.isArray(r.qids) && r.chk && r.done && !r.abandoned && r.kind !== "retry").forEach((r) => {
+          const st = C.roundStats(r, qmap, kov()), when = r.finished || r.started || 0;
+          if (st.checked) pts.push({ t: when, pct: st.pct, label: `${when ? new Date(when).toLocaleDateString("th-TH") + " · " : ""}${b.name} ${s.title || s.id}` });
+        });
+      });
+    });
+    let h = `<div class="head"><h2>สถิติของฉัน</h2><p class="hint">ใช้ผลล่าสุดของแต่ละข้อ ไม่นับข้อที่เฉลยยังไม่ยืนยัน</p></div><div id="stats">`;
+    if (!cards.length) { ML.main.innerHTML = h + `<div class="empty">ยังไม่มีข้อมูล ทำข้อสอบสักชุดก่อน แล้วสถิติจะขึ้นที่นี่</div></div>`; return; }
+    weak.sort((a, b) => a.x.pct - b.x.pct);
+    if (weak.length) h += `<div class="quickrow"><button class="btn primary weakest" data-z="mixtopic" data-b="${esc(weak[0].b.id)}" data-tp="${esc(weak[0].x.key)}">ฝึกหัวข้อที่อ่อนสุด: ${esc(weak[0].name)} (${weak[0].x.pct}%)</button></div>`;
+    pts.sort((a, b) => a.t - b.t);
+    h += pts.length >= 2 ? `<h3>คะแนนแต่ละรอบ</h3>${chartSVG(pts)}` : `<p class="hint">ทำครบ 2 รอบขึ้นไปจะเห็นกราฟ</p>`;
+    ML.main.innerHTML = h + `<div class="statgrid">${cards.join("")}</div></div>`;
   }
 
   /* ---------- floating notepad per set ---------- */
@@ -593,13 +713,13 @@ window.MedLibQuizUI = function (ML) {
 
   async function onClick(t) {
     const c = ctx();
-    if (t.dataset.zoom) { t.classList.toggle("zoom"); return true; }
+    if (t.dataset.zoom) { t.classList.toggle("zoom"); t.style.transform = ""; return true; }
     if (t.dataset.go !== undefined) { if (t.dataset.go && c.s) location.replace(`${base(c.b, c.s)}/run/${t.dataset.go}`); return true; }
     if (t.dataset.opt) {
       const q = curQ(c), r = c.r; if (!q || !r || r.chk[q.id]) return true;
       r.ans[q.id] = t.dataset.opt;
-      if (c.single || r.mode === "practice") r.chk[q.id] = true;
-      if (!c.single) save();
+      if (c.single || r.mode === "practice") { r.chk[q.id] = true; graded(q, r); }
+      save();   // also on the single-question page: the review queue may have changed
       rerender();
       const ex = $(".qcard .explain"); if (ex) ex.scrollIntoView({ block: "nearest", behavior: "smooth" });
       return true;
@@ -608,7 +728,8 @@ window.MedLibQuizUI = function (ML) {
       const q = curQ(c), r = c.r; if (!q || !r) return true;
       const o = r.ov[q.id] = r.ov[q.id] || {};
       if (t.dataset.ov === "auto") delete o[t.dataset.item]; else o[t.dataset.item] = Number(t.dataset.ov);
-      if (!c.single) save(); rerender(); return true;
+      if (r.chk[q.id]) graded(q, r);
+      save(); rerender(); return true;
     }
     const z = t.dataset.z; if (!z) return false;
     const q = curQ(c);
@@ -620,8 +741,8 @@ window.MedLibQuizUI = function (ML) {
     }
     if (z === "abandon") { if (!ML.armed(t)) return true; const r = activeRound(c.b, c.s); if (r) { r.done = true; r.abandoned = true; r.finished = Date.now(); save(); } rerender(); return true; }
     if (z === "navtoggle") { c.r.navOpen = !c.r.navOpen; save(); rerender(); return true; }
-    if (z === "flag") { const id = t.dataset.q || (q && q.id); if (id) { if (marks().flag[id]) delete marks().flag[id]; else marks().flag[id] = true; save(); rerender(); } return true; }
-    if (z === "check") { if (q && c.r) { c.r.chk[q.id] = true; if (!c.single) save(); rerender(); } return true; }
+    if (z === "flag") { const id = t.dataset.q || (q && q.id); if (id) { if (marks().flag[id]) delete marks().flag[id]; else { marks().flag[id] = true; C.reviewAdd(P(), (ML.findQuestion(id) || {}).q, Date.now(), kov()); } C.touch(P(), "flag", id); save(); rerender(); } return true; }
+    if (z === "check") { if (q && c.r) { c.r.chk[q.id] = true; graded(q, c.r); save(); rerender(); } return true; }
     if (z === "singleredo") { delete single[c.q.id]; rerender(); return true; }
     if (z === "finish") {
       const r = c.r, left = r.qids.filter((id) => !r.chk[id]).length;
@@ -643,7 +764,7 @@ window.MedLibQuizUI = function (ML) {
       r.choiceOrder = Object.fromEntries(Object.entries(r.choiceOrder).filter(([k]) => qmap[k] && ids.includes(k)));
       save(); return true;
     }
-    if (z === "clearhist") { if (!ML.armed(t)) return true; P().rounds[keyOfSet(c.b, c.s)] = []; save(); rerender(); return true; }
+    if (z === "clearhist") { if (!ML.armed(t)) return true; P().rounds[keyOfSet(c.b, c.s)] = []; C.touch(P(), "clear", keyOfSet(c.b, c.s)); save(); rerender(); return true; }
     if (z === "pad") { padOpen = !padOpen; rerender(); return true; }
     if (z === "etab") { examTab.tab = t.dataset.t; rerender(); return true; }
     if (z === "qstart") {
@@ -651,10 +772,30 @@ window.MedLibQuizUI = function (ML) {
       const pref = P().prefs || {};
       startRound(c.b, s, { mode: pref.mode || "practice", shuffleQ: !!pref.shuffleQ, shuffleC: !!pref.shuffleC }); return true;
     }
+    if (z === "review") {
+      const b = ML.findBlock(t.dataset.b); if (!b) return true;
+      const ids = C.reviewDue(P(), ML.examsOf(b).filter((x) => C.counts(x, kov())).map((x) => x.id), Date.now());
+      if (!ids.length) return true;
+      // one review set per block, refreshed each time (old ones would pile up); an unfinished round of the old list is closed
+      const id = `review-${b.id}`, old = P().mixes[id];
+      if (!old || old.qids.join() !== ids.join()) {
+        (P().rounds[`${b.id}/@${id}`] || []).forEach((r) => { if (r && !r.done) { r.done = true; r.abandoned = true; r.finished = Date.now(); } });
+        P().mixes[id] = { block: b.id, title: `ทบทวนวันนี้ · ${new Date().toLocaleDateString("th-TH", { day: "numeric", month: "short" })}`, qids: ids, created: Date.now() };
+        C.touch(P(), "mixes", id); save();
+      }
+      location.hash = `#/set/${enc(b.id)}/@${enc(id)}`; return true;
+    }
+    if (z === "mixtopic") {
+      const b = (t.dataset.b && ML.findBlock(t.dataset.b)) || c.b; if (!b) return true;
+      const tp = (b.topics || []).find((x) => x.id === t.dataset.tp); if (!tp) return true;
+      makeMix(b, `${tp.name} · ทุกชุด`, ML.examsOf(b).filter((x) => x.topic === tp.id).map((x) => x.id)); return true;
+    }
     if (z === "mixlec") {
-      const l = t.dataset.l, qs = ML.examsOf(c.b).filter((x) => (x.refs || []).some((y) => y.lecture === l));
-      qs.sort((x, y) => (x.refs.find((r) => r.lecture === l).pages[0] - y.refs.find((r) => r.lecture === l).pages[0]) || y.cohort - x.cohort);
-      makeMix(c.b, `${lecName(c.b, l)} · ทุกชุด`, qs.map((x) => x.id)); return true;
+      const bb = (t.dataset.b && ML.findBlock(t.dataset.b)) || c.b; if (!bb) return true;
+      const l = t.dataset.l, qs = ML.examsOf(bb).filter((x) => (x.refs || []).some((y) => y.lecture === l));
+      const pg = (q) => ((q.refs.find((r) => r.lecture === l) || {}).pages || [0])[0];
+      qs.sort((x, y) => (pg(x) - pg(y)) || y.cohort - x.cohort);
+      makeMix(bb, `${lecName(bb, l)} · ทุกชุด`, qs.map((x) => x.id)); return true;
     }
     if (z === "mixrand") {
       const ty = TYPE_ORDER.includes(t.dataset.t) ? t.dataset.t : "";
@@ -666,17 +807,18 @@ window.MedLibQuizUI = function (ML) {
       const ids = ML.examsOf(c.b).filter((x) => (x.id in res && res[x.id] < 0.999) || marks().flag[x.id]).map((x) => x.id);
       makeMix(c.b, `จุดอ่อน: ผิด + ปักธง · ${new Date().toLocaleDateString("th-TH", { day: "numeric", month: "short" })}`, ids); return true;
     }
-    if (z === "delmix") { if (!ML.armed(t, "ลบ?")) return true; delete P().mixes[t.dataset.m]; delete P().rounds[`${c.b.id}/@${t.dataset.m}`]; save(); rerender(); return true; }
-    if (z === "unkey") { delete marks().keyOverride[t.dataset.q]; save(); rerender(); return true; }
+    if (z === "delmix") { if (!ML.armed(t, "ลบ?")) return true; delete P().mixes[t.dataset.m]; delete P().rounds[`${c.b.id}/@${t.dataset.m}`]; C.touch(P(), "mixes", t.dataset.m); C.touch(P(), "clear", `${c.b.id}/@${t.dataset.m}`); save(); rerender(); return true; }
+    if (z === "pickkey") { marks().keyOverride[t.dataset.q] = t.dataset.k; C.touch(P(), "keyOverride", t.dataset.q); save(); rerender(); return true; }
+    if (z === "unkey") { delete marks().keyOverride[t.dataset.q]; C.touch(P(), "keyOverride", t.dataset.q); save(); rerender(); return true; }
     if (z === "setkey" || z === "report") {
       const box = t.closest(".report"), id = t.dataset.q;
       const qq = ML.findQuestion(id); if (!qq) return true;
       const k = box.querySelector("[data-rep-key]"), local = box.querySelector("[data-rep-local]");
       const reason = box.querySelector("[data-rep-reason]").value.trim(), msg = box.querySelector("[data-rep-msg]");
       const want = k ? k.value : "";
-      if (z === "setkey") { if (!want) { msg.textContent = "เลือกคำตอบที่คิดว่าถูกก่อน"; return true; } marks().keyOverride[id] = want; save(); rerender(); return true; }
+      if (z === "setkey") { if (!want) { msg.textContent = "เลือกคำตอบที่คิดว่าถูกก่อน"; return true; } marks().keyOverride[id] = want; C.touch(P(), "keyOverride", id); save(); rerender(); return true; }
       if (reason.length < 3) { msg.textContent = "ใส่เหตุผลสั้น ๆ ก่อนส่ง"; return true; }
-      if (want && local && local.checked) marks().keyOverride[id] = want;
+      if (want && local && local.checked) { marks().keyOverride[id] = want; C.touch(P(), "keyOverride", id); }
       const payload = { qid: id, set: qq.q._set || "", answer: qq.q.type === "MCQ" ? qq.q.answer : "(KF/OSPE)", override: want, reason, page: location.href };
       const url = (ML.APP.config.report_url || ML.APP.config.drive_proxy_url || "").replace(/\/+$/, "");
       msg.textContent = "กำลังส่ง…";
@@ -684,7 +826,7 @@ window.MedLibQuizUI = function (ML) {
       if (url) {
         try { const res = await fetch(url + "/report", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(payload) }); sent = res.ok; } catch (e) { sent = false; }
       }
-      if (sent) { marks().reported[id] = Date.now(); save(); ML.toast("ส่งถึงผู้ดูแลแล้ว ขอบคุณที่ช่วยตรวจ"); rerender(); return true; }
+      if (sent) { marks().reported[id] = Date.now(); C.touch(P(), "reported", id); save(); ML.toast("ส่งถึงผู้ดูแลแล้ว ขอบคุณที่ช่วยตรวจ"); rerender(); return true; }
       const body = `ข้อ ${id}\nเฉลยในเว็บ: ${payload.answer}\nควรเป็น: ${want || "-"}\nเหตุผล: ${reason}\n${location.href}`;
       const repo = ML.APP.config.repo;
       save();
@@ -713,8 +855,8 @@ window.MedLibQuizUI = function (ML) {
       clearTimeout(typing); if (!c.single) typing = setTimeout(save, 400);
       return true;
     }
-    if (t.dataset.qnote) { const v = t.value; if (v.trim()) marks().notes[t.dataset.qnote] = { t: Date.now(), text: v }; else delete marks().notes[t.dataset.qnote]; clearTimeout(typing); typing = setTimeout(save, 400); return true; }
-    if (t.dataset.setnote) { const v = t.value; if (v.trim()) marks().setNotes[t.dataset.setnote] = { t: Date.now(), text: v }; else delete marks().setNotes[t.dataset.setnote]; clearTimeout(typing); typing = setTimeout(save, 400); return true; }
+    if (t.dataset.qnote) { const v = t.value; if (v.trim()) marks().notes[t.dataset.qnote] = { t: Date.now(), text: v }; else delete marks().notes[t.dataset.qnote]; C.touch(P(), "notes", t.dataset.qnote); clearTimeout(typing); typing = setTimeout(save, 400); return true; }
+    if (t.dataset.setnote) { const v = t.value; if (v.trim()) marks().setNotes[t.dataset.setnote] = { t: Date.now(), text: v }; else delete marks().setNotes[t.dataset.setnote]; C.touch(P(), "setNotes", t.dataset.setnote); clearTimeout(typing); typing = setTimeout(save, 400); return true; }
     return false;
   }
   function onKey(ev) {
@@ -727,5 +869,5 @@ window.MedLibQuizUI = function (ML) {
     return false;
   }
 
-  return { counts: (q) => C.counts(q, kov()), qPos, view, viewSingle, examTabHTML, planHTML, onClick, onChange, onInput, onKey, stop, blockResults };
+  return { counts: (q) => C.counts(q, kov()), qPos, view, viewSingle, viewStats, reviewCounts, lastActive, examTabHTML, planHTML, onClick, onChange, onInput, onKey, stop, blockResults };
 };

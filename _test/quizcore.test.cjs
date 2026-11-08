@@ -74,4 +74,95 @@ t("latestResults leaves out uncounted unless own key", () => {
   assert.deepStrictEqual(Object.keys(Q.latestResults([r], qm2)), [mcq.id]);
   assert.ok(dr.id in Q.latestResults([r], qm2, { [dr.id]: "A" }));
 });
+t("groupStats: weakest first, untouched last, uncounted left out", () => {
+  const g = (id, topic, extra = {}) => ({ id, type: "MCQ", topic, options: { A: "a", B: "b" }, answer: "A", ...extra });
+  const qs = [g("t1", "thyroid"), g("t2", "thyroid"), g("a1", "adrenal"), g("l1", "lipid"), g("t3", "thyroid", { answer_status: "draft" }), g("d1", "dm", { answer_status: "draft" })];
+  const res = { t1: 1, t2: 0, a1: 1, t3: 0, d1: 1 };
+  const out = Q.groupStats(qs, res, {}, (q) => q.topic);
+  assert.deepStrictEqual(out.map((x) => x.key), ["thyroid", "adrenal", "lipid"]);
+  assert.deepStrictEqual(out[0], { key: "thyroid", total: 2, done: 2, ok: 1, pct: 50 });
+  assert.strictEqual(out[1].pct, 100); assert.strictEqual(out[2].pct, null); assert.strictEqual(out[2].done, 0);
+});
+t("groupStats: partial KF score averages", () => {
+  const out = Q.groupStats([{ id: "k1", type: "KF", topic: "x", items: [] }], { k1: 0.5 }, {}, (q) => q.topic);
+  assert.deepStrictEqual(out, [{ key: "x", total: 1, done: 1, ok: 0, pct: 50 }]);
+});
+const mk = (o) => ({ rounds: {}, marks: { flag: {}, notes: {}, setNotes: {}, keyOverride: {}, reported: {} }, mixes: {}, ts: {}, ...o });
+t("merge: newer delete beats older add (flag, key, note, mix)", () => {
+  const a = mk({ marks: { flag: {}, keyOverride: {}, notes: {}, setNotes: {}, reported: {} }, mixes: {}, ts: { "flag:q1": 20, "keyOverride:q1": 20, "notes:q1": 20, "mixes:m1": 20 } });
+  const b = mk({ marks: { flag: { q1: true }, keyOverride: { q1: "B" }, notes: { q1: { t: 10, text: "x" } }, setNotes: {}, reported: {} }, mixes: { m1: { qids: [] } }, ts: { "flag:q1": 10, "keyOverride:q1": 10, "notes:q1": 10, "mixes:m1": 10 } });
+  for (const m of [Q.mergeProgress(a, b), Q.mergeProgress(b, a)]) {
+    assert.ok(!m.marks.flag.q1 && !m.marks.keyOverride.q1 && !m.marks.notes.q1 && !m.mixes.m1);
+    assert.strictEqual(m.ts["flag:q1"], 20);
+  }
+});
+t("merge: newer add beats older delete", () => {
+  const a = mk({ ts: { "flag:q1": 10 } });
+  const b = mk({ marks: { flag: { q1: 30 }, keyOverride: { q1: "C" }, notes: {}, setNotes: {}, reported: {} }, ts: { "flag:q1": 30, "keyOverride:q1": 30 } });
+  const m = Q.mergeProgress(a, b);
+  assert.ok(m.marks.flag.q1); assert.strictEqual(m.marks.keyOverride.q1, "C");
+});
+t("merge: cleared history drops older rounds, keeps newer", () => {
+  const a = mk({ ts: { "clear:X/s": 15 } });
+  const b = mk({ rounds: { "X/s": [{ id: "r1", started: 10, chk: {}, qids: [] }, { id: "r2", started: 20, chk: {}, qids: [] }] } });
+  for (const m of [Q.mergeProgress(a, b), Q.mergeProgress(b, a)]) assert.deepStrictEqual(m.rounds["X/s"].map((r) => r.id), ["r2"]);
+});
+t("merge: no times (old data) keeps union", () => {
+  const m = Q.mergeProgress(mk({ marks: { flag: { q1: true }, keyOverride: {}, notes: {}, setNotes: {}, reported: {} } }), mk({ marks: { flag: { q2: true }, keyOverride: {}, notes: {}, setNotes: {}, reported: {} } }));
+  assert.ok(m.marks.flag.q1 && m.marks.flag.q2);
+});
+t("touch records the time of a change", () => {
+  const p = mk(); Q.touch(p, "flag", "q1", 123); assert.strictEqual(p.ts["flag:q1"], 123);
+  const p2 = {}; Q.touch(p2, "clear", "X/s"); assert.ok(p2.ts["clear:X/s"] > 0);
+});
+const DAY = 864e5, day0 = (t) => { const d = new Date(t); d.setHours(0, 0, 0, 0); return d.getTime(); };
+t("review: wrong → due tomorrow; 3 right on time → 3 days, 7 days, out", () => {
+  const p = {}, now = Date.UTC(2026, 10, 7, 10);
+  Q.reviewUpdate(p, mcq, 0, now, {});
+  assert.deepStrictEqual([p.review[mcq.id].step, p.review[mcq.id].due], [0, day0(now) + DAY]);
+  let t1 = p.review[mcq.id].due + 3600e3;
+  Q.reviewUpdate(p, mcq, 1, t1, {}); assert.deepStrictEqual([p.review[mcq.id].step, p.review[mcq.id].due], [1, day0(t1) + 3 * DAY]);
+  t1 = p.review[mcq.id].due; Q.reviewUpdate(p, mcq, 1, t1, {}); assert.deepStrictEqual([p.review[mcq.id].step, p.review[mcq.id].due], [2, day0(t1) + 7 * DAY]);
+  t1 = p.review[mcq.id].due; Q.reviewUpdate(p, mcq, 1, t1, {}); assert.ok(!(mcq.id in p.review));
+  assert.ok(p.ts["review:" + mcq.id] > 0);
+});
+t("review: right before due does nothing; wrong restarts", () => {
+  const p = {}, now = Date.UTC(2026, 10, 7, 10);
+  Q.reviewUpdate(p, mcq, 0, now, {}); const before = JSON.stringify(p.review);
+  Q.reviewUpdate(p, mcq, 1, now + 3600e3, {}); assert.strictEqual(JSON.stringify(p.review), before);
+  const t1 = p.review[mcq.id].due; Q.reviewUpdate(p, mcq, 1, t1, {}); Q.reviewUpdate(p, mcq, 0.5, t1 + 1, {});
+  assert.strictEqual(p.review[mcq.id].step, 0);
+  assert.deepStrictEqual(Q.reviewDue(p, [mcq.id, "nope"], t1 + 1), []);
+  assert.deepStrictEqual(Q.reviewDue(p, [mcq.id, "nope"], p.review[mcq.id].due), [mcq.id]);
+});
+t("review: uncounted never queued; right answer outside queue ignored; flag adds once", () => {
+  const p = {}, now = Date.UTC(2026, 10, 7, 10);
+  Q.reviewUpdate(p, dr, 0, now, {}); Q.reviewUpdate(p, mcq, 1, now, {});
+  assert.deepStrictEqual(p.review || {}, {});
+  Q.reviewAdd(p, mcq, now, {}); const e = p.review[mcq.id]; Q.reviewAdd(p, mcq, now + DAY, {}); assert.strictEqual(p.review[mcq.id], e);
+  assert.strictEqual(e.step, 0); assert.strictEqual(e.due, day0(now) + DAY);
+  Q.reviewAdd(p, dr, now, {}); assert.ok(!(dr.id in p.review), "flagged draft never queued");
+});
+t("review: merge keeps the newer change, including leaving the queue", () => {
+  const a = { review: { q1: { step: 2, due: 50, t: 40 } }, ts: { "review:q1": 40 } };
+  const b = { review: {}, ts: { "review:q1": 60 } };
+  for (const m of [Q.mergeProgress(a, b), Q.mergeProgress(b, a)]) assert.ok(!("q1" in m.review));
+  const c = { review: { q2: { step: 0, due: 30, t: 1 } } }, d = { review: { q2: { step: 1, due: 90, t: 1 } } };
+  assert.strictEqual(Q.mergeProgress(c, d).review.q2.due, 30);
+  assert.strictEqual(Q.mergeProgress(d, c).review.q2.due, 30);
+});
+t("disputed: no other cohort → source key, counted", () => {
+  const q = { id: "D", type: "MCQ", options: { A: "a", B: "b" }, answer: "A", answer_status: "disputed", ai_answer: "B" };
+  assert.strictEqual(Q.keyOf(q, {}), "A"); assert.ok(Q.counts(q, {}));
+  assert.strictEqual(Q.qScore(q, { ans: { D: "B" } }, {}), 0);
+});
+t("disputed: other cohorts decide, tie → source", () => {
+  const q = { id: "D", type: "MCQ", options: { A: "a", B: "b" }, answer: "A", ai_answer: "B", same_side: { x: "ai", y: "ai", z: "source" } };
+  assert.strictEqual(Q.keyOf(q, {}), "B");
+  assert.strictEqual(Q.keyOf(Object.assign({}, q, { same_side: { x: "ai", z: "source" } }), {}), "A");
+});
+t("disputed: the person's pick wins", () => {
+  const q = { id: "D", type: "MCQ", options: { A: "a", B: "b" }, answer: "A", ai_answer: "B" };
+  assert.strictEqual(Q.qScore(q, { ans: { D: "B" } }, { D: "B" }), 1);
+});
 console.log(`\n${pass} ผ่าน`);

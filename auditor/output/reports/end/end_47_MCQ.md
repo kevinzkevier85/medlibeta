@@ -8,7 +8,8 @@
 | สถานะ | ความหมาย | จำนวน |
 |---|---|---|
 | `source_agree` | ตรงกับต้นฉบับ | 58 |
-| `source_disagree` | ขัดกับต้นฉบับ | 4 |
+| `source_disagree` | ขัดกับต้นฉบับ | 3 |
+| `corrected` | แก้ตามผู้ใช้ | 1 |
 | `drafted` | AI ทำเฉลย | 1 |
 
 AI ตอบตรงกับเฉลยต้นฉบับ **58/63** ข้อที่มีโจทย์
@@ -18,7 +19,6 @@ AI ตอบตรงกับเฉลยต้นฉบับ **58/63** ข้
 | ข้อ | ต้นฉบับ | AI | ความมั่นใจ | ปัญหา | รายละเอียด |
 |---|---|---|---|---|---|
 | 2 | A | E | medium | ถ้อยคำโจทย์น่าจะขาดคำว่า 'not' (iodine is NOT indicated as sole therapy); เฉลยขัดกับ AI | เฉลยต้นฉบับวง A (enhanced Wolff-Chaikoff block) — ถ้าโจทย์ถามว่าทำไม iodide ใช้ได้ผล A ถูก; แต่ถ้าถามว่าทำไม 'ไม่ใช้เป็นยาเดี่ยว' (ตามหลักเภสัช) คำตอบคือ escape phenomenon (E) ถ้อยคำในต้นฉบับกำกวม |
-| 6 | A | E | high | เฉลยขัดกับ AI | เฉลยต้นฉบับวง A (ATP-gated K⁺ channel is activated) ซึ่งผิดทิศ — sulfonylurea ปิด K-ATP ทำให้ depolarization (E) ข้อเดียวกันในรุ่น 50 (ข้อ 36) เฉลยเลือก depolarization |
 | 12 | A | E | medium | ไม่มีช้อยส์ที่ตรงที่สุด (TG ใน chylomicron ไม่ถูกย่อย); เฉลยขัดกับ AI | เฉลยต้นฉบับวง A (chylomicron remnant uptake ผิดปกติ = type III) แต่ภาพ milky fasting serum + eruptive xanthoma + abdominal pain ในเด็กเข้ากับ LPL deficiency (type I) มากกว่า ช้อยส์ที่ใกล้ที่สุดคือ E |
 | 20 | E | B | high | เฉลยขัดกับ AI | เฉลยต้นฉบับวง E (FRAX Thailand) — FRAX เป็นเครื่องมือทำนายความเสี่ยง 10 ปีที่ใช้จริงในไทย ส่วน BMD T-score ที่ femoral neck เป็นตัวพยากรณ์มาตรฐานของ WHO; ขึ้นกับว่า lecture ใช้คำว่า 'standard predictor' กับอะไร อาจนับถูกทั้ง B และ E |
 | 33 | None | D | low | ตารางผล Na/K หายไปจากต้นฉบับ ตอบได้ไม่แน่นอน; ในเฉลยต้นฉบับไม่ได้วงคำตอบ (เขียนว่าโจทย์ไม่ครบ); ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |  |
@@ -29,6 +29,7 @@ AI ตอบตรงกับเฉลยต้นฉบับ **58/63** ข้
 | ข้อ | ปัญหา | รายละเอียด |
 |---|---|---|
 | 4 | ช้อยส์ E AI เติมให้ครบ 5 ตัว |  |
+| 6 | แก้เฉลยตาม issue #29: glibenclamide ปิด K-ATP → β-cell depolarization (E) · ตัวเลือก A ผิดเพราะ K-ATP ถูกปิด ไม่ใช่ activate | เฉลยต้นฉบับวง A (ATP-gated K⁺ channel is activated) ซึ่งผิดทิศ — sulfonylurea ปิด K-ATP ทำให้ depolarization (E) ข้อเดียวกันในรุ่น 50 (ข้อ 36) เฉลยเลือก depolarization |
 | 7 | chylomicron (remnant) ก็เพิ่มขึ้นใน apoE defect |  |
 | 52 | ค่า calcium ในต้นฉบับเขียนซ้อนกัน (2.0 1.5 mmol/L) |  |
 

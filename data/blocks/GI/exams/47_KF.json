@@ -1,0 +1,1672 @@
+{
+ "meta": {
+  "set_id": "47_KF",
+  "block": "GI",
+  "cohort": 47,
+  "type": "KF",
+  "title": "KF Gastrointestinal · Med PSU 47",
+  "generated_by": "auditor/tools/build_kf.py from auditor/data/work/gi_47_KF.kf.json — do not edit by hand",
+  "time_limit_min": 180
+ },
+ "questions": [
+  {
+   "id": "GI-47-KF-001",
+   "block": "GI",
+   "cohort": 47,
+   "n": 1,
+   "type": "KF",
+   "case": "Answer the questions from the figure: a smooth-muscle recording with six slow waves within 30 seconds. Cycle 1 has no spike, cycle 2 has one spike, cycle 4 has two spikes, cycle 6 has three spikes. 'A' points at the baseline wave; 'B' points at the fast potentials.",
+   "items": [
+    {
+     "id": "1.1",
+     "prompt": "What is A?",
+     "format": "short",
+     "accepted": [
+      "slow wave",
+      "slow waves",
+      "basic electrical rhythm"
+     ],
+     "key_text": "Slow wave (normal)",
+     "source_key": "Slow wave ปกติ",
+     "explanation": "A = slow wave (BER) จาก ICC"
+    },
+    {
+     "id": "1.2",
+     "prompt": "What is B?",
+     "format": "short",
+     "accepted": [
+      "spike potential",
+      "spike potentials",
+      "spike",
+      "action potential"
+     ],
+     "key_text": "Spike potential",
+     "source_key": "Spike potential",
+     "explanation": "B = spike (action) potential ที่เกาะบน slow wave"
+    },
+    {
+     "id": "1.3",
+     "prompt": "Which numbered cycle gives the strongest contraction? Give the reason.",
+     "format": "short",
+     "keywords_all": [
+      "6"
+     ],
+     "key_text": "Cycle 6, because it has the most spike potentials at the same time (3), so the force is the greatest",
+     "source_key": "หมายเลข 6 เพราะเกิด spike potential หลายอันในครั้งเดียว และมีความแรงมากที่สุด",
+     "explanation": "แรงบีบเพิ่มตามจำนวน/ความถี่ของ spike potential",
+     "accepted": [
+      "6",
+      "number 6",
+      "cycle 6"
+     ]
+    },
+    {
+     "id": "1.4",
+     "prompt": "Calculate the frequency of contraction and state the unit.",
+     "format": "short",
+     "keywords_all": [
+      "0.2"
+     ],
+     "key_text": "f = number of times / t = 6 / 30 s = 0.2 Hz",
+     "source_key": "f = number of times / t = 6 / 30 s = 0.2 Hz",
+     "explanation": "6 slow wave ใน 30 วินาที = 0.2 Hz (12 ครั้ง/นาที)",
+     "accepted": [
+      "0.2 hz",
+      "6/30 = 0.2 hz",
+      "f = 6/30 = 0.2 hz",
+      "12 times/min"
+     ]
+    },
+    {
+     "id": "1.5",
+     "prompt": "Name 1 substance that causes inhibition of contraction.",
+     "format": "short",
+     "accepted": [
+      "epinephrine",
+      "norepinephrine",
+      "adrenaline",
+      "vip",
+      "nitric oxide",
+      "somatostatin"
+     ],
+     "key_text": "Epinephrine",
+     "source_key": "Epinephrine",
+     "explanation": "sympathetic (epinephrine/NE) ยับยั้งการบีบตัว"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF47",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "KF47-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [
+    "motility",
+    "slow wave"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "6 slow wave/30 s = 0.2 Hz · spike มากสุด = บีบแรงสุด",
+   "image": "img/GI-47-KF-001.jpg",
+   "image_caption": "กราฟ slow wave 6 รอบใน 30 วินาที (A = slow wave, B = spike potential)"
+  },
+  {
+   "id": "GI-47-KF-002",
+   "block": "GI",
+   "cohort": 47,
+   "n": 2,
+   "type": "KF",
+   "case": "Fill in the table: the producing source of each substance.",
+   "items": [
+    {
+     "id": "2.1",
+     "prompt": "Source of acetylcholine",
+     "format": "short",
+     "accepted": [
+      "cholinergic neurons",
+      "cholinergic neuron",
+      "cholinergic nerve",
+      "parasympathetic neuron",
+      "enteric neurons"
+     ],
+     "key_text": "Cholinergic neurons",
+     "source_key": "Cholinergic neurons",
+     "explanation": "ACh มาจาก cholinergic neuron (vagus/enteric)"
+    },
+    {
+     "id": "2.2",
+     "prompt": "Gastrin is produced by",
+     "format": "short",
+     "accepted": [
+      "g cell",
+      "g cells",
+      "g-cell"
+     ],
+     "key_text": "G cell",
+     "source_key": "G cell",
+     "explanation": "G cell ที่ antrum"
+    },
+    {
+     "id": "2.3",
+     "prompt": "Source of somatostatin",
+     "format": "short",
+     "accepted": [
+      "d cell",
+      "d cells",
+      "d-cell"
+     ],
+     "key_text": "D cell",
+     "source_key": "D cell",
+     "explanation": "D cell ใน antrum/ตับอ่อน"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF47",
+     "pages": [
+      3
+     ]
+    },
+    {
+     "paper": "KF47-KEY",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [
+    "GI hormones"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "ACh–cholinergic neuron · gastrin–G cell · somatostatin–D cell"
+  },
+  {
+   "id": "GI-47-KF-003",
+   "block": "GI",
+   "cohort": 47,
+   "n": 3,
+   "type": "KF",
+   "case": "A medical student bought longan at the market after a lockdown ended and ate it at home. While eating carelessly he swallowed a longan seed. He was very worried, but his friend calmly explained that the seed would come out on its own because in the body, while in the ______ state, GI motility occurs in the region ______, named ______, so the seed is finally expelled. If we ______, this motility is eventually inhibited.",
+   "items": [
+    {
+     "id": "3.1",
+     "prompt": "In which state?",
+     "format": "short",
+     "accepted": [
+      "fasting",
+      "fasting state",
+      "fasting stage",
+      "interdigestive"
+     ],
+     "key_text": "Fasting state",
+     "source_key": "Fasting state",
+     "explanation": "ช่วงอดอาหาร"
+    },
+    {
+     "id": "3.2",
+     "prompt": "In which region?",
+     "format": "short",
+     "keywords_all": [
+      "stomach",
+      "small"
+     ],
+     "key_text": "Stomach and small intestine",
+     "source_key": "กระเพาะอาหารและลำไส้เล็ก",
+     "explanation": "MMC เริ่มที่กระเพาะ/duodenum ไล่ลงลำไส้เล็ก",
+     "accepted": [
+      "stomach and small intestine",
+      "stomach to ileum"
+     ]
+    },
+    {
+     "id": "3.3",
+     "prompt": "What is the name of this motility?",
+     "format": "short",
+     "accepted": [
+      "migrating motor complex",
+      "mmc",
+      "migratory motor complex",
+      "migrating myoelectric complex"
+     ],
+     "key_text": "Migrating motor complex",
+     "source_key": "Migrating motor complex",
+     "explanation": "MMC"
+    },
+    {
+     "id": "3.4",
+     "prompt": "If we ______, this motility is eventually inhibited.",
+     "format": "short",
+     "accepted": [
+      "eat",
+      "eating",
+      "eat food",
+      "eating food",
+      "กินอาหาร",
+      "feeding"
+     ],
+     "key_text": "Eat (take in food)",
+     "source_key": "กินอาหาร",
+     "explanation": "การกินอาหารทำให้เข้าสู่ fed state ยับยั้ง MMC"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF47",
+     "pages": [
+      3
+     ]
+    },
+    {
+     "paper": "KF47-KEY",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [
+    "MMC"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "MMC: fasting state → ไล่เศษอาหาร · กินอาหารยับยั้ง"
+  },
+  {
+   "id": "GI-47-KF-004",
+   "block": "GI",
+   "cohort": 47,
+   "n": 4,
+   "type": "KF",
+   "case": "From a study of the mechanism of ORS, ORS with glucose works better than ORS without glucose, because glucose helps absorb various nutrients across the ______ membrane of the small intestine by helping absorb Na⁺ through the receptor type ______, helps absorb Cl⁻ through the channel ______, and helps absorb water through the ______ pathway. ORS uses a monosaccharide named ______ instead of glucose, which cannot be done because ______.",
+   "items": [
+    {
+     "id": "4.1",
+     "prompt": "Fill in the membrane",
+     "format": "short",
+     "accepted": [
+      "luminal",
+      "apical",
+      "luminal membrane",
+      "apical membrane",
+      "brush border"
+     ],
+     "key_text": "Luminal (apical) membrane",
+     "source_key": "Luminal (apical) membrane",
+     "explanation": "SGLT1 อยู่ที่ luminal/apical membrane"
+    },
+    {
+     "id": "4.2",
+     "prompt": "Which transporter helps absorb Na⁺?",
+     "format": "short",
+     "accepted": [
+      "sglt1",
+      "sglt-1",
+      "sglt 1"
+     ],
+     "key_text": "SGLT1",
+     "source_key": "SGLT1",
+     "explanation": "Na⁺-glucose cotransporter"
+    },
+    {
+     "id": "4.3",
+     "prompt": "Which channel helps absorb Cl⁻?",
+     "format": "short",
+     "accepted": [
+      "cftr"
+     ],
+     "key_text": "CFTR",
+     "source_key": "CFTR",
+     "explanation": "ตามเฉลยต้นฉบับ: CFTR (หมายเหตุ: ในทางสรีรวิทยา CFTR หลั่ง Cl⁻ ออก แต่เฉลยต้นฉบับตอบ CFTR)"
+    },
+    {
+     "id": "4.4",
+     "prompt": "Water is absorbed through the ______ pathway",
+     "format": "short",
+     "accepted": [
+      "paracellular",
+      "paracellular pathway"
+     ],
+     "key_text": "Paracellular",
+     "source_key": "Paracellular",
+     "explanation": "น้ำตาม Na⁺ ผ่านช่องระหว่างเซลล์ (และ transcellular)"
+    },
+    {
+     "id": "4.5",
+     "prompt": "ORS cannot use this monosaccharide instead of glucose: ______",
+     "format": "short",
+     "accepted": [
+      "fructose"
+     ],
+     "key_text": "Fructose",
+     "source_key": "Fructose",
+     "explanation": "fructose ดูดผ่าน GLUT5"
+    },
+    {
+     "id": "4.6",
+     "prompt": "Why can it not replace glucose?",
+     "format": "short",
+     "keywords_all": [
+      "glut5",
+      "na"
+     ],
+     "key_text": "Fructose is absorbed via GLUT5, which is not a pathway that brings Na⁺ into the cell",
+     "source_key": "Fructose ถูกดูดซึมเข้าด้วย GLUT5 ซึ่งไม่ใช่ช่องทางที่นำ Na⁺ เข้าเซลล์ได้",
+     "explanation": "ไม่มี Na⁺ cotransport จึงไม่ดึงน้ำตาม"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF47",
+     "pages": [
+      3
+     ]
+    },
+    {
+     "paper": "KF47-KEY",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [
+    "ORS",
+    "transporters"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "ORS: SGLT1 + Na⁺ → น้ำตาม · fructose ใช้ GLUT5 แทนไม่ได้",
+   "audit_note": "ข้อ 4.3 เฉลยตอบ CFTR สำหรับการดูด Cl⁻ (ในสรีรวิทยา CFTR เป็นช่องหลั่ง Cl⁻ ออกสู่ lumen) ใช้ตามเฉลยต้นฉบับ"
+  },
+  {
+   "id": "GI-47-KF-005",
+   "block": "GI",
+   "cohort": 47,
+   "n": 5,
+   "type": "KF",
+   "case": "A 50-year-old man came to hospital with heartburn and regurgitation of gastric juice. He has chronic cough and morbid obesity as underlying diseases. Physical examination revealed an abnormal position of the stomach. Give the diagnosis.",
+   "items": [
+    {
+     "id": "5.1",
+     "prompt": "What is the diagnosis?",
+     "format": "short",
+     "accepted": [
+      "hiatal hernia",
+      "hiatus hernia",
+      "sliding hiatal hernia"
+     ],
+     "key_text": "Hiatal hernia",
+     "source_key": "Hiatal hernia",
+     "explanation": "กระเพาะเลื่อนขึ้นช่องอกผ่าน esophageal hiatus · อ้วน ไอเรื้อรัง = ความดันช่องท้องสูง"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF47",
+     "pages": [
+      4
+     ]
+    },
+    {
+     "paper": "KF47-KEY",
+     "pages": [
+      4
+     ]
+    }
+   ],
+   "tags": [
+    "hiatal hernia"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "hiatal hernia: กระเพาะอยู่ผิดตำแหน่ง + GERD"
+  },
+  {
+   "id": "GI-47-KF-006",
+   "block": "GI",
+   "cohort": 47,
+   "n": 6,
+   "type": "KF",
+   "case": "A 20-year-old pregnant woman has severe vomiting with hematemesis following. Give the diagnosis.",
+   "items": [
+    {
+     "id": "6.1",
+     "prompt": "What is the diagnosis?",
+     "format": "short",
+     "accepted": [
+      "mallory-weiss tear",
+      "mallory weiss tear",
+      "mallory-weiss syndrome",
+      "mallory weiss"
+     ],
+     "key_text": "Mallory-Weiss tear",
+     "source_key": "Mallory-Weiss tear",
+     "explanation": "อาเจียนรุนแรง → รอยฉีกที่ gastroesophageal junction"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF47",
+     "pages": [
+      4
+     ]
+    },
+    {
+     "paper": "KF47-KEY",
+     "pages": [
+      4
+     ]
+    }
+   ],
+   "tags": [
+    "Mallory-Weiss"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "อาเจียนแรง → hematemesis = Mallory-Weiss"
+  },
+  {
+   "id": "GI-47-KF-007",
+   "block": "GI",
+   "cohort": 47,
+   "n": 7,
+   "type": "KF",
+   "case": "Barrett's esophagus is associated with what disease? (be specific)",
+   "items": [
+    {
+     "id": "7.1",
+     "prompt": "Which disease?",
+     "format": "short",
+     "accepted": [
+      "adenocarcinoma of esophagus",
+      "esophageal adenocarcinoma",
+      "adenocarcinoma",
+      "gerd",
+      "chronic gerd"
+     ],
+     "key_text": "Adenocarcinoma of esophagus",
+     "source_key": "Adenocarcinoma of esophagus",
+     "explanation": "Barrett (intestinal metaplasia) เป็นภาวะก่อนมะเร็ง adenocarcinoma ของหลอดอาหาร",
+     "audit_note": "รุ่น 50 เฉลยตอบ GERD เรื้อรัง (สาเหตุ) ส่วนรุ่นนี้เฉลยตอบ adenocarcinoma (ผลที่ตามมา) · ยอมรับทั้งสองในทางปฏิบัติ"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF47",
+     "pages": [
+      4
+     ]
+    },
+    {
+     "paper": "KF47-KEY",
+     "pages": [
+      4
+     ]
+    }
+   ],
+   "tags": [
+    "Barrett"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "Barrett → adenocarcinoma ของหลอดอาหาร (สาเหตุ: GERD เรื้อรัง)"
+  },
+  {
+   "id": "GI-47-KF-008",
+   "block": "GI",
+   "cohort": 47,
+   "n": 8,
+   "type": "KF",
+   "case": "Fill in the table about the pathogenesis of stomach disease: H. pylori versus autoimmune gastritis.",
+   "items": [
+    {
+     "id": "8.1a",
+     "prompt": "H. pylori — location (most common)",
+     "format": "short",
+     "accepted": [
+      "antrum"
+     ],
+     "key_text": "Antrum",
+     "source_key": "Antrum",
+     "explanation": "H. pylori อยู่ antrum"
+    },
+    {
+     "id": "8.1b",
+     "prompt": "Autoimmune — location (most common)",
+     "format": "short",
+     "accepted": [
+      "body",
+      "body of stomach"
+     ],
+     "key_text": "Body",
+     "source_key": "Body",
+     "explanation": "parietal cell อยู่ที่ body/fundus"
+    },
+    {
+     "id": "8.2a",
+     "prompt": "H. pylori — cell infiltration",
+     "format": "short",
+     "keywords_all": [
+      "lymphocyte",
+      "neutrophil"
+     ],
+     "key_text": "Lymphocyte + neutrophil",
+     "source_key": "Lymphocyte + neutrophil",
+     "explanation": "อักเสบเรื้อรังแบบ active"
+    },
+    {
+     "id": "8.2b",
+     "prompt": "Autoimmune — cell infiltration",
+     "format": "short",
+     "keywords_all": [
+      "lymphocyte",
+      "plasma"
+     ],
+     "key_text": "Lymphocyte + plasma cell",
+     "source_key": "Lymphocyte + plasma cell",
+     "explanation": "lymphocyte + plasma cell"
+    },
+    {
+     "id": "8.3a",
+     "prompt": "H. pylori — sequelae",
+     "format": "short",
+     "accepted": [
+      "peptic ulcer"
+     ],
+     "key_text": "Peptic ulcer",
+     "source_key": "Peptic ulcer",
+     "explanation": "อื่นๆ: adenocarcinoma, MALT lymphoma"
+    },
+    {
+     "id": "8.3b",
+     "prompt": "Autoimmune — sequelae",
+     "format": "short",
+     "accepted": [
+      "pernicious anemia",
+      "pernicious anaemia"
+     ],
+     "key_text": "Pernicious anemia",
+     "source_key": "Pernicious anemia",
+     "explanation": "ขาด intrinsic factor"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF47",
+     "pages": [
+      4
+     ]
+    },
+    {
+     "paper": "KF47-KEY",
+     "pages": [
+      4
+     ]
+    }
+   ],
+   "tags": [
+    "gastritis",
+    "H. pylori"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "H. pylori: antrum → ulcer · autoimmune: body → pernicious anemia"
+  },
+  {
+   "id": "GI-47-KF-009",
+   "block": "GI",
+   "cohort": 47,
+   "n": 9,
+   "type": "KF",
+   "case": "A woman presents with abdominal pain, vomiting and constipation. PE: no fever, no icteric sclera, normal urine.",
+   "items": [
+    {
+     "id": "9.1",
+     "prompt": "From the symptoms and initial examination, which systems do you suspect, in order from most to least likely? A) GI B) hepatobiliary tract C) urogenital tract",
+     "format": "short",
+     "keywords_all": [
+      "gi",
+      "hepatobiliary",
+      "urogenital"
+     ],
+     "key_text": "1. GI 2. Hepatobiliary tract 3. Urogenital tract",
+     "source_key": "1. GI 2. Hepatobiliary tract 3. Urogenital tract",
+     "explanation": "ปวดท้อง อาเจียน ท้องผูก ไม่มีไข้ ไม่ตัวเหลือง ปัสสาวะปกติ → นึกถึงทางเดินอาหารก่อน",
+     "accepted": [
+      "gi, hepatobiliary tract, urogenital tract",
+      "a b c"
+     ]
+    },
+    {
+     "id": "9.2",
+     "prompt": "What are 3 possible causes of abdominal pain in this patient?",
+     "format": "short",
+     "keywords_all": [
+      "obstruction",
+      "ileus",
+      "appendicitis"
+     ],
+     "key_text": "1. Intestinal obstruction 2. Paralytic ileus 3. Acute appendicitis",
+     "source_key": "1. Intestinal obstruction 2. Paralytic ileus 3. Acute appendicitis",
+     "explanation": "ปวดท้อง + อาเจียน + ท้องผูก = ลำไส้อุดตัน / ileus / ไส้ติ่งอักเสบ",
+     "accepted": [
+      "intestinal obstruction, paralytic ileus, acute appendicitis"
+     ]
+    },
+    {
+     "id": "9.3",
+     "prompt": "Circle 3 important investigations for differential diagnosis. (A CBC, B LFT, C urine exam, D stool exam, E film acute abdomen, F abdominal CT, G CEA, H hemoculture)",
+     "format": "short",
+     "keywords_all": [
+      "cbc",
+      "film",
+      "urine"
+     ],
+     "key_text": "A. CBC (infection/inflammation/anemia) · E. Film acute abdomen (free air/bowel gas) · C. Urine examination (urogenital)",
+     "source_key": "A. CBC (infection/inflammation/anemia) · E. Film acute abdomen (free air/bowel gas) · C. Urine examination (urogenital)",
+     "explanation": "เลือก A, C, E · ไม่เลือก B, D, F, G, H",
+     "accepted": [
+      "a, c, e",
+      "a c e",
+      "cbc, urine examination, film acute abdomen"
+     ]
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF47",
+     "pages": [
+      4
+     ]
+    },
+    {
+     "paper": "KF47-KEY",
+     "pages": [
+      4
+     ]
+    }
+   ],
+   "tags": [
+    "abdominal pain",
+    "investigations"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "ปวดท้อง/อาเจียน/ท้องผูก → CBC + film acute abdomen + urine exam"
+  },
+  {
+   "id": "GI-47-KF-010",
+   "block": "GI",
+   "cohort": 47,
+   "n": 10,
+   "type": "KF",
+   "case": "A 67-year-old man with a longstanding history of alcoholism has abdominal discomfort, nausea and vomiting for 2 weeks, and icteric sclera. LFT: total bilirubin 4.7 mg/dL, direct bilirubin 3.2 mg/dL (↑), AST 60, ALT 150 (↑), ALP 95, total protein 5.8, albumin 2.8 g/dL (↓; normal 3–5).",
+   "items": [
+    {
+     "id": "10.1",
+     "prompt": "What is the type of jaundice in this patient?",
+     "format": "short",
+     "accepted": [
+      "hepatocellular jaundice",
+      "hepatocellular",
+      "hepatic jaundice"
+     ],
+     "key_text": "Hepatocellular jaundice",
+     "source_key": "Hepatocellular jaundice",
+     "explanation": "ALT/AST สูง ALP ปกติ bilirubin ทั้งสองชนิดสูง"
+    },
+    {
+     "id": "10.2",
+     "prompt": "What is the most likely diagnosis?",
+     "format": "short",
+     "accepted": [
+      "cirrhosis",
+      "alcoholic cirrhosis",
+      "liver cirrhosis"
+     ],
+     "key_text": "Cirrhosis",
+     "source_key": "Cirrhosis",
+     "explanation": "ดื่มเหล้าเรื้อรัง + albumin ต่ำ + ดีซ่าน"
+    },
+    {
+     "id": "10.3",
+     "prompt": "Explain the reasons to support the diagnosis in 10.2.",
+     "format": "short",
+     "keywords_all": [
+      "alcohol",
+      "albumin"
+     ],
+     "key_text": "- Long consumption of alcohol - Low albumin level (the liver cannot synthesize) - Icteric sclera reflects high bilirubin",
+     "source_key": "- long consumption of alcohol - low albumin level = ตับสร้างไม่ได้ - icteric sclera สะท้อนว่ามีค่า bilirubin สูงไปด้วย",
+     "explanation": "albumin ต่ำ = ตับสร้างโปรตีนลดลง"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF47",
+     "pages": [
+      5
+     ]
+    },
+    {
+     "paper": "KF47-KEY",
+     "pages": [
+      5
+     ]
+    }
+   ],
+   "tags": [
+    "cirrhosis",
+    "jaundice"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "alcohol นาน + albumin ต่ำ + bilirubin สูง → cirrhosis",
+   "audit_note": "ข้อ 10.3 ในโจทย์พิมพ์ว่า 'ข้อ 9.2' แต่หมายถึงข้อ 10.2 (diagnosis)"
+  },
+  {
+   "id": "GI-47-KF-011",
+   "block": "GI",
+   "cohort": 47,
+   "n": 11,
+   "type": "KF",
+   "case": "Match the words in the box (Coxsackie A virus, Coxsackie B virus, Enterovirus 71, Enterovirus 72, Rotavirus, Astrovirus, Norovirus, Poliovirus, Hepatitis E virus, mRNA, dsDNA, flaccid paralysis) with the disease/symptom/feature in the table (words may be reused).",
+   "items": [
+    {
+     "id": "11.1",
+     "prompt": "Hand-foot-mouth disease",
+     "format": "short",
+     "accepted": [
+      "enterovirus 71",
+      "enterovirus71",
+      "ev71",
+      "coxsackie a16"
+     ],
+     "key_text": "Enterovirus 71",
+     "source_key": "Enterovirus 71",
+     "explanation": "HFMD จาก EV71 (และ Coxsackie A16)"
+    },
+    {
+     "id": "11.2",
+     "prompt": "Star-like appearance",
+     "format": "short",
+     "accepted": [
+      "astrovirus"
+     ],
+     "key_text": "Astrovirus",
+     "source_key": "Astrovirus",
+     "explanation": "astrovirus เห็นรูปดาวใน EM"
+    },
+    {
+     "id": "11.3",
+     "prompt": "May cause stillbirth in pregnant women",
+     "format": "short",
+     "accepted": [
+      "hepatitis e virus",
+      "hepatitis e",
+      "hev"
+     ],
+     "key_text": "Hepatitis E virus",
+     "source_key": "Hepatitis E virus",
+     "explanation": "HEV ในหญิงตั้งครรภ์รุนแรง ทารกตายในครรภ์ได้"
+    },
+    {
+     "id": "11.4",
+     "prompt": "Segmented genome",
+     "format": "short",
+     "accepted": [
+      "rotavirus"
+     ],
+     "key_text": "Rotavirus",
+     "source_key": "Rotavirus",
+     "explanation": "rotavirus dsRNA 11 ท่อน"
+    },
+    {
+     "id": "11.5",
+     "prompt": "Herpangina",
+     "format": "short",
+     "accepted": [
+      "coxsackie a virus",
+      "coxsackie a"
+     ],
+     "key_text": "Coxsackie A virus",
+     "source_key": "Coxsackie A virus",
+     "explanation": "herpangina จาก Coxsackie A"
+    },
+    {
+     "id": "11.6",
+     "prompt": "Culturable gastroenteritis virus",
+     "format": "short",
+     "accepted": [
+      "enterovirus 72",
+      "enterovirus72"
+     ],
+     "key_text": "Enterovirus 72",
+     "source_key": "Enterovirus 72",
+     "explanation": "ตามเฉลยต้นฉบับ (ผู้เฉลยเขียน Enterovirus 72)",
+     "audit_note": "ผู้เฉลยตอบ Enterovirus 72 ซึ่งในตำราทั่วไป EV72 คือ hepatitis A virus (ไม่ใช่ไวรัสกระเพาะลำไส้อักเสบที่เพาะเลี้ยงได้) · เก็บตามต้นฉบับ"
+    },
+    {
+     "id": "11.7",
+     "prompt": "Involving pig farm",
+     "format": "short",
+     "accepted": [
+      "hepatitis e virus",
+      "hepatitis e",
+      "hev"
+     ],
+     "key_text": "Hepatitis E virus",
+     "source_key": "Hepatitis E virus",
+     "explanation": "หมูเป็น reservoir ของ HEV (genotype 3, 4) · ลายมือเฉลยข้อนี้ดูคล้าย 'Hepatitis B' แต่ B ไม่มีในกล่อง คาดว่าหมายถึง E",
+     "audit_note": "ลายมือเฉลยอ่านเป็น Hepatitis B/E ได้ ใช้ E เพราะมีในกล่องคำและสอดคล้องกับฟาร์มหมู"
+    },
+    {
+     "id": "11.8",
+     "prompt": "Bornholm disease",
+     "format": "short",
+     "accepted": [
+      "coxsackie b virus",
+      "coxsackie b"
+     ],
+     "key_text": "Coxsackie B virus",
+     "source_key": "Coxsackie B virus",
+     "explanation": "Bornholm disease (epidemic pleurodynia) จาก Coxsackie B"
+    },
+    {
+     "id": "11.9",
+     "prompt": "Equal to (+) ssRNA genome",
+     "format": "short",
+     "accepted": [
+      "mrna"
+     ],
+     "key_text": "mRNA",
+     "source_key": "mRNA",
+     "explanation": "(+) ssRNA genome ทำหน้าที่เป็น mRNA ได้ทันที"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF47",
+     "pages": [
+      6
+     ]
+    },
+    {
+     "paper": "KF47-KEY",
+     "pages": [
+      6
+     ]
+    }
+   ],
+   "tags": [
+    "enterovirus",
+    "viral gastroenteritis"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "HFMD–EV71 · star–astro · HEV–pregnancy/pig · rota–segmented · herpangina–Cox A · Bornholm–Cox B · (+)ssRNA = mRNA"
+  },
+  {
+   "id": "GI-47-KF-012",
+   "block": "GI",
+   "cohort": 47,
+   "n": 12,
+   "type": "KF",
+   "case": "Write the mechanism of action of each drug.",
+   "items": [
+    {
+     "id": "12.1",
+     "prompt": "Diphenhydramine",
+     "format": "short",
+     "keywords_all": [
+      "h1"
+     ],
+     "key_text": "H₁ receptor blocker",
+     "source_key": "H₁ receptor blocker",
+     "explanation": "ยาต้านฮิสตามีนรุ่นแรก (ต้าน M₁ ด้วย)",
+     "accepted": [
+      "h1 antagonist"
+     ]
+    },
+    {
+     "id": "12.2",
+     "prompt": "Metoclopramide",
+     "format": "short",
+     "keywords_all": [
+      "d2"
+     ],
+     "key_text": "D₂ antagonist, 5-HT₃ antagonist, 5-HT₄ agonist",
+     "source_key": "D₂ antagonist, 5-HT₃ antagonist, 5-HT₄ agonist",
+     "explanation": "ต้าน D₂ ที่ CTZ + 5-HT₃ antagonist + 5-HT₄ agonist",
+     "accepted": [
+      "d2 antagonist"
+     ]
+    },
+    {
+     "id": "12.3",
+     "prompt": "Ondansetron",
+     "format": "short",
+     "keywords_all": [
+      "5-ht3"
+     ],
+     "key_text": "5-HT₃ antagonist",
+     "source_key": "5-HT₃ antagonist",
+     "explanation": "ต้าน 5-HT₃ ที่ vagal afferent/CTZ",
+     "accepted": [
+      "5ht3 antagonist",
+      "5-ht₃ antagonist"
+     ]
+    },
+    {
+     "id": "12.4",
+     "prompt": "Promethazine",
+     "format": "short",
+     "keywords_all": [
+      "d2",
+      "h1"
+     ],
+     "key_text": "D₂, H₁, M₁, α₁ antagonists",
+     "source_key": "D₂, H₁, M₁, α₁ antagonists",
+     "explanation": "phenothiazine ต้านหลายตัวรับ",
+     "accepted": [
+      "d2 h1 m1 alpha1 antagonist"
+     ]
+    },
+    {
+     "id": "12.5",
+     "prompt": "Vitamin B₆",
+     "format": "short",
+     "keywords_all": [
+      "plp",
+      "pyridoxal"
+     ],
+     "key_text": "Coenzyme to make PLP (pyridoxal 5-phosphate)",
+     "source_key": "Coenzyme to make PLP (pyridoxal 5-phosphate)",
+     "explanation": "B₆ ถูกเปลี่ยนเป็น PLP เป็น coenzyme ของ transaminase/decarboxylase",
+     "accepted": [
+      "precursor of plp",
+      "pyridoxal phosphate"
+     ]
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF47",
+     "pages": [
+      7
+     ]
+    },
+    {
+     "paper": "KF47-KEY",
+     "pages": [
+      7
+     ]
+    }
+   ],
+   "tags": [
+    "antiemetics",
+    "pharmacology"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "diphenhydramine H₁ · metoclopramide D₂/5-HT₃/5-HT₄ · ondansetron 5-HT₃ · promethazine D₂/H₁/M₁/α₁ · B₆ → PLP"
+  },
+  {
+   "id": "GI-47-KF-013",
+   "block": "GI",
+   "cohort": 47,
+   "n": 13,
+   "type": "KF",
+   "case": "A 45-year-old man presents with severe watery diarrhea. PE: dry mouth and hyperactive bowel sounds. He is treated with ORS and diphenoxylate.",
+   "items": [
+    {
+     "id": "13.1a",
+     "prompt": "Role of NaCl in ORS",
+     "format": "short",
+     "keywords_all": [
+      "electrolyte"
+     ],
+     "key_text": "Maintains electrolyte and volume of the lost fluid",
+     "source_key": "รักษา electrolyte และปริมาตรของเหลวที่สูญเสียไป",
+     "explanation": "ชดเชย Na⁺ Cl⁻ และปริมาตรของเหลว"
+    },
+    {
+     "id": "13.1b",
+     "prompt": "Role of KCl in ORS",
+     "format": "short",
+     "keywords_all": [
+      "k"
+     ],
+     "key_text": "Replaces the K⁺ that has been lost",
+     "source_key": "ทดแทน K⁺ ที่สูญเสียไป",
+     "explanation": "ท้องเสียเสีย K⁺ มาก"
+    },
+    {
+     "id": "13.1c",
+     "prompt": "Role of glucose in ORS",
+     "format": "short",
+     "keywords_all": [
+      "sglt"
+     ],
+     "key_text": "Helps bring Na⁺ into the cell via the SGLT1 receptor",
+     "source_key": "ช่วยดึง Na⁺ เข้า cell ผ่าน SGLT1 receptor",
+     "explanation": "Na⁺-glucose cotransport"
+    },
+    {
+     "id": "13.1d",
+     "prompt": "Role of trisodium citrate in ORS",
+     "format": "short",
+     "keywords_all": [
+      "buffer",
+      "acidosis"
+     ],
+     "key_text": "Acts as a buffer to help correct metabolic acidosis",
+     "source_key": "เป็น buffer ช่วยแก้ metabolic acidosis",
+     "explanation": "citrate → HCO₃⁻ แก้ acidosis"
+    },
+    {
+     "id": "13.2",
+     "prompt": "What is the mechanism of action of diphenoxylate?",
+     "format": "short",
+     "keywords_all": [
+      "opioid"
+     ],
+     "key_text": "μ-opioid receptor agonist",
+     "source_key": "μ-opioid receptor agonist",
+     "explanation": "ลดการบีบตัวของลำไส้",
+     "accepted": [
+      "mu opioid agonist",
+      "μ opioids receptor agonists",
+      "opioid agonist"
+     ]
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF47",
+     "pages": [
+      7
+     ]
+    },
+    {
+     "paper": "KF47-KEY",
+     "pages": [
+      7
+     ]
+    }
+   ],
+   "tags": [
+    "ORS",
+    "diphenoxylate"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "ORS: NaCl, KCl, glucose, citrate · diphenoxylate μ-opioid agonist"
+  },
+  {
+   "id": "GI-47-KF-014",
+   "block": "GI",
+   "cohort": 47,
+   "n": 14,
+   "type": "KF",
+   "case": "Write the mechanism of action of each drug.",
+   "items": [
+    {
+     "id": "14.1",
+     "prompt": "Attapulgite",
+     "format": "short",
+     "keywords_all": [
+      "toxin",
+      "acid"
+     ],
+     "key_text": "Acid and toxin binding (adsorbent anti-diarrheal)",
+     "source_key": "Acid and toxin binding (adsorbent anti-diarrheal)",
+     "explanation": "ผงดินดูดซับ",
+     "accepted": [
+      "adsorbent",
+      "binds toxins"
+     ]
+    },
+    {
+     "id": "14.2",
+     "prompt": "Bismuth subsalicylate",
+     "format": "short",
+     "keywords_all": [
+      "secretory",
+      "inflam"
+     ],
+     "key_text": "Poorly understood — anti-secretory, anti-inflammatory, antimicrobial",
+     "source_key": "Poorly understood — anti-secretory, anti-inflammatory, antimicrobial",
+     "explanation": "ใช้ใน traveler's diarrhea",
+     "accepted": [
+      "anti-secretory",
+      "antimicrobial"
+     ]
+    },
+    {
+     "id": "14.3",
+     "prompt": "Dicyclomine",
+     "format": "short",
+     "keywords_all": [
+      "muscarinic",
+      "cholinergic"
+     ],
+     "key_text": "Antimuscarinic/anticholinergic (M₃ antagonist)",
+     "source_key": "Antimuscarinic/anticholinergic (M₃ antagonist)",
+     "explanation": "antispasmodic ลดการเกร็ง",
+     "accepted": [
+      "anticholinergic",
+      "antimuscarinic",
+      "m3 antagonist"
+     ]
+    },
+    {
+     "id": "14.4",
+     "prompt": "Clonidine",
+     "format": "short",
+     "keywords_all": [
+      "alpha",
+      "α"
+     ],
+     "key_text": "α₂ adrenergic receptor agonist",
+     "source_key": "α₂ adrenergic receptor agonist",
+     "explanation": "ลดการหลั่ง/เพิ่มการดูดซึม",
+     "accepted": [
+      "alpha-2 agonist",
+      "α2 agonist",
+      "alpha 2 agonist"
+     ]
+    },
+    {
+     "id": "14.5",
+     "prompt": "Cholestyramine",
+     "format": "short",
+     "keywords_all": [
+      "bile"
+     ],
+     "key_text": "Bile salt-binding resin",
+     "source_key": "Bile salt-binding resin",
+     "explanation": "จับ bile acid ใช้ใน bile acid diarrhea",
+     "accepted": [
+      "binds bile acids",
+      "bile acid sequestrant"
+     ]
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF47",
+     "pages": [
+      8
+     ]
+    },
+    {
+     "paper": "KF47-KEY",
+     "pages": [
+      8
+     ]
+    }
+   ],
+   "tags": [
+    "antidiarrheal"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "attapulgite ดูดซับ · bismuth · dicyclomine M₃ · clonidine α₂ · cholestyramine จับ bile acid"
+  },
+  {
+   "id": "GI-47-KF-015",
+   "block": "GI",
+   "cohort": 47,
+   "n": 15,
+   "type": "KF",
+   "case": "A 48-year-old Thai man has an annual check-up showing iron-deficiency anemia, and eosinophilia on the white-cell count. The history shows he lives in an area where a parasite is highly endemic; a stool wet smear shows the parasite egg in the figure.",
+   "items": [
+    {
+     "id": "15.1",
+     "prompt": "What parasite do you think this is?",
+     "format": "short",
+     "accepted": [
+      "hookworm",
+      "hookworms",
+      "ancylostoma duodenale",
+      "necator americanus"
+     ],
+     "key_text": "Hookworms / Ancylostoma duodenale / Necator americanus",
+     "source_key": "Hookworms / Ancylostoma duodenale / Necator americanus",
+     "explanation": "ไข่เปลือกบางใส มี blastomere หลายเซลล์ = hookworm · ดูดเลือด → iron deficiency anemia + eosinophilia",
+     "image": "img/GI-47-KF-015.jpg",
+     "image_caption": "ไข่พยาธิจากอุจจาระ (wet smear)"
+    },
+    {
+     "id": "15.2",
+     "prompt": "What is the disease?",
+     "format": "short",
+     "accepted": [
+      "ancylostomiasis",
+      "hookworm disease",
+      "hookworm infection"
+     ],
+     "key_text": "Ancylostomiasis",
+     "source_key": "Ancylostomiasis",
+     "explanation": "โรคพยาธิปากขอ"
+    },
+    {
+     "id": "15.3",
+     "prompt": "How can it be prevented?",
+     "format": "short",
+     "keywords_all": [
+      "shoe",
+      "hand"
+     ],
+     "key_text": "Wear shoes when walking on the ground; wash hands clean; defecate in a toilet",
+     "source_key": "ใส่รองเท้าเมื่อเดินบนพื้น ล้างมือให้สะอาด ถ่ายอุจจาระลงส้วม",
+     "explanation": "ตัวอ่อนไชผ่านผิวหนังเท้า ไข่ปนเปื้อนดินจากการถ่ายไม่ลงส้วม",
+     "accepted": [
+      "wear shoes",
+      "wear shoes, wash hands, defecate in toilet"
+     ]
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF47",
+     "pages": [
+      8
+     ]
+    },
+    {
+     "paper": "KF47-KEY",
+     "pages": [
+      8
+     ]
+    }
+   ],
+   "tags": [
+    "hookworm"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "hookworm: ไข่เปลือกบาง · ไชผิวหนังเท้า · iron deficiency + eosinophilia"
+  },
+  {
+   "id": "GI-47-KF-016",
+   "block": "GI",
+   "cohort": 47,
+   "n": 16,
+   "type": "KF",
+   "case": "An 8-year-old Thai boy presents with rectal prolapse, and small white worms are found at the rectum.",
+   "items": [
+    {
+     "id": "16.1",
+     "prompt": "What parasite is this?",
+     "format": "short",
+     "accepted": [
+      "trichuris trichiura",
+      "t. trichiura",
+      "whipworm"
+     ],
+     "key_text": "Trichuris trichiura",
+     "source_key": "Trichuris trichiura",
+     "explanation": "พยาธิแส้ม้า · rectal prolapse ในเด็ก"
+    },
+    {
+     "id": "16.2",
+     "prompt": "Is the egg in the figure (lemon-shaped, brown, with two polar plugs) this parasite's egg? If not, whose egg is it?",
+     "format": "short",
+     "accepted": [
+      "yes",
+      "ใช่"
+     ],
+     "key_text": "Yes — it is the egg of this parasite (Trichuris trichiura)",
+     "source_key": "☑ ใช่",
+     "explanation": "ไข่รูปมะนาว/ถัง มี polar plug 2 ข้าง = Trichuris",
+     "image": "img/GI-47-KF-016.jpg",
+     "image_caption": "ไข่พยาธิ (รูปมะนาว สีน้ำตาล มี plug 2 ข้าง)"
+    },
+    {
+     "id": "16.3",
+     "prompt": "How can it be prevented?",
+     "format": "short",
+     "keywords_all": [
+      "hand",
+      "toilet"
+     ],
+     "key_text": "Wash hands well; do not eat unwashed raw vegetables; defecate in a toilet",
+     "source_key": "ล้างมือให้สะอาด ไม่รับประทานผักสดที่ไม่สะอาด ถ่ายอุจจาระลงส้วม",
+     "explanation": "ไข่ติดมากับดิน/ผัก",
+     "accepted": [
+      "wash hands",
+      "wash hands, wash vegetables, use toilet"
+     ]
+    },
+    {
+     "id": "16.4",
+     "prompt": "Name the drug of choice (2 different groups).",
+     "format": "short",
+     "keywords_all": [
+      "benzimidazole",
+      "ivermectin"
+     ],
+     "key_text": "1. Benzimidazole group (albendazole/mebendazole) 2. Ivermectin",
+     "source_key": "1. Benzimidazole group (albendazole/mebendazole) 2. Ivermectin",
+     "explanation": "albendazole/mebendazole เป็นหลัก · ivermectin ใช้ร่วมหรือทางเลือก",
+     "accepted": [
+      "benzimidazoles and ivermectin",
+      "albendazole and ivermectin",
+      "mebendazole and ivermectin"
+     ]
+    },
+    {
+     "id": "16.5",
+     "prompt": "State the complications of chronic infection.",
+     "format": "short",
+     "keywords_all": [
+      "rectal prolapse",
+      "anemia"
+     ],
+     "key_text": "Rectal prolapse, chronic colitis, anemia",
+     "source_key": "Rectal prolapse, chronic colitis, anemia",
+     "explanation": "ติดเรื้อรังจำนวนมาก: ไส้ตรงยื่น ลำไส้ใหญ่อักเสบเรื้อรัง ซีด",
+     "accepted": [
+      "rectal prolapse, chronic colitis, anemia"
+     ]
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF47",
+     "pages": [
+      9
+     ]
+    },
+    {
+     "paper": "KF47-KEY",
+     "pages": [
+      9
+     ]
+    }
+   ],
+   "tags": [
+    "Trichuris"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "Trichuris: ไข่รูปมะนาว 2 plug · rectal prolapse · benzimidazole/ivermectin"
+  },
+  {
+   "id": "GI-47-KF-017",
+   "block": "GI",
+   "cohort": 47,
+   "n": 17,
+   "type": "KF",
+   "case": "A woman presents with watery diarrhea. Hx: ate bloody cockle for dinner yesterday. A stool sample is collected for laboratory testing.",
+   "items": [
+    {
+     "id": "17.1a",
+     "prompt": "How many mL of stool should be collected?",
+     "format": "short",
+     "keywords_all": [
+      "5"
+     ],
+     "key_text": "About 5 mL",
+     "source_key": "About 5 mL",
+     "explanation": "อุจจาระประมาณ 5 mL"
+    },
+    {
+     "id": "17.1b",
+     "prompt": "What is the maximum time to deliver it (with unit)?",
+     "format": "short",
+     "keywords_all": [
+      "2"
+     ],
+     "key_text": "Within 2 hours",
+     "source_key": "Within 2 hours",
+     "explanation": "ส่งภายใน 2 ชั่วโมง (ถ้านานกว่านั้นใช้ transport medium)",
+     "accepted": [
+      "2 hours",
+      "within 2 hours",
+      "2 ชั่วโมง"
+     ]
+    },
+    {
+     "id": "17.2a",
+     "prompt": "Which 2 culture media are suitable? — MacConkey agar: expected result",
+     "format": "short",
+     "keywords_all": [
+      "lactose"
+     ],
+     "key_text": "MacConkey agar: the organism does not ferment lactose / colorless colonies (unlike E. coli)",
+     "source_key": "MacConkey agar: the organism does not ferment lactose / colorless colonies (unlike E. coli)",
+     "explanation": "Vibrio ไม่หมัก lactose บน MacConkey (colony ไม่มีสี) ต่างจาก E. coli ที่เป็นสีชมพู",
+     "audit_note": "ลายมือเฉลยช่องผล MacConkey อ่านไม่ชัดทุกคำ (เหมือน 'เชื้อไม่สามารถ… ได้ (เหมือน E. coli…)') คำตอบนี้ตีความ",
+     "accepted": [
+      "non-lactose fermenter",
+      "no lactose fermentation",
+      "colorless colonies"
+     ]
+    },
+    {
+     "id": "17.2b",
+     "prompt": "TCBS agar: expected result",
+     "format": "short",
+     "keywords_all": [
+      "yellow",
+      "green"
+     ],
+     "key_text": "Yellow colonies = V. cholerae · green colonies = V. parahaemolyticus",
+     "source_key": "Yellow colonies = V. cholerae · green colonies = V. parahaemolyticus",
+     "explanation": "V. cholerae ย่อย sucrose (เหลือง) · V. parahaemolyticus ไม่ย่อย sucrose (เขียว)",
+     "accepted": [
+      "yellow v. cholerae green v. parahaemolyticus"
+     ]
+    },
+    {
+     "id": "17.3",
+     "prompt": "Which organism is the most likely cause?",
+     "format": "short",
+     "accepted": [
+      "vibrio parahaemolyticus",
+      "v. parahaemolyticus"
+     ],
+     "key_text": "Vibrio parahaemolyticus",
+     "source_key": "Vibrio parahaemolyticus",
+     "explanation": "กินหอยแครง (อาหารทะเลดิบ) แล้วท้องเสียเป็นน้ำ = V. parahaemolyticus"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF47",
+     "pages": [
+      10
+     ]
+    },
+    {
+     "paper": "KF47-KEY",
+     "pages": [
+      10
+     ]
+    }
+   ],
+   "tags": [
+    "Vibrio parahaemolyticus"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "หอยแครง → V. parahaemolyticus · TCBS สีเขียว"
+  },
+  {
+   "id": "GI-47-KF-018",
+   "block": "GI",
+   "cohort": 47,
+   "n": 18,
+   "type": "KF",
+   "case": "Osteoporosis is a condition of porous bone. Name 3 vitamins or minerals related to osteoporosis and detail the function of each.",
+   "items": [
+    {
+     "id": "18.1",
+     "prompt": "Vitamin D — function",
+     "format": "short",
+     "keywords_all": [
+      "absor",
+      "ca"
+     ],
+     "key_text": "Helps the absorption of Ca²⁺ and phosphorus",
+     "source_key": "Helps the absorption of Ca²⁺ and phosphorus",
+     "explanation": "1,25-(OH)₂D เพิ่มการดูดซึม Ca²⁺ และ phosphate ที่ลำไส้",
+     "accepted": [
+      "helps absorb calcium and phosphorus"
+     ]
+    },
+    {
+     "id": "18.2",
+     "prompt": "Calcium — function",
+     "format": "short",
+     "keywords_all": [
+      "strong",
+      "dense",
+      "hard"
+     ],
+     "key_text": "Makes the bone strong and dense",
+     "source_key": "Makes the bone strong and dense",
+     "explanation": "Ca เป็นส่วนประกอบหลักของกระดูก (hydroxyapatite)",
+     "accepted": [
+      "bone strength",
+      "bone density"
+     ]
+    },
+    {
+     "id": "18.3",
+     "prompt": "Phosphorus — function",
+     "format": "short",
+     "keywords_all": [
+      "shape",
+      "structure"
+     ],
+     "key_text": "Helps maintain the shape/structure of the bone",
+     "source_key": "ทำให้คงรูปร่างกระดูกไว้ได้",
+     "explanation": "phosphate ร่วมสร้าง hydroxyapatite",
+     "accepted": [
+      "bone formation",
+      "bone structure"
+     ]
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF47",
+     "pages": [
+      10
+     ]
+    },
+    {
+     "paper": "KF47-KEY",
+     "pages": [
+      10
+     ]
+    }
+   ],
+   "tags": [
+    "osteoporosis",
+    "vitamin D"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "vit D + Ca + P ดูแลกระดูก"
+  },
+  {
+   "id": "GI-47-KF-019",
+   "block": "GI",
+   "cohort": 47,
+   "n": 19,
+   "type": "KF",
+   "case": "A woman weighs 110 kg, height 160 cm, waist circumference 100 cm, hip circumference 110 cm.",
+   "items": [
+    {
+     "id": "19.1",
+     "prompt": "What is used to measure the nutrition status of this woman?",
+     "format": "short",
+     "accepted": [
+      "bmi",
+      "body mass index"
+     ],
+     "key_text": "Body mass index (BMI)",
+     "source_key": "Body mass index (BMI)",
+     "explanation": "BMI = 110/1.6² = 43 kg/m²"
+    },
+    {
+     "id": "19.2",
+     "prompt": "What are her nutrition status and degree of severity?",
+     "format": "short",
+     "accepted": [
+      "obesity class iii",
+      "morbid obesity",
+      "severe obesity"
+     ],
+     "key_text": "Obesity",
+     "source_key": "Obesity",
+     "explanation": "BMI 43 kg/m² ≥ 30 = โรคอ้วนรุนแรง (class III)",
+     "audit_note": "เฉลยต้นฉบับตอบ Obesity (ไม่ระบุระดับ) · BMI = 110/1.6² ≈ 43 = class III (morbid obesity)"
+    },
+    {
+     "id": "19.3",
+     "prompt": "What measure is used for cardiometabolic risk factor?",
+     "format": "short",
+     "accepted": [
+      "waist circumference",
+      "waist"
+     ],
+     "key_text": "Waist circumference",
+     "source_key": "Waist circumference",
+     "explanation": "รอบเอวบอก visceral fat"
+    },
+    {
+     "id": "19.4",
+     "prompt": "What cut-off is used in 19.3?",
+     "format": "short",
+     "keywords_all": [
+      "80"
+     ],
+     "key_text": "≥ 80 cm (female)",
+     "source_key": "มากกว่าหรือเท่ากับ 80 cm",
+     "explanation": "เกณฑ์ผู้หญิงเอเชีย ≥ 80 cm (ผู้ชาย ≥ 90 cm)",
+     "accepted": [
+      "80 cm",
+      "more than or equal to 80 cm",
+      "> 80 cm",
+      "80"
+     ]
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF47",
+     "pages": [
+      11
+     ]
+    },
+    {
+     "paper": "KF47-KEY",
+     "pages": [
+      11
+     ]
+    }
+   ],
+   "tags": [
+    "obesity",
+    "BMI",
+    "waist"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "BMI 43 → obesity · เอวหญิง ≥ 80 cm"
+  }
+ ]
+}

@@ -1,0 +1,1090 @@
+{
+ "meta": {
+  "set_id": "49_OSPE",
+  "block": "GI",
+  "cohort": 49,
+  "type": "OSPE",
+  "title": "OSPE Gastrointestinal · Med PSU 49",
+  "time_limit_min": 27,
+  "generated_by": "auditor/tools/build_kf.py from auditor/data/work/gi_49_OSPE.kf.json — do not edit by hand"
+ },
+ "questions": [
+  {
+   "id": "GI-49-OSPE-001",
+   "block": "GI",
+   "cohort": 49,
+   "n": 1,
+   "type": "OSPE",
+   "station": 1,
+   "stem": "Station 1. A muscle model seen from behind/front of the trunk: a red arrow points to a lateral abdominal wall muscle and a blue arrow points to a vertical muscle near the midline.",
+   "items": [
+    {
+     "id": "1.1",
+     "prompt": "ลูกศรสีแดง คือกล้ามเนื้อชื่อว่าอะไร",
+     "format": "short",
+     "accepted": [
+      "external oblique",
+      "external oblique muscle",
+      "external abdominal oblique"
+     ],
+     "key_text": "External oblique muscle",
+     "source_key": "External oblique muscle",
+     "explanation": "กล้ามเนื้อชั้นนอกสุดของผนังหน้าท้องด้านข้าง เส้นใยวิ่งเฉียงลงล่าง-เข้ากลาง"
+    },
+    {
+     "id": "1.2",
+     "prompt": "ลูกศรสีน้ำเงิน คือกล้ามเนื้อชื่อว่าอะไร",
+     "format": "short",
+     "accepted": [
+      "rectus abdominis",
+      "rectus abdominis muscle"
+     ],
+     "key_text": "Rectus abdominis muscle",
+     "source_key": "Rectus abdominis muscle",
+     "explanation": "กล้ามเนื้อแนวตั้งสองข้างของเส้นกลาง งอลำตัว"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE49",
+     "pages": [
+      1
+     ]
+    },
+    {
+     "paper": "OSPE49-KEY",
+     "pages": [
+      1
+     ]
+    }
+   ],
+   "tags": [
+    "abdominal wall muscles"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "external oblique (ข้างลำตัว) · rectus abdominis (กลางหน้าท้อง)",
+   "image": "img/GI-49-OSPE-001.jpg",
+   "image_caption": "โมเดลกล้ามเนื้อ: ลูกศรแดง/น้ำเงิน"
+  },
+  {
+   "id": "GI-49-OSPE-002",
+   "block": "GI",
+   "cohort": 49,
+   "n": 2,
+   "type": "OSPE",
+   "station": 2,
+   "stem": "Station 2. Two drawings of a segment of small intestine with its mesenteric arcades and vasa recta: A has long arcades with long, widely spaced straight vessels and a thick folded wall; B has many arcades with short vasa recta and a thinner wall.",
+   "items": [
+    {
+     "id": "2.1",
+     "prompt": "ภาพ A คือลำไส้เล็กส่วนใด",
+     "format": "short",
+     "accepted": [
+      "jejunum"
+     ],
+     "key_text": "Jejunum",
+     "source_key": "Jejunum",
+     "explanation": "jejunum: arcade 1–2 ชั้น vasa recta ยาว ผนังหนา มี plicae circulares เห็นชัด"
+    },
+    {
+     "id": "2.2",
+     "prompt": "ภาพ B คือลำไส้เล็กส่วนใด",
+     "format": "short",
+     "accepted": [
+      "ileum"
+     ],
+     "key_text": "Ileum",
+     "source_key": "Ileum",
+     "explanation": "ileum: arcade หลายชั้น vasa recta สั้น ผนังบาง มี Peyer's patches"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE49",
+     "pages": [
+      1
+     ]
+    },
+    {
+     "paper": "OSPE49-KEY",
+     "pages": [
+      1
+     ]
+    }
+   ],
+   "tags": [
+    "small intestine",
+    "jejunum vs ileum"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "jejunum vs ileum: arcade ชั้นเดียว/vasa recta ยาว vs arcade หลายชั้น/vasa recta สั้น",
+   "image": "img/GI-49-OSPE-002.jpg",
+   "image_caption": "หลอดเลือดลำไส้เล็กส่วน A และ B"
+  },
+  {
+   "id": "GI-49-OSPE-003",
+   "block": "GI",
+   "cohort": 49,
+   "n": 3,
+   "type": "OSPE",
+   "station": 3,
+   "stem": "Station 3. Light microscopy: many oval cells cut in section, each containing a coiled larva, embedded in striated tissue (muscle).",
+   "items": [
+    {
+     "id": "3.1",
+     "prompt": "จงบอก Scientific name of this worm",
+     "format": "short",
+     "accepted": [
+      "trichinella spiralis",
+      "t. spiralis",
+      "trichinella"
+     ],
+     "key_text": "Trichinella spiralis",
+     "source_key": "Trichinella spiralis",
+     "explanation": "ตัวอ่อนขดอยู่ใน nurse cell ของกล้ามเนื้อลาย"
+    },
+    {
+     "id": "3.2",
+     "prompt": "Where is the habitat of the adult worm?",
+     "format": "short",
+     "accepted": [
+      "small intestine",
+      "small intestines",
+      "small bowel"
+     ],
+     "key_text": "Small intestine",
+     "source_key": "Small intestine",
+     "explanation": "ตัวเต็มวัยฝังที่ mucosa ของลำไส้เล็ก · ตัวอ่อนไปฝังกล้ามเนื้อ"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE49",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "OSPE49-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [
+    "Trichinella"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "Trichinella spiralis: ตัวเต็มวัยที่ small intestine · ตัวอ่อนอยู่ในกล้ามเนื้อ",
+   "image": "img/GI-49-OSPE-003.jpg",
+   "image_caption": "ตัวอ่อนในกล้ามเนื้อ (H&E)"
+  },
+  {
+   "id": "GI-49-OSPE-004",
+   "block": "GI",
+   "cohort": 49,
+   "n": 4,
+   "type": "OSPE",
+   "station": 4,
+   "stem": "Station 4. Light microscopy: two oval, thin-shelled eggs flattened on one side, each with a coiled larva inside.",
+   "items": [
+    {
+     "id": "4.1",
+     "prompt": "จากรูป คือไข่ของพยาธิชนิดใด",
+     "format": "short",
+     "accepted": [
+      "enterobius vermicularis",
+      "e. vermicularis",
+      "pinworm",
+      "enterobius"
+     ],
+     "key_text": "Enterobius vermicularis",
+     "source_key": "Enterobius vermicularis",
+     "explanation": "ไข่รูปไข่ด้านหนึ่งแบน เปลือกบาง มีตัวอ่อนข้างใน"
+    },
+    {
+     "id": "4.2",
+     "prompt": "ต้องใช้เทคนิคใดในการตรวจหาไข่พยาธิชนิดนี้",
+     "format": "short",
+     "accepted": [
+      "scotch tape technique",
+      "scotch tape",
+      "cellophane tape technique",
+      "scotch tape test"
+     ],
+     "key_text": "Scotch tape technique",
+     "source_key": "Scotch tape technique",
+     "explanation": "แปะเทปใสที่รอบทวารหนักตอนเช้าก่อนล้างแล้วนำไปส่องกล้อง"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE49",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "OSPE49-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [
+    "Enterobius"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "Enterobius: scotch tape technique",
+   "image": "img/GI-49-OSPE-004.jpg",
+   "image_caption": "ไข่พยาธิ (light microscope)"
+  },
+  {
+   "id": "GI-49-OSPE-005",
+   "block": "GI",
+   "cohort": 49,
+   "n": 5,
+   "type": "OSPE",
+   "station": 5,
+   "stem": "Station 5. Gross specimen: a gallbladder opened to show a cluster of small black stones in the lumen.",
+   "items": [
+    {
+     "id": "5.1",
+     "prompt": "จากรูป จงให้การวินิจฉัยโรค (แบบ specific)",
+     "format": "short",
+     "accepted": [
+      "cholelithiasis",
+      "gallstones",
+      "pigment stones",
+      "black pigment stones"
+     ],
+     "key_text": "Cholelithiasis",
+     "source_key": "Cholelithiasis",
+     "explanation": "นิ่วในถุงน้ำดีสีดำ = black pigment stones"
+    },
+    {
+     "id": "5.2",
+     "prompt": "จากรูป จงบอก risk factor มา 2 ข้อ",
+     "format": "short",
+     "keywords_all": [
+      "hemoly",
+      "biliary"
+     ],
+     "key_text": "Chronic hemolytic anemias; biliary infection",
+     "source_key": "Chronic hemolytic anemias; biliary infection",
+     "explanation": "ปัจจัยเสี่ยงของ pigment stone: chronic hemolysis (เช่น thalassemia, sickle cell), biliary infection (อื่นๆ: alcoholic cirrhosis, อายุมาก)",
+     "accepted": [
+      "hemolytic anemia and biliary infection",
+      "chronic hemolytic anemia, biliary infection"
+     ]
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE49",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "OSPE49-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [
+    "gallstones",
+    "pigment stone"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "black pigment stone: chronic hemolysis + biliary infection",
+   "image": "img/GI-49-OSPE-005.jpg",
+   "image_caption": "ถุงน้ำดีผ่า มีนิ่วสีดำ"
+  },
+  {
+   "id": "GI-49-OSPE-006",
+   "block": "GI",
+   "cohort": 49,
+   "n": 6,
+   "type": "OSPE",
+   "station": 6,
+   "stem": "Station 6. Liver histology (H&E): a portal tract at the lower left; points A, B and C are marked on the hepatic parenchyma, with A closest to the portal tract and C farthest from it (nearest the central vein).",
+   "items": [
+    {
+     "id": "6.1",
+     "prompt": "โซนใดที่ sensitive ต่อการขาดเลือดมากที่สุด",
+     "format": "short",
+     "accepted": [
+      "c",
+      "zone c",
+      "zone 3",
+      "zone iii"
+     ],
+     "key_text": "C (zone 3 — centrilobular)",
+     "source_key": "C",
+     "explanation": "zone 3 (รอบ central vein) อยู่ปลายทางของเลือด ได้ O2 น้อยสุด จึงไวต่อ ischemia/hypoxia ที่สุด",
+     "audit_note": "ข้อนี้ตอบเป็นตัวอักษรบนรูป ถ้าตอบเป็นชื่อโซน (zone 3 / centrilobular) ใช้ปุ่ม 'ตัดสินเอง'"
+    },
+    {
+     "id": "6.2",
+     "prompt": "โซนใดเป็นโซนที่ได้รับออกซิเจนจากเลือดมากที่สุด",
+     "format": "short",
+     "accepted": [
+      "a",
+      "zone a",
+      "zone 1",
+      "zone i"
+     ],
+     "key_text": "A (zone 1 — periportal)",
+     "source_key": "A",
+     "explanation": "zone 1 (รอบ portal tract) รับเลือดจาก hepatic artery/portal vein ก่อน ได้ O2 มากสุด",
+     "audit_note": "ข้อนี้ตอบเป็นตัวอักษรบนรูป ถ้าตอบเป็นชื่อโซน (zone 1 / periportal) ใช้ปุ่ม 'ตัดสินเอง'"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE49",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "OSPE49-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [
+    "liver acinus",
+    "hepatic zones"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "zone 1 (portal) ได้ O2 มากสุด · zone 3 (central vein) ไวต่อ ischemia สุด",
+   "image": "img/GI-49-OSPE-006.jpg",
+   "image_caption": "เนื้อตับ (H&E) จุด A, B, C"
+  },
+  {
+   "id": "GI-49-OSPE-007",
+   "block": "GI",
+   "cohort": 49,
+   "n": 7,
+   "type": "OSPE",
+   "station": 7,
+   "stem": "Station 7. Anatomy drawing of the posterior abdominal wall showing the lumbar plexus and its branches (blue-green) beside the lumbar vertebrae: a red arrow points at the upper end of a chain running beside the vertebral bodies at about L1; a blue arrow points at a large nerve passing beneath the inguinal ligament near the iliac crest.",
+   "items": [
+    {
+     "id": "7.1",
+     "prompt": "ลูกศรสีน้ำเงิน คือเส้นประสาทชื่อว่าอะไร",
+     "format": "short",
+     "accepted": [
+      "femoral nerve",
+      "femoral n."
+     ],
+     "key_text": "Femoral nerve",
+     "source_key": "Femoral nerve",
+     "explanation": "เส้นประสาทใหญ่ของ lumbar plexus (L2–L4) ลอดใต้ inguinal ligament ไปต้นขาหน้า"
+    },
+    {
+     "id": "7.2",
+     "prompt": "ลูกศรสีแดง คือเส้นประสาทชื่อว่าอะไร",
+     "format": "short",
+     "accepted": [
+      "sympathetic trunk",
+      "sympathetic chain"
+     ],
+     "key_text": "Sympathetic trunk",
+     "source_key": "Sympathetic trunk",
+     "explanation": "แนวปมประสาทซิมพาเทติกเรียงข้างกระดูกสันหลัง",
+     "audit_note": "ลูกศรแดงชี้ปลายบนของแนวข้างกระดูกสันหลัง L1 ตามเฉลยต้นฉบับ = sympathetic trunk"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE49",
+     "pages": [
+      3
+     ]
+    },
+    {
+     "paper": "OSPE49-KEY",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [
+    "lumbar plexus",
+    "posterior abdominal wall"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "femoral nerve · sympathetic trunk",
+   "image": "img/GI-49-OSPE-007.jpg",
+   "image_caption": "lumbar plexus ผนังหน้าท้องด้านหลัง"
+  },
+  {
+   "id": "GI-49-OSPE-008",
+   "block": "GI",
+   "cohort": 49,
+   "n": 8,
+   "type": "OSPE",
+   "station": 8,
+   "stem": "Station 8. Anatomy drawing of the posterior abdominal wall and pelvis: A points to the large muscle lying in the iliac fossa along the pelvic brim; B points to the long, thick muscle lying beside the lumbar vertebral column.",
+   "items": [
+    {
+     "id": "8.1",
+     "prompt": "A คือกล้ามเนื้อชื่อว่าอะไร",
+     "format": "short",
+     "accepted": [
+      "iliacus",
+      "iliacus muscle"
+     ],
+     "key_text": "Iliacus muscle",
+     "source_key": "Iliacus muscle",
+     "explanation": "กล้ามเนื้อใน iliac fossa รวมกับ psoas major เป็น iliopsoas งอสะโพก"
+    },
+    {
+     "id": "8.2",
+     "prompt": "B คือกล้ามเนื้อชื่อว่าอะไร",
+     "format": "short",
+     "accepted": [
+      "psoas major",
+      "psoas major muscle",
+      "psoas"
+     ],
+     "key_text": "Psoas major muscle",
+     "source_key": "Psoas major muscle",
+     "explanation": "กล้ามเนื้อข้างกระดูกสันหลังส่วนเอว (T12–L5) ลงไปยึด lesser trochanter ร่วมกับ iliacus"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE49",
+     "pages": [
+      3
+     ]
+    },
+    {
+     "paper": "OSPE49-KEY",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [
+    "iliopsoas",
+    "posterior abdominal wall"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "iliacus (iliac fossa) + psoas major (ข้างกระดูกสันหลัง) = iliopsoas",
+   "image": "img/GI-49-OSPE-008.jpg",
+   "image_caption": "กล้ามเนื้อผนังหน้าท้องด้านหลัง A, B"
+  },
+  {
+   "id": "GI-49-OSPE-009",
+   "block": "GI",
+   "cohort": 49,
+   "n": 9,
+   "type": "OSPE",
+   "station": 9,
+   "stem": "Station 9. Gross specimen: cut surface of a liver with multiple, large, pale cream-white nodules of varying size scattered throughout the dark red parenchyma.",
+   "items": [
+    {
+     "id": "9.1",
+     "prompt": "จากรูป จง differential diagnosis มา 2 โรค",
+     "format": "short",
+     "keywords_all": [
+      "hcc",
+      "cholangiocarcinoma"
+     ],
+     "key_text": "HCC, cholangiocarcinoma",
+     "source_key": "HCC, cholangiocarcinoma",
+     "explanation": "ก้อนเนื้องอกหลายก้อนในตับ: hepatocellular carcinoma, cholangiocarcinoma (ภาพเดียวกันนี้ในรุ่น 50 ตอบ HCC/metastatic cancer, รุ่น 52 ตอบ metastatic carcinoma/multifocal HCC)",
+     "accepted": [
+      "hepatocellular carcinoma, cholangiocarcinoma",
+      "hcc and cholangiocarcinoma",
+      "metastasis",
+      "metastatic carcinoma",
+      "metastatic cancer"
+     ],
+     "audit_note": "ภาพเดียวกับ OSPE รุ่น 50 และ 52 ซึ่งเฉลยตอบ metastatic carcinoma/multifocal HCC ด้วย จึงรับ metastasis เป็นคำตอบที่ยอมรับได้"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE49",
+     "pages": [
+      3
+     ]
+    },
+    {
+     "paper": "OSPE49-KEY",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [
+    "liver tumor"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "ก้อนหลายก้อนในตับ: HCC · cholangiocarcinoma · metastasis",
+   "image": "img/GI-49-OSPE-009.jpg",
+   "image_caption": "ตัดผ่านตับมีก้อนสีขาวหลายก้อน"
+  },
+  {
+   "id": "GI-49-OSPE-010",
+   "block": "GI",
+   "cohort": 49,
+   "n": 10,
+   "type": "OSPE",
+   "station": 10,
+   "stem": "Station 10. Gross specimen on a ruler: a curved, thick tubular organ (appendix) with a dull, shaggy, yellow-brown surface.",
+   "items": [
+    {
+     "id": "10.1",
+     "prompt": "จากรูป จงอธิบายลักษณะของ gross (2 ข้อ)",
+     "format": "short",
+     "keywords_all": [
+      "dilat",
+      "exudate"
+     ],
+     "key_text": "The appendix is dilated; serosal surface is covered by a fibrinopurulent exudate",
+     "source_key": "The appendix is dilated; serosal surface is covered by a fibrinopurulent exudate",
+     "explanation": "ไส้ติ่งบวมโต พื้นผิว serosa มี exudate เป็น fibrin ปนหนอง",
+     "accepted": [
+      "dilated and covered by fibrinopurulent exudate",
+      "dilated appendix, fibrinopurulent exudate on serosa"
+     ]
+    },
+    {
+     "id": "10.2",
+     "prompt": "จงให้การวินิจฉัยโรค",
+     "format": "short",
+     "accepted": [
+      "acute appendicitis",
+      "appendicitis"
+     ],
+     "key_text": "Acute appendicitis",
+     "source_key": "Acute appendicitis",
+     "explanation": "ไส้ติ่งอักเสบเฉียบพลัน (neutrophils ใน muscularis propria)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE49",
+     "pages": [
+      4
+     ]
+    },
+    {
+     "paper": "OSPE49-KEY",
+     "pages": [
+      4
+     ]
+    }
+   ],
+   "tags": [
+    "appendicitis"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "acute appendicitis: ไส้ติ่งบวม + fibrinopurulent exudate",
+   "image": "img/GI-49-OSPE-010.jpg",
+   "image_caption": "ไส้ติ่ง (gross) บนไม้บรรทัด"
+  },
+  {
+   "id": "GI-49-OSPE-011",
+   "block": "GI",
+   "cohort": 49,
+   "n": 11,
+   "type": "OSPE",
+   "station": 11,
+   "stem": "Station 11. Gross specimen: opened stomach with a solitary, oval, sharply demarcated ulcer with a smooth clean base; the surrounding mucosal folds radiate toward the ulcer.",
+   "items": [
+    {
+     "id": "11.1",
+     "prompt": "จากรูป จงอธิบายลักษณะของ gross",
+     "format": "short",
+     "keywords_all": [
+      "solitary",
+      "punched"
+     ],
+     "key_text": "Solitary, oval, sharply punched-out ulcer with smooth clean base",
+     "source_key": "Solitary, oval, sharply punched-out ulcer with smooth clean base",
+     "explanation": "แผลเดียว รูปไข่ ขอบชัดเหมือนถูกเจาะ ฐานเรียบสะอาด รอยพับ mucosa เรียงเข้าหาแผล = ลักษณะแผลธรรมดา (benign)",
+     "accepted": [
+      "solitary oval punched-out ulcer with clean base",
+      "single punched out ulcer smooth base"
+     ]
+    },
+    {
+     "id": "11.2",
+     "prompt": "จงให้การวินิจฉัยแยกโรค (differential diagnosis)",
+     "format": "short",
+     "accepted": [
+      "peptic ulcer",
+      "gastric ulcer",
+      "peptic ulcer disease"
+     ],
+     "key_text": "Peptic ulcer",
+     "source_key": "Peptic ulcer",
+     "explanation": "แผลขอบเรียบฐานสะอาด = peptic (gastric) ulcer · ต้องแยกจากมะเร็งกระเพาะ (ขอบนูนแข็ง ฐานสกปรก)",
+     "audit_note": "คำถามเป็นข้อ differential diagnosis แต่เฉลยตอบโรคเดียว (peptic ulcer) · OSPE รุ่น 50 ข้อ 8.2 ตอบ peptic ulcer และ adenocarcinoma"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE49",
+     "pages": [
+      4
+     ]
+    },
+    {
+     "paper": "OSPE49-KEY",
+     "pages": [
+      4
+     ]
+    }
+   ],
+   "tags": [
+    "peptic ulcer",
+    "stomach"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "gastric peptic ulcer: punched-out ขอบเรียบ ฐานสะอาด",
+   "image": "img/GI-49-OSPE-011.jpg",
+   "image_caption": "กระเพาะผ่า มีแผล (gross)"
+  },
+  {
+   "id": "GI-49-OSPE-012",
+   "block": "GI",
+   "cohort": 49,
+   "n": 12,
+   "type": "OSPE",
+   "station": 12,
+   "stem": "Station 12. Diagram of the large intestine with the pancreas and superior/inferior mesenteric vessels; a blue arrow points to a vessel supplying the sigmoid colon.",
+   "items": [
+    {
+     "id": "12.1",
+     "prompt": "ลูกศรสีน้ำเงิน คือเส้นเลือดใด",
+     "format": "short",
+     "accepted": [
+      "sigmoid artery",
+      "sigmoidal artery",
+      "sigmoid arteries",
+      "sigmoidal arteries"
+     ],
+     "key_text": "Sigmoidal artery",
+     "source_key": "Sigmoidal artery",
+     "explanation": "แขนงของ inferior mesenteric artery เลี้ยง sigmoid colon"
+    },
+    {
+     "id": "12.2",
+     "prompt": "เส้นเลือดดังกล่าว contribute มาจากเส้นเลือดใด",
+     "format": "short",
+     "accepted": [
+      "inferior mesenteric artery",
+      "ima"
+     ],
+     "key_text": "Inferior mesenteric artery",
+     "source_key": "Inferior mesenteric artery",
+     "explanation": "IMA แตกเป็น left colic, sigmoid arteries และ superior rectal"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE49",
+     "pages": [
+      4
+     ]
+    },
+    {
+     "paper": "OSPE49-KEY",
+     "pages": [
+      4
+     ]
+    }
+   ],
+   "tags": [
+    "colon blood supply"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "sigmoid arteries ← inferior mesenteric artery",
+   "image": "img/GI-49-OSPE-012.jpg",
+   "image_caption": "หลอดเลือดลำไส้ใหญ่ (ลูกศรน้ำเงิน)"
+  },
+  {
+   "id": "GI-49-OSPE-013",
+   "block": "GI",
+   "cohort": 49,
+   "n": 13,
+   "type": "OSPE",
+   "station": 13,
+   "stem": "Station 13. Light microscopy (stained): a trophozoite-like round cell with a single ring-shaped nucleus and several dark-red ingested particles in the cytoplasm.",
+   "items": [
+    {
+     "id": "13.1",
+     "prompt": "จากรูป จงบอกชื่อวิทยาศาสตร์",
+     "format": "short",
+     "accepted": [
+      "entamoeba histolytica",
+      "e. histolytica",
+      "entamoeba"
+     ],
+     "key_text": "Entamoeba histolytica",
+     "source_key": "Entamoeba histolytica",
+     "explanation": "trophozoite กิน RBC (dark red ในไซโทพลาซึม) นิวเคลียสเดียว"
+    },
+    {
+     "id": "13.2",
+     "prompt": "คนสามารถติดปรสิตชนิดนี้จากที่ใดได้บ้าง",
+     "format": "short",
+     "key_text": "กิน cyst ที่อยู่ในน้ำ / อาหาร",
+     "source_key": "กิน cyst ที่อยู่ในน้ำ/อาหาร",
+     "explanation": "ติดโดยกิน cyst ที่ปนเปื้อนในน้ำหรืออาหาร (fecal-oral)",
+     "accepted": [
+      "food and water",
+      "contaminated water",
+      "contaminated food",
+      "water",
+      "food",
+      "น้ำ",
+      "อาหาร",
+      "fecal-oral",
+      "fecal oral"
+     ],
+     "audit_note": "ลายมือเฉลยอ่านว่า 'กิน cyst ที่อยู่ในน้ำ/อาหาร' ข้อความตรงนี้อ่านยากเล็กน้อย"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE49",
+     "pages": [
+      5
+     ]
+    },
+    {
+     "paper": "OSPE49-KEY",
+     "pages": [
+      5
+     ]
+    }
+   ],
+   "tags": [
+    "Entamoeba histolytica"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "E. histolytica: trophozoite กิน RBC · ติดจากกิน cyst ในน้ำ/อาหาร",
+   "image": "img/GI-49-OSPE-013.jpg",
+   "image_caption": "โปรโตซัว (ย้อมสี)"
+  },
+  {
+   "id": "GI-49-OSPE-014",
+   "block": "GI",
+   "cohort": 49,
+   "n": 14,
+   "type": "OSPE",
+   "station": 14,
+   "stem": "Station 14. Left: gross esophagus with an irregular, ulcerated, reddish-brown mass on the mucosa. Right: histology (H&E) showing sheets of squamous cells infiltrating the wall.",
+   "items": [
+    {
+     "id": "14.1",
+     "prompt": "จากรูป จงอธิบายลักษณะ histology",
+     "format": "short",
+     "accepted": [
+      "moderate to well differentiated",
+      "moderately to well differentiated",
+      "well differentiated",
+      "moderately differentiated",
+      "keratin pearl",
+      "keratin pearls"
+     ],
+     "key_text": "Moderate to well differentiated",
+     "source_key": "Moderate to well differentiated",
+     "explanation": "เซลล์สความัสเรียงเป็นกลุ่มชัด มีการสร้าง keratin ได้ดี-ปานกลาง",
+     "audit_note": "เฉลยตอบเป็นระดับ differentiation (moderate–well) ลักษณะอื่นที่เกี่ยวข้อง เช่น keratin pearls/intercellular bridges ก็ถือว่าตอบถูกด้านลักษณะเนื้อเยื่อ"
+    },
+    {
+     "id": "14.2",
+     "prompt": "จงให้การวินิจฉัยโรคนี้",
+     "format": "short",
+     "accepted": [
+      "squamous cell carcinoma",
+      "esophageal squamous cell carcinoma",
+      "scc"
+     ],
+     "key_text": "Squamous cell carcinoma",
+     "source_key": "Squamous cell carcinoma",
+     "explanation": "ก้อนที่หลอดอาหาร + เซลล์ squamous ผิดปกติ = esophageal SCC"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE49",
+     "pages": [
+      5
+     ]
+    },
+    {
+     "paper": "OSPE49-KEY",
+     "pages": [
+      5
+     ]
+    }
+   ],
+   "tags": [
+    "esophageal cancer",
+    "squamous cell carcinoma"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "esophageal SCC: moderate–well differentiated",
+   "image": "img/GI-49-OSPE-014.jpg",
+   "image_caption": "หลอดอาหาร (gross) และ histology"
+  },
+  {
+   "id": "GI-49-OSPE-015",
+   "block": "GI",
+   "cohort": 49,
+   "n": 15,
+   "type": "OSPE",
+   "station": 15,
+   "stem": "Station 15. Diagram of a rapid stool test procedure: a stool sample is mixed in the buffer tube, drops are added to a cassette and read after 5 minutes; the final strip shows control (C) and test (T) lines.",
+   "items": [
+    {
+     "id": "15.1",
+     "prompt": "จากรูป ปรากฏผลเป็น negative หรือ positive",
+     "format": "short",
+     "accepted": [
+      "positive",
+      "บวก"
+     ],
+     "key_text": "Positive",
+     "source_key": "Positive",
+     "explanation": "เห็นทั้งเส้น C และ T = positive"
+    },
+    {
+     "id": "15.2",
+     "prompt": "How to interpret the result?",
+     "format": "short",
+     "keywords_all": [
+      "hemoglobin"
+     ],
+     "key_text": "พบ human hemoglobin ในอุจจาระ",
+     "source_key": "พบ Human hemoglobin ในอุจจาระ",
+     "explanation": "ผลบวกของ immunochemical FOBT/FIT = พบ human hemoglobin ในอุจจาระ → มีเลือดออกในทางเดินอาหาร (โดยเฉพาะส่วนล่าง เช่น มะเร็งลำไส้ใหญ่) ต้องส่งตรวจต่อ",
+     "accepted": [
+      "human hemoglobin in stool",
+      "human hemoglobin",
+      "occult blood in stool",
+      "blood in stool",
+      "เลือดในอุจจาระ",
+      "พบ human hemoglobin"
+     ],
+     "audit_note": "ลายมือเฉลยอ่านว่า 'พบ Human hemoglobin ในอุจจาระ'"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE49",
+     "pages": [
+      6
+     ]
+    },
+    {
+     "paper": "OSPE49-KEY",
+     "pages": [
+      6
+     ]
+    }
+   ],
+   "tags": [
+    "fecal occult blood test",
+    "FIT"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "FIT/immunochemical FOBT positive = พบ human Hb ในอุจจาระ",
+   "image": "img/GI-49-OSPE-015.jpg",
+   "image_caption": "ขั้นตอนตรวจเลือดแฝงในอุจจาระ (immunochemical)"
+  },
+  {
+   "id": "GI-49-OSPE-016",
+   "block": "GI",
+   "cohort": 49,
+   "n": 16,
+   "type": "OSPE",
+   "station": 16,
+   "stem": "Station 16. Diagram of the portal venous system and abdominal organs: a red arrow points to the large vein formed behind the pancreatic neck that enters the liver; a blue arrow points at the gallbladder.",
+   "items": [
+    {
+     "id": "16.1",
+     "prompt": "ลูกศรสีแดง คือเส้นเลือดใด",
+     "format": "short",
+     "accepted": [
+      "hepatic portal vein",
+      "portal vein"
+     ],
+     "key_text": "Hepatic portal vein",
+     "source_key": "Hepatic portal vein",
+     "explanation": "เกิดจาก superior mesenteric v. + splenic v. หลัง pancreatic neck"
+    },
+    {
+     "id": "16.2",
+     "prompt": "จากอวัยวะที่ลูกศรสีน้ำเงินชี้อยู่ มีเส้นเลือดใดมาเลี้ยงอวัยวะนั้น",
+     "format": "short",
+     "accepted": [
+      "cystic artery",
+      "cystic a."
+     ],
+     "key_text": "Cystic artery",
+     "source_key": "Cystic artery",
+     "explanation": "ถุงน้ำดีได้เลือดจาก cystic artery (แขนงของ right hepatic artery)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE49",
+     "pages": [
+      6
+     ]
+    },
+    {
+     "paper": "OSPE49-KEY",
+     "pages": [
+      6
+     ]
+    }
+   ],
+   "tags": [
+    "portal vein",
+    "gallbladder blood supply"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "hepatic portal vein · ถุงน้ำดี ← cystic artery",
+   "image": "img/GI-49-OSPE-016.jpg",
+   "image_caption": "portal venous system (ลูกศรแดง/น้ำเงิน)"
+  },
+  {
+   "id": "GI-49-OSPE-017",
+   "block": "GI",
+   "cohort": 49,
+   "n": 17,
+   "type": "OSPE",
+   "station": 17,
+   "stem": "Station 17. Light microscopy (stained): a large oval ciliated trophozoite with a prominent curved (kidney/sausage-shaped) macronucleus and two small vacuoles.",
+   "items": [
+    {
+     "id": "17.1",
+     "prompt": "จากรูป จงบอกชื่อวิทยาศาสตร์",
+     "format": "short",
+     "accepted": [
+      "balantidium coli",
+      "b. coli",
+      "balantidium"
+     ],
+     "key_text": "Balantidium coli",
+     "source_key": "Balantidium coli",
+     "explanation": "ciliate เพียงชนิดเดียวที่ก่อโรคในคน: trophozoite ใหญ่ macronucleus รูปไต"
+    },
+    {
+     "id": "17.2",
+     "prompt": "What is the habitat in human?",
+     "format": "short",
+     "accepted": [
+      "large intestine",
+      "colon",
+      "large bowel"
+     ],
+     "key_text": "Large intestine",
+     "source_key": "Large intestine",
+     "explanation": "อาศัยใน large intestine (cecum/colon) ก่อ ulcer เป็นรูปขวดใน mucosa"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE49",
+     "pages": [
+      7
+     ]
+    },
+    {
+     "paper": "OSPE49-KEY",
+     "pages": [
+      7
+     ]
+    }
+   ],
+   "tags": [
+    "Balantidium coli"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "Balantidium coli: ciliate · macronucleus รูปไต · large intestine",
+   "image": "img/GI-49-OSPE-017.jpg",
+   "image_caption": "โปรโตซัวมี cilia (ย้อมสี)"
+  },
+  {
+   "id": "GI-49-OSPE-018",
+   "block": "GI",
+   "cohort": 49,
+   "n": 18,
+   "type": "OSPE",
+   "station": 18,
+   "stem": "Station 18. Culture plates photographed from above: left, an empty blue-green agar plate; right, the same agar with a single large whitish colony (green arrow).",
+   "items": [
+    {
+     "id": "18.1",
+     "prompt": "จากรูป คือเชื้อชนิดใด",
+     "format": "short",
+     "accepted": [
+      "salmonella",
+      "salmonella spp",
+      "salmonella species"
+     ],
+     "key_text": "Salmonella spp.",
+     "source_key": "Salmonella spp.",
+     "explanation": "แบคทีเรียก่อโรคลำไส้ที่เพาะบนอาหารเลี้ยงเชื้อเลือกสรร",
+     "audit_note": "ภาพเป็นจานเพาะเชื้อเท่านั้น (ไม่ระบุชนิดอาหาร) AI ยืนยันสายพันธุ์จากภาพไม่ได้ ใช้ตามเฉลยต้นฉบับ (Salmonella spp.)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE49",
+     "pages": [
+      7
+     ]
+    },
+    {
+     "paper": "OSPE49-KEY",
+     "pages": [
+      7
+     ]
+    }
+   ],
+   "tags": [
+    "bacterial culture"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "Salmonella spp. บนจานเพาะเชื้อ (ตามเฉลย)",
+   "image": "img/GI-49-OSPE-018.jpg",
+   "image_caption": "จานเพาะเชื้อ (ลูกศรเขียว)"
+  }
+ ]
+}

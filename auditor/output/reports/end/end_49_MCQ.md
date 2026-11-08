@@ -8,9 +8,10 @@
 | สถานะ | ความหมาย | จำนวน |
 |---|---|---|
 | `source_agree` | ตรงกับต้นฉบับ | 27 |
-| `source_disagree` | ขัดกับต้นฉบับ | 9 |
+| `source_disagree` | ขัดกับต้นฉบับ | 8 |
 | `ai_generated` | AI เขียนข้อใหม่ | 1 |
 | `drafted` | AI ทำเฉลย | 1 |
+| `corrected` | แก้ตามผู้ใช้ | 1 |
 
 AI ตอบตรงกับเฉลยต้นฉบับ **27/37** ข้อที่มีโจทย์
 
@@ -27,7 +28,6 @@ AI ตอบตรงกับเฉลยต้นฉบับ **27/37** ข้
 | 28 | E | B | high | เฉลยขัดกับ AI | เฉลยต้นฉบับวง e (ACTH) โดยเขียน pituitary tumor → ACTH ↑ — แต่คางยื่น มือเท้าใหญ่ คือ acromegaly จาก GH (B) |
 | 29 | E | C | high | เฉลยขัดกับ AI | เฉลยต้นฉบับวง e (decrease calcium absorption) โดยแปะสไลด์ bone/calcium — แต่ muscle pain และ weakness จาก dexamethasone ระยะยาวคือ steroid myopathy (protein catabolism, C) |
 | 31 | None | A | medium | ตัวกระตุ้นโดยตรงที่สุดคือ hypoglycemia ซึ่งไม่มีในช้อยส์; ในเฉลยต้นฉบับไม่ได้วงคำตอบ (ใส่ ?); ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |  |
-| 36 | A | C | high | เฉลยขัดกับ AI | เฉลยต้นฉบับกากบาท a (type 1 diabetes) — ตาม ADA classification DM หลัง total pancreatectomy เป็น other specific type (C) ข้อเดียวกันในรุ่น 46, 47, 50 เฉลย C |
 
 ## ปัญหาอื่นที่พบ (ไม่กระทบเฉลย)
 
@@ -39,6 +39,7 @@ AI ตอบตรงกับเฉลยต้นฉบับ **27/37** ข้
 | 19 | หน่วยในต้นฉบับ (mmol/dL, ng/dL/hour) น่าจะพิมพ์ผิด |  |
 | 23 | ช้อยส์ E AI เติมให้ครบ 5 ตัว |  |
 | 25 | AI เขียนข้อนี้ขึ้นใหม่จากโน้ตความจำในต้นฉบับ |  |
+| 36 | แก้เฉลยตาม issue #28: DM หลัง total pancreatectomy = other specific type (โรคของตับอ่อนส่วน exocrine) แม้ต้องฉีด insulin | เฉลยต้นฉบับกากบาท a (type 1 diabetes) — ตาม ADA classification DM หลัง total pancreatectomy เป็น other specific type (C) ข้อเดียวกันในรุ่น 46, 47, 50 เฉลย C |
 
 ## การแก้ไขข้อความ (edits)
 

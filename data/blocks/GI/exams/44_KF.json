@@ -1,0 +1,2289 @@
+{
+ "meta": {
+  "set_id": "44_KF",
+  "block": "GI",
+  "cohort": 44,
+  "type": "KF",
+  "title": "KF Gastrointestinal · Med PSU 44",
+  "generated_by": "auditor/tools/build_kf.py from auditor/data/work/gi_44_KF.kf.json — do not edit by hand"
+ },
+ "questions": [
+  {
+   "id": "GI-44-KF-001",
+   "block": "GI",
+   "cohort": 44,
+   "n": 1,
+   "type": "KF",
+   "case": "Please draw a potential wave pattern in an intestinal cell of a mouse with and without interstitial cells of Cajal.",
+   "items": [
+    {
+     "id": "1.1",
+     "prompt": "With interstitial cells of Cajal — describe the potential wave pattern. (drawing question)",
+     "format": "short",
+     "keywords_all": [
+      "slow wave"
+     ],
+     "key_text": "Regular rhythmic slow waves (BER); spike potentials appear on the crest when the slow wave reaches threshold",
+     "source_key": "(ต้นฉบับเว้นช่องวาดรูป ไม่มีเฉลย) AI ร่างคำตอบ",
+     "explanation": "ICC เป็น pacemaker สร้าง slow wave เป็นจังหวะ · spike เกาะบน slow wave เมื่อถึง threshold → กล้ามเนื้อหดตัว"
+    },
+    {
+     "id": "1.2",
+     "prompt": "Without interstitial cells of Cajal — describe the potential wave pattern. (drawing question)",
+     "format": "short",
+     "keywords_all": [
+      "flat",
+      "no slow wave",
+      "resting"
+     ],
+     "key_text": "No slow wave: a flat line at the resting membrane potential",
+     "source_key": "(ต้นฉบับเว้นช่องวาดรูป ไม่มีเฉลย) AI ร่างคำตอบ",
+     "explanation": "ไม่มี ICC → ไม่มี slow wave เหลือแต่ RMP (ราว −50 ถึง −60 mV) และไม่มีการหดตัวเป็นจังหวะ",
+     "accepted": [
+      "no slow wave",
+      "flat line",
+      "only resting membrane potential"
+     ]
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "KF44",
+     "pages": [
+      1
+     ]
+    },
+    {
+     "paper": "KF44-KEY",
+     "pages": [
+      1
+     ]
+    }
+   ],
+   "tags": [
+    "ICC",
+    "slow wave"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "มี ICC: slow wave + spike · ไม่มี ICC: เส้นตรง RMP",
+   "audit_note": "ข้อ 1 ในต้นฉบับเป็นช่องวาดรูปเปล่า ไม่มีเฉลย AI ร่างคำตอบให้ (ตามรูป slow wave ในชุดอื่น) ผู้ตรวจควรยืนยัน"
+  },
+  {
+   "id": "GI-44-KF-002",
+   "block": "GI",
+   "cohort": 44,
+   "n": 2,
+   "type": "KF",
+   "case": "Tell a main function of these hormones.",
+   "items": [
+    {
+     "id": "2.1",
+     "prompt": "Gastrin",
+     "format": "short",
+     "keywords_all": [
+      "acid",
+      "h"
+     ],
+     "key_text": "Stimulates H⁺ secretion (parietal cell), pepsinogen (chief cell), histamine (ECL cell); stimulates motility; growth of gastric mucosa",
+     "source_key": "กระตุ้นการหลั่ง H⁺ (parietal), pepsinogen (chief cell), histamine (ECL), กระตุ้น motility, growth of gastric mucosa",
+     "explanation": "gastrin จาก G cell",
+     "accepted": [
+      "stimulates gastric acid secretion",
+      "stimulate hcl secretion"
+     ]
+    },
+    {
+     "id": "2.2",
+     "prompt": "Motilin",
+     "format": "short",
+     "keywords_all": [
+      "mmc",
+      "contraction"
+     ],
+     "key_text": "Stimulates contraction of the stomach and small intestine (MMC) and production of pepsin",
+     "source_key": "กระตุ้น contraction ของ stomach และ small intestine แบบ MMC และ production of pepsin",
+     "explanation": "motilin กระตุ้น MMC ช่วงอดอาหาร",
+     "accepted": [
+      "stimulates mmc",
+      "triggers migrating motor complex"
+     ]
+    },
+    {
+     "id": "2.3",
+     "prompt": "Cholecystokinin",
+     "format": "short",
+     "keywords_all": [
+      "pancreatic",
+      "gallbladder"
+     ],
+     "key_text": "Stimulates pancreatic enzyme secretion, gallbladder contraction, relaxes the sphincter of Oddi (and inhibits gastric emptying)",
+     "source_key": "กระตุ้นการหลั่ง pancreatic enzyme, gallbladder contraction, relax sphincter of Oddi, ยับยั้ง gastric emptying",
+     "explanation": "CCK จาก I cell",
+     "accepted": [
+      "pancreatic enzyme secretion and gallbladder contraction"
+     ]
+    },
+    {
+     "id": "2.4",
+     "prompt": "VIP",
+     "format": "short",
+     "keywords_all": [
+      "relax"
+     ],
+     "key_text": "Stimulates relaxation of the stomach and intestinal smooth muscle; increases pancreatic HCO₃⁻ secretion",
+     "source_key": "กระตุ้นการคลายตัวของ stomach, intestinal smooth muscle, เพิ่มการหลั่ง pancreatic HCO₃⁻",
+     "explanation": "VIP เป็น inhibitory NT/ฮอร์โมนที่ทำให้กล้ามเนื้อเรียบคลายและเพิ่มการหลั่งน้ำ/electrolyte",
+     "accepted": [
+      "smooth muscle relaxation",
+      "relaxes gi smooth muscle"
+     ],
+     "audit_note": "ลายมือ 2.4 อ่านว่า 'กระตุ้นการคลายตัวของ stomach…' และมีโน้ตแดง 'ยับยั้ง gastric emptying' ท้ายข้อ"
+    },
+    {
+     "id": "2.5",
+     "prompt": "Somatostatin",
+     "format": "short",
+     "keywords_all": [
+      "inhibit"
+     ],
+     "key_text": "Inhibits gastric acid and pepsinogen secretion; inhibits pancreatic and small-intestinal secretion",
+     "source_key": "inhibit gastric acid และ pepsinogen secretion, pancreatic และ small intestine secretion",
+     "explanation": "somatostatin จาก D cell ยับยั้งการหลั่งและการเคลื่อนไหวหลายอย่าง",
+     "accepted": [
+      "inhibits acid secretion",
+      "inhibits gi hormones"
+     ]
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF44",
+     "pages": [
+      1
+     ]
+    },
+    {
+     "paper": "KF44-KEY",
+     "pages": [
+      1
+     ]
+    }
+   ],
+   "tags": [
+    "GI hormones"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "gastrin ↑กรด · motilin MMC · CCK ตับอ่อน/ถุงน้ำดี · VIP คลาย · somatostatin ยับยั้ง"
+  },
+  {
+   "id": "GI-44-KF-003",
+   "block": "GI",
+   "cohort": 44,
+   "n": 3,
+   "type": "KF",
+   "case": "Draw the ion transport/exchanger between the ductal cells and the lumen to explain why the saliva is hypotonic.",
+   "items": [
+    {
+     "id": "3.1",
+     "prompt": "Explain (describe the transport that makes saliva hypotonic). (drawing question)",
+     "format": "short",
+     "keywords_all": [
+      "na",
+      "cl",
+      "reabsorption"
+     ],
+     "key_text": "In the striated duct, Na⁺ and Cl⁻ are reabsorbed (while K⁺ and HCO₃⁻ are secreted), but H₂O cannot follow, so the saliva becomes hypotonic",
+     "source_key": "ตั้งแต่ striated duct เป็นต้นไป มี Na⁺, Cl⁻ reabsorption แต่ H₂O ผ่านตามไปไม่ได้",
+     "explanation": "ผนัง duct ไม่ซึมน้ำ จึงเค็มน้อยลงเทียบกับ plasma · ให้ตัดสินเองด้วยปุ่ม 'ตัดสินเอง' เพราะเป็นข้อวาดรูป",
+     "key_image": "img/GI-44-KF-003b-key.jpg",
+     "key_image_caption": "เฉลยต้นฉบับ (ลายมือบนรูป): Na⁺, K⁺, Cl⁻, HCO₃⁻ ที่ striated duct และ intercalated duct"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF44",
+     "pages": [
+      1
+     ]
+    },
+    {
+     "paper": "KF44-KEY",
+     "pages": [
+      1
+     ]
+    }
+   ],
+   "tags": [
+    "saliva"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "striated duct: ดูด Na⁺ Cl⁻ กลับ แต่ H₂O ตามไม่ได้ → hypotonic",
+   "image": "img/GI-44-KF-003.jpg",
+   "image_caption": "acinus และท่อน้ำลาย (intercalated duct → striated duct) พร้อมลูกศรทิศทางของ H₂O, Cl⁻, Na⁺"
+  },
+  {
+   "id": "GI-44-KF-004",
+   "block": "GI",
+   "cohort": 44,
+   "n": 4,
+   "type": "KF",
+   "case": "Describe a relationship between blood gastrin level and the development of pernicious anemia.",
+   "items": [
+    {
+     "id": "4.1",
+     "prompt": "Explain the relationship.",
+     "format": "short",
+     "keywords_all": [
+      "intrinsic",
+      "b12",
+      "gastrin"
+     ],
+     "key_text": "Pernicious anemia results from lack of vitamin B₁₂, which is absorbed at the terminal ileum with intrinsic factor (IF) made by parietal cells (essential to protect B₁₂ from degradation in the GI tract and to help absorption). Gastrin stimulates parietal cell function; if plasma gastrin falls, IF falls, and plasma vitamin B₁₂ falls accordingly",
+     "source_key": "Pernicious anemia เกิดจากการขาด vitamin B₁₂ ซึ่งถูก absorb ที่ terminal ileum โดยมี IF ที่สร้างจาก parietal cell เป็นปัจจัยสำคัญป้องกันไม่ให้ B₁₂ ถูกทำลายใน GI tract และช่วยการ absorption · gastrin เป็น hormone ที่กระตุ้นการทำงานของ parietal cell หากมี plasma gastrin ลดลง IF มีปริมาณลดลง ทำให้ plasma vitamin B₁₂ ลดลงตามลำดับ",
+     "explanation": "gastrin ↓ → parietal cell ทำงานลด → IF ↓ → ดูด B₁₂ ลด → pernicious anemia",
+     "audit_note": "ในโรคจริง (autoimmune gastritis) parietal cell ถูกทำลายจึงไม่มีกรดและ IF ทำให้ gastrin สูงขึ้น ไม่ใช่ต่ำลง · เฉลยต้นฉบับอธิบายในทิศทาง gastrin ต่ำ → IF ต่ำ"
+    }
+   ],
+   "answer_status": "disputed",
+   "refs": [
+    {
+     "paper": "KF44",
+     "pages": [
+      1
+     ]
+    },
+    {
+     "paper": "KF44-KEY",
+     "pages": [
+      1
+     ]
+    }
+   ],
+   "tags": [
+    "pernicious anemia",
+    "gastrin"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "IF จาก parietal cell ต้องมีเพื่อดูด B₁₂ ที่ ileum · gastrin กระตุ้น parietal cell",
+   "audit_note": "เฉลยต้นฉบับอธิบายว่า gastrin ลด → IF ลด → B₁₂ ลด · ในโรค pernicious anemia จริง gastrin สูง (ดูโน้ตข้อ 8 และ 16) ผู้ตรวจควรดู"
+  },
+  {
+   "id": "GI-44-KF-005",
+   "block": "GI",
+   "cohort": 44,
+   "n": 5,
+   "type": "KF",
+   "case": "How can a sodium-potassium ATPase inhibitor be used to alleviate symptoms of secretory diarrhea?",
+   "items": [
+    {
+     "id": "5.1",
+     "prompt": "Explain.",
+     "format": "short",
+     "keywords_all": [
+      "na",
+      "nkcc",
+      "cftr"
+     ],
+     "key_text": "Normally Na⁺/K⁺ ATPase pumps 3 Na⁺ out in exchange for 2 K⁺ in. If the transporter is inhibited, Na⁺ is not absorbed into the blood stream so intracellular Na⁺ rises → Cl⁻ cannot enter via NKCC → less Cl⁻ is secreted via CFTR → less water follows → secretory diarrhea decreases",
+     "source_key": "ปกติ Na⁺/K⁺ ATPase ดูดกลับ 3Na⁺ แลกกับ 2K⁺ หาก inhibit transporter นี้ Na⁺ ไม่ถูก absorb เข้า blood stream ทำให้ intracellular Na⁺ เพิ่มมากขึ้น → Cl⁻ จะไม่เข้าทาง NKCC ปริมาณ Cl⁻ ที่ออกทาง CFTR ลดลง ลดการตามไปของน้ำ → ลด secretory diarrhea",
+     "explanation": "ตามเฉลยต้นฉบับ: ยับยั้ง basolateral Na⁺/K⁺ ATPase → ลด Na⁺ gradient → NKCC พา Cl⁻ เข้าไม่ได้ → CFTR หลั่งน้อยลง",
+     "key_image": "img/GI-44-KF-005-key.jpg",
+     "key_image_caption": "รูปในเฉลย: กลไกของ cholera toxin / heat-stable toxin (cAMP, cGMP → CFTR) และ NKCC, Na⁺/K⁺ ATPase ที่ basolateral membrane"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF44",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "KF44-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [
+    "secretory diarrhea"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "Na⁺/K⁺ ATPase ถูกยับยั้ง → NKCC พา Cl⁻ เข้าไม่ได้ → CFTR หลั่ง Cl⁻ ลด",
+   "audit_note": "กลไกที่เฉลยเสนอเป็นตรรกะเชิงทฤษฎี ในทางปฏิบัติ Na⁺/K⁺ ATPase inhibitor (เช่น digoxin) ไม่ใช่ยารักษาท้องเสีย"
+  },
+  {
+   "id": "GI-44-KF-006",
+   "block": "GI",
+   "cohort": 44,
+   "n": 6,
+   "type": "KF",
+   "case": "Draw a diagram describing the action potential of the MMC in 3 different phases.",
+   "items": [
+    {
+     "id": "6.1",
+     "prompt": "Phase 1",
+     "format": "short",
+     "keywords_all": [
+      "slow wave"
+     ],
+     "key_text": "Only slow waves, no spike potential",
+     "source_key": "มีเพียง slow wave · no spike potential",
+     "explanation": "phase 1 = motor silence",
+     "key_image": "img/GI-44-KF-006-key.jpg",
+     "key_image_caption": "สไลด์ในเฉลย: MMC Phase 1–3 (วงแดงที่ phase 2 = spike ที่เกิดขึ้นบางครั้ง)"
+    },
+    {
+     "id": "6.2",
+     "prompt": "Phase 2",
+     "format": "short",
+     "keywords_all": [
+      "spike"
+     ],
+     "key_text": "Spike potentials occur sometimes",
+     "source_key": "มี spike potential เกิดขึ้นบ้างแล้ว",
+     "explanation": "phase 2 = หดตัวไม่สม่ำเสมอ"
+    },
+    {
+     "id": "6.3",
+     "prompt": "Phase 3",
+     "format": "short",
+     "keywords_all": [
+      "every",
+      "all"
+     ],
+     "key_text": "Contraction most frequent and strongest: every slow wave has a spike potential",
+     "source_key": "Contract ถี่ + แรงสุด ทุก slow wave มี spike potential",
+     "explanation": "phase 3 = หดตัวสม่ำเสมอแรง (กวาด)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF44",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "KF44-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [
+    "MMC"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "MMC: phase 1 เงียบ · 2 บางครั้ง · 3 ทุก slow wave มี spike"
+  },
+  {
+   "id": "GI-44-KF-007",
+   "block": "GI",
+   "cohort": 44,
+   "n": 7,
+   "type": "KF",
+   "case": "A boy feels the urge to defecate after eating a big dinner with his friends at a party.",
+   "items": [
+    {
+     "id": "7.1",
+     "prompt": "Name only one reflex that can cause his symptoms.",
+     "format": "short",
+     "accepted": [
+      "gastrocolic reflex",
+      "duodenocolic reflex",
+      "gastrocolic",
+      "duodenocolic",
+      "gastrocolic reflex or duodenocolic reflex"
+     ],
+     "key_text": "Gastrocolic reflex or duodenocolic reflex",
+     "source_key": "Gastrocolic reflex or duodenocolic reflex",
+     "explanation": "อาหารเข้ากระเพาะ/duodenum → colon เกิด mass movement",
+     "key_image": "img/GI-44-KF-007-key.jpg",
+     "key_image_caption": "รูปในเฉลย: Gastrocolic/duodenocolic reflex กระตุ้น mass movement ของ colon"
+    },
+    {
+     "id": "7.2",
+     "prompt": "Tell the mechanism of the symptoms.",
+     "format": "short",
+     "keywords_all": [
+      "mass movement",
+      "rectum",
+      "sacr"
+     ],
+     "key_text": "Chyme in the stomach or duodenum stimulates mass movement of the colon; when the mass reaches the rectum → stretch receptors send a signal to the spinal cord (defecation center at the sacral region) → spinal reflex → rectal contraction and internal anal sphincter relaxation",
+     "source_key": "การมี chyme ใน stomach หรือ duodenum สามารถกระตุ้นให้เกิด mass movement ของ colon เมื่อมี mass ที่ move ไปถึงบริเวณ rectum → stretch receptor ส่ง signal ไป spinal cord ที่ defecation center บริเวณ sacrum → spinal reflex ทำให้มี contraction ของ rectum และ internal anal sphincter relaxation",
+     "explanation": "defecation reflex",
+     "key_image": "img/GI-44-KF-007b-key.jpg",
+     "key_image_caption": "รูปในเฉลย: วงจร defecation reflex (rectum → sacral cord → ขับถ่าย)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF44",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "KF44-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [
+    "defecation reflex",
+    "gastrocolic reflex"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "gastrocolic/duodenocolic → mass movement → rectum ยืด → sacral spinal reflex"
+  },
+  {
+   "id": "GI-44-KF-008",
+   "block": "GI",
+   "cohort": 44,
+   "n": 8,
+   "type": "KF",
+   "case": "A 10-year-old boy comes to a hospital complaining of frequent diarrhea; sometimes his stool floats in the toilet and has an oily appearance. His serum gastrin level is also elevated above the normal value.",
+   "items": [
+    {
+     "id": "8.1",
+     "prompt": "What are the causes of his diarrhea?",
+     "format": "short",
+     "keywords_all": [
+      "malabsorption",
+      "osmotic"
+     ],
+     "key_text": "Malabsorption of food because of shorter (blunted) villi → decreased absorption → osmotic diarrhea",
+     "source_key": "Malabsorption of food เนื่องจาก villi สั้น → decrease absorption → osmotic diarrhea",
+     "explanation": "ผู้เฉลยกำกับ 'Malabsorptive diarrhea'",
+     "accepted": [
+      "malabsorption",
+      "osmotic diarrhea",
+      "malabsorptive diarrhea"
+     ]
+    },
+    {
+     "id": "8.2",
+     "prompt": "What are the causes of his steatorrhea?",
+     "format": "short",
+     "keywords_all": [
+      "fat"
+     ],
+     "key_text": "Malabsorption of fat → fatty stool",
+     "source_key": "Malabsorption of fat → fatty stool",
+     "explanation": "ไขมันไม่ถูกดูดซึม ออกมาในอุจจาระ ลอยน้ำ มันวาว",
+     "accepted": [
+      "fat malabsorption",
+      "malabsorption of fat"
+     ]
+    },
+    {
+     "id": "8.3",
+     "prompt": "What would the symptoms be like if the patient underwent total gastrectomy?",
+     "format": "short",
+     "keywords_all": [
+      "mechanical",
+      "digestion"
+     ],
+     "key_text": "Mechanical digestion would be decreased (the key adds a question mark)",
+     "source_key": "Mechanical digestion ลดลง ?",
+     "explanation": "ไม่มีกระเพาะ: ไม่มีการบดย่อยเชิงกล ไม่มีกรด ขาด intrinsic factor → ขาด B₁₂ และ steatorrhea/dumping ได้",
+     "accepted": [
+      "decreased mechanical digestion",
+      "less mechanical digestion"
+     ],
+     "audit_note": "ผู้เฉลยใส่ '?' และเขียนว่า 'celiac disease? or cystic fibrosis!' และ '↓ absorption of B₁₂ → pernicious anemia → ↑ gastrin' ท้ายข้อ แสดงว่าไม่แน่ใจ"
+    }
+   ],
+   "answer_status": "disputed",
+   "refs": [
+    {
+     "paper": "KF44",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "KF44-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [
+    "steatorrhea",
+    "malabsorption"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "villi สั้น → malabsorption → osmotic diarrhea + steatorrhea",
+   "audit_note": "ผู้เฉลยไม่แน่ใจโจทย์ (gastrin สูง + ขี้ลอยน้ำ: celiac? cystic fibrosis? pernicious anemia?) เก็บเฉพาะคำตอบที่เขียนชัด"
+  },
+  {
+   "id": "GI-44-KF-009",
+   "block": "GI",
+   "cohort": 44,
+   "n": 9,
+   "type": "KF",
+   "case": "A child has abnormal growth, diarrhea and edema of the extremities. His blood test shows a low level of plasma protein. After intravenous administration of cholecystokinin, protein can't be degraded at neutral pH in the duodenum except when trypsin is added.",
+   "items": [
+    {
+     "id": "9.1",
+     "prompt": "This child has had these symptoms from a congenital lack of which enzyme?",
+     "format": "short",
+     "accepted": [
+      "enterokinase",
+      "enteropeptidase"
+     ],
+     "key_text": "Enterokinase",
+     "source_key": "Enterokinase",
+     "explanation": "enterokinase (enteropeptidase) ตัด trypsinogen → trypsin"
+    },
+    {
+     "id": "9.2",
+     "prompt": "Explain why deficiency of this enzyme causes the symptoms described above.",
+     "format": "short",
+     "keywords_all": [
+      "enteropeptidase",
+      "trypsin",
+      "activate"
+     ],
+     "key_text": "CCK stimulates pancreatic enzyme secretion, but every enzyme must be activated: enteropeptidase from epithelial cells activates trypsinogen to trypsin, then trypsin activates the other enzymes",
+     "source_key": "CCK กระตุ้นตับอ่อนหลั่ง pancreatic enzyme แต่ทุก enzyme ต้องถูก activate โดย enteropeptidase จาก epithelial cell และ trypsin จากนั้น trypsin เองจะ activate enzyme ชนิดอื่นด้วยเช่นกัน (ผู้เฉลยหมายเหตุ: คิดใหม่อีกที!!)",
+     "explanation": "ขาด enterokinase → ไม่มี trypsin → ย่อยโปรตีนไม่ได้ → ขาดโปรตีน → บวม โตช้า ท้องเสีย",
+     "key_image": "img/GI-44-KF-009-key.jpg",
+     "key_image_caption": "รูปในเฉลย: Trypsinogen → trypsin (enteropeptidase/enterokinase) → activate chymotrypsin, elastase, carboxypeptidase"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF44",
+     "pages": [
+      3
+     ]
+    },
+    {
+     "paper": "KF44-KEY",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [
+    "enterokinase",
+    "pancreatic enzymes"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "ขาด enterokinase → trypsinogen ไม่เป็น trypsin → ย่อยโปรตีนไม่ได้"
+  },
+  {
+   "id": "GI-44-KF-010",
+   "block": "GI",
+   "cohort": 44,
+   "n": 10,
+   "type": "KF",
+   "case": "Explain the reason why patients with a congenital absence of one of the amino acid transporters do not become deficient in that amino acid.",
+   "items": [
+    {
+     "id": "10.1",
+     "prompt": "Explain.",
+     "format": "short",
+     "keywords_all": [
+      "pept1",
+      "peptide"
+     ],
+     "key_text": "Because of another transporter, PepT1 (an H⁺/oligopeptide cotransporter), which absorbs oligopeptides such as dipeptides and tripeptides into the enterocyte; tripeptidase and dipeptidase then break them down into amino acids that are absorbed into the blood stream. Example: Hartnup disease lacks system B (neutral amino acid absorption)",
+     "source_key": "เนื่องจากมี transporter ชนิด PepT1 ซึ่งเป็น H⁺/oligopeptide cotransporter ที่สามารถ absorb oligopeptide เช่น dipeptide, tripeptide เข้าสู่ enterocyte ได้ จากนั้นจะถูก tripeptidase และ dipeptidase ย่อยเป็น amino acid และถูก absorb เข้า blood stream ต่อไป · ตัวอย่างโรค เช่น Hartnup disease ขาด system B (ใช้ absorb neutral amino acid)",
+     "explanation": "peptide transport ผ่าน PepT1 ไม่ขึ้นกับ transporter กรดอะมิโนอิสระ",
+     "accepted": [
+      "pept1 absorbs di and tripeptides",
+      "absorbed as dipeptides and tripeptides via pept1"
+     ]
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF44",
+     "pages": [
+      3
+     ]
+    },
+    {
+     "paper": "KF44-KEY",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [
+    "PepT1",
+    "Hartnup"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "PepT1 ดูด di/tripeptide → แตกเป็นกรดอะมิโนในเซลล์"
+  },
+  {
+   "id": "GI-44-KF-011",
+   "block": "GI",
+   "cohort": 44,
+   "n": 11,
+   "type": "KF",
+   "case": "Explain why we don't usually find small- and medium-chain fatty acids in the form of chylomicrons.",
+   "items": [
+    {
+     "id": "11.1",
+     "prompt": "Explain.",
+     "format": "short",
+     "keywords_all": [
+      "diffuse",
+      "portal"
+     ],
+     "key_text": "Because they are small, they can diffuse across the basolateral membrane of the enterocyte into the blood capillary and enter the portal vein",
+     "source_key": "เนื่องจากตัวเล็ก เมื่อเข้าสู่ enterocyte สามารถ diffuse ผ่าน membrane ด้าน basolateral และเข้าสู่ blood capillary ได้ โดยเข้า portal vein",
+     "explanation": "LCFA ต้องรวมเป็น chylomicron เข้า lacteal ส่วน SCFA/MCFA เข้าเส้นเลือดตรง",
+     "key_image": "img/GI-44-KF-011-key.jpg",
+     "key_image_caption": "รูปในเฉลย: การดูดซึมไขมัน (simple diffusion, chylomicron, lacteal vs capillary)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF44",
+     "pages": [
+      3
+     ]
+    },
+    {
+     "paper": "KF44-KEY",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [
+    "fat absorption"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "SCFA/MCFA: diffuse เข้า capillary → portal vein · LCFA: chylomicron → lymph"
+  },
+  {
+   "id": "GI-44-KF-012",
+   "block": "GI",
+   "cohort": 44,
+   "n": 12,
+   "type": "KF",
+   "case": "A neonate aged 12 hours develops vomiting and gasping when fed breast milk. One week later he develops fever, coughing and dyspnea. Give a proper diagnosis for the patient's fever and dyspnea.",
+   "items": [
+    {
+     "id": "12.1",
+     "prompt": "Give a proper diagnosis for the fever and dyspnea. (2 answers)",
+     "format": "short",
+     "keywords_all": [
+      "aspiration",
+      "sepsis"
+     ],
+     "key_text": "1. Aspiration pneumonia → dyspnea, fever 2. Sepsis → fever (probably a complication of congenital esophageal obstruction, e.g., TE fistula)",
+     "source_key": "1. Aspiration pneumonia → dyspnea, fever 2. Sepsis → fever (probably a complication of congenital esophageal obstruction, e.g., TE fistula)",
+     "explanation": "อาเจียน/สำลักตั้งแต่ 12 ชม. = หลอดอาหารอุดตัน/TE fistula → สำลักนม → aspiration pneumonia",
+     "accepted": [
+      "aspiration pneumonia",
+      "aspiration pneumonia and sepsis"
+     ],
+     "key_image": "img/GI-44-KF-012-key.jpg",
+     "key_image_caption": "สไลด์ในเฉลย: Esophageal atresia & tracheoesophageal fistula (regurgitation → suffocation → pneumonia)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF44",
+     "pages": [
+      3
+     ]
+    },
+    {
+     "paper": "KF44-KEY",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [
+    "esophageal atresia",
+    "TE fistula"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "สำลักนมตั้งแต่แรก → TE fistula/atresia → aspiration pneumonia"
+  },
+  {
+   "id": "GI-44-KF-013",
+   "block": "GI",
+   "cohort": 44,
+   "n": 13,
+   "type": "KF",
+   "case": "A 45-year-old male comes to a clinic complaining of extreme dysphagia. It occurred several years ago and slowly gets worse; now he can barely swallow his own saliva. Esophageal examination reveals an ulcerative nodule 3.2 × 2.2 cm at the middle part.",
+   "items": [
+    {
+     "id": "13.1",
+     "prompt": "Give the proper diagnosis for this patient's symptoms.",
+     "format": "short",
+     "accepted": [
+      "squamous cell carcinoma of esophagus",
+      "squamous cell carcinoma",
+      "esophageal squamous cell carcinoma",
+      "scc"
+     ],
+     "key_text": "Squamous cell carcinoma of esophagus",
+     "source_key": "Squamous cell carcinoma of esophagus",
+     "explanation": "ส่วนกลางของหลอดอาหาร = SCC · (ถ้าส่วนล่าง → adenocarcinoma จาก Barrett: intestinal metaplasia)",
+     "key_image": "img/GI-44-KF-013-key.jpg",
+     "key_image_caption": "สไลด์ในเฉลย: Squamous cell carcinoma (p53, cyclin D1, SOX2; risk factors)"
+    },
+    {
+     "id": "13.2",
+     "prompt": "What is the precancerous lesion for the mass described above?",
+     "format": "short",
+     "keywords_all": [
+      "web",
+      "dysplasia"
+     ],
+     "key_text": "Esophageal web (written with a question mark in the original key)",
+     "source_key": "Esophageal web (written with a question mark in the original key)",
+     "explanation": "เฉลยต้นฉบับเขียน esophageal web? · ตามตำราสิ่งที่นำสู่ SCC หลอดอาหาร: squamous dysplasia (และ achalasia, Plummer-Vinson ที่มี web)",
+     "accepted": [
+      "esophageal web",
+      "squamous dysplasia",
+      "dysplasia"
+     ],
+     "audit_note": "ผู้เฉลยใส่ '?' ไม่แน่ใจ ตำราตอบ dysplasia ของ squamous epithelium"
+    }
+   ],
+   "answer_status": "disputed",
+   "refs": [
+    {
+     "paper": "KF44",
+     "pages": [
+      4
+     ]
+    },
+    {
+     "paper": "KF44-KEY",
+     "pages": [
+      4
+     ]
+    }
+   ],
+   "tags": [
+    "esophageal cancer"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "SCC หลอดอาหารกลาง · สิ่งนำ: squamous dysplasia",
+   "audit_note": "ข้อ 13.2 ผู้เฉลยไม่แน่ใจ (เขียน 'Esophageal web ?')"
+  },
+  {
+   "id": "GI-44-KF-014",
+   "block": "GI",
+   "cohort": 44,
+   "n": 14,
+   "type": "KF",
+   "case": "A case about esophageal hyperplasia (recalled by the exam compilers) followed by questions.",
+   "items": [
+    {
+     "id": "14.1",
+     "prompt": "'Dysplasia can indicate carcinoma formation better than the lesion's size.' Do you agree with this statement? What is your reason?",
+     "format": "short",
+     "keywords_all": [
+      "dysplasia",
+      "cell cycle"
+     ],
+     "key_text": "Agree: a large lesion may be only hyperplasia of normal cells in response to chronic irritation and may regress when the risk factor is removed, whereas dysplasia, even in a small lesion, indicates an abnormal cell cycle (abnormal proliferation and differentiation) and predicts carcinoma",
+     "source_key": "เห็นด้วย เนื่องจาก size of lesion ที่ใหญ่ แต่เป็นเพียง normal cell ที่ตอบสนองต่อปัจจัยเสี่ยง ได้รับการรักษาที่เหมาะสมก็อาจไม่มีการพัฒนาไปเป็น CA แต่ dysplasia แม้เกิดในขนาดเล็ก ก็เป็นสัญญาณเตือนถึง cell cycle ที่ผิดปกติ มี proliferation + differentiation ผิดปกติ บ่งบอกถึง CA ได้ดีกว่า",
+     "explanation": "dysplasia = ความผิดปกติของการเติบโต/การเปลี่ยนแปลงของเซลล์ เป็นตัวทำนายมะเร็งที่ดีกว่าขนาดรอยโรค"
+    },
+    {
+     "id": "14.2",
+     "prompt": "What are the risk factors for developing esophageal hyperplasia?",
+     "format": "short",
+     "keywords_all": [
+      "gerd",
+      "smok",
+      "alcohol"
+     ],
+     "key_text": "Chronic esophagitis, GERD, smoking, alcohol consumption, eating hot food",
+     "source_key": "Chronic esophagitis · GERD · Smoking · Alcohol consumption · การกินของร้อน",
+     "explanation": "การระคายเคืองเรื้อรังของเยื่อบุ",
+     "accepted": [
+      "chronic esophagitis, gerd, smoking, alcohol, hot food"
+     ]
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF44",
+     "pages": [
+      4
+     ]
+    },
+    {
+     "paper": "KF44-KEY",
+     "pages": [
+      4
+     ]
+    }
+   ],
+   "tags": [
+    "esophageal hyperplasia",
+    "dysplasia"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "dysplasia ทำนายมะเร็งได้ดีกว่าขนาดรอยโรค",
+   "audit_note": "โจทย์ข้อ 14 เป็นโน้ตความจำ ('เล่าเรื่องเคสอะไรซักอย่างเกี่ยวกับ esophageal hyperplasia แล้วถามว่า') AI เรียบเรียงโจทย์ใหม่จากคำตอบที่เฉลยเขียนไว้"
+  },
+  {
+   "id": "GI-44-KF-015",
+   "block": "GI",
+   "cohort": 44,
+   "n": 15,
+   "type": "KF",
+   "case": "A 43-year-old male comes to a hospital with a massive hematemesis. He denies any underlying disease but consumes some alcohol and smokes a bit. He also has a history of HBV infection 20 years ago.",
+   "items": [
+    {
+     "id": "15.1",
+     "prompt": "What is a direct cause of the patient developing hematemesis?",
+     "format": "short",
+     "accepted": [
+      "esophageal varices",
+      "esophageal varix",
+      "variceal bleeding",
+      "esophageal varice"
+     ],
+     "key_text": "Esophageal varices → variceal bleeding",
+     "source_key": "Esophageal varices → variceal bleeding",
+     "explanation": "หลอดเลือดขอดที่หลอดอาหารแตก"
+    },
+    {
+     "id": "15.2",
+     "prompt": "What is the underlying mechanism of the symptoms?",
+     "format": "short",
+     "keywords_all": [
+      "cirrhosis",
+      "portal"
+     ],
+     "key_text": "Alcohol consumption with chronic hepatitis B causes cirrhosis → blockage of portal circulation → portal hypertension → blood flows via collateral branches → esophageal veins → esophageal varices; under high pressure or force → variceal bleeding",
+     "source_key": "Alcohol consumption with chronic hepatitis B causes cirrhosis → blockage of portal circulation → portal hypertension → blood flows via collateral branches → esophageal veins → esophageal varices; under high pressure or force → variceal bleeding",
+     "explanation": "portal HT → portosystemic shunt (left gastric ↔ esophageal vein) → varices แตก"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF44",
+     "pages": [
+      4
+     ]
+    },
+    {
+     "paper": "KF44-KEY",
+     "pages": [
+      4
+     ]
+    }
+   ],
+   "tags": [
+    "esophageal varices",
+    "portal hypertension"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "HBV + alcohol → cirrhosis → portal HT → esophageal varices แตก"
+  },
+  {
+   "id": "GI-44-KF-016",
+   "block": "GI",
+   "cohort": 44,
+   "n": 16,
+   "type": "KF",
+   "case": "Describe the commonness and differences between H. pylori infection gastritis and autoimmune gastritis in terms of the lesion's location and sequelae.",
+   "items": [
+    {
+     "id": "16.1a",
+     "prompt": "H. pylori — site of lesion",
+     "format": "short",
+     "accepted": [
+      "antrum"
+     ],
+     "key_text": "Antrum",
+     "source_key": "Antrum",
+     "explanation": "H. pylori อยู่ antrum",
+     "key_image": "img/GI-44-KF-016-key.jpg",
+     "key_image_caption": "สไลด์ในเฉลย: Characteristics of H. pylori and autoimmune gastritis"
+    },
+    {
+     "id": "16.1b",
+     "prompt": "Autoimmune — site of lesion",
+     "format": "short",
+     "accepted": [
+      "body",
+      "body of stomach"
+     ],
+     "key_text": "Body",
+     "source_key": "Body",
+     "explanation": "parietal cell อยู่ body/fundus"
+    },
+    {
+     "id": "16.2a",
+     "prompt": "H. pylori — serum gastrin level",
+     "format": "short",
+     "keywords_all": [
+      "normal",
+      "decrease"
+     ],
+     "key_text": "Normal to decreased",
+     "source_key": "Normal to decreased",
+     "explanation": "G cell ที่ antrum อาจถูกทำลาย",
+     "accepted": [
+      "normal to decreased"
+     ]
+    },
+    {
+     "id": "16.2b",
+     "prompt": "Autoimmune — serum gastrin level",
+     "format": "short",
+     "accepted": [
+      "increased",
+      "increase"
+     ],
+     "key_text": "Increased (from endocrine cell hyperplasia — written note)",
+     "source_key": "Increased เพราะ endocrine cell (metaplasia)",
+     "explanation": "ไม่มีกรดมายับยั้ง → G cell หลั่ง gastrin มาก"
+    },
+    {
+     "id": "16.3a",
+     "prompt": "H. pylori — sequelae",
+     "format": "short",
+     "keywords_all": [
+      "ulcer",
+      "adenocarcinoma"
+     ],
+     "key_text": "PU (peptic ulcer), adenocarcinoma",
+     "source_key": "PU (peptic ulcer), adenocarcinoma",
+     "explanation": "อื่นๆ MALT lymphoma",
+     "accepted": [
+      "pu, adenocarcinoma",
+      "peptic ulcer and adenocarcinoma"
+     ]
+    },
+    {
+     "id": "16.3b",
+     "prompt": "Autoimmune — sequelae",
+     "format": "short",
+     "keywords_all": [
+      "pernicious",
+      "carcinoma"
+     ],
+     "key_text": "Carcinoma, pernicious anemia",
+     "source_key": "Carcinoma, pernicious anemia",
+     "explanation": "ขาด intrinsic factor",
+     "accepted": [
+      "carcinoma, pernicious anemia",
+      "pernicious anemia and carcinoma"
+     ]
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF44",
+     "pages": [
+      5
+     ]
+    },
+    {
+     "paper": "KF44-KEY",
+     "pages": [
+      5
+     ]
+    }
+   ],
+   "tags": [
+    "gastritis",
+    "H. pylori"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "H. pylori: antrum, gastrin ปกติ/ต่ำ · autoimmune: body, gastrin สูง"
+  },
+  {
+   "id": "GI-44-KF-017",
+   "block": "GI",
+   "cohort": 44,
+   "n": 17,
+   "type": "KF",
+   "case": "A 55-year-old man presents with jaundice and the doctor orders a liver function test. The test shows highly elevated ALP with slightly elevated AST and ALT. He also has elevated total bilirubin and direct bilirubin with albumin 4.8 g/dL and total protein 7.2 g/dL.",
+   "items": [
+    {
+     "id": "17.1",
+     "prompt": "What type of jaundice is the most compatible with the symptoms described above?",
+     "format": "short",
+     "accepted": [
+      "cholestatic jaundice",
+      "cholestasis",
+      "cholestatic",
+      "obstructive jaundice"
+     ],
+     "key_text": "Cholestatic jaundice",
+     "source_key": "Cholestatic jaundice",
+     "explanation": "ALP สูงมาก AST/ALT สูงเล็กน้อย direct bilirubin สูง"
+    },
+    {
+     "id": "17.2",
+     "prompt": "What should we find in the patient's urine analysis of bilirubin and urobilinogen?",
+     "format": "short",
+     "keywords_all": [
+      "positive",
+      "decreas"
+     ],
+     "key_text": "Urine bilirubin: positive; urine urobilinogen: decreased",
+     "source_key": "Urine bilirubin: positive; urine urobilinogen: decreased",
+     "explanation": "conjugated bilirubin ออกปัสสาวะ · ไม่ถึงลำไส้ → urobilinogen ลด"
+    },
+    {
+     "id": "17.3",
+     "prompt": "What can be indicated with a highly elevated ALP?",
+     "format": "short",
+     "accepted": [
+      "cholestasis"
+     ],
+     "key_text": "Cholestasis",
+     "source_key": "Cholestasis",
+     "explanation": "ALP สูงมาก = ทางเดินน้ำดีอุดกั้น/cholestasis"
+    },
+    {
+     "id": "17.4",
+     "prompt": "Name 2 tests that can specifically notify the source of elevated ALP.",
+     "format": "short",
+     "keywords_all": [
+      "ggt",
+      "isoenzyme"
+     ],
+     "key_text": "Plasma GGT; ALP isoenzyme testing (electrophoresis, heat)",
+     "source_key": "Plasma GGT; ALP isoenzyme testing (electrophoresis, heat)",
+     "explanation": "GGT สูงถ้า ALP มาจากตับ/ท่อน้ำดี (ปกติถ้ามาจากกระดูก) · แยก isoenzyme ด้วย electrophoresis หรือ heat stability",
+     "accepted": [
+      "ggt and alp isoenzyme",
+      "plasma ggt, alp isoenzyme testing"
+     ]
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF44",
+     "pages": [
+      5
+     ]
+    },
+    {
+     "paper": "KF44-KEY",
+     "pages": [
+      5
+     ]
+    }
+   ],
+   "tags": [
+    "cholestasis",
+    "ALP"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "ALP สูงมาก = cholestasis · GGT/isoenzyme แยกแหล่ง ALP"
+  },
+  {
+   "id": "GI-44-KF-018",
+   "block": "GI",
+   "cohort": 44,
+   "n": 18,
+   "type": "KF",
+   "case": "A man comes to hospital with jaundice. His liver function test: AST = 755, ALT = 852, albumin 3.9 g/dL, total protein 7.3 g/dL, ALP = 133.",
+   "items": [
+    {
+     "id": "18.1",
+     "prompt": "Give the most proper diagnosis for this patient's condition.",
+     "format": "short",
+     "accepted": [
+      "hepatocellular damage",
+      "hepatocellular injury",
+      "hepatocellular jaundice",
+      "hepatitis"
+     ],
+     "key_text": "Hepatocellular damage",
+     "source_key": "Hepatocellular damage",
+     "explanation": "AST/ALT < 1, ALT สูงมาก ALP < 2×ULN → hepatocellular pattern",
+     "key_image": "img/GI-44-KF-018-key.jpg",
+     "key_image_caption": "ไดอะแกรมในเฉลย: ALT > 3×ULN และ ALP < 2×ULN → suspected hepatocellular damage"
+    },
+    {
+     "id": "18.2",
+     "prompt": "Six months later: AST = 85, ALT = 83, albumin 3.5 g/dL, total protein 6.8 g/dL, ALP = 115. Give the most proper diagnosis.",
+     "format": "short",
+     "keywords_all": [
+      "viral hepatitis"
+     ],
+     "key_text": "Viral hepatitis (if it were toxic/drug-induced it should have recovered once stopped, but this case still has a mild increase)",
+     "source_key": "Viral hepatitis (ถ้าเกิดจาก toxic, drug น่าจะ recover ได้แล้วถ้า off ยา แต่ case นี้ยังมี mild increase)",
+     "explanation": "ค่าตับสูงเรื้อรัง > 6 เดือน = chronic hepatitis (ไวรัส)",
+     "accepted": [
+      "chronic viral hepatitis",
+      "chronic hepatitis"
+     ]
+    },
+    {
+     "id": "18.3",
+     "prompt": "What can the disease progress into?",
+     "format": "short",
+     "keywords_all": [
+      "cirrhosis",
+      "carcinoma"
+     ],
+     "key_text": "Cirrhosis, hepatocellular carcinoma",
+     "source_key": "Cirrhosis, hepatocellular carcinoma",
+     "explanation": "chronic hepatitis → cirrhosis → HCC",
+     "accepted": [
+      "cirrhosis, hepatocellular carcinoma",
+      "cirrhosis and hcc"
+     ]
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF44",
+     "pages": [
+      5
+     ]
+    },
+    {
+     "paper": "KF44-KEY",
+     "pages": [
+      5
+     ]
+    }
+   ],
+   "tags": [
+    "hepatitis",
+    "liver enzymes"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "ALT > AST สูงมาก ALP ปกติ → hepatocellular · เรื้อรัง → viral hepatitis → cirrhosis/HCC"
+  },
+  {
+   "id": "GI-44-KF-019",
+   "block": "GI",
+   "cohort": 44,
+   "n": 19,
+   "type": "KF",
+   "case": "A female patient aged 43 years comes to see a physician with recurrent diarrhea and constipation. Her physical examination shows numerous (more than 100) pedunculated polyps in her colon. Other vital signs are within the normal range.",
+   "items": [
+    {
+     "id": "19.1",
+     "prompt": "What past history should be asked in order to give a definitive diagnosis for this patient? (3 different answers)",
+     "format": "short",
+     "keywords_all": [
+      "family",
+      "ibd",
+      "red meat"
+     ],
+     "key_text": "1. Family history of colorectal cancer / familial adenomatous polyposis 2. Dietary behavior (red meat, processed meat) and alcohol 3. History of inflammatory bowel disease",
+     "source_key": "1. Family history of colorectal cancer, Familial adenomatous polyposis 2. พฤติกรรมการรับประทานอาหาร โดยเฉพาะ red meats, processed meats, alcohol 3. ประวัติ Inflammatory bowel disease",
+     "explanation": "ปัจจัยเสี่ยงมะเร็งลำไส้ใหญ่: พันธุกรรม (FAP) อาหาร IBD",
+     "accepted": [
+      "family history",
+      "family history of colorectal cancer",
+      "inflammatory bowel disease",
+      "red meat"
+     ]
+    },
+    {
+     "id": "19.2",
+     "prompt": "What is the most probable diagnosis?",
+     "format": "short",
+     "keywords_all": [
+      "adenocarcinoma",
+      "fap",
+      "polyposis"
+     ],
+     "key_text": "Colorectal adenocarcinoma (the author's note: FAP? — has stalk)",
+     "source_key": "Colorectal adenocarcinoma (ผู้เฉลยเขียน ?? และโน้ต 'FAP? มี stalk')",
+     "explanation": "polyp > 100 อันมีก้าน = นึก FAP → เสี่ยงมะเร็ง colorectal adenocarcinoma",
+     "accepted": [
+      "colorectal adenocarcinoma",
+      "familial adenomatous polyposis",
+      "fap"
+     ],
+     "audit_note": "ผู้เฉลยเขียนชื่อเรื่อง 'Colorectal Adenocarcinoma ??' และเขียน 'FAP? มี stalk' แสดงว่าไม่แน่ใจ (โจทย์น่าจะหมายถึง FAP)"
+    },
+    {
+     "id": "19.3",
+     "prompt": "What lab test should be done to confirm your diagnosis?",
+     "format": "short",
+     "accepted": [
+      "cea"
+     ],
+     "key_text": "CEA",
+     "source_key": "CEA",
+     "explanation": "CEA ใช้ติดตามมะเร็งลำไส้ใหญ่ (ไม่ใช่ตัวยืนยัน แต่เฉลยต้นฉบับตอบ CEA)",
+     "audit_note": "CEA ไม่ใช่การตรวจยืนยัน (ยืนยันด้วยการส่องกล้อง + biopsy) เฉลยตอบ CEA"
+    }
+   ],
+   "answer_status": "disputed",
+   "refs": [
+    {
+     "paper": "KF44",
+     "pages": [
+      6
+     ]
+    },
+    {
+     "paper": "KF44-KEY",
+     "pages": [
+      6
+     ]
+    }
+   ],
+   "tags": [
+    "colorectal cancer",
+    "FAP"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "polyp >100 → FAP → colorectal adenocarcinoma",
+   "audit_note": "ผู้เฉลยไม่แน่ใจข้อ 19.2 ('??') และ 19.3 ตอบ CEA (ตำราตอบ colonoscopy + biopsy)"
+  },
+  {
+   "id": "GI-44-KF-020",
+   "block": "GI",
+   "cohort": 44,
+   "n": 20,
+   "type": "KF",
+   "case": "Tell the main mechanism of action of these antiemetic drugs.",
+   "items": [
+    {
+     "id": "20.1",
+     "prompt": "Metoclopramide",
+     "format": "short",
+     "keywords_all": [
+      "d2"
+     ],
+     "key_text": "D₂ receptor antagonist",
+     "source_key": "D₂ receptor antagonist",
+     "explanation": "ต้าน D₂ ที่ CTZ",
+     "accepted": [
+      "d2 antagonist"
+     ]
+    },
+    {
+     "id": "20.2",
+     "prompt": "Ondansetron",
+     "format": "short",
+     "keywords_all": [
+      "5ht3",
+      "5-ht3"
+     ],
+     "key_text": "5-HT₃ receptor antagonist",
+     "source_key": "5-HT₃ receptor antagonist",
+     "explanation": "ต้าน 5-HT₃ ที่ vagal afferent และ CTZ",
+     "accepted": [
+      "5-ht3 antagonist",
+      "5ht3 antagonist"
+     ]
+    },
+    {
+     "id": "20.3",
+     "prompt": "Scopolamine",
+     "format": "short",
+     "keywords_all": [
+      "m1",
+      "muscarinic"
+     ],
+     "key_text": "M₁ receptor antagonist",
+     "source_key": "M₁ receptor antagonist",
+     "explanation": "antimuscarinic ป้องกัน motion sickness",
+     "accepted": [
+      "muscarinic antagonist",
+      "anticholinergic",
+      "m1 antagonist"
+     ]
+    },
+    {
+     "id": "20.4",
+     "prompt": "Diphenhydramine",
+     "format": "short",
+     "keywords_all": [
+      "h1"
+     ],
+     "key_text": "H₁ receptor antagonist",
+     "source_key": "H₁ receptor antagonist",
+     "explanation": "antihistamine รุ่นแรก",
+     "accepted": [
+      "h1 antagonist"
+     ]
+    },
+    {
+     "id": "20.5",
+     "prompt": "Vitamin B₆",
+     "format": "short",
+     "keywords_all": [
+      "gaba"
+     ],
+     "key_text": "Cofactor for GABA synthesis (inhibitory neurotransmitter)",
+     "source_key": "Cofactor for GABA synthesis (inhibitory neurotransmitter)",
+     "explanation": "PLP เป็น coenzyme ของ GAD",
+     "accepted": [
+      "cofactor in gaba synthesis"
+     ]
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF44",
+     "pages": [
+      6
+     ]
+    },
+    {
+     "paper": "KF44-KEY",
+     "pages": [
+      6
+     ]
+    }
+   ],
+   "tags": [
+    "antiemetics"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "metoclopramide D₂ · ondansetron 5-HT₃ · scopolamine M₁ · diphenhydramine H₁ · B₆ GABA"
+  },
+  {
+   "id": "GI-44-KF-021",
+   "block": "GI",
+   "cohort": 44,
+   "n": 21,
+   "type": "KF",
+   "case": "A patient comes to a clinic with severe watery diarrhea. The physician gives him ORS and loperamide. Several days after consultation his symptoms were relieved.",
+   "items": [
+    {
+     "id": "21.1a",
+     "prompt": "Component 1 of ORS and its mechanism of action",
+     "format": "short",
+     "keywords_all": [
+      "nacl",
+      "na",
+      "cl"
+     ],
+     "key_text": "NaCl: Na⁺, Cl⁻ replacement",
+     "source_key": "NaCl: Na⁺, Cl⁻ replacement",
+     "explanation": "ชดเชย Na⁺ Cl⁻ ที่เสียไป",
+     "accepted": [
+      "nacl na cl replacement",
+      "nacl"
+     ]
+    },
+    {
+     "id": "21.1b",
+     "prompt": "Component 2 of ORS and its mechanism of action",
+     "format": "short",
+     "keywords_all": [
+      "kcl",
+      "k"
+     ],
+     "key_text": "KCl: K⁺, Cl⁻ replacement",
+     "source_key": "KCl: K⁺, Cl⁻ replacement",
+     "explanation": "ชดเชย K⁺",
+     "accepted": [
+      "kcl",
+      "kcl k cl replacement"
+     ]
+    },
+    {
+     "id": "21.1c",
+     "prompt": "Component 3 of ORS and its mechanism of action",
+     "format": "short",
+     "keywords_all": [
+      "glucose",
+      "sglt1"
+     ],
+     "key_text": "Glucose: increases Na⁺ uptake via SGLT1",
+     "source_key": "Glucose: increases Na⁺ uptake via SGLT1",
+     "explanation": "Na⁺-glucose cotransport",
+     "accepted": [
+      "glucose sglt1",
+      "glucose increases sodium uptake via sglt1"
+     ]
+    },
+    {
+     "id": "21.1d",
+     "prompt": "Component 4 of ORS and its mechanism of action",
+     "format": "short",
+     "keywords_all": [
+      "nahco3",
+      "bicarbonate",
+      "acidosis"
+     ],
+     "key_text": "NaHCO₃: corrects metabolic acidosis",
+     "source_key": "NaHCO₃: corrects metabolic acidosis",
+     "explanation": "แก้ metabolic acidosis",
+     "accepted": [
+      "nahco3",
+      "sodium bicarbonate",
+      "bicarbonate"
+     ]
+    },
+    {
+     "id": "21.2",
+     "prompt": "Tell the mechanism of action of loperamide.",
+     "format": "short",
+     "keywords_all": [
+      "opioid"
+     ],
+     "key_text": "Opioid receptor agonist (μ-receptors on excitatory cholinergic neurons → inhibit ACh release, ↓ propulsion; δ-receptors on inhibitory neurons → inhibit NO/VIP release, ↓ secretion, ↑ segmentation; μ and δ on submucous plexus → ↑ absorption of salt and water)",
+     "source_key": "Opioid receptor agonist (μ-receptors on excitatory cholinergic neurons → inhibit ACh release, ↓ propulsion; δ-receptors on inhibitory neurons → inhibit NO/VIP release, ↓ secretion, ↑ segmentation; μ and δ on submucous plexus → ↑ absorption of salt and water)",
+     "explanation": "ผู้เฉลยแก้ 'antagonist' เป็น 'agonist'",
+     "accepted": [
+      "opioid agonist",
+      "mu opioid agonist",
+      "μ-opioid agonist",
+      "opioid receptor agonist"
+     ],
+     "key_image": "img/GI-44-KF-021-key.jpg",
+     "key_image_caption": "สไลด์ในเฉลย: กลไกของ opioid antidiarrheal (motility, secretion, absorption)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF44",
+     "pages": [
+      6
+     ]
+    },
+    {
+     "paper": "KF44-KEY",
+     "pages": [
+      6
+     ]
+    }
+   ],
+   "tags": [
+    "ORS",
+    "loperamide"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "ORS: NaCl, KCl, glucose, NaHCO₃ · loperamide: opioid agonist"
+  },
+  {
+   "id": "GI-44-KF-022",
+   "block": "GI",
+   "cohort": 44,
+   "n": 22,
+   "type": "KF",
+   "case": "A 6-year-old child comes to a hospital with his mother, who complains about his weight loss and failure to thrive. He weighs 17.5 kg and has frequent diarrhea with bloody flux. His stool examination reveals several parasitic eggs (the exam gave pictures of Trichuris and Capillaria eggs, which are not in the file).",
+   "items": [
+    {
+     "id": "22.1",
+     "prompt": "What are the scientific names of these parasites?",
+     "format": "short",
+     "keywords_all": [
+      "trichuris",
+      "capillaria"
+     ],
+     "key_text": "Trichuris trichiura; Capillaria philippinensis",
+     "source_key": "Trichuris trichiura; Capillaria philippinensis",
+     "explanation": "ไข่ Trichuris: รูปถังมี plug 2 ข้าง · ไข่ Capillaria: รูปถังเล็กกว่า ผนังมีลาย",
+     "accepted": [
+      "trichuris trichiura and capillaria philippinensis"
+     ]
+    },
+    {
+     "id": "22.2",
+     "prompt": "Give 2 different drugs from different drug groups that can be used to treat these infections.",
+     "format": "short",
+     "keywords_all": [
+      "mebendazole",
+      "ivermectin"
+     ],
+     "key_text": "Trichuriasis: mebendazole, ivermectin · Capillariasis: mebendazole",
+     "source_key": "Trichuriasis: mebendazole, ivermectin · Capillariasis: mebendazole",
+     "explanation": "benzimidazole (mebendazole/albendazole) เป็นยาหลัก ivermectin เป็นอีกกลุ่ม",
+     "accepted": [
+      "mebendazole and ivermectin"
+     ]
+    },
+    {
+     "id": "22.3",
+     "prompt": "Tell the mechanism of action of 1 drug in 22.2.",
+     "format": "short",
+     "keywords_all": [
+      "tubulin"
+     ],
+     "key_text": "Mebendazole: inhibits polymerization of β-tubulin → interferes with cellular organelles",
+     "source_key": "Mebendazole: inhibits polymerization of β-tubulin → interferes with cellular organelles",
+     "explanation": "จับ β-tubulin ของพยาธิ ยับยั้ง microtubule",
+     "accepted": [
+      "inhibit polymerization of beta-tubulin",
+      "inhibits tubulin polymerization"
+     ]
+    },
+    {
+     "id": "22.4",
+     "prompt": "Tell the adverse drug effect of the drug from 22.3. (the key wrote the mechanism of ivermectin)",
+     "format": "short",
+     "keywords_all": [
+      "glutamate",
+      "paralysis"
+     ],
+     "key_text": "The key wrote: Ivermectin — activates glutamate-gated Cl⁻ channels → muscle paralysis (this is the mechanism of ivermectin; common adverse effects of mebendazole are abdominal pain, diarrhea, rarely teratogenicity)",
+     "source_key": "Ivermectin: Activate glutamate-gated Cl⁻ channel → muscle paralysis",
+     "explanation": "เฉลยตอบกลไกของ ivermectin ไม่ใช่ผลข้างเคียง · ผลข้างเคียงของ mebendazole: ปวดท้อง ท้องเสีย (ห้ามใช้ในหญิงตั้งครรภ์ระยะแรก)",
+     "accepted": [
+      "abdominal pain",
+      "diarrhea",
+      "teratogenic"
+     ],
+     "audit_note": "เฉลยตอบกลไกของ ivermectin ไม่ตรงกับคำถามผลข้างเคียง"
+    }
+   ],
+   "answer_status": "disputed",
+   "refs": [
+    {
+     "paper": "KF44",
+     "pages": [
+      7
+     ]
+    },
+    {
+     "paper": "KF44-KEY",
+     "pages": [
+      7
+     ]
+    }
+   ],
+   "tags": [
+    "Trichuris",
+    "Capillaria"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "Trichuris/Capillaria: mebendazole (β-tubulin) · ivermectin",
+   "audit_note": "รูปไข่พยาธิที่โจทย์อ้างไม่มีในไฟล์ · ข้อ 22.4 เฉลยตอบกลไก ivermectin แทนผลข้างเคียง"
+  },
+  {
+   "id": "GI-44-KF-023",
+   "block": "GI",
+   "cohort": 44,
+   "n": 23,
+   "type": "KF",
+   "case": "A 76-year-old man from a nursing facility is rushed to a hospital with severe watery diarrhea with bloody flux. He denies any other in the facility with the same symptoms, but he eats food provided by the facility only. He is receiving treatment for UTI by antibiotics for 2 weeks.",
+   "items": [
+    {
+     "id": "23.1",
+     "prompt": "What is the most proper diagnosis for this patient?",
+     "format": "short",
+     "keywords_all": [
+      "pseudomembranous",
+      "difficile"
+     ],
+     "key_text": "Pseudomembranous colitis (PMC) → Clostridium difficile",
+     "source_key": "Pseudomembranous colitis (PMC) → Clostridium difficile",
+     "explanation": "ยาปฏิชีวนะ 2 สัปดาห์ในผู้สูงอายุ → C. difficile",
+     "accepted": [
+      "pseudomembranous colitis",
+      "clostridium difficile",
+      "c. difficile",
+      "clostridioides difficile"
+     ]
+    },
+    {
+     "id": "23.2",
+     "prompt": "What microbiological test should be performed to confirm this diagnosis?",
+     "format": "short",
+     "keywords_all": [
+      "pcr",
+      "naat",
+      "toxin"
+     ],
+     "key_text": "PCR, NAAT to detect antigen or toxin",
+     "source_key": "PCR, NAAT to detect antigen or toxin",
+     "explanation": "ตรวจ toxin A/B (EIA) หรือยีน toxin (PCR/NAAT)",
+     "accepted": [
+      "pcr",
+      "naat",
+      "toxin assay",
+      "eia for toxin"
+     ]
+    },
+    {
+     "id": "23.3",
+     "prompt": "Tell 2 different risk factors that can cause bacterial overgrowth.",
+     "format": "short",
+     "keywords_all": [
+      "age",
+      "antibiotic"
+     ],
+     "key_text": "Advanced age; long-term antibiotic use",
+     "source_key": "Advanced age; long-term antibiotic use",
+     "explanation": "ปัจจัยเสี่ยง C. difficile: อายุมาก ยาปฏิชีวนะ อยู่โรงพยาบาล/สถานพยาบาล PPI",
+     "accepted": [
+      "advanced age and long-term antibiotic use"
+     ]
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF44",
+     "pages": [
+      7
+     ]
+    },
+    {
+     "paper": "KF44-KEY",
+     "pages": [
+      7
+     ]
+    }
+   ],
+   "tags": [
+    "C. difficile"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "ผู้สูงอายุ + ยาปฏิชีวนะนาน → PMC · PCR/NAAT/toxin"
+  },
+  {
+   "id": "GI-44-KF-024",
+   "block": "GI",
+   "cohort": 44,
+   "n": 24,
+   "type": "KF",
+   "case": "A patient with bloody diarrhea comes to the hospital for a check-up. His stool examination result is as in the figure (the exam gave pictures of Ascaris lumbricoides eggs and Strongyloides stercoralis larva, which are not in the file).",
+   "items": [
+    {
+     "id": "24.1",
+     "prompt": "How many parasitic worms infect this patient?",
+     "format": "short",
+     "keywords_all": [
+      "2"
+     ],
+     "key_text": "2 parasitic worms",
+     "source_key": "2 parasitic worms",
+     "explanation": "Ascaris + Strongyloides",
+     "accepted": [
+      "2",
+      "two",
+      "2 parasitic worms"
+     ]
+    },
+    {
+     "id": "24.2",
+     "prompt": "Give the most probable diagnosis for this patient.",
+     "format": "short",
+     "keywords_all": [
+      "ascariasis",
+      "strongyloid"
+     ],
+     "key_text": "Ascariasis, strongyloidiasis",
+     "source_key": "Ascariasis, strongyloidiasis",
+     "explanation": "พยาธิไส้เดือน + พยาธิเส้นด้าย",
+     "accepted": [
+      "ascariasis and strongyloidiasis"
+     ]
+    },
+    {
+     "id": "24.3",
+     "prompt": "What medications should be used in this patient? (2 different medicines)",
+     "format": "short",
+     "keywords_all": [
+      "ivermectin",
+      "mebendazole"
+     ],
+     "key_text": "Ivermectin; mebendazole",
+     "source_key": "Ivermectin; mebendazole",
+     "explanation": "ivermectin รักษา Strongyloides · mebendazole/albendazole รักษา Ascaris",
+     "accepted": [
+      "ivermectin and mebendazole",
+      "ivermectin, albendazole"
+     ]
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF44",
+     "pages": [
+      7
+     ]
+    },
+    {
+     "paper": "KF44-KEY",
+     "pages": [
+      7
+     ]
+    }
+   ],
+   "tags": [
+    "Ascaris",
+    "Strongyloides"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "Ascaris + Strongyloides → mebendazole/albendazole + ivermectin",
+   "audit_note": "รูปไข่/ตัวอ่อนที่โจทย์อ้างไม่มีในไฟล์"
+  },
+  {
+   "id": "GI-44-KF-025",
+   "block": "GI",
+   "cohort": 44,
+   "n": 25,
+   "type": "KF",
+   "case": "An elderly patient comes to hospital and receives an occult blood test and a colonic cancer test. He takes 500 mg vitamin C complex supplements orally once a day.",
+   "items": [
+    {
+     "id": "25.1",
+     "prompt": "How can his occult blood test result be different from normal?",
+     "format": "short",
+     "keywords_all": [
+      "false negative"
+     ],
+     "key_text": "False negative: vitamin C causes hemoglobin to be oxidized in excess, so when the specimen is tested with H₂O₂ there is not enough Hb left to be oxidized and change the guaiac color to blue",
+     "source_key": "False negative เนื่องจาก vitamin C ทำให้ Hb เกิด oxidation ไปก่อนมากเมื่อนำ specimen มาทดสอบด้วย H₂O₂ จึงตอบสนองไม่เหลือ Hb มากพอที่จะเกิด oxidation และเปลี่ยนสี guaiac ให้เป็นสีฟ้า",
+     "explanation": "vitamin C เป็น reducing agent กวน peroxidase-like reaction ของ guaiac",
+     "accepted": [
+      "false negative"
+     ]
+    },
+    {
+     "id": "25.2",
+     "prompt": "What is the proper advice to give to this patient?",
+     "format": "short",
+     "keywords_all": [
+      "stop",
+      "vitamin c"
+     ],
+     "key_text": "Stop taking vitamin C and any other high antioxidant-containing supplements for 3 days, then retest",
+     "source_key": "Stop taking vitamin C and any other high antioxidant-containing … for 3 days → แล้วจึงเจาะใหม่",
+     "explanation": "หยุด 3 วันก่อนตรวจ guaiac FOBT",
+     "accepted": [
+      "stop vitamin c for 3 days"
+     ]
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF44",
+     "pages": [
+      8
+     ]
+    },
+    {
+     "paper": "KF44-KEY",
+     "pages": [
+      8
+     ]
+    }
+   ],
+   "tags": [
+    "FOBT"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "vit C → false negative guaiac · หยุด 3 วัน"
+  },
+  {
+   "id": "GI-44-KF-026",
+   "block": "GI",
+   "cohort": 44,
+   "n": 26,
+   "type": "KF",
+   "case": "How can rotaviruses perform 'gene assortment' (reassortment)?",
+   "items": [
+    {
+     "id": "26.1",
+     "prompt": "Explain.",
+     "format": "short",
+     "keywords_all": [
+      "segmented"
+     ],
+     "key_text": "Because the rotavirus genome is segmented; in 1 virus type there can be different P and G serotypes",
+     "source_key": "เนื่องจาก genome ของ rotavirus เป็น segmented genome → ใน virus 1 ชนิด อาจมี P และ G serotype ต่างกันได้ (เปิดใน sheet อ. มีแค่นี้ คิดว่าตอบแค่นี้คงพอ)",
+     "explanation": "เมื่อติดเชื้อสองสายพันธุ์ในเซลล์เดียว ท่อน dsRNA สลับกันได้ → ได้ไวรัสพันธุ์ผสม (genetic reassortment)",
+     "key_image": "img/GI-44-KF-026-key.jpg",
+     "key_image_caption": "สไลด์ในเฉลย: รหัส serotype ของ rotavirus (G และ P) และ reassortment",
+     "accepted": [
+      "segmented genome",
+      "segmented dsrna genome"
+     ]
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF44",
+     "pages": [
+      8
+     ]
+    },
+    {
+     "paper": "KF44-KEY",
+     "pages": [
+      8
+     ]
+    }
+   ],
+   "tags": [
+    "rotavirus"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "rotavirus: segmented dsRNA → reassortment (P, G)"
+  },
+  {
+   "id": "GI-44-KF-027",
+   "block": "GI",
+   "cohort": 44,
+   "n": 27,
+   "type": "KF",
+   "case": "A 40-year-old male comes to a hospital for an HBV test. He denies any vaccination against HBV and his mother also died from HBV infection several years ago. His HBV test result: HBsAg −ve, anti-HBs −ve, anti-HBc +ve, HBeAg −ve, IgM anti-HBc −ve.",
+   "items": [
+    {
+     "id": "27.1",
+     "prompt": "From the result of anti-HBs −ve, is he safe from HBV infection? If not, what result should be obtained to be sure that he's safe?",
+     "format": "short",
+     "keywords_all": [
+      "hbeag",
+      "anti-hbe"
+     ],
+     "key_text": "Not yet safe; test HBeAg and anti-HBe",
+     "source_key": "ยังไม่ safe ควรเจาะ HBeAg และ Anti-HBe",
+     "explanation": "anti-HBc บวก (IgM ลบ) แต่ HBsAg ลบ และ anti-HBs ลบ = ตีความไม่ชัด (หายแล้ว/window/ติดเรื้อรังต่ำ) จึงตรวจเพิ่ม",
+     "key_image": "img/GI-44-KF-027-key.jpg",
+     "key_image_caption": "ตารางในเฉลย (CDC): การแปลผล HBV serology — susceptible, immune, chronically infected, acutely infected"
+    },
+    {
+     "id": "27.2",
+     "prompt": "Six months later he comes back with jaundice; HBsAg +ve, anti-HBs −ve, HBeAg +ve, anti-HBc +ve, IgM anti-HBc −ve. Give a proper diagnosis for this patient.",
+     "format": "short",
+     "accepted": [
+      "chronic hepatitis b infection",
+      "chronic hepatitis b",
+      "chronic hbv infection",
+      "chronic hbv"
+     ],
+     "key_text": "Chronic hepatitis B infection",
+     "source_key": "Chronic hepatitis B infection",
+     "explanation": "HBsAg + นาน + IgM anti-HBc ลบ = เรื้อรัง · HBeAg บวก = ไวรัสแบ่งตัวมาก",
+     "key_image": "img/GI-44-KF-027b-key.jpg",
+     "key_image_caption": "กราฟและตารางในเฉลย: HBV antigens and antibodies ตามเวลา และการแปล serum markers ตามระยะโรค"
+    },
+    {
+     "id": "27.3",
+     "prompt": "What is the end stage of this disease progression?",
+     "format": "short",
+     "accepted": [
+      "cirrhosis",
+      "liver cirrhosis"
+     ],
+     "key_text": "Cirrhosis",
+     "source_key": "Cirrhosis",
+     "explanation": "chronic hepatitis B → cirrhosis (และ HCC)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF44",
+     "pages": [
+      8
+     ]
+    },
+    {
+     "paper": "KF44-KEY",
+     "pages": [
+      8
+     ]
+    }
+   ],
+   "tags": [
+    "hepatitis B"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "HBsAg + IgM anti-HBc − = เรื้อรัง → cirrhosis"
+  },
+  {
+   "id": "GI-44-KF-028",
+   "block": "GI",
+   "cohort": 44,
+   "n": 28,
+   "type": "KF",
+   "case": "What type of the hepatitis viruses is a defective virus?",
+   "items": [
+    {
+     "id": "28.1",
+     "prompt": "Which hepatitis virus is defective?",
+     "format": "select",
+     "options": [
+      {
+       "key": "A",
+       "text": "Hepatitis A virus"
+      },
+      {
+       "key": "B",
+       "text": "Hepatitis B virus"
+      },
+      {
+       "key": "C",
+       "text": "Hepatitis C virus"
+      },
+      {
+       "key": "D",
+       "text": "Hepatitis D virus"
+      },
+      {
+       "key": "E",
+       "text": "Hepatitis E virus"
+      }
+     ],
+     "answer": [
+      "D"
+     ],
+     "max_answers": 1,
+     "key_text": "Hepatitis D virus (no envelope of its own; depends on HBV)",
+     "source_key": "Hepatitis D virus (ไม่มี envelope เป็นของตัวเอง ต้องอาศัยจาก HBV)",
+     "explanation": "HDV ต้องใช้ HBsAg ของ HBV เป็น envelope"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF44",
+     "pages": [
+      9
+     ]
+    },
+    {
+     "paper": "KF44-KEY",
+     "pages": [
+      9
+     ]
+    }
+   ],
+   "tags": [
+    "hepatitis D"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "HDV defective ต้องอาศัย HBV"
+  },
+  {
+   "id": "GI-44-KF-029",
+   "block": "GI",
+   "cohort": 44,
+   "n": 29,
+   "type": "KF",
+   "case": "What type of the hepatitis viruses has different genetic material from the others?",
+   "items": [
+    {
+     "id": "29.1",
+     "prompt": "Which hepatitis virus has different genetic material from the others?",
+     "format": "select",
+     "options": [
+      {
+       "key": "A",
+       "text": "Hepatitis A virus"
+      },
+      {
+       "key": "B",
+       "text": "Hepatitis B virus"
+      },
+      {
+       "key": "C",
+       "text": "Hepatitis C virus"
+      },
+      {
+       "key": "D",
+       "text": "Hepatitis D virus"
+      },
+      {
+       "key": "E",
+       "text": "Hepatitis E virus"
+      }
+     ],
+     "answer": [
+      "B"
+     ],
+     "max_answers": 1,
+     "key_text": "Hepatitis B virus — a dsDNA virus; the others are RNA viruses",
+     "source_key": "Hepatitis B virus เป็น dsDNA virus ชาวบ้านเค้าเป็น RNA",
+     "explanation": "HBV เป็นไวรัสตับอักเสบชนิดเดียวที่เป็น DNA virus (A, C, D, E เป็น RNA) · เฉลยรุ่น 46 เลือก D (HDV) ขัดกับรุ่นนี้"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF44",
+     "pages": [
+      9
+     ]
+    },
+    {
+     "paper": "KF44-KEY",
+     "pages": [
+      9
+     ]
+    }
+   ],
+   "tags": [
+    "hepatitis viruses"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "HBV = DNA virus เดียว"
+  },
+  {
+   "id": "GI-44-KF-030",
+   "block": "GI",
+   "cohort": 44,
+   "n": 30,
+   "type": "KF",
+   "case": "A 30-year-old male patient, 170 cm tall and 115 kg, comes to a hospital for a routine checkup.",
+   "items": [
+    {
+     "id": "30.1",
+     "prompt": "Describe his nutrition status with your way of evaluation.",
+     "format": "short",
+     "keywords_all": [
+      "bmi",
+      "obes"
+     ],
+     "key_text": "Obese: BMI = 115 / 1.7² = 39.8 kg/m²",
+     "source_key": "Obese: BMI = 115 / 1.7² = 39.8 kg/m²",
+     "explanation": "BMI 39.8 ≥ 30",
+     "accepted": [
+      "obese",
+      "obesity"
+     ],
+     "key_image": "img/GI-44-KF-030-key.jpg",
+     "key_image_caption": "ตารางในเฉลย: การจำแนกน้ำหนักตาม BMI (underweight, normal, overweight, obese class I–III)"
+    },
+    {
+     "id": "30.2",
+     "prompt": "Describe the severity of his nutrition status.",
+     "format": "short",
+     "keywords_all": [
+      "class ii",
+      "class 2"
+     ],
+     "key_text": "Obese class II",
+     "source_key": "Obese class II",
+     "explanation": "BMI 35–39.9 = obese class II",
+     "accepted": [
+      "obese class ii",
+      "obese class 2",
+      "class ii obesity"
+     ]
+    },
+    {
+     "id": "30.3",
+     "prompt": "This patient has fragmented sleep and snores loudly at night with sleep apnea sometimes. What is this condition, and describe 4 different mechanisms for his clinical sign.",
+     "format": "short",
+     "keywords_all": [
+      "obstructive",
+      "airway"
+     ],
+     "key_text": "Obstructive sleep apnea. Mechanisms: 1) reduced upper airway muscle tone 2) upper airway collapse 3) apnea → hypoxia, hypercapnia 4) stimulation of central respiratory and respiratory muscle drive → hyperventilation",
+     "source_key": "Obstructive sleep apnea. Mechanisms: 1) reduced upper airway muscle tone 2) upper airway collapse 3) apnea → hypoxia, hypercapnia 4) stimulation of central respiratory and respiratory muscle drive → hyperventilation",
+     "explanation": "อ้วน คอหนา → ทางเดินหายใจส่วนบนแคบ ยุบตอนหลับ",
+     "accepted": [
+      "obstructive sleep apnea",
+      "osa"
+     ],
+     "key_image": "img/GI-44-KF-030b-key.jpg",
+     "key_image_caption": "สไลด์ในเฉลย: Sleep apnea — wake vs sleep (upper airway collapse, hypoxia, hypercapnia, arousal, hyperventilation)",
+     "audit_note": "ผู้เฉลยเขียนเพิ่ม (ตอบในเช่นนี้?) ท้ายข้อ 30.3 ไม่แน่ใจรูปแบบคำตอบ"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF44",
+     "pages": [
+      9
+     ]
+    },
+    {
+     "paper": "KF44-KEY",
+     "pages": [
+      9
+     ]
+    }
+   ],
+   "tags": [
+    "obesity",
+    "BMI",
+    "sleep apnea"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "BMI 39.8 → obese class II → OSA"
+  },
+  {
+   "id": "GI-44-KF-031",
+   "block": "GI",
+   "cohort": 44,
+   "n": 31,
+   "type": "KF",
+   "case": "Mr. A and Mr. B both have a height of 180 cm and weight 80 kg. Mr. A was told that he has a risk of NCDs. Mr. B is a body builder and also healthy.",
+   "items": [
+    {
+     "id": "31.1",
+     "prompt": "What is the main difference between these two men, and what is the cut-off point for this difference?",
+     "format": "short",
+     "keywords_all": [
+      "muscle"
+     ],
+     "key_text": "A has a risk for NCD, B is healthy and muscular; the cut-off is muscle mass (inferring from physical activity and diet)",
+     "source_key": "A has a risk for NCD, B is healthy and muscular → cut-off point is muscle mass (อนุมานจาก physical activity และ food ได้)",
+     "explanation": "BMI เท่ากันแต่องค์ประกอบร่างกายต่างกัน",
+     "accepted": [
+      "muscle mass",
+      "body composition"
+     ]
+    },
+    {
+     "id": "31.2",
+     "prompt": "Who among these two should have the lower basal metabolic rate?",
+     "format": "short",
+     "accepted": [
+      "mr. a",
+      "mr a",
+      "a"
+     ],
+     "key_text": "Mr. A (lower physical activity) with low muscular mass",
+     "source_key": "Mr. A (lower physical activity) with low muscular mass",
+     "explanation": "กล้ามเนื้อใช้พลังงานขณะพักมากกว่าไขมัน",
+     "key_image": "img/GI-44-KF-031-key.jpg",
+     "key_image_caption": "สไลด์ในเฉลย: BMR (~50% ของพลังงาน) ขึ้นกับอายุ เพศ ขนาดและองค์ประกอบของร่างกาย"
+    },
+    {
+     "id": "31.3",
+     "prompt": "Give the explanation for your answer in 31.2.",
+     "format": "short",
+     "keywords_all": [
+      "muscle",
+      "bmr"
+     ],
+     "key_text": "A and B have the same BMI but B is a body builder → more muscle → more resting muscle tissue metabolism → higher BMR; A has a risk of NCD, so A's obesity is from body fat, not muscle",
+     "source_key": "A and B have the same BMI but B is a body builder → more muscle → more resting muscle tissue metabolism → higher BMR; A has a risk of NCD, so A's obesity is from body fat, not muscle",
+     "explanation": "กล้ามเนื้อเผาผลาญขณะพักมากกว่าไขมัน"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF44",
+     "pages": [
+      9
+     ]
+    },
+    {
+     "paper": "KF44-KEY",
+     "pages": [
+      9
+     ]
+    }
+   ],
+   "tags": [
+    "BMR",
+    "body composition"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "BMI เท่ากัน แต่ B กล้ามเนื้อมาก → BMR สูงกว่า"
+  },
+  {
+   "id": "GI-44-KF-032",
+   "block": "GI",
+   "cohort": 44,
+   "n": 32,
+   "type": "KF",
+   "case": "A female patient comes to a hospital complaining of dry and scaling mouth, dull hair and red tongue. Her physical examination reveals inflammation and she has oily skin.",
+   "items": [
+    {
+     "id": "32.1",
+     "prompt": "What would be deficient in this woman?",
+     "format": "short",
+     "accepted": [
+      "riboflavin",
+      "vitamin b2",
+      "vitamin b₂"
+     ],
+     "key_text": "Riboflavin (signs/symptoms of seborrheic dermatitis)",
+     "source_key": "Riboflavin (signs/symptoms of seborrheic dermatitis)",
+     "explanation": "cheilosis, glossitis, seborrheic dermatitis = ขาด riboflavin (B₂)"
+    },
+    {
+     "id": "32.2",
+     "prompt": "Which supplement should she take to alleviate her symptoms?",
+     "format": "short",
+     "keywords_all": [
+      "riboflavin",
+      "b complex",
+      "egg",
+      "milk"
+     ],
+     "key_text": "Preparations containing riboflavin, e.g., vitamin B complex; food: eggs, milk, cheese, legumes, almonds",
+     "source_key": "Preparations containing riboflavin, e.g., vitamin B complex; food: eggs, milk, cheese, legumes, almonds",
+     "explanation": "แหล่งอาหารของ riboflavin",
+     "accepted": [
+      "vitamin b complex",
+      "riboflavin",
+      "eggs, milk, cheese, legumes, almonds"
+     ]
+    },
+    {
+     "id": "32.3",
+     "prompt": "Tell the mechanism of action of your answer in 32.1. (keyword: metabolism with enzyme)",
+     "format": "short",
+     "keywords_all": [
+      "fad",
+      "fmn"
+     ],
+     "key_text": "It is a component of the coenzymes FAD and FMN, important for electron transfer in the electron transport chain, the Krebs cycle and fatty acid catabolism",
+     "source_key": "เป็นองค์ประกอบของ coenzyme คือ FAD และ FMN มีความสำคัญในการรับ-ส่ง electron ใน electron transport chain ใน Kreb's cycle และ catabolism ของ fatty acid",
+     "explanation": "B₂ → FAD/FMN → flavoprotein enzyme",
+     "key_image": "img/GI-44-KF-032-key.jpg",
+     "key_image_caption": "ตารางในเฉลย: วิตามินที่ละลายน้ำ หน้าที่ (coenzyme) และโรคที่ขาด"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF44",
+     "pages": [
+      10
+     ]
+    },
+    {
+     "paper": "KF44-KEY",
+     "pages": [
+      10
+     ]
+    }
+   ],
+   "tags": [
+    "riboflavin",
+    "vitamin B2"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "ขาด riboflavin: ปากแห้งแตก ลิ้นแดง seborrheic dermatitis · FAD/FMN"
+  }
+ ]
+}
