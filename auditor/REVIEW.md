@@ -1,6 +1,6 @@
 # REVIEW — รายการรอผู้ใช้ตัดสิน
 
-ทั้งหมด 280 รายการ
+ทั้งหมด 283 รายการ
 วิธีตอบ: พิมพ์ในแชทเป็นบรรทัด เช่น `end_52_MCQ_027: คงเดิม` / `end_52_MCQ_063: C` / `end_52_MCQ_046: ตรวจใหม่`
 Claude จะบันทึกลง `auditor/data/decisions.json` แล้ว build ใหม่
 
@@ -281,6 +281,9 @@ Claude จะบันทึกลง `auditor/data/decisions.json` แล้ว
 | gi_52_MCQ_042 | C | C | low | ไม่มีตัวเลือก nausea/vomiting of pregnancy ตรงๆ |   |
 | gi_52_MCQ_061 | E | B | medium | เฉลยขัดกับ AI |   |
 | gi_52_MCQ_073 | ['B', 'C'] | B | low | ต้นฉบับวงไว้หลายตัว |   |
+| kub_51_MCQ_013 | C | E | lo | เฉลยขัดกับ AI |   |
+| kub_51_MCQ_070 | D | C | hi | เฉลยขัดกับ AI |   |
+| kub_51_MCQ_093 | C | A | lo | เฉลยขัดกับ AI |   |
 | kub_52_MCQ_020 | B | C | hi | เฉลยขัดกับ AI |   |
 | kub_52_MCQ_027 | A | B | hi | เฉลยขัดกับ AI | ไตเล็กผิวเป็นเม็ด (chronic/hypertensive nephrosclerosis) มักสัมพันธ์กับ hypertension เฉลยเลือก hemoptysis  |
 | kub_52_MCQ_045 | B | A | mid | เฉลยขัดกับ AI |   |
