@@ -1,0 +1,990 @@
+{
+ "meta": {
+  "set_id": "48_KF",
+  "block": "GI",
+  "cohort": 48,
+  "type": "KF",
+  "title": "KF Gastrointestinal · Med PSU 48",
+  "generated_by": "auditor/tools/build_kf.py from auditor/data/work/gi_48_KF.kf.json — do not edit by hand"
+ },
+ "questions": [
+  {
+   "id": "GI-48-KF-001",
+   "block": "GI",
+   "cohort": 48,
+   "n": 1,
+   "type": "KF",
+   "case": "A patient with IBS and GERD is treated with dexloxiglumide (an antagonist of receptor X). During the intestinal phase, contraction of the gallbladder is reduced.",
+   "items": [
+    {
+     "id": "1.1",
+     "prompt": "Give only one possible factor that can cause gallbladder contraction.",
+     "format": "short",
+     "accepted": [
+      "cck",
+      "cholecystokinin",
+      "acetylcholine",
+      "vagal stimulation"
+     ],
+     "key_text": "Cholecystokinin (CCK)",
+     "source_key": "Cholecystokinin (CCK)",
+     "explanation": "CCK จาก I cell ใน duodenum กระตุ้นถุงน้ำดีบีบ"
+    },
+    {
+     "id": "1.2",
+     "prompt": "What is receptor X?",
+     "format": "short",
+     "accepted": [
+      "cck1",
+      "cck-1",
+      "cck1 receptor",
+      "cck-a",
+      "ccka",
+      "cck a receptor",
+      "cck₁ receptor"
+     ],
+     "key_text": "CCK₁ receptor",
+     "source_key": "CCK₁ receptor",
+     "explanation": "dexloxiglumide ต้าน CCK₁ (CCK-A) receptor"
+    },
+    {
+     "id": "1.3",
+     "prompt": "What is the effect of this drug on the sphincter of Oddi?",
+     "format": "short",
+     "keywords_all": [
+      "contract"
+     ],
+     "key_text": "Contraction",
+     "source_key": "Contraction",
+     "explanation": "CCK ปกติทำให้ sphincter of Oddi คลาย → ต้าน CCK₁ → sphincter หดตัว",
+     "accepted": [
+      "contraction",
+      "contracts",
+      "constrict"
+     ]
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF48",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "KF48-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [
+    "CCK",
+    "gallbladder"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "CCK₁: ถุงน้ำดีบีบ + sphincter of Oddi คลาย"
+  },
+  {
+   "id": "GI-48-KF-002",
+   "block": "GI",
+   "cohort": 48,
+   "n": 2,
+   "type": "KF",
+   "case": "A man has an accident and needs a total colectomy (removal of the whole colon).",
+   "items": [
+    {
+     "id": "2.1",
+     "prompt": "How does total colectomy affect the level of urinary urobilinogen? (increase, decrease, no change) (1 point)",
+     "format": "short",
+     "accepted": [
+      "no change",
+      "no changes",
+      "not change",
+      "ไม่เปลี่ยน"
+     ],
+     "key_text": "No change",
+     "source_key": "No change",
+     "explanation": "ตามเฉลยรุ่น 48: urobilinogen ถูกดูดซึมที่ terminal ileum จึงไม่เปลี่ยน"
+    },
+    {
+     "id": "2.2",
+     "prompt": "What is the reason? (2 points)",
+     "format": "short",
+     "keywords_all": [
+      "ileum"
+     ],
+     "key_text": "Urobilinogen is absorbed by the terminal ileum",
+     "source_key": "Urobilinogen is absorbed by the terminal ileum",
+     "explanation": "เฉลยรุ่น 48 อธิบายว่า urobilinogen ถูกดูดซึมที่ terminal ileum (ไม่ใช่ที่ลำไส้ใหญ่) จึงไม่เปลี่ยนหลังตัดลำไส้ใหญ่",
+     "accepted": [
+      "absorbed by terminal ileum",
+      "absorbed in terminal ileum"
+     ]
+    }
+   ],
+   "answer_status": "disputed",
+   "refs": [
+    {
+     "paper": "KF48",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "KF48-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [
+    "bilirubin",
+    "urobilinogen"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "urobilinogen: เฉลยรุ่น 48 = no change (ดูดซึมที่ terminal ileum)",
+   "audit_note": "เฉลยรุ่น 48 ตอบ 'no change' (urobilinogen ถูกดูดซึมที่ terminal ileum) ขัดกับเฉลยรุ่น 52 ที่ตอบ 'decrease' (แบคทีเรียในลำไส้ใหญ่ลดลง) และผู้เฉลยรุ่น 52 เขียนว่าไม่แน่ใจ · เก็บตามเฉลยต้นฉบับรุ่นนี้ ให้ผู้ตรวจตัดสิน"
+  },
+  {
+   "id": "GI-48-KF-003",
+   "block": "GI",
+   "cohort": 48,
+   "n": 3,
+   "type": "KF",
+   "case": "Solution A is injected into the proximal duodenum. Before the injection: pancreatic secretion 1 drop/min, pH of pancreatic juice 7–8. After the injection: pancreatic secretion 5 drops/min, pH of pancreatic juice 8–9 (↑ secretion, ↑ HCO₃⁻).",
+   "items": [
+    {
+     "id": "3.1",
+     "prompt": "What is solution A?",
+     "format": "short",
+     "accepted": [
+      "fatty acid",
+      "acid",
+      "hcl",
+      "h+",
+      "hydrochloric acid"
+     ],
+     "key_text": "Fatty acid (as written in the original key)",
+     "source_key": "Fatty acid (as written in the original key)",
+     "explanation": "เฉลยต้นฉบับเขียน fatty acid · ตำราทั่วไป secretin ถูกกระตุ้นด้วยกรด (H⁺, pH < 4.5) ใน duodenum และกรดไขมันเป็นตัวกระตุ้นรอง"
+    },
+    {
+     "id": "3.2a",
+     "prompt": "Solution A can stimulate which hormone?",
+     "format": "short",
+     "accepted": [
+      "secretin"
+     ],
+     "key_text": "Secretin",
+     "source_key": "Secretin",
+     "explanation": "↑ HCO₃⁻ ในน้ำตับอ่อน = secretin"
+    },
+    {
+     "id": "3.2b",
+     "prompt": "… from which cell in the duodenum?",
+     "format": "short",
+     "accepted": [
+      "s cell",
+      "s",
+      "s-cell",
+      "s cells"
+     ],
+     "key_text": "S cell",
+     "source_key": "S cell",
+     "explanation": "secretin หลั่งจาก S cell"
+    },
+    {
+     "id": "3.2c",
+     "prompt": "This hormone is inhibited by ______",
+     "format": "short",
+     "accepted": [
+      "somatostatin"
+     ],
+     "key_text": "Somatostatin",
+     "source_key": "Somatostatin",
+     "explanation": "somatostatin ยับยั้ง secretin"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF48",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "KF48-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [
+    "secretin",
+    "pancreatic secretion"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "secretin: S cell, ถูกกระตุ้นด้วยกรด, ↑ HCO₃⁻, ถูก somatostatin ยับยั้ง",
+   "audit_note": "ข้อ 3.1 เฉลยเขียน 'fatty acid' แต่ตัวกระตุ้นหลักของ secretin คือกรด (H⁺) ใน duodenum · เก็บตามเฉลยต้นฉบับ (ยอมรับ acid ด้วย)"
+  },
+  {
+   "id": "GI-48-KF-004",
+   "block": "GI",
+   "cohort": 48,
+   "n": 4,
+   "type": "KF",
+   "case": "A child swallowed a coin. While in the ______ state, GI motility occurs in the region from ______, named ______, so that the coin is finally expelled from the body. If we do ______, this motility is eventually inhibited.",
+   "items": [
+    {
+     "id": "4.1",
+     "prompt": "Which state?",
+     "format": "short",
+     "accepted": [
+      "fasting",
+      "fasting state",
+      "interdigestive"
+     ],
+     "key_text": "Fasting",
+     "source_key": "Fasting",
+     "explanation": "ช่วงอดอาหาร → MMC"
+    },
+    {
+     "id": "4.2",
+     "prompt": "In which region of the GI tract?",
+     "format": "short",
+     "keywords_all": [
+      "stomach",
+      "ileum"
+     ],
+     "key_text": "Stomach to ileum",
+     "source_key": "stomach ถึง ileum",
+     "explanation": "MMC เคลื่อนจากกระเพาะลงถึง ileum ส่วนปลาย",
+     "accepted": [
+      "stomach to ileum",
+      "stomach to distal ileum"
+     ]
+    },
+    {
+     "id": "4.3",
+     "prompt": "What is the name of this motility?",
+     "format": "short",
+     "accepted": [
+      "migrating motor complex",
+      "mmc",
+      "migratory motor complex",
+      "migrating myoelectric complex"
+     ],
+     "key_text": "Migratory (migrating) motor complex",
+     "source_key": "Migratory (migrating) motor complex",
+     "explanation": "MMC"
+    },
+    {
+     "id": "4.4",
+     "prompt": "If we do ______, this motility is eventually inhibited.",
+     "format": "short",
+     "accepted": [
+      "eating",
+      "eat",
+      "eating food",
+      "feeding",
+      "กินอาหาร",
+      "taking food",
+      "meal"
+     ],
+     "key_text": "Eating (feeding)",
+     "source_key": "กินอาหาร",
+     "explanation": "กินอาหารทำให้เข้าสู่ fed state ยับยั้ง MMC",
+     "audit_note": "ลายมือเฉลยช่องสุดท้ายอ่านว่า 'กินอาหาร'"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF48",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "KF48-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [
+    "MMC"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "MMC ช่วง fasting: กระเพาะ→ ileum · กินอาหารหยุด MMC"
+  },
+  {
+   "id": "GI-48-KF-005",
+   "block": "GI",
+   "cohort": 48,
+   "n": 5,
+   "type": "KF",
+   "case": "A woman is brought to the emergency room with severe diarrhea. The stool examination is positive for E. coli.",
+   "items": [
+    {
+     "id": "5.1a",
+     "prompt": "E. coli activates guanylyl cyclase, which increases intracellular ______",
+     "format": "short",
+     "keywords_all": [
+      "camp",
+      "cgmp"
+     ],
+     "key_text": "cAMP (as written in the original key)",
+     "source_key": "cAMP (as written in the original key)",
+     "explanation": "ETEC toxin ST ทำงานผ่าน guanylyl cyclase → cGMP ส่วน LT ผ่าน adenylyl cyclase → cAMP · เฉลยต้นฉบับเขียน cAMP",
+     "accepted": [
+      "camp",
+      "cgmp",
+      "cyclic gmp",
+      "cyclic amp",
+      "cgmp/camp"
+     ]
+    },
+    {
+     "id": "5.1b",
+     "prompt": "… and secretes Cl⁻ ion via ______",
+     "format": "short",
+     "accepted": [
+      "cftr",
+      "cftr channel"
+     ],
+     "key_text": "CFTR",
+     "source_key": "CFTR",
+     "explanation": "cyclic nucleotide ↑ → PKA/PKG → เปิด CFTR → Cl⁻ และน้ำออกสู่ lumen"
+    },
+    {
+     "id": "5.2",
+     "prompt": "How does ORS correct the dehydration?",
+     "format": "short",
+     "keywords_all": [
+      "sglt1"
+     ],
+     "key_text": "↑ Glucose/Na⁺ reabsorption via the SGLT1 transporter → H₂O follows the osmolarity into the enterocytes",
+     "source_key": "↑ Glucose/Na reabsorption via SGLT1 transporter → H₂O ตามความต่าง osmolarity เข้าสู่ enterocyte",
+     "explanation": "SGLT1 ดูด glucose คู่ Na⁺ น้ำตามเข้าเซลล์",
+     "accepted": [
+      "glucose sodium cotransport sglt1",
+      "sglt1"
+     ]
+    }
+   ],
+   "answer_status": "disputed",
+   "refs": [
+    {
+     "paper": "KF48",
+     "pages": [
+      3
+     ]
+    },
+    {
+     "paper": "KF48-KEY",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [
+    "E. coli",
+    "ORS"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "ETEC: ST → cGMP · LT → cAMP → CFTR · ORS: SGLT1",
+   "audit_note": "ข้อ 5.1 โจทย์ว่า E. coli ทำงานผ่าน guanylyl cyclase ซึ่งทำให้ cGMP สูง (ST ของ ETEC) แต่เฉลยเขียน cAMP · เก็บตามเฉลยต้นฉบับ และยอมรับ cGMP ด้วย"
+  },
+  {
+   "id": "GI-48-KF-006",
+   "block": "GI",
+   "cohort": 48,
+   "n": 6,
+   "type": "KF",
+   "case": "A 50-year-old woman presents with epigastric pain, nausea, vomiting and weight loss for 6 months. She has no jaundice, no mucous bloody stool and no bowel-habit change. She has no underlying disease.",
+   "items": [
+    {
+     "id": "6.1",
+     "prompt": "Write 3 organ systems that relate to the symptoms.",
+     "format": "short",
+     "keywords_all": [
+      "gi",
+      "hepato"
+     ],
+     "key_text": "GI > hepatobiliary > urogenital",
+     "source_key": "GI > hepatobiliary > urogenital",
+     "explanation": "ปวดลิ้นปี่ + คลื่นไส้อาเจียน → ระบบทางเดินอาหาร ตับ/ท่อน้ำดี และระบบปัสสาวะ-สืบพันธุ์ (ผู้เฉลยไม่แน่ใจ)",
+     "accepted": [
+      "gi, hepatobiliary, urogenital",
+      "gastrointestinal hepatobiliary urogenital"
+     ]
+    },
+    {
+     "id": "6.2",
+     "prompt": "List 3 appropriate investigations.",
+     "format": "short",
+     "keywords_all": [
+      "cbc",
+      "gastroscopy"
+     ],
+     "key_text": "CBC, film acute abdomen, gastroscopy",
+     "source_key": "CBC, film acute abdomen, gastroscopy",
+     "explanation": "ตรวจเลือด ภาพรังสีช่องท้อง และส่องกล้องกระเพาะ",
+     "accepted": [
+      "cbc, film acute abdomen, gastroscopy"
+     ]
+    },
+    {
+     "id": "6.3",
+     "prompt": "Gastroscopy shows linitis plastica. Give 2 differential diagnoses.",
+     "format": "short",
+     "keywords_all": [
+      "metast",
+      "diffuse"
+     ],
+     "key_text": "Stomach metastasis; diffuse-type gastric adenocarcinoma",
+     "source_key": "Stomach metastasis; diffuse-type gastric adenocarcinoma",
+     "explanation": "linitis plastica = กระเพาะแข็งหนา จาก diffuse-type adenocarcinoma หรือมะเร็งแพร่กระจายมากระเพาะ (เช่น lobular breast ca)",
+     "accepted": [
+      "metastasis to stomach",
+      "diffuse type gastric adenocarcinoma",
+      "gastric adenocarcinoma diffuse type"
+     ]
+    },
+    {
+     "id": "6.4",
+     "prompt": "The histology picture is shown. What is the definite diagnosis?",
+     "format": "short",
+     "accepted": [
+      "signet ring cell gastric adenocarcinoma",
+      "signet ring cell carcinoma",
+      "signet ring cell adenocarcinoma",
+      "signet ring cell"
+     ],
+     "key_text": "Signet ring cell gastric adenocarcinoma",
+     "source_key": "Signet ring cell gastric adenocarcinoma",
+     "explanation": "เซลล์มี mucin ดัน nucleus ไปด้านข้าง (signet ring) = diffuse-type gastric adenocarcinoma",
+     "image": "img/GI-48-KF-006.jpg",
+     "image_caption": "ภาพจุลพยาธิวิทยาจากชิ้นเนื้อกระเพาะ (H&E)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF48",
+     "pages": [
+      3
+     ]
+    },
+    {
+     "paper": "KF48-KEY",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [
+    "gastric cancer",
+    "linitis plastica"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "linitis plastica: diffuse-type adenocarcinoma/signet ring cell"
+  },
+  {
+   "id": "GI-48-KF-008",
+   "block": "GI",
+   "cohort": 48,
+   "n": 8,
+   "type": "KF",
+   "case": "A patient had upper right abdominal pain for 3 months, which worsened 1 week ago. LFT: total bilirubin 9.6 (↑), direct bilirubin 8.8 (↑), ALT 35, AST 40, ALP 525, total protein 6.2, albumin 3.2.",
+   "items": [
+    {
+     "id": "8.1",
+     "prompt": "Type of jaundice",
+     "format": "short",
+     "accepted": [
+      "posthepatic jaundice",
+      "post hepatic jaundice",
+      "post-hepatic jaundice",
+      "obstructive jaundice",
+      "posthepatic",
+      "cholestatic jaundice"
+     ],
+     "key_text": "Posthepatic jaundice (conjugated hyperbilirubinemia)",
+     "source_key": "Posthepatic jaundice (conjugated hyperbilirubinemia)",
+     "explanation": "direct bilirubin เด่น + ALP สูง AST/ALT ปกติ = conjugated hyperbilirubinemia จากการอุดกั้นนอกตับ",
+     "key_image": "img/GI-48-KF-008-key.jpg",
+     "key_image_caption": "สไลด์ในเฉลย: Posthepatic jaundice และสาเหตุ (malignancy, gallbladder/gallstone disease, inflammatory, infection)"
+    },
+    {
+     "id": "8.2a",
+     "prompt": "Expected urine urobilinogen",
+     "format": "short",
+     "accepted": [
+      "decrease",
+      "decreased",
+      "decreases",
+      "ลด",
+      "↓"
+     ],
+     "key_text": "Decreased",
+     "source_key": "Decreased",
+     "explanation": "bilirubin ไปไม่ถึงลำไส้ → urobilinogen ลด"
+    },
+    {
+     "id": "8.2b",
+     "prompt": "Expected urine bilirubin",
+     "format": "short",
+     "accepted": [
+      "increase",
+      "increased",
+      "increases",
+      "เพิ่ม",
+      "↑"
+     ],
+     "key_text": "Increased",
+     "source_key": "Increased",
+     "explanation": "conjugated bilirubin ละลายน้ำ ออกทางปัสสาวะ"
+    },
+    {
+     "id": "8.2c",
+     "prompt": "Expected GGT",
+     "format": "short",
+     "accepted": [
+      "increase",
+      "increased",
+      "increases",
+      "เพิ่ม",
+      "↑"
+     ],
+     "key_text": "Increased",
+     "source_key": "Increased",
+     "explanation": "GGT สูงใน cholestasis"
+    },
+    {
+     "id": "8.3",
+     "prompt": "Diagnosis and reasoning",
+     "format": "short",
+     "keywords_all": [
+      "hepatocyte",
+      "db"
+     ],
+     "key_text": "Look at the causes of posthepatic jaundice in the slide (e.g., cholangiocarcinoma, pancreatic cancer, gallstone/choledocholithiasis); reason: direct bilirubin is high, showing the pathology is not at the hepatocyte",
+     "source_key": "Dx: ดูสาเหตุที่แนะนำในสไลด์ · เหตุผล: DB สูง แสดงว่าพยาธิสภาพไม่ได้อยู่ที่ hepatocyte",
+     "explanation": "DB สูงและ ALP สูง = การอุดกั้นทางเดินน้ำดี ไม่ใช่เซลล์ตับเสีย",
+     "audit_note": "ลายมือบรรทัด Dx ของข้อ 8.3 อ่านยาก จึงอ้างตามสไลด์ท้ายข้อ"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF48",
+     "pages": [
+      4
+     ]
+    },
+    {
+     "paper": "KF48-KEY",
+     "pages": [
+      4
+     ]
+    }
+   ],
+   "tags": [
+    "jaundice",
+    "posthepatic"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "DB สูง ALP สูง AST/ALT ปกติ = posthepatic jaundice"
+  },
+  {
+   "id": "GI-48-KF-009",
+   "block": "GI",
+   "cohort": 48,
+   "n": 9,
+   "type": "KF",
+   "case": "A healthy 32-year-old Thai man traveled to visit a friend in India and ate local food and drank water. He had diarrhea more than 10 times with vomiting, watery loose stool without gross blood, abdominal cramp, and dizziness on standing. Dx: cholera.",
+   "items": [
+    {
+     "id": "9.1",
+     "prompt": "How should the stool be collected and transported?",
+     "format": "short",
+     "keywords_all": [
+      "sterile"
+     ],
+     "key_text": "Collect about 5 mL in a sterile bottle and send within 24 hours",
+     "source_key": "เก็บตัวอย่าง 5 mL ใส่ sterile bottle ส่งภายใน 24 hr",
+     "explanation": "อุจจาระที่ปลอดเชื้อ ส่งเร็ว (ใช้ Cary-Blair ถ้าเก็บนาน)"
+    },
+    {
+     "id": "9.2",
+     "prompt": "Which culture media (at least 2) and what are the results?",
+     "format": "short",
+     "keywords_all": [
+      "tcbs",
+      "yellow"
+     ],
+     "key_text": "TCBS agar: yellow colonies · TTGA: grey colonies surrounded by a cloudy halo",
+     "source_key": "TCBS agar: yellow colonies · TTGA: grey colonies surrounded by a cloudy halo",
+     "explanation": "V. cholerae ย่อย sucrose บน TCBS เป็นโคโลนีเหลือง · TTGA โคโลนีเทามี halo ขุ่น",
+     "accepted": [
+      "tcbs yellow colonies",
+      "tcbs agar and ttga"
+     ],
+     "key_image": "img/GI-48-KF-009-key.jpg",
+     "key_image_caption": "ตารางในเฉลย: TCBS agar → yellow colonies · TTGA → grey colonies surrounded by cloudy halo"
+    },
+    {
+     "id": "9.3",
+     "prompt": "What is the organism?",
+     "format": "short",
+     "accepted": [
+      "vibrio cholerae",
+      "v. cholerae",
+      "cholera"
+     ],
+     "key_text": "Vibrio cholerae",
+     "source_key": "Vibrio cholerae",
+     "explanation": "ท้องเสียเป็นน้ำหลังไปอินเดีย"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF48",
+     "pages": [
+      4
+     ]
+    },
+    {
+     "paper": "KF48-KEY",
+     "pages": [
+      4
+     ]
+    }
+   ],
+   "tags": [
+    "Vibrio cholerae"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "V. cholerae: TCBS เหลือง · TTGA เทามี halo"
+  },
+  {
+   "id": "GI-48-KF-010",
+   "block": "GI",
+   "cohort": 48,
+   "n": 10,
+   "type": "KF",
+   "case": "A 52-year-old man presents with severe watery diarrhea, a dry mouth and active bowel sounds. He is given ORS and diphenoxylate.",
+   "items": [
+    {
+     "id": "10.1",
+     "prompt": "How does diphenoxylate treat the symptoms? (2 points)",
+     "format": "short",
+     "keywords_all": [
+      "propulsive",
+      "secretion"
+     ],
+     "key_text": "1) Inhibits propulsive peristalsis 2) Decreases GI secretion",
+     "source_key": "1) Inhibits propulsive peristalsis 2) Decreases GI secretion",
+     "explanation": "opioid ที่ผนังลำไส้: ลดการบีบตัวแบบ propulsive และลดการหลั่ง",
+     "accepted": [
+      "inhibit propulsive peristalsis, decrease gi secretion"
+     ]
+    },
+    {
+     "id": "10.2",
+     "prompt": "What are two common side effects of diphenoxylate?",
+     "format": "short",
+     "keywords_all": [
+      "drowsiness",
+      "addiction"
+     ],
+     "key_text": "Drowsiness, addiction",
+     "source_key": "Drowsiness, addiction",
+     "explanation": "ผสม atropine จึงมีฤทธิ์ anticholinergic ด้วย · ยาในกลุ่มนี้อาจทำให้เสพติด (abuse/addiction)",
+     "accepted": [
+      "drowsiness and addiction",
+      "drowsiness, addiction"
+     ],
+     "key_image": "img/GI-48-KF-010-key.jpg",
+     "key_image_caption": "ข้อความในเฉลย: both drugs can produce abuse/addiction · High doses: CNS effects และ anticholinergic effects (จาก atropine) · Overdose"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF48",
+     "pages": [
+      5
+     ]
+    },
+    {
+     "paper": "KF48-KEY",
+     "pages": [
+      5
+     ]
+    }
+   ],
+   "tags": [
+    "diphenoxylate",
+    "ORS"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "diphenoxylate: opioid ลด propulsion/secretion · ง่วง เสพติด"
+  },
+  {
+   "id": "GI-48-KF-011",
+   "block": "GI",
+   "cohort": 48,
+   "n": 11,
+   "type": "KF",
+   "case": "Write the mechanism of action of each drug.",
+   "items": [
+    {
+     "id": "11.1",
+     "prompt": "Diphenhydramine",
+     "format": "short",
+     "keywords_all": [
+      "h1"
+     ],
+     "key_text": "Inhibits H₁ and M₁ receptors",
+     "source_key": "Inhibits H₁ and M₁ receptors",
+     "explanation": "antihistamine รุ่นแรก ต้านทั้ง H₁ และ muscarinic",
+     "accepted": [
+      "h1 and m1 antagonist"
+     ]
+    },
+    {
+     "id": "11.2",
+     "prompt": "Metoclopramide",
+     "format": "short",
+     "keywords_all": [
+      "d2"
+     ],
+     "key_text": "Inhibits D₂ receptors at the CTZ",
+     "source_key": "Inhibits D₂ receptors at the CTZ",
+     "explanation": "ต้าน D₂ ที่ CTZ (และ 5-HT₄ agonist)",
+     "accepted": [
+      "d2 antagonist"
+     ]
+    },
+    {
+     "id": "11.3",
+     "prompt": "Ondansetron",
+     "format": "short",
+     "keywords_all": [
+      "5-ht3"
+     ],
+     "key_text": "Inhibits 5-HT₃ receptors at intestinal afferent (vagal) nerves",
+     "source_key": "Inhibits 5-HT₃ receptors at intestinal afferent (vagal) nerves",
+     "explanation": "ต้าน 5-HT₃ ที่ vagal afferent และ CTZ",
+     "accepted": [
+      "5ht3 antagonist",
+      "5-ht3 antagonist",
+      "5-ht₃ antagonist"
+     ]
+    },
+    {
+     "id": "11.4",
+     "prompt": "Promethazine",
+     "format": "short",
+     "keywords_all": [
+      "d2",
+      "h1"
+     ],
+     "key_text": "Inhibits D₂, H₁, M₁ and α₁ receptors",
+     "source_key": "Inhibits D₂, H₁, M₁ and α₁ receptors",
+     "explanation": "phenothiazine ที่ต้านหลายตัวรับ",
+     "accepted": [
+      "d2 h1 m1 alpha1 antagonist"
+     ]
+    },
+    {
+     "id": "11.5",
+     "prompt": "Vitamin B₆",
+     "format": "short",
+     "keywords_all": [
+      "inhibitory",
+      "gaba"
+     ],
+     "key_text": "↑ Inhibitory neurotransmitter (GABA)",
+     "source_key": "↑ Inhibitory neurotransmitter (GABA)",
+     "explanation": "B₆ เป็น cofactor ของ glutamate decarboxylase สร้าง GABA",
+     "accepted": [
+      "increase gaba",
+      "gaba synthesis"
+     ]
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF48",
+     "pages": [
+      5
+     ]
+    },
+    {
+     "paper": "KF48-KEY",
+     "pages": [
+      5
+     ]
+    }
+   ],
+   "tags": [
+    "antiemetics",
+    "pharmacology"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "diphenhydramine H₁/M₁ · metoclopramide D₂ · ondansetron 5-HT₃ · promethazine D₂/H₁/M₁/α₁ · B₆ GABA"
+  },
+  {
+   "id": "GI-48-KF-012",
+   "block": "GI",
+   "cohort": 48,
+   "n": 12,
+   "type": "KF",
+   "case": "A person eats a lot of egg white.",
+   "items": [
+    {
+     "id": "12.1",
+     "prompt": "Avidin binds which cofactor?",
+     "format": "short",
+     "accepted": [
+      "biotin",
+      "vitamin b7",
+      "biotin (vitamin b7)"
+     ],
+     "key_text": "Biotin (vitamin B₇)",
+     "source_key": "Biotin (vitamin B7)",
+     "explanation": "avidin ในไข่ขาวดิบจับ biotin แน่นมาก"
+    },
+    {
+     "id": "12.2",
+     "prompt": "What abnormality results?",
+     "format": "short",
+     "keywords_all": [
+      "gluconeogenesis",
+      "hypoglycemia"
+     ],
+     "key_text": "Avidin binds biotin → biotin deficiency → ↓ gluconeogenesis → fasting hypoglycemia",
+     "source_key": "Avidin binds biotin → biotin deficiency → ↓ gluconeogenesis → fasting hypoglycemia",
+     "explanation": "ขาด biotin → carboxylase ทำงานไม่ได้ → ↓ gluconeogenesis → น้ำตาลต่ำตอนอดอาหาร"
+    },
+    {
+     "id": "12.3",
+     "prompt": "What does this cofactor do?",
+     "format": "short",
+     "keywords_all": [
+      "carboxylase"
+     ],
+     "key_text": "Coenzyme of carboxylases: fatty acid synthesis (acetyl-CoA carboxylase), gluconeogenesis (pyruvate carboxylase), fatty acid oxidation (propionyl-CoA carboxylase)",
+     "source_key": "Coenzyme of carboxylases: fatty acid synthesis (acetyl-CoA carboxylase), gluconeogenesis (pyruvate carboxylase), fatty acid oxidation (propionyl-CoA carboxylase)",
+     "explanation": "biotin เป็นโคเอนไซม์ของ carboxylase",
+     "accepted": [
+      "coenzyme for carboxylase"
+     ]
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF48",
+     "pages": [
+      6
+     ]
+    },
+    {
+     "paper": "KF48-KEY",
+     "pages": [
+      6
+     ]
+    }
+   ],
+   "tags": [
+    "biotin"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "avidin จับ biotin → ขาด biotin → ↓ gluconeogenesis"
+  },
+  {
+   "id": "GI-48-KF-013",
+   "block": "GI",
+   "cohort": 48,
+   "n": 13,
+   "type": "KF",
+   "case": "A male patient has colon cancer (lecture: basic clinical nutrition). How does his metabolism change compared with normal? (increase, decrease, no change)",
+   "items": [
+    {
+     "id": "13.1",
+     "prompt": "Metabolic rate",
+     "format": "short",
+     "accepted": [
+      "increase",
+      "increased",
+      "increases",
+      "เพิ่ม"
+     ],
+     "key_text": "Increase (AI draft)",
+     "source_key": "(ไม่มีเฉลยในต้นฉบับ)",
+     "explanation": "ผู้ป่วยมะเร็งมักมี hypermetabolism (cancer cachexia) · ข้อนี้ไม่มีเฉลยต้นฉบับ AI ร่างให้"
+    },
+    {
+     "id": "13.2",
+     "prompt": "Insulin",
+     "format": "short",
+     "accepted": [
+      "increase",
+      "increased",
+      "increases",
+      "เพิ่ม"
+     ],
+     "key_text": "Increase, with insulin resistance (AI draft)",
+     "source_key": "(ไม่มีเฉลยในต้นฉบับ)",
+     "explanation": "เหมือนภาวะ stress: insulin สูงแต่ดื้อ (ดูตาราง Starvation vs Stress ในเฉลยรุ่น 52) · AI ร่างให้"
+    },
+    {
+     "id": "13.3",
+     "prompt": "Blood glucose",
+     "format": "short",
+     "accepted": [
+      "increase",
+      "increased",
+      "increases",
+      "เพิ่ม"
+     ],
+     "key_text": "Increase (AI draft)",
+     "source_key": "(ไม่มีเฉลยในต้นฉบับ)",
+     "explanation": "insulin resistance → น้ำตาลในเลือดสูง · AI ร่างให้"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "KF48",
+     "pages": [
+      6
+     ]
+    },
+    {
+     "paper": "KF48-KEY",
+     "pages": [
+      6
+     ]
+    }
+   ],
+   "tags": [
+    "cancer cachexia",
+    "nutrition"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "มะเร็ง: metabolic rate↑ insulin↑ (ดื้อ) glucose↑ (คล้าย stress)",
+   "audit_note": "ข้อนี้ต้นฉบับไม่มีเฉลย AI ร่างคำตอบจากหลัก stress metabolism ให้ผู้ตรวจยืนยัน"
+  }
+ ]
+}
