@@ -27,7 +27,10 @@ def norm(s):
     return s.strip()
 
 
-def parse(set_id, bare_numbers=False):
+PART = re.compile(r"^PART\s*\d+\b", re.I)
+
+
+def parse(set_id, bare_numbers=False, part_offsets=None):
     raw = AUD / "raw" / set_id
     lines = []
     for p in sorted(raw.glob("exam_p*.txt")):
@@ -37,8 +40,14 @@ def parse(set_id, bare_numbers=False):
 
     qs, cur, field, expect = [], None, None, 1
     preamble = []
+    offsets, part, fresh = list(part_offsets or [0]), 0, False
     for page, ln in lines:
         t = norm(ln)
+        if part_offsets and PART.match(t):
+            # files that join several cohorts restart at 1 in each part: number = part offset + printed number
+            part = min(part + 1, len(offsets) - 1) if qs else part
+            expect, cur, field, fresh = 1, None, None, True
+            continue
         bare = bare_numbers and re.fullmatch(r"\d{1,3}", t) and int(t) == expect
         if bare:
             t = f"{t}."  # some cohorts print the number alone on its line ("12" then the stem)
@@ -51,11 +60,16 @@ def parse(set_id, bare_numbers=False):
         # accept a jump forward when the line reads like a question, not like a numbered list item.
         n = int(m.group(1)) if m else 0
         jump = m and expect < n <= expect + 20 and len(m.group(2)) >= 15 and re.search(r"[A-Za-zก-๙]{3}", m.group(2)) and (len(cur["choices"]) >= 2 or not cur["choices"] if cur is not None else re.search(r"[A-Za-z]{3}", m.group(2)))
+        if fresh and m and len(m.group(2)) >= 15:
+            expect = n  # a part may start at any number (e.g. "PART 4" starts at 34)
         if m and (n == expect or (jump and not (cur is not None and field != "stem" and cur["choices"] and len(cur["choices"]) < 2))):
             if cur is None and int(m.group(1)) == 1 and not bare and not re.search(r"[A-Za-z]{3}", m.group(2)):
                 preamble.append(t)  # header "1. ข้อสอบมีทั้งหมด 81 ข้อ" etc.
                 continue
-            cur = {"number": m.group(1), "page": page, "stem": m.group(2), "choices": {}, "raw_tail": ""}
+            fresh = False
+            cur = {"number": str(offsets[part] + n), "page": page, "stem": m.group(2), "choices": {}, "raw_tail": ""}
+            if part_offsets:
+                cur["printed"] = f"part {part + 1} · ข้อ {n}"
             qs.append(cur)
             field = "stem"
             expect = n + 1
@@ -89,8 +103,9 @@ def main():
     ap.add_argument("--set", required=True)
     ap.add_argument("--print", action="store_true")
     ap.add_argument("--bare-numbers", action="store_true", help="a line holding only the next question number starts that question")
+    ap.add_argument("--part-offsets", help="files joining several cohorts ('PART 2' lines restart numbering): comma list of number offsets, e.g. 0,100,300,400")
     a = ap.parse_args()
-    d = parse(a.set, a.bare_numbers)
+    d = parse(a.set, a.bare_numbers, [int(x) for x in a.part_offsets.split(",")] if a.part_offsets else None)
     out = AUD / "data" / "work"
     out.mkdir(parents=True, exist_ok=True)
     (out / f"{a.set}.parsed.json").write_text(json.dumps(d, ensure_ascii=False, indent=1), encoding="utf-8")

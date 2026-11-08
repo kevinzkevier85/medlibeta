@@ -23,7 +23,8 @@ def is_pink(r, g, b):
     pink = r >= 220 and 100 <= g <= 215 and b >= 190 and r - g >= 25   # light pink (END) or magenta-pink (GI 52)
     lime = g >= 235 and r >= 180 and b <= 200 and g - b >= 50          # yellow-green highlighter (GI 48)
     salmon = r >= 240 and 185 <= g <= 215 and 175 <= b <= 210 and r - b >= 30   # pale salmon highlighter (GI 44)
-    return pink or lime or salmon
+    yellow = r >= 235 and g >= 185 and b <= 130                                  # yellow highlighter (GI 41-43)
+    return pink or lime or salmon or yellow
 
 
 def pink_fraction(pix, rect):
