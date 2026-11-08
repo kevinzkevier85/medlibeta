@@ -1,0 +1,952 @@
+{
+ "meta": {
+  "set_id": "50_KF",
+  "block": "END",
+  "cohort": 50,
+  "type": "KF",
+  "title": "KF Endocrine · Med PSU 50",
+  "time_limit_min": 90,
+  "generated_by": "auditor/tools/build_kf.py from auditor/data/work/end_50_KF.kf.json — do not edit by hand"
+ },
+ "questions": [
+  {
+   "id": "END-50-KF-001",
+   "block": "END",
+   "cohort": 50,
+   "n": 1,
+   "type": "KF",
+   "case": "Briefly explain the type of receptor and cellular actions of steroid hormones in promoting their cellular responses. (1 point)",
+   "items": [
+    {
+     "id": "1",
+     "prompt": "Type of receptor and cellular action",
+     "format": "short",
+     "keywords_all": [
+      "receptor",
+      "transcription"
+     ],
+     "key_text": "intracellular receptor → form dimerized receptor-ligand complex → move to nucleus and bind specific DNA sequence (steroid response element) → activate or repress gene transcription",
+     "source_key": "Steroid hormones จับกับ intracellular receptor → form dimerized GR ligand complex → เคลื่อนที่ไป nucleus ที่จับ specific DNA sequence คือ \"steroid-response element (SRE)\" → จับกับ DNA แล้วส่งผลให้ activate หรือ repress gene transcription",
+     "explanation": "Steroid ละลายไขมันจึงผ่าน membrane เข้าเซลล์ได้ จับ receptor ในไซโทพลาซึมหรือนิวเคลียส (nuclear receptor superfamily) ได้ ligand–receptor complex ที่ dimerize แล้วจับ response element บน DNA ปรับ gene transcription · ระบบตรวจอัตโนมัติต้องมีทั้งคำว่า receptor และ transcription (ตอบ intracellular หรือ nuclear receptor ก็ได้) · ถ้าตอบ membrane receptor ให้ตัดสินเอง"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF50",
+     "pages": [
+      1
+     ]
+    },
+    {
+     "paper": "KF50-KEY",
+     "pages": [
+      1
+     ]
+    }
+   ],
+   "tags": [
+    "steroid hormone",
+    "nuclear receptor"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "Steroid hormone จับ intracellular (nuclear) receptor → dimerize → เข้า nucleus จับ hormone response element บน DNA → เปิด/ปิด gene transcription"
+  },
+  {
+   "id": "END-50-KF-002",
+   "block": "END",
+   "cohort": 50,
+   "n": 2,
+   "type": "KF",
+   "case": "List 2 hormones that are released into the hypophyseal portal circulation? (1 point)",
+   "items": [
+    {
+     "id": "2.1",
+     "prompt": "Hormone 1",
+     "format": "short",
+     "accepted": [
+      "crh",
+      "grh",
+      "ghrh",
+      "gnrh",
+      "trh",
+      "somatostatin",
+      "dopamine",
+      "corticotropin-releasing",
+      "growth hormone-releasing",
+      "gonadotropin-releasing",
+      "thyrotropin-releasing",
+      "thyrotropin releasing",
+      "corticotropin releasing",
+      "gonadotropin releasing",
+      "growth hormone releasing"
+     ],
+     "source_key": "CRH, GHRH (ลายมือในเฉลย)",
+     "explanation": "ตอบ hypothalamic hormone ตัวใดก็ได้ เช่น TRH, CRH, GnRH, GHRH · ข้อ 2.1 และ 2.2 สลับกันได้"
+    },
+    {
+     "id": "2.2",
+     "prompt": "Hormone 2",
+     "format": "short",
+     "accepted": [
+      "crh",
+      "grh",
+      "ghrh",
+      "gnrh",
+      "trh",
+      "somatostatin",
+      "dopamine",
+      "corticotropin-releasing",
+      "growth hormone-releasing",
+      "gonadotropin-releasing",
+      "thyrotropin-releasing",
+      "thyrotropin releasing",
+      "corticotropin releasing",
+      "gonadotropin releasing",
+      "growth hormone releasing"
+     ],
+     "source_key": "GnRH, TRH (ลายมือในเฉลย)",
+     "explanation": "ตัวอย่างอื่นที่ถูก: ฮอร์โมน hypothalamus ยับยั้ง เช่น somatostatin (GHIH) และ dopamine (PIH) ก็หลั่งเข้า portal เหมือนกัน"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF50",
+     "pages": [
+      1
+     ]
+    },
+    {
+     "paper": "KF50-KEY",
+     "pages": [
+      1
+     ]
+    }
+   ],
+   "tags": [
+    "hypothalamus",
+    "hypophyseal portal"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "Hypothalamic hormone ที่หลั่งเข้า hypophyseal portal: TRH, CRH, GnRH, GHRH (กระตุ้น) และ somatostatin, dopamine (ยับยั้ง) ไปควบคุม anterior pituitary",
+   "audit_note": "เฉลยเขียนด้วยลายมือว่า CRH, GHRH และ GnRH, TRH (ข้อละ 2 ตัว) ตามเฉลยคือฮอร์โมน hypothalamus ชนิดใดก็ได้ 2 ตัว ระบบนับ somatostatin และ dopamine ว่าถูกด้วย (เป็น hypothalamic hormone ที่ไหลเข้า portal เช่นกัน)"
+  },
+  {
+   "id": "END-50-KF-003",
+   "block": "END",
+   "cohort": 50,
+   "n": 3,
+   "type": "KF",
+   "case": "A 13-year-old boy is noted to be extremely tall for his age with frontal bossing, increased hand and foot size, and coarse facial features with a prominent jaw and an enlarged tongue.",
+   "items": [
+    {
+     "id": "3.1",
+     "prompt": "The patient might be diagnosed with",
+     "format": "short",
+     "accepted": [
+      "acromegaly",
+      "gigantism",
+      "giantism"
+     ],
+     "source_key": "Acromegaly\n(สไลด์เฉลย: Gigantism & Acromegaly — due to excess GH production, usually a pituitary adenoma)",
+     "key_image": "img/END-50-KF-003-key.jpg",
+     "key_image_caption": "สไลด์ที่แนบในเฉลยต้นฉบับ: Gigantism & Acromegaly (ภาพถ่ายผู้ป่วย prognathism + คำอธิบาย GH excess)",
+     "explanation": "เด็กอายุ 13 ปี growth plate ยังไม่ปิด GH เกินจึงตัวสูงมาก (pituitary gigantism) ร่วมกับลักษณะ acromegaly · เฉลยตอบ acromegaly ระบบนับ gigantism ว่าถูกด้วย"
+    },
+    {
+     "id": "3.2",
+     "prompt": "What hormone is abnormal in this patient?",
+     "format": "short",
+     "accepted": [
+      "growth hormone",
+      "somatotropin",
+      "excess gh",
+      "gh excess",
+      "increased gh",
+      "high gh"
+     ],
+     "source_key": "Growth hormone",
+     "explanation": "GH สูง (และ IGF-1 สูง) จาก pituitary adenoma · ตอบเป็นตัวย่อ GH เพียงอย่างเดียวระบบอาจไม่นับ ให้ตัดสินเองได้"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF50",
+     "pages": [
+      1
+     ]
+    },
+    {
+     "paper": "KF50-KEY",
+     "pages": [
+      1
+     ]
+    }
+   ],
+   "tags": [
+    "acromegaly",
+    "gigantism",
+    "growth hormone"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "GH เกินตั้งแต่ก่อน growth plate ปิด → gigantism (สูงมาก) + acromegalic features (prognathism, frontal bossing, มือเท้าใหญ่, ลิ้นโต) · สาเหตุหลัก pituitary somatotroph adenoma"
+  },
+  {
+   "id": "END-50-KF-004",
+   "block": "END",
+   "cohort": 50,
+   "n": 4,
+   "type": "KF",
+   "case": "case มี nodule at anterior neck ไม่มีอาการอื่น ๆ (1 point)",
+   "items": [
+    {
+     "id": "4.1",
+     "prompt": "Procedure ที่ใช้ในการตรวจทาง pathology",
+     "format": "short",
+     "accepted": [
+      "fine-needle aspiration",
+      "fine needle aspiration",
+      "needle aspiration",
+      "fna",
+      "fnac",
+      "fnab"
+     ],
+     "source_key": "Needle aspiration\nFine needle aspiration เป็นการ dx ก่อนผ่า ตรวจ single thyroid nodule ดูว่าเป็น goiter หรือ Tumor ถ้าเป็น Tumor → malignant / Benign",
+     "explanation": "FNA ให้การวินิจฉัยทางเซลล์ได้ก่อนผ่าตัด (ตัดสินใจว่าต้องผ่าหรือไม่) · ในเวชปฏิบัติมักส่ง TSH + ultrasound ก่อน FNA"
+    },
+    {
+     "id": "4.2a",
+     "prompt": "Name a pathological lesion — Non-tumor",
+     "format": "short",
+     "accepted": [
+      "nodular goiter",
+      "multinodular goiter",
+      "colloid nodule",
+      "colloid goiter",
+      "thyroid cyst",
+      "hashimoto",
+      "thyroiditis"
+     ],
+     "source_key": "Nodular goiter",
+     "explanation": "Non-tumor: (multi)nodular goiter, colloid nodule, cyst, nodular thyroiditis"
+    },
+    {
+     "id": "4.2b",
+     "prompt": "Name a pathological lesion — Tumor",
+     "format": "short",
+     "accepted": [
+      "papillary",
+      "follicular adenoma",
+      "follicular carcinoma",
+      "medullary",
+      "adenoma",
+      "carcinoma",
+      "anaplastic",
+      "hurthle"
+     ],
+     "source_key": "Papillary carcinoma",
+     "explanation": "Tumor: papillary carcinoma (มะเร็งไทรอยด์ที่พบบ่อยสุด), follicular adenoma/carcinoma, medullary carcinoma"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF50",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "KF50-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [
+    "thyroid nodule",
+    "FNA"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "Solitary thyroid nodule: FNA เป็น diagnostic procedure ก่อนผ่าตัด แยก goiter / tumor และถ้าเป็น tumor แยก malignant vs benign · non-tumor: nodular goiter, colloid nodule, cyst · tumor: follicular adenoma, papillary carcinoma"
+  },
+  {
+   "id": "END-50-KF-005",
+   "block": "END",
+   "cohort": 50,
+   "n": 5,
+   "type": "KF",
+   "case": "Name thyroid hormone or antithyroid drug (only 1) that most likely causes the following adverse drug reaction (1 point)",
+   "items": [
+    {
+     "id": "5.1",
+     "prompt": "Cardiac arrhythmia",
+     "format": "short",
+     "accepted": [
+      "levothyroxine",
+      "thyroxine",
+      "liothyronine",
+      "triiodothyronine",
+      "thyroid hormone",
+      "t3",
+      "t4"
+     ],
+     "source_key": "ยากลุ่ม Thyroid hormone: T3, T4 (Thyroxine), Liothyronine",
+     "explanation": "Thyroid hormone เพิ่ม β1-receptor expression ที่หัวใจและ metabolic demand → tachycardia, atrial fibrillation โดยเฉพาะ overdose หรือผู้ป่วยสูงอายุ"
+    },
+    {
+     "id": "5.2",
+     "prompt": "Agranulocytosis",
+     "format": "short",
+     "accepted": [
+      "methimazole",
+      "mmi",
+      "propylthiouracil",
+      "ptu",
+      "carbimazole",
+      "thiamazole"
+     ],
+     "source_key": "MMI = Methimazole\nPTU = Propylthiouracil",
+     "explanation": "Thionamide (methimazole, PTU, carbimazole) ทำให้เกิด agranulocytosis ได้ (พบน้อยแต่รุนแรง) · ผู้ป่วยที่ไข้/เจ็บคอต้องตรวจ CBC ทันที"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF50",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "KF50-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [
+    "thyroid drugs",
+    "adverse drug reaction"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "Thyroid hormone (T3/T4) ขนาดเกิน → tachyarrhythmia (เช่น AF) · antithyroid (methimazole/PTU) → agranulocytosis"
+  },
+  {
+   "id": "END-50-KF-006",
+   "block": "END",
+   "cohort": 50,
+   "n": 6,
+   "type": "KF",
+   "case": "Addison's disease is classically seen with hyperpigmentation caused by Hormone A deficiency that cause increasing hormone B and hormone B bind with C receptor in D cell. What is A, B, C and D",
+   "items": [
+    {
+     "id": "6.A",
+     "prompt": "Hormone A is",
+     "format": "short",
+     "accepted": [
+      "cortisol"
+     ],
+     "source_key": "Cortisol",
+     "explanation": "Primary adrenal insufficiency → cortisol ต่ำ"
+    },
+    {
+     "id": "6.B",
+     "prompt": "Hormone B is",
+     "format": "short",
+     "accepted": [
+      "acth",
+      "adrenocorticotropic",
+      "corticotropin"
+     ],
+     "source_key": "Adrenocorticotropic hormone (ACTH)",
+     "explanation": "ขาด feedback → ACTH (จาก POMC) สูง"
+    },
+    {
+     "id": "6.C",
+     "prompt": "Hormone (receptor) C is",
+     "format": "short",
+     "accepted": [
+      "melanocortin-1",
+      "melanocortin 1",
+      "mc1r",
+      "mc1"
+     ],
+     "source_key": "MC1R",
+     "explanation": "ACTH มีลำดับเดียวกับ α-MSH จึงจับ melanocortin-1 receptor (MC1R) ได้"
+    },
+    {
+     "id": "6.D",
+     "prompt": "D cells is",
+     "format": "short",
+     "accepted": [
+      "melanocyte"
+     ],
+     "source_key": "Melanocyte",
+     "explanation": "MC1R อยู่บน melanocyte → สร้าง melanin มากขึ้น → ผิวคล้ำ"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF50",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "KF50-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [
+    "Addison's disease",
+    "ACTH",
+    "MC1R"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "Cortisol ↓ → ไม่มี negative feedback → POMC/ACTH ↑ → ACTH จับ MC1R บน melanocyte → melanin ↑"
+  },
+  {
+   "id": "END-50-KF-007",
+   "block": "END",
+   "cohort": 50,
+   "n": 7,
+   "type": "KF",
+   "case": "A 65-year-old man presents with severe headache. PE: BP 180/100 mmHg, HR 80 bpm. Lab: Morning cortisol 15 ug/dL (Ref 6 – 23), plasma renin activity 1.2 ng/mL/hr (Ref 1.9 – 3.7), serum aldosterone 44 ng/dL (Ref 4.0 – 31.0), serum potassium 2.5 mmol/L.",
+   "items": [
+    {
+     "id": "7.1",
+     "prompt": "จากอาการข้างต้น ผู้ป่วยน่าจะเป็น hyperaldosteronism แบบใดต่อไปนี้ (ต้นฉบับพิมพ์ว่า \"hyperthyroidism\" เฉลยขีดฆ่าแก้เป็น aldosteronism)",
+     "format": "select",
+     "max_answers": 1,
+     "options": [
+      {
+       "key": "A",
+       "text": "Primary hyperaldosteronism"
+      },
+      {
+       "key": "B",
+       "text": "Secondary hyperaldosteronism"
+      }
+     ],
+     "answer": [
+      "A"
+     ],
+     "source_key": "A) Primary hyperaldosteronism\n↑ aldosterone, ↓ plasma renin activity",
+     "explanation": "Aldosterone สูงขณะ renin ถูกกด = ต่อมหมวกไตสร้างเองอิสระ (primary) · secondary จะมี renin สูง (เช่น renal artery stenosis, heart failure)"
+    },
+    {
+     "id": "7.2a",
+     "prompt": "Which 2 pathologies are the causes of this patient condition? — ข้อ 1",
+     "format": "short",
+     "accepted": [
+      "adenoma",
+      "hyperplasia",
+      "carcinoma"
+     ],
+     "source_key": "Adrenal cortex adenoma\n(สไลด์เฉลย: Cause — adrenal cortex adenoma / idiopathic adrenal hyperplasia (unilateral or bilateral) / aldosterone-producing adrenocortical carcinoma / ectopic aldosterone-producing adenoma or carcinoma (rare); ไฮไลต์ที่คำว่า bilateral)",
+     "key_image": "img/END-50-KF-007-key.jpg",
+     "key_image_caption": "สไลด์ที่แนบในเฉลยต้นฉบับ: Causes of primary hyperaldosteronism",
+     "explanation": "ที่พบบ่อยที่สุด 2 อย่าง: aldosterone-producing adrenal adenoma (Conn syndrome) และ bilateral (idiopathic) adrenal hyperplasia · carcinoma อยู่ในสไลด์เฉลยเป็นสาเหตุที่หายาก ระบบนับว่าถูกด้วย · ข้อ 7.2a/7.2b สลับกันได้"
+    },
+    {
+     "id": "7.2b",
+     "prompt": "Which 2 pathologies are the causes of this patient condition? — ข้อ 2",
+     "format": "short",
+     "accepted": [
+      "adenoma",
+      "hyperplasia",
+      "carcinoma"
+     ],
+     "source_key": "Idiopathic adrenal hyperplasia (bilateral)\n(ไฮไลต์ที่ bilateral ในสไลด์เฉลย)",
+     "explanation": "ดูคำอธิบายข้อ 7.2a — ตอบสาเหตุที่ต่างจากข้อก่อน (adenoma กับ hyperplasia)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF50",
+     "pages": [
+      3
+     ]
+    },
+    {
+     "paper": "KF50-KEY",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [
+    "hyperaldosteronism",
+    "Conn syndrome"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "Aldosterone สูง + renin ต่ำ + K⁺ ต่ำ = primary hyperaldosteronism (ต่อมหมวกไตสร้างเอง) · สาเหตุ: adrenal cortex adenoma (Conn), idiopathic (bilateral) adrenal hyperplasia"
+  },
+  {
+   "id": "END-50-KF-008",
+   "block": "END",
+   "cohort": 50,
+   "n": 8,
+   "type": "KF",
+   "case": "A 45-year-old woman presents with hypercholesterolemia, round face and loss of diurnal cortisol rhythm. No detect in plasma ACTH. Give the most likely result in these test.",
+   "items": [
+    {
+     "id": "8.1",
+     "prompt": "Low dose dexamethasone suppression test",
+     "format": "short",
+     "accepted": [
+      "no suppres",
+      "not suppres",
+      "non suppres",
+      "un suppres",
+      "ไม่ถูกกด",
+      "ไม่ suppres",
+      "ไม่ลด"
+     ],
+     "source_key": "no suppression\n↑ cortisol, ↓ ACTH, dx: Cushing's syndrome จาก adrenal tumor",
+     "explanation": "Adrenal tumor สร้าง cortisol อัตโนมัติ ไม่ขึ้นกับ ACTH → cortisol ไม่ลดหลังให้ dexamethasone ขนาดต่ำ"
+    },
+    {
+     "id": "8.2",
+     "prompt": "High dose dexamethasone suppression test (ต้นฉบับพิมพ์เลขข้อซ้ำเป็น 8.1)",
+     "format": "short",
+     "accepted": [
+      "no suppres",
+      "not suppres",
+      "non suppres",
+      "un suppres",
+      "ไม่ถูกกด",
+      "ไม่ suppres",
+      "ไม่ลด"
+     ],
+     "source_key": "no suppression",
+     "explanation": "Pituitary adenoma (Cushing's disease) จะ suppress ได้ด้วย high dose ส่วน adrenal tumor / ectopic ACTH จะไม่ suppress"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF50",
+     "pages": [
+      3
+     ]
+    },
+    {
+     "paper": "KF50-KEY",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [
+    "Cushing's syndrome",
+    "dexamethasone suppression test"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "ACTH undetectable + cortisol สูง = ACTH-independent Cushing's (adrenal tumor) → ต่อมสร้าง cortisol เอง ไม่ตอบ dexamethasone ทั้ง low และ high dose"
+  },
+  {
+   "id": "END-50-KF-009",
+   "block": "END",
+   "cohort": 50,
+   "n": 9,
+   "type": "KF",
+   "case": "Filling the drug name that involved in the mechanism of action or adverse drug reaction in the blank.",
+   "items": [
+    {
+     "id": "9.1",
+     "prompt": "A drug that inhibits multiple enzymes involved in the adrenal steroid synthesis and can cause liver damage",
+     "format": "short",
+     "accepted": [
+      "ketoconazole"
+     ],
+     "source_key": "Ketoconazole",
+     "key_image": "img/END-50-KF-009-key.jpg",
+     "key_image_caption": "แผนภาพ adrenal steroid synthesis ที่แนบในเฉลยต้นฉบับ (Drugs Ther Perspect 2012;37:55–64) — เครื่องหมาย ✗ คือเอนไซม์ที่ ketoconazole ยับยั้ง",
+     "explanation": "Ketoconazole (imidazole antifungal) ยับยั้ง P450scc, 17α-hydroxylase, 17,20-lyase, 11β-hydroxylase และ 18-hydroxylase ลดทั้ง cortisol/androgen · ADR: hepatotoxicity, adrenal insufficiency"
+    },
+    {
+     "id": "9.2",
+     "prompt": "A drug that enhances Na reabsorption at kidney and is used to treat mineralocorticoid deficiency",
+     "format": "short",
+     "accepted": [
+      "fludrocortisone"
+     ],
+     "source_key": "Fludrocortisone\nสไลด์เฉลย: synthetic mineralocorticoid (contain both GC and MC activity); given by oral (short half-life: 0.5 h); used as replacement therapy for defective aldosterone production; adverse effects: excessive urinary Na⁺ retention and K⁺ loss",
+     "key_image": "img/END-50-KF-009-key-b.jpg",
+     "key_image_caption": "สไลด์ Fludrocortisone ที่แนบในเฉลยต้นฉบับ",
+     "explanation": "Fludrocortisone ออกฤทธิ์ mineralocorticoid สูง กิน ใช้ทดแทนใน Addison's / aldosterone deficiency · ADR: Na⁺ retention, hypokalemia, hypertension"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF50",
+     "pages": [
+      3
+     ]
+    },
+    {
+     "paper": "KF50-KEY",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [
+    "adrenal steroid synthesis inhibitor",
+    "mineralocorticoid"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "Ketoconazole ยับยั้ง CYP หลายตัวในการสร้าง steroid (hepatotoxicity) · Fludrocortisone = synthetic mineralocorticoid ใช้ทดแทน"
+  },
+  {
+   "id": "END-50-KF-010",
+   "block": "END",
+   "cohort": 50,
+   "n": 10,
+   "type": "KF",
+   "case": "A 20-year-old male patient with T1DM (Diabetes mellitus Type 1) is brought to emergency room for abnormal pain, nausea, and vomiting. Answer the following question. Fill in the blanks in the table below. (normal/increased/decreased)",
+   "items": [
+    {
+     "id": "10.1",
+     "prompt": "Serum ketone",
+     "format": "short",
+     "accepted": [
+      "increased",
+      "increase",
+      "high",
+      "สูง",
+      "เพิ่ม"
+     ],
+     "source_key": "Increased",
+     "explanation": "ขาด insulin + glucagon สูง → β-oxidation → ketone bodies มากขึ้น"
+    },
+    {
+     "id": "10.2",
+     "prompt": "Blood pH",
+     "format": "short",
+     "accepted": [
+      "decreased",
+      "decrease",
+      "low",
+      "ต่ำ",
+      "ลด"
+     ],
+     "source_key": "Decreased",
+     "explanation": "Ketoacid (β-hydroxybutyrate, acetoacetate) → high anion gap metabolic acidosis"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF50",
+     "pages": [
+      4
+     ]
+    },
+    {
+     "paper": "KF50-KEY",
+     "pages": [
+      4
+     ]
+    }
+   ],
+   "tags": [
+    "DKA",
+    "T1DM"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "T1DM ขาด insulin → lipolysis → ketone ↑ → metabolic acidosis (pH ↓) = DKA"
+  },
+  {
+   "id": "END-50-KF-011",
+   "block": "END",
+   "cohort": 50,
+   "n": 11,
+   "type": "KF",
+   "case": "A 60-year-old man with polyuria, polydipsia, and plasma glucose level of 156 mg/dL. The physician prescribes metformin and saxagliptin, give the mechanism of action of these drugs.",
+   "items": [
+    {
+     "id": "11.1",
+     "prompt": "Metformin — mechanism of action",
+     "format": "short",
+     "accepted": [
+      "ampk",
+      "gluconeogenesis",
+      "insulin sensitivity",
+      "insulin sensitizer",
+      "hepatic glucose"
+     ],
+     "key_text": "Activate AMPK at liver and muscle to increase insulin sensitivity",
+     "source_key": "Activate AMPK receptor at liver and muscle to increase insulin sensitivity",
+     "explanation": "Metformin กระตุ้น AMPK → ลด hepatic gluconeogenesis และเพิ่ม insulin sensitivity ที่กล้ามเนื้อ ไม่กระตุ้นการหลั่ง insulin จึงไม่ค่อยทำให้ hypoglycemia"
+    },
+    {
+     "id": "11.2",
+     "prompt": "Saxagliptin — mechanism of action",
+     "format": "short",
+     "accepted": [
+      "dpp-4",
+      "dpp4",
+      "dpp 4",
+      "dipeptidyl peptidase"
+     ],
+     "key_text": "Inhibit DPP-4 enzyme that inactivates incretin → longer half-life of incretin → decrease glucagon release, decrease gastric emptying → early satiety → decrease food intake → decrease blood glucose",
+     "source_key": "Inhibit DPP-4 enzyme that inactived incretin\ninhibit DPP-4 enzyme that inactived incretin → longer half-life of incretin → decrease glucagon release, decrease gastric emptying → early satiety → decrease food intake → decrease blood glucose",
+     "explanation": "ยับยั้ง DPP-4 ที่ทำลาย GLP-1/GIP → incretin อยู่นาน → insulin หลั่งตามระดับกลูโคส, glucagon ลด, gastric emptying ช้าลง"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF50",
+     "pages": [
+      4
+     ]
+    },
+    {
+     "paper": "KF50-KEY",
+     "pages": [
+      4
+     ]
+    }
+   ],
+   "tags": [
+    "metformin",
+    "DPP-4 inhibitor"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "Metformin: AMPK ↑ → hepatic gluconeogenesis ↓, insulin sensitivity ↑ · Saxagliptin: DPP-4 inhibitor → incretin (GLP-1/GIP) อยู่นานขึ้น"
+  },
+  {
+   "id": "END-50-KF-012",
+   "block": "END",
+   "cohort": 50,
+   "n": 12,
+   "type": "KF",
+   "case": "Mechanism to prevent accumulation of excess uncertificated (unesterified) cholesterol in hepatocytes.",
+   "items": [
+    {
+     "id": "12.1",
+     "prompt": "Mechanism 1",
+     "format": "short",
+     "accepted": [
+      "acat",
+      "acyl coa",
+      "esterif",
+      "cholesteryl ester",
+      "cholesterol ester",
+      "hmg",
+      "ldl receptor",
+      "ldlr",
+      "bile acid",
+      "vldl",
+      "abca1"
+     ],
+     "key_text": "เพิ่ม activity ของ ACAT (Acyl-CoA cholesterol acyltransferase) เปลี่ยน free cholesterol → cholesteryl ester",
+     "source_key": "เพิ่ม activity ของ Acyl CoA [เปลี่ยน free cholesterol → Cholesteryl ester]",
+     "explanation": "ACAT (Acyl-CoA:cholesterol acyltransferase) esterify free cholesterol เป็น cholesteryl ester เก็บใน lipid droplet · ข้อ 12.1/12.2 สลับกันได้"
+    },
+    {
+     "id": "12.2",
+     "prompt": "Mechanism 2",
+     "format": "short",
+     "accepted": [
+      "acat",
+      "acyl coa",
+      "esterif",
+      "cholesteryl ester",
+      "cholesterol ester",
+      "hmg",
+      "ldl receptor",
+      "ldlr",
+      "bile acid",
+      "vldl",
+      "abca1"
+     ],
+     "key_text": "ลดการสร้าง HMG-CoA reductase → การสังเคราะห์ cholesterol ลดลง (เพิ่มเติม: ลด LDL receptor → นำ lipoprotein ที่มี cholesterol เข้าเซลล์ลดลง)",
+     "source_key": "ลดการสร้าง HMG CoA reductase [HMG CoA reductase ↓ → การสังเคราะห์ cholesterol ↓]\nเพิ่มเติม: ลดการสร้าง LDL receptor [LDL R ↓ → นำ lipoprotein ที่มี cholesterol เข้า cell ลดลง]",
+     "explanation": "Cholesterol ในเซลล์สูง → SREBP-2 ถูกกด → HMG-CoA reductase ลดลง (สังเคราะห์น้อยลง) และ LDL receptor ลดลง (รับเข้าน้อยลง)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF50",
+     "pages": [
+      4
+     ]
+    },
+    {
+     "paper": "KF50-KEY",
+     "pages": [
+      4
+     ]
+    }
+   ],
+   "tags": [
+    "cholesterol",
+    "hepatocyte"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "Free cholesterol ล้นในเซลล์ตับ → ACAT esterify เก็บเป็น cholesteryl ester + ยับยั้ง HMG-CoA reductase (feedback) + ลด LDL receptor (SREBP-2) · อื่น ๆ: เปลี่ยนเป็น bile acid, ส่งออกเป็น VLDL, ABCA1 → HDL",
+   "audit_note": "ต้นฉบับมีช่องตอบ 2 บรรทัด เฉลยลายมือให้ 2 ข้อ (ACAT, HMG-CoA reductase) และเขียน \"เพิ่มเติม\" ว่าลด LDL receptor ได้อีกข้อ ระบบตรวจอัตโนมัตินับทั้งสามข้อนี้ และกลไกอื่นที่ถูก (bile acid, VLDL, ABCA1) ให้ตัดสินเอง"
+  },
+  {
+   "id": "END-50-KF-013",
+   "block": "END",
+   "cohort": 50,
+   "n": 13,
+   "type": "KF",
+   "case": "ให้ยา Simvastatin + Gemfibrozil ถามว่า",
+   "items": [
+    {
+     "id": "13.1",
+     "prompt": "Mechanism of drug interaction ของยาทั้งสองตัว",
+     "format": "short",
+     "accepted": [
+      "oatp1b1",
+      "oatp"
+     ],
+     "key_text": "Gemfibrozil inhibits OATP1B1 (hepatic uptake transporter of simvastatin) → decreases hepatic first-pass uptake/metabolism of simvastatin",
+     "source_key": "Gemfibrozil inhibit OATP1B1 transporter ซึ่งเป็น uptake transporter ของ simvastatin ใน 1st pass hepatic metabolism",
+     "explanation": "Gemfibrozil (และ glucuronide) ยับยั้ง OATP1B1 ที่พา simvastatin acid เข้าตับ และยับยั้ง glucuronidation/CYP2C8 → first-pass ลดลง · ระบบตรวจนับเมื่อมีคำว่า OATP"
+    },
+    {
+     "id": "13.2",
+     "prompt": "Result of drug interaction",
+     "format": "short",
+     "accepted": [
+      "increased simvasta",
+      "increase simvasta",
+      "↑simvasta",
+      "↑ plasma simvasta",
+      "higher simvasta",
+      "high simvasta",
+      "elevated simvasta",
+      "simvasta increase",
+      "simvasta ↑",
+      "tin ↑",
+      "tin increase",
+      "vel increase",
+      "vel ↑",
+      "myopathy",
+      "rhabdomyolysis"
+     ],
+     "source_key": "↑ plasma simvastatin",
+     "explanation": "ระดับ simvastatin ในพลาสมาสูงขึ้น → เสี่ยง myopathy และ rhabdomyolysis จึงไม่ควรใช้คู่กัน"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF50",
+     "pages": [
+      4
+     ]
+    },
+    {
+     "paper": "KF50-KEY",
+     "pages": [
+      4
+     ]
+    }
+   ],
+   "tags": [
+    "drug interaction",
+    "statin",
+    "fibrate"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "Gemfibrozil ยับยั้ง OATP1B1 (hepatic uptake transporter ของ statin) และ glucuronidation → simvastatin ในเลือดสูง → เสี่ยง myopathy/rhabdomyolysis"
+  },
+  {
+   "id": "END-50-KF-014",
+   "block": "END",
+   "cohort": 50,
+   "n": 14,
+   "type": "KF",
+   "case": "Please fill the appropriate answer completely in the blank.",
+   "items": [
+    {
+     "id": "14.1",
+     "prompt": "Receptor on parathyroid gland",
+     "format": "short",
+     "accepted": [
+      "casr",
+      "calcium-sensing",
+      "calcium sensing",
+      "calcium-sensor",
+      "calcium sensor"
+     ],
+     "source_key": "CaSR",
+     "explanation": "CaSR (calcium-sensing receptor, GPCR) บน chief cell · Ca²⁺ สูงจับ CaSR → กด PTH secretion"
+    },
+    {
+     "id": "14.2",
+     "prompt": "2 Condition/hormonal change to decrease secretion of parathyroid hormone",
+     "format": "short",
+     "accepted": [
+      "hypercalcemia",
+      "hypercalcaemia",
+      "high calcium",
+      "high plasma calcium",
+      "increased calcium",
+      "increase calcium",
+      "high ca2+",
+      "increased ca2+",
+      "increased plasma ca",
+      "high plasma ca",
+      "increase ca2+",
+      "↑ca",
+      "↑ plasma ca",
+      "↑ ca2+",
+      "ca2+ ↑",
+      "ca ↑",
+      "high calcitriol",
+      "↑ calcitriol",
+      "increased calcitriol",
+      "calcitriol ↑",
+      "high vitamin d",
+      "↑ vitamin d",
+      "increased vitamin d",
+      "vitamin d ↑"
+     ],
+     "key_text": "↑ plasma Ca²⁺ (เฉลยระบุข้อเดียว) · อีกข้อ: ↑ calcitriol (1,25-(OH)₂ vitamin D)",
+     "source_key": "↑ plasma Ca²⁺",
+     "explanation": "PTH ลดลงเมื่อ (1) plasma Ca²⁺ สูง ผ่าน CaSR และ (2) calcitriol สูง (negative feedback ที่ PTH gene) · เฉลยต้นฉบับเขียนไว้เพียง ↑ plasma Ca²⁺"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF50",
+     "pages": [
+      5
+     ]
+    },
+    {
+     "paper": "KF50-KEY",
+     "pages": [
+      5
+     ]
+    }
+   ],
+   "tags": [
+    "parathyroid",
+    "CaSR"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "Chief cell ของ parathyroid รับรู้ Ca²⁺ ผ่าน calcium-sensing receptor (CaSR) · Ca²⁺ สูง (และ calcitriol สูง) → PTH ลดลง",
+   "audit_note": "โจทย์ 14.2 ถาม 2 conditions แต่เฉลยลายมือเขียนไว้เพียงข้อเดียวคือ ↑ plasma Ca²⁺ ระบบจึงนับคำตอบที่เกี่ยวกับ Ca²⁺ สูง หรือ calcitriol / vitamin D สูง (ข้อที่สองที่ถูกตามสรีรวิทยา) ว่าถูก ถ้าตอบ 2 ข้อให้เทียบกับ explanation เอง"
+  }
+ ]
+}

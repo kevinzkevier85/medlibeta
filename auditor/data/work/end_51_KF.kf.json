@@ -1,0 +1,531 @@
+{
+ "set_id": "end_51_KF",
+ "note": "KF Endocrine Med PSU 51 — written by hand from the exam + key PDFs (every page read by eye, 2026-11-07). The key PDF is the cohort-50 version: only Q1-4, 6 and 9.1 have a usable key; the rest are draft. build_kf.py turns this into data/blocks/END/exams/51_KF.json.",
+ "time_limit_min": 90,
+ "questions": [
+  {
+   "n": 1,
+   "page": 1,
+   "tags": [
+    "hormone transport",
+    "hydrophilic",
+    "hydrophobic"
+   ],
+   "case": "Give an example of hydrophilic and hydrophobic hormones and indicate the form of hormones transported in the circulation. (ตารางในต้นฉบับ: แถว Hydrophilic / Hydrophobic × คอลัมน์ Hormone / Form of transportation)",
+   "key_concept": "Hydrophilic (peptide/catecholamine) ละลายในพลาสมาได้ ลอยเป็น free form · Hydrophobic (steroid, thyroid hormone) ต้องจับ carrier protein ในเลือด",
+   "items": [
+    {
+     "id": "1.1",
+     "prompt": "Hydrophilic hormone (ยกตัวอย่าง 1 ตัว)",
+     "format": "short",
+     "accepted": [
+      "oxytocin",
+      "insulin",
+      "glucagon",
+      "vasopressin",
+      "antidiuretic",
+      "growth hormone",
+      "acth",
+      "adh",
+      "tsh",
+      "lh",
+      "trh",
+      "crh",
+      "hcg",
+      "thyroid stimulating",
+      "fsh",
+      "luteinizing",
+      "follicle stimulating",
+      "prolactin",
+      "parathyroid",
+      "calcitonin",
+      "epinephrine",
+      "adrenaline",
+      "norepinephrine",
+      "noradrenaline",
+      "somatostatin",
+      "gnrh",
+      "ghrh",
+      "peptide"
+     ],
+     "source_key": "Peptide: Oxytocin",
+     "explanation": "Peptide/protein hormone และ catecholamine เป็น hydrophilic เช่น oxytocin, insulin, glucagon, ADH, GH, TSH, epinephrine"
+    },
+    {
+     "id": "1.2",
+     "prompt": "Form of transportation ของ hydrophilic hormone",
+     "format": "short",
+     "accepted": [
+      "free form",
+      "free hormone",
+      "freely dissolved",
+      "dissolved in plasma",
+      "dissolved in blood",
+      "unbound form"
+     ],
+     "source_key": "free form",
+     "explanation": "Hydrophilic ละลายในพลาสมาได้ จึงเดินทางเป็น free form (unbound) ไม่ต้องมี carrier"
+    },
+    {
+     "id": "1.3",
+     "prompt": "Hydrophobic hormone (ยกตัวอย่าง 1 ตัว)",
+     "format": "short",
+     "accepted": [
+      "cortisol",
+      "aldosterone",
+      "testosterone",
+      "estradiol",
+      "estrogen",
+      "progesterone",
+      "thyroxine",
+      "triiodothyronine",
+      "thyroid hormone",
+      "vitamin d",
+      "calcitriol",
+      "t3",
+      "t4",
+      "dht",
+      "steroid",
+      "dhea"
+     ],
+     "source_key": "Steroid: Cortisol",
+     "explanation": "Steroid hormone และ thyroid hormone เป็น hydrophobic เช่น cortisol, aldosterone, testosterone, estradiol, progesterone, T3/T4"
+    },
+    {
+     "id": "1.4",
+     "prompt": "Form of transportation ของ hydrophobic hormone",
+     "format": "short",
+     "accepted": [
+      "protein",
+      "carrier",
+      "binding",
+      "albumin",
+      "globulin",
+      "transcortin",
+      "cbg",
+      "shbg",
+      "tbg"
+     ],
+     "source_key": "จับกับ Protein ในกระแสเลือด (bound to carrier protein)",
+     "explanation": "Hydrophobic ละลายน้ำไม่ดี ต้องจับ carrier protein เช่น transcortin (CBG), SHBG, TBG, albumin; free fraction น้อยแต่เป็นส่วนที่ออกฤทธิ์"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "page": 1,
+   "tags": [
+    "thyroid",
+    "follicular cell"
+   ],
+   "case": "Which one of the followings are the main functions of thyroid follicular cell? (ให้วงกลม 4 ข้อ จาก choices 9 ข้อ)",
+   "key_concept": "Follicular cell: นำ iodide เข้า (NIS), สร้าง thyroglobulin, endocytose iodinated thyroglobulin กลับเข้าเซลล์, ตอบสนองต่อ TSH · calcitonin มาจาก parafollicular C cell",
+   "items": [
+    {
+     "id": "2",
+     "prompt": "เลือก 4 ข้อ",
+     "format": "select",
+     "max_answers": 4,
+     "options": [
+      {
+       "key": "A",
+       "text": "synthesize thyroxine"
+      },
+      {
+       "key": "B",
+       "text": "control calcitonin level"
+      },
+      {
+       "key": "C",
+       "text": "synthesize thyroglobulin"
+      },
+      {
+       "key": "D",
+       "text": "take up iodinated thyroglobulin"
+      },
+      {
+       "key": "E",
+       "text": "modulate parathyroid hormone level"
+      },
+      {
+       "key": "F",
+       "text": "transport TSH"
+      },
+      {
+       "key": "G",
+       "text": "take up iodide from blood circulation"
+      },
+      {
+       "key": "H",
+       "text": "(ข้อ H ว่างในต้นฉบับ)"
+      },
+      {
+       "key": "I",
+       "text": "response to TSH"
+      }
+     ],
+     "answer": [
+      "C",
+      "D",
+      "G",
+      "I"
+     ],
+     "source_key": "C, D, G, I (วงกลม + ไฮไลต์)",
+     "explanation": "B = หน้าที่ของ parafollicular (C) cell · E, F ไม่ใช่หน้าที่ของ follicular cell · A (synthesize thyroxine) ถูกในแง่กว้าง แต่ T4 เกิดบน thyroglobulin ใน colloid (TPO ที่ apical membrane) เฉลยจึงไม่เลือก · H ว่างในต้นฉบับ"
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "page": 2,
+   "tags": [
+    "Graves' disease",
+    "TSI",
+    "thyroid function test"
+   ],
+   "case": "40 year-old-women with autoimmune disease can erroneously produce TSI. Her symptoms include an increased heart rate and metabolism, body weight loss and bulging eyes.",
+   "key_concept": "TSI = antibody กระตุ้น TSH receptor บน follicular cell → T3/T4 สูง → negative feedback → TSH ต่ำ · Graves' disease (+ exophthalmos)",
+   "items": [
+    {
+     "id": "3.1a",
+     "prompt": "ระดับ TSH (normal, high, low)",
+     "format": "short",
+     "accepted": [
+      "low",
+      "ต่ำ",
+      "decreased"
+     ],
+     "source_key": "TSH → low",
+     "explanation": "T3/T4 ที่สูงจาก TSI กด TRH/TSH (negative feedback) → TSH ต่ำ"
+    },
+    {
+     "id": "3.1b",
+     "prompt": "ระดับ T3 (normal, high, low)",
+     "format": "short",
+     "accepted": [
+      "high",
+      "สูง",
+      "increased"
+     ],
+     "source_key": "T3 → high\n(โน้ต: Antibody → กระตุ้น follicular cell → thyroid hormone ↑)",
+     "explanation": "TSI ทำหน้าที่เหมือน TSH → ต่อมสร้างฮอร์โมนมากเกิน → T3 สูง"
+    },
+    {
+     "id": "3.2",
+     "prompt": "The patient might be diagnosed with",
+     "format": "short",
+     "accepted": [
+      "graves",
+      "grave's",
+      "grave disease"
+     ],
+     "source_key": "Grave's disease",
+     "explanation": "Hyperthyroidism จาก TSI + exophthalmos (bulging eyes) = Graves' disease"
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "page": 2,
+   "tags": [
+    "thyroid nodule",
+    "follicular adenoma",
+    "follicular carcinoma"
+   ],
+   "case": "A 35-year-old man presented with thyroid nodule in the left lobe. He has no symptom of hyperthyroidism. A surgical resection was performed.",
+   "key_concept": "Thyroid nodule: tumor = follicular adenoma, papillary/follicular carcinoma; non-tumor = multinodular goiter · แยก adenoma/carcinoma ด้วย capsular/vascular invasion",
+   "answer_status": "disputed",
+   "audit_note": "ข้อ 4.2: เฉลยตอบ follicular adenoma แต่โจทย์เขียนว่า 'there are focal areas where the follicle cells extend beyond the capsule' ซึ่งคือ capsular invasion และชี้ไปทาง follicular carcinoma (ไม่มี nuclear feature ของ papillary จึงตัด PTC ออก) · ระบบจึงนับทั้ง follicular adenoma (ตามเฉลย) และ follicular carcinoma · ตั้งเป็น disputed ให้ผู้ใช้ตัดสินเอง",
+   "items": [
+    {
+     "id": "4.1a",
+     "prompt": "Tumor lesion (ยกตัวอย่าง)",
+     "format": "short",
+     "accepted": [
+      "follicular adenoma",
+      "papillary",
+      "ptc",
+      "follicular carcinoma",
+      "medullary",
+      "anaplastic",
+      "thyroid adenoma",
+      "thyroid carcinoma"
+     ],
+     "source_key": "Benign: Follicular adenoma\nMalignant: Papillary carcinoma",
+     "explanation": "Tumor ของไทรอยด์ที่พบบ่อย: follicular adenoma (benign), papillary carcinoma (malignant ที่พบบ่อยสุด)"
+    },
+    {
+     "id": "4.1b",
+     "prompt": "Non-tumor lesion (ยกตัวอย่าง)",
+     "format": "short",
+     "accepted": [
+      "multinodular",
+      "mng",
+      "nodular goiter",
+      "colloid",
+      "cyst",
+      "thyroiditis",
+      "hashimoto"
+     ],
+     "source_key": "MNG (Multinodular goiter)",
+     "explanation": "Non-tumor ที่ทำให้เกิด nodule: multinodular goiter, colloid nodule, cyst, thyroiditis"
+    },
+    {
+     "id": "4.2",
+     "prompt": "The histological section shows a well-defined ......... composed of closely packed follicles surrounded by fibrous capsules. The follicle cell shows no features of ground glass nuclei and nuclear groove. There are focal areas where the follicle cells extend beyond the capsule. What is the diagnosis for this lesion?",
+     "format": "short",
+     "accepted": [
+      "follicular adenoma",
+      "follicular carcinoma"
+     ],
+     "source_key": "follicular adenoma",
+     "explanation": "เฉลยต้นฉบับ = follicular adenoma · แต่ 'follicle cells extend beyond the capsule' = capsular invasion ซึ่งนิยามของ follicular carcinoma (adenoma ต้องไม่มี capsular/vascular invasion) จึงนับ follicular carcinoma ด้วย (ดู audit_note)"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "page": 2,
+   "tags": [
+    "diabetes mellitus",
+    "insulin",
+    "glucose transporter"
+   ],
+   "case": "60 year-old-man with complaints of weight loss, fatigue, polydipsia, polyphagia and polyuria. Urinalysis reveals glucosuria and markedly elevated serum fasting glucose.",
+   "key_concept": "Hyperglycemia + glucosuria = diabetes mellitus → insulin ผิดปกติ · GLUT4 = transporter ที่ขึ้นกับ insulin (กล้ามเนื้อ/ไขมัน) ส่วน SGLT2 = ดูดกลับกลูโคสที่ proximal tubule",
+   "answer_status": "disputed",
+   "audit_note": "ข้อ 6.2: เฉลยลายมือตอบ SGLT2 แต่คำถามคือ transporter ที่มีบทบาทสำคัญใน glucose tolerance ซึ่งตำราตอบ GLUT4 (insulin-dependent glucose uptake) ส่วน SGLT2 อธิบาย glucosuria/เป็นเป้ายา SGLT2 inhibitor · ระบบนับทั้ง SGLT2 (ตามเฉลย) และ GLUT4 · ตั้งเป็น disputed",
+   "items": [
+    {
+     "id": "6.1",
+     "prompt": "Which hormone is affected in this man",
+     "format": "short",
+     "accepted": [
+      "insulin"
+     ],
+     "source_key": "Insulin",
+     "explanation": "น้ำตาลสูง + glucosuria + polyuria/polydipsia/polyphagia = เบาหวาน → insulin (ขาดหรือดื้อ)"
+    },
+    {
+     "id": "6.2",
+     "prompt": "Which glucose transporter plays a central role in glucose tolerance",
+     "format": "short",
+     "accepted": [
+      "sglt2",
+      "sglt-2",
+      "sglt 2",
+      "glut4",
+      "glut-4",
+      "glut 4"
+     ],
+     "source_key": "SGLT2",
+     "explanation": "เฉลยตอบ SGLT2 (ดูดกลับกลูโคสที่ไต) · GLUT4 ก็ถูกตามตำรา: insulin กระตุ้น GLUT4 translocation ที่กล้ามเนื้อ/ไขมัน ซึ่งกำหนด glucose tolerance"
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "page": 3,
+   "tags": [
+    "hyperaldosteronism",
+    "Conn syndrome"
+   ],
+   "case": "65-year-old man presents with severe headache. PE: BP 180/100 mmHg, HR 80 bpm. Lab: Morning cortisol 15 ug/dL (Ref 6 – 23), plasma renin activity 1.2 ng/mL/hr (Ref 1.9 – 3.7), serum aldosterone 44 ng/dL (Ref 4.0 – 31.0), serum potassium 2.5 mmol/dL. (ข้อ 7 ในต้นฉบับพิมพ์ไม่ครบ มีหมายเหตุ 'โจทย์ไม่ครบน้า' แล้วต่อที่ข้อ 8)",
+   "key_concept": "Aldosterone สูง + renin ต่ำ + K⁺ ต่ำ + HT = primary hyperaldosteronism (ต่อมหมวกไตสร้างเอง)",
+   "answer_status": "draft",
+   "audit_note": "ไฟล์เฉลยต้นฉบับ (ท้ายหน้ามี 'BY VICHAKARN MEDPSU 50') เป็นเฉลยของข้อสอบรุ่น 50 ซึ่งโจทย์ข้อ 7 เป็นต้นไปไม่ตรงกับข้อสอบรุ่น 51 ฉบับนี้ ข้อนี้จึงไม่มีเฉลยต้นฉบับ (KEY PDF ไม่มีเฉลยของข้อนี้ หน้าเฉลยที่อ้างอิงเป็นแค่หน้าที่ใกล้เคียง) คำตอบเป็นของผู้ตรวจ (draft) · ข้อ 7 ในต้นฉบับเป็นโจทย์ไม่ครบ จึงรวมไว้ในข้อ 8 นี้",
+   "items": [
+    {
+     "id": "8.1",
+     "prompt": "ถามเกี่ยวกับว่าเป็น hyperaldosterone type ไหน (ไม่แน่ใจ)",
+     "format": "short",
+     "accepted": [
+      "primary hyperaldosteronism",
+      "primary aldosteronism",
+      "conn syndrome",
+      "conn's syndrome"
+     ],
+     "source_key": "(ไม่มีเฉลยต้นฉบับ)",
+     "explanation": "Renin ถูกกด (1.2 < 1.9) ขณะที่ aldosterone สูง → aldosterone หลั่งอิสระจาก RAAS = primary · secondary จะ renin สูง"
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "page": 3,
+   "tags": [
+    "adrenal drugs",
+    "11β-hydroxylase",
+    "glucocorticoid"
+   ],
+   "case": "Fill in the blank (บอกชื่อยา)",
+   "key_concept": "Metyrapone ยับยั้ง 11β-hydroxylase (CYP11B1) · Glucocorticoid ออกฤทธิ์ต้านการอักเสบโดยเหนี่ยวนำ lipocortin (annexin-1) ยับยั้ง PLA2 — long-acting = dexamethasone/betamethasone",
+   "answer_status": "draft",
+   "audit_note": "KEY PDF ไม่มีเฉลยของข้อ 9 (ทั้ง 9.1 และ 9.2) · ข้อ 9.1: คำตอบ metyrapone เป็นของผู้ตรวจเอง บังเอิญตรงกับเฉลยรุ่น 50 แต่โจทย์รุ่น 50 ถามคนละอย่าง ('ยับยั้งหลาย enzyme และทำให้ตับเสียหาย' ซึ่งตรงกับ ketoconazole มากกว่า) จึงไม่ใช่หลักฐาน · ยังนับ etomidate/osilodrostat ที่ยับยั้ง 11β-hydroxylase ด้วย · ข้อ 9.2: เฉลยรุ่น 50 คือ fludrocortisone ซึ่งเป็นโจทย์คนละข้อ คำตอบเป็นของผู้ตรวจ",
+   "items": [
+    {
+     "id": "9.1",
+     "prompt": "Which drug inhibit 11 beta-hydroxylase in steroid synthesis",
+     "format": "short",
+     "accepted": [
+      "metyrapone",
+      "metopirone",
+      "etomidate",
+      "osilodrostat"
+     ],
+     "source_key": "(ไม่มีเฉลยต้นฉบับ)",
+     "explanation": "Metyrapone ยับยั้ง 11β-hydroxylase ขั้นสุดท้ายของการสร้าง cortisol (ใช้ทดสอบ HPA axis และรักษา Cushing's) · etomidate, osilodrostat ก็ยับยั้งเอนไซม์เดียวกัน"
+    },
+    {
+     "id": "9.2",
+     "prompt": "Which drug has long acting inhibit phopholipase A2",
+     "format": "short",
+     "accepted": [
+      "dexamethasone",
+      "betamethasone"
+     ],
+     "source_key": "(ไม่มีเฉลยต้นฉบับ)",
+     "explanation": "Glucocorticoid เหนี่ยวนำ lipocortin (annexin A1) ยับยั้ง PLA2 → ลด arachidonic acid/prostaglandin/leukotriene · Long-acting = dexamethasone (หรือ betamethasone)"
+    }
+   ]
+  },
+  {
+   "n": 10,
+   "page": 3,
+   "tags": [
+    "hyperaldosteronism"
+   ],
+   "case": "จากอาการข้างต้น ผู้ป่วยน่าจะเป็น hyperthyroidism แบบใดต่อไปนี้ (วงกลม) (เคสเดียวกับข้อ 8: 65-year-old man presents with severe headache. PE: BP 180/100 mmHg, HR 80 bpm. Lab: Morning cortisol 15 ug/dL (Ref 6 – 23), plasma renin activity 1.2 ng/mL/hr (Ref 1.9 – 3.7), serum aldosterone 44 ng/dL (Ref 4.0 – 31.0), serum potassium 2.5 mmol/dL.)",
+   "key_concept": "Aldosterone สูง + renin ต่ำ = primary hyperaldosteronism",
+   "answer_status": "draft",
+   "audit_note": "ไฟล์เฉลยต้นฉบับ (ท้ายหน้ามี 'BY VICHAKARN MEDPSU 50') เป็นเฉลยของข้อสอบรุ่น 50 ซึ่งโจทย์ข้อ 7 เป็นต้นไปไม่ตรงกับข้อสอบรุ่น 51 ฉบับนี้ ข้อนี้จึงไม่มีเฉลยต้นฉบับ (KEY PDF ไม่มีเฉลยของข้อนี้ หน้าเฉลยที่อ้างอิงเป็นแค่หน้าที่ใกล้เคียง) คำตอบเป็นของผู้ตรวจ (draft) · โจทย์พิมพ์ผิดเป็น 'hyperthyroidism' (ตัวเลือก 'primary/secondary hyperthyroidism') ที่ตั้งใจจะถามคือ hyperaldosteronism ตามเคส · ข้อ 10.2 ในต้นฉบับเป็น '-' (ว่าง)",
+   "items": [
+    {
+     "id": "10.1",
+     "prompt": "วงกลม (ต้นฉบับพิมพ์ว่า hyperthyroidism)",
+     "format": "select",
+     "max_answers": 1,
+     "options": [
+      {
+       "key": "A",
+       "text": "primary hyperthyroidism (ตั้งใจ: primary hyperaldosteronism)"
+      },
+      {
+       "key": "B",
+       "text": "secondary hyperthyroidism (ตั้งใจ: secondary hyperaldosteronism)"
+      }
+     ],
+     "answer": [
+      "A"
+     ],
+     "source_key": "(ไม่มีเฉลยต้นฉบับ)",
+     "explanation": "Renin ต่ำ + aldosterone สูง → primary · secondary จะ renin สูง (เช่น renal artery stenosis, heart failure)"
+    }
+   ]
+  },
+  {
+   "n": 11,
+   "page": 3,
+   "tags": [
+    "hyperaldosteronism",
+    "Conn syndrome"
+   ],
+   "case": "65-year-old man presents with severe headache. PE: BP 180/100 mmHg, HR 80 bpm. Lab: Morning cortisol 15 ug/dL (Ref 6 – 23), plasma renin activity 1.2 ng/mL/hr (Ref 1.9 – 3.7), serum aldosterone 44 ng/dL (Ref 4.0 – 31.0), serum potassium 2.5 mmol/dL. Which 2 pathologies are the causes of this patient condition?",
+   "key_concept": "สาเหตุของ primary hyperaldosteronism: aldosterone-producing adenoma (Conn) และ bilateral adrenal hyperplasia",
+   "answer_status": "draft",
+   "audit_note": "ไฟล์เฉลยต้นฉบับ (ท้ายหน้ามี 'BY VICHAKARN MEDPSU 50') เป็นเฉลยของข้อสอบรุ่น 50 ซึ่งโจทย์ข้อ 7 เป็นต้นไปไม่ตรงกับข้อสอบรุ่น 51 ฉบับนี้ ข้อนี้จึงไม่มีเฉลยต้นฉบับ (KEY PDF ไม่มีเฉลยของข้อนี้ หน้าเฉลยที่อ้างอิงเป็นแค่หน้าที่ใกล้เคียง) คำตอบเป็นของผู้ตรวจ (draft)",
+   "items": [
+    {
+     "id": "11",
+     "prompt": "Which 2 pathologies are the causes of this patient condition? (1. ..., 2. ...)",
+     "format": "short",
+     "keywords_all": [
+      "adenoma",
+      "hyperplasia"
+     ],
+     "key_text": "Aldosterone-producing adenoma (Conn syndrome), Bilateral adrenal hyperplasia",
+     "source_key": "(ไม่มีเฉลยต้นฉบับ)",
+     "explanation": "Aldosterone-producing adenoma (Conn syndrome) และ bilateral (idiopathic) adrenal hyperplasia เป็นสาเหตุส่วนใหญ่ของ primary hyperaldosteronism"
+    }
+   ]
+  },
+  {
+   "n": 12,
+   "page": 3,
+   "tags": [
+    "lipid-lowering drugs"
+   ],
+   "case": "Fill in the blank (บอกชื่อยา) (ต้นฉบับใช้เลขข้อย่อย 13.1 และ 14.2 ภายใต้ข้อ 12)",
+   "key_concept": "Bempedoic acid ยับยั้ง ATP-citrate lyase (ก่อน HMG-CoA reductase) · Ezetimibe ยับยั้ง NPC1L1 ที่ลำไส้",
+   "answer_status": "draft",
+   "audit_note": "ไฟล์เฉลยต้นฉบับ (ท้ายหน้ามี 'BY VICHAKARN MEDPSU 50') เป็นเฉลยของข้อสอบรุ่น 50 ซึ่งโจทย์ข้อ 7 เป็นต้นไปไม่ตรงกับข้อสอบรุ่น 51 ฉบับนี้ ข้อนี้จึงไม่มีเฉลยต้นฉบับ (KEY PDF ไม่มีเฉลยของข้อนี้ หน้าเฉลยที่อ้างอิงเป็นแค่หน้าที่ใกล้เคียง) คำตอบเป็นของผู้ตรวจ (draft)",
+   "items": [
+    {
+     "id": "12.1",
+     "prompt": "(ต้นฉบับ 13.1) drug decrease cholesterol synthesis by inhibiting ATP-citrate lyase",
+     "format": "short",
+     "accepted": [
+      "bempedoic"
+     ],
+     "source_key": "(ไม่มีเฉลยต้นฉบับ)",
+     "explanation": "Bempedoic acid เป็น prodrug ถูก activate ที่ตับ (ไม่ใช่กล้ามเนื้อ) จึงปวดกล้ามเนื้อน้อยกว่า statin"
+    },
+    {
+     "id": "12.2",
+     "prompt": "(ต้นฉบับ 14.2) drug decrease cholesterol absorption by inhibiting NPCL1 transporter",
+     "format": "short",
+     "accepted": [
+      "ezetimibe"
+     ],
+     "source_key": "(ไม่มีเฉลยต้นฉบับ)",
+     "explanation": "Ezetimibe ยับยั้ง NPC1L1 ที่ brush border ของลำไส้เล็ก ลดการดูดซึม cholesterol"
+    }
+   ]
+  },
+  {
+   "n": 16,
+   "page": 4,
+   "tags": [
+    "thiazide",
+    "calcium",
+    "distal tubule"
+   ],
+   "case": "คนไข้ได้รับยา thiazide หมอกังวลว่าจะส่งผลต่อสมดุลของ calcium ในเลือด โจทย์ถามว่าการได้รับยา thiazide จะส่งผลให้ plasma calcium reabsorption เพิ่มขึ้นหรือลดลง และให้อธิบายกลไกของ thiazide ที่ส่งผลให้เกิดภาวะดังกล่าว",
+   "key_concept": "Thiazide ยับยั้ง Na⁺-Cl⁻ cotransporter (NCC) ที่ DCT → Na⁺ ในเซลล์ลดลง → Na⁺/Ca²⁺ exchanger (NCX) ดึง Ca²⁺ ออกฝั่ง basolateral มากขึ้น + Ca²⁺ เข้าทาง TRPV5 มากขึ้น → Ca²⁺ reabsorption เพิ่ม (calciuria ลด)",
+   "answer_status": "draft",
+   "audit_note": "ไฟล์เฉลยต้นฉบับ (ท้ายหน้ามี 'BY VICHAKARN MEDPSU 50') เป็นเฉลยของข้อสอบรุ่น 50 ซึ่งโจทย์ข้อ 7 เป็นต้นไปไม่ตรงกับข้อสอบรุ่น 51 ฉบับนี้ ข้อนี้จึงไม่มีเฉลยต้นฉบับ (KEY PDF ไม่มีเฉลยของข้อนี้ หน้าเฉลยที่อ้างอิงเป็นแค่หน้าที่ใกล้เคียง) คำตอบเป็นของผู้ตรวจ (draft) · ข้อ 13-15 ในต้นฉบับเป็น '-' (ว่าง) และข้อ 5 เป็น '-'",
+   "items": [
+    {
+     "id": "16.1",
+     "prompt": "Plasma calcium reabsorption เพิ่มขึ้นหรือลดลง",
+     "format": "short",
+     "accepted": [
+      "increased reabsorption",
+      "increase reabsorption",
+      "reabsorption increase",
+      "enhanced reabsorption",
+      "เพิ่มขึ้น"
+     ],
+     "source_key": "(ไม่มีเฉลยต้นฉบับ)",
+     "explanation": "Thiazide ทำให้ Ca²⁺ reabsorption เพิ่ม → urinary Ca²⁺ ลด จึงใช้ใน hypercalciuria/นิ่ว และอาจเกิด hypercalcemia"
+    },
+    {
+     "id": "16.2",
+     "prompt": "อธิบายกลไกของ thiazide",
+     "format": "short",
+     "accepted": [
+      "na-ca exchanger",
+      "na/ca exchanger",
+      "sodium-calcium exchanger",
+      "sodium calcium exchanger",
+      "ncx",
+      "trpv5",
+      "na+/ca2+"
+     ],
+     "source_key": "(ไม่มีเฉลยต้นฉบับ)",
+     "explanation": "ยับยั้ง NCC ที่ DCT → intracellular Na⁺ ลด → basolateral Na⁺/Ca²⁺ exchanger (NCX1) ทำงานมากขึ้น และเซลล์ hyperpolarize เปิด Ca²⁺ channel (TRPV5) → Ca²⁺ เข้าเซลล์/ถูกดูดกลับมากขึ้น · ยังมีผลจาก volume contraction → proximal Na⁺ และ Ca²⁺ reabsorption เพิ่ม"
+    }
+   ]
+  }
+ ]
+}
