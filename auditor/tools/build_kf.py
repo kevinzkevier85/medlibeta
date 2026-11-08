@@ -48,7 +48,8 @@ def main():
             q["case"] = w["case"]
         q |= {"items": w["items"],
              "answer_status": w.get("answer_status", "verified"),
-             "refs": [{"paper": pid["exam"], "pages": [w.get("exam_page", w["page"])]}, {"paper": pid["key"], "pages": [w["page"]]}],  # exam_page when the key PDF paginates differently
+             "refs": [{"paper": pid["exam"], "pages": [w.get("exam_page", w["page"])]}]
+                     + ([{"paper": pid["key"], "pages": [w["page"]]}] if "key" in meta["files"] else []),  # exam_page when the key PDF paginates differently; no key ref when the set has no key file
              "tags": w.get("tags", []), "source": "claude-mcp"}
         for k in ("key_concept", "explanation", "audit_note", "image", "image_caption"):
             if w.get(k):

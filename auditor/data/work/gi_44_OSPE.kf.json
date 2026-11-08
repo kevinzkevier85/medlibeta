@@ -1,0 +1,355 @@
+{
+  "set_id": "gi_44_OSPE",
+  "note": "OSPE GI Med PSU 44 — ข้อสอบ 7 สถานี (ข้อ 4, 5, 6, 15, 16, 18, 22 ของชุดจริง) · ไม่มีไฟล์เฉลยแยก: ข้อ 4, 5, 6, 22 มีคำตอบสีแดงบนข้อสอบ ส่วนข้อ 15, 16, 18 ไม่มีเฉลย AI ร่าง (draft) · อ่านด้วยตา (2026-11-08)",
+  "time_limit_min": null,
+  "questions": [
+    {
+      "n": 1,
+      "page": 1,
+      "tags": [
+        "ileocecal valve",
+        "cecum blood supply"
+      ],
+      "case": "Station 4 (the real exam used a gross specimen). Drawing of the cecum with the terminal ileum, appendix and their arteries; a pin marks a valve and a vessel.",
+      "key_concept": "ileocecal valve · ileocolic (ileocecal) artery",
+      "image": "img/GI-44-OSPE-001.jpg",
+      "image_caption": "cecum, ileocecal junction และหลอดเลือด",
+      "items": [
+        {
+          "id": "4.1",
+          "prompt": "valve ที่เข็มชี้คืออะไร",
+          "format": "short",
+          "accepted": [
+            "ileocecal valve",
+            "ileocaecal valve",
+            "ileocecal"
+          ],
+          "key_text": "Ileocecal valve",
+          "source_key": "Ileocecal valve",
+          "explanation": "กั้นระหว่าง ileum กับ cecum"
+        },
+        {
+          "id": "4.2",
+          "prompt": "vessel ที่ชี้คืออะไร",
+          "format": "short",
+          "accepted": [
+            "ileocecal artery",
+            "ileocolic artery",
+            "ileocolic a."
+          ],
+          "key_text": "Ileocecal artery",
+          "source_key": "ileocecal artery",
+          "explanation": "เฉลยต้นฉบับเขียน 'ileocecal artery' · ศัพท์ตำราคือ ileocolic artery (แขนงของ SMA ให้ anterior/posterior cecal a. และ appendicular a.)",
+          "audit_note": "ศัพท์ตำรามาตรฐานคือ ileocolic artery รับทั้งสองชื่อ"
+        }
+      ],
+      "station": 4
+    },
+    {
+      "n": 2,
+      "page": 1,
+      "tags": [
+        "hip bone",
+        "inguinal ligament"
+      ],
+      "case": "Station 5 (the real exam used a gross specimen). Medial view of the right hip bone with a red area over the iliac fossa and a blue area at the front end of the iliac crest.",
+      "key_concept": "iliac fossa ← iliacus · ASIS — inguinal ligament",
+      "image": "img/GI-44-OSPE-002.jpg",
+      "image_caption": "กระดูกสะโพกด้านใน (area แดง/น้ำเงิน)",
+      "items": [
+        {
+          "id": "5.1",
+          "prompt": "กล้ามเนื้อที่ยึดกับ area แดงคือ",
+          "format": "short",
+          "accepted": [
+            "iliacus",
+            "iliacus muscle"
+          ],
+          "key_text": "Iliacus",
+          "source_key": "Iliacus",
+          "explanation": "iliacus คลุม iliac fossa รวมกับ psoas major เป็น iliopsoas"
+        },
+        {
+          "id": "5.2",
+          "prompt": "ligament ที่ยึดกับ area น้ำเงิน",
+          "format": "short",
+          "accepted": [
+            "inguinal ligament"
+          ],
+          "key_text": "Inguinal ligament",
+          "source_key": "Inguinal ligament",
+          "explanation": "ยึดจาก anterior superior iliac spine ไป pubic tubercle (ขอบล่างของ external oblique aponeurosis)"
+        }
+      ],
+      "station": 5
+    },
+    {
+      "n": 3,
+      "page": 2,
+      "tags": [
+        "portal hypertension",
+        "spleen"
+      ],
+      "case": "Station 6 (the real exam used a gross specimen). Diagram of the spleen with the splenic artery and vein, the inferior mesenteric vein and the superior mesenteric vein joining the portal vein.",
+      "key_concept": "splenic vein → portal vein · portal HT → splenomegaly",
+      "image": "img/GI-44-OSPE-003.jpg",
+      "image_caption": "ม้ามและ portal venous system",
+      "items": [
+        {
+          "id": "6.1",
+          "prompt": "vein จากอวัยวะที่เข็มชี้ (spleen) คือ",
+          "format": "short",
+          "accepted": [
+            "splenic vein",
+            "splenic v."
+          ],
+          "key_text": "Splenic vein",
+          "source_key": "Splenic vein",
+          "explanation": "ออกจาก hilum ม้าม รวมกับ SMV เป็น portal vein"
+        },
+        {
+          "id": "6.2",
+          "prompt": "หากเกิด (portal) hypertension อวัยวะที่ชี้จะเกิดพยาธิสภาพอะไร",
+          "format": "short",
+          "accepted": [
+            "splenomegaly",
+            "enlarged spleen"
+          ],
+          "key_text": "Splenomegaly",
+          "source_key": "Splenomegaly",
+          "explanation": "เลือดคั่งในม้าม → ม้ามโต"
+        }
+      ],
+      "station": 6
+    },
+    {
+      "n": 4,
+      "page": 2,
+      "tags": [
+        "liver tumor",
+        "HCC"
+      ],
+      "case": "Station 15. Gross specimen: a slice of liver showing a single large, round, well-circumscribed yellow-green mass; the rest of the parenchyma is dark brown with white fibrous bands.",
+      "key_concept": "ก้อนเดี่ยวใหญ่เหลืองเขียวในตับแข็ง → HCC",
+      "audit_note": "ข้อ 15 ต้นฉบับไม่มีเฉลย AI ร่างจากภาพ ตรวจกับอาจารย์",
+      "answer_status": "draft",
+      "image": "img/GI-44-OSPE-004.jpg",
+      "image_caption": "ตับผ่า (gross)",
+      "items": [
+        {
+          "id": "15.1",
+          "prompt": "จงบรรยายลักษณะ gross",
+          "format": "short",
+          "keywords_all": [
+            "mass",
+            "cirrho"
+          ],
+          "key_text": "ก้อนเดี่ยวขนาดใหญ่ ขอบเขตชัด สีเหลืองอมเขียว (bile-stained) ในตับที่มีพังผืดแบ่งเป็นก้อน (cirrhosis)",
+          "source_key": "ก้อนเดี่ยวขนาดใหญ่ ขอบเขตชัด สีเหลืองอมเขียว (bile-stained) ในตับที่มีพังผืดแบ่งเป็นก้อน (cirrhosis)",
+          "explanation": "gross ของ HCC: ก้อนใหญ่ เหลืองเขียวจาก bile, necrosis/เลือดออก มักอยู่บนพื้นตับแข็ง",
+          "accepted": [
+            "single large well-circumscribed mass",
+            "solitary large mass in cirrhotic liver",
+            "large yellow-green mass with fibrous bands"
+          ],
+          "audit_note": "ต้นฉบับไม่มีเฉลย (AI ร่างจากภาพ)"
+        },
+        {
+          "id": "15.2",
+          "prompt": "จงบรรยายลักษณะ histology",
+          "format": "short",
+          "keywords_all": [
+            "trabecul"
+          ],
+          "key_text": "เซลล์ตับผิดปกติเรียงเป็น trabeculae/plate หนากว่า 3 เซลล์ นิวเคลียสใหญ่ผิดรูป มักไม่มี portal tract/ผลิต bile ได้",
+          "source_key": "เซลล์ตับผิดปกติเรียงเป็น trabeculae/plate หนากว่า 3 เซลล์ นิวเคลียสใหญ่ผิดรูป มักไม่มี portal tract/ผลิต bile ได้",
+          "explanation": "HCC: trabecular pattern, pleomorphic hepatocytes, mitoses, reticulin หาย",
+          "accepted": [
+            "thickened trabeculae",
+            "pleomorphic hepatocytes in trabeculae",
+            "malignant hepatocytes in plates"
+          ],
+          "audit_note": "ต้นฉบับไม่มีเฉลย (AI ร่าง) · ภาพมีเฉพาะ gross ไม่มี slide histology"
+        },
+        {
+          "id": "15.3",
+          "prompt": "จงวินิจฉัย",
+          "format": "short",
+          "accepted": [
+            "hepatocellular carcinoma",
+            "hcc",
+            "hepatoma"
+          ],
+          "key_text": "Hepatocellular carcinoma (HCC)",
+          "source_key": "Hepatocellular carcinoma (HCC)",
+          "explanation": "ก้อนเดี่ยวใหญ่ในตับแข็ง",
+          "audit_note": "ต้นฉบับไม่มีเฉลย (AI ร่าง) อาจเป็น metastasis/cholangiocarcinoma ได้ ต้องดู histology"
+        }
+      ],
+      "station": 15
+    },
+    {
+      "n": 5,
+      "page": 3,
+      "tags": [
+        "cholecystitis",
+        "gallbladder"
+      ],
+      "case": "Station 16. Gross specimen (photograph) of an opened gallbladder: a markedly thickened wall with a dark, bile-stained lumen.",
+      "key_concept": "chronic cholecystitis: ผนังหนา fibrosis chronic inflammation",
+      "audit_note": "ข้อ 16 ต้นฉบับไม่มีเฉลย แต่ภาพมีป้าย 'Chronic cholecystitis'; รายละเอียด gross/histology AI ร่าง",
+      "answer_status": "draft",
+      "image": "img/GI-44-OSPE-005.jpg",
+      "image_caption": "ถุงน้ำดีผ่า (gross)",
+      "items": [
+        {
+          "id": "16.1",
+          "prompt": "จงบรรยายลักษณะ gross",
+          "format": "short",
+          "keywords_all": [
+            "thick",
+            "wall"
+          ],
+          "key_text": "ผนังถุงน้ำดีหนาตัว แข็ง สีขาวเทา ผิว mucosa ขรุขระ ในโพรงมีน้ำดีสีเข้ม",
+          "source_key": "ผนังถุงน้ำดีหนาตัว แข็ง สีขาวเทา ผิว mucosa ขรุขระ ในโพรงมีน้ำดีสีเข้ม",
+          "explanation": "chronic cholecystitis: ผนังหนาจาก fibrosis ถุงน้ำดีมักหดเล็ก",
+          "accepted": [
+            "thickened gallbladder wall",
+            "thick fibrotic wall"
+          ],
+          "audit_note": "ต้นฉบับไม่มีเฉลย (AI ร่างจากภาพ)"
+        },
+        {
+          "id": "16.2",
+          "prompt": "จงบรรยายลักษณะ histology",
+          "format": "short",
+          "keywords_all": [
+            "chronic",
+            "fibrosis"
+          ],
+          "key_text": "มี chronic inflammatory cells (lymphocytes, plasma cells) ในผนัง · fibrosis · Rokitansky-Aschoff sinuses",
+          "source_key": "มี chronic inflammatory cells (lymphocytes, plasma cells) ในผนัง · fibrosis · Rokitansky-Aschoff sinuses",
+          "explanation": "chronic cholecystitis: lymphocyte/plasma cell, muscular hypertrophy, fibrosis, RA sinuses",
+          "accepted": [
+            "chronic inflammation and fibrosis",
+            "lymphocytes and fibrosis",
+            "rokitansky-aschoff sinus"
+          ],
+          "audit_note": "ต้นฉบับไม่มีเฉลย (AI ร่าง)"
+        },
+        {
+          "id": "16.3",
+          "prompt": "จงวินิจฉัย",
+          "format": "short",
+          "accepted": [
+            "chronic cholecystitis",
+            "chronic calculous cholecystitis"
+          ],
+          "key_text": "Chronic cholecystitis",
+          "source_key": "Chronic cholecystitis",
+          "explanation": "ภาพต้นฉบับ (screenshot) มีชื่อ 'Chronic cholecystitis' กำกับ",
+          "audit_note": "ภาพต้นฉบับมีป้ายชื่อโรคกำกับ จึงตัดป้ายออกจากภาพโจทย์"
+        }
+      ],
+      "station": 16
+    },
+    {
+      "n": 6,
+      "page": 3,
+      "tags": [
+        "inflammatory bowel disease"
+      ],
+      "case": "Station 18. A 30-year-old man has had bloody stools for 3 months with intermittent low-grade fever. A histology slide of the colon is shown (the original file has no picture).",
+      "key_concept": "อายุน้อย + ถ่ายเลือดเรื้อรัง + ไข้ต่ำ → IBD",
+      "audit_note": "ข้อ 18 ต้นฉบับไม่มีรูปและไม่มีเฉลย AI ร่างจากประวัติ",
+      "answer_status": "draft",
+      "items": [
+        {
+          "id": "18.1",
+          "prompt": "จากภาพ histology ของ colon จง diagnosis",
+          "format": "short",
+          "accepted": [
+            "inflammatory bowel disease",
+            "ibd",
+            "ulcerative colitis",
+            "crohn's disease",
+            "crohn disease"
+          ],
+          "key_text": "Inflammatory bowel disease (ulcerative colitis / Crohn's disease)",
+          "source_key": "Inflammatory bowel disease (ulcerative colitis / Crohn's disease)",
+          "explanation": "ชายหนุ่ม ถ่ายเป็นเลือดเรื้อรัง + ไข้ต่ำ → IBD · UC: crypt abscess, crypt distortion เฉพาะ mucosa · Crohn: transmural, granuloma, skip lesions",
+          "audit_note": "ต้นฉบับไม่มีทั้งรูปและเฉลย AI ร่างจากประวัติเท่านั้น (แยก UC/Crohn ต้องดูภาพ)"
+        }
+      ],
+      "station": 18
+    },
+    {
+      "n": 7,
+      "page": 4,
+      "tags": [
+        "Trichuris"
+      ],
+      "case": "Station 22 (given with a magnifying glass). A long thread-like worm photographed on a plate with a 1 mm scale: the front part is a thin whip-like filament and the rear part is thick; the worm is coiled.",
+      "key_concept": "Trichuris trichiura (whipworm) · large intestine · กิน infective egg",
+      "image": "img/GI-44-OSPE-007.jpg",
+      "image_caption": "พยาธิแส้ม้า (มีสเกล 1 mm)",
+      "items": [
+        {
+          "id": "22.1",
+          "prompt": "พยาธิที่เห็นคืออะไร (ชื่อวิทยาศาสตร์)",
+          "format": "short",
+          "accepted": [
+            "trichuris trichiura",
+            "t. trichiura"
+          ],
+          "key_text": "Trichuris trichiura",
+          "source_key": "Trichuris trichiura",
+          "explanation": "ส่วนหน้าเรียวยาวเหมือนเส้นแส้ ส่วนท้ายอ้วนสั้น"
+        },
+        {
+          "id": "22.2",
+          "prompt": "common name ของพยาธิตัวนี้",
+          "format": "short",
+          "accepted": [
+            "whipworm",
+            "whip worm",
+            "พยาธิแส้ม้า"
+          ],
+          "key_text": "Whipworm",
+          "source_key": "Whipworm",
+          "explanation": "พยาธิแส้ม้า"
+        },
+        {
+          "id": "22.3",
+          "prompt": "ตัวแก่อยู่ที่ไหน",
+          "format": "short",
+          "accepted": [
+            "large intestine",
+            "colon",
+            "cecum",
+            "large bowel"
+          ],
+          "key_text": "Large intestine",
+          "source_key": "Large intestine",
+          "explanation": "ฝังหัวใน mucosa ของ cecum/colon"
+        },
+        {
+          "id": "22.4",
+          "prompt": "ติดพยาธิได้อย่างไร",
+          "format": "short",
+          "accepted": [
+            "ingestion of infective egg",
+            "ingestion of eggs",
+            "ingestion of embryonated egg",
+            "embryonated egg",
+            "กินไข่"
+          ],
+          "key_text": "Ingestion of infective egg",
+          "source_key": "Ingestion of infective egg",
+          "explanation": "กินไข่ที่มีตัวอ่อนระยะติดต่อ (ปนเปื้อนดิน อาหาร น้ำ)"
+        }
+      ],
+      "station": 22
+    }
+  ]
+}
