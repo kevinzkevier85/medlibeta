@@ -151,4 +151,18 @@ t("review: merge keeps the newer change, including leaving the queue", () => {
   assert.strictEqual(Q.mergeProgress(c, d).review.q2.due, 30);
   assert.strictEqual(Q.mergeProgress(d, c).review.q2.due, 30);
 });
+t("disputed: no other cohort → source key, counted", () => {
+  const q = { id: "D", type: "MCQ", options: { A: "a", B: "b" }, answer: "A", answer_status: "disputed", ai_answer: "B" };
+  assert.strictEqual(Q.keyOf(q, {}), "A"); assert.ok(Q.counts(q, {}));
+  assert.strictEqual(Q.qScore(q, { ans: { D: "B" } }, {}), 0);
+});
+t("disputed: other cohorts decide, tie → source", () => {
+  const q = { id: "D", type: "MCQ", options: { A: "a", B: "b" }, answer: "A", ai_answer: "B", same_side: { x: "ai", y: "ai", z: "source" } };
+  assert.strictEqual(Q.keyOf(q, {}), "B");
+  assert.strictEqual(Q.keyOf(Object.assign({}, q, { same_side: { x: "ai", z: "source" } }), {}), "A");
+});
+t("disputed: the person's pick wins", () => {
+  const q = { id: "D", type: "MCQ", options: { A: "a", B: "b" }, answer: "A", ai_answer: "B" };
+  assert.strictEqual(Q.qScore(q, { ans: { D: "B" } }, { D: "B" }), 1);
+});
 console.log(`\n${pass} ผ่าน`);

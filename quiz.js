@@ -144,8 +144,19 @@ window.MedLibQuizUI = function (ML) {
     if (q.key_concept) h += `<h4>หลักการ</h4>${kcHTML(q.key_concept)}`;
     if (q.audit_note) h += `<p class="auditnote">หมายเหตุการตรวจเฉลย: ${txt(q.audit_note)}</p>`;
     h += refsHTML(b, q);
+    h += disputeHTML(q, mine);
     h += reportHTML(b, q, mine);
     return h + `</div>`;
+  }
+  // Disputed MCQ: source key vs AI key vs other cohorts, and one tap to pick a side (stored as keyOverride).
+  function disputeHTML(q, mine) {
+    if (!q.ai_answer) return "";
+    const side = Object.entries(q.same_side || {}), nAi = side.filter((x) => x[1] === "ai").length, nSrc = side.filter((x) => x[1] === "source").length;
+    const others = side.length ? ` · รุ่นอื่น: ${nAi > nSrc ? "ตรงกับ AI" : nSrc > nAi ? "ตรงกับต้นฉบับ" : "ไม่ชี้ขาด"} (${side.map((x) => esc(x[0].split("-")[1]) + (x[1] === "ai" ? " AI" : x[1] === "source" ? " ต้นฉบับ" : " ?")).join(", ")})` : " · ไม่มีรุ่นอื่นออกซ้ำ";
+    const use = C.keyOf(q, kov()), why = mine ? "ที่ฉันเลือก" : use === q.ai_answer ? "ตามรุ่นอื่น" : "ตามต้นฉบับ";
+    const btn = (k, label) => `<button class="btn sm${mine === k ? " primary" : ""}" data-z="${mine === k ? "unkey" : "pickkey"}" data-q="${esc(q.id)}" data-k="${k}">${label}</button>`;
+    return `<div class="dispute"><p><b>เฉลยไม่ตรงกัน</b> — ต้นฉบับ: <b>${esc(q.answer)}</b> · AI: <b>${esc(q.ai_answer)}</b>${others}</p>
+      <p>ตอนนี้ตัดสินด้วย <b>${esc(use)}</b> (${why})</p><div class="btns">${btn(q.answer, "เชื่อต้นฉบับ")}${btn(q.ai_answer, "เชื่อ AI")}</div></div>`;
   }
   function reportHTML(b, q, mine) {
     const rep = marks().reported[q.id];
@@ -797,6 +808,7 @@ window.MedLibQuizUI = function (ML) {
       makeMix(c.b, `จุดอ่อน: ผิด + ปักธง · ${new Date().toLocaleDateString("th-TH", { day: "numeric", month: "short" })}`, ids); return true;
     }
     if (z === "delmix") { if (!ML.armed(t, "ลบ?")) return true; delete P().mixes[t.dataset.m]; delete P().rounds[`${c.b.id}/@${t.dataset.m}`]; C.touch(P(), "mixes", t.dataset.m); C.touch(P(), "clear", `${c.b.id}/@${t.dataset.m}`); save(); rerender(); return true; }
+    if (z === "pickkey") { marks().keyOverride[t.dataset.q] = t.dataset.k; C.touch(P(), "keyOverride", t.dataset.q); save(); rerender(); return true; }
     if (z === "unkey") { delete marks().keyOverride[t.dataset.q]; C.touch(P(), "keyOverride", t.dataset.q); save(); rerender(); return true; }
     if (z === "setkey" || z === "report") {
       const box = t.closest(".report"), id = t.dataset.q;
