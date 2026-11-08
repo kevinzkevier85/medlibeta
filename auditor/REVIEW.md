@@ -294,12 +294,12 @@ Claude จะบันทึกลง `auditor/data/decisions.json` แล้ว
 | kub_44_MCQ_047 | None | A | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
 | kub_44_MCQ_050 | D | B | mid | เฉลยขัดกับ AI |   |
 | kub_44_MCQ_054 | A | C | mid | ช้อยส์ E AI เติมให้ครบ 5 ตัว; เฉลยขัดกับ AI |   |
-| kub_49_MCQ_006 | A | B | mid | เฉลยขัดกับ AI |   |
-| kub_49_MCQ_009 | E | D | mid | เฉลยขัดกับ AI |   |
-| kub_49_MCQ_011 | E | C | mid | เฉลยขัดกับ AI |   |
-| kub_49_MCQ_016 | C | A | mid | เฉลยขัดกับ AI |   |
-| kub_49_MCQ_042 | B | D | mid | เฉลยขัดกับ AI |   |
-| kub_49_MCQ_046 | C | D | mid | เฉลยขัดกับ AI |   |
+| kub_49_MCQ_006 | A | B | mid | เฉลยขัดกับ AI | AI blind ตอบ B แต่ตรวจซ้ำแล้วเห็นด้วยกับต้นฉบับ: 20 mmHg ให้ NFP = 0 ไม่กรอง  |
+| kub_49_MCQ_009 | E | D | mid | เฉลยขัดกับ AI | AI blind ตอบ D (คิดเป็น serum AG); ถ้า 'anion gap' = urine AG ต้นฉบับ E ถูก  |
+| kub_49_MCQ_011 | E | C | mid | เฉลยขัดกับ AI | AI ตอบ RPGN; ต้นฉบับ MPGN (mixed nephritic–nephrotic) สมเหตุผล  |
+| kub_49_MCQ_016 | C | A | mid | เฉลยขัดกับ AI | AI ตอบ crescentic GN (เข้าไตวายเร็ว); ต้นฉบับ MPGN (chronic progressive)  |
+| kub_49_MCQ_042 | B | D | mid | เฉลยขัดกับ AI | AI ตอบ [H+]; แต่ aldosterone ลด H+ ในเลือด ต้นฉบับ ECF สมเหตุผลกว่า  |
+| kub_49_MCQ_046 | C | D | mid | เฉลยขัดกับ AI | AI ตอบ genitofemoral; ต้นฉบับ lateral femoral cutaneous n. เข้ากับ 'thigh' มากกว่า  |
 | kub_50_MCQ_022 | A | B | mid | เฉลยขัดกับ AI |   |
 | kub_50_MCQ_024 | A | C | mid | เฉลยขัดกับ AI |   |
 | kub_50_MCQ_030 | C | A | mid | เฉลยขัดกับ AI |   |

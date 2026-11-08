@@ -1,154 +1,224 @@
 {
  "set_id": "kub_49_MCQ",
- "note": "เฉลยวงกลมลายมือ (โดย Med PSU 52) อ่านด้วยตา",
- "skipped": [
-  "2",
-  "20",
-  "23",
-  "31",
-  "38",
-  "41",
-  "45"
- ],
- "skipped_reason": "ข้ออ้างรูปในข้อสอบ หรือช้อยส์ต้นฉบับไม่ครบ (…)",
+ "note": "เฉลยวงกลมลายมือ (โดย Med PSU 52) อ่านด้วยตา · ข้อรูป 2,20,23,38,45 ตัดรูปแล้ว · 31,41,51 AI เติมช้อยส์",
+ "skipped": [],
  "duplicate_groups": {},
  "questions": {
   "51": {
    "choices_override": {
     "A": "Normal it just Sexual orientation",
     "B": "Normal it just Gender identity",
-    "C": "Abnormal และต้องได้รับการรักษา"
+    "C": "Abnormal และต้องได้รับการรักษา",
+    "D": "Abnormal เพราะเป็น gender dysphoria",
+    "E": "Abnormal เพราะเป็น erectile dysfunction"
    },
-   "explanation": "Normal it just Sexual orientation"
+   "explanation": "Normal it just sexual orientation — ตื่นตัวทางเพศกับเพศเดียวกัน = sexual orientation (homosexual) ไม่ใช่ความผิดปกติ ไม่ต้องรักษา\nTrap: gender identity คือการรับรู้ว่าตัวเองเป็นเพศอะไร ไม่เกี่ยวกับว่าดึงดูดเพศไหน",
+   "ai_choices": [
+    "D",
+    "E"
+   ]
   },
   "1": {
-   "explanation": "Vasa recta"
+   "explanation": "Vasa recta — ทำหน้าที่ countercurrent exchanger รักษา medullary osmotic gradient ที่ loop of Henle สร้างไว้ ทำให้ collecting duct ดูดน้ำกลับได้มาก ปัสสาวะเข้มข้น\nTrap: cortical nephron มี loop สั้น ไม่ช่วยทำ gradient; PCT ดูดกลับแบบ iso-osmotic"
   },
   "3": {
-   "explanation": "Urogenital sinus 311-216 Urinary and Reproductive Systems ข้อสอบ MCQ 1.ข้อสอบมีทั้งหมด 51 ข้อ (ข้อสอบจริงมีจำนวน 100 ข้อ) 3.ข้อสอบจริงเป็นภาษาอังกฤษทั้งหมด"
+   "explanation": "Urogenital sinus — ส่วน vesical ของ urogenital sinus เจริญเป็น urinary bladder ไม่มีกระเพาะปัสสาวะจึงเป็นความผิดปกติของ urogenital sinus\nTrap: ureteric bud → ureter, pelvis, calyces, collecting duct; metanephric blastema → nephron; mesonephric/paramesonephric duct → ท่อสืบพันธุ์",
+   "edits": [
+    {
+     "field": "choices.E",
+     "old": "Urogenital sinus 311-216 Urinary and Reproductive Systems ข้อสอบ MCQ 1.ข้อสอบมีทั้งหมด 51 ข้อ (ข้อสอบจริงมีจำนวน 100 ข้อ) 3.ข้อสอบจริงเป็นภาษาอังกฤษทั้งหมด",
+     "new": "Urogenital sinus"
+    }
+   ]
   },
   "4": {
-   "explanation": "Sertoli cell"
+   "explanation": "Sertoli cell — หลั่ง Müllerian inhibiting substance (AMH) ทำให้ paramesonephric duct ฝ่อในเพศชาย\nTrap: Leydig cell หลั่ง testosterone (รักษา mesonephric duct) ไม่ใช่ MIS"
   },
   "5": {
-   "explanation": "Creatine"
+   "explanation": "Creatine — อาหารเสริมที่เพิ่มกล้ามเนื้อ/พลังงานคือ creatine (เก็บเป็น creatine phosphate) และถูกเปลี่ยนเป็น creatinine จึงทำให้ creatinine ในเลือดสูงได้โดยไตปกติ\nTrap: creatinine เป็นของเสียปลายทาง ไม่ใช่อาหารเสริม; creatine kinase เป็นเอนไซม์"
   },
   "6": {
-   "explanation": "10 mmHg — AI ตอบ B ()"
+   "explanation": "10 mmHg — NFP = P_GC − π_GC − P_BS = 50 − 30 − P_BS ต้อง > 0 จึงกรองได้ → P_BS < 20 ในตัวเลือกจึงเหลือ 10 mmHg (NFP = 10)\nTrap: 20 mmHg ทำให้ NFP = 0 คือจุดสมดุล ไม่เกิดการกรอง",
+   "audit_note": "AI blind ตอบ B แต่ตรวจซ้ำแล้วเห็นด้วยกับต้นฉบับ: 20 mmHg ให้ NFP = 0 ไม่กรอง"
   },
   "7": {
-   "explanation": "Right hypogastric nerve"
+   "explanation": "Hypogastric nerve — ผ่าตัดบริเวณ sacrum/presacral ทำลาย hypogastric nerve (sympathetic, superior hypogastric plexus) และ pelvic splanchnic ที่วิ่งร่วม ทำให้ปัสสาวะไม่สุด ต้นฉบับวงทั้ง right และ left (รับได้ทั้ง D/E)\nTrap: pudendal nerve คุม external sphincter (somatic) ไม่ใช่การบีบ detrusor"
   },
   "8": {
-   "explanation": "Ammonia"
+   "explanation": "Ammonia — ท้องเสียเรื้อรังเสีย HCO3- → normal anion gap (hyperchloremic) metabolic acidosis ไตชดเชยหลักโดยเพิ่ม NH4+ excretion (ปรับเพิ่มได้มาก)\nTrap: titratable acid (phosphate) เพิ่มได้จำกัดตามปริมาณ buffer ที่กรองมา"
   },
   "9": {
-   "explanation": "↓ ↑ ↓ — AI ตอบ D ()"
+   "explanation": "↓ ↑ ↓ — ท้องเสียเสีย HCO3- → normal AG metabolic acidosis: ไตดูด HCO3- กลับหมด (urine HCO3- ↓), ขับ NH4+ ↑, urine anion gap (Na+K−Cl) เป็นลบ/ลดลง เพราะ Cl- ออกมาคู่ NH4+\nTrap: ถ้าคิดเป็น serum anion gap จะ 'ปกติ' ไม่ใช่เพิ่ม; ค่า 'high bicarbonate' ในโจทย์น่าจะจำผิด",
+   "audit_note": "AI blind ตอบ D (คิดเป็น serum AG); ถ้า 'anion gap' = urine AG ต้นฉบับ E ถูก"
   },
   "10": {
-   "explanation": "45"
+   "explanation": "45 — new HCO3- = titratable acid + NH4+ − urine HCO3- = 25 + 20 − 0 = 45 mmol\nTrap: ไม่ต้องใช้ GFR และ plasma HCO3- (ใช้คำนวณ filtered load เท่านั้น)"
   },
   "11": {
-   "explanation": "Membranoproliferative glomerulonephritis — AI ตอบ C ()"
+   "explanation": "Membranoproliferative GN — มีทั้ง nephritic (dysmorphic RBC, HTN, oliguria) และ nephrotic (albuminuria, pitting edema) ในผู้ใหญ่ เข้ากับ MPGN ซึ่งเป็น mixed nephritic–nephrotic\nTrap: RPGN ต้องมีไตเสื่อมเร็วภายในสัปดาห์–เดือน/crescent; membranous และ lipoid nephrosis เป็น nephrotic ล้วน",
+   "audit_note": "AI ตอบ RPGN; ต้นฉบับ MPGN (mixed nephritic–nephrotic) สมเหตุผล"
   },
   "12": {
-   "explanation": "Epithelial cell proliferation"
+   "explanation": "Epithelial cell proliferation — RPGN เกิด crescent จากการเพิ่มจำนวน parietal epithelial cell ของ Bowman capsule ร่วมกับ macrophage และ fibrin\nTrap: endothelial proliferation = PSGN; mesangial expansion = IgA/MPGN"
   },
   "13": {
-   "explanation": "Acute cystitis"
+   "explanation": "Acute cystitis — terminal dysuria ไม่มีไข้ อาการทั่วไปดี ในคนท้อง (ท่อปัสสาวะสั้น, progesterone ทำ ureter คลาย) เข้ากับ lower UTI\nTrap: pyelonephritis ต้องมีไข้ ปวดหลัง/CVA tenderness"
   },
   "14": {
-   "explanation": "Acute post-streptococcal glomerulonephritis"
+   "explanation": "Acute post-streptococcal GN — เด็กชาย 10 ปี มี nephritic syndrome (HTN, azotemia, hematuria, edema) สาเหตุที่พบบ่อยสุดในเด็กคือ PSGN (หลังติดเชื้อคอ/ผิวหนัง 1–3 สัปดาห์)\nTrap: lipoid nephrosis (minimal change) เป็น nephrotic ไม่มี HTN/hematuria เด่น"
   },
   "15": {
-   "explanation": "Chronic hepatitis B infection"
+   "explanation": "Chronic hepatitis B infection — immune complex ที่ subepithelial (epimembranous) side ของ GBM = membranous nephropathy สาเหตุ secondary ที่สำคัญคือ HBV, SLE, ยา, มะเร็ง\nTrap: Goodpasture = linear anti-GBM; PSGN = subepithelial hump แต่เป็น nephritic"
   },
   "16": {
-   "explanation": "Membranoproliferative glomerulonephritis — AI ตอบ A ()"
+   "explanation": "Membranoproliferative GN — ดำเนินโรคช้าแบบ chronic GN ราว 50% เป็น ESRD ใน 10 ปี (ตามเฉลยต้นฉบับ)\nTrap: crescentic GN ก็เข้าสู่ไตวายได้ แต่เป็นแบบ 'rapidly progressive' ไม่ใช่ chronic; PSGN ในเด็กส่วนใหญ่หายเอง",
+   "audit_note": "AI ตอบ crescentic GN (เข้าไตวายเร็ว); ต้นฉบับ MPGN (chronic progressive)"
   },
   "17": {
-   "explanation": "Smoking"
+   "explanation": "Smoking — ปัจจัยเสี่ยงที่สำคัญที่สุดของ urothelial carcinoma (aromatic amines ในบุหรี่ขับทางปัสสาวะ)\nTrap: chronic cystitis/Schistosoma สัมพันธ์กับ squamous cell carcinoma มากกว่า"
   },
   "18": {
-   "explanation": "Chlamydia trachomatis"
+   "explanation": "Chlamydia trachomatis — สาเหตุที่พบบ่อยสุดของ non-gonococcal urethritis (serovar D–K) รองลงมาคือ Ureaplasma/Mycoplasma genitalium\nTrap: HSV ทำแผลตุ่มน้ำ ไม่ใช่ urethritis เป็นหลัก"
   },
   "19": {
-   "explanation": "Waxy cast"
+   "explanation": "Waxy cast — พบใน chronic renal failure (cast ค้างใน tubule ที่ขยายและไหลช้านาน) broad waxy cast เป็นลักษณะของ CKD\nTrap: RBC cast = glomerulonephritis; WBC cast = pyelonephritis/interstitial nephritis; fatty cast = nephrotic"
   },
   "21": {
-   "explanation": "Urine albumin to creatinine ratio"
+   "explanation": "Urine albumin to creatinine ratio — ตรวจ microalbuminuria (30–300 mg/g) ได้ตั้งแต่ระยะแรกของ diabetic/hypertensive nephropathy\nTrap: BUN/creatinine ขึ้นช้า ผิดปกติเมื่อ GFR ลดมากแล้ว; urine protein/Cr ไวน้อยกว่าสำหรับ albumin ปริมาณน้อย"
   },
   "22": {
-   "explanation": "Spironolactone"
+   "explanation": "Spironolactone — K+-sparing diuretic (aldosterone antagonist) แก้ hypokalemia จาก loop diuretic และลด mortality ใน HF/post-MI\nTrap: acetazolamide และ thiazide ทำให้ K+ ต่ำลงอีก; tolvaptan ใช้แก้ hyponatremia"
   },
   "24": {
-   "explanation": "Cardinal ligament"
+   "explanation": "Cardinal ligament — (transverse cervical/Mackenrodt) ยึด cervix กับผนัง pelvis ด้านข้าง เป็นตัวพยุงหลักของ cervix\nTrap: levator ani พยุง pelvic floor/uterus โดยรวม; broad ligament เป็นแค่รอยพับ peritoneum ไม่ค่อยพยุง"
   },
   "25": {
-   "explanation": "Prostatic gland"
+   "explanation": "Prostatic gland — ชายสูงอายุตรวจ DRE คลำต่อมลูกหมากได้ง่าย (โตตามอายุ) เป็นการตรวจคัดกรองประจำ\nTrap: testis/epididymis คลำได้ในทุกวัย แต่โจทย์เน้นอายุ 72 และการตรวจสุขภาพ (BPH/CA prostate)"
   },
   "26": {
-   "explanation": "12"
+   "explanation": "12 — luteal phase คงที่ ~14 วัน ตกไข่ = ความยาวรอบ − 14 = 26 − 14 = วันที่ 12\nTrap: วันที่ 14 ใช้ได้เฉพาะรอบ 28 วัน"
   },
   "27": {
-   "explanation": "Dorsal penile nerve"
+   "explanation": "Dorsal penile nerve — ใช้ block (dorsal penile nerve block) ระงับความรู้สึกเวลาทำ circumcision แก้ phimosis\nTrap: pudendal nerve เป็นต้นทาง แต่ block เฉพาะที่ penis คือ dorsal nerve"
   },
   "28": {
-   "explanation": "Sertoli cell"
+   "explanation": "Sertoli cell — ค้ำจุนและเลี้ยง germ cell, สร้าง blood–testis barrier, หลั่ง ABP/inhibin ทำให้สร้าง sperm ต่อเนื่อง\nTrap: spermatogonium เป็น stem cell ที่แบ่งตัว ไม่ใช่เซลล์ค้ำจุน; myoid cell บีบท่อ"
   },
   "29": {
-   "explanation": "Epididymis"
+   "explanation": "Epididymis — sperm เจริญเต็มที่ (มี motility, ความสามารถปฏิสนธิ) และเก็บสะสมใน epididymis\nTrap: seminiferous tubule สร้าง sperm แต่ยังไม่ mature; capacitation เกิดในระบบสืบพันธุ์หญิง"
   },
   "30": {
-   "explanation": "Cryptorchidism"
+   "explanation": "Cryptorchidism — อัณฑะไม่ลงถุง ถุงอัณฑะข้างนั้นเล็ก/ว่าง (underdeveloped scrotum)\nTrap: hydrocele, varicocele, torsion, orchitis ทำให้ถุงอัณฑะโต/บวม"
   },
   "32": {
-   "explanation": "Trichomonas vaginalis"
+   "explanation": "Trichomonas vaginalis — protozoa รูปลูกแพร์ มี flagella เคลื่อนที่ใน wet smear ตกขาวเขียวเหลือง ฟอง\nTrap: Candida เห็น pseudohyphae/yeast; Gardnerella เห็น clue cell"
   },
   "33": {
-   "explanation": "Immature Teratoma"
+   "explanation": "Immature teratoma — มีเนื้อเยื่อ 3 germ layers (ผม, sebum) ร่วมกับ primitive neuroepithelium = immature (มะเร็ง) ในหญิงอายุน้อย\nTrap: mature cystic teratoma (dermoid) ไม่มี primitive neuroepithelium"
   },
   "34": {
-   "explanation": "2 sperm + 1 normal egg"
+   "explanation": "2 sperm + 1 normal egg — partial mole = triploid (69,XXY/XXX) จากไข่ปกติ + 2 sperm (มีชิ้นส่วนทารกได้)\nTrap: complete mole = ไข่ไม่มีโครโมโซม + 1 sperm (duplicate) หรือ 2 sperm → 46,XX"
   },
   "35": {
-   "explanation": "BRAC2"
+   "explanation": "BRCA2 — มะเร็งรังไข่ + ประวัติมะเร็งเต้านมในแม่อายุน้อย = hereditary breast–ovarian cancer (BRCA1/2) ซึ่งเป็นยีนซ่อม DNA แบบ homologous recombination\nTrap: PTEN = Cowden; RB = retinoblastoma; KRAS เป็น oncogene ไม่ใช่โรคถ่ายทอดนี้"
   },
   "36": {
-   "explanation": "Invasive lobular carcinoma"
+   "explanation": "Invasive lobular carcinoma — เซลล์เรียงเป็นแถวเดี่ยว (Indian file) ขอบไม่ชัด มักเป็นสองข้าง/หลายจุด (เสีย E-cadherin)\nTrap: invasive ductal เป็นกลุ่ม/ต่อม desmoplasia; LCIS/DCIS ยังไม่ invasive",
+   "edits": [
+    {
+     "field": "stem",
+     "old": "Indian file pattern",
+     "new": "Indian file pattern. What is the most likely diagnosis?"
+    }
+   ]
   },
   "37": {
-   "explanation": "Activate vasopressin receptor"
+   "explanation": "Activate vasopressin receptor — oxytocin โครงสร้างคล้าย ADH ขนาดสูงกระตุ้น V2 receptor → ดูดน้ำกลับ → dilutional hyponatremia (water intoxication)\nTrap: oxytocin receptor ทำให้มดลูกหดตัว ไม่ใช่สาเหตุของ hyponatremia"
   },
   "39": {
-   "explanation": "Neisseria gonorrhoeae"
+   "explanation": "Neisseria gonorrhoeae — disseminated gonococcal infection: ไข้, ผื่น petechial/pustular, ข้ออักเสบ ในหญิงวัยเจริญพันธุ์\nTrap: Treponema ให้ผื่นที่ฝ่ามือฝ่าเท้า (secondary syphilis) ไม่ purulent; H. ducreyi ทำแผล chancroid เจ็บ"
   },
   "40": {
-   "explanation": "They didn’t have any problem."
+   "explanation": "They didn't have any problem — ถึงจุดสุดยอดทั้งคู่และพอใจ ระยะเวลาสั้นไม่ได้ถือเป็นโรค ถ้าไม่ทำให้ทุกข์ใจ (ต้องมี distress จึงเป็น sexual dysfunction)\nTrap: ไม่มีข้อมูลว่าขาดความต้องการหรือไม่ถึงจุดสุดยอด"
   },
   "42": {
-   "explanation": "ECF — AI ตอบ D ()"
+   "explanation": "ECF — ปริมาตรลดจากท้องเสีย → renin ↑ → angiotensin II/aldosterone ↑ → ดูด Na+ และน้ำกลับ → ECF volume เพิ่มกลับ (ตามเฉลยต้นฉบับ)\nTrap: aldosterone ทำให้ขับ K+ และ H+ ออก → [K+] และ [H+] ในเลือดลดลง ไม่ใช่เพิ่ม; Hct ลดลงเมื่อ ECF กลับมา",
+   "audit_note": "AI ตอบ [H+]; แต่ aldosterone ลด H+ ในเลือด ต้นฉบับ ECF สมเหตุผลกว่า"
   },
   "43": {
-   "explanation": "Hemolytic anemia"
+   "explanation": "Hemolytic anemia — ซีด เหลือง Hb ต่ำ ปัสสาวะสีแดงน้ำตาล dipstick blood 2+ แต่ RBC ในปัสสาวะ 0–1 = hemoglobinuria, urobilinogen ↑, bilirubin ในปัสสาวะ neg (unconjugated) = intravascular hemolysis\nTrap: hepatitis/biliary stone ให้ urine bilirubin บวก; AGN มี RBC จริงในปัสสาวะ"
   },
   "44": {
-   "explanation": "greater than 100,000 CFU/ml"
+   "explanation": "greater than 100,000 CFU/ml — midstream clean-catch ถือว่ามีนัยสำคัญที่ ≥10^5 CFU/mL\nTrap: 10^3–10^4 ใช้ในบางกรณี (ผู้ชาย/มีอาการ/สวนปัสสาวะ) ส่วน suprapubic aspiration พบเท่าไรก็มีนัยสำคัญ"
   },
   "46": {
-   "explanation": "Lateral nerve — AI ตอบ D ()"
+   "explanation": "Lateral (femoral cutaneous) nerve — L2–L3 รับความรู้สึกผิวหนังด้านข้างต้นขา ถูกกดใต้ inguinal ligament → meralgia paresthetica\nTrap: genitofemoral รับความรู้สึกบริเวณ scrotum/ต้นขาด้านหน้าส่วนบนเล็กน้อย; iliohypogastric รับผิวหนังเหนือหัวหน่าว",
+   "audit_note": "AI ตอบ genitofemoral; ต้นฉบับ lateral femoral cutaneous n. เข้ากับ 'thigh' มากกว่า"
   },
   "47": {
-   "explanation": "Estrogen"
+   "explanation": "Estrogen — (two-cell theory) theca cell สร้าง androstenedione ภายใต้ LH แล้ว granulosa cell เปลี่ยนเป็น estrogen ด้วย aromatase (ตามเฉลยต้นฉบับ: theca เป็นต้นทางของ estrogen)\nTrap: GnRH/LH/FSH มาจาก hypothalamus/pituitary; progesterone หลักมาจาก corpus luteum"
   },
   "48": {
-   "explanation": "Ovulation"
+   "explanation": "Ovulation — แบ่ง ovarian cycle เป็น follicular phase (ก่อน) และ luteal phase (หลัง)\nTrap: LH surge กระตุ้นให้ตกไข่ แต่ตัวแบ่งระยะคือการตกไข่; menstruation แบ่ง uterine cycle"
   },
   "49": {
-   "explanation": "stimulation by GnRH"
+   "explanation": "Stimulation by GnRH — การหลั่ง FSH/LH จาก pituitary ต้องอาศัย GnRH แบบ pulsatile ตั้งแต่ในครรภ์\nTrap: hCG ไปกระตุ้น Leydig cell โดยตรง ไม่ได้ทำให้หลั่ง FSH/LH"
   },
   "50": {
-   "explanation": "Serratia marcescens"
+   "explanation": "Serratia marcescens — gram-negative bacilli, lactose non/late fermenter, indole neg, สร้าง pigment แดง (prodigiosin)\nTrap: E. coli indole positive; Pseudomonas pigment เขียว (pyocyanin) และ oxidase positive"
+  },
+  "2": {
+   "explanation": "Genital tubercle — หมุดชี้ที่ glans penis ซึ่งเจริญมาจาก genital tubercle (ในหญิงเป็น clitoris)\nTrap: labioscrotal swelling → scrotum; genital (urethral) fold → spongy urethra/ventral shaft; gubernaculum ดึงอัณฑะลง"
+  },
+  "20": {
+   "explanation": "Chronic renal failure — ภาพเป็น cast กว้าง ขอบคม ใส เป็นมัน มีรอยแตก = waxy/broad cast บ่งชี้ไตวายเรื้อรัง\nTrap: dehydration/ออกกำลังกายให้ hyaline cast; acute pyelonephritis ให้ WBC cast; AGN ให้ RBC cast"
+  },
+  "23": {
+   "explanation": "Promontory of the sacrum — ภาพ X-ray lateral lumbosacral ลูกศรชี้ขอบหน้าของ S1 = sacral promontory\nTrap: ASIS/AIIS อยู่บน ilium ไม่เห็นในตำแหน่งนี้; pubic arch อยู่ล่างด้านหน้า"
+  },
+  "31": {
+   "explanation": "serum PSA — หลัง radical prostatectomy PSA ควรลดจนตรวจไม่พบ ใช้ติดตามการกลับเป็นซ้ำ (biochemical recurrence) ได้ดีที่สุด\nTrap: CT/bone scan ใช้ staging หรือเมื่อ PSA ขึ้นแล้ว; DRE หลังตัดต่อมออกไม่มีประโยชน์ (โจทย์เขียน proctectomy แต่หมายถึง prostatectomy)",
+   "edits": [
+    {
+     "field": "stem",
+     "old": "proctectomy",
+     "new": "prostatectomy"
+    }
+   ],
+   "choices_override": {
+    "A": "serum PSA",
+    "B": "CT scan",
+    "C": "Bone scan",
+    "D": "Digital rectal examination",
+    "E": "Serum acid phosphatase"
+   },
+   "ai_choices": [
+    "C",
+    "D",
+    "E"
+   ]
+  },
+  "38": {
+   "explanation": "Gardnerella vaginalis — ภาพ clue cell (squamous cell มีแบคทีเรียเกาะจนขอบไม่ชัด) = bacterial vaginosis ไม่ได้ติดทางเพศสัมพันธ์โดยตรง\nTrap: Lactobacillus เป็นเชื้อปกติที่ลดลงใน BV; Mycoplasma hominis พบร่วมได้แต่ไม่ใช่ตัวหลัก"
+  },
+  "41": {
+   "explanation": "Fatty acid oxidation — ไตเป็นอวัยวะใช้พลังงานสูง tubule ใช้ fatty acid β-oxidation เป็นหลัก ใน CKD จาก DM/HT เกิด mitochondrial dysfunction → FAO ลดลง → ไขมันสะสม, fibrosis, tubular injury\nTrap: glycolysis/gluconeogenesis เป็นทางรองของ tubule ไม่ใช่กลไกหลักของ CKD",
+   "choices_override": {
+    "A": "Fatty acid oxidation",
+    "B": "Glycolysis",
+    "C": "Gluconeogenesis",
+    "D": "Ketogenesis",
+    "E": "Pentose phosphate pathway"
+   },
+   "ai_choices": [
+    "B",
+    "C",
+    "D",
+    "E"
+   ]
+  },
+  "45": {
+   "explanation": "1 = uterine artery, 2 = ureter — ท่อ 1 (แดง) คือ uterine artery ข้ามด้านบน ท่อ 2 (เขียว) คือ ureter ลอดใต้เข้า ureteric tunnel (\"water under the bridge\")\nTrap: เวลาผ่าตัดมดลูกต้องระวังผูก ureter แทน uterine artery"
   }
  },
  "extra_edits": {}
