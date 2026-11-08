@@ -1,6 +1,6 @@
 # REVIEW — รายการรอผู้ใช้ตัดสิน
 
-ทั้งหมด 306 รายการ
+ทั้งหมด 313 รายการ
 วิธีตอบ: พิมพ์ในแชทเป็นบรรทัด เช่น `end_52_MCQ_027: คงเดิม` / `end_52_MCQ_063: C` / `end_52_MCQ_046: ตรวจใหม่`
 Claude จะบันทึกลง `auditor/data/decisions.json` แล้ว build ใหม่
 
@@ -300,10 +300,17 @@ Claude จะบันทึกลง `auditor/data/decisions.json` แล้ว
 | kub_49_MCQ_016 | C | A | mid | เฉลยขัดกับ AI | AI ตอบ crescentic GN (เข้าไตวายเร็ว); ต้นฉบับ MPGN (chronic progressive)  |
 | kub_49_MCQ_042 | B | D | mid | เฉลยขัดกับ AI | AI ตอบ [H+]; แต่ aldosterone ลด H+ ในเลือด ต้นฉบับ ECF สมเหตุผลกว่า  |
 | kub_49_MCQ_046 | C | D | mid | เฉลยขัดกับ AI | AI ตอบ genitofemoral; ต้นฉบับ lateral femoral cutaneous n. เข้ากับ 'thigh' มากกว่า  |
-| kub_50_MCQ_022 | A | B | mid | เฉลยขัดกับ AI |   |
-| kub_50_MCQ_024 | A | C | mid | เฉลยขัดกับ AI |   |
-| kub_50_MCQ_030 | C | A | mid | เฉลยขัดกับ AI |   |
-| kub_50_MCQ_071 | E | A | mid | เฉลยขัดกับ AI |   |
+| kub_50_MCQ_010 | None | None | None | AI เขียนข้อนี้ขึ้นใหม่จากโน้ตความจำในต้นฉบับ |   |
+| kub_50_MCQ_012 | None | None | None | AI เขียนข้อนี้ขึ้นใหม่จากโน้ตความจำในต้นฉบับ |   |
+| kub_50_MCQ_020 | None | None | None | AI เขียนข้อนี้ขึ้นใหม่จากโน้ตความจำในต้นฉบับ |   |
+| kub_50_MCQ_022 | A | B | mid | ช้อยส์ E AI เติมให้ครบ 5 ตัว; เฉลยขัดกับ AI | AI blind ตอบ Na+; ต้นฉบับ urea: ADH เพิ่ม urea transporter (UT-A1) ที่ inner medullary CD → urea clearance ลด สมเหตุผล  |
+| kub_50_MCQ_024 | A | C | mid | เฉลยขัดกับ AI | AI blind ตอบ early DCT; ต้นฉบับ PCT (glomerulotubular balance) ถูกตามหลัก  |
+| kub_50_MCQ_030 | C | A | mid | เฉลยขัดกับ AI | AI blind ตอบ EM study; ต้นฉบับ prednisolone (nephrotic ไต function ปกติ ให้ steroid ก่อน) สมเหตุผล  |
+| kub_50_MCQ_052 | None | None | None | AI เขียนข้อนี้ขึ้นใหม่จากโน้ตความจำในต้นฉบับ |   |
+| kub_50_MCQ_061 | None | None | None | AI เขียนข้อนี้ขึ้นใหม่จากโน้ตความจำในต้นฉบับ |   |
+| kub_50_MCQ_063 | None | A | mid | AI เขียนข้อนี้ขึ้นใหม่จากโน้ตความจำในต้นฉบับ |   |
+| kub_50_MCQ_071 | E | A | mid | เฉลยขัดกับ AI | AI blind ตอบ follicular; แต่รอบ 24 วัน ตกไข่วันที่ 10 วันที่ 14 อยู่ luteal phase → granulosa lutein ถูก (ต้นฉบับถูก)  |
+| kub_50_MCQ_091 | None | None | None | AI เขียนข้อนี้ขึ้นใหม่จากโน้ตความจำในต้นฉบับ |   |
 | kub_51_MCQ_013 | C | E | lo | เฉลยขัดกับ AI |   |
 | kub_51_MCQ_070 | D | C | hi | เฉลยขัดกับ AI |   |
 | kub_51_MCQ_093 | C | A | lo | เฉลยขัดกับ AI |   |
