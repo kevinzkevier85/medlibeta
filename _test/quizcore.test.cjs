@@ -14,6 +14,12 @@ let pass = 0;
 const t = (name, fn) => { fn(); pass++; console.log("✓", name); };
 
 t("short answer matches accepted text", () => assert.ok(Q.autoMatch(kf.items[0], "The Transverse Sinus")));
+t("English accepted answer starts at a word", () => {
+  const it = { format: "short", accepted: ["thyroid", "gh", "c"] };
+  assert.ok(Q.autoMatch(it, "Thyroid gland")); assert.ok(Q.autoMatch(it, "GH, PRL")); assert.ok(Q.autoMatch(it, "C (parafollicular)"));
+  assert.ok(!Q.autoMatch(it, "parathyroid")); assert.ok(!Q.autoMatch(it, "high")); assert.ok(!Q.autoMatch(it, "abc"));
+  assert.ok(Q.autoMatch({ accepted: ["gnrh"] }, "↓GnRH → ↓FSH"));
+});
 t("short answer needs every keyword", () => { assert.ok(Q.autoMatch(kf.items[1], "TV เพิ่ม IRV ลด")); assert.ok(!Q.autoMatch(kf.items[1], "เพิ่มอย่างเดียว")); });
 t("select: partial and over-limit", () => {
   assert.strictEqual(Q.itemScore(kf.items[2], { sel: ["a"] }), 0.5);
