@@ -11,8 +11,9 @@
 | `source_agree` | ตรงกับต้นฉบับ | 24 |
 | `ai_generated` | AI เขียนข้อใหม่ | 6 |
 | `source_unverified` | ต้นฉบับไม่แน่นอน | 3 |
-| `source_disagree` | ขัดกับต้นฉบับ | 3 |
 | `drafted` | AI ทำเฉลย | 3 |
+| `source_disagree` | ขัดกับต้นฉบับ | 2 |
+| `corrected` | แก้ตามผู้ใช้ | 1 |
 
 AI ตอบตรงกับเฉลยต้นฉบับ **27/33** ข้อที่มีโจทย์
 
@@ -20,7 +21,6 @@ AI ตอบตรงกับเฉลยต้นฉบับ **27/33** ข้
 
 | ข้อ | ต้นฉบับ | AI | ความมั่นใจ | ปัญหา | รายละเอียด |
 |---|---|---|---|---|---|
-| 51 | B | A | medium | ช้อยส์จากความจำ ถ้อยคำไม่ชัด (A, E); เฉลยขัดกับ AI | เฉลยต้นฉบับวง B (convert cholesterol to bile) แต่โน้ตของผู้เฉลยเองอธิบาย reverse cholesterol transport ซึ่งตรงกับ A (efflux cholesterol ... to liver) — HDL ไม่ได้เปลี่ยน cholesterol เป็น bile เอง (ตับทำ) AI เลือก A |
 | 61 | ['A', 'C'] | A | medium | ต้นฉบับไฮไลต์ไว้ 2 ตัว (A และ C); ต้นฉบับวงไว้หลายตัว | เฉลยต้นฉบับไฮไลต์ทั้ง A (down-regulation of RANKL) และ C (increased RANKL-OPG interaction) พร้อมโน้ต 'estrogen ↓ RANKL & ↑ OPG' — OPG ↑ ทำให้ RANKL ถูก OPG จับมากขึ้น C จึงถูกได้ด้วย; AI เลือก A |
 | 69 | C | B | high | เฉลยขัดกับ AI | เฉลยต้นฉบับเลือก C (increased urinary glucose excretion) และผู้เฉลยเขียนว่า 'ไม่แน่ใจ' — กลไกที่ทำให้ glucose ปกติใน insulin resistance คือ compensatory hyperinsulinemia (B); glucosuria เกิดเมื่อ glucose สูงแล้ว |
 | 71 | None | A | low | หน้าเฉลยต้นฉบับขาดหลังช้อยส์ A ไม่ทราบตัวที่เลือก; ถ้อยคำโจทย์กำกวม (chylomicron ก็ขน TG); ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ | เฉลยต้นฉบับหมดที่หน้า 12 (หลังช้อยส์ A) มีแต่โน้ต 'storage energy = Triglyceride' — ทั้ง VLDL และ chylomicron ขน TG; AI เลือก VLDL ความมั่นใจต่ำ |
@@ -44,6 +44,7 @@ AI ตอบตรงกับเฉลยต้นฉบับ **27/33** ข้
 | 18 | ผู้จำไม่แน่ใจชื่อโรค (11-hydroxylase); AI เขียนข้อนี้ขึ้นใหม่จากโน้ตความจำในต้นฉบับ |  |
 | 33 | ต้นฉบับไม่มีโจทย์ AI เขียนโจทย์ใหม่จากช้อยส์ (น่าจะเป็นข้อเดียวกับข้อ 50); AI เขียนข้อนี้ขึ้นใหม่จากโน้ตความจำในต้นฉบับ |  |
 | 50 | ช้อยส์ C, E AI เติมให้ครบ 5 ตัว |  |
+| 51 | ช้อยส์จากความจำ ถ้อยคำไม่ชัด (A, E); ผู้แจ้ง #45: HDL ทำ reverse cholesterol transport ส่ง cholesterol/oxidized LDL กลับตับ; การเปลี่ยนเป็น bile acid ทำที่ตับ ไม่ใช่ HDL → A | เฉลยต้นฉบับวง B (convert cholesterol to bile) แต่โน้ตของผู้เฉลยเองอธิบาย reverse cholesterol transport ซึ่งตรงกับ A (efflux cholesterol ... to liver) — HDL ไม่ได้เปลี่ยน cholesterol เป็น bile เอง (ตับทำ) AI เลือก A |
 | 52 | ในเฉลยต้นฉบับข้อนี้ไม่ได้วงคำตอบ; ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |  |
 | 53 | AI เขียนข้อนี้ขึ้นใหม่จากโน้ตความจำในต้นฉบับ |  |
 | 55 | ช้อยส์ E AI เติมให้ครบ 5 ตัว |  |
