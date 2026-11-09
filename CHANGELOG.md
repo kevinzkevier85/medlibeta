@@ -3,6 +3,9 @@
 ทุกเวอร์ชันบันทึกที่นี่ และใน `version.json` (หน้าเว็บแสดงจาก `version.json`)
 เลขเวอร์ชัน: `MAJOR.MINOR.PATCH` — เพิ่มฟีเจอร์ = MINOR, แก้บั๊ก = PATCH
 
+## v0.27.2 · 2026-11-09 · แก้เฉลย END 50 ข้อ 11
+- END 50 MCQ ข้อ 11 (ปวดคอ ต่อมโตกดเจ็บมาก FT4 สูง TSH ต่ำ): เฉลย A → B Subacute thyroiditis ตามที่แจ้งใน #49 (Graves ต่อมไม่เจ็บ)
+
 ## v0.27.1 · 2026-11-09 · แก้เฉลย END 51 ข้อ 51
 - END 51 MCQ ข้อ 51 (HDL ปกป้อง atherosclerosis): เฉลย B → A ตามที่แจ้งใน #45 (reverse cholesterol transport; การเปลี่ยนเป็น bile acid ทำที่ตับ ไม่ใช่ HDL)
 
