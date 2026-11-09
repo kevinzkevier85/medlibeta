@@ -1,0 +1,727 @@
+{
+ "meta": {
+  "set_id": "51_OSPE",
+  "block": "END",
+  "cohort": 51,
+  "type": "OSPE",
+  "title": "OSPE Endocrine · Med PSU 51",
+  "time_limit_min": 48,
+  "generated_by": "auditor/tools/build_kf.py from auditor/data/work/end_51_OSPE.kf.json — do not edit by hand"
+ },
+ "questions": [
+  {
+   "id": "END-51-OSPE-001",
+   "block": "END",
+   "cohort": 51,
+   "n": 1,
+   "type": "OSPE",
+   "station": 1,
+   "stem": "Station 1.",
+   "items": [
+    {
+     "id": "1.1",
+     "prompt": "Identify the endocrine gland in the area surrounded by the dash line",
+     "format": "short",
+     "accepted": [
+      "pituitary",
+      "hypophysis"
+     ],
+     "key_text": "Pituitary gland",
+     "source_key": "(ต้นฉบับไม่มีไฟล์เฉลย)"
+    },
+    {
+     "id": "1.2",
+     "prompt": "What is the embryogenic origin of region A",
+     "format": "short",
+     "accepted": [
+      "rathke",
+      "oral ectoderm",
+      "stomod",
+      "surface ectoderm"
+     ],
+     "key_text": "Rathke's pouch (oral ectoderm / stomodeum)",
+     "source_key": "(ต้นฉบับไม่มีไฟล์เฉลย)",
+     "explanation": "A อยู่ส่วนสีเข้ม = pars distalis (adenohypophysis) มาจาก Rathke's pouch · ส่วนหลัง (pars nervosa) มาจาก neuroectoderm"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "OSPE51",
+     "pages": [
+      1
+     ]
+    }
+   ],
+   "tags": [
+    "pituitary",
+    "histology"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "pituitary; pars distalis from Rathke's pouch",
+   "image": "img/END-51-OSPE-001.jpg",
+   "image_caption": "ต่อมใต้สมอง: A ในส่วนสีเข้ม"
+  },
+  {
+   "id": "END-51-OSPE-002",
+   "block": "END",
+   "cohort": 51,
+   "n": 2,
+   "type": "OSPE",
+   "station": 2,
+   "stem": "Station 2.",
+   "items": [
+    {
+     "id": "2.1",
+     "prompt": "What is the primary function of the structure pointed by the yellow arrow",
+     "format": "short",
+     "accepted": [
+      "adh",
+      "vasopressin",
+      "antidiuretic"
+     ],
+     "keywords_all": [
+      "oxytocin"
+     ],
+     "key_text": "Storage (and release) of oxytocin and ADH — Herring body",
+     "source_key": "(ต้นฉบับไม่มีไฟล์เฉลย)"
+    },
+    {
+     "id": "2.2",
+     "prompt": "Name 1 hormone produced by the cell indicated by the red arrow",
+     "format": "short",
+     "accepted": [
+      "gh",
+      "growth hormone",
+      "somatotropin",
+      "prolactin",
+      "prl"
+     ],
+     "key_text": "GH or prolactin (acidophil)",
+     "source_key": "(ต้นฉบับไม่มีไฟล์เฉลย)"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "OSPE51",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [
+    "pituitary",
+    "histology"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "Herring bodies; acidophils",
+   "image": "img/END-51-OSPE-002.jpg",
+   "image_caption": "ลูกศรเหลืองในส่วนหลัง, ลูกศรแดงที่เซลล์ติดสีชมพู"
+  },
+  {
+   "id": "END-51-OSPE-004",
+   "block": "END",
+   "cohort": 51,
+   "n": 4,
+   "type": "OSPE",
+   "station": 4,
+   "stem": "Station 4.",
+   "items": [
+    {
+     "id": "4.1",
+     "prompt": "Identify gland A",
+     "format": "short",
+     "accepted": [
+      "thyroid"
+     ],
+     "key_text": "Thyroid gland",
+     "source_key": "(ต้นฉบับไม่มีไฟล์เฉลย)"
+    },
+    {
+     "id": "4.2",
+     "prompt": "Name the possible hormone contents found within region B",
+     "format": "short",
+     "accepted": [
+      "thyroglobulin",
+      "t3",
+      "t4",
+      "thyroxine",
+      "triiodothyronine",
+      "colloid",
+      "mit",
+      "dit"
+     ],
+     "key_text": "Thyroglobulin carrying T3/T4 (MIT, DIT) — colloid",
+     "source_key": "(ต้นฉบับไม่มีไฟล์เฉลย)",
+     "explanation": "colloid เก็บ T3/T4 ในรูปที่ยังจับกับ thyroglobulin"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "OSPE51",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [
+    "thyroid",
+    "histology"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "thyroid; colloid",
+   "image": "img/END-51-OSPE-004.jpg",
+   "image_caption": "A ต่อมที่วงไว้, B ในโพรง follicle"
+  },
+  {
+   "id": "END-51-OSPE-005",
+   "block": "END",
+   "cohort": 51,
+   "n": 5,
+   "type": "OSPE",
+   "station": 5,
+   "stem": "Station 5.",
+   "items": [
+    {
+     "id": "5.1",
+     "prompt": "Identify gland A",
+     "format": "short",
+     "accepted": [
+      "parathyroid"
+     ],
+     "key_text": "Parathyroid gland",
+     "source_key": "(ต้นฉบับไม่มีไฟล์เฉลย)"
+    },
+    {
+     "id": "5.2",
+     "prompt": "What factor triggers the release of hormone produced by cells pointed by red arrow",
+     "format": "short",
+     "accepted": [
+      "low blood ca",
+      "low ca",
+      "hypocalcemia",
+      "hypocalcaemia",
+      "low serum calcium",
+      "decreased calcium",
+      "low calcium"
+     ],
+     "keywords_all": [
+      "low",
+      "calcium"
+     ],
+     "key_text": "Low blood Ca²⁺ (hypocalcemia)",
+     "source_key": "(ต้นฉบับไม่มีไฟล์เฉลย)",
+     "explanation": "chief cell หลั่ง PTH เมื่อ Ca²⁺ ต่ำ (รับรู้ผ่าน CaSR)"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "OSPE51",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [
+    "parathyroid",
+    "histology"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "parathyroid chief cells → PTH",
+   "image": "img/END-51-OSPE-005.jpg",
+   "image_caption": "A ต่อมเล็กข้าง thyroid, ลูกศรแดงชี้เซลล์"
+  },
+  {
+   "id": "END-51-OSPE-007",
+   "block": "END",
+   "cohort": 51,
+   "n": 7,
+   "type": "OSPE",
+   "station": 7,
+   "stem": "Station 7.",
+   "items": [
+    {
+     "id": "7.1",
+     "prompt": "Identify organ A",
+     "format": "short",
+     "accepted": [
+      "adrenal",
+      "suprarenal"
+     ],
+     "key_text": "Adrenal gland",
+     "source_key": "(ต้นฉบับไม่มีไฟล์เฉลย)"
+    },
+    {
+     "id": "7.2",
+     "prompt": "Effect of hormone produced by region B",
+     "format": "short",
+     "accepted": [
+      "na reabsorption",
+      "aldosterone",
+      "potassium excretion",
+      "k excretion",
+      "increase blood pressure",
+      "increase blood volume"
+     ],
+     "keywords_all": [
+      "sodium",
+      "reabsor"
+     ],
+     "key_text": "Aldosterone: increases Na⁺ (and water) reabsorption and K⁺/H⁺ excretion in the distal nephron",
+     "source_key": "(ต้นฉบับไม่มีไฟล์เฉลย)",
+     "explanation": "B อยู่ใต้ capsule เป็นกลุ่มเซลล์โค้ง = zona glomerulosa"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "OSPE51",
+     "pages": [
+      4
+     ]
+    }
+   ],
+   "tags": [
+    "adrenal",
+    "histology"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "adrenal; zona glomerulosa → aldosterone",
+   "image": "img/END-51-OSPE-007.jpg",
+   "image_caption": "ต่อมหมวกไต: A ภาพรวม, B ใต้ capsule"
+  },
+  {
+   "id": "END-51-OSPE-008",
+   "block": "END",
+   "cohort": 51,
+   "n": 8,
+   "type": "OSPE",
+   "station": 8,
+   "stem": "Station 8.",
+   "items": [
+    {
+     "id": "8.1",
+     "prompt": "Secretory cell in region B",
+     "format": "short",
+     "accepted": [
+      "chromaffin",
+      "pheochromocyte"
+     ],
+     "key_text": "Chromaffin cells (epinephrine, norepinephrine)",
+     "source_key": "(ต้นฉบับไม่มีไฟล์เฉลย)"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "OSPE51",
+     "pages": [
+      5
+     ]
+    }
+   ],
+   "tags": [
+    "adrenal",
+    "histology"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "adrenal medulla: chromaffin cells",
+   "image": "img/END-51-OSPE-008.jpg",
+   "image_caption": "ต่อมหมวกไต B ตรงกลาง"
+  },
+  {
+   "id": "END-51-OSPE-009",
+   "block": "END",
+   "cohort": 51,
+   "n": 9,
+   "type": "OSPE",
+   "station": 9,
+   "stem": "Station 9. A thyroid gland was removed from a 35-year-old man with no hypo- or hyperthyroidism.",
+   "items": [
+    {
+     "id": "9.1",
+     "prompt": "Describe histology finding",
+     "format": "short",
+     "keywords_all": [
+      "nodul",
+      "colloid"
+     ],
+     "key_text": "Multiple nodules of variable-sized follicles with abundant colloid, fibrosis, haemorrhage with haemosiderin-laden macrophages",
+     "source_key": "(ต้นฉบับไม่มีไฟล์เฉลย)"
+    },
+    {
+     "id": "9.2",
+     "prompt": "Diagnosis",
+     "format": "short",
+     "accepted": [
+      "mng"
+     ],
+     "keywords_all": [
+      "multinodular",
+      "goit"
+     ],
+     "key_text": "Multinodular goiter",
+     "source_key": "(ต้นฉบับไม่มีไฟล์เฉลย)"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "OSPE51",
+     "pages": [
+      5
+     ]
+    }
+   ],
+   "tags": [
+    "thyroid",
+    "pathology"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "multinodular goiter",
+   "image": "img/END-51-OSPE-009.jpg",
+   "image_caption": "ไทรอยด์มีหลายปุ่ม + histology"
+  },
+  {
+   "id": "END-51-OSPE-010",
+   "block": "END",
+   "cohort": 51,
+   "n": 10,
+   "type": "OSPE",
+   "station": 10,
+   "stem": "Station 10. Gross and microscopic findings of the thyroid gland removed from a 35-year-old man with no symptoms of hyper- or hypothyroidism.",
+   "items": [
+    {
+     "id": "10.1",
+     "prompt": "Describe gross pathology",
+     "format": "short",
+     "accepted": [
+      "well circumscribed",
+      "well-circumscribed",
+      "solitary nodule"
+     ],
+     "keywords_all": [
+      "encapsulated"
+     ],
+     "key_text": "Solitary, well-circumscribed, encapsulated nodule compressing the surrounding thyroid",
+     "source_key": "(ต้นฉบับไม่มีไฟล์เฉลย)"
+    },
+    {
+     "id": "10.2",
+     "prompt": "Diagnosis",
+     "format": "short",
+     "keywords_all": [
+      "follicular",
+      "adenoma"
+     ],
+     "key_text": "Follicular adenoma",
+     "source_key": "(ต้นฉบับไม่มีไฟล์เฉลย)",
+     "explanation": "เปลือกยังสมบูรณ์ ไม่มีการบุกรุก capsule/หลอดเลือด (ถ้ามี = follicular carcinoma)"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "OSPE51",
+     "pages": [
+      6
+     ]
+    }
+   ],
+   "tags": [
+    "thyroid",
+    "pathology"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "follicular adenoma",
+   "image": "img/END-51-OSPE-010.jpg",
+   "image_caption": "ก้อนเดียวมีเปลือก + histology"
+  },
+  {
+   "id": "END-51-OSPE-011",
+   "block": "END",
+   "cohort": 51,
+   "n": 11,
+   "type": "OSPE",
+   "station": 11,
+   "stem": "Station 11.",
+   "items": [
+    {
+     "id": "11.1",
+     "prompt": "What is the diagnosis",
+     "format": "short",
+     "accepted": [
+      "ptc"
+     ],
+     "keywords_all": [
+      "papillary",
+      "carcinoma"
+     ],
+     "key_text": "Papillary thyroid carcinoma",
+     "source_key": "(ต้นฉบับไม่มีไฟล์เฉลย)"
+    },
+    {
+     "id": "11.2",
+     "prompt": "Nuclear feature",
+     "format": "short",
+     "accepted": [
+      "orphan annie",
+      "ground glass",
+      "ground-glass",
+      "groove",
+      "pseudoinclusion",
+      "inclusion",
+      "clear nuclei",
+      "optically clear"
+     ],
+     "key_text": "Orphan Annie eye (ground-glass) nuclei, nuclear grooves, intranuclear pseudoinclusions, overlapping",
+     "source_key": "(ต้นฉบับไม่มีไฟล์เฉลย)"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "OSPE51",
+     "pages": [
+      6
+     ]
+    }
+   ],
+   "tags": [
+    "thyroid",
+    "pathology"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "papillary thyroid carcinoma",
+   "image": "img/END-51-OSPE-011.jpg",
+   "image_caption": "papillae + นิวเคลียสใส"
+  },
+  {
+   "id": "END-51-OSPE-012",
+   "block": "END",
+   "cohort": 51,
+   "n": 12,
+   "type": "OSPE",
+   "station": 12,
+   "stem": "Station 12.",
+   "items": [
+    {
+     "id": "12.1",
+     "prompt": "Diagnosis",
+     "format": "short",
+     "accepted": [
+      "parathyroid hyperplasia",
+      "secondary hyperparathyroidism"
+     ],
+     "keywords_all": [
+      "hyperplasia"
+     ],
+     "key_text": "Parathyroid hyperplasia (secondary hyperparathyroidism)",
+     "source_key": "(ต้นฉบับไม่มีไฟล์เฉลย)",
+     "audit_note": "ภาพเป็นต่อมโตหลายต่อมแบบ nodular จึงตอบ hyperplasia ตามข้อเดียวกันในชุด 52"
+    },
+    {
+     "id": "12.2",
+     "prompt": "What is the most likely underlying disease?",
+     "format": "short",
+     "accepted": [
+      "chronic kidney disease",
+      "ckd",
+      "chronic renal failure",
+      "renal failure",
+      "kidney failure",
+      "esrd",
+      "end stage renal disease"
+     ],
+     "key_text": "Chronic kidney disease",
+     "source_key": "(ต้นฉบับไม่มีไฟล์เฉลย)"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "OSPE51",
+     "pages": [
+      7
+     ]
+    }
+   ],
+   "tags": [
+    "parathyroid",
+    "pathology"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "nodular parathyroid hyperplasia (secondary hyperparathyroidism, CKD)",
+   "image": "img/END-51-OSPE-012.jpg",
+   "image_caption": "ต่อมโตหลายต่อมเป็นปุ่ม"
+  },
+  {
+   "id": "END-51-OSPE-013",
+   "block": "END",
+   "cohort": 51,
+   "n": 13,
+   "type": "OSPE",
+   "station": 13,
+   "stem": "Station 13.",
+   "items": [
+    {
+     "id": "13.1",
+     "prompt": "Please describe histological finding of a thyroid",
+     "format": "short",
+     "accepted": [
+      "germinal center",
+      "germinal centre"
+     ],
+     "keywords_all": [
+      "lymph",
+      "hurthle"
+     ],
+     "key_text": "Dense lymphoplasmacytic infiltrate with lymphoid follicles/germinal centres; atrophic follicles lined by Hürthle (oncocytic) cells",
+     "source_key": "(ต้นฉบับไม่มีไฟล์เฉลย)"
+    },
+    {
+     "id": "13.2",
+     "prompt": "Diagnosis",
+     "format": "short",
+     "accepted": [
+      "hashimoto",
+      "chronic lymphocytic thyroiditis",
+      "autoimmune thyroiditis"
+     ],
+     "key_text": "Hashimoto's thyroiditis",
+     "source_key": "(ต้นฉบับไม่มีไฟล์เฉลย)"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "OSPE51",
+     "pages": [
+      7
+     ]
+    }
+   ],
+   "tags": [
+    "thyroid",
+    "pathology"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "Hashimoto thyroiditis",
+   "image": "img/END-51-OSPE-013.jpg",
+   "image_caption": "lymphoid follicle + เซลล์ชมพู"
+  },
+  {
+   "id": "END-51-OSPE-014",
+   "block": "END",
+   "cohort": 51,
+   "n": 14,
+   "type": "OSPE",
+   "station": 14,
+   "stem": "Station 14.",
+   "items": [
+    {
+     "id": "14.1",
+     "prompt": "Please describe histological finding of a thyroid",
+     "format": "short",
+     "keywords_all": [
+      "capsul",
+      "vascular"
+     ],
+     "key_text": "(a) capsular invasion, (b) vascular invasion",
+     "source_key": "(ต้นฉบับไม่มีไฟล์เฉลย)"
+    },
+    {
+     "id": "14.2",
+     "prompt": "Diagnosis",
+     "format": "short",
+     "accepted": [
+      "ftc"
+     ],
+     "keywords_all": [
+      "follicular",
+      "carcinoma"
+     ],
+     "key_text": "Follicular carcinoma",
+     "source_key": "(ต้นฉบับไม่มีไฟล์เฉลย)"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "OSPE51",
+     "pages": [
+      8
+     ]
+    }
+   ],
+   "tags": [
+    "thyroid",
+    "pathology"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "follicular carcinoma",
+   "image": "img/END-51-OSPE-014.jpg",
+   "image_caption": "a capsule, b หลอดเลือด"
+  },
+  {
+   "id": "END-51-OSPE-015",
+   "block": "END",
+   "cohort": 51,
+   "n": 15,
+   "type": "OSPE",
+   "station": 15,
+   "stem": "Station 15.",
+   "items": [
+    {
+     "id": "15.1",
+     "prompt": "Please describe the gross finding of adrenal gland",
+     "format": "short",
+     "accepted": [
+      "well circumscribed",
+      "well-circumscribed",
+      "solitary nodule"
+     ],
+     "keywords_all": [
+      "yellow"
+     ],
+     "key_text": "Solitary, well-circumscribed yellow nodule in the cortex; rest of the gland thin",
+     "source_key": "(ต้นฉบับไม่มีไฟล์เฉลย)"
+    },
+    {
+     "id": "15.2",
+     "prompt": "Diagnosis",
+     "format": "short",
+     "accepted": [
+      "adrenal adenoma",
+      "cortical adenoma"
+     ],
+     "keywords_all": [
+      "adenoma"
+     ],
+     "key_text": "Adrenocortical adenoma",
+     "source_key": "(ต้นฉบับไม่มีไฟล์เฉลย)"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "OSPE51",
+     "pages": [
+      8
+     ]
+    }
+   ],
+   "tags": [
+    "adrenal",
+    "pathology"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "adrenocortical adenoma",
+   "image": "img/END-51-OSPE-015.jpg",
+   "image_caption": "ต่อมหมวกไตมีก้อนสีเหลือง"
+  }
+ ]
+}
