@@ -1,6 +1,6 @@
 # REVIEW — รายการรอผู้ใช้ตัดสิน
 
-ทั้งหมด 274 รายการ
+ทั้งหมด 273 รายการ
 วิธีตอบ: พิมพ์ในแชทเป็นบรรทัด เช่น `end_52_MCQ_027: คงเดิม` / `end_52_MCQ_063: C` / `end_52_MCQ_046: ตรวจใหม่`
 Claude จะบันทึกลง `auditor/data/decisions.json` แล้ว build ใหม่
 
@@ -65,7 +65,6 @@ Claude จะบันทึกลง `auditor/data/decisions.json` แล้ว
 | end_49_MCQ_031 | None | A | medium | ตัวกระตุ้นโดยตรงที่สุดคือ hypoglycemia ซึ่งไม่มีในช้อยส์; ในเฉลยต้นฉบับไม่ได้วงคำตอบ (ใส่ ?); ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |  — A: intra-islet insulin ↓ ปลด inhibition; B: ยับยั้ง glucagon; C: FFA สูงยับยั้งเล็กน้อย; D: ยับยั้ง glucagon; E: กระตุ้นได้ (vagal) แต่ไม่ใช่ตัวหลักใน fasting |
 | end_50_MCQ_003 | None | D | high | ในเฉลยต้นฉบับผู้จำเขียนว่าจำช้อยส์ไม่ได้เลย ช้อยส์ในไฟล์ข้อสอบอาจแต่งขึ้น; ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |  — A: Gs/cAMP คลาย smooth muscle; B: Gi ไม่ใช่ทางของ oxytocin; C: ไม่ใช่กลไกของ oxytocin; D: ถูก; E: JAK-STAT เป็นของ GH/prolactin/cytokine |
 | end_50_MCQ_009 | E | C | medium | ถ้อยคำโจทย์กำกวม: 'TRH markedly increase when she is given'; เฉลยขัดกับ AI | เฉลยต้นฉบับเลือก E (pituitary) โดยตีความว่า TRH สูง TSH ต่ำ = pituitary เสีย; แต่ถ้าโจทย์หมายถึง TRH stimulation test แล้ว TSH ขึ้นมาก จะเป็น hypothalamus (C) — ขึ้นกับถ้อยคำจริง — A: อาการเป็น hypothyroid; B: อาการเป็น hypothyroid; C: ถ้า TSH ตอบสนอง TRH ดี → hypothalamus; D: primary hypothyroid TSH จะสูง; E: ถ้า TRH ในเลือดสูงแต่ TSH ต่ำ → pituitary (การตีความของเฉลยต้นฉบับ) |
-| end_50_MCQ_011 | A | B | high | เฉลยขัดกับ AI | เฉลยต้นฉบับเลือก A (Graves) จาก lab ที่เป็น hyperthyroid แต่ไม่ได้ใช้อาการปวดคอและต่อมกดเจ็บ ซึ่งเป็นลักษณะเฉพาะของ subacute thyroiditis (B) — ทั้งสองโรคมี FT4 ↑ TSH ↓ — A: thyrotoxicosis ได้ แต่ต่อมไม่เจ็บ; B: ปวดคอ + ต่อมกดเจ็บ + thyrotoxicosis; C: มักเป็นก้อน ไม่มี thyrotoxicosis; D: มักเป็นก้อน ไม่มี thyrotoxicosis; E: มัก hypothyroid ไม่ปวด |
 | end_50_MCQ_022 | None | None | None | AI เขียนข้อนี้ขึ้นใหม่จากโน้ตความจำในต้นฉบับ |  — A: เป็นภาพ Addison (cortisol ต่ำ); B: thyroid ปกติ; C: ถูก — cortisol ↑ + androgen ↑ (ตรงกับโน้ตในเฉลยต้นฉบับ); D: prolactin ไม่ได้ผิดปกติ; E: เป็นภาพ DI/SIADH |
 | end_50_MCQ_027 | None | None | None | AI เขียนข้อนี้ขึ้นใหม่จากโน้ตความจำในต้นฉบับ |  — A: GH ทำให้แย่ลง; B: ถูก — somatostatin analog; C: rhIGF-1 เพิ่ม IGF-1; D: ADH analog ใช้ใน DI; E: ใช้ใน hypothyroid |
 | end_50_MCQ_030 | None | None | None | AI เขียนข้อนี้ขึ้นใหม่จากโน้ตความจำในต้นฉบับ | เฉลยต้นฉบับเขียนว่า metyrapone พร้อมระบุ ADR ว่า hypertension ซึ่งขัดกับโจทย์ที่มี hypertension อยู่แล้ว AI จึงเขียนข้อให้คำตอบเป็น ketoconazole — ควรตรวจว่าโจทย์จริงถามอะไร — A: ลด cortisol โดยไม่สะสม DOC; B: ลด cortisol ได้ แต่ DOC ↑ ทำให้ HT แย่ลง (ตามโน้ตต้นฉบับ); C: mineralocorticoid ทำให้ HT แย่ลง; D: glucocorticoid; E: คุม BP ได้แต่ไม่ลด cortisol |
