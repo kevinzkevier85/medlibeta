@@ -1,6 +1,6 @@
 # REVIEW — รายการรอผู้ใช้ตัดสิน
 
-ทั้งหมด 275 รายการ
+ทั้งหมด 274 รายการ
 วิธีตอบ: พิมพ์ในแชทเป็นบรรทัด เช่น `end_52_MCQ_027: คงเดิม` / `end_52_MCQ_063: C` / `end_52_MCQ_046: ตรวจใหม่`
 Claude จะบันทึกลง `auditor/data/decisions.json` แล้ว build ใหม่
 
@@ -82,7 +82,6 @@ Claude จะบันทึกลง `auditor/data/decisions.json` แล้ว
 | end_51_MCQ_015 | None | None | None | AI เขียนข้อนี้ขึ้นใหม่จากโน้ตความจำในต้นฉบับ |  — A: เป็นกลไกของ propylthiouracil, propranolol, glucocorticoid; B: ถูก — high-dose iodide ยับยั้งการปล่อยฮอร์โมนและ organification; C: เป็นของ radioactive iodine (I-131); D: เป็นของ propranolol; E: iodide ไม่ได้ออกฤทธิ์ที่ pituitary |
 | end_51_MCQ_018 | None | None | None | ผู้จำไม่แน่ใจชื่อโรค (11-hydroxylase); AI เขียนข้อนี้ขึ้นใหม่จากโน้ตความจำในต้นฉบับ |  — A: เป็นภาพของ 21-hydroxylase deficiency (salt wasting); B: cortisol ต่ำ → ACTH สูง; C: ถูก — DOC ↑ ทำหน้าที่ mineralocorticoid + androgen ↑; D: DOC ↑ กด renin → renin และ aldosterone ต่ำ; E: precursor เบี่ยงไปทาง androgen → เพิ่มขึ้น |
 | end_51_MCQ_033 | None | None | None | ต้นฉบับไม่มีโจทย์ AI เขียนโจทย์ใหม่จากช้อยส์ (น่าจะเป็นข้อเดียวกับข้อ 50); AI เขียนข้อนี้ขึ้นใหม่จากโน้ตความจำในต้นฉบับ |  — A: lipolysis เพิ่มขึ้น; B: glycogenolysis เพิ่มขึ้น; C: ถูก; D: protein synthesis ลดลง (catabolic); E: GLUT4 ลดลงเมื่อขาด insulin |
-| end_51_MCQ_051 | B | A | medium | ช้อยส์จากความจำ ถ้อยคำไม่ชัด (A, E); เฉลยขัดกับ AI | เฉลยต้นฉบับวง B (convert cholesterol to bile) แต่โน้ตของผู้เฉลยเองอธิบาย reverse cholesterol transport ซึ่งตรงกับ A (efflux cholesterol ... to liver) — HDL ไม่ได้เปลี่ยน cholesterol เป็น bile เอง (ตับทำ) AI เลือก A — A: ใกล้ reverse cholesterol transport ที่สุด (efflux จาก peripheral กลับตับ); B: การเปลี่ยนเป็น bile acid ทำที่ตับ ไม่ใช่หน้าที่ของ HDL; C: ส่ง cholesterol ไป peripheral เป็นหน้าที่ของ LDL; D: เป็นกลไกก่อ atherosclerosis; E: ถ้อยคำกำกวม (ผู้จำจำไม่ได้) |
 | end_51_MCQ_052 | None | B | high | ในเฉลยต้นฉบับข้อนี้ไม่ได้วงคำตอบ; ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |  — A: TG 500 เสี่ยงต่ำกว่า เกณฑ์มักใช้ > 1000; B: ถูก — TG > 1000 mg/dL; C: LDL ไม่สัมพันธ์กับ pancreatitis; D: cholesterol ไม่สัมพันธ์; E: cholesterol ไม่สัมพันธ์ |
 | end_51_MCQ_053 | None | None | None | AI เขียนข้อนี้ขึ้นใหม่จากโน้ตความจำในต้นฉบับ |  — A: LDL สูงแต่ขนาดอนุภาคปกติ; B: ไม่มี apoB-lipoprotein; C: TG ปกติ ไม่เกิด small dense LDL มาก; D: ถูก — TG สูง + CETP + hepatic lipase → small dense LDL; E: statin ลด LDL ไม่ได้เพิ่ม small dense LDL |
 | end_51_MCQ_061 | ['A', 'C'] | A | medium | ต้นฉบับไฮไลต์ไว้ 2 ตัว (A และ C); ต้นฉบับวงไว้หลายตัว | เฉลยต้นฉบับไฮไลต์ทั้ง A (down-regulation of RANKL) และ C (increased RANKL-OPG interaction) พร้อมโน้ต 'estrogen ↓ RANKL & ↑ OPG' — OPG ↑ ทำให้ RANKL ถูก OPG จับมากขึ้น C จึงถูกได้ด้วย; AI เลือก A — A: ถูก — estrogen ลด RANKL; B: estrogen ไม่ได้ลด RANK expression เป็นหลัก; C: ก็ถูกได้ — OPG ↑ จับ RANKL มากขึ้น; D: ผิดทิศ; E: ผิดทิศ (RANK-RANKL ลดลง) |

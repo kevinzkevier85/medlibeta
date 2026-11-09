@@ -2252,20 +2252,20 @@
     "D": "Active การ adhesion กระตุ้นให้เกิด vascular inflammation",
     "E": "Active macrophage (อะไรสักอย่าง)"
    },
-   "correct": "B",
+   "correct": "A",
    "explanation": "(Reverse cholesterol transport)** — HDL (apoA-I) รับ cholesterol ส่วนเกินจาก macrophage/foam cell ผ่าน ABCA1/ABCG1 → LCAT esterify → ส่งกลับตับ (SR-BI) → ขับออกเป็น bile; HDL ยังต้าน oxidation ของ LDL\nTrap: การเปลี่ยน cholesterol เป็น bile acid ทำที่ตับ (CYP7A1) ไม่ใช่ HDL",
    "image": null,
    "issues": [
     "ช้อยส์จากความจำ ถ้อยคำไม่ชัด (A, E)",
-    "เฉลยขัดกับ AI"
+    "ผู้แจ้ง #45: HDL ทำ reverse cholesterol transport ส่ง cholesterol/oxidized LDL กลับตับ; การเปลี่ยนเป็น bile acid ทำที่ตับ ไม่ใช่ HDL → A"
    ],
    "audit": {
     "source_file": "preclinic/2/endocrine/mcq/ข้อสอบ mcq/MCQ_Endocrine [Med PSU 51].pdf",
     "page": 8,
     "key_file": "preclinic/2/endocrine/mcq/เฉลย mcq/เฉลย MCQ_Endocrine [Med PSU 51].pdf",
     "key_page": 8,
-    "answer_status": "source_disagree",
-    "answer_verified": false,
+    "answer_status": "corrected",
+    "answer_verified": true,
     "source_answer": "B",
     "source_answer_note": "กัน atherosclerosis: HDL ช่วย reverse cholesterol transport pathway และช่วยป้องกันการเกิดออกซิเดชันของ LDL",
     "ai_answer": "A",
@@ -2286,8 +2286,13 @@
     "edits": [],
     "duplicate_group": null,
     "off_block": false,
-    "needs_review": true,
-    "locked": false
+    "needs_review": false,
+    "locked": false,
+    "user_decision": {
+     "answer": "A",
+     "note": "ผู้แจ้ง #45: HDL ทำ reverse cholesterol transport ส่ง cholesterol/oxidized LDL กลับตับ; การเปลี่ยนเป็น bile acid ทำที่ตับ ไม่ใช่ HDL → A",
+     "date": "2026-11-09"
+    }
    }
   },
   {
