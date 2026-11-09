@@ -1,0 +1,514 @@
+{
+ "meta": {
+  "set_id": "45_OSPE",
+  "block": "END",
+  "cohort": 45,
+  "type": "OSPE",
+  "title": "OSPE Endocrine · Med PSU 45",
+  "generated_by": "auditor/tools/build_kf.py from auditor/data/work/end_45_OSPE.kf.json — do not edit by hand"
+ },
+ "questions": [
+  {
+   "id": "END-45-OSPE-001",
+   "block": "END",
+   "cohort": 45,
+   "n": 1,
+   "type": "OSPE",
+   "station": 1,
+   "stem": "Station 1. H&E high-power view of a gland with cords of cells of three staining types (pink, blue/purple, pale).",
+   "items": [
+    {
+     "id": "1.1",
+     "prompt": "What structure does this indicate?",
+     "format": "short",
+     "accepted": [
+      "anterior pituitary",
+      "pars distalis",
+      "adenohypophysis"
+     ],
+     "key_text": "Anterior pituitary gland (pars distalis)",
+     "source_key": "key: pars distalis in anterior pituitary · key2: Anterior pituitary gland"
+    },
+    {
+     "id": "1.2",
+     "prompt": "Tell three cell types in this picture",
+     "format": "short",
+     "keywords_all": [
+      "acidophil",
+      "basophil",
+      "chromophobe"
+     ],
+     "key_text": "Acidophil, basophil, chromophobe",
+     "source_key": "Acidophil, basophil, chromophobe",
+     "explanation": "ตอบครบสามชนิด"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE45",
+     "pages": [
+      1
+     ]
+    },
+    {
+     "paper": "OSPE45-KEY",
+     "pages": [
+      1
+     ]
+    }
+   ],
+   "tags": [
+    "pituitary",
+    "histology"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "anterior pituitary: acidophil, basophil, chromophobe",
+   "image": "img/END-45-OSPE-001.jpg",
+   "image_caption": "ต่อมใต้สมองส่วนหน้า เซลล์สามแบบ"
+  },
+  {
+   "id": "END-45-OSPE-002",
+   "block": "END",
+   "cohort": 45,
+   "n": 2,
+   "type": "OSPE",
+   "station": 2,
+   "stem": "Station 2. Section of an organ where the arrow points at a cellular region next to a paler region.",
+   "items": [
+    {
+     "id": "2.1",
+     "prompt": "Identify specifically this organ (arrow)",
+     "format": "short",
+     "accepted": [
+      "anterior pituitary",
+      "pars distalis",
+      "adenohypophysis"
+     ],
+     "key_text": "Anterior pituitary gland",
+     "source_key": "Anterior pituitary gland"
+    },
+    {
+     "id": "2.2",
+     "prompt": "What hormones are secreted by 2.1",
+     "format": "short",
+     "accepted": [
+      "gh",
+      "growth hormone",
+      "prolactin",
+      "prl",
+      "tsh",
+      "acth",
+      "fsh",
+      "lh"
+     ],
+     "key_text": "GH, PRL, TSH, ACTH, FSH, LH",
+     "source_key": "GH, PRL, TSH, ACTH, FSH, LH"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE45",
+     "pages": [
+      1
+     ]
+    },
+    {
+     "paper": "OSPE45-KEY",
+     "pages": [
+      1
+     ]
+    }
+   ],
+   "tags": [
+    "pituitary",
+    "histology"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "anterior pituitary hormones",
+   "image": "img/END-45-OSPE-002.jpg",
+   "image_caption": "ลูกศรชี้ส่วนที่มีเซลล์หนาแน่น"
+  },
+  {
+   "id": "END-45-OSPE-003",
+   "block": "END",
+   "cohort": 45,
+   "n": 3,
+   "type": "OSPE",
+   "station": 3,
+   "stem": "Station 3. Low-power view of two oval cellular glands, one with a pink arrow.",
+   "items": [
+    {
+     "id": "3.1",
+     "prompt": "Identify this organ",
+     "format": "short",
+     "accepted": [
+      "parathyroid"
+     ],
+     "key_text": "Parathyroid gland",
+     "source_key": "Parathyroid gland"
+    },
+    {
+     "id": "3.2",
+     "prompt": "What hormone is secreted by this organ",
+     "format": "short",
+     "accepted": [
+      "pth",
+      "parathyroid hormone",
+      "parathormone"
+     ],
+     "key_text": "Parathyroid hormone (PTH)",
+     "source_key": "Parathyroid hormone (PTH)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE45",
+     "pages": [
+      1
+     ]
+    },
+    {
+     "paper": "OSPE45-KEY",
+     "pages": [
+      1
+     ]
+    }
+   ],
+   "tags": [
+    "parathyroid",
+    "histology"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "parathyroid → PTH",
+   "image": "img/END-45-OSPE-003.jpg",
+   "image_caption": "ต่อมรูปไข่สองต่อม"
+  },
+  {
+   "id": "END-45-OSPE-004",
+   "block": "END",
+   "cohort": 45,
+   "n": 4,
+   "type": "OSPE",
+   "station": 4,
+   "stem": "Station 4. Histology just under a capsule: rounded clusters of cells forming the outer layer of an organ.",
+   "items": [
+    {
+     "id": "4.1",
+     "prompt": "Identify this organ",
+     "format": "short",
+     "accepted": [
+      "adrenal",
+      "suprarenal"
+     ],
+     "key_text": "Adrenal gland",
+     "source_key": "Adrenal gland"
+    },
+    {
+     "id": "4.2",
+     "prompt": "What is this structure",
+     "format": "short",
+     "accepted": [
+      "cortex",
+      "zona glomerulosa",
+      "glomerulosa"
+     ],
+     "key_text": "Adrenal cortex (zona glomerulosa, under the capsule)",
+     "source_key": "key: Adrenal cortex, Zona glomerulosa, Zona fasciculata · key2: Adrenal cortex – zona glomerulosa – capsule"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE45",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "OSPE45-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [
+    "adrenal",
+    "histology"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "adrenal cortex: zona glomerulosa",
+   "image": "img/END-45-OSPE-004.jpg",
+   "image_caption": "ชั้นใต้ capsule"
+  },
+  {
+   "id": "END-45-OSPE-005",
+   "block": "END",
+   "cohort": 45,
+   "n": 5,
+   "type": "OSPE",
+   "station": 5,
+   "stem": "Station 5. Thyroid with lymphoid follicles with germinal centres; high-power: a large pink (oncocytic) cell.",
+   "items": [
+    {
+     "id": "5.1",
+     "prompt": "What is the histologic finding",
+     "format": "short",
+     "accepted": [
+      "germinal center",
+      "germinal centre"
+     ],
+     "keywords_all": [
+      "lymph",
+      "hurthle"
+     ],
+     "key_text": "Lymphoid follicles with germinal centres; destroyed/atrophic follicles; Hürthle cells (large cells with abundant pink cytoplasm)",
+     "source_key": "key2: พบ lymphoid follicle ภายในเป็น germinal center รอบข้างพบ follicular cell จำนวนมากถูกทำลาย บางส่วน atrophy และพบ Hurthle cell (กลมโต cytoplasm ใหญ่ ติดสีชมพูแดง)"
+    },
+    {
+     "id": "5.2",
+     "prompt": "Diagnosis",
+     "format": "short",
+     "accepted": [
+      "hashimoto",
+      "chronic lymphocytic thyroiditis",
+      "autoimmune thyroiditis"
+     ],
+     "key_text": "Hashimoto's thyroiditis",
+     "source_key": "Hashimoto's thyroiditis"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE45",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "OSPE45-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [
+    "thyroid",
+    "pathology"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "Hashimoto thyroiditis",
+   "image": "img/END-45-OSPE-005.jpg",
+   "image_caption": "lymphoid follicle + Hürthle cell"
+  },
+  {
+   "id": "END-45-OSPE-006",
+   "block": "END",
+   "cohort": 45,
+   "n": 6,
+   "type": "OSPE",
+   "station": 6,
+   "stem": "Station 6. Gross cut surface of a thyroid lobe with a tiny white nodule.",
+   "items": [
+    {
+     "id": "6.1",
+     "prompt": "Diagnosis",
+     "format": "short",
+     "accepted": [
+      "ptc",
+      "microcarcinoma"
+     ],
+     "keywords_all": [
+      "papillary"
+     ],
+     "key_text": "Papillary carcinoma (microcarcinoma)",
+     "source_key": "Papillary carcinoma (micro carcinoma)",
+     "explanation": "papillary microcarcinoma = ขนาด ≤ 1 cm"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE45",
+     "pages": [
+      3
+     ]
+    },
+    {
+     "paper": "OSPE45-KEY",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [
+    "thyroid",
+    "pathology"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "papillary microcarcinoma",
+   "image": "img/END-45-OSPE-006.jpg",
+   "image_caption": "ไทรอยด์มีก้อนขาวเล็ก"
+  },
+  {
+   "id": "END-45-OSPE-007",
+   "block": "END",
+   "cohort": 45,
+   "n": 7,
+   "type": "OSPE",
+   "station": 7,
+   "stem": "Station 7. Low-power sections of enlarged, nodular glands.",
+   "items": [
+    {
+     "id": "7.1",
+     "prompt": "Diagnosis",
+     "format": "short",
+     "accepted": [
+      "parathyroid hyperplasia",
+      "secondary hyperparathyroidism"
+     ],
+     "keywords_all": [
+      "hyperplasia"
+     ],
+     "key_text": "Parathyroid hyperplasia (secondary hyperparathyroidism)",
+     "source_key": "Parathyroid hyperplasia (secondary hyperparathyroidism)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE45",
+     "pages": [
+      3
+     ]
+    },
+    {
+     "paper": "OSPE45-KEY",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [
+    "parathyroid",
+    "pathology"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "parathyroid hyperplasia",
+   "image": "img/END-45-OSPE-007.jpg",
+   "image_caption": "ต่อมโตเป็นปุ่ม"
+  },
+  {
+   "id": "END-45-OSPE-008",
+   "block": "END",
+   "cohort": 45,
+   "n": 8,
+   "type": "OSPE",
+   "station": 8,
+   "stem": "Station 8. Gross: adrenal gland with a well-circumscribed yellow nodule.",
+   "items": [
+    {
+     "id": "8.1",
+     "prompt": "Explain this gross",
+     "format": "short",
+     "accepted": [
+      "well circumscribed",
+      "well-circumscribed",
+      "encapsulated"
+     ],
+     "keywords_all": [
+      "yellow"
+     ],
+     "key_text": "Well-circumscribed yellow mass surrounded by fibrous tissue",
+     "source_key": "key2: ก้อนเหลืองขอบเขตชัดเจน ล้อมด้วย fibrous tissue"
+    },
+    {
+     "id": "8.2",
+     "prompt": "Diagnosis",
+     "format": "short",
+     "accepted": [
+      "adrenal adenoma",
+      "cortical adenoma"
+     ],
+     "keywords_all": [
+      "adenoma"
+     ],
+     "key_text": "Cortical adenoma",
+     "source_key": "Cortical adenoma"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE45",
+     "pages": [
+      3
+     ]
+    },
+    {
+     "paper": "OSPE45-KEY",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [
+    "adrenal",
+    "pathology"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "adrenocortical adenoma",
+   "image": "img/END-45-OSPE-008.jpg",
+   "image_caption": "ต่อมหมวกไตมีก้อนสีเหลือง"
+  },
+  {
+   "id": "END-45-OSPE-009",
+   "block": "END",
+   "cohort": 45,
+   "n": 9,
+   "type": "OSPE",
+   "station": 9,
+   "stem": "Station 9. Thyroid histology: hyperplastic follicles with tall cells, papillary infoldings and pale, scalloped colloid.",
+   "items": [
+    {
+     "id": "9.1",
+     "prompt": "Pathology of this",
+     "format": "short",
+     "accepted": [
+      "graves",
+      "diffuse hyperplasia",
+      "diffuse toxic goiter"
+     ],
+     "key_text": "Diffuse hyperplasia (Graves' disease)",
+     "source_key": "key: Graves' disease · key2: Diffuse hyperplasia (Grave's disease)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE45",
+     "pages": [
+      4
+     ]
+    },
+    {
+     "paper": "OSPE45-KEY",
+     "pages": [
+      4
+     ]
+    }
+   ],
+   "tags": [
+    "thyroid",
+    "pathology"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "Graves disease",
+   "image": "img/END-45-OSPE-009.jpg",
+   "image_caption": "follicle เซลล์สูง colloid ขอบหยัก"
+  }
+ ]
+}
