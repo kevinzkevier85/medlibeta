@@ -51,6 +51,12 @@ window.MedLibQuizUI = function (ML) {
     const rounds = Object.entries(P().rounds).filter(([k, v]) => k.startsWith(b.id + "/") && Array.isArray(v)).flatMap(([, v]) => v);
     return C.latestResults(rounds, qmap, kov());
   }
+  // questions whose answer does not count (key not confirmed) that were answered and checked in some round of this block
+  function uncountedTried(b) {
+    const tried = new Set(Object.entries(P().rounds).filter(([k, v]) => k.startsWith(b.id + "/") && Array.isArray(v)).flatMap(([, v]) => v)
+      .flatMap((r) => (r && r.chk ? Object.keys(r.chk).filter((id) => r.chk[id]) : [])));
+    return ML.examsOf(b).filter((q) => tried.has(q.id) && !C.counts(q, kov()));
+  }
   function setProgress(b, s) {   // only questions that count (draft/disputed answers are left out)
     const res = blockResults(b), qs = s.questions.filter((q) => C.counts(q, kov()));
     const done = qs.filter((q) => q.id in res);
@@ -381,8 +387,10 @@ window.MedLibQuizUI = function (ML) {
     });
     h += `<div class="scorebox"><div class="big">${st.score} / ${st.checked}</div><div><b>${st.pct}%</b> · ${MODE_TH[r.mode]} · ${KIND_TH[r.kind] || ""}${r.mode !== "practice" || r.elapsed ? ` · ใช้เวลา ${mmss(r.elapsed)}` : ""}${st.uncounted ? ` · ไม่นับ ${st.uncounted} ข้อ` : ""}<div class="hint">${new Date(r.started).toLocaleString("th-TH", { dateStyle: "medium", timeStyle: "short" })}${blank.length ? ` · ยังไม่ได้ทำ ${blank.length} ข้อ` : ""}${r.done ? "" : " · รอบนี้ยังไม่จบ"}</div></div></div>`;
     if (!r.done) h += `<div class="btns"><a class="btn primary" href="${B}/run/${(r.idx || 0) + 1}">กลับไปทำต่อ</a></div>`;
-    if (wrong.length && r.done) {
-      h += `<h3>ข้อที่ผิด (${wrong.length}) · เลือกข้อที่จะทำซ้ำ</h3><div class="pickwrong">${wrong.map((q) => `<label class="chk"><input type="checkbox" data-wrongpick="${esc(q.id)}" checked> <a href="${jump(q)}">ข้อ ${no(q)}</a> <span class="hint">${esc(String(q.stem || q.case || "").slice(0, 70))}…</span></label>`).join("")}</div>
+    // retry picker: wrong answers + questions that don't count (answer key not confirmed)
+    const pickRow = (q, tag) => `<label class="chk"><input type="checkbox" data-wrongpick="${esc(q.id)}" checked> <a href="${jump(q)}">ข้อ ${no(q)}</a>${tag} <span class="hint">${esc(String(q.stem || q.case || "").slice(0, 70))}…</span></label>`;
+    if ((wrong.length || unsure.length) && r.done) {
+      h += `<h3>${[wrong.length ? `ข้อที่ผิด (${wrong.length})` : "", unsure.length ? `ไม่นับคะแนน (${unsure.length})` : ""].filter(Boolean).join(" + ")} · เลือกข้อที่จะทำซ้ำ</h3><div class="pickwrong">${wrong.map((q) => pickRow(q, "")).join("")}${unsure.map((q) => pickRow(q, ` <span class="badge warn">ไม่นับคะแนน</span>`)).join("")}</div>
         <div class="btns"><button class="btn primary" data-z="retry" data-r="${r.id}">ทำข้อที่เลือกซ้ำเป็นรอบใหม่</button><a class="btn" href="${B}">ทำทั้งชุดอีกครั้ง</a></div>`;
     } else if (r.done) h += `<div class="btns"><span class="badge good">ไม่มีข้อที่ผิด</span><a class="btn" href="${B}">ทำทั้งชุดอีกครั้ง</a></div>`;
     // lectures behind this round's wrong answers, most wrong first
@@ -558,6 +566,7 @@ window.MedLibQuizUI = function (ML) {
     const lecs = Object.keys(lecCount).sort();
     const wrongN = qs.filter((q) => q.id in res && res[q.id] < 0.999).length;
     const flagN = qs.filter((q) => marks().flag[q.id]).length;
+    const unsureN = uncountedTried(b).length;
     const mixes = Object.entries(P().mixes).filter(([, m]) => m.block === b.id);
     const types = TYPE_ORDER.filter((t) => b.sets.some((s) => s.type === t) || b.papers.some((p) => p.type === t));
     if (!types.length) return `<div class="empty">ยังไม่มีข้อสอบในบล็อกนี้</div>`;
@@ -566,7 +575,7 @@ window.MedLibQuizUI = function (ML) {
     const whole = tab === "lec" || tab === "topic";
     const pool = whole ? qs : qs.filter((q) => q.type === tab);
     let h = "";
-    if (wrongN + flagN) h += `<button class="weakbar" data-z="mixweak"><span><b>ทบทวนจุดอ่อน</b><small>ผิดล่าสุด ${wrongN} ข้อ · ปักธง ${flagN} ข้อ</small></span><i aria-hidden="true">→</i></button>`;
+    if (wrongN + flagN + unsureN) h += `<button class="weakbar" data-z="mixweak"><span><b>ทบทวนจุดอ่อน</b><small>ผิดล่าสุด ${wrongN} ข้อ · ปักธง ${flagN} ข้อ${unsureN ? ` · ไม่นับคะแนน ${unsureN} ข้อ` : ""}</small></span><i aria-hidden="true">→</i></button>`;
     h += `<nav class="tabs etabs">${[...types.map((t) => [t, t]), ...(lecs.length ? [["lec", "Lecture"]] : []), ...(topics.length ? [["topic", "หัวข้อ"]] : [])].map(([k, l]) => `<button class="tab ${tab === k ? "on" : ""}" data-z="etab" data-t="${k}">${l}</button>`).join("")}</nav>`;
     if (pool.length) h += `<div class="quickrow"><button class="btn primary" data-z="mixrand" data-t="${tab}">สุ่ม ${Math.min(30, pool.length)} ข้อ${whole ? "จากทั้งบล็อก" : ` ${tab} จากทุกชุด`}</button></div>`;
     const card = (attrs, title, n, pct, prog) => `<${attrs.startsWith("href") ? "a" : "button"} class="pcard" ${attrs}><span class="ptop"><b>${title}</b><span class="n">${n} ข้อ</span></span>${prog ? `<span class="sbar"><i style="width:${pct}%"></i></span><span class="prog">${prog}</span>` : ""}</${attrs.startsWith("href") ? "a" : "button"}>`;
@@ -804,8 +813,9 @@ window.MedLibQuizUI = function (ML) {
     }
     if (z === "mixweak") {
       const res = blockResults(c.b);
-      const ids = ML.examsOf(c.b).filter((x) => (x.id in res && res[x.id] < 0.999) || marks().flag[x.id]).map((x) => x.id);
-      makeMix(c.b, `จุดอ่อน: ผิด + ปักธง · ${new Date().toLocaleDateString("th-TH", { day: "numeric", month: "short" })}`, ids); return true;
+      const unsure = new Set(uncountedTried(c.b).map((x) => x.id));
+      const ids = ML.examsOf(c.b).filter((x) => (x.id in res && res[x.id] < 0.999) || marks().flag[x.id] || unsure.has(x.id)).map((x) => x.id);
+      makeMix(c.b, `จุดอ่อน: ผิด + ปักธง${unsure.size ? " + ไม่นับคะแนน" : ""} · ${new Date().toLocaleDateString("th-TH", { day: "numeric", month: "short" })}`, ids); return true;
     }
     if (z === "delmix") { if (!ML.armed(t, "ลบ?")) return true; delete P().mixes[t.dataset.m]; delete P().rounds[`${c.b.id}/@${t.dataset.m}`]; C.touch(P(), "mixes", t.dataset.m); C.touch(P(), "clear", `${c.b.id}/@${t.dataset.m}`); save(); rerender(); return true; }
     if (z === "pickkey") { marks().keyOverride[t.dataset.q] = t.dataset.k; C.touch(P(), "keyOverride", t.dataset.q); save(); rerender(); return true; }
