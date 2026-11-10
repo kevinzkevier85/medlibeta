@@ -381,8 +381,10 @@ window.MedLibQuizUI = function (ML) {
     });
     h += `<div class="scorebox"><div class="big">${st.score} / ${st.checked}</div><div><b>${st.pct}%</b> · ${MODE_TH[r.mode]} · ${KIND_TH[r.kind] || ""}${r.mode !== "practice" || r.elapsed ? ` · ใช้เวลา ${mmss(r.elapsed)}` : ""}${st.uncounted ? ` · ไม่นับ ${st.uncounted} ข้อ` : ""}<div class="hint">${new Date(r.started).toLocaleString("th-TH", { dateStyle: "medium", timeStyle: "short" })}${blank.length ? ` · ยังไม่ได้ทำ ${blank.length} ข้อ` : ""}${r.done ? "" : " · รอบนี้ยังไม่จบ"}</div></div></div>`;
     if (!r.done) h += `<div class="btns"><a class="btn primary" href="${B}/run/${(r.idx || 0) + 1}">กลับไปทำต่อ</a></div>`;
-    if (wrong.length && r.done) {
-      h += `<h3>ข้อที่ผิด (${wrong.length}) · เลือกข้อที่จะทำซ้ำ</h3><div class="pickwrong">${wrong.map((q) => `<label class="chk"><input type="checkbox" data-wrongpick="${esc(q.id)}" checked> <a href="${jump(q)}">ข้อ ${no(q)}</a> <span class="hint">${esc(String(q.stem || q.case || "").slice(0, 70))}…</span></label>`).join("")}</div>
+    // retry picker: wrong answers + questions that don't count (answer key not confirmed)
+    const pickRow = (q, tag) => `<label class="chk"><input type="checkbox" data-wrongpick="${esc(q.id)}" checked> <a href="${jump(q)}">ข้อ ${no(q)}</a>${tag} <span class="hint">${esc(String(q.stem || q.case || "").slice(0, 70))}…</span></label>`;
+    if ((wrong.length || unsure.length) && r.done) {
+      h += `<h3>${[wrong.length ? `ข้อที่ผิด (${wrong.length})` : "", unsure.length ? `ไม่นับคะแนน (${unsure.length})` : ""].filter(Boolean).join(" + ")} · เลือกข้อที่จะทำซ้ำ</h3><div class="pickwrong">${wrong.map((q) => pickRow(q, "")).join("")}${unsure.map((q) => pickRow(q, ` <span class="badge warn">ไม่นับคะแนน</span>`)).join("")}</div>
         <div class="btns"><button class="btn primary" data-z="retry" data-r="${r.id}">ทำข้อที่เลือกซ้ำเป็นรอบใหม่</button><a class="btn" href="${B}">ทำทั้งชุดอีกครั้ง</a></div>`;
     } else if (r.done) h += `<div class="btns"><span class="badge good">ไม่มีข้อที่ผิด</span><a class="btn" href="${B}">ทำทั้งชุดอีกครั้ง</a></div>`;
     // lectures behind this round's wrong answers, most wrong first
