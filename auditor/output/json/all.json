@@ -24930,7 +24930,7 @@
       "id": "end_52_MCQ_053",
       "number": "53",
       "sourceNumber": "53",
-      "stem": "A patient diagnosed with Addison’s disease shows low cortisol and low ACTH levels. To differentiate whether the cause is a pituitary defect or a hypothalamic defect, which test is most appropriate?",
+      "stem": "A patient diagnosed with adrenal insufficiency shows low cortisol and low ACTH levels. To differentiate whether the cause is a pituitary defect or a hypothalamic defect, which test is most appropriate?",
       "choices": {
        "A": "ACTH stimulation test",
        "B": "CRH stimulation test",
@@ -24939,10 +24939,10 @@
        "E": "24-hour urinary free cortisol"
       },
       "correct": "B",
-      "explanation": "Cortisol ต่ำ ACTH ต่ำ แยก pituitary กับ hypothalamus ด้วย CRH stimulation test",
+      "explanation": "Cortisol ต่ำ + ACTH ต่ำ = central AI → แยก pituitary กับ hypothalamus ด้วย CRH stimulation test",
       "image": null,
       "issues": [
-       "โจทย์ใช้คำว่า Addison's disease ไม่ตรงกับ lab"
+       "แก้โจทย์: ต้นฉบับเขียน \"Addison's disease\" แต่ cortisol ต่ำ + ACTH ต่ำ คือ central AI (Addison = primary AI, ACTH สูง) → เปลี่ยนเป็น \"adrenal insufficiency\" · เฉลยเดิม B"
       ],
       "audit": {
        "source_file": "preclinic/2/endocrine/mcq/ข้อสอบ mcq/MCQ_Endocrine [MED PSU 52].pdf",
@@ -24956,17 +24956,28 @@
        "ai_answer": "B",
        "ai_confidence": "high",
        "ai_reason": "Cortisol ↓ ACTH ↓ → แยก pituitary vs hypothalamus ด้วย CRH test (โจทย์เรียก Addison ซึ่งที่จริงคือ primary)",
-       "audit_note": "Addison disease = primary adrenal insufficiency ซึ่ง ACTH ต้องสูง; lab ในโจทย์คือ central AI — เก็บคำเดิมไว้ เพราะเป็นข้อสอบจริง",
+       "audit_note": "แก้โจทย์ (ผู้ใช้สั่ง 2026-11-10): ต้นฉบับเขียน \"Addison's disease\" แต่ lab ACTH ต่ำคือ central AI (Addison = primary AI, ACTH สูง) → เปลี่ยนเป็น \"adrenal insufficiency\"; เฉลย B เหมือนเดิม",
        "why": null,
        "ai_generated": false,
        "ai_choices": [],
        "original_text": null,
        "filled_from": null,
-       "edits": [],
+       "edits": [
+        {
+         "field": "stem",
+         "old": "Addison’s disease",
+         "new": "adrenal insufficiency"
+        }
+       ],
        "duplicate_group": null,
        "off_block": false,
        "needs_review": false,
-       "locked": false
+       "locked": false,
+       "user_decision": {
+        "answer": "B",
+        "note": "แก้โจทย์: ต้นฉบับเขียน \"Addison's disease\" แต่ cortisol ต่ำ + ACTH ต่ำ คือ central AI (Addison = primary AI, ACTH สูง) → เปลี่ยนเป็น \"adrenal insufficiency\" · เฉลยเดิม B",
+        "date": "2026-11-10"
+       }
       }
      },
      {
@@ -25351,10 +25362,10 @@
        "E": "Decreased lipolysis"
       },
       "correct": "A",
-      "explanation": "T1DM ขาด insulin → lipolysis ↑ → ketogenesis ↑",
+      "explanation": "T1DM ขาด insulin → glucagon เด่น → ketogenesis ↑ และ gluconeogenesis ↑ (ถูกทั้ง A และ C)",
       "image": null,
       "issues": [
-       "ช้อยส์ C อาจถูกด้วย"
+       "ข้อนี้ถูก 2 ตัว: A และ C (ได้คะแนนทั้งคู่)"
       ],
       "audit": {
        "source_file": "preclinic/2/endocrine/mcq/ข้อสอบ mcq/MCQ_Endocrine [MED PSU 52].pdf",
@@ -25368,11 +25379,11 @@
        "ai_answer": "A",
        "ai_confidence": "medium",
        "ai_reason": "T1DM: ketogenesis ↑ — แต่ gluconeogenesis ↑ (C) ก็ถูก → อาจมีมากกว่า 1 คำตอบ",
-       "audit_note": "ทั้ง ketogenesis ↑ (A) และ gluconeogenesis ↑ (C) เกิดใน T1DM ที่ไม่ได้รักษา — มีคำตอบถูกมากกว่า 1 ตัว; ต้นฉบับเลือก A ตรงกับ AI",
+       "audit_note": "ถูก 2 ตัว: ketogenesis ↑ (A) และ gluconeogenesis ↑ (C) เกิดทั้งคู่ใน T1DM ที่ไม่ได้รักษา — ผู้ใช้ให้ถูกร่วมกัน",
        "why": {
         "A": "ถูก — ลักษณะเฉพาะของ T1DM",
         "B": "glycogenolysis เพิ่มขึ้น ไม่ได้ลดลง",
-        "C": "ก็ถูก — glucagon/insulin ratio สูงกระตุ้น gluconeogenesis",
+        "C": "ถูก — glucagon/insulin ratio สูงกระตุ้น gluconeogenesis",
         "D": "protein synthesis ลดลง (catabolic)",
         "E": "lipolysis เพิ่มขึ้น"
        },
@@ -25383,14 +25394,15 @@
        "edits": [],
        "duplicate_group": null,
        "off_block": false,
-       "needs_review": true,
+       "needs_review": false,
        "locked": false,
        "user_decision": {
         "answer": "A",
         "also_accept": [
          "C"
         ],
-        "date": "2026-11-07"
+        "date": "2026-11-10",
+        "note": "ข้อนี้ถูก 2 ตัว: A และ C (ได้คะแนนทั้งคู่)"
        }
       }
      },
@@ -25751,10 +25763,10 @@
        "E": "Decreased intestinal calcium absorption"
       },
       "correct": "E",
-      "explanation": "Hypoparathyroidism → PTH ↓ → active vitamin D ↓ → ลำไส้ดูด Ca น้อยลง → hypocalcemia",
+      "explanation": "Hypoparathyroidism → PTH ↓ → bone resorption ↓ และ active vitamin D ↓ → ลำไส้ดูด Ca ↓ → hypocalcemia (ถูกทั้ง B และ E)",
       "image": null,
       "issues": [
-       "ช้อยส์ B อาจถูกด้วย"
+       "ข้อนี้ถูก 2 ตัว: B และ E (ได้คะแนนทั้งคู่)"
       ],
       "audit": {
        "source_file": "preclinic/2/endocrine/mcq/ข้อสอบ mcq/MCQ_Endocrine [MED PSU 52].pdf",
@@ -25768,10 +25780,10 @@
        "ai_answer": "E",
        "ai_confidence": "medium",
        "ai_reason": "PTH ↓ → 1α-hydroxylase ↓ → active vit D ↓ → gut Ca absorption ↓; แต่ B (bone resorption ↓) ก็ถูก → อาจมีมากกว่า 1 คำตอบ",
-       "audit_note": "PTH ↓ ทำทั้ง bone resorption ↓ (B) และ gut Ca absorption ↓ ผ่าน vit D (E) — มีคำตอบถูกมากกว่า 1 ตัว; ต้นฉบับเลือก E ตรงกับ AI",
+       "audit_note": "ถูก 2 ตัว: PTH ↓ ทำทั้ง bone resorption ↓ (B) และ gut Ca absorption ↓ ผ่าน vit D (E) — ผู้ใช้ให้ถูกร่วมกัน",
        "why": {
         "A": "calcitonin ไม่มีบทบาทใน hypocalcemia หลังผ่าตัดนี้",
-        "B": "ก็ถูก — PTH ↓ → osteoclast activity ↓",
+        "B": "ถูก — PTH ↓ → osteoclast activity ↓",
         "C": "FGF-23 ไม่ได้เพิ่ม",
         "D": "active vit D ลดลง ไม่ได้เพิ่ม",
         "E": "ถูก — vit D ↓ → gut absorption ↓"
@@ -25783,14 +25795,15 @@
        "edits": [],
        "duplicate_group": null,
        "off_block": false,
-       "needs_review": true,
+       "needs_review": false,
        "locked": false,
        "user_decision": {
         "answer": "E",
         "also_accept": [
          "B"
         ],
-        "date": "2026-11-07"
+        "date": "2026-11-10",
+        "note": "ข้อนี้ถูก 2 ตัว: B และ E (ได้คะแนนทั้งคู่)"
        }
       }
      },
@@ -26069,10 +26082,10 @@
        "E": "Dual-energy X-ray absorptiometry (DEXA) scan"
       },
       "correct": "E",
-      "explanation": "หลัง fragility fracture ประเมินกระดูกด้วย DXA scan (gold standard)",
+      "explanation": "หลัง fragility fracture ประเมินกระดูกด้วย BMD ซึ่งวัดด้วย DXA scan — B กับ E คือการตรวจเดียวกัน (ถูกทั้งคู่)",
       "image": null,
       "issues": [
-       "ช้อยส์ B กับ E เป็นการตรวจเดียวกัน"
+       "ข้อนี้ถูก 2 ตัว: B และ E (ได้คะแนนทั้งคู่)"
       ],
       "audit": {
        "source_file": "preclinic/2/endocrine/mcq/ข้อสอบ mcq/MCQ_Endocrine [MED PSU 52].pdf",
@@ -26086,10 +26099,10 @@
        "ai_answer": "E",
        "ai_confidence": "low",
        "ai_reason": "ประเมิน bone status หลัง fragility fracture = BMD โดย DXA; B กับ E คือสิ่งเดียวกัน → ช้อยส์ซ้ำซ้อน",
-       "audit_note": "BMD test (B) วัดด้วย DXA (E) — ช้อยส์ซ้ำซ้อน ข้อจริงอาจเขียนต่างจากนี้; ต้นฉบับเลือก E ตรงกับ AI",
+       "audit_note": "ถูก 2 ตัว: BMD test (B) วัดด้วย DXA (E) เป็นการตรวจเดียวกัน — ผู้ใช้ให้ถูกร่วมกัน",
        "why": {
         "A": "MRI ใช้หา occult fracture ไม่ใช่ประเมิน bone density",
-        "B": "ความหมายเดียวกับ E",
+        "B": "ถูก — ความหมายเดียวกับ E",
         "C": "bone ALP เป็น turnover marker ไม่ใช่การวินิจฉัย",
         "D": "ใช้หา secondary cause ไม่ใช่ประเมินมวลกระดูก",
         "E": "DXA = gold standard วัด BMD"
@@ -26101,14 +26114,15 @@
        "edits": [],
        "duplicate_group": null,
        "off_block": false,
-       "needs_review": true,
+       "needs_review": false,
        "locked": false,
        "user_decision": {
         "answer": "E",
         "also_accept": [
          "B"
         ],
-        "date": "2026-11-07"
+        "date": "2026-11-10",
+        "note": "ข้อนี้ถูก 2 ตัว: B และ E (ได้คะแนนทั้งคู่)"
        }
       }
      }

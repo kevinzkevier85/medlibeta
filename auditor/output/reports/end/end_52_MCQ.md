@@ -21,9 +21,6 @@ AI ตอบตรงกับเฉลยต้นฉบับ **67/67** ข้
 | 27 | C | C | medium | ช้อยส์ B อาจถูกด้วย | cortisol เพิ่มการสะสม glycogen ที่ตับ (ช้อยส์ B) ได้จริง — ถ้าข้อจริงเขียนว่า 'muscle glycogen' จะผิด; ต้นฉบับเลือก C ตรงกับ AI |
 | 32 | C | C | high | โจทย์อ้างถึงรูป แต่ไม่มีรูปในต้นฉบับ | โจทย์เขียน 'as shown in the photo' แต่ไฟล์ข้อสอบและเฉลยไม่มีรูปประกอบ ตอบได้จากคำบรรยายอย่างเดียว |
 | 46 | B | B | medium | ต้นฉบับเขียนค่า pH 7.10 ซึ่งขัดกับคำว่า normal จึงแก้เป็น 7.38 (pH ปกติ) ให้ตรงกับเฉลย HHS | แก้ pH 7.10 → 7.38 ตาม issue #26 (ผู้ใช้ขอแก้โจทย์) · ต้นฉบับและ AI ตอบ HHS |
-| 63 | A | A | medium | ช้อยส์ C อาจถูกด้วย | ทั้ง ketogenesis ↑ (A) และ gluconeogenesis ↑ (C) เกิดใน T1DM ที่ไม่ได้รักษา — มีคำตอบถูกมากกว่า 1 ตัว; ต้นฉบับเลือก A ตรงกับ AI |
-| 73 | E | E | medium | ช้อยส์ B อาจถูกด้วย | PTH ↓ ทำทั้ง bone resorption ↓ (B) และ gut Ca absorption ↓ ผ่าน vit D (E) — มีคำตอบถูกมากกว่า 1 ตัว; ต้นฉบับเลือก E ตรงกับ AI |
-| 81 | E | E | low | ช้อยส์ B กับ E เป็นการตรวจเดียวกัน | BMD test (B) วัดด้วย DXA (E) — ช้อยส์ซ้ำซ้อน ข้อจริงอาจเขียนต่างจากนี้; ต้นฉบับเลือก E ตรงกับ AI |
 
 ## ข้อที่ต้นฉบับไม่แน่นอน (source_unverified)
 
@@ -40,8 +37,11 @@ AI ตอบตรงกับเฉลยต้นฉบับ **67/67** ข้
 | ข้อ | ปัญหา | รายละเอียด |
 |---|---|---|
 | 17 | โจทย์ไม่ครบ: 'and imaging' ไม่มีผล imaging | ประโยค 'presents with episodes of hypoglycemia and imaging.' ขาดผล imaging (น่าจะเป็น pancreatic mass) — ไม่ได้เติมเอง เพราะไม่รู้ข้อความจริง |
-| 53 | โจทย์ใช้คำว่า Addison's disease ไม่ตรงกับ lab | Addison disease = primary adrenal insufficiency ซึ่ง ACTH ต้องสูง; lab ในโจทย์คือ central AI — เก็บคำเดิมไว้ เพราะเป็นข้อสอบจริง |
+| 53 | แก้โจทย์: ต้นฉบับเขียน "Addison's disease" แต่ cortisol ต่ำ + ACTH ต่ำ คือ central AI (Addison = primary AI, ACTH สูง) → เปลี่ยนเป็น "adrenal insufficiency" · เฉลยเดิม B | แก้โจทย์ (ผู้ใช้สั่ง 2026-11-10): ต้นฉบับเขียน "Addison's disease" แต่ lab ACTH ต่ำคือ central AI (Addison = primary AI, ACTH สูง) → เปลี่ยนเป็น "adrenal insufficiency"; เฉลย B เหมือนเดิม |
+| 63 | ข้อนี้ถูก 2 ตัว: A และ C (ได้คะแนนทั้งคู่) | ถูก 2 ตัว: ketogenesis ↑ (A) และ gluconeogenesis ↑ (C) เกิดทั้งคู่ใน T1DM ที่ไม่ได้รักษา — ผู้ใช้ให้ถูกร่วมกัน |
 | 68 | คำอธิบายในต้นฉบับเป็นของข้ออื่น | โน้ตสีน้ำเงินข้างข้อ 68 ในเฉลยต้นฉบับคัดลอกมาจากข้อ 67 (ezetimibe/NPC1L1) — ไฮไลต์คำตอบ B ถูกต้อง แต่คำอธิบายผิดข้อ |
+| 73 | ข้อนี้ถูก 2 ตัว: B และ E (ได้คะแนนทั้งคู่) | ถูก 2 ตัว: PTH ↓ ทำทั้ง bone resorption ↓ (B) และ gut Ca absorption ↓ ผ่าน vit D (E) — ผู้ใช้ให้ถูกร่วมกัน |
+| 81 | ข้อนี้ถูก 2 ตัว: B และ E (ได้คะแนนทั้งคู่) | ถูก 2 ตัว: BMD test (B) วัดด้วย DXA (E) เป็นการตรวจเดียวกัน — ผู้ใช้ให้ถูกร่วมกัน |
 
 ## การแก้ไขข้อความ (edits)
 
@@ -52,6 +52,7 @@ AI ตอบตรงกับเฉลยต้นฉบับ **67/67** ข้
 | 35 | stem | through which of the following mechanisms? (จำช้อยไม่ได้ แต่พยายามเติมให้) | through which of the following mechanisms? |
 | 42 | choices | ตาราง 5 คอลัมน์ในต้นฉบับ (text layer อ่านเป็นข้อความต่อกัน) | แปลงแต่ละแถวเป็นข้อความในช้อยส์ A–E |
 | 46 | stem | normal arterial blood pH of 7.10 | normal arterial blood pH of 7.38 |
+| 53 | stem | Addison’s disease | adrenal insufficiency |
 | 69 | stem | at this site? (จำได้ ไม่หมด แต่เติมช้อยให้แล้ว) | at this site? |
 | 70 | stem | Which of following lipoprotein particles involved in storing fat after eating a meal? | Which of the following lipoprotein particles is involved in storing fat after eating a meal? |
 | 75 | stem | Which of the following factors associated with this condition? (ไม่แน่ใจ) | Which of the following factors is associated with this condition? |

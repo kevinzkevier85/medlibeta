@@ -17,6 +17,8 @@ Other agents may be working on other END sets in the same tree at the same time 
 3. `key_concept` — 2–4 bullets, each line starting `• `, joined by `\n`: principle to remember / re-read (contrast pairs, rules of thumb, "ถ้า…ให้นึกถึง…"), not a repeat of the explanation.
 4. `mechanism` (sequence boxes "ลำดับกลไก") — REQUIRED for every physiology, pathophysiology, biochemistry-pathway and drug-mechanism question (user asked for this sequence chain for physiology). 3–6 cause→effect steps, short strings; mark exactly one step that IS the answer as `{"s": "...", "answer": true}`. Pure recall (anatomy, histology, embryology fact, epidemiology): only if a real cause→effect chain exists, else omit.
 
+**More than one right choice** (user rule 2026-11-10): if a question already has `also_accept` in `auditor/data/decisions.json`, every scoring option is ✓ in `option_why`, the explanation names all of them ("ถูกทั้ง A และ C"), the last key_concept bullet says `• ข้อนี้ถูก 2 ตัว (A, C): …`, and the mechanism marks each answer step. If you find a NEW question where two options are both right, or a stem that contradicts its own data (e.g. END 52 ข้อ 53 "Addison" with low ACTH), do not edit it — report it; the coordinator asks the user, then records `also_accept` / a stem `extra_edits` + decision note.
+
 Target style: `data/blocks/CVS/exams/52_MCQ.json` (e.g. CVS-52-MCQ-005). Rules: `lib/validate.js` (checkMechanism).
 Medical accuracy first: start from the existing explanation + audit info, do not invent numbers. If you think a key is wrong, do not change it — report it.
 

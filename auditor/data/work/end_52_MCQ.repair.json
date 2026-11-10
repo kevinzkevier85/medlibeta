@@ -863,11 +863,9 @@
    "key_concept": "• ADA แบ่ง 4 กลุ่ม: T1DM, T2DM, GDM, other specific types\n• other specific: MODY, pancreatic disease (pancreatitis, pancreatectomy, CF, hemochromatosis), endocrinopathy (Cushing, acromegaly), drug-induced\n• type 3c ขาดทั้ง insulin และ glucagon → hypoglycemia ง่าย"
   },
   "53": {
-   "explanation": "Cortisol ต่ำ ACTH ต่ำ แยก pituitary กับ hypothalamus ด้วย CRH stimulation test",
-   "issues": [
-    "โจทย์ใช้คำว่า Addison's disease ไม่ตรงกับ lab"
-   ],
-   "audit_note": "Addison disease = primary adrenal insufficiency ซึ่ง ACTH ต้องสูง; lab ในโจทย์คือ central AI — เก็บคำเดิมไว้ เพราะเป็นข้อสอบจริง",
+   "explanation": "Cortisol ต่ำ + ACTH ต่ำ = central AI → แยก pituitary กับ hypothalamus ด้วย CRH stimulation test",
+   "issues": [],
+   "audit_note": "แก้โจทย์ (ผู้ใช้สั่ง 2026-11-10): ต้นฉบับเขียน \"Addison's disease\" แต่ lab ACTH ต่ำคือ central AI (Addison = primary AI, ACTH สูง) → เปลี่ยนเป็น \"adrenal insufficiency\"; เฉลย B เหมือนเดิม",
    "option_why": {
     "A": "ใช้ยืนยัน AI (ดูว่า adrenal ตอบสนองไหม) ไม่แยก pituitary/hypothalamus",
     "B": "✓ ให้ CRH: ACTH ไม่ขึ้น = pituitary · ACTH ขึ้น = hypothalamus",
@@ -875,7 +873,7 @@
     "D": "ทดสอบทั้ง axis ไม่แยกตำแหน่งชัด",
     "E": "ใช้คัดกรอง Cushing"
    },
-   "key_concept": "• หลักทั่วไป: ให้ hormone ของชั้นบนแล้วดูชั้นล่างตอบสนอง → ระบุชั้นที่เสีย\n• โจทย์เรียก \"Addison's disease\" แต่ Addison = primary AI (ACTH สูง) ภาพ lab นี้คือ central AI\n• central AI ไม่มี pigmentation และ aldosterone ยังปกติ",
+   "key_concept": "• หลักทั่วไป: ให้ hormone ของชั้นบนแล้วดูชั้นล่างตอบสนอง → ระบุชั้นที่เสีย\n• Addison = primary AI (ACTH สูง, มี pigmentation) · ACTH ต่ำแบบข้อนี้ = central AI (secondary/tertiary)\n• central AI ไม่มี pigmentation และ aldosterone ยังปกติ",
    "mechanism": [
     "Cortisol ↓ + ACTH ↓ = central AI",
     "ให้ CRH จากภายนอก",
@@ -1069,35 +1067,34 @@
    ]
   },
   "63": {
-   "explanation": "T1DM ขาด insulin → lipolysis ↑ → ketogenesis ↑",
-   "flags": [
-    "needs_review"
-   ],
-   "issues": [
-    "ช้อยส์ C อาจถูกด้วย"
-   ],
-   "audit_note": "ทั้ง ketogenesis ↑ (A) และ gluconeogenesis ↑ (C) เกิดใน T1DM ที่ไม่ได้รักษา — มีคำตอบถูกมากกว่า 1 ตัว; ต้นฉบับเลือก A ตรงกับ AI",
+   "explanation": "T1DM ขาด insulin → glucagon เด่น → ketogenesis ↑ และ gluconeogenesis ↑ (ถูกทั้ง A และ C)",
+   "flags": [],
+   "issues": [],
+   "audit_note": "ถูก 2 ตัว: ketogenesis ↑ (A) และ gluconeogenesis ↑ (C) เกิดทั้งคู่ใน T1DM ที่ไม่ได้รักษา — ผู้ใช้ให้ถูกร่วมกัน",
    "why": {
     "A": "ถูก — ลักษณะเฉพาะของ T1DM",
     "B": "glycogenolysis เพิ่มขึ้น ไม่ได้ลดลง",
-    "C": "ก็ถูก — glucagon/insulin ratio สูงกระตุ้น gluconeogenesis",
+    "C": "ถูก — glucagon/insulin ratio สูงกระตุ้น gluconeogenesis",
     "D": "protein synthesis ลดลง (catabolic)",
     "E": "lipolysis เพิ่มขึ้น"
    },
    "option_why": {
-    "A": "✓ ผลเด่นที่นำไปสู่ DKA",
+    "A": "✓ lipolysis ↑ → FFA ไปตับ → ketone bodies (นำไปสู่ DKA)",
     "B": "ตรงข้าม glucagon เด่น glycogenolysis ↑",
-    "C": "เกิดขึ้นจริงเช่นกัน แต่ ketogenesis เป็นลักษณะเฉพาะของการขาด insulin สมบูรณ์",
+    "C": "✓ glucagon/insulin ratio สูง → ตับสร้าง glucose ใหม่ ↑ ซ้ำเติม hyperglycemia",
     "D": "ตรงข้าม protein catabolism ↑",
     "E": "ตรงข้าม lipolysis ↑"
    },
-   "key_concept": "• insulin เป็น hormone เดียวที่ยับยั้ง lipolysis ได้แรง → ขาดสมบูรณ์ (T1DM) จึง ketosis\n• T2DM ยังมี insulin พอกด lipolysis → มักเป็น HHS แทน DKA\n• ⚠ ตัวเลือก C ก็ถูก (gluconeogenesis ↑) คำตอบเลือก A ตามต้นฉบับ",
+   "key_concept": "• insulin เป็น hormone เดียวที่ยับยั้ง lipolysis ได้แรง → ขาดสมบูรณ์ (T1DM) จึง ketosis\n• T2DM ยังมี insulin พอกด lipolysis → มักเป็น HHS แทน DKA\n• ข้อนี้ถูก 2 ตัว (A, C): ขาด insulin ทำให้ทั้ง ketogenesis และ gluconeogenesis ↑",
    "mechanism": [
-    "β-cell ถูกทำลาย → insulin ↓",
-    "Glucagon ↑ เด่น",
-    "Hormone-sensitive lipase ↑ → FFA ไปตับ",
+    "β-cell ถูกทำลาย → insulin ↓ + glucagon ↑ เด่น",
     {
-     "s": "Hepatic ketogenesis ↑",
+     "s": "ตับ: gluconeogenesis ↑ → hyperglycemia",
+     "answer": true
+    },
+    "พร้อมกัน: hormone-sensitive lipase ↑ → FFA ไปตับ",
+    {
+     "s": "Hepatic ketogenesis ↑ → DKA",
      "answer": true
     }
    ]
@@ -1289,33 +1286,32 @@
    ]
   },
   "73": {
-   "explanation": "Hypoparathyroidism → PTH ↓ → active vitamin D ↓ → ลำไส้ดูด Ca น้อยลง → hypocalcemia",
-   "flags": [
-    "needs_review"
-   ],
-   "issues": [
-    "ช้อยส์ B อาจถูกด้วย"
-   ],
-   "audit_note": "PTH ↓ ทำทั้ง bone resorption ↓ (B) และ gut Ca absorption ↓ ผ่าน vit D (E) — มีคำตอบถูกมากกว่า 1 ตัว; ต้นฉบับเลือก E ตรงกับ AI",
+   "explanation": "Hypoparathyroidism → PTH ↓ → bone resorption ↓ และ active vitamin D ↓ → ลำไส้ดูด Ca ↓ → hypocalcemia (ถูกทั้ง B และ E)",
+   "flags": [],
+   "issues": [],
+   "audit_note": "ถูก 2 ตัว: PTH ↓ ทำทั้ง bone resorption ↓ (B) และ gut Ca absorption ↓ ผ่าน vit D (E) — ผู้ใช้ให้ถูกร่วมกัน",
    "why": {
     "A": "calcitonin ไม่มีบทบาทใน hypocalcemia หลังผ่าตัดนี้",
-    "B": "ก็ถูก — PTH ↓ → osteoclast activity ↓",
+    "B": "ถูก — PTH ↓ → osteoclast activity ↓",
     "C": "FGF-23 ไม่ได้เพิ่ม",
     "D": "active vit D ลดลง ไม่ได้เพิ่ม",
     "E": "ถูก — vit D ↓ → gut absorption ↓"
    },
    "option_why": {
     "A": "calcitonin มีบทบาทน้อยต่อระดับ Ca ในมนุษย์",
-    "B": "เกิดขึ้นจริงจาก PTH ↓ แต่ตัวเลือก E ตรงกลไก vitamin D มากกว่าตามต้นฉบับ",
+    "B": "✓ PTH ↓ → osteoclast resorption ↓ → Ca จากกระดูกเข้าเลือดน้อยลง",
     "C": "FGF-23 ไม่ใช่ผลหลักของการขาด PTH",
     "D": "ตรงข้าม 1,25(OH)₂D ลดลง",
     "E": "✓ ขาด calcitriol → ดูดซึม Ca จากลำไส้ลด"
    },
-   "key_concept": "• PTH ขึ้น Ca 3 ทาง: กระดูก (resorption), ไต (Ca reabsorption + 1α-hydroxylase), ลำไส้ (ผ่าน calcitriol)\n• hypocalcemia: Chvostek, Trousseau, tetany, QT ยาว\n• ⚠ ตัวเลือก B ก็เกิดจริง คำตอบเลือก E ตามต้นฉบับ",
+   "key_concept": "• PTH ขึ้น Ca 3 ทาง: กระดูก (resorption), ไต (Ca reabsorption + 1α-hydroxylase), ลำไส้ (ผ่าน calcitriol)\n• hypocalcemia: Chvostek, Trousseau, tetany, QT ยาว\n• ข้อนี้ถูก 2 ตัว (B, E): PTH ↓ ลด Ca ทั้งจากกระดูกและจากลำไส้",
    "mechanism": [
     "Parathyroid เสียจากผ่าตัด → PTH ↓",
-    "1α-hydroxylase ที่ไต ↓",
-    "1,25(OH)₂D ↓",
+    {
+     "s": "กระดูก: osteoclast resorption ↓",
+     "answer": true
+    },
+    "ไต: 1α-hydroxylase ↓ → 1,25(OH)₂D ↓",
     {
      "s": "ดูดซึม Ca²⁺ จากลำไส้ ↓",
      "answer": true
@@ -1465,29 +1461,25 @@
    ]
   },
   "81": {
-   "explanation": "หลัง fragility fracture ประเมินกระดูกด้วย DXA scan (gold standard)",
-   "flags": [
-    "needs_review"
-   ],
-   "issues": [
-    "ช้อยส์ B กับ E เป็นการตรวจเดียวกัน"
-   ],
-   "audit_note": "BMD test (B) วัดด้วย DXA (E) — ช้อยส์ซ้ำซ้อน ข้อจริงอาจเขียนต่างจากนี้; ต้นฉบับเลือก E ตรงกับ AI",
+   "explanation": "หลัง fragility fracture ประเมินกระดูกด้วย BMD ซึ่งวัดด้วย DXA scan — B กับ E คือการตรวจเดียวกัน (ถูกทั้งคู่)",
+   "flags": [],
+   "issues": [],
+   "audit_note": "ถูก 2 ตัว: BMD test (B) วัดด้วย DXA (E) เป็นการตรวจเดียวกัน — ผู้ใช้ให้ถูกร่วมกัน",
    "why": {
     "A": "MRI ใช้หา occult fracture ไม่ใช่ประเมิน bone density",
-    "B": "ความหมายเดียวกับ E",
+    "B": "ถูก — ความหมายเดียวกับ E",
     "C": "bone ALP เป็น turnover marker ไม่ใช่การวินิจฉัย",
     "D": "ใช้หา secondary cause ไม่ใช่ประเมินมวลกระดูก",
     "E": "DXA = gold standard วัด BMD"
    },
    "option_why": {
     "A": "ใช้หา occult fracture ไม่ประเมินความหนาแน่นกระดูก",
-    "B": "คือการตรวจเดียวกับ DXA แต่ระบุวิธีไม่ชัด",
+    "B": "✓ BMD test = วัดความหนาแน่นกระดูก ซึ่งทำด้วย DXA",
     "C": "บอก bone turnover ไม่ใช่ความหนาแน่น",
     "D": "หาสาเหตุ secondary ได้ แต่ไม่ประเมิน bone status โดยตรง",
-    "E": "✓ วัด BMD ที่ hip และ spine → T-score"
+    "E": "✓ DXA วัด BMD ที่ hip และ spine → T-score (gold standard)"
    },
-   "key_concept": "• T-score ≤ −2.5 = osteoporosis · −1 ถึง −2.5 = osteopenia\n• hip/vertebral fragility fracture วินิจฉัย osteoporosis ได้เลยโดยไม่ต้องรอ T-score\n• ⚠ ตัวเลือก B (BMD test) กับ E (DXA) เป็นการตรวจเดียวกัน คำตอบเลือก E ตามต้นฉบับ"
+   "key_concept": "• T-score ≤ −2.5 = osteoporosis · −1 ถึง −2.5 = osteopenia\n• hip/vertebral fragility fracture วินิจฉัย osteoporosis ได้เลยโดยไม่ต้องรอ T-score\n• ข้อนี้ถูก 2 ตัว (B, E): BMD test กับ DXA คือการตรวจเดียวกัน"
   }
  },
  "extra_edits": {
@@ -1496,6 +1488,13 @@
     "field": "stem",
     "old": "The cytologic smear form fine needle aspiration reveals groups of follicular having nuclear inclusion and nuclear groove.",
     "new": "The cytologic smear from fine needle aspiration reveals groups of follicular cells having nuclear inclusions and nuclear grooves."
+   }
+  ],
+  "53": [
+   {
+    "field": "stem",
+    "old": "Addison’s disease",
+    "new": "adrenal insufficiency"
    }
   ]
  }

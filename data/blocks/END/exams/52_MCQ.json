@@ -2234,7 +2234,7 @@
    "n": 53,
    "type": "MCQ",
    "topic": "adrenal",
-   "stem": "A patient diagnosed with Addison’s disease shows low cortisol and low ACTH levels. To differentiate whether the cause is a pituitary defect or a hypothalamic defect, which test is most appropriate?",
+   "stem": "A patient diagnosed with adrenal insufficiency shows low cortisol and low ACTH levels. To differentiate whether the cause is a pituitary defect or a hypothalamic defect, which test is most appropriate?",
    "options": {
     "A": "ACTH stimulation test",
     "B": "CRH stimulation test",
@@ -2244,7 +2244,7 @@
    },
    "answer": "B",
    "answer_status": "verified",
-   "explanation": "Cortisol ต่ำ ACTH ต่ำ แยก pituitary กับ hypothalamus ด้วย CRH stimulation test\n⚠️ โจทย์ใช้คำว่า Addison's disease ไม่ตรงกับ lab",
+   "explanation": "Cortisol ต่ำ + ACTH ต่ำ = central AI → แยก pituitary กับ hypothalamus ด้วย CRH stimulation test\n⚠️ แก้โจทย์: ต้นฉบับเขียน \"Addison's disease\" แต่ cortisol ต่ำ + ACTH ต่ำ คือ central AI (Addison = primary AI, ACTH สูง) → เปลี่ยนเป็น \"adrenal insufficiency\" · เฉลยเดิม B",
    "refs": [
     {
      "paper": "MCQ52",
@@ -2265,7 +2265,7 @@
    "tags": [],
    "source": "import",
    "audit_ref": "end_52_MCQ_053",
-   "key_concept": "• หลักทั่วไป: ให้ hormone ของชั้นบนแล้วดูชั้นล่างตอบสนอง → ระบุชั้นที่เสีย\n• โจทย์เรียก \"Addison's disease\" แต่ Addison = primary AI (ACTH สูง) ภาพ lab นี้คือ central AI\n• central AI ไม่มี pigmentation และ aldosterone ยังปกติ",
+   "key_concept": "• หลักทั่วไป: ให้ hormone ของชั้นบนแล้วดูชั้นล่างตอบสนอง → ระบุชั้นที่เสีย\n• Addison = primary AI (ACTH สูง, มี pigmentation) · ACTH ต่ำแบบข้อนี้ = central AI (secondary/tertiary)\n• central AI ไม่มี pigmentation และ aldosterone ยังปกติ",
    "mechanism": [
     "Cortisol ↓ + ACTH ↓ = central AI",
     "ให้ CRH จากภายนอก",
@@ -2812,7 +2812,7 @@
    },
    "answer": "A",
    "answer_status": "verified",
-   "explanation": "T1DM ขาด insulin → lipolysis ↑ → ketogenesis ↑\n⚠️ ช้อยส์ C อาจถูกด้วย",
+   "explanation": "T1DM ขาด insulin → glucagon เด่น → ketogenesis ↑ และ gluconeogenesis ↑ (ถูกทั้ง A และ C)\n⚠️ ข้อนี้ถูก 2 ตัว: A และ C (ได้คะแนนทั้งคู่)",
    "refs": [
     {
      "paper": "MCQ52",
@@ -2836,20 +2836,23 @@
    "also_accept": [
     "C"
    ],
-   "key_concept": "• insulin เป็น hormone เดียวที่ยับยั้ง lipolysis ได้แรง → ขาดสมบูรณ์ (T1DM) จึง ketosis\n• T2DM ยังมี insulin พอกด lipolysis → มักเป็น HHS แทน DKA\n• ⚠ ตัวเลือก C ก็ถูก (gluconeogenesis ↑) คำตอบเลือก A ตามต้นฉบับ",
+   "key_concept": "• insulin เป็น hormone เดียวที่ยับยั้ง lipolysis ได้แรง → ขาดสมบูรณ์ (T1DM) จึง ketosis\n• T2DM ยังมี insulin พอกด lipolysis → มักเป็น HHS แทน DKA\n• ข้อนี้ถูก 2 ตัว (A, C): ขาด insulin ทำให้ทั้ง ketogenesis และ gluconeogenesis ↑",
    "mechanism": [
-    "β-cell ถูกทำลาย → insulin ↓",
-    "Glucagon ↑ เด่น",
-    "Hormone-sensitive lipase ↑ → FFA ไปตับ",
+    "β-cell ถูกทำลาย → insulin ↓ + glucagon ↑ เด่น",
     {
-     "s": "Hepatic ketogenesis ↑",
+     "s": "ตับ: gluconeogenesis ↑ → hyperglycemia",
+     "answer": true
+    },
+    "พร้อมกัน: hormone-sensitive lipase ↑ → FFA ไปตับ",
+    {
+     "s": "Hepatic ketogenesis ↑ → DKA",
      "answer": true
     }
    ],
    "option_why": {
-    "A": "✓ ผลเด่นที่นำไปสู่ DKA",
+    "A": "✓ lipolysis ↑ → FFA ไปตับ → ketone bodies (นำไปสู่ DKA)",
     "B": "ตรงข้าม glucagon เด่น glycogenolysis ↑",
-    "C": "เกิดขึ้นจริงเช่นกัน แต่ ketogenesis เป็นลักษณะเฉพาะของการขาด insulin สมบูรณ์",
+    "C": "✓ glucagon/insulin ratio สูง → ตับสร้าง glucose ใหม่ ↑ ซ้ำเติม hyperglycemia",
     "D": "ตรงข้าม protein catabolism ↑",
     "E": "ตรงข้าม lipolysis ↑"
    }
@@ -3319,7 +3322,7 @@
    },
    "answer": "E",
    "answer_status": "verified",
-   "explanation": "Hypoparathyroidism → PTH ↓ → active vitamin D ↓ → ลำไส้ดูด Ca น้อยลง → hypocalcemia\n⚠️ ช้อยส์ B อาจถูกด้วย",
+   "explanation": "Hypoparathyroidism → PTH ↓ → bone resorption ↓ และ active vitamin D ↓ → ลำไส้ดูด Ca ↓ → hypocalcemia (ถูกทั้ง B และ E)\n⚠️ ข้อนี้ถูก 2 ตัว: B และ E (ได้คะแนนทั้งคู่)",
    "refs": [
     {
      "paper": "MCQ52",
@@ -3343,11 +3346,14 @@
    "also_accept": [
     "B"
    ],
-   "key_concept": "• PTH ขึ้น Ca 3 ทาง: กระดูก (resorption), ไต (Ca reabsorption + 1α-hydroxylase), ลำไส้ (ผ่าน calcitriol)\n• hypocalcemia: Chvostek, Trousseau, tetany, QT ยาว\n• ⚠ ตัวเลือก B ก็เกิดจริง คำตอบเลือก E ตามต้นฉบับ",
+   "key_concept": "• PTH ขึ้น Ca 3 ทาง: กระดูก (resorption), ไต (Ca reabsorption + 1α-hydroxylase), ลำไส้ (ผ่าน calcitriol)\n• hypocalcemia: Chvostek, Trousseau, tetany, QT ยาว\n• ข้อนี้ถูก 2 ตัว (B, E): PTH ↓ ลด Ca ทั้งจากกระดูกและจากลำไส้",
    "mechanism": [
     "Parathyroid เสียจากผ่าตัด → PTH ↓",
-    "1α-hydroxylase ที่ไต ↓",
-    "1,25(OH)₂D ↓",
+    {
+     "s": "กระดูก: osteoclast resorption ↓",
+     "answer": true
+    },
+    "ไต: 1α-hydroxylase ↓ → 1,25(OH)₂D ↓",
     {
      "s": "ดูดซึม Ca²⁺ จากลำไส้ ↓",
      "answer": true
@@ -3356,7 +3362,7 @@
    ],
    "option_why": {
     "A": "calcitonin มีบทบาทน้อยต่อระดับ Ca ในมนุษย์",
-    "B": "เกิดขึ้นจริงจาก PTH ↓ แต่ตัวเลือก E ตรงกลไก vitamin D มากกว่าตามต้นฉบับ",
+    "B": "✓ PTH ↓ → osteoclast resorption ↓ → Ca จากกระดูกเข้าเลือดน้อยลง",
     "C": "FGF-23 ไม่ใช่ผลหลักของการขาด PTH",
     "D": "ตรงข้าม 1,25(OH)₂D ลดลง",
     "E": "✓ ขาด calcitriol → ดูดซึม Ca จากลำไส้ลด"
@@ -3709,7 +3715,7 @@
    },
    "answer": "E",
    "answer_status": "verified",
-   "explanation": "หลัง fragility fracture ประเมินกระดูกด้วย DXA scan (gold standard)\n⚠️ ช้อยส์ B กับ E เป็นการตรวจเดียวกัน",
+   "explanation": "หลัง fragility fracture ประเมินกระดูกด้วย BMD ซึ่งวัดด้วย DXA scan — B กับ E คือการตรวจเดียวกัน (ถูกทั้งคู่)\n⚠️ ข้อนี้ถูก 2 ตัว: B และ E (ได้คะแนนทั้งคู่)",
    "refs": [
     {
      "paper": "MCQ52",
@@ -3736,13 +3742,13 @@
    "also_accept": [
     "B"
    ],
-   "key_concept": "• T-score ≤ −2.5 = osteoporosis · −1 ถึง −2.5 = osteopenia\n• hip/vertebral fragility fracture วินิจฉัย osteoporosis ได้เลยโดยไม่ต้องรอ T-score\n• ⚠ ตัวเลือก B (BMD test) กับ E (DXA) เป็นการตรวจเดียวกัน คำตอบเลือก E ตามต้นฉบับ",
+   "key_concept": "• T-score ≤ −2.5 = osteoporosis · −1 ถึง −2.5 = osteopenia\n• hip/vertebral fragility fracture วินิจฉัย osteoporosis ได้เลยโดยไม่ต้องรอ T-score\n• ข้อนี้ถูก 2 ตัว (B, E): BMD test กับ DXA คือการตรวจเดียวกัน",
    "option_why": {
     "A": "ใช้หา occult fracture ไม่ประเมินความหนาแน่นกระดูก",
-    "B": "คือการตรวจเดียวกับ DXA แต่ระบุวิธีไม่ชัด",
+    "B": "✓ BMD test = วัดความหนาแน่นกระดูก ซึ่งทำด้วย DXA",
     "C": "บอก bone turnover ไม่ใช่ความหนาแน่น",
     "D": "หาสาเหตุ secondary ได้ แต่ไม่ประเมิน bone status โดยตรง",
-    "E": "✓ วัด BMD ที่ hip และ spine → T-score"
+    "E": "✓ DXA วัด BMD ที่ hip และ spine → T-score (gold standard)"
    }
   }
  ]
