@@ -30,6 +30,14 @@ window.MedLibQuizUI = function (ML) {
   // minutes for timed mode when the paper gives none: MCQ 1.5, KF/OSPE 6 (at least 5)
   const estLimit = (qs) => Math.max(5, Math.round(qs.reduce((a, q) => a + (q.type === "MCQ" ? 1.5 : 6), 0)));
   const limitOf = (s) => Number(s.meta.time_limit_min) || estLimit(s.questions);
+  // Timed mode runs on the wall clock: the time keeps going while the person is on another page, another app or the
+  // screen is off. t0 = when the clock started (set from elapsed for rounds saved before this existed).
+  function clockNow(r) {
+    if (r.mode !== "timed" || r.done) return;
+    if (!r.t0) r.t0 = Date.now() - (r.elapsed || 0) * 1000;
+    r.elapsed = Math.max(0, Math.floor((Date.now() - r.t0) / 1000));
+  }
+  const timeUp = (s, r) => { clockNow(r); return r.mode === "timed" && !r.done && r.elapsed >= limitOf(s) * 60; };
   const keyOfSet = (b, s) => `${b.id}/${s.id}`;
   const roundsOf = (b, s) => (P().rounds[keyOfSet(b, s)] = P().rounds[keyOfSet(b, s)] || []);
   const activeRound = (b, s) => roundsOf(b, s).filter((r) => !r.done).pop() || null;
@@ -270,7 +278,7 @@ window.MedLibQuizUI = function (ML) {
     }
     const m = act ? null : pref.mode || "practice";
     h += `<section class="startbox"><h3>${act ? "หรือเริ่มรอบใหม่" : "เริ่มทำชุดนี้"}</h3>
-      <div class="modecards">${["practice", "timed", "untimed"].map((k) => `<label class="modecard"><input type="radio" name="mode" value="${k}" ${(m || "practice") === k ? "checked" : ""}><b>${MODE_TH[k]}</b><span class="hint">${k === "practice" ? "เลือกแล้วเห็นเฉลยและคำอธิบายทันที" : k === "timed" ? `นับถอยหลัง ${limit} นาที${est && !s.mix ? " (ต้นฉบับไม่ระบุเวลา ประมาณให้: MCQ ข้อละ 1.5 นาที, KF/OSPE ข้อละ 6 นาที)" : ""} หมดเวลาส่งเอง เฉลยขึ้นหลังส่ง` : "ทำครบแล้วกดส่ง เฉลยขึ้นหลังส่ง ไม่กดดันเรื่องเวลา"}</span></label>`).join("")}</div>
+      <div class="modecards">${["practice", "timed", "untimed"].map((k) => `<label class="modecard"><input type="radio" name="mode" value="${k}" ${(m || "practice") === k ? "checked" : ""}><b>${MODE_TH[k]}</b><span class="hint">${k === "practice" ? "เลือกแล้วเห็นเฉลยและคำอธิบายทันที" : k === "timed" ? `นับถอยหลัง ${limit} นาที${est && !s.mix ? " (ต้นฉบับไม่ระบุเวลา ประมาณให้: MCQ ข้อละ 1.5 นาที, KF/OSPE ข้อละ 6 นาที)" : ""} ออกไปหน้าอื่นหรือปิดจอเวลาก็ยังเดิน หมดเวลาส่งเอง เฉลยขึ้นหลังส่ง` : "ทำครบแล้วกดส่ง เฉลยขึ้นหลังส่ง ไม่กดดันเรื่องเวลา"}</span></label>`).join("")}</div>
       <div class="opts-row"><label class="chk"><input type="checkbox" id="shufQ" ${pref.shuffleQ ? "checked" : ""}> สุ่มลำดับข้อ</label><label class="chk"><input type="checkbox" id="shufC" ${pref.shuffleC ? "checked" : ""}> สุ่มลำดับช้อยส์ (MCQ)</label></div>
       <button class="btn primary big" data-z="start">${act ? "เริ่มรอบใหม่ (รอบเดิมจะถูกเก็บเป็นประวัติแบบไม่ครบ)" : "เริ่มทำ"}</button></section>`;
     const pr = setProgress(b, s);
@@ -357,9 +365,9 @@ window.MedLibQuizUI = function (ML) {
     let tick = 0;
     TIMER = setInterval(() => {
       if (!document.body.contains($("#ztimer"))) return stop();
-      r.elapsed++;
+      if (r.mode === "timed") clockNow(r); else r.elapsed++;
       $("#ztimer").textContent = timerTxt();
-      if (limit && r.elapsed >= limit) { finishRound(b, s, r, true); return; }
+      if (limit && r.elapsed >= limit) { r.elapsed = limit; ML.toast("หมดเวลาสอบ ส่งคำตอบให้แล้ว"); finishRound(b, s, r, true); return; }
       if (++tick % 5 === 0) save();
     }, 1000);
   }
@@ -711,6 +719,8 @@ window.MedLibQuizUI = function (ML) {
     stop();
     const b = ML.findBlock(bid), s = setLike(b, sid);
     if (!s) return ML.notFound("ไม่พบชุดข้อสอบนี้");
+    const act = activeRound(b, s);
+    if (act && timeUp(s, act) && !(sub === "sum" && arg === act.id)) { act.elapsed = limitOf(s) * 60; ML.toast("หมดเวลาสอบ ส่งคำตอบให้แล้ว"); return finishRound(b, s, act, true); }
     if (sub && /^\d+$/.test(sub)) return location.replace(`${base(b, s)}/run/${sub}`);
     if (sub === "run") return viewRun(b, s, arg);
     if (sub === "sum") return viewSummary(b, s, arg);
