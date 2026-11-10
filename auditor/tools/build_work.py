@@ -81,6 +81,9 @@ def main():
              "stem": r.get("stem_override", pq["stem"]),
              "choices": {L: "" for L in "ABCDE"}, "correct": None,
              "explanation": r.get("explanation", ""), "image": None, "issues": list(r.get("issues", []))}
+        for f in ("option_why", "key_concept", "mechanism"):   # CVS-style answer layout (MedLib only)
+            if r.get(f):
+                q[f] = r[f]
         q["choices"].update(r.get("choices_override", pq["choices"]))
         q["stem"] = fix_thai(q["stem"])
         q["choices"] = {L: fix_thai(v) for L, v in q["choices"].items()}

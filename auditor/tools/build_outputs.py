@@ -220,6 +220,8 @@ def build_medlib(sets):
                        "audit_ref": q["id"]} | ({"also_accept": q["also_accept"]} if q.get("also_accept") else {})
                       | ({"ai_answer": a["ai_answer"]} | ({"same_side": same[qid_ml]} if qid_ml in same else {})
                          if medlib_status(a) == "disputed" and a["ai_answer"] in q["choices"] and q["choices"].get(a["ai_answer"]) and a["ai_answer"] != q["correct"] else {})
+                      | {f: q[f] for f in ("key_concept", "mechanism") if q.get(f)}
+                      | ({"option_why": {k: v for k, v in q["option_why"].items() if q["choices"].get(k)}} if q.get("option_why") else {})
                       | ({"image": q["image"]} if q.get("image") else {})
                       | ({"image_caption": q["image_caption"]} if q.get("image_caption") else {}))
         out = {"meta": {"set_id": set_name, "block": B, "cohort": c, "type": t,
