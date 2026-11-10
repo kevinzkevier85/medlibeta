@@ -23,11 +23,13 @@ window.MedLibQuizUI = function (ML) {
       if (!m || m.block !== b.id) return null;
       const all = ML.examsOf(b); const byId = Object.fromEntries(all.map((q) => [q.id, q]));
       const qs = m.qids.map((id) => byId[id]).filter(Boolean);
-      const limit = Math.max(5, Math.round(qs.reduce((a, q) => a + (q.type === "MCQ" ? 1.5 : 6), 0)));
-      return { id: sid, mix: true, title: m.title, type: "ชุดฝึกข้ามชุด", cohort: null, meta: { time_limit_min: limit }, questions: qs, guide: null };
+      return { id: sid, mix: true, title: m.title, type: "ชุดฝึกข้ามชุด", cohort: null, meta: { time_limit_min: estLimit(qs) }, questions: qs, guide: null };
     }
     return ML.findSet(b, sid);
   }
+  // minutes for timed mode when the paper gives none: MCQ 1.5, KF/OSPE 6 (at least 5)
+  const estLimit = (qs) => Math.max(5, Math.round(qs.reduce((a, q) => a + (q.type === "MCQ" ? 1.5 : 6), 0)));
+  const limitOf = (s) => Number(s.meta.time_limit_min) || estLimit(s.questions);
   const keyOfSet = (b, s) => `${b.id}/${s.id}`;
   const roundsOf = (b, s) => (P().rounds[keyOfSet(b, s)] = P().rounds[keyOfSet(b, s)] || []);
   const activeRound = (b, s) => roundsOf(b, s).filter((r) => !r.done).pop() || null;
@@ -258,7 +260,7 @@ window.MedLibQuizUI = function (ML) {
   /* ---------- overview: start a round / resume ---------- */
   function viewOverview(b, s) {
     const act = activeRound(b, s), last = lastDone(b, s), B = base(b, s);
-    const limit = Number(s.meta.time_limit_min) || 0;
+    const limit = limitOf(s), est = !Number(s.meta.time_limit_min);
     const pref = P().prefs || {};
     let h = headHTML(b, s, "");
     if (act) {
@@ -268,7 +270,7 @@ window.MedLibQuizUI = function (ML) {
     }
     const m = act ? null : pref.mode || "practice";
     h += `<section class="startbox"><h3>${act ? "หรือเริ่มรอบใหม่" : "เริ่มทำชุดนี้"}</h3>
-      <div class="modecards">${["practice", "timed", "untimed"].map((k) => `<label class="modecard"><input type="radio" name="mode" value="${k}" ${(m || "practice") === k ? "checked" : ""}><b>${MODE_TH[k]}</b><span class="hint">${k === "practice" ? "เลือกแล้วเห็นเฉลยและคำอธิบายทันที" : k === "timed" ? `นับถอยหลัง ${limit || "—"} นาที หมดเวลาส่งเอง เฉลยขึ้นหลังส่ง` : "ทำครบแล้วกดส่ง เฉลยขึ้นหลังส่ง ไม่กดดันเรื่องเวลา"}</span></label>`).join("")}</div>
+      <div class="modecards">${["practice", "timed", "untimed"].map((k) => `<label class="modecard"><input type="radio" name="mode" value="${k}" ${(m || "practice") === k ? "checked" : ""}><b>${MODE_TH[k]}</b><span class="hint">${k === "practice" ? "เลือกแล้วเห็นเฉลยและคำอธิบายทันที" : k === "timed" ? `นับถอยหลัง ${limit} นาที${est && !s.mix ? " (ต้นฉบับไม่ระบุเวลา ประมาณให้: MCQ ข้อละ 1.5 นาที, KF/OSPE ข้อละ 6 นาที)" : ""} หมดเวลาส่งเอง เฉลยขึ้นหลังส่ง` : "ทำครบแล้วกดส่ง เฉลยขึ้นหลังส่ง ไม่กดดันเรื่องเวลา"}</span></label>`).join("")}</div>
       <div class="opts-row"><label class="chk"><input type="checkbox" id="shufQ" ${pref.shuffleQ ? "checked" : ""}> สุ่มลำดับข้อ</label><label class="chk"><input type="checkbox" id="shufC" ${pref.shuffleC ? "checked" : ""}> สุ่มลำดับช้อยส์ (MCQ)</label></div>
       <button class="btn primary big" data-z="start">${act ? "เริ่มรอบใหม่ (รอบเดิมจะถูกเก็บเป็นประวัติแบบไม่ครบ)" : "เริ่มทำ"}</button></section>`;
     const pr = setProgress(b, s);
@@ -303,6 +305,10 @@ window.MedLibQuizUI = function (ML) {
     const r = activeRound(b, s);
     if (!r) { location.replace(base(b, s)); return; }
     const qmap = qmapOf(s);
+    if (r.qids.some((id) => !qmap[id])) {   // a question was removed or renamed after this round started
+      r.qids = r.qids.filter((id) => qmap[id]);
+      if (!r.qids.length) { r.done = true; r.abandoned = true; r.finished = Date.now(); save(); location.replace(base(b, s)); return; }
+    }
     const i = Math.max(0, Math.min(r.qids.length - 1, (Number(pos) || 1) - 1));
     r.idx = i; r.at = Date.now();   // "at" = last time this round was open, for ทำต่อจากล่าสุด
     const q = qmap[r.qids[i]];
@@ -320,7 +326,7 @@ window.MedLibQuizUI = function (ML) {
     }).join("") || `<span class="hint">ไม่มีข้อที่ตรงกับตัวกรอง</span>`;
     const lecs = [...new Set(s.questions.flatMap((x) => (x.refs || []).filter((y) => y.lecture).map((y) => y.lecture)))].sort();
     const sel = (v, l, cur) => `<option value="${esc(v)}" ${cur === v ? "selected" : ""}>${esc(l)}</option>`;
-    const limit = r.mode === "timed" ? (Number(s.meta.time_limit_min) || 0) * 60 : 0;
+    const limit = r.mode === "timed" ? limitOf(s) * 60 : 0;
     const timerTxt = () => (r.mode === "practice" ? "" : limit ? `เหลือ ${mmss(Math.max(0, limit - r.elapsed))}` : `เวลา ${mmss(r.elapsed)}`);
     const isLast = !next;
     ML.main.innerHTML = headHTML(b, s, "") + `
@@ -360,7 +366,9 @@ window.MedLibQuizUI = function (ML) {
 
   function finishRound(b, s, r, all) {
     stop();
-    if (all) { const qm = qmapOf(s); r.qids.forEach((id) => { if (!r.chk[id]) { r.chk[id] = true; graded(qm[id], r); } }); }
+    // submit: check everything · practice finish: check what was answered but not checked yet (KF/OSPE typed, no ตรวจ)
+    const qm = qmapOf(s);
+    r.qids.forEach((id) => { if (!r.chk[id] && qm[id] && (all || C.answered(qm[id], r))) { r.chk[id] = true; graded(qm[id], r); } });
     r.done = true; r.finished = Date.now(); save();
     location.hash = `${base(b, s)}/sum/${r.id}`;
     if (ML.syncSoon) ML.syncSoon();
@@ -754,7 +762,7 @@ window.MedLibQuizUI = function (ML) {
     if (z === "check") { if (q && c.r) { c.r.chk[q.id] = true; graded(q, c.r); save(); rerender(); } return true; }
     if (z === "singleredo") { delete single[c.q.id]; rerender(); return true; }
     if (z === "finish") {
-      const r = c.r, left = r.qids.filter((id) => !r.chk[id]).length;
+      const r = c.r, qm = qmapOf(c.s), left = r.qids.filter((id) => !r.chk[id] && !(qm[id] && C.answered(qm[id], r))).length;
       if (left && !ML.armed(t, `ยังไม่ได้ทำ ${left} ข้อ · กดอีกครั้งเพื่อจบรอบ`)) return true;
       finishRound(c.b, c.s, r, false); return true;
     }
