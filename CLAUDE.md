@@ -12,6 +12,11 @@
 - ข้อสอบที่ตรวจแล้วมาจาก `auditor/` (แผน: `prompt-exam-auditor.md`, สถานะ: `auditor/PROGRESS.md`) — ไฟล์ `data/blocks/*/exams/*.json` ที่มี `generated_by` ห้ามแก้มือ ให้แก้ที่ `auditor/data/work` แล้ว build ใหม่
 - ค่ากลาง `defaults.json` / ค่าส่วนตัว localStorage key `medlib.user.v1` / PDF cache IndexedDB `medlib`
 
+## แบบฟอร์มเฉลย MCQ (ผู้ใช้สั่ง 2026-11-11 — ใช้กับทุกบล็อก/ทุกปี)
+ทุกข้อ MCQ ที่เขียนเฉลยใหม่ต้องเป็นแบบเดียวกับ END ปี 52: `explanation` บรรทัดเดียว · `option_why` ครบทุกตัวเลือก (ข้อถูกขึ้นต้น `✓ `) · `key_concept` 2–4 bullet · `mechanism` (ลำดับกลไก 3–6 ขั้น มีขั้นเฉลยเดียว) สำหรับข้อฟิสิโอ/พยาธิ/ยา
+- รายละเอียดและคำสั่ง build: `docs/mcq-explain-brief.md` · แก้ที่ `auditor/data/work/<block>_<c>_MCQ.repair.json` แล้ว build ใหม่
+- ห้ามเปลี่ยนเฉลยข้อที่ถูกต้อง ถ้าเฉลยต้นฉบับขัดกับ AI คงตามต้นฉบับและเขียนความเห็น AI ในตัวเลือกที่ AI เลือก · ข้อที่ผู้เฉลยวงหลายตัวเลือกให้ระบุ `also_accept` ใน decisions.json
+
 ## ออกเวอร์ชันใหม่ (ทุกครั้งที่ส่งมอบ)
 1. เพิ่มเลขใน `version.json` (`version`, `date`, และรายการใหม่ด้านบนสุดของ `history`)
 2. เพิ่มหัวข้อใน `CHANGELOG.md`

@@ -1,15 +1,15 @@
-# Subagent prompt — END MCQ explanations in CVS style (replace <c> with the cohort, e.g. 52; 42-43 for set end_42-43_MCQ)
+# แบบฟอร์มเฉลย MCQ (ใช้ทุกบล็อก) — แบบเดียวกับ CVS/END ปี 52
 
-Rewrite the answer explanations of ONE MedLib exam set, **end_<c>_MCQ** (Endocrine MCQ), into the CVS-style layout. Goal (from the user): explanations that are easy to understand, plus concepts worth re-reading that make the student think.
+แทน `<block>` = บล็อก (end, gi…) และ `<c>` = ปี (เช่น 52; 42-43 สำหรับชุด end_42-43_MCQ)
+
+Rewrite the answer explanations of ONE MedLib exam set, **<block>_<c>_MCQ** (Endocrine MCQ), into the CVS-style layout. Goal (from the user): explanations that are easy to understand, plus concepts worth re-reading that make the student think.
 
 ## Where
-Git worktree (branch kel-end-mcq-explain; do NOT commit or push):
-`C:\Users\AKCom\Desktop\Project Claude\projects\medlib\_ref\wt-end-ospe`
-Python: `../../.venv/Scripts/python` from the worktree root (set `PYTHONIOENCODING=utf-8`). Never open or print `config.json`. Do not read .env files. Do not install packages.
-Other agents may be working on other END sets in the same tree at the same time — touch only your own set's repair file.
+Repo root (any block: END, GI, CVS…; replace `end` / `END` with the block). Work on your own `finn-…` branch (see CLAUDE.md). Never open or print `config.json`. Do not read .env files. Do not install packages.
+Other sessions may work on other sets at the same time — touch only your own set's repair file.
 
 ## The only file you edit
-`auditor/data/work/end_<c>_MCQ.repair.json` → `questions.<n>` entries. Keep every existing key (edits, issues, stem_override, choices_override, flags…) untouched except `explanation`, and add the new keys below. Skipped questions (listed in `skipped`) stay as they are. Never change which answer is correct — the correct answer is `correct` in `auditor/data/work/end_<c>_MCQ.json` (also read stem/choices there; do not edit that file).
+`auditor/data/work/<block>_<c>_MCQ.repair.json` → `questions.<n>` entries. Keep every existing key (edits, issues, stem_override, choices_override, flags…) untouched except `explanation`, and add the new keys below. Skipped questions (listed in `skipped`) stay as they are. Never change which answer is correct — the correct answer is `correct` in `auditor/data/work/<block>_<c>_MCQ.json` (also read stem/choices there; do not edit that file).
 
 ## New layout per question (Thai, medical terms in English, short lines)
 1. `explanation` — ONE short line: the answer and the core reason. e.g. `"Knee-chest เพิ่ม SVR ลด right-to-left shunt ใน TOF"`. No `(X)** —` prefix, no "Trap:" lines (traps go into option_why), no "⚠️".
@@ -22,12 +22,12 @@ Medical accuracy first: start from the existing explanation + audit info, do not
 
 ## Build & check (worktree root)
 ```
-../../.venv/Scripts/python -W ignore auditor/tools/build_work.py --set end_<c>_MCQ
-../../.venv/Scripts/python -W ignore auditor/tools/build_outputs.py --block end     # coordinator runs this once if several agents work in parallel
+python3 -W ignore auditor/tools/build_work.py --set <block>_<c>_MCQ
+python3 -W ignore auditor/tools/build_outputs.py --block <block>     # coordinator runs this once if several agents work in parallel
 node tools/validate.cjs > auditor/raw/_v<c>mcq.txt; echo $?      # must be 0
 node _test/quizcore.test.cjs
 ```
-Confirm with a node snippet that every non-skipped question in `data/blocks/END/exams/<c>_MCQ.json` has a one-line explanation, option_why for all options, key_concept; count mechanisms. Helper scripts only under `auditor/raw/`.
+Confirm with a node snippet that every non-skipped question in `data/blocks/<BLOCK>/exams/<c>_MCQ.json` has a one-line explanation, option_why for all options, key_concept; count mechanisms. Helper scripts only under `auditor/raw/`.
 
 ## Report
 Questions rewritten, how many with mechanism, suspected wrong keys (id + one line), validate exit code, 2 full built examples (one physiology with mechanism, one recall).
