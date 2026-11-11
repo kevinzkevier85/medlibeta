@@ -7,9 +7,9 @@
 
 | สถานะ | ความหมาย | จำนวน |
 |---|---|---|
-| `source_agree` | ตรงกับต้นฉบับ | 42 |
+| `source_agree` | ตรงกับต้นฉบับ | 43 |
 | `skipped` | ข้าม (ไม่มีโจทย์) | 12 |
-| `source_disagree` | ขัดกับต้นฉบับ | 7 |
+| `source_disagree` | ขัดกับต้นฉบับ | 6 |
 | `ai_generated` | AI เขียนข้อใหม่ | 5 |
 | `source_unverified` | ต้นฉบับไม่แน่นอน | 3 |
 | `drafted` | AI ทำเฉลย | 1 |
@@ -21,7 +21,6 @@ AI ตอบตรงกับเฉลยต้นฉบับ **45/54** ข้
 
 | ข้อ | ต้นฉบับ | AI | ความมั่นใจ | ปัญหา | รายละเอียด |
 |---|---|---|---|---|---|
-| 9 | E | C | medium | ถ้อยคำโจทย์กำกวม: 'TRH markedly increase when she is given'; เฉลยขัดกับ AI | เฉลยต้นฉบับเลือก E (pituitary) โดยตีความว่า TRH สูง TSH ต่ำ = pituitary เสีย; แต่ถ้าโจทย์หมายถึง TRH stimulation test แล้ว TSH ขึ้นมาก จะเป็น hypothalamus (C) — ขึ้นกับถ้อยคำจริง |
 | 30 | None | None | None | AI เขียนข้อนี้ขึ้นใหม่จากโน้ตความจำในต้นฉบับ | เฉลยต้นฉบับเขียนว่า metyrapone พร้อมระบุ ADR ว่า hypertension ซึ่งขัดกับโจทย์ที่มี hypertension อยู่แล้ว AI จึงเขียนข้อให้คำตอบเป็น ketoconazole — ควรตรวจว่าโจทย์จริงถามอะไร |
 | 39 | A | B | high | เฉลยขัดกับ AI | เฉลยต้นฉบับเลือก A (glimepiride + nateglinide) แต่ทั้งสองตัวเป็น insulin secretagogue ที่ออกฤทธิ์ที่ K-ATP เดียวกัน ไม่ใช่ complementary mechanism; B ใช้ 2 กลไกต่างกัน |
 | 52 | A | B | low | ข้อมูลในโจทย์ไม่พอประเมิน sd-LDL (ไม่มี TG); ช้อยส์ E ตัวเลขผิดปกติ (HDL 160 TC 40); เฉลยขัดกับ AI | เฉลยต้นฉบับเลือก A โดยคิด TC − HDL สูงสุด (145); AI เลือก B เพราะ HDL ต่ำสุด — sd-LDL สัมพันธ์กับ TG/HDL ซึ่งโจทย์ไม่ได้ให้ TG จึงกำกวม |
@@ -45,6 +44,7 @@ AI ตอบตรงกับเฉลยต้นฉบับ **45/54** ข้
 | ข้อ | ปัญหา | รายละเอียด |
 |---|---|---|
 | 3 | ในเฉลยต้นฉบับผู้จำเขียนว่าจำช้อยส์ไม่ได้เลย ช้อยส์ในไฟล์ข้อสอบอาจแต่งขึ้น; ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |  |
+| 9 | ถ้อยคำโจทย์ที่จำมากำกวม: 'TRH markly increase when she is given' อ่านได้สองแบบ; issue #56: ถ้อยคำโจทย์ที่จำมาอ่านได้สองแบบ (ระดับ TRH สูง → E ตามเฉลยต้นฉบับ · TSH ตอบสนองต่อ TRH ที่ฉีด → C) จึงนับถูกทั้ง E และ C | ข้อความต้นฉบับ: 'TSH concentration low TRH markly increase when she is given' — ไม่บอกว่าสิ่งที่เพิ่มคือ TRH หรือ TSH ฉบับก่อนหน้านี้แก้โจทย์เป็น 'TSH increases markedly when TRH is given' ซึ่งเอนไปทาง C จึงคืนเป็นถ้อยคำเดิม · เฉลยต้นฉบับ E (ตีความว่า TRH ↑ TSH ↓ = pituitary) · ถ้ามีรูปข้อสอบจริงหรือเฉลยอาจารย์ ให้ตัดสินใหม่ |
 | 10 | ช้อยส์ E ในต้นฉบับซ้ำกับ D; ช้อยส์ E AI เติมให้ครบ 5 ตัว |  |
 | 11 | แก้เฉลยตาม issue #49: ปวดคอ ต่อมโตกดเจ็บมาก + FT4↑ TSH↓ = subacute thyroiditis; Graves ต่อมไม่เจ็บ | เฉลยต้นฉบับเลือก A (Graves) จาก lab ที่เป็น hyperthyroid แต่ไม่ได้ใช้อาการปวดคอและต่อมกดเจ็บ ซึ่งเป็นลักษณะเฉพาะของ subacute thyroiditis (B) — ทั้งสองโรคมี FT4 ↑ TSH ↓ |
 | 22 | AI เขียนข้อนี้ขึ้นใหม่จากโน้ตความจำในต้นฉบับ |  |
@@ -68,7 +68,7 @@ AI ตอบตรงกับเฉลยต้นฉบับ **45/54** ข้
 | 7 | stem | จากการ Overexpression of ADH ส่งผลให้เกิดอะไรบ้าง | Overproduction of ADH would result in which of the following? |
 | 7 | choices.E | hyponatremia | Hyponatremia |
 | 8 | choices.D | Pegvigsomant | Pegvisomant |
-| 9 | stem | A young women มี puffy skin, weight gain, TSH concentration low TRH markly increase when she is given. | A young woman has puffy skin and weight gain. Her TSH concentration is low, and it increases markedly when TRH is given. |
+| 9 | stem | A young women มี puffy skin, weight gain, TSH concentration low TRH markly increase when she is given. What is the following pathology associated with this patient? | A young woman has puffy skin, weight gain, TSH concentration low, TRH markedly increase when she is given. What is the following pathology associated with this patient? |
 | 14 | stem | Mechanism หลักของ iodine คืออะไร | What is the main mechanism of action of iodide in treating hyperthyroidism? |
 | 15 | choices.C | Tremer | Tremor |
 | 16 | stem | มารดาอายุครรภ์ 4 เดือนควรใช้ยา Antithyroid drug ชนิดใดต่อไปนี้ | A woman who is 4 months pregnant has hyperthyroidism. Which antithyroid drug should be used? |
