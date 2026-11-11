@@ -29,7 +29,12 @@
 * { box-sizing: border-box; }
 html { scroll-padding-top: 150px; }
 body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--font); font-size: 16px; line-height: 1.6; font-variant-numeric: tabular-nums; }
-.bigtext .stem, .bigtext .case, .bigtext .opt, .bigtext .item .prompt { font-size: 1.12em; }
+html[data-fs="large"] { --qfs: 1.12; }
+html[data-fs="xl"] { --qfs: 1.3; }
+html[data-fs="xxl"] { --qfs: 1.55; }
+[data-fs] .stem, [data-fs] .case, [data-fs] .opt, [data-fs] .item .prompt { font-size: calc(1em * var(--qfs)); }
+.fsbtn { font-size: .88rem; font-weight: 700; }
+.fsbtn:disabled { opacity: .35; cursor: default; }
 a { color: var(--vein); }
 button, select, input, textarea { font: inherit; color: inherit; }
 button { cursor: pointer; }

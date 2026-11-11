@@ -180,10 +180,17 @@
     if (actLabel) t.querySelector("button").onclick = () => { act(); t.remove(); };
     document.body.append(t); toastT = setTimeout(() => t.remove(), 6000);
   }
+  const FONT_LV = ["normal", "large", "xl", "xxl"];
+  const FONT_TH = { normal: "ปกติ", large: "ใหญ่", xl: "ใหญ่มาก", xxl: "ใหญ่สุด" };
+  const fontLv = () => Math.max(0, FONT_LV.indexOf(S().fontSize));
+  function applyFont() {
+    const lv = FONT_LV[fontLv()];
+    if (lv === "normal") delete document.documentElement.dataset.fs; else document.documentElement.dataset.fs = lv;
+  }
   function applyTheme() {
     const th = S().theme || "auto";
     if (th === "auto") delete document.documentElement.dataset.theme; else document.documentElement.dataset.theme = th;
-    document.documentElement.classList.toggle("bigtext", S().fontSize === "large");
+    applyFont();
     try { localStorage.setItem("medlib.theme", th); } catch (e) { /* read by the inline script in index.html */ }
   }
 
@@ -218,6 +225,8 @@
     const th = { auto: ["◐", "ธีม: ตามเครื่อง"], light: ["☀", "ธีม: สว่าง"], dark: ["☾", "ธีม: มืด"] }[S().theme || "auto"];
     $("#tools").innerHTML = `<a class="ibtn ${view === "stats" ? "on" : ""}" href="#/stats" title="สถิติของฉัน" aria-label="สถิติ">📊</a>`
       + `<a class="ibtn ${view === "add" ? "on" : ""}" href="#/add" title="เพิ่มข้อสอบ" aria-label="เพิ่มข้อสอบ">＋</a>`
+      + `<button class="ibtn fsbtn" data-act="fontdown" title="ลดขนาดตัวอักษรโจทย์ (ตอนนี้: ${FONT_TH[FONT_LV[fontLv()]]})" aria-label="ลดขนาดตัวอักษรโจทย์"${fontLv() === 0 ? " disabled" : ""}>A−</button>`
+      + `<button class="ibtn fsbtn" data-act="fontup" title="ขยายขนาดตัวอักษรโจทย์ (ตอนนี้: ${FONT_TH[FONT_LV[fontLv()]]})" aria-label="ขยายขนาดตัวอักษรโจทย์"${fontLv() === FONT_LV.length - 1 ? " disabled" : ""}>A+</button>`
       + `<button class="ibtn" data-act="theme" title="${th[1]} (กดเพื่อสลับ)" aria-label="${th[1]}">${th[0]}</button>`
       + `<a class="ibtn ${view === "settings" ? "on" : ""}" href="#/settings" title="ตั้งค่า / ส่งออกข้อมูล · v${esc(v.version)}" aria-label="ตั้งค่า">⚙</a>`;
   }
@@ -800,7 +809,7 @@
     const s = S(); const d = APP.defaults.settings; const mine = USER.settings;
     const own = (k) => (k in mine ? `<span class="own">ค่าส่วนตัว</span>` : "");
     const opt = (v, cur, label) => `<option value="${esc(v)}" ${String(cur) === String(v) ? "selected" : ""}>${esc(label)}</option>`;
-    const lbl = { lec: "Lecture", exam: "ข้อสอบ", plan: "แผนอ่าน", true: "แสดง", false: "ซ่อน", normal: "ปกติ", large: "ใหญ่", auto: "ตามเครื่อง", light: "สว่าง", dark: "มืด" };
+    const lbl = { lec: "Lecture", exam: "ข้อสอบ", plan: "แผนอ่าน", true: "แสดง", false: "ซ่อน", normal: "ปกติ", large: "ใหญ่", xl: "ใหญ่มาก", xxl: "ใหญ่สุด", auto: "ตามเครื่อง", light: "สว่าง", dark: "มืด" };
     const pdfCount = await idbCount().catch(() => 0);
     const blocksRows = enabledBlocks().map((b) => {
       const hidden = s.hiddenBlocks.includes(b.id);
@@ -813,7 +822,7 @@
       <div class="settings">
         <div class="setrow"><label for="s-theme">ธีม${own("theme")}<small>ค่ากลาง: ${lbl[d.theme || "auto"]}</small></label><select id="s-theme" data-set="theme">${opt("auto", s.theme || "auto", "ตามเครื่อง")}${opt("light", s.theme, "สว่าง")}${opt("dark", s.theme, "มืด")}</select></div>
         <div class="setrow"><label for="s-draft">แสดงข้อสอบที่เฉลยยังไม่ยืนยัน${own("showDrafts")}<small>ค่ากลาง: ${lbl[d.showDrafts]}</small></label><select id="s-draft" data-set="showDrafts" data-bool="1">${opt(true, s.showDrafts, "แสดง")}${opt(false, s.showDrafts, "ซ่อน")}</select></div>
-        <div class="setrow"><label for="s-font">ขนาดตัวอักษรโจทย์${own("fontSize")}<small>ค่ากลาง: ${lbl[d.fontSize]}</small></label><select id="s-font" data-set="fontSize">${opt("normal", s.fontSize, "ปกติ")}${opt("large", s.fontSize, "ใหญ่")}</select></div>
+        <div class="setrow"><label for="s-font">ขนาดตัวอักษรโจทย์${own("fontSize")}<small>ค่ากลาง: ${lbl[d.fontSize]}</small></label><select id="s-font" data-set="fontSize">${FONT_LV.map((k) => opt(k, s.fontSize, FONT_TH[k])).join("")}</select></div>
         <div class="setrow"><label for="s-sample">แสดงบล็อกตัวอย่าง (DEMO)${own("showSample")}<small>ค่ากลาง: ${lbl[d.showSample]}</small></label><select id="s-sample" data-set="showSample" data-bool="1">${opt(true, s.showSample, "แสดง")}${opt(false, s.showSample, "ซ่อน")}</select></div>
         ${blocksRows}
       </div>
@@ -991,6 +1000,11 @@
       return route();
     }
     const act = t.dataset.act;
+    if (act === "fontup" || act === "fontdown") {
+      const nx = FONT_LV[Math.min(FONT_LV.length - 1, Math.max(0, fontLv() + (act === "fontup" ? 1 : -1)))];
+      if (nx === APP.defaults.settings.fontSize) delete USER.settings.fontSize; else USER.settings.fontSize = nx;
+      saveUser(); applyFont(); return side(parseHash()[0], parseHash().slice(1));
+    }
     if (act === "theme") { const order = ["auto", "light", "dark"]; const nx = order[(order.indexOf(S().theme || "auto") + 1) % 3]; if (nx === (APP.defaults.settings.theme || "auto")) delete USER.settings.theme; else USER.settings.theme = nx; saveUser(); applyTheme(); return side(parseHash()[0], parseHash().slice(1)); }
     if (act === "closehits") { $("#pdfhits").innerHTML = ""; return; }
     if (act === "rdsearch") { const x = t.closest(".rdbar"); x.classList.toggle("showsearch"); if (x.classList.contains("showsearch")) $("#pdfq").focus(); return; }
@@ -1146,7 +1160,7 @@
     APP.config = Object.assign({}, site, Object.fromEntries(Object.entries(cfg).filter(([, v]) => v)));
     APP.defaults = { settings: Object.assign({ defaultTab: "exam", showDrafts: true, fontSize: "normal", hiddenBlocks: [], showSample: false, theme: "auto" }, defs.settings) };
     applyTheme();
-    document.documentElement.classList.toggle("bigtext", S().fontSize === "large");
+    applyFont();
     await loadBlocks("data/blocks", false);
     await loadBlocks("samples/blocks", true);
     route();
