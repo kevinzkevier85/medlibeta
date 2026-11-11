@@ -187,9 +187,19 @@
     const lv = FONT_LV[fontLv()];
     if (lv === "normal") delete document.documentElement.dataset.fs; else document.documentElement.dataset.fs = lv;
   }
+  /* id · ชื่อ · [สีพื้น, สีหลัก] ใช้วาดวงกลมตัวอย่างในตั้งค่า (สีจริงอยู่ใน styles.css) */
+  const THEMES = [
+    ["auto", "ตามเครื่อง", ["#FAFAFB", "#11141B"]], ["light", "สว่าง", ["#FAFAFB", "#B3202E"]], ["dark", "มืด", ["#11141B", "#E25562"]],
+    ["sepia", "กระดาษเซเปีย", ["#F4ECD8", "#A4472B"]], ["ocean", "ทะเล", ["#F1F7FA", "#0B7A9E"]], ["forest", "ป่า", ["#F2F6F0", "#2F7D4F"]],
+    ["sakura", "ซากุระ", ["#FDF4F6", "#C2456B"]], ["lavender", "ลาเวนเดอร์", ["#F6F4FB", "#6B4FD0"]],
+    ["mocha", "มอคค่า", ["#1C1713", "#E8895A"]], ["midnight", "เที่ยงคืน (ดำสนิท)", ["#000000", "#FF6B7A"]],
+  ];
+  const themeIds = THEMES.map((t) => t[0]);
+  const themeName = (id) => (THEMES.find((t) => t[0] === id) || THEMES[0])[1];
   function applyTheme() {
-    const th = S().theme || "auto";
+    let th = S().theme || "auto"; if (!themeIds.includes(th)) th = "auto";
     if (th === "auto") delete document.documentElement.dataset.theme; else document.documentElement.dataset.theme = th;
+    try { const m = document.querySelector('meta[name="theme-color"]'); if (m) m.content = getComputedStyle(document.documentElement).getPropertyValue("--paper").trim() || m.content; } catch (e) { /* meta only */ }
     applyFont();
     try { localStorage.setItem("medlib.theme", th); } catch (e) { /* read by the inline script in index.html */ }
   }
@@ -229,9 +239,11 @@
       auto: IC('<circle cx="12" cy="12" r="8.5"/><path d="M12 3.5v17" /><path d="M12 3.5a8.5 8.5 0 0 1 0 17z" fill="currentColor" stroke="none"/>'),
       light: IC('<circle cx="12" cy="12" r="4"/><path d="M12 2.5v2M12 19.5v2M2.5 12h2M19.5 12h2M5.3 5.3l1.4 1.4M17.3 17.3l1.4 1.4M5.3 18.7l1.4-1.4M17.3 6.7l1.4-1.4"/>'),
       dark: IC('<path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/>'),
+      palette: IC('<path d="M12 3a9 9 0 1 0 0 18c1.1 0 1.8-.8 1.8-1.7 0-.5-.2-.9-.5-1.2-.3-.3-.5-.7-.5-1.2 0-.9.8-1.7 1.7-1.7H16a5 5 0 0 0 5-5c0-4-4-7.2-9-7.2z"/><circle cx="7.5" cy="11" r="1" fill="currentColor" stroke="none"/><circle cx="10" cy="7" r="1" fill="currentColor" stroke="none"/><circle cx="14.5" cy="7" r="1" fill="currentColor" stroke="none"/>'),
       settings: IC('<circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/>'),
     };
-    const th = { auto: [ICONS.auto, "ธีม: ตามเครื่อง"], light: [ICONS.light, "ธีม: สว่าง"], dark: [ICONS.dark, "ธีม: มืด"] }[S().theme || "auto"];
+    const thId = themeIds.includes(S().theme) ? S().theme : "auto";
+    const th = [{ auto: ICONS.auto, light: ICONS.light, dark: ICONS.dark }[thId] || ICONS.palette, "ธีม: " + themeName(thId)];
     $("#tools").innerHTML = `<a class="ibtn ${view === "stats" ? "on" : ""}" href="#/stats" title="สถิติของฉัน" aria-label="สถิติ">${ICONS.stats}</a>`
       + `<a class="ibtn ${view === "add" ? "on" : ""}" href="#/add" title="เพิ่มข้อสอบ" aria-label="เพิ่มข้อสอบ">${ICONS.add}</a>`
       + `<button class="ibtn fsbtn" data-act="fontdown" title="ลดขนาดตัวอักษรโจทย์ (ตอนนี้: ${FONT_TH[FONT_LV[fontLv()]]})" aria-label="ลดขนาดตัวอักษรโจทย์"${fontLv() === 0 ? " disabled" : ""}>A−</button>`
@@ -829,7 +841,8 @@
     const v = APP.version;
     main.innerHTML = `<div class="head"><h2>ตั้งค่า</h2><p class="hint">เริ่มจากค่ากลางใน <code>defaults.json</code> สิ่งที่แก้ตรงนี้เก็บไว้ในเบราว์เซอร์นี้เท่านั้น</p></div>
       <div class="settings">
-        <div class="setrow"><label for="s-theme">ธีม${own("theme")}<small>ค่ากลาง: ${lbl[d.theme || "auto"]}</small></label><select id="s-theme" data-set="theme">${opt("auto", s.theme || "auto", "ตามเครื่อง")}${opt("light", s.theme, "สว่าง")}${opt("dark", s.theme, "มืด")}</select></div>
+        <div class="setrow col"><label>ธีม${own("theme")}<small>ค่ากลาง: ${themeName(d.theme || "auto")} · ตอนนี้: ${themeName(s.theme || "auto")}</small></label>
+          <div class="swatches" role="radiogroup" aria-label="ธีม">${THEMES.map(([id, nm, c]) => `<button type="button" class="sw ${(s.theme || "auto") === id ? "on" : ""}" role="radio" aria-checked="${(s.theme || "auto") === id}" data-act="pickTheme" data-theme-id="${id}"><i style="background:linear-gradient(135deg,${c[0]} 0 50%,${c[1]} 50% 100%)"></i><span>${esc(nm)}</span></button>`).join("")}</div></div>
         <div class="setrow"><label for="s-draft">แสดงข้อสอบที่เฉลยยังไม่ยืนยัน${own("showDrafts")}<small>ค่ากลาง: ${lbl[d.showDrafts]}</small></label><select id="s-draft" data-set="showDrafts" data-bool="1">${opt(true, s.showDrafts, "แสดง")}${opt(false, s.showDrafts, "ซ่อน")}</select></div>
         <div class="setrow"><label for="s-font">ขนาดตัวอักษรโจทย์${own("fontSize")}<small>ค่ากลาง: ${lbl[d.fontSize]}</small></label><select id="s-font" data-set="fontSize">${FONT_LV.map((k) => opt(k, s.fontSize, FONT_TH[k])).join("")}</select></div>
         <div class="setrow"><label for="s-sample">แสดงบล็อกตัวอย่าง (DEMO)${own("showSample")}<small>ค่ากลาง: ${lbl[d.showSample]}</small></label><select id="s-sample" data-set="showSample" data-bool="1">${opt(true, s.showSample, "แสดง")}${opt(false, s.showSample, "ซ่อน")}</select></div>
@@ -1014,7 +1027,11 @@
       if (nx === APP.defaults.settings.fontSize) delete USER.settings.fontSize; else USER.settings.fontSize = nx;
       saveUser(); applyFont(); return side(parseHash()[0], parseHash().slice(1));
     }
-    if (act === "theme") { const order = ["auto", "light", "dark"]; const nx = order[(order.indexOf(S().theme || "auto") + 1) % 3]; if (nx === (APP.defaults.settings.theme || "auto")) delete USER.settings.theme; else USER.settings.theme = nx; saveUser(); applyTheme(); return side(parseHash()[0], parseHash().slice(1)); }
+    if (act === "pickTheme") {
+      const id = t.dataset.themeId; if (id === (APP.defaults.settings.theme || "auto")) delete USER.settings.theme; else USER.settings.theme = id;
+      saveUser(); applyTheme(); return route();
+    }
+    if (act === "theme") { const nx = themeIds[(Math.max(0, themeIds.indexOf(S().theme || "auto")) + 1) % themeIds.length]; if (nx === (APP.defaults.settings.theme || "auto")) delete USER.settings.theme; else USER.settings.theme = nx; saveUser(); applyTheme(); return side(parseHash()[0], parseHash().slice(1)); }
     if (act === "closehits") { $("#pdfhits").innerHTML = ""; return; }
     if (act === "rdsearch") { const x = t.closest(".rdbar"); x.classList.toggle("showsearch"); if (x.classList.contains("showsearch")) $("#pdfq").focus(); return; }
     if (act === "drawer") { const l = $("#lec"); if (l) l.classList.toggle("drawer"); return; }
