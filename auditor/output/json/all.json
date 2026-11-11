@@ -16762,19 +16762,19 @@
        "E": "Vasoactive intestinal peptide"
       },
       "correct": "C",
-      "explanation": "preganglionic sympathetic หลั่ง acetylcholine → nicotinic receptor บน chromaffin cell → หลั่ง catecholamine",
+      "explanation": "preganglionic sympathetic หลั่ง acetylcholine → nicotinic receptor บน chromaffin cell → หลั่ง catecholamine\n⚠️ โจทย์ถามได้สองแบบ: 'สัญญาณที่กระตุ้นการหลั่ง' = acetylcholine (C) · 'catecholamine ที่หลั่งออกมา' = norepinephrine (D) · ต้นฉบับวงทั้งสองตัว (ผู้เฉลยไม่แน่ใจ) จึงนับถูกทั้ง C และ D",
       "image": null,
       "issues": [
        "ผู้เฉลยวงทั้ง acetylcholine และ norepinephrine และเขียนว่าไม่แน่ใจว่าโจทย์ถามอะไร",
-       "ต้นฉบับวงไว้หลายตัว"
+       "แก้ตาม issue #59: ต้นฉบับวงทั้ง C (acetylcholine = สัญญาณกระตุ้น) และ D (norepinephrine = catecholamine ที่หลั่งออกมา) ผู้เฉลยเขียนว่าไม่แน่ใจว่าโจทย์ถามอะไร จึงนับถูกทั้งสองตัว"
       ],
       "audit": {
        "source_file": "preclinic/2/endocrine/mcq/ข้อสอบ mcq/MCQ_Endocrine [Med PSU 49].pdf",
        "page": 1,
        "key_file": "preclinic/2/endocrine/mcq/เฉลย mcq/เฉลย MCQ_Endocrine [Med PSU 49].pdf",
        "key_page": 1,
-       "answer_status": "source_disagree",
-       "answer_verified": false,
+       "answer_status": "corrected",
+       "answer_verified": true,
        "source_answer": [
         "C",
         "D"
@@ -16804,8 +16804,16 @@
        ],
        "duplicate_group": null,
        "off_block": false,
-       "needs_review": true,
-       "locked": false
+       "needs_review": false,
+       "locked": false,
+       "user_decision": {
+        "answer": "C",
+        "also_accept": [
+         "D"
+        ],
+        "note": "แก้ตาม issue #59: ต้นฉบับวงทั้ง C (acetylcholine = สัญญาณกระตุ้น) และ D (norepinephrine = catecholamine ที่หลั่งออกมา) ผู้เฉลยเขียนว่าไม่แน่ใจว่าโจทย์ถามอะไร จึงนับถูกทั้งสองตัว",
+        "date": "2026-11-11"
+       }
       }
      },
      {
@@ -18882,7 +18890,7 @@
       "id": "end_50_MCQ_009",
       "number": "9",
       "sourceNumber": "9",
-      "stem": "A young woman has puffy skin and weight gain. Her TSH concentration is low, and it increases markedly when TRH is given. What is the following pathology associated with this patient?",
+      "stem": "A young woman has puffy skin, weight gain, TSH concentration low, TRH markedly increase when she is given. What is the following pathology associated with this patient?",
       "choices": {
        "A": "Hyperthyroidism due to a thyroid tumor",
        "B": "Hyperthyroidism due to abnormality in the hypothalamus",
@@ -18891,25 +18899,25 @@
        "E": "Hypothyroidism due to abnormality in the Pituitary"
       },
       "correct": "E",
-      "explanation": "hypothyroid + TSH ต่ำ แต่ให้ TRH แล้ว TSH ขึ้นมาก = pituitary ปกติ ปัญหาที่ hypothalamus (AI เลือก C · เฉลยต้นฉบับ E)",
+      "explanation": "hypothyroid (puffy skin, weight gain) + TSH ต่ำ → ปัญหาอยู่ส่วนกลางของแกน ไม่ใช่ที่ต่อมไทรอยด์\n⚠️ โจทย์ที่จำมาอ่านได้สองแบบ: (1) ระดับ TRH สูงแต่ TSH ต่ำ = pituitary ไม่ตอบสนอง → E (เฉลยต้นฉบับ) · (2) ฉีด TRH แล้ว TSH ขึ้นมาก = pituitary ปกติ → ปัญหาที่ hypothalamus → C (AI และผู้แจ้ง #56) · นับถูกทั้ง E และ C",
       "image": null,
       "issues": [
-       "ถ้อยคำโจทย์กำกวม: 'TRH markedly increase when she is given'",
-       "เฉลยขัดกับ AI"
+       "ถ้อยคำโจทย์ที่จำมากำกวม: 'TRH markly increase when she is given' อ่านได้สองแบบ",
+       "issue #56: ถ้อยคำโจทย์ที่จำมาอ่านได้สองแบบ (ระดับ TRH สูง → E ตามเฉลยต้นฉบับ · TSH ตอบสนองต่อ TRH ที่ฉีด → C) จึงนับถูกทั้ง E และ C"
       ],
       "audit": {
        "source_file": "preclinic/2/endocrine/mcq/ข้อสอบ mcq/MCQ_Endocrine [Med PSU 50].pdf",
        "page": 3,
        "key_file": "preclinic/2/endocrine/mcq/เฉลย mcq/เฉลย MCQ_Endocrine [Med PSU 50].pdf",
        "key_page": 3,
-       "answer_status": "source_disagree",
-       "answer_verified": false,
+       "answer_status": "source_agree",
+       "answer_verified": true,
        "source_answer": "E",
        "source_answer_note": "TRH ↑ (hypothalamus) → TSH ↓ (pituitary) → T4,T3 ↓",
        "ai_answer": "C",
        "ai_confidence": "medium",
        "ai_reason": "hypothyroid (puffy skin, weight gain) + TSH ต่ำ แต่ตอบสนอง TRH ดี → ปัญหาที่ hypothalamus (tertiary)",
-       "audit_note": "เฉลยต้นฉบับเลือก E (pituitary) โดยตีความว่า TRH สูง TSH ต่ำ = pituitary เสีย; แต่ถ้าโจทย์หมายถึง TRH stimulation test แล้ว TSH ขึ้นมาก จะเป็น hypothalamus (C) — ขึ้นกับถ้อยคำจริง",
+       "audit_note": "ข้อความต้นฉบับ: 'TSH concentration low TRH markly increase when she is given' — ไม่บอกว่าสิ่งที่เพิ่มคือ TRH หรือ TSH ฉบับก่อนหน้านี้แก้โจทย์เป็น 'TSH increases markedly when TRH is given' ซึ่งเอนไปทาง C จึงคืนเป็นถ้อยคำเดิม · เฉลยต้นฉบับ E (ตีความว่า TRH ↑ TSH ↓ = pituitary) · ถ้ามีรูปข้อสอบจริงหรือเฉลยอาจารย์ ให้ตัดสินใหม่",
        "why": {
         "A": "อาการเป็น hypothyroid",
         "B": "อาการเป็น hypothyroid",
@@ -18924,14 +18932,22 @@
        "edits": [
         {
          "field": "stem",
-         "old": "A young women มี puffy skin, weight gain, TSH concentration low TRH markly increase when she is given.",
-         "new": "A young woman has puffy skin and weight gain. Her TSH concentration is low, and it increases markedly when TRH is given."
+         "old": "A young women มี puffy skin, weight gain, TSH concentration low TRH markly increase when she is given. What is the following pathology associated with this patient?",
+         "new": "A young woman has puffy skin, weight gain, TSH concentration low, TRH markedly increase when she is given. What is the following pathology associated with this patient?"
         }
        ],
        "duplicate_group": null,
        "off_block": false,
-       "needs_review": true,
-       "locked": false
+       "needs_review": false,
+       "locked": false,
+       "user_decision": {
+        "answer": "E",
+        "also_accept": [
+         "C"
+        ],
+        "note": "issue #56: ถ้อยคำโจทย์ที่จำมาอ่านได้สองแบบ (ระดับ TRH สูง → E ตามเฉลยต้นฉบับ · TSH ตอบสนองต่อ TRH ที่ฉีด → C) จึงนับถูกทั้ง E และ C",
+        "date": "2026-11-11"
+       }
       }
      },
      {
