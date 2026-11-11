@@ -222,13 +222,22 @@
       `<a class="nav ${!cur && (view === undefined || view === "" || view === "lec") ? "on" : ""}" href="${lecMode ? "#/lec" : "#/"}">ทั้งหมด</a>`,
       ...visibleBlocks().map((b) => `<a class="nav ${cur === b.id ? "on" : ""}" href="${lecMode ? `#/lec/${enc(b.id)}` : `#/b/${enc(b.id)}`}" style="--blk:${esc(b.color || "var(--artery)")}"><i class="dot"></i>${esc(b.name)}</a>`),
     ].join("");
-    const th = { auto: ["◐", "ธีม: ตามเครื่อง"], light: ["☀", "ธีม: สว่าง"], dark: ["☾", "ธีม: มืด"] }[S().theme || "auto"];
-    $("#tools").innerHTML = `<a class="ibtn ${view === "stats" ? "on" : ""}" href="#/stats" title="สถิติของฉัน" aria-label="สถิติ">📊</a>`
-      + `<a class="ibtn ${view === "add" ? "on" : ""}" href="#/add" title="เพิ่มข้อสอบ" aria-label="เพิ่มข้อสอบ">＋</a>`
+    const IC = (d) => `<svg class="ic" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">${d}</svg>`;
+    const ICONS = {
+      stats: IC('<path d="M4 20V10"/><path d="M10 20V4"/><path d="M16 20v-7"/><path d="M22 20H2"/>'),
+      add: IC('<path d="M12 5v14"/><path d="M5 12h14"/>'),
+      auto: IC('<circle cx="12" cy="12" r="8.5"/><path d="M12 3.5v17" /><path d="M12 3.5a8.5 8.5 0 0 1 0 17z" fill="currentColor" stroke="none"/>'),
+      light: IC('<circle cx="12" cy="12" r="4"/><path d="M12 2.5v2M12 19.5v2M2.5 12h2M19.5 12h2M5.3 5.3l1.4 1.4M17.3 17.3l1.4 1.4M5.3 18.7l1.4-1.4M17.3 6.7l1.4-1.4"/>'),
+      dark: IC('<path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/>'),
+      settings: IC('<circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/>'),
+    };
+    const th = { auto: [ICONS.auto, "ธีม: ตามเครื่อง"], light: [ICONS.light, "ธีม: สว่าง"], dark: [ICONS.dark, "ธีม: มืด"] }[S().theme || "auto"];
+    $("#tools").innerHTML = `<a class="ibtn ${view === "stats" ? "on" : ""}" href="#/stats" title="สถิติของฉัน" aria-label="สถิติ">${ICONS.stats}</a>`
+      + `<a class="ibtn ${view === "add" ? "on" : ""}" href="#/add" title="เพิ่มข้อสอบ" aria-label="เพิ่มข้อสอบ">${ICONS.add}</a>`
       + `<button class="ibtn fsbtn" data-act="fontdown" title="ลดขนาดตัวอักษรโจทย์ (ตอนนี้: ${FONT_TH[FONT_LV[fontLv()]]})" aria-label="ลดขนาดตัวอักษรโจทย์"${fontLv() === 0 ? " disabled" : ""}>A−</button>`
       + `<button class="ibtn fsbtn" data-act="fontup" title="ขยายขนาดตัวอักษรโจทย์ (ตอนนี้: ${FONT_TH[FONT_LV[fontLv()]]})" aria-label="ขยายขนาดตัวอักษรโจทย์"${fontLv() === FONT_LV.length - 1 ? " disabled" : ""}>A+</button>`
       + `<button class="ibtn" data-act="theme" title="${th[1]} (กดเพื่อสลับ)" aria-label="${th[1]}">${th[0]}</button>`
-      + `<a class="ibtn ${view === "settings" ? "on" : ""}" href="#/settings" title="ตั้งค่า / ส่งออกข้อมูล · v${esc(v.version)}" aria-label="ตั้งค่า">⚙</a>`;
+      + `<a class="ibtn ${view === "settings" ? "on" : ""}" href="#/settings" title="ตั้งค่า / ส่งออกข้อมูล · v${esc(v.version)}" aria-label="ตั้งค่า">${ICONS.settings}</a>`;
   }
 
   /* ---------- exam mode ---------- */
