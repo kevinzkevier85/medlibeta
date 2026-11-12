@@ -1,0 +1,1514 @@
+{
+ "meta": {
+  "set_id": "52_OSPE",
+  "block": "KUB",
+  "cohort": 52,
+  "type": "OSPE",
+  "title": "OSPE KUB and Repro · Med PSU 52",
+  "time_limit_min": 40,
+  "generated_by": "auditor/tools/build_kf.py from auditor/data/work/kub_52_OSPE.kf.json — do not edit by hand"
+ },
+ "questions": [
+  {
+   "id": "KUB-52-OSPE-001",
+   "block": "KUB",
+   "cohort": 52,
+   "n": 1,
+   "type": "OSPE",
+   "station": 1,
+   "stem": "สถานี 1 — ภาพ histology ของไต หมายเลข 1–9 (วงกลมสีดำและลูกศรสีน้ำเงิน)",
+   "items": [
+    {
+     "id": "1.1",
+     "prompt": "วงกลมสีดำคือส่วนใด (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "renal corpuscle",
+      "glomerulus"
+     ],
+     "keywords_all": [
+      "renal corpuscle"
+     ],
+     "key_text": "Renal corpuscle",
+     "source_key": "เฉลย: Renal corpuscle",
+     "image": "img/KUB-52-OSPE-001.jpg",
+     "image_caption": "histology ไต หมายเลข 1–9"
+    },
+    {
+     "id": "1.2",
+     "prompt": "หมายเลขใดบ้างที่เป็น proximal convoluted tubule (4 คำตอบ ตอบเป็นตัวเลข)",
+     "format": "short",
+     "accepted": [
+      "1,2,8,9",
+      "1 2 8 9"
+     ],
+     "keywords_all": [
+      "1",
+      "2",
+      "8",
+      "9"
+     ],
+     "key_text": "หมายเลข 1, 2, 8, 9",
+     "source_key": "เฉลย: 1,2,8,9"
+    },
+    {
+     "id": "1.3",
+     "prompt": "จากลูกศรสีน้ำเงิน หน้าที่หลักคืออะไร (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "detects NaCl concentration",
+      "macula densa",
+      "tubuloglomerular feedback"
+     ],
+     "keywords_all": [
+      "NaCl"
+     ],
+     "key_text": "Macula densa — ตรวจจับความเข้มข้น NaCl ใน DCT และควบคุม GFR ผ่าน tubuloglomerular feedback",
+     "source_key": "เฉลย: Detects NaCl concentration in the DCT and regulates GFR via tubuloglomerular feedback (Macula densa)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE52",
+     "pages": [
+      1
+     ]
+    },
+    {
+     "paper": "OSPE52-KEY",
+     "pages": [
+      1
+     ]
+    }
+   ],
+   "tags": [
+    "renal histology",
+    "macula densa"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "KUB-52-OSPE-002",
+   "block": "KUB",
+   "cohort": 52,
+   "n": 2,
+   "type": "OSPE",
+   "station": 2,
+   "stem": "สถานี 2 — ภาพ A: หน้าตัดอวัยวะ (ลูกศรชี้ชั้นกล้ามเนื้อ) และภาพ B: เยื่อบุ",
+   "items": [
+    {
+     "id": "2.1",
+     "prompt": "จากภาพ A อวัยวะคืออะไร (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "urinary bladder",
+      "bladder"
+     ],
+     "keywords_all": [
+      "bladder"
+     ],
+     "key_text": "Urinary bladder",
+     "source_key": "เฉลย: Urinary bladder",
+     "image": "img/KUB-52-OSPE-002.jpg",
+     "image_caption": "ภาพ A: หน้าตัดอวัยวะ"
+    },
+    {
+     "id": "2.2",
+     "prompt": "จากลูกศร หน้าที่หลักคืออะไร (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "detrusor muscle",
+      "contracts to push urine out"
+     ],
+     "keywords_all": [
+      "detrusor"
+     ],
+     "key_text": "Detrusor muscle หดตัวเพื่อขับปัสสาวะ และคลายตัวเพื่อเก็บปัสสาวะ",
+     "source_key": "เฉลย: The detrusor muscle contracts to push urine out and relaxes to store urine"
+    },
+    {
+     "id": "2.3",
+     "prompt": "เยื่อบุในภาพ B พบได้ที่ใดอย่างแน่ชัด (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "urethra",
+      "distal urethra"
+     ],
+     "keywords_all": [
+      "urethra"
+     ],
+     "key_text": "Urethra (เยื่อบุเปลี่ยนตามตำแหน่ง: proximal = transitional, middle = pseudostratified columnar, distal = stratified squamous)",
+     "source_key": "เฉลย: Urethra — มีการเปลี่ยนของ epithelium: Proximal urethra: transitional · Middle urethra: pseudostratified columnar · Distal urethra: stratified squamous",
+     "image": "img/KUB-52-OSPE-002b.jpg",
+     "image_caption": "ภาพ B: เยื่อบุ"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE52",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "OSPE52-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [
+    "bladder",
+    "urethra"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "KUB-52-OSPE-003",
+   "block": "KUB",
+   "cohort": 52,
+   "n": 3,
+   "type": "OSPE",
+   "station": 3,
+   "stem": "สถานี 3 — ภาพ histology ของอัณฑะ (ลูกศรสีส้ม สีน้ำเงิน และสีดำ)",
+   "items": [
+    {
+     "id": "3.1",
+     "prompt": "โครงสร้างที่ลูกศรสีส้มชี้คืออะไร (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "seminiferous tubule",
+      "seminiferous tubules"
+     ],
+     "keywords_all": [
+      "seminiferous"
+     ],
+     "key_text": "Seminiferous tubule",
+     "source_key": "เฉลย: Seminiferous tubule",
+     "image": "img/KUB-52-OSPE-003.jpg",
+     "image_caption": "ภาพ histology อัณฑะ"
+    },
+    {
+     "id": "3.2",
+     "prompt": "โครงสร้างที่ลูกศรสีน้ำเงินชี้คืออะไร (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "epididymis"
+     ],
+     "keywords_all": [
+      "epididymis"
+     ],
+     "key_text": "Epididymis",
+     "source_key": "เฉลย: Epididymis"
+    },
+    {
+     "id": "3.3",
+     "prompt": "หน้าที่หลักของโครงสร้างที่ลูกศรสีดำชี้คืออะไร (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "produce testosterone",
+      "testosterone"
+     ],
+     "keywords_all": [
+      "testosterone"
+     ],
+     "key_text": "สร้าง testosterone (Leydig cells)",
+     "source_key": "เฉลย: Produce testosterone (Leydig cells)",
+     "image": "img/KUB-52-OSPE-003b.jpg",
+     "image_caption": "ภาพกำลังขยายสูง (ลูกศรสีดำ)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE52",
+     "pages": [
+      3
+     ]
+    },
+    {
+     "paper": "OSPE52-KEY",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [
+    "testis histology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "KUB-52-OSPE-004",
+   "block": "KUB",
+   "cohort": 52,
+   "n": 4,
+   "type": "OSPE",
+   "station": 4,
+   "stem": "สถานี 4 — ภาพ A: หลอดสร้างอสุจิ (ลูกศรสีดำและสีน้ำเงิน) และภาพ B: อวัยวะ",
+   "items": [
+    {
+     "id": "4.1",
+     "prompt": "เซลล์ที่ลูกศรสีดำชี้คืออะไร (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "spermatogonium",
+      "spermatogonia"
+     ],
+     "keywords_all": [
+      "spermatogonium"
+     ],
+     "key_text": "Spermatogonium",
+     "source_key": "เฉลย: Spermatogonium",
+     "image": "img/KUB-52-OSPE-004.jpg",
+     "image_caption": "ภาพ A: seminiferous tubule"
+    },
+    {
+     "id": "4.2",
+     "prompt": "เซลล์ที่ลูกศรสีน้ำเงินชี้คืออะไร (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "Sertoli cell"
+     ],
+     "keywords_all": [
+      "Sertoli"
+     ],
+     "key_text": "Sertoli cell",
+     "source_key": "เฉลย: Sertoli cell"
+    },
+    {
+     "id": "4.3",
+     "prompt": "ภาพ B เป็นอวัยวะอะไร (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "seminal vesicle"
+     ],
+     "keywords_all": [
+      "seminal vesicle"
+     ],
+     "key_text": "Seminal vesicle",
+     "source_key": "เฉลย: Seminal vesicle",
+     "image": "img/KUB-52-OSPE-004b.jpg",
+     "image_caption": "ภาพ B: อวัยวะ"
+    },
+    {
+     "id": "4.4",
+     "prompt": "หน้าที่หลักของอวัยวะในภาพ B คืออะไร (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "fructose",
+      "alkaline fluid",
+      "prostaglandins"
+     ],
+     "keywords_all": [
+      "fructose"
+     ],
+     "key_text": "สร้างของเหลวที่อุดมด้วย fructose, prostaglandins และสารที่เป็นด่าง",
+     "source_key": "เฉลย: Produces a fluid rich in fructose, prostaglandins, and alkaline substances"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE52",
+     "pages": [
+      4
+     ]
+    },
+    {
+     "paper": "OSPE52-KEY",
+     "pages": [
+      4
+     ]
+    }
+   ],
+   "tags": [
+    "testis histology",
+    "seminal vesicle"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "KUB-52-OSPE-005",
+   "block": "KUB",
+   "cohort": 52,
+   "n": 5,
+   "type": "OSPE",
+   "station": 5,
+   "stem": "สถานี 5 — ภาพ histology ของรังไข่ (ลูกศรชี้เซลล์ใน corpus luteum)",
+   "items": [
+    {
+     "id": "5.1",
+     "prompt": "เซลล์ที่ลูกศรชี้คืออะไร (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "granulosa lutein cell",
+      "granulosa lutein cells"
+     ],
+     "keywords_all": [
+      "granulosa lutein"
+     ],
+     "key_text": "Granulosa lutein cell",
+     "source_key": "เฉลย: Granulosa lutein cell",
+     "image": "img/KUB-52-OSPE-005.jpg",
+     "image_caption": "ภาพ A: corpus luteum กำลังขยายต่ำ"
+    },
+    {
+     "id": "5.2",
+     "prompt": "เซลล์นี้ผลิตฮอร์โมนอะไร (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "progesterone",
+      "estrogen"
+     ],
+     "keywords_all": [
+      "progesterone"
+     ],
+     "key_text": "Progesterone (และ estrogen)",
+     "source_key": "เฉลย: Progesterone (เฉลยอื่นระบุ: Luteal phase / Secretory phase)",
+     "image": "img/KUB-52-OSPE-005b.jpg",
+     "image_caption": "ภาพอีกภาพ: เซลล์ใน corpus luteum"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE52",
+     "pages": [
+      5
+     ]
+    },
+    {
+     "paper": "OSPE52-KEY",
+     "pages": [
+      5
+     ]
+    }
+   ],
+   "tags": [
+    "corpus luteum"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "KUB-52-OSPE-006",
+   "block": "KUB",
+   "cohort": 52,
+   "n": 6,
+   "type": "OSPE",
+   "station": 6,
+   "stem": "สถานี 6 — ภาพ A: เยื่อบุผิวชนิด stratified squamous ที่มีแบคทีเรีย · ภาพ B: เยื่อบุโพรงมดลูก",
+   "items": [
+    {
+     "id": "6.1",
+     "prompt": "หน้าที่ของแบคทีเรียในอวัยวะที่แสดงในภาพ A คืออะไร (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "metabolize glycogen to produce lactic acid",
+      "lactic acid",
+      "Lactobacillus"
+     ],
+     "keywords_all": [
+      "lactic acid"
+     ],
+     "key_text": "เมแทบอไลซ์ glycogen ให้เกิด lactic acid ซึ่งช่วยป้องกันการเพิ่มจำนวนของเชื้อโรค (Lactobacillus ในช่องคลอด)",
+     "source_key": "เฉลย: Metabolize glycogen to produce lactic acid, which helps prevent bacteria proliferation",
+     "image": "img/KUB-52-OSPE-006.jpg",
+     "image_caption": "ภาพ A: เยื่อบุช่องคลอด"
+    },
+    {
+     "id": "6.2",
+     "prompt": "ภาพ B อยู่ใน phase ใด (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "secretory phase",
+      "luteal phase"
+     ],
+     "keywords_all": [
+      "secretory"
+     ],
+     "key_text": "Secretory phase (luteal phase)",
+     "source_key": "เฉลย: Secretory phase",
+     "image": "img/KUB-52-OSPE-006b.jpg",
+     "image_caption": "ภาพ B: เยื่อบุโพรงมดลูก"
+    },
+    {
+     "id": "6.3",
+     "prompt": "ฮอร์โมนใดรับผิดชอบต่อ phase ในภาพ B (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "progesterone"
+     ],
+     "keywords_all": [
+      "progesterone"
+     ],
+     "key_text": "Progesterone",
+     "source_key": "เฉลย: Progesterone"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE52",
+     "pages": [
+      6
+     ]
+    },
+    {
+     "paper": "OSPE52-KEY",
+     "pages": [
+      6
+     ]
+    }
+   ],
+   "tags": [
+    "vagina",
+    "endometrium"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "KUB-52-OSPE-007",
+   "block": "KUB",
+   "cohort": 52,
+   "n": 7,
+   "type": "OSPE",
+   "station": 7,
+   "stem": "สถานี 7 — ภาพกล้องจุลทรรศน์ตะกอนปัสสาวะ (ผลึกรูปซองจดหมาย/ octahedral)",
+   "items": [
+    {
+     "id": "7.1",
+     "prompt": "ผลึกนี้คืออะไร (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "calcium oxalate crystal",
+      "calcium oxalate"
+     ],
+     "keywords_all": [
+      "calcium oxalate"
+     ],
+     "key_text": "Calcium oxalate crystal",
+     "source_key": "เฉลย: Calcium oxalate crystal",
+     "image": "img/KUB-52-OSPE-007.jpg",
+     "image_caption": "ตะกอนปัสสาวะ ผลึก"
+    },
+    {
+     "id": "7.2",
+     "prompt": "โรคและภาวะที่ทำให้พบสารนี้ในปัสสาวะ (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "urolithiasis",
+      "hyperoxaluria",
+      "ethylene glycol poisoning"
+     ],
+     "keywords_all": [
+      "urolithiasis"
+     ],
+     "key_text": "โรค: urolithiasis · ภาวะ: hyperoxaluria, ethylene glycol poisoning",
+     "source_key": "เฉลย: Disease: Urolithiasis · Condition: Hyperoxaluria, ethylene glycol poisoning"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE52",
+     "pages": [
+      6
+     ]
+    },
+    {
+     "paper": "OSPE52-KEY",
+     "pages": [
+      6
+     ]
+    }
+   ],
+   "tags": [
+    "urinary crystals"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "KUB-52-OSPE-008",
+   "block": "KUB",
+   "cohort": 52,
+   "n": 8,
+   "type": "OSPE",
+   "station": 8,
+   "stem": "สถานี 8 — ภาพกล้องจุลทรรศน์ตะกอนปัสสาวะ",
+   "items": [
+    {
+     "id": "8.1",
+     "prompt": "พบเซลล์ชนิดใดในภาพ (2 คำตอบ ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "WBC",
+      "RBC",
+      "white blood cell",
+      "red blood cell",
+      "bacteria"
+     ],
+     "keywords_all": [
+      "WBC",
+      "RBC"
+     ],
+     "key_text": "WBC · RBC (ผู้เฉลยไม่มั่นใจว่ารับ bacteria ด้วยหรือไม่)",
+     "source_key": "เฉลย: WBC, RBC (ไม่มั่นใจว่าตอบ bacteria ได้มั้ย)",
+     "image": "img/KUB-52-OSPE-008.jpg",
+     "image_caption": "ตะกอนปัสสาวะ"
+    },
+    {
+     "id": "8.2",
+     "prompt": "ผล dipstick เป็นอย่างไร (2 คำตอบ ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "leukocyte esterase positive",
+      "blood positive",
+      "nitrite"
+     ],
+     "keywords_all": [
+      "leukocyte esterase",
+      "blood"
+     ],
+     "key_text": "Leukocyte esterase positive · blood positive (nitrite อาจ positive/negative)",
+     "source_key": "เฉลย: Leukocyte esterase positive; Blood positive; *Nitrite (positive or negative)",
+     "audit_note": "ผู้เฉลยหมายเหตุ: ข้อสอบจริงไม่ได้บอกว่าเป็น Gram positive หรือ negative จึงไม่รู้ว่าตอบ nitrite ได้หรือไม่"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE52",
+     "pages": [
+      7
+     ]
+    },
+    {
+     "paper": "OSPE52-KEY",
+     "pages": [
+      7
+     ]
+    }
+   ],
+   "tags": [
+    "urinary sediment"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "KUB-52-OSPE-009",
+   "block": "KUB",
+   "cohort": 52,
+   "n": 9,
+   "type": "OSPE",
+   "station": 9,
+   "stem": "สถานี 9 — หญิง 22 ปี ปัสสาวะแสบขัด ถี่ ปวดปัสสาวะ ไม่มีไข้. Urinalysis (midstream clean-catch): WBC 8–10/HPF, bacteria few, nitrite negative, leukocyte esterase positive. Urine culture: Enterococcus faecalis 20,000 CFU/mL เชื้อเดียว",
+   "items": [
+    {
+     "id": "9.1",
+     "prompt": "ผู้ป่วยรายนี้ติดเชื้อ UTI หรือไม่ ถ้าติดเป็นการติดเชื้อชนิดใด (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "Enterococcus faecalis",
+      "UTI",
+      "cystitis"
+     ],
+     "keywords_all": [
+      "Enterococcus"
+     ],
+     "key_text": "ติดเชื้อ — Enterococcus faecalis (มีอาการ + leukocyte esterase positive แม้ CFU < 10⁵ ในหญิงที่มีอาการถือเป็น UTI)",
+     "source_key": "เฉลย: ติดเชื้อ Enterococcus faecalis"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE52",
+     "pages": [
+      8
+     ]
+    },
+    {
+     "paper": "OSPE52-KEY",
+     "pages": [
+      8
+     ]
+    }
+   ],
+   "tags": [
+    "UTI",
+    "Enterococcus"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "KUB-52-OSPE-010",
+   "block": "KUB",
+   "cohort": 52,
+   "n": 10,
+   "type": "OSPE",
+   "station": 10,
+   "stem": "สถานี 10 — เด็กหญิง 9 ปี ปัสสาวะแสบขัด ถี่ ไม่ปวดเอว ไข้ต่ำ. Urinalysis (MSU): leukocyte esterase positive, nitrite positive, WBC 20/HPF (ผล UA อื่นๆ ค่อนข้างชัดเจน สนับสนุนว่าติดเชื้อ)",
+   "items": [
+    {
+     "id": "10.1",
+     "prompt": "ควรส่ง urine culture หรือไม่ เพราะเหตุใด",
+     "format": "short",
+     "accepted": [
+      "yes",
+      "identify organism",
+      "antibiotic susceptibility"
+     ],
+     "keywords_all": [
+      "culture"
+     ],
+     "key_text": "ควรส่ง culture เพื่อยืนยันการติดเชื้อ ระบุชนิดเชื้อ และเลือกยาที่เหมาะสม โดยเฉพาะในเด็กอายุน้อยกว่า 12 ปี · เพราะ MSU อาจขึ้นเชื้อไม่ถึง 10⁵ CFU/mL จึงดูอาการและผล urinalysis ประกอบ",
+     "source_key": "เฉลย: ควรส่ง culture เพื่อยืนยันการติดเชื้อ ระบุชนิดของเชื้อ และเลือกยาที่เหมาะสม โดยเฉพาะในเด็กที่มีอายุน้อยกว่า 12 ปี เนื่องจากตรวจ MSU เชื้อขึ้นไม่ถึง 10⁵ CFU/mL ให้ดู symptom และผล urinalysis เพิ่มเติมซึ่งสนับสนุนว่าติดเชื้อ"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE52",
+     "pages": [
+      8
+     ]
+    },
+    {
+     "paper": "OSPE52-KEY",
+     "pages": [
+      8
+     ]
+    }
+   ],
+   "tags": [
+    "UTI",
+    "urine culture"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "KUB-52-OSPE-011",
+   "block": "KUB",
+   "cohort": 52,
+   "n": 11,
+   "type": "OSPE",
+   "station": 11,
+   "stem": "สถานี 11 — ภาพ gross และ histology ของต่อมลูกหมาก",
+   "items": [
+    {
+     "id": "11.1",
+     "prompt": "จงอธิบาย gross (2 คำตอบ)",
+     "format": "short",
+     "accepted": [
+      "firm hard nodule in peripheral zone",
+      "ill-defined infiltrative borders"
+     ],
+     "keywords_all": [
+      "peripheral zone"
+     ],
+     "key_text": "(1) ก้อนแข็ง firm/hard ที่ peripheral zone (2) ขอบเขตไม่ชัด (ill-defined) ลุกลามเข้าเนื้อเยื่อรอบข้าง",
+     "source_key": "เฉลย: 1.firm, hard nodule in the peripheral zone 2.ill-defined with infiltrative borders, invading surrounding tissue",
+     "image": "img/KUB-52-OSPE-011.jpg",
+     "image_caption": "ภาพ gross ต่อมลูกหมาก"
+    },
+    {
+     "id": "11.2",
+     "prompt": "จงอธิบาย histology (3 คำตอบ)",
+     "format": "short",
+     "accepted": [
+      "loss of basal cell layer",
+      "high N/C ratio",
+      "prominent nucleoli"
+     ],
+     "keywords_all": [
+      "basal cell"
+     ],
+     "key_text": "(1) ไม่มี basal cell layer (ชั้นเดียว) (2) N/C ratio สูง (3) prominent nucleoli",
+     "source_key": "เฉลย: 1.Loss of basal cell layer (unilayered) 2.High N/C ratios 3.Prominent nucleoli",
+     "image": "img/KUB-52-OSPE-011b.jpg",
+     "image_caption": "histology ต่อมลูกหมาก"
+    },
+    {
+     "id": "11.3",
+     "prompt": "การวินิจฉัยคืออะไร (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "prostatic adenocarcinoma",
+      "prostate adenocarcinoma"
+     ],
+     "keywords_all": [
+      "adenocarcinoma"
+     ],
+     "key_text": "Prostatic adenocarcinoma",
+     "source_key": "เฉลย: Prostatic adenocarcinoma"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE52",
+     "pages": [
+      9
+     ]
+    },
+    {
+     "paper": "OSPE52-KEY",
+     "pages": [
+      9
+     ]
+    }
+   ],
+   "tags": [
+    "prostate cancer"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "KUB-52-OSPE-012",
+   "block": "KUB",
+   "cohort": 52,
+   "n": 12,
+   "type": "OSPE",
+   "station": 12,
+   "stem": "สถานี 12 — ภาพ histology ของอัณฑะ/ท่อพักอสุจิ (ซ้าย: granuloma, ขวา: ย้อมพิเศษ)",
+   "items": [
+    {
+     "id": "12.1",
+     "prompt": "การวินิจฉัยคืออะไร (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "testicular tuberculosis",
+      "tuberculous epididymo-orchitis"
+     ],
+     "keywords_all": [
+      "tuberculosis"
+     ],
+     "key_text": "Testicular tuberculosis / tuberculous epididymo-orchitis",
+     "source_key": "เฉลย: Testicular tuberculosis/ tuberculous epididymo-orchitis",
+     "image": "img/KUB-52-OSPE-012.jpg",
+     "image_caption": "histology granuloma"
+    },
+    {
+     "id": "12.2",
+     "prompt": "จงอธิบายลักษณะของเชื้อจาก histology (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "rod-shaped acid-fast bacilli",
+      "acid-fast bacilli",
+      "AFB"
+     ],
+     "keywords_all": [
+      "acid-fast"
+     ],
+     "key_text": "Rod-shaped acid-fast bacilli",
+     "source_key": "เฉลย: rod-shaped acid-fast bacilli",
+     "image": "img/KUB-52-OSPE-012b.jpg",
+     "image_caption": "การย้อม acid-fast"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE52",
+     "pages": [
+      9
+     ]
+    },
+    {
+     "paper": "OSPE52-KEY",
+     "pages": [
+      9
+     ]
+    }
+   ],
+   "tags": [
+    "TB",
+    "epididymo-orchitis"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "KUB-52-OSPE-013",
+   "block": "KUB",
+   "cohort": 52,
+   "n": 13,
+   "type": "OSPE",
+   "station": 13,
+   "stem": "สถานี 13 — ภาพ gross ของไต (ก้อนสีเหลืองทอง)",
+   "items": [
+    {
+     "id": "13.1",
+     "prompt": "การวินิจฉัยคืออะไร (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "clear cell renal cell carcinoma",
+      "renal cell carcinoma",
+      "RCC"
+     ],
+     "keywords_all": [
+      "renal cell"
+     ],
+     "key_text": "Clear cell renal cell carcinoma (เฉลยหมายเหตุ: น่าจะตอบได้หลายชื่อ)",
+     "source_key": "เฉลย: Clear cell renal cell carcinoma (น่าจะเขียนได้หลายชื่อนะ)",
+     "image": "img/KUB-52-OSPE-013.jpg",
+     "image_caption": "ภาพ gross ไตที่มีก้อน"
+    },
+    {
+     "id": "13.2",
+     "prompt": "จงอธิบาย gross (2 คำตอบ)",
+     "format": "short",
+     "accepted": [
+      "well-defined golden yellow mass",
+      "hemorrhage",
+      "necrosis"
+     ],
+     "keywords_all": [
+      "golden yellow"
+     ],
+     "key_text": "(1) ก้อน well-defined สีเหลืองทองในเนื้อไตส่วน cortex (2) มี hemorrhage และ necrosis ภายในก้อน",
+     "source_key": "เฉลย: 1.well-defined, golden yellow mass in renal cortex 2.hemorrhage and necrosis within the tumor"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE52",
+     "pages": [
+      10
+     ]
+    },
+    {
+     "paper": "OSPE52-KEY",
+     "pages": [
+      10
+     ]
+    }
+   ],
+   "tags": [
+    "renal cell carcinoma"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "KUB-52-OSPE-014",
+   "block": "KUB",
+   "cohort": 52,
+   "n": 14,
+   "type": "OSPE",
+   "station": 14,
+   "stem": "สถานี 14 — ภาพ histology (วงกลมสีน้ำเงินและวงกลมสีเหลือง)",
+   "items": [
+    {
+     "id": "14.1",
+     "prompt": "วงกลมสีน้ำเงินและสีเหลืองแทนองค์ประกอบใด (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "blue epithelium yellow blastema"
+     ],
+     "keywords_all": [
+      "blastema",
+      "epithelium"
+     ],
+     "key_text": "วงกลมสีน้ำเงิน = epithelium · วงกลมสีเหลือง = blastema",
+     "source_key": "เฉลย: blue: epithelium; yellow: blastema",
+     "image": "img/KUB-52-OSPE-014.jpg",
+     "image_caption": "histology (วงกลมน้ำเงิน/เหลือง)"
+    },
+    {
+     "id": "14.2",
+     "prompt": "การวินิจฉัยคืออะไร (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "nephroblastoma",
+      "Wilms tumor"
+     ],
+     "keywords_all": [
+      "nephroblastoma"
+     ],
+     "key_text": "Nephroblastoma (Wilms tumor)",
+     "source_key": "เฉลย: Nephroblastoma"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE52",
+     "pages": [
+      11
+     ]
+    },
+    {
+     "paper": "OSPE52-KEY",
+     "pages": [
+      11
+     ]
+    }
+   ],
+   "tags": [
+    "Wilms tumor"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "KUB-52-OSPE-015",
+   "block": "KUB",
+   "cohort": 52,
+   "n": 15,
+   "type": "OSPE",
+   "station": 15,
+   "stem": "สถานี 15 — ภาพ gross ของมดลูกผ่าครึ่งมีก้อนกลมสีขาวหลายก้อน",
+   "items": [
+    {
+     "id": "15.1",
+     "prompt": "จงอธิบาย gross (2 คำตอบ)",
+     "format": "short",
+     "accepted": [
+      "whorled pattern",
+      "well-circumscribed",
+      "firm gray-white mass"
+     ],
+     "keywords_all": [
+      "whorled"
+     ],
+     "key_text": "(1) หน้าตัดมีลายวน (whorled pattern) (2) ก้อน well-circumscribed แข็ง สีเทา-ขาว หลายก้อนขนาดต่างกัน",
+     "source_key": "เฉลย: 1.The cut surface shows a whorled pattern 2.A well-circumscribed, firm, gray-white mass with multiple lesions of varying sizes",
+     "image": "img/KUB-52-OSPE-015.jpg",
+     "image_caption": "มดลูกผ่าครึ่ง มีก้อนหลายก้อน"
+    },
+    {
+     "id": "15.2",
+     "prompt": "การวินิจฉัยคืออะไร (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "leiomyoma",
+      "uterine fibroid"
+     ],
+     "keywords_all": [
+      "leiomyoma"
+     ],
+     "key_text": "Leiomyoma",
+     "source_key": "เฉลย: Leiomyoma"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE52",
+     "pages": [
+      12
+     ]
+    },
+    {
+     "paper": "OSPE52-KEY",
+     "pages": [
+      12
+     ]
+    }
+   ],
+   "tags": [
+    "leiomyoma"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "KUB-52-OSPE-016",
+   "block": "KUB",
+   "cohort": 52,
+   "n": 16,
+   "type": "OSPE",
+   "station": 16,
+   "stem": "สถานี 16 — ภาพ histology (villi บวมน้ำ)",
+   "items": [
+    {
+     "id": "16.1",
+     "prompt": "จงอธิบาย histology (2 คำตอบ)",
+     "format": "short",
+     "accepted": [
+      "hydropic swelling of chorionic villi",
+      "proliferation of trophoblastic cell"
+     ],
+     "keywords_all": [
+      "hydropic"
+     ],
+     "key_text": "(1) chorionic villi บวมน้ำ (hydropic swelling) (2) trophoblast เพิ่มจำนวน (proliferation)",
+     "source_key": "เฉลย: 1.hydropic swelling of chorionic villi 2.proliferation of trophoblastic cell",
+     "image": "img/KUB-52-OSPE-016.jpg",
+     "image_caption": "histology villi บวมน้ำ"
+    },
+    {
+     "id": "16.2",
+     "prompt": "การวินิจฉัยคืออะไร (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "hydatidiform mole",
+      "molar pregnancy"
+     ],
+     "keywords_all": [
+      "mole"
+     ],
+     "key_text": "Hydatidiform mole",
+     "source_key": "เฉลย: Hydatidiform mole"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE52",
+     "pages": [
+      12
+     ]
+    },
+    {
+     "paper": "OSPE52-KEY",
+     "pages": [
+      12
+     ]
+    }
+   ],
+   "tags": [
+    "hydatidiform mole"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "KUB-52-OSPE-017",
+   "block": "KUB",
+   "cohort": 52,
+   "n": 17,
+   "type": "OSPE",
+   "station": 17,
+   "stem": "สถานี 17 — ภาพ sagittal ของอุ้งเชิงกรานชาย ระบุหมายเลข 23, 10, 14",
+   "items": [
+    {
+     "id": "17.1",
+     "prompt": "อวัยวะหมายเลข 23 คืออะไร (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "prostate gland",
+      "prostate"
+     ],
+     "keywords_all": [
+      "prostate"
+     ],
+     "key_text": "Prostate gland",
+     "source_key": "เฉลย: Prostate gland",
+     "image": "img/KUB-52-OSPE-017.jpg",
+     "image_caption": "ภาพตัด sagittal อุ้งเชิงกรานชาย"
+    },
+    {
+     "id": "17.2",
+     "prompt": "โครงสร้างช่องทางหมายเลข 10 คืออะไร (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "prostatic urethra"
+     ],
+     "keywords_all": [
+      "prostatic urethra"
+     ],
+     "key_text": "Prostatic urethra",
+     "source_key": "เฉลย: Prostatic urethra"
+    },
+    {
+     "id": "17.3",
+     "prompt": "โครงสร้างหมายเลข 14 คืออะไร (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "corpus spongiosum",
+      "spongy part of penis",
+      "bulb of penis"
+     ],
+     "keywords_all": [
+      "corpus spongiosum",
+      "bulb"
+     ],
+     "key_text": "Corpus spongiosum (รับ spongy part of penis / bulb of penis ด้วย)",
+     "source_key": "เฉลย: corpus spongiosum / spongy part of penis / bulb of penis (ภาพที่เอามาจะเฉลย corpus spongiosum แต่ภาพอื่นๆ มีเฉลย spongy part of penis / bulb of penis ด้วย)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE52",
+     "pages": [
+      13
+     ]
+    },
+    {
+     "paper": "OSPE52-KEY",
+     "pages": [
+      13
+     ]
+    }
+   ],
+   "tags": [
+    "male pelvis"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "KUB-52-OSPE-018",
+   "block": "KUB",
+   "cohort": 52,
+   "n": 18,
+   "type": "OSPE",
+   "station": 18,
+   "stem": "สถานี 18 — ภาพ dissection อุ้งเชิงกราน (หมายเลข 13) และภาพกระดูกเชิงกรานพร้อมเส้นประสาท/หลอดเลือด A",
+   "items": [
+    {
+     "id": "18.1",
+     "prompt": "โครงสร้างหมายเลข 13 คืออะไร (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "superior hypogastric plexus"
+     ],
+     "keywords_all": [
+      "superior hypogastric"
+     ],
+     "key_text": "Superior hypogastric plexus",
+     "source_key": "เฉลย: Superior hypogastric plexus",
+     "image": "img/KUB-52-OSPE-018.jpg",
+     "image_caption": "dissection อุ้งเชิงกราน"
+    },
+    {
+     "id": "18.2",
+     "prompt": "เส้นใยประสาทชนิดใดในข้อ 18.1 (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "sympathetic"
+     ],
+     "keywords_all": [
+      "sympathetic"
+     ],
+     "key_text": "Sympathetic",
+     "source_key": "เฉลย: Sympathetic"
+    },
+    {
+     "id": "18.3",
+     "prompt": "หลอดเลือด A คืออะไร (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "internal iliac artery"
+     ],
+     "keywords_all": [
+      "internal iliac"
+     ],
+     "key_text": "Internal iliac artery",
+     "source_key": "เฉลย: Internal iliac artery",
+     "image": "img/KUB-52-OSPE-018b.jpg",
+     "image_caption": "ภาพกระดูกเชิงกรานพร้อมหลอดเลือด A"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE52",
+     "pages": [
+      14
+     ]
+    },
+    {
+     "paper": "OSPE52-KEY",
+     "pages": [
+      14
+     ]
+    }
+   ],
+   "tags": [
+    "pelvic nerves"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "KUB-52-OSPE-019",
+   "block": "KUB",
+   "cohort": 52,
+   "n": 19,
+   "type": "OSPE",
+   "station": 19,
+   "stem": "สถานี 19 — ภาพ dissection อวัยวะเพศชายและฝีเย็บ (หมายเลข 1, 3, 6)",
+   "items": [
+    {
+     "id": "19.1",
+     "prompt": "โครงสร้างหมายเลข 1 คืออะไร (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "glans penis"
+     ],
+     "keywords_all": [
+      "glans"
+     ],
+     "key_text": "Glans penis",
+     "source_key": "เฉลย: Glans penis",
+     "image": "img/KUB-52-OSPE-019.jpg",
+     "image_caption": "dissection อวัยวะเพศชาย"
+    },
+    {
+     "id": "19.2",
+     "prompt": "โครงสร้างหมายเลข 3 คืออะไร (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "corpus cavernosum"
+     ],
+     "keywords_all": [
+      "corpus cavernosum"
+     ],
+     "key_text": "Corpus cavernosum",
+     "source_key": "เฉลย: Corpus cavernosum"
+    },
+    {
+     "id": "19.3",
+     "prompt": "โครงสร้างหมายเลข 6 คืออะไร (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "ischiocavernosus",
+      "ischiocavernosus muscle"
+     ],
+     "keywords_all": [
+      "ischiocavernosus"
+     ],
+     "key_text": "Ischiocavernosus muscle",
+     "source_key": "เฉลย: Ischiocavernosus muscle"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE52",
+     "pages": [
+      15
+     ]
+    },
+    {
+     "paper": "OSPE52-KEY",
+     "pages": [
+      15
+     ]
+    }
+   ],
+   "tags": [
+    "perineum"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "KUB-52-OSPE-020",
+   "block": "KUB",
+   "cohort": 52,
+   "n": 20,
+   "type": "OSPE",
+   "station": 20,
+   "stem": "สถานี 20 — ภาพ MRI sagittal อุ้งเชิงกราน (ลูกศรสีน้ำเงิน สีเขียว และเส้นสีส้ม)",
+   "items": [
+    {
+     "id": "20.1",
+     "prompt": "ลูกศรสีน้ำเงินชี้อะไร (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "sacral promontory"
+     ],
+     "keywords_all": [
+      "sacral promontory"
+     ],
+     "key_text": "Sacral promontory",
+     "source_key": "เฉลย: Sacral promontory",
+     "image": "img/KUB-52-OSPE-020.jpg",
+     "image_caption": "MRI sagittal อุ้งเชิงกราน"
+    },
+    {
+     "id": "20.2",
+     "prompt": "ลูกศรสีเขียวชี้อะไร (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "pubic symphysis"
+     ],
+     "keywords_all": [
+      "pubic symphysis"
+     ],
+     "key_text": "Pubic symphysis",
+     "source_key": "เฉลย: Pubic symphysis"
+    },
+    {
+     "id": "20.3",
+     "prompt": "เส้นสีส้มแสดงอะไร (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "pelvic outlet"
+     ],
+     "keywords_all": [
+      "pelvic outlet"
+     ],
+     "key_text": "Pelvic outlet",
+     "source_key": "เฉลย: Pelvic outlet"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE52",
+     "pages": [
+      16
+     ]
+    },
+    {
+     "paper": "OSPE52-KEY",
+     "pages": [
+      16
+     ]
+    }
+   ],
+   "tags": [
+    "pelvis"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "KUB-52-OSPE-021",
+   "block": "KUB",
+   "cohort": 52,
+   "n": 21,
+   "type": "OSPE",
+   "station": 21,
+   "stem": "สถานี 21 — ภาพตัด sagittal อุ้งเชิงกรานหญิง ระบุหมายเลข 8, 10, 29",
+   "items": [
+    {
+     "id": "21.1",
+     "prompt": "โครงสร้างหมายเลข 8 คืออะไร (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "uterus"
+     ],
+     "keywords_all": [
+      "uterus"
+     ],
+     "key_text": "Uterus",
+     "source_key": "เฉลย: Uterus",
+     "image": "img/KUB-52-OSPE-021.jpg",
+     "image_caption": "ภาพตัด sagittal อุ้งเชิงกรานหญิง"
+    },
+    {
+     "id": "21.2",
+     "prompt": "โครงสร้างหมายเลข 10 คืออะไร (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "urinary bladder",
+      "bladder"
+     ],
+     "keywords_all": [
+      "bladder"
+     ],
+     "key_text": "Urinary bladder",
+     "source_key": "เฉลย: Urinary bladder"
+    },
+    {
+     "id": "21.3",
+     "prompt": "โครงสร้างหมายเลข 29 คืออะไร (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "vagina"
+     ],
+     "keywords_all": [
+      "vagina"
+     ],
+     "key_text": "Vagina",
+     "source_key": "เฉลย: Vagina"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE52",
+     "pages": [
+      17
+     ]
+    },
+    {
+     "paper": "OSPE52-KEY",
+     "pages": [
+      17
+     ]
+    }
+   ],
+   "tags": [
+    "female pelvis"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "KUB-52-OSPE-022",
+   "block": "KUB",
+   "cohort": 52,
+   "n": 22,
+   "type": "OSPE",
+   "station": 22,
+   "stem": "สถานี 22 — ภาพอวัยวะเพศภายนอกหญิง ระบุหมายเลข 1, 8, 9",
+   "items": [
+    {
+     "id": "22.1",
+     "prompt": "โครงสร้างหมายเลข 1 คืออะไร (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "glans of clitoris",
+      "glans clitoris"
+     ],
+     "keywords_all": [
+      "glans"
+     ],
+     "key_text": "Glans of clitoris",
+     "source_key": "เฉลย: Glans of clitoris",
+     "image": "img/KUB-52-OSPE-022.jpg",
+     "image_caption": "อวัยวะเพศภายนอกหญิง"
+    },
+    {
+     "id": "22.2",
+     "prompt": "โครงสร้างหมายเลข 8 คืออะไร (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "external urethral opening",
+      "external urethral orifice"
+     ],
+     "keywords_all": [
+      "urethral"
+     ],
+     "key_text": "External urethral opening (orifice)",
+     "source_key": "เฉลย: External urethral opening / External urethral orifice"
+    },
+    {
+     "id": "22.3",
+     "prompt": "โครงสร้างหมายเลข 9 คืออะไร (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "vaginal opening",
+      "vaginal orifice"
+     ],
+     "keywords_all": [
+      "vaginal"
+     ],
+     "key_text": "Vaginal opening (orifice)",
+     "source_key": "เฉลย: Vaginal opening / Vaginal orifice"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE52",
+     "pages": [
+      18
+     ]
+    },
+    {
+     "paper": "OSPE52-KEY",
+     "pages": [
+      18
+     ]
+    }
+   ],
+   "tags": [
+    "female genitalia"
+   ],
+   "source": "claude-mcp"
+  }
+ ]
+}
