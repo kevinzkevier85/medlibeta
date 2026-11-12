@@ -28,7 +28,8 @@ def is_pink(r, g, b):
     blue = b >= 245 and 170 <= r <= 210 and 200 <= g <= 232                      # light-blue pill highlight (KUB 44)
     green = g >= 225 and r <= 190 and b <= 190 and g - r >= 45 and g - b >= 45  # mint-green pill highlight (Respiratory 52)
     teal = 150 <= r <= 190 and 200 <= g <= 230 and 180 <= b <= 215 and g - r >= 30 and 8 <= g - b <= 30  # pale teal pill highlight (Respiratory 49)
-    return pink or lime or salmon or yellow or orange or blue or green or teal
+    gray = 210 <= r <= 222 and max(r, g, b) - min(r, g, b) <= 2   # neutral grey highlight band (Respiratory 47)
+    return pink or lime or salmon or yellow or orange or blue or green or teal or gray
 
 
 def pink_fraction(pix, rect):
