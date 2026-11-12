@@ -1,6 +1,6 @@
 # REVIEW — รายการรอผู้ใช้ตัดสิน
 
-ทั้งหมด 614 รายการ
+ทั้งหมด 625 รายการ
 วิธีตอบ: พิมพ์ในแชทเป็นบรรทัด เช่น `end_52_MCQ_027: คงเดิม` / `end_52_MCQ_063: C` / `end_52_MCQ_046: ตรวจใหม่`
 Claude จะบันทึกลง `auditor/data/decisions.json` แล้ว build ใหม่
 
@@ -612,6 +612,17 @@ Claude จะบันทึกลง `auditor/data/decisions.json` แล้ว
 | kub_52_MCQ_045 | B | A | mid | เฉลยขัดกับ AI |   |
 | kub_52_MCQ_060 | B | A | mid | เฉลยขัดกับ AI | AI ตอบ Leydig cell; ต้นฉบับ Sertoli cell (tumor หลั่ง estrogen)  |
 | kub_52_MCQ_096 | D | C | mid | เฉลยขัดกับ AI |   |
+| resp_51_MCQ_002 | B | E | hi | เฉลยขัดกับ AI | เฉลยต้นฉบับ costomediastinal recess แต่เลือดในท่ายืนสะสมที่ costodiaphragmatic recess  |
+| resp_51_MCQ_012 | A | A | low | AI เขียนข้อนี้ขึ้นใหม่จากโน้ตความจำในต้นฉบับ |   |
+| resp_51_MCQ_013 | A | E | hi | เฉลยขัดกับ AI | เฉลยต้นฉบับ scalene (กล้ามเนื้อหายใจเข้า) แต่การหายใจออกในคนไข้ emphysema ใช้กล้ามเนื้อหน้าท้อง  |
+| resp_51_MCQ_023 | A | C | mid | ช้อยส์ E AI เติมให้ครบ 5 ตัว; เฉลยขัดกับ AI |   |
+| resp_51_MCQ_030 | E | A | low | เฉลยขัดกับ AI |   |
+| resp_51_MCQ_064 | D | E | mid | เฉลยขัดกับ AI |   |
+| resp_51_MCQ_081 | A | B | hi | เฉลยขัดกับ AI | ต้นฉบับไฮไลต์ A (acute respiratory acidosis with hypoxia) แต่ HCO₃⁻ 30 สูง = compensated chronic respiratory acidosis (ผู้ตรวจเขียนค้านไว้ในไฟล์เฉลย)  |
+| resp_51_MCQ_082 | None | None | None | AI เขียนข้อนี้ขึ้นใหม่จากโน้ตความจำในต้นฉบับ |   |
+| resp_51_MCQ_084 | A | None | None | AI เขียนข้อนี้ขึ้นใหม่จากโน้ตความจำในต้นฉบับ |   |
+| resp_51_MCQ_097 | A | None | None | AI เขียนข้อนี้ขึ้นใหม่จากโน้ตความจำในต้นฉบับ |   |
+| resp_51_MCQ_098 | A | None | None | AI เขียนข้อนี้ขึ้นใหม่จากโน้ตความจำในต้นฉบับ |   |
 | resp_52_MCQ_009 | B | C | hi | เฉลยขัดกับ AI |   |
 | resp_52_MCQ_010 | E | B | low | เฉลยขัดกับ AI |   |
 | resp_52_MCQ_022 | D | A | low | เฉลยขัดกับ AI |   |

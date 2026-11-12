@@ -63,6 +63,17 @@ def lines_of(page):
     return black, blue
 
 
+def circles_of(page):
+    """Hand-drawn rings around the answer letter (vector, Respiratory 51): near-square rects stroked in a saturated colour."""
+    out = []
+    for d in page.get_drawings():
+        c = d.get("color") or d.get("fill")
+        r = d["rect"]
+        if c and 12 <= r.width <= 30 and 12 <= r.height <= 30 and abs(r.width - r.height) < 7 and max(c) - min(c) > 0.5:
+            out.append(r)
+    return out
+
+
 def parse(set_id, bare_numbers=False):
     doc = pymupdf.open(AUD / "source" / f"{set_id}__key.pdf")
     fix_zero_bbox(doc)
@@ -70,6 +81,7 @@ def parse(set_id, bare_numbers=False):
     for pno, page in enumerate(doc, 1):
         pix = page.get_pixmap(matrix=pymupdf.Matrix(ZOOM, ZOOM), alpha=False)
         black, blue = lines_of(page)
+        rings = circles_of(page)
         starts = []  # (y, qnum) of question starts on this page
         for rect, txt in black:
             if HEADER.match(txt):
@@ -88,6 +100,8 @@ def parse(set_id, bare_numbers=False):
                 letter = mo.group(1)
                 box = pymupdf.Rect(rect.x0 - 6, rect.y0, rect.x1 + 6, rect.y1)
                 f = pink_fraction(pix, box)
+                if any(abs((r.y0 + r.y1) / 2 - (rect.y0 + rect.y1) / 2) < 8 and rect.x0 - 10 <= (r.x0 + r.x1) / 2 <= rect.x0 + 16 for r in rings):
+                    f = max(f, 1.0)
                 out[cur]["score"][letter] = max(out[cur]["score"].get(letter, 0), round(f, 3))
         # notes: attach to the question whose start is the last one above the note (or the carried-over one)
         carried = None
