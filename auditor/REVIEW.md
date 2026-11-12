@@ -1,6 +1,6 @@
 # REVIEW — รายการรอผู้ใช้ตัดสิน
 
-ทั้งหมด 732 รายการ
+ทั้งหมด 743 รายการ
 วิธีตอบ: พิมพ์ในแชทเป็นบรรทัด เช่น `end_52_MCQ_027: คงเดิม` / `end_52_MCQ_063: C` / `end_52_MCQ_046: ตรวจใหม่`
 Claude จะบันทึกลง `auditor/data/decisions.json` แล้ว build ใหม่
 
@@ -612,6 +612,17 @@ Claude จะบันทึกลง `auditor/data/decisions.json` แล้ว
 | kub_52_MCQ_045 | B | A | mid | เฉลยขัดกับ AI |   |
 | kub_52_MCQ_060 | B | A | mid | เฉลยขัดกับ AI | AI ตอบ Leydig cell; ต้นฉบับ Sertoli cell (tumor หลั่ง estrogen)  |
 | kub_52_MCQ_096 | D | C | mid | เฉลยขัดกับ AI |   |
+| resp_42-43_MCQ_003 | None | A | low | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| resp_42-43_MCQ_007 | None | E | low | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| resp_42-43_MCQ_015 | D | C | low | เฉลยขัดกับ AI |   |
+| resp_42-43_MCQ_029 | None | B | low | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| resp_42-43_MCQ_030 | None | D | low | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| resp_42-43_MCQ_034 | None | B | low | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| resp_42-43_MCQ_039 | ['A', 'B', 'C'] | B | mid | ต้นฉบับวงไว้หลายตัว |   |
+| resp_42-43_MCQ_048 | ['C', 'D'] | D | mid | ต้นฉบับวงไว้หลายตัว |   |
+| resp_42-43_MCQ_070 | None | C | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| resp_42-43_MCQ_071 | None | B | low | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| resp_42-43_MCQ_072 | ['A', 'C'] | A | mid | ต้นฉบับวงไว้หลายตัว |   |
 | resp_44_MCQ_001 | D | B | mid | เฉลยขัดกับ AI |   |
 | resp_44_MCQ_009 | C | E | low | เฉลยขัดกับ AI |   |
 | resp_44_MCQ_017 | None | E | low | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
