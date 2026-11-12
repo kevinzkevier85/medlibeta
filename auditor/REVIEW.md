@@ -1,6 +1,6 @@
 # REVIEW — รายการรอผู้ใช้ตัดสิน
 
-ทั้งหมด 625 รายการ
+ทั้งหมด 639 รายการ
 วิธีตอบ: พิมพ์ในแชทเป็นบรรทัด เช่น `end_52_MCQ_027: คงเดิม` / `end_52_MCQ_063: C` / `end_52_MCQ_046: ตรวจใหม่`
 Claude จะบันทึกลง `auditor/data/decisions.json` แล้ว build ใหม่
 
@@ -612,6 +612,20 @@ Claude จะบันทึกลง `auditor/data/decisions.json` แล้ว
 | kub_52_MCQ_045 | B | A | mid | เฉลยขัดกับ AI |   |
 | kub_52_MCQ_060 | B | A | mid | เฉลยขัดกับ AI | AI ตอบ Leydig cell; ต้นฉบับ Sertoli cell (tumor หลั่ง estrogen)  |
 | kub_52_MCQ_096 | D | C | mid | เฉลยขัดกับ AI |   |
+| resp_50_MCQ_003 | A | B | mid | เฉลยขัดกับ AI |   |
+| resp_50_MCQ_014 | C | E | mid | เฉลยขัดกับ AI |   |
+| resp_50_MCQ_020 | D | B | low | เฉลยขัดกับ AI |   |
+| resp_50_MCQ_022 | A | C | low | เฉลยขัดกับ AI |   |
+| resp_50_MCQ_025 | ['B', 'D'] | B | mid | ต้นฉบับวงไว้หลายตัว |   |
+| resp_50_MCQ_027 | ['B', 'E'] | E | mid | ต้นฉบับวงไว้หลายตัว |   |
+| resp_50_MCQ_028 | B | A | mid | เฉลยขัดกับ AI |   |
+| resp_50_MCQ_041 | E | C | mid | เฉลยขัดกับ AI |   |
+| resp_50_MCQ_043 | ['D', 'E'] | D | mid | ต้นฉบับวงไว้หลายตัว |   |
+| resp_50_MCQ_044 | ['A', 'B'] | A | mid | ต้นฉบับวงไว้หลายตัว |   |
+| resp_50_MCQ_045 | ['C', 'E'] | C | low | ต้นฉบับวงไว้หลายตัว |   |
+| resp_50_MCQ_046 | E | C | mid | เฉลยขัดกับ AI |   |
+| resp_50_MCQ_048 | C | A | mid | เฉลยขัดกับ AI |   |
+| resp_50_MCQ_049 | C | E | low | เฉลยขัดกับ AI |   |
 | resp_51_MCQ_002 | B | E | hi | เฉลยขัดกับ AI | เฉลยต้นฉบับ costomediastinal recess แต่เลือดในท่ายืนสะสมที่ costodiaphragmatic recess  |
 | resp_51_MCQ_012 | A | A | low | AI เขียนข้อนี้ขึ้นใหม่จากโน้ตความจำในต้นฉบับ |   |
 | resp_51_MCQ_013 | A | E | hi | เฉลยขัดกับ AI | เฉลยต้นฉบับ scalene (กล้ามเนื้อหายใจเข้า) แต่การหายใจออกในคนไข้ emphysema ใช้กล้ามเนื้อหน้าท้อง  |
