@@ -9,7 +9,12 @@
 - รันเว็บ: `python -m http.server 8765` · ตรวจข้อมูล: `node tools/validate.cjs` (ต้องผ่านก่อนส่งทุกครั้ง)
 - ส่งงานทุกครั้ง: เพิ่มเลขใน `version.json` + `CHANGELOG.md` + `?v=` ใน `index.html` + `VERSION` ใน `sw.js`
 
-## 1. บล็อก KUB and Repro (Drive `preclinic/2/urinary`) — ข้อมูลครบแล้ว รอ PR #38 ถูก merge
+## 1. บล็อก Respiratory (RESP) — กำลังทำ (Drive `preclinic/2/respiratory`)
+- branch **`finn-resp-block`** · block id `RESP` · inventory `resp_<รุ่น>_<MCQ|KF|OSPE>` (32 ชุด) · `data/blocks/RESP/`
+- MCQ ✅ ปี 45, 46, 47, 48, 49, 50, 51, 52 (เฉลยแบบปี 52 แล้ว) · ⏳ เหลือ MCQ 44, 42-43, 40 · ⏳ KF ทั้ง 11 ชุด · ⏳ OSPE ทั้ง 10 ชุด (ภาษาไทย)
+- MCQ รุ่นเก่าเป็น "ข้อสอบจำ" ข้อที่ไม่มีช้อยส์/ซ้ำ ข้าม · เฉลยต้นฉบับใช้วงกลม/ขีดเฉียง/ไฮไลต์หลายแบบ (parse_key.py รองรับแล้ว ข้อที่อ่านไม่ได้ต้องดู `auditor/raw/<ชุด>/key_pNNN.png` เอง)
+
+## 2. บล็อก KUB and Repro — merge แล้ว (PR #38)
 - branch **`finn-urinary-block`** · PR #38 · รวม main แล้ว (v0.32.0) · block id `KUB` (inventory `kub_<รุ่น>_<MCQ|KF|OSPE>`, 27 ชุด) · `data/blocks/KUB/`
 - สถานะรายชุด:
   | ชุด | สถานะ |
@@ -30,7 +35,7 @@
 - ตอบภาษาไทย สั้น ภาษาคน · ถ้าจะถาม ให้ถามเป็นช้อยส์ให้ติ๊ก
 - "ทำไปเรื่อย ๆ ไม่ต้องถาม" · "ประหยัดโทเค็นที่สุด" = ประหยัดที่ **วิธีทำ** เท่านั้น **ผลลัพธ์ต้องคุณภาพเท่าบล็อก GI** (ผู้ใช้ย้ำ 2026-11-08): ห้ามข้ามข้อที่จำโจทย์มาไม่ครบ → AI เขียนโจทย์เต็ม (ai_generated) · ช้อยส์ไม่ครบ → เติมให้ครบ 5 (ai_choices) · ข้อมีรูป → ตัดรูปใส่ · explanation เต็ม (เหตุผล + Trap) · ข้ามได้เฉพาะข้อที่ต้นฉบับว่างเปล่าจริง (ขีด –)
 - มี GitHub issue ใหม่ (เช่น "[เฉลย] END-47-MCQ-006 ควรเป็น E" จากปุ่มแจ้งเฉลยในเว็บ) → แก้เองได้เลย แล้วเปิด PR ใส่ `Closes #เลข`
-- บล็อกถัดไป: ยังไม่เลือก (respiratory / urinary / immunity)
+- บล็อกถัดไป: ทำ Respiratory ต่อ (ดูหัวข้อ 1) แล้วค่อยเลือก immunity
 
 ## 3. สถานะข้อมูล
 | บล็อก | MCQ | KF | OSPE |
