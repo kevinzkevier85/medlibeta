@@ -18,6 +18,10 @@
 | set_id | extract | audit (agree/disagree/drafted/unverified/ai_gen/skipped) | repair | build | PR |
 |---|---|---|---|---|---|
 | end_51_MCQ | ✓ 75 (exam text · key iOS PDF หน้าว่าง → แก้ BBox, อ่านเฉลยด้วยตา: วงชมพู/แถบส้ม · เฉลยหมดที่ข้อ 71) | 24/3/3/3/6/36 | ✓ | ✓ json · report · MedLib | finn-end-mcq-all |
+| end_51_KF | ✓ 11 ข้อ 22 ข้อย่อย | เฉลยต้นฉบับครอบคลุมแค่ข้อ 1–6 (หน้า 3–4 เป็นเฉลยชุด 50) · ข้อ 8–12, 16 draft · 4.2, 6.2 disputed | ✓ | ✓ build_kf · MedLib v0.16.0 | kel-end-kf-51-47 |
+| end_50_KF | ✓ 14 ข้อ 31 ข้อย่อย · รูปเฉลย 4 | เห็นด้วยกับเฉลย · 14.2 รับ calcitriol เพิ่ม | ✓ | ✓ build_kf · MedLib v0.16.0 | kel-end-kf-51-47 |
+| end_49_KF | ✓ 13 ข้อ 36 ข้อย่อย · รูปเฉลย 2 | Q11 disputed (เฉลยวง TRH/LH/PRL) | ✓ | ✓ build_kf · MedLib v0.16.0 | kel-end-kf-51-47 |
+| end_47_KF | ✓ 13 ข้อ 36 ข้อย่อย · รูปเฉลย 1 | เห็นด้วยกับเฉลย · Q6 ลายมือไทยถอดโดยประมาณ | ✓ | ✓ build_kf · MedLib v0.16.0 | kel-end-kf-51-47 |
 | end_52_KF | ✓ 16 ข้อ 35 ข้อย่อย (ต้นฉบับ `projects/END/ข้อสอบ/KF` = ไฟล์เดียวกับ Drive) อ่านด้วยตาทุกหน้า | เห็นด้วยกับเฉลยทุกข้อ · เพิ่มคำตอบอื่นที่ถูก 10.1, 12.4, 13.2 · audit_note 13.1 (FNA vs TSH/US) | — | ✓ `build_kf.py` · MedLib v0.15.0 · รูปเฉลยข้อ 2.2 (native) | kel-end-kf-52 |
 | end_52_MCQ | ✓ 81/81 (text layer; key = ไฮไลต์ชมพู + โน้ตน้ำเงิน) | 62/0/0/5/0/14 · AI ตรงต้นฉบับ 67/67 | ✓ | ✓ json · report · pdf · MedLib | ดูแชท |
 
@@ -103,6 +107,7 @@ python auditor/tools/drive_walk_public.py 1xM-kIO6FthQ021JfvWnYB3kkwh1Ht3HZ --pa
 - รูปในข้อ: `data/images.json` (คู่ข้อ ↔ หน้า + กรอบ ตรวจด้วยตาทุกรูป) → `crop_images.py` → `data/blocks/<B>/img/<id>.jpg`; build_work ล้มถ้าโจทย์อ้างถึงรูปแต่ไม่มีรูป (ยกเว้นใน `no_image`)
 
 ## Last session
+2026-11-07 (ดึก): KF Endocrine 51, 50, 49, 47 เสร็จ (subagent-driven, branch kel-end-kf-51-47) · ถัดไป KF 46, 45, 44, 42-43
 2026-11-07 (เย็น): KF Endocrine ชุด 52 เสร็จ (branch kel-end-kf-52) · ถัดไป KF 51 → 42-43
 2026-11-07: pilot end_52_MCQ ครบทุก phase · MedLib v0.4.0: export ใช้ `papers` (ไม่ใช่ lectures) + `time_limit_min`; เว็บแสดงเป็นชุดแบบ CVS
 

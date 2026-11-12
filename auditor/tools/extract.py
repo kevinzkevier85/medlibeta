@@ -75,7 +75,7 @@ def main():
     out = AUD / "raw" / a.set
     out.mkdir(parents=True, exist_ok=True)
 
-    for role in ("exam", "key"):
+    for role in s["files"]:  # exam, key, key2, key3 …
         f = s["files"].get(role)
         if not f:
             continue

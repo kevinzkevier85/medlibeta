@@ -22,6 +22,8 @@ def load(p):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--set", required=True)
+    ap.add_argument("--images", help="picture list file instead of data/images.json (per-set draft)")
+    ap.add_argument("--no-block", action="store_true", help="write only the exam set file, leave block.json alone")
     a = ap.parse_args()
     inv = {s["set_id"]: s for s in load(AUD / "data" / "inventory.json")["sets"]}
     meta = inv[a.set]
@@ -61,11 +63,11 @@ def main():
         qs.append(q)
 
     # every picture registered for this set must be used by some question/item
-    for qid, im in load(AUD / "data" / "images.json")["images"].items():
-        if qid.rsplit("_", 1)[0] != a.set:
+    for qid, im in load(Path(a.images) if a.images else AUD / "data" / "images.json")["images"].items():
+        if not qid.startswith(a.set + "_"):
             continue
-        num = re.fullmatch(r"(\d+)([a-z]*)", qid.rsplit("_", 1)[1])  # "010b" = 2nd picture of question 10
-        f = f"img/{B}-{c}-{T}-{int(num.group(1)):03d}{num.group(2)}{'-key' if im.get('role') == 'key' else ''}.jpg"
+        num = re.fullmatch(r"(\d+)([a-z]*)", qid[len(a.set) + 1:])  # "010b" = 2nd picture of question 10
+        f = im.get("file") or f"img/{B}-{c}-{T}-{int(num.group(1)):03d}{num.group(2)}{'-key' if im.get('role') == 'key' else ''}.jpg"
         if f not in used:
             sys.exit(f"ERROR: รูป {f} ({qid}) อยู่ใน images.json แต่ไม่มีข้อไหนใช้")
 
@@ -81,11 +83,17 @@ def main():
         out["meta"]["generated_by"] = gen
     (bdir / "exams" / f"{set_name}.json").write_text(json.dumps(out, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
 
+    if a.no_block:
+        print(f"{set_name}: {len(qs)} ข้อ, {sum(len(q['items']) for q in qs)} ข้อย่อย, รูป {len(used)} (ไม่แตะ block.json)")
+        return
     block = load(bdir / "block.json")
-    papers = [x for x in block.get("papers", []) if x["id"] not in pid.values()]
+    ids = {r: pid.get(r) or f"{T}{c}-{r.upper()}" for r in meta["files"]}  # key2/key3 = extra key files → KF44-KEY2, role key
+    papers = [x for x in block.get("papers", []) if x["id"] not in ids.values()]
     for role, f in meta["files"].items():
-        papers.append({"id": pid[role], "title": f"{'เฉลย ' if role == 'key' else ''}{T} {meta['block_name']} [Med PSU {label}]", "cohort": c,
-                       "type": T, "role": role, "pages": f["pages"], "drive_file_id": f["drive_file_id"], "drive_path": f["drive_path"]})
+        kind = "exam" if role == "exam" else "key"
+        extra = f" ({role[3:]})" if kind == "key" and role != "key" else ""
+        papers.append({"id": ids[role], "title": f"{'เฉลย ' if kind == 'key' else ''}{T} {meta['block_name']} [Med PSU {label}]{extra}", "cohort": c,
+                       "type": T, "role": kind, "pages": f["pages"], "drive_file_id": f["drive_file_id"], "drive_path": f["drive_path"]})
     papers.sort(key=lambda x: (-x["cohort"], x["type"], x["role"] != "exam"))
     block["papers"] = papers
     if set_name not in block["exam_sets"]:

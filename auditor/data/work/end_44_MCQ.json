@@ -19,9 +19,27 @@
     "E": "Parathyroid Hormone in response to plasma Ca2+"
    },
    "correct": "C",
-   "explanation": "(LH and estrogen secretion during preovulation)** — ก่อนตกไข่ estrogen สูงต่อเนื่อง (> 200 pg/mL นาน 36–48 ชม.) เปลี่ยนเป็น positive feedback → GnRH/LH surge\nTrap: ตัวอื่นเป็น negative feedback",
+   "explanation": "LH surge จาก estrogen สูงต่อเนื่องก่อนตกไข่ = positive feedback",
    "image": null,
    "issues": [],
+   "option_why": {
+    "A": "glucagon ↑ glucose → glucose สูงกลับมายับยั้ง glucagon = negative",
+    "B": "IGF-1 ยับยั้ง GH (กระตุ้น somatostatin) = negative",
+    "C": "✓ estrogen สูงต่อเนื่อง ~36–48 ชม. กลับไปกระตุ้น GnRH/LH surge → ตกไข่",
+    "D": "T3/T4 ยับยั้ง TSH = negative",
+    "E": "Ca²⁺ สูงยับยั้ง PTH = negative"
+   },
+   "key_concept": "• positive feedback พบน้อย: LH surge, oxytocin (คลอด/ดูดนม), blood clotting, action potential\n• แกน hormone ส่วนใหญ่เป็น negative feedback เพื่อรักษา set point\n• estrogen ต่ำ–ปานกลาง = negative · สูงมากและนาน = positive (เฉพาะก่อนตกไข่)",
+   "mechanism": [
+    "follicle โตขึ้น หลั่ง estrogen เพิ่ม",
+    "estrogen > 200 pg/mL นาน 36–48 ชม.",
+    {
+     "s": "เปลี่ยนจาก negative เป็น positive feedback ต่อ GnRH/LH",
+     "answer": true
+    },
+    "LH surge",
+    "ovulation"
+   ],
    "audit": {
     "source_file": "preclinic/2/endocrine/mcq/ข้อสอบ mcq/MCQ_Endocrine [Med PSU 44].pdf",
     "page": 1,
@@ -66,9 +84,27 @@
     "E": "Epinephrine"
    },
    "correct": "C",
-   "explanation": "(Aldosterone)** — steroid hormone ผ่าน membrane จับ intracellular (cytoplasmic) receptor → nucleus → transcription\nTrap: insulin, GH, glucagon, epinephrine จับ receptor บน membrane",
+   "explanation": "Aldosterone เป็น steroid ผ่าน membrane ได้ จึงจับ intracellular receptor",
    "image": null,
    "issues": [],
+   "option_why": {
+    "A": "insulin จับ receptor tyrosine kinase บน membrane",
+    "B": "GH จับ cytokine receptor (JAK/STAT) บน membrane",
+    "C": "✓ steroid ละลายไขมัน จับ cytoplasmic receptor → เข้า nucleus ปรับ transcription",
+    "D": "glucagon จับ GPCR (Gs → cAMP)",
+    "E": "epinephrine จับ GPCR (α/β)"
+   },
+   "key_concept": "• intracellular receptor: steroid, thyroid hormone (T3/T4), vitamin D, retinoic acid\n• peptide และ catecholamine ละลายน้ำ จับ receptor บน membrane\n• T3/T4 เป็น amine แต่ออกฤทธิ์ผ่าน nuclear receptor — ข้อยกเว้นที่ต้องจำ",
+   "mechanism": [
+    "aldosterone ซึมผ่าน cell membrane",
+    {
+     "s": "จับ mineralocorticoid receptor ใน cytoplasm",
+     "answer": true
+    },
+    "receptor-hormone complex เข้า nucleus",
+    "จับ HRE ปรับ transcription",
+    "สร้าง protein (ENaC, Na⁺/K⁺-ATPase) → Na⁺ reabsorption ↑"
+   ],
    "audit": {
     "source_file": "preclinic/2/endocrine/mcq/ข้อสอบ mcq/MCQ_Endocrine [Med PSU 44].pdf",
     "page": 1,
@@ -113,10 +149,28 @@
     "E": "Ovaries"
    },
    "correct": "C",
-   "explanation": "(Parathyroid)** — parathyroid ถูกควบคุมโดย Ca²⁺ ในเลือด (CaSR) ไม่ผ่าน pituitary; thyroid (TSH), adrenal cortex (ACTH), testis/ovary (FSH/LH) ขึ้นกับ pituitary\nTrap: adrenal medulla ก็ไม่ขึ้นกับ pituitary แต่ช้อยส์เขียนว่า adrenal gland รวม cortex",
+   "explanation": "Parathyroid คุมด้วย Ca²⁺ ในเลือดโดยตรง ไม่ผ่านแกน pituitary",
    "image": null,
    "issues": [
     "ต้นฉบับเขียนว่า enzyme แต่หมายถึง gland"
+   ],
+   "option_why": {
+    "A": "ขึ้นกับ TSH",
+    "B": "cortex ขึ้นกับ ACTH (medulla ขึ้นกับ sympathetic) จึงไม่ใช่ทั้งต่อมที่เป็นอิสระ",
+    "C": "✓ chief cell มี CaSR รับรู้ Ca²⁺ แล้วคุม PTH เอง",
+    "D": "testis ขึ้นกับ LH/FSH",
+    "E": "ovary ขึ้นกับ LH/FSH"
+   },
+   "key_concept": "• ต่อมที่ไม่ขึ้นกับ pituitary: parathyroid (Ca²⁺), islet (glucose), adrenal medulla (sympathetic), zona glomerulosa (angiotensin II/K⁺)\n• ขึ้นกับ pituitary: thyroid, adrenal fasciculata/reticularis, gonad, mammary gland\n• hypopituitarism: parathyroid และ islet ยังทำงานปกติ",
+   "mechanism": [
+    "Ca²⁺ ในเลือดลดลง",
+    {
+     "s": "CaSR บน chief cell ถูกกระตุ้นน้อยลง (ไม่ผ่าน pituitary)",
+     "answer": true
+    },
+    "PTH หลั่งเพิ่ม",
+    "กระดูกสลาย Ca²⁺ ↑ · ไตดูดกลับ ↑ · 1α-hydroxylase ↑",
+    "Ca²⁺ กลับสู่ปกติ"
    ],
    "audit": {
     "source_file": "preclinic/2/endocrine/mcq/ข้อสอบ mcq/MCQ_Endocrine [Med PSU 44].pdf",
@@ -162,9 +216,17 @@
     "E": "Oral ectoderm gives rise to adenohypophysis"
    },
    "correct": "E",
-   "explanation": "(Oral ectoderm gives rise to adenohypophysis)** — Rathke's pouch (oral ectoderm) → anterior pituitary (pars distalis, intermedia, tuberalis); infundibulum (neuroectoderm ของ diencephalon) → posterior pituitary (pars nervosa)\nTrap: pars tuberalis มาจาก oral ectoderm",
+   "explanation": "Oral ectoderm (Rathke's pouch) → adenohypophysis",
    "image": null,
    "issues": [],
+   "option_why": {
+    "A": "pars tuberalis ก็มาจาก oral ectoderm (เป็นส่วนของ adenohypophysis) ไม่ใช่ neuroectoderm",
+    "B": "anterior pituitary มาจาก Rathke's pouch ไม่ใช่ diencephalon",
+    "C": "infundibular stem มาจาก neuroectoderm (diencephalon) ไม่ใช่ endoderm",
+    "D": "Rathke's pouch สร้าง adenohypophysis ไม่ใช่ neurohypophysis",
+    "E": "✓ stomodeum (oral ectoderm) → Rathke's pouch → adenohypophysis"
+   },
+   "key_concept": "• adenohypophysis (distalis, intermedia, tuberalis) ← oral ectoderm (Rathke's pouch)\n• neurohypophysis (pars nervosa, infundibulum) ← neuroectoderm ของ diencephalon\n• จำง่าย: ต่อมหน้าเป็น epithelium จากผิว · ต่อมหลังเป็นเนื้อสมอง",
    "audit": {
     "source_file": "preclinic/2/endocrine/mcq/ข้อสอบ mcq/MCQ_Endocrine [Med PSU 44].pdf",
     "page": 1,
@@ -203,10 +265,28 @@
     "E": "Prolactin causes milk ejection"
    },
    "correct": "D",
-   "explanation": "(Myoepithelial cells in the mammary gland contract)** — suckling → afferent ไป hypothalamus → oxytocin neuron ถูกกระตุ้น → oxytocin จาก posterior pituitary → myoepithelial cell หดตัว → milk ejection (let-down)\nTrap: milk production เป็นหน้าที่ของ prolactin",
+   "explanation": "Oxytocin ทำให้ myoepithelial cell หดตัว → milk ejection",
    "image": null,
    "issues": [
     "ช้อยส์ E AI เติมให้ครบ 5 ตัว"
+   ],
+   "option_why": {
+    "A": "suckling กระตุ้น (ไม่ใช่ยับยั้ง) oxytocin neuron",
+    "B": "milk production เป็นหน้าที่ของ prolactin",
+    "C": "ทางนี้ผ่าน hypothalamus ไม่ใช่ thalamus",
+    "D": "✓ oxytocin จับ receptor (Gq) → Ca²⁺ ↑ → myoepithelial หดตัวดันน้ำนมออก",
+    "E": "prolactin สร้างน้ำนม ไม่ได้ขับออก"
+   },
+   "key_concept": "• prolactin = milk production · oxytocin = milk ejection (let-down)\n• neuroendocrine reflex: ดูดนม/ได้ยินเสียงลูก → oxytocin ↑ · ความเครียดยับยั้ง let-down\n• oxytocin ทำให้มดลูกหดตัวตอนคลอดด้วย (positive feedback)",
+   "mechanism": [
+    "ลูกดูดหัวนม",
+    "sensory nerve → spinal cord → hypothalamus",
+    "oxytocin neuron (PVN/SON) ยิง impulse ↑",
+    "oxytocin หลั่งจาก posterior pituitary",
+    {
+     "s": "myoepithelial cell หดตัว → น้ำนมถูกขับออก (let-down)",
+     "answer": true
+    }
    ],
    "audit": {
     "source_file": "preclinic/2/endocrine/mcq/ข้อสอบ mcq/MCQ_Endocrine [Med PSU 44].pdf",
@@ -248,9 +328,27 @@
     "E": "Anterior pituitary"
    },
    "correct": "B",
-   "explanation": "(Hypothalamus)** — magnocellular neuron ใน supraoptic และ paraventricular nucleus ส่ง action potential ลง axon ไป posterior pituitary → ADH/oxytocin release\nTrap: anterior pituitary ไม่มี neural connection แบบนี้",
+   "explanation": "Hypothalamus (SON/PVN) ส่ง axon ลง posterior pituitary หลั่ง ADH/oxytocin",
    "image": null,
    "issues": [],
+   "option_why": {
+    "A": "brain stem ส่งข้อมูล baroreceptor เข้า hypothalamus ไม่ได้ส่งตรง",
+    "B": "✓ magnocellular neuron ใน SON/PVN ยื่น axon ลง pars nervosa (hypothalamo-hypophyseal tract)",
+    "C": "thalamus เป็นสถานีส่ง sensory",
+    "D": "limbic คุมอารมณ์ (กระทบ hypothalamus ทางอ้อม)",
+    "E": "anterior pituitary ถูกคุมด้วย hormone ผ่าน portal vessel ไม่ใช่เส้นประสาท"
+   },
+   "key_concept": "• posterior pituitary = neural (axon จาก hypothalamus) · anterior = glandular (hormone ผ่าน portal)\n• ADH ← SON เป็นหลัก · oxytocin ← PVN เป็นหลัก\n• posterior pituitary ไม่สร้างฮอร์โมนเอง แค่เก็บและปล่อย (Herring body)",
+   "mechanism": [
+    "osmolality ↑ / BP ↓ / ดูดนม",
+    {
+     "s": "magnocellular neuron (SON/PVN) ยิง impulse ↑",
+     "answer": true
+    },
+    "action potential ลง hypothalamo-hypophyseal tract",
+    "Ca²⁺ เข้า axon terminal",
+    "ADH/oxytocin exocytosis จาก posterior pituitary"
+   ],
    "audit": {
     "source_file": "preclinic/2/endocrine/mcq/ข้อสอบ mcq/MCQ_Endocrine [Med PSU 44].pdf",
     "page": 2,
@@ -295,9 +393,27 @@
     "E": "ADH neuron increases nerve impulse to the posterior pituitary gland"
    },
    "correct": "E",
-   "explanation": "(ADH neuron increases nerve impulse to the posterior pituitary)** — dehydration: plasma osmolality ↑ (osmoreceptor) และ ECF volume ↓ (baroreceptor) → ADH neuron firing ↑ → ADH release ↑ → water reabsorption\nTrap: ADH secretion และระดับในเลือดเพิ่มขึ้น",
+   "explanation": "Dehydration → ADH neuron ยิง impulse ↑ → ADH release ↑",
    "image": null,
    "issues": [],
+   "option_why": {
+    "A": "ADH หลั่งเพิ่ม ไม่ใช่ลด",
+    "B": "ระดับ ADH ในเลือดเพิ่มขึ้น",
+    "C": "ขนาด neuron เปลี่ยนช้าในภาวะเรื้อรัง ไม่ใช่ผลทันที",
+    "D": "เช่นเดียวกับ supraoptic ขนาด neuron ไม่ใช่ตัวตอบสนองเฉียบพลัน",
+    "E": "✓ firing ↑ ไปยัง posterior pituitary → ADH release ↑"
+   },
+   "key_concept": "• osmoreceptor (OVLT/SFO) ไวต่อ osm เปลี่ยน 1–2% · baroreceptor ต้องความดันลด ~10%\n• ADH: V2 (collecting duct) → aquaporin-2 · V1 (หลอดเลือด) → หดตัว\n• ข้อ 15 และ 18 เป็นโจทย์เดียวกัน (ผู้จำจำได้ 2 ครั้ง)",
+   "mechanism": [
+    "เสียน้ำ → plasma osm ↑ / ECF volume ↓",
+    "osmoreceptor + baroreceptor ถูกกระตุ้น",
+    {
+     "s": "ADH neuron (SON/PVN) ยิง impulse ไป posterior pituitary มากขึ้น",
+     "answer": true
+    },
+    "ADH หลั่งเพิ่ม → AQP2 ใน collecting duct",
+    "ดูดน้ำกลับ ปัสสาวะเข้มข้น"
+   ],
    "audit": {
     "source_file": "preclinic/2/endocrine/mcq/ข้อสอบ mcq/MCQ_Endocrine [Med PSU 44].pdf",
     "page": 2,
@@ -342,9 +458,27 @@
     "E": "DAG"
    },
    "correct": "A",
-   "explanation": "(cAMP)** — GHRH receptor (GPCR) → Gs → adenylyl cyclase → cAMP → PKA → GH synthesis/release\nTrap: TRH และ GnRH ใช้ Gq → IP₃/DAG",
+   "explanation": "GHRH receptor เป็น Gs-GPCR → second messenger คือ cAMP",
    "image": null,
    "issues": [],
+   "option_why": {
+    "A": "✓ GHRH-R → Gs → adenylyl cyclase → cAMP → PKA",
+    "B": "cGMP ใช้ใน ANP และ NO",
+    "C": "Ca²⁺ มาจาก Gq pathway (TRH, GnRH)",
+    "D": "IP₃ มาจาก Gq (TRH, GnRH, angiotensin II)",
+    "E": "DAG มาจาก Gq เช่นกัน"
+   },
+   "key_concept": "• Gs → cAMP: GHRH, CRH, ACTH, TSH, LH/FSH, glucagon, PTH, ADH (V2)\n• Gq → IP₃/DAG/Ca²⁺: TRH, GnRH, oxytocin, ADH (V1), angiotensin II\n• Gi ลด cAMP: somatostatin, dopamine (D2)",
+   "mechanism": [
+    "GHRH จับ GHRH-R บน somatotroph",
+    {
+     "s": "Gs → adenylyl cyclase → cAMP ↑",
+     "answer": true
+    },
+    "PKA เปิด Ca²⁺ channel + phosphorylate CREB",
+    "GH gene transcription ↑",
+    "GH หลั่ง"
+   ],
    "audit": {
     "source_file": "preclinic/2/endocrine/mcq/ข้อสอบ mcq/MCQ_Endocrine [Med PSU 44].pdf",
     "page": 2,
@@ -383,9 +517,27 @@
     "E": "ADH neuron increases nerve impulse to the posterior pituitary gland."
    },
    "correct": "E",
-   "explanation": "(ADH neuron increases nerve impulse to the posterior pituitary)** — ข้อซ้ำกับข้อ 15 (ผู้จำจำได้ 2 ครั้ง)\nTrap: ขนาดของ neuron ไม่ได้เปลี่ยนเฉียบพลัน",
+   "explanation": "Dehydration → ADH neuron ยิง impulse ↑ ไปยัง posterior pituitary (ข้อซ้ำกับข้อ 15)",
    "image": null,
    "issues": [],
+   "option_why": {
+    "A": "ADH หลั่งเพิ่ม ไม่ใช่ลด",
+    "B": "ระดับ ADH ในเลือดเพิ่มขึ้น",
+    "C": "ขนาด neuron ไม่เปลี่ยนทันที (ใช้เวลาเรื้อรัง)",
+    "D": "เช่นเดียวกับ paraventricular ขนาด neuron ไม่ใช่ตัวตอบสนองเฉียบพลัน",
+    "E": "✓ firing ↑ ไปยัง posterior pituitary → ADH release ↑"
+   },
+   "key_concept": "• โจทย์ซ้ำกับข้อ 15 — ใช้หลักเดียวกัน\n• dehydration → osm ↑ → ADH ↑ → AQP2 ↑ → ปัสสาวะเข้มข้น\n• ระวังตัวเลือกที่พูดถึง 'ขนาด' ของ neuron — เป็นการเปลี่ยนแปลงระยะยาว",
+   "mechanism": [
+    "เสียน้ำ → plasma osm ↑",
+    "osmoreceptor ถูกกระตุ้น",
+    {
+     "s": "ADH neuron ยิง impulse ไป posterior pituitary มากขึ้น",
+     "answer": true
+    },
+    "ADH หลั่ง → AQP2 ใน collecting duct",
+    "ดูดน้ำกลับ ปัสสาวะเข้มข้น"
+   ],
    "audit": {
     "source_file": "preclinic/2/endocrine/mcq/ข้อสอบ mcq/MCQ_Endocrine [Med PSU 44].pdf",
     "page": 3,
@@ -430,9 +582,27 @@
     "E": "Peroxidase"
    },
    "correct": "E",
-   "explanation": "(Peroxidase)** — thyroid peroxidase (TPO) oxidize iodide (I⁻ → I⁰) → organification บน tyrosine ของ thyroglobulin → coupling\nTrap: deiodinase เปลี่ยน T4 → T3 ที่ peripheral",
+   "explanation": "Thyroid peroxidase (TPO) oxidize iodide ก่อน organification",
    "image": null,
    "issues": [],
+   "option_why": {
+    "A": "reductase ไม่เกี่ยวกับการ oxidize iodine",
+    "B": "hydroxylase เกี่ยวกับ hydroxylation (steroid/tyrosine)",
+    "C": "ไม่มีเอนไซม์ชื่อ iodinase ในการสังเคราะห์ thyroid hormone",
+    "D": "deiodinase เอา iodine ออก/เปลี่ยน T4 → T3",
+    "E": "✓ TPO + H₂O₂ oxidize I⁻ → I⁰ แล้วจับ tyrosine และ coupling"
+   },
+   "key_concept": "• TPO ทำ 3 ขั้น: oxidation, organification (MIT/DIT), coupling (T3/T4)\n• PTU/methimazole ยับยั้ง TPO · PTU ยับยั้ง deiodinase type 1 ด้วย\n• Hashimoto: anti-TPO antibody",
+   "mechanism": [
+    "NIS ดึง I⁻ เข้า follicular cell",
+    "pendrin ส่ง I⁻ เข้า lumen",
+    {
+     "s": "TPO + H₂O₂ oxidize I⁻ → I⁰",
+     "answer": true
+    },
+    "iodinate tyrosine บน thyroglobulin → MIT/DIT",
+    "coupling → T3/T4 เก็บใน colloid"
+   ],
    "audit": {
     "source_file": "preclinic/2/endocrine/mcq/ข้อสอบ mcq/MCQ_Endocrine [Med PSU 44].pdf",
     "page": 3,
@@ -471,9 +641,27 @@
     "E": "Stored in vesicle after endocytosis into target cell"
    },
    "correct": "C",
-   "explanation": "(Conjugate with sulfate)** — steroid ถูก inactivate ที่ตับ (reduction + conjugation กับ glucuronic acid/sulfate) → ละลายน้ำ → ขับทางปัสสาวะ (~75%) และน้ำดี\nTrap: steroid ไม่ถูกเก็บใน vesicle",
+   "explanation": "Steroid ถูก inactivate ที่ตับ โดย conjugation (sulfate/glucuronide) แล้วขับออก",
    "image": null,
    "issues": [],
+   "option_why": {
+    "A": "hydrolysis เป็นของ peptide (peptidase)",
+    "B": "steroid ไม่ถูกส่งไปเก็บใน adipose เพื่อ inactivate",
+    "C": "✓ ตับ conjugate กับ glucuronic acid/sulfate → ละลายน้ำ → ขับทางปัสสาวะ/น้ำดี",
+    "D": "ไม่เกี่ยวกับ H⁺",
+    "E": "steroid ไม่เก็บใน vesicle (peptide/catecholamine ต่างหาก)"
+   },
+   "key_concept": "• steroid: ตับ (reduction + conjugation) → ปัสสาวะ (17-KS/17-OHCS)\n• peptide: ถูกย่อยด้วย protease ที่ไต/ตับ/เซลล์เป้าหมาย\n• catecholamine: COMT + MAO → metanephrine/VMA",
+   "mechanism": [
+    "cortisol ส่วนใหญ่จับ CBG ในเลือด",
+    "ถึงตับ → reduction (5α/5β-reductase, 11β-HSD)",
+    {
+     "s": "conjugate กับ glucuronate/sulfate",
+     "answer": true
+    },
+    "ละลายน้ำได้",
+    "ขับทางไต (~75%) และน้ำดี"
+   ],
    "audit": {
     "source_file": "preclinic/2/endocrine/mcq/ข้อสอบ mcq/MCQ_Endocrine [Med PSU 44].pdf",
     "page": 3,
@@ -512,9 +700,27 @@
     "E": "Increase renin secretion"
    },
    "correct": "D",
-   "explanation": "(Pressure natriuresis)** — aldosterone เกินระยะยาว: Na⁺ retention → ECF/BP ↑ → pressure natriuresis/diuresis (aldosterone escape) → Na⁺ ในเลือดปกติ ไม่บวม แต่ HT และ hypokalemia คงอยู่\nTrap: hypertension, hypokalemia, renin ต่ำ",
+   "explanation": "Aldosterone เกินระยะยาว → pressure natriuresis (escape) ทำให้ไม่บวม Na⁺ ปกติ",
    "image": null,
    "issues": [],
+   "option_why": {
+    "A": "ความดันสูงขึ้น ไม่ใช่ต่ำ",
+    "B": "K⁺ ถูกขับออก → hypokalemia",
+    "C": "Na⁺ ในเลือดปกติหรือสูงเล็กน้อย (escape) ไม่ถึง hyponatremia",
+    "D": "✓ ECF/BP ↑ → ไตขับ Na⁺ ออกเอง = aldosterone escape",
+    "E": "renin ถูกกดเพราะ ECF ↑"
+   },
+   "key_concept": "• primary aldosteronism: HTN + hypokalemia + metabolic alkalosis + renin ต่ำ ไม่มี edema\n• escape เกิดจาก pressure natriuresis + ANP ↑\n• ตรวจ aldosterone:renin ratio สูง",
+   "mechanism": [
+    "aldosterone ↑ → Na⁺ reabsorb ↑ ที่ principal cell",
+    "ECF volume + BP ↑",
+    "ANP ↑ + renal perfusion pressure ↑",
+    {
+     "s": "pressure natriuresis: ไตขับ Na⁺ ออก (aldosterone escape)",
+     "answer": true
+    },
+    "Na⁺ คงที่ ไม่บวม แต่ HTN/hypoK คงอยู่"
+   ],
    "audit": {
     "source_file": "preclinic/2/endocrine/mcq/ข้อสอบ mcq/MCQ_Endocrine [Med PSU 44].pdf",
     "page": 3,
@@ -559,9 +765,27 @@
     "E": "Increase plasma capillary permeability"
    },
    "correct": "A",
-   "explanation": "(Reduce leukotriene secretion)** — cortisol → annexin A1 ยับยั้ง PLA₂ → PG และ LT ↓; stabilize lysosome, ลด capillary permeability, ลด WBC migration, ลด IL-1\nTrap: ลด immune activity และ IL-1",
+   "explanation": "Cortisol ยับยั้ง PLA₂ (annexin A1) → leukotriene และ prostaglandin ลดลง",
    "image": null,
    "issues": [],
+   "option_why": {
+    "A": "✓ annexin A1 ↑ → PLA₂ ถูกยับยั้ง → arachidonic acid ↓ → LT/PG ↓",
+    "B": "cortisol กดการทำงานของ immune system",
+    "C": "cortisol ลดการหลั่ง IL-1 (และ cytokine อื่น)",
+    "D": "stabilize lysosome → proteolytic enzyme ลดลง",
+    "E": "ลด capillary permeability (ลดบวม)"
+   },
+   "key_concept": "• cortisol = anti-inflammatory + immunosuppressive: ↓ PG/LT, ↓ IL-1/IL-2/TNF, ↓ T cell\n• เลือด: neutrophil ↑ แต่ lymphocyte, eosinophil, basophil ↓\n• ใช้เป็นยา: asthma, autoimmune, ปลูกถ่ายอวัยวะ · ผลข้างเคียง: Cushing, ติดเชื้อง่าย",
+   "mechanism": [
+    "cortisol จับ glucocorticoid receptor ใน cytoplasm",
+    "เข้า nucleus → สร้าง annexin A1 (lipocortin)",
+    "annexin A1 ยับยั้ง phospholipase A₂ → arachidonic acid ↓",
+    {
+     "s": "prostaglandin และ leukotriene สร้างลดลง",
+     "answer": true
+    },
+    "การอักเสบและ permeability ลดลง"
+   ],
    "audit": {
     "source_file": "preclinic/2/endocrine/mcq/ข้อสอบ mcq/MCQ_Endocrine [Med PSU 44].pdf",
     "page": 4,
@@ -606,9 +830,27 @@
     "E": "Decrease interleukin-2 release"
    },
    "correct": "A",
-   "explanation": "(Decrease prostaglandin release)** — cortisol ลด IL-1 จาก WBC และลด PGE₂ ที่ hypothalamic endothelium → set point ไม่สูงขึ้น → ไข้ลด\nTrap: ช้อยส์ E ควรเป็น interleukin-1 (ไม่ใช่ II)",
+   "explanation": "Cortisol ลด PGE₂ (และ IL-1) ที่ hypothalamus → set point ไม่สูง ไข้ลด",
    "image": null,
    "issues": [],
+   "option_why": {
+    "A": "✓ IL-1/pyrogen → COX-2 → PGE₂ → set point ↑ · cortisol ยับยั้งการหลั่ง prostaglandin",
+    "B": "bradykinin เกี่ยวกับ pain/vasodilation ไม่ใช่ตัวตั้ง set point",
+    "C": "leukotriene เกี่ยวกับ inflammation/หลอดลมตีบ ไม่ใช่ตัวหลักของไข้",
+    "D": "proteolytic enzyme เกี่ยวกับ tissue damage",
+    "E": "ตัวที่คุมไข้คือ interleukin-1 (ตัวเลือกพิมพ์เป็น IL-2)"
+   },
+   "key_concept": "• pyrogen (IL-1, IL-6, TNF) → OVLT → COX-2 → PGE₂ → เลื่อน set point ที่ preoptic area\n• aspirin/NSAID/paracetamol ยับยั้ง COX · cortisol ยับยั้ง PLA₂ ต้นทาง\n• ไข้ = set point เลื่อน · hyperthermia = set point เท่าเดิม (ยาลดไข้ไม่ได้ผล)",
+   "mechanism": [
+    "pyrogen (IL-1, TNF, IL-6) ถึง hypothalamus",
+    "COX-2 ↑ → PGE₂ ↑",
+    "PGE₂ เลื่อน set point ขึ้น → ไข้",
+    {
+     "s": "cortisol ยับยั้ง prostaglandin release",
+     "answer": true
+    },
+    "set point กลับ ไข้ลด"
+   ],
    "audit": {
     "source_file": "preclinic/2/endocrine/mcq/ข้อสอบ mcq/MCQ_Endocrine [Med PSU 44].pdf",
     "page": 4,
@@ -653,9 +895,27 @@
     "E": "Pressure natriuresis"
    },
    "correct": "E",
-   "explanation": "(Pressure natriuresis)** — ข้อซ้ำกับข้อ 26: aldosterone เกินระยะยาว → pressure natriuresis (escape)\nTrap: Na⁺ ในเลือดปกติ (ไม่ใช่ hyponatremia)",
+   "explanation": "Aldosterone เกินระยะยาว → pressure natriuresis (ข้อซ้ำกับข้อ 26)",
    "image": null,
    "issues": [],
+   "option_why": {
+    "A": "Na⁺ ในเลือดปกติจาก escape ไม่ใช่ hyponatremia",
+    "B": "ความดันสูงขึ้น ไม่ใช่ต่ำ",
+    "C": "K⁺ ถูกขับ → hypokalemia ไม่ใช่ hyperkalemia",
+    "D": "RAAS ถูกกด (renin ต่ำ) ไม่ใช่เพิ่ม",
+    "E": "✓ ECF/BP ↑ → ไตขับ Na⁺ ออกเอง = aldosterone escape"
+   },
+   "key_concept": "• โจทย์ซ้ำกับข้อ 26 ใช้หลักเดียวกัน\n• primary aldosteronism: HTN + hypoK + alkalosis + renin ต่ำ ไม่มี edema\n• escape เกิดจาก pressure natriuresis + ANP ↑",
+   "mechanism": [
+    "aldosterone ↑ → Na⁺ reabsorb ↑",
+    "ECF volume + BP ↑",
+    "ANP ↑ + renal perfusion pressure ↑",
+    {
+     "s": "pressure natriuresis: ไตขับ Na⁺ ออก",
+     "answer": true
+    },
+    "Na⁺ คงที่ ไม่บวม แต่ HTN/hypoK คงอยู่"
+   ],
    "audit": {
     "source_file": "preclinic/2/endocrine/mcq/ข้อสอบ mcq/MCQ_Endocrine [Med PSU 44].pdf",
     "page": 4,
@@ -705,9 +965,27 @@
     "E": "Hypernatremia"
    },
    "correct": "A",
-   "explanation": "(Acidosis)** — aldosterone ขาด → α-intercalated cell หลั่ง H⁺ ลดลง และ principal cell หลั่ง K⁺ ลดลง → metabolic acidosis (type 4 RTA) + hyperkalemia + Na⁺ loss → volume ↓ BP ↓\nTrap: hypokalemia, hypernatremia ผิดทิศ",
+   "explanation": "Aldosterone ขาด → H⁺ และ K⁺ ถูกขับลดลง → metabolic acidosis + hyperkalemia",
    "image": null,
    "issues": [],
+   "option_why": {
+    "A": "✓ α-intercalated cell หลั่ง H⁺ ลด → metabolic acidosis (type 4 RTA)",
+    "B": "ขาด aldosterone → K⁺ ค้าง (hyperkalemia) ไม่ใช่ต่ำ",
+    "C": "Na⁺ เสีย → volume ลดลง ไม่ใช่เพิ่ม",
+    "D": "BP ลดลง ไม่ใช่เพิ่ม",
+    "E": "Na⁺ ต่ำ (hyponatremia) ไม่ใช่ hypernatremia"
+   },
+   "key_concept": "• aldosterone เกิน: HTN, hypoK, alkalosis · ขาด: hypotension, hyperK, acidosis (กลับกันหมด)\n• Addison: hyponatremia + hyperkalemia + acidosis + hyperpigmentation (ACTH ↑)\n• type 4 RTA = hypoaldosteronism → hyperK + non-anion-gap acidosis",
+   "mechanism": [
+    "aldosterone ขาด",
+    "principal cell: Na⁺ reabsorb ↓, K⁺ ขับ ↓",
+    "α-intercalated cell: H⁺-ATPase ↓",
+    {
+     "s": "H⁺ ขับออกลดลง → metabolic acidosis",
+     "answer": true
+    },
+    "volume ↓ BP ↓ hyperkalemia"
+   ],
    "audit": {
     "source_file": "preclinic/2/endocrine/mcq/ข้อสอบ mcq/MCQ_Endocrine [Med PSU 44].pdf",
     "page": 4,
@@ -757,9 +1035,27 @@
     "E": "Decrease plasma protein formation by liver"
    },
    "correct": "A",
-   "explanation": "(Increase amino acid mobilization to liver)** — cortisol: protein catabolism ที่ extrahepatic tissue → amino acid เข้าตับ ↑ → gluconeogenesis, protein synthesis ในตับ ↑ (รวม plasma protein)\nTrap: glucose utilization ลดลง (insulin resistance)",
+   "explanation": "Cortisol ทำ catabolism นอกตับ → amino acid เข้าตับ ↑ เพื่อ gluconeogenesis",
    "image": null,
    "issues": [],
+   "option_why": {
+    "A": "✓ protein สลายที่กล้ามเนื้อ/นอกตับ → amino acid ไปตับสร้าง glucose และ protein",
+    "B": "glucose utilization ลดลง (insulin resistance)",
+    "C": "cortisol ต้านฤทธิ์ insulin",
+    "D": "protein synthesis ในตับเพิ่ม (ไม่ลด)",
+    "E": "plasma protein ที่ตับสร้างเพิ่มขึ้น"
+   },
+   "key_concept": "• cortisol: ตับ anabolic (gluconeogenesis, protein synthesis ↑) · นอกตับ catabolic (กล้ามเนื้อ ผิว กระดูกบาง)\n• ↑ blood glucose, ↑ lipolysis, ↑ insulin resistance → Cushing: central obesity, striae, DM\n• คิดว่าเป็น stress hormone: เก็บพลังงานให้สมองตอนอดอาหาร/เครียด",
+   "mechanism": [
+    "cortisol ↑ (stress/อดอาหาร)",
+    "protein สลายที่กล้ามเนื้อและเนื้อเยื่อนอกตับ",
+    {
+     "s": "amino acid ถูกลำเลียงเข้าตับมากขึ้น",
+     "answer": true
+    },
+    "ตับทำ gluconeogenesis + สร้าง protein",
+    "blood glucose ↑"
+   ],
    "audit": {
     "source_file": "preclinic/2/endocrine/mcq/ข้อสอบ mcq/MCQ_Endocrine [Med PSU 44].pdf",
     "page": 5,
@@ -798,10 +1094,28 @@
     "E": "Normal size with dark pigmentation"
    },
    "correct": "C",
-   "explanation": "(Bilateral diffuse enlargement)** — ทารก salt wasting + hyperpigmentation + 17-OHP > 5500 = 21-hydroxylase deficiency → ACTH ↑ → bilateral diffuse adrenal hyperplasia\nTrap: atrophy เป็นของ autoimmune Addison",
+   "explanation": "21-hydroxylase deficiency → ACTH ↑ → adrenal hyperplasia สองข้างแบบ diffuse",
    "image": null,
    "issues": [
     "ช้อยส์ E AI เติมให้ครบ 5 ตัว"
+   ],
+   "option_why": {
+    "A": "nodular พบในรายที่ถูกกระตุ้นนาน ไม่ใช่ทารกแรกเกิด",
+    "B": "atrophy พบใน autoimmune Addison หรือ ACTH ต่ำ",
+    "C": "✓ ACTH ↑ จาก cortisol ต่ำ → cortex โตทั้งสองข้าง (cerebriform)",
+    "D": "โตข้างหนึ่ง ฝ่อข้างหนึ่ง = ก้อนที่หลั่ง cortisol เอง (ACTH ต่ำ)",
+    "E": "ต่อมไม่ปกติ: โตจาก ACTH กระตุ้น"
+   },
+   "key_concept": "• CAH จาก 21-OHase (~90%): cortisol↓ aldosterone↓ → ACTH↑ → androgen↑ · 17-OHP สูงมาก\n• salt-wasting: Na↓ K↑ shock สัปดาห์แรก · หญิง virilization (genitalia กำกวม)\n• ACTH ↑ → hyperplasia diffuse + hyperpigmentation (POMC → MSH)",
+   "mechanism": [
+    "21-hydroxylase ขาด",
+    "cortisol/aldosterone สร้างไม่ได้ → Na↓ K↑",
+    "ไม่มี negative feedback → ACTH ↑",
+    {
+     "s": "ACTH กระตุ้น cortex โตแบบ diffuse ทั้งสองข้าง",
+     "answer": true
+    },
+    "androgen ↑ + hyperpigmentation"
    ],
    "audit": {
     "source_file": "preclinic/2/endocrine/mcq/ข้อสอบ mcq/MCQ_Endocrine [Med PSU 44].pdf",
@@ -849,9 +1163,17 @@
     "E": "Papillary carcinoma"
    },
    "correct": "B",
-   "explanation": "(Nodular goiter)** — FNA: colloid มาก + follicular cell ปกติจำนวนน้อย + hemosiderin-laden macrophage (เลือดออกเก่าใน nodule) = benign nodular (colloid) goiter\nTrap: follicular neoplasm มี cellularity สูง colloid น้อย",
+   "explanation": "FNA: colloid มาก + macrophage hemosiderin + follicular cell น้อย = nodular (colloid) goiter",
    "image": null,
    "issues": [],
+   "option_why": {
+    "A": "ผลที่เห็นมี colloid มาก + macrophage จึงไม่ใช่ thyroid ปกติ",
+    "B": "✓ nodule มี colloid มาก เลือดออกเก่า (hemosiderin) เซลล์น้อย = benign",
+    "C": "thyroiditis จะเห็น lymphocyte/giant cell/granuloma",
+    "D": "follicular neoplasm: cellular สูง colloid น้อย",
+    "E": "papillary: nuclear groove/inclusion/papillae"
+   },
+   "key_concept": "• FNA ไทรอยด์: colloid มาก = benign · cellular + colloid น้อย = follicular lesion · nuclear feature = papillary\n• follicular adenoma vs carcinoma แยกด้วย FNA ไม่ได้ ต้องดู capsule/vascular invasion\n• multinodular goiter มักมี hemorrhage, cystic change, fibrosis, calcification",
    "audit": {
     "source_file": "preclinic/2/endocrine/mcq/ข้อสอบ mcq/MCQ_Endocrine [Med PSU 44].pdf",
     "page": 5,
@@ -896,10 +1218,28 @@
     "E": "Multinucleated giant cells engulfing colloid"
    },
    "correct": "D",
-   "explanation": "(Lymphoid follicles and eosinophilic cytoplasm cells)** — goiter + hypothyroid (FT4 ต่ำ TSH สูง) + thyroid autoantibody = Hashimoto thyroiditis: lymphoid follicle with germinal center + Hürthle cell (oncocytic, eosinophilic cytoplasm)\nTrap: scalloped colloid เป็นของ Graves",
+   "explanation": "Goiter + FT4 ต่ำ TSH สูง + autoantibody = Hashimoto → lymphoid follicle + Hürthle cell",
    "image": null,
    "issues": [
     "ช้อยส์ E AI เติมให้ครบ 5 ตัว"
+   ],
+   "option_why": {
+    "A": "fibrosis + cystic change พบใน multinodular goiter (fibrosis มากเกินคือ Riedel)",
+    "B": "scalloped colloid + hyperplasia = Graves (hyperthyroid)",
+    "C": "colloid เพิ่มใน colloid goiter ไม่ใช่ Hashimoto (follicle ฝ่อ colloid ลด)",
+    "D": "✓ lymphoid follicle + germinal center + Hürthle cell (oncocytic, eosinophilic cytoplasm)",
+    "E": "giant cell + colloid = subacute thyroiditis"
+   },
+   "key_concept": "• Hashimoto: anti-TPO/anti-Tg, หญิงวัยกลางคน, goiter + hypothyroid (ช่วงแรกอาจ thyrotoxic)\n• histo: lymphoplasmacytic + germinal center + Hürthle cell + fibrosis · เสี่ยง MALT lymphoma\n• Graves = scalloped · subacute = giant cell · Riedel = fibrosis",
+   "mechanism": [
+    "autoimmune ต่อ TPO/thyroglobulin",
+    "CD8 T cell + antibody ทำลาย follicular cell",
+    "lymphocyte infiltrate + สร้าง germinal center",
+    {
+     "s": "follicle ฝ่อ เหลือ Hürthle cell (eosinophilic cytoplasm)",
+     "answer": true
+    },
+    "hypothyroid + goiter"
    ],
    "audit": {
     "source_file": "preclinic/2/endocrine/mcq/ข้อสอบ mcq/MCQ_Endocrine [Med PSU 44].pdf",
@@ -941,9 +1281,27 @@
     "E": "Multinucleated giant cell"
    },
    "correct": "E",
-   "explanation": "(Multinucleated giant cell)** — ปวดคอ ต่อมกดเจ็บ thyrotoxicosis = subacute granulomatous (de Quervain) thyroiditis → granuloma + multinucleated giant cell\nTrap: Hürthle change = Hashimoto; scalloping = Graves",
+   "explanation": "ปวดคอ ต่อมกดเจ็บ + thyrotoxicosis (FT4↑ TSH↓) = subacute thyroiditis → multinucleated giant cell",
    "image": null,
    "issues": [],
+   "option_why": {
+    "A": "Hürthle change = Hashimoto",
+    "B": "caseous necrosis = TB ไม่ใช่ granuloma ชนิดนี้",
+    "C": "scalloped = Graves (ไม่เจ็บ)",
+    "D": "lymphocyte infiltrate เด่นใน Hashimoto/painless thyroiditis",
+    "E": "✓ granulomatous inflammation + giant cell ล้อม colloid ที่รั่ว"
+   },
+   "key_concept": "• ปวดคอ + ESR สูง + RAIU ต่ำ = subacute (de Quervain) มักตามหลังติดเชื้อไวรัส\n• ระยะโรค: thyrotoxic → hypothyroid → หายเอง\n• ต่อมเจ็บ: subacute · ต่อมไม่เจ็บ: Graves, Hashimoto, silent thyroiditis",
+   "mechanism": [
+    "viral infection → ต่อมอักเสบแบบ granuloma",
+    "follicle ถูกทำลาย colloid รั่ว",
+    "hormone รั่วเข้าเลือด → thyrotoxicosis (FT4↑ TSH↓)",
+    {
+     "s": "macrophage รวมเป็น multinucleated giant cell ล้อม colloid",
+     "answer": true
+    },
+    "หลายสัปดาห์ → hypothyroid ชั่วคราว → ปกติ"
+   ],
    "audit": {
     "source_file": "preclinic/2/endocrine/mcq/ข้อสอบ mcq/MCQ_Endocrine [Med PSU 44].pdf",
     "page": 6,
@@ -988,9 +1346,27 @@
     "E": "Nodule of one parathyroid gland"
    },
    "correct": "D",
-   "explanation": "(Hyperplasia of parathyroid glands)** — CKD: Ca ต่ำ PO₄ สูง → secondary hyperparathyroidism → diffuse/nodular hyperplasia ทั้ง 4 ต่อม\nTrap: nodule ต่อมเดียว = adenoma (primary)",
+   "explanation": "CKD: Ca ต่ำ PO₄ สูง → secondary hyperparathyroidism → hyperplasia ทั้ง 4 ต่อม",
    "image": null,
    "issues": [],
+   "option_why": {
+    "A": "calcification เกิดนอกต่อม (metastatic) ไม่ใช่ลักษณะหลักของต่อม",
+    "B": "atrophy พบเมื่อ Ca สูงกด PTH ไม่ใช่ที่นี่",
+    "C": "fibrosis ไม่ใช่ผลหลัก",
+    "D": "✓ Ca ต่ำ + calcitriol ลด + PO₄ สูง กระตุ้นต่อมโตทั้ง 4 ต่อม",
+    "E": "nodule ต่อมเดียว = adenoma (primary)"
+   },
+   "key_concept": "• primary: Ca↑ PO₄↓ PTH↑ (adenoma ~85%) · secondary: Ca↓/ปกติ PO₄↑ PTH↑ (CKD) · tertiary: autonomous Ca↑ หลัง CKD นาน\n• CKD → renal osteodystrophy: osteitis fibrosa cystica\n• secondary = hyperplasia ทั้ง 4 ต่อม · primary = adenoma ต่อมเดียว",
+   "mechanism": [
+    "CKD: GFR ↓ → PO₄ ค้าง",
+    "1α-hydroxylase ↓ → calcitriol ↓ → Ca ดูดซึมลด",
+    "Ca ต่ำ + PO₄ สูง",
+    {
+     "s": "กระตุ้น chief cell ทุกต่อม → hyperplasia 4 ต่อม",
+     "answer": true
+    },
+    "PTH ↑ (secondary hyperparathyroidism)"
+   ],
    "audit": {
     "source_file": "preclinic/2/endocrine/mcq/ข้อสอบ mcq/MCQ_Endocrine [Med PSU 44].pdf",
     "page": 6,
@@ -1035,9 +1411,27 @@
     "E": "Inhibit conversion of T4 to T3"
    },
    "correct": "E",
-   "explanation": "(Inhibit conversion of T4 to T3)** — PTU ยับยั้ง type 1 deiodinase ที่ peripheral (MMI ไม่) จึงใช้ใน thyroid storm\nTrap: ทั้งคู่ยับยั้ง TPO (peroxidase, organification, coupling)",
+   "explanation": "PTU ต่างจาก MMI ตรงที่ยับยั้ง T4 → T3 ที่ peripheral (deiodinase)",
    "image": null,
    "issues": [],
+   "option_why": {
+    "A": "ทั้ง PTU และ MMI ยับยั้ง peroxidase",
+    "B": "ยับยั้ง organification เหมือนกันทั้งคู่",
+    "C": "ยับยั้ง coupling เหมือนกันทั้งคู่",
+    "D": "proteolysis (การหลั่ง hormone) ถูกยับยั้งโดย iodide/lithium",
+    "E": "✓ PTU ยับยั้ง type 1 deiodinase (MMI ไม่ยับยั้ง)"
+   },
+   "key_concept": "• thionamide (PTU, MMI) ยับยั้ง TPO ทั้งคู่ · PTU เพิ่ม: ยับยั้ง D1 (T4→T3)\n• PTU: thyroid storm และไตรมาสแรกของการตั้งครรภ์ · MMI: ใช้ทั่วไป วันละครั้ง (teratogenic: aplasia cutis)\n• ผลข้างเคียงร่วม: agranulocytosis, rash · PTU: hepatitis รุนแรง",
+   "mechanism": [
+    "PTU/MMI เข้า follicular cell",
+    "ยับยั้ง TPO → organification/coupling ลด (ทั้งสองตัว)",
+    {
+     "s": "เฉพาะ PTU: ยับยั้ง type 1 deiodinase ที่ peripheral",
+     "answer": true
+    },
+    "T4 → T3 ลดลง",
+    "T3 ในเลือดลดเร็ว (เหมาะกับ thyroid storm)"
+   ],
    "audit": {
     "source_file": "preclinic/2/endocrine/mcq/ข้อสอบ mcq/MCQ_Endocrine [Med PSU 44].pdf",
     "page": 6,
@@ -1076,9 +1470,17 @@
     "E": "RAI"
    },
    "correct": "A",
-   "explanation": "(PTU)** — PTU มี black box warning เรื่อง severe hepatitis/hepatic failure (โดยเฉพาะเด็ก) — MMI ทำ cholestatic jaundice\nTrap: agranulocytosis เกิดได้ทั้งสองตัว",
+   "explanation": "PTU มี black box warning เรื่อง severe hepatitis/hepatic failure",
    "image": null,
    "issues": [],
+   "option_why": {
+    "A": "✓ PTU: hepatitis/ตับวายรุนแรง (black box โดยเฉพาะเด็ก)",
+    "B": "MMI ทำ cholestatic jaundice เป็นหลัก ความรุนแรงน้อยกว่า",
+    "C": "iodide ใช้ระยะสั้นก่อนผ่าตัด ไม่ใช่พิษต่อตับ",
+    "D": "thiocyanate ยับยั้ง iodide transport ปัจจุบันแทบไม่ใช้",
+    "E": "RAI ไม่เกี่ยวกับตับ ผลคือ hypothyroid"
+   },
+   "key_concept": "• PTU: hepatitis รุนแรงถึงต้องปลูกถ่ายตับ → ไม่ใช้เป็นยาแรก ยกเว้นไตรมาสแรกการตั้งครรภ์/thyroid storm\n• MMI: cholestatic jaundice, teratogenic (aplasia cutis)\n• ผลข้างเคียงร่วม: agranulocytosis (เจ็บคอ/ไข้ → ตรวจ WBC)",
    "audit": {
     "source_file": "preclinic/2/endocrine/mcq/ข้อสอบ mcq/MCQ_Endocrine [Med PSU 44].pdf",
     "page": 6,
@@ -1123,9 +1525,17 @@
     "E": "Fail to treat with thioamide"
    },
    "correct": "B",
-   "explanation": "(Pregnancy)** — RAI ห้ามใน pregnancy และ breastfeeding (ผ่านรก/น้ำนม)\nTrap: ใช้ได้ในผู้สูงอายุ และใช้เมื่อ thionamide ไม่ได้ผล",
+   "explanation": "RAI ห้ามใช้ในการตั้งครรภ์และให้นมบุตร",
    "image": null,
    "issues": [],
+   "option_why": {
+    "A": "ผู้สูงอายุใช้ได้ (มักเลือก RAI)",
+    "B": "✓ I-131 ผ่านรกทำลายไทรอยด์ทารก และออกทางน้ำนม",
+    "C": "heart failure ไม่ใช่ข้อห้าม (คุมด้วย thionamide ก่อน)",
+    "D": "severe thyrotoxicosis ต้องเตรียมด้วย thionamide ก่อน ไม่ใช่ข้อห้าม",
+    "E": "ไม่ตอบสนอง thionamide = ข้อบ่งชี้ของ RAI"
+   },
+   "key_concept": "• RAI: ข้อบ่งชี้ Graves, toxic nodule, ไม่ตอบสนอง/แพ้ thionamide · ข้อห้ามสำคัญ: ตั้งครรภ์ ให้นมบุตร\n• ผลตามมา: hypothyroid ถาวร → ต้องกิน levothyroxine ตลอด\n• Graves ophthalmopathy รุนแรงอาจแย่ลงหลัง RAI",
    "audit": {
     "source_file": "preclinic/2/endocrine/mcq/ข้อสอบ mcq/MCQ_Endocrine [Med PSU 44].pdf",
     "page": 7,
@@ -1164,9 +1574,27 @@
     "E": "Transferring cholesterol from LDL to peripheral tissue"
    },
    "correct": "C",
-   "explanation": "(Conversion of discoidal HDL to HDL3)** — LCAT esterify cholesterol → CE เข้าแกน → discoidal HDL กลายเป็น spherical HDL3\nTrap: CE-TG exchange เป็นของ CETP",
+   "explanation": "LCAT esterify cholesterol → discoidal HDL กลายเป็น spherical HDL3",
    "image": null,
    "issues": [],
+   "option_why": {
+    "A": "HDL uptake ที่ตับ (SR-BI) ไม่เกี่ยวกับ LCAT",
+    "B": "LDL จับ LDL receptor ปกติ (apoB-100)",
+    "C": "✓ LCAT (กระตุ้นด้วย apoA-I) เปลี่ยน free cholesterol → cholesteryl ester เข้าแกน HDL",
+    "D": "chylomicron → remnant ใช้ LPL",
+    "E": "ส่ง cholesterol จาก LDL ไป peripheral ไม่ใช่งานของ LCAT"
+   },
+   "key_concept": "• HDL maturation: nascent (discoidal) + free cholesterol → LCAT → CE → HDL3 → HDL2\n• LCAT deficiency: HDL ต่ำ, corneal opacity, hemolytic anemia, proteinuria\n• CETP: ถ่าย CE จาก HDL → VLDL/LDL แลก TG",
+   "mechanism": [
+    "ABCA1 ส่ง free cholesterol ให้ nascent HDL (discoidal)",
+    "apoA-I กระตุ้น LCAT",
+    {
+     "s": "LCAT esterify cholesterol → CE เข้าแกนกลาง",
+     "answer": true
+    },
+    "HDL กลมโตขึ้น (HDL3 → HDL2)",
+    "reverse cholesterol transport ไปตับ"
+   ],
    "audit": {
     "source_file": "preclinic/2/endocrine/mcq/ข้อสอบ mcq/MCQ_Endocrine [Med PSU 44].pdf",
     "page": 7,
@@ -1205,9 +1633,27 @@
     "E": "Transferring cholesterol from LDL to peripheral tissue"
    },
    "correct": "C",
-   "explanation": "(Conversion of discoidal HDL to HDL3)** — ข้อซ้ำกับข้อ 52 (โจทย์เขียนว่า 'effective' หมายถึง 'affected')",
+   "explanation": "LCAT ขาด → discoidal HDL ไม่เปลี่ยนเป็น HDL3 (ข้อซ้ำกับข้อ 52)",
    "image": null,
    "issues": [],
+   "option_why": {
+    "A": "HDL uptake ที่ตับ (SR-BI) ไม่เกี่ยวกับ LCAT",
+    "B": "LDL จับ LDL receptor ปกติ (apoB-100)",
+    "C": "✓ LCAT เปลี่ยน free cholesterol → cholesteryl ester เข้าแกน HDL ทำให้ discoidal → HDL3",
+    "D": "chylomicron → remnant ใช้ LPL",
+    "E": "ส่ง cholesterol จาก LDL ไป peripheral ไม่ใช่งานของ LCAT"
+   },
+   "key_concept": "• โจทย์ซ้ำกับข้อ 52 ใช้หลักเดียวกัน\n• HDL maturation: nascent (discoidal) → LCAT → CE → HDL3 → HDL2\n• LCAT deficiency: HDL ต่ำ, corneal opacity, hemolytic anemia, proteinuria",
+   "mechanism": [
+    "ABCA1 ส่ง free cholesterol ให้ nascent HDL",
+    "apoA-I กระตุ้น LCAT",
+    {
+     "s": "LCAT esterify cholesterol → CE เข้าแกนกลาง",
+     "answer": true
+    },
+    "HDL กลมโตขึ้น (HDL3 → HDL2)",
+    "reverse cholesterol transport ไปตับ"
+   ],
    "audit": {
     "source_file": "preclinic/2/endocrine/mcq/ข้อสอบ mcq/MCQ_Endocrine [Med PSU 44].pdf",
     "page": 7,
@@ -1252,10 +1698,28 @@
     "E": "LDL cholesterol"
    },
    "correct": "C",
-   "explanation": "(Triglyceride)** — serum milky + creamy layer หลังแช่เย็น = chylomicron สูง (type I) → TG สูงมาก (> 1000 mg/dL) → pancreatitis, eruptive xanthoma\nTrap: cholesterol สูงเล็กน้อยเท่านั้น",
+   "explanation": "Serum milky + creamy layer หลังแช่เย็น = chylomicron → triglyceride สูงมาก",
    "image": null,
    "issues": [
     "ช้อยส์ E AI เติมให้ครบ 5 ตัว"
+   ],
+   "option_why": {
+    "A": "cholesterol สูงเล็กน้อย ไม่ใช่ตัวหลัก",
+    "B": "phospholipid ขนใน lipoprotein แต่ไม่ใช่ตัวที่ทำให้ serum ขุ่น",
+    "C": "✓ chylomicron ขน TG จากอาหาร (> 1000 mg/dL) ลอยเป็น creamy layer",
+    "D": "FFA จับ albumin ไม่ทำให้ serum ขุ่น",
+    "E": "LDL ไม่ทำให้เกิด creamy layer"
+   },
+   "key_concept": "• fridge test: creamy layer บน + ใต้ใส = chylomicron (type I) · ขุ่นทั้งหลอด = VLDL (type IV/V)\n• TG > 1000 → acute pancreatitis, eruptive xanthoma, lipemia retinalis\n• type I: LPL หรือ apoC-II ขาด (พบในเด็ก)",
+   "mechanism": [
+    "LPL/apoC-II บกพร่อง",
+    "chylomicron ย่อยไม่ได้ ค้างในเลือด",
+    {
+     "s": "TG ในเลือดสูงมาก (> 1000 mg/dL)",
+     "answer": true
+    },
+    "serum ขุ่นเหมือนนม + creamy layer",
+    "pancreatitis + eruptive xanthoma"
    ],
    "audit": {
     "source_file": "preclinic/2/endocrine/mcq/ข้อสอบ mcq/MCQ_Endocrine [Med PSU 44].pdf",
@@ -1297,9 +1761,27 @@
     "E": "Apolipoprotein B48"
    },
    "correct": "B",
-   "explanation": "(LDL receptor)** — MI ตั้งแต่อายุ 8 ปี + cholesterol สูงมาก = homozygous familial hypercholesterolemia (LDL receptor defect)\nTrap: apoC-II/LPL defect ทำ TG สูง",
+   "explanation": "MI อายุ 8 ปี + cholesterol สูงมาก = homozygous FH (LDL receptor defect)",
    "image": null,
    "issues": [],
+   "option_why": {
+    "A": "hepatic lipase ผิดปกติทำ remnant/TG ผิดปกติ ไม่ใช่ cholesterol สูงจน MI วัยเด็ก",
+    "B": "✓ LDL receptor ขาด → ตับดึง LDL กลับไม่ได้ → LDL-C สูงมาก (> 500 mg/dL)",
+    "C": "apoC-II ขาด → TG สูง (chylomicronemia)",
+    "D": "apoE ผิดปกติ → type III (remnant สูง) ไม่ถึง MI วัยเด็ก",
+    "E": "apoB-48 ขาด → chylomicron ไม่ถูกสร้าง ไขมันต่ำ"
+   },
+   "key_concept": "• FH: LDL receptor (หรือ apoB-100/PCSK9) → LDL-C สูง, tendon xanthoma, arcus ก่อนวัย\n• homozygous: MI/เสียชีวิตตั้งแต่วัยเด็ก · heterozygous: CAD อายุ 30–50\n• TG สูง = LPL/apoC-II · remnant สูง = apoE2",
+   "mechanism": [
+    "LDL receptor บนตับบกพร่อง",
+    "LDL ไม่ถูกดึงเข้าเซลล์",
+    {
+     "s": "LDL-C ในเลือดสูงมาก",
+     "answer": true
+    },
+    "LDL ถูก macrophage กินเป็น foam cell → atherosclerosis",
+    "MI ตั้งแต่วัยเด็ก"
+   ],
    "audit": {
     "source_file": "preclinic/2/endocrine/mcq/ข้อสอบ mcq/MCQ_Endocrine [Med PSU 44].pdf",
     "page": 8,
@@ -1344,12 +1826,30 @@
     "E": "Inhibit COX-1 enzyme directly"
    },
    "correct": "C",
-   "explanation": "(Inhibit cytokine production)** — glucocorticoid → ยับยั้ง NF-κB/AP-1 → IL-1, IL-6, TNF ↓ + annexin A1 → PLA₂ ↓ + ลด COX-2 expression → ต้านการอักเสบ (และให้ stress dose ใน Addison)\nTrap: ไม่ได้เพิ่ม phagocytosis",
+   "explanation": "Glucocorticoid ยับยั้ง NF-κB/AP-1 → cytokine (IL-1, IL-6, TNF) ลดลง",
    "image": null,
    "issues": [
     "ผู้เฉลยวงทั้ง inhibit COX2 และ inhibit cytokine production",
     "ช้อยส์ E AI เติมให้ครบ 5 ตัว",
     "ต้นฉบับวงไว้หลายตัว"
+   ],
+   "option_why": {
+    "A": "ยับยั้ง COX-1 เป็นกลไกของ NSAID ไม่ใช่ steroid",
+    "B": "ต้นฉบับวงไว้ด้วย: steroid ลด COX-2 expression ที่ระดับ gene แต่ไม่ได้จับยับยั้ง enzyme เหมือน NSAID",
+    "C": "✓ ยับยั้ง transcription ของ cytokine (IL-1, IL-6, TNF) → ต้านการอักเสบ",
+    "D": "ไม่เพิ่ม phagocytosis (steroid กด macrophage)",
+    "E": "inhibit COX-1 โดยตรง = aspirin/NSAID ไม่ใช่ steroid"
+   },
+   "key_concept": "• steroid: ยับยั้ง gene transcription (NF-κB) · NSAID: ยับยั้ง COX enzyme โดยตรง\n• steroid ลดทั้ง PLA₂ (annexin A1) และ COX-2 expression จึงแรงกว่า NSAID\n• Addison + ติดเชื้อ/ผ่าตัด ต้องเพิ่ม glucocorticoid (stress dose)",
+   "mechanism": [
+    "glucocorticoid จับ receptor → เข้า nucleus",
+    "ยับยั้ง NF-κB/AP-1",
+    {
+     "s": "cytokine (IL-1, IL-6, TNF) สร้างลดลง",
+     "answer": true
+    },
+    "COX-2 และ PLA₂ activity ลดลง",
+    "การอักเสบลดลง"
    ],
    "audit": {
     "source_file": "preclinic/2/endocrine/mcq/ข้อสอบ mcq/MCQ_Endocrine [Med PSU 44].pdf",
@@ -1400,9 +1900,27 @@
     "E": "Hyperaldosteronism"
    },
    "correct": "D",
-   "explanation": "(ACTH suppression)** — dexamethasone ปลอมในยาสมุนไพรระยะยาว → HPA axis ถูกกด (ACTH ↓, adrenal atrophy) → หยุดทันที → acute adrenal insufficiency (คลื่นไส้ อ่อนแรง hypotension)\nTrap: ตอนหยุดยา cortisol ต่ำ (ไม่ใช่ hypercortisolism)",
+   "explanation": "Dexamethasone ปลอมระยะยาว → ACTH ถูกกด adrenal ฝ่อ → หยุดทันทีเกิด adrenal insufficiency",
    "image": null,
    "issues": [],
+   "option_why": {
+    "A": "ตอนหยุดยา glucose ต่ำได้ ไม่ใช่ hyperglycemia",
+    "B": "CRH ถูกกดด้วย negative feedback ไม่ใช่ถูกกระตุ้น",
+    "C": "ตอนหยุดยา cortisol ต่ำ ไม่ใช่ hypercortisolism",
+    "D": "✓ steroid ภายนอกกด CRH/ACTH → cortex ฝ่อ → หยุดทันที cortisol ไม่พอ",
+    "E": "aldosterone ปกติเพราะคุมด้วย RAAS (secondary AI)"
+   },
+   "key_concept": "• secondary (iatrogenic) AI: ACTH ต่ำ → cortisol ต่ำ แต่ aldosterone ปกติ → ไม่มี hyperK/hyperpigmentation\n• ใช้ steroid นานกว่า ~3 สัปดาห์ ต้อง taper ไม่หยุดทันที\n• ยาสมุนไพร/ยาลูกกลอนที่แอบใส่ steroid → Cushing แล้วถอนยา → AI",
+   "mechanism": [
+    "dexamethasone ระยะยาว",
+    "negative feedback กด CRH/ACTH",
+    {
+     "s": "ACTH suppression → fasciculata/reticularis ฝ่อ",
+     "answer": true
+    },
+    "หยุดยาทันที cortisol ไม่พอ",
+    "คลื่นไส้ อ่อนแรง hypotension (adrenal crisis)"
+   ],
    "audit": {
     "source_file": "preclinic/2/endocrine/mcq/ข้อสอบ mcq/MCQ_Endocrine [Med PSU 44].pdf",
     "page": 8,
@@ -1447,9 +1965,27 @@
     "E": "Inhibition 11-beta hydroxysteroid dehydrogenase 1 (11-beta HSD1)"
    },
    "correct": "B",
-   "explanation": "(Increase hepatic CYP3A4)** — rifampicin เป็น potent CYP3A4 inducer → prednisolone clearance ↑ → ระดับยาไม่พอ → adrenal insufficiency (ต้องเพิ่มขนาด steroid 2 เท่า)\nTrap: ไม่ใช่ rifampicin toxicity โดยตรง",
+   "explanation": "Rifampicin induce CYP3A4 → prednisolone ถูกกำจัดเร็ว → adrenal insufficiency",
    "image": null,
    "issues": [],
+   "option_why": {
+    "A": "ไม่ใช่ toxicity โดยตรง แต่เป็น drug interaction",
+    "B": "✓ rifampicin เป็น inducer แรงของ CYP3A4 → ระดับ steroid ตก",
+    "C": "ACTH ถูกกดจาก prednisolone อยู่แล้ว ไม่ใช่ผลจาก rifampicin",
+    "D": "P-gp ก็ถูก induce แต่กลไกหลักของ steroid คือ CYP3A4",
+    "E": "11β-HSD1 เปลี่ยน prednisone → prednisolone (activate) ไม่ใช่กลไกนี้"
+   },
+   "key_concept": "• rifampicin = inducer แรงของ CYP3A4/2C: ลดระดับ steroid, warfarin, OCP, ยา HIV\n• ผู้ป่วยที่รับ steroid ประจำต้องเพิ่มขนาด (~2 เท่า) เมื่อเริ่ม rifampicin\n• Addison + TB: ระวัง adrenal crisis",
+   "mechanism": [
+    "rifampicin → PXR ↑ → CYP3A4 ↑",
+    "prednisolone ถูก metabolize เร็วขึ้น",
+    {
+     "s": "hepatic CYP3A4 ↑ → clearance ของ steroid เพิ่ม",
+     "answer": true
+    },
+    "ระดับ steroid ต่ำกว่าที่ HPA ที่ถูกกดอยู่ต้องการ",
+    "acute adrenal insufficiency"
+   ],
    "audit": {
     "source_file": "preclinic/2/endocrine/mcq/ข้อสอบ mcq/MCQ_Endocrine [Med PSU 44].pdf",
     "page": 9,
@@ -1494,9 +2030,27 @@
     "E": "Hypertension"
    },
    "correct": "C",
-   "explanation": "(Hyperkalemia)** — primary adrenal insufficiency ขาดทั้ง cortisol และ aldosterone; fludrocortisone (mineralocorticoid) แก้ hyperkalemia, hyponatremia, hypotension\nTrap: hypernatremia/hypertension เป็นผลข้างเคียงถ้าให้มากเกิน",
+   "explanation": "Fludrocortisone (mineralocorticoid) แก้ hyperkalemia ที่ hydrocortisone ไม่พอ",
    "image": null,
    "issues": [],
+   "option_why": {
+    "A": "diarrhea เป็นอาการจาก cortisol ขาด แก้ด้วย hydrocortisone",
+    "B": "vomiting เป็นอาการจาก cortisol ขาด แก้ด้วย hydrocortisone",
+    "C": "✓ ขาด aldosterone → K⁺ ค้าง · fludrocortisone ทำให้ขับ K⁺",
+    "D": "hypernatremia เป็นผลข้างเคียงถ้าให้เกิน (ปกติ Na ต่ำ)",
+    "E": "hypertension เป็นผลข้างเคียงถ้าให้เกิน"
+   },
+   "key_concept": "• primary AI ขาดทั้ง cortisol + aldosterone → ต้อง hydrocortisone + fludrocortisone\n• secondary AI (ACTH ต่ำ) ไม่ต้อง fludrocortisone เพราะ aldosterone ปกติ\n• ให้เกิน: HTN, hypoK, edema",
+   "mechanism": [
+    "primary AI: aldosterone ขาด",
+    "Na⁺ เสีย K⁺ ค้าง",
+    "volume ↓ BP ↓ + hyperkalemia",
+    {
+     "s": "fludrocortisone จับ mineralocorticoid receptor → ขับ K⁺ ดูดกลับ Na⁺",
+     "answer": true
+    },
+    "hyperkalemia/hypotension ดีขึ้น"
+   ],
    "audit": {
     "source_file": "preclinic/2/endocrine/mcq/ข้อสอบ mcq/MCQ_Endocrine [Med PSU 44].pdf",
     "page": 9,
@@ -1535,9 +2089,27 @@
     "E": "None of above"
    },
    "correct": "C",
-   "explanation": "(Decrease calcium excretion at kidneys)** — PTH: Ca reabsorption ที่ DCT ↑ (Ca excretion ↓), phosphate excretion ↑ (phosphaturia), bone resorption ↑, 1α-hydroxylase ↑\nTrap: PTH เพิ่ม bone resorption และเพิ่ม phosphate excretion",
+   "explanation": "PTH ↑ Ca reabsorption ที่ DCT (Ca excretion ↓) และ ↑ phosphate excretion",
    "image": null,
    "issues": [],
+   "option_why": {
+    "A": "PTH ↑ bone resorption ไม่ใช่ลด",
+    "B": "bone resorption ปล่อย phosphate ออกมาด้วย (ไม่ใช่ลด)",
+    "C": "✓ DCT ดูด Ca²⁺ กลับเพิ่ม (TRPV5) จึงขับ Ca ลดลง",
+    "D": "PTH ↑ phosphate excretion ที่ proximal tubule (ลด NaPi-IIa)",
+    "E": "มีตัวเลือกที่ถูก (C)"
+   },
+   "key_concept": "• PTH: Ca↑ PO₄↓ — กระดูก resorption ↑ · ไต Ca reabsorb ↑ PO₄ ขับ ↑ · 1α-hydroxylase ↑ ลำไส้ดูดซึม Ca ↑\n• PTH ออกฤทธิ์ต่อกระดูกผ่าน osteoblast (RANKL) ไม่ใช่ osteoclast ตรง ๆ\n• calcitonin ตรงข้าม: ยับยั้ง osteoclast",
+   "mechanism": [
+    "Ca²⁺ ในเลือดต่ำ → PTH ↑",
+    "PTH จับ PTH1R (Gs → cAMP) ที่กระดูกและไต",
+    {
+     "s": "ไต: DCT ดูด Ca²⁺ กลับ ↑ · PO₄ ขับ ↑ · calcitriol ↑",
+     "answer": true
+    },
+    "กระดูก: osteoclast ทำงานมากขึ้นผ่าน RANKL",
+    "Ca²⁺ ในเลือดกลับสู่ปกติ"
+   ],
    "audit": {
     "source_file": "preclinic/2/endocrine/mcq/ข้อสอบ mcq/MCQ_Endocrine [Med PSU 44].pdf",
     "page": 9,
@@ -1576,9 +2148,27 @@
     "E": "Parathyroid gland"
    },
    "correct": "C",
-   "explanation": "(Kidney)** — 25(OH)D → 1,25(OH)₂D โดย 1α-hydroxylase (CYP27B1) ที่ proximal tubule ของไต (กระตุ้นด้วย PTH, PO₄ ต่ำ)\nTrap: ตับทำ 25-hydroxylation; ผิวหนังสร้าง cholecalciferol",
+   "explanation": "25(OH)D → 1,25(OH)₂D ด้วย 1α-hydroxylase ที่ proximal tubule ของไต",
    "image": null,
    "issues": [],
+   "option_why": {
+    "A": "ผิวหนังสร้าง cholecalciferol จาก 7-dehydrocholesterol + UVB",
+    "B": "ตับทำ 25-hydroxylation",
+    "C": "✓ CYP27B1 ที่ proximal tubule ถูกกระตุ้นด้วย PTH และ PO₄ ต่ำ",
+    "D": "ลำไส้เป็นตัวรับผลของ calcitriol (ดูดซึม Ca²⁺) ไม่ได้สร้าง",
+    "E": "parathyroid มี CaSR/VDR แต่ไม่ได้เปลี่ยนวิตามิน D"
+   },
+   "key_concept": "• วิตามิน D: ผิวหนัง (D3) → ตับ 25-hydroxylation → ไต 1α-hydroxylation = calcitriol\n• CKD: 1α-hydroxylase ↓ → calcitriol ต่ำ → secondary hyperparathyroidism\n• granuloma (sarcoid) macrophage ทำ 1α-hydroxylation เองได้ → hypercalcemia",
+   "mechanism": [
+    "UVB: 7-dehydrocholesterol → cholecalciferol (ผิวหนัง)",
+    "25-hydroxylase ที่ตับ → 25(OH)D (รูปเก็บ)",
+    {
+     "s": "1α-hydroxylase (CYP27B1) ที่ไต → 1,25(OH)₂D",
+     "answer": true
+    },
+    "ถูกกระตุ้นโดย PTH + PO₄ ต่ำ",
+    "Ca/PO₄ ดูดซึมที่ลำไส้ ↑"
+   ],
    "audit": {
     "source_file": "preclinic/2/endocrine/mcq/ข้อสอบ mcq/MCQ_Endocrine [Med PSU 44].pdf",
     "page": 9,
@@ -1623,9 +2213,27 @@
     "E": "Close ATP sensitive potassium channel"
    },
    "correct": "E",
-   "explanation": "(Close ATP-sensitive potassium channel)** — glucose → ATP ↑ → ปิด K-ATP → depolarization → voltage-gated Ca²⁺ เปิด → insulin exocytosis\nTrap: Ca²⁺ channel เปิด (ไม่ใช่ปิด); oxidation และ glucokinase เพิ่มขึ้น",
+   "explanation": "Glucose → ATP ↑ → ปิด K-ATP channel → depolarize → insulin exocytosis",
    "image": null,
    "issues": [],
+   "option_why": {
+    "A": "oxidation ของ glucose เพิ่มขึ้น (ได้ ATP) ไม่ใช่ลด",
+    "B": "Ca channel (VGCC) ต้องเปิด จึงหลั่ง insulin",
+    "C": "GLUT2 transport เพิ่ม ไม่ใช่ลด",
+    "D": "glucokinase ทำงานมากขึ้นเมื่อ glucose สูง",
+    "E": "✓ ปิด ATP-sensitive K⁺ channel → depolarization"
+   },
+   "key_concept": "• sulfonylurea/glinide ปิด K-ATP (SUR1) กระตุ้น insulin แม้ glucose ไม่สูง → เสี่ยง hypoglycemia\n• glucokinase = glucose sensor ของ β-cell (MODY2 = glucokinase ผิดปกติ)\n• incretin (GLP-1) ขยายผลผ่าน cAMP ขึ้นกับ glucose",
+   "mechanism": [
+    "glucose เข้า β-cell (GLUT2) → glucokinase",
+    "glycolysis/oxidation → ATP/ADP ↑",
+    {
+     "s": "ปิด ATP-sensitive K⁺ channel",
+     "answer": true
+    },
+    "depolarization → voltage-gated Ca²⁺ channel เปิด Ca²⁺ เข้า",
+    "insulin exocytosis"
+   ],
    "audit": {
     "source_file": "preclinic/2/endocrine/mcq/ข้อสอบ mcq/MCQ_Endocrine [Med PSU 44].pdf",
     "page": 10,
@@ -1670,9 +2278,27 @@
     "E": "Increase TG in hepatic"
    },
    "correct": "B",
-   "explanation": "(Increase glycogenolysis)** — glucagon → hepatic glycogenolysis ↑, gluconeogenesis ↑, ketogenesis ↑, lipolysis ↑ → plasma glucose ↑\nTrap: glucagon ลด TG synthesis ในตับ",
+   "explanation": "Glucagon ↑ glycogenolysis และ gluconeogenesis → glucose ในเลือดสูงขึ้น",
    "image": null,
    "issues": [],
+   "option_why": {
+    "A": "glucagon เพิ่ม plasma glucose ไม่ใช่ลด",
+    "B": "✓ glucagon → glycogen phosphorylase ที่ตับ → glycogenolysis ↑",
+    "C": "gluconeogenesis ถูกกระตุ้น (ไม่ลด)",
+    "D": "glucagon กระตุ้น HSL → lipolysis ไม่ใช่ยับยั้ง",
+    "E": "glucagon ลด lipogenesis/TG ในตับ"
+   },
+   "key_concept": "• glucagon (อดอาหาร): glycogenolysis↑ gluconeogenesis↑ ketogenesis↑ lipolysis↑ · insulin ตรงข้าม\n• glucagon ไม่ทำให้ muscle glycogen สลาย (กล้ามเนื้อไม่มี glucagon receptor/G6Pase)\n• ใช้เป็นยาแก้ hypoglycemia รุนแรง (IM/IV)",
+   "mechanism": [
+    "glucose ต่ำ → α-cell หลั่ง glucagon",
+    "จับ receptor ที่ตับ (Gs → cAMP → PKA)",
+    {
+     "s": "phosphorylase kinase → glycogen phosphorylase active → glycogenolysis ↑",
+     "answer": true
+    },
+    "gluconeogenesis + ketogenesis ↑",
+    "ตับปล่อย glucose เข้าเลือด"
+   ],
    "audit": {
     "source_file": "preclinic/2/endocrine/mcq/ข้อสอบ mcq/MCQ_Endocrine [Med PSU 44].pdf",
     "page": 10,
@@ -1717,11 +2343,29 @@
     "E": "HbA1c"
    },
    "correct": "A",
-   "explanation": "(Insulin level)** — T1DM insulin/C-peptide ต่ำมาก (autoimmune β-cell destruction); T2DM insulin ปกติหรือสูงในระยะแรก (insulin resistance) — ข้อซ้ำกับข้อ 77\nTrap: glucose สูงทั้งสองแบบ",
+   "explanation": "T1DM ต่างจาก T2DM ที่ระดับ insulin: T1 ต่ำมาก, T2 ปกติ/สูงในระยะแรก",
    "image": null,
    "issues": [
     "ผู้จำจำได้ 2 ช้อยส์",
     "ช้อยส์ C, D, E AI เติมให้ครบ 5 ตัว"
+   ],
+   "option_why": {
+    "A": "✓ T1DM insulin/C-peptide ต่ำมาก (autoimmune) · T2DM insulin resistance ปกติ/สูง",
+    "B": "glucose สูงทั้งสองแบบ",
+    "C": "glucosuria พบเมื่อเกิน renal threshold ทั้งสองแบบ",
+    "D": "polyuria จาก osmotic diuresis ทั้งสองแบบ",
+    "E": "HbA1c สูงทั้งสองแบบ"
+   },
+   "key_concept": "• T1: insulin/C-peptide ต่ำมาก, anti-GAD/IA-2, DKA, ผอม, เด็ก/วัยรุ่น · T2: insulin resistance → insulin ปกติ/สูงก่อนค่อยลด\n• อาการจาก glucose สูง (polyuria, polydipsia, glucosuria) เหมือนกัน → แยกด้วยสาเหตุ/ระดับ insulin\n• ข้อ 76 และ 77 เป็นโจทย์เดียวกัน",
+   "mechanism": [
+    "T1: autoimmune ทำลาย β-cell",
+    "insulin/C-peptide ต่ำมาก",
+    {
+     "s": "ระดับ insulin ต่างจาก T2DM (T2 ปกติ/สูง)",
+     "answer": true
+    },
+    "glucose สูง + ketone → DKA",
+    "ต้องฉีด insulin"
    ],
    "audit": {
     "source_file": "preclinic/2/endocrine/mcq/ข้อสอบ mcq/MCQ_Endocrine [Med PSU 44].pdf",
@@ -1765,9 +2409,17 @@
     "E": "Waist circumference"
    },
    "correct": "A",
-   "explanation": "(Insulin level)** — ความต่างที่เป็นพยาธิกำเนิดหลักคือระดับ insulin; onset age, weight, waist ต่างกันโดยเฉลี่ยแต่ไม่แน่นอน\nTrap: glucose สูงทั้งสองแบบ",
+   "explanation": "T1DM กับ T2DM ต่างกันที่ระดับ insulin (ข้อซ้ำกับข้อ 76)",
    "image": null,
    "issues": [],
+   "option_why": {
+    "A": "✓ พยาธิกำเนิดหลักต่างที่ระดับ insulin",
+    "B": "glucose สูงทั้งสองแบบ",
+    "C": "น้ำหนักต่างโดยเฉลี่ย (T2 มักอ้วน) แต่ไม่แน่นอน",
+    "D": "อายุเริ่มต่างโดยเฉลี่ย แต่ไม่แน่นอน",
+    "E": "รอบเอวเป็นปัจจัยเสี่ยง T2 แต่ไม่ใช่ตัวแยกโรค"
+   },
+   "key_concept": "• ข้อซ้ำกับข้อ 76 ใช้หลักเดียวกัน\n• ตัวแยกที่เชื่อถือได้: insulin/C-peptide และ autoantibody (anti-GAD)\n• น้ำหนัก/อายุ/รอบเอว เป็นเพียงแนวโน้ม ไม่ใช่เกณฑ์วินิจฉัย",
    "audit": {
     "source_file": "preclinic/2/endocrine/mcq/ข้อสอบ mcq/MCQ_Endocrine [Med PSU 44].pdf",
     "page": 10,
@@ -1812,10 +2464,28 @@
     "E": "Glibenclamide"
    },
    "correct": "A",
-   "explanation": "(Metformin)** — metformin ลด hepatic gluconeogenesis และเพิ่ม insulin sensitivity (AMPK) ไม่เพิ่มการหลั่ง insulin; repaglinide/glipizide (secretagogue) และ DPP-4i (incretin) เพิ่มการหลั่ง\nTrap: DPP-4i เพิ่ม insulin แบบ glucose-dependent",
+   "explanation": "Metformin ลด hepatic gluconeogenesis (AMPK) ไม่กระตุ้นการหลั่ง insulin",
    "image": null,
    "issues": [
     "ช้อยส์ E AI เติมให้ครบ 5 ตัว"
+   ],
+   "option_why": {
+    "A": "✓ ไม่ใช่ secretagogue: ลด gluconeogenesis + เพิ่ม insulin sensitivity",
+    "B": "repaglinide (glinide) ปิด K-ATP ↑ insulin",
+    "C": "DPP-4i ↑ GLP-1 → insulin ↑ แบบขึ้นกับ glucose",
+    "D": "glipizide (sulfonylurea) ปิด K-ATP ↑ insulin",
+    "E": "glibenclamide (sulfonylurea) ↑ insulin"
+   },
+   "key_concept": "• secretagogue: sulfonylurea, glinide (K-ATP) · incretin-based: DPP-4i, GLP-1 RA\n• non-secretagogue: metformin, TZD, SGLT2i, acarbose → ตัวเองไม่ทำให้ hypoglycemia\n• metformin: ยาแรก ไม่เพิ่มน้ำหนัก ระวัง lactic acidosis (eGFR ต่ำ)",
+   "mechanism": [
+    "metformin เข้าตับ",
+    "activate AMPK (ยับยั้ง mitochondrial complex I)",
+    {
+     "s": "gluconeogenesis ที่ตับลดลง + insulin sensitivity ↑ (ไม่เพิ่มการหลั่ง insulin)",
+     "answer": true
+    },
+    "glucose ในเลือดลด",
+    "ไม่ทำให้ hypoglycemia"
    ],
    "audit": {
     "source_file": "preclinic/2/endocrine/mcq/ข้อสอบ mcq/MCQ_Endocrine [Med PSU 44].pdf",
@@ -1863,9 +2533,27 @@
     "E": "Pioglitazone"
    },
    "correct": "E",
-   "explanation": "(Pioglitazone)** — TZD (PPAR-γ) → renal Na⁺/water retention → edema, weight gain, heart failure (ห้ามใน NYHA III–IV)\nTrap: metformin ไม่ทำ weight gain",
+   "explanation": "TZD (PPAR-γ) → renal Na⁺/water retention → edema, น้ำหนักขึ้น, heart failure",
    "image": null,
    "issues": [],
+   "option_why": {
+    "A": "acarbose มีผลข้างเคียงทางลำไส้ (ท้องอืด) ไม่ทำให้บวม",
+    "B": "glipizide ทำน้ำหนักขึ้น + hypoglycemia แต่ไม่ทำ HF",
+    "C": "metformin น้ำหนักคงที่หรือลด",
+    "D": "repaglinide: hypoglycemia, น้ำหนักขึ้นเล็กน้อย ไม่ทำ edema/HF",
+    "E": "✓ pioglitazone (TZD) ทำ fluid retention → edema/HF"
+   },
+   "key_concept": "• TZD: edema/HF, น้ำหนักขึ้น, กระดูกหัก, bladder ca (pioglitazone) — ห้ามใน HF NYHA III–IV\n• sulfonylurea/glinide/insulin: น้ำหนักขึ้น + hypoglycemia\n• metformin/SGLT2i/GLP-1 RA: น้ำหนักคงที่หรือลด",
+   "mechanism": [
+    "pioglitazone จับ PPAR-γ",
+    "ปรับ gene เพิ่ม insulin sensitivity",
+    {
+     "s": "renal Na⁺/water retention (collecting duct)",
+     "answer": true
+    },
+    "plasma volume ↑ → edema, น้ำหนักขึ้น",
+    "preload ↑ → heart failure ในรายเสี่ยง"
+   ],
    "audit": {
     "source_file": "preclinic/2/endocrine/mcq/ข้อสอบ mcq/MCQ_Endocrine [Med PSU 44].pdf",
     "page": 11,
@@ -1904,9 +2592,27 @@
     "E": "Pioglitazone"
    },
    "correct": "A",
-   "explanation": "(Metformin)** — biguanide → lactic acidosis (ยับยั้ง hepatic gluconeogenesis จาก lactate)\nTrap: insulin/repaglinide → hypoglycemia",
+   "explanation": "Metformin ยับยั้ง hepatic gluconeogenesis จาก lactate → lactic acidosis",
    "image": null,
    "issues": [],
+   "option_why": {
+    "A": "✓ biguanide → lactate ค้าง โดยเฉพาะเมื่อไต/ตับเสีย",
+    "B": "acarbose มีผลข้างเคียงทางลำไส้",
+    "C": "repaglinide ทำ hypoglycemia",
+    "D": "insulin lispro ทำ hypoglycemia",
+    "E": "pioglitazone ทำ edema/HF/กระดูกหัก"
+   },
+   "key_concept": "• metformin ห้ามใน eGFR < 30, ตับวาย, ติดสุรา, shock, ฉีด contrast (เสี่ยง lactic acidosis)\n• ผลข้างเคียงทั่วไป: ท้องเสีย, ขาด vitamin B12\n• ใช้เดี่ยวไม่ทำ hypoglycemia",
+   "mechanism": [
+    "metformin ยับยั้ง mitochondrial complex I → AMPK",
+    "gluconeogenesis จาก lactate ที่ตับลดลง",
+    "lactate ถูกใช้ไม่หมด",
+    {
+     "s": "lactate สะสมในเลือดโดยเฉพาะเมื่อไต/ตับเสีย",
+     "answer": true
+    },
+    "lactic acidosis (anion gap สูง)"
+   ],
    "audit": {
     "source_file": "preclinic/2/endocrine/mcq/ข้อสอบ mcq/MCQ_Endocrine [Med PSU 44].pdf",
     "page": 11,
@@ -1945,9 +2651,27 @@
     "E": "Pioglitazone"
    },
    "correct": "A",
-   "explanation": "(IR = regular insulin)** — exogenous insulin → hypoglycemia + C-peptide ต่ำ/วัดไม่ได้ (insulin สำเร็จรูปไม่มี C-peptide และกด β-cell); sulfonylurea/insulinoma → C-peptide สูง\nTrap: glyburide ทำ hypoglycemia แต่ C-peptide สูง",
+   "explanation": "Exogenous insulin → hypoglycemia + C-peptide ต่ำ (insulin ฉีดไม่มี C-peptide)",
    "image": null,
    "issues": [],
+   "option_why": {
+    "A": "✓ regular insulin: insulin สูง แต่ C-peptide ต่ำเพราะกด β-cell",
+    "B": "exenatide (GLP-1 RA) ทำให้ insulin หลั่งเอง C-peptide ไม่ต่ำ และ hypoglycemia น้อย",
+    "C": "glyburide (sulfonylurea) ทำ hypoglycemia แต่ C-peptide สูง",
+    "D": "metformin ไม่ทำ hypoglycemia",
+    "E": "pioglitazone ไม่ทำ hypoglycemia เมื่อใช้เดี่ยว"
+   },
+   "key_concept": "• hypoglycemia + insulin สูง: C-peptide สูง = insulinoma/sulfonylurea · C-peptide ต่ำ = insulin ภายนอก (factitious)\n• proinsulin → insulin + C-peptide (1:1) หลั่งพร้อมกัน\n• C-peptide สูงและสงสัยยา → ส่งตรวจ sulfonylurea screen",
+   "mechanism": [
+    "β-cell: proinsulin → insulin + C-peptide (หลั่ง 1:1)",
+    "ฉีด insulin ภายนอก (ไม่มี C-peptide)",
+    {
+     "s": "insulin ในเลือดสูง แต่ C-peptide ต่ำ (กดการหลั่งของ β-cell เอง)",
+     "answer": true
+    },
+    "glucose ต่ำ (hypoglycemia)",
+    "แยกจาก insulinoma/sulfonylurea ที่ C-peptide สูง"
+   ],
    "audit": {
     "source_file": "preclinic/2/endocrine/mcq/ข้อสอบ mcq/MCQ_Endocrine [Med PSU 44].pdf",
     "page": 11,
@@ -1997,11 +2721,29 @@
     "E": "Pioglitazone"
    },
    "correct": "B",
-   "explanation": "(Dapagliflozin)** — SGLT2 inhibitor → glucosuria → UTI/pyelonephritis และ genital mycotic infection (ไข้ + bacteriuria)\nTrap: metformin ไม่เพิ่ม UTI",
+   "explanation": "SGLT2i → glucosuria → UTI/pyelonephritis และ genital mycotic infection",
    "image": null,
    "issues": [
     "ผู้จำจำโจทย์และช้อยส์ไม่ครบ",
     "ช้อยส์ C, D, E AI เติมให้ครบ 5 ตัว"
+   ],
+   "option_why": {
+    "A": "metformin ไม่เพิ่มความเสี่ยง UTI",
+    "B": "✓ dapagliflozin (SGLT2i) → glucosuria → UTI/genital infection",
+    "C": "glipizide เสี่ยง hypoglycemia",
+    "D": "sitagliptin: pancreatitis, nasopharyngitis",
+    "E": "pioglitazone: edema, HF"
+   },
+   "key_concept": "• SGLT2i: UTI, genital candida, euglycemic DKA, volume depletion · ข้อดี: ลด HF/CKD progression\n• metformin = lactic acidosis · DPP-4i = pancreatitis · GLP-1 RA = คลื่นไส้/pancreatitis\n• ระวัง SGLT2i เมื่อ UTI ซ้ำ หรือมี ketosis",
+   "mechanism": [
+    "SGLT2 ถูกยับยั้งที่ proximal tubule",
+    "glucose ขับทางปัสสาวะ (glucosuria)",
+    {
+     "s": "glucose ในปัสสาวะเป็นอาหารของเชื้อ → เสี่ยง UTI/pyelonephritis",
+     "answer": true
+    },
+    "E. coli เจริญ + ไข้",
+    "genital mycotic infection ได้ด้วย"
    ],
    "audit": {
     "source_file": "preclinic/2/endocrine/mcq/ข้อสอบ mcq/MCQ_Endocrine [Med PSU 44].pdf",
@@ -2045,10 +2787,28 @@
     "E": "Increase hepatic glucose output"
    },
    "correct": "C",
-   "explanation": "(Increase renal glucose excretion)** — dapagliflozin ยับยั้ง SGLT2 ที่ proximal tubule → glucose reabsorption ↓ → glucosuria (insulin-independent)\nTrap: ยับยั้ง intestinal glucose uptake = SGLT1 inhibitor/acarbose",
+   "explanation": "Dapagliflozin ยับยั้ง SGLT2 → ขับ glucose ทางปัสสาวะ (ไม่ขึ้นกับ insulin)",
    "image": null,
    "issues": [
     "ช้อยส์ E AI เติมให้ครบ 5 ตัว"
+   ],
+   "option_why": {
+    "A": "ไม่กระตุ้นการสร้าง insulin",
+    "B": "ไม่เพิ่ม insulin receptor (TZD เพิ่ม sensitivity)",
+    "C": "✓ SGLT2i ลด glucose reabsorption → glucosuria",
+    "D": "ยับยั้งการดูดซึมที่ลำไส้ = acarbose/SGLT1",
+    "E": "ลด hepatic glucose output = metformin"
+   },
+   "key_concept": "• SGLT2 ที่ early proximal tubule ดูด glucose ~90% · SGLT1 ที่ลำไส้และ distal PT\n• ผลดีเกินระดับ glucose: ลด HF/CKD progression, BP, น้ำหนัก\n• ถ้า GFR ต่ำมาก ได้ผลลด glucose น้อย (glucosuria น้อย)",
+   "mechanism": [
+    "dapagliflozin จับ SGLT2 ที่ proximal tubule",
+    "glucose reabsorption ↓",
+    {
+     "s": "glucose ขับออกทางปัสสาวะมากขึ้น (ไม่ขึ้นกับ insulin)",
+     "answer": true
+    },
+    "plasma glucose ↓",
+    "น้ำหนักลด BP ลด"
    ],
    "audit": {
     "source_file": "preclinic/2/endocrine/mcq/ข้อสอบ mcq/MCQ_Endocrine [Med PSU 44].pdf",
@@ -2090,9 +2850,27 @@
     "E": "HMG CoA reductase inhibitors"
    },
    "correct": "A",
-   "explanation": "(Fibrate)** — TG 500 (เสี่ยง pancreatitis) → fibrate (PPAR-α) ลด TG 30–50%; niacin เพิ่ม uric acid (gout) และ glucose จึงไม่เหมาะ\nTrap: statin ลด LDL เป็นหลัก",
+   "explanation": "TG 500 + gout → fibrate ลด TG · niacin เพิ่ม uric acid/glucose จึงไม่เหมาะ",
    "image": null,
    "issues": [],
+   "option_why": {
+    "A": "✓ fibrate (PPAR-α) ↑ LPL ↓ VLDL → TG ลด 30–50%",
+    "B": "niacin ลด TG ได้ แต่เพิ่ม uric acid (gout) และ glucose (DM)",
+    "C": "ezetimibe (NPC1L1 inhibitor) ลด LDL เป็นหลัก",
+    "D": "bile acid sequestrant ทำ TG เพิ่ม",
+    "E": "statin ลด LDL เป็นหลัก ลด TG น้อย"
+   },
+   "key_concept": "• TG สูง: fibrate (ก่อน), omega-3, niacin · LDL สูง: statin → ezetimibe → PCSK9i\n• niacin ❌ เมื่อ gout, DM, ตับ · bile acid sequestrant ❌ เมื่อ TG สูง\n• TG > 500: ลด TG ก่อนเพื่อกัน pancreatitis",
+   "mechanism": [
+    "fibrate จับ PPAR-α",
+    "เพิ่ม LPL + ลด apoC-III",
+    {
+     "s": "VLDL สร้างลดลง สลายเร็วขึ้น → TG ลด 30–50%",
+     "answer": true
+    },
+    "HDL เพิ่มเล็กน้อย",
+    "ลดความเสี่ยง pancreatitis"
+   ],
    "audit": {
     "source_file": "preclinic/2/endocrine/mcq/ข้อสอบ mcq/MCQ_Endocrine [Med PSU 44].pdf",
     "page": 12,
@@ -2131,9 +2909,27 @@
     "E": "Nonsteroidal anti-inflammatory drug"
    },
    "correct": "E",
-   "explanation": "(NSAID)** — niacin flushing จาก PGD₂/PGE₂ → aspirin/NSAID 30 นาทีก่อน ป้องกันได้; ไม่ใช่ histamine\nTrap: antihistamine ไม่ได้ผล",
+   "explanation": "Niacin flushing จาก PGD₂ → aspirin/NSAID ป้องกันได้ ไม่ใช่ antihistamine",
    "image": null,
    "issues": [],
+   "option_why": {
+    "A": "steroid ไม่ใช่ยาที่ใช้แก้ flushing จาก niacin",
+    "B": "leukotriene ไม่ใช่ mediator ของ flushing",
+    "C": "sedating H1 blocker ไม่ได้ผล (ไม่ใช่ histamine)",
+    "D": "non-sedating H1 blocker ไม่ได้ผลเช่นกัน",
+    "E": "✓ ยับยั้ง COX → PGD₂ ลด → flushing ลด"
+   },
+   "key_concept": "• แก้ flushing จาก niacin: aspirin 325 mg ก่อนยา, ใช้ extended-release, กินพร้อมอาหาร\n• niacin ผลข้างเคียงอื่น: hyperuricemia (gout), hyperglycemia, hepatotoxicity\n• mediator = PGD₂ (ผ่าน GPR109A ใน Langerhans cell) ไม่ใช่ histamine",
+   "mechanism": [
+    "niacin จับ GPR109A ใน Langerhans cell ที่ผิวหนัง",
+    "PLA₂ + COX → PGD₂/PGE₂ ↑",
+    "PGD₂ ทำ cutaneous vasodilation (แดง ร้อน คัน)",
+    {
+     "s": "NSAID/aspirin ยับยั้ง COX → PGD₂ ลด",
+     "answer": true
+    },
+    "flushing ลดลง"
+   ],
    "audit": {
     "source_file": "preclinic/2/endocrine/mcq/ข้อสอบ mcq/MCQ_Endocrine [Med PSU 44].pdf",
     "page": 12,
@@ -2178,11 +2974,29 @@
     "E": "Nicotinic acid"
    },
    "correct": "B",
-   "explanation": "(Lovastatin)** — statin (lovastatin, simvastatin) และ fibrate (gemfibrozil) เสริมฤทธิ์ warfarin (CYP/protein binding) → INR สูง → ต้องติดตาม INR\nTrap: cholestyramine จับ warfarin → ลดฤทธิ์ (ต้องกินห่างกันเหมือนกัน)",
+   "explanation": "Statin (lovastatin) เสริมฤทธิ์ warfarin → INR สูง ต้องติดตาม INR",
    "image": null,
    "issues": [
     "gemfibrozil ก็เสริมฤทธิ์ warfarin ได้มาก",
     "การแยกเวลากินช่วยกับ bile acid sequestrant (ลดการดูดซึม) มากกว่า interaction แบบ CYP"
+   ],
+   "option_why": {
+    "A": "ezetimibe interaction กับ warfarin น้อย ผลหลักลด LDL",
+    "B": "✓ lovastatin เสริมฤทธิ์ warfarin → INR ↑ ต้องติดตาม",
+    "C": "gemfibrozil เสริม warfarin ได้มากเช่นกัน แต่ใช้ลด TG ไม่ใช่ LDL สูง",
+    "D": "cholestyramine จับ warfarin ในลำไส้ → ฤทธิ์ลด (ต้องกินห่างกัน) ผลตรงข้ามกับ over-anticoagulation",
+    "E": "niacin ไม่มี interaction หลักกับ warfarin"
+   },
+   "key_concept": "• statin (lovastatin, simvastatin) + fibrate เสริมฤทธิ์ warfarin → INR ↑ → ติดตาม INR\n• bile acid sequestrant ลดการดูดซึม warfarin → แยกเวลากินห่างกัน 3–4 ชม.\n• ข้อนี้ถ้อยคำกำกวม (แยกเวลา vs 'excessive anticoagulation') — เฉลยต้นฉบับเลือก B",
+   "mechanism": [
+    "lovastatin + warfarin ใช้ร่วมกัน",
+    "interaction (CYP/protein binding) ทำให้ warfarin ออกฤทธิ์มากขึ้น",
+    {
+     "s": "INR สูงขึ้น เสี่ยง over-anticoagulation",
+     "answer": true
+    },
+    "เลือดออกง่าย",
+    "ติดตาม INR และปรับขนาด warfarin"
    ],
    "audit": {
     "source_file": "preclinic/2/endocrine/mcq/ข้อสอบ mcq/MCQ_Endocrine [Med PSU 44].pdf",

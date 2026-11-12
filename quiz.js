@@ -23,11 +23,21 @@ window.MedLibQuizUI = function (ML) {
       if (!m || m.block !== b.id) return null;
       const all = ML.examsOf(b); const byId = Object.fromEntries(all.map((q) => [q.id, q]));
       const qs = m.qids.map((id) => byId[id]).filter(Boolean);
-      const limit = Math.max(5, Math.round(qs.reduce((a, q) => a + (q.type === "MCQ" ? 1.5 : 6), 0)));
-      return { id: sid, mix: true, title: m.title, type: "ชุดฝึกข้ามชุด", cohort: null, meta: { time_limit_min: limit }, questions: qs, guide: null };
+      return { id: sid, mix: true, title: m.title, type: "ชุดฝึกข้ามชุด", cohort: null, meta: { time_limit_min: estLimit(qs) }, questions: qs, guide: null };
     }
     return ML.findSet(b, sid);
   }
+  // minutes for timed mode when the paper gives none: MCQ 1.5, KF/OSPE 6 (at least 5)
+  const estLimit = (qs) => Math.max(5, Math.round(qs.reduce((a, q) => a + (q.type === "MCQ" ? 1.5 : 6), 0)));
+  const limitOf = (s) => Number(s.meta.time_limit_min) || estLimit(s.questions);
+  // Timed mode runs on the wall clock: the time keeps going while the person is on another page, another app or the
+  // screen is off. t0 = when the clock started (set from elapsed for rounds saved before this existed).
+  function clockNow(r) {
+    if (r.mode !== "timed" || r.done) return;
+    if (!r.t0) r.t0 = Date.now() - (r.elapsed || 0) * 1000;
+    r.elapsed = Math.max(0, Math.floor((Date.now() - r.t0) / 1000));
+  }
+  const timeUp = (s, r) => { clockNow(r); return r.mode === "timed" && !r.done && r.elapsed >= limitOf(s) * 60; };
   const keyOfSet = (b, s) => `${b.id}/${s.id}`;
   const roundsOf = (b, s) => (P().rounds[keyOfSet(b, s)] = P().rounds[keyOfSet(b, s)] || []);
   const activeRound = (b, s) => roundsOf(b, s).filter((r) => !r.done).pop() || null;
@@ -50,6 +60,12 @@ window.MedLibQuizUI = function (ML) {
     const qmap = Object.fromEntries(ML.examsOf(b).map((q) => [q.id, q]));
     const rounds = Object.entries(P().rounds).filter(([k, v]) => k.startsWith(b.id + "/") && Array.isArray(v)).flatMap(([, v]) => v);
     return C.latestResults(rounds, qmap, kov());
+  }
+  // questions whose answer does not count (key not confirmed) that were answered and checked in some round of this block
+  function uncountedTried(b) {
+    const tried = new Set(Object.entries(P().rounds).filter(([k, v]) => k.startsWith(b.id + "/") && Array.isArray(v)).flatMap(([, v]) => v)
+      .flatMap((r) => (r && r.chk ? Object.keys(r.chk).filter((id) => r.chk[id]) : [])));
+    return ML.examsOf(b).filter((q) => tried.has(q.id) && !C.counts(q, kov()));
   }
   function setProgress(b, s) {   // only questions that count (draft/disputed answers are left out)
     const res = blockResults(b), qs = s.questions.filter((q) => C.counts(q, kov()));
@@ -252,7 +268,7 @@ window.MedLibQuizUI = function (ML) {
   /* ---------- overview: start a round / resume ---------- */
   function viewOverview(b, s) {
     const act = activeRound(b, s), last = lastDone(b, s), B = base(b, s);
-    const limit = Number(s.meta.time_limit_min) || 0;
+    const limit = limitOf(s), est = !Number(s.meta.time_limit_min);
     const pref = P().prefs || {};
     let h = headHTML(b, s, "");
     if (act) {
@@ -262,7 +278,7 @@ window.MedLibQuizUI = function (ML) {
     }
     const m = act ? null : pref.mode || "practice";
     h += `<section class="startbox"><h3>${act ? "หรือเริ่มรอบใหม่" : "เริ่มทำชุดนี้"}</h3>
-      <div class="modecards">${["practice", "timed", "untimed"].map((k) => `<label class="modecard"><input type="radio" name="mode" value="${k}" ${(m || "practice") === k ? "checked" : ""}><b>${MODE_TH[k]}</b><span class="hint">${k === "practice" ? "เลือกแล้วเห็นเฉลยและคำอธิบายทันที" : k === "timed" ? `นับถอยหลัง ${limit || "—"} นาที หมดเวลาส่งเอง เฉลยขึ้นหลังส่ง` : "ทำครบแล้วกดส่ง เฉลยขึ้นหลังส่ง ไม่กดดันเรื่องเวลา"}</span></label>`).join("")}</div>
+      <div class="modecards">${["practice", "timed", "untimed"].map((k) => `<label class="modecard"><input type="radio" name="mode" value="${k}" ${(m || "practice") === k ? "checked" : ""}><b>${MODE_TH[k]}</b><span class="hint">${k === "practice" ? "เลือกแล้วเห็นเฉลยและคำอธิบายทันที" : k === "timed" ? `นับถอยหลัง ${limit} นาที${est && !s.mix ? " (ต้นฉบับไม่ระบุเวลา ประมาณให้: MCQ ข้อละ 1.5 นาที, KF/OSPE ข้อละ 6 นาที)" : ""} ออกไปหน้าอื่นหรือปิดจอเวลาก็ยังเดิน หมดเวลาส่งเอง เฉลยขึ้นหลังส่ง` : "ทำครบแล้วกดส่ง เฉลยขึ้นหลังส่ง ไม่กดดันเรื่องเวลา"}</span></label>`).join("")}</div>
       <div class="opts-row"><label class="chk"><input type="checkbox" id="shufQ" ${pref.shuffleQ ? "checked" : ""}> สุ่มลำดับข้อ</label><label class="chk"><input type="checkbox" id="shufC" ${pref.shuffleC ? "checked" : ""}> สุ่มลำดับช้อยส์ (MCQ)</label></div>
       <button class="btn primary big" data-z="start">${act ? "เริ่มรอบใหม่ (รอบเดิมจะถูกเก็บเป็นประวัติแบบไม่ครบ)" : "เริ่มทำ"}</button></section>`;
     const pr = setProgress(b, s);
@@ -297,6 +313,10 @@ window.MedLibQuizUI = function (ML) {
     const r = activeRound(b, s);
     if (!r) { location.replace(base(b, s)); return; }
     const qmap = qmapOf(s);
+    if (r.qids.some((id) => !qmap[id])) {   // a question was removed or renamed after this round started
+      r.qids = r.qids.filter((id) => qmap[id]);
+      if (!r.qids.length) { r.done = true; r.abandoned = true; r.finished = Date.now(); save(); location.replace(base(b, s)); return; }
+    }
     const i = Math.max(0, Math.min(r.qids.length - 1, (Number(pos) || 1) - 1));
     r.idx = i; r.at = Date.now();   // "at" = last time this round was open, for ทำต่อจากล่าสุด
     const q = qmap[r.qids[i]];
@@ -314,7 +334,7 @@ window.MedLibQuizUI = function (ML) {
     }).join("") || `<span class="hint">ไม่มีข้อที่ตรงกับตัวกรอง</span>`;
     const lecs = [...new Set(s.questions.flatMap((x) => (x.refs || []).filter((y) => y.lecture).map((y) => y.lecture)))].sort();
     const sel = (v, l, cur) => `<option value="${esc(v)}" ${cur === v ? "selected" : ""}>${esc(l)}</option>`;
-    const limit = r.mode === "timed" ? (Number(s.meta.time_limit_min) || 0) * 60 : 0;
+    const limit = r.mode === "timed" ? limitOf(s) * 60 : 0;
     const timerTxt = () => (r.mode === "practice" ? "" : limit ? `เหลือ ${mmss(Math.max(0, limit - r.elapsed))}` : `เวลา ${mmss(r.elapsed)}`);
     const isLast = !next;
     ML.main.innerHTML = headHTML(b, s, "") + `
@@ -345,16 +365,18 @@ window.MedLibQuizUI = function (ML) {
     let tick = 0;
     TIMER = setInterval(() => {
       if (!document.body.contains($("#ztimer"))) return stop();
-      r.elapsed++;
+      if (r.mode === "timed") clockNow(r); else r.elapsed++;
       $("#ztimer").textContent = timerTxt();
-      if (limit && r.elapsed >= limit) { finishRound(b, s, r, true); return; }
+      if (limit && r.elapsed >= limit) { r.elapsed = limit; ML.toast("หมดเวลาสอบ ส่งคำตอบให้แล้ว"); finishRound(b, s, r, true); return; }
       if (++tick % 5 === 0) save();
     }, 1000);
   }
 
   function finishRound(b, s, r, all) {
     stop();
-    if (all) { const qm = qmapOf(s); r.qids.forEach((id) => { if (!r.chk[id]) { r.chk[id] = true; graded(qm[id], r); } }); }
+    // submit: check everything · practice finish: check what was answered but not checked yet (KF/OSPE typed, no ตรวจ)
+    const qm = qmapOf(s);
+    r.qids.forEach((id) => { if (!r.chk[id] && qm[id] && (all || C.answered(qm[id], r))) { r.chk[id] = true; graded(qm[id], r); } });
     r.done = true; r.finished = Date.now(); save();
     location.hash = `${base(b, s)}/sum/${r.id}`;
     if (ML.syncSoon) ML.syncSoon();
@@ -381,8 +403,10 @@ window.MedLibQuizUI = function (ML) {
     });
     h += `<div class="scorebox"><div class="big">${st.score} / ${st.checked}</div><div><b>${st.pct}%</b> · ${MODE_TH[r.mode]} · ${KIND_TH[r.kind] || ""}${r.mode !== "practice" || r.elapsed ? ` · ใช้เวลา ${mmss(r.elapsed)}` : ""}${st.uncounted ? ` · ไม่นับ ${st.uncounted} ข้อ` : ""}<div class="hint">${new Date(r.started).toLocaleString("th-TH", { dateStyle: "medium", timeStyle: "short" })}${blank.length ? ` · ยังไม่ได้ทำ ${blank.length} ข้อ` : ""}${r.done ? "" : " · รอบนี้ยังไม่จบ"}</div></div></div>`;
     if (!r.done) h += `<div class="btns"><a class="btn primary" href="${B}/run/${(r.idx || 0) + 1}">กลับไปทำต่อ</a></div>`;
-    if (wrong.length && r.done) {
-      h += `<h3>ข้อที่ผิด (${wrong.length}) · เลือกข้อที่จะทำซ้ำ</h3><div class="pickwrong">${wrong.map((q) => `<label class="chk"><input type="checkbox" data-wrongpick="${esc(q.id)}" checked> <a href="${jump(q)}">ข้อ ${no(q)}</a> <span class="hint">${esc(String(q.stem || q.case || "").slice(0, 70))}…</span></label>`).join("")}</div>
+    // retry picker: wrong answers + questions that don't count (answer key not confirmed)
+    const pickRow = (q, tag) => `<label class="chk"><input type="checkbox" data-wrongpick="${esc(q.id)}" checked> <a href="${jump(q)}">ข้อ ${no(q)}</a>${tag} <span class="hint">${esc(String(q.stem || q.case || "").slice(0, 70))}…</span></label>`;
+    if ((wrong.length || unsure.length) && r.done) {
+      h += `<h3>${[wrong.length ? `ข้อที่ผิด (${wrong.length})` : "", unsure.length ? `ไม่นับคะแนน (${unsure.length})` : ""].filter(Boolean).join(" + ")} · เลือกข้อที่จะทำซ้ำ</h3><div class="pickwrong">${wrong.map((q) => pickRow(q, "")).join("")}${unsure.map((q) => pickRow(q, ` <span class="badge warn">ไม่นับคะแนน</span>`)).join("")}</div>
         <div class="btns"><button class="btn primary" data-z="retry" data-r="${r.id}">ทำข้อที่เลือกซ้ำเป็นรอบใหม่</button><a class="btn" href="${B}">ทำทั้งชุดอีกครั้ง</a></div>`;
     } else if (r.done) h += `<div class="btns"><span class="badge good">ไม่มีข้อที่ผิด</span><a class="btn" href="${B}">ทำทั้งชุดอีกครั้ง</a></div>`;
     // lectures behind this round's wrong answers, most wrong first
@@ -558,6 +582,7 @@ window.MedLibQuizUI = function (ML) {
     const lecs = Object.keys(lecCount).sort();
     const wrongN = qs.filter((q) => q.id in res && res[q.id] < 0.999).length;
     const flagN = qs.filter((q) => marks().flag[q.id]).length;
+    const unsureN = uncountedTried(b).length;
     const mixes = Object.entries(P().mixes).filter(([, m]) => m.block === b.id);
     const types = TYPE_ORDER.filter((t) => b.sets.some((s) => s.type === t) || b.papers.some((p) => p.type === t));
     if (!types.length) return `<div class="empty">ยังไม่มีข้อสอบในบล็อกนี้</div>`;
@@ -566,7 +591,7 @@ window.MedLibQuizUI = function (ML) {
     const whole = tab === "lec" || tab === "topic";
     const pool = whole ? qs : qs.filter((q) => q.type === tab);
     let h = "";
-    if (wrongN + flagN) h += `<button class="weakbar" data-z="mixweak"><span><b>ทบทวนจุดอ่อน</b><small>ผิดล่าสุด ${wrongN} ข้อ · ปักธง ${flagN} ข้อ</small></span><i aria-hidden="true">→</i></button>`;
+    if (wrongN + flagN + unsureN) h += `<button class="weakbar" data-z="mixweak"><span><b>ทบทวนจุดอ่อน</b><small>ผิดล่าสุด ${wrongN} ข้อ · ปักธง ${flagN} ข้อ${unsureN ? ` · ไม่นับคะแนน ${unsureN} ข้อ` : ""}</small></span><i aria-hidden="true">→</i></button>`;
     h += `<nav class="tabs etabs">${[...types.map((t) => [t, t]), ...(lecs.length ? [["lec", "Lecture"]] : []), ...(topics.length ? [["topic", "หัวข้อ"]] : [])].map(([k, l]) => `<button class="tab ${tab === k ? "on" : ""}" data-z="etab" data-t="${k}">${l}</button>`).join("")}</nav>`;
     if (pool.length) h += `<div class="quickrow"><button class="btn primary" data-z="mixrand" data-t="${tab}">สุ่ม ${Math.min(30, pool.length)} ข้อ${whole ? "จากทั้งบล็อก" : ` ${tab} จากทุกชุด`}</button></div>`;
     const card = (attrs, title, n, pct, prog) => `<${attrs.startsWith("href") ? "a" : "button"} class="pcard" ${attrs}><span class="ptop"><b>${title}</b><span class="n">${n} ข้อ</span></span>${prog ? `<span class="sbar"><i style="width:${pct}%"></i></span><span class="prog">${prog}</span>` : ""}</${attrs.startsWith("href") ? "a" : "button"}>`;
@@ -694,6 +719,8 @@ window.MedLibQuizUI = function (ML) {
     stop();
     const b = ML.findBlock(bid), s = setLike(b, sid);
     if (!s) return ML.notFound("ไม่พบชุดข้อสอบนี้");
+    const act = activeRound(b, s);
+    if (act && timeUp(s, act) && !(sub === "sum" && arg === act.id)) { act.elapsed = limitOf(s) * 60; ML.toast("หมดเวลาสอบ ส่งคำตอบให้แล้ว"); return finishRound(b, s, act, true); }
     if (sub && /^\d+$/.test(sub)) return location.replace(`${base(b, s)}/run/${sub}`);
     if (sub === "run") return viewRun(b, s, arg);
     if (sub === "sum") return viewSummary(b, s, arg);
@@ -745,7 +772,7 @@ window.MedLibQuizUI = function (ML) {
     if (z === "check") { if (q && c.r) { c.r.chk[q.id] = true; graded(q, c.r); save(); rerender(); } return true; }
     if (z === "singleredo") { delete single[c.q.id]; rerender(); return true; }
     if (z === "finish") {
-      const r = c.r, left = r.qids.filter((id) => !r.chk[id]).length;
+      const r = c.r, qm = qmapOf(c.s), left = r.qids.filter((id) => !r.chk[id] && !(qm[id] && C.answered(qm[id], r))).length;
       if (left && !ML.armed(t, `ยังไม่ได้ทำ ${left} ข้อ · กดอีกครั้งเพื่อจบรอบ`)) return true;
       finishRound(c.b, c.s, r, false); return true;
     }
@@ -804,8 +831,9 @@ window.MedLibQuizUI = function (ML) {
     }
     if (z === "mixweak") {
       const res = blockResults(c.b);
-      const ids = ML.examsOf(c.b).filter((x) => (x.id in res && res[x.id] < 0.999) || marks().flag[x.id]).map((x) => x.id);
-      makeMix(c.b, `จุดอ่อน: ผิด + ปักธง · ${new Date().toLocaleDateString("th-TH", { day: "numeric", month: "short" })}`, ids); return true;
+      const unsure = new Set(uncountedTried(c.b).map((x) => x.id));
+      const ids = ML.examsOf(c.b).filter((x) => (x.id in res && res[x.id] < 0.999) || marks().flag[x.id] || unsure.has(x.id)).map((x) => x.id);
+      makeMix(c.b, `จุดอ่อน: ผิด + ปักธง${unsure.size ? " + ไม่นับคะแนน" : ""} · ${new Date().toLocaleDateString("th-TH", { day: "numeric", month: "short" })}`, ids); return true;
     }
     if (z === "delmix") { if (!ML.armed(t, "ลบ?")) return true; delete P().mixes[t.dataset.m]; delete P().rounds[`${c.b.id}/@${t.dataset.m}`]; C.touch(P(), "mixes", t.dataset.m); C.touch(P(), "clear", `${c.b.id}/@${t.dataset.m}`); save(); rerender(); return true; }
     if (z === "pickkey") { marks().keyOverride[t.dataset.q] = t.dataset.k; C.touch(P(), "keyOverride", t.dataset.q); save(); rerender(); return true; }

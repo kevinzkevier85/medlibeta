@@ -1,0 +1,800 @@
+{
+ "meta": {
+  "set_id": "45_KF",
+  "block": "END",
+  "cohort": 45,
+  "type": "KF",
+  "title": "KF Endocrine · Med PSU 45",
+  "generated_by": "auditor/tools/build_kf.py from auditor/data/work/end_45_KF.kf.json — do not edit by hand"
+ },
+ "questions": [
+  {
+   "id": "END-45-KF-001",
+   "block": "END",
+   "cohort": 45,
+   "n": 1,
+   "type": "KF",
+   "case": "จงเปรียบเทียบ steroid hormone กับ thyroid hormone (storage pool, site of receptor)",
+   "items": [
+    {
+     "id": "1.1",
+     "prompt": "Steroid hormone — storage pool",
+     "format": "short",
+     "accepted": [
+      "none",
+      "ไม่มี",
+      "ไม่เก็บ"
+     ],
+     "source_key": "none",
+     "explanation": "Steroid ละลายไขมันและผ่านเยื่อหุ้มเซลล์ได้ จึงไม่ถูกเก็บในถุง (ไม่มี storage pool) สร้างตามต้องการแล้วหลั่งทันที โดยเก็บเพียง precursor (cholesterol esters)",
+     "keywords_all": [
+      "no",
+      "storage"
+     ]
+    },
+    {
+     "id": "1.2",
+     "prompt": "Steroid hormone — site of receptor",
+     "format": "short",
+     "accepted": [
+      "nuclear",
+      "nucleus",
+      "cytoplasm",
+      "ในเซลล์",
+      "ภายในเซลล์"
+     ],
+     "source_key": "Intracellular R",
+     "explanation": "Steroid ผ่านเยื่อหุ้มเซลล์เข้าไปจับ receptor ภายในเซลล์ (cytoplasm/nucleus) แล้วควบคุม gene transcription",
+     "keywords_all": [
+      "intracellular"
+     ]
+    },
+    {
+     "id": "1.3",
+     "prompt": "Thyroid hormone — storage pool",
+     "format": "short",
+     "accepted": [
+      "follicular lumen",
+      "follicle lumen",
+      "colloid",
+      "thyroglobulin",
+      "ใน follicle"
+     ],
+     "source_key": "follicular lumen (colloid)",
+     "explanation": "Thyroid hormone ถูกสร้างบน thyroglobulin และเก็บเป็น colloid ใน follicular lumen ซึ่งเป็น storage pool ใหญ่ (เก็บได้หลายสัปดาห์) ก่อน endocytosis แล้วปล่อยออก"
+    },
+    {
+     "id": "1.4",
+     "prompt": "Thyroid hormone — site of receptor",
+     "format": "short",
+     "accepted": [
+      "nuclear",
+      "nucleus",
+      "ในเซลล์",
+      "ภายในเซลล์"
+     ],
+     "source_key": "Intracellular R",
+     "explanation": "T3 จับ thyroid hormone receptor ที่ nucleus (ภายในเซลล์) ต่างจาก peptide hormone ที่ใช้ receptor บนผิวเซลล์ แม้เป็น amine hormone",
+     "keywords_all": [
+      "intracellular"
+     ]
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF45",
+     "pages": [
+      1
+     ]
+    },
+    {
+     "paper": "KF45-KEY",
+     "pages": [
+      1
+     ]
+    }
+   ],
+   "tags": [
+    "steroid hormone",
+    "thyroid hormone"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "Steroid: ไม่มี storage pool (สร้างแล้วหลั่งเลย) · Thyroid hormone: เก็บเป็น colloid (thyroglobulin) ใน follicular lumen · ทั้งสองจับ intracellular receptor"
+  },
+  {
+   "id": "END-45-KF-002",
+   "block": "END",
+   "cohort": 45,
+   "n": 2,
+   "type": "KF",
+   "case": "จงตอบ Type of cell communication of each chemical messenger",
+   "items": [
+    {
+     "id": "2.1",
+     "prompt": "PDGF",
+     "format": "short",
+     "accepted": [
+      "พาราไครน์"
+     ],
+     "key_image": "img/END-45-KF-002-key.jpg",
+     "key_image_caption": "สไลด์ Coordination of Body Functions by Chemical Messengers ที่แนบในเฉลยต้นฉบับ (neurotransmitter / endocrine / neuroendocrine / paracrine / autocrine)",
+     "source_key": "Paracrine",
+     "explanation": "PDGF หลั่งสู่ ECF และออกฤทธิ์กับเซลล์ข้างเคียงที่ต่างชนิดกัน (paracrine) ตามสไลด์ในเฉลย",
+     "keywords_all": [
+      "paracrine"
+     ]
+    },
+    {
+     "id": "2.2",
+     "prompt": "PTH",
+     "format": "short",
+     "accepted": [
+      "endocrine"
+     ],
+     "source_key": "Endocrine",
+     "explanation": "PTH สร้างจาก parathyroid gland หลั่งเข้ากระแสเลือดไปออกฤทธิ์ที่อวัยวะเป้าหมายไกล (endocrine)"
+    },
+    {
+     "id": "2.3",
+     "prompt": "Oxytocin",
+     "format": "short",
+     "accepted": [
+      "นิวโรเอนโดครีน"
+     ],
+     "source_key": "Neuroendocrine",
+     "explanation": "Oxytocin สร้างจาก neuron ใน hypothalamus แล้วเก็บ/หลั่งเข้าเลือดที่ posterior pituitary จึงเป็น neuroendocrine",
+     "keywords_all": [
+      "neuroendocrine"
+     ]
+    },
+    {
+     "id": "2.4",
+     "prompt": "Acetylcholine",
+     "format": "short",
+     "accepted": [],
+     "source_key": "Neurotransmitter",
+     "explanation": "ACh ถูกปล่อยจากปลาย axon ข้าม synaptic cleft ไปยังเซลล์เป้าหมาย (neurotransmitter / synaptic signaling)",
+     "keywords_all": [
+      "neurotransmitter"
+     ]
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF45",
+     "pages": [
+      1
+     ]
+    },
+    {
+     "paper": "KF45-KEY",
+     "pages": [
+      1
+     ]
+    }
+   ],
+   "tags": [
+    "cell communication",
+    "paracrine",
+    "endocrine"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "PDGF = paracrine · PTH = endocrine · Oxytocin = neuroendocrine · Acetylcholine = neurotransmitter",
+   "audit_note": "ข้อ 2.2: คำตอบ 'endocrine' เป็นคำย่อยของ 'neuroendocrine' ระบบตรวจอัตโนมัติจึงอาจนับ 'neuroendocrine' ในข้อ PTH ว่าถูก (ข้อจำกัดของ autoMatch) ผู้เรียนควรตรวจเทียบเฉลยเอง"
+  },
+  {
+   "id": "END-45-KF-003",
+   "block": "END",
+   "cohort": 45,
+   "n": 3,
+   "type": "KF",
+   "case": "True or False",
+   "items": [
+    {
+     "id": "3.1",
+     "prompt": "T3 ถูกผลิตออกมา 90% และ T4 ถูกผลิตออกมา 10%",
+     "format": "select",
+     "max_answers": 1,
+     "options": [
+      {
+       "key": "T",
+       "text": "True"
+      },
+      {
+       "key": "F",
+       "text": "False"
+      }
+     ],
+     "answer": [
+      "F"
+     ],
+     "source_key": "False — เฉลยสลับแก้เป็น T4 90% และ T3 10%",
+     "explanation": "ผิด: ต่อมไทรอยด์หลั่ง T4 ประมาณ 90% และ T3 ประมาณ 10% (T3 ส่วนใหญ่มาจาก peripheral conversion ของ T4 โดย deiodinase)"
+    },
+    {
+     "id": "3.2",
+     "prompt": "T3 has smaller quantity than T4",
+     "format": "select",
+     "max_answers": 1,
+     "options": [
+      {
+       "key": "T",
+       "text": "True"
+      },
+      {
+       "key": "F",
+       "text": "False"
+      }
+     ],
+     "answer": [
+      "T"
+     ],
+     "source_key": "True — T4 ปริมาณมากกว่า T3 ≈ 2 เท่า",
+     "explanation": "ถูก: T4 หลั่งและหมุนเวียนในเลือดมากกว่า T3 (T3 ออกฤทธิ์แรงกว่าแต่ปริมาณน้อยกว่า)"
+    },
+    {
+     "id": "3.3",
+     "prompt": "Thyroid is controlled by TSH from hypothalamus",
+     "format": "select",
+     "max_answers": 1,
+     "options": [
+      {
+       "key": "T",
+       "text": "True"
+      },
+      {
+       "key": "F",
+       "text": "False"
+      }
+     ],
+     "answer": [
+      "F"
+     ],
+     "source_key": "False — Ant. pituitary",
+     "explanation": "ผิด: TSH หลั่งจาก anterior pituitary (thyrotroph) ส่วน hypothalamus หลั่ง TRH มากระตุ้น"
+    },
+    {
+     "id": "3.4",
+     "prompt": "Thyroid also secrete Cholecalciferol to control calcium metabolism",
+     "format": "select",
+     "max_answers": 1,
+     "options": [
+      {
+       "key": "T",
+       "text": "True"
+      },
+      {
+       "key": "F",
+       "text": "False"
+      }
+     ],
+     "answer": [
+      "F"
+     ],
+     "key_image": "img/END-45-KF-003-key.jpg",
+     "key_image_caption": "สไลด์การสร้าง vitamin D3 (ผิวหนัง → ตับ → ไต → 1,25-dihydroxyvitamin D) ที่แนบในเฉลยต้นฉบับ",
+     "source_key": "False — Vitamin D3",
+     "explanation": "ผิด: cholecalciferol (vitamin D3) สร้างที่ผิวหนังจาก 7-dehydrocholesterol ด้วย UVB แล้วถูก hydroxylate ที่ตับและไต ไทรอยด์หลั่ง calcitonin (parafollicular cell) ซึ่งช่วยลด Ca²⁺"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF45",
+     "pages": [
+      1
+     ]
+    },
+    {
+     "paper": "KF45-KEY",
+     "pages": [
+      1
+     ]
+    }
+   ],
+   "tags": [
+    "thyroid",
+    "T3",
+    "T4"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "ไทรอยด์หลั่ง T4 มากกว่า T3 (T4 ~90%, T3 ~10%) · TSH มาจาก anterior pituitary (ไม่ใช่ hypothalamus; hypothalamus ผลิต TRH) · ไทรอยด์หลั่ง calcitonin ไม่ใช่ cholecalciferol (vitamin D3 สร้างที่ผิวหนัง)",
+   "audit_note": "ข้อ 3.2: เฉลยเขียนว่า T4 ปริมาณมากกว่า T3 ≈ 2 เท่า (ตัวเลขต่างจากตำราที่ T4:T3 ที่หลั่ง ~ 90:10) แต่ทิศทางคือ T4 มากกว่า T3 ตรงกันจึงใช้ True ตามเฉลย"
+  },
+  {
+   "id": "END-45-KF-004",
+   "block": "END",
+   "cohort": 45,
+   "n": 4,
+   "type": "KF",
+   "case": "เลือกตอบตัวใดตัวนึง A. Androgen B. Cortisol C. Aldosterone D. Epinephrine",
+   "items": [
+    {
+     "id": "4.1",
+     "prompt": "gluconeogenesis",
+     "format": "select",
+     "max_answers": 1,
+     "options": [
+      {
+       "key": "A",
+       "text": "Androgen"
+      },
+      {
+       "key": "B",
+       "text": "Cortisol"
+      },
+      {
+       "key": "C",
+       "text": "Aldosterone"
+      },
+      {
+       "key": "D",
+       "text": "Epinephrine"
+      }
+     ],
+     "answer": [
+      "D"
+     ],
+     "key_image": "img/END-45-KF-004-key.jpg",
+     "key_image_caption": "ตาราง Physiological and Metabolic Effects of Epinephrine ที่แนบในเฉลยต้นฉบับ",
+     "source_key": "Epinephrine (หมายเหตุสีแดง: no effect of protein metabolism)",
+     "explanation": "ตามเฉลยคือ Epinephrine: กระตุ้น glycogenolysis และ gluconeogenesis ในตับ โดยไม่กระทบ protein metabolism · หมายเหตุ cortisol ก็กระตุ้น gluconeogenesis ได้เช่นกัน แต่ cortisol ใช้ตอบข้อ 4.2"
+    },
+    {
+     "id": "4.2",
+     "prompt": "protein anabolism and catabolism",
+     "format": "select",
+     "max_answers": 1,
+     "options": [
+      {
+       "key": "A",
+       "text": "Androgen"
+      },
+      {
+       "key": "B",
+       "text": "Cortisol"
+      },
+      {
+       "key": "C",
+       "text": "Aldosterone"
+      },
+      {
+       "key": "D",
+       "text": "Epinephrine"
+      }
+     ],
+     "answer": [
+      "B"
+     ],
+     "key_image": "img/END-45-KF-004-key-b.jpg",
+     "key_image_caption": "สไลด์ Adipose tissue / Muscle / Liver (ผลของ cortisol: สลาย TAG และกล้ามเนื้อ เพิ่ม gluconeogenesis) ที่แนบในเฉลยต้นฉบับ",
+     "source_key": "cortisol",
+     "explanation": "Cortisol ทำให้ protein catabolism ที่กล้ามเนื้อ (ให้ amino acid ไปทำ gluconeogenesis) และ anabolic ที่ตับ จึงเข้ากับ 'anabolism and catabolism'"
+    },
+    {
+     "id": "4.3",
+     "prompt": "muscle… (ต้นฉบับพิมพ์ไม่ครบ; เฉลยเขียน \"mass increase\")",
+     "format": "select",
+     "max_answers": 1,
+     "options": [
+      {
+       "key": "A",
+       "text": "Androgen"
+      },
+      {
+       "key": "B",
+       "text": "Cortisol"
+      },
+      {
+       "key": "C",
+       "text": "Aldosterone"
+      },
+      {
+       "key": "D",
+       "text": "Epinephrine"
+      }
+     ],
+     "answer": [
+      "A"
+     ],
+     "key_image": "img/END-45-KF-004-key-c.jpg",
+     "key_image_caption": "สไลด์ Physiological Functions of Androgen ที่แนบในเฉลยต้นฉบับ",
+     "source_key": "mass increase : Androgen",
+     "explanation": "Androgen เป็น anabolic เพิ่ม muscle mass และ bone mass (ตามสไลด์ physiological functions of androgen)"
+    },
+    {
+     "id": "4.4",
+     "prompt": "Na retention",
+     "format": "select",
+     "max_answers": 1,
+     "options": [
+      {
+       "key": "A",
+       "text": "Androgen"
+      },
+      {
+       "key": "B",
+       "text": "Cortisol"
+      },
+      {
+       "key": "C",
+       "text": "Aldosterone"
+      },
+      {
+       "key": "D",
+       "text": "Epinephrine"
+      }
+     ],
+     "answer": [
+      "C"
+     ],
+     "source_key": "Aldosterone",
+     "explanation": "Aldosterone กระตุ้น ENaC และ Na⁺/K⁺-ATPase ที่ principal cell ของ collecting duct → ดูดกลับ Na⁺ (และน้ำ) ขับ K⁺/H⁺"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF45",
+     "pages": [
+      1
+     ]
+    },
+    {
+     "paper": "KF45-KEY",
+     "pages": [
+      1
+     ]
+    }
+   ],
+   "tags": [
+    "epinephrine",
+    "cortisol",
+    "androgen",
+    "aldosterone"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "Gluconeogenesis → epinephrine (cortisol ก็กระตุ้นได้) · protein catabolism ที่กล้ามเนื้อ → cortisol (epinephrine ไม่มีผลต่อ protein metabolism) · muscle mass ↑ → androgen · Na retention → aldosterone",
+   "audit_note": "ข้อ 4.1: เฉลยตอบ Epinephrine แต่ cortisol ก็กระตุ้น gluconeogenesis (และเป็นคำตอบของ 4.2 ด้วย) ใช้ Epinephrine ตามเฉลย ข้อ 4.3 โจทย์พิมพ์ไม่ครบ ('muscle…') เฉลยเขียน 'mass increase'"
+  },
+  {
+   "id": "END-45-KF-005",
+   "block": "END",
+   "cohort": 45,
+   "n": 5,
+   "type": "KF",
+   "case": "calcitonin หลั่งจาก cell อะไร มีผล increase, decrease อะไรบ้าง",
+   "items": [
+    {
+     "id": "5.1",
+     "prompt": "Calcitonin หลั่งจาก cell อะไร",
+     "format": "short",
+     "accepted": [],
+     "source_key": "parafollicular cell (C-cell) of thyroid gland",
+     "explanation": "Calcitonin สร้างจาก parafollicular cell (C cell) ซึ่งอยู่ระหว่าง follicle ของต่อมไทรอยด์ (ไม่ใช่ follicular cell ที่สร้าง T3/T4)",
+     "keywords_all": [
+      "parafollicular"
+     ],
+     "key_text": "parafollicular cell (C-cell) of thyroid gland"
+    },
+    {
+     "id": "5.2",
+     "prompt": "Calcitonin มีผลต่อระดับ Ca²⁺ ในเลือดอย่างไร (increase/decrease)",
+     "format": "short",
+     "accepted": [
+      "↓ ca",
+      "↓ ca²⁺",
+      "↓ca²⁺",
+      "lower ca",
+      "reduce ca",
+      "reduced ca",
+      "ลดแคลเซียม",
+      "ลด ca"
+     ],
+     "key_image": "img/END-45-KF-005-key.jpg",
+     "key_image_caption": "ตาราง Comparative actions of vitamin D, PTH and calcitonin ที่แนบในเฉลยต้นฉบับ",
+     "source_key": "↓ Ca²⁺ (↓ Ca²⁺, ↓ PO₄³⁻ in blood)",
+     "explanation": "Calcitonin ลด Ca²⁺ ในเลือด โดยยับยั้ง osteoclast (↓ bone resorption) และ ↓ reabsorption ของ Ca²⁺ ที่ไต",
+     "keywords_all": [
+      "decrease",
+      "calcium"
+     ]
+    },
+    {
+     "id": "5.3",
+     "prompt": "Calcitonin มีผลต่อระดับ phosphate (PO₄³⁻) ในเลือดอย่างไร (increase/decrease)",
+     "format": "short",
+     "accepted": [
+      "↓ po4",
+      "↓ po₄³⁻",
+      "↓po₄³⁻",
+      "lower po4",
+      "reduce po4",
+      "reduced po4",
+      "ลดฟอสเฟต",
+      "ลด po4"
+     ],
+     "source_key": "↓ PO₄³⁻ in blood",
+     "explanation": "Calcitonin ลดระดับ phosphate ในเลือดด้วย (↓ bone resorption และ ↓ phosphate reabsorption ที่ไต) ต่างจาก PTH ที่ ↑ Ca²⁺ แต่ ↓ phosphate reabsorption (phosphaturic)",
+     "keywords_all": [
+      "decrease",
+      "phosphate"
+     ]
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF45",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "KF45-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [
+    "calcitonin",
+    "calcium"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "Calcitonin ← parafollicular cell (C cell) ของ thyroid · ↓ Ca²⁺ และ ↓ PO₄³⁻ ในเลือด (ยับยั้ง osteoclast, ↓ reabsorption ที่ไต)"
+  },
+  {
+   "id": "END-45-KF-006",
+   "block": "END",
+   "cohort": 45,
+   "n": 6,
+   "type": "KF",
+   "case": "จงบอก function ของ HDL ใน lipoprotein metabolism",
+   "items": [
+    {
+     "id": "6",
+     "prompt": "Function ของ HDL ใน lipoprotein metabolism",
+     "format": "short",
+     "accepted": [
+      "peripheral tissues to liver",
+      "peripheral tissue to liver",
+      "peripheral cells to liver",
+      "peripheral to liver",
+      "periphery to liver",
+      "tissues to the liver",
+      "tissue to the liver",
+      "reverse cholesterol transport",
+      "reverse cholesterol",
+      "จากเนื้อเยื่อไปตับ",
+      "เนื้อเยื่อไปยังตับ",
+      "เนื้อเยื่อส่วนปลายไปตับ",
+      "เนื้อเยื่อส่วนปลายไปยังตับ"
+     ],
+     "key_text": "Transport cholesterol from peripheral tissues to liver (reverse cholesterol transport)",
+     "source_key": "Transport cholesterol from peripheral tissues to liver",
+     "explanation": "HDL (apoA-I, LCAT) รับ cholesterol ส่วนเกินจากเนื้อเยื่อ/เซลล์ส่วนปลายแล้วนำกลับตับเพื่อขับออกทางน้ำดี = reverse cholesterol transport"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF45",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "KF45-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [
+    "HDL",
+    "lipoprotein"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "HDL = reverse cholesterol transport: ขน cholesterol จาก peripheral tissues กลับไปตับ"
+  },
+  {
+   "id": "END-45-KF-007",
+   "block": "END",
+   "cohort": 45,
+   "n": 7,
+   "type": "KF",
+   "case": "ยา Ezetimibe และ Saxagliptin มี MOA (receptor/enzyme) อะไร และ consequent of action (ต้นฉบับหมายเหตุสีแดงว่าน่าจะหมายถึง pharmacological effect) มีอะไรบ้าง",
+   "items": [
+    {
+     "id": "7.1",
+     "prompt": "Ezetimibe — MOA (receptor/enzyme)",
+     "format": "short",
+     "accepted": [
+      "npc1l1",
+      "niemann-pick",
+      "niemann pick"
+     ],
+     "key_text": "Inhibit NPC1L1 at enterocyte in jejunum → ↓ cholesterol uptake",
+     "key_image": "img/END-45-KF-007-key.jpg",
+     "key_image_caption": "สไลด์ Ezetimibe (Zetia) ที่แนบในเฉลยต้นฉบับ: ยับยั้ง NPC1L1 ที่ jejunum → ↓ chylomicron, ↓ LDL",
+     "source_key": "Inhibit NPC1L1 @ enterocyte in jejunum → ↓ cholesterol uptake",
+     "explanation": "Ezetimibe จับ NPC1L1 (Niemann-Pick C1-Like 1 transporter) ที่ brush border ของ enterocyte ใน jejunum ยับยั้งการดูดซึม cholesterol จากอาหารและน้ำดี"
+    },
+    {
+     "id": "7.2",
+     "prompt": "Ezetimibe — consequent of action ข้อ 1)",
+     "format": "short",
+     "accepted": [
+      "reduce chylomicron",
+      "reduced chylomicron",
+      "↓ chylomicron",
+      "↓chylomicron",
+      "less chylomicron",
+      "reduce cholesterol absorption",
+      "reduced cholesterol absorption",
+      "↓ cholesterol absorption",
+      "less cholesterol absorption",
+      "↓ chylomicron remnant-derived cholesterol to liver"
+     ],
+     "source_key": "↓ chylomicron remnant-derived cholesterol to liver",
+     "explanation": "เมื่อ cholesterol ถูกดูดซึมน้อยลง chylomicron remnant ที่ส่ง cholesterol ไปตับจึงลดลง",
+     "keywords_all": [
+      "decrease",
+      "chylomicron"
+     ]
+    },
+    {
+     "id": "7.3",
+     "prompt": "Ezetimibe — consequent of action ข้อ 2)",
+     "format": "short",
+     "accepted": [
+      "↑ Expression of LDL-C ® → ↓ LDL-C in blood"
+     ],
+     "source_key": "↑ Expression of LDL-C ® → ↓ LDL-C in blood",
+     "explanation": "ตับได้ cholesterol จาก chylomicron remnant น้อยลง จึง upregulate LDL receptor (SREBP-2) ดึง LDL จากเลือดมากขึ้น → LDL-C ในเลือดลดลง",
+     "keywords_all": [
+      "increase",
+      "ldl",
+      "receptor"
+     ]
+    },
+    {
+     "id": "7.4",
+     "prompt": "Saxagliptin — MOA (receptor/enzyme)",
+     "format": "short",
+     "accepted": [
+      "dpp-4",
+      "dpp4",
+      "dpp 4",
+      "dpp-iv",
+      "dpp iv",
+      "dipeptidyl peptidase"
+     ],
+     "key_text": "Inhibit DPP-4 that deactivates GLP-1",
+     "key_image": "img/END-45-KF-007-key-b.jpg",
+     "key_image_caption": "สไลด์ GLP-1 analogs และ DPP-4 inhibitors (sitagliptin, saxagliptin, linagliptin) ที่แนบในเฉลยต้นฉบับ",
+     "source_key": "Inhibit DPP-4 that deactivates GLP-1",
+     "explanation": "Saxagliptin ยับยั้ง enzyme DPP-4 ที่ย่อยสลาย GLP-1 และ GIP (เฉลยช่องข้อ 2 เว้นว่าง)"
+    },
+    {
+     "id": "7.5",
+     "prompt": "Saxagliptin — consequent of action (1): ผลต่อ active GLP-1",
+     "format": "short",
+     "accepted": [
+      "prolong glp",
+      "prolonged glp",
+      "prolong active glp",
+      "prevent glp-1 degradation",
+      "prevent glp degradation",
+      "↑ glp",
+      "↑glp",
+      "↑ active glp",
+      "longer glp"
+     ],
+     "source_key": "Prolong active GLP-1",
+     "explanation": "เมื่อ DPP-4 ถูกยับยั้ง active GLP-1 (incretin) ไม่ถูกย่อย จึงอยู่ในเลือดนานขึ้น (half-life ยาวขึ้น)",
+     "keywords_all": [
+      "increase",
+      "glp"
+     ]
+    },
+    {
+     "id": "7.6",
+     "prompt": "Saxagliptin — consequent of action (2): ผลต่อ insulin",
+     "format": "short",
+     "accepted": [
+      "↑ glucose-dependent insulin release",
+      "↑ insulin",
+      "↑insulin",
+      "enhance insulin",
+      "stimulate insulin",
+      "insulin secretion ↑",
+      "insulin release ↑",
+      "เพิ่มการหลั่ง insulin",
+      "เพิ่มอินซูลิน"
+     ],
+     "source_key": "↑ glucose-dependent insulin release",
+     "explanation": "GLP-1 กระตุ้น β-cell หลั่ง insulin แบบขึ้นกับระดับ glucose (เมื่อ glucose สูงเท่านั้น) จึงเสี่ยง hypoglycemia ต่ำ",
+     "keywords_all": [
+      "increase",
+      "insulin"
+     ]
+    },
+    {
+     "id": "7.7",
+     "prompt": "Saxagliptin — consequent of action (3): ผลต่อ glucagon",
+     "format": "short",
+     "accepted": [
+      "reduce glucagon",
+      "reduced glucagon",
+      "suppress glucagon",
+      "suppressed glucagon",
+      "inhibit glucagon",
+      "less glucagon",
+      "↓ glucagon",
+      "↓glucagon",
+      "glucagon ↓",
+      "ลด glucagon"
+     ],
+     "source_key": "↓ glucagon",
+     "explanation": "GLP-1 ยับยั้ง glucagon จาก α-cell (แบบ glucose-dependent) → ลดการสร้างกลูโคสที่ตับ",
+     "keywords_all": [
+      "decrease",
+      "glucagon"
+     ]
+    },
+    {
+     "id": "7.8",
+     "prompt": "Saxagliptin — consequent of action (4): ผลต่อ gastric emptying",
+     "format": "short",
+     "accepted": [
+      "reduce gastric emptying",
+      "reduced gastric emptying",
+      "↓ gastric emptying",
+      "↓gastric emptying",
+      "slow gastric emptying",
+      "slows gastric emptying",
+      "slower gastric emptying",
+      "delay gastric emptying",
+      "delayed gastric emptying",
+      "delays gastric emptying",
+      "ชะลอการระบาย"
+     ],
+     "source_key": "↓ gastric emptying",
+     "explanation": "GLP-1 ชะลอการระบายของกระเพาะอาหาร ช่วยให้อิ่มนานและลด postprandial glucose",
+     "keywords_all": [
+      "decrease",
+      "gastric"
+     ]
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF45",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "KF45-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [
+    "ezetimibe",
+    "saxagliptin",
+    "DPP-4 inhibitor",
+    "NPC1L1"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "Ezetimibe: ยับยั้ง NPC1L1 ที่ enterocyte ของ jejunum → ↓ cholesterol uptake → ↓ chylomicron remnant-derived cholesterol ไปตับ → ↑ LDL receptor → ↓ LDL-C · Saxagliptin: DPP-4 inhibitor → active GLP-1 อยู่นาน → ↑ insulin (glucose-dependent), ↓ glucagon, ↓ gastric emptying",
+   "audit_note": "เฉลยของ Saxagliptin ช่อง MOA ข้อ 2) เว้นว่าง และส่วน consequent มี 3 บรรทัด จึงแยกเป็น 4 ข้อย่อย (GLP-1 ↑, insulin ↑, glucagon ↓, gastric emptying ↓) · ข้อ 7.1 ลายมือเฉลยอ่านเป็น NPC1L1 (text layer OCR เพี้ยนเป็น NPC1L2)"
+  }
+ ]
+}

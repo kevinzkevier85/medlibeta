@@ -1,0 +1,1174 @@
+{
+ "meta": {
+  "set_id": "46_KF",
+  "block": "END",
+  "cohort": 46,
+  "type": "KF",
+  "title": "KF Endocrine · Med PSU 46",
+  "time_limit_min": 90,
+  "generated_by": "auditor/tools/build_kf.py from auditor/data/work/end_46_KF.kf.json — do not edit by hand"
+ },
+ "questions": [
+  {
+   "id": "END-46-KF-001",
+   "block": "END",
+   "cohort": 46,
+   "n": 1,
+   "type": "KF",
+   "case": "Fill in the blank to complete cell communication elicited by each chemical messenger: PTH, Oxytocin, PDGF, Acetylcholine (type of cell communication).",
+   "items": [
+    {
+     "id": "1.1",
+     "prompt": "PTH",
+     "format": "short",
+     "accepted": [
+      "endocrine"
+     ],
+     "source_key": "Endocrine",
+     "explanation": "PTH หลั่งจาก parathyroid gland เข้ากระแสเลือดไปออกฤทธิ์ที่กระดูก/ไต = endocrine"
+    },
+    {
+     "id": "1.2",
+     "prompt": "Oxytocin",
+     "format": "short",
+     "keywords_all": [
+      "neuroendocrine"
+     ],
+     "source_key": "Neuroendocrine",
+     "explanation": "Oxytocin สร้างที่ hypothalamic neuron (PVN/SON) แล้วหลั่งที่ posterior pituitary เข้ากระแสเลือด = neuroendocrine"
+    },
+    {
+     "id": "1.3",
+     "prompt": "PDGF",
+     "format": "short",
+     "accepted": [
+      "paracrine"
+     ],
+     "source_key": "Paracrine",
+     "explanation": "PDGF (platelet-derived growth factor) หลั่งจากเกล็ดเลือด/เซลล์ข้างเคียงไปกระตุ้นเซลล์ใกล้เคียง = paracrine (ออกฤทธิ์แบบ autocrine ได้ด้วย แต่เฉลยตอบ paracrine)"
+    },
+    {
+     "id": "1.4",
+     "prompt": "Acetylcholine",
+     "format": "short",
+     "accepted": [
+      "neurotransmitter",
+      "synaptic"
+     ],
+     "source_key": "Neurotransmitter",
+     "explanation": "ACh หลั่งจากปลาย neuron ข้าม synaptic cleft ไป postsynaptic cell = neurotransmitter (synaptic signaling)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF46",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "KF46-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [
+    "cell communication",
+    "chemical messenger"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "Endocrine = ฮอร์โมนเข้ากระแสเลือด · Neuroendocrine = neuron หลั่งฮอร์โมนเข้าเลือด · Paracrine = สารแพร่ไปเซลล์ข้างเคียง · Neurotransmitter = หลั่งที่ synapse"
+  },
+  {
+   "id": "END-46-KF-002",
+   "block": "END",
+   "cohort": 46,
+   "n": 2,
+   "type": "KF",
+   "case": "Why is Growth hormone diabetogenic hormone?",
+   "items": [
+    {
+     "id": "2",
+     "prompt": "Why is GH a diabetogenic hormone?",
+     "format": "short",
+     "accepted": [
+      "insulin resistance",
+      "gluconeogenesis",
+      "ดื้ออินซูลิน"
+     ],
+     "key_text": "GH-induced insulin resistance: GH ↑ hepatic gluconeogenesis และ ↓ glucose uptake ของเนื้อเยื่อหลายชนิด → ↑ blood glucose",
+     "source_key": "Growth hormone induced insulin-resistance — เนื่องจาก growth hormone ทำให้ ↑ hepatic gluconeogenesis และ ↓ glucose uptake by many tissues ส่งผลให้ ↑ blood glucose concentration จึงเป็น diabetogenic hormone",
+     "explanation": "GH เป็น counter-regulatory hormone ต่อ insulin: เพิ่ม gluconeogenesis ที่ตับ ลดการนำ glucose เข้าเซลล์ (insulin resistance) และเพิ่ม lipolysis → เกิด hyperglycemia"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF46",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "KF46-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [
+    "growth hormone",
+    "diabetogenic"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "GH ต้าน insulin: ↑ hepatic gluconeogenesis, ↓ glucose uptake ของเนื้อเยื่อหลายชนิด (insulin resistance) → blood glucose สูง"
+  },
+  {
+   "id": "END-46-KF-003",
+   "block": "END",
+   "cohort": 46,
+   "n": 3,
+   "type": "KF",
+   "case": "Fill in the blank: compare steroid hormone and peptide hormone — storage pool and site of receptor.",
+   "items": [
+    {
+     "id": "3.1",
+     "prompt": "Storage pool — Steroid hormone",
+     "format": "short",
+     "accepted": [
+      "none",
+      "no storage",
+      "nil",
+      "nothing",
+      "ไม่มี"
+     ],
+     "source_key": "None",
+     "explanation": "Steroid hormone ละลายในไขมัน ผ่าน membrane ได้ จึงไม่เก็บใน vesicle (สังเคราะห์เมื่อต้องการ)"
+    },
+    {
+     "id": "3.2",
+     "prompt": "Storage pool — Peptide hormone",
+     "format": "short",
+     "accepted": [
+      "secretory vesicle",
+      "vesicle",
+      "granule"
+     ],
+     "source_key": "Secretory vesicle",
+     "explanation": "Peptide hormone เก็บใน secretory vesicle/granule แล้วหลั่งด้วย exocytosis เมื่อได้สัญญาณ"
+    },
+    {
+     "id": "3.3",
+     "prompt": "Site of receptor — Steroid hormone",
+     "format": "short",
+     "accepted": [
+      "intracellular",
+      "cytoplasm",
+      "nucleus",
+      "nuclear",
+      "inside the cell"
+     ],
+     "source_key": "Intracellular receptor",
+     "explanation": "Steroid ผ่าน plasma membrane ได้ จับ receptor ใน cytoplasm/nucleus แล้วปรับ gene transcription"
+    },
+    {
+     "id": "3.4",
+     "prompt": "Site of receptor — Peptide hormone",
+     "format": "short",
+     "accepted": [
+      "cell membrane",
+      "plasma membrane",
+      "cell surface",
+      "membrane receptor"
+     ],
+     "source_key": "Target receptor on cell membrane",
+     "explanation": "Peptide ละลายน้ำ ผ่าน membrane ไม่ได้ จึงจับ receptor บน cell membrane แล้วส่งสัญญาณผ่าน second messenger/kinase"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF46",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "KF46-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [
+    "steroid hormone",
+    "peptide hormone",
+    "receptor"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "Steroid: ไม่เก็บสะสม (สร้างแล้วหลั่งเลย), receptor ภายในเซลล์ · Peptide: เก็บใน secretory vesicle, receptor บน cell membrane"
+  },
+  {
+   "id": "END-46-KF-004",
+   "block": "END",
+   "cohort": 46,
+   "n": 4,
+   "type": "KF",
+   "case": "True or false: (1) Insulin-like growth factor is secreted from anterior pituitary. (2) Incretin is a hormone released from the digestive tract which notifies beta cells about rising blood glucose. (3) In Graves' disease TSI is subject to negative-feedback inhibition by thyroid hormone. (4) Dehydroepiandrosterone inhibits GnRH.",
+   "items": [
+    {
+     "id": "4.1",
+     "prompt": "Insulin-like growth factor is secreted from anterior pituitary",
+     "format": "select",
+     "max_answers": 1,
+     "options": [
+      {
+       "key": "T",
+       "text": "True"
+      },
+      {
+       "key": "F",
+       "text": "False"
+      }
+     ],
+     "answer": [
+      "F"
+     ],
+     "source_key": "False (แก้เป็น IGF-1 ... liver)",
+     "key_image": "img/END-46-KF-004-key.jpg",
+     "key_image_caption": "สไลด์ในเฉลยต้นฉบับ: Control of GH secretion: GH → liver → IGF และ metabolic actions ของ GH",
+     "explanation": "IGF-1 สร้างจากตับ (และเนื้อเยื่ออื่น) ภายใต้การกระตุ้นของ GH จาก anterior pituitary — anterior pituitary หลั่ง GH ไม่ใช่ IGF"
+    },
+    {
+     "id": "4.2",
+     "prompt": "Incretin is hormone released from digestive tract which notify Beta cell about rising blood glucose",
+     "format": "select",
+     "max_answers": 1,
+     "options": [
+      {
+       "key": "T",
+       "text": "True"
+      },
+      {
+       "key": "F",
+       "text": "False"
+      }
+     ],
+     "answer": [
+      "T"
+     ],
+     "source_key": "True",
+     "explanation": "Incretin (GLP-1 จาก L cell, GIP จาก K cell) หลั่งจากทางเดินอาหารเมื่อกินอาหาร กระตุ้น beta cell หลั่ง insulin มากกว่ากลูโคสที่ให้ทางเส้นเลือด (incretin effect)"
+    },
+    {
+     "id": "4.3",
+     "prompt": "In Graves' disease TSI is subject to negative-feedback inhibition by thyroid hormone",
+     "format": "select",
+     "max_answers": 1,
+     "options": [
+      {
+       "key": "T",
+       "text": "True"
+      },
+      {
+       "key": "F",
+       "text": "False"
+      }
+     ],
+     "answer": [
+      "F"
+     ],
+     "source_key": "False (TSI ไม่ถูกยับยั้งด้วย feedback)",
+     "key_image": "img/END-46-KF-004-key-b.jpg",
+     "key_image_caption": "สไลด์ในเฉลยต้นฉบับ: Role of TSI in Graves' disease — ไม่มี TSH, TSI กระตุ้น thyroid ต่อเนื่อง",
+     "explanation": "TSI เป็น autoantibody ที่จับ TSH receptor จึงออกฤทธิ์ต่อเนื่อง ไม่ตอบสนองต่อ negative feedback ของ thyroid hormone (ที่กด TSH เท่านั้น) → T3/T4 สูง, TSH ต่ำ"
+    },
+    {
+     "id": "4.4",
+     "prompt": "Dehydroepiandrosterone inhibits GnRH",
+     "format": "select",
+     "max_answers": 1,
+     "options": [
+      {
+       "key": "T",
+       "text": "True"
+      },
+      {
+       "key": "F",
+       "text": "False"
+      }
+     ],
+     "answer": [
+      "T"
+     ],
+     "source_key": "True (ติ๊กถูก)",
+     "key_image": "img/END-46-KF-004-key-c.jpg",
+     "key_image_caption": "สไลด์ในเฉลยต้นฉบับ: The adrenal cortex — adrenal androgen (DHEA)",
+     "explanation": "ตามสไลด์เฉลย: adrenal androgen (DHEA) ถูกควบคุมโดย ACTH ไม่ใช่ gonadotropin และ DHEA ยับยั้ง GnRH (ไม่ได้ยับยั้ง CRH) — เฉลยต้นฉบับตอบ True"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF46",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "KF46-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [
+    "IGF-1",
+    "incretin",
+    "Graves",
+    "DHEA"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "IGF-1 สร้างที่ตับ (ตอบสนอง GH) · Incretin (GLP-1/GIP) จากลำไส้ กระตุ้น insulin · TSI ไม่ถูก feedback · DHEA ตามเฉลย inhibit GnRH"
+  },
+  {
+   "id": "END-46-KF-005",
+   "block": "END",
+   "cohort": 46,
+   "n": 5,
+   "type": "KF",
+   "case": "List four metabolic actions of insulin.",
+   "items": [
+    {
+     "id": "5",
+     "prompt": "List four metabolic actions of insulin",
+     "format": "short",
+     "keywords_all": [
+      "gluconeogenesis",
+      "glycogenolysis",
+      "lipolysis",
+      "protein"
+     ],
+     "key_text": "↓ hepatic gluconeogenesis, ↓ glycogenolysis, ↓ lipolysis, ↓ protein degradation",
+     "source_key": "① ↓ hepatic gluconeogenesis ② ↓ glycogenolysis ③ ↓ lipolysis ④ ↓ protein degradation",
+     "key_image": "img/END-46-KF-005-key.jpg",
+     "key_image_caption": "สไลด์ในเฉลยต้นฉบับ: Insulin, the \"hormone of abundance\" — actions on carbohydrate, fat, protein",
+     "explanation": "ตรวจอัตโนมัติจะจับเมื่อตอบครบ 4 ข้อตามเฉลย (gluconeogenesis, glycogenolysis, lipolysis, protein degradation) · action อื่นของ insulin ที่ถูกเช่น ↑ glucose uptake (GLUT4), ↑ glycogen synthesis, ↑ lipogenesis, ↑ protein synthesis ก็ถูกตามหลักการ — ถ้าตอบแบบนี้ให้กดตัดสินเองว่าถูก"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF46",
+     "pages": [
+      3
+     ]
+    },
+    {
+     "paper": "KF46-KEY",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [
+    "insulin",
+    "metabolic action"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "Insulin = anabolic: ↓ gluconeogenesis, ↓ glycogenolysis, ↓ lipolysis, ↓ protein degradation (และ ↑ glucose uptake, glycogen/fat/protein synthesis)"
+  },
+  {
+   "id": "END-46-KF-006",
+   "block": "END",
+   "cohort": 46,
+   "n": 6,
+   "type": "KF",
+   "case": "A 30-year-old pregnant woman had a high risk of inadequate calcium intake. The doctor also gave advice to take vitamin D supplement in order to promote normal growth of fetus and maintain her calcium balance. Regarding intestinal calcium absorption, briefly indicate actions and mechanism of vitamin D in regulating intestinal calcium absorption.",
+   "items": [
+    {
+     "id": "6.1",
+     "prompt": "Action of vitamin D on intestinal calcium absorption",
+     "format": "short",
+     "accepted": [
+      "increase",
+      "enhance",
+      "stimulate",
+      "promote",
+      "เพิ่ม"
+     ],
+     "source_key": "↑ Ca²⁺ absorption",
+     "key_image": "img/END-46-KF-006-key-b.jpg",
+     "key_image_caption": "ตารางในเฉลยต้นฉบับ: Actions of PTH and 1,25-dihydroxyvitamin D on Ca/P homeostasis (กรอบน้ำเงิน = ลำไส้เล็ก)",
+     "explanation": "1,25(OH)₂D₃ (active vitamin D) เพิ่มการดูดซึม Ca²⁺ (และ phosphate) ที่ลำไส้เล็ก"
+    },
+    {
+     "id": "6.2",
+     "prompt": "Mechanism of vitamin D on intestinal calcium absorption",
+     "format": "short",
+     "accepted": [
+      "trpv6",
+      "trpv5",
+      "calbindin",
+      "pmca",
+      "ca transporter",
+      "calcium transporter"
+     ],
+     "key_text": "Vitamin D จับ vitamin D receptor ใน intestinal cell เพิ่ม expression ของ Ca transporter ได้แก่ TRPV5/6, calbindin และ PMCA ทำให้ ↑ Ca absorption",
+     "source_key": "Vitamin D จับกับ vitamin D receptor ใน intestinal cell ช่วยเพิ่ม expression of Ca transporter ได้แก่ TRPV5/6, calbindin และ PMCA ทำให้ ↑ Ca absorption",
+     "key_image": "img/END-46-KF-006-key.jpg",
+     "key_image_caption": "ภาพในเฉลยต้นฉบับ: กลไก 1,25(OH)₂D₃ ใน enterocyte (VDR, TRPV6, calbindin-D, PMCA) ที่ Low Ca²⁺ diet และ High Ca²⁺ diet",
+     "explanation": "Vitamin D–VDR (กับ RXR) เพิ่มการถอดรหัส gene: TRPV6 (นำ Ca²⁺ เข้าที่ apical membrane), calbindin-D9k (พา Ca²⁺ ข้ามเซลล์) และ PMCA1b (ปั๊ม Ca²⁺ ออกที่ basolateral) · ในลำไส้เป็น TRPV6 เป็นหลัก ส่วน TRPV5 อยู่ที่ไต (เฉลยเขียน TRPV5/6)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF46",
+     "pages": [
+      3
+     ]
+    },
+    {
+     "paper": "KF46-KEY",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [
+    "vitamin D",
+    "calcium absorption"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "1,25(OH)2D → VDR ในเซลล์ลำไส้ → ↑ expression ของ TRPV6, calbindin, PMCA → ↑ transcellular Ca²⁺ absorption"
+  },
+  {
+   "id": "END-46-KF-007",
+   "block": "END",
+   "cohort": 46,
+   "n": 7,
+   "type": "KF",
+   "case": "7.1 ฮอร์โมนใดบ้างที่ถูกหลั่งเข้าสู่ hypothalamic hypophyseal portal system  7.2 Which of the following is(are) true about follicular cell",
+   "items": [
+    {
+     "id": "7.1",
+     "prompt": "ฮอร์โมนใดบ้างที่ถูกหลั่งเข้าสู่ hypothalamic hypophyseal portal system",
+     "format": "select",
+     "max_answers": 4,
+     "options": [
+      {
+       "key": "A",
+       "text": "Prolactin"
+      },
+      {
+       "key": "B",
+       "text": "Epinephrine"
+      },
+      {
+       "key": "C",
+       "text": "LH"
+      },
+      {
+       "key": "D",
+       "text": "Calcitonin"
+      },
+      {
+       "key": "E",
+       "text": "Oxytocin"
+      },
+      {
+       "key": "F",
+       "text": "TSH"
+      },
+      {
+       "key": "G",
+       "text": "ADH"
+      },
+      {
+       "key": "H",
+       "text": "Thyrotropin-releasing hormone"
+      }
+     ],
+     "answer": [
+      "A",
+      "C",
+      "F",
+      "H"
+     ],
+     "source_key": "A, C, F, H (หมายเหตุลายมือ: พวก RH, IH เข้า 1° plexus, พวก SH, PRL เข้า 2° plexus)",
+     "key_image": "img/END-46-KF-007-key.jpg",
+     "key_image_caption": "สไลด์ในเฉลยต้นฉบับ: Hypothalamic control of hormone secretion from the anterior lobe (primary/secondary plexus ของ hypophyseal portal system)",
+     "explanation": "TRH เป็น hypothalamic releasing hormone เข้า primary plexus ที่ median eminence → anterior pituitary · เฉลยนับ TSH, LH, prolactin (anterior pituitary hormone) ที่หลั่งเข้า secondary plexus ด้วย · Epinephrine, calcitonin ไม่เกี่ยว · Oxytocin/ADH สร้างที่ hypothalamus แต่หลั่งจาก posterior pituitary (ผ่าน neuron ไม่ใช่ portal)"
+    },
+    {
+     "id": "7.2",
+     "prompt": "Which of the following is(are) true about follicular cell",
+     "format": "select",
+     "max_answers": 3,
+     "options": [
+      {
+       "key": "A",
+       "text": "Synthesis thyroxine"
+      },
+      {
+       "key": "B",
+       "text": "Synthesis thyroglobulin"
+      },
+      {
+       "key": "C",
+       "text": "Modulate parathyroid hormone level"
+      },
+      {
+       "key": "D",
+       "text": "Take up iodine from blood circulation"
+      },
+      {
+       "key": "E",
+       "text": "Take up iodinated thyroglobulin"
+      },
+      {
+       "key": "F",
+       "text": "Transport thyroid stimulating hormone"
+      },
+      {
+       "key": "G",
+       "text": "Contain enzymes that produce calcitonin"
+      },
+      {
+       "key": "H",
+       "text": "Release calcitonin"
+      }
+     ],
+     "answer": [
+      "B",
+      "D",
+      "E"
+     ],
+     "source_key": "B, D, E (A: thyroxine สร้างใน colloid ไม่ใช่ใน follicular cell; D โดย NIS; E โดย endocytosis; G, H = parafollicular cell)",
+     "key_image": "img/END-46-KF-007-key-b.jpg",
+     "key_image_caption": "ภาพในเฉลยต้นฉบับ: thyroid follicular cell — NIS, thyroglobulin synthesis, colloid, endocytosis (Figure 17-13)",
+     "explanation": "B: follicular cell สร้าง thyroglobulin · D: ดึง iodide เข้าด้วย NIS (Na⁺/I⁻ symporter) · E: endocytose iodinated thyroglobulin จาก colloid แล้ว lysosome ตัดได้ T3/T4 · A ไม่ถูกตามเฉลยเพราะ T4 เกิดบน thyroglobulin ใน colloid · C, F ไม่ใช่หน้าที่ · G, H = parafollicular (C) cell"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF46",
+     "pages": [
+      4
+     ]
+    },
+    {
+     "paper": "KF46-KEY",
+     "pages": [
+      4
+     ]
+    }
+   ],
+   "tags": [
+    "hypophyseal portal system",
+    "thyroid follicular cell"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "Hypothalamic releasing/inhibiting hormone (TRH …) เข้า primary plexus; anterior pituitary hormone (TSH, LH, PRL …) เข้า secondary plexus ของ portal system · Follicular cell: สร้าง thyroglobulin, ดึง I⁻ ด้วย NIS, endocytose thyroglobulin กลับ; T4 สร้างใน colloid; calcitonin มาจาก parafollicular cell",
+   "audit_note": "ข้อ 7.1: เฉลยตอบ A, C, F, H โดยให้เหตุผลว่า RH/IH เข้า primary plexus ส่วน SH/PRL เข้า secondary plexus ของ portal system — ในตำราทั่วไป portal vessels นำเฉพาะ hypothalamic hormone (TRH) ไปยัง anterior pituitary ส่วน TSH/LH/prolactin ถูกหลั่งออกทาง hypophyseal vein สู่ระบบไหลเวียนทั่วไป จึงอาจตีความต่างได้ ระบบใช้ตามเฉลยต้นฉบับ"
+  },
+  {
+   "id": "END-46-KF-008",
+   "block": "END",
+   "cohort": 46,
+   "n": 8,
+   "type": "KF",
+   "case": "Explain mechanism of action of Lovastatin in reducing LDL-c level.",
+   "items": [
+    {
+     "id": "8",
+     "prompt": "Mechanism of action of Lovastatin in reducing LDL-c",
+     "format": "short",
+     "keywords_all": [
+      "hmg",
+      "reductase",
+      "inhibit"
+     ],
+     "key_text": "Competitively inhibit HMG-CoA reductase → ↓ hepatic cholesterol synthesis → ↑ LDL-c receptor synthesis → ↑ LDL-c uptake from blood; ↓ VLDL synthesis → ↓ LDL-c ในเลือด",
+     "source_key": "Competitively inhibit HMG-CoA reductase → ↓ hepatic cholesterol synthesis ทำให้ ↑ LDL-c receptor synthesis ช่วย ↑ LDL-c uptake from blood อีกทั้งยังทำให้ ↓ VLDL synthesis ซึ่งทั้งหมดนี้เป็นผลให้ระดับ LDL-c ในเลือดลดลง",
+     "explanation": "Lovastatin ยับยั้ง HMG-CoA reductase (rate-limiting step ของ cholesterol synthesis) → cholesterol ในตับลด → SREBP-2 กระตุ้น ↑ LDL receptor → เก็บ LDL จากเลือดมากขึ้น (ระบบตรวจจับคำว่า HMG, reductase, inhibit)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF46",
+     "pages": [
+      4
+     ]
+    },
+    {
+     "paper": "KF46-KEY",
+     "pages": [
+      4
+     ]
+    }
+   ],
+   "tags": [
+    "lovastatin",
+    "statin",
+    "LDL"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "Statin = competitive inhibitor ของ HMG-CoA reductase → ↓ cholesterol synthesis ที่ตับ → ↑ LDL receptor → ↑ LDL-c uptake จากเลือด (และ ↓ VLDL synthesis)"
+  },
+  {
+   "id": "END-46-KF-009",
+   "block": "END",
+   "cohort": 46,
+   "n": 9,
+   "type": "KF",
+   "case": "Which substance is decreased in postmenopausal women and led to osteoporosis.",
+   "items": [
+    {
+     "id": "9",
+     "prompt": "Which substance is decreased in postmenopausal women and led to osteoporosis?",
+     "format": "short",
+     "accepted": [
+      "estrogen",
+      "oestrogen",
+      "estradiol"
+     ],
+     "source_key": "Estrogen",
+     "key_image": "img/END-46-KF-009-key.jpg",
+     "key_image_caption": "สไลด์ในเฉลยต้นฉบับ: Postmenopausal osteoporosis — ปกติ estrogen ช่วยลด bone resorption (downregulate RANKL ฯลฯ)",
+     "explanation": "หลังหมดประจำเดือน estrogen ลดลง → ลด downregulation ของ RANKL, เพิ่ม RANK/RANKL และลด OPG → osteoclast ทำงานมากขึ้น → bone resorption ↑ → osteoporosis (กระดูกสันหลัง/สะโพกหัก)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF46",
+     "pages": [
+      4
+     ]
+    },
+    {
+     "paper": "KF46-KEY",
+     "pages": [
+      4
+     ]
+    }
+   ],
+   "tags": [
+    "osteoporosis",
+    "estrogen",
+    "menopause"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "Estrogen ↓ → RANKL expression ↑ / OPG ↓ → osteoclast ↑ → bone resorption ↑"
+  },
+  {
+   "id": "END-46-KF-010",
+   "block": "END",
+   "cohort": 46,
+   "n": 10,
+   "type": "KF",
+   "case": "A 45-year-old woman came to see general physician because she noticed discomfort in her neck. On physical examination, the physician palpated diffuse bilateral enlargement with mild tenderness at the thyroid region. Thyroid function tests showed Thyroxine 2.2, TSH 0.19. After that the patient was referred to see an endocrinologist but the appointment is available in the next 8 weeks. When she saw the endocrinologist, the thyroid was non palpable and there was no pain; thyroid function test revealed Thyroxine 0.8, TSH 3.0.",
+   "items": [
+    {
+     "id": "10.1",
+     "prompt": "What thyroid disease can cause elevated serum thyroxine? (3 answers)",
+     "format": "short",
+     "accepted": [
+      "graves",
+      "toxic adenoma",
+      "toxic multinodular",
+      "subacute thyroiditis",
+      "hashimoto",
+      "plummer",
+      "de quervain",
+      "hashitoxicosis"
+     ],
+     "key_text": "Graves' disease, Toxic adenoma, Hashimoto's thyroiditis (ระยะแรก), Toxic multinodular goiter, Subacute thyroiditis (ระยะแรก)",
+     "source_key": "① Graves' disease ② Toxic adenoma ③ Hashimoto's thyroiditis (ระยะแรก) ④ Toxic multinodular goiter ⑤ Subacute thyroiditis (ระยะแรก)",
+     "explanation": "ที่ทำให้ T4 สูง/TSH ต่ำ: Graves' disease (TSI), toxic adenoma, toxic multinodular goiter (hyperfunction จริง) และ thyroiditis ระยะแรก เช่น subacute thyroiditis, Hashimoto's thyroiditis (hashitoxicosis) ที่ hormone รั่วออกจาก follicle ที่ถูกทำลาย · ระบบจับเมื่อตอบชื่อโรคใด ๆ ที่อยู่ในรายการ"
+    },
+    {
+     "id": "10.2",
+     "prompt": "What thyroid disease can cause these findings (T4 และ TSH กลับสู่ปกติ, ไม่เจ็บ, คลำไม่ได้)?",
+     "format": "short",
+     "accepted": [
+      "subacute",
+      "de quervain",
+      "granulomatous"
+     ],
+     "source_key": "Subacute thyroiditis เนื่องจากมี pain และสามารถหายได้เอง",
+     "explanation": "ต่อมโตเจ็บ + thyrotoxicosis ชั่วคราว แล้วหายเองกลับสู่ euthyroid (T4, TSH ปกติ) ภายในหลายสัปดาห์ = subacute (de Quervain) thyroiditis มักตามหลัง viral infection"
+    },
+    {
+     "id": "10.3",
+     "prompt": "What is a histology characteristic of this disease?",
+     "format": "short",
+     "accepted": [
+      "giant cell",
+      "multinucleated",
+      "granuloma"
+     ],
+     "key_text": "Colloid leak from follicle + multinucleated giant cell",
+     "source_key": "Colloid leak from follicle + multinucleated giant cell",
+     "key_image": "img/END-46-KF-010-key.jpg",
+     "key_image_caption": "สไลด์ในเฉลยต้นฉบับ: Subacute thyroiditis (De Quervain's / giant cell thyroiditis) — ภาพ histology",
+     "explanation": "Subacute granulomatous thyroiditis: follicle ถูกทำลาย colloid รั่วออกมา เกิด granulomatous inflammation มี multinucleated giant cell (histiocyte) ล้อมรอบ colloid"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF46",
+     "pages": [
+      5
+     ]
+    },
+    {
+     "paper": "KF46-KEY",
+     "pages": [
+      5
+     ]
+    }
+   ],
+   "tags": [
+    "hyperthyroidism",
+    "subacute thyroiditis"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "↑T4 ↓TSH = hyperthyroidism (thyrotoxicosis) · ต่อมโต เจ็บ แล้วหายเองใน 8 สัปดาห์ + T4/TSH กลับปกติ = subacute (de Quervain / granulomatous) thyroiditis · histology: colloid รั่วจาก follicle + multinucleated giant cell"
+  },
+  {
+   "id": "END-46-KF-011",
+   "block": "END",
+   "cohort": 46,
+   "n": 11,
+   "type": "KF",
+   "case": "A 45-year-old woman presents with hypercholesterolemia, round face and loss of diurnal cortisol rhythm. No detect in plasma ACTH.",
+   "items": [
+    {
+     "id": "11.1a",
+     "prompt": "Low dose dexamethasone suppression test",
+     "format": "short",
+     "keywords_all": [
+      "no suppress"
+     ],
+     "source_key": "No suppression",
+     "explanation": "Low-dose DST: ในคนปกติ cortisol ถูกกด แต่ Cushing's syndrome ทุกชนิด (รวม adrenal tumor) ไม่ถูกกด"
+    },
+    {
+     "id": "11.1b",
+     "prompt": "High dose dexamethasone suppression test",
+     "format": "short",
+     "keywords_all": [
+      "no suppress"
+     ],
+     "source_key": "No suppression",
+     "explanation": "High-dose DST: pituitary adenoma (Cushing's disease) มักถูกกด แต่ adrenal tumor และ ectopic ACTH ไม่ถูกกด เพราะหลั่ง cortisol/ACTH เองโดยไม่ขึ้นกับ feedback"
+    },
+    {
+     "id": "11.2",
+     "prompt": "What is the diagnosis?",
+     "format": "short",
+     "keywords_all": [
+      "cushing",
+      "syndrome"
+     ],
+     "source_key": "Cushing's syndrome (เฉลยเขียนว่า น่าจะเป็น Cushing's syndrome จาก adrenal tumor)",
+     "key_image": "img/END-46-KF-011-key.jpg",
+     "key_image_caption": "สไลด์ในเฉลยต้นฉบับ: Cushing's syndrome — identify etiology (ACTH-dependent vs ACTH-independent, dexamethasone suppression test)",
+     "explanation": "Round (moon) face, hypercholesterolemia, เสีย diurnal rhythm = cushingoid appearance ↑ cortisol · ACTH ตรวจไม่พบ → ACTH-independent Cushing's syndrome (ไม่ใช่ Cushing's disease จาก pituitary ซึ่ง ACTH สูง)"
+    },
+    {
+     "id": "11.3",
+     "prompt": "List the possible causes of these findings",
+     "format": "short",
+     "accepted": [
+      "adrenal tumor",
+      "adrenal tumour",
+      "adrenal adenoma",
+      "adrenal carcinoma",
+      "adrenal hyperplasia",
+      "exogenous glucocorticoid",
+      "exogenous steroid",
+      "iatrogenic"
+     ],
+     "source_key": "Adrenal tumor, Adrenal hyperplasia",
+     "explanation": "ACTH-independent Cushing's: adrenal adenoma/carcinoma, bilateral adrenal (macronodular/micronodular) hyperplasia และการได้รับ glucocorticoid จากภายนอก (iatrogenic) ก็ทำให้ ACTH ต่ำได้เช่นกัน"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF46",
+     "pages": [
+      5
+     ]
+    },
+    {
+     "paper": "KF46-KEY",
+     "pages": [
+      5
+     ]
+    }
+   ],
+   "tags": [
+    "Cushing syndrome",
+    "dexamethasone suppression test"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "Cushingoid + cortisol ↑ + ACTH ไม่พบ/ต่ำ = ACTH-independent Cushing's syndrome (adrenal tumor/hyperplasia) → autonomous cortisol จึงไม่ถูก dexamethasone กดทั้ง low และ high dose"
+  },
+  {
+   "id": "END-46-KF-012",
+   "block": "END",
+   "cohort": 46,
+   "n": 12,
+   "type": "KF",
+   "case": "A 37-year-old woman presented to the emergency room with palpitation, headache and shortness of breath. On physical examination, her pulse rate was 110 and blood pressure was 170/110. Laboratory results: Plasma Na⁺ 135 (normal 136-145); Plasma K⁺ decreased; Serum cortisol normal; Plasma aldosterone increased; Plasma renin activity decreased.",
+   "items": [
+    {
+     "id": "12.1",
+     "prompt": "What is the most likely diagnosis?",
+     "format": "short",
+     "accepted": [
+      "primary hyperaldosteronism",
+      "primary aldosteronism",
+      "conn's",
+      "conn syndrome"
+     ],
+     "source_key": "primary hyperaldosteronism",
+     "key_image": "img/END-46-KF-012-key.jpg",
+     "key_image_caption": "สไลด์ในเฉลยต้นฉบับ: Hyperaldosteronism (primary vs secondary) — RAAS, renin, aldosterone",
+     "explanation": "Aldosterone สูงแต่ renin ต่ำ + hypokalemia + HTN = primary hyperaldosteronism (aldosterone-producing adenoma หรือ bilateral hyperplasia) · cortisol ปกติตัด Cushing ออก"
+    },
+    {
+     "id": "12.2",
+     "prompt": "What is(are) the laboratory result(s) supporting your diagnosis?",
+     "format": "short",
+     "key_text": "High aldosterone but low renin activity and low K⁺ level",
+     "source_key": "High aldosterone but low renin activity and low K⁺ level",
+     "explanation": "aldosterone ↑ ร่วมกับ renin activity ↓ (ไม่ใช่ renin สูง) และ K⁺ ต่ำ (aldosterone ขับ K⁺ ที่ collecting duct) = primary hyperaldosteronism",
+     "keywords_all": [
+      "high aldosterone",
+      "low renin"
+     ],
+     "accepted": [
+      "aldosterone/renin ratio",
+      "aldosterone renin ratio",
+      "high aldosterone with suppressed renin",
+      "high aldosterone suppressed renin",
+      "increased aldosterone decreased renin",
+      "increased aldosterone and decreased renin",
+      "elevated aldosterone suppressed renin",
+      "elevated aldosterone and suppressed renin",
+      "elevated aldosterone low renin",
+      "increased aldosterone low renin",
+      "high aldosterone decreased renin"
+     ]
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF46",
+     "pages": [
+      6
+     ]
+    },
+    {
+     "paper": "KF46-KEY",
+     "pages": [
+      6
+     ]
+    }
+   ],
+   "tags": [
+    "primary hyperaldosteronism",
+    "Conn syndrome"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "Aldosterone ↑ + renin ↓ + K⁺ ↓ + HTN = primary hyperaldosteronism (Conn) · renin ต่ำเพราะ volume/Na⁺ ที่เพิ่มกด RAAS (ต่างจาก secondary ที่ renin สูง)"
+  },
+  {
+   "id": "END-46-KF-013",
+   "block": "END",
+   "cohort": 46,
+   "n": 13,
+   "type": "KF",
+   "case": "Regarding thyroid hormone for hypothyroidism.",
+   "items": [
+    {
+     "id": "13.1",
+     "prompt": "Preparation of choice",
+     "format": "short",
+     "accepted": [
+      "levothyroxine",
+      "thyroxine",
+      "t4"
+     ],
+     "source_key": "Levothyroxine (synthetic T4)",
+     "explanation": "Levothyroxine (L-T4) เป็น first-line: half-life นาน (~7 วัน) กินวันละครั้ง และ T4 ถูก deiodinate เป็น T3 ที่เนื้อเยื่อ"
+    },
+    {
+     "id": "13.2",
+     "prompt": "Adverse drug reaction",
+     "format": "short",
+     "accepted": [
+      "hyperthyroid",
+      "thyrotoxicosis",
+      "tachycardia",
+      "palpitation",
+      "heat intolerance",
+      "tremor",
+      "arrhythmia",
+      "weight loss"
+     ],
+     "key_text": "Hyperthyroid symptoms: warm skin, palpitation, tachycardia",
+     "source_key": "Hyperthyroid symptoms: warm skin, palpitation, tachycardia",
+     "explanation": "ให้เกินขนาดจะเกิดภาวะ iatrogenic thyrotoxicosis: ใจสั่น หัวใจเต้นเร็ว/arrhythmia ผิวอุ่น ทนร้อนไม่ได้ น้ำหนักลด มือสั่น (ใช้นานเกินอาจเกิด osteoporosis)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF46",
+     "pages": [
+      6
+     ]
+    },
+    {
+     "paper": "KF46-KEY",
+     "pages": [
+      6
+     ]
+    }
+   ],
+   "tags": [
+    "levothyroxine",
+    "hypothyroidism"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "Hypothyroidism รักษาด้วย levothyroxine (synthetic T4) · ADR = อาการของ hyperthyroidism จากยาเกินขนาด"
+  },
+  {
+   "id": "END-46-KF-014",
+   "block": "END",
+   "cohort": 46,
+   "n": 14,
+   "type": "KF",
+   "case": "Fill in the blank (1 answer): write a drug for each mechanism of action — Inhibit NPC1L1; Activate PPAR-alpha; Inhibit progesterone and corticosteroid receptor; Inhibit androgen steroidogenesis; Activate V2 receptor; Inhibit GH signaling pathway.",
+   "items": [
+    {
+     "id": "14.1",
+     "prompt": "Inhibit NPC1L1",
+     "format": "short",
+     "accepted": [
+      "ezetimibe"
+     ],
+     "source_key": "Ezetimibe",
+     "explanation": "Ezetimibe ยับยั้ง NPC1L1 ที่ brush border ลำไส้ ลดการดูดซึม cholesterol"
+    },
+    {
+     "id": "14.2",
+     "prompt": "Activate PPAR-alpha",
+     "format": "short",
+     "accepted": [
+      "gemfibrozil",
+      "clofibrate",
+      "fenofibrate",
+      "bezafibrate",
+      "fibrate"
+     ],
+     "source_key": "Gemfibrozil, Clofibrate",
+     "explanation": "Fibrates (gemfibrozil, clofibrate, fenofibrate, bezafibrate) เป็น PPAR-α agonist ลด triglyceride"
+    },
+    {
+     "id": "14.3",
+     "prompt": "Inhibit progesterone and corticosteroid receptor",
+     "format": "short",
+     "accepted": [
+      "mifepristone",
+      "ru486"
+     ],
+     "source_key": "Mifepristone",
+     "explanation": "Mifepristone (RU-486) เป็น antagonist ของ progesterone receptor และ glucocorticoid receptor"
+    },
+    {
+     "id": "14.4",
+     "prompt": "Inhibit androgen steroidogenesis",
+     "format": "short",
+     "accepted": [
+      "mitotane",
+      "metyrapone",
+      "etomidate",
+      "ketoconazole",
+      "abiraterone"
+     ],
+     "source_key": "Mitotane, metyrapone, etomidate",
+     "explanation": "ตามเฉลย: mitotane, metyrapone, etomidate (ยับยั้ง adrenal steroidogenesis) · ยาที่ยับยั้ง androgen synthesis โดยตรงคือ abiraterone (CYP17) และ ketoconazole จึงรับไว้ด้วย (ดู audit_note)"
+    },
+    {
+     "id": "14.5",
+     "prompt": "Activate V2 receptor",
+     "format": "short",
+     "accepted": [
+      "vasopressin",
+      "desmopressin",
+      "ddavp",
+      "antidiuretic hormone"
+     ],
+     "source_key": "Vasopressin, Desmopressin",
+     "explanation": "Vasopressin/ADH และ desmopressin (DDAVP) กระตุ้น V2 receptor ที่ collecting duct → เพิ่ม aquaporin-2 ดูดน้ำกลับ"
+    },
+    {
+     "id": "14.6",
+     "prompt": "Inhibit GH signaling pathway",
+     "format": "short",
+     "accepted": [
+      "pegvisomant",
+      "pasireotide",
+      "octreotide",
+      "lanreotide"
+     ],
+     "source_key": "Pasireotide, Pegvisomant",
+     "explanation": "Pegvisomant = GH receptor antagonist · Pasireotide (และ octreotide, lanreotide) เป็น somatostatin analog ลดการหลั่ง GH จาก pituitary adenoma"
+    }
+   ],
+   "answer_status": "disputed",
+   "refs": [
+    {
+     "paper": "KF46",
+     "pages": [
+      6
+     ]
+    },
+    {
+     "paper": "KF46-KEY",
+     "pages": [
+      6
+     ]
+    }
+   ],
+   "tags": [
+    "drug mechanism",
+    "ezetimibe",
+    "fibrate",
+    "mifepristone",
+    "desmopressin",
+    "pegvisomant"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "Ezetimibe (NPC1L1) · Fibrate (PPAR-α) · Mifepristone (PR/GR antagonist) · ยับยั้ง steroidogenesis: ketoconazole/abiraterone/metyrapone · Desmopressin (V2 agonist) · Pegvisomant (GH receptor antagonist)",
+   "audit_note": "ข้อ 14.4: เฉลยตอบ Mitotane, metyrapone, etomidate ซึ่งยับยั้ง adrenal steroidogenesis โดยเฉพาะ cortisol (metyrapone/etomidate ยับยั้ง 11β-hydroxylase, mitotane = adrenolytic) ไม่ใช่ androgen steroidogenesis โดยตรง คำตอบแบบ 'inhibit androgen synthesis' ตามตำราคือ abiraterone (CYP17) และ ketoconazole จึงเพิ่มเป็น accepted และตั้งข้อนี้ disputed · ข้อ 14.6: เฉลยมี pasireotide (somatostatin analog ยับยั้งการหลั่ง GH) คู่กับ pegvisomant (GH receptor antagonist) ซึ่งเป็นยาที่ยับยั้ง GH signaling จริง · ข้ออื่น ๆ ตรงตามตำรา"
+  },
+  {
+   "id": "END-46-KF-015",
+   "block": "END",
+   "cohort": 46,
+   "n": 15,
+   "type": "KF",
+   "case": "What are major side effects of Metformin (2 answers)?",
+   "items": [
+    {
+     "id": "15",
+     "prompt": "Major side effects of Metformin (2 answers)",
+     "format": "short",
+     "accepted": [
+      "lactic acidosis",
+      "b12",
+      "gi upset",
+      "gastrointestinal",
+      "diarrhea",
+      "diarrhoea",
+      "nausea",
+      "weight loss"
+     ],
+     "key_text": "Lactic acidosis, Vitamin B12 deficiency, weight loss, GI upset",
+     "source_key": "Lactic acidosis, Vitamin B12 deficiency, weight loss, GI upset",
+     "explanation": "Metformin ยับยั้ง hepatic gluconeogenesis/complex I: ADR ที่พบบ่อยคือ GI upset (ท้องเสีย คลื่นไส้) และ vitamin B12 deficiency ระยะยาว · ที่รุนแรงแต่หายากคือ lactic acidosis (ห้ามใช้เมื่อ eGFR ต่ำ) · ไม่ทำให้ hypoglycemia เมื่อใช้เดี่ยว"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF46",
+     "pages": [
+      7
+     ]
+    },
+    {
+     "paper": "KF46-KEY",
+     "pages": [
+      7
+     ]
+    }
+   ],
+   "tags": [
+    "metformin",
+    "adverse effect"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "Metformin: GI upset (ท้องเสีย คลื่นไส้), vitamin B12 deficiency, lactic acidosis (หายากแต่รุนแรง), น้ำหนักลด"
+  },
+  {
+   "id": "END-46-KF-016",
+   "block": "END",
+   "cohort": 46,
+   "n": 16,
+   "type": "KF",
+   "case": "What are drug targets for osteoporosis treatment (at least 2 answers)?",
+   "items": [
+    {
+     "id": "16",
+     "prompt": "Drugs for osteoporosis treatment (at least 2)",
+     "format": "short",
+     "accepted": [
+      "bisphosphonate",
+      "alendronate",
+      "risedronate",
+      "zoledron",
+      "calcitonin",
+      "estrogen",
+      "serm",
+      "raloxifene",
+      "pth",
+      "teriparatide",
+      "denosumab",
+      "abaloparatide",
+      "romosozumab"
+     ],
+     "key_text": "Bisphosphonate, Calcitonin, Estrogen, SERMs, PTH, Denosumab",
+     "source_key": "Bisphosphonate: ⊖ enzyme in mevalonate pathway → ↓ osteoclast activity · Calcitonin: จับ G-protein ของ osteoclast → ↓ osteoclast activity · Estrogen: จับ estrogen R → ⊖ IL-6 → ↓ osteoclast diff & growth · SERMs: จับ estrogen R เกิด complex → ⊖ osteoclast growth, ⊕ osteoclast apoptosis · PTH: จับ PTH R ของ osteoblast → ↑ osteoblast diff & growth · Denosumab: จับ RANKL → ⊖ osteoclast formation, function, survival",
+     "explanation": "Antiresorptive: bisphosphonate (ยับยั้ง farnesyl pyrophosphate synthase ใน mevalonate pathway → osteoclast apoptosis), calcitonin, estrogen/SERM (raloxifene), denosumab (anti-RANKL) · Anabolic: PTH (teriparatide) ที่ให้เป็นช่วง ๆ กระตุ้น osteoblast"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF46",
+     "pages": [
+      7
+     ]
+    },
+    {
+     "paper": "KF46-KEY",
+     "pages": [
+      7
+     ]
+    }
+   ],
+   "tags": [
+    "osteoporosis",
+    "drug"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "Antiresorptive: bisphosphonate, calcitonin, estrogen, SERM, denosumab · Anabolic: PTH (teriparatide)"
+  }
+ ]
+}

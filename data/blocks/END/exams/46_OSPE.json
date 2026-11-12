@@ -1,0 +1,966 @@
+{
+ "meta": {
+  "set_id": "46_OSPE",
+  "block": "END",
+  "cohort": 46,
+  "type": "OSPE",
+  "title": "OSPE Endocrine · Med PSU 46",
+  "time_limit_min": 32,
+  "generated_by": "auditor/tools/build_kf.py from auditor/data/work/end_46_OSPE.kf.json — do not edit by hand"
+ },
+ "questions": [
+  {
+   "id": "END-46-OSPE-001",
+   "block": "END",
+   "cohort": 46,
+   "n": 1,
+   "type": "OSPE",
+   "station": 1,
+   "stem": "สถานี 1",
+   "items": [
+    {
+     "id": "1.1",
+     "prompt": "อวัยวะนี้คืออะไร (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "pituitary",
+      "hypophysis"
+     ],
+     "key_text": "Pituitary gland",
+     "source_key": "Pituitary gland"
+    },
+    {
+     "id": "1.2",
+     "prompt": "บริเวณ C ได้เลือดจากระบบไหลเวียนใด (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "keywords_all": [
+      "portal"
+     ],
+     "key_text": "Hypothalamo-hypophyseal portal system",
+     "source_key": "Hypothalamo-hypophyseal portal system"
+    },
+    {
+     "id": "1.3",
+     "prompt": "เซลล์ที่ลูกศรสีเขียวชี้สร้าง hormone อะไรบ้าง (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "gh",
+      "growth hormone",
+      "somatotropin",
+      "prolactin",
+      "prl"
+     ],
+     "key_text": "Growth hormone, prolactin (acidophil)",
+     "source_key": "Growth hormone, prolactin (acidophil)",
+     "explanation": "เฉลยระบุ A = pars nervosa, B = pars intermedia, C = pars distalis"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE46",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "OSPE46-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [
+    "pituitary",
+    "histology"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "pituitary; portal system; acidophils",
+   "image": "img/END-46-OSPE-001.jpg",
+   "image_caption": "ต่อมใต้สมอง A/B/C + เซลล์ที่ลูกศรเขียว"
+  },
+  {
+   "id": "END-46-OSPE-002",
+   "block": "END",
+   "cohort": 46,
+   "n": 2,
+   "type": "OSPE",
+   "station": 2,
+   "stem": "สถานี 2",
+   "items": [
+    {
+     "id": "2.1",
+     "prompt": "hormone ที่เก็บในโครงสร้างที่วงไว้คืออะไร (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "adh",
+      "vasopressin",
+      "antidiuretic"
+     ],
+     "keywords_all": [
+      "oxytocin"
+     ],
+     "key_text": "ADH (vasopressin), oxytocin",
+     "source_key": "ADH (vasopressin), oxytocin"
+    },
+    {
+     "id": "2.2",
+     "prompt": "โครงสร้างที่ลูกศรสีเขียวชี้คืออะไร (ตอบให้เฉพาะเจาะจง) (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "hypothalamohypophyseal tract",
+      "supraopticohypophyseal",
+      "hypothalamic hypophyseal tract"
+     ],
+     "keywords_all": [
+      "hypothalamo",
+      "tract"
+     ],
+     "key_text": "Hypothalamo-hypophyseal tract",
+     "source_key": "Hypothalamo-hypophyseal tract"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE46",
+     "pages": [
+      3
+     ]
+    },
+    {
+     "paper": "OSPE46-KEY",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [
+    "pituitary",
+    "histology"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "Herring body; hypothalamo-hypophyseal tract",
+   "image": "img/END-46-OSPE-002.jpg",
+   "image_caption": "วงกลม Herring body + ลูกศรเขียว"
+  },
+  {
+   "id": "END-46-OSPE-003",
+   "block": "END",
+   "cohort": 46,
+   "n": 3,
+   "type": "OSPE",
+   "station": 3,
+   "stem": "สถานี 3",
+   "items": [
+    {
+     "id": "3.1",
+     "prompt": "อวัยวะนี้คืออะไร (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "thyroid"
+     ],
+     "key_text": "Thyroid gland",
+     "source_key": "Thyroid gland"
+    },
+    {
+     "id": "3.2",
+     "prompt": "ในบริเวณ A มีส่วนประกอบอะไรบ้าง (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "thyroglobulin",
+      "colloid",
+      "t3",
+      "t4"
+     ],
+     "key_text": "Colloid: thyroglobulin, thyroid hormone (T3, T4)",
+     "source_key": "Colloid: thyroglobulin, thyroid hormone (T3, T4)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE46",
+     "pages": [
+      4
+     ]
+    },
+    {
+     "paper": "OSPE46-KEY",
+     "pages": [
+      4
+     ]
+    }
+   ],
+   "tags": [
+    "thyroid",
+    "histology"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "thyroid colloid",
+   "image": "img/END-46-OSPE-003.jpg",
+   "image_caption": "follicle มี colloid (A)"
+  },
+  {
+   "id": "END-46-OSPE-004",
+   "block": "END",
+   "cohort": 46,
+   "n": 4,
+   "type": "OSPE",
+   "station": 4,
+   "stem": "สถานี 4",
+   "items": [
+    {
+     "id": "4.1",
+     "prompt": "เซลล์ที่ลูกศรสีแดงชี้หลั่ง hormone อะไร (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "calcitonin"
+     ],
+     "key_text": "Calcitonin",
+     "source_key": "Calcitonin"
+    },
+    {
+     "id": "4.2",
+     "prompt": "hormone นั้นมีผลอย่างไร (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "lower blood calcium",
+      "decrease plasma ca",
+      "decrease blood ca",
+      "inhibit osteoclast",
+      "hypocalcemia",
+      "reduce calcium",
+      "lower calcium",
+      "lowers calcium"
+     ],
+     "keywords_all": [
+      "calci",
+      "decrease"
+     ],
+     "key_text": "↓ plasma Ca²⁺",
+     "source_key": "↓ plasma Ca2+"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE46",
+     "pages": [
+      4
+     ]
+    },
+    {
+     "paper": "OSPE46-KEY",
+     "pages": [
+      4
+     ]
+    }
+   ],
+   "tags": [
+    "thyroid",
+    "histology"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "parafollicular → calcitonin",
+   "image": "img/END-46-OSPE-004.jpg",
+   "image_caption": "ลูกศรแดงที่เซลล์ใสระหว่าง follicle"
+  },
+  {
+   "id": "END-46-OSPE-005",
+   "block": "END",
+   "cohort": 46,
+   "n": 5,
+   "type": "OSPE",
+   "station": 5,
+   "stem": "สถานี 5",
+   "items": [
+    {
+     "id": "5.1",
+     "prompt": "อวัยวะนี้คืออะไร (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "adrenal",
+      "suprarenal"
+     ],
+     "key_text": "Adrenal gland",
+     "source_key": "Adrenal gland"
+    },
+    {
+     "id": "5.2",
+     "prompt": "hormone ที่หลั่งจากเซลล์ในบริเวณ A มีหน้าที่อะไร (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "na reabsorption",
+      "aldosterone",
+      "potassium excretion",
+      "k excretion"
+     ],
+     "keywords_all": [
+      "sodium",
+      "reabsor"
+     ],
+     "key_text": "Aldosterone: ↑ Na⁺ reabsorption, ↑ K⁺ excretion",
+     "source_key": "↑ Na+ reabsorption, ↑ K+ excretion"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE46",
+     "pages": [
+      5
+     ]
+    },
+    {
+     "paper": "OSPE46-KEY",
+     "pages": [
+      5
+     ]
+    }
+   ],
+   "tags": [
+    "adrenal",
+    "histology"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "adrenal; zona glomerulosa",
+   "image": "img/END-46-OSPE-005.jpg",
+   "image_caption": "ต่อมหมวกไต zone A–D"
+  },
+  {
+   "id": "END-46-OSPE-006",
+   "block": "END",
+   "cohort": 46,
+   "n": 6,
+   "type": "OSPE",
+   "station": 6,
+   "stem": "สถานี 6",
+   "items": [
+    {
+     "id": "6.1",
+     "prompt": "ยกตัวอย่าง hormone ที่หลั่งจากเซลล์ในบริเวณ B (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "cortisol",
+      "glucocorticoid",
+      "corticosterone",
+      "hydrocortisone"
+     ],
+     "key_text": "Cortisol (glucocorticoid)",
+     "source_key": "Cortisol (Corticosteroid, glucocorticoid)"
+    },
+    {
+     "id": "6.2",
+     "prompt": "เซลล์ต่อมไร้ท่อในบริเวณ D คือเซลล์อะไร (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "chromaffin",
+      "pheochromocyte"
+     ],
+     "key_text": "Chromaffin cell",
+     "source_key": "Chromaffin cell"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE46",
+     "pages": [
+      5
+     ]
+    },
+    {
+     "paper": "OSPE46-KEY",
+     "pages": [
+      5
+     ]
+    }
+   ],
+   "tags": [
+    "adrenal",
+    "histology"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "zona fasciculata; medulla",
+   "image": "img/END-46-OSPE-006.jpg",
+   "image_caption": "ต่อมหมวกไต zone A–D"
+  },
+  {
+   "id": "END-46-OSPE-007",
+   "block": "END",
+   "cohort": 46,
+   "n": 7,
+   "type": "OSPE",
+   "station": 7,
+   "stem": "สถานี 7",
+   "items": [
+    {
+     "id": "7.1",
+     "prompt": "โครงสร้างในวงกลมสีดำคืออะไร (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "parathyroid"
+     ],
+     "key_text": "Parathyroid gland",
+     "source_key": "Parathyroid gland"
+    },
+    {
+     "id": "7.2",
+     "prompt": "เซลล์ที่ลูกศรสีแดงชี้คือเซลล์อะไร (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "oxyphil",
+      "oxyphilic"
+     ],
+     "key_text": "Oxyphil cell",
+     "source_key": "Oxyphil cell"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE46",
+     "pages": [
+      6
+     ]
+    },
+    {
+     "paper": "OSPE46-KEY",
+     "pages": [
+      6
+     ]
+    }
+   ],
+   "tags": [
+    "parathyroid",
+    "histology"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "parathyroid: oxyphil vs chief",
+   "image": "img/END-46-OSPE-007.jpg",
+   "image_caption": "ต่อมในวงกลม + ลูกศรแดง/เหลือง"
+  },
+  {
+   "id": "END-46-OSPE-008",
+   "block": "END",
+   "cohort": 46,
+   "n": 8,
+   "type": "OSPE",
+   "station": 8,
+   "stem": "สถานี 8",
+   "items": [
+    {
+     "id": "8.1",
+     "prompt": "เซลล์ที่ลูกศรสีเหลืองชี้คือเซลล์อะไร (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "chief",
+      "principal cell"
+     ],
+     "key_text": "Chief cell (secretes PTH)",
+     "source_key": "Chief cell (secretes PTH)"
+    },
+    {
+     "id": "8.2",
+     "prompt": "hormone ที่หลั่งจากเซลล์ที่ลูกศรสีเหลืองชี้มีเป้าหมายหลักคืออะไร (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "bone",
+      "kidney",
+      "renal"
+     ],
+     "key_text": "Bone & kidney",
+     "source_key": "Bone & kidney"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE46",
+     "pages": [
+      6
+     ]
+    },
+    {
+     "paper": "OSPE46-KEY",
+     "pages": [
+      6
+     ]
+    }
+   ],
+   "tags": [
+    "parathyroid",
+    "histology"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "chief cell → PTH → bone, kidney",
+   "image": "img/END-46-OSPE-008.jpg",
+   "image_caption": "ต่อมในวงกลม + ลูกศรแดง/เหลือง"
+  },
+  {
+   "id": "END-46-OSPE-009",
+   "block": "END",
+   "cohort": 46,
+   "n": 9,
+   "type": "OSPE",
+   "station": 9,
+   "stem": "สถานี 9",
+   "items": [
+    {
+     "id": "9.1",
+     "prompt": "การวินิจฉัยคืออะไร (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "ftc"
+     ],
+     "keywords_all": [
+      "follicular",
+      "carcinoma"
+     ],
+     "key_text": "Follicular carcinoma (capsular and vascular invasion)",
+     "source_key": "Follicular carcinoma (พบ capsular invasion, vascular invasion)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE46",
+     "pages": [
+      7
+     ]
+    },
+    {
+     "paper": "OSPE46-KEY",
+     "pages": [
+      7
+     ]
+    }
+   ],
+   "tags": [
+    "thyroid",
+    "pathology"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "follicular carcinoma",
+   "image": "img/END-46-OSPE-009.jpg",
+   "image_caption": "ก้อนมีเปลือก"
+  },
+  {
+   "id": "END-46-OSPE-010",
+   "block": "END",
+   "cohort": 46,
+   "n": 10,
+   "type": "OSPE",
+   "station": 10,
+   "stem": "สถานี 10",
+   "items": [
+    {
+     "id": "10.1",
+     "prompt": "บรรยายลักษณะทาง histology ของผู้ป่วยรายนี้ (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "tall columnar",
+      "hyperplasia",
+      "hyperplastic"
+     ],
+     "keywords_all": [
+      "scallop"
+     ],
+     "key_text": "Hyperplastic follicular cells (cuboidal → tall columnar), reduced colloid with scalloped appearance",
+     "source_key": "Follicular cell เพิ่มจำนวนและมีขนาดใหญ่ขึ้นจาก cuboid เป็น tall columnar แต่ละ follicle เห็น colloid ลดลงและเห็น scalloped appearance"
+    },
+    {
+     "id": "10.2",
+     "prompt": "การวินิจฉัยคืออะไร (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "graves",
+      "diffuse toxic goiter",
+      "diffuse hyperplasia"
+     ],
+     "key_text": "Diffuse hyperplasia (Graves' disease)",
+     "source_key": "Diffuse hyperplasia (Grave's disease)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE46",
+     "pages": [
+      8
+     ]
+    },
+    {
+     "paper": "OSPE46-KEY",
+     "pages": [
+      8
+     ]
+    }
+   ],
+   "tags": [
+    "thyroid",
+    "pathology"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "Graves disease",
+   "image": "img/END-46-OSPE-010.jpg",
+   "image_caption": "follicle เซลล์สูง colloid ขอบหยัก"
+  },
+  {
+   "id": "END-46-OSPE-011",
+   "block": "END",
+   "cohort": 46,
+   "n": 11,
+   "type": "OSPE",
+   "station": 11,
+   "stem": "สถานี 11",
+   "items": [
+    {
+     "id": "11.1",
+     "prompt": "บรรยายลักษณะ gross และ histology ของผู้ป่วยรายนี้ (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "ground glass",
+      "groove",
+      "fibrovascular"
+     ],
+     "keywords_all": [
+      "papill"
+     ],
+     "key_text": "Gross: ill-defined mass, irregular cut surface with papillary projections. Histo: branching papillae with fibrovascular cores; ground-glass nuclei and nuclear grooves",
+     "source_key": "Gross: ก้อนขอบเขตไม่ชัดเจน หน้าตัดไม่เรียบ มีส่วนยื่นคล้ายนิ้วมือ (papillary projection) · Histo: follicular cell เรียงเป็น branching papillary, nucleus ground glass และ nuclear groove, แกนกลางเป็น fibrovascular core"
+    },
+    {
+     "id": "11.2",
+     "prompt": "การวินิจฉัยคืออะไร (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "ptc"
+     ],
+     "keywords_all": [
+      "papillary",
+      "carcinoma"
+     ],
+     "key_text": "Papillary carcinoma",
+     "source_key": "Papillary carcinoma"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE46",
+     "pages": [
+      9
+     ]
+    },
+    {
+     "paper": "OSPE46-KEY",
+     "pages": [
+      9
+     ]
+    }
+   ],
+   "tags": [
+    "thyroid",
+    "pathology"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "papillary carcinoma",
+   "image": "img/END-46-OSPE-011.jpg",
+   "image_caption": "gross + papillae"
+  },
+  {
+   "id": "END-46-OSPE-012",
+   "block": "END",
+   "cohort": 46,
+   "n": 12,
+   "type": "OSPE",
+   "station": 12,
+   "stem": "สถานี 12",
+   "items": [
+    {
+     "id": "12.1",
+     "prompt": "บรรยายลักษณะทาง histology ของผู้ป่วยรายนี้ (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "germinal center",
+      "germinal centre"
+     ],
+     "keywords_all": [
+      "lymph",
+      "hurthle"
+     ],
+     "key_text": "Lymphoid follicles with germinal centres; follicular cells destroyed, some atrophic; Hürthle cells",
+     "source_key": "พบ lymphoid follicle ภายในเป็น germinal center, รอบข้างพบ follicular cell จำนวนมากถูกทำลาย บางส่วน atrophy และพบ Hurthle cell"
+    },
+    {
+     "id": "12.2",
+     "prompt": "การวินิจฉัยคืออะไร (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "hashimoto",
+      "chronic lymphocytic thyroiditis",
+      "autoimmune thyroiditis"
+     ],
+     "key_text": "Hashimoto's thyroiditis",
+     "source_key": "Hashimoto's thyroiditis"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE46",
+     "pages": [
+      10
+     ]
+    },
+    {
+     "paper": "OSPE46-KEY",
+     "pages": [
+      10
+     ]
+    }
+   ],
+   "tags": [
+    "thyroid",
+    "pathology"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "Hashimoto thyroiditis",
+   "image": "img/END-46-OSPE-012.jpg",
+   "image_caption": "lymphoid follicle + เซลล์ชมพู"
+  },
+  {
+   "id": "END-46-OSPE-013",
+   "block": "END",
+   "cohort": 46,
+   "n": 13,
+   "type": "OSPE",
+   "station": 13,
+   "stem": "สถานี 13",
+   "items": [
+    {
+     "id": "13.1",
+     "prompt": "บรรยายลักษณะ gross ของผู้ป่วยรายนี้ (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "keywords_all": [
+      "nodul"
+     ],
+     "key_text": "Enlarged thyroid with multiple nodules of varying size, a prominent well-defined nodule, areas of haemorrhage",
+     "source_key": "ต่อมไทรอยด์ขนาดใหญ่ขึ้น พบ nodule หลายขนาดแตกต่างกัน แต่มี prominent nodule ขอบเขตชัดเจนและมี hemorrhage บางส่วน"
+    },
+    {
+     "id": "13.2",
+     "prompt": "การวินิจฉัยคืออะไร (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "nodular goiter",
+      "multinodular goiter"
+     ],
+     "keywords_all": [
+      "goit"
+     ],
+     "key_text": "Solitary nodular goiter (multinodular goiter)",
+     "source_key": "Solitary nodular goiter (multinodular goiter)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE46",
+     "pages": [
+      11
+     ]
+    },
+    {
+     "paper": "OSPE46-KEY",
+     "pages": [
+      11
+     ]
+    }
+   ],
+   "tags": [
+    "thyroid",
+    "pathology"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "nodular goiter",
+   "image": "img/END-46-OSPE-013.jpg",
+   "image_caption": "ไทรอยด์มีหลายปุ่ม"
+  },
+  {
+   "id": "END-46-OSPE-014",
+   "block": "END",
+   "cohort": 46,
+   "n": 14,
+   "type": "OSPE",
+   "station": 14,
+   "stem": "สถานี 14 ผลจาก fine needle aspiration",
+   "items": [
+    {
+     "id": "14.1",
+     "prompt": "การวินิจฉัยคืออะไร (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "ptc"
+     ],
+     "keywords_all": [
+      "papillary",
+      "carcinoma"
+     ],
+     "key_text": "Papillary carcinoma (ground-glass nuclei, nuclear grooves)",
+     "source_key": "Papillary carcinoma (พบ nucleus ground glass appearance, nuclear groove)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE46",
+     "pages": [
+      12
+     ]
+    },
+    {
+     "paper": "OSPE46-KEY",
+     "pages": [
+      12
+     ]
+    }
+   ],
+   "tags": [
+    "thyroid",
+    "pathology"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "FNA: papillary carcinoma",
+   "image": "img/END-46-OSPE-014.jpg",
+   "image_caption": "FNA กลุ่มเซลล์"
+  },
+  {
+   "id": "END-46-OSPE-015",
+   "block": "END",
+   "cohort": 46,
+   "n": 15,
+   "type": "OSPE",
+   "station": 15,
+   "stem": "สถานี 15",
+   "items": [
+    {
+     "id": "15.1",
+     "prompt": "บรรยายลักษณะ gross ของผู้ป่วยรายนี้ (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "well circumscribed",
+      "well-circumscribed",
+      "encapsulated"
+     ],
+     "keywords_all": [
+      "yellow"
+     ],
+     "key_text": "Well-circumscribed mass with fibrous capsule; yellow cut surface",
+     "source_key": "ก้อนขอบเขตชัดเจน มี fibrous capsule หุ้ม หน้าตัดสีเหลือง"
+    },
+    {
+     "id": "15.2",
+     "prompt": "การวินิจฉัยคืออะไร (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "adrenal adenoma",
+      "cortical adenoma"
+     ],
+     "keywords_all": [
+      "adenoma"
+     ],
+     "key_text": "Cortical adenoma (adrenocortical adenoma)",
+     "source_key": "Cortical adenoma (adrenocortical adenoma)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE46",
+     "pages": [
+      12
+     ]
+    },
+    {
+     "paper": "OSPE46-KEY",
+     "pages": [
+      12
+     ]
+    }
+   ],
+   "tags": [
+    "adrenal",
+    "pathology"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "adrenocortical adenoma",
+   "image": "img/END-46-OSPE-015.jpg",
+   "image_caption": "ต่อมหมวกไตมีก้อนสีเหลือง"
+  },
+  {
+   "id": "END-46-OSPE-016",
+   "block": "END",
+   "cohort": 46,
+   "n": 16,
+   "type": "OSPE",
+   "station": 16,
+   "stem": "สถานี 16 เด็กชายอายุ 10 ปี มาด้วยอาการ Cushing และก้อนขนาด 15 cm เหนือไต",
+   "items": [
+    {
+     "id": "16.1",
+     "prompt": "บรรยายลักษณะ gross ของผู้ป่วยรายนี้ (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "large mass"
+     ],
+     "keywords_all": [
+      "necrosis"
+     ],
+     "key_text": "Large white-yellow mass with areas of pale yellow necrosis",
+     "source_key": "ก้อนสีขาวเหลืองขนาดใหญ่ มีบริเวณ necrosis สีเหลืองอ่อน"
+    },
+    {
+     "id": "16.2",
+     "prompt": "การวินิจฉัยคืออะไร (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "acc",
+      "adrenal carcinoma"
+     ],
+     "keywords_all": [
+      "cortical",
+      "carcinoma"
+     ],
+     "key_text": "Adrenocortical carcinoma",
+     "source_key": "Adrenocortical carcinoma"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE46",
+     "pages": [
+      13
+     ]
+    },
+    {
+     "paper": "OSPE46-KEY",
+     "pages": [
+      13
+     ]
+    }
+   ],
+   "tags": [
+    "adrenal",
+    "pathology"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "adrenocortical carcinoma",
+   "image": "img/END-46-OSPE-016.jpg",
+   "image_caption": "histology + gross ก้อนใหญ่"
+  }
+ ]
+}

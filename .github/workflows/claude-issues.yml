@@ -1,0 +1,38 @@
+# Claude แก้ GitHub issue อัตโนมัติ (ผู้ใช้สั่ง 2026-11-08)
+# ทำงานเมื่อมี issue ใหม่ หรือมีคนพิมพ์ @claude ใน issue/PR · ใช้โทเค็นของใครก็ได้ที่ตั้ง secret ไว้
+# ตั้งครั้งเดียว: เครื่องที่มี Claude Code รัน `claude setup-token` → คัดลอกโทเค็น →
+#   GitHub repo → Settings → Secrets and variables → Actions → New repository secret
+#   ชื่อ CLAUDE_CODE_OAUTH_TOKEN (หรือใช้ ANTHROPIC_API_KEY ก็ได้)
+# ถ้าโทเค็นของคนหนึ่งหมด อีกคนเปลี่ยนค่า secret เป็นของตัวเองแทนได้
+name: Claude แก้ issue
+on:
+  issues:
+    types: [opened]
+  issue_comment:
+    types: [created]
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+  id-token: write
+jobs:
+  fix:
+    if: github.event_name == 'issues' || contains(github.event.comment.body, '@claude')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - uses: anthropics/claude-code-action@v1
+        with:
+          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          show_full_output: true
+          prompt: |
+            อ่าน CLAUDE.md หัวข้อ "รับปัญหาจาก GitHub issue" และ HANDOFF.md แล้วแก้ issue #${{ github.event.issue.number }} ของ repo นี้
+            ทำบน branch ใหม่ `finn-fix-issues-${{ github.event.issue.number }}` · แก้ข้อมูลที่ auditor/data แล้ว build ใหม่ (ห้ามแก้ไฟล์ข้อสอบด้วยมือ)
+            รัน `node tools/validate.cjs` ให้ผ่าน · ออกเวอร์ชันตาม CLAUDE.md · เปิด draft PR ใส่ `Closes #${{ github.event.issue.number }}`
+            ถ้าไม่เห็นด้วยกับผู้แจ้ง ให้อธิบายเหตุผลในคอมเมนต์ issue แทนการแก้ · ตอบภาษาไทยสั้น ๆ
+          claude_args: --allowedTools "Bash,Read,Edit,Write,Glob,Grep"

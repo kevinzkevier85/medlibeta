@@ -1,6 +1,6 @@
 # HANDOFF — กระดาษส่งต่องาน (ยื่นให้ AI ตัวไหนก็ได้ อ่านใบนี้ใบเดียวแล้วทำต่อได้)
 > งานที่ทำค้างล่าสุด: ดู branch ที่ push ล่าสุด `git branch -r --sort=-committerdate | head -3` แล้ว `git log -5 --format=%B <branch>` — บรรทัด `ถัดไป:` คือขั้นต่อไป
-อัปเดต: 2026-11-08 · เขียนโดย Claude (ผู้ใช้: Finn)
+อัปเดต: 2026-11-12 · เขียนโดย Claude (ผู้ใช้: Finn)
 
 ## 0. โปรเจกต์นี้คืออะไร
 - **MedLib** = เว็บคลังข้อสอบ/lecture แพทย์ PSU ปี 1–3 (static HTML+JS, ไม่มี build) · repo `github.com/kevinzkevier85/medlibeta` · เว็บ `kevinzkevier85.github.io/medlibeta`
@@ -10,20 +10,18 @@
 - ส่งงานทุกครั้ง: เพิ่มเลขใน `version.json` + `CHANGELOG.md` + `?v=` ใน `index.html` + `VERSION` ใน `sw.js`
 
 ## 1. งานค้างตอนนี้ — บล็อก KUB and Repro (Drive `preclinic/2/urinary`)
-- branch **`finn-urinary-block`** · PR #38 (draft) · main = v0.25.0, branch = v0.26.0
-- block id `KUB` (inventory `kub_<รุ่น>_<MCQ|KF|OSPE>`, 27 ชุด) · `data/blocks/KUB/` · index.json เพิ่มแล้ว
-- สถานะรายชุด (ต้องได้คุณภาพเท่า GI ทุกชุด — ดูข้อ 2):
+- branch **`finn-urinary-block`** · PR #38 · รวม main แล้ว (v0.32.0) · block id `KUB` (inventory `kub_<รุ่น>_<MCQ|KF|OSPE>`, 27 ชุด) · `data/blocks/KUB/`
+- สถานะรายชุด:
   | ชุด | สถานะ |
   |---|---|
-  | MCQ 44 | ✅ ครบแบบ GI |
-  | MCQ 49 | ⚠️ ทำใหม่: ตัดรูปข้อ 2,20,23,38,45 (`auditor/data/images.json` + `crop_images.py --block kub --set kub_49_MCQ`), เติมช้อยส์ 31,41 (ai_generated ถ้าต้องแต่ง), explanation เต็มทุกข้อ (repair.json) |
-  | MCQ 50, 51 | ⚠️ ทำใหม่: ข้อสอบแบบจำมา — ข้อที่มีแค่โน้ต/ช้อยส์ไม่ครบ → ai_generated / เติมช้อยส์, ข้อรูป → ตัดรูป, explanation เต็ม · คำตอบที่อ่านจากเฉลยลายมืออยู่ใน `<set>.key.json` แล้ว (ไม่ต้องอ่านใหม่) |
-  | MCQ 52 | ⚠️ เขียน explanation เต็ม (ตอนนี้สั้น) · ข้อ 2–4 ฯลฯ ที่เป็น "–" ข้ามได้ (ต้นฉบับว่างจริง) |
-  | MCQ 42-43, 45, 46, 47, 48 | ยังไม่เริ่ม (45–48 ไม่มีไฟล์เฉลย → AI ร่าง drafted) |
+  | MCQ 44, 49, 50, 51, 52 | ✅ ครบ (318 ข้อ) |
+  | MCQ 42-43 | 🚧 parse + blind + key เสร็จ ยังไม่เขียน repair/รูป (รายการแก้อยู่ในข้อความ commit `fdb3f64`) |
+  | MCQ 45, 46, 47, 48 | ยังไม่เริ่ม (ไม่มีไฟล์เฉลย → AI ร่าง drafted) |
   | KF ×10, OSPE ×7 | ยังไม่เริ่ม (ทำแบบ GI: `<set>.kf.json` → `build_kf.py`) |
 - เมื่อครบบล็อก: version ใหม่ + PROGRESS.md (เพิ่มส่วน KUB) + อัปเดตไฟล์นี้
-- ตัวช่วย: `auditor/tools/parse_key.py` อ่านไฮไลต์ ส้ม/ฟ้า ได้แล้ว · เฉลยแบบขีด/วงกลมลายมือ (KUB 49, 50, 51) ต้องอ่านด้วยตา (ย่อ 2 หน้าต่อภาพ, grayscale ประหยัดโทเค็น)
-- ข้อที่ต้นฉบับเลือก 2 ตัว → `auditor/data/decisions.json` ใส่ `also_accept`
+- ตัวช่วย: `auditor/tools/parse_key.py` อ่านไฮไลต์ ส้ม/ฟ้า ได้ · เฉลยขีด/วงกลมลายมือต้องอ่านด้วยตา · ข้อที่ต้นฉบับเลือก 2 ตัว → `auditor/data/decisions.json` ใส่ `also_accept`
+- เขียนเฉลยแบบฟอร์มปี 52 (ดู CLAUDE.md "แบบฟอร์มเฉลย MCQ")
+- ทุกชั่วโมงมีงานตั้งเวลาเช็ก GitHub issue ใหม่ (ฝั่ง Claude ของ Finn)
 
 ## 2. ผู้ใช้ (Finn) ต้องการ
 - ตอบภาษาไทย สั้น ภาษาคน · ถ้าจะถาม ให้ถามเป็นช้อยส์ให้ติ๊ก
@@ -34,7 +32,7 @@
 ## 3. สถานะข้อมูล
 | บล็อก | MCQ | KF | OSPE |
 |---|---|---|---|
-| END (Endocrine) | 9 ชุด + lecture + แผนอ่าน | 1 | – |
+| END (Endocrine) | 9 ชุด + lecture + แผนอ่าน | 9 ชุด | 9 ชุด 156 สถานี |
 | GI | 10 ชุด 864 ข้อ | 9 ชุด 196 ข้อ | 7 ชุด 193 สถานี |
 | KUB (กำลังทำ) | 5/10 ชุด (ดูข้อ 1) | 0/10 | 0/7 |
 | CVS | 11 ชุด (import เก่า) | – | – |
@@ -44,6 +42,7 @@
 - **ห้ามแก้** `data/blocks/*/exams/*.json` ที่มี `generated_by` ด้วยมือ → แก้ต้นทางใน `auditor/` แล้ว build ใหม่
   - เปลี่ยนเฉลย MCQ: เพิ่มใน `auditor/data/decisions.json` `{"<set>_<NNN>": {"answer":"E","note":"…"}}` → `python3 auditor/tools/build_work.py --set <set>` → `python3 auditor/tools/build_outputs.py --block <end|gi>`
   - แก้โจทย์ MCQ: `auditor/data/work/<set>.repair.json` → questions.<เลข>.edits `[{"field":"stem","old":"…","new":"…"}]` แล้ว build เหมือนข้างบน
+  - **OSPE: ข้อความสถานี (case) และคำถาม (prompt) ต้องเป็นภาษาไทย** ศัพท์แพทย์คงอังกฤษ ต่อท้าย `(ตอบภาษาอังกฤษ)` เพราะ accepted เป็นอังกฤษ (ผู้ใช้สั่ง 2026-11-09; END ทำแล้ว · GI 7 ชุดยังเป็นอังกฤษ)
   - KF/OSPE: แก้ `auditor/data/work/<set>.kf.json` → `python3 auditor/tools/build_kf.py --set <set>`
 - ชุดใหม่ (MCQ): `extract.py --set` → `parse_mcq.py` → AI ตอบเองก่อนดูเฉลย (`blind.json`) → อ่านเฉลย (`key.json`) → `repair.json` → รูปใน `auditor/data/images.json` + `crop_images.py` → build · ขั้นละเอียด: `prompt-exam-auditor.md`
 - กติกาเฉลย: AI ไม่เห็นด้วย = เก็บเฉลยต้นฉบับ ติด disputed · ไม่มีเฉลย = AI ร่าง ติด draft · อย่าเดาเกินที่ภาพบอก
@@ -51,12 +50,13 @@
 ## 5. กับดักที่เจอแล้ว
 - `config.json` มี API key **ห้ามเปิดอ่าน/พิมพ์** ห้ามใส่ key ลง repo
 - PDF บางไฟล์ฟอนต์ไทยเพี้ยน (เปyน/ขWอ) → แก้อัตโนมัติแล้วใน `build_work.py fix_thai()`
+- ตัวตรวจคำตอบพิมพ์ (`lib/quizcore.js autoMatch`): คำตอบอังกฤษต้องตรงตั้งแต่ต้นคำ, ≤3 ตัวอักษรต้องเป็นคำเต็ม → ใส่ accepted เป็นคำ/วลี ไม่ใช่เศษกลางคำ · `case` ของ OSPE ห้ามบรรยายภาพจนเฉลยหลุด
 - ไฮไลต์เฉลยมีหลายสี → `parse_key.py`; วัดไม่ได้ให้อ่านด้วยตา
 - ตัดรูปต้องรวมป้าย A/B/ลูกศร แล้วดูภาพรวมทุกครั้ง · รูปที่ลงทะเบียนแต่ไม่ใช้ทำ build error
 - `node tools/validate.cjs | tail` ซ่อน exit code → ใช้ `> file; echo $?`
 
 ## 6. ถัดไป (เรียงลำดับ)
-1. ทำ KUB ให้ครบตามตารางข้อ 1 (แก้ 49 → 50 → 51 → 52 แล้วชุดที่เหลือ) · commit+push ทุกชุดพร้อมบรรทัด `ถัดไป:`
+1. ทำ KUB ให้ครบตามตารางข้อ 1 (42-43 → 45–48 → KF → OSPE) · commit+push ทุกชุดพร้อมบรรทัด `ถัดไป:`
 2. CVS: 14 ข้อเฉลยขัด ยังไม่มี `ai_answer`
 3. ข้อ draft ที่ต้นฉบับไม่มีเฉลย รอคนตรวจ
 
