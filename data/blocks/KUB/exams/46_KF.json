@@ -1,0 +1,1144 @@
+{
+ "meta": {
+  "set_id": "46_KF",
+  "block": "KUB",
+  "cohort": 46,
+  "type": "KF",
+  "title": "KF KUB and Repro · Med PSU 46",
+  "time_limit_min": 120,
+  "generated_by": "auditor/tools/build_kf.py from auditor/data/work/kub_46_KF.kf.json — do not edit by hand"
+ },
+ "questions": [
+  {
+   "id": "KUB-46-KF-001",
+   "block": "KUB",
+   "cohort": 46,
+   "n": 1,
+   "type": "KF",
+   "case": "หญิง 50 ปี เพลีย ปัสสาวะน้อย. 7 วันก่อนปวดเข่า ไปซื้อ NSAIDs มากิน ปัสสาวะน้อยลงมาก เพลีย. PE: BP 90/50, mild dry lip. BUN 45, Cr 4.5.",
+   "items": [
+    {
+     "id": "1.1",
+     "prompt": "วินิจฉัยโรคที่เป็นสาเหตุให้เกิดอาการ oliguria",
+     "format": "short",
+     "accepted": [
+      "acute tubular necrosis",
+      "ATN",
+      "acute interstitial nephritis",
+      "AIN",
+      "AKI"
+     ],
+     "keywords_all": [
+      "acute"
+     ],
+     "key_text": "Acute kidney injury จาก NSAIDs: Acute tubular necrosis (ATN) หรือ Acute interstitial nephritis (AIN) — BUN:Cr = 10 (ไม่ใช่ prerenal ล้วน)",
+     "source_key": "AIN / ATN (ชอบโรคไหนก็เอาโรคนั้น); BUN:Cr = 45/4.5 = 10"
+    },
+    {
+     "id": "1.2",
+     "prompt": "สาเหตุที่ทำให้เกิด oliguria ในผู้ป่วยรายนี้",
+     "format": "short",
+     "accepted": [
+      "NSAIDs",
+      "NSAID nephrotoxicity"
+     ],
+     "keywords_all": [
+      "NSAID"
+     ],
+     "key_text": "NSAIDs nephrotoxicity (vasoconstriction ของ afferent → ischemia → ท่อไตตาย หรือ hypersensitivity ต่อ interstitium) ซ้ำด้วยการขาดน้ำ (BP 90/50)",
+     "source_key": "NSAIDs → nephrotoxicity; ทำให้ vasoconstriction of afferent arteriole → ischemia → tubular cell ตาย; หรือเป็น hapten กระตุ้น hypersensitivity → interstitial inflammation"
+    },
+    {
+     "id": "1.3",
+     "prompt": "สิ่งที่สามารถพบได้ในปัสสาวะผู้ป่วย",
+     "format": "short",
+     "accepted": [
+      "hematuria",
+      "pyuria",
+      "granular casts",
+      "muddy brown casts"
+     ],
+     "keywords_all": [
+      "casts"
+     ],
+     "key_text": "hematuria · pyuria · granular casts (muddy brown) — ถ้า ATN; ถ้า AIN พบ WBC/eosinophil + WBC cast",
+     "source_key": "hematuria, hematuria, pyuria, granular cast (muddy brown)"
+    },
+    {
+     "id": "1.4",
+     "prompt": "pathophysiology ของ oliguria",
+     "format": "short",
+     "accepted": [
+      "afferent vasoconstriction",
+      "GFR RBF decrease"
+     ],
+     "keywords_all": [
+      "afferent"
+     ],
+     "key_text": "NSAIDs ยับยั้ง prostaglandin → vasoconstriction ของ afferent arteriole → RBF/GFR ↓ → oliguria; ischemia ต่อเนื่อง → tubular cell ตาย (ATN)",
+     "source_key": "ลด GFR และ RBF ทำให้เกิด oliguria",
+     "mechanism": [
+      "NSAIDs ยับยั้ง COX → prostaglandin ↓",
+      "afferent arteriole หดตัว",
+      "RBF/GFR ↓ → oliguria",
+      "ischemia → tubular cell necrosis (ATN)"
+     ]
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF46",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "KF46-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [
+    "NSAID",
+    "AKI",
+    "ATN",
+    "AIN"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "NSAIDs: afferent vasoconstriction + ATN/AIN; BUN:Cr ~10"
+  },
+  {
+   "id": "KUB-46-KF-002",
+   "block": "KUB",
+   "cohort": 46,
+   "n": 2,
+   "type": "KF",
+   "case": "ชาย 50 ปี เป็นตับอักเสบบี ได้รับยา tenofovir. UA: glucose 2+, protein 1+.",
+   "items": [
+    {
+     "id": "2.1",
+     "prompt": "เกิดพยาธิสภาพที่ตำแหน่งใดของหน่วยไต",
+     "format": "short",
+     "accepted": [
+      "proximal tubule",
+      "PCT",
+      "proximal convoluted tubule"
+     ],
+     "keywords_all": [
+      "proximal"
+     ],
+     "key_text": "Proximal convoluted tubule (PCT) — tenofovir nephrotoxicity → Fanconi syndrome",
+     "source_key": "Proximal convoluted tubule (tenofovir nephrotoxicity → Fanconi)"
+    },
+    {
+     "id": "2.2",
+     "prompt": "เหตุผลการวินิจฉัย",
+     "format": "short",
+     "accepted": [
+      "glucosuria",
+      "aminoaciduria",
+      "Fanconi"
+     ],
+     "keywords_all": [
+      "glucose"
+     ],
+     "key_text": "พบ glucose และ amino acid ในปัสสาวะ ซึ่งปกติถูกดูดกลับที่ PCT → สงสัย PCT เสียหาย; protein 1+ น้อยเกินกว่า membranous nephropathy/nephrotic syndrome จาก HBV",
+     "source_key": "พบ glucose และ amino acid ซึ่งปกติดูดกลับที่ proximal tubule จึงสงสัยพยาธิสภาพที่ PCT (tenofovir → Fanconi syndrome); membranous nephropathy จาก HBV ต้องมี protein เยอะกว่านี้"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF46",
+     "pages": [
+      3
+     ]
+    },
+    {
+     "paper": "KF46-KEY",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [
+    "tenofovir",
+    "Fanconi syndrome"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "tenofovir → PCT injury → Fanconi (glucosuria, aminoaciduria)"
+  },
+  {
+   "id": "KUB-46-KF-003",
+   "block": "KUB",
+   "cohort": 46,
+   "n": 3,
+   "type": "KF",
+   "case": "ชาย อายุ 45 ปี ให้หาความสามารถในการทำงานของไต. Serum creatinine 1 mg/dL; 24-hour urine creatinine 60 mg/dL, volume 2400 mL.",
+   "items": [
+    {
+     "id": "3.1",
+     "prompt": "จงแสดงวิธีคำนวณ CrCl",
+     "format": "short",
+     "accepted": [
+      "100",
+      "100 mL/min",
+      "100 ml/min"
+     ],
+     "keywords_all": [
+      "100"
+     ],
+     "key_text": "CrCl = (U_Cr × V)/(P_Cr) = (60 × 2400)/(1 × 1440 min) = 100 mL/min",
+     "source_key": "Clearance = [Cr]urine × urine flow rate / [Cr]plasma = 60 × 2400 / (1 × 24 × 60) = 100 mL/min",
+     "explanation": "V = 2400 mL ÷ 1440 min = 1.67 mL/min; U × V/P = 60 × 1.67 = 100"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF46",
+     "pages": [
+      3
+     ]
+    },
+    {
+     "paper": "KF46-KEY",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [
+    "creatinine clearance"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "CrCl = U·V/P (หน่วยนาที)"
+  },
+  {
+   "id": "KUB-46-KF-004",
+   "block": "KUB",
+   "cohort": 46,
+   "n": 4,
+   "type": "KF",
+   "case": "เด็กชาย 10 ปี 3 วันก่อนมาโรงพยาบาลเริ่มบวมที่ตา แล้วบวมทั้งตัว ปัสสาวะน้อย เหนื่อยง่าย ต้องหนุนหมอนสูง. ประวัติ: ไข้ ไอ เจ็บคอเมื่อ 2 สัปดาห์ก่อน. PE: dyspnea, orthopnea, BP 140/90, puffy eyelids, engorged neck vein, fine crepitation both lower lungs, no heart murmur, liver 3 cm below right costal margin, pretibial edema. UA: tea-colour urine, sp.gr 1.015, pH 5, protein trace, blood 2+, RBC 50–100/HPF, RBC cast 0–1/LPF.",
+   "items": [
+    {
+     "id": "4.1",
+     "prompt": "จากอาการแสดงและผลตรวจปัสสาวะ เรียกกลุ่มอาการนี้ว่า",
+     "format": "short",
+     "accepted": [
+      "nephritic syndrome"
+     ],
+     "keywords_all": [
+      "nephritic"
+     ],
+     "key_text": "Nephritic syndrome",
+     "source_key": "Nephritic syndrome"
+    },
+    {
+     "id": "4.2",
+     "prompt": "กลุ่มอาการนี้ประกอบด้วยอะไรบ้าง (4 ข้อ)",
+     "format": "short",
+     "accepted": [
+      "hematuria proteinuria hypertension oliguria"
+     ],
+     "keywords_all": [
+      "hematuria",
+      "hypertension"
+     ],
+     "key_text": "Hematuria · proteinuria (sub-nephrotic) · hypertension (renin release) · oliguria",
+     "source_key": "Hematuria, Proteinuria (subnephrotic range), Hypertension (renin release), Oliguria"
+    },
+    {
+     "id": "4.3",
+     "prompt": "จงให้การวินิจฉัยที่เป็นไปได้มากที่สุด",
+     "format": "short",
+     "accepted": [
+      "acute post-streptococcal glomerulonephritis",
+      "APSGN",
+      "post-streptococcal glomerulonephritis",
+      "PSGN"
+     ],
+     "keywords_all": [
+      "poststreptococcal"
+     ],
+     "key_text": "Acute post-streptococcal glomerulonephritis (APSGN) — หลังคออักเสบ 2 สัปดาห์",
+     "source_key": "Acute poststreptococcal glomerulonephritis (acute postinfectious GN)",
+     "explanation": "pharyngitis ตามด้วย nephritic syndrome หลัง 1–3 สัปดาห์"
+    },
+    {
+     "id": "4.4",
+     "prompt": "ควรส่งตรวจอะไรเพิ่มเติมเพื่อยืนยันการวินิจฉัย (เลือก 1)",
+     "format": "select",
+     "options": [
+      {
+       "key": "A",
+       "text": "24-hr urine protein"
+      },
+      {
+       "key": "B",
+       "text": "Serum BUN and creatinine"
+      },
+      {
+       "key": "C",
+       "text": "Serum albumin and cholesterol"
+      },
+      {
+       "key": "D",
+       "text": "Serum ASO titer and complement 3 levels"
+      }
+     ],
+     "answer": [
+      "D"
+     ],
+     "max_answers": 1,
+     "key_text": "D — ASO titer และ C3 (C3 ต่ำใน APSGN)",
+     "source_key": "D (ASO + C3)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF46",
+     "pages": [
+      4
+     ]
+    },
+    {
+     "paper": "KF46-KEY",
+     "pages": [
+      4
+     ]
+    }
+   ],
+   "tags": [
+    "PSGN",
+    "nephritic syndrome"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "APSGN: nephritic หลังคออักเสบ; ASO↑ C3↓"
+  },
+  {
+   "id": "KUB-46-KF-005",
+   "block": "KUB",
+   "cohort": 46,
+   "n": 5,
+   "type": "KF",
+   "case": "จงเปรียบเทียบอวัยวะที่ทำหน้าที่เหมือนกันในเพศชายและเพศหญิง (หญิง → ชาย). ผู้เฉลยตอบตามการเจริญเติบโต (development)",
+   "items": [
+    {
+     "id": "5.1",
+     "prompt": "Uterus, Vagina (Müllerian duct) → ชาย",
+     "format": "short",
+     "accepted": [
+      "appendix testis",
+      "testicular appendage"
+     ],
+     "keywords_all": [
+      "appendage"
+     ],
+     "key_text": "Testicular appendage (appendix testis) — เศษ Müllerian duct",
+     "source_key": "Müllerian duct → Testicular appendage"
+    },
+    {
+     "id": "5.2",
+     "prompt": "Gartner's duct (Wolffian duct) → ชาย",
+     "format": "short",
+     "accepted": [
+      "epididymis",
+      "seminal vesicle",
+      "vas deferens"
+     ],
+     "keywords_all": [
+      "epididymis"
+     ],
+     "key_text": "Epididymis, seminal vesicle (Wolffian duct)",
+     "source_key": "Wolffian duct → Epididymis, seminal vesicle"
+    },
+    {
+     "id": "5.3",
+     "prompt": "Labia majora → ชาย",
+     "format": "short",
+     "accepted": [
+      "scrotum"
+     ],
+     "keywords_all": [
+      "scrotum"
+     ],
+     "key_text": "Scrotum (จาก labioscrotal swelling)",
+     "source_key": "Labioscrotal swelling → Scrotum"
+    },
+    {
+     "id": "5.4",
+     "prompt": "Clitoris → ชาย",
+     "format": "short",
+     "accepted": [
+      "glans penis",
+      "penis"
+     ],
+     "keywords_all": [
+      "penis"
+     ],
+     "key_text": "Glans penis (จาก genital tubercle)",
+     "source_key": "Genital tubercle → Glans penis"
+    },
+    {
+     "id": "5.5",
+     "prompt": "Vestibule → ชาย",
+     "format": "short",
+     "accepted": [
+      "corpus spongiosum",
+      "corpora cavernosa",
+      "spongy urethra"
+     ],
+     "key_text": "Corpus spongiosum / corpora cavernosa (genital tubercle) หรือ spongy urethra (urogenital sinus)",
+     "source_key": "Genital tubercle → Corpora cavernosa / Corpus spongiosum",
+     "audit_note": "ลายมือข้อนี้ OCR อ่านยาก ผู้ตรวจควรยืนยัน"
+    },
+    {
+     "id": "5.6",
+     "prompt": "Bartholin's gland → ชาย",
+     "format": "short",
+     "accepted": [
+      "bulbourethral gland",
+      "Cowper gland"
+     ],
+     "keywords_all": [
+      "bulbourethral"
+     ],
+     "key_text": "Bulbourethral (Cowper's) gland (urogenital sinus)",
+     "source_key": "Urogenital sinus → Bulbourethral gland"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF46",
+     "pages": [
+      5
+     ]
+    },
+    {
+     "paper": "KF46-KEY",
+     "pages": [
+      5
+     ]
+    }
+   ],
+   "tags": [
+    "homologues"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "homologues: Müllerian→appendix testis · Wolffian→epididymis · labioscrotal→scrotum"
+  },
+  {
+   "id": "KUB-46-KF-006",
+   "block": "KUB",
+   "cohort": 46,
+   "n": 6,
+   "type": "KF",
+   "case": "จงอธิบายการทำงานของระบบประสาทต่อไปนี้: Bladder และ Penis ภายใต้ Sympathetic / Parasympathetic",
+   "items": [
+    {
+     "id": "6.1",
+     "prompt": "Bladder — Sympathetic",
+     "format": "short",
+     "accepted": [
+      "relaxation",
+      "relax detrusor"
+     ],
+     "keywords_all": [
+      "relax"
+     ],
+     "key_text": "Relaxation (คลายตัว เก็บปัสสาวะ)",
+     "source_key": "Relaxation"
+    },
+    {
+     "id": "6.2",
+     "prompt": "Bladder — Parasympathetic",
+     "format": "short",
+     "accepted": [
+      "contraction",
+      "contract detrusor"
+     ],
+     "keywords_all": [
+      "contraction"
+     ],
+     "key_text": "Contraction (หดตัว ขับปัสสาวะ)",
+     "source_key": "Contraction"
+    },
+    {
+     "id": "6.3",
+     "prompt": "Penis — Sympathetic",
+     "format": "short",
+     "accepted": [
+      "ejaculation",
+      "emission"
+     ],
+     "keywords_all": [
+      "ejaculation"
+     ],
+     "key_text": "Ejaculation (emission)",
+     "source_key": "Ejaculation"
+    },
+    {
+     "id": "6.4",
+     "prompt": "Penis — Parasympathetic",
+     "format": "short",
+     "accepted": [
+      "erection"
+     ],
+     "keywords_all": [
+      "erection"
+     ],
+     "key_text": "Erection",
+     "source_key": "Erection"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF46",
+     "pages": [
+      5
+     ]
+    },
+    {
+     "paper": "KF46-KEY",
+     "pages": [
+      5
+     ]
+    }
+   ],
+   "tags": [
+    "autonomic"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "bladder: S = relax, PS = contract · penis: PS = erection, S = ejaculation"
+  },
+  {
+   "id": "KUB-46-KF-007",
+   "block": "KUB",
+   "cohort": 46,
+   "n": 7,
+   "type": "KF",
+   "case": "เด็กชาย 4 ปี ตัวเล็กไม่โต. มารดาสังเกตเห็นตั้งแต่อายุ 2 ปี ปัสสาวะบ่อย ดื่มน้ำมาก กินข้าวครบ 3 มื้อ พัฒนาการปกติ, underweight, short stature. BT 37 °C, BP 100/80, PR 80, RR 20. UA: pH 7, sp.gr 1.005. BUN 10, Cr 0.5, Na⁺ 132, K⁺ 2.5, Cl⁻ 110, HCO₃⁻ 12.",
+   "items": [
+    {
+     "id": "7.1",
+     "prompt": "ให้การวินิจฉัยพร้อมบอกเหตุผล",
+     "format": "short",
+     "accepted": [
+      "distal RTA",
+      "renal tubular acidosis",
+      "RTA type 1",
+      "type 1 RTA"
+     ],
+     "keywords_all": [
+      "RTA"
+     ],
+     "key_text": "Distal (type 1) renal tubular acidosis — AG = 132 − 110 − 12 = 10 (ปกติ) = non-AG acidosis, ปัสสาวะ pH > 5.5, hypokalemia, failure to thrive",
+     "source_key": "RTA type I (distal): urine pH > 5.5 ทั้งที่ plasma HCO₃⁻ ต่ำ; AG = 132 − 110 − 12 = 10 mmol/L",
+     "mechanism": [
+      "distal tubule หลั่ง H⁺ ไม่ได้",
+      "HCO₃⁻ ต่ำ (non-AG acidosis) + urine pH > 5.5",
+      "K⁺ ถูกขับมาก → hypokalemia",
+      "failure to thrive"
+     ]
+    },
+    {
+     "id": "7.2",
+     "prompt": "จากความผิดปกติกรด–ด่างดังกล่าวมีโรคใดได้บ้าง ยกตัวอย่าง 2 โรค",
+     "format": "short",
+     "accepted": [
+      "severe diarrhea",
+      "proximal RTA",
+      "distal RTA",
+      "Fanconi"
+     ],
+     "keywords_all": [
+      "RTA"
+     ],
+     "key_text": "Non-AG metabolic acidosis: severe diarrhea (GI loss HCO₃⁻) · RTA (proximal type 2 / distal type 1)",
+     "source_key": "severe diarrhea (GI loss), RTA"
+    },
+    {
+     "id": "7.3",
+     "prompt": "ปัสสาวะบ่อย ดื่มน้ำมาก sp.gr 1.005 เกิดจากสภาวะใด หรือเกี่ยวข้องกับ electrolyte ใด",
+     "format": "short",
+     "accepted": [
+      "hypokalemia",
+      "nephrogenic diabetes insipidus"
+     ],
+     "keywords_all": [
+      "hypokalemia"
+     ],
+     "key_text": "Hypokalemia เรื้อรัง → nephrogenic DI → ปัสสาวะเจือจาง (sp.gr ต่ำ) ดื่มน้ำมาก ปัสสาวะบ่อย + hypovolemia/hyperaldosteronism → Na⁺ delivery ที่ distal ↑ → K⁺ หลั่งผ่าน ROMK ↑",
+     "source_key": "เสีย Na ทำให้ hypovolemia + hyperaldosterone → Na delivery ไป cortical collecting duct ↑ → K secretion ผ่าน ROMK ↑ → hypokalemia ซึ่งเรื้อรังทำให้เกิด nephrogenic DI → ดื่มน้ำบ่อย ปัสสาวะบ่อย sp.gr ต่ำ"
+    },
+    {
+     "id": "7.4",
+     "prompt": "หลักการสำคัญในการรักษาผู้ป่วยรายนี้",
+     "format": "short",
+     "accepted": [
+      "correct acidosis",
+      "bicarbonate supplement",
+      "K supplement"
+     ],
+     "keywords_all": [
+      "bicarbonate"
+     ],
+     "key_text": "แก้ metabolic acidosis (HCO₃⁻ supplement) + เสริม K⁺ ป้องกัน hypokalemia · รักษาตามสาเหตุ",
+     "source_key": "Correct metabolic acidosis, HCO₃⁻ supplement prevents hypokalemia"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF46",
+     "pages": [
+      6
+     ]
+    },
+    {
+     "paper": "KF46-KEY",
+     "pages": [
+      6
+     ]
+    }
+   ],
+   "tags": [
+    "RTA",
+    "hypokalemia"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "distal RTA: non-AG acidosis + urine pH >5.5 + hypoK"
+  },
+  {
+   "id": "KUB-46-KF-008",
+   "block": "KUB",
+   "cohort": 46,
+   "n": 8,
+   "type": "KF",
+   "case": "เด็กชายอายุ 5 เดือน ถุงอัณฑะบวม 5 วัน ไม่มีไข้ กดเจ็บเล็กน้อย ร่วมกับมีภาวะหนังหุ้มปลายองคชาตตีบ (phimosis). UA: WBC numerous, nitrite positive; urine culture E. coli > 10⁵ CFU/mL (มีผล drug susceptibility test ในต้นฉบับเป็นตาราง). ภาพ: ultrasound ถุงอัณฑะ.",
+   "items": [
+    {
+     "id": "8.1.1",
+     "prompt": "ถุงอัณฑะบวมเกิดจากสาเหตุใดได้บ้าง (โรคที่ 1 พร้อมกลไก)",
+     "format": "short",
+     "accepted": [
+      "hydrocele"
+     ],
+     "keywords_all": [
+      "hydrocele"
+     ],
+     "key_text": "Hydrocele — processus vaginalis ไม่ปิด น้ำจาก peritoneum ไหลลงถุงอัณฑะ",
+     "source_key": "Hydrocele: failure to close processus vaginalis"
+    },
+    {
+     "id": "8.1.2",
+     "prompt": "โรคที่ 2 พร้อมกลไก",
+     "format": "short",
+     "accepted": [
+      "orchitis",
+      "epididymitis",
+      "epididymo-orchitis"
+     ],
+     "keywords_all": [
+      "orchitis"
+     ],
+     "key_text": "Orchitis/epididymo-orchitis — การติดเชื้อ (E. coli จาก UTI) ลามไปอัณฑะ",
+     "source_key": "Orchitis: infection"
+    },
+    {
+     "id": "8.2",
+     "prompt": "ให้ผล UA/culture/drug susceptibility มาให้วินิจฉัย และบอกยาที่เหมาะสม",
+     "format": "short",
+     "accepted": [
+      "urinary tract infection",
+      "UTI",
+      "cystitis"
+     ],
+     "keywords_all": [
+      "UTI"
+     ],
+     "key_text": "Urinary tract infection จาก E. coli (> 10⁵ CFU/mL + nitrite +) — เลือกยาตามผล susceptibility (เช่น cephalosporin รุ่น 3 เมื่อ sensitive)",
+     "source_key": "ต้นฉบับ: ตารางยาที่ไวต่อเชื้อไม่อยู่ในไฟล์ AI ตอบ UTI",
+     "audit_note": "ตาราง susceptibility ไม่อยู่ในไฟล์ ยาที่แนะนำเป็นตัวอย่างของ AI"
+    },
+    {
+     "id": "8.3",
+     "prompt": "จากภาพ จงชี้โครงสร้างพร้อมบอกชื่อทางกายวิภาค 2 ชื่อ",
+     "format": "short",
+     "accepted": [
+      "testis",
+      "epididymis",
+      "scrotum",
+      "seminiferous tubules"
+     ],
+     "key_text": "Scrotum · Testis (seminiferous tubules) · Epididymis",
+     "source_key": "scrotum, seminiferous tubule, testis, epididymis",
+     "audit_note": "รูปไม่มีลูกศร ผู้เฉลยเขียนหลายชื่อ",
+     "image": "img/KUB-46-KF-008.jpg",
+     "image_caption": "Ultrasound ถุงอัณฑะ"
+    },
+    {
+     "id": "8.4",
+     "prompt": "จงอธิบาย pathology ของ phimosis ในผู้ป่วยรายนี้ว่าสัมพันธ์กับถุงอัณฑะบวมอย่างไร",
+     "format": "short",
+     "accepted": [
+      "smegma",
+      "fibrosis",
+      "UTI",
+      "E. coli"
+     ],
+     "keywords_all": [
+      "smegma"
+     ],
+     "key_text": "Fibrosis ระหว่าง prepuce กับ glans → smegma สะสม และปัสสาวะไม่ออกสะดวก → E. coli ติดเชื้อในทางเดินปัสสาวะ → ลามไป epididymis/testis (orchitis) → ถุงอัณฑะบวม",
+     "source_key": "Phimosis เกิดจาก fibrosis ระหว่าง prepuce กับ glans penis เพิ่ม smegma และทำให้ปัสสาวะไม่สะดวก → E. coli ติดเชื้อทางเดินปัสสาวะ ลามไป testis",
+     "mechanism": [
+      "phimosis (fibrosis ระหว่าง prepuce–glans)",
+      "smegma สะสม/ปัสสาวะคั่ง",
+      "UTI (E. coli)",
+      "ลามไป epididymis/testis",
+      "ถุงอัณฑะบวม"
+     ]
+    },
+    {
+     "id": "8.5",
+     "prompt": "จงให้การรักษา พร้อมการแนะนำผู้ปกครอง",
+     "format": "short",
+     "accepted": [
+      "manual retraction",
+      "topical steroid",
+      "circumcision"
+     ],
+     "keywords_all": [
+      "steroid",
+      "circumcision"
+     ],
+     "key_text": "แนะนำ manual retraction เปิดหนังหุ้มปลายร่วมกับทา 0.02% steroid (TA) cream · ถ้าอายุ > 1 ปีแล้วยังเปิดไม่ได้ → circumcision",
+     "source_key": "แนะนำ manual retraction + 0.02% steroid TA cream; ถ้าอายุมากกว่า 1 ปีแล้วไม่สามารถเปิดได้ แนะนำ circumcision"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF46",
+     "pages": [
+      7
+     ]
+    },
+    {
+     "paper": "KF46-KEY",
+     "pages": [
+      7
+     ]
+    }
+   ],
+   "tags": [
+    "phimosis",
+    "hydrocele",
+    "orchitis",
+    "UTI"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "phimosis → UTI → epididymo-orchitis; ทา steroid + manual retraction → circumcision"
+  },
+  {
+   "id": "KUB-46-KF-009",
+   "block": "KUB",
+   "cohort": 46,
+   "n": 9,
+   "type": "KF",
+   "case": "หากนักศึกษาเป็นแพทย์ที่ต้องซักประวัติผู้ป่วย จะซักประวัติผู้ป่วยอย่างไร (มีอาการมาให้คร่าวๆ) — ตารางซักประวัติปวดท้อง: ตอนที่ 1 การซักประวัติ (เติมช่อง 1.2, 1.3.1, 1.3.3, 1.3.5, 1.4.5, 1.4.6)",
+   "items": [
+    {
+     "id": "9.1",
+     "prompt": "เติมช่อง 1.2",
+     "format": "short",
+     "accepted": [
+      "chief complaint",
+      "อาการสำคัญ"
+     ],
+     "keywords_all": [
+      "chief complaint"
+     ],
+     "key_text": "Chief complaint (อาการสำคัญ/ระยะเวลา)",
+     "source_key": "Chief complaint (อาการสำคัญ/ระยะเวลา) (ไม่มีเฉลยต้นฉบับ AI ร่างให้)",
+     "audit_note": "ตารางเว้นช่องว่างไม่มีเฉลย AI ร่างตามลำดับการซักประวัติปวดท้อง"
+    },
+    {
+     "id": "9.2",
+     "prompt": "เติมช่อง 1.3.1 (ใต้ onset)",
+     "format": "short",
+     "accepted": [
+      "location",
+      "ตำแหน่ง"
+     ],
+     "keywords_all": [
+      "location"
+     ],
+     "key_text": "Location (ตำแหน่งที่ปวด)",
+     "source_key": "Location (ตำแหน่งที่ปวด) (ไม่มีเฉลยต้นฉบับ AI ร่างให้)"
+    },
+    {
+     "id": "9.3",
+     "prompt": "เติมช่อง 1.3.3 (ต่อจาก character)",
+     "format": "short",
+     "accepted": [
+      "radiation",
+      "ปวดร้าว"
+     ],
+     "keywords_all": [
+      "radiation"
+     ],
+     "key_text": "Radiation (ปวดร้าวไปที่ใด)",
+     "source_key": "Radiation (ปวดร้าวไปที่ใด) (ไม่มีเฉลยต้นฉบับ AI ร่างให้)"
+    },
+    {
+     "id": "9.4",
+     "prompt": "เติมช่อง 1.3.5 (ต่อจากสิ่งที่ทำให้ดีขึ้น)",
+     "format": "short",
+     "accepted": [
+      "aggravating factors",
+      "สิ่งที่ทำให้แย่ลง"
+     ],
+     "keywords_all": [
+      "aggravating"
+     ],
+     "key_text": "Aggravating factors (สิ่งที่ทำให้ปวดแย่ลง)",
+     "source_key": "Aggravating factors (สิ่งที่ทำให้ปวดแย่ลง) (ไม่มีเฉลยต้นฉบับ AI ร่างให้)"
+    },
+    {
+     "id": "9.5",
+     "prompt": "เติมช่อง 1.4.5 (อาการร่วมอื่นๆ)",
+     "format": "short",
+     "accepted": [
+      "urinary symptoms",
+      "ปัสสาวะ",
+      "dysuria"
+     ],
+     "keywords_all": [
+      "urinary"
+     ],
+     "key_text": "อาการทางเดินปัสสาวะ (ปัสสาวะแสบขัด/เป็นเลือด)",
+     "source_key": "อาการทางเดินปัสสาวะ (ปัสสาวะแสบขัด/เป็นเลือด) (ไม่มีเฉลยต้นฉบับ AI ร่างให้)"
+    },
+    {
+     "id": "9.6",
+     "prompt": "เติมช่อง 1.4.6 (อาการร่วมอื่นๆ)",
+     "format": "short",
+     "accepted": [
+      "LMP",
+      "vaginal discharge",
+      "ประจำเดือน",
+      "ตกขาว"
+     ],
+     "keywords_all": [
+      "menstruation"
+     ],
+     "key_text": "ประจำเดือน/ตกขาวผิดปกติ (LMP)",
+     "source_key": "ประจำเดือน/ตกขาวผิดปกติ (LMP) (ไม่มีเฉลยต้นฉบับ AI ร่างให้)"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "KF46",
+     "pages": [
+      9
+     ]
+    },
+    {
+     "paper": "KF46-KEY",
+     "pages": [
+      9
+     ]
+    }
+   ],
+   "tags": [
+    "history taking"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "ซักประวัติปวดท้อง: onset, location, character, radiation, aggravating/relieving, severity, อาการร่วม",
+   "audit_note": "ข้อ 9 ต้นฉบับเว้นช่องว่างทั้งตาราง และไม่มีเฉลยในไฟล์ ผู้ตรวจควรยืนยัน",
+   "image": "img/KUB-46-KF-009.jpg",
+   "image_caption": "ตารางซักประวัติปวดท้อง (ตอนที่ 1)"
+  },
+  {
+   "id": "KUB-46-KF-010",
+   "block": "KUB",
+   "cohort": 46,
+   "n": 10,
+   "type": "KF",
+   "case": "22-year-old Thai woman with pelvic pain for 3 days; 1 day ago fever, shivering; LMP 20 days ago; sexually active with 3 partners. PV: yellowish vaginal discharge; cervix purulent with motion tenderness; uterus normal size, tender; adnexa tender both sides. Pus Gram stain: Gram-negative diplococci, intracellular.",
+   "items": [
+    {
+     "id": "10.1",
+     "prompt": "What is diagnosis?",
+     "format": "short",
+     "accepted": [
+      "pelvic inflammatory disease",
+      "PID"
+     ],
+     "keywords_all": [
+      "pelvic inflammatory"
+     ],
+     "key_text": "Pelvic inflammatory disease (PID)",
+     "source_key": "Pelvic inflammatory disease"
+    },
+    {
+     "id": "10.2",
+     "prompt": "What is the most likely pathogen?",
+     "format": "short",
+     "accepted": [
+      "Neisseria gonorrhoeae",
+      "N. gonorrhoeae",
+      "gonococcus"
+     ],
+     "keywords_all": [
+      "gonorrhoeae"
+     ],
+     "key_text": "Neisseria gonorrhoeae",
+     "source_key": "Neisseria gonorrhoeae"
+    },
+    {
+     "id": "10.3",
+     "prompt": "What is mechanism of her disease?",
+     "format": "short",
+     "accepted": [
+      "sexually transmitted",
+      "ascending infection"
+     ],
+     "keywords_all": [
+      "ascending"
+     ],
+     "key_text": "ติดเชื้อจากเพศสัมพันธ์ (STD) → อักเสบที่ cervix แล้วลามขึ้น uterus/adnexa (ascending infection)",
+     "source_key": "ติดเชื้อ N. gonorrhoeae จากเพศสัมพันธ์ ทำให้เกิด inflammation ใน cervix, adnexa, uterus",
+     "mechanism": [
+      "N. gonorrhoeae ติดต่อทางเพศสัมพันธ์",
+      "ติดเชื้อ cervix",
+      "ascending infection สู่ uterus/tube",
+      "อักเสบ adnexa"
+     ]
+    },
+    {
+     "id": "10.4",
+     "prompt": "What is the long term sequelae?",
+     "format": "short",
+     "accepted": [
+      "tubo-ovarian abscess",
+      "chronic salpingitis",
+      "infertility",
+      "ectopic pregnancy"
+     ],
+     "keywords_all": [
+      "tubo-ovarian"
+     ],
+     "key_text": "Tubo-ovarian abscess · chronic salpingitis (→ infertility, ectopic pregnancy, chronic pelvic pain)",
+     "source_key": "Tubo-ovarian abscess, Chronic salpingitis"
+    },
+    {
+     "id": "10.5",
+     "prompt": "How to prevent the disease?",
+     "format": "short",
+     "accepted": [
+      "condom",
+      "one partner"
+     ],
+     "keywords_all": [
+      "condom"
+     ],
+     "key_text": "ใช้ถุงยางอนามัย · เลี่ยงการมีหลายคู่นอน",
+     "source_key": "มีเพศสัมพันธ์โดยใส่ถุงยางอนามัย; เลี่ยงการมีหลาย partner"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF46",
+     "pages": [
+      10
+     ]
+    },
+    {
+     "paper": "KF46-KEY",
+     "pages": [
+      10
+     ]
+    }
+   ],
+   "tags": [
+    "PID",
+    "gonorrhea"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "PID จาก N. gonorrhoeae: GN diplococci ใน cell; sequelae: TOA, infertility"
+  },
+  {
+   "id": "KUB-46-KF-011",
+   "block": "KUB",
+   "cohort": 46,
+   "n": 11,
+   "type": "KF",
+   "case": "หญิง อายุ 58 ปี ประจำเดือนมามากขึ้น 3 เดือน (ปกติใช้ผ้าอนามัย 3 แผ่น/วัน เพิ่มเป็น 5 แผ่น/วัน) และมานานขึ้นจาก 5 วันเป็น 7 วัน พบพยาธิสภาพดังภาพ (มดลูกผ่าตัดมีก้อนกลมสีขาวหลายก้อน)",
+   "items": [
+    {
+     "id": "11.1",
+     "prompt": "What is the diagnosis?",
+     "format": "short",
+     "accepted": [
+      "leiomyoma",
+      "uterine fibroid",
+      "fibroids"
+     ],
+     "keywords_all": [
+      "leiomyoma"
+     ],
+     "key_text": "Leiomyoma (uterine fibroid)",
+     "source_key": "Leiomyoma"
+    },
+    {
+     "id": "11.2",
+     "prompt": "What is the complication of this pathology?",
+     "format": "short",
+     "accepted": [
+      "infertility",
+      "abnormal uterine bleeding"
+     ],
+     "keywords_all": [
+      "bleeding"
+     ],
+     "key_text": "Abnormal uterine bleeding · infertility (และปวดท้องน้อย/กดเบียดอวัยวะ)",
+     "source_key": "infertility, abnormal uterine bleeding"
+    },
+    {
+     "id": "11.3",
+     "prompt": "Origin of tumor",
+     "format": "short",
+     "accepted": [
+      "myometrium",
+      "smooth muscle"
+     ],
+     "keywords_all": [
+      "myometrium"
+     ],
+     "key_text": "Myometrium (smooth muscle ของมดลูก)",
+     "source_key": "Myometrium"
+    },
+    {
+     "id": "11.4",
+     "prompt": "Benign or malignant",
+     "format": "short",
+     "accepted": [
+      "benign"
+     ],
+     "keywords_all": [
+      "benign"
+     ],
+     "key_text": "Benign",
+     "source_key": "Benign"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF46",
+     "pages": [
+      11
+     ]
+    },
+    {
+     "paper": "KF46-KEY",
+     "pages": [
+      11
+     ]
+    }
+   ],
+   "tags": [
+    "leiomyoma"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "leiomyoma: benign จาก myometrium, AUB",
+   "image": "img/KUB-46-KF-011.jpg",
+   "image_caption": "ภาพ gross ของมดลูกที่มีก้อนกลมสีขาวหลายก้อน"
+  },
+  {
+   "id": "KUB-46-KF-012",
+   "block": "KUB",
+   "cohort": 46,
+   "n": 12,
+   "type": "KF",
+   "case": "ภาพ: ถุงอัณฑะถูกส่องไฟ (สีแดงโปร่ง) ทั้งสองข้าง",
+   "items": [
+    {
+     "id": "12.1",
+     "prompt": "What is the name of this technique?",
+     "format": "short",
+     "accepted": [
+      "transillumination test",
+      "transillumination"
+     ],
+     "keywords_all": [
+      "transillumination"
+     ],
+     "key_text": "Transillumination test",
+     "source_key": "Transillumination test"
+    },
+    {
+     "id": "12.2",
+     "prompt": "Give the diagnosis",
+     "format": "short",
+     "accepted": [
+      "bilateral communicating hydrocele",
+      "hydrocele"
+     ],
+     "keywords_all": [
+      "hydrocele"
+     ],
+     "key_text": "Bilateral communicating hydrocele",
+     "source_key": "Bilateral communicating hydrocele"
+    },
+    {
+     "id": "12.3",
+     "prompt": "What is the pathology of this?",
+     "format": "short",
+     "accepted": [
+      "patent processus vaginalis"
+     ],
+     "keywords_all": [
+      "processus vaginalis"
+     ],
+     "key_text": "Processus vaginalis ไม่ปิด ทำให้ peritoneal fluid ไหลลงมาในถุงอัณฑะ",
+     "source_key": "processus vaginalis ไม่ปิดทำให้ peritoneal fluid ไหลลงมาในถุงอัณฑะ"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF46",
+     "pages": [
+      12
+     ]
+    },
+    {
+     "paper": "KF46-KEY",
+     "pages": [
+      12
+     ]
+    }
+   ],
+   "tags": [
+    "hydrocele"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "communicating hydrocele = patent processus vaginalis",
+   "image": "img/KUB-46-KF-012.jpg",
+   "image_caption": "ถุงอัณฑะเมื่อส่องไฟ"
+  }
+ ]
+}

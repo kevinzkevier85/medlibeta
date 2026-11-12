@@ -17,10 +17,17 @@ HEADER = re.compile(r"^VICHAKARN MED PSU \d+$", re.I)  # running page header of 
 INSTR = re.compile(r"^(\d\.\s*)?(ข้อสอบ\s*MCQ\s*มีทั้งหมด|นักศึกษามีเวลา|ข้อสอบเป็นภาษา|หมายเหตุ\s*:|ฝ่ายวิชาการ|-?\s*Vichakarn\s*Med|\d{3}-\d{3}\s+Endocrine)", re.I)
 
 
-FOOTER = re.compile(r"ทีมวิชาการ\s*Med\s*\d+|MCQ Endocrine Med\s*\d+|BY VICHAKARN MEDPSU \d+(\s+\d+)?|-\s*[\u201c\"]\s*GOOD LUCK\s*[\u201d\"]\s*-", re.I)  # page footers glued to text
+FOOTER = re.compile(r"MCQ[- ]KIDNEY AND REPRODUCTIVE MED\s*\d+|ทีมวิชาการ\s*Med\s*\d+|MCQ Endocrine Med\s*\d+|BY VICHAKARN MEDPSU \d+(\s+\d+)?|-\s*[\u201c\"]\s*GOOD LUCK\s*[\u201d\"]\s*-|311-2\d\d\s+Urinary(\s+and)?(\s+R\w*)?(\s+S\w*)?", re.I)  # page footers glued to text
+
+
+GLYPH_FIX = False   # --fix-glyphs: this font maps mai ek / mai tho to … / ‡ (seen in the KUB recall papers)
 
 
 def norm(s):
+    if GLYPH_FIX:
+        s = re.sub(r"(?<=[\u0e01-\u0e4e])\u2026", "\u0e48", s)
+        s = re.sub(r"(?<=[\u0e01-\u0e4e])\u2021", "\u0e49", s)
+        s = s.replace("\uf0ea", "").replace("\uf0e9", "")
     s = FOOTER.sub(" ", s)
     s = unicodedata.normalize("NFC", s).replace(" ", " ")
     s = re.sub(r"[ \t]+", " ", s)
@@ -30,13 +37,25 @@ def norm(s):
 PART = re.compile(r"^PART\s*\d+\b", re.I)
 
 
-def parse(set_id, bare_numbers=False, part_offsets=None):
+def parse(set_id, bare_numbers=False, part_offsets=None, number_own_line=False):
     raw = AUD / "raw" / set_id
     lines = []
     for p in sorted(raw.glob("exam_p*.txt")):
         page = int(p.stem.split("_p")[1])
         for ln in p.read_text(encoding="utf-8").splitlines():
             lines.append((page, ln))
+    if number_own_line:   # "12." alone on a line, the stem on the next non-empty line → join them
+        merged, pend = [], None
+        for page, ln in lines:
+            if pend is not None:
+                if not ln.strip():
+                    continue
+                merged.append((pend[0], pend[1].rstrip() + " " + ln.strip())); pend = None
+                continue
+            if re.fullmatch(r"\s*\d{1,3}\s*[.)]\s*", ln):
+                pend = (page, ln); continue
+            merged.append((page, ln))
+        lines = merged
 
     qs, cur, field, expect = [], None, None, 1
     preamble = []
@@ -53,6 +72,9 @@ def parse(set_id, bare_numbers=False, part_offsets=None):
             t = f"{t}."  # some cohorts print the number alone on its line ("12" then the stem)
         if not t or HEADER.match(t) or INSTR.match(t) or re.fullmatch(r"\d{1,3}", t):  # bare page numbers
             continue
+        mg = re.match(r"^[^\w\s.)(\[]{0,3}\s*\.\s+(\S.*)", t)
+        if mg and cur is not None and not Q_START.match(t):   # question number lost to a broken glyph ("¡. ชาย…") → next expected number
+            t = f"{expect}. {mg.group(1)}"
         m = Q_START.match(t)
         # A new question must be the next expected number. Blank-recall items ("3. –") have no choices,
         # so a question may start right after one; header lines before Q1 are kept as preamble.
@@ -103,9 +125,13 @@ def main():
     ap.add_argument("--set", required=True)
     ap.add_argument("--print", action="store_true")
     ap.add_argument("--bare-numbers", action="store_true", help="a line holding only the next question number starts that question")
+    ap.add_argument("--number-own-line", action="store_true", help="the question number sits alone on its line (\"12.\") and the stem starts on the next line")
+    ap.add_argument("--fix-glyphs", action="store_true", help="map … → ่ and ‡ → ้ after a Thai letter (broken font in the KUB recall papers)")
     ap.add_argument("--part-offsets", help="files joining several cohorts ('PART 2' lines restart numbering): comma list of number offsets, e.g. 0,100,300,400")
     a = ap.parse_args()
-    d = parse(a.set, a.bare_numbers, [int(x) for x in a.part_offsets.split(",")] if a.part_offsets else None)
+    global GLYPH_FIX
+    GLYPH_FIX = a.fix_glyphs
+    d = parse(a.set, a.bare_numbers, [int(x) for x in a.part_offsets.split(",")] if a.part_offsets else None, a.number_own_line)
     out = AUD / "data" / "work"
     out.mkdir(parents=True, exist_ok=True)
     (out / f"{a.set}.parsed.json").write_text(json.dumps(d, ensure_ascii=False, indent=1), encoding="utf-8")

@@ -1,0 +1,1191 @@
+{
+ "meta": {
+  "set_id": "52_KF",
+  "block": "KUB",
+  "cohort": 52,
+  "type": "KF",
+  "title": "KF KUB and Repro · Med PSU 52",
+  "time_limit_min": 120,
+  "generated_by": "auditor/tools/build_kf.py from auditor/data/work/kub_52_KF.kf.json — do not edit by hand"
+ },
+ "questions": [
+  {
+   "id": "KUB-52-KF-001",
+   "block": "KUB",
+   "cohort": 52,
+   "n": 1,
+   "type": "KF",
+   "case": "ชายไทยอายุ 65 ปี ไม่มีโรคประจำตัว ขาบวมทั้ง 2 ข้างร่วมกับปัสสาวะแสบขัด 1 วัน ก่อนมาโรงพยาบาลมีอาการไอ และมีประวัติเจ็บคอเมื่อ 2 สัปดาห์ที่ผ่านมา ได้รับยาฆ่าเชื้อและ NSAID ต่อเนื่อง 7 วัน อาการดีขึ้น. Vital sign: BT 37.5, PR 90, RR 18, BP 140/70. HEENT: mild pale conjunctiva. Extremities: pitting edema 1+. Chemistry: BUN 40, Cr 2.1, albumin 3.8. Urinalysis: yellowish cloudy, sp.gr 1.004, pH 5.5, protein 2+, glucose 1+, no blood. (ภาพ microscopic examination)",
+   "items": [
+    {
+     "id": "1.1",
+     "prompt": "จงระบุสิ่งที่เห็นจาก microscopic examination",
+     "format": "short",
+     "accepted": [
+      "WBC cast",
+      "white cell cast",
+      "leukocyte cast"
+     ],
+     "keywords_all": [
+      "WBC cast"
+     ],
+     "key_text": "WBC cast",
+     "source_key": "เฉลย: WBC cast",
+     "image": "img/KUB-52-KF-001.jpg",
+     "image_caption": "ภาพ microscopic ปัสสาวะ"
+    },
+    {
+     "id": "1.2",
+     "prompt": "จงให้การวินิจฉัยพร้อมเหตุผลมา 3 อย่าง",
+     "format": "short",
+     "accepted": [
+      "acute tubular injury",
+      "acute tubular necrosis",
+      "ATN",
+      "ATI"
+     ],
+     "keywords_all": [
+      "acute tubular"
+     ],
+     "key_text": "Acute tubular injury / acute tubular necrosis — (1) มีปัจจัยเสี่ยงชัดเจนคือ NSAIDs → ischemic tubular injury (2) urine sp.gr ต่ำมาก (1.004) ไตสูญเสียความสามารถในการดูดกลับน้ำทำให้ปัสสาวะเจือจาง (3) AKI (Cr 2.1, BUN 40) พบ WBC cast ในปัสสาวะแต่ไม่มี hematuria",
+     "source_key": "เฉลย: Acute tubular injury/Acute tubular necrosis; เหตุผล: 1.มีปัจจัยเสี่ยงชัดเจนคือ NSAIDs → ischemic tubular injury 2. Urine specific gravity ต่ำมาก (1.004) ไตสูญเสียความสามารถในการดูดกลับน้ำทำให้ปัสสาวะเจือจาง 3. มี AKI (Cr 2.1, BUN 40) พบ WBC cast ในปัสสาวะแต่ไม่มี hematuria",
+     "explanation": "ไม่ใช่ AIN จากยา (ไม่มีไข้ ผื่น eosinophilia) และไม่ใช่ PSGN (ไม่มี hematuria)"
+    },
+    {
+     "id": "1.3",
+     "prompt": "จงบอกกลไกของโรค (pathophysiology)",
+     "format": "short",
+     "accepted": [
+      "afferent constriction",
+      "ischemia"
+     ],
+     "keywords_all": [
+      "prostaglandin"
+     ],
+     "key_text": "NSAIDs → ↓ prostaglandin → afferent arteriole constriction → ↓ renal blood flow → GFR ↓ → ischemia ของ tubular cell (tubular cell damage) → ATI",
+     "source_key": "เฉลย: NSAIDs → ↓ prostaglandins → afferent constriction → ↓ renal blood flow → ischemia → ATI (NSAIDs ยับยั้ง COX → prostaglandin (PGE₂, PGI₂) ลดลง → afferent arteriole เกิด vasoconstriction → เลือดไปเลี้ยงไตลดลง → GFR ↓ → ischemia ที่ tubular cells → ATI)",
+     "mechanism": [
+      "NSAIDs ยับยั้ง COX",
+      "prostaglandin (PGE₂/PGI₂) ↓",
+      "afferent arteriole vasoconstriction",
+      "RBF/GFR ↓ → ischemia ของ tubular cells → ATI"
+     ]
+    },
+    {
+     "id": "1.4a",
+     "prompt": "ตำแหน่งที่ผิดปกติของท่อหน่วยไตที่ทำให้ urine sp.gr 1.004",
+     "format": "short",
+     "accepted": [
+      "loop of Henle",
+      "Henle"
+     ],
+     "keywords_all": [
+      "loop of Henle"
+     ],
+     "key_text": "Loop of Henle (เสียการสร้าง medullary gradient/ความเข้มข้น)",
+     "source_key": "เฉลย: Loop of Henle"
+    },
+    {
+     "id": "1.4b",
+     "prompt": "ตำแหน่งที่ผิดปกติที่ทำให้ glucose 1+",
+     "format": "short",
+     "accepted": [
+      "PCT",
+      "proximal convoluted tubule",
+      "proximal tubule"
+     ],
+     "keywords_all": [
+      "PCT"
+     ],
+     "key_text": "Proximal convoluted tubule (PCT)",
+     "source_key": "เฉลย: PCT"
+    },
+    {
+     "id": "1.5",
+     "prompt": "หากทำ kidney biopsy แล้วส่องด้วย microscope จะเห็นลักษณะสำคัญใดได้บ้าง 2 ข้อ",
+     "format": "short",
+     "accepted": [
+      "tubular epithelial cell necrosis",
+      "granular casts"
+     ],
+     "keywords_all": [
+      "necrosis",
+      "granular"
+     ],
+     "key_text": "Tubular epithelial cell necrosis (เซลล์ท่อไตบวม แตก หลุดลอกจากผนังท่อ) · granular casts (cell debris + protein อุดใน lumen ของ tubule)",
+     "source_key": "เฉลย: Tubular epithelial cell necrosis (เซลล์ของท่อไตบวม แตก และหลุดลอกออกจากผนังท่อ), granular casts (เกิดจาก cell debris + protein อุดอยู่ใน lumen ของ tubule)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF52",
+     "pages": [
+      1
+     ]
+    },
+    {
+     "paper": "KF52-KEY",
+     "pages": [
+      1
+     ]
+    }
+   ],
+   "tags": [
+    "NSAID",
+    "ATN",
+    "AKI"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "NSAIDs → afferent constriction → ATN; WBC cast; sp.gr ต่ำ (Henle) + glucose (PCT)"
+  },
+  {
+   "id": "KUB-52-KF-002",
+   "block": "KUB",
+   "cohort": 52,
+   "n": 2,
+   "type": "KF",
+   "case": "เด็กหญิงมีไข้ ปวดเอวมา 3 วัน (ข้อสอบจริงมีค่า UA ละเอียด) Gram stain พบ Gram positive cocci (โจทย์ไม่สมบูรณ์ แต่แนวเดียวกับข้อสอบปี 49–51)",
+   "items": [
+    {
+     "id": "2.1",
+     "prompt": "จงให้การวินิจฉัยโรคในผู้ป่วยรายนี้และอธิบายเหตุผล",
+     "format": "short",
+     "accepted": [
+      "acute pyelonephritis"
+     ],
+     "keywords_all": [
+      "pyelonephritis"
+     ],
+     "key_text": "Acute pyelonephritis",
+     "source_key": "เฉลย: Acute pyelonephritis"
+    },
+    {
+     "id": "2.2",
+     "prompt": "การส่งตรวจเพิ่มเติมเพื่อยืนยันการวินิจฉัยคืออะไร",
+     "format": "short",
+     "accepted": [
+      "ultrasound KUB"
+     ],
+     "keywords_all": [
+      "ultrasound"
+     ],
+     "key_text": "Ultrasound KUB",
+     "source_key": "เฉลย: Ultrasound KUB"
+    },
+    {
+     "id": "2.3",
+     "prompt": "จงระบุยารักษาเฉพาะมา 2 ชนิด",
+     "format": "short",
+     "accepted": [
+      "ampicillin",
+      "ceftriaxone"
+     ],
+     "keywords_all": [
+      "ampicillin",
+      "ceftriaxone"
+     ],
+     "key_text": "Ampicillin · ceftriaxone",
+     "source_key": "เฉลย: Ampicillin, Ceftriaxone"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF52",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "KF52-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [
+    "pyelonephritis"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "acute pyelonephritis"
+  },
+  {
+   "id": "KUB-52-KF-003",
+   "block": "KUB",
+   "cohort": 52,
+   "n": 3,
+   "type": "KF",
+   "case": "ผู้ป่วยเด็กปัสสาวะบ่อย 1 ปี กินเก่ง ดื่มน้ำมาก น้ำหนักเยอะแต่กลับมีส่วนสูงน้อยกว่าเพื่อนวัยเดียวกัน. UA: pH 7.5, sp.gr 1.020, no proteinuria or hematuria. Serum: Na 140, K 4.2, Cl 101, bicarbonate 17 (22–30), BUN 12, Cr 0.7. ABG: pH 7.30, PaCO₂ 40, bicarbonate 16.",
+   "items": [
+    {
+     "id": "3.1",
+     "prompt": "บอกปัญหาที่เกิดขึ้นกับผู้ป่วยมา 4 อย่าง",
+     "format": "short",
+     "accepted": [
+      "growth retardation",
+      "polyuria",
+      "polydipsia",
+      "normal anion gap metabolic acidosis",
+      "alkaline urine"
+     ],
+     "keywords_all": [
+      "growth retardation"
+     ],
+     "key_text": "Growth retardation · polyuria/polydipsia · normal anion gap metabolic acidosis · alkaline urine (urine pH > 5.5)",
+     "source_key": "เฉลย: 1. Growth retardation 2. Polyuria, polydipsia 3. Normal anion gap metabolic acidosis 4. Alkaline urine (urine pH > 5.5)"
+    },
+    {
+     "id": "3.2",
+     "prompt": "การควบคุมกรด-ด่างมีความผิดปกติอย่างไร",
+     "format": "short",
+     "accepted": [
+      "distal RTA",
+      "type 1 RTA",
+      "defect in distal acidification"
+     ],
+     "keywords_all": [
+      "distal RTA"
+     ],
+     "key_text": "Distal RTA (Type 1): defect in distal acidification (ไม่สามารถขับ H⁺ ได้) ทำให้เกิด metabolic acidosis",
+     "source_key": "เฉลย: Distal RTA (Type 1): defect in distal acidification (ไม่สามารถขับ H⁺ ได้) ทำให้เกิด metabolic acidosis"
+    },
+    {
+     "id": "3.3",
+     "prompt": "บอกวิธีการรักษามา 2 อย่าง",
+     "format": "short",
+     "accepted": [
+      "sodium bicarbonate",
+      "potassium citrate",
+      "potassium supplement"
+     ],
+     "keywords_all": [
+      "bicarbonate",
+      "potassium"
+     ],
+     "key_text": "Sodium bicarbonate หรือ potassium citrate แก้ metabolic acidosis · potassium supplement (เช่น KCl หรือ potassium citrate) แก้ hypokalemia · potassium citrate ป้องกันนิ่วในไต",
+     "source_key": "เฉลย: 1. sodium bicarbonate หรือ potassium citrate แก้ metabolic acidosis 2. potassium supplement (เช่น KCl หรือ potassium citrate) แก้ hypokalemia 3. potassium citrate ป้องกันนิ่วในไต"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF52",
+     "pages": [
+      3
+     ]
+    },
+    {
+     "paper": "KF52-KEY",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [
+    "RTA"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "distal RTA: alkaline urine + NAGMA → bicarbonate/citrate + K"
+  },
+  {
+   "id": "KUB-52-KF-004",
+   "block": "KUB",
+   "cohort": 52,
+   "n": 4,
+   "type": "KF",
+   "case": "จงบอกอวัยวะเพศที่มีต้นกำเนิดเดียวกัน (homologous structure) ของทั้งเพศชายและหญิง (หญิง → ชาย)",
+   "items": [
+    {
+     "id": "4.1",
+     "prompt": "Uterus and vagina → ชาย",
+     "format": "short",
+     "accepted": [
+      "prostatic utricle"
+     ],
+     "keywords_all": [
+      "prostatic utricle"
+     ],
+     "key_text": "Prostatic utricle (Müllerian duct)",
+     "source_key": "เฉลย: Prostatic utricle (Müllerian duct)"
+    },
+    {
+     "id": "4.2",
+     "prompt": "Gartner's duct → ชาย",
+     "format": "short",
+     "accepted": [
+      "epididymis"
+     ],
+     "keywords_all": [
+      "epididymis"
+     ],
+     "key_text": "Epididymis (Wolffian duct)",
+     "source_key": "เฉลย: Epididymis (Wolffian duct)"
+    },
+    {
+     "id": "4.3",
+     "prompt": "Labia majora → ชาย",
+     "format": "short",
+     "accepted": [
+      "scrotum"
+     ],
+     "keywords_all": [
+      "scrotum"
+     ],
+     "key_text": "Scrotum (labioscrotal swelling)",
+     "source_key": "เฉลย: Scrotum (Labioscrotal swelling)"
+    },
+    {
+     "id": "4.4",
+     "prompt": "Clitoris → ชาย",
+     "format": "short",
+     "accepted": [
+      "penis"
+     ],
+     "keywords_all": [
+      "penis"
+     ],
+     "key_text": "Penis (genital tubercle)",
+     "source_key": "เฉลย: Penis (Genital tubercle)"
+    },
+    {
+     "id": "4.5",
+     "prompt": "Bartholin's gland → ชาย",
+     "format": "short",
+     "accepted": [
+      "bulbourethral gland",
+      "Cowper"
+     ],
+     "keywords_all": [
+      "bulbourethral"
+     ],
+     "key_text": "Bulbourethral (Cowper's) gland (urogenital sinus)",
+     "source_key": "เฉลย: Bulbourethral gland (Cowper's gland) (Urogenital sinus)"
+    },
+    {
+     "id": "4.6",
+     "prompt": "Ovary → ชาย",
+     "format": "short",
+     "accepted": [
+      "testis"
+     ],
+     "keywords_all": [
+      "testis"
+     ],
+     "key_text": "Testis (genital ridge)",
+     "source_key": "เฉลย: Testis (genital ridge)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF52",
+     "pages": [
+      3
+     ]
+    },
+    {
+     "paper": "KF52-KEY",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [
+    "homologues"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "homologues: Müllerian→utricle · Wolffian→epididymis · tubercle→penis"
+  },
+  {
+   "id": "KUB-52-KF-005",
+   "block": "KUB",
+   "cohort": 52,
+   "n": 5,
+   "type": "KF",
+   "case": "ชายไทยอายุ 65 ปี ปัสสาวะลำบาก 3 เดือน ต้องเบ่ง สายเล็ก รู้สึกปัสสาวะไม่สุด 2 วันที่ผ่านมาปัสสาวะบ่อยโดยเฉพาะกลางคืน แสบขัดเล็กน้อย ไม่มีไข้ ไม่ปวดหลัง. PE: mild suprapubic fullness. DRE: prostate enlarged, smooth surface, rubbery consistency, non-tender. (ภาพ histology)",
+   "items": [
+    {
+     "id": "5.1",
+     "prompt": "จงให้การวินิจฉัย",
+     "format": "short",
+     "accepted": [
+      "BPH",
+      "benign prostatic hyperplasia"
+     ],
+     "keywords_all": [
+      "BPH"
+     ],
+     "key_text": "BPH",
+     "source_key": "เฉลย: BPH",
+     "image": "img/KUB-52-KF-005.jpg",
+     "image_caption": "ภาพ histology ต่อมลูกหมาก"
+    },
+    {
+     "id": "5.2",
+     "prompt": "ความแตกต่างระหว่าง BPH และ prostatic cancer จาก histology 2 ข้อ",
+     "format": "short",
+     "accepted": [
+      "basal cell layer",
+      "atypia"
+     ],
+     "keywords_all": [
+      "basal cell"
+     ],
+     "key_text": "BPH: มี basal cell layer, benign glandular hyperplasia · Cancer: ไม่มี basal cell layer, atypia (nuclei ใหญ่ nucleoli เด่น) with stromal invasion",
+     "source_key": "เฉลย: BPH: มี basal cell layer / benign glandular hyperplasia; Cancer: ไม่มี basal cell layer / atypia (enlarged nuclei, prominent nucleoli) with stromal invasion"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF52",
+     "pages": [
+      4
+     ]
+    },
+    {
+     "paper": "KF52-KEY",
+     "pages": [
+      4
+     ]
+    }
+   ],
+   "tags": [
+    "BPH"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "BPH มี basal cell layer; มะเร็งไม่มี"
+  },
+  {
+   "id": "KUB-52-KF-006",
+   "block": "KUB",
+   "cohort": 52,
+   "n": 6,
+   "type": "KF",
+   "case": "จาก Ultrasound ให้ระบุอวัยวะและลักษณะ",
+   "items": [
+    {
+     "id": "6.1",
+     "prompt": "ภาพ 6.1: อวัยวะ และลักษณะ",
+     "format": "short",
+     "accepted": [
+      "prostate gland enlargement",
+      "prostate"
+     ],
+     "keywords_all": [
+      "prostate"
+     ],
+     "key_text": "อวัยวะ: prostate gland · ลักษณะ: prostate gland enlargement",
+     "source_key": "เฉลย: prostate gland; prostate gland enlargement",
+     "image": "img/KUB-52-KF-006.jpg",
+     "image_caption": "Ultrasound 6.1"
+    },
+    {
+     "id": "6.2",
+     "prompt": "ภาพ 6.2: อวัยวะ และลักษณะจากภาพ A และ B",
+     "format": "short",
+     "accepted": [
+      "urinary bladder",
+      "full bladder",
+      "empty bladder"
+     ],
+     "keywords_all": [
+      "bladder"
+     ],
+     "key_text": "อวัยวะ: urinary bladder · A: full bladder · B: empty bladder (ภาพ B วงกลมคือ catheter)",
+     "source_key": "เฉลย: urinary bladder; A: full bladder; B: empty bladder (ภาพ B ที่เป็นวงกลมคือ catheter)",
+     "image": "img/KUB-52-KF-006b.jpg",
+     "image_caption": "Ultrasound 6.2 (A และ B)"
+    },
+    {
+     "id": "6.3",
+     "prompt": "ภาพ 6.3: อวัยวะ และลักษณะ",
+     "format": "short",
+     "accepted": [
+      "hydronephrosis",
+      "kidney"
+     ],
+     "keywords_all": [
+      "hydronephrosis"
+     ],
+     "key_text": "อวัยวะ: kidney · ลักษณะ: hydronephrosis",
+     "source_key": "เฉลย: kidney; hydronephrosis",
+     "image": "img/KUB-52-KF-006c.jpg",
+     "image_caption": "Ultrasound 6.3",
+     "key_image": "img/KUB-52-KF-006d-key.jpg",
+     "key_image_caption": "ภาพประกอบเฉลย: ระดับของ hydronephrosis"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF52",
+     "pages": [
+      6
+     ]
+    },
+    {
+     "paper": "KF52-KEY",
+     "pages": [
+      6
+     ]
+    }
+   ],
+   "tags": [
+    "ultrasound",
+    "hydronephrosis"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "US: prostate โต · full vs empty bladder (catheter) · hydronephrosis"
+  },
+  {
+   "id": "KUB-52-KF-007",
+   "block": "KUB",
+   "cohort": 52,
+   "n": 7,
+   "type": "KF",
+   "case": "ภาพองคชาตเด็กชาย (รูเปิด urethra อยู่ที่ shaft ด้านล่าง) และแผนภาพ hypospadias",
+   "items": [
+    {
+     "id": "7.1",
+     "prompt": "จงให้การวินิจฉัย",
+     "format": "short",
+     "accepted": [
+      "hypospadias"
+     ],
+     "keywords_all": [
+      "hypospadias"
+     ],
+     "key_text": "Hypospadias",
+     "source_key": "เฉลย: Hypospadias",
+     "image": "img/KUB-52-KF-007.jpg",
+     "image_caption": "ภาพองคชาต"
+    },
+    {
+     "id": "7.2",
+     "prompt": "บอก type ของโรค",
+     "format": "short",
+     "accepted": [
+      "midshaft",
+      "proximal penile"
+     ],
+     "keywords_all": [
+      "midshaft"
+     ],
+     "key_text": "Midshaft (ผู้เฉลยหมายเหตุ: ข้อสอบจริงตำแหน่งอยู่ที่ประมาณ midshaft, proximal penile)",
+     "source_key": "เฉลย: midshaft (ข้อสอบจริงตำแหน่งอยู่ที่ประมาณ midshaft, proximal penile)",
+     "key_image": "img/KUB-52-KF-007b-key.jpg",
+     "key_image_caption": "แผนภาพชนิดของ hypospadias"
+    },
+    {
+     "id": "7.3",
+     "prompt": "บอกความผิดปกติทางกายวิภาคมา 3 อย่าง",
+     "format": "short",
+     "accepted": [
+      "abnormal position of urethral opening",
+      "ventral curvature",
+      "chordee",
+      "dorsal hood"
+     ],
+     "keywords_all": [
+      "chordee"
+     ],
+     "key_text": "Abnormal position of urethral opening · ventral curvature (chordee) · dorsal hood",
+     "source_key": "เฉลย: abnormal position of urethral opening; Ventral curvature (chordee); dorsal hood"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF52",
+     "pages": [
+      7
+     ]
+    },
+    {
+     "paper": "KF52-KEY",
+     "pages": [
+      7
+     ]
+    }
+   ],
+   "tags": [
+    "hypospadias"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "hypospadias: รูเปิดผิด, chordee, dorsal hood"
+  },
+  {
+   "id": "KUB-52-KF-008",
+   "block": "KUB",
+   "cohort": 52,
+   "n": 8,
+   "type": "KF",
+   "case": "palpable rubbery mass at superficial inguinal pouch (ภาพเด็กทารกคลำก้อนที่ขาหนีบ ลูกศรชี้)",
+   "items": [
+    {
+     "id": "8.1",
+     "prompt": "จงให้การวินิจฉัย",
+     "format": "short",
+     "accepted": [
+      "cryptorchidism",
+      "undescended testis"
+     ],
+     "keywords_all": [
+      "cryptorchidism"
+     ],
+     "key_text": "Cryptorchidism / undescended testis",
+     "source_key": "เฉลย: cryptorchidism/ undescended testis",
+     "image": "img/KUB-52-KF-008.jpg",
+     "image_caption": "ภาพขาหนีบ (ลูกศรชี้ก้อน)"
+    },
+    {
+     "id": "8.2",
+     "prompt": "จงบอกตำแหน่งที่สามารถเกิดโรคนี้ได้ นอกเหนือจากตำแหน่งในโจทย์ 2 ตำแหน่ง",
+     "format": "short",
+     "accepted": [
+      "intra-abdominal",
+      "femoral",
+      "perineal",
+      "pubopenile"
+     ],
+     "keywords_all": [
+      "intra-abdominal",
+      "femoral"
+     ],
+     "key_text": "Intra-abdominal · femoral",
+     "source_key": "เฉลย: Intra-abdominal; Femoral",
+     "key_image": "img/KUB-52-KF-008b-key.jpg",
+     "key_image_caption": "ภาพแสดงตำแหน่งของ ectopic/undescended testis"
+    },
+    {
+     "id": "8.3",
+     "prompt": "วิธีการรักษา",
+     "format": "short",
+     "accepted": [
+      "orchidopexy"
+     ],
+     "keywords_all": [
+      "orchidopexy"
+     ],
+     "key_text": "Orchidopexy",
+     "source_key": "เฉลย: Orchiopexy/Orchidopexy"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF52",
+     "pages": [
+      8
+     ]
+    },
+    {
+     "paper": "KF52-KEY",
+     "pages": [
+      8
+     ]
+    }
+   ],
+   "tags": [
+    "cryptorchidism"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "cryptorchidism: ตำแหน่งอื่น intra-abdominal/femoral; รักษา orchidopexy"
+  },
+  {
+   "id": "KUB-52-KF-009",
+   "block": "KUB",
+   "cohort": 52,
+   "n": 9,
+   "type": "KF",
+   "case": "ภาพถุงอัณฑะ 2 ภาพ (อัณฑะข้างหนึ่งบวมแดงคล้ำ)",
+   "items": [
+    {
+     "id": "9.1",
+     "prompt": "จงให้การวินิจฉัย",
+     "format": "short",
+     "accepted": [
+      "testicular torsion"
+     ],
+     "keywords_all": [
+      "testicular torsion"
+     ],
+     "key_text": "Testicular torsion",
+     "source_key": "เฉลย: Testicular torsion",
+     "image": "img/KUB-52-KF-009.jpg",
+     "image_caption": "ภาพถุงอัณฑะ 2 ภาพ"
+    },
+    {
+     "id": "9.2",
+     "prompt": "จงบอกการตรวจร่างกาย 1 อย่างที่บ่งบอกว่าเป็นโรคนี้",
+     "format": "short",
+     "accepted": [
+      "absent cremasteric reflex",
+      "Prehn sign negative"
+     ],
+     "keywords_all": [
+      "cremasteric",
+      "Prehn"
+     ],
+     "key_text": "Absent cremasteric reflex / Prehn sign negative",
+     "source_key": "เฉลย: Absent cremasteric reflex / Prehn sign negative"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF52",
+     "pages": [
+      9
+     ]
+    },
+    {
+     "paper": "KF52-KEY",
+     "pages": [
+      9
+     ]
+    }
+   ],
+   "tags": [
+    "testicular torsion"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "torsion: cremasteric reflex หาย, Prehn −"
+  },
+  {
+   "id": "KUB-52-KF-010",
+   "block": "KUB",
+   "cohort": 52,
+   "n": 10,
+   "type": "KF",
+   "case": "ภาพถุงอัณฑะข้างซ้ายบวมใหญ่ (ภาพ A) ในเด็กชาย",
+   "items": [
+    {
+     "id": "10.1",
+     "prompt": "จงให้การวินิจฉัยโรคที่เป็นไปได้ 2 โรค",
+     "format": "short",
+     "accepted": [
+      "hydrocele",
+      "indirect inguinal hernia"
+     ],
+     "keywords_all": [
+      "hydrocele",
+      "hernia"
+     ],
+     "key_text": "Hydrocele · indirect inguinal hernia",
+     "source_key": "เฉลย: Hydrocele, Indirect inguinal hernia",
+     "image": "img/KUB-52-KF-010.jpg",
+     "image_caption": "ภาพ A ถุงอัณฑะบวม"
+    },
+    {
+     "id": "10.2",
+     "prompt": "บอกการตรวจร่างกาย 2 อย่างที่ใช้วินิจฉัยแยกโรค",
+     "format": "short",
+     "accepted": [
+      "transillumination",
+      "reducible"
+     ],
+     "keywords_all": [
+      "transillumination"
+     ],
+     "key_text": "Hydrocele: transillumination test positive, non-reducible mass · Indirect inguinal hernia: transillumination test negative, reducible mass",
+     "source_key": "เฉลย: hydrocele: transillumination test positive, non-reducible mass; Indirect inguinal hernia: transillumination test negative, reducible mass"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF52",
+     "pages": [
+      9
+     ]
+    },
+    {
+     "paper": "KF52-KEY",
+     "pages": [
+      9
+     ]
+    }
+   ],
+   "tags": [
+    "hydrocele",
+    "inguinal hernia"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "hydrocele: transillumination +, ไม่ reducible · hernia: −, reducible"
+  },
+  {
+   "id": "KUB-52-KF-011",
+   "block": "KUB",
+   "cohort": 52,
+   "n": 11,
+   "type": "KF",
+   "case": "ผู้ป่วยหญิง อายุ 30 ปี ปวดท้องน้อย 2 วัน (ข้อมูลไม่ตรงกับข้อสอบจริง). PMH: no significant, regular menstrual cycles. Medications: oral contraceptives. Family: mother fibroids, father HT. Social: single, one-night stand, occasional alcohol, non-smoker. BP 120/80, HR 80, RR 16, Temp 38.5 °C. Lower abdominal tenderness bilateral, no rebound/guarding. Speculum: yellowish-green malodorous discharge, cervical motion tenderness. Bimanual: uterine and bilateral adnexal tenderness, no masses.",
+   "items": [
+    {
+     "id": "11.1",
+     "prompt": "จงให้การวินิจฉัย",
+     "format": "short",
+     "accepted": [
+      "PID",
+      "pelvic inflammatory disease"
+     ],
+     "keywords_all": [
+      "PID"
+     ],
+     "key_text": "Pelvic inflammatory disease (PID)",
+     "source_key": "เฉลย: PID (Pelvic inflammatory disease)"
+    },
+    {
+     "id": "11.2",
+     "prompt": "จงบอกเชื้อก่อโรคที่เป็นไปได้ 2 เชื้อ",
+     "format": "short",
+     "accepted": [
+      "Neisseria gonorrhoeae",
+      "Chlamydia trachomatis"
+     ],
+     "keywords_all": [
+      "Neisseria",
+      "Chlamydia"
+     ],
+     "key_text": "Neisseria gonorrhoeae · Chlamydia trachomatis",
+     "source_key": "เฉลย: Neisseria gonorrhoeae; Chlamydia trachomatis"
+    },
+    {
+     "id": "11.3",
+     "prompt": "จงบอก risk factor ของผู้ป่วยรายนี้",
+     "format": "short",
+     "accepted": [
+      "multiple sexual partner",
+      "unprotected sexual intercourse",
+      "one-night stand"
+     ],
+     "keywords_all": [
+      "partner"
+     ],
+     "key_text": "Multiple sexual partner · unprotected sexual intercourse · one-night stand",
+     "source_key": "เฉลย: multiple sexual partner, unprotected sexual intercourse, one-night stand"
+    },
+    {
+     "id": "11.4",
+     "prompt": "จงบอกวิธีป้องกัน",
+     "format": "short",
+     "accepted": [
+      "condom",
+      "limit sexual partners",
+      "STI screening"
+     ],
+     "keywords_all": [
+      "condom"
+     ],
+     "key_text": "Condom · limit sexual partners · STI screening",
+     "source_key": "เฉลย: Condom, Limit sexual partners, STI screening"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF52",
+     "pages": [
+      10
+     ]
+    },
+    {
+     "paper": "KF52-KEY",
+     "pages": [
+      10
+     ]
+    }
+   ],
+   "tags": [
+    "PID"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "PID: CMT; N. gonorrhoeae/C. trachomatis"
+  },
+  {
+   "id": "KUB-52-KF-012",
+   "block": "KUB",
+   "cohort": 52,
+   "n": 12,
+   "type": "KF",
+   "case": "ผู้ป่วยหญิง อายุ 50 ปี มีเลือดออกทางช่องคลอด 6 เดือน (ข้อมูลไม่ตรงกับข้อสอบจริง). PMH: เคยติดเชื้อเริม. Social: คู่นอน 3 คน, เพศสัมพันธ์ครั้งแรก 16 ปี. Speculum: cervix irregular with friability, visible exophytic lesion, scant discharge. Bimanual: uterus normal size/position, no adnexal mass.",
+   "items": [
+    {
+     "id": "12.1",
+     "prompt": "จงให้การวินิจฉัย",
+     "format": "short",
+     "accepted": [
+      "cervical cancer"
+     ],
+     "keywords_all": [
+      "cervical cancer"
+     ],
+     "key_text": "Cervical cancer",
+     "source_key": "เฉลย: Cervical cancer"
+    },
+    {
+     "id": "12.2",
+     "prompt": "จงบอก risk factor ของผู้ป่วยรายนี้มา 3 อย่าง",
+     "format": "short",
+     "accepted": [
+      "early age at first intercourse",
+      "multiple sexual partners",
+      "HPV infection"
+     ],
+     "keywords_all": [
+      "partners"
+     ],
+     "key_text": "Early age at first intercourse · multiple sexual partners · HPV infection",
+     "source_key": "เฉลย: Early age at first intercourse; Multiple sexual partners; HPV infection"
+    },
+    {
+     "id": "12.3",
+     "prompt": "สาเหตุหลักของการเกิดโรคดังกล่าวคืออะไร",
+     "format": "short",
+     "accepted": [
+      "HPV infection",
+      "HPV 16 18"
+     ],
+     "keywords_all": [
+      "HPV"
+     ],
+     "key_text": "HPV infection (high risk type 16, 18)",
+     "source_key": "เฉลย: HPV infection (high risk type 16, 18)"
+    },
+    {
+     "id": "12.4",
+     "prompt": "จงบอกวิธีป้องกัน 3 อย่าง",
+     "format": "short",
+     "accepted": [
+      "HPV vaccination",
+      "limit sexual partners",
+      "pap smear",
+      "condom"
+     ],
+     "keywords_all": [
+      "vaccination"
+     ],
+     "key_text": "HPV vaccination · limit sexual partners · regular screening (Pap smear) · safe sex (condom)",
+     "source_key": "เฉลย: HPV vaccination; Limit sexual partners; Regular screening (Pap smear); Safe sex (condom)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF52",
+     "pages": [
+      11
+     ]
+    },
+    {
+     "paper": "KF52-KEY",
+     "pages": [
+      11
+     ]
+    }
+   ],
+   "tags": [
+    "cervical cancer",
+    "HPV"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "cervical CA: HPV 16/18; ป้องกัน: วัคซีน + Pap + ถุงยาง"
+  },
+  {
+   "id": "KUB-52-KF-013",
+   "block": "KUB",
+   "cohort": 52,
+   "n": 13,
+   "type": "KF",
+   "case": "คนไข้มีโรค obesity and diabetes. Endometrium enlargement, back-to-back appearance (ภาพ histology 2 ภาพ)",
+   "items": [
+    {
+     "id": "13.1",
+     "prompt": "จงให้การวินิจฉัย",
+     "format": "short",
+     "accepted": [
+      "endometrial hyperplasia"
+     ],
+     "keywords_all": [
+      "endometrial hyperplasia"
+     ],
+     "key_text": "Endometrial hyperplasia",
+     "source_key": "เฉลย: Endometrial hyperplasia",
+     "image": "img/KUB-52-KF-013.jpg",
+     "image_caption": "ภาพ histology ต่อมเยื่อบุมดลูก (1)"
+    },
+    {
+     "id": "13.2",
+     "prompt": "จงบอก risk factor มา 3 อย่าง",
+     "format": "short",
+     "accepted": [
+      "obesity",
+      "diabetes",
+      "unopposed estrogen"
+     ],
+     "keywords_all": [
+      "obesity"
+     ],
+     "key_text": "Obesity · diabetes · unopposed estrogen",
+     "source_key": "เฉลย: Obesity; Diabetes; Unopposed estrogen",
+     "image": "img/KUB-52-KF-013b.jpg",
+     "image_caption": "ภาพ histology (2)"
+    },
+    {
+     "id": "13.3",
+     "prompt": "จงบอก pathophysiology ของโรค / อธิบายว่าทำไม endometrium ที่เปลี่ยนมาเป็นแบบนี้",
+     "format": "short",
+     "accepted": [
+      "unopposed estrogen"
+     ],
+     "keywords_all": [
+      "unopposed estrogen"
+     ],
+     "key_text": "Unopposed estrogen → continuous endometrial proliferation without progesterone → glandular hyperplasia",
+     "source_key": "เฉลย: Unopposed estrogen → continuous endometrial proliferation without progesterone → glandular hyperplasia",
+     "mechanism": [
+      "obesity/DM → estrogen ↑ ไม่มี progesterone ต้าน",
+      "endometrium proliferate ต่อเนื่อง",
+      "glandular hyperplasia (ต่อมเรียงชิด)"
+     ]
+    },
+    {
+     "id": "13.4",
+     "prompt": "โรคมะเร็งชนิดใดมีความเสี่ยงที่จะเกิดขึ้นมากที่สุดในอนาคตหากไม่ได้รับการรักษา",
+     "format": "short",
+     "accepted": [
+      "endometrioid adenocarcinoma"
+     ],
+     "keywords_all": [
+      "endometrioid"
+     ],
+     "key_text": "Endometrioid adenocarcinoma",
+     "source_key": "เฉลย: Endometrioid adenocarcinoma"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF52",
+     "pages": [
+      12
+     ]
+    },
+    {
+     "paper": "KF52-KEY",
+     "pages": [
+      12
+     ]
+    }
+   ],
+   "tags": [
+    "endometrial hyperplasia"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "endometrial hyperplasia → endometrioid adenocarcinoma"
+  },
+  {
+   "id": "KUB-52-KF-014",
+   "block": "KUB",
+   "cohort": 52,
+   "n": 14,
+   "type": "KF",
+   "case": "Thai woman 16 years old. CC: acute abdominal pain for 3 hrs. PI: acute right lower quadrant pain for 3 hrs, no fever, leukorrhea, no vaginal bleeding. Past history: denied sexual intercourse, regular menstrual cycle, LMP 6 days ago. PE: BT 37, PR 89, RR 22, BP 110/70. Abdomen: bulge lower abdomen, palpable cystic mass 5 × 6 cm, movable, marked tenderness with guarding and rebound tenderness, no shifting dullness. Ultrasound and operation: cyst with mucin content, no free fluid in cul-de-sac.",
+   "items": [
+    {
+     "id": "14.1",
+     "prompt": "What is the affected organ?",
+     "format": "short",
+     "accepted": [
+      "ovary"
+     ],
+     "keywords_all": [
+      "ovary"
+     ],
+     "key_text": "Ovary",
+     "source_key": "เฉลย: Ovary"
+    },
+    {
+     "id": "14.2",
+     "prompt": "Based on clinical symptoms, what is the provisional diagnosis?",
+     "format": "short",
+     "accepted": [
+      "ovarian torsion"
+     ],
+     "keywords_all": [
+      "ovarian torsion"
+     ],
+     "key_text": "Ovarian torsion (ผู้เฉลยหมายเหตุ: ปวดมา 3 ชั่วโมง ถ้าเป็น ovarian cyst เฉยๆ จะไม่เจ็บ)",
+     "source_key": "เฉลย: Ovarian torsion (มี pain มา 3 ชั่วโมง ถ้า ovarian cyst เฉยๆ จะไม่เจ็บ)"
+    },
+    {
+     "id": "14.3",
+     "prompt": "Based on the clinical presentation, what is the most likely predisposing factor for this patient’s acute complication (ตอบมา 2 อย่าง)",
+     "format": "short",
+     "accepted": [
+      "ovarian cyst",
+      "enlarged ovary"
+     ],
+     "keywords_all": [
+      "ovarian cyst",
+      "enlarged"
+     ],
+     "key_text": "Ovarian cyst · enlarged ovary",
+     "source_key": "เฉลย: Ovarian cyst; Enlarged ovary"
+    },
+    {
+     "id": "14.4",
+     "prompt": "Treatment",
+     "format": "short",
+     "accepted": [
+      "surgical detorsion",
+      "cystectomy"
+     ],
+     "keywords_all": [
+      "detorsion"
+     ],
+     "key_text": "Surgical detorsion ± cystectomy",
+     "source_key": "เฉลย: Surgical detorsion ± cystectomy"
+    },
+    {
+     "id": "14.5",
+     "prompt": "Benign or malignant",
+     "format": "short",
+     "accepted": [
+      "benign",
+      "mucinous cystadenoma"
+     ],
+     "keywords_all": [
+      "benign"
+     ],
+     "key_text": "Benign (mucinous cystadenoma)",
+     "source_key": "เฉลย: Benign (mucinous cystadenoma)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF52",
+     "pages": [
+      13
+     ]
+    },
+    {
+     "paper": "KF52-KEY",
+     "pages": [
+      13
+     ]
+    }
+   ],
+   "tags": [
+    "ovarian torsion",
+    "mucinous cystadenoma"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "ovarian cyst โต → torsion; รักษา detorsion ± cystectomy"
+  }
+ ]
+}

@@ -1,0 +1,331 @@
+{
+ "meta": {
+  "set_id": "51_OSPE",
+  "block": "KUB",
+  "cohort": 51,
+  "type": "OSPE",
+  "title": "OSPE KUB and Repro · Med PSU 51",
+  "generated_by": "auditor/tools/build_kf.py from auditor/data/work/kub_51_OSPE.kf.json — do not edit by hand"
+ },
+ "questions": [
+  {
+   "id": "KUB-51-OSPE-001",
+   "block": "KUB",
+   "cohort": 51,
+   "n": 1,
+   "type": "OSPE",
+   "station": 1,
+   "stem": "สถานี 1 — ภาพ histology ของไต หมายเลข 1–8 (วงกลมสีแดงล้อมโครงสร้าง)",
+   "items": [
+    {
+     "id": "1.1",
+     "prompt": "หมายเลขใดบ้างที่เป็น proximal convoluted tubule (ตอบเป็นตัวเลข)",
+     "format": "short",
+     "accepted": [
+      "4,7,8",
+      "4 7 8"
+     ],
+     "keywords_all": [
+      "4",
+      "7",
+      "8"
+     ],
+     "key_text": "หมายเลข 4, 7, 8",
+     "source_key": "เฉลยลายมือ: 4, 7, 8 (ลายมือเลขแรกคล้าย 1 หรือ 4 — ตรงกับข้อสอบรุ่น 50 ซึ่งเฉลย 4, 7, 8)",
+     "audit_note": "ลายมือเลขแรกอ่านเป็น 1 หรือ 4 ได้ ใช้ 4 ตามภาพเดียวกันในข้อสอบรุ่น 50",
+     "image": "img/KUB-51-OSPE-001.jpg",
+     "image_caption": "histology ไต หมายเลข 1–8"
+    },
+    {
+     "id": "1.2",
+     "prompt": "โครงสร้างหมายเลข 1 ในวงกลมคืออะไร (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "renal corpuscle",
+      "glomerulus"
+     ],
+     "keywords_all": [
+      "renal corpuscle"
+     ],
+     "key_text": "Renal corpuscle",
+     "source_key": "เฉลยลายมือ: Renal corpuscle"
+    },
+    {
+     "id": "1.3",
+     "prompt": "หน้าที่หลักของโครงสร้างหมายเลข 2 คืออะไร (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "glomerular filtration",
+      "filtration"
+     ],
+     "keywords_all": [
+      "filtration"
+     ],
+     "key_text": "Glomerular filtration",
+     "source_key": "เฉลยลายมือ: Glomerular filtration"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE51",
+     "pages": [
+      1
+     ]
+    },
+    {
+     "paper": "OSPE51-KEY",
+     "pages": [
+      1
+     ]
+    }
+   ],
+   "tags": [
+    "renal histology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "KUB-51-OSPE-007",
+   "block": "KUB",
+   "cohort": 51,
+   "n": 7,
+   "type": "OSPE",
+   "station": 7,
+   "stem": "สถานี 7 — ปัสสาวะ 3 ตัวอย่าง (A ขุ่นขาว, B สีน้ำตาลเข้ม, C สีแดง)",
+   "items": [
+    {
+     "id": "7.1",
+     "prompt": "ผู้ป่วยมา รพ. ด้วย pyuria ตัวอย่าง A จงให้สาร 2 ชนิดที่ให้ผลบวกใน dipstick (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "nitrite",
+      "leukocyte esterase"
+     ],
+     "keywords_all": [
+      "nitrite",
+      "leukocyte esterase"
+     ],
+     "key_text": "Nitrite · leukocyte esterase",
+     "source_key": "เฉลยลายมือ: Nitrite +, Leukocyte esterase +",
+     "image": "img/KUB-51-OSPE-007.jpg",
+     "image_caption": "ปัสสาวะตัวอย่าง A, B, C"
+    },
+    {
+     "id": "7.2",
+     "prompt": "ตัวอย่าง B สารใดจะให้ผลบวกบน dipstick (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "bilirubin"
+     ],
+     "keywords_all": [
+      "bilirubin"
+     ],
+     "key_text": "Bilirubin",
+     "source_key": "เฉลยลายมือ: Bilirubin"
+    },
+    {
+     "id": "7.3",
+     "prompt": "จงให้ 2 โรคที่ทำให้ปัสสาวะตัวอย่าง C มีสีแดง (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "nephritic syndrome",
+      "UTI",
+      "urinary tract infection"
+     ],
+     "keywords_all": [
+      "nephritic",
+      "UTI"
+     ],
+     "key_text": "Nephritic syndrome · UTI",
+     "source_key": "เฉลยลายมือ: Nephritic syndrome, UTI"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE51",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "OSPE51-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [
+    "urine appearance"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "KUB-51-OSPE-008",
+   "block": "KUB",
+   "cohort": 51,
+   "n": 8,
+   "type": "OSPE",
+   "station": 8,
+   "stem": "สถานี 8 (ตอนหลัง ข้อ 1) — ภาพ gross ของอัณฑะตัดผ่าน ก้อนสีขาวครีมเป็นเนื้อเดียวกัน",
+   "items": [
+    {
+     "id": "8.1",
+     "prompt": "จงระบุโรค (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "seminoma"
+     ],
+     "keywords_all": [
+      "seminoma"
+     ],
+     "key_text": "Seminoma",
+     "source_key": "เฉลยลายมือ: Seminoma",
+     "image": "img/KUB-51-OSPE-008.jpg",
+     "image_caption": "อัณฑะตัดผ่านมีก้อนสีขาวครีม"
+    },
+    {
+     "id": "8.2",
+     "prompt": "ปัจจัยเสี่ยง (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "cryptorchidism",
+      "undescended testis"
+     ],
+     "keywords_all": [
+      "cryptorchidism"
+     ],
+     "key_text": "Cryptorchidism (เพิ่มความเสี่ยง germ cell tumor โดยเฉพาะ seminoma)",
+     "source_key": "เฉลยลายมือ: Cryptorchidism increase risk of germ cell tumour (especially seminoma)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE51",
+     "pages": [
+      3
+     ]
+    },
+    {
+     "paper": "OSPE51-KEY",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [
+    "seminoma",
+    "cryptorchidism"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "KUB-51-OSPE-012",
+   "block": "KUB",
+   "cohort": 51,
+   "n": 12,
+   "type": "OSPE",
+   "station": 12,
+   "stem": "สถานี 12 (ตอนหลัง ข้อ 5) — ภาพ gross ของต่อมลูกหมากตัดผ่าน",
+   "items": [
+    {
+     "id": "12.1",
+     "prompt": "การวินิจฉัย (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "BPH",
+      "benign prostatic hyperplasia"
+     ],
+     "keywords_all": [
+      "BPH"
+     ],
+     "key_text": "BPH (benign prostatic hyperplasia)",
+     "source_key": "เฉลยลายมือ: BPH (Benign prostatic hyperplasia)",
+     "image": "img/KUB-51-OSPE-012.jpg",
+     "image_caption": "ต่อมลูกหมากตัดผ่าน มีไม้บรรทัด"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE51",
+     "pages": [
+      3
+     ]
+    },
+    {
+     "paper": "OSPE51-KEY",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [
+    "BPH"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "KUB-51-OSPE-013",
+   "block": "KUB",
+   "cohort": 51,
+   "n": 13,
+   "type": "OSPE",
+   "station": 13,
+   "stem": "สถานี 13 (ตอนหลัง ข้อ 6) — ภาพ histology กลุ่มเซลล์ polygonal ติดหลอดเลือดใน interstitium",
+   "items": [
+    {
+     "id": "13.1",
+     "prompt": "ระบุเซลล์ (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "Leydig cell",
+      "interstitial cell of Leydig"
+     ],
+     "keywords_all": [
+      "Leydig"
+     ],
+     "key_text": "Leydig cell",
+     "source_key": "เฉลยลายมือ: Leydig cell",
+     "image": "img/KUB-51-OSPE-013.jpg",
+     "image_caption": "histology เซลล์ในอัณฑะ"
+    },
+    {
+     "id": "13.2",
+     "prompt": "หน้าที่ของเซลล์นี้ (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "testosterone",
+      "produce testosterone"
+     ],
+     "keywords_all": [
+      "testosterone"
+     ],
+     "key_text": "สร้าง testosterone",
+     "source_key": "เฉลยลายมือ: สร้าง testosterone"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE51",
+     "pages": [
+      4
+     ]
+    },
+    {
+     "paper": "OSPE51-KEY",
+     "pages": [
+      4
+     ]
+    }
+   ],
+   "tags": [
+    "testis histology"
+   ],
+   "source": "claude-mcp"
+  }
+ ]
+}
