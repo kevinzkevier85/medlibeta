@@ -1,0 +1,607 @@
+{
+ "meta": {
+  "set_id": "43_OSPE",
+  "block": "KUB",
+  "cohort": 43,
+  "type": "OSPE",
+  "title": "OSPE KUB and Repro · Med PSU 42-43",
+  "generated_by": "auditor/tools/build_kf.py from auditor/data/work/kub_42-43_OSPE.kf.json — do not edit by hand"
+ },
+ "questions": [
+  {
+   "id": "KUB-43-OSPE-001",
+   "block": "KUB",
+   "cohort": 43,
+   "n": 1,
+   "type": "OSPE",
+   "station": 1,
+   "stem": "สถานี 1 — ภาพถ่ายกล้องจุลทรรศน์ตะกอนปัสสาวะ",
+   "items": [
+    {
+     "id": "1.1",
+     "prompt": "ตะกอนที่เห็นเรียกว่าอะไร (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "RBC cast",
+      "red blood cell cast",
+      "red cell cast",
+      "cellular cast"
+     ],
+     "keywords_all": [
+      "cast"
+     ],
+     "key_text": "RBC cast (cast ที่มีเม็ดเลือดแดงอยู่ข้างใน)",
+     "source_key": "RBC cast (cast ที่มีเม็ดเลือดแดงอยู่ข้างใน) (ไม่มีเฉลยต้นฉบับ AI ร่างให้)",
+     "audit_note": "AI ตีความจากรูป (cast เซลล์กลมสีเหลือง-เขียว) อาจเป็น WBC cast"
+    },
+    {
+     "id": "1.2",
+     "prompt": "ตะกอนนี้มีความสำคัญทางคลินิกอย่างไร (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "glomerulonephritis",
+      "glomerular bleeding",
+      "glomerular disease"
+     ],
+     "keywords_all": [
+      "glomerul"
+     ],
+     "key_text": "บ่งชี้เลือดออกจาก glomerulus (glomerulonephritis/nephritic syndrome)",
+     "source_key": "บ่งชี้เลือดออกจาก glomerulus (glomerulonephritis/nephritic syndrome) (ไม่มีเฉลยต้นฉบับ AI ร่างให้)"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "OSPE43",
+     "pages": [
+      1
+     ]
+    }
+   ],
+   "tags": [
+    "urinary cast"
+   ],
+   "source": "claude-mcp",
+   "image": "img/KUB-43-OSPE-001.jpg",
+   "image_caption": "ตะกอนปัสสาวะ (cast)"
+  },
+  {
+   "id": "KUB-43-OSPE-003",
+   "block": "KUB",
+   "cohort": 43,
+   "n": 3,
+   "type": "OSPE",
+   "station": 3,
+   "stem": "สถานี 3 — ภาพถ่ายกล้องจุลทรรศน์ตะกอนปัสสาวะ ระบุโครงสร้างหมายเลข 1–3",
+   "items": [
+    {
+     "id": "3.1",
+     "prompt": "โครงสร้างหมายเลข 1 คืออะไร (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "RBC",
+      "red blood cell",
+      "erythrocyte"
+     ],
+     "keywords_all": [
+      "RBC"
+     ],
+     "key_text": "Red blood cell (RBC)",
+     "source_key": "Red blood cell (RBC) (ไม่มีเฉลยต้นฉบับ AI ร่างให้)"
+    },
+    {
+     "id": "3.2",
+     "prompt": "โครงสร้างหมายเลข 2 คืออะไร (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "WBC",
+      "white blood cell",
+      "leukocyte",
+      "pus cell"
+     ],
+     "keywords_all": [
+      "WBC"
+     ],
+     "key_text": "White blood cell (WBC)",
+     "source_key": "White blood cell (WBC) (ไม่มีเฉลยต้นฉบับ AI ร่างให้)",
+     "audit_note": "AI ตีความจากรูป (เซลล์ granular ขนาดกลาง)"
+    },
+    {
+     "id": "3.3",
+     "prompt": "โครงสร้างหมายเลข 3 คืออะไร (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "epithelial cell",
+      "squamous epithelial cell",
+      "transitional cell"
+     ],
+     "keywords_all": [
+      "epithelial"
+     ],
+     "key_text": "Epithelial cell (เซลล์เยื่อบุขนาดใหญ่)",
+     "source_key": "Epithelial cell (เซลล์เยื่อบุขนาดใหญ่) (ไม่มีเฉลยต้นฉบับ AI ร่างให้)",
+     "audit_note": "AI ตีความจากรูป"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "OSPE43",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [
+    "urinary sediment"
+   ],
+   "source": "claude-mcp",
+   "image": "img/KUB-43-OSPE-003.jpg",
+   "image_caption": "ตะกอนปัสสาวะ หมายเลข 1–3"
+  },
+  {
+   "id": "KUB-43-OSPE-004",
+   "block": "KUB",
+   "cohort": 43,
+   "n": 4,
+   "type": "OSPE",
+   "station": 4,
+   "stem": "สถานี 4 — ผู้ชายคนหนึ่งปวดอัณฑะข้างซ้ายอย่างฉับพลัน ภาพแสดงก่อนรักษาและหลังได้รับการผ่าตัด",
+   "items": [
+    {
+     "id": "4.1",
+     "prompt": "จงให้การวินิจฉัย (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "testicular torsion",
+      "torsion of testis"
+     ],
+     "keywords_all": [
+      "torsion"
+     ],
+     "key_text": "Testicular torsion",
+     "source_key": "Testicular torsion (ไม่มีเฉลยต้นฉบับ AI ร่างให้)"
+    },
+    {
+     "id": "4.2",
+     "prompt": "จงบอกช่วงอายุของคนไข้รายนี้ (ตอบเป็นตัวเลข/ช่วงอายุ)",
+     "format": "short",
+     "accepted": [
+      "12-18",
+      "12–18",
+      "adolescent",
+      "puberty",
+      "12 to 18"
+     ],
+     "keywords_all": [
+      "12"
+     ],
+     "key_text": "วัยรุ่น ~12–18 ปี (พบมากที่สุดช่วงวัยรุ่น และทารกแรกเกิด)",
+     "source_key": "วัยรุ่น ~12–18 ปี (พบมากที่สุดช่วงวัยรุ่น และทารกแรกเกิด) (ไม่มีเฉลยต้นฉบับ AI ร่างให้)",
+     "audit_note": "AI ตอบจากความรู้ (bimodal: ทารกแรกเกิด + วัยรุ่น)"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "OSPE43",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [
+    "testicular torsion"
+   ],
+   "source": "claude-mcp",
+   "image": "img/KUB-43-OSPE-004.jpg",
+   "image_caption": "ก่อนรักษา (ซ้าย) และหลังผ่าตัด (ขวา)"
+  },
+  {
+   "id": "KUB-43-OSPE-005",
+   "block": "KUB",
+   "cohort": 43,
+   "n": 5,
+   "type": "OSPE",
+   "station": 5,
+   "stem": "สถานี 5 — ชายอายุ 45 ปี เคยมีประวัติ urinary tract obstruction ผลเพาะเชื้อปัสสาวะแบบ MSU ดังภาพ (เพลท blood agar)",
+   "items": [
+    {
+     "id": "5.2",
+     "prompt": "คนไข้ติดเชื้อในทางเดินปัสสาวะหรือไม่ ถ้าติดจะมีโอกาสเป็นเชื้ออะไรได้บ้าง (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "E. coli",
+      "Escherichia coli",
+      "Proteus",
+      "Klebsiella"
+     ],
+     "keywords_all": [
+      "E. coli"
+     ],
+     "key_text": "ติดเชื้อ (UTI) — เชื้อที่เป็นไปได้: E. coli, Proteus mirabilis, Klebsiella (โดยเฉพาะ Proteus เมื่อมีการอุดกั้น)",
+     "source_key": "ติดเชื้อ (UTI) — เชื้อที่เป็นไปได้: E. coli, Proteus mirabilis, Klebsiella (โดยเฉพาะ Proteus เมื่อมีการอุดกั้น) (ไม่มีเฉลยต้นฉบับ AI ร่างให้)",
+     "audit_note": "ข้อ 5.1 (นับ CFU/mL จากเพลท) ไม่ใส่ เพราะนับโคโลนีจากรูปไม่ได้แม่นยำ"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "OSPE43",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [
+    "UTI",
+    "urine culture"
+   ],
+   "source": "claude-mcp",
+   "image": "img/KUB-43-OSPE-005.jpg",
+   "image_caption": "เพลท blood agar ผลเพาะเชื้อปัสสาวะ"
+  },
+  {
+   "id": "KUB-43-OSPE-006",
+   "block": "KUB",
+   "cohort": 43,
+   "n": 6,
+   "type": "OSPE",
+   "station": 6,
+   "stem": "สถานี 6 — ภาพทางพยาธิ (gross และ histology ของก้อนที่ไต มีโครงสร้างคล้าย glomerulus)",
+   "items": [
+    {
+     "id": "6.1",
+     "prompt": "จงให้การวินิจฉัย",
+     "format": "select",
+     "options": [
+      {
+       "key": "a",
+       "text": "Nephroblastoma"
+      },
+      {
+       "key": "b",
+       "text": "Neuroblastoma"
+      },
+      {
+       "key": "c",
+       "text": "Fibrocystic change"
+      },
+      {
+       "key": "d",
+       "text": "ARPKD"
+      },
+      {
+       "key": "e",
+       "text": "Thrombotic thrombocytopenia purpura"
+      }
+     ],
+     "answer": [
+      "a"
+     ],
+     "max_answers": 1,
+     "key_text": "a — Nephroblastoma (Wilms tumor)",
+     "source_key": "a — Nephroblastoma (Wilms tumor) (ไม่มีเฉลยต้นฉบับ AI ร่างให้)",
+     "explanation": "gross: ก้อนในไต histology: primitive glomeruloid/blastemal"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "OSPE43",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [
+    "Wilms tumor"
+   ],
+   "source": "claude-mcp",
+   "image": "img/KUB-43-OSPE-006.jpg",
+   "image_caption": "ภาพ gross และ histology ของก้อนที่ไต"
+  },
+  {
+   "id": "KUB-43-OSPE-007",
+   "block": "KUB",
+   "cohort": 43,
+   "n": 7,
+   "type": "OSPE",
+   "station": 7,
+   "stem": "สถานี 7 — เด็กชายอายุ 4 ปี แพทย์สงสัยติดเชื้อในทางเดินปัสสาวะ ส่งปัสสาวะที่เก็บจากสายสวน ผลเพาะเชื้อพบเชื้อ aerobe ชนิด non-lactose fermenter",
+   "items": [
+    {
+     "id": "7.1",
+     "prompt": "เด็กคนนี้มีโอกาสติดเชื้อใดได้บ้าง (ยกตัวอย่าง 2 ชนิด ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "Pseudomonas aeruginosa",
+      "Proteus mirabilis",
+      "Proteus",
+      "Acinetobacter",
+      "Salmonella"
+     ],
+     "keywords_all": [
+      "Pseudomonas"
+     ],
+     "key_text": "Pseudomonas aeruginosa · Proteus mirabilis (non-lactose fermenters ที่พบใน UTI)",
+     "source_key": "Pseudomonas aeruginosa · Proteus mirabilis (non-lactose fermenters ที่พบใน UTI) (ไม่มีเฉลยต้นฉบับ AI ร่างให้)"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "OSPE43",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [
+    "UTI",
+    "non-lactose fermenter"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "KUB-43-OSPE-010",
+   "block": "KUB",
+   "cohort": 43,
+   "n": 10,
+   "type": "OSPE",
+   "station": 10,
+   "stem": "สถานี 10 — ภาพทางพยาธิ (มดลูกผ่าครึ่งมีก้อนกลมสีขาวหลายก้อนในชั้นกล้ามเนื้อ) จงให้การวินิจฉัย",
+   "items": [
+    {
+     "id": "10.1",
+     "prompt": "จงให้การวินิจฉัย (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "leiomyoma",
+      "uterine fibroid",
+      "fibroids"
+     ],
+     "keywords_all": [
+      "leiomyoma"
+     ],
+     "key_text": "Leiomyoma (uterine fibroid)",
+     "source_key": "Leiomyoma (uterine fibroid) (ไม่มีเฉลยต้นฉบับ AI ร่างให้)"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "OSPE43",
+     "pages": [
+      4
+     ]
+    }
+   ],
+   "tags": [
+    "leiomyoma"
+   ],
+   "source": "claude-mcp",
+   "image": "img/KUB-43-OSPE-010.jpg",
+   "image_caption": "มดลูกผ่าครึ่งมีก้อนกลมสีขาวหลายก้อน"
+  },
+  {
+   "id": "KUB-43-OSPE-011",
+   "block": "KUB",
+   "cohort": 43,
+   "n": 11,
+   "type": "OSPE",
+   "station": 11,
+   "stem": "สถานี 11 — ภาพทางพยาธิ (ไตมีถุงน้ำขนาดต่างๆ จำนวนมากคล้ายพวงองุ่น) อาการทางสมองที่สัมพันธ์กับโรคนี้คืออะไร",
+   "items": [
+    {
+     "id": "11.1",
+     "prompt": "เลือกคำตอบ",
+     "format": "select",
+     "options": [
+      {
+       "key": "a",
+       "text": "Saccular aneurysm"
+      },
+      {
+       "key": "b",
+       "text": "Parkinsonism"
+      },
+      {
+       "key": "c",
+       "text": "Hallucination"
+      },
+      {
+       "key": "d",
+       "text": "Charcot–Bouchard aneurysm"
+      },
+      {
+       "key": "e",
+       "text": "Amaurosis fugax"
+      }
+     ],
+     "answer": [
+      "a"
+     ],
+     "max_answers": 1,
+     "key_text": "a — Saccular (berry) aneurysm (ADPKD)",
+     "source_key": "a — Saccular (berry) aneurysm (ADPKD) (ไม่มีเฉลยต้นฉบับ AI ร่างให้)",
+     "explanation": "ADPKD สัมพันธ์กับ berry aneurysm ของ circle of Willis"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "OSPE43",
+     "pages": [
+      5
+     ]
+    }
+   ],
+   "tags": [
+    "ADPKD",
+    "berry aneurysm"
+   ],
+   "source": "claude-mcp",
+   "image": "img/KUB-43-OSPE-011.jpg",
+   "image_caption": "ไตมีถุงน้ำหลายใบ"
+  },
+  {
+   "id": "KUB-43-OSPE-012",
+   "block": "KUB",
+   "cohort": 43,
+   "n": 12,
+   "type": "OSPE",
+   "station": 12,
+   "stem": "สถานี 12 — ภาพทางพยาธิ (ไตมีก้อนสีเหลือง-ขาวและ histology เซลล์ใส) จงให้การวินิจฉัย",
+   "items": [
+    {
+     "id": "12.1",
+     "prompt": "จงให้การวินิจฉัย",
+     "format": "select",
+     "options": [
+      {
+       "key": "a",
+       "text": "Nephroblastoma"
+      },
+      {
+       "key": "b",
+       "text": "Renal cell carcinoma"
+      },
+      {
+       "key": "c",
+       "text": "Renal papillary necrosis"
+      },
+      {
+       "key": "d",
+       "text": "Acute interstitial nephritis"
+      },
+      {
+       "key": "e",
+       "text": "Henoch–Schönlein purpura"
+      }
+     ],
+     "answer": [
+      "b"
+     ],
+     "max_answers": 1,
+     "key_text": "b — Renal cell carcinoma",
+     "source_key": "b — Renal cell carcinoma (ไม่มีเฉลยต้นฉบับ AI ร่างให้)",
+     "explanation": "ก้อนสีเหลือง เซลล์ใส (clear cell RCC)"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "OSPE43",
+     "pages": [
+      5
+     ]
+    }
+   ],
+   "tags": [
+    "renal cell carcinoma"
+   ],
+   "source": "claude-mcp",
+   "image": "img/KUB-43-OSPE-012.jpg",
+   "image_caption": "ก้อนที่ไตและ histology"
+  },
+  {
+   "id": "KUB-43-OSPE-022",
+   "block": "KUB",
+   "cohort": 43,
+   "n": 22,
+   "type": "OSPE",
+   "station": 22,
+   "stem": "สถานี 22 — ชายอายุ 60 ปี ปัสสาวะแสบขัด รู้สึกปัสสาวะไม่สุด การตรวจพบดังรูป",
+   "items": [
+    {
+     "id": "22.1",
+     "prompt": "จงบอกลักษณะทางจุลพยาธิวิทยา 2 อย่างที่สนับสนุนการวินิจฉัย (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "glandular hyperplasia",
+      "stromal hyperplasia",
+      "nodular hyperplasia",
+      "corpora amylacea"
+     ],
+     "keywords_all": [
+      "hyperplasia"
+     ],
+     "key_text": "Benign prostatic hyperplasia: glandular + stromal hyperplasia (nodular) · corpora amylacea/ต่อมเรียงตัวเป็นก้อน",
+     "source_key": "Benign prostatic hyperplasia: glandular + stromal hyperplasia (nodular) · corpora amylacea/ต่อมเรียงตัวเป็นก้อน (ไม่มีเฉลยต้นฉบับ AI ร่างให้)",
+     "audit_note": "AI ตีความจากอาการ (BPH) รูปที่ใช้ไม่แน่ใจจึงไม่แนบ"
+    },
+    {
+     "id": "22.2",
+     "prompt": "ระดับ PSA ของผู้ป่วยรายนี้เป็นอย่างไร (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "normal",
+      "mildly elevated",
+      "slightly increased"
+     ],
+     "keywords_all": [
+      "normal"
+     ],
+     "key_text": "ปกติ หรือเพิ่มเล็กน้อย (BPH ไม่ทำให้ PSA สูงมากเหมือนมะเร็ง)",
+     "source_key": "ปกติ หรือเพิ่มเล็กน้อย (BPH ไม่ทำให้ PSA สูงมากเหมือนมะเร็ง) (ไม่มีเฉลยต้นฉบับ AI ร่างให้)"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "OSPE43",
+     "pages": [
+      11
+     ]
+    }
+   ],
+   "tags": [
+    "BPH"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "KUB-43-OSPE-024",
+   "block": "KUB",
+   "cohort": 43,
+   "n": 24,
+   "type": "OSPE",
+   "station": 24,
+   "stem": "สถานี 24 — จงวินิจฉัยจากภาพ (มดลูกผ่าครึ่งมีก้อนกลมใหญ่สีขาว whorled ในชั้นกล้ามเนื้อ)",
+   "items": [
+    {
+     "id": "24.1",
+     "prompt": "จงให้การวินิจฉัย (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "leiomyoma",
+      "uterine fibroid",
+      "fibroids"
+     ],
+     "keywords_all": [
+      "leiomyoma"
+     ],
+     "key_text": "Leiomyoma (uterine fibroid)",
+     "source_key": "Leiomyoma (uterine fibroid) (ไม่มีเฉลยต้นฉบับ AI ร่างให้)"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "OSPE43",
+     "pages": [
+      12
+     ]
+    }
+   ],
+   "tags": [
+    "leiomyoma"
+   ],
+   "source": "claude-mcp",
+   "image": "img/KUB-43-OSPE-024.jpg",
+   "image_caption": "มดลูกผ่าครึ่งมีก้อนกลมขาวขนาดใหญ่"
+  }
+ ]
+}
