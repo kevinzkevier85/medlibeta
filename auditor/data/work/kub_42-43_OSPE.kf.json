@@ -20,7 +20,8 @@
       "RBC cast",
       "red blood cell cast",
       "red cell cast",
-      "cellular cast"
+      "cellular cast",
+      "granular cast"
      ],
      "keywords_all": [
       "cast"
@@ -48,6 +49,69 @@
    "station": 1,
    "image": "img/KUB-43-OSPE-001.jpg",
    "image_caption": "ตะกอนปัสสาวะ (cast)"
+  },
+  {
+   "n": 2,
+   "page": 1,
+   "tags": [
+    "perineum",
+    "CT"
+   ],
+   "case": "สถานี 2 — ภาพ CT แนวขวาง (axial) ระดับฝีเย็บ ระบุโครงสร้าง A–D",
+   "answer_status": "draft",
+   "items": [
+    {
+     "id": "2.1",
+     "prompt": "โครงสร้าง A คืออะไร (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "ischioanal fossa",
+      "ischiorectal fossa"
+     ],
+     "key_text": "Ischioanal (ischiorectal) fossa",
+     "source_key": "Ischioanal (ischiorectal) fossa (ไม่มีเฉลยต้นฉบับ AI ร่างให้)",
+     "audit_note": "AI ระบุจากภาพเอง (ไม่มีเฉลยต้นฉบับ) ผู้ตรวจควรยืนยัน",
+     "image": "img/KUB-43-OSPE-002.jpg",
+     "image_caption": "CT axial ระดับฝีเย็บ (A–D)"
+    },
+    {
+     "id": "2.2",
+     "prompt": "โครงสร้าง B คืออะไร (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "bulb of penis",
+      "corpus spongiosum"
+     ],
+     "key_text": "Bulb of penis (corpus spongiosum)",
+     "source_key": "Bulb of penis (corpus spongiosum) (ไม่มีเฉลยต้นฉบับ AI ร่างให้)",
+     "audit_note": "AI ระบุจากภาพเอง (ไม่มีเฉลยต้นฉบับ) ผู้ตรวจควรยืนยัน"
+    },
+    {
+     "id": "2.3",
+     "prompt": "โครงสร้าง C คืออะไร (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "anal canal",
+      "anus"
+     ],
+     "key_text": "Anal canal",
+     "source_key": "Anal canal (ไม่มีเฉลยต้นฉบับ AI ร่างให้)",
+     "audit_note": "AI ระบุจากภาพเอง (ไม่มีเฉลยต้นฉบับ) ผู้ตรวจควรยืนยัน"
+    },
+    {
+     "id": "2.4",
+     "prompt": "โครงสร้าง D คืออะไร (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "spermatic cord",
+      "corpus cavernosum"
+     ],
+     "key_text": "Spermatic cord",
+     "source_key": "Spermatic cord (ไม่มีเฉลยต้นฉบับ AI ร่างให้)",
+     "audit_note": "AI ระบุจากภาพเอง (ไม่มีเฉลยต้นฉบับ) ผู้ตรวจควรยืนยัน"
+    }
+   ],
+   "station": 2
   },
   {
    "n": 3,
@@ -168,6 +232,20 @@
    "answer_status": "draft",
    "items": [
     {
+     "id": "5.1",
+     "prompt": "ถ้าเก็บปัสสาวะด้วยวิธี MSU จงนับจำนวนเชื้อที่ได้จากการเพาะเลี้ยง (CFU/mL)",
+     "format": "short",
+     "accepted": [
+      "10^4",
+      "10000",
+      "9000",
+      "10,000"
+     ],
+     "key_text": "~9–10 โคโลนี × 1,000 (loop 0.001 mL) ≈ 10⁴ CFU/mL",
+     "source_key": "~9–10 โคโลนี × 1,000 (loop 0.001 mL) ≈ 10⁴ CFU/mL (ไม่มีเฉลยต้นฉบับ AI ร่างให้)",
+     "audit_note": "AI นับโคโลนีจากรูปและสมมุติ calibrated loop 0.001 mL"
+    },
+    {
      "id": "5.2",
      "prompt": "คนไข้ติดเชื้อในทางเดินปัสสาวะหรือไม่ ถ้าติดจะมีโอกาสเป็นเชื้ออะไรได้บ้าง (ตอบภาษาอังกฤษ)",
      "format": "short",
@@ -182,7 +260,7 @@
      ],
      "key_text": "ติดเชื้อ (UTI) — เชื้อที่เป็นไปได้: E. coli, Proteus mirabilis, Klebsiella (โดยเฉพาะ Proteus เมื่อมีการอุดกั้น)",
      "source_key": "ติดเชื้อ (UTI) — เชื้อที่เป็นไปได้: E. coli, Proteus mirabilis, Klebsiella (โดยเฉพาะ Proteus เมื่อมีการอุดกั้น) (ไม่มีเฉลยต้นฉบับ AI ร่างให้)",
-     "audit_note": "ข้อ 5.1 (นับ CFU/mL จากเพลท) ไม่ใส่ เพราะนับโคโลนีจากรูปไม่ได้แม่นยำ"
+     "audit_note": "จำนวนเชื้อ ~10⁴ CFU/mL ร่วมประวัติอุดกั้น ถือว่ามีนัยสำคัญได้"
     }
    ],
    "station": 5,
@@ -266,6 +344,96 @@
     }
    ],
    "station": 7
+  },
+  {
+   "n": 8,
+   "page": 3,
+   "tags": [
+    "testis histology"
+   ],
+   "case": "สถานี 8 — ภาพ histology ของ seminiferous tubule (A ในท่อ, B นอกท่อ)",
+   "answer_status": "draft",
+   "items": [
+    {
+     "id": "8.1",
+     "prompt": "โครงสร้าง A คืออะไร (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "Sertoli cell",
+      "Sertoli"
+     ],
+     "key_text": "Sertoli cell (นิวเคลียสยาวติด basement membrane ยื่นเข้าหา lumen)",
+     "source_key": "Sertoli cell (นิวเคลียสยาวติด basement membrane ยื่นเข้าหา lumen) (ไม่มีเฉลยต้นฉบับ AI ร่างให้)",
+     "audit_note": "AI ระบุจากภาพเอง (ไม่มีเฉลยต้นฉบับ) ผู้ตรวจควรยืนยัน",
+     "image": "img/KUB-43-OSPE-008.jpg",
+     "image_caption": "histology seminiferous tubule (A, B)"
+    },
+    {
+     "id": "8.2",
+     "prompt": "ฮอร์โมนที่สร้างจาก B คืออะไร (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "testosterone"
+     ],
+     "key_text": "Testosterone (B = Leydig cell ใน interstitium)",
+     "source_key": "Testosterone (B = Leydig cell ใน interstitium) (ไม่มีเฉลยต้นฉบับ AI ร่างให้)",
+     "audit_note": "AI ระบุจากภาพเอง (ไม่มีเฉลยต้นฉบับ) ผู้ตรวจควรยืนยัน"
+    }
+   ],
+   "station": 8
+  },
+  {
+   "n": 9,
+   "page": 4,
+   "tags": [
+    "urine appearance"
+   ],
+   "case": "สถานี 9 — ปัสสาวะที่ส่งมาห้องปฏิบัติการ 3 หลอด (หลอด 1 สีส้มขุ่น, หลอด 2 สีน้ำตาลเข้ม, หลอด 3 สีเหลืองใส) แต่ละหลอดบ่งบอกภาวะใด",
+   "answer_status": "draft",
+   "items": [
+    {
+     "id": "9.1",
+     "prompt": "หลอด 1 บ่งบอกภาวะใด (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "pyuria",
+      "UTI",
+      "urinary tract infection"
+     ],
+     "key_text": "ปัสสาวะขุ่น — pyuria/UTI",
+     "source_key": "ปัสสาวะขุ่น — pyuria/UTI (ไม่มีเฉลยต้นฉบับ AI ร่างให้)",
+     "audit_note": "AI ระบุจากภาพเอง (ไม่มีเฉลยต้นฉบับ) ผู้ตรวจควรยืนยัน",
+     "image": "img/KUB-43-OSPE-009.jpg",
+     "image_caption": "ปัสสาวะ 3 หลอด"
+    },
+    {
+     "id": "9.2",
+     "prompt": "หลอด 2 บ่งบอกภาวะใด (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "hematuria",
+      "myoglobinuria",
+      "hemoglobinuria",
+      "bilirubinuria"
+     ],
+     "key_text": "สีน้ำตาลเข้ม (cola) — hematuria/myoglobinuria/bilirubinuria",
+     "source_key": "สีน้ำตาลเข้ม (cola) — hematuria/myoglobinuria/bilirubinuria (ไม่มีเฉลยต้นฉบับ AI ร่างให้)",
+     "audit_note": "AI ระบุจากภาพเอง (ไม่มีเฉลยต้นฉบับ) ผู้ตรวจควรยืนยัน"
+    },
+    {
+     "id": "9.3",
+     "prompt": "หลอด 3 บ่งบอกภาวะใด (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "normal",
+      "normal urine"
+     ],
+     "key_text": "ปัสสาวะปกติ (สีเหลืองใส)",
+     "source_key": "ปัสสาวะปกติ (สีเหลืองใส) (ไม่มีเฉลยต้นฉบับ AI ร่างให้)",
+     "audit_note": "AI ระบุจากภาพเอง (ไม่มีเฉลยต้นฉบับ) ผู้ตรวจควรยืนยัน"
+    }
+   ],
+   "station": 9
   },
   {
    "n": 10,
@@ -394,6 +562,515 @@
    "image_caption": "ก้อนที่ไตและ histology"
   },
   {
+   "n": 13,
+   "page": 6,
+   "tags": [
+    "male pelvis"
+   ],
+   "case": "สถานี 13 — ภาพตัด coronal อุ้งเชิงกรานชาย ระบุหมายเลข 1–4",
+   "answer_status": "draft",
+   "items": [
+    {
+     "id": "13.1",
+     "prompt": "โครงสร้างหมายเลข 1 (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "urinary bladder",
+      "bladder"
+     ],
+     "key_text": "Urinary bladder",
+     "source_key": "Urinary bladder (ไม่มีเฉลยต้นฉบับ AI ร่างให้)",
+     "audit_note": "AI ระบุจากภาพเอง (ไม่มีเฉลยต้นฉบับ) ผู้ตรวจควรยืนยัน",
+     "image": "img/KUB-43-OSPE-013.jpg",
+     "image_caption": "ภาพตัด coronal อุ้งเชิงกรานชาย"
+    },
+    {
+     "id": "13.2",
+     "prompt": "โครงสร้างหมายเลข 2 (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "obturator internus"
+     ],
+     "key_text": "Obturator internus",
+     "source_key": "Obturator internus (ไม่มีเฉลยต้นฉบับ AI ร่างให้)",
+     "audit_note": "AI ระบุจากภาพเอง (ไม่มีเฉลยต้นฉบับ) ผู้ตรวจควรยืนยัน"
+    },
+    {
+     "id": "13.3",
+     "prompt": "โครงสร้างหมายเลข 3 (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "prostate",
+      "prostate gland"
+     ],
+     "key_text": "Prostate gland",
+     "source_key": "Prostate gland (ไม่มีเฉลยต้นฉบับ AI ร่างให้)",
+     "audit_note": "AI ระบุจากภาพเอง (ไม่มีเฉลยต้นฉบับ) ผู้ตรวจควรยืนยัน"
+    },
+    {
+     "id": "13.4",
+     "prompt": "โครงสร้างหมายเลข 4 (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "levator ani"
+     ],
+     "key_text": "Levator ani",
+     "source_key": "Levator ani (ไม่มีเฉลยต้นฉบับ AI ร่างให้)",
+     "audit_note": "AI ระบุจากภาพเอง (ไม่มีเฉลยต้นฉบับ) ผู้ตรวจควรยืนยัน"
+    }
+   ],
+   "station": 13
+  },
+  {
+   "n": 14,
+   "page": 6,
+   "tags": [
+    "female pelvis"
+   ],
+   "case": "สถานี 14 — ภาพ gross อุ้งเชิงกรานหญิงมองจากด้านบน (มดลูกถูกดึงด้วยคีม) ระบุหมายเลข 1–4",
+   "answer_status": "draft",
+   "items": [
+    {
+     "id": "14.1",
+     "prompt": "โครงสร้างหมายเลข 1 (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "round ligament",
+      "round ligament of uterus"
+     ],
+     "key_text": "Round ligament of uterus",
+     "source_key": "Round ligament of uterus (ไม่มีเฉลยต้นฉบับ AI ร่างให้)",
+     "audit_note": "AI ระบุจากภาพเอง (ไม่มีเฉลยต้นฉบับ) ผู้ตรวจควรยืนยัน",
+     "image": "img/KUB-43-OSPE-014.jpg",
+     "image_caption": "อุ้งเชิงกรานหญิงมองจากด้านบน"
+    },
+    {
+     "id": "14.2",
+     "prompt": "โครงสร้างหมายเลข 2 (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "ovary"
+     ],
+     "key_text": "Ovary",
+     "source_key": "Ovary (ไม่มีเฉลยต้นฉบับ AI ร่างให้)",
+     "audit_note": "AI ระบุจากภาพเอง (ไม่มีเฉลยต้นฉบับ) ผู้ตรวจควรยืนยัน"
+    },
+    {
+     "id": "14.3",
+     "prompt": "โครงสร้างหมายเลข 3 (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "uterus",
+      "fundus of uterus"
+     ],
+     "key_text": "Uterus (fundus)",
+     "source_key": "Uterus (fundus) (ไม่มีเฉลยต้นฉบับ AI ร่างให้)",
+     "audit_note": "AI ระบุจากภาพเอง (ไม่มีเฉลยต้นฉบับ) ผู้ตรวจควรยืนยัน"
+    },
+    {
+     "id": "14.4",
+     "prompt": "โครงสร้างหมายเลข 4 (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "uterine tube",
+      "fallopian tube"
+     ],
+     "key_text": "Uterine (fallopian) tube",
+     "source_key": "Uterine (fallopian) tube (ไม่มีเฉลยต้นฉบับ AI ร่างให้)",
+     "audit_note": "AI ระบุจากภาพเอง (ไม่มีเฉลยต้นฉบับ) ผู้ตรวจควรยืนยัน"
+    }
+   ],
+   "station": 14
+  },
+  {
+   "n": 15,
+   "page": 7,
+   "tags": [
+    "urinary cast"
+   ],
+   "case": "สถานี 15 — ภาพตะกอนปัสสาวะ (cast ที่มีเซลล์กลมมี granule)",
+   "answer_status": "draft",
+   "items": [
+    {
+     "id": "15.1",
+     "prompt": "ตะกอนนี้เรียกว่าอะไร (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "WBC cast",
+      "white blood cell cast",
+      "leukocyte cast"
+     ],
+     "key_text": "WBC cast",
+     "source_key": "WBC cast (ไม่มีเฉลยต้นฉบับ AI ร่างให้)",
+     "audit_note": "AI ระบุจากภาพเอง (ไม่มีเฉลยต้นฉบับ) ผู้ตรวจควรยืนยัน",
+     "image": "img/KUB-43-OSPE-015.jpg",
+     "image_caption": "cast ในปัสสาวะ"
+    },
+    {
+     "id": "15.2",
+     "prompt": "ความสำคัญทางคลินิก (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "pyelonephritis",
+      "acute interstitial nephritis",
+      "AIN"
+     ],
+     "key_text": "การอักเสบในเนื้อไต — acute pyelonephritis, acute interstitial nephritis",
+     "source_key": "การอักเสบในเนื้อไต — acute pyelonephritis, acute interstitial nephritis (ไม่มีเฉลยต้นฉบับ AI ร่างให้)",
+     "audit_note": "AI ระบุจากภาพเอง (ไม่มีเฉลยต้นฉบับ) ผู้ตรวจควรยืนยัน"
+    }
+   ],
+   "station": 15
+  },
+  {
+   "n": 16,
+   "page": 7,
+   "tags": [
+    "urinary cast"
+   ],
+   "case": "สถานี 16 — ภาพตะกอนปัสสาวะ (cast สีน้ำตาลแดงเข้ม)",
+   "answer_status": "draft",
+   "items": [
+    {
+     "id": "16.1",
+     "prompt": "ตะกอนนี้เรียกว่าอะไร (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "RBC cast",
+      "red blood cell cast",
+      "hemoglobin cast"
+     ],
+     "key_text": "RBC cast",
+     "source_key": "RBC cast (ไม่มีเฉลยต้นฉบับ AI ร่างให้)",
+     "audit_note": "AI ระบุจากภาพเอง (ไม่มีเฉลยต้นฉบับ) ผู้ตรวจควรยืนยัน",
+     "image": "img/KUB-43-OSPE-016.jpg",
+     "image_caption": "cast สีน้ำตาลแดง"
+    },
+    {
+     "id": "16.2",
+     "prompt": "ความสำคัญทางคลินิก (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "glomerulonephritis",
+      "glomerular bleeding",
+      "nephritic syndrome"
+     ],
+     "key_text": "เลือดออกจาก glomerulus — glomerulonephritis (nephritic)",
+     "source_key": "เลือดออกจาก glomerulus — glomerulonephritis (nephritic) (ไม่มีเฉลยต้นฉบับ AI ร่างให้)",
+     "audit_note": "AI ระบุจากภาพเอง (ไม่มีเฉลยต้นฉบับ) ผู้ตรวจควรยืนยัน"
+    }
+   ],
+   "station": 16
+  },
+  {
+   "n": 17,
+   "page": 8,
+   "tags": [
+    "UTI",
+    "Gram stain"
+   ],
+   "case": "สถานี 17 — ภาพย้อม Gram ตะกอนปัสสาวะ",
+   "answer_status": "draft",
+   "items": [
+    {
+     "id": "17.1",
+     "prompt": "จงบรรยายรูปร่าง การติดสี และเซลล์อื่นที่พบ (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "gram-negative bacilli",
+      "neutrophils",
+      "PMN"
+     ],
+     "keywords_all": [
+      "gram-negative"
+     ],
+     "key_text": "Gram-negative bacilli (สีชมพูแท่ง) ร่วมกับ neutrophils (PMN)",
+     "source_key": "Gram-negative bacilli (สีชมพูแท่ง) ร่วมกับ neutrophils (PMN) (ไม่มีเฉลยต้นฉบับ AI ร่างให้)",
+     "audit_note": "AI ระบุจากภาพเอง (ไม่มีเฉลยต้นฉบับ) ผู้ตรวจควรยืนยัน",
+     "image": "img/KUB-43-OSPE-017.jpg",
+     "image_caption": "Gram stain ตะกอนปัสสาวะ"
+    },
+    {
+     "id": "17.2",
+     "prompt": "ตัวอย่างเชื้อที่พบในปัสสาวะผู้ป่วยรายนี้ (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "Escherichia coli",
+      "E. coli",
+      "Klebsiella",
+      "Proteus"
+     ],
+     "key_text": "Escherichia coli",
+     "source_key": "Escherichia coli (ไม่มีเฉลยต้นฉบับ AI ร่างให้)",
+     "audit_note": "AI ระบุจากภาพเอง (ไม่มีเฉลยต้นฉบับ) ผู้ตรวจควรยืนยัน"
+    },
+    {
+     "id": "17.3",
+     "prompt": "virulence factor ของเชื้อนี้คืออะไร (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "P fimbriae",
+      "fimbriae",
+      "pili",
+      "adhesin"
+     ],
+     "key_text": "P fimbriae (pili/adhesin) ยึดเยื่อบุทางเดินปัสสาวะ",
+     "source_key": "P fimbriae (pili/adhesin) ยึดเยื่อบุทางเดินปัสสาวะ (ไม่มีเฉลยต้นฉบับ AI ร่างให้)",
+     "audit_note": "AI ระบุจากภาพเอง (ไม่มีเฉลยต้นฉบับ) ผู้ตรวจควรยืนยัน"
+    }
+   ],
+   "station": 17
+  },
+  {
+   "n": 18,
+   "page": 9,
+   "tags": [
+    "urine contamination"
+   ],
+   "case": "สถานี 18 — ภาพย้อม Gram ตะกอนปัสสาวะ (เห็นเซลล์เยื่อบุแบนสีชมพูและ cocci สีเข้มจำนวนน้อย)",
+   "answer_status": "draft",
+   "items": [
+    {
+     "id": "18.1",
+     "prompt": "จงบรรยายรูปร่าง การติดสี และเซลล์อื่นที่พบ (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "gram-positive cocci",
+      "squamous epithelial cell"
+     ],
+     "keywords_all": [
+      "gram-positive"
+     ],
+     "key_text": "Gram-positive cocci จำนวนน้อย ร่วมกับ squamous epithelial cell ไม่มี neutrophil",
+     "source_key": "Gram-positive cocci จำนวนน้อย ร่วมกับ squamous epithelial cell ไม่มี neutrophil (ไม่มีเฉลยต้นฉบับ AI ร่างให้)",
+     "audit_note": "AI ระบุจากภาพเอง (ไม่มีเฉลยต้นฉบับ) ผู้ตรวจควรยืนยัน",
+     "image": "img/KUB-43-OSPE-018.jpg",
+     "image_caption": "Gram stain ตะกอนปัสสาวะ"
+    },
+    {
+     "id": "18.2",
+     "prompt": "คิดว่าผู้ป่วยติดเชื้อหรือไม่ เพราะเหตุใด",
+     "format": "short",
+     "accepted": [
+      "no",
+      "contamination",
+      "not infected"
+     ],
+     "keywords_all": [
+      "contamination"
+     ],
+     "key_text": "ไม่น่าติดเชื้อ — เป็น contamination (มี squamous cell จากผิวหนัง/ช่องคลอด เชื้อน้อย ไม่มี WBC)",
+     "source_key": "ไม่น่าติดเชื้อ — เป็น contamination (มี squamous cell จากผิวหนัง/ช่องคลอด เชื้อน้อย ไม่มี WBC) (ไม่มีเฉลยต้นฉบับ AI ร่างให้)",
+     "audit_note": "AI ระบุจากภาพเอง (ไม่มีเฉลยต้นฉบับ) ผู้ตรวจควรยืนยัน"
+    }
+   ],
+   "station": 18
+  },
+  {
+   "n": 19,
+   "page": 9,
+   "tags": [
+    "female pelvis"
+   ],
+   "case": "สถานี 19 — ภาพตัดแนวขวางอุ้งเชิงกรานหญิง ระบุหมายเลข 1–5",
+   "answer_status": "draft",
+   "items": [
+    {
+     "id": "19.1",
+     "prompt": "โครงสร้างหมายเลข 1 (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "obturator internus"
+     ],
+     "key_text": "Obturator internus",
+     "source_key": "Obturator internus (ไม่มีเฉลยต้นฉบับ AI ร่างให้)",
+     "audit_note": "AI ระบุจากภาพเอง (ไม่มีเฉลยต้นฉบับ) ผู้ตรวจควรยืนยัน",
+     "image": "img/KUB-43-OSPE-019.jpg",
+     "image_caption": "ภาพตัดแนวขวางอุ้งเชิงกรานหญิง"
+    },
+    {
+     "id": "19.2",
+     "prompt": "โครงสร้างหมายเลข 2 (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "levator ani"
+     ],
+     "key_text": "Levator ani",
+     "source_key": "Levator ani (ไม่มีเฉลยต้นฉบับ AI ร่างให้)",
+     "audit_note": "AI ระบุจากภาพเอง (ไม่มีเฉลยต้นฉบับ) ผู้ตรวจควรยืนยัน"
+    },
+    {
+     "id": "19.3",
+     "prompt": "โครงสร้างหมายเลข 3 (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "rectum",
+      "anal canal"
+     ],
+     "key_text": "Rectum/anal canal",
+     "source_key": "Rectum/anal canal (ไม่มีเฉลยต้นฉบับ AI ร่างให้)",
+     "audit_note": "AI ระบุจากภาพเอง (ไม่มีเฉลยต้นฉบับ) ผู้ตรวจควรยืนยัน"
+    },
+    {
+     "id": "19.4",
+     "prompt": "โครงสร้างหมายเลข 4 (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "urethra",
+      "bladder neck"
+     ],
+     "key_text": "Urethra",
+     "source_key": "Urethra (ไม่มีเฉลยต้นฉบับ AI ร่างให้)",
+     "audit_note": "AI ระบุจากภาพเอง (ไม่มีเฉลยต้นฉบับ) ผู้ตรวจควรยืนยัน"
+    },
+    {
+     "id": "19.5",
+     "prompt": "โครงสร้างหมายเลข 5 (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "vagina"
+     ],
+     "key_text": "Vagina",
+     "source_key": "Vagina (ไม่มีเฉลยต้นฉบับ AI ร่างให้)",
+     "audit_note": "AI ระบุจากภาพเอง (ไม่มีเฉลยต้นฉบับ) ผู้ตรวจควรยืนยัน"
+    }
+   ],
+   "station": 19
+  },
+  {
+   "n": 20,
+   "page": 10,
+   "tags": [
+    "perineum"
+   ],
+   "case": "สถานี 20 — ภาพ dissection ฝีเย็บชาย ระบุหมายเลข 1–4",
+   "answer_status": "draft",
+   "items": [
+    {
+     "id": "20.1",
+     "prompt": "โครงสร้างหมายเลข 1 (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "bulbospongiosus",
+      "bulb of penis"
+     ],
+     "key_text": "Bulbospongiosus (คลุม bulb of penis)",
+     "source_key": "Bulbospongiosus (คลุม bulb of penis) (ไม่มีเฉลยต้นฉบับ AI ร่างให้)",
+     "audit_note": "AI ระบุจากภาพเอง (ไม่มีเฉลยต้นฉบับ) ผู้ตรวจควรยืนยัน",
+     "image": "img/KUB-43-OSPE-020.jpg",
+     "image_caption": "dissection ฝีเย็บชาย"
+    },
+    {
+     "id": "20.2",
+     "prompt": "โครงสร้างหมายเลข 2 (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "ischioanal fossa",
+      "ischiorectal fossa"
+     ],
+     "key_text": "Ischioanal fossa",
+     "source_key": "Ischioanal fossa (ไม่มีเฉลยต้นฉบับ AI ร่างให้)",
+     "audit_note": "AI ระบุจากภาพเอง (ไม่มีเฉลยต้นฉบับ) ผู้ตรวจควรยืนยัน"
+    },
+    {
+     "id": "20.3",
+     "prompt": "โครงสร้างหมายเลข 3 (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "external anal sphincter",
+      "anal canal"
+     ],
+     "key_text": "External anal sphincter",
+     "source_key": "External anal sphincter (ไม่มีเฉลยต้นฉบับ AI ร่างให้)",
+     "audit_note": "AI ระบุจากภาพเอง (ไม่มีเฉลยต้นฉบับ) ผู้ตรวจควรยืนยัน"
+    },
+    {
+     "id": "20.4",
+     "prompt": "โครงสร้างหมายเลข 4 (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "ischiocavernosus"
+     ],
+     "key_text": "Ischiocavernosus",
+     "source_key": "Ischiocavernosus (ไม่มีเฉลยต้นฉบับ AI ร่างให้)",
+     "audit_note": "AI ระบุจากภาพเอง (ไม่มีเฉลยต้นฉบับ) ผู้ตรวจควรยืนยัน"
+    }
+   ],
+   "station": 20
+  },
+  {
+   "n": 21,
+   "page": 10,
+   "tags": [
+    "female pelvis"
+   ],
+   "case": "สถานี 21 — ภาพตัด sagittal อุ้งเชิงกรานหญิง ระบุหมายเลข 1–5",
+   "answer_status": "draft",
+   "items": [
+    {
+     "id": "21.1",
+     "prompt": "โครงสร้างหมายเลข 1 (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "external iliac vessels",
+      "external iliac artery"
+     ],
+     "key_text": "External iliac vessels",
+     "source_key": "External iliac vessels (ไม่มีเฉลยต้นฉบับ AI ร่างให้)",
+     "audit_note": "AI ระบุจากภาพเอง (ไม่มีเฉลยต้นฉบับ) ผู้ตรวจควรยืนยัน",
+     "image": "img/KUB-43-OSPE-021.jpg",
+     "image_caption": "ภาพตัด sagittal อุ้งเชิงกรานหญิง"
+    },
+    {
+     "id": "21.2",
+     "prompt": "โครงสร้างหมายเลข 2 (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "ovary"
+     ],
+     "key_text": "Ovary",
+     "source_key": "Ovary (ไม่มีเฉลยต้นฉบับ AI ร่างให้)",
+     "audit_note": "AI ระบุจากภาพเอง (ไม่มีเฉลยต้นฉบับ) ผู้ตรวจควรยืนยัน"
+    },
+    {
+     "id": "21.3",
+     "prompt": "โครงสร้างหมายเลข 3 (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "uterus",
+      "body of uterus"
+     ],
+     "key_text": "Uterus",
+     "source_key": "Uterus (ไม่มีเฉลยต้นฉบับ AI ร่างให้)",
+     "audit_note": "AI ระบุจากภาพเอง (ไม่มีเฉลยต้นฉบับ) ผู้ตรวจควรยืนยัน"
+    },
+    {
+     "id": "21.4",
+     "prompt": "โครงสร้างหมายเลข 4 (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "ureter"
+     ],
+     "key_text": "Ureter",
+     "source_key": "Ureter (ไม่มีเฉลยต้นฉบับ AI ร่างให้)",
+     "audit_note": "AI ระบุจากภาพเอง (ไม่มีเฉลยต้นฉบับ) ผู้ตรวจควรยืนยัน"
+    },
+    {
+     "id": "21.5",
+     "prompt": "โครงสร้างหมายเลข 5 (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "rectouterine pouch",
+      "pouch of Douglas"
+     ],
+     "key_text": "Rectouterine pouch",
+     "source_key": "Rectouterine pouch (ไม่มีเฉลยต้นฉบับ AI ร่างให้)",
+     "audit_note": "AI ระบุจากภาพเอง (ไม่มีเฉลยต้นฉบับ) ผู้ตรวจควรยืนยัน"
+    }
+   ],
+   "station": 21
+  },
+  {
    "n": 22,
    "page": 11,
    "tags": [
@@ -438,6 +1115,51 @@
    "station": 22
   },
   {
+   "n": 23,
+   "page": 11,
+   "tags": [
+    "seminoma",
+    "dysgerminoma"
+   ],
+   "case": "สถานี 23 — ภาพ histology 2 ภาพ (A และ B: sheets ของเซลล์ใหญ่ cytoplasm ใส ร่วมกับ lymphocyte)",
+   "answer_status": "draft",
+   "items": [
+    {
+     "id": "23.1",
+     "prompt": "ผู้ป่วยโรคนี้มักอยู่ในช่วงอายุใด",
+     "format": "short",
+     "accepted": [
+      "25-45",
+      "30-40",
+      "young adult",
+      "adult"
+     ],
+     "keywords_all": [
+      "30"
+     ],
+     "key_text": "ผู้ใหญ่วัยหนุ่ม ~25–45 ปี (peak 30s) — seminoma",
+     "source_key": "ผู้ใหญ่วัยหนุ่ม ~25–45 ปี (peak 30s) — seminoma (ไม่มีเฉลยต้นฉบับ AI ร่างให้)",
+     "audit_note": "AI ระบุจากภาพเอง (ไม่มีเฉลยต้นฉบับ) ผู้ตรวจควรยืนยัน",
+     "image": "img/KUB-43-OSPE-023.jpg",
+     "image_caption": "ภาพ A"
+    },
+    {
+     "id": "23.2",
+     "prompt": "ในเพศหญิงโรคที่เทียบเท่ากันคืออะไร (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "dysgerminoma"
+     ],
+     "key_text": "Dysgerminoma",
+     "source_key": "Dysgerminoma (ไม่มีเฉลยต้นฉบับ AI ร่างให้)",
+     "audit_note": "AI ระบุจากภาพเอง (ไม่มีเฉลยต้นฉบับ) ผู้ตรวจควรยืนยัน",
+     "image": "img/KUB-43-OSPE-023b.jpg",
+     "image_caption": "ภาพ B"
+    }
+   ],
+   "station": 23
+  },
+  {
    "n": 24,
    "page": 12,
    "tags": [
@@ -465,6 +1187,330 @@
    "station": 24,
    "image": "img/KUB-43-OSPE-024.jpg",
    "image_caption": "มดลูกผ่าครึ่งมีก้อนกลมขาวขนาดใหญ่"
+  },
+  {
+   "n": 25,
+   "page": 12,
+   "tags": [
+    "kidney anatomy"
+   ],
+   "case": "สถานี 25 — ภาพไตตัดผ่าน (หมายเลข 1–3) และ histology (หมายเลข 4–5)",
+   "answer_status": "draft",
+   "items": [
+    {
+     "id": "25.1",
+     "prompt": "โครงสร้างหมายเลข 1 (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "renal pyramid",
+      "medulla"
+     ],
+     "key_text": "Renal pyramid (medulla)",
+     "source_key": "Renal pyramid (medulla) (ไม่มีเฉลยต้นฉบับ AI ร่างให้)",
+     "audit_note": "AI ระบุจากภาพเอง (ไม่มีเฉลยต้นฉบับ) ผู้ตรวจควรยืนยัน",
+     "image": "img/KUB-43-OSPE-025.jpg",
+     "image_caption": "ไตตัดผ่าน (1–3)"
+    },
+    {
+     "id": "25.2",
+     "prompt": "โครงสร้างหมายเลข 2 (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "renal column",
+      "renal cortex"
+     ],
+     "key_text": "Renal column",
+     "source_key": "Renal column (ไม่มีเฉลยต้นฉบับ AI ร่างให้)",
+     "audit_note": "AI ระบุจากภาพเอง (ไม่มีเฉลยต้นฉบับ) ผู้ตรวจควรยืนยัน"
+    },
+    {
+     "id": "25.3",
+     "prompt": "โครงสร้างหมายเลข 3 (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "minor calyx",
+      "renal pelvis",
+      "major calyx"
+     ],
+     "key_text": "Minor calyx",
+     "source_key": "Minor calyx (ไม่มีเฉลยต้นฉบับ AI ร่างให้)",
+     "audit_note": "AI ระบุจากภาพเอง (ไม่มีเฉลยต้นฉบับ) ผู้ตรวจควรยืนยัน"
+    },
+    {
+     "id": "25.4",
+     "prompt": "โครงสร้างหมายเลข 4 (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "juxtaglomerular cell",
+      "JG cell"
+     ],
+     "key_text": "Juxtaglomerular (JG) cell",
+     "source_key": "Juxtaglomerular (JG) cell (ไม่มีเฉลยต้นฉบับ AI ร่างให้)",
+     "audit_note": "AI ระบุจากภาพเอง (ไม่มีเฉลยต้นฉบับ) ผู้ตรวจควรยืนยัน",
+     "image": "img/KUB-43-OSPE-025b.jpg",
+     "image_caption": "histology (4, 5)"
+    },
+    {
+     "id": "25.5",
+     "prompt": "โครงสร้างหมายเลข 5 (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "macula densa"
+     ],
+     "key_text": "Macula densa",
+     "source_key": "Macula densa (ไม่มีเฉลยต้นฉบับ AI ร่างให้)",
+     "audit_note": "AI ระบุจากภาพเอง (ไม่มีเฉลยต้นฉบับ) ผู้ตรวจควรยืนยัน"
+    }
+   ],
+   "station": 25
+  },
+  {
+   "n": 26,
+   "page": 13,
+   "tags": [
+    "kidney histology"
+   ],
+   "case": "สถานี 26 — แผนภาพไตและ nephron (หมายเลข 1–3) และภาพ electron microscope ของ glomerulus (หมายเลข 4–5)",
+   "answer_status": "draft",
+   "items": [
+    {
+     "id": "26.1",
+     "prompt": "โครงสร้างหมายเลข 1 (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "renal cortex",
+      "cortex"
+     ],
+     "key_text": "Renal cortex",
+     "source_key": "Renal cortex (ไม่มีเฉลยต้นฉบับ AI ร่างให้)",
+     "audit_note": "AI ระบุจากภาพเอง (ไม่มีเฉลยต้นฉบับ) ผู้ตรวจควรยืนยัน",
+     "image": "img/KUB-43-OSPE-026.jpg",
+     "image_caption": "แผนภาพไตและ nephron"
+    },
+    {
+     "id": "26.2",
+     "prompt": "โครงสร้างหมายเลข 2 (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "ureter"
+     ],
+     "key_text": "Ureter",
+     "source_key": "Ureter (ไม่มีเฉลยต้นฉบับ AI ร่างให้)",
+     "audit_note": "AI ระบุจากภาพเอง (ไม่มีเฉลยต้นฉบับ) ผู้ตรวจควรยืนยัน"
+    },
+    {
+     "id": "26.3",
+     "prompt": "โครงสร้างหมายเลข 3 (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "collecting duct"
+     ],
+     "key_text": "Collecting duct",
+     "source_key": "Collecting duct (ไม่มีเฉลยต้นฉบับ AI ร่างให้)",
+     "audit_note": "AI ระบุจากภาพเอง (ไม่มีเฉลยต้นฉบับ) ผู้ตรวจควรยืนยัน"
+    },
+    {
+     "id": "26.4",
+     "prompt": "โครงสร้างหมายเลข 4 (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "podocyte foot process",
+      "foot process",
+      "podocyte"
+     ],
+     "key_text": "Podocyte foot processes",
+     "source_key": "Podocyte foot processes (ไม่มีเฉลยต้นฉบับ AI ร่างให้)",
+     "audit_note": "AI ระบุจากภาพเอง (ไม่มีเฉลยต้นฉบับ) ผู้ตรวจควรยืนยัน",
+     "image": "img/KUB-43-OSPE-026b.jpg",
+     "image_caption": "EM ของ glomerulus"
+    },
+    {
+     "id": "26.5",
+     "prompt": "โครงสร้างหมายเลข 5 (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "glomerular basement membrane",
+      "GBM",
+      "capillary lumen"
+     ],
+     "key_text": "Glomerular basement membrane",
+     "source_key": "Glomerular basement membrane (ไม่มีเฉลยต้นฉบับ AI ร่างให้)",
+     "audit_note": "AI ระบุจากภาพเอง (ไม่มีเฉลยต้นฉบับ) ผู้ตรวจควรยืนยัน"
+    }
+   ],
+   "station": 26
+  },
+  {
+   "n": 27,
+   "page": 13,
+   "tags": [
+    "testis histology",
+    "prostate"
+   ],
+   "case": "สถานี 27 — ภาพ histology ของอัณฑะ (หมายเลข 1–3), ท่อ (หมายเลข 4) และต่อม (หมายเลข 5)",
+   "answer_status": "draft",
+   "items": [
+    {
+     "id": "27.1",
+     "prompt": "โครงสร้างหมายเลข 1 (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "Leydig cell",
+      "interstitial cell"
+     ],
+     "key_text": "Leydig (interstitial) cells",
+     "source_key": "Leydig (interstitial) cells (ไม่มีเฉลยต้นฉบับ AI ร่างให้)",
+     "audit_note": "AI ระบุจากภาพเอง (ไม่มีเฉลยต้นฉบับ) ผู้ตรวจควรยืนยัน",
+     "image": "img/KUB-43-OSPE-027.jpg",
+     "image_caption": "histology อัณฑะ (1–3)"
+    },
+    {
+     "id": "27.2",
+     "prompt": "โครงสร้างหมายเลข 2 (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "spermatogonium",
+      "spermatogonia",
+      "Sertoli cell"
+     ],
+     "key_text": "Spermatogonium",
+     "source_key": "Spermatogonium (ไม่มีเฉลยต้นฉบับ AI ร่างให้)",
+     "audit_note": "AI ระบุจากภาพเอง (ไม่มีเฉลยต้นฉบับ) ผู้ตรวจควรยืนยัน"
+    },
+    {
+     "id": "27.3",
+     "prompt": "โครงสร้างหมายเลข 3 (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "primary spermatocyte"
+     ],
+     "key_text": "Primary spermatocyte",
+     "source_key": "Primary spermatocyte (ไม่มีเฉลยต้นฉบับ AI ร่างให้)",
+     "audit_note": "AI ระบุจากภาพเอง (ไม่มีเฉลยต้นฉบับ) ผู้ตรวจควรยืนยัน"
+    },
+    {
+     "id": "27.4",
+     "prompt": "โครงสร้างหมายเลข 4 (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "epididymis",
+      "duct of epididymis"
+     ],
+     "key_text": "Duct of epididymis (pseudostratified columnar with stereocilia)",
+     "source_key": "Duct of epididymis (pseudostratified columnar with stereocilia) (ไม่มีเฉลยต้นฉบับ AI ร่างให้)",
+     "audit_note": "AI ระบุจากภาพเอง (ไม่มีเฉลยต้นฉบับ) ผู้ตรวจควรยืนยัน",
+     "image": "img/KUB-43-OSPE-027b.jpg",
+     "image_caption": "ท่อ (หมายเลข 4)"
+    },
+    {
+     "id": "27.5",
+     "prompt": "โครงสร้างหมายเลข 5 (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "corpora amylacea",
+      "prostatic concretion"
+     ],
+     "key_text": "Prostatic concretion (corpora amylacea)",
+     "source_key": "Prostatic concretion (corpora amylacea) (ไม่มีเฉลยต้นฉบับ AI ร่างให้)",
+     "audit_note": "AI ระบุจากภาพเอง (ไม่มีเฉลยต้นฉบับ) ผู้ตรวจควรยืนยัน",
+     "image": "img/KUB-43-OSPE-027c.jpg",
+     "image_caption": "ต่อม (หมายเลข 5)"
+    }
+   ],
+   "station": 27
+  },
+  {
+   "n": 28,
+   "page": 14,
+   "tags": [
+    "ovary",
+    "endometrium"
+   ],
+   "case": "สถานี 28 — เติมคำจากภาพ: Fig.1 เยื่อบุโพรงมดลูก, Fig.2 follicle ในรังไข่ (วงกลมและลูกศร), Fig.3 รังไข่",
+   "answer_status": "draft",
+   "items": [
+    {
+     "id": "28.1",
+     "prompt": "Fig.1 เป็น phase ใด และควบคุมโดยฮอร์โมนใด (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "proliferative phase estrogen",
+      "proliferative"
+     ],
+     "keywords_all": [
+      "proliferative"
+     ],
+     "key_text": "Proliferative phase — ควบคุมโดย estrogen",
+     "source_key": "Proliferative phase — ควบคุมโดย estrogen (ไม่มีเฉลยต้นฉบับ AI ร่างให้)",
+     "audit_note": "AI ระบุจากภาพเอง (ไม่มีเฉลยต้นฉบับ) ผู้ตรวจควรยืนยัน",
+     "image": "img/KUB-43-OSPE-028.jpg",
+     "image_caption": "Fig.1 และ Fig.2"
+    },
+    {
+     "id": "28.2",
+     "prompt": "Fig.2 เซลล์ในวงกลมเรียกว่าอะไร (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "primary oocyte",
+      "oocyte",
+      "secondary follicle"
+     ],
+     "key_text": "Primary oocyte (ใน secondary follicle)",
+     "source_key": "Primary oocyte (ใน secondary follicle) (ไม่มีเฉลยต้นฉบับ AI ร่างให้)",
+     "audit_note": "AI ระบุจากภาพเอง (ไม่มีเฉลยต้นฉบับ) ผู้ตรวจควรยืนยัน"
+    },
+    {
+     "id": "28.3",
+     "prompt": "Fig.2 โครงสร้างที่ลูกศรชี้คืออะไร (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "zona pellucida"
+     ],
+     "key_text": "Zona pellucida",
+     "source_key": "Zona pellucida (ไม่มีเฉลยต้นฉบับ AI ร่างให้)",
+     "audit_note": "AI ระบุจากภาพเอง (ไม่มีเฉลยต้นฉบับ) ผู้ตรวจควรยืนยัน"
+    },
+    {
+     "id": "28.4",
+     "prompt": "Fig.3 คืออะไร (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "corpus albicans"
+     ],
+     "key_text": "Corpus albicans",
+     "source_key": "Corpus albicans (ไม่มีเฉลยต้นฉบับ AI ร่างให้)",
+     "audit_note": "AI ระบุจากภาพเอง (ไม่มีเฉลยต้นฉบับ) ผู้ตรวจควรยืนยัน",
+     "image": "img/KUB-43-OSPE-028b.jpg",
+     "image_caption": "Fig.3"
+    }
+   ],
+   "station": 28
+  },
+  {
+   "n": 29,
+   "page": 14,
+   "tags": [
+    "hydatidiform mole"
+   ],
+   "case": "สถานี 29 — ภาพ histology (โครงสร้างคล้าย villi บวมน้ำ ล้อมด้วยเซลล์สีน้ำเงิน) จงให้การวินิจฉัย",
+   "answer_status": "draft",
+   "items": [
+    {
+     "id": "29.1",
+     "prompt": "จงให้การวินิจฉัย (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "hydatidiform mole",
+      "molar pregnancy"
+     ],
+     "key_text": "Hydatidiform mole",
+     "source_key": "Hydatidiform mole (ไม่มีเฉลยต้นฉบับ AI ร่างให้)",
+     "audit_note": "AI ระบุจากภาพเอง (ไม่มีเฉลยต้นฉบับ) ผู้ตรวจควรยืนยัน",
+     "image": "img/KUB-43-OSPE-029.jpg",
+     "image_caption": "histology"
+    }
+   ],
+   "station": 29
   }
  ]
 }
