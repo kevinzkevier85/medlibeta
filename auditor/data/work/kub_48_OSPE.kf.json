@@ -1,0 +1,333 @@
+{
+ "set_id": "kub_48_OSPE",
+ "note": "OSPE KUB and Repro Med PSU 48 · ไฟล์ข้อสอบเป็นภาพสแกน 8 สถานี (1, 3, 6, 7, 12, 13, 14, 22) · เฉลยลายมือสีแดงในไฟล์ key (อ่านจากรูปทุกหน้า) · โจทย์/คำถามแปลเป็นภาษาไทย ตอบเป็นภาษาอังกฤษ",
+ "time_limit_min": null,
+ "questions": [
+  {
+   "n": 1,
+   "page": 1,
+   "tags": [
+    "renal histology"
+   ],
+   "case": "สถานี 1 — ภาพ histology ของไต (วงกลมสีแดงล้อมโครงสร้าง ลูกศรสีแดงชี้ท่อไต)",
+   "answer_status": "verified",
+   "items": [
+    {
+     "id": "1.1",
+     "prompt": "อวัยวะ/โครงสร้างในวงกลมคืออะไร (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "renal corpuscle",
+      "glomerulus",
+      "Malpighian corpuscle"
+     ],
+     "keywords_all": [
+      "renal corpuscle"
+     ],
+     "key_text": "Renal corpuscle",
+     "source_key": "เฉลยลายมือ: Renal corpuscle",
+     "image": "img/KUB-48-OSPE-001.jpg",
+     "image_caption": "histology ไต (วงกลมแดง และลูกศรแดง)"
+    },
+    {
+     "id": "1.2",
+     "prompt": "บริเวณที่ลูกศรสีแดงชี้คืออะไร (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "distal convoluted tubule",
+      "DCT"
+     ],
+     "keywords_all": [
+      "distal"
+     ],
+     "key_text": "Distal convoluted tubule",
+     "source_key": "เฉลยลายมือ: Distal convoluted tubule"
+    }
+   ],
+   "station": 1
+  },
+  {
+   "n": 3,
+   "page": 1,
+   "tags": [
+    "testis histology"
+   ],
+   "case": "สถานี 3 — ภาพ histology ของอัณฑะ (ลูกศรสีน้ำเงินชี้บริเวณที่มีเซลล์สร้างอสุจิ)",
+   "answer_status": "verified",
+   "items": [
+    {
+     "id": "3.1",
+     "prompt": "บริเวณที่ลูกศรชี้คือ organ อะไร (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "seminiferous tubule",
+      "seminiferous tubules"
+     ],
+     "keywords_all": [
+      "seminiferous"
+     ],
+     "key_text": "Seminiferous tubule",
+     "source_key": "เฉลยลายมือ: Seminiferous tubule",
+     "image": "img/KUB-48-OSPE-003.jpg",
+     "image_caption": "histology อัณฑะ"
+    }
+   ],
+   "station": 3
+  },
+  {
+   "n": 6,
+   "page": 2,
+   "tags": [
+    "ADPKD",
+    "berry aneurysm"
+   ],
+   "case": "สถานี 6 — ภาพ gross ของไตทั้งสองข้าง มีถุงน้ำจำนวนมาก",
+   "answer_status": "verified",
+   "items": [
+    {
+     "id": "6.1",
+     "prompt": "จาก gross pathology ที่ให้ จงวินิจฉัยโรค (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "ADPKD",
+      "autosomal dominant polycystic kidney disease",
+      "polycystic kidney disease"
+     ],
+     "keywords_all": [
+      "ADPKD"
+     ],
+     "key_text": "ADPKD (autosomal dominant polycystic kidney disease)",
+     "source_key": "เฉลยลายมือ: ADPKD",
+     "image": "img/KUB-48-OSPE-006.jpg",
+     "image_caption": "ไตทั้งสองข้างมีถุงน้ำจำนวนมาก"
+    },
+    {
+     "id": "6.2",
+     "prompt": "มี complication อะไรที่สมอง (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "berry aneurysm",
+      "saccular aneurysm"
+     ],
+     "keywords_all": [
+      "aneurysm"
+     ],
+     "key_text": "Berry aneurysm",
+     "source_key": "เฉลยลายมือ: Berry aneurysm"
+    }
+   ],
+   "station": 6
+  },
+  {
+   "n": 7,
+   "page": 2,
+   "tags": [
+    "urine appearance"
+   ],
+   "case": "สถานี 7 — ภาพปัสสาวะ 3 หลอด (หลอดที่ 1–3)",
+   "answer_status": "verified",
+   "items": [
+    {
+     "id": "7.1",
+     "prompt": "หลอด 1 จากลักษณะทางกายภาพน่าจะเป็นโรค/ภาวะอะไร และตรวจอะไรได้ positive ใน strip test (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "pyuria",
+      "leukocyte esterase",
+      "leukocyte esterase positive"
+     ],
+     "keywords_all": [
+      "pyuria"
+     ],
+     "key_text": "Pyuria — leukocyte esterase positive",
+     "source_key": "เฉลยลายมือ: Pyuria, Leukocyte esterase +ive",
+     "image": "img/KUB-48-OSPE-007.jpg",
+     "image_caption": "ปัสสาวะ 3 หลอด (หลอดที่ 1, 2, 3 จากซ้ายไปขวา)"
+    },
+    {
+     "id": "7.2",
+     "prompt": "หลอด 2 จากลักษณะทางกายภาพน่าจะเป็นโรค/ภาวะอะไร (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "hematuria",
+      "gross hematuria"
+     ],
+     "keywords_all": [
+      "hematuria"
+     ],
+     "key_text": "Hematuria",
+     "source_key": "เฉลยลายมือ: Hematuria"
+    },
+    {
+     "id": "7.3",
+     "prompt": "หลอด 3 (สีน้ำตาลเข้ม) น่าจะเป็นภาวะอะไร (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "bilirubinuria",
+      "bilirubin"
+     ],
+     "keywords_all": [
+      "bilirubinuria"
+     ],
+     "key_text": "Bilirubinuria",
+     "source_key": "เฉลยลายมือ: Bilirubinuria (เขียนข้างหลอดที่ 3)",
+     "audit_note": "ลายมือ \"Bilirubinuria\" เขียนอยู่ข้างหลอดที่ 3 ถือเป็นเฉลยของหลอดที่ 3"
+    }
+   ],
+   "station": 7
+  },
+  {
+   "n": 12,
+   "page": 3,
+   "tags": [
+    "penis anatomy"
+   ],
+   "case": "สถานี 12 — ภาพ dissection อวัยวะเพศชาย (ลูกศรสีแดงชี้ส่วนปลายองคชาต ลูกศรสีน้ำเงินชี้กล้ามเนื้อ)",
+   "answer_status": "verified",
+   "items": [
+    {
+     "id": "12.1",
+     "prompt": "บริเวณที่ลูกศรสีแดงชี้คืออะไร (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "glans penis"
+     ],
+     "keywords_all": [
+      "glans"
+     ],
+     "key_text": "Glans penis",
+     "source_key": "เฉลยลายมือ: glans penis",
+     "image": "img/KUB-48-OSPE-012.jpg",
+     "image_caption": "dissection อวัยวะเพศชาย"
+    },
+    {
+     "id": "12.2",
+     "prompt": "กล้ามเนื้อที่ลูกศรสีน้ำเงินชี้คืออะไร (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "bulbospongiosus",
+      "bulbospongiosus muscle"
+     ],
+     "keywords_all": [
+      "bulbospongiosus"
+     ],
+     "key_text": "Bulbospongiosus",
+     "source_key": "เฉลยลายมือ: Bulbosp… (Bulbospongiosus)",
+     "audit_note": "ลายมือเขียนไม่จบ \"Bulbosp\" อ่านเป็น bulbospongiosus"
+    }
+   ],
+   "station": 12
+  },
+  {
+   "n": 13,
+   "page": 3,
+   "tags": [
+    "pelvis anatomy"
+   ],
+   "case": "สถานี 13 — ภาพ sagittal ของอุ้งเชิงกราน (โครงสร้าง A และ B)",
+   "answer_status": "verified",
+   "items": [
+    {
+     "id": "13.1",
+     "prompt": "จงระบุโครงสร้าง A (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "bladder",
+      "urinary bladder"
+     ],
+     "keywords_all": [
+      "bladder"
+     ],
+     "key_text": "Bladder",
+     "source_key": "เฉลยลายมือ: Bladder",
+     "image": "img/KUB-48-OSPE-013.jpg",
+     "image_caption": "ภาพตัด sagittal อุ้งเชิงกราน"
+    },
+    {
+     "id": "13.2",
+     "prompt": "จงระบุโครงสร้าง B (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "urethra"
+     ],
+     "keywords_all": [
+      "urethra"
+     ],
+     "key_text": "Urethra",
+     "source_key": "เฉลยลายมือ: urethra"
+    }
+   ],
+   "station": 13
+  },
+  {
+   "n": 14,
+   "page": 4,
+   "tags": [
+    "male genital anatomy"
+   ],
+   "case": "สถานี 14 — ภาพตัดตามยาวของอวัยวะเพศชายและอุ้งเชิงกราน (ลูกศรสีแดงและโครงสร้าง B)",
+   "answer_status": "verified",
+   "items": [
+    {
+     "id": "14.1",
+     "prompt": "ลูกศรสีแดงชี้อะไร (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "penile urethra",
+      "spongy urethra"
+     ],
+     "keywords_all": [
+      "penile urethra"
+     ],
+     "key_text": "Penile urethra",
+     "source_key": "เฉลยลายมือ: penile urethra",
+     "image": "img/KUB-48-OSPE-014.jpg",
+     "image_caption": "ภาพตัดตามยาวอวัยวะเพศชาย"
+    },
+    {
+     "id": "14.2",
+     "prompt": "จงระบุโครงสร้าง B (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "prostate gland",
+      "prostate"
+     ],
+     "keywords_all": [
+      "prostate"
+     ],
+     "key_text": "Prostate gland",
+     "source_key": "เฉลยลายมือ: Prostate gland"
+    }
+   ],
+   "station": 14
+  },
+  {
+   "n": 22,
+   "page": 5,
+   "tags": [
+    "hydatidiform mole"
+   ],
+   "case": "สถานี 22 — ภาพ histology (villi บวมน้ำขนาดใหญ่ในเนื้อเยื่อ)",
+   "answer_status": "verified",
+   "items": [
+    {
+     "id": "22.1",
+     "prompt": "จาก histology ที่ให้มา จงวินิจฉัย (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "hydatidiform mole",
+      "molar pregnancy"
+     ],
+     "keywords_all": [
+      "mole"
+     ],
+     "key_text": "Hydatidiform mole",
+     "source_key": "เฉลยลายมือ: Hydatidiform mole",
+     "image": "img/KUB-48-OSPE-022.jpg",
+     "image_caption": "histology villi บวมน้ำ"
+    }
+   ],
+   "station": 22
+  }
+ ]
+}
