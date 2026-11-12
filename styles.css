@@ -587,3 +587,20 @@ figure img.zoom { touch-action: none; transform-origin: center; }
 .lecplan td.lpbtn { white-space: nowrap; text-align: right; }
 .lecplan td.lpbtn .btn + .btn { margin-left: 4px; }
 .lecplan td:nth-child(2) { text-align: center; }
+
+/* phone: A−/A+ อยู่ในหน้าตั้งค่าแล้ว ซ่อนบนจอแคบเพื่อไม่ให้แถบบนล้นจอ */
+@media (max-width: 480px) {
+  .fsbtn { display: none; }
+  .bar { gap: 8px; padding-left: 10px; padding-right: 10px; }
+  .bar > * { min-width: 0; }
+}
+@media (max-width: 400px) {
+  .mode { padding: 3px 8px; font-size: .8rem; }
+  .ibtn { width: 28px; height: 28px; }
+  .bar { gap: 6px; padding-left: 8px; padding-right: 8px; }
+  .search { padding: 5px 8px; }
+}
+@media (max-width: 340px) {
+  .mode { padding: 3px 6px; }
+  .ibtn { width: 26px; }
+}

@@ -1,0 +1,1073 @@
+{
+ "meta": {
+  "set_id": "49_KF",
+  "block": "KUB",
+  "cohort": 49,
+  "type": "KF",
+  "title": "KF KUB and Repro · Med PSU 49",
+  "time_limit_min": 180,
+  "generated_by": "auditor/tools/build_kf.py from auditor/data/work/kub_49_KF.kf.json — do not edit by hand"
+ },
+ "questions": [
+  {
+   "id": "KUB-49-KF-001",
+   "block": "KUB",
+   "cohort": 49,
+   "n": 1,
+   "type": "KF",
+   "case": "ชายอายุ 23 ปี ขาบวม 3 สัปดาห์ PE: puffy eyelid, shifting dullness, pretibial edema. Urinalysis: protein 4+. จาก microscopic examination พบโครงสร้างดังภาพ (โจทย์ไม่สมบูรณ์)",
+   "items": [
+    {
+     "id": "1.1",
+     "prompt": "จากรูปภาพดังกล่าวคือภาพอะไร",
+     "format": "short",
+     "accepted": [
+      "oval fat body",
+      "oval fat bodies"
+     ],
+     "keywords_all": [
+      "oval fat"
+     ],
+     "key_text": "Oval fat body",
+     "source_key": "เฉลยลายมือ: Oval fat body",
+     "image": "img/KUB-49-KF-001.jpg",
+     "image_caption": "ภาพ microscopic ปัสสาวะ (ลูกศรชี้)"
+    },
+    {
+     "id": "1.2",
+     "prompt": "จากรูปภาพดังกล่าวจงระบุชนิดของ cast",
+     "format": "short",
+     "accepted": [
+      "granular cast"
+     ],
+     "keywords_all": [
+      "granular"
+     ],
+     "key_text": "Granular cast",
+     "source_key": "เฉลยลายมือ: Granular cast",
+     "image": "img/KUB-49-KF-001b.jpg",
+     "image_caption": "ภาพ cast ในปัสสาวะ"
+    },
+    {
+     "id": "1.3",
+     "prompt": "จงบอกโรคที่เป็นไปได้ในผู้ป่วยรายนี้ทั้งหมด 3 โรค",
+     "format": "short",
+     "accepted": [
+      "nephrotic syndrome",
+      "chronic renal failure",
+      "nephritic syndrome"
+     ],
+     "keywords_all": [
+      "nephrotic"
+     ],
+     "key_text": "Nephrotic syndrome · chronic renal failure · nephritic syndrome",
+     "source_key": "เฉลยลายมือ: 1. Nephrotic syndrome 2. Chronic renal failure 3. Nephritic syndrome"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF49",
+     "pages": [
+      1
+     ]
+    },
+    {
+     "paper": "KF49-KEY",
+     "pages": [
+      1
+     ]
+    }
+   ],
+   "tags": [
+    "nephrotic syndrome",
+    "urinalysis"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "oval fat body + granular cast + protein 4+ → nephrotic"
+  },
+  {
+   "id": "KUB-49-KF-002",
+   "block": "KUB",
+   "cohort": 49,
+   "n": 2,
+   "type": "KF",
+   "case": "อีกข้อหนึ่งเป็นอาการคนไข้เหมือนกัน แต่พบสิ่งผิดปกติใน UA ดังภาพ (โจทย์ไม่สมบูรณ์)",
+   "items": [
+    {
+     "id": "2.1",
+     "prompt": "จากรูปภาพดังกล่าวคือภาพอะไร",
+     "format": "short",
+     "accepted": [
+      "RBC cast",
+      "red cell cast"
+     ],
+     "keywords_all": [
+      "RBC cast"
+     ],
+     "key_text": "RBC cast",
+     "source_key": "เฉลยลายมือ: RBC cast",
+     "image": "img/KUB-49-KF-002.jpg",
+     "image_caption": "ภาพ cast ในปัสสาวะ"
+    },
+    {
+     "id": "2.2",
+     "prompt": "จากรูปภาพดังกล่าวคืออะไร",
+     "format": "short",
+     "accepted": [
+      "dysmorphic RBC",
+      "dysmorphic red blood cell"
+     ],
+     "keywords_all": [
+      "dysmorphic"
+     ],
+     "key_text": "Dysmorphic RBC",
+     "source_key": "เฉลยลายมือ: Dysmorphic RBC",
+     "image": "img/KUB-49-KF-002b.jpg",
+     "image_caption": "ภาพ RBC ในปัสสาวะ (ลูกศรชี้)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF49",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "KF49-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [
+    "urinalysis",
+    "nephritic syndrome"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "RBC cast + dysmorphic RBC = โรค glomerulus (nephritic)"
+  },
+  {
+   "id": "KUB-49-KF-003",
+   "block": "KUB",
+   "cohort": 49,
+   "n": 3,
+   "type": "KF",
+   "case": "เด็กหญิงมีไข้ ปวดเอวมา 3 วัน (ข้อสอบจริงมีค่า UA ละเอียด) Gram stain พบ Gram positive cocci (โจทย์ไม่สมบูรณ์)",
+   "items": [
+    {
+     "id": "3.1",
+     "prompt": "จงให้การวินิจฉัยโรคในผู้ป่วยรายนี้",
+     "format": "short",
+     "accepted": [
+      "acute pyelonephritis"
+     ],
+     "keywords_all": [
+      "pyelonephritis"
+     ],
+     "key_text": "Acute pyelonephritis",
+     "source_key": "เฉลยลายมือ: Acute pyelonephritis"
+    },
+    {
+     "id": "3.2",
+     "prompt": "สามารถส่งตรวจเพิ่มเติมเพื่อยืนยันการวินิจฉัยด้วยวิธีการใดได้บ้าง",
+     "format": "short",
+     "accepted": [
+      "ultrasound KUB",
+      "urine culture",
+      "ultrasound"
+     ],
+     "keywords_all": [
+      "ultrasound"
+     ],
+     "key_text": "Ultrasound KUB",
+     "source_key": "เฉลยลายมือ: Ultrasound for KUB"
+    },
+    {
+     "id": "3.3",
+     "prompt": "จงระบุยารักษาเฉพาะมา 2 ชนิด",
+     "format": "short",
+     "accepted": [
+      "ceftriaxone",
+      "ampicillin"
+     ],
+     "keywords_all": [
+      "ceftriaxone"
+     ],
+     "key_text": "Ceftriaxone · ampicillin",
+     "source_key": "เฉลยลายมือ: a) Ceftriaxone b) Ampicilline",
+     "audit_note": "Gram-positive cocci ในโจทย์ (โจทย์ไม่สมบูรณ์) เฉลยเลือก ceftriaxone/ampicillin ตามที่ผู้เฉลยเขียน"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF49",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "KF49-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [
+    "pyelonephritis"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "acute pyelonephritis: ไข้ + ปวดเอว → ceftriaxone"
+  },
+  {
+   "id": "KUB-49-KF-004",
+   "block": "KUB",
+   "cohort": 49,
+   "n": 4,
+   "type": "KF",
+   "case": "ผู้ป่วยเด็กปัสสาวะบ่อย 1 ปี กินเก่ง ดื่มน้ำมาก น้ำหนักน้อยกว่าเพื่อนวัยเดียวกัน พัฒนาการปกติ (ต้นฉบับจำค่าอื่นไม่ได้ ผู้จดบอกว่าเป็น renal tubular acidosis). UA: ปกติหมด. BUN 8, Cr 0.2.",
+   "items": [
+    {
+     "id": "4.1",
+     "prompt": "จากโจทย์พบความผิดปกติใดบ้าง 4 ข้อ",
+     "format": "short",
+     "accepted": [
+      "alkaline urine",
+      "normal anion gap",
+      "metabolic acidosis",
+      "hypokalemia"
+     ],
+     "keywords_all": [
+      "acidosis"
+     ],
+     "key_text": "(1) ปัสสาวะเป็นด่าง (alkaline urine) (2) ค่า ion อื่นๆ ผิดปกติ เช่น Na⁺ ต่ำ/K⁺ ผิดปกติ (3) anion gap ปกติ (normal AG) (4) metabolic acidosis",
+     "source_key": "เฉลยลายมือ: a) alkaline/acidic urine b) ค่า ion อื่นๆ Hyper/Hypo Na⁺, K⁺ c) normal/wide anion gap d) metabolic alkalosis/acidosis",
+     "audit_note": "ต้นฉบับจำค่า lab ไม่ได้ ผู้เฉลยเขียนตัวเลือกหมวดผิดปกติ 4 ข้อแบบขีดเลือก"
+    },
+    {
+     "id": "4.2",
+     "prompt": "ผู้ป่วยดังกล่าวมีความผิดปกติในการควบคุมสมดุลกรดด่างอย่างไร",
+     "format": "short",
+     "accepted": [
+      "proximal RTA",
+      "distal RTA",
+      "bicarbonate reclamation",
+      "distal acidification"
+     ],
+     "keywords_all": [
+      "RTA"
+     ],
+     "key_text": "Proximal RTA: reabsorb HCO₃⁻ ได้น้อย (defect in bicarb reclamation) ตรวจพบ urine pH < 5.5, urine anion gap negative, FE HCO₃⁻ > 10–15% · Distal RTA: หลั่ง H⁺ ลดลง (defect in distal acidification) urine pH > 5.5, urine anion gap positive, FE HCO₃⁻ < 5%",
+     "source_key": "เฉลยลายมือ: Proximal RTA: reabsorb HCO₃⁻ ลดลง (defect in bicarb reclamation) → urine pH < 5.5, urine anion gap negative, FEHCO₃ > 10–15% · Distal RTA: หลั่ง H⁺ ลดลง (defect in distal acidification) → urine pH > 5.5, urine anion gap positive, FEHCO₃ < 5%"
+    },
+    {
+     "id": "4.3",
+     "prompt": "จงให้การรักษา 2 ข้อ",
+     "format": "short",
+     "accepted": [
+      "bicarbonate",
+      "citrate",
+      "stone inhibitor"
+     ],
+     "keywords_all": [
+      "bicarbonate"
+     ],
+     "key_text": "Proximal RTA: ให้ bicarbonate · Distal RTA: ให้ bicarbonate + stone inhibitor (citrate)",
+     "source_key": "เฉลยลายมือ: a) Proximal RTA: ให้ bicarb b) Distal RTA: ให้ bicarb + stone inhibitor (citrate)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF49",
+     "pages": [
+      3
+     ]
+    },
+    {
+     "paper": "KF49-KEY",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [
+    "RTA"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "RTA: proximal (HCO₃⁻ reclamation) vs distal (H⁺ secretion)"
+  },
+  {
+   "id": "KUB-49-KF-005",
+   "block": "KUB",
+   "cohort": 49,
+   "n": 5,
+   "type": "KF",
+   "case": "ผู้ป่วยชายไทยปวดบริเวณอัณฑะ 4 ชั่วโมงหลังวิ่งขึ้น-ลงบันได โดยมีอัณฑะลักษณะดังภาพ",
+   "items": [
+    {
+     "id": "5.1",
+     "prompt": "จงให้การวินิจฉัยโรคที่เป็นไปได้มากที่สุด",
+     "format": "short",
+     "accepted": [
+      "acute testicular torsion",
+      "testicular torsion"
+     ],
+     "keywords_all": [
+      "torsion"
+     ],
+     "key_text": "Acute testicular torsion",
+     "source_key": "เฉลยลายมือ: Acute testicular torsion",
+     "image": "img/KUB-49-KF-005.jpg",
+     "image_caption": "ภาพองคชาตและถุงอัณฑะ (ข้างซ้ายสูงกว่า)"
+    },
+    {
+     "id": "5.2",
+     "prompt": "จงบอกวิธีการตรวจวินิจฉัยเพิ่มเติมเพื่อสนับสนุนการวินิจฉัยโรค 2 วิธี",
+     "format": "short",
+     "accepted": [
+      "cremasteric reflex",
+      "Prehn sign"
+     ],
+     "keywords_all": [
+      "cremasteric"
+     ],
+     "key_text": "Cremasteric reflex (หาย) · Prehn sign (ยกอัณฑะแล้วไม่ดีขึ้น)",
+     "source_key": "เฉลยลายมือ: a) Cremasteric reflex b) Prehn sign"
+    },
+    {
+     "id": "5.3",
+     "prompt": "จงให้การรักษาผู้ป่วยดังกล่าว",
+     "format": "short",
+     "accepted": [
+      "bilateral orchidopexy",
+      "orchidopexy"
+     ],
+     "keywords_all": [
+      "orchidopexy"
+     ],
+     "key_text": "Bilateral orchidopexy (ผ่าตัดแก้บิด + ยึดอัณฑะทั้งสองข้าง)",
+     "source_key": "เฉลยลายมือ: Bilateral orchidopexy"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF49",
+     "pages": [
+      4
+     ]
+    },
+    {
+     "paper": "KF49-KEY",
+     "pages": [
+      4
+     ]
+    }
+   ],
+   "tags": [
+    "testicular torsion"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "testicular torsion: cremasteric reflex หาย; ผ่าตัด orchidopexy ทั้งสองข้าง"
+  },
+  {
+   "id": "KUB-49-KF-006",
+   "block": "KUB",
+   "cohort": 49,
+   "n": 6,
+   "type": "KF",
+   "case": "ผู้ป่วยพบความผิดปกติของอวัยวะเพศดังภาพ (ภาพ a, ภาพ b)",
+   "items": [
+    {
+     "id": "6.1",
+     "prompt": "จงระบุชนิดของพยาธิสภาพดังกล่าว (ภาพ a)",
+     "format": "short",
+     "accepted": [
+      "glandular hypospadias"
+     ],
+     "keywords_all": [
+      "glandular"
+     ],
+     "key_text": "Glandular hypospadias",
+     "source_key": "เฉลยลายมือ: Glandular hypospadias",
+     "image": "img/KUB-49-KF-006.jpg",
+     "image_caption": "ภาพ a"
+    },
+    {
+     "id": "6.1b",
+     "prompt": "จงระบุชนิดของพยาธิสภาพดังกล่าว (ภาพ b)",
+     "format": "short",
+     "accepted": [
+      "scrotal hypospadias"
+     ],
+     "keywords_all": [
+      "scrotal"
+     ],
+     "key_text": "Scrotal hypospadias",
+     "source_key": "เฉลยลายมือ: Scrotal hypospadias",
+     "image": "img/KUB-49-KF-006b.jpg",
+     "image_caption": "ภาพ b"
+    },
+    {
+     "id": "6.2",
+     "prompt": "จากภาพเกิดความผิดปกติของโครงสร้างใดและเกิดขึ้นได้อย่างไร",
+     "format": "short",
+     "accepted": [
+      "urogenital groove",
+      "urethral groove",
+      "urethral fold"
+     ],
+     "keywords_all": [
+      "urogenital groove"
+     ],
+     "key_text": "Urogenital (urethral) groove ปิดไม่สนิท",
+     "source_key": "เฉลยลายมือ: Urogenital groove ปิดไม่สนิท"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF49",
+     "pages": [
+      4
+     ]
+    },
+    {
+     "paper": "KF49-KEY",
+     "pages": [
+      4
+     ]
+    }
+   ],
+   "tags": [
+    "hypospadias"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "hypospadias: glandular → scrotal ตามตำแหน่งรูเปิด; urogenital groove ปิดไม่สนิท"
+  },
+  {
+   "id": "KUB-49-KF-007",
+   "block": "KUB",
+   "cohort": 49,
+   "n": 7,
+   "type": "KF",
+   "case": "ผู้ป่วยเด็กเพศชาย 2 คน (เด็กชาย A และเด็กชาย B) มีความผิดปกติบริเวณอวัยวะเพศดังภาพ (ผู้เฉลยตอบ: A = indirect hernia, B = hydrocele)",
+   "items": [
+    {
+     "id": "7.1",
+     "prompt": "ระหว่างเด็กชาย A และ B เคสใดจะ positive ต่อ transillumination test",
+     "format": "short",
+     "accepted": [
+      "B",
+      "case B"
+     ],
+     "keywords_all": [
+      "B"
+     ],
+     "key_text": "B (hydrocele)",
+     "source_key": "เฉลยลายมือ: B",
+     "image": "img/KUB-49-KF-007.jpg",
+     "image_caption": "เด็กชาย A"
+    },
+    {
+     "id": "7.2",
+     "prompt": "ระหว่างเด็กชาย A และ B เคสใดสามารถทำให้เกิด intestinal obstruction ได้",
+     "format": "short",
+     "accepted": [
+      "A",
+      "case A"
+     ],
+     "keywords_all": [
+      "A"
+     ],
+     "key_text": "A (indirect hernia — ลำไส้ติดค้าง)",
+     "source_key": "เฉลยลายมือ: A",
+     "image": "img/KUB-49-KF-007b.jpg",
+     "image_caption": "เด็กชาย B"
+    },
+    {
+     "id": "7.3",
+     "prompt": "ระหว่างเด็กชาย A และ B เคสใดเกิดจาก processus vaginalis ที่ปิดไม่สนิท",
+     "format": "short",
+     "accepted": [
+      "A",
+      "case A"
+     ],
+     "keywords_all": [
+      "A"
+     ],
+     "key_text": "A (indirect hernia)",
+     "source_key": "เฉลยลายมือ: A",
+     "audit_note": "ในความเป็นจริง hydrocele (แบบ communicating) ก็เกิดจาก patent processus vaginalis ได้ ตามเฉลยเลือก A"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF49",
+     "pages": [
+      5
+     ]
+    },
+    {
+     "paper": "KF49-KEY",
+     "pages": [
+      5
+     ]
+    }
+   ],
+   "tags": [
+    "hernia",
+    "hydrocele"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "indirect hernia vs hydrocele: transillumination ใช้แยก"
+  },
+  {
+   "id": "KUB-49-KF-008",
+   "block": "KUB",
+   "cohort": 49,
+   "n": 8,
+   "type": "KF",
+   "case": "จากการทำหัตถการ penile nerve block ให้นักศึกษาตอบคำถามต่อไปนี้",
+   "items": [
+    {
+     "id": "8.1",
+     "prompt": "Medication",
+     "format": "short",
+     "accepted": [
+      "lidocaine without epinephrine",
+      "lidocaine no epinephrine"
+     ],
+     "keywords_all": [
+      "lidocaine"
+     ],
+     "key_text": "Lidocaine (ไม่ผสม epinephrine)",
+     "source_key": "เฉลยลายมือ: Lidocaine no epinephrine"
+    },
+    {
+     "id": "8.2",
+     "prompt": "Position of injection",
+     "format": "short",
+     "accepted": [
+      "dorsal penile nerve",
+      "2 and 10 o'clock"
+     ],
+     "keywords_all": [
+      "dorsal"
+     ],
+     "key_text": "Dorsal penile nerve ที่ตำแหน่ง 2 นาฬิกา และ 10 นาฬิกา",
+     "source_key": "เฉลยลายมือ: dorsal penile nerve ที่ 2 และ 10 นาฬิกา"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF49",
+     "pages": [
+      5
+     ]
+    },
+    {
+     "paper": "KF49-KEY",
+     "pages": [
+      5
+     ]
+    }
+   ],
+   "tags": [
+    "penile nerve block"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "penile block: lidocaine ไม่มี epinephrine ที่ 2 และ 10 นาฬิกา",
+   "audit_note": "ข้อ 8.3 (ขั้นตอน urine catheterization) ผู้เฉลยเขียนแค่ \"ไปดูใน lec\" จึงตัดออก"
+  },
+  {
+   "id": "KUB-49-KF-009",
+   "block": "KUB",
+   "cohort": 49,
+   "n": 9,
+   "type": "KF",
+   "case": "เด็กชาย A อายุ 2 ขวบ 1 เดือน ปัสสาวะลำบากเป็นเวลา 1 วัน ปัสสาวะไม่ออกเมื่อเบ่งแล้วก็ยังไม่ออก ปวดท้องน้อยร่วมด้วย (โจทย์ไม่สมบูรณ์)",
+   "items": [
+    {
+     "id": "9.1",
+     "prompt": "ในการสร้างปัสสาวะจนถึงการขับปัสสาวะออกจากร่างกาย ต้องผ่านโครงสร้างใดบ้างตามลำดับ 4 โครงสร้าง",
+     "format": "short",
+     "accepted": [
+      "kidney ureter urinary bladder urethra"
+     ],
+     "keywords_all": [
+      "kidney",
+      "ureter",
+      "bladder",
+      "urethra"
+     ],
+     "key_text": "Kidney → ureter → urinary bladder → urethra",
+     "source_key": "เฉลยลายมือ: a) kidney b) ureter c) urinary bladder d) urethra"
+    },
+    {
+     "id": "9.2",
+     "prompt": "ปัสสาวะลำบากเกิดจากสาเหตุอะไรได้บ้าง 2 สาเหตุ",
+     "format": "short",
+     "accepted": [
+      "obstruction of urethra",
+      "infection urethral swelling"
+     ],
+     "keywords_all": [
+      "obstruction"
+     ],
+     "key_text": "Obstruction ที่ urethra · infection ที่ทำให้ urethra บวม",
+     "source_key": "เฉลยลายมือ: a) Obstruction ที่ urethra b) Infection ที่ทำให้ urethra บวม"
+    },
+    {
+     "id": "9.3",
+     "prompt": "จากภาพจงให้การวินิจฉัยและอธิบายลักษณะพยาธิสภาพจากการตรวจร่างกาย",
+     "format": "short",
+     "accepted": [
+      "phimosis"
+     ],
+     "keywords_all": [
+      "phimosis"
+     ],
+     "key_text": "Phimosis — prepuce หุ้ม glans ไม่สามารถรูดลงได้",
+     "source_key": "เฉลยลายมือ: Phimosis — prepuce หุ้มทั้ง glans ไม่สามารถรูดลงได้",
+     "image": "img/KUB-49-KF-009.jpg",
+     "image_caption": "ภาพองคชาต (ปลาย prepuce หุ้มแน่น)"
+    },
+    {
+     "id": "9.4",
+     "prompt": "จงระบุวิธีการรักษาอาการในข้อ 9.3 ตามลำดับ",
+     "format": "short",
+     "accepted": [
+      "circumcision"
+     ],
+     "keywords_all": [
+      "circumcision"
+     ],
+     "key_text": "Circumcision",
+     "source_key": "เฉลยลายมือ: Circumcision"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF49",
+     "pages": [
+      6
+     ]
+    },
+    {
+     "paper": "KF49-KEY",
+     "pages": [
+      6
+     ]
+    }
+   ],
+   "tags": [
+    "phimosis",
+    "urinary retention"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "phimosis → ปัสสาวะลำบาก; circumcision"
+  },
+  {
+   "id": "KUB-49-KF-010",
+   "block": "KUB",
+   "cohort": 49,
+   "n": 10,
+   "type": "KF",
+   "case": "ชายไทยอายุ 65 ปี ปัสสาวะไม่พุ่ง 1 ปี ตอนนี้ปัสสาวะไม่ออกและปวดท้องน้อย 1 ชั่วโมง มีผล ultrasound ดังรูป (ต่อมลูกหมากโต) จงให้การวินิจฉัยและการตรวจร่างกายสนับสนุนการวินิจฉัย",
+   "items": [
+    {
+     "id": "10.1",
+     "prompt": "ปัสสาวะไม่พุ่ง: โรค/ภาวะ",
+     "format": "short",
+     "accepted": [
+      "BPH",
+      "benign prostatic hyperplasia"
+     ],
+     "keywords_all": [
+      "benign prostatic hyperplasia"
+     ],
+     "key_text": "Benign prostatic hyperplasia (BPH)",
+     "source_key": "เฉลยลายมือ: Benign prostate hyperplasia",
+     "image": "img/KUB-49-KF-010.jpg",
+     "image_caption": "Ultrasound ต่อมลูกหมากโต"
+    },
+    {
+     "id": "10.2",
+     "prompt": "ปัสสาวะไม่พุ่ง: การตรวจเพื่อสนับสนุน",
+     "format": "short",
+     "accepted": [
+      "DRE",
+      "digital rectal examination",
+      "biopsy"
+     ],
+     "keywords_all": [
+      "DRE"
+     ],
+     "key_text": "DRE (digital rectal examination) · biopsy",
+     "source_key": "เฉลยลายมือ: DRE, biopsy ?",
+     "audit_note": "ผู้เฉลยใส่เครื่องหมาย ? เพราะ biopsy ไม่ใช่การตรวจแรกของ BPH"
+    },
+    {
+     "id": "10.3",
+     "prompt": "ปัสสาวะไม่ออกและปวดท้องน้อย: โรค/ภาวะ",
+     "format": "short",
+     "accepted": [
+      "acute urinary retention",
+      "urinary retention"
+     ],
+     "keywords_all": [
+      "urinary retention"
+     ],
+     "key_text": "Urinary retention",
+     "source_key": "เฉลยลายมือ: urinary retention"
+    },
+    {
+     "id": "10.4",
+     "prompt": "ปัสสาวะไม่ออกและปวดท้องน้อย: การตรวจเพื่อสนับสนุน",
+     "format": "short",
+     "accepted": [
+      "suprapubic palpation",
+      "percussion",
+      "catheterization",
+      "urinary catheter"
+     ],
+     "keywords_all": [
+      "catheter"
+     ],
+     "key_text": "ตรวจร่างกาย (คลำ/เคาะ bladder เหนือหัวเหน่า) · ใส่ catheter ระบายปัสสาวะ",
+     "source_key": "เฉลยลายมือ: ตรวจร่างกาย, ใส่ cath ?",
+     "audit_note": "ผู้เฉลยใส่เครื่องหมาย ?"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "KF49",
+     "pages": [
+      7
+     ]
+    },
+    {
+     "paper": "KF49-KEY",
+     "pages": [
+      7
+     ]
+    }
+   ],
+   "tags": [
+    "BPH",
+    "urinary retention"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "BPH → LUTS/retention: DRE, ใส่ catheter"
+  },
+  {
+   "id": "KUB-49-KF-011",
+   "block": "KUB",
+   "cohort": 49,
+   "n": 11,
+   "type": "KF",
+   "case": "ผู้ป่วยหญิงไทยอายุ 45 ปี พบก้อนบริเวณช่องท้องเมื่อ 6 เดือนก่อนและปัสสาวะบ่อยกว่าเดิมประมาณ 10 เท่า, ประจำเดือนปกติ รอบ 30 วัน ใช้ผ้าอนามัย 3 แผ่น/วัน. Abdomen: middle pelvic mass 2/3 above pubic symphysis, moved. Uterus: enlarged lobulated mass 14 cm, firm consistency. (ภาพ gross มดลูกที่มีก้อนกลมสีขาวหลายก้อน)",
+   "items": [
+    {
+     "id": "11.1",
+     "prompt": "จงให้การวินิจฉัยโรคดังกล่าว",
+     "format": "short",
+     "accepted": [
+      "leiomyoma",
+      "uterine fibroid"
+     ],
+     "keywords_all": [
+      "leiomyoma"
+     ],
+     "key_text": "Leiomyoma",
+     "source_key": "เฉลยลายมือ: Leiomyoma",
+     "image": "img/KUB-49-KF-011.jpg",
+     "image_caption": "มดลูกผ่าครึ่งที่มีก้อนกลมสีขาวหลายก้อน"
+    },
+    {
+     "id": "11.2",
+     "prompt": "อาการของโรคดังกล่าว",
+     "format": "short",
+     "accepted": [
+      "heavy menstrual bleeding",
+      "menorrhagia"
+     ],
+     "keywords_all": [
+      "menstrual bleeding"
+     ],
+     "key_text": "Heavy menstrual bleeding (และกดเบียดกระเพาะปัสสาวะ → ปัสสาวะบ่อย)",
+     "source_key": "เฉลยลายมือ: Heavy menstrual bleeding"
+    },
+    {
+     "id": "11.3",
+     "prompt": "What is origin of tumor",
+     "format": "short",
+     "accepted": [
+      "smooth muscle cell",
+      "smooth muscle"
+     ],
+     "keywords_all": [
+      "smooth muscle"
+     ],
+     "key_text": "Smooth muscle cell (myometrium)",
+     "source_key": "เฉลยลายมือ: Smooth muscle cell"
+    },
+    {
+     "id": "11.4",
+     "prompt": "เนื้องอกชนิดนี้เป็น benign หรือ malignant",
+     "format": "short",
+     "accepted": [
+      "benign"
+     ],
+     "keywords_all": [
+      "benign"
+     ],
+     "key_text": "Benign",
+     "source_key": "เฉลยลายมือ: Benign"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF49",
+     "pages": [
+      8
+     ]
+    },
+    {
+     "paper": "KF49-KEY",
+     "pages": [
+      8
+     ]
+    }
+   ],
+   "tags": [
+    "leiomyoma"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "leiomyoma: smooth muscle, benign, heavy bleeding"
+  },
+  {
+   "id": "KUB-49-KF-012",
+   "block": "KUB",
+   "cohort": 49,
+   "n": 12,
+   "type": "KF",
+   "case": "A 40-year-old woman presented with left lower quadrant abdominal pain for 2 hours without fever or abnormal bleeding. (ภาพ gross ถุงที่มีผมและก้อนสีขาว)",
+   "items": [
+    {
+     "id": "12.1",
+     "prompt": "What is the affected organ?",
+     "format": "short",
+     "accepted": [
+      "left ovary",
+      "ovary"
+     ],
+     "keywords_all": [
+      "ovary"
+     ],
+     "key_text": "Left ovary",
+     "source_key": "เฉลยลายมือ: Left ovary",
+     "image": "img/KUB-49-KF-012.jpg",
+     "image_caption": "ภาพ gross รังไข่"
+    },
+    {
+     "id": "12.2",
+     "prompt": "Based on clinical symptoms, what is the provisional diagnosis?",
+     "format": "short",
+     "accepted": [
+      "ovarian tumor",
+      "ovarian mass",
+      "ovarian torsion"
+     ],
+     "keywords_all": [
+      "ovarian"
+     ],
+     "key_text": "Ovarian tumor",
+     "source_key": "เฉลยลายมือ: Ovarian tumor"
+    },
+    {
+     "id": "12.3",
+     "prompt": "From gross specimen, what is the most likely diagnosis?",
+     "format": "short",
+     "accepted": [
+      "mature teratoma",
+      "mature cystic teratoma"
+     ],
+     "keywords_all": [
+      "teratoma"
+     ],
+     "key_text": "Mature teratoma",
+     "source_key": "เฉลยลายมือ: Mature teratoma"
+    },
+    {
+     "id": "12.4",
+     "prompt": "Describe histopathology",
+     "format": "short",
+     "accepted": [
+      "mature cells from 3 germ layers",
+      "mature cell in ovary"
+     ],
+     "keywords_all": [
+      "mature"
+     ],
+     "key_text": "เนื้อเยื่อ/เซลล์ที่เจริญเต็มที่ (mature cells) ใน ovary (3 germ layers)",
+     "source_key": "เฉลยลายมือ: mature cell in ovary"
+    },
+    {
+     "id": "12.5",
+     "prompt": "Benign or malignant",
+     "format": "short",
+     "accepted": [
+      "benign"
+     ],
+     "keywords_all": [
+      "benign"
+     ],
+     "key_text": "Benign",
+     "source_key": "เฉลยลายมือ: Benign"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF49",
+     "pages": [
+      9
+     ]
+    },
+    {
+     "paper": "KF49-KEY",
+     "pages": [
+      9
+     ]
+    }
+   ],
+   "tags": [
+    "teratoma"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "mature teratoma: benign, 3 germ layers"
+  },
+  {
+   "id": "KUB-49-KF-013",
+   "block": "KUB",
+   "cohort": 49,
+   "n": 13,
+   "type": "KF",
+   "case": "30-years old woman. CC: abnormal vaginal bleeding with left pelvic pain, colicky pain, nausea sometimes. Previous history: tubal pregnancy treated with medication 2 years ago, no oral contraceptives (?), treated at an obstetric clinic 3 years ago. LMP 6 weeks ago. Cervix: os closed with excitation pain. Ultrasonography: extrauterine gestational sac at left adnexa 3 × 4 cm with small fetal pole and fetal cardiac activity, empty uterine cavity, normal both ovaries, minimal free fluid. Urine pregnancy positive. Serum β-hCG 7,000 mIU/mL (normal < 1).",
+   "items": [
+    {
+     "id": "13.1",
+     "prompt": "Diagnosis",
+     "format": "short",
+     "accepted": [
+      "ectopic pregnancy",
+      "tubal pregnancy"
+     ],
+     "keywords_all": [
+      "ectopic"
+     ],
+     "key_text": "Ectopic pregnancy",
+     "source_key": "เฉลยลายมือ: Ectopic pregnancy"
+    },
+    {
+     "id": "13.2",
+     "prompt": "Risk factors of this patient",
+     "format": "short",
+     "accepted": [
+      "previous ectopic pregnancy",
+      "infection",
+      "PID"
+     ],
+     "keywords_all": [
+      "ectopic"
+     ],
+     "key_text": "เคยมี ectopic pregnancy มาก่อน · การติดเชื้อ (infection/PID)",
+     "source_key": "เฉลยลายมือ: เคย ectopic pregnancy มาก่อน, infection ?",
+     "audit_note": "ผู้เฉลยใส่เครื่องหมาย ? หลัง infection"
+    },
+    {
+     "id": "13.3",
+     "prompt": "Pathophysiology",
+     "format": "short",
+     "accepted": [
+      "tubal fibrosis",
+      "tube obstruction",
+      "zygote"
+     ],
+     "keywords_all": [
+      "fibrosis"
+     ],
+     "key_text": "Uterine tube ตีบจาก fibrosis → zygote เคลื่อนผ่านลง uterus ไม่ได้ → ฝังตัวใน tube → ทำให้เกิดอาการต่างๆ",
+     "source_key": "เฉลยลายมือ: Uterine tube ตีบจาก fibrosis → zygote เคลื่อนผ่านไม่ได้ → ฝังตัวใน tube → อาการต่างๆ",
+     "mechanism": [
+      "เคยตั้งครรภ์นอกมดลูก/ติดเชื้อ",
+      "tube อักเสบ → fibrosis ตีบ",
+      "zygote ผ่านลง uterus ไม่ได้",
+      "ฝังตัวใน tube → ปวด/เลือดออก"
+     ]
+    },
+    {
+     "id": "13.4",
+     "prompt": "Cell ใดที่ผลิต β-hCG",
+     "format": "short",
+     "accepted": [
+      "syncytiotrophoblast",
+      "syncytiotrophoblastic cells"
+     ],
+     "keywords_all": [
+      "syncytiotrophoblast"
+     ],
+     "key_text": "Syncytiotrophoblast",
+     "source_key": "ผู้เฉลยแนบคำอธิบาย: hCG is produced primarily by syncytiotrophoblastic cells of the placenta"
+    },
+    {
+     "id": "13.5",
+     "prompt": "What is doubling time of β-hCG in first trimester?",
+     "format": "short",
+     "accepted": [
+      "48 hours",
+      "48-72 hours",
+      "2 days"
+     ],
+     "keywords_all": [
+      "48"
+     ],
+     "key_text": "ประมาณ 48–72 ชั่วโมง (ผู้เฉลยตอบ \"?\")",
+     "source_key": "เฉลยลายมือ: ?",
+     "audit_note": "ผู้เฉลยไม่เฉลย ค่าอ้างอิง: ประมาณ 1.4–2.1 วัน (48–72 ชม.) ใน first trimester AI ร่างให้"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF49",
+     "pages": [
+      10
+     ]
+    },
+    {
+     "paper": "KF49-KEY",
+     "pages": [
+      10
+     ]
+    }
+   ],
+   "tags": [
+    "ectopic pregnancy"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "ectopic: hCG สูง ไม่มี sac ใน uterus; risk: ectopic เดิม, PID"
+  }
+ ]
+}
