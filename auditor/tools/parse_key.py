@@ -97,7 +97,7 @@ def parse(set_id, bare_numbers=False):
             m = Q_START.match(txt) or (bare_numbers and re.fullmatch(r"\s*(\d{1,3})\s*", txt))
             if m and int(m.group(1)) == 1 and out and all(not v["score"] for v in out.values()) and rect.x0 < 100:
                 out.clear(); expect = 1  # numbered instructions on the cover page looked like questions 1..n
-            if m and expect <= int(m.group(1)) <= expect + 2 and rect.x0 < 100:
+            if m and expect <= int(m.group(1)) <= expect + 15 and rect.x0 < 100:
                 cur = m.group(1)
                 expect = int(cur) + 1
                 out[cur] = {"answers": [], "score": {}, "note": "", "page": pno}
