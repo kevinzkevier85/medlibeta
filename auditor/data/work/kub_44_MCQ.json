@@ -19,9 +19,26 @@
     "E": "Activation of granulosa cell into theca cell"
    },
    "correct": "B",
-   "explanation": "Decrease estrogen product — aromatase เปลี่ยน androgen (androstenedione/testosterone) → estrogen ถ้ายับยั้ง estrogen จะลดลง\nTrap: androgen จะ 'เพิ่ม' ไม่ใช่ลด เพราะไม่ถูกเปลี่ยนต่อ",
+   "explanation": "Aromatase เปลี่ยน androgen → estrogen ถ้ายับยั้ง estrogen ลดลง (androgen สะสมเพิ่ม)",
    "image": null,
    "issues": [],
+   "option_why": {
+    "A": "ตกไข่เป็นผลทางอ้อมที่ใช้ทางคลินิก (letrozole) แต่ผลตรงคือ estrogen ลด",
+    "B": "✓ estrogen ลดลง",
+    "C": "androgen เพิ่ม ไม่ลด",
+    "D": "ไม่กระตุ้น corpus luteum",
+    "E": "granulosa ไม่เปลี่ยนเป็น theca"
+   },
+   "key_concept": "• aromatase (CYP19): granulosa, ไขมัน, สมอง\n• letrozole/anastrozole: breast cancer, ovulation induction\n• ADR: กระดูกบาง",
+   "mechanism": [
+    "ยับยั้ง aromatase",
+    {
+     "s": "androgen → estrogen ไม่ได้",
+     "answer": true
+    },
+    "estrogen ลด",
+    "negative feedback ลด → FSH ↑"
+   ],
    "audit": {
     "source_file": "preclinic/2/urinary/mcq/ข้อสอบ mcq/MCQ_KUB and Repro [Med PSU 44].pdf",
     "page": 1,
@@ -60,9 +77,17 @@
     "E": "Principal cell of prostate gland"
    },
    "correct": "A",
-   "explanation": "Sertoli cell — สร้าง androgen-binding protein (ABP), inhibin B และ AMH ช่วยคง testosterone สูงใน seminiferous tubule\nTrap: Leydig cell สร้าง testosterone ไม่ใช่ ABP",
+   "explanation": "Sertoli cell สร้าง ABP คง testosterone สูงใน seminiferous tubule",
    "image": null,
    "issues": [],
+   "option_why": {
+    "A": "✓ Sertoli cell",
+    "B": "Leydig สร้าง testosterone",
+    "C": "primary spermatocyte ไม่สร้าง",
+    "D": "spermatid ไม่สร้าง",
+    "E": "principal cell ของต่อมลูกหมากไม่สร้าง"
+   },
+   "key_concept": "• Sertoli: ABP, inhibin B, AMH, BTB\n• FSH → Sertoli\n• LH → Leydig",
    "audit": {
     "source_file": "preclinic/2/urinary/mcq/ข้อสอบ mcq/MCQ_KUB and Repro [Med PSU 44].pdf",
     "page": 1,
@@ -101,12 +126,20 @@
     "E": "Somatic motor activation of external urethral sphincter"
    },
    "correct": "A",
-   "explanation": "Pudendal nerve activation — ตอบตาม AI (ต้นฉบับไม่มีไฮไลต์): ระหว่างปัสสาวะ parasympathetic (pelvic n.) ทำให้ detrusor หด ส่วน pudendal ถูกยับยั้งให้ external sphincter คลาย\nTrap: ตัวเลือกนี้ถามแบบกำกวม ตัวเลือก B/C/D เป็นสิ่งที่เกิดตอน 'เก็บ' ปัสสาวะ",
+   "explanation": "เฉลยในระบบคือ pudendal nerve activation (ต้นฉบับไม่มีไฮไลต์ AI เลือก) แต่ระหว่างปัสสาวะจริง pudendal ถูกยับยั้ง ⚠ ข้อนี้กำกวม",
    "image": null,
    "issues": [
     "ช้อยส์ E AI เติมให้ครบ 5 ตัว",
     "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
    ],
+   "option_why": {
+    "A": "✓ ตามเฉลยในระบบ (ผู้ตรวจควรทบทวน: ปกติ pudendal ถูกยับยั้งขณะปัสสาวะ)",
+    "B": "α1 ที่ internal sphincter หดตัว = เก็บปัสสาวะ",
+    "C": "β3 ที่ detrusor คลาย = เก็บปัสสาวะ",
+    "D": "cholinergic ถูกกระตุ้น ไม่ใช่ยับยั้ง",
+    "E": "external sphincter ต้องคลาย"
+   },
+   "key_concept": "• voiding: parasympathetic (pelvic) ↑, sympathetic ↓, pudendal ↓\n• storage: ตรงกันข้าม\n• ข้อนี้ต้นฉบับไม่มีเฉลย",
    "audit": {
     "source_file": "preclinic/2/urinary/mcq/ข้อสอบ mcq/MCQ_KUB and Repro [Med PSU 44].pdf",
     "page": 1,
@@ -147,9 +180,17 @@
     "E": "Conjugated estrogen with medroxyprogesterone acetate 311-281 Urinary and Reproductive System"
    },
    "correct": "A",
-   "explanation": "Raloxifene — SERM ที่เป็น agonist ที่กระดูก (ลดการสลายกระดูก) แต่ antagonist ที่เต้านม จึงเหมาะกับผู้ที่เสี่ยงมะเร็งเต้านม\nTrap: estrogen (D, E) เพิ่มความเสี่ยงมะเร็งเต้านม",
+   "explanation": "Raloxifene (SERM) agonist ที่กระดูก antagonist ที่เต้านม เหมาะกับผู้เสี่ยงมะเร็งเต้านม",
    "image": null,
    "issues": [],
+   "option_why": {
+    "A": "✓ raloxifene",
+    "B": "tamoxifen กระตุ้นเยื่อบุมดลูก ไม่ใช่ยากระดูกหลัก",
+    "C": "clomiphene กระตุ้นตกไข่",
+    "D": "estrogen เพิ่มเสี่ยงมะเร็งเต้านม",
+    "E": "E+P เพิ่มเสี่ยงมะเร็งเต้านม"
+   },
+   "key_concept": "• raloxifene: ลด vertebral fracture\n• ADR: VTE, hot flush\n• bisphosphonate ทางเลือกหลัก",
    "audit": {
     "source_file": "preclinic/2/urinary/mcq/ข้อสอบ mcq/MCQ_KUB and Repro [Med PSU 44].pdf",
     "page": 1,
@@ -188,9 +229,17 @@
     "E": "Hydrochlorothiazide"
    },
    "correct": "E",
-   "explanation": "Hydrochlorothiazide — thiazide ลดการขับ uric acid (แย่งขับที่ PCT) → hyperuricemia → acute gout\nTrap: loop diuretic ก็ทำได้ แต่ในตัวเลือกมีเฉพาะ thiazide",
+   "explanation": "Thiazide ลดการขับ uric acid (แย่งขับที่ PCT) → hyperuricemia → acute gout",
    "image": null,
    "issues": [],
+   "option_why": {
+    "A": "enalapril ไม่เพิ่ม urate",
+    "B": "amlodipine ไม่เพิ่ม",
+    "C": "hydralazine ไม่เพิ่ม",
+    "D": "propranolol ไม่เพิ่ม",
+    "E": "✓ hydrochlorothiazide"
+   },
+   "key_concept": "• thiazide: hyperuricemia, hyperglycemia, hyperlipidemia, hyperCa\n• losartan ลด urate\n• ยาความดันในคนเป็นเกาต์: losartan, CCB",
    "audit": {
     "source_file": "preclinic/2/urinary/mcq/ข้อสอบ mcq/MCQ_KUB and Repro [Med PSU 44].pdf",
     "page": 2,
@@ -229,11 +278,19 @@
     "E": "Hydrochlorothiazide"
    },
    "correct": "E",
-   "explanation": "Hydrochlorothiazide — ตอบตามเฉลยต้นฉบับ (HT + volume overload)\nTrap: AI คิดว่า furosemide เหมาะกับ HF ที่มี JVP โป่ง/หัวใจโตมากกว่า",
+   "explanation": "ตามเฉลยต้นฉบับ HT + volume overload ให้ hydrochlorothiazide; AI เห็นว่า JVP โป่ง/หัวใจโต = HF ควรใช้ furosemide",
    "image": null,
    "issues": [
     "เฉลยขัดกับ AI"
    ],
+   "option_why": {
+    "A": "digoxin ไม่ใช่ยาแรก",
+    "B": "enalapril ใช้ได้ระยะยาวแต่ไม่แก้ congestion เร็ว",
+    "C": "AI เลือก furosemide: congestion จาก HF ต้อง loop diuretic",
+    "D": "spironolactone เสริม",
+    "E": "✓ hydrochlorothiazide (ตามเฉลยต้นฉบับ)"
+   },
+   "key_concept": "• HF congestion: loop diuretic\n• HTN ไม่ซับซ้อน: thiazide\n• ต้นฉบับขัดกับ AI → คงต้นฉบับ",
    "audit": {
     "source_file": "preclinic/2/urinary/mcq/ข้อสอบ mcq/MCQ_KUB and Repro [Med PSU 44].pdf",
     "page": 2,
@@ -272,9 +329,17 @@
     "E": "Superficial transverse perineal muscle"
    },
    "correct": "D",
-   "explanation": "Bulbourethral gland — อยู่ใน deep perineal pouch (ร่วมกับ external urethral sphincter, membranous urethra)\nTrap: crus, bulb of penis, spongy urethra, superficial transverse perineal อยู่ใน superficial pouch",
+   "explanation": "Bulbourethral gland อยู่ใน deep perineal pouch (ร่วม external urethral sphincter, membranous urethra)",
    "image": null,
    "issues": [],
+   "option_why": {
+    "A": "crus อยู่ superficial pouch",
+    "B": "bulb อยู่ superficial pouch",
+    "C": "spongy urethra อยู่ใน bulb (superficial)",
+    "D": "✓ bulbourethral gland",
+    "E": "STP อยู่ superficial pouch"
+   },
+   "key_concept": "• deep pouch: Cowper gland, sphincter urethrae, DTP, membranous urethra\n• superficial: crura, bulb, IC, BS, STP\n• ท่อ Cowper เปิดที่ spongy urethra",
    "audit": {
     "source_file": "preclinic/2/urinary/mcq/ข้อสอบ mcq/MCQ_KUB and Repro [Med PSU 44].pdf",
     "page": 2,
@@ -313,11 +378,19 @@
     "E": "200ml/min 311-281 Urinary and Reproductive System"
    },
    "correct": "C",
-   "explanation": "100 ml/min — ตอบตาม AI (ต้นฉบับไม่มีไฮไลต์) ใช้ C = U×V/P",
+   "explanation": "C = U×V/P; U/P = 100 ต้องได้ V ≈ 1 mL/min จึงได้ 100 mL/min (โจทย์พิมพ์ 3 mL/hr น่าจะผิด; ตามเฉลยในระบบ)",
    "image": null,
    "issues": [
     "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
    ],
+   "option_why": {
+    "A": "10 ผิด",
+    "B": "60 ผิด",
+    "C": "✓ 100 mL/min (U/P = 100 × V 1 mL/min)",
+    "D": "125 คือ GFR ปกติ ไม่ได้จากข้อมูล",
+    "E": "200 ผิด"
+   },
+   "key_concept": "• แปลงหน่วย V เป็น mL/min\n• ต้นฉบับไม่มีไฮไลต์ AI ตอบ\n• creatinine clearance ≈ GFR",
    "audit": {
     "source_file": "preclinic/2/urinary/mcq/ข้อสอบ mcq/MCQ_KUB and Repro [Med PSU 44].pdf",
     "page": 2,
@@ -356,9 +429,17 @@
     "E": "Cardiovascular diseases"
    },
    "correct": "C",
-   "explanation": "Endometrial cancer — ให้ progestin ร่วมกับ estrogen เพื่อลดความเสี่ยงมะเร็งเยื่อบุโพรงมดลูกจาก unopposed estrogen\nTrap: HRT ไม่ได้ลดโรคหัวใจ และเพิ่มความเสี่ยงมะเร็งเต้านม",
+   "explanation": "ให้ progestin ร่วม estrogen เพื่อลดความเสี่ยงมะเร็งเยื่อบุโพรงมดลูกจาก unopposed estrogen",
    "image": null,
    "issues": [],
+   "option_why": {
+    "A": "ไม่เกี่ยวมะเร็งตับ",
+    "B": "E+P เพิ่มเสี่ยงมะเร็งเต้านม",
+    "C": "✓ ลด endometrial cancer",
+    "D": "ไม่ใช่ประโยชน์หลัก",
+    "E": "HRT ไม่ป้องกันโรคหัวใจ (WHI)"
+   },
+   "key_concept": "• มีมดลูก: E + P\n• ตัดมดลูกแล้ว: E อย่างเดียว\n• ใช้สั้นที่สุด ขนาดต่ำสุด",
    "audit": {
     "source_file": "preclinic/2/urinary/mcq/ข้อสอบ mcq/MCQ_KUB and Repro [Med PSU 44].pdf",
     "page": 3,
@@ -397,9 +478,17 @@
     "E": "Medroxyprogesterone acetate"
    },
    "correct": "E",
-   "explanation": "Medroxyprogesterone acetate — progestin ที่มีฤทธิ์ androgenic ทำให้สิว หน้ามัน ขนดก\nTrap: desogestrel/cyproterone เป็น progestin ที่ androgenic ต่ำหรือ antiandrogen",
+   "explanation": "Progestin ที่มีฤทธิ์ androgenic (MPA) ทำให้สิว หน้ามัน ขนดก",
    "image": null,
    "issues": [],
+   "option_why": {
+    "A": "mestranol เป็น estrogen",
+    "B": "desogestrel androgenic ต่ำ",
+    "C": "ethinyl estradiol ลดสิว",
+    "D": "cyproterone เป็น antiandrogen",
+    "E": "✓ medroxyprogesterone acetate"
+   },
+   "key_concept": "• androgenic: levonorgestrel, norethisterone, MPA\n• anti-androgenic: drospirenone, cyproterone\n• สิวจากฮอร์โมนเลือก progestin androgen ต่ำ",
    "audit": {
     "source_file": "preclinic/2/urinary/mcq/ข้อสอบ mcq/MCQ_KUB and Repro [Med PSU 44].pdf",
     "page": 3,
@@ -438,9 +527,17 @@
     "E": "Thayer-Martin VCN medium"
    },
    "correct": "E",
-   "explanation": "Thayer-Martin VCN medium — chocolate agar + vancomycin, colistin, nystatin เลือกเพาะ N. gonorrhoeae จากตัวอย่างที่มีเชื้อปน",
+   "explanation": "Thayer-Martin (VCN) = chocolate agar + vancomycin, colistin, nystatin เลือกเพาะ N. gonorrhoeae",
    "image": null,
    "issues": [],
+   "option_why": {
+    "A": "chocolate agar ไม่ selective",
+    "B": "MacConkey สำหรับ Gram-negative bacilli",
+    "C": "mannitol salt สำหรับ S. aureus",
+    "D": "blood agar ไม่ selective",
+    "E": "✓ Thayer-Martin VCN"
+   },
+   "key_concept": "• gonococcus ต้อง CO₂\n• oxidase +, ferment glucose เท่านั้น\n• NAAT ใช้แพร่หลาย",
    "audit": {
     "source_file": "preclinic/2/urinary/mcq/ข้อสอบ mcq/MCQ_KUB and Repro [Med PSU 44].pdf",
     "page": 3,
@@ -479,9 +576,17 @@
     "E": "Labioscrotal swelling 311-281 Urinary and Reproductive System"
    },
    "correct": "C",
-   "explanation": "Genital fold — ในเพศหญิงกลายเป็น labia minora (เพศชาย: penile urethra/ventral penis)\nTrap: labioscrotal swelling → labia majora",
+   "explanation": "Genital fold ในหญิงเจริญเป็น labia minora",
    "image": null,
    "issues": [],
+   "option_why": {
+    "A": "tubercle → clitoris",
+    "B": "groove → vestibule",
+    "C": "✓ genital (urethral) fold",
+    "D": "gubernaculum → ligament",
+    "E": "labioscrotal → labia majora"
+   },
+   "key_concept": "• ชาย: fold → penile urethra\n• DHT ทำให้ fuse\n• hypospadias",
    "audit": {
     "source_file": "preclinic/2/urinary/mcq/ข้อสอบ mcq/MCQ_KUB and Repro [Med PSU 44].pdf",
     "page": 3,
@@ -520,9 +625,17 @@
     "E": "Increase serum cholesterol"
    },
    "correct": "C",
-   "explanation": "Massive proteinuria — ≥ 3.5 g/วัน คือเกณฑ์หลักของ nephrotic syndrome\nTrap: hypoalbuminemia/hypercholesterolemia เป็นผลตามมา",
+   "explanation": "Massive proteinuria (≥3.5 g/วัน) คือเกณฑ์หลักของ nephrotic syndrome",
    "image": null,
    "issues": [],
+   "option_why": {
+    "A": "microalbuminuria = ระยะแรก DM",
+    "B": "hypoalbuminemia เป็นผลตามมา",
+    "C": "✓ massive proteinuria",
+    "D": "cystatin C ประเมิน GFR",
+    "E": "cholesterol เป็นผลตามมา"
+   },
+   "key_concept": "• nephrotic: protein ≥3.5 g, albumin <3, edema, lipid ↑\n• UPCR > 3.5\n• fatty cast/oval fat body",
    "audit": {
     "source_file": "preclinic/2/urinary/mcq/ข้อสอบ mcq/MCQ_KUB and Repro [Med PSU 44].pdf",
     "page": 4,
@@ -561,11 +674,19 @@
     "E": "Levator ani muscle"
    },
    "correct": "B",
-   "explanation": "Obturator internus fascia — tendinous arch ของ levator ani ยึดบนพังผืดของ obturator internus",
+   "explanation": "Tendinous arch ของ levator ani ยึดบนพังผืดของ obturator internus",
    "image": null,
    "issues": [
     "ช้อยส์ E AI เติมให้ครบ 5 ตัว"
    ],
+   "option_why": {
+    "A": "obturator membrane ปิด obturator foramen",
+    "B": "✓ obturator internus fascia",
+    "C": "piriformis fascia ไม่ใช่",
+    "D": "coccygeus ไม่ใช่",
+    "E": "levator ani เกาะบน arch ไม่ใช่ตัว arch"
+   },
+   "key_concept": "• levator ani: pubococcygeus, iliococcygeus, puborectalis\n• pudendal canal อยู่ใน obturator fascia\n• pelvic diaphragm",
    "audit": {
     "source_file": "preclinic/2/urinary/mcq/ข้อสอบ mcq/MCQ_KUB and Repro [Med PSU 44].pdf",
     "page": 4,
@@ -606,10 +727,27 @@
     "E": "Primary hyperaldosteronism"
    },
    "correct": "C",
-   "explanation": "JG cell carcinoma (reninoma) — HT รุนแรง + hypokalemia + aldosterone สูง + renin สูง ในหญิงอายุน้อย\nTrap: primary hyperaldosteronism renin จะต่ำ",
+   "explanation": "HT รุนแรง + hypokalemia + aldosterone สูง + renin สูง ในหญิงอายุน้อย = reninoma (JG cell tumor)",
    "image": null,
    "issues": [
     "ช้อยส์ E AI เติมให้ครบ 5 ตัว"
+   ],
+   "option_why": {
+    "A": "neuroblastoma ในเด็ก catecholamine",
+    "B": "angiomyolipoma ไม่หลั่ง renin",
+    "C": "✓ JG cell tumor",
+    "D": "RCC อาจหลั่ง renin แต่ไม่ใช่ภาพนี้",
+    "E": "primary hyperaldosteronism renin ต่ำ"
+   },
+   "key_concept": "• secondary hyperaldosteronism: renin ↑\n• primary: renin ↓ ARR สูง\n• renal artery stenosis ก็ renin สูง",
+   "mechanism": [
+    "JG cell tumor",
+    {
+     "s": "หลั่ง renin มาก",
+     "answer": true
+    },
+    "Ang II → aldosterone ↑",
+    "HT + hypokalemia"
    ],
    "audit": {
     "source_file": "preclinic/2/urinary/mcq/ข้อสอบ mcq/MCQ_KUB and Repro [Med PSU 44].pdf",
@@ -651,9 +789,17 @@
     "E": "Exhibitionism"
    },
    "correct": "E",
-   "explanation": "Exhibitionism — ได้ความพอใจทางเพศจากการเปิดอวัยวะเพศให้คนแปลกหน้าเห็น\nTrap: voyeurism = แอบดู",
+   "explanation": "ได้ความพอใจทางเพศจากการเปิดอวัยวะเพศให้คนแปลกหน้าเห็น = exhibitionism",
    "image": null,
    "issues": [],
+   "option_why": {
+    "A": "fetishism = วัตถุ",
+    "B": "voyeurism = แอบดู",
+    "C": "frotteurism = ถูตัว",
+    "D": "transvestism = แต่งกายข้ามเพศ",
+    "E": "✓ exhibitionism"
+   },
+   "key_concept": "• paraphilic disorder\n• กระทำต่อผู้ไม่ยินยอม\n• ≥6 เดือน",
    "audit": {
     "source_file": "preclinic/2/urinary/mcq/ข้อสอบ mcq/MCQ_KUB and Repro [Med PSU 44].pdf",
     "page": 4,
@@ -692,11 +838,19 @@
     "E": "Obturator nerve"
    },
    "correct": "B",
-   "explanation": "Inferior rectal nerve — แขนงของ pudendal n. (อื่น ๆ: perineal n., dorsal n. of penis/clitoris)",
+   "explanation": "แขนงของ pudendal: inferior rectal, perineal, dorsal nerve of penis/clitoris",
    "image": null,
    "issues": [
     "ช้อยส์ E AI เติมให้ครบ 5 ตัว"
    ],
+   "option_why": {
+    "A": "ไม่มี vaginal nerve จาก pudendal",
+    "B": "✓ inferior rectal nerve",
+    "C": "ilioinguinal จาก L1",
+    "D": "genitofemoral จาก L1–2",
+    "E": "obturator จาก L2–4"
+   },
+   "key_concept": "• pudendal S2–4\n• Alcock canal\n• pudendal block ที่ ischial spine",
    "audit": {
     "source_file": "preclinic/2/urinary/mcq/ข้อสอบ mcq/MCQ_KUB and Repro [Med PSU 44].pdf",
     "page": 4,
@@ -737,9 +891,26 @@
     "E": "Prerenal AKI"
    },
    "correct": "C",
-   "explanation": "Acute renal (tubular) necrosis — อุบัติเหตุ (rhabdomyolysis/hypovolemia) → oliguria ปัสสาวะสีน้ำตาลเข้ม พบ renal tubular cells/casts",
+   "explanation": "อุบัติเหตุ (rhabdomyolysis/hypovolemia) → oliguria ปัสสาวะน้ำตาลเข้ม + renal tubular cells/casts = ATN",
    "image": null,
    "issues": [],
+   "option_why": {
+    "A": "pyelonephritis มีไข้",
+    "B": "RTA ไม่ทำ oliguria เฉียบพลัน",
+    "C": "✓ acute (tubular) necrosis",
+    "D": "AGN มี RBC dysmorphic",
+    "E": "prerenal ไม่มี tubular cast"
+   },
+   "key_concept": "• ATN: muddy brown cast\n• FENa > 2%\n• rhabdo: CK สูง heme +",
+   "mechanism": [
+    "บาดเจ็บ → rhabdomyolysis/hypovolemia",
+    "myoglobin + ขาดเลือด",
+    {
+     "s": "tubular cell ตาย หลุดเป็น cast",
+     "answer": true
+    },
+    "oliguria"
+   ],
    "audit": {
     "source_file": "preclinic/2/urinary/mcq/ข้อสอบ mcq/MCQ_KUB and Repro [Med PSU 44].pdf",
     "page": 5,
@@ -778,11 +949,19 @@
     "E": "Pelvic splanchnic nerve"
    },
    "correct": "C",
-   "explanation": "Internal pudendal artery — ตอบตามเฉลยต้นฉบับ: วิ่งใน pudendal (Alcock) canal บนผนังข้างของ ischioanal fossa\nTrap: inferior rectal nerve ก็ผ่าน fossa นี้ (AI เลือก D)",
+   "explanation": "ตามเฉลยต้นฉบับ internal pudendal artery วิ่งใน pudendal canal บนผนังข้างของ ischioanal fossa; AI เห็นว่า inferior rectal nerve ผ่าน fossa ชัดกว่า",
    "image": null,
    "issues": [
     "เฉลยขัดกับ AI"
    ],
+   "option_why": {
+    "A": "paraurethral gland อยู่ใกล้ urethra",
+    "B": "bulbourethral อยู่ deep pouch",
+    "C": "✓ internal pudendal artery (ตามเฉลยต้นฉบับ)",
+    "D": "AI เลือก inferior rectal nerve ซึ่งวิ่งข้าม fossa จริง",
+    "E": "pelvic splanchnic อยู่ใน pelvis"
+   },
+   "key_concept": "• ischioanal fossa: ไขมัน, inferior rectal vessels/nerve\n• pudendal canal บนผนังข้าง\n• ต้นฉบับขัดกับ AI → คงต้นฉบับ",
    "audit": {
     "source_file": "preclinic/2/urinary/mcq/ข้อสอบ mcq/MCQ_KUB and Repro [Med PSU 44].pdf",
     "page": 5,
@@ -821,11 +1000,19 @@
     "E": "CA-125"
    },
    "correct": "C",
-   "explanation": "Alpha fetoprotein — tumor marker ของ yolk sac tumor\nTrap: β-hCG = choriocarcinoma",
+   "explanation": "Yolk sac tumor สร้าง alpha-fetoprotein",
    "image": null,
    "issues": [
     "ช้อยส์ D, E AI เติมให้ครบ 5 ตัว"
    ],
+   "option_why": {
+    "A": "CA 19-9 = pancreas",
+    "B": "β-hCG = choriocarcinoma",
+    "C": "✓ AFP",
+    "D": "CEA = colon",
+    "E": "CA-125 = epithelial ovarian"
+   },
+   "key_concept": "• Schiller-Duval body\n• เด็ก/สาว\n• LDH = dysgerminoma",
    "audit": {
     "source_file": "preclinic/2/urinary/mcq/ข้อสอบ mcq/MCQ_KUB and Repro [Med PSU 44].pdf",
     "page": 5,
@@ -867,12 +1054,20 @@
     "E": "Neural crest"
    },
    "correct": "D",
-   "explanation": "Splanchnic mesoderm — ตอบตาม AI (ต้นฉบับไม่มีไฮไลต์): กล้ามเนื้อเรียบ detrusor มาจาก splanchnic mesoderm รอบ urogenital sinus",
+   "explanation": "กล้ามเนื้อเรียบ detrusor มาจาก splanchnic mesoderm รอบ urogenital sinus (ต้นฉบับไม่มีไฮไลต์)",
    "image": null,
    "issues": [
     "ช้อยส์ E AI เติมให้ครบ 5 ตัว",
     "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
    ],
+   "option_why": {
+    "A": "endoderm → epithelium ของกระเพาะปัสสาวะ",
+    "B": "somatic mesoderm → กล้ามเนื้อลาย",
+    "C": "lateral mesoderm กว้างเกินไป",
+    "D": "✓ splanchnic mesoderm",
+    "E": "neural crest → ปมประสาท"
+   },
+   "key_concept": "• bladder epithelium: endoderm (UG sinus)\n• trigone: mesoderm (mesonephric duct)\n• กล้ามเนื้อเรียบ: splanchnic mesoderm",
    "audit": {
     "source_file": "preclinic/2/urinary/mcq/ข้อสอบ mcq/MCQ_KUB and Repro [Med PSU 44].pdf",
     "page": 5,
@@ -913,11 +1108,19 @@
     "E": "ARPKD 311-281 Urinary and Reproductive System"
    },
    "correct": "E",
-   "explanation": "ARPKD — ตอบตาม AI (ต้นฉบับไม่มีไฮไลต์): autosomal recessive PKD มักพบร่วมกับ congenital hepatic fibrosis ในเด็ก",
+   "explanation": "ARPKD มักพบร่วมกับ congenital hepatic fibrosis ในเด็ก (ต้นฉบับไม่มีไฮไลต์)",
    "image": null,
    "issues": [
     "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
    ],
+   "option_why": {
+    "A": "ectopic kidney ไม่สัมพันธ์",
+    "B": "renal dysplasia ไม่สัมพันธ์",
+    "C": "horseshoe ไม่สัมพันธ์",
+    "D": "ADPKD ผู้ใหญ่ มี liver cyst",
+    "E": "✓ ARPKD"
+   },
+   "key_concept": "• ARPKD: PKHD1 (fibrocystin)\n• ไตโตสองข้าง ทารก → Potter\n• portal hypertension",
    "audit": {
     "source_file": "preclinic/2/urinary/mcq/ข้อสอบ mcq/MCQ_KUB and Repro [Med PSU 44].pdf",
     "page": 5,
@@ -956,9 +1159,17 @@
     "E": "Minimal Glucose in which appear in the urine"
    },
    "correct": "E",
-   "explanation": "Minimal glucose in which appear in the urine — renal threshold คือระดับ plasma glucose ที่เริ่มพบ glucose ในปัสสาวะ (~180–200 mg/dL)\nTrap: Tm = อัตราการดูดกลับสูงสุด",
+   "explanation": "Renal threshold = ระดับ glucose ในพลาสมาต่ำสุดที่เริ่มพบในปัสสาวะ (~180–200 mg/dL)",
    "image": null,
    "issues": [],
+   "option_why": {
+    "A": "ไม่ใช่การกรองสูงสุด",
+    "B": "ไม่ใช่การขับสูงสุด",
+    "C": "maximal reabsorption = Tm",
+    "D": "ไม่ใช่ FBS",
+    "E": "✓ ระดับต่ำสุดที่เริ่มพบในปัสสาวะ"
+   },
+   "key_concept": "• threshold < Tm เพราะ splay\n• Tm ~375 mg/min\n• ตั้งครรภ์ threshold ต่ำลง",
    "audit": {
     "source_file": "preclinic/2/urinary/mcq/ข้อสอบ mcq/MCQ_KUB and Repro [Med PSU 44].pdf",
     "page": 6,
@@ -997,9 +1208,17 @@
     "E": "Fusion of foot process of podocyte"
    },
    "correct": "A",
-   "explanation": "Renal papillary necrosis — ภาวะไตวายเฉียบพลันที่พบใน DM (โดยเฉพาะร่วมกับติดเชื้อ/NSAIDs)\nTrap: nodular sclerosis/hyaline arteriolosclerosis เป็นภาวะเรื้อรัง",
+   "explanation": "ไตวายเฉียบพลันใน DM (มักร่วมติดเชื้อ/NSAIDs) = renal papillary necrosis",
    "image": null,
    "issues": [],
+   "option_why": {
+    "A": "✓ renal papillary necrosis",
+    "B": "hyaline arteriolosclerosis เรื้อรัง",
+    "C": "nodular sclerosis เรื้อรัง",
+    "D": "neutrophil = pyelonephritis (อาจนำ)",
+    "E": "foot process fusion = nephrotic"
+   },
+   "key_concept": "• papillary necrosis: DM, analgesic, sickle cell, obstruction\n• hematuria + flank pain + เนื้อเยื่อหลุด\n• ไตวายเฉียบพลันได้",
    "audit": {
     "source_file": "preclinic/2/urinary/mcq/ข้อสอบ mcq/MCQ_KUB and Repro [Med PSU 44].pdf",
     "page": 6,
@@ -1038,9 +1257,26 @@
     "E": "Efferent arteriole constriction"
    },
    "correct": "E",
-   "explanation": "Efferent arteriole constriction — เพิ่มแรงดันใน glomerular capillary → GFR เพิ่ม\nTrap: afferent constriction ลด GFR",
+   "explanation": "Efferent arteriole หดตัว เพิ่มแรงดันใน glomerular capillary → GFR เพิ่ม",
    "image": null,
    "issues": [],
+   "option_why": {
+    "A": "hemorrhage ลด GFR",
+    "B": "นิ่วเพิ่ม P_BS ลด GFR",
+    "C": "โปรตีนสูงเพิ่ม oncotic ลด GFR",
+    "D": "afferent constriction ลด GFR",
+    "E": "✓ efferent constriction"
+   },
+   "key_concept": "• Ang II หด efferent\n• ACEi ลด GFR (ระวัง RAS)\n• GFR = Kf × NFP",
+   "mechanism": [
+    "efferent arteriole หด",
+    {
+     "s": "P_GC ↑",
+     "answer": true
+    },
+    "NFP ↑",
+    "GFR ↑ (RPF ลด FF ↑)"
+   ],
    "audit": {
     "source_file": "preclinic/2/urinary/mcq/ข้อสอบ mcq/MCQ_KUB and Repro [Med PSU 44].pdf",
     "page": 6,
@@ -1079,9 +1315,17 @@
     "E": "Paramesonephric duct"
    },
    "correct": "B",
-   "explanation": "Ureteric bud — bifid ureter เกิดจาก ureteric bud แยกก่อนถึง metanephric blastema",
+   "explanation": "Bifid ureter เกิดจาก ureteric bud แยกก่อนถึง metanephric blastema",
    "image": null,
    "issues": [],
+   "option_why": {
+    "A": "allantois → urachus",
+    "B": "✓ ureteric bud",
+    "C": "blastema → nephron",
+    "D": "mesonephric duct เป็นต้นกำเนิด bud",
+    "E": "paramesonephric ไม่เกี่ยว"
+   },
+   "key_concept": "• bifid = partial duplication\n• complete duplication = 2 buds\n• Weigert–Meyer",
    "audit": {
     "source_file": "preclinic/2/urinary/mcq/ข้อสอบ mcq/MCQ_KUB and Repro [Med PSU 44].pdf",
     "page": 6,
@@ -1120,9 +1364,17 @@
     "E": "Mesangial expansion with increase of mesangial cell and matrix 311-281 Urinary and Reproductive System"
    },
    "correct": "A",
-   "explanation": "Epithelial cell proliferation — RPGN มี crescent (parietal epithelial cell + macrophage) ในช่อง Bowman",
+   "explanation": "RPGN มี crescent (parietal epithelial cell + macrophage + fibrin) ในช่อง Bowman",
    "image": null,
    "issues": [],
+   "option_why": {
+    "A": "✓ epithelial cell proliferation",
+    "B": "thrombosis = TMA",
+    "C": "endothelial proliferation = PSGN",
+    "D": "neutrophil = PSGN",
+    "E": "mesangial = IgA/DM"
+   },
+   "key_concept": "• anti-GBM, immune complex, pauci-immune\n• ANCA vasculitis\n• รักษาเร่งด่วน",
    "audit": {
     "source_file": "preclinic/2/urinary/mcq/ข้อสอบ mcq/MCQ_KUB and Repro [Med PSU 44].pdf",
     "page": 6,
@@ -1161,11 +1413,19 @@
     "E": "Cloaca"
    },
    "correct": "D",
-   "explanation": "Testes — ตอบตามเฉลยต้นฉบับ: 46,XY ไม่มีมดลูก/ช่องคลอดส่วนบน (AMH ทำงาน) แต่อวัยวะเพศภายนอกเป็นหญิง\nTrap: AI เลือก Müllerian duct",
+   "explanation": "ตามเฉลยต้นฉบับคือ testes (46,XY มีอัณฑะสร้าง AMH จึงไม่มีมดลูก แต่อวัยวะเพศภายนอกหญิง)",
    "image": null,
    "issues": [
     "เฉลยขัดกับ AI"
    ],
+   "option_why": {
+    "A": "Wolffian duct ฝ่อเพราะไม่ตอบ testosterone แต่ไม่ใช่คำตอบตามต้นฉบับ",
+    "B": "AI เลือก Müllerian duct (ถูก AMH ทำลายจึงไม่มีมดลูก)",
+    "C": "ovaries ไม่มีใน 46,XY",
+    "D": "✓ testes (ตามเฉลยต้นฉบับ)",
+    "E": "cloaca ไม่เกี่ยว"
+   },
+   "key_concept": "• AIS: 46,XY, อัณฑะ, ไม่มีมดลูก, vagina สั้น\n• AMH ทำงาน → ไม่มีมดลูก\n• เสี่ยง gonadal tumor",
    "audit": {
     "source_file": "preclinic/2/urinary/mcq/ข้อสอบ mcq/MCQ_KUB and Repro [Med PSU 44].pdf",
     "page": 7,
@@ -1204,9 +1464,17 @@
     "E": "Principle piece"
    },
    "correct": "B",
-   "explanation": "Acrosome — เก็บ hyaluronidase/acrosin ย่อย zona pellucida",
+   "explanation": "Acrosome เก็บ hyaluronidase/acrosin ย่อย zona pellucida",
    "image": null,
    "issues": [],
+   "option_why": {
+    "A": "neck มี centriole",
+    "B": "✓ acrosome",
+    "C": "end piece เป็นปลายหาง",
+    "D": "middle piece มี mitochondria",
+    "E": "principal piece เป็นหาง"
+   },
+   "key_concept": "• acrosome มาจาก Golgi\n• acrosome reaction ที่ zona\n• capacitation ก่อน",
    "audit": {
     "source_file": "preclinic/2/urinary/mcq/ข้อสอบ mcq/MCQ_KUB and Repro [Med PSU 44].pdf",
     "page": 7,
@@ -1245,11 +1513,19 @@
     "E": "Phosphodiesterase-5 inhibitor"
    },
    "correct": "C",
-   "explanation": "5α-reductase inhibitor — finasteride ยับยั้ง 5α-reductase type 2 ลด DHT ทำให้ต่อมลูกหมากเล็กลง",
+   "explanation": "Finasteride ยับยั้ง 5α-reductase type 2 ลด DHT ต่อมลูกหมากเล็กลง",
    "image": null,
    "issues": [
     "AI เขียนข้อนี้ขึ้นใหม่จากโน้ตความจำในต้นฉบับ"
    ],
+   "option_why": {
+    "A": "α1 antagonist = tamsulosin",
+    "B": "AR antagonist = flutamide",
+    "C": "✓ 5α-reductase inhibitor",
+    "D": "GnRH agonist = leuprolide",
+    "E": "PDE5 = tadalafil"
+   },
+   "key_concept": "• ลดขนาดต่อม ~20–30% ใช้เวลาหลายเดือน\n• PSA ลดครึ่ง\n• ADR: libido ↓",
    "audit": {
     "source_file": "preclinic/2/urinary/mcq/ข้อสอบ mcq/MCQ_KUB and Repro [Med PSU 44].pdf",
     "page": 7,
@@ -1288,11 +1564,19 @@
     "E": "Bilirubin"
    },
    "correct": "B",
-   "explanation": "Creatine kinase — กล้ามเนื้อสลาย (rhabdomyolysis) ปล่อย CK และ myoglobin เข้ากระแสเลือด",
+   "explanation": "Rhabdomyolysis ปล่อย CK และ myoglobin เข้ากระแสเลือด",
    "image": null,
    "issues": [
     "AI เขียนข้อนี้ขึ้นใหม่จากโน้ตความจำในต้นฉบับ"
    ],
+   "option_why": {
+    "A": "creatine ไม่ใช่ตัววัด",
+    "B": "✓ creatine kinase",
+    "C": "uric acid เพิ่มได้แต่ไม่ใช่อย่างเดียว",
+    "D": "albumin ไม่เพิ่ม",
+    "E": "bilirubin ไม่ใช่"
+   },
+   "key_concept": "• CK > 5× ULN\n• myoglobinuria → AKI\n• hyperK, hyperphosphatemia, hypoCa",
    "audit": {
     "source_file": "preclinic/2/urinary/mcq/ข้อสอบ mcq/MCQ_KUB and Repro [Med PSU 44].pdf",
     "page": 7,
@@ -1331,9 +1615,17 @@
     "E": "Invasive ductal carcinoma"
    },
    "correct": "C",
-   "explanation": "Phyllodes tumor — ก้อนใหญ่โตเร็ว ขยับได้ ลักษณะใบไม้ (leaf-like)\nTrap: fibroadenoma ก้อนเล็กกว่า ไม่มี leaf-like pattern",
+   "explanation": "ก้อนใหญ่ โตเร็ว ขยับได้ ลักษณะใบไม้ (leaf-like) ในหญิงวัยกลางคน = phyllodes tumor",
    "image": null,
    "issues": [],
+   "option_why": {
+    "A": "fibroadenoma เล็กกว่า ไม่มี leaf-like",
+    "B": "accessory breast อยู่ตาม milk line",
+    "C": "✓ phyllodes tumor",
+    "D": "fibrocystic ไม่เป็นก้อนใหญ่",
+    "E": "IDC ขอบไม่ชัด ไม่เคลื่อน"
+   },
+   "key_concept": "• stromal hypercellularity\n• benign/borderline/malignant\n• wide excision",
    "audit": {
     "source_file": "preclinic/2/urinary/mcq/ข้อสอบ mcq/MCQ_KUB and Repro [Med PSU 44].pdf",
     "page": 7,
@@ -1372,9 +1664,17 @@
     "E": "Superior vesical artery 311-281 Urinary and Reproductive System"
    },
    "correct": "B",
-   "explanation": "Ovarian — ovarian artery anastomose กับ uterine artery จึงยังมีเลือดออกหลังผูก uterine a.",
+   "explanation": "Ovarian artery anastomose กับ uterine artery จึงยังมีเลือดออกหลังผูก uterine a.",
    "image": null,
    "issues": [],
+   "option_why": {
+    "A": "vaginal a. เลี้ยงช่องคลอด",
+    "B": "✓ ovarian artery",
+    "C": "middle rectal เลี้ยง rectum",
+    "D": "inferior vesical เลี้ยง bladder/prostate",
+    "E": "superior vesical เลี้ยง bladder"
+   },
+   "key_concept": "• uterine a. จาก internal iliac\n• ovarian a. จาก aorta (suspensory lig.)\n• anastomosis ใน broad ligament",
    "audit": {
     "source_file": "preclinic/2/urinary/mcq/ข้อสอบ mcq/MCQ_KUB and Repro [Med PSU 44].pdf",
     "page": 7,
@@ -1413,9 +1713,17 @@
     "E": "Duct of seminal vesicle"
    },
    "correct": "C",
-   "explanation": "Prostatic urethra — BPH เกิดที่ transitional zone รอบ prostatic urethra → กดท่อปัสสาวะ",
+   "explanation": "BPH ที่ transition zone รอบ prostatic urethra → กดท่อปัสสาวะ",
    "image": null,
    "issues": [],
+   "option_why": {
+    "A": "anal canal อยู่หลัง",
+    "B": "penile urethra อยู่ไกล",
+    "C": "✓ prostatic urethra",
+    "D": "ductus deferens ไม่ถูกกด",
+    "E": "seminal vesicle duct ไม่ใช่หลัก"
+   },
+   "key_concept": "• LUTS\n• median lobe ดันเข้า bladder\n• α-blocker",
    "audit": {
     "source_file": "preclinic/2/urinary/mcq/ข้อสอบ mcq/MCQ_KUB and Repro [Med PSU 44].pdf",
     "page": 8,
@@ -1454,9 +1762,17 @@
     "E": "Systematic sensitization"
    },
    "correct": "B",
-   "explanation": "Stop-start technique — behavioral therapy ของ premature ejaculation (หรือ squeeze technique)",
+   "explanation": "Behavioral therapy ของ premature ejaculation = stop-start (หรือ squeeze) technique",
    "image": null,
    "issues": [],
+   "option_why": {
+    "A": "masturbation ไม่ใช่ therapy หลัก",
+    "B": "✓ stop-start technique",
+    "C": "relaxation ช่วยเสริม",
+    "D": "extravaginal ejaculation ไม่ใช่การรักษา",
+    "E": "systematic desensitization ใช้ phobia"
+   },
+   "key_concept": "• Semans stop-start\n• Masters–Johnson squeeze\n• SSRIs",
    "audit": {
     "source_file": "preclinic/2/urinary/mcq/ข้อสอบ mcq/MCQ_KUB and Repro [Med PSU 44].pdf",
     "page": 8,
@@ -1495,9 +1811,17 @@
     "E": "Invasive ductal carcinoma"
    },
    "correct": "E",
-   "explanation": "Invasive ductal carcinoma — ก้อนแข็งขอบไม่ชัด ผิวหนังรั้ง ต่อมน้ำเหลืองรักแร้โต",
+   "explanation": "ก้อนแข็งขอบไม่ชัด ผิวหนังรั้ง ต่อมน้ำเหลืองรักแร้โต + microcalcification = invasive ductal carcinoma",
    "image": null,
    "issues": [],
+   "option_why": {
+    "A": "fibroadenoma ขอบชัด",
+    "B": "fibrocystic ไม่มี LN",
+    "C": "phyllodes ขอบชัด",
+    "D": "DCIS ไม่ลุกลาม/ไม่มี LN",
+    "E": "✓ invasive ductal carcinoma"
+   },
+   "key_concept": "• skin retraction = Cooper's ligament\n• axillary LN = staging\n• triple assessment",
    "audit": {
     "source_file": "preclinic/2/urinary/mcq/ข้อสอบ mcq/MCQ_KUB and Repro [Med PSU 44].pdf",
     "page": 8,
@@ -1536,9 +1860,17 @@
     "E": "Levonorgestrel emergency contraceptive pill 311-281 Urinary and Reproductive System"
    },
    "correct": "B",
-   "explanation": "Combined oral contraceptive pill — ห้ามใช้ในผู้สูบบุหรี่จัด (โดยเฉพาะอายุ ≥ 35) เพราะเสี่ยง thromboembolism",
+   "explanation": "Combined pill ห้ามในผู้สูบบุหรี่จัด (เสี่ยง thromboembolism)",
    "image": null,
    "issues": [],
+   "option_why": {
+    "A": "POP ใช้ได้",
+    "B": "✓ combined OCP",
+    "C": "DMPA ใช้ได้",
+    "D": "LNG-IUD ใช้ได้",
+    "E": "emergency pill ใช้ได้"
+   },
+   "key_concept": "• ห้าม COC: สูบ ≥15 มวน อายุ ≥35\n• estrogen ↑ VTE\n• progestin-only ปลอดภัยกว่า",
    "audit": {
     "source_file": "preclinic/2/urinary/mcq/ข้อสอบ mcq/MCQ_KUB and Repro [Med PSU 44].pdf",
     "page": 8,
@@ -1577,9 +1909,17 @@
     "E": "Acute Post-streptococcal glomerulonephritis"
    },
    "correct": "B",
-   "explanation": "Goodpasture syndrome — anti-GBM antibody ให้ linear IgG ตาม GBM",
+   "explanation": "Anti-GBM antibody ให้ linear IgG ตาม GBM = Goodpasture",
    "image": null,
    "issues": [],
+   "option_why": {
+    "A": "lupus = granular full-house",
+    "B": "✓ Goodpasture",
+    "C": "membranous = granular subepithelial",
+    "D": "DDD = ribbon dense deposit",
+    "E": "PSGN = granular lumpy-bumpy"
+   },
+   "key_concept": "• α3 type IV collagen\n• lung + kidney\n• plasmapheresis",
    "audit": {
     "source_file": "preclinic/2/urinary/mcq/ข้อสอบ mcq/MCQ_KUB and Repro [Med PSU 44].pdf",
     "page": 9,
@@ -1618,9 +1958,17 @@
     "E": "6N hydrochloric acid"
    },
    "correct": "C",
-   "explanation": "37% formaldehyde (formalin) — รักษาสภาพ cell และ cast สำหรับดูกล้อง",
+   "explanation": "37% formaldehyde (formalin) รักษาสภาพเซลล์และ cast สำหรับตรวจกล้อง",
    "image": null,
    "issues": [],
+   "option_why": {
+    "A": "toluene ใช้กับ chemical tests",
+    "B": "chlorhexidine ไม่ใช่",
+    "C": "✓ formalin",
+    "D": "acetic acid ไม่เหมาะ",
+    "E": "HCl ใช้เก็บ 24-h (catecholamine/Ca)"
+   },
+   "key_concept": "• แช่เย็น 4°C เป็นทางเลือกดีสุด\n• boric acid สำหรับ culture\n• preservative ตามการตรวจ",
    "audit": {
     "source_file": "preclinic/2/urinary/mcq/ข้อสอบ mcq/MCQ_KUB and Repro [Med PSU 44].pdf",
     "page": 9,
@@ -1659,12 +2007,20 @@
     "E": "Ovary"
    },
    "correct": "D",
-   "explanation": "Vestibule of vagina — ตอบตามเฉลยต้นฉบับ: phallic part ของ urogenital sinus ในหญิงกลายเป็น vestibule (ในชายเป็น penile urethra)",
+   "explanation": "Phallic part ของ urogenital sinus ในหญิงเป็น vestibule (ชายเป็น penile urethra) ตามเฉลย",
    "image": null,
    "issues": [
     "ช้อยส์ E AI เติมให้ครบ 5 ตัว",
     "เฉลยขัดกับ AI"
    ],
+   "option_why": {
+    "A": "urethra หญิงมาจาก pelvic part",
+    "B": "uterine tube จาก Müllerian",
+    "C": "bladder จาก vesical part",
+    "D": "✓ vestibule of vagina",
+    "E": "ovary จาก gonadal ridge"
+   },
+   "key_concept": "• UG sinus: vesical, pelvic, phallic\n• ชาย: pelvic → prostatic/membranous urethra\n• phallic → penile urethra",
    "audit": {
     "source_file": "preclinic/2/urinary/mcq/ข้อสอบ mcq/MCQ_KUB and Repro [Med PSU 44].pdf",
     "page": 9,
@@ -1705,9 +2061,17 @@
     "E": "Hyperglycemia"
    },
    "correct": "A",
-   "explanation": "Tremors — β2 agonist กระตุ้นกล้ามเนื้อลาย ทำให้มือสั่น (ร่วมกับ tachycardia, hypokalemia)",
+   "explanation": "β2 agonist (salbutamol) กระตุ้นกล้ามเนื้อลาย ทำให้มือสั่น (พบบ่อยสุด)",
    "image": null,
    "issues": [],
+   "option_why": {
+    "A": "✓ tremor",
+    "B": "impotence ไม่ใช่",
+    "C": "arrhythmia พบได้แต่น้อยกว่า",
+    "D": "hypotension ไม่ใช่หลัก",
+    "E": "hyperglycemia พบได้แต่น้อยกว่า"
+   },
+   "key_concept": "• β2 ADR: tremor, tachycardia, hypoK\n• inhaled ลด ADR\n• tocolysis ใช้ terbutaline",
    "audit": {
     "source_file": "preclinic/2/urinary/mcq/ข้อสอบ mcq/MCQ_KUB and Repro [Med PSU 44].pdf",
     "page": 9,
@@ -1746,9 +2110,17 @@
     "E": "Internal pudendal artery 311-281 Urinary and Reproductive System"
    },
    "correct": "C",
-   "explanation": "Inferior vesical artery — เลี้ยงต่อมลูกหมาก (prostatic branch) ร่วมกับ middle rectal a.",
+   "explanation": "Inferior vesical artery (prostatic branch) เลี้ยงต่อมลูกหมากเป็นหลัก",
    "image": null,
    "issues": [],
+   "option_why": {
+    "A": "testicular a. เลี้ยงอัณฑะ",
+    "B": "middle rectal ช่วยเลี้ยงบ้าง",
+    "C": "✓ inferior vesical artery",
+    "D": "superior vesical เลี้ยง bladder บน",
+    "E": "internal pudendal ช่วยบ้าง"
+   },
+   "key_concept": "• prostatic a. → embolization ใน BPH\n• venous: prostatic plexus → Batson\n• มะเร็งกระจายกระดูกสันหลัง",
    "audit": {
     "source_file": "preclinic/2/urinary/mcq/ข้อสอบ mcq/MCQ_KUB and Repro [Med PSU 44].pdf",
     "page": 9,
@@ -1787,9 +2159,17 @@
     "E": "Hydrochlorothiazide"
    },
    "correct": "C",
-   "explanation": "Furosemide — loop diuretic ใช้ได้แม้ไตเสื่อม (BUN/Cr สูง) ลด edema ใน HF\nTrap: thiazide ไม่ได้ผลเมื่อ GFR ต่ำ",
+   "explanation": "Loop diuretic (furosemide) ใช้ได้แม้ไตเสื่อม ลดบวมใน HF",
    "image": null,
    "issues": [],
+   "option_why": {
+    "A": "digitalis ไม่ขับน้ำ",
+    "B": "mannitol ห้ามใน HF",
+    "C": "✓ furosemide",
+    "D": "spironolactone ระวัง K สูงเมื่อไตเสื่อม",
+    "E": "thiazide ไม่ได้ผลเมื่อ GFR <30"
+   },
+   "key_concept": "• loop ยังได้ผลเมื่อ GFR ต่ำ (ขนาดสูง)\n• ระวัง ototoxicity\n• ติดตาม K/Cr",
    "audit": {
     "source_file": "preclinic/2/urinary/mcq/ข้อสอบ mcq/MCQ_KUB and Repro [Med PSU 44].pdf",
     "page": 10,
@@ -1828,9 +2208,17 @@
     "E": "Candida albicans"
    },
    "correct": "C",
-   "explanation": "Chlamydia trachomatis — สาเหตุหลักของ PID ร่วมกับ N. gonorrhoeae",
+   "explanation": "Chlamydia trachomatis เป็นสาเหตุหลักของ PID (ร่วม N. gonorrhoeae)",
    "image": null,
    "issues": [],
+   "option_why": {
+    "A": "Trichomonas ทำ vaginitis",
+    "B": "HPV ทำหูด/มะเร็ง",
+    "C": "✓ Chlamydia trachomatis",
+    "D": "HSV ทำแผล",
+    "E": "Candida ทำ vaginitis"
+   },
+   "key_concept": "• PID: CMT, adnexal tenderness\n• sequelae: infertility, ectopic\n• ceftriaxone + doxycycline + metronidazole",
    "audit": {
     "source_file": "preclinic/2/urinary/mcq/ข้อสอบ mcq/MCQ_KUB and Repro [Med PSU 44].pdf",
     "page": 10,
@@ -1869,9 +2257,17 @@
     "E": "Torsion"
    },
    "correct": "E",
-   "explanation": "Torsion — ปวดอัณฑะเฉียบพลันในวัยรุ่น อัณฑะโตกดเจ็บ (มักไม่มี cremasteric reflex)",
+   "explanation": "ปวดอัณฑะเฉียบพลันในวัยรุ่น อัณฑะโตกดเจ็บ เลือดไปเลี้ยงลด = testicular torsion",
    "image": null,
    "issues": [],
+   "option_why": {
+    "A": "choriocarcinoma ไม่เฉียบพลัน",
+    "B": "seminoma ไม่เจ็บ",
+    "C": "hydrocele ไม่เจ็บ",
+    "D": "varicocele ไม่เจ็บเฉียบพลัน",
+    "E": "✓ torsion"
+   },
+   "key_concept": "• cremasteric reflex หาย\n• ผ่าตัดภายใน 6 ชม.\n• bell-clapper",
    "audit": {
     "source_file": "preclinic/2/urinary/mcq/ข้อสอบ mcq/MCQ_KUB and Repro [Med PSU 44].pdf",
     "page": 10,
@@ -1910,9 +2306,17 @@
     "E": "Collecting duct 311-281 Urinary and Reproductive System"
    },
    "correct": "B",
-   "explanation": "Proximal convoluted tubule — โลหะหนัก (ปรอท/แคดเมียม) ทำลาย PCT → Fanconi syndrome (aminoaciduria, glycosuria, phosphaturia)",
+   "explanation": "โลหะหนัก (ปรอท) ทำลาย PCT → Fanconi syndrome (aminoaciduria, glycosuria, phosphaturia)",
    "image": null,
    "issues": [],
+   "option_why": {
+    "A": "glomerulus ทำ proteinuria",
+    "B": "✓ PCT",
+    "C": "Henle loop ทำ concentrating defect",
+    "D": "DCT ไม่ดูดกลูโคส",
+    "E": "collecting duct ไม่ดูดกลูโคส"
+   },
+   "key_concept": "• Fanconi: PCT ทุกตัวขนส่งเสีย\n• สาเหตุ: heavy metal, tenofovir, myeloma\n• type 2 RTA",
    "audit": {
     "source_file": "preclinic/2/urinary/mcq/ข้อสอบ mcq/MCQ_KUB and Repro [Med PSU 44].pdf",
     "page": 10,
@@ -1951,11 +2355,19 @@
     "E": "An increase in renal medullary blood flow"
    },
    "correct": "A",
-   "explanation": "Decrease in GFR — ตอบตาม AI (ต้นฉบับไม่มีไฮไลต์): ลด GFR ทำให้ของเหลวไหลช้า มีเวลาดูดน้ำกลับ ปัสสาวะเข้มข้นขึ้น\nTrap: เพิ่ม medullary blood flow (washout) ลดความเข้มข้น",
+   "explanation": "ลด GFR ทำให้ของเหลวไหลช้า มีเวลาดูดน้ำกลับ ปัสสาวะเข้มข้นขึ้น (ต้นฉบับไม่มีไฮไลต์ AI ตอบ)",
    "image": null,
    "issues": [
     "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
    ],
+   "option_why": {
+    "A": "✓ decrease in GFR",
+    "B": "aldosterone deficiency ลดการดูดน้ำ",
+    "C": "ADH ลด → ปัสสาวะเจือจาง",
+    "D": "H⁺ ATPase ไม่เกี่ยวความเข้มข้น",
+    "E": "medullary blood flow ↑ ล้าง gradient"
+   },
+   "key_concept": "• ADH สูงสุด → ~1200 mOsm/L\n• washout ลดความเข้มข้น\n• flow ช้า → equilibrate ดีขึ้น",
    "audit": {
     "source_file": "preclinic/2/urinary/mcq/ข้อสอบ mcq/MCQ_KUB and Repro [Med PSU 44].pdf",
     "page": 11,
@@ -1994,9 +2406,17 @@
     "E": "Homolactic fermentation"
    },
    "correct": "D",
-   "explanation": "Gluconeogenesis — ในตับวาย ไตสร้างกลูโคสแทนมากขึ้น",
+   "explanation": "ในตับวาย ไตสร้างกลูโคส (gluconeogenesis) แทนมากขึ้น",
    "image": null,
    "issues": [],
+   "option_why": {
+    "A": "glycolysis ไม่ใช่",
+    "B": "beta-oxidation ไม่ใช่การปรับหลัก",
+    "C": "ketogenesis ที่ตับ",
+    "D": "✓ gluconeogenesis",
+    "E": "homolactic fermentation ไม่ใช่"
+   },
+   "key_concept": "• ไตทำ gluconeogenesis ได้ 20–40%\n• ตับวาย → hypoglycemia\n• acidosis ก็เพิ่ม",
    "audit": {
     "source_file": "preclinic/2/urinary/mcq/ข้อสอบ mcq/MCQ_KUB and Repro [Med PSU 44].pdf",
     "page": 11,
@@ -2035,9 +2455,17 @@
     "E": "Gender dysphoria"
    },
    "correct": "C",
-   "explanation": "Genderqueer — คนที่ไม่ระบุตัวเองว่าเป็นชายหรือหญิง (non-binary)",
+   "explanation": "คนที่ไม่ระบุตัวเองว่าเป็นชายหรือหญิง = genderqueer (non-binary)",
    "image": null,
    "issues": [],
+   "option_why": {
+    "A": "transsexual ระบุเพศตรงข้าม",
+    "B": "crossdresser แต่งกายข้ามเพศ",
+    "C": "✓ genderqueer",
+    "D": "homosexuality เป็น orientation",
+    "E": "gender dysphoria ต้องมี distress"
+   },
+   "key_concept": "• identity ≠ expression ≠ orientation\n• non-binary\n• ไม่ใช่โรค",
    "audit": {
     "source_file": "preclinic/2/urinary/mcq/ข้อสอบ mcq/MCQ_KUB and Repro [Med PSU 44].pdf",
     "page": 11,
@@ -2076,11 +2504,19 @@
     "E": "Oxytocin"
    },
    "correct": "D",
-   "explanation": "Methylergonovine — ตอบตามเฉลยต้นฉบับ: ergot alkaloid ใช้ PPH ผลข้างเคียงคลื่นไส้อาเจียน (ห้ามใน HT)\nTrap: AI เลือก carboprost (ทำให้ท้องเสีย/อาเจียนได้เช่นกัน)",
+   "explanation": "ตามเฉลยต้นฉบับ methylergonovine (ergot) ใช้ PPH ADR คลื่นไส้อาเจียน; AI เห็นว่า carboprost ก็ทำอาเจียน/ท้องเสียได้",
    "image": null,
    "issues": [
     "เฉลยขัดกับ AI"
    ],
+   "option_why": {
+    "A": "salbutamol คลายมดลูก ไม่ใช้ใน PPH",
+    "B": "AI เลือก carboprost (PGF2α: คลื่นไส้ อาเจียน ท้องเสีย)",
+    "C": "dinoprostone ใช้เตรียมปากมดลูก",
+    "D": "✓ methylergonovine (ตามเฉลยต้นฉบับ)",
+    "E": "oxytocin ADR น้อย"
+   },
+   "key_concept": "• ergometrine ห้ามใน HT\n• carboprost ห้ามใน asthma\n• oxytocin เป็นยาแรก",
    "audit": {
     "source_file": "preclinic/2/urinary/mcq/ข้อสอบ mcq/MCQ_KUB and Repro [Med PSU 44].pdf",
     "page": 11,
@@ -2119,9 +2555,17 @@
     "E": "Granulosa lutein 311-281 Urinary and Reproductive System"
    },
    "correct": "E",
-   "explanation": "Granulosa lutein — ใน corpus luteum สร้างทั้ง progesterone และ estrogen",
+   "explanation": "Granulosa lutein ใน corpus luteum สร้างทั้ง progesterone และ estrogen",
    "image": null,
    "issues": [],
+   "option_why": {
+    "A": "follicular cell ก่อนตกไข่",
+    "B": "theca externa ไม่สร้าง",
+    "C": "theca interna สร้าง androgen",
+    "D": "theca lutein สร้าง androgen/progesterone",
+    "E": "✓ granulosa lutein"
+   },
+   "key_concept": "• LH → luteinization\n• corpus luteum อายุ ~14 วัน\n• hCG ค้ำเมื่อตั้งครรภ์",
    "audit": {
     "source_file": "preclinic/2/urinary/mcq/ข้อสอบ mcq/MCQ_KUB and Repro [Med PSU 44].pdf",
     "page": 11,
@@ -2160,9 +2604,26 @@
     "E": "Deaminase glutamine"
    },
    "correct": "E",
-   "explanation": "Deaminase glutamine — DKA (acidosis) ไตเพิ่ม glutaminase → NH4+ ขับกรด สร้าง HCO3- ใหม่",
+   "explanation": "DKA (acidosis) ไตเพิ่ม glutaminase deaminate glutamine → NH₄⁺ ขับกรด สร้าง HCO₃⁻ ใหม่",
    "image": null,
    "issues": [],
+   "option_why": {
+    "A": "NH₃ ไม่ได้มาจากการกรอง",
+    "B": "urate ไม่ใช่การปรับหลัก",
+    "C": "urea ไม่ใช่",
+    "D": "urate ไม่ใช่",
+    "E": "✓ glutamine deamination"
+   },
+   "key_concept": "• acidosis → glutaminase ↑\n• NH₄⁺ ปรับได้มาก\n• new HCO₃⁻",
+   "mechanism": [
+    "DKA",
+    "pH ↓",
+    {
+     "s": "glutamine deamination ↑",
+     "answer": true
+    },
+    "NH₄⁺ ขับ + HCO₃⁻ ใหม่"
+   ],
    "audit": {
     "source_file": "preclinic/2/urinary/mcq/ข้อสอบ mcq/MCQ_KUB and Repro [Med PSU 44].pdf",
     "page": 12,
@@ -2201,11 +2662,19 @@
     "E": "Squamous cell carcinoma of the penis"
    },
    "correct": "D",
-   "explanation": "Paraphimosis — ตอบตามเฉลย: หนังหุ้มปลายรูดกลับไม่ได้ (phimosis) เสี่ยงต่อ paraphimosis และ SCC ขององคชาต",
+   "explanation": "Phimosis รูดหนังหุ้มปลายไม่ได้ เสี่ยง paraphimosis (และ SCC องคชาต) ตามเฉลย",
    "image": null,
    "issues": [
     "ช้อยส์ E AI เติมให้ครบ 5 ตัว"
    ],
+   "option_why": {
+    "A": "urothelial ไม่สัมพันธ์",
+    "B": "adenocarcinoma ไม่สัมพันธ์",
+    "C": "herpes ไม่สัมพันธ์โดยตรง",
+    "D": "✓ paraphimosis",
+    "E": "SCC ก็สัมพันธ์ระยะยาว แต่เฉลยเลือก paraphimosis"
+   },
+   "key_concept": "• phimosis: balanitis, UTI, SCC\n• paraphimosis: รูดแล้วกลับไม่ได้\n• circumcision",
    "audit": {
     "source_file": "preclinic/2/urinary/mcq/ข้อสอบ mcq/MCQ_KUB and Repro [Med PSU 44].pdf",
     "page": 12,
@@ -2246,12 +2715,20 @@
     "E": "Serous cystadenocarcinoma"
    },
    "correct": "A",
-   "explanation": "Endometrioid carcinoma — endometrial hyperplasia เป็นรอยโรคก่อนมะเร็งของ endometrioid (type I) carcinoma\nTrap: AI เลือก granulosa cell tumor (ซึ่งเป็นสาเหตุของ hyperplasia ไม่ใช่ผล)",
+   "explanation": "ตามเฉลยต้นฉบับ endometrial hyperplasia เป็นรอยโรคก่อน endometrioid carcinoma; AI มองว่าโจทย์ถามเนื้องอกที่ทำให้เกิด (granulosa cell tumor)",
    "image": null,
    "issues": [
     "ช้อยส์ E AI เติมให้ครบ 5 ตัว",
     "เฉลยขัดกับ AI"
    ],
+   "option_why": {
+    "A": "✓ endometrioid carcinoma (ตามเฉลยต้นฉบับ)",
+    "B": "yolk sac ไม่สัมพันธ์",
+    "C": "AI เลือก granulosa cell tumor (สร้าง estrogen ทำให้ hyperplasia)",
+    "D": "choriocarcinoma ไม่สัมพันธ์",
+    "E": "serous ไม่สัมพันธ์ estrogen"
+   },
+   "key_concept": "• hyperplasia with atypia → endometrioid CA\n• granulosa tumor สร้าง estrogen\n• ต้นฉบับขัดกับ AI → คงต้นฉบับ",
    "audit": {
     "source_file": "preclinic/2/urinary/mcq/ข้อสอบ mcq/MCQ_KUB and Repro [Med PSU 44].pdf",
     "page": 12,
