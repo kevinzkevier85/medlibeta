@@ -1,0 +1,1072 @@
+{
+ "meta": {
+  "set_id": "44_KF",
+  "block": "KUB",
+  "cohort": 44,
+  "type": "KF",
+  "title": "KF KUB and Repro · Med PSU 44",
+  "generated_by": "auditor/tools/build_kf.py from auditor/data/work/kub_44_KF.kf.json — do not edit by hand"
+ },
+ "questions": [
+  {
+   "id": "KUB-44-KF-001",
+   "block": "KUB",
+   "cohort": 44,
+   "n": 1,
+   "type": "KF",
+   "case": "ชายอายุ 25 ปี อุบัติเหตุรถยนต์ ตับแตก เลือดออกในช่องท้อง พบ hypotension หลังรักษา urine output 10 mL/hr. Vital signs: BT 37, PR 100, RR 24, BP 120/80. HEENT: not pale, no icteric sclera. Chest & heart normal. Abdomen soft, no tenderness. UA: sp.gr 1.015, pH 5, protein trace, glucose negative, tubular epithelium 1–2/HPF, RBC negative, WBC 0–1/HPF. Electrolytes: BUN 40, Cr 3, Na 140, HCO₃⁻ 15, Cl 100. Urine: Na 70, Cr 80.",
+   "items": [
+    {
+     "id": "1.1",
+     "prompt": "คำนวณค่า FENa (ให้สูตรมา)",
+     "format": "short",
+     "accepted": [
+      "1.875",
+      "1.875%",
+      "1.88%",
+      "1.9%"
+     ],
+     "keywords_all": [
+      "1.8"
+     ],
+     "key_text": "FENa = (U_Na × P_Cr)/(P_Na × U_Cr) × 100 = (70 × 3)/(140 × 80) × 100 = 1.875%",
+     "source_key": "1.875% (ตามคำนวณลายมือ)",
+     "explanation": "แทน: (70/140) × (3/80) × 100 = 1.875%"
+    },
+    {
+     "id": "1.2",
+     "prompt": "แปลความหมายค่าที่ได้ในข้อ 1.1",
+     "format": "short",
+     "accepted": [
+      "ATN",
+      "acute tubular necrosis",
+      "tubular damage"
+     ],
+     "keywords_all": [
+      "tubular"
+     ],
+     "key_text": "FENa > 1% → ท่อไตดูดกลับ Na⁺ ไม่ดี (เซลล์ท่อไตเสียหาย) สอดคล้อง ATN (ค่า 1–2% เป็นช่วงคาบเกี่ยว)",
+     "source_key": "ท่อไตดูดกลับ Na ลดลง (tubular cell เสียหาย) → ATN",
+     "explanation": "prerenal FENa < 1% ส่วน ATN > 2%; 1.875% ใกล้ ATN + tubular epithelium ในปัสสาวะ"
+    },
+    {
+     "id": "1.3",
+     "prompt": "พยาธิสภาพเกิดที่ไหน",
+     "format": "short",
+     "accepted": [
+      "tubule",
+      "renal tubule",
+      "proximal tubule",
+      "tubular cell",
+      "tubulointerstitial"
+     ],
+     "keywords_all": [
+      "tubul"
+     ],
+     "key_text": "ท่อไต (renal tubular cell) — Acute tubular necrosis",
+     "source_key": "Tubular/interstitial (renal tubule)"
+    },
+    {
+     "id": "1.4",
+     "prompt": "pathophysiology ของ AKI",
+     "format": "short",
+     "accepted": [
+      "hemorrhagic shock",
+      "ATN",
+      "renal blood flow"
+     ],
+     "keywords_all": [
+      "ischemic"
+     ],
+     "key_text": "เสียเลือด/ช็อก → renal blood flow ↓ → tubular cell ขาดเลือด (ischemic) → tubular degeneration/necrosis → tubular cell หลุดอุดท่อ → GFR ↓ → oliguria, azotemia = Acute tubular necrosis",
+     "source_key": "Hemorrhagic shock → ↓ renal blood flow → ischemic tubular cell → tubular degeneration → oliguria, azotemia (ATN)",
+     "mechanism": [
+      "เสียเลือด/ hypotension",
+      "renal blood flow ↓",
+      "tubular cell ขาดเลือด (ischemic)",
+      "tubular necrosis/ถูกอุดด้วยเศษเซลล์",
+      "GFR ↓ → oliguria + azotemia"
+     ]
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF44",
+     "pages": [
+      1
+     ]
+    },
+    {
+     "paper": "KF44-KEY",
+     "pages": [
+      1
+     ]
+    }
+   ],
+   "tags": [
+    "ATN",
+    "FENa",
+    "AKI"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "ATN จากช็อกเสียเลือด: FENa > 1–2%, tubular cell ในปัสสาวะ"
+  },
+  {
+   "id": "KUB-44-KF-002",
+   "block": "KUB",
+   "cohort": 44,
+   "n": 2,
+   "type": "KF",
+   "case": "เด็ก 4 ปี ไม่โต (ตัวเท่าเด็ก 1 ปี). UA: sp.gr 1.008, pH 6, glucose 1+, protein 1+, RBC 0–1/HPF, WBC 0–1/HPF. Plasma: FBS 90, BUN 10, Cr 0.5, Na 135, K 2.5, Cl 110, HCO₃⁻ 14, Ca 9, PO₄ 2.",
+   "items": [
+    {
+     "id": "2.1",
+     "prompt": "คำนวณ anion gap",
+     "format": "short",
+     "accepted": [
+      "13.5",
+      "13"
+     ],
+     "keywords_all": [
+      "13.5"
+     ],
+     "key_text": "AG = (Na + K) − (Cl + HCO₃⁻) = (135 + 2.5) − (110 + 14) = 13.5 mmol/L (ปกติ 8–16 เมื่อรวม K⁺) → non-AG acidosis",
+     "source_key": "13.5 (ปกติ 8–16 mmol/L)"
+    },
+    {
+     "id": "2.2",
+     "prompt": "พยาธิสภาพเกิดที่ไหนของไต พร้อมเหตุผล?",
+     "format": "short",
+     "accepted": [
+      "proximal tubule",
+      "PCT",
+      "Fanconi syndrome",
+      "Fanconi"
+     ],
+     "keywords_all": [
+      "proximal"
+     ],
+     "key_text": "Proximal convoluted tubule — Fanconi syndrome (glucosuria ทั้งที่ FBS ปกติ, proteinuria เล็กน้อย, HCO₃⁻ ต่ำ, K⁺ ต่ำ, PO₄ ต่ำ, โตช้า)",
+     "source_key": "Fanconi syndrome (proximal tubule dysfunction)"
+    },
+    {
+     "id": "2.3",
+     "prompt": "ทำไม bicarbonate ต่ำ?",
+     "format": "short",
+     "accepted": [
+      "proximal RTA",
+      "bicarbonate loss",
+      "NHE3",
+      "carbonic anhydrase"
+     ],
+     "keywords_all": [
+      "bicarbonate"
+     ],
+     "key_text": "PCT ดูดกลับ HCO₃⁻ ไม่ได้ (Na⁺/H⁺ exchanger, carbonic anhydrase เสีย) → เสีย HCO₃⁻ ทางปัสสาวะ → proximal RTA (type 2) ที่ AG ปกติ",
+     "source_key": "proximal tubule reabsorb HCO₃⁻ ไม่ได้ (NHE/Na–K ATPase dysfunction)",
+     "explanation": "ในภาวะ non-AG acidosis ที่ Cl⁻ สูง (110) ชดเชย"
+    },
+    {
+     "id": "2.4",
+     "prompt": "ทำไมค่า K ในเลือดต่ำ",
+     "format": "short",
+     "accepted": [
+      "K wasting",
+      "aldosterone",
+      "distal delivery"
+     ],
+     "keywords_all": [
+      "potassium"
+     ],
+     "key_text": "Na⁺/น้ำถูกขับมากที่ proximal → น้ำเกลือไป distal มาก + aldosterone ↑ → หลั่ง K⁺ มากขึ้น → hypokalemia",
+     "source_key": "เสีย K⁺ ทางปัสสาวะจาก proximal tubule dysfunction"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF44",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "KF44-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [
+    "Fanconi syndrome",
+    "proximal RTA"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "Fanconi: glucose/HCO₃⁻/K/PO₄ รั่วที่ PCT"
+  },
+  {
+   "id": "KUB-44-KF-004",
+   "block": "KUB",
+   "cohort": 44,
+   "n": 4,
+   "type": "KF",
+   "case": "เบาหวาน ติดเชื้อ กิน penicillin แล้วบวม ความดันสูง oliguria เจ็บเข่า",
+   "items": [
+    {
+     "id": "4.1",
+     "prompt": "อธิบาย pathogenesis of kidney",
+     "format": "short",
+     "accepted": [
+      "drug allergy",
+      "cell-mediated",
+      "type IV hypersensitivity",
+      "AIN"
+     ],
+     "keywords_all": [
+      "hypersensitivity"
+     ],
+     "key_text": "แพ้ยา penicillin → cell-mediated (type IV) hypersensitivity ทำร้าย tubulointerstitium → Acute interstitial nephritis (AIN)",
+     "source_key": "Drug allergy → cell-mediated immune injury to renal tubulointerstitium → AIN (ข้อความ APSGN ถูกขีดฆ่าในเฉลย)",
+     "explanation": "ผื่น/ข้ออักเสบ ร่วมกับ oliguria หลังได้ยา = AIN",
+     "audit_note": "เฉลยลายมือเขียนทั้ง APSGN และ AIN; เลือก AIN ตามประโยคที่ไม่ถูกขีดฆ่า (ผู้ตรวจควรยืนยัน)"
+    },
+    {
+     "id": "4.2",
+     "prompt": "histology พบลักษณะอย่างไร",
+     "format": "short",
+     "accepted": [
+      "interstitial infiltration",
+      "neutrophil eosinophil lymphocyte"
+     ],
+     "keywords_all": [
+      "eosinophil"
+     ],
+     "key_text": "Interstitial infiltration ด้วย neutrophil, eosinophil, lymphocyte (ท่อไตอักเสบ/ บวมของ interstitium)",
+     "source_key": "Interstitial infiltration with neutrophil, eosinophil, lymphocyte"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF44",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "KF44-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [
+    "AIN",
+    "drug allergy"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "AIN จากยา (penicillin): eosinophil + lymphocyte ใน interstitium"
+  },
+  {
+   "id": "KUB-44-KF-005",
+   "block": "KUB",
+   "cohort": 44,
+   "n": 5,
+   "type": "KF",
+   "case": "ปัสสาวะไม่ออก ปัสสาวะไม่สุด เคยผ่าตัด spine อายุ 60 ปี",
+   "items": [
+    {
+     "id": "5.1",
+     "prompt": "condition/disease/disorder 3 อย่างที่เป็นไปได้",
+     "format": "short",
+     "accepted": [
+      "neurogenic bladder",
+      "bladder stone",
+      "BPH",
+      "acute cystitis"
+     ],
+     "keywords_all": [
+      "bladder"
+     ],
+     "key_text": "Neurogenic bladder · bladder stone (lithiasis) · BPH (nodular hyperplasia) · acute cystitis",
+     "source_key": "Neurogenic bladder, Urinary bladder lithiasis, Acute cystitis, BPH (nodular hyperplasia)"
+    },
+    {
+     "id": "5.2",
+     "prompt": "List all part of male urethra",
+     "format": "short",
+     "accepted": [
+      "prostatic membranous spongy"
+     ],
+     "keywords_all": [
+      "prostatic",
+      "membranous",
+      "penile"
+     ],
+     "key_text": "Prostatic urethra · Membranous urethra · Penile (spongy: bulbar + penile) urethra",
+     "source_key": "Prostatic urethra, Membranous urethra, Penile urethra"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF44",
+     "pages": [
+      3
+     ]
+    },
+    {
+     "paper": "KF44-KEY",
+     "pages": [
+      4
+     ]
+    }
+   ],
+   "tags": [
+    "neurogenic bladder",
+    "BPH",
+    "urethra"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "ปัสสาวะไม่สุดหลังผ่าตัด spine → neurogenic bladder ฯลฯ",
+   "audit_note": "ข้อ 5.3 (ผล UA) และ 5.4 (วินิจฉัยจากรูป X-ray) ต้นฉบับไม่มีผลตรวจ/รูปในไฟล์ จึงตัดออก"
+  },
+  {
+   "id": "KUB-44-KF-006",
+   "block": "KUB",
+   "cohort": 44,
+   "n": 6,
+   "type": "KF",
+   "case": "ก้อนที่ขาหนีบเด็กด้านซ้าย เป็นๆ หายๆ ออกตอนร้องไห้",
+   "items": [
+    {
+     "id": "6.1",
+     "prompt": "What is the most likely diagnosis?",
+     "format": "short",
+     "accepted": [
+      "indirect inguinal hernia",
+      "inguinal hernia",
+      "left inguinal hernia"
+     ],
+     "keywords_all": [
+      "hernia"
+     ],
+     "key_text": "Left (indirect) inguinal hernia",
+     "source_key": "Left inguinal hernia"
+    },
+    {
+     "id": "6.2",
+     "prompt": "จงบอก etiology/embryology",
+     "format": "short",
+     "accepted": [
+      "patent processus vaginalis",
+      "processus vaginalis"
+     ],
+     "keywords_all": [
+      "processus vaginalis"
+     ],
+     "key_text": "Processus vaginalis (ถุง peritoneum ที่ตามอัณฑะลงมาตาม gubernaculum) ไม่ปิดหลังอัณฑะลงถุง → ความดันในท้องเพิ่ม (ร้อง/เบ่ง) ดันลำไส้/อวัยวะเข้า inguinal canal หรือ scrotal sac",
+     "source_key": "Gubernaculum ลาก testis จาก retroperitoneum → inguinal canal → scrotal sac; processus vaginalis ไม่ปิด → อวัยวะในท้องเลื่อนเข้า inguinal canal/scrotal sac เมื่อความดันเพิ่ม"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF44",
+     "pages": [
+      3
+     ]
+    },
+    {
+     "paper": "KF44-KEY",
+     "pages": [
+      4
+     ]
+    }
+   ],
+   "tags": [
+    "inguinal hernia",
+    "processus vaginalis"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "เด็ก: indirect inguinal hernia = patent processus vaginalis"
+  },
+  {
+   "id": "KUB-44-KF-007",
+   "block": "KUB",
+   "cohort": 44,
+   "n": 7,
+   "type": "KF",
+   "case": "ให้รูป hypospadias",
+   "items": [
+    {
+     "id": "7.1",
+     "prompt": "What is the most likely diagnosis?",
+     "format": "short",
+     "accepted": [
+      "hypospadias"
+     ],
+     "key_text": "Hypospadias (รูเปิด urethra อยู่ด้านล่าง/ventral)",
+     "source_key": "Hypospadias (urethra เปิดด้าน ventral; epispadias = dorsal)"
+    },
+    {
+     "id": "7.2",
+     "prompt": "จงบอก etiology/embryology",
+     "format": "short",
+     "accepted": [
+      "urethral fold fusion",
+      "genital fold",
+      "incomplete fusion of urethral folds"
+     ],
+     "keywords_all": [
+      "fold"
+     ],
+     "key_text": "urethral (genital) fold หลอมรวมกันไม่สมบูรณ์ → urethra เปิดด้านล่างขององคชาต (ร่วมกับเนื้อเยื่อ prepuce ไม่พอ)",
+     "source_key": "genital fold ปิดไม่สมบูรณ์, preputial tissue"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF44",
+     "pages": [
+      4
+     ]
+    },
+    {
+     "paper": "KF44-KEY",
+     "pages": [
+      5
+     ]
+    }
+   ],
+   "tags": [
+    "hypospadias"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "hypospadias = urethral fold ไม่ fuse",
+   "image": "img/KUB-44-KF-007.jpg",
+   "image_caption": "ภาพองคชาตผิดปกติ (hypospadias)"
+  },
+  {
+   "id": "KUB-44-KF-008",
+   "block": "KUB",
+   "cohort": 44,
+   "n": 8,
+   "type": "KF",
+   "case": "ผู้หญิง แต่มี clitoris enlargement, ultrasound พบ uterus, มี ambiguous genitalia",
+   "items": [
+    {
+     "id": "8.1",
+     "prompt": "What is the most likely diagnosis?",
+     "format": "short",
+     "accepted": [
+      "congenital adrenal hyperplasia",
+      "CAH",
+      "21-hydroxylase deficiency"
+     ],
+     "keywords_all": [
+      "adrenal"
+     ],
+     "key_text": "Congenital adrenal hyperplasia (CAH)",
+     "source_key": "Congenital adrenal hyperplasia"
+    },
+    {
+     "id": "8.2",
+     "prompt": "Pathogenesis of this patient",
+     "format": "short",
+     "accepted": [
+      "enzyme deficiency",
+      "21-hydroxylase",
+      "excess androgen"
+     ],
+     "keywords_all": [
+      "androgen"
+     ],
+     "key_text": "ความผิดปกติของ enzyme ในการสร้าง steroid hormone ที่ต่อมหมวกไต (เช่น 21-hydroxylase) → cortisol ต่ำ → ACTH ↑ → androgen มาก → genital tubercle เป็น clitoris โต/ ambiguous genitalia (46,XX)",
+     "source_key": "Biochemical enzyme defect ใน adrenal steroid biosynthesis → androgen ↑ → genital tubercle เป็น clitoris โต",
+     "mechanism": [
+      "enzyme (21-hydroxylase) บกพร่อง",
+      "cortisol ↓ → ACTH ↑",
+      "androgen ส่วนเกิน",
+      "genital tubercle โต เป็น clitoris/ambiguous genitalia"
+     ]
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF44",
+     "pages": [
+      4
+     ]
+    },
+    {
+     "paper": "KF44-KEY",
+     "pages": [
+      5
+     ]
+    }
+   ],
+   "tags": [
+    "CAH"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "CAH ในหญิง: androgen เกิน → virilization (มีมดลูก)"
+  },
+  {
+   "id": "KUB-44-KF-009",
+   "block": "KUB",
+   "cohort": 44,
+   "n": 9,
+   "type": "KF",
+   "case": "ให้รูป Phimosis",
+   "items": [
+    {
+     "id": "9.1",
+     "prompt": "What is the most likely diagnosis?",
+     "format": "short",
+     "accepted": [
+      "phimosis"
+     ],
+     "key_text": "Phimosis",
+     "source_key": "Phimosis (ตามชื่อรูป)",
+     "key_image": "img/KUB-44-KF-009-key.jpg",
+     "key_image_caption": "ภาพ phimosis ในไฟล์เฉลย"
+    },
+    {
+     "id": "9.2",
+     "prompt": "Management",
+     "format": "short",
+     "accepted": [
+      "topical corticosteroid",
+      "steroid cream",
+      "circumcision"
+     ],
+     "keywords_all": [
+      "circumcision"
+     ],
+     "key_text": "Topical corticosteroid · Circumcision",
+     "source_key": "Topical corticosteroid; Circumcision"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF44",
+     "pages": [
+      5
+     ]
+    },
+    {
+     "paper": "KF44-KEY",
+     "pages": [
+      6
+     ]
+    }
+   ],
+   "tags": [
+    "phimosis"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "phimosis: ทา steroid ก่อน ไม่ได้ผลจึงขลิบ"
+  },
+  {
+   "id": "KUB-44-KF-010",
+   "block": "KUB",
+   "cohort": 44,
+   "n": 10,
+   "type": "KF",
+   "case": "ให้รูป Paraphimosis",
+   "items": [
+    {
+     "id": "10.1",
+     "prompt": "What is the most likely diagnosis?",
+     "format": "short",
+     "accepted": [
+      "paraphimosis"
+     ],
+     "key_text": "Paraphimosis",
+     "source_key": "Paraphimosis (ตามชื่อรูป)",
+     "key_image": "img/KUB-44-KF-010-key.jpg",
+     "key_image_caption": "ภาพ paraphimosis ในไฟล์เฉลย"
+    },
+    {
+     "id": "10.2",
+     "prompt": "Please fill in the blank: Objectives (Systemic nerve block / Local nerve block / Definitive surgery) — Procedures",
+     "format": "short",
+     "accepted": [
+      "dorsal penile nerve block",
+      "dorsal slit",
+      "circumcision"
+     ],
+     "keywords_all": [
+      "dorsal"
+     ],
+     "key_text": "AI ร่าง: Systemic = ยาแก้ปวด/ยาระงับปวดทั่วร่างกาย · Local nerve block = dorsal penile nerve block ก่อน manual reduction · Definitive = dorsal slit หรือ circumcision",
+     "source_key": "ผู้เฉลยเขียนว่า \"ต้องกรอกไหม?!\" (ไม่มีเฉลย) AI ร่างให้",
+     "audit_note": "ต้นฉบับไม่เฉลยตาราง Objectives/Procedures AI ร่างจากหลักการรักษา paraphimosis (ผู้ตรวจควรยืนยัน)"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "KF44",
+     "pages": [
+      5
+     ]
+    },
+    {
+     "paper": "KF44-KEY",
+     "pages": [
+      6
+     ]
+    }
+   ],
+   "tags": [
+    "paraphimosis"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "paraphimosis = ฉุกเฉิน: ลดอาการปวด → manual reduction → dorsal slit/ขลิบ"
+  },
+  {
+   "id": "KUB-44-KF-011",
+   "block": "KUB",
+   "cohort": 44,
+   "n": 11,
+   "type": "KF",
+   "case": "ให้รูป Testicular appendage torsion (ภาพขณะผ่าตัด มีหมายเลข 1–5)",
+   "items": [
+    {
+     "id": "11.1",
+     "prompt": "What is the most likely diagnosis?",
+     "format": "short",
+     "accepted": [
+      "testicular appendage torsion",
+      "torsion of testicular appendage",
+      "torsion of appendix testis"
+     ],
+     "keywords_all": [
+      "appendage"
+     ],
+     "key_text": "Testicular appendage torsion",
+     "source_key": "Testicular appendage torsion"
+    },
+    {
+     "id": "11.2",
+     "prompt": "หมายเลข 3 คืออะไร",
+     "format": "short",
+     "accepted": [
+      "epididymis"
+     ],
+     "key_text": "Epididymis",
+     "source_key": "Epididymis"
+    },
+    {
+     "id": "11.3",
+     "prompt": "หมายเลข 5 คืออะไร",
+     "format": "short",
+     "accepted": [
+      "testis"
+     ],
+     "key_text": "Testis",
+     "source_key": "Testis"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF44",
+     "pages": [
+      5
+     ]
+    },
+    {
+     "paper": "KF44-KEY",
+     "pages": [
+      6
+     ]
+    }
+   ],
+   "tags": [
+    "appendage torsion",
+    "testis"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "torsion ของ appendix testis: ก้อนจุดสีน้ำเงิน (blue dot) ที่ขั้นบนของอัณฑะ",
+   "image": "img/KUB-44-KF-011.jpg",
+   "image_caption": "ภาพขณะผ่าตัด อัณฑะพร้อมหมายเลข 1–5"
+  },
+  {
+   "id": "KUB-44-KF-012",
+   "block": "KUB",
+   "cohort": 44,
+   "n": 12,
+   "type": "KF",
+   "case": "เด็กอายุ 5 ปี อัณฑะบวม trans-illumination test positive",
+   "items": [
+    {
+     "id": "12.1",
+     "prompt": "What is the most likely diagnosis?",
+     "format": "short",
+     "accepted": [
+      "hydrocele"
+     ],
+     "key_text": "Hydrocele",
+     "source_key": "Hydrocele"
+    },
+    {
+     "id": "12.2",
+     "prompt": "จงบอก etiology/embryology",
+     "format": "short",
+     "accepted": [
+      "patent processus vaginalis",
+      "peritoneal fluid"
+     ],
+     "keywords_all": [
+      "processus vaginalis"
+     ],
+     "key_text": "เหมือน inguinal hernia แต่สิ่งที่ลงมาคือน้ำจาก peritoneum (peritoneal fluid) ผ่าน processus vaginalis ที่ไม่ปิด → สะสมใน tunica vaginalis",
+     "source_key": "เหมือน inguinal hernia แต่สิ่งที่ลงมาคือ peritoneal fluid (patent processus vaginalis)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF44",
+     "pages": [
+      6
+     ]
+    },
+    {
+     "paper": "KF44-KEY",
+     "pages": [
+      6
+     ]
+    }
+   ],
+   "tags": [
+    "hydrocele"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "communicating hydrocele = patent processus vaginalis, transilluminate +"
+  },
+  {
+   "id": "KUB-44-KF-013",
+   "block": "KUB",
+   "cohort": 44,
+   "n": 13,
+   "type": "KF",
+   "case": "ให้รูป cryptorchidism",
+   "items": [
+    {
+     "id": "13.1",
+     "prompt": "What is the most likely diagnosis?",
+     "format": "short",
+     "accepted": [
+      "cryptorchidism",
+      "undescended testis"
+     ],
+     "key_text": "Cryptorchidism (undescended testis)",
+     "source_key": "Cryptorchidism (ตามชื่อรูป)",
+     "key_image": "img/KUB-44-KF-013-key.jpg",
+     "key_image_caption": "ภาพ cryptorchidism ในไฟล์เฉลย"
+    },
+    {
+     "id": "13.2",
+     "prompt": "Complication",
+     "format": "short",
+     "accepted": [
+      "seminoma",
+      "germ cell tumor",
+      "infertility"
+     ],
+     "keywords_all": [
+      "infertility"
+     ],
+     "key_text": "Infertility (อัณฑะอยู่ในช่องท้อง อุณหภูมิสูงเกินไปสร้างอสุจิไม่ได้) · seminoma (malignant germ cell tumor)",
+     "source_key": "Infertility (เพราะอยู่ข้างใน อุณหภูมิสูง สร้างสเปิร์มไม่ได้) · Seminoma",
+     "key_image": "img/KUB-44-KF-013b-key.jpg",
+     "key_image_caption": "ภาพประกอบเฉลยข้อ 13 อีกภาพ"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF44",
+     "pages": [
+      6
+     ]
+    },
+    {
+     "paper": "KF44-KEY",
+     "pages": [
+      7
+     ]
+    }
+   ],
+   "tags": [
+    "cryptorchidism"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "cryptorchidism → infertility + germ cell tumor"
+  },
+  {
+   "id": "KUB-44-KF-014",
+   "block": "KUB",
+   "cohort": 44,
+   "n": 14,
+   "type": "KF",
+   "case": "ชายอายุ 20 ปี ตรวจร่างกายพบ parotid gland swelling และ scrotal enlargement",
+   "items": [
+    {
+     "id": "14.1",
+     "prompt": "What is the most likely diagnosis?",
+     "format": "short",
+     "accepted": [
+      "mumps orchitis",
+      "mumps"
+     ],
+     "keywords_all": [
+      "mumps"
+     ],
+     "key_text": "Mumps orchitis",
+     "source_key": "Mumps orchitis"
+    },
+    {
+     "id": "14.2",
+     "prompt": "จงบอก etiology/embryology",
+     "format": "short",
+     "accepted": [
+      "mumps virus",
+      "mumps virus infection"
+     ],
+     "keywords_all": [
+      "mumps"
+     ],
+     "key_text": "Mumps virus infection (paramyxovirus)",
+     "source_key": "Mumps virus infection"
+    },
+    {
+     "id": "14.3",
+     "prompt": "Complication",
+     "format": "short",
+     "accepted": [
+      "infertility"
+     ],
+     "keywords_all": [
+      "infertility"
+     ],
+     "key_text": "Infertility (อัณฑะอักเสบ → ฝ่อ)",
+     "source_key": "Infertility"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF44",
+     "pages": [
+      6
+     ]
+    },
+    {
+     "paper": "KF44-KEY",
+     "pages": [
+      7
+     ]
+    }
+   ],
+   "tags": [
+    "mumps orchitis"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "parotitis + orchitis = mumps; ภาวะแทรกซ้อน: infertility"
+  },
+  {
+   "id": "KUB-44-KF-015",
+   "block": "KUB",
+   "cohort": 44,
+   "n": 15,
+   "type": "KF",
+   "case": "หญิงอายุ 55 ปี มาด้วย post-menopausal bleeding 2 สัปดาห์. ประวัติ: หมดประจำเดือนอายุ 50 ปี, BMI 33.5, เป็น DM ควบคุมด้วย insulin, เคยเป็น PCOS. ขูดมดลูกส่งชิ้นเนื้อพบ endometrium มี back-to-back appearance.",
+   "items": [
+    {
+     "id": "15.1",
+     "prompt": "What is the most likely diagnosis?",
+     "format": "short",
+     "accepted": [
+      "endometrial adenocarcinoma",
+      "endometrial carcinoma",
+      "endometrioid adenocarcinoma"
+     ],
+     "keywords_all": [
+      "endometrial"
+     ],
+     "key_text": "Endometrial adenocarcinoma (endometrioid type) — back-to-back glands, desmoplastic stroma, papillary pattern, squamous differentiation",
+     "source_key": "Endometrial adenocarcinoma (histo: back-to-back gland, desmoplastic stroma, extensive papillary pattern, squamous differentiation)"
+    },
+    {
+     "id": "15.2",
+     "prompt": "พยาธิสภาพเกิดที่อวัยวะใดเป็นหลัก",
+     "format": "short",
+     "accepted": [
+      "endometrium",
+      "uterus"
+     ],
+     "key_text": "Endometrium (ในมดลูก)",
+     "source_key": "Uterus — endometrium"
+    },
+    {
+     "id": "15.3",
+     "prompt": "Pathophysiology",
+     "format": "short",
+     "accepted": [
+      "unopposed estrogen",
+      "PTEN"
+     ],
+     "keywords_all": [
+      "estrogen"
+     ],
+     "key_text": "Unopposed estrogen (อ้วน/ PCOS ไม่ตกไข่ ขาด progesterone) กระตุ้น endometrium proliferate → hyperplasia → carcinoma ร่วมกับ PTEN mutation (tumor suppressor gene)",
+     "source_key": "Unopposed estrogen → endometrium proliferation (proliferative phase ต่อเนื่อง) + PTEN mutation (tumor suppressor gene)",
+     "mechanism": [
+      "อ้วน (adipose aromatize androgen→estrogen)/ PCOS anovulation",
+      "unopposed estrogen (ขาด progesterone)",
+      "endometrium proliferate → hyperplasia",
+      "PTEN mutation → carcinoma"
+     ]
+    },
+    {
+     "id": "15.4",
+     "prompt": "Risk factor ของผู้ป่วยคนนี้มีอะไรบ้าง",
+     "format": "short",
+     "accepted": [
+      "obesity",
+      "PCOS",
+      "diabetes",
+      "unopposed estrogen"
+     ],
+     "keywords_all": [
+      "obesity"
+     ],
+     "key_text": "Obesity (BMI 33.5) · DM · PCOS (anovulation) · unopposed estrogen",
+     "source_key": "Obese (adipose → androgen→estrogen, proinflammatory/free radical → DNA damage), PCOS (anovulation, ขาด progesterone), DM"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF44",
+     "pages": [
+      7
+     ]
+    },
+    {
+     "paper": "KF44-KEY",
+     "pages": [
+      8
+     ]
+    }
+   ],
+   "tags": [
+    "endometrial cancer"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "endometrial CA ← unopposed estrogen (อ้วน, PCOS, DM) + PTEN"
+  },
+  {
+   "id": "KUB-44-KF-016",
+   "block": "KUB",
+   "cohort": 44,
+   "n": 16,
+   "type": "KF",
+   "case": "หญิงอายุ 22 ปี มาด้วย pelvic pain 3 วัน เคยเป็น pelvic inflammatory disease. ประวัติ: sexually active, 3 sexual partners, no contraception, LMP 10 สัปดาห์ที่แล้ว. Pelvic exam: minimal vaginal discharge, อื่นๆ ปกติ. ตรวจอื่น: mass 3 cm ที่ adnexa, plasma hCG สูง, urine pregnancy test positive.",
+   "items": [
+    {
+     "id": "16.1",
+     "prompt": "What is the most likely diagnosis?",
+     "format": "short",
+     "accepted": [
+      "ectopic pregnancy",
+      "tubal pregnancy"
+     ],
+     "keywords_all": [
+      "ectopic"
+     ],
+     "key_text": "Ectopic pregnancy (tubal pregnancy)",
+     "source_key": "Ectopic pregnancy (Tubal pregnancy)"
+    },
+    {
+     "id": "16.2",
+     "prompt": "What are risk factors in this patient?",
+     "format": "short",
+     "accepted": [
+      "pelvic inflammatory disease",
+      "multiple partners"
+     ],
+     "keywords_all": [
+      "PID"
+     ],
+     "key_text": "เคยเป็น PID · คู่นอนหลายคน (เสี่ยง STI) · ไม่คุมกำเนิด",
+     "source_key": "Pelvic inflammatory disease; more than 1 sexual partner"
+    },
+    {
+     "id": "16.3",
+     "prompt": "Describe the pathophysiology of this disease.",
+     "format": "short",
+     "accepted": [
+      "tubal obstruction",
+      "blastocyst implants in fallopian tube"
+     ],
+     "keywords_all": [
+      "tube"
+     ],
+     "key_text": "PID ทำให้ท่อนำไข่ตีบ/อุดตันทางกายวิภาค → blastocyst ฝังตัวที่ fallopian tube แทนที่จะลง endometrium",
+     "source_key": "PID → anatomical tubal obstruction → blastocyst ฝังที่ fallopian tube แทน endometrium",
+     "mechanism": [
+      "PID → ท่อนำไข่ตีบ/ถูกทำลาย cilia",
+      "blastocyst เคลื่อนผ่านไม่ได้",
+      "ฝังตัวใน fallopian tube",
+      "โต → แตก/เลือดออก"
+     ]
+    },
+    {
+     "id": "16.4",
+     "prompt": "Where is the most common site of lesion?",
+     "format": "short",
+     "accepted": [
+      "ampulla",
+      "ampulla of fallopian tube"
+     ],
+     "keywords_all": [
+      "ampulla"
+     ],
+     "key_text": "Ampulla ของ fallopian tube",
+     "source_key": "Ampulla"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF44",
+     "pages": [
+      8
+     ]
+    },
+    {
+     "paper": "KF44-KEY",
+     "pages": [
+      9
+     ]
+    }
+   ],
+   "tags": [
+    "ectopic pregnancy",
+    "PID"
+   ],
+   "source": "claude-mcp",
+   "key_concept": "ectopic: hCG + adnexal mass; พบที่ ampulla บ่อยสุด"
+  }
+ ]
+}
