@@ -1,0 +1,1359 @@
+{
+ "meta": {
+  "set_id": "50_OSPE",
+  "block": "KUB",
+  "cohort": 50,
+  "type": "OSPE",
+  "title": "OSPE KUB and Repro · Med PSU 50",
+  "time_limit_min": 44,
+  "generated_by": "auditor/tools/build_kf.py from auditor/data/work/kub_50_OSPE.kf.json — do not edit by hand"
+ },
+ "questions": [
+  {
+   "id": "KUB-50-OSPE-001",
+   "block": "KUB",
+   "cohort": 50,
+   "n": 1,
+   "type": "OSPE",
+   "station": 1,
+   "stem": "สถานี 1 (Gross Anatomy ข้อ 1) — ภาพกระดูกเชิงกรานพร้อมหมายเลข 1 และภาพ MRI พร้อมเส้น A",
+   "items": [
+    {
+     "id": "1.1",
+     "prompt": "โครงสร้างหมายเลข 1 คืออะไร (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "anterior superior iliac spine",
+      "ASIS"
+     ],
+     "keywords_all": [
+      "anterior superior iliac spine"
+     ],
+     "key_text": "Anterior superior iliac spine (ASIS)",
+     "source_key": "เฉลยลายมือ: Anterior superior iliac spine (ASIS)",
+     "image": "img/KUB-50-OSPE-001.jpg",
+     "image_caption": "กระดูกเชิงกรานพร้อมหมายเลข 1"
+    },
+    {
+     "id": "1.2",
+     "prompt": "โครงสร้างที่เส้น A คืออะไร (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "pelvic inlet",
+      "pubic inlet"
+     ],
+     "keywords_all": [
+      "inlet"
+     ],
+     "key_text": "Pelvic inlet (ผู้เฉลยเขียน \"Pubic inlet\")",
+     "source_key": "เฉลยลายมือ: Pubic inlet",
+     "image": "img/KUB-50-OSPE-001b.jpg",
+     "image_caption": "MRI sagittal อุ้งเชิงกราน เส้น A"
+    },
+    {
+     "id": "1.3",
+     "prompt": "โครงสร้างนี้สำคัญอย่างไรทางสูติศาสตร์ (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "determine whether the pelvis is wide enough for spontaneous delivery",
+      "spontaneous delivery"
+     ],
+     "keywords_all": [
+      "delivery"
+     ],
+     "key_text": "ใช้ประเมินว่าอุ้งเชิงกรานกว้างพอสำหรับการคลอดทางช่องคลอดหรือไม่",
+     "source_key": "เฉลยลายมือ: Use to determine whether the pelvis is wide enough for spontaneous delivery"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE50",
+     "pages": [
+      1
+     ]
+    },
+    {
+     "paper": "OSPE50-KEY",
+     "pages": [
+      1
+     ]
+    }
+   ],
+   "tags": [
+    "pelvis",
+    "obstetrics"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "KUB-50-OSPE-002",
+   "block": "KUB",
+   "cohort": 50,
+   "n": 2,
+   "type": "OSPE",
+   "station": 2,
+   "stem": "สถานี 2 (Gross Anatomy ข้อ 2) — ภาพอวัยวะเพศภายนอกหญิง หมายเลข 1–3",
+   "items": [
+    {
+     "id": "2.1",
+     "prompt": "โครงสร้างหมายเลข 1 คืออะไร (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "glans clitoris",
+      "glans of clitoris"
+     ],
+     "keywords_all": [
+      "glans"
+     ],
+     "key_text": "Glans of clitoris",
+     "source_key": "เฉลยลายมือ: Glans clitoris",
+     "image": "img/KUB-50-OSPE-002.jpg",
+     "image_caption": "อวัยวะเพศภายนอกหญิง"
+    },
+    {
+     "id": "2.2",
+     "prompt": "โครงสร้างหมายเลข 2 คืออะไร (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "external urethral orifice",
+      "external urethral opening"
+     ],
+     "keywords_all": [
+      "urethral"
+     ],
+     "key_text": "External urethral orifice",
+     "source_key": "เฉลยลายมือ: External urethral orifice"
+    },
+    {
+     "id": "2.3",
+     "prompt": "โครงสร้างหมายเลข 3 คืออะไร (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "vaginal opening",
+      "introitus",
+      "vaginal orifice"
+     ],
+     "keywords_all": [
+      "vaginal"
+     ],
+     "key_text": "Vaginal opening (introitus)",
+     "source_key": "เฉลยลายมือ: Vaginal opening"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE50",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "OSPE50-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [
+    "female genitalia"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "KUB-50-OSPE-003",
+   "block": "KUB",
+   "cohort": 50,
+   "n": 3,
+   "type": "OSPE",
+   "station": 3,
+   "stem": "สถานี 3 (Gross Anatomy ข้อ 3) — ภาพตัด sagittal อุ้งเชิงกรานและองคชาต โครงสร้าง A, B, C",
+   "items": [
+    {
+     "id": "3.1",
+     "prompt": "โครงสร้าง A คืออะไร (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "penile urethra",
+      "spongy urethra"
+     ],
+     "keywords_all": [
+      "penile urethra"
+     ],
+     "key_text": "Penile urethra",
+     "source_key": "เฉลยลายมือ: Penile urethra",
+     "image": "img/KUB-50-OSPE-003.jpg",
+     "image_caption": "ภาพตัด sagittal องคชาตและอุ้งเชิงกราน"
+    },
+    {
+     "id": "3.2",
+     "prompt": "โครงสร้าง B คืออะไร (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "prostate gland",
+      "prostate"
+     ],
+     "keywords_all": [
+      "prostate"
+     ],
+     "key_text": "Prostate gland",
+     "source_key": "เฉลยลายมือ: Prostate gland"
+    },
+    {
+     "id": "3.3",
+     "prompt": "โครงสร้าง C คืออะไร (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "corpus cavernosum"
+     ],
+     "keywords_all": [
+      "corpus cavernosum"
+     ],
+     "key_text": "Corpus cavernosum",
+     "source_key": "เฉลยลายมือ: Corpus cavernosum"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE50",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "OSPE50-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [
+    "male genital anatomy"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "KUB-50-OSPE-006",
+   "block": "KUB",
+   "cohort": 50,
+   "n": 6,
+   "type": "OSPE",
+   "station": 6,
+   "stem": "สถานี 6 (Gross Anatomy ข้อ 6) — ภาพ dissection อวัยวะเพศชาย โครงสร้าง A, B, C",
+   "items": [
+    {
+     "id": "6.1",
+     "prompt": "โครงสร้าง A คืออะไร (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "glans penis",
+      "glans of penis"
+     ],
+     "keywords_all": [
+      "glans"
+     ],
+     "key_text": "Glans of penis",
+     "source_key": "เฉลยลายมือ: Glans of penis",
+     "image": "img/KUB-50-OSPE-006.jpg",
+     "image_caption": "dissection อวัยวะเพศชาย"
+    },
+    {
+     "id": "6.2",
+     "prompt": "โครงสร้าง B คืออะไร (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "ischiocavernosus",
+      "ischiocavernosus muscle"
+     ],
+     "keywords_all": [
+      "ischiocavernosus"
+     ],
+     "key_text": "Ischiocavernosus muscle",
+     "source_key": "เฉลยลายมือ: Ischiocavernosus muscle"
+    },
+    {
+     "id": "6.3",
+     "prompt": "โครงสร้าง C คืออะไร (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "bulbospongiosus",
+      "bulbospongiosus muscle"
+     ],
+     "keywords_all": [
+      "bulbospongiosus"
+     ],
+     "key_text": "Bulbospongiosus muscle",
+     "source_key": "เฉลยลายมือ: Bulbospongiosus muscle"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE50",
+     "pages": [
+      3
+     ]
+    },
+    {
+     "paper": "OSPE50-KEY",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [
+    "perineal muscles"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "KUB-50-OSPE-007",
+   "block": "KUB",
+   "cohort": 50,
+   "n": 7,
+   "type": "OSPE",
+   "station": 7,
+   "stem": "สถานี 7 (Laboratory ข้อ 1) — ภาพ histology ของไต หมายเลข 1–8",
+   "items": [
+    {
+     "id": "7.1",
+     "prompt": "หมายเลขใดบ้างที่เป็น proximal convoluted tubule (ตอบเป็นตัวเลข)",
+     "format": "short",
+     "accepted": [
+      "4,7,8",
+      "4 7 8"
+     ],
+     "keywords_all": [
+      "4",
+      "7",
+      "8"
+     ],
+     "key_text": "หมายเลข 4, 7, 8",
+     "source_key": "เฉลยลายมือ: 4, 7, 8",
+     "image": "img/KUB-50-OSPE-007.jpg",
+     "image_caption": "histology ไต หมายเลข 1–8"
+    },
+    {
+     "id": "7.2",
+     "prompt": "โครงสร้างหมายเลข 1 ในวงกลมคืออะไร (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "renal corpuscle",
+      "glomerulus"
+     ],
+     "keywords_all": [
+      "renal corpuscle"
+     ],
+     "key_text": "Renal corpuscle",
+     "source_key": "เฉลยลายมือ: Renal corpuscle"
+    },
+    {
+     "id": "7.3",
+     "prompt": "หน้าที่หลักของหมายเลข 2 คืออะไร (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "glomerular filtration",
+      "filtration"
+     ],
+     "keywords_all": [
+      "filtration"
+     ],
+     "key_text": "Glomerular filtration",
+     "source_key": "เฉลยลายมือ: Glomerular filtration"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE50",
+     "pages": [
+      4
+     ]
+    },
+    {
+     "paper": "OSPE50-KEY",
+     "pages": [
+      4
+     ]
+    }
+   ],
+   "tags": [
+    "renal histology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "KUB-50-OSPE-008",
+   "block": "KUB",
+   "cohort": 50,
+   "n": 8,
+   "type": "OSPE",
+   "station": 8,
+   "stem": "สถานี 8 (Laboratory ข้อ 2) — ภาพ histology ท่อที่มีผนังหลายชั้นและช่องแคบรูปดาว ลูกศรชี้ผนังกล้ามเนื้อ",
+   "items": [
+    {
+     "id": "8.1",
+     "prompt": "โครงสร้างหมายเลข 1 คืออะไร (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "ureter"
+     ],
+     "keywords_all": [
+      "ureter"
+     ],
+     "key_text": "Ureter",
+     "source_key": "เฉลยลายมือ: Ureter",
+     "image": "img/KUB-50-OSPE-008.jpg",
+     "image_caption": "histology ของท่อ (หมายเลข 1)"
+    },
+    {
+     "id": "8.2",
+     "prompt": "หน้าที่หลักของหมายเลข 1 คืออะไร (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "transport urine",
+      "conduct urine from kidney to bladder"
+     ],
+     "keywords_all": [
+      "urine"
+     ],
+     "key_text": "ลำเลียง/เป็นทางผ่านของปัสสาวะจากไตไปกระเพาะปัสสาวะ (peristalsis)",
+     "source_key": "เฉลยลายมือ: ทางผ่านของปัสสาวะ"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE50",
+     "pages": [
+      5
+     ]
+    },
+    {
+     "paper": "OSPE50-KEY",
+     "pages": [
+      5
+     ]
+    }
+   ],
+   "tags": [
+    "ureter histology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "KUB-50-OSPE-009",
+   "block": "KUB",
+   "cohort": 50,
+   "n": 9,
+   "type": "OSPE",
+   "station": 9,
+   "stem": "สถานี 9 (Laboratory ข้อ 3) — ภาพ histology ของอัณฑะ หมายเลข 1–3",
+   "items": [
+    {
+     "id": "9.1",
+     "prompt": "โครงสร้างหมายเลข 1 คืออะไร (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "seminiferous tubule",
+      "testis",
+      "seminiferous tubules"
+     ],
+     "keywords_all": [
+      "seminiferous"
+     ],
+     "key_text": "Seminiferous tubule / testis (ผู้เฉลยเขียน \"not sure\")",
+     "source_key": "เฉลยลายมือ: Seminiferous tubule / testis (not sure)",
+     "audit_note": "ผู้เฉลยไม่มั่นใจ",
+     "image": "img/KUB-50-OSPE-009.jpg",
+     "image_caption": "อัณฑะ หมายเลข 1 และ 2"
+    },
+    {
+     "id": "9.2",
+     "prompt": "โครงสร้างหมายเลข 2 คืออะไร (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "epididymis"
+     ],
+     "keywords_all": [
+      "epididymis"
+     ],
+     "key_text": "Epididymis",
+     "source_key": "เฉลยลายมือ: Epididymis"
+    },
+    {
+     "id": "9.3",
+     "prompt": "หน้าที่หลักของหมายเลข 3 คืออะไร (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "secrete testosterone",
+      "testosterone"
+     ],
+     "keywords_all": [
+      "testosterone"
+     ],
+     "key_text": "หลั่ง testosterone (Leydig cell)",
+     "source_key": "เฉลยลายมือ: หลั่ง testosterone",
+     "image": "img/KUB-50-OSPE-009b.jpg",
+     "image_caption": "อัณฑะ ขยายสูง หมายเลข 3"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE50",
+     "pages": [
+      5
+     ]
+    },
+    {
+     "paper": "OSPE50-KEY",
+     "pages": [
+      5
+     ]
+    }
+   ],
+   "tags": [
+    "testis histology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "KUB-50-OSPE-010",
+   "block": "KUB",
+   "cohort": 50,
+   "n": 10,
+   "type": "OSPE",
+   "station": 10,
+   "stem": "สถานี 10 (Laboratory ข้อ 4) — ภาพ histology 2 ภาพ (A: หลอด/ท่อ, B: หน้าตัดองคชาต)",
+   "items": [
+    {
+     "id": "10.1",
+     "prompt": "หน้าที่หลักของ A คืออะไร (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "ductus deferens",
+      "vas deferens",
+      "transport sperm"
+     ],
+     "keywords_all": [
+      "ductus deferens"
+     ],
+     "key_text": "Ductus deferens — ลำเลียง sperm จาก testis ไปยัง urethra",
+     "source_key": "เฉลยลายมือ: Ductus deferens → ช่องใส่การลำเลียง sperm จาก testis ไปยัง urethra",
+     "image": "img/KUB-50-OSPE-010.jpg",
+     "image_caption": "ภาพ A"
+    },
+    {
+     "id": "10.2",
+     "prompt": "โครงสร้าง B ในวงกลมคืออะไร (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "corpus spongiosum"
+     ],
+     "keywords_all": [
+      "corpus spongiosum"
+     ],
+     "key_text": "Corpus spongiosum",
+     "source_key": "เฉลยลายมือ: Corpus spongiosum",
+     "image": "img/KUB-50-OSPE-010b.jpg",
+     "image_caption": "ภาพ B หน้าตัดองคชาต"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE50",
+     "pages": [
+      6
+     ]
+    },
+    {
+     "paper": "OSPE50-KEY",
+     "pages": [
+      6
+     ]
+    }
+   ],
+   "tags": [
+    "male genital histology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "KUB-50-OSPE-011",
+   "block": "KUB",
+   "cohort": 50,
+   "n": 11,
+   "type": "OSPE",
+   "station": 11,
+   "stem": "สถานี 11 (Laboratory ข้อ 5) — ภาพ gross ของไต",
+   "items": [
+    {
+     "id": "11.1",
+     "prompt": "จงให้การวินิจฉัย (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "ADPKD",
+      "autosomal dominant polycystic kidney disease",
+      "polycystic kidney disease"
+     ],
+     "keywords_all": [
+      "ADPKD"
+     ],
+     "key_text": "Autosomal dominant polycystic kidney disease (ADPKD)",
+     "source_key": "เฉลยลายมือ: Autosomal Dominant Polycystic Kidney Disease (ADPKD)",
+     "image": "img/KUB-50-OSPE-011.jpg",
+     "image_caption": "ภาพ gross ไต"
+    },
+    {
+     "id": "11.2",
+     "prompt": "จงอธิบายลักษณะ gross pathology",
+     "format": "short",
+     "accepted": [
+      "multiple cysts",
+      "enlarged kidney",
+      "cysts"
+     ],
+     "keywords_all": [
+      "cysts"
+     ],
+     "key_text": "ไตโตกว่าปกติ เต็มไปด้วยถุงน้ำขนาดเล็ก–ใหญ่แตกต่างกันจำนวนมาก เนื้อไตปกติลดลง",
+     "source_key": "เฉลยลายมือ: ไตมีขนาดใหญ่กว่าปกติ เต็มไปด้วยถุงน้ำขนาดเล็ก-ใหญ่ แตกต่างกันจำนวนมาก เนื้อไตปกติลดลง",
+     "audit_note": "ลายมือตัวเล็ก อ่านได้ตามนี้"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE50",
+     "pages": [
+      6
+     ]
+    },
+    {
+     "paper": "OSPE50-KEY",
+     "pages": [
+      6
+     ]
+    }
+   ],
+   "tags": [
+    "ADPKD"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "KUB-50-OSPE-012",
+   "block": "KUB",
+   "cohort": 50,
+   "n": 12,
+   "type": "OSPE",
+   "station": 12,
+   "stem": "สถานี 12 (Laboratory ข้อ 6) — ภาพ gross ของกระเพาะปัสสาวะ (ลูกศรสีแดงชี้ผนังที่หนาตัว)",
+   "items": [
+    {
+     "id": "12.1",
+     "prompt": "จงให้การวินิจฉัย (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "urothelial carcinoma",
+      "transitional cell carcinoma"
+     ],
+     "keywords_all": [
+      "urothelial"
+     ],
+     "key_text": "Urothelial carcinoma (urinary bladder)",
+     "source_key": "เฉลยลายมือ: Urothelial carcinoma (Urinary bladder)",
+     "image": "img/KUB-50-OSPE-012.jpg",
+     "image_caption": "กระเพาะปัสสาวะที่มีก้อน"
+    },
+    {
+     "id": "12.2",
+     "prompt": "จงอธิบาย histopathology",
+     "format": "short",
+     "accepted": [
+      "papillary",
+      "invasive"
+     ],
+     "keywords_all": [
+      "papillary"
+     ],
+     "key_text": "มี 2 แบบ: (1) เนื้องอกหนาตัวเฉพาะที่และแทรกเข้าผนัง (invasive) (2) แบบ papillary ยื่นเข้าไปใน lumen ของกระเพาะปัสสาวะ (พบบ่อย)",
+     "source_key": "เฉลยลายมือ: มี 2 แบบ 1) หนาตัวขึ้นเฉพาะที่และแทรกเข้าผนังกระเพาะปัสสาวะ 2) แบบ papillary ยื่นเข้าไปใน lumen ของ urinary bladder (ลักษณะนี้พบได้บ่อย)",
+     "audit_note": "ลายมือตัวเล็กอ่านยาก ถอดความตามที่อ่านได้"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE50",
+     "pages": [
+      7
+     ]
+    },
+    {
+     "paper": "OSPE50-KEY",
+     "pages": [
+      7
+     ]
+    }
+   ],
+   "tags": [
+    "urothelial carcinoma"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "KUB-50-OSPE-013",
+   "block": "KUB",
+   "cohort": 50,
+   "n": 13,
+   "type": "OSPE",
+   "station": 13,
+   "stem": "สถานี 13 (Laboratory ข้อ 7) — ปัสสาวะ 3 ตัวอย่าง (A ขุ่นขาว, B สีน้ำตาลเข้ม, C สีแดง)",
+   "items": [
+    {
+     "id": "13.1",
+     "prompt": "ผู้ป่วยมา รพ. ด้วย pyuria ตัวอย่าง A จงให้สาร 2 ชนิดที่ให้ผลบวกใน dipstick (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "nitrite",
+      "leukocyte esterase"
+     ],
+     "keywords_all": [
+      "nitrite",
+      "leukocyte esterase"
+     ],
+     "key_text": "Nitrite · leukocyte esterase",
+     "source_key": "เฉลยลายมือ: Nitrite +, Leukocyte esterase +",
+     "image": "img/KUB-50-OSPE-013.jpg",
+     "image_caption": "ปัสสาวะตัวอย่าง A, B, C"
+    },
+    {
+     "id": "13.2",
+     "prompt": "ตัวอย่าง B สารใดจะให้ผลบวกบน dipstick (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "bilirubin"
+     ],
+     "keywords_all": [
+      "bilirubin"
+     ],
+     "key_text": "Bilirubin",
+     "source_key": "เฉลยลายมือ: Bilirubin"
+    },
+    {
+     "id": "13.3",
+     "prompt": "จงให้ 2 โรคที่ทำให้ปัสสาวะตัวอย่าง C มีสีแดง (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "nephritic syndrome",
+      "acute interstitial nephritis",
+      "AIN"
+     ],
+     "keywords_all": [
+      "nephritic",
+      "AIN"
+     ],
+     "key_text": "Nephritic syndrome · acute interstitial nephritis (AIN)",
+     "source_key": "เฉลยลายมือ: Nephritic syndrome, Acute Interstitial Nephritis (AIN)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE50",
+     "pages": [
+      8
+     ]
+    },
+    {
+     "paper": "OSPE50-KEY",
+     "pages": [
+      8
+     ]
+    }
+   ],
+   "tags": [
+    "urine appearance"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "KUB-50-OSPE-014",
+   "block": "KUB",
+   "cohort": 50,
+   "n": 14,
+   "type": "OSPE",
+   "station": 14,
+   "stem": "สถานี 14 (Laboratory ข้อ 8) — ภาพกล้องจุลทรรศน์ตะกอนปัสสาวะ (cast ที่มีหยดไขมัน)",
+   "items": [
+    {
+     "id": "14.1",
+     "prompt": "เป็น cast ชนิดใด (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "fatty cast"
+     ],
+     "keywords_all": [
+      "fatty"
+     ],
+     "key_text": "Fatty cast",
+     "source_key": "เฉลยลายมือ: Fatty cast",
+     "image": "img/KUB-50-OSPE-014.jpg",
+     "image_caption": "ตะกอน cast ในปัสสาวะ"
+    },
+    {
+     "id": "14.2",
+     "prompt": "พบ cast นี้ในผู้ป่วยโรคอะไร (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "nephrotic syndrome"
+     ],
+     "keywords_all": [
+      "nephrotic"
+     ],
+     "key_text": "Nephrotic syndrome",
+     "source_key": "เฉลยลายมือ: Nephrotic syndrome"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE50",
+     "pages": [
+      8
+     ]
+    },
+    {
+     "paper": "OSPE50-KEY",
+     "pages": [
+      8
+     ]
+    }
+   ],
+   "tags": [
+    "urinary cast",
+    "nephrotic syndrome"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "KUB-50-OSPE-015",
+   "block": "KUB",
+   "cohort": 50,
+   "n": 15,
+   "type": "OSPE",
+   "station": 15,
+   "stem": "สถานี 15 (Laboratory ข้อ 9) — ผู้ป่วยหญิง 21 ปี ถ่ายเหลว 1 วัน ปัสสาวะแสบขัด. Urinalysis: WBC numerous/HPF, RBC 2–3/HPF. Urine culture: Delftia acidovorans 100,000 CFU/mL. ความไวต่อยา: amikacin sensitive, ciprofloxacin sensitive, cotrimoxazole resistant (ไม่ใช่โจทย์จริง)",
+   "items": [
+    {
+     "id": "15.1",
+     "prompt": "ผู้ป่วยรายนี้ติดเชื้อ UTI หรือไม่ ถ้าติดติดเชื้อตัวใด (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "Delftia acidovorans",
+      "UTI"
+     ],
+     "keywords_all": [
+      "Delftia"
+     ],
+     "key_text": "ติดเชื้อ — Delftia acidovorans",
+     "source_key": "เฉลยลายมือ: ติดเชื้อ Delftia acidovorans"
+    },
+    {
+     "id": "15.2",
+     "prompt": "ต้องได้รับการรักษาหรือไม่ ถ้าต้องควรให้ยาตัวใด (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "ciprofloxacin"
+     ],
+     "keywords_all": [
+      "ciprofloxacin"
+     ],
+     "key_text": "ต้องรักษา — ciprofloxacin",
+     "source_key": "เฉลยลายมือ: ต้องได้รับการรักษา Ciprofloxacin"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE50",
+     "pages": [
+      9
+     ]
+    },
+    {
+     "paper": "OSPE50-KEY",
+     "pages": [
+      9
+     ]
+    }
+   ],
+   "tags": [
+    "UTI",
+    "urine culture"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "KUB-50-OSPE-016",
+   "block": "KUB",
+   "cohort": 50,
+   "n": 16,
+   "type": "OSPE",
+   "station": 16,
+   "stem": "สถานี 16 (Laboratory ข้อ 10) — เก็บ midstream clean-catch urine จากผู้ป่วยอายุ 64 ปี มีไข้และปวดบั้นเอวข้างขวา. Urinalysis: WBC 50–100/HPF, RBC 5–10/HPF, squamous epithelial cell 10–20/HPF. Urine culture: Group A hemolytic streptococci 1,000 CFU/mL และ Escherichia coli 50,000 CFU/mL. ความไวต่อยา: ciprofloxacin sensitive, trimethoprim sensitive, nitrofurantoin sensitive (ไม่ใช่โจทย์จริง)",
+   "items": [
+    {
+     "id": "16.1",
+     "prompt": "ผู้ป่วยรายนี้ติดเชื้อ UTI หรือไม่ ถ้าติดติดเชื้อตัวใด (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "E. coli",
+      "Escherichia coli"
+     ],
+     "keywords_all": [
+      "E. coli"
+     ],
+     "key_text": "ติดเชื้อ — Escherichia coli",
+     "source_key": "เฉลยลายมือ: Escherichia coli"
+    },
+    {
+     "id": "16.2",
+     "prompt": "ต้องได้รับการรักษาหรือไม่ ถ้าต้องควรให้ยาตัวใด (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "ciprofloxacin"
+     ],
+     "keywords_all": [
+      "ciprofloxacin"
+     ],
+     "key_text": "Ciprofloxacin",
+     "source_key": "เฉลยลายมือ: Ciprofloxacin"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE50",
+     "pages": [
+      9
+     ]
+    },
+    {
+     "paper": "OSPE50-KEY",
+     "pages": [
+      9
+     ]
+    }
+   ],
+   "tags": [
+    "UTI",
+    "urine culture"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "KUB-50-OSPE-017",
+   "block": "KUB",
+   "cohort": 50,
+   "n": 17,
+   "type": "OSPE",
+   "station": 17,
+   "stem": "สถานี 17 (Laboratory ข้อ 11) — ภาพ gross ของอัณฑะและถุงน้ำรอบอัณฑะ",
+   "items": [
+    {
+     "id": "17.1",
+     "prompt": "จงให้การวินิจฉัย (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "testicular hydrocele",
+      "hydrocele"
+     ],
+     "keywords_all": [
+      "hydrocele"
+     ],
+     "key_text": "Testicular hydrocele",
+     "source_key": "เฉลยลายมือ: Testicular hydrocele",
+     "image": "img/KUB-50-OSPE-017.jpg",
+     "image_caption": "ภาพ gross hydrocele"
+    },
+    {
+     "id": "17.2",
+     "prompt": "ผู้ป่วยมักมาด้วยอาการอะไร",
+     "format": "short",
+     "accepted": [
+      "scrotal swelling",
+      "ถุงอัณฑะโต",
+      "painless scrotal swelling"
+     ],
+     "keywords_all": [
+      "ถุงอัณฑะ"
+     ],
+     "key_text": "ถุงอัณฑะโตกว่าปกติ (มักไม่เจ็บ)",
+     "source_key": "เฉลยลายมือ: ถุงอัณฑะโตกว่าปกติ"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE50",
+     "pages": [
+      10
+     ]
+    },
+    {
+     "paper": "OSPE50-KEY",
+     "pages": [
+      10
+     ]
+    }
+   ],
+   "tags": [
+    "hydrocele"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "KUB-50-OSPE-018",
+   "block": "KUB",
+   "cohort": 50,
+   "n": 18,
+   "type": "OSPE",
+   "station": 18,
+   "stem": "สถานี 18 (Laboratory ข้อ 12) — ภาพ histology ต่อมลูกหมาก",
+   "items": [
+    {
+     "id": "18.1",
+     "prompt": "การแยกทาง histopathology ของต่อมลูกหมากว่าเป็น benign/malignant แยกได้อย่างไร",
+     "format": "short",
+     "accepted": [
+      "two layers",
+      "one layer",
+      "basal cell layer",
+      "adenocarcinoma 1 layer"
+     ],
+     "keywords_all": [
+      "layer"
+     ],
+     "key_text": "ดูการเรียงตัวเป็นชั้นของต่อม: BPH มี 2 ชั้น (basal + luminal cell) → benign · adenocarcinoma มี 1 ชั้น (ไม่มี basal cell) → malignant",
+     "source_key": "เฉลยลายมือ: การเรียงตัวเป็นชั้นของ gland ใน prostate (BPH 2 ชั้น → benign, Adenocarcinoma 1 ชั้น → malignant)",
+     "image": "img/KUB-50-OSPE-018.jpg",
+     "image_caption": "histology ต่อมลูกหมาก"
+    },
+    {
+     "id": "18.2",
+     "prompt": "จะเจาะเลือดตรวจค่าอะไรเพื่อช่วยวินิจฉัยโรคดังกล่าว (ตอบชื่อเต็มภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "prostate specific antigen",
+      "prostate-specific antigen",
+      "PSA"
+     ],
+     "keywords_all": [
+      "prostate specific antigen"
+     ],
+     "key_text": "Prostate-specific antigen (PSA)",
+     "source_key": "เฉลยลายมือ: Prostate Specific Antigen (PSA)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE50",
+     "pages": [
+      10
+     ]
+    },
+    {
+     "paper": "OSPE50-KEY",
+     "pages": [
+      10
+     ]
+    }
+   ],
+   "tags": [
+    "prostate",
+    "BPH vs cancer"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "KUB-50-OSPE-019",
+   "block": "KUB",
+   "cohort": 50,
+   "n": 19,
+   "type": "OSPE",
+   "station": 19,
+   "stem": "สถานี 19 (Laboratory ข้อ 13) — ภาพ histology 2 ภาพ: A (follicle ในรังไข่), B (เยื่อบุโพรงมดลูก)",
+   "items": [
+    {
+     "id": "19.1",
+     "prompt": "โครงสร้าง A คืออะไร (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "theca interna"
+     ],
+     "keywords_all": [
+      "theca interna"
+     ],
+     "key_text": "Theca interna",
+     "source_key": "เฉลยลายมือ: Theca interna",
+     "image": "img/KUB-50-OSPE-019.jpg",
+     "image_caption": "ภาพ A: follicle ในรังไข่"
+    },
+    {
+     "id": "19.2",
+     "prompt": "ฮอร์โมนใดที่หลั่งจากโครงสร้าง A (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "androstenedione",
+      "androgen"
+     ],
+     "keywords_all": [
+      "androstenedione"
+     ],
+     "key_text": "Androstenedione",
+     "source_key": "เฉลยลายมือ: Androstenedione"
+    },
+    {
+     "id": "19.3",
+     "prompt": "ภาพ B มดลูกอยู่ใน phase ใด (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "proliferative phase",
+      "proliferative"
+     ],
+     "keywords_all": [
+      "proliferative"
+     ],
+     "key_text": "Proliferative phase",
+     "source_key": "เฉลยลายมือ: Proliferative phase",
+     "image": "img/KUB-50-OSPE-019b.jpg",
+     "image_caption": "ภาพ B: เยื่อบุโพรงมดลูก"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE50",
+     "pages": [
+      11
+     ]
+    },
+    {
+     "paper": "OSPE50-KEY",
+     "pages": [
+      11
+     ]
+    }
+   ],
+   "tags": [
+    "ovary histology",
+    "menstrual cycle"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "KUB-50-OSPE-020",
+   "block": "KUB",
+   "cohort": 50,
+   "n": 20,
+   "type": "OSPE",
+   "station": 20,
+   "stem": "สถานี 20 (Laboratory ข้อ 14) — ภาพ histology ของปากมดลูก (ลูกศร A ที่ผิวนอก)",
+   "items": [
+    {
+     "id": "20.1",
+     "prompt": "โครงสร้าง A คืออะไร (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "ectocervix"
+     ],
+     "keywords_all": [
+      "ectocervix"
+     ],
+     "key_text": "Ectocervix",
+     "source_key": "เฉลยลายมือ: Ectocervix",
+     "image": "img/KUB-50-OSPE-020.jpg",
+     "image_caption": "histology ปากมดลูก"
+    },
+    {
+     "id": "20.2",
+     "prompt": "ฮอร์โมนใดที่ควบคุมต่อมในอวัยวะนี้ (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "estrogen",
+      "progesterone",
+      "estrogen/progesterone"
+     ],
+     "keywords_all": [
+      "estrogen"
+     ],
+     "key_text": "Estrogen / progesterone",
+     "source_key": "เฉลยลายมือ: Estrogen / Progesterone"
+    },
+    {
+     "id": "20.3",
+     "prompt": "ลักษณะ (pattern) ของ gross specimen ในวันที่ 14 ของรอบประจำเดือนเป็นอย่างไร (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "fern-like pattern",
+      "ferning"
+     ],
+     "keywords_all": [
+      "fern"
+     ],
+     "key_text": "Fern-like pattern",
+     "source_key": "เฉลยลายมือ: Fern-like pattern"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE50",
+     "pages": [
+      11
+     ]
+    },
+    {
+     "paper": "OSPE50-KEY",
+     "pages": [
+      11
+     ]
+    }
+   ],
+   "tags": [
+    "cervix histology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "KUB-50-OSPE-021",
+   "block": "KUB",
+   "cohort": 50,
+   "n": 21,
+   "type": "OSPE",
+   "station": 21,
+   "stem": "สถานี 21 (Laboratory ข้อ 15) — ภาพ gross มดลูก (ก้อนสีขาวฝังในผนังกล้ามเนื้อ)",
+   "items": [
+    {
+     "id": "21.1",
+     "prompt": "จงอธิบายลักษณะ gross",
+     "format": "short",
+     "accepted": [
+      "white mass",
+      "well-circumscribed",
+      "whorled"
+     ],
+     "keywords_all": [
+      "ก้อน"
+     ],
+     "key_text": "ก้อนสีขาว ขอบเขตชัดเจน หนาแน่น ลักษณะเป็นวงๆ (whorled) อยู่ภายในผนังกล้ามเนื้อมดลูก",
+     "source_key": "เฉลยลายมือ: มีก้อนสีขาว ขอบชัดเจน หนาแน่น เป็นเนื้อ ลักษณะเป็นวงๆ อยู่ภายในผนังกล้ามเนื้อมดลูก",
+     "audit_note": "ลายมือตัวเล็ก ถอดความตามที่อ่านได้",
+     "image": "img/KUB-50-OSPE-021.jpg",
+     "image_caption": "ภาพ gross มดลูกมีก้อนสีขาว"
+    },
+    {
+     "id": "21.2",
+     "prompt": "จงให้การวินิจฉัยที่ถูกต้อง (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "intramural leiomyoma",
+      "leiomyoma",
+      "uterine fibroid"
+     ],
+     "keywords_all": [
+      "leiomyoma"
+     ],
+     "key_text": "Intramural leiomyoma",
+     "source_key": "เฉลยลายมือ: Intramural leiomyoma"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE50",
+     "pages": [
+      12
+     ]
+    },
+    {
+     "paper": "OSPE50-KEY",
+     "pages": [
+      12
+     ]
+    }
+   ],
+   "tags": [
+    "leiomyoma"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "KUB-50-OSPE-022",
+   "block": "KUB",
+   "cohort": 50,
+   "n": 22,
+   "type": "OSPE",
+   "station": 22,
+   "stem": "สถานี 22 (Laboratory ข้อ 16) — ภาพ histology (villi บวมน้ำ trophoblast เพิ่มจำนวน)",
+   "items": [
+    {
+     "id": "22.1",
+     "prompt": "จงอธิบาย histological appearance",
+     "format": "short",
+     "accepted": [
+      "hydropic villi",
+      "trophoblast proliferation"
+     ],
+     "keywords_all": [
+      "hydropic"
+     ],
+     "key_text": "Chorionic villi บวมน้ำมากกว่าปกติ (hydropic villi) · trophoblast เพิ่มจำนวนมากเกินไป (trophoblast proliferation)",
+     "source_key": "เฉลยลายมือ: Chronic villi บวมน้ำ และมีขนาดใหญ่ → Hydropic villi; มีการเพิ่มจำนวน trophoblast → Trophoblast proliferation",
+     "image": "img/KUB-50-OSPE-022.jpg",
+     "image_caption": "histology villi บวมน้ำ"
+    },
+    {
+     "id": "22.2",
+     "prompt": "จงให้การวินิจฉัยที่ถูกต้อง (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "hydatidiform mole",
+      "molar pregnancy"
+     ],
+     "keywords_all": [
+      "mole"
+     ],
+     "key_text": "Hydatidiform mole",
+     "source_key": "เฉลยลายมือ: Hydatidiform mole"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE50",
+     "pages": [
+      12
+     ]
+    },
+    {
+     "paper": "OSPE50-KEY",
+     "pages": [
+      12
+     ]
+    }
+   ],
+   "tags": [
+    "hydatidiform mole"
+   ],
+   "source": "claude-mcp"
+  }
+ ]
+}
