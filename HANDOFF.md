@@ -38,14 +38,14 @@
 | END (Endocrine) | 9 ชุด + lecture + แผนอ่าน | 9 ชุด | 9 ชุด 156 สถานี |
 | GI | 10 ชุด 864 ข้อ (เฉลยแบบปี 52 ครบ) | 9 ชุด 196 ข้อ | 7 ชุด 193 สถานี |
 | KUB | 10 ชุด 722 ข้อ (แบบปี 52 ทุกชุด) | 10 ชุด 129 ข้อ | 7 ชุด 124 สถานี |
-| CVS | 11 ชุด (import เก่า) | – | – |
+| CVS | 11 ชุด (import เก่า) · ai_answer 11 ข้อ | – | – |
 - ข้อที่เฉลยต้นฉบับ ≠ AI: มี `ai_answer` ในข้อ + ปุ่ม "เชื่อต้นฉบับ/เชื่อ AI" · ก่อนกดใช้เฉลยรุ่นอื่นส่วนใหญ่ (`same_side`)
 
 ## 4. วิธีทำงานกับข้อมูล (สำคัญ)
 - **ห้ามแก้** `data/blocks/*/exams/*.json` ที่มี `generated_by` ด้วยมือ → แก้ต้นทางใน `auditor/` แล้ว build ใหม่
   - เปลี่ยนเฉลย MCQ: เพิ่มใน `auditor/data/decisions.json` `{"<set>_<NNN>": {"answer":"E","note":"…"}}` → `python3 auditor/tools/build_work.py --set <set>` → `python3 auditor/tools/build_outputs.py --block <end|gi>`
   - แก้โจทย์ MCQ: `auditor/data/work/<set>.repair.json` → questions.<เลข>.edits `[{"field":"stem","old":"…","new":"…"}]` แล้ว build เหมือนข้างบน
-  - **OSPE: ข้อความสถานี (case) และคำถาม (prompt) ต้องเป็นภาษาไทย** ศัพท์แพทย์คงอังกฤษ ต่อท้าย `(ตอบภาษาอังกฤษ)` เพราะ accepted เป็นอังกฤษ (ผู้ใช้สั่ง 2026-11-09; END ทำแล้ว · GI 7 ชุดยังเป็นอังกฤษ)
+  - **OSPE: ข้อความสถานี (case) และคำถาม (prompt) ต้องเป็นภาษาไทย** ศัพท์แพทย์คงอังกฤษ ต่อท้าย `(ตอบภาษาอังกฤษ)` เพราะ accepted เป็นอังกฤษ (ผู้ใช้สั่ง 2026-11-09; END และ GI ทำแล้ว)
   - KF/OSPE: แก้ `auditor/data/work/<set>.kf.json` → `python3 auditor/tools/build_kf.py --set <set>`
 - ชุดใหม่ (MCQ): `extract.py --set` → `parse_mcq.py` → AI ตอบเองก่อนดูเฉลย (`blind.json`) → อ่านเฉลย (`key.json`) → `repair.json` → รูปใน `auditor/data/images.json` + `crop_images.py` → build · ขั้นละเอียด: `prompt-exam-auditor.md`
 - กติกาเฉลย: AI ไม่เห็นด้วย = เก็บเฉลยต้นฉบับ ติด disputed · ไม่มีเฉลย = AI ร่าง ติด draft · อย่าเดาเกินที่ภาพบอก
@@ -60,7 +60,7 @@
 
 ## 6. ถัดไป (เรียงลำดับ)
 1. KUB ครบแล้ว รอ PR #38 merge · ถัดไป GI MCQ 43–52 เฉลยแบบปี 52 (branch แยก) · commit+push ทุกชุดพร้อมบรรทัด `ถัดไป:`
-2. CVS: 14 ข้อเฉลยขัด ยังไม่มี `ai_answer`
+2. CVS: เฉลยขัดที่ยังไม่มี `ai_answer` เหลือ 3 MCQ (49-019 ไม่มีตัวเลือกถูก · 50-049 · 51-011 ไม่แน่ใจ) + KF 51-001/006 + OSPE 51-011
 3. ข้อ draft ที่ต้นฉบับไม่มีเฉลย รอคนตรวจ
 
 ## 7. อ่านเพิ่มเมื่อจำเป็นเท่านั้น
