@@ -1,6 +1,6 @@
 # REVIEW — รายการรอผู้ใช้ตัดสิน
 
-ทั้งหมด 711 รายการ
+ทั้งหมด 721 รายการ
 วิธีตอบ: พิมพ์ในแชทเป็นบรรทัด เช่น `end_52_MCQ_027: คงเดิม` / `end_52_MCQ_063: C` / `end_52_MCQ_046: ตรวจใหม่`
 Claude จะบันทึกลง `auditor/data/decisions.json` แล้ว build ใหม่
 
@@ -612,6 +612,16 @@ Claude จะบันทึกลง `auditor/data/decisions.json` แล้ว
 | kub_52_MCQ_045 | B | A | mid | เฉลยขัดกับ AI |   |
 | kub_52_MCQ_060 | B | A | mid | เฉลยขัดกับ AI | AI ตอบ Leydig cell; ต้นฉบับ Sertoli cell (tumor หลั่ง estrogen)  |
 | kub_52_MCQ_096 | D | C | mid | เฉลยขัดกับ AI |   |
+| resp_45_MCQ_004 | None | None | None | AI เขียนข้อนี้ขึ้นใหม่จากโน้ตความจำในต้นฉบับ |   |
+| resp_45_MCQ_005 | None | B | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| resp_45_MCQ_008 | ['B', 'D'] | B | mid | ต้นฉบับวงไว้หลายตัว |   |
+| resp_45_MCQ_011 | ['B', 'C'] | B | mid | ต้นฉบับวงไว้หลายตัว |   |
+| resp_45_MCQ_014 | ['B', 'D'] | C | low | ต้นฉบับวงไว้หลายตัว |   |
+| resp_45_MCQ_020 | B | E | low | เฉลยขัดกับ AI |   |
+| resp_45_MCQ_028 | None | None | None | AI เขียนข้อนี้ขึ้นใหม่จากโน้ตความจำในต้นฉบับ |   |
+| resp_45_MCQ_031 | None | None | None | AI เขียนข้อนี้ขึ้นใหม่จากโน้ตความจำในต้นฉบับ |   |
+| resp_45_MCQ_034 | None | C | low | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| resp_45_MCQ_036 | None | None | None | AI เขียนข้อนี้ขึ้นใหม่จากโน้ตความจำในต้นฉบับ |   |
 | resp_46_MCQ_004 | E | C | mid | เฉลยขัดกับ AI |   |
 | resp_46_MCQ_010 | None | E | low | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
 | resp_46_MCQ_016 | E | B | low | เฉลยขัดกับ AI |   |
