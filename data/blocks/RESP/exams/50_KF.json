@@ -1,0 +1,859 @@
+{
+ "meta": {
+  "set_id": "50_KF",
+  "block": "RESP",
+  "cohort": 50,
+  "type": "KF",
+  "title": "KF Respiratory · Med PSU 50",
+  "time_limit_min": 120,
+  "generated_by": "auditor/tools/build_kf.py from auditor/data/work/resp_50_KF.kf.json — do not edit by hand"
+ },
+ "questions": [
+  {
+   "id": "RESP-50-KF-001",
+   "block": "RESP",
+   "cohort": 50,
+   "n": 1,
+   "type": "KF",
+   "case": "เด็กหญิงอายุ 7 ปี วินิจฉัย asthma เมื่อ 2 ปีก่อน คุมอาการได้ดี 3 วันก่อนมา รพ. เหนื่อย ไอ นั่งพักไม่ดีขึ้น หายใจมีเสียงวี้ดตลอด น้ำมูกขาวใส · Agitated RR 30 PR 120 SaO₂ 94% · wheezing ทั้งสองข้าง",
+   "items": [
+    {
+     "id": "1.1",
+     "prompt": "ชื่อกลุ่มยาและวิธีบริหารยาที่ดีที่สุดเพื่อแก้ไขอาการขณะนั้น",
+     "format": "short",
+     "accepted": [
+      "beta 2",
+      "β2",
+      "salbutamol",
+      "albuterol",
+      "saba",
+      "inhal",
+      "พ่น"
+     ],
+     "keywords_all": [
+      "agonist"
+     ],
+     "key_text": "กลุ่มยา: short-acting β₂ agonist (เช่น salbutamol/albuterol); วิธีบริหาร: พ่นสูดทางปาก (inhalation, MDI + spacer หรือ nebulizer)",
+     "source_key": "เฉลย: กลุ่มยา: short-acting β₂ agonist (เช่น salbutamol/albuterol); วิธีบริหาร: พ่นสูดทางปาก (inhalation, MDI + spacer หรือ nebulizer)"
+    },
+    {
+     "id": "1.2",
+     "prompt": "อาการข้างเคียงของยาข้อ 1.1 (4 อย่าง)",
+     "format": "short",
+     "accepted": [
+      "tremor",
+      "tachycardia",
+      "palpitation",
+      "hypokalemia",
+      "headache",
+      "nervous"
+     ],
+     "keywords_all": [
+      "tremor"
+     ],
+     "key_text": "Tremor, tachycardia/palpitation, hypokalemia, headache/nervousness",
+     "source_key": "เฉลย: Tremor, tachycardia/palpitation, hypokalemia, headache/nervousness"
+    },
+    {
+     "id": "1.3",
+     "prompt": "กลไกการออกฤทธิ์ของ formoterol",
+     "format": "short",
+     "accepted": [
+      "beta 2",
+      "β2",
+      "camp",
+      "adenylyl",
+      "relax",
+      "คลาย"
+     ],
+     "keywords_all": [
+      "cAMP"
+     ],
+     "key_text": "Long-acting β₂ agonist จับ β₂ receptor → Gs → adenylyl cyclase → ↑cAMP → ↓Ca²⁺ ใน smooth muscle → คลายกล้ามเนื้อเรียบหลอดลม",
+     "source_key": "เฉลย (ลายมือ): bronchodilator, β₂ receptor → adenylyl cyclase → cAMP↑ → Ca²⁺↓ → muscle contraction ↓"
+    },
+    {
+     "id": "1.4",
+     "prompt": "กลไกการออกฤทธิ์ของ budesonide 3 กลไก",
+     "format": "short",
+     "accepted": [
+      "cytokine",
+      "eosinophil",
+      "leukotriene",
+      "inflammation",
+      "อักเสบ"
+     ],
+     "keywords_all": [
+      "cytokine"
+     ],
+     "key_text": "1) ลดการสร้าง cytokine ที่กระตุ้นการอักเสบ 2) ลดการเคลื่อนที่/แทรกซึมของ eosinophil (ลด chemotactic factor, leukotriene) 3) ลด mucus/ลดการอักเสบและเพิ่มการตอบสนองของ β₂ receptor",
+     "source_key": "เฉลย: 1) ลดการสร้าง cytokine ที่กระตุ้นการอักเสบ 2) ลดการเคลื่อนที่/แทรกซึมของ eosinophil (ลด chemotactic factor, leukotriene) 3) ลด mucus/ลดการอักเสบและเพิ่มการตอบสนองของ β₂ receptor"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "KF50",
+     "pages": [
+      1
+     ]
+    },
+    {
+     "paper": "KF50-KEY",
+     "pages": [
+      1
+     ]
+    }
+   ],
+   "tags": [
+    "pharmacology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "RESP-50-KF-002",
+   "block": "RESP",
+   "cohort": 50,
+   "n": 2,
+   "type": "KF",
+   "case": "ชายไทย 67 ปี COPD มี glaucoma · BT 37 RR 28 PR 120 SpO₂ 92% · fair air entry with bilateral wheezing · แพทย์จ่าย fixed combination ipratropium + fenoterol",
+   "items": [
+    {
+     "id": "2.1",
+     "prompt": "ข้อควรระวังของ ipratropium ในผู้ป่วยรายนี้",
+     "format": "short",
+     "accepted": [
+      "glaucoma",
+      "intraocular",
+      "ความดันลูกตา"
+     ],
+     "keywords_all": [
+      "glaucoma"
+     ],
+     "key_text": "มี glaucoma: ยา anticholinergic อาจเพิ่มความดันลูกตา/angle-closure",
+     "source_key": "เฉลย: มี glaucoma: ยา anticholinergic อาจเพิ่มความดันลูกตา/angle-closure"
+    },
+    {
+     "id": "2.2",
+     "prompt": "ข้อควรระวังของ fenoterol ในผู้ป่วยรายนี้",
+     "format": "short",
+     "accepted": [
+      "tachycardia",
+      "arrhythmia",
+      "palpitation",
+      "หัวใจ"
+     ],
+     "keywords_all": [
+      "tachycardia"
+     ],
+     "key_text": "β₂ agonist ทำให้ tachycardia/arrhythmia (ผู้ป่วย PR 120) และ hypokalemia ควรระวังโรคหัวใจ",
+     "source_key": "เฉลย: β₂ agonist ทำให้ tachycardia/arrhythmia (ผู้ป่วย PR 120) และ hypokalemia ควรระวังโรคหัวใจ"
+    },
+    {
+     "id": "2.3",
+     "prompt": "ควรให้ยาตัวใดที่ส่งผลต่อโรคร่วมน้อยที่สุด",
+     "format": "short",
+     "accepted": [
+      "theophylline"
+     ],
+     "keywords_all": [
+      "theophylline"
+     ],
+     "key_text": "Theophylline",
+     "source_key": "เฉลย (ลายมือ): Theophylline"
+    },
+    {
+     "id": "2.4",
+     "prompt": "ผลข้างเคียงของยาข้อ 2.3 (3 อย่าง)",
+     "format": "short",
+     "accepted": [
+      "nausea",
+      "vomiting",
+      "headache",
+      "arrhythmia",
+      "seizure",
+      "tachycardia"
+     ],
+     "keywords_all": [
+      "arrhythmia"
+     ],
+     "key_text": "Nausea/vomiting, headache, cardiac arrhythmia, seizure",
+     "source_key": "เฉลย: Nausea/vomiting, headache, cardiac arrhythmia, seizure"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "KF50",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "KF50-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [
+    "pharmacology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "RESP-50-KF-003",
+   "block": "RESP",
+   "cohort": 50,
+   "n": 3,
+   "type": "KF",
+   "case": "ชายอายุ 55 ปี สูบบุหรี่ เหนื่อยเมื่อออกแรงมากขึ้น ไอมีเสมหะ 1 ปี · AP diameter เพิ่ม wheezing ทั้งสองข้าง",
+   "items": [
+    {
+     "id": "3.1",
+     "prompt": "อธิบายการเปลี่ยนแปลงทางพยาธิสรีรวิทยา",
+     "format": "short",
+     "accepted": [
+      "alveolar wall",
+      "elastic recoil",
+      "mucus",
+      "inflammation",
+      "destruction"
+     ],
+     "keywords_all": [
+      "elastic recoil"
+     ],
+     "key_text": "บุหรี่ → endothelium/airway อักเสบ mucous gland hypertrophy เมือกคั่ง หลอดลมตีบ; alveolar wall destruction elastic recoil ลด → COPD (chronic bronchitis + emphysema)",
+     "source_key": "เฉลย: บุหรี่ → endothelium/airway อักเสบ mucous gland hypertrophy เมือกคั่ง หลอดลมตีบ; alveolar wall destruction elastic recoil ลด → COPD (chronic bronchitis + emphysema)"
+    },
+    {
+     "id": "3.2",
+     "prompt": "FEV₁/FVC, FEV₁, FVC เพิ่ม ลด หรือไม่เปลี่ยน",
+     "format": "short",
+     "accepted": [
+      "ลด",
+      "decrease",
+      "↓"
+     ],
+     "keywords_all": [
+      "ลด"
+     ],
+     "key_text": "FEV₁/FVC ↓, FEV₁ ↓, FVC ปกติหรือลดเล็กน้อย",
+     "source_key": "เฉลย (ลายมือ ลูกศร): ↓ ↓ และ FVC ไม่แน่ใจ",
+     "explanation": "obstructive: FEV₁ ลดมากกว่า FVC จึง ratio ลด"
+    },
+    {
+     "id": "3.3",
+     "prompt": "กลไกที่ทำให้ AP diameter เพิ่ม",
+     "format": "short",
+     "accepted": [
+      "air trapping",
+      "elastic recoil",
+      "barrel",
+      "hyperinflation"
+     ],
+     "keywords_all": [
+      "air trapping"
+     ],
+     "key_text": "เสีย elastic recoil → air trapping เรื้อรัง ปอดโป่ง ทรวงอกขยายเป็น barrel chest",
+     "source_key": "เฉลย: เสีย elastic recoil → air trapping เรื้อรัง ปอดโป่ง ทรวงอกขยายเป็น barrel chest"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "KF50",
+     "pages": [
+      3
+     ]
+    },
+    {
+     "paper": "KF50-KEY",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [
+    "pathology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "RESP-50-KF-004",
+   "block": "RESP",
+   "cohort": 50,
+   "n": 4,
+   "type": "KF",
+   "case": "เด็กชายอายุ 14 ปี แข็งแรงดี วิ่ง 200 ม. ถึงเส้นชัยเหนื่อยหอบ อ้าปากหายใจ · RR 30 PR 160 BP 120/80 wheezing ทั้งสองปอด · วินิจฉัย exercise-induced bronchospasm · พัก 15 นาที + ยาขยายหลอดลม อาการดีขึ้น",
+   "items": [
+    {
+     "id": "4.1",
+     "prompt": "ขณะออกกำลังกาย minute ventilation และ pulmonary blood flow เปลี่ยนอย่างไร",
+     "format": "short",
+     "accepted": [
+      "เพิ่ม",
+      "increase",
+      "↑"
+     ],
+     "keywords_all": [
+      "เพิ่ม"
+     ],
+     "key_text": "Minute ventilation เพิ่ม; pulmonary blood flow เพิ่ม",
+     "source_key": "เฉลย (ลายมือ): ↑ ↑"
+    },
+    {
+     "id": "4.2",
+     "prompt": "O₂ dissociation curve shift ไปทางใด",
+     "format": "short",
+     "accepted": [
+      "right"
+     ],
+     "keywords_all": [
+      "right"
+     ],
+     "key_text": "Right shift",
+     "source_key": "เฉลย: Right shift"
+    },
+    {
+     "id": "4.3",
+     "prompt": "ขณะเกิด bronchospasm: airway resistance, alveolar ventilation, lung compliance, diffusion capacity",
+     "format": "short",
+     "accepted": [
+      "resistance",
+      "ventilation",
+      "compliance",
+      "diffusion"
+     ],
+     "keywords_all": [
+      "resistance"
+     ],
+     "key_text": "Airway resistance เพิ่ม; alveolar ventilation ลด; lung compliance ไม่เปลี่ยน; diffusion capacity ไม่เปลี่ยน (หรือลดเล็กน้อย)",
+     "source_key": "เฉลย (ลายมือ): ↑ ↓ ไม่แน่ใจ ไม่เปลี่ยน"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "KF50",
+     "pages": [
+      4
+     ]
+    },
+    {
+     "paper": "KF50-KEY",
+     "pages": [
+      4
+     ]
+    }
+   ],
+   "tags": [
+    "physiology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "RESP-50-KF-005",
+   "block": "RESP",
+   "cohort": 50,
+   "n": 5,
+   "type": "KF",
+   "case": "เด็กหญิงอายุ 1 ปี ไข้ ไอ น้ำมูก 3 วัน วันนี้เหนื่อยมากขึ้น ร้องเสียงแหบ · หน้าอกบุ๋ม หายใจเข้าลำบากมีเสียงดัง ไอเสียงก้อง · ฟังปอดปกติ · วินิจฉัย viral croup",
+   "items": [
+    {
+     "id": "5.1",
+     "prompt": "ตำแหน่งจำเพาะของระบบหายใจที่ผิดปกติ",
+     "format": "short",
+     "accepted": [
+      "larynx",
+      "subglottic",
+      "กล่องเสียง"
+     ],
+     "keywords_all": [
+      "larynx"
+     ],
+     "key_text": "Larynx (subglottic region)",
+     "source_key": "เฉลย: Larynx (subglottic region)"
+    },
+    {
+     "id": "5.2",
+     "prompt": "ที่ตำแหน่งนั้นเกิดความผิดปกติอย่างไร",
+     "format": "short",
+     "accepted": [
+      "inflammation",
+      "edema",
+      "บวม",
+      "อักเสบ",
+      "narrow"
+     ],
+     "keywords_all": [
+      "edema"
+     ],
+     "key_text": "ไวรัสทำให้เกิดการอักเสบและ edema ของเนื้อเยื่อบวม ทางเดินหายใจแคบ",
+     "source_key": "เฉลย: ไวรัสทำให้เกิดการอักเสบและ edema ของเนื้อเยื่อบวม ทางเดินหายใจแคบ"
+    },
+    {
+     "id": "5.3",
+     "prompt": "การเปลี่ยนแปลง airway resistance พร้อมเหตุผล",
+     "format": "short",
+     "accepted": [
+      "increase",
+      "เพิ่ม",
+      "radius",
+      "รัศมี",
+      "extrathoracic"
+     ],
+     "keywords_all": [
+      "เพิ่ม"
+     ],
+     "key_text": "Airway resistance เพิ่ม เพราะรัศมีลดลง (R ∝ 1/r⁴) และเป็น extrathoracic obstruction ที่ยุบตอนหายใจเข้า (ความดันใน airway ต่ำกว่าบรรยากาศ)",
+     "source_key": "เฉลย: Airway resistance เพิ่ม เพราะรัศมีลดลง (R ∝ 1/r⁴) และเป็น extrathoracic obstruction ที่ยุบตอนหายใจเข้า (ความดันใน airway ต่ำกว่าบรรยากาศ)"
+    },
+    {
+     "id": "5.4",
+     "prompt": "flow–volume curve เทียบกับคนปกติ",
+     "format": "short",
+     "accepted": [
+      "inspiratory",
+      "plateau",
+      "flat",
+      "แบน",
+      "extrathoracic"
+     ],
+     "keywords_all": [
+      "inspiratory"
+     ],
+     "key_text": "Extrathoracic obstruction: inspiratory limb แบนราบ (flow ลดลง/ตัดที่ plateau) ส่วน expiratory limb ใกล้ปกติ",
+     "source_key": "เฉลย: Extrathoracic obstruction: inspiratory limb แบนราบ (flow ลดลง/ตัดที่ plateau) ส่วน expiratory limb ใกล้ปกติ"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "KF50",
+     "pages": [
+      5
+     ]
+    },
+    {
+     "paper": "KF50-KEY",
+     "pages": [
+      5
+     ]
+    }
+   ],
+   "tags": [
+    "physiology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "RESP-50-KF-006",
+   "block": "RESP",
+   "cohort": 50,
+   "n": 6,
+   "type": "KF",
+   "case": "ชายอายุ 55 ปี ไข้สูง หายใจเหนื่อย 3 วัน · BT 38.5 RR 30 PR 110 BP 100/60 SaO₂ 92% · fine crepitation + bronchial breath sound · patchy infiltration right upper lung",
+   "items": [
+    {
+     "id": "6.1",
+     "prompt": "อธิบายการเกิดอาการ: หายใจเร็ว / ไอ / fine crepitation / bronchial breath sound",
+     "format": "short",
+     "accepted": [
+      "chemoreceptor",
+      "exudate",
+      "consolidation",
+      "irritant",
+      "hypoxemia"
+     ],
+     "keywords_all": [
+      "consolidation"
+     ],
+     "key_text": "หายใจเร็ว: hypoxemia กระตุ้น peripheral chemoreceptor; ไอ: exudate/สิ่งระคายกระตุ้น irritant/cough receptor; fine crepitation: alveoli ที่มี exudate เปิดออกตอนหายใจเข้า; bronchial breath sound: consolidation นำเสียงจาก bronchus ได้ดี",
+     "source_key": "เฉลย: หายใจเร็ว: hypoxemia กระตุ้น peripheral chemoreceptor; ไอ: exudate/สิ่งระคายกระตุ้น irritant/cough receptor; fine crepitation: alveoli ที่มี exudate เปิดออกตอนหายใจเข้า; bronchial breath sound: consolidation นำเสียงจาก bronchus ได้ดี"
+    },
+    {
+     "id": "6.2",
+     "prompt": "การเปลี่ยนแปลงพยาธิสภาพที่ระดับถุงลม",
+     "format": "short",
+     "accepted": [
+      "exudate",
+      "neutrophil",
+      "consolidation",
+      "fibrin",
+      "alveoli"
+     ],
+     "keywords_all": [
+      "exudate"
+     ],
+     "key_text": "Alveoli เต็มด้วย exudate (น้ำ neutrophil fibrin) → consolidation, V/Q mismatch, diffusion ลดลง",
+     "source_key": "เฉลย: Alveoli เต็มด้วย exudate (น้ำ neutrophil fibrin) → consolidation, V/Q mismatch, diffusion ลดลง"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "KF50",
+     "pages": [
+      6
+     ]
+    },
+    {
+     "paper": "KF50-KEY",
+     "pages": [
+      6
+     ]
+    }
+   ],
+   "tags": [
+    "pathology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "RESP-50-KF-007",
+   "block": "RESP",
+   "cohort": 50,
+   "n": 7,
+   "type": "KF",
+   "case": "ชายอายุ 70 ปี มี COPD ไอเรื้อรัง ไอเป็นเลือดไม่มาก น้ำหนักลด 5 กก. ใน 2 เดือน supraclavicular node 1 ซม.",
+   "items": [
+    {
+     "id": "7.1",
+     "prompt": "วินิจฉัยที่น่าจะเป็น",
+     "format": "short",
+     "accepted": [
+      "lung cancer",
+      "carcinoma",
+      "squamous"
+     ],
+     "keywords_all": [
+      "carcinoma"
+     ],
+     "key_text": "Lung cancer (squamous cell carcinoma)",
+     "source_key": "เฉลย: Lung cancer (squamous cell carcinoma)"
+    },
+    {
+     "id": "7.2",
+     "prompt": "การตรวจเบื้องต้น 2 อย่าง",
+     "format": "short",
+     "accepted": [
+      "chest x-ray",
+      "cxr",
+      "bronchoscopy",
+      "biopsy",
+      "sputum cytology"
+     ],
+     "keywords_all": [
+      "bronchoscopy"
+     ],
+     "key_text": "Chest X-ray, bronchoscopy with biopsy (หรือ sputum cytology)",
+     "source_key": "เฉลย: Chest X-ray, bronchoscopy with biopsy (หรือ sputum cytology)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF50",
+     "pages": [
+      7
+     ]
+    },
+    {
+     "paper": "KF50-KEY",
+     "pages": [
+      7
+     ]
+    }
+   ],
+   "tags": [
+    "oncology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "RESP-50-KF-008",
+   "block": "RESP",
+   "cohort": 50,
+   "n": 8,
+   "type": "KF",
+   "case": "เด็กชายอายุ 10 ปี น้ำมูกสีขาวข้น คัดจมูก ไอ 2 วัน ไม่เคยรักษา · ไม่มีโรคประจำตัว แพ้ penicillin · BT 37.5 RR 24 · จมูก: mucous discharge, inferior และ middle turbinate บวม · คอ: ปกติ · ปอด: clear",
+   "items": [
+    {
+     "id": "8.1",
+     "prompt": "วินิจฉัย",
+     "format": "short",
+     "accepted": [
+      "viral rhinitis",
+      "rhinitis",
+      "common cold"
+     ],
+     "keywords_all": [
+      "rhinitis"
+     ],
+     "key_text": "Acute viral rhinitis (common cold)",
+     "source_key": "เฉลย: Acute viral rhinitis (common cold)"
+    },
+    {
+     "id": "8.2",
+     "prompt": "เชื้อสำคัญ 4 ชนิด",
+     "format": "short",
+     "accepted": [
+      "rhinovirus",
+      "adenovirus",
+      "influenza",
+      "parainfluenza"
+     ],
+     "keywords_all": [
+      "rhinovirus"
+     ],
+     "key_text": "Rhinovirus, adenovirus, influenza virus, parainfluenza virus",
+     "source_key": "เฉลย: Rhinovirus, adenovirus, influenza virus, parainfluenza virus"
+    },
+    {
+     "id": "8.3",
+     "prompt": "หลัง 7 วัน ไข้สูง ปวดโหนกแก้มซ้าย น้ำมูกหนอง วินิจฉัย",
+     "format": "short",
+     "accepted": [
+      "sinusitis"
+     ],
+     "keywords_all": [
+      "sinusitis"
+     ],
+     "key_text": "Acute bacterial (maxillary) sinusitis",
+     "source_key": "เฉลย: Acute bacterial (maxillary) sinusitis"
+    },
+    {
+     "id": "8.4",
+     "prompt": "เชื้อสำคัญของข้อ 8.3 (3 ชนิด)",
+     "format": "short",
+     "accepted": [
+      "pneumoniae",
+      "haemophilus",
+      "moraxella"
+     ],
+     "keywords_all": [
+      "pneumoniae"
+     ],
+     "key_text": "Streptococcus pneumoniae, Haemophilus influenzae, Moraxella catarrhalis",
+     "source_key": "เฉลย: Streptococcus pneumoniae, Haemophilus influenzae, Moraxella catarrhalis"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF50",
+     "pages": [
+      7
+     ]
+    },
+    {
+     "paper": "KF50-KEY",
+     "pages": [
+      7
+     ]
+    }
+   ],
+   "tags": [
+    "ENT"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "RESP-50-KF-010",
+   "block": "RESP",
+   "cohort": 50,
+   "n": 10,
+   "type": "KF",
+   "case": "ชายอายุ 53 ปี ไข้สูง 39.5°C · CXR: infiltration, cavities และ pleural effusion · blood: leukocytosis",
+   "items": [
+    {
+     "id": "10.1",
+     "prompt": "ตัวอย่างที่เก็บเพื่อหาสาเหตุ",
+     "format": "short",
+     "accepted": [
+      "sputum",
+      "pleural fluid",
+      "blood culture",
+      "เสมหะ"
+     ],
+     "keywords_all": [
+      "sputum"
+     ],
+     "key_text": "Sputum และ pleural fluid / blood culture",
+     "source_key": "เฉลย: Sputum และ pleural fluid / blood culture"
+    },
+    {
+     "id": "10.2",
+     "prompt": "การตรวจทางจุลชีววิทยา",
+     "format": "short",
+     "accepted": [
+      "gram",
+      "culture"
+     ],
+     "keywords_all": [
+      "culture"
+     ],
+     "key_text": "Gram stain และ culture (aerobic/anaerobic) ของเสมหะหรือหนอง",
+     "source_key": "เฉลย: Gram stain และ culture (aerobic/anaerobic) ของเสมหะหรือหนอง"
+    },
+    {
+     "id": "10.3",
+     "prompt": "อธิบายผลตรวจทางห้องปฏิบัติการของเชื้อนี้",
+     "format": "short",
+     "accepted": [
+      "gram",
+      "neutrophil",
+      "capsule",
+      "bacilli"
+     ],
+     "keywords_all": [
+      "Gram"
+     ],
+     "key_text": "Gram stain พบ neutrophil จำนวนมากและเชื้อแบคทีเรียที่ย้อมติดสีตามชนิด (เช่น Gram-negative bacilli ถ้า Klebsiella มี capsule)",
+     "source_key": "เฉลย: Gram stain พบ neutrophil จำนวนมากและเชื้อแบคทีเรียที่ย้อมติดสีตามชนิด (เช่น Gram-negative bacilli ถ้า Klebsiella มี capsule)"
+    },
+    {
+     "id": "10.4",
+     "prompt": "ชื่อเชื้อก่อโรค",
+     "format": "short",
+     "accepted": [
+      "klebsiella",
+      "staphylococcus",
+      "anaerobe",
+      "abscess"
+     ],
+     "keywords_all": [
+      "klebsiella"
+     ],
+     "key_text": "Klebsiella pneumoniae (หรือ Staphylococcus aureus/anaerobe ที่ก่อ lung abscess/empyema)",
+     "source_key": "เฉลย: Klebsiella pneumoniae (หรือ Staphylococcus aureus/anaerobe ที่ก่อ lung abscess/empyema)"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "KF50",
+     "pages": [
+      9
+     ]
+    },
+    {
+     "paper": "KF50-KEY",
+     "pages": [
+      9
+     ]
+    }
+   ],
+   "tags": [
+    "microbiology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "RESP-50-KF-011",
+   "block": "RESP",
+   "cohort": 50,
+   "n": 11,
+   "type": "KF",
+   "case": "ผู้ป่วยอายุ 18 ปี ถูกแทงที่หน้าอกด้านขวา เหนื่อยหอบ แน่นอกขวา",
+   "items": [
+    {
+     "id": "11.1",
+     "prompt": "บอกบริเวณของบาดแผลจำเพาะตามกายวิภาค",
+     "format": "short",
+     "accepted": [
+      "intercostal"
+     ],
+     "keywords_all": [
+      "intercostal"
+     ],
+     "key_text": "(โจทย์ไม่ระบุรูป) ระบุเป็น intercostal space ที่เท่าใด ตามแนว anterior/mid axillary line ข้างขวา",
+     "source_key": "เฉลย: ไม่ปรากฏ (ภาพในข้อสอบ)"
+    },
+    {
+     "id": "11.2",
+     "prompt": "ชื่อกล้ามเนื้อที่ใช้หายใจเมื่อหอบ 3 ชื่อ",
+     "format": "short",
+     "accepted": [
+      "sternocleidomastoid",
+      "scalene",
+      "external intercostal",
+      "pectoralis"
+     ],
+     "keywords_all": [
+      "sternocleidomastoid"
+     ],
+     "key_text": "Sternocleidomastoid, scalene, external intercostal (accessory muscles)",
+     "source_key": "เฉลย: Sternocleidomastoid, scalene, external intercostal (accessory muscles)"
+    },
+    {
+     "id": "11.3",
+     "prompt": "hemothorax ใน CXR ท่ายืน เห็นที่ใด",
+     "format": "short",
+     "accepted": [
+      "costophrenic",
+      "costodiaphragmatic"
+     ],
+     "keywords_all": [
+      "costophrenic"
+     ],
+     "key_text": "Costophrenic angle (costodiaphragmatic recess) ข้างขวา",
+     "source_key": "เฉลย: Costophrenic angle (costodiaphragmatic recess) ข้างขวา"
+    },
+    {
+     "id": "11.4",
+     "prompt": "กล้ามเนื้อที่ต้องเจาะผ่านเมื่อใส่สายระบายช่องอก 3 ชื่อ",
+     "format": "short",
+     "accepted": [
+      "serratus",
+      "latissimus",
+      "pectoralis",
+      "intercostal"
+     ],
+     "keywords_all": [
+      "intercostal"
+     ],
+     "key_text": "Serratus anterior, latissimus dorsi/pectoralis major (ตามตำแหน่ง), external intercostal และ internal intercostal",
+     "source_key": "เฉลย: Serratus anterior, latissimus dorsi/pectoralis major (ตามตำแหน่ง), external intercostal และ internal intercostal"
+    },
+    {
+     "id": "11.5",
+     "prompt": "hemopneumothorax ส่งผลต่อ lung mechanics อย่างไร",
+     "format": "short",
+     "accepted": [
+      "intrapleural",
+      "แฟบ",
+      "collapse",
+      "compliance",
+      "volume"
+     ],
+     "keywords_all": [
+      "intrapleural"
+     ],
+     "key_text": "Intrapleural pressure เพิ่มขึ้น (เท่าบรรยากาศ/บวก) ปอดแฟบ compliance/ปริมาตรปอดลด VC ลด",
+     "source_key": "เฉลย: Intrapleural pressure เพิ่มขึ้น (เท่าบรรยากาศ/บวก) ปอดแฟบ compliance/ปริมาตรปอดลด VC ลด"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "KF50",
+     "pages": [
+      9
+     ]
+    },
+    {
+     "paper": "KF50-KEY",
+     "pages": [
+      9
+     ]
+    }
+   ],
+   "tags": [
+    "anatomy"
+   ],
+   "source": "claude-mcp"
+  }
+ ]
+}
