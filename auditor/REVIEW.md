@@ -1,6 +1,6 @@
 # REVIEW — รายการรอผู้ใช้ตัดสิน
 
-ทั้งหมด 639 รายการ
+ทั้งหมด 667 รายการ
 วิธีตอบ: พิมพ์ในแชทเป็นบรรทัด เช่น `end_52_MCQ_027: คงเดิม` / `end_52_MCQ_063: C` / `end_52_MCQ_046: ตรวจใหม่`
 Claude จะบันทึกลง `auditor/data/decisions.json` แล้ว build ใหม่
 
@@ -612,6 +612,34 @@ Claude จะบันทึกลง `auditor/data/decisions.json` แล้ว
 | kub_52_MCQ_045 | B | A | mid | เฉลยขัดกับ AI |   |
 | kub_52_MCQ_060 | B | A | mid | เฉลยขัดกับ AI | AI ตอบ Leydig cell; ต้นฉบับ Sertoli cell (tumor หลั่ง estrogen)  |
 | kub_52_MCQ_096 | D | C | mid | เฉลยขัดกับ AI |   |
+| resp_49_MCQ_002 | E | B | low | เฉลยขัดกับ AI |   |
+| resp_49_MCQ_003 | D | B | low | เฉลยขัดกับ AI |   |
+| resp_49_MCQ_013 | C | B | mid | เฉลยขัดกับ AI |   |
+| resp_49_MCQ_015 | None | B | mid | AI เขียนข้อนี้ขึ้นใหม่จากโน้ตความจำในต้นฉบับ |   |
+| resp_49_MCQ_016 | None | None | None | AI เขียนข้อนี้ขึ้นใหม่จากโน้ตความจำในต้นฉบับ |   |
+| resp_49_MCQ_018 | B | C | low | เฉลยขัดกับ AI |   |
+| resp_49_MCQ_021 | E | B | mid | เฉลยขัดกับ AI |   |
+| resp_49_MCQ_022 | B | A | mid | เฉลยขัดกับ AI |   |
+| resp_49_MCQ_024 | None | None | None | AI เขียนข้อนี้ขึ้นใหม่จากโน้ตความจำในต้นฉบับ |   |
+| resp_49_MCQ_034 | B | C | mid | เฉลยขัดกับ AI |   |
+| resp_49_MCQ_035 | E | B | mid | เฉลยขัดกับ AI |   |
+| resp_49_MCQ_037 | D | B | low | เฉลยขัดกับ AI |   |
+| resp_49_MCQ_038 | C | B | mid | เฉลยขัดกับ AI |   |
+| resp_49_MCQ_043 | None | None | None | AI เขียนข้อนี้ขึ้นใหม่จากโน้ตความจำในต้นฉบับ |   |
+| resp_49_MCQ_045 | None | None | None | AI เขียนข้อนี้ขึ้นใหม่จากโน้ตความจำในต้นฉบับ |   |
+| resp_49_MCQ_047 | None | A | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| resp_49_MCQ_048 | None | B | low | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| resp_49_MCQ_049 | None | B | low | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| resp_49_MCQ_050 | None | A | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| resp_49_MCQ_051 | None | C | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| resp_49_MCQ_052 | None | C | low | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| resp_49_MCQ_053 | B | E | mid | เฉลยขัดกับ AI |   |
+| resp_49_MCQ_056 | A | B | low | เฉลยขัดกับ AI |   |
+| resp_49_MCQ_058 | D | E | mid | เฉลยขัดกับ AI |   |
+| resp_49_MCQ_059 | A | D | low | เฉลยขัดกับ AI |   |
+| resp_49_MCQ_062 | None | None | None | AI เขียนข้อนี้ขึ้นใหม่จากโน้ตความจำในต้นฉบับ |   |
+| resp_49_MCQ_063 | None | A | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| resp_49_MCQ_064 | None | C | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
 | resp_50_MCQ_003 | A | B | mid | เฉลยขัดกับ AI |   |
 | resp_50_MCQ_014 | C | E | mid | เฉลยขัดกับ AI |   |
 | resp_50_MCQ_020 | D | B | low | เฉลยขัดกับ AI |   |
