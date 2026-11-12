@@ -43,7 +43,7 @@
  "duplicate_groups": {},
  "questions": {
   "1": {
-   "explanation": "Macula densa — เซลล์ที่ thick ascending limb/early DCT ตรวจ NaCl ผ่าน NKCC2 แล้วส่งสัญญาณ tubuloglomerular feedback ปรับ afferent arteriole และ renin\nTrap: juxtaglomerular cell หลั่ง renin; mesangial cell อยู่ระหว่าง capillary ไม่ได้ตรวจ NaCl",
+   "explanation": "Macula densa ที่ปลาย TAL/early DCT รับรู้ NaCl ผ่าน NKCC2 แล้วสั่ง tubuloglomerular feedback",
    "stem_override": "Which of the following cells senses the NaCl concentration in the tubular fluid and activates feedback control of the glomerulus?",
    "original_text": "Sense NaCl concentration and activate feedback to glomerulus",
    "choices_override": {
@@ -55,10 +55,27 @@
    },
    "ai_choices": [
     "E"
+   ],
+   "option_why": {
+    "A": "podocyte เป็น filtration barrier",
+    "B": "✓ macula densa",
+    "C": "JG cell หลั่ง renin แต่ไม่ได้รับรู้ NaCl",
+    "D": "mesangial cell รองรับ/หดตัว",
+    "E": "principal cell ดูด Na/หลั่ง K"
+   },
+   "key_concept": "• NaCl ↑ → adenosine → afferent หด → GFR ↓\n• NaCl ↓ → PGE₂/NO → afferent ขยาย + renin ↑\n• JG apparatus = macula densa + JG + mesangial",
+   "mechanism": [
+    "GFR เปลี่ยน → NaCl ที่ distal เปลี่ยน",
+    {
+     "s": "macula densa รับรู้ NaCl",
+     "answer": true
+    },
+    "ส่งสัญญาณ paracrine",
+    "afferent/renin ปรับ GFR กลับ"
    ]
   },
   "3": {
-   "explanation": "Increase urine concentration — กรอบประคือ juxtamedullary nephron ที่มี loop of Henle ยาวและ vasa recta สร้าง/รักษา medullary osmotic gradient ทำให้ปัสสาวะเข้มข้น\nTrap: cortical nephron (ซ้าย) loop สั้น; ไม่ได้มีหน้าที่หลักในการขับ K+ หรือเพิ่มปริมาณปัสสาวะ",
+   "explanation": "กรอบประคือ juxtamedullary nephron ที่มี loop ยาว + vasa recta สร้าง medullary gradient ทำให้ปัสสาวะเข้มข้น",
    "stem_override": "What is the primary function of the structure in the dashed box marked by the arrow?",
    "original_text": "A ; primary function อะไร",
    "choices_override": {
@@ -68,10 +85,18 @@
     "D": "Limited absorption of Na+",
     "E": "Increase urine concentration"
    },
-   "ai_choices": []
+   "ai_choices": [],
+   "option_why": {
+    "A": "ไม่ใช่หน้าที่เพิ่มปริมาตร",
+    "B": "การขับ K⁺ เกิดที่ collecting duct",
+    "C": "ไม่ใช่หน้าที่หลัก",
+    "D": "ไม่ใช่หน้าที่หลัก",
+    "E": "✓ increase urine concentration"
+   },
+   "key_concept": "• juxtamedullary ~15% loop ยาวถึง inner medulla\n• countercurrent multiplier + exchanger\n• urea recycling ช่วย gradient"
   },
   "4": {
-   "explanation": "Paramesonephric duct — (Müllerian) ส่วน caudal รวมกันเป็น uterus, cervix และ vagina ส่วนบน\nTrap: mesonephric duct (Wolffian) เจริญในเพศชาย; urogenital sinus → bladder/vagina ส่วนล่าง",
+   "explanation": "Paramesonephric (Müllerian) duct ส่วน caudal รวมกันเป็น uterus, cervix, upper vagina",
    "stem_override": "Which embryonic structure develops into the uterus?",
    "original_text": "What reproductive development become uterus",
    "choices_override": {
@@ -85,31 +110,88 @@
     "C",
     "D",
     "E"
-   ]
+   ],
+   "option_why": {
+    "A": "✓ paramesonephric duct",
+    "B": "mesonephric duct เจริญในชาย",
+    "C": "urogenital sinus → bladder/lower vagina",
+    "D": "gubernaculum → ligament",
+    "E": "genital tubercle → clitoris"
+   },
+   "key_concept": "• cranial Müllerian → tube\n• fusion ผิด → bicornuate/didelphys\n• AMH ทำลายในชาย"
   },
   "6": {
-   "explanation": "Ureteric bud — สร้าง ureter, renal pelvis, calyces, collecting duct ถ้าไม่เกิด ureteric bud จะไม่มีท่อไต (และไตไม่เจริญ)\nTrap: metanephric blastema สร้าง nephron แต่ต้องถูก ureteric bud เหนี่ยวนำ"
+   "explanation": "Ureteric bud สร้าง ureter, pelvis, calyces, collecting duct ถ้าไม่เกิดจะไม่มีท่อไต",
+   "option_why": {
+    "A": "✓ ureteric bud",
+    "B": "urogenital sinus → bladder",
+    "C": "paramesonephric → อวัยวะสืบพันธุ์หญิง",
+    "D": "mesonephric duct เป็นต้นกำเนิดของ bud แต่ตัวที่ผิดปกติคือ bud",
+    "E": "metanephric blastema → nephron"
+   },
+   "key_concept": "• ureteric bud + blastema เหนี่ยวนำกันและกัน\n• bilateral agenesis → Potter\n• duplicated ureter = bud แยก"
   },
   "7": {
-   "explanation": "Sinovaginal bulb — เจริญเป็น vaginal plate (vagina ส่วนล่าง 2/3) ถ้าไม่ canalize → vagina ปิด (vaginal atresia) อวัยวะเพศภายนอกปกติ ปวดท้องเป็นรอบจากเลือดประจำเดือนคั่ง\nTrap: urogenital sinus สร้างส่วนของ vestibule; paramesonephric duct สร้าง uterus (ยังมีอยู่)"
+   "explanation": "เด็กหญิงไม่มีประจำเดือน ปวดเป็นรอบ อวัยวะเพศภายนอกปกติ = vagina ส่วนล่างไม่เปิด จาก sinovaginal bulb ไม่ canalize",
+   "option_why": {
+    "A": "ureteric bud → ไต/ท่อไต",
+    "B": "urogenital sinus เป็นต้นกำเนิดกว้าง",
+    "C": "✓ sinovaginal bulb → vaginal plate → lower vagina",
+    "D": "mesonephric duct ฝ่อในหญิง",
+    "E": "paramesonephric → upper vagina/uterus"
+   },
+   "key_concept": "• vaginal plate ต้อง canalize\n• hematocolpos: ปวดเป็นรอบ\n• imperforate hymen แยกได้ด้วยตรวจภายนอก"
   },
   "8": {
-   "explanation": "Labia majora — labioscrotal swelling ในหญิงเจริญเป็น labia majora (ในชายเป็น scrotum)\nTrap: genital tubercle → clitoris; urethral (genital) fold → labia minora",
+   "explanation": "Labioscrotal swelling ในหญิงเจริญเป็น labia majora",
    "stem_override": "In the development of the female external genitalia, which adult structure develops from the labioscrotal swellings?",
-   "original_text": "รูป SEM ของ development of female genitalia. ชี้ labia majora"
+   "original_text": "รูป SEM ของ development of female genitalia. ชี้ labia majora",
+   "option_why": {
+    "A": "genital tubercle → clitoris",
+    "B": "prepuce มาจาก fold รอบ tubercle",
+    "C": "vestibule มาจาก urogenital sinus",
+    "D": "urethral fold → labia minora",
+    "E": "✓ labia majora"
+   },
+   "key_concept": "• ชาย: labioscrotal → scrotum\n• fold → labia minora/penile urethra\n• tubercle → clitoris/glans"
   },
   "9": {
-   "explanation": "Gluconeogenesis — proximal tubule ทำ gluconeogenesis จาก glutamine/lactate ได้มาก ใน CKD tubule เสียหาย renal gluconeogenesis ลดลง (ตามเฉลยต้นฉบับ)\nTrap: β-oxidation ก็ลดใน CKD ได้ แต่เฉลยข้อนี้เน้น gluconeogenesis",
+   "explanation": "Proximal tubule ทำ gluconeogenesis ได้มาก ใน CKD tubule เสีย renal gluconeogenesis ลด (ตามเฉลย)",
    "stem_override": "A patient with type 2 diabetes who uses an NSAID, metformin and hydrochlorothiazide is diagnosed with chronic kidney disease. Which metabolic function of the kidney is impaired?",
-   "original_text": "DMT2 use NSAID , metformin , hydrochlorothiazide ได้รับการวินิจฉัยว่าเป็น chronic kidney disease ถามว่าอะไรโดนdamage"
+   "original_text": "DMT2 use NSAID , metformin , hydrochlorothiazide ได้รับการวินิจฉัยว่าเป็น chronic kidney disease ถามว่าอะไรโดนdamage",
+   "option_why": {
+    "A": "glycolysis ไม่ใช่หน้าที่ที่เด่นเสีย",
+    "B": "beta-oxidation ไม่ใช่คำตอบหลัก",
+    "C": "✓ gluconeogenesis",
+    "D": "ketone ผลิตที่ตับ",
+    "E": "transamination ไม่ใช่หลัก"
+   },
+   "key_concept": "• ไตทำ gluconeogenesis ~20–25%\n• CKD: เสี่ยง hypoglycemia\n• insulin clearance ลด"
   },
   "10": {
-   "explanation": "Increase α-ketoglutarate — acidosis เพิ่ม glutamine metabolism ใน proximal tubule ได้ NH4+ (ขับทิ้ง) และ α-ketoglutarate ที่ถูก metabolize เป็น new HCO3-\nTrap: การชดเชยต้อง 'เพิ่ม' ammoniagenesis และ titratable acid ไม่ใช่ลด",
+   "explanation": "Acidosis เพิ่ม glutamine metabolism ใน PCT ได้ NH₄⁺ ขับทิ้ง และ α-ketoglutarate ซึ่งเปลี่ยนเป็น HCO₃⁻ ใหม่",
    "stem_override": "A patient has metabolic acidosis with urine protein 1+ and glucose 2+. Which renal response compensates for the acidosis?",
-   "original_text": "โจทย์ให้ข้อมูลมา เกี่ยวกับผู้ป่วยมีภาวะ acidosis มีให้ protein 1+ , glucose 2+ ประมาณนี้ ถาม เกี่ยวกับการ compensate ของไต (คล้ายข้อ 6 ปี 48)"
+   "original_text": "โจทย์ให้ข้อมูลมา เกี่ยวกับผู้ป่วยมีภาวะ acidosis มีให้ protein 1+ , glucose 2+ ประมาณนี้ ถาม เกี่ยวกับการ compensate ของไต (คล้ายข้อ 6 ปี 48)",
+   "option_why": {
+    "A": "ammoniagenesis เพิ่ม ไม่ลด",
+    "B": "glutamate ไม่ได้ดูดกลับเพิ่มเป็นการชดเชย",
+    "C": "titratable acid เพิ่ม",
+    "D": "glucose เป็นอาการ Fanconi ไม่ใช่การชดเชย",
+    "E": "✓ α-ketoglutarate เพิ่ม"
+   },
+   "key_concept": "• glutamine → 2 NH₄⁺ + α-KG\n• α-KG → 2 HCO₃⁻ ใหม่\n• acidosis เรื้อรังเพิ่ม enzyme",
+   "mechanism": [
+    "metabolic acidosis",
+    "glutaminase/GDH ↑",
+    {
+     "s": "α-KG ↑",
+     "answer": true
+    },
+    "metabolize เป็น HCO₃⁻ ใหม่ ส่วน NH₄⁺ ขับทิ้ง"
+   ]
   },
   "12": {
-   "explanation": "Loss of negative charge — Alport: GBM ผิดปกติจาก type IV collagen ทำให้ charge/size barrier เสีย โปรตีน (albumin ประจุลบ) รั่วออก\nTrap: proteinuria เกิดจาก permeability 'เพิ่ม' ไม่ใช่ลด",
+   "explanation": "Alport: type IV collagen ผิดปกติทำ GBM เสียโครงสร้าง/ประจุ → โปรตีนรั่ว",
    "stem_override": "A 45-year-old woman with Alport syndrome has hematuria and proteinuria. What causes the proteinuria?",
    "original_text": "ผู้หญิงอายุ 45 ปี เป็น alport เกิด hematutria และ proteinuria อะไรทำให้เกิด proteinuria",
    "choices_override": {
@@ -121,29 +203,94 @@
    },
    "ai_choices": [
     "E"
-   ]
+   ],
+   "option_why": {
+    "A": "permeability ลดไม่ทำ proteinuria",
+    "B": "oncotic ไม่ใช่สาเหตุ",
+    "C": "✓ loss of negative charge",
+    "D": "NFP ลดไม่ทำ proteinuria",
+    "E": "hydrostatic ↑ ไม่ใช่กลไกใน Alport"
+   },
+   "key_concept": "• Alport: COL4A5 X-linked\n• hematuria + หูหนวก + ตา\n• EM: GBM split basket-weave"
   },
   "13": {
-   "explanation": "Renal stone — ตามเฉลยต้นฉบับ (FF สูง เช่นภาวะขาดน้ำ ปัสสาวะเข้มข้น เสี่ยงนิ่ว) ⚠ ข้อนี้กำกวม ควรให้คนตรวจ\nTrap: FF สูงทำให้ plasma oncotic pressure ใน peritubular capillary 'เพิ่ม' (E ผิดทิศ)",
-   "audit_note": "AI blind ตอบ E; แต่ FF สูงทำให้ oncotic pressure ใน peritubular capillary 'เพิ่ม' ไม่ใช่ลด → E ผิด ต้นฉบับ C (renal stone) อธิบายยาก ควรให้คนตรวจ"
+   "explanation": "ตามเฉลยต้นฉบับ: FF สูง (เช่นขาดน้ำ ปัสสาวะเข้มข้น) เสี่ยงนิ่ว ⚠ ข้อนี้กำกวม",
+   "audit_note": "AI blind ตอบ E; แต่ FF สูงทำให้ oncotic pressure ใน peritubular capillary 'เพิ่ม' ไม่ใช่ลด → E ผิด ต้นฉบับ C (renal stone) อธิบายยาก ควรให้คนตรวจ",
+   "option_why": {
+    "A": "hypotension เป็นสาเหตุมากกว่าผล",
+    "B": "ureter ตีบทำ FF ลด",
+    "C": "✓ renal stone (ตามเฉลยต้นฉบับ)",
+    "D": "ไม่ใช่ผลตรงของ FF",
+    "E": "FF ↑ ทำ oncotic ใน peritubular capillary เพิ่ม ไม่ลด"
+   },
+   "key_concept": "• FF = GFR/RPF\n• FF ↑ → π peritubular ↑ → ดูดกลับ PCT ↑\n• ข้อกำกวม ผู้ตรวจควรดู"
   },
   "15": {
-   "explanation": "Creatinine — GFR ลดเหลือ 25% creatinine ถูกขับน้อยลง (กรองอย่างเดียว) จึงสูงขึ้นเป็นสัดส่วนชัดเจน\nTrap: Na+, K+ ยังถูกรักษาสมดุลได้จนไตเสียมาก; HCO3- มักลดลง"
+   "explanation": "GFR เหลือ 25% creatinine ถูกขับโดยการกรองเป็นหลัก จึงสูงขึ้นชัดเจน",
+   "option_why": {
+    "A": "Na⁺ รักษาสมดุลได้นาน",
+    "B": "K⁺ ยังรักษาได้จนไตเสียมาก",
+    "C": "HCO₃⁻ มักลดลง",
+    "D": "glucose ไม่เปลี่ยน",
+    "E": "✓ creatinine"
+   },
+   "key_concept": "• Cr ∝ 1/GFR\n• GFR ลดครึ่ง Cr เพิ่มเท่าตัว\n• CKD ระยะท้ายจึง K⁺ สูง"
   },
   "16": {
-   "explanation": "100 mL/min — clearance = UV/P = (400 × 90/60 mL/min) / 6 = 400 × 1.5 / 6 = 100 mL/min\nTrap: ต้องแปลง 90 mL/hr เป็น 1.5 mL/min ก่อน"
+   "explanation": "Clearance = UV/P; V = 90 mL/hr = 1.5 mL/min → 400 × 1.5 / 6 = 100 mL/min",
+   "option_why": {
+    "A": "90 ผิด",
+    "B": "✓ 100 mL/min",
+    "C": "120 ผิด",
+    "D": "140 ผิด",
+    "E": "400 ผิด"
+   },
+   "key_concept": "• แปลงหน่วยเวลาเป็นนาทีก่อน\n• C = UV/P\n• C > GFR = หลั่งเพิ่ม"
   },
   "18": {
-   "explanation": "1.0 — PCT ดูดน้ำกลับแบบ iso-osmotic TF/P osm = 1 เสมอ\nTrap: ค่า > 1 เกิดที่ loop/collecting duct"
+   "explanation": "PCT ดูดน้ำกลับแบบ iso-osmotic TF/P osm = 1 เสมอ",
+   "option_why": {
+    "A": "0.5 = TAL/early DCT",
+    "B": "✓ 1",
+    "C": "1.5 ไม่ใช่ PCT",
+    "D": "2 ไม่ใช่ PCT",
+    "E": "2.5 = medullary CD ขณะมี ADH"
+   },
+   "key_concept": "• PCT ดูด ~65% iso-osmotic\n• ADH มีผลที่ CD\n• TAL = diluting segment"
   },
   "19": {
-   "explanation": "Filtration volume in DCT — ปริมาตรลด → NaCl ที่มาถึง macula densa (distal) ลด และ pressure ใน afferent arteriole ลด → JG cell หลั่ง renin\nTrap: Hct, K+, H+ ไม่ใช่ตัวกระตุ้นหลักของ renin"
+   "explanation": "Volume ลด → NaCl ที่ distal (macula densa) และแรงดัน afferent ลด → JG cell หลั่ง renin",
+   "option_why": {
+    "A": "Hct ไม่กระตุ้น renin",
+    "B": "K⁺ ไม่ใช่ตัวกระตุ้นหลัก",
+    "C": "H⁺ ไม่ใช่ตัวกระตุ้นหลัก",
+    "D": "✓ filtration volume (NaCl) ที่ DCT ลด",
+    "E": "oncotic ไม่ใช่ตัวกระตุ้น"
+   },
+   "key_concept": "• กระตุ้น renin: baroreceptor, macula densa, β1\n• Ang II ยับยั้ง renin\n• ท้องเสีย → hypovolemia",
+   "mechanism": [
+    "ท้องเสีย → volume ลด",
+    "afferent pressure ↓ + sympathetic ↑",
+    {
+     "s": "NaCl ที่ macula densa ↓",
+     "answer": true
+    },
+    "JG cell หลั่ง renin"
+   ]
   },
   "25": {
-   "explanation": "IgA nephropathy — ชายหนุ่ม hematuria (dysmorphic RBC) proteinuria เล็กน้อย HTN = nephritic ที่พบบ่อยสุดในผู้ใหญ่ทั่วโลก\nTrap: minimal change/FSGS เป็น nephrotic; MPGN มีทั้ง nephritic และ nephrotic"
+   "explanation": "ชายหนุ่ม dysmorphic RBC + proteinuria เล็กน้อย + HTN = IgA nephropathy",
+   "option_why": {
+    "A": "✓ IgA nephropathy",
+    "B": "IgM nephropathy พบน้อย",
+    "C": "MCD เป็น nephrotic",
+    "D": "FSGS เป็น nephrotic",
+    "E": "MPGN มี C3 ต่ำ"
+   },
+   "key_concept": "• IgA: พบบ่อยสุดในผู้ใหญ่\n• hematuria หลัง URI\n• mesangial IgA"
   },
   "26": {
-   "explanation": "Anti-DNase B / ASO — PSGN จาก group A β-hemolytic streptococcus ยืนยันด้วย antibody ต่อ streptococcal antigen (+ C3 ต่ำ)\nTrap: anti-PLA2R ใช้กับ membranous nephropathy; anti-GBM ใช้กับ Goodpasture",
+   "explanation": "PSGN หลังคออักเสบ ยืนยันด้วย anti-DNase B/ASO (+ C3 ต่ำ)",
    "stem_override": "A child had pharyngitis 2 weeks ago and now presents with edema, hematuria and hypertension (acute post-streptococcal glomerulonephritis). Which test supports the diagnosis?",
    "original_text": "เด็ก มีpharingitis มาก่อนตอน2อาทิตย์ที่เเล้ว จากนั้นมีอาการ ( เหมือนข้อสอบเก่า เเต่เป็นอาการของ acute post )",
    "choices_override": {
@@ -155,10 +302,18 @@
    },
    "ai_choices": [
     "E"
-   ]
+   ],
+   "option_why": {
+    "A": "✓ anti-DNase B / ASO",
+    "B": "genetic study ใช้ Alport",
+    "C": "anti-GBM = Goodpasture",
+    "D": "anti-PLA2R = membranous",
+    "E": "ANA = lupus"
+   },
+   "key_concept": "• PSGN: 1–3 สัปดาห์หลังคออักเสบ\n• C3 ต่ำ กลับปกติใน 6–8 สัปดาห์\n• subepithelial humps"
   },
   "28": {
-   "explanation": "Dense deposit disease — (MPGN type II/C3 glomerulopathy) electron-dense deposit เป็นแถบริบบิ้นใน GBM ร่วม complement ต่ำ (C3 nephritic factor)\nTrap: membranous มี subepithelial deposit (spike); minimal change ไม่มี deposit",
+   "explanation": "Complement ต่ำ + ribbon-like dense deposit ใน GBM = dense deposit disease (C3 glomerulopathy)",
    "stem_override": "A patient has hypocomplementemia, and renal biopsy shows ribbon-like electron-dense deposits within the glomerular basement membrane on electron microscopy. What is the diagnosis?",
    "original_text": "คนไข้มาด้วยอาการสักอย่าง และตรวจเจอ Hypo-complement, Ribbon-like cell",
    "choices_override": {
@@ -173,10 +328,18 @@
     "C",
     "D",
     "E"
-   ]
+   ],
+   "option_why": {
+    "A": "✓ dense deposit disease",
+    "B": "membranous = subepithelial spike",
+    "C": "MCD ไม่มี deposit",
+    "D": "IgA = mesangial",
+    "E": "FSGS ไม่มี deposit ลักษณะนี้"
+   },
+   "key_concept": "• C3 nephritic factor\n• MPGN type I = subendothelial\n• tram-track"
   },
   "30": {
-   "explanation": "Hypertension — ไตเล็ก 2 ข้าง ผิวขรุขระเป็นเม็ด glomerulosclerosis, tubular atrophy = end-stage/chronic kidney (เช่น nephrosclerosis) มักมีความดันสูง\nTrap: hemoptysis = Goodpasture; lens dislocation/hearing loss เกี่ยวกับ Alport/Marfan",
+   "explanation": "ไตเล็ก 2 ข้างผิวขรุขระ + glomerulosclerosis + tubular atrophy = end-stage kidney มักมีความดันสูง",
    "stem_override": "An autopsy shows bilateral small kidneys with a coarsely granular surface. Histology shows glomerulosclerosis, tubular atrophy and some dilated tubules. Which clinical finding was most likely present in this patient?",
    "original_text": "Autopsy พบ bilateral small kidney and coarsely glanulosa apperance histology found glomeruli sclerosis tubule atophy and some dilated tubule",
    "choices_override": {
@@ -189,23 +352,73 @@
    "ai_choices": [
     "D",
     "E"
-   ]
+   ],
+   "option_why": {
+    "A": "hemoptysis = Goodpasture",
+    "B": "✓ hypertension",
+    "C": "lens dislocation = Marfan",
+    "D": "hearing loss = Alport",
+    "E": "hypoglycemia ไม่ใช่ลักษณะเด่น"
+   },
+   "key_concept": "• end-stage kidney: เล็ก granular\n• HTN ทั้งสาเหตุและผล\n• ข้อเดียวกับปี 52 ต้นฉบับปีนั้นตอบ hemoptysis"
   },
   "31": {
-   "explanation": "Increased HCO3- excretion — อาเจียนเสีย HCl → metabolic alkalosis ไตขับ HCO3- ออก (ระยะแรก)\nTrap: NH4+ เพิ่มเป็นการตอบสนองต่อ acidosis; ketonuria เกิดเมื่ออดอาหารนานกว่า",
+   "explanation": "อาเจียนเสีย HCl → metabolic alkalosis ไตขับ HCO₃⁻ ออก (ระยะแรก)",
    "stem_override": "A 40-year-old woman comes to the emergency room after vomiting for 1.5 hours. Which urine finding is expected?",
-   "original_text": "หญิง 40 ปีมาห้องฉุกเฉินด้วยอาเจียนมา 1.5 ชั่วโมง ถามว่าจะเจอปัสสาวะรูปแบบไหน"
+   "original_text": "หญิง 40 ปีมาห้องฉุกเฉินด้วยอาเจียนมา 1.5 ชั่วโมง ถามว่าจะเจอปัสสาวะรูปแบบไหน",
+   "option_why": {
+    "A": "ketonuria เกิดเมื่ออดอาหารนาน",
+    "B": "NH₄⁺ เพิ่มใน acidosis",
+    "C": "✓ HCO₃⁻ excretion เพิ่ม",
+    "D": "urea ไม่ใช่การเปลี่ยนแปลงหลัก",
+    "E": "urine net charge ไม่ใช่"
+   },
+   "key_concept": "• ระยะแรก: bicarbonaturia\n• ระยะหลัง: paradoxical aciduria\n• Cl⁻ ในปัสสาวะต่ำ",
+   "mechanism": [
+    "อาเจียนเสีย H⁺",
+    "plasma HCO₃⁻ ↑",
+    {
+     "s": "filtered HCO₃⁻ เกิน Tm → ขับออก",
+     "answer": true
+    },
+    "ปัสสาวะเป็นด่าง"
+   ]
   },
   "33": {
-   "explanation": "Increase ammoniagenesis — DKA (metabolic acidosis) ไตเพิ่มสร้าง NH4+ จาก glutamine ขับ H+ และได้ new HCO3-\nTrap: ไตจะเพิ่ม titratable acid และ new HCO3- ไม่ใช่ลด; glucose excretion เพิ่ม"
+   "explanation": "DKA (metabolic acidosis) ไตเพิ่ม ammoniagenesis จาก glutamine ขับ H⁺ และสร้าง HCO₃⁻ ใหม่",
+   "option_why": {
+    "A": "Pi reabsorption ลดใน acidosis",
+    "B": "✓ ammoniagenesis เพิ่ม",
+    "C": "glucose ขับเพิ่ม",
+    "D": "titratable acid เพิ่ม",
+    "E": "new HCO₃⁻ เพิ่ม"
+   },
+   "key_concept": "• NH₄⁺ ปรับได้มากที่สุด\n• glutaminase ↑ ใน acidosis\n• DKA: AG acidosis",
+   "mechanism": [
+    "DKA",
+    "pH เซลล์ PCT ลด",
+    {
+     "s": "ammoniagenesis ↑",
+     "answer": true
+    },
+    "HCO₃⁻ ใหม่ + ขับ NH₄⁺"
+   ]
   },
   "34": {
-   "explanation": "Metabolic acidosis with normal anion gap — pH 7.2 HCO3- 12 = metabolic acidosis, AG = 140 − (118 + 12) = 10 ปกติ (hyperchloremic เช่น RTA, ท้องเสีย)\nTrap: creatinine 1 ไม่ใช่ uremia; AG ไม่สูง",
+   "explanation": "pH 7.2 HCO₃⁻ 12 = metabolic acidosis; AG = 140 − (118 + 12) = 10 ปกติ",
    "stem_override": "A 27-year-old man has Na+ 140 mEq/L, K+ 5 mEq/L, Cl- 118 mEq/L, HCO3- 12 mmol/L, creatinine 1 mg/dL and pH 7.2. What is the acid–base disorder?",
-   "original_text": "ชายอายุ 27 ปี ให้ค่า Na+ = 140 mEq/L, K+ = 5 mEq/L, Cl- = 118 mEq/L, HCO3- = 12mmol/L, Creatinine = 1 mg/dL, pH 7.2 ถามว่ามีความผิดปกติอย่างไร"
+   "original_text": "ชายอายุ 27 ปี ให้ค่า Na+ = 140 mEq/L, K+ = 5 mEq/L, Cl- = 118 mEq/L, HCO3- = 12mmol/L, Creatinine = 1 mg/dL, pH 7.2 ถามว่ามีความผิดปกติอย่างไร",
+   "option_why": {
+    "A": "Cr 1 ไม่ใช่ uremia",
+    "B": "AG ไม่สูง",
+    "C": "✓ NAGMA",
+    "D": "ไม่มี PaCO₂",
+    "E": "ไม่ใช่ respiratory"
+   },
+   "key_concept": "• AG ปกติ 8–12\n• NAGMA: diarrhea, RTA\n• HAGMA: MUDPILES"
   },
   "37": {
-   "explanation": "Glomerulonephritis — dysmorphic RBC บ่งว่าเลือดมาจาก glomerulus + บวม + ความดันสูง = nephritic syndrome\nTrap: nephrotic syndrome เด่นที่ proteinuria หนัก ไม่ใช่ dysmorphic RBC; cystitis ให้ leukocyte esterase บวก",
+   "explanation": "Dysmorphic RBC + บวม + HTN = glomerulonephritis (nephritic)",
    "stem_override": "A 35-year-old man presents with edema and hypertension. UA: sp.gr. 1.020, pH 6.5, glucose negative, leukocyte esterase negative, and urine microscopy shows dysmorphic RBCs. What is the most likely diagnosis?",
    "original_text": "35 year old male presented with edema and hypertension UA : sp.gr.1.020 ph=6.5 glucose negative, leukocyte esterase negative, ให้รูป dysmorphic RBC มาละถามว่าเป็นโรค อะไร",
    "choices_override": {
@@ -218,15 +431,31 @@
    "ai_choices": [
     "D",
     "E"
-   ]
+   ],
+   "option_why": {
+    "A": "nephrotic เด่น proteinuria",
+    "B": "cystitis มี leukocyte esterase",
+    "C": "✓ glomerulonephritis",
+    "D": "pyelonephritis มี WBC/ไข้",
+    "E": "ATN มี muddy brown cast"
+   },
+   "key_concept": "• dysmorphic RBC = glomerular\n• RBC cast ยืนยัน\n• nephritic: HTN, oliguria"
   },
   "38": {
-   "explanation": "Glucose — ปัสสาวะตั้งทิ้งไว้ แบคทีเรีย/เซลล์ใช้กลูโคส → glucose ลด (false negative)\nTrap: pH เพิ่มขึ้น (แบคทีเรียเปลี่ยน urea → ammonia); Na+, K+ เปลี่ยนน้อย",
+   "explanation": "ปัสสาวะตั้งทิ้งไว้ แบคทีเรีย/เซลล์ใช้กลูโคส → glucose ลด",
    "stem_override": "Which substance decreases in a urine sample left at room temperature for 4 hours?",
-   "original_text": "อะไรจะลดในปัสสาวะที่ทิ้งไว้ 4 ชม"
+   "original_text": "อะไรจะลดในปัสสาวะที่ทิ้งไว้ 4 ชม",
+   "option_why": {
+    "A": "✓ glucose",
+    "B": "Na⁺ เปลี่ยนน้อย",
+    "C": "K⁺ เปลี่ยนน้อย",
+    "D": "pH เพิ่ม (urea → NH₃)",
+    "E": "protein เปลี่ยนน้อย"
+   },
+   "key_concept": "• ตรวจภายใน 1–2 ชม.\n• bilirubin ไวต่อแสง\n• cast/เซลล์สลาย"
   },
   "40": {
-   "explanation": "Staphylococcus saprophyticus — gram-positive cocci ทำ UTI ในหญิงวัยเจริญพันธุ์ที่มีเพศสัมพันธ์ (novobiocin resistant)\nTrap: E. coli, Klebsiella, Proteus, Pseudomonas เป็น gram-negative bacilli",
+   "explanation": "Gram-positive cocci ทำ UTI ในหญิงวัยเจริญพันธุ์ = Staphylococcus saprophyticus",
    "stem_override": "A young woman has a urinary tract infection caused by gram-positive cocci. What is the most likely organism?",
    "original_text": "UTI แกรมบวก cocci",
    "choices_override": {
@@ -240,13 +469,29 @@
     "C",
     "D",
     "E"
-   ]
+   ],
+   "option_why": {
+    "A": "✓ S. saprophyticus",
+    "B": "E. coli เป็น Gram-negative",
+    "C": "Klebsiella Gram-negative",
+    "D": "Proteus Gram-negative",
+    "E": "Pseudomonas Gram-negative"
+   },
+   "key_concept": "• novobiocin resistant\n• coagulase negative\n• honeymoon cystitis"
   },
   "44": {
-   "explanation": "Nephrotic syndrome — บวม ปัสสาวะเป็นฟอง total protein ต่ำ cholesterol สูง urine protein/creatinine 3.6 (> 3.5) = nephrotic (ในคน DM น่าจะเป็น diabetic nephropathy)\nTrap: AGN ต้องมี RBC/dysmorphic RBC เด่น; pre-renal ไม่มี proteinuria หนัก"
+   "explanation": "บวม + ปัสสาวะเป็นฟอง + total protein ต่ำ + cholesterol สูง + UPCR > 3.5 = nephrotic syndrome (DM)",
+   "option_why": {
+    "A": "prerenal: BUN/Cr > 20",
+    "B": "AKI ไม่อธิบาย proteinuria มาก",
+    "C": "pyelonephritis มีไข้",
+    "D": "GN มี hematuria เด่น",
+    "E": "✓ nephrotic syndrome"
+   },
+   "key_concept": "• nephrotic: proteinuria ≥3.5 g, albumin ↓, edema, lipid ↑\n• DM nephropathy\n• ACEi/ARB + SGLT2i"
   },
   "46": {
-   "explanation": "Acetazolamide — CHF ที่มี edema ร่วม metabolic alkalosis (จาก loop diuretic + อาเจียน) ให้ carbonic anhydrase inhibitor ขับ HCO3- แก้ alkalosis และขับน้ำได้\nTrap: thiazide/loop จะทำ alkalosis แย่ลง; mannitol เพิ่ม volume ทำ HF แย่ลง",
+   "explanation": "HF บวม + metabolic alkalosis (จาก loop + อาเจียน) → acetazolamide ขับ HCO₃⁻ แก้ alkalosis และขับน้ำ",
    "stem_override": "A 70-year-old man with chronic heart failure treated with furosemide presents with vomiting, acute heart failure, peripheral edema and metabolic alkalosis (pH 7.5, HCO3- 36 mmol/L). Which drug is appropriate to treat the edema?",
    "original_text": "ชาย 70 มีประวัติ chronic heart failure ได้รับยา oxytocin and flurozamide , now มาด้วยอาการ vomiting and Acute … heart failure ตรวจพบ peripheral edema and metabolic alkalosis (pH 7.5 , HCO-3 36 ) ให้ยาอะไรรักษา edema",
    "choices_override": {
@@ -259,10 +504,27 @@
    "ai_choices": [
     "D",
     "E"
+   ],
+   "option_why": {
+    "A": "oxytocin ไม่ใช่ยาขับปัสสาวะ",
+    "B": "✓ acetazolamide",
+    "C": "thiazide ทำ alkalosis แย่ลง",
+    "D": "spironolactone อย่างเดียวฤทธิ์ขับน้ำอ่อน",
+    "E": "mannitol ห้ามใน HF"
+   },
+   "key_concept": "• CAI ขับ HCO₃⁻ → แก้ contraction alkalosis\n• ใช้ร่วม loop ใน diuretic resistance\n• ADR: metabolic acidosis, hypoK",
+   "mechanism": [
+    "acetazolamide ยับยั้ง carbonic anhydrase ที่ PCT",
+    {
+     "s": "ดูดกลับ HCO₃⁻ ลด → ขับ HCO₃⁻/Na⁺",
+     "answer": true
+    },
+    "alkalosis ดีขึ้น",
+    "ขับน้ำเสริมฤทธิ์ loop"
    ]
   },
   "47": {
-   "explanation": "Mannitol — osmotic diuretic ดึงน้ำเข้าหลอดเลือดก่อน เพิ่ม plasma volume → pulmonary edema ใน HF (ห้ามใช้)\nTrap: furosemide/spironolactone ใช้รักษา HF",
+   "explanation": "Mannitol (osmotic) ดึงน้ำเข้าหลอดเลือดก่อน เพิ่ม plasma volume → pulmonary edema ใน HF",
    "stem_override": "Which diuretic can worsen heart failure (pulmonary edema) in a patient with heart failure?",
    "original_text": "ยาที่ทำให้เกิดHFมากขึ้น",
    "choices_override": {
@@ -276,15 +538,49 @@
     "C",
     "D",
     "E"
+   ],
+   "option_why": {
+    "A": "✓ mannitol",
+    "B": "acetazolamide ไม่ทำ volume เพิ่ม",
+    "C": "furosemide ใช้รักษา HF",
+    "D": "spironolactone ใช้รักษา HF",
+    "E": "thiazide ใช้ได้"
+   },
+   "key_concept": "• mannitol: ลด ICP/IOP\n• ห้าม: HF, anuria\n• ดึงน้ำออกจากเซลล์เข้าหลอดเลือด",
+   "mechanism": [
+    "ให้ mannitol IV",
+    "osmolality พลาสมา ↑",
+    {
+     "s": "น้ำจากเซลล์เข้าหลอดเลือด → volume ↑",
+     "answer": true
+    },
+    "หัวใจที่ล้ม → pulmonary edema"
    ]
   },
   "49": {
-   "explanation": "Tubular injury — เสียเลือดมาก → hypoperfusion → ischemic acute tubular necrosis → oliguria\nTrap: interstitial fibrosis เป็นเรื้อรัง; tubular regeneration เป็นระยะฟื้นตัว",
+   "explanation": "เสียเลือดมาก → hypoperfusion → ischemic ATN → oliguria",
    "stem_override": "A 25-year-old man comes to the emergency department after a motor vehicle accident with excessive blood loss and later develops oliguria. What is the renal pathology?",
-   "original_text": "25 year-old man come to emergency department with motor vehicle accident and excessive blood loss"
+   "original_text": "25 year-old man come to emergency department with motor vehicle accident and excessive blood loss",
+   "option_why": {
+    "A": "✓ tubular injury (ATN)",
+    "B": "interstitial fibrosis เป็นเรื้อรัง",
+    "C": "ไม่ใช่คำศัพท์ที่ใช้",
+    "D": "tubular regeneration เป็นระยะฟื้นตัว",
+    "E": "interstitial inflammation = AIN"
+   },
+   "key_concept": "• ATN: ischemic vs nephrotoxic\n• muddy brown granular cast\n• FENa > 2%",
+   "mechanism": [
+    "เสียเลือด → shock",
+    "RBF ↓",
+    {
+     "s": "tubular cell ขาดเลือดตาย",
+     "answer": true
+    },
+    "cast อุด + back leak → oliguria"
+   ]
   },
   "51": {
-   "explanation": "Renal cell carcinoma — ไตรอยโรค classic: hematuria, น้ำหนักลด, ก้อนที่ไต CT enhancing irregular mass ในผู้ใหญ่\nTrap: Wilms tumor พบในเด็ก; angiomyolipoma มีไขมัน; urothelial carcinoma อยู่ใน bladder/pelvis",
+   "explanation": "Hematuria + น้ำหนักลด + ก้อน enhancing irregular ที่ไตในผู้ใหญ่ = renal cell carcinoma",
    "stem_override": "A man has gross hematuria and weight loss. CT shows an irregular enhancing mass in the right kidney. What is the most likely diagnosis?",
    "original_text": "Male with gross hematuria,weigh loss ,CT of irregular abdomen ,enhancing lesion in right renal",
    "choices_override": {
@@ -298,30 +594,86 @@
     "C",
     "D",
     "E"
-   ]
+   ],
+   "option_why": {
+    "A": "มะเร็งลำไส้ใหญ่ไม่อยู่ในไต",
+    "B": "✓ RCC",
+    "C": "urothelial อยู่ในกระเพาะปัสสาวะ",
+    "D": "angiomyolipoma มีไขมัน",
+    "E": "Wilms ในเด็ก"
+   },
+   "key_concept": "• RCC: clear cell, VHL\n• paraneoplastic: EPO, PTHrP, renin\n• ลุกลาม IVC"
   },
   "53": {
-   "explanation": "Piriformis — เกาะจาก anterior surface ของ sacrum ไปที่ superior border ของ greater trochanter กระดูกสองตำแหน่งนี้หักจึงกระทบ piriformis\nTrap: obturator internus เกาะ medial surface ของ greater trochanter แต่มาจาก obturator membrane ไม่ใช่ sacrum"
+   "explanation": "Piriformis เกาะ sacrum ด้านหน้าไป superior border ของ greater trochanter จึงได้รับผลเมื่อสองจุดนี้หัก",
+   "option_why": {
+    "A": "✓ piriformis",
+    "B": "coccygeus เกาะ ischial spine–coccyx",
+    "C": "levator ani อยู่ pelvic floor",
+    "D": "psoas เกาะ lesser trochanter",
+    "E": "obturator internus เกาะ medial greater trochanter (ผ่าน lesser sciatic foramen)"
+   },
+   "key_concept": "• piriformis ผ่าน greater sciatic foramen\n• เป็น landmark ของหลอดเลือด/เส้นประสาท gluteal\n• nerve to piriformis S1–2"
   },
   "54": {
-   "explanation": "Cooper's ligament — (suspensory ligament) ยึดผิวหนังกับ deep fascia มะเร็งดึงรั้ง ligament ทำให้ผิวหนังบุ๋ม (dimpling/peau d'orange จาก lymphatic)\nTrap: lactiferous duct ถูกดึงทำให้หัวนมบุ๋ม (nipple retraction)"
+   "explanation": "Cooper's (suspensory) ligament ยึดผิวหนังกับ deep fascia มะเร็งดึงรั้งทำให้ผิวบุ๋ม",
+   "option_why": {
+    "A": "adipose ไม่ดึงผิว",
+    "B": "lactiferous duct หดทำหัวนมบุ๋ม",
+    "C": "mammary gland ไม่ใช่โครงสร้างดึงผิว",
+    "D": "✓ Cooper's ligament",
+    "E": "deep fascia อยู่ลึก (fixed mass)"
+   },
+   "key_concept": "• skin dimpling = Cooper's ligament\n• peau d'orange = lymphatic อุดตัน\n• nipple retraction = lactiferous duct"
   },
   "55": {
-   "explanation": "Cardinal ligament — (transverse cervical) พยุง cervix/uterus หลัก ป้องกัน uterine prolapse\nTrap: broad และ round ligament พยุงน้อย; suspensory ligament ยึดรังไข่"
+   "explanation": "Cardinal (transverse cervical) ligament พยุง cervix/uterus หลัก",
+   "option_why": {
+    "A": "✓ cardinal ligament",
+    "B": "external anal sphincter ไม่พยุงมดลูก",
+    "C": "broad ligament พยุงน้อย",
+    "D": "round ligament ยึดมดลูกไปข้างหน้า",
+    "E": "suspensory ligament ยึดรังไข่"
+   },
+   "key_concept": "• level I: cardinal + uterosacral\n• prolapse: คลอดหลายครั้ง\n• ureter ใต้ uterine a."
   },
   "57": {
-   "explanation": "Round ligament of uterus — ในหญิงเป็นโครงสร้างที่ผ่าน inguinal canal (ไป labia majora) แผลลึกใน canal จึงตัดโดน\nTrap: ovarian และ suspensory ligament อยู่ใน pelvis ไม่ผ่าน inguinal canal"
+   "explanation": "Round ligament of uterus ผ่าน inguinal canal ไป labia majora ในหญิง",
+   "option_why": {
+    "A": "mesosalpinx อยู่ใน pelvis",
+    "B": "ovarian ligament อยู่ใน pelvis",
+    "C": "uterosacral อยู่หลัง",
+    "D": "✓ round ligament",
+    "E": "suspensory ligament อยู่ขอบ pelvis"
+   },
+   "key_concept": "• inguinal canal หญิง: round lig. + ilioinguinal n.\n• ชาย: spermatic cord\n• มาจาก gubernaculum"
   },
   "60": {
-   "explanation": "Labia majora — superficial inguinal lymph node รับ lymph จากผิวหนังผนังท้องใต้สะดือ, perineum, labia majora, ส่วนล่างของ vagina/anal canal\nTrap: ovary → para-aortic; cervix → internal/external iliac"
+   "explanation": "Superficial inguinal nodes รับ lymph จากผิวหนังใต้สะดือ, perineum, labia majora, vagina/anal canal ส่วนล่าง",
+   "option_why": {
+    "A": "colon → mesenteric nodes",
+    "B": "ovary → para-aortic",
+    "C": "cervix → internal/external iliac",
+    "D": "✓ labia majora",
+    "E": "uterine tube → para-aortic"
+   },
+   "key_concept": "• ใต้ pectinate line → superficial inguinal\n• gonads → para-aortic\n• glans/clitoris → deep inguinal"
   },
   "62": {
-   "explanation": "Levator ani — กล้ามเนื้อ pelvic floor (pubococcygeus/puborectalis) ช่วยกลั้นปัสสาวะ หยุดปัสสาวะ ถ้าอ่อนแรงจะกลั้นไม่ได้ (ตามเฉลยต้นฉบับ)\nTrap: bulbospongiosus/ischiocavernosus เกี่ยวกับการแข็งตัว/ขับปัสสาวะหยดสุดท้าย",
+   "explanation": "Levator ani (pubococcygeus) ช่วยกลั้น/หยุดปัสสาวะ อ่อนแรงจะหยุดไม่ได้ (ตามเฉลย)",
    "stem_override": "A woman has difficulty voluntarily stopping urination. Weakness of which muscle is most likely responsible?",
-   "original_text": "ผญฉี่ไม่ออก"
+   "original_text": "ผญฉี่ไม่ออก",
+   "option_why": {
+    "A": "deep transverse perineal ช่วยน้อย",
+    "B": "bulbospongiosus ไล่ปัสสาวะหยดสุดท้าย",
+    "C": "ischiocavernosus เกี่ยวกับ erection",
+    "D": "✓ levator ani",
+    "E": "piriformis ไม่เกี่ยว"
+   },
+   "key_concept": "• pelvic floor: levator ani + coccygeus\n• Kegel exercise\n• stress incontinence หลังคลอด"
   },
   "63": {
-   "explanation": "Formation of flagellum and spiral mitochondria — maturation phase (spermiogenesis) spermatid เปลี่ยนเป็น sperm: สร้าง acrosome, หาง, mitochondria เรียงเป็นเกลียวที่ middle piece\nTrap: acrosome ก็เกิดใน spermiogenesis (ระยะ Golgi) แต่เฉลยต้นฉบับเลือก C; การแบ่ง mitosis/meiosis อยู่ระยะก่อนหน้า",
+   "explanation": "Spermiogenesis: spermatid เปลี่ยนเป็น sperm สร้าง acrosome, flagellum, mitochondria เรียงเกลียว",
    "stem_override": "Which of the following occurs in the maturation phase (spermiogenesis) of spermatogenesis?",
    "original_text": "Which of the followings involves the maturation phase of spermatogenesis",
    "choices_override": {
@@ -333,10 +685,18 @@
    },
    "ai_choices": [
     "E"
-   ]
+   ],
+   "option_why": {
+    "A": "acrosome ก็เกิดใน spermiogenesis แต่ตัวเลือกพิมพ์ไม่ตรงกับเฉลยต้นฉบับ",
+    "B": "spermatocyte เป็น spermatocytogenesis",
+    "C": "✓ สร้าง flagellum และ mitochondria แบบเกลียว",
+    "D": "spermatogonia mitosis เป็นระยะแรก",
+    "E": "meiosis เป็นระยะ spermatocyte"
+   },
+   "key_concept": "• spermatocytogenesis → meiosis → spermiogenesis\n• spermiogenesis ไม่มีการแบ่งเซลล์\n• ใช้เวลา ~64–74 วัน"
   },
   "64": {
-   "explanation": "Difficulty starting urination — BPH ต่อมลูกหมาก (transition zone) โตกด prostatic urethra → hesitancy, ปัสสาวะไม่พุ่ง, ไม่สุด, nocturia\nTrap: BPH ไม่ทำให้อัณฑะโตหรือ sperm ลด",
+   "explanation": "BPH ต่อม transition zone โตกด prostatic urethra → ปัสสาวะยาก (hesitancy)",
    "stem_override": "A man has hyperplasia of the prostate gland. Which of the following symptoms is most likely to develop?",
    "original_text": "If a person has hyperplasia of a structure as show below. Which of the following symptoms is most likely to develop?",
    "choices_override": {
@@ -346,31 +706,87 @@
     "D": "Decrease the number of sperm",
     "E": "Increase the concentration of semen"
    },
-   "ai_choices": []
+   "ai_choices": [],
+   "option_why": {
+    "A": "ปวดหลังนึกถึงมะเร็งกระจายกระดูก",
+    "B": "✓ difficulty starting urination",
+    "C": "ไม่ทำให้อัณฑะโต",
+    "D": "ไม่ลดจำนวนอสุจิ",
+    "E": "ไม่เพิ่มความเข้มข้นน้ำอสุจิ"
+   },
+   "key_concept": "• LUTS: hesitancy, weak stream, nocturia\n• DRE: สมมาตร rubbery\n• α-blocker/5-ARI"
   },
   "65": {
-   "explanation": "Unable to complete maturation process — epididymis เป็นที่ sperm เจริญเต็มที่ (motility) อักเสบเรื้อรังจนเป็นพังผืด/อุดตัน sperm จึง mature ไม่ได้\nTrap: capacitation เกิดในระบบสืบพันธุ์หญิง; spermatogenic cell อยู่ในอัณฑะ",
+   "explanation": "Epididymis เป็นที่ sperm เจริญเต็มที่ (motility) อักเสบเรื้อรังจนอุดตัน sperm จึงเจริญไม่ได้",
    "stem_override": "Histology of the epididymis is shown. If this structure has chronic inflammation that is left untreated, what will happen?",
-   "original_text": "(ให้รูป Histo epididymis) ถามว่าหากโครงสร้างนี้เกิด inflammation แล้วทิ้งไว้ไม่รักษาเป็นเวลานาน จะเกิดอะไรขึ้น"
+   "original_text": "(ให้รูป Histo epididymis) ถามว่าหากโครงสร้างนี้เกิด inflammation แล้วทิ้งไว้ไม่รักษาเป็นเวลานาน จะเกิดอะไรขึ้น",
+   "option_why": {
+    "A": "morphology เกิดที่อัณฑะ",
+    "B": "spermatogenic cell อยู่ในอัณฑะ",
+    "C": "Sertoli อยู่ในอัณฑะ",
+    "D": "✓ maturation ไม่สมบูรณ์",
+    "E": "capacitation เกิดในทางเดินระบบสืบพันธุ์หญิง"
+   },
+   "key_concept": "• epididymis: maturation + storage\n• capacitation ในหญิง\n• อักเสบเรื้อรัง → obstructive azoospermia"
   },
   "69": {
-   "explanation": "Stromal cells undergo mitotic expansion — รอบ 35 วัน ตกไข่ราววันที่ 21 วันที่ 18 ยังอยู่ proliferative phase: stroma และต่อมแบ่งตัว (ต่อมยังตรงแคบ จึงรับ E ด้วย)\nTrap: ต่อมหลั่ง mucus/secretory เกิดหลังตกไข่; sloughing เป็นช่วงประจำเดือน"
+   "explanation": "รอบ 35 วัน ตกไข่ราววันที่ 21 วันที่ 18 ยังเป็น proliferative: stroma แบ่งตัว ต่อมตรงแคบ (นับถูกทั้ง C และ E)",
+   "option_why": {
+    "A": "หลุดลอก = menstrual",
+    "B": "หลั่งเมือก = secretory",
+    "C": "✓ stromal mitosis",
+    "D": "decidua เกิดเมื่อตั้งครรภ์",
+    "E": "✓ ต่อมตรง ช่องแคบ"
+   },
+   "key_concept": "• proliferative: estrogen\n• secretory: progesterone\n• ovulation = cycle − 14"
   },
   "70": {
-   "explanation": "Pregnant woman — corpus luteum คงอยู่ (corpus luteum of pregnancy) และไม่มี corpus albicans ใหม่เพราะไม่มีรอบตกไข่ใหม่ (ตามเฉลยต้นฉบับ)\nTrap: fertile woman ทั่วไปมี corpus albicans จากรอบก่อน; pre-adolescent/menopause ไม่มี corpus luteum",
-   "audit_note": "AI blind ตอบ fertile woman; ต้นฉบับ pregnant (corpus luteum คงอยู่ ไม่มี corpus albicans) สมเหตุผลกว่า"
+   "explanation": "Corpus luteum ยังอยู่ ไม่มี corpus albicans ใหม่เพราะไม่มีรอบตกไข่ใหม่ = ตั้งครรภ์ (ตามเฉลย)",
+   "audit_note": "AI blind ตอบ fertile woman; ต้นฉบับ pregnant (corpus luteum คงอยู่ ไม่มี corpus albicans) สมเหตุผลกว่า",
+   "option_why": {
+    "A": "วัยหมดประจำเดือนไม่มี corpus luteum",
+    "B": "ก่อนวัยรุ่นไม่มี corpus luteum",
+    "C": "fertile woman มีทั้ง luteum และ albicans",
+    "D": "✓ pregnant woman",
+    "E": "ให้นมบุตรมักไม่ตกไข่ ไม่มี corpus luteum"
+   },
+   "key_concept": "• hCG ค้ำ corpus luteum\n• corpus albicans = corpus luteum ที่ฝ่อ\n• placenta รับช่วงหลัง ~10 สัปดาห์"
   },
   "71": {
-   "explanation": "Day 13-14 — ก่อนตกไข่ estrogen สูง มูกปากมดลูกใส ยืด (spinnbarkeit) เหมือนไข่ขาว ช่วยให้ sperm ผ่าน\nTrap: luteal phase (progesterone) มูกข้นเหนียว; day 3-4 เป็นช่วงประจำเดือน"
+   "explanation": "ก่อนตกไข่ estrogen สูง มูกปากมดลูกใส ยืดเหมือนไข่ขาว (spinnbarkeit) วันที่ 13–14",
+   "option_why": {
+    "A": "วันที่ 3–4 เป็นช่วงมีประจำเดือน",
+    "B": "วันที่ 8–9 estrogen ยังไม่สูงสุด",
+    "C": "✓ วันที่ 13–14",
+    "D": "16–17 หลังตกไข่ มูกข้น",
+    "E": "24–25 luteal phase มูกข้น"
+   },
+   "key_concept": "• estrogen: มูกใส ยืด เฟิร์น\n• progesterone: มูกข้น เหนียว\n• ใช้ประเมินตกไข่"
   },
   "74": {
-   "explanation": "PTEN — endometrioid carcinoma (type I, จาก hyperplasia, estrogen-related) พบ PTEN mutation บ่อยที่สุด\nTrap: TP53 = serous carcinoma (type II); p16 สัมพันธ์ HPV/cervical cancer"
+   "explanation": "Endometrioid carcinoma (type I) ที่ลุกลาม myometrium สัมพันธ์ PTEN mutation มากสุด",
+   "option_why": {
+    "A": "✓ PTEN",
+    "B": "TP53 = serous (type II)",
+    "C": "p16 สัมพันธ์ HPV",
+    "D": "RB ไม่ใช่หลัก",
+    "E": "BRCA1 = ovarian/breast"
+   },
+   "key_concept": "• type I: estrogen, hyperplasia → carcinoma\n• Lynch: MMR\n• type II: อายุมาก, aggressive"
   },
   "76": {
-   "explanation": "1 sperm + 1 empty egg — complete mole: ไข่ไม่มีโครโมโซม + sperm 1 ตัวแล้ว duplicate → 46,XX (หรือ 2 sperm → 46,XY)\nTrap: 2 sperm + 1 normal egg = partial mole (triploid)"
+   "explanation": "Complete mole: ไข่ไม่มีโครโมโซม + sperm 1 ตัว duplicate → 46,XX",
+   "option_why": {
+    "A": "ปกติ",
+    "B": "2 sperm + ไข่ปกติ = partial mole",
+    "C": "ไม่ใช่กลไก",
+    "D": "✓ 1 sperm + empty egg",
+    "E": "ไม่ใช่กลไก"
+   },
+   "key_concept": "• complete: snowstorm, hCG สูงมาก\n• partial: triploid, มีชิ้นส่วนทารก\n• เสี่ยง choriocarcinoma"
   },
   "80": {
-   "explanation": "Aromatase — (CYP19) เปลี่ยน androstenedione → estrone และ testosterone → estradiol ใน granulosa cell/ไขมัน\nTrap: 5α-reductase เปลี่ยน testosterone → DHT; desmolase เป็นขั้นแรกของ steroidogenesis",
+   "explanation": "Aromatase (CYP19) เปลี่ยน androgen → estrogen ใน granulosa cell/ไขมัน",
    "stem_override": "Which enzyme converts androgens to estrogens?",
    "original_text": "เอนไซม์อะไรเปลี่ยน androgen เป็น estrogen",
    "choices_override": {
@@ -382,16 +798,40 @@
    },
    "ai_choices": [
     "C"
-   ]
+   ],
+   "option_why": {
+    "A": "5α-reductase: T → DHT",
+    "B": "✓ aromatase",
+    "C": "desmolase: cholesterol → pregnenolone",
+    "D": "dehydrogenase เป็นขั้นอื่น",
+    "E": "hydroxylase เป็นขั้นอื่น"
+   },
+   "key_concept": "• FSH กระตุ้น aromatase ใน granulosa\n• aromatase inhibitor: letrozole\n• ไขมันในวัยหมดประจำเดือนสร้าง estrone"
   },
   "81": {
-   "explanation": "LH — LH surge (ถูกกระตุ้นจาก estradiol positive feedback) จำเป็นต่อการตกไข่ภายใน ~36 ชม.\nTrap: estradiol เป็นตัวกระตุ้น LH surge แต่ hormone surge ที่ทำให้ตกไข่โดยตรงคือ LH"
+   "explanation": "LH surge (estradiol positive feedback) จำเป็นต่อการตกไข่ใน ~36 ชม.",
+   "option_why": {
+    "A": "✓ LH",
+    "B": "inhibin กด FSH",
+    "C": "activin กระตุ้น FSH",
+    "D": "estradiol กระตุ้น surge",
+    "E": "progesterone เพิ่มหลังตกไข่"
+   },
+   "key_concept": "• estradiol สูงต่อเนื่อง → positive feedback\n• LH → ไข่ตก + luteinization\n• ชุดตรวจตกไข่วัด LH"
   },
   "83": {
-   "explanation": "Uterine contraction frequency and fetal heart rate — oxytocin อาจทำ uterine hyperstimulation → fetal distress จึงต้องเฝ้า contraction และ FHR อย่างใกล้ชิด\nTrap: Na+ ใช้เฝ้าเมื่อให้ขนาดสูง/นาน แต่สิ่งที่ต้องเฝ้าหลักคือ contraction และ FHR"
+   "explanation": "Oxytocin อาจทำมดลูกบีบถี่เกิน → fetal distress ต้องเฝ้าการบีบตัวมดลูกและ FHR",
+   "option_why": {
+    "A": "ท่าทารกประเมินก่อน",
+    "B": "Na⁺ ระวังเมื่อขนาดสูงนาน แต่ไม่ใช่การเฝ้าหลัก",
+    "C": "ไม่วัดระดับยา",
+    "D": "Hb ไม่ใช่การเฝ้าหลัก",
+    "E": "✓ uterine contraction + FHR"
+   },
+   "key_concept": "• ADR: hyperstimulation, water intoxication\n• CTG monitoring\n• หยุดยาเมื่อ tachysystole"
   },
   "84": {
-   "explanation": "Magnesium sulfate — ใช้ป้องกันชักใน severe preeclampsia (และ tocolysis) พิษ Mg ทำ reflex ลด (patellar reflex หายเป็นสัญญาณแรก) อ่อนแรง หายใจช้า\nTrap: terbutaline ทำใจสั่น hypokalemia; indomethacin ทำ ductus arteriosus ปิด",
+   "explanation": "MgSO₄ ป้องกันชักใน severe preeclampsia พิษ Mg ทำ reflex ลด (patellar reflex หายก่อน) อ่อนแรง",
    "stem_override": "A 34-year-old woman at 35 weeks of gestation is admitted with preeclampsia with severe features. She receives a tocolytic drug and an IV drug for seizure prophylaxis. Two hours later she feels unusually weak and her patellar reflexes are diminished. Which drug causes this adverse effect?",
    "original_text": "A female 34 years old with 35 weeks gestation admitted with pregnancy induced hypertension with severe feature. She take tocolytic drug to manage preterm labor and IV drug for seizure prophylaxis. After 2 hours, she reports feel unusually weak. On examnination, patellar reflex is diminished. What drug causes this symptoms",
    "choices_override": {
@@ -404,13 +844,38 @@
    "ai_choices": [
     "D",
     "E"
+   ],
+   "option_why": {
+    "A": "terbutaline ทำ tachycardia",
+    "B": "indomethacin ไม่ลด reflex",
+    "C": "✓ magnesium sulfate",
+    "D": "nifedipine ทำ hypotension",
+    "E": "hydralazine ทำ hypotension"
+   },
+   "key_concept": "• Mg toxicity: reflex หาย → หายใจช้า → หัวใจหยุด\n• antidote: calcium gluconate\n• เฝ้า reflex, RR, urine output",
+   "mechanism": [
+    "ให้ MgSO₄",
+    "ระดับ Mg สูง",
+    {
+     "s": "ยับยั้ง ACh release ที่ neuromuscular junction",
+     "answer": true
+    },
+    "reflex หาย อ่อนแรง"
    ]
   },
   "87": {
-   "explanation": "Reduce vasomotor symptoms — ข้อบ่งชี้หลักของ HRT คือ hot flushes/night sweats (และ vaginal atrophy)\nTrap: HRT ไม่ป้องกัน CAD/ไม่ช่วยความจำ และเพิ่มความเสี่ยงมะเร็งเต้านม/เยื่อบุโพรงมดลูก (ถ้า estrogen เดี่ยว)"
+   "explanation": "ข้อบ่งชี้หลักของ HRT คือลด vasomotor symptoms (hot flush, night sweats)",
+   "option_why": {
+    "A": "HRT ไม่ลดมะเร็ง epithelium",
+    "B": "ไม่ฟื้นฟูรังไข่",
+    "C": "✓ vasomotor symptoms",
+    "D": "ไม่ช่วยความจำ",
+    "E": "ไม่ป้องกัน CAD (WHI)"
+   },
+   "key_concept": "• HRT: ขนาดต่ำ ระยะสั้น\n• มีมดลูกต้องให้ progestin ร่วม\n• เสี่ยง breast CA, VTE"
   },
   "90": {
-   "explanation": "AST and ALT — anabolic (17α-alkylated) steroid เป็นพิษต่อตับ (cholestasis, hepatitis, peliosis) ทำให้ fatigue, nausea\nTrap: testosterone สูงอธิบายสิว/ขน แต่ไม่อธิบาย fatigue/nausea",
+   "explanation": "Anabolic steroid (17α-alkylated) เป็นพิษต่อตับ → อ่อนเพลีย คลื่นไส้ ต้องตรวจ AST/ALT",
    "stem_override": "A man uses a hormone to build muscle and develops acne and hirsutism. After a while he has fatigue and nausea. Which laboratory test should be monitored?",
    "original_text": "คนไข้ มีสิว มีขนดก เนื่องจากใช้hormone เพื่อสร้างกล้ามเนื้อ ใช้ไปซักพัก เกิด fatigue nausea",
    "choices_override": {
@@ -424,10 +889,18 @@
     "C",
     "D",
     "E"
-   ]
+   ],
+   "option_why": {
+    "A": "✓ AST/ALT",
+    "B": "testosterone อธิบายสิว/ขน ไม่อธิบายอาการตับ",
+    "C": "creatinine ไม่ใช่หลัก",
+    "D": "amylase ไม่ใช่",
+    "E": "TFT ไม่ใช่"
+   },
+   "key_concept": "• ADR: cholestasis, peliosis hepatis, hepatic adenoma\n• อัณฑะฝ่อ, infertility\n• lipid ผิดปกติ"
   },
   "93": {
-   "explanation": "Chlamydia trachomatis — reactive arthritis (Reiter syndrome) หลังติดเชื้อ Chlamydia: arthritis, ผื่น, conjunctivitis/urethritis (ตามเฉลยต้นฉบับ)\nTrap: Treponema (secondary syphilis) ให้ผื่นฝ่ามือฝ่าเท้า arthritis ไม่เด่น; ถ้ามี N. gonorrhoeae ในตัวเลือกจะเข้ากับ DGI มาก",
+   "explanation": "ไข้ + ข้ออักเสบ + ผื่นในวัยรุ่น ตามเฉลยต้นฉบับคือ reactive arthritis จาก Chlamydia trachomatis",
    "stem_override": "A 20-year-old has fever, arthritis and a maculopapular rash. Which organism is the most likely cause?",
    "original_text": "20 ปี มีไข้, arthritis, maculopapular rash",
    "choices_override": {
@@ -441,13 +914,29 @@
     "D",
     "E"
    ],
-   "audit_note": "AI blind ตอบ Treponema; เฉลยต้นฉบับเขียน Reiter syndrome → Chlamydia สมเหตุผล"
+   "audit_note": "AI blind ตอบ Treponema; เฉลยต้นฉบับเขียน Reiter syndrome → Chlamydia สมเหตุผล",
+   "option_why": {
+    "A": "Treponema (secondary syphilis) ทำผื่นได้ แต่ไม่ใช่เฉลย",
+    "B": "H. influenzae ไม่ใช่",
+    "C": "✓ Chlamydia trachomatis (ตามเฉลย)",
+    "D": "Trichomonas ไม่ทำข้ออักเสบ",
+    "E": "HSV-2 แผลตุ่มน้ำ"
+   },
+   "key_concept": "• reactive arthritis: arthritis + urethritis + conjunctivitis\n• disseminated gonococcal infection ก็ทำ arthritis + rash\n• ข้อนี้กำกวมตามโจทย์ที่จำมา"
   },
   "96": {
-   "explanation": "They didn't have any problem — ถึงจุดสุดยอดทั้งคู่และพอใจ ระยะเวลาสั้นไม่ใช่โรคถ้าไม่ทำให้ทุกข์ใจ\nTrap: sexual dysfunction ต้องมี distress"
+   "explanation": "ถึงจุดสุดยอดทั้งคู่และพอใจ ระยะเวลาสั้นไม่ถือเป็นโรคถ้าไม่ทำให้ทุกข์ใจ",
+   "option_why": {
+    "A": "ไม่ใช่",
+    "B": "ไม่ใช่",
+    "C": "ไม่ใช่",
+    "D": "✓ ไม่มีปัญหา",
+    "E": "ไม่ใช่"
+   },
+   "key_concept": "• sexual dysfunction ต้องมี distress\n• ≥6 เดือน\n• เทียบกับ premature ejaculation"
   },
   "97": {
-   "explanation": "Normal it just sexual orientation — ดึงดูดเพศเดียวกัน = sexual orientation ไม่ใช่โรค ไม่ต้องรักษา\nTrap: gender identity คือการรับรู้เพศของตัวเอง",
+   "explanation": "ดึงดูดเพศเดียวกัน = sexual orientation ไม่ใช่โรค ไม่ต้องรักษา",
    "stem_override": "A male patient asks: \"I am a man. When I see sexy women I do not get an erection, but with men I do. Am I normal?\" What is the most appropriate answer?",
    "original_text": "หากคนไข้มาถามคุณว่า \"หมอครับ ผมเป็นผู้ชายนะครับ แต่เวลาผมเห็นผู้หญิงเซ็กซี่ๆ อวัยวะเพศผมไม่ แข็งเลยอ่ะครับ แต่กับผู้ชาย อวัยวะเพศผมแข็งอ่ะครับ ถ้าได้มีอะไีรกับผู้ชายคนนี้คงจะสุดยอดมากเลย เเบบนี้ผมปกติไหมครับหมอ\" คุณควรจะตอบว่า",
    "choices_override": {
@@ -460,10 +949,18 @@
    "ai_choices": [
     "D",
     "E"
-   ]
+   ],
+   "option_why": {
+    "A": "✓ normal — sexual orientation",
+    "B": "gender identity = การรับรู้เพศตนเอง",
+    "C": "ไม่ต้องรักษา",
+    "D": "ไม่ใช่ gender dysphoria",
+    "E": "ไม่ใช่ ED"
+   },
+   "key_concept": "• orientation ≠ identity\n• ไม่ใช่โรคใน DSM-5\n• ให้คำปรึกษาไม่ตัดสิน"
   },
   "98": {
-   "explanation": "Voyeurism — ตื่นตัวทางเพศจากการแอบดูคนเปลือย/มีเพศสัมพันธ์โดยเขาไม่รู้ตัว\nTrap: exhibitionism = เปิดเผยอวัยวะเพศให้คนอื่นเห็น; frotteurism = ถูไถคนที่ไม่ยินยอม",
+   "explanation": "ตื่นตัวทางเพศจากการแอบดูคนเปลือยโดยเขาไม่รู้ตัว = voyeurism",
    "stem_override": "A man becomes sexually aroused by secretly watching his neighbor undress. What is this paraphilia called?",
    "original_text": "แอบดูเพื่อนบ้านเปลือยแล้วมีอารมเรียกว่า",
    "choices_override": {
@@ -475,12 +972,28 @@
    },
    "ai_choices": [
     "E"
-   ]
+   ],
+   "option_why": {
+    "A": "✓ voyeurism",
+    "B": "fetishism = วัตถุ",
+    "C": "frotteurism = ถูตัว",
+    "D": "exhibitionism = เปิดอวัยวะเพศ",
+    "E": "transvestism = แต่งกายข้ามเพศ"
+   },
+   "key_concept": "• paraphilic disorder ต้องมี distress/กระทำผู้ไม่ยินยอม\n• ≥6 เดือน\n• อายุ ≥18"
   },
   "100": {
-   "explanation": "ซัพพอร์ต — วัยรุ่นที่มี gender dysphoria ให้การสนับสนุนทางจิตใจ (affirming care) ประเมินร่วมกับครอบครัว ไม่ตัดสิน\nTrap: ผ่าตัดทันทีไม่เหมาะในวัยรุ่น; การบังคับให้พอใจเพศกำเนิด (conversion) ผิดหลัก",
+   "explanation": "วัยรุ่นที่มี gender dysphoria ให้การสนับสนุนทางจิตใจ (affirming care) ประเมินร่วมครอบครัว",
    "stem_override": "A 16-year-old assigned female at birth is distressed because she wants to be male. What is the most appropriate approach?",
-   "original_text": "16 y female distress เพราะอยากเป็นผช แนวทางที่เหมาะสม"
+   "original_text": "16 y female distress เพราะอยากเป็นผช แนวทางที่เหมาะสม",
+   "option_why": {
+    "A": "ไม่ผ่าตัดทันทีในวัยรุ่น",
+    "B": "ไม่บังคับให้พอใจเพศกำเนิด",
+    "C": "ไม่เบี่ยงความสนใจ",
+    "D": "✓ support",
+    "E": "ไม่รอโดยไม่ดูแล"
+   },
+   "key_concept": "• gender dysphoria: distress ≥6 เดือน\n• ทีมสหวิชาชีพ\n• puberty blocker ตามเกณฑ์"
   },
   "5": {
    "stem_override": "Which of the following embryonic structures develops into the epididymis?",
@@ -499,7 +1012,15 @@
     "D",
     "E"
    ],
-   "explanation": "Mesonephric duct — (Wolffian duct) เจริญเป็น epididymis, ductus deferens, seminal vesicle, ejaculatory duct ภายใต้ testosterone\nTrap: mesonephric tubules เหลือเป็น efferent ductules ไม่ใช่ตัว epididymis; paramesonephric ฝ่อในชาย"
+   "explanation": "Mesonephric (Wolffian) duct เจริญเป็น epididymis, vas deferens, seminal vesicle ภายใต้ testosterone",
+   "option_why": {
+    "A": "paramesonephric duct ฝ่อในชาย",
+    "B": "✓ mesonephric duct",
+    "C": "urogenital sinus → prostate/urethra",
+    "D": "mesonephric tubules เหลือเป็น efferent ductules เท่านั้น",
+    "E": "gubernaculum ดึงอัณฑะลง"
+   },
+   "key_concept": "• Wolffian: epididymis, vas, SV, ejaculatory duct\n• efferent ductules จาก mesonephric tubules\n• testosterone คง Wolffian"
   },
   "23": {
    "stem_override": "How does hypercalcemia cause polyuria?",
@@ -518,7 +1039,24 @@
     "D",
     "E"
    ],
-   "explanation": "CaSR ลด aquaporin-2 — Ca2+ สูงกระตุ้น CaSR ที่ collecting duct ลด AQP2 (nephrogenic DI) และที่ TAL ลด NKCC2 → ดูดน้ำกลับไม่ได้ → polyuria\nTrap: ADH ไม่ได้ลดลงหรือเพิ่มขึ้น ปัญหาคือไตไม่ตอบสนอง"
+   "explanation": "Ca²⁺ สูงกระตุ้น CaSR ที่ collecting duct ลด AQP2 (และ TAL ลด NKCC2) → polyuria",
+   "option_why": {
+    "A": "ADH ไม่ได้เพิ่ม",
+    "B": "✓ CaSR ลด aquaporin-2",
+    "C": "aldosterone ไม่ใช่กลไก",
+    "D": "NKCC2 ลดลง ไม่เพิ่ม",
+    "E": "PCT ไม่เพิ่มการดูดน้ำ"
+   },
+   "key_concept": "• hypercalcemia → nephrogenic DI\n• CaSR ที่ TAL ลด medullary gradient\n• ลดความเสี่ยงนิ่ว",
+   "mechanism": [
+    "Ca²⁺ สูง",
+    "CaSR ที่ CD/TAL ถูกกระตุ้น",
+    {
+     "s": "AQP2 ลด + gradient ลด",
+     "answer": true
+    },
+    "polyuria"
+   ]
   },
   "39": {
    "stem_override": "A woman has a urinary tract infection. Urine shows positive leukocyte esterase and nitrite, and culture grows gram-negative, lactose-fermenting bacilli. What is the most likely organism?",
@@ -537,7 +1075,15 @@
     "D",
     "E"
    ],
-   "explanation": "Escherichia coli — gram-negative bacilli, lactose fermenter, nitrite positive = สาเหตุ UTI ที่พบบ่อยที่สุด\nTrap: Proteus/Pseudomonas เป็น non-lactose fermenter; S. saprophyticus เป็น gram-positive และ nitrite negative"
+   "explanation": "Gram-negative bacilli lactose fermenter + nitrite บวก = E. coli",
+   "option_why": {
+    "A": "Proteus เป็น non-lactose fermenter",
+    "B": "✓ E. coli",
+    "C": "Pseudomonas non-lactose fermenter",
+    "D": "S. saprophyticus เป็น Gram-positive",
+    "E": "Enterococcus เป็น Gram-positive"
+   },
+   "key_concept": "• E. coli: UTI ที่พบบ่อยสุด\n• nitrite + = Enterobacteriaceae\n• UPEC: P fimbriae"
   },
   "72": {
    "stem_override": "A wet smear of vaginal discharge shows a pear-shaped organism with flagella. What is the organism?",
@@ -556,7 +1102,15 @@
     "D",
     "E"
    ],
-   "explanation": "Trichomonas vaginalis — protozoa รูปลูกแพร์ มี flagella เคลื่อนที่ใน wet smear\nTrap: Candida เป็น yeast/pseudohyphae; Gardnerella เห็น clue cell"
+   "explanation": "Protozoa รูปลูกแพร์มี flagella เคลื่อนที่ใน wet smear = Trichomonas vaginalis",
+   "option_why": {
+    "A": "Candida = yeast/pseudohyphae",
+    "B": "Gardnerella = clue cell",
+    "C": "✓ Trichomonas vaginalis",
+    "D": "N. gonorrhoeae ไม่เห็นใน wet smear",
+    "E": "Chlamydia ไม่เห็น"
+   },
+   "key_concept": "• trichomonas: strawberry cervix\n• metronidazole รักษาคู่นอน\n• pH > 4.5"
   },
   "86": {
    "stem_override": "A woman taking levonorgestrel + ethinyl estradiol develops deep vein thrombosis. What is the mechanism?",
@@ -575,7 +1129,15 @@
     "D",
     "E"
    ],
-   "explanation": "Estrogen increases coagulation factors — ethinyl estradiol เพิ่มการสร้าง clotting factor (II, VII, IX, X, fibrinogen) ที่ตับ และลด antithrombin III/protein S → DVT\nTrap: estrogen ลด (ไม่ใช่เพิ่ม) antithrombin III"
+   "explanation": "Ethinyl estradiol เพิ่มการสร้าง clotting factor ที่ตับ (และลด antithrombin/protein S) → DVT",
+   "option_why": {
+    "A": "✓ estrogen ↑ coagulation factors",
+    "B": "progestin ไม่ลดเกล็ดเลือด",
+    "C": "estrogen ลด antithrombin III",
+    "D": "progestin ไม่เพิ่ม fibrinolysis",
+    "E": "estrogen เพิ่ม fibrinogen"
+   },
+   "key_concept": "• VTE risk สูงสุดปีแรก\n• ห้าม: thrombophilia, สูบบุหรี่ >35\n• progestin รุ่น 3/4 เสี่ยงกว่าเล็กน้อย"
   },
   "99": {
    "stem_override": "A man reaches orgasm and ejaculates within 1 minute of penetration, which causes distress. What is the diagnosis?",
@@ -594,7 +1156,15 @@
     "D",
     "E"
    ],
-   "explanation": "Premature (early) ejaculation — หลั่งภายใน ~1 นาทีหลังสอดใส่ เกือบทุกครั้ง และทำให้ทุกข์ใจ\nTrap: ถ้าทั้งคู่พอใจไม่ถือเป็นโรค (เทียบข้อ 96)"
+   "explanation": "หลั่งภายใน ~1 นาทีหลังสอดใส่ + distress = premature ejaculation",
+   "option_why": {
+    "A": "ED = แข็งตัวไม่ได้",
+    "B": "delayed = ตรงข้าม",
+    "C": "✓ premature ejaculation",
+    "D": "HSDD = ความต้องการต่ำ",
+    "E": "มี distress จึงไม่ปกติ"
+   },
+   "key_concept": "• ≤1 นาที, ≥75%, ≥6 เดือน\n• SSRIs\n• ถ้าทั้งคู่พอใจไม่ใช่โรค"
   },
   "20": {
    "stem_override": "A patient has hyperkalemia because the principal cells of the collecting duct do not respond to aldosterone. Which change occurs at the basolateral membrane of these cells?",
@@ -610,7 +1180,24 @@
     "ai_generated"
    ],
    "original_text": "... K ไม่ตอบสนอง เกิดอะไรที่ basolateral",
-   "explanation": "Decreased Na+/K+-ATPase — aldosterone เพิ่ม Na+/K+-ATPase ที่ basolateral ของ principal cell (ร่วม ENaC/ROMK) ถ้าไม่ตอบสนองต่อ aldosterone pump ลด → ดูด Na+ ลด ขับ K+ ลด → hyperkalemia\nTrap: ROMK และ ENaC อยู่ที่ apical membrane"
+   "explanation": "Aldosterone เพิ่ม Na⁺/K⁺-ATPase ที่ basolateral ของ principal cell; ถ้าไม่ตอบสนอง pump ลด → ขับ K⁺ ไม่ได้",
+   "option_why": {
+    "A": "✓ Na⁺/K⁺-ATPase activity ลด",
+    "B": "เพิ่มเป็นผลเมื่อตอบสนองต่อ aldosterone",
+    "C": "ROMK อยู่ apical และลดลง",
+    "D": "ENaC อยู่ apical และลดลง",
+    "E": "H⁺-ATPase อยู่ intercalated cell"
+   },
+   "key_concept": "• aldosterone: ENaC + ROMK (apical), Na/K-ATPase (basolateral)\n• pseudohypoaldosteronism type 1\n• hyperK + metabolic acidosis (type 4 RTA)",
+   "mechanism": [
+    "aldosterone ไม่ออกฤทธิ์",
+    {
+     "s": "Na⁺/K⁺-ATPase ลด",
+     "answer": true
+    },
+    "Na⁺ เข้าเซลล์น้อย K⁺ เข้าเซลล์น้อย",
+    "หลั่ง K⁺ ไม่ได้ → hyperkalemia"
+   ]
   },
   "42": {
    "stem_override": "A 38-year-old man has multiple injuries from a motorcycle accident (crush injury). Two days later he develops oliguria. What is the most likely cause?",
@@ -626,7 +1213,24 @@
     "ai_generated"
    ],
    "original_text": "ชาย 38 ปีประสบอุบัติเหตุทางมอไซค์, multiple injuries the next two days develop oliguria",
-   "explanation": "Acute tubular necrosis from rhabdomyolysis — crush injury กล้ามเนื้อสลายปล่อย myoglobin อุด/เป็นพิษต่อ tubule ร่วมกับ hypovolemia → oliguria ใน 1–2 วัน\nTrap: PSGN ต้องมีประวัติติดเชื้อ strep 1–3 สัปดาห์; pyelonephritis มีไข้ ปวดหลัง"
+   "explanation": "Crush injury กล้ามเนื้อสลายปล่อย myoglobin + hypovolemia → ATN ใน 1–2 วัน",
+   "option_why": {
+    "A": "✓ ATN จาก rhabdomyolysis",
+    "B": "PSGN หลังติดเชื้อ",
+    "C": "pyelonephritis มีไข้/ปวดเอว",
+    "D": "chronic interstitial nephritis เรื้อรัง",
+    "E": "MCD เป็น nephrotic"
+   },
+   "key_concept": "• CK สูงมาก, heme + แต่ไม่มี RBC\n• รักษา: IV fluid มาก\n• hyperK จาก cell lysis",
+   "mechanism": [
+    "crush injury",
+    "กล้ามเนื้อสลาย → myoglobin",
+    {
+     "s": "myoglobin เป็นพิษ/อุด tubule + ขาดเลือด",
+     "answer": true
+    },
+    "ATN → oliguria"
+   ]
   },
   "66": {
    "stem_override": "What is the most common site of squamous cell carcinoma in the female genital tract?",
@@ -642,7 +1246,15 @@
     "ai_generated"
    ],
    "original_text": "Most common site ที่จะเป็น squamous cell carcinoma",
-   "explanation": "Transformation zone of the cervix — SCC ของระบบสืบพันธุ์หญิงพบบ่อยสุดที่ cervix (squamocolumnar junction ที่ HPV 16/18 ติดเชื้อ)\nTrap: endometrium/ovary เป็น adenocarcinoma เป็นหลัก; vaginal SCC พบน้อย"
+   "explanation": "SCC ของระบบสืบพันธุ์หญิงพบบ่อยสุดที่ transformation zone ของ cervix (HPV 16/18)",
+   "option_why": {
+    "A": "✓ transformation zone",
+    "B": "endometrium = adenocarcinoma",
+    "C": "ovary = epithelial (serous)",
+    "D": "tube = serous",
+    "E": "vagina พบน้อยกว่า"
+   },
+   "key_concept": "• TZ = squamocolumnar junction\n• Pap smear เก็บจาก TZ\n• CIN → invasive SCC"
   },
   "75": {
    "stem_override": "Which HPV types cause condyloma acuminatum (genital warts)?",
@@ -658,7 +1270,15 @@
     "ai_generated"
    ],
    "original_text": "What HPV type cause condyloma acuminata ?",
-   "explanation": "HPV 6 and 11 — low-risk type ทำ condyloma acuminatum (genital warts)\nTrap: HPV 16, 18, 31, 33, 45, 52 เป็น high-risk ทำ cervical dysplasia/cancer"
+   "explanation": "HPV 6 และ 11 (low-risk) ทำหูดหงอนไก่ (condyloma acuminatum)",
+   "option_why": {
+    "A": "HPV 16/18 high-risk → มะเร็ง",
+    "B": "✓ HPV 6, 11",
+    "C": "HPV 1/2 ทำหูดที่มือเท้า",
+    "D": "HPV 31/33 high-risk",
+    "E": "HPV 45/52 high-risk"
+   },
+   "key_concept": "• koilocytes\n• วัคซีน 4/9 สายพันธุ์ป้องกัน 6/11\n• high-risk: E6 (p53), E7 (Rb)"
   }
  },
  "extra_edits": {}
