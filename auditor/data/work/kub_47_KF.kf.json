@@ -1,0 +1,979 @@
+{
+ "set_id": "kub_47_KF",
+ "note": "KF KUB and Repro Med PSU 47 · ไม่มีไฟล์เฉลย → AI ร่างเฉลยทุกข้อ (ผู้ตรวจควรยืนยัน) · เวลา 2 ชั่วโมง 20 ข้อ (ในไฟล์ข้อ 18 = ข้อซักประวัติ \"ไปดู Med 46\" ไม่มีโจทย์ จึงตัดออก) · อ่านทุกหน้า + ดูรูปทั้งหมด",
+ "time_limit_min": 120,
+ "questions": [
+  {
+   "n": 1,
+   "page": 2,
+   "tags": [
+    "NSAID",
+    "AKI"
+   ],
+   "case": "หญิง 50 ปี เพลีย ปัสสาวะน้อย. 7 วันก่อนปวดเข่าไปหาหมอได้ยา NSAIDs มากิน ปัสสาวะน้อยลงมาก เพลีย. PE: BP 90/50, mild dry lip. BUN 45, Cr 4.5.",
+   "answer_status": "draft",
+   "items": [
+    {
+     "id": "1.1",
+     "prompt": "วินิจฉัยโรคที่เป็นสาเหตุให้เกิดอาการ oliguria",
+     "format": "short",
+     "accepted": [
+      "acute tubular necrosis",
+      "ATN",
+      "acute interstitial nephritis",
+      "AIN",
+      "AKI"
+     ],
+     "keywords_all": [
+      "acute"
+     ],
+     "key_text": "Acute kidney injury จาก NSAIDs (ATN หรือ AIN; BUN:Cr = 10)",
+     "source_key": "Acute kidney injury จาก NSAIDs (ATN หรือ AIN; BUN:Cr = 10) (ไม่มีเฉลยต้นฉบับ AI ร่างให้)"
+    },
+    {
+     "id": "1.2",
+     "prompt": "จงบอกสิ่งผิดปกติที่สามารถพบได้ในปัสสาวะผู้ป่วยรายนี้",
+     "format": "short",
+     "accepted": [
+      "hematuria",
+      "pyuria",
+      "granular casts",
+      "muddy brown casts",
+      "eosinophil"
+     ],
+     "keywords_all": [
+      "casts"
+     ],
+     "key_text": "hematuria · pyuria · granular (muddy brown) casts (ATN) · WBC/eosinophil + WBC cast (AIN)",
+     "source_key": "hematuria · pyuria · granular (muddy brown) casts (ATN) · WBC/eosinophil + WBC cast (AIN) (ไม่มีเฉลยต้นฉบับ AI ร่างให้)"
+    },
+    {
+     "id": "1.3",
+     "prompt": "จงบอก 2 สาเหตุที่ทำให้เกิด oliguria ในผู้ป่วยรายนี้",
+     "format": "short",
+     "accepted": [
+      "NSAIDs",
+      "volume depletion",
+      "hypotension",
+      "dehydration"
+     ],
+     "keywords_all": [
+      "NSAID"
+     ],
+     "key_text": "NSAIDs (afferent vasoconstriction/ nephrotoxicity) + ปริมาตรร่างกายลด (BP 90/50, dry lip) ทำให้ renal perfusion ↓",
+     "source_key": "NSAIDs (afferent vasoconstriction/ nephrotoxicity) + ปริมาตรร่างกายลด (BP 90/50, dry lip) ทำให้ renal perfusion ↓ (ไม่มีเฉลยต้นฉบับ AI ร่างให้)"
+    },
+    {
+     "id": "1.4",
+     "prompt": "จงอธิบาย pathophysiology ของ oliguria ในผู้ป่วยรายนี้",
+     "format": "short",
+     "accepted": [
+      "afferent vasoconstriction",
+      "GFR decrease"
+     ],
+     "keywords_all": [
+      "afferent"
+     ],
+     "key_text": "NSAIDs ยับยั้ง COX → PGE₂/PGI₂ ↓ → afferent arteriole หด → RBF/GFR ↓ → oliguria; ischemia → tubular necrosis (ATN)",
+     "source_key": "NSAIDs ยับยั้ง COX → PGE₂/PGI₂ ↓ → afferent arteriole หด → RBF/GFR ↓ → oliguria; ischemia → tubular necrosis (ATN) (ไม่มีเฉลยต้นฉบับ AI ร่างให้)",
+     "mechanism": [
+      "NSAIDs ยับยั้ง COX → prostaglandin ↓",
+      "afferent arteriole หดตัว (+ hypovolemia)",
+      "RBF/GFR ↓ → oliguria",
+      "ischemia → ATN"
+     ]
+    }
+   ],
+   "key_concept": "NSAIDs + hypovolemia → afferent vasoconstriction → AKI"
+  },
+  {
+   "n": 2,
+   "page": 3,
+   "tags": [
+    "tenofovir",
+    "Fanconi syndrome"
+   ],
+   "case": "ชายอายุ 50 ปี เป็น hepatitis B รับประทานยา tenofovir. Urine culture: negative. UA: glucose 2+, protein 1+.",
+   "answer_status": "draft",
+   "items": [
+    {
+     "id": "2.1",
+     "prompt": "เกิดพยาธิสภาพตำแหน่งใดของไต",
+     "format": "short",
+     "accepted": [
+      "proximal tubule",
+      "PCT",
+      "proximal convoluted tubule"
+     ],
+     "keywords_all": [
+      "proximal"
+     ],
+     "key_text": "Proximal convoluted tubule (tenofovir → Fanconi syndrome)",
+     "source_key": "Proximal convoluted tubule (tenofovir → Fanconi syndrome) (ไม่มีเฉลยต้นฉบับ AI ร่างให้)"
+    },
+    {
+     "id": "2.2",
+     "prompt": "เหตุผลการวินิจฉัยในข้อ 2.1",
+     "format": "short",
+     "accepted": [
+      "glucosuria",
+      "Fanconi",
+      "amino acid"
+     ],
+     "keywords_all": [
+      "glucose"
+     ],
+     "key_text": "glucose (และ amino acid) ที่ปกติถูกดูดกลับที่ PCT รั่วในปัสสาวะ + protein น้อย (tubular proteinuria) + culture ลบ",
+     "source_key": "glucose (และ amino acid) ที่ปกติถูกดูดกลับที่ PCT รั่วในปัสสาวะ + protein น้อย (tubular proteinuria) + culture ลบ (ไม่มีเฉลยต้นฉบับ AI ร่างให้)"
+    }
+   ],
+   "key_concept": "tenofovir → PCT injury (Fanconi)"
+  },
+  {
+   "n": 3,
+   "page": 3,
+   "tags": [
+    "creatinine clearance"
+   ],
+   "case": "จากตารางจงคำนวณค่า CrCl: serum creatinine 2 mg/mL; 24-hr urine creatinine 50 mg/mL; ปริมาณปัสสาวะ 24 ชม. 2400 mL.",
+   "answer_status": "draft",
+   "items": [
+    {
+     "id": "3.1",
+     "prompt": "จงคำนวณค่า CrCl",
+     "format": "short",
+     "accepted": [
+      "41.7",
+      "41.67",
+      "42",
+      "41.7 mL/min"
+     ],
+     "keywords_all": [
+      "41"
+     ],
+     "key_text": "CrCl = (U × V)/P = (50 × 2400)/(2 × 1440) = 41.7 mL/min",
+     "source_key": "CrCl = (U × V)/P = (50 × 2400)/(2 × 1440) = 41.7 mL/min (ไม่มีเฉลยต้นฉบับ AI ร่างให้)",
+     "explanation": "V = 2400 mL/1440 min = 1.67 mL/min; 50 × 1.67 / 2 = 41.7"
+    }
+   ],
+   "key_concept": "CrCl = U·V/P (V ต่อนาที)"
+  },
+  {
+   "n": 4,
+   "page": 4,
+   "tags": [
+    "acid-base",
+    "respiratory acidosis"
+   ],
+   "case": "ชายอายุ 65 ปี รักษาตัวในโรงพยาบาลด้วย COPD เป็นเวลา 3 วัน อาการไม่ดีขึ้น. PE: dyspnea, tachycardia, cyanosis. ABG: pH 7.32, PaCO₂ 50 mmHg, HCO₃⁻ 28 mmol/L. Serum Na⁺ 140, K⁺ 3.5, Cl⁻ 105, HCO₃⁻ 29.",
+   "answer_status": "draft",
+   "items": [
+    {
+     "id": "4.1",
+     "prompt": "จงแปลผล ABG ของผู้ป่วยรายนี้มา 2 ข้อ",
+     "format": "short",
+     "accepted": [
+      "respiratory acidosis",
+      "metabolic compensation",
+      "partially compensated"
+     ],
+     "keywords_all": [
+      "respiratory acidosis"
+     ],
+     "key_text": "(1) Respiratory acidosis (pH 7.32 ต่ำ, PaCO₂ 50 สูง) (2) มี metabolic compensation (HCO₃⁻ 28–29 สูง) แบบ partially/chronic compensated",
+     "source_key": "(1) Respiratory acidosis (pH 7.32 ต่ำ, PaCO₂ 50 สูง) (2) มี metabolic compensation (HCO₃⁻ 28–29 สูง) แบบ partially/chronic compensated (ไม่มีเฉลยต้นฉบับ AI ร่างให้)"
+    },
+    {
+     "id": "4.2",
+     "prompt": "ไตมีการทำงานเพื่อรักษาสมดุลกรดด่างในผู้ป่วยรายนี้อย่างไร",
+     "format": "short",
+     "accepted": [
+      "HCO3 reabsorption",
+      "H+ secretion",
+      "ammoniagenesis",
+      "NH4"
+     ],
+     "keywords_all": [
+      "bicarbonate"
+     ],
+     "key_text": "CO₂ คั่ง → H⁺ ↑ → ไตเพิ่ม H⁺ secretion + HCO₃⁻ reabsorption + สร้าง HCO₃⁻ ใหม่ (ammoniagenesis, ขับ NH₄⁺/titratable acid) → HCO₃⁻ ในเลือดสูงขึ้น",
+     "source_key": "CO₂ คั่ง → H⁺ ↑ → ไตเพิ่ม H⁺ secretion + HCO₃⁻ reabsorption + สร้าง HCO₃⁻ ใหม่ (ammoniagenesis, ขับ NH₄⁺/titratable acid) → HCO₃⁻ ในเลือดสูงขึ้น (ไม่มีเฉลยต้นฉบับ AI ร่างให้)",
+     "mechanism": [
+      "PaCO₂ ↑ → pH ↓",
+      "ไตหลั่ง H⁺ มากขึ้น",
+      "ดูดกลับ HCO₃⁻ + สร้าง HCO₃⁻ ใหม่ (NH₄⁺, TA)",
+      "HCO₃⁻ ในเลือด ↑ ชดเชย"
+     ]
+    }
+   ],
+   "key_concept": "resp acidosis เรื้อรัง: ไตชดเชยด้วย HCO₃⁻ ↑"
+  },
+  {
+   "n": 5,
+   "page": 5,
+   "tags": [
+    "BPH"
+   ],
+   "case": "ผู้ป่วยอายุ 68 ปี ปัสสาวะไม่พุ่ง 8 เดือน ต้องเบ่งมากขึ้น ถ่ายปัสสาวะกลางคืน 4–5 ครั้ง. PE: prostate 4 cm rubbery consistency ไม่พบ mass. PSA 3.4 ng/mL. UA: normal.",
+   "answer_status": "draft",
+   "items": [
+    {
+     "id": "5.1",
+     "prompt": "จงวินิจฉัยโรคของผู้ป่วย",
+     "format": "short",
+     "accepted": [
+      "BPH",
+      "benign prostatic hyperplasia",
+      "nodular hyperplasia"
+     ],
+     "keywords_all": [
+      "BPH"
+     ],
+     "key_text": "Benign prostatic hyperplasia (BPH)",
+     "source_key": "Benign prostatic hyperplasia (BPH) (ไม่มีเฉลยต้นฉบับ AI ร่างให้)"
+    },
+    {
+     "id": "5.2",
+     "prompt": "จงแยกโรค BPH กับมะเร็งต่อมลูกหมากได้อย่างไรจากข้อมูลที่ให้",
+     "format": "short",
+     "accepted": [
+      "PSA normal",
+      "rubbery",
+      "no nodule"
+     ],
+     "keywords_all": [
+      "PSA"
+     ],
+     "key_text": "BPH: ต่อมโตสม่ำเสมอ rubbery ไม่มี nodule แข็ง/ไม่พบ mass, PSA 3.4 ต่ำกว่าเกณฑ์ (< 4 ng/mL) · มะเร็งมักคลำได้ก้อนแข็ง/ขรุขระ และ PSA สูง (≥ 4, มักสูงมาก)",
+     "source_key": "BPH: ต่อมโตสม่ำเสมอ rubbery ไม่มี nodule แข็ง/ไม่พบ mass, PSA 3.4 ต่ำกว่าเกณฑ์ (< 4 ng/mL) · มะเร็งมักคลำได้ก้อนแข็ง/ขรุขระ และ PSA สูง (≥ 4, มักสูงมาก) (ไม่มีเฉลยต้นฉบับ AI ร่างให้)"
+    }
+   ],
+   "key_concept": "BPH: rubbery, PSA ปกติ vs มะเร็ง: nodule แข็ง PSA สูง"
+  },
+  {
+   "n": 6,
+   "page": 5,
+   "tags": [
+    "homologues"
+   ],
+   "case": "จากตารางจงเติมอวัยวะที่สอดคล้องกันในเพศชายและหญิง (female → male): Uterus/vagina, Gartner duct, Labia majora, Clitoris, Ovary, Bartholin gland",
+   "answer_status": "draft",
+   "items": [
+    {
+     "id": "6.1",
+     "prompt": "Uterus, vagina → male",
+     "format": "short",
+     "accepted": [
+      "appendix testis",
+      "prostatic utricle"
+     ],
+     "keywords_all": [
+      "utricle"
+     ],
+     "key_text": "Prostatic utricle / appendix testis (เศษของ Müllerian duct)",
+     "source_key": "Prostatic utricle / appendix testis (เศษของ Müllerian duct) (ไม่มีเฉลยต้นฉบับ AI ร่างให้)"
+    },
+    {
+     "id": "6.2",
+     "prompt": "Gartner duct → male",
+     "format": "short",
+     "accepted": [
+      "epididymis",
+      "vas deferens",
+      "seminal vesicle"
+     ],
+     "keywords_all": [
+      "epididymis"
+     ],
+     "key_text": "Epididymis, vas deferens, seminal vesicle (Wolffian duct)",
+     "source_key": "Epididymis, vas deferens, seminal vesicle (Wolffian duct) (ไม่มีเฉลยต้นฉบับ AI ร่างให้)"
+    },
+    {
+     "id": "6.3",
+     "prompt": "Labia majora → male",
+     "format": "short",
+     "accepted": [
+      "scrotum"
+     ],
+     "keywords_all": [
+      "scrotum"
+     ],
+     "key_text": "Scrotum",
+     "source_key": "Scrotum (ไม่มีเฉลยต้นฉบับ AI ร่างให้)"
+    },
+    {
+     "id": "6.4",
+     "prompt": "Clitoris → male",
+     "format": "short",
+     "accepted": [
+      "penis",
+      "glans penis"
+     ],
+     "keywords_all": [
+      "penis"
+     ],
+     "key_text": "Penis (glans)",
+     "source_key": "Penis (glans) (ไม่มีเฉลยต้นฉบับ AI ร่างให้)"
+    },
+    {
+     "id": "6.5",
+     "prompt": "Ovary → male",
+     "format": "short",
+     "accepted": [
+      "testis"
+     ],
+     "keywords_all": [
+      "testis"
+     ],
+     "key_text": "Testis",
+     "source_key": "Testis (ไม่มีเฉลยต้นฉบับ AI ร่างให้)"
+    },
+    {
+     "id": "6.6",
+     "prompt": "Bartholin gland → male",
+     "format": "short",
+     "accepted": [
+      "bulbourethral gland",
+      "Cowper gland"
+     ],
+     "keywords_all": [
+      "bulbourethral"
+     ],
+     "key_text": "Bulbourethral (Cowper's) gland",
+     "source_key": "Bulbourethral (Cowper's) gland (ไม่มีเฉลยต้นฉบับ AI ร่างให้)"
+    }
+   ],
+   "key_concept": "homologues: ovary↔testis · clitoris↔penis · labia majora↔scrotum"
+  },
+  {
+   "n": 7,
+   "page": 6,
+   "tags": [
+    "ultrasound"
+   ],
+   "case": "จากรูป ultrasound จงระบุอวัยวะและลักษณะที่พบได้จากการสังเกต (ภาพ 7.1–7.3)",
+   "answer_status": "draft",
+   "items": [
+    {
+     "id": "7.1",
+     "prompt": "ภาพ 7.1: อวัยวะและลักษณะที่พบ",
+     "format": "short",
+     "accepted": [
+      "kidney",
+      "hydronephrosis"
+     ],
+     "keywords_all": [
+      "kidney"
+     ],
+     "key_text": "Kidney: เห็น renal pelvis/calyces ขยายเป็นช่องดำ (anechoic) = hydronephrosis",
+     "source_key": "Kidney: เห็น renal pelvis/calyces ขยายเป็นช่องดำ (anechoic) = hydronephrosis (ไม่มีเฉลยต้นฉบับ AI ร่างให้)",
+     "audit_note": "AI ตีความจากรูป ผู้ตรวจควรยืนยัน",
+     "image": "img/KUB-47-KF-007.jpg",
+     "image_caption": "Ultrasound 7.1"
+    },
+    {
+     "id": "7.2",
+     "prompt": "ภาพ 7.2: อวัยวะและลักษณะที่พบ",
+     "format": "short",
+     "accepted": [
+      "urinary bladder",
+      "distended bladder"
+     ],
+     "keywords_all": [
+      "bladder"
+     ],
+     "key_text": "Urinary bladder: ช่องดำ (anechoic) ขนาดใหญ่ ผนังเรียบบาง = กระเพาะปัสสาวะที่เต็ม/ขยาย",
+     "source_key": "Urinary bladder: ช่องดำ (anechoic) ขนาดใหญ่ ผนังเรียบบาง = กระเพาะปัสสาวะที่เต็ม/ขยาย (ไม่มีเฉลยต้นฉบับ AI ร่างให้)",
+     "audit_note": "AI ตีความจากรูป ผู้ตรวจควรยืนยัน",
+     "image": "img/KUB-47-KF-007b.jpg",
+     "image_caption": "Ultrasound 7.2"
+    },
+    {
+     "id": "7.3",
+     "prompt": "ภาพ 7.3: อวัยวะและลักษณะที่พบ",
+     "format": "short",
+     "accepted": [
+      "testis",
+      "hydrocele"
+     ],
+     "keywords_all": [
+      "testis"
+     ],
+     "key_text": "Testis: echotexture สม่ำเสมอ ลูกศรชี้น้ำใส (anechoic rim) รอบอัณฑะ = hydrocele",
+     "source_key": "Testis: echotexture สม่ำเสมอ ลูกศรชี้น้ำใส (anechoic rim) รอบอัณฑะ = hydrocele (ไม่มีเฉลยต้นฉบับ AI ร่างให้)",
+     "audit_note": "AI ตีความจากรูป ผู้ตรวจควรยืนยัน",
+     "image": "img/KUB-47-KF-007c.jpg",
+     "image_caption": "Ultrasound 7.3 (ลูกศรเหลือง)"
+    }
+   ],
+   "key_concept": "US: hydronephrosis/bladder/testis+hydrocele"
+  },
+  {
+   "n": 8,
+   "page": 7,
+   "tags": [
+    "phimosis"
+   ],
+   "case": "ภาพองคชาตเด็กชาย (หนังหุ้มปลายตีบแคบคลุมหัวองคชาต)",
+   "answer_status": "draft",
+   "items": [
+    {
+     "id": "8.1",
+     "prompt": "จงทำการวินิจฉัย",
+     "format": "short",
+     "accepted": [
+      "phimosis"
+     ],
+     "keywords_all": [
+      "phimosis"
+     ],
+     "key_text": "Phimosis (หนังหุ้มปลายตีบ)",
+     "source_key": "Phimosis (หนังหุ้มปลายตีบ) (ไม่มีเฉลยต้นฉบับ AI ร่างให้)"
+    },
+    {
+     "id": "8.2",
+     "prompt": "จงบอก complication",
+     "format": "short",
+     "accepted": [
+      "balanitis",
+      "UTI",
+      "urinary tract infection",
+      "paraphimosis",
+      "urinary retention"
+     ],
+     "keywords_all": [
+      "balanitis"
+     ],
+     "key_text": "Balanitis/balanoposthitis · UTI · paraphimosis · ปัสสาวะลำบาก/ป่อง (ballooning)",
+     "source_key": "Balanitis/balanoposthitis · UTI · paraphimosis · ปัสสาวะลำบาก/ป่อง (ballooning) (ไม่มีเฉลยต้นฉบับ AI ร่างให้)"
+    }
+   ],
+   "key_concept": "phimosis: UTI, balanitis, paraphimosis",
+   "image": "img/KUB-47-KF-008.jpg",
+   "image_caption": "ภาพองคชาต หนังหุ้มปลายแคบ"
+  },
+  {
+   "n": 9,
+   "page": 7,
+   "tags": [
+    "paraphimosis"
+   ],
+   "case": "ภาพองคชาต หัวบวมแดงม่วง มีวงหนังหุ้มรัดอยู่ด้านหลัง",
+   "answer_status": "draft",
+   "items": [
+    {
+     "id": "9.1",
+     "prompt": "จงทำการวินิจฉัย",
+     "format": "short",
+     "accepted": [
+      "paraphimosis"
+     ],
+     "keywords_all": [
+      "paraphimosis"
+     ],
+     "key_text": "Paraphimosis",
+     "source_key": "Paraphimosis (ไม่มีเฉลยต้นฉบับ AI ร่างให้)"
+    },
+    {
+     "id": "9.2",
+     "prompt": "ถ้าจะรักษาด้วย manual reduction ควรฉีดยาชาบริเวณใด",
+     "format": "short",
+     "accepted": [
+      "dorsal penile nerve block",
+      "dorsal nerve of penis"
+     ],
+     "keywords_all": [
+      "dorsal"
+     ],
+     "key_text": "Dorsal penile nerve block (ฉีดที่โคน/ด้านบนขององคชาต 10 และ 2 นาฬิกา)",
+     "source_key": "Dorsal penile nerve block (ฉีดที่โคน/ด้านบนขององคชาต 10 และ 2 นาฬิกา) (ไม่มีเฉลยต้นฉบับ AI ร่างให้)"
+    }
+   ],
+   "key_concept": "paraphimosis: ฉุกเฉิน → dorsal penile nerve block → manual reduction",
+   "image": "img/KUB-47-KF-009.jpg",
+   "image_caption": "ภาพ paraphimosis"
+  },
+  {
+   "n": 10,
+   "page": 8,
+   "tags": [
+    "hypospadias"
+   ],
+   "case": "ภาพองคชาต (ลูกศรสีฟ้าชี้ที่ด้านล่าง/ventral ของ shaft)",
+   "answer_status": "draft",
+   "items": [
+    {
+     "id": "10.1",
+     "prompt": "จงทำการวินิจฉัยพร้อมทั้งบอก type ของโรคในภาพนี้",
+     "format": "short",
+     "accepted": [
+      "hypospadias",
+      "penile hypospadias"
+     ],
+     "keywords_all": [
+      "hypospadias"
+     ],
+     "key_text": "Hypospadias (ชนิด penile/shaft — รูเปิด urethra อยู่ด้านล่างของ shaft)",
+     "source_key": "Hypospadias (ชนิด penile/shaft — รูเปิด urethra อยู่ด้านล่างของ shaft) (ไม่มีเฉลยต้นฉบับ AI ร่างให้)",
+     "audit_note": "ชนิดจากตำแหน่งลูกศร AI ตีความเอง"
+    },
+    {
+     "id": "10.2",
+     "prompt": "จงบอกความผิดปกติทางกายวิภาคและการพัฒนาของโรคในภาพ",
+     "format": "short",
+     "accepted": [
+      "urethral fold",
+      "genital fold",
+      "incomplete fusion"
+     ],
+     "keywords_all": [
+      "urethral fold"
+     ],
+     "key_text": "รูเปิด urethra อยู่ด้าน ventral ไม่ใช่ปลายหัวองคชาต เกิดจาก urethral (genital) fold ปิดไม่สมบูรณ์ (androgen ไม่พอ/ผิดปกติ)",
+     "source_key": "รูเปิด urethra อยู่ด้าน ventral ไม่ใช่ปลายหัวองคชาต เกิดจาก urethral (genital) fold ปิดไม่สมบูรณ์ (androgen ไม่พอ/ผิดปกติ) (ไม่มีเฉลยต้นฉบับ AI ร่างให้)"
+    }
+   ],
+   "key_concept": "hypospadias = urethral fold fusion ไม่สมบูรณ์",
+   "image": "img/KUB-47-KF-010.jpg",
+   "image_caption": "ภาพองคชาต ลูกศรสีฟ้า"
+  },
+  {
+   "n": 11,
+   "page": 8,
+   "tags": [
+    "mumps orchitis"
+   ],
+   "case": "ชายอายุ 20 ปี ตรวจร่างกายพบ parotid gland swelling และ scrotal enlargement.",
+   "answer_status": "draft",
+   "items": [
+    {
+     "id": "11.1",
+     "prompt": "จงทำการวินิจฉัย",
+     "format": "short",
+     "accepted": [
+      "mumps orchitis",
+      "mumps"
+     ],
+     "keywords_all": [
+      "mumps"
+     ],
+     "key_text": "Mumps orchitis",
+     "source_key": "Mumps orchitis (ไม่มีเฉลยต้นฉบับ AI ร่างให้)"
+    },
+    {
+     "id": "11.2",
+     "prompt": "จงบอก complication",
+     "format": "short",
+     "accepted": [
+      "infertility",
+      "testicular atrophy"
+     ],
+     "keywords_all": [
+      "infertility"
+     ],
+     "key_text": "Infertility (testicular atrophy)",
+     "source_key": "Infertility (testicular atrophy) (ไม่มีเฉลยต้นฉบับ AI ร่างให้)"
+    }
+   ],
+   "key_concept": "mumps: parotitis + orchitis → infertility"
+  },
+  {
+   "n": 12,
+   "page": 9,
+   "tags": [
+    "CAH"
+   ],
+   "case": "จากรูป ultrasound พบ uterus (ภาพซ้าย: อวัยวะเพศภายนอกของทารกเพศหญิง clitoris โต ภาพขวา: ultrasound มี uterus)",
+   "answer_status": "draft",
+   "items": [
+    {
+     "id": "12.1",
+     "prompt": "จงทำการวินิจฉัย",
+     "format": "short",
+     "accepted": [
+      "congenital adrenal hyperplasia",
+      "CAH",
+      "21-hydroxylase deficiency"
+     ],
+     "keywords_all": [
+      "adrenal"
+     ],
+     "key_text": "Congenital adrenal hyperplasia (CAH) — 46,XX virilization (clitoris โต, มี uterus)",
+     "source_key": "Congenital adrenal hyperplasia (CAH) — 46,XX virilization (clitoris โต, มี uterus) (ไม่มีเฉลยต้นฉบับ AI ร่างให้)"
+    },
+    {
+     "id": "12.2",
+     "prompt": "จงบอก complication 2 ข้อ",
+     "format": "short",
+     "accepted": [
+      "salt wasting",
+      "adrenal crisis",
+      "hyponatremia",
+      "hyperkalemia",
+      "ambiguous genitalia"
+     ],
+     "keywords_all": [
+      "salt"
+     ],
+     "key_text": "Salt-wasting adrenal crisis (hypotension, hyponatremia, hyperkalemia) · virilization/ambiguous genitalia, เพศผิดพลาด · ตัวเตี้ย/ประจำเดือนผิดปกติ",
+     "source_key": "Salt-wasting adrenal crisis (hypotension, hyponatremia, hyperkalemia) · virilization/ambiguous genitalia, เพศผิดพลาด · ตัวเตี้ย/ประจำเดือนผิดปกติ (ไม่มีเฉลยต้นฉบับ AI ร่างให้)"
+    }
+   ],
+   "key_concept": "CAH ในหญิง: มี uterus + clitoris โต; salt-wasting crisis",
+   "audit_note": "AI ตีความจากรูปและโจทย์ ผู้ตรวจควรยืนยัน",
+   "image": "img/KUB-47-KF-012.jpg",
+   "image_caption": "อวัยวะเพศภายนอกทารก (ซ้าย) และ ultrasound พบ uterus (ขวา)"
+  },
+  {
+   "n": 13,
+   "page": 9,
+   "tags": [
+    "cryptorchidism"
+   ],
+   "case": "ภาพจากกล้อง laparoscope ในช่องท้อง (เห็นอวัยวะรูปไข่สีชมพูอยู่ที่ internal inguinal ring)",
+   "answer_status": "draft",
+   "items": [
+    {
+     "id": "13.1",
+     "prompt": "จงบอกสิ่งที่พบและทำการวินิจฉัย",
+     "format": "short",
+     "accepted": [
+      "undescended testis",
+      "cryptorchidism",
+      "intra-abdominal testis"
+     ],
+     "keywords_all": [
+      "testis"
+     ],
+     "key_text": "Undescended testis (cryptorchidism) — อัณฑะอยู่ในช่องท้องที่ internal inguinal ring",
+     "source_key": "Undescended testis (cryptorchidism) — อัณฑะอยู่ในช่องท้องที่ internal inguinal ring (ไม่มีเฉลยต้นฉบับ AI ร่างให้)",
+     "audit_note": "AI ตีความรูป ผู้ตรวจควรยืนยัน"
+    },
+    {
+     "id": "13.2",
+     "prompt": "จงบอก risk ในผู้ป่วยคนนี้มา 2 ข้อ",
+     "format": "short",
+     "accepted": [
+      "infertility",
+      "testicular cancer",
+      "germ cell tumor",
+      "torsion"
+     ],
+     "keywords_all": [
+      "infertility"
+     ],
+     "key_text": "Infertility · testicular cancer (seminoma/germ cell tumor) · (testicular torsion, inguinal hernia)",
+     "source_key": "Infertility · testicular cancer (seminoma/germ cell tumor) · (testicular torsion, inguinal hernia) (ไม่มีเฉลยต้นฉบับ AI ร่างให้)"
+    }
+   ],
+   "key_concept": "cryptorchidism → infertility + germ cell tumor",
+   "image": "img/KUB-47-KF-013.jpg",
+   "image_caption": "ภาพ laparoscope"
+  },
+  {
+   "n": 14,
+   "page": 10,
+   "tags": [
+    "appendage torsion"
+   ],
+   "case": "ภาพขณะผ่าตัดถุงอัณฑะ มีหมายเลข 1–5",
+   "answer_status": "draft",
+   "items": [
+    {
+     "id": "14.1",
+     "prompt": "จงทำการวินิจฉัย",
+     "format": "short",
+     "accepted": [
+      "testicular appendage torsion",
+      "torsion of testicular appendage",
+      "appendix testis torsion"
+     ],
+     "keywords_all": [
+      "torsion"
+     ],
+     "key_text": "Testicular appendage torsion",
+     "source_key": "Testicular appendage torsion (ไม่มีเฉลยต้นฉบับ AI ร่างให้)"
+    },
+    {
+     "id": "14.2",
+     "prompt": "จากหมายเลข 1, 2, 3, 5 จงระบุชื่อมา 2 หมายเลข",
+     "format": "short",
+     "accepted": [
+      "3 epididymis 5 testis"
+     ],
+     "keywords_all": [
+      "epididymis",
+      "testis"
+     ],
+     "key_text": "หมายเลข 3 = Epididymis · หมายเลข 5 = Testis (1 = penis/glans, 2 = scrotum)",
+     "source_key": "หมายเลข 3 = Epididymis · หมายเลข 5 = Testis (1 = penis/glans, 2 = scrotum) (ไม่มีเฉลยต้นฉบับ AI ร่างให้)",
+     "audit_note": "อ้างอิงเฉลย KF ปี 44 ข้อ 11 (รูปเดียวกัน: 3 = epididymis, 5 = testis)"
+    }
+   ],
+   "key_concept": "torsion ของ appendix testis",
+   "image": "img/KUB-47-KF-014.jpg",
+   "image_caption": "ภาพขณะผ่าตัด หมายเลข 1–5"
+  },
+  {
+   "n": 15,
+   "page": 10,
+   "tags": [
+    "inguinal hernia"
+   ],
+   "case": "A 1-year-old boy with recurrent right groin mass when he cried. Physical examination revealed a reducible scrotal mass with positive silk-glove sign. (ต้นฉบับพิมพ์ 11 years old)",
+   "answer_status": "draft",
+   "items": [
+    {
+     "id": "15.1",
+     "prompt": "จงทำการวินิจฉัย",
+     "format": "short",
+     "accepted": [
+      "indirect inguinal hernia",
+      "inguinal hernia"
+     ],
+     "keywords_all": [
+      "hernia"
+     ],
+     "key_text": "Indirect inguinal hernia",
+     "source_key": "Indirect inguinal hernia (ไม่มีเฉลยต้นฉบับ AI ร่างให้)"
+    },
+    {
+     "id": "15.2",
+     "prompt": "จงอธิบายกระบวนการเกิดโรค",
+     "format": "short",
+     "accepted": [
+      "patent processus vaginalis"
+     ],
+     "keywords_all": [
+      "processus vaginalis"
+     ],
+     "key_text": "processus vaginalis ไม่ปิดหลังอัณฑะลงถุง → ความดันในท้องเพิ่ม (ร้อง/เบ่ง) ดันลำไส้เข้าไปใน inguinal canal/scrotal sac",
+     "source_key": "processus vaginalis ไม่ปิดหลังอัณฑะลงถุง → ความดันในท้องเพิ่ม (ร้อง/เบ่ง) ดันลำไส้เข้าไปใน inguinal canal/scrotal sac (ไม่มีเฉลยต้นฉบับ AI ร่างให้)"
+    }
+   ],
+   "key_concept": "indirect inguinal hernia เด็ก = patent processus vaginalis"
+  },
+  {
+   "n": 16,
+   "page": 11,
+   "tags": [
+    "hydrocele"
+   ],
+   "case": "ภาพถุงอัณฑะเด็กที่ถูกส่องไฟ (สีแดงโปร่ง)",
+   "answer_status": "draft",
+   "items": [
+    {
+     "id": "16.1",
+     "prompt": "จงบอกชื่อวิธีการตรวจดังภาพ",
+     "format": "short",
+     "accepted": [
+      "transillumination test",
+      "transillumination"
+     ],
+     "keywords_all": [
+      "transillumination"
+     ],
+     "key_text": "Transillumination test",
+     "source_key": "Transillumination test (ไม่มีเฉลยต้นฉบับ AI ร่างให้)"
+    },
+    {
+     "id": "16.2",
+     "prompt": "จงทำการวินิจฉัย",
+     "format": "short",
+     "accepted": [
+      "hydrocele"
+     ],
+     "keywords_all": [
+      "hydrocele"
+     ],
+     "key_text": "Hydrocele",
+     "source_key": "Hydrocele (ไม่มีเฉลยต้นฉบับ AI ร่างให้)"
+    }
+   ],
+   "key_concept": "hydrocele: transillumination +",
+   "image": "img/KUB-47-KF-016.jpg",
+   "image_caption": "ถุงอัณฑะที่ถูกส่องไฟ"
+  },
+  {
+   "n": 17,
+   "page": 11,
+   "tags": [
+    "cryptorchidism",
+    "testicular tumor"
+   ],
+   "case": "A 14-year-old man with left groin undescended testis. Ultrasound shows good testicular blood flow, and testicular abnormal texture as in the figure.",
+   "answer_status": "draft",
+   "items": [
+    {
+     "id": "17.1",
+     "prompt": "What is diagnosis?",
+     "format": "short",
+     "accepted": [
+      "testicular tumor",
+      "seminoma",
+      "germ cell tumor",
+      "testicular cancer"
+     ],
+     "keywords_all": [
+      "tumor"
+     ],
+     "key_text": "Testicular tumor (germ cell tumor/seminoma) ในอัณฑะที่ไม่ลงถุง — blood flow ดี ตัด torsion; echotexture heterogeneous",
+     "source_key": "Testicular tumor (germ cell tumor/seminoma) ในอัณฑะที่ไม่ลงถุง — blood flow ดี ตัด torsion; echotexture heterogeneous (ไม่มีเฉลยต้นฉบับ AI ร่างให้)",
+     "audit_note": "AI ตีความ ultrasound ผู้ตรวจควรยืนยัน (อาจเป็น testicular microlithiasis/ atrophy)"
+    }
+   ],
+   "key_concept": "undescended testis → tumor/infertility",
+   "image": "img/KUB-47-KF-017.jpg",
+   "image_caption": "Ultrasound อัณฑะซ้าย (long axis)"
+  },
+  {
+   "n": 19,
+   "page": 12,
+   "tags": [
+    "endometrial cancer"
+   ],
+   "case": "ผู้หญิง 60 ปี หมดประจำเดือนนานแล้ว แต่เมื่อไม่กี่เดือนที่ผ่านมามี abnormal uterine bleeding. ประวัติ PCOS, BMI 32.5. Pathology: endometrium สร้างต่อมเรียงชิด (back-to-back), nucleus pleomorphic, nucleolus ชัด.",
+   "answer_status": "draft",
+   "items": [
+    {
+     "id": "19.1",
+     "prompt": "ให้วินิจฉัย",
+     "format": "short",
+     "accepted": [
+      "endometrial adenocarcinoma",
+      "endometrial carcinoma",
+      "endometrioid adenocarcinoma"
+     ],
+     "keywords_all": [
+      "endometrial"
+     ],
+     "key_text": "Endometrial adenocarcinoma (endometrioid)",
+     "source_key": "Endometrial adenocarcinoma (endometrioid) (ไม่มีเฉลยต้นฉบับ AI ร่างให้)"
+    },
+    {
+     "id": "19.2",
+     "prompt": "risk factor ของโรคนี้มา 2 อย่าง",
+     "format": "short",
+     "accepted": [
+      "obesity",
+      "PCOS",
+      "unopposed estrogen",
+      "diabetes"
+     ],
+     "keywords_all": [
+      "obesity"
+     ],
+     "key_text": "Obesity (BMI 32.5) · PCOS/anovulation (unopposed estrogen) · (DM, tamoxifen, nulliparity)",
+     "source_key": "Obesity (BMI 32.5) · PCOS/anovulation (unopposed estrogen) · (DM, tamoxifen, nulliparity) (ไม่มีเฉลยต้นฉบับ AI ร่างให้)"
+    },
+    {
+     "id": "19.3",
+     "prompt": "โรคเกิดที่บริเวณไหน",
+     "format": "short",
+     "accepted": [
+      "endometrium",
+      "uterus"
+     ],
+     "keywords_all": [
+      "endometrium"
+     ],
+     "key_text": "Endometrium ของมดลูก",
+     "source_key": "Endometrium ของมดลูก (ไม่มีเฉลยต้นฉบับ AI ร่างให้)"
+    },
+    {
+     "id": "19.4",
+     "prompt": "อธิบาย pathology ของโรค",
+     "format": "short",
+     "accepted": [
+      "unopposed estrogen",
+      "PTEN"
+     ],
+     "keywords_all": [
+      "estrogen"
+     ],
+     "key_text": "Unopposed estrogen (อ้วน/PCOS) → endometrial hyperplasia → carcinoma + PTEN mutation; histology: ต่อม back-to-back, pleomorphic nuclei",
+     "source_key": "Unopposed estrogen (อ้วน/PCOS) → endometrial hyperplasia → carcinoma + PTEN mutation; histology: ต่อม back-to-back, pleomorphic nuclei (ไม่มีเฉลยต้นฉบับ AI ร่างให้)",
+     "mechanism": [
+      "อ้วน/PCOS → unopposed estrogen",
+      "endometrium proliferate/hyperplasia",
+      "PTEN mutation",
+      "adenocarcinoma (back-to-back glands)"
+     ]
+    }
+   ],
+   "key_concept": "endometrial CA ← unopposed estrogen + PTEN"
+  },
+  {
+   "n": 20,
+   "page": 13,
+   "tags": [
+    "leiomyoma"
+   ],
+   "case": "หญิงอายุ 43 ปี abnormal uterine bleeding ประจำเดือนยังไม่หมด ประจำเดือนนานขึ้นและมากขึ้น. PE: midline pelvic mass, myometrium larger with spot bleeding. ผ่าตัดมดลูกพบก้อนดังรูป (ก้อนกลมสีขาวหลายก้อนใน myometrium)",
+   "answer_status": "draft",
+   "items": [
+    {
+     "id": "20.1",
+     "prompt": "ให้วินิจฉัย",
+     "format": "short",
+     "accepted": [
+      "leiomyoma",
+      "uterine fibroid",
+      "fibroids"
+     ],
+     "keywords_all": [
+      "leiomyoma"
+     ],
+     "key_text": "Leiomyoma (uterine fibroid)",
+     "source_key": "Leiomyoma (uterine fibroid) (ไม่มีเฉลยต้นฉบับ AI ร่างให้)"
+    },
+    {
+     "id": "20.2",
+     "prompt": "อธิบาย pathology ของโรคพร้อมผลแทรกซ้อนที่อาจเกิดขึ้น",
+     "format": "short",
+     "accepted": [
+      "abnormal uterine bleeding",
+      "infertility",
+      "anemia",
+      "degeneration"
+     ],
+     "keywords_all": [
+      "bleeding"
+     ],
+     "key_text": "เนื้องอกกล้ามเนื้อเรียบ (smooth muscle) ก้อนกลมขาว whorled ขอบเรียบ เจริญตามฮอร์โมน estrogen · แทรกซ้อน: AUB/โลหิตจาง, ปวด/กดอวัยวะข้างเคียง, infertility/แท้ง, degeneration (red/hyaline)",
+     "source_key": "เนื้องอกกล้ามเนื้อเรียบ (smooth muscle) ก้อนกลมขาว whorled ขอบเรียบ เจริญตามฮอร์โมน estrogen · แทรกซ้อน: AUB/โลหิตจาง, ปวด/กดอวัยวะข้างเคียง, infertility/แท้ง, degeneration (red/hyaline) (ไม่มีเฉลยต้นฉบับ AI ร่างให้)"
+    },
+    {
+     "id": "20.3",
+     "prompt": "Origin of tumor?",
+     "format": "short",
+     "accepted": [
+      "myometrium",
+      "smooth muscle"
+     ],
+     "keywords_all": [
+      "myometrium"
+     ],
+     "key_text": "Myometrium (smooth muscle ของมดลูก)",
+     "source_key": "Myometrium (smooth muscle ของมดลูก) (ไม่มีเฉลยต้นฉบับ AI ร่างให้)"
+    },
+    {
+     "id": "20.4",
+     "prompt": "This tumor is … BENIGN / MALIGNANT",
+     "format": "short",
+     "accepted": [
+      "benign"
+     ],
+     "keywords_all": [
+      "benign"
+     ],
+     "key_text": "BENIGN",
+     "source_key": "BENIGN (ไม่มีเฉลยต้นฉบับ AI ร่างให้)"
+    }
+   ],
+   "key_concept": "leiomyoma: benign, AUB, infertility",
+   "image": "img/KUB-47-KF-020.jpg",
+   "image_caption": "มดลูกผ่าครึ่งมีก้อนกลมขาวหลายก้อน"
+  }
+ ]
+}
