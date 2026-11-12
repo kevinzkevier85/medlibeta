@@ -2,6 +2,7 @@
 
 | set_id | ข้อ | agree | disagree | drafted | unverified | ai_gen | skipped | needs_review |
 |---|---|---|---|---|---|---|---|---|
+| resp_46_MCQ | 62 | 45 | 7 | 2 | 0 | 1 | 7 | 7 |
 | resp_47_MCQ | 73 | 57 | 6 | 1 | 0 | 4 | 5 | 6 |
 | resp_48_MCQ | 100 | 77 | 23 | 0 | 0 | 0 | 0 | 23 |
 | resp_49_MCQ | 64 | 33 | 14 | 8 | 0 | 6 | 3 | 14 |
