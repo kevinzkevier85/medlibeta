@@ -1,0 +1,394 @@
+{
+ "set_id": "kub_46_OSPE",
+ "note": "OSPE KUB and Repro Med PSU 46 (Vichakan Med46) · 20 สถานี ข้อละ 3 นาที (ในไฟล์ไม่มีเฉลย) · AI ใส่เฉพาะสถานีที่ตอบจากรูป/โจทย์ได้พอมั่นใจ: 1, 2, 3, 4 (รูป C), 5, 8, 9, 10, 11 · สถานีที่ต้องระบุชื่อโครงสร้างกายวิภาค/เนื้อเยื่อจากภาพ (13–20), หลอดปัสสาวะ 4A/4B, สถานี 6, 7, 12 ไม่มีเฉลยและ AI ตีความภาพไม่ได้ จึงไม่ใส่ · ทุกข้อเป็นเฉลยร่างโดย AI (draft) ผู้ตรวจควรยืนยัน",
+ "time_limit_min": 60,
+ "questions": [
+  {
+   "n": 1,
+   "page": 2,
+   "tags": [
+    "renal cell carcinoma"
+   ],
+   "case": "สถานี 1 — ภาพ gross ของไต (ก้อนสีเหลืองลักษณะเป็นพูในเนื้อไต ลูกศรสีแดงชี้ก้อน)",
+   "answer_status": "draft",
+   "items": [
+    {
+     "id": "1.1",
+     "prompt": "จงให้การวินิจฉัย (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "renal cell carcinoma",
+      "RCC",
+      "clear cell carcinoma"
+     ],
+     "keywords_all": [
+      "renal cell"
+     ],
+     "key_text": "Renal cell carcinoma",
+     "source_key": "Renal cell carcinoma (ไม่มีเฉลยต้นฉบับ AI ร่างให้)"
+    }
+   ],
+   "station": 1,
+   "image": "img/KUB-46-OSPE-001.jpg",
+   "image_caption": "ไตมีก้อนสีเหลือง (ลูกศรชี้)"
+  },
+  {
+   "n": 2,
+   "page": 2,
+   "tags": [
+    "renal cell carcinoma"
+   ],
+   "case": "สถานี 2 — ภาพ histology (เซลล์ใสขนาดใหญ่ nuclear grade 1)",
+   "answer_status": "draft",
+   "items": [
+    {
+     "id": "2.1",
+     "prompt": "จงให้การวินิจฉัย (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "clear cell renal cell carcinoma",
+      "renal cell carcinoma",
+      "RCC"
+     ],
+     "keywords_all": [
+      "renal cell"
+     ],
+     "key_text": "Clear cell renal cell carcinoma",
+     "source_key": "Clear cell renal cell carcinoma (ไม่มีเฉลยต้นฉบับ AI ร่างให้)"
+    },
+    {
+     "id": "2.2",
+     "prompt": "ปัจจัยเสี่ยงของโรคนี้ 2 ข้อ (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "smoking",
+      "obesity",
+      "hypertension",
+      "VHL",
+      "von Hippel-Lindau",
+      "dialysis"
+     ],
+     "keywords_all": [
+      "smoking"
+     ],
+     "key_text": "Smoking · obesity (อื่นๆ: hypertension, VHL, chronic dialysis)",
+     "source_key": "Smoking · obesity (อื่นๆ: hypertension, VHL, chronic dialysis) (ไม่มีเฉลยต้นฉบับ AI ร่างให้)",
+     "audit_note": "AI ตอบจากความรู้"
+    }
+   ],
+   "station": 2,
+   "image": "img/KUB-46-OSPE-002.jpg",
+   "image_caption": "histology เซลล์ใส (Fuhrman nuclear grade 1)"
+  },
+  {
+   "n": 3,
+   "page": 2,
+   "tags": [
+    "hydronephrosis"
+   ],
+   "case": "สถานี 3 — ภาพ gross ของไต (กรวยไตและถ้วยไตขยาย เนื้อไตบาง)",
+   "answer_status": "draft",
+   "items": [
+    {
+     "id": "3.1",
+     "prompt": "จงให้การวินิจฉัย (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "hydronephrosis"
+     ],
+     "keywords_all": [
+      "hydronephrosis"
+     ],
+     "key_text": "Hydronephrosis",
+     "source_key": "Hydronephrosis (ไม่มีเฉลยต้นฉบับ AI ร่างให้)"
+    },
+    {
+     "id": "3.2",
+     "prompt": "สาเหตุที่พบบ่อยที่สุดของพยาธิสภาพนี้คือ (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "stone",
+      "urinary calculi",
+      "renal stone",
+      "urolithiasis",
+      "calculi"
+     ],
+     "keywords_all": [
+      "stone"
+     ],
+     "key_text": "Urinary tract stones (urolithiasis) ที่อุดตันทางเดินปัสสาวะ",
+     "source_key": "Urinary tract stones (urolithiasis) ที่อุดตันทางเดินปัสสาวะ (ไม่มีเฉลยต้นฉบับ AI ร่างให้)",
+     "audit_note": "AI ตอบจากความรู้ (นิ่วเป็นสาเหตุอุดตันที่พบบ่อยที่สุด; ในชายสูงอายุคือ BPH)"
+    }
+   ],
+   "station": 3,
+   "image": "img/KUB-46-OSPE-003.jpg",
+   "image_caption": "ไตที่มีกรวยไตขยาย (hydronephrosis)"
+  },
+  {
+   "n": 4,
+   "page": 3,
+   "tags": [
+    "hematuria"
+   ],
+   "case": "สถานี 4 — ภาพปัสสาวะ 3 หลอด (A, B, C) จากรูป C (ปัสสาวะสีแดงใส)",
+   "answer_status": "draft",
+   "items": [
+    {
+     "id": "4.1",
+     "prompt": "จากรูป C บ่งบอกสภาวะใด (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "hematuria",
+      "gross hematuria"
+     ],
+     "keywords_all": [
+      "hematuria"
+     ],
+     "key_text": "Gross hematuria (ปัสสาวะเป็นเลือด)",
+     "source_key": "Gross hematuria (ปัสสาวะเป็นเลือด) (ไม่มีเฉลยต้นฉบับ AI ร่างให้)",
+     "audit_note": "ข้อรูป A, B ไม่มีเฉลยจึงไม่ใส่ (รูป A ปัสสาวะขุ่นขาว, B สีน้ำตาลเข้ม)",
+     "image": "img/KUB-46-OSPE-004.jpg",
+     "image_caption": "ปัสสาวะสีแดง (C)"
+    },
+    {
+     "id": "4.2",
+     "prompt": "การทดสอบใดบน dipstick น่าจะให้ผลเป็น positive (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "blood",
+      "occult blood",
+      "heme"
+     ],
+     "keywords_all": [
+      "blood"
+     ],
+     "key_text": "Blood (occult blood/heme)",
+     "source_key": "Blood (occult blood/heme) (ไม่มีเฉลยต้นฉบับ AI ร่างให้)"
+    }
+   ],
+   "station": 4
+  },
+  {
+   "n": 5,
+   "page": 3,
+   "tags": [
+    "urinary sediment",
+    "hyaline cast"
+   ],
+   "case": "สถานี 5 — ภาพตะกอนปัสสาวะ ระบุหมายเลข 1 และ 2",
+   "answer_status": "draft",
+   "items": [
+    {
+     "id": "5.1",
+     "prompt": "ตะกอนหมายเลข 1 คืออะไร (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "hyaline cast"
+     ],
+     "keywords_all": [
+      "hyaline"
+     ],
+     "key_text": "Hyaline cast",
+     "source_key": "Hyaline cast (ไม่มีเฉลยต้นฉบับ AI ร่างให้)"
+    },
+    {
+     "id": "5.2",
+     "prompt": "ตะกอนหมายเลข 2 คืออะไร (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "squamous epithelial cell",
+      "epithelial cell",
+      "squamous cell"
+     ],
+     "keywords_all": [
+      "epithelial"
+     ],
+     "key_text": "Squamous epithelial cell",
+     "source_key": "Squamous epithelial cell (ไม่มีเฉลยต้นฉบับ AI ร่างให้)",
+     "audit_note": "AI ตีความจากรูป (เซลล์แบนขนาดใหญ่)"
+    },
+    {
+     "id": "5.3",
+     "prompt": "พบตะกอนหมายเลข 1 ได้ในผู้ป่วยที่มีอาการ/โรคอะไร (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "dehydration",
+      "exercise",
+      "fever",
+      "diuretics",
+      "normal"
+     ],
+     "keywords_all": [
+      "dehydration"
+     ],
+     "key_text": "พบได้ปกติ และในภาวะขาดน้ำ/หลังออกกำลังกาย/ไข้/ใช้ยาขับปัสสาวะ",
+     "source_key": "พบได้ปกติ และในภาวะขาดน้ำ/หลังออกกำลังกาย/ไข้/ใช้ยาขับปัสสาวะ (ไม่มีเฉลยต้นฉบับ AI ร่างให้)"
+    }
+   ],
+   "station": 5,
+   "image": "img/KUB-46-OSPE-005.jpg",
+   "image_caption": "ตะกอนปัสสาวะ หมายเลข 1 และ 2"
+  },
+  {
+   "n": 8,
+   "page": 5,
+   "tags": [
+    "UTI",
+    "urine culture"
+   ],
+   "case": "สถานี 8 — เก็บ midstream clean-catch urine จากผู้ป่วยอายุ 8 เดือน. Urinalysis: WBC 50–100/HPF, RBC 5–10/HPF, squamous epithelial cell 10–20/HPF. Urine culture: Group A hemolytic streptococci 1,000 CFU/mL และ Escherichia coli 100,000 CFU/mL. ความไวต่อยา: ciprofloxacin sensitive, trimethoprim sensitive, nitrofurantoin sensitive.",
+   "answer_status": "draft",
+   "items": [
+    {
+     "id": "8.1",
+     "prompt": "ผู้ป่วยรายนี้ติดเชื้อ UTI หรือไม่ ถ้าติดติดเชื้อตัวใด (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "E. coli",
+      "Escherichia coli"
+     ],
+     "keywords_all": [
+      "E. coli"
+     ],
+     "key_text": "ติดเชื้อ UTI จาก Escherichia coli (10⁵ CFU/mL + WBC สูง) — Group A streptococci 10³ CFU/mL เป็น contaminant (squamous cell มาก)",
+     "source_key": "ติดเชื้อ UTI จาก Escherichia coli (10⁵ CFU/mL + WBC สูง) — Group A streptococci 10³ CFU/mL เป็น contaminant (squamous cell มาก) (ไม่มีเฉลยต้นฉบับ AI ร่างให้)"
+    },
+    {
+     "id": "8.2",
+     "prompt": "ต้องได้รับการรักษาหรือไม่ ถ้าต้อง ควรให้ยาตัวใด (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "trimethoprim",
+      "nitrofurantoin",
+      "TMP-SMX"
+     ],
+     "keywords_all": [
+      "trimethoprim"
+     ],
+     "key_text": "ต้องรักษา — trimethoprim (หรือ nitrofurantoin ถ้าเป็น cystitis) ; ciprofloxacin หลีกเลี่ยงในทารก",
+     "source_key": "ต้องรักษา — trimethoprim (หรือ nitrofurantoin ถ้าเป็น cystitis) ; ciprofloxacin หลีกเลี่ยงในทารก (ไม่มีเฉลยต้นฉบับ AI ร่างให้)",
+     "audit_note": "AI ตอบจากหลักการ (ciprofloxacin ไม่ใช้ในเด็กเล็ก) ผู้ตรวจควรยืนยัน"
+    }
+   ],
+   "station": 8
+  },
+  {
+   "n": 9,
+   "page": 6,
+   "tags": [
+    "hydrocele"
+   ],
+   "case": "สถานี 9 — ภาพ gross ของอัณฑะและถุงน้ำรอบอัณฑะที่ตัดผ่าน",
+   "answer_status": "draft",
+   "items": [
+    {
+     "id": "9.1",
+     "prompt": "จงอธิบายการเปลี่ยนแปลงทางพยาธิวิทยาในผู้ป่วยรายนี้ (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "accumulation of fluid in tunica vaginalis",
+      "serous fluid"
+     ],
+     "keywords_all": [
+      "fluid"
+     ],
+     "key_text": "มีของเหลว serous สะสมในช่องของ tunica vaginalis รอบอัณฑะ ทำให้ถุงอัณฑะโต",
+     "source_key": "มีของเหลว serous สะสมในช่องของ tunica vaginalis รอบอัณฑะ ทำให้ถุงอัณฑะโต (ไม่มีเฉลยต้นฉบับ AI ร่างให้)"
+    },
+    {
+     "id": "9.2",
+     "prompt": "จงให้การวินิจฉัย (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "hydrocele"
+     ],
+     "keywords_all": [
+      "hydrocele"
+     ],
+     "key_text": "Hydrocele",
+     "source_key": "Hydrocele (ไม่มีเฉลยต้นฉบับ AI ร่างให้)"
+    }
+   ],
+   "station": 9,
+   "image": "img/KUB-46-OSPE-009.jpg",
+   "image_caption": "อัณฑะผ่าตัดเปิดถุง hydrocele"
+  },
+  {
+   "n": 10,
+   "page": 7,
+   "tags": [
+    "BPH"
+   ],
+   "case": "สถานี 10 — ชายอายุ 60 ปี ปัสสาวะแสบขัด 5 ปี รู้สึกปัสสาวะไม่สุด PSA 6 ng/mL ได้รับการผ่าตัดต่อมลูกหมาก (prostatectomy) ตรวจพบดังภาพ",
+   "answer_status": "draft",
+   "items": [
+    {
+     "id": "10.1",
+     "prompt": "จงให้การวินิจฉัย (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "BPH",
+      "benign prostatic hyperplasia",
+      "nodular hyperplasia"
+     ],
+     "keywords_all": [
+      "BPH"
+     ],
+     "key_text": "Benign prostatic hyperplasia (nodular hyperplasia)",
+     "source_key": "Benign prostatic hyperplasia (nodular hyperplasia) (ไม่มีเฉลยต้นฉบับ AI ร่างให้)"
+    },
+    {
+     "id": "10.2",
+     "prompt": "จงอธิบายลักษณะทางจุลพยาธิวิทยา 2 อย่าง (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "glandular hyperplasia",
+      "stromal hyperplasia",
+      "nodular",
+      "papillary infolding"
+     ],
+     "keywords_all": [
+      "hyperplasia"
+     ],
+     "key_text": "Glandular + stromal hyperplasia เป็นก้อน (nodular) · ต่อมขยายขนาด มี papillary infolding ของ epithelium",
+     "source_key": "Glandular + stromal hyperplasia เป็นก้อน (nodular) · ต่อมขยายขนาด มี papillary infolding ของ epithelium (ไม่มีเฉลยต้นฉบับ AI ร่างให้)",
+     "image": "img/KUB-46-OSPE-010b.jpg",
+     "image_caption": "histology ต่อมลูกหมาก"
+    }
+   ],
+   "station": 10,
+   "image": "img/KUB-46-OSPE-010.jpg",
+   "image_caption": "gross และ histology ของต่อมลูกหมาก"
+  },
+  {
+   "n": 11,
+   "page": 7,
+   "tags": [
+    "leiomyoma"
+   ],
+   "case": "สถานี 11 — ภาพ gross มดลูกผ่าครึ่ง มีก้อนกลมหลายก้อนในชั้นกล้ามเนื้อ",
+   "answer_status": "draft",
+   "items": [
+    {
+     "id": "11.1",
+     "prompt": "จงให้การวินิจฉัย (ตอบภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "leiomyoma",
+      "uterine fibroid",
+      "fibroids"
+     ],
+     "keywords_all": [
+      "leiomyoma"
+     ],
+     "key_text": "Leiomyoma (uterine fibroid)",
+     "source_key": "Leiomyoma (uterine fibroid) (ไม่มีเฉลยต้นฉบับ AI ร่างให้)"
+    }
+   ],
+   "station": 11,
+   "image": "img/KUB-46-OSPE-011.jpg",
+   "image_caption": "มดลูกผ่าครึ่งมีก้อนกลมหลายก้อน"
+  }
+ ]
+}
