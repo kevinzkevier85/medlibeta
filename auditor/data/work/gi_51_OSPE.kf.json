@@ -10,7 +10,7 @@
         "histology",
         "colon"
       ],
-      "case": "Station 1. H&E section of a hollow organ wall: a mucosa of long, straight, closely packed glands with a thin layer of smooth muscle at its base.",
+      "case": "สถานี 1 H&E ของผนังอวัยวะกลวง: เยื่อบุมีต่อมตรงยาวเรียงชิด และมีกล้ามเนื้อเรียบบางที่ฐาน",
       "key_concept": "colon: ต่อมตรง ไม่มี villi · muscularis mucosae ฐาน mucosa",
       "audit_note": "ข้อ 1.2 ต้นฉบับเป็นข้อชี้ ไม่มีเฉลย (AI ร่าง)",
       "answer_status": "draft",
@@ -19,7 +19,7 @@
       "items": [
         {
           "id": "1.1",
-          "prompt": "Identify this organ",
+          "prompt": "อวัยวะนี้คืออะไร (ตอบภาษาอังกฤษ)",
           "format": "short",
           "accepted": [
             "colon",
@@ -32,7 +32,7 @@
         },
         {
           "id": "1.2",
-          "prompt": "Point to the muscularis mucosae (the printed question says: in the real exam it was near an artery)",
+          "prompt": "ชี้ muscularis mucosae (โจทย์ที่พิมพ์ระบุว่าในข้อสอบจริงอยู่ใกล้หลอดเลือดแดง) (ตอบภาษาอังกฤษ)",
           "format": "short",
           "keywords_all": [
             "muscularis",
@@ -57,14 +57,14 @@
         "histology",
         "duodenum"
       ],
-      "case": "Station 2. H&E section of a mucosal junction. Arrows label the muscularis mucosae and an area 'A' of branched coiled glands in the submucosa.",
+      "case": "สถานี 2 H&E ของรอยต่อเยื่อบุ ลูกศรชี้ muscularis mucosae และบริเวณ 'A' ซึ่งเป็นต่อมขดแตกแขนงใน submucosa",
       "key_concept": "gastroduodenal junction + Brunner's glands",
       "image": "img/GI-51-OSPE-002.jpg",
       "image_caption": "รอยต่อกระเพาะ–duodenum (H&E)",
       "items": [
         {
           "id": "2.1",
-          "prompt": "Identify this organ",
+          "prompt": "อวัยวะนี้คืออะไร (ตอบภาษาอังกฤษ)",
           "format": "short",
           "accepted": [
             "gastroduodenal junction",
@@ -78,7 +78,7 @@
         },
         {
           "id": "2.2",
-          "prompt": "What is A?",
+          "prompt": "A คืออะไร (ตอบภาษาอังกฤษ)",
           "format": "short",
           "accepted": [
             "brunner's glands",
@@ -100,14 +100,14 @@
         "liver",
         "acinus"
       ],
-      "case": "Station 3. H&E section of liver parenchyma with an outlined hepatic acinus; zones A, B and C are drawn as arcs from the central vein (A, bottom) to the portal triad (C, top).",
+      "case": "สถานี 3 H&E ของเนื้อตับ มีวงล้อม hepatic acinus โดยโซน A, B และ C วาดเป็นส่วนโค้งจาก central vein (A ล่าง) ถึง portal triad (C บน)",
       "key_concept": "acinus: zone 1 (portal) O₂ สูงสุด · zone 3 (central vein) เสี่ยง hypoxia",
       "image": "img/GI-51-OSPE-003.jpg",
       "image_caption": "hepatic acinus พร้อมโซน A–C",
       "items": [
         {
           "id": "3.1",
-          "prompt": "Which position is at the greatest risk of hypoxia?",
+          "prompt": "ตำแหน่งใดเสี่ยงต่อภาวะขาดออกซิเจนมากที่สุด",
           "format": "select",
           "options": [
             {
@@ -133,7 +133,7 @@
         },
         {
           "id": "3.2",
-          "prompt": "Which position receives the most oxygen?",
+          "prompt": "ตำแหน่งใดได้รับออกซิเจนมากที่สุด",
           "format": "select",
           "options": [
             {
@@ -165,7 +165,7 @@
       "tags": [
         "histology"
       ],
-      "case": "Station 4. Two H&E sections of the GI wall, each with an arrow: A (upper) at a mucosal fold and gland base; B (lower, in red stain) at a deep recess of the mucosa.",
+      "case": "สถานี 4 H&E ของผนังทางเดินอาหาร 2 ภาพ แต่ละภาพมีลูกศร: A (บน) ชี้รอยพับของเยื่อบุและฐานต่อม B (ล่าง ย้อมสีแดง) ชี้แอ่งลึกของเยื่อบุ",
       "key_concept": "rugae = รอยพับ mucosa กระเพาะ · Paneth cell ที่ crypt",
       "audit_note": "ภาพ A, B ซ้อนกัน 2 ภาพในหน้าเดียว ตัดรวมกรอบเดียว · เฉลยข้อ 4.2 ตามต้นฉบับ",
       "image": "img/GI-51-OSPE-004.jpg",
@@ -173,7 +173,7 @@
       "items": [
         {
           "id": "4.1",
-          "prompt": "Identify this organ",
+          "prompt": "อวัยวะนี้คืออะไร (ตอบภาษาอังกฤษ)",
           "format": "short",
           "accepted": [
             "rugae",
@@ -188,7 +188,7 @@
         },
         {
           "id": "4.2",
-          "prompt": "What are the pointed structures?",
+          "prompt": "โครงสร้างที่ชี้คืออะไร (ตอบภาษาอังกฤษ)",
           "format": "short",
           "accepted": [
             "paneth cell",
@@ -209,14 +209,14 @@
         "histology",
         "esophagus"
       ],
-      "case": "Station 5. H&E section through a wall of a muscular tube; numbers 1–7 label layers from the lumen outwards and a mucosal nodule is seen on the right.",
+      "case": "สถานี 5 H&E ผ่านผนังของท่อกล้ามเนื้อ เลข 1–7 ระบุชั้นจาก lumen ไปด้านนอก และเห็นก้อนในเยื่อบุทางขวา",
       "key_concept": "LES: รอยต่อ esophagus–stomach",
       "image": "img/GI-51-OSPE-005.jpg",
       "image_caption": "ผนังท่อกล้ามเนื้อ มีหมายเลข 1–7",
       "items": [
         {
           "id": "5.1",
-          "prompt": "Identify this organ",
+          "prompt": "อวัยวะนี้คืออะไร (ตอบภาษาอังกฤษ)",
           "format": "short",
           "accepted": [
             "les",
@@ -236,14 +236,14 @@
       "tags": [
         "peptic ulcer"
       ],
-      "case": "Station 6. Gross photograph of a gastric mucosa with a sharply demarcated, punched-out defect with a clean base.",
+      "case": "สถานี 6 ภาพถ่ายเยื่อบุกระเพาะ มีรอยโรคขอบเขตชัดคล้ายถูกเจาะ ฐานสะอาด",
       "key_concept": "peptic ulcer · H. pylori",
       "image": "img/GI-51-OSPE-006.jpg",
       "image_caption": "แผลกระเพาะ (gross)",
       "items": [
         {
           "id": "6.1",
-          "prompt": "Give the diagnosis",
+          "prompt": "วินิจฉัยว่าอะไร (ตอบภาษาอังกฤษ)",
           "format": "short",
           "accepted": [
             "peptic ulcer",
@@ -257,7 +257,7 @@
         },
         {
           "id": "6.2",
-          "prompt": "Which organism causes this disease?",
+          "prompt": "เชื้อชนิดใดก่อโรคนี้ (ตอบภาษาอังกฤษ)",
           "format": "short",
           "accepted": [
             "helicobacter pylori",
@@ -276,14 +276,14 @@
       "tags": [
         "gallstones"
       ],
-      "case": "Station 7. Gross photograph of an opened gallbladder filled with numerous small black stones next to a centimeter ruler.",
+      "case": "สถานี 7 ภาพถ่ายถุงน้ำดีผ่าเปิด เต็มด้วยนิ่วสีดำเล็กจำนวนมาก วางข้างไม้บรรทัดเซนติเมตร",
       "key_concept": "นิ่วสีดำ = pigment stone · hemolysis + biliary infection",
       "image": "img/GI-51-OSPE-007.jpg",
       "image_caption": "ถุงน้ำดีที่มีนิ่วสีดำ (gross)",
       "items": [
         {
           "id": "7.1",
-          "prompt": "Give the diagnosis and identify the specific type in this picture",
+          "prompt": "วินิจฉัยว่าอะไรและระบุชนิดเฉพาะจากภาพนี้ (ตอบภาษาอังกฤษ)",
           "format": "short",
           "accepted": [
             "cholelithiasis",
@@ -297,7 +297,7 @@
         },
         {
           "id": "7.2",
-          "prompt": "Give 2 associated risk factors",
+          "prompt": "ให้ปัจจัยเสี่ยงที่เกี่ยวข้อง 2 ข้อ (ตอบภาษาอังกฤษ)",
           "format": "short",
           "keywords_all": [
             "hemoly",
@@ -319,14 +319,14 @@
       "tags": [
         "squamous cell carcinoma"
       ],
-      "case": "Station 8. H&E section showing nests of atypical squamous cells with keratinization.",
+      "case": "สถานี 8 H&E เห็นกลุ่มเซลล์ squamous ผิดปกติ มี keratinization",
       "key_concept": "SCC: keratin pearl",
       "image": "img/GI-51-OSPE-008.jpg",
       "image_caption": "มะเร็งเซลล์สความัส (H&E)",
       "items": [
         {
           "id": "8.1",
-          "prompt": "Give the diagnosis",
+          "prompt": "วินิจฉัยว่าอะไร (ตอบภาษาอังกฤษ)",
           "format": "short",
           "accepted": [
             "squamous cell carcinoma",
@@ -338,7 +338,7 @@
         },
         {
           "id": "8.2",
-          "prompt": "Describe the histology",
+          "prompt": "จงบรรยายลักษณะทางจุลกายวิภาค (ตอบภาษาอังกฤษ)",
           "format": "short",
           "keywords_all": [
             "keratin",
@@ -360,14 +360,14 @@
       "tags": [
         "colon cancer"
       ],
-      "case": "Station 9. H&E section of the colon wall with crowded, back-to-back, irregular glands lined by hyperchromatic cells invading beneath the mucosa.",
+      "case": "สถานี 9 H&E ของผนังลำไส้ใหญ่ มีต่อมรูปร่างไม่สม่ำเสมอเรียงชิดติดกัน บุด้วยเซลล์ hyperchromatic แทรกลงใต้เยื่อบุ",
       "key_concept": "adenocarcinoma ลำไส้ใหญ่",
       "image": "img/GI-51-OSPE-009.jpg",
       "image_caption": "มะเร็งต่อมลำไส้ใหญ่ (H&E)",
       "items": [
         {
           "id": "9.1",
-          "prompt": "Give the diagnosis",
+          "prompt": "วินิจฉัยว่าอะไร (ตอบภาษาอังกฤษ)",
           "format": "short",
           "accepted": [
             "colorectal adenocarcinoma",
@@ -388,14 +388,14 @@
       "tags": [
         "liver tumor"
       ],
-      "case": "Station 10. Gross photograph of a sliced liver with multiple well-circumscribed, pale yellow nodules scattered through the parenchyma.",
+      "case": "สถานี 10 ภาพถ่ายตับหั่นเป็นชิ้น มีก้อนสีเหลืองซีดขอบเขตชัดหลายก้อนกระจายในเนื้อตับ",
       "key_concept": "ก้อนหลายก้อนในตับ: metastasis / HCC / cholangiocarcinoma",
       "image": "img/GI-51-OSPE-010.jpg",
       "image_caption": "ตับตัดตามขวาง (gross)",
       "items": [
         {
           "id": "10.1",
-          "prompt": "Describe this gross pathology",
+          "prompt": "จงบรรยายพยาธิสภาพ gross นี้ (ตอบภาษาอังกฤษ)",
           "format": "short",
           "keywords_all": [
             "nodular",
@@ -410,7 +410,7 @@
         },
         {
           "id": "10.2",
-          "prompt": "Give 2 differential diagnoses",
+          "prompt": "ให้ differential diagnosis 2 โรค (ตอบภาษาอังกฤษ)",
           "format": "short",
           "keywords_all": [
             "hcc",
@@ -435,14 +435,14 @@
       "tags": [
         "appendicitis"
       ],
-      "case": "Station 11. Gross photograph of a longitudinally opened, thick-walled blind-ended tube with reddened, ulcerated lining and a yellow-white exudate; two yellow lines mark an area of the wall.",
+      "case": "สถานี 11 ภาพถ่ายท่อปลายตันผนังหนาที่ผ่าเปิดตามยาว เยื่อบุแดงเป็นแผล มีสารเคลือบสีขาวเหลือง เส้นสีเหลือง 2 เส้นล้อมบริเวณหนึ่งของผนัง",
       "key_concept": "acute appendicitis",
       "image": "img/GI-51-OSPE-011.jpg",
       "image_caption": "ไส้ติ่งที่ตัดตามยาว (gross)",
       "items": [
         {
           "id": "11.1",
-          "prompt": "Describe this gross pathology",
+          "prompt": "จงบรรยายพยาธิสภาพ gross นี้ (ตอบภาษาอังกฤษ)",
           "format": "short",
           "keywords_all": [
             "ulcer",
@@ -457,7 +457,7 @@
         },
         {
           "id": "11.2",
-          "prompt": "Give the diagnosis",
+          "prompt": "วินิจฉัยว่าอะไร (ตอบภาษาอังกฤษ)",
           "format": "short",
           "accepted": [
             "acute appendicitis",
@@ -475,14 +475,14 @@
       "tags": [
         "FOBT"
       ],
-      "case": "Station 12. A stool occult-blood test card (guaiac) after developing: blue-green color in the two stool windows (blue arrow) and a red control spot (red arrow).",
+      "case": "สถานี 12 การ์ดตรวจ occult blood ในอุจจาระ (guaiac) หลังพัฒนาสี: มีสีน้ำเงินเขียวในช่องอุจจาระ 2 ช่อง (ลูกศรน้ำเงิน) และจุดควบคุมสีแดง (ลูกศรแดง)",
       "key_concept": "guaiac: heme → ฟ้า · false positive: peroxidase (เนื้อแดง ผักบางชนิด)",
       "image": "img/GI-51-OSPE-012.jpg",
       "image_caption": "การ์ดตรวจเลือดแฝงในอุจจาระ",
       "items": [
         {
           "id": "12.1",
-          "prompt": "Which blood component causes the blue result?",
+          "prompt": "องค์ประกอบของเลือดส่วนใดทำให้เกิดสีน้ำเงิน (ตอบภาษาอังกฤษ)",
           "format": "short",
           "accepted": [
             "hemoglobin",
@@ -496,7 +496,7 @@
         },
         {
           "id": "12.2",
-          "prompt": "Which kind of food can cause a false positive?",
+          "prompt": "อาหารชนิดใดทำให้เกิดผลบวกปลอมได้ (ตอบภาษาอังกฤษ)",
           "format": "short",
           "keywords_all": [
             "peroxidase",
@@ -520,13 +520,13 @@
       "tags": [
         "C. difficile"
       ],
-      "case": "Station 13. Draw the result of a positive C. difficile toxin A/B test. (The answer sheet is an empty box; the key adds a picture of a rapid test cassette.)",
+      "case": "สถานี 13 วาดผลบวกของการทดสอบ C. difficile toxin A/B (ใบตอบเป็นกล่องว่าง เฉลยเพิ่มภาพ cassette ตรวจเร็ว)",
       "key_concept": "C. difficile rapid test: GDH + toxin A + toxin B",
       "answer_status": "verified",
       "items": [
         {
           "id": "13.1",
-          "prompt": "Draw (or describe) a positive result for GDH and toxin A/B on the cassette.",
+          "prompt": "วาด (หรืออธิบาย) ผลบวกของ GDH และ toxin A/B บน cassette (ตอบภาษาอังกฤษ)",
           "format": "short",
           "keywords_all": [
             "gdh",
@@ -546,14 +546,14 @@
       "tags": [
         "hookworm"
       ],
-      "case": "Station 14. Light-microscope view of a thin-shelled oval egg with a segmented embryo.",
+      "case": "สถานี 14 กล้องจุลทรรศน์แสงเห็นไข่รูปไข่เปลือกบาง ภายในมีตัวอ่อนที่แบ่งเป็นส่วน",
       "key_concept": "hookworm egg: เปลือกบางใส",
       "image": "img/GI-51-OSPE-014.jpg",
       "image_caption": "ไข่พยาธิในอุจจาระ",
       "items": [
         {
           "id": "14.1",
-          "prompt": "Identify the scientific name of this parasite",
+          "prompt": "ปรสิตตัวนี้ชื่อวิทยาศาสตร์ว่าอะไร (ตอบภาษาอังกฤษ)",
           "format": "short",
           "accepted": [
             "ancylostoma duodenale",
@@ -567,7 +567,7 @@
         },
         {
           "id": "14.2",
-          "prompt": "What stage is this parasite?",
+          "prompt": "ปรสิตนี้อยู่ใน stage ใด (ตอบภาษาอังกฤษ)",
           "format": "short",
           "accepted": [
             "egg",
@@ -585,14 +585,14 @@
       "tags": [
         "Balantidium coli"
       ],
-      "case": "Station 15. Light-microscope view of a large, ovoid, brown cyst with a thick wall covered by fine hair-like cilia.",
+      "case": "สถานี 15 กล้องจุลทรรศน์แสงเห็น cyst สีน้ำตาลรูปไข่ขนาดใหญ่ ผนังหนา มีขนละเอียดคล้าย cilia คลุม",
       "key_concept": "Balantidium coli: ciliate · colon",
       "image": "img/GI-51-OSPE-015.jpg",
       "image_caption": "โปรโตซัวในอุจจาระ",
       "items": [
         {
           "id": "15.1",
-          "prompt": "Identify the scientific name of this parasite",
+          "prompt": "ปรสิตตัวนี้ชื่อวิทยาศาสตร์ว่าอะไร (ตอบภาษาอังกฤษ)",
           "format": "short",
           "accepted": [
             "balantidium coli",
@@ -604,7 +604,7 @@
         },
         {
           "id": "15.2",
-          "prompt": "What is the habitat of this parasite?",
+          "prompt": "ปรสิตนี้อาศัยอยู่ที่ไหน (ตอบภาษาอังกฤษ)",
           "format": "short",
           "accepted": [
             "colon",
@@ -623,14 +623,14 @@
       "tags": [
         "Giardia"
       ],
-      "case": "Station 16. Light-microscope view of an oval protozoal structure with a thin wall and internal fibrils.",
+      "case": "สถานี 16 กล้องจุลทรรศน์แสงเห็นโครงสร้างโปรโตซัวรูปไข่ ผนังบาง มี fibril ภายใน",
       "key_concept": "Giardia cyst",
       "image": "img/GI-51-OSPE-016.jpg",
       "image_caption": "โปรโตซัวในอุจจาระ",
       "items": [
         {
           "id": "16.1",
-          "prompt": "Identify the scientific name of this parasite",
+          "prompt": "ปรสิตตัวนี้ชื่อวิทยาศาสตร์ว่าอะไร (ตอบภาษาอังกฤษ)",
           "format": "short",
           "accepted": [
             "giardia lamblia",
@@ -643,7 +643,7 @@
         },
         {
           "id": "16.2",
-          "prompt": "What stage is this parasite?",
+          "prompt": "ปรสิตนี้อยู่ใน stage ใด (ตอบภาษาอังกฤษ)",
           "format": "short",
           "accepted": [
             "cyst"
@@ -660,14 +660,14 @@
       "tags": [
         "Enterobius"
       ],
-      "case": "Station 17. Light-microscope view of three colorless, oval eggs, one flattened on one side, with a clear shell, containing a coiled larva.",
+      "case": "สถานี 17 กล้องจุลทรรศน์แสงเห็นไข่รูปไข่ไม่มีสี 3 ฟอง แบนข้างหนึ่ง เปลือกใส มีตัวอ่อนขดอยู่ภายใน",
       "key_concept": "Enterobius: ไข่แบนข้างหนึ่ง · large intestine",
       "image": "img/GI-51-OSPE-017.jpg",
       "image_caption": "ไข่พยาธิเข็มหมุด",
       "items": [
         {
           "id": "17.1",
-          "prompt": "Give the scientific name of this parasite",
+          "prompt": "ปรสิตตัวนี้ชื่อวิทยาศาสตร์ว่าอะไร (ตอบภาษาอังกฤษ)",
           "format": "short",
           "accepted": [
             "enterobius vermicularis",
@@ -680,7 +680,7 @@
         },
         {
           "id": "17.2",
-          "prompt": "Where is their habitat in humans?",
+          "prompt": "ในคนพบอาศัยอยู่ที่ไหน (ตอบภาษาอังกฤษ)",
           "format": "short",
           "accepted": [
             "large intestine",
