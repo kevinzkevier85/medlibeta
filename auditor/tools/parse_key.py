@@ -26,7 +26,8 @@ def is_pink(r, g, b):
     yellow = r >= 235 and g >= 185 and b <= 130                                  # yellow highlighter (GI 41-43)
     orange = r >= 240 and 195 <= g <= 225 and 115 <= b <= 165 and r - b >= 80     # orange pill highlight (KUB 52)
     blue = b >= 245 and 170 <= r <= 210 and 200 <= g <= 232                      # light-blue pill highlight (KUB 44)
-    return pink or lime or salmon or yellow or orange or blue
+    green = g >= 225 and r <= 190 and b <= 190 and g - r >= 45 and g - b >= 45  # mint-green pill highlight (Respiratory 52)
+    return pink or lime or salmon or yellow or orange or blue or green
 
 
 def pink_fraction(pix, rect):

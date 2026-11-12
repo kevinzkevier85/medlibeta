@@ -1,6 +1,6 @@
 # REVIEW — รายการรอผู้ใช้ตัดสิน
 
-ทั้งหมด 606 รายการ
+ทั้งหมด 614 รายการ
 วิธีตอบ: พิมพ์ในแชทเป็นบรรทัด เช่น `end_52_MCQ_027: คงเดิม` / `end_52_MCQ_063: C` / `end_52_MCQ_046: ตรวจใหม่`
 Claude จะบันทึกลง `auditor/data/decisions.json` แล้ว build ใหม่
 
@@ -612,3 +612,11 @@ Claude จะบันทึกลง `auditor/data/decisions.json` แล้ว
 | kub_52_MCQ_045 | B | A | mid | เฉลยขัดกับ AI |   |
 | kub_52_MCQ_060 | B | A | mid | เฉลยขัดกับ AI | AI ตอบ Leydig cell; ต้นฉบับ Sertoli cell (tumor หลั่ง estrogen)  |
 | kub_52_MCQ_096 | D | C | mid | เฉลยขัดกับ AI |   |
+| resp_52_MCQ_009 | B | C | hi | เฉลยขัดกับ AI |   |
+| resp_52_MCQ_010 | E | B | low | เฉลยขัดกับ AI |   |
+| resp_52_MCQ_022 | D | A | low | เฉลยขัดกับ AI |   |
+| resp_52_MCQ_031 | E | D | mid | เฉลยขัดกับ AI |   |
+| resp_52_MCQ_038 | C | D | low | เฉลยขัดกับ AI |   |
+| resp_52_MCQ_044 | E | B | mid | เฉลยขัดกับ AI |   |
+| resp_52_MCQ_065 | None | D | hi | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ | ต้นฉบับเขียนว่า ไม่มีคำตอบตามสไลด์ (SCLC: chromogranin, synaptophysin, CD56, NSE) — AI ร่างเฉลย D  |
+| resp_52_MCQ_079 | A | B | hi | เฉลยขัดกับ AI |   |
