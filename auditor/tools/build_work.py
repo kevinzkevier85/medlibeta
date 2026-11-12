@@ -103,7 +103,7 @@ def main():
         src = k["answers"]
         flags = set(r.get("flags", []))
         audit = {"source_file": meta["files"]["exam"]["drive_path"], "page": pq["page"],
-                 "key_file": meta["files"]["key"]["drive_path"], "key_page": k.get("page"),
+                 "key_file": (meta["files"].get("key") or {}).get("drive_path"), "key_page": k.get("page"),
                  "answer_status": None, "answer_verified": False,
                  "source_answer": src[0] if len(src) == 1 else (src or None),
                  "source_answer_note": k.get("note") or None,

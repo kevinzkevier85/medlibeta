@@ -1,0 +1,580 @@
+{
+ "set_id": "kub_48_KF",
+ "note": "KF KUB and Repro Med PSU 48 · เฉลยลายมือสีแดงในไฟล์ key (อ่านทุกหน้าด้วยตา) · ข้อ 6, 7, 9–13 ต้นฉบับเว้นว่าง/ขีดฆ่า (จำโจทย์ไม่ได้) จึงไม่มีในชุดนี้ · ข้อ 2 เฉลยให้เฉพาะการวินิจฉัย (Dx. acute pyelonephritis) · ข้อ 4.2 ผู้เฉลยตอบ EM → \"immune complex deposit\" ซึ่งไม่ตรงกับ MCNS (ควรเป็น foot process effacement) บันทึกตามต้นฉบับพร้อมหมายเหตุ",
+ "time_limit_min": null,
+ "questions": [
+  {
+   "n": 1,
+   "page": 2,
+   "tags": [
+    "APSGN",
+    "nephritic syndrome"
+   ],
+   "case": "หญิงไทย 23 ปี ขาบวม 1 สัปดาห์ BP 160/90, puffy eyelids, pretibial edema. UA: RBC 30–50/HPF, RBC cast 4–5/LPF, protein 1+; urine 24-hr protein สูงกว่าปกติ.",
+   "answer_status": "verified",
+   "items": [
+    {
+     "id": "1.1",
+     "prompt": "อาการของกลุ่มโรคอะไร เพราะเหตุใด",
+     "format": "short",
+     "accepted": [
+      "nephritic syndrome"
+     ],
+     "keywords_all": [
+      "nephritic"
+     ],
+     "key_text": "Nephritic syndrome — มี edema, hypertension, hematuria (RBC cast)",
+     "source_key": "เฉลยลายมือ: Nephritic syndrome (เพราะมี edema, hypertension, hematuria)"
+    },
+    {
+     "id": "1.2",
+     "prompt": "ตรวจ C3 ต่ำ C4 ปกติ ตรวจ DNAse B titer เป็นโรคอะไร",
+     "format": "short",
+     "accepted": [
+      "acute post-streptococcal glomerulonephritis",
+      "APSGN",
+      "post-streptococcal GN"
+     ],
+     "keywords_all": [
+      "poststreptococcal"
+     ],
+     "key_text": "Acute post-streptococcal glomerulonephritis (APSGN)",
+     "source_key": "เฉลยลายมือ: Acute poststreptococcal glomerulonephritis (APSGN)"
+    },
+    {
+     "id": "1.3",
+     "prompt": "จงให้การรักษา 4 ข้อ",
+     "format": "short",
+     "accepted": [
+      "furosemide",
+      "hydralazine",
+      "enalapril",
+      "salt restriction"
+     ],
+     "keywords_all": [
+      "furosemide"
+     ],
+     "key_text": "Furosemide (บวม) · hydralazine และ enalapril (ความดันสูง) · จำกัด Na⁺ และโปรตีนในอาหาร",
+     "source_key": "เฉลยลายมือ: Furosemide for edema; hydralazine / enalapril for HTN; limit Na, protein in diet"
+    }
+   ],
+   "key_concept": "APSGN: C3 ต่ำ C4 ปกติ; รักษาบวม/ความดัน + จำกัด Na"
+  },
+  {
+   "n": 2,
+   "page": 2,
+   "tags": [
+    "pyelonephritis"
+   ],
+   "case": "ผู้ป่วยหญิงอายุ 50 ปี ปวดบริเวณเอวทั้ง 2 ข้างมา 3 วัน ไม่ปัสสาวะเป็นเลือด ไม่มีฟอง ซักประวัติเพิ่มเติมมีกลั้นปัสสาวะมา 2 สัปดาห์. Vital sign: BT 39.0 °C, RR 24/min, PR 120/min, BP 105/70. HEENT: dry lip, sunken eyeball. Tenderness both costovertebral angle.",
+   "answer_status": "verified",
+   "items": [
+    {
+     "id": "2.1",
+     "prompt": "จงให้การวินิจฉัยโรค",
+     "format": "short",
+     "accepted": [
+      "acute pyelonephritis",
+      "pyelonephritis"
+     ],
+     "keywords_all": [
+      "pyelonephritis"
+     ],
+     "key_text": "Acute pyelonephritis (ไข้สูง + CVA tenderness ทั้งสองข้าง + กลั้นปัสสาวะ)",
+     "source_key": "เฉลยลายมือ: Dx. Acute pyelonephritis",
+     "explanation": "ต้นฉบับไม่ได้ระบุหัวข้อย่อย ผู้เฉลยเขียนเฉพาะการวินิจฉัย แนบหน้า First Aid เรื่อง pyelonephritis (neutrophils แทรก interstitium, ascending UTI จาก E. coli)"
+    }
+   ],
+   "key_concept": "acute pyelonephritis: ไข้ + ปวดเอว + CVA tenderness"
+  },
+  {
+   "n": 3,
+   "page": 3,
+   "tags": [
+    "UTI"
+   ],
+   "case": "เด็กชายอายุ 8 เดือน ไข้ 2 วัน. BT 38.5, PR 140, BP 85/55. UA: sp.gr 1.020, pH 5.5, glucose negative, protein negative, nitrite positive, leukocyte esterase 2+, bacteria 2+, WBC 10–20/HPF, RBC 0–1/HPF.",
+   "answer_status": "verified",
+   "items": [
+    {
+     "id": "3.1",
+     "prompt": "จงบอก UA ที่ผิดปกติ",
+     "format": "short",
+     "accepted": [
+      "nitrite positive",
+      "leukocyte esterase positive",
+      "bacteria",
+      "WBC"
+     ],
+     "keywords_all": [
+      "nitrite"
+     ],
+     "key_text": "Nitrite positive · leukocyte esterase positive · bacteria 2+ · WBC 10–20/HPF",
+     "source_key": "เฉลยลายมือ: Nitrite positive; leukocyte esterase positive; bacteria 2+; WBC 10–20/HPF"
+    },
+    {
+     "id": "3.2",
+     "prompt": "ส่งตรวจเพิ่มเติม",
+     "format": "short",
+     "accepted": [
+      "urine culture"
+     ],
+     "keywords_all": [
+      "culture"
+     ],
+     "key_text": "Urine culture",
+     "source_key": "เฉลยลายมือ: Urine culture"
+    },
+    {
+     "id": "3.3",
+     "prompt": "จงให้การวินิจฉัยโรค",
+     "format": "short",
+     "accepted": [
+      "UTI",
+      "urinary tract infection"
+     ],
+     "keywords_all": [
+      "urinary tract infection"
+     ],
+     "key_text": "Urinary tract infection",
+     "source_key": "เฉลยลายมือ: Urinary tract infection"
+    },
+    {
+     "id": "3.4",
+     "prompt": "Pathophysiology",
+     "format": "short",
+     "accepted": [
+      "normal flora",
+      "skin"
+     ],
+     "keywords_all": [
+      "sterile"
+     ],
+     "key_text": "ทางเดินปัสสาวะปกติปราศจากเชื้อ (sterile) เชื้อจากภายนอก/normal flora ที่ผิวหนังรอบทวาร colonize แล้วทำให้ติดเชื้อ",
+     "source_key": "เฉลยลายมือ: Urinary tract เป็น sterile ถ้ามี pathogen จากภายนอก/ Normal flora ของ skin colonize จะทำให้เกิด infection"
+    }
+   ],
+   "key_concept": "UTI เด็ก: nitrite+ LE+ bacteria; ส่ง urine culture"
+  },
+  {
+   "n": 4,
+   "page": 4,
+   "tags": [
+    "nephrotic syndrome",
+    "MCNS"
+   ],
+   "case": "เด็กชายอายุ 6 ปี บวมทั้งตัว 10 วัน เริ่มจากหนังตาหลังตื่นนอน น้ำหนักเพิ่ม 5 กก. ปัสสาวะมีฟอง ไม่มีอาการหอบเหนื่อย นอนราบได้ดี. BT 37, RR 20, PR 80, BP 95/65, BW 25 kg, puffy eyelids, pitting edema 2+, no ascites, no scrotal swelling. UA: sp.gr 1.030, pH 6, glucose negative, protein 4+, WBC 0–1/HPF, RBC 0–1/HPF.",
+   "answer_status": "verified",
+   "items": [
+    {
+     "id": "4.1",
+     "prompt": "จงให้การวินิจฉัยเบื้องต้น",
+     "format": "short",
+     "accepted": [
+      "nephrotic syndrome",
+      "minimal change disease"
+     ],
+     "keywords_all": [
+      "nephrotic"
+     ],
+     "key_text": "Nephrotic syndrome",
+     "source_key": "เฉลยลายมือ: Nephrotic syndrome",
+     "explanation": "protein 4+, บวม, ไม่มีเลือดในปัสสาวะ ในเด็ก = MCNS เป็นสาเหตุที่พบบ่อยที่สุด"
+    },
+    {
+     "id": "4.2.1",
+     "prompt": "ควรส่งอะไร: Electron microscopy → ตรวจ/ผลที่คาดว่าจะได้",
+     "format": "short",
+     "accepted": [
+      "renal biopsy",
+      "kidney biopsy"
+     ],
+     "keywords_all": [
+      "biopsy"
+     ],
+     "key_text": "Electron microscope ส่ง renal biopsy (ผู้เฉลยเขียนผล: immune complex deposit)",
+     "source_key": "เฉลยลายมือ: Electron microscope → renal biopsy → immune complex deposit",
+     "audit_note": "ในเด็ก nephrotic ที่ตอบสเตียรอยด์ (MCNS) EM จะพบ foot process effacement ไม่พบ immune complex deposit; บันทึกตามต้นฉบับ ผู้ตรวจควรยืนยัน"
+    },
+    {
+     "id": "4.2.2",
+     "prompt": "Liver function test → ส่งตรวจอะไร/ผลที่คาดว่าจะได้",
+     "format": "short",
+     "accepted": [
+      "albumin decreased",
+      "total protein decreased"
+     ],
+     "keywords_all": [
+      "albumin"
+     ],
+     "key_text": "ตรวจ blood/serum: ↓ total protein, ↓ albumin",
+     "source_key": "เฉลยลายมือ: Liver function test → blood/serum → ↓ total protein, ↓ albumin"
+    },
+    {
+     "id": "4.2.3",
+     "prompt": "Coagulation study → ส่งตรวจอะไร/ผลที่คาดว่าจะได้",
+     "format": "short",
+     "accepted": [
+      "PT",
+      "prothrombin time"
+     ],
+     "keywords_all": [
+      "prothrombin"
+     ],
+     "key_text": "ตรวจ blood/serum: prothrombin time (ผู้เฉลยเขียน ↑ prothrombin time)",
+     "source_key": "เฉลยลายมือ: Coagulation study → blood/serum → ↑ prothrombin time",
+     "audit_note": "nephrotic syndrome เสียโปรตีนเสียสมดุล clotting factor (ปกติ hypercoagulable) ผลตามที่ผู้เฉลยเขียน"
+    },
+    {
+     "id": "4.3",
+     "prompt": "จงให้การรักษา",
+     "format": "short",
+     "accepted": [
+      "prednisolone",
+      "steroid"
+     ],
+     "keywords_all": [
+      "prednisolone"
+     ],
+     "key_text": "Prednisolone",
+     "source_key": "เฉลยลายมือ: Prednisolone"
+    }
+   ],
+   "key_concept": "เด็ก nephrotic (protein 4+, ไม่มี hematuria) → prednisolone"
+  },
+  {
+   "n": 5,
+   "page": 5,
+   "tags": [
+    "endometrial hyperplasia"
+   ],
+   "case": "ผู้ป่วยหญิง 5 เดือนก่อนมีประจำเดือนมากขึ้น มีเลือดออกกะปริดกะปรอยระหว่างรอบเดือน. ประวัติ: เป็นเบาหวาน ใช้อินซูลิน 5 ปี รอบเดือน 60–90 วัน แต่งงาน 20 ปี ไม่คุมกำเนิด ไม่มีบุตร. ผลตรวจเยื่อบุโพรงมดลูก: increase of proliferative type gland with increased gland to stroma ratio, no cribriform architecture, no back-to-back appearance.",
+   "answer_status": "verified",
+   "items": [
+    {
+     "id": "5.1",
+     "prompt": "จงให้การวินิจฉัยโรค",
+     "format": "short",
+     "accepted": [
+      "endometrial hyperplasia"
+     ],
+     "keywords_all": [
+      "hyperplasia"
+     ],
+     "key_text": "Endometrial hyperplasia (ผู้เฉลยหมายเหตุ: rule out endometrioid carcinoma)",
+     "source_key": "เฉลยลายมือ: Endometrial hyperplasia (rule out endometrioid ca)"
+    },
+    {
+     "id": "5.2",
+     "prompt": "ปัจจัยเสี่ยง",
+     "format": "short",
+     "accepted": [
+      "PCOS",
+      "estrogen-producing tumor",
+      "HRT"
+     ],
+     "keywords_all": [
+      "PCOS"
+     ],
+     "key_text": "PCOS · estrogen-producing tumor · HRT (estrogen only regimen)",
+     "source_key": "เฉลยลายมือ: PCOS; Estrogen-producing tumor; HRT (Estrogen only regimen)"
+    },
+    {
+     "id": "5.3",
+     "prompt": "จงระบุกลไกการเกิด 2 กลไก",
+     "format": "short",
+     "accepted": [
+      "inactivation of PTEN",
+      "prolonged estrogen stimulation"
+     ],
+     "keywords_all": [
+      "PTEN",
+      "estrogen"
+     ],
+     "key_text": "Inactivation of PTEN gene · prolonged (unopposed) estrogen stimulation",
+     "source_key": "เฉลยลายมือ: Inactivation of PTEN gene; prolonged estrogen stimulation",
+     "mechanism": [
+      "ไม่ตกไข่/อ้วน → unopposed estrogen",
+      "estrogen กระตุ้น endometrium นานต่อเนื่อง",
+      "PTEN inactivation",
+      "endometrial hyperplasia"
+     ]
+    }
+   ],
+   "key_concept": "endometrial hyperplasia: unopposed estrogen + PTEN"
+  },
+  {
+   "n": 8,
+   "page": 6,
+   "tags": [
+    "PID"
+   ],
+   "case": "หญิงอายุ 50 ปี ปวดท้องหน่วงช่วงล่าง 3 วัน; 3 วันก่อนมีหนองออกจากช่องคลอด; 8 ชั่วโมงก่อนอ่อนเพลีย ปวดท้องมากขึ้นจึงมาโรงพยาบาล. เพศสัมพันธ์ครั้งแรก 25 ปี, คู่นอน 4 คน, มีลูก 3 คน (คนละพ่อทั้งหมด). Vital sign normal. Abdomen: normal ยกเว้น suprapubic tenderness. External urethral meatus/vagina: pus discharge. Cervix: no lesion, mild tenderness. Uterus normal size, tender. Adnexa: tender both sides.",
+   "answer_status": "verified",
+   "items": [
+    {
+     "id": "8.1",
+     "prompt": "จงให้การวินิจฉัยโรค",
+     "format": "short",
+     "accepted": [
+      "PID",
+      "pelvic inflammatory disease"
+     ],
+     "keywords_all": [
+      "pelvic inflammatory"
+     ],
+     "key_text": "Pelvic inflammatory disease (PID)",
+     "source_key": "เฉลยลายมือ: Pelvic inflammatory disease"
+    },
+    {
+     "id": "8.2",
+     "prompt": "บอกเชื้อก่อโรคมา 2 ชนิด",
+     "format": "short",
+     "accepted": [
+      "Neisseria gonorrhoeae",
+      "Chlamydia trachomatis"
+     ],
+     "keywords_all": [
+      "Neisseria",
+      "Chlamydia"
+     ],
+     "key_text": "Neisseria gonorrhoeae · Chlamydia trachomatis",
+     "source_key": "เฉลยลายมือ: Neisseria gonorrhoeae; Chlamydia trachomatis"
+    },
+    {
+     "id": "8.3",
+     "prompt": "บอกปัจจัยเสี่ยงในผู้ป่วยรายนี้",
+     "format": "short",
+     "accepted": [
+      "multiple partners",
+      "unprotected sex",
+      "history of STI"
+     ],
+     "keywords_all": [
+      "partners"
+     ],
+     "key_text": "Multiple partners · unprotected sex · history of STI",
+     "source_key": "เฉลยลายมือ: Multiple partners; unprotected sex; history of STI"
+    },
+    {
+     "id": "8.4",
+     "prompt": "วิธีป้องกันที่ดีที่สุด",
+     "format": "short",
+     "accepted": [
+      "condom",
+      "only one partner"
+     ],
+     "keywords_all": [
+      "condom"
+     ],
+     "key_text": "Condom · มีคู่นอนคนเดียว",
+     "source_key": "เฉลยลายมือ: condom; only 1 partner"
+    }
+   ],
+   "key_concept": "PID: N. gonorrhoeae/C. trachomatis; ป้องกัน: ถุงยาง + คู่เดียว"
+  },
+  {
+   "n": 14,
+   "page": 7,
+   "tags": [
+    "phimosis",
+    "paraphimosis"
+   ],
+   "case": "เด็ก A (อายุ 2 ปี) ภาพ phimosis · เด็ก B (อายุ 8 ปี) ปัสสาวะแล้วรีบไปเล่น ภาพ paraphimosis — จงตอบ การวินิจฉัย / กลไกการเกิดโรค พยาธิกำเนิด / การรักษา ของแต่ละราย",
+   "answer_status": "verified",
+   "items": [
+    {
+     "id": "14.1",
+     "prompt": "เด็ก A: จงให้การวินิจฉัยโรค",
+     "format": "short",
+     "accepted": [
+      "phimosis"
+     ],
+     "keywords_all": [
+      "phimosis"
+     ],
+     "key_text": "Phimosis",
+     "source_key": "เฉลยลายมือ: Phimosis",
+     "image": "img/KUB-48-KF-014.jpg",
+     "image_caption": "เด็ก A (อายุ 2 ปี) — ภาพ phimosis"
+    },
+    {
+     "id": "14.2",
+     "prompt": "เด็ก A: กลไกการเกิดโรค/พยาธิกำเนิด",
+     "format": "short",
+     "accepted": [
+      "inability to retract foreskin"
+     ],
+     "keywords_all": [
+      "retract"
+     ],
+     "key_text": "ไม่สามารถรูดหนังหุ้มปลายเปิดได้ (inability to retract foreskin)",
+     "source_key": "เฉลยลายมือ: inability to retract foreskin"
+    },
+    {
+     "id": "14.3",
+     "prompt": "เด็ก A: การรักษา",
+     "format": "short",
+     "accepted": [
+      "incision",
+      "circumcision"
+     ],
+     "keywords_all": [
+      "circumcision"
+     ],
+     "key_text": "Incision (dorsal slit) / circumcision",
+     "source_key": "เฉลยลายมือ: incision, circumcision"
+    },
+    {
+     "id": "14.4",
+     "prompt": "เด็ก B: จงให้การวินิจฉัยโรค",
+     "format": "short",
+     "accepted": [
+      "paraphimosis"
+     ],
+     "keywords_all": [
+      "paraphimosis"
+     ],
+     "key_text": "Paraphimosis",
+     "source_key": "เฉลยลายมือ: Paraphimosis",
+     "image": "img/KUB-48-KF-014b.jpg",
+     "image_caption": "เด็ก B (อายุ 8 ปี) — ภาพ paraphimosis (foreskin บวม)"
+    },
+    {
+     "id": "14.5",
+     "prompt": "เด็ก B: กลไกการเกิดโรค/พยาธิกำเนิด",
+     "format": "short",
+     "accepted": [
+      "foreskin can not be returned to normal position"
+     ],
+     "keywords_all": [
+      "foreskin"
+     ],
+     "key_text": "หนังหุ้มปลายที่รูดย้อนแล้วไม่กลับสู่ตำแหน่งเดิม รัดคอ glans ทำให้บวม",
+     "source_key": "เฉลยลายมือ: Foreskin can not be returned to normal position"
+    },
+    {
+     "id": "14.6",
+     "prompt": "เด็ก B: การรักษา",
+     "format": "short",
+     "accepted": [
+      "manual reduction"
+     ],
+     "keywords_all": [
+      "manual reduction"
+     ],
+     "key_text": "Manual reduction ร่วมกับควบคุมความปวดอย่างเพียงพอ (adequate pain control)",
+     "source_key": "เฉลยลายมือ: manual reduction with adequate pain control"
+    }
+   ],
+   "key_concept": "phimosis: รูดไม่ได้ → incision/circumcision · paraphimosis: รูดไม่กลับ → manual reduction",
+   "audit_note": "ข้อ 9–13 ต้นฉบับขีดฆ่า"
+  },
+  {
+   "n": 15,
+   "page": 8,
+   "tags": [
+    "cryptorchidism"
+   ],
+   "case": "เด็กชาย G อายุ 2 ปี ถุงอัณฑะไม่เท่ากัน. ตรวจร่างกายขาหนีบซ้ายและถุงอัณฑะ คลำไม่พบก้อนหรืออัณฑะ (มีรูปประกอบ)",
+   "answer_status": "verified",
+   "items": [
+    {
+     "id": "15.1",
+     "prompt": "จงให้การวินิจฉัย",
+     "format": "short",
+     "accepted": [
+      "undescended testis",
+      "cryptorchidism",
+      "UDT"
+     ],
+     "keywords_all": [
+      "undescended"
+     ],
+     "key_text": "Undescended testis (UDT) / cryptorchidism",
+     "source_key": "เฉลยลายมือ: Undescended testis (UDT) / Cryptorchidism"
+    },
+    {
+     "id": "15.2",
+     "prompt": "จงระบุภาวะแทรกซ้อน 3 อย่าง",
+     "format": "short",
+     "accepted": [
+      "testicular cancer",
+      "infertility",
+      "testicular torsion"
+     ],
+     "keywords_all": [
+      "infertility",
+      "torsion"
+     ],
+     "key_text": "Testicular cancer · infertility · testicular torsion",
+     "source_key": "เฉลยลายมือ: testicular cancer; infertility; testicular torsion"
+    }
+   ],
+   "key_concept": "UDT: มะเร็ง/ infertility/ torsion",
+   "image": "img/KUB-48-KF-015.jpg",
+   "image_caption": "ภาพถุงอัณฑะข้างซ้ายว่าง"
+  },
+  {
+   "n": 16,
+   "page": 9,
+   "tags": [
+    "laparoscopy",
+    "cryptorchidism"
+   ],
+   "case": "เด็กชาย E อายุ 1 ขวบ คลำไม่พบก้อนข้างซ้าย การตรวจกล้องทางช่องท้อง (laparoscopy) ดังภาพ จงลากเส้นเชื่อมโยงชื่อในกรอบสี่เหลี่ยมและโครงสร้างให้ถูกต้อง อย่างน้อย 4 โครงสร้าง (ชื่อ: Testis, ductus deferens, spermatic cord, peritoneum, testicular vessels, external iliac vessels)",
+   "answer_status": "verified",
+   "items": [
+    {
+     "id": "16.1",
+     "prompt": "ภาพ A: โครงสร้างที่วงไว้คืออะไร",
+     "format": "short",
+     "accepted": [
+      "spermatic cord"
+     ],
+     "keywords_all": [
+      "spermatic cord"
+     ],
+     "key_text": "Spermatic cord",
+     "source_key": "เฉลยลายมือ: spermatic cord (วงกลมในภาพ A)"
+    },
+    {
+     "id": "16.2",
+     "prompt": "ภาพ C: โครงสร้างที่ชี้คืออะไร",
+     "format": "short",
+     "accepted": [
+      "testis"
+     ],
+     "keywords_all": [
+      "testis"
+     ],
+     "key_text": "Testis (อัณฑะที่อยู่ในช่องท้อง)",
+     "source_key": "เฉลยลายมือ: testis (เส้นชี้ในภาพ C)"
+    },
+    {
+     "id": "16.3",
+     "prompt": "ระบุโครงสร้างที่เห็นเพิ่มอีก 2 โครงสร้างจากรายการ (ใช้ภาพเฉลยช่วย)",
+     "format": "short",
+     "accepted": [
+      "ductus deferens",
+      "vas deferens",
+      "testicular vessels",
+      "spermatic vessels",
+      "external iliac vessels",
+      "peritoneum"
+     ],
+     "keywords_all": [
+      "ductus deferens"
+     ],
+     "key_text": "Ductus deferens (vas) · testicular (spermatic) vessels · external iliac vessels · peritoneum",
+     "source_key": "ผู้เฉลยแนบภาพที่มีป้ายกำกับ: vas, spermatic vessels, ext. iliac vessels, deep ring, inferior epigastric, medial umbilical ligament",
+     "key_image": "img/KUB-48-KF-016b-key.jpg",
+     "key_image_caption": "ภาพ laparoscope ช่องขาหนีบพร้อมป้ายชื่อโครงสร้าง"
+    }
+   ],
+   "key_concept": "laparoscopy ช่องขาหนีบ: spermatic cord, vas, testicular vessels, external iliac vessels",
+   "image": "img/KUB-48-KF-016.jpg",
+   "image_caption": "ภาพ laparoscope A, B, C"
+  }
+ ]
+}
