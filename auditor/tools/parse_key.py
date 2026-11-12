@@ -76,6 +76,8 @@ def circles_of(page):
             out.append(r)
         elif d.get("fill") and not d.get("color") and 10 <= r.width <= 26 and 20 <= r.height <= 38 and r.height >= r.width * 1.2 and len(d.get("items", [])) >= 100:
             out.append(r)  # dark hand-drawn ring (Respiratory 49): unfilled stroke, roughly letter-sized
+        elif c and max(c) < 0.15 and not d.get("fill") and 12 <= r.width <= 32 and 26 <= r.height <= 52 and r.x0 < 95 and 5 <= len(d.get("items", [])) <= 24:
+            out.append(r)  # black hand-drawn check slash across the option letter (Respiratory 48)
     return out
 
 
@@ -92,6 +94,8 @@ def parse(set_id, bare_numbers=False):
             if HEADER.match(txt):
                 continue
             m = Q_START.match(txt) or (bare_numbers and re.fullmatch(r"\s*(\d{1,3})\s*", txt))
+            if m and int(m.group(1)) == 1 and out and all(not v["score"] for v in out.values()) and rect.x0 < 100:
+                out.clear(); expect = 1  # numbered instructions on the cover page looked like questions 1..n
             if m and expect <= int(m.group(1)) <= expect + 2 and rect.x0 < 100:
                 cur = m.group(1)
                 expect = int(cur) + 1

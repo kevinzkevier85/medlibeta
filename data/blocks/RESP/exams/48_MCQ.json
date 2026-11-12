@@ -1,0 +1,4358 @@
+{
+ "meta": {
+  "set_id": "48_MCQ",
+  "block": "RESP",
+  "cohort": 48,
+  "type": "MCQ",
+  "title": "MCQ Respiratory · Med PSU 48",
+  "n_source_items": 100,
+  "skipped": [],
+  "generated_by": "auditor/tools/build_outputs.py — do not edit by hand"
+ },
+ "questions": [
+  {
+   "id": "RESP-48-MCQ-001",
+   "block": "RESP",
+   "cohort": 48,
+   "n": 1,
+   "type": "MCQ",
+   "stem": "Which of the following mechanisms is responsible for an increase in ventilation during first minute of aerobic exercise",
+   "options": {
+    "A": "Decreased plasma K+",
+    "B": "Activation of thermoreceptor",
+    "C": "Increase arterial PCO2",
+    "D": "Activation of proprioreceptor",
+    "E": "Activation of peripheral chemoreceptor"
+   },
+   "answer": "D",
+   "answer_status": "verified",
+   "explanation": "นาทีแรกของการออกกำลังกาย ventilation เพิ่มจาก proprioceptor ที่กล้ามเนื้อ/ข้อส่งสัญญาณไป respiratory center (neural drive)",
+   "refs": [
+    {
+     "paper": "MCQ48",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "MCQ48-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "resp_48_MCQ_001",
+   "key_concept": "• ออกกำลังกาย: neural/proprioceptive ก่อน\n• ต่อมา: K⁺, temperature, metabolites\n• ABG แทบไม่เปลี่ยน",
+   "option_why": {
+    "A": "K⁺ plasma เพิ่มไม่ลด และเป็นกลไกช่วงหลัง",
+    "B": "thermoreceptor ตอบช้า (ออกกำลังนาน)",
+    "C": "PaCO₂ ยังไม่เปลี่ยนในนาทีแรก",
+    "D": "✓ proprioceptor activation",
+    "E": "peripheral chemoreceptor ตอบเมื่อ hypoxia"
+   }
+  },
+  {
+   "id": "RESP-48-MCQ-002",
+   "block": "RESP",
+   "cohort": 48,
+   "n": 2,
+   "type": "MCQ",
+   "stem": "During mountain climbing, the barometric pressure is 620 mmHg. What is the subject's PAO2 (in mmHg)?",
+   "options": {
+    "A": "100",
+    "B": "150",
+    "C": "130",
+    "D": "160",
+    "E": "120"
+   },
+   "answer": "E",
+   "answer_status": "verified",
+   "explanation": "PAO₂ = FiO₂(PB − PH₂O) = 0.21 × (620 − 47) = 120 mmHg",
+   "refs": [
+    {
+     "paper": "MCQ48",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "MCQ48-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "resp_48_MCQ_002",
+   "key_concept": "• PiO₂ = FiO₂(PB − 47)\n• PB ต่ำ → PiO₂ ต่ำ",
+   "option_why": {
+    "A": "100 ต่ำเกิน",
+    "B": "150 คือที่ระดับน้ำทะเล (ไม่หัก PH₂O)",
+    "C": "130 ไม่ตรงสูตร",
+    "D": "160 เกิน",
+    "E": "✓ ≈ 120 mmHg"
+   }
+  },
+  {
+   "id": "RESP-48-MCQ-003",
+   "block": "RESP",
+   "cohort": 48,
+   "n": 3,
+   "type": "MCQ",
+   "stem": "Which of the following conditions causes an increase in V/Q ratio?",
+   "options": {
+    "A": "Asthmatic attack",
+    "B": "Pulmonary embolism",
+    "C": "Airway obstruction",
+    "D": "Pulmonary edema",
+    "E": "Atelectasis"
+   },
+   "answer": "B",
+   "answer_status": "verified",
+   "explanation": "V/Q เพิ่มเมื่อ perfusion ลดมากกว่า ventilation เช่น pulmonary embolism (dead space)",
+   "refs": [
+    {
+     "paper": "MCQ48",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "MCQ48-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "resp_48_MCQ_003",
+   "key_concept": "• V/Q ↑: PE, hemorrhage\n• V/Q ↓: airway obstruction, atelectasis",
+   "option_why": {
+    "A": "asthma ลด ventilation → V/Q ลด",
+    "B": "✓ pulmonary embolism: Q ลด V/Q เพิ่ม",
+    "C": "airway obstruction ทำ V/Q ลด",
+    "D": "pulmonary edema ลด V",
+    "E": "atelectasis V = 0 (shunt)"
+   }
+  },
+  {
+   "id": "RESP-48-MCQ-004",
+   "block": "RESP",
+   "cohort": 48,
+   "n": 4,
+   "type": "MCQ",
+   "stem": "Which of the following is higher in elderly man when compared with young adult man?",
+   "options": {
+    "A": "Forced expiratory volume in 1 second",
+    "B": "Vital capacity",
+    "C": "Forced vital capacity",
+    "D": "Airway diameter",
+    "E": "Residual volume"
+   },
+   "answer": "E",
+   "answer_status": "verified",
+   "explanation": "ผู้สูงอายุสูญเสีย elastic recoil ทำให้ residual volume เพิ่ม ส่วน FEV₁, VC, FVC ลด",
+   "refs": [
+    {
+     "paper": "MCQ48",
+     "pages": [
+      3
+     ]
+    },
+    {
+     "paper": "MCQ48-KEY",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "resp_48_MCQ_004",
+   "key_concept": "• อายุมาก: recoil ↓ → RV ↑\n• chest wall แข็งขึ้น\n• VC, FEV₁ ↓",
+   "option_why": {
+    "A": "FEV₁ ลดตามอายุ",
+    "B": "VC ลด",
+    "C": "FVC ลด",
+    "D": "airway diameter แคบลง",
+    "E": "✓ residual volume เพิ่ม"
+   }
+  },
+  {
+   "id": "RESP-48-MCQ-005",
+   "block": "RESP",
+   "cohort": 48,
+   "n": 5,
+   "type": "MCQ",
+   "stem": "Deep and slow breathing pattern would be occurred in a person who has severe injury brainstem in which brain area?",
+   "options": {
+    "A": "Medulla oblongata",
+    "B": "Upper pons",
+    "C": "Thalamus",
+    "D": "Midbrain",
+    "E": "Cerebellum"
+   },
+   "answer": "B",
+   "answer_status": "verified",
+   "explanation": "รอยโรค brainstem แล้ว deep slow (apneustic) breathing เกิดจากรอยโรค pons (ตามเฉลยต้นฉบับ B: upper pons)",
+   "refs": [
+    {
+     "paper": "MCQ48",
+     "pages": [
+      3
+     ]
+    },
+    {
+     "paper": "MCQ48-KEY",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "resp_48_MCQ_005",
+   "key_concept": "• pneumotaxic center จำกัดการหายใจเข้า\n• ถูกตัด + vagotomy → apneusis",
+   "option_why": {
+    "A": "medulla เป็น DRG/VRG",
+    "B": "✓ upper pons (pneumotaxic/apneustic area)",
+    "C": "thalamus ไม่เกี่ยว",
+    "D": "midbrain ไม่เกี่ยว",
+    "E": "cerebellum ไม่เกี่ยว"
+   }
+  },
+  {
+   "id": "RESP-48-MCQ-006",
+   "block": "RESP",
+   "cohort": 48,
+   "n": 6,
+   "type": "MCQ",
+   "stem": "Which of the following is found in the pulmonary function test from the patient with chronic obstructive pulmonary disease COPD",
+   "options": {
+    "A": "Increased FEV1 & normal lung compliance",
+    "B": "Normal FEV1 & decreased lung compliance",
+    "C": "Decreased FEV1 & normal lung compliance",
+    "D": "Increased FEV1 & increased lung compliance",
+    "E": "Decreased FEV1 & decreased lung compliance"
+   },
+   "answer": "C",
+   "answer_status": "verified",
+   "explanation": "COPD: FEV₁ ลดลง compliance อาจปกติ (chronic bronchitis) หรือเพิ่ม (emphysema)",
+   "refs": [
+    {
+     "paper": "MCQ48",
+     "pages": [
+      3
+     ]
+    },
+    {
+     "paper": "MCQ48-KEY",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "resp_48_MCQ_006",
+   "key_concept": "• COPD: FEV₁/FVC ↓\n• chronic bronchitis: compliance ปกติ\n• emphysema: compliance ↑",
+   "option_why": {
+    "A": "FEV₁ ต้องลด",
+    "B": "FEV₁ ปกติไม่ใช่ COPD",
+    "C": "✓ decreased FEV₁ + normal compliance",
+    "D": "FEV₁ ไม่เพิ่ม",
+    "E": "compliance ลด = restrictive"
+   }
+  },
+  {
+   "id": "RESP-48-MCQ-007",
+   "block": "RESP",
+   "cohort": 48,
+   "n": 7,
+   "type": "MCQ",
+   "stem": "A 6 year old child has history of snoring for months. Nasal endoscopy reveals huge soft tissue occupied nasopharynx. What is this structure?",
+   "options": {
+    "A": "Pharyngeal tonsil",
+    "B": "Swollen middle turbinate",
+    "C": "Nasal polyp",
+    "D": "Lingual tonsil",
+    "E": "Palatine tonsil"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "ก้อนนุ่มใหญ่ใน nasopharynx เด็ก 6 ปี นอนกรน = adenoid (pharyngeal tonsil)",
+   "refs": [
+    {
+     "paper": "MCQ48",
+     "pages": [
+      4
+     ]
+    },
+    {
+     "paper": "MCQ48-KEY",
+     "pages": [
+      4
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "resp_48_MCQ_007",
+   "key_concept": "• adenoid hypertrophy: snoring, mouth breathing\n• พบในเด็ก",
+   "option_why": {
+    "A": "✓ pharyngeal tonsil (adenoid)",
+    "B": "middle turbinate อยู่ในโพรงจมูก",
+    "C": "nasal polyp อยู่ในจมูก",
+    "D": "lingual tonsil โคนลิ้น",
+    "E": "palatine tonsil อยู่ที่ช่องปาก"
+   }
+  },
+  {
+   "id": "RESP-48-MCQ-008",
+   "block": "RESP",
+   "cohort": 48,
+   "n": 8,
+   "type": "MCQ",
+   "stem": "Which of the following is the most important factor limiting flow rate during a forced expiration from total lung capacity?",
+   "options": {
+    "A": "Constriction of bronchial smooth muscle",
+    "B": "Compression of airway",
+    "C": "Elasticity of chest wall",
+    "D": "Rate of expiratory muscles contraction",
+    "E": "Action of diaphragm"
+   },
+   "answer": "B",
+   "answer_status": "verified",
+   "explanation": "ตอน forced expiration flow ถูกจำกัดด้วยการบีบของทางเดินหายใจ (dynamic compression) = effort-independent",
+   "refs": [
+    {
+     "paper": "MCQ48",
+     "pages": [
+      4
+     ]
+    },
+    {
+     "paper": "MCQ48-KEY",
+     "pages": [
+      4
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "resp_48_MCQ_008",
+   "key_concept": "• effort-independent portion\n• airway ยุบเมื่อ Ppl > Pairway",
+   "option_why": {
+    "A": "bronchial smooth muscle ไม่ใช่ตัวจำกัดหลัก",
+    "B": "✓ compression of airway",
+    "C": "chest wall elasticity ไม่ใช่",
+    "D": "ความเร็วการหดของกล้ามเนื้อไม่เพิ่ม flow",
+    "E": "diaphragm ไม่ใช่"
+   }
+  },
+  {
+   "id": "RESP-48-MCQ-009",
+   "block": "RESP",
+   "cohort": 48,
+   "n": 9,
+   "type": "MCQ",
+   "stem": "Which of the following causes a decrease in arterial PO2 in asthmatic patient?",
+   "options": {
+    "A": "Increased alveolar PCO2",
+    "B": "Increased pulmonary blood flow",
+    "C": "Decreased alveolar surface area",
+    "D": "Decreased alveolar-capillary PO2 difference",
+    "E": "Increased respiratory membrane thickness"
+   },
+   "answer": "E",
+   "answer_status": "disputed",
+   "explanation": "เฉลยต้นฉบับ E (membrane หนา) AI เห็นว่าในหืด PaO₂ ลดจาก V/Q mismatch/ alveolar PCO₂ เพิ่ม (A)\n⚠️ เฉลยขัดกับ AI",
+   "refs": [
+    {
+     "paper": "MCQ48",
+     "pages": [
+      4
+     ]
+    },
+    {
+     "paper": "MCQ48-KEY",
+     "pages": [
+      4
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "resp_48_MCQ_009",
+   "ai_answer": "A",
+   "key_concept": "• asthma: V/Q mismatch → hypoxemia\n• membrane หนา = fibrosis/edema\n• ข้อนี้เฉลยต้นฉบับขัดกับ AI",
+   "option_why": {
+    "A": "alveolar PCO₂ เพิ่มจาก hypoventilation ทำ PO₂ ลด (AI เลือกตัวนี้)",
+    "B": "pulmonary blood flow เพิ่มไม่ทำให้ PO₂ ลด",
+    "C": "alveolar surface area ลดคือ emphysema",
+    "D": "alveolar–capillary PO₂ difference ลดทำ diffusion ลด",
+    "E": "✓ respiratory membrane หนา (ตามเฉลยต้นฉบับ)"
+   }
+  },
+  {
+   "id": "RESP-48-MCQ-010",
+   "block": "RESP",
+   "cohort": 48,
+   "n": 10,
+   "type": "MCQ",
+   "stem": "Which of the following id the volume of gas in the lungs at the end of maximum inspiration?",
+   "options": {
+    "A": "Expiratory reserve volume",
+    "B": "Total lung capacity",
+    "C": "Residual volume",
+    "D": "Inspiratory reserve volume",
+    "E": "Functional residual capacity"
+   },
+   "answer": "B",
+   "answer_status": "verified",
+   "explanation": "ปริมาตรอากาศในปอดเมื่อสิ้นสุดการหายใจเข้าเต็มที่ = TLC",
+   "refs": [
+    {
+     "paper": "MCQ48",
+     "pages": [
+      5
+     ]
+    },
+    {
+     "paper": "MCQ48-KEY",
+     "pages": [
+      5
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "resp_48_MCQ_010",
+   "key_concept": "• TLC = VC + RV\n• TLC = IRV + TV + ERV + RV",
+   "option_why": {
+    "A": "ERV คือปริมาตรที่หายใจออกเพิ่ม",
+    "B": "✓ TLC",
+    "C": "RV คือที่เหลือหลัง forced expiration",
+    "D": "IRV คือปริมาตรหายใจเข้าเพิ่ม",
+    "E": "FRC คือหลังหายใจออกปกติ"
+   }
+  },
+  {
+   "id": "RESP-48-MCQ-011",
+   "block": "RESP",
+   "cohort": 48,
+   "n": 11,
+   "type": "MCQ",
+   "stem": "In a hematoxylin & eosin-stained section of the interalveolar septum, as shown in the picture. Which of the following is the function of the pointed cell?",
+   "options": {
+    "A": "Angiotensin converting enzyme production",
+    "B": "Mucus secretion",
+    "C": "Gas exchange",
+    "D": "Phagocytosis",
+    "E": "Surfactant production"
+   },
+   "answer": "E",
+   "answer_status": "verified",
+   "explanation": "เซลล์ที่ลูกศรชี้ใน interalveolar septum ทำหน้าที่ผลิต surfactant (pneumocyte type II)",
+   "refs": [
+    {
+     "paper": "MCQ48",
+     "pages": [
+      5
+     ]
+    },
+    {
+     "paper": "MCQ48-KEY",
+     "pages": [
+      5
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "resp_48_MCQ_011",
+   "key_concept": "• type II: cuboidal, lamellar bodies\n• type I: gas exchange 95% ของพื้นที่",
+   "option_why": {
+    "A": "ACE ผลิตโดย endothelial cell",
+    "B": "mucus สร้างโดย goblet cell",
+    "C": "gas exchange คือ type I",
+    "D": "phagocytosis คือ macrophage",
+    "E": "✓ surfactant production (type II)"
+   },
+   "image": "img/RESP-48-MCQ-011.jpg",
+   "image_caption": "ภาพ H&E interalveolar septum (ลูกศรชี้เซลล์)"
+  },
+  {
+   "id": "RESP-48-MCQ-012",
+   "block": "RESP",
+   "cohort": 48,
+   "n": 12,
+   "type": "MCQ",
+   "stem": "Which of the following changes occurs during expiration?",
+   "options": {
+    "A": "Alveolar pressure is lower than atmospheric pressure",
+    "B": "Increased surface tension",
+    "C": "The volume in the lungs is less the the functional residual capacity",
+    "D": "Transpulmonary pressure is negative",
+    "E": "Intrapleural pressure is more negative"
+   },
+   "answer": "D",
+   "answer_status": "disputed",
+   "explanation": "ระหว่างหายใจออก (เฉลย D: transpulmonary pressure ลบ; AI เลือก C: ปริมาตรปอดน้อยกว่า FRC)\n⚠️ เฉลยขัดกับ AI",
+   "refs": [
+    {
+     "paper": "MCQ48",
+     "pages": [
+      6
+     ]
+    },
+    {
+     "paper": "MCQ48-KEY",
+     "pages": [
+      6
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "resp_48_MCQ_012",
+   "ai_answer": "C",
+   "key_concept": "• expiration: Palv > Patm\n• Ptp = Palv − Ppl เป็นบวก\n• ข้อนี้เฉลยต้นฉบับขัดกับ AI",
+   "option_why": {
+    "A": "alveolar pressure สูงกว่าบรรยากาศตอนหายใจออก",
+    "B": "surface tension ไม่เพิ่ม",
+    "C": "ปริมาตรน้อยกว่า FRC ในการหายใจออกแรง (AI เลือกตัวนี้)",
+    "D": "✓ transpulmonary pressure ติดลบ (ตามเฉลยต้นฉบับ; Ptp ปกติเป็นบวก)",
+    "E": "intrapleural pressure ติดลบน้อยลงไม่ใช่มากขึ้น"
+   }
+  },
+  {
+   "id": "RESP-48-MCQ-013",
+   "block": "RESP",
+   "cohort": 48,
+   "n": 13,
+   "type": "MCQ",
+   "stem": "When the V/Q ratio of the lung decreased, what alveolar gas tension would expect?",
+   "options": {
+    "A": "Decreased PN2",
+    "B": "Increased PCO2",
+    "C": "Increased both PN2 and PCO2",
+    "D": "Increased both PO2 and PCO2",
+    "E": "Increased PO2"
+   },
+   "answer": "E",
+   "answer_status": "disputed",
+   "explanation": "V/Q ลด → PAO₂ ลด PACO₂ เพิ่ม (เฉลยต้นฉบับ E: increased PO₂; AI เลือก B: PCO₂ เพิ่ม)\n⚠️ เฉลยขัดกับ AI",
+   "refs": [
+    {
+     "paper": "MCQ48",
+     "pages": [
+      6
+     ]
+    },
+    {
+     "paper": "MCQ48-KEY",
+     "pages": [
+      6
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "resp_48_MCQ_013",
+   "ai_answer": "B",
+   "key_concept": "• V/Q ↓: PAO₂ ↓ PACO₂ ↑\n• ข้อนี้เฉลยต้นฉบับขัดกับ AI",
+   "option_why": {
+    "A": "PN₂ ไม่ลด",
+    "B": "PCO₂ เพิ่มตามหลักสรีรวิทยา (AI เลือกตัวนี้)",
+    "C": "PN₂ ไม่เพิ่ม",
+    "D": "PO₂ ไม่เพิ่ม",
+    "E": "✓ increased PO₂ (ตามเฉลยต้นฉบับ)"
+   }
+  },
+  {
+   "id": "RESP-48-MCQ-014",
+   "block": "RESP",
+   "cohort": 48,
+   "n": 14,
+   "type": "MCQ",
+   "stem": "Which of the following is the most form of CO2 transport in venous blood?",
+   "options": {
+    "A": "Dissolved CO2 in erythrocytes",
+    "B": "Carboxyhemoglobin in erythrocytes",
+    "C": "H2CO3 in plasma",
+    "D": "Dissolved CO2 in plasma",
+    "E": "HCO3- in plasma"
+   },
+   "answer": "E",
+   "answer_status": "verified",
+   "explanation": "CO₂ ส่วนใหญ่ (60–70%) ขนส่งเป็น HCO₃⁻ ใน plasma",
+   "refs": [
+    {
+     "paper": "MCQ48",
+     "pages": [
+      6
+     ]
+    },
+    {
+     "paper": "MCQ48-KEY",
+     "pages": [
+      6
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "resp_48_MCQ_014",
+   "key_concept": "• 70% HCO₃⁻ · 23% carbamino-Hb · 7% dissolved\n• chloride shift",
+   "mechanism": [
+    "CO₂ เข้า RBC",
+    "carbonic anhydrase → H₂CO₃",
+    "H₂CO₃ → H⁺ + HCO₃⁻",
+    {
+     "s": "HCO₃⁻ ออกสู่ plasma",
+     "answer": true
+    }
+   ],
+   "option_why": {
+    "A": "dissolved ใน RBC น้อย",
+    "B": "carbamino-Hb ~20–30% (ในตัวเลือกเขียนผิดเป็น carboxy-Hb)",
+    "C": "H₂CO₃ ปริมาณน้อย",
+    "D": "dissolved ใน plasma ~7–10%",
+    "E": "✓ HCO₃⁻ ใน plasma"
+   }
+  },
+  {
+   "id": "RESP-48-MCQ-015",
+   "block": "RESP",
+   "cohort": 48,
+   "n": 15,
+   "type": "MCQ",
+   "stem": "Which of the following is the best method for preventing aspiration?",
+   "options": {
+    "A": "Continuing sedating medications",
+    "B": "Deep breathing exercise",
+    "C": "In line stabilizing during intubation",
+    "D": "Minimizing the time patients are supine by maintaining head-of-bed elevation at 30-40 degree",
+    "E": "Maintaining endotracheal tube pressures less than 20 cmH2O"
+   },
+   "answer": "D",
+   "answer_status": "verified",
+   "explanation": "วิธีป้องกันการสำลักที่ดีที่สุดคือลดเวลานอนราบโดยยกหัวเตียง",
+   "refs": [
+    {
+     "paper": "MCQ48",
+     "pages": [
+      7
+     ]
+    },
+    {
+     "paper": "MCQ48-KEY",
+     "pages": [
+      7
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "resp_48_MCQ_015",
+   "key_concept": "• head-of-bed 30–45° ลด aspiration/VAP\n• เลี่ยง sedation",
+   "option_why": {
+    "A": "ยากล่อมประสาทเพิ่มเสี่ยง",
+    "B": "deep breathing ไม่เกี่ยวกับสำลัก",
+    "C": "in-line stabilization เกี่ยวกับ C-spine",
+    "D": "✓ ยกหัวเตียง/ลดเวลานอนราบ",
+    "E": "cuff pressure ต่ำอาจรั่ว"
+   }
+  },
+  {
+   "id": "RESP-48-MCQ-016",
+   "block": "RESP",
+   "cohort": 48,
+   "n": 16,
+   "type": "MCQ",
+   "stem": "Which of the following would be occurred if there werw complete brainstem transection above pons?",
+   "options": {
+    "A": "The voluntary control of breathing disappears",
+    "B": "Only the inhalation occurs",
+    "C": "The Hering-Breuler reflex will abolish",
+    "D": "Central chemoreceptors cannot control the ventilation",
+    "E": "Peripheral chemoreceptors cannot control the ventilation"
+   },
+   "answer": "D",
+   "answer_status": "disputed",
+   "explanation": "transection เหนือ pons: ศูนย์ medulla ยังคุมจังหวะ; ตามเฉลยต้นฉบับ D (AI เลือก A: voluntary control หายไป)\n⚠️ เฉลยขัดกับ AI",
+   "refs": [
+    {
+     "paper": "MCQ48",
+     "pages": [
+      7
+     ]
+    },
+    {
+     "paper": "MCQ48-KEY",
+     "pages": [
+      7
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "resp_48_MCQ_016",
+   "ai_answer": "A",
+   "key_concept": "• ตัดเหนือ pons: ยังมีจังหวะหายใจ\n• ตัดใต้ medulla: หายใจหยุด\n• ข้อนี้เฉลยต้นฉบับขัดกับ AI",
+   "option_why": {
+    "A": "voluntary control หายไปเพราะตัดทางจาก cortex (AI เลือกตัวนี้)",
+    "B": "ยังหายใจเข้า-ออกได้",
+    "C": "Hering-Breuer ยังทำงานผ่าน vagus",
+    "D": "✓ central chemoreceptor ไม่ควบคุม ventilation (ตามเฉลยต้นฉบับ)",
+    "E": "peripheral chemoreceptor ยังทำงาน"
+   }
+  },
+  {
+   "id": "RESP-48-MCQ-017",
+   "block": "RESP",
+   "cohort": 48,
+   "n": 17,
+   "type": "MCQ",
+   "stem": "Which of the following areas present the highest airway resistance during normal breathing?",
+   "options": {
+    "A": "Carina",
+    "B": "Bronchus",
+    "C": "Medium sized-bronchioles",
+    "D": "Alveolar duct",
+    "E": "Trachea"
+   },
+   "answer": "C",
+   "answer_status": "verified",
+   "explanation": "airway resistance สูงสุดที่ medium-sized bronchi/bronchioles ในคนปกติ (ตามเฉลย C)",
+   "refs": [
+    {
+     "paper": "MCQ48",
+     "pages": [
+      7
+     ]
+    },
+    {
+     "paper": "MCQ48-KEY",
+     "pages": [
+      7
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "resp_48_MCQ_017",
+   "key_concept": "• resistance สูงที่ generation 4–8\n• small airways รวมพื้นที่มาก R ต่ำ",
+   "option_why": {
+    "A": "carina ใหญ่ resistance ต่ำ",
+    "B": "bronchus ใหญ่ resistance ปานกลาง",
+    "C": "✓ medium-sized bronchioles",
+    "D": "alveolar duct พื้นที่รวมใหญ่ resistance ต่ำ",
+    "E": "trachea ใหญ่ resistance ต่ำ"
+   }
+  },
+  {
+   "id": "RESP-48-MCQ-018",
+   "block": "RESP",
+   "cohort": 48,
+   "n": 18,
+   "type": "MCQ",
+   "stem": "A normal subject has respiratory rate 10 times/min, total ventilation 8 L/min and anatomical dead space 200 ml. What is his alveolar ventilation?",
+   "options": {
+    "A": "7.2",
+    "B": "7.8",
+    "C": "6.0",
+    "D": "8.2",
+    "E": "0.72"
+   },
+   "answer": "B",
+   "answer_status": "disputed",
+   "explanation": "VA = (VT − VD) × f; VT = 0.8 L → VA = (0.8 − 0.2) × 10 = 6.0 L/min (เฉลยต้นฉบับ B คำนวณ VT ผิด AI เลือก C)\n⚠️ เฉลยขัดกับ AI",
+   "refs": [
+    {
+     "paper": "MCQ48",
+     "pages": [
+      8
+     ]
+    },
+    {
+     "paper": "MCQ48-KEY",
+     "pages": [
+      8
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "resp_48_MCQ_018",
+   "ai_answer": "C",
+   "key_concept": "• VE = VT × f\n• VT = 8/10 = 0.8 L\n• ข้อนี้เฉลยต้นฉบับขัดกับ AI",
+   "option_why": {
+    "A": "7.2 ไม่ตรงสูตร",
+    "B": "✓ 7.8 (ตามเฉลยต้นฉบับ แต่ใช้ 8 L เป็น VT ผิด)",
+    "C": "6.0 L/min ถูกตามสูตร (AI เลือกตัวนี้)",
+    "D": "8.2 เกิน",
+    "E": "0.72 หน่วยผิด"
+   }
+  },
+  {
+   "id": "RESP-48-MCQ-019",
+   "block": "RESP",
+   "cohort": 48,
+   "n": 19,
+   "type": "MCQ",
+   "stem": "A 30 year old man is sitting upright during dental procedure. A small piece of tooth is aspirated. Which of the following is the most common affected site?",
+   "options": {
+    "A": "Lingula",
+    "B": "Right lower lobar bronchus",
+    "C": "left lower lobar bronchus",
+    "D": "Right upper lobar bronchus",
+    "E": "Left upper lobar bronchus"
+   },
+   "answer": "B",
+   "answer_status": "verified",
+   "explanation": "สำลักตอนนั่ง วัตถุลง right lower lobar bronchus (กว้าง สั้น ตรง)",
+   "refs": [
+    {
+     "paper": "MCQ48",
+     "pages": [
+      8
+     ]
+    },
+    {
+     "paper": "MCQ48-KEY",
+     "pages": [
+      8
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "resp_48_MCQ_019",
+   "key_concept": "• นั่ง/ยืน → RLL\n• นอนหงาย → RLL superior",
+   "option_why": {
+    "A": "lingula อยู่ซ้าย",
+    "B": "✓ right lower lobar bronchus",
+    "C": "left lower bronchus เฉียงกว่า",
+    "D": "right upper พบเมื่อนอนตะแคง",
+    "E": "left upper พบน้อย"
+   }
+  },
+  {
+   "id": "RESP-48-MCQ-020",
+   "block": "RESP",
+   "cohort": 48,
+   "n": 20,
+   "type": "MCQ",
+   "stem": "Which of the following factors limit O2 diffusion in the normal subject?",
+   "options": {
+    "A": "Alveolar temperature",
+    "B": "Alveolar surface area",
+    "C": "Blood pressure",
+    "D": "Hematocrit",
+    "E": "Alveolar thickness"
+   },
+   "answer": "B",
+   "answer_status": "disputed",
+   "explanation": "ปัจจัยจำกัด O₂ diffusion ใน normal subject: เฉลยต้นฉบับ B (surface area) AI เลือก E (membrane thickness)\n⚠️ เฉลยขัดกับ AI",
+   "refs": [
+    {
+     "paper": "MCQ48",
+     "pages": [
+      8
+     ]
+    },
+    {
+     "paper": "MCQ48-KEY",
+     "pages": [
+      8
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "resp_48_MCQ_020",
+   "ai_answer": "E",
+   "key_concept": "• Fick: V ∝ D·A·ΔP/T\n• normal subject: surface area/ thickness คงที่\n• ข้อนี้เฉลยต้นฉบับขัดกับ AI",
+   "option_why": {
+    "A": "อุณหภูมิไม่ใช่ตัวจำกัด",
+    "B": "✓ surface area (ตามเฉลยต้นฉบับ ใช้สูตร D·A·ΔP/T)",
+    "C": "BP ไม่เกี่ยว",
+    "D": "Hct ไม่เกี่ยว",
+    "E": "ความหนา membrane (AI เลือกตัวนี้)"
+   }
+  },
+  {
+   "id": "RESP-48-MCQ-021",
+   "block": "RESP",
+   "cohort": 48,
+   "n": 21,
+   "type": "MCQ",
+   "stem": "Which brain respiratory area generates the signal that result in forced breathing during exercise?",
+   "options": {
+    "A": "Pneumotaxic center",
+    "B": "Ventral respiratory group",
+    "C": "Reticular activating system",
+    "D": "Apneustic center",
+    "E": "Dorsal respiratory group"
+   },
+   "answer": "B",
+   "answer_status": "verified",
+   "explanation": "forced breathing ตอนออกกำลังกายสร้างสัญญาณที่ ventral respiratory group (VRG) (expiratory + inspiratory neurons)",
+   "refs": [
+    {
+     "paper": "MCQ48",
+     "pages": [
+      9
+     ]
+    },
+    {
+     "paper": "MCQ48-KEY",
+     "pages": [
+      9
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "resp_48_MCQ_021",
+   "key_concept": "• DRG: quiet inspiration\n• VRG: forced expiration/inspiration",
+   "option_why": {
+    "A": "pneumotaxic ปรับจังหวะ",
+    "B": "✓ ventral respiratory group",
+    "C": "RAS ควบคุม wakefulness",
+    "D": "apneustic ยืดการหายใจเข้า",
+    "E": "DRG เป็น inspiratory หลัก ตอนปกติ"
+   }
+  },
+  {
+   "id": "RESP-48-MCQ-022",
+   "block": "RESP",
+   "cohort": 48,
+   "n": 22,
+   "type": "MCQ",
+   "stem": "Which of the following breathing patterns would be found in the patient with diabetes mellitus?",
+   "options": {
+    "A": "Biot's breathing",
+    "B": "Apneustic breathing",
+    "C": "Cheyne-Stokes respiration",
+    "D": "Kussmaul's respiration",
+    "E": "Ondine's curse"
+   },
+   "answer": "D",
+   "answer_status": "verified",
+   "explanation": "เบาหวาน (DKA) → metabolic acidosis → Kussmaul respiration (ลึกและเร็ว)",
+   "refs": [
+    {
+     "paper": "MCQ48",
+     "pages": [
+      9
+     ]
+    },
+    {
+     "paper": "MCQ48-KEY",
+     "pages": [
+      9
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "resp_48_MCQ_022",
+   "key_concept": "• DKA: acidosis → hyperventilation เพื่อชดเชย\n• CO₂ ลง pH ขึ้น",
+   "option_why": {
+    "A": "Biot's พบในรอยโรคไขสันหลังสมอง",
+    "B": "apneustic พบรอยโรค pons",
+    "C": "Cheyne–Stokes พบใน HF/ICP สูง",
+    "D": "✓ Kussmaul's respiration",
+    "E": "Ondine's curse = central hypoventilation"
+   }
+  },
+  {
+   "id": "RESP-48-MCQ-023",
+   "block": "RESP",
+   "cohort": 48,
+   "n": 23,
+   "type": "MCQ",
+   "stem": "Which of the following would be found in premature infant of 28 weeks?",
+   "options": {
+    "A": "Increased airway resistance",
+    "B": "Increased residual lung volume",
+    "C": "Increased transpulmonary pressure",
+    "D": "Decreased lung compliance",
+    "E": "Decreased lung surface tension"
+   },
+   "answer": "A",
+   "answer_status": "disputed",
+   "explanation": "ทารก 28 สัปดาห์ (RDS) ขาด surfactant → compliance ลด (เฉลยต้นฉบับ A: airway resistance เพิ่ม; AI เลือก D)\n⚠️ เฉลยขัดกับ AI",
+   "refs": [
+    {
+     "paper": "MCQ48",
+     "pages": [
+      9
+     ]
+    },
+    {
+     "paper": "MCQ48-KEY",
+     "pages": [
+      9
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "resp_48_MCQ_023",
+   "ai_answer": "D",
+   "key_concept": "• RDS: surfactant ขาด → ST ↑ → compliance ↓\n• ถุงลมแฟบ ground glass\n• ข้อนี้เฉลยต้นฉบับขัดกับ AI",
+   "option_why": {
+    "A": "✓ airway resistance เพิ่ม (ตามเฉลยต้นฉบับ)",
+    "B": "RV ลด ไม่เพิ่ม",
+    "C": "transpulmonary pressure ที่ต้องใช้เพิ่ม",
+    "D": "lung compliance ลด ตรงกับ RDS (AI เลือกตัวนี้)",
+    "E": "surface tension เพิ่มไม่ลด"
+   }
+  },
+  {
+   "id": "RESP-48-MCQ-024",
+   "block": "RESP",
+   "cohort": 48,
+   "n": 24,
+   "type": "MCQ",
+   "stem": "A 23 year old man comes to the physician because of a gunshot wound on the right chest. The chest X-ray shows pleural effusion and partial collapse of the right lung. Which of the following is a site of intrapleural fluid accumulate?",
+   "options": {
+    "A": "Posterior pleural reflection",
+    "B": "Pulmonary ligament",
+    "C": "Costomediastinal recess",
+    "D": "Anterior pleural reflection",
+    "E": "Costodiaphragmatic recess"
+   },
+   "answer": "E",
+   "answer_status": "verified",
+   "explanation": "เลือดจากการถูกยิงสะสมที่ costodiaphragmatic recess (จุดต่ำสุดของ pleural cavity)",
+   "refs": [
+    {
+     "paper": "MCQ48",
+     "pages": [
+      10
+     ]
+    },
+    {
+     "paper": "MCQ48-KEY",
+     "pages": [
+      10
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "resp_48_MCQ_024",
+   "key_concept": "• recess ต่ำสุด → fluid สะสม\n• ต้อง > 200 mL จึงเห็นบน CXR",
+   "option_why": {
+    "A": "posterior reflection ไม่ใช่จุดต่ำสุด",
+    "B": "pulmonary ligament ไม่ใช่ช่องสะสม",
+    "C": "costomediastinal recess อยู่ด้านหน้า",
+    "D": "anterior reflection ไม่ใช่",
+    "E": "✓ costodiaphragmatic recess"
+   }
+  },
+  {
+   "id": "RESP-48-MCQ-025",
+   "block": "RESP",
+   "cohort": 48,
+   "n": 25,
+   "type": "MCQ",
+   "stem": "A 24 year old female developed dyspnea during menstrual period. She had no underlying disease and no history of trauma. The chest X-ray showed pneumothorax at the right chest. What is the most potentially type of pneumothorax in this patient?",
+   "options": {
+    "A": "Primary spontaneous pneumothorax",
+    "B": "Traumatic pneumothorax",
+    "C": "Secondary spontaneous pneumothorax",
+    "D": "Iatrogenic pneumothorax",
+    "E": "Catamenial pneumothorax"
+   },
+   "answer": "E",
+   "answer_status": "verified",
+   "explanation": "หญิงอายุน้อย เป็นระหว่างมีประจำเดือน = catamenial pneumothorax (endometriosis ที่ pleura)",
+   "refs": [
+    {
+     "paper": "MCQ48",
+     "pages": [
+      10
+     ]
+    },
+    {
+     "paper": "MCQ48-KEY",
+     "pages": [
+      10
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "resp_48_MCQ_025",
+   "key_concept": "• catamenial: 24–72 ชม. หลังประจำเดือน\n• ขวาบ่อย\n• thoracic endometriosis",
+   "option_why": {
+    "A": "primary spontaneous พบชายหนุ่มผอม",
+    "B": "traumatic ต้องมีบาดเจ็บ",
+    "C": "secondary พบในโรคปอดเดิม",
+    "D": "iatrogenic จากหัตถการ",
+    "E": "✓ catamenial pneumothorax"
+   }
+  },
+  {
+   "id": "RESP-48-MCQ-026",
+   "block": "RESP",
+   "cohort": 48,
+   "n": 26,
+   "type": "MCQ",
+   "stem": "A hematoxylin & eosin-stained section of the lung tissue shows a simple ciliated columnar epithelium, large amount of smooth muscles and elastic fibers in lamina propria, absence of cartilage and glands. Which of the following is the sectioned structure?",
+   "options": {
+    "A": "Terminal bronchiole",
+    "B": "Trachea",
+    "C": "Respiratory bronchiole",
+    "D": "Bronchus",
+    "E": "Bronchiole"
+   },
+   "answer": "E",
+   "answer_status": "verified",
+   "explanation": "ciliated columnar + smooth muscle มาก ไม่มี cartilage/gland = bronchiole",
+   "refs": [
+    {
+     "paper": "MCQ48",
+     "pages": [
+      11
+     ]
+    },
+    {
+     "paper": "MCQ48-KEY",
+     "pages": [
+      11
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "resp_48_MCQ_026",
+   "key_concept": "• bronchiole: ไม่มี cartilage/gland\n• smooth muscle เด่น",
+   "option_why": {
+    "A": "terminal bronchiole เป็น simple cuboidal/ciliated แต่",
+    "B": "trachea มี cartilage ตัว C",
+    "C": "respiratory bronchiole มี alveoli",
+    "D": "bronchus มี cartilage",
+    "E": "✓ bronchiole"
+   }
+  },
+  {
+   "id": "RESP-48-MCQ-027",
+   "block": "RESP",
+   "cohort": 48,
+   "n": 27,
+   "type": "MCQ",
+   "stem": "Which of the following hypoxia would be found in the pesticide poisoning patient?",
+   "options": {
+    "A": "Hypoxic hypoxia",
+    "B": "Ischemic hypoxia",
+    "C": "Over-utilization hypoxia",
+    "D": "Histotoxic hypoxia",
+    "E": "Anemic hypoxia"
+   },
+   "answer": "D",
+   "answer_status": "disputed",
+   "explanation": "พิษยาฆ่าแมลง (organophosphate) ทำให้ respiratory muscle ล้า; เฉลยต้นฉบับ D (histotoxic) ต้นฉบับขีดทั้ง C และ D\n⚠️ ต้นฉบับวงไว้หลายตัว",
+   "refs": [
+    {
+     "paper": "MCQ48",
+     "pages": [
+      11
+     ]
+    },
+    {
+     "paper": "MCQ48-KEY",
+     "pages": [
+      11
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "resp_48_MCQ_027",
+   "key_concept": "• histotoxic: cyanide, pesticide\n• PaO₂ ปกติ O₂ content ปกติ",
+   "option_why": {
+    "A": "hypoxic hypoxia ต้องดูว่า PaO₂ ต่ำ",
+    "B": "ischemic ไม่เกี่ยวกับสารพิษ",
+    "C": "over-utilization ต้นฉบับขีดร่วมด้วย",
+    "D": "✓ histotoxic hypoxia: เซลล์ใช้ O₂ ไม่ได้",
+    "E": "anemic ไม่เกี่ยว"
+   }
+  },
+  {
+   "id": "RESP-48-MCQ-028",
+   "block": "RESP",
+   "cohort": 48,
+   "n": 28,
+   "type": "MCQ",
+   "stem": "A 70 year old man was diagnosed with severe chronic obstruction pulmonary disease. Arterial blood gas show pH of 7.35 and PCO2 of 53 mmHg. Which of the following changes would be occurred in his cerebrospinal fluid compared to normal values?",
+   "options": {
+    "A": "Increased pH",
+    "B": "Decreased [H+]",
+    "C": "Increased [lactate]",
+    "D": "Decreased PCO2",
+    "E": "Increased [HCO3-]"
+   },
+   "answer": "E",
+   "answer_status": "verified",
+   "explanation": "COPD รุนแรง CO₂ คั่งเรื้อรัง → CSF มี HCO₃⁻ เพิ่ม (ชดเชย) ทำให้ pH ใน CSF ใกล้ปกติ",
+   "refs": [
+    {
+     "paper": "MCQ48",
+     "pages": [
+      11
+     ]
+    },
+    {
+     "paper": "MCQ48-KEY",
+     "pages": [
+      11
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "resp_48_MCQ_028",
+   "key_concept": "• chronic hypercapnia → choroid plexus สร้าง HCO₃⁻\n• CSF pH กลับใกล้ปกติ",
+   "option_why": {
+    "A": "pH CSF ไม่เพิ่ม",
+    "B": "[H⁺] ไม่ลดจริง",
+    "C": "lactate ไม่เกี่ยว",
+    "D": "PCO₂ CSF เพิ่มไม่ลด",
+    "E": "✓ [HCO₃⁻] เพิ่ม"
+   }
+  },
+  {
+   "id": "RESP-48-MCQ-029",
+   "block": "RESP",
+   "cohort": 48,
+   "n": 29,
+   "type": "MCQ",
+   "stem": "Why alveolar PO2 is lower than PO2 in the atmospheric dry air?",
+   "options": {
+    "A": "A vapor pressure in alveolar air is lower than atmospheric dry air",
+    "B": "A Temperature in alveolar air is higher than atmospheric dry air",
+    "C": "Anatomical shunt blood",
+    "D": "An inspired air mixes with residual air",
+    "E": "O2 rapidly diffuses into the pulmonary capillary"
+   },
+   "answer": "D",
+   "answer_status": "disputed",
+   "explanation": "PO₂ alveolar ต่ำกว่าอากาศแห้ง: เฉลยต้นฉบับ D (inspired air ผสม residual air) AI เลือก E (O₂ แพร่เข้า capillary)\n⚠️ เฉลยขัดกับ AI",
+   "refs": [
+    {
+     "paper": "MCQ48",
+     "pages": [
+      12
+     ]
+    },
+    {
+     "paper": "MCQ48-KEY",
+     "pages": [
+      12
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "resp_48_MCQ_029",
+   "ai_answer": "E",
+   "key_concept": "• alveolar gas equation\n• O₂ ถูกใช้ + PH₂O ลดความดัน\n• ข้อนี้เฉลยต้นฉบับขัดกับ AI",
+   "option_why": {
+    "A": "vapor pressure ของ alveolar air สูงกว่า ไม่ต่ำกว่า",
+    "B": "temperature สูงกว่า ไม่ใช่เหตุหลัก",
+    "C": "anatomical shunt ไม่ใช่",
+    "D": "✓ inspired air ผสมกับ residual air (ตามเฉลยต้นฉบับ)",
+    "E": "O₂ แพร่เข้า pulmonary capillary (AI เลือกตัวนี้)"
+   }
+  },
+  {
+   "id": "RESP-48-MCQ-030",
+   "block": "RESP",
+   "cohort": 48,
+   "n": 30,
+   "type": "MCQ",
+   "stem": "Which of the following is the underlying mechanism of the pulmonary edema in case of hypoxia?",
+   "options": {
+    "A": "Increased plasma hydrostatic pressure",
+    "B": "Decreased plasma oncotic pressure",
+    "C": "Increased lung capillary permeability",
+    "D": "Decreased lymphatic drainage of the visceral pleura",
+    "E": "Increased plasma oncotic pressure"
+   },
+   "answer": "A",
+   "answer_status": "disputed",
+   "explanation": "pulmonary edema จาก hypoxia: เฉลยต้นฉบับ A (hydrostatic pressure เพิ่มจาก HPV); AI เลือก C (permeability)\n⚠️ เฉลยขัดกับ AI",
+   "refs": [
+    {
+     "paper": "MCQ48",
+     "pages": [
+      12
+     ]
+    },
+    {
+     "paper": "MCQ48-KEY",
+     "pages": [
+      12
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "resp_48_MCQ_030",
+   "ai_answer": "C",
+   "key_concept": "• HAPE: uneven HPV → Pcap ↑\n• hypoxia → capillary stress failure\n• ข้อนี้เฉลยต้นฉบับขัดกับ AI",
+   "option_why": {
+    "A": "✓ plasma hydrostatic pressure เพิ่ม (ตามเฉลยต้นฉบับ: HAPE จาก pulmonary vasoconstriction)",
+    "B": "oncotic ลดไม่ใช่",
+    "C": "permeability เพิ่ม (AI เลือกตัวนี้)",
+    "D": "lymph drainage ลดไม่ใช่",
+    "E": "oncotic เพิ่มลดการรั่ว"
+   }
+  },
+  {
+   "id": "RESP-48-MCQ-031",
+   "block": "RESP",
+   "cohort": 48,
+   "n": 31,
+   "type": "MCQ",
+   "stem": "Which of the following is a complicated thoracic cage injury?",
+   "options": {
+    "A": "Overriding rib fracture",
+    "B": "Costovertebral dislocation",
+    "C": "Costocondral fracture",
+    "D": "Transverse rib fracture",
+    "E": "Rib fracture with lung contusion"
+   },
+   "answer": "E",
+   "answer_status": "verified",
+   "explanation": "complicated thoracic cage injury = rib fracture ร่วมกับอวัยวะภายใน (lung contusion)",
+   "refs": [
+    {
+     "paper": "MCQ48",
+     "pages": [
+      12
+     ]
+    },
+    {
+     "paper": "MCQ48-KEY",
+     "pages": [
+      12
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "resp_48_MCQ_031",
+   "key_concept": "• complicated: มีอวัยวะภายในบาดเจ็บ\n• flail chest, hemothorax, pneumothorax",
+   "option_why": {
+    "A": "overriding fracture เป็น simple",
+    "B": "costovertebral dislocation เป็น simple",
+    "C": "costochondral fracture เป็น simple",
+    "D": "transverse fracture เป็น simple",
+    "E": "✓ rib fracture + lung contusion"
+   }
+  },
+  {
+   "id": "RESP-48-MCQ-032",
+   "block": "RESP",
+   "cohort": 48,
+   "n": 32,
+   "type": "MCQ",
+   "stem": "Which of the following causes a decreased in airway resistance?",
+   "options": {
+    "A": "Inhaled beta-adrenergic agonist",
+    "B": "Increased vagal activity",
+    "C": "Sitting in the steam room",
+    "D": "Increased the release of lung histamine",
+    "E": "Airway mucus hypersecretion"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "inhaled β-agonist ทำให้ airway smooth muscle คลาย → airway resistance ลด",
+   "refs": [
+    {
+     "paper": "MCQ48",
+     "pages": [
+      13
+     ]
+    },
+    {
+     "paper": "MCQ48-KEY",
+     "pages": [
+      13
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "resp_48_MCQ_032",
+   "key_concept": "• β₂ → cAMP → bronchodilation\n• parasympathetic → constriction",
+   "option_why": {
+    "A": "✓ inhaled β₂ agonist",
+    "B": "vagal activity เพิ่มทำหลอดลมหด",
+    "C": "steam room ความร้อนชื้นระคายหลอดลม",
+    "D": "histamine ทำหลอดลมหด",
+    "E": "mucus มากทำให้ resistance เพิ่ม"
+   }
+  },
+  {
+   "id": "RESP-48-MCQ-033",
+   "block": "RESP",
+   "cohort": 48,
+   "n": 33,
+   "type": "MCQ",
+   "stem": "Which of the following factors cause a decrease in oxygen-hemoglobin affinity?",
+   "options": {
+    "A": "Recieved blood stored",
+    "B": "Alkalosis",
+    "C": "Hypothermia",
+    "D": "Fetal hemoglobin HbF",
+    "E": "Staying at high altitude"
+   },
+   "answer": "E",
+   "answer_status": "disputed",
+   "explanation": "oxygen–Hb affinity ลดลง (curve shift ขวา) ใน high altitude (↑2,3-DPG) ตามเฉลยต้นฉบับ E\n⚠️ เฉลยขัดกับ AI",
+   "refs": [
+    {
+     "paper": "MCQ48",
+     "pages": [
+      13
+     ]
+    },
+    {
+     "paper": "MCQ48-KEY",
+     "pages": [
+      13
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "resp_48_MCQ_033",
+   "ai_answer": "A",
+   "key_concept": "• shift right: ↑H⁺ ↑CO₂ ↑temp ↑2,3-DPG\n• shift left: ↓ ทั้งหมด, HbF, CO",
+   "option_why": {
+    "A": "stored blood: 2,3-DPG ต่ำ affinity เพิ่ม (AI เลือกตัวนี้ผิด)",
+    "B": "alkalosis ทำ affinity เพิ่ม",
+    "C": "hypothermia ทำ affinity เพิ่ม",
+    "D": "HbF affinity สูงกว่า",
+    "E": "✓ high altitude: 2,3-DPG เพิ่ม affinity ลด"
+   }
+  },
+  {
+   "id": "RESP-48-MCQ-034",
+   "block": "RESP",
+   "cohort": 48,
+   "n": 34,
+   "type": "MCQ",
+   "stem": "A 32 year old man presents with acute dyspnea. He ia diagnosed as acute asthma attack. Which of the following nerves is responsibility for his bronchospasm?",
+   "options": {
+    "A": "Lesser splanchnic",
+    "B": "Vagus",
+    "C": "Intercostal",
+    "D": "Phrenic",
+    "E": "Recurrent laryngeal"
+   },
+   "answer": "B",
+   "answer_status": "verified",
+   "explanation": "bronchospasm ในหืดเกิดจาก parasympathetic (vagus) → ACh → M₃ receptor",
+   "refs": [
+    {
+     "paper": "MCQ48",
+     "pages": [
+      13
+     ]
+    },
+    {
+     "paper": "MCQ48-KEY",
+     "pages": [
+      13
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "resp_48_MCQ_034",
+   "key_concept": "• vagus → bronchoconstriction + mucus\n• anticholinergic ลดการหดตัว",
+   "option_why": {
+    "A": "lesser splanchnic ไม่เกี่ยวกับปอด",
+    "B": "✓ vagus nerve",
+    "C": "intercostal ไปผนังอก",
+    "D": "phrenic ไป diaphragm",
+    "E": "recurrent laryngeal ไปกล่องเสียง"
+   }
+  },
+  {
+   "id": "RESP-48-MCQ-035",
+   "block": "RESP",
+   "cohort": 48,
+   "n": 35,
+   "type": "MCQ",
+   "stem": "Which of the following conditions cause a decrease in lung compliance?",
+   "options": {
+    "A": "Decreased surface area of alveoli",
+    "B": "Increased alveolar surface tension",
+    "C": "Decreased lung elastic recoil",
+    "D": "Increased chest wall elastic recoil",
+    "E": "Increased transpulmonary pressure"
+   },
+   "answer": "B",
+   "answer_status": "verified",
+   "explanation": "lung compliance ลดเมื่อ alveolar surface tension เพิ่ม (ขาด surfactant)",
+   "refs": [
+    {
+     "paper": "MCQ48",
+     "pages": [
+      14
+     ]
+    },
+    {
+     "paper": "MCQ48-KEY",
+     "pages": [
+      14
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "resp_48_MCQ_035",
+   "key_concept": "• C = ΔV/ΔP\n• surfactant ↓ → ST ↑ → C ↓",
+   "option_why": {
+    "A": "surface area ลดอาจลด compliance แต่ไม่ใช่ตัวหลัก",
+    "B": "✓ alveolar surface tension เพิ่ม",
+    "C": "elastic recoil ลด → compliance เพิ่ม",
+    "D": "chest wall recoil ไม่ใช่ lung",
+    "E": "transpulmonary pressure เพิ่มเป็นผล"
+   }
+  },
+  {
+   "id": "RESP-48-MCQ-036",
+   "block": "RESP",
+   "cohort": 48,
+   "n": 36,
+   "type": "MCQ",
+   "stem": "Which of the following diseases develop show and deep breathing pattern?",
+   "options": {
+    "A": "Pulmonary fibrosis",
+    "B": "Interstitial lung disease",
+    "C": "Obesity",
+    "D": "Scoliosis",
+    "E": "Bronchiectasis"
+   },
+   "answer": "E",
+   "answer_status": "verified",
+   "explanation": "หายใจช้าลึกพบใน obstructive disease (เช่น bronchiectasis) ส่วน restrictive จะเร็วตื้น",
+   "refs": [
+    {
+     "paper": "MCQ48",
+     "pages": [
+      14
+     ]
+    },
+    {
+     "paper": "MCQ48-KEY",
+     "pages": [
+      14
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "resp_48_MCQ_036",
+   "key_concept": "• restrictive: เร็ว ตื้น\n• obstructive: ช้า ลึก ลดงานต้านทาน",
+   "option_why": {
+    "A": "fibrosis หายใจเร็วตื้น",
+    "B": "ILD หายใจเร็วตื้น",
+    "C": "obesity ลด chest wall compliance เร็วตื้น",
+    "D": "scoliosis restrictive เร็วตื้น",
+    "E": "✓ bronchiectasis (obstructive) ช้าลึก"
+   }
+  },
+  {
+   "id": "RESP-48-MCQ-037",
+   "block": "RESP",
+   "cohort": 48,
+   "n": 37,
+   "type": "MCQ",
+   "stem": "Which of the following conditions cause the positive pleural pressure?",
+   "options": {
+    "A": "End of forced expiration",
+    "B": "Beginning of inspiration",
+    "C": "End of inspiration",
+    "D": "End of expiration",
+    "E": "Beginning of expiration"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "intrapleural pressure เป็นบวกที่สิ้นสุดการหายใจออกแรง (end of forced expiration)",
+   "refs": [
+    {
+     "paper": "MCQ48",
+     "pages": [
+      14
+     ]
+    },
+    {
+     "paper": "MCQ48-KEY",
+     "pages": [
+      14
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "resp_48_MCQ_037",
+   "key_concept": "• normal: ติดลบ\n• forced expiration: > 0",
+   "option_why": {
+    "A": "✓ end of forced expiration",
+    "B": "ต้น inspiration ยังติดลบ",
+    "C": "สิ้นสุด inspiration ติดลบมาก",
+    "D": "สิ้นสุด expiration ปกติ ≈ −5",
+    "E": "ต้น expiration ยังติดลบ"
+   }
+  },
+  {
+   "id": "RESP-48-MCQ-038",
+   "block": "RESP",
+   "cohort": 48,
+   "n": 38,
+   "type": "MCQ",
+   "stem": "A 5 year old boy is bought to the physician because of feeling fullness in his right ear suspected middle ear infection. He has a 1 week history of fever and sore throat. Which of the following is a root of ear infection?",
+   "options": {
+    "A": "Infundibulum",
+    "B": "Hiatus semilunaris",
+    "C": "Nasolacrimal duct",
+    "D": "Eustachian tube",
+    "E": "Bulla ethmoidalis"
+   },
+   "answer": "D",
+   "answer_status": "verified",
+   "explanation": "เด็กปวดหูหลังเจ็บคอ เชื้อเดินทางผ่าน Eustachian tube",
+   "refs": [
+    {
+     "paper": "MCQ48",
+     "pages": [
+      15
+     ]
+    },
+    {
+     "paper": "MCQ48-KEY",
+     "pages": [
+      15
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "resp_48_MCQ_038",
+   "key_concept": "• Eustachian tube: nasopharynx ↔ middle ear\n• เด็กท่อสั้นแนวราบ",
+   "option_why": {
+    "A": "infundibulum ระบายไซนัสหน้าผาก",
+    "B": "hiatus semilunaris ระบายไซนัส",
+    "C": "nasolacrimal duct ระบายน้ำตา",
+    "D": "✓ Eustachian tube",
+    "E": "bulla ethmoidalis เป็น ethmoid air cells"
+   }
+  },
+  {
+   "id": "RESP-48-MCQ-039",
+   "block": "RESP",
+   "cohort": 48,
+   "n": 39,
+   "type": "MCQ",
+   "stem": ". Which of the following conditions cause expiration of lung perfusion zone 1?",
+   "options": {
+    "A": "Decreased transpulmonary pressure",
+    "B": "Positive pressure ventilation",
+    "C": "Supine position",
+    "D": "Increased arterial blood pressure",
+    "E": "Elevation of legs"
+   },
+   "answer": "B",
+   "answer_status": "disputed",
+   "explanation": "zone 1 ลดเมื่อ arterial pressure เพิ่ม (เฉลยต้นฉบับ B: positive pressure ventilation; AI เลือก D)\n⚠️ เฉลยขัดกับ AI",
+   "refs": [
+    {
+     "paper": "MCQ48",
+     "pages": [
+      15
+     ]
+    },
+    {
+     "paper": "MCQ48-KEY",
+     "pages": [
+      15
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "resp_48_MCQ_039",
+   "ai_answer": "D",
+   "key_concept": "• zone 1: PA > Pa\n• เพิ่ม Pa หรือ ลด PA → zone 1 ลด\n• ข้อนี้เฉลยต้นฉบับขัดกับ AI (PPV เพิ่ม PA)",
+   "option_why": {
+    "A": "Ptp ลดไม่เกี่ยวกับ zone 1",
+    "B": "✓ positive pressure ventilation (ตามเฉลยต้นฉบับ)",
+    "C": "supine ลด zone 1 ได้",
+    "D": "arterial BP เพิ่ม ทำให้ zone 1 ลด (AI เลือกตัวนี้)",
+    "E": "ยกขาเพิ่ม venous return"
+   }
+  },
+  {
+   "id": "RESP-48-MCQ-040",
+   "block": "RESP",
+   "cohort": 48,
+   "n": 40,
+   "type": "MCQ",
+   "stem": "Which of the following changes occur in the patient with carbon monoxide poisoning?",
+   "options": {
+    "A": "Decreased PO2",
+    "B": "Normal O2 capacity",
+    "C": "Increased HbO2 saturation",
+    "D": "Increased PO2",
+    "E": "Decreased HbO2 saturation"
+   },
+   "answer": "E",
+   "answer_status": "disputed",
+   "explanation": "CO poisoning: O₂ capacity ลด, SaO₂ ลด, PaO₂ ปกติ (เฉลยต้นฉบับ E; AI เลือก B)\n⚠️ เฉลยขัดกับ AI",
+   "refs": [
+    {
+     "paper": "MCQ48",
+     "pages": [
+      15
+     ]
+    },
+    {
+     "paper": "MCQ48-KEY",
+     "pages": [
+      15
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "resp_48_MCQ_040",
+   "ai_answer": "B",
+   "key_concept": "• CO จับ Hb ได้มากกว่า O₂ ~ 240 เท่า\n• PaO₂ ปกติ SaO₂ ลด\n• ข้อนี้เฉลยต้นฉบับขัดกับ AI",
+   "option_why": {
+    "A": "PaO₂ ปกติไม่ลด",
+    "B": "O₂ capacity ลดเพราะ COHb (ไม่ปกติ)",
+    "C": "HbO₂ saturation ลดไม่เพิ่ม",
+    "D": "PO₂ ปกติไม่เพิ่ม",
+    "E": "✓ decreased HbO₂ saturation"
+   }
+  },
+  {
+   "id": "RESP-48-MCQ-041",
+   "block": "RESP",
+   "cohort": 48,
+   "n": 41,
+   "type": "MCQ",
+   "stem": "A stabbed victim is brought to the emergency room with knife wound on the right of chest. Which of the following is likely to affect his right lung?",
+   "options": {
+    "A": "Tidal volume increases",
+    "B": "Thoracic wall collapse",
+    "C": "Intrathoracic portion of trachea shifts to the collapsed lung",
+    "D": "Intrapleural pressure equals atmospheric pressure",
+    "E": "Residual volume increase"
+   },
+   "answer": "D",
+   "answer_status": "verified",
+   "explanation": "บาดแผลแทงอก: pneumothorax → intrapleural pressure เท่าบรรยากาศ ปอดแฟบ",
+   "refs": [
+    {
+     "paper": "MCQ48",
+     "pages": [
+      16
+     ]
+    },
+    {
+     "paper": "MCQ48-KEY",
+     "pages": [
+      16
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "resp_48_MCQ_041",
+   "key_concept": "• pneumothorax: Ppl = Patm\n• ปอดแฟบ ผนังอกเด้งออก",
+   "option_why": {
+    "A": "tidal volume ลดไม่เพิ่ม",
+    "B": "thoracic wall เด้งออก",
+    "C": "trachea เบี่ยงข้างตรงข้ามเมื่อ tension",
+    "D": "✓ intrapleural pressure = atmospheric",
+    "E": "RV ลด ไม่เพิ่ม"
+   }
+  },
+  {
+   "id": "RESP-48-MCQ-042",
+   "block": "RESP",
+   "cohort": 48,
+   "n": 42,
+   "type": "MCQ",
+   "stem": "Which of the following causes normal exhale in a healthy person?",
+   "options": {
+    "A": "Scalene muscles contract",
+    "B": "Diaphragm moves inferiors",
+    "C": "Thorax and lung passively recoil",
+    "D": "Abdominal muscles relax",
+    "E": "External intercostal muscles contract"
+   },
+   "answer": "C",
+   "answer_status": "verified",
+   "explanation": "การหายใจออกปกติเกิดจาก thorax และปอด recoil แบบ passive",
+   "refs": [
+    {
+     "paper": "MCQ48",
+     "pages": [
+      16
+     ]
+    },
+    {
+     "paper": "MCQ48-KEY",
+     "pages": [
+      16
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "resp_48_MCQ_042",
+   "key_concept": "• quiet expiration passive\n• forced expiration: internal intercostal + abdominal",
+   "option_why": {
+    "A": "scalene หดตอนหายใจเข้า",
+    "B": "diaphragm เลื่อนลงตอนเข้า",
+    "C": "✓ passive recoil ของ thorax และปอด",
+    "D": "abdominal muscles หดเฉพาะ forced expiration",
+    "E": "external intercostal หดตอนเข้า"
+   }
+  },
+  {
+   "id": "RESP-48-MCQ-043",
+   "block": "RESP",
+   "cohort": 48,
+   "n": 43,
+   "type": "MCQ",
+   "stem": "Which of the following is correct regarding the \"Haldane effect\"?",
+   "options": {
+    "A": "Decreased PaO2 causes a decreased venous PO2",
+    "B": "Increased O2 capacity causes a decreased PaCO2",
+    "C": "Increased carboxyhemoglobin causes a decreased PaO2",
+    "D": "Increased O2 saturation causes a increased PaCO2",
+    "E": "Increased carbaminohemoglobin causes a decreased PaO2"
+   },
+   "answer": "A",
+   "answer_status": "disputed",
+   "explanation": "Haldane effect: O₂ เพิ่มทำให้ Hb จับ CO₂ น้อยลง; เฉลยต้นฉบับ A (PaO₂ ลด → venous PO₂ ลด) AI เลือก D\n⚠️ เฉลยขัดกับ AI",
+   "refs": [
+    {
+     "paper": "MCQ48",
+     "pages": [
+      16
+     ]
+    },
+    {
+     "paper": "MCQ48-KEY",
+     "pages": [
+      16
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "resp_48_MCQ_043",
+   "ai_answer": "D",
+   "key_concept": "• Haldane: deoxy-Hb จับ CO₂ มากกว่า\n• oxygenation → ปล่อย CO₂ ในปอด\n• ข้อนี้เฉลยต้นฉบับขัดกับ AI",
+   "option_why": {
+    "A": "✓ decreased PaO₂ → decreased venous PO₂ (ตามเฉลยต้นฉบับ)",
+    "B": "capacity เพิ่มไม่ลด PaCO₂",
+    "C": "COHb เพิ่ม ไม่ลด PaO₂ จริง",
+    "D": "O₂ saturation เพิ่ม → CO₂ ถูกปล่อย PaCO₂ เพิ่ม (AI เลือกตัวนี้)",
+    "E": "carbamino-Hb เพิ่มไม่ลด PaO₂"
+   }
+  },
+  {
+   "id": "RESP-48-MCQ-044",
+   "block": "RESP",
+   "cohort": 48,
+   "n": 44,
+   "type": "MCQ",
+   "stem": "A 60 year old woman has a right upper lung mass, which compresses the superior vena cava. Which of the following veins is most likely to be affected?",
+   "options": {
+    "A": "Subcostal",
+    "B": "Internal thoracic",
+    "C": "Accessory hemiazygos",
+    "D": "Hemiazygos",
+    "E": "Azygos"
+   },
+   "answer": "E",
+   "answer_status": "verified",
+   "explanation": "ก้อนปอดขวาบนกด SVC ทำให้ azygos vein (ไหลเข้า SVC) ถูกกด",
+   "refs": [
+    {
+     "paper": "MCQ48",
+     "pages": [
+      17
+     ]
+    },
+    {
+     "paper": "MCQ48-KEY",
+     "pages": [
+      17
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "resp_48_MCQ_044",
+   "key_concept": "• azygos arch ข้าม right bronchus เข้า SVC\n• SVC syndrome",
+   "option_why": {
+    "A": "subcostal เข้า azygos/hemiazygos",
+    "B": "internal thoracic เข้า brachiocephalic",
+    "C": "accessory hemiazygos เข้า azygos",
+    "D": "hemiazygos เข้า azygos",
+    "E": "✓ azygos vein เปิดเข้า SVC"
+   }
+  },
+  {
+   "id": "RESP-48-MCQ-045",
+   "block": "RESP",
+   "cohort": 48,
+   "n": 45,
+   "type": "MCQ",
+   "stem": "A newborn infant presented with dyspnea, tachypnea, and cyanosis, The abdomen was flat and bowel sound was heard over the left side of thorax. An anteroposterior chest X-ray demonstrated air-filled viscera in the chest. Which of the following structures had an abnormal development?",
+   "options": {
+    "A": "Pleuroperitoneal membrane",
+    "B": "Mesoesophagus",
+    "C": "Intraembryonic coelom",
+    "D": "Muscle fibers from adjacent body wall",
+    "E": "Septum transversum"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "ทารกมีลำไส้ในทรวงอกซ้าย = congenital diaphragmatic hernia จาก pleuroperitoneal membrane ปิดไม่สนิท",
+   "refs": [
+    {
+     "paper": "MCQ48",
+     "pages": [
+      17
+     ]
+    },
+    {
+     "paper": "MCQ48-KEY",
+     "pages": [
+      17
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "resp_48_MCQ_045",
+   "key_concept": "• CDH Bochdalek: ซ้ายหลัง\n• ปอดเล็ก (hypoplasia)\n• bowel sound ในอก",
+   "option_why": {
+    "A": "✓ pleuroperitoneal membrane",
+    "B": "mesoesophagus ไม่เกี่ยว",
+    "C": "intraembryonic coelom ไม่ใช่",
+    "D": "กล้ามเนื้อจาก body wall ไม่ใช่เหตุหลัก",
+    "E": "septum transversum สร้างส่วนกลางกะบังลม"
+   }
+  },
+  {
+   "id": "RESP-48-MCQ-046",
+   "block": "RESP",
+   "cohort": 48,
+   "n": 46,
+   "type": "MCQ",
+   "stem": "In the upright human lung. Which of the following has a higher value at the apex than base?",
+   "options": {
+    "A": "Surfactant concentration",
+    "B": "PAO2",
+    "C": "Alveolar pressure",
+    "D": "Compliance",
+    "E": "Intrapleural pressure"
+   },
+   "answer": "C",
+   "answer_status": "disputed",
+   "explanation": "upright lung: เฉลยต้นฉบับ C (alveolar pressure); AI เลือก B (PAO₂ ที่ apex สูงกว่า base)\n⚠️ เฉลยขัดกับ AI",
+   "refs": [
+    {
+     "paper": "MCQ48",
+     "pages": [
+      17
+     ]
+    },
+    {
+     "paper": "MCQ48-KEY",
+     "pages": [
+      17
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "resp_48_MCQ_046",
+   "ai_answer": "B",
+   "key_concept": "• apex: V/Q สูง PAO₂ สูง\n• base: ventilation, perfusion มากกว่า\n• ข้อนี้เฉลยต้นฉบับขัดกับ AI",
+   "option_why": {
+    "A": "surfactant ไม่ต่างชัด",
+    "B": "PAO₂ ที่ apex สูงกว่า (V/Q สูงกว่า) (AI เลือกตัวนี้)",
+    "C": "✓ alveolar pressure (ตามเฉลยต้นฉบับ)",
+    "D": "compliance ที่ base สูงกว่า",
+    "E": "intrapleural ติดลบกว่าที่ apex (เป็นบวกน้อยกว่า)"
+   }
+  },
+  {
+   "id": "RESP-48-MCQ-047",
+   "block": "RESP",
+   "cohort": 48,
+   "n": 47,
+   "type": "MCQ",
+   "stem": "In the condition of anemia, hemoglobin concentration is 10 g/dL. If 1.3 mL of O2 bound to 1 g hemoglobin. What is the O2 binding capacity in mL O2/100mL blood ?",
+   "options": {
+    "A": "13",
+    "B": "2.6",
+    "C": "20",
+    "D": "26",
+    "E": "1.3"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "O₂ capacity = Hb × 1.34 (ที่นี่ 1.3) = 10 × 1.3 = 13 mL/100 mL",
+   "refs": [
+    {
+     "paper": "MCQ48",
+     "pages": [
+      18
+     ]
+    },
+    {
+     "paper": "MCQ48-KEY",
+     "pages": [
+      18
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "resp_48_MCQ_047",
+   "key_concept": "• capacity = Hb × 1.34\n• normal Hb 15 → 20 mL/dL",
+   "option_why": {
+    "A": "✓ 13",
+    "B": "2.6 ผิดหน่วย",
+    "C": "20 คือค่า Hb 15",
+    "D": "26 ผิด",
+    "E": "1.3 คือ O₂ ต่อ 1 g"
+   }
+  },
+  {
+   "id": "RESP-48-MCQ-048",
+   "block": "RESP",
+   "cohort": 48,
+   "n": 48,
+   "type": "MCQ",
+   "stem": "A 65 year old man has persistent cough and dyspnea on exertion for 6 weeks. He has history of smoking 10 cigarettes per day for 40 years. Which of the following types of epithelium expected to be found?",
+   "options": {
+    "A": "Stratified columnar",
+    "B": "Pseudostratified columnar",
+    "C": "Transitional",
+    "D": "Stratified squamous",
+    "E": "Simple cuboidal"
+   },
+   "answer": "D",
+   "answer_status": "verified",
+   "explanation": "ผู้สูบบุหรี่หนักเกิด squamous metaplasia → stratified squamous epithelium",
+   "refs": [
+    {
+     "paper": "MCQ48",
+     "pages": [
+      18
+     ]
+    },
+    {
+     "paper": "MCQ48-KEY",
+     "pages": [
+      18
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "resp_48_MCQ_048",
+   "key_concept": "• smoking → squamous metaplasia\n• เสี่ยง squamous cell carcinoma",
+   "option_why": {
+    "A": "stratified columnar พบในส่วนอื่น",
+    "B": "pseudostratified columnar คือเยื่อบุปกติ",
+    "C": "transitional อยู่ที่ทางเดินปัสสาวะ",
+    "D": "✓ stratified squamous (metaplasia)",
+    "E": "simple cuboidal ไม่ใช่"
+   }
+  },
+  {
+   "id": "RESP-48-MCQ-049",
+   "block": "RESP",
+   "cohort": 48,
+   "n": 49,
+   "type": "MCQ",
+   "stem": "A 23 year old women is brought to the physician because of stridor. Laryngoscopy finding shows bilateral vocal cord adduction during inspiration. Which of the following laryngeal muscle is weak?",
+   "options": {
+    "A": "Thyroarytenoid muscle",
+    "B": "Oblique arytenoid muscle",
+    "C": "Cricothyroid muscle",
+    "D": "Vocalis muscle",
+    "E": "Posterior cricothyroid muscle"
+   },
+   "answer": "A",
+   "answer_status": "disputed",
+   "explanation": "stridor + vocal cord adduction ขณะหายใจเข้า = กล้ามเนื้อเปิดสายเสียงอ่อนแรง (posterior cricoarytenoid) เฉลยต้นฉบับ A (thyroarytenoid)\n⚠️ เฉลยขัดกับ AI",
+   "refs": [
+    {
+     "paper": "MCQ48",
+     "pages": [
+      18
+     ]
+    },
+    {
+     "paper": "MCQ48-KEY",
+     "pages": [
+      18
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "resp_48_MCQ_049",
+   "ai_answer": "E",
+   "key_concept": "• PCA เป็นมัดเดียวที่เปิดสายเสียง\n• adduct ตอนเข้า → PCA อ่อนแรง\n• ข้อนี้เฉลยต้นฉบับขัดกับ AI",
+   "option_why": {
+    "A": "✓ thyroarytenoid (ตามเฉลยต้นฉบับ)",
+    "B": "oblique arytenoid ปิดช่อง glottis ด้านหลัง",
+    "C": "cricothyroid ตึงสายเสียง",
+    "D": "vocalis ควบคุมความตึงสายเสียง",
+    "E": "posterior cricoarytenoid คือ abductor เดียว (AI เลือกตัวนี้)"
+   }
+  },
+  {
+   "id": "RESP-48-MCQ-050",
+   "block": "RESP",
+   "cohort": 48,
+   "n": 50,
+   "type": "MCQ",
+   "stem": "An 18 year old man presents with painful swallowing for 5 days. This symptom occurs after eating fish. Which of the following is the most likely location of fish bone?",
+   "options": {
+    "A": "Soft palate",
+    "B": "Vocalis muscle",
+    "C": "Superior pharyngeal constrictor muscle",
+    "D": "Epiglottis",
+    "E": "Pyriform recess"
+   },
+   "answer": "E",
+   "answer_status": "verified",
+   "explanation": "ก้างปลาติดบ่อยที่ pyriform recess",
+   "refs": [
+    {
+     "paper": "MCQ48",
+     "pages": [
+      19
+     ]
+    },
+    {
+     "paper": "MCQ48-KEY",
+     "pages": [
+      19
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "resp_48_MCQ_050",
+   "key_concept": "• pyriform recess: ข้าง larynx\n• อันตรายต่อ internal laryngeal nerve",
+   "option_why": {
+    "A": "soft palate ไม่ใช่",
+    "B": "vocalis เป็นกล้ามเนื้อกล่องเสียง",
+    "C": "superior constrictor ไม่ใช่",
+    "D": "epiglottis ก็ติดได้แต่น้อยกว่า",
+    "E": "✓ pyriform recess"
+   }
+  },
+  {
+   "id": "RESP-48-MCQ-051",
+   "block": "RESP",
+   "cohort": 48,
+   "n": 51,
+   "type": "MCQ",
+   "stem": "A 10-year-old obese boy presented with noisy breathing during sleep for 6 months. Sometimes he seemed to stop breathing. He is totally normal during daytime. After treating him with CPAP , his symptoms seemed getting better. Which of the following represent the mechanism of CPAP treatment?",
+   "options": {
+    "A": "Increase inspired FiO2",
+    "B": "Decrease dead space",
+    "C": "Decrease airway resistance",
+    "D": "Increase signal to respiratory center",
+    "E": "Strengthening diaphragm contraction"
+   },
+   "answer": "C",
+   "answer_status": "verified",
+   "explanation": "CPAP ใน OSA ดันทางเดินหายใจส่วนบนไม่ให้ยุบ ลด airway resistance",
+   "refs": [
+    {
+     "paper": "MCQ48",
+     "pages": [
+      19
+     ]
+    },
+    {
+     "paper": "MCQ48-KEY",
+     "pages": [
+      19
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "resp_48_MCQ_051",
+   "key_concept": "• OSA: upper airway collapse ตอนหลับ\n• CPAP = pneumatic splint",
+   "option_why": {
+    "A": "ไม่ได้เพิ่ม FiO₂",
+    "B": "ไม่ลด dead space",
+    "C": "✓ ลด airway resistance (stent airway)",
+    "D": "ไม่เพิ่มสัญญาณ respiratory center",
+    "E": "ไม่ได้เสริมกำลัง diaphragm"
+   }
+  },
+  {
+   "id": "RESP-48-MCQ-052",
+   "block": "RESP",
+   "cohort": 48,
+   "n": 52,
+   "type": "MCQ",
+   "stem": "A 4-year-old boy is diagnosed acute bronchitis with sticky sputum. Which of the following mucolytic drug is the most appropriate in this patient?",
+   "options": {
+    "A": "Bromhexine",
+    "B": "Benzonatate",
+    "C": "Dextromethorphan",
+    "D": "Loratadine",
+    "E": "Codeine"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "mucolytic สำหรับเสมหะเหนียว = bromhexine",
+   "refs": [
+    {
+     "paper": "MCQ48",
+     "pages": [
+      20
+     ]
+    },
+    {
+     "paper": "MCQ48-KEY",
+     "pages": [
+      20
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "resp_48_MCQ_052",
+   "key_concept": "• mucolytic: bromhexine, acetylcysteine\n• antitussive: DXM, codeine",
+   "option_why": {
+    "A": "✓ bromhexine",
+    "B": "benzonatate กดไอ",
+    "C": "dextromethorphan กดไอ",
+    "D": "loratadine antihistamine",
+    "E": "codeine กดไอ"
+   }
+  },
+  {
+   "id": "RESP-48-MCQ-053",
+   "block": "RESP",
+   "cohort": 48,
+   "n": 53,
+   "type": "MCQ",
+   "stem": "50-year-old female presented with cough, and right-sided chest pain since 15 days. Gram sputum revealed numerous neutrophils and a rare amount of Gram-positive thin branching beaded filamentous bacteria; however ; the result of Kinyoun staining were negative. What is the most likely negative organism?",
+   "options": {
+    "A": "Mycobacterium tuberculosis",
+    "B": "Listeria monocytogenes",
+    "C": "Corynebacterium diphtheriae",
+    "D": "Erysipelothrix rhusiopathiae",
+    "E": "Nocardia asteroids"
+   },
+   "answer": "E",
+   "answer_status": "verified",
+   "explanation": "Gram-positive branching filaments + Kinyoun ลบ → Nocardia",
+   "refs": [
+    {
+     "paper": "MCQ48",
+     "pages": [
+      20
+     ]
+    },
+    {
+     "paper": "MCQ48-KEY",
+     "pages": [
+      20
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "resp_48_MCQ_053",
+   "key_concept": "• Nocardia: weakly acid-fast, branching\n• TMP-SMX",
+   "option_why": {
+    "A": "M. tuberculosis acid-fast บวก",
+    "B": "Listeria ไม่เป็น filament",
+    "C": "Corynebacterium club-shaped",
+    "D": "Erysipelothrix ไม่ branching",
+    "E": "✓ Nocardia"
+   }
+  },
+  {
+   "id": "RESP-48-MCQ-054",
+   "block": "RESP",
+   "cohort": 48,
+   "n": 54,
+   "type": "MCQ",
+   "stem": "An AIDS patient develops fever, cough and dyspnea for a week. Chest radiograph shows patchy infiltration of both lungs. Histopathology shows aggregation of macrophages with intracellular organisms. GMS stain demonstrates yeast-like organisms with budding. What is the most likely diagnosis?",
+   "options": {
+    "A": "Penicillosis",
+    "B": "Cytomegalovirus infection",
+    "C": "Cryptococcosis",
+    "D": "Histoplasmosis",
+    "E": "Candidiasis"
+   },
+   "answer": "D",
+   "answer_status": "verified",
+   "explanation": "AIDS + patchy infiltrates + yeast budding ใน macrophage ใน GMS = Histoplasma (เฉลย D)",
+   "refs": [
+    {
+     "paper": "MCQ48",
+     "pages": [
+      20
+     ]
+    },
+    {
+     "paper": "MCQ48-KEY",
+     "pages": [
+      20
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "resp_48_MCQ_054",
+   "key_concept": "• Histoplasma: small yeast ใน macrophage\n• GMS ติดสี",
+   "option_why": {
+    "A": "Penicillium (T. marneffei) เป็น yeast แบ่งตัวด้วย fission",
+    "B": "CMV มี inclusion",
+    "C": "Cryptococcus มี capsule",
+    "D": "✓ Histoplasma capsulatum",
+    "E": "Candida มี pseudohyphae"
+   }
+  },
+  {
+   "id": "RESP-48-MCQ-055",
+   "block": "RESP",
+   "cohort": 48,
+   "n": 55,
+   "type": "MCQ",
+   "stem": "50-year-old woman has lost 5 kg in 4 months. She has had a low-grade fever , dry cough with occasional hemoptysis for the past 3 weeks. A CXR reveals bilateral reticulonodular infiltration with cavitation. Which of following histologic findings is the most likely to be presented in her lung tissue?",
+   "options": {
+    "A": "Abnormal glandular cells with mucinous material",
+    "B": "Epithelioid cells and caseous necrosis",
+    "C": "Squamous epithelioid cells with keratin and numerous mitoses",
+    "D": "Large pneumocytes with intracytoplasmic inclusions",
+    "E": "Septate hyphae fungus with dichotomous branching"
+   },
+   "answer": "B",
+   "answer_status": "verified",
+   "explanation": "ไข้ต่ำ น้ำหนักลด hemoptysis cavitation = TB พบ epithelioid cell + caseous necrosis",
+   "refs": [
+    {
+     "paper": "MCQ48",
+     "pages": [
+      21
+     ]
+    },
+    {
+     "paper": "MCQ48-KEY",
+     "pages": [
+      21
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "resp_48_MCQ_055",
+   "key_concept": "• TB granuloma: caseating\n• AFB",
+   "option_why": {
+    "A": "mucinous glandular = adenocarcinoma",
+    "B": "✓ epithelioid + caseous necrosis",
+    "C": "keratin + mitosis = SCC",
+    "D": "inclusion = CMV",
+    "E": "septate hyphae = Aspergillus"
+   }
+  },
+  {
+   "id": "RESP-48-MCQ-056",
+   "block": "RESP",
+   "cohort": 48,
+   "n": 56,
+   "type": "MCQ",
+   "stem": "Which of the following tumors is the most common primary lung cancer?",
+   "options": {
+    "A": "Small cell carcinoma",
+    "B": "Adenocarcinoma",
+    "C": "Large cell carcinoma",
+    "D": "Lymphoma",
+    "E": "Squamous cell carcinoma"
+   },
+   "answer": "B",
+   "answer_status": "verified",
+   "explanation": "มะเร็งปอดปฐมภูมิที่พบมากที่สุด = adenocarcinoma",
+   "refs": [
+    {
+     "paper": "MCQ48",
+     "pages": [
+      21
+     ]
+    },
+    {
+     "paper": "MCQ48-KEY",
+     "pages": [
+      21
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "resp_48_MCQ_056",
+   "key_concept": "• adenocarcinoma ที่พบมากสุด (โดยเฉพาะหญิง/ผู้ไม่สูบ)\n• squamous ผู้สูบ central",
+   "option_why": {
+    "A": "small cell พบบ่อยรองลงมา",
+    "B": "✓ adenocarcinoma",
+    "C": "large cell พบน้อย",
+    "D": "lymphoma ไม่ใช่ primary lung ส่วนใหญ่",
+    "E": "squamous พบรองลงมา"
+   }
+  },
+  {
+   "id": "RESP-48-MCQ-057",
+   "block": "RESP",
+   "cohort": 48,
+   "n": 57,
+   "type": "MCQ",
+   "stem": "A 48-year-old man dies caused by respiratory failure. He has histology of heavy smoking and had a chronic cough, fever with a little amount of mucoid sputum for 6 years. At autopsy, his lung microscopically demonstrates mucous in bronchial lumen, goblet cell metaplasia, hyperplasia of submucous glands, numerous lymphocytes, at plasma cell with bronchial wall. Which of following condition is the most likely to explain his clinical course?",
+   "options": {
+    "A": "Emphysema",
+    "B": "Chronic bronchitis",
+    "C": "Bronchiectasis",
+    "D": "Bronchial asthma",
+    "E": "Acute bronchitis"
+   },
+   "answer": "B",
+   "answer_status": "verified",
+   "explanation": "mucus plug, goblet metaplasia, submucous gland hyperplasia, lymphocytes ในผนัง bronchus = chronic bronchitis",
+   "refs": [
+    {
+     "paper": "MCQ48",
+     "pages": [
+      21
+     ]
+    },
+    {
+     "paper": "MCQ48-KEY",
+     "pages": [
+      21
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "resp_48_MCQ_057",
+   "key_concept": "• chronic bronchitis: ไอมีเสมหะ ≥ 3 เดือน 2 ปี\n• Reid index ↑",
+   "option_why": {
+    "A": "emphysema ถุงลมโป่ง",
+    "B": "✓ chronic bronchitis",
+    "C": "bronchiectasis ขยายถาวร",
+    "D": "asthma มี eosinophil",
+    "E": "acute bronchitis ไม่เรื้อรัง 6 ปี"
+   }
+  },
+  {
+   "id": "RESP-48-MCQ-058",
+   "block": "RESP",
+   "cohort": 48,
+   "n": 58,
+   "type": "MCQ",
+   "stem": "What is the density as show in the square?",
+   "options": {
+    "A": "Metallic",
+    "B": "Air",
+    "C": "Bone",
+    "D": "Soft tissue",
+    "E": "Fat"
+   },
+   "answer": "A",
+   "answer_status": "disputed",
+   "explanation": "ภาพ CXR กรอบสี่เหลี่ยม: เฉลยต้นฉบับ A (metallic); AI เลือก B (air)\n⚠️ เฉลยขัดกับ AI",
+   "refs": [
+    {
+     "paper": "MCQ48",
+     "pages": [
+      22
+     ]
+    },
+    {
+     "paper": "MCQ48-KEY",
+     "pages": [
+      22
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "resp_48_MCQ_058",
+   "ai_answer": "B",
+   "key_concept": "• 5 radiographic densities: air, fat, soft tissue, bone, metal\n• metal ขาวที่สุด\n• ดูภาพประกอบ",
+   "option_why": {
+    "A": "✓ metallic density (ตามเฉลยต้นฉบับ)",
+    "B": "air density ดำ (AI เลือกตัวนี้)",
+    "C": "bone density ขาว",
+    "D": "soft tissue density เทา",
+    "E": "fat density เทาเข้ม"
+   },
+   "image": "img/RESP-48-MCQ-058.jpg",
+   "image_caption": "CXR: กรอบสี่เหลี่ยมชี้บริเวณที่ถามความหนาแน่น"
+  },
+  {
+   "id": "RESP-48-MCQ-059",
+   "block": "RESP",
+   "cohort": 48,
+   "n": 59,
+   "type": "MCQ",
+   "stem": "Which of the following is the result of venous contamination in the arterial blood gas (ABG) syringe?",
+   "options": {
+    "A": "Increase HCO3-",
+    "B": "Increase PaCO2",
+    "C": "Decrease PA-a O2 gradient",
+    "D": "Increase PaO2",
+    "E": "Increase pH"
+   },
+   "answer": "B",
+   "answer_status": "verified",
+   "explanation": "เลือดดำปนใน syringe ABG ทำให้ PaCO₂ เพิ่ม และ pH/PaO₂ ลด",
+   "refs": [
+    {
+     "paper": "MCQ48",
+     "pages": [
+      23
+     ]
+    },
+    {
+     "paper": "MCQ48-KEY",
+     "pages": [
+      23
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "resp_48_MCQ_059",
+   "key_concept": "• venous blood: PO₂ ต่ำ PCO₂ สูง pH ต่ำ\n• ผลคือ A–a gradient เพิ่ม",
+   "option_why": {
+    "A": "HCO₃⁻ เปลี่ยนเล็กน้อย",
+    "B": "✓ PaCO₂ เพิ่ม",
+    "C": "A–a gradient เพิ่มไม่ลด",
+    "D": "PaO₂ ลดไม่เพิ่ม",
+    "E": "pH ลดไม่เพิ่ม"
+   }
+  },
+  {
+   "id": "RESP-48-MCQ-060",
+   "block": "RESP",
+   "cohort": 48,
+   "n": 60,
+   "type": "MCQ",
+   "stem": "A 29-week preterm infant develops severe respiratory distress immediately after birth. She has marked hypoxia. Her CXR shows homogenous patchy opacity with bronchogram throughout both lungs. Her clinical condition and CXR significantly improved after surfactant therapy. Which of the following defect is responsible for this condition?",
+   "options": {
+    "A": "Alveolar epithelium cell type 2",
+    "B": "Goblet cell",
+    "C": "Clara cell",
+    "D": "Alveolar epithelium cell type 1",
+    "E": "Alveolar macrophage"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "RDS ทารกคลอดก่อนกำหนด: บกพร่องที่ type II pneumocyte (ผลิต surfactant)",
+   "refs": [
+    {
+     "paper": "MCQ48",
+     "pages": [
+      23
+     ]
+    },
+    {
+     "paper": "MCQ48-KEY",
+     "pages": [
+      23
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "resp_48_MCQ_060",
+   "key_concept": "• surfactant therapy ได้ผล\n• ground glass + air bronchogram",
+   "option_why": {
+    "A": "✓ alveolar epithelium type 2",
+    "B": "goblet cell ผลิต mucus",
+    "C": "Clara cell หลั่ง CC16",
+    "D": "type 1 ทำ gas exchange",
+    "E": "macrophage เก็บกิน"
+   }
+  },
+  {
+   "id": "RESP-48-MCQ-061",
+   "block": "RESP",
+   "cohort": 48,
+   "n": 61,
+   "type": "MCQ",
+   "stem": "A newly born baby had tachypnea at 2 hours after birth PE : BT 37.5ǰ°Cǰ, RR 80/min , PR 160/min , SpO2 94 % , Lung : Bulging of left chest wall, decrease breath sound of right lung CXR : multiple cystic lesion at right upper lung , mediastinum shift to the left , others were normal . He was diagnosed as congenital malformation of lung. Which of the following is the most likely pathogenesis of this condition",
+   "options": {
+    "A": "Incomplete closure of pleuroperitoneal cavity",
+    "B": "Abnormal branching of conducting airway",
+    "C": "Inadequate synthesis of surfactant",
+    "D": "Arrest of lung bud separation of primitive foregut endoderm",
+    "E": "Increased proliferation of alveoli"
+   },
+   "answer": "D",
+   "answer_status": "disputed",
+   "explanation": "ถุงซีสต์หลายก้อนที่ปอด = congenital cystic lesion; เฉลยต้นฉบับ D (arrest ของ lung bud separation) AI เลือก B (abnormal branching)\n⚠️ เฉลยขัดกับ AI",
+   "refs": [
+    {
+     "paper": "MCQ48",
+     "pages": [
+      23
+     ]
+    },
+    {
+     "paper": "MCQ48-KEY",
+     "pages": [
+      23
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "resp_48_MCQ_061",
+   "ai_answer": "B",
+   "key_concept": "• CPAM: abnormal airway branching\n• bronchogenic cyst: abnormal budding\n• ข้อนี้เฉลยต้นฉบับขัดกับ AI",
+   "option_why": {
+    "A": "pleuroperitoneal ปิดไม่สนิท = CDH",
+    "B": "abnormal branching ของ conducting airway (AI เลือกตัวนี้)",
+    "C": "surfactant ไม่ใช่",
+    "D": "✓ arrest ของ lung bud separation (ตามเฉลยต้นฉบับ)",
+    "E": "alveolar proliferation ไม่ใช่"
+   }
+  },
+  {
+   "id": "RESP-48-MCQ-062",
+   "block": "RESP",
+   "cohort": 48,
+   "n": 62,
+   "type": "MCQ",
+   "stem": "A 5-year-old boy has common cold with frequent night cough. He receives oral procaterol. Which of the following is the side effect of this drug ?",
+   "options": {
+    "A": "Palpitation",
+    "B": "Diarrhea",
+    "C": "Hypotension",
+    "D": "Seizure",
+    "E": "Bradycardia"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "procaterol (β₂ agonist) ผลข้างเคียงที่พบบ่อยคือใจสั่น (palpitation)",
+   "refs": [
+    {
+     "paper": "MCQ48",
+     "pages": [
+      24
+     ]
+    },
+    {
+     "paper": "MCQ48-KEY",
+     "pages": [
+      24
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "resp_48_MCQ_062",
+   "key_concept": "• β₂ agonist: tremor, tachycardia, hypokalemia\n• β₁ ที่หัวใจ",
+   "option_why": {
+    "A": "✓ palpitation / tachycardia",
+    "B": "ท้องเสียไม่ใช่",
+    "C": "ความดันตกพบน้อย",
+    "D": "ชักพบน้อย",
+    "E": "bradycardia ไม่ใช่"
+   }
+  },
+  {
+   "id": "RESP-48-MCQ-063",
+   "block": "RESP",
+   "cohort": 48,
+   "n": 63,
+   "type": "MCQ",
+   "stem": "A 65-year-old, heavily smoked, male has a chronic cough for 2 years. His arterial blood gas(ABG) analysis shows pH 7.30 , PO2 60mmHG , PCO2 55mmHg , HCO3- 30 mmol/L , SaO2 90% Which of the following is the interpretation of his ABG analysis?",
+   "options": {
+    "A": "Metabolic acidosis with respiratory alkalosis",
+    "B": "Compensated respiratory acidosis",
+    "C": "Acute respiratory acidosis with hypoxia",
+    "D": "Combined respiratory and metabolic acidosis",
+    "E": "Chronic respiratory alkalosis with hypoxia"
+   },
+   "answer": "B",
+   "answer_status": "verified",
+   "explanation": "pH 7.30 PCO₂ 55 HCO₃⁻ 30 PaO₂ 60 = compensated respiratory acidosis (chronic COPD) ตามเฉลย B",
+   "refs": [
+    {
+     "paper": "MCQ48",
+     "pages": [
+      25
+     ]
+    },
+    {
+     "paper": "MCQ48-KEY",
+     "pages": [
+      25
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "resp_48_MCQ_063",
+   "key_concept": "• chronic: HCO₃⁻ ↑ 3.5–4 ต่อ CO₂ 10\n• COPD → CO₂ retention",
+   "option_why": {
+    "A": "metabolic acidosis ต้อง HCO₃⁻ ต่ำ",
+    "B": "✓ compensated respiratory acidosis",
+    "C": "acute ต้อง HCO₃⁻ ปกติ",
+    "D": "combined ต้อง HCO₃⁻ ต่ำ",
+    "E": "respiratory alkalosis ไม่ตรง pH"
+   }
+  },
+  {
+   "id": "RESP-48-MCQ-064",
+   "block": "RESP",
+   "cohort": 48,
+   "n": 64,
+   "type": "MCQ",
+   "stem": "A 70-year-old man, presented with progressive dyspnea on exertion with chronic productive cough for 2 years. He had no hemoptysis. PE : not pale no jaundice, No lymphadenopathy , Lung : occasional wheezing and crepitation both lungs, Heart : no murmur , Extremities : No edema Which of the following is correct for pathology in this case?",
+   "options": {
+    "A": "Panacinar and paraseptal type are related with smoking only",
+    "B": "Decrease alveolar attachment",
+    "C": "Increase Reid index",
+    "D": "Pathologic site were air space and bronchus",
+    "E": "Mechanism of hypoxemia and shunt and dead space"
+   },
+   "answer": "B",
+   "answer_status": "disputed",
+   "explanation": "COPD: เฉลยต้นฉบับ B (alveolar attachment ลด) AI เลือก D (pathologic site ที่ air space และ bronchus)\n⚠️ เฉลยขัดกับ AI",
+   "refs": [
+    {
+     "paper": "MCQ48",
+     "pages": [
+      25
+     ]
+    },
+    {
+     "paper": "MCQ48-KEY",
+     "pages": [
+      25
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "resp_48_MCQ_064",
+   "ai_answer": "D",
+   "key_concept": "• emphysema: ลดแรงดึงรั้ง airway\n• V/Q mismatch ใน COPD\n• ข้อนี้เฉลยต้นฉบับขัดกับ AI",
+   "option_why": {
+    "A": "panacinar/paraseptal ไม่เกี่ยวกับบุหรี่อย่างเดียว",
+    "B": "✓ decreased alveolar attachment (ตามเฉลยต้นฉบับ)",
+    "C": "Reid index เพิ่มใน chronic bronchitis",
+    "D": "รอยโรคที่ air space และ bronchus (AI เลือกตัวนี้)",
+    "E": "กลไก hypoxemia คือ V/Q mismatch"
+   }
+  },
+  {
+   "id": "RESP-48-MCQ-065",
+   "block": "RESP",
+   "cohort": 48,
+   "n": 65,
+   "type": "MCQ",
+   "stem": "A 50-year-old man with current heavy smoking 1 pack per day for 20 years presents with chronic productive cough with dyspnea on exertion for 1 year Which of the following is long term effect smoking?",
+   "options": {
+    "A": "Stimulate elastase activity",
+    "B": "Inhibit O2 free radical",
+    "C": "Increase antitrypsin activity",
+    "D": "Produce low protease activity",
+    "E": "Induce high anti-protease activity"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "สูบบุหรี่ระยะยาวกระตุ้น elastase (protease) เกิด emphysema",
+   "refs": [
+    {
+     "paper": "MCQ48",
+     "pages": [
+      26
+     ]
+    },
+    {
+     "paper": "MCQ48-KEY",
+     "pages": [
+      26
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "resp_48_MCQ_065",
+   "key_concept": "• protease–antiprotease imbalance\n• oxidant inactivate α1-AT",
+   "option_why": {
+    "A": "✓ stimulate elastase activity",
+    "B": "เพิ่ม free radical ไม่ยับยั้ง",
+    "C": "antitrypsin activity ลด",
+    "D": "ทำ protease สูงไม่ต่ำ",
+    "E": "anti-protease ลดไม่เพิ่ม"
+   }
+  },
+  {
+   "id": "RESP-48-MCQ-066",
+   "block": "RESP",
+   "cohort": 48,
+   "n": 66,
+   "type": "MCQ",
+   "stem": "A screening CXR show single radio opaque lesion. Which of the following condition is the best explain for this finding?",
+   "options": {
+    "A": "Lung cancer",
+    "B": "Emphysema",
+    "C": "Pneumothorax",
+    "D": "Cavity",
+    "E": "Asthma"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "CXR คัดกรองพบก้อนทึบเดี่ยว (solitary pulmonary nodule) ต้องนึกถึง lung cancer",
+   "refs": [
+    {
+     "paper": "MCQ48",
+     "pages": [
+      26
+     ]
+    },
+    {
+     "paper": "MCQ48-KEY",
+     "pages": [
+      26
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "resp_48_MCQ_066",
+   "key_concept": "• solitary nodule: มะเร็ง, granuloma\n• ติดตามด้วย CT",
+   "option_why": {
+    "A": "✓ lung cancer (solitary nodule)",
+    "B": "emphysema ปอดโปร่ง",
+    "C": "pneumothorax ไม่ใช่ก้อนทึบ",
+    "D": "cavity เป็นโพรง",
+    "E": "asthma CXR ปกติ"
+   }
+  },
+  {
+   "id": "RESP-48-MCQ-067",
+   "block": "RESP",
+   "cohort": 48,
+   "n": 67,
+   "type": "MCQ",
+   "stem": "A 5-month-old boy with cerebral palsy is suffered from multiple episode of pneumonia. He usually chokes and coughing up while breastfed. His CXr shows perihilar thickening with widespread of multifocal consolidation bilaterally Which of the following is the strong pathological evidence of aspiration ?",
+   "options": {
+    "A": "Lipid laden macrophage in alveolar space",
+    "B": "Eosinophilic infiltration in airway and interstitium",
+    "C": "Destruction of tight junction on alveolar epithelium",
+    "D": "Absence of cilia on respiratory epithelium",
+    "E": "Pneumocyte type 2 hyperplasia"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "เด็กสมองพิการสำลักนมซ้ำ หลักฐานทางพยาธิของ aspiration คือ lipid-laden macrophage ใน alveoli",
+   "refs": [
+    {
+     "paper": "MCQ48",
+     "pages": [
+      26
+     ]
+    },
+    {
+     "paper": "MCQ48-KEY",
+     "pages": [
+      26
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "resp_48_MCQ_067",
+   "key_concept": "• aspiration: chronic → lipid-laden macrophage\n• acute: chemical pneumonitis",
+   "option_why": {
+    "A": "✓ lipid-laden macrophage",
+    "B": "eosinophil พบในหืด/ภูมิแพ้",
+    "C": "tight junction ถูกทำลาย = ARDS",
+    "D": "absence of cilia = PCD",
+    "E": "type 2 hyperplasia = DAD"
+   }
+  },
+  {
+   "id": "RESP-48-MCQ-068",
+   "block": "RESP",
+   "cohort": 48,
+   "n": 68,
+   "type": "MCQ",
+   "stem": "What are the antibodies of immunohistochemistry staining, using to confirm primary lung cancer of adenocarcinoma?",
+   "options": {
+    "A": "CK7 and CK20",
+    "B": "Chromogranin and synaptophysin",
+    "C": "Chromogranin and CK7",
+    "D": "CK7 and TTF-1",
+    "E": "TTF-1 and CK20"
+   },
+   "answer": "D",
+   "answer_status": "verified",
+   "explanation": "adenocarcinoma ปอดยืนยันด้วย CK7 และ TTF-1",
+   "refs": [
+    {
+     "paper": "MCQ48",
+     "pages": [
+      27
+     ]
+    },
+    {
+     "paper": "MCQ48-KEY",
+     "pages": [
+      27
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "resp_48_MCQ_068",
+   "key_concept": "• lung adenoca: CK7+ TTF-1+\n• small cell: neuroendocrine markers",
+   "option_why": {
+    "A": "CK7 และ CK20 ไม่จำเพาะ",
+    "B": "chromogranin/synaptophysin = neuroendocrine",
+    "C": "chromogranin ไม่ใช่ adenoca",
+    "D": "✓ CK7 + TTF-1",
+    "E": "CK20 มักลบในปอด"
+   }
+  },
+  {
+   "id": "RESP-48-MCQ-069",
+   "block": "RESP",
+   "cohort": 48,
+   "n": 69,
+   "type": "MCQ",
+   "stem": "A 35-year-old man presented with fever, productive cough and weight loss for 3 months. PE : crepitation sound at right upper lung , CXR : infiltration at right upper lung. Which of the following is the most likely organism ?",
+   "options": {
+    "A": "P.aeruginosa",
+    "B": "K.pneumoniae",
+    "C": "S.pneumoniae",
+    "D": "H.influenzae",
+    "E": "M.tuberculosis"
+   },
+   "answer": "E",
+   "answer_status": "verified",
+   "explanation": "ไข้ ไอ น้ำหนักลด 3 เดือน infiltrate กลีบบนขวา = M. tuberculosis",
+   "refs": [
+    {
+     "paper": "MCQ48",
+     "pages": [
+      27
+     ]
+    },
+    {
+     "paper": "MCQ48-KEY",
+     "pages": [
+      27
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "resp_48_MCQ_069",
+   "key_concept": "• TB: upper lobe, เรื้อรัง, weight loss\n• AFB, GeneXpert",
+   "option_why": {
+    "A": "Pseudomonas พบใน CF/bronchiectasis",
+    "B": "Klebsiella พบ alcoholic, upper lobe แต่เฉียบพลัน",
+    "C": "S. pneumoniae lobar pneumonia เฉียบพลัน",
+    "D": "H. influenzae พบใน COPD",
+    "E": "✓ M. tuberculosis"
+   }
+  },
+  {
+   "id": "RESP-48-MCQ-070",
+   "block": "RESP",
+   "cohort": 48,
+   "n": 70,
+   "type": "MCQ",
+   "stem": "A 50-year-old man presented with fever, dyspnea and productive cough. Gram stain revealed gram-negative bacilli with capsule What is the most likely cause of infection ?",
+   "options": {
+    "A": "Haemophilus influenzae",
+    "B": "Klebsiella pneumoniae",
+    "C": "Mycoplasma pneumoniae",
+    "D": "Chlamidophila pneumoniae",
+    "E": "Moraxella catarrhalis"
+   },
+   "answer": "B",
+   "answer_status": "verified",
+   "explanation": "Gram-negative bacilli with capsule ปอดอักเสบ = Klebsiella pneumoniae",
+   "refs": [
+    {
+     "paper": "MCQ48",
+     "pages": [
+      28
+     ]
+    },
+    {
+     "paper": "MCQ48-KEY",
+     "pages": [
+      28
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "resp_48_MCQ_070",
+   "key_concept": "• Klebsiella: currant-jelly sputum, alcoholics\n• capsule ต้าน phagocytosis",
+   "option_why": {
+    "A": "H. influenzae เป็น coccobacillus",
+    "B": "✓ Klebsiella pneumoniae (capsule)",
+    "C": "Mycoplasma ไม่มี cell wall",
+    "D": "Chlamydophila ไม่ย้อมแกรม",
+    "E": "Moraxella เป็น diplococci"
+   }
+  },
+  {
+   "id": "RESP-48-MCQ-071",
+   "block": "RESP",
+   "cohort": 48,
+   "n": 71,
+   "type": "MCQ",
+   "stem": "A 67-year-old female with COPD suffered from dyspnea on exertion. Her symptom is not improved after given with ipratropium and salbutamol. Which of the following drug is appropriate alternative bronchodilator?",
+   "options": {
+    "A": "Metoprolol",
+    "B": "Zileuton",
+    "C": "Theophylline",
+    "D": "Salmeterol",
+    "E": "Beclomethasone"
+   },
+   "answer": "C",
+   "answer_status": "verified",
+   "explanation": "COPD ไม่ดีขึ้นด้วย ipratropium + salbutamol ใช้ theophylline เป็นทางเลือก bronchodilator",
+   "refs": [
+    {
+     "paper": "MCQ48",
+     "pages": [
+      28
+     ]
+    },
+    {
+     "paper": "MCQ48-KEY",
+     "pages": [
+      28
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "resp_48_MCQ_071",
+   "key_concept": "• theophylline: PDE inhibitor + adenosine antagonist\n• therapeutic window แคบ",
+   "option_why": {
+    "A": "metoprolol (β-blocker) ทำหลอดลมหด",
+    "B": "zileuton ใช้ในหืด",
+    "C": "✓ theophylline",
+    "D": "salmeterol เป็น LABA (ยังเป็น β-agonist ชนิดเดียวกัน)",
+    "E": "beclomethasone ไม่ใช่ bronchodilator"
+   }
+  },
+  {
+   "id": "RESP-48-MCQ-072",
+   "block": "RESP",
+   "cohort": 48,
+   "n": 72,
+   "type": "MCQ",
+   "stem": "A non smoke, Thai male 32-year-old with dyspnea and dry cough for 6 month. The symptoms were aggravated by inhaled irritant and cold air. Physical examination : generalized wheezing sound at both lungs. The chest radiograph was normal. Which of the following is the main pathology of his disease?",
+   "options": {
+    "A": "Alveolar destruction",
+    "B": "Mucous hypersecretion",
+    "C": "Chronic airway inflammation",
+    "D": "Airway swelling",
+    "E": "Bronchoconstriction"
+   },
+   "answer": "C",
+   "answer_status": "verified",
+   "explanation": "ไม่สูบ ไอแห้ง เหนื่อย กำเริบเมื่อสัมผัส irritant/อากาศเย็น CXR ปกติ = หืด พยาธิกำเนิดหลักคือ chronic airway inflammation",
+   "refs": [
+    {
+     "paper": "MCQ48",
+     "pages": [
+      28
+     ]
+    },
+    {
+     "paper": "MCQ48-KEY",
+     "pages": [
+      28
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "resp_48_MCQ_072",
+   "key_concept": "• หืด: AHR + reversible obstruction\n• Th2/eosinophil อักเสบเรื้อรัง",
+   "option_why": {
+    "A": "alveolar destruction = emphysema",
+    "B": "mucus hypersecretion = chronic bronchitis",
+    "C": "✓ chronic airway inflammation",
+    "D": "airway swelling เป็นผลของการอักเสบ",
+    "E": "bronchoconstriction เป็นอาการ"
+   }
+  },
+  {
+   "id": "RESP-48-MCQ-073",
+   "block": "RESP",
+   "cohort": 48,
+   "n": 73,
+   "type": "MCQ",
+   "stem": "A 85-year-old man dies caused by respiratory failure. To find out the case of dead, autopsy was performed. Histopathological findings of lung showed numerous neutrophils, cell debris and RBCs in all alveolar space of right upper lobe of lung. What is the cause of dead?",
+   "options": {
+    "A": "Bronchopneumonia",
+    "B": "Lobar pneumonia",
+    "C": "Acute bronchitis",
+    "D": "Chronic bronchitis",
+    "E": "Bronchiectasis"
+   },
+   "answer": "B",
+   "answer_status": "verified",
+   "explanation": "neutrophil + เม็ดเลือดแดง + เศษเซลล์ทั่ว alveoli ทั้ง right upper lobe = lobar pneumonia",
+   "refs": [
+    {
+     "paper": "MCQ48",
+     "pages": [
+      29
+     ]
+    },
+    {
+     "paper": "MCQ48-KEY",
+     "pages": [
+      29
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "resp_48_MCQ_073",
+   "key_concept": "• lobar: ทั้งกลีบ, 4 stage\n• S. pneumoniae",
+   "option_why": {
+    "A": "bronchopneumonia เป็นหย่อม ๆ",
+    "B": "✓ lobar pneumonia",
+    "C": "acute bronchitis ไม่ใช่ alveolar",
+    "D": "chronic bronchitis ไม่ใช่",
+    "E": "bronchiectasis ไม่ใช่"
+   }
+  },
+  {
+   "id": "RESP-48-MCQ-074",
+   "block": "RESP",
+   "cohort": 48,
+   "n": 74,
+   "type": "MCQ",
+   "stem": "A 25-year-old male has been diagnosed asthma. He receives daily budesonide. Which of the following is the action of this drug in the airway?",
+   "options": {
+    "A": "Increase the numbers of eosinophils",
+    "B": "Increase the numbers of mast cells",
+    "C": "Increase smooth muscle relaxation",
+    "D": "Inhibit cytokine transcriptional gene implicated in asthmatic inflammation",
+    "E": "Inhibit the release of mediator of allergic reaction from mast cells"
+   },
+   "answer": "D",
+   "answer_status": "verified",
+   "explanation": "budesonide (ICS) ยับยั้งการถอดรหัสยีนของ cytokine ที่เกี่ยวกับการอักเสบ",
+   "refs": [
+    {
+     "paper": "MCQ48",
+     "pages": [
+      29
+     ]
+    },
+    {
+     "paper": "MCQ48-KEY",
+     "pages": [
+      29
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "resp_48_MCQ_074",
+   "key_concept": "• ICS: GR → ↓ NF-κB, ↓ cytokines\n• controller หืด",
+   "option_why": {
+    "A": "ลด eosinophil ไม่ใช่เพิ่ม",
+    "B": "ลด mast cell ไม่ใช่เพิ่ม",
+    "C": "คลายกล้ามเนื้อเรียบเป็นฤทธิ์ β₂ agonist",
+    "D": "✓ ยับยั้ง cytokine gene transcription",
+    "E": "stabilize mast cell เป็นฤทธิ์ cromolyn"
+   }
+  },
+  {
+   "id": "RESP-48-MCQ-075",
+   "block": "RESP",
+   "cohort": 48,
+   "n": 75,
+   "type": "MCQ",
+   "stem": "A 12-year-old boy presents with fever and blood-stained yellowish discharge from his nose. He has tenderness at both forehead around the eyebrows. Which of the following sinuses is affected?",
+   "options": {
+    "A": "Ethmoid",
+    "B": "Cavernous",
+    "C": "Sphenoid",
+    "D": "Maxillary",
+    "E": "Frontal"
+   },
+   "answer": "E",
+   "answer_status": "verified",
+   "explanation": "ปวดบริเวณหัวคิ้วสองข้าง + ไข้ หนองปนเลือด = frontal sinusitis",
+   "refs": [
+    {
+     "paper": "MCQ48",
+     "pages": [
+      30
+     ]
+    },
+    {
+     "paper": "MCQ48-KEY",
+     "pages": [
+      30
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "resp_48_MCQ_075",
+   "key_concept": "• frontal sinus: ปวดหน้าผากเหนือคิ้ว\n• ระบายเข้า middle meatus",
+   "option_why": {
+    "A": "ethmoid ปวดระหว่างตา",
+    "B": "cavernous ไม่ใช่ paranasal sinus",
+    "C": "sphenoid ปวดลึกหัว",
+    "D": "maxillary ปวดแก้ม",
+    "E": "✓ frontal sinus"
+   }
+  },
+  {
+   "id": "RESP-48-MCQ-076",
+   "block": "RESP",
+   "cohort": 48,
+   "n": 76,
+   "type": "MCQ",
+   "stem": "A 60-year-old man , presents with dyspnea on exertion with chronic productive cough for 6 years. He had no fever nor weight loss. PE : good consciousness, not pale no jaundice , Lung : occasional wheezing and crepitation in both lungs Heart : no murmur , Extremities : No edema Which of the following is the possible pulmonary function test result?",
+   "options": {
+    "A": "FEV1/FVC 70% predicted, FVC 65% predicted, TLC 68% predicted",
+    "B": "FEV1/FVC 85% predicted, FVC 50% predicted, TLC 50% predicted",
+    "C": "FEV1/FVC 65% predicted, FVC 55% predicted, TLC 95% predicted",
+    "D": "FEV1/FVC 90% predicted, FVC 30% predicted, TLC 80% predicted",
+    "E": "FEV1/FVC 50% predicted, FVC 60% predicted, TLC 60% predicted"
+   },
+   "answer": "C",
+   "answer_status": "verified",
+   "explanation": "COPD: FEV₁/FVC < 70%, FVC ลดเล็กน้อย, TLC ปกติ/เพิ่ม",
+   "refs": [
+    {
+     "paper": "MCQ48",
+     "pages": [
+      30
+     ]
+    },
+    {
+     "paper": "MCQ48-KEY",
+     "pages": [
+      30
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "resp_48_MCQ_076",
+   "key_concept": "• obstructive: FEV₁/FVC ↓ TLC ปกติ/↑\n• restrictive: ratio ปกติ TLC ↓",
+   "option_why": {
+    "A": "ratio 70% TLC 68% = restrictive",
+    "B": "ratio 85% TLC 50% = restrictive",
+    "C": "✓ ratio 65% TLC 95% = obstructive",
+    "D": "ratio 90% FVC 30% = restrictive",
+    "E": "ratio 50% TLC 60% ไม่เข้ากัน"
+   }
+  },
+  {
+   "id": "RESP-48-MCQ-077",
+   "block": "RESP",
+   "cohort": 48,
+   "n": 77,
+   "type": "MCQ",
+   "stem": "A 12-year-old boy with asthma has been admitted for asthmatic attack 5 times last year. Je usually takes oral salbutamol intermittently for his symptom. Which of the following medication is the most appropriate drug for control his disease?",
+   "options": {
+    "A": "Inhaled fluticasone",
+    "B": "Oral theophylline",
+    "C": "Salmeterol MDI",
+    "D": "Inhaled cromolyn",
+    "E": "Albuterol MDI"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "หืดกำเริบบ่อยต้องใช้ controller = inhaled corticosteroid (fluticasone)",
+   "refs": [
+    {
+     "paper": "MCQ48",
+     "pages": [
+      30
+     ]
+    },
+    {
+     "paper": "MCQ48-KEY",
+     "pages": [
+      30
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "resp_48_MCQ_077",
+   "key_concept": "• persistent asthma: ICS ± LABA\n• SABA = rescue",
+   "option_why": {
+    "A": "✓ inhaled fluticasone (ICS)",
+    "B": "theophylline ใช้เสริม",
+    "C": "salmeterol ใช้ร่วม ICS เท่านั้น",
+    "D": "cromolyn ผลน้อย",
+    "E": "albuterol เป็น rescue"
+   }
+  },
+  {
+   "id": "RESP-48-MCQ-078",
+   "block": "RESP",
+   "cohort": 48,
+   "n": 78,
+   "type": "MCQ",
+   "stem": "If pleural effusion is suspected on AP view , What is the best CXR positioning technique to confirm diagnosis?",
+   "options": {
+    "A": "Lateral",
+    "B": "Posterolateral",
+    "C": "Lateral decubitus",
+    "D": "Spot film",
+    "E": "Lordotic"
+   },
+   "answer": "C",
+   "answer_status": "verified",
+   "explanation": "สงสัย pleural effusion บน AP view ยืนยันด้วย lateral decubitus view",
+   "refs": [
+    {
+     "paper": "MCQ48",
+     "pages": [
+      31
+     ]
+    },
+    {
+     "paper": "MCQ48-KEY",
+     "pages": [
+      31
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "resp_48_MCQ_078",
+   "key_concept": "• decubitus: เห็นของเหลวไหลเป็น layer\n• ยืนยัน free-flowing vs loculated",
+   "option_why": {
+    "A": "lateral ใช้ดู posterior",
+    "B": "posterolateral ไม่ใช่มาตรฐาน",
+    "C": "✓ lateral decubitus",
+    "D": "spot film ใช้ขยายจุด",
+    "E": "lordotic ใช้ดู apex"
+   }
+  },
+  {
+   "id": "RESP-48-MCQ-079",
+   "block": "RESP",
+   "cohort": 48,
+   "n": 79,
+   "type": "MCQ",
+   "stem": "A 75-year-old woman, presents with fever, runny nose and myalgia 3 days. Today she develop dyspnea and productive cough. PE : 38.3 °Cǰ, PR 120/min , RR 28/min , BP 100/70 mmHg , good consciousness , not pale no jaundice, Lung : bronchial breath sound and crepitation at lower lung field. What of the following is the most likely pathogen in this patient?",
+   "options": {
+    "A": "S.pneumoniae",
+    "B": "M.pneumoniae",
+    "C": "C.pneumoniae",
+    "D": "H.influenzae",
+    "E": "Influenza"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "ไข้หวัดตามด้วย dyspnea/ productive cough ในหญิงสูงอายุ ปอดบวมจาก S. pneumoniae พบบ่อยสุด",
+   "refs": [
+    {
+     "paper": "MCQ48",
+     "pages": [
+      31
+     ]
+    },
+    {
+     "paper": "MCQ48-KEY",
+     "pages": [
+      31
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "resp_48_MCQ_079",
+   "key_concept": "• post-influenza bacterial pneumonia: S. pneumoniae, S. aureus\n• bronchial breath sound = consolidation",
+   "option_why": {
+    "A": "✓ S. pneumoniae",
+    "B": "M. pneumoniae พบในคนอายุน้อย",
+    "C": "C. pneumoniae พบน้อย",
+    "D": "H. influenzae พบใน COPD",
+    "E": "influenza เป็นเหตุนำ แต่เชื้อแทรกซ้อนคือ pneumococcus"
+   }
+  },
+  {
+   "id": "RESP-48-MCQ-080",
+   "block": "RESP",
+   "cohort": 48,
+   "n": 80,
+   "type": "MCQ",
+   "stem": "A 26-week gestation newborn develops increasing respiratory distress within an hour after birth. A CXR reveals ground glass appearance of both lungs. The baby dies within 2 days. At autopsy, the infant's lungs demonstrate extensive pink hyaline membranes. Which of the following conditions is most likely to increase the risk for this infant's disease?",
+   "options": {
+    "A": "Preterm birth",
+    "B": "Hypertension in pregnancy",
+    "C": "Iron deficiency in mother",
+    "D": "Hyperthyroidism in mother",
+    "E": "Alpha 1 antitrypsin deficiency of the infant"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "RDS ใน 26 สัปดาห์: ปัจจัยเสี่ยงหลักคือ preterm birth",
+   "refs": [
+    {
+     "paper": "MCQ48",
+     "pages": [
+      32
+     ]
+    },
+    {
+     "paper": "MCQ48-KEY",
+     "pages": [
+      32
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "resp_48_MCQ_080",
+   "key_concept": "• RDS = prematurity + surfactant ขาด\n• hyaline membrane",
+   "option_why": {
+    "A": "✓ preterm birth",
+    "B": "ความดันสูงของแม่ไม่เพิ่มตรง ๆ",
+    "C": "iron deficiency ไม่เกี่ยว",
+    "D": "hyperthyroidism ไม่เพิ่ม",
+    "E": "α1-AT deficiency ไม่ทำ RDS"
+   }
+  },
+  {
+   "id": "RESP-48-MCQ-081",
+   "block": "RESP",
+   "cohort": 48,
+   "n": 81,
+   "type": "MCQ",
+   "stem": "A 16-year-old lady has acute dyspnea. Her arterial blood gas analysis shows pH 7.60, PO2 120 mmHg , PCO2 30 mmHg , HCO3- 25 mmol/L , SaO2 99% What of the following is the interpretation of her ABG analysis ?",
+   "options": {
+    "A": "Metabolic alkalosis , partially compensated",
+    "B": "Metabolic alkalosis , uncompensated",
+    "C": "Chronic respiratory alkalosis",
+    "D": "Acute respiratory alkalosis",
+    "E": "Mix respiratory and metabolic alkalosis"
+   },
+   "answer": "D",
+   "answer_status": "verified",
+   "explanation": "pH 7.60 สูง PCO₂ 30 ต่ำ HCO₃⁻ 25 ปกติ = acute respiratory alkalosis",
+   "refs": [
+    {
+     "paper": "MCQ48",
+     "pages": [
+      32
+     ]
+    },
+    {
+     "paper": "MCQ48-KEY",
+     "pages": [
+      32
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "resp_48_MCQ_081",
+   "key_concept": "• pH ↑ PCO₂ ↓ = respiratory alkalosis\n• HCO₃⁻ ปกติ = acute",
+   "option_why": {
+    "A": "metabolic alkalosis ต้อง HCO₃⁻ สูง",
+    "B": "metabolic alkalosis ต้อง HCO₃⁻ สูง",
+    "C": "chronic ต้อง HCO₃⁻ ลดชัด",
+    "D": "✓ acute respiratory alkalosis",
+    "E": "mixed ไม่ตรง"
+   }
+  },
+  {
+   "id": "RESP-48-MCQ-082",
+   "block": "RESP",
+   "cohort": 48,
+   "n": 82,
+   "type": "MCQ",
+   "stem": "A 50-year-old man develops dyspnea with right-sided chest pain within minutes. Physical examination : absent breath sound or right lung. A CXR shows left-sided of mediastinum. A thoracentesis on the right yield a rush of air What of the following condition is the most likely cause of this condition ?",
+   "options": {
+    "A": "Pulmonary sequestration",
+    "B": "Bronchopleural fistula",
+    "C": "Emphysema",
+    "D": "Bronchogenic cyst",
+    "E": "Lung blebs"
+   },
+   "answer": "B",
+   "answer_status": "disputed",
+   "explanation": "pneumothorax ที่เกิดทันทีใน 50 ปี; เฉลยต้นฉบับ B (bronchopleural fistula); AI เลือก E (lung blebs)\n⚠️ เฉลยขัดกับ AI",
+   "refs": [
+    {
+     "paper": "MCQ48",
+     "pages": [
+      32
+     ]
+    },
+    {
+     "paper": "MCQ48-KEY",
+     "pages": [
+      32
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "resp_48_MCQ_082",
+   "ai_answer": "E",
+   "key_concept": "• spontaneous pneumothorax จาก bleb/bulla\n• tension: mediastinal shift\n• ข้อนี้เฉลยต้นฉบับขัดกับ AI",
+   "option_why": {
+    "A": "sequestration ไม่ใช่",
+    "B": "✓ bronchopleural fistula (ตามเฉลยต้นฉบับ)",
+    "C": "emphysema เป็นโรคพื้นฐาน",
+    "D": "bronchogenic cyst ไม่ใช่",
+    "E": "blebs แตก = spontaneous pneumothorax (AI เลือกตัวนี้)"
+   }
+  },
+  {
+   "id": "RESP-48-MCQ-083",
+   "block": "RESP",
+   "cohort": 48,
+   "n": 83,
+   "type": "MCQ",
+   "stem": "A 6-mont-old boy presented with recurrent pneumonia. The barium swallowing was show contrast leakage from esophagus to lower trachea. This represents abnormal connection between esophagus and trachea. What of the following stage represent respiratory development defect ?",
+   "options": {
+    "A": "Embryogenic stage",
+    "B": "Pseudoglandular stage",
+    "C": "Alveolar stage",
+    "D": "Cannicular stage",
+    "E": "Saccular stage"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "TEF ผิดปกติ เกิดใน embryonic stage (สัปดาห์ที่ 4–7)",
+   "refs": [
+    {
+     "paper": "MCQ48",
+     "pages": [
+      33
+     ]
+    },
+    {
+     "paper": "MCQ48-KEY",
+     "pages": [
+      33
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "resp_48_MCQ_083",
+   "key_concept": "• TEF: ผิดปกติของ tracheoesophageal septum สัปดาห์ 4–6\n• embryonic: lung bud แยก",
+   "option_why": {
+    "A": "✓ embryonic stage",
+    "B": "pseudoglandular สัปดาห์ 5–16",
+    "C": "alveolar stage 36 สัปดาห์–8 ปี",
+    "D": "canalicular สัปดาห์ 16–26",
+    "E": "saccular สัปดาห์ 26–birth"
+   }
+  },
+  {
+   "id": "RESP-48-MCQ-084",
+   "block": "RESP",
+   "cohort": 48,
+   "n": 84,
+   "type": "MCQ",
+   "stem": "A 65-year-old woman has chronic cough and weight loss 7kg in 4 months. She has history of cigarette smoking for 20 years. Chest radiographic finding show a 4cm. mass at lateral part of right lower lobe near thoracic wall. What of the following method is the most appropriate for the definite diagnosis of her lung lesion?",
+   "options": {
+    "A": "Bronchial washing and cytology",
+    "B": "Bronchoscopy and biopsy",
+    "C": "Transthoracic needle biopsy",
+    "D": "Septum examination",
+    "E": "Bronchial brushing and cytology"
+   },
+   "answer": "C",
+   "answer_status": "verified",
+   "explanation": "ก้อนชิดผนังอก (peripheral lesion) วินิจฉัยด้วย transthoracic needle biopsy",
+   "refs": [
+    {
+     "paper": "MCQ48",
+     "pages": [
+      33
+     ]
+    },
+    {
+     "paper": "MCQ48-KEY",
+     "pages": [
+      33
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "resp_48_MCQ_084",
+   "key_concept": "• peripheral lesion → TTNB\n• central lesion → bronchoscopy",
+   "option_why": {
+    "A": "washing ใช้ central lesion",
+    "B": "bronchoscopy + biopsy ใช้ central",
+    "C": "✓ transthoracic needle biopsy",
+    "D": "sputum ไวน้อย",
+    "E": "brushing ใช้ central"
+   }
+  },
+  {
+   "id": "RESP-48-MCQ-085",
+   "block": "RESP",
+   "cohort": 48,
+   "n": 85,
+   "type": "MCQ",
+   "stem": "Which lesion can obliterate descending aorta ?",
+   "options": {
+    "A": "Lung mass in lingula segment of left upper lobe",
+    "B": "Pericardial effusion",
+    "C": "Pneumonia in left upper lobe",
+    "D": "Anterior mediastinal mass",
+    "E": "Left pleural effusion"
+   },
+   "answer": "E",
+   "answer_status": "disputed",
+   "explanation": "descending aorta ถูกบังโดยรอยโรคที่ left lower lobe/ posterior (เฉลยต้นฉบับ E: left pleural effusion; AI เลือก C)\n⚠️ เฉลยขัดกับ AI",
+   "refs": [
+    {
+     "paper": "MCQ48",
+     "pages": [
+      33
+     ]
+    },
+    {
+     "paper": "MCQ48-KEY",
+     "pages": [
+      33
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "resp_48_MCQ_085",
+   "ai_answer": "C",
+   "key_concept": "• silhouette sign: ขอบที่ติดกันหาย\n• descending aorta ติด left lower lobe\n• ข้อนี้เฉลยต้นฉบับขัดกับ AI",
+   "option_why": {
+    "A": "lingula ติดขอบหัวใจ",
+    "B": "pericardial effusion บังขอบหัวใจ",
+    "C": "pneumonia LUL บัง aortic knob (AI เลือกตัวนี้)",
+    "D": "anterior mediastinal mass บังขอบหัวใจ",
+    "E": "✓ left pleural effusion (ตามเฉลยต้นฉบับ)"
+   }
+  },
+  {
+   "id": "RESP-48-MCQ-086",
+   "block": "RESP",
+   "cohort": 48,
+   "n": 86,
+   "type": "MCQ",
+   "stem": "Which organism is regarding associated with phagocytosis-resistant cell wall for subverting host defense ?",
+   "options": {
+    "A": "Klebsiella pneumoniae",
+    "B": "Mycobacterium tuberculosis",
+    "C": "Haemophilus influenzae",
+    "D": "Influenza virus",
+    "E": "Streptococcus pneumoniae"
+   },
+   "answer": "A",
+   "answer_status": "disputed",
+   "explanation": "ผนังเซลล์ต้าน phagocytosis: เฉลยต้นฉบับ A (Klebsiella capsule); AI เลือก E (S. pneumoniae)\n⚠️ เฉลยขัดกับ AI",
+   "refs": [
+    {
+     "paper": "MCQ48",
+     "pages": [
+      34
+     ]
+    },
+    {
+     "paper": "MCQ48-KEY",
+     "pages": [
+      34
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "resp_48_MCQ_086",
+   "ai_answer": "E",
+   "key_concept": "• capsule: S. pneumoniae, Klebsiella, H. influenzae b\n• ต้านการกลืนกิน\n• ข้อนี้เฉลยต้นฉบับขัดกับ AI",
+   "option_why": {
+    "A": "✓ Klebsiella pneumoniae (capsule) ตามเฉลยต้นฉบับ",
+    "B": "M. tuberculosis ผนังไขมันอยู่ใน macrophage",
+    "C": "H. influenzae มี capsule แต่ไม่ใช่ข้อหลัก",
+    "D": "influenza ไม่มี wall",
+    "E": "S. pneumoniae polysaccharide capsule (AI เลือกตัวนี้)"
+   }
+  },
+  {
+   "id": "RESP-48-MCQ-087",
+   "block": "RESP",
+   "cohort": 48,
+   "n": 87,
+   "type": "MCQ",
+   "stem": "A 9-year-old boy diagnose with asthma and receive daily oral Theophylline for 1 month. He develops nausea, vomiting and restlessness for 2 days. Which of the following symptoms should be aware of the serious complication?",
+   "options": {
+    "A": "Seizure",
+    "B": "Drowsiness",
+    "C": "Respiratory suppression",
+    "D": "Jaundice",
+    "E": "Bradycardia"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "theophylline toxicity: คลื่นไส้ อาเจียน กระสับกระส่าย ตามด้วยชักซึ่งอันตรายที่สุด",
+   "refs": [
+    {
+     "paper": "MCQ48",
+     "pages": [
+      34
+     ]
+    },
+    {
+     "paper": "MCQ48-KEY",
+     "pages": [
+      34
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "resp_48_MCQ_087",
+   "key_concept": "• theophylline toxic: seizure, arrhythmia\n• therapeutic window แคบ",
+   "option_why": {
+    "A": "✓ seizure",
+    "B": "drowsiness ไม่ใช่",
+    "C": "respiratory suppression ไม่ใช่",
+    "D": "jaundice ไม่ใช่",
+    "E": "bradycardia พบน้อยกว่า tachyarrhythmia"
+   }
+  },
+  {
+   "id": "RESP-48-MCQ-088",
+   "block": "RESP",
+   "cohort": 48,
+   "n": 88,
+   "type": "MCQ",
+   "stem": "A 70-year-old male was brought to emergency department dur to the alteration of consciousness. His arterial blood gas ABG ǰanalysis shows below pH7.20 , pO2 80mmHg , pCO2 26mmHg , HCO3- 12mmol/L , SpO2 97% Which of the following is the result of the ABG ?",
+   "options": {
+    "A": "Acute respiratory alkalosis with metabolic acidosis",
+    "B": "Metabolic alkalosis with respiratory alkalosis",
+    "C": "Metabolic acidosis with respiratory compensation",
+    "D": "Mix respiratory and metabolic acidosis",
+    "E": "Acute respiratory acidosis with normoxia"
+   },
+   "answer": "C",
+   "answer_status": "verified",
+   "explanation": "pH 7.20 PCO₂ 26 HCO₃⁻ 12 = metabolic acidosis with respiratory compensation",
+   "refs": [
+    {
+     "paper": "MCQ48",
+     "pages": [
+      34
+     ]
+    },
+    {
+     "paper": "MCQ48-KEY",
+     "pages": [
+      34
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "resp_48_MCQ_088",
+   "key_concept": "• Winter: PCO₂ = 1.5·HCO₃⁻ + 8 ± 2 = 26 ✓\n• compensation เหมาะสม",
+   "option_why": {
+    "A": "acute respiratory alkalosis ไม่ตรง pH",
+    "B": "metabolic alkalosis ไม่ตรง",
+    "C": "✓ metabolic acidosis with respiratory compensation",
+    "D": "mixed acidosis PCO₂ ต้องสูง",
+    "E": "acute respiratory acidosis ไม่ตรง"
+   }
+  },
+  {
+   "id": "RESP-48-MCQ-089",
+   "block": "RESP",
+   "cohort": 48,
+   "n": 89,
+   "type": "MCQ",
+   "stem": "A 20-year-old woman with COVID-19 infection is intubated because of severe respiratory failure. Her blood pressure was decreased immediately after starting mechanical centilator. Which of the following is the mechanism of her low blood pressure?",
+   "options": {
+    "A": "Hypoxic induced pulmonary vasoconstriction",
+    "B": "Decrease anatomical dead space",
+    "C": "Increase physiologic shunt",
+    "D": "Transient pulmonary arterial hypertension",
+    "E": "Decrease systemic venous return"
+   },
+   "answer": "E",
+   "answer_status": "verified",
+   "explanation": "ใส่ ventilator แล้วความดันตก = positive pressure ลด venous return",
+   "refs": [
+    {
+     "paper": "MCQ48",
+     "pages": [
+      35
+     ]
+    },
+    {
+     "paper": "MCQ48-KEY",
+     "pages": [
+      35
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "resp_48_MCQ_089",
+   "key_concept": "• PPV → intrathoracic pressure ↑ → venous return ↓ → CO ↓\n• ระวังในผู้ป่วย hypovolemia",
+   "mechanism": [
+    "ใส่เครื่องช่วยหายใจ",
+    "intrathoracic pressure เพิ่ม",
+    {
+     "s": "venous return ลด",
+     "answer": true
+    },
+    "cardiac output/ BP ตก"
+   ],
+   "option_why": {
+    "A": "HPV ไม่ทำความดันตก",
+    "B": "dead space ไม่ลดจาก PPV",
+    "C": "shunt เพิ่มผ่อน hypoxemia",
+    "D": "pulmonary hypertension ชั่วคราวไม่ใช่เหตุหลัก",
+    "E": "✓ decreased systemic venous return"
+   }
+  },
+  {
+   "id": "RESP-48-MCQ-090",
+   "block": "RESP",
+   "cohort": 48,
+   "n": 90,
+   "type": "MCQ",
+   "stem": "A 80-year-old man presents with vomit and decrease level of consciousness. Measure blood gas show pH7.5 , pO2 90mmHg , pCO2 49mmHg , HCO3- 40mmol/L other results are Na+ 140mmol/L , K+ 5mmol/L , Cl- 95mmol/L. Which of the following is the interpretation of his lab result?",
+   "options": {
+    "A": "Metabolic alkalosis , respiratory compensated",
+    "B": "Respiratory alkalosis , partially compensated",
+    "C": "Chronic respiratory alkalosis",
+    "D": "Metabolic alkalosis , with metabolic acidosis",
+    "E": "Respiratory acidosis , with metabolic acidosis"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "pH 7.5 HCO₃⁻ 40 PCO₂ 49 อาเจียน = metabolic alkalosis ที่ respiratory compensate",
+   "refs": [
+    {
+     "paper": "MCQ48",
+     "pages": [
+      35
+     ]
+    },
+    {
+     "paper": "MCQ48-KEY",
+     "pages": [
+      35
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "resp_48_MCQ_090",
+   "key_concept": "• pH ↑ HCO₃⁻ ↑ = metabolic alkalosis\n• PCO₂ ที่คาด = 0.7·HCO₃⁻ + 21 ±1.5 ✓",
+   "option_why": {
+    "A": "✓ metabolic alkalosis ชดเชยโดย respiratory",
+    "B": "respiratory alkalosis ต้อง PCO₂ ต่ำ",
+    "C": "chronic respiratory alkalosis ไม่ตรง",
+    "D": "metabolic alkalosis + acidosis ไม่ตรง",
+    "E": "respiratory acidosis ไม่ตรง pH"
+   }
+  },
+  {
+   "id": "RESP-48-MCQ-091",
+   "block": "RESP",
+   "cohort": 48,
+   "n": 91,
+   "type": "MCQ",
+   "stem": "Which of the following drug is agonistic effect to beta2 receptor and increase cyclic AMP?",
+   "options": {
+    "A": "Cromolyn",
+    "B": "Montelukast",
+    "C": "Beclomethasone",
+    "D": "Albuterol",
+    "E": "Zileuton"
+   },
+   "answer": "D",
+   "answer_status": "verified",
+   "explanation": "albuterol เป็น β₂ agonist เพิ่ม cAMP",
+   "refs": [
+    {
+     "paper": "MCQ48",
+     "pages": [
+      36
+     ]
+    },
+    {
+     "paper": "MCQ48-KEY",
+     "pages": [
+      36
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "resp_48_MCQ_091",
+   "key_concept": "• β₂ → Gs → cAMP ↑ → bronchodilation\n• ตัวอย่าง: albuterol, salmeterol, formoterol",
+   "option_why": {
+    "A": "cromolyn stabilize mast cell",
+    "B": "montelukast = LTRA",
+    "C": "beclomethasone = ICS",
+    "D": "✓ albuterol (β₂ agonist)",
+    "E": "zileuton ยับยั้ง 5-LO"
+   }
+  },
+  {
+   "id": "RESP-48-MCQ-092",
+   "block": "RESP",
+   "cohort": 48,
+   "n": 92,
+   "type": "MCQ",
+   "stem": "A patient shown up with fever , sore throat , red tonsils, and enlarge lymph nodes in the neck. Which of following is the best choice of investigation if suspected bacterial pharyngitis?",
+   "options": {
+    "A": "Nasal swab PCR",
+    "B": "Throat swab culture",
+    "C": "Nasopharyngeal swab culture",
+    "D": "Nasal swab culture",
+    "E": "Sputum gram stain"
+   },
+   "answer": "B",
+   "answer_status": "verified",
+   "explanation": "สงสัย bacterial pharyngitis (GAS) ส่ง throat swab culture",
+   "refs": [
+    {
+     "paper": "MCQ48",
+     "pages": [
+      36
+     ]
+    },
+    {
+     "paper": "MCQ48-KEY",
+     "pages": [
+      36
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "resp_48_MCQ_092",
+   "key_concept": "• GAS: rapid antigen/culture ของ tonsil/ posterior pharynx\n• เสี่ยง rheumatic fever",
+   "option_why": {
+    "A": "nasal swab PCR ใช้ไวรัส",
+    "B": "✓ throat swab culture",
+    "C": "nasopharyngeal swab ใช้ Bordetella/ไวรัส",
+    "D": "nasal swab culture ใช้หา S. aureus carrier",
+    "E": "sputum ไม่เหมาะ"
+   }
+  },
+  {
+   "id": "RESP-48-MCQ-093",
+   "block": "RESP",
+   "cohort": 48,
+   "n": 93,
+   "type": "MCQ",
+   "stem": "A 1-year-old boy who has bronchiole obstruction with partial atelectasis. After 100% O2 supplement, his CXR reveals worsening alveolar collapse. Which of following is explanation for worsening alveolar collapse in this patient?",
+   "options": {
+    "A": "Increase secretion production",
+    "B": "Decrease surfactant synthesis",
+    "C": "Increase transpulmonary pressure",
+    "D": "Increase resorption of alveolar gas",
+    "E": "Decrease airway resistance"
+   },
+   "answer": "D",
+   "answer_status": "verified",
+   "explanation": "หายใจ O₂ 100% ทำให้ alveolar collapse แย่ลง เพราะ O₂ ถูกดูดซึมเร็ว (resorption atelectasis)",
+   "refs": [
+    {
+     "paper": "MCQ48",
+     "pages": [
+      36
+     ]
+    },
+    {
+     "paper": "MCQ48-KEY",
+     "pages": [
+      36
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "resp_48_MCQ_093",
+   "key_concept": "• N₂ ช่วยค้ำถุงลม\n• ท่ออุดแล้ว O₂ ถูกดูดหมด → ถุงลมแฟบ",
+   "option_why": {
+    "A": "secretion ไม่ใช่",
+    "B": "surfactant ไม่ลดจาก O₂ ระยะสั้น",
+    "C": "Ptp ไม่ใช่",
+    "D": "✓ resorption ของ alveolar gas เพิ่ม",
+    "E": "airway resistance ลดไม่ทำให้แฟบ"
+   }
+  },
+  {
+   "id": "RESP-48-MCQ-094",
+   "block": "RESP",
+   "cohort": 48,
+   "n": 94,
+   "type": "MCQ",
+   "stem": "A 65-year-old man has productive cough and weight loss 5kg in 3 months. He has history of 30 years cigarette smoking. A tissue from bronchial biopsy shows atypical cells with normal keratin, intercellular bridge and numerous mitosis. Which of following is the most likely chest radiographic findings of this man?",
+   "options": {
+    "A": "Central lung nodule",
+    "B": "Peripheral nodule",
+    "C": "Patchy infiltration at apex",
+    "D": "Large hilar mass",
+    "E": "Pleural thickening"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "squamous cell carcinoma (keratin, intercellular bridge) ใน smoker มัก central lesion (เฉลย A)",
+   "refs": [
+    {
+     "paper": "MCQ48",
+     "pages": [
+      37
+     ]
+    },
+    {
+     "paper": "MCQ48-KEY",
+     "pages": [
+      37
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "resp_48_MCQ_094",
+   "key_concept": "• SCC: central, cavitation, PTHrP hypercalcemia\n• adenoca: peripheral",
+   "option_why": {
+    "A": "✓ central lung nodule",
+    "B": "peripheral nodule = adenocarcinoma",
+    "C": "patchy apex = TB",
+    "D": "large hilar mass = small cell",
+    "E": "pleural thickening = mesothelioma"
+   }
+  },
+  {
+   "id": "RESP-48-MCQ-095",
+   "block": "RESP",
+   "cohort": 48,
+   "n": 95,
+   "type": "MCQ",
+   "stem": "A 1-year-old boy had sudden respiratory distress during eating mangosteen. Physical examination showed BT 37.3 °C , RR 50/min , PR 120/min , BP 90/65 mmHg , mild cyanosis , weak cough , inspiratory stridor with suprasternal notch retraction. Which of following is the mechanism of hypoxemia?",
+   "options": {
+    "A": "Diffusion defect",
+    "B": "V/Q mismatch",
+    "C": "Hypoventilation",
+    "D": "Decrease inspired FiO2",
+    "E": "Impaired O2 binding capacity"
+   },
+   "answer": "B",
+   "answer_status": "disputed",
+   "explanation": "foreign body ที่ larynx/trachea ส่วนบน มี stridor: เฉลยต้นฉบับ B (V/Q mismatch); AI เลือก C (hypoventilation)\n⚠️ เฉลยขัดกับ AI",
+   "refs": [
+    {
+     "paper": "MCQ48",
+     "pages": [
+      37
+     ]
+    },
+    {
+     "paper": "MCQ48-KEY",
+     "pages": [
+      37
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "resp_48_MCQ_095",
+   "ai_answer": "C",
+   "key_concept": "• upper airway obstruction → alveolar hypoventilation\n• ข้อนี้เฉลยต้นฉบับขัดกับ AI",
+   "option_why": {
+    "A": "diffusion defect ไม่ใช่",
+    "B": "✓ V/Q mismatch (ตามเฉลยต้นฉบับ)",
+    "C": "hypoventilation จากการอุดทางเดินหายใจส่วนบน (AI เลือกตัวนี้)",
+    "D": "FiO₂ ปกติ",
+    "E": "O₂ binding ปกติ"
+   }
+  },
+  {
+   "id": "RESP-48-MCQ-096",
+   "block": "RESP",
+   "cohort": 48,
+   "n": 96,
+   "type": "MCQ",
+   "stem": "A 32-year-old woman presents with purulent nasal discharge, facial pain and high-grade fever for 10 years. Plain X-ray shows air-fluid level in both maxillary sinuses. Which of following is the pathophysiology of this condition?",
+   "options": {
+    "A": "Obstruction of paranasal sinuses opening",
+    "B": "Traumatic fracture of nasal conchae",
+    "C": "Hypermotility of cilia",
+    "D": "Increase permeability of respiratory epithelium",
+    "E": "Chronic exposure of aeroallergen"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "sinusitis เรื้อรัง air-fluid level เกิดจากรูเปิด sinus อุดกั้น",
+   "refs": [
+    {
+     "paper": "MCQ48",
+     "pages": [
+      37
+     ]
+    },
+    {
+     "paper": "MCQ48-KEY",
+     "pages": [
+      37
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "resp_48_MCQ_096",
+   "key_concept": "• ostiomeatal obstruction → mucus ค้าง\n• ติดเชื้อซ้ำ",
+   "option_why": {
+    "A": "✓ obstruction ของ paranasal sinus opening",
+    "B": "fracture ของ concha ไม่ใช่",
+    "C": "cilia hypomotility ไม่ใช่ hypermotility",
+    "D": "permeability เพิ่มไม่ใช่เหตุหลัก",
+    "E": "aeroallergen เป็นสาเหตุย่อย"
+   }
+  },
+  {
+   "id": "RESP-48-MCQ-097",
+   "block": "RESP",
+   "cohort": 48,
+   "n": 97,
+   "type": "MCQ",
+   "stem": "Which of the following bronchodilators is inhibit phosphodiesterase?",
+   "options": {
+    "A": "Salmeterol",
+    "B": "Metoprolol",
+    "C": "Theophylline",
+    "D": "Ipratropium",
+    "E": "Formoterol"
+   },
+   "answer": "C",
+   "answer_status": "verified",
+   "explanation": "theophylline ยับยั้ง phosphodiesterase",
+   "refs": [
+    {
+     "paper": "MCQ48",
+     "pages": [
+      38
+     ]
+    },
+    {
+     "paper": "MCQ48-KEY",
+     "pages": [
+      38
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "resp_48_MCQ_097",
+   "key_concept": "• methylxanthine: PDE inhibitor + adenosine antagonist\n• therapeutic window แคบ",
+   "option_why": {
+    "A": "salmeterol = β₂ agonist",
+    "B": "metoprolol = β₁ blocker",
+    "C": "✓ theophylline",
+    "D": "ipratropium = anticholinergic",
+    "E": "formoterol = β₂ agonist"
+   }
+  },
+  {
+   "id": "RESP-48-MCQ-098",
+   "block": "RESP",
+   "cohort": 48,
+   "n": 98,
+   "type": "MCQ",
+   "stem": "A 55-year-old man was admitted to hospital because of fever with sore throat and chills lasting for 4 days. Physical examination showed pharyngitis, and mildly increased sputum excretion. Notably, Gram-positive cocci with beta-hemolysis were detected in sputum and blood culture samples. What is the most likely causative organism?",
+   "options": {
+    "A": "Streptococcus pneumoniae",
+    "B": "Streptococcus epidermidis",
+    "C": "Streptococcus pyogenes",
+    "D": "Staphylococcus aureus",
+    "E": "Streptococcus agalactiae"
+   },
+   "answer": "C",
+   "answer_status": "verified",
+   "explanation": "Gram-positive cocci beta-hemolysis ในเสมหะ + เลือด = Streptococcus pyogenes (Group A)",
+   "refs": [
+    {
+     "paper": "MCQ48",
+     "pages": [
+      38
+     ]
+    },
+    {
+     "paper": "MCQ48-KEY",
+     "pages": [
+      38
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "resp_48_MCQ_098",
+   "key_concept": "• GAS: beta-hemolytic, bacitracin sensitive\n• pharyngitis → bacteremia",
+   "option_why": {
+    "A": "S. pneumoniae alpha-hemolytic",
+    "B": "S. epidermidis ไม่ใช่",
+    "C": "✓ S. pyogenes (beta-hemolytic)",
+    "D": "S. aureus เป็น clusters",
+    "E": "S. agalactiae พบทารกแรกเกิด"
+   }
+  },
+  {
+   "id": "RESP-48-MCQ-099",
+   "block": "RESP",
+   "cohort": 48,
+   "n": 99,
+   "type": "MCQ",
+   "stem": "A 12-year-old boy presents with acute dyspnea. Physical examination reveals 37°C , RR 40/min , PR 100/min , Lung : bilateral wheezing , otherwise normal. Which of the following medications is the most appropriate for this patient?",
+   "options": {
+    "A": "Inhaled cromolyn",
+    "B": "Oral montelukast",
+    "C": "Inhaled albuterol",
+    "D": "Intravenous theophylline",
+    "E": "Inhaled beclomethasone"
+   },
+   "answer": "C",
+   "answer_status": "verified",
+   "explanation": "เด็กหอบ wheezing เฉียบพลัน ใช้ inhaled albuterol ก่อน",
+   "refs": [
+    {
+     "paper": "MCQ48",
+     "pages": [
+      39
+     ]
+    },
+    {
+     "paper": "MCQ48-KEY",
+     "pages": [
+      39
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "resp_48_MCQ_099",
+   "key_concept": "• acute asthma → SABA\n• controller ไม่ใช้ rescue",
+   "option_why": {
+    "A": "cromolyn ป้องกันไม่ใช่ช่วยเฉียบพลัน",
+    "B": "montelukast ออกฤทธิ์ช้า",
+    "C": "✓ inhaled albuterol",
+    "D": "IV theophylline ผลข้างเคียงมาก",
+    "E": "beclomethasone เป็น controller"
+   }
+  },
+  {
+   "id": "RESP-48-MCQ-100",
+   "block": "RESP",
+   "cohort": 48,
+   "n": 100,
+   "type": "MCQ",
+   "stem": "A 65-year-old male is diagnosed with chronic obstructive pulmonary disease COPD ǰand heart disease. Inhaled ipratropium bromide is prescribed to him for relieve his dyspnea. Which of the following is the target of this drug?",
+   "options": {
+    "A": "IgE",
+    "B": "Beta2 receptor",
+    "C": "Phosphodiesterase",
+    "D": "COX 2",
+    "E": "Muscarinic receptor"
+   },
+   "answer": "E",
+   "answer_status": "verified",
+   "explanation": "ipratropium (anticholinergic) ออกฤทธิ์ที่ muscarinic receptor",
+   "refs": [
+    {
+     "paper": "MCQ48",
+     "pages": [
+      39
+     ]
+    },
+    {
+     "paper": "MCQ48-KEY",
+     "pages": [
+      39
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "resp_48_MCQ_100",
+   "key_concept": "• ipratropium: M₃ antagonist\n• ลด vagal bronchoconstriction",
+   "option_why": {
+    "A": "IgE คือเป้าหมายของ omalizumab",
+    "B": "β₂ receptor คือ salbutamol",
+    "C": "PDE คือ theophylline",
+    "D": "COX-2 คือ NSAID",
+    "E": "✓ muscarinic receptor"
+   }
+  }
+ ]
+}
