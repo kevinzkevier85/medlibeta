@@ -1,0 +1,226 @@
+{
+ "meta": {
+  "set_id": "50_KF",
+  "block": "NERV",
+  "cohort": 50,
+  "type": "KF",
+  "title": "KF Nervous System · Med PSU 50",
+  "time_limit_min": 45,
+  "generated_by": "auditor/tools/build_kf.py from auditor/data/work/nerv_50_KF.kf.json — do not edit by hand"
+ },
+ "questions": [
+  {
+   "id": "NERV-50-KF-001",
+   "block": "NERV",
+   "cohort": 50,
+   "n": 1,
+   "type": "KF",
+   "case": "58-year-old male: sudden right facial palsy LMN, partial ptosis with miosis right eye, normal EOM, mild dysarthria, normal power, impaired finger-to-nose and heel-to-knee on the right",
+   "items": [
+    {
+     "id": "1.1",
+     "prompt": "Where is the lesion (be specific)? (10 points)",
+     "format": "short",
+     "accepted": [
+      "pons",
+      "caudal",
+      "lateral"
+     ],
+     "key_text": "Right lateral pons (caudal pons) — motor VII + Horner (sympathetic) + cerebellar tract (MCP)",
+     "source_key": "เฉลย: Right lateral pons (caudal pons) — motor VII + Horner (sympathetic) + cerebellar tract (MCP)"
+    },
+    {
+     "id": "1.2",
+     "prompt": "Which artery is affected (be specific)? (10 points)",
+     "format": "short",
+     "accepted": [
+      "aica",
+      "anterior inferior cerebellar"
+     ],
+     "key_text": "Right anterior inferior cerebellar artery (AICA)",
+     "source_key": "เฉลย: Right anterior inferior cerebellar artery (AICA)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF50",
+     "pages": [
+      1
+     ]
+    },
+    {
+     "paper": "KF50-KEY",
+     "pages": [
+      1
+     ]
+    }
+   ],
+   "tags": [
+    "neurology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "NERV-50-KF-002",
+   "block": "NERV",
+   "cohort": 50,
+   "n": 2,
+   "type": "KF",
+   "case": "45-year-old male after aortic surgery: weakness in both legs, unable to dorsiflex feet, numbness from nipple level downward, bilateral Babinski, loose sphincter, absent bulbocavernosus reflex; good joint position and proprioception",
+   "items": [
+    {
+     "id": "2.1",
+     "prompt": "What is clinical syndrome in this patient? (10 points)",
+     "format": "short",
+     "accepted": [
+      "anterior spinal",
+      "anterior cord"
+     ],
+     "key_text": "Anterior spinal artery syndrome / anterior cord syndrome",
+     "source_key": "เฉลย: Anterior spinal artery syndrome / anterior cord syndrome"
+    },
+    {
+     "id": "2.2",
+     "prompt": "Where is the lesion? (be specific) (10 points)",
+     "format": "short",
+     "accepted": [
+      "anterior",
+      "2/3",
+      "t4",
+      "spinal cord"
+     ],
+     "key_text": "Anterior 2/3 of spinal cord at T4 level (spinothalamic เริ่ม T2 เพราะ Lissauer's tract ตัวมาก่อน)",
+     "source_key": "เฉลย: Anterior 2/3 of spinal cord at T4 level (spinothalamic เริ่ม T2 เพราะ Lissauer's tract ตัวมาก่อน)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF50",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "KF50-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [
+    "neurology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "NERV-50-KF-003",
+   "block": "NERV",
+   "cohort": 50,
+   "n": 3,
+   "type": "KF",
+   "case": "ผู้ป่วยหญิงอายุ 60 ปี เห็นภาพซ้อนแนวราบหลังตื่นนอน ปิดตาข้างใดข้างหนึ่งภาพซ้อนหาย มองใกล้ซ้อนมากขึ้น มองไกลซ้อนน้อยลง มองไปทางซ้ายซ้อนมากขึ้น ไม่ชา ไม่อ่อนแรง ไม่สำลัก pupil 3 mm react ปกติ ไม่มี gaze-evoked nystagmus และตรวจ EOM ได้ผลดังภาพ",
+   "items": [
+    {
+     "id": "3.1",
+     "prompt": "จงบอก clinical syndrome ของผู้ป่วยรายนี้ (10 points)",
+     "format": "short",
+     "accepted": [
+      "medial rectus",
+      "oculomotor",
+      "cn iii"
+     ],
+     "key_text": "Isolated right medial rectus palsy / right oculomotor nerve palsy (medial rectus branch)",
+     "source_key": "เฉลย: Isolated right medial rectus palsy / right oculomotor nerve palsy (medial rectus branch)",
+     "image": "img/NERV-50-KF-003.jpg",
+     "image_caption": "การกลอกตา 9 ทิศ"
+    },
+    {
+     "id": "3.2",
+     "prompt": "จงบอกตำแหน่งของรอยโรคทางประสาทกายวิภาค (be specific) (10 points)",
+     "format": "short",
+     "accepted": [
+      "oculomotor",
+      "medial rectus",
+      "inferior division"
+     ],
+     "key_text": "Right oculomotor nerve (branch to right medial rectus muscle / inferior division)",
+     "source_key": "เฉลย: Right oculomotor nerve (branch to right medial rectus muscle / inferior division)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF50",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "KF50-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [
+    "neurology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "NERV-50-KF-004",
+   "block": "NERV",
+   "cohort": 50,
+   "n": 4,
+   "type": "KF",
+   "case": "ประวัติ: เริ่มเดินไม่ได้ตอนโต ในครอบครัวมีพี่ชาย/น้องชายเป็นโรคนี้มาก่อน + ภาพที่แนบ",
+   "items": [
+    {
+     "id": "4.1",
+     "prompt": "จากภาพ คือ Clinical sign อะไร (10 points)",
+     "format": "short",
+     "accepted": [
+      "pseudohypertrophy",
+      "calf"
+     ],
+     "key_text": "Calf pseudohypertrophy",
+     "source_key": "เฉลย: Calf pseudohypertrophy",
+     "image": "img/NERV-50-KF-004.jpg",
+     "image_caption": "น่องผู้ป่วย"
+    },
+    {
+     "id": "4.2",
+     "prompt": "ให้วินิจฉัยโรค (10 points)",
+     "format": "short",
+     "accepted": [
+      "becker",
+      "muscular dystrophy"
+     ],
+     "key_text": "Becker muscular dystrophy (เริ่มเดินไม่ได้ตอนโต, X-linked recessive)",
+     "source_key": "เฉลย: Becker muscular dystrophy (เริ่มเดินไม่ได้ตอนโต, X-linked recessive)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF50",
+     "pages": [
+      3
+     ]
+    },
+    {
+     "paper": "KF50-KEY",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [
+    "neurology"
+   ],
+   "source": "claude-mcp"
+  }
+ ]
+}
