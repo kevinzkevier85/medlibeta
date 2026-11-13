@@ -1,0 +1,856 @@
+{
+ "meta": {
+  "set_id": "44_OSPE",
+  "block": "IMM",
+  "cohort": 44,
+  "type": "OSPE",
+  "title": "OSPE Immunity · Med PSU 44",
+  "generated_by": "auditor/tools/build_kf.py from auditor/data/work/imm_44_OSPE.kf.json — do not edit by hand"
+ },
+ "questions": [
+  {
+   "id": "IMM-44-OSPE-001",
+   "block": "IMM",
+   "cohort": 44,
+   "n": 1,
+   "type": "OSPE",
+   "station": 1,
+   "stem": "สถานี 1: จากภาพ (A และ B เป็นอวัยวะ ก และ ข เป็นโครงสร้างในอวัยวะนั้น)",
+   "items": [
+    {
+     "id": "1.1",
+     "prompt": "รูป ก คืออะไร",
+     "format": "short",
+     "accepted": [
+      "white pulp"
+     ],
+     "keywords_all": [
+      "white pulp"
+     ],
+     "key_text": "White pulp",
+     "source_key": "เฉลย: White pulp",
+     "image": "img/IMM-44-OSPE-001.jpg",
+     "image_caption": "Spleen และ thymus (H&E)"
+    },
+    {
+     "id": "1.2",
+     "prompt": "อวัยวะ A คือ",
+     "format": "short",
+     "accepted": [
+      "spleen"
+     ],
+     "keywords_all": [
+      "spleen"
+     ],
+     "key_text": "Spleen",
+     "source_key": "เฉลย: Spleen"
+    },
+    {
+     "id": "1.3",
+     "prompt": "รูป ข คืออะไร",
+     "format": "short",
+     "accepted": [
+      "hassall"
+     ],
+     "keywords_all": [
+      "hassall"
+     ],
+     "key_text": "Hassall's corpuscle",
+     "source_key": "เฉลย: Hassall's corpuscle"
+    },
+    {
+     "id": "1.4",
+     "prompt": "อวัยวะ B คืออะไร",
+     "format": "short",
+     "accepted": [
+      "thymus"
+     ],
+     "keywords_all": [
+      "thymus"
+     ],
+     "key_text": "Thymus",
+     "source_key": "เฉลย: Thymus"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE44",
+     "pages": [
+      1
+     ]
+    },
+    {
+     "paper": "OSPE44-KEY",
+     "pages": [
+      1
+     ]
+    }
+   ],
+   "tags": [
+    "histology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "IMM-44-OSPE-004",
+   "block": "IMM",
+   "cohort": 44,
+   "n": 4,
+   "type": "OSPE",
+   "station": 4,
+   "stem": "สถานี 4: จากรูป (ดู Hemagglutination test)",
+   "items": [
+    {
+     "id": "4.1",
+     "prompt": "จากรูปเป็นการตรวจผลโดยใช้หลัก Ag/Ab reaction แบบใด",
+     "format": "short",
+     "accepted": [
+      "agglutination"
+     ],
+     "keywords_all": [
+      "agglutination"
+     ],
+     "key_text": "Agglutination (particle Ag + Ab) — hemagglutination",
+     "source_key": "เฉลย: Agglutination (particle Ag + Ab) — hemagglutination",
+     "image": "img/IMM-44-OSPE-002.jpg",
+     "image_caption": "Hemagglutination test"
+    },
+    {
+     "id": "4.2",
+     "prompt": "ยกตัวอย่างเชื้อก่อโรคที่ต้องใช้วิธีการตรวจนี้ 1 ชนิด",
+     "format": "short",
+     "accepted": [
+      "salmonella"
+     ],
+     "keywords_all": [
+      "salmonella"
+     ],
+     "key_text": "Salmonella typhi (Widal test)",
+     "source_key": "เฉลย: Salmonella typhi (Widal test)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE44",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "OSPE44-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [
+    "microbiology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "IMM-44-OSPE-005",
+   "block": "IMM",
+   "cohort": 44,
+   "n": 5,
+   "type": "OSPE",
+   "station": 5,
+   "stem": "สถานี 5: จากการทดสอบ (ดูภาพ plate dilution)",
+   "items": [
+    {
+     "id": "5.1",
+     "prompt": "จงอ่านค่า Titer (Acute และ Convalescent)",
+     "format": "short",
+     "accepted": [
+      "80",
+      "1280"
+     ],
+     "keywords_all": [
+      "1280"
+     ],
+     "key_text": "Acute 1:80, Convalescent 1:1280 (เพิ่มขึ้นมากกว่า 4 เท่า — four-fold rising)",
+     "source_key": "เฉลย: Acute 1:80, Convalescent 1:1280 (เพิ่มขึ้นมากกว่า 4 เท่า — four-fold rising)",
+     "image": "img/IMM-44-OSPE-003.jpg",
+     "image_caption": "Titer ของ acute และ convalescent serum"
+    },
+    {
+     "id": "5.2",
+     "prompt": "ผู้ป่วยคนนี้ติดเชื้อหรือไม่",
+     "format": "short",
+     "accepted": [
+      "ติดเชื้อ"
+     ],
+     "keywords_all": [
+      "ติดเชื้อ"
+     ],
+     "key_text": "ติดเชื้อ (titer เพิ่มขึ้น ≥ 4 เท่า)",
+     "source_key": "เฉลย: ติดเชื้อ (titer เพิ่มขึ้น ≥ 4 เท่า)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE44",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "OSPE44-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [
+    "microbiology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "IMM-44-OSPE-006",
+   "block": "IMM",
+   "cohort": 44,
+   "n": 6,
+   "type": "OSPE",
+   "station": 6,
+   "stem": "สถานี 6: ถ้าผลการตรวจ HIV กับชุดทดสอบได้ดังนี้ CMIA เป็นบวก (reactive), CLIA เป็นบวก (reactive), GPA เป็นลบ (non-reactive)",
+   "items": [
+    {
+     "id": "6.1",
+     "prompt": "ให้ผลการตรวจว่าอย่างไร",
+     "format": "short",
+     "accepted": [
+      "inconclusive"
+     ],
+     "keywords_all": [
+      "inconclusive"
+     ],
+     "key_text": "Inconclusive",
+     "source_key": "เฉลย: Inconclusive"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE44",
+     "pages": [
+      3
+     ]
+    },
+    {
+     "paper": "OSPE44-KEY",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [
+    "microbiology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "IMM-44-OSPE-007",
+   "block": "IMM",
+   "cohort": 44,
+   "n": 7,
+   "type": "OSPE",
+   "station": 7,
+   "stem": "สถานี 7: จากรูป (ชุดตรวจ NS1 และ IgG/IgM)",
+   "items": [
+    {
+     "id": "7.1.1",
+     "prompt": "NS1 Ag อ่านผล",
+     "format": "short",
+     "accepted": [
+      "positive",
+      "บวก"
+     ],
+     "keywords_all": [
+      "positive"
+     ],
+     "key_text": "Positive",
+     "source_key": "เฉลย: Positive",
+     "image": "img/IMM-44-OSPE-004.jpg",
+     "image_caption": "Rapid test NS1/IgG/IgM"
+    },
+    {
+     "id": "7.1.2",
+     "prompt": "IgM อ่านผล",
+     "format": "short",
+     "accepted": [
+      "negative",
+      "ลบ"
+     ],
+     "keywords_all": [
+      "negative"
+     ],
+     "key_text": "Negative",
+     "source_key": "เฉลย: Negative"
+    },
+    {
+     "id": "7.1.3",
+     "prompt": "IgG อ่านผล",
+     "format": "short",
+     "accepted": [
+      "negative",
+      "ลบ"
+     ],
+     "keywords_all": [
+      "negative"
+     ],
+     "key_text": "Negative",
+     "source_key": "เฉลย: Negative"
+    },
+    {
+     "id": "7.2",
+     "prompt": "ผู้ป่วยติดเชื้อ dengue virus หรือไม่",
+     "format": "short",
+     "accepted": [
+      "ติดเชื้อ"
+     ],
+     "keywords_all": [
+      "ติดเชื้อ"
+     ],
+     "key_text": "ติดเชื้อ (NS1 positive = early infection)",
+     "source_key": "เฉลย: ติดเชื้อ (NS1 positive = early infection)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE44",
+     "pages": [
+      3
+     ]
+    },
+    {
+     "paper": "OSPE44-KEY",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [
+    "microbiology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "IMM-44-OSPE-008",
+   "block": "IMM",
+   "cohort": 44,
+   "n": 8,
+   "type": "OSPE",
+   "station": 8,
+   "stem": "สถานี 8: จากรูป (ภาพ cell culture)",
+   "items": [
+    {
+     "id": "8.1",
+     "prompt": "เป็นการวินิจฉัยเชื้ออะไร และด้วยวิธีใด",
+     "format": "short",
+     "accepted": [
+      "virus",
+      "cpe",
+      "cytopathic"
+     ],
+     "keywords_all": [
+      "cpe"
+     ],
+     "key_text": "Virus — ดู cytopathic effect (CPE) ใน cell culture",
+     "source_key": "เฉลย: Virus — ดู cytopathic effect (CPE) ใน cell culture",
+     "image": "img/IMM-44-OSPE-005.jpg",
+     "image_caption": "Cell culture: CPE"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE44",
+     "pages": [
+      3
+     ]
+    },
+    {
+     "paper": "OSPE44-KEY",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [
+    "microbiology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "IMM-44-OSPE-012",
+   "block": "IMM",
+   "cohort": 44,
+   "n": 12,
+   "type": "OSPE",
+   "station": 12,
+   "stem": "สถานี 12: จากการทดสอบดังรูป (หลอดทดสอบ antibiotic dilution)",
+   "items": [
+    {
+     "id": "12.1",
+     "prompt": "จงหาค่า MIC",
+     "format": "short",
+     "accepted": [
+      "1"
+     ],
+     "keywords_all": [
+      "1"
+     ],
+     "key_text": "MIC = 1 µg/mL (ความเข้มข้นต่ำสุดที่ยับยั้งการเจริญ)",
+     "source_key": "เฉลย: MIC = 1 µg/mL (ความเข้มข้นต่ำสุดที่ยับยั้งการเจริญ)",
+     "image": "img/IMM-44-OSPE-006.jpg",
+     "image_caption": "Antibiotic dilution tubes"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE44",
+     "pages": [
+      4
+     ]
+    },
+    {
+     "paper": "OSPE44-KEY",
+     "pages": [
+      4
+     ]
+    }
+   ],
+   "tags": [
+    "microbiology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "IMM-44-OSPE-014",
+   "block": "IMM",
+   "cohort": 44,
+   "n": 14,
+   "type": "OSPE",
+   "station": 14,
+   "stem": "สถานี 14: จากภาพกล้องจุลทรรศน์ (ลูกศร X ชี้ส่วนที่เป็น diaphragm)",
+   "items": [
+    {
+     "id": "14.1",
+     "prompt": "ส่วนที่ชี้เรียกว่าอะไร",
+     "format": "short",
+     "accepted": [
+      "diaphragm"
+     ],
+     "keywords_all": [
+      "diaphragm"
+     ],
+     "key_text": "Diaphragm",
+     "source_key": "เฉลย: Diaphragm",
+     "image": "img/IMM-44-OSPE-007.jpg",
+     "image_caption": "กล้องจุลทรรศน์"
+    },
+    {
+     "id": "14.2",
+     "prompt": "หากใช้หัว 100× ต้องปรับส่วนที่ชี้อย่างไร (a ปรับเปิดนิดเดียว / b ปรับเปิดมาก ๆ)",
+     "format": "short",
+     "accepted": [
+      "b"
+     ],
+     "keywords_all": [
+      "b"
+     ],
+     "key_text": "b — ปรับเปิดมาก ๆ (กำลังขยายมาก เลนส์ใกล้ slide ต้องการแสงเข้ามาก)",
+     "source_key": "เฉลย: b — ปรับเปิดมาก ๆ (กำลังขยายมาก เลนส์ใกล้ slide ต้องการแสงเข้ามาก)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE44",
+     "pages": [
+      4
+     ]
+    },
+    {
+     "paper": "OSPE44-KEY",
+     "pages": [
+      4
+     ]
+    }
+   ],
+   "tags": [
+    "microbiology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "IMM-44-OSPE-015",
+   "block": "IMM",
+   "cohort": 44,
+   "n": 15,
+   "type": "OSPE",
+   "station": 15,
+   "stem": "สถานี 15: จากสไลด์ที่แสดงไว้",
+   "items": [
+    {
+     "id": "15.1",
+     "prompt": "ชื่อวิทยาศาสตร์ว่าอะไร",
+     "format": "short",
+     "accepted": [
+      "cryptococc"
+     ],
+     "keywords_all": [
+      "cryptococc"
+     ],
+     "key_text": "Cryptococcus neoformans (yeast cell ที่มี capsule ขนาดใหญ่ล้อมรอบ)",
+     "source_key": "เฉลย: Cryptococcus neoformans (yeast cell ที่มี capsule ขนาดใหญ่ล้อมรอบ)",
+     "image": "img/IMM-44-OSPE-008.jpg",
+     "image_caption": "India ink"
+    },
+    {
+     "id": "15.2",
+     "prompt": "เป็น dimorphic fungus ใช่หรือไม่",
+     "format": "short",
+     "accepted": [
+      "ไม่"
+     ],
+     "keywords_all": [
+      "ไม่"
+     ],
+     "key_text": "ไม่ใช่ (เป็น yeast)",
+     "source_key": "เฉลย: ไม่ใช่ (เป็น yeast)"
+    },
+    {
+     "id": "15.3",
+     "prompt": "ใช้เทคนิคอะไรในการตรวจ",
+     "format": "short",
+     "accepted": [
+      "india ink"
+     ],
+     "keywords_all": [
+      "india"
+     ],
+     "key_text": "India ink",
+     "source_key": "เฉลย: India ink"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE44",
+     "pages": [
+      5
+     ]
+    },
+    {
+     "paper": "OSPE44-KEY",
+     "pages": [
+      5
+     ]
+    }
+   ],
+   "tags": [
+    "microbiology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "IMM-44-OSPE-016",
+   "block": "IMM",
+   "cohort": 44,
+   "n": 16,
+   "type": "OSPE",
+   "station": 16,
+   "stem": "สถานี 16: จงตอบคำถามต่อไปนี้ (สไลด์แสดง conidia และ phialide)",
+   "items": [
+    {
+     "id": "16.1",
+     "prompt": "ชื่อวิทยาศาสตร์คืออะไร",
+     "format": "short",
+     "accepted": [
+      "marneffei"
+     ],
+     "keywords_all": [
+      "marneffei"
+     ],
+     "key_text": "Penicillium (Talaromyces) marneffei",
+     "source_key": "เฉลย: Penicillium (Talaromyces) marneffei",
+     "image": "img/IMM-44-OSPE-009.jpg",
+     "image_caption": "Mold phase: conidia และ phialide"
+    },
+    {
+     "id": "16.2",
+     "prompt": "เป็น dimorphic fungi หรือไม่",
+     "format": "short",
+     "accepted": [
+      "ใช่",
+      "dimorphic"
+     ],
+     "keywords_all": [
+      "ใช่"
+     ],
+     "key_text": "ใช่",
+     "source_key": "เฉลย: ใช่"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE44",
+     "pages": [
+      5
+     ]
+    },
+    {
+     "paper": "OSPE44-KEY",
+     "pages": [
+      5
+     ]
+    }
+   ],
+   "tags": [
+    "microbiology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "IMM-44-OSPE-017",
+   "block": "IMM",
+   "cohort": 44,
+   "n": 17,
+   "type": "OSPE",
+   "station": 17,
+   "stem": "สถานี 17: จากสไลด์ที่แสดงให้",
+   "items": [
+    {
+     "id": "17.1",
+     "prompt": "ชื่อวิทยาศาสตร์ของสิ่งมีชีวิตดังกล่าว",
+     "format": "short",
+     "accepted": [
+      "bancrofti"
+     ],
+     "keywords_all": [
+      "bancrofti"
+     ],
+     "key_text": "Wuchereria bancrofti",
+     "source_key": "เฉลย: Wuchereria bancrofti",
+     "image": "img/IMM-44-OSPE-010.jpg",
+     "image_caption": "Blood smear: microfilaria"
+    },
+    {
+     "id": "17.2",
+     "prompt": "ระยะของสิ่งมีชีวิตที่เห็น คือ",
+     "format": "short",
+     "accepted": [
+      "microfilaria"
+     ],
+     "keywords_all": [
+      "microfilaria"
+     ],
+     "key_text": "Microfilaria",
+     "source_key": "เฉลย: Microfilaria"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE44",
+     "pages": [
+      5
+     ]
+    },
+    {
+     "paper": "OSPE44-KEY",
+     "pages": [
+      5
+     ]
+    }
+   ],
+   "tags": [
+    "parasitology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "IMM-44-OSPE-018",
+   "block": "IMM",
+   "cohort": 44,
+   "n": 18,
+   "type": "OSPE",
+   "station": 18,
+   "stem": "สถานี 18: จากสไลด์ที่แสดงให้",
+   "items": [
+    {
+     "id": "18.1",
+     "prompt": "คือเชื้ออะไร",
+     "format": "short",
+     "accepted": [
+      "trichinella"
+     ],
+     "keywords_all": [
+      "trichinella"
+     ],
+     "key_text": "Trichinella spiralis",
+     "source_key": "เฉลย: Trichinella spiralis",
+     "image": "img/IMM-44-OSPE-011.jpg",
+     "image_caption": "กล้ามเนื้อ: coiled larva"
+    },
+    {
+     "id": "18.2",
+     "prompt": "วินิจฉัยได้อย่างไร",
+     "format": "short",
+     "accepted": [
+      "muscle biopsy",
+      "biopsy"
+     ],
+     "keywords_all": [
+      "biopsy"
+     ],
+     "key_text": "Muscle biopsy (พบ coiled larva ในกล้ามเนื้อ)",
+     "source_key": "เฉลย: Muscle biopsy (พบ coiled larva ในกล้ามเนื้อ)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE44",
+     "pages": [
+      6
+     ]
+    },
+    {
+     "paper": "OSPE44-KEY",
+     "pages": [
+      6
+     ]
+    }
+   ],
+   "tags": [
+    "parasitology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "IMM-44-OSPE-019",
+   "block": "IMM",
+   "cohort": 44,
+   "n": 19,
+   "type": "OSPE",
+   "station": 19,
+   "stem": "สถานี 19: จากสไลด์ที่กำหนดให้",
+   "items": [
+    {
+     "id": "19.1",
+     "prompt": "เชื้อที่เห็นชื่อวิทยาศาสตร์คือ",
+     "format": "short",
+     "accepted": [
+      "falciparum"
+     ],
+     "keywords_all": [
+      "falciparum"
+     ],
+     "key_text": "Plasmodium falciparum",
+     "source_key": "เฉลย: Plasmodium falciparum",
+     "image": "img/IMM-44-OSPE-012.jpg",
+     "image_caption": "Blood smear"
+    },
+    {
+     "id": "19.2",
+     "prompt": "เชื้ออยู่ในระยะอะไร",
+     "format": "short",
+     "accepted": [
+      "gametocyte"
+     ],
+     "keywords_all": [
+      "gametocyte"
+     ],
+     "key_text": "Gametocyte (รูปกล้วยหอม)",
+     "source_key": "เฉลย: Gametocyte (รูปกล้วยหอม)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE44",
+     "pages": [
+      6
+     ]
+    },
+    {
+     "paper": "OSPE44-KEY",
+     "pages": [
+      6
+     ]
+    }
+   ],
+   "tags": [
+    "parasitology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "IMM-44-OSPE-020",
+   "block": "IMM",
+   "cohort": 44,
+   "n": 20,
+   "type": "OSPE",
+   "station": 20,
+   "stem": "สถานี 20: จากสไลด์ที่กำหนดให้",
+   "items": [
+    {
+     "id": "20.1",
+     "prompt": "เชื้อที่เห็นชื่อวิทยาศาสตร์คือ",
+     "format": "short",
+     "accepted": [
+      "vivax"
+     ],
+     "keywords_all": [
+      "vivax"
+     ],
+     "key_text": "Plasmodium vivax",
+     "source_key": "เฉลย: Plasmodium vivax",
+     "image": "img/IMM-44-OSPE-013.jpg",
+     "image_caption": "Blood smear"
+    },
+    {
+     "id": "20.2",
+     "prompt": "เชื้ออยู่ในระยะอะไร",
+     "format": "short",
+     "accepted": [
+      "trophozoite"
+     ],
+     "keywords_all": [
+      "trophozoite"
+     ],
+     "key_text": "Growing trophozoite (RBC ขยายใหญ่กว่าปกติ)",
+     "source_key": "เฉลย: Growing trophozoite (RBC ขยายใหญ่กว่าปกติ)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE44",
+     "pages": [
+      6
+     ]
+    },
+    {
+     "paper": "OSPE44-KEY",
+     "pages": [
+      6
+     ]
+    }
+   ],
+   "tags": [
+    "parasitology"
+   ],
+   "source": "claude-mcp"
+  }
+ ]
+}

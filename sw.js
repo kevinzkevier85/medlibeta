@@ -1,6 +1,6 @@
 // MedLib service worker: install as an app + open offline.
 // Bump VERSION with every release (same number as version.json) so old caches are cleared.
-const VERSION = "0.36.1";
+const VERSION = "0.39.0";
 const CACHE = "medlib-" + VERSION;
 const SHELL = [
   "./", "./index.html", "./manifest.webmanifest",

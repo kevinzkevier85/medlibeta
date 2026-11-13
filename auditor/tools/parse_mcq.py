@@ -81,7 +81,7 @@ def parse(set_id, bare_numbers=False, part_offsets=None, number_own_line=False):
         # Older recalled papers skip numbers (questions nobody remembered) and may start above 1:
         # accept a jump forward when the line reads like a question, not like a numbered list item.
         n = int(m.group(1)) if m else 0
-        jump = m and expect < n <= expect + 20 and len(m.group(2)) >= 15 and re.search(r"[A-Za-zก-๙]{3}", m.group(2)) and (len(cur["choices"]) >= 2 or not cur["choices"] if cur is not None else re.search(r"[A-Za-z]{3}", m.group(2)))
+        jump = m and expect < n <= expect + 60 and len(m.group(2)) >= 15 and re.search(r"[A-Za-zก-๙]{3}", m.group(2)) and (len(cur["choices"]) >= 2 or not cur["choices"] if cur is not None else re.search(r"[A-Za-z]{3}", m.group(2)))
         if fresh and m and len(m.group(2)) >= 15:
             expect = n  # a part may start at any number (e.g. "PART 4" starts at 34)
         if m and (n == expect or (jump and not (cur is not None and field != "stem" and cur["choices"] and len(cur["choices"]) < 2))):

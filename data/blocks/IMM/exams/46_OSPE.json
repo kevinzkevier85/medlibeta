@@ -1,0 +1,861 @@
+{
+ "meta": {
+  "set_id": "46_OSPE",
+  "block": "IMM",
+  "cohort": 46,
+  "type": "OSPE",
+  "title": "OSPE Immunity · Med PSU 46",
+  "generated_by": "auditor/tools/build_kf.py from auditor/data/work/imm_46_OSPE.kf.json — do not edit by hand"
+ },
+ "questions": [
+  {
+   "id": "IMM-46-OSPE-001",
+   "block": "IMM",
+   "cohort": 46,
+   "n": 1,
+   "type": "OSPE",
+   "station": 1,
+   "stem": "สถานี 1: จากรูป (ลูกศรชี้โครงสร้าง วงกลมชี้ส่วนในอวัยวะ)",
+   "items": [
+    {
+     "id": "1.1",
+     "prompt": "อวัยวะใด",
+     "format": "short",
+     "accepted": [
+      "lymph node"
+     ],
+     "keywords_all": [
+      "lymph node"
+     ],
+     "key_text": "Lymph node",
+     "source_key": "เฉลย: Lymph node",
+     "image": "img/IMM-46-OSPE-001.jpg",
+     "image_caption": "Lymph node (H&E)"
+    },
+    {
+     "id": "1.2",
+     "prompt": "ลูกศรที่ชี้คือโครงสร้างใด",
+     "format": "short",
+     "accepted": [
+      "capsule"
+     ],
+     "keywords_all": [
+      "capsule"
+     ],
+     "key_text": "Capsule",
+     "source_key": "เฉลย: Capsule"
+    },
+    {
+     "id": "1.3",
+     "prompt": "ในวงกลมมีส่วนประกอบของเซลล์ใด",
+     "format": "short",
+     "accepted": [
+      "t lymphocyte",
+      "t cell"
+     ],
+     "keywords_all": [
+      "t lymphocyte"
+     ],
+     "key_text": "T lymphocyte (paracortex)",
+     "source_key": "เฉลย: T lymphocyte (paracortex)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE46",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "OSPE46-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [
+    "histology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "IMM-46-OSPE-002",
+   "block": "IMM",
+   "cohort": 46,
+   "n": 2,
+   "type": "OSPE",
+   "station": 2,
+   "stem": "สถานี 2: จากภาพ",
+   "items": [
+    {
+     "id": "2.1",
+     "prompt": "นี่คืออวัยวะใด",
+     "format": "short",
+     "accepted": [
+      "thymus"
+     ],
+     "keywords_all": [
+      "thymus"
+     ],
+     "key_text": "Thymus gland",
+     "source_key": "เฉลย: Thymus gland",
+     "image": "img/IMM-46-OSPE-002.jpg",
+     "image_caption": "Thymus medulla (H&E)"
+    },
+    {
+     "id": "2.2",
+     "prompt": "จากลูกศรที่ชี้คือเซลล์/โครงสร้างอะไร",
+     "format": "short",
+     "accepted": [
+      "hassall"
+     ],
+     "keywords_all": [
+      "hassall"
+     ],
+     "key_text": "Hassall's corpuscle",
+     "source_key": "เฉลย: Hassall's corpuscle"
+    },
+    {
+     "id": "2.3",
+     "prompt": "อวัยวะนี้มีหน้าที่อะไร",
+     "format": "short",
+     "accepted": [
+      "t-cell",
+      "t cell",
+      "differentiation",
+      "maturation"
+     ],
+     "keywords_all": [
+      "t-cell"
+     ],
+     "key_text": "Site of T-cell differentiation and maturation",
+     "source_key": "เฉลย: Site of T-cell differentiation and maturation"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE46",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "OSPE46-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [
+    "histology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "IMM-46-OSPE-003",
+   "block": "IMM",
+   "cohort": 46,
+   "n": 3,
+   "type": "OSPE",
+   "station": 3,
+   "stem": "สถานี 3: จากกล้องจุลทรรศน์ (Gram-positive cocci เป็นกลุ่ม)",
+   "items": [
+    {
+     "id": "3.1",
+     "prompt": "ควรใช้การทดสอบอะไรเพื่อแยก Genus",
+     "format": "short",
+     "accepted": [
+      "catalase"
+     ],
+     "keywords_all": [
+      "catalase"
+     ],
+     "key_text": "Catalase test",
+     "source_key": "เฉลย: Catalase test",
+     "image": "img/IMM-46-OSPE-003.jpg",
+     "image_caption": "Gram stain: cocci เป็นกลุ่ม"
+    },
+    {
+     "id": "3.2",
+     "prompt": "ควรใช้การทดสอบอะไรเพื่อแยก Species",
+     "format": "short",
+     "accepted": [
+      "coagulase"
+     ],
+     "keywords_all": [
+      "coagulase"
+     ],
+     "key_text": "Coagulase test (ได้ Staphylococcus aureus)",
+     "source_key": "เฉลย: Coagulase test (ได้ Staphylococcus aureus)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE46",
+     "pages": [
+      3
+     ]
+    },
+    {
+     "paper": "OSPE46-KEY",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [
+    "microbiology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "IMM-46-OSPE-004",
+   "block": "IMM",
+   "cohort": 46,
+   "n": 4,
+   "type": "OSPE",
+   "station": 4,
+   "stem": "สถานี 4: รูปหลอดทดลอง (antibiotic dilution)",
+   "items": [
+    {
+     "id": "4.1",
+     "prompt": "ให้บอกค่า MIC",
+     "format": "short",
+     "accepted": [
+      "หลอดสุดท้าย",
+      "ใส",
+      "clear"
+     ],
+     "keywords_all": [
+      "ใส"
+     ],
+     "key_text": "อ่านค่าความเข้มข้นของหลอดสุดท้ายที่ยังคงใสอยู่ (µg/mL)",
+     "source_key": "เฉลย: อ่านค่าความเข้มข้นของหลอดสุดท้ายที่ยังคงใสอยู่ (µg/mL)",
+     "image": "img/IMM-46-OSPE-004.jpg",
+     "image_caption": "Antibiotic dilution tubes"
+    },
+    {
+     "id": "4.2",
+     "prompt": "ควรเอาหลอดไหนไปทดสอบต่อเพื่อหาค่า MBC",
+     "format": "short",
+     "accepted": [
+      "1-7",
+      "ใส"
+     ],
+     "keywords_all": [
+      "ใส"
+     ],
+     "key_text": "หลอดที่ 1–7 (หลอดที่ใสทุกหลอด)",
+     "source_key": "เฉลย: หลอดที่ 1–7 (หลอดที่ใสทุกหลอด)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE46",
+     "pages": [
+      3
+     ]
+    },
+    {
+     "paper": "OSPE46-KEY",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [
+    "microbiology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "IMM-46-OSPE-006",
+   "block": "IMM",
+   "cohort": 46,
+   "n": 6,
+   "type": "OSPE",
+   "station": 6,
+   "stem": "สถานี 6: Which of the following is the most appropriate for sterilization of a glass bottle filled with broth? (A Autoclave, B Hot air oven, C Filtration)",
+   "items": [
+    {
+     "id": "6.1",
+     "prompt": "ตัวเลือกที่เหมาะสมที่สุด",
+     "format": "short",
+     "accepted": [
+      "a",
+      "autoclave"
+     ],
+     "keywords_all": [
+      "autoclave"
+     ],
+     "key_text": "A — Autoclave (อาหารเลี้ยงเชื้อเหลวในขวดแก้ว)",
+     "source_key": "เฉลย: A — Autoclave (อาหารเลี้ยงเชื้อเหลวในขวดแก้ว)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE46",
+     "pages": [
+      4
+     ]
+    },
+    {
+     "paper": "OSPE46-KEY",
+     "pages": [
+      4
+     ]
+    }
+   ],
+   "tags": [
+    "microbiology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "IMM-46-OSPE-007",
+   "block": "IMM",
+   "cohort": 46,
+   "n": 7,
+   "type": "OSPE",
+   "station": 7,
+   "stem": "สถานี 7: จากกล้องจุลทรรศน์",
+   "items": [
+    {
+     "id": "7.1",
+     "prompt": "ที่เห็นในภาพคืออะไร",
+     "format": "short",
+     "accepted": [
+      "cryptococc"
+     ],
+     "keywords_all": [
+      "cryptococc"
+     ],
+     "key_text": "Cryptococcus neoformans",
+     "source_key": "เฉลย: Cryptococcus neoformans",
+     "image": "img/IMM-46-OSPE-005.jpg",
+     "image_caption": "India ink"
+    },
+    {
+     "id": "7.2",
+     "prompt": "เป็น dimorphic fungi หรือไม่",
+     "format": "short",
+     "accepted": [
+      "no",
+      "ไม่"
+     ],
+     "keywords_all": [
+      "no"
+     ],
+     "key_text": "No (เป็น yeast)",
+     "source_key": "เฉลย: No (เป็น yeast)"
+    },
+    {
+     "id": "7.3",
+     "prompt": "What is the stain technique",
+     "format": "short",
+     "accepted": [
+      "india ink"
+     ],
+     "keywords_all": [
+      "india"
+     ],
+     "key_text": "India ink",
+     "source_key": "เฉลย: India ink"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE46",
+     "pages": [
+      4
+     ]
+    },
+    {
+     "paper": "OSPE46-KEY",
+     "pages": [
+      4
+     ]
+    }
+   ],
+   "tags": [
+    "microbiology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "IMM-46-OSPE-008",
+   "block": "IMM",
+   "cohort": 46,
+   "n": 8,
+   "type": "OSPE",
+   "station": 8,
+   "stem": "สถานี 8: จากกล้องจุลทรรศน์",
+   "items": [
+    {
+     "id": "8.1",
+     "prompt": "คืออะไร",
+     "format": "short",
+     "accepted": [
+      "marneffei"
+     ],
+     "keywords_all": [
+      "marneffei"
+     ],
+     "key_text": "Penicillium (Talaromyces) marneffei",
+     "source_key": "เฉลย: Penicillium (Talaromyces) marneffei",
+     "image": "img/IMM-46-OSPE-006.jpg",
+     "image_caption": "Mold phase: conidiophore"
+    },
+    {
+     "id": "8.2",
+     "prompt": "เป็น dimorphic fungi หรือไม่",
+     "format": "short",
+     "accepted": [
+      "yes",
+      "ใช่"
+     ],
+     "keywords_all": [
+      "yes"
+     ],
+     "key_text": "Yes",
+     "source_key": "เฉลย: Yes"
+    },
+    {
+     "id": "8.3",
+     "prompt": "ทำให้เกิด skin lesion แบบใด",
+     "format": "short",
+     "accepted": [
+      "molluscum",
+      "umbilicated"
+     ],
+     "keywords_all": [
+      "molluscum"
+     ],
+     "key_text": "Molluscum contagiosum-like lesion (umbilicated papule)",
+     "source_key": "เฉลย: Molluscum contagiosum-like lesion (umbilicated papule)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE46",
+     "pages": [
+      4
+     ]
+    },
+    {
+     "paper": "OSPE46-KEY",
+     "pages": [
+      4
+     ]
+    }
+   ],
+   "tags": [
+    "microbiology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "IMM-46-OSPE-009",
+   "block": "IMM",
+   "cohort": 46,
+   "n": 9,
+   "type": "OSPE",
+   "station": 9,
+   "stem": "สถานี 9: Which mycotic infection found sclerotic body? (A Sporotrichosis, B Chromoblastomycosis, C Non-TB Mycobacterium, D Eumycotic mycetoma, E Actinomyces)",
+   "items": [
+    {
+     "id": "9.1",
+     "prompt": "ตัวเลือกที่ถูกต้อง",
+     "format": "short",
+     "accepted": [
+      "b",
+      "chromoblastomycosis"
+     ],
+     "keywords_all": [
+      "chromoblastomycosis"
+     ],
+     "key_text": "B — Chromoblastomycosis",
+     "source_key": "เฉลย: B — Chromoblastomycosis"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE46",
+     "pages": [
+      5
+     ]
+    },
+    {
+     "paper": "OSPE46-KEY",
+     "pages": [
+      5
+     ]
+    }
+   ],
+   "tags": [
+    "microbiology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "IMM-46-OSPE-010",
+   "block": "IMM",
+   "cohort": 46,
+   "n": 10,
+   "type": "OSPE",
+   "station": 10,
+   "stem": "สถานี 10: เด็กชายมาหาหมอ ตรวจพบ multiple granuloma and abscess containing large aggregate of fungal hyphae and abscess with extrusion granule (A Sporotrichosis, B Chromoblastomycosis, C Non-TB Mycobacterium, D Eumycotic mycetoma, E Actinomyces)",
+   "items": [
+    {
+     "id": "10.1",
+     "prompt": "ตัวเลือกที่ถูกต้อง",
+     "format": "short",
+     "accepted": [
+      "d",
+      "mycetoma"
+     ],
+     "keywords_all": [
+      "mycetoma"
+     ],
+     "key_text": "D — Eumycotic mycetoma",
+     "source_key": "เฉลย: D — Eumycotic mycetoma"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE46",
+     "pages": [
+      5
+     ]
+    },
+    {
+     "paper": "OSPE46-KEY",
+     "pages": [
+      5
+     ]
+    }
+   ],
+   "tags": [
+    "microbiology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "IMM-46-OSPE-011",
+   "block": "IMM",
+   "cohort": 46,
+   "n": 11,
+   "type": "OSPE",
+   "station": 11,
+   "stem": "สถานี 11: จากกล้องจุลทรรศน์",
+   "items": [
+    {
+     "id": "11.1",
+     "prompt": "ตัวอ่อนของสิ่งมีชีวิตนี้มีชื่อวิทยาศาสตร์ว่าอะไร",
+     "format": "short",
+     "accepted": [
+      "cysticercus cellulosae",
+      "cellulosae"
+     ],
+     "keywords_all": [
+      "cellulosae"
+     ],
+     "key_text": "Cysticercus cellulosae",
+     "source_key": "เฉลย: Cysticercus cellulosae",
+     "image": "img/IMM-46-OSPE-007.jpg",
+     "image_caption": "ตัวอ่อนพยาธิตืด"
+    },
+    {
+     "id": "11.2",
+     "prompt": "ตัวแก่ของสิ่งมีชีวิตนี้มีชื่อวิทยาศาสตร์ว่าอะไร",
+     "format": "short",
+     "accepted": [
+      "solium"
+     ],
+     "keywords_all": [
+      "solium"
+     ],
+     "key_text": "Taenia solium",
+     "source_key": "เฉลย: Taenia solium"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE46",
+     "pages": [
+      5
+     ]
+    },
+    {
+     "paper": "OSPE46-KEY",
+     "pages": [
+      5
+     ]
+    }
+   ],
+   "tags": [
+    "parasitology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "IMM-46-OSPE-012",
+   "block": "IMM",
+   "cohort": 46,
+   "n": 12,
+   "type": "OSPE",
+   "station": 12,
+   "stem": "สถานี 12: Immunofixation (ภาพ immunofluorescence บน Hep-2 cell)",
+   "items": [
+    {
+     "id": "12.1",
+     "prompt": "ใช้หลักการ Ag/Ab อะไร",
+     "format": "short",
+     "accepted": [
+      "fluorescent",
+      "immunofluorescence"
+     ],
+     "keywords_all": [
+      "fluorescent"
+     ],
+     "key_text": "Fluorescent immunoassay",
+     "source_key": "เฉลย: Fluorescent immunoassay",
+     "image": "img/IMM-46-OSPE-008.jpg",
+     "image_caption": "Immunofluorescence (Hep-2 cell)"
+    },
+    {
+     "id": "12.2",
+     "prompt": "เติมคำตอบในช่องว่าง (ลำดับ: Human antibody (Ab ของผู้ป่วย) จับ Hep-2 cell แล้ว Anti-human IgG antibody ติดสารเรืองแสง)",
+     "format": "short",
+     "accepted": [
+      "human",
+      "anti-human",
+      "igg"
+     ],
+     "keywords_all": [
+      "anti-human"
+     ],
+     "key_text": "Human Antibody (Ab ของผู้ป่วย) และ Anti-human IgG antibody",
+     "source_key": "เฉลย: Human Antibody (Ab ของผู้ป่วย) และ Anti-human IgG antibody",
+     "image": "img/IMM-46-OSPE-009.jpg",
+     "image_caption": "แผนภาพ indirect immunofluorescence"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE46",
+     "pages": [
+      6
+     ]
+    },
+    {
+     "paper": "OSPE46-KEY",
+     "pages": [
+      6
+     ]
+    }
+   ],
+   "tags": [
+    "microbiology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "IMM-46-OSPE-013",
+   "block": "IMM",
+   "cohort": 46,
+   "n": 13,
+   "type": "OSPE",
+   "station": 13,
+   "stem": "สถานี 13: จากกล้องจุลทรรศน์",
+   "items": [
+    {
+     "id": "13.1",
+     "prompt": "นี่คือระยะไหน",
+     "format": "short",
+     "accepted": [
+      "cercaria"
+     ],
+     "keywords_all": [
+      "cercaria"
+     ],
+     "key_text": "Cercaria",
+     "source_key": "เฉลย: Cercaria",
+     "image": "img/IMM-46-OSPE-010.jpg",
+     "image_caption": "Cercaria (หางแฉก)"
+    },
+    {
+     "id": "13.2",
+     "prompt": "ยกตัวอย่างชื่อพยาธิที่มีลักษณะนี้",
+     "format": "short",
+     "accepted": [
+      "schistosoma"
+     ],
+     "keywords_all": [
+      "schistosoma"
+     ],
+     "key_text": "Schistosoma mansoni",
+     "source_key": "เฉลย: Schistosoma mansoni"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE46",
+     "pages": [
+      7
+     ]
+    },
+    {
+     "paper": "OSPE46-KEY",
+     "pages": [
+      7
+     ]
+    }
+   ],
+   "tags": [
+    "parasitology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "IMM-46-OSPE-014",
+   "block": "IMM",
+   "cohort": 46,
+   "n": 14,
+   "type": "OSPE",
+   "station": 14,
+   "stem": "สถานี 14: ถ้าผลการตรวจ HIV กับชุดทดสอบได้ผลดังนี้ CMIA Reactive, CLIA Reactive",
+   "items": [
+    {
+     "id": "14.1",
+     "prompt": "จะสามารถอ่านผลได้ว่าอย่างไร",
+     "format": "short",
+     "accepted": [
+      "inconclusive"
+     ],
+     "keywords_all": [
+      "inconclusive"
+     ],
+     "key_text": "Inconclusive (ต้องมีผลชุดที่ 3 ยืนยัน)",
+     "source_key": "เฉลย: Inconclusive (ต้องมีผลชุดที่ 3 ยืนยัน)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE46",
+     "pages": [
+      7
+     ]
+    },
+    {
+     "paper": "OSPE46-KEY",
+     "pages": [
+      7
+     ]
+    }
+   ],
+   "tags": [
+    "microbiology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "IMM-46-OSPE-015",
+   "block": "IMM",
+   "cohort": 46,
+   "n": 15,
+   "type": "OSPE",
+   "station": 15,
+   "stem": "สถานี 15: จงอ่านผล positive/negative (ชุดตรวจ NS1 และ IgG/IgM)",
+   "items": [
+    {
+     "id": "15.1.1",
+     "prompt": "NS1 Ag",
+     "format": "short",
+     "accepted": [
+      "positive"
+     ],
+     "keywords_all": [
+      "positive"
+     ],
+     "key_text": "Positive",
+     "source_key": "เฉลย: Positive",
+     "image": "img/IMM-46-OSPE-011.jpg",
+     "image_caption": "Rapid test NS1/IgG/IgM"
+    },
+    {
+     "id": "15.1.2",
+     "prompt": "IgM",
+     "format": "short",
+     "accepted": [
+      "negative"
+     ],
+     "keywords_all": [
+      "negative"
+     ],
+     "key_text": "Negative",
+     "source_key": "เฉลย: Negative"
+    },
+    {
+     "id": "15.1.3",
+     "prompt": "IgG",
+     "format": "short",
+     "accepted": [
+      "negative"
+     ],
+     "keywords_all": [
+      "negative"
+     ],
+     "key_text": "Negative",
+     "source_key": "เฉลย: Negative"
+    },
+    {
+     "id": "15.2",
+     "prompt": "ผู้ป่วยติดเชื้อ Dengue virus หรือไม่",
+     "format": "short",
+     "accepted": [
+      "ติดเชื้อ"
+     ],
+     "keywords_all": [
+      "ติดเชื้อ"
+     ],
+     "key_text": "ติดเชื้อ",
+     "source_key": "เฉลย: ติดเชื้อ"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE46",
+     "pages": [
+      7
+     ]
+    },
+    {
+     "paper": "OSPE46-KEY",
+     "pages": [
+      7
+     ]
+    }
+   ],
+   "tags": [
+    "microbiology"
+   ],
+   "source": "claude-mcp"
+  }
+ ]
+}

@@ -1,0 +1,610 @@
+{
+ "set_id": "imm_47_OSPE",
+ "note": "OSPE Immunity MED PSU 47 · ไฟล์ต้นฉบับไม่มีเฉลย AI ดูภาพและเขียนเฉลยตามตำรา ติดป้าย draft ทุกสถานี รอผู้ตรวจยืนยัน · ตัดสถานีที่ตอบไม่ได้จากภาพ (6, 7, 8, 18, 21) · โจทย์เป็นไทย ศัพท์แพทย์อังกฤษ ตอบภาษาอังกฤษ",
+ "questions": [
+  {
+   "n": 1,
+   "page": 2,
+   "tags": [
+    "histology"
+   ],
+   "case": "สถานี 1: จากภาพ (ลูกศรชี้บริเวณรอบหลอดเลือดเล็กในเนื้อเยื่อ)",
+   "answer_status": "draft",
+   "items": [
+    {
+     "id": "1.1",
+     "prompt": "จากภาพคือโครงสร้างของอวัยวะใด",
+     "format": "short",
+     "accepted": [
+      "spleen"
+     ],
+     "keywords_all": [
+      "spleen"
+     ],
+     "key_text": "Spleen (white pulp รอบ central arteriole)",
+     "source_key": "เฉลย: Spleen (white pulp รอบ central arteriole)",
+     "image": "img/IMM-47-OSPE-001.jpg",
+     "image_caption": "H&E: spleen white pulp"
+    },
+    {
+     "id": "1.2",
+     "prompt": "บริเวณที่ลูกศรชี้จะพบเซลล์ใด",
+     "format": "short",
+     "accepted": [
+      "t lymphocyte",
+      "t cell"
+     ],
+     "keywords_all": [
+      "t"
+     ],
+     "key_text": "T lymphocyte (periarteriolar lymphatic sheath)",
+     "source_key": "เฉลย: T lymphocyte (periarteriolar lymphatic sheath)"
+    }
+   ],
+   "station": 1
+  },
+  {
+   "n": 2,
+   "page": 2,
+   "tags": [
+    "histology"
+   ],
+   "case": "สถานี 2: จากภาพ (อวัยวะเป็นกลีบเล็ก ลูกศรชี้บริเวณเข้มรอบนอก)",
+   "answer_status": "draft",
+   "items": [
+    {
+     "id": "2.1",
+     "prompt": "จากภาพคืออวัยวะใด",
+     "format": "short",
+     "accepted": [
+      "thymus"
+     ],
+     "keywords_all": [
+      "thymus"
+     ],
+     "key_text": "Thymus (lobulated, cortex และ medulla)",
+     "source_key": "เฉลย: Thymus (lobulated, cortex และ medulla)",
+     "image": "img/IMM-47-OSPE-002.jpg",
+     "image_caption": "H&E: thymus"
+    },
+    {
+     "id": "2.2",
+     "prompt": "บริเวณที่ลูกศรชี้จะพบเซลล์ใด",
+     "format": "short",
+     "accepted": [
+      "thymocyte",
+      "t cell",
+      "t lymphocyte"
+     ],
+     "keywords_all": [
+      "thymocyte"
+     ],
+     "key_text": "Thymocyte (immature T cell) ใน cortex",
+     "source_key": "เฉลย: Thymocyte (immature T cell) ใน cortex"
+    }
+   ],
+   "station": 2
+  },
+  {
+   "n": 3,
+   "page": 3,
+   "tags": [
+    "histology"
+   ],
+   "case": "สถานี 3: จากภาพ (ลูกศรชี้ผิวด้านนอกของอวัยวะ)",
+   "answer_status": "draft",
+   "items": [
+    {
+     "id": "3.1",
+     "prompt": "จากภาพคืออวัยวะใด",
+     "format": "short",
+     "accepted": [
+      "lymph node"
+     ],
+     "keywords_all": [
+      "lymph node"
+     ],
+     "key_text": "Lymph node",
+     "source_key": "เฉลย: Lymph node",
+     "image": "img/IMM-47-OSPE-003.jpg",
+     "image_caption": "H&E: lymph node"
+    },
+    {
+     "id": "3.2",
+     "prompt": "บริเวณที่ลูกศรชี้คือโครงสร้างใด",
+     "format": "short",
+     "accepted": [
+      "capsule"
+     ],
+     "keywords_all": [
+      "capsule"
+     ],
+     "key_text": "Capsule",
+     "source_key": "เฉลย: Capsule"
+    }
+   ],
+   "station": 3
+  },
+  {
+   "n": 4,
+   "page": 3,
+   "tags": [
+    "microbiology"
+   ],
+   "case": "สถานี 4: plate บน blood agar (ซ้าย) และภาพจากกล้องจุลทรรศน์ (ขวา)",
+   "answer_status": "draft",
+   "items": [
+    {
+     "id": "4.1",
+     "prompt": "colony ที่ขึ้นบน plate แสดง pattern ของ hemolysis แบบใด",
+     "format": "short",
+     "accepted": [
+      "beta",
+      "β"
+     ],
+     "keywords_all": [
+      "hemolysis"
+     ],
+     "key_text": "β-hemolysis (โซนใสรอบ colony)",
+     "source_key": "เฉลย: β-hemolysis (โซนใสรอบ colony)",
+     "image": "img/IMM-47-OSPE-004.jpg",
+     "image_caption": "Blood agar plate"
+    },
+    {
+     "id": "4.2",
+     "prompt": "ยกตัวอย่างเชื้อที่เป็นไปได้จาก plate และกล้องจุลทรรศน์ (1 species)",
+     "format": "short",
+     "accepted": [
+      "pyogenes",
+      "streptococcus"
+     ],
+     "keywords_all": [
+      "streptococcus"
+     ],
+     "key_text": "Streptococcus pyogenes (Gram-positive cocci เป็นสาย)",
+     "source_key": "เฉลย: Streptococcus pyogenes (Gram-positive cocci เป็นสาย)",
+     "image": "img/IMM-47-OSPE-005.jpg",
+     "image_caption": "Gram stain: cocci เป็นสาย"
+    }
+   ],
+   "station": 4
+  },
+  {
+   "n": 5,
+   "page": 4,
+   "tags": [
+    "microbiology"
+   ],
+   "case": "สถานี 5: เพาะเชื้อชนิดหนึ่งลงบน MacConkey agar",
+   "answer_status": "draft",
+   "items": [
+    {
+     "id": "5.1",
+     "prompt": "เทคนิคใดใช้แยกเชื้อให้เป็น single colony",
+     "format": "short",
+     "accepted": [
+      "streak"
+     ],
+     "keywords_all": [
+      "streak"
+     ],
+     "key_text": "Streak plate technique",
+     "source_key": "เฉลย: Streak plate technique"
+    },
+    {
+     "id": "5.2",
+     "prompt": "colony ที่เป็นสีชมพูเกิดจากอะไร",
+     "format": "short",
+     "accepted": [
+      "lactose",
+      "ferment"
+     ],
+     "keywords_all": [
+      "lactose"
+     ],
+     "key_text": "การหมักน้ำตาล lactose ได้กรด ทำให้ neutral red เปลี่ยนเป็นสีชมพู (lactose fermenter)",
+     "source_key": "เฉลย: การหมักน้ำตาล lactose ได้กรด ทำให้ neutral red เปลี่ยนเป็นสีชมพู (lactose fermenter)"
+    },
+    {
+     "id": "5.3",
+     "prompt": "ยกตัวอย่างเชื้อที่เป็นไปได้ (1 species)",
+     "format": "short",
+     "accepted": [
+      "escherichia",
+      "e. coli",
+      "klebsiella"
+     ],
+     "keywords_all": [
+      "coli"
+     ],
+     "key_text": "Escherichia coli",
+     "source_key": "เฉลย: Escherichia coli"
+    }
+   ],
+   "station": 5
+  },
+  {
+   "n": 9,
+   "page": 5,
+   "tags": [
+    "microbiology"
+   ],
+   "case": "สถานี 9: Bacillus subtilis กับ Escherichia coli มีอายุ 72 ชั่วโมง",
+   "answer_status": "draft",
+   "items": [
+    {
+     "id": "9.1",
+     "prompt": "เชื้อใดทนความร้อนได้มากกว่า",
+     "format": "short",
+     "accepted": [
+      "subtilis"
+     ],
+     "keywords_all": [
+      "subtilis"
+     ],
+     "key_text": "Bacillus subtilis",
+     "source_key": "เฉลย: Bacillus subtilis"
+    },
+    {
+     "id": "9.2",
+     "prompt": "เพราะเหตุใด",
+     "format": "short",
+     "accepted": [
+      "endospore",
+      "spore"
+     ],
+     "keywords_all": [
+      "endospore"
+     ],
+     "key_text": "สร้าง endospore ที่ทนความร้อน แห้ง และสารเคมีได้",
+     "source_key": "เฉลย: สร้าง endospore ที่ทนความร้อน แห้ง และสารเคมีได้"
+    }
+   ],
+   "station": 9
+  },
+  {
+   "n": 10,
+   "page": 5,
+   "tags": [
+    "microbiology"
+   ],
+   "case": "สถานี 10: เทคนิคใดทำให้สารละลายนี้ (meropenem) sterile (A Autoclave, B Hot air oven, C Filtration)",
+   "answer_status": "draft",
+   "items": [
+    {
+     "id": "10.1",
+     "prompt": "ตัวเลือกที่ถูกต้อง",
+     "format": "short",
+     "accepted": [
+      "c",
+      "filtration"
+     ],
+     "keywords_all": [
+      "filtration"
+     ],
+     "key_text": "C — Filtration (ยาไวต่อความร้อน)",
+     "source_key": "เฉลย: C — Filtration (ยาไวต่อความร้อน)"
+    }
+   ],
+   "station": 10
+  },
+  {
+   "n": 12,
+   "page": 5,
+   "tags": [
+    "microbiology"
+   ],
+   "case": "สถานี 12: จากภาพใต้กล้องจุลทรรศน์ (ยีสต์ล้อมด้วย capsule ใสบนฉากหลังสีดำ)",
+   "answer_status": "draft",
+   "items": [
+    {
+     "id": "12.1",
+     "prompt": "เชื้อจากภาพคืออะไร",
+     "format": "short",
+     "accepted": [
+      "cryptococc"
+     ],
+     "keywords_all": [
+      "cryptococc"
+     ],
+     "key_text": "Cryptococcus neoformans",
+     "source_key": "เฉลย: Cryptococcus neoformans",
+     "image": "img/IMM-47-OSPE-006.jpg",
+     "image_caption": "India ink"
+    },
+    {
+     "id": "12.2",
+     "prompt": "วิธีการตรวจนี้เรียกว่าอะไร",
+     "format": "short",
+     "accepted": [
+      "india ink"
+     ],
+     "keywords_all": [
+      "india"
+     ],
+     "key_text": "India ink preparation",
+     "source_key": "เฉลย: India ink preparation"
+    }
+   ],
+   "station": 12
+  },
+  {
+   "n": 13,
+   "page": 6,
+   "tags": [
+    "microbiology"
+   ],
+   "case": "สถานี 13: จากภาพใต้กล้องจุลทรรศน์",
+   "answer_status": "draft",
+   "items": [
+    {
+     "id": "13.1",
+     "prompt": "เชื้อจากภาพคืออะไร",
+     "format": "short",
+     "accepted": [
+      "penicillium",
+      "marneffei"
+     ],
+     "keywords_all": [
+      "penicillium"
+     ],
+     "key_text": "Penicillium (Talaromyces) marneffei (mold phase: phialides และ conidia)",
+     "source_key": "เฉลย: Penicillium (Talaromyces) marneffei (mold phase: phialides และ conidia)",
+     "image": "img/IMM-47-OSPE-007.jpg",
+     "image_caption": "Lactophenol: conidiophore"
+    },
+    {
+     "id": "13.2",
+     "prompt": "รอยโรคที่เกิดจากเชื้อนี้คืออะไร",
+     "format": "short",
+     "accepted": [
+      "molluscum",
+      "umbilicated",
+      "papule"
+     ],
+     "keywords_all": [
+      "umbilicated"
+     ],
+     "key_text": "Umbilicated papules คล้าย molluscum contagiosum ที่ผิวหนัง (penicilliosis)",
+     "source_key": "เฉลย: Umbilicated papules คล้าย molluscum contagiosum ที่ผิวหนัง (penicilliosis)"
+    }
+   ],
+   "station": 13
+  },
+  {
+   "n": 14,
+   "page": 6,
+   "tags": [
+    "parasitology"
+   ],
+   "case": "สถานี 14: ผู้หญิงอายุ 25 ปี ปวดกล้ามเนื้อ ทำ muscle biopsy พบตัวอ่อนของเชื้อในกล้ามเนื้อ",
+   "answer_status": "draft",
+   "items": [
+    {
+     "id": "14.1",
+     "prompt": "ชื่อวิทยาศาสตร์ของตัวอ่อน",
+     "format": "short",
+     "accepted": [
+      "trichinella"
+     ],
+     "keywords_all": [
+      "trichinella"
+     ],
+     "key_text": "Trichinella spiralis (encysted larva)",
+     "source_key": "เฉลย: Trichinella spiralis (encysted larva)",
+     "image": "img/IMM-47-OSPE-008.jpg",
+     "image_caption": "Muscle biopsy: larva"
+    },
+    {
+     "id": "14.2",
+     "prompt": "ชื่อวิทยาศาสตร์ของตัวแก่",
+     "format": "short",
+     "accepted": [
+      "trichinella"
+     ],
+     "keywords_all": [
+      "trichinella"
+     ],
+     "key_text": "Trichinella spiralis (ตัวแก่อยู่ในลำไส้เล็ก)",
+     "source_key": "เฉลย: Trichinella spiralis (ตัวแก่อยู่ในลำไส้เล็ก)"
+    }
+   ],
+   "station": 14
+  },
+  {
+   "n": 15,
+   "page": 6,
+   "tags": [
+    "parasitology"
+   ],
+   "case": "สถานี 15: จากภาพใต้กล้องจุลทรรศน์ (blood smear ย้อมสี)",
+   "answer_status": "draft",
+   "items": [
+    {
+     "id": "15.1",
+     "prompt": "เชื้อจากภาพอยู่ในระยะใด",
+     "format": "short",
+     "accepted": [
+      "microfilaria"
+     ],
+     "keywords_all": [
+      "microfilaria"
+     ],
+     "key_text": "Microfilaria",
+     "source_key": "เฉลย: Microfilaria",
+     "image": "img/IMM-47-OSPE-009.jpg",
+     "image_caption": "Blood smear"
+    },
+    {
+     "id": "15.2",
+     "prompt": "ชื่อวิทยาศาสตร์ของเชื้อ",
+     "format": "short",
+     "accepted": [
+      "wuchereria",
+      "brugia"
+     ],
+     "keywords_all": [
+      "wuchereria"
+     ],
+     "key_text": "Wuchereria bancrofti (หรือ Brugia malayi)",
+     "source_key": "เฉลย: Wuchereria bancrofti (หรือ Brugia malayi)"
+    }
+   ],
+   "station": 15
+  },
+  {
+   "n": 16,
+   "page": 6,
+   "tags": [
+    "microbiology"
+   ],
+   "case": "สถานี 16: จากภาพเป็นการเพาะเลี้ยงเชื้อเพื่อวินิจฉัยเชื้อใด (cell culture monolayer ก่อน–หลังติดเชื้อ)",
+   "answer_status": "draft",
+   "items": [
+    {
+     "id": "16.1",
+     "prompt": "การเพาะเลี้ยงนี้ใช้วินิจฉัยเชื้อใด",
+     "format": "short",
+     "accepted": [
+      "virus",
+      "cpe",
+      "cytopathic"
+     ],
+     "keywords_all": [
+      "virus"
+     ],
+     "key_text": "Virus (ดู cytopathic effect ใน cell culture)",
+     "source_key": "เฉลย: Virus (ดู cytopathic effect ใน cell culture)",
+     "image": "img/IMM-47-OSPE-010.jpg",
+     "image_caption": "Cell culture: CPE"
+    }
+   ],
+   "station": 16
+  },
+  {
+   "n": 17,
+   "page": 7,
+   "tags": [
+    "microbiology"
+   ],
+   "case": "สถานี 17: จากภาพ (immunofixation electrophoresis)",
+   "answer_status": "draft",
+   "items": [
+    {
+     "id": "17.1",
+     "prompt": "ใช้ Ag/Ab reaction แบบใด",
+     "format": "short",
+     "accepted": [
+      "precipitation"
+     ],
+     "keywords_all": [
+      "precipitation"
+     ],
+     "key_text": "Precipitation (immunoprecipitation บน gel)",
+     "source_key": "เฉลย: Precipitation (immunoprecipitation บน gel)",
+     "image": "img/IMM-47-OSPE-011.jpg",
+     "image_caption": "Immunofixation electrophoresis"
+    }
+   ],
+   "station": 17
+  },
+  {
+   "n": 19,
+   "page": 7,
+   "tags": [
+    "microbiology"
+   ],
+   "case": "สถานี 19: จากภาพ (fluorescence microscopy, biochip)",
+   "answer_status": "draft",
+   "items": [
+    {
+     "id": "19.1",
+     "prompt": "ใช้ Ag/Ab reaction แบบใด",
+     "format": "short",
+     "accepted": [
+      "immunofluorescence",
+      "fluorescen"
+     ],
+     "keywords_all": [
+      "fluorescen"
+     ],
+     "key_text": "Indirect immunofluorescence",
+     "source_key": "เฉลย: Indirect immunofluorescence",
+     "image": "img/IMM-47-OSPE-012.jpg",
+     "image_caption": "Indirect immunofluorescence"
+    },
+    {
+     "id": "19.2",
+     "prompt": "A คืออะไร",
+     "format": "short",
+     "accepted": [
+      "fluorescen",
+      "fluorophore"
+     ],
+     "keywords_all": [
+      "fluorescen"
+     ],
+     "key_text": "Fluorescent label (fluorophore)",
+     "source_key": "เฉลย: Fluorescent label (fluorophore)"
+    },
+    {
+     "id": "19.3",
+     "prompt": "B คืออะไร",
+     "format": "short",
+     "accepted": [
+      "anti-human",
+      "igg",
+      "secondary"
+     ],
+     "keywords_all": [
+      "anti-human"
+     ],
+     "key_text": "Anti-human IgG antibody (secondary antibody)",
+     "source_key": "เฉลย: Anti-human IgG antibody (secondary antibody)"
+    }
+   ],
+   "station": 19
+  },
+  {
+   "n": 20,
+   "page": 8,
+   "tags": [
+    "microbiology"
+   ],
+   "case": "สถานี 20: หากทดสอบ HIV ผู้ป่วยรายหนึ่งได้ผล CMIA reactive, CLIA reactive",
+   "answer_status": "draft",
+   "items": [
+    {
+     "id": "20.1",
+     "prompt": "จงอ่านผลจาก ICT",
+     "format": "short",
+     "accepted": [
+      "nonreactive",
+      "non-reactive"
+     ],
+     "keywords_all": [
+      "nonreactive"
+     ],
+     "key_text": "Nonreactive (ขึ้นเฉพาะ control line)",
+     "source_key": "เฉลย: Nonreactive (ขึ้นเฉพาะ control line)",
+     "image": "img/IMM-47-OSPE-013.jpg",
+     "image_caption": "Rapid ICT"
+    },
+    {
+     "id": "20.2",
+     "prompt": "จะรายงานผล HIV testing อย่างไร",
+     "format": "short",
+     "accepted": [
+      "inconclusive"
+     ],
+     "keywords_all": [
+      "inconclusive"
+     ],
+     "key_text": "Inconclusive",
+     "source_key": "เฉลย: Inconclusive"
+    }
+   ],
+   "station": 20
+  }
+ ]
+}
