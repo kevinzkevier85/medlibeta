@@ -85,7 +85,7 @@ def parse(set_id, bare_numbers=False, part_offsets=None, number_own_line=False):
         if fresh and m and len(m.group(2)) >= 15:
             expect = n  # a part may start at any number (e.g. "PART 4" starts at 34)
         if m and (n == expect or (jump and not (cur is not None and field != "stem" and cur["choices"] and len(cur["choices"]) < 2))):
-            if cur is None and int(m.group(1)) == 1 and not bare and not re.search(r"[A-Za-z]{3}", m.group(2)):
+            if cur is None and int(m.group(1)) == 1 and not bare and not re.search(r"[A-Za-z]{3}", m.group(2)) and re.search(r"ข้อสอบ|เวลา|หมายเหตุ", m.group(2)):
                 preamble.append(t)  # header "1. ข้อสอบมีทั้งหมด 81 ข้อ" etc.
                 continue
             fresh = False
@@ -101,7 +101,7 @@ def parse(set_id, bare_numbers=False, part_offsets=None, number_own_line=False):
             continue
         mo = OPT.match(t)
         if mo:
-            k = mo.group(1).upper()
+            k = {"ก": "A", "ข": "B", "ค": "C", "ง": "D", "จ": "E"}.get(mo.group(1), mo.group(1).upper())  # Thai-lettered papers (ก ข ค ง จ)
             if k in cur["choices"] and mo.group(1).islower() and len(cur["choices"]) < 5:
                 k = "ABCDE"[len(cur["choices"])]  # recalled papers sometimes repeat a letter ("a. … a. …")
             if k not in cur["choices"]:

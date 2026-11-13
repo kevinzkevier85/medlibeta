@@ -1,6 +1,12 @@
 # HANDOFF — กระดาษส่งต่องาน (ยื่นให้ AI ตัวไหนก็ได้ อ่านใบนี้ใบเดียวแล้วทำต่อได้)
 > งานที่ทำค้างล่าสุด: ดู branch ที่ push ล่าสุด `git branch -r --sort=-committerdate | head -3` แล้ว `git log -5 --format=%B <branch>` — บรรทัด `ถัดไป:` คือขั้นต่อไป
-อัปเดต: 2026-11-13 (v0.42.0 · Immunity/Respiratory/KUB merge เข้า main แล้ว ไม่มี PR ค้าง) · เขียนโดย Claude (ผู้ใช้: Finn)
+อัปเดต: 2026-11-13 (v0.43.0 · Immunity/Respiratory/KUB merge เข้า main แล้ว ไม่มี PR ค้าง) · เขียนโดย Claude (ผู้ใช้: Finn)
+
+## 0.0 บล็อก Commed I / Commed II / Community Health Dev (CM1, CM2, CD) — ทำบางส่วน (Drive `preclinic/2/commed-1|commed-2|community-dev`)
+- ✅ CM1 MCQ 52 (29/33) · CM2 MCQ 52 (14/15) + 48 (14/15) · CD MCQ 52 (24/37) — ข้อสอบจำ ข้อว่าง/ตัวเลือกไม่มีข้ามหมด
+- ⛔ ยังไม่ทำ (ต้องดูแลพิเศษ): **CM1 MCQ 48** (29 ข้อ เฉลย = ลายมือ ปากกาน้ำเงิน ขีด X ทับตัวเลือก ต้องอ่านจากภาพ `raw/<set>/key_pNNN.png`) · **CM1 KF 49 / MCQ 49** (Drive มีแต่ไฟล์เฉลย ไม่มีไฟล์ข้อสอบ) · **CM2 KF 40, 47** (เฉลย "โดย 52") · **HS MCQ 52** (25 ข้อ แทบว่าง มีโจทย์ 6 ข้อไม่มีไฮไลต์ → ไม่ลงทะเบียน) · **medprof-1 KF 39, 42, 46, 50, 52** (ยังไม่เริ่ม)
+- ผู้ตรวจควรดู: เฉลยที่ไฟล์วง 2 ตัว (CM2 52 ข้อ 14, 18 · CM2 48 ข้อ 9 · CD 52 ข้อ 34 — ใส่ also_accept ใน decisions.json) · CM1 52 ข้อ 28 (secondary vs tertiary), ข้อ 37 (Bismarck vs managed competition), ข้อ 50 (primordial vs primary) · CD 52 ข้อ 16 · CM2 48 ข้อ 12 (วัด)
+- เครื่องมือที่แก้: `parse_key.py` เพิ่มสีไฮไลต์ cyan · `parse_mcq.py`/`parse_key.py` รองรับตัวเลือก ก ข ค ง จ และปก "1. ข้อสอบมีทั้งหมด…" ที่เป็นไทยล้วน — **ห้าม re-parse ชุดเก่า** (จะเขียนทับ parsed.json ที่แก้มือ เช่น imm_47 ลบลายน้ำแล้ว)
 
 ## 0. บล็อก Biomed (BIO, Pharmacology) — ทำแล้ว (Drive `preclinic/2/biomed`)
 - block id `BIO` · inventory `bio_<รุ่น>_<MCQ|KF>` 10 ชุด · ชุดรวม 46-48 ใช้ `medlib_cohort: 48`
