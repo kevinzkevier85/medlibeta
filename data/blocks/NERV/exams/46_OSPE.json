@@ -1,0 +1,916 @@
+{
+ "meta": {
+  "set_id": "46_OSPE",
+  "block": "NERV",
+  "cohort": 46,
+  "type": "OSPE",
+  "title": "OSPE Nervous System · Med PSU 46",
+  "generated_by": "auditor/tools/build_kf.py from auditor/data/work/nerv_46_OSPE.kf.json — do not edit by hand"
+ },
+ "questions": [
+  {
+   "id": "NERV-46-OSPE-001",
+   "block": "NERV",
+   "cohort": 46,
+   "n": 1,
+   "type": "OSPE",
+   "station": 1,
+   "stem": "สถานี 1: ภาพสมองมีเลือดคลุมผิวสมอง",
+   "items": [
+    {
+     "id": "1.1",
+     "prompt": "What is the diagnosis?",
+     "format": "short",
+     "accepted": [
+      "subdural",
+      "subarachnoid",
+      "hemorrhage",
+      "hematoma"
+     ],
+     "keywords_all": [
+      "hemorrhage",
+      "hematoma"
+     ],
+     "key_text": "Subdural hematoma / Subarachnoid hemorrhage (ข้างเนื้อสมองที่เลือดออกคลุมภายใน meninges)",
+     "source_key": "เฉลย: Subdural hematoma / Subarachnoid hemorrhage (ข้างเนื้อสมองที่เลือดออกคลุมภายใน meninges)",
+     "image": "img/NERV-46-OSPE-001.jpg",
+     "image_caption": "Brain hemorrhage"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE46",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "OSPE46-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [
+    "pathology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "NERV-46-OSPE-002",
+   "block": "NERV",
+   "cohort": 46,
+   "n": 2,
+   "type": "OSPE",
+   "station": 2,
+   "stem": "สถานี 2: ภาพ midbrain ลูกศรชี้",
+   "items": [
+    {
+     "id": "2.1",
+     "prompt": "ตำแหน่งที่ลูกศรชี้คืออะไร",
+     "format": "short",
+     "accepted": [
+      "substantia nigra"
+     ],
+     "keywords_all": [
+      "substantia"
+     ],
+     "key_text": "Substantia nigra",
+     "source_key": "เฉลย: Substantia nigra",
+     "image": "img/NERV-46-OSPE-002.jpg",
+     "image_caption": "Midbrain"
+    },
+    {
+     "id": "2.2",
+     "prompt": "หากมีพยาธิสภาพที่บริเวณดังกล่าวจะมีอาการหรือโรคอะไร",
+     "format": "short",
+     "accepted": [
+      "parkinson"
+     ],
+     "keywords_all": [
+      "parkinson"
+     ],
+     "key_text": "Parkinson's disease",
+     "source_key": "เฉลย: Parkinson's disease"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE46",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "OSPE46-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [
+    "neuroanatomy"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "NERV-46-OSPE-003",
+   "block": "NERV",
+   "cohort": 46,
+   "n": 3,
+   "type": "OSPE",
+   "station": 3,
+   "stem": "สถานี 3: ภาพ cerebellum (structure A)",
+   "items": [
+    {
+     "id": "3.1",
+     "prompt": "What is the name of structure A?",
+     "format": "short",
+     "accepted": [
+      "superior cerebellar peduncle"
+     ],
+     "keywords_all": [
+      "superior cerebellar"
+     ],
+     "key_text": "Superior cerebellar peduncle",
+     "source_key": "เฉลย: Superior cerebellar peduncle",
+     "image": "img/NERV-46-OSPE-003.jpg",
+     "image_caption": "Cerebellum (structure A)"
+    },
+    {
+     "id": "3.2",
+     "prompt": "Nerve tract in structure A",
+     "format": "short",
+     "accepted": [
+      "cerebellorubral",
+      "cerebellothalamic",
+      "anterior spinocerebellar",
+      "dentatothalamic"
+     ],
+     "keywords_all": [
+      "cerebello",
+      "spinocerebellar"
+     ],
+     "key_text": "Efferent: cerebellorubral tract, cerebellotectal tract, cerebellothalamic (dentatothalamic) tract · Afferent: anterior spinocerebellar tract, ventral trigeminal tract, tectocerebellar fibers",
+     "source_key": "เฉลย: Efferent: cerebellorubral tract, cerebellotectal tract, cerebellothalamic (dentatothalamic) tract · Afferent: anterior spinocerebellar tract, ventral trigeminal tract, tectocerebellar fibers"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE46",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "OSPE46-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [
+    "neuroanatomy"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "NERV-46-OSPE-004",
+   "block": "NERV",
+   "cohort": 46,
+   "n": 4,
+   "type": "OSPE",
+   "station": 4,
+   "stem": "สถานี 4: แผนภาพ neurulation (รูปที่ 1) และภาพทารก (รูปที่ 2)",
+   "items": [
+    {
+     "id": "4.1",
+     "prompt": "จากภาพ 1: กระบวนการนี้เรียกว่าอะไร",
+     "format": "short",
+     "accepted": [
+      "neurulation"
+     ],
+     "keywords_all": [
+      "neurulation"
+     ],
+     "key_text": "Neurulation",
+     "source_key": "เฉลย: Neurulation",
+     "image": "img/NERV-46-OSPE-004a.jpg",
+     "image_caption": "Neurulation"
+    },
+    {
+     "id": "4.2",
+     "prompt": "จากภาพ 1: ที่กล่องสีส้มชี้ คืออะไร",
+     "format": "short",
+     "accepted": [
+      "neural tube"
+     ],
+     "keywords_all": [
+      "neural tube"
+     ],
+     "key_text": "Neural tube",
+     "source_key": "เฉลย: Neural tube"
+    },
+    {
+     "id": "4.3",
+     "prompt": "จากภาพ 1: ที่กล่องสีเขียวชี้ คืออะไร",
+     "format": "short",
+     "accepted": [
+      "neural crest"
+     ],
+     "keywords_all": [
+      "neural crest"
+     ],
+     "key_text": "Neural crest",
+     "source_key": "เฉลย: Neural crest"
+    },
+    {
+     "id": "4.4",
+     "prompt": "จากภาพ 2: What is the diagnosis?",
+     "format": "short",
+     "accepted": [
+      "anencephaly"
+     ],
+     "keywords_all": [
+      "anencephaly"
+     ],
+     "key_text": "Anencephaly",
+     "source_key": "เฉลย: Anencephaly",
+     "image": "img/NERV-46-OSPE-004b.jpg",
+     "image_caption": "Fetus"
+    },
+    {
+     "id": "4.5",
+     "prompt": "สาเหตุของการเกิดโรคดังกล่าวคืออะไร",
+     "format": "short",
+     "accepted": [
+      "anterior",
+      "neuropore"
+     ],
+     "keywords_all": [
+      "neuropore"
+     ],
+     "key_text": "Failure of anterior (cranial) neuropore to close (ขาด folic acid ขณะตั้งครรภ์เพิ่มความเสี่ยง)",
+     "source_key": "เฉลย: Failure of anterior (cranial) neuropore to close (ขาด folic acid ขณะตั้งครรภ์เพิ่มความเสี่ยง)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE46",
+     "pages": [
+      3
+     ]
+    },
+    {
+     "paper": "OSPE46-KEY",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [
+    "neuroanatomy"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "NERV-46-OSPE-005",
+   "block": "NERV",
+   "cohort": 46,
+   "n": 5,
+   "type": "OSPE",
+   "station": 5,
+   "stem": "สถานี 5: เด็กชายอายุ 7 ปี ไข้ต่ำ ๆ รู้สึกเบื่ออาหาร เมื่อซักประวัติเพิ่มพบว่าถูกหมากัด และพบเซลล์ลักษณะดังภาพ",
+   "items": [
+    {
+     "id": "5.1",
+     "prompt": "intracytoplasmic inclusion ที่พบมีชื่อว่าอะไร",
+     "format": "short",
+     "accepted": [
+      "negri"
+     ],
+     "keywords_all": [
+      "negri"
+     ],
+     "key_text": "Negri body",
+     "source_key": "เฉลย: Negri body",
+     "image": "img/NERV-46-OSPE-005.jpg",
+     "image_caption": "Histology (inclusion)"
+    },
+    {
+     "id": "5.2",
+     "prompt": "What is the diagnosis?",
+     "format": "short",
+     "accepted": [
+      "rabies"
+     ],
+     "keywords_all": [
+      "rabies"
+     ],
+     "key_text": "Rabies (โรคพิษสุนัขบ้า) — พบ eosinophilic intracytoplasmic inclusion body ในเซลล์ประสาท",
+     "source_key": "เฉลย: Rabies (โรคพิษสุนัขบ้า) — พบ eosinophilic intracytoplasmic inclusion body ในเซลล์ประสาท"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE46",
+     "pages": [
+      4
+     ]
+    },
+    {
+     "paper": "OSPE46-KEY",
+     "pages": [
+      4
+     ]
+    }
+   ],
+   "tags": [
+    "pathology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "NERV-46-OSPE-006",
+   "block": "NERV",
+   "cohort": 46,
+   "n": 6,
+   "type": "OSPE",
+   "station": 6,
+   "stem": "สถานี 6: ภาพ pons มี hemorrhage",
+   "items": [
+    {
+     "id": "6.1",
+     "prompt": "What is the diagnosis?",
+     "format": "short",
+     "accepted": [
+      "duret",
+      "pontine"
+     ],
+     "keywords_all": [
+      "duret",
+      "pontine"
+     ],
+     "key_text": "Duret hemorrhage / Pontine hemorrhage secondary to herniation (transtentorial herniation → ดึงหลอดเลือด basilar artery branches)",
+     "source_key": "เฉลย: Duret hemorrhage / Pontine hemorrhage secondary to herniation (transtentorial herniation → ดึงหลอดเลือด basilar artery branches)",
+     "image": "img/NERV-46-OSPE-006.jpg",
+     "image_caption": "Pons hemorrhage"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE46",
+     "pages": [
+      4
+     ]
+    },
+    {
+     "paper": "OSPE46-KEY",
+     "pages": [
+      4
+     ]
+    }
+   ],
+   "tags": [
+    "pathology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "NERV-46-OSPE-007",
+   "block": "NERV",
+   "cohort": 46,
+   "n": 7,
+   "type": "OSPE",
+   "station": 7,
+   "stem": "สถานี 7: ภาพสมองตัด coronal",
+   "items": [
+    {
+     "id": "7.1",
+     "prompt": "What is the diagnosis?",
+     "format": "short",
+     "accepted": [
+      "cerebral edema",
+      "edema"
+     ],
+     "keywords_all": [
+      "edema"
+     ],
+     "key_text": "Cerebral edema / diffuse cerebral edema (gyri แบนราบ, sulci แคบ/หายไป)",
+     "source_key": "เฉลย: Cerebral edema / diffuse cerebral edema (gyri แบนราบ, sulci แคบ/หายไป)",
+     "image": "img/NERV-46-OSPE-007.jpg",
+     "image_caption": "Coronal brain"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE46",
+     "pages": [
+      4
+     ]
+    },
+    {
+     "paper": "OSPE46-KEY",
+     "pages": [
+      4
+     ]
+    }
+   ],
+   "tags": [
+    "pathology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "NERV-46-OSPE-008",
+   "block": "NERV",
+   "cohort": 46,
+   "n": 8,
+   "type": "OSPE",
+   "station": 8,
+   "stem": "สถานี 8: ภาพ gross ของลูกตา",
+   "items": [
+    {
+     "id": "8.1",
+     "prompt": "จงอธิบายลักษณะ gross pathology",
+     "format": "short",
+     "accepted": [
+      "white mass",
+      "intraocular",
+      "retinal detachment"
+     ],
+     "keywords_all": [
+      "white",
+      "detachment"
+     ],
+     "key_text": "ก้อนเนื้องอกสีขาวขุ่นบรรจุเต็มภายในลูกตา (intraocular white mass) · มี retinal detachment",
+     "source_key": "เฉลย: ก้อนเนื้องอกสีขาวขุ่นบรรจุเต็มภายในลูกตา (intraocular white mass) · มี retinal detachment",
+     "image": "img/NERV-46-OSPE-008.jpg",
+     "image_caption": "Eye (gross)"
+    },
+    {
+     "id": "8.2",
+     "prompt": "What is the diagnosis?",
+     "format": "short",
+     "accepted": [
+      "retinoblastoma"
+     ],
+     "keywords_all": [
+      "retinoblastoma"
+     ],
+     "key_text": "Retinoblastoma (พบในเด็ก)",
+     "source_key": "เฉลย: Retinoblastoma (พบในเด็ก)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE46",
+     "pages": [
+      5
+     ]
+    },
+    {
+     "paper": "OSPE46-KEY",
+     "pages": [
+      5
+     ]
+    }
+   ],
+   "tags": [
+    "pathology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "NERV-46-OSPE-009",
+   "block": "NERV",
+   "cohort": 46,
+   "n": 9,
+   "type": "OSPE",
+   "station": 9,
+   "stem": "สถานี 9: ภาพ histology ของก้อนที่ตัดจากหญิงอายุ 45 ปี ปวดศีรษะเรื้อรัง CT พบก้อน circumscribed ขนาด 4 cm",
+   "items": [
+    {
+     "id": "9.1",
+     "prompt": "What is the most likely diagnosis?",
+     "format": "short",
+     "accepted": [
+      "meningioma"
+     ],
+     "keywords_all": [
+      "meningioma"
+     ],
+     "key_text": "Meningioma (whorled pattern ของ meningothelial cells)",
+     "source_key": "เฉลย: Meningioma (whorled pattern ของ meningothelial cells)",
+     "image": "img/NERV-46-OSPE-009.jpg",
+     "image_caption": "Histology"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE46",
+     "pages": [
+      5
+     ]
+    },
+    {
+     "paper": "OSPE46-KEY",
+     "pages": [
+      5
+     ]
+    }
+   ],
+   "tags": [
+    "pathology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "NERV-46-OSPE-010",
+   "block": "NERV",
+   "cohort": 46,
+   "n": 10,
+   "type": "OSPE",
+   "station": 10,
+   "stem": "สถานี 10: ภาพ midbrain ลูกศรขาวชี้",
+   "items": [
+    {
+     "id": "10.1",
+     "prompt": "What is the tract in this area indicated by white arrow?",
+     "format": "short",
+     "accepted": [
+      "sensory fasciculus",
+      "lemniscus"
+     ],
+     "keywords_all": [
+      "fasciculus",
+      "lemniscus"
+     ],
+     "key_text": "Sensory fasciculus (medial lemniscus ที่ midbrain–diencephalon junction)",
+     "source_key": "เฉลย: Sensory fasciculus (medial lemniscus ที่ midbrain–diencephalon junction)",
+     "image": "img/NERV-46-OSPE-010.jpg",
+     "image_caption": "Midbrain"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE46",
+     "pages": [
+      5
+     ]
+    },
+    {
+     "paper": "OSPE46-KEY",
+     "pages": [
+      5
+     ]
+    }
+   ],
+   "tags": [
+    "neuroanatomy"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "NERV-46-OSPE-011",
+   "block": "NERV",
+   "cohort": 46,
+   "n": 11,
+   "type": "OSPE",
+   "station": 11,
+   "stem": "สถานี 11: ภาพ pons (วงสีแดง)",
+   "items": [
+    {
+     "id": "11.1",
+     "prompt": "What is this nucleus in red circle?",
+     "format": "short",
+     "accepted": [
+      "mesencephalic"
+     ],
+     "keywords_all": [
+      "mesencephalic"
+     ],
+     "key_text": "Mesencephalic nucleus & tract of CN V",
+     "source_key": "เฉลย: Mesencephalic nucleus & tract of CN V",
+     "image": "img/NERV-46-OSPE-011.jpg",
+     "image_caption": "Pons (red circle)"
+    },
+    {
+     "id": "11.2",
+     "prompt": "หากมีพยาธิสภาพที่นิวเคลียสดังกล่าว จะเกิดอะไรขึ้น",
+     "format": "short",
+     "accepted": [
+      "proprioception",
+      "jaw jerk"
+     ],
+     "keywords_all": [
+      "proprioception"
+     ],
+     "key_text": "Loss of proprioception of face & masticatory muscle · jaw jerk reflex หาย/ลด",
+     "source_key": "เฉลย: Loss of proprioception of face & masticatory muscle · jaw jerk reflex หาย/ลด"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE46",
+     "pages": [
+      6
+     ]
+    },
+    {
+     "paper": "OSPE46-KEY",
+     "pages": [
+      6
+     ]
+    }
+   ],
+   "tags": [
+    "neuroanatomy"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "NERV-46-OSPE-012",
+   "block": "NERV",
+   "cohort": 46,
+   "n": 12,
+   "type": "OSPE",
+   "station": 12,
+   "stem": "สถานี 12: ภาพ pons (วงสีเหลือง)",
+   "items": [
+    {
+     "id": "12.1",
+     "prompt": "What is this nucleus?",
+     "format": "short",
+     "accepted": [
+      "spinal trigeminal"
+     ],
+     "keywords_all": [
+      "spinal trigeminal"
+     ],
+     "key_text": "Spinal trigeminal nucleus",
+     "source_key": "เฉลย: Spinal trigeminal nucleus",
+     "image": "img/NERV-46-OSPE-012.jpg",
+     "image_caption": "Pons (yellow circle)"
+    },
+    {
+     "id": "12.2",
+     "prompt": "หากมีพยาธิสภาพที่นิวเคลียสดังกล่าว จะเกิดอะไรขึ้น",
+     "format": "short",
+     "accepted": [
+      "pain",
+      "temperature"
+     ],
+     "keywords_all": [
+      "pain"
+     ],
+     "key_text": "Loss of pain and temperature (of the face)",
+     "source_key": "เฉลย: Loss of pain and temperature (of the face)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE46",
+     "pages": [
+      6
+     ]
+    },
+    {
+     "paper": "OSPE46-KEY",
+     "pages": [
+      6
+     ]
+    }
+   ],
+   "tags": [
+    "neuroanatomy"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "NERV-46-OSPE-013",
+   "block": "NERV",
+   "cohort": 46,
+   "n": 13,
+   "type": "OSPE",
+   "station": 13,
+   "stem": "สถานี 13: ภาพตัดขวางไขสันหลัง ลูกศรสีแดงชี้",
+   "items": [
+    {
+     "id": "13.1",
+     "prompt": "จงบอก tract ทางระบบประสาทที่ผ่านบริเวณที่ลูกศรสีแดงชี้อยู่",
+     "format": "short",
+     "accepted": [
+      "dorsal column",
+      "dcml",
+      "fasciculus cuneatus",
+      "medial lemniscus"
+     ],
+     "keywords_all": [
+      "dorsal column",
+      "cuneatus"
+     ],
+     "key_text": "Dorsal column medial lemniscus (DCML) pathway — Fasciculus cuneatus (posterior column ส่วน dorsolateral) นำ proprioception/vibration/fine touch จากส่วนบนของร่างกาย (เหนือ T6)",
+     "source_key": "เฉลย: Dorsal column medial lemniscus (DCML) pathway — Fasciculus cuneatus (posterior column ส่วน dorsolateral) นำ proprioception/vibration/fine touch จากส่วนบนของร่างกาย (เหนือ T6)",
+     "image": "img/NERV-46-OSPE-013.jpg",
+     "image_caption": "Spinal cord (arrow)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE46",
+     "pages": [
+      7
+     ]
+    },
+    {
+     "paper": "OSPE46-KEY",
+     "pages": [
+      7
+     ]
+    }
+   ],
+   "tags": [
+    "neuroanatomy"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "NERV-46-OSPE-014",
+   "block": "NERV",
+   "cohort": 46,
+   "n": 14,
+   "type": "OSPE",
+   "station": 14,
+   "stem": "สถานี 14: ภาพ orbit (หมายเลข 1–3) และภาพ base ของสมอง (หมายเลข 4–5)",
+   "items": [
+    {
+     "id": "14.1",
+     "prompt": "หมายเลข 1",
+     "format": "short",
+     "accepted": [
+      "medial rectus"
+     ],
+     "keywords_all": [
+      "medial rectus"
+     ],
+     "key_text": "Medial rectus",
+     "source_key": "เฉลย: Medial rectus",
+     "image": "img/NERV-46-OSPE-014.jpg",
+     "image_caption": "Orbit and brain base"
+    },
+    {
+     "id": "14.2",
+     "prompt": "หมายเลข 2",
+     "format": "short",
+     "accepted": [
+      "inferior rectus"
+     ],
+     "keywords_all": [
+      "inferior rectus"
+     ],
+     "key_text": "Inferior rectus",
+     "source_key": "เฉลย: Inferior rectus"
+    },
+    {
+     "id": "14.3",
+     "prompt": "หมายเลข 3",
+     "format": "short",
+     "accepted": [
+      "trochlear"
+     ],
+     "keywords_all": [
+      "trochlear"
+     ],
+     "key_text": "Trochlear nerve",
+     "source_key": "เฉลย: Trochlear nerve"
+    },
+    {
+     "id": "14.4",
+     "prompt": "หมายเลข 4",
+     "format": "short",
+     "accepted": [
+      "parahippocampal"
+     ],
+     "keywords_all": [
+      "parahippocampal"
+     ],
+     "key_text": "Parahippocampal gyrus",
+     "source_key": "เฉลย: Parahippocampal gyrus"
+    },
+    {
+     "id": "14.5",
+     "prompt": "หมายเลข 5",
+     "format": "short",
+     "accepted": [
+      "inferior temporal"
+     ],
+     "keywords_all": [
+      "inferior temporal"
+     ],
+     "key_text": "Inferior temporal gyrus",
+     "source_key": "เฉลย: Inferior temporal gyrus"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE46",
+     "pages": [
+      8
+     ]
+    },
+    {
+     "paper": "OSPE46-KEY",
+     "pages": [
+      8
+     ]
+    }
+   ],
+   "tags": [
+    "neuroanatomy"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "NERV-46-OSPE-015",
+   "block": "NERV",
+   "cohort": 46,
+   "n": 15,
+   "type": "OSPE",
+   "station": 15,
+   "stem": "สถานี 15: ภาพตัดขวางไขสันหลัง (บริเวณหมายเลข 1 และ 2)",
+   "items": [
+    {
+     "id": "15.1",
+     "prompt": "หากเกิดพยาธิสภาพบริเวณหมายเลข 1 (lateral corticospinal tract) จะมี sign and symptoms อย่างไร",
+     "format": "short",
+     "accepted": [
+      "spastic",
+      "hyperreflexia",
+      "babinski",
+      "umn"
+     ],
+     "keywords_all": [
+      "spastic",
+      "umn"
+     ],
+     "key_text": "Upper motor neuron (UMN) signs: spastic paralysis, hyperreflexia, positive Babinski sign (ถ้าเป็นทั้ง 1 และ 2 = Amyotrophic lateral sclerosis)",
+     "source_key": "เฉลย: Upper motor neuron (UMN) signs: spastic paralysis, hyperreflexia, positive Babinski sign (ถ้าเป็นทั้ง 1 และ 2 = Amyotrophic lateral sclerosis)",
+     "image": "img/NERV-46-OSPE-015.jpg",
+     "image_caption": "Spinal cord (1, 2)"
+    },
+    {
+     "id": "15.2",
+     "prompt": "หากเกิดพยาธิสภาพบริเวณหมายเลข 2 (anterior horn cell) จะมี sign and symptoms อย่างไร",
+     "format": "short",
+     "accepted": [
+      "flaccid",
+      "hyporeflexia",
+      "atrophy",
+      "fasciculation",
+      "lmn"
+     ],
+     "keywords_all": [
+      "flaccid",
+      "lmn"
+     ],
+     "key_text": "Lower motor neuron (LMN) signs: hyporeflexia, flaccid paralysis, atrophy, fasciculation",
+     "source_key": "เฉลย: Lower motor neuron (LMN) signs: hyporeflexia, flaccid paralysis, atrophy, fasciculation"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE46",
+     "pages": [
+      9
+     ]
+    },
+    {
+     "paper": "OSPE46-KEY",
+     "pages": [
+      9
+     ]
+    }
+   ],
+   "tags": [
+    "neuroanatomy"
+   ],
+   "source": "claude-mcp"
+  }
+ ]
+}
