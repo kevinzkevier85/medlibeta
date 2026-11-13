@@ -1,0 +1,435 @@
+{
+ "meta": {
+  "set_id": "50_KF",
+  "block": "IMM",
+  "cohort": 50,
+  "type": "KF",
+  "title": "KF Immunity · Med PSU 50",
+  "time_limit_min": 90,
+  "generated_by": "auditor/tools/build_kf.py from auditor/data/work/imm_50_KF.kf.json — do not edit by hand"
+ },
+ "questions": [
+  {
+   "id": "IMM-50-KF-001",
+   "block": "IMM",
+   "cohort": 50,
+   "n": 1,
+   "type": "KF",
+   "case": "หญิงอายุ 49 ปี ปวดศีรษะ มึนงง ผื่นขึ้นทั่วตัว 2 สัปดาห์ ตรวจพบ diffuse skin lesion ที่หน้า ลำตัว แขน มือ ขา (ดูภาพ — รูปไม่เหมือนข้อสอบจริง)",
+   "items": [
+    {
+     "id": "1.1",
+     "prompt": "บอกเชื้อราที่เป็นไปได้ 3 ชนิด",
+     "format": "short",
+     "accepted": [
+      "histoplasma",
+      "cryptococc",
+      "marneffei"
+     ],
+     "keywords_all": [
+      "histoplasma"
+     ],
+     "key_text": "Histoplasma capsulatum, Cryptococcus neoformans, Talaromyces (Penicillium) marneffei",
+     "source_key": "เฉลย: Histoplasma capsulatum, Cryptococcus neoformans, Talaromyces (Penicillium) marneffei",
+     "image": "img/IMM-50-KF-001.jpg",
+     "image_caption": "รอยโรคผิวหนัง umbilicated papule"
+    },
+    {
+     "id": "1.2",
+     "prompt": "บอก underlying disease 1 ข้อ",
+     "format": "short",
+     "accepted": [
+      "hiv"
+     ],
+     "keywords_all": [
+      "hiv"
+     ],
+     "key_text": "HIV infection",
+     "source_key": "เฉลย: HIV infection"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF50",
+     "pages": [
+      1
+     ]
+    },
+    {
+     "paper": "KF50-KEY",
+     "pages": [
+      1
+     ]
+    }
+   ],
+   "tags": [
+    "microbiology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "IMM-50-KF-002",
+   "block": "IMM",
+   "cohort": 50,
+   "n": 2,
+   "type": "KF",
+   "case": "ผู้ป่วยมีรอยโรคในช่องปากตามภาพ",
+   "items": [
+    {
+     "id": "2.1",
+     "prompt": "บอกอาการ/วินิจฉัยจากเคสและภาพที่ปรากฏ",
+     "format": "short",
+     "accepted": [
+      "thrush",
+      "candid"
+     ],
+     "keywords_all": [
+      "candid"
+     ],
+     "key_text": "Oral thrush (oral candidiasis)",
+     "source_key": "เฉลย: Oral thrush (oral candidiasis)",
+     "image": "img/IMM-50-KF-002.jpg",
+     "image_caption": "ฝ้าขาว/แดงในช่องปาก"
+    },
+    {
+     "id": "2.2",
+     "prompt": "บอก underlying disease ของโรคนี้",
+     "format": "short",
+     "accepted": [
+      "hiv",
+      "dm",
+      "antibiotic"
+     ],
+     "keywords_all": [
+      "hiv"
+     ],
+     "key_text": "HIV infection, DM, การใช้ broad-spectrum antibiotics",
+     "source_key": "เฉลย: HIV infection, DM, การใช้ broad-spectrum antibiotics"
+    },
+    {
+     "id": "2.3",
+     "prompt": "บอก drug of choice ของโรคนี้",
+     "format": "short",
+     "accepted": [
+      "fluconazole",
+      "clotrimazole"
+     ],
+     "keywords_all": [
+      "fluconazole"
+     ],
+     "key_text": "Fluconazole, clotrimazole",
+     "source_key": "เฉลย: Fluconazole, clotrimazole"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF50",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "KF50-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [
+    "microbiology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "IMM-50-KF-003",
+   "block": "IMM",
+   "cohort": 50,
+   "n": 3,
+   "type": "KF",
+   "case": "ชายอายุ 43 ปี ไข้และปวดท้อง 2 วัน 12 วันก่อนเข้าป่ากับเพื่อน 4 คน จับหมูป่ามาทำอาหาร 5 วันต่อมาท้องเสียถ่ายเป็นน้ำ 2 วัน ไข้ปวดทั่วตัว เพื่อนทั้ง 4 คนมีอาการเหมือนกัน periorbital swelling",
+   "items": [
+    {
+     "id": "3.1",
+     "prompt": "เชื้อก่อโรค / ชื่ออาการ",
+     "format": "short",
+     "accepted": [
+      "trichin"
+     ],
+     "keywords_all": [
+      "trichin"
+     ],
+     "key_text": "Trichinella spiralis / Trichinosis",
+     "source_key": "เฉลย: Trichinella spiralis / Trichinosis"
+    },
+    {
+     "id": "3.2",
+     "prompt": "ควรส่งตรวจทางห้องปฏิบัติการอะไรเพื่อวินิจฉัย",
+     "format": "short",
+     "accepted": [
+      "muscle biopsy",
+      "biopsy"
+     ],
+     "keywords_all": [
+      "biopsy"
+     ],
+     "key_text": "Muscle biopsy (พบ coiled larva ในกล้ามเนื้อ)",
+     "source_key": "เฉลย: Muscle biopsy (พบ coiled larva ในกล้ามเนื้อ)"
+    },
+    {
+     "id": "3.3",
+     "prompt": "สามารถแพร่เชื้อไปให้ผู้อื่นได้หรือไม่",
+     "format": "short",
+     "accepted": [
+      "ไม่ได้",
+      "ไม่"
+     ],
+     "keywords_all": [
+      "ไม่"
+     ],
+     "key_text": "ไม่ได้",
+     "source_key": "เฉลย: ไม่ได้"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF50",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "KF50-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [
+    "parasitology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "IMM-50-KF-004",
+   "block": "IMM",
+   "cohort": 50,
+   "n": 4,
+   "type": "KF",
+   "case": "ชายอายุ 25 ปี คันที่ขาขวา 2 สัปดาห์ ตรวจพบดังภาพ (รูปไม่เหมือนข้อสอบจริง)",
+   "items": [
+    {
+     "id": "4.1",
+     "prompt": "ชื่อโรคที่เป็นไปได้มากที่สุด",
+     "format": "short",
+     "accepted": [
+      "gnathostom"
+     ],
+     "keywords_all": [
+      "gnathostom"
+     ],
+     "key_text": "Gnathostomiasis",
+     "source_key": "เฉลย: Gnathostomiasis",
+     "image": "img/IMM-50-KF-003.jpg",
+     "image_caption": "รอยโรคผิวหนังที่เท้า"
+    },
+    {
+     "id": "4.2",
+     "prompt": "ชื่อเชื้อก่อโรค",
+     "format": "short",
+     "accepted": [
+      "spinigerum",
+      "gnathostoma"
+     ],
+     "keywords_all": [
+      "gnathostoma"
+     ],
+     "key_text": "Gnathostoma spinigerum",
+     "source_key": "เฉลย: Gnathostoma spinigerum"
+    },
+    {
+     "id": "4.3",
+     "prompt": "Drug of choice",
+     "format": "short",
+     "accepted": [
+      "albendazole"
+     ],
+     "keywords_all": [
+      "albendazole"
+     ],
+     "key_text": "Albendazole",
+     "source_key": "เฉลย: Albendazole"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF50",
+     "pages": [
+      3
+     ]
+    },
+    {
+     "paper": "KF50-KEY",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [
+    "parasitology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "IMM-50-KF-005",
+   "block": "IMM",
+   "cohort": 50,
+   "n": 5,
+   "type": "KF",
+   "case": "ชายอายุ 20 ปี วินิจฉัย HIV infection และ CMV retinitis ผลตรวจ CD4+ T cell 5% (total CD4 = 50 cells/mm³) แพทย์รักษา CMV ก่อน 2 สัปดาห์ ยังไม่ให้ anti-retroviral drugs เพราะกังวลว่าจะเกิด Immune reconstitution inflammatory syndrome (IRIS)",
+   "items": [
+    {
+     "id": "5.1",
+     "prompt": "ปัจจัยเสี่ยงสำคัญที่สุดที่ทำให้เกิด IRIS",
+     "format": "short",
+     "accepted": [
+      "cmv",
+      "opportunistic",
+      "antigen",
+      "ฉวยโอกาส"
+     ],
+     "keywords_all": [
+      "antigen"
+     ],
+     "key_text": "มีการติดเชื้อฉวยโอกาส (เช่น CMV) อยู่ก่อน จึงมี antigen ซ่อนอยู่ เมื่อภูมิคุ้มกันฟื้นหลังเริ่ม ART จะตอบสนองต่อ antigen นั้นรุนแรง",
+     "source_key": "เฉลย: มีการติดเชื้อฉวยโอกาส (เช่น CMV) อยู่ก่อน จึงมี antigen ซ่อนอยู่ เมื่อภูมิคุ้มกันฟื้นหลังเริ่ม ART จะตอบสนองต่อ antigen นั้นรุนแรง"
+    },
+    {
+     "id": "5.2",
+     "prompt": "ถ้าเกิด IRIS ในผู้ป่วยรายนี้ จะมีอาการอย่างไร",
+     "format": "short",
+     "accepted": [
+      "lymph",
+      "retinitis",
+      "uveitis",
+      "eye"
+     ],
+     "keywords_all": [
+      "retinitis"
+     ],
+     "key_text": "Swollen lymph nodes และปัญหาตา เช่น retinitis/uveitis (ตามัว)",
+     "source_key": "เฉลย: Swollen lymph nodes และปัญหาตา เช่น retinitis/uveitis (ตามัว)"
+    },
+    {
+     "id": "5.3",
+     "prompt": "ถ้าเกิด IRIS จะให้ยาอะไร เพราะอะไร",
+     "format": "short",
+     "accepted": [
+      "prednis",
+      "corticosteroid"
+     ],
+     "keywords_all": [
+      "prednis"
+     ],
+     "key_text": "Prednisone (corticosteroids) — เป็น immunosuppressive drug ลดการอักเสบ",
+     "source_key": "เฉลย: Prednisone (corticosteroids) — เป็น immunosuppressive drug ลดการอักเสบ"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF50",
+     "pages": [
+      3
+     ]
+    },
+    {
+     "paper": "KF50-KEY",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [
+    "immunology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "IMM-50-KF-006",
+   "block": "IMM",
+   "cohort": 50,
+   "n": 6,
+   "type": "KF",
+   "case": "เด็กหญิงอายุ 7 ปี ไข้สูง ผื่น maculopapular ปวดกล้ามเนื้อ ปวดข้อสองข้างที่ข้อมือ ข้อเท้า และ MCP 2 วัน พ่อแม่และคนในชุมชนมีอาการเหมือนกันในช่วงนี้",
+   "items": [
+    {
+     "id": "6.1",
+     "prompt": "ผู้ป่วยน่าจะเป็นโรคอะไรมากที่สุด (ตอบ 2 โรค)",
+     "format": "short",
+     "accepted": [
+      "chikungunya",
+      "dengue"
+     ],
+     "keywords_all": [
+      "chikungunya"
+     ],
+     "key_text": "Chikungunya fever และ Dengue fever",
+     "source_key": "เฉลย: Chikungunya fever และ Dengue fever"
+    },
+    {
+     "id": "6.2",
+     "prompt": "ผู้ป่วยได้รับเชื้อมาได้อย่างไร",
+     "format": "short",
+     "accepted": [
+      "aedes",
+      "ยุงลาย"
+     ],
+     "keywords_all": [
+      "aedes"
+     ],
+     "key_text": "ถูกยุงลาย (Aedes aegypti) กัด และยุงตัวนั้นอาจกัดคนที่ติด virus มาก่อน",
+     "source_key": "เฉลย: ถูกยุงลาย (Aedes aegypti) กัด และยุงตัวนั้นอาจกัดคนที่ติด virus มาก่อน"
+    },
+    {
+     "id": "6.3",
+     "prompt": "จงแนะนำการป้องกันการระบาดในชุมชน",
+     "format": "short",
+     "accepted": [
+      "แหล่งน้ำ",
+      "มุ้ง",
+      "ยากันยุง",
+      "ยุง"
+     ],
+     "keywords_all": [
+      "ยุง"
+     ],
+     "key_text": "นอนในมุ้ง/ทายากันยุง · กำจัดแหล่งน้ำขังและปิดฝาภาชนะไม่ให้ยุงวางไข่ · ไม่ให้ยุงกัดผู้ป่วยแล้วไปกัดคนอื่น",
+     "source_key": "เฉลย: นอนในมุ้ง/ทายากันยุง · กำจัดแหล่งน้ำขังและปิดฝาภาชนะไม่ให้ยุงวางไข่ · ไม่ให้ยุงกัดผู้ป่วยแล้วไปกัดคนอื่น"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF50",
+     "pages": [
+      4
+     ]
+    },
+    {
+     "paper": "KF50-KEY",
+     "pages": [
+      4
+     ]
+    }
+   ],
+   "tags": [
+    "infection"
+   ],
+   "source": "claude-mcp"
+  }
+ ]
+}
