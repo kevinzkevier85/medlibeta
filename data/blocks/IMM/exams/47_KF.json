@@ -1,0 +1,941 @@
+{
+ "meta": {
+  "set_id": "47_KF",
+  "block": "IMM",
+  "cohort": 47,
+  "type": "KF",
+  "title": "KF Immunity · Med PSU 47",
+  "time_limit_min": 120,
+  "generated_by": "auditor/tools/build_kf.py from auditor/data/work/imm_47_KF.kf.json — do not edit by hand"
+ },
+ "questions": [
+  {
+   "id": "IMM-47-KF-001",
+   "block": "IMM",
+   "cohort": 47,
+   "n": 1,
+   "type": "KF",
+   "case": "เด็กชายอายุ 10 ปี ไข้ต่ำ ผื่น generalized multistage vesicular eruption ขึ้นที่ศีรษะ อก หลัง ก่อนแล้วลามทั่วตัว 2 วัน",
+   "items": [
+    {
+     "id": "1.1",
+     "prompt": "ถามว่าเป็นโรคอะไร",
+     "format": "short",
+     "accepted": [
+      "varicella",
+      "chickenpox",
+      "อีสุกอีใส"
+     ],
+     "keywords_all": [
+      "varicella"
+     ],
+     "key_text": "Varicella (chickenpox) จาก Varicella-zoster virus",
+     "source_key": "เฉลย: Varicella (chickenpox) จาก Varicella-zoster virus"
+    },
+    {
+     "id": "1.2",
+     "prompt": "มีอาการแทรกซ้อนอะไรบ้าง (2 ข้อ)",
+     "format": "short",
+     "accepted": [
+      "แบคทีเรีย",
+      "bacterial",
+      "pneumonia",
+      "encephalitis"
+     ],
+     "keywords_all": [
+      "แบคทีเรีย"
+     ],
+     "key_text": "การติดเชื้อแบคทีเรียซ้ำที่ผิวหนัง (เช่น cellulitis) และ pneumonia/encephalitis (cerebellar ataxia)",
+     "source_key": "เฉลย: การติดเชื้อแบคทีเรียซ้ำที่ผิวหนัง (เช่น cellulitis) และ pneumonia/encephalitis (cerebellar ataxia)"
+    },
+    {
+     "id": "1.3",
+     "prompt": "น้องสาวอายุ 2 ขวบ ควรให้การป้องกันอย่างไร (2 ข้อ)",
+     "format": "short",
+     "accepted": [
+      "วัคซีน",
+      "vaccine",
+      "vzig",
+      "แยก"
+     ],
+     "keywords_all": [
+      "วัคซีน"
+     ],
+     "key_text": "ฉีดวัคซีนวาริเซลลา (ถ้ายังไม่เคยฉีด/ภายใน 3–5 วันหลังสัมผัส) และแยกจากผู้ป่วย (ถ้าเสี่ยงสูงให้ VZIG)",
+     "source_key": "เฉลย: ฉีดวัคซีนวาริเซลลา (ถ้ายังไม่เคยฉีด/ภายใน 3–5 วันหลังสัมผัส) และแยกจากผู้ป่วย (ถ้าเสี่ยงสูงให้ VZIG)"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "KF47",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [
+    "infection"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "IMM-47-KF-002",
+   "block": "IMM",
+   "cohort": 47,
+   "n": 2,
+   "type": "KF",
+   "case": "เด็กหญิงอายุ 7 ปี ไข้ ปวดกล้ามเนื้อ ปวดศีรษะ 3 วัน วันนี้ปวดท้องและอาเจียน BP 90/60 CBC: Hct 44%, WBC 5,000 (neutrophil 55%, lymphocyte 45%, atypical lymphocyte 5%), platelet 80,000",
+   "items": [
+    {
+     "id": "2.1",
+     "prompt": "ผู้ป่วยเป็นโรคอะไร",
+     "format": "short",
+     "accepted": [
+      "dengue"
+     ],
+     "keywords_all": [
+      "dengue"
+     ],
+     "key_text": "Dengue fever (เข้าสู่ระยะวิกฤต/ DHF)",
+     "source_key": "เฉลย: Dengue fever (เข้าสู่ระยะวิกฤต/ DHF)"
+    },
+    {
+     "id": "2.2",
+     "prompt": "ภาวะแทรกซ้อนที่ต้องระวัง (2 ข้อ)",
+     "format": "short",
+     "accepted": [
+      "shock",
+      "plasma",
+      "bleeding",
+      "เลือดออก"
+     ],
+     "keywords_all": [
+      "shock"
+     ],
+     "key_text": "Plasma leakage → shock (Dengue shock syndrome) และภาวะเลือดออก (bleeding)",
+     "source_key": "เฉลย: Plasma leakage → shock (Dengue shock syndrome) และภาวะเลือดออก (bleeding)"
+    },
+    {
+     "id": "2.3",
+     "prompt": "ผู้ป่วยมีโอกาสติดเชื้อซ้ำหรือไม่ เพราะอะไร",
+     "format": "short",
+     "accepted": [
+      "serotype",
+      "ade"
+     ],
+     "keywords_all": [
+      "serotype"
+     ],
+     "key_text": "มี เพราะมี 4 serotype ภูมิคุ้มกันป้องกันเฉพาะ serotype เดิม การติดต่าง serotype ซ้ำเสี่ยงรุนแรง (ADE)",
+     "source_key": "เฉลย: มี เพราะมี 4 serotype ภูมิคุ้มกันป้องกันเฉพาะ serotype เดิม การติดต่าง serotype ซ้ำเสี่ยงรุนแรง (ADE)"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "KF47",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [
+    "infection"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "IMM-47-KF-003",
+   "block": "IMM",
+   "cohort": 47,
+   "n": 3,
+   "type": "KF",
+   "case": "ไข้ ไอ หอบ เสมหะเป็นสีสนิม เสียง crepitation แพทย์วินิจฉัยปอดกลีบล่างอักเสบ",
+   "items": [
+    {
+     "id": "3.1",
+     "prompt": "ตัวอย่างเชื้อแบคทีเรียแกรมบวกที่ทำให้เกิดโรคนี้",
+     "format": "short",
+     "accepted": [
+      "pneumoniae"
+     ],
+     "keywords_all": [
+      "pneumoniae"
+     ],
+     "key_text": "Streptococcus pneumoniae",
+     "source_key": "เฉลย: Streptococcus pneumoniae"
+    },
+    {
+     "id": "3.2",
+     "prompt": "ควรส่งตรวจด้วยวิธีใดจึงเหมาะสม สะดวก และราคาไม่สูง",
+     "format": "short",
+     "accepted": [
+      "gram"
+     ],
+     "keywords_all": [
+      "gram"
+     ],
+     "key_text": "Gram stain เสมหะ (เห็น Gram-positive diplococci) + sputum culture",
+     "source_key": "เฉลย: Gram stain เสมหะ (เห็น Gram-positive diplococci) + sputum culture"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "KF47",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [
+    "microbiology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "IMM-47-KF-004",
+   "block": "IMM",
+   "cohort": 47,
+   "n": 4,
+   "type": "KF",
+   "case": "ผู้ป่วยเป็นฝีบริเวณเยื่อหุ้มสมอง มีประวัติใช้สารเสพติดทางเข็มฉีดยาเป็นประจำ",
+   "items": [
+    {
+     "id": "4.1",
+     "prompt": "ตัวอย่างเชื้อแบคทีเรียแกรมบวกที่ทำให้เกิดโรคนี้",
+     "format": "short",
+     "accepted": [
+      "aureus"
+     ],
+     "keywords_all": [
+      "aureus"
+     ],
+     "key_text": "Staphylococcus aureus",
+     "source_key": "เฉลย: Staphylococcus aureus"
+    },
+    {
+     "id": "4.2",
+     "prompt": "ช่องทางการติดเชื้อ (entry) ที่เป็นไปได้มากที่สุด",
+     "format": "short",
+     "accepted": [
+      "เลือด",
+      "hematogenous",
+      "ฉีด"
+     ],
+     "keywords_all": [
+      "เลือด"
+     ],
+     "key_text": "ทางกระแสเลือด (hematogenous) จากการฉีดยาด้วยเข็มปนเปื้อนผ่านผิวหนัง (อาจผ่าน endocarditis)",
+     "source_key": "เฉลย: ทางกระแสเลือด (hematogenous) จากการฉีดยาด้วยเข็มปนเปื้อนผ่านผิวหนัง (อาจผ่าน endocarditis)"
+    },
+    {
+     "id": "4.3",
+     "prompt": "ให้ยาอะไรเพื่อรักษา (2 ข้อ)",
+     "format": "short",
+     "accepted": [
+      "vancomycin",
+      "cloxacillin",
+      "nafcillin",
+      "ceftriaxone"
+     ],
+     "keywords_all": [
+      "vancomycin"
+     ],
+     "key_text": "Vancomycin (หรือ cloxacillin/nafcillin ถ้า MSSA) ร่วมกับ ceftriaxone และ metronidazole",
+     "source_key": "เฉลย: Vancomycin (หรือ cloxacillin/nafcillin ถ้า MSSA) ร่วมกับ ceftriaxone และ metronidazole"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "KF47",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [
+    "microbiology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "IMM-47-KF-005",
+   "block": "IMM",
+   "cohort": 47,
+   "n": 5,
+   "type": "KF",
+   "case": "ผู้ป่วยชาย คลำพบก้อน (lump) ตามตัว ไม่มีอาการผิดปกติจากการตรวจร่างกาย แพทย์ส่ง MRI สมอง (ดูภาพ)",
+   "items": [
+    {
+     "id": "5.1",
+     "prompt": "การวินิจฉัยโรคที่เป็นไปได้มากที่สุด",
+     "format": "short",
+     "accepted": [
+      "cysticerc"
+     ],
+     "keywords_all": [
+      "cysticerc"
+     ],
+     "key_text": "Cysticercosis (neurocysticercosis) จาก Cysticercus cellulosae ของ Taenia solium",
+     "source_key": "เฉลย: Cysticercosis (neurocysticercosis) จาก Cysticercus cellulosae ของ Taenia solium",
+     "image": "img/IMM-47-KF-001.jpg",
+     "image_caption": "MRI สมอง: cyst หลายก้อน"
+    },
+    {
+     "id": "5.2",
+     "prompt": "ผู้ป่วยเป็นโรคนี้ได้อย่างไร",
+     "format": "short",
+     "accepted": [
+      "ไข่",
+      "egg"
+     ],
+     "keywords_all": [
+      "ไข่"
+     ],
+     "key_text": "กินไข่ของ Taenia solium ที่ปนเปื้อนมากับอาหาร/น้ำ/ผัก (fecal-oral)",
+     "source_key": "เฉลย: กินไข่ของ Taenia solium ที่ปนเปื้อนมากับอาหาร/น้ำ/ผัก (fecal-oral)"
+    },
+    {
+     "id": "5.3",
+     "prompt": "ให้ยาอะไรเพื่อรักษา",
+     "format": "short",
+     "accepted": [
+      "albendazole",
+      "praziquantel"
+     ],
+     "keywords_all": [
+      "albendazole"
+     ],
+     "key_text": "Albendazole (หรือ Praziquantel)",
+     "source_key": "เฉลย: Albendazole (หรือ Praziquantel)"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "KF47",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [
+    "parasitology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "IMM-47-KF-006",
+   "block": "IMM",
+   "cohort": 47,
+   "n": 6,
+   "type": "KF",
+   "case": "ชายอายุ 34 ปี ไข้ 3 วันหลังไปค้างคืนที่สวนยางใน อ.นาทวี จ.สงขลาเมื่อ 10 วันก่อน ไข้และหนาวสั่น T 39.2 °C vital signs และ mental status ปกติ ท้องกดเจ็บ คลำตับม้ามไม่พบ (ดูภาพ blood smear)",
+   "items": [
+    {
+     "id": "6.1",
+     "prompt": "ผู้ป่วยรายนี้ติดเชื้ออะไร",
+     "format": "short",
+     "accepted": [
+      "plasmodium",
+      "vivax",
+      "malaria"
+     ],
+     "keywords_all": [
+      "plasmodium"
+     ],
+     "key_text": "Plasmodium (malaria) — ภาพพบ trophozoite/ring หลายระยะใน RBC ที่โต น่าจะเป็น P. vivax",
+     "source_key": "เฉลย: Plasmodium (malaria) — ภาพพบ trophozoite/ring หลายระยะใน RBC ที่โต น่าจะเป็น P. vivax",
+     "image": "img/IMM-47-KF-002.jpg",
+     "image_caption": "Blood smear: Plasmodium ในเม็ดเลือดแดง"
+    },
+    {
+     "id": "6.2",
+     "prompt": "จงบอกพาหะของเชื้อนี้",
+     "format": "short",
+     "accepted": [
+      "anopheles",
+      "ก้นปล่อง"
+     ],
+     "keywords_all": [
+      "anopheles"
+     ],
+     "key_text": "ยุงก้นปล่อง Anopheles (ตัวเมีย)",
+     "source_key": "เฉลย: ยุงก้นปล่อง Anopheles (ตัวเมีย)"
+    },
+    {
+     "id": "6.3",
+     "prompt": "ตัวอย่างยาที่ใช้รักษา 2 ชนิด",
+     "format": "short",
+     "accepted": [
+      "chloroquine",
+      "primaquine",
+      "artesunate",
+      "mefloquine"
+     ],
+     "keywords_all": [
+      "chloroquine"
+     ],
+     "key_text": "Chloroquine และ Primaquine (ถ้า falciparum ใช้ Artesunate + Mefloquine)",
+     "source_key": "เฉลย: Chloroquine และ Primaquine (ถ้า falciparum ใช้ Artesunate + Mefloquine)"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "KF47",
+     "pages": [
+      4
+     ]
+    }
+   ],
+   "tags": [
+    "parasitology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "IMM-47-KF-007",
+   "block": "IMM",
+   "cohort": 47,
+   "n": 7,
+   "type": "KF",
+   "case": "ชายอายุ 30 ปี ไอแห้ง 3 สัปดาห์ ไข้ต่ำ เบื่ออาหาร เหนื่อยง่าย 5 วัน น้ำหนักลด 5 กก. ใน 2 เดือน T 38.2 °C PR 110 RR 28 BP 120/70 O₂ sat 65% room air (ภาพคือเสมหะย้อม GMS)",
+   "items": [
+    {
+     "id": "7.1",
+     "prompt": "ผู้ป่วยรายนี้ติดเชื้ออะไร",
+     "format": "short",
+     "accepted": [
+      "pneumocystis",
+      "jirovec"
+     ],
+     "keywords_all": [
+      "pneumocystis"
+     ],
+     "key_text": "Pneumocystis jirovecii",
+     "source_key": "เฉลย: Pneumocystis jirovecii",
+     "image": "img/IMM-47-KF-003.jpg",
+     "image_caption": "GMS stain: cyst ของ Pneumocystis"
+    },
+    {
+     "id": "7.2",
+     "prompt": "Underlying disease",
+     "format": "short",
+     "accepted": [
+      "aids",
+      "hiv"
+     ],
+     "keywords_all": [
+      "hiv"
+     ],
+     "key_text": "AIDS (HIV infection)",
+     "source_key": "เฉลย: AIDS (HIV infection)"
+    },
+    {
+     "id": "7.3",
+     "prompt": "ชื่อยาที่ใช้ในการรักษา",
+     "format": "short",
+     "accepted": [
+      "trimoxazole"
+     ],
+     "keywords_all": [
+      "trimoxazole"
+     ],
+     "key_text": "Co-trimoxazole (± prednisolone ถ้า hypoxemia รุนแรง)",
+     "source_key": "เฉลย: Co-trimoxazole (± prednisolone ถ้า hypoxemia รุนแรง)"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "KF47",
+     "pages": [
+      4
+     ]
+    }
+   ],
+   "tags": [
+    "microbiology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "IMM-47-KF-008",
+   "block": "IMM",
+   "cohort": 47,
+   "n": 8,
+   "type": "KF",
+   "case": "ชายอายุ 29 ปี ไข้ ไอ เหนื่อยง่าย น้ำหนักลด 2 เดือน ร่วมกับรอยโรคผิวหนังที่หน้า คอ ลำตัว แขนขา 2 สัปดาห์ PE: extensive umbilicated papules",
+   "items": [
+    {
+     "id": "8.1",
+     "prompt": "ชื่อเชื้อที่ทำให้เกิด skin lesion แบบนี้ 2 ชนิด",
+     "format": "short",
+     "accepted": [
+      "marneffei",
+      "cryptococc",
+      "histoplasma"
+     ],
+     "keywords_all": [
+      "marneffei"
+     ],
+     "key_text": "Talaromyces (Penicillium) marneffei และ Cryptococcus neoformans (หรือ Histoplasma capsulatum)",
+     "source_key": "เฉลย: Talaromyces (Penicillium) marneffei และ Cryptococcus neoformans (หรือ Histoplasma capsulatum)",
+     "image": "img/IMM-47-KF-004.jpg",
+     "image_caption": "Umbilicated papules ที่ใบหน้า"
+    },
+    {
+     "id": "8.2",
+     "prompt": "Underlying disease",
+     "format": "short",
+     "accepted": [
+      "aids",
+      "hiv"
+     ],
+     "keywords_all": [
+      "hiv"
+     ],
+     "key_text": "AIDS (HIV infection)",
+     "source_key": "เฉลย: AIDS (HIV infection)"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "KF47",
+     "pages": [
+      5
+     ]
+    }
+   ],
+   "tags": [
+    "microbiology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "IMM-47-KF-009",
+   "block": "IMM",
+   "cohort": 47,
+   "n": 9,
+   "type": "KF",
+   "case": "Mycobacterium tuberculosis ก่อวัณโรคและมักติดเชื้อที่ปอด",
+   "items": [
+    {
+     "id": "9.1",
+     "prompt": "Innate immunity ที่ช่วยป้องกันปอดจาก M. tuberculosis",
+     "format": "short",
+     "accepted": [
+      "macrophage"
+     ],
+     "keywords_all": [
+      "macrophage"
+     ],
+     "key_text": "Macrophage (alveolar macrophage)",
+     "source_key": "เฉลย: Macrophage (alveolar macrophage)"
+    },
+    {
+     "id": "9.2",
+     "prompt": "เซลล์ใน adaptive immunity ที่ช่วยกระตุ้นเซลล์ innate คือเซลล์อะไร (ชนิดไหน) และสารที่หลั่งคือสารอะไร",
+     "format": "short",
+     "accepted": [
+      "th1",
+      "ifn"
+     ],
+     "keywords_all": [
+      "th1"
+     ],
+     "key_text": "Th1 cell · IFN-γ",
+     "source_key": "เฉลย: Th1 cell · IFN-γ"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "KF47",
+     "pages": [
+      6
+     ]
+    }
+   ],
+   "tags": [
+    "immunology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "IMM-47-KF-010",
+   "block": "IMM",
+   "cohort": 47,
+   "n": 10,
+   "type": "KF",
+   "case": "ชายอายุ 50 ปี ไข้ ไอ 2 วัน ประวัติสัมผัสผู้ป่วยติดเชื้อ COVID-19 มา 1 สัปดาห์ จึงส่งตรวจ",
+   "items": [
+    {
+     "id": "10.1",
+     "prompt": "เก็บ specimen จากที่ไหนเหมาะสมที่สุด",
+     "format": "short",
+     "accepted": [
+      "nasopharyngeal",
+      "swab"
+     ],
+     "keywords_all": [
+      "nasopharyngeal"
+     ],
+     "key_text": "Nasopharyngeal swab (หรือ throat swab) ใน viral transport medium",
+     "source_key": "เฉลย: Nasopharyngeal swab (หรือ throat swab) ใน viral transport medium"
+    },
+    {
+     "id": "10.2",
+     "prompt": "การส่งตรวจวินิจฉัยในห้องปฏิบัติการ",
+     "format": "short",
+     "accepted": [
+      "pcr",
+      "antigen"
+     ],
+     "keywords_all": [
+      "pcr"
+     ],
+     "key_text": "RT-PCR (หรือ antigen test)",
+     "source_key": "เฉลย: RT-PCR (หรือ antigen test)"
+    },
+    {
+     "id": "10.3",
+     "prompt": "ต้องการศึกษาระบาดวิทยาของผู้ที่เคยติดเชื้อ จะส่งตรวจด้วยวิธีใด",
+     "format": "short",
+     "accepted": [
+      "serolog",
+      "antibody",
+      "igg",
+      "elisa"
+     ],
+     "keywords_all": [
+      "antibody"
+     ],
+     "key_text": "ตรวจ serology (antibody IgG) เช่น ELISA",
+     "source_key": "เฉลย: ตรวจ serology (antibody IgG) เช่น ELISA"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "KF47",
+     "pages": [
+      6
+     ]
+    }
+   ],
+   "tags": [
+    "microbiology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "IMM-47-KF-011",
+   "block": "IMM",
+   "cohort": 47,
+   "n": 11,
+   "type": "KF",
+   "case": "ตัวเลือก: A SLE, B Takayasu arteritis, C Microscopic polyarteritis, D Sjögren's syndrome, E Rheumatoid arthritis, F Henoch-Schönlein purpura, G Acute rheumatic fever · จับคู่โรคกับอาการของ autoimmune disease",
+   "items": [
+    {
+     "id": "11.1",
+     "prompt": "ปัสสาวะเป็นฟอง ตัวซีดจากเม็ดเลือดแดงแตก",
+     "format": "short",
+     "accepted": [
+      "a"
+     ],
+     "keywords_all": [
+      "a"
+     ],
+     "key_text": "A (SLE: nephritis + hemolytic anemia)",
+     "source_key": "เฉลย: A (SLE: nephritis + hemolytic anemia)"
+    },
+    {
+     "id": "11.2",
+     "prompt": "ข้ออักเสบ มีผังผืดที่ข้อนิ้ว ติดขัดตอนเช้า",
+     "format": "short",
+     "accepted": [
+      "e"
+     ],
+     "keywords_all": [
+      "e"
+     ],
+     "key_text": "E (Rheumatoid arthritis)",
+     "source_key": "เฉลย: E (Rheumatoid arthritis)"
+    },
+    {
+     "id": "11.3",
+     "prompt": "ไข้ 2 วัน ผื่นแดงที่ขาทั้งสองข้าง",
+     "format": "short",
+     "accepted": [
+      "f"
+     ],
+     "keywords_all": [
+      "f"
+     ],
+     "key_text": "F (Henoch–Schönlein purpura)",
+     "source_key": "เฉลย: F (Henoch–Schönlein purpura)"
+    },
+    {
+     "id": "11.4",
+     "prompt": "ไข้ เจ็บคอ และลิ้นหัวใจอักเสบ",
+     "format": "short",
+     "accepted": [
+      "g"
+     ],
+     "keywords_all": [
+      "g"
+     ],
+     "key_text": "G (Acute rheumatic fever)",
+     "source_key": "เฉลย: G (Acute rheumatic fever)"
+    },
+    {
+     "id": "11.5",
+     "prompt": "ชาปลายมือปลายเท้า แขนสองข้างความดันต่างกัน 20 mmHg ชีพจรลด",
+     "format": "short",
+     "accepted": [
+      "b"
+     ],
+     "keywords_all": [
+      "b"
+     ],
+     "key_text": "B (Takayasu arteritis)",
+     "source_key": "เฉลย: B (Takayasu arteritis)"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "KF47",
+     "pages": [
+      7
+     ]
+    }
+   ],
+   "tags": [
+    "immunology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "IMM-47-KF-012",
+   "block": "IMM",
+   "cohort": 47,
+   "n": 12,
+   "type": "KF",
+   "case": "ตัวเลือก: A Immediate hypersensitivity, B Antibody-mediated hypersensitivity, C Immune complex-mediated hypersensitivity, D T cell-mediated hypersensitivity · จับคู่ hypersensitivity",
+   "items": [
+    {
+     "id": "12.1",
+     "prompt": "ฉีดวัคซีน MMR แล้วเกิดผื่นแดงบริเวณที่ฉีด",
+     "format": "short",
+     "accepted": [
+      "d"
+     ],
+     "keywords_all": [
+      "d"
+     ],
+     "key_text": "D",
+     "source_key": "เฉลย: D"
+    },
+    {
+     "id": "12.2",
+     "prompt": "Skin prick test",
+     "format": "short",
+     "accepted": [
+      "a"
+     ],
+     "keywords_all": [
+      "a"
+     ],
+     "key_text": "A",
+     "source_key": "เฉลย: A"
+    },
+    {
+     "id": "12.3",
+     "prompt": "เด็ก 6 เดือน กินไข่แดง 2 ครั้ง บวมที่ปากกับตาภายใน 5 นาที ทั้งสองครั้งห่างกัน 1 สัปดาห์",
+     "format": "short",
+     "accepted": [
+      "a"
+     ],
+     "keywords_all": [
+      "a"
+     ],
+     "key_text": "A",
+     "source_key": "เฉลย: A"
+    },
+    {
+     "id": "12.4",
+     "prompt": "Tuberculin test",
+     "format": "short",
+     "accepted": [
+      "d"
+     ],
+     "keywords_all": [
+      "d"
+     ],
+     "key_text": "D",
+     "source_key": "เฉลย: D"
+    },
+    {
+     "id": "12.5",
+     "prompt": "Acute rheumatic fever",
+     "format": "short",
+     "accepted": [
+      "b"
+     ],
+     "keywords_all": [
+      "b"
+     ],
+     "key_text": "B",
+     "source_key": "เฉลย: B"
+    },
+    {
+     "id": "12.6",
+     "prompt": "บวมแดงหลังโดนผึ้งต่อย 15 นาที",
+     "format": "short",
+     "accepted": [
+      "a"
+     ],
+     "keywords_all": [
+      "a"
+     ],
+     "key_text": "A",
+     "source_key": "เฉลย: A"
+    },
+    {
+     "id": "12.7",
+     "prompt": "เกิดอาการแพ้หลังได้รับเซรุ่มพิษงู 1 วัน",
+     "format": "short",
+     "accepted": [
+      "c"
+     ],
+     "keywords_all": [
+      "c"
+     ],
+     "key_text": "C",
+     "source_key": "เฉลย: C"
+    },
+    {
+     "id": "12.8",
+     "prompt": "Granulomatous infection",
+     "format": "short",
+     "accepted": [
+      "d"
+     ],
+     "keywords_all": [
+      "d"
+     ],
+     "key_text": "D",
+     "source_key": "เฉลย: D"
+    },
+    {
+     "id": "12.9",
+     "prompt": "SLE",
+     "format": "short",
+     "accepted": [
+      "c"
+     ],
+     "keywords_all": [
+      "c"
+     ],
+     "key_text": "C",
+     "source_key": "เฉลย: C"
+    },
+    {
+     "id": "12.10",
+     "prompt": "Glomerulonephritis (post-infectious)",
+     "format": "short",
+     "accepted": [
+      "c"
+     ],
+     "keywords_all": [
+      "c"
+     ],
+     "key_text": "C",
+     "source_key": "เฉลย: C"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "KF47",
+     "pages": [
+      8
+     ]
+    }
+   ],
+   "tags": [
+    "immunology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "IMM-47-KF-013",
+   "block": "IMM",
+   "cohort": 47,
+   "n": 13,
+   "type": "KF",
+   "case": "ตัวเลือก: A Predominantly T cell defect, B Predominantly B cell defect, C Combined immunodeficiency, D Phagocyte defect, E Complement defect · จับคู่ immunodeficiency (ในไฟล์เหลือโจทย์ 3 ข้อ)",
+   "items": [
+    {
+     "id": "13.1",
+     "prompt": "ชายอายุ 35 ปี เป็น Cryptococcus meningitis และ candida ในปาก",
+     "format": "short",
+     "accepted": [
+      "a"
+     ],
+     "keywords_all": [
+      "a"
+     ],
+     "key_text": "A (Predominantly T cell defect)",
+     "source_key": "เฉลย: A (Predominantly T cell defect)"
+    },
+    {
+     "id": "13.2",
+     "prompt": "หญิง 3 ปี เป็น acute otitis media และ sinusitis เริ่มเป็นตอน 2 ปี",
+     "format": "short",
+     "accepted": [
+      "b"
+     ],
+     "keywords_all": [
+      "b"
+     ],
+     "key_text": "B (Predominantly B cell defect)",
+     "source_key": "เฉลย: B (Predominantly B cell defect)"
+    },
+    {
+     "id": "13.3",
+     "prompt": "เป็น Neisseria บ่อยครั้ง",
+     "format": "short",
+     "accepted": [
+      "e"
+     ],
+     "keywords_all": [
+      "e"
+     ],
+     "key_text": "E (Complement defect)",
+     "source_key": "เฉลย: E (Complement defect)"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "KF47",
+     "pages": [
+      8
+     ]
+    }
+   ],
+   "tags": [
+    "immunology"
+   ],
+   "source": "claude-mcp"
+  }
+ ]
+}
