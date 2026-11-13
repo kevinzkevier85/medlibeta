@@ -14,7 +14,7 @@ from extract import fix_zero_bbox
 AUD = Path(__file__).resolve().parents[1]
 ZOOM = 2.0
 Q_START = re.compile(r"^\s*(\d{1,3})\s*[.)]")
-OPT = re.compile(r"^\s*([A-E])\s*[.)]?\s*(\S.*)?$")
+OPT = re.compile(r"^\s*([A-Ea-e])\s*[.)]?\s*(\S.*)?$")
 HEADER = re.compile(r"^VICHAKARN MED PSU", re.I)
 PINK_MIN = 0.12  # fraction of pink pixels in an option box that counts as highlighted
 
@@ -26,7 +26,10 @@ def is_pink(r, g, b):
     yellow = r >= 235 and g >= 185 and b <= 130                                  # yellow highlighter (GI 41-43)
     orange = r >= 240 and 195 <= g <= 225 and 115 <= b <= 165 and r - b >= 80     # orange pill highlight (KUB 52)
     blue = b >= 245 and 170 <= r <= 210 and 200 <= g <= 232                      # light-blue pill highlight (KUB 44)
-    return pink or lime or salmon or yellow or orange or blue
+    green = g >= 225 and r <= 190 and b <= 190 and g - r >= 45 and g - b >= 45  # mint-green pill highlight (Respiratory 52)
+    teal = 150 <= r <= 190 and 200 <= g <= 230 and 180 <= b <= 215 and g - r >= 30 and 8 <= g - b <= 30  # pale teal pill highlight (Respiratory 49)
+    gray = 210 <= r <= 222 and max(r, g, b) - min(r, g, b) <= 2   # neutral grey highlight band (Respiratory 47)
+    return pink or lime or salmon or yellow or orange or blue or green or teal or gray
 
 
 def pink_fraction(pix, rect):
@@ -62,6 +65,23 @@ def lines_of(page):
     return black, blue
 
 
+def circles_of(page):
+    """Hand-drawn rings around the answer letter (vector, Respiratory 51): near-square rects stroked in a saturated colour."""
+    out = []
+    for d in page.get_drawings():
+        c = d.get("color") or d.get("fill")
+        r = d["rect"]
+        if c and 12 <= r.width <= 30 and 12 <= r.height <= 30 and abs(r.width - r.height) < 7 and max(c) - min(c) > 0.5:
+            out.append(r)
+        elif c and d.get("fill") is None and 10 <= r.width <= 26 and 14 <= r.height <= 36 and r.height >= r.width * 0.9 and len(d.get("items", [])) >= 2:
+            out.append(r)
+        elif d.get("fill") and not d.get("color") and 10 <= r.width <= 26 and 20 <= r.height <= 38 and r.height >= r.width * 1.2 and len(d.get("items", [])) >= 100:
+            out.append(r)  # dark hand-drawn ring (Respiratory 49): unfilled stroke, roughly letter-sized
+        elif c and max(c) < 0.15 and not d.get("fill") and 12 <= r.width <= 32 and 26 <= r.height <= 52 and r.x0 < 95 and 5 <= len(d.get("items", [])) <= 24:
+            out.append(r)  # black hand-drawn check slash across the option letter (Respiratory 48)
+    return out
+
+
 def parse(set_id, bare_numbers=False):
     doc = pymupdf.open(AUD / "source" / f"{set_id}__key.pdf")
     fix_zero_bbox(doc)
@@ -69,14 +89,17 @@ def parse(set_id, bare_numbers=False):
     for pno, page in enumerate(doc, 1):
         pix = page.get_pixmap(matrix=pymupdf.Matrix(ZOOM, ZOOM), alpha=False)
         black, blue = lines_of(page)
+        rings = circles_of(page)
         starts = []  # (y, qnum) of question starts on this page
         for rect, txt in black:
             if HEADER.match(txt):
                 continue
             m = Q_START.match(txt) or (bare_numbers and re.fullmatch(r"\s*(\d{1,3})\s*", txt))
-            if m and int(m.group(1)) == expect and rect.x0 < 100:
+            if m and int(m.group(1)) == 1 and out and all(not v["score"] for v in out.values()) and rect.x0 < 100:
+                out.clear(); expect = 1  # numbered instructions on the cover page looked like questions 1..n
+            if m and expect <= int(m.group(1)) <= expect + 15 and rect.x0 < 100:
                 cur = m.group(1)
-                expect += 1
+                expect = int(cur) + 1
                 out[cur] = {"answers": [], "score": {}, "note": "", "page": pno}
                 starts.append((rect.y0, cur))
                 continue
@@ -84,9 +107,11 @@ def parse(set_id, bare_numbers=False):
                 continue
             mo = OPT.match(txt)
             if mo and rect.x0 < 200:
-                letter = mo.group(1)
+                letter = mo.group(1).upper()
                 box = pymupdf.Rect(rect.x0 - 6, rect.y0, rect.x1 + 6, rect.y1)
                 f = pink_fraction(pix, box)
+                if any(abs((r.y0 + r.y1) / 2 - (rect.y0 + rect.y1) / 2) < 8 and rect.x0 - 10 <= (r.x0 + r.x1) / 2 <= rect.x0 + 16 for r in rings):
+                    f = max(f, 1.0)
                 out[cur]["score"][letter] = max(out[cur]["score"].get(letter, 0), round(f, 3))
         # notes: attach to the question whose start is the last one above the note (or the carried-over one)
         carried = None

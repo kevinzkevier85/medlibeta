@@ -1,0 +1,1098 @@
+{
+ "meta": {
+  "set_id": "46_OSPE",
+  "block": "RESP",
+  "cohort": 46,
+  "type": "OSPE",
+  "title": "OSPE Respiratory · Med PSU 46",
+  "time_limit_min": 24,
+  "generated_by": "auditor/tools/build_kf.py from auditor/data/work/resp_46_OSPE.kf.json — do not edit by hand"
+ },
+ "questions": [
+  {
+   "id": "RESP-46-OSPE-001",
+   "block": "RESP",
+   "cohort": 46,
+   "n": 1,
+   "type": "OSPE",
+   "station": 1,
+   "stem": "สถานี 1: Gross — จงบอกชื่อเส้นเลือดที่ปักหมุดหมายเลข 1 และ 2 ในภาพ",
+   "items": [
+    {
+     "id": "1.1",
+     "prompt": "เส้นเลือดที่ปักหมุดหมายเลข 1",
+     "format": "short",
+     "accepted": [
+      "musculophrenic"
+     ],
+     "keywords_all": [
+      "musculophrenic"
+     ],
+     "key_text": "Musculophrenic artery",
+     "source_key": "เฉลย: Musculophrenic artery",
+     "image": "img/RESP-46-OSPE-001.jpg",
+     "image_caption": "ภาพ dissection ผนังทรวงอก"
+    },
+    {
+     "id": "1.2",
+     "prompt": "เส้นเลือดที่ปักหมุดหมายเลข 2",
+     "format": "short",
+     "accepted": [
+      "superior epigastric"
+     ],
+     "keywords_all": [
+      "epigastric"
+     ],
+     "key_text": "Superior epigastric artery",
+     "source_key": "เฉลย: Superior epigastric artery"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE46",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "OSPE46-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [
+    "anatomy"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "RESP-46-OSPE-002",
+   "block": "RESP",
+   "cohort": 46,
+   "n": 2,
+   "type": "OSPE",
+   "station": 2,
+   "stem": "สถานี 2: Gross — จงบอกชื่อร่องที่ติดด้วยเทปสีแดงในภาพ และโครงสร้างที่อยู่ในร่องนี้",
+   "items": [
+    {
+     "id": "2.0",
+     "prompt": "ชื่อร่อง",
+     "format": "short",
+     "accepted": [
+      "costal groove"
+     ],
+     "keywords_all": [
+      "costal groove"
+     ],
+     "key_text": "Costal groove",
+     "source_key": "เฉลย: Costal groove",
+     "image": "img/RESP-46-OSPE-002.jpg",
+     "image_caption": "ซี่โครง (ภาพ gross)"
+    },
+    {
+     "id": "2.1",
+     "prompt": "โครงสร้างที่อยู่ในร่องนี้ ข้อที่ 1",
+     "format": "short",
+     "accepted": [
+      "intercostal vein",
+      "vein"
+     ],
+     "keywords_all": [
+      "vein"
+     ],
+     "key_text": "Intercostal vein",
+     "source_key": "เฉลย: Intercostal vein"
+    },
+    {
+     "id": "2.2",
+     "prompt": "โครงสร้างที่อยู่ในร่องนี้ ข้อที่ 2",
+     "format": "short",
+     "accepted": [
+      "intercostal artery",
+      "artery"
+     ],
+     "keywords_all": [
+      "artery"
+     ],
+     "key_text": "Intercostal artery",
+     "source_key": "เฉลย: Intercostal artery"
+    },
+    {
+     "id": "2.3",
+     "prompt": "โครงสร้างที่อยู่ในร่องนี้ ข้อที่ 3",
+     "format": "short",
+     "accepted": [
+      "intercostal nerve",
+      "nerve"
+     ],
+     "keywords_all": [
+      "nerve"
+     ],
+     "key_text": "Intercostal nerve",
+     "source_key": "เฉลย: Intercostal nerve"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE46",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "OSPE46-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [
+    "anatomy"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "RESP-46-OSPE-003",
+   "block": "RESP",
+   "cohort": 46,
+   "n": 3,
+   "type": "OSPE",
+   "station": 3,
+   "stem": "สถานี 3: Gross — จงระบุชื่อร่องที่ปักหมุดหมายเลข 1 และกล้ามเนื้อที่ปักหมุดหมายเลข 2",
+   "items": [
+    {
+     "id": "3.1",
+     "prompt": "ร่องที่ปักหมุดหมายเลข 1",
+     "format": "short",
+     "accepted": [
+      "pyriform",
+      "piriform"
+     ],
+     "keywords_all": [
+      "pyriform"
+     ],
+     "key_text": "Pyriform recess",
+     "source_key": "เฉลย: Pyriform recess",
+     "image": "img/RESP-46-OSPE-003.jpg",
+     "image_caption": "ภาพกล่องเสียง/คอหอย"
+    },
+    {
+     "id": "3.2",
+     "prompt": "กล้ามเนื้อที่ปักหมุดหมายเลข 2",
+     "format": "short",
+     "accepted": [
+      "posterior cricoarytenoid"
+     ],
+     "keywords_all": [
+      "posterior cricoarytenoid"
+     ],
+     "key_text": "Posterior cricoarytenoid muscle",
+     "source_key": "เฉลย: Posterior cricoarytenoid muscle"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE46",
+     "pages": [
+      3
+     ]
+    },
+    {
+     "paper": "OSPE46-KEY",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [
+    "anatomy"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "RESP-46-OSPE-004",
+   "block": "RESP",
+   "cohort": 46,
+   "n": 4,
+   "type": "OSPE",
+   "station": 4,
+   "stem": "สถานี 4: จากรูป (Gross)",
+   "items": [
+    {
+     "id": "4.1",
+     "prompt": "จงระบุชื่อท่อลมที่ปักหมุดสีชมพู",
+     "format": "short",
+     "accepted": [
+      "superior lingular",
+      "lingular"
+     ],
+     "keywords_all": [
+      "lingular"
+     ],
+     "key_text": "Superior lingular segmental bronchus",
+     "source_key": "เฉลย: Superior lingular segmental bronchus",
+     "image": "img/RESP-46-OSPE-004.jpg",
+     "image_caption": "ปอดพร้อม segmental bronchus"
+    },
+    {
+     "id": "4.2",
+     "prompt": "เป็นปอดข้างใด",
+     "format": "short",
+     "accepted": [
+      "left"
+     ],
+     "keywords_all": [
+      "left"
+     ],
+     "key_text": "Left lung",
+     "source_key": "เฉลย: Left lung"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE46",
+     "pages": [
+      3
+     ]
+    },
+    {
+     "paper": "OSPE46-KEY",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [
+    "anatomy"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "RESP-46-OSPE-005",
+   "block": "RESP",
+   "cohort": 46,
+   "n": 5,
+   "type": "OSPE",
+   "station": 5,
+   "stem": "สถานี 5: ท่อทางเดินหายใจที่วงในภาพคือโครงสร้างใด — จงบอกลักษณะพิเศษของโครงสร้างดังกล่าว 3 ข้อ",
+   "items": [
+    {
+     "id": "5.0",
+     "prompt": "ชื่อโครงสร้าง",
+     "format": "short",
+     "accepted": [
+      "terminal bronchiole"
+     ],
+     "keywords_all": [
+      "terminal bronchiole"
+     ],
+     "key_text": "Terminal bronchiole",
+     "source_key": "เฉลย: Terminal bronchiole",
+     "image": "img/RESP-46-OSPE-005.jpg",
+     "image_caption": "สไลด์ H&E"
+    },
+    {
+     "id": "5.1",
+     "prompt": "ลักษณะพิเศษ 3 ข้อ",
+     "format": "short",
+     "accepted": [
+      "hyaline cartilage",
+      "cuboidal",
+      "clara",
+      "club",
+      "goblet",
+      "gland"
+     ],
+     "keywords_all": [
+      "clara"
+     ],
+     "key_text": "ไม่มี hyaline cartilage; เยื่อบุ ciliated cuboidal epithelium with Clara (club) cells; ไม่มี goblet cell และไม่มี gland ใน lamina propria",
+     "source_key": "เฉลย: ไม่มี hyaline cartilage; เยื่อบุ ciliated cuboidal epithelium with Clara (club) cells; ไม่มี goblet cell และไม่มี gland ใน lamina propria"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE46",
+     "pages": [
+      4
+     ]
+    },
+    {
+     "paper": "OSPE46-KEY",
+     "pages": [
+      4
+     ]
+    }
+   ],
+   "tags": [
+    "histology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "RESP-46-OSPE-006",
+   "block": "RESP",
+   "cohort": 46,
+   "n": 6,
+   "type": "OSPE",
+   "station": 6,
+   "stem": "สถานี 6: จากภาพ จงบอกลักษณะพิเศษของโครงสร้างดังกล่าว 3 ข้อ",
+   "items": [
+    {
+     "id": "6.0",
+     "prompt": "ชื่อโครงสร้าง",
+     "format": "short",
+     "accepted": [
+      "intrapulmonary bronchus",
+      "bronchus"
+     ],
+     "keywords_all": [
+      "bronchus"
+     ],
+     "key_text": "Intrapulmonary bronchus",
+     "source_key": "เฉลย: Intrapulmonary bronchus",
+     "image": "img/RESP-46-OSPE-006.jpg",
+     "image_caption": "สไลด์ H&E"
+    },
+    {
+     "id": "6.1",
+     "prompt": "ลักษณะพิเศษ 3 ข้อ",
+     "format": "short",
+     "accepted": [
+      "isolated plate",
+      "hyaline cartilage",
+      "smooth muscle",
+      "seromucous"
+     ],
+     "keywords_all": [
+      "hyaline cartilage"
+     ],
+     "key_text": "Isolated plates of hyaline cartilage; crisscrossing spirally arranged smooth muscle; seromucous glands ใน lamina propria/submucosa",
+     "source_key": "เฉลย: Isolated plates of hyaline cartilage; crisscrossing spirally arranged smooth muscle; seromucous glands ใน lamina propria/submucosa"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE46",
+     "pages": [
+      4
+     ]
+    },
+    {
+     "paper": "OSPE46-KEY",
+     "pages": [
+      4
+     ]
+    }
+   ],
+   "tags": [
+    "histology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "RESP-46-OSPE-007",
+   "block": "RESP",
+   "cohort": 46,
+   "n": 7,
+   "type": "OSPE",
+   "station": 7,
+   "stem": "สถานี 7: จากกราฟ spirogram (ภาพ)",
+   "items": [
+    {
+     "id": "7.1",
+     "prompt": "Tidal volume มีค่าเท่ากับเท่าใด",
+     "format": "short",
+     "accepted": [
+      "tidal",
+      "ml",
+      "500"
+     ],
+     "keywords_all": [
+      "tidal"
+     ],
+     "key_text": "อ่านจากกราฟตามภาพ (ลายมือเฉลยบอกให้ไปดูค่าในข้อสอบจริง)",
+     "source_key": "เฉลย (ลายมือ): ข้อ 7.1–7.2 ไปดูค่ากับสเกลของจริงในข้อสอบ",
+     "image": "img/RESP-46-OSPE-007.jpg",
+     "image_caption": "Spirogram"
+    },
+    {
+     "id": "7.2",
+     "prompt": "ความถี่ของการหายใจมีค่าเท่าใด (ตอบพร้อมหน่วย)",
+     "format": "short",
+     "accepted": [
+      "peak",
+      "นับ",
+      "ครั้ง",
+      "breaths",
+      "/min"
+     ],
+     "keywords_all": [
+      "peak"
+     ],
+     "key_text": "นับจำนวน peak ใน 1 นาที (ครั้ง/นาที)",
+     "source_key": "เฉลย: นับจำนวน peak ใน 1 นาที (ครั้ง/นาที)"
+    },
+    {
+     "id": "7.3",
+     "prompt": "A + B คือค่าอะไร",
+     "format": "short",
+     "accepted": [
+      "inspiratory reserve",
+      "irv",
+      "inspiratory capacity"
+     ],
+     "keywords_all": [
+      "inspiratory"
+     ],
+     "key_text": "Inspiratory reserve volume (ตามเฉลยลายมือ; ในทางตำรา A + tidal volume = inspiratory capacity)",
+     "source_key": "เฉลย: Inspiratory reserve volume (ตามเฉลยลายมือ; ในทางตำรา A + tidal volume = inspiratory capacity)"
+    },
+    {
+     "id": "7.4",
+     "prompt": "ค่าใดไม่สามารถบอกได้จากกราฟนี้",
+     "format": "short",
+     "accepted": [
+      "residual"
+     ],
+     "keywords_all": [
+      "residual"
+     ],
+     "key_text": "Residual volume/residual capacity (RV)",
+     "source_key": "เฉลย: Residual volume/residual capacity (RV)"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "OSPE46",
+     "pages": [
+      5
+     ]
+    },
+    {
+     "paper": "OSPE46-KEY",
+     "pages": [
+      5
+     ]
+    }
+   ],
+   "tags": [
+    "physiology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "RESP-46-OSPE-008",
+   "block": "RESP",
+   "cohort": 46,
+   "n": 8,
+   "type": "OSPE",
+   "station": 8,
+   "stem": "สถานี 8: กราฟ force expiratory spirogram (ภาพ)",
+   "items": [
+    {
+     "id": "8.1",
+     "prompt": "ค่าที่ปิดกรอบสีชมพูไว้คือค่าอะไร (ชื่อย่อและชื่อเต็ม)",
+     "format": "short",
+     "accepted": [
+      "fev1",
+      "forced expiratory volume"
+     ],
+     "keywords_all": [
+      "FEV1"
+     ],
+     "key_text": "Forced expiratory volume in 1 second (FEV₁)",
+     "source_key": "เฉลย: Forced expiratory volume in 1 second (FEV₁)",
+     "image": "img/RESP-46-OSPE-008.jpg",
+     "image_caption": "Force expiratory spirogram"
+    },
+    {
+     "id": "8.2",
+     "prompt": "ค่าที่ปิดกรอบสีเทาไว้คือค่าอะไร",
+     "format": "short",
+     "accepted": [
+      "fvc",
+      "forced vital capacity"
+     ],
+     "keywords_all": [
+      "FVC"
+     ],
+     "key_text": "Forced vital capacity (FVC)",
+     "source_key": "เฉลย: Forced vital capacity (FVC)"
+    },
+    {
+     "id": "8.3",
+     "prompt": "FEV₁% มีค่าเท่าใด พร้อมแสดงวิธีคำนวณ",
+     "format": "short",
+     "accepted": [
+      "fev1",
+      "fvc",
+      "100",
+      "/"
+     ],
+     "keywords_all": [
+      "FVC"
+     ],
+     "key_text": "FEV₁% = FEV₁/FVC × 100 (แทนค่าจากกราฟในข้อสอบจริง)",
+     "source_key": "เฉลย (ลายมือ): FEV₁% = FEV₁/FVC × 100 (ไปดูตัวเลขจากโจทย์จริง)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE46",
+     "pages": [
+      5
+     ]
+    },
+    {
+     "paper": "OSPE46-KEY",
+     "pages": [
+      5
+     ]
+    }
+   ],
+   "tags": [
+    "physiology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "RESP-46-OSPE-009",
+   "block": "RESP",
+   "cohort": 46,
+   "n": 9,
+   "type": "OSPE",
+   "station": 9,
+   "stem": "สถานี 9: จากกราฟ flow–volume loop",
+   "items": [
+    {
+     "id": "9.1",
+     "prompt": "จุด A หมายถึงค่าใด (ชื่อย่อและชื่อเต็ม)",
+     "format": "short",
+     "accepted": [
+      "peak expiratory",
+      "pef"
+     ],
+     "keywords_all": [
+      "peak expiratory"
+     ],
+     "key_text": "Peak expiratory flow (PEF)",
+     "source_key": "เฉลย: Peak expiratory flow (PEF)",
+     "image": "img/RESP-46-OSPE-009.jpg",
+     "image_caption": "Flow–volume loop"
+    },
+    {
+     "id": "9.2",
+     "prompt": "จุด B หมายถึงค่าใด",
+     "format": "short",
+     "accepted": [
+      "peak inspiratory",
+      "pif"
+     ],
+     "keywords_all": [
+      "peak inspiratory"
+     ],
+     "key_text": "Peak inspiratory flow (PIF)",
+     "source_key": "เฉลย: Peak inspiratory flow (PIF)"
+    },
+    {
+     "id": "9.3",
+     "prompt": "FVC มีค่าเท่าใด (ตอบพร้อมหน่วย)",
+     "format": "short",
+     "accepted": [
+      "4"
+     ],
+     "keywords_all": [
+      "4"
+     ],
+     "key_text": "4 L",
+     "source_key": "เฉลย: 4 L"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE46",
+     "pages": [
+      6
+     ]
+    },
+    {
+     "paper": "OSPE46-KEY",
+     "pages": [
+      6
+     ]
+    }
+   ],
+   "tags": [
+    "physiology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "RESP-46-OSPE-010",
+   "block": "RESP",
+   "cohort": 46,
+   "n": 10,
+   "type": "OSPE",
+   "station": 10,
+   "stem": "สถานี 10: จากกราฟ flow–volume loop (ปกติเทียบกับผู้ป่วย)",
+   "items": [
+    {
+     "id": "10.1",
+     "prompt": "ผู้ป่วยจัดว่าเป็น lung disease ประเภทใด",
+     "format": "short",
+     "accepted": [
+      "restrictive"
+     ],
+     "keywords_all": [
+      "restrictive"
+     ],
+     "key_text": "Restrictive lung disease",
+     "source_key": "เฉลย: Restrictive lung disease",
+     "image": "img/RESP-46-OSPE-010.jpg",
+     "image_caption": "Flow–volume loop คนปกติเทียบผู้ป่วย"
+    },
+    {
+     "id": "10.2",
+     "prompt": "ใช้ค่าใดในการระบุว่าผู้ป่วยเป็นโรคหรือปกติ",
+     "format": "short",
+     "accepted": [
+      "fvc",
+      "forced vital capacity"
+     ],
+     "keywords_all": [
+      "FVC"
+     ],
+     "key_text": "Forced vital capacity (FVC)",
+     "source_key": "เฉลย: Forced vital capacity (FVC)"
+    },
+    {
+     "id": "10.3",
+     "prompt": "ค่านั้นในคนปกติมีค่าเท่าใด",
+     "format": "short",
+     "accepted": [
+      "80",
+      "> 80"
+     ],
+     "keywords_all": [
+      "80"
+     ],
+     "key_text": "> 80% predicted value",
+     "source_key": "เฉลย: > 80% predicted value"
+    },
+    {
+     "id": "10.4",
+     "prompt": "ค่านั้นในผู้ป่วยโรคประเภทนี้มีค่าเท่าใด",
+     "format": "short",
+     "accepted": [
+      "80",
+      "< 80"
+     ],
+     "keywords_all": [
+      "80"
+     ],
+     "key_text": "< 80% predicted value",
+     "source_key": "เฉลย: < 80% predicted value"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE46",
+     "pages": [
+      6
+     ]
+    },
+    {
+     "paper": "OSPE46-KEY",
+     "pages": [
+      6
+     ]
+    }
+   ],
+   "tags": [
+    "physiology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "RESP-46-OSPE-011",
+   "block": "RESP",
+   "cohort": 46,
+   "n": 11,
+   "type": "OSPE",
+   "station": 11,
+   "stem": "สถานี 11: จงอธิบายการดำเนินโรคใน asthma — ชั้น epithelium, ชั้น submucosa และกล้ามเนื้อเรียบ",
+   "items": [
+    {
+     "id": "11.1",
+     "prompt": "ชั้น epithelium",
+     "format": "short",
+     "accepted": [
+      "goblet",
+      "basement membrane",
+      "hyperplasia"
+     ],
+     "keywords_all": [
+      "goblet"
+     ],
+     "key_text": "Goblet cell hyperplasia และ basement membrane หนาตัว",
+     "source_key": "เฉลย: Goblet cell hyperplasia และ basement membrane หนาตัว",
+     "image": "img/RESP-46-OSPE-011.jpg",
+     "image_caption": "ภาพประกอบ asthma"
+    },
+    {
+     "id": "11.2",
+     "prompt": "ชั้น submucosa",
+     "format": "short",
+     "accepted": [
+      "eosinophil",
+      "inflammatory",
+      "edema"
+     ],
+     "keywords_all": [
+      "eosinophil"
+     ],
+     "key_text": "Eosinophil (inflammatory cell) infiltration และ edema",
+     "source_key": "เฉลย: Eosinophil (inflammatory cell) infiltration และ edema"
+    },
+    {
+     "id": "11.3",
+     "prompt": "กล้ามเนื้อเรียบ",
+     "format": "short",
+     "accepted": [
+      "smooth muscle",
+      "hypertrophy",
+      "hyperplasia"
+     ],
+     "keywords_all": [
+      "smooth muscle"
+     ],
+     "key_text": "Smooth muscle hypertrophy/hyperplasia",
+     "source_key": "เฉลย: Smooth muscle hypertrophy/hyperplasia"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "OSPE46",
+     "pages": [
+      7
+     ]
+    },
+    {
+     "paper": "OSPE46-KEY",
+     "pages": [
+      7
+     ]
+    }
+   ],
+   "tags": [
+    "pathology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "RESP-46-OSPE-012",
+   "block": "RESP",
+   "cohort": 46,
+   "n": 12,
+   "type": "OSPE",
+   "station": 12,
+   "stem": "สถานี 12: จากภาพ CXR",
+   "items": [
+    {
+     "id": "12.1",
+     "prompt": "จากภาพ จงวินิจฉัยโรคในผู้ป่วยรายนี้",
+     "format": "short",
+     "accepted": [
+      "bullous emphysema",
+      "emphysema",
+      "bulla"
+     ],
+     "keywords_all": [
+      "emphysema"
+     ],
+     "key_text": "Bullous emphysema",
+     "source_key": "เฉลย: Bullous emphysema",
+     "image": "img/RESP-46-OSPE-012.jpg",
+     "image_caption": "CXR"
+    },
+    {
+     "id": "12.2",
+     "prompt": "ภาวะแทรกซ้อนที่สำคัญของผู้ป่วยรายนี้",
+     "format": "short",
+     "accepted": [
+      "pneumothorax"
+     ],
+     "keywords_all": [
+      "pneumothorax"
+     ],
+     "key_text": "Pneumothorax",
+     "source_key": "เฉลย: Pneumothorax"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE46",
+     "pages": [
+      7
+     ]
+    },
+    {
+     "paper": "OSPE46-KEY",
+     "pages": [
+      7
+     ]
+    }
+   ],
+   "tags": [
+    "radiology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "RESP-46-OSPE-013",
+   "block": "RESP",
+   "cohort": 46,
+   "n": 13,
+   "type": "OSPE",
+   "station": 13,
+   "stem": "สถานี 13: ผู้ป่วยตรวจเสมหะ นำเสมหะไป Gram stain พบผลดังรูป (ส่องกล้อง)",
+   "items": [
+    {
+     "id": "13.1",
+     "prompt": "อธิบายสิ่งที่เห็นในกล้อง (จำนวน ลักษณะการติดสี รูปร่าง การเรียงตัว)",
+     "format": "short",
+     "accepted": [
+      "numerous",
+      "gram positive",
+      "cocci",
+      "cluster"
+     ],
+     "keywords_all": [
+      "cocci"
+     ],
+     "key_text": "Numerous Gram-positive cocci in clusters",
+     "source_key": "เฉลย: Numerous Gram-positive cocci in clusters",
+     "image": "img/RESP-46-OSPE-013.jpg",
+     "image_caption": "Gram stain เสมหะ"
+    },
+    {
+     "id": "13.2",
+     "prompt": "Causative organism คือ",
+     "format": "short",
+     "accepted": [
+      "staphylococcus aureus",
+      "staphylococcus"
+     ],
+     "keywords_all": [
+      "staphylococcus"
+     ],
+     "key_text": "Staphylococcus aureus",
+     "source_key": "เฉลย: Staphylococcus aureus"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE46",
+     "pages": [
+      8
+     ]
+    },
+    {
+     "paper": "OSPE46-KEY",
+     "pages": [
+      8
+     ]
+    }
+   ],
+   "tags": [
+    "microbiology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "RESP-46-OSPE-014",
+   "block": "RESP",
+   "cohort": 46,
+   "n": 14,
+   "type": "OSPE",
+   "station": 14,
+   "stem": "สถานี 14: แพทย์สงสัยผู้ป่วยติดเชื้อไวรัส ทางแล็บให้อุปกรณ์มาดังภาพ",
+   "items": [
+    {
+     "id": "14.1",
+     "prompt": "ควรเก็บ specimen ใดเพื่อการวินิจฉัยโรค",
+     "format": "short",
+     "accepted": [
+      "nasopharyngeal"
+     ],
+     "keywords_all": [
+      "nasopharyngeal"
+     ],
+     "key_text": "Nasopharyngeal swab",
+     "source_key": "เฉลย: Nasopharyngeal swab",
+     "image": "img/RESP-46-OSPE-014.jpg",
+     "image_caption": "อุปกรณ์เก็บ swab"
+    },
+    {
+     "id": "14.2",
+     "prompt": "อธิบายวิธีการเก็บ specimen",
+     "format": "short",
+     "accepted": [
+      "swab",
+      "nasopharynx",
+      "vtm",
+      "หมุน",
+      "ค้าง"
+     ],
+     "keywords_all": [
+      "swab"
+     ],
+     "key_text": "ให้ผู้ป่วยนั่งเงยหน้าเล็กน้อย สอดก้าน swab ผ่านรูจมูกตามพื้นโพรงจมูกจนถึง nasopharynx หมุนค้างไว้ 5–10 วินาที แล้วใส่หลอด VTM ส่งตรวจ",
+     "source_key": "เฉลย (ลายมือ): nasopharyngeal swab ... ใส่ VTM"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "OSPE46",
+     "pages": [
+      8
+     ]
+    },
+    {
+     "paper": "OSPE46-KEY",
+     "pages": [
+      8
+     ]
+    }
+   ],
+   "tags": [
+    "microbiology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "RESP-46-OSPE-015",
+   "block": "RESP",
+   "cohort": 46,
+   "n": 15,
+   "type": "OSPE",
+   "station": 15,
+   "stem": "สถานี 15: จาก chest X-ray ดังรูป ผู้ป่วยป่วยด้วยโรคอะไรหรือมีสาเหตุจากโรคใดได้บ้าง (5 ข้อ)",
+   "items": [
+    {
+     "id": "15.1",
+     "prompt": "โรค/สาเหตุที่เป็นไปได้ 5 อย่าง",
+     "format": "short",
+     "accepted": [
+      "pulmonary edema",
+      "hemorrhage",
+      "pneumonia",
+      "lymphoma",
+      "alveolar proteinosis",
+      "patchy"
+     ],
+     "keywords_all": [
+      "pulmonary edema"
+     ],
+     "key_text": "Pulmonary edema, pulmonary hemorrhage, pneumonia, lymphoma, pulmonary alveolar proteinosis (CXR: patchy infiltration)",
+     "source_key": "เฉลย: Pulmonary edema, pulmonary hemorrhage, pneumonia, lymphoma, pulmonary alveolar proteinosis (CXR: patchy infiltration)",
+     "image": "img/RESP-46-OSPE-015.jpg",
+     "image_caption": "CXR: patchy infiltration"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE46",
+     "pages": [
+      9
+     ]
+    },
+    {
+     "paper": "OSPE46-KEY",
+     "pages": [
+      9
+     ]
+    }
+   ],
+   "tags": [
+    "radiology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "RESP-46-OSPE-016",
+   "block": "RESP",
+   "cohort": 46,
+   "n": 16,
+   "type": "OSPE",
+   "station": 16,
+   "stem": "สถานี 16: จาก chest X-ray ดังรูป",
+   "items": [
+    {
+     "id": "16.1",
+     "prompt": "จากรูปเป็นการถ่าย CXR ด้วยมุมมองแบบ PA หรือ AP",
+     "format": "short",
+     "accepted": [
+      "pa"
+     ],
+     "keywords_all": [
+      "PA"
+     ],
+     "key_text": "PA",
+     "source_key": "เฉลย: PA",
+     "image": "img/RESP-46-OSPE-016.jpg",
+     "image_caption": "CXR"
+    },
+    {
+     "id": "16.2",
+     "prompt": "ความผิดปกติที่ส่วนใดของปอด (ระบุให้ชัดเจน)",
+     "format": "short",
+     "accepted": [
+      "right upper"
+     ],
+     "keywords_all": [
+      "upper"
+     ],
+     "key_text": "Right upper lobe",
+     "source_key": "เฉลย: Right upper lobe"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE46",
+     "pages": [
+      9
+     ]
+    },
+    {
+     "paper": "OSPE46-KEY",
+     "pages": [
+      9
+     ]
+    }
+   ],
+   "tags": [
+    "radiology"
+   ],
+   "source": "claude-mcp"
+  }
+ ]
+}

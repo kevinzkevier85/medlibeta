@@ -1,0 +1,635 @@
+{
+ "set_id": "resp_41-43_KF",
+ "note": "KF Respiratory Med PSU 41-43 (ทีมวิชาการ Med 44) · ข้อสอบจดมา 10 ข้อ · ไฟล์เฉลยไม่มีคำตอบที่อ่านได้ AI เขียนเฉลยให้ตามตำรา (answer_status draft) รอคนตรวจ · ภาพ CXR ข้อ 8 ไม่มีในไฟล์",
+ "questions": [
+  {
+   "n": 1,
+   "page": 1,
+   "tags": [
+    "ENT"
+   ],
+   "case": "ผู้ป่วย sore throat มี injected pharynx, no congestion, no runny nose, no nasal obstruction · ไม่มีโรคประจำตัว ไม่ซีด ไม่เหลือง ไม่บวม · tonsil 2+, lymphadenitis · แพ้ penicillin",
+   "answer_status": "draft",
+   "items": [
+    {
+     "id": "1.1",
+     "prompt": "วินิจฉัยที่เหมาะสมที่สุด",
+     "format": "short",
+     "accepted": [
+      "streptococcal",
+      "pharyngotonsillitis",
+      "tonsillitis",
+      "group a"
+     ],
+     "keywords_all": [
+      "streptococcal"
+     ],
+     "key_text": "Acute streptococcal pharyngotonsillitis (Group A Streptococcus)",
+     "source_key": "เฉลย: Acute streptococcal pharyngotonsillitis (Group A Streptococcus)"
+    },
+    {
+     "id": "1.2",
+     "prompt": "differential diagnosis 3 อย่าง",
+     "format": "short",
+     "accepted": [
+      "viral",
+      "mononucleosis",
+      "ebv",
+      "diphtheria",
+      "peritonsillar",
+      "adenovirus"
+     ],
+     "keywords_all": [
+      "viral"
+     ],
+     "key_text": "Viral pharyngitis, infectious mononucleosis (EBV), diphtheria (หรือ peritonsillar abscess, adenovirus)",
+     "source_key": "เฉลย: Viral pharyngitis, infectious mononucleosis (EBV), diphtheria (หรือ peritonsillar abscess, adenovirus)"
+    },
+    {
+     "id": "1.3",
+     "prompt": "antibiotic, dose, duration ที่ควรให้",
+     "format": "short",
+     "accepted": [
+      "azithromycin",
+      "clarithromycin",
+      "clindamycin",
+      "macrolide",
+      "cephalexin"
+     ],
+     "keywords_all": [
+      "macrolide"
+     ],
+     "key_text": "เนื่องจากแพ้ penicillin ให้ macrolide เช่น azithromycin 500 mg วันละ 1 ครั้ง 3–5 วัน (หรือ clarithromycin/clindamycin/cephalexin ถ้าแพ้ไม่รุนแรง)",
+     "source_key": "เฉลย: เนื่องจากแพ้ penicillin ให้ macrolide เช่น azithromycin 500 mg วันละ 1 ครั้ง 3–5 วัน (หรือ clarithromycin/clindamycin/cephalexin ถ้าแพ้ไม่รุนแรง)"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "page": 2,
+   "tags": [
+    "pulmonary"
+   ],
+   "case": "จากรูป CXR ผู้ป่วยมีความผิดปกติหรือไม่ อย่างไร (ดูภาพ)",
+   "answer_status": "draft",
+   "items": [
+    {
+     "id": "2",
+     "prompt": "บรรยายความผิดปกติจาก CXR",
+     "format": "short",
+     "accepted": [
+      "opacity",
+      "infiltration",
+      "consolidation",
+      "ทึบ",
+      "ผิดปกติ"
+     ],
+     "keywords_all": [
+      "ผิดปกติ"
+     ],
+     "key_text": "ระบุตามภาพ: ความทึบ/infiltration หรือ consolidation ที่ตำแหน่งที่เห็น (ภาพไม่มีรายละเอียดในไฟล์เฉลย)",
+     "source_key": "เฉลย: ระบุตามภาพ: ความทึบ/infiltration หรือ consolidation ที่ตำแหน่งที่เห็น (ภาพไม่มีรายละเอียดในไฟล์เฉลย)",
+     "image": "img/RESP-43-KF-002.jpg",
+     "image_caption": "CXR ข้อ 2"
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "page": 2,
+   "tags": [
+    "pharmacology"
+   ],
+   "case": "ผู้ป่วยโรคทางเดินหายใจ (หอบหืด) ได้รับยา albuterol และ leukotriene modifier",
+   "answer_status": "draft",
+   "items": [
+    {
+     "id": "3.1",
+     "prompt": "receptor target cell ของ albuterol",
+     "format": "short",
+     "accepted": [
+      "β2",
+      "beta 2",
+      "smooth muscle"
+     ],
+     "keywords_all": [
+      "β2"
+     ],
+     "key_text": "β₂ adrenergic receptor บน bronchial smooth muscle cell",
+     "source_key": "เฉลย: β₂ adrenergic receptor บน bronchial smooth muscle cell"
+    },
+    {
+     "id": "3.2",
+     "prompt": "onset และ duration ของ albuterol",
+     "format": "short",
+     "accepted": [
+      "5",
+      "15",
+      "4",
+      "6"
+     ],
+     "keywords_all": [
+      "4"
+     ],
+     "key_text": "Onset 5–15 นาที, duration 4–6 ชั่วโมง",
+     "source_key": "เฉลย: Onset 5–15 นาที, duration 4–6 ชั่วโมง"
+    },
+    {
+     "id": "3.3",
+     "prompt": "ผลข้างเคียงของ albuterol 6 อย่าง",
+     "format": "short",
+     "accepted": [
+      "tremor",
+      "tachycardia",
+      "palpitation",
+      "hypokalemia",
+      "anxiety",
+      "headache",
+      "arrhythmia"
+     ],
+     "keywords_all": [
+      "tremor"
+     ],
+     "key_text": "Tremor, tachycardia/palpitation, hypokalemia, anxiety/nervousness, headache, arrhythmia",
+     "source_key": "เฉลย: Tremor, tachycardia/palpitation, hypokalemia, anxiety/nervousness, headache, arrhythmia"
+    },
+    {
+     "id": "3.4",
+     "prompt": "ผลของ leukotriene 4 อย่าง",
+     "format": "short",
+     "accepted": [
+      "bronchoconstriction",
+      "permeability",
+      "mucus",
+      "eosinophil",
+      "chemotaxis"
+     ],
+     "keywords_all": [
+      "bronchoconstriction"
+     ],
+     "key_text": "Bronchoconstriction, ↑vascular permeability (edema), ↑mucus secretion, eosinophil chemotaxis",
+     "source_key": "เฉลย: Bronchoconstriction, ↑vascular permeability (edema), ↑mucus secretion, eosinophil chemotaxis"
+    },
+    {
+     "id": "3.5.1",
+     "prompt": "ชื่อกลุ่มยาที่ยับยั้งการสร้าง leukotriene",
+     "format": "short",
+     "accepted": [
+      "5-lipoxygenase",
+      "lipoxygenase",
+      "5-lo"
+     ],
+     "keywords_all": [
+      "lipoxygenase"
+     ],
+     "key_text": "5-Lipoxygenase inhibitor",
+     "source_key": "เฉลย: 5-Lipoxygenase inhibitor"
+    },
+    {
+     "id": "3.5.2",
+     "prompt": "ตัวอย่างยา",
+     "format": "short",
+     "accepted": [
+      "zileuton"
+     ],
+     "keywords_all": [
+      "zileuton"
+     ],
+     "key_text": "Zileuton",
+     "source_key": "เฉลย: Zileuton"
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "page": 3,
+   "tags": [
+    "ENT"
+   ],
+   "case": "โรค upper respiratory tract infection: nasal drip, periorbital swelling, runny nose และ congestion",
+   "answer_status": "draft",
+   "items": [
+    {
+     "id": "4.1",
+     "prompt": "วินิจฉัย",
+     "format": "short",
+     "accepted": [
+      "rhinosinusitis",
+      "sinusitis"
+     ],
+     "keywords_all": [
+      "sinusitis"
+     ],
+     "key_text": "Acute rhinosinusitis",
+     "source_key": "เฉลย (ในข้อสอบ): Acute Rhinosinusitis"
+    },
+    {
+     "id": "4.2",
+     "prompt": "การรักษา/management ที่เหมาะสม 3 อย่าง",
+     "format": "short",
+     "accepted": [
+      "saline",
+      "decongestant",
+      "analgesic",
+      "corticosteroid",
+      "antibiotic"
+     ],
+     "keywords_all": [
+      "saline"
+     ],
+     "key_text": "Nasal saline irrigation, decongestant/analgesic (ระยะสั้น), intranasal corticosteroid และ antibiotic ถ้าเป็น bacterial",
+     "source_key": "เฉลย: Nasal saline irrigation, decongestant/analgesic (ระยะสั้น), intranasal corticosteroid และ antibiotic ถ้าเป็น bacterial"
+    },
+    {
+     "id": "4.3",
+     "prompt": "drug of choice และขนาด",
+     "format": "short",
+     "accepted": [
+      "amoxicillin",
+      "clavulanate"
+     ],
+     "keywords_all": [
+      "amoxicillin"
+     ],
+     "key_text": "Amoxicillin 500 mg วันละ 3 ครั้ง (หรือ 80–90 mg/kg/day ในเด็ก) 5–10 วัน (amoxicillin-clavulanate ถ้าดื้อ)",
+     "source_key": "เฉลย: Amoxicillin 500 mg วันละ 3 ครั้ง (หรือ 80–90 mg/kg/day ในเด็ก) 5–10 วัน (amoxicillin-clavulanate ถ้าดื้อ)"
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "page": 3,
+   "tags": [
+    "pathology"
+   ],
+   "case": "ผู้ป่วยเด็ก round pneumonia ตามที่เหมือนใน PBL · CXR: coin-like lesion",
+   "answer_status": "draft",
+   "items": [
+    {
+     "id": "5.1",
+     "prompt": "pathophysiology ของ tachypnea และ dyspnea",
+     "format": "short",
+     "accepted": [
+      "v/q",
+      "hypoxemia",
+      "exudate",
+      "compliance",
+      "chemoreceptor"
+     ],
+     "keywords_all": [
+      "hypoxemia"
+     ],
+     "key_text": "pneumonia ทำให้ alveoli เต็มด้วย exudate เกิด V/Q mismatch/hypoxemia กระตุ้น chemoreceptor จึงหายใจเร็ว; compliance ลดและงานหายใจเพิ่ม จึงเหนื่อย",
+     "source_key": "เฉลย: pneumonia ทำให้ alveoli เต็มด้วย exudate เกิด V/Q mismatch/hypoxemia กระตุ้น chemoreceptor จึงหายใจเร็ว; compliance ลดและงานหายใจเพิ่ม จึงเหนื่อย",
+     "image": "img/RESP-43-KF-003.jpg",
+     "image_caption": "CXR round pneumonia"
+    },
+    {
+     "id": "5.2",
+     "prompt": "ทำไมรอยโรคใน CXR เป็นก้อนกลม (coin-like)",
+     "format": "short",
+     "accepted": [
+      "collateral",
+      "kohn",
+      "lambert",
+      "pores"
+     ],
+     "keywords_all": [
+      "collateral"
+     ],
+     "key_text": "เด็กมี collateral ventilation จำกัด (pores of Kohn, canals of Lambert ยังไม่พัฒนา) การอักเสบจึงขยายจากจุดเดียวเป็นวงกลม",
+     "source_key": "เฉลย: เด็กมี collateral ventilation จำกัด (pores of Kohn, canals of Lambert ยังไม่พัฒนา) การอักเสบจึงขยายจากจุดเดียวเป็นวงกลม"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "page": 4,
+   "tags": [
+    "anatomy",
+    "physiology"
+   ],
+   "case": "ข้อมูลโรค croup",
+   "answer_status": "draft",
+   "items": [
+    {
+     "id": "6.1",
+     "prompt": "ตำแหน่งที่เกิดโรค croup",
+     "format": "short",
+     "accepted": [
+      "larynx",
+      "subglottic"
+     ],
+     "keywords_all": [
+      "subglottic"
+     ],
+     "key_text": "Larynx / subglottic region",
+     "source_key": "เฉลย: Larynx / subglottic region"
+    },
+    {
+     "id": "6.2.1",
+     "prompt": "Pathophysiology: hoarseness",
+     "format": "short",
+     "accepted": [
+      "vocal cord",
+      "edema",
+      "inflammation",
+      "larynx"
+     ],
+     "keywords_all": [
+      "edema"
+     ],
+     "key_text": "การอักเสบและ edema ของสายเสียง/larynx ทำให้การสั่นของสายเสียงผิดปกติ",
+     "source_key": "เฉลย: การอักเสบและ edema ของสายเสียง/larynx ทำให้การสั่นของสายเสียงผิดปกติ"
+    },
+    {
+     "id": "6.2.2",
+     "prompt": "Pathophysiology: inspiratory stridor",
+     "format": "short",
+     "accepted": [
+      "extrathoracic",
+      "negative pressure",
+      "turbulent",
+      "subglottic",
+      "narrow"
+     ],
+     "keywords_all": [
+      "turbulent"
+     ],
+     "key_text": "extrathoracic obstruction ที่ subglottic: ขณะหายใจเข้าความดันในทางเดินหายใจต่ำกว่าบรรยากาศ ทำให้ทางแคบลงและเกิด turbulent flow",
+     "source_key": "เฉลย: extrathoracic obstruction ที่ subglottic: ขณะหายใจเข้าความดันในทางเดินหายใจต่ำกว่าบรรยากาศ ทำให้ทางแคบลงและเกิด turbulent flow"
+    },
+    {
+     "id": "6.2.3",
+     "prompt": "Pathophysiology: dyspnea",
+     "format": "short",
+     "accepted": [
+      "resistance",
+      "work of breathing",
+      "radius",
+      "obstruction"
+     ],
+     "keywords_all": [
+      "resistance"
+     ],
+     "key_text": "airway resistance เพิ่ม (R ∝ 1/r⁴) ทำให้ work of breathing เพิ่ม และลด ventilation",
+     "source_key": "เฉลย: airway resistance เพิ่ม (R ∝ 1/r⁴) ทำให้ work of breathing เพิ่ม และลด ventilation"
+    },
+    {
+     "id": "6.3",
+     "prompt": "เปรียบเทียบอาการในเด็กและผู้ใหญ่ทางกายวิภาค",
+     "format": "short",
+     "accepted": [
+      "cricoid",
+      "subglottic",
+      "narrowest",
+      "แคบ"
+     ],
+     "keywords_all": [
+      "subglottic"
+     ],
+     "key_text": "เด็ก: subglottic เป็นส่วนแคบที่สุด (cricoid) edema เล็กน้อยก็อุดตันรุนแรง; ผู้ใหญ่: glottis แคบที่สุด และ airway กว้างกว่า",
+     "source_key": "เฉลย: เด็ก: subglottic เป็นส่วนแคบที่สุด (cricoid) edema เล็กน้อยก็อุดตันรุนแรง; ผู้ใหญ่: glottis แคบที่สุด และ airway กว้างกว่า"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "page": 5,
+   "tags": [
+    "microbiology"
+   ],
+   "case": "อาการ weight loss, anorexia, lung crepitation, non-massive hemoptysis",
+   "answer_status": "draft",
+   "items": [
+    {
+     "id": "7.1",
+     "prompt": "เชื้อก่อโรค",
+     "format": "short",
+     "accepted": [
+      "mycobacterium",
+      "tuberculosis"
+     ],
+     "keywords_all": [
+      "tuberculosis"
+     ],
+     "key_text": "Mycobacterium tuberculosis",
+     "source_key": "เฉลย: Mycobacterium tuberculosis"
+    },
+    {
+     "id": "7.2",
+     "prompt": "การตรวจเบื้องต้น 2 อย่าง",
+     "format": "short",
+     "accepted": [
+      "chest x-ray",
+      "cxr",
+      "sputum",
+      "afb"
+     ],
+     "keywords_all": [
+      "AFB"
+     ],
+     "key_text": "Chest X-ray และ sputum AFB smear/culture",
+     "source_key": "เฉลย: Chest X-ray และ sputum AFB smear/culture"
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "page": 5,
+   "tags": [
+    "cardiology"
+   ],
+   "case": "ภาพ X-ray: HR 121 RR 64 BP 172/126 (ภาพไม่มีในไฟล์)",
+   "answer_status": "draft",
+   "items": [
+    {
+     "id": "8.1.1",
+     "prompt": "CXR findings: Heart",
+     "format": "short",
+     "accepted": [
+      "cardiomegaly",
+      "enlarged"
+     ],
+     "keywords_all": [
+      "cardiomegaly"
+     ],
+     "key_text": "Cardiomegaly",
+     "source_key": "เฉลย: Cardiomegaly"
+    },
+    {
+     "id": "8.1.2",
+     "prompt": "CXR findings: Hilum",
+     "format": "short",
+     "accepted": [
+      "hilum",
+      "hilar",
+      "prominent",
+      "congestion"
+     ],
+     "keywords_all": [
+      "hilar"
+     ],
+     "key_text": "Enlarged/prominent hilar vessels (pulmonary venous congestion)",
+     "source_key": "เฉลย: Enlarged/prominent hilar vessels (pulmonary venous congestion)"
+    },
+    {
+     "id": "8.1.3",
+     "prompt": "CXR findings: Lung",
+     "format": "short",
+     "accepted": [
+      "pulmonary edema",
+      "perihilar",
+      "infiltrate",
+      "alveolar"
+     ],
+     "keywords_all": [
+      "edema"
+     ],
+     "key_text": "Bilateral perihilar/alveolar infiltrates (pulmonary edema) จาก ↑capillary hydrostatic pressure",
+     "source_key": "เฉลย: Bilateral perihilar/alveolar infiltrates (pulmonary edema) จาก ↑capillary hydrostatic pressure"
+    },
+    {
+     "id": "8.2",
+     "prompt": "วินิจฉัย",
+     "format": "short",
+     "accepted": [
+      "heart failure",
+      "pulmonary edema",
+      "hypertensive"
+     ],
+     "keywords_all": [
+      "heart failure"
+     ],
+     "key_text": "Hypertensive heart failure with acute cardiogenic pulmonary edema",
+     "source_key": "เฉลย: Hypertensive heart failure with acute cardiogenic pulmonary edema"
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "page": 5,
+   "tags": [
+    "pharmacology"
+   ],
+   "case": "ภาพ chest X-ray ของผู้ป่วย asthma",
+   "answer_status": "draft",
+   "items": [
+    {
+     "id": "9.1",
+     "prompt": "บรรยายความผิดปกติใน CXR",
+     "format": "short",
+     "accepted": [
+      "hyperinflation",
+      "flattened",
+      "diaphragm",
+      "แบน",
+      "ปกติ"
+     ],
+     "keywords_all": [
+      "hyperinflation"
+     ],
+     "key_text": "Hyperinflation: ปอดโปร่งแสง กะบังลมแบน (flattened diaphragm) ช่องซี่โครงกว้าง (อาจปกติ)",
+     "source_key": "เฉลย: Hyperinflation: ปอดโปร่งแสง กะบังลมแบน (flattened diaphragm) ช่องซี่โครงกว้าง (อาจปกติ)",
+     "image": "img/RESP-43-KF-009.jpg",
+     "image_caption": "CXR ผู้ป่วย asthma"
+    },
+    {
+     "id": "9.2",
+     "prompt": "FEV₁ และ FEV₁/FVC",
+     "format": "short",
+     "accepted": [
+      "decrease",
+      "ลด",
+      "< 0.7"
+     ],
+     "keywords_all": [
+      "ลด"
+     ],
+     "key_text": "FEV₁ ลดลง และ FEV₁/FVC ลดลง (< 0.7)",
+     "source_key": "เฉลย: FEV₁ ลดลง และ FEV₁/FVC ลดลง (< 0.7)"
+    },
+    {
+     "id": "9.3",
+     "prompt": "ยาที่ใช้และตัวอย่างแต่ละกลุ่ม",
+     "format": "short",
+     "accepted": [
+      "salbutamol",
+      "budesonide",
+      "ipratropium",
+      "montelukast",
+      "corticosteroid",
+      "beta 2"
+     ],
+     "keywords_all": [
+      "salbutamol"
+     ],
+     "key_text": "β₂ agonist (salbutamol/formoterol), inhaled corticosteroid (budesonide), anticholinergic (ipratropium/tiotropium), LTRA (montelukast)",
+     "source_key": "เฉลย: β₂ agonist (salbutamol/formoterol), inhaled corticosteroid (budesonide), anticholinergic (ipratropium/tiotropium), LTRA (montelukast)"
+    }
+   ]
+  },
+  {
+   "n": 10,
+   "page": 5,
+   "tags": [
+    "anatomy",
+    "physiology"
+   ],
+   "case": "ชายถูกรถชน อกกระแทก ช้ำ hematoma พบ hemopneumothorax",
+   "answer_status": "draft",
+   "items": [
+    {
+     "id": "10.1",
+     "prompt": "ควร drain ที่ตำแหน่งใด",
+     "format": "short",
+     "accepted": [
+      "4th",
+      "5th",
+      "mid-axillary",
+      "safe triangle"
+     ],
+     "keywords_all": [
+      "axillary"
+     ],
+     "key_text": "ICS 4–5 ที่ mid-axillary line (safe triangle) เหนือขอบบนซี่โครง",
+     "source_key": "เฉลย: ICS 4–5 ที่ mid-axillary line (safe triangle) เหนือขอบบนซี่โครง"
+    },
+    {
+     "id": "10.2",
+     "prompt": "ผลของ ventilation ต่อ capillary basement (เยื่อ alveolar–capillary)",
+     "format": "short",
+     "accepted": [
+      "positive pressure",
+      "barotrauma",
+      "membrane",
+      "permeability"
+     ],
+     "keywords_all": [
+      "barotrauma"
+     ],
+     "key_text": "การช่วยหายใจด้วยความดันบวก (positive pressure ventilation) อาจทำให้ alveolar–capillary membrane บาดเจ็บ (barotrauma) และเพิ่ม permeability",
+     "source_key": "เฉลย: การช่วยหายใจด้วยความดันบวก (positive pressure ventilation) อาจทำให้ alveolar–capillary membrane บาดเจ็บ (barotrauma) และเพิ่ม permeability"
+    },
+    {
+     "id": "10.3",
+     "prompt": "ผลของ hemopneumothorax ต่อ pulmonary function",
+     "format": "short",
+     "accepted": [
+      "แฟบ",
+      "collapse",
+      "compliance",
+      "v/q",
+      "hypoxemia",
+      "restrictive"
+     ],
+     "keywords_all": [
+      "collapse"
+     ],
+     "key_text": "ปอดแฟบ ปริมาตรปอดและ compliance ลด เกิด V/Q mismatch และ hypoxemia (restrictive pattern)",
+     "source_key": "เฉลย: ปอดแฟบ ปริมาตรปอดและ compliance ลด เกิด V/Q mismatch และ hypoxemia (restrictive pattern)"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,973 @@
+{
+ "meta": {
+  "set_id": "50_OSPE",
+  "block": "RESP",
+  "cohort": 50,
+  "type": "OSPE",
+  "title": "OSPE Respiratory · Med PSU 50",
+  "generated_by": "auditor/tools/build_kf.py from auditor/data/work/resp_50_OSPE.kf.json — do not edit by hand"
+ },
+ "questions": [
+  {
+   "id": "RESP-50-OSPE-001",
+   "block": "RESP",
+   "cohort": 50,
+   "n": 1,
+   "type": "OSPE",
+   "station": 1,
+   "stem": "สถานี 1 (10 คะแนน): ดูภาพ dissection ผนังทรวงอกด้านหน้า (ปลายศร 1.1 และ 1.2)",
+   "items": [
+    {
+     "id": "1.1",
+     "prompt": "ชื่อโครงสร้างสีขาวขุ่นของปลายศร 1.1",
+     "format": "short",
+     "accepted": [
+      "external intercostal"
+     ],
+     "keywords_all": [
+      "external intercostal"
+     ],
+     "key_text": "External intercostal membrane",
+     "source_key": "เฉลย: External intercostal membrane",
+     "image": "img/RESP-50-OSPE-001.jpg",
+     "image_caption": "ภาพ dissection ทรวงอก"
+    },
+    {
+     "id": "1.2",
+     "prompt": "ชื่อโครงสร้างของปลายศร 1.2",
+     "format": "short",
+     "accepted": [
+      "internal thoracic",
+      "internal mammary"
+     ],
+     "keywords_all": [
+      "internal thoracic"
+     ],
+     "key_text": "Internal thoracic artery",
+     "source_key": "เฉลย: Internal thoracic artery",
+     "image": "img/RESP-50-OSPE-001b.jpg",
+     "image_caption": "ภาพ dissection ทรวงอก (2)"
+    },
+    {
+     "id": "1.3",
+     "prompt": "terminal branches ของหลอดเลือดข้อ 1.2 (2 เส้น)",
+     "format": "short",
+     "accepted": [
+      "musculophrenic",
+      "superior epigastric"
+     ],
+     "keywords_all": [
+      "musculophrenic"
+     ],
+     "key_text": "Musculophrenic artery และ superior epigastric artery",
+     "source_key": "เฉลย: Musculophrenic artery และ superior epigastric artery"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE50",
+     "pages": [
+      1
+     ]
+    },
+    {
+     "paper": "OSPE50-KEY",
+     "pages": [
+      1
+     ]
+    }
+   ],
+   "tags": [
+    "anatomy"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "RESP-50-OSPE-002",
+   "block": "RESP",
+   "cohort": 50,
+   "n": 2,
+   "type": "OSPE",
+   "station": 2,
+   "stem": "สถานี 2 (10 คะแนน): ดูภาพ dissection ช่องอก/ไดอะแฟรม",
+   "items": [
+    {
+     "id": "2.1",
+     "prompt": "ชื่อโครงสร้างของปลายศร 2.1",
+     "format": "short",
+     "accepted": [
+      "phrenic"
+     ],
+     "keywords_all": [
+      "phrenic"
+     ],
+     "key_text": "Phrenic nerve",
+     "source_key": "เฉลย: Phrenic nerve",
+     "image": "img/RESP-50-OSPE-002.jpg",
+     "image_caption": "ภาพ dissection ช่องอก"
+    },
+    {
+     "id": "2.2",
+     "prompt": "โครงสร้างที่ทอดคู่ขนานกับโครงสร้างข้อ 2.1",
+     "format": "short",
+     "accepted": [
+      "pericardiacophrenic"
+     ],
+     "keywords_all": [
+      "pericardiacophrenic"
+     ],
+     "key_text": "Pericardiacophrenic artery",
+     "source_key": "เฉลย: Pericardiacophrenic artery"
+    },
+    {
+     "id": "2.3",
+     "prompt": "ชื่อโครงสร้างของปลายศร 2.2",
+     "format": "short",
+     "accepted": [
+      "subcostal"
+     ],
+     "keywords_all": [
+      "subcostal"
+     ],
+     "key_text": "Subcostal muscle",
+     "source_key": "เฉลย: Subcostal muscle"
+    },
+    {
+     "id": "2.4",
+     "prompt": "เส้นประสาทที่มาเลี้ยงกล้ามเนื้อข้อ 2.3",
+     "format": "short",
+     "accepted": [
+      "intercostal nerve",
+      "intercostal"
+     ],
+     "keywords_all": [
+      "intercostal"
+     ],
+     "key_text": "Intercostal nerve",
+     "source_key": "เฉลย: Intercostal nerve"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE50",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "OSPE50-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [
+    "anatomy"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "RESP-50-OSPE-003",
+   "block": "RESP",
+   "cohort": 50,
+   "n": 3,
+   "type": "OSPE",
+   "station": 3,
+   "stem": "สถานี 3 (10 คะแนน): ดูภาพปอดและ bronchial tree (ปลายศร 3.1–3.4)",
+   "items": [
+    {
+     "id": "3.1",
+     "prompt": "ชื่อรอยกดทับของปลายศร 3.1",
+     "format": "short",
+     "accepted": [
+      "hemiazygos"
+     ],
+     "keywords_all": [
+      "hemiazygos"
+     ],
+     "key_text": "Groove for hemiazygos vein",
+     "source_key": "เฉลย: Groove for hemiazygos vein",
+     "image": "img/RESP-50-OSPE-003.jpg",
+     "image_caption": "ปอด mediastinal surface"
+    },
+    {
+     "id": "3.2",
+     "prompt": "ชื่อโครงสร้างของปลายศร 3.2",
+     "format": "short",
+     "accepted": [
+      "pulmonary vein"
+     ],
+     "keywords_all": [
+      "pulmonary vein"
+     ],
+     "key_text": "Pulmonary vein",
+     "source_key": "เฉลย: Pulmonary vein"
+    },
+    {
+     "id": "3.3",
+     "prompt": "ชื่อโครงสร้างอย่างจำเพาะของปลายศร 3.3",
+     "format": "short",
+     "accepted": [
+      "inferior lingular",
+      "lingular"
+     ],
+     "keywords_all": [
+      "lingular"
+     ],
+     "key_text": "Inferior lingular segmental bronchus",
+     "source_key": "เฉลย: Inferior lingular segmental bronchus",
+     "image": "img/RESP-50-OSPE-003b.jpg",
+     "image_caption": "Bronchial tree"
+    },
+    {
+     "id": "3.4",
+     "prompt": "ชื่อโครงสร้างของปลายศร 3.4",
+     "format": "short",
+     "accepted": [
+      "lingula"
+     ],
+     "keywords_all": [
+      "lingula"
+     ],
+     "key_text": "Lingula",
+     "source_key": "เฉลย: Lingula"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE50",
+     "pages": [
+      3
+     ]
+    },
+    {
+     "paper": "OSPE50-KEY",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [
+    "anatomy"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "RESP-50-OSPE-004",
+   "block": "RESP",
+   "cohort": 50,
+   "n": 4,
+   "type": "OSPE",
+   "station": 4,
+   "stem": "สถานี 4 (10 คะแนน): ดูภาพกล่องเสียงและคอหอย (ปลายศร 4.1–4.4)",
+   "items": [
+    {
+     "id": "4.1",
+     "prompt": "ชื่อกล้ามเนื้อของปลายศร 4.1",
+     "format": "short",
+     "accepted": [
+      "cricothyroid"
+     ],
+     "keywords_all": [
+      "cricothyroid"
+     ],
+     "key_text": "Cricothyroid muscle",
+     "source_key": "เฉลย: Cricothyroid muscle",
+     "image": "img/RESP-50-OSPE-004.jpg",
+     "image_caption": "กล่องเสียง"
+    },
+    {
+     "id": "4.2",
+     "prompt": "ชื่อโครงสร้างของปลายศร 4.2",
+     "format": "short",
+     "accepted": [
+      "epiglottis"
+     ],
+     "keywords_all": [
+      "epiglottis"
+     ],
+     "key_text": "Epiglottis",
+     "source_key": "เฉลย: Epiglottis"
+    },
+    {
+     "id": "4.3",
+     "prompt": "ชื่อแอ่งของปลายศร 4.3",
+     "format": "short",
+     "accepted": [
+      "pyriform",
+      "piriform"
+     ],
+     "keywords_all": [
+      "pyriform"
+     ],
+     "key_text": "Pyriform recess",
+     "source_key": "เฉลย: Pyriform recess",
+     "image": "img/RESP-50-OSPE-004b.jpg",
+     "image_caption": "Laryngopharynx"
+    },
+    {
+     "id": "4.4",
+     "prompt": "ชื่อกล้ามเนื้อของปลายศร 4.4",
+     "format": "short",
+     "accepted": [
+      "posterior cricoarytenoid"
+     ],
+     "keywords_all": [
+      "posterior cricoarytenoid"
+     ],
+     "key_text": "Posterior cricoarytenoid muscle",
+     "source_key": "เฉลย: Posterior cricoarytenoid muscle"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE50",
+     "pages": [
+      4
+     ]
+    },
+    {
+     "paper": "OSPE50-KEY",
+     "pages": [
+      4
+     ]
+    }
+   ],
+   "tags": [
+    "anatomy"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "RESP-50-OSPE-005",
+   "block": "RESP",
+   "cohort": 50,
+   "n": 5,
+   "type": "OSPE",
+   "station": 5,
+   "stem": "สถานี 5 (Laboratory ข้อ 1): ดูภาพเนื้อเยื่อปอดด้วยกล้องจุลทรรศน์",
+   "items": [
+    {
+     "id": "1.1",
+     "prompt": "ชื่อท่อทางเดินหายใจในภาพ",
+     "format": "short",
+     "accepted": [
+      "intrapulmonary bronchus",
+      "bronchus"
+     ],
+     "keywords_all": [
+      "bronchus"
+     ],
+     "key_text": "Intrapulmonary bronchus",
+     "source_key": "เฉลย: Intrapulmonary bronchus",
+     "image": "img/RESP-50-OSPE-005.jpg",
+     "image_caption": "Histology bronchus"
+    },
+    {
+     "id": "1.2",
+     "prompt": "ลักษณะทางจุลกายวิภาค 3 ข้อ",
+     "format": "short",
+     "accepted": [
+      "pseudostratified",
+      "goblet",
+      "hyaline cartilage",
+      "smooth muscle"
+     ],
+     "keywords_all": [
+      "hyaline cartilage"
+     ],
+     "key_text": "Pseudostratified columnar epithelium with goblet cells; isolated plates of hyaline cartilage; crisscrossing smooth muscle",
+     "source_key": "เฉลย: Pseudostratified columnar epithelium with goblet cells; isolated plates of hyaline cartilage; crisscrossing smooth muscle"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE50",
+     "pages": [
+      5
+     ]
+    },
+    {
+     "paper": "OSPE50-KEY",
+     "pages": [
+      5
+     ]
+    }
+   ],
+   "tags": [
+    "histology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "RESP-50-OSPE-006",
+   "block": "RESP",
+   "cohort": 50,
+   "n": 6,
+   "type": "OSPE",
+   "station": 6,
+   "stem": "สถานี 6 (Laboratory ข้อ 2): ดูภาพเนื้อเยื่อปอด ท่อทางเดินหายใจในวงกลมประ",
+   "items": [
+    {
+     "id": "2.1",
+     "prompt": "ชื่อท่อทางเดินหายใจในวงกลมประ",
+     "format": "short",
+     "accepted": [
+      "terminal bronchiole"
+     ],
+     "keywords_all": [
+      "terminal bronchiole"
+     ],
+     "key_text": "Terminal bronchiole",
+     "source_key": "เฉลย: Terminal bronchiole",
+     "image": "img/RESP-50-OSPE-006.jpg",
+     "image_caption": "Histology terminal bronchiole"
+    },
+    {
+     "id": "2.2",
+     "prompt": "ลักษณะทางจุลกายวิภาค 3 ข้อ",
+     "format": "short",
+     "accepted": [
+      "cuboidal",
+      "clara",
+      "goblet",
+      "cartilage",
+      "smooth muscle"
+     ],
+     "keywords_all": [
+      "clara"
+     ],
+     "key_text": "Ciliated cuboidal cells with Clara cells; absence of goblet cells and cartilage; smooth muscle และ branch ของ pulmonary artery",
+     "source_key": "เฉลย: Ciliated cuboidal cells with Clara cells; absence of goblet cells and cartilage; smooth muscle และ branch ของ pulmonary artery"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE50",
+     "pages": [
+      6
+     ]
+    },
+    {
+     "paper": "OSPE50-KEY",
+     "pages": [
+      6
+     ]
+    }
+   ],
+   "tags": [
+    "histology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "RESP-50-OSPE-007",
+   "block": "RESP",
+   "cohort": 50,
+   "n": 7,
+   "type": "OSPE",
+   "station": 7,
+   "stem": "สถานี 7 (Laboratory ข้อ 3): force expiratory spirogram ใน normal subject (ตอบทั้งชื่อเต็มและชื่อย่อ)",
+   "items": [
+    {
+     "id": "3.1",
+     "prompt": "ค่า X คือปริมาตรปอดใด",
+     "format": "short",
+     "accepted": [
+      "fev1",
+      "forced expiratory volume"
+     ],
+     "keywords_all": [
+      "FEV1"
+     ],
+     "key_text": "Forced expiratory volume in 1 second (FEV₁)",
+     "source_key": "เฉลย: Forced expiratory volume in 1 second (FEV₁)",
+     "image": "img/RESP-50-OSPE-007.jpg",
+     "image_caption": "Forced expiratory spirogram"
+    },
+    {
+     "id": "3.2",
+     "prompt": "ค่า Y คือปริมาตรปอดใด",
+     "format": "short",
+     "accepted": [
+      "fvc",
+      "forced vital capacity"
+     ],
+     "keywords_all": [
+      "FVC"
+     ],
+     "key_text": "Forced vital capacity (FVC)",
+     "source_key": "เฉลย: Forced vital capacity (FVC)"
+    },
+    {
+     "id": "3.3.1",
+     "prompt": "Obstructive: FEV₁, FVC, FEV₁/FVC%",
+     "format": "short",
+     "accepted": [
+      "decrease",
+      "ลด"
+     ],
+     "keywords_all": [
+      "ลด"
+     ],
+     "key_text": "FEV₁ ลดลง, FVC ปกติหรือลดลงเล็กน้อย, FEV₁/FVC% ลดลง",
+     "source_key": "เฉลย (ลายมือ): decreased, decreased/normal, decreased"
+    },
+    {
+     "id": "3.3.2",
+     "prompt": "Restrictive: FEV₁, FVC, FEV₁/FVC%",
+     "format": "short",
+     "accepted": [
+      "decrease",
+      "normal",
+      "ลด",
+      "ปกติ"
+     ],
+     "keywords_all": [
+      "ปกติ"
+     ],
+     "key_text": "FEV₁ ลดลง, FVC ลดลง, FEV₁/FVC% ปกติ",
+     "source_key": "เฉลย (ลายมือ): decreased, decreased, normal"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "OSPE50",
+     "pages": [
+      7
+     ]
+    },
+    {
+     "paper": "OSPE50-KEY",
+     "pages": [
+      7
+     ]
+    }
+   ],
+   "tags": [
+    "physiology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "RESP-50-OSPE-008",
+   "block": "RESP",
+   "cohort": 50,
+   "n": 8,
+   "type": "OSPE",
+   "station": 8,
+   "stem": "สถานี 8 (Laboratory ข้อ 4): จาก flow–volume curve (กราฟเส้นสีฟ้าคือผู้ป่วย)",
+   "items": [
+    {
+     "id": "4.1",
+     "prompt": "ผู้ป่วยจัดอยู่ในกลุ่มโรคปอดใด",
+     "format": "short",
+     "accepted": [
+      "restrictive"
+     ],
+     "keywords_all": [
+      "restrictive"
+     ],
+     "key_text": "Restrictive lung disease",
+     "source_key": "เฉลย: Restrictive lung disease",
+     "image": "img/RESP-50-OSPE-008.jpg",
+     "image_caption": "Flow–volume curve"
+    },
+    {
+     "id": "4.2",
+     "prompt": "ใช้ค่าใดในกราฟเป็นเกณฑ์พิจารณา",
+     "format": "short",
+     "accepted": [
+      "fvc",
+      "forced vital capacity"
+     ],
+     "keywords_all": [
+      "FVC"
+     ],
+     "key_text": "Forced vital capacity (FVC)",
+     "source_key": "เฉลย: Forced vital capacity (FVC)"
+    },
+    {
+     "id": "4.2.1",
+     "prompt": "ค่านั้นวัดได้เท่าไรในคนปกติ",
+     "format": "short",
+     "accepted": [
+      "5.2",
+      "5"
+     ],
+     "keywords_all": [
+      "5"
+     ],
+     "key_text": "≈ 5.2 L",
+     "source_key": "เฉลย (ลายมือ): normal subject 5.2 L"
+    },
+    {
+     "id": "4.2.2",
+     "prompt": "ค่านั้นวัดได้เท่าไรในผู้ป่วย",
+     "format": "short",
+     "accepted": [
+      "4",
+      "76",
+      "77"
+     ],
+     "keywords_all": [
+      "4"
+     ],
+     "key_text": "≈ 4 L (ประมาณ 76.93% ของค่าปกติตามลายมือ)",
+     "source_key": "เฉลย (ลายมือ ไม่ชัด): ~4 L (76.93%)"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "OSPE50",
+     "pages": [
+      8
+     ]
+    },
+    {
+     "paper": "OSPE50-KEY",
+     "pages": [
+      8
+     ]
+    }
+   ],
+   "tags": [
+    "physiology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "RESP-50-OSPE-009",
+   "block": "RESP",
+   "cohort": 50,
+   "n": 9,
+   "type": "OSPE",
+   "station": 9,
+   "stem": "สถานี 9 (Laboratory ข้อ 5): ดูภาพ gross ปอด",
+   "items": [
+    {
+     "id": "5.1",
+     "prompt": "อธิบายลักษณะพยาธิสภาพที่เห็นด้วยตาเปล่า",
+     "format": "short",
+     "accepted": [
+      "dilated",
+      "dilatation",
+      "bronchi",
+      "muco-purulent",
+      "mucopurulent"
+     ],
+     "keywords_all": [
+      "dilated"
+     ],
+     "key_text": "หลอดลมขยายตัวผิดปกติ (dilated bronchi/bronchioles) มี muco-purulent content ในหลอดลม ผนังหนาตัว",
+     "source_key": "เฉลย: หลอดลมขยายตัวผิดปกติ (dilated bronchi/bronchioles) มี muco-purulent content ในหลอดลม ผนังหนาตัว",
+     "image": "img/RESP-50-OSPE-009.jpg",
+     "image_caption": "Gross ปอด"
+    },
+    {
+     "id": "5.2",
+     "prompt": "ผู้ป่วยรายนี้น่าจะเป็นโรคอะไร",
+     "format": "short",
+     "accepted": [
+      "bronchiectasis"
+     ],
+     "keywords_all": [
+      "bronchiectasis"
+     ],
+     "key_text": "Bronchiectasis",
+     "source_key": "เฉลย: Bronchiectasis"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "OSPE50",
+     "pages": [
+      9
+     ]
+    },
+    {
+     "paper": "OSPE50-KEY",
+     "pages": [
+      9
+     ]
+    }
+   ],
+   "tags": [
+    "pathology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "RESP-50-OSPE-010",
+   "block": "RESP",
+   "cohort": 50,
+   "n": 10,
+   "type": "OSPE",
+   "station": 10,
+   "stem": "สถานี 10 (Laboratory ข้อ 6): ดูภาพ gross ปอด",
+   "items": [
+    {
+     "id": "6.1",
+     "prompt": "บรรยายลักษณะพยาธิสภาพ",
+     "format": "short",
+     "accepted": [
+      "nodule",
+      "miliary",
+      "granuloma",
+      "caseous"
+     ],
+     "keywords_all": [
+      "nodule"
+     ],
+     "key_text": "ก้อน nodule ขนาดเล็กหลายก้อน (miliary nodules/granuloma) กระจายในเนื้อปอด",
+     "source_key": "เฉลย: ก้อน nodule ขนาดเล็กหลายก้อน (miliary nodules/granuloma) กระจายในเนื้อปอด",
+     "image": "img/RESP-50-OSPE-010.jpg",
+     "image_caption": "Gross ปอด"
+    },
+    {
+     "id": "6.2",
+     "prompt": "วินิจฉัยโรค",
+     "format": "short",
+     "accepted": [
+      "tuberculosis",
+      "tb"
+     ],
+     "keywords_all": [
+      "tuberculosis"
+     ],
+     "key_text": "Pulmonary tuberculosis",
+     "source_key": "เฉลย: Pulmonary tuberculosis"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "OSPE50",
+     "pages": [
+      10
+     ]
+    },
+    {
+     "paper": "OSPE50-KEY",
+     "pages": [
+      10
+     ]
+    }
+   ],
+   "tags": [
+    "pathology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "RESP-50-OSPE-011",
+   "block": "RESP",
+   "cohort": 50,
+   "n": 11,
+   "type": "OSPE",
+   "station": 11,
+   "stem": "สถานี 11 (Laboratory ข้อ 7–8): ผู้ป่วยมีอาการ ย้อม Gram stain พบดังรูป; ข้อ 8 ให้แปลผลจากผลตรวจ PCR",
+   "items": [
+    {
+     "id": "7.1",
+     "prompt": "บรรยายลักษณะ Gram stain",
+     "format": "short",
+     "accepted": [
+      "gram negative",
+      "gram-negative",
+      "rod",
+      "capsule"
+     ],
+     "keywords_all": [
+      "gram"
+     ],
+     "key_text": "Gram-negative, rod-shaped, thick capsule formation",
+     "source_key": "เฉลย: Gram-negative, rod-shaped, thick capsule formation",
+     "image": "img/RESP-50-OSPE-011.jpg",
+     "image_caption": "Gram stain"
+    },
+    {
+     "id": "7.2",
+     "prompt": "ชื่อเชื้อก่อโรค",
+     "format": "short",
+     "accepted": [
+      "klebsiella"
+     ],
+     "keywords_all": [
+      "klebsiella"
+     ],
+     "key_text": "Klebsiella pneumoniae",
+     "source_key": "เฉลย: Klebsiella pneumoniae"
+    },
+    {
+     "id": "8",
+     "prompt": "แปลผลจากผลตรวจ (ผลตรวจ PCR ที่ไม่พบ internal control RNase P gene)",
+     "format": "short",
+     "accepted": [
+      "specimen",
+      "bad quality",
+      "quality",
+      "rnase",
+      "เก็บใหม่",
+      "recollect"
+     ],
+     "keywords_all": [
+      "specimen"
+     ],
+     "key_text": "Specimen คุณภาพไม่ดี (RNase P / internal control ไม่ขึ้น) ผลไม่น่าเชื่อถือ ควรเก็บ specimen ใหม่",
+     "source_key": "เฉลย (ลายมือ ไม่ชัด): specimen in bad quality (RNase P gene ไม่ขึ้น)"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "OSPE50",
+     "pages": [
+      11
+     ]
+    },
+    {
+     "paper": "OSPE50-KEY",
+     "pages": [
+      11
+     ]
+    }
+   ],
+   "tags": [
+    "microbiology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "RESP-50-OSPE-012",
+   "block": "RESP",
+   "cohort": 50,
+   "n": 12,
+   "type": "OSPE",
+   "station": 12,
+   "stem": "สถานี 12: ผู้ป่วยมีไข้ ไอ เสมหะสีเหลือง 4 วัน ได้ภาพ CXR ดังรูป",
+   "items": [
+    {
+     "id": "9.1",
+     "prompt": "ความผิดปกติที่ส่วนไหนของปอด",
+     "format": "short",
+     "accepted": [
+      "lobe",
+      "lung",
+      "ปอด"
+     ],
+     "keywords_all": [
+      "lobe"
+     ],
+     "key_text": "ตามภาพ CXR (ระบุ lobe ที่มีเงาทึบ เช่น right lower/middle lobe)",
+     "source_key": "เฉลย: ตามภาพ CXR (ระบุ lobe ที่มีเงาทึบ เช่น right lower/middle lobe)",
+     "image": "img/RESP-50-OSPE-012.jpg",
+     "image_caption": "CXR"
+    },
+    {
+     "id": "9.2",
+     "prompt": "ผู้ป่วยมีโอกาสเป็นโรคอะไรมากที่สุด",
+     "format": "short",
+     "accepted": [
+      "pneumonia"
+     ],
+     "keywords_all": [
+      "pneumonia"
+     ],
+     "key_text": "Pneumonia",
+     "source_key": "เฉลย: Pneumonia"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "OSPE50",
+     "pages": [
+      12
+     ]
+    },
+    {
+     "paper": "OSPE50-KEY",
+     "pages": [
+      12
+     ]
+    }
+   ],
+   "tags": [
+    "radiology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "RESP-50-OSPE-013",
+   "block": "RESP",
+   "cohort": 50,
+   "n": 13,
+   "type": "OSPE",
+   "station": 13,
+   "stem": "สถานี 13: ผู้ป่วยหญิงอายุ 60 ปี หอบเหนื่อย 15 วัน ได้ภาพ X-ray",
+   "items": [
+    {
+     "id": "10.1",
+     "prompt": "อธิบายลักษณะที่เห็นในภาพ X-ray",
+     "format": "short",
+     "accepted": [
+      "blunt",
+      "costophrenic",
+      "opacity"
+     ],
+     "keywords_all": [
+      "costophrenic"
+     ],
+     "key_text": "Blunting ของ costophrenic angle (ร่วมกับเงาทึบเรียบ)",
+     "source_key": "เฉลย: Blunting ของ costophrenic angle (ร่วมกับเงาทึบเรียบ)",
+     "image": "img/RESP-50-OSPE-013.jpg",
+     "image_caption": "CXR"
+    },
+    {
+     "id": "10.2",
+     "prompt": "ผู้ป่วยมีโอกาสเป็นโรคอะไรมากที่สุด",
+     "format": "short",
+     "accepted": [
+      "pleural effusion",
+      "effusion",
+      "pneumonia"
+     ],
+     "keywords_all": [
+      "effusion"
+     ],
+     "key_text": "Pleural effusion (ลายมือเฉลยอ่านเป็น pneumonia แต่ blunted costophrenic angle บ่งชี้ effusion)",
+     "source_key": "เฉลย (ลายมือ): ... costophrenic angle / pneumonia (ไม่ชัด)"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "OSPE50",
+     "pages": [
+      13
+     ]
+    },
+    {
+     "paper": "OSPE50-KEY",
+     "pages": [
+      13
+     ]
+    }
+   ],
+   "tags": [
+    "radiology"
+   ],
+   "source": "claude-mcp"
+  }
+ ]
+}
