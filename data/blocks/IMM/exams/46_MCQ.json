@@ -1,0 +1,3684 @@
+{
+ "meta": {
+  "set_id": "46_MCQ",
+  "block": "IMM",
+  "cohort": 46,
+  "type": "MCQ",
+  "title": "MCQ Immunity · Med PSU 46",
+  "n_source_items": 89,
+  "skipped": [
+   "71",
+   "73",
+   "77",
+   "78",
+   "86"
+  ],
+  "generated_by": "auditor/tools/build_outputs.py — do not edit by hand"
+ },
+ "questions": [
+  {
+   "id": "IMM-46-MCQ-001",
+   "block": "IMM",
+   "cohort": 46,
+   "n": 1,
+   "type": "MCQ",
+   "stem": "ข้อใดพบใน pus",
+   "options": {
+    "A": "Neutrophil",
+    "B": "Mast cell",
+    "C": "Eosinophil",
+    "D": "Macrophage",
+    "E": "Goblet cell"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "หนอง (pus) ประกอบด้วย neutrophil เป็นหลัก",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "imm_46_MCQ_001",
+   "key_concept": "• pus = neutrophil + debris + แบคทีเรีย\n• pyogenic: S. aureus, GAS\n• neutrophil = first responder",
+   "option_why": {
+    "A": "✓ neutrophil ตายสะสมเป็น pus",
+    "B": "mast cell ไม่ใช่",
+    "C": "eosinophil ไม่ใช่",
+    "D": "macrophage กิน debris แต่ไม่ใช่เซลล์หลักของ pus",
+    "E": "goblet cell ไม่ใช่"
+   }
+  },
+  {
+   "id": "IMM-46-MCQ-002",
+   "block": "IMM",
+   "cohort": 46,
+   "n": 2,
+   "type": "MCQ",
+   "stem": "Which of the following is recognized by macrophage in bacterial opsonization process?",
+   "options": {
+    "A": "DNA",
+    "B": "RNA",
+    "C": "Fc ของ antibody",
+    "D": "Peptidoglycan",
+    "E": "Lipopolysaccharide"
+   },
+   "answer": "C",
+   "answer_status": "verified",
+   "explanation": "Macrophage รู้จัก microbe ที่เคลือบ antibody ผ่าน Fc receptor",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "imm_46_MCQ_002",
+   "key_concept": "• opsonin: IgG (FcγR), C3b (CR1)\n• PRR รู้จัก PAMP โดยตรง\n• ADCC ใช้ FcR",
+   "option_why": {
+    "A": "DNA ไม่ใช่",
+    "B": "RNA ไม่ใช่",
+    "C": "✓ Fc ของ antibody จับ Fc receptor (opsonization)",
+    "D": "peptidoglycan = PAMP (TLR2)",
+    "E": "LPS = PAMP (TLR4)"
+   }
+  },
+  {
+   "id": "IMM-46-MCQ-003",
+   "block": "IMM",
+   "cohort": 46,
+   "n": 3,
+   "type": "MCQ",
+   "stem": "Cytokine อะไรจำเป็นสำหรับการสร้าง IgG",
+   "options": {
+    "A": "IL-4",
+    "B": "IL-5",
+    "C": "IL-12",
+    "D": "TNF alpha",
+    "E": "TNF Gramma"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "IL-4 กระตุ้น class switch เป็น IgE/IgG4",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "imm_46_MCQ_003",
+   "key_concept": "• IL-4: IgE · IFN-γ: IgG · TGF-β: IgA\n• Th2 = IL-4/5/13\n• Tfh ช่วย class switch",
+   "mechanism": [
+    "Th2/Tfh หลั่ง IL-4",
+    {
+     "s": "B cell ได้ IL-4 + CD40L",
+     "answer": true
+    },
+    "AID ตัดต่อ constant region",
+    "class switch",
+    "IgE/IgG"
+   ],
+   "option_why": {
+    "A": "✓ IL-4 → B cell switch IgE",
+    "B": "IL-5 → eosinophil/IgA",
+    "C": "IL-12 → Th1",
+    "D": "TNF-α ไม่ใช่",
+    "E": "TNF-γ ไม่มี"
+   }
+  },
+  {
+   "id": "IMM-46-MCQ-004",
+   "block": "IMM",
+   "cohort": 46,
+   "n": 4,
+   "type": "MCQ",
+   "stem": "Why does IgM only produce after Neisseria meningitidis infection?",
+   "options": {
+    "A": "Th doesn't activated",
+    "B": "B-cell doesn't activated",
+    "C": "NK cell doesn't activated",
+    "D": "Neutrophil doesn't activated",
+    "E": "Macrophaage doesn't activated"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "หลัง Neisseria meningitidis มี IgM เท่านั้น เพราะ Th cell ไม่ถูกกระตุ้น (ไม่เกิด isotype switching)",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      3
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "imm_46_MCQ_004",
+   "key_concept": "• class switch ต้องการ T-cell help (CD40L)\n• capsule = T-independent antigen → IgM\n• conjugate vaccine ทำให้ T-dependent",
+   "mechanism": [
+    "polysaccharide = T-independent",
+    "B cell ผลิต IgM",
+    {
+     "s": "ไม่มี Th → ไม่ switch",
+     "answer": true
+    },
+    "IgM เท่านั้น",
+    "conjugate vaccine แก้ปัญหา"
+   ],
+   "option_why": {
+    "A": "✓ Th ไม่ถูกกระตุ้น → ไม่ switch",
+    "B": "B cell ไม่ใช่",
+    "C": "NK ไม่ใช่",
+    "D": "neutrophil ไม่ใช่",
+    "E": "macrophage ไม่ใช่"
+   }
+  },
+  {
+   "id": "IMM-46-MCQ-005",
+   "block": "IMM",
+   "cohort": 46,
+   "n": 5,
+   "type": "MCQ",
+   "stem": "Which cell help in isotype switchinig?",
+   "options": {
+    "A": "Th",
+    "B": "Tc",
+    "C": "Treg",
+    "D": "Dendritic cell",
+    "E": "Macrophage"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "Th cell (CD4 helper) ช่วย isotype switching",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      3
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "imm_46_MCQ_005",
+   "key_concept": "• Tfh/Th ช่วย class switch\n• CD40L–CD40\n• hyper IgM: CD40L defect",
+   "option_why": {
+    "A": "✓ Th (CD40L + cytokine)",
+    "B": "Tc ไม่ใช่",
+    "C": "Treg ไม่ใช่",
+    "D": "DC ไม่ใช่",
+    "E": "macrophage ไม่ใช่"
+   }
+  },
+  {
+   "id": "IMM-46-MCQ-006",
+   "block": "IMM",
+   "cohort": 46,
+   "n": 6,
+   "type": "MCQ",
+   "stem": "ปกติในการทำงานของ T-cell จะมีสัญญาณหลักและสัญญาณรอง(co-stimulation) If Costimulation doesen't happen what will happen?",
+   "options": {
+    "A": "T-cell Anergy",
+    "B": "T-cell proliferation",
+    "C": "T-cell differentiation",
+    "D": "Autoimmune disease",
+    "E": "B-cell activation"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "ถ้า costimulation ไม่เกิด T cell จะเป็น anergy",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      3
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "imm_46_MCQ_006",
+   "key_concept": "• signal 1 + signal 2 → activation\n• signal 1 อย่างเดียว → anergy\n• CTLA-4/PD-1 ลดสัญญาณ",
+   "mechanism": [
+    "TCR จับ MHC (signal 1)",
+    "ไม่มี B7–CD28",
+    {
+     "s": "ไม่ได้ signal 2",
+     "answer": true
+    },
+    "anergy",
+    "tolerance"
+   ],
+   "option_why": {
+    "A": "✓ anergy",
+    "B": "proliferation ไม่เกิด",
+    "C": "differentiation ไม่เกิด",
+    "D": "autoimmune ไม่ใช่",
+    "E": "activation ไม่เกิด"
+   }
+  },
+  {
+   "id": "IMM-46-MCQ-007",
+   "block": "IMM",
+   "cohort": 46,
+   "n": 7,
+   "type": "MCQ",
+   "stem": "lymphoid tissue ใด drain เข้าสู่ right lymphatic duct",
+   "options": {
+    "A": "Right cervical node",
+    "B": "Left cervical node",
+    "C": "Spleen",
+    "D": "Cisterna chyli",
+    "E": "Left axillary node"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "Right lymphatic duct รับ lymph จากครึ่งขวาบน เช่น right cervical node",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      4
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      4
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "imm_46_MCQ_007",
+   "key_concept": "• right lymphatic duct: แขนขวา ศีรษะ/คอขวา ทรวงอกขวา\n• thoracic duct: ส่วนที่เหลือ\n• เข้า right venous angle",
+   "option_why": {
+    "A": "✓ right cervical node → right lymphatic duct",
+    "B": "left cervical → thoracic duct",
+    "C": "spleen ไม่มี lymphatic ออกแบบนี้",
+    "D": "cisterna chyli → thoracic duct",
+    "E": "left axillary → thoracic duct"
+   }
+  },
+  {
+   "id": "IMM-46-MCQ-008",
+   "block": "IMM",
+   "cohort": 46,
+   "n": 8,
+   "type": "MCQ",
+   "stem": "structure ใดที่สามารถให้ CD4+ lymphocyte เดินทางออกได้อย่างเดียว",
+   "options": {
+    "A": "High endothelial venule in lymph node",
+    "B": "High endothelial venule in Thymus",
+    "C": "Central artery in spleen"
+   },
+   "answer": "B",
+   "answer_status": "verified",
+   "explanation": "HEV ใน thymus ให้ CD4+ lymphocyte ออกได้อย่างเดียว (ตามเฉลย)",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      4
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      4
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "imm_46_MCQ_008",
+   "key_concept": "• HEV ใน lymph node = ทางเข้า naive lymphocyte\n• thymus: T cell ออกจาก medulla\n• ข้อนี้ตามเฉลยต้นฉบับ",
+   "option_why": {
+    "A": "HEV ใน lymph node ให้เข้า",
+    "B": "✓ HEV ใน thymus (ตามเฉลย)",
+    "C": "central artery ของ spleen ไม่ใช่"
+   }
+  },
+  {
+   "id": "IMM-46-MCQ-009",
+   "block": "IMM",
+   "cohort": 46,
+   "n": 9,
+   "type": "MCQ",
+   "stem": "lymphoid tissues ที่มี distinct characteristic เกิด scaffolding its immune คือlymphoid tissue ใด",
+   "options": {
+    "A": "Spleen",
+    "B": "Thymus",
+    "C": "Diffuse lymphoid tissue",
+    "D": "Tonsil",
+    "E": "Appendix"
+   },
+   "answer": "B",
+   "answer_status": "verified",
+   "explanation": "Thymus มี Hassall's corpuscle",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      4
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      4
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "imm_46_MCQ_009",
+   "key_concept": "• thymus: cortex แน่น medulla จาง + Hassall's corpuscle\n• T cell selection\n• bone marrow = B cell",
+   "option_why": {
+    "A": "spleen ไม่มี",
+    "B": "✓ thymus มี Hassall's corpuscle",
+    "C": "diffuse lymphoid tissue ไม่มี",
+    "D": "tonsil ไม่มี",
+    "E": "appendix ไม่มี"
+   }
+  },
+  {
+   "id": "IMM-46-MCQ-010",
+   "block": "IMM",
+   "cohort": 46,
+   "n": 10,
+   "type": "MCQ",
+   "stem": "ข้อใดใช้ในการกำจัด Listeria monocytogenes infection",
+   "options": {
+    "A": "Tc",
+    "B": "Th1",
+    "C": "Th2",
+    "D": "Th17",
+    "E": "Treg"
+   },
+   "answer": "B",
+   "answer_status": "verified",
+   "explanation": "Listeria (intracellular) ควบคุมด้วย Th1",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      5
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      5
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "imm_46_MCQ_010",
+   "key_concept": "• intracellular bacteria: Th1/IFN-γ\n• Listeria: GP rod, tumbling motility\n• L. monocytogenes escape phagosome",
+   "option_why": {
+    "A": "Tc ฆ่าเซลล์ติดเชื้อ แต่ข้อสอบเลือก Th1",
+    "B": "✓ Th1 → IFN-γ → macrophage",
+    "C": "Th2 ไม่ใช่",
+    "D": "Th17 ไม่ใช่",
+    "E": "Treg ไม่ใช่"
+   }
+  },
+  {
+   "id": "IMM-46-MCQ-011",
+   "block": "IMM",
+   "cohort": 46,
+   "n": 11,
+   "type": "MCQ",
+   "stem": "Haemophilus influenzae ถามเกี่ยวกับการ Regcognition T cell",
+   "options": {
+    "A": "Dendritic cell",
+    "B": "Langerhans cell"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "Dendritic cell เป็น professional APC หลักที่รู้จัก antigen และ present ให้ T cell",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      5
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      5
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "imm_46_MCQ_011",
+   "key_concept": "• professional APC: DC, macrophage, B cell\n• DC = ตัวเชื่อม innate–adaptive\n• H. influenzae = extracellular",
+   "option_why": {
+    "A": "✓ dendritic cell ตามเฉลย",
+    "B": "Langerhans cell เป็น DC ในผิวหนัง"
+   }
+  },
+  {
+   "id": "IMM-46-MCQ-012",
+   "block": "IMM",
+   "cohort": 46,
+   "n": 12,
+   "type": "MCQ",
+   "stem": "Which of the following is responsible for sepsis caused by Neisseria meningitidis",
+   "options": {
+    "A": "B-cell activation",
+    "B": "T-cell activation",
+    "C": "Complement activation",
+    "D": "Macrophage activation",
+    "E": "Neutrophil activation"
+   },
+   "answer": "C",
+   "answer_status": "verified",
+   "explanation": "Sepsis จาก N. meningitidis เกิดจาก complement activation (MAC + endotoxin LOS)",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      5
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      5
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "imm_46_MCQ_012",
+   "key_concept": "• meningococcemia: LOS → cytokine storm\n• terminal complement defect → recurrent Neisseria\n• Waterhouse-Friderichsen",
+   "option_why": {
+    "A": "B cell ไม่ใช่",
+    "B": "T cell ไม่ใช่",
+    "C": "✓ complement activation + endotoxin",
+    "D": "macrophage ไม่ใช่",
+    "E": "neutrophil ไม่ใช่"
+   }
+  },
+  {
+   "id": "IMM-46-MCQ-013",
+   "block": "IMM",
+   "cohort": 46,
+   "n": 13,
+   "type": "MCQ",
+   "stem": "During 3 days of first Rhinovirus infection,Which of the following will increase?",
+   "options": {
+    "A": "C5",
+    "B": "IL-1",
+    "C": "IFN Type l",
+    "D": "Macrophage",
+    "E": "Anti-Rhinovirus"
+   },
+   "answer": "C",
+   "answer_status": "verified",
+   "explanation": "3 วันแรกของ rhinovirus เพิ่มขึ้น IFN type I",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      5
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      5
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "imm_46_MCQ_013",
+   "key_concept": "• ไวรัส: IFN-α/β + NK ใน 1–3 วัน\n• CTL/antibody ใน 7–10 วัน\n• timeline ของ response",
+   "mechanism": [
+    "ไวรัสเข้าเซลล์",
+    "dsRNA จับ PRR",
+    {
+     "s": "IFN type I ↑",
+     "answer": true
+    },
+    "antiviral state/NK",
+    "ลด replication"
+   ],
+   "option_why": {
+    "A": "C5 ไม่ใช่",
+    "B": "IL-1 ทั่วไป",
+    "C": "✓ IFN type I (innate antiviral)",
+    "D": "macrophage เป็นเซลล์",
+    "E": "anti-rhinovirus antibody มาทีหลัง"
+   }
+  },
+  {
+   "id": "IMM-46-MCQ-014",
+   "block": "IMM",
+   "cohort": 46,
+   "n": 14,
+   "type": "MCQ",
+   "stem": "Which of the following can neutralize infectivity of rabies virus?",
+   "options": {
+    "A": "Ab",
+    "B": "IFN type l",
+    "C": "IFN type ll",
+    "D": "Tc",
+    "E": "Th"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "Antibody neutralize rabies virus",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      6
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      6
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "imm_46_MCQ_014",
+   "key_concept": "• neutralization = antibody หลัก\n• rabies: vaccine + RIG\n• antibody ป้องกันก่อนเข้า neuron",
+   "option_why": {
+    "A": "✓ antibody neutralize",
+    "B": "IFN type I ต้านทั่วไป",
+    "C": "IFN type II ไม่ใช่",
+    "D": "Tc ฆ่าเซลล์ติดเชื้อ",
+    "E": "Th ช่วย"
+   }
+  },
+  {
+   "id": "IMM-46-MCQ-015",
+   "block": "IMM",
+   "cohort": 46,
+   "n": 15,
+   "type": "MCQ",
+   "stem": "Which of the following is the effective mechanism against latent hsv infection",
+   "options": {
+    "A": "Tc",
+    "B": "Th",
+    "C": "Nk",
+    "D": "Macrophage",
+    "E": "Antibody"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "Latent HSV: Tc ฆ่าเซลล์ที่แสดง viral antigen/ กำจัดการ reactivation",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      6
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      6
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "imm_46_MCQ_015",
+   "key_concept": "• latent HSV ใน neuron (trigeminal)\n• CMI คุม reactivation\n• acyclovir",
+   "option_why": {
+    "A": "✓ Tc (CTL)",
+    "B": "Th ช่วย",
+    "C": "NK ช่วยระยะต้น",
+    "D": "macrophage ไม่ใช่",
+    "E": "antibody จัดการไวรัสนอกเซลล์"
+   }
+  },
+  {
+   "id": "IMM-46-MCQ-016",
+   "block": "IMM",
+   "cohort": 46,
+   "n": 16,
+   "type": "MCQ",
+   "stem": "Which of the following is the most important in destroying Aspergillus spp.",
+   "options": {
+    "A": "B cell",
+    "B": "Tc",
+    "C": "Nk cell",
+    "D": "Neutrophil",
+    "E": "Eosinophil"
+   },
+   "answer": "D",
+   "answer_status": "verified",
+   "explanation": "Neutrophil สำคัญต่อ Aspergillus (hyphae ใหญ่)",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      6
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      6
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "imm_46_MCQ_016",
+   "key_concept": "• Aspergillus: neutrophil (ROS, NET)\n• neutropenia/CGD เสี่ยง\n• voriconazole",
+   "option_why": {
+    "A": "B cell ไม่ใช่",
+    "B": "Tc ไม่ใช่",
+    "C": "NK ไม่ใช่",
+    "D": "✓ neutrophil ฆ่า hyphae",
+    "E": "eosinophil ไม่ใช่"
+   }
+  },
+  {
+   "id": "IMM-46-MCQ-017",
+   "block": "IMM",
+   "cohort": 46,
+   "n": 17,
+   "type": "MCQ",
+   "stem": "กลไกในการกำจัด fungal hyphae",
+   "options": {
+    "A": "complement activation",
+    "B": "Apoptosis",
+    "C": "Necrosis",
+    "D": "Degranulation",
+    "E": "Phagocytosis"
+   },
+   "answer": "D",
+   "answer_status": "verified",
+   "explanation": "กลไกกำจัดเชื้อรา hyphae: degranulation (neutrophil ปล่อย ROS/enzymes)",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      7
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      7
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "imm_46_MCQ_017",
+   "key_concept": "• hyphae ใหญ่เกิน phagocytose → extracellular killing\n• degranulation + ROS + NET\n• yeast = phagocytose",
+   "option_why": {
+    "A": "complement ทำ MAC ไม่ได้บน hyphae",
+    "B": "apoptosis ไม่ใช่",
+    "C": "necrosis ไม่ใช่",
+    "D": "✓ degranulation ของ neutrophil/eosinophil",
+    "E": "phagocytosis กลืน hyphae ใหญ่ไม่ได้"
+   }
+  },
+  {
+   "id": "IMM-46-MCQ-018",
+   "block": "IMM",
+   "cohort": 46,
+   "n": 18,
+   "type": "MCQ",
+   "stem": "ผู้หญิงอายุ 60 ปี มาด้วยอาการ acute lukemia ได้รับ chemotherapy 2 สัปดาห์ต่อมา คนไข้ติดเชื้อ Aspergillus pneumoniae. What is the major cause of this infection?",
+   "options": {
+    "A": "Patient age",
+    "B": "Pulmonary hypersensitivity",
+    "C": "Immunosupression",
+    "D": "Acute leukemia",
+    "E": "Intracellular killing defect"
+   },
+   "answer": "C",
+   "answer_status": "verified",
+   "explanation": "Acute leukemia + chemotherapy → neutropenia/immunosuppression ทำให้ติด Aspergillus",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      7
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      7
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "imm_46_MCQ_018",
+   "key_concept": "• neutropenic host: Aspergillus, Candida, Pseudomonas\n• invasive aspergillosis\n• voriconazole",
+   "option_why": {
+    "A": "อายุไม่ใช่",
+    "B": "hypersensitivity ไม่ใช่",
+    "C": "✓ immunosuppression จาก chemo",
+    "D": "leukemia เองไม่ใช่สาเหตุโดยตรง",
+    "E": "intracellular killing defect = CGD"
+   }
+  },
+  {
+   "id": "IMM-46-MCQ-019",
+   "block": "IMM",
+   "cohort": 46,
+   "n": 19,
+   "type": "MCQ",
+   "stem": "Which of the following is the most important in destroying Plasmodium falciparum in liver stage",
+   "options": {
+    "A": "IgG",
+    "B": "IFN gamma",
+    "C": "Tc",
+    "D": "Th",
+    "E": "Macrophage"
+   },
+   "answer": "C",
+   "answer_status": "verified",
+   "explanation": "Liver stage ของ P. falciparum ต้อง Tc (CTL) ฆ่า hepatocyte ที่ติดเชื้อ",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      7
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      7
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "imm_46_MCQ_019",
+   "key_concept": "• liver stage: CD8 + IFN-γ\n• blood stage: antibody\n• intracellular → CTL",
+   "option_why": {
+    "A": "IgG ไม่เข้า hepatocyte",
+    "B": "IFN-γ ช่วย",
+    "C": "✓ CTL ฆ่าเซลล์ตับที่ติดเชื้อ",
+    "D": "Th ช่วย",
+    "E": "macrophage ไม่ใช่"
+   }
+  },
+  {
+   "id": "IMM-46-MCQ-020",
+   "block": "IMM",
+   "cohort": 46,
+   "n": 20,
+   "type": "MCQ",
+   "stem": "Which of the following is the most important function of antibody to Plasmodium vivax",
+   "options": {
+    "A": "Induce phagocyte",
+    "B": "Activate complement",
+    "C": "Killing intracellular protozoa",
+    "D": "Block protozoa attachment",
+    "E": "Activate intracellular killing macrophage"
+   },
+   "answer": "D",
+   "answer_status": "verified",
+   "explanation": "Antibody ต้าน P. vivax บล็อก merozoite attachment/invasion",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      8
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      8
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "imm_46_MCQ_020",
+   "key_concept": "• antibody ต่อ merozoite: บล็อก invasion\n• P. vivax จับ Duffy antigen\n• CTL ใช้ liver stage",
+   "option_why": {
+    "A": "induce phagocyte อ้อม",
+    "B": "complement ไม่ใช่หลัก",
+    "C": "antibody ไม่ฆ่า intracellular protozoa",
+    "D": "✓ block attachment ต่อ RBC",
+    "E": "macrophage activation ใช้ IFN-γ"
+   }
+  },
+  {
+   "id": "IMM-46-MCQ-021",
+   "block": "IMM",
+   "cohort": 46,
+   "n": 21,
+   "type": "MCQ",
+   "stem": "ตอนเย็นกินกุ้ง แล้ววันต่อมาเกิด Angioedema Cellใดเกี่ยวข้องในกระบวนการนี้",
+   "options": {
+    "A": "Mast cell",
+    "B": "Macrophage",
+    "C": "Neutrophil",
+    "D": "Monocyte",
+    "E": "T-cell"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "Angioedema หลังกินกุ้ง = type I; mast cell",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      8
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      8
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "imm_46_MCQ_021",
+   "key_concept": "• type I: IgE + mast cell\n• histamine → angioedema\n• anaphylaxis: epinephrine",
+   "option_why": {
+    "A": "✓ mast cell degranulation",
+    "B": "macrophage ไม่ใช่",
+    "C": "neutrophil ไม่ใช่",
+    "D": "monocyte ไม่ใช่",
+    "E": "T cell ไม่ใช่"
+   }
+  },
+  {
+   "id": "IMM-46-MCQ-022",
+   "block": "IMM",
+   "cohort": 46,
+   "n": 22,
+   "type": "MCQ",
+   "stem": "มีอาการเจ็บข้อต่อเล็ก specific autoantibody ที่ใช้ในการตรวจคือ",
+   "options": {
+    "A": "ANA",
+    "B": "RF",
+    "C": "Anti-CCP",
+    "D": "ANCA",
+    "E": "PCR"
+   },
+   "answer": "C",
+   "answer_status": "verified",
+   "explanation": "RA ตรวจ anti-CCP (specific)",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      8
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      8
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "imm_46_MCQ_022",
+   "key_concept": "• RA: anti-CCP specificity ~95%\n• RF IgM anti-Fc\n• HLA-DR4",
+   "option_why": {
+    "A": "ANA ใน SLE",
+    "B": "RF ไวแต่ไม่จำเพาะ",
+    "C": "✓ anti-CCP จำเพาะ RA",
+    "D": "ANCA ใน vasculitis",
+    "E": "PCR ไม่ใช่ autoantibody"
+   }
+  },
+  {
+   "id": "IMM-46-MCQ-023",
+   "block": "IMM",
+   "cohort": 46,
+   "n": 23,
+   "type": "MCQ",
+   "stem": "ให้อาการมีmalar rash specific autoantibody ที่ใช้ในการตรวจคือ",
+   "options": {
+    "A": "RF",
+    "B": "Anti-dsDNA",
+    "C": "ANA",
+    "D": "ANCA",
+    "E": "PCR"
+   },
+   "answer": "B",
+   "answer_status": "verified",
+   "explanation": "SLE (malar rash) ตรวจ anti-dsDNA specific",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      9
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      9
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "imm_46_MCQ_023",
+   "key_concept": "• SLE: ANA (sensitive), anti-dsDNA/anti-Sm (specific)\n• complement ต่ำ\n• type III",
+   "option_why": {
+    "A": "RF ใน RA",
+    "B": "✓ anti-dsDNA จำเพาะ SLE",
+    "C": "ANA ไวแต่ไม่จำเพาะ",
+    "D": "ANCA ไม่ใช่",
+    "E": "PCR ไม่ใช่"
+   }
+  },
+  {
+   "id": "IMM-46-MCQ-024",
+   "block": "IMM",
+   "cohort": 46,
+   "n": 24,
+   "type": "MCQ",
+   "stem": "เซลล์ในข้อใดมี MHC II",
+   "options": {
+    "A": "Macrophage",
+    "B": "Neutrophil",
+    "C": "Spleen cell",
+    "D": "Liver cell",
+    "E": "Heart cell"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "MHC II พบที่ macrophage",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      9
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      9
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "imm_46_MCQ_024",
+   "key_concept": "• MHC II: DC, macrophage, B cell\n• MHC I: nucleated\n• กระตุ้น MHC II ด้วย IFN-γ",
+   "option_why": {
+    "A": "✓ macrophage (APC)",
+    "B": "neutrophil ไม่มี",
+    "C": "spleen cell กว้างไป",
+    "D": "liver cell ไม่มี",
+    "E": "heart cell ไม่มี"
+   }
+  },
+  {
+   "id": "IMM-46-MCQ-025",
+   "block": "IMM",
+   "cohort": 46,
+   "n": 25,
+   "type": "MCQ",
+   "stem": "ปลูกถ่ายไต ขณะผ่าตัดปลูกถ่ายแพทย์สังเกตเห็นว่าไตเริ่มตาย ไตไม่ function มีสีเปลี่ยนไป เกิดจากการ mismatch ในข้อใดต่อไปนี้",
+   "options": {
+    "A": "ABO blood group",
+    "B": "HLA-A",
+    "C": "HLA-B",
+    "D": "HLA-C",
+    "E": "HLA-DQ"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "Graft rejection เร็วหลังปลูกถ่าย จากความไม่เข้ากันของ ABO",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      9
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      9
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "imm_46_MCQ_025",
+   "key_concept": "• hyperacute: ABO + preformed Ab\n• acute: HLA mismatch\n• crossmatch",
+   "option_why": {
+    "A": "✓ ABO blood group → hyperacute",
+    "B": "HLA-A",
+    "C": "HLA-B",
+    "D": "HLA-C",
+    "E": "HLA-DQ"
+   }
+  },
+  {
+   "id": "IMM-46-MCQ-026",
+   "block": "IMM",
+   "cohort": 46,
+   "n": 26,
+   "type": "MCQ",
+   "stem": "ปลูกถ่ายไต 3 เดือนผ่านไปพบว่าการทำงานของไตลดลง เกิดจากสาเหตุใด",
+   "options": {
+    "A": "Recipient T-cell activation",
+    "B": "Severe graft rejection",
+    "C": "Donor T-cell activation",
+    "D": "Donor macrophage activation",
+    "E": "ไม่มีข้อใดถูกต้อง"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "3 เดือนหลังปลูกถ่ายไต การทำงานลดลง = recipient T-cell activation (acute cellular rejection)",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      10
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      10
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "imm_46_MCQ_026",
+   "key_concept": "• acute: วัน–เดือน T cell\n• hyperacute: นาที\n• chronic: เดือน–ปี",
+   "option_why": {
+    "A": "✓ recipient T cell activation",
+    "B": "severe graft rejection กว้างไป",
+    "C": "donor T cell ไม่ใช่",
+    "D": "donor macrophage ไม่ใช่",
+    "E": "ไม่มีข้อใดถูกต้อง"
+   }
+  },
+  {
+   "id": "IMM-46-MCQ-027",
+   "block": "IMM",
+   "cohort": 46,
+   "n": 27,
+   "type": "MCQ",
+   "stem": "คนไข้อายุ 2 ปี เป็น pneumonia tonsolitis Ig ต่ำ เป็น defect อะไร",
+   "options": {
+    "A": "Abnormal neutralizing microbe",
+    "B": "Abnormal phagocytosis microbe",
+    "C": "Abnormal lysis microbe",
+    "D": "Abnormal innate immunity",
+    "E": "Abnormal B cell"
+   },
+   "answer": "E",
+   "answer_status": "verified",
+   "explanation": "Ig ต่ำ + ติดเชื้อทางเดินหายใจซ้ำ = B cell defect",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      10
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      10
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "imm_46_MCQ_027",
+   "key_concept": "• antibody deficiency: sinopulmonary encapsulated\n• XLA: BTK\n• IVIG",
+   "option_why": {
+    "A": "neutralizing microbe ผิดปกติ",
+    "B": "phagocytosis ผิดปกติ",
+    "C": "lysis ผิดปกติ",
+    "D": "innate ผิดปกติ",
+    "E": "✓ B cell ผิดปกติ"
+   }
+  },
+  {
+   "id": "IMM-46-MCQ-028",
+   "block": "IMM",
+   "cohort": 46,
+   "n": 28,
+   "type": "MCQ",
+   "stem": "คนไข้อายุ 1 ปี ติด S.aureus , Candiasis Ig ปกติ Leokocytosis เป็น defect อะไร",
+   "options": {
+    "A": "Abonormal neutralizing microbe",
+    "B": "Abnormal phagocytosis microbe",
+    "C": "Abnormal lysis microbe",
+    "D": "Abnormal innate immunity",
+    "E": "Abnormal B cell"
+   },
+   "answer": "B",
+   "answer_status": "verified",
+   "explanation": "S. aureus + Candida + WBC สูง Ig ปกติ = phagocytosis defect",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      10
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      10
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "imm_46_MCQ_028",
+   "key_concept": "• phagocyte defect: catalase +\n• LAD: WBC สูงมาก\n• CGD: DHR",
+   "option_why": {
+    "A": "neutralization ปกติ",
+    "B": "✓ phagocytosis defect (CGD/LAD)",
+    "C": "lysis ไม่ใช่",
+    "D": "innate กว้างไป",
+    "E": "B cell ปกติ (Ig ปกติ)"
+   }
+  },
+  {
+   "id": "IMM-46-MCQ-029",
+   "block": "IMM",
+   "cohort": 46,
+   "n": 29,
+   "type": "MCQ",
+   "stem": "ตามหลัก Biosafety ควรปฏิบัติอย่างไรในการเก็บสิ่งส่งตรวจจากเชื้อ influenza",
+   "options": {
+    "A": "ใส่หน้ากาก N95",
+    "B": "Biosafety level 3",
+    "C": "เก็บสิ่งส่งตรวจในห้องปิด ไม่มีการถ่ายอากาศออกสู่ภายนอก",
+    "D": "ติดสัญลักษณ์ Biohazard",
+    "E": "ล้างมือตามขั้นตอน"
+   },
+   "answer": "C",
+   "answer_status": "verified",
+   "explanation": "Rhinovirus/ข้อนี้: C Biosafety — เก็บสิ่งส่งตรวจในห้องปิด",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      11
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      11
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "imm_46_MCQ_029",
+   "key_concept": "• influenza (non-HPAI): BSL-2\n• เก็บสิ่งส่งตรวจในห้องปิด\n• PPE + BSC",
+   "option_why": {
+    "A": "N95 อย่างเดียวไม่พอ",
+    "B": "BSL-3 ไม่จำเป็น (influenza ใช้ BSL-2)",
+    "C": "✓ เก็บในห้องปิด ไม่มีการถ่ายเทอากาศออก",
+    "D": "ป้ายสัญญาณ biohazard ไม่พอ",
+    "E": "ล้างมือไม่ใช่ข้อหลัก"
+   }
+  },
+  {
+   "id": "IMM-46-MCQ-030",
+   "block": "IMM",
+   "cohort": 46,
+   "n": 30,
+   "type": "MCQ",
+   "stem": "A 12 year-old boy have fever for 3 days, cough, and progressing to dyspnea, Which of the following is the best way to collect specimen for Influenza virus PCR?",
+   "options": {
+    "A": "Throat swab in Stuart’s media",
+    "B": "Nasal swab in Stuart’s media",
+    "C": "Nasopharyngeal swab in viral transport media",
+    "D": "Nasopharyngeal swab in thioglycolate broth",
+    "E": "Sputum in viral transport media"
+   },
+   "answer": "C",
+   "answer_status": "verified",
+   "explanation": "Influenza PCR เก็บ nasopharyngeal swab ใน viral transport media",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      11
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      11
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "imm_46_MCQ_030",
+   "key_concept": "• virus ต้อง VTM\n• NP swab ไวกว่า\n• Stuart's = แบคทีเรีย",
+   "option_why": {
+    "A": "throat swab ใน Stuart's ไม่เหมาะ",
+    "B": "nasal swab ใน Stuart's ไม่เหมาะ",
+    "C": "✓ NP swab ใน VTM",
+    "D": "thioglycolate ไม่ใช่",
+    "E": "sputum ไม่ใช่ที่ดีที่สุด"
+   }
+  },
+  {
+   "id": "IMM-46-MCQ-031",
+   "block": "IMM",
+   "cohort": 46,
+   "n": 31,
+   "type": "MCQ",
+   "stem": "ข้อใดเป็นวิธีในการเก็บปัสสาวะเพื่อส่งตรวจที่ถูกต้อง",
+   "options": {
+    "A": "บอกคนไข้ให้เก็บปัสสาวะตั้งแต่ช่วงแรก",
+    "B": "เจาะท้องในคนไข้อายุ 60 ปี",
+    "C": "บอกคนไข้ให้เก็บปัสสาวะช่วงกลาง ด้วย sterile bottle",
+    "D": "เก็บที่อุณหภูมิห้องก่อนนำไปตรวจ",
+    "E": "ปริมาณน้อย แต่ เข้มข้น"
+   },
+   "answer": "C",
+   "answer_status": "verified",
+   "explanation": "เก็บปัสสาวะ: ช่วงกลาง (midstream) ใส่ sterile bottle",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      11
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      11
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "imm_46_MCQ_031",
+   "key_concept": "• midstream clean-catch\n• ส่งใน 2 ชม./แช่เย็น\n• suprapubic เมื่อจำเป็น",
+   "option_why": {
+    "A": "first stream ปนเชื้อ",
+    "B": "เจาะท้อง ไม่ใช่ routine",
+    "C": "✓ midstream clean-catch sterile",
+    "D": "เก็บอุณหภูมิห้อง ไม่ควร",
+    "E": "ปริมาณน้อยไม่ดี"
+   }
+  },
+  {
+   "id": "IMM-46-MCQ-032",
+   "block": "IMM",
+   "cohort": 46,
+   "n": 32,
+   "type": "MCQ",
+   "stem": "Which of the following is the virulence factor of E.coli which induces sepsis",
+   "options": {
+    "A": "Capsule",
+    "B": "Biofilm",
+    "C": "LPS",
+    "D": "Teichoic acid",
+    "E": "Toxin"
+   },
+   "answer": "C",
+   "answer_status": "verified",
+   "explanation": "E. coli sepsis: LPS (endotoxin)",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      12
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      12
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "imm_46_MCQ_032",
+   "key_concept": "• LPS: lipid A → TLR4 → TNF/IL-1\n• Gram-negative sepsis\n• DIC/shock",
+   "mechanism": [
+    "แบคทีเรียตาย",
+    "LPS หลุด",
+    {
+     "s": "TLR4 กระตุ้น macrophage",
+     "answer": true
+    },
+    "TNF/IL-1/IL-6 สูง",
+    "septic shock"
+   ],
+   "option_why": {
+    "A": "capsule ช่วยหนีแต่ไม่ใช่ sepsis โดยตรง",
+    "B": "biofilm ใน catheter",
+    "C": "✓ LPS ทำ septic shock",
+    "D": "teichoic acid คือ Gram-positive",
+    "E": "toxin ไม่ใช่ sepsis ทั่วไป"
+   }
+  },
+  {
+   "id": "IMM-46-MCQ-033",
+   "block": "IMM",
+   "cohort": 46,
+   "n": 33,
+   "type": "MCQ",
+   "stem": "เพราะส่วนประกอบในข้อใดทำให้ endospore ของ Bacillus anthrasis ทนต่อสภาวะที่ร้อนและแห้งได้เป็น ระยะเวลานาน",
+   "options": {
+    "A": "Mycolic acid",
+    "B": "Teichoic acid",
+    "C": "Dipicolinic acid",
+    "D": "Uric acid",
+    "E": "Acetic acid"
+   },
+   "answer": "C",
+   "answer_status": "verified",
+   "explanation": "Dipicolinic acid ทำให้ endospore ทนความร้อน/แห้ง",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      12
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      12
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "imm_46_MCQ_033",
+   "key_concept": "• endospore: dipicolinic acid + Ca\n• Bacillus, Clostridium\n• autoclave 121°C",
+   "option_why": {
+    "A": "mycolic acid = Mycobacterium",
+    "B": "teichoic acid = Gram-positive wall",
+    "C": "✓ dipicolinic acid + Ca²⁺",
+    "D": "uric acid ไม่ใช่",
+    "E": "acetic acid ไม่ใช่"
+   }
+  },
+  {
+   "id": "IMM-46-MCQ-034",
+   "block": "IMM",
+   "cohort": 46,
+   "n": 34,
+   "type": "MCQ",
+   "stem": "ข้อใดต่อไปนี้เป็น media (Non-selective media) ที่มี NAD ที่เป็นปัจจัยอย่างหนึ่งในการเจริญเติบโตของ Neisseria gonorrhea",
+   "options": {
+    "A": "Blood agar",
+    "B": "Chocolate agar",
+    "C": "Nutrient agar",
+    "D": "Modified Thayer-martin agar",
+    "E": "Mac-conkey agar"
+   },
+   "answer": "B",
+   "answer_status": "verified",
+   "explanation": "Neisseria gonorrhoeae เพาะบน chocolate agar (มี NAD/X, V)",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      12
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      12
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "imm_46_MCQ_034",
+   "key_concept": "• Neisseria: chocolate หรือ Thayer-Martin (selective)\n• H. influenzae ต้อง X+V\n• CO₂",
+   "option_why": {
+    "A": "blood agar ไม่พอ",
+    "B": "✓ chocolate agar มี NAD",
+    "C": "nutrient agar ไม่พอ",
+    "D": "Thayer-Martin ใช้ selective",
+    "E": "MacConkey ไม่ขึ้น"
+   }
+  },
+  {
+   "id": "IMM-46-MCQ-035",
+   "block": "IMM",
+   "cohort": 46,
+   "n": 35,
+   "type": "MCQ",
+   "stem": "Transmission of virus genome by bacteriophage ถือเป็นการถ่ายทอดทางพันธุกรรมของ bacteria โดย mechanism ใด",
+   "options": {
+    "A": "Transformation",
+    "B": "Transduction",
+    "C": "Conjugation",
+    "D": "Transposition",
+    "E": "Integration"
+   },
+   "answer": "B",
+   "answer_status": "verified",
+   "explanation": "Transduction = ถ่ายทอด DNA ผ่านไวรัส bacteriophage",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      13
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      13
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "imm_46_MCQ_035",
+   "key_concept": "• transduction: generalized/specialized\n• conjugation: plasmid\n• transformation: naked",
+   "option_why": {
+    "A": "transformation = naked DNA",
+    "B": "✓ transduction = phage",
+    "C": "conjugation = pilus",
+    "D": "transposition ไม่ใช่",
+    "E": "integration ไม่ใช่"
+   }
+  },
+  {
+   "id": "IMM-46-MCQ-036",
+   "block": "IMM",
+   "cohort": 46,
+   "n": 36,
+   "type": "MCQ",
+   "stem": "Virulence factor ของแบคทีเรียในข้อใดช่วยในการเกาะติดกับ catheter",
+   "options": {
+    "A": "Toxin",
+    "B": "Biofilm",
+    "C": "Capsule",
+    "D": "Teichoic acid",
+    "E": "LPS"
+   },
+   "answer": "B",
+   "answer_status": "verified",
+   "explanation": "Biofilm ช่วยเกาะ catheter",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      13
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      13
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "imm_46_MCQ_036",
+   "key_concept": "• catheter infection: Staph epidermidis, Pseudomonas\n• biofilm = EPS matrix\n• เปลี่ยน catheter",
+   "option_why": {
+    "A": "toxin ไม่ใช่",
+    "B": "✓ biofilm เกาะพื้นผิว",
+    "C": "capsule ไม่ใช่หลัก",
+    "D": "teichoic acid ไม่ใช่",
+    "E": "LPS ไม่ใช่"
+   }
+  },
+  {
+   "id": "IMM-46-MCQ-037",
+   "block": "IMM",
+   "cohort": 46,
+   "n": 37,
+   "type": "MCQ",
+   "stem": "Gram positive cocci bacteria ที่ทำให้เกิน toxic shock syndrome มี virulence factor คืออะไร",
+   "options": {
+    "A": "Hyaluron Capsule",
+    "B": "Pili",
+    "C": "Toxin",
+    "D": "Biofilm",
+    "E": "Capsule"
+   },
+   "answer": "C",
+   "answer_status": "verified",
+   "explanation": "S. aureus ก่อ TSS ด้วย toxin (TSST-1/enterotoxin)",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      13
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      13
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "imm_46_MCQ_037",
+   "key_concept": "• TSST-1 = superantigen\n• MHC II + TCR Vβ\n• fever, rash, shock",
+   "option_why": {
+    "A": "hyaluronic capsule = GAS",
+    "B": "pili ไม่ใช่",
+    "C": "✓ superantigen toxin",
+    "D": "biofilm ไม่ใช่",
+    "E": "capsule ไม่ใช่"
+   }
+  },
+  {
+   "id": "IMM-46-MCQ-038",
+   "block": "IMM",
+   "cohort": 46,
+   "n": 38,
+   "type": "MCQ",
+   "stem": "เด็กชายมาด้วย fever , headache , Stiff neck ถูก Diagnosis ว่าเป็น Bacterial meninggitis ส่งตรวจ culture พบว่า เจอเชื้อ Gram negative bacilli ถามว่า Causative agent",
+   "options": {
+    "A": "B.pertussis",
+    "B": "H.influenzae",
+    "C": "N.gonorrhea",
+    "D": "S.aureus",
+    "E": "M.pneumoniae"
+   },
+   "answer": "B",
+   "answer_status": "verified",
+   "explanation": "เด็ก meningitis Gram-negative bacilli (coccobacilli) = H. influenzae",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      14
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      14
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "imm_46_MCQ_038",
+   "key_concept": "• Hib: meningitis, epiglottitis\n• Hib vaccine\n• GN coccobacilli",
+   "option_why": {
+    "A": "B. pertussis ไม่ใช่",
+    "B": "✓ H. influenzae GN coccobacilli",
+    "C": "N. gonorrhoeae ไม่ใช่",
+    "D": "S. aureus GP",
+    "E": "M. pneumoniae ไม่ติด Gram"
+   }
+  },
+  {
+   "id": "IMM-46-MCQ-039",
+   "block": "IMM",
+   "cohort": 46,
+   "n": 39,
+   "type": "MCQ",
+   "stem": "A man present with intra abdominal infection and bile resistant gram negative สามารถดูได้จาก anaerobic jar เป็นเชื้ออะไร",
+   "options": {
+    "A": "Bacteroides spp.",
+    "B": "E.coli",
+    "C": "N.gonorrhea",
+    "D": "S.aureus",
+    "E": "H.influenzae"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "Intra-abdominal infection (anaerobic jar) = Bacteroides",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      14
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      14
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "imm_46_MCQ_039",
+   "key_concept": "• intra-abdominal: Bacteroides fragilis + Enterobacteriaceae\n• bile resistant, anaerobic\n• metronidazole",
+   "option_why": {
+    "A": "✓ Bacteroides spp. anaerobe",
+    "B": "E. coli aerobe/facultative",
+    "C": "N. gonorrhoeae ไม่ใช่",
+    "D": "S. aureus ไม่ใช่",
+    "E": "H. influenzae ไม่ใช่"
+   }
+  },
+  {
+   "id": "IMM-46-MCQ-040",
+   "block": "IMM",
+   "cohort": 46,
+   "n": 40,
+   "type": "MCQ",
+   "stem": "เด็กผู้ชายอายุ5ขวบ ไม่เคยได้รีบวัคซีนมาก่อน มีอาการไข้ vomitting paroxymal cough มี whoop sound > 2 week เด็กชายป่วยด้วยโรคอะไร",
+   "options": {
+    "A": "Pertussis",
+    "B": "Diphtheria",
+    "C": "Pneumonia",
+    "D": "Pharingitis",
+    "E": "Acute epigglottitis"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "เด็กไม่ได้ฉีดวัคซีน ไอ whoop > 2 สัปดาห์ = Pertussis",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      14
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      14
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "imm_46_MCQ_040",
+   "key_concept": "• pertussis: catarrhal → paroxysmal → convalescent\n• DTaP\n• macrolide",
+   "option_why": {
+    "A": "✓ pertussis (whooping cough)",
+    "B": "diphtheria = pseudomembrane",
+    "C": "pneumonia ไม่ใช่",
+    "D": "pharyngitis ไม่ใช่",
+    "E": "epiglottitis ไม่ใช่"
+   }
+  },
+  {
+   "id": "IMM-46-MCQ-041",
+   "block": "IMM",
+   "cohort": 46,
+   "n": 41,
+   "type": "MCQ",
+   "stem": "Which of the following is the causative agent of scarlet fever?",
+   "options": {
+    "A": "Staphylococcus aureus",
+    "B": "Staphylococcus epidermidis",
+    "C": "Streptococcus agalactiae",
+    "D": "Streptococcus pneumoniae",
+    "E": "Streptococcus pyogenes"
+   },
+   "answer": "E",
+   "answer_status": "verified",
+   "explanation": "Scarlet fever = Streptococcus pyogenes (erythrogenic toxin)",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      15
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      15
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "imm_46_MCQ_041",
+   "key_concept": "• scarlet fever: strawberry tongue, sandpaper rash\n• SpeA/SpeC superantigen\n• penicillin",
+   "option_why": {
+    "A": "S. aureus ไม่ใช่",
+    "B": "S. epidermidis ไม่ใช่",
+    "C": "GBS ไม่ใช่",
+    "D": "S. pneumoniae ไม่ใช่",
+    "E": "✓ S. pyogenes: phage-encoded toxin"
+   }
+  },
+  {
+   "id": "IMM-46-MCQ-042",
+   "block": "IMM",
+   "cohort": 46,
+   "n": 42,
+   "type": "MCQ",
+   "stem": "Which of the following is the main virulence factor of Bacillus anthracis?",
+   "options": {
+    "A": "Toxin",
+    "B": "Alpha toxin",
+    "C": "Lecithinase",
+    "D": "Exfoliative toxin",
+    "E": "Protective antigen"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "Anthrax toxin เป็น virulence factor หลักของ B. anthracis",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      15
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      15
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "imm_46_MCQ_042",
+   "key_concept": "• anthrax: tripartite toxin (PA + EF/LF)\n• capsule poly-D-glutamate\n• black eschar",
+   "option_why": {
+    "A": "✓ toxin (EF, PA, LF)",
+    "B": "alpha toxin = C. perfringens",
+    "C": "lecithinase = C. perfringens",
+    "D": "exfoliative = S. aureus",
+    "E": "protective antigen เป็นส่วนของ toxin"
+   }
+  },
+  {
+   "id": "IMM-46-MCQ-043",
+   "block": "IMM",
+   "cohort": 46,
+   "n": 43,
+   "type": "MCQ",
+   "stem": "Toxin ของ Clostridium tetrani",
+   "options": {
+    "A": "Exotoxin in sympathetic",
+    "B": "Exotoxin in parasympathetic",
+    "C": "Endotoxin in sympathetic",
+    "D": "Endotoxin in parasympathetic",
+    "E": "Endotoxin in sympathetic and parasympathetic"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "Tetanus toxin (exotoxin) เข้า sympathetic/CNS inhibitory neuron (ตามเฉลย)",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      15
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      15
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "imm_46_MCQ_043",
+   "key_concept": "• tetanospasmin: SNARE cleavage ที่ inhibitory interneuron\n• Clostridium tetani = exotoxin\n• spastic paralysis",
+   "mechanism": [
+    "C. tetani ในแผล",
+    "ผลิต tetanospasmin",
+    {
+     "s": "retrograde transport ไป CNS",
+     "answer": true
+    },
+    "ตัด synaptobrevin",
+    "spastic paralysis"
+   ],
+   "option_why": {
+    "A": "✓ exotoxin in sympathetic (เฉลย)",
+    "B": "exotoxin in parasympathetic",
+    "C": "endotoxin in sympathetic",
+    "D": "endotoxin in parasympathetic",
+    "E": "endotoxin ทั้งสอง"
+   }
+  },
+  {
+   "id": "IMM-46-MCQ-044",
+   "block": "IMM",
+   "cohort": 46,
+   "n": 44,
+   "type": "MCQ",
+   "stem": "Pneumoniae after icu 7 วัน Gram : Negative bacilli Culture : Blue-Green pigment diffuse",
+   "options": {
+    "A": "Pseudomonas aueruginosa",
+    "B": "Klebsiella pneumoniae",
+    "C": "Acinetobacter spp.",
+    "D": "Morexella catarhalis",
+    "E": "Staphylococcus aureus"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "Pneumonia ใน ICU + blue-green pigment = Pseudomonas aeruginosa",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      16
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      16
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "imm_46_MCQ_044",
+   "key_concept": "• Pseudomonas: oxidase +, pyocyanin, grape odor\n• HAP/VAP\n• antipseudomonal",
+   "option_why": {
+    "A": "✓ Pseudomonas ผลิต pyocyanin",
+    "B": "Klebsiella ไม่มี pigment",
+    "C": "Acinetobacter ไม่มี",
+    "D": "Moraxella ไม่ใช่",
+    "E": "S. aureus GP"
+   }
+  },
+  {
+   "id": "IMM-46-MCQ-045",
+   "block": "IMM",
+   "cohort": 46,
+   "n": 45,
+   "type": "MCQ",
+   "stem": "Pneumoniae Gram stain ไม่ติด Culture ไม่ขึ้น",
+   "options": {
+    "A": "Influeza virus",
+    "B": "Haemophilus influenzae",
+    "C": "Mycobacterium tuberclulosis",
+    "D": "Mycloplasma pneumoniae",
+    "E": "Streptococcus pneumoniae"
+   },
+   "answer": "D",
+   "answer_status": "verified",
+   "explanation": "Pneumonia ย้อมแกรมไม่ติด เพาะไม่ขึ้น = Mycoplasma pneumoniae",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      16
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      16
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "imm_46_MCQ_045",
+   "key_concept": "• Mycoplasma: ไม่มี cell wall, cholesterol, Eaton agar\n• cold agglutinin\n• macrolide/doxy",
+   "option_why": {
+    "A": "influenza ไม่ใช่แบคทีเรีย",
+    "B": "H. influenzae เพาะบน chocolate",
+    "C": "TB เพาะขึ้นช้า",
+    "D": "✓ Mycoplasma ไม่มี cell wall",
+    "E": "S. pneumoniae ย้อมติด"
+   }
+  },
+  {
+   "id": "IMM-46-MCQ-046",
+   "block": "IMM",
+   "cohort": 46,
+   "n": 46,
+   "type": "MCQ",
+   "stem": "ป่วยมาตรวจเชื้ออะไรก็หาไม่เจอ แต่culture ด้วย buffered charcoal yeast agar เจอเชื้อ เชื้อนี้คือเชื้อ อะไร",
+   "options": {
+    "A": "Legionella pneumophelia",
+    "B": "Chlamydia trachomatis",
+    "C": "Pseudomonas aeruginosa",
+    "D": "Mycloplasma pneumoniae",
+    "E": "Streptococcus pneumoniae"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "เพาะบน BCYE agar = Legionella",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      17
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      17
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "imm_46_MCQ_046",
+   "key_concept": "• Legionella: BCYE (cysteine + iron)\n• urine antigen\n• cooling tower",
+   "option_why": {
+    "A": "✓ Legionella BCYE",
+    "B": "Chlamydia เพาะ cell culture",
+    "C": "Pseudomonas เพาะธรรมดา",
+    "D": "Mycoplasma ใช้ Eaton",
+    "E": "S. pneumoniae ใช้ blood agar"
+   }
+  },
+  {
+   "id": "IMM-46-MCQ-047",
+   "block": "IMM",
+   "cohort": 46,
+   "n": 47,
+   "type": "MCQ",
+   "stem": "A group of elderly in nursing home develop pneumonia. Legionella pneumophila is suspected pathogen. ถาม laboratory diagnosis ของเชื้อนี้",
+   "options": {
+    "A": "Blood culture",
+    "B": "urine antigen",
+    "C": "sputum culture",
+    "D": "gram stainsputum",
+    "E": "sputum immunoassay"
+   },
+   "answer": "B",
+   "answer_status": "verified",
+   "explanation": "Legionella วินิจฉัยด้วย urine antigen",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      17
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      17
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "imm_46_MCQ_047",
+   "key_concept": "• Legionella: urine antigen เร็ว\n• DFA/PCR\n• BCYE culture",
+   "option_why": {
+    "A": "blood culture ไวต่ำ",
+    "B": "✓ urine antigen (L. pneumophila sg1)",
+    "C": "sputum culture ต้อง BCYE",
+    "D": "gram stain sputum เห็นยาก",
+    "E": "sputum immunoassay ไม่ใช่"
+   }
+  },
+  {
+   "id": "IMM-46-MCQ-048",
+   "block": "IMM",
+   "cohort": 46,
+   "n": 48,
+   "type": "MCQ",
+   "stem": "ชาย 35 ปี มี dysuria and clear urethral discharge for 4 days ถูก diagnosis ว่าเป็น non- gonococcal urethritis. What is appropriate empirical antibiotics",
+   "options": {
+    "A": "azithromycin",
+    "B": "benzathine penicillin",
+    "C": "ceftriaxone",
+    "D": "ciprofloxacin",
+    "E": "tevofloxacin"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "Non-gonococcal urethritis empiric: azithromycin (ครอบคลุม Chlamydia)",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      17
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      17
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "imm_46_MCQ_048",
+   "key_concept": "• NGU: azithromycin/doxy\n• gonorrhea: ceftriaxone\n• syphilis: benzathine penicillin",
+   "option_why": {
+    "A": "✓ azithromycin",
+    "B": "benzathine penicillin = syphilis",
+    "C": "ceftriaxone = gonorrhea",
+    "D": "ciprofloxacin ไม่ใช่",
+    "E": "tevofloxacin ไม่ใช่"
+   }
+  },
+  {
+   "id": "IMM-46-MCQ-049",
+   "block": "IMM",
+   "cohort": 46,
+   "n": 49,
+   "type": "MCQ",
+   "stem": "ผู้หญิง 18 ปี pus culture พบ N.gonorrhoea ให้ cefriaxone หลังจากนั้น1เดือน มา ER ด้วย lower abdominal pain 3 days diagnosis ว่าเป็น pelvic imflammatory disease มีสาเหตุมาจากเชื้อใด",
+   "options": {
+    "A": "chlamydia trachomatis",
+    "B": "haemophilus ducreyi",
+    "C": "HPV-2",
+    "D": "klebsiella pneumonia",
+    "E": "treponema pallidum"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "PID หลัง gonorrhea ให้ ceftriaxone แล้วยังเป็น = Chlamydia trachomatis",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      18
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      18
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "imm_46_MCQ_049",
+   "key_concept": "• PID: N. gonorrhoeae + C. trachomatis\n• ceftriaxone ไม่ฆ่า Chlamydia\n• ต้องให้ doxycycline",
+   "option_why": {
+    "A": "✓ Chlamydia ร่วมกับ gonorrhea",
+    "B": "H. ducreyi = chancroid",
+    "C": "HPV-2 ไม่ใช่",
+    "D": "Klebsiella ไม่ใช่",
+    "E": "T. pallidum ไม่ใช่"
+   }
+  },
+  {
+   "id": "IMM-46-MCQ-050",
+   "block": "IMM",
+   "cohort": 46,
+   "n": 50,
+   "type": "MCQ",
+   "stem": "นศพ 20 ปี มีประวัติไปล่องแพที่เมืองสตูลเมื่อ 3 อาทิตย์ก่อน 10 วันก่อนมาโรงพยาบาล มีไข้ต่ำ ตาแดง myalgia และ ไข้ลดหวบในวันที่ 5 แต่ 1 วันก่อนมามีไข้สูง(39องศา) มี severe tenderness muscle ถาม diagnosis อะไร",
+   "options": {
+    "A": "Taenia solium",
+    "B": "dengue",
+    "C": "Malaria",
+    "D": "Leptospirosis",
+    "E": "TB"
+   },
+   "answer": "B",
+   "answer_status": "verified",
+   "explanation": "ไข้ biphasic + ปวดกล้ามเนื้อ + ตาแดง; ต้นฉบับ B (dengue) แต่ AI เห็นว่า leptospirosis (D)",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      18
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      18
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "imm_46_MCQ_050",
+   "key_concept": "• lepto: biphasic, ตาแดง, น่องเจ็บ\n• dengue ไม่มีน่องเจ็บเด่น\n• ข้อนี้ต้นฉบับ B / AI คิดว่า D",
+   "option_why": {
+    "A": "Taenia solium ไม่ใช่",
+    "B": "✓ dengue (ตามเฉลยต้นฉบับ)",
+    "C": "malaria ไม่ใช่",
+    "D": "leptospirosis ตรงกับ biphasic + conjunctival + calf tenderness (AI เห็นว่า D)",
+    "E": "TB ไม่ใช่"
+   }
+  },
+  {
+   "id": "IMM-46-MCQ-051",
+   "block": "IMM",
+   "cohort": 46,
+   "n": 51,
+   "type": "MCQ",
+   "stem": "Leptospira spp. ติดต่อสู่คนได้อย่างไร",
+   "options": {
+    "A": "Invasive across non-intact skin",
+    "B": "Ingestion",
+    "C": "Inhalation",
+    "D": "Bite by chigger",
+    "E": "Bite by infected animal"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "Leptospira ติดผ่าน non-intact skin/เยื่อบุ",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      18
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      18
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "imm_46_MCQ_051",
+   "key_concept": "• Leptospira: น้ำปนปัสสาวะสัตว์ → skin cut/เยื่อบุ\n• conjunctival suffusion\n• doxy/penicillin",
+   "option_why": {
+    "A": "✓ invade ผ่านผิวหนังที่มีแผล",
+    "B": "กินไม่ใช่หลัก",
+    "C": "สูดไม่ใช่",
+    "D": "chigger = scrub typhus",
+    "E": "สัตว์กัดไม่ใช่"
+   }
+  },
+  {
+   "id": "IMM-46-MCQ-052",
+   "block": "IMM",
+   "cohort": 46,
+   "n": 52,
+   "type": "MCQ",
+   "stem": "50 year-old female have high grad fever and myalgia และมีแผลคล้ายบุหรี่จี้บริเวณ groin ผู้ป่วย ป่วยด้วยโรคอะไร",
+   "options": {
+    "A": "Scrub typhus",
+    "B": "Dengue virus infection",
+    "C": "Malaria",
+    "D": "Leptospirosis",
+    "E": "Legionaire’s disease"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "แผลคล้ายบุหรี่จี้ที่ groin + ไข้ = Scrub typhus (eschar)",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      19
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      19
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "imm_46_MCQ_052",
+   "key_concept": "• scrub typhus: Orientia, chigger, eschar\n• doxycycline\n• Weil-Felix OX-K",
+   "option_why": {
+    "A": "✓ scrub typhus: eschar",
+    "B": "dengue ไม่มี eschar",
+    "C": "malaria ไม่มี",
+    "D": "lepto ไม่มี eschar",
+    "E": "Legionella ไม่มี"
+   },
+   "image": "img/IMM-46-MCQ-052.jpg",
+   "image_caption": "แผล eschar บริเวณ groin"
+  },
+  {
+   "id": "IMM-46-MCQ-053",
+   "block": "IMM",
+   "cohort": 46,
+   "n": 53,
+   "type": "MCQ",
+   "stem": "Vector ของโรค murine typhus คือ",
+   "options": {
+    "A": "Flea",
+    "B": "Chigger",
+    "C": "Lice",
+    "D": "Mite",
+    "E": "Dog"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "Murine typhus มี vector = หมัด (flea)",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      19
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      19
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "imm_46_MCQ_053",
+   "key_concept": "• murine typhus: R. typhi, หมัดหนู\n• epidemic typhus: เหา\n• scrub typhus: chigger",
+   "option_why": {
+    "A": "✓ flea (Xenopsylla)",
+    "B": "chigger = scrub typhus",
+    "C": "lice = epidemic typhus",
+    "D": "mite = rickettsialpox/scrub",
+    "E": "dog ไม่ใช่"
+   }
+  },
+  {
+   "id": "IMM-46-MCQ-054",
+   "block": "IMM",
+   "cohort": 46,
+   "n": 54,
+   "type": "MCQ",
+   "stem": "45 year-old woman is diagnosis as urinary tract infection. The ultrasound found multiple stones in both of the kidneys. The stone analysis shows struvite and carbonate appetite component. Which pathogen most likely cause of the stone?",
+   "options": {
+    "A": "Proteus mirabilis",
+    "B": "Klebsiella pneumoniae",
+    "C": "Staphylococcus saprophyticus",
+    "D": "Enterobacter cloacae",
+    "E": "Escherichia coli"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "UTI + นิ่วหลายก้อน = Proteus mirabilis (urease)",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      19
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      19
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "imm_46_MCQ_054",
+   "key_concept": "• struvite stone: Proteus (urease)\n• alkaline urine\n• staghorn",
+   "option_why": {
+    "A": "✓ Proteus: urease → struvite",
+    "B": "Klebsiella ไม่ใช่หลัก",
+    "C": "S. saprophyticus ไม่ใช่",
+    "D": "Enterobacter ไม่ใช่",
+    "E": "E. coli ไม่ใช่ struvite"
+   }
+  },
+  {
+   "id": "IMM-46-MCQ-055",
+   "block": "IMM",
+   "cohort": 46,
+   "n": 55,
+   "type": "MCQ",
+   "stem": "What is the virulence factor of Vibrio chlorae which cause massive watery diarrhea",
+   "options": {
+    "A": "Pilli",
+    "B": "Capsule",
+    "C": "Lipopolysaccharide",
+    "D": "Flagella",
+    "E": "Toxin"
+   },
+   "answer": "E",
+   "answer_status": "verified",
+   "explanation": "Vibrio cholerae ก่อ watery diarrhea ด้วย cholera toxin",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      20
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      20
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "imm_46_MCQ_055",
+   "key_concept": "• cholera toxin: Gs ↑ cAMP\n• rice-water stool\n• ORS",
+   "option_why": {
+    "A": "pili ไม่ใช่",
+    "B": "capsule ไม่ใช่",
+    "C": "LPS ไม่ใช่",
+    "D": "flagella ไม่ใช่",
+    "E": "✓ toxin ↑ cAMP"
+   }
+  },
+  {
+   "id": "IMM-46-MCQ-056",
+   "block": "IMM",
+   "cohort": 46,
+   "n": 56,
+   "type": "MCQ",
+   "stem": "Which of the following can cause eye infection?",
+   "options": {
+    "A": "HSV",
+    "B": "VZV",
+    "C": "Rotavirus",
+    "D": "Rhinovirus",
+    "E": "Smallpox"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "HSV ก่อ keratitis/eye infection",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      20
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      20
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "imm_46_MCQ_056",
+   "key_concept": "• HSV keratitis: dendritic ulcer\n• HZO\n• ไม่ใช้ steroid ใน HSV epithelial",
+   "option_why": {
+    "A": "✓ HSV: dendritic keratitis",
+    "B": "VZV: herpes zoster ophthalmicus (ตาก็ได้)",
+    "C": "rotavirus ไม่ใช่",
+    "D": "rhinovirus ไม่ใช่",
+    "E": "smallpox ไม่ใช่"
+   }
+  },
+  {
+   "id": "IMM-46-MCQ-057",
+   "block": "IMM",
+   "cohort": 46,
+   "n": 57,
+   "type": "MCQ",
+   "stem": "Which virus can treat with reverse transcriptase inhibitor",
+   "options": {
+    "A": "Human Immunodeficiency virus",
+    "B": "Influenza virus",
+    "C": "Rotavirus",
+    "D": "Rhinovirus",
+    "E": "Smallpox"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "HIV รักษาด้วย reverse transcriptase inhibitor",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      20
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      20
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "imm_46_MCQ_057",
+   "key_concept": "• RT inhibitor: NRTI/NNRTI\n• HBV ก็ใช้ tenofovir\n• retrovirus",
+   "option_why": {
+    "A": "✓ HIV (retrovirus)",
+    "B": "influenza ไม่ใช่",
+    "C": "rotavirus ไม่ใช่",
+    "D": "rhinovirus ไม่ใช่",
+    "E": "smallpox ไม่ใช่"
+   }
+  },
+  {
+   "id": "IMM-46-MCQ-058",
+   "block": "IMM",
+   "cohort": 46,
+   "n": 58,
+   "type": "MCQ",
+   "stem": "Which of the following is the most important component of virus in entry to susceptible host",
+   "options": {
+    "A": "Endosome",
+    "B": "Cell membrane",
+    "C": "Neuraminidase",
+    "D": "Capsid",
+    "E": "Envelope"
+   },
+   "answer": "E",
+   "answer_status": "verified",
+   "explanation": "Envelope สำคัญต่อ viral entry (glycoprotein)",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      21
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      21
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "imm_46_MCQ_058",
+   "key_concept": "• enveloped virus: glycoprotein\n• naked virus: capsid protein\n• entry: attachment → fusion/endocytosis",
+   "option_why": {
+    "A": "endosome ของ host",
+    "B": "cell membrane ของ host",
+    "C": "neuraminidase ช่วยปล่อย",
+    "D": "capsid ปกป้อง genome",
+    "E": "✓ envelope glycoprotein จับ receptor"
+   }
+  },
+  {
+   "id": "IMM-46-MCQ-059",
+   "block": "IMM",
+   "cohort": 46,
+   "n": 59,
+   "type": "MCQ",
+   "stem": "Which of the following is infectious protein which can cause disease in animals and humans",
+   "options": {
+    "A": "Prion",
+    "B": "Viroid",
+    "C": "Pseudovirion",
+    "D": "DI Particle",
+    "E": "Pseudomonas"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "Prion เป็นโปรตีนติดเชื้อ",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      21
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      21
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "imm_46_MCQ_059",
+   "key_concept": "• prion: CJD, kuru, scrapie\n• ไม่มี nucleic acid\n• ทนความร้อน/formalin",
+   "option_why": {
+    "A": "✓ prion (PrP^Sc)",
+    "B": "viroid = RNA พืช",
+    "C": "pseudovirion ไม่ใช่",
+    "D": "DI particle ไม่ใช่",
+    "E": "Pseudomonas = แบคทีเรีย"
+   }
+  },
+  {
+   "id": "IMM-46-MCQ-060",
+   "block": "IMM",
+   "cohort": 46,
+   "n": 60,
+   "type": "MCQ",
+   "stem": "HSV1 ใน latent period อยู่ที่ใด",
+   "options": {
+    "A": "Lymph node",
+    "B": "Lymphocyte",
+    "C": "Pseudoganglion",
+    "D": "Sacral ganglion",
+    "E": "Trigeminal ganglion"
+   },
+   "answer": "E",
+   "answer_status": "verified",
+   "explanation": "HSV-1 latent ที่ trigeminal ganglion",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      21
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      21
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "imm_46_MCQ_060",
+   "key_concept": "• HSV-1: trigeminal · HSV-2: sacral\n• VZV: DRG/trigeminal\n• reactivation: เครียด UV",
+   "option_why": {
+    "A": "lymph node ไม่ใช่",
+    "B": "lymphocyte ไม่ใช่",
+    "C": "pseudoganglion ไม่ใช่",
+    "D": "sacral = HSV-2",
+    "E": "✓ trigeminal ganglion"
+   }
+  },
+  {
+   "id": "IMM-46-MCQ-061",
+   "block": "IMM",
+   "cohort": 46,
+   "n": 61,
+   "type": "MCQ",
+   "stem": "เชื้อไวรัสใดสามารถก่อให้เกิดอาการดังรูปได้",
+   "options": {
+    "A": "Herpes simplex virus",
+    "B": "Varicella zoster",
+    "C": "EBV",
+    "D": "Enterovirus71",
+    "E": "Chicken pox"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "Herpes simplex ก่อรอยโรคตามรูป (vesicle)",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      22
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      22
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "imm_46_MCQ_061",
+   "key_concept": "• HSV: grouped vesicles\n• Tzanck: multinucleated giant cell\n• acyclovir",
+   "option_why": {
+    "A": "✓ HSV",
+    "B": "VZV ก็ vesicle แต่ตามเฉลย HSV",
+    "C": "EBV ไม่ใช่",
+    "D": "EV71 = HFMD",
+    "E": "chickenpox = VZV"
+   },
+   "image": "img/IMM-46-MCQ-061.jpg",
+   "image_caption": "รอยโรคผิวหนัง/เยื่อบุ"
+  },
+  {
+   "id": "IMM-46-MCQ-062",
+   "block": "IMM",
+   "cohort": 46,
+   "n": 62,
+   "type": "MCQ",
+   "stem": "เด็กชายคนนึงมี่ตุ่มบริเวณตามปาก และ conjunctivitis มักมีผู้ใหญ่เอ็นดูในการจูบ และหอม เชื้อไวรัสใดเป็น สาเหตุของโรค",
+   "options": {
+    "A": "Herpes simplex virus",
+    "B": "Varicella zoster",
+    "C": "EBV",
+    "D": "CMV",
+    "E": "HPV"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "ตุ่มรอบปาก + conjunctivitis จากการจูบ = HSV",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      22
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      22
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "imm_46_MCQ_062",
+   "key_concept": "• HSV-1: gingivostomatitis, herpes labialis\n• ติดผ่านน้ำลาย\n• acyclovir",
+   "option_why": {
+    "A": "✓ HSV",
+    "B": "VZV ไม่ใช่",
+    "C": "EBV = kissing disease (mono) แต่ไม่ vesicle",
+    "D": "CMV ไม่ใช่",
+    "E": "HPV ไม่ใช่"
+   }
+  },
+  {
+   "id": "IMM-46-MCQ-063",
+   "block": "IMM",
+   "cohort": 46,
+   "n": 63,
+   "type": "MCQ",
+   "stem": "มี mononucleosis-like symptoms,pneumonia ตรวจเจอ Owl's eye inclusion ตรวจ anti ebv antigen ไม่พบ โรคนี้น่าจะเกิดจากเชื้อไวรัสใด",
+   "options": {
+    "A": "Herpes simplex virus 1",
+    "B": "Varicella zoster",
+    "C": "Herpes simplex virus 2",
+    "D": "EBV",
+    "E": "CMV"
+   },
+   "answer": "E",
+   "answer_status": "verified",
+   "explanation": "Owl's eye inclusion + mono-like + EBV ลบ = CMV",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      22
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      22
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "imm_46_MCQ_063",
+   "key_concept": "• CMV: owl's eye inclusion, mononucleosis-like heterophile-negative\n• ganciclovir\n• congenital/immunocompromised",
+   "option_why": {
+    "A": "HSV-1 ไม่ใช่",
+    "B": "VZV ไม่ใช่",
+    "C": "HSV-2 ไม่ใช่",
+    "D": "EBV ลบ",
+    "E": "✓ CMV: owl's eye"
+   }
+  },
+  {
+   "id": "IMM-46-MCQ-064",
+   "block": "IMM",
+   "cohort": 46,
+   "n": 64,
+   "type": "MCQ",
+   "stem": "นอกจากการถ่ายทอดโดยแม่สู่ลูกแล้ว zika virus มีการถ่ายทอดโดยวิธีใดได้อีกบ้าง",
+   "options": {
+    "A": "Blood transfusion",
+    "B": "Droplet",
+    "C": "RT",
+    "D": "Airbone",
+    "E": "Kissing"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "Zika แพร่จากแม่สู่ลูก และทางเลือด/เพศสัมพันธ์",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      23
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      23
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "imm_46_MCQ_064",
+   "key_concept": "• Zika: Aedes, vertical, sexual, blood\n• microcephaly\n• GBS",
+   "option_why": {
+    "A": "✓ blood transfusion",
+    "B": "droplet ไม่ใช่",
+    "C": "RT ไม่ใช่",
+    "D": "airborne ไม่ใช่",
+    "E": "kissing ไม่ใช่"
+   }
+  },
+  {
+   "id": "IMM-46-MCQ-065",
+   "block": "IMM",
+   "cohort": 46,
+   "n": 65,
+   "type": "MCQ",
+   "stem": "คนไข้HIV มีCD4+ count < 100cell ควรใช้ยาอะไรในการprophylaxis",
+   "options": {
+    "A": "Co-trimoxazole",
+    "B": "Co-trimoxazole+fluconazole",
+    "C": "Co-trimoxazole+fluconazole+azithromycin",
+    "D": "azithromycin",
+    "E": "penicillin G"
+   },
+   "answer": "B",
+   "answer_status": "verified",
+   "explanation": "HIV CD4 < 100: prophylaxis ด้วย TMP-SMX + fluconazole (ตามเฉลย)",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      23
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      23
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "imm_46_MCQ_065",
+   "key_concept": "• CD4 < 200: PJP (TMP-SMX)\n• < 100: Toxo (TMP-SMX) + Cryptococcus\n• < 50: MAC (azithro)",
+   "option_why": {
+    "A": "co-trimoxazole อย่างเดียว",
+    "B": "✓ co-trimoxazole + fluconazole",
+    "C": "+ azithromycin",
+    "D": "azithromycin อย่างเดียว",
+    "E": "penicillin G ไม่ใช่"
+   }
+  },
+  {
+   "id": "IMM-46-MCQ-066",
+   "block": "IMM",
+   "cohort": 46,
+   "n": 66,
+   "type": "MCQ",
+   "stem": "Which immunity commonly found in parasite infection that protect against high number of parasite but not eliminate infection",
+   "options": {
+    "A": "Natural",
+    "B": "Residual",
+    "C": "Protective",
+    "D": "Concomitant",
+    "E": "Latent"
+   },
+   "answer": "D",
+   "answer_status": "verified",
+   "explanation": "Concomitant immunity: ภูมิป้องกันการติดเชื้อซ้ำโดยไม่กำจัดปรสิตเดิม",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      23
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      23
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "imm_46_MCQ_066",
+   "key_concept": "• concomitant: ปรสิตเดิมอยู่ แต่ต้านการติดซ้ำ\n• sterile immunity = กำจัดเชื้อ\n• premunition (malaria)",
+   "option_why": {
+    "A": "natural ไม่ใช่",
+    "B": "residual ไม่ใช่",
+    "C": "protective กว้างไป",
+    "D": "✓ concomitant immunity (schisto/malaria)",
+    "E": "latent ไม่ใช่"
+   }
+  },
+  {
+   "id": "IMM-46-MCQ-067",
+   "block": "IMM",
+   "cohort": 46,
+   "n": 67,
+   "type": "MCQ",
+   "stem": "45 year-old man,found 5 solid lumps 1-2cm beneath skin สรุปว่าเป็น Cysticcercosis How does he infected?",
+   "options": {
+    "A": "Ingest Taenia solium egg",
+    "B": "Ingest Taenia saginata egg",
+    "C": "eat raw meat with Cysticercus bovis",
+    "D": "eat raw meat with Cysticercus cellulosae",
+    "E": "eat raw meat with Trichinella lavae"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "Cysticercosis จากกินไข่ T. solium",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      24
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      24
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "imm_46_MCQ_067",
+   "key_concept": "• cysticercosis: ไข่ T. solium (fecal-oral)\n• taeniasis: กินเนื้อดิบ\n• neurocysticercosis",
+   "option_why": {
+    "A": "✓ ingest T. solium egg",
+    "B": "T. saginata egg ไม่ก่อ",
+    "C": "กินเนื้อมี cysticercus = taeniasis",
+    "D": "กินเนื้อ cysticercus bovis",
+    "E": "Trichinella ไม่ใช่"
+   }
+  },
+  {
+   "id": "IMM-46-MCQ-068",
+   "block": "IMM",
+   "cohort": 46,
+   "n": 68,
+   "type": "MCQ",
+   "stem": "ผู้ชาย 3 คน มาด้วยอาการ fever , headache, general weakness , eosinophilia , ซักประวัติแล้วพบว่า ทาน raw pork ที่ party มาเมื่อ 2 สัปดาห์ที่แล้ว What is causative agent?",
+   "options": {
+    "A": "Trichinella spiralis",
+    "B": "Wuchereria Bacrofti",
+    "C": "Taenia saginata",
+    "D": "Staphylococcus aureus",
+    "E": "Histoplasma capsulatum"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "Fever, eosinophilia + กินหมูดิบ = Trichinella spiralis",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      24
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      24
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "imm_46_MCQ_068",
+   "key_concept": "• trichinosis: periorbital edema, myalgia, eosinophilia\n• หมูดิบ\n• albendazole",
+   "option_why": {
+    "A": "✓ Trichinella",
+    "B": "W. bancrofti ไม่ใช่",
+    "C": "T. saginata ไม่ใช่",
+    "D": "S. aureus ไม่ใช่",
+    "E": "Histoplasma ไม่ใช่"
+   }
+  },
+  {
+   "id": "IMM-46-MCQ-069",
+   "block": "IMM",
+   "cohort": 46,
+   "n": 69,
+   "type": "MCQ",
+   "stem": "ผู้หญิงชอบใช้ผ้าเช็ดตัวร่วมกับคนอื่นในครอบครัว มีสิทธิ์ติดเชื้ออะไรมากที่สุด",
+   "options": {
+    "A": "Trichinella spiralis",
+    "B": "Wuchereria Bacrofti",
+    "C": "Taenia saginata",
+    "D": "Trichomonas vaginalis",
+    "E": "Opisthorchis viverrini"
+   },
+   "answer": "D",
+   "answer_status": "verified",
+   "explanation": "ใช้ผ้าเช็ดตัวร่วม → Trichomonas vaginalis",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      24
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      24
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "imm_46_MCQ_069",
+   "key_concept": "• Trichomonas: sexual + fomite\n• metronidazole\n• strawberry cervix",
+   "option_why": {
+    "A": "Trichinella ไม่ใช่",
+    "B": "filaria ไม่ใช่",
+    "C": "Taenia ไม่ใช่",
+    "D": "✓ Trichomonas ติดผ่าน fomites",
+    "E": "Opisthorchis ไม่ใช่"
+   }
+  },
+  {
+   "id": "IMM-46-MCQ-070",
+   "block": "IMM",
+   "cohort": 46,
+   "n": 70,
+   "type": "MCQ",
+   "stem": "ชายอายุ 52 ปี เป็นคนหาดใหญ่ เป็นมาลาเรีย 3 สัปดาห์ หลังจากเดินทางกลับจากนราธิวาส ได้รับการรักษา จนและ Blood smear clear รักษาหายแล้ว 2 ปีต่อมา กลับมาเป็นอีก ผู้ป่วยติดเชื้ออะไร",
+   "options": {
+    "A": "P. vivax",
+    "B": "P. ovale",
+    "C": "P. falciparum",
+    "D": "P. malariae",
+    "E": "Not malaria,is dengue"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "Relapse ของ malaria จาก hypnozoite: P. vivax/ovale (ตามเฉลย P. vivax)",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      25
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      25
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "imm_46_MCQ_070",
+   "key_concept": "• hypnozoite: vivax + ovale\n• รักษา primaquine 14 วัน\n• recrudescence ต่างจาก relapse",
+   "option_why": {
+    "A": "✓ P. vivax: hypnozoite → relapse",
+    "B": "P. ovale ก็ relapse",
+    "C": "P. falciparum ไม่ relapse",
+    "D": "P. malariae ไม่ใช่",
+    "E": "ไม่ใช่ malaria"
+   }
+  },
+  {
+   "id": "IMM-46-MCQ-072",
+   "block": "IMM",
+   "cohort": 46,
+   "n": 72,
+   "type": "MCQ",
+   "stem": "ให้อาการมา blood per nose , mildly pale ตับโต ม้ามโต ตรวจน้ำไขสันหลังพบดังรูป ผู้ป่วยติดเชื้ออะไร",
+   "options": {
+    "A": "Leishmania donovani",
+    "B": "Wuchereria Bacrofti",
+    "C": "Taenia saginata",
+    "D": "Trichomonas vaginalis",
+    "E": "Opisthorchis viverrini"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "Smear เห็น amastigote ใน macrophage = Leishmania donovani",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      25
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      25
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "imm_46_MCQ_072",
+   "key_concept": "• visceral leishmaniasis: amastigote\n• kala-azar: ไข้ ม้ามโต pancytopenia\n• sandfly",
+   "option_why": {
+    "A": "✓ L. donovani",
+    "B": "W. bancrofti ไม่ใช่",
+    "C": "T. saginata ไม่ใช่",
+    "D": "Trichomonas ไม่ใช่",
+    "E": "Opisthorchis ไม่ใช่"
+   },
+   "image": "img/IMM-46-MCQ-072.jpg",
+   "image_caption": "Smear: amastigote ใน macrophage"
+  },
+  {
+   "id": "IMM-46-MCQ-074",
+   "block": "IMM",
+   "cohort": 46,
+   "n": 74,
+   "type": "MCQ",
+   "stem": "ให้อาการ meningitidis มี stiff neck มีค่า eosinophil 30-50 % เกิดจากสาเหตุใดได้บ้าง",
+   "options": {
+    "A": "กินปูดิบ",
+    "B": "กินปลาดิบ",
+    "C": "กินหอยทากดิบ",
+    "D": "เดินเท้าเปล่า",
+    "E": "โดนหมากัด"
+   },
+   "answer": "C",
+   "answer_status": "verified",
+   "explanation": "Eosinophilic meningitis จากกินหอยทากดิบ (Angiostrongylus cantonensis)",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      26
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      26
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "imm_46_MCQ_074",
+   "key_concept": "• eosinophilic meningitis: Angiostrongylus\n• หอยทาก/หอยโข่ง\n• steroids",
+   "option_why": {
+    "A": "กินปูดิบ = Paragonimus",
+    "B": "กินปลาดิบ = Gnathostoma/Opisthorchis",
+    "C": "✓ กินหอยทากดิบ = A. cantonensis",
+    "D": "เดินเท้าเปล่า = hookworm/Strongyloides",
+    "E": "โดนหมากัด = rabies"
+   }
+  },
+  {
+   "id": "IMM-46-MCQ-075",
+   "block": "IMM",
+   "cohort": 46,
+   "n": 75,
+   "type": "MCQ",
+   "stem": "Adverse drug reaction ของ nephrotoxicity ตรงกับยาตัวใด",
+   "options": {
+    "A": "Imipinem",
+    "B": "Amikacin",
+    "C": "Cephalosporin",
+    "D": "Clindamycin",
+    "E": "Tetracyclin"
+   },
+   "answer": "B",
+   "answer_status": "verified",
+   "explanation": "Amikacin nephrotoxicity (aminoglycoside)",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      26
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      26
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "imm_46_MCQ_075",
+   "key_concept": "• aminoglycoside: oto/nephro\n• clindamycin: pseudomembranous\n• tetracycline: teeth",
+   "option_why": {
+    "A": "imipenem: rash, seizure",
+    "B": "✓ amikacin: oto/nephro-toxicity",
+    "C": "cephalosporin ไม่ nephrotoxic เด่น",
+    "D": "clindamycin: C. diff colitis",
+    "E": "tetracycline: ฟัน, hepatotoxic"
+   }
+  },
+  {
+   "id": "IMM-46-MCQ-076",
+   "block": "IMM",
+   "cohort": 46,
+   "n": 76,
+   "type": "MCQ",
+   "stem": "Adverse drug reaction ของ pseudomembranous colitis",
+   "options": {
+    "A": "Clindamycin",
+    "B": "Amikacin",
+    "C": "Cephalosporin",
+    "D": "Clindamycin",
+    "E": "Tetracyclin"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "Clindamycin เป็นสาเหตุ pseudomembranous colitis บ่อยสุด",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      26
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      26
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "imm_46_MCQ_076",
+   "key_concept": "• C. difficile: clindamycin, cephalosporin, FQ\n• metronidazole/vancomycin/fidaxomicin\n• toxin A/B",
+   "option_why": {
+    "A": "✓ clindamycin",
+    "B": "amikacin ไม่ใช่",
+    "C": "cephalosporin ก็ได้แต่น้อยกว่า",
+    "D": "clindamycin (ซ้ำตัวเลือก)",
+    "E": "tetracycline ไม่ใช่"
+   }
+  },
+  {
+   "id": "IMM-46-MCQ-079",
+   "block": "IMM",
+   "cohort": 46,
+   "n": 79,
+   "type": "MCQ",
+   "stem": "What is the PK/PD parameter to quantify the activity of Beta-lactams antibiotic",
+   "options": {
+    "A": "area under the curve",
+    "B": "post-antibiotic effect",
+    "C": "Time dependent killing",
+    "D": "Concentration dependent killing",
+    "E": "Concentration dependent killing and post-antibiotic"
+   },
+   "answer": "C",
+   "answer_status": "verified",
+   "explanation": "β-lactam PK/PD = time-dependent killing",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      27
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      27
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "imm_46_MCQ_079",
+   "key_concept": "• β-lactam: T>MIC\n• aminoglycoside/FQ: Cmax/MIC\n• azithro/vancomycin: AUC/MIC",
+   "option_why": {
+    "A": "AUC ไม่ใช่",
+    "B": "PAE ไม่ใช่",
+    "C": "✓ time-dependent (T>MIC)",
+    "D": "concentration-dependent = aminoglycoside/FQ",
+    "E": "conc-dependent + PAE = aminoglycoside"
+   }
+  },
+  {
+   "id": "IMM-46-MCQ-080",
+   "block": "IMM",
+   "cohort": 46,
+   "n": 80,
+   "type": "MCQ",
+   "stem": "What is the mechanism of action of fluoroquinolone",
+   "options": {
+    "A": "Inhibit 30 s ribosome",
+    "B": "Inhibit 50 s ribosome",
+    "C": "Inhibit cell wall synthesis",
+    "D": "Inhibit folate synthesis",
+    "E": "Inhibit DNA Gyrase"
+   },
+   "answer": "E",
+   "answer_status": "verified",
+   "explanation": "Fluoroquinolone ยับยั้ง DNA gyrase",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      27
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      27
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "imm_46_MCQ_080",
+   "key_concept": "• FQ: gyrase/topo IV\n• ผลข้างเคียง: tendon\n• ห้ามเด็ก/ตั้งครรภ์",
+   "option_why": {
+    "A": "30S ไม่ใช่",
+    "B": "50S ไม่ใช่",
+    "C": "cell wall ไม่ใช่",
+    "D": "folate ไม่ใช่",
+    "E": "✓ DNA gyrase + topo IV"
+   }
+  },
+  {
+   "id": "IMM-46-MCQ-081",
+   "block": "IMM",
+   "cohort": 46,
+   "n": 81,
+   "type": "MCQ",
+   "stem": "what is mechanism in peniciln resistance of H.influenzae",
+   "options": {
+    "A": "Decrease uptake",
+    "B": "Efflux drug",
+    "C": "Target Amplification",
+    "D": "Enzymtic inactivation",
+    "E": "Sequestration Of antibiotic"
+   },
+   "answer": "D",
+   "answer_status": "verified",
+   "explanation": "H. influenzae ดื้อ penicillin จาก β-lactamase (enzymatic inactivation)",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      27
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      27
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "imm_46_MCQ_081",
+   "key_concept": "• H. influenzae: β-lactamase\n• S. pneumoniae: PBP alteration\n• amox-clav",
+   "option_why": {
+    "A": "decrease uptake",
+    "B": "efflux",
+    "C": "target amplification",
+    "D": "✓ enzymatic inactivation (β-lactamase)",
+    "E": "sequestration"
+   }
+  },
+  {
+   "id": "IMM-46-MCQ-082",
+   "block": "IMM",
+   "cohort": 46,
+   "n": 82,
+   "type": "MCQ",
+   "stem": "ป้าอายุ 33ปี มี Hiv positive ติดเชื้อ Candida ควรใช้ยาอะไรจึงเหมาะสมที่สุด (1st line drug)",
+   "options": {
+    "A": "Amoxycillin",
+    "B": "Acyclovir",
+    "C": "Fluconazole",
+    "D": "Gangciclovir",
+    "E": "Griseofulvin"
+   },
+   "answer": "C",
+   "answer_status": "verified",
+   "explanation": "HIV + candidiasis: fluconazole 1st line",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      28
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      28
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "imm_46_MCQ_082",
+   "key_concept": "• candidiasis: fluconazole\n• systemic: echinocandin/ampho B\n• azole: CYP51",
+   "option_why": {
+    "A": "amoxicillin ไม่ใช่",
+    "B": "acyclovir ไม่ใช่",
+    "C": "✓ fluconazole",
+    "D": "ganciclovir ไม่ใช่",
+    "E": "griseofulvin ไม่ใช่"
+   }
+  },
+  {
+   "id": "IMM-46-MCQ-083",
+   "block": "IMM",
+   "cohort": 46,
+   "n": 83,
+   "type": "MCQ",
+   "stem": "What is the mechanism of Amphotericin B",
+   "options": {
+    "A": "Impairment of permeability of fungal cell membrane",
+    "B": "Inhibit Fungal mitosis",
+    "C": "inhibit Reverse transcriptase enzyme",
+    "D": "inhibit fungal cyp450 enzyme",
+    "E": "inhibit cell wall synthesis"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "Amphotericin B จับ ergosterol เกิดรู (permeability)",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      28
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      28
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "imm_46_MCQ_083",
+   "key_concept": "• polyene: pore\n• nephrotoxicity\n• azole: CYP51",
+   "option_why": {
+    "A": "✓ impairment of membrane permeability",
+    "B": "inhibit mitosis = griseofulvin",
+    "C": "RT inhibitor ไม่ใช่",
+    "D": "CYP450 = azole",
+    "E": "cell wall = echinocandin"
+   }
+  },
+  {
+   "id": "IMM-46-MCQ-084",
+   "block": "IMM",
+   "cohort": 46,
+   "n": 84,
+   "type": "MCQ",
+   "stem": "คนไข้อายุ 42 ปี เป็น HIV กับ Aspergillosis รักษาด้วย Antifungal หลังจากนั้นมีอาการมองเห็นไม่ชัด เป็น ADR ของ antifungal ใด",
+   "options": {
+    "A": "Itraconazole",
+    "B": "Voriconazole",
+    "C": "Amphotericin B",
+    "D": "Ketoconazole",
+    "E": "Griseofulvin"
+   },
+   "answer": "B",
+   "answer_status": "verified",
+   "explanation": "HIV + Aspergillosis ตามัว (visual disturbance) = voriconazole",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      28
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      28
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "imm_46_MCQ_084",
+   "key_concept": "• voriconazole: visual, hepatotoxic\n• IA drug of choice: voriconazole\n• ampho B: kidney",
+   "option_why": {
+    "A": "itraconazole ไม่ใช่",
+    "B": "✓ voriconazole: visual disturbance",
+    "C": "amphotericin B = nephrotoxic",
+    "D": "ketoconazole ไม่ใช่",
+    "E": "griseofulvin ไม่ใช่"
+   }
+  },
+  {
+   "id": "IMM-46-MCQ-085",
+   "block": "IMM",
+   "cohort": 46,
+   "n": 85,
+   "type": "MCQ",
+   "stem": "ชายติดเชื้อ HIV มี CD4+ = 200 ใช้ยา antiviral หลังจากนั้นเกิดอาการ anemia ยาใดที่ทำให้เกิด ADV นี้",
+   "options": {
+    "A": "Foscarnet",
+    "B": "Acyclovir",
+    "C": "Nevirapine",
+    "D": "Bictegravir",
+    "E": "Zidovudine"
+   },
+   "answer": "E",
+   "answer_status": "verified",
+   "explanation": "AZT (zidovudine) ทำให้ anemia/bone marrow suppression",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      29
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      29
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "imm_46_MCQ_085",
+   "key_concept": "• AZT: anemia, neutropenia\n• tenofovir: kidney\n• abacavir: HLA-B*5701",
+   "option_why": {
+    "A": "foscarnet: nephrotoxicity",
+    "B": "acyclovir: nephro/CNS",
+    "C": "nevirapine: rash",
+    "D": "bictegravir ไม่ใช่",
+    "E": "✓ zidovudine: bone marrow suppression"
+   }
+  },
+  {
+   "id": "IMM-46-MCQ-087",
+   "block": "IMM",
+   "cohort": 46,
+   "n": 87,
+   "type": "MCQ",
+   "stem": "ยา Effavirenz กลไกการทำงานของยาคืออะไร",
+   "options": {
+    "A": "PI",
+    "B": "FI",
+    "C": "CCRI",
+    "D": "NRTI",
+    "E": "NNRTI"
+   },
+   "answer": "E",
+   "answer_status": "verified",
+   "explanation": "Efavirenz = NNRTI",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      29
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      29
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "imm_46_MCQ_087",
+   "key_concept": "• NNRTI: efavirenz, nevirapine\n• NRTI: zidovudine, tenofovir\n• INSTI: -tegravir",
+   "option_why": {
+    "A": "PI",
+    "B": "FI",
+    "C": "CCRI",
+    "D": "NRTI",
+    "E": "✓ NNRTI"
+   }
+  },
+  {
+   "id": "IMM-46-MCQ-088",
+   "block": "IMM",
+   "cohort": 46,
+   "n": 88,
+   "type": "MCQ",
+   "stem": "ยารักษา Malaria คือ primaquine ใช้รักษา ในขณะที่ อยู่ระยะใด",
+   "options": {
+    "A": "Growing tropozoite",
+    "B": "Schizont",
+    "C": "Gametocyte",
+    "D": "Ring form",
+    "E": "Primary Schizont"
+   },
+   "answer": "C",
+   "answer_status": "verified",
+   "explanation": "Primaquine ฆ่า gametocyte (และ hypnozoite)",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      29
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      29
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "imm_46_MCQ_088",
+   "key_concept": "• primaquine: hypnozoite + gametocytocide\n• ต้องตรวจ G6PD\n• chloroquine: blood stage",
+   "option_why": {
+    "A": "growing trophozoite",
+    "B": "schizont",
+    "C": "✓ gametocyte",
+    "D": "ring",
+    "E": "primary schizont"
+   }
+  },
+  {
+   "id": "IMM-46-MCQ-089",
+   "block": "IMM",
+   "cohort": 46,
+   "n": 89,
+   "type": "MCQ",
+   "stem": "ทำไมการตรวจ CMIA fourth generation ลด window period ได้เพราะการตรวจอะไร",
+   "options": {
+    "A": "Anti-HIV A",
+    "B": "Anti-HIV B",
+    "C": "p24 antigen"
+   },
+   "answer": "C",
+   "answer_status": "verified",
+   "explanation": "4th gen immunoassay ตรวจ p24 antigen ร่วมกับ antibody ลด window period",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      30
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      30
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "imm_46_MCQ_089",
+   "key_concept": "• 4th gen = antibody + p24\n• p24 ขึ้นก่อน antibody\n• ลด window ~1 สัปดาห์",
+   "option_why": {
+    "A": "anti-HIV A ไม่ใช่",
+    "B": "anti-HIV B ไม่ใช่",
+    "C": "✓ p24 antigen"
+   }
+  }
+ ]
+}

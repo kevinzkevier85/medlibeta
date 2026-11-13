@@ -1,0 +1,2143 @@
+{
+ "meta": {
+  "set_id": "51_MCQ",
+  "block": "IMM",
+  "cohort": 51,
+  "type": "MCQ",
+  "title": "MCQ Immunity · Med PSU 51",
+  "n_source_items": 62,
+  "skipped": [
+   "3",
+   "12",
+   "14",
+   "16",
+   "17",
+   "18",
+   "22",
+   "26",
+   "28",
+   "29",
+   "35",
+   "36",
+   "37",
+   "77",
+   "85",
+   "86",
+   "88",
+   "89",
+   "91",
+   "94",
+   "98",
+   "99"
+  ],
+  "generated_by": "auditor/tools/build_outputs.py — do not edit by hand"
+ },
+ "questions": [
+  {
+   "id": "IMM-51-MCQ-001",
+   "block": "IMM",
+   "cohort": 51,
+   "n": 1,
+   "type": "MCQ",
+   "stem": "Which ….. activation antigen in spleen",
+   "options": {
+    "A": "Tonsilitis",
+    "B": "Impetigo",
+    "C": "Dental caries",
+    "D": "Bacteremia",
+    "E": "Diarrhea"
+   },
+   "answer": "D",
+   "answer_status": "verified",
+   "explanation": "Bacteremia ทำให้ antigen เข้ากระแสเลือดไป spleen กระตุ้น immune response ได้ (spleen กรองเลือด)",
+   "refs": [
+    {
+     "paper": "MCQ51",
+     "pages": [
+      1
+     ]
+    },
+    {
+     "paper": "MCQ51-KEY",
+     "pages": [
+      1
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "imm_51_MCQ_001",
+   "key_concept": "• spleen กรองเลือด · lymph node กรอง lymph · MALT กรองเยื่อบุ\n• antigen ในเลือด → spleen, antigen ใน lymph → node, antigen ที่เยื่อบุ → MALT\n• spleen สำคัญต่อ encapsulated bacteria",
+   "mechanism": [
+    "เชื้อเข้ากระแสเลือด",
+    "เลือดไหลผ่าน marginal zone ของ spleen",
+    {
+     "s": "APC จับ antigen ที่ spleen",
+     "answer": true
+    },
+    "T/B cell ใน white pulp ถูกกระตุ้น",
+    "antibody + opsonization"
+   ],
+   "option_why": {
+    "A": "tonsillitis กระตุ้นที่ tonsil/cervical node",
+    "B": "impetigo ผิวหนัง → regional lymph node",
+    "C": "dental caries เข้าทาง oral/MALT",
+    "D": "✓ bacteremia: antigen ในเลือดถูกจับที่ spleen (white pulp/marginal zone)",
+    "E": "diarrhea กระตุ้น Peyer's patch/mesenteric node"
+   }
+  },
+  {
+   "id": "IMM-51-MCQ-002",
+   "block": "IMM",
+   "cohort": 51,
+   "n": 2,
+   "type": "MCQ",
+   "stem": "In the picture, which of the following of the spleen? (ไม่แน่ใจว่ารูปที่ถามถูกมั้ยนะ)",
+   "options": {
+    "A": "Red pulp",
+    "B": "White pulp 311-212 Body Defense, Immunity and Infection",
+    "C": "Spleen cord",
+    "D": "Spleen sinusoid",
+    "E": "Lymphatic sheath"
+   },
+   "answer": "B",
+   "answer_status": "verified",
+   "explanation": "ภาพ spleen ที่เห็นก้อน lymphoid เข้มรอบ central arteriole คือ white pulp",
+   "refs": [
+    {
+     "paper": "MCQ51",
+     "pages": [
+      1
+     ]
+    },
+    {
+     "paper": "MCQ51-KEY",
+     "pages": [
+      1
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "imm_51_MCQ_002",
+   "key_concept": "• white pulp = PALS (T cell) + follicle (B cell) รอบ central artery\n• red pulp = sinusoid + cord (กรอง RBC เก่า)\n• marginal zone ล้อมรอบ white pulp",
+   "mechanism": [
+    "central arteriole ผ่าน white pulp",
+    {
+     "s": "lymphocyte เกาะกลุ่มเป็น PALS/follicle",
+     "answer": true
+    },
+    "antigen ในเลือดถูกจับ",
+    "กระตุ้น T/B cell",
+    "antibody ต่อ encapsulated organism"
+   ],
+   "option_why": {
+    "A": "red pulp คือส่วนที่มี sinusoid/cord สีแดง",
+    "B": "✓ white pulp (PALS + follicle) คือก้อนสีเข้มรอบ arteriole",
+    "C": "splenic cord (Billroth) อยู่ใน red pulp",
+    "D": "splenic sinusoid อยู่ใน red pulp",
+    "E": "lymphatic sheath (PALS) เป็นส่วนย่อยของ white pulp แต่คำตอบกว้างคือ white pulp"
+   },
+   "image": "img/IMM-51-MCQ-002.jpg",
+   "image_caption": "Spleen (H&E): white pulp รอบ central arteriole"
+  },
+  {
+   "id": "IMM-51-MCQ-004",
+   "block": "IMM",
+   "cohort": 51,
+   "n": 4,
+   "type": "MCQ",
+   "stem": "Ebv reduce mhc 1 ตอนติดเชื้อแล้ว mechanism ไหน recovery",
+   "options": {
+    "A": "cytotoxic t cell",
+    "B": "Th",
+    "C": "Nk cell",
+    "D": "–",
+    "E": "–"
+   },
+   "answer": "C",
+   "answer_status": "verified",
+   "explanation": "EBV ลด MHC I ทำให้ CD8 รู้จักไม่ได้ NK cell ฆ่าเซลล์ที่ MHC I ต่ำ (missing self)",
+   "refs": [
+    {
+     "paper": "MCQ51",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "MCQ51-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "imm_51_MCQ_004",
+   "key_concept": "• missing self: MHC I ลด → NK ฆ่า\n• ไวรัสหลบ CTL ด้วยการลด MHC I แต่โดน NK\n• KIR (inhibitory) จับ MHC I",
+   "mechanism": [
+    "EBV ลด MHC I",
+    "CD8 รู้จักไม่ได้",
+    "inhibitory signal ต่อ NK หาย",
+    {
+     "s": "NK cell ฆ่าเซลล์ติดเชื้อ",
+     "answer": true
+    },
+    "recovery"
+   ],
+   "option_why": {
+    "A": "cytotoxic T cell ต้องใช้ MHC I จึงรู้จักเซลล์ไม่ได้",
+    "B": "Th ไม่ฆ่าเซลล์ติดเชื้อ",
+    "C": "✓ NK cell ฆ่าเซลล์ที่ MHC I ลด",
+    "D": "– (ไม่มีข้อความตัวเลือก)",
+    "E": "– (ไม่มีข้อความตัวเลือก)"
+   }
+  },
+  {
+   "id": "IMM-51-MCQ-005",
+   "block": "IMM",
+   "cohort": 51,
+   "n": 5,
+   "type": "MCQ",
+   "stem": "which molecul uesd by macrophages to recognise antibdy-coat microbe?",
+   "options": {
+    "A": "B7",
+    "B": "CD28",
+    "C": "Fc receptor",
+    "D": "MHC class I"
+   },
+   "answer": "C",
+   "answer_status": "verified",
+   "explanation": "Macrophage รู้จัก microbe ที่เคลือบ antibody ผ่าน Fc receptor",
+   "refs": [
+    {
+     "paper": "MCQ51",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "MCQ51-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "imm_51_MCQ_005",
+   "key_concept": "• opsonin: IgG (FcγR), C3b (CR1), CRP\n• B7–CD28 = costimulation\n• MHC I → CD8 · MHC II → CD4",
+   "mechanism": [
+    "IgG จับ microbe",
+    "Fc ของ IgG โผล่",
+    {
+     "s": "Fcγ receptor บน macrophage จับ",
+     "answer": true
+    },
+    "phagocytosis",
+    "ฆ่าเชื้อใน phagolysosome"
+   ],
+   "option_why": {
+    "A": "B7 ใช้ costimulation บน APC",
+    "B": "CD28 อยู่บน T cell",
+    "C": "✓ Fc receptor จับส่วน Fc ของ IgG ที่เคลือบเชื้อ (opsonization/ADCC)",
+    "D": "MHC class I นำเสนอ antigen ให้ CD8"
+   }
+  },
+  {
+   "id": "IMM-51-MCQ-006",
+   "block": "IMM",
+   "cohort": 51,
+   "n": 6,
+   "type": "MCQ",
+   "stem": "Which process will happen if neutrophil face C3b-coated microbe",
+   "options": {
+    "A": "Apoptosis",
+    "B": "Inflammation",
+    "C": "Opsonization",
+    "D": "Neutralization",
+    "E": "Agglutination"
+   },
+   "answer": "C",
+   "answer_status": "verified",
+   "explanation": "C3b เคลือบเชื้อ → neutrophil (CR1) เกิด opsonization/phagocytosis",
+   "refs": [
+    {
+     "paper": "MCQ51",
+     "pages": [
+      3
+     ]
+    },
+    {
+     "paper": "MCQ51-KEY",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "imm_51_MCQ_006",
+   "key_concept": "• C3b = opsonization · C5a = chemotaxis · C5b–9 = lysis\n• neutrophil: CR1 + FcγR\n• neutralization/agglutination = antibody function",
+   "mechanism": [
+    "C3b เคลือบ microbe",
+    {
+     "s": "neutrophil จับผ่าน CR1",
+     "answer": true
+    },
+    "phagocytosis",
+    "phagolysosome ฆ่าเชื้อ",
+    "ลดเชื้อ"
+   ],
+   "option_why": {
+    "A": "apoptosis ไม่เกี่ยว",
+    "B": "inflammation เป็นผลของ C3a/C5a",
+    "C": "✓ opsonization: C3b จับ CR1 ช่วยให้ neutrophil กิน",
+    "D": "neutralization เป็นหน้าที่ antibody",
+    "E": "agglutination คือ antibody ทำให้เชื้อจับกลุ่ม"
+   }
+  },
+  {
+   "id": "IMM-51-MCQ-007",
+   "block": "IMM",
+   "cohort": 51,
+   "n": 7,
+   "type": "MCQ",
+   "stem": "Which of the following is the most susceptible to lytic pathway by complement activation?",
+   "options": {
+    "A": "Plasmodium vivax",
+    "B": "Aspergillus fumigatus",
+    "C": "Neisseria meningitis",
+    "D": "Staphylococcus aureus",
+    "E": "Human Immunodeficiency Virus"
+   },
+   "answer": "C",
+   "answer_status": "verified",
+   "explanation": "Neisseria มีความไวต่อ lytic pathway (MAC) มากที่สุด ถ้าขาด C5–C9 ติดเชื้อ Neisseria ซ้ำ",
+   "refs": [
+    {
+     "paper": "MCQ51",
+     "pages": [
+      3
+     ]
+    },
+    {
+     "paper": "MCQ51-KEY",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "imm_51_MCQ_007",
+   "key_concept": "• MAC ได้ผลกับ Gram-negative (โดยเฉพาะ Neisseria)\n• terminal complement deficiency (C5–C9) → Neisseria ซ้ำ\n• Gram-positive ผนังหนา ทน MAC → ใช้ opsonization",
+   "mechanism": [
+    "complement กระตุ้น",
+    "C5b + C6–C9 สร้าง MAC",
+    {
+     "s": "MAC เจาะ outer membrane Gram-negative",
+     "answer": true
+    },
+    "Neisseria lysis",
+    "ขาด C5–C9 ติดเชื้อซ้ำ"
+   ],
+   "option_why": {
+    "A": "Plasmodium vivax อยู่ในเม็ดเลือด",
+    "B": "Aspergillus ผนังหนา ทน MAC",
+    "C": "✓ Neisseria meningitidis (Gram-negative diplococcus) ไวต่อ MAC",
+    "D": "S. aureus ผนัง peptidoglycan หนาทน MAC",
+    "E": "HIV virus ถูกกำจัดด้วย CD8"
+   }
+  },
+  {
+   "id": "IMM-51-MCQ-008",
+   "block": "IMM",
+   "cohort": 51,
+   "n": 8,
+   "type": "MCQ",
+   "stem": "HSV 1&2 depress the expression of MHC class 1 molecules. Which coreceptor's binding molecule will be inhibited?",
+   "options": {
+    "A": "CD8",
+    "B": "CD3",
+    "C": "CD4",
+    "D": "CD6",
+    "E": "CD12"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "HSV ลด MHC I → CD8 coreceptor จับ MHC I ไม่ได้",
+   "refs": [
+    {
+     "paper": "MCQ51",
+     "pages": [
+      3
+     ]
+    },
+    {
+     "paper": "MCQ51-KEY",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "imm_51_MCQ_008",
+   "key_concept": "• CD4–MHC II · CD8–MHC I\n• CD3 = TCR signal transduction\n• ไวรัสลด MHC I → CTL หลง แต่ NK ฆ่า",
+   "mechanism": [
+    "HSV ยับยั้ง MHC I (ICP47 ปิด TAP)",
+    "peptide-MHC I บนผิวลดลง",
+    {
+     "s": "CD8 จับ MHC I ไม่ได้",
+     "answer": true
+    },
+    "CTL กระตุ้นไม่ได้",
+    "NK ฆ่าแทน"
+   ],
+   "option_why": {
+    "A": "✓ CD8 coreceptor จับ MHC class I",
+    "B": "CD3 เป็น signaling ของ TCR",
+    "C": "CD4 จับ MHC II",
+    "D": "CD6 เป็น adhesion",
+    "E": "CD12 ไม่ใช่ coreceptor ที่เกี่ยวข้อง"
+   }
+  },
+  {
+   "id": "IMM-51-MCQ-009",
+   "block": "IMM",
+   "cohort": 51,
+   "n": 9,
+   "type": "MCQ",
+   "stem": "65yo female Spleen removal มีโอกาสที่จะติดเชื้อใดมากขึ้น",
+   "options": {
+    "A": "Escherichia Coli",
+    "B": "Enamoeba coli",
+    "C": "HPV",
+    "D": "Streptococcus Pneumoniae",
+    "E": "Aspergillus Fumigatus"
+   },
+   "answer": "D",
+   "answer_status": "verified",
+   "explanation": "Asplenia เสี่ยงติดเชื้อ encapsulated bacteria เช่น S. pneumoniae",
+   "refs": [
+    {
+     "paper": "MCQ51",
+     "pages": [
+      3
+     ]
+    },
+    {
+     "paper": "MCQ51-KEY",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "imm_51_MCQ_009",
+   "key_concept": "• asplenia: encapsulated (SHiN: S. pneumoniae, H. influenzae b, N. meningitidis) + Capnocytophaga\n• ให้วัคซีน pneumococcal/Hib/meningococcal ก่อนตัดม้าม\n• Howell-Jolly body ใน blood smear",
+   "mechanism": [
+    "ตัดม้าม",
+    "สูญเสีย opsonophagocytosis ของ capsule",
+    {
+     "s": "S. pneumoniae ไม่ถูกกำจัดในเลือด",
+     "answer": true
+    },
+    "bacteremia/OPSI",
+    "ต้อง vaccine + penicillin ป้องกัน"
+   ],
+   "option_why": {
+    "A": "E. coli ไม่ใช่เป้าหลักของ asplenia",
+    "B": "Entamoeba coli เป็น commensal",
+    "C": "HPV ไม่เกี่ยว",
+    "D": "✓ S. pneumoniae (encapsulated) เสี่ยงหลังตัดม้าม",
+    "E": "Aspergillus ใน neutropenia ไม่ใช่ asplenia"
+   }
+  },
+  {
+   "id": "IMM-51-MCQ-010",
+   "block": "IMM",
+   "cohort": 51,
+   "n": 10,
+   "type": "MCQ",
+   "stem": "เกี่ยวกับ black water fever after quinine อะไรสักอย่าง quinine ทำหน้าที่เป็นอะไร",
+   "options": {
+    "A": "hapten",
+    "B": "supra antigen",
+    "C": "specific antigen",
+    "D": "immunogen",
+    "E": "antigen carrier"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "Quinine (hapten) จับโปรตีนในเลือดกระตุ้นภูมิคุ้มกัน → hemolysis (blackwater fever)",
+   "refs": [
+    {
+     "paper": "MCQ51",
+     "pages": [
+      4
+     ]
+    },
+    {
+     "paper": "MCQ51-KEY",
+     "pages": [
+      5
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "imm_51_MCQ_010",
+   "key_concept": "• hapten + carrier → drug allergy (penicillin, quinine)\n• blackwater fever = hemolysis ใน falciparum หลัง quinine\n• type II hypersensitivity",
+   "mechanism": [
+    "quinine จับ RBC membrane protein",
+    {
+     "s": "เกิด hapten-carrier complex",
+     "answer": true
+    },
+    "สร้าง antibody",
+    "complement/phagocyte ทำลาย RBC",
+    "hemoglobinuria"
+   ],
+   "option_why": {
+    "A": "✓ quinine เป็น hapten (โมเลกุลเล็กต้องจับ carrier)",
+    "B": "superantigen กระตุ้น T cell ตรง",
+    "C": "specific antigen ไม่ตรงนิยาม",
+    "D": "immunogen ต้องกระตุ้นเองโดยไม่ต้อง carrier",
+    "E": "antigen carrier คือโปรตีน carrier"
+   }
+  },
+  {
+   "id": "IMM-51-MCQ-011",
+   "block": "IMM",
+   "cohort": 51,
+   "n": 11,
+   "type": "MCQ",
+   "stem": "A 6 year-old boy cut his palm. Later he developed pain, redness and swelling wound. Which substance works for this respond?",
+   "options": {
+    "A": "IL-5 หรือ IL-8 นี่แหละ",
+    "B": "IFN-gamma",
+    "C": "macrophage"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "แผลอักเสบติดเชื้อ ดึง neutrophil ด้วย chemokine IL-8 (เฉลยต้นฉบับ A คือ IL-5 หรือ IL-8 ผู้จำไม่แน่ใจ)",
+   "refs": [
+    {
+     "paper": "MCQ51",
+     "pages": [
+      4
+     ]
+    },
+    {
+     "paper": "MCQ51-KEY",
+     "pages": [
+      5
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "imm_51_MCQ_011",
+   "key_concept": "• neutrophil chemoattractant: IL-8, C5a, LTB4, fMLP\n• IL-5 = eosinophil\n• acute inflammation: rubor, calor, tumor, dolor",
+   "mechanism": [
+    "เชื้อบุกแผล",
+    "macrophage หลั่ง TNF/IL-1",
+    {
+     "s": "IL-8 ดึง neutrophil",
+     "answer": true
+    },
+    "neutrophil เข้าสู่แผล",
+    "pus/อักเสบ"
+   ],
+   "option_why": {
+    "A": "✓ IL-8 (CXCL8) ดึง neutrophil ไปที่แผลติดเชื้อ (ต้นฉบับกำกับ 'IL-5 หรือ IL-8')",
+    "B": "IFN-γ กระตุ้น macrophage",
+    "C": "macrophage เป็นเซลล์ ไม่ใช่ substance"
+   }
+  },
+  {
+   "id": "IMM-51-MCQ-013",
+   "block": "IMM",
+   "cohort": 51,
+   "n": 13,
+   "type": "MCQ",
+   "stem": "คนไข้ 60 ปี เป็นเบาหวาน มีอาการ fever hypotension, general ซักอย่าง rash Diag ด้วย toxic shock syndrome mechanism ที่ทำให้เกิด syndrome นี้",
+   "options": {
+    "A": "cytokine",
+    "B": "complement",
+    "C": "Neutrophil",
+    "D": "Lymphocyte",
+    "E": "nonspecific mhc2 จับกับ T cell"
+   },
+   "answer": "E",
+   "answer_status": "verified",
+   "explanation": "Toxic shock syndrome เกิดจาก superantigen จับ MHC II กับ TCR Vβ นอก antigen groove ทำให้ T cell ถูกกระตุ้นแบบไม่จำเพาะ",
+   "refs": [
+    {
+     "paper": "MCQ51",
+     "pages": [
+      4
+     ]
+    },
+    {
+     "paper": "MCQ51-KEY",
+     "pages": [
+      5
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "imm_51_MCQ_013",
+   "key_concept": "• superantigen: TSST-1, SEB, SPE → MHC II + TCR Vβ → T cell 20–30% active\n• cytokine storm (IL-2, TNF-γ) → shock\n• ต่างจาก antigen ปกติที่ activate T cell 1 in 10⁵",
+   "mechanism": [
+    "Staph ปล่อย TSST-1",
+    "จับ MHC II และ TCR Vβ นอก groove",
+    {
+     "s": "T cell ถูกกระตุ้นแบบ nonspecific",
+     "answer": true
+    },
+    "cytokine storm",
+    "fever, hypotension, rash"
+   ],
+   "option_why": {
+    "A": "cytokine เป็นผลลัพธ์ ไม่ใช่กลไกต้นทาง",
+    "B": "complement ไม่ใช่",
+    "C": "neutrophil ไม่ใช่",
+    "D": "lymphocyte กว้างเกิน",
+    "E": "✓ superantigen จับ MHC II กับ T cell แบบไม่จำเพาะ → cytokine storm"
+   }
+  },
+  {
+   "id": "IMM-51-MCQ-015",
+   "block": "IMM",
+   "cohort": 51,
+   "n": 15,
+   "type": "MCQ",
+   "stem": "IgM isolation ได้รับเลือดgroup A ในคนที่มีเลือดgroup Bจะเกิดอะไร",
+   "options": {
+    "A": "Precipitation",
+    "B": "Agglutination",
+    "C": "Neutralization",
+    "D": "Plaque",
+    "E": "Uneffect"
+   },
+   "answer": "B",
+   "answer_status": "verified",
+   "explanation": "IgM anti-B ในเลือด group A จับ B antigen บนเม็ดเลือด group B → agglutination",
+   "refs": [
+    {
+     "paper": "MCQ51",
+     "pages": [
+      5
+     ]
+    },
+    {
+     "paper": "MCQ51-KEY",
+     "pages": [
+      6
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "imm_51_MCQ_015",
+   "key_concept": "• IgM ดีที่สุดสำหรับ agglutination\n• ABO: anti-A/B เป็น IgM\n• transfusion reaction = type II",
+   "mechanism": [
+    "เลือด A มี anti-B IgM",
+    "รับเลือด B",
+    {
+     "s": "IgM จับ B antigen บน RBC",
+     "answer": true
+    },
+    "agglutination + complement",
+    "hemolysis"
+   ],
+   "option_why": {
+    "A": "precipitation เกิดกับ soluble antigen",
+    "B": "✓ agglutination: IgM (pentamer) จับ RBC antigen เป็นกลุ่ม",
+    "C": "neutralization ใช้ต่อ toxin/virus",
+    "D": "plaque assay ใช้ virus",
+    "E": "ไม่ใช่ไม่มีผล"
+   }
+  },
+  {
+   "id": "IMM-51-MCQ-019",
+   "block": "IMM",
+   "cohort": 51,
+   "n": 19,
+   "type": "MCQ",
+   "stem": "A 15-year-old boy มีอาการ glomerunephritis ถามเรื่อง pathogen ที่ทำให้เกิด",
+   "options": {
+    "A": "Immune complex",
+    "B": "Ab ต่อ Glomeruli of kidney",
+    "C": "Invasion of bacteria"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "Glomerulonephritis หลัง post-infection เกิดจาก immune complex สะสมที่ glomerulus (PSGN)",
+   "refs": [
+    {
+     "paper": "MCQ51",
+     "pages": [
+      5
+     ]
+    },
+    {
+     "paper": "MCQ51-KEY",
+     "pages": [
+      6
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "imm_51_MCQ_019",
+   "key_concept": "• PSGN: Strep + immune complex, low C3, subepithelial humps\n• Goodpasture: anti-GBM linear IF\n• type III: SLE, serum sickness, PSGN",
+   "mechanism": [
+    "Strep infection",
+    "antibody + antigen เกิด complex",
+    {
+     "s": "สะสมที่ glomerulus",
+     "answer": true
+    },
+    "complement activation",
+    "nephritis"
+   ],
+   "option_why": {
+    "A": "✓ immune complex (type III)",
+    "B": "anti-GBM antibody เป็น Goodpasture (type II) ไม่ใช่ PSGN",
+    "C": "การบุกรุกของแบคทีเรียโดยตรงไม่ใช่กลไก"
+   }
+  },
+  {
+   "id": "IMM-51-MCQ-020",
+   "block": "IMM",
+   "cohort": 51,
+   "n": 20,
+   "type": "MCQ",
+   "stem": "A 45-year-old male presented with fever, coughing and breathing difficulty. He was diagnosed with bacterial pneumonia. Only innate immune responses are not enough to subside this infection. How does adaptive immunity help innate immunity against bacterial infection?",
+   "options": {
+    "A": "Nk cells help to kill the infected cell",
+    "B": "B cells present bacterial antigen to T cells",
+    "C": "Dendritic cells present bacterial antigen to T cells",
+    "D": "Macrophages help to phagocytose extracellular bacteria",
+    "E": "Helper T cells secrete cytokine to enhance the phagocytic activity"
+   },
+   "answer": "E",
+   "answer_status": "verified",
+   "explanation": "Adaptive immunity ช่วย innate ผ่าน Th cell หลั่ง cytokine (เช่น IFN-γ) กระตุ้น phagocytosis (เฉลยต้นฉบับ E)",
+   "refs": [
+    {
+     "paper": "MCQ51",
+     "pages": [
+      5
+     ]
+    },
+    {
+     "paper": "MCQ51-KEY",
+     "pages": [
+      6
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "imm_51_MCQ_020",
+   "key_concept": "• Th1 → IFN-γ → macrophage · Th17 → IL-17 → neutrophil\n• antibody (Fc, complement) ช่วย opsonization\n• adaptive ไม่ใช่ตัวฆ่าโดยตรง แต่ขยาย innate",
+   "mechanism": [
+    "เชื้อกระตุ้น innate",
+    "DC present antigen ให้ T cell",
+    {
+     "s": "Th cell หลั่ง cytokine",
+     "answer": true
+    },
+    "phagocyte ถูกกระตุ้น",
+    "กำจัดเชื้อได้ดี"
+   ],
+   "option_why": {
+    "A": "NK ไม่ใช่กลไกหลักต่อ bacterial pneumonia",
+    "B": "B cell ไม่ใช่ APC หลักของ T cell ที่ต้องกระตุ้น",
+    "C": "DC present antigen เป็น step ของ adaptive ไม่ใช่การช่วย innate",
+    "D": "macrophage phagocytose เป็นหน้าที่ innate เอง",
+    "E": "✓ Th cell หลั่ง cytokine ช่วยเพิ่ม phagocytosis (adaptive ช่วย innate)"
+   }
+  },
+  {
+   "id": "IMM-51-MCQ-021",
+   "block": "IMM",
+   "cohort": 51,
+   "n": 21,
+   "type": "MCQ",
+   "stem": "โดนมีดมีสนิมบาดเมื่อสามวันก่อน แต่ฉีดวัคซีนบาดทะยักครบแล้วเมื่อ 3 ปีก่อน antibody จะมีการเปลี่ยนไป ยังไง",
+   "options": {
+    "A": "Decrease antibody",
+    "B": "Increase specificity"
+   },
+   "answer": "B",
+   "answer_status": "verified",
+   "explanation": "Booster tetanus เพิ่ม affinity maturation (specificity ↑) ของ antibody",
+   "refs": [
+    {
+     "paper": "MCQ51",
+     "pages": [
+      6
+     ]
+    },
+    {
+     "paper": "MCQ51-KEY",
+     "pages": [
+      7
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "imm_51_MCQ_021",
+   "key_concept": "• secondary response: lag สั้น, titer สูง, IgG, affinity สูง\n• รับบาดแผลสกปรกต้องให้ Td/TIG ตามประวัติ\n• memory B cell ตอบเร็ว",
+   "mechanism": [
+    "แผลสนิม (C. tetani)",
+    "memory B cell ถูกกระตุ้น",
+    "germinal center",
+    {
+     "s": "affinity maturation (specificity ↑)",
+     "answer": true
+    },
+    "antibody IgG สูงเร็ว"
+   ],
+   "option_why": {
+    "A": "ไม่ใช่ decrease antibody (secondary response เพิ่ม)",
+    "B": "✓ booster → somatic hypermutation/class switch ทำให้ specificity/affinity เพิ่ม"
+   }
+  },
+  {
+   "id": "IMM-51-MCQ-023",
+   "block": "IMM",
+   "cohort": 51,
+   "n": 23,
+   "type": "MCQ",
+   "stem": "Infected SARS-CoV-2 virus อะไรทำให้เกิด inflammatory response",
+   "options": {
+    "A": "Th1",
+    "B": "Th2",
+    "C": "Th14",
+    "D": "Treg",
+    "E": "T follicular cell"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "SARS-CoV-2 กระตุ้น Th1/Th17 ทำ inflammatory response (เฉลยต้นฉบับ Th1)",
+   "refs": [
+    {
+     "paper": "MCQ51",
+     "pages": [
+      6
+     ]
+    },
+    {
+     "paper": "MCQ51-KEY",
+     "pages": [
+      7
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "imm_51_MCQ_023",
+   "key_concept": "• Th1 → IFN-γ, TNF → macrophage activation\n• COVID รุนแรง: cytokine storm (IL-6, TNF)\n• Th17 ก็เกี่ยวข้อง",
+   "mechanism": [
+    "ไวรัสกระตุ้น APC",
+    "IL-12",
+    {
+     "s": "Th1 differentiation",
+     "answer": true
+    },
+    "IFN-γ/TNF ↑",
+    "inflammatory response"
+   ],
+   "option_why": {
+    "A": "✓ Th1 หลั่ง IFN-γ/TNF กระตุ้น macrophage → inflammatory",
+    "B": "Th2 เป็น allergy/helminth",
+    "C": "Th14 ไม่มี subset นี้",
+    "D": "Treg กดการอักเสบ",
+    "E": "Tfh ช่วย B cell ผลิต antibody"
+   }
+  },
+  {
+   "id": "IMM-51-MCQ-024",
+   "block": "IMM",
+   "cohort": 51,
+   "n": 24,
+   "type": "MCQ",
+   "stem": "A 60-year-old man with painful blistering skin on his back and chest wall.He was diagnosed with herpes zoster, which is cause by varicella zoster virus. What is the main mechanism of CD8 T lymphocyte detect viral infected cell?",
+   "options": {
+    "A": "Activated killing function of NK cell",
+    "B": "Differentiated into memory CD8 T cell",
+    "C": "Secreted TNF-alpha to enlace-viral activity",
+    "D": "Release cytotoxic cytokine to lyase the infected cell",
+    "E": "Recognized the viral antigen on MHC class I to kill infected cell"
+   },
+   "answer": "E",
+   "answer_status": "verified",
+   "explanation": "Herpes zoster → CD8 รู้จัก viral antigen บน MHC I แล้วฆ่าเซลล์ติดเชื้อ",
+   "refs": [
+    {
+     "paper": "MCQ51",
+     "pages": [
+      6
+     ]
+    },
+    {
+     "paper": "MCQ51-KEY",
+     "pages": [
+      7
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "imm_51_MCQ_024",
+   "key_concept": "• CD8 ↔ MHC I · CD4 ↔ MHC II\n• CTL ฆ่าด้วย perforin/granzyme, Fas-FasL\n• VZV latent ใน DRG → reactivation ใน CMI ลดลง",
+   "mechanism": [
+    "VZV กลับ active",
+    "แสดง peptide-MHC I",
+    {
+     "s": "CD8 รู้จักด้วย TCR",
+     "answer": true
+    },
+    "perforin/granzyme",
+    "เซลล์ติดเชื้อตาย"
+   ],
+   "option_why": {
+    "A": "การกระตุ้น NK ไม่ใช่คำตอบหลัก",
+    "B": "การเป็น memory เป็นผลลัพธ์ภายหลัง",
+    "C": "TNF-α ไม่ใช่กลไกจำเพาะ",
+    "D": "การปล่อย cytotoxic cytokine ไม่ใช่การรู้จักเซลล์ติดเชื้อ",
+    "E": "✓ รู้จัก viral antigen บน MHC I → ฆ่าเซลล์ติดเชื้อ"
+   }
+  },
+  {
+   "id": "IMM-51-MCQ-025",
+   "block": "IMM",
+   "cohort": 51,
+   "n": 25,
+   "type": "MCQ",
+   "stem": "32-Year-old female เคย infect Flu A ปีที่แล้ว ปีนี้ไม่ติดเชื้อและไม่มีอาการใด ๆ อะไรคือ mechanism ที่ ทำให้เกิด memory cytotoxic T cell",
+   "options": {
+    "A": "MHC1 on dendritic cell",
+    "B": "MHC1 on Infectious cell",
+    "C": "MHC2 on macrophage",
+    "D": "MHC2 on dendritic cell",
+    "E": "CD8 directly recognize"
+   },
+   "answer": "B",
+   "answer_status": "verified",
+   "explanation": "เฉลยต้นฉบับ B (MHC I บน infected cell) แต่ AI เห็นว่า priming memory CD8 ใช้ MHC I บน dendritic cell (A)",
+   "refs": [
+    {
+     "paper": "MCQ51",
+     "pages": [
+      6
+     ]
+    },
+    {
+     "paper": "MCQ51-KEY",
+     "pages": [
+      7
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "imm_51_MCQ_025",
+   "key_concept": "• priming ต้อง DC (MHC I + B7) · effector ฆ่า infected cell (MHC I)\n• memory CD8 ตอบเร็วเมื่อเจอ peptide-MHC I\n• โจทย์นี้คลุมเครือ ต้นฉบับ B / AI คิดว่า A",
+   "mechanism": [
+    "ปีก่อนติดเชื้อ Flu A",
+    "สร้าง memory CD8",
+    {
+     "s": "ปีนี้ memory CD8 รู้จัก peptide-MHC I บนเซลล์ติดเชื้อ",
+     "answer": true
+    },
+    "ฆ่าเซลล์เร็ว",
+    "ไม่มีอาการ"
+   ],
+   "option_why": {
+    "A": "AI เลือก: DC เป็น professional APC prime naive CD8 ผ่าน MHC I (cross-presentation) แล้วเกิด memory",
+    "B": "✓ เฉลยต้นฉบับ: CD8 รู้จัก MHC I บนเซลล์ติดเชื้อ (กระตุ้น memory CTL effector)",
+    "C": "MHC II ใช้ CD4 ไม่ใช่ CD8",
+    "D": "MHC II บน DC ให้ CD4",
+    "E": "CD8 ต้องรู้จักผ่าน TCR + MHC I ไม่ใช่โดยตรง"
+   }
+  },
+  {
+   "id": "IMM-51-MCQ-027",
+   "block": "IMM",
+   "cohort": 51,
+   "n": 27,
+   "type": "MCQ",
+   "stem": "A 55-year-old man เป็น bronchial asthma และ allergic to fungal spores Which of the following is the cytokine ที่เกี่ยวข้องใน mechanism นี้",
+   "options": {
+    "A": "IL 1",
+    "B": "IL 4",
+    "C": "IL 12",
+    "D": "IFN gamma",
+    "E": "TNF alpha"
+   },
+   "answer": "B",
+   "answer_status": "verified",
+   "explanation": "Asthma/แพ้ spore เกี่ยวข้อง Th2 cytokine IL-4 (IgE class switch)",
+   "refs": [
+    {
+     "paper": "MCQ51",
+     "pages": [
+      7
+     ]
+    },
+    {
+     "paper": "MCQ51-KEY",
+     "pages": [
+      8
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "imm_51_MCQ_027",
+   "key_concept": "• Th2: IL-4, IL-5, IL-13 → IgE, eosinophil, mucus\n• asthma/allergy = type I\n• IL-4 + CD40L → IgE",
+   "mechanism": [
+    "allergen",
+    "Th2",
+    {
+     "s": "IL-4",
+     "answer": true
+    },
+    "B cell สลับเป็น IgE",
+    "mast cell sensitization → asthma"
+   ],
+   "option_why": {
+    "A": "IL-1 เป็น acute inflammation",
+    "B": "✓ IL-4 ชักนำ Th2 + IgE class switch",
+    "C": "IL-12 กระตุ้น Th1",
+    "D": "IFN-γ เป็น Th1 ยับยั้ง Th2",
+    "E": "TNF-α เป็น inflammatory"
+   }
+  },
+  {
+   "id": "IMM-51-MCQ-030",
+   "block": "IMM",
+   "cohort": 51,
+   "n": 30,
+   "type": "MCQ",
+   "stem": "Which cytokine increase peristalsis?",
+   "options": {
+    "A": "IL-1",
+    "B": "IL-13",
+    "C": "IL-9",
+    "D": "IL-5",
+    "E": "IL-12"
+   },
+   "answer": "B",
+   "answer_status": "verified",
+   "explanation": "IL-13 (Th2) เพิ่ม gut smooth muscle contraction และ mucus เพื่อขับ helminth",
+   "refs": [
+    {
+     "paper": "MCQ51",
+     "pages": [
+      7
+     ]
+    },
+    {
+     "paper": "MCQ51-KEY",
+     "pages": [
+      8
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "imm_51_MCQ_030",
+   "key_concept": "• weep and sweep: Th2 (IL-4, IL-13) เพิ่ม mucus + ขับถ่าย\n• IL-9 กระตุ้น mast cell\n• IL-5 → eosinophil",
+   "mechanism": [
+    "helminth",
+    "Th2",
+    {
+     "s": "IL-13",
+     "answer": true
+    },
+    "goblet cell + smooth muscle contraction",
+    "ขับพยาธิ"
+   ],
+   "option_why": {
+    "A": "IL-1 กระตุ้นไข้",
+    "B": "✓ IL-13 เพิ่ม peristalsis (smooth muscle hypercontractility) + goblet cell",
+    "C": "IL-9 เกี่ยวกับ mast cell",
+    "D": "IL-5 กระตุ้น eosinophil",
+    "E": "IL-12 กระตุ้น Th1"
+   }
+  },
+  {
+   "id": "IMM-51-MCQ-031",
+   "block": "IMM",
+   "cohort": 51,
+   "n": 31,
+   "type": "MCQ",
+   "stem": "Which of the following is most important to destroy helminth infection?",
+   "options": {
+    "A": "Mast cell",
+    "B": "Eosinophil",
+    "C": "Macrophage",
+    "D": "Neutrophil",
+    "E": "Nk cell"
+   },
+   "answer": "B",
+   "answer_status": "verified",
+   "explanation": "Eosinophil สำคัญที่สุดในการทำลาย helminth (IgE-ADCC, MBP)",
+   "refs": [
+    {
+     "paper": "MCQ51",
+     "pages": [
+      7
+     ]
+    },
+    {
+     "paper": "MCQ51-KEY",
+     "pages": [
+      8
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "imm_51_MCQ_031",
+   "key_concept": "• helminth: Th2 + IgE + eosinophil + mast cell\n• eosinophil granule: MBP, ECP, EPO\n• ADCC ผ่าน FcεR",
+   "mechanism": [
+    "helminth กระตุ้น Th2",
+    "IL-5",
+    {
+     "s": "eosinophil activation",
+     "answer": true
+    },
+    "IgE จับ + degranulation",
+    "พยาธิถูกทำลาย"
+   ],
+   "option_why": {
+    "A": "mast cell ช่วย expulsion แต่ไม่ฆ่าตรง",
+    "B": "✓ eosinophil ฆ่า helminth ด้วย MBP/EPO ผ่าน IgE",
+    "C": "macrophage ไม่ใช่เซลล์หลัก",
+    "D": "neutrophil ไม่ใช่เซลล์หลัก",
+    "E": "NK ไม่เกี่ยว"
+   }
+  },
+  {
+   "id": "IMM-51-MCQ-032",
+   "block": "IMM",
+   "cohort": 51,
+   "n": 32,
+   "type": "MCQ",
+   "stem": "Which of the following is the function of antibody in Plasmodium infection?",
+   "options": {
+    "A": "Kill merozoite-infected liver cell",
+    "B": "Activate CTL to destroy infected red blood cell",
+    "C": "Inhibit Plasmodium growth in red blood cell",
+    "D": "Kill schizont in red blood cell",
+    "E": "Block merozoite infection into new red blood cell"
+   },
+   "answer": "E",
+   "answer_status": "verified",
+   "explanation": "Antibody ใน malaria บล็อก merozoite ไม่ให้บุก RBC ใหม่",
+   "refs": [
+    {
+     "paper": "MCQ51",
+     "pages": [
+      8
+     ]
+    },
+    {
+     "paper": "MCQ51-KEY",
+     "pages": [
+      9
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "imm_51_MCQ_032",
+   "key_concept": "• malaria: sporozoite → liver (CTL) → merozoite (antibody) → RBC (limited)\n• antibody ต่อ MSP-1, AMA-1 บล็อก invasion\n• immunity ต่อ malaria incomplete",
+   "mechanism": [
+    "merozoite ออกจาก RBC",
+    {
+     "s": "antibody จับ merozoite",
+     "answer": true
+    },
+    "บล็อก invasion RBC ใหม่",
+    "parasitemia ลดลง",
+    "ลดอาการ"
+   ],
+   "option_why": {
+    "A": "antibody ไม่ฆ่าเซลล์ตับ (CTL ทำ)",
+    "B": "antibody ไม่กระตุ้น CTL",
+    "C": "antibody ไม่ได้หยุดการโตของเชื้อใน RBC โดยตรง",
+    "D": "antibody ไม่ฆ่า schizont ใน RBC (อยู่ intracellular)",
+    "E": "✓ block merozoite infection เข้า RBC ใหม่"
+   }
+  },
+  {
+   "id": "IMM-51-MCQ-033",
+   "block": "IMM",
+   "cohort": 51,
+   "n": 33,
+   "type": "MCQ",
+   "stem": "Which following is kill bloody protozoa?",
+   "options": {
+    "A": "IL-1",
+    "B": "IL-5",
+    "C": "IL-9",
+    "D": "IL-12",
+    "E": "IL-13"
+   },
+   "answer": "D",
+   "answer_status": "verified",
+   "explanation": "IL-12 กระตุ้น Th1/NK → IFN-γ ฆ่า blood protozoa (เช่น Plasmodium)",
+   "refs": [
+    {
+     "paper": "MCQ51",
+     "pages": [
+      8
+     ]
+    },
+    {
+     "paper": "MCQ51-KEY",
+     "pages": [
+      9
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "imm_51_MCQ_033",
+   "key_concept": "• IL-12 → IFN-γ → macrophage activation → ฆ่า intracellular protozoa\n• Th2 = helminth\n• IFN-γ ใน malaria เร่ง clearance",
+   "mechanism": [
+    "protozoa",
+    "DC/macrophage หลั่ง IL-12",
+    {
+     "s": "Th1/NK ผลิต IFN-γ",
+     "answer": true
+    },
+    "macrophage activation",
+    "ฆ่าเชื้อ"
+   ],
+   "option_why": {
+    "A": "IL-1 ไข้",
+    "B": "IL-5 eosinophil",
+    "C": "IL-9 mast cell",
+    "D": "✓ IL-12 → Th1/NK → IFN-γ",
+    "E": "IL-13 Th2"
+   }
+  },
+  {
+   "id": "IMM-51-MCQ-034",
+   "block": "IMM",
+   "cohort": 51,
+   "n": 34,
+   "type": "MCQ",
+   "stem": "Which cell has no MHC class l",
+   "options": {
+    "A": "Liver cell",
+    "B": "Renal cell",
+    "C": "Neutrophil",
+    "D": "Lymphocyte",
+    "E": "Red blood cell"
+   },
+   "answer": "E",
+   "answer_status": "verified",
+   "explanation": "RBC ไม่มี nucleus จึงไม่มี MHC class I",
+   "refs": [
+    {
+     "paper": "MCQ51",
+     "pages": [
+      8
+     ]
+    },
+    {
+     "paper": "MCQ51-KEY",
+     "pages": [
+      9
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "imm_51_MCQ_034",
+   "key_concept": "• MHC I ทุกเซลล์มีนิวเคลียส ยกเว้น RBC\n• MHC II: APC\n• platelets มี MHC I บางส่วน",
+   "mechanism": [
+    "RBC สลายนิวเคลียส",
+    {
+     "s": "ไม่มี MHC",
+     "answer": true
+    },
+    "CD8 ไม่ recognize",
+    "ไม่เกิด direct allorecognition",
+    "แต่ ABO antigen มีผลต่อ transfusion"
+   ],
+   "option_why": {
+    "A": "liver cell มี MHC I",
+    "B": "renal cell มี MHC I",
+    "C": "neutrophil มี MHC I",
+    "D": "lymphocyte มี MHC I",
+    "E": "✓ RBC ไม่มี MHC"
+   }
+  },
+  {
+   "id": "IMM-51-MCQ-076",
+   "block": "IMM",
+   "cohort": 51,
+   "n": 76,
+   "type": "MCQ",
+   "stem": "25-years old man come with itching patch at his back as shown in the picture. What is the most likely diagnosis?",
+   "options": {
+    "A": "Tinea Corposis",
+    "B": "Histoplasmosis",
+    "C": "Cryptococcosis",
+    "D": "–",
+    "E": "–"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "ผื่นคันเป็นวงที่หลัง = Tinea corporis (dermatophyte) ที่ผิวหนัง",
+   "refs": [
+    {
+     "paper": "MCQ51",
+     "pages": [
+      9
+     ]
+    },
+    {
+     "paper": "MCQ51-KEY",
+     "pages": [
+      10
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "imm_51_MCQ_076",
+   "key_concept": "• dermatophyte (Trichophyton, Microsporum, Epidermophyton) ติดผิว/ผม/เล็บ\n• KOH: hyphae\n• Tinea corporis: ringworm",
+   "mechanism": [
+    "สัมผัสเชื้อ dermatophyte",
+    "เกาะ keratin",
+    {
+     "s": "ผื่นวงแหวนขยายออก",
+     "answer": true
+    },
+    "ขอบยก scaly",
+    "คัน"
+   ],
+   "option_why": {
+    "A": "✓ Tinea corporis: annular scaly plaque ขอบยกคัน",
+    "B": "Histoplasmosis เป็น systemic dimorphic fungus",
+    "C": "Cryptococcosis เป็น meningitis/pneumonia",
+    "D": "– (ไม่มีข้อความตัวเลือกที่จำมา)",
+    "E": "– (ไม่มีข้อความตัวเลือกที่จำมา)"
+   }
+  },
+  {
+   "id": "IMM-51-MCQ-078",
+   "block": "IMM",
+   "cohort": 51,
+   "n": 78,
+   "type": "MCQ",
+   "stem": "พาหะของโรคมาลาเรียคือข้อใด?",
+   "options": {
+    "A": "Aedes spp.",
+    "B": "Anopheles spp.",
+    "C": "–",
+    "D": "–",
+    "E": "–"
+   },
+   "answer": "B",
+   "answer_status": "verified",
+   "explanation": "Malaria แพร่โดย Anopheles ตัวเมีย",
+   "refs": [
+    {
+     "paper": "MCQ51",
+     "pages": [
+      9
+     ]
+    },
+    {
+     "paper": "MCQ51-KEY",
+     "pages": [
+      10
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "imm_51_MCQ_078",
+   "key_concept": "• Anopheles = malaria · Aedes = dengue/chik/Zika · Culex = filariasis/JE\n• ยุงกัดกลางคืน\n• Anopheles minimus, dirus ในไทย",
+   "mechanism": [
+    "Anopheles ดูดเลือดคนติดเชื้อ",
+    "gametocyte เข้ายุง",
+    "sporogony ในยุง",
+    {
+     "s": "sporozoite ที่ salivary gland",
+     "answer": true
+    },
+    "กัดคนต่อ"
+   ],
+   "option_why": {
+    "A": "Aedes แพร่ dengue/Zika/chik",
+    "B": "✓ Anopheles spp. เป็นพาหะ malaria",
+    "C": "– (ไม่มีข้อความตัวเลือกที่จำมา)",
+    "D": "– (ไม่มีข้อความตัวเลือกที่จำมา)",
+    "E": "– (ไม่มีข้อความตัวเลือกที่จำมา)"
+   }
+  },
+  {
+   "id": "IMM-51-MCQ-079",
+   "block": "IMM",
+   "cohort": 51,
+   "n": 79,
+   "type": "MCQ",
+   "stem": "หลังจากให้ยาปฏิชีวนะเพื่อรักษา Pseudomonas aeruginosa พบว่า Creatinine และ BUN เพิ่มขึ้น ถาม ว่ายาที่ได้รับน่าจะเป็นยาอะไร?",
+   "options": {
+    "A": "Levofloxacin",
+    "B": "Amikacin",
+    "C": "Ciprofloxacin",
+    "D": "Ceftazidime",
+    "E": "Cef…"
+   },
+   "answer": "B",
+   "answer_status": "verified",
+   "explanation": "Aminoglycoside (amikacin) ทำ nephrotoxicity (Cr/BUN ↑)",
+   "refs": [
+    {
+     "paper": "MCQ51",
+     "pages": [
+      9
+     ]
+    },
+    {
+     "paper": "MCQ51-KEY",
+     "pages": [
+      10
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "imm_51_MCQ_079",
+   "key_concept": "• aminoglycoside: nephrotoxic, ototoxic, neuromuscular blockade\n• เลี่ยงใช้ร่วมกับ loop diuretic/vancomycin\n• ติดตาม level/Cr",
+   "mechanism": [
+    "amikacin สะสมใน proximal tubule",
+    {
+     "s": "กระทบ lysosome/mitochondria",
+     "answer": true
+    },
+    "tubular cell necrosis",
+    "Cr/BUN ↑",
+    "ต้องลดขนาด/หยุดยา"
+   ],
+   "option_why": {
+    "A": "levofloxacin ไม่ nephrotoxic เด่น",
+    "B": "✓ amikacin (aminoglycoside) → proximal tubular necrosis",
+    "C": "ciprofloxacin ไม่ nephrotoxic เด่น",
+    "D": "ceftazidime ไม่ nephrotoxic เด่น",
+    "E": "Cef… (ไม่ครบข้อความ) ไม่ใช่"
+   }
+  },
+  {
+   "id": "IMM-51-MCQ-080",
+   "block": "IMM",
+   "cohort": 51,
+   "n": 80,
+   "type": "MCQ",
+   "stem": "คนไข้รับยา antibiotic เพื่อรักษา bacterial meningitis ต่อมาเกิด seizure ถามว่ายาที่ได้รับน่าจะเป็นยา อะไร?",
+   "options": {
+    "A": "Imipenem",
+    "B": "Ciprofloxacin",
+    "C": "Cefoxitin",
+    "D": "Doxycycline",
+    "E": "Vancomycin"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "Imipenem ลด seizure threshold ในผู้ป่วย meningitis",
+   "refs": [
+    {
+     "paper": "MCQ51",
+     "pages": [
+      10
+     ]
+    },
+    {
+     "paper": "MCQ51-KEY",
+     "pages": [
+      11
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "imm_51_MCQ_080",
+   "key_concept": "• seizure: imipenem > meropenem, quinolone, penicillin ขนาดสูง\n• meningitis: ceftriaxone ± vancomycin\n• imipenem มี cilastatin",
+   "mechanism": [
+    "imipenem เข้า CNS",
+    {
+     "s": "ยับยั้ง GABA-A",
+     "answer": true
+    },
+    "neuronal excitability ↑",
+    "เกณฑ์ชักลด",
+    "seizure"
+   ],
+   "option_why": {
+    "A": "✓ imipenem มี seizure risk สูงสุดในกลุ่ม carbapenem",
+    "B": "ciprofloxacin ก็ลดเกณฑ์ชัก แต่ไม่ใช่ยา meningitis ทั่วไป",
+    "C": "cefoxitin ไม่ได้ลดเกณฑ์ชัก",
+    "D": "doxycycline ไม่ใช้ใน meningitis",
+    "E": "vancomycin ไม่ทำ seizure"
+   }
+  },
+  {
+   "id": "IMM-51-MCQ-081",
+   "block": "IMM",
+   "cohort": 51,
+   "n": 81,
+   "type": "MCQ",
+   "stem": "นักเรียนมัธยมปลายมาด้วยอาการ ไข้ ไอ หายใจลำบาก ตรวจ sputum gram stian พบ high WBCs but no organism, 3 day later appear atypical pneumonia ควรให้ยาอะไร?",
+   "options": {
+    "A": "Cephalexin",
+    "B": "Ceftriaxone",
+    "C": "Vancomycin",
+    "D": "–",
+    "E": "Azithromycin"
+   },
+   "answer": "E",
+   "answer_status": "verified",
+   "explanation": "Atypical pneumonia (Mycoplasma) ใช้ macrolide เช่น azithromycin",
+   "refs": [
+    {
+     "paper": "MCQ51",
+     "pages": [
+      10
+     ]
+    },
+    {
+     "paper": "MCQ51-KEY",
+     "pages": [
+      11
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "imm_51_MCQ_081",
+   "key_concept": "• atypical pneumonia: macrolide, doxycycline, FQ\n• Mycoplasma ไม่มี cell wall → β-lactam ไม่ได้ผล\n• Gram stain: high WBC no organism",
+   "mechanism": [
+    "Mycoplasma ไม่มี cell wall",
+    "β-lactam ใช้ไม่ได้",
+    {
+     "s": "macrolide จับ 50S",
+     "answer": true
+    },
+    "ยับยั้ง protein synthesis",
+    "หายจาก atypical pneumonia"
+   ],
+   "option_why": {
+    "A": "cephalexin ไม่ครอบคลุม atypical (ไม่มี cell wall)",
+    "B": "ceftriaxone ไม่ครอบคลุม atypical",
+    "C": "vancomycin ไม่ครอบคลุม Gram-negative/atypical",
+    "D": "– (ไม่มีข้อความตัวเลือกที่จำมา)",
+    "E": "✓ azithromycin (macrolide) ครอบคลุม Mycoplasma/Chlamydia/Legionella"
+   }
+  },
+  {
+   "id": "IMM-51-MCQ-082",
+   "block": "IMM",
+   "cohort": 51,
+   "n": 82,
+   "type": "MCQ",
+   "stem": "Which of the following is resistant mechanism Streptococcus viridans to Vancomycin?",
+   "options": {
+    "A": "Lack of porin",
+    "B": "Mutation at 50 gene protein synthesis",
+    "C": "Mutation at D-ala-D-ala to D-ala-D-lac",
+    "D": "Drug efflux",
+    "E": "Inducible production of Methyltransferase"
+   },
+   "answer": "C",
+   "answer_status": "verified",
+   "explanation": "Vancomycin resistance (VRE/viridans) เปลี่ยน D-Ala-D-Ala เป็น D-Ala-D-Lac",
+   "refs": [
+    {
+     "paper": "MCQ51",
+     "pages": [
+      10
+     ]
+    },
+    {
+     "paper": "MCQ51-KEY",
+     "pages": [
+      11
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "imm_51_MCQ_082",
+   "key_concept": "• vancomycin จับ D-Ala-D-Ala ของ peptidoglycan\n• VanA/VanB: D-Ala-D-Lac (VRE)\n• VRSA: vanA จาก Enterococcus",
+   "mechanism": [
+    "vancomycin จับ D-Ala-D-Ala",
+    "ยับยั้ง transglycosylase",
+    {
+     "s": "เชื้อสร้าง D-Ala-D-Lac แทน",
+     "answer": true
+    },
+    "affinity vancomycin ลด",
+    "ดื้อยา"
+   ],
+   "option_why": {
+    "A": "lack of porin เป็นกลไก Gram-negative",
+    "B": "50S gene mutation ไม่ใช่",
+    "C": "✓ D-Ala-D-Ala → D-Ala-D-Lac ลด affinity vancomycin",
+    "D": "efflux ไม่ใช่กลไกหลัก",
+    "E": "methyltransferase คือ macrolide resistance"
+   }
+  },
+  {
+   "id": "IMM-51-MCQ-083",
+   "block": "IMM",
+   "cohort": 51,
+   "n": 83,
+   "type": "MCQ",
+   "stem": "ข้อใดคือ Resistance mechanisms ของ Streptococcus pneumoniae ต่อ Azithromycin?",
+   "options": {
+    "A": "Beta-lactamase",
+    "B": "Mutation ของ Topoisomerase II & VI",
+    "C": "สร้าง Methyltransferase จาก erm gene",
+    "D": "Methylase enzyme ที่ 30s subunit",
+    "E": "Methylase enzyme ที่ 50s subunit"
+   },
+   "answer": "C",
+   "answer_status": "verified",
+   "explanation": "Streptococcus pneumoniae ดื้อ azithromycin ผ่าน erm gene สร้าง methyltransferase ของ 23S rRNA (50S)",
+   "refs": [
+    {
+     "paper": "MCQ51",
+     "pages": [
+      10
+     ]
+    },
+    {
+     "paper": "MCQ51-KEY",
+     "pages": [
+      11
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "imm_51_MCQ_083",
+   "key_concept": "• macrolide resistance: erm (target methylation), mef (efflux)\n• MLSB phenotype (cross-resistance clindamycin)\n• aminoglycoside: modifying enzymes",
+   "mechanism": [
+    "azithromycin จับ 23S rRNA (50S)",
+    "เชื้อมี erm gene",
+    {
+     "s": "methyltransferase methylate rRNA",
+     "answer": true
+    },
+    "จับยาไม่ได้",
+    "ดื้อ macrolide"
+   ],
+   "option_why": {
+    "A": "β-lactamase ทำลาย β-lactam",
+    "B": "topoisomerase mutation = quinolone resistance",
+    "C": "✓ erm methyltransferase เติม methyl บน 23S rRNA ทำให้ macrolide จับไม่ได้",
+    "D": "methylase ที่ 30S ใช้ aminoglycoside",
+    "E": "methylase ที่ 50S ถูกต้องตามกลไก แต่ข้อสอบเลือก erm methyltransferase"
+   }
+  },
+  {
+   "id": "IMM-51-MCQ-084",
+   "block": "IMM",
+   "cohort": 51,
+   "n": 84,
+   "type": "MCQ",
+   "stem": "MOA Basiluximab คือข้อใด?",
+   "options": {
+    "A": "Inhibit mTOR",
+    "B": "Block IL-2 receptor",
+    "C": "Inhibit calcinurin",
+    "D": "Block IL-6",
+    "E": "Inhibit TNF-alpha"
+   },
+   "answer": "B",
+   "answer_status": "verified",
+   "explanation": "Basiliximab = anti-CD25 blocks IL-2 receptor",
+   "refs": [
+    {
+     "paper": "MCQ51",
+     "pages": [
+      11
+     ]
+    },
+    {
+     "paper": "MCQ51-KEY",
+     "pages": [
+      12
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "imm_51_MCQ_084",
+   "key_concept": "• transplant induction: basiliximab (anti-CD25), ATG\n• CNI, mTOR, antimetabolite\n• ลด acute rejection",
+   "mechanism": [
+    "graft กระตุ้น T cell",
+    "IL-2R (CD25) โผล่",
+    {
+     "s": "basiliximab จับ IL-2R",
+     "answer": true
+    },
+    "T cell proliferation ถูกกั้น",
+    "ลด rejection"
+   ],
+   "option_why": {
+    "A": "mTOR = sirolimus",
+    "B": "✓ blocks IL-2 receptor (CD25)",
+    "C": "calcineurin = cyclosporine/tacrolimus",
+    "D": "IL-6 = tocilizumab",
+    "E": "TNF = infliximab"
+   }
+  },
+  {
+   "id": "IMM-51-MCQ-087",
+   "block": "IMM",
+   "cohort": 51,
+   "n": 87,
+   "type": "MCQ",
+   "stem": "การ mutation ของยีน CYP51A ในเชื้อ Aspergillus ทำให้เกิด resistance ต่อยาใด?",
+   "options": {
+    "A": "Nystatin",
+    "B": "Voriconazole",
+    "C": "Griseofulvin",
+    "D": "Flucytosine",
+    "E": "Caspofungin"
+   },
+   "answer": "B",
+   "answer_status": "verified",
+   "explanation": "CYP51A mutation ใน Aspergillus ทำให้ดื้อ azole (voriconazole)",
+   "refs": [
+    {
+     "paper": "MCQ51",
+     "pages": [
+      11
+     ]
+    },
+    {
+     "paper": "MCQ51-KEY",
+     "pages": [
+      12
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "imm_51_MCQ_087",
+   "key_concept": "• azole target = CYP51/Erg11 · resistance: CYP51A mutation, efflux pump\n• Aspergillus: voriconazole first-line\n• echinocandin ใช้ salvage",
+   "mechanism": [
+    "voriconazole ยับยั้ง CYP51",
+    "ergosterol ลดลง",
+    {
+     "s": "CYP51A กลายพันธุ์ จับยาไม่ดี",
+     "answer": true
+    },
+    "ergosterol ยังสร้างได้",
+    "ดื้อยา"
+   ],
+   "option_why": {
+    "A": "nystatin เป็น polyene",
+    "B": "✓ voriconazole (azole) ยับยั้ง CYP51 ถ้า CYP51A กลาย → ดื้อ",
+    "C": "griseofulvin ยับยั้ง microtubule",
+    "D": "flucytosine ยับยั้ง DNA synthesis",
+    "E": "caspofungin ยับยั้ง glucan synthase"
+   }
+  },
+  {
+   "id": "IMM-51-MCQ-090",
+   "block": "IMM",
+   "cohort": 51,
+   "n": 90,
+   "type": "MCQ",
+   "stem": "What is the mechanism of acyclovir?",
+   "options": {
+    "A": "Thymidine kinase",
+    "B": "–",
+    "C": "–",
+    "D": "–",
+    "E": "–"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "Acyclovir ถูก viral thymidine kinase phosphorylate เป็น acyclovir-MP แล้วเป็น triphosphate ยับยั้ง viral DNA polymerase",
+   "refs": [
+    {
+     "paper": "MCQ51",
+     "pages": [
+      11
+     ]
+    },
+    {
+     "paper": "MCQ51-KEY",
+     "pages": [
+      12
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "imm_51_MCQ_090",
+   "key_concept": "• acyclovir: HSV/VZV TK → ACV-TP → DNA polymerase inhibitor + chain terminator\n• TK-deficient mutant ดื้อยา → foscarnet\n• ganciclovir ใช้ CMV (UL97)",
+   "mechanism": [
+    "acyclovir เข้าเซลล์",
+    {
+     "s": "viral thymidine kinase phosphorylate",
+     "answer": true
+    },
+    "เป็น ACV-triphosphate",
+    "ยับยั้ง viral DNA polymerase",
+    "chain termination"
+   ],
+   "option_why": {
+    "A": "✓ viral thymidine kinase กระตุ้นยา (activation) ทำให้จำเพาะต่อเซลล์ติดเชื้อ",
+    "B": "– (ไม่มีข้อความตัวเลือกที่จำมา)",
+    "C": "– (ไม่มีข้อความตัวเลือกที่จำมา)",
+    "D": "– (ไม่มีข้อความตัวเลือกที่จำมา)",
+    "E": "– (ไม่มีข้อความตัวเลือกที่จำมา)"
+   }
+  },
+  {
+   "id": "IMM-51-MCQ-092",
+   "block": "IMM",
+   "cohort": 51,
+   "n": 92,
+   "type": "MCQ",
+   "stem": "ผู้ป่วยชายอายุ 25 ปี ป่วยเป็นเอดส์และได้รับการรักษาด้วยยา 3 ตัว ได้แก่ Tenofovir, Lamivudine และ… เพราะเหตุใดจึงต้อง combine ยา 3 ตัวในการรักษา?",
+   "options": {
+    "A": "เพิ่ม CD4",
+    "B": "เพิ่ม CD8",
+    "C": "เพิ่ม affinity",
+    "D": "ลด ADR",
+    "E": "ป้องกัน drug resistance"
+   },
+   "answer": "E",
+   "answer_status": "verified",
+   "explanation": "ให้ ARV 3 ตัวเพื่อป้องกัน drug resistance",
+   "refs": [
+    {
+     "paper": "MCQ51",
+     "pages": [
+      12
+     ]
+    },
+    {
+     "paper": "MCQ51-KEY",
+     "pages": [
+      13
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "imm_51_MCQ_092",
+   "key_concept": "• HIV RT error-prone → ต้อง ≥ 3 ยา (HAART)\n• monotherapy → resistance เร็ว\n• TDF + 3TC + DTG/EFV",
+   "mechanism": [
+    "HIV mutate เร็ว",
+    "ยา 1 ตัว → selection ต่อเชื้อดื้อ",
+    {
+     "s": "ยา 3 ตัวกดไวรัสพร้อมกัน",
+     "answer": true
+    },
+    "ไวรัสที่ดื้อทุกตัวพร้อมกันน้อยมาก",
+    "ป้องกัน resistance"
+   ],
+   "option_why": {
+    "A": "ART ไม่ได้เพิ่ม CD4 โดยตรงเป็นเหตุผล combine",
+    "B": "ไม่เพิ่ม CD8",
+    "C": "ไม่ได้เพิ่ม affinity",
+    "D": "combine ไม่ได้ลด ADR (อาจเพิ่ม)",
+    "E": "✓ combination ป้องกัน resistance (mutation rate สูงของ HIV)"
+   }
+  },
+  {
+   "id": "IMM-51-MCQ-093",
+   "block": "IMM",
+   "cohort": 51,
+   "n": 93,
+   "type": "MCQ",
+   "stem": "ชาย 31 ปีไปเที่ยวมาเลเซียหลังจากกลับมามี fever, chill เมื่อทำ blood culture เจอ P.vivax ถามว่า จะต้องให้ยาอะไร?",
+   "options": {
+    "A": "Chloroquine 3 days",
+    "B": "DHA-PIP 3 days + Primaquine 1 day",
+    "C": "Chloroquine 3 days + Primaquine 14 days",
+    "D": "Sulfadoxine + Pyrimethamine 3 days (ไม่แน่ใจว่าจำถูกมั้ย)",
+    "E": "–"
+   },
+   "answer": "C",
+   "answer_status": "verified",
+   "explanation": "P. vivax: chloroquine 3 วัน + primaquine 14 วัน (ฆ่า hypnozoite)",
+   "refs": [
+    {
+     "paper": "MCQ51",
+     "pages": [
+      12
+     ]
+    },
+    {
+     "paper": "MCQ51-KEY",
+     "pages": [
+      13
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "imm_51_MCQ_093",
+   "key_concept": "• vivax/ovale: schizonticide + primaquine 14 วัน (hypnozoite)\n• falciparum: ACT + primaquine single dose\n• G6PD ก่อน primaquine",
+   "mechanism": [
+    "vivax มี blood stage + hypnozoite",
+    "chloroquine ฆ่า blood stage",
+    {
+     "s": "primaquine 14 วันฆ่า hypnozoite",
+     "answer": true
+    },
+    "ป้องกัน relapse",
+    "หายขาด"
+   ],
+   "option_why": {
+    "A": "chloroquine อย่างเดียวไม่กัน relapse",
+    "B": "DHA-PIP + primaquine 1 วัน ใช้ falciparum",
+    "C": "✓ chloroquine 3 วัน + primaquine 14 วัน (ตรวจ G6PD ก่อน)",
+    "D": "SP ไม่ใช่ standard vivax",
+    "E": "– (ไม่มีข้อความตัวเลือกที่จำมา)"
+   }
+  },
+  {
+   "id": "IMM-51-MCQ-095",
+   "block": "IMM",
+   "cohort": 51,
+   "n": 95,
+   "type": "MCQ",
+   "stem": "ชายคนหนึ่งไปประเทศ… กินยา Chloroquine ถามว่า MOA ของยานี้คืออะไร?",
+   "options": {
+    "A": "Inhibit heme polymerase",
+    "B": "–",
+    "C": "–",
+    "D": "–",
+    "E": "–"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "Chloroquine ยับยั้ง heme polymerase ทำให้ heme พิษสะสมใน food vacuole",
+   "refs": [
+    {
+     "paper": "MCQ51",
+     "pages": [
+      12
+     ]
+    },
+    {
+     "paper": "MCQ51-KEY",
+     "pages": [
+      13
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "imm_51_MCQ_095",
+   "key_concept": "• chloroquine: heme polymerase inhibitor ใน blood schizont\n• ดื้อยาจาก PfCRT efflux\n• ใช้ vivax/ovale/malariae (ไวต่อ chloroquine)",
+   "mechanism": [
+    "ปรสิตย่อย hemoglobin",
+    "ได้ heme พิษ",
+    {
+     "s": "chloroquine ยับยั้ง heme polymerase",
+     "answer": true
+    },
+    "heme สะสม",
+    "ปรสิตตาย"
+   ],
+   "option_why": {
+    "A": "✓ inhibit heme polymerase (heme → hemozoin ถูกกั้น)",
+    "B": "– (ไม่มีข้อความตัวเลือกที่จำมา)",
+    "C": "– (ไม่มีข้อความตัวเลือกที่จำมา)",
+    "D": "– (ไม่มีข้อความตัวเลือกที่จำมา)",
+    "E": "– (ไม่มีข้อความตัวเลือกที่จำมา)"
+   }
+  },
+  {
+   "id": "IMM-51-MCQ-096",
+   "block": "IMM",
+   "cohort": 51,
+   "n": 96,
+   "type": "MCQ",
+   "stem": "ชายอายุ 25 ปี เข้าโรงพยาบาลมาแล้ว 3 วันด้วยอาการ fever, headache, muscle pain, joint swelling, and rashes. He was suspected for having Chikungunya virus infection. Which of the following techniques is suitable for this diagnosis?",
+   "options": {
+    "A": "RT-PCR",
+    "B": "Plaque titration assay",
+    "C": "Whole Genome Sequencing",
+    "D": "Reverse Passive Hemagglutination",
+    "E": "Immune chromatographic Assay"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "Chikungunya acute ตรวจ RT-PCR (ยังไม่มี antibody)",
+   "refs": [
+    {
+     "paper": "MCQ51",
+     "pages": [
+      13
+     ]
+    },
+    {
+     "paper": "MCQ51-KEY",
+     "pages": [
+      14
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "imm_51_MCQ_096",
+   "key_concept": "• acute (≤ 7 วัน): RT-PCR · หลังนั้น IgM/IgG\n• 3 วันหลังไข้ viremia สูง\n• paired sera ยืนยัน",
+   "mechanism": [
+    "ไข้ 3 วัน",
+    {
+     "s": "viremia สูง",
+     "answer": true
+    },
+    "RT-PCR ขยาย RNA",
+    "พบ RNA",
+    "ยืนยันวินิจฉัย"
+   ],
+   "option_why": {
+    "A": "✓ RT-PCR ตรวจ viral RNA ระยะเฉียบพลัน",
+    "B": "plaque titration assay เป็น research/neutralizing",
+    "C": "WGS ไม่ใช่ routine",
+    "D": "RPHA ไม่ใช่",
+    "E": "immunochromatographic ตรวจ antibody ซึ่งช้า"
+   }
+  },
+  {
+   "id": "IMM-51-MCQ-097",
+   "block": "IMM",
+   "cohort": 51,
+   "n": 97,
+   "type": "MCQ",
+   "stem": "ตรวจ Indirect hemagglutination ได้ acute serum titer 1:200 convalescent serum 1:1600 อ่านผล ว่าอย่างไร?",
+   "options": {
+    "A": "ไม่ติดเชื้อ",
+    "B": "Inconclusive",
+    "C": "Latent infection",
+    "D": "Past infection",
+    "E": "Recent infections"
+   },
+   "answer": "E",
+   "answer_status": "verified",
+   "explanation": "Titer 1:200 → 1:1600 (≥ 4 เท่า) = recent infection",
+   "refs": [
+    {
+     "paper": "MCQ51",
+     "pages": [
+      13
+     ]
+    },
+    {
+     "paper": "MCQ51-KEY",
+     "pages": [
+      14
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "imm_51_MCQ_097",
+   "key_concept": "• paired sera: ≥ 4 เท่า = recent infection\n• IgM สูง = recent · IgG คงที่ = past\n• indirect hemagglutination ใช้ titer",
+   "mechanism": [
+    "acute titer 1:200",
+    "convalescent 1:1600",
+    {
+     "s": "เพิ่ม 8 เท่า",
+     "answer": true
+    },
+    "≥ 4× criterion",
+    "recent infection"
+   ],
+   "option_why": {
+    "A": "เพิ่ม titer ไม่ใช่ no infection",
+    "B": "inconclusive ไม่ใช่",
+    "C": "latent infection ไม่มี titer เปลี่ยน",
+    "D": "past infection titer คงที่",
+    "E": "✓ ≥ 4× rise = recent infection"
+   }
+  },
+  {
+   "id": "IMM-51-MCQ-100",
+   "block": "IMM",
+   "cohort": 51,
+   "n": 100,
+   "type": "MCQ",
+   "stem": "A man would like to test for influenza virus infection after vaccination 2 months ago…",
+   "options": {
+    "A": "Precipitation",
+    "B": "Neutralization",
+    "C": "Indirect hemagglutinin",
+    "D": "Sandwich",
+    "E": "–"
+   },
+   "answer": "B",
+   "answer_status": "verified",
+   "explanation": "ทดสอบ immunity หลังวัคซีน influenza ใช้ neutralization test",
+   "refs": [
+    {
+     "paper": "MCQ51",
+     "pages": [
+      13
+     ]
+    },
+    {
+     "paper": "MCQ51-KEY",
+     "pages": [
+      14
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "imm_51_MCQ_100",
+   "key_concept": "• vaccine response: HI/neutralization titer\n• neutralization = protective antibody\n• HI titer ≥ 1:40 ป้องกัน",
+   "mechanism": [
+    "ฉีดวัคซีน",
+    "สร้าง neutralizing antibody",
+    {
+     "s": "neutralization test",
+     "answer": true
+    },
+    "วัด functional titer",
+    "ยืนยัน protective immunity"
+   ],
+   "option_why": {
+    "A": "precipitation ไม่เหมาะ",
+    "B": "✓ neutralization วัด antibody ที่ป้องกัน (functional)",
+    "C": "indirect hemagglutinin เป็น HI",
+    "D": "sandwich ELISA ตรวจ antigen",
+    "E": "– (ไม่มีข้อความตัวเลือกที่จำมา)"
+   }
+  }
+ ]
+}

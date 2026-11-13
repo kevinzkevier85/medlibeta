@@ -2,12 +2,12 @@
 > งานที่ทำค้างล่าสุด: ดู branch ที่ push ล่าสุด `git branch -r --sort=-committerdate | head -3` แล้ว `git log -5 --format=%B <branch>` — บรรทัด `ถัดไป:` คือขั้นต่อไป
 อัปเดต: 2026-11-12 · เขียนโดย Claude (ผู้ใช้: Finn)
 
-## 0. โปรเจกต์นี้คืออะไร
-- **MedLib** = เว็บคลังข้อสอบ/lecture แพทย์ PSU ปี 1–3 (static HTML+JS, ไม่มี build) · repo `github.com/kevinzkevier85/medlibeta` · เว็บ `kevinzkevier85.github.io/medlibeta`
-- ข้อสอบต้นฉบับ = PDF ของรุ่นพี่ใน Google Drive (`preclinic/<ปี>/<บล็อก>/`) → AI อ่าน ตรวจเฉลย ตัดรูป → JSON ใน `data/blocks/<BLOCK>/exams/`
-- ทำงาน 2 คน (Finn + เพื่อน): แก้บน branch `finn-…` → PR → **อีกคนเป็นคน merge** ห้าม push main ตรง ห้าม force push
-- รันเว็บ: `python -m http.server 8765` · ตรวจข้อมูล: `node tools/validate.cjs` (ต้องผ่านก่อนส่งทุกครั้ง)
-- ส่งงานทุกครั้ง: เพิ่มเลขใน `version.json` + `CHANGELOG.md` + `?v=` ใน `index.html` + `VERSION` ใน `sw.js`
+## 0. บล็อก Immunity (IMM) — เกือบครบทั้งบล็อก (Drive `preclinic/2/immunity`)
+- branch **`finn-imm-block`** (แตกจาก finn-resp-kf-ospe / PR #78) · block id `IMM` · inventory `imm_<รุ่น>_<MCQ|KF|OSPE>` 25 ชุด · ชุดรวม (41-43, 40-43) ใช้ `medlib_cohort: 43`
+- MCQ ✅ 41-43, 44, 45, 46, 47, 49, 50, 51, 52 · ⏳ 48 (ไม่มีเฉลย 123 ข้อ → AI ตอบ draft) · ⛔ 40 (โน้ตจำ ไม่มีตัวเลือก ข้าม)
+- KF ✅ 9 ชุด (47 AI draft; 40-43, 48–49 บางข้อ draft) · OSPE ✅ ครบ 5 ชุด (40-43 และ 47 เป็น draft; 40-43 ไม่มีรูป) · ⏳ เหลือ MCQ 48 (123 ข้อ ไม่มีเฉลย → ต้องให้ AI ตอบ ติด draft: ทำ key.json/blind.json จาก AI แล้วเขียน repair + merge.py เหมือนชุดอื่น; ดู `auditor/tools/parse_mcq.py --set imm_48_MCQ` ที่ parse แล้ว)
+- ข้อ MCQ ที่ต้นฉบับขัดกับ AI ถูกคงไว้ตามต้นฉบับ มีความเห็น AI ใน option_why (ค้นคำว่า "AI เห็นว่า") ผู้ตรวจควรดู
+- เครื่องมือ: `parse_mcq.py`/`parse_key.py` รองรับเลขข้อกระโดดได้ถึง +60 · เฉลยลายมือ/ไฮไลต์ที่อ่านไม่ได้ต้องดู `auditor/raw/<ชุด>/key_pNNN.png`
 
 ## 1. บล็อก Respiratory (RESP) — ครบทุกชุดแล้ว (Drive `preclinic/2/respiratory`)
 - branch **`finn-resp-kf-ospe`** · block id `RESP` · inventory `resp_<รุ่น>_<MCQ|KF|OSPE>` · `data/blocks/RESP/`

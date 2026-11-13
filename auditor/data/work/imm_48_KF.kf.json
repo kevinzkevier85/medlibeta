@@ -1,0 +1,924 @@
+{
+ "set_id": "imm_48_KF",
+ "note": "KF Immunity MED PSU 48 · 19 ข้อ · เฉลยลายมือจากไฟล์ต้นฉบับ (ไฟล์ข้อความเพี้ยน อ่านจากภาพ) · ข้อ 3, 4, 5 ลายมือบางช่วงอ่านไม่ชัด AI สรุป/เติม ติด draft · ข้อ 19.2 และ 19.8 ผู้เฉลยตอบต่างจากที่ AI เห็น คงตามต้นฉบับ",
+ "questions": [
+  {
+   "n": 1,
+   "page": 2,
+   "tags": [
+    "microbiology"
+   ],
+   "case": "หญิงอายุ 60 ปี เป็นเบาหวาน 5 ปี ไข้หนาวสั่น ไอ หอบเหนื่อย 3 วัน T 38.5 °C P 90 R 30 BP 120/80 ภาพรังสีพบ patchy infiltration ที่ left upper lobe วินิจฉัย Lt. upper lobe pneumonia",
+   "answer_status": "verified",
+   "items": [
+    {
+     "id": "1.1",
+     "prompt": "บอกชื่อเชื้อ Gram-positive bacteria ที่ก่อโรคปอดอักเสบนี้ได้บ่อย 1 ชนิด",
+     "format": "short",
+     "accepted": [
+      "pneumoniae",
+      "aureus"
+     ],
+     "keywords_all": [
+      "pneumoniae"
+     ],
+     "key_text": "Streptococcus pneumoniae (พบบ่อยที่สุด) หรือ Staphylococcus aureus (hospital-acquired)",
+     "source_key": "เฉลย: Streptococcus pneumoniae (พบบ่อยที่สุด) หรือ Staphylococcus aureus (hospital-acquired)"
+    },
+    {
+     "id": "1.2",
+     "prompt": "บอกชื่อเชื้อ Gram-negative หรือแบคทีเรียอื่นที่ก่อปอดอักเสบที่พบได้บ่อย 2 ชนิด",
+     "format": "short",
+     "accepted": [
+      "haemophilus",
+      "klebsiella",
+      "pseudomonas",
+      "mycoplasma",
+      "legionella"
+     ],
+     "keywords_all": [
+      "haemophilus"
+     ],
+     "key_text": "Haemophilus influenzae และ Klebsiella pneumoniae (typical) · อื่น ๆ: Pseudomonas aeruginosa, Enterobacter, Acinetobacter (hospital-acquired); Mycoplasma pneumoniae, Legionella pneumophila (atypical)",
+     "source_key": "เฉลย: Haemophilus influenzae และ Klebsiella pneumoniae (typical) · อื่น ๆ: Pseudomonas aeruginosa, Enterobacter, Acinetobacter (hospital-acquired); Mycoplasma pneumoniae, Legionella pneumophila (atypical)"
+    },
+    {
+     "id": "1.3",
+     "prompt": "วิธีตรวจหาเชื้อสาเหตุที่ได้ผลเร็วและใช้ทรัพยากรน้อยที่สุด 1 อย่าง",
+     "format": "short",
+     "accepted": [
+      "gram"
+     ],
+     "keywords_all": [
+      "gram"
+     ],
+     "key_text": "Sputum Gram staining",
+     "source_key": "เฉลย: Sputum Gram staining"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "page": 2,
+   "tags": [
+    "microbiology"
+   ],
+   "case": "ชายอายุ 25 ปี ไข้ปวดเข่าข้างขวา 4 วัน T 38.2 °C P 38/min R 20/min BP 120/80 เข่าขวาบวม ร้อน กดเจ็บ มี joint effusion เจาะน้ำข้อพบ thick cloudy joint fluid WBC 20,000 cells/mL PMN 100% ย้อมสีกรัมพบเชื้อแบคทีเรีย วินิจฉัยเบื้องต้น septic arthritis",
+   "answer_status": "verified",
+   "items": [
+    {
+     "id": "2.1",
+     "prompt": "บอกชื่อเชื้อ Gram-positive bacteria ก่อโรคในผู้ป่วยรายนี้ที่พบได้บ่อย 2 ชนิด",
+     "format": "short",
+     "accepted": [
+      "aureus",
+      "pyogenes",
+      "pneumoniae",
+      "enterococcus"
+     ],
+     "keywords_all": [
+      "aureus"
+     ],
+     "key_text": "Staphylococcus aureus (พบบ่อยที่สุด) และ Streptococcus pyogenes (หรือ S. pneumoniae, Enterococcus faecalis)",
+     "source_key": "เฉลย: Staphylococcus aureus (พบบ่อยที่สุด) และ Streptococcus pyogenes (หรือ S. pneumoniae, Enterococcus faecalis)"
+    },
+    {
+     "id": "2.2",
+     "prompt": "บอกชื่อเชื้อ Gram-negative bacteria ก่อโรคในผู้ป่วยรายนี้ที่พบได้บ่อย 2 ชนิด",
+     "format": "short",
+     "accepted": [
+      "gonorrhoeae",
+      "influenzae",
+      "coli"
+     ],
+     "keywords_all": [
+      "gonorrhoeae"
+     ],
+     "key_text": "Neisseria gonorrhoeae, Haemophilus influenzae หรือ Escherichia coli",
+     "source_key": "เฉลย: Neisseria gonorrhoeae, Haemophilus influenzae หรือ Escherichia coli"
+    },
+    {
+     "id": "2.3",
+     "prompt": "บอกชื่อยาปฏิชีวนะที่มีฤทธิ์ครอบคลุมเชื้อข้างต้นได้ทั้งในข้อ 1 และ 2 มา 1 ชนิด",
+     "format": "short",
+     "accepted": [
+      "cefazolin"
+     ],
+     "keywords_all": [
+      "cefazolin"
+     ],
+     "key_text": "Cefazolin (ครอบคลุม Gram-positive ส่วนใหญ่ + E. coli)",
+     "source_key": "เฉลย: Cefazolin (ครอบคลุม Gram-positive ส่วนใหญ่ + E. coli)"
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "page": 3,
+   "tags": [
+    "infection"
+   ],
+   "case": "ชายอายุ 63 ปี เบาหวาน เริ่มไอวันที่ 1 มิถุนายน มา รพ. วันที่ 8 มิถุนายน เพราะหอบเหนื่อย แพทย์วินิจฉัยติดเชื้อ SARS-CoV-2 และมีอาการปอดอักเสบรุนแรง",
+   "answer_status": "draft",
+   "items": [
+    {
+     "id": "3.1",
+     "prompt": "กลไกหลักที่ทำให้เกิดปอดอักเสบรุนแรง",
+     "format": "short",
+     "accepted": [
+      "cytokine"
+     ],
+     "keywords_all": [
+      "cytokine"
+     ],
+     "key_text": "Cytokine storm",
+     "source_key": "เฉลย: Cytokine storm"
+    },
+    {
+     "id": "3.2",
+     "prompt": "ถ้าสมาชิกในครอบครัว 3 คน ตรวจไม่พบเชื้อ SARS-CoV-2 ในวันที่ 8 มิถุนายน จะนัดตรวจซ้ำเมื่อใดเพื่อยืนยันว่าไม่ติดเชื้อ (incubation period 2–14 วัน)",
+     "format": "short",
+     "accepted": [
+      "22"
+     ],
+     "keywords_all": [
+      "22"
+     ],
+     "key_text": "วันที่ 22 มิถุนายน (8 + 14 วัน)",
+     "source_key": "เฉลย: วันที่ 22 มิถุนายน (8 + 14 วัน)"
+    },
+    {
+     "id": "3.3",
+     "prompt": "การดูแลตัวเองของสมาชิกในครอบครัวเพื่อไม่ให้ติดเชื้อ 2 ข้อ",
+     "format": "short",
+     "accepted": [
+      "หน้ากาก",
+      "ของส่วนตัว",
+      "mask"
+     ],
+     "keywords_all": [
+      "หน้ากาก"
+     ],
+     "key_text": "สวมหน้ากากอนามัยอย่างถูกวิธี (หรือ N95 ถ้ามี) และไม่ใช้ของส่วนตัวร่วมกับผู้อื่น",
+     "source_key": "เฉลย: สวมหน้ากากอนามัยอย่างถูกวิธี (หรือ N95 ถ้ามี) และไม่ใช้ของส่วนตัวร่วมกับผู้อื่น",
+     "explanation": "ลายมือเฉลยอ่านไม่ชัด AI สรุปตามความหมาย"
+    },
+    {
+     "id": "3.4",
+     "prompt": "การดูแลเพื่อไม่ให้แพร่เชื้อไปให้บุคคลอื่น 2 ข้อ",
+     "format": "short",
+     "accepted": [
+      "แยก",
+      "ล้างมือ",
+      "ไอ"
+     ],
+     "keywords_all": [
+      "แยก"
+     ],
+     "key_text": "แยกตัวในสถานที่เหมาะสม และล้างมือบ่อย ๆ ไอ/จามใส่ข้อพับแขนหรือกระดาษทิชชู",
+     "source_key": "เฉลย: แยกตัวในสถานที่เหมาะสม และล้างมือบ่อย ๆ ไอ/จามใส่ข้อพับแขนหรือกระดาษทิชชู",
+     "explanation": "ลายมือเฉลยอ่านไม่ชัด AI สรุปตามความหมาย"
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "page": 3,
+   "tags": [
+    "infection"
+   ],
+   "case": "เด็กหญิงอายุ 12 ปี ไข้สูง ผื่น maculopapular ปวดกล้ามเนื้อ และปวดข้อหลายข้อสองข้าง 2 วัน CBC: Hct 36%, WBC 6,000 (neutrophil 55%, lymphocyte 40%), platelet 200,000",
+   "answer_status": "draft",
+   "items": [
+    {
+     "id": "4.1",
+     "prompt": "ผู้ป่วยน่าจะเป็นโรคอะไรมากที่สุด",
+     "format": "short",
+     "accepted": [
+      "chikungunya"
+     ],
+     "keywords_all": [
+      "chikungunya"
+     ],
+     "key_text": "Chikungunya",
+     "source_key": "เฉลย: Chikungunya"
+    },
+    {
+     "id": "4.2",
+     "prompt": "ประวัติผู้ป่วยที่สำคัญในการวินิจฉัย (2 ข้อ)",
+     "format": "short",
+     "accepted": [
+      "ระบาด",
+      "ชุมชน",
+      "เดินทาง"
+     ],
+     "keywords_all": [
+      "ระบาด"
+     ],
+     "key_text": "เคยอยู่/เดินทางไปพื้นที่ที่มีการระบาด และมีผู้ป่วยในชุมชนที่ติดเชื้อ CHIKV ด้วย",
+     "source_key": "เฉลย: เคยอยู่/เดินทางไปพื้นที่ที่มีการระบาด และมีผู้ป่วยในชุมชนที่ติดเชื้อ CHIKV ด้วย",
+     "explanation": "ลายมือเฉลยอ่านไม่ชัด AI สรุปตามความหมาย"
+    },
+    {
+     "id": "4.3",
+     "prompt": "ผู้ป่วยติดเชื้อดังกล่าวได้อย่างไร",
+     "format": "short",
+     "accepted": [
+      "ยุง",
+      "aedes"
+     ],
+     "keywords_all": [
+      "ยุง"
+     ],
+     "key_text": "ถูกยุงลาย (Aedes) ที่มีเชื้อ CHIKV กัด",
+     "source_key": "เฉลย: ถูกยุงลาย (Aedes) ที่มีเชื้อ CHIKV กัด"
+    },
+    {
+     "id": "4.4",
+     "prompt": "ผู้ป่วยมีโอกาสเป็นโรคนี้ซ้ำได้หรือไม่ พร้อมเหตุผล",
+     "format": "short",
+     "accepted": [
+      "ไม่",
+      "neutraliz"
+     ],
+     "keywords_all": [
+      "ไม่"
+     ],
+     "key_text": "ไม่ เพราะหลังติดเชื้อร่างกายสร้าง neutralizing antibody ป้องกันการติดซ้ำ",
+     "source_key": "เฉลย: ไม่ เพราะหลังติดเชื้อร่างกายสร้าง neutralizing antibody ป้องกันการติดซ้ำ",
+     "explanation": "ลายมือเฉลยอ่านไม่ชัด AI สรุปตามความหมาย"
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "page": 4,
+   "tags": [
+    "parasitology"
+   ],
+   "case": "เด็กชายอายุ 4 ปี ชักเกร็งกระตุกทั้งตัวเมื่อคืน แพทย์ส่ง MRI สมอง พบความผิดปกติดังรูป",
+   "answer_status": "draft",
+   "items": [
+    {
+     "id": "5.1",
+     "prompt": "การวินิจฉัยคือโรคอะไร และเชื้อก่อโรคคืออะไร",
+     "format": "short",
+     "accepted": [
+      "cysticerc",
+      "solium"
+     ],
+     "keywords_all": [
+      "cysticerc"
+     ],
+     "key_text": "Cysticercosis จากตัวอ่อน Cysticercus cellulosae (Taenia solium)",
+     "source_key": "เฉลย: Cysticercosis จากตัวอ่อน Cysticercus cellulosae (Taenia solium)",
+     "image": "img/IMM-48-KF-001.jpg",
+     "image_caption": "MRI สมอง: cyst หลายก้อน"
+    },
+    {
+     "id": "5.2",
+     "prompt": "ผู้ป่วยเป็นโรคนี้ได้อย่างไร",
+     "format": "short",
+     "accepted": [
+      "ไข่",
+      "egg"
+     ],
+     "keywords_all": [
+      "ไข่"
+     ],
+     "key_text": "กินไข่ของ T. solium ที่ปนเปื้อนมากับอาหาร/น้ำ/ผักที่ไม่สะอาด (fecal-oral)",
+     "source_key": "เฉลย: กินไข่ของ T. solium ที่ปนเปื้อนมากับอาหาร/น้ำ/ผักที่ไม่สะอาด (fecal-oral)",
+     "explanation": "ลายมือเฉลยอ่านไม่ชัด AI สรุปตามความหมาย"
+    },
+    {
+     "id": "5.3",
+     "prompt": "ยาที่ใช้รักษาผู้ป่วยรายนี้คือยาอะไร",
+     "format": "short",
+     "accepted": [
+      "albendazole",
+      "praziquantel"
+     ],
+     "keywords_all": [
+      "albendazole"
+     ],
+     "key_text": "Albendazole หรือ Praziquantel",
+     "source_key": "เฉลย: Albendazole หรือ Praziquantel"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "page": 4,
+   "tags": [
+    "microbiology"
+   ],
+   "case": "ชายอายุ 26 ปี ไข้และไอแห้ง ๆ 2 สัปดาห์ เหนื่อยมากขึ้นเวลาออกแรง 1 สัปดาห์ น้ำหนักลด 10 กก. ใน 2 เดือน เบื่ออาหาร PE: severe hypoxia, CXR: interstitial infiltration และ ground-glass appearance ภาพคือเสมหะย้อม Gomori-Methenamine Silver (GMS)",
+   "answer_status": "verified",
+   "items": [
+    {
+     "id": "6.1",
+     "prompt": "เชื้อก่อโรคในผู้ป่วยรายนี้คืออะไร",
+     "format": "short",
+     "accepted": [
+      "pneumocystis",
+      "jirovec"
+     ],
+     "keywords_all": [
+      "pneumocystis"
+     ],
+     "key_text": "Pneumocystis jirovecii",
+     "source_key": "เฉลย: Pneumocystis jirovecii",
+     "image": "img/IMM-48-KF-002.jpg",
+     "image_caption": "GMS stain: cyst ของ Pneumocystis"
+    },
+    {
+     "id": "6.2",
+     "prompt": "ยาที่ใช้รักษาผู้ป่วยรายนี้คือยาอะไร",
+     "format": "short",
+     "accepted": [
+      "trimoxazole",
+      "tmp"
+     ],
+     "keywords_all": [
+      "trimoxazole"
+     ],
+     "key_text": "Co-trimoxazole",
+     "source_key": "เฉลย: Co-trimoxazole"
+    },
+    {
+     "id": "6.3",
+     "prompt": "Underlying disease ที่ต้องตรวจหาในผู้ป่วยรายนี้คือโรคอะไร",
+     "format": "short",
+     "accepted": [
+      "aids",
+      "hiv"
+     ],
+     "keywords_all": [
+      "hiv"
+     ],
+     "key_text": "AIDS (HIV infection)",
+     "source_key": "เฉลย: AIDS (HIV infection)"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "page": 5,
+   "tags": [
+    "immunology"
+   ],
+   "case": "What complement component mainly helps opsonization and phagocytosis of bacteria?",
+   "answer_status": "verified",
+   "items": [
+    {
+     "id": "7",
+     "prompt": "องค์ประกอบ complement ที่ช่วย opsonization และ phagocytosis",
+     "format": "short",
+     "accepted": [
+      "c3b"
+     ],
+     "keywords_all": [
+      "c3b"
+     ],
+     "key_text": "C3b",
+     "source_key": "เฉลย: C3b"
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "page": 5,
+   "tags": [
+    "immunology"
+   ],
+   "case": "Tuberculosis is caused by Mycobacterium tuberculosis. The common infection site is the lung. Which innate immune cells play a key role against M. tb in lung tissue?",
+   "answer_status": "verified",
+   "items": [
+    {
+     "id": "8",
+     "prompt": "เซลล์ innate immunity ที่สำคัญต่อ M. tb ในปอด",
+     "format": "short",
+     "accepted": [
+      "macrophage"
+     ],
+     "keywords_all": [
+      "macrophage"
+     ],
+     "key_text": "Macrophage",
+     "source_key": "เฉลย: Macrophage"
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "page": 5,
+   "tags": [
+    "immunology"
+   ],
+   "case": "How does adaptive immunity help enhance innate immune cells to mediate function against tuberculosis? Indicate the cell type and the key cytokine.",
+   "answer_status": "verified",
+   "items": [
+    {
+     "id": "9",
+     "prompt": "ชนิดเซลล์และ cytokine หลัก",
+     "format": "short",
+     "accepted": [
+      "th1",
+      "ifn"
+     ],
+     "keywords_all": [
+      "th1"
+     ],
+     "key_text": "Th1 cell หลั่ง IFN-γ (กระตุ้น macrophage)",
+     "source_key": "เฉลย: Th1 cell หลั่ง IFN-γ (กระตุ้น macrophage)"
+    }
+   ]
+  },
+  {
+   "n": 10,
+   "page": 5,
+   "tags": [
+    "immunology"
+   ],
+   "case": "SARS-CoV-2 is a respiratory virus. What type of immunoglobulin can neutralize SARS-CoV-2 in the respiratory airway?",
+   "answer_status": "verified",
+   "items": [
+    {
+     "id": "10",
+     "prompt": "Immunoglobulin ที่ neutralize ไวรัสในทางเดินหายใจ",
+     "format": "short",
+     "accepted": [
+      "iga"
+     ],
+     "keywords_all": [
+      "iga"
+     ],
+     "key_text": "IgA (secretory IgA)",
+     "source_key": "เฉลย: IgA (secretory IgA)"
+    }
+   ]
+  },
+  {
+   "n": 11,
+   "page": 5,
+   "tags": [
+    "immunology"
+   ],
+   "case": "What type of immunoglobulin in the blood could indicate early infection of SARS-CoV-2?",
+   "answer_status": "verified",
+   "items": [
+    {
+     "id": "11",
+     "prompt": "Immunoglobulin ในเลือดที่บ่งชี้การติดเชื้อระยะแรก",
+     "format": "short",
+     "accepted": [
+      "igm"
+     ],
+     "keywords_all": [
+      "igm"
+     ],
+     "key_text": "IgM",
+     "source_key": "เฉลย: IgM"
+    }
+   ]
+  },
+  {
+   "n": 12,
+   "page": 6,
+   "tags": [
+    "immunology"
+   ],
+   "case": "The presence of spike-specific IgG could predict COVID-19 effectiveness. What cell type secretes this immunoglobulin?",
+   "answer_status": "verified",
+   "items": [
+    {
+     "id": "12",
+     "prompt": "เซลล์ที่หลั่ง immunoglobulin นี้",
+     "format": "short",
+     "accepted": [
+      "plasma",
+      "b cell"
+     ],
+     "keywords_all": [
+      "plasma"
+     ],
+     "key_text": "B cell (plasma cell)",
+     "source_key": "เฉลย: B cell (plasma cell)"
+    }
+   ]
+  },
+  {
+   "n": 13,
+   "page": 6,
+   "tags": [
+    "immunology"
+   ],
+   "case": "autoantibodies: A Anti-Ro, B Anti-MPO, C Anti-CCP, D Anti-Sm, E Anti-La, F ASO titer, G Anti-dsDNA, H Anti-DNase B, I Anti-PR3, J Rheumatoid factor · จับคู่ autoantibodies 2 ชนิด (เอาเฉพาะตัวอักษร) กับอาการของโรค · ผู้ป่วยเด็ก 8 ปี ไข้สูง ปวดข้อ ผื่นที่แขน กล้ามเนื้อหัวใจอักเสบ ลิ้นหัวใจผิดปกติ",
+   "answer_status": "verified",
+   "items": [
+    {
+     "id": "13",
+     "prompt": "เลือกตัวอักษร autoantibodies 2 ชนิด",
+     "format": "short",
+     "accepted": [
+      "f",
+      "h"
+     ],
+     "keywords_all": [
+      "f",
+      "h"
+     ],
+     "key_text": "F, H (ASO titer, Anti-DNase B) — acute rheumatic fever",
+     "source_key": "เฉลย: F, H (ASO titer, Anti-DNase B) — acute rheumatic fever"
+    }
+   ]
+  },
+  {
+   "n": 14,
+   "page": 6,
+   "tags": [
+    "immunology"
+   ],
+   "case": "autoantibodies: A Anti-Ro, B Anti-MPO, C Anti-CCP, D Anti-Sm, E Anti-La, F ASO titer, G Anti-dsDNA, H Anti-DNase B, I Anti-PR3, J Rheumatoid factor · จับคู่ autoantibodies 2 ชนิด (เอาเฉพาะตัวอักษร) กับอาการของโรค · ผู้ป่วยหญิง 60 ปี ปากแห้ง ตาแห้ง 3 เดือน ปวดข้อ และน้ำลายหน้ากกหูโต",
+   "answer_status": "verified",
+   "items": [
+    {
+     "id": "14",
+     "prompt": "เลือกตัวอักษร autoantibodies 2 ชนิด",
+     "format": "short",
+     "accepted": [
+      "a",
+      "e"
+     ],
+     "keywords_all": [
+      "a",
+      "e"
+     ],
+     "key_text": "A, E (Anti-Ro, Anti-La) — Sjögren's syndrome",
+     "source_key": "เฉลย: A, E (Anti-Ro, Anti-La) — Sjögren's syndrome"
+    }
+   ]
+  },
+  {
+   "n": 15,
+   "page": 7,
+   "tags": [
+    "immunology"
+   ],
+   "case": "autoantibodies: A Anti-Ro, B Anti-MPO, C Anti-CCP, D Anti-Sm, E Anti-La, F ASO titer, G Anti-dsDNA, H Anti-DNase B, I Anti-PR3, J Rheumatoid factor · จับคู่ autoantibodies 2 ชนิด (เอาเฉพาะตัวอักษร) กับอาการของโรค · ผู้ป่วยชาย 50 ปี ไซนัสอักเสบเรื้อรัง 3 เดือน ผื่นแดงกดเจ็บที่ขา ขาอ่อนแรงข้างขวา ไตวาย",
+   "answer_status": "verified",
+   "items": [
+    {
+     "id": "15",
+     "prompt": "เลือกตัวอักษร autoantibodies 2 ชนิด",
+     "format": "short",
+     "accepted": [
+      "b",
+      "i"
+     ],
+     "keywords_all": [
+      "b",
+      "i"
+     ],
+     "key_text": "B, I (Anti-MPO, Anti-PR3) — systemic vasculitis (ANCA)",
+     "source_key": "เฉลย: B, I (Anti-MPO, Anti-PR3) — systemic vasculitis (ANCA)"
+    }
+   ]
+  },
+  {
+   "n": 16,
+   "page": 7,
+   "tags": [
+    "immunology"
+   ],
+   "case": "autoantibodies: A Anti-Ro, B Anti-MPO, C Anti-CCP, D Anti-Sm, E Anti-La, F ASO titer, G Anti-dsDNA, H Anti-DNase B, I Anti-PR3, J Rheumatoid factor · จับคู่ autoantibodies 2 ชนิด (เอาเฉพาะตัวอักษร) กับอาการของโรค · ผู้หญิง 55 ปี ปวดข้อนิ้วมือ ข้อมือ ข้อเข่า 4 เดือน ไม่มีไข้ ข้อฝืดตึงตอนเช้า 30 นาที",
+   "answer_status": "verified",
+   "items": [
+    {
+     "id": "16",
+     "prompt": "เลือกตัวอักษร autoantibodies 2 ชนิด",
+     "format": "short",
+     "accepted": [
+      "c",
+      "j"
+     ],
+     "keywords_all": [
+      "c",
+      "j"
+     ],
+     "key_text": "C, J (Anti-CCP, Rheumatoid factor) — rheumatoid arthritis",
+     "source_key": "เฉลย: C, J (Anti-CCP, Rheumatoid factor) — rheumatoid arthritis"
+    }
+   ]
+  },
+  {
+   "n": 17,
+   "page": 7,
+   "tags": [
+    "immunology"
+   ],
+   "case": "autoantibodies: A Anti-Ro, B Anti-MPO, C Anti-CCP, D Anti-Sm, E Anti-La, F ASO titer, G Anti-dsDNA, H Anti-DNase B, I Anti-PR3, J Rheumatoid factor · จับคู่ autoantibodies 2 ชนิด (เอาเฉพาะตัวอักษร) กับอาการของโรค · ผู้ป่วยหญิง 33 ปี ผื่นแพ้แสง ไข้เรื้อรัง ปวดข้อ ซีด ปัสสาวะเป็นฟอง",
+   "answer_status": "verified",
+   "items": [
+    {
+     "id": "17",
+     "prompt": "เลือกตัวอักษร autoantibodies 2 ชนิด",
+     "format": "short",
+     "accepted": [
+      "g",
+      "d"
+     ],
+     "keywords_all": [
+      "g",
+      "d"
+     ],
+     "key_text": "G, D (Anti-dsDNA, Anti-Sm) — SLE",
+     "source_key": "เฉลย: G, D (Anti-dsDNA, Anti-Sm) — SLE"
+    }
+   ]
+  },
+  {
+   "n": 18,
+   "page": 8,
+   "tags": [
+    "immunology"
+   ],
+   "case": "ข้อ 18: โรคหรือความผิดปกติที่พบเกิดจากการตอบสนองของกลไกภูมิคุ้มกันชนิดใด (เลือก 1 จาก: IgE antibodies, IgG antibodies against cell surface antigens, T lymphocytes, Immune complex of circulating antigens)",
+   "answer_status": "verified",
+   "items": [
+    {
+     "id": "18.1",
+     "prompt": "เด็กชายไทย 7 ปี น้ำมูกใส จาม คัน คัดจมูกช่วงเช้ามา 6 เดือน ทดสอบ skin prick test อ่านผลที่ 15 นาที พบรอยนูนแดงขนาดใหญ่ที่สะกดด้วยน้ำยาจากเกสรหญ้า",
+     "format": "short",
+     "accepted": [
+      "ige antibodi"
+     ],
+     "keywords_all": [
+      "ige"
+     ],
+     "key_text": "IgE antibodies (Type 1)",
+     "source_key": "เฉลย: IgE antibodies (Type 1)"
+    },
+    {
+     "id": "18.2",
+     "prompt": "เด็กหญิงไทย 14 ปี วินิจฉัย Graves' disease ตรวจพบ TSH receptor ถูกกระตุ้นให้ไทรอยด์สร้างฮอร์โมนมากกว่าปกติ",
+     "format": "short",
+     "accepted": [
+      "igg antibodi"
+     ],
+     "keywords_all": [
+      "igg"
+     ],
+     "key_text": "IgG antibodies against cell surface antigens (Type 2)",
+     "source_key": "เฉลย: IgG antibodies against cell surface antigens (Type 2)"
+    },
+    {
+     "id": "18.3",
+     "prompt": "เด็กหญิงอายุ 6 เดือน มีผื่นนูนแดงคันทั่วตัว ไอและอาเจียนหลายครั้งหลังกินข้าวสาลีบดผสมนม",
+     "format": "short",
+     "accepted": [
+      "ige antibodi"
+     ],
+     "keywords_all": [
+      "ige"
+     ],
+     "key_text": "IgE antibodies (Type 1)",
+     "source_key": "เฉลย: IgE antibodies (Type 1)"
+    },
+    {
+     "id": "18.4",
+     "prompt": "เด็กหญิงไทย 12 ปี ซีดเฉียบพลันหลังได้รับเลือด (pRBC) ผู้ป่วย Blood group A ได้รับเลือดจากผู้บริจาค Blood group B",
+     "format": "short",
+     "accepted": [
+      "igg antibodi"
+     ],
+     "keywords_all": [
+      "igg"
+     ],
+     "key_text": "IgG antibodies against cell surface antigens (Type 2)",
+     "source_key": "เฉลย: IgG antibodies against cell surface antigens (Type 2)"
+    },
+    {
+     "id": "18.5",
+     "prompt": "ชายไทย 35 ปี วินิจฉัยวัณโรคปอด ผลพยาธิวิทยาของเนื้อปอดพบ granulomatous inflammation",
+     "format": "short",
+     "accepted": [
+      "t lymphocyte"
+     ],
+     "keywords_all": [
+      "t"
+     ],
+     "key_text": "T lymphocyte (Type 4)",
+     "source_key": "เฉลย: T lymphocyte (Type 4)"
+    },
+    {
+     "id": "18.6",
+     "prompt": "เด็กหญิง 10 ปี ฉีดวัคซีนบาดทะยักที่ต้นแขนซ้ายหลังฉีด 30 ชั่วโมง มีอาการบวมเจ็บและผื่นนูนแดงที่แขนบริเวณที่ฉีด",
+     "format": "short",
+     "accepted": [
+      "immune compl"
+     ],
+     "keywords_all": [
+      "immune"
+     ],
+     "key_text": "Immune complex of circulating antigens (Type 3)",
+     "source_key": "เฉลย: Immune complex of circulating antigens (Type 3)"
+    },
+    {
+     "id": "18.7",
+     "prompt": "ชายไทย 50 ปี Tuberculin skin test อ่านผลที่ 72 ชม. พบรอยนูนแดงเส้นผ่านศูนย์กลาง 20 mm",
+     "format": "short",
+     "accepted": [
+      "t lymphocyte"
+     ],
+     "keywords_all": [
+      "t"
+     ],
+     "key_text": "T lymphocyte (Type 4)",
+     "source_key": "เฉลย: T lymphocyte (Type 4)"
+    },
+    {
+     "id": "18.8",
+     "prompt": "เด็กชายไทย 8 ปี หนังตาตก 3 วัน ตรวจพบการยับยั้งการทำงานของ acetylcholine ในขั้นตอนการจับกับ acetylcholine receptor",
+     "format": "short",
+     "accepted": [
+      "igg antibodi"
+     ],
+     "keywords_all": [
+      "igg"
+     ],
+     "key_text": "IgG antibodies against cell surface antigens (Type 2)",
+     "source_key": "เฉลย: IgG antibodies against cell surface antigens (Type 2)"
+    },
+    {
+     "id": "18.9",
+     "prompt": "เด็กหญิงไทย 11 ปี ไข้ ปวดข้อ ผื่นแดงที่แขน 2 วัน เคยถูกสุนัขกัดและได้รับ equine rabies immunoglobulin เมื่อ 1 สัปดาห์ก่อน",
+     "format": "short",
+     "accepted": [
+      "immune compl"
+     ],
+     "keywords_all": [
+      "immune"
+     ],
+     "key_text": "Immune complex of circulating antigens (Type 3, serum sickness)",
+     "source_key": "เฉลย: Immune complex of circulating antigens (Type 3, serum sickness)"
+    },
+    {
+     "id": "18.10",
+     "prompt": "เด็กชายไทย 11 ปี เป็นไอเรื้อรังขณะออกกำลังกาย 3 เดือน ทดสอบความไวของหลอดลมด้วยการสูดสารก่อภูมิแพ้ พบหลอดลมไวมีไอและหายใจเสียงวี๊ดภายใน 5 นาที",
+     "format": "short",
+     "accepted": [
+      "ige antibodi"
+     ],
+     "keywords_all": [
+      "ige"
+     ],
+     "key_text": "IgE antibodies (Type 1)",
+     "source_key": "เฉลย: IgE antibodies (Type 1)"
+    }
+   ]
+  },
+  {
+   "n": 19,
+   "page": 9,
+   "tags": [
+    "immunology"
+   ],
+   "case": "ข้อ 19: ผู้ป่วยต่อไปนี้เข้าได้กับโรคภูมิคุ้มกันบกพร่องแต่กำเนิดกลุ่มใดมากที่สุด (เลือก 1 จาก: T cell defect, B cell defect, Combined T and B defect, Phagocyte defect, Complement defect)",
+   "answer_status": "verified",
+   "items": [
+    {
+     "id": "19.1",
+     "prompt": "เด็กชาย 1 ปี ติดเชื้อแบคทีเรียที่ปอดและติดเชื้อแบคทีเรียในกระแสเลือด ตรวจร่างกายพบ absent tonsil, no lymphadenopathy",
+     "format": "short",
+     "accepted": [
+      "b"
+     ],
+     "keywords_all": [
+      "b"
+     ],
+     "key_text": "B cell defect",
+     "source_key": "เฉลย: B cell defect"
+    },
+    {
+     "id": "19.2",
+     "prompt": "เด็กชาย 4 ปี ติดและแพร่กระจายของเชื้อจากวัคซีน BCG ทั่วร่างกาย (disseminated BCG) พบ lymphopenia, hypogammaglobulinemia",
+     "format": "short",
+     "accepted": [
+      "b"
+     ],
+     "keywords_all": [
+      "b"
+     ],
+     "key_text": "B cell defect (ตามเฉลยต้นฉบับ; AI เห็นว่า lymphopenia + Ig ต่ำ + BCG แพร่ ตรงกับ combined defect)",
+     "source_key": "เฉลย: B cell defect (ตามเฉลยต้นฉบับ; AI เห็นว่า lymphopenia + Ig ต่ำ + BCG แพร่ ตรงกับ combined defect)"
+    },
+    {
+     "id": "19.3",
+     "prompt": "เด็กชาย 10 เดือน ติดเชื้อแบคทีเรียที่ต่อมน้ำเหลือง และมีเชื้อราในปาก ตรวจ lymphocyte count และ IgG ปกติ",
+     "format": "short",
+     "accepted": [
+      "phagocyte"
+     ],
+     "keywords_all": [
+      "phagocyte"
+     ],
+     "key_text": "Phagocyte defect",
+     "source_key": "เฉลย: Phagocyte defect"
+    },
+    {
+     "id": "19.4",
+     "prompt": "เด็กหญิง 10 ปี ติดเชื้อ Neisseria meningitidis ในกระแสเลือดหลายครั้ง",
+     "format": "short",
+     "accepted": [
+      "complement"
+     ],
+     "keywords_all": [
+      "complement"
+     ],
+     "key_text": "Complement defect",
+     "source_key": "เฉลย: Complement defect"
+    },
+    {
+     "id": "19.5",
+     "prompt": "เด็กหญิง 7 เดือน ติดเชื้อที่ปอดจาก Pneumocystis jirovecii ผู้ป่วยเคยติดเชื้อแบคทีเรียในกระแสเลือดตอน 4 เดือน",
+     "format": "short",
+     "accepted": [
+      "t"
+     ],
+     "keywords_all": [
+      "t"
+     ],
+     "key_text": "T cell defect",
+     "source_key": "เฉลย: T cell defect"
+    },
+    {
+     "id": "19.6",
+     "prompt": "เด็กหญิง 5 ปี ติดเชื้อที่แก้วหูหลายครั้ง ส่งหนองเพาะเชื้อ พบ Haemophilus influenzae",
+     "format": "short",
+     "accepted": [
+      "b"
+     ],
+     "keywords_all": [
+      "b"
+     ],
+     "key_text": "B cell defect",
+     "source_key": "เฉลย: B cell defect"
+    },
+    {
+     "id": "19.7",
+     "prompt": "เด็กชาย 5 ปี ติดเชื้อแบคทีเรียในกระแสเลือด และมีเชื้อราในปาก ตรวจพบ lymphopenia และ agammaglobulinemia",
+     "format": "short",
+     "accepted": [
+      "combined"
+     ],
+     "keywords_all": [
+      "combined"
+     ],
+     "key_text": "Combined defect",
+     "source_key": "เฉลย: Combined defect"
+    },
+    {
+     "id": "19.8",
+     "prompt": "เด็กชาย 3 เดือน มี recurrent bacterial pneumonia ตั้งแต่อายุ 3 เดือน",
+     "format": "short",
+     "accepted": [
+      "combined"
+     ],
+     "keywords_all": [
+      "combined"
+     ],
+     "key_text": "Combined defect (ตามเฉลยต้นฉบับ)",
+     "source_key": "เฉลย: Combined defect (ตามเฉลยต้นฉบับ)"
+    },
+    {
+     "id": "19.9",
+     "prompt": "เด็กชาย 5 เดือน ติดเชื้อราในปากและติดเชื้อวัณโรคในปอด ตรวจพบ lymphopenia, normal IgG",
+     "format": "short",
+     "accepted": [
+      "t"
+     ],
+     "keywords_all": [
+      "t"
+     ],
+     "key_text": "T cell defect",
+     "source_key": "เฉลย: T cell defect"
+    },
+    {
+     "id": "19.10",
+     "prompt": "เด็กชาย 1 ปี ติดเชื้อ Aspergillus ที่ปอด ผู้ป่วยเคยติดเชื้อที่ผิวหนังเป็น ๆ หาย ๆ",
+     "format": "short",
+     "accepted": [
+      "phagocyte"
+     ],
+     "keywords_all": [
+      "phagocyte"
+     ],
+     "key_text": "Phagocyte defect",
+     "source_key": "เฉลย: Phagocyte defect"
+    }
+   ]
+  }
+ ],
+ "time_limit_min": 90
+}
