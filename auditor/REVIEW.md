@@ -1,6 +1,6 @@
 # REVIEW — รายการรอผู้ใช้ตัดสิน
 
-ทั้งหมด 968 รายการ
+ทั้งหมด 979 รายการ
 วิธีตอบ: พิมพ์ในแชทเป็นบรรทัด เช่น `end_52_MCQ_027: คงเดิม` / `end_52_MCQ_063: C` / `end_52_MCQ_046: ตรวจใหม่`
 Claude จะบันทึกลง `auditor/data/decisions.json` แล้ว build ใหม่
 
@@ -778,6 +778,17 @@ Claude จะบันทึกลง `auditor/data/decisions.json` แล้ว
 | kub_52_MCQ_045 | B | A | mid | เฉลยขัดกับ AI |   |
 | kub_52_MCQ_060 | B | A | mid | เฉลยขัดกับ AI | AI ตอบ Leydig cell; ต้นฉบับ Sertoli cell (tumor หลั่ง estrogen)  |
 | kub_52_MCQ_096 | D | C | mid | เฉลยขัดกับ AI |   |
+| nerv_51_MCQ_012 | E | D | mid | เฉลยขัดกับ AI |   |
+| nerv_51_MCQ_065 | A | E | mid | เฉลยขัดกับ AI |   |
+| nerv_51_MCQ_083 | None | B | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| nerv_51_MCQ_084 | None | C | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| nerv_51_MCQ_085 | None | D | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| nerv_51_MCQ_086 | None | E | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| nerv_51_MCQ_087 | None | B | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| nerv_51_MCQ_088 | None | A | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| nerv_51_MCQ_089 | None | A | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| nerv_51_MCQ_090 | None | E | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| nerv_51_MCQ_091 | None | E | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
 | resp_40_MCQ_001 | None | None | None | AI เขียนข้อนี้ขึ้นใหม่จากโน้ตความจำในต้นฉบับ |   |
 | resp_40_MCQ_002 | None | None | None | AI เขียนข้อนี้ขึ้นใหม่จากโน้ตความจำในต้นฉบับ |   |
 | resp_40_MCQ_003 | None | None | None | AI เขียนข้อนี้ขึ้นใหม่จากโน้ตความจำในต้นฉบับ |   |
