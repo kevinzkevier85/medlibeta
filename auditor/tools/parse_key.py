@@ -83,6 +83,8 @@ def circles_of(page):
             out.append(r)  # black hand-drawn check slash across the option letter (Respiratory 48)
         elif c and not d.get("fill") and 6 <= r.width <= 40 and 10 <= r.height <= 45 and r.x0 < 150 and 1 <= len(d.get("items", [])) <= 30:
             out.append(r)  # coloured/pencil slash across the option letter (Nervous 49)
+        elif d.get("fill") and max(d["fill"]) - min(d["fill"]) > 0.3 and 12 <= r.width <= 40 and 18 <= r.height <= 46 and r.x0 < 130 and len(d.get("items", [])) >= 20:
+            out.append(r)  # filled coloured hand-drawn slash/ring around the option letter (Nervous 49)
     return out
 
 

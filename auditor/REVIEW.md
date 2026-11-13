@@ -1,6 +1,6 @@
 # REVIEW — รายการรอผู้ใช้ตัดสิน
 
-ทั้งหมด 984 รายการ
+ทั้งหมด 990 รายการ
 วิธีตอบ: พิมพ์ในแชทเป็นบรรทัด เช่น `end_52_MCQ_027: คงเดิม` / `end_52_MCQ_063: C` / `end_52_MCQ_046: ตรวจใหม่`
 Claude จะบันทึกลง `auditor/data/decisions.json` แล้ว build ใหม่
 
@@ -780,6 +780,12 @@ Claude จะบันทึกลง `auditor/data/decisions.json` แล้ว
 | kub_52_MCQ_096 | D | C | mid | เฉลยขัดกับ AI |   |
 | nerv_46_MCQ_041 | D | E | mid | เฉลยขัดกับ AI |   |
 | nerv_46_MCQ_058 | None | C | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| nerv_49_MCQ_013 | None | B | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| nerv_49_MCQ_017 | None | C | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| nerv_49_MCQ_033 | None | C | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| nerv_49_MCQ_064 | None | A | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| nerv_49_MCQ_065 | None | D | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| nerv_49_MCQ_068 | None | D | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
 | nerv_50_MCQ_058 | None | D | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
 | nerv_50_MCQ_064 | D | B | mid | เฉลยขัดกับ AI |   |
 | nerv_50_MCQ_077 | None | A | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
