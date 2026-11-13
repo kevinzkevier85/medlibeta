@@ -1,0 +1,1320 @@
+{
+ "meta": {
+  "set_id": "43_OSPE",
+  "block": "RESP",
+  "cohort": 43,
+  "type": "OSPE",
+  "title": "OSPE Respiratory · Med PSU 40-43",
+  "generated_by": "auditor/tools/build_kf.py from auditor/data/work/resp_40-43_OSPE.kf.json — do not edit by hand"
+ },
+ "questions": [
+  {
+   "id": "RESP-43-OSPE-001",
+   "block": "RESP",
+   "cohort": 43,
+   "n": 1,
+   "type": "OSPE",
+   "station": 1,
+   "stem": "สถานี 1: จากภาพ (ทรวงอกด้านหน้า) ระบุโครงสร้างหมายเลข 1 และ 2",
+   "items": [
+    {
+     "id": "1.1",
+     "prompt": "โครงสร้างหมายเลข 1",
+     "format": "short",
+     "accepted": [
+      "internal thoracic",
+      "internal mammary"
+     ],
+     "keywords_all": [
+      "internal thoracic"
+     ],
+     "key_text": "Internal thoracic artery",
+     "source_key": "เฉลย: Internal thoracic artery",
+     "image": "img/RESP-43-OSPE-001.jpg",
+     "image_caption": "ทรวงอกด้านหน้า (dissection)"
+    },
+    {
+     "id": "1.2",
+     "prompt": "โครงสร้างหมายเลข 2",
+     "format": "short",
+     "accepted": [
+      "subclavian",
+      "rib",
+      "vessel"
+     ],
+     "keywords_all": [
+      "subclavian"
+     ],
+     "key_text": "Subclavian vessels / first rib region (ตามภาพ)",
+     "source_key": "เฉลย: Subclavian vessels / first rib region (ตามภาพ)"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "OSPE43",
+     "pages": [
+      1
+     ]
+    }
+   ],
+   "tags": [
+    "anatomy"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "RESP-43-OSPE-002",
+   "block": "RESP",
+   "cohort": 43,
+   "n": 2,
+   "type": "OSPE",
+   "station": 2,
+   "stem": "สถานี 2: จากภาพกระดูก",
+   "items": [
+    {
+     "id": "2.1",
+     "prompt": "ระบุโครงสร้างที่ให้",
+     "format": "short",
+     "accepted": [
+      "rib",
+      "costal cartilage"
+     ],
+     "keywords_all": [
+      "rib"
+     ],
+     "key_text": "Rib (typical rib) with costal cartilage",
+     "source_key": "เฉลย: Rib (typical rib) with costal cartilage",
+     "image": "img/RESP-43-OSPE-002.jpg",
+     "image_caption": "กระดูกซี่โครง"
+    },
+    {
+     "id": "2.2",
+     "prompt": "ลักษณะจำเพาะที่พบในโครงสร้างนี้ 3 ข้อ",
+     "format": "short",
+     "accepted": [
+      "head",
+      "facet",
+      "tubercle",
+      "costal groove",
+      "angle"
+     ],
+     "keywords_all": [
+      "costal groove"
+     ],
+     "key_text": "Head มี 2 facets, tubercle, costal groove (ที่ขอบล่างด้านใน), angle",
+     "source_key": "เฉลย: Head มี 2 facets, tubercle, costal groove (ที่ขอบล่างด้านใน), angle"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "OSPE43",
+     "pages": [
+      1
+     ]
+    }
+   ],
+   "tags": [
+    "anatomy"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "RESP-43-OSPE-003",
+   "block": "RESP",
+   "cohort": 43,
+   "n": 3,
+   "type": "OSPE",
+   "station": 3,
+   "stem": "สถานี 3: จากภาพกล่องเสียง ระบุโครงสร้างหมายเลข 1 และ 2",
+   "items": [
+    {
+     "id": "3.1",
+     "prompt": "โครงสร้างหมายเลข 1",
+     "format": "short",
+     "accepted": [
+      "vocal",
+      "glottis",
+      "fold"
+     ],
+     "keywords_all": [
+      "vocal"
+     ],
+     "key_text": "Vocal fold / rima glottidis (ตามภาพ)",
+     "source_key": "เฉลย: Vocal fold / rima glottidis (ตามภาพ)",
+     "image": "img/RESP-43-OSPE-003.jpg",
+     "image_caption": "กล่องเสียง"
+    },
+    {
+     "id": "3.2",
+     "prompt": "โครงสร้างหมายเลข 2",
+     "format": "short",
+     "accepted": [
+      "vestibular",
+      "thyroid",
+      "cartilage",
+      "fold"
+     ],
+     "keywords_all": [
+      "fold"
+     ],
+     "key_text": "Vestibular fold / thyroid cartilage (ตามภาพ)",
+     "source_key": "เฉลย: Vestibular fold / thyroid cartilage (ตามภาพ)"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "OSPE43",
+     "pages": [
+      1
+     ]
+    }
+   ],
+   "tags": [
+    "anatomy"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "RESP-43-OSPE-005",
+   "block": "RESP",
+   "cohort": 43,
+   "n": 5,
+   "type": "OSPE",
+   "station": 5,
+   "stem": "สถานี 5: จากภาพสไลด์ ระบุส่วนที่เป็น conducting portion และลักษณะจำเพาะ 2 ข้อ",
+   "items": [
+    {
+     "id": "5.1",
+     "prompt": "ระบุ conducting portion",
+     "format": "short",
+     "accepted": [
+      "bronchus"
+     ],
+     "keywords_all": [
+      "bronchus"
+     ],
+     "key_text": "Bronchus (intrapulmonary bronchus)",
+     "source_key": "เฉลย: Bronchus (intrapulmonary bronchus)",
+     "image": "img/RESP-43-OSPE-005.jpg",
+     "image_caption": "สไลด์ H&E ท่อทางเดินหายใจ"
+    },
+    {
+     "id": "5.2",
+     "prompt": "ลักษณะจำเพาะ 2 ข้อ",
+     "format": "short",
+     "accepted": [
+      "pseudostratified",
+      "goblet",
+      "hyaline cartilage",
+      "smooth muscle"
+     ],
+     "keywords_all": [
+      "hyaline cartilage"
+     ],
+     "key_text": "Pseudostratified ciliated columnar epithelium with goblet cells; isolated plates of hyaline cartilage (และ smooth muscle/seromucous gland)",
+     "source_key": "เฉลย: Pseudostratified ciliated columnar epithelium with goblet cells; isolated plates of hyaline cartilage (และ smooth muscle/seromucous gland)"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "OSPE43",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [
+    "histology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "RESP-43-OSPE-006",
+   "block": "RESP",
+   "cohort": 43,
+   "n": 6,
+   "type": "OSPE",
+   "station": 6,
+   "stem": "สถานี 6: จากภาพสไลด์ ระบุส่วนที่เป็น conducting portion และลักษณะจำเพาะ 2 ข้อ",
+   "items": [
+    {
+     "id": "6.1",
+     "prompt": "ระบุ conducting portion",
+     "format": "short",
+     "accepted": [
+      "terminal bronchiole",
+      "bronchiole"
+     ],
+     "keywords_all": [
+      "bronchiole"
+     ],
+     "key_text": "Terminal bronchiole",
+     "source_key": "เฉลย: Terminal bronchiole",
+     "image": "img/RESP-43-OSPE-006.jpg",
+     "image_caption": "สไลด์ H&E bronchiole"
+    },
+    {
+     "id": "6.2",
+     "prompt": "ลักษณะจำเพาะ 2 ข้อ",
+     "format": "short",
+     "accepted": [
+      "cuboidal",
+      "clara",
+      "club",
+      "cartilage",
+      "goblet"
+     ],
+     "keywords_all": [
+      "clara"
+     ],
+     "key_text": "Ciliated cuboidal epithelium with Clara (club) cells; ไม่มี cartilage และไม่มี goblet cell/gland; mucosa พับเป็นลอน",
+     "source_key": "เฉลย: Ciliated cuboidal epithelium with Clara (club) cells; ไม่มี cartilage และไม่มี goblet cell/gland; mucosa พับเป็นลอน"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "OSPE43",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [
+    "histology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "RESP-43-OSPE-008",
+   "block": "RESP",
+   "cohort": 43,
+   "n": 8,
+   "type": "OSPE",
+   "station": 8,
+   "stem": "สถานี 8: จากภาพ gross ของปอด",
+   "items": [
+    {
+     "id": "8.1",
+     "prompt": "วินิจฉัยรอยโรคของปอดนี้",
+     "format": "short",
+     "accepted": [
+      "emphysema",
+      "anthracosis",
+      "pneumoconiosis"
+     ],
+     "keywords_all": [
+      "emphysema"
+     ],
+     "key_text": "Emphysema (centriacinar) ในผู้สูบบุหรี่/ฝุ่น (anthracotic pigment)",
+     "source_key": "เฉลย: Emphysema (centriacinar) ในผู้สูบบุหรี่/ฝุ่น (anthracotic pigment)",
+     "image": "img/RESP-43-OSPE-008.jpg",
+     "image_caption": "Gross ปอด"
+    },
+    {
+     "id": "8.2",
+     "prompt": "อาการที่พบได้ในผู้ป่วยนี้ 3 อย่าง",
+     "format": "short",
+     "accepted": [
+      "dyspnea",
+      "cough",
+      "barrel chest",
+      "หอบ",
+      "ไอ"
+     ],
+     "keywords_all": [
+      "dyspnea"
+     ],
+     "key_text": "หอบเหนื่อย (dyspnea), ไอเรื้อรัง, barrel chest/หายใจออกยาว",
+     "source_key": "เฉลย: หอบเหนื่อย (dyspnea), ไอเรื้อรัง, barrel chest/หายใจออกยาว"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "OSPE43",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [
+    "pathology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "RESP-43-OSPE-009",
+   "block": "RESP",
+   "cohort": 43,
+   "n": 9,
+   "type": "OSPE",
+   "station": 9,
+   "stem": "สถานี 9: ชายอายุ 27 ปี ไม่สูบบุหรี่ น้ำหนักลด 7 กก. ใน 4 เดือน ไข้ต่ำ ไม่มีเสมหะ แล้วเสียชีวิตด้วย respiratory failure ผ่าศพพบ pleural effusion ในช่องเยื่อหุ้มปอด (ดูภาพ gross)",
+   "items": [
+    {
+     "id": "9.1",
+     "prompt": "โรคของเขาคืออะไร",
+     "format": "short",
+     "accepted": [
+      "lymphoma",
+      "hodgkin"
+     ],
+     "keywords_all": [
+      "lymphoma"
+     ],
+     "key_text": "Lymphoma (Hodgkin lymphoma ที่มี mediastinal mass และ pleural effusion)",
+     "source_key": "เฉลย: Lymphoma (Hodgkin lymphoma ที่มี mediastinal mass และ pleural effusion)",
+     "image": "img/RESP-43-OSPE-009.jpg",
+     "image_caption": "Gross ก้อนในทรวงอก"
+    },
+    {
+     "id": "9.2",
+     "prompt": "บรรยายรอยโรค",
+     "format": "short",
+     "accepted": [
+      "ก้อน",
+      "mass",
+      "ขาว",
+      "lymph node",
+      "ต่อมน้ำเหลือง"
+     ],
+     "keywords_all": [
+      "ก้อน"
+     ],
+     "key_text": "ก้อนเนื้อสีขาวเทาเป็นก้อนใหญ่ในช่องอก/ต่อมน้ำเหลืองโต เนื้อแน่นเป็นปื้นขาว",
+     "source_key": "เฉลย: ก้อนเนื้อสีขาวเทาเป็นก้อนใหญ่ในช่องอก/ต่อมน้ำเหลืองโต เนื้อแน่นเป็นปื้นขาว"
+    },
+    {
+     "id": "9.3",
+     "prompt": "เซลล์จำเพาะที่พบในรอยโรคนี้",
+     "format": "short",
+     "accepted": [
+      "reed",
+      "sternberg"
+     ],
+     "keywords_all": [
+      "reed"
+     ],
+     "key_text": "Reed–Sternberg cell",
+     "source_key": "เฉลย: Reed–Sternberg cell"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "OSPE43",
+     "pages": [
+      4
+     ]
+    }
+   ],
+   "tags": [
+    "pathology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "RESP-43-OSPE-010",
+   "block": "RESP",
+   "cohort": 43,
+   "n": 10,
+   "type": "OSPE",
+   "station": 10,
+   "stem": "สถานี 10: จากภาพ Gram stain",
+   "items": [
+    {
+     "id": "10.1",
+     "prompt": "อธิบายรูปร่าง การเรียงตัว และจำนวนของเชื้อ",
+     "format": "short",
+     "accepted": [
+      "gram positive",
+      "diplococci",
+      "numerous",
+      "lancet"
+     ],
+     "keywords_all": [
+      "diplococci"
+     ],
+     "key_text": "Numerous Gram-positive diplococci (lancet-shaped) พร้อม neutrophil",
+     "source_key": "เฉลย: Numerous Gram-positive diplococci (lancet-shaped) พร้อม neutrophil",
+     "image": "img/RESP-43-OSPE-010.jpg",
+     "image_caption": "Gram stain"
+    },
+    {
+     "id": "10.2",
+     "prompt": "เชื้อก่อโรค",
+     "format": "short",
+     "accepted": [
+      "streptococcus pneumoniae",
+      "pneumococcus"
+     ],
+     "keywords_all": [
+      "pneumoniae"
+     ],
+     "key_text": "Streptococcus pneumoniae",
+     "source_key": "เฉลย: Streptococcus pneumoniae"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "OSPE43",
+     "pages": [
+      4
+     ]
+    }
+   ],
+   "tags": [
+    "microbiology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "RESP-43-OSPE-012",
+   "block": "RESP",
+   "cohort": 43,
+   "n": 12,
+   "type": "OSPE",
+   "station": 12,
+   "stem": "สถานี 12: จาก chest X-ray",
+   "items": [
+    {
+     "id": "12.1",
+     "prompt": "PA หรือ AP",
+     "format": "short",
+     "accepted": [
+      "pa"
+     ],
+     "keywords_all": [
+      "PA"
+     ],
+     "key_text": "PA",
+     "source_key": "เฉลย: PA",
+     "image": "img/RESP-43-OSPE-012.jpg",
+     "image_caption": "CXR"
+    },
+    {
+     "id": "12.2",
+     "prompt": "ผู้ป่วยหมุนตัว (rotated) หรือไม่",
+     "format": "short",
+     "accepted": [
+      "not rotated",
+      "ไม่",
+      "symmetric"
+     ],
+     "keywords_all": [
+      "ไม่"
+     ],
+     "key_text": "ไม่หมุน (clavicle medial end สมมาตรรอบ spinous process)",
+     "source_key": "เฉลย: ไม่หมุน (clavicle medial end สมมาตรรอบ spinous process)"
+    },
+    {
+     "id": "12.3",
+     "prompt": "exposure ของฟิล์มเป็นอย่างไร",
+     "format": "short",
+     "accepted": [
+      "adequate",
+      "เหมาะสม",
+      "vertebra",
+      "normal"
+     ],
+     "keywords_all": [
+      "เหมาะสม"
+     ],
+     "key_text": "เหมาะสม (เห็น vertebra ผ่านเงาหัวใจจาง ๆ)",
+     "source_key": "เฉลย: เหมาะสม (เห็น vertebra ผ่านเงาหัวใจจาง ๆ)"
+    },
+    {
+     "id": "12.4",
+     "prompt": "ผู้ป่วยหายใจเข้าหรือออก",
+     "format": "short",
+     "accepted": [
+      "inspir",
+      "หายใจเข้า",
+      "full"
+     ],
+     "keywords_all": [
+      "inspiration"
+     ],
+     "key_text": "Inspiration (หายใจเข้าเต็มที่ เห็นซี่โครงหลังเหนือ diaphragm ≥ 9–10 ซี่)",
+     "source_key": "เฉลย: Inspiration (หายใจเข้าเต็มที่ เห็นซี่โครงหลังเหนือ diaphragm ≥ 9–10 ซี่)"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "OSPE43",
+     "pages": [
+      5
+     ]
+    }
+   ],
+   "tags": [
+    "radiology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "RESP-43-OSPE-013",
+   "block": "RESP",
+   "cohort": 43,
+   "n": 13,
+   "type": "OSPE",
+   "station": 13,
+   "stem": "สถานี 13: จาก chest X-ray 2 ภาพ (ซ้าย-ขวา)",
+   "items": [
+    {
+     "id": "13.1",
+     "prompt": "ตำแหน่งการถ่ายของภาพทางซ้าย",
+     "format": "short",
+     "accepted": [
+      "posteroanterior",
+      "pa"
+     ],
+     "keywords_all": [
+      "PA"
+     ],
+     "key_text": "PA view (posteroanterior); ภาพขวาคือ lateral view",
+     "source_key": "เฉลย: PA view (posteroanterior); ภาพขวาคือ lateral view",
+     "image": "img/RESP-43-OSPE-013.jpg",
+     "image_caption": "CXR PA และ lateral"
+    },
+    {
+     "id": "13.2",
+     "prompt": "ตำแหน่งจำเพาะของรอยโรค",
+     "format": "short",
+     "accepted": [
+      "lobe",
+      "segment"
+     ],
+     "keywords_all": [
+      "lobe"
+     ],
+     "key_text": "ระบุ lobe/segment ตามภาพ (ภาพไม่แสดงรายละเอียดชัดในไฟล์)",
+     "source_key": "เฉลย: ระบุ lobe/segment ตามภาพ (ภาพไม่แสดงรายละเอียดชัดในไฟล์)"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "OSPE43",
+     "pages": [
+      5
+     ]
+    }
+   ],
+   "tags": [
+    "radiology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "RESP-43-OSPE-018",
+   "block": "RESP",
+   "cohort": 43,
+   "n": 18,
+   "type": "OSPE",
+   "station": 18,
+   "stem": "สถานี 18: จากภาพสไลด์",
+   "items": [
+    {
+     "id": "18.1",
+     "prompt": "ระบุโครงสร้างนี้",
+     "format": "short",
+     "accepted": [
+      "epiglottis"
+     ],
+     "keywords_all": [
+      "epiglottis"
+     ],
+     "key_text": "Epiglottis",
+     "source_key": "เฉลย: Epiglottis",
+     "image": "img/RESP-43-OSPE-018.jpg",
+     "image_caption": "สไลด์ H&E"
+    },
+    {
+     "id": "18.2",
+     "prompt": "ลักษณะเด่น 2 ข้อ",
+     "format": "short",
+     "accepted": [
+      "elastic cartilage",
+      "stratified squamous",
+      "respiratory epithelium"
+     ],
+     "keywords_all": [
+      "elastic cartilage"
+     ],
+     "key_text": "Elastic cartilage core; ผิวด้าน lingual เป็น stratified squamous epithelium และด้าน laryngeal เป็น respiratory epithelium",
+     "source_key": "เฉลย: Elastic cartilage core; ผิวด้าน lingual เป็น stratified squamous epithelium และด้าน laryngeal เป็น respiratory epithelium"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "OSPE43",
+     "pages": [
+      7
+     ]
+    }
+   ],
+   "tags": [
+    "histology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "RESP-43-OSPE-019",
+   "block": "RESP",
+   "cohort": 43,
+   "n": 19,
+   "type": "OSPE",
+   "station": 19,
+   "stem": "สถานี 19: จากภาพสไลด์ปอด (ลูกศรชี้เซลล์ที่มีเม็ดสีดำ)",
+   "items": [
+    {
+     "id": "19.1",
+     "prompt": "ระบุโครงสร้างนี้",
+     "format": "short",
+     "accepted": [
+      "dust cell",
+      "alveolar macrophage",
+      "macrophage"
+     ],
+     "keywords_all": [
+      "macrophage"
+     ],
+     "key_text": "Dust cell (alveolar macrophage)",
+     "source_key": "เฉลย: Dust cell (alveolar macrophage)",
+     "image": "img/RESP-43-OSPE-019.jpg",
+     "image_caption": "สไลด์ alveolar wall"
+    },
+    {
+     "id": "19.2",
+     "prompt": "หน้าที่ของโครงสร้างนี้",
+     "format": "short",
+     "accepted": [
+      "phagocytosis",
+      "phagocytose",
+      "กลืนกิน"
+     ],
+     "keywords_all": [
+      "phagocytosis"
+     ],
+     "key_text": "Phagocytosis ฝุ่น เชื้อโรคและเศษเซลล์ใน alveoli",
+     "source_key": "เฉลย: Phagocytosis ฝุ่น เชื้อโรคและเศษเซลล์ใน alveoli"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "OSPE43",
+     "pages": [
+      7
+     ]
+    }
+   ],
+   "tags": [
+    "histology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "RESP-43-OSPE-020",
+   "block": "RESP",
+   "cohort": 43,
+   "n": 20,
+   "type": "OSPE",
+   "station": 20,
+   "stem": "สถานี 20: ให้กราฟ auto spirometry ของคนปกติกับผู้ป่วย (น่าจะเป็น restrictive lung disease)",
+   "items": [
+    {
+     "id": "20.1",
+     "prompt": "เป็น lung disease แบบใด",
+     "format": "short",
+     "accepted": [
+      "restrictive"
+     ],
+     "keywords_all": [
+      "restrictive"
+     ],
+     "key_text": "Restrictive lung disease",
+     "source_key": "เฉลย: Restrictive lung disease",
+     "image": "img/RESP-43-OSPE-020.jpg",
+     "image_caption": "Flow–volume loop คนปกติและผู้ป่วย"
+    },
+    {
+     "id": "20.2.1",
+     "prompt": "ค่าที่ใช้บอกความปกติ: ค่าอะไร และคนปกติมีค่าเท่าใด",
+     "format": "short",
+     "accepted": [
+      "fvc",
+      "80"
+     ],
+     "keywords_all": [
+      "FVC"
+     ],
+     "key_text": "Forced vital capacity (FVC) คนปกติ > 80% predicted",
+     "source_key": "เฉลย: Forced vital capacity (FVC) คนปกติ > 80% predicted"
+    },
+    {
+     "id": "20.2.2",
+     "prompt": "คนผิดปกติมีค่าเท่าใด",
+     "format": "short",
+     "accepted": [
+      "80",
+      "<"
+     ],
+     "keywords_all": [
+      "80"
+     ],
+     "key_text": "< 80% predicted",
+     "source_key": "เฉลย: < 80% predicted"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "OSPE43",
+     "pages": [
+      8
+     ]
+    }
+   ],
+   "tags": [
+    "physiology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "RESP-43-OSPE-021",
+   "block": "RESP",
+   "cohort": 43,
+   "n": 21,
+   "type": "OSPE",
+   "station": 21,
+   "stem": "สถานี 21: ให้กราฟ FEV₁ จากเครื่อง Collins apparatus (X = FEV₁ 27 ช่อง, Y = FVC 32 ช่อง) (ภาพกราฟไม่มีในไฟล์)",
+   "items": [
+    {
+     "id": "21.1",
+     "prompt": "X คืออะไร",
+     "format": "short",
+     "accepted": [
+      "fev1",
+      "forced expiratory volume"
+     ],
+     "keywords_all": [
+      "FEV1"
+     ],
+     "key_text": "FEV₁ (forced expiratory volume in 1 second)",
+     "source_key": "เฉลย: FEV₁ (forced expiratory volume in 1 second)"
+    },
+    {
+     "id": "21.2",
+     "prompt": "Y คืออะไร",
+     "format": "short",
+     "accepted": [
+      "fvc",
+      "forced vital capacity"
+     ],
+     "keywords_all": [
+      "FVC"
+     ],
+     "key_text": "FVC (forced vital capacity)",
+     "source_key": "เฉลย: FVC (forced vital capacity)"
+    },
+    {
+     "id": "21.3",
+     "prompt": "แสดงการคำนวณ %X/Y",
+     "format": "short",
+     "accepted": [
+      "27",
+      "32",
+      "84",
+      "100"
+     ],
+     "keywords_all": [
+      "84"
+     ],
+     "key_text": "FEV₁% = X/Y × 100 = 27/32 × 100 ≈ 84%",
+     "source_key": "เฉลย: FEV₁% = X/Y × 100 = 27/32 × 100 ≈ 84%"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "OSPE43",
+     "pages": [
+      8
+     ]
+    }
+   ],
+   "tags": [
+    "physiology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "RESP-43-OSPE-022",
+   "block": "RESP",
+   "cohort": 43,
+   "n": 22,
+   "type": "OSPE",
+   "station": 22,
+   "stem": "สถานี 22: จาก graph ที่ให้ (ตอบทั้งชื่อเต็มและชื่อย่อ)",
+   "items": [
+    {
+     "id": "22.1",
+     "prompt": "A คืออะไร",
+     "format": "short",
+     "accepted": [
+      "vital capacity",
+      "vc"
+     ],
+     "keywords_all": [
+      "vital capacity"
+     ],
+     "key_text": "Vital capacity (VC) — ช่วงจาก maximum inspiration ถึง maximum expiration",
+     "source_key": "เฉลย: Vital capacity (VC) — ช่วงจาก maximum inspiration ถึง maximum expiration",
+     "image": "img/RESP-43-OSPE-022.jpg",
+     "image_caption": "Spirogram"
+    },
+    {
+     "id": "22.2",
+     "prompt": "B คืออะไร",
+     "format": "short",
+     "accepted": [
+      "tidal volume",
+      "vt",
+      "tv"
+     ],
+     "keywords_all": [
+      "tidal"
+     ],
+     "key_text": "Tidal volume (TV/VT)",
+     "source_key": "เฉลย: Tidal volume (TV/VT)"
+    },
+    {
+     "id": "22.3",
+     "prompt": "C คืออะไร",
+     "format": "short",
+     "accepted": [
+      "expiratory reserve",
+      "erv"
+     ],
+     "keywords_all": [
+      "expiratory reserve"
+     ],
+     "key_text": "Expiratory reserve volume (ERV)",
+     "source_key": "เฉลย: Expiratory reserve volume (ERV)"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "OSPE43",
+     "pages": [
+      9
+     ]
+    }
+   ],
+   "tags": [
+    "physiology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "RESP-43-OSPE-023",
+   "block": "RESP",
+   "cohort": 43,
+   "n": 23,
+   "type": "OSPE",
+   "station": 23,
+   "stem": "สถานี 23: จากภาพ flow–volume loop",
+   "items": [
+    {
+     "id": "23.1",
+     "prompt": "A คืออะไร",
+     "format": "short",
+     "accepted": [
+      "vital capacity",
+      "vc"
+     ],
+     "keywords_all": [
+      "vital capacity"
+     ],
+     "key_text": "Vital capacity (VC)",
+     "source_key": "เฉลย: Vital capacity (VC)",
+     "image": "img/RESP-43-OSPE-023.jpg",
+     "image_caption": "Flow–volume loop"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "OSPE43",
+     "pages": [
+      9
+     ]
+    }
+   ],
+   "tags": [
+    "physiology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "RESP-43-OSPE-024",
+   "block": "RESP",
+   "cohort": 43,
+   "n": 24,
+   "type": "OSPE",
+   "station": 24,
+   "stem": "สถานี 24: จากภาพ CXR (ลูกศรสีน้ำเงินที่มุมล่างขวา)",
+   "items": [
+    {
+     "id": "24.1",
+     "prompt": "บอกความผิดปกติจากภาพ",
+     "format": "short",
+     "accepted": [
+      "blunting",
+      "costophrenic"
+     ],
+     "keywords_all": [
+      "blunting"
+     ],
+     "key_text": "Blunting ของ right costophrenic angle",
+     "source_key": "เฉลย: Blunting ของ right costophrenic angle",
+     "image": "img/RESP-43-OSPE-024.jpg",
+     "image_caption": "CXR"
+    },
+    {
+     "id": "24.2",
+     "prompt": "Diagnosis",
+     "format": "short",
+     "accepted": [
+      "pleural effusion",
+      "effusion"
+     ],
+     "keywords_all": [
+      "effusion"
+     ],
+     "key_text": "Pleural effusion",
+     "source_key": "เฉลย: Pleural effusion"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "OSPE43",
+     "pages": [
+      9
+     ]
+    }
+   ],
+   "tags": [
+    "radiology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "RESP-43-OSPE-025",
+   "block": "RESP",
+   "cohort": 43,
+   "n": 25,
+   "type": "OSPE",
+   "station": 25,
+   "stem": "สถานี 25: ให้รูปฟิล์ม Chest X-ray",
+   "items": [
+    {
+     "id": "25.1",
+     "prompt": "Position แบบใด",
+     "format": "short",
+     "accepted": [
+      "pa"
+     ],
+     "keywords_all": [
+      "PA"
+     ],
+     "key_text": "PA",
+     "source_key": "เฉลย: PA",
+     "image": "img/RESP-43-OSPE-025.jpg",
+     "image_caption": "CXR"
+    },
+    {
+     "id": "25.2",
+     "prompt": "Exposure เป็นอย่างไร",
+     "format": "short",
+     "accepted": [
+      "adequate",
+      "เหมาะสม",
+      "vertebra"
+     ],
+     "keywords_all": [
+      "เหมาะสม"
+     ],
+     "key_text": "เหมาะสม (เห็น vertebra ผ่านหัวใจจาง ๆ)",
+     "source_key": "เฉลย: เหมาะสม (เห็น vertebra ผ่านหัวใจจาง ๆ)"
+    },
+    {
+     "id": "25.3",
+     "prompt": "Rotate หรือไม่",
+     "format": "short",
+     "accepted": [
+      "not rotated",
+      "ไม่"
+     ],
+     "keywords_all": [
+      "ไม่"
+     ],
+     "key_text": "ไม่ rotate",
+     "source_key": "เฉลย: ไม่ rotate"
+    },
+    {
+     "id": "25.4",
+     "prompt": "หายใจเข้าเต็มที่หรือไม่",
+     "format": "short",
+     "accepted": [
+      "inspir",
+      "เต็ม"
+     ],
+     "keywords_all": [
+      "เต็ม"
+     ],
+     "key_text": "เต็มที่ (inspiration)",
+     "source_key": "เฉลย: เต็มที่ (inspiration)"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "OSPE43",
+     "pages": [
+      10
+     ]
+    }
+   ],
+   "tags": [
+    "radiology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "RESP-43-OSPE-026",
+   "block": "RESP",
+   "cohort": 43,
+   "n": 26,
+   "type": "OSPE",
+   "station": 26,
+   "stem": "สถานี 26: จากภาพ gross (ปอดเป็น honeycomb)",
+   "items": [
+    {
+     "id": "26.1",
+     "prompt": "Diagnosis",
+     "format": "short",
+     "accepted": [
+      "honeycomb",
+      "fibrosis"
+     ],
+     "keywords_all": [
+      "fibrosis"
+     ],
+     "key_text": "Honeycomb lung (end-stage pulmonary fibrosis)",
+     "source_key": "เฉลย: Honeycomb lung (end-stage pulmonary fibrosis)",
+     "image": "img/RESP-43-OSPE-026.jpg",
+     "image_caption": "Gross ปอด"
+    },
+    {
+     "id": "26.2",
+     "prompt": "สาเหตุที่ทำให้เกิด 2 ข้อ",
+     "format": "short",
+     "accepted": [
+      "idiopathic",
+      "pneumoconiosis",
+      "asbestosis",
+      "silicosis",
+      "bleomycin",
+      "collagen"
+     ],
+     "keywords_all": [
+      "idiopathic"
+     ],
+     "key_text": "Idiopathic pulmonary fibrosis, pneumoconiosis (asbestosis/silicosis) หรือยา (bleomycin, amiodarone), collagen vascular disease",
+     "source_key": "เฉลย: Idiopathic pulmonary fibrosis, pneumoconiosis (asbestosis/silicosis) หรือยา (bleomycin, amiodarone), collagen vascular disease"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "OSPE43",
+     "pages": [
+      10
+     ]
+    }
+   ],
+   "tags": [
+    "pathology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "RESP-43-OSPE-027",
+   "block": "RESP",
+   "cohort": 43,
+   "n": 27,
+   "type": "OSPE",
+   "station": 27,
+   "stem": "สถานี 27: จากภาพ Gram stain แบคทีเรียแกรมลบรูปแท่ง",
+   "items": [
+    {
+     "id": "27.1",
+     "prompt": "รายงานผลจาก Gram stain",
+     "format": "short",
+     "accepted": [
+      "gram negative",
+      "bacilli",
+      "rod"
+     ],
+     "keywords_all": [
+      "gram"
+     ],
+     "key_text": "Gram-negative bacilli (rod-shaped) จำนวนมากล้อมรอบเซลล์/ใน neutrophil",
+     "source_key": "เฉลย: Gram-negative bacilli (rod-shaped) จำนวนมากล้อมรอบเซลล์/ใน neutrophil",
+     "image": "img/RESP-43-OSPE-027.jpg",
+     "image_caption": "Gram stain"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "OSPE43",
+     "pages": [
+      10
+     ]
+    }
+   ],
+   "tags": [
+    "microbiology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "RESP-43-OSPE-028",
+   "block": "RESP",
+   "cohort": 43,
+   "n": 28,
+   "type": "OSPE",
+   "station": 28,
+   "stem": "สถานี 28: จากภาพ",
+   "items": [
+    {
+     "id": "28.1",
+     "prompt": "ชื่อของสิ่งมีชีวิตในภาพ",
+     "format": "short",
+     "accepted": [
+      "mycobacterium",
+      "tuberculosis",
+      "acid fast",
+      "afb"
+     ],
+     "keywords_all": [
+      "mycobacterium"
+     ],
+     "key_text": "Mycobacterium tuberculosis (acid-fast bacilli)",
+     "source_key": "เฉลย: Mycobacterium tuberculosis (acid-fast bacilli)",
+     "image": "img/RESP-43-OSPE-028.jpg",
+     "image_caption": "AFB stain"
+    },
+    {
+     "id": "28.2",
+     "prompt": "เด็กชายอายุ 2 ปี ตรวจพบเชื้อดังกล่าว ควรส่ง specimen อะไรเหมาะที่สุด",
+     "format": "short",
+     "accepted": [
+      "gastric",
+      "induced sputum",
+      "aspirate",
+      "lavage"
+     ],
+     "keywords_all": [
+      "gastric"
+     ],
+     "key_text": "Gastric aspirate/lavage (เด็กเล็กกลืนเสมหะ) (หรือ induced sputum)",
+     "source_key": "เฉลย: Gastric aspirate/lavage (เด็กเล็กกลืนเสมหะ) (หรือ induced sputum)"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "OSPE43",
+     "pages": [
+      11
+     ]
+    }
+   ],
+   "tags": [
+    "microbiology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "RESP-43-OSPE-029",
+   "block": "RESP",
+   "cohort": 43,
+   "n": 29,
+   "type": "OSPE",
+   "station": 29,
+   "stem": "สถานี 29: จากภาพ",
+   "items": [
+    {
+     "id": "29.1",
+     "prompt": "ลักษณะของเชื้อ",
+     "format": "short",
+     "accepted": [
+      "septate",
+      "hyphae",
+      "dichotomous",
+      "branching",
+      "45"
+     ],
+     "keywords_all": [
+      "septate"
+     ],
+     "key_text": "Septate hyphae แตกแขนงทำมุมแหลม (~45°, dichotomous branching)",
+     "source_key": "เฉลย: Septate hyphae แตกแขนงทำมุมแหลม (~45°, dichotomous branching)",
+     "image": "img/RESP-43-OSPE-029.jpg",
+     "image_caption": "Fungal hyphae"
+    },
+    {
+     "id": "29.2",
+     "prompt": "ชื่อสิ่งมีชีวิตชนิดนี้",
+     "format": "short",
+     "accepted": [
+      "aspergillus"
+     ],
+     "keywords_all": [
+      "aspergillus"
+     ],
+     "key_text": "Aspergillus",
+     "source_key": "เฉลย: Aspergillus"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "OSPE43",
+     "pages": [
+      11
+     ]
+    }
+   ],
+   "tags": [
+    "microbiology"
+   ],
+   "source": "claude-mcp"
+  }
+ ]
+}

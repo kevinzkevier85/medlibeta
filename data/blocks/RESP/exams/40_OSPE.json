@@ -1,0 +1,1056 @@
+{
+ "meta": {
+  "set_id": "40_OSPE",
+  "block": "RESP",
+  "cohort": 40,
+  "type": "OSPE",
+  "title": "OSPE Respiratory · Med PSU 40",
+  "generated_by": "auditor/tools/build_kf.py from auditor/data/work/resp_40_OSPE.kf.json — do not edit by hand"
+ },
+ "questions": [
+  {
+   "id": "RESP-40-OSPE-001",
+   "block": "RESP",
+   "cohort": 40,
+   "n": 1,
+   "type": "OSPE",
+   "station": 1,
+   "stem": "สถานี 1: จากภาพผนังทรวงอก (intercostal space)",
+   "items": [
+    {
+     "id": "1.1",
+     "prompt": "กล้ามเนื้อหมายเลข 1",
+     "format": "short",
+     "accepted": [
+      "external intercostal"
+     ],
+     "keywords_all": [
+      "external intercostal"
+     ],
+     "key_text": "External intercostal muscle",
+     "source_key": "เฉลย: External intercostal muscle",
+     "image": "img/RESP-40-OSPE-001.jpg",
+     "image_caption": "Intercostal space (Yokochi)"
+    },
+    {
+     "id": "1.2",
+     "prompt": "ข้อต่อหมายเลข 2",
+     "format": "short",
+     "accepted": [
+      "costochondral"
+     ],
+     "keywords_all": [
+      "costochondral"
+     ],
+     "key_text": "Costochondral joint",
+     "source_key": "เฉลย: Costochondral joint"
+    },
+    {
+     "id": "1.3",
+     "prompt": "เส้นเลือดแดงหมายเลข 3",
+     "format": "short",
+     "accepted": [
+      "intercostal artery"
+     ],
+     "keywords_all": [
+      "intercostal"
+     ],
+     "key_text": "Intercostal artery",
+     "source_key": "เฉลย: Intercostal artery"
+    },
+    {
+     "id": "1.4",
+     "prompt": "กล้ามเนื้อหมายเลข 4",
+     "format": "short",
+     "accepted": [
+      "internal intercostal"
+     ],
+     "keywords_all": [
+      "internal intercostal"
+     ],
+     "key_text": "Internal intercostal muscle",
+     "source_key": "เฉลย: Internal intercostal muscle"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE40",
+     "pages": [
+      1
+     ]
+    }
+   ],
+   "tags": [
+    "anatomy"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "RESP-40-OSPE-002",
+   "block": "RESP",
+   "cohort": 40,
+   "n": 2,
+   "type": "OSPE",
+   "station": 2,
+   "stem": "สถานี 2: จากภาพกล่องเสียง (larynx)",
+   "items": [
+    {
+     "id": "2.1",
+     "prompt": "โครงสร้างหมายเลข 1",
+     "format": "short",
+     "accepted": [
+      "epiglottis"
+     ],
+     "keywords_all": [
+      "epiglottis"
+     ],
+     "key_text": "Epiglottis",
+     "source_key": "เฉลย: Epiglottis",
+     "image": "img/RESP-40-OSPE-002.jpg",
+     "image_caption": "Larynx (Yokochi)"
+    },
+    {
+     "id": "2.2",
+     "prompt": "ช่องบริเวณหมายเลข 2",
+     "format": "short",
+     "accepted": [
+      "piriform",
+      "pyriform"
+     ],
+     "keywords_all": [
+      "piriform"
+     ],
+     "key_text": "Piriform recess",
+     "source_key": "เฉลย: Piriform recess"
+    },
+    {
+     "id": "2.3",
+     "prompt": "กล้ามเนื้อหมายเลข 3",
+     "format": "short",
+     "accepted": [
+      "oblique arytenoid"
+     ],
+     "keywords_all": [
+      "oblique arytenoid"
+     ],
+     "key_text": "Oblique arytenoid muscle",
+     "source_key": "เฉลย: Oblique arytenoid muscle"
+    },
+    {
+     "id": "2.4",
+     "prompt": "กล้ามเนื้อหมายเลข 4",
+     "format": "short",
+     "accepted": [
+      "posterior cricoarytenoid"
+     ],
+     "keywords_all": [
+      "posterior cricoarytenoid"
+     ],
+     "key_text": "Posterior cricoarytenoid muscle",
+     "source_key": "เฉลย: Posterior cricoarytenoid muscle"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE40",
+     "pages": [
+      1
+     ]
+    }
+   ],
+   "tags": [
+    "anatomy"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "RESP-40-OSPE-003",
+   "block": "RESP",
+   "cohort": 40,
+   "n": 3,
+   "type": "OSPE",
+   "station": 3,
+   "stem": "สถานี 3: จากภาพโพรงจมูกและไซนัส",
+   "items": [
+    {
+     "id": "3.1",
+     "prompt": "Concha หมายเลข 1",
+     "format": "short",
+     "accepted": [
+      "inferior concha",
+      "inferior nasal concha"
+     ],
+     "keywords_all": [
+      "inferior"
+     ],
+     "key_text": "Inferior concha (nasal concha)",
+     "source_key": "เฉลย: Inferior concha (nasal concha)",
+     "image": "img/RESP-40-OSPE-003.jpg",
+     "image_caption": "โพรงจมูก (Yokochi)"
+    },
+    {
+     "id": "3.2",
+     "prompt": "ช่องที่หมายเลข 2 มีรูเปิดไปสู่อะไร",
+     "format": "short",
+     "accepted": [
+      "maxillary"
+     ],
+     "keywords_all": [
+      "maxillary"
+     ],
+     "key_text": "Maxillary sinus",
+     "source_key": "เฉลย: Maxillary sinus"
+    },
+    {
+     "id": "3.3",
+     "prompt": "ช่องว่างหมายเลข 3",
+     "format": "short",
+     "accepted": [
+      "sphenoid"
+     ],
+     "keywords_all": [
+      "sphenoid"
+     ],
+     "key_text": "Sphenoidal sinus",
+     "source_key": "เฉลย: Sphenoidal sinus"
+    },
+    {
+     "id": "3.4",
+     "prompt": "ช่องที่หมายเลข 1 (ในข้อนี้) มีรูเปิดไปสู่อะไร",
+     "format": "short",
+     "accepted": [
+      "nasolacrimal"
+     ],
+     "keywords_all": [
+      "nasolacrimal"
+     ],
+     "key_text": "Nasolacrimal duct",
+     "source_key": "เฉลย: Nasolacrimal duct"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE40",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [
+    "anatomy"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "RESP-40-OSPE-004",
+   "block": "RESP",
+   "cohort": 40,
+   "n": 4,
+   "type": "OSPE",
+   "station": 4,
+   "stem": "สถานี 4: จากภาพปอด (Grant's atlas)",
+   "items": [
+    {
+     "id": "4.1",
+     "prompt": "ร่องหมายเลข 1 เป็นร่องของ",
+     "format": "short",
+     "accepted": [
+      "subclavian"
+     ],
+     "keywords_all": [
+      "subclavian"
+     ],
+     "key_text": "Left subclavian artery",
+     "source_key": "เฉลย: Left subclavian artery",
+     "image": "img/RESP-40-OSPE-004.jpg",
+     "image_caption": "ปอดซ้าย (Grant's)"
+    },
+    {
+     "id": "4.2",
+     "prompt": "บริเวณหมายเลข 2",
+     "format": "short",
+     "accepted": [
+      "cardiac impression"
+     ],
+     "keywords_all": [
+      "cardiac impression"
+     ],
+     "key_text": "Cardiac impression",
+     "source_key": "เฉลย: Cardiac impression"
+    },
+    {
+     "id": "4.3",
+     "prompt": "ร่องหมายเลข 3 เป็นร่องของ",
+     "format": "short",
+     "accepted": [
+      "arch of aorta",
+      "aortic arch"
+     ],
+     "keywords_all": [
+      "aorta"
+     ],
+     "key_text": "Arch of aorta",
+     "source_key": "เฉลย: Arch of aorta"
+    },
+    {
+     "id": "4.4",
+     "prompt": "หมายเลข 4",
+     "format": "short",
+     "accepted": [
+      "left main bronchus",
+      "left bronchus"
+     ],
+     "keywords_all": [
+      "bronchus"
+     ],
+     "key_text": "Left main bronchus",
+     "source_key": "เฉลย: Left main bronchus"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE40",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [
+    "anatomy"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "RESP-40-OSPE-005",
+   "block": "RESP",
+   "cohort": 40,
+   "n": 5,
+   "type": "OSPE",
+   "station": 5,
+   "stem": "สถานี 5: จากภาพสไลด์ท่อทางเดินหายใจ",
+   "items": [
+    {
+     "id": "5.1",
+     "prompt": "หมายเลข 1 เป็น lumen ของอวัยวะใด",
+     "format": "short",
+     "accepted": [
+      "trachea"
+     ],
+     "keywords_all": [
+      "trachea"
+     ],
+     "key_text": "Trachea",
+     "source_key": "เฉลย: Trachea",
+     "image": "img/RESP-40-OSPE-005.jpg",
+     "image_caption": "สไลด์ H&E trachea"
+    },
+    {
+     "id": "5.2",
+     "prompt": "Epithelium บริเวณหมายเลข 2",
+     "format": "short",
+     "accepted": [
+      "pseudostratified",
+      "goblet"
+     ],
+     "keywords_all": [
+      "pseudostratified"
+     ],
+     "key_text": "Pseudostratified ciliated columnar epithelium with goblet cells",
+     "source_key": "เฉลย: Pseudostratified ciliated columnar epithelium with goblet cells"
+    },
+    {
+     "id": "5.3",
+     "prompt": "กล้ามเนื้อหมายเลข 3",
+     "format": "short",
+     "accepted": [
+      "trachealis"
+     ],
+     "keywords_all": [
+      "trachealis"
+     ],
+     "key_text": "Trachealis muscle",
+     "source_key": "เฉลย: Trachealis muscle"
+    },
+    {
+     "id": "5.4",
+     "prompt": "หมายเลข 4 เป็นกระดูกอ่อนชนิดใด",
+     "format": "short",
+     "accepted": [
+      "hyaline"
+     ],
+     "keywords_all": [
+      "hyaline"
+     ],
+     "key_text": "Hyaline cartilage",
+     "source_key": "เฉลย: Hyaline cartilage"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE40",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [
+    "histology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "RESP-40-OSPE-006",
+   "block": "RESP",
+   "cohort": 40,
+   "n": 6,
+   "type": "OSPE",
+   "station": 6,
+   "stem": "สถานี 6: จากภาพสไลด์ท่อทางเดินหายใจ",
+   "items": [
+    {
+     "id": "6.1",
+     "prompt": "หมายเลข 1 เป็น lumen ของอวัยวะใด",
+     "format": "short",
+     "accepted": [
+      "intrapulmonary bronchus",
+      "bronchus"
+     ],
+     "keywords_all": [
+      "bronchus"
+     ],
+     "key_text": "Intrapulmonary bronchus",
+     "source_key": "เฉลย: Intrapulmonary bronchus",
+     "image": "img/RESP-40-OSPE-006.jpg",
+     "image_caption": "สไลด์ H&E bronchus"
+    },
+    {
+     "id": "6.2",
+     "prompt": "Epithelium บริเวณหมายเลข 2",
+     "format": "short",
+     "accepted": [
+      "pseudostratified",
+      "goblet"
+     ],
+     "keywords_all": [
+      "pseudostratified"
+     ],
+     "key_text": "Pseudostratified ciliated columnar epithelium with goblet cells",
+     "source_key": "เฉลย: Pseudostratified ciliated columnar epithelium with goblet cells"
+    },
+    {
+     "id": "6.3",
+     "prompt": "หมายเลข 3 เป็นกระดูกอ่อนชนิดใด",
+     "format": "short",
+     "accepted": [
+      "hyaline"
+     ],
+     "keywords_all": [
+      "hyaline"
+     ],
+     "key_text": "Hyaline cartilage",
+     "source_key": "เฉลย: Hyaline cartilage"
+    },
+    {
+     "id": "6.4",
+     "prompt": "หากกระตุ้น sympathetic จะเกิดอะไร",
+     "format": "short",
+     "accepted": [
+      "bronchodilation",
+      "dilat"
+     ],
+     "keywords_all": [
+      "bronchodilation"
+     ],
+     "key_text": "Bronchodilation",
+     "source_key": "เฉลย: Bronchodilation"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE40",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [
+    "histology",
+    "physiology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "RESP-40-OSPE-007",
+   "block": "RESP",
+   "cohort": 40,
+   "n": 7,
+   "type": "OSPE",
+   "station": 7,
+   "stem": "สถานี 7: จากกราฟ Collins spirometer (ข้อ 7–8 ใช้รูปเดียวกัน; แนะนำให้นับ respiratory rate และ tidal volume ตั้งแต่ข้อ 7)",
+   "items": [
+    {
+     "id": "7.1",
+     "prompt": "ชื่อเต็มและชื่อย่อของ Tidal volume",
+     "format": "short",
+     "accepted": [
+      "tidal volume"
+     ],
+     "keywords_all": [
+      "tidal"
+     ],
+     "key_text": "Tidal volume (TV / VT)",
+     "source_key": "เฉลย: Tidal volume (TV / VT)",
+     "image": "img/RESP-40-OSPE-007.jpg",
+     "image_caption": "Collins spirogram"
+    },
+    {
+     "id": "7.2",
+     "prompt": "ชื่อเต็มและชื่อย่อของ Inspiratory capacity",
+     "format": "short",
+     "accepted": [
+      "inspiratory capacity",
+      "ic"
+     ],
+     "keywords_all": [
+      "inspiratory capacity"
+     ],
+     "key_text": "Inspiratory capacity (IC) = TV + IRV",
+     "source_key": "เฉลย: Inspiratory capacity (IC) = TV + IRV"
+    },
+    {
+     "id": "7.3",
+     "prompt": "ชื่อเต็มและชื่อย่อของ Vital capacity",
+     "format": "short",
+     "accepted": [
+      "vital capacity",
+      "vc"
+     ],
+     "keywords_all": [
+      "vital capacity"
+     ],
+     "key_text": "Vital capacity (VC) = IRV + TV + ERV",
+     "source_key": "เฉลย: Vital capacity (VC) = IRV + TV + ERV"
+    },
+    {
+     "id": "8.1",
+     "prompt": "Respiratory rate",
+     "format": "short",
+     "accepted": [
+      "breaths",
+      "rate",
+      "per minute",
+      "ครั้ง"
+     ],
+     "keywords_all": [
+      "rate"
+     ],
+     "key_text": "นับจำนวนรอบการหายใจต่อ 1 นาทีจากกราฟ (ตามภาพที่ให้)",
+     "source_key": "เฉลย: นับจำนวนรอบการหายใจต่อ 1 นาทีจากกราฟ (ตามภาพที่ให้)"
+    },
+    {
+     "id": "8.2",
+     "prompt": "แสดงวิธีคำนวณ Total (minute) ventilation",
+     "format": "short",
+     "accepted": [
+      "tidal volume",
+      "respiratory rate",
+      "×",
+      "x"
+     ],
+     "keywords_all": [
+      "tidal volume"
+     ],
+     "key_text": "Minute ventilation = tidal volume × respiratory rate",
+     "source_key": "เฉลย: Minute ventilation = tidal volume × respiratory rate"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "OSPE40",
+     "pages": [
+      4
+     ]
+    }
+   ],
+   "tags": [
+    "physiology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "RESP-40-OSPE-009",
+   "block": "RESP",
+   "cohort": 40,
+   "n": 9,
+   "type": "OSPE",
+   "station": 9,
+   "stem": "สถานี 9: จากกราฟ auto-spirometer (ข้อ 9–10 ใช้รูปเดียวกัน)",
+   "items": [
+    {
+     "id": "9.1",
+     "prompt": "หมายเลข 1 คืออะไร (ชื่อเต็มและย่อ)",
+     "format": "short",
+     "accepted": [
+      "forced vital capacity",
+      "fvc"
+     ],
+     "keywords_all": [
+      "fvc"
+     ],
+     "key_text": "Forced vital capacity (FVC)",
+     "source_key": "เฉลย: Forced vital capacity (FVC)",
+     "image": "img/RESP-40-OSPE-009.jpg",
+     "image_caption": "Auto-spirometer chart"
+    },
+    {
+     "id": "9.2",
+     "prompt": "FEV₁ มีค่าเท่าใด (ดูเส้นเวลาที่ลอยอยู่มุมขวาบนเพื่อเทียบ)",
+     "format": "short",
+     "accepted": [
+      "fev1",
+      "1 s",
+      "1 second",
+      "วินาที"
+     ],
+     "keywords_all": [
+      "fev1"
+     ],
+     "key_text": "อ่านค่าปริมาตร ณ วินาทีที่ 1 จากกราฟ (FEV₁ = volume ที่เป่าออกในวินาทีแรก)",
+     "source_key": "เฉลย: อ่านค่าปริมาตร ณ วินาทีที่ 1 จากกราฟ (FEV₁ = volume ที่เป่าออกในวินาทีแรก)"
+    },
+    {
+     "id": "10.1",
+     "prompt": "การหายใจเข้าเป็นเส้น A หรือ B",
+     "format": "short",
+     "accepted": [
+      "b"
+     ],
+     "keywords_all": [
+      "B"
+     ],
+     "key_text": "B",
+     "source_key": "เฉลย: B"
+    },
+    {
+     "id": "10.2",
+     "prompt": "Flow rate สูงสุดคือค่าอะไรในกราฟนี้",
+     "format": "short",
+     "accepted": [
+      "pef",
+      "peak expiratory flow"
+     ],
+     "keywords_all": [
+      "pef"
+     ],
+     "key_text": "PEF (peak expiratory flow)",
+     "source_key": "เฉลย: PEF (peak expiratory flow)"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "OSPE40",
+     "pages": [
+      4
+     ]
+    }
+   ],
+   "tags": [
+    "physiology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "RESP-40-OSPE-011",
+   "block": "RESP",
+   "cohort": 40,
+   "n": 11,
+   "type": "OSPE",
+   "station": 11,
+   "stem": "สถานี 11: จากภาพ gross ของปอด (ภาพในไฟล์อาจไม่ใช่ภาพจริงในข้อสอบ)",
+   "items": [
+    {
+     "id": "11.1",
+     "prompt": "พยาธิสภาพที่เกิดกับเนื้อปอดนี้",
+     "format": "short",
+     "accepted": [
+      "bronchiectasis"
+     ],
+     "keywords_all": [
+      "bronchiectasis"
+     ],
+     "key_text": "Bronchiectasis",
+     "source_key": "เฉลย: Bronchiectasis",
+     "image": "img/RESP-40-OSPE-011.jpg",
+     "image_caption": "Gross ปอด"
+    },
+    {
+     "id": "11.2",
+     "prompt": "ยกตัวอย่างอาการ 3 อย่าง",
+     "format": "short",
+     "accepted": [
+      "ไอ",
+      "เสมหะ",
+      "หอบ",
+      "cough",
+      "sputum",
+      "dyspnea"
+     ],
+     "keywords_all": [
+      "ไอ"
+     ],
+     "key_text": "ไอเรื้อรัง, มีเสมหะ, หอบเหนื่อย",
+     "source_key": "เฉลย: ไอเรื้อรัง, มีเสมหะ, หอบเหนื่อย"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE40",
+     "pages": [
+      5
+     ]
+    }
+   ],
+   "tags": [
+    "pathology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "RESP-40-OSPE-012",
+   "block": "RESP",
+   "cohort": 40,
+   "n": 12,
+   "type": "OSPE",
+   "station": 12,
+   "stem": "สถานี 12: จากภาพ gross ของปอด (ภาพในไฟล์อาจไม่ใช่ภาพจริงในข้อสอบ)",
+   "items": [
+    {
+     "id": "12.1",
+     "prompt": "อธิบายลักษณะของพยาธิสภาพที่เกิดกับเนื้อปอดนี้",
+     "format": "short",
+     "accepted": [
+      "ก้อน",
+      "ขาว",
+      "กระจาย",
+      "nodule",
+      "white"
+     ],
+     "keywords_all": [
+      "ก้อน"
+     ],
+     "key_text": "เป็นก้อนสีขาวขอบเขตชัดเจนกระจายอยู่ทั่วเนื้อปอด",
+     "source_key": "เฉลย: เป็นก้อนสีขาวขอบเขตชัดเจนกระจายอยู่ทั่วเนื้อปอด",
+     "image": "img/RESP-40-OSPE-012.jpg",
+     "image_caption": "Gross ปอด"
+    },
+    {
+     "id": "12.2",
+     "prompt": "ชื่อโรคที่ทำให้เกิดพยาธิสภาพนี้ (ตัวอย่าง)",
+     "format": "short",
+     "accepted": [
+      "tuberculosis",
+      "histoplasmosis",
+      "cryptococcosis"
+     ],
+     "keywords_all": [
+      "tuberculosis"
+     ],
+     "key_text": "Tuberculosis, Histoplasmosis, Cryptococcosis",
+     "source_key": "เฉลย (ในไฟล์เป็นข้อ 11.2 ซ้ำเลข): Tuberculosis / Histoplasmosis / Cryptococcosis"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE40",
+     "pages": [
+      5
+     ]
+    }
+   ],
+   "tags": [
+    "pathology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "RESP-40-OSPE-013",
+   "block": "RESP",
+   "cohort": 40,
+   "n": 13,
+   "type": "OSPE",
+   "station": 13,
+   "stem": "สถานี 13: จากภาพ Gram stain (ภาพจาก Google \"Candida albicans gram\")",
+   "items": [
+    {
+     "id": "13.1",
+     "prompt": "อธิบายผลของ Gram stain นี้",
+     "format": "short",
+     "accepted": [
+      "gram positive",
+      "pseudohyphae",
+      "yeast"
+     ],
+     "keywords_all": [
+      "pseudohyphae"
+     ],
+     "key_text": "Gram-positive pseudohyphae and yeast cells",
+     "source_key": "เฉลย: Gram-positive pseudohyphae and yeast cells",
+     "image": "img/RESP-40-OSPE-013.jpg",
+     "image_caption": "Gram stain"
+    },
+    {
+     "id": "13.2",
+     "prompt": "ชื่อเชื้อ",
+     "format": "short",
+     "accepted": [
+      "candida"
+     ],
+     "keywords_all": [
+      "candida"
+     ],
+     "key_text": "Candida albicans",
+     "source_key": "เฉลย: Candida albicans"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE40",
+     "pages": [
+      5
+     ]
+    }
+   ],
+   "tags": [
+    "microbiology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "RESP-40-OSPE-014",
+   "block": "RESP",
+   "cohort": 40,
+   "n": 14,
+   "type": "OSPE",
+   "station": 14,
+   "stem": "สถานี 14: จากภาพ Gram stain (ภาพ demonstration ใน lab)",
+   "items": [
+    {
+     "id": "14.1",
+     "prompt": "อธิบายผล Gram stain และเม็ดเลือดขาวที่เห็น",
+     "format": "short",
+     "accepted": [
+      "gram positive",
+      "beaded",
+      "branching",
+      "neutrophil"
+     ],
+     "keywords_all": [
+      "branching"
+     ],
+     "key_text": "Gram-positive bacilli with beaded branching filaments / neutrophils",
+     "source_key": "เฉลย: Gram-positive bacilli with beaded branching filaments / neutrophils",
+     "image": "img/RESP-40-OSPE-014.jpg",
+     "image_caption": "Gram stain"
+    },
+    {
+     "id": "14.2",
+     "prompt": "เกณฑ์ PMN ใน sputum ที่ถือว่าเป็นตัวอย่างที่เหมาะสม",
+     "format": "short",
+     "accepted": [
+      "25",
+      "low power",
+      "lpf"
+     ],
+     "keywords_all": [
+      "25"
+     ],
+     "key_text": "≥ 25 cells / low power field",
+     "source_key": "เฉลย: ≥ 25 cells / low power field"
+    },
+    {
+     "id": "14.3",
+     "prompt": "ชื่อเชื้อ",
+     "format": "short",
+     "accepted": [
+      "nocardia",
+      "actinomyces"
+     ],
+     "keywords_all": [
+      "nocardia"
+     ],
+     "key_text": "Nocardia spp., Actinomyces spp.",
+     "source_key": "เฉลย: Nocardia spp., Actinomyces spp."
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE40",
+     "pages": [
+      6
+     ]
+    }
+   ],
+   "tags": [
+    "microbiology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "RESP-40-OSPE-015",
+   "block": "RESP",
+   "cohort": 40,
+   "n": 15,
+   "type": "OSPE",
+   "station": 15,
+   "stem": "สถานี 15: จาก chest X-ray",
+   "items": [
+    {
+     "id": "15.1",
+     "prompt": "หมายเลข 1",
+     "format": "short",
+     "accepted": [
+      "clavicle"
+     ],
+     "keywords_all": [
+      "clavicle"
+     ],
+     "key_text": "Clavicle",
+     "source_key": "เฉลย: Clavicle",
+     "image": "img/RESP-40-OSPE-015.jpg",
+     "image_caption": "CXR"
+    },
+    {
+     "id": "15.2",
+     "prompt": "หมายเลข 2",
+     "format": "short",
+     "accepted": [
+      "trachea"
+     ],
+     "keywords_all": [
+      "trachea"
+     ],
+     "key_text": "Trachea",
+     "source_key": "เฉลย: Trachea"
+    },
+    {
+     "id": "15.3",
+     "prompt": "หมายเลข 3 เป็น posterior หรือ anterior rib",
+     "format": "short",
+     "accepted": [
+      "posterior"
+     ],
+     "keywords_all": [
+      "posterior"
+     ],
+     "key_text": "Posterior rib",
+     "source_key": "เฉลย: Posterior rib"
+    },
+    {
+     "id": "15.4",
+     "prompt": "หมายเลข 4",
+     "format": "short",
+     "accepted": [
+      "carina"
+     ],
+     "keywords_all": [
+      "carina"
+     ],
+     "key_text": "Carina",
+     "source_key": "เฉลย: Carina"
+    },
+    {
+     "id": "15.5",
+     "prompt": "มุมหมายเลข 5",
+     "format": "short",
+     "accepted": [
+      "costophrenic",
+      "costodiaphrag"
+     ],
+     "keywords_all": [
+      "costo"
+     ],
+     "key_text": "Costophrenic (costodiaphragmatic) angle",
+     "source_key": "เฉลย: Costophrenic (costodiaphragmatic) angle"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE40",
+     "pages": [
+      6
+     ]
+    }
+   ],
+   "tags": [
+    "radiology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "RESP-40-OSPE-016",
+   "block": "RESP",
+   "cohort": 40,
+   "n": 16,
+   "type": "OSPE",
+   "station": 16,
+   "stem": "สถานี 16: จาก chest X-ray",
+   "items": [
+    {
+     "id": "16.1",
+     "prompt": "ฟิล์ม X-ray ถ่ายด้วยท่าใด",
+     "format": "short",
+     "accepted": [
+      "lordotic"
+     ],
+     "keywords_all": [
+      "lordotic"
+     ],
+     "key_text": "Lordotic view",
+     "source_key": "เฉลย: Lordotic view",
+     "image": "img/RESP-40-OSPE-016.jpg",
+     "image_caption": "CXR lordotic"
+    },
+    {
+     "id": "16.2",
+     "prompt": "สั่งตรวจนี้เมื่อสงสัยพยาธิสภาพบริเวณใด",
+     "format": "short",
+     "accepted": [
+      "apex",
+      "apical"
+     ],
+     "keywords_all": [
+      "apex"
+     ],
+     "key_text": "Apex of lung",
+     "source_key": "เฉลย: Apex of lung"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE40",
+     "pages": [
+      7
+     ]
+    }
+   ],
+   "tags": [
+    "radiology"
+   ],
+   "source": "claude-mcp"
+  }
+ ]
+}

@@ -9,9 +9,9 @@
 - รันเว็บ: `python -m http.server 8765` · ตรวจข้อมูล: `node tools/validate.cjs` (ต้องผ่านก่อนส่งทุกครั้ง)
 - ส่งงานทุกครั้ง: เพิ่มเลขใน `version.json` + `CHANGELOG.md` + `?v=` ใน `index.html` + `VERSION` ใน `sw.js`
 
-## 1. บล็อก Respiratory (RESP) — กำลังทำ (Drive `preclinic/2/respiratory`)
-- branch **`finn-resp-block`** · block id `RESP` · inventory `resp_<รุ่น>_<MCQ|KF|OSPE>` (32 ชุด) · `data/blocks/RESP/`
-- MCQ ✅ ครบ 11 ชุด (40 = AI เขียนจากโพย 59 ข้อ) · KF ✅ ปี 49, 50, 51, 52 · ⏳ KF ปี 48, 47, 46, 45, 44, 41-43, 40 (เฉลยลายมือ+ภาพ ต้องดูภาพทุกหน้า `auditor/raw/<ชุด>/key_pNNN.png`; ข้อความในไฟล์ 48 เพี้ยน อ่านจากภาพ) · ⏳ OSPE ทั้ง 10 ชุด (ภาษาไทย) — KF/OSPE ต้องอ่านทุกหน้าด้วยตาแล้วเขียน `<set>.kf.json` (ดู build_kf.py)
+## 1. บล็อก Respiratory (RESP) — ครบทุกชุดแล้ว (Drive `preclinic/2/respiratory`)
+- branch **`finn-resp-kf-ospe`** · block id `RESP` · inventory `resp_<รุ่น>_<MCQ|KF|OSPE>` · `data/blocks/RESP/`
+- MCQ ✅ 11 ชุด (40 = AI เขียนจากโพย) · KF ✅ 11 ชุด · OSPE ✅ 10 ชุด (51 รวม 51-1/51-2 เป็น 17 สถานี · 40-43 ภาพบางสถานีตัดออก) · ข้อที่ไฟล์ไม่มีเฉลยหรือเฉลยลายมืออ่านไม่ออก AI เติมให้ ติดป้าย `draft` (KF 44–51, OSPE 40-43/44 ฯลฯ) ผู้ตรวจควรยืนยัน
 - MCQ รุ่นเก่าเป็น "ข้อสอบจำ" ข้อที่ไม่มีช้อยส์/ซ้ำ ข้าม · เฉลยต้นฉบับใช้วงกลม/ขีดเฉียง/ไฮไลต์หลายแบบ (parse_key.py รองรับแล้ว ข้อที่อ่านไม่ได้ต้องดู `auditor/raw/<ชุด>/key_pNNN.png` เอง)
 
 ## 2. บล็อก KUB and Repro — merge แล้ว (PR #38)

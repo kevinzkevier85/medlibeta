@@ -1,0 +1,1197 @@
+{
+ "meta": {
+  "set_id": "52_OSPE",
+  "block": "RESP",
+  "cohort": 52,
+  "type": "OSPE",
+  "title": "OSPE Respiratory · Med PSU 52",
+  "time_limit_min": 30,
+  "generated_by": "auditor/tools/build_kf.py from auditor/data/work/resp_52_OSPE.kf.json — do not edit by hand"
+ },
+ "questions": [
+  {
+   "id": "RESP-52-OSPE-001",
+   "block": "RESP",
+   "cohort": 52,
+   "n": 1,
+   "type": "OSPE",
+   "station": 1,
+   "stem": "สถานี 1: ดูภาพกระดูกสันหลังและกระดูกอก (ตำแหน่ง 1.1–1.4 ในภาพ)",
+   "items": [
+    {
+     "id": "1.1",
+     "prompt": "โครงสร้างจำเพาะใดพาดผ่านในช่องตรงนี้ (1.1)",
+     "format": "short",
+     "accepted": [
+      "spinal cord"
+     ],
+     "keywords_all": [
+      "spinal cord"
+     ],
+     "key_text": "Spinal cord",
+     "source_key": "เฉลย: Spinal cord (ผู้เฉลยไม่แน่ใจว่าข้อสอบจริงชี้ superior articular process หรือ transverse process ถ้า transverse process ตอบ tubercle of rib)",
+     "image": "img/RESP-52-OSPE-001.jpg",
+     "image_caption": "ภาพ vertebra และ sternum พร้อมตำแหน่ง 1.1–1.4"
+    },
+    {
+     "id": "1.2",
+     "prompt": "โครงสร้างนี้เชื่อมต่อกับโครงสร้างจำเพาะใด (1.2)",
+     "format": "short",
+     "accepted": [
+      "inferior articular"
+     ],
+     "keywords_all": [
+      "inferior articular"
+     ],
+     "key_text": "Inferior articular process",
+     "source_key": "เฉลย: Inferior articular process"
+    },
+    {
+     "id": "1.3",
+     "prompt": "โครงสร้างนี้มีชื่อเรียกจำเพาะว่าอะไร (1.3)",
+     "format": "short",
+     "accepted": [
+      "sternal angle",
+      "angle of louis",
+      "manubriosternal"
+     ],
+     "keywords_all": [
+      "sternal angle"
+     ],
+     "key_text": "Sternal angle",
+     "source_key": "เฉลย: Sternal angle"
+    },
+    {
+     "id": "1.4",
+     "prompt": "โครงสร้างจำเพาะใดมาต่อที่ตำแหน่งนี้ (1.4)",
+     "format": "short",
+     "accepted": [
+      "costal cartilage",
+      "2nd rib",
+      "rib 2",
+      "second rib"
+     ],
+     "keywords_all": [
+      "costal cartilage"
+     ],
+     "key_text": "Costal cartilage ของ Rib 2",
+     "source_key": "เฉลย: Costal cartilage ของ Rib 2"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE52",
+     "pages": [
+      1
+     ]
+    },
+    {
+     "paper": "OSPE52-KEY",
+     "pages": [
+      1
+     ]
+    }
+   ],
+   "tags": [
+    "anatomy"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "RESP-52-OSPE-002",
+   "block": "RESP",
+   "cohort": 52,
+   "n": 2,
+   "type": "OSPE",
+   "station": 2,
+   "stem": "สถานี 2: ดูภาพผ่าตัดผนังทรวงอกด้านใน/ด้านหน้า (ตำแหน่ง 2.1–2.6 ในภาพ) หมายเหตุ: ข้อสอบจริงถามเพียง 4 ตำแหน่ง",
+   "items": [
+    {
+     "id": "2.1",
+     "prompt": "ชื่อจำเพาะของโครงสร้างที่ 2.1 (ตามภาพข้อสอบจริง: ที่ชี้ปลายลูกศรบน)",
+     "format": "short",
+     "accepted": [
+      "phrenic",
+      "innermost intercostal"
+     ],
+     "keywords_all": [
+      "phrenic"
+     ],
+     "key_text": "Phrenic nerve (ข้อสอบจริงชี้ innermost intercostal muscle)",
+     "source_key": "เฉลย: Phrenic nerve (ข้อสอบจริงชี้ innermost intercostal muscle)",
+     "image": "img/RESP-52-OSPE-002.jpg",
+     "image_caption": "ภาพ dissection ทรวงอก 2.1–2.6"
+    },
+    {
+     "id": "2.2",
+     "prompt": "ชื่อจำเพาะของเส้นเลือดที่ 2.2",
+     "format": "short",
+     "accepted": [
+      "internal thoracic",
+      "musculophrenic"
+     ],
+     "keywords_all": [
+      "thoracic"
+     ],
+     "key_text": "Internal thoracic artery (ข้อสอบจริงชี้ musculophrenic artery)",
+     "source_key": "เฉลย: Internal thoracic artery (ข้อสอบจริงชี้ musculophrenic artery)"
+    },
+    {
+     "id": "2.3",
+     "prompt": "เส้นเลือด 2 เส้นที่ลากต่อจาก 2.2 ไปด้านล่าง",
+     "format": "short",
+     "accepted": [
+      "superior epigastric",
+      "musculophrenic"
+     ],
+     "keywords_all": [
+      "epigastric"
+     ],
+     "key_text": "Superior epigastric artery และ musculophrenic artery",
+     "source_key": "เฉลย: Superior epigastric artery และ musculophrenic artery"
+    },
+    {
+     "id": "2.4",
+     "prompt": "ชื่อจำเพาะของโครงสร้างที่ 2.4",
+     "format": "short",
+     "accepted": [
+      "costal cartilage",
+      "xiphoid"
+     ],
+     "keywords_all": [
+      "cartilage"
+     ],
+     "key_text": "Costal cartilage (ข้อสอบจริงชี้ xiphoid process)",
+     "source_key": "เฉลย: Costal cartilage (ข้อสอบจริงชี้ xiphoid process)"
+    },
+    {
+     "id": "2.5",
+     "prompt": "ชื่อจำเพาะของโครงสร้างที่ 2.5",
+     "format": "short",
+     "accepted": [
+      "external intercostal"
+     ],
+     "keywords_all": [
+      "external"
+     ],
+     "key_text": "External intercostal membrane",
+     "source_key": "เฉลย: External intercostal membrane"
+    },
+    {
+     "id": "2.6",
+     "prompt": "ชื่อจำเพาะของโครงสร้างที่ 2.6",
+     "format": "short",
+     "accepted": [
+      "xiphoid"
+     ],
+     "keywords_all": [
+      "xiphoid"
+     ],
+     "key_text": "Xiphoid process",
+     "source_key": "เฉลย: Xiphoid process"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE52",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "OSPE52-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [
+    "anatomy"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "RESP-52-OSPE-003",
+   "block": "RESP",
+   "cohort": 52,
+   "n": 3,
+   "type": "OSPE",
+   "station": 3,
+   "stem": "สถานี 3: ดูภาพปอด/ขั้วปอด (ภาพที่ 1 และ 2) หมายเหตุ: ข้อสอบจริงไม่ได้ถามข้ออื่น",
+   "items": [
+    {
+     "id": "3.1",
+     "prompt": "ร่องตรงนี้เกิดจากอะไร",
+     "format": "short",
+     "accepted": [
+      "azygos"
+     ],
+     "keywords_all": [
+      "azygos"
+     ],
+     "key_text": "Azygos vein",
+     "source_key": "เฉลย: Azygos vein",
+     "image": "img/RESP-52-OSPE-003.jpg",
+     "image_caption": "ภาพปอดและขั้วปอด"
+    },
+    {
+     "id": "3.2",
+     "prompt": "ชื่อจำเพาะของโครงสร้างที่ 3.2",
+     "format": "short",
+     "accepted": [
+      "right main bronchus",
+      "main bronchus"
+     ],
+     "keywords_all": [
+      "bronchus"
+     ],
+     "key_text": "Right main bronchus",
+     "source_key": "เฉลย: Right main bronchus"
+    },
+    {
+     "id": "3.3",
+     "prompt": "ชื่อจำเพาะของโครงสร้างที่ 3.3",
+     "format": "short",
+     "accepted": [
+      "cardiac notch"
+     ],
+     "keywords_all": [
+      "cardiac notch"
+     ],
+     "key_text": "Cardiac notch",
+     "source_key": "เฉลย: Cardiac notch"
+    },
+    {
+     "id": "3.4",
+     "prompt": "ชื่อจำเพาะของท่อลมที่ปลายลูกศร 3.4",
+     "format": "short",
+     "accepted": [
+      "anterior segmental",
+      "segmental bronchus"
+     ],
+     "keywords_all": [
+      "segmental"
+     ],
+     "key_text": "Anterior segmental bronchus",
+     "source_key": "เฉลย: Anterior segmental bronchus"
+    },
+    {
+     "id": "3.5",
+     "prompt": "ภาพที่ 2 คือปอดข้างใด",
+     "format": "short",
+     "accepted": [
+      "left lung",
+      "left"
+     ],
+     "keywords_all": [
+      "left"
+     ],
+     "key_text": "Left lung",
+     "source_key": "เฉลย: Left lung"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE52",
+     "pages": [
+      3
+     ]
+    },
+    {
+     "paper": "OSPE52-KEY",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [
+    "anatomy"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "RESP-52-OSPE-004",
+   "block": "RESP",
+   "cohort": 52,
+   "n": 4,
+   "type": "OSPE",
+   "station": 4,
+   "stem": "สถานี 4: ดูภาพผนังด้านข้างของโพรงจมูกและ sinus (ตำแหน่ง 4.1–4.5) หมายเหตุ: ข้อสอบจริงไม่ได้ถามข้ออื่น",
+   "items": [
+    {
+     "id": "4.1",
+     "prompt": "ชื่อจำเพาะของบริเวณที่ท่อสีม่วงทอดผ่าน (4.1)",
+     "format": "short",
+     "accepted": [
+      "infundibulum"
+     ],
+     "keywords_all": [
+      "infundibulum"
+     ],
+     "key_text": "Infundibulum",
+     "source_key": "เฉลย: Infundibulum",
+     "image": "img/RESP-52-OSPE-004.jpg",
+     "image_caption": "ภาพโพรงจมูกและ sinus"
+    },
+    {
+     "id": "4.2",
+     "prompt": "ชื่อจำเพาะของโครงสร้างที่เปิดออกที่รูปลายลูกศร 4.2",
+     "format": "short",
+     "accepted": [
+      "nasolacrimal"
+     ],
+     "keywords_all": [
+      "nasolacrimal"
+     ],
+     "key_text": "Nasolacrimal duct",
+     "source_key": "เฉลย: Nasolacrimal duct"
+    },
+    {
+     "id": "4.3",
+     "prompt": "ชื่อจำเพาะของโครงสร้างที่เปิดออกที่รูปลายลูกศร 4.3",
+     "format": "short",
+     "accepted": [
+      "eustachian",
+      "auditory tube",
+      "pharyngotympanic"
+     ],
+     "keywords_all": [
+      "eustachian"
+     ],
+     "key_text": "Eustachian tube",
+     "source_key": "เฉลย: Eustachian tube"
+    },
+    {
+     "id": "4.4",
+     "prompt": "ชื่อจำเพาะของแอ่งบริเวณปลายลูกศร 4.4",
+     "format": "short",
+     "accepted": [
+      "sphenoid"
+     ],
+     "keywords_all": [
+      "sphenoid"
+     ],
+     "key_text": "Sphenoidal sinus",
+     "source_key": "เฉลย: Sphenoidal sinus"
+    },
+    {
+     "id": "4.5",
+     "prompt": "ชื่อจำเพาะของบริเวณที่เชื่อม 4.3 เข้าสู่ nasal cavity",
+     "format": "short",
+     "accepted": [
+      "spheno-ethmoidal",
+      "sphenoethmoidal"
+     ],
+     "keywords_all": [
+      "recess"
+     ],
+     "key_text": "Spheno-ethmoidal recess",
+     "source_key": "เฉลย: Spheno-ethmoidal recess",
+     "explanation": "ผู้เฉลยตั้งข้อสังเกตว่าตัวเลือกอาจสลับกัน"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE52",
+     "pages": [
+      4
+     ]
+    },
+    {
+     "paper": "OSPE52-KEY",
+     "pages": [
+      4
+     ]
+    }
+   ],
+   "tags": [
+    "anatomy"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "RESP-52-OSPE-005",
+   "block": "RESP",
+   "cohort": 52,
+   "n": 5,
+   "type": "OSPE",
+   "station": 5,
+   "stem": "สถานี 5: ดูภาพสไลด์ H&E ของอวัยวะในทางเดินหายใจ",
+   "items": [
+    {
+     "id": "5.1",
+     "prompt": "ชื่อจำเพาะของอวัยวะดังกล่าว",
+     "format": "short",
+     "accepted": [
+      "epiglottis"
+     ],
+     "keywords_all": [
+      "epiglottis"
+     ],
+     "key_text": "Epiglottis",
+     "source_key": "เฉลย: Epiglottis",
+     "image": "img/RESP-52-OSPE-005.jpg",
+     "image_caption": "สไลด์ H&E epiglottis"
+    },
+    {
+     "id": "5.2",
+     "prompt": "ลักษณะจำเพาะทางจุลกายวิภาคที่สำคัญ 3 ลักษณะ",
+     "format": "short",
+     "accepted": [
+      "elastic cartilage",
+      "stratified squamous",
+      "pseudostratified",
+      "goblet"
+     ],
+     "keywords_all": [
+      "elastic cartilage"
+     ],
+     "key_text": "Elastic cartilage core; ด้าน lingual เป็น stratified squamous epithelium; ด้าน pharyngeal เป็น pseudostratified ciliated columnar epithelium with goblet cells",
+     "source_key": "เฉลย: Elastic cartilage core; ด้าน lingual เป็น stratified squamous epithelium; ด้าน pharyngeal เป็น pseudostratified ciliated columnar epithelium with goblet cells"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE52",
+     "pages": [
+      5
+     ]
+    },
+    {
+     "paper": "OSPE52-KEY",
+     "pages": [
+      5
+     ]
+    }
+   ],
+   "tags": [
+    "histology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "RESP-52-OSPE-006",
+   "block": "RESP",
+   "cohort": 52,
+   "n": 6,
+   "type": "OSPE",
+   "station": 6,
+   "stem": "สถานี 6: ดูภาพสไลด์ H&E ของส่วนของทางเดินหายใจ",
+   "items": [
+    {
+     "id": "6.1",
+     "prompt": "ชื่อจำเพาะของส่วนของทางเดินหายใจ",
+     "format": "short",
+     "accepted": [
+      "intrapulmonary bronchus",
+      "bronchus"
+     ],
+     "keywords_all": [
+      "bronchus"
+     ],
+     "key_text": "Intrapulmonary bronchus",
+     "source_key": "เฉลย: Intrapulmonary bronchus",
+     "image": "img/RESP-52-OSPE-006.jpg",
+     "image_caption": "สไลด์ H&E bronchus"
+    },
+    {
+     "id": "6.2",
+     "prompt": "ลักษณะจำเพาะทางจุลกายวิภาคที่สำคัญ 3 ลักษณะ",
+     "format": "short",
+     "accepted": [
+      "pseudostratified",
+      "hyaline cartilage",
+      "smooth muscle",
+      "goblet"
+     ],
+     "keywords_all": [
+      "hyaline cartilage"
+     ],
+     "key_text": "Pseudostratified ciliated columnar epithelium with goblet cells; isolated plates of hyaline cartilage; crisscrossing spirally arranged smooth muscle",
+     "source_key": "เฉลย: Pseudostratified ciliated columnar epithelium with goblet cells; isolated plates of hyaline cartilage; crisscrossing spirally arranged smooth muscle"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE52",
+     "pages": [
+      6
+     ]
+    },
+    {
+     "paper": "OSPE52-KEY",
+     "pages": [
+      6
+     ]
+    }
+   ],
+   "tags": [
+    "histology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "RESP-52-OSPE-007",
+   "block": "RESP",
+   "cohort": 52,
+   "n": 7,
+   "type": "OSPE",
+   "station": 7,
+   "stem": "สถานี 7: ดูภาพ spirogram (A และ B)",
+   "items": [
+    {
+     "id": "7.1",
+     "prompt": "A คือค่าอะไร (ชื่อย่อและชื่อเต็ม)",
+     "format": "short",
+     "accepted": [
+      "tidal volume",
+      "vt"
+     ],
+     "keywords_all": [
+      "tidal"
+     ],
+     "key_text": "Tidal volume, Vt",
+     "source_key": "เฉลย: Tidal volume, Vt",
+     "image": "img/RESP-52-OSPE-007.jpg",
+     "image_caption": "Spirogram A, B และ lung volumes"
+    },
+    {
+     "id": "7.2",
+     "prompt": "B คือค่าอะไร",
+     "format": "short",
+     "accepted": [
+      "inspiratory reserve",
+      "irv"
+     ],
+     "keywords_all": [
+      "inspiratory reserve"
+     ],
+     "key_text": "Inspiratory reserve volume, IRV",
+     "source_key": "เฉลย: Inspiratory reserve volume, IRV"
+    },
+    {
+     "id": "7.3",
+     "prompt": "A + B คือค่าอะไร",
+     "format": "short",
+     "accepted": [
+      "inspiratory capacity",
+      "ic"
+     ],
+     "keywords_all": [
+      "inspiratory capacity"
+     ],
+     "key_text": "Inspiratory capacity, IC",
+     "source_key": "เฉลย: Inspiratory capacity, IC"
+    },
+    {
+     "id": "7.4",
+     "prompt": "Total lung capacity − (A + B) คือค่าอะไร",
+     "format": "short",
+     "accepted": [
+      "functional residual",
+      "frc"
+     ],
+     "keywords_all": [
+      "functional residual"
+     ],
+     "key_text": "Functional residual capacity, FRC",
+     "source_key": "เฉลย: Functional residual capacity, FRC"
+    },
+    {
+     "id": "7.5",
+     "prompt": "ค่าอะไรที่ไม่สามารถบอกได้จากกราฟนี้",
+     "format": "short",
+     "accepted": [
+      "residual volume",
+      "rv"
+     ],
+     "keywords_all": [
+      "residual"
+     ],
+     "key_text": "Residual volume, RV",
+     "source_key": "เฉลย: Residual volume, RV"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE52",
+     "pages": [
+      7
+     ]
+    },
+    {
+     "paper": "OSPE52-KEY",
+     "pages": [
+      7
+     ]
+    }
+   ],
+   "tags": [
+    "physiology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "RESP-52-OSPE-008",
+   "block": "RESP",
+   "cohort": 52,
+   "n": 8,
+   "type": "OSPE",
+   "station": 8,
+   "stem": "สถานี 8: ดูภาพ flow–volume loop/spirometry",
+   "items": [
+    {
+     "id": "8.1",
+     "prompt": "จากรูปจัดเป็นโรคปอดประเภทใด",
+     "format": "short",
+     "accepted": [
+      "restrictive"
+     ],
+     "keywords_all": [
+      "restrictive"
+     ],
+     "key_text": "Restrictive lung disease",
+     "source_key": "เฉลย: Restrictive lung disease",
+     "image": "img/RESP-52-OSPE-008.jpg",
+     "image_caption": "กราฟ spirometry"
+    },
+    {
+     "id": "8.2.1",
+     "prompt": "FVC (เพิ่มขึ้น/ลดลง/ไม่เปลี่ยน)",
+     "format": "short",
+     "accepted": [
+      "ลด",
+      "decrease"
+     ],
+     "keywords_all": [
+      "ลด"
+     ],
+     "key_text": "ลดลง",
+     "source_key": "เฉลย: ลดลง"
+    },
+    {
+     "id": "8.2.2",
+     "prompt": "FEV₁",
+     "format": "short",
+     "accepted": [
+      "ลด",
+      "decrease"
+     ],
+     "keywords_all": [
+      "ลด"
+     ],
+     "key_text": "ลดลง",
+     "source_key": "เฉลย: ลดลง"
+    },
+    {
+     "id": "8.2.3",
+     "prompt": "FEV₁%",
+     "format": "short",
+     "accepted": [
+      "ไม่เปลี่ยน",
+      "normal",
+      "unchange",
+      "เพิ่ม"
+     ],
+     "keywords_all": [
+      "ไม่เปลี่ยน"
+     ],
+     "key_text": "ไม่เปลี่ยนแปลง (ปกติ/สูงขึ้นเล็กน้อย)",
+     "source_key": "เฉลย (ลายมือ): ไม่เปลี่ยนแปลง"
+    },
+    {
+     "id": "8.2.4",
+     "prompt": "Resistance",
+     "format": "short",
+     "accepted": [
+      "ลด",
+      "ไม่เปลี่ยน",
+      "normal",
+      "decrease"
+     ],
+     "keywords_all": [
+      "ลด"
+     ],
+     "key_text": "ลดลง/ไม่เปลี่ยนแปลง (ปกติ ถึงลดเล็กน้อยใน restrictive)",
+     "source_key": "เฉลย (ลายมือ ไม่ชัด): ลดลง"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "OSPE52",
+     "pages": [
+      8
+     ]
+    },
+    {
+     "paper": "OSPE52-KEY",
+     "pages": [
+      8
+     ]
+    }
+   ],
+   "tags": [
+    "physiology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "RESP-52-OSPE-009",
+   "block": "RESP",
+   "cohort": 52,
+   "n": 9,
+   "type": "OSPE",
+   "station": 9,
+   "stem": "สถานี 9: ดูภาพ gross ของปอด",
+   "items": [
+    {
+     "id": "9.1",
+     "prompt": "จากรูปเป็น gross ของโรคอะไร",
+     "format": "short",
+     "accepted": [
+      "bronchiectasis",
+      "brochiectasis"
+     ],
+     "keywords_all": [
+      "bronchiectasis"
+     ],
+     "key_text": "Bronchiectasis",
+     "source_key": "เฉลย: Bronchiectasis",
+     "image": "img/RESP-52-OSPE-009.jpg",
+     "image_caption": "Gross ปอด"
+    },
+    {
+     "id": "9.2",
+     "prompt": "2 อาการที่พบได้ในโรคดังกล่าว",
+     "format": "short",
+     "accepted": [
+      "ไอ",
+      "cough",
+      "เสมหะ",
+      "sputum",
+      "hemoptysis"
+     ],
+     "keywords_all": [
+      "ไอ"
+     ],
+     "key_text": "ไอเรื้อรัง, มีเสมหะมาก (ไอเป็นเลือดก็พบได้)",
+     "source_key": "เฉลย: ไอเรื้อรัง, มีเสมหะมาก (ไอเป็นเลือดก็พบได้)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE52",
+     "pages": [
+      9
+     ]
+    },
+    {
+     "paper": "OSPE52-KEY",
+     "pages": [
+      9
+     ]
+    }
+   ],
+   "tags": [
+    "pathology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "RESP-52-OSPE-010",
+   "block": "RESP",
+   "cohort": 52,
+   "n": 10,
+   "type": "OSPE",
+   "station": 10,
+   "stem": "สถานี 10: ดูภาพ gross (ต้นฉบับใช้ภาพต่อมน้ำเหลืองขั้วปอด ข้อสอบจริงใช้ภาพปอด)",
+   "items": [
+    {
+     "id": "10.1",
+     "prompt": "จากรูปน่าจะเป็นโรคอะไร",
+     "format": "short",
+     "accepted": [
+      "tuberculosis",
+      "tb"
+     ],
+     "keywords_all": [
+      "tuberculosis"
+     ],
+     "key_text": "Pulmonary tuberculosis",
+     "source_key": "เฉลย: Pulmonary tuberculosis",
+     "image": "img/RESP-52-OSPE-010.jpg",
+     "image_caption": "Gross ปอด/ต่อมน้ำเหลือง"
+    },
+    {
+     "id": "10.2",
+     "prompt": "ลักษณะสำคัญของ gross ดังภาพ",
+     "format": "short",
+     "accepted": [
+      "caseous",
+      "granulomatous",
+      "consolidation",
+      "miliary",
+      "เมล็ดข้าวฟ่าง"
+     ],
+     "keywords_all": [
+      "caseous"
+     ],
+     "key_text": "ต่อมน้ำเหลืองบริเวณ hilar เป็นก้อนสีเหลืองนวล เนื้อรวนคล้ายชีส (caseous necrosis) เมื่อผ่าดูพบ granulomatous inflammation ที่มีศูนย์กลางเป็น caseous necrosis; ภาพปอดจริงมี patchy consolidation ทั่วทั้งสองข้างและจุดเล็ก ๆ คล้ายเมล็ดข้าวฟ่าง (miliary)",
+     "source_key": "เฉลย: ต่อมน้ำเหลืองบริเวณ hilar เป็นก้อนสีเหลืองนวล เนื้อรวนคล้ายชีส (caseous necrosis) เมื่อผ่าดูพบ granulomatous inflammation ที่มีศูนย์กลางเป็น caseous necrosis; ภาพปอดจริงมี patchy consolidation ทั่วทั้งสองข้างและจุดเล็ก ๆ คล้ายเมล็ดข้าวฟ่าง (miliary)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE52",
+     "pages": [
+      10
+     ]
+    },
+    {
+     "paper": "OSPE52-KEY",
+     "pages": [
+      10
+     ]
+    }
+   ],
+   "tags": [
+    "pathology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "RESP-52-OSPE-011",
+   "block": "RESP",
+   "cohort": 52,
+   "n": 11,
+   "type": "OSPE",
+   "station": 11,
+   "stem": "สถานี 11: ดู chest X-ray",
+   "items": [
+    {
+     "id": "11.1",
+     "prompt": "บรรยายความผิดปกติโดยละเอียดด้วยศัพท์ทางการแพทย์",
+     "format": "short",
+     "accepted": [
+      "homogeneous",
+      "homogenous",
+      "opacity",
+      "blunting",
+      "costophrenic"
+     ],
+     "keywords_all": [
+      "opacity"
+     ],
+     "key_text": "Homogeneous opacity ที่ right lower lung field และ blunting ของ right costophrenic angle",
+     "source_key": "เฉลย: Homogeneous opacity ที่ right lower lung field และ blunting ของ right costophrenic angle",
+     "image": "img/RESP-52-OSPE-011.jpg",
+     "image_caption": "CXR"
+    },
+    {
+     "id": "11.2",
+     "prompt": "ชื่อโรคหรือภาวะที่เกิดขึ้น",
+     "format": "short",
+     "accepted": [
+      "pleural effusion",
+      "effusion"
+     ],
+     "keywords_all": [
+      "effusion"
+     ],
+     "key_text": "Pleural effusion",
+     "source_key": "เฉลย: Pleural effusion"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE52",
+     "pages": [
+      11
+     ]
+    },
+    {
+     "paper": "OSPE52-KEY",
+     "pages": [
+      11
+     ]
+    }
+   ],
+   "tags": [
+    "radiology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "RESP-52-OSPE-012",
+   "block": "RESP",
+   "cohort": 52,
+   "n": 12,
+   "type": "OSPE",
+   "station": 12,
+   "stem": "สถานี 12: ดู chest X-ray",
+   "items": [
+    {
+     "id": "12.1",
+     "prompt": "เป็น Chest X-ray มุมมองแบบ PA หรือ AP",
+     "format": "short",
+     "accepted": [
+      "pa"
+     ],
+     "keywords_all": [
+      "PA"
+     ],
+     "key_text": "PA view",
+     "source_key": "เฉลย: PA view",
+     "image": "img/RESP-52-OSPE-012.jpg",
+     "image_caption": "CXR"
+    },
+    {
+     "id": "12.2",
+     "prompt": "ความผิดปกติที่ส่วนใดของปอด",
+     "format": "short",
+     "accepted": [
+      "right middle",
+      "rml"
+     ],
+     "keywords_all": [
+      "middle"
+     ],
+     "key_text": "Right middle lobe (พยาธิสภาพ silhouette กับ right heart border = RML; ไม่ silhouette = RLL ผู้เฉลยไม่มั่นใจว่าข้อสอบจริงถามอะไร)",
+     "source_key": "เฉลย: Right middle lobe (พยาธิสภาพ silhouette กับ right heart border = RML; ไม่ silhouette = RLL ผู้เฉลยไม่มั่นใจว่าข้อสอบจริงถามอะไร)"
+    },
+    {
+     "id": "12.3",
+     "prompt": "บรรยายความผิดปกติโดยละเอียดด้วยศัพท์ทางการแพทย์",
+     "format": "short",
+     "accepted": [
+      "patchy",
+      "infiltration",
+      "opacity",
+      "right middle"
+     ],
+     "keywords_all": [
+      "infiltration"
+     ],
+     "key_text": "Patchy infiltration ที่ right middle lobe",
+     "source_key": "เฉลย: Patchy infiltration ที่ right middle lobe"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE52",
+     "pages": [
+      12
+     ]
+    },
+    {
+     "paper": "OSPE52-KEY",
+     "pages": [
+      12
+     ]
+    }
+   ],
+   "tags": [
+    "radiology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "RESP-52-OSPE-013",
+   "block": "RESP",
+   "cohort": 52,
+   "n": 13,
+   "type": "OSPE",
+   "station": 13,
+   "stem": "สถานี 13: ดูภาพ Gram stain ของเสมหะ",
+   "items": [
+    {
+     "id": "13.1.1",
+     "prompt": "รูปร่าง",
+     "format": "short",
+     "accepted": [
+      "bacilli",
+      "rod"
+     ],
+     "keywords_all": [
+      "bacilli"
+     ],
+     "key_text": "Bacilli",
+     "source_key": "เฉลย: Bacilli",
+     "image": "img/RESP-52-OSPE-013.jpg",
+     "image_caption": "Gram stain เสมหะ"
+    },
+    {
+     "id": "13.1.2",
+     "prompt": "การจัดเรียงตัว",
+     "format": "short",
+     "accepted": [
+      "beaded",
+      "branching",
+      "filament"
+     ],
+     "keywords_all": [
+      "branching"
+     ],
+     "key_text": "Beaded branching filament",
+     "source_key": "เฉลย: Beaded branching filament"
+    },
+    {
+     "id": "13.1.3",
+     "prompt": "ปริมาณ",
+     "format": "short",
+     "accepted": [
+      "numerous",
+      "มาก"
+     ],
+     "keywords_all": [
+      "numerous"
+     ],
+     "key_text": "Numerous (จำนวนมาก)",
+     "source_key": "เฉลย: Numerous (จำนวนมาก)"
+    },
+    {
+     "id": "13.2",
+     "prompt": "ชื่อเชื้อ",
+     "format": "short",
+     "accepted": [
+      "nocardia"
+     ],
+     "keywords_all": [
+      "nocardia"
+     ],
+     "key_text": "Nocardia asteroides",
+     "source_key": "เฉลย: Nocardia asteroides"
+    },
+    {
+     "id": "13.3",
+     "prompt": "หากต้องการระบุเชื้อให้ชัดเจนควรตรวจอะไรเพิ่ม",
+     "format": "short",
+     "accepted": [
+      "modified acid",
+      "modified afb",
+      "acid fast",
+      "afb"
+     ],
+     "keywords_all": [
+      "modified"
+     ],
+     "key_text": "Modified acid-fast stain",
+     "source_key": "เฉลย: Modified acid-fast stain"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE52",
+     "pages": [
+      13
+     ]
+    },
+    {
+     "paper": "OSPE52-KEY",
+     "pages": [
+      13
+     ]
+    }
+   ],
+   "tags": [
+    "microbiology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "RESP-52-OSPE-014",
+   "block": "RESP",
+   "cohort": 52,
+   "n": 14,
+   "type": "OSPE",
+   "station": 14,
+   "stem": "สถานี 14: การเก็บเสมหะ (ไม่มีภาพ)",
+   "items": [
+    {
+     "id": "14.1",
+     "prompt": "อธิบายวิธีเก็บเสมหะที่ถูกต้อง",
+     "format": "short",
+     "accepted": [
+      "เช้า",
+      "บ้วนปาก",
+      "ไอ",
+      "ขวดปลอดเชื้อ",
+      "1-2",
+      "morning"
+     ],
+     "keywords_all": [
+      "บ้วนปาก"
+     ],
+     "key_text": "เก็บเสมหะตอนเช้าหลังตื่นนอน บ้วนปากด้วยน้ำสะอาด แล้วไอแรง ๆ ให้เสมหะจากทางเดินหายใจส่วนล่างออกมาใส่ขวดปลอดเชื้อ ปิดฝาทันทีและส่งตรวจภายใน 1–2 ชั่วโมง",
+     "source_key": "เฉลย: เก็บเสมหะตอนเช้าหลังตื่นนอน บ้วนปากด้วยน้ำสะอาด แล้วไอแรง ๆ ให้เสมหะจากทางเดินหายใจส่วนล่างออกมาใส่ขวดปลอดเชื้อ ปิดฝาทันทีและส่งตรวจภายใน 1–2 ชั่วโมง"
+    },
+    {
+     "id": "14.2.1",
+     "prompt": "ลักษณะภายนอก: เสมหะ vs น้ำลาย",
+     "format": "short",
+     "accepted": [
+      "ข้น",
+      "เหนียว",
+      "ใส",
+      "เหลว",
+      "viscous",
+      "clear"
+     ],
+     "keywords_all": [
+      "ข้น"
+     ],
+     "key_text": "เสมหะ: ข้น เหนียว สีเหลือง เขียวหรือขาวขุ่น มักมีฟองหรือหนอง; น้ำลาย: ใส เหลว ไม่มีหนองหรือฟอง",
+     "source_key": "เฉลย: เสมหะ: ข้น เหนียว สีเหลือง เขียวหรือขาวขุ่น มักมีฟองหรือหนอง; น้ำลาย: ใส เหลว ไม่มีหนองหรือฟอง"
+    },
+    {
+     "id": "14.2.2",
+     "prompt": "ภาพใต้กล้องจุลทรรศน์: เสมหะ vs น้ำลาย",
+     "format": "short",
+     "accepted": [
+      "epithelial",
+      "neutrophil",
+      "squamous",
+      "เม็ดเลือดขาว"
+     ],
+     "keywords_all": [
+      "squamous"
+     ],
+     "key_text": "เสมหะ: พบเซลล์เยื่อบุทางเดินหายใจ (respiratory epithelial cells) และเม็ดเลือดขาว (neutrophils); น้ำลาย: พบ squamous epithelial cells จากช่องปากเป็นส่วนใหญ่ ไม่พบเม็ดเลือดขาวหรือเชื้อจากทางเดินหายใจส่วนล่าง",
+     "source_key": "เฉลย: เสมหะ: พบเซลล์เยื่อบุทางเดินหายใจ (respiratory epithelial cells) และเม็ดเลือดขาว (neutrophils); น้ำลาย: พบ squamous epithelial cells จากช่องปากเป็นส่วนใหญ่ ไม่พบเม็ดเลือดขาวหรือเชื้อจากทางเดินหายใจส่วนล่าง"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE52",
+     "pages": [
+      14
+     ]
+    },
+    {
+     "paper": "OSPE52-KEY",
+     "pages": [
+      14
+     ]
+    }
+   ],
+   "tags": [
+    "microbiology"
+   ],
+   "source": "claude-mcp"
+  }
+ ]
+}
