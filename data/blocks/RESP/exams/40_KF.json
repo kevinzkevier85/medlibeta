@@ -1,0 +1,811 @@
+{
+ "meta": {
+  "set_id": "40_KF",
+  "block": "RESP",
+  "cohort": 40,
+  "type": "KF",
+  "title": "KF Respiratory · Med PSU 40",
+  "generated_by": "auditor/tools/build_kf.py from auditor/data/work/resp_40_KF.kf.json — do not edit by hand"
+ },
+ "questions": [
+  {
+   "id": "RESP-40-KF-001",
+   "block": "RESP",
+   "cohort": 40,
+   "n": 1,
+   "type": "KF",
+   "case": "ผู้ป่วยเป็น asthma พ่นยา salmeterol, budesonide, tiotropium",
+   "items": [
+    {
+     "id": "1.1.1",
+     "prompt": "กลไกของ salmeterol",
+     "format": "short",
+     "accepted": [
+      "β2",
+      "beta 2",
+      "adenylate cyclase",
+      "relaxation",
+      "long-acting"
+     ],
+     "keywords_all": [
+      "β2"
+     ],
+     "key_text": "Selective β₂ agonist ออกฤทธิ์นาน กระตุ้น adenylate cyclase → smooth muscle relaxation",
+     "source_key": "เฉลย: Selective β₂ agonist ออกฤทธิ์นาน กระตุ้น adenylate cyclase → smooth muscle relaxation"
+    },
+    {
+     "id": "1.1.2",
+     "prompt": "กลไกของ budesonide",
+     "format": "short",
+     "accepted": [
+      "glucocorticoid",
+      "cytokine",
+      "inflammation",
+      "late asthma"
+     ],
+     "keywords_all": [
+      "cytokine"
+     ],
+     "key_text": "Glucocorticoid: ลด late asthmatic response (inflammation) โดยยับยั้งการสร้าง cytokine → ลด edema",
+     "source_key": "เฉลย: Glucocorticoid: ลด late asthmatic response (inflammation) โดยยับยั้งการสร้าง cytokine → ลด edema"
+    },
+    {
+     "id": "1.1.3",
+     "prompt": "กลไกของ tiotropium",
+     "format": "short",
+     "accepted": [
+      "muscarinic",
+      "antagonist",
+      "bronchoconstriction"
+     ],
+     "keywords_all": [
+      "muscarinic"
+     ],
+     "key_text": "Long-acting muscarinic antagonist: block muscarinic receptor ป้องกัน bronchoconstriction",
+     "source_key": "เฉลย: Long-acting muscarinic antagonist: block muscarinic receptor ป้องกัน bronchoconstriction"
+    },
+    {
+     "id": "1.2.1",
+     "prompt": "ใจสั่นเป็น ADR จากยาตัวไหน และแนะนำอย่างไร",
+     "format": "short",
+     "accepted": [
+      "salmeterol",
+      "ตื่นเต้น",
+      "palpitation"
+     ],
+     "keywords_all": [
+      "salmeterol"
+     ],
+     "key_text": "Salmeterol (β₂ agonist): งดกิจกรรมที่ตื่นเต้นหรือต้องการความละเอียด/ปรึกษาแพทย์ปรับขนาด",
+     "source_key": "เฉลย: Salmeterol (β₂ agonist): งดกิจกรรมที่ตื่นเต้นหรือต้องการความละเอียด/ปรึกษาแพทย์ปรับขนาด"
+    },
+    {
+     "id": "1.2.2",
+     "prompt": "ฝ้าขาวในปากเป็น ADR จากยาตัวไหน และแนะนำอย่างไร",
+     "format": "short",
+     "accepted": [
+      "budesonide",
+      "บ้วนปาก",
+      "candidiasis"
+     ],
+     "keywords_all": [
+      "budesonide"
+     ],
+     "key_text": "Budesonide (oral candidiasis): บ้วนปากหลังใช้ยา",
+     "source_key": "เฉลย: Budesonide (oral candidiasis): บ้วนปากหลังใช้ยา"
+    },
+    {
+     "id": "1.3",
+     "prompt": "กลไกของ omalizumab",
+     "format": "short",
+     "accepted": [
+      "anti-ige",
+      "ige",
+      "fc",
+      "mast cell"
+     ],
+     "keywords_all": [
+      "IgE"
+     ],
+     "key_text": "Anti-IgE antibody จับที่ Fc portion ของ IgE ไม่ให้ IgE จับกับ FcεRI บน mast cell",
+     "source_key": "เฉลย: Anti-IgE antibody จับที่ Fc portion ของ IgE ไม่ให้ IgE จับกับ FcεRI บน mast cell"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF40",
+     "pages": [
+      1
+     ]
+    }
+   ],
+   "tags": [
+    "pharmacology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "RESP-40-KF-002",
+   "block": "RESP",
+   "cohort": 40,
+   "n": 2,
+   "type": "KF",
+   "case": "ไข้ ไอมีเสมหะ หอบ 2 วัน",
+   "items": [
+    {
+     "id": "2.1",
+     "prompt": "ส่งตรวจอะไร 2 อย่าง",
+     "format": "short",
+     "accepted": [
+      "sputum",
+      "เสมหะ",
+      "blood",
+      "เลือด"
+     ],
+     "keywords_all": [
+      "sputum"
+     ],
+     "key_text": "เสมหะ (sputum) และเลือด (blood culture)",
+     "source_key": "เฉลย: เสมหะ (sputum) และเลือด (blood culture)"
+    },
+    {
+     "id": "2.2",
+     "prompt": "เก็บที่อุณหภูมิเท่าไร",
+     "format": "short",
+     "accepted": [
+      "อุณหภูมิห้อง",
+      "room temperature",
+      "22",
+      "30"
+     ],
+     "keywords_all": [
+      "ห้อง"
+     ],
+     "key_text": "อุณหภูมิห้อง (ประมาณ 22–30°C) ไม่แช่เย็น",
+     "source_key": "เฉลย: อุณหภูมิห้อง (ประมาณ 22–30°C) ไม่แช่เย็น"
+    },
+    {
+     "id": "2.3",
+     "prompt": "ตัวอย่างที่ถูกต้องควรพบ squamous epithelial cell เท่าใด และมักพบ WBC ชนิดใด",
+     "format": "short",
+     "accepted": [
+      "10",
+      "neutrophil",
+      "squamous"
+     ],
+     "keywords_all": [
+      "neutrophil"
+     ],
+     "key_text": "Squamous epithelial cell < 10 cells/LPF และมักพบ neutrophil",
+     "source_key": "เฉลย: Squamous epithelial cell < 10 cells/LPF และมักพบ neutrophil"
+    },
+    {
+     "id": "2.4",
+     "prompt": "ชื่อเชื้อที่พบบ่อย",
+     "format": "short",
+     "accepted": [
+      "streptococcus pneumoniae",
+      "pneumoniae"
+     ],
+     "keywords_all": [
+      "pneumoniae"
+     ],
+     "key_text": "Streptococcus pneumoniae",
+     "source_key": "เฉลย: Streptococcus pneumoniae"
+    },
+    {
+     "id": "2.5",
+     "prompt": "รายงานลักษณะของเชื้อนี้อย่างไร",
+     "format": "short",
+     "accepted": [
+      "gram positive",
+      "diplococci",
+      "lancet",
+      "capsule"
+     ],
+     "keywords_all": [
+      "diplococci"
+     ],
+     "key_text": "Gram-positive diplococci, lancet-shaped, มี capsule",
+     "source_key": "เฉลย: Gram-positive diplococci, lancet-shaped, มี capsule"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF40",
+     "pages": [
+      1
+     ]
+    }
+   ],
+   "tags": [
+    "microbiology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "RESP-40-KF-003",
+   "block": "RESP",
+   "cohort": 40,
+   "n": 3,
+   "type": "KF",
+   "case": "ผู้ป่วยอายุ 68 ปี สูบบุหรี่ตั้งแต่หนุ่ม ไข้ต่ำ ไอเรื้อรังไม่มีเสมหะ หอบเหนื่อย เบื่ออาหาร น้ำหนักลด ต่อมน้ำเหลืองโต",
+   "items": [
+    {
+     "id": "3.1",
+     "prompt": "โรคที่น่าจะเป็น 3 โรค",
+     "format": "short",
+     "accepted": [
+      "lung cancer",
+      "abscess",
+      "tuberculosis"
+     ],
+     "keywords_all": [
+      "lung cancer"
+     ],
+     "key_text": "Lung cancer, lung abscess, tuberculosis",
+     "source_key": "เฉลย: Lung cancer, lung abscess, tuberculosis"
+    },
+    {
+     "id": "3.2",
+     "prompt": "กลไกที่ทำให้ต่อมน้ำเหลืองโต 2 ข้อ",
+     "format": "short",
+     "accepted": [
+      "immune",
+      "proliferation",
+      "inflammation",
+      "metastasis"
+     ],
+     "keywords_all": [
+      "metastasis"
+     ],
+     "key_text": "1) activate immune system: lymphocyte proliferation จาก inflammation 2) tumor metastasis ไปต่อมน้ำเหลือง",
+     "source_key": "เฉลย: 1) activate immune system: lymphocyte proliferation จาก inflammation 2) tumor metastasis ไปต่อมน้ำเหลือง"
+    },
+    {
+     "id": "3.3",
+     "prompt": "CXR พบก้อน 4 ซม. ที่เยื่อหุ้มปอดกลีบบนขวาร่วมกับน้ำในช่องปอด ส่งตรวจอะไร 3 อย่าง",
+     "format": "short",
+     "accepted": [
+      "ct scan",
+      "biopsy",
+      "cytolog",
+      "thoracentesis"
+     ],
+     "keywords_all": [
+      "biopsy"
+     ],
+     "key_text": "CT scan, needle thoracentesis/pleural biopsy, cytologic study from pleural fluid",
+     "source_key": "เฉลย: CT scan, needle thoracentesis/pleural biopsy, cytologic study from pleural fluid"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF40",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [
+    "oncology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "RESP-40-KF-004",
+   "block": "RESP",
+   "cohort": 40,
+   "n": 4,
+   "type": "KF",
+   "case": "ผู้ป่วยไข้ต่ำ ไอเรื้อรังมีเสมหะเหลือง บางครั้งมีเลือดปน เบื่ออาหาร น้ำหนักลด · coarse crepitation ที่ right upper lobe",
+   "items": [
+    {
+     "id": "4.1",
+     "prompt": "โรคที่เป็นไปได้ 3 โรค",
+     "format": "short",
+     "accepted": [
+      "tuberculosis",
+      "pneumonia",
+      "lung cancer"
+     ],
+     "keywords_all": [
+      "tuberculosis"
+     ],
+     "key_text": "Tuberculosis, pneumonia, lung cancer",
+     "source_key": "เฉลย: Tuberculosis, pneumonia, lung cancer"
+    },
+    {
+     "id": "4.2",
+     "prompt": "วิธีส่งตรวจเบื้องต้น 2 อย่าง",
+     "format": "short",
+     "accepted": [
+      "x-ray",
+      "cxr",
+      "sputum"
+     ],
+     "keywords_all": [
+      "sputum"
+     ],
+     "key_text": "Chest X-ray, sputum culture",
+     "source_key": "เฉลย: Chest X-ray, sputum culture"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF40",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [
+    "pulmonary"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "RESP-40-KF-005",
+   "block": "RESP",
+   "cohort": 40,
+   "n": 5,
+   "type": "KF",
+   "case": "ผู้ป่วยไข้ ไอ 1 สัปดาห์ วันนี้แน่นหน้าอก เจ็บเวลาหายใจ · ดู CXR",
+   "items": [
+    {
+     "id": "5.1",
+     "prompt": "อธิบายความผิดปกติจาก CXR",
+     "format": "short",
+     "accepted": [
+      "hemidiaphragm",
+      "blunting",
+      "costophrenic"
+     ],
+     "keywords_all": [
+      "blunting"
+     ],
+     "key_text": "Right hemidiaphragm appears elevated, blunting ของ right costophrenic angle",
+     "source_key": "เฉลย: Right hemidiaphragm appears elevated, blunting ของ right costophrenic angle",
+     "image": "img/RESP-40-KF-005.jpg",
+     "image_caption": "CXR ข้อ 5"
+    },
+    {
+     "id": "5.2",
+     "prompt": "กลไกของพยาธิสภาพ",
+     "format": "short",
+     "accepted": [
+      "hydrostatic",
+      "oncotic",
+      "colloid",
+      "permeability",
+      "lymphatic"
+     ],
+     "keywords_all": [
+      "permeability"
+     ],
+     "key_text": "ของเหลวสะสมใน pleural space จาก ↑hydrostatic pressure (left heart failure), ↓colloid osmotic pressure (hypoproteinemia), ↑capillary permeability (pneumonia), ↓lymphatic absorption (tumor)",
+     "source_key": "เฉลย: ของเหลวสะสมใน pleural space จาก ↑hydrostatic pressure (left heart failure), ↓colloid osmotic pressure (hypoproteinemia), ↑capillary permeability (pneumonia), ↓lymphatic absorption (tumor)"
+    },
+    {
+     "id": "5.3",
+     "prompt": "วินิจฉัยโรค",
+     "format": "short",
+     "accepted": [
+      "pleural effusion",
+      "effusion"
+     ],
+     "keywords_all": [
+      "effusion"
+     ],
+     "key_text": "Pleural effusion",
+     "source_key": "เฉลย: Pleural effusion"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF40",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [
+    "pulmonary"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "RESP-40-KF-006",
+   "block": "RESP",
+   "cohort": 40,
+   "n": 6,
+   "type": "KF",
+   "case": "ผู้ป่วยไข้สูง ไอมีเสมหะ หอบเหนื่อย มี suprasternal notch + subcostal + intercostal retraction · ฟังได้ bronchial sound ที่ right lower lobe, fine crepitation · วินิจฉัย lobar pneumonia · CXR",
+   "items": [
+    {
+     "id": "6.1",
+     "prompt": "ปกติพบ bronchial sound ที่บริเวณใด",
+     "format": "short",
+     "accepted": [
+      "manubrium"
+     ],
+     "keywords_all": [
+      "manubrium"
+     ],
+     "key_text": "Over the manubrium",
+     "source_key": "เฉลย: Over the manubrium",
+     "image": "img/RESP-40-KF-006.jpg",
+     "image_caption": "CXR lobar pneumonia"
+    },
+    {
+     "id": "6.2",
+     "prompt": "ในภาวะปกติบริเวณปอดนี้ฟังได้เสียงอะไร",
+     "format": "short",
+     "accepted": [
+      "vesicular"
+     ],
+     "keywords_all": [
+      "vesicular"
+     ],
+     "key_text": "Vesicular sound",
+     "source_key": "เฉลย: Vesicular sound"
+    },
+    {
+     "id": "6.3",
+     "prompt": "ได้ยิน bronchial sound แสดงว่าผิดปกติอย่างไร",
+     "format": "short",
+     "accepted": [
+      "consolidation",
+      "exudate",
+      "alveoli",
+      "fluid"
+     ],
+     "keywords_all": [
+      "alveoli"
+     ],
+     "key_text": "มีพยาธิสภาพใน bronchiole/alveoli (fine/late inspiratory crackle) alveoli เต็มด้วย fluid, exudate (consolidation) นำเสียงได้ดี",
+     "source_key": "เฉลย: มีพยาธิสภาพใน bronchiole/alveoli (fine/late inspiratory crackle) alveoli เต็มด้วย fluid, exudate (consolidation) นำเสียงได้ดี"
+    },
+    {
+     "id": "6.4",
+     "prompt": "ถ้าเคาะปอดบริเวณนี้จะมีเสียงอะไร",
+     "format": "short",
+     "accepted": [
+      "dull"
+     ],
+     "keywords_all": [
+      "dull"
+     ],
+     "key_text": "Dullness on percussion",
+     "source_key": "เฉลย: Dullness on percussion"
+    },
+    {
+     "id": "6.5",
+     "prompt": "V, Q, V/Q, diffusion rate เปลี่ยนอย่างไรและเพราะอะไร",
+     "format": "short",
+     "accepted": [
+      "v ลด",
+      "v/q",
+      "diffusion",
+      "ลด"
+     ],
+     "keywords_all": [
+      "V/Q"
+     ],
+     "key_text": "V ลด (อากาศเข้าปอดลด), Q ปกติ (fluid ใน alveoli ไม่กระทบ perfusion), V/Q ลด, diffusion rate ลด (ระยะแพร่ผ่านหนาขึ้น)",
+     "source_key": "เฉลย: V ลด (อากาศเข้าปอดลด), Q ปกติ (fluid ใน alveoli ไม่กระทบ perfusion), V/Q ลด, diffusion rate ลด (ระยะแพร่ผ่านหนาขึ้น)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF40",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [
+    "pulmonary"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "RESP-40-KF-007",
+   "block": "RESP",
+   "cohort": 40,
+   "n": 7,
+   "type": "KF",
+   "case": "ผู้ป่วยหอบเหนื่อย expiratory wheezing มักเป็นตอนอากาศเย็นและเป็นหวัด · FEV₁ 55% FVC 62% FEV₁/FVC 98%",
+   "items": [
+    {
+     "id": "7.1",
+     "prompt": "กลไกที่ทำให้ FEV₁ ต่ำ",
+     "format": "short",
+     "accepted": [
+      "narrow",
+      "obstructive",
+      "bronchoconstriction",
+      "intrathoracic pressure"
+     ],
+     "keywords_all": [
+      "bronchoconstriction"
+     ],
+     "key_text": "FEV₁ คือปริมาตรอากาศที่หายใจออกแรงใน 1 วินาที ต่ำเพราะ 1) airway lumen แคบ (bronchoconstriction) 2) intrathoracic pressure ที่เป็นบวกขณะหายใจออกบีบ bronchiole",
+     "source_key": "เฉลย: FEV₁ คือปริมาตรอากาศที่หายใจออกแรงใน 1 วินาที ต่ำเพราะ 1) airway lumen แคบ (bronchoconstriction) 2) intrathoracic pressure ที่เป็นบวกขณะหายใจออกบีบ bronchiole"
+    },
+    {
+     "id": "7.2",
+     "prompt": "กลไกการเกิด expiratory wheezing",
+     "format": "short",
+     "accepted": [
+      "turbulent",
+      "compression",
+      "contraction",
+      "mucus"
+     ],
+     "keywords_all": [
+      "turbulent"
+     ],
+     "key_text": "airway lumen ตีบแคบขณะหายใจออกจาก 1) external compression 2) bronchial muscle contraction 3) mucus หนา ทำให้ air flow เป็น turbulent flow",
+     "source_key": "เฉลย: airway lumen ตีบแคบขณะหายใจออกจาก 1) external compression 2) bronchial muscle contraction 3) mucus หนา ทำให้ air flow เป็น turbulent flow"
+    },
+    {
+     "id": "7.3",
+     "prompt": "ทำไมอาการกำเริบช่วงอากาศเย็นและเป็นหวัด",
+     "format": "short",
+     "accepted": [
+      "cold air",
+      "bronchospasm",
+      "cytokine",
+      "postnasal",
+      "mucus"
+     ],
+     "keywords_all": [
+      "bronchospasm"
+     ],
+     "key_text": "Cold air ระคาย hypersensitive airway → bronchospasm และทำให้ mucus แห้งหนา; หวัดทำให้ cytokine/histamine/prostaglandin อักเสบที่ upper airway, ลดการกรอง และมี postnasal drip เสี่ยงต่อ allergen เกิด bronchospasm",
+     "source_key": "เฉลย: Cold air ระคาย hypersensitive airway → bronchospasm และทำให้ mucus แห้งหนา; หวัดทำให้ cytokine/histamine/prostaglandin อักเสบที่ upper airway, ลดการกรอง และมี postnasal drip เสี่ยงต่อ allergen เกิด bronchospasm"
+    },
+    {
+     "id": "7.4",
+     "prompt": "กลุ่มยาที่ใช้รักษา 2 กลุ่ม พร้อมตัวอย่างกลุ่มละ 1 ตัว",
+     "format": "short",
+     "accepted": [
+      "salbutamol",
+      "flunisolide",
+      "beta 2",
+      "glucocorticoid"
+     ],
+     "keywords_all": [
+      "salbutamol"
+     ],
+     "key_text": "Selective β₂ agonist: salbutamol; glucocorticoid: flunisolide",
+     "source_key": "เฉลย: Selective β₂ agonist: salbutamol; glucocorticoid: flunisolide"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF40",
+     "pages": [
+      4
+     ]
+    }
+   ],
+   "tags": [
+    "pharmacology",
+    "physiology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "RESP-40-KF-008",
+   "block": "RESP",
+   "cohort": 40,
+   "n": 8,
+   "type": "KF",
+   "case": "คนไข้โดนแทงที่อกขวาด้านหลัง ฉายรังสีพบของเหลวกับลมคั่งที่ปอดขวา หอบเหนื่อย ไม่เขียว",
+   "items": [
+    {
+     "id": "8.1",
+     "prompt": "เมื่อผู้ป่วยนั่ง ลมและน้ำจะอยู่ส่วนใด",
+     "format": "short",
+     "accepted": [
+      "upper",
+      "lower"
+     ],
+     "keywords_all": [
+      "upper"
+     ],
+     "key_text": "ลมที่ upper lobe, น้ำที่ lower lobe",
+     "source_key": "เฉลย: ลมที่ upper lobe, น้ำที่ lower lobe"
+    },
+    {
+     "id": "8.2",
+     "prompt": "เจาะ ICD ที่ไหน",
+     "format": "short",
+     "accepted": [
+      "4th",
+      "5th",
+      "6th",
+      "mid axillary",
+      "mid-axillary",
+      "upper border"
+     ],
+     "keywords_all": [
+      "axillary"
+     ],
+     "key_text": "ICS 4th–6th ที่ mid-axillary line บริเวณขอบบนของซี่โครงล่าง",
+     "source_key": "เฉลย: ICS 4th–6th ที่ mid-axillary line บริเวณขอบบนของซี่โครงล่าง"
+    },
+    {
+     "id": "8.3",
+     "prompt": "ต้องระวังโครงสร้างใด 3 ตัว",
+     "format": "short",
+     "accepted": [
+      "intercostal nerve",
+      "artery",
+      "vein"
+     ],
+     "keywords_all": [
+      "nerve"
+     ],
+     "key_text": "Intercostal nerve, artery และ vein",
+     "source_key": "เฉลย: Intercostal nerve, artery และ vein"
+    },
+    {
+     "id": "8.4",
+     "prompt": "เจาะผ่านกล้ามเนื้อใด 3 ตัว",
+     "format": "short",
+     "accepted": [
+      "external intercostal",
+      "internal intercostal",
+      "innermost"
+     ],
+     "keywords_all": [
+      "intercostal"
+     ],
+     "key_text": "External intercostal, internal intercostal, innermost intercostal",
+     "source_key": "เฉลย: External intercostal, internal intercostal, innermost intercostal"
+    },
+    {
+     "id": "8.5",
+     "prompt": "กล้ามเนื้อที่ใช้เมื่อหอบ 4 ตัว",
+     "format": "short",
+     "accepted": [
+      "sternocleidomastoid",
+      "scalene",
+      "rectus abdominis",
+      "oblique"
+     ],
+     "keywords_all": [
+      "scalene"
+     ],
+     "key_text": "Sternocleidomastoid, scalene, rectus abdominis, oblique abdominal muscles",
+     "source_key": "เฉลย: Sternocleidomastoid, scalene, rectus abdominis, oblique abdominal muscles"
+    },
+    {
+     "id": "8.6",
+     "prompt": "ลมกับน้ำคั่งส่งผลต่อ lung mechanics อย่างไร",
+     "format": "short",
+     "accepted": [
+      "pleural",
+      "recoil",
+      "ปอดหด",
+      "ความดัน",
+      "ขยาย"
+     ],
+     "keywords_all": [
+      "recoil"
+     ],
+     "key_text": "ลมเข้า pleural cavity ทำให้ความดันจากลบเป็นศูนย์ (เท่าบรรยากาศ) ปอดหดตามแรง recoil หายใจลำบาก; น้ำคั่งขัดขวางการขยายตัวของปอด อากาศเข้าได้ไม่เต็มที่",
+     "source_key": "เฉลย: ลมเข้า pleural cavity ทำให้ความดันจากลบเป็นศูนย์ (เท่าบรรยากาศ) ปอดหดตามแรง recoil หายใจลำบาก; น้ำคั่งขัดขวางการขยายตัวของปอด อากาศเข้าได้ไม่เต็มที่"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF40",
+     "pages": [
+      4
+     ]
+    }
+   ],
+   "tags": [
+    "anatomy"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "RESP-40-KF-009",
+   "block": "RESP",
+   "cohort": 40,
+   "n": 9,
+   "type": "KF",
+   "case": "ผู้ป่วยหอบเหนื่อย กลืนเจ็บ เจ็บคอ pharynx mild injection · CXR (เห็น thumb sign of epiglottis)",
+   "items": [
+    {
+     "id": "9.1",
+     "prompt": "รายงานความผิดปกติจาก CXR",
+     "format": "short",
+     "accepted": [
+      "thumb sign",
+      "epiglottis",
+      "บวม"
+     ],
+     "keywords_all": [
+      "thumb"
+     ],
+     "key_text": "พบ thumb sign ของ epiglottis แสดงว่า epiglottis บวมขยาย",
+     "source_key": "เฉลย: พบ thumb sign ของ epiglottis แสดงว่า epiglottis บวมขยาย",
+     "image": "img/RESP-40-KF-009.jpg",
+     "image_caption": "Lateral neck X-ray: thumb sign"
+    },
+    {
+     "id": "9.2",
+     "prompt": "วินิจฉัยโรค",
+     "format": "short",
+     "accepted": [
+      "epiglottitis"
+     ],
+     "keywords_all": [
+      "epiglottitis"
+     ],
+     "key_text": "Acute epiglottitis",
+     "source_key": "เฉลย: Acute epiglottitis"
+    },
+    {
+     "id": "9.3",
+     "prompt": "มักเกิดจากเชื้อใด 3 ตัว",
+     "format": "short",
+     "accepted": [
+      "haemophilus",
+      "pyogenes",
+      "pneumoniae"
+     ],
+     "keywords_all": [
+      "haemophilus"
+     ],
+     "key_text": "Haemophilus influenzae type b, Streptococcus pyogenes, Streptococcus pneumoniae",
+     "source_key": "เฉลย: Haemophilus influenzae type b, Streptococcus pyogenes, Streptococcus pneumoniae"
+    },
+    {
+     "id": "9.4",
+     "prompt": "รักษาอย่างไร",
+     "format": "short",
+     "accepted": [
+      "airway",
+      "endotracheal",
+      "tracheostomy",
+      "ceftriaxone",
+      "cefotaxime"
+     ],
+     "keywords_all": [
+      "ceftriaxone"
+     ],
+     "key_text": "1) ดูแลทางเดินหายใจ (endotracheal tube หรือ tracheostomy ถ้ารุนแรง) 2) ยา ceftriaxone/cefotaxime",
+     "source_key": "เฉลย: 1) ดูแลทางเดินหายใจ (endotracheal tube หรือ tracheostomy ถ้ารุนแรง) 2) ยา ceftriaxone/cefotaxime"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF40",
+     "pages": [
+      4
+     ]
+    }
+   ],
+   "tags": [
+    "ENT"
+   ],
+   "source": "claude-mcp"
+  }
+ ]
+}
