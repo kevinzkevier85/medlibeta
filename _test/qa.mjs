@@ -41,7 +41,7 @@ const ok = (c, msg) => { if (c) { pass++; console.log("ok  ", msg); } else { fai
 await send("Runtime.enable");
 await send("Page.navigate", { url: BASE + "#/" });
 ok(await waitFor("document.querySelector('.card')"), "home shows block cards");
-ok((await ev("document.querySelector('.ver').innerText")).includes("v" + JSON.parse(fs.readFileSync(path.join(ROOT, "version.json"), "utf8")).version), "version + date shown in menu");
+ok((await ev("document.querySelector('a[href=\"#/settings\"]').title")).includes("v" + JSON.parse(fs.readFileSync(path.join(ROOT, "version.json"), "utf8")).version), "version shown on settings button");
 ok(await ev("[...document.querySelectorAll('.card .code')].some((x) => x.innerText.includes('CVS'))"), "CVS block imported and shown");
 
 await go("#/b/DEMO");

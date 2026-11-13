@@ -20,6 +20,13 @@ t("English accepted answer starts at a word", () => {
   assert.ok(!Q.autoMatch(it, "parathyroid")); assert.ok(!Q.autoMatch(it, "high")); assert.ok(!Q.autoMatch(it, "abc"));
   assert.ok(Q.autoMatch({ accepted: ["gnrh"] }, "↓GnRH → ↓FSH"));
 });
+t("negated answer does not match", () => {
+  const it = { accepted: ["thyroid gland", "ลด"] };
+  assert.ok(!Q.autoMatch(it, "not thyroid gland")); assert.ok(!Q.autoMatch(it, "no thyroid gland")); assert.ok(!Q.autoMatch(it, "non-thyroid gland"));
+  assert.ok(!Q.autoMatch(it, "ไม่ลด")); assert.ok(!Q.autoMatch(it, "ไม่ใช่ลด"));
+  assert.ok(Q.autoMatch(it, "thyroid gland")); assert.ok(Q.autoMatch(it, "ลด"));
+  assert.ok(Q.autoMatch({ accepted: ["no change"] }, "no change")); assert.ok(Q.autoMatch({ accepted: ["ไม่เปลี่ยน"] }, "ไม่เปลี่ยน"));
+});
 t("short answer needs every keyword", () => { assert.ok(Q.autoMatch(kf.items[1], "TV เพิ่ม IRV ลด")); assert.ok(!Q.autoMatch(kf.items[1], "เพิ่มอย่างเดียว")); });
 t("select: partial and over-limit", () => {
   assert.strictEqual(Q.itemScore(kf.items[2], { sel: ["a"] }), 0.5);
