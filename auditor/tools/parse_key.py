@@ -81,6 +81,8 @@ def circles_of(page):
             out.append(r)  # dark hand-drawn ring (Respiratory 49): unfilled stroke, roughly letter-sized
         elif c and max(c) < 0.15 and not d.get("fill") and 12 <= r.width <= 32 and 26 <= r.height <= 52 and r.x0 < 95 and 5 <= len(d.get("items", [])) <= 24:
             out.append(r)  # black hand-drawn check slash across the option letter (Respiratory 48)
+        elif c and not d.get("fill") and 6 <= r.width <= 40 and 10 <= r.height <= 45 and r.x0 < 150 and 1 <= len(d.get("items", [])) <= 30:
+            out.append(r)  # coloured/pencil slash across the option letter (Nervous 49)
     return out
 
 
