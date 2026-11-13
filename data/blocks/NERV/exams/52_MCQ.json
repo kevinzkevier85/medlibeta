@@ -1,0 +1,4033 @@
+{
+ "meta": {
+  "set_id": "52_MCQ",
+  "block": "NERV",
+  "cohort": 52,
+  "type": "MCQ",
+  "title": "MCQ Nervous System · Med PSU 52",
+  "n_source_items": 90,
+  "skipped": [
+   "14",
+   "19",
+   "32",
+   "33",
+   "45",
+   "46",
+   "48",
+   "49",
+   "52",
+   "53",
+   "55",
+   "56",
+   "80"
+  ],
+  "generated_by": "auditor/tools/build_outputs.py — do not edit by hand"
+ },
+ "questions": [
+  {
+   "id": "NERV-52-MCQ-001",
+   "block": "NERV",
+   "cohort": 52,
+   "n": 1,
+   "type": "MCQ",
+   "stem": "A 55-year-old right-handed man develops sudden difficulty producing speech. He understands spoken language and can follow complex verbal commands, but his speech is slow, effortful, and nonfluent. Which Brodmann areas are most likely affected?",
+   "options": {
+    "A": "9,12",
+    "B": "17,18",
+    "C": "22,40",
+    "D": "44,45",
+    "E": "41,42"
+   },
+   "answer": "D",
+   "answer_status": "verified",
+   "explanation": "พูดช้า ลำบาก ไม่คล่อง (nonfluent) แต่เข้าใจภาษาปกติ = Broca aphasia จากรอยโรค Broca's area (Brodmann 44, 45) ที่ inferior frontal gyrus",
+   "refs": [
+    {
+     "paper": "MCQ52",
+     "pages": [
+      1
+     ]
+    },
+    {
+     "paper": "MCQ52-KEY",
+     "pages": [
+      1
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "nerv_52_MCQ_001",
+   "key_concept": "• Broca = BA 44,45 (inferior frontal gyrus) → ผลิตคำพูด\n• Wernicke = BA 22 (posterior superior temporal gyrus) → เข้าใจภาษา\n• Broca: nonfluent, comprehension ดี · Wernicke: fluent แต่ไร้ความหมาย",
+   "mechanism": [
+    "ความคิดถูกส่งไป Wernicke area",
+    "arcuate fasciculus ส่งต่อไป Broca's area",
+    {
+     "s": "Broca's area (BA 44,45) วางแผนการเรียงคำและสั่ง motor cortex",
+     "answer": true
+    },
+    "motor cortex ควบคุมกล้ามเนื้อพูด"
+   ],
+   "option_why": {
+    "A": "BA 9,12 คือ prefrontal association (executive function) ไม่ใช่ศูนย์พูด",
+    "B": "BA 17,18 คือ primary/secondary visual cortex",
+    "C": "BA 22,40 คือ Wernicke (22) + supramarginal (40) เกี่ยวกับความเข้าใจภาษา",
+    "D": "✓ BA 44,45 = Broca's area คุมการผลิตคำพูด รอยโรคทำ nonfluent aphasia โดยความเข้าใจยังดี",
+    "E": "BA 41,42 คือ primary auditory cortex"
+   }
+  },
+  {
+   "id": "NERV-52-MCQ-002",
+   "block": "NERV",
+   "cohort": 52,
+   "n": 2,
+   "type": "MCQ",
+   "stem": "A 62-year-old patient can hear normally but has difficulty understanding speech. His speech is fluent but contains incorrect or meaningless words. Which Brodmann area is affected?",
+   "options": {
+    "A": "4",
+    "B": "41,42",
+    "C": "22",
+    "D": "44,45",
+    "E": "3,1,2"
+   },
+   "answer": "C",
+   "answer_status": "verified",
+   "explanation": "ฟังได้ปกติแต่ไม่เข้าใจ พูดคล่องแต่คำผิด/ไร้ความหมาย = Wernicke aphasia จาก BA 22 (posterior superior temporal gyrus)",
+   "refs": [
+    {
+     "paper": "MCQ52",
+     "pages": [
+      1
+     ]
+    },
+    {
+     "paper": "MCQ52-KEY",
+     "pages": [
+      1
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "nerv_52_MCQ_002",
+   "key_concept": "• Wernicke area = BA 22 (posterior part of superior temporal gyrus)\n• fluent aphasia + comprehension เสีย + repetition เสีย\n• primary auditory cortex (BA 41,42) แยกจาก Wernicke",
+   "mechanism": [
+    "เสียงถูกรับที่ BA 41,42 (primary auditory)",
+    "ส่งต่อไป association area",
+    {
+     "s": "Wernicke's area (BA 22) ถอดความหมายของคำ",
+     "answer": true
+    },
+    "ถ้าเสียจะพูดคล่องแต่ไม่มีความหมาย"
+   ],
+   "option_why": {
+    "A": "BA 4 คือ primary motor cortex",
+    "B": "BA 41,42 คือ primary auditory cortex รอยโรคทำให้ได้ยินลดลง ไม่ใช่เข้าใจภาษาไม่ได้",
+    "C": "✓ BA 22 = Wernicke's area ทำหน้าที่เข้าใจภาษา รอยโรคทำ fluent aphasia",
+    "D": "BA 44,45 คือ Broca ทำให้พูดไม่คล่อง",
+    "E": "BA 3,1,2 คือ primary somatosensory cortex"
+   }
+  },
+  {
+   "id": "NERV-52-MCQ-003",
+   "block": "NERV",
+   "cohort": 52,
+   "n": 3,
+   "type": "MCQ",
+   "stem": "A patient suffers an injury to the superior temporal region of the cerebral cortex. He has difficulty processing and localizing auditory information. Which Brodmann areas are primarily associated with the primary auditory cortex?",
+   "options": {
+    "A": "3,1,2",
+    "B": "9,12",
+    "C": "22,40",
+    "D": "41,42",
+    "E": "44,45"
+   },
+   "answer": "D",
+   "answer_status": "verified",
+   "explanation": "primary auditory cortex คือ Brodmann 41, 42 ที่ Heschl's gyrus ใน superior temporal gyrus",
+   "refs": [
+    {
+     "paper": "MCQ52",
+     "pages": [
+      1
+     ]
+    },
+    {
+     "paper": "MCQ52-KEY",
+     "pages": [
+      1
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "nerv_52_MCQ_003",
+   "key_concept": "• Primary auditory cortex = BA 41,42 (transverse temporal gyrus of Heschl)\n• tonotopic organization · รับจาก MGN ของ thalamus\n• BA 22 = auditory association/Wernicke",
+   "mechanism": [
+    "cochlear nucleus → superior olive → inferior colliculus",
+    "medial geniculate nucleus ของ thalamus",
+    {
+     "s": "primary auditory cortex BA 41,42 รับและแยกความถี่เสียง",
+     "answer": true
+    },
+    "ส่งต่อไป BA 22 เพื่อแปลความหมาย"
+   ],
+   "option_why": {
+    "A": "BA 3,1,2 = primary somatosensory cortex",
+    "B": "BA 9,12 = prefrontal association cortex",
+    "C": "BA 22,40 = Wernicke และ supramarginal gyrus (association)",
+    "D": "✓ BA 41,42 = primary auditory cortex (Heschl's gyrus) รับข้อมูลเสียจาก medial geniculate nucleus",
+    "E": "BA 44,45 = Broca's area"
+   }
+  },
+  {
+   "id": "NERV-52-MCQ-004",
+   "block": "NERV",
+   "cohort": 52,
+   "n": 4,
+   "type": "MCQ",
+   "stem": "A 55-year-old patient presents with progressive muscle weakness and muscle atrophy. Neurological examination reveals findings consistent with both upper motor neuron (UMN) and lower motor neuron (LMN) involvement. Which of the following diagnoses is most consistent with this presentation?",
+   "options": {
+    "A": "Central cord syndrome",
+    "B": "Anterior cord syndrome",
+    "C": "Brown-Séquard syndrome",
+    "D": "Complete spinal cord injury",
+    "E": "Amyotrophic lateral sclerosis (ALS)"
+   },
+   "answer": "E",
+   "answer_status": "verified",
+   "explanation": "UMN + LMN signs ร่วมกัน กล้ามเนื้ออ่อนแรง/ลีบแบบก้าวหน้า = ALS (anterior horn LMN + corticospinal UMN) ไม่มี sensory loss",
+   "refs": [
+    {
+     "paper": "MCQ52",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "MCQ52-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "nerv_52_MCQ_004",
+   "key_concept": "• ALS = UMN + LMN degeneration, sensory ปกติ\n• LMN: atrophy, fasciculation, hypotonia · UMN: spasticity, hyperreflexia, Babinski\n• แยกจาก cord syndromes ที่มี sensory deficit",
+   "mechanism": [
+    "neuron ใน motor cortex และ corticospinal tract เสื่อม",
+    "anterior horn cell (LMN) ตาย",
+    {
+     "s": "พบ UMN signs ร่วมกับ LMN signs พร้อมกัน",
+     "answer": true
+    },
+    "กล้ามเนื้ออ่อนแรงลีบแบบก้าวหน้า ไม่มี sensory loss"
+   ],
+   "option_why": {
+    "A": "Central cord syndrome เด่นที่แขนอ่อนแรง + sensory loss แบบ cape ไม่ใช่ UMN+LMN แบบก้าวหน้า",
+    "B": "Anterior cord syndrome เสีย motor + pain/temp ใต้รอยโรค แต่ dorsal column ปกติ",
+    "C": "Brown-Séquard คือ hemisection ให้ ipsilateral motor/DC และ contralateral pain/temp",
+    "D": "Complete cord injury เสียทุกการรับความรู้สึกและ motor ใต้ระดับ ไม่ progressive",
+    "E": "✓ ALS ทำลายทั้ง upper motor neuron (motor cortex/corticospinal) และ lower motor neuron (anterior horn) จึงพบ UMN+LMN signs"
+   }
+  },
+  {
+   "id": "NERV-52-MCQ-005",
+   "block": "NERV",
+   "cohort": 52,
+   "n": 5,
+   "type": "MCQ",
+   "stem": "A 30-year-old man presents with difficulty breathing. Which of the following nuclei in the spinal cord is most likely involved and could cause this condition?",
+   "options": {
+    "A": "Phrenic nucleus",
+    "B": "Accessory nucleus",
+    "C": "Substantia gelatinosa",
+    "D": "Intermediolateral nucleus",
+    "E": "Dorsal nucleus of Clarke"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "หายใจลำบากจากกล้ามเนื้อกะบังลมอ่อนแรง phrenic nucleus (C3–C5) ที่ anterior horn คุม diaphragm ผ่าน phrenic nerve",
+   "refs": [
+    {
+     "paper": "MCQ52",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "MCQ52-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "nerv_52_MCQ_005",
+   "key_concept": "• phrenic nucleus อยู่ C3–C5 ที่ anterior horn ('C3,4,5 keeps the diaphragm alive')\n• accessory nucleus = SCM/trapezius\n• IML = sympathetic · Clarke = DSCT",
+   "mechanism": [
+    "รอยโรคที่ C3–C5 ทำลาย phrenic nucleus",
+    "phrenic nerve ไม่ทำงาน",
+    {
+     "s": "diaphragm อ่อนแรง",
+     "answer": true
+    },
+    "หายใจลำบาก"
+   ],
+   "option_why": {
+    "A": "✓ Phrenic nucleus (C3–C5) ให้ motor ต่อ diaphragm รอยโรคทำหายใจลำบาก",
+    "B": "Accessory nucleus (C1–C5/6) คุม sternocleidomastoid และ trapezius",
+    "C": "Substantia gelatinosa (lamina II) รับ pain/temperature",
+    "D": "Intermediolateral nucleus (T1–L2) คือ sympathetic preganglionic",
+    "E": "Clarke's nucleus (T1–L2) ส่ง proprioception ผ่าน dorsal spinocerebellar tract"
+   }
+  },
+  {
+   "id": "NERV-52-MCQ-006",
+   "block": "NERV",
+   "cohort": 52,
+   "n": 6,
+   "type": "MCQ",
+   "stem": "A 23-year-old man is involved in a motorcycle accident and briefly loses consciousness. He initially becomes alert and appears relatively normal but several hours later develops a severe headache, vomiting, and rapidly worsening consciousness. CT scan reveals a biconvex (lens- shaped), hyperdense extra-axial hematoma. Which of the following is the most likely diagnosis?",
+   "options": {
+    "A": "Subdural hematoma",
+    "B": "Subarachnoid hemorrhage",
+    "C": "Intraventricular hemorrhage",
+    "D": "Epidural hematoma",
+    "E": "Intracerebral hemorrhage"
+   },
+   "answer": "D",
+   "answer_status": "verified",
+   "explanation": "หมดสติสั้น ๆ → lucid interval → แย่ลงและพบ biconvex hematoma = epidural hematoma จากการฉีกของ middle meningeal artery",
+   "refs": [
+    {
+     "paper": "MCQ52",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "MCQ52-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "nerv_52_MCQ_006",
+   "key_concept": "• Epidural = arterial (middle meningeal a.), biconvex, lucid interval, ไม่ข้าม suture\n• Subdural = bridging vein, crescent, ข้าม suture ได้\n• pterion = จุดอ่อนของกะโหลก",
+   "mechanism": [
+    "กะโหลกแตกที่ pterion",
+    "middle meningeal artery ฉีก",
+    {
+     "s": "เลือดแรงดันสูงดันเยื่อดูราออกจากกะโหลก เกิด biconvex hematoma",
+     "answer": true
+    },
+    "ความดันในกะโหลกสูง → coma/herniation"
+   ],
+   "option_why": {
+    "A": "Subdural เป็นรูป crescent จาก bridging vein ฉีก ไม่มี lucid interval เด่นชัด",
+    "B": "Subarachnoid เจ็บหัวรุนแรง (thunderclap) เลือดใน CSF ไม่ใช่ lens-shaped",
+    "C": "Intraventricular เลือดในโพรงสมอง ไม่ใช่ extra-axial",
+    "D": "✓ Epidural hematoma: lens-shaped, lucid interval, middle meningeal artery (ผ่าน pterion)",
+    "E": "Intracerebral เป็น intra-axial ในเนื้อสมอง"
+   }
+  },
+  {
+   "id": "NERV-52-MCQ-007",
+   "block": "NERV",
+   "cohort": 52,
+   "n": 7,
+   "type": "MCQ",
+   "stem": "An 85-year-old woman develops sudden-onset weakness of the left arm and leg with hyperreflexia. When asked to protrude her tongue, the tongue deviates to the left side. Which of the following additional findings is most likely to be present?",
+   "options": {
+    "A": "Left-sided hoarseness",
+    "B": "Right-sided hoarseness",
+    "C": "Loss of proprioception in the left arm and leg",
+    "D": "Loss of proprioception in the right arm and leg",
+    "E": "Loss of pain and temperature sensation from the face"
+   },
+   "answer": "D",
+   "answer_status": "verified",
+   "explanation": "ลิ้นเบี่ยงซ้าย = CN XII ซ้ายเสีย (medial medulla ซ้าย) ร่วมกับ medial lemniscus ซ้ายเสีย → proprioception/vibration ข้างขวาหาย (หมายเหตุ: ด้านที่อ่อนแรงในโจทย์ขัดกับ pattern นี้ ตามเฉลยต้นฉบับ)",
+   "refs": [
+    {
+     "paper": "MCQ52",
+     "pages": [
+      3
+     ]
+    },
+    {
+     "paper": "MCQ52-KEY",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "nerv_52_MCQ_007",
+   "key_concept": "• Medial medullary syndrome = pyramid + medial lemniscus + CN XII (anterior spinal artery)\n• ลิ้นเบี่ยงเข้าหาข้างรอยโรค (LMN CN XII)\n• ML ไขว้ที่ medulla แล้ว จึงเสีย proprioception ด้านตรงข้ามรอยโรค",
+   "mechanism": [
+    "รอยโรค medial medulla ซ้าย",
+    "hypoglossal ซ้ายเสีย ลิ้นเบี่ยงซ้าย",
+    {
+     "s": "medial lemniscus ซ้ายเสีย (พาข้อมูลจากร่างกายขวา)",
+     "answer": true
+    },
+    "เสีย vibration/proprioception แขนขาขวา"
+   ],
+   "option_why": {
+    "A": "Hoarseness ซ้ายเป็นของ lateral medullary (nucleus ambiguus) ไม่ใช่ medial medulla",
+    "B": "Hoarseness ขวา ก็เป็น lateral medulla เช่นกัน",
+    "C": "Proprioception แขนขาซ้ายไม่เสีย เพราะ ML ซ้ายนำข้อมูลจากข้างขวาไปแล้ว",
+    "D": "✓ Medial medulla ซ้าย: ML ซ้ายเสีย → เสีย vibration/proprioception ด้านขวา",
+    "E": "Pain/temp หน้าเสียใน lateral medullary (spinal trigeminal) ไม่ใช่ medial"
+   }
+  },
+  {
+   "id": "NERV-52-MCQ-008",
+   "block": "NERV",
+   "cohort": 52,
+   "n": 8,
+   "type": "MCQ",
+   "stem": "A 20-year-old man develops a painful infection after squeezing a pimple on the bridge of his nose. Several days later, he develops severe headache, fever, and diplopia. The infection is suspected to have spread to the cavernous sinus through the venous system. Which of the following routes most likely allows the infection to reach the cavernous sinus?",
+   "options": {
+    "A": "Facial vein → superior petrosal vein → cavernous sinus",
+    "B": "Facial vein → ophthalmic vein → cavernous sinus",
+    "C": "Facial vein → transverse sinus → cavernous sinus",
+    "D": "Facial vein → sigmoid sinus → cavernous sinus",
+    "E": "Facial vein → inferior petrosal vein → superior sagittal sinus"
+   },
+   "answer": "B",
+   "answer_status": "verified",
+   "explanation": "หน้า (danger triangle) ติดเชื้อ → facial vein ต่อกับ ophthalmic vein (ไม่มี valve) ผ่าน orbit เข้า cavernous sinus",
+   "refs": [
+    {
+     "paper": "MCQ52",
+     "pages": [
+      3
+     ]
+    },
+    {
+     "paper": "MCQ52-KEY",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "nerv_52_MCQ_008",
+   "key_concept": "• danger triangle ของใบหน้า: facial v. ↔ (angular v.) ↔ superior ophthalmic v. → cavernous sinus\n• veins ของหน้า/ศีรษะไม่มี valve เลือดไหลสองทางได้\n• cavernous sinus มี CN III, IV, V1, V2, VI และ ICA → diplopia",
+   "mechanism": [
+    "ติดเชื้อที่จมูก/ริมฝีปากบน",
+    "facial vein → angular → superior ophthalmic vein",
+    {
+     "s": "เชื้อเข้า cavernous sinus",
+     "answer": true
+    },
+    "กด CN III/IV/VI → diplopia, ปวดหัว, ไข้"
+   ],
+   "option_why": {
+    "A": "Superior petrosal vein ไหลออกจาก cavernous sinus ไปสู่ transverse/sigmoid ไม่ใช่เส้นทางเข้า",
+    "B": "✓ Facial vein → ophthalmic vein → cavernous sinus คือ route ของ danger triangle",
+    "C": "Transverse sinus ไม่ต่อกับ facial vein",
+    "D": "Sigmoid sinus ต่อกับ IJV ไม่ใช่ทางเข้า cavernous",
+    "E": "Inferior petrosal sinus ระบายออกไป IJV ไม่ไป superior sagittal sinus"
+   }
+  },
+  {
+   "id": "NERV-52-MCQ-009",
+   "block": "NERV",
+   "cohort": 52,
+   "n": 9,
+   "type": "MCQ",
+   "stem": "A patient presents with hoarseness, dysphagia, and diminished gag reflex. He also has loss of pain and temperature sensation over the left side of the face and the right side of the body. Which of the following structures is most likely involved?",
+   "options": {
+    "A": "Left medial lemniscus",
+    "B": "Left spinal trigeminal nucleus and tract",
+    "C": "Right corticospinal tract",
+    "D": "Left hypoglossal nucleus",
+    "E": "Left dorsal column nuclei"
+   },
+   "answer": "B",
+   "answer_status": "verified",
+   "explanation": "เสีย pain/temp หน้าซ้าย + ตัวขวา + hoarseness/dysphagia = lateral medullary (Wallenberg) syndrome ซ้าย จากรอยโรค spinal trigeminal nucleus/tract ซ้าย (และ nucleus ambiguus)",
+   "refs": [
+    {
+     "paper": "MCQ52",
+     "pages": [
+      3
+     ]
+    },
+    {
+     "paper": "MCQ52-KEY",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "nerv_52_MCQ_009",
+   "key_concept": "• Lateral medullary (PICA): ipsilateral face pain/temp, contralateral body pain/temp\n• nucleus ambiguus → hoarseness, dysphagia, ลด gag reflex\n• Horner, ataxia, vertigo ร่วมได้",
+   "mechanism": [
+    "PICA อุดตัน → lateral medulla ซ้ายขาดเลือด",
+    "spinal trigeminal tract ซ้ายเสีย",
+    {
+     "s": "pain/temp หน้าซ้ายหาย (ส่วนร่างกายขวาจาก spinothalamic tract)",
+     "answer": true
+    },
+    "nucleus ambiguus เสีย → hoarseness/dysphagia"
+   ],
+   "option_why": {
+    "A": "Medial lemniscus เกี่ยวกับ proprioception/vibration ไม่ใช่ pain/temp",
+    "B": "✓ Left spinal trigeminal nucleus/tract: pain/temp ใบหน้าซ้าย (+ spinothalamic ซ้าย ทำร่างขวาเสีย) ตรง Wallenberg",
+    "C": "Corticospinal ขวาให้ motor ไม่ใช่ sensory",
+    "D": "Hypoglossal nucleus ซ้าย ทำลิ้นเบี่ยง ไม่ใช่ pain/temp",
+    "E": "Dorsal column nuclei เสีย proprioception/vibration"
+   }
+  },
+  {
+   "id": "NERV-52-MCQ-010",
+   "block": "NERV",
+   "cohort": 52,
+   "n": 10,
+   "type": "MCQ",
+   "stem": "A 68-year-old man develops a small infarction involving the left medial medulla. Neurological examination reveals loss of vibration and proprioception in the left leg. Which of the following additional findings is most likely to be present?",
+   "options": {
+    "A": "Hoarseness and dysphagia",
+    "B": "Left limb ataxia",
+    "C": "Right-sided hemiparesis",
+    "D": "Loss of pain and temperature sensation over the left side of the face",
+    "E": "Right-sided loss of pain and temperature sensation from the body"
+   },
+   "answer": "C",
+   "answer_status": "verified",
+   "explanation": "Medial medulla ซ้าย: pyramid (ก่อน decussation) → เสีย motor ด้านตรงข้ามคือขวา, ML ซ้าย → เสีย proprioception ข้างขวา; จึงพบ right hemiparesis",
+   "refs": [
+    {
+     "paper": "MCQ52",
+     "pages": [
+      4
+     ]
+    },
+    {
+     "paper": "MCQ52-KEY",
+     "pages": [
+      4
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "nerv_52_MCQ_010",
+   "key_concept": "• Medial medullary: pyramid (contralateral hemiparesis), ML (contralateral position/vibration loss), CN XII (ipsilateral tongue deviation)\n• supplied by anterior spinal artery\n• ไม่มี pain/temp loss เพราะ spinothalamic อยู่ lateral",
+   "mechanism": [
+    "anterior spinal artery อุดตัน",
+    "medial medulla ซ้ายขาดเลือด",
+    {
+     "s": "pyramid ซ้ายเสียก่อนไขว้ → อ่อนแรงข้างขวา",
+     "answer": true
+    },
+    "ML ซ้ายเสีย → เสีย vibration/proprioception ข้างขวา"
+   ],
+   "option_why": {
+    "A": "Hoarseness/dysphagia เป็น lateral medulla (nucleus ambiguus)",
+    "B": "Limb ataxia เป็น lateral medulla/cerebellar (inferior cerebellar peduncle)",
+    "C": "✓ Pyramid ซ้ายที่ยังไม่ decussate ทำให้ right hemiparesis",
+    "D": "Pain/temp หน้าซ้ายเป็น lateral medullary syndrome",
+    "E": "Pain/temp ร่างกายขวาเป็น spinothalamic (lateral medulla)"
+   }
+  },
+  {
+   "id": "NERV-52-MCQ-011",
+   "block": "NERV",
+   "cohort": 52,
+   "n": 11,
+   "type": "MCQ",
+   "stem": "A 62-year-old man suddenly develops weakness of the right arm and leg. Neurological examination shows increased muscle tone, hyperreflexia, and a positive Babinski sign on the right. Sensory examination is normal. MRI reveals a small lesion involving the left side of the brainstem above the pyramidal decussation. Which of the following structures is most likely damaged?",
+   "options": {
+    "A": "Right lateral corticospinal tract",
+    "B": "Left lateral corticospinal tract",
+    "C": "Left spinothalamic tract",
+    "D": "Right medial lemniscus",
+    "E": "Left dorsal column"
+   },
+   "answer": "B",
+   "answer_status": "verified",
+   "explanation": "อ่อนแรงแขนขาขวา + UMN signs + lesion brainstem ซ้ายเหนือ pyramidal decussation → left corticospinal tract (ยังไม่ไขว้) ทำให้อ่อนแรงด้านขวา",
+   "refs": [
+    {
+     "paper": "MCQ52",
+     "pages": [
+      4
+     ]
+    },
+    {
+     "paper": "MCQ52-KEY",
+     "pages": [
+      4
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "nerv_52_MCQ_011",
+   "key_concept": "• corticospinal ไขว้ 85–90% ที่ pyramidal decussation\n• รอยโรคเหนือ decussation → UMN ด้านตรงข้าม\n• รอยโรคใต้ decussation → UMN ด้านเดียวกัน",
+   "mechanism": [
+    "corticospinal fibre ลงจาก cortex ซ้าย",
+    "brainstem ซ้ายถูกทำลายก่อน decussation",
+    {
+     "s": "left CST เสีย → right-sided weakness",
+     "answer": true
+    },
+    "ผลคือ UMN signs ด้านขวา (↑tone, hyperreflexia, Babinski)"
+   ],
+   "option_why": {
+    "A": "Right lateral CST ไม่ถูกทำลาย เพราะยังอยู่ข้างขวาของ brainstem",
+    "B": "✓ Left lateral CST ใต้ decussation ไขว้ไปข้างขวา → UMN signs ด้านขวา",
+    "C": "Left spinothalamic เกี่ยวกับ pain/temp ไม่ใช่ motor",
+    "D": "Right medial lemniscus เป็น sensory",
+    "E": "Left dorsal column เป็น sensory"
+   }
+  },
+  {
+   "id": "NERV-52-MCQ-012",
+   "block": "NERV",
+   "cohort": 52,
+   "n": 12,
+   "type": "MCQ",
+   "stem": "A 45-year-old woman has a lesion involving the right half of the spinal cord at T8. Examination shows weakness of the right leg with hyperreflexia and a positive Babinski sign. She also has impaired vibration and proprioception on the right side below T8. Which additional finding is most likely?",
+   "options": {
+    "A": "Right-sided loss of pain and temperature below T8",
+    "B": "Left-sided loss of pain and temperature beginning several segments below T8",
+    "C": "Left-sided loss of vibration and proprioception below T8",
+    "D": "Right-sided flaccid paralysis below T8",
+    "E": "Bilateral loss of pain and temperature below T8"
+   },
+   "answer": "B",
+   "answer_status": "verified",
+   "explanation": "Hemisection (Brown-Séquard) ขวาที่ T8: ipsilateral UMN + DC loss ใต้ระดับ, contralateral pain/temp ลดลงเริ่มต่ำกว่า 1–2 segment (spinothalamic ไขว้ที่ anterior white commissure)",
+   "refs": [
+    {
+     "paper": "MCQ52",
+     "pages": [
+      4
+     ]
+    },
+    {
+     "paper": "MCQ52-KEY",
+     "pages": [
+      4
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "nerv_52_MCQ_012",
+   "key_concept": "• Brown-Séquard = ipsilateral motor + DC, contralateral pain/temp\n• spinothalamic ไขว้ใกล้ระดับเข้า (ใน 1–2 segment)\n• ที่ระดับรอยโรคมี LMN signs/ipsilateral band of anesthesia",
+   "mechanism": [
+    "ตัด hemicord ขวา T8",
+    "corticospinal ขวาเสีย → ขาขวา spastic/Babinski",
+    "dorsal column ขวาเสีย → proprioception ขวาหาย",
+    {
+     "s": "spinothalamic ที่ไขว้จากข้างซ้ายเสีย → pain/temp ซ้ายหายใต้ระดับ",
+     "answer": true
+    }
+   ],
+   "option_why": {
+    "A": "Right pain/temp ไม่เสีย เพราะ spinothalamic ไขว้ไปข้างซ้ายแล้ว",
+    "B": "✓ Left pain/temp loss เริ่ม 1–2 segments ใต้ T8 ตรง Brown-Séquard",
+    "C": "Left DC loss ไม่เกิด เพราะ DC ขึ้นด้านเดียวกัน",
+    "D": "Flaccid paralysis เฉพาะที่ระดับรอยโรค (LMN) ใต้ระดับเป็น spastic",
+    "E": "ไม่ bilateral เพราะเป็น hemisection"
+   }
+  },
+  {
+   "id": "NERV-52-MCQ-013",
+   "block": "NERV",
+   "cohort": 52,
+   "n": 13,
+   "type": "MCQ",
+   "stem": "A 70-year-old patient develops an infarction of the right medial medulla. Examination reveals: Left-sided weakness of the arm and leg, Loss of vibration and proprioception on the left side, Tongue deviation to the right when protruded Which artery is most likely responsible?",
+   "options": {
+    "A": "Posterior inferior cerebellar artery",
+    "B": "Anterior spinal artery",
+    "C": "Anterior inferior cerebellar artery",
+    "D": "Superior cerebellar artery",
+    "E": "Posterior cerebral artery"
+   },
+   "answer": "B",
+   "answer_status": "verified",
+   "explanation": "Medial medulla ขวา (pyramid+ML+CN XII) เลือดมาจาก anterior spinal artery (และ vertebral branches)",
+   "refs": [
+    {
+     "paper": "MCQ52",
+     "pages": [
+      5
+     ]
+    },
+    {
+     "paper": "MCQ52-KEY",
+     "pages": [
+      5
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "nerv_52_MCQ_013",
+   "key_concept": "• medial medulla = anterior spinal a. · lateral medulla = PICA\n• ผล: contralateral hemiparesis + contralateral ML loss + ipsilateral tongue deviation (Dejerine)",
+   "mechanism": [
+    "ASA อุดตัน",
+    "medial medulla ขวาขาดเลือด",
+    {
+     "s": "pyramid/ML/CN XII ขวาเสีย",
+     "answer": true
+    },
+    "แขนขาซ้ายอ่อนแรง, proprioception ซ้ายหาย, ลิ้นเบี่ยงขวา"
+   ],
+   "option_why": {
+    "A": "PICA เลี้ยง lateral medulla (Wallenberg)",
+    "B": "✓ Anterior spinal artery เลี้ยง medial medulla → medial medullary syndrome",
+    "C": "AICA เลี้ยง lateral pons (ปวด/หูหนวก/facial palsy)",
+    "D": "SCA เลี้ยง upper pons/superior cerebellum",
+    "E": "PCA เลี้ยง occipital lobe/thalamus ส่วนหนึ่ง"
+   }
+  },
+  {
+   "id": "NERV-52-MCQ-015",
+   "block": "NERV",
+   "cohort": 52,
+   "n": 15,
+   "type": "MCQ",
+   "stem": "A 55-year-old woman experiences sudden, severe, electric shock-like pain around the mouth and cheek. The pain occurs in brief episodes and is triggered by touching her face while washing it. Which cranial nerve is most likely involved?",
+   "options": {
+    "A": "Facial nerve (CN VII)",
+    "B": "Hypoglossal nerve (CN XII)",
+    "C": "Trigeminal nerve (CN V)",
+    "D": "Vagus nerve (CN X)",
+    "E": "Glossopharyngeal nerve (CN IX)"
+   },
+   "answer": "C",
+   "answer_status": "verified",
+   "explanation": "เจ็บแปล๊บแบบช็อตไฟฟ้า สั้น ๆ กระตุ้นด้วยการสัมผัสหน้า = trigeminal neuralgia ของ CN V",
+   "refs": [
+    {
+     "paper": "MCQ52",
+     "pages": [
+      5
+     ]
+    },
+    {
+     "paper": "MCQ52-KEY",
+     "pages": [
+      5
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "nerv_52_MCQ_015",
+   "key_concept": "• trigeminal neuralgia: paroxysmal lancinating pain ตามแนว V2/V3 ± V1 มี trigger\n• สาเหตุ: หลอดเลือดกด trigeminal root\n• รักษา: carbamazepine",
+   "mechanism": [
+    "หลอดเลือด (เช่น SCA) กด trigeminal nerve root",
+    "myelin เสีย เกิด ectopic discharge",
+    {
+     "s": "การสัมผัสหน้ากระตุ้นการปล่อยสัญญาณ pain",
+     "answer": true
+    },
+    "ปวดแปล๊บสั้น ๆ"
+   ],
+   "option_why": {
+    "A": "Facial nerve ให้ motor ใบหน้า ไม่ใช่ pain หน้า",
+    "B": "Hypoglossal เป็น motor ของลิ้น",
+    "C": "✓ Trigeminal nerve (CN V) รับความรู้สึกใบหน้า trigeminal neuralgia ปวดแบบ lancinating มี trigger zone",
+    "D": "Vagus ให้ parasympathetic/มี sensory หู คอ",
+    "E": "Glossopharyngeal neuralgia ปวดที่ลำคอ/ลิ้น/คอหอย"
+   }
+  },
+  {
+   "id": "NERV-52-MCQ-016",
+   "block": "NERV",
+   "cohort": 52,
+   "n": 16,
+   "type": "MCQ",
+   "stem": "A 55-year-old woman experiences recurrent episodes of severe, brief, electric shock-like pain over the lower lip and chin. The pain is frequently triggered by eating, brushing her teeth, or touching the area around her mouth. Which division of the trigeminal nerve is most likely involved?",
+   "options": {
+    "A": "Facial nerve (CN VII)",
+    "B": "Ophthalmic division (V1)",
+    "C": "Maxillary division (V2)",
+    "D": "Mandibular division (V3)",
+    "E": "Glossopharyngeal nerve (CN IX)"
+   },
+   "answer": "D",
+   "answer_status": "verified",
+   "explanation": "ปวดที่ริมฝีปากล่างและคาง = บริเวณ V3 (mandibular division) ที่รับความรู้สึกจากริมฝีปาก/ผิวหนังขากรรไกรล่าง",
+   "refs": [
+    {
+     "paper": "MCQ52",
+     "pages": [
+      5
+     ]
+    },
+    {
+     "paper": "MCQ52-KEY",
+     "pages": [
+      5
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "nerv_52_MCQ_016",
+   "key_concept": "• V1 = หน้าผาก · V2 = แก้ม/ปากบน · V3 = ปากล่าง/คาง/ขากรรไกรล่าง\n• V3 เป็น mixed (มี motor ของ muscles of mastication)\n• trigeminal neuralgia มักเกิดที่ V2/V3",
+   "mechanism": [
+    "ปลายประสาทที่ริมฝีปากล่าง/คาง (mental n.)",
+    "inferior alveolar n. → V3",
+    {
+     "s": "รวมใน mandibular division (V3)",
+     "answer": true
+    },
+    "trigeminal ganglion"
+   ],
+   "option_why": {
+    "A": "CN VII เป็น motor ใบหน้า ไม่ใช่รับ pain บริเวณนี้",
+    "B": "V1 รับ sensation หน้าผาก/หนังตาบน/จมูก",
+    "C": "V2 รับ sensation แก้ม ริมฝีปากบน",
+    "D": "✓ V3 รับ sensation ริมฝีปากล่าง คาง ขากรรไกรล่าง (mental nerve)",
+    "E": "CN IX รับ sensation คอหอย/ลิ้นส่วนหลัง"
+   }
+  },
+  {
+   "id": "NERV-52-MCQ-017",
+   "block": "NERV",
+   "cohort": 52,
+   "n": 17,
+   "type": "MCQ",
+   "stem": "A 42-year-old woman presents with sudden-onset weakness of the right side of her face. On examination, she is unable to raise her right eyebrow, close her right eye tightly, or elevate the right corner of her mouth. The rest of the neurological examination is normal. Which of the following structures is most likely affected?",
+   "options": {
+    "A": "Left corticobulbar tract",
+    "B": "Left corticopontine tract",
+    "C": "Right trigeminal nerve (CN V)",
+    "D": "Right facial nerve (CN VII)",
+    "E": "Right vestibulocochlear nerve (CN VIII)"
+   },
+   "answer": "D",
+   "answer_status": "verified",
+   "explanation": "อ่อนแรงทั้งหน้าซีกขวา รวมหน้าผากและตา = LMN lesion → right facial nerve (CN VII) เช่น Bell's palsy",
+   "refs": [
+    {
+     "paper": "MCQ52",
+     "pages": [
+      6
+     ]
+    },
+    {
+     "paper": "MCQ52-KEY",
+     "pages": [
+      6
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "nerv_52_MCQ_017",
+   "key_concept": "• LMN facial palsy: ทั้งหน้าครึ่งซีก รวมหน้าผาก · UMN: หน้าผากรอด\n• หน้าผากได้ innervation 2 ข้างจาก cortex\n• Bell's palsy = LMN facial nerve idiopathic",
+   "mechanism": [
+    "facial nerve ขวาถูกกด/อักเสบ",
+    "motor ไปกล้ามเนื้อหน้าครึ่งซีกขวาเสีย",
+    {
+     "s": "ครบทั้ง upper+lower face (LMN)",
+     "answer": true
+    },
+    "ยกคิ้ว หลับตา ยกมุมปากไม่ได้"
+   ],
+   "option_why": {
+    "A": "Left corticobulbar lesion ให้ UMN face palsy: หน้าผากรอดเพราะ bilateral innervation",
+    "B": "Corticopontine ไม่เกี่ยวกับ face motor",
+    "C": "CN V ให้ sensation และเคี้ยว ไม่ใช่ facial expression",
+    "D": "✓ Right CN VII (LMN) → เสียทั้งหน้าผากและส่วนล่างของใบหน้า",
+    "E": "CN VIII คือ hearing/balance"
+   }
+  },
+  {
+   "id": "NERV-52-MCQ-018",
+   "block": "NERV",
+   "cohort": 52,
+   "n": 18,
+   "type": "MCQ",
+   "stem": "A 40 YO woman could not close her right eye and lift her right lip angle while smiling. She had difficulty speaking, eating, drinking and increased sensitivity to sound. Which following structure is the most likely affected by lesions?",
+   "options": {
+    "A": "Right facial nerve",
+    "B": "Right Auditory nerve",
+    "C": "Right trigeminal nerve",
+    "D": "Left corticobulbar tract",
+    "E": "Left corticopontine tract"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "หลับตาไม่ได้ ยกมุมปากไม่ได้ + hyperacusis (stapedius เป็นอัมพาต) = right facial nerve (LMN)",
+   "refs": [
+    {
+     "paper": "MCQ52",
+     "pages": [
+      6
+     ]
+    },
+    {
+     "paper": "MCQ52-KEY",
+     "pages": [
+      6
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "nerv_52_MCQ_018",
+   "key_concept": "• facial n. → stapedius → ถ้าเสีย → hyperacusis\n• facial n. ให้ taste anterior 2/3 ลิ้น, lacrimation, salivation\n• LMN palsy เห็นได้ทั้งหน้าผาก",
+   "mechanism": [
+    "facial nerve ขวาเสีย",
+    "กล้ามเนื้อหน้า + stapedius อ่อนแรง",
+    {
+     "s": "หลับตาไม่ได้ ยกปากไม่ได้ + เสียงดังผิดปกติ",
+     "answer": true
+    },
+    "กิน พูดลำบาก"
+   ],
+   "option_why": {
+    "A": "✓ Right facial nerve เลี้ยง facial muscles + stapedius จึงเกิด hyperacusis",
+    "B": "Auditory nerve ทำให้หูหนวก ไม่ใช่ facial paralysis",
+    "C": "Trigeminal nerve คุมการเคี้ยว/รับ sensation",
+    "D": "Left corticobulbar เป็น UMN หน้าผากไม่เสีย",
+    "E": "Left corticopontine ไม่เกี่ยวกับ face"
+   }
+  },
+  {
+   "id": "NERV-52-MCQ-020",
+   "block": "NERV",
+   "cohort": 52,
+   "n": 20,
+   "type": "MCQ",
+   "stem": "A 65-year-old woman suddenly develops weakness of the left leg. Neurological examination reveals spasticity, hyperreflexia, and a positive Babinski sign in the left leg. The left arm and face are relatively spared. Which of the following cerebral arteries is most likely involved?",
+   "options": {
+    "A": "Middle cerebral artery (MCA)",
+    "B": "Anterior cerebral artery (ACA)",
+    "C": "Posterior cerebral artery (PCA)",
+    "D": "Lenticulostriate artery",
+    "E": "Vertebral artery"
+   },
+   "answer": "B",
+   "answer_status": "verified",
+   "explanation": "ขาซ้ายอ่อนแรง UMN signs เด่น แขน/หน้าไม่เด่น = ACA territory (motor/sensory ของ leg ใน medial frontal/parietal lobes)",
+   "refs": [
+    {
+     "paper": "MCQ52",
+     "pages": [
+      6
+     ]
+    },
+    {
+     "paper": "MCQ52-KEY",
+     "pages": [
+      6
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "nerv_52_MCQ_020",
+   "key_concept": "• ACA = leg weakness · MCA = face+arm, aphasia · PCA = visual\n• homunculus: leg อยู่ medial\n• lacunar internal capsule: pure motor",
+   "mechanism": [
+    "ACA อุดตัน",
+    "paracentral lobule ขวาขาดเลือด",
+    {
+     "s": "leg area ของ motor cortex ซ้าย/ขวาเสีย (contralateral)",
+     "answer": true
+    },
+    "ขาซ้ายอ่อนแรง spastic, แขนเด่นน้อย"
+   ],
+   "option_why": {
+    "A": "MCA เลี้ยง lateral cortex → face/arm เด่นกว่า leg",
+    "B": "✓ ACA เลี้ยง medial surface: paracentral lobule (leg)",
+    "C": "PCA เลี้ยง occipital → visual field",
+    "D": "Lenticulostriate เลี้ยง internal capsule ให้ pure motor ทั้งแขนขาหน้า",
+    "E": "Vertebral เลี้ยง medulla/cerebellum"
+   }
+  },
+  {
+   "id": "NERV-52-MCQ-021",
+   "block": "NERV",
+   "cohort": 52,
+   "n": 21,
+   "type": "MCQ",
+   "stem": "A 68-year-old man suddenly develops weakness of the right face and arm, with mild weakness of the right leg. Neurological examination also reveals difficulty producing speech, while comprehension is relatively preserved. Which of the following arteries is most likely involved?",
+   "options": {
+    "A": "Anterior cerebral artery (ACA)",
+    "B": "Middle cerebral artery (MCA)",
+    "C": "Posterior cerebral artery (PCA)",
+    "D": "Lenticulostriate artery",
+    "E": "Anterior spinal artery"
+   },
+   "answer": "B",
+   "answer_status": "verified",
+   "explanation": "อ่อนแรงใบหน้า+แขน มากกว่าขา และพูดไม่ออก (Broca) = MCA (superior division) ในซีกเด่น",
+   "refs": [
+    {
+     "paper": "MCQ52",
+     "pages": [
+      7
+     ]
+    },
+    {
+     "paper": "MCQ52-KEY",
+     "pages": [
+      7
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "nerv_52_MCQ_021",
+   "key_concept": "• MCA: contralateral face+arm > leg, dominant → aphasia\n• Broca area อยู่ใน MCA superior division\n• nondominant → neglect",
+   "mechanism": [
+    "MCA ซ้ายอุดตัน",
+    "lateral frontal lobe + motor homunculus (face/arm) ขาดเลือด",
+    {
+     "s": "Broca's area (BA 44,45) เสีย",
+     "answer": true
+    },
+    "แขน/หน้าขวาอ่อนแรง พูดไม่คล่อง"
+   ],
+   "option_why": {
+    "A": "ACA ให้ขาอ่อนแรงมากกว่า",
+    "B": "✓ MCA เลี้ยง lateral convexity: face+arm motor, Broca's area",
+    "C": "PCA เลี้ยง occipital lobe",
+    "D": "Lenticulostriate ทำ lacunar ไม่มี aphasia",
+    "E": "ASA เป็นหลอดเลือดไขสันหลัง/medulla"
+   }
+  },
+  {
+   "id": "NERV-52-MCQ-022",
+   "block": "NERV",
+   "cohort": 52,
+   "n": 22,
+   "type": "MCQ",
+   "stem": "A 64-year-old man suddenly develops weakness of the right arm and lower face. He also has difficulty speaking and is unable to name familiar objects, although his hearing is normal. His right leg is only mildly affected. Which of the following arteries is most likely involved?",
+   "options": {
+    "A": "Anterior cerebral artery (ACA)",
+    "B": "Middle cerebral artery (MCA)",
+    "C": "Posterior cerebral artery (PCA)",
+    "D": "Lenticulostriate artery",
+    "E": "Anterior spinal artery"
+   },
+   "answer": "B",
+   "answer_status": "verified",
+   "explanation": "อ่อนแรงแขน+หน้าล่างขวา พูดลำบาก เรียกชื่อสิ่งของไม่ได้ ขาน้อยกว่า = MCA ซีกซ้าย",
+   "refs": [
+    {
+     "paper": "MCQ52",
+     "pages": [
+      7
+     ]
+    },
+    {
+     "paper": "MCQ52-KEY",
+     "pages": [
+      7
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "nerv_52_MCQ_022",
+   "key_concept": "• MCA ซีกเด่น: contralateral face/arm, aphasia\n• anomia/aphasia ชี้ cortical lesion ไม่ใช่ lacunar\n• ขาเบากว่า เพราะ leg อยู่ ACA",
+   "mechanism": [
+    "MCA ซ้ายอุดตัน",
+    "lateral cerebral cortex ซ้ายขาดเลือด",
+    {
+     "s": "language + motor face/arm area เสีย",
+     "answer": true
+    },
+    "แขนหน้าขวาอ่อนแรง พูด/เรียกชื่อลำบาก"
+   ],
+   "option_why": {
+    "A": "ACA ให้ขา>แขน",
+    "B": "✓ MCA เลี้ยง face/arm cortex และ language areas (Broca/Wernicke)",
+    "C": "PCA = visual cortex/thalamus",
+    "D": "Lenticulostriate ให้ pure motor/sensory ไม่มี aphasia",
+    "E": "ASA เกี่ยวกับ medial medulla/spinal cord"
+   }
+  },
+  {
+   "id": "NERV-52-MCQ-023",
+   "block": "NERV",
+   "cohort": 52,
+   "n": 23,
+   "type": "MCQ",
+   "stem": "A 38-year-old man presents with weakness of the left arm and leg. Neurological examination reveals inability to abduct the right eye and complete paralysis of the right side of the face, including the forehead. Where is the most likely location of the lesion?",
+   "options": {
+    "A": "Right pons",
+    "B": "Right cerebral cortex",
+    "C": "Left internal capsule",
+    "D": "Left medial medulla",
+    "E": "Left cerebral peduncle"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "อ่อนแรงซ้าย + CN VI ขวา + facial palsy ขวา (รวมหน้าผาก) = right pons (Millard-Gubler) เพราะ corticospinal ยังไม่ decussate",
+   "refs": [
+    {
+     "paper": "MCQ52",
+     "pages": [
+      7
+     ]
+    },
+    {
+     "paper": "MCQ52-KEY",
+     "pages": [
+      7
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "nerv_52_MCQ_023",
+   "key_concept": "• Millard-Gubler (ventral pons): ipsilateral CN VI+VII, contralateral hemiparesis\n• CN VII LMN → ทั้งหน้าผาก\n• brainstem: cranial nerve ipsilateral, long tract contralateral",
+   "mechanism": [
+    "ventral pons ขวาถูกทำลาย",
+    "abducens + facial nerve ขวาเสีย",
+    {
+     "s": "corticospinal ขวาเสียก่อน decussation → อ่อนแรงซ้าย",
+     "answer": true
+    },
+    "เบี่ยงตาขวาไม่ได้ + หน้าขวาเป็นอัมพาต"
+   ],
+   "option_why": {
+    "A": "✓ Right pons: CN VI, CN VII ขวา + corticospinal tract ขวา → ซ้ายอ่อนแรง",
+    "B": "Right cortex ไม่ทำให้ CN VI ขวาเสียและ LMN face ขวา",
+    "C": "Left internal capsule ทำ contralateral (ขวา) weakness และ UMN face",
+    "D": "Left medial medulla ให้ CN XII/ML ซ้าย",
+    "E": "Left peduncle ให้ weakness ขวา + CN III ซ้าย"
+   }
+  },
+  {
+   "id": "NERV-52-MCQ-024",
+   "block": "NERV",
+   "cohort": 52,
+   "n": 24,
+   "type": "MCQ",
+   "stem": "A 70-year-old man develops pure sensory loss involving the right side of the face, arm, and leg, without weakness. MRI reveals a small lacunar infarction. Which structure is most likely affected?",
+   "options": {
+    "A": "Left genu of the internal capsule",
+    "B": "Left posterior limb of the internal capsule",
+    "C": "Left thalamus",
+    "D": "Right thalamus",
+    "E": "Left cerebral peduncle"
+   },
+   "answer": "C",
+   "answer_status": "verified",
+   "explanation": "pure sensory loss ครึ่งซีกขวา (face, arm, leg) = left thalamus (VPL+VPM) lacunar infarct",
+   "refs": [
+    {
+     "paper": "MCQ52",
+     "pages": [
+      8
+     ]
+    },
+    {
+     "paper": "MCQ52-KEY",
+     "pages": [
+      8
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "nerv_52_MCQ_024",
+   "key_concept": "• Thalamus: VPL (body), VPM (face)\n• Pure sensory lacunar syndrome = thalamus\n• ข้างตรงข้ามกับ lesion",
+   "mechanism": [
+    "lacunar infarct ที่ left thalamus",
+    "VPL/VPM ซ้ายเสีย",
+    {
+     "s": "ข้อมูล sensory จากร่างกายขวาไปไม่ถึง cortex",
+     "answer": true
+    },
+    "เสีย sensation ขวา face/arm/leg ไม่มี weakness"
+   ],
+   "option_why": {
+    "A": "Genu ภายใน capsule ให้ corticobulbar (motor)",
+    "B": "Posterior limb ให้ motor + บางส่วนของ sensory แต่มักมี weakness",
+    "C": "✓ Left thalamus รับ sensory จากร่างกายขวา → pure sensory stroke",
+    "D": "Right thalamus ให้ sensory loss ข้างซ้าย",
+    "E": "Cerebral peduncle เป็น motor"
+   }
+  },
+  {
+   "id": "NERV-52-MCQ-025",
+   "block": "NERV",
+   "cohort": 52,
+   "n": 25,
+   "type": "MCQ",
+   "stem": "A 30-year-old woman presents with weakness of the right upper limb. She has difficulty flexing the right elbow, and the brachioradialis reflex is diminished on the right side. Sensory examination reveals decreased sensation over the thumb and lateral aspect of the forearm. Which spinal nerve root is most likely affected?",
+   "options": {
+    "A": "C4",
+    "B": "C5",
+    "C": "C6",
+    "D": "C7",
+    "E": "C8"
+   },
+   "answer": "C",
+   "answer_status": "verified",
+   "explanation": "งอศอกอ่อน brachioradialis reflex ลด ชาที่นิ้วหัวแม่มือ/forearm ด้านข้าง = C6 (biceps/brachioradialis, thumb)",
+   "refs": [
+    {
+     "paper": "MCQ52",
+     "pages": [
+      8
+     ]
+    },
+    {
+     "paper": "MCQ52-KEY",
+     "pages": [
+      8
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "nerv_52_MCQ_025",
+   "key_concept": "• C5 biceps · C6 brachioradialis · C7 triceps · C8 finger flexors\n• thumb = C6, middle finger = C7, little finger = C8\n• elbow flexion = C5–C6",
+   "mechanism": [
+    "รากประสาท C6 ถูกกด (เช่น disc herniation)",
+    {
+     "s": "sensory (thumb/lateral forearm) และ motor (elbow flexion) ของ C6 เสีย",
+     "answer": true
+    },
+    "brachioradialis reflex ลดลง"
+   ],
+   "option_why": {
+    "A": "C4 ไม่มี reflex เด่นของ upper limb",
+    "B": "C5 = biceps reflex, deltoid, lateral arm",
+    "C": "✓ C6 = brachioradialis/biceps reflex, thumb และ lateral forearm sensation",
+    "D": "C7 = triceps reflex, middle finger",
+    "E": "C8 = finger flexors, medial hand"
+   }
+  },
+  {
+   "id": "NERV-52-MCQ-026",
+   "block": "NERV",
+   "cohort": 52,
+   "n": 26,
+   "type": "MCQ",
+   "stem": "A 64-year-old woman suddenly develops right-sided weakness of the face, arm, and leg accompanied by mild loss of sensation in the same regions. She has no aphasia, visual field defect, neglect, or impaired consciousness. MRI shows a small lacunar infarction involving a compact white-matter structure deep within the left cerebral hemisphere. Which of the following locations is most likely affected?",
+   "options": {
+    "A": "Left VPL nucleus of the thalamus",
+    "B": "Left VPM nucleus of the thalamus",
+    "C": "Left posterior limb of the internal capsule",
+    "D": "Right posterior limb of the internal capsule",
+    "E": "Left primary somatosensory cortex"
+   },
+   "answer": "C",
+   "answer_status": "verified",
+   "explanation": "อ่อนแรงทั้งหน้า แขน ขาด้านขวา + sensory เล็กน้อย, ไม่มี cortical signs = lacunar ที่ posterior limb internal capsule ซ้าย",
+   "refs": [
+    {
+     "paper": "MCQ52",
+     "pages": [
+      8
+     ]
+    },
+    {
+     "paper": "MCQ52-KEY",
+     "pages": [
+      8
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "nerv_52_MCQ_026",
+   "key_concept": "• posterior limb IC: corticospinal + thalamocortical radiation\n• pure motor/ sensorimotor lacunar stroke\n• เลือดจาก lenticulostriate (MCA) / anterior choroidal",
+   "mechanism": [
+    "lenticulostriate a. ตัน",
+    "left posterior limb ของ internal capsule ถูกทำลาย",
+    {
+     "s": "fiber ที่ผ่านแน่นหนาถูกตัดรวมกัน",
+     "answer": true
+    },
+    "contralateral hemiparesis + sensory loss ทั้งแขนขาหน้า"
+   ],
+   "option_why": {
+    "A": "VPL เสียจะ sensory loss ไม่มี weakness",
+    "B": "VPM เสียจะมีเฉพาะ sensory หน้า",
+    "C": "✓ Left posterior limb IC มีทั้ง corticospinal/corticobulbar และ sensory fibers → contralateral face/arm/leg",
+    "D": "Right IC ทำอาการข้างซ้าย",
+    "E": "Cortex S1 เสียจะมี cortical sensory loss"
+   }
+  },
+  {
+   "id": "NERV-52-MCQ-027",
+   "block": "NERV",
+   "cohort": 52,
+   "n": 27,
+   "type": "MCQ",
+   "stem": "A 54-year-old man develops sudden-onset left-sided hemiparesis. Examination also reveals right-sided ptosis, a dilated right pupil, and the right eye deviated down and laterally. Which structure is most likely affected?",
+   "options": {
+    "A": "Left oculomotor nucleus",
+    "B": "Right oculomotor nerve",
+    "C": "Left corticospinal tract in the cerebral peduncle",
+    "D": "Right corticospinal tract in the cerebral peduncle",
+    "E": "Right trochlear nerve"
+   },
+   "answer": "D",
+   "answer_status": "verified",
+   "explanation": "Weber syndrome: CN III ข้างขวา + cerebral peduncle ขวา (corticospinal) → ซ้ายอ่อนแรง, ตาขวาเบี่ยงลง-ออก (down & out) เพราะ SO/LR ยังทำงาน",
+   "refs": [
+    {
+     "paper": "MCQ52",
+     "pages": [
+      9
+     ]
+    },
+    {
+     "paper": "MCQ52-KEY",
+     "pages": [
+      9
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "nerv_52_MCQ_027",
+   "key_concept": "• Weber (midbrain): ipsilateral CN III palsy + contralateral hemiparesis\n• CN III: ptosis, mydriasis, eye 'down and out'\n• cerebral peduncle = corticospinal/corticobulbar",
+   "mechanism": [
+    "PCA branch ตันที่ midbrain ventral",
+    "right cerebral peduncle ขาดเลือด",
+    {
+     "s": "ทำลาย CN III fascicle ขวา + corticospinal ขวา",
+     "answer": true
+    },
+    "ตาขวา down&out, ซีกซ้ายอ่อนแรง"
+   ],
+   "option_why": {
+    "A": "Left oculomotor nucleus ทำ CN III ซ้าย ไม่ตรงกับ right ptosis",
+    "B": "Right oculomotor nerve ผิดอย่างเดียวไม่อธิบาย hemiparesis ซ้าย",
+    "C": "Left CST ในเพดาน peduncle ซ้ายทำอาการขวา",
+    "D": "✓ Right corticospinal tract ใน cerebral peduncle ใกล้ fascicle CN III ขวา ทำ Weber syndrome",
+    "E": "CN IV ไม่ใช่ ptosis/dilated pupil"
+   }
+  },
+  {
+   "id": "NERV-52-MCQ-028",
+   "block": "NERV",
+   "cohort": 52,
+   "n": 28,
+   "type": "MCQ",
+   "stem": "The microscopic examination of 40-year-old man revealed eosinophilia of cytoplasm and pykotic nuclei, along with decreased of neurons. pyramidal neuron in hippocampus and cortex, as well as cerebellar Purkinje were primarily affected. What's the major cause of neuronal loss?",
+   "options": {
+    "A": "Glioblastoma",
+    "B": "poor nutrition",
+    "C": "DM",
+    "D": "Carbon Monoxide",
+    "E": "Cerebral amyloid angiopathy"
+   },
+   "answer": "D",
+   "answer_status": "verified",
+   "explanation": "neuron ตายแบบ red neuron (eosinophilia + pyknosis) ที่ pyramidal ของ hippocampus, cortex, Purkinje = selective vulnerability ต่อ hypoxia/ischemia เช่น CO poisoning",
+   "refs": [
+    {
+     "paper": "MCQ52",
+     "pages": [
+      9
+     ]
+    },
+    {
+     "paper": "MCQ52-KEY",
+     "pages": [
+      9
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "nerv_52_MCQ_028",
+   "key_concept": "• เซลล์ที่ไวต่อ hypoxia: hippocampal CA1 pyramidal, Purkinje cell, neocortex layers 3/5/6\n• acute neuronal injury (red neuron) หลัง 12–24 ชม.\n• CO จับ Hb แย่งออกซิเจน ทำ histotoxic hypoxia",
+   "mechanism": [
+    "CO จับ hemoglobin (carboxyHb)",
+    "O2 delivery ลดลงทั้งสมอง",
+    {
+     "s": "neuron ที่ไวต่อ hypoxia (CA1, Purkinje) ตาย",
+     "answer": true
+    },
+    "red neuron: eosinophilic + pyknotic nucleus"
+   ],
+   "option_why": {
+    "A": "Glioblastoma เป็นเนื้องอก ไม่ทำให้สูญเสีย neuron แบบเลือกที่ region",
+    "B": "ภาวะทุพโภชนาการไม่ทำให้ neuron ตายแบบเลือกเฉพาะที่ (hippocampus/Purkinje) ในลักษณะเฉียบพลันนี้",
+    "C": "DM ไม่ทำให้เกิด acute neuron death แบบนี้",
+    "D": "✓ Carbon monoxide ทำ global hypoxia เซลล์ที่เปราะบาง (pyramidal, Purkinje) เป็น red neuron",
+    "E": "Cerebral amyloid angiopathy ทำ lobar hemorrhage"
+   }
+  },
+  {
+   "id": "NERV-52-MCQ-029",
+   "block": "NERV",
+   "cohort": 52,
+   "n": 29,
+   "type": "MCQ",
+   "stem": "A 60-year-old man suddenly die. Autopsy reveals hemorrhage in the basal ganglia. Histological examination shows hyalinized arteriolosclerosis of intraparenchymal arterioles. What is the most likely underlying disease?",
+   "options": {
+    "A": "Chronic alcoholism",
+    "B": "Cerebral amyloid angiopathy",
+    "C": "Metastatic carcinoma",
+    "D": "Hypertension",
+    "E": "Cerebral arteriovenous malformation"
+   },
+   "answer": "D",
+   "answer_status": "verified",
+   "explanation": "hemorrhage ที่ basal ganglia + hyalinized arteriolosclerosis ของ intraparenchymal arterioles = hypertensive intracerebral hemorrhage",
+   "refs": [
+    {
+     "paper": "MCQ52",
+     "pages": [
+      9
+     ]
+    },
+    {
+     "paper": "MCQ52-KEY",
+     "pages": [
+      9
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "nerv_52_MCQ_029",
+   "key_concept": "• Hypertensive ICH: putamen, thalamus, pons, cerebellum\n• hyaline arteriolosclerosis + Charcot–Bouchard microaneurysm\n• CAA = lobar ICH ในผู้สูงอายุ",
+   "mechanism": [
+    "ความดันสูงเรื้อรัง",
+    "hyaline arteriolosclerosis ของ lenticulostriate",
+    {
+     "s": "หลอดเลือดแตกเข้า basal ganglia",
+     "answer": true
+    },
+    "intracerebral hemorrhage"
+   ],
+   "option_why": {
+    "A": "Alcoholism สัมพันธ์ liver/cerebellar atrophy ไม่ใช่ basal ganglia bleed แบบนี้",
+    "B": "CAA ทำ lobar hemorrhage (cortex) ไม่ใช่ basal ganglia",
+    "C": "Metastasis ทำ hemorrhage ได้แต่มี tumor",
+    "D": "✓ Hypertension ทำ arteriolosclerosis (Charcot–Bouchard) → basal ganglia/thalamus/pons/cerebellum bleed",
+    "E": "AVM ให้ lobar/อายุน้อยกว่า"
+   }
+  },
+  {
+   "id": "NERV-52-MCQ-030",
+   "block": "NERV",
+   "cohort": 52,
+   "n": 30,
+   "type": "MCQ",
+   "stem": "A patient presents with a sudden, severe headache. MRI reveals a subarachnoid hemorrhage associated with a thin-walled outpouching of an intracranial artery. What is the most likely vascular lesion?",
+   "options": {
+    "A": "Saccular (berry) aneurysm",
+    "B": "Arteriovenous malformation",
+    "C": "Charcot-Bouchard microaneurysm",
+    "D": "Fusiform aneurysm",
+    "E": "Cerebral venous thrombosis"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "thunderclap headache + SAH + outpouching ผนังบางของหลอดเลือดสมอง = saccular (berry) aneurysm ที่ circle of Willis",
+   "refs": [
+    {
+     "paper": "MCQ52",
+     "pages": [
+      10
+     ]
+    },
+    {
+     "paper": "MCQ52-KEY",
+     "pages": [
+      10
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "nerv_52_MCQ_030",
+   "key_concept": "• berry aneurysm: ACom, MCA bifurcation; สัมพันธ์ ADPKD, Ehlers-Danlos\n• แตก → SAH, thunderclap, CSF xanthochromia\n• Charcot–Bouchard = HT + deep ICH",
+   "mechanism": [
+    "ผนังหลอดเลือดอ่อนแอที่ bifurcation",
+    "เกิด saccular outpouching",
+    {
+     "s": "แตกเข้า subarachnoid space",
+     "answer": true
+    },
+    "thunderclap headache"
+   ],
+   "option_why": {
+    "A": "✓ Saccular (berry) aneurysm: ที่แยกของ circle of Willis, แตกทำ SAH",
+    "B": "AVM ทำ hemorrhage แต่ไม่ใช่ outpouching ผนังบาง",
+    "C": "Charcot–Bouchard เป็น microaneurysm ใน small arteriole ของ basal ganglia (ICH)",
+    "D": "Fusiform aneurysm ขยายทั้งเส้น ไม่ใช่ outpouching",
+    "E": "Venous thrombosis ทำ venous infarct"
+   }
+  },
+  {
+   "id": "NERV-52-MCQ-031",
+   "block": "NERV",
+   "cohort": 52,
+   "n": 31,
+   "type": "MCQ",
+   "stem": "A 70-year-old man has had lung adenocarcinoma with brain metastasis 6 month over the day. He has had severe headache with vomiting followed confusion. Which of the following signs to diagnosis in his case?",
+   "options": {
+    "A": "Tachycardia",
+    "B": "Papilledema",
+    "C": "Hypotension",
+    "D": "Hyperthermia",
+    "E": "Hypoglycemia"
+   },
+   "answer": "B",
+   "answer_status": "verified",
+   "explanation": "brain metastasis ทำให้ ICP สูง ปวดหัว อาเจียน สับสน → พบ papilledema ในการตรวจตา",
+   "refs": [
+    {
+     "paper": "MCQ52",
+     "pages": [
+      10
+     ]
+    },
+    {
+     "paper": "MCQ52-KEY",
+     "pages": [
+      10
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "nerv_52_MCQ_031",
+   "key_concept": "• raised ICP: headache, vomiting, papilledema, Cushing's triad (HT, bradycardia, irregular respiration)\n• papilledema = optic disc swelling\n• metastasis ส่วนใหญ่จาก lung, breast, melanoma, renal, colon",
+   "mechanism": [
+    "tumor ในสมองเพิ่ม volume",
+    "intracranial pressure ↑",
+    {
+     "s": "CSF ใน optic nerve sheath ดันจน optic disc บวม",
+     "answer": true
+    },
+    "ปวดหัว/อาเจียน/papilledema"
+   ],
+   "option_why": {
+    "A": "ICP สูงทำให้ Cushing reflex คือ bradycardia ไม่ใช่ tachycardia",
+    "B": "✓ Papilledema คือ optic disc บวมจาก raised ICP",
+    "C": "ความดันโลหิตสูงขึ้นไม่ใช่ hypotension",
+    "D": "ไข้สูงไม่ใช่ลักษณะหลักของ ICP",
+    "E": "Hypoglycemia ไม่เกี่ยวข้อง"
+   }
+  },
+  {
+   "id": "NERV-52-MCQ-034",
+   "block": "NERV",
+   "cohort": 52,
+   "n": 34,
+   "type": "MCQ",
+   "stem": "40-year-old woman with fluctuating weakness for 3 weak, mild partial ptosis right side, Full EOM, muscle weakness grade 4 at Neck flexor and proximal arm, fatigability test positive. Where is the possible lesion?",
+   "options": {
+    "A": "Muscle",
+    "B": "Motor neuron",
+    "C": "Brachial plexus",
+    "D": "Neuromuscular junction",
+    "E": "Peripheral nerve"
+   },
+   "answer": "D",
+   "answer_status": "verified",
+   "explanation": "ptosis + อ่อนแรงผันแปร (fluctuating) + fatigability = myasthenia gravis → lesion ที่ neuromuscular junction (anti-AChR)",
+   "refs": [
+    {
+     "paper": "MCQ52",
+     "pages": [
+      10
+     ]
+    },
+    {
+     "paper": "MCQ52-KEY",
+     "pages": [
+      10
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "nerv_52_MCQ_034",
+   "key_concept": "• Myasthenia gravis: anti-nicotinic AChR antibody → weakness เพิ่มตามการใช้งาน\n• ptosis, diplopia, bulbar และ proximal weakness\n• sensory และ reflex ปกติ",
+   "mechanism": [
+    "autoantibody ต่อ AChR ที่ postsynaptic membrane",
+    "AChR ถูกทำลาย/บล็อก",
+    {
+     "s": "สัญญาณ NMJ ลดลงตามการใช้งาน",
+     "answer": true
+    },
+    "fatigable weakness + ptosis"
+   ],
+   "option_why": {
+    "A": "Muscle disease ไม่มี fatigability แบบผันแปร",
+    "B": "Motor neuron disease มี fasciculation/UMN signs ไม่ผันแปรตามกิจกรรม",
+    "C": "Brachial plexus lesion เป็นกลุ่มกล้ามเนื้อ/sensory เฉพาะ",
+    "D": "✓ NMJ (myasthenia): ptosis, fatigability, proximal weakness, EOM ปกติได้",
+    "E": "Peripheral nerve ให้ sensory loss/reflex ลด"
+   }
+  },
+  {
+   "id": "NERV-52-MCQ-035",
+   "block": "NERV",
+   "cohort": 52,
+   "n": 35,
+   "type": "MCQ",
+   "stem": "A 32-year-old woman developed painful proximal leg weakness for 2 months. A motor function changed from walking independently to walking with cane and inability to walk upstairs. The physical examination revealed proximal arm and leg weakness grade 3+. Pinkprick and vibratory sensation were normal and DTR 2+ all. Heliotrope rash and grotton papule were observerd. Where is the possible lesion?",
+   "options": {
+    "A": "Muscle",
+    "B": "Motor neuron",
+    "C": "Brachial plexus",
+    "D": "Neuromuscular junction",
+    "E": "Peripheral nerve"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "proximal weakness ปวด + heliotrope rash + Gottron papules, sensation/DTR ปกติ = dermatomyositis → lesion ที่กล้ามเนื้อ",
+   "refs": [
+    {
+     "paper": "MCQ52",
+     "pages": [
+      11
+     ]
+    },
+    {
+     "paper": "MCQ52-KEY",
+     "pages": [
+      11
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "nerv_52_MCQ_035",
+   "key_concept": "• Dermatomyositis: heliotrope, Gottron papules, proximal myopathy, ↑CK\n• myopathy: sensory ปกติ, DTR ปกติ/ลดเล็กน้อย\n• ต้องคิดมะเร็งร่วมในผู้ใหญ่",
+   "mechanism": [
+    "autoimmune ต่อ capillary/perimysium",
+    "CD4/B cell + complement attack",
+    {
+     "s": "กล้ามเนื้อ proximal อักเสบ",
+     "answer": true
+    },
+    "อ่อนแรง + heliotrope + Gottron"
+   ],
+   "option_why": {
+    "A": "✓ Muscle: dermatomyositis (inflammatory myopathy) → proximal weakness + skin signs",
+    "B": "Motor neuron ให้ fasciculation/UMN signs",
+    "C": "Brachial plexus เป็น focal arm",
+    "D": "NMJ ให้ fatigability ไม่มีผื่น",
+    "E": "Peripheral nerve ให้ sensory loss และ DTR ลด"
+   }
+  },
+  {
+   "id": "NERV-52-MCQ-036",
+   "block": "NERV",
+   "cohort": 52,
+   "n": 36,
+   "type": "MCQ",
+   "stem": "A 30-year-old women has progressive numbness. She has postural instability sensation during closing her left eye esp. wash her hair. PE: generalized muscle weakness grade 4, decreased pin prick sensation of both hand and feet. DTR is 0 Where is the possible lesion?",
+   "options": {
+    "A": "Muscle",
+    "B": "Motor neuron",
+    "C": "Brachial plexus",
+    "D": "Neuromuscular junction",
+    "E": "Peripheral nerve"
+   },
+   "answer": "E",
+   "answer_status": "verified",
+   "explanation": "ชา + DTR 0 + pinprick ลดมือเท้า + generalized weakness = peripheral neuropathy (เช่น GBS) → lesion ที่ peripheral nerve",
+   "refs": [
+    {
+     "paper": "MCQ52",
+     "pages": [
+      11
+     ]
+    },
+    {
+     "paper": "MCQ52-KEY",
+     "pages": [
+      11
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "nerv_52_MCQ_036",
+   "key_concept": "• peripheral neuropathy: stocking-glove sensory loss, areflexia, LMN weakness\n• GBS: ascending weakness หลัง infection\n• sensory+motor ต่างจาก NMJ/muscle",
+   "mechanism": [
+    "peripheral nerve เสียหาย (demyelination)",
+    {
+     "s": "sensory + motor + reflex arc เสีย",
+     "answer": true
+    },
+    "DTR = 0",
+    "ชา/อ่อนแรง/ทรงตัวลำบาก"
+   ],
+   "option_why": {
+    "A": "Muscle เสียจะ sensory ปกติ",
+    "B": "Motor neuron เสียจะไม่มี sensory loss",
+    "C": "Brachial plexus เป็น focal",
+    "D": "NMJ ไม่มี sensory loss",
+    "E": "✓ Peripheral nerve: sensory loss, areflexia, weakness"
+   }
+  },
+  {
+   "id": "NERV-52-MCQ-037",
+   "block": "NERV",
+   "cohort": 52,
+   "n": 37,
+   "type": "MCQ",
+   "stem": "A 20-year-old man presents with a sudden, severe headache described as the “worst headache of his life”. CT scan reveals a subarachnoid hemorrhage. Cerebral angiography demonstrates a thin-walled, saccular outpouching arising from the anterior part of the Circle of Willis. Which of the following is the most likely cause of this patient's condition?",
+   "options": {
+    "A": "Cerebral vasculitis",
+    "B": "Embolic arterial occlusion",
+    "C": "Arteriovenous malformation",
+    "D": "Tearing of a subdural bridging vein",
+    "E": "Rupture of a saccular aneurysm"
+   },
+   "answer": "E",
+   "answer_status": "verified",
+   "explanation": "SAH + saccular outpouching ผนังบางใกล้ anterior circle of Willis = rupture of berry aneurysm",
+   "refs": [
+    {
+     "paper": "MCQ52",
+     "pages": [
+      11
+     ]
+    },
+    {
+     "paper": "MCQ52-KEY",
+     "pages": [
+      11
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "nerv_52_MCQ_037",
+   "key_concept": "• berry aneurysm: ACom, MCA bifurcation\n• thunderclap headache, xanthochromia\n• ADPKD เสี่ยงมากขึ้น",
+   "mechanism": [
+    "ผนังหลอดเลือดอ่อนแอที่ bifurcation",
+    "saccular outpouching",
+    {
+     "s": "แตก → SAH",
+     "answer": true
+    },
+    "worst headache of life"
+   ],
+   "option_why": {
+    "A": "Vasculitis ไม่ทำให้เกิด saccular outpouching",
+    "B": "Embolic occlusion ทำให้ infarct ไม่ใช่ SAH",
+    "C": "AVM ไม่ใช่ outpouching ผนังบาง",
+    "D": "Subdural bridging vein ทำ SDH ไม่ใช่ SAH",
+    "E": "✓ Saccular aneurysm แตกทำ SAH ใน subarachnoid space"
+   }
+  },
+  {
+   "id": "NERV-52-MCQ-038",
+   "block": "NERV",
+   "cohort": 52,
+   "n": 38,
+   "type": "MCQ",
+   "stem": "A 70-year-old man dies 10 days after suffering a severe ischemic stroke. At autopsy, histological examination of the affected brain tissue is performed. Which of the following histological findings is most likely to be observed?",
+   "options": {
+    "A": "Microglial nodules surrounding and phagocytosing dying neurons",
+    "B": "Intranuclear glycogen inclusions with enlargement of the vestibular nuclei",
+    "C": "Central chromatolysis with peripheral displacement of the nucleus",
+    "D": "Aggregates of supernumerary Schwann cells forming onion bulbs",
+    "E": "Shrinkage of neuronal cell bodies with nuclear pyknosis and intensely eosinophilic cytoplasm"
+   },
+   "answer": "E",
+   "answer_status": "verified",
+   "explanation": "ช่วง 10 วันหลัง infarct (ในโจทย์ข้อสอบ) เลือกลักษณะ red neuron: เซลล์ตัวหด nucleus pyknosis, cytoplasm eosinophilic; ตัวเลือก C (central chromatolysis) เป็นการตอบสนองต่อ axonal injury ถูกไฮไลต์ร่วม\n⚠️ ไฟล์เฉลยไฮไลต์ C และ E · โน้ตผู้เฉลยอธิบาย red neuron (E) · C คือ axonal reaction ซึ่งเกิดตามหลังบาดเจ็บ axon",
+   "refs": [
+    {
+     "paper": "MCQ52",
+     "pages": [
+      12
+     ]
+    },
+    {
+     "paper": "MCQ52-KEY",
+     "pages": [
+      12
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "nerv_52_MCQ_038",
+   "also_accept": [
+    "C"
+   ],
+   "key_concept": "• ischemic neuron: red neuron เริ่ม 12–24 ชม.\n• 10 วัน: macrophage/liquefactive necrosis และ reactive gliosis เริ่ม\n• axonal reaction = central chromatolysis",
+   "mechanism": [
+    "ischemia ตัด ATP ของ neuron",
+    {
+     "s": "neuron ตายแบบ necrosis: cell shrinkage, pyknosis, eosinophilia",
+     "answer": true
+    },
+    "macrophage กลืน necrotic tissue ต่อมา"
+   ],
+   "option_why": {
+    "A": "Microglial nodules พบใน viral encephalitis ไม่ใช่ infarct",
+    "B": "Intranuclear glycogen inclusion ไม่เกี่ยวกับสมอง infarct",
+    "C": "✓ Central chromatolysis: axonal reaction (cell body บวม nucleus ถูกดันไปขอบ) — ไฟล์เฉลยไฮไลต์ร่วม",
+    "D": "Onion bulbs เป็น chronic demyelination/remyelination ใน peripheral nerve",
+    "E": "✓ Red neuron: shrinkage, pyknosis, eosinophilic cytoplasm — ลักษณะ neuron ที่ตายจาก ischemia ตามโน้ตผู้เฉลย"
+   }
+  },
+  {
+   "id": "NERV-52-MCQ-039",
+   "block": "NERV",
+   "cohort": 52,
+   "n": 39,
+   "type": "MCQ",
+   "stem": "A 19-year-old man is involved in a motorcycle accident and develops an acute epidural hematoma. He rapidly develops severe headaches, confusion, and vomiting. Which of the following findings is most likely to be associated with this condition?",
+   "options": {
+    "A": "Tachycardia",
+    "B": "Hypotension",
+    "C": "Hyperthermia",
+    "D": "Hypoglycemia",
+    "E": "Decreased venous pulsation of the retinal veins"
+   },
+   "answer": "E",
+   "answer_status": "verified",
+   "explanation": "epidural hematoma → ICP สูง → papilledema/ลด retinal venous pulsation (ICP เพิ่มทำให้ venous pulsations หาย)",
+   "refs": [
+    {
+     "paper": "MCQ52",
+     "pages": [
+      12
+     ]
+    },
+    {
+     "paper": "MCQ52-KEY",
+     "pages": [
+      12
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "nerv_52_MCQ_039",
+   "key_concept": "• ICP สูง: headache, vomiting, confusion, papilledema\n• Cushing: HT, bradycardia, irregular respiration\n• retinal venous pulsation หายเมื่อ ICP > ~200 mmH2O",
+   "mechanism": [
+    "epidural hematoma ขยายตัว",
+    "ICP สูงขึ้น",
+    {
+     "s": "venous pressure ใน retina ถูกกด → pulsation ลดลง",
+     "answer": true
+    },
+    "papilledema, headache, vomiting"
+   ],
+   "option_why": {
+    "A": "Cushing reflex ให้ bradycardia ไม่ใช่ tachycardia",
+    "B": "ICP สูงทำให้ BP สูง ไม่ใช่ hypotension",
+    "C": "Hyperthermia ไม่ใช่ลักษณะเฉพาะ",
+    "D": "Hypoglycemia ไม่เกี่ยวข้อง",
+    "E": "✓ ICP สูงทำให้ retinal venous pulsation หายไป (spontaneous venous pulsation ลด) และ papilledema"
+   }
+  },
+  {
+   "id": "NERV-52-MCQ-040",
+   "block": "NERV",
+   "cohort": 52,
+   "n": 40,
+   "type": "MCQ",
+   "stem": "Which of the following is mediated by a monosynaptic reflex?",
+   "options": {
+    "A": "Touching a hot stove",
+    "B": "Stepping on a sharp object",
+    "C": "Touching a needle",
+    "D": "Tapping the achilles tendon",
+    "E": "Stepping on a broken glass"
+   },
+   "answer": "D",
+   "answer_status": "verified",
+   "explanation": "monosynaptic reflex = stretch reflex (Ia afferent → alpha motor neuron โดยตรง) เช่น tendon jerk / Achilles reflex",
+   "refs": [
+    {
+     "paper": "MCQ52",
+     "pages": [
+      12
+     ]
+    },
+    {
+     "paper": "MCQ52-KEY",
+     "pages": [
+      12
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "nerv_52_MCQ_040",
+   "key_concept": "• monosynaptic = stretch (tendon jerk) reflex เพียง 1 synapse\n• withdrawal reflex = polysynaptic (interneurons)\n• afferent Ia → alpha motor neuron",
+   "mechanism": [
+    "เคาะ tendon ยืด muscle spindle",
+    "Ia afferent ส่ง signal เข้า spinal cord",
+    {
+     "s": "synapse ตรงกับ alpha motor neuron",
+     "answer": true
+    },
+    "กล้ามเนื้อหดตัว"
+   ],
+   "option_why": {
+    "A": "Touching hot stove = withdrawal reflex (polysynaptic)",
+    "B": "Sharp object = nociceptive withdrawal (polysynaptic)",
+    "C": "Needle touch = polysynaptic withdrawal",
+    "D": "✓ Tapping Achilles tendon = stretch reflex ผ่าน Ia afferent และ alpha motor neuron (monosynaptic)",
+    "E": "Broken glass = polysynaptic withdrawal/crossed extensor"
+   }
+  },
+  {
+   "id": "NERV-52-MCQ-041",
+   "block": "NERV",
+   "cohort": 52,
+   "n": 41,
+   "type": "MCQ",
+   "stem": "A long-distance runner maintains a steady pace for several hours. Which type of motor unit is primarily responsible for maintaining muscle contraction without becoming easily fatigued?",
+   "options": {
+    "A": "Fast fatigable motor unit",
+    "B": "Fast glycolytic motor unit",
+    "C": "Slow motor unit",
+    "D": "Large motor unit",
+    "E": "High-threshold motor unit"
+   },
+   "answer": "C",
+   "answer_status": "verified",
+   "explanation": "slow motor unit (type I, oxidative, fatigue-resistant) ใช้สำหรับ endurance เช่น วิ่งระยะไกล",
+   "refs": [
+    {
+     "paper": "MCQ52",
+     "pages": [
+      13
+     ]
+    },
+    {
+     "paper": "MCQ52-KEY",
+     "pages": [
+      13
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "nerv_52_MCQ_041",
+   "key_concept": "• S (type I) fatigue-resistant · FR (IIa) · FF (IIx) ล้าเร็ว\n• Size principle: ใช้ small → large\n• slow = oxidative, myoglobin สูง, capillary มาก",
+   "mechanism": [
+    "กิจกรรมแรงต่ำนาน",
+    "size principle เรียก slow motor units ก่อน",
+    {
+     "s": "slow oxidative fibers ใช้ aerobic metabolism",
+     "answer": true
+    },
+    "คงการหดตัวนานไม่ล้า"
+   ],
+   "option_why": {
+    "A": "Fast fatigable หมดแรงเร็ว",
+    "B": "Fast glycolytic = type IIb ล้าเร็ว",
+    "C": "✓ Slow motor unit (S) เล็ก oxidative ทนทาน เกณฑ์ต่ำ",
+    "D": "Large motor unit มักเป็น fast type",
+    "E": "High-threshold ถูกใช้ตอนต้องการแรงมาก ล้าเร็ว"
+   }
+  },
+  {
+   "id": "NERV-52-MCQ-042",
+   "block": "NERV",
+   "cohort": 52,
+   "n": 42,
+   "type": "MCQ",
+   "stem": "A patient is being examined for the stretch reflex. A sensory receptor detects the change in length of the skeletal muscle and sends information to the spinal cord. Which of the following structures is responsible for detecting this change?",
+   "options": {
+    "A": "Golgi tendon organ",
+    "B": "Muscle spindle fiber",
+    "C": "Alpha motor neuron",
+    "D": "Extrafusal muscle fiber",
+    "E": "Gamma motor neuron"
+   },
+   "answer": "B",
+   "answer_status": "verified",
+   "explanation": "muscle spindle ตรวจจับ 'ความยาว' ของกล้ามเนื้อและการเปลี่ยนแปลง ส่ง Ia ไป spinal cord ใน stretch reflex",
+   "refs": [
+    {
+     "paper": "MCQ52",
+     "pages": [
+      13
+     ]
+    },
+    {
+     "paper": "MCQ52-KEY",
+     "pages": [
+      13
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "nerv_52_MCQ_042",
+   "key_concept": "• spindle = length (Ia, II) · GTO = tension (Ib)\n• gamma MN → intrafusal fibers\n• alpha MN → extrafusal",
+   "mechanism": [
+    "กล้ามเนื้อถูกยืด",
+    {
+     "s": "muscle spindle (nuclear bag/chain) ตรวจจับ",
+     "answer": true
+    },
+    "Ia afferent → alpha MN",
+    "กล้ามเนื้อหดตัวกลับ"
+   ],
+   "option_why": {
+    "A": "Golgi tendon organ ตรวจจับ tension",
+    "B": "✓ Muscle spindle (intrafusal) ตรวจจับ length",
+    "C": "Alpha motor neuron เป็น efferent",
+    "D": "Extrafusal fiber ทำให้หดตัว",
+    "E": "Gamma motor neuron ปรับ sensitivity ของ spindle"
+   }
+  },
+  {
+   "id": "NERV-52-MCQ-043",
+   "block": "NERV",
+   "cohort": 52,
+   "n": 43,
+   "type": "MCQ",
+   "stem": "A person is lifting a heavy object. As the tension in the biceps muscle increases, the person suddenly relaxes the muscle and drops the object. Which sensory receptor is primarily responsible for detecting increased muscle tension?",
+   "options": {
+    "A": "Pacinian corpuscle",
+    "B": "Ruffini ending",
+    "C": "Golgi tendon organ",
+    "D": "Muscle spindle",
+    "E": "Free nerve ending"
+   },
+   "answer": "C",
+   "answer_status": "verified",
+   "explanation": "Golgi tendon organ ตรวจจับ tension ใน tendon และ inhibit alpha motor neuron (autogenic inhibition) เมื่อแรงสูงเกิน",
+   "refs": [
+    {
+     "paper": "MCQ52",
+     "pages": [
+      13
+     ]
+    },
+    {
+     "paper": "MCQ52-KEY",
+     "pages": [
+      13
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "nerv_52_MCQ_043",
+   "key_concept": "• GTO = tension (Ib afferent) → inhibitory interneuron → alpha MN\n• spindle = length (Ia)\n• inverse myotatic reflex",
+   "mechanism": [
+    "tension กล้ามเนื้อสูง",
+    {
+     "s": "GTO ถูกกระตุ้น",
+     "answer": true
+    },
+    "Ib → inhibitory interneuron",
+    "alpha MN ถูกยับยั้ง กล้ามเนื้อคลาย"
+   ],
+   "option_why": {
+    "A": "Pacinian = vibration/pressure",
+    "B": "Ruffini = skin stretch",
+    "C": "✓ Golgi tendon organ ตรวจจับ tension → Ib → inhibit muscle",
+    "D": "Muscle spindle ตรวจจับ length",
+    "E": "Free nerve ending = pain/temp"
+   }
+  },
+  {
+   "id": "NERV-52-MCQ-044",
+   "block": "NERV",
+   "cohort": 52,
+   "n": 44,
+   "type": "MCQ",
+   "stem": "A 58-year-old man suddenly develops loss of pain and temperature sensation over the right side of the face, associated with right-sided LMN facial paralysis and right limb ataxia. He has no dysphagia or hoarseness. Where is the most likely location of the lesion?",
+   "options": {
+    "A": "Right caudal pons",
+    "B": "Right rostral pons",
+    "C": "Right lateral medulla",
+    "D": "Left thalamus",
+    "E": "Right midbrain"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "CN V spinal nucleus + CN VII + cerebellar peduncle ข้างขวา ไม่มี nucleus ambiguus = AICA infarct ที่ right caudal pons (lateral pontomedullary)",
+   "refs": [
+    {
+     "paper": "MCQ52",
+     "pages": [
+      14
+     ]
+    },
+    {
+     "paper": "MCQ52-KEY",
+     "pages": [
+      14
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "nerv_52_MCQ_044",
+   "key_concept": "• AICA = lateral caudal pons: CN V, VII, VIII + MCP\n• PICA = lateral medulla (Wallenberg) มี nucleus ambiguus\n• ไม่มี dysphagia/hoarseness → ไม่ใช่ medulla",
+   "mechanism": [
+    "AICA อุดตัน",
+    "lateral caudal pons ขวาขาดเลือด",
+    {
+     "s": "spinal trigeminal + facial nerve + MCP เสีย",
+     "answer": true
+    },
+    "pain/temp หน้าขวา, facial LMN, ataxia ขวา"
+   ],
+   "option_why": {
+    "A": "✓ Right caudal pons (AICA): trigeminal, facial nucleus/nerve, vestibulocochlear, MCP/ataxia",
+    "B": "Rostral pons (SCA) ให้ ataxia + ไม่ค่อยมี facial LMN",
+    "C": "Lateral medulla (PICA) มี dysphagia/hoarseness",
+    "D": "Left thalamus ให้ sensory ซีกขวา",
+    "E": "Right midbrain ให้ CN III"
+   }
+  },
+  {
+   "id": "NERV-52-MCQ-047",
+   "block": "NERV",
+   "cohort": 52,
+   "n": 47,
+   "type": "MCQ",
+   "stem": "A patient has a lesion of the right side of the spinal cord at the L1 level. Which of the following sensory deficits is most likely to occur?",
+   "options": {
+    "A": "Contralateral loss of pain and temperature beginning approximately at L3–L4 level",
+    "B": "Ipsilateral loss of pain and temperature beginning approximately at L3–L4 level",
+    "C": "Contralateral loss of proprioception and vibration at the L1 level",
+    "D": "Bilateral loss of proprioception and vibration below the L1 level",
+    "E": "Contralateral loss of proprioception with ipsilateral loss of pain and temperature"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "รอยโรคด้านขวาที่ L1: spinothalamic ไขว้จึงเสีย pain/temp ข้างตรงข้ามเริ่มต่ำกว่าระดับ (~L3–L4); DC ข้างเดียวกันเสียที่ระดับและใต้ระดับ",
+   "refs": [
+    {
+     "paper": "MCQ52",
+     "pages": [
+      14
+     ]
+    },
+    {
+     "paper": "MCQ52-KEY",
+     "pages": [
+      14
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "nerv_52_MCQ_047",
+   "key_concept": "• Brown-Séquard: ipsilateral DC, contralateral pain/temp\n• pain/temp ขึ้นเข้า 1–2 segments ก่อนไขว้\n• ระดับ L1 ไขสันหลัง (ตำแหน่ง spinal segment ไม่เท่ากับ vertebra)",
+   "mechanism": [
+    "hemisection ข้างขวา",
+    "DC ขวาเสีย (ipsilateral)",
+    {
+     "s": "spinothalamic ที่ไขว้ข้ามมาจากข้างซ้ายเสีย",
+     "answer": true
+    },
+    "pain/temp ซ้ายหายเริ่มต่ำกว่าระดับ 1–2 segments"
+   ],
+   "option_why": {
+    "A": "✓ Spinothalamic ไขว้เข้ามาใน 1–2 segments จึงเสีย contralateral ลงมาจาก L3–L4",
+    "B": "Ipsilateral pain/temp ไม่เสียเพราะไขว้",
+    "C": "Contralateral proprioception ไม่เสีย เพราะ DC ไม่ไขว้ในไขสันหลัง",
+    "D": "Bilateral loss ไม่ใช่ hemisection",
+    "E": "Ipsilateral pain/temp ผิด"
+   }
+  },
+  {
+   "id": "NERV-52-MCQ-050",
+   "block": "NERV",
+   "cohort": 52,
+   "n": 50,
+   "type": "MCQ",
+   "stem": "A 58-year-old man with a long history of poorly controlled diabetes mellitus presents with burning pain and numbness in both feet. The symptoms are worse at night and have gradually progressed from the toes upward. Which of the following best explains the underlying pathological mechanism?",
+   "options": {
+    "A": "Central nervous system infarction",
+    "B": "Small-fiber peripheral neuropathy",
+    "C": "Skeletal muscle ischemia",
+    "D": "Neuromuscular junction dysfunction due to myasthenia gravis",
+    "E": "Inflammatory demyelination of the central nervous system"
+   },
+   "answer": "B",
+   "answer_status": "verified",
+   "explanation": "DM ระยะยาว burning pain/ชาเท้าเริ่มจากปลาย ผลกระทบ night = small-fiber peripheral neuropathy จาก microvascular/ metabolic damage",
+   "refs": [
+    {
+     "paper": "MCQ52",
+     "pages": [
+      15
+     ]
+    },
+    {
+     "paper": "MCQ52-KEY",
+     "pages": [
+      15
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "nerv_52_MCQ_050",
+   "key_concept": "• Diabetic neuropathy: distal symmetric polyneuropathy (stocking-glove)\n• small fiber: burning pain, temperature/pain loss\n• สาเหตุ: polyol pathway, AGEs, vasa nervorum ischemia",
+   "mechanism": [
+    "hyperglycemia เรื้อรัง",
+    "polyol/AGE และ microvascular ischemia",
+    {
+     "s": "small unmyelinated/thin fibers ที่ปลายเท้าถูกทำลาย",
+     "answer": true
+    },
+    "burning pain + ชา ที่เท้าเป็นเยอะตอนกลางคืน"
+   ],
+   "option_why": {
+    "A": "CNS infarct ไม่ทำให้ stocking distribution",
+    "B": "✓ Small-fiber peripheral neuropathy: burning pain/ชา distal symmetric",
+    "C": "Muscle ischemia ให้ claudication",
+    "D": "MG ไม่มี sensory",
+    "E": "CNS demyelination ให้ MS signs"
+   }
+  },
+  {
+   "id": "NERV-52-MCQ-051",
+   "block": "NERV",
+   "cohort": 52,
+   "n": 51,
+   "type": "MCQ",
+   "stem": "A 42-year-old man develops progressive weakness and numbness of both legs several days after a respiratory infection. Neurological examination reveals symmetrical weakness, decreased muscle tone, and absent deep tendon reflexes in both lower limbs. Which of the following is the most likely pathological mechanism?",
+   "options": {
+    "A": "Autoimmune demyelination of peripheral nerves",
+    "B": "Ischemic infarction of the spinal cord",
+    "C": "Degeneration of anterior horn cells",
+    "D": "Dysfunction of the neuromuscular junction",
+    "E": "Degeneration of cerebellar Purkinje cells"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "อ่อนแรงสมมาตรหลังติดเชื้อ ลด tone DTR หาย = Guillain-Barré: autoimmune demyelination ของ peripheral nerve",
+   "refs": [
+    {
+     "paper": "MCQ52",
+     "pages": [
+      15
+     ]
+    },
+    {
+     "paper": "MCQ52-KEY",
+     "pages": [
+      15
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "nerv_52_MCQ_051",
+   "key_concept": "• GBS: ascending symmetric weakness, areflexia, หลัง infection (Campylobacter)\n• CSF: albuminocytologic dissociation\n• รักษา IVIG/plasmapheresis",
+   "mechanism": [
+    "ติดเชื้อทางเดินหายใจ/ลำไส้",
+    "antibody ต่อ epitope เชื้อ cross-react กับ myelin/ganglioside",
+    {
+     "s": "peripheral nerve demyelination",
+     "answer": true
+    },
+    "อ่อนแรงสมมาตร, DTR หาย"
+   ],
+   "option_why": {
+    "A": "✓ GBS = autoimmune demyelination ของ peripheral nerve (molecular mimicry)",
+    "B": "Spinal cord infarct มี sensory level/bladder",
+    "C": "Anterior horn degeneration (ALS/polio) ไม่มี sensory",
+    "D": "NMJ ไม่มี areflexia/numbness",
+    "E": "Purkinje degeneration → ataxia"
+   }
+  },
+  {
+   "id": "NERV-52-MCQ-054",
+   "block": "NERV",
+   "cohort": 52,
+   "n": 54,
+   "type": "MCQ",
+   "stem": "A local anesthetic is administered to a patient. The drug is more effective in an alkaline environment than in an acidic environment. Which of the following best explains why alkalinity enhances the effectiveness of local anesthetics?",
+   "options": {
+    "A": "Alkalinity increases blood flow, resulting in greater drug distribution",
+    "B": "Alkalinity increases the proportion of the non-ionized form, allowing the drug to cross the neuronal membrane more easily",
+    "C": "Alkalinity increases the proportion of the ionized form, which binds more strongly to sodium channels",
+    "D": "Alkalinity prevents the local anesthetic from being metabolized by plasma esterases",
+    "E": "Alkalinity increases renal excretion of the local anesthetic"
+   },
+   "answer": "B",
+   "answer_status": "verified",
+   "explanation": "alkaline ทำให้ local anesthetic (weak base) อยู่ใน non-ionized form มากขึ้น ผ่านเยื่อ neuron ได้ดี แล้วในเซลล์เป็น ionized form จับ Na channel\n⚠️ ไฟล์เฉลยไฮไลต์ B และ C · B อธิบายการผ่านเยื่อ (non-ionized) ส่วน C คือการจับ Na channel (ionized) ทั้งสองจริงทางเภสัชวิทยา",
+   "refs": [
+    {
+     "paper": "MCQ52",
+     "pages": [
+      16
+     ]
+    },
+    {
+     "paper": "MCQ52-KEY",
+     "pages": [
+      16
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "nerv_52_MCQ_054",
+   "also_accept": [
+    "C"
+   ],
+   "key_concept": "• local anesthetic = weak base: non-ionized เข้าเซลล์ ionized ออกฤทธิ์\n• tissue เป็น acid (infection) ผลลดลง\n• pKa ใกล้ pH → non-ionized มาก = onset เร็ว",
+   "mechanism": [
+    "pH สูงขึ้น",
+    {
+     "s": "สัดส่วน non-ionized form เพิ่ม → ผ่าน axon membrane",
+     "answer": true
+    },
+    "ในเซลล์ถูก protonate เป็น ionized form",
+    "จับ voltage-gated Na channel ยับยั้ง conduction"
+   ],
+   "option_why": {
+    "A": "Alkalinity ไม่ได้เพิ่ม blood flow",
+    "B": "✓ Non-ionized form ผ่านเยื่อได้ง่าย",
+    "C": "✓ ionized form ภายในเซลล์จับ Na channel ได้แน่น (ไฟล์เฉลยไฮไลต์ร่วม)",
+    "D": "Alkalinity ไม่ได้ป้องกัน esterase",
+    "E": "Alkalinity ไม่เพิ่มการขับทางไต"
+   }
+  },
+  {
+   "id": "NERV-52-MCQ-057",
+   "block": "NERV",
+   "cohort": 52,
+   "n": 57,
+   "type": "MCQ",
+   "stem": "A 68-year-old man with a history of hypertension suddenly develops violent, involuntary, flinging movements of the right arm and leg. MRI reveals a small lacunar infarction involving the deep gray matter of the basal ganglia. Which of the following structures is most likely affected?",
+   "options": {
+    "A": "Right putamen",
+    "B": "Right subthalamic nucleus",
+    "C": "Left subthalamic nucleus",
+    "D": "Left globus pallidus internus",
+    "E": "Left substantia nigra pars compacta"
+   },
+   "answer": "C",
+   "answer_status": "verified",
+   "explanation": "hemiballismus (flinging ขวา) จาก lesion subthalamic nucleus ซีกซ้าย (contralateral)",
+   "refs": [
+    {
+     "paper": "MCQ52",
+     "pages": [
+      16
+     ]
+    },
+    {
+     "paper": "MCQ52-KEY",
+     "pages": [
+      16
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "nerv_52_MCQ_057",
+   "key_concept": "• hemiballismus = subthalamic nucleus lesion (contralateral)\n• STN เป็น excitatory ต่อ GPi (indirect pathway)\n• อาการ: violent flinging proximal limb",
+   "mechanism": [
+    "lacunar infarct ที่ STN ซ้าย",
+    "STN ไม่กระตุ้น GPi",
+    {
+     "s": "thalamus ถูก inhibit น้อยลง motor cortex hyperactive",
+     "answer": true
+    },
+    "flinging movement แขนขาข้างขวา"
+   ],
+   "option_why": {
+    "A": "Putamen ซ้าย/ขวา ทำให้ chorea/ dystonia ไม่ใช่ flinging violent โดยเฉพาะ",
+    "B": "Right STN ให้อาการด้านซ้าย",
+    "C": "✓ Left STN → right hemiballismus",
+    "D": "GPi ซ้าย ให้ dystonia/bradykinesia",
+    "E": "SNpc ให้ parkinsonism"
+   }
+  },
+  {
+   "id": "NERV-52-MCQ-058",
+   "block": "NERV",
+   "cohort": 52,
+   "n": 58,
+   "type": "MCQ",
+   "stem": "A 65-year-old man presents with a 2-year history of progressively slowed movements. On examination, he has a resting tremor of the right hand, increased muscle tone, and difficulty initiating movement. When asked to walk, he takes short, shuffling steps and has difficulty stopping once he starts walking. Which of the following is the most characteristic clinical sign of Parkinson disease?",
+   "options": {
+    "A": "Intention tremor",
+    "B": "Resting tremor",
+    "C": "Flaccid paralysis",
+    "D": "Choreiform movement",
+    "E": "Dysmetria"
+   },
+   "answer": "B",
+   "answer_status": "verified",
+   "explanation": "Parkinson: bradykinesia, rigidity, resting tremor (pill-rolling) ที่เด่นที่สุด = resting tremor",
+   "refs": [
+    {
+     "paper": "MCQ52",
+     "pages": [
+      17
+     ]
+    },
+    {
+     "paper": "MCQ52-KEY",
+     "pages": [
+      17
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "nerv_52_MCQ_058",
+   "key_concept": "• PD: TRAP — Tremor at rest, Rigidity, Akinesia/bradykinesia, Postural instability\n• shuffling gait, festination\n• สาเหตุ: SNpc dopaminergic neurons ตาย + Lewy bodies",
+   "mechanism": [
+    "SNpc dopaminergic neurons ตาย",
+    "striatum ขาด dopamine",
+    {
+     "s": "direct pathway ลด, indirect เพิ่ม → thalamus ถูก inhibit มาก",
+     "answer": true
+    },
+    "bradykinesia, rigidity, resting tremor"
+   ],
+   "option_why": {
+    "A": "Intention tremor = cerebellar",
+    "B": "✓ Resting tremor เป็นลักษณะเฉพาะของ Parkinson",
+    "C": "Flaccid paralysis เป็น LMN",
+    "D": "Chorea = Huntington/basal ganglia",
+    "E": "Dysmetria = cerebellum"
+   }
+  },
+  {
+   "id": "NERV-52-MCQ-059",
+   "block": "NERV",
+   "cohort": 52,
+   "n": 59,
+   "type": "MCQ",
+   "stem": "A 66-year-old man presents with a 2-year history of gradually progressive movement difficulty. He has a resting tremor, bradykinesia, and rigidity. His symptoms are predominantly unilateral at first and gradually progress over time. He has no history of exposure to dopamine- blocking medications, stroke, or other neurological diseases. Which of the following is the most likely diagnosis?",
+   "options": {
+    "A": "Essential tremor",
+    "B": "Huntington disease",
+    "C": "Idiopathic Parkinson disease",
+    "D": "Drug-induced parkinsonism",
+    "E": "Progressive supranuclear palsy"
+   },
+   "answer": "C",
+   "answer_status": "verified",
+   "explanation": "resting tremor + bradykinesia + rigidity เริ่มข้างเดียว ค่อยเป็นค่อยไป ไม่มียา/โรคอื่น = idiopathic Parkinson disease",
+   "refs": [
+    {
+     "paper": "MCQ52",
+     "pages": [
+      17
+     ]
+    },
+    {
+     "paper": "MCQ52-KEY",
+     "pages": [
+      17
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "nerv_52_MCQ_059",
+   "key_concept": "• PD: asymmetric onset, resting tremor, rigidity, bradykinesia\n• drug-induced มักสมมาตรและเริ่มหลังใช้ยา\n• PSP: vertical gaze palsy, falls early",
+   "mechanism": [
+    "SNpc dopaminergic neurons ตายช้า ๆ",
+    "striatal dopamine ลดลง",
+    {
+     "s": "basal ganglia circuit เสียสมดุล (indirect > direct)",
+     "answer": true
+    },
+    "tremor/bradykinesia/rigidity ข้างเดียวก่อน"
+   ],
+   "option_why": {
+    "A": "Essential tremor เป็น action/postural tremor ไม่มี rigidity/bradykinesia",
+    "B": "Huntington คือ chorea + dementia",
+    "C": "✓ Idiopathic PD: asymmetric, resting tremor, bradykinesia, rigidity",
+    "D": "Drug-induced parkinsonism ต้องมีประวัติยากลุ่ม dopamine blockers และมักสมมาตร",
+    "E": "PSP มี vertical gaze palsy และ axial rigidity พบตั้งแต่ต้น"
+   }
+  },
+  {
+   "id": "NERV-52-MCQ-060",
+   "block": "NERV",
+   "cohort": 52,
+   "n": 60,
+   "type": "MCQ",
+   "stem": "A 45-year-old man presents with progressive right lower-limb ataxia. Neurological examination reveals impaired coordination of the right leg and difficulty maintaining accurate limb position, while pain, temperature, vibration, and conscious proprioception are relatively preserved. The findings suggest impaired transmission of unconscious proprioceptive information from the lower limb to the cerebellum. Which of the following ascending pathways is most likely damaged?",
+   "options": {
+    "A": "Spinothalamic tract",
+    "B": "Spinocerebellar tract",
+    "C": "Rubrocerebellar tract",
+    "D": "Corticopontocerebellar tract",
+    "E": "Dorsal column-medial lemniscus pathway"
+   },
+   "answer": "B",
+   "answer_status": "verified",
+   "explanation": "unconscious proprioception จากขา → cerebellum ผ่าน spinocerebellar tracts (DSCT/VSCT)",
+   "refs": [
+    {
+     "paper": "MCQ52",
+     "pages": [
+      17
+     ]
+    },
+    {
+     "paper": "MCQ52-KEY",
+     "pages": [
+      17
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "nerv_52_MCQ_060",
+   "key_concept": "• DSCT (Clarke's nucleus) ipsilateral → ICP\n• VSCT ไขว้สองครั้ง\n• DC–ML = conscious proprioception, SCT = unconscious",
+   "mechanism": [
+    "muscle spindle/GTO ของขา",
+    {
+     "s": "dorsal/ventral spinocerebellar tract ส่งไป cerebellum",
+     "answer": true
+    },
+    "cerebellum ปรับ coordination",
+    "รอยโรคทำ ipsilateral limb ataxia"
+   ],
+   "option_why": {
+    "A": "Spinothalamic = pain/temperature",
+    "B": "✓ Spinocerebellar tract = unconscious proprioception ไป cerebellum",
+    "C": "Rubrocerebellar เป็น efferent/feedback จาก red nucleus",
+    "D": "Corticopontocerebellar = descending จาก cortex ไป cerebellum",
+    "E": "DC-ML = conscious proprioception/vibration (ปกติในโจทย์)"
+   }
+  },
+  {
+   "id": "NERV-52-MCQ-061",
+   "block": "NERV",
+   "cohort": 52,
+   "n": 61,
+   "type": "MCQ",
+   "stem": "A 58-year-old woman presents with resting tremor, rigidity, and bradykinesia that have progressively worsened over several years. Neurological examination shows no major sensory deficit. Which structure is most likely dysfunctional?",
+   "options": {
+    "A": "Substantia nigra pars compacta",
+    "B": "Red nucleus",
+    "C": "Superior colliculus",
+    "D": "Inferior colliculus",
+    "E": "Oculomotor nucleus"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "resting tremor + rigidity + bradykinesia = Parkinson disease จาก substantia nigra pars compacta (dopaminergic neuron) เสื่อม",
+   "refs": [
+    {
+     "paper": "MCQ52",
+     "pages": [
+      18
+     ]
+    },
+    {
+     "paper": "MCQ52-KEY",
+     "pages": [
+      18
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "nerv_52_MCQ_061",
+   "key_concept": "• PD = degeneration of dopaminergic SNpc + Lewy bodies (α-synuclein)\n• nigrostriatal pathway\n• รอยโรคตัว SNpc → striatal dopamine ↓",
+   "mechanism": [
+    "SNpc neurons ตาย",
+    "striatum ขาด dopamine",
+    {
+     "s": "direct pathway ลด / indirect pathway เพิ่ม",
+     "answer": true
+    },
+    "motor cortex ถูก inhibit → bradykinesia, rigidity, tremor"
+   ],
+   "option_why": {
+    "A": "✓ SNpc: dopamine → nigrostriatal pathway เสื่อมใน PD",
+    "B": "Red nucleus เกี่ยวกับ rubrospinal motor ไม่ใช่ PD",
+    "C": "Superior colliculus = visual reflex/saccade",
+    "D": "Inferior colliculus = auditory",
+    "E": "Oculomotor nucleus คุม eye movement"
+   }
+  },
+  {
+   "id": "NERV-52-MCQ-062",
+   "block": "NERV",
+   "cohort": 52,
+   "n": 62,
+   "type": "MCQ",
+   "stem": "A 25-year-old man is involved in a motorcycle accident and sustains a head injury. He initially loses consciousness briefly but then becomes fully conscious and appears neurologically normal. Several hours later, he suddenly develops a severe headache, vomiting, and rapidly progresses to coma. Which of the following intracranial hemorrhages is most likely responsible?",
+   "options": {
+    "A": "Subarachnoid hemorrhage",
+    "B": "Epidural hematoma",
+    "C": "Subdural hematoma",
+    "D": "Intracerebral hemorrhage",
+    "E": "Intraventricular hemorrhage"
+   },
+   "answer": "B",
+   "answer_status": "verified",
+   "explanation": "lucid interval + deteriorate เป็น coma ภายในหลายชั่วโมง = epidural hematoma จาก middle meningeal artery",
+   "refs": [
+    {
+     "paper": "MCQ52",
+     "pages": [
+      18
+     ]
+    },
+    {
+     "paper": "MCQ52-KEY",
+     "pages": [
+      18
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "nerv_52_MCQ_062",
+   "key_concept": "• Epidural: biconvex, middle meningeal artery, pterion\n• Subdural: crescent, bridging vein\n• lucid interval เป็นจุดเด่น epidural",
+   "mechanism": [
+    "กะโหลก temporal ร้าว",
+    "middle meningeal a. ฉีก",
+    {
+     "s": "เลือดสะสมเร็วระหว่างกะโหลก–dura",
+     "answer": true
+    },
+    "ICP สูง → herniation → coma"
+   ],
+   "option_why": {
+    "A": "SAH ไม่มี lucid interval + ปวดหัว thunderclap",
+    "B": "✓ Epidural hematoma: arterial bleed, lucid interval, ลุกลามเร็ว",
+    "C": "Subdural เป็น venous ช้ากว่า มักผู้สูงอายุ",
+    "D": "Intracerebral hemorrhage ไม่ใช่ลักษณะนี้",
+    "E": "Intraventricular hemorrhage มักเกิดร่วมกับ ICH/SAH"
+   }
+  },
+  {
+   "id": "NERV-52-MCQ-063",
+   "block": "NERV",
+   "cohort": 52,
+   "n": 63,
+   "type": "MCQ",
+   "stem": "A 68-year-old man with a history of hypertension suddenly develops violent, involuntary, flinging movements of the left arm and leg. MRI reveals a small lacunar infarction involving the basal ganglia. Which of the following structures is most likely affected?",
+   "options": {
+    "A": "Right putamen",
+    "B": "Left caudate nucleus",
+    "C": "Right subthalamic nucleus",
+    "D": "Left globus pallidus internus",
+    "E": "Right substantia nigra pars compacta"
+   },
+   "answer": "C",
+   "answer_status": "verified",
+   "explanation": "flinging movement แขนขาซ้าย = hemiballismus จาก right subthalamic nucleus (contralateral)",
+   "refs": [
+    {
+     "paper": "MCQ52",
+     "pages": [
+      18
+     ]
+    },
+    {
+     "paper": "MCQ52-KEY",
+     "pages": [
+      18
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "nerv_52_MCQ_063",
+   "key_concept": "• hemiballismus = STN lesion contralateral\n• lacunar infarct ใน HT/DM\n• STN excitatory ต่อ GPi",
+   "mechanism": [
+    "right STN infarct",
+    "STN ไม่กระตุ้น GPi",
+    {
+     "s": "thalamus disinhibited → motor cortex hyperactive",
+     "answer": true
+    },
+    "hemiballismus ซีกซ้าย"
+   ],
+   "option_why": {
+    "A": "Right putamen ให้ chorea/dystonia ไม่ใช่ ballism",
+    "B": "Left caudate → chorea ซีกขวา",
+    "C": "✓ Right STN → left hemiballismus",
+    "D": "Left GPi → dystonia ฝั่งขวา",
+    "E": "Right SNpc → parkinsonism ซ้าย"
+   }
+  },
+  {
+   "id": "NERV-52-MCQ-064",
+   "block": "NERV",
+   "cohort": 52,
+   "n": 64,
+   "type": "MCQ",
+   "stem": "This abnormal movement is caused by excessive exhibition of motor activity due to disruption of the basal ganglia circuitry. Which of the following structures is most likely involved?",
+   "options": {
+    "A": "Thalamus",
+    "B": "Putamen",
+    "C": "Subthalamic nucleus",
+    "D": "Substantia nigra pars compacta",
+    "E": "Caudate nucleus"
+   },
+   "answer": "C",
+   "answer_status": "verified",
+   "explanation": "hyperkinetic movement (ballism) จากการเสียวงจร basal ganglia → subthalamic nucleus lesion",
+   "refs": [
+    {
+     "paper": "MCQ52",
+     "pages": [
+      19
+     ]
+    },
+    {
+     "paper": "MCQ52-KEY",
+     "pages": [
+      19
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "nerv_52_MCQ_064",
+   "key_concept": "• Hyperkinetic: STN (ballism), caudate/putamen (chorea)\n• Hypokinetic: SNpc (Parkinson)\n• STN เป็น excitatory glutamatergic",
+   "mechanism": [
+    "STN เสีย",
+    "GPi ถูกกระตุ้นลดลง",
+    {
+     "s": "thalamus ถูก inhibit น้อยลง",
+     "answer": true
+    },
+    "motor cortex activate มาก → ballism"
+   ],
+   "option_why": {
+    "A": "Thalamus เป็น relay ถูกควบคุมโดย GPi/SNr",
+    "B": "Putamen เกี่ยวกับ chorea/Huntington (striatum)",
+    "C": "✓ Subthalamic nucleus: ballismus เมื่อเสีย",
+    "D": "SNpc → Parkinson hypokinesia",
+    "E": "Caudate → chorea (Huntington) ไม่ใช่ ballism ที่ violent"
+   }
+  },
+  {
+   "id": "NERV-52-MCQ-065",
+   "block": "NERV",
+   "cohort": 52,
+   "n": 65,
+   "type": "MCQ",
+   "stem": "Which of the following fibers is primarily involved in motor learning in the cerebellum?",
+   "options": {
+    "A": "Mossy fibers",
+    "B": "Climbing fibers",
+    "C": "Parallel fibers",
+    "D": "Corticospinal fibers",
+    "E": "Spinothalamic fibers"
+   },
+   "answer": "B",
+   "answer_status": "verified",
+   "explanation": "Climbing fibers (จาก inferior olivary nucleus) ให้ complex spike ต่อ Purkinje cell และเกี่ยวกับ motor learning",
+   "refs": [
+    {
+     "paper": "MCQ52",
+     "pages": [
+      19
+     ]
+    },
+    {
+     "paper": "MCQ52-KEY",
+     "pages": [
+      19
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "nerv_52_MCQ_065",
+   "key_concept": "• climbing fiber ← inferior olive (1:1 กับ Purkinje)\n• mossy fiber ← หลายแหล่ง → granule cell → parallel fiber\n• LTD ที่ parallel fiber synapse = motor learning",
+   "mechanism": [
+    "motor error เกิด",
+    "inferior olive ส่ง climbing fiber",
+    {
+     "s": "complex spike ลด gain ของ parallel fiber synapse (LTD)",
+     "answer": true
+    },
+    "cerebellum ปรับการเคลื่อนไหวให้แม่นยำ"
+   ],
+   "option_why": {
+    "A": "Mossy fibers ส่ง input หลักผ่าน granule cell",
+    "B": "✓ Climbing fibers: error signal ปรับ synaptic plasticity (LTD) ของ parallel fiber–Purkinje → motor learning",
+    "C": "Parallel fibers เป็น axon ของ granule cell",
+    "D": "Corticospinal ไม่ใช่ cerebellar input",
+    "E": "Spinothalamic เป็น pain/temp"
+   }
+  },
+  {
+   "id": "NERV-52-MCQ-066",
+   "block": "NERV",
+   "cohort": 52,
+   "n": 66,
+   "type": "MCQ",
+   "stem": "Which functional division of the cerebellum is primarily associated with the dentate nucleus?",
+   "options": {
+    "A": "Vestibulocerebellum",
+    "B": "Spinocerebellum",
+    "C": "Cerebrocerebellum",
+    "D": "Flocculonodular lobe",
+    "E": "Archicerebellum"
+   },
+   "answer": "C",
+   "answer_status": "verified",
+   "explanation": "dentate nucleus เป็น output ของ cerebrocerebellum (lateral hemisphere) วางแผน/เริ่มการเคลื่อนไหวและรับจาก pontine nuclei",
+   "refs": [
+    {
+     "paper": "MCQ52",
+     "pages": [
+      19
+     ]
+    },
+    {
+     "paper": "MCQ52-KEY",
+     "pages": [
+      19
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "nerv_52_MCQ_066",
+   "key_concept": "• Vestibulocerebellum–fastigial; Spinocerebellum–interposed; Cerebrocerebellum–dentate\n• dentate → red nucleus/VL thalamus\n• cerebrocerebellum = motor planning",
+   "mechanism": [
+    "cortex → pontine → cerebrocerebellum",
+    {
+     "s": "dentate nucleus เป็น output",
+     "answer": true
+    },
+    "VL thalamus → motor cortex",
+    "วางแผนการเคลื่อนไหว"
+   ],
+   "option_why": {
+    "A": "Vestibulocerebellum (flocculonodular) ส่งไป vestibular nuclei",
+    "B": "Spinocerebellum (vermis/intermediate) ส่งไป fastigial/interposed",
+    "C": "✓ Cerebrocerebellum (lateral hemisphere) → dentate → VL thalamus → motor cortex",
+    "D": "Flocculonodular lobe = vestibulocerebellum",
+    "E": "Archicerebellum = vestibulocerebellum"
+   }
+  },
+  {
+   "id": "NERV-52-MCQ-067",
+   "block": "NERV",
+   "cohort": 52,
+   "n": 67,
+   "type": "MCQ",
+   "stem": "A 47-year-old man presents with a loss of somatic sensation from the left fingertips, while sensation over the face remains intact. MRI reveals a small hemorrhagic lesion involving the thalamus. Which of the following structures is most likely affected?",
+   "options": {
+    "A": "Midbrain",
+    "B": "Pons",
+    "C": "Medulla",
+    "D": "Ventral posterolateral (VPL) nucleus of the thalamus",
+    "E": "Ventral posteromedial (VPM) nucleus of the thalamus"
+   },
+   "answer": "D",
+   "answer_status": "verified",
+   "explanation": "สูญเสีย sensation ปลายนิ้ว (upper limb) แต่ใบหน้าปกติ = รอยโรค VPL ของ thalamus (body), VPM = face",
+   "refs": [
+    {
+     "paper": "MCQ52",
+     "pages": [
+      19
+     ]
+    },
+    {
+     "paper": "MCQ52-KEY",
+     "pages": [
+      19
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "nerv_52_MCQ_067",
+   "key_concept": "• VPL = body · VPM = face\n• thalamic stroke → contralateral sensory loss\n• เลี้ยงโดย thalamogeniculate (PCA)",
+   "mechanism": [
+    "thalamic hemorrhage",
+    {
+     "s": "VPL เสีย (ที่ส่ง sensation จากแขน)",
+     "answer": true
+    },
+    "ไม่ส่งข้อมูลถึง S1",
+    "เสีย sensation ปลายนิ้วโดยหน้าปกติ"
+   ],
+   "option_why": {
+    "A": "Midbrain ไม่ใช่ relay ของ somatic sensation ที่เฉพาะแขน",
+    "B": "Pons ก็ไม่ใช่",
+    "C": "Medulla ไม่ใช่ตำแหน่งของ lesion จากโจทย์ (thalamic hemorrhage)",
+    "D": "✓ VPL รับ body sensation จาก ML/spinothalamic → แขนขา",
+    "E": "VPM รับ sensation หน้า (trigeminal)"
+   }
+  },
+  {
+   "id": "NERV-52-MCQ-068",
+   "block": "NERV",
+   "cohort": 52,
+   "n": 68,
+   "type": "MCQ",
+   "stem": "A 60-year-old man is diagnosed with early Parkinson disease. An anticholinergic drug is considered as monotherapy because his symptoms are relatively mild. Which of the following symptoms is most effectively treated by anticholinergic therapy?",
+   "options": {
+    "A": "Tremor",
+    "B": "Rigidity",
+    "C": "Depression",
+    "D": "Dyskinesia",
+    "E": "Postural instability"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "Anticholinergic (trihexyphenidyl, benztropine) ลด tremor ได้ดีที่สุด ผ่านการลด ACh ที่ striatum",
+   "refs": [
+    {
+     "paper": "MCQ52",
+     "pages": [
+      20
+     ]
+    },
+    {
+     "paper": "MCQ52-KEY",
+     "pages": [
+      20
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "nerv_52_MCQ_068",
+   "key_concept": "• PD: anticholinergic ช่วย tremor โดยเฉพาะผู้ป่วยอายุน้อย\n• ผลข้างเคียง: dry mouth, urinary retention, confusion\n• Levodopa ช่วย bradykinesia/rigidity",
+   "mechanism": [
+    "dopamine ลด → ACh interneuron overactive",
+    {
+     "s": "anticholinergic บล็อก muscarinic",
+     "answer": true
+    },
+    "สมดุล DA–ACh",
+    "tremor ลดลง"
+   ],
+   "option_why": {
+    "A": "✓ Tremor ตอบสนอง anticholinergic ดีที่สุด",
+    "B": "Rigidity ตอบสนองบ้างแต่น้อยกว่า dopaminergic",
+    "C": "Depression ไม่ใช่เป้าหมาย",
+    "D": "Dyskinesia เป็นผลข้างเคียงของ levodopa",
+    "E": "Postural instability ไม่ตอบสนองยา"
+   }
+  },
+  {
+   "id": "NERV-52-MCQ-069",
+   "block": "NERV",
+   "cohort": 52,
+   "n": 69,
+   "type": "MCQ",
+   "stem": "67-year-old man develops a gradually progressive resting tremor, bradykinesia, rigidity, and postural instability over several years. He has no history of exposure to antipsychotic drugs, toxins, or significant head trauma. Neurological examination shows asymmetric motor symptoms, with the right side more severely affected. What is the most likely diagnosis?",
+   "options": {
+    "A": "Drug-induced parkinsonism",
+    "B": "Vascular parkinsonism",
+    "C": "Progressive supranuclear palsy",
+    "D": "Idiopathic Parkinson disease",
+    "E": "Huntington disease"
+   },
+   "answer": "D",
+   "answer_status": "verified",
+   "explanation": "resting tremor + bradykinesia + rigidity + postural instability แบบ asymmetric ไม่มีประวัติยา = idiopathic PD",
+   "refs": [
+    {
+     "paper": "MCQ52",
+     "pages": [
+      20
+     ]
+    },
+    {
+     "paper": "MCQ52-KEY",
+     "pages": [
+      20
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "nerv_52_MCQ_069",
+   "key_concept": "• PD: asymmetric, resting tremor, response ต่อ levodopa\n• secondary parkinsonism: ยา, toxin, trauma, vascular\n• atypical (PSP, MSA) มีลักษณะเพิ่ม",
+   "mechanism": [
+    "SNpc DA neuron เสื่อม",
+    {
+     "s": "nigrostriatal DA ↓",
+     "answer": true
+    },
+    "motor circuit เสียสมดุล",
+    "อาการข้างเดียวก่อนแล้วลามสองข้าง"
+   ],
+   "option_why": {
+    "A": "Drug-induced ต้องมี dopamine blocker และมักสมมาตร",
+    "B": "Vascular parkinsonism lower-body, step-wise",
+    "C": "PSP มี vertical gaze palsy/falls early",
+    "D": "✓ Idiopathic PD เข้ากันทุกลักษณะ",
+    "E": "Huntington มี chorea"
+   }
+  },
+  {
+   "id": "NERV-52-MCQ-070",
+   "block": "NERV",
+   "cohort": 52,
+   "n": 70,
+   "type": "MCQ",
+   "stem": "A patient with Parkinson disease is treated with levodopa in combination with carbidopa and entacapone to improve the therapeutic effect of levodopa. Which of the following correctly describes the mechanism of these two drugs?",
+   "options": {
+    "A": "Carbidopa inhibits COMT, while entacapone inhibits MAO-B",
+    "B": "Carbidopa inhibits DOPA decarboxylase, while entacapone inhibits COMT",
+    "C": "Carbidopa inhibits MAO-B, while entacapone inhibits DOPA decarboxylase",
+    "D": "Carbidopa inhibits dopamine β-hydroxylase, while entacapone inhibits MAO-B",
+    "E": "Carbidopa inhibits COMT, while entacapone inhibits DOPA decarboxylase"
+   },
+   "answer": "B",
+   "answer_status": "verified",
+   "explanation": "Carbidopa ยับยั้ง peripheral DOPA decarboxylase; entacapone ยับยั้ง COMT → ยืดครึ่งชีวิตของ levodopa",
+   "refs": [
+    {
+     "paper": "MCQ52",
+     "pages": [
+      20
+     ]
+    },
+    {
+     "paper": "MCQ52-KEY",
+     "pages": [
+      20
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "nerv_52_MCQ_070",
+   "key_concept": "• levodopa + carbidopa: ลด peripheral conversion → ลด nausea, เพิ่ม CNS levodopa\n• entacapone/tolcapone = COMT inhibitor ยืด effect\n• MAO-B inhibitor = selegiline/rasagiline",
+   "mechanism": [
+    "levodopa ถูก decarboxylate ที่ periphery",
+    {
+     "s": "carbidopa ยับยั้ง DOPA decarboxylase นอกสมอง",
+     "answer": true
+    },
+    "entacapone ยับยั้ง COMT ลด 3-O-methyldopa",
+    "levodopa เข้าสมองมากขึ้น เพิ่มเป็น dopamine"
+   ],
+   "option_why": {
+    "A": "Carbidopa ไม่ยับยั้ง COMT และ entacapone ไม่ยับยั้ง MAO-B",
+    "B": "✓ Carbidopa = DOPA decarboxylase inhibitor, entacapone = COMT inhibitor",
+    "C": "Carbidopa ไม่ยับยั้ง MAO-B",
+    "D": "Carbidopa ไม่ใช่ dopamine β-hydroxylase inhibitor",
+    "E": "Carbidopa ไม่ยับยั้ง COMT"
+   }
+  },
+  {
+   "id": "NERV-52-MCQ-071",
+   "block": "NERV",
+   "cohort": 52,
+   "n": 71,
+   "type": "MCQ",
+   "stem": "Which of the following is the most likely cause of his secondary parkinsonism?",
+   "options": {
+    "A": "Levodopa",
+    "B": "Dopamine agonists",
+    "C": "Antipsychotic drugs",
+    "D": "Acetylcholinesterase inhibitors",
+    "E": "SSRIs"
+   },
+   "answer": "C",
+   "answer_status": "verified",
+   "explanation": "secondary parkinsonism ที่พบบ่อยจากยา antipsychotics (D2 blockers)",
+   "refs": [
+    {
+     "paper": "MCQ52",
+     "pages": [
+      21
+     ]
+    },
+    {
+     "paper": "MCQ52-KEY",
+     "pages": [
+      21
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "nerv_52_MCQ_071",
+   "key_concept": "• drug-induced parkinsonism: antipsychotics (haloperidol), metoclopramide\n• มักสมมาตรและหายหลังหยุดยา\n• รักษา: หยุดยา, anticholinergic",
+   "mechanism": [
+    "ยาบล็อก D2 receptor ใน striatum",
+    {
+     "s": "indirect pathway ทำงานมากเกิน",
+     "answer": true
+    },
+    "thalamus ถูก inhibit",
+    "parkinsonism"
+   ],
+   "option_why": {
+    "A": "Levodopa เป็นยารักษา PD",
+    "B": "Dopamine agonist ใช้รักษา",
+    "C": "✓ Antipsychotics (D2 antagonist) → drug-induced parkinsonism",
+    "D": "AChE inhibitors ไม่ทำให้ parkinsonism",
+    "E": "SSRIs พบน้อยมาก"
+   }
+  },
+  {
+   "id": "NERV-52-MCQ-072",
+   "block": "NERV",
+   "cohort": 52,
+   "n": 72,
+   "type": "MCQ",
+   "stem": "A 62-year-old man is diagnosed with Parkinson disease. His most prominent and troublesome symptom is a resting tremor, while rigidity and bradykinesia are relatively mild. Which of the following drug classes is most appropriate for controlling his predominant symptom?",
+   "options": {
+    "A": "β-Adrenergic blocker",
+    "B": "Anticholinergic drug",
+    "C": "Dopamine precursor",
+    "D": "Catechol-O-methyltransferase inhibitor",
+    "E": "Monoamine oxidase-B inhibitor"
+   },
+   "answer": "B",
+   "answer_status": "verified",
+   "explanation": "tremor เด่น: anticholinergic เหมาะกว่ายาอื่นในการลด tremor ใน PD",
+   "refs": [
+    {
+     "paper": "MCQ52",
+     "pages": [
+      21
+     ]
+    },
+    {
+     "paper": "MCQ52-KEY",
+     "pages": [
+      21
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "nerv_52_MCQ_072",
+   "key_concept": "• PD tremor: anticholinergic (trihexyphenidyl), amantadine\n• levodopa effective ต่อ bradykinesia/rigidity\n• ระวังผลข้างเคียงในผู้สูงอายุ (confusion)",
+   "mechanism": [
+    "ACh excess ใน striatum",
+    {
+     "s": "anticholinergic บล็อก muscarinic receptor",
+     "answer": true
+    },
+    "สมดุล DA/ACh",
+    "tremor ลดลง"
+   ],
+   "option_why": {
+    "A": "β-blocker ใช้กับ essential tremor",
+    "B": "✓ Anticholinergic: ลด tremor ใน PD",
+    "C": "Dopamine precursor (levodopa) ช่วย bradykinesia/rigidity มากกว่า",
+    "D": "COMT inhibitor เป็น adjunct ไม่ใช่ monotherapy",
+    "E": "MAO-B inhibitor ช่วยทั่วไปเล็กน้อย"
+   }
+  },
+  {
+   "id": "NERV-52-MCQ-073",
+   "block": "NERV",
+   "cohort": 52,
+   "n": 73,
+   "type": "MCQ",
+   "stem": "A 24-year-old man is brought to the emergency department after a motorcycle accident. A CT scan of the head reveals a biconvex (lens-shaped) hyperdense hematoma between the skull and the dura mater, consistent with an epidural hematoma. Which of the following blood vessels is most likely injured?",
+   "options": {
+    "A": "Middle meningeal artery",
+    "B": "Bridging veins",
+    "C": "Superior sagittal sinus",
+    "D": "Anterior cerebral artery",
+    "E": "Superficial middle cerebral vein"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "epidural hematoma จาก middle meningeal artery (ผ่าน pterion ใน foramen spinosum)",
+   "refs": [
+    {
+     "paper": "MCQ52",
+     "pages": [
+      21
+     ]
+    },
+    {
+     "paper": "MCQ52-KEY",
+     "pages": [
+      21
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "nerv_52_MCQ_073",
+   "key_concept": "• Epidural = middle meningeal artery · Subdural = bridging vein\n• pterion = จุดบางของกะโหลก\n• lucid interval",
+   "mechanism": [
+    "trauma ที่ temporal",
+    "MMA ฉีก",
+    {
+     "s": "เลือดแรงดันสูงแยก dura ออกจากกะโหลก",
+     "answer": true
+    },
+    "biconvex hematoma"
+   ],
+   "option_why": {
+    "A": "✓ Middle meningeal artery ฉีก → biconvex epidural hematoma",
+    "B": "Bridging veins → subdural",
+    "C": "Superior sagittal sinus ไม่ใช่ typical",
+    "D": "ACA ทำ SAH/ICH",
+    "E": "Superficial middle cerebral vein ไม่ใช่"
+   }
+  },
+  {
+   "id": "NERV-52-MCQ-074",
+   "block": "NERV",
+   "cohort": 52,
+   "n": 74,
+   "type": "MCQ",
+   "stem": "A 52-year-old man with a long history of chronic alcohol use is brought to the hospital because of acute confusion. On neurological examination, he has ataxia with an unsteady gait and bilateral ophthalmoplegia. His symptoms have developed over the past few days, and his nutritional intake has been poor. Which of the following vitamin deficiencies is most likely responsible for this condition?",
+   "options": {
+    "A": "Vitamin B6 (Pyridoxine)",
+    "B": "Vitamin B12 (Cobalamin)",
+    "C": "Vitamin B1 (Thiamine)",
+    "D": "Vitamin C (Ascorbic acid)",
+    "E": "Vitamin E (Tocopherol)"
+   },
+   "answer": "C",
+   "answer_status": "verified",
+   "explanation": "alcoholic + ataxia + ophthalmoplegia + confusion = Wernicke encephalopathy จากขาด thiamine (B1)",
+   "refs": [
+    {
+     "paper": "MCQ52",
+     "pages": [
+      22
+     ]
+    },
+    {
+     "paper": "MCQ52-KEY",
+     "pages": [
+      22
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "nerv_52_MCQ_074",
+   "key_concept": "• Wernicke: ataxia, ophthalmoplegia, confusion → Korsakoff ถ้าไม่รักษา\n• ให้ thiamine ก่อน glucose\n• พยาธิ: mammillary body, periaqueductal gray",
+   "mechanism": [
+    "alcoholism ลดการดูดซึม/เก็บ thiamine",
+    "TPP (cofactor ของ pyruvate DH, α-KGDH, transketolase) ลด",
+    {
+     "s": "เซลล์ประสาทขาดพลังงาน → mammillary body/thalamus เสีย",
+     "answer": true
+    },
+    "Wernicke encephalopathy"
+   ],
+   "option_why": {
+    "A": "B6 deficiency ทำ neuropathy/seizure",
+    "B": "B12 ทำ subacute combined degeneration",
+    "C": "✓ Thiamine (B1) deficiency → Wernicke triad (confusion, ataxia, ophthalmoplegia)",
+    "D": "Vitamin C → scurvy",
+    "E": "Vitamin E → ataxia/neuropathy แต่ไม่ใช่ acute confusion + ophthalmoplegia"
+   }
+  },
+  {
+   "id": "NERV-52-MCQ-075",
+   "block": "NERV",
+   "cohort": 52,
+   "n": 75,
+   "type": "MCQ",
+   "stem": "An immunocompromised patient develops chronic meningitis with increased CSF protein. India ink staining of the CSF shows encapsulated yeast cells. Which organism is the most likely causative agent?",
+   "options": {
+    "A": "Candida albicans",
+    "B": "Aspergillus fumigatus",
+    "C": "Mucor",
+    "D": "Cryptococcus neoformans",
+    "E": "Coccidioides immitis"
+   },
+   "answer": "D",
+   "answer_status": "verified",
+   "explanation": "India ink พบ encapsulated yeast + chronic meningitis ในผู้ป่วย immunocompromised = Cryptococcus neoformans",
+   "refs": [
+    {
+     "paper": "MCQ52",
+     "pages": [
+      22
+     ]
+    },
+    {
+     "paper": "MCQ52-KEY",
+     "pages": [
+      22
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "nerv_52_MCQ_075",
+   "key_concept": "• Cryptococcus: capsule (polysaccharide), India ink / mucicarmine\n• CNS: meningitis ใน AIDS\n• antigen test (CrAg) ไวมาก",
+   "mechanism": [
+    "สูดหายใจ spores",
+    "ปอด → hematogenous spread",
+    {
+     "s": "capsule ต้านการ phagocytosis",
+     "answer": true
+    },
+    "chronic meningitis"
+   ],
+   "option_why": {
+    "A": "Candida เป็น pseudohyphae/yeast ไม่มี capsule",
+    "B": "Aspergillus เป็น septate hyphae",
+    "C": "Mucor เป็น nonseptate hyphae",
+    "D": "✓ Cryptococcus: encapsulated yeast, India ink positive",
+    "E": "Coccidioides เป็น spherule"
+   }
+  },
+  {
+   "id": "NERV-52-MCQ-076",
+   "block": "NERV",
+   "cohort": 52,
+   "n": 76,
+   "type": "MCQ",
+   "stem": "A 30-year-old man presents with fever, headache, confusion, and weight loss for 3 weeks. CSF examination shows lymphocytic pleocytosis, high protein, and low glucose. Which of the following is the most appropriate test to confirm the diagnosis?",
+   "options": {
+    "A": "India ink staining",
+    "B": "Cryptococcal antigen test",
+    "C": "PCR for Mycobacterium tuberculosis",
+    "D": "VDRL test",
+    "E": "Gram staining"
+   },
+   "answer": "C",
+   "answer_status": "verified",
+   "explanation": "fever+weight loss, CSF lymphocytic + high protein + LOW glucose (subacute) = TB meningitis → PCR/AFB ยืนยัน",
+   "refs": [
+    {
+     "paper": "MCQ52",
+     "pages": [
+      22
+     ]
+    },
+    {
+     "paper": "MCQ52-KEY",
+     "pages": [
+      22
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "nerv_52_MCQ_076",
+   "key_concept": "• TB meningitis: lymphocytes ↑, protein ↑↑, glucose ↓ (subacute)\n• basal meningitis → cranial nerve palsy\n• AFB smear ไว้ต่ำ PCR/culture ดีกว่า",
+   "mechanism": [
+    "M. tuberculosis ถึง meninges",
+    "granuloma ที่ basal meninges",
+    {
+     "s": "exudate ที่ basal cisterns → CSF ผิดปกติ",
+     "answer": true
+    },
+    "fever, headache, confusion, weight loss"
+   ],
+   "option_why": {
+    "A": "India ink สำหรับ Cryptococcus",
+    "B": "CrAg เพื่อ Cryptococcus",
+    "C": "✓ PCR for M. tuberculosis ยืนยัน TB meningitis ในผู้ป่วยที่เข้าได้",
+    "D": "VDRL สำหรับ neurosyphilis",
+    "E": "Gram stain สำหรับ bacterial meningitis"
+   }
+  },
+  {
+   "id": "NERV-52-MCQ-077",
+   "block": "NERV",
+   "cohort": 52,
+   "n": 77,
+   "type": "MCQ",
+   "stem": "A patient with AIDS presents with multiple ring-enhancing abscesses located near the gray- white junction of the cerebral cortex. Which organism is the most likely causative agent?",
+   "options": {
+    "A": "Cryptococcus neoformans",
+    "B": "JC virus",
+    "C": "Toxoplasma gondii",
+    "D": "Listeria monocytogenes",
+    "E": "Mycobacterium tuberculosis"
+   },
+   "answer": "C",
+   "answer_status": "verified",
+   "explanation": "AIDS + multiple ring-enhancing lesions ที่ gray–white junction = Toxoplasma gondii (reactivation)",
+   "refs": [
+    {
+     "paper": "MCQ52",
+     "pages": [
+      23
+     ]
+    },
+    {
+     "paper": "MCQ52-KEY",
+     "pages": [
+      23
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "nerv_52_MCQ_077",
+   "key_concept": "• AIDS CD4 <100: toxoplasmosis (multiple ring-enhancing), PCNSL (single), PML\n• treat: pyrimethamine + sulfadiazine\n• แมว oocysts",
+   "mechanism": [
+    "CD4 ต่ำ",
+    "bradyzoite cyst reactivate",
+    {
+     "s": "tachyzoite ทำลายเนื้อสมองเป็น abscess",
+     "answer": true
+    },
+    "ring-enhancing lesions"
+   ],
+   "option_why": {
+    "A": "Cryptococcus ทำ meningitis",
+    "B": "JC virus = PML (demyelinating ไม่ ring-enhancing)",
+    "C": "✓ Toxoplasma: multiple ring-enhancing lesions ใน AIDS",
+    "D": "Listeria ทำ meningitis/rhombencephalitis",
+    "E": "TB ทำ tuberculoma/meningitis"
+   }
+  },
+  {
+   "id": "NERV-52-MCQ-078",
+   "block": "NERV",
+   "cohort": 52,
+   "n": 78,
+   "type": "MCQ",
+   "stem": "A 22-year-old man presents with a 2-day history of fever, headache, photophobia, and neck stiffness. Lumbar puncture reveals a CSF protein level of 60 mg/dL, glucose of 68 mg/dL with a concurrent blood glucose of 100 mg/dL, and a WBC count of 180 cells/mm³ with 95% mononuclear cells. Gram stain is negative. Which of the following is the most likely diagnosis?",
+   "options": {
+    "A": "Brain abscess",
+    "B": "Viral meningitis",
+    "C": "Tuberculous meningitis",
+    "D": "Cryptococcal meningitis",
+    "E": "Acute bacterial meningitis"
+   },
+   "answer": "B",
+   "answer_status": "verified",
+   "explanation": "CSF mononuclear ↑ เล็กน้อย protein ปกติ-สูงเล็กน้อย glucose ปกติ Gram negative = viral (aseptic) meningitis",
+   "refs": [
+    {
+     "paper": "MCQ52",
+     "pages": [
+      23
+     ]
+    },
+    {
+     "paper": "MCQ52-KEY",
+     "pages": [
+      23
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "nerv_52_MCQ_078",
+   "key_concept": "• Viral: lymphocytes 10–1000, glucose ปกติ\n• Bacterial: neutrophils, glucose ↓, protein ↑↑\n• TB/Fungal: lymphocytes + glucose ↓",
+   "mechanism": [
+    "ไวรัส (enterovirus) เข้า meninges",
+    {
+     "s": "เกิด lymphocytic inflammation",
+     "answer": true
+    },
+    "CSF glucose ปกติ",
+    "fever, headache, photophobia, neck stiffness"
+   ],
+   "option_why": {
+    "A": "Brain abscess มักมี focal sign",
+    "B": "✓ Viral meningitis: lymphocytic, glucose ปกติ, protein ปกติ–สูงเล็กน้อย",
+    "C": "TB meningitis glucose ต่ำ",
+    "D": "Cryptococcal glucose ต่ำ/protein สูง",
+    "E": "Bacterial meningitis neutrophil สูง, glucose ต่ำ"
+   }
+  },
+  {
+   "id": "NERV-52-MCQ-079",
+   "block": "NERV",
+   "cohort": 52,
+   "n": 79,
+   "type": "MCQ",
+   "stem": "A 24-year-old man presents with a 3-day history of fever, headache, photophobia, and neck stiffness. He is alert and oriented, with no focal neurological deficits or seizures. Lumbar puncture reveals a CSF WBC count of 220 cells/mm³, with 90% lymphocytes, a mildly elevated protein level of 70 mg/dL, and a CSF glucose level of 65 mg/dL with a simultaneous blood glucose level of 100 mg/dL. Gram staining shows no organisms. Which of the following is the most likely diagnosis?",
+   "options": {
+    "A": "Acute bacterial meningitis",
+    "B": "Viral meningitis",
+    "C": "Tuberculous meningitis",
+    "D": "Cryptococcal meningitis",
+    "E": "Brain abscess"
+   },
+   "answer": "B",
+   "answer_status": "verified",
+   "explanation": "CSF lymphocytes เด่น glucose ปกติ protein สูงเล็กน้อย Gram negative = viral meningitis",
+   "refs": [
+    {
+     "paper": "MCQ52",
+     "pages": [
+      23
+     ]
+    },
+    {
+     "paper": "MCQ52-KEY",
+     "pages": [
+      23
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "nerv_52_MCQ_079",
+   "key_concept": "• Viral meningitis: เกิดเฉียบพลัน อาการไม่รุนแรง\n• CSF glucose ratio ปกติ (>0.6)\n• enterovirus พบบ่อยที่สุด",
+   "mechanism": [
+    "enterovirus เข้า CNS",
+    "meninges อักเสบ",
+    {
+     "s": "lymphocyte เด่น glucose ปกติ",
+     "answer": true
+    },
+    "fever + meningeal signs"
+   ],
+   "option_why": {
+    "A": "Bacterial meningitis เป็น neutrophil, glucose ต่ำ",
+    "B": "✓ Viral meningitis: lymphocytic pleocytosis, glucose ปกติ",
+    "C": "TB glucose ต่ำ ระยะเป็นสัปดาห์",
+    "D": "Cryptococcal ใน immunocompromised",
+    "E": "Brain abscess มี focal deficit/mass"
+   }
+  },
+  {
+   "id": "NERV-52-MCQ-081",
+   "block": "NERV",
+   "cohort": 52,
+   "n": 81,
+   "type": "MCQ",
+   "stem": "A 25-year-old man is involved in a high-speed motor vehicle accident. He experiences rapid rotational movement of the head with marked angular acceleration and loses consciousness immediately. Despite no major mass lesion on initial CT, he remains in a prolonged coma. Microscopic examination shows axonal swelling with increased microglial activity and subsequent axonal degeneration. What is the most likely diagnosis?",
+   "options": {
+    "A": "Epidural hematoma",
+    "B": "Subdural hematoma",
+    "C": "Cerebral contusion",
+    "D": "Diffuse axonal injury",
+    "E": "Subarachnoid hemorrhage"
+   },
+   "answer": "D",
+   "answer_status": "verified",
+   "explanation": "หัวหมุนเร็ว (rotational acceleration) หมดสติทันที CT ปกติ axonal swelling + microglia = diffuse axonal injury",
+   "refs": [
+    {
+     "paper": "MCQ52",
+     "pages": [
+      24
+     ]
+    },
+    {
+     "paper": "MCQ52-KEY",
+     "pages": [
+      24
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "nerv_52_MCQ_081",
+   "key_concept": "• DAI = shear stress ที่ gray-white junction/corpus callosum/brainstem\n• CT มักปกติ MRI พบ microhemorrhage\n• axonal swelling (axonal spheroids) + microglia",
+   "mechanism": [
+    "rotational/angular acceleration",
+    "axon ถูกยืดและฉีก",
+    {
+     "s": "axonal transport ขัดข้อง เกิด axonal swelling",
+     "answer": true
+    },
+    "prolonged coma"
+   ],
+   "option_why": {
+    "A": "Epidural ต้องมีก้อนเลือดบน CT",
+    "B": "Subdural ก็มีก้อนเลือด",
+    "C": "Cerebral contusion มี focal hemorrhage",
+    "D": "✓ Diffuse axonal injury: shear injury ที่ white matter, axonal swelling",
+    "E": "SAH มีเลือดใน subarachnoid space"
+   }
+  },
+  {
+   "id": "NERV-52-MCQ-082",
+   "block": "NERV",
+   "cohort": 52,
+   "n": 82,
+   "type": "MCQ",
+   "stem": "Which type of gliomas has the worst prognosis?",
+   "options": {
+    "A": "Astrocytoma wild-type IDH",
+    "B": "Astrocytoma IDH mutation",
+    "C": "Glioblastoma wild-type IDH",
+    "D": "Glioblastoma IDH mutation",
+    "E": "–"
+   },
+   "answer": "C",
+   "answer_status": "verified",
+   "explanation": "Glioblastoma IDH-wildtype (grade 4) พยากรณ์ไม่ดีที่สุดในกลุ่ม glioma",
+   "refs": [
+    {
+     "paper": "MCQ52",
+     "pages": [
+      24
+     ]
+    },
+    {
+     "paper": "MCQ52-KEY",
+     "pages": [
+      24
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "nerv_52_MCQ_082",
+   "key_concept": "• IDH-wildtype GBM (grade 4): necrosis, microvascular proliferation, EGFR amplification\n• IDH mutation = prognosis ดีกว่า\n• MGMT methylation ตอบ temozolomide ดี",
+   "mechanism": [
+    "glioma เกิดจาก astrocytic neoplasm",
+    {
+     "s": "IDH-wildtype + necrosis/microvascular proliferation = GBM",
+     "answer": true
+    },
+    "โตเร็ว ดื้อต่อรักษา",
+    "survival สั้นที่สุด"
+   ],
+   "option_why": {
+    "A": "Astrocytoma IDH-wildtype พยากรณ์แย่แต่ GBM แย่กว่า",
+    "B": "Astrocytoma IDH-mutant ดีกว่า wildtype",
+    "C": "✓ GBM IDH-wildtype พยากรณ์แย่ที่สุด median ~15 เดือน",
+    "D": "(IDH-mutant glioblastoma ดีกว่า wildtype)",
+    "E": "(ไม่มีตัวเลือกข้อความ E ในโจทย์ที่จำมา)"
+   }
+  },
+  {
+   "id": "NERV-52-MCQ-083",
+   "block": "NERV",
+   "cohort": 52,
+   "n": 83,
+   "type": "MCQ",
+   "stem": "Histopathology shows small, round to oval cells in an abundant, densely fibrillar background, with ependymal rosettes and perivascular pseudorosettes. What is the most likely diagnosis?",
+   "options": {
+    "A": "Astrocytoma",
+    "B": "Medulloblastoma",
+    "C": "Oligodendroglioma",
+    "D": "Ependymoma",
+    "E": "Meningioma"
+   },
+   "answer": "D",
+   "answer_status": "verified",
+   "explanation": "small round cells + ependymal rosettes + perivascular pseudorosettes = ependymoma",
+   "refs": [
+    {
+     "paper": "MCQ52",
+     "pages": [
+      24
+     ]
+    },
+    {
+     "paper": "MCQ52-KEY",
+     "pages": [
+      24
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "nerv_52_MCQ_083",
+   "key_concept": "• Ependymoma: 4th ventricle (child), spinal cord (adult)\n• true ependymal rosette + perivascular pseudorosette\n• GFAP+, EMA dot-like",
+   "mechanism": [
+    "ependymal cell เกิดเนื้องอก",
+    {
+     "s": "tumor cells จัดแบบ rosette/pseudorosette รอบหลอดเลือด",
+     "answer": true
+    },
+    "อุดกั้น CSF → hydrocephalus"
+   ],
+   "option_why": {
+    "A": "Astrocytoma มี fibrillary astrocytes/ Rosenthal ไม่ใช่ rosette",
+    "B": "Medulloblastoma มี Homer-Wright rosette",
+    "C": "Oligodendroglioma 'fried egg' + chicken-wire capillaries",
+    "D": "✓ Ependymoma: perivascular pseudorosette + true ependymal rosette",
+    "E": "Meningioma มี whorls/psammoma bodies"
+   }
+  },
+  {
+   "id": "NERV-52-MCQ-084",
+   "block": "NERV",
+   "cohort": 52,
+   "n": 84,
+   "type": "MCQ",
+   "stem": "Histopathology shows a biphasic appearance with compact fibrillar portions containing elongated bipolar cells and Rosenthal fibers, and loose microcystic portions with cobweb-like processes and eosinophilic granular bodies. Which immunohistochemical staining indicates the cell origin of this tumor?",
+   "options": {
+    "A": "Synaptophysin",
+    "B": "OLIG2",
+    "C": "Glial fibrillary acidic protein (GFAP)",
+    "D": "Chromogranin A",
+    "E": "EMA"
+   },
+   "answer": "C",
+   "answer_status": "verified",
+   "explanation": "biphasic compact + microcystic, Rosenthal fibers, eosinophilic granular bodies = pilocytic astrocytoma → GFAP",
+   "refs": [
+    {
+     "paper": "MCQ52",
+     "pages": [
+      25
+     ]
+    },
+    {
+     "paper": "MCQ52-KEY",
+     "pages": [
+      25
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "nerv_52_MCQ_084",
+   "key_concept": "• Pilocytic astrocytoma: Rosenthal fibers, EGBs, biphasic\n• astrocyte marker = GFAP\n• BRAF alteration/KIAA1549–BRAF",
+   "mechanism": [
+    "astrocytic tumor",
+    {
+     "s": "GFAP+ เนื่องจากต้นกำเนิดเป็น astrocyte",
+     "answer": true
+    },
+    "cystic + solid cerebellar mass ในเด็ก"
+   ],
+   "option_why": {
+    "A": "Synaptophysin = neuronal/neuroendocrine marker",
+    "B": "OLIG2 เป็น oligodendroglial lineage ใช้ทั่วไปใน glioma",
+    "C": "✓ GFAP เป็น astrocyte marker แสดงต้นกำเนิดของ pilocytic astrocytoma",
+    "D": "Chromogranin A เป็น neuroendocrine marker",
+    "E": "EMA เป็น meningioma/ependymoma"
+   }
+  },
+  {
+   "id": "NERV-52-MCQ-085",
+   "block": "NERV",
+   "cohort": 52,
+   "n": 85,
+   "type": "MCQ",
+   "stem": "A newborn presents with severe developmental delay and seizures. Brain imaging shows abnormal development of the cerebral cortex with abnormal distribution of neurons in the telencephalon. Which of the following developmental processes is most likely impaired in this patient?",
+   "options": {
+    "A": "Proliferation of neural progenitor cells",
+    "B": "Differentiation of neural progenitor cells",
+    "C": "Radial migration of neurons",
+    "D": "Synaptic pruning",
+    "E": "Myelination of axons"
+   },
+   "answer": "C",
+   "answer_status": "verified",
+   "explanation": "abnormal cortical development/abnormal distribution ของ neurons (เช่น lissencephaly) = radial migration ผิดปกติ",
+   "refs": [
+    {
+     "paper": "MCQ52",
+     "pages": [
+      25
+     ]
+    },
+    {
+     "paper": "MCQ52-KEY",
+     "pages": [
+      25
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "nerv_52_MCQ_085",
+   "key_concept": "• neuron migrate ตาม radial glia ออกจาก ventricular zone (inside-out)\n• migration disorders: lissencephaly, heterotopia, polymicrogyria\n• สาเหตุ: LIS1, reelin",
+   "mechanism": [
+    "neuroblast เกิดที่ ventricular zone",
+    "ใช้ radial glia เป็นราง",
+    {
+     "s": "radial migration ผิดปกติ",
+     "answer": true
+    },
+    "neuron วางผิด layer → seizure/developmental delay"
+   ],
+   "option_why": {
+    "A": "Proliferation ผิด → microcephaly",
+    "B": "Differentiation ผิด → ไม่ตรงโจทย์เรื่อง distribution",
+    "C": "✓ Radial migration ผิด → cortical dysplasia/lissencephaly + seizures",
+    "D": "Synaptic pruning ผิดเกิดภายหลัง",
+    "E": "Myelination เป็น postnatal"
+   }
+  },
+  {
+   "id": "NERV-52-MCQ-086",
+   "block": "NERV",
+   "cohort": 52,
+   "n": 86,
+   "type": "MCQ",
+   "stem": "A severe embryonal malformation results in absence of part of the skull and brain. The newborn usually dies soon after birth. Which statement could cause this event?",
+   "options": {
+    "A": "Defect in neural plate formation",
+    "B": "Lack of migration of neurons",
+    "C": "Lack of migration of neuronal progenitor cells",
+    "D": "Failure of closure of the anterior neuropore",
+    "E": "Incomplete separation of the prosencephalon"
+   },
+   "answer": "D",
+   "answer_status": "verified",
+   "explanation": "ไม่มีกะโหลก/สมองบางส่วน = anencephaly จาก failure of closure of anterior (cranial) neuropore",
+   "refs": [
+    {
+     "paper": "MCQ52",
+     "pages": [
+      25
+     ]
+    },
+    {
+     "paper": "MCQ52-KEY",
+     "pages": [
+      25
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "nerv_52_MCQ_086",
+   "key_concept": "• anterior neuropore ปิดวัน 25 · posterior วัน 27–28\n• ปิดไม่สนิท: anencephaly / spina bifida\n• ↑AFP, polyhydramnios, folate ป้องกัน",
+   "mechanism": [
+    "neural fold ไม่เชื่อมที่ cranial end",
+    "anterior neuropore เปิดค้าง",
+    {
+     "s": "forebrain/skull vault ไม่พัฒนา",
+     "answer": true
+    },
+    "anencephaly"
+   ],
+   "option_why": {
+    "A": "neural plate formation ผิดเป็นระยะก่อนหน้า",
+    "B": "Neuron migration ผิด ไม่ทำให้กะโหลกหาย",
+    "C": "Progenitor migration ผิดไม่ใช่สาเหตุของ anencephaly",
+    "D": "✓ Anterior neuropore ไม่ปิด (วันที่ ~25) → anencephaly",
+    "E": "Prosencephalon แยกไม่สมบูรณ์ → holoprosencephaly"
+   }
+  },
+  {
+   "id": "NERV-52-MCQ-087",
+   "block": "NERV",
+   "cohort": 52,
+   "n": 87,
+   "type": "MCQ",
+   "stem": "A newborn fails to pass meconium within 48 hours after birth and develops abdominal distension. A rectal biopsy shows absence of enteric ganglion cells in the distal colon. Which of the following embryological structures is most likely affected?",
+   "options": {
+    "A": "Alar plate",
+    "B": "Basal plate",
+    "C": "Roof plate",
+    "D": "Floor plate",
+    "E": "Neural crest"
+   },
+   "answer": "E",
+   "answer_status": "verified",
+   "explanation": "Hirschsprung: ไม่มี enteric ganglion cell เพราะ neural crest cell ไม่อพยพถึงลำไส้ส่วนปลาย",
+   "refs": [
+    {
+     "paper": "MCQ52",
+     "pages": [
+      26
+     ]
+    },
+    {
+     "paper": "MCQ52-KEY",
+     "pages": [
+      26
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "nerv_52_MCQ_087",
+   "key_concept": "• neural crest → enteric ganglia, DRG, melanocyte, adrenal medulla\n• RET mutation\n• Hirschsprung: aganglionic rectum/sigmoid, ไม่ผ่านขี้เทา",
+   "mechanism": [
+    "neural crest cell migrate ลงลำไส้ cranio-caudal",
+    {
+     "s": "หยุดก่อนถึงส่วนปลาย",
+     "answer": true
+    },
+    "ไม่มี ganglion cell",
+    "ลำไส้ไม่คลายตัว → ท้องอืด"
+   ],
+   "option_why": {
+    "A": "Alar plate = sensory ของ spinal cord",
+    "B": "Basal plate = motor",
+    "C": "Roof plate ไม่ใช่",
+    "D": "Floor plate ไม่ใช่",
+    "E": "✓ Neural crest ให้ enteric ganglion → Hirschsprung"
+   }
+  },
+  {
+   "id": "NERV-52-MCQ-088",
+   "block": "NERV",
+   "cohort": 52,
+   "n": 88,
+   "type": "MCQ",
+   "stem": "A newborn is noted to have a severe congenital defect characterized by absence of most of the cerebral hemispheres and cranial vault. Which of the following is the most likely diagnosis?",
+   "options": {
+    "A": "Anencephaly",
+    "B": "Encephalocele",
+    "C": "Hydrocephalus",
+    "D": "Macrocephaly",
+    "E": "Microcephaly"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "ไม่มี cerebral hemispheres และ cranial vault = anencephaly",
+   "refs": [
+    {
+     "paper": "MCQ52",
+     "pages": [
+      26
+     ]
+    },
+    {
+     "paper": "MCQ52-KEY",
+     "pages": [
+      26
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "nerv_52_MCQ_088",
+   "key_concept": "• anencephaly = เปิดของ anterior neuropore\n• ตรวจพบ AFP สูง · polyhydramnios\n• เสียชีวิตเร็วหลังคลอด",
+   "mechanism": [
+    "anterior neuropore ไม่ปิด",
+    {
+     "s": "ไม่มี calvaria และ cerebrum",
+     "answer": true
+    },
+    "หลังคลอดรอดชีวิตไม่ได้"
+   ],
+   "option_why": {
+    "A": "✓ Anencephaly: ขาด calvaria + cerebrum",
+    "B": "Encephalocele เป็น sac ยื่นผ่านกะโหลก",
+    "C": "Hydrocephalus มีโพรง CSF ขยาย",
+    "D": "Macrocephaly ศีรษะใหญ่",
+    "E": "Microcephaly ศีรษะเล็ก สมองเล็ก"
+   }
+  },
+  {
+   "id": "NERV-52-MCQ-089",
+   "block": "NERV",
+   "cohort": 52,
+   "n": 89,
+   "type": "MCQ",
+   "stem": "A newborn is delivered at term and is noted to have severe craniofacial abnormalities. Physical examination reveals a single eye located in the midline of the face (cyclopia), a single nasal structure, and severe abnormalities of the development of the forebrain. Imaging demonstrates failure of the cerebral hemispheres to separate into two distinct hemispheres. Which of the following is the most likely diagnosis?",
+   "options": {
+    "A": "Anencephaly",
+    "B": "Encephalocele",
+    "C": "Holoprosencephaly",
+    "D": "Hydrocephalus",
+    "E": "Dandy-Walker malformation"
+   },
+   "answer": "C",
+   "answer_status": "verified",
+   "explanation": "cyclopia + hemispheres ไม่แยก = holoprosencephaly (prosencephalon cleavage ผิด, SHH)",
+   "refs": [
+    {
+     "paper": "MCQ52",
+     "pages": [
+      26
+     ]
+    },
+    {
+     "paper": "MCQ52-KEY",
+     "pages": [
+      26
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "nerv_52_MCQ_089",
+   "key_concept": "• holoprosencephaly: SHH, trisomy 13\n• midline facial defects: cyclopia, cleft lip\n• prosencephalon ไม่แยกเป็น 2 hemispheres",
+   "mechanism": [
+    "prechordal plate/SHH signaling ผิด",
+    {
+     "s": "prosencephalon ไม่แยก",
+     "answer": true
+    },
+    "hemispheres ไม่แยก, midline face defect",
+    "cyclopia"
+   ],
+   "option_why": {
+    "A": "Anencephaly ขาดกะโหลก/สมองส่วนบน",
+    "B": "Encephalocele คือ herniation",
+    "C": "✓ Holoprosencephaly: cyclopia, single nostril, single ventricle",
+    "D": "Hydrocephalus ไม่ใช่ malformation ของ midline face",
+    "E": "Dandy-Walker = cerebellar vermis hypoplasia"
+   }
+  },
+  {
+   "id": "NERV-52-MCQ-090",
+   "block": "NERV",
+   "cohort": 52,
+   "n": 90,
+   "type": "MCQ",
+   "stem": "A 35-year-old man presents with a gradually progressive history of neck and upper back pain for 2 years. He reports difficulty performing fine movements with both hands and has noticed weakness and muscle wasting of the hands and forearms. Neurological examination reveals bilateral loss of pain and temperature sensation over the shoulders, upper chest, and arms in a “cape-like” distribution. However, vibration and proprioception are preserved. Which of the following is the most likely diagnosis?",
+   "options": {
+    "A": "Multiple sclerosis",
+    "B": "Cervical spinal cord tumor",
+    "C": "Syringomyelia",
+    "D": "Subacute combined degeneration",
+    "E": "Tabes dorsalis"
+   },
+   "answer": "C",
+   "answer_status": "verified",
+   "explanation": "cape-like loss of pain/temperature + hand weakness/atrophy + DC ปกติ = syringomyelia (central cavity ตัด anterior white commissure)",
+   "refs": [
+    {
+     "paper": "MCQ52",
+     "pages": [
+      27
+     ]
+    },
+    {
+     "paper": "MCQ52-KEY",
+     "pages": [
+      27
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "nerv_52_MCQ_090",
+   "key_concept": "• Syrinx ทำลาย crossing spinothalamic fibers ที่ anterior white commissure\n• cape sensory loss + LMN signs มือ\n• สัมพันธ์ Chiari I",
+   "mechanism": [
+    "syrinx เกิดที่ central canal ระดับ cervical",
+    {
+     "s": "ตัด spinothalamic fibers ที่ไขว้ (anterior white commissure)",
+     "answer": true
+    },
+    "pain/temp หายแบบ cape, dorsal column ปกติ",
+    "anterior horn เสีย → hand weakness"
+   ],
+   "option_why": {
+    "A": "MS มี relapsing-remitting multiple lesions",
+    "B": "Cord tumor อาการอาจคล้ายแต่ไม่เฉพาะ cape distribution",
+    "C": "✓ Syringomyelia: syrinx ที่ cervical cord → cape loss pain/temp",
+    "D": "SCD (B12) เสีย DC/corticospinal",
+    "E": "Tabes dorsalis เสีย dorsal column"
+   }
+  }
+ ]
+}
