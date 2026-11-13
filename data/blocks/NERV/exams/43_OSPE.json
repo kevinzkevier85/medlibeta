@@ -1,0 +1,1759 @@
+{
+ "meta": {
+  "set_id": "43_OSPE",
+  "block": "NERV",
+  "cohort": 43,
+  "type": "OSPE",
+  "title": "OSPE Nervous System · Med PSU 42-43",
+  "generated_by": "auditor/tools/build_kf.py from auditor/data/work/nerv_42-43_OSPE.kf.json — do not edit by hand"
+ },
+ "questions": [
+  {
+   "id": "NERV-43-OSPE-001",
+   "block": "NERV",
+   "cohort": 43,
+   "n": 1,
+   "type": "OSPE",
+   "station": 1,
+   "stem": "สถานี 1: What is the diagnosis? (A Cerebral herniation · B Cerebral atrophy · C Cerebral edema · D Demyelination · E Hydrocephalus)",
+   "items": [
+    {
+     "id": "1.1",
+     "prompt": "What is the diagnosis?",
+     "format": "short",
+     "accepted": [
+      "cerebral edema",
+      "edema"
+     ],
+     "keywords_all": [
+      "edema"
+     ],
+     "key_text": "C — Cerebral edema (สมองบวม, gyri แบนลง, sulci แคบลง)",
+     "source_key": "เฉลย: C — Cerebral edema (สมองบวม, gyri แบนลง, sulci แคบลง)",
+     "image": "img/NERV-43-OSPE-001.jpg",
+     "image_caption": "Brain (coronal)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE43",
+     "pages": [
+      1
+     ]
+    },
+    {
+     "paper": "OSPE43-KEY",
+     "pages": [
+      1
+     ]
+    }
+   ],
+   "tags": [
+    "pathology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "NERV-43-OSPE-002",
+   "block": "NERV",
+   "cohort": 43,
+   "n": 2,
+   "type": "OSPE",
+   "station": 2,
+   "stem": "สถานี 2: What is the cause of this pathology? (A Severe hypertension · B Traumatic injury · C Alcoholic toxicity · D Hydrocephalus · E Increased intracranial pressure)",
+   "items": [
+    {
+     "id": "2.1",
+     "prompt": "What is the cause of this pathology?",
+     "format": "short",
+     "accepted": [
+      "intracranial pressure",
+      "icp",
+      "herniation"
+     ],
+     "keywords_all": [
+      "pressure"
+     ],
+     "key_text": "E — Increased intracranial pressure (Duret hemorrhage ที่ pons/midbrain จาก herniation)",
+     "source_key": "เฉลย: E — Increased intracranial pressure (Duret hemorrhage ที่ pons/midbrain จาก herniation)",
+     "image": "img/NERV-43-OSPE-002.jpg",
+     "image_caption": "Cerebellum/brainstem"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE43",
+     "pages": [
+      1
+     ]
+    },
+    {
+     "paper": "OSPE43-KEY",
+     "pages": [
+      1
+     ]
+    }
+   ],
+   "tags": [
+    "pathology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "NERV-43-OSPE-003",
+   "block": "NERV",
+   "cohort": 43,
+   "n": 3,
+   "type": "OSPE",
+   "station": 3,
+   "stem": "สถานี 3: What is the diagnosis? (A Naegeriasis · B Rabies · C Cryptococcus infection · D PML · E Cysticercosis)",
+   "items": [
+    {
+     "id": "3.1",
+     "prompt": "What is the diagnosis?",
+     "format": "short",
+     "accepted": [
+      "cryptococc"
+     ],
+     "keywords_all": [
+      "cryptococc"
+     ],
+     "key_text": "C — Cryptococcus infection (soap bubble lesion ที่เนื้อสมอง)",
+     "source_key": "เฉลย: C — Cryptococcus infection (soap bubble lesion ที่เนื้อสมอง)",
+     "image": "img/NERV-43-OSPE-003.jpg",
+     "image_caption": "Brain (gross)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE43",
+     "pages": [
+      1
+     ]
+    },
+    {
+     "paper": "OSPE43-KEY",
+     "pages": [
+      1
+     ]
+    }
+   ],
+   "tags": [
+    "pathology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "NERV-43-OSPE-004",
+   "block": "NERV",
+   "cohort": 43,
+   "n": 4,
+   "type": "OSPE",
+   "station": 4,
+   "stem": "สถานี 4: What is the most common type of bacterial infection in adult? (A E. coli · B H. influenzae · C S. pneumoniae · D N. meningitidis · E S. aureus)",
+   "items": [
+    {
+     "id": "4.1",
+     "prompt": "What is the most common type of bacterial infection in adult?",
+     "format": "short",
+     "accepted": [
+      "streptococcus pneumoniae",
+      "pneumoniae"
+     ],
+     "keywords_all": [
+      "pneumoniae"
+     ],
+     "key_text": "C — Streptococcus pneumoniae (Acute pyogenic meningitis ในผู้ใหญ่ พบ encapsulated diplococci)",
+     "source_key": "เฉลย: C — Streptococcus pneumoniae (Acute pyogenic meningitis ในผู้ใหญ่ พบ encapsulated diplococci)",
+     "image": "img/NERV-43-OSPE-004.jpg",
+     "image_caption": "Brain + Gram stain"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE43",
+     "pages": [
+      1
+     ]
+    },
+    {
+     "paper": "OSPE43-KEY",
+     "pages": [
+      1
+     ]
+    }
+   ],
+   "tags": [
+    "microbiology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "NERV-43-OSPE-005",
+   "block": "NERV",
+   "cohort": 43,
+   "n": 5,
+   "type": "OSPE",
+   "station": 5,
+   "stem": "สถานี 5: What is NOT the cause of this pathologic finding? (A Berry aneurysm · B AVM · C Injury · D Laceration of middle meningeal artery · E Brain concussion)",
+   "items": [
+    {
+     "id": "5.1",
+     "prompt": "What is not the cause of this pathologic finding?",
+     "format": "short",
+     "accepted": [
+      "concussion"
+     ],
+     "keywords_all": [
+      "concussion"
+     ],
+     "key_text": "E — Brain concussion (ภาพคือ subdural hematoma/subarachnoid hemorrhage; concussion หายเองได้ไม่ทำให้เลือดออก)",
+     "source_key": "เฉลย: E — Brain concussion (ภาพคือ subdural hematoma/subarachnoid hemorrhage; concussion หายเองได้ไม่ทำให้เลือดออก)",
+     "image": "img/NERV-43-OSPE-005.jpg",
+     "image_caption": "Brain hemorrhage"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE43",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "OSPE43-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [
+    "pathology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "NERV-43-OSPE-006",
+   "block": "NERV",
+   "cohort": 43,
+   "n": 6,
+   "type": "OSPE",
+   "station": 6,
+   "stem": "สถานี 6: What is the cause of this brain pathology? (A Ruptured berry aneurysm · B Ruptured AVM · C Ruptured Charcot-Bouchard microaneurysm · D Severe head injury · E Increased ICP)",
+   "items": [
+    {
+     "id": "6.1",
+     "prompt": "What is the cause of this brain pathology?",
+     "format": "short",
+     "accepted": [
+      "charcot",
+      "bouchard",
+      "microaneurysm"
+     ],
+     "keywords_all": [
+      "microaneurysm",
+      "charcot"
+     ],
+     "key_text": "C — Ruptured Charcot-Bouchard microaneurysm (pontine/intraparenchymal hemorrhage จาก severe hypertension)",
+     "source_key": "เฉลย: C — Ruptured Charcot-Bouchard microaneurysm (pontine/intraparenchymal hemorrhage จาก severe hypertension)",
+     "image": "img/NERV-43-OSPE-006.jpg",
+     "image_caption": "Pons hemorrhage"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE43",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "OSPE43-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [
+    "pathology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "NERV-43-OSPE-007",
+   "block": "NERV",
+   "cohort": 43,
+   "n": 7,
+   "type": "OSPE",
+   "station": 7,
+   "stem": "สถานี 7: What is the diagnosis? (A Neurilemmoma · B Neurofibroma · C Medulloblastoma · D Meningioma · E Glioblastoma multiforme)",
+   "items": [
+    {
+     "id": "7.1",
+     "prompt": "What is the diagnosis?",
+     "format": "short",
+     "accepted": [
+      "meningioma"
+     ],
+     "keywords_all": [
+      "meningioma"
+     ],
+     "key_text": "D — Meningioma (ก้อนนูนเรียบติด dura mater, whorled pattern + psammoma body)",
+     "source_key": "เฉลย: D — Meningioma (ก้อนนูนเรียบติด dura mater, whorled pattern + psammoma body)",
+     "image": "img/NERV-43-OSPE-007.jpg",
+     "image_caption": "Gross + histology"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE43",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "OSPE43-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [
+    "pathology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "NERV-43-OSPE-008",
+   "block": "NERV",
+   "cohort": 43,
+   "n": 8,
+   "type": "OSPE",
+   "station": 8,
+   "stem": "สถานี 8: What is the diagnosis? (a Meningioma · b Acoustic neuroma/Schwannoma · c Astrocytoma · d Pilocytic astrocytoma · e Ependymoma) — ก้อนที่ cerebellopontine angle, ลูกศรชี้ CN VIII",
+   "items": [
+    {
+     "id": "8.1",
+     "prompt": "What is the diagnosis?",
+     "format": "short",
+     "accepted": [
+      "schwannoma",
+      "acoustic neuroma",
+      "neurilemmoma"
+     ],
+     "keywords_all": [
+      "schwannoma",
+      "acoustic"
+     ],
+     "key_text": "B — Acoustic neuroma / Schwannoma (ก้อนที่ CPA ติด CN VIII; histology Antoni A (Verocay bodies) และ Antoni B)",
+     "source_key": "เฉลย: B — Acoustic neuroma / Schwannoma (ก้อนที่ CPA ติด CN VIII; histology Antoni A (Verocay bodies) และ Antoni B)",
+     "image": "img/NERV-43-OSPE-008.jpg",
+     "image_caption": "CPA tumor + histology"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE43",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "OSPE43-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [
+    "pathology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "NERV-43-OSPE-009",
+   "block": "NERV",
+   "cohort": 43,
+   "n": 9,
+   "type": "OSPE",
+   "station": 9,
+   "stem": "สถานี 9: Which of the following is the brain lesion in this patient? (A TB meningitis · B Meningioma · C Cortical tubers · D Astrocytoma · E Ependymoma) — ผู้ป่วยมี facial angiofibroma (adenoma sebaceum)",
+   "items": [
+    {
+     "id": "9.1",
+     "prompt": "Which of the followings is the brain lesion in this patient?",
+     "format": "short",
+     "accepted": [
+      "cortical tuber",
+      "tuber"
+     ],
+     "keywords_all": [
+      "tuber"
+     ],
+     "key_text": "C — Cortical tubers (Tuberous sclerosis: cortical tubers และ subependymal nodules)",
+     "source_key": "เฉลย: C — Cortical tubers (Tuberous sclerosis: cortical tubers และ subependymal nodules)",
+     "image": "img/NERV-43-OSPE-009.jpg",
+     "image_caption": "Patient faces"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE43",
+     "pages": [
+      3
+     ]
+    },
+    {
+     "paper": "OSPE43-KEY",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [
+    "pathology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "NERV-43-OSPE-010",
+   "block": "NERV",
+   "cohort": 43,
+   "n": 10,
+   "type": "OSPE",
+   "station": 10,
+   "stem": "สถานี 10: ภาพย้อม CSF",
+   "items": [
+    {
+     "id": "10.1",
+     "prompt": "Describe the microorganism found in the figure (color, shape and other found cells)",
+     "format": "short",
+     "accepted": [
+      "gram-negative",
+      "diplococci"
+     ],
+     "keywords_all": [
+      "diplococci"
+     ],
+     "key_text": "Gram-negative diplococci, sometimes found inside WBCs",
+     "source_key": "เฉลย: Gram-negative diplococci, sometimes found inside WBCs",
+     "image": "img/NERV-43-OSPE-010.jpg",
+     "image_caption": "CSF Gram stain"
+    },
+    {
+     "id": "10.2",
+     "prompt": "What is the normal CSF glucose and protein value and what is the expected level in this patient?",
+     "format": "short",
+     "accepted": [
+      "glucose",
+      "protein"
+     ],
+     "keywords_all": [
+      "glucose",
+      "protein"
+     ],
+     "key_text": "Normal CSF: glucose 40–100 mg/dL (~60% ของ blood glucose), protein 15–50 mg/dL · Bacterial meningitis: CSF glucose ต่ำมาก (<40 mg/dL), protein สูงมาก (>100–500 mg/dL)",
+     "source_key": "เฉลย: Normal CSF: glucose 40–100 mg/dL (~60% ของ blood glucose), protein 15–50 mg/dL · Bacterial meningitis: CSF glucose ต่ำมาก (<40 mg/dL), protein สูงมาก (>100–500 mg/dL)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE43",
+     "pages": [
+      3
+     ]
+    },
+    {
+     "paper": "OSPE43-KEY",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [
+    "microbiology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "NERV-43-OSPE-011",
+   "block": "NERV",
+   "cohort": 43,
+   "n": 11,
+   "type": "OSPE",
+   "station": 11,
+   "stem": "สถานี 11: ภาพ gross ของลูกตา",
+   "items": [
+    {
+     "id": "11.1",
+     "prompt": "Describe the pathological findings",
+     "format": "short",
+     "accepted": [
+      "white mass",
+      "leukocoria",
+      "retinal detachment"
+     ],
+     "keywords_all": [
+      "white",
+      "detachment"
+     ],
+     "key_text": "Leukocoria/white mass ในลูกตา (iris), retinal detachment · miosis",
+     "source_key": "เฉลย: Leukocoria/white mass ในลูกตา (iris), retinal detachment · miosis",
+     "image": "img/NERV-43-OSPE-011.jpg",
+     "image_caption": "Eye (gross)"
+    },
+    {
+     "id": "11.2",
+     "prompt": "What is the diagnosis?",
+     "format": "short",
+     "accepted": [
+      "retinoblastoma"
+     ],
+     "keywords_all": [
+      "retinoblastoma"
+     ],
+     "key_text": "Retinoblastoma",
+     "source_key": "เฉลย: Retinoblastoma"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE43",
+     "pages": [
+      3
+     ]
+    },
+    {
+     "paper": "OSPE43-KEY",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [
+    "pathology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "NERV-43-OSPE-012",
+   "block": "NERV",
+   "cohort": 43,
+   "n": 12,
+   "type": "OSPE",
+   "station": 12,
+   "stem": "สถานี 12: ภาพ medulla (วงรีวง) และ pons (วงสีเหลือง)",
+   "items": [
+    {
+     "id": "12.1",
+     "prompt": "What will happen if there is a lesion at circled area? (3 อาการ)",
+     "format": "short",
+     "accepted": [
+      "fine",
+      "vibration",
+      "proprioception"
+     ],
+     "keywords_all": [
+      "vibration",
+      "proprioception"
+     ],
+     "key_text": "Contralateral loss of fine/discriminative touch · Contralateral loss of vibration · Contralateral loss of proprioception (medial lemniscus ที่ mid-medulla)",
+     "source_key": "เฉลย: Contralateral loss of fine/discriminative touch · Contralateral loss of vibration · Contralateral loss of proprioception (medial lemniscus ที่ mid-medulla)",
+     "image": "img/NERV-43-OSPE-012a.jpg",
+     "image_caption": "Medulla (circled area)"
+    },
+    {
+     "id": "12.2",
+     "prompt": "What is this structure? (วงเหลืองที่ pons)",
+     "format": "short",
+     "accepted": [
+      "principal sensory",
+      "principle sensory"
+     ],
+     "keywords_all": [
+      "principal sensory",
+      "principle sensory"
+     ],
+     "key_text": "Principal sensory nucleus of CN V",
+     "source_key": "เฉลย: Principal sensory nucleus of CN V",
+     "image": "img/NERV-43-OSPE-012b.jpg",
+     "image_caption": "Pons (yellow circle)"
+    },
+    {
+     "id": "12.3",
+     "prompt": "Name 1 of the muscle that is innervated by this nucleus",
+     "format": "short",
+     "accepted": [
+      "masseter",
+      "temporalis",
+      "pterygoid",
+      "mastication"
+     ],
+     "keywords_all": [
+      "masseter",
+      "temporalis",
+      "pterygoid"
+     ],
+     "key_text": "Muscles of mastication: masseter / temporalis / pterygoid (เฉลยระบุว่านิวเคลียสนี้เป็น sensory แต่โจทย์ถามกล้ามเนื้อเคี้ยว)",
+     "source_key": "เฉลย: Muscles of mastication: masseter / temporalis / pterygoid (เฉลยระบุว่านิวเคลียสนี้เป็น sensory แต่โจทย์ถามกล้ามเนื้อเคี้ยว)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE43",
+     "pages": [
+      4
+     ]
+    },
+    {
+     "paper": "OSPE43-KEY",
+     "pages": [
+      4
+     ]
+    }
+   ],
+   "tags": [
+    "neuroanatomy"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "NERV-43-OSPE-013",
+   "block": "NERV",
+   "cohort": 43,
+   "n": 13,
+   "type": "OSPE",
+   "station": 13,
+   "stem": "สถานี 13: ภาพ midbrain (โครงสร้างหมายเลข 1)",
+   "items": [
+    {
+     "id": "13.1",
+     "prompt": "What is the structure number 1?",
+     "format": "short",
+     "accepted": [
+      "sensory fasciculus",
+      "lemniscus"
+     ],
+     "keywords_all": [
+      "fasciculus",
+      "lemniscus"
+     ],
+     "key_text": "Sensory fasciculus (medial lemniscus)",
+     "source_key": "เฉลย: Sensory fasciculus (medial lemniscus)",
+     "image": "img/NERV-43-OSPE-013.jpg",
+     "image_caption": "Midbrain (1)"
+    },
+    {
+     "id": "13.2",
+     "prompt": "Name 2 endpoints of tract number 1",
+     "format": "short",
+     "accepted": [
+      "vpm",
+      "vpl"
+     ],
+     "keywords_all": [
+      "vpm",
+      "vpl"
+     ],
+     "key_text": "1. Ventral posteromedial (VPM) nucleus of thalamus · 2. Ventral posterolateral (VPL) nucleus of thalamus",
+     "source_key": "เฉลย: 1. Ventral posteromedial (VPM) nucleus of thalamus · 2. Ventral posterolateral (VPL) nucleus of thalamus"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE43",
+     "pages": [
+      4
+     ]
+    },
+    {
+     "paper": "OSPE43-KEY",
+     "pages": [
+      4
+     ]
+    }
+   ],
+   "tags": [
+    "neuroanatomy"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "NERV-43-OSPE-014",
+   "block": "NERV",
+   "cohort": 43,
+   "n": 14,
+   "type": "OSPE",
+   "station": 14,
+   "stem": "สถานี 14: ภาพ base ของสมอง แสดงหลอดเลือด (หมายเลข 8, 6, 9, 3, 4)",
+   "items": [
+    {
+     "id": "14.1",
+     "prompt": "Identify structure No.8",
+     "format": "short",
+     "accepted": [
+      "anterior cerebral",
+      "aca"
+     ],
+     "keywords_all": [
+      "anterior cerebral"
+     ],
+     "key_text": "Anterior cerebral artery (ACA)",
+     "source_key": "เฉลย: Anterior cerebral artery (ACA)",
+     "image": "img/NERV-43-OSPE-014.jpg",
+     "image_caption": "Base of brain arteries"
+    },
+    {
+     "id": "14.2",
+     "prompt": "Identify structure No.6",
+     "format": "short",
+     "accepted": [
+      "posterior cerebral",
+      "pca"
+     ],
+     "keywords_all": [
+      "posterior cerebral"
+     ],
+     "key_text": "Posterior cerebral artery (PCA)",
+     "source_key": "เฉลย: Posterior cerebral artery (PCA)"
+    },
+    {
+     "id": "14.3",
+     "prompt": "Identify structure No.9",
+     "format": "short",
+     "accepted": [
+      "superior cerebellar",
+      "sca"
+     ],
+     "keywords_all": [
+      "superior cerebellar"
+     ],
+     "key_text": "Superior cerebellar artery (SCA)",
+     "source_key": "เฉลย: Superior cerebellar artery (SCA)"
+    },
+    {
+     "id": "14.4",
+     "prompt": "Identify structure No.3",
+     "format": "short",
+     "accepted": [
+      "middle cerebral",
+      "mca"
+     ],
+     "keywords_all": [
+      "middle cerebral"
+     ],
+     "key_text": "Middle cerebral artery (MCA)",
+     "source_key": "เฉลย: Middle cerebral artery (MCA)"
+    },
+    {
+     "id": "14.5",
+     "prompt": "Identify structure No.4",
+     "format": "short",
+     "accepted": [
+      "internal carotid"
+     ],
+     "keywords_all": [
+      "internal carotid"
+     ],
+     "key_text": "Internal carotid artery",
+     "source_key": "เฉลย: Internal carotid artery"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE43",
+     "pages": [
+      4
+     ]
+    },
+    {
+     "paper": "OSPE43-KEY",
+     "pages": [
+      4
+     ]
+    }
+   ],
+   "tags": [
+    "neuroanatomy"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "NERV-43-OSPE-015",
+   "block": "NERV",
+   "cohort": 43,
+   "n": 15,
+   "type": "OSPE",
+   "station": 15,
+   "stem": "สถานี 15: ภาพ dural venous sinuses (หมายเลข 1–5)",
+   "items": [
+    {
+     "id": "15.1",
+     "prompt": "Identify structure No.1",
+     "format": "short",
+     "accepted": [
+      "superior sagittal"
+     ],
+     "keywords_all": [
+      "superior sagittal"
+     ],
+     "key_text": "Superior sagittal sinus",
+     "source_key": "เฉลย: Superior sagittal sinus",
+     "image": "img/NERV-43-OSPE-015.jpg",
+     "image_caption": "Dural sinuses"
+    },
+    {
+     "id": "15.2",
+     "prompt": "Identify structure No.2",
+     "format": "short",
+     "accepted": [
+      "transverse"
+     ],
+     "keywords_all": [
+      "transverse"
+     ],
+     "key_text": "Transverse sinus",
+     "source_key": "เฉลย: Transverse sinus"
+    },
+    {
+     "id": "15.3",
+     "prompt": "Identify structure No.3",
+     "format": "short",
+     "accepted": [
+      "inferior sagittal"
+     ],
+     "keywords_all": [
+      "inferior sagittal"
+     ],
+     "key_text": "Inferior sagittal sinus",
+     "source_key": "เฉลย: Inferior sagittal sinus"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE43",
+     "pages": [
+      5
+     ]
+    },
+    {
+     "paper": "OSPE43-KEY",
+     "pages": [
+      5
+     ]
+    }
+   ],
+   "tags": [
+    "neuroanatomy"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "NERV-43-OSPE-016",
+   "block": "NERV",
+   "cohort": 43,
+   "n": 16,
+   "type": "OSPE",
+   "station": 16,
+   "stem": "สถานี 16: ภาพสมองตัดแนวนอน (หมายเลข 1 และ 2)",
+   "items": [
+    {
+     "id": "16.1",
+     "prompt": "Identify structure No.1",
+     "format": "short",
+     "accepted": [
+      "lateral ventricle"
+     ],
+     "keywords_all": [
+      "lateral ventricle"
+     ],
+     "key_text": "Lateral ventricle",
+     "source_key": "เฉลย: Lateral ventricle",
+     "image": "img/NERV-43-OSPE-016.jpg",
+     "image_caption": "Axial brain (1,2)"
+    },
+    {
+     "id": "16.2",
+     "prompt": "Identify structure No.2",
+     "format": "short",
+     "accepted": [
+      "choroid plexus"
+     ],
+     "keywords_all": [
+      "choroid"
+     ],
+     "key_text": "Choroid plexus",
+     "source_key": "เฉลย: Choroid plexus"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE43",
+     "pages": [
+      5
+     ]
+    },
+    {
+     "paper": "OSPE43-KEY",
+     "pages": [
+      5
+     ]
+    }
+   ],
+   "tags": [
+    "neuroanatomy"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "NERV-43-OSPE-017",
+   "block": "NERV",
+   "cohort": 43,
+   "n": 17,
+   "type": "OSPE",
+   "station": 17,
+   "stem": "สถานี 17: ภาพ histology หู/pons (หมายเลข 1–4)",
+   "items": [
+    {
+     "id": "17.1",
+     "prompt": "Identify structure No.1",
+     "format": "short",
+     "accepted": [
+      "reissner"
+     ],
+     "keywords_all": [
+      "reissner"
+     ],
+     "key_text": "Reissner's membrane",
+     "source_key": "เฉลย: Reissner's membrane",
+     "image": "img/NERV-43-OSPE-017.jpg",
+     "image_caption": "Inner ear / pons"
+    },
+    {
+     "id": "17.2",
+     "prompt": "Identify structure No.2",
+     "format": "short",
+     "accepted": [
+      "spinal ganglion",
+      "spiral ganglion"
+     ],
+     "keywords_all": [
+      "ganglion"
+     ],
+     "key_text": "Spinal ganglion",
+     "source_key": "เฉลย: Spinal ganglion"
+    },
+    {
+     "id": "17.3",
+     "prompt": "Identify structure No.3",
+     "format": "short",
+     "accepted": [
+      "organ of corti",
+      "spiral organ"
+     ],
+     "keywords_all": [
+      "corti",
+      "spiral"
+     ],
+     "key_text": "Organ of Corti / Spiral organ",
+     "source_key": "เฉลย: Organ of Corti / Spiral organ"
+    },
+    {
+     "id": "17.4",
+     "prompt": "Identify structure No.4",
+     "format": "short",
+     "accepted": [
+      "solitary"
+     ],
+     "keywords_all": [
+      "solitary"
+     ],
+     "key_text": "Solitary nucleus",
+     "source_key": "เฉลย: Solitary nucleus"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE43",
+     "pages": [
+      5
+     ]
+    },
+    {
+     "paper": "OSPE43-KEY",
+     "pages": [
+      5
+     ]
+    }
+   ],
+   "tags": [
+    "neuroanatomy"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "NERV-43-OSPE-018",
+   "block": "NERV",
+   "cohort": 43,
+   "n": 18,
+   "type": "OSPE",
+   "station": 18,
+   "stem": "สถานี 18: ภาพตัดลูกตา (หมายเลข 1 และ 2)",
+   "items": [
+    {
+     "id": "18.1",
+     "prompt": "Identify structure No.1",
+     "format": "short",
+     "accepted": [
+      "ciliary body"
+     ],
+     "keywords_all": [
+      "ciliary"
+     ],
+     "key_text": "Ciliary body",
+     "source_key": "เฉลย: Ciliary body",
+     "image": "img/NERV-43-OSPE-018.jpg",
+     "image_caption": "Eye"
+    },
+    {
+     "id": "18.2",
+     "prompt": "Identify structure No.2",
+     "format": "short",
+     "accepted": [
+      "optic disc",
+      "optic nerve head",
+      "blind spot"
+     ],
+     "keywords_all": [
+      "optic"
+     ],
+     "key_text": "Optic disc / optic nerve head (จุดรวมเส้นใยประสาทตาออกจากลูกตา) = blind spot",
+     "source_key": "เฉลย: Optic disc / optic nerve head (จุดรวมเส้นใยประสาทตาออกจากลูกตา) = blind spot"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE43",
+     "pages": [
+      6
+     ]
+    },
+    {
+     "paper": "OSPE43-KEY",
+     "pages": [
+      6
+     ]
+    }
+   ],
+   "tags": [
+    "neuroanatomy"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "NERV-43-OSPE-019",
+   "block": "NERV",
+   "cohort": 43,
+   "n": 19,
+   "type": "OSPE",
+   "station": 19,
+   "stem": "สถานี 19: ภาพตัดขวาง medulla (nucleus หมายเลข 1–3)",
+   "items": [
+    {
+     "id": "19.1",
+     "prompt": "Nucleus No.1",
+     "format": "short",
+     "accepted": [
+      "hypoglossal"
+     ],
+     "keywords_all": [
+      "hypoglossal"
+     ],
+     "key_text": "Hypoglossal nucleus (CN XII)",
+     "source_key": "เฉลย: Hypoglossal nucleus (CN XII)",
+     "image": "img/NERV-43-OSPE-019.jpg",
+     "image_caption": "Medulla (1-3)"
+    },
+    {
+     "id": "19.2",
+     "prompt": "Nucleus No.2",
+     "format": "short",
+     "accepted": [
+      "dorsal motor"
+     ],
+     "keywords_all": [
+      "dorsal motor"
+     ],
+     "key_text": "Dorsal motor nucleus of vagus (CN X)",
+     "source_key": "เฉลย: Dorsal motor nucleus of vagus (CN X)"
+    },
+    {
+     "id": "19.3",
+     "prompt": "What is the name of the muscle that is innervated by nucleus No.2",
+     "format": "short",
+     "accepted": [
+      "smooth muscle",
+      "cardiac",
+      "glands",
+      "parasympathetic"
+     ],
+     "keywords_all": [
+      "smooth",
+      "cardiac"
+     ],
+     "key_text": "Smooth muscle / cardiac muscle / glands of thoracic and abdominal viscera (parasympathetic)",
+     "source_key": "เฉลย: Smooth muscle / cardiac muscle / glands of thoracic and abdominal viscera (parasympathetic)"
+    },
+    {
+     "id": "19.4",
+     "prompt": "Nucleus No.3",
+     "format": "short",
+     "accepted": [
+      "solitary"
+     ],
+     "keywords_all": [
+      "solitary"
+     ],
+     "key_text": "Solitary nucleus",
+     "source_key": "เฉลย: Solitary nucleus"
+    },
+    {
+     "id": "19.5",
+     "prompt": "What is the afferent fiber of the nucleus No.3",
+     "format": "short",
+     "accepted": [
+      "cn vii",
+      "cn ix",
+      "cn x",
+      "facial",
+      "glossopharyngeal",
+      "vagus"
+     ],
+     "keywords_all": [
+      "vii",
+      "ix"
+     ],
+     "key_text": "CN VII, CN IX, CN X (รับรสและความรู้สึกจากอวัยวะภายใน)",
+     "source_key": "เฉลย: CN VII, CN IX, CN X (รับรสและความรู้สึกจากอวัยวะภายใน)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE43",
+     "pages": [
+      6
+     ]
+    },
+    {
+     "paper": "OSPE43-KEY",
+     "pages": [
+      6
+     ]
+    }
+   ],
+   "tags": [
+    "neuroanatomy"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "NERV-43-OSPE-020",
+   "block": "NERV",
+   "cohort": 43,
+   "n": 20,
+   "type": "OSPE",
+   "station": 20,
+   "stem": "สถานี 20: ภาพตัดขวาง midbrain (หมายเลข 1)",
+   "items": [
+    {
+     "id": "20.1",
+     "prompt": "Identify structure No.1",
+     "format": "short",
+     "accepted": [
+      "trochlear"
+     ],
+     "keywords_all": [
+      "trochlear"
+     ],
+     "key_text": "Trochlear nucleus",
+     "source_key": "เฉลย: Trochlear nucleus",
+     "image": "img/NERV-43-OSPE-020.jpg",
+     "image_caption": "Midbrain"
+    },
+    {
+     "id": "20.2",
+     "prompt": "Name 1 of the muscles that innervated by No.1",
+     "format": "short",
+     "accepted": [
+      "superior oblique"
+     ],
+     "keywords_all": [
+      "superior oblique"
+     ],
+     "key_text": "Superior oblique muscle",
+     "source_key": "เฉลย: Superior oblique muscle"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE43",
+     "pages": [
+      6
+     ]
+    },
+    {
+     "paper": "OSPE43-KEY",
+     "pages": [
+      6
+     ]
+    }
+   ],
+   "tags": [
+    "neuroanatomy"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "NERV-43-OSPE-021",
+   "block": "NERV",
+   "cohort": 43,
+   "n": 21,
+   "type": "OSPE",
+   "station": 21,
+   "stem": "สถานี 21: ภาพตัดขวางไขสันหลัง (หมายเลข 1, 2 และพื้นที่สีน้ำเงินที่ anterior horn)",
+   "items": [
+    {
+     "id": "21.1",
+     "prompt": "Identify structure No.1",
+     "format": "short",
+     "accepted": [
+      "gracilis"
+     ],
+     "keywords_all": [
+      "gracilis"
+     ],
+     "key_text": "Fasciculus gracilis (รับสัมผัสละเอียด/vibration จากครึ่งตัวล่าง)",
+     "source_key": "เฉลย: Fasciculus gracilis (รับสัมผัสละเอียด/vibration จากครึ่งตัวล่าง)",
+     "image": "img/NERV-43-OSPE-021.jpg",
+     "image_caption": "Spinal cord"
+    },
+    {
+     "id": "21.2",
+     "prompt": "Identify structure No.2",
+     "format": "short",
+     "accepted": [
+      "cuneatus"
+     ],
+     "keywords_all": [
+      "cuneatus"
+     ],
+     "key_text": "Fasciculus cuneatus (รับสัมผัสละเอียด/vibration จากครึ่งตัวบน)",
+     "source_key": "เฉลย: Fasciculus cuneatus (รับสัมผัสละเอียด/vibration จากครึ่งตัวบน)"
+    },
+    {
+     "id": "21.3",
+     "prompt": "What will happen if there is a lesion at labeled area?",
+     "format": "short",
+     "accepted": [
+      "flaccid",
+      "hypotonia",
+      "hyporeflexia",
+      "lmn"
+     ],
+     "keywords_all": [
+      "flaccid",
+      "lmn"
+     ],
+     "key_text": "LMN lesion → flaccid muscle weakness / hypotonia / hyporeflexia",
+     "source_key": "เฉลย: LMN lesion → flaccid muscle weakness / hypotonia / hyporeflexia"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE43",
+     "pages": [
+      7
+     ]
+    },
+    {
+     "paper": "OSPE43-KEY",
+     "pages": [
+      7
+     ]
+    }
+   ],
+   "tags": [
+    "neuroanatomy"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "NERV-43-OSPE-022",
+   "block": "NERV",
+   "cohort": 43,
+   "n": 22,
+   "type": "OSPE",
+   "station": 22,
+   "stem": "สถานี 22: ภาพตัดขวาง pons (วงสีเหลือง = facial nucleus)",
+   "items": [
+    {
+     "id": "22.1",
+     "prompt": "What is this nucleus?",
+     "format": "short",
+     "accepted": [
+      "facial"
+     ],
+     "keywords_all": [
+      "facial"
+     ],
+     "key_text": "Facial motor nucleus (CN VII)",
+     "source_key": "เฉลย: Facial motor nucleus (CN VII)",
+     "image": "img/NERV-43-OSPE-022.jpg",
+     "image_caption": "Pons (22)"
+    },
+    {
+     "id": "22.2",
+     "prompt": "What are the signs and symptoms if the patient has a lesion at labeled area?",
+     "format": "short",
+     "accepted": [
+      "contralateral",
+      "hemiparesis",
+      "hemiplegia"
+     ],
+     "keywords_all": [
+      "hemipar",
+      "hemipleg"
+     ],
+     "key_text": "Contralateral hemiparesis/hemiplegia (อัมพาตครึ่งซีกฝั่งตรงข้ามจาก corticospinal tract)",
+     "source_key": "เฉลย: Contralateral hemiparesis/hemiplegia (อัมพาตครึ่งซีกฝั่งตรงข้ามจาก corticospinal tract)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE43",
+     "pages": [
+      7
+     ]
+    },
+    {
+     "paper": "OSPE43-KEY",
+     "pages": [
+      7
+     ]
+    }
+   ],
+   "tags": [
+    "neuroanatomy"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "NERV-43-OSPE-023",
+   "block": "NERV",
+   "cohort": 43,
+   "n": 23,
+   "type": "OSPE",
+   "station": 23,
+   "stem": "สถานี 23: ภาพตัดขวาง pons (วงสีเหลือง = trigeminal motor nucleus)",
+   "items": [
+    {
+     "id": "23.1",
+     "prompt": "What is this nucleus?",
+     "format": "short",
+     "accepted": [
+      "trigeminal motor"
+     ],
+     "keywords_all": [
+      "trigeminal motor"
+     ],
+     "key_text": "Trigeminal motor nucleus (CN V)",
+     "source_key": "เฉลย: Trigeminal motor nucleus (CN V)",
+     "image": "img/NERV-43-OSPE-023.jpg",
+     "image_caption": "Pons (23)"
+    },
+    {
+     "id": "23.2",
+     "prompt": "Name 2 muscle innervated by this nucleus",
+     "format": "short",
+     "accepted": [
+      "masseter",
+      "temporalis",
+      "pterygoid"
+     ],
+     "keywords_all": [
+      "masseter",
+      "temporalis"
+     ],
+     "key_text": "Masseter, Temporalis (และ Pterygoid) — กล้ามเนื้อเคี้ยว",
+     "source_key": "เฉลย: Masseter, Temporalis (และ Pterygoid) — กล้ามเนื้อเคี้ยว"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE43",
+     "pages": [
+      7
+     ]
+    },
+    {
+     "paper": "OSPE43-KEY",
+     "pages": [
+      7
+     ]
+    }
+   ],
+   "tags": [
+    "neuroanatomy"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "NERV-43-OSPE-024",
+   "block": "NERV",
+   "cohort": 43,
+   "n": 24,
+   "type": "OSPE",
+   "station": 24,
+   "stem": "สถานี 24: ภาพ cerebellum ด้านล่าง (หมายเลข 1–4)",
+   "items": [
+    {
+     "id": "24.1",
+     "prompt": "No.1",
+     "format": "short",
+     "accepted": [
+      "middle cerebellar peduncle",
+      "mcp"
+     ],
+     "keywords_all": [
+      "middle cerebellar"
+     ],
+     "key_text": "Middle cerebellar peduncle (MCP)",
+     "source_key": "เฉลย: Middle cerebellar peduncle (MCP)",
+     "image": "img/NERV-43-OSPE-024.jpg",
+     "image_caption": "Cerebellum (1-4)"
+    },
+    {
+     "id": "24.2",
+     "prompt": "No.2",
+     "format": "short",
+     "accepted": [
+      "flocculonodular"
+     ],
+     "keywords_all": [
+      "flocculonodular"
+     ],
+     "key_text": "Flocculonodular lobe",
+     "source_key": "เฉลย: Flocculonodular lobe"
+    },
+    {
+     "id": "24.3",
+     "prompt": "No.3",
+     "format": "short",
+     "accepted": [
+      "vermis"
+     ],
+     "keywords_all": [
+      "vermis"
+     ],
+     "key_text": "Vermis",
+     "source_key": "เฉลย: Vermis"
+    },
+    {
+     "id": "24.4",
+     "prompt": "What are the 2 tracts that go through structure No.4",
+     "format": "short",
+     "accepted": [
+      "spinocerebellar",
+      "olivocerebellar",
+      "vestibulocerebellar",
+      "reticulocerebellar"
+     ],
+     "keywords_all": [
+      "cerebellar tract",
+      "spinocerebellar"
+     ],
+     "key_text": "Posterior spinocerebellar tract, Olivocerebellar tract, Vestibulocerebellar tract, Reticulocerebellar tract (inferior cerebellar peduncle)",
+     "source_key": "เฉลย: Posterior spinocerebellar tract, Olivocerebellar tract, Vestibulocerebellar tract, Reticulocerebellar tract (inferior cerebellar peduncle)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE43",
+     "pages": [
+      7
+     ]
+    },
+    {
+     "paper": "OSPE43-KEY",
+     "pages": [
+      7
+     ]
+    }
+   ],
+   "tags": [
+    "neuroanatomy"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "NERV-43-OSPE-025",
+   "block": "NERV",
+   "cohort": 43,
+   "n": 25,
+   "type": "OSPE",
+   "station": 25,
+   "stem": "สถานี 25: ภาพตัดขวาง midbrain (วงสีเหลืองที่ crus cerebri) — What are the signs and symptoms found if the patient has a lesion at circled area? (5 อาการ)",
+   "items": [
+    {
+     "id": "25.1",
+     "prompt": "จงบอก 5 อาการ (Weber syndrome)",
+     "format": "short",
+     "accepted": [
+      "hemiplegia",
+      "oculomotor",
+      "mydriasis",
+      "ptosis",
+      "facial"
+     ],
+     "keywords_all": [
+      "hemipleg",
+      "oculomotor"
+     ],
+     "key_text": "Weber syndrome: 1) Contralateral hemiplegia/spastic paralysis 2) Ipsilateral oculomotor nerve palsy (ตาเหลือกลงและออก) 3) Mydriasis 4) Ptosis 5) Contralateral lower facial weakness (corticobulbar)",
+     "source_key": "เฉลย: Weber syndrome: 1) Contralateral hemiplegia/spastic paralysis 2) Ipsilateral oculomotor nerve palsy (ตาเหลือกลงและออก) 3) Mydriasis 4) Ptosis 5) Contralateral lower facial weakness (corticobulbar)",
+     "image": "img/NERV-43-OSPE-025.jpg",
+     "image_caption": "Midbrain lesion"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE43",
+     "pages": [
+      8
+     ]
+    },
+    {
+     "paper": "OSPE43-KEY",
+     "pages": [
+      8
+     ]
+    }
+   ],
+   "tags": [
+    "neuroanatomy"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "NERV-43-OSPE-026",
+   "block": "NERV",
+   "cohort": 43,
+   "n": 26,
+   "type": "OSPE",
+   "station": 26,
+   "stem": "สถานี 26: What is the diagnosis? (A Naegleriasis · B Rabies · C Cryptococcus · D PML · E Cysticercosis)",
+   "items": [
+    {
+     "id": "26.1",
+     "prompt": "What is the diagnosis?",
+     "format": "short",
+     "accepted": [
+      "rabies",
+      "negri"
+     ],
+     "keywords_all": [
+      "rabies",
+      "negri"
+     ],
+     "key_text": "B — Rabies (Negri body: eosinophilic intracytoplasmic inclusion body ใน Purkinje cell/neuron)",
+     "source_key": "เฉลย: B — Rabies (Negri body: eosinophilic intracytoplasmic inclusion body ใน Purkinje cell/neuron)",
+     "image": "img/NERV-43-OSPE-026.jpg",
+     "image_caption": "Neuron inclusion"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE43",
+     "pages": [
+      8
+     ]
+    },
+    {
+     "paper": "OSPE43-KEY",
+     "pages": [
+      8
+     ]
+    }
+   ],
+   "tags": [
+    "pathology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "NERV-43-OSPE-027",
+   "block": "NERV",
+   "cohort": 43,
+   "n": 27,
+   "type": "OSPE",
+   "station": 27,
+   "stem": "สถานี 27: เนื้อเยื่อในรูปเจริญมาจากอะไร (A Astrocyte · B Oligodendrocyte · C Leptomeninges · D Microglia · E Ependymal cell)",
+   "items": [
+    {
+     "id": "27.1",
+     "prompt": "เนื้อเยื่อในรูปเจริญมาจากอะไร",
+     "format": "short",
+     "accepted": [
+      "leptomeninges",
+      "arachnoid"
+     ],
+     "keywords_all": [
+      "leptomening",
+      "arachnoid"
+     ],
+     "key_text": "C — Leptomeninges (meningioma: whorls, meningothelial/arachnoid cap cells)",
+     "source_key": "เฉลย: C — Leptomeninges (meningioma: whorls, meningothelial/arachnoid cap cells)",
+     "image": "img/NERV-43-OSPE-027.jpg",
+     "image_caption": "Tumor"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE43",
+     "pages": [
+      9
+     ]
+    },
+    {
+     "paper": "OSPE43-KEY",
+     "pages": [
+      9
+     ]
+    }
+   ],
+   "tags": [
+    "pathology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "NERV-43-OSPE-028",
+   "block": "NERV",
+   "cohort": 43,
+   "n": 28,
+   "type": "OSPE",
+   "station": 28,
+   "stem": "สถานี 28: Charcot-Bouchard aneurysm rupture ตามภาพ มักเกิดจากเส้นเลือดไหนแตก (A MCA · B PCA · C ACA · D Middle meningeal artery · E Lenticulostriate artery)",
+   "items": [
+    {
+     "id": "28.1",
+     "prompt": "Charcot-Bouchard aneurysm rupture ตามภาพ มักเกิดจากเส้นเลือดไหนแตก",
+     "format": "short",
+     "accepted": [
+      "lenticulostriate",
+      "lenticulostraie"
+     ],
+     "keywords_all": [
+      "lenticulo"
+     ],
+     "key_text": "E — Lenticulostriate artery (แขนงของ MCA; intracerebral hemorrhage ที่ basal ganglia: putamen/thalamus)",
+     "source_key": "เฉลย: E — Lenticulostriate artery (แขนงของ MCA; intracerebral hemorrhage ที่ basal ganglia: putamen/thalamus)",
+     "image": "img/NERV-43-OSPE-028.jpg",
+     "image_caption": "Intracerebral hemorrhage"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE43",
+     "pages": [
+      9
+     ]
+    },
+    {
+     "paper": "OSPE43-KEY",
+     "pages": [
+      9
+     ]
+    }
+   ],
+   "tags": [
+    "pathology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "NERV-43-OSPE-029",
+   "block": "NERV",
+   "cohort": 43,
+   "n": 29,
+   "type": "OSPE",
+   "station": 29,
+   "stem": "สถานี 29: This type of CNS anomaly usually has (A Neural tube defect · C Agenesis of both kidneys)",
+   "items": [
+    {
+     "id": "29.1",
+     "prompt": "This type of CNS anomaly usually has",
+     "format": "short",
+     "accepted": [
+      "neural tube defect",
+      "ntd"
+     ],
+     "keywords_all": [
+      "neural tube"
+     ],
+     "key_text": "A — Neural tube defect (ภาพคือ anencephaly: ไม่มี skull และเนื้อสมองส่วนใหญ่)",
+     "source_key": "เฉลย: A — Neural tube defect (ภาพคือ anencephaly: ไม่มี skull และเนื้อสมองส่วนใหญ่)",
+     "image": "img/NERV-43-OSPE-029.jpg",
+     "image_caption": "Infant"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE43",
+     "pages": [
+      9
+     ]
+    },
+    {
+     "paper": "OSPE43-KEY",
+     "pages": [
+      9
+     ]
+    }
+   ],
+   "tags": [
+    "pathology"
+   ],
+   "source": "claude-mcp"
+  }
+ ]
+}

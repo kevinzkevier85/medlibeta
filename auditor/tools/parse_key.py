@@ -13,6 +13,8 @@ from extract import fix_zero_bbox
 
 AUD = Path(__file__).resolve().parents[1]
 ZOOM = 2.0
+import os
+XMAX = float(os.environ.get('KEY_XMAX', 100))  # question-number column limit; raise for multi-column (4-up) key sheets
 Q_START = re.compile(r"^\s*(\d{1,3})\s*[.)]")
 OPT = re.compile(r"^\s*([A-Ea-eกขคงจ])\s*[.)]?\s*(\S.*)?$")
 HEADER = re.compile(r"^VICHAKARN MED PSU", re.I)
@@ -26,11 +28,12 @@ def is_pink(r, g, b):
     yellow = r >= 235 and g >= 185 and b <= 130                                  # yellow highlighter (GI 41-43)
     orange = r >= 240 and 195 <= g <= 225 and 115 <= b <= 165 and r - b >= 80     # orange pill highlight (KUB 52)
     blue = b >= 245 and 170 <= r <= 210 and 200 <= g <= 232                      # light-blue pill highlight (KUB 44)
-    green = g >= 225 and r <= 190 and b <= 190 and g - r >= 45 and g - b >= 45  # mint-green pill highlight (Respiratory 52)
+    green = g >= 225 and r <= 200 and b <= 205 and g - r >= 45 and g - b >= 38  # mint-green pill highlight (Respiratory 52)
     teal = 150 <= r <= 190 and 200 <= g <= 230 and 180 <= b <= 215 and g - r >= 30 and 8 <= g - b <= 30  # pale teal pill highlight (Respiratory 49)
     cyan = b >= 250 and 150 <= r <= 185 and 230 <= g <= 250                    # bright-cyan pill highlight (Commed I 52)
     gray = 210 <= r <= 222 and max(r, g, b) - min(r, g, b) <= 2   # neutral grey highlight band (Respiratory 47)
-    return pink or lime or salmon or yellow or orange or blue or green or teal or cyan or gray
+    green2 = g >= 195 and r <= 160 and b <= 160 and g - r >= 55 and g - b >= 55  # medium green pill (Nervous 51)
+    return pink or lime or salmon or yellow or orange or blue or green or green2 or teal or cyan or gray
 
 
 def pink_fraction(pix, rect):
@@ -80,6 +83,10 @@ def circles_of(page):
             out.append(r)  # dark hand-drawn ring (Respiratory 49): unfilled stroke, roughly letter-sized
         elif c and max(c) < 0.15 and not d.get("fill") and 12 <= r.width <= 32 and 26 <= r.height <= 52 and r.x0 < 95 and 5 <= len(d.get("items", [])) <= 24:
             out.append(r)  # black hand-drawn check slash across the option letter (Respiratory 48)
+        elif c and not d.get("fill") and 6 <= r.width <= 40 and 10 <= r.height <= 45 and r.x0 < 150 and 1 <= len(d.get("items", [])) <= 30:
+            out.append(r)  # coloured/pencil slash across the option letter (Nervous 49)
+        elif d.get("fill") and max(d["fill"]) - min(d["fill"]) > 0.3 and 12 <= r.width <= 40 and 18 <= r.height <= 46 and r.x0 < 130 and len(d.get("items", [])) >= 20:
+            out.append(r)  # filled coloured hand-drawn slash/ring around the option letter (Nervous 49)
     return out
 
 
@@ -96,9 +103,9 @@ def parse(set_id, bare_numbers=False):
             if HEADER.match(txt):
                 continue
             m = Q_START.match(txt) or (bare_numbers and re.fullmatch(r"\s*(\d{1,3})\s*", txt))
-            if m and int(m.group(1)) == 1 and out and all(not v["score"] for v in out.values()) and rect.x0 < 100:
+            if m and int(m.group(1)) == 1 and out and all(not v["score"] for v in out.values()) and rect.x0 < XMAX:
                 out.clear(); expect = 1  # numbered instructions on the cover page looked like questions 1..n
-            if m and expect <= int(m.group(1)) <= expect + 60 and rect.x0 < 100:
+            if m and expect <= int(m.group(1)) <= expect + 60 and rect.x0 < XMAX:
                 cur = m.group(1)
                 expect = int(cur) + 1
                 out[cur] = {"answers": [], "score": {}, "note": "", "page": pno}
@@ -107,7 +114,7 @@ def parse(set_id, bare_numbers=False):
             if cur is None:
                 continue
             mo = OPT.match(txt)
-            if mo and rect.x0 < 200:
+            if mo and rect.x0 < XMAX + 100:
                 letter = {"ก": "A", "ข": "B", "ค": "C", "ง": "D", "จ": "E"}.get(mo.group(1), mo.group(1).upper())
                 box = pymupdf.Rect(rect.x0 - 6, rect.y0, rect.x1 + 6, rect.y1)
                 f = pink_fraction(pix, box)

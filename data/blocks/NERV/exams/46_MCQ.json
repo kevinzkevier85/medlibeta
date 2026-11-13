@@ -1,0 +1,2872 @@
+{
+ "meta": {
+  "set_id": "46_MCQ",
+  "block": "NERV",
+  "cohort": 46,
+  "type": "MCQ",
+  "title": "MCQ Nervous System · Med PSU 46",
+  "n_source_items": 60,
+  "skipped": [
+   "19",
+   "31",
+   "40",
+   "54"
+  ],
+  "generated_by": "auditor/tools/build_outputs.py — do not edit by hand"
+ },
+ "questions": [
+  {
+   "id": "NERV-46-MCQ-001",
+   "block": "NERV",
+   "cohort": 46,
+   "n": 1,
+   "type": "MCQ",
+   "stem": "Which of the following projects output to visceral nervous system",
+   "options": {
+    "A": "Ear",
+    "B": "Eye",
+    "C": "Skin",
+    "D": "Blood vessel"
+   },
+   "answer": "D",
+   "answer_status": "verified",
+   "explanation": "visceral (autonomic) output ไปที่ smooth muscle/gland เช่น หลอดเลือด ส่วน ear, eye (extraocular), skin เป็น somatic structures",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      1
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "nerv_46_MCQ_001",
+   "key_concept": "• ANS: visceral motor ไป smooth muscle, cardiac muscle, glands\n• somatic: skeletal muscle\n• หลอดเลือด = sympathetic vasoconstriction",
+   "mechanism": [
+    "sympathetic preganglionic",
+    {
+     "s": "postganglionic ไป smooth muscle ของหลอดเลือด",
+     "answer": true
+    },
+    "visceral nervous system output"
+   ],
+   "option_why": {
+    "A": "หู (ตามเฉลย) รับ somatic sensory ไม่ใช่ visceral output",
+    "B": "ตา (ตา extraocular) ควบคุมด้วย somatic motor (ยกเว้นกล้ามเนื้อม่านตา)",
+    "C": "ผิวหนังรับ somatic sensory แต่มี sympathetic ไปต่อมเหงื่อ/ขน ไม่ใช่คำตอบหลัก",
+    "D": "✓ Blood vessel (smooth muscle) ได้รับ visceral/autonomic motor output (sympathetic)"
+   }
+  },
+  {
+   "id": "NERV-46-MCQ-002",
+   "block": "NERV",
+   "cohort": 46,
+   "n": 2,
+   "type": "MCQ",
+   "stem": "A 40-year-old man complaining rapid and jerky involuntary movement of upper and lower limbs for 6 months and getting worse. He was diagnosed with Huntington’s chorea. Where is the lesion",
+   "options": {
+    "A": "Lentiform",
+    "B": "Striatum",
+    "C": "Substantia nigra",
+    "D": "Subthalamic nucleus",
+    "E": "Thalamus"
+   },
+   "answer": "B",
+   "answer_status": "verified",
+   "explanation": "rapid jerky involuntary movement = Huntington chorea จาก degeneration ของ striatum (caudate + putamen)",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      1
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "nerv_46_MCQ_002",
+   "key_concept": "• HD: CAG repeat, caudate atrophy, chorea + dementia\n• GABAergic medium spiny neuron ตาย",
+   "mechanism": [
+    "HTT mutation",
+    {
+     "s": "striatal GABAergic neurons ตาย",
+     "answer": true
+    },
+    "indirect pathway เสีย",
+    "chorea"
+   ],
+   "option_why": {
+    "A": "Lentiform (putamen+GP) ไม่ใช่ตำแหน่งหลักที่ตายใน HD",
+    "B": "✓ Striatum (caudate head) degenerate ใน Huntington",
+    "C": "Substantia nigra → Parkinson",
+    "D": "Subthalamic nucleus → hemiballismus",
+    "E": "Thalamus ไม่ใช่"
+   }
+  },
+  {
+   "id": "NERV-46-MCQ-003",
+   "block": "NERV",
+   "cohort": 46,
+   "n": 3,
+   "type": "MCQ",
+   "stem": "ผู้ป่วยมาด้วยอาการผิดปกติดังรูป (atrophy of masseter m., opened jaw deviates toward side of lesion) ถามว่ามีความผิดปกติที่ nerve ใด",
+   "options": {
+    "A": "Mandibular nerve",
+    "B": "Ophthalmic nerve",
+    "C": "Maxillary nerve",
+    "D": "Buccal nerve",
+    "E": "Temporal nerve"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "masseter atrophy + jaw deviates toward the lesion = mandibular nerve (V3) motor เสีย",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      1
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "nerv_46_MCQ_003",
+   "key_concept": "• V3 = sensory + motor ของ masticatory muscles\n• jaw deviates toward lesion (unopposed lateral pterygoid ข้างปกติ)",
+   "mechanism": [
+    "V3 ถูกทำลาย",
+    {
+     "s": "masseter/temporalis/pterygoid อ่อนแรง",
+     "answer": true
+    },
+    "masseter ฝ่อ",
+    "jaw เบี่ยงเข้าหาข้างรอยโรค"
+   ],
+   "option_why": {
+    "A": "✓ Mandibular nerve (V3) ส่ง motor ไป muscles of mastication",
+    "B": "Ophthalmic nerve (V1) เป็น sensory ล้วน",
+    "C": "Maxillary nerve (V2) เป็น sensory ล้วน",
+    "D": "Buccal nerve เป็น sensory ของแก้ม",
+    "E": "Temporal nerve เป็น branch ของ facial nerve"
+   },
+   "image": "img/NERV-46-MCQ-003.jpg",
+   "image_caption": "Atrophy of masseter · jaw deviates toward lesion"
+  },
+  {
+   "id": "NERV-46-MCQ-004",
+   "block": "NERV",
+   "cohort": 46,
+   "n": 4,
+   "type": "MCQ",
+   "stem": "Patient comes to hospital and complains of hoarseness and difficulty swallowing. Which nucleus is damaged in this patient?",
+   "options": {
+    "A": "Solitary nucleus",
+    "B": "Nucleus ambiguus",
+    "C": "Dorsal vagal nucleus",
+    "D": "Facial nucleus",
+    "E": "Hypoglossal nucleus"
+   },
+   "answer": "B",
+   "answer_status": "verified",
+   "explanation": "hoarseness + dysphagia = nucleus ambiguus (motor ของ CN IX, X)",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      1
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "nerv_46_MCQ_004",
+   "key_concept": "• nucleus ambiguus: CN IX, X (+ cranial XI)\n• รอยโรคทำ hoarseness, dysphagia, ↓gag",
+   "mechanism": [
+    "nucleus ambiguus เสีย",
+    {
+     "s": "กล้ามเนื้อ larynx/pharynx อ่อนแรง",
+     "answer": true
+    },
+    "เสียแหบ กลืนลำบาก"
+   ],
+   "option_why": {
+    "A": "Solitary nucleus = taste/visceral sensory",
+    "B": "✓ Nucleus ambiguus ให้ motor ต่อ pharynx/larynx",
+    "C": "Dorsal vagal nucleus = parasympathetic ต่อ viscera",
+    "D": "Facial nucleus = กล้ามเนื้อหน้า",
+    "E": "Hypoglossal nucleus = ลิ้น"
+   }
+  },
+  {
+   "id": "NERV-46-MCQ-005",
+   "block": "NERV",
+   "cohort": 46,
+   "n": 5,
+   "type": "MCQ",
+   "stem": "ผู้ป่วยได้รับบาดเจ็บบริเวณ Right posterior limb of internal capsule จะส่งผลอย่างไร",
+   "options": {
+    "A": "Atrophy of left leg",
+    "B": "Fasciculation of left leg",
+    "C": "Babinski’s sign positive, Right leg",
+    "D": "Hyporeflexia of right leg",
+    "E": "Weakness of left upper, lower extremities and face"
+   },
+   "answer": "E",
+   "answer_status": "verified",
+   "explanation": "posterior limb ของ internal capsule ขวา มี corticospinal/corticobulbar → อ่อนแรงซีกซ้ายทั้งแขน ขา และหน้า",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      3
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "nerv_46_MCQ_005",
+   "key_concept": "• posterior limb IC: CST + sensory radiation\n• รอยโรคด้านขวาทำอาการด้านซ้าย\n• UMN: spasticity, Babinski",
+   "mechanism": [
+    "right IC เสีย",
+    {
+     "s": "corticospinal/corticobulbar ตัด",
+     "answer": true
+    },
+    "contralateral hemiparesis รวมหน้า"
+   ],
+   "option_why": {
+    "A": "Atrophy ไม่เกิดใน UMN เฉียบพลัน และผิดข้าง",
+    "B": "Fasciculation เป็น LMN",
+    "C": "Babinski ที่ right leg ผิดข้าง (ต้องซ้าย)",
+    "D": "Hyporeflexia ไม่ใช่ UMN",
+    "E": "✓ Weakness ของ left upper+lower extremities และ face (contralateral)"
+   }
+  },
+  {
+   "id": "NERV-46-MCQ-006",
+   "block": "NERV",
+   "cohort": 46,
+   "n": 6,
+   "type": "MCQ",
+   "stem": "A 43-year-old woman has occipital headache โดยอาการเป็นมากขึ้นเรื่อยๆ มีประวัติ หกล้มไปทางขวา ตรวจร่างกายพบว่ามี intention tremor ของกล้ามเนื้อซีกขวา ถามว่าพยาธิ สภาพ อยู่ที่ตำแหน่งใด",
+   "options": {
+    "A": "Right cerebellar hemisphere",
+    "B": "Left cerebellar hemisphere",
+    "C": "Right Flocculonodular lobe",
+    "D": "Left Flocculonodular lobe",
+    "E": "Tonsil"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "intention tremor ซีกขวา + หกล้มไปขวา = ipsilateral (right) cerebellar hemisphere",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      3
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "nerv_46_MCQ_006",
+   "key_concept": "• cerebellar lesion → ipsilateral signs\n• hemisphere = limb coordination\n• vermis/flocculonodular = trunk/gait/eyes",
+   "mechanism": [
+    "right cerebellar hemisphere เสีย",
+    {
+     "s": "ipsilateral limb dysmetria",
+     "answer": true
+    },
+    "intention tremor ซีกขวา"
+   ],
+   "option_why": {
+    "A": "✓ Right cerebellar hemisphere: ipsilateral limb ataxia/intention tremor",
+    "B": "Left hemisphere ทำอาการซ้าย",
+    "C": "Flocculonodular lobe → truncal ataxia/nystagmus",
+    "D": "Left flocculonodular ไม่ตรงโจทย์",
+    "E": "Tonsil ไม่ใช่ตำแหน่ง tremor"
+   }
+  },
+  {
+   "id": "NERV-46-MCQ-007",
+   "block": "NERV",
+   "cohort": 46,
+   "n": 7,
+   "type": "MCQ",
+   "stem": "ผู้ป่วยมีอาการ nystagemus และ hypotonicity ของกล้ามเนื้อซีกขวา และมีประวัติชอบล้ม ไปทางขวา ตรวจพบ thrombosis ของ Posterior inferior cerebellar artery ถามว่าพยาธิ สภาพเกิดที่ตำแหน่งใด",
+   "options": {
+    "A": "Right inferior cerebellar peduncle",
+    "B": "Right middle cerebellar peduncle",
+    "C": "Right superior cerebellar peduncle",
+    "D": "Left inferior cerebellar peduncle",
+    "E": "Left Middle cerebellar peduncle"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "PICA thrombosis ขวา → right inferior cerebellar peduncle (lateral medulla) → nystagmus, hypotonia, ล้มไปขวา",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      4
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      4
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "nerv_46_MCQ_007",
+   "key_concept": "• PICA: lateral medulla + inferior cerebellum\n• ICP = spinocerebellar/vestibulocerebellar input\n• cerebellar signs ipsilateral",
+   "mechanism": [
+    "PICA ขวาตัน",
+    {
+     "s": "right ICP เสีย",
+     "answer": true
+    },
+    "nystagmus, hypotonia, ล้มไปขวา"
+   ],
+   "option_why": {
+    "A": "✓ Right ICP: ipsilateral cerebellar signs จากรอยโรค PICA",
+    "B": "MCP เกี่ยวกับ pontocerebellar (AICA)",
+    "C": "SCP เกี่ยวกับ dentato-rubro-thalamic (SCA)",
+    "D": "Left ICP ผิดข้าง",
+    "E": "Left MCP ผิดข้างและผิด artery"
+   }
+  },
+  {
+   "id": "NERV-46-MCQ-008",
+   "block": "NERV",
+   "cohort": 46,
+   "n": 8,
+   "type": "MCQ",
+   "stem": "Which one of the following is most likely to be founded in lower limb neurological examination several week after stroke.",
+   "options": {
+    "A": "Clonus",
+    "B": "Fasciculation",
+    "C": "Fibrillation",
+    "D": "Decrease muscle tone",
+    "E": "Hypoactive deep tendon reflex"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "หลัง stroke หลายสัปดาห์ = UMN signs ของ lower limb: clonus, spasticity, hyperreflexia",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      4
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      4
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "nerv_46_MCQ_008",
+   "key_concept": "• UMN chronic: spasticity, hyperreflexia, clonus, Babinski\n• LMN: flaccid, atrophy, fasciculation",
+   "mechanism": [
+    "stroke เสีย descending inhibition",
+    {
+     "s": "stretch reflex ตื่นตัว",
+     "answer": true
+    },
+    "clonus/spasticity"
+   ],
+   "option_why": {
+    "A": "✓ Clonus เป็น UMN sign ที่พบหลัง spinal shock หาย",
+    "B": "Fasciculation เป็น LMN",
+    "C": "Fibrillation เป็น LMN (EMG)",
+    "D": "ลด tone เป็นระยะเฉียบพลัน",
+    "E": "Hypoactive DTR ไม่ใช่ UMN chronic"
+   }
+  },
+  {
+   "id": "NERV-46-MCQ-009",
+   "block": "NERV",
+   "cohort": 46,
+   "n": 9,
+   "type": "MCQ",
+   "stem": "Which of the following descending tract stimulate extensor muscle",
+   "options": {
+    "A": "Rubrospinal tract",
+    "B": "Pontine reticulospinal tract",
+    "C": "Medullary reticulospinal tract",
+    "D": "Medial vestibulospinal tract",
+    "E": "Tectospinal tract"
+   },
+   "answer": "B",
+   "answer_status": "verified",
+   "explanation": "pontine reticulospinal tract กระตุ้น extensor (antigravity) muscles",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      4
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      4
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "nerv_46_MCQ_009",
+   "key_concept": "• pontine RST + lateral vestibulospinal = facilitate extensors\n• medullary RST = inhibit extensors\n• rubrospinal = flexors upper limb",
+   "mechanism": [
+    "pontine reticular formation",
+    {
+     "s": "reticulospinal ลง ipsilateral",
+     "answer": true
+    },
+    "กระตุ้น extensor motor neuron"
+   ],
+   "option_why": {
+    "A": "Rubrospinal กระตุ้น flexors ของแขน",
+    "B": "✓ Pontine reticulospinal ส่งเสริม extensor tone (antigravity)",
+    "C": "Medullary reticulospinal ยับยั้ง extensor",
+    "D": "Medial vestibulospinal คุมศีรษะ/ cervical",
+    "E": "Tectospinal คุมหัว/ตาอวัยวะ"
+   }
+  },
+  {
+   "id": "NERV-46-MCQ-010",
+   "block": "NERV",
+   "cohort": 46,
+   "n": 10,
+   "type": "MCQ",
+   "stem": "ตรวจ VOF โดยให้ผู้ป่วยหันหน้าไปทางซ้าย จะเกิดการตอบสนองอย่างไร",
+   "options": {
+    "A": "กระตุ้น vestibular nerve",
+    "B": "กระตุ้น abducens nerve ข้างขวา",
+    "C": "กระตุ้น abducens nerve ข้างซ้าย",
+    "D": "กระตุ้น oculomotor nerve ข้างขวา",
+    "E": "กระตุ้น oculomotor nerve ข้างซ้าย"
+   },
+   "answer": "B",
+   "answer_status": "verified",
+   "explanation": "vestibulo-ocular reflex: หันหน้าซ้าย → ตาหันขวาชดเชย → กระตุ้น abducens ขวา (ตาขวา abduct) + oculomotor ซ้าย (ตาซ้าย adduct)",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      5
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      5
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "nerv_46_MCQ_010",
+   "key_concept": "• VOR: head turn ซ้าย → eyes turn ขวา\n• left horizontal canal → … → right abducens nucleus + left oculomotor (ผ่าน MLF)\n• ทำให้ภาพนิ่งบน retina",
+   "mechanism": [
+    "หันศีรษะซ้าย",
+    "vestibular nerve ส่ง signal",
+    {
+     "s": "กระตุ้น abducens nucleus ขวา",
+     "answer": true
+    },
+    "ตาหันขวาชดเชย"
+   ],
+   "option_why": {
+    "A": "กระตุ้น vestibular nerve ไม่ใช่การตอบสนองของ VOR (เป็น afferent)",
+    "B": "✓ กระตุ้น abducens ขวา → ตาขวา abduct หันไปทางขวา",
+    "C": "abducens ซ้ายทำตาซ้าย abduct (ผิดทิศ)",
+    "D": "oculomotor ขวาทำตาขวา adduct (ผิด)",
+    "E": "oculomotor ซ้าย ทำตาซ้าย adduct (ร่วม แต่เฉลยเลือก abducens ขวา)"
+   }
+  },
+  {
+   "id": "NERV-46-MCQ-011",
+   "block": "NERV",
+   "cohort": 46,
+   "n": 11,
+   "type": "MCQ",
+   "stem": "ใน Direct pathway ส่วนใดถูกยับยั้งเพื่อให้เกิด voluntary control",
+   "options": {
+    "A": "Frontal cortex",
+    "B": "Subthalamic nucleus",
+    "C": "Substantia nigra (Pars compacta)",
+    "D": "Internal segment of Globus pallidus",
+    "E": "External segment of Globus pallidus"
+   },
+   "answer": "D",
+   "answer_status": "verified",
+   "explanation": "direct pathway: striatum ยับยั้ง GPi → thalamus ไม่ถูก inhibit → voluntary movement",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      5
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      5
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "nerv_46_MCQ_011",
+   "key_concept": "• direct: cortex → striatum ⊣ GPi ⊣ thalamus → cortex\n• disinhibition ทำให้เกิดการเคลื่อนไหว",
+   "mechanism": [
+    "cortex กระตุ้น striatum (D1)",
+    "striatum ยับยั้ง GPi",
+    {
+     "s": "thalamus ถูกปล่อย",
+     "answer": true
+    },
+    "motor cortex ทำงาน"
+   ],
+   "option_why": {
+    "A": "Frontal cortex เป็นต้นทาง (excitatory) ไม่ถูกยับยั้ง",
+    "B": "STN เป็น indirect pathway",
+    "C": "SNpc ปล่อย dopamine",
+    "D": "✓ GPi ถูก striatum ยับยั้ง (disinhibition ของ thalamus)",
+    "E": "GPe เกี่ยวกับ indirect pathway"
+   }
+  },
+  {
+   "id": "NERV-46-MCQ-012",
+   "block": "NERV",
+   "cohort": 46,
+   "n": 12,
+   "type": "MCQ",
+   "stem": "Which one is true about molecular mechanism in long term depression of cerebellum",
+   "options": {
+    "A": "NMDA receptor activation",
+    "B": "Phospholipase C inactivation",
+    "C": "Internalization of AMPA receptor",
+    "D": "Increase intracellular Ca2+ concentration",
+    "E": "Dephosphorylation of intracellular protein"
+   },
+   "answer": "C",
+   "answer_status": "verified",
+   "explanation": "cerebellar LTD ที่ parallel fiber–Purkinje synapse เกิดจาก internalization ของ AMPA receptor",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      5
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      5
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "nerv_46_MCQ_012",
+   "key_concept": "• cerebellar LTD: climbing + parallel fibre → mGluR1/PLC/Ca2+ → PKC → AMPA internalization\n• motor learning",
+   "mechanism": [
+    "climbing fibre + parallel fibre active",
+    "Ca2+ ใน Purkinje เพิ่ม",
+    {
+     "s": "PKC phosphorylate GluR2 → AMPA internalize",
+     "answer": true
+    },
+    "LTD"
+   ],
+   "option_why": {
+    "A": "NMDA ไม่เกี่ยวหลักกับ cerebellar LTD (LTP ใน hippocampus)",
+    "B": "PLC ถูกกระตุ้น (ไม่ใช่ inactivate) ใน LTD",
+    "C": "✓ Internalization ของ AMPA receptor ที่ Purkinje ใน LTD",
+    "D": "ที่จริง Ca2+ เพิ่มก็จำเป็นแต่เฉลยเลือก C",
+    "E": "Dephosphorylation ไม่ใช่ (LTD ใช้ phosphorylation ของ GluR2)"
+   }
+  },
+  {
+   "id": "NERV-46-MCQ-013",
+   "block": "NERV",
+   "cohort": 46,
+   "n": 13,
+   "type": "MCQ",
+   "stem": "What is the function of intrafusal muscle",
+   "options": {
+    "A": "Cause voluntary movement",
+    "B": "Generate force resist to stretch",
+    "C": "Sense ต่อการเปลี่ยนแปลง length ของ muscle"
+   },
+   "answer": "C",
+   "answer_status": "verified",
+   "explanation": "intrafusal fiber (muscle spindle) รับรู้การเปลี่ยนแปลงความยาวของกล้ามเนื้อ",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      6
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      6
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "nerv_46_MCQ_013",
+   "key_concept": "• intrafusal = sense length (spindle) · extrafusal = force\n• gamma MN ปรับ sensitivity",
+   "mechanism": [
+    "กล้ามเนื้อถูกยืด",
+    {
+     "s": "intrafusal fibre ถูกยืด",
+     "answer": true
+    },
+    "Ia afferent ส่งสัญญาณ"
+   ],
+   "option_why": {
+    "A": "Voluntary movement เป็นหน้าที่ของ extrafusal",
+    "B": "Generate force เป็น extrafusal",
+    "C": "✓ Intrafusal sense length change ผ่าน Ia/II afferent"
+   }
+  },
+  {
+   "id": "NERV-46-MCQ-014",
+   "block": "NERV",
+   "cohort": 46,
+   "n": 14,
+   "type": "MCQ",
+   "stem": "Which of the following is correct about Knee jerk’s reflex arc",
+   "options": {
+    "A": "Stimuli is a quadriceps contraction",
+    "B": "Efferent fiber is gramma motor neuron",
+    "C": "Afferent fiber is Ia fiber",
+    "D": "Integrate spinal cord S2-S4",
+    "E": "Receptor is patella tendon"
+   },
+   "answer": "C",
+   "answer_status": "verified",
+   "explanation": "knee jerk: receptor = muscle spindle, afferent = Ia fibre, integration ที่ L2–L4, efferent = alpha MN",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      6
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      6
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "nerv_46_MCQ_014",
+   "key_concept": "• knee jerk: L2–L4 · ankle jerk: S1–S2\n• monosynaptic: Ia → alpha MN",
+   "mechanism": [
+    "เคาะ patellar tendon",
+    "spindle ถูกยืด",
+    {
+     "s": "Ia afferent เข้า cord L2–L4",
+     "answer": true
+    },
+    "alpha MN → quadriceps"
+   ],
+   "option_why": {
+    "A": "Stimulus คือการยืด (tap) ไม่ใช่ quadriceps contraction",
+    "B": "Efferent คือ alpha motor neuron ไม่ใช่ gamma",
+    "C": "✓ Afferent คือ Ia fibre",
+    "D": "Integrate ที่ spinal cord L2–L4 ไม่ใช่ S2–S4",
+    "E": "Receptor คือ muscle spindle ใน quadriceps ไม่ใช่ patellar tendon"
+   }
+  },
+  {
+   "id": "NERV-46-MCQ-015",
+   "block": "NERV",
+   "cohort": 46,
+   "n": 15,
+   "type": "MCQ",
+   "stem": "ข้อใดกระตุ้น monosynaptic reflex",
+   "options": {
+    "A": "จับของร้อน",
+    "B": "ยกของหนักเกิน",
+    "C": "เคาะเอ็นร้อยหวาย"
+   },
+   "answer": "C",
+   "answer_status": "verified",
+   "explanation": "monosynaptic reflex = stretch reflex เช่น เคาะ Achilles tendon",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      6
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      6
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "nerv_46_MCQ_015",
+   "key_concept": "• monosynaptic = stretch reflex เท่านั้น\n• withdrawal = polysynaptic",
+   "mechanism": [
+    "tendon ถูกเคาะ",
+    {
+     "s": "Ia → alpha MN โดยตรง",
+     "answer": true
+    },
+    "กล้ามเนื้อหดตัว"
+   ],
+   "option_why": {
+    "A": "จับของร้อน = withdrawal reflex (polysynaptic)",
+    "B": "ยกของหนักเกินทำ GTO reflex (disynaptic inhibitory)",
+    "C": "✓ เคาะ tendon = stretch reflex (monosynaptic)"
+   }
+  },
+  {
+   "id": "NERV-46-MCQ-016",
+   "block": "NERV",
+   "cohort": 46,
+   "n": 16,
+   "type": "MCQ",
+   "stem": "ผู้ป่วย loss pain, temperature, proprioception and vibration of left body and loss of pain in right face และเมื่อให้ผู้ป่วยอ้าปากพบว่า jaw เบี้ยวไปทางขวา ถามว่าพยาธิสภาพอยู่ ที่ใด",
+   "options": {
+    "A": "Midbrain",
+    "B": "Pons",
+    "C": "Medulla",
+    "D": "Spinal cord",
+    "E": "Thalamus"
+   },
+   "answer": "B",
+   "answer_status": "verified",
+   "explanation": "left body ทุก modality เสีย + right face pain + jaw เบี้ยวขวา = right pons (ML+spinothalamic ที่ไขว้แล้ว + spinal V ขวา + motor V ขวา)",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      6
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      6
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "nerv_46_MCQ_016",
+   "key_concept": "• pons: motor V + principal/spinal V + ML + ST\n• jaw deviates toward lesion\n• ตัวไขว้แล้ว หน้ายังไม่ไขว้",
+   "mechanism": [
+    "รอยโรค pons ขวา",
+    {
+     "s": "motor V ขวาเสีย jaw เบี้ยวขวา",
+     "answer": true
+    },
+    "spinal V ขวา pain หน้าขวาหาย",
+    "ML+ST → ซ้ายตัวเสีย"
+   ],
+   "option_why": {
+    "A": "Midbrain ไม่มี trigeminal motor/spinal",
+    "B": "✓ Pons ขวา: ML + ST (ซ้ายตัว), spinal V + motor V ขวา",
+    "C": "Medulla มักมี nucleus ambiguus ร่วม และ ML ไม่เสียแบบนี้",
+    "D": "Spinal cord ไม่มีอาการหน้า",
+    "E": "Thalamus ทำ sensory ซีกเดียว ไม่มี jaw deviation"
+   }
+  },
+  {
+   "id": "NERV-46-MCQ-017",
+   "block": "NERV",
+   "cohort": 46,
+   "n": 17,
+   "type": "MCQ",
+   "stem": "เด็กอายุ 8 ขวบ โดนลูกบอลปาใส่ที่หน้า แล้วเอามือลูบๆแผล เพื่ออะไร",
+   "options": {
+    "A": "Decrease norepinephrine secretion at spinal cord",
+    "B": "Decrease enkephalin secretion at spinal cord",
+    "C": "Stimulates A-beta fibers to stimulate inhibitory neuron"
+   },
+   "answer": "C",
+   "answer_status": "verified",
+   "explanation": "ลูบแผลลด pain = กระตุ้น A-beta fibers → inhibitory interneuron ที่ dorsal horn (gate control)",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      7
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      7
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "nerv_46_MCQ_017",
+   "key_concept": "• gate control: A-β ⊣ pain transmission\n• rubbing ลดปวด\n• interneuron ใน substantia gelatinosa",
+   "mechanism": [
+    "A-β กระตุ้น",
+    {
+     "s": "inhibitory interneuron ใน dorsal horn",
+     "answer": true
+    },
+    "ยับยั้ง projection neuron",
+    "pain ลดลง"
+   ],
+   "option_why": {
+    "A": "Decrease NE ไม่ใช่ (NE ช่วยยับยั้ง pain)",
+    "B": "Decrease enkephalin ไม่ใช่",
+    "C": "✓ A-beta ถูกกระตุ้น → inhibitory interneuron ปิด gate"
+   }
+  },
+  {
+   "id": "NERV-46-MCQ-018",
+   "block": "NERV",
+   "cohort": 46,
+   "n": 18,
+   "type": "MCQ",
+   "stem": "ผู้หญิงอายุ 30 ปี มาด้วยอาการ abdominal pain, Diagnosed with inflammatory bowel disease. What is the mechanism of pain in this patient?",
+   "options": {
+    "A": "Decrease serotonin secretion",
+    "B": "Increase A-delta fibers activity",
+    "C": "Increase C fibers threshold",
+    "D": "Increase C fiber activity"
+   },
+   "answer": "D",
+   "answer_status": "verified",
+   "explanation": "IBD pain = visceral/inflammatory pain เพิ่ม C fiber activity",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      7
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      7
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "nerv_46_MCQ_018",
+   "key_concept": "• C fibres: dull/diffuse, visceral\n• A-delta: sharp, fast\n• inflammation → sensitization ของ C fibres",
+   "mechanism": [
+    "inflammation",
+    "mediators กระตุ้น nociceptor",
+    {
+     "s": "C fibre activity เพิ่ม",
+     "answer": true
+    },
+    "ปวดท้อง"
+   ],
+   "option_why": {
+    "A": "Decrease serotonin ไม่ใช่กลไกหลัก",
+    "B": "A-delta ให้ sharp pain เร็ว ไม่ใช่ visceral pain",
+    "C": "Increase C threshold ผิด (ต้องลด)",
+    "D": "✓ Increase C fiber activity: dull visceral pain"
+   }
+  },
+  {
+   "id": "NERV-46-MCQ-020",
+   "block": "NERV",
+   "cohort": 46,
+   "n": 20,
+   "type": "MCQ",
+   "stem": "nervous system พัฒนามาจากส่วนใด",
+   "options": {
+    "A": "Ectoderm",
+    "B": "Mesoderm",
+    "C": "Endoderm",
+    "D": "Mesoderm and Ectoderm",
+    "E": "Endoderm and Mesoderm"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "nervous system พัฒนาจาก ectoderm (neuroectoderm + neural crest)",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      7
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      7
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "nerv_46_MCQ_020",
+   "key_concept": "• neural plate = ectoderm\n• microglia = mesoderm (ข้อยกเว้น)",
+   "mechanism": [
+    "ectoderm หนาตัวเป็น neural plate",
+    {
+     "s": "neural tube/crest",
+     "answer": true
+    },
+    "neurons/glia"
+   ],
+   "option_why": {
+    "A": "✓ Ectoderm → neural tube/crest",
+    "B": "Mesoderm → muscle/bone",
+    "C": "Endoderm → gut epithelium",
+    "D": "Mesoderm+Ectoderm ไม่ใช่",
+    "E": "Endoderm+Mesoderm ไม่ใช่"
+   }
+  },
+  {
+   "id": "NERV-46-MCQ-021",
+   "block": "NERV",
+   "cohort": 46,
+   "n": 21,
+   "type": "MCQ",
+   "stem": "What is the result of failure to close anterior neuropore",
+   "options": {
+    "A": "Anencephaly",
+    "B": "Spina bifida",
+    "C": "Meningomyelocele",
+    "D": "Syringomyelia"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "anterior neuropore ปิดไม่สนิท → anencephaly",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      7
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      7
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "nerv_46_MCQ_021",
+   "key_concept": "• anterior neuropore → anencephaly\n• posterior neuropore → spina bifida/MMC",
+   "mechanism": [
+    "neuropore ปิดไม่สนิท",
+    {
+     "s": "forebrain/skull vault ไม่พัฒนา",
+     "answer": true
+    },
+    "anencephaly"
+   ],
+   "option_why": {
+    "A": "✓ Anencephaly จาก anterior neuropore",
+    "B": "Spina bifida จาก posterior neuropore",
+    "C": "Meningomyelocele จาก posterior neuropore",
+    "D": "Syringomyelia ไม่ใช่ neuropore defect"
+   }
+  },
+  {
+   "id": "NERV-46-MCQ-022",
+   "block": "NERV",
+   "cohort": 46,
+   "n": 22,
+   "type": "MCQ",
+   "stem": "สมองส่วน medulla พัฒนามาจากอะไร",
+   "options": {
+    "A": "Diencephalon",
+    "B": "Telencephalon",
+    "C": "Mesencephalon",
+    "D": "Metencephalon",
+    "E": "Myelencephalon"
+   },
+   "answer": "E",
+   "answer_status": "verified",
+   "explanation": "medulla พัฒนาจาก myelencephalon",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      8
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      8
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "nerv_46_MCQ_022",
+   "key_concept": "• prosencephalon → tel+di · mesencephalon · rhombencephalon → met+myel\n• myelencephalon → medulla oblongata, metencephalon → pons + cerebellum",
+   "mechanism": [
+    "neural tube 5 vesicles",
+    {
+     "s": "myelencephalon",
+     "answer": true
+    },
+    "medulla oblongata"
+   ],
+   "option_why": {
+    "A": "Diencephalon → thalamus/hypothalamus",
+    "B": "Telencephalon → cerebral hemispheres",
+    "C": "Mesencephalon → midbrain",
+    "D": "Metencephalon → pons + cerebellum",
+    "E": "✓ Myelencephalon → medulla"
+   }
+  },
+  {
+   "id": "NERV-46-MCQ-023",
+   "block": "NERV",
+   "cohort": 46,
+   "n": 23,
+   "type": "MCQ",
+   "stem": "จากรูป ผู้ป่วยมีความผิดปกติในการพัฒนาของสมองส่วนใด",
+   "options": {
+    "A": "Diencephalon",
+    "B": "Telencephalon",
+    "C": "Mesencephalon",
+    "D": "Metencephalon",
+    "E": "Myelencephalon"
+   },
+   "answer": "B",
+   "answer_status": "verified",
+   "explanation": "รูปแสดงสมองซีกใหญ่ผิดปกติ (cerebral hemispheres) → telencephalon",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      8
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      8
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "nerv_46_MCQ_023",
+   "key_concept": "• telencephalon = cerebral hemispheres\n• holoprosencephaly/lissencephaly เกี่ยวข้อง",
+   "mechanism": [
+    "telencephalon เกิดจาก prosencephalon",
+    "hemispheres เจริญเป็น cerebral cortex",
+    {
+     "s": "telencephalon พัฒนาผิดปกติ",
+     "answer": true
+    },
+    "cerebral hemispheres ผิดรูป"
+   ],
+   "option_why": {
+    "A": "Diencephalon → thalamus",
+    "B": "✓ Telencephalon → cerebral hemispheres (ผิดปกติในรูป)",
+    "C": "Mesencephalon → midbrain",
+    "D": "Metencephalon → pons/cerebellum",
+    "E": "Myelencephalon → medulla"
+   },
+   "image": "img/NERV-46-MCQ-023.jpg",
+   "image_caption": "Brain malformation"
+  },
+  {
+   "id": "NERV-46-MCQ-024",
+   "block": "NERV",
+   "cohort": 46,
+   "n": 24,
+   "type": "MCQ",
+   "stem": "Meningoencephalocele associated with",
+   "options": {
+    "A": "Spina bifida",
+    "B": "Cranium bifidum",
+    "C": "Syringomyelia",
+    "D": "Meningomyelocele"
+   },
+   "answer": "B",
+   "answer_status": "verified",
+   "explanation": "meningoencephalocele เกี่ยวกับ cranium bifidum",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      8
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      8
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "nerv_46_MCQ_024",
+   "key_concept": "• cranium bifidum → meningocele/encephalocele/meningoencephalocele\n• spina bifida → ไขสันหลัง",
+   "mechanism": [
+    "กระดูกกะโหลกส่วนหลังปิดไม่สนิท (cranium bifidum)",
+    "meninges ยื่นออกทางช่อง",
+    {
+     "s": "meninges + brain ยื่นออกเป็น meningoencephalocele",
+     "answer": true
+    }
+   ],
+   "option_why": {
+    "A": "Spina bifida คือกระดูกสันหลัง",
+    "B": "✓ Cranium bifidum (cranial defect) ทำให้ brain/meninges ยื่นออก",
+    "C": "Syringomyelia ไม่เกี่ยว",
+    "D": "Meningomyelocele คือกระดูกสันหลัง"
+   }
+  },
+  {
+   "id": "NERV-46-MCQ-025",
+   "block": "NERV",
+   "cohort": 46,
+   "n": 25,
+   "type": "MCQ",
+   "stem": "What is the most important complication of massive intracerebral hemorrhage",
+   "options": {
+    "A": "Cerebral edema",
+    "B": "Hydrocephalus",
+    "C": "Cerebral infraction",
+    "D": "Cerebral atrophy",
+    "E": "Cerebral herniation"
+   },
+   "answer": "E",
+   "answer_status": "verified",
+   "explanation": "massive ICH → ICP สูง → herniation (ภาวะแทรกซ้อนสำคัญและอันตรายสุด)",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      8
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      8
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "nerv_46_MCQ_025",
+   "key_concept": "• mass effect → herniation (subfalcine, uncal, tonsillar)\n• Cushing reflex",
+   "mechanism": [
+    "เลือดก้อนใหญ่",
+    "ICP เพิ่ม",
+    {
+     "s": "สมองถูกดันผ่าน dura/foramen",
+     "answer": true
+    },
+    "herniation → brainstem compression"
+   ],
+   "option_why": {
+    "A": "Cerebral edema เกิดตามหลัง",
+    "B": "Hydrocephalus พบได้แต่ไม่สำคัญสุด",
+    "C": "Cerebral infarction เกิดตามหลัง",
+    "D": "Atrophy เกิดระยะเรื้อรัง",
+    "E": "✓ Herniation ทำให้เสียชีวิต"
+   }
+  },
+  {
+   "id": "NERV-46-MCQ-026",
+   "block": "NERV",
+   "cohort": 46,
+   "n": 26,
+   "type": "MCQ",
+   "stem": "Which of the following is most sensitive to hypoxia",
+   "options": {
+    "A": "Purkinje cell",
+    "B": "Pyramidal cell",
+    "C": "Microglia",
+    "D": "Oligodendrocyte",
+    "E": "Astrocyte"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "Purkinje cell ไวต่อ hypoxia มากที่สุด (รวม hippocampal CA1)",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      9
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      9
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "nerv_46_MCQ_026",
+   "key_concept": "• neuron > oligodendrocyte > astrocyte/microglia\n• selective vulnerability: CA1, Purkinje, neocortex layer 3,5,6",
+   "mechanism": [
+    "hypoxia",
+    {
+     "s": "neuron ไวที่สุด (Purkinje)",
+     "answer": true
+    },
+    "red neuron"
+   ],
+   "option_why": {
+    "A": "✓ Purkinje cell ไวสุด",
+    "B": "Pyramidal cell ไวรองลงมา (CA1)",
+    "C": "Microglia ทนกว่า",
+    "D": "Oligodendrocyte ไวปานกลาง",
+    "E": "Astrocyte ทนที่สุด"
+   }
+  },
+  {
+   "id": "NERV-46-MCQ-027",
+   "block": "NERV",
+   "cohort": 46,
+   "n": 27,
+   "type": "MCQ",
+   "stem": "Increase intracranial pressure จะส่งผลให้เกิดอะไร",
+   "options": {
+    "A": "Increase HR Increase RR",
+    "B": "Increase BP Decrease HR",
+    "C": "Increase BP Increase HR",
+    "D": "Decrease BP Increase HR",
+    "E": "Decrease BP Decrease HR"
+   },
+   "answer": "B",
+   "answer_status": "verified",
+   "explanation": "ICP สูง → Cushing reflex: BP ↑, HR ↓, irregular respiration",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      9
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      9
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "nerv_46_MCQ_027",
+   "key_concept": "• Cushing triad: hypertension, bradycardia, irregular breathing\n• ICP สูง → brainstem ischemia",
+   "mechanism": [
+    "ICP สูง",
+    "cerebral perfusion ลด",
+    {
+     "s": "medulla vasomotor center ↑ BP",
+     "answer": true
+    },
+    "baroreceptor → HR ↓"
+   ],
+   "option_why": {
+    "A": "HR↑ RR↑ ไม่ใช่",
+    "B": "✓ Increase BP, decrease HR ตรงกับ Cushing reflex",
+    "C": "BP↑ HR↑ ไม่ใช่",
+    "D": "BP↓ HR↑ ไม่ใช่",
+    "E": "BP↓ HR↓ ไม่ใช่"
+   }
+  },
+  {
+   "id": "NERV-46-MCQ-028",
+   "block": "NERV",
+   "cohort": 46,
+   "n": 28,
+   "type": "MCQ",
+   "stem": "Berry aneurysm ชอบเกิดที่ใด",
+   "options": {
+    "A": "Anterior communicating artery",
+    "B": "Posterior communicating artery",
+    "C": "Anterior cerebral artery",
+    "D": "Middle cerebral artery",
+    "E": "Posterior cerebral artery"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "berry aneurysm พบบ่อยสุดที่ anterior communicating artery",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      9
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      9
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "nerv_46_MCQ_028",
+   "key_concept": "• berry aneurysm: ACom > MCA bifurcation > PCom\n• สัมพันธ์ ADPKD",
+   "mechanism": [
+    "ผนังอ่อนแอที่ bifurcation",
+    {
+     "s": "outpouching",
+     "answer": true
+    },
+    "แตก → SAH"
+   ],
+   "option_why": {
+    "A": "✓ ACom พบบ่อยสุด",
+    "B": "PCom พบรองลงมา",
+    "C": "ACA ไม่ใช่",
+    "D": "MCA bifurcation พบเป็นอันดับ 3",
+    "E": "PCA พบน้อย"
+   }
+  },
+  {
+   "id": "NERV-46-MCQ-029",
+   "block": "NERV",
+   "cohort": 46,
+   "n": 29,
+   "type": "MCQ",
+   "stem": "Which micro-organism cause acute pyogenic meningitis, septicemia, purpura and hemorrhagic infarction of adrenal gland",
+   "options": {
+    "A": "E.coli",
+    "B": "Neisseria meningitidis",
+    "C": "Listeria monocytogenes",
+    "D": "H. Influenzae",
+    "E": "Streptococcus pneumoniae"
+   },
+   "answer": "B",
+   "answer_status": "verified",
+   "explanation": "acute pyogenic meningitis + septicemia + purpura + adrenal hemorrhage (Waterhouse-Friderichsen) = Neisseria meningitidis",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      9
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      9
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "nerv_46_MCQ_029",
+   "key_concept": "• WFS = meningococcemia\n• petechiae/purpura + shock",
+   "mechanism": [
+    "N. meningitidis bacteremia",
+    "endotoxin",
+    {
+     "s": "adrenal hemorrhage + DIC",
+     "answer": true
+    },
+    "purpura"
+   ],
+   "option_why": {
+    "A": "E. coli พบในทารกแรกเกิด",
+    "B": "✓ N. meningitidis: purpura + adrenal hemorrhage",
+    "C": "Listeria พบในภูมิคุ้มกันต่ำ",
+    "D": "H. influenzae พบในเด็กไม่ได้รับวัคซีน",
+    "E": "S. pneumoniae ไม่ทำ Waterhouse-Friderichsen เด่น"
+   }
+  },
+  {
+   "id": "NERV-46-MCQ-030",
+   "block": "NERV",
+   "cohort": 46,
+   "n": 30,
+   "type": "MCQ",
+   "stem": "Where is the common location of tuberculous meningitis",
+   "options": {
+    "A": "Superior sagittal sinus",
+    "B": "Tentorium cerebri",
+    "C": "Basal cistern",
+    "D": "Temporal lobe",
+    "E": "Straight sinus"
+   },
+   "answer": "C",
+   "answer_status": "verified",
+   "explanation": "TB meningitis ชอบเกิดที่ basal cistern (basal meningitis)",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      10
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      10
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "nerv_46_MCQ_030",
+   "key_concept": "• TB meningitis: basal exudate → CN palsy, hydrocephalus\n• granulomatous",
+   "mechanism": [
+    "TB เข้าสมอง",
+    {
+     "s": "exudate ที่ basal cistern",
+     "answer": true
+    },
+    "CN palsy/hydrocephalus"
+   ],
+   "option_why": {
+    "A": "Superior sagittal sinus ไม่ใช่",
+    "B": "Tentorium cerebri ไม่ใช่",
+    "C": "✓ Basal cistern: exudate ที่ base ของสมอง",
+    "D": "Temporal lobe ไม่ใช่",
+    "E": "Straight sinus ไม่ใช่"
+   }
+  },
+  {
+   "id": "NERV-46-MCQ-032",
+   "block": "NERV",
+   "cohort": 46,
+   "n": 32,
+   "type": "MCQ",
+   "stem": "A 15-year-old girl complained of headache, alterations in mood, behavior and memory. MRI scan showed lesion at the right temporal lobe and orbital gyrus of right frontal lobe. Brain biopsy showed intranuclear inclusions in both neurons and glia. What is the diagnosis",
+   "options": {
+    "A": "Rabies encephalitis",
+    "B": "Treponema pallidum encephalitis",
+    "C": "Herpes simplex virus type 1 encephalitis"
+   },
+   "answer": "C",
+   "answer_status": "verified",
+   "explanation": "ภาวะเปลี่ยนแปลงพฤติกรรม + temporal/orbitofrontal lesion + intranuclear inclusion = HSV-1 encephalitis",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      10
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      10
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "nerv_46_MCQ_032",
+   "key_concept": "• HSV-1 encephalitis: temporal/orbitofrontal, hemorrhagic necrosis\n• Cowdry A intranuclear\n• รักษา acyclovir",
+   "mechanism": [
+    "HSV-1 reactivate",
+    "trigeminal ganglion → temporal lobe",
+    {
+     "s": "neuron/glia ติดเชื้อ intranuclear inclusion",
+     "answer": true
+    },
+    "necrosis"
+   ],
+   "option_why": {
+    "A": "Rabies: Negri bodies ในไซโตพลาสซึม",
+    "B": "Treponema ทำ neurosyphilis",
+    "C": "✓ HSV-1: temporal lobe + Cowdry A (intranuclear inclusion)"
+   }
+  },
+  {
+   "id": "NERV-46-MCQ-033",
+   "block": "NERV",
+   "cohort": 46,
+   "n": 33,
+   "type": "MCQ",
+   "stem": "What is the symptoms of Syringomyelia",
+   "options": {
+    "A": "Kyphoscoliosis",
+    "B": "Segmental loss of discriminative touch",
+    "C": "Segmental loss of pain and temperature sensation"
+   },
+   "answer": "C",
+   "answer_status": "verified",
+   "explanation": "syringomyelia: segmental loss of pain & temperature (cape distribution) จากตัด anterior white commissure",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      10
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      10
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "nerv_46_MCQ_033",
+   "key_concept": "• syrinx ตัด spinothalamic ที่ไขว้\n• cape sensory loss, DC ปกติ\n• สัมพันธ์ Chiari I",
+   "mechanism": [
+    "syrinx ที่ central canal",
+    {
+     "s": "ตัด crossing spinothalamic fibers",
+     "answer": true
+    },
+    "segmental pain/temp loss"
+   ],
+   "option_why": {
+    "A": "Kyphoscoliosis พบได้แต่ไม่ใช่อาการ neurologic หลัก",
+    "B": "Discriminative touch ปกติ (DC ไม่เสีย)",
+    "C": "✓ Segmental loss of pain/temperature ตรงกับ syrinx"
+   }
+  },
+  {
+   "id": "NERV-46-MCQ-034",
+   "block": "NERV",
+   "cohort": 46,
+   "n": 34,
+   "type": "MCQ",
+   "stem": "Which of the following has the least clinical effect",
+   "options": {
+    "A": "Corpus callosum agenesis",
+    "B": "Neuronal heteropia",
+    "C": "Agyria",
+    "D": "Macrogyria",
+    "E": "Lissencephaly"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "Corpus callosum agenesis มักไม่ทำอาการทางคลินิกชัดเจน",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      11
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      11
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "nerv_46_MCQ_034",
+   "key_concept": "• corpus callosum agenesis: บางรายไม่มีอาการ\n• lissencephaly/agyria รุนแรง",
+   "mechanism": [
+    "callosal fibres หายไป",
+    {
+     "s": "เส้นทางอื่นชดเชย",
+     "answer": true
+    },
+    "อาการเล็กน้อย"
+   ],
+   "option_why": {
+    "A": "✓ Corpus callosum agenesis มักไม่มี/น้อยอาการ",
+    "B": "Heterotopia ทำ seizure",
+    "C": "Agyria ทำ severe retardation",
+    "D": "Macrogyria ทำ seizure/delay",
+    "E": "Lissencephaly ทำ severe retardation + seizure"
+   }
+  },
+  {
+   "id": "NERV-46-MCQ-035",
+   "block": "NERV",
+   "cohort": 46,
+   "n": 35,
+   "type": "MCQ",
+   "stem": "ผู้ป่วยชายอายุ 65 ปี มี vision loss และผลLab พบ cell เป็น proliferative fibrous โดย ก้อนแบ่งเป็น 2 area ชัดเจน คือมีส่วน hypercellularity และ hypocellularity. What is the diagnosis",
+   "options": {
+    "A": "Hemangioma",
+    "B": "Schwannoma",
+    "C": "Neurofibroma",
+    "D": "Meningioma",
+    "E": "Craniopharyngioma"
+   },
+   "answer": "B",
+   "answer_status": "verified",
+   "explanation": "vision loss + tumor 2 areas (hypercellular + hypocellular = Antoni A/B) = schwannoma (vestibular/optic)",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      11
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      11
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "nerv_46_MCQ_035",
+   "key_concept": "• schwannoma: Antoni A/B, Verocay body, S100+\n• NF2 → bilateral vestibular",
+   "mechanism": [
+    "Schwann cell tumor",
+    {
+     "s": "Antoni A + Antoni B pattern",
+     "answer": true
+    },
+    "S100+"
+   ],
+   "option_why": {
+    "A": "Hemangioma ไม่ใช่",
+    "B": "✓ Schwannoma: Antoni A (cellular) + Antoni B (loose)",
+    "C": "Neurofibroma ไม่มี Antoni A/B",
+    "D": "Meningioma มี whorls/psammoma",
+    "E": "Craniopharyngioma เป็น cystic/calcified"
+   }
+  },
+  {
+   "id": "NERV-46-MCQ-036",
+   "block": "NERV",
+   "cohort": 46,
+   "n": 36,
+   "type": "MCQ",
+   "stem": "Which type of brain tumor can cross corpus callosum",
+   "options": {
+    "A": "Anaplastic astrocytoma",
+    "B": "Glioblastoma multiforme",
+    "C": "Oligodendroglioma",
+    "D": "Myxopapillary ependymoma",
+    "E": "Ganglioneuroblastoma"
+   },
+   "answer": "B",
+   "answer_status": "verified",
+   "explanation": "Glioblastoma multiforme ข้าม corpus callosum (butterfly glioma)",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      11
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      11
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "nerv_46_MCQ_036",
+   "key_concept": "• butterfly glioma = GBM ข้าม corpus callosum\n• necrosis + microvascular proliferation",
+   "mechanism": [
+    "GBM โตแทรกซึม",
+    {
+     "s": "ผ่าน corpus callosum",
+     "answer": true
+    },
+    "butterfly pattern"
+   ],
+   "option_why": {
+    "A": "Anaplastic astrocytoma ไม่ข้ามเด่น",
+    "B": "✓ GBM ข้าม corpus callosum เป็น butterfly lesion",
+    "C": "Oligodendroglioma ไม่ข้าม",
+    "D": "Myxopapillary ependymoma อยู่ conus",
+    "E": "Ganglioneuroblastoma ไม่ใช่"
+   }
+  },
+  {
+   "id": "NERV-46-MCQ-037",
+   "block": "NERV",
+   "cohort": 46,
+   "n": 37,
+   "type": "MCQ",
+   "stem": "Which of the following brain tumors can cause communicating hydrocephalus",
+   "options": {
+    "A": "Ependymoma",
+    "B": "Choroid plexus papilloma",
+    "C": "Medulloblastoma",
+    "D": "Primitive neuroectodermal tumor",
+    "E": "Pilocytic astrocytoma"
+   },
+   "answer": "B",
+   "answer_status": "verified",
+   "explanation": "choroid plexus papilloma → overproduction CSF/arachnoid granulation block → communicating hydrocephalus",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      12
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      12
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "nerv_46_MCQ_037",
+   "key_concept": "• CPP: ผลิต CSF เกิน → communicating hydrocephalus\n• เนื้องอกที่ปิดทางเดิน CSF → non-communicating",
+   "mechanism": [
+    "CPP ผลิต CSF มากขึ้น",
+    {
+     "s": "เกินกำลัง resorption",
+     "answer": true
+    },
+    "communicating hydrocephalus"
+   ],
+   "option_why": {
+    "A": "Ependymoma ปิดกั้น 4th ventricle (non-communicating)",
+    "B": "✓ Choroid plexus papilloma: CSF มาก → communicating",
+    "C": "Medulloblastoma ปิด 4th ventricle",
+    "D": "PNET เช่นกัน (obstructive)",
+    "E": "Pilocytic astrocytoma ปิด 4th ventricle"
+   }
+  },
+  {
+   "id": "NERV-46-MCQ-038",
+   "block": "NERV",
+   "cohort": 46,
+   "n": 38,
+   "type": "MCQ",
+   "stem": "Which of the following has the worst prognosis?",
+   "options": {
+    "A": "Astrocytoma with wild type IDH",
+    "B": "Astrocytoma with IDH mutation",
+    "C": "Glioblastoma multiforme with wild type IDH",
+    "D": "Glioblastoma multiforme with IDH mutation",
+    "E": "Oligodendroglioma with IDH mutation"
+   },
+   "answer": "C",
+   "answer_status": "verified",
+   "explanation": "IDH-wildtype glioblastoma พยากรณ์แย่สุด",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      12
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      12
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "nerv_46_MCQ_038",
+   "key_concept": "• IDH mutation = prognosis ดี\n• GBM wt: median ~15 เดือน",
+   "mechanism": [
+    "GBM IDH-wild type",
+    {
+     "s": "necrosis + vascular proliferation",
+     "answer": true
+    },
+    "โตเร็ว ดื้อต่อรักษา"
+   ],
+   "option_why": {
+    "A": "IDH-wt astrocytoma แย่แต่ GBM แย่กว่า",
+    "B": "IDH-mut astrocytoma ดีกว่า",
+    "C": "✓ GBM IDH-wild type แย่สุด",
+    "D": "GBM IDH-mutant ดีกว่า wt",
+    "E": "Oligodendroglioma IDH-mut ดีที่สุด"
+   }
+  },
+  {
+   "id": "NERV-46-MCQ-039",
+   "block": "NERV",
+   "cohort": 46,
+   "n": 39,
+   "type": "MCQ",
+   "stem": "Which type of brain tumor cause the most severe cerebral edema",
+   "options": {
+    "A": "Meningioma",
+    "B": "Ependymoma",
+    "C": "Anaplastic astrocytoma",
+    "D": "Cerebral non-Hodgkin lymphoma",
+    "E": "Metastatic carcinoma"
+   },
+   "answer": "E",
+   "answer_status": "verified",
+   "explanation": "metastatic carcinoma ทำ vasogenic edema รุนแรงที่สุด",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      12
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      12
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "nerv_46_MCQ_039",
+   "key_concept": "• metastasis: ก้อน sharp + edema มาก\n• vasogenic edema: BBB รั่ว",
+   "mechanism": [
+    "เนื้องอกกระตุ้น VEGF",
+    {
+     "s": "BBB รั่ว",
+     "answer": true
+    },
+    "vasogenic edema รุนแรง"
+   ],
+   "option_why": {
+    "A": "Meningioma ทำ edema น้อย",
+    "B": "Ependymoma ทำ edema น้อย",
+    "C": "Anaplastic astrocytoma ปานกลาง",
+    "D": "CNS lymphoma มี edema ไม่รุนแรงเท่า",
+    "E": "✓ Metastasis: vasogenic edema รุนแรง"
+   }
+  },
+  {
+   "id": "NERV-46-MCQ-041",
+   "block": "NERV",
+   "cohort": 46,
+   "n": 41,
+   "type": "MCQ",
+   "stem": "Which of the following is histopathologic finding of Alzheimer’s disease",
+   "options": {
+    "A": "Pick body in cytoplasm of neuron",
+    "B": "Depigmentation of substantia nigra",
+    "C": "Vacuolation of neuron",
+    "D": "Eosinophilic hyaline cytoplasmic neuron",
+    "E": "Neurofibrilary tangle in cytoplasm of neuron"
+   },
+   "answer": "D",
+   "answer_status": "disputed",
+   "explanation": "เฉลยต้นฉบับ: ข้อ D (eosinophilic hyaline cytoplasmic neuron); AI เห็นว่าลักษณะทาง histology ของ Alzheimer คือ neurofibrillary tangle (E)\n⚠️ เฉลยขัดกับ AI",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      13
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      13
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "nerv_46_MCQ_041",
+   "ai_answer": "E",
+   "key_concept": "• Alzheimer: senile (neuritic) plaque (Aβ) + neurofibrillary tangle (tau)\n• Pick = Pick bodies · PD = Lewy body · prion = vacuolation\n• เฉลยข้อนี้ขัดกับตำรา ควรตรวจ",
+   "mechanism": [
+    "Aβ สะสม",
+    "tau hyperphosphorylation",
+    {
+     "s": "neurofibrillary tangle ใน neuron",
+     "answer": true
+    },
+    "neuron ตาย"
+   ],
+   "option_why": {
+    "A": "Pick body = Pick disease",
+    "B": "Depigmentation of SN = Parkinson",
+    "C": "Vacuolation of neuron = prion/ spongiform",
+    "D": "✓ เฉลยต้นฉบับ: eosinophilic hyaline cytoplasmic neuron (ขีดข้อนี้ในไฟล์เฉลย)",
+    "E": "AI เลือก: Neurofibrillary tangle (hyperphosphorylated tau) ในไซโตพลาสซึมของ neuron — ลักษณะของ Alzheimer"
+   }
+  },
+  {
+   "id": "NERV-46-MCQ-042",
+   "block": "NERV",
+   "cohort": 46,
+   "n": 42,
+   "type": "MCQ",
+   "stem": "A 50-year-old man with severe chronic hypertension developed sudden onset of muscle weakness on the left side, drowsiness and progressed to coma in 30 minutes. What is the most likely brain pathology",
+   "options": {
+    "A": "Cerebral thrombosis",
+    "B": "Cerebral infarction",
+    "C": "Intracerebral hemorrhage",
+    "D": "Subarachnoid hemorrhage",
+    "E": "Epidural hemorrhage"
+   },
+   "answer": "C",
+   "answer_status": "verified",
+   "explanation": "HT รุนแรง + อ่อนแรงซีกซ้ายเฉียบพลัน → coma ใน 30 นาที = intracerebral hemorrhage",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      13
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      13
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "nerv_46_MCQ_042",
+   "key_concept": "• HT → ICH ที่ basal ganglia/thalamus/pons\n• onset เร็ว coma จาก mass effect",
+   "mechanism": [
+    "HT เรื้อรัง",
+    "Charcot–Bouchard rupture",
+    {
+     "s": "เลือดในเนื้อสมอง ICP ↑",
+     "answer": true
+    },
+    "hemiparesis → coma"
+   ],
+   "option_why": {
+    "A": "Thrombosis ค่อยเป็นค่อยไปกว่า",
+    "B": "Infarction ไม่ทรุดเร็วแบบ coma ใน 30 นาที",
+    "C": "✓ ICH จาก hypertension (Charcot–Bouchard)",
+    "D": "SAH มี thunderclap headache + neck stiffness",
+    "E": "Epidural ต้องมี trauma"
+   }
+  },
+  {
+   "id": "NERV-46-MCQ-043",
+   "block": "NERV",
+   "cohort": 46,
+   "n": 43,
+   "type": "MCQ",
+   "stem": "Hemorrhage in the lenticular nucleus in the brain is the result of",
+   "options": {
+    "A": "Ruptured berry aneurysm",
+    "B": "Ruptured Charcot-Buchard aneurysm",
+    "C": "Rupture carotid siphon aneurysm",
+    "D": "Occlusion of lenticulostriate arteries",
+    "E": "Mycotic aneurysm in middle cerebral artery"
+   },
+   "answer": "B",
+   "answer_status": "verified",
+   "explanation": "Hemorrhage ใน lenticular nucleus (putamen) จาก ruptured Charcot–Bouchard (microaneurysm ของ lenticulostriate)",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      13
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      13
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "nerv_46_MCQ_043",
+   "key_concept": "• HT → Charcot–Bouchard → putamen bleed\n• lacunar infarct = occlusion",
+   "mechanism": [
+    "HT เรื้อรัง",
+    "microaneurysm ที่ lenticulostriate",
+    {
+     "s": "แตก",
+     "answer": true
+    },
+    "putamen hemorrhage"
+   ],
+   "option_why": {
+    "A": "Berry aneurysm → SAH",
+    "B": "✓ Charcot–Bouchard microaneurysm ใน lenticulostriate",
+    "C": "Carotid siphon aneurysm → SAH/ CN palsy",
+    "D": "Occlusion ของ lenticulostriate → infarct ไม่ใช่ hemorrhage",
+    "E": "Mycotic aneurysm ใน MCA → ติดเชื้อ"
+   }
+  },
+  {
+   "id": "NERV-46-MCQ-044",
+   "block": "NERV",
+   "cohort": 46,
+   "n": 44,
+   "type": "MCQ",
+   "stem": "A 10-year-old girl developed sudden onset of severe headache and unconsciousness. The physical examination revealed no fever and stiffness of the neck was positive. What happened in the brain of this girl",
+   "options": {
+    "A": "Ruptured saccular aneurysm",
+    "B": "Ruptured aneurysm in carotid siphon",
+    "C": "Ruptured arteriovenous malformation",
+    "D": "Ventricular hemorrhage",
+    "E": "Cavernous sinus thrombosis"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "sudden severe headache + neck stiffness + no fever = SAH จาก ruptured saccular aneurysm",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      14
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      14
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "nerv_46_MCQ_044",
+   "key_concept": "• SAH: thunderclap headache, meningism, no fever\n• berry aneurysm เป็นสาเหตุหลัก",
+   "mechanism": [
+    "aneurysm แตก",
+    {
+     "s": "เลือดเข้า subarachnoid space",
+     "answer": true
+    },
+    "meninges ระคายเคือง",
+    "headache + neck stiffness"
+   ],
+   "option_why": {
+    "A": "✓ Saccular (berry) aneurysm แตกทำ SAH",
+    "B": "Carotid siphon aneurysm พบน้อยกว่า",
+    "C": "AVM พบในอายุน้อยกว่า/มี seizure",
+    "D": "Ventricular hemorrhage ไม่ใช่ primary",
+    "E": "Cavernous sinus thrombosis มีไข้"
+   }
+  },
+  {
+   "id": "NERV-46-MCQ-045",
+   "block": "NERV",
+   "cohort": 46,
+   "n": 45,
+   "type": "MCQ",
+   "stem": "Which of the following is the drug used for Alzheimer’s disease",
+   "options": {
+    "A": "Bromocriptine",
+    "B": "Donepazil",
+    "C": "Rasagiline",
+    "D": "Apomorphine",
+    "E": "Amantadine"
+   },
+   "answer": "B",
+   "answer_status": "verified",
+   "explanation": "Donepezil (AChE inhibitor) ใช้รักษา Alzheimer's disease",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      14
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      14
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "nerv_46_MCQ_045",
+   "key_concept": "• AD drugs: donepezil, rivastigmine, galantamine (AChEI), memantine (NMDA)\n• ลด cholinergic neuron ใน nucleus basalis",
+   "mechanism": [
+    "AD ลด ACh",
+    {
+     "s": "AChE inhibitor ลดการสลาย ACh",
+     "answer": true
+    },
+    "ACh ที่ synapse เพิ่ม",
+    "ชะลอ cognitive decline"
+   ],
+   "option_why": {
+    "A": "Bromocriptine = DA agonist (PD)",
+    "B": "✓ Donepezil = AChE inhibitor เพิ่ม ACh ใน cortex",
+    "C": "Rasagiline = MAO-B inhibitor (PD)",
+    "D": "Apomorphine = DA agonist (PD off-period)",
+    "E": "Amantadine = PD/ NMDA antagonist"
+   }
+  },
+  {
+   "id": "NERV-46-MCQ-046",
+   "block": "NERV",
+   "cohort": 46,
+   "n": 46,
+   "type": "MCQ",
+   "stem": "Which of the following mimic dopamine action by directly stimulate dopamine receptor",
+   "options": {
+    "A": "Selegiline",
+    "B": "Bromocriptine",
+    "C": "Ropinirole",
+    "D": "Levodopa",
+    "E": "Carbidopa"
+   },
+   "answer": "B",
+   "answer_status": "verified",
+   "explanation": "direct dopamine receptor agonists: bromocriptine, ropinirole (ไฟล์เฉลยขีดทั้ง B และ C)\n⚠️ ไฟล์เฉลยขีดทั้ง B และ C · bromocriptine และ ropinirole เป็น direct dopamine agonist ทั้งคู่",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      14
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      14
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "nerv_46_MCQ_046",
+   "also_accept": [
+    "C"
+   ],
+   "key_concept": "• direct DA agonists: bromocriptine, pramipexole, ropinirole, apomorphine\n• levodopa ต้องถูกแปลงเป็น dopamine",
+   "mechanism": [
+    "agonist จับ D2",
+    {
+     "s": "กระตุ้น dopamine receptor โดยตรง",
+     "answer": true
+    },
+    "ชดเชย dopamine"
+   ],
+   "option_why": {
+    "A": "Selegiline = MAO-B inhibitor",
+    "B": "✓ Bromocriptine = ergot D2 agonist",
+    "C": "✓ Ropinirole = non-ergot D2/D3 agonist",
+    "D": "Levodopa = precursor (ไม่ใช่ direct agonist)",
+    "E": "Carbidopa = AADC inhibitor"
+   }
+  },
+  {
+   "id": "NERV-46-MCQ-047",
+   "block": "NERV",
+   "cohort": 46,
+   "n": 47,
+   "type": "MCQ",
+   "stem": "What is the limitation in long-term used of levodopa",
+   "options": {
+    "A": "Hallucination",
+    "B": "Amenorrhea",
+    "C": "Motor fluctuation",
+    "D": "Chronic vomiting"
+   },
+   "answer": "C",
+   "answer_status": "verified",
+   "explanation": "ข้อจำกัดของ levodopa ใช้นาน: motor fluctuation (wearing-off, on-off, dyskinesia)",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      15
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      15
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "nerv_46_MCQ_047",
+   "key_concept": "• levodopa นาน: wearing-off, on-off, dyskinesia\n• pulsatile stimulation",
+   "mechanism": [
+    "ใช้ levodopa นาน",
+    {
+     "s": "dopamine receptor supersensitivity/ pulsatile",
+     "answer": true
+    },
+    "motor fluctuation"
+   ],
+   "option_why": {
+    "A": "Hallucination เป็นผลข้างเคียงได้แต่ไม่ใช่ข้อจำกัดหลัก",
+    "B": "Amenorrhea ไม่ใช่",
+    "C": "✓ Motor fluctuation พบหลังใช้นาน",
+    "D": "Chronic vomiting เป็นช่วงต้น"
+   }
+  },
+  {
+   "id": "NERV-46-MCQ-048",
+   "block": "NERV",
+   "cohort": 46,
+   "n": 48,
+   "type": "MCQ",
+   "stem": "Which of the following drug decrease metabolism of levodopa",
+   "options": {
+    "A": "Ropinirole & Selegiline",
+    "B": "Entacapone & Carbidopa",
+    "C": "Bromocriptine & Carbidopa",
+    "D": "Selegiline & Bromocriptine",
+    "E": "Bromocriptine & Ropinirole"
+   },
+   "answer": "B",
+   "answer_status": "verified",
+   "explanation": "entacapone (COMT inhibitor) + carbidopa (AADC inhibitor) ลดการ metabolize levodopa",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      15
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      15
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "nerv_46_MCQ_048",
+   "key_concept": "• carbidopa: peripheral AADC inhibitor\n• entacapone: COMT inhibitor\n• ยืด half-life ของ levodopa",
+   "mechanism": [
+    "levodopa ถูกสลายที่ periphery",
+    {
+     "s": "carbidopa/entacapone ยับยั้ง AADC/COMT",
+     "answer": true
+    },
+    "levodopa เข้าสมองมากขึ้น"
+   ],
+   "option_why": {
+    "A": "Ropinirole/selegiline ไม่ลด levodopa metabolism ทั้งคู่",
+    "B": "✓ Entacapone + carbidopa: COMT + AADC inhibitors",
+    "C": "Bromocriptine ไม่ใช่",
+    "D": "Selegiline+bromocriptine ไม่ใช่",
+    "E": "Bromocriptine+ropinirole เป็น agonists"
+   }
+  },
+  {
+   "id": "NERV-46-MCQ-049",
+   "block": "NERV",
+   "cohort": 46,
+   "n": 49,
+   "type": "MCQ",
+   "stem": "Which of the following is correct about CSF collection?",
+   "options": {
+    "A": "Collect with EDTA tube",
+    "B": "Maximum is 40 ml",
+    "C": "Using the last part for cytological analysis",
+    "D": "Using first part for cultivation",
+    "E": "Using second part for antibody detection"
+   },
+   "answer": "C",
+   "answer_status": "verified",
+   "explanation": "CSF collection: หลอดสุดท้ายใช้ cytology (ต่ำ RBC/ เซลล์เชื่อถือได้)",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      15
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      15
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "nerv_46_MCQ_049",
+   "key_concept": "• tube 1: chemistry/serology · 2: microbiology · 3: cell count/cytology (หรือ 4)\n• traumatic tap ทำให้ tube แรกมีเลือด",
+   "mechanism": [
+    "เก็บ CSF 3–4 หลอด",
+    {
+     "s": "หลอดสุดท้ายปนเลือดน้อยสุด",
+     "answer": true
+    },
+    "เหมาะ cytology"
+   ],
+   "option_why": {
+    "A": "ไม่ใช้ EDTA tube",
+    "B": "Maximum 40 ml ไม่ถูก (ปกติเก็บไม่กี่ ml)",
+    "C": "✓ ส่วนสุดท้ายใช้ cytology (ลดปนเปื้อนเลือดจากการเจาะ)",
+    "D": "ส่วนแรกมักใช้ chemistry/immunology ไม่ใช่ culture",
+    "E": "ส่วนที่สองใช้ culture/microbiology ไม่ใช่ antibody"
+   }
+  },
+  {
+   "id": "NERV-46-MCQ-050",
+   "block": "NERV",
+   "cohort": 46,
+   "n": 50,
+   "type": "MCQ",
+   "stem": "ผู้ป่วยมี inferior branch of middle cerebral artery occlusion, Visual field ในผู้ป่วย รายนี้จะเป็นอย่างไร",
+   "options": {
+    "A": "Bitemporal hemianopia",
+    "B": "Contralateral homonymous hemianopia",
+    "C": "Contralateral inferior quadrantinopia",
+    "D": "Contralateral superior quadrantinopia",
+    "E": "Contralateral homonymous hemianopia with macula sparing"
+   },
+   "answer": "C",
+   "answer_status": "verified",
+   "explanation": "inferior division MCA occlusion → contralateral superior quadrantinopia? เฉลยต้นฉบับ: contralateral inferior quadrantinopia (parietal radiation)",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      15
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      15
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "nerv_46_MCQ_050",
+   "key_concept": "• inferior division MCA → temporal lobe (Meyer's loop) = superior quadrantinopia (ตามตำรา)\n• เฉลยต้นฉบับ ระบุ inferior quadrantinopia (parietal)\n• ควรตรวจ",
+   "mechanism": [
+    "MCA division ตัน",
+    {
+     "s": "optic radiation ถูกตัดบางส่วน",
+     "answer": true
+    },
+    "quadrantanopia"
+   ],
+   "option_why": {
+    "A": "Bitemporal เป็น chiasm",
+    "B": "Homonymous hemianopia ตัวเต็มจากรอยโรค optic tract/ occipital",
+    "C": "✓ เฉลยต้นฉบับ: Contralateral inferior quadrantinopia (parietal lobe optic radiation)",
+    "D": "Superior quadrantinopia (Meyer's loop temporal)",
+    "E": "Homonymous hemianopia with macular sparing = PCA"
+   }
+  },
+  {
+   "id": "NERV-46-MCQ-051",
+   "block": "NERV",
+   "cohort": 46,
+   "n": 51,
+   "type": "MCQ",
+   "stem": "A 17-year-old man presented with diplopia, Neurological examination showed abducens nerve palsy, mild ptosis and miosis on right side. Where is the lesion",
+   "options": {
+    "A": "Orbit",
+    "B": "Pons",
+    "C": "Intracranial cavity",
+    "D": "Cavernous sinus",
+    "E": "Superior orbital fissure"
+   },
+   "answer": "D",
+   "answer_status": "verified",
+   "explanation": "abducens palsy + mild ptosis + miosis (Horner) ข้างขวา = cavernous sinus (CN VI + sympathetic fibers on ICA)",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      16
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      16
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "nerv_46_MCQ_051",
+   "key_concept": "• cavernous sinus: ICA, CN III, IV, V1, V2, VI + sympathetic\n• CN VI ติด ICA จึงเสียก่อน",
+   "mechanism": [
+    "ICA/ cavernous sinus lesion",
+    {
+     "s": "CN VI + sympathetic plexus ถูกกด",
+     "answer": true
+    },
+    "lateral rectus อ่อน + Horner"
+   ],
+   "option_why": {
+    "A": "Orbit รอยโรคไม่ทำ Horner + CN VI พร้อมกัน",
+    "B": "Pons มีอาการร่วมอื่น (facial palsy)",
+    "C": "Intracranial cavity กว้างเกินไป",
+    "D": "✓ Cavernous sinus: CN VI ใกล้ ICA + sympathetic plexus",
+    "E": "Superior orbital fissure มี CN III, IV, V1, VI แต่ไม่มี Horner"
+   }
+  },
+  {
+   "id": "NERV-46-MCQ-052",
+   "block": "NERV",
+   "cohort": 46,
+   "n": 52,
+   "type": "MCQ",
+   "stem": "A 30-year-old woman presents with headache. The examination reveals absence direct light reflex when shining into right eye. Which structure is damaged",
+   "options": {
+    "A": "Left optic tract",
+    "B": "Right optic nerve",
+    "C": "Left oculomotor nerve",
+    "D": "Right oculomotor nerve",
+    "E": "Posterior commissure"
+   },
+   "answer": "B",
+   "answer_status": "verified",
+   "explanation": "direct light reflex ขาดเมื่อฉายตาขวา = right optic nerve (afferent) เสีย",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      16
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      16
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "nerv_46_MCQ_052",
+   "key_concept": "• afferent defect: direct เสีย, consensual (ฉายตาซ้ายแล้วตาขวาหด) ปกติ\n• efferent defect: direct เสีย consensual ปกติ ตาข้างเดียวกัน dilated",
+   "mechanism": [
+    "แสงเข้าตาขวา",
+    {
+     "s": "optic nerve ขวาไม่ส่ง signal",
+     "answer": true
+    },
+    "pupil ไม่ตอบสนอง"
+   ],
+   "option_why": {
+    "A": "Left optic tract ทำ homonymous hemianopia",
+    "B": "✓ Right optic nerve: afferent limb เสีย",
+    "C": "Left oculomotor เสีย → ตาซ้าย dilated",
+    "D": "Right oculomotor เสีย → direct light reflex ขวาเสีย แต่ consensual ปกติ (efferent)",
+    "E": "Posterior commissure ไม่ใช่ตำแหน่งหลัก"
+   }
+  },
+  {
+   "id": "NERV-46-MCQ-053",
+   "block": "NERV",
+   "cohort": 46,
+   "n": 53,
+   "type": "MCQ",
+   "stem": "A 30-year-old man complains diplopia. He can abduct both eye and adduct left eye but cannot adduct right eye. Which structure is damaged",
+   "options": {
+    "A": "Frontal eye view",
+    "B": "Abducens nerve",
+    "C": "Oculomotor nerve",
+    "D": "PPRF",
+    "E": "MLF"
+   },
+   "answer": "E",
+   "answer_status": "verified",
+   "explanation": "adduct ตาขวาไม่ได้ แต่ abduct ได้ = INO (internuclear ophthalmoplegia) จาก MLF",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      16
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      16
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "nerv_46_MCQ_053",
+   "key_concept": "• INO: MLF lesion (MS)\n• adduction เสีย ข้างเดียวกัน, abducting nystagmus ตาอีกข้าง",
+   "mechanism": [
+    "MLF ตัดการเชื่อม abducens → oculomotor",
+    {
+     "s": "medial rectus ไม่ถูกกระตุ้น",
+     "answer": true
+    },
+    "adduct ไม่ได้"
+   ],
+   "option_why": {
+    "A": "Frontal eye field ไม่ใช่",
+    "B": "Abducens เสีย → abduct ไม่ได้",
+    "C": "Oculomotor เสีย → ptosis/อื่นๆ",
+    "D": "PPRF เสีย → horizontal gaze palsy",
+    "E": "✓ MLF เสีย → INO: adduction ข้างเดียวกันหาย"
+   }
+  },
+  {
+   "id": "NERV-46-MCQ-055",
+   "block": "NERV",
+   "cohort": 46,
+   "n": 55,
+   "type": "MCQ",
+   "stem": "Which damaged structure lead to hearing loss",
+   "options": {
+    "A": "Auditory cortex",
+    "B": "MGB",
+    "C": "Inferior colliculus",
+    "D": "Cochlea nucleus",
+    "E": "Superior olivary nucleus"
+   },
+   "answer": "D",
+   "answer_status": "verified",
+   "explanation": "hearing loss ในหูข้างเดียว = cochlear nucleus/ cochlear nerve เสีย (ไม่ bilateral ถ้ารอยโรคส่วนกลาง)",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      17
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      17
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "nerv_46_MCQ_055",
+   "key_concept": "• auditory pathway: cochlea → cochlear nuclei (ipsilateral) → bilateral ascending\n• รอยโรคเหนือ cochlear nuclei ไม่ทำ unilateral deafness",
+   "mechanism": [
+    "cochlear nucleus เสีย",
+    {
+     "s": "สัญญาณจากหูข้างนั้นหาย",
+     "answer": true
+    },
+    "sensorineural hearing loss"
+   ],
+   "option_why": {
+    "A": "Auditory cortex เสียแล้วได้ยินยังเกือบปกติ (bilateral representation)",
+    "B": "MGB รอยโรคทำ bilateral ลด",
+    "C": "IC รอยโรคทำ bilateral ลด",
+    "D": "✓ Cochlear nucleus (ipsilateral) เสีย → หูหนวกข้างเดียวกัน",
+    "E": "Superior olive รอยโรคมีผลน้อย"
+   }
+  },
+  {
+   "id": "NERV-46-MCQ-056",
+   "block": "NERV",
+   "cohort": 46,
+   "n": 56,
+   "type": "MCQ",
+   "stem": "Which of the following condition cause the pupil to dilate?",
+   "options": {
+    "A": "Near accommodation",
+    "B": "Ciliary ganglion activation",
+    "C": "Consensual light reflex",
+    "D": "Edinger-Westphal nucleus activation",
+    "E": "Superior ganglion cervical"
+   },
+   "answer": "E",
+   "answer_status": "verified",
+   "explanation": "pupil dilate = sympathetic: superior cervical ganglion → dilator pupillae",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      17
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      17
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "nerv_46_MCQ_056",
+   "key_concept": "• sympathetic: SCG → dilator pupillae → mydriasis\n• parasympathetic: EW → ciliary ganglion → constriction",
+   "mechanism": [
+    "T1 → SCG",
+    {
+     "s": "postganglionic sympathetic ไปที่ dilator pupillae",
+     "answer": true
+    },
+    "pupil ขยาย"
+   ],
+   "option_why": {
+    "A": "Near accommodation → miosis",
+    "B": "Ciliary ganglion = parasympathetic → constriction",
+    "C": "Consensual light reflex → constriction",
+    "D": "EW nucleus → constriction",
+    "E": "✓ Superior cervical ganglion → dilation (sympathetic)"
+   }
+  },
+  {
+   "id": "NERV-46-MCQ-057",
+   "block": "NERV",
+   "cohort": 46,
+   "n": 57,
+   "type": "MCQ",
+   "stem": "เด็กอายุ 1 ปี แม่พามาโรงพยาบาล ตรวจพบ white lesion ในตาขวา ผลตรวจ histology พบ Homer-Wright rosette ถามว่า gene ใกที่เกี่ยวข้องกับโรคนี้",
+   "options": {
+    "A": "P27",
+    "B": "P53",
+    "C": "RB",
+    "D": "APC",
+    "E": "MEN1"
+   },
+   "answer": "C",
+   "answer_status": "verified",
+   "explanation": "เด็ก 1 ปี leukocoria + Homer-Wright rosette = retinoblastoma → RB gene (tumor suppressor)",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      17
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      17
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "nerv_46_MCQ_057",
+   "key_concept": "• retinoblastoma: RB1 (Knudson two-hit), leukocoria\n• Homer-Wright/Flexner-Wintersteiner rosettes",
+   "mechanism": [
+    "RB1 two hits",
+    {
+     "s": "ขาด RB protein → E2F ถูกปล่อย",
+     "answer": true
+    },
+    "เซลล์ retina โตไม่หยุด",
+    "leukocoria"
+   ],
+   "option_why": {
+    "A": "p27 ไม่ใช่",
+    "B": "p53 เกี่ยวกับ Li-Fraumeni",
+    "C": "✓ RB gene mutation ทำ retinoblastoma",
+    "D": "APC → FAP",
+    "E": "MEN1 → MEN1 syndrome"
+   }
+  },
+  {
+   "id": "NERV-46-MCQ-058",
+   "block": "NERV",
+   "cohort": 46,
+   "n": 58,
+   "type": "MCQ",
+   "stem": "Which of the following is complication of chronic otitis media",
+   "options": {
+    "A": "Sinusitis",
+    "B": "Pharyngitis",
+    "C": "Mastoiditis",
+    "D": "Endocarditis",
+    "E": "Squamous cell carcinoma"
+   },
+   "answer": "C",
+   "answer_status": "draft",
+   "explanation": "Chronic otitis media → complication ที่พบ: mastoiditis (AI เลือก เพราะไฟล์เฉลยไม่มี)\n⚠️ ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      18
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      18
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "nerv_46_MCQ_058",
+   "key_concept": "• COM: cholesteatoma, mastoiditis, hearing loss, intracranial abscess\n• acute → mastoiditis",
+   "mechanism": [
+    "COM เรื้อรัง",
+    {
+     "s": "การอักเสบลาม mastoid",
+     "answer": true
+    },
+    "mastoiditis"
+   ],
+   "option_why": {
+    "A": "Sinusitis ไม่ใช่ complication โดยตรง",
+    "B": "Pharyngitis ไม่ใช่",
+    "C": "✓ Mastoiditis: การลามไป mastoid air cells",
+    "D": "Endocarditis ไม่ใช่",
+    "E": "SCC ของหูพบได้น้อยมาก"
+   }
+  },
+  {
+   "id": "NERV-46-MCQ-059",
+   "block": "NERV",
+   "cohort": 46,
+   "n": 59,
+   "type": "MCQ",
+   "stem": "A 5-year-old girl came to hospital due to have fever and ear pain for 1 months. Physical examination revealed perforated tympanic membrane with cholesteatoma. What is the diagnosis",
+   "options": {
+    "A": "Acute mastoiditis",
+    "B": "Acute otitis media",
+    "C": "Chronic otitis media",
+    "D": "Chronic mastoiditis",
+    "E": "Chronic sialadenitis"
+   },
+   "answer": "C",
+   "answer_status": "verified",
+   "explanation": "perforated tympanic membrane + cholesteatoma + ประวัตินาน = chronic otitis media",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      18
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      18
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "nerv_46_MCQ_059",
+   "key_concept": "• COM: perforation, discharge, cholesteatoma\n• สัมพันธ์ eustachian tube dysfunction",
+   "mechanism": [
+    "การอักเสบเรื้อรัง",
+    {
+     "s": "TM perforation + cholesteatoma",
+     "answer": true
+    },
+    "COM"
+   ],
+   "option_why": {
+    "A": "Acute mastoiditis ไม่มี cholesteatoma",
+    "B": "Acute otitis media ไม่เรื้อรัง",
+    "C": "✓ COM: perforation + cholesteatoma",
+    "D": "Chronic mastoiditis เป็น complication",
+    "E": "Chronic sialadenitis ไม่ใช่"
+   }
+  },
+  {
+   "id": "NERV-46-MCQ-060",
+   "block": "NERV",
+   "cohort": 46,
+   "n": 60,
+   "type": "MCQ",
+   "stem": "68-year-old woman presents to the hospital with blurred vision of her left eye. Physical examination showed lens opacity in left eye and occlusion in anterior chamber. What is the diagnosis",
+   "options": {
+    "A": "Pterygium",
+    "B": "Glaucoma",
+    "C": "Cataract",
+    "D": "Retinoblastoma"
+   },
+   "answer": "B",
+   "answer_status": "verified",
+   "explanation": "สายตามัวข้างซ้าย + anterior chamber occlusion (angle closure) = glaucoma",
+   "refs": [
+    {
+     "paper": "MCQ46",
+     "pages": [
+      18
+     ]
+    },
+    {
+     "paper": "MCQ46-KEY",
+     "pages": [
+      18
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "nerv_46_MCQ_060",
+   "key_concept": "• glaucoma: ↑IOP, optic neuropathy\n• angle-closure: ปวดตา ตาแดง",
+   "mechanism": [
+    "aqueous outflow ถูกปิด",
+    {
+     "s": "IOP เพิ่ม",
+     "answer": true
+    },
+    "optic nerve เสียหาย",
+    "ตามัว"
+   ],
+   "option_why": {
+    "A": "Pterygium ไม่ทำให้ anterior chamber occlusion",
+    "B": "✓ Glaucoma: aqueous outflow block → IOP สูง",
+    "C": "Cataract คือ lens opacity",
+    "D": "Retinoblastoma ในเด็ก"
+   }
+  }
+ ]
+}

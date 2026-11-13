@@ -1,0 +1,381 @@
+{
+ "set_id": "nerv_48_OSPE",
+ "note": "OSPE Neuro MED PSU 48 (เฉลยโดยรุ่น MED 52 ไฟล์ระบุให้ใช้วิจารณญาณ) · ข้อสอบจำ ข้อที่ไม่มีเฉลยตัดออก: 5, 8, 999 (diencephalon) · โจทย์เป็นไทย ศัพท์แพทย์อังกฤษ ตอบอังกฤษ",
+ "questions": [
+  {
+   "n": 1,
+   "page": 2,
+   "tags": [
+    "neuroanatomy"
+   ],
+   "case": "สถานี 1: ภาพตัดขวางไขสันหลัง substantia gelatinosa",
+   "answer_status": "verified",
+   "items": [
+    {
+     "id": "1.1",
+     "prompt": "substantia gelatinosa ส่งต่อ information อะไร",
+     "format": "short",
+     "accepted": [
+      "pain",
+      "temperature",
+      "crude touch"
+     ],
+     "keywords_all": [
+      "pain"
+     ],
+     "key_text": "Pain, temperature และ crude touch",
+     "source_key": "เฉลย: Pain, temperature และ crude touch",
+     "image": "img/NERV-48-OSPE-001.jpg",
+     "image_caption": "Spinal cord"
+    }
+   ],
+   "station": 1
+  },
+  {
+   "n": 2,
+   "page": 3,
+   "tags": [
+    "pathology"
+   ],
+   "case": "สถานี 2: ผล CSF และ CBC ตามภาพ (ค่าที่ปรับ: CSF WBC 850, RBC 80,000; blood: WBC 12,500, RBC 5,000,000, mononuclear 40, PMN 8, glucose 100)",
+   "answer_status": "verified",
+   "items": [
+    {
+     "id": "2.1",
+     "prompt": "Calculate contaminate WBC in CSF (cells/mm³)",
+     "format": "short",
+     "accepted": [
+      "200"
+     ],
+     "keywords_all": [
+      "200"
+     ],
+     "key_text": "12,500 × 80,000 / 5,000,000 = 200 cells/mm³",
+     "source_key": "เฉลย: 12,500 × 80,000 / 5,000,000 = 200 cells/mm³",
+     "image": "img/NERV-48-OSPE-012.jpg",
+     "image_caption": "CSF/CBC report"
+    },
+    {
+     "id": "2.2",
+     "prompt": "Calculate actual WBC in CSF (cells/mm³)",
+     "format": "short",
+     "accepted": [
+      "650"
+     ],
+     "keywords_all": [
+      "650"
+     ],
+     "key_text": "850 − 200 = 650 cells/mm³",
+     "source_key": "เฉลย: 850 − 200 = 650 cells/mm³"
+    }
+   ],
+   "station": 2
+  },
+  {
+   "n": 3,
+   "page": 4,
+   "tags": [
+    "microbiology"
+   ],
+   "case": "สถานี 3: ผู้ป่วยมีอาการไข้ คอแข็ง เป็น acute bacterial meningitis ย้อม Gram stain ได้ดังภาพ",
+   "answer_status": "verified",
+   "items": [
+    {
+     "id": "3.1",
+     "prompt": "เชื้อก่อโรค (causative microorganism) คืออะไร",
+     "format": "short",
+     "accepted": [
+      "streptococcus pneumoniae",
+      "pneumoniae"
+     ],
+     "keywords_all": [
+      "pneumoniae"
+     ],
+     "key_text": "Streptococcus pneumoniae",
+     "source_key": "เฉลย: Streptococcus pneumoniae",
+     "image": "img/NERV-48-OSPE-013.jpg",
+     "image_caption": "Gram stain"
+    }
+   ],
+   "station": 3
+  },
+  {
+   "n": 4,
+   "page": 4,
+   "tags": [
+    "neuroanatomy"
+   ],
+   "case": "สถานี 4: ภาพ dural venous sinus (หมายเลข 15.1–15.5)",
+   "answer_status": "verified",
+   "items": [
+    {
+     "id": "4.1",
+     "prompt": "sinus ที่ชี้คือ",
+     "format": "short",
+     "accepted": [
+      "superior sagittal"
+     ],
+     "keywords_all": [
+      "superior sagittal"
+     ],
+     "key_text": "Superior sagittal sinus",
+     "source_key": "เฉลย: Superior sagittal sinus",
+     "image": "img/NERV-48-OSPE-015.jpg",
+     "image_caption": "Dural venous sinus"
+    },
+    {
+     "id": "4.2",
+     "prompt": "structure หมายเลข 2",
+     "format": "short",
+     "accepted": [
+      "falx cerebri"
+     ],
+     "keywords_all": [
+      "falx cerebri"
+     ],
+     "key_text": "Falx cerebri",
+     "source_key": "เฉลย: Falx cerebri"
+    },
+    {
+     "id": "4.3",
+     "prompt": "structure หมายเลข 3",
+     "format": "short",
+     "accepted": [
+      "tentorium"
+     ],
+     "keywords_all": [
+      "tentorium"
+     ],
+     "key_text": "Tentorium cerebelli",
+     "source_key": "เฉลย: Tentorium cerebelli"
+    },
+    {
+     "id": "4.4",
+     "prompt": "structure หมายเลข 4",
+     "format": "short",
+     "accepted": [
+      "falx cerebelli"
+     ],
+     "keywords_all": [
+      "falx cerebelli"
+     ],
+     "key_text": "Falx cerebelli",
+     "source_key": "เฉลย: Falx cerebelli"
+    },
+    {
+     "id": "4.5",
+     "prompt": "sinus หมายเลข 5",
+     "format": "short",
+     "accepted": [
+      "transverse"
+     ],
+     "keywords_all": [
+      "transverse"
+     ],
+     "key_text": "Right transverse sinus",
+     "source_key": "เฉลย: Right transverse sinus"
+    }
+   ],
+   "station": 4
+  },
+  {
+   "n": 5,
+   "page": 5,
+   "tags": [
+    "pathology"
+   ],
+   "case": "สถานี 5: ภาพสมอง ข้างหนึ่งน่าจะเลือดออกที่ subarachnoid",
+   "answer_status": "verified",
+   "items": [
+    {
+     "id": "5.1",
+     "prompt": "ภาพนี้คืออะไร",
+     "format": "short",
+     "accepted": [
+      "subarachnoid"
+     ],
+     "keywords_all": [
+      "subarachnoid"
+     ],
+     "key_text": "Subarachnoid hemorrhage",
+     "source_key": "เฉลย: Subarachnoid hemorrhage",
+     "image": "img/NERV-48-OSPE-018.jpg",
+     "image_caption": "Brain hemorrhage"
+    }
+   ],
+   "station": 5
+  },
+  {
+   "n": 6,
+   "page": 5,
+   "tags": [
+    "pathology"
+   ],
+   "case": "สถานี 6: TB meningitis — ภาพ lung มี caseous necrosis, ภาพสมอง และภาพ histology ของ caseous necrosis",
+   "answer_status": "verified",
+   "items": [
+    {
+     "id": "6.1",
+     "prompt": "diagnosis",
+     "format": "short",
+     "accepted": [
+      "tuberculosis",
+      "tb"
+     ],
+     "keywords_all": [
+      "tubercul"
+     ],
+     "key_text": "Tuberculosis meningitis",
+     "source_key": "เฉลย: Tuberculosis meningitis",
+     "image": "img/NERV-48-OSPE-019a.jpg",
+     "image_caption": "Lung (TB)"
+    },
+    {
+     "id": "6.2",
+     "prompt": "อธิบาย histology ในภาพล่าง",
+     "format": "short",
+     "accepted": [
+      "lobulated",
+      "syncytial",
+      "whorl"
+     ],
+     "keywords_all": [
+      "syncytial"
+     ],
+     "key_text": "Lobulated architecture with syncytial cells (whorls)",
+     "source_key": "เฉลย: Lobulated architecture with syncytial cells (whorls)",
+     "image": "img/NERV-48-OSPE-019c.jpg",
+     "image_caption": "Histology"
+    }
+   ],
+   "station": 6
+  },
+  {
+   "n": 7,
+   "page": 6,
+   "tags": [
+    "pathology"
+   ],
+   "case": "สถานี 7: ภาพสมองตัด coronal — จงวินิจฉัย",
+   "answer_status": "verified",
+   "items": [
+    {
+     "id": "7.1",
+     "prompt": "จง Diagnosis",
+     "format": "short",
+     "accepted": [
+      "malaria",
+      "falciparum"
+     ],
+     "keywords_all": [
+      "malaria"
+     ],
+     "key_text": "Cerebral malaria from Plasmodium falciparum",
+     "source_key": "เฉลย: Cerebral malaria from Plasmodium falciparum",
+     "image": "img/NERV-48-OSPE-020.jpg",
+     "image_caption": "Brain section"
+    }
+   ],
+   "station": 7
+  },
+  {
+   "n": 8,
+   "page": 6,
+   "tags": [
+    "pathology"
+   ],
+   "case": "สถานี 8: ภาพสมองตัด coronal — จงวินิจฉัย",
+   "answer_status": "verified",
+   "items": [
+    {
+     "id": "8.1",
+     "prompt": "จง Diagnosis",
+     "format": "short",
+     "accepted": [
+      "hypertensive",
+      "intracranial hemorrhage",
+      "intracerebral"
+     ],
+     "keywords_all": [
+      "hypertensive"
+     ],
+     "key_text": "Hypertensive intracranial (intracerebral) hemorrhage",
+     "source_key": "เฉลย: Hypertensive intracranial (intracerebral) hemorrhage",
+     "image": "img/NERV-48-OSPE-021.jpg",
+     "image_caption": "Brain section (hemorrhage)"
+    }
+   ],
+   "station": 8
+  },
+  {
+   "n": 9,
+   "page": 7,
+   "tags": [
+    "pathology"
+   ],
+   "case": "สถานี 9: ภาพผิวหนังมีก้อนเนื้อจำนวนมาก",
+   "answer_status": "verified",
+   "items": [
+    {
+     "id": "9.1",
+     "prompt": "A) Diagnosis",
+     "format": "short",
+     "accepted": [
+      "neurofibromatosis"
+     ],
+     "keywords_all": [
+      "neurofibromatosis"
+     ],
+     "key_text": "Neurofibromatosis",
+     "source_key": "เฉลย: Neurofibromatosis",
+     "image": "img/NERV-48-OSPE-023.jpg",
+     "image_caption": "Skin lesions"
+    },
+    {
+     "id": "9.2",
+     "prompt": "B) อธิบาย histology ของโรคในรูป",
+     "format": "short",
+     "accepted": [
+      "spindle",
+      "wavy",
+      "collagen"
+     ],
+     "keywords_all": [
+      "wavy"
+     ],
+     "key_text": "Spindle cells with wavy nuclei และมี collagen ล้อมรอบ",
+     "source_key": "เฉลย: Spindle cells with wavy nuclei และมี collagen ล้อมรอบ"
+    }
+   ],
+   "station": 9
+  },
+  {
+   "n": 10,
+   "page": 7,
+   "tags": [
+    "pathology"
+   ],
+   "case": "สถานี 10: ภาพ aneurysm โป่งขาว ๆ น่าจะเป็น branch ของ MCA",
+   "answer_status": "verified",
+   "items": [
+    {
+     "id": "10.1",
+     "prompt": "ภาพนี้คืออะไร",
+     "format": "short",
+     "accepted": [
+      "berry",
+      "aneurysm"
+     ],
+     "keywords_all": [
+      "aneurysm"
+     ],
+     "key_text": "Berry aneurysm of MCA",
+     "source_key": "เฉลย: Berry aneurysm of MCA",
+     "image": "img/NERV-48-OSPE-024.jpg",
+     "image_caption": "Aneurysm"
+    }
+   ],
+   "station": 10
+  }
+ ]
+}
