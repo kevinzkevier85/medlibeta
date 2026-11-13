@@ -13,6 +13,8 @@ from extract import fix_zero_bbox
 
 AUD = Path(__file__).resolve().parents[1]
 ZOOM = 2.0
+import os
+XMAX = float(os.environ.get('KEY_XMAX', 100))  # question-number column limit; raise for multi-column (4-up) key sheets
 Q_START = re.compile(r"^\s*(\d{1,3})\s*[.)]")
 OPT = re.compile(r"^\s*([A-Ea-eกขคงจ])\s*[.)]?\s*(\S.*)?$")
 HEADER = re.compile(r"^VICHAKARN MED PSU", re.I)
@@ -101,9 +103,9 @@ def parse(set_id, bare_numbers=False):
             if HEADER.match(txt):
                 continue
             m = Q_START.match(txt) or (bare_numbers and re.fullmatch(r"\s*(\d{1,3})\s*", txt))
-            if m and int(m.group(1)) == 1 and out and all(not v["score"] for v in out.values()) and rect.x0 < 100:
+            if m and int(m.group(1)) == 1 and out and all(not v["score"] for v in out.values()) and rect.x0 < XMAX:
                 out.clear(); expect = 1  # numbered instructions on the cover page looked like questions 1..n
-            if m and expect <= int(m.group(1)) <= expect + 60 and rect.x0 < 100:
+            if m and expect <= int(m.group(1)) <= expect + 60 and rect.x0 < XMAX:
                 cur = m.group(1)
                 expect = int(cur) + 1
                 out[cur] = {"answers": [], "score": {}, "note": "", "page": pno}
@@ -112,7 +114,7 @@ def parse(set_id, bare_numbers=False):
             if cur is None:
                 continue
             mo = OPT.match(txt)
-            if mo and rect.x0 < 200:
+            if mo and rect.x0 < XMAX + 100:
                 letter = {"ก": "A", "ข": "B", "ค": "C", "ง": "D", "จ": "E"}.get(mo.group(1), mo.group(1).upper())
                 box = pymupdf.Rect(rect.x0 - 6, rect.y0, rect.x1 + 6, rect.y1)
                 f = pink_fraction(pix, box)
