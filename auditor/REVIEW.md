@@ -1,11 +1,12 @@
 # REVIEW — รายการรอผู้ใช้ตัดสิน
 
-ทั้งหมด 915 รายการ
+ทั้งหมด 916 รายการ
 วิธีตอบ: พิมพ์ในแชทเป็นบรรทัด เช่น `end_52_MCQ_027: คงเดิม` / `end_52_MCQ_063: C` / `end_52_MCQ_046: ตรวจใหม่`
 Claude จะบันทึกลง `auditor/data/decisions.json` แล้ว build ใหม่
 
 | id | ต้นฉบับ | AI | ความมั่นใจ | เรื่อง | ตัวเลือกที่เป็นไปได้ / เหตุผล |
 |---|---|---|---|---|---|
+| bio_52_MCQ_043 | A | D | high | เฉลยขัดกับ AI |   |
 | end_42-43_MCQ_001 | E | D | medium | เฉลยขัดกับ AI | เฉลยต้นฉบับวง E (vesicle) — การตัด prohormone เริ่มใน trans-Golgi และต่อเนื่องใน secretory vesicle; lecture/BRS ใช้คำว่า Golgi AI เลือก D อาจนับถูกทั้ง D และ E — D: trans-Golgi (lecture); E: secretory vesicle (USMLE); A: ไม่ใช่; B: สร้าง steroid; C: ตัด signal peptide |
 | end_42-43_MCQ_005 | None | None | None | AI เขียนข้อนี้ขึ้นใหม่จากโน้ตความจำในต้นฉบับ |  — A: เป็นกลไกของ peptide hormone; B: ไม่ใช่; C: เป็นของ insulin/growth factor; D: ถูก (ตรงกับคำตอบในเฉลยต้นฉบับ); E: เป็นของ Gq |
 | end_42-43_MCQ_023 | E | B | high | เฉลยขัดกับ AI | เฉลยต้นฉบับขีดช้อยส์ E (PNMT) แล้วเขียนว่า plasma/urine catecholamine/metanephrine/VMA (ไม่มีในช้อยส์) — chromogranin A (B) เป็น biomarker ของ neuroendocrine tumor รวม pheochromocytoma — B: ถูก — chromogranin A; E: เป็นเอนไซม์ ไม่ใช่ biomarker ที่ใช้; A: MTC; C: DOC เป็นของ 11β-OHD; D: เอนไซม์ใน medulla |
