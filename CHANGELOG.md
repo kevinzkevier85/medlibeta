@@ -3,6 +3,9 @@
 ทุกเวอร์ชันบันทึกที่นี่ และใน `version.json` (หน้าเว็บแสดงจาก `version.json`)
 เลขเวอร์ชัน: `MAJOR.MINOR.PATCH` — เพิ่มฟีเจอร์ = MINOR, แก้บั๊ก = PATCH
 
+## v0.47.0 · 2026-11-13 · NERV KF + OSPE
+- NERV KF 45–52 และ OSPE 7 ชุด (บล็อก NERV ครบ)
+
 ## v0.46.1 · 2026-11-13 · NERV MCQ 49, 47, 46, 45
 - NERV MCQ ครบทุกชุด (49: 59 · 47: 126 AI draft · 46: 56 · 45: 20)
 
