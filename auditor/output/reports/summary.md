@@ -2,6 +2,7 @@
 
 | set_id | ข้อ | agree | disagree | drafted | unverified | ai_gen | skipped | needs_review |
 |---|---|---|---|---|---|---|---|---|
+| imm_44_MCQ | 74 | 61 | 0 | 0 | 0 | 0 | 13 | 0 |
 | imm_45_MCQ | 46 | 31 | 0 | 0 | 0 | 0 | 15 | 0 |
 | imm_46_MCQ | 89 | 84 | 0 | 0 | 0 | 0 | 5 | 0 |
 | imm_47_MCQ | 111 | 111 | 0 | 0 | 0 | 0 | 0 | 0 |
