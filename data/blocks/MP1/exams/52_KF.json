@@ -1,0 +1,879 @@
+{
+ "meta": {
+  "set_id": "52_KF",
+  "block": "MP1",
+  "cohort": 52,
+  "type": "KF",
+  "title": "KF Medical Profession I · Med PSU 52",
+  "time_limit_min": 120,
+  "generated_by": "auditor/tools/build_kf.py from auditor/data/work/mp1_52_KF.kf.json — do not edit by hand"
+ },
+ "questions": [
+  {
+   "id": "MP1-52-KF-001",
+   "block": "MP1",
+   "cohort": 52,
+   "n": 1,
+   "type": "KF",
+   "case": "จงตอบคำถามต่อไปนี้ (จริยธรรมแพทย์)",
+   "items": [
+    {
+     "id": "1.1",
+     "prompt": "นักศึกษาแพทย์ปี 6 มีญาติป่วยเป็นโรคผิวหนัง ขอให้พยาบาลช่วยลัดคิวตรวจให้เร็วขึ้นโดยอ้างว่า 'เป็นเคสของคนในครอบครัวและอาจารย์รู้จักผมดี' ท่านมีความเห็นอย่างไร",
+     "format": "short",
+     "accepted": [
+      "ไม่เหมาะสม",
+      "ความเสมอภาค",
+      "ลัดคิว",
+      "justice",
+      "เป็นธรรม",
+      "ผลประโยชน์ทับซ้อน"
+     ],
+     "key_text": "ไม่เหมาะสม — ขัดต่อความเป็นธรรม/ความเสมอภาคของผู้ป่วย (justice) ใช้อภิสิทธิ์จากตำแหน่งและความสัมพันธ์ส่วนตัว ผู้ป่วยอื่นที่รออยู่เสียประโยชน์ ควรให้ญาติเข้าคิวตามระบบ (ลำดับตามความเร่งด่วนทางการแพทย์)",
+     "source_key": "เฉลย: ไม่เหมาะสม — ขัดต่อความเป็นธรรม/ความเสมอภาคของผู้ป่วย (justice) ใช้อภิสิทธิ์จากตำแหน่งและความสัมพันธ์ส่วนตัว ผู้ป่วยอื่นที่รออยู่เสียประโยชน์ ควรให้ญาติเข้าคิวตามระบบ (ลำดับตามความเร่งด่วนทางการแพทย์)"
+    },
+    {
+     "id": "1.2",
+     "prompt": "อาจารย์แพทย์แก้ไขผลวิจัยให้ยาดูมีประสิทธิภาพดีและผลข้างเคียงน้อย ก่อนส่งตีพิมพ์ ท่านมีความเห็นอย่างไร",
+     "format": "short",
+     "accepted": [
+      "ไม่เหมาะสม",
+      "ทุจริต",
+      "fabrication",
+      "falsification",
+      "research misconduct",
+      "ความซื่อสัตย์"
+     ],
+     "key_text": "ไม่เหมาะสม — เป็นการทุจริตในการวิจัย (data falsification/research misconduct) ผิดหลักความซื่อสัตย์ทางวิชาการ ทำลายความเชื่อมั่นต่อวิชาชีพ อาจเป็นอันตรายต่อผู้ป่วยที่ใช้ยา (พิษต่อตับ) และผู้เข้าร่วมวิจัย",
+     "source_key": "เฉลย: ไม่เหมาะสม — เป็นการทุจริตในการวิจัย (data falsification/research misconduct) ผิดหลักความซื่อสัตย์ทางวิชาการ ทำลายความเชื่อมั่นต่อวิชาชีพ อาจเป็นอันตรายต่อผู้ป่วยที่ใช้ยา (พิษต่อตับ) และผู้เข้าร่วมวิจัย"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "KF52",
+     "pages": [
+      1
+     ]
+    },
+    {
+     "paper": "KF52-KEY",
+     "pages": [
+      1
+     ]
+    }
+   ],
+   "tags": [
+    "medical-profession"
+   ],
+   "source": "claude-mcp",
+   "audit_note": "ไฟล์เฉลยไม่มีคำตอบข้อนี้ (โจทย์ระบุ 'คล้ายปี 50') AI เขียนตามหลักเวชจริยศาสตร์/การสื่อสาร"
+  },
+  {
+   "id": "MP1-52-KF-002",
+   "block": "MP1",
+   "cohort": 52,
+   "n": 2,
+   "type": "KF",
+   "case": "จงตอบคำถามต่อไปนี้ (วิชาชีพแพทย์)",
+   "items": [
+    {
+     "id": "2.1",
+     "prompt": "แพทย์เวรห้องฉุกเฉินตี 2 ตรวจผู้ป่วยหวัดธรรมดา แล้วโพสต์ Facebook ว่า 'เป็นหวัดมา ER ตอนตี 2 เธอจะตายคืนนี้เลยใช่มั้ยจึงมาปลุกหมอ' ท่านมีความเห็นอย่างไร",
+     "format": "short",
+     "accepted": [
+      "ไม่เหมาะสม",
+      "ความลับ",
+      "ผู้ป่วย",
+      "social media",
+      "เคารพ",
+      "วิชาชีพ"
+     ],
+     "key_text": "ไม่เหมาะสม — ละเมิดความเป็นส่วนตัว/ความลับของผู้ป่วย ไม่เคารพผู้ป่วย และเสียภาพลักษณ์วิชาชีพ การมาห้องฉุกเฉินเป็นสิทธิ์ของผู้ป่วย แพทย์ควรให้ความรู้เรื่องการใช้บริการอย่างเหมาะสมโดยไม่ตำหนิ",
+     "source_key": "เฉลย: ไม่เหมาะสม — ละเมิดความเป็นส่วนตัว/ความลับของผู้ป่วย ไม่เคารพผู้ป่วย และเสียภาพลักษณ์วิชาชีพ การมาห้องฉุกเฉินเป็นสิทธิ์ของผู้ป่วย แพทย์ควรให้ความรู้เรื่องการใช้บริการอย่างเหมาะสมโดยไม่ตำหนิ"
+    },
+    {
+     "id": "2.2",
+     "prompt": "ชาย 68 ปี มะเร็งปอด ได้เคมีบำบัดไม่หาย แพทย์แนะนำเปลี่ยนยา ญาติเห็นด้วย แต่ผู้ป่วยปฏิเสธและขอรับ palliative care ท่านเป็นแพทย์จะทำอย่างไร พร้อมเหตุผล",
+     "format": "short",
+     "accepted": [
+      "autonomy",
+      "เคารพ",
+      "palliative",
+      "ตัดสินใจ",
+      "ความต้องการ",
+      "ประคับประคอง"
+     ],
+     "key_text": "เคารพการตัดสินใจของผู้ป่วย (autonomy) ที่มีความสามารถตัดสินใจ หลังให้ข้อมูลการรักษาทางเลือกครบถ้วน ประเมินความเข้าใจ อธิบายแก่ญาติ และจัดการดูแลแบบประคับประคองตามความต้องการ (beneficence/non-maleficence)",
+     "source_key": "เฉลย: เคารพการตัดสินใจของผู้ป่วย (autonomy) ที่มีความสามารถตัดสินใจ หลังให้ข้อมูลการรักษาทางเลือกครบถ้วน ประเมินความเข้าใจ อธิบายแก่ญาติ และจัดการดูแลแบบประคับประคองตามความต้องการ (beneficence/non-maleficence)"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "KF52",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "KF52-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [
+    "medical-profession"
+   ],
+   "source": "claude-mcp",
+   "audit_note": "ไฟล์เฉลยไม่มีคำตอบข้อนี้ (โจทย์ระบุ 'คล้ายปี 50') AI เขียนตามหลักเวชจริยศาสตร์/การสื่อสาร"
+  },
+  {
+   "id": "MP1-52-KF-003",
+   "block": "MP1",
+   "cohort": 52,
+   "n": 3,
+   "type": "KF",
+   "case": "ชาย 45 ปี ปวดท้องเรื้อรัง 3 เดือน น้ำหนักลด 5 กก. ถ่ายดำเป็นบางครั้ง สีหน้ากังวล พูดว่า 'หมอครับ ผมกลัวว่าจะเป็นมะเร็งกระเพาะ ผมยังมีลูกเล็กอยู่เลย'",
+   "items": [
+    {
+     "id": "3.1",
+     "prompt": "จงแสดงขั้นตอนการสัมภาษณ์ผู้ป่วยที่แสดงถึง empathy",
+     "format": "short",
+     "accepted": [
+      "name",
+      "understand",
+      "respect",
+      "support",
+      "explore",
+      "รับรู้",
+      "สะท้อน",
+      "เห็นใจ",
+      "ยอมรับ",
+      "ให้กำลังใจ",
+      "empathy"
+     ],
+     "key_text": "ใช้ NURSE: Name (เอ่ยชื่ออารมณ์ 'คุณดูกังวลมาก') · Understand (เข้าใจ 'ห่วงลูกเป็นเรื่องธรรมดา') · Respect (ชื่นชมที่มาพบแพทย์) · Support (บอกว่าจะอยู่ช่วยดูแล/ตรวจให้ครบ) · Explore (เปิดให้ถามต่อ 'อะไรทำให้กังวลที่สุด') ร่วมกับฟังเงียบ สบตา น้ำเสียงอบอุ่น และอธิบายขั้นตอนต่อไป",
+     "source_key": "เฉลย: ใช้ NURSE: Name (เอ่ยชื่ออารมณ์ 'คุณดูกังวลมาก') · Understand (เข้าใจ 'ห่วงลูกเป็นเรื่องธรรมดา') · Respect (ชื่นชมที่มาพบแพทย์) · Support (บอกว่าจะอยู่ช่วยดูแล/ตรวจให้ครบ) · Explore (เปิดให้ถามต่อ 'อะไรทำให้กังวลที่สุด') ร่วมกับฟังเงียบ สบตา น้ำเสียงอบอุ่น และอธิบายขั้นตอนต่อไป"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "KF52",
+     "pages": [
+      3
+     ]
+    },
+    {
+     "paper": "KF52-KEY",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [
+    "medical-profession"
+   ],
+   "source": "claude-mcp",
+   "audit_note": "ไฟล์เฉลยไม่มีคำตอบข้อนี้ (โจทย์ระบุ 'คล้ายปี 50') AI เขียนตามหลักเวชจริยศาสตร์/การสื่อสาร"
+  },
+  {
+   "id": "MP1-52-KF-004",
+   "block": "MP1",
+   "cohort": 52,
+   "n": 4,
+   "type": "KF",
+   "case": "ชาย 50 ปี มาด้วยอาการแน่นหน้าอก เมื่อถูกถามว่า 'เจ็บแบบไหนครับ' ผู้ป่วยตอบว่า 'ก็เจ็บ ๆ'",
+   "items": [
+    {
+     "id": "4.1",
+     "prompt": "จงอธิบายวิธีดำเนินการที่เหมาะสมเพื่อให้ได้ข้อมูลละเอียดขึ้น",
+     "format": "short",
+     "accepted": [
+      "open",
+      "ปลายเปิด",
+      "characteristic",
+      "ลักษณะ",
+      "ตัวอย่าง",
+      "facilitation",
+      "clarif",
+      "ซ้ำ",
+      "opqrst",
+      "pqrst"
+     ],
+     "key_text": "ใช้คำถามปลายเปิดต่อเนื่อง ให้เวลาและกระตุ้น (facilitation/ฟังเงียบ) ขอให้ผู้ป่วยบรรยายด้วยคำพูดของตนเอง ถ้ายังคลุมเครือให้ใช้คำถามชี้ลักษณะอย่างไม่ชี้นำ เช่น แน่น/จุก/แปลบ/บีบรัด (OPQRST: Onset, Provocation/Palliation, Quality, Region/Radiation, Severity, Time) และสะท้อนคำตอบเพื่อยืนยัน",
+     "source_key": "เฉลย: ใช้คำถามปลายเปิดต่อเนื่อง ให้เวลาและกระตุ้น (facilitation/ฟังเงียบ) ขอให้ผู้ป่วยบรรยายด้วยคำพูดของตนเอง ถ้ายังคลุมเครือให้ใช้คำถามชี้ลักษณะอย่างไม่ชี้นำ เช่น แน่น/จุก/แปลบ/บีบรัด (OPQRST: Onset, Provocation/Palliation, Quality, Region/Radiation, Severity, Time) และสะท้อนคำตอบเพื่อยืนยัน"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "KF52",
+     "pages": [
+      4
+     ]
+    },
+    {
+     "paper": "KF52-KEY",
+     "pages": [
+      4
+     ]
+    }
+   ],
+   "tags": [
+    "medical-profession"
+   ],
+   "source": "claude-mcp",
+   "audit_note": "ไฟล์เฉลยไม่มีคำตอบข้อนี้ (โจทย์ระบุ 'คล้ายปี 50') AI เขียนตามหลักเวชจริยศาสตร์/การสื่อสาร"
+  },
+  {
+   "id": "MP1-52-KF-005",
+   "block": "MP1",
+   "cohort": 52,
+   "n": 5,
+   "type": "KF",
+   "case": "หญิงอายุ 20 ปี ดื่มสุราที่ร้านจนมึนเมา มีเพศสัมพันธ์โดยไม่ป้องกันกับชายที่พบในร้าน ต่อมาตั้งครรภ์ ครอบครัวโทษเจ้าของร้านว่า 'ทำไมไม่ดูแลลูกค้า' หากท่านเป็นเจ้าหน้าที่สาธารณสุขในพื้นที่ต้องการป้องกันการตั้งครรภ์ไม่พึงประสงค์ที่เกี่ยวข้องกับแอลกอฮอล์ โดยใช้กรอบ Ottawa Charter for Health Promotion",
+   "items": [
+    {
+     "id": "5.1",
+     "prompt": "Build Healthy Public Policy",
+     "format": "short",
+     "accepted": [
+      "เวลา",
+      "ขาย",
+      "มาตรการ",
+      "ตรวจบัตร",
+      "id check",
+      "ควบคุม",
+      "ลดความเสี่ยง",
+      "กฎหมาย"
+     ],
+     "key_text": "ลดสิ่งแวดล้อมที่เอื้อให้เกิดความเสี่ยง: ควบคุมอายุ จำกัดเวลาในการขายแอลกอฮอล์ กำหนดมาตรฐานร้านให้มีที่จอดรถ/ความปลอดภัย มาตรการความปลอดภัย (ตรวจบัตร ID check) · ส่งเสริมการใช้กฎหมายและลงโทษร้านที่ขายให้ผู้ที่เมาแล้วหรือไม่ปลอดภัย",
+     "source_key": "เฉลย: ลดสิ่งแวดล้อมที่เอื้อให้เกิดความเสี่ยง: ควบคุมอายุ จำกัดเวลาในการขายแอลกอฮอล์ กำหนดมาตรฐานร้านให้มีที่จอดรถ/ความปลอดภัย มาตรการความปลอดภัย (ตรวจบัตร ID check) · ส่งเสริมการใช้กฎหมายและลงโทษร้านที่ขายให้ผู้ที่เมาแล้วหรือไม่ปลอดภัย"
+    },
+    {
+     "id": "5.2",
+     "prompt": "Create Supportive Environment",
+     "format": "short",
+     "accepted": [
+      "ถุงยาง",
+      "safe sex",
+      "safe zone",
+      "staff",
+      "escort",
+      "security",
+      "รณรงค์ลดการดื่ม",
+      "ป้าย"
+     ],
+     "key_text": "ทำให้เลือกพฤติกรรมที่ปลอดภัยได้ง่าย: จัดจุดแจกถุงยาง ป้ายเตือน safe sex ลดการส่งเสริมการดื่มหนัก (แจกถุงยาง) มี safe zone สำหรับคนเมา มี staff escort/security ช่วยเหลือ ป้ายข้อมูลเตือน",
+     "source_key": "เฉลย: ทำให้เลือกพฤติกรรมที่ปลอดภัยได้ง่าย: จัดจุดแจกถุงยาง ป้ายเตือน safe sex ลดการส่งเสริมการดื่มหนัก (แจกถุงยาง) มี safe zone สำหรับคนเมา มี staff escort/security ช่วยเหลือ ป้ายข้อมูลเตือน"
+    },
+    {
+     "id": "5.3",
+     "prompt": "Strengthen Community Action",
+     "format": "short",
+     "accepted": [
+      "ชุมชน",
+      "campaign",
+      "peer",
+      "เพื่อน",
+      "ร้านค้า",
+      "ภาคี",
+      "ร่วมมือ"
+     ],
+     "key_text": "ให้ชุมชนเป็นเจ้าของปัญหาและทางแก้: ร่วมมือชุมชน-ร้าน-รัฐ จัด campaign 'ดื่มอย่างปลอดภัย ใช้ถุงยาง' ใช้ peer educator (รุ่นพี่/เพื่อนในวัยเดียวกัน) เปิดช่องร้องเรียนร้านที่ไม่ปลอดภัย",
+     "source_key": "เฉลย: ให้ชุมชนเป็นเจ้าของปัญหาและทางแก้: ร่วมมือชุมชน-ร้าน-รัฐ จัด campaign 'ดื่มอย่างปลอดภัย ใช้ถุงยาง' ใช้ peer educator (รุ่นพี่/เพื่อนในวัยเดียวกัน) เปิดช่องร้องเรียนร้านที่ไม่ปลอดภัย"
+    },
+    {
+     "id": "5.4",
+     "prompt": "Develop Personal Skills",
+     "format": "short",
+     "accepted": [
+      "ความรู้",
+      "alcohol",
+      "sti",
+      "sexual risk",
+      "refusal",
+      "negotiation",
+      "ปฏิเสธ",
+      "ต่อรอง",
+      "คุมกำเนิด"
+     ],
+     "key_text": "เสริมความสามารถในการตัดสินใจ: ให้ความรู้ผลของ alcohol การคุมกำเนิด STI และความตระหนักเรื่อง sexual risk ฝึกทักษะ refusal, negotiation และวางแผนป้องกันก่อนดื่ม",
+     "source_key": "เฉลย: เสริมความสามารถในการตัดสินใจ: ให้ความรู้ผลของ alcohol การคุมกำเนิด STI และความตระหนักเรื่อง sexual risk ฝึกทักษะ refusal, negotiation และวางแผนป้องกันก่อนดื่ม"
+    },
+    {
+     "id": "5.5",
+     "prompt": "Reorient Health Services",
+     "format": "short",
+     "accepted": [
+      "คลินิก",
+      "วัยรุ่น",
+      "เข้าถึงง่าย",
+      "proactive",
+      "outreach",
+      "sti",
+      "คุมกำเนิด",
+      "ที่ปรึกษา"
+     ],
+     "key_text": "เน้นระบบบริการเข้าถึงง่ายและ proactive: คลินิกวัยรุ่นเข้าถึงง่ายเป็นความลับ มีบริการคุมกำเนิดและตรวจ STI มี outreach แจกถุงยาง/ให้คำปรึกษาเพื่อลด unsafe sex และการตั้งครรภ์ไม่พึงประสงค์",
+     "source_key": "เฉลย: เน้นระบบบริการเข้าถึงง่ายและ proactive: คลินิกวัยรุ่นเข้าถึงง่ายเป็นความลับ มีบริการคุมกำเนิดและตรวจ STI มี outreach แจกถุงยาง/ให้คำปรึกษาเพื่อลด unsafe sex และการตั้งครรภ์ไม่พึงประสงค์"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF52",
+     "pages": [
+      5
+     ]
+    },
+    {
+     "paper": "KF52-KEY",
+     "pages": [
+      5
+     ]
+    }
+   ],
+   "tags": [
+    "health-promotion"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "MP1-52-KF-006",
+   "block": "MP1",
+   "cohort": 52,
+   "n": 6,
+   "type": "KF",
+   "case": "ในการวัดอุณหภูมิของผู้ป่วยด้วย thermometer ชนิดปรอท ท่านมีวิธีปฏิบัติอย่างไร",
+   "items": [
+    {
+     "id": "6.1",
+     "prompt": "ก่อนวัด",
+     "format": "short",
+     "accepted": [
+      "สะอาด",
+      "เช็ด",
+      "สลัด",
+      "35",
+      "ต่ำกว่า"
+     ],
+     "key_text": "เช็ดทำความสะอาด สลัดปรอทลงต่ำกว่า 35 °C หลีกเลี่ยงการกินอาหาร/เครื่องดื่มร้อนหรือเย็นก่อนวัด (ปากให้รอ ~15–30 นาที)",
+     "source_key": "เฉลย: เช็ดทำความสะอาด สลัดปรอทลงต่ำกว่า 35 °C หลีกเลี่ยงการกินอาหาร/เครื่องดื่มร้อนหรือเย็นก่อนวัด (ปากให้รอ ~15–30 นาที)"
+    },
+    {
+     "id": "6.2",
+     "prompt": "ตำแหน่งที่วาง thermometer",
+     "format": "short",
+     "accepted": [
+      "รักแร้",
+      "ปาก",
+      "ใต้ลิ้น",
+      "ทวารหนัก"
+     ],
+     "key_text": "รักแร้ = กึ่งกลางรักแร้ · ปาก = บริเวณใต้ลิ้น · ทวารหนัก (ตามความเหมาะสม)",
+     "source_key": "เฉลย: รักแร้ = กึ่งกลางรักแร้ · ปาก = บริเวณใต้ลิ้น · ทวารหนัก (ตามความเหมาะสม)"
+    },
+    {
+     "id": "6.3",
+     "prompt": "ระยะเวลาในการวัด",
+     "format": "short",
+     "accepted": [
+      "3",
+      "4",
+      "นาที",
+      "5"
+     ],
+     "key_text": "ประมาณ 3–4 นาที (ปรอทรักแร้ตามเฉลย) แล้วอ่านค่าอุณหภูมิ",
+     "source_key": "เฉลย: ประมาณ 3–4 นาที (ปรอทรักแร้ตามเฉลย) แล้วอ่านค่าอุณหภูมิ"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "KF52",
+     "pages": [
+      6
+     ]
+    },
+    {
+     "paper": "KF52-KEY",
+     "pages": [
+      6
+     ]
+    }
+   ],
+   "tags": [
+    "medical-profession"
+   ],
+   "source": "claude-mcp",
+   "audit_note": "ลายมือบางคำอ่านยาก"
+  },
+  {
+   "id": "MP1-52-KF-007",
+   "block": "MP1",
+   "cohort": 52,
+   "n": 7,
+   "type": "KF",
+   "case": "การตรวจร่างกายระบบ Respiratory",
+   "items": [
+    {
+     "id": "7.1",
+     "prompt": "โดยการดู ต้องสังเกตอะไรบ้าง 6 อย่าง",
+     "format": "short",
+     "accepted": [
+      "shape of the chest",
+      "respiratory rate",
+      "skeletal",
+      "cyanosis",
+      "clubbing",
+      "anteroposterior",
+      "รูปร่างทรวงอก",
+      "อัตราการหายใจ"
+     ],
+     "key_text": "1. Shape of the chest 2. Respiratory rate & respiratory pattern 3. Skeletal landmarks 4. Cyanosis 5. Clubbing of fingers and toes 6. Anteroposterior diameter to transverse diameter",
+     "source_key": "เฉลย: 1. Shape of the chest 2. Respiratory rate & respiratory pattern 3. Skeletal landmarks 4. Cyanosis 5. Clubbing of fingers and toes 6. Anteroposterior diameter to transverse diameter"
+    },
+    {
+     "id": "7.2",
+     "prompt": "โดยการคลำ ต้องตรวจอะไรบ้าง 4 อย่าง",
+     "format": "short",
+     "accepted": [
+      "trachea",
+      "chest expansion",
+      "tactile fremitus",
+      "tenderness"
+     ],
+     "key_text": "1. Trachea 2. Chest expansion 3. Tactile fremitus 4. Tenderness",
+     "source_key": "เฉลย: 1. Trachea 2. Chest expansion 3. Tactile fremitus 4. Tenderness"
+    },
+    {
+     "id": "7.3",
+     "prompt": "ตำแหน่งต่อมน้ำเหลืองที่พบได้ในการตรวจ 3 ตำแหน่ง",
+     "format": "short",
+     "accepted": [
+      "cervical",
+      "supraclavicular",
+      "axillary"
+     ],
+     "key_text": "1. Cervical lymph nodes 2. Supraclavicular lymph nodes 3. Axillary lymph nodes",
+     "source_key": "เฉลย: 1. Cervical lymph nodes 2. Supraclavicular lymph nodes 3. Axillary lymph nodes"
+    },
+    {
+     "id": "7.4",
+     "prompt": "วิธีการตรวจที่จำเป็นต้องให้คนไข้เปล่งเสียง 2 อย่าง",
+     "format": "short",
+     "accepted": [
+      "tactile fremitus",
+      "vocal resonance",
+      "vocal fremitus"
+     ],
+     "key_text": "Tactile fremitus, Vocal resonance",
+     "source_key": "เฉลย: Tactile fremitus, Vocal resonance"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF52",
+     "pages": [
+      6
+     ]
+    },
+    {
+     "paper": "KF52-KEY",
+     "pages": [
+      6
+     ]
+    }
+   ],
+   "tags": [
+    "physical-examination"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "MP1-52-KF-008",
+   "block": "MP1",
+   "cohort": 52,
+   "n": 8,
+   "type": "KF",
+   "case": "ระบบหัวใจและหลอดเลือด",
+   "items": [
+    {
+     "id": "8.1",
+     "prompt": "Hypertension ทำลาย target organ ใด (3 อวัยวะ)",
+     "format": "short",
+     "accepted": [
+      "heart",
+      "brain",
+      "kidney",
+      "eye",
+      "blood vessel"
+     ],
+     "key_text": "Heart, Brain, Kidney, Eyes, Blood vessels (ตอบ 3 อย่าง)",
+     "source_key": "เฉลย: Heart, Brain, Kidney, Eyes, Blood vessels (ตอบ 3 อย่าง)"
+    },
+    {
+     "id": "8.2.1",
+     "prompt": "Office: No hypertension / Home: No hypertension",
+     "format": "short",
+     "accepted": [
+      "normotension",
+      "ปกติ"
+     ],
+     "key_text": "Normotension (ความดันปกติ)",
+     "source_key": "เฉลย: Normotension (ความดันปกติ)"
+    },
+    {
+     "id": "8.2.2",
+     "prompt": "Office: Hypertension / Home: Hypertension",
+     "format": "short",
+     "accepted": [
+      "sustained"
+     ],
+     "key_text": "Sustained hypertension (ความดันสูงจริง)",
+     "source_key": "เฉลย: Sustained hypertension (ความดันสูงจริง)"
+    },
+    {
+     "id": "8.2.3",
+     "prompt": "Office: No hypertension / Home: Hypertension",
+     "format": "short",
+     "accepted": [
+      "masked"
+     ],
+     "key_text": "Masked hypertension (ความดันสูงแฝง)",
+     "source_key": "เฉลย: Masked hypertension (ความดันสูงแฝง)"
+    },
+    {
+     "id": "8.2.4",
+     "prompt": "Office: Hypertension / Home: No hypertension",
+     "format": "short",
+     "accepted": [
+      "white coat",
+      "white-coat"
+     ],
+     "key_text": "White coat hypertension (ความดันสูงเฉพาะที่สถานพยาบาล)",
+     "source_key": "เฉลย: White coat hypertension (ความดันสูงเฉพาะที่สถานพยาบาล)"
+    },
+    {
+     "id": "8.3",
+     "prompt": "จากภาพบอกสิ่งที่ไม่ควรทำในการวัดความดัน 4 ข้อ",
+     "format": "short",
+     "accepted": [
+      "coffee",
+      "caffeine",
+      "talking",
+      "crossing",
+      "cuff",
+      "clothing",
+      "heart level",
+      "หัวใจ"
+     ],
+     "key_text": "1. Drink coffee (caffeine) 2. Talking 3. Crossing legs 4. Wrap the cuff over thick clothing 5. แขนไม่อยู่ในระดับหัวใจ (arm should be at heart level)",
+     "source_key": "เฉลย: 1. Drink coffee (caffeine) 2. Talking 3. Crossing legs 4. Wrap the cuff over thick clothing 5. แขนไม่อยู่ในระดับหัวใจ (arm should be at heart level)",
+     "image": "img/MP1-52-KF-008.jpg",
+     "image_caption": "ท่าวัดความดัน"
+    },
+    {
+     "id": "8.4.1",
+     "prompt": "Pulsus parvus et tardus, ejection systolic murmur radiated to neck",
+     "format": "short",
+     "accepted": [
+      "aortic stenosis",
+      "as"
+     ],
+     "key_text": "Aortic stenosis",
+     "source_key": "เฉลย: Aortic stenosis"
+    },
+    {
+     "id": "8.4.2",
+     "prompt": "Atrial fibrillation, RV heave with diastolic rumbling murmur and loud S1",
+     "format": "short",
+     "accepted": [
+      "mitral stenosis",
+      "ms"
+     ],
+     "key_text": "Mitral stenosis",
+     "source_key": "เฉลย: Mitral stenosis"
+    },
+    {
+     "id": "8.4.3",
+     "prompt": "Wide pulse pressure, Müller sign positive and diastolic blowing murmur",
+     "format": "short",
+     "accepted": [
+      "aortic regurgitation",
+      "ar"
+     ],
+     "key_text": "Aortic regurgitation",
+     "source_key": "เฉลย: Aortic regurgitation"
+    },
+    {
+     "id": "8.4.4",
+     "prompt": "Pansystolic murmur radiate to axilla with LV heaving",
+     "format": "short",
+     "accepted": [
+      "mitral regurgitation",
+      "mr"
+     ],
+     "key_text": "Mitral regurgitation",
+     "source_key": "เฉลย: Mitral regurgitation"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF52",
+     "pages": [
+      7
+     ]
+    },
+    {
+     "paper": "KF52-KEY",
+     "pages": [
+      7
+     ]
+    }
+   ],
+   "tags": [
+    "physical-examination"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "MP1-52-KF-009",
+   "block": "MP1",
+   "cohort": 52,
+   "n": 9,
+   "type": "KF",
+   "case": "ผู้ป่วยหญิงไทย 55 ปี ปวดท้องบริเวณชายโครงขวา 2 วัน มีอาการอืด แน่นท้องหลังอาหารมันและของทอด ไข้หนาวสั่น คลื่นไส้ ตรวจร่างกาย: ไข้ 38.5 °C ชีพจร 105 ความดัน 100/60 ค่อนข้างอ้วน กดเจ็บบริเวณชายโครงขวาและสะดุ้งเมื่อหายใจเข้าลึกขณะกดท้อง",
+   "items": [
+    {
+     "id": "9.1",
+     "prompt": "อวัยวะที่อยู่บริเวณ Right Hypochondriac area (5 อวัยวะ)",
+     "format": "short",
+     "accepted": [
+      "liver",
+      "gallbladder",
+      "kidney",
+      "hepatic flexure",
+      "duodenum"
+     ],
+     "key_text": "Liver, Gallbladder, Right kidney, Hepatic flexure of colon, Duodenum (ตอบ 5 อย่าง)",
+     "source_key": "เฉลย: Liver, Gallbladder, Right kidney, Hepatic flexure of colon, Duodenum (ตอบ 5 อย่าง)"
+    },
+    {
+     "id": "9.2",
+     "prompt": "อวัยวะที่น่าจะเป็นปัญหามากที่สุด",
+     "format": "short",
+     "accepted": [
+      "gallbladder",
+      "ถุงน้ำดี"
+     ],
+     "key_text": "Gallbladder (acute cholecystitis)",
+     "source_key": "เฉลย: Gallbladder (acute cholecystitis)"
+    },
+    {
+     "id": "9.3",
+     "prompt": "คำที่ใช้ตรวจบริเวณช่องท้อง (ที่ขีดเส้นใต้)",
+     "format": "short",
+     "accepted": [
+      "murphy"
+     ],
+     "key_text": "Murphy's sign",
+     "source_key": "เฉลย: Murphy's sign"
+    },
+    {
+     "id": "9.4",
+     "prompt": "อวัยวะที่น่าจะเป็นปัญหารองลงมา (2 อวัยวะ)",
+     "format": "short",
+     "accepted": [
+      "liver",
+      "common bile duct",
+      "cbd"
+     ],
+     "key_text": "Liver, Common bile duct",
+     "source_key": "เฉลย: Liver, Common bile duct"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF52",
+     "pages": [
+      9
+     ]
+    },
+    {
+     "paper": "KF52-KEY",
+     "pages": [
+      9
+     ]
+    }
+   ],
+   "tags": [
+    "physical-examination"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "MP1-52-KF-010",
+   "block": "MP1",
+   "cohort": 52,
+   "n": 10,
+   "type": "KF",
+   "case": "ผู้ป่วยหญิงไทย 65 ปี ปวดท้องน้อยและปัสสาวะไม่ออก 2 ชม. ครั้งก่อนเคยใส่สายสวนแล้วอาการดีขึ้น รู้สึกมีก้อนหน่วง ๆ ที่ช่องคลอด 1 ปี เบาหวานและความดัน คลอดบุตร 5 คนทางช่องคลอด ไม่เคยตรวจภายใน (ตรวจร่างกาย: Full bladder)",
+   "items": [
+    {
+     "id": "10.1",
+     "prompt": "ควรใส่สายสวนปัสสาวะชนิดใด",
+     "format": "short",
+     "accepted": [
+      "foley",
+      "3"
+     ],
+     "key_text": "Foley catheter (หมายเลข 3 ในภาพ)",
+     "source_key": "เฉลย: Foley catheter (หมายเลข 3 ในภาพ)",
+     "image": "img/MP1-52-KF-010a.jpg",
+     "image_caption": "สายสวนปัสสาวะ 1 Silicone 2 Nelaton 3 Foley"
+    },
+    {
+     "id": "10.2",
+     "prompt": "ความยาว/ขนาดเท่าไร",
+     "format": "short",
+     "accepted": [
+      "14",
+      "16",
+      "fr"
+     ],
+     "key_text": "14–16 Fr",
+     "source_key": "เฉลย: 14–16 Fr"
+    },
+    {
+     "id": "10.3",
+     "prompt": "ต้องเตรียมการตรวจภายในอย่างไรบ้าง",
+     "format": "short",
+     "accepted": [
+      "ยินยอม",
+      "ปัสสาวะ",
+      "lithotomy",
+      "สบายใจ",
+      "ผู้ช่วย",
+      "พยาบาล",
+      "อธิบาย",
+      "ความเป็นส่วนตัว"
+     ],
+     "key_text": "อธิบายขั้นตอนและขอความยินยอม จัดให้มีผู้ช่วย/พยาบาลหญิงอยู่ด้วย ให้ผู้ป่วยสบายใจและเป็นส่วนตัว ให้ปัสสาวะก่อนตรวจ จัดท่า lithotomy คลุมผ้า ล้างมือ ใส่ถุงมือ เตรียมอุปกรณ์/สารหล่อลื่น",
+     "source_key": "เฉลย: อธิบายขั้นตอนและขอความยินยอม จัดให้มีผู้ช่วย/พยาบาลหญิงอยู่ด้วย ให้ผู้ป่วยสบายใจและเป็นส่วนตัว ให้ปัสสาวะก่อนตรวจ จัดท่า lithotomy คลุมผ้า ล้างมือ ใส่ถุงมือ เตรียมอุปกรณ์/สารหล่อลื่น"
+    },
+    {
+     "id": "10.4",
+     "prompt": "ควรใช้ Speculum หมายเลขเท่าไร",
+     "format": "short",
+     "accepted": [
+      "graves",
+      "extra long",
+      "1"
+     ],
+     "key_text": "หมายเลข 1: Graves extra long (ผู้ป่วยมี pelvic organ prolapse)",
+     "source_key": "เฉลย: หมายเลข 1: Graves extra long (ผู้ป่วยมี pelvic organ prolapse)",
+     "image": "img/MP1-52-KF-010b.jpg",
+     "image_caption": "Speculum หมายเลข 1–7"
+    },
+    {
+     "id": "10.5.1",
+     "prompt": "External genitalia (MIUB) — ตรวจอะไร / พยาธิสภาพ",
+     "format": "short",
+     "accepted": [
+      "general appearance",
+      "pubic hair",
+      "discharge",
+      "lesions",
+      "pelvic organ prolapse",
+      "vulvar"
+     ],
+     "key_text": "ตรวจ General appearance, Pubic hair distribution, Discharge, Lesions · Pathology: Pelvic organ prolapse, Vulvar irritation/ulcer",
+     "source_key": "เฉลย: ตรวจ General appearance, Pubic hair distribution, Discharge, Lesions · Pathology: Pelvic organ prolapse, Vulvar irritation/ulcer"
+    },
+    {
+     "id": "10.5.2",
+     "prompt": "Vagina — ตรวจอะไร / พยาธิสภาพ",
+     "format": "short",
+     "accepted": [
+      "mucosa",
+      "lesions",
+      "discharge",
+      "cystocele",
+      "rectocele"
+     ],
+     "key_text": "ตรวจ Mucosa, Lesions, Discharge · Pathology: Cystocele (ผนังช่องคลอดด้านหน้าหย่อน), Rectocele",
+     "source_key": "เฉลย: ตรวจ Mucosa, Lesions, Discharge · Pathology: Cystocele (ผนังช่องคลอดด้านหน้าหย่อน), Rectocele"
+    },
+    {
+     "id": "10.5.3",
+     "prompt": "Cervix — ตรวจอะไร / พยาธิสภาพ",
+     "format": "short",
+     "accepted": [
+      "lesions",
+      "position",
+      "discharge",
+      "tender",
+      "descended",
+      "decubitus",
+      "elongation"
+     ],
+     "key_text": "ตรวจ Lesions, Position, Discharge, Tender on motion · Pathology: Descended cervix, Decubitus ulcer, Cervical elongation",
+     "source_key": "เฉลย: ตรวจ Lesions, Position, Discharge, Tender on motion · Pathology: Descended cervix, Decubitus ulcer, Cervical elongation"
+    },
+    {
+     "id": "10.5.4",
+     "prompt": "Uterus — ตรวจอะไร / พยาธิสภาพ",
+     "format": "short",
+     "accepted": [
+      "position",
+      "size",
+      "tenderness",
+      "uterine prolapse"
+     ],
+     "key_text": "ตรวจ Position, Size, Tenderness · Pathology: Uterine prolapse",
+     "source_key": "เฉลย: ตรวจ Position, Size, Tenderness · Pathology: Uterine prolapse"
+    },
+    {
+     "id": "10.5.5",
+     "prompt": "Ovary — ตรวจอะไร / พยาธิสภาพ",
+     "format": "short",
+     "accepted": [
+      "size",
+      "tenderness",
+      "normal"
+     ],
+     "key_text": "ตรวจ Size, Tenderness · Pathology: ปกติ (usually normal)",
+     "source_key": "เฉลย: ตรวจ Size, Tenderness · Pathology: ปกติ (usually normal)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF52",
+     "pages": [
+      10
+     ]
+    },
+    {
+     "paper": "KF52-KEY",
+     "pages": [
+      10
+     ]
+    }
+   ],
+   "tags": [
+    "physical-examination"
+   ],
+   "source": "claude-mcp",
+   "audit_note": "ข้อ 10.3 ลายมือจิ๋วอ่านบางส่วน AI สรุปเพิ่ม"
+  }
+ ]
+}
