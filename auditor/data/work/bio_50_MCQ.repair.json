@@ -1,0 +1,619 @@
+{
+ "set_id": "bio_50_MCQ",
+ "note": "Phase 3 repair · ไม่มีไฟล์เฉลย AI ตอบเอง (draft)",
+ "skipped": [
+  "3",
+  "10",
+  "11",
+  "14",
+  "15",
+  "16",
+  "24",
+  "26",
+  "51",
+  "62"
+ ],
+ "skipped_reason": "โจทย์/ตัวเลือกขาดหรือจำมาไม่ครบ",
+ "duplicate_groups": {},
+ "questions": {
+  "25": {
+   "choices_override": {
+    "A": "Efficacy equivalents",
+    "B": "Therapeutic equivalents",
+    "C": "Therapeutic index equivalents",
+    "D": "Active ingredient equivalents",
+    "E": "Pharmaceutical equivalents"
+   },
+   "ai_choices": [
+    "E"
+   ],
+   "explanation": "Bioequivalence → therapeutic equivalence (AI ตอบ ความมั่นใจต่ำ; AI เติมตัวเลือก E)",
+   "option_why": {
+    "A": "efficacy equivalents กว้างเกินไป",
+    "B": "✓ therapeutic equivalents (ผลการรักษาเทียบเท่า)",
+    "C": "TI ไม่ใช่",
+    "D": "active ingredient เทียบเท่าไม่ใช่นิยาม BE",
+    "E": "AI เติมให้: pharmaceutical equivalents = รูปแบบ/ปริมาณเหมือนกัน"
+   },
+   "key_concept": "• Pharmaceutical equiv → ตัวยา/รูปแบบ/ขนาดเดียวกัน\n• Bioequivalence → ระดับในเลือดเทียบเท่า\n• Therapeutic equiv → ผลรักษาเหมือนกัน"
+  },
+  "4": {
+   "explanation": "Phase I = ความปลอดภัย/PK ในอาสาสมัครสุขภาพดี",
+   "option_why": {
+    "A": "preclinical ไม่ใช่การสังเคราะห์อย่างเดียว (รวม efficacy/toxicity)",
+    "B": "Phase II ไม่ใช่การทดสอบพิษในสัตว์",
+    "C": "✓ Phase I: PK/safety ในอาสาสมัครสุขภาพดี",
+    "D": "Phase III ใช้ confirm efficacy ในผู้ป่วยจำนวนมาก",
+    "E": "Phase IV ติดตาม ADR หลังออกตลาด"
+   },
+   "key_concept": "• Phase I: safety/PK/dose\n• Phase II: efficacy/dose-finding\n• Phase III: confirm efficacy · IV: post-marketing"
+  },
+  "5": {
+   "explanation": "Serotonin reuptake (SERT) เป็นบทบาทของ transporter ใน pharmacodynamics",
+   "option_why": {
+    "A": "renal influx เป็น PK",
+    "B": "renal efflux เป็น PK",
+    "C": "✓ SERT reuptake = เป้าของ SSRI (PD)",
+    "D": "hepatic efflux เป็น PK",
+    "E": "hepatic reuptake เป็น PK"
+   },
+   "key_concept": "• PD: SERT, NET, DAT เป็นเป้ายา\n• PK: OAT/OATP/P-gp\n• SSRI ยับยั้ง SERT"
+  },
+  "6": {
+   "explanation": "Ketoconazole ยับยั้ง P-gp (efflux transporter) และ CYP3A4",
+   "option_why": {
+    "A": "digoxin เป็น substrate ของ P-gp",
+    "B": "simvastatin เป็น substrate OATP/CYP3A4",
+    "C": "rifampin เป็น inducer",
+    "D": "indinavir ยับยั้ง CYP3A4 มากกว่า P-gp",
+    "E": "✓ ketoconazole = P-gp inhibitor"
+   },
+   "key_concept": "• P-gp inhibitor: ketoconazole, verapamil, quinidine\n• P-gp inducer: rifampin\n• ยับยั้ง efflux → substrate ↑"
+  },
+  "7": {
+   "explanation": "MDR1 (P-gp) พา anticancer หลายชนิดออกนอกเซลล์ → ดื้อยา",
+   "option_why": {
+    "A": "✓ MDR1 (ABCB1) efflux → multidrug resistance",
+    "B": "PEPT พา peptide เข้าเซลล์",
+    "C": "OAT พา anion เข้าไต",
+    "D": "OCT/OTC พา cation",
+    "E": "OATP เป็น uptake ตับ"
+   },
+   "key_concept": "• MDR1 = P-gp\n• ดื้อยา doxorubicin, vinca, taxane\n• efflux ↑ → intracellular drug ↓"
+  },
+  "8": {
+   "explanation": "ยับยั้ง renal efflux → ยาสะสม → เสี่ยง ADR เพิ่ม",
+   "option_why": {
+    "A": "ผลเปลี่ยนแน่นอน",
+    "B": "ADR ไม่ลดลง",
+    "C": "✓ risk of ADR เพิ่ม",
+    "D": "intrinsic activity ไม่เปลี่ยน",
+    "E": "intrinsic activity ไม่ลด"
+   },
+   "key_concept": "• efflux ที่ไต = ขับยา\n• ยับยั้ง → ระดับยา ↑\n• ตัวอย่าง probenecid"
+  },
+  "9": {
+   "explanation": "เพิ่ม dissolution rate → ดูดซึมเร็วขึ้น",
+   "option_why": {
+    "A": "blood flow ลด → ดูดซึมช้า",
+    "B": "gastric emptying ช้า → ดูดซึมช้า",
+    "C": "intestinal motility ↑ → เวลาสัมผัสลด",
+    "D": "✓ dissolution rate ↑ → ดูดซึมเร็วขึ้น",
+    "E": "ionized ↑ → ผ่านเยื่อยาก"
+   },
+   "key_concept": "• ปัจจัยเพิ่ม absorption: dissolution, blood flow, surface area, non-ionized\n• ลด: ionized, gastric emptying ช้า\n• ชนิดยาเม็ดมีผล"
+  },
+  "12": {
+   "explanation": "อวัยวะที่เลือดไปเลี้ยงน้อย (ผิวหนัง กระดูก ไขมัน) ยากระจายเข้าได้ช้า/น้อย",
+   "option_why": {
+    "A": "Brain/Heart เลือดมาก",
+    "B": "Heart/Brain เลือดมาก",
+    "C": "Brain/Liver/Heart เลือดมาก",
+    "D": "✓ skin, bone, adipose = low perfusion",
+    "E": "kidney เลือดมาก"
+   },
+   "key_concept": "• Perfusion สูง: brain, heart, liver, kidney\n• ต่ำ: skin, bone, fat\n• ยาละลายไขมันสะสมในไขมันช้า"
+  },
+  "13": {
+   "explanation": "Hypoproteinemia → free drug ↑ → Vd ↑ (AI ตอบ ความมั่นใจต่ำ)",
+   "option_why": {
+    "A": "elimination อาจเพิ่ม ไม่ลด",
+    "B": "ผลข้างเคียงเพิ่ม",
+    "C": "✓ Vd เพิ่ม (free fraction ↑)",
+    "D": "bound protein ลด",
+    "E": "free drug conc อาจเพิ่ม แต่ข้อ C ตรงนิยามมากกว่า"
+   },
+   "key_concept": "• albumin ต่ำ → free fraction ↑\n• ยา binding สูง เช่น warfarin, phenytoin\n• ระวังพิษ"
+  },
+  "17": {
+   "explanation": "Time-dependent killing + PAE ปานกลาง ใช้ AUC/MIC",
+   "option_why": {
+    "A": "Cmax/MIC = concentration-dependent",
+    "B": "C0/MIC ไม่ใช่พารามิเตอร์มาตรฐาน",
+    "C": "T>MIC = time-dependent PAE น้อย",
+    "D": "Tmax/MIC ไม่ใช่",
+    "E": "✓ AUC/MIC (เช่น vancomycin, azithromycin)"
+   },
+   "key_concept": "• T>MIC: β-lactam\n• AUC/MIC: vancomycin, FQ, azithromycin\n• Cmax/MIC: aminoglycoside"
+  },
+  "18": {
+   "explanation": "ยาที่ Vd สูง (กระจายนอกพลาสมามาก) ฟอกไตกำจัดได้น้อย (AI ตอบ ความมั่นใจต่ำ; high protein binding ก็ทำให้ฟอกยาก)",
+   "option_why": {
+    "A": "F สูงไม่เกี่ยวกับการฟอก",
+    "B": "✓ high Vd → ยาอยู่นอกเลือด ฟอกไตเอาออกยาก",
+    "C": "slow-release ไม่เกี่ยว",
+    "D": "t½ นานไม่ใช่เหตุผลโดยตรง",
+    "E": "high protein binding ก็ลดการฟอก (AI เห็นว่าถูกด้วย)"
+   },
+   "key_concept": "• Hemodialysis เหมาะกับ MW ต่ำ, Vd ต่ำ, protein binding ต่ำ\n• ยา Vd สูงสะสมในเนื้อเยื่อ\n• ข้อนี้ B และ E ใกล้เคียง"
+  },
+  "19": {
+   "explanation": "Ceftriaxone (β-lactam) เป็น time-dependent ใช้ T>MIC",
+   "option_why": {
+    "A": "✓ ceftriaxone: T>MIC",
+    "B": "azithromycin ใช้ AUC/MIC",
+    "C": "vancomycin ใช้ AUC/MIC",
+    "D": "levofloxacin ใช้ AUC/MIC หรือ Cmax/MIC",
+    "E": "clindamycin ใช้ T>MIC ก็ได้ แต่ข้อ A ชัดกว่า"
+   },
+   "key_concept": "• β-lactam: T>MIC\n• ให้บ่อย/แบบ infusion\n• FQ: AUC/MIC"
+  },
+  "20": {
+   "explanation": "ต้องเพิ่มขนาดยาเพื่อให้ได้ผลเท่าเดิมหลังใช้นาน = tolerance",
+   "option_why": {
+    "A": "hyporeactivity ไม่ใช่",
+    "B": "idiosyncrasy = ปฏิกิริยาผิดปกติ",
+    "C": "✓ tolerance",
+    "D": "anaphylaxis = แพ้",
+    "E": "resistance = เชื้อ/เซลล์ดื้อ"
+   },
+   "key_concept": "• tolerance: ต้องเพิ่ม dose\n• tachyphylaxis = เร็วมาก\n• resistance ใช้กับเชื้อ"
+  },
+  "21": {
+   "explanation": "Acyclovir ดูดซึมแบบอิ่มตัว → F ลดเมื่อขนาดเพิ่ม",
+   "option_why": {
+    "A": "rifampin F ไม่ลดตามขนาด",
+    "B": "ritonavir ไม่ใช่",
+    "C": "✓ acyclovir: saturable absorption",
+    "D": "oseltamivir เป็น prodrug F ดี",
+    "E": "allopurinol ไม่ใช่"
+   },
+   "key_concept": "• F ลดเมื่อขนาดสูง: acyclovir, gabapentin\n• valacyclovir ช่วยเพิ่ม F\n• nonlinear PK"
+  },
+  "22": {
+   "explanation": "Time-dependent killing + PAE น้อย → IV infusion (ยืด T>MIC)",
+   "option_why": {
+    "A": "oral ไม่ใช่เหตุผลนี้",
+    "B": "✓ IV infusion/extended infusion ยืด T>MIC",
+    "C": "SC ไม่ใช่",
+    "D": "IM ไม่ใช่",
+    "E": "IV bolus ให้ peak สูงแต่ T>MIC สั้น"
+   },
+   "key_concept": "• β-lactam: extended infusion เพิ่ม T>MIC\n• PAE น้อย → ต้องรักษาระดับเหนือ MIC\n• (AI ตอบ ความมั่นใจต่ำ)"
+  },
+  "23": {
+   "explanation": "ยาที่ lipophilic ผ่านเยื่อหุ้มเซลล์และถูกเมแทบอไลซ์ได้ดี",
+   "option_why": {
+    "A": "large molecule ผ่านยาก",
+    "B": "water-soluble ผ่านเยื่อยาก",
+    "C": "✓ lipophilicity",
+    "D": "polarity สูงผ่านยาก",
+    "E": "potency ไม่เกี่ยวกับการผ่านเยื่อ"
+   },
+   "key_concept": "• lipophilic → absorb/distribute ได้ดี\n• ต้องผ่าน metabolism เพื่อให้ polar\n• polarity สูง → ขับทางไต"
+  },
+  "27": {
+   "explanation": "จากกราฟ ยา D มี efficacy (Emax) น้อยที่สุด",
+   "option_why": {
+    "A": "E potency ต่ำสุด (ขวาสุด)",
+    "B": "✓ D มี Emax ต่ำสุด",
+    "C": "A B C potency ไม่เท่ากัน",
+    "D": "B intrinsic activity ไม่มากกว่าทุกตัว",
+    "E": "A ไม่ใช่ efficacy สูงสุด"
+   },
+   "key_concept": "• potency = แนวนอน · efficacy = แนวตั้ง\n• D ถูกลด Emax"
+  },
+  "28": {
+   "explanation": "D เทียบกับ C: Emax ลด = non-competitive antagonist",
+   "option_why": {
+    "A": "partial agonist ไม่ใช่การเติม antagonist",
+    "B": "competitive: shift ขวา",
+    "C": "reversible: shift ขวา",
+    "D": "✓ non-competitive: Emax ↓",
+    "E": "inverse agonist ไม่ใช่"
+   },
+   "key_concept": "• Competitive: shift ขวา\n• Non-competitive: Emax ↓\n• ใช้กราฟเดียวกับ MCQ 52 ข้อ 17–18"
+  },
+  "29": {
+   "explanation": "Benzodiazepine ออกฤทธิ์โดยจับ GABA-A receptor",
+   "option_why": {
+    "A": "mucilin = bulk laxative",
+    "B": "antacid = neutralization",
+    "C": "✓ BZD จับ receptor",
+    "D": "NaHCO₃ = neutralization",
+    "E": "charcoal = adsorption"
+   },
+   "key_concept": "• กลไกที่ไม่ผ่าน receptor: chemical/physical\n• BZD → Cl⁻ channel เปิดถี่\n• antacid/charcoal ไม่ผ่าน receptor"
+  },
+  "30": {
+   "explanation": "Gq → PLC → DAG + IP₃",
+   "option_why": {
+    "A": "cAMP มาจาก Gs",
+    "B": "GTP/AC ไม่ใช่",
+    "C": "✓ DAG + IP₃",
+    "D": "PLC เป็นเอนไซม์ ไม่ใช่ messenger",
+    "E": "tyrosine kinase ไม่เกี่ยว"
+   },
+   "key_concept": "• Gq: PLC → IP₃/DAG\n• Gs: cAMP ↑\n• Gi: cAMP ↓",
+   "mechanism": [
+    "agonist จับ Gq-coupled receptor",
+    {
+     "s": "Gαq กระตุ้น PLC",
+     "answer": true
+    },
+    "PIP₂ → IP₃ + DAG",
+    "Ca²⁺ ↑ / PKC"
+   ]
+  },
+  "31": {
+   "explanation": "Insulin receptor = tyrosine kinase enzyme-linked receptor",
+   "option_why": {
+    "A": "ion channel ไม่ใช่",
+    "B": "✓ tyrosine kinase enzyme-linked",
+    "C": "nuclear receptor คือ gene transcription",
+    "D": "Gi เป็น GPCR",
+    "E": "Gs เป็น GPCR"
+   },
+   "key_concept": "• enzyme-linked: insulin, growth factor\n• ion channel: nicotinic\n• nuclear: steroid, T3"
+  },
+  "32": {
+   "explanation": "TI ต่ำ = ช่วงปลอดภัยแคบ ลืมกินห้ามกินเพิ่มสองเท่า",
+   "option_why": {
+    "A": "TI ไม่เท่ากับประสิทธิผล",
+    "B": "TI ต่ำ = เป็นพิษง่าย",
+    "C": "intrinsic activity ไม่ใช่",
+    "D": "ให้ไม่จำกัดไม่ได้",
+    "E": "✓ ห้าม double dose"
+   },
+   "key_concept": "• TI = TD50/ED50\n• ยา TI ต่ำ: warfarin, digoxin\n• ติดตามระดับยา"
+  },
+  "33": {
+   "explanation": "ผลขยายหลอดลมของยา = intrinsic activity",
+   "option_why": {
+    "A": "affinity = ความแน่นในการจับ",
+    "B": "✓ intrinsic activity",
+    "C": "TI = ความปลอดภัย",
+    "D": "therapeutic range = ช่วงระดับยา",
+    "E": "MOA = กลไก"
+   },
+   "key_concept": "• intrinsic activity = efficacy\n• β2 agonist → bronchodilation\n• affinity ≠ efficacy"
+  },
+  "34": {
+   "explanation": "ผลต่อ receptor ลดลงหลังได้ agonist นานและต้องเพิ่มขนาด = tolerance (AI ตอบ ความมั่นใจต่ำ; tachyphylaxis ก็เป็นรูปแบบเร็ว)",
+   "option_why": {
+    "A": "✓ tolerance",
+    "B": "resistance ใช้กับเชื้อ",
+    "C": "hypoactivity ไม่ใช่ศัพท์มาตรฐาน",
+    "D": "tachyphylaxis = tolerance เร็วมาก",
+    "E": "hypersensitivity = ตอบสนองมากเกิน"
+   },
+   "key_concept": "• tolerance: ค่อยเป็นค่อยไป\n• tachyphylaxis: เร็ว (ชั่วโมง–วัน)\n• receptor downregulation/desensitization"
+  },
+  "35": {
+   "explanation": "กระตุ้น parasympathetic → น้ำลายเพิ่ม",
+   "option_why": {
+    "A": "✓ salivation ↑ (M3)",
+    "B": "mydriasis เป็น sympathetic",
+    "C": "bladder relaxation เป็น sympathetic",
+    "D": "bronchodilation เป็น sympathetic",
+    "E": "uterus contraction ไม่ใช่ผลหลักของ parasympathetic"
+   },
+   "key_concept": "• Parasympathetic: SLUDD (salivation, lacrimation, urination, digestion, defecation)\n• M3 → Gq\n• miosis, bronchoconstriction"
+  },
+  "36": {
+   "explanation": "Pilocarpine (muscarinic agonist) ใน open-angle glaucoma ทำให้ ciliary muscle หดตัว เปิด trabecular meshwork ระบาย aqueous (AI ตอบ ความมั่นใจต่ำ)",
+   "option_why": {
+    "A": "iris sphincter หดก็เกิดจริง (miosis) แต่กลไกลด IOP คือ ciliary",
+    "B": "ไม่ลดการสร้าง aqueous",
+    "C": "✓ ciliary muscle contraction → เปิดทางระบาย",
+    "D": "circular muscle คลุมเครือ",
+    "E": "radial dilator ไม่ใช่"
+   },
+   "key_concept": "• open-angle: เพิ่ม outflow\n• ciliary contraction ดึง trabecular meshwork\n• miosis เป็นผลร่วม",
+   "mechanism": [
+    "pilocarpine จับ M3",
+    {
+     "s": "ciliary muscle หดตัว",
+     "answer": true
+    },
+    "trabecular meshwork เปิด",
+    "aqueous outflow ↑ → IOP ↓"
+   ]
+  },
+  "37": {
+   "explanation": "Antidote ของ cholinergic crisis จาก organophosphate = atropine",
+   "option_why": {
+    "A": "✓ atropine บล็อก muscarinic receptor",
+    "B": "scopolamine ไม่ใช่ยาแก้พิษมาตรฐาน",
+    "C": "neostigmine ทำให้แย่ลง",
+    "D": "muscarine เป็น agonist",
+    "E": "nicotine เป็น agonist"
+   },
+   "key_concept": "• OP ยับยั้ง AChE → ACh ↑\n• atropine แก้ muscarinic (SLUDGE)\n• pralidoxime ฟื้น AChE"
+  },
+  "38": {
+   "explanation": "Scopolamine ผ่าน BBB → ง่วง",
+   "option_why": {
+    "A": "miosis เป็น muscarinic agonist",
+    "B": "antimuscarinic ทำให้ท้องผูก",
+    "C": "✓ sedation",
+    "D": "antimuscarinic ทำให้ใจเต้นเร็ว",
+    "E": "urinary retention ไม่ใช่ urgency"
+   },
+   "key_concept": "• Scopolamine: ง่วง ปากแห้ง\n• ใช้ motion sickness\n• ผ่าน BBB ได้ดี"
+  },
+  "40": {
+   "explanation": "HTN รุนแรง + heart failure → carvedilol (β/α blocker)",
+   "option_why": {
+    "A": "terbutaline = β2 agonist",
+    "B": "clonidine ไม่ใช่ยาหลักใน HF",
+    "C": "reserpine ไม่ใช่ยาเลือกในปัจจุบัน",
+    "D": "epinephrine ทำให้ความดันสูง",
+    "E": "✓ carvedilol ใช้ใน HF และ HTN"
+   },
+   "key_concept": "• Carvedilol/bisoprolol/metoprolol succinate ใช้ใน HFrEF\n• ลด mortality\n• ระวังใน asthma (carvedilol nonselective)"
+  },
+  "41": {
+   "explanation": "ตั้งครรภ์ + HTN + preeclampsia + asthma → methyldopa (เลี่ยง nonselective β-blocker)",
+   "option_why": {
+    "A": "labetalol (nonselective β) เลี่ยงใน asthma",
+    "B": "✓ methyldopa ปลอดภัยในครรภ์ ไม่หดหลอดลม",
+    "C": "propranolol เลี่ยงใน asthma",
+    "D": "clonidine ไม่ใช่ยาเลือกในครรภ์",
+    "E": "guanfacine ไม่ใช่ยาเลือก"
+   },
+   "key_concept": "• HTN ในครรภ์: methyldopa, labetalol, nifedipine\n• asthma → เลี่ยง β-blocker nonselective\n• เลี่ยง ACEI/ARB"
+  },
+  "42": {
+   "explanation": "Centrally acting sympathoplegic = clonidine (α2 agonist ในสมอง)",
+   "option_why": {
+    "A": "bretylium ยับยั้งการหลั่ง NE ที่ปลายประสาท",
+    "B": "✓ clonidine กระตุ้น α2 ใน CNS ลด sympathetic outflow",
+    "C": "dobutamine = β1 agonist",
+    "D": "metyrosine ยับยั้ง tyrosine hydroxylase (ส่วนปลาย/ต่อมหมวกไต)",
+    "E": "propranolol = β-blocker"
+   },
+   "key_concept": "• clonidine/methyldopa = central α2 agonist\n• ลด sympathetic outflow\n• ระวัง rebound HTN"
+  },
+  "43": {
+   "explanation": "COX เปลี่ยน arachidonic acid เป็น prostanoids",
+   "option_why": {
+    "A": "✓ cyclooxygenase",
+    "B": "lipoxygenase → leukotrienes",
+    "C": "PLA2 ปล่อย AA จาก membrane",
+    "D": "PFK-1 อยู่ใน glycolysis",
+    "E": "CYP450 → EETs/HETEs"
+   },
+   "key_concept": "• PLA2 → AA → COX → PG/TX\n• AA → LOX → LT\n• NSAID ยับยั้ง COX"
+  },
+  "44": {
+   "explanation": "ยับยั้ง 5-LOX → leukotriene ลดลง",
+   "option_why": {
+    "A": "histamine ไม่ผ่าน 5-LOX",
+    "B": "bradykinin ไม่เกี่ยว",
+    "C": "prostaglandin มาจาก COX",
+    "D": "✓ leukotriene",
+    "E": "prostacyclin มาจาก COX"
+   },
+   "key_concept": "• zileuton = 5-LOX inhibitor\n• montelukast = CysLT1 antagonist\n• ใช้ในหืดกลางคืน"
+  },
+  "45": {
+   "explanation": "ยาที่ปิด PDA คือ NSAIDs (ibuprofen/indomethacin) ส่วน alprostadil ใช้คง PDA (AI ตอบเอง)",
+   "option_why": {
+    "A": "alprostadil (PGE1) คงท่อเปิด ไม่ใช่ปิด",
+    "B": "misoprostol = PGE1 analog",
+    "C": "celecoxib ไม่ใช่มาตรฐานปิด PDA",
+    "D": "✓ ibuprofen ยับยั้ง COX → PG ↓ → ท่อปิด",
+    "E": "epoprostenol = PGI2"
+   },
+   "key_concept": "• ปิด PDA: ibuprofen/indomethacin/paracetamol\n• คง PDA: alprostadil\n• ข้อนี้ไม่มีไฟล์เฉลย (MCQ 52 ข้อ 43 เฉลยไฟล์ = alprostadil)",
+   "mechanism": [
+    "ibuprofen ยับยั้ง COX",
+    {
+     "s": "PGE2 ที่ทำให้ท่อเปิดลดลง",
+     "answer": true
+    },
+    "ductus arteriosus หดตัวปิด",
+    "ไม่ต้องผ่าตัด"
+   ]
+  },
+  "46": {
+   "explanation": "ปวดประจำเดือนจาก PGF2α",
+   "option_why": {
+    "A": "PGI2 ขยายหลอดเลือด",
+    "B": "✓ PGF2α ทำให้มดลูกบีบ",
+    "C": "TXA2 เกี่ยวกับเกล็ดเลือด",
+    "D": "PGD2 เกี่ยวกับภูมิแพ้/นอน",
+    "E": "LTB4 เกี่ยวกับอักเสบ"
+   },
+   "key_concept": "• PGF2α → uterine contraction\n• NSAID ลดปวดประจำเดือน\n• PGE2 บทบาทรอง"
+  },
+  "47": {
+   "explanation": "ผื่นพุพองหลังยาปฏิชีวนะ = ADR type B",
+   "option_why": {
+    "A": "Type A คาดเดาได้",
+    "B": "✓ Type B bizarre/immune-mediated",
+    "C": "Type C chronic",
+    "D": "Type D delayed",
+    "E": "Type E end of use"
+   },
+   "key_concept": "• A=Augmented, B=Bizarre\n• SJS/TEN = type B\n• HLA-linked"
+  },
+  "48": {
+   "explanation": "บวมแดงหน้า/ตา หายใจลำบากหลังยา = hypersensitivity",
+   "option_why": {
+    "A": "tolerance = ต้องเพิ่มขนาด",
+    "B": "✓ hypersensitivity (type I)",
+    "C": "dependence = ติดยา",
+    "D": "tachyphylaxis = tolerance เร็ว",
+    "E": "idiosyncrasy = ปฏิกิริยาแปลกผิดปกติ"
+   },
+   "key_concept": "• Type I (IgE) → angioedema/bronchospasm\n• รักษา epinephrine\n• ซักประวัติแพ้ยา"
+  },
+  "49": {
+   "explanation": "Penicillin เป็นสาเหตุหลักของ anaphylaxis จากยา",
+   "option_why": {
+    "A": "thiazide ผื่น/แสง",
+    "B": "phenytoin SJS/DRESS",
+    "C": "quinidine thrombocytopenia",
+    "D": "✓ penicillin",
+    "E": "rifampin hepatotoxicity"
+   },
+   "key_concept": "• β-lactam เด่น\n• type I IgE\n• epinephrine IM"
+  },
+  "50": {
+   "explanation": "ขั้นตอน PV ที่ป้องกัน ADR ในท้องตลาด = การสื่อสารข้อมูลถึงบุคลากรและประชาชน",
+   "option_why": {
+    "A": "รายงานข้อมูลเป็นขั้นแรก",
+    "B": "วิเคราะห์ข้อมูล",
+    "C": "ประเมิน",
+    "D": "รวบรวมและจัดการ",
+    "E": "✓ presentation/communication → ป้องกัน ADR ซ้ำ"
+   },
+   "key_concept": "• PV cycle: report → collect → analyze → evaluate → communicate\n• การสื่อสารลด ADR\n• เช่น ประกาศเตือน/recall"
+  },
+  "52": {
+   "explanation": "Allopurinol + HLA-B*58:01 เสี่ยง SJS/TEN",
+   "option_why": {
+    "A": "✓ HLA-B*58:01",
+    "B": "HLA-B*57:01 = abacavir",
+    "C": "HLA-B*15:02 = carbamazepine",
+    "D": "CYP1A2 ไม่เกี่ยว",
+    "E": "CYP2C19 ไม่เกี่ยว"
+   },
+   "key_concept": "• B*58:01 → allopurinol\n• B*57:01 → abacavir\n• B*15:02 → carbamazepine"
+  },
+  "53": {
+   "explanation": "Warfarin pharmacogenetics: CYP2C9 + VKORC1",
+   "option_why": {
+    "A": "CYP2D6/HLA-B*15:02 ไม่เกี่ยว",
+    "B": "VKORC1 ถูก แต่ HLA-B*15:02 ไม่เกี่ยว",
+    "C": "✓ CYP2C9 + VKORC1",
+    "D": "CYP2D6 ไม่เกี่ยวกับ warfarin",
+    "E": "CYP2C19 เกี่ยวกับ clopidogrel"
+   },
+   "key_concept": "• CYP2C9 variant → dose ลด\n• VKORC1 variant → ไวต่อยา\n• ตรวจ INR"
+  },
+  "54": {
+   "explanation": "Simvastatin myopathy ↔ SLCO1B1",
+   "option_why": {
+    "A": "ABCB1 = P-gp",
+    "B": "CYP2D6 ไม่ใช่หลัก",
+    "C": "✓ SLCO1B1 (OATP1B1)",
+    "D": "UGT1A1 ไม่เกี่ยว",
+    "E": "SULF1A1 ไม่เกี่ยว"
+   },
+   "key_concept": "• SLCO1B1*5 → statin ↑ → myopathy\n• OATP1B1 พา statin เข้าตับ\n• ปรับ/เปลี่ยน statin"
+  },
+  "55": {
+   "explanation": "HLA-B*57:01 positive ต้องเลี่ยง abacavir",
+   "option_why": {
+    "A": "✓ abacavir (hypersensitivity)",
+    "B": "allopurinol ↔ HLA-B*58:01",
+    "C": "carbamazepine ↔ HLA-B*15:02",
+    "D": "simvastatin ↔ SLCO1B1",
+    "E": "cyclosporine ไม่เกี่ยว"
+   },
+   "key_concept": "• B*57:01 → abacavir HSR\n• ตรวจก่อนเริ่มยา\n• Pharmacogenomic screening"
+  },
+  "56": {
+   "explanation": "ข้อนี้ตัวเลือก CYP2D19 พิมพ์ผิด; ยีนที่คัดกรองเพื่อป้องกันเลือดแข็ง/ปรับขนาดยา warfarin = CYP2C9 (AI ตอบ ความมั่นใจต่ำ)",
+   "option_why": {
+    "A": "CYP2D6 ไม่เกี่ยวกับ warfarin",
+    "B": "✓ CYP2C9 (เมแทบอลิซึม warfarin)",
+    "C": "CYP2D19 พิมพ์ผิด (น่าจะ CYP2C19)",
+    "D": "CYP2E1 ไม่เกี่ยว",
+    "E": "CYP3A4 ไม่ใช่ยีนที่ตรวจ"
+   },
+   "key_concept": "• ตรวจ CYP2C9 + VKORC1\n• ยีนที่เกี่ยวกับ clopidogrel = CYP2C19\n• โจทย์ต้นฉบับกำกวม"
+  },
+  "57": {
+   "explanation": "RDU: ใช้ยาลำดับแรกตามมาตรฐานในผู้ป่วยที่ไม่มีข้อห้าม",
+   "option_why": {
+    "A": "ไม่ใช่ใช้ potency ต่ำสุด",
+    "B": "การใช้หลายยาไม่เพิ่มผลทุกราย",
+    "C": "ไม่ใช่ใช้ยาใหม่เพราะจ่ายไหว",
+    "D": "ไม่ใช่ใช้สมุนไพรลดขนาดยา",
+    "E": "✓ first-line ตาม standard treatment"
+   },
+   "key_concept": "• RDU: right drug/dose/duration\n• ใช้ guideline\n• หลีกเลี่ยง polypharmacy"
+  },
+  "58": {
+   "explanation": "RDU: สั่งยาโดยคำนึงถึงอาการและโรคร่วมของผู้ป่วย",
+   "option_why": {
+    "A": "ไม่ต้องใช้ชื่อการค้า (ควรใช้ generic)",
+    "B": "ไม่ควรฉีดตามคำขอ",
+    "C": "ไม่ควรสั่งยาเสี่ยง abuse ระยะยาว",
+    "D": "✓ คำนึงถึงอาการและโรคร่วม",
+    "E": "ต้องให้ข้อมูล ADR แก่ผู้ป่วย"
+   },
+   "key_concept": "• individualize drug selection\n• ให้ข้อมูลเพื่อเพิ่ม adherence\n• เลี่ยงยาไม่จำเป็น"
+  },
+  "59": {
+   "explanation": "ใช้ paracetamol ไม่เหมาะสม → เสี่ยง hepatotoxicity",
+   "option_why": {
+    "A": "paracetamol ไม่ติด",
+    "B": "tolerance ไม่ใช่ผลหลัก",
+    "C": "✓ hepatotoxicity (NAPQI)",
+    "D": "DDI ไม่ใช่ผลหลัก",
+    "E": "hyperactivity ไม่ใช่"
+   },
+   "key_concept": "• ขนาดสูง → NAPQI ↑ → ตับเสีย\n• antidote N-acetylcysteine\n• ขนาดสูงสุด ~4 g/วัน"
+  },
+  "60": {
+   "explanation": "ข้อบ่งใช้ antibiotic ที่เหมาะสม = sepsis",
+   "option_why": {
+    "A": "✓ sepsis",
+    "B": "abrasion ธรรมดาไม่ต้อง antibiotic",
+    "C": "influenza เป็นไวรัส",
+    "D": "dry cough ส่วนมากไม่ใช่แบคทีเรีย",
+    "E": "ท้องเสียไม่มีไข้ไม่ต้อง antibiotic"
+   },
+   "key_concept": "• antibiotic ใช้ในการติดเชื้อแบคทีเรีย\n• ไม่ใช้ในไวรัส\n• ลดการดื้อยา"
+  },
+  "61": {
+   "explanation": "polypharmacy ในผู้สูงอายุ → drug interaction เพิ่ม",
+   "option_why": {
+    "A": "depression ไม่ใช่ผลโดยตรง",
+    "B": "addiction ไม่ใช่",
+    "C": "✓ drug interactions",
+    "D": "tolerance ไม่ใช่ผลโดยตรง",
+    "E": "dependence ไม่ใช่"
+   },
+   "key_concept": "• polypharmacy → DDI/ADR/non-adherence\n• Beers criteria\n• deprescribing"
+  },
+  "63": {
+   "explanation": "Synergism: ยาสองตัวออกฤทธิ์ต่างกัน แต่ใช้ร่วมกันแล้วส่งเสริมกัน",
+   "option_why": {
+    "A": "✓ ต่างกลไก แต่ส่งเสริมกัน (synergism)",
+    "B": "ยาเหมือนกันใช้ร่วม = additive",
+    "C": "ตรงข้าม = antagonism",
+    "D": "ใช้พร้อมกันโดยไม่มีผล ไม่ใช่ synergism",
+    "E": "ฤทธิ์เหมือนกันแต่ลดลง = antagonism"
+   },
+   "key_concept": "• Additive: 1+1=2\n• Synergism: 1+1>2\n• Antagonism: ผลลดลง"
+  },
+  "64": {
+   "explanation": "แหล่งที่ไม่น่าเชื่อถือสำหรับ DDI ในตัวเลือก = WebMD (เว็บผู้บริโภค) (AI ตอบ ความมั่นใจต่ำ)",
+   "option_why": {
+    "A": "Medscape เชื่อถือได้",
+    "B": "✓ WebMD เป็นเว็บผู้บริโภค ไม่ใช่แหล่งวิชาการหลัก",
+    "C": "MIMS เป็นฐานข้อมูลยา",
+    "D": "UpToDate เชื่อถือได้",
+    "E": "Healthmed.co.th ข้อมูลยาไทย"
+   },
+   "key_concept": "• ใช้ Micromedex/Lexicomp/UpToDate\n• เลี่ยงเว็บผู้บริโภค\n• ไม่มีไฟล์เฉลยข้อนี้"
+  }
+ },
+ "extra_edits": {}
+}

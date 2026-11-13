@@ -1,0 +1,432 @@
+{
+ "meta": {
+  "set_id": "49_MCQ",
+  "block": "BIO",
+  "cohort": 49,
+  "type": "MCQ",
+  "title": "MCQ Biomed (Pharmacology) · Med PSU 49",
+  "n_source_items": 20,
+  "skipped": [
+   "1",
+   "2",
+   "3",
+   "4",
+   "5",
+   "6",
+   "9",
+   "10",
+   "11",
+   "16",
+   "19"
+  ],
+  "generated_by": "auditor/tools/build_outputs.py — do not edit by hand"
+ },
+ "questions": [
+  {
+   "id": "BIO-49-MCQ-007",
+   "block": "BIO",
+   "cohort": 49,
+   "n": 7,
+   "type": "MCQ",
+   "stem": "แหล่งข้อมูลใดน่าเชื่อถือมากที่สุด",
+   "options": {
+    "A": "Medscape",
+    "B": "WebMD",
+    "C": "MIMS",
+    "D": "UpToDate",
+    "E": "Pharmanet.co.th"
+   },
+   "answer": "D",
+   "answer_status": "verified",
+   "explanation": "UpToDate เป็นแหล่งอ้างอิงทางคลินิกที่น่าเชื่อถือที่สุดในตัวเลือก (evidence-based, ผ่านการทบทวน)",
+   "refs": [
+    {
+     "paper": "MCQ49",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "MCQ49-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "bio_49_MCQ_007",
+   "key_concept": "• แหล่งอ้างอิงวิชาการ: UpToDate, Micromedex, Lexicomp\n• ตรวจ DDI จากแหล่งที่ทบทวนโดยผู้เชี่ยวชาญ\n• หลีกเลี่ยงเว็บผู้บริโภค",
+   "option_why": {
+    "A": "Medscape เชื่อถือได้ แต่ UpToDate เป็นแหล่งหลักกว่า",
+    "B": "WebMD เป็นเว็บข้อมูลผู้บริโภค",
+    "C": "MIMS เป็นฐานข้อมูลยาเชิงพาณิชย์",
+    "D": "✓ UpToDate: evidence-based ผ่าน peer review",
+    "E": "Pharmanet.co.th เป็นแหล่งข้อมูลยาไทย"
+   }
+  },
+  {
+   "id": "BIO-49-MCQ-008",
+   "block": "BIO",
+   "cohort": 49,
+   "n": 8,
+   "type": "MCQ",
+   "stem": "Estrogen ใช้ receptor ใด",
+   "options": {
+    "A": "Ion-channel linked receptor",
+    "B": "G-protein-coupled receptor",
+    "C": "Gene transcription (intracellular receptor)",
+    "D": "Enzyme-linked receptor",
+    "E": "Voltage-gated channel"
+   },
+   "answer": "C",
+   "answer_status": "verified",
+   "explanation": "Estrogen receptor เป็น intracellular receptor → ปรับ gene transcription (AI เติมตัวเลือก E)\n⚠️ ช้อยส์ E AI เติมให้ครบ 5 ตัว",
+   "refs": [
+    {
+     "paper": "MCQ49",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "MCQ49-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "bio_49_MCQ_008",
+   "key_concept": "• Steroid hormone receptor อยู่ใน cytoplasm/nucleus\n• ผลช้าเพราะต้องถอดรหัส\n• Insulin = enzyme-linked",
+   "option_why": {
+    "A": "ion-channel ไม่ใช่",
+    "B": "GPCR ไม่ใช่ (ยกเว้น GPER ที่เป็นบทบาทรอง)",
+    "C": "✓ gene transcription (nuclear receptor)",
+    "D": "enzyme-linked ไม่ใช่",
+    "E": "AI เติมให้: voltage-gated channel ไม่ใช่"
+   }
+  },
+  {
+   "id": "BIO-49-MCQ-012",
+   "block": "BIO",
+   "cohort": 49,
+   "n": 12,
+   "type": "MCQ",
+   "stem": "Adverse drug reaction ของยา scopolamine ยาแก้เมาเรือคืออะไร",
+   "options": {
+    "A": "Diarrhea",
+    "B": "Downiness",
+    "C": "Miosis",
+    "D": "Bradycardia",
+    "E": "Urinary urgency"
+   },
+   "answer": "B",
+   "answer_status": "verified",
+   "explanation": "Scopolamine (antimuscarinic ผ่าน BBB) → ง่วงซึม",
+   "refs": [
+    {
+     "paper": "MCQ49",
+     "pages": [
+      3
+     ]
+    },
+    {
+     "paper": "MCQ49-KEY",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "bio_49_MCQ_012",
+   "key_concept": "• Scopolamine: ง่วง ปากแห้ง ตามัว\n• ใช้แปะป้องกัน motion sickness\n• ผ่าน BBB ได้ดี",
+   "option_why": {
+    "A": "antimuscarinic ทำให้ท้องผูก ไม่ใช่ท้องเสีย",
+    "B": "✓ drowsiness/sedation",
+    "C": "miosis เป็นผลของ muscarinic agonist",
+    "D": "antimuscarinic ทำให้หัวใจเต้นเร็ว",
+    "E": "urinary retention ไม่ใช่ urgency"
+   }
+  },
+  {
+   "id": "BIO-49-MCQ-013",
+   "block": "BIO",
+   "cohort": 49,
+   "n": 13,
+   "type": "MCQ",
+   "stem": "ชายแก่ อายุ 53 ปี มีอาการ breathlessness, night coughing, wheezing ไดรับยา inhibit 5- lipoxygenase ถามว่า mediator อันไหนลดลง",
+   "options": {
+    "A": "histamine",
+    "B": "bradykinin",
+    "C": "prostaglandin",
+    "D": "leukotriene",
+    "E": "prostacyclin"
+   },
+   "answer": "D",
+   "answer_status": "verified",
+   "explanation": "ยับยั้ง 5-lipoxygenase → leukotriene ลดลง",
+   "refs": [
+    {
+     "paper": "MCQ49",
+     "pages": [
+      3
+     ]
+    },
+    {
+     "paper": "MCQ49-KEY",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "bio_49_MCQ_013",
+   "key_concept": "• 5-LOX → leukotrienes\n• zileuton = 5-LOX inhibitor\n• montelukast = CysLT1 antagonist",
+   "mechanism": [
+    "zileuton ยับยั้ง 5-LOX",
+    {
+     "s": "leukotriene ลดลง",
+     "answer": true
+    },
+    "bronchoconstriction ลด",
+    "wheezing ดีขึ้น"
+   ],
+   "option_why": {
+    "A": "histamine ไม่ผ่าน 5-LOX",
+    "B": "bradykinin ไม่เกี่ยว",
+    "C": "prostaglandin มาจาก COX",
+    "D": "✓ leukotriene",
+    "E": "prostacyclin มาจาก COX"
+   }
+  },
+  {
+   "id": "BIO-49-MCQ-014",
+   "block": "BIO",
+   "cohort": 49,
+   "n": 14,
+   "type": "MCQ",
+   "stem": "มี epigastric pain เพราะกิน ibuprofen แก้ dysmenorrhea ถามว่าต้องใช้ยาอะไร",
+   "options": {
+    "A": "PGE2 analogue",
+    "B": "PGE2 antagonist",
+    "C": "PGI2 analogue",
+    "D": "PGI2 antagonist",
+    "E": "PGF2 alpha antagonist"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "แผลกระเพาะจาก NSAID (ยับยั้ง COX ลด PGE2 ป้องกันเยื่อบุ) → ให้ PGE analogue เช่น misoprostol",
+   "refs": [
+    {
+     "paper": "MCQ49",
+     "pages": [
+      3
+     ]
+    },
+    {
+     "paper": "MCQ49-KEY",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "bio_49_MCQ_014",
+   "key_concept": "• NSAID ↓ PG → ↓ mucus/HCO₃⁻ → ulcer\n• misoprostol = PGE1 analogue\n• ตัวอื่น: PPI",
+   "mechanism": [
+    "NSAID ยับยั้ง COX",
+    {
+     "s": "PGE2 ที่ปกป้องเยื่อบุกระเพาะลดลง",
+     "answer": true
+    },
+    "เกิด gastric ulcer/epigastric pain",
+    "ให้ PGE analogue ทดแทน"
+   ],
+   "option_why": {
+    "A": "✓ PGE2/E1 analogue (misoprostol) ปกป้องเยื่อบุ",
+    "B": "PGE2 antagonist ทำให้แย่ลง",
+    "C": "PGI2 analogue ไม่ใช่ยาป้องกันกระเพาะ",
+    "D": "PGI2 antagonist ไม่ใช่",
+    "E": "PGF2α antagonist ไม่ใช่"
+   }
+  },
+  {
+   "id": "BIO-49-MCQ-015",
+   "block": "BIO",
+   "cohort": 49,
+   "n": 15,
+   "type": "MCQ",
+   "stem": "คนท้อง มี hypertension มีประวัติ asthma ควรให้ยาอะไร",
+   "options": {
+    "A": "Methyldopa",
+    "B": "Labetalol",
+    "C": "Carvedilol",
+    "D": "Betaxolol",
+    "E": "Amphetamine"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "หญิงตั้งครรภ์ความดันสูงและมีประวัติหืด → methyldopa (ปลอดภัยในครรภ์ ไม่ทำให้หลอดลมหดเกร็ง)",
+   "refs": [
+    {
+     "paper": "MCQ49",
+     "pages": [
+      4
+     ]
+    },
+    {
+     "paper": "MCQ49-KEY",
+     "pages": [
+      4
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "bio_49_MCQ_015",
+   "key_concept": "• ความดันสูงในครรภ์: methyldopa, labetalol, nifedipine\n• asthma → เลี่ยง nonselective β-blocker\n• เลี่ยง ACEI/ARB ในครรภ์",
+   "option_why": {
+    "A": "✓ methyldopa: ยามาตรฐานในครรภ์ ไม่ใช่ β-blocker",
+    "B": "labetalol (nonselective β) เลี่ยงใน asthma",
+    "C": "carvedilol (nonselective β) เลี่ยงใน asthma",
+    "D": "betaxolol β1 selective แต่ไม่ใช่ยาเลือกในครรภ์",
+    "E": "amphetamine ไม่ใช่ยาลดความดัน"
+   }
+  },
+  {
+   "id": "BIO-49-MCQ-017",
+   "block": "BIO",
+   "cohort": 49,
+   "n": 17,
+   "type": "MCQ",
+   "stem": "Which of the following genes are tested for the pharmacogenetics application of Warfarin?",
+   "options": {
+    "A": "CYP2D6 and HLAB*1502",
+    "B": "VKORC1 and HLAB*1502",
+    "C": "CYP2D6 and VKORC1",
+    "D": "CYP2C9 and VKORC1",
+    "E": "CYP2C19 and VKORC1"
+   },
+   "answer": "D",
+   "answer_status": "verified",
+   "explanation": "Warfarin pharmacogenetics: CYP2C9 (เมแทบอลิซึม) + VKORC1 (เป้าหมาย)",
+   "refs": [
+    {
+     "paper": "MCQ49",
+     "pages": [
+      4
+     ]
+    },
+    {
+     "paper": "MCQ49-KEY",
+     "pages": [
+      4
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "bio_49_MCQ_017",
+   "key_concept": "• CYP2C9 variant → warfarin ลด dose\n• VKORC1 variant → ไวต่อยา\n• HLA-B*15:02 → carbamazepine",
+   "option_why": {
+    "A": "CYP2D6/HLA-B*15:02 ไม่เกี่ยว",
+    "B": "VKORC1 ถูก แต่ HLA-B*15:02 ไม่เกี่ยว",
+    "C": "CYP2D6 ไม่เกี่ยวกับ warfarin",
+    "D": "✓ CYP2C9 + VKORC1",
+    "E": "CYP2C19 เกี่ยวกับ clopidogrel"
+   }
+  },
+  {
+   "id": "BIO-49-MCQ-018",
+   "block": "BIO",
+   "cohort": 49,
+   "n": 18,
+   "type": "MCQ",
+   "stem": "ผู้ป่วยหญิง อายุ 59 ปี เป็น hyperlipidemia ได้ยา simvastatin ต้องตรวจยีนอะไรเพื่อเช็คว่ามี statin induced myopathy มั้ย",
+   "options": {
+    "A": "SLCO1B1",
+    "B": "CYP2C9",
+    "C": "UGT1A1",
+    "D": "HLA-B*15:02",
+    "E": "TPMT"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "Simvastatin myopathy สัมพันธ์กับ SLCO1B1 (OATP1B1) variant (AI เติมตัวเลือก C–E)\n⚠️ ช้อยส์ C, D, E AI เติมให้ครบ 5 ตัว",
+   "refs": [
+    {
+     "paper": "MCQ49",
+     "pages": [
+      4
+     ]
+    },
+    {
+     "paper": "MCQ49-KEY",
+     "pages": [
+      4
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "bio_49_MCQ_018",
+   "key_concept": "• SLCO1B1*5 → statin ระดับ ↑ → myopathy\n• OATP1B1 พา statin เข้าตับ\n• เปลี่ยนเป็น statin อื่นหรือลดขนาด",
+   "option_why": {
+    "A": "✓ SLCO1B1",
+    "B": "CYP2C9 เกี่ยวกับ warfarin",
+    "C": "AI เติมให้: UGT1A1 (irinotecan)",
+    "D": "AI เติมให้: HLA-B*15:02 (carbamazepine SJS)",
+    "E": "AI เติมให้: TPMT (thiopurine)"
+   }
+  },
+  {
+   "id": "BIO-49-MCQ-020",
+   "block": "BIO",
+   "cohort": 49,
+   "n": 20,
+   "type": "MCQ",
+   "stem": "แหล่งข้อมูลใดไม่มีความน่าเชื่อถือในการหาข้อมูล drug-drug interaction",
+   "options": {
+    "A": "Medscape",
+    "B": "WebMD",
+    "C": "MIMS",
+    "D": "UpToDate",
+    "E": "Pharmanet.co.th"
+   },
+   "answer": "E",
+   "answer_status": "disputed",
+   "explanation": "ข้อนี้ไฟล์เฉลยเลือก Pharmanet.co.th [AI เห็นว่า WebMD ไม่น่าเชื่อถือกว่า; MCQ 51 ข้อ 64 เฉลย WebMD]\n⚠️ เฉลยขัดกับ AI",
+   "refs": [
+    {
+     "paper": "MCQ49",
+     "pages": [
+      5
+     ]
+    },
+    {
+     "paper": "MCQ49-KEY",
+     "pages": [
+      5
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "bio_49_MCQ_020",
+   "ai_answer": "B",
+   "key_concept": "• ใช้แหล่งอ้างอิงวิชาการตรวจ DDI\n• ข้อนี้เฉลยต่างกันระหว่างรุ่น 49 และ 51",
+   "option_why": {
+    "A": "Medscape เชื่อถือได้",
+    "B": "AI เห็นว่า WebMD เป็นเว็บผู้บริโภค ไม่ใช่แหล่งอ้างอิงวิชาการ",
+    "C": "MIMS เป็นข้อมูลยา",
+    "D": "UpToDate เชื่อถือได้",
+    "E": "✓ Pharmanet.co.th — ตามเฉลยต้นฉบับ"
+   }
+  }
+ ]
+}
