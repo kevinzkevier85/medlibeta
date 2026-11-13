@@ -9,6 +9,12 @@
 - รันเว็บ: `python -m http.server 8765` · ตรวจข้อมูล: `node tools/validate.cjs` (ต้องผ่านก่อนส่งทุกครั้ง)
 - ส่งงานทุกครั้ง: เพิ่มเลขใน `version.json` + `CHANGELOG.md` + `?v=` ใน `index.html` + `VERSION` ใน `sw.js`
 
+## 0. บล็อก Immunity (IMM) — กำลังทำ (Drive `preclinic/2/immunity`)
+- branch **`finn-imm-block`** (แตกจาก finn-resp-kf-ospe / PR #78) · block id `IMM` · inventory `imm_<รุ่น>_<MCQ|KF|OSPE>` 25 ชุด (MCQ 11, KF 9, OSPE 5) extract แล้ว
+- ไม่มีเฉลย: MCQ 40, 48 · KF 47 · OSPE 47 (AI เขียนเอง ติด draft)
+- ถัดไป: `imm_52_MCQ` (parse_mcq แล้ว 97 ข้อ) → blind → parse_key → repair → build_work → build_outputs --block imm → ทำ data/blocks/IMM/block.json + index.json
+- ขั้นตอนเดียวกับ RESP (ดูหัวข้อ 1)
+
 ## 1. บล็อก Respiratory (RESP) — ครบทุกชุดแล้ว (Drive `preclinic/2/respiratory`)
 - branch **`finn-resp-kf-ospe`** · block id `RESP` · inventory `resp_<รุ่น>_<MCQ|KF|OSPE>` · `data/blocks/RESP/`
 - MCQ ✅ 11 ชุด (40 = AI เขียนจากโพย) · KF ✅ 11 ชุด · OSPE ✅ 10 ชุด (51 รวม 51-1/51-2 เป็น 17 สถานี · 40-43 ภาพบางสถานีตัดออก) · ข้อที่ไฟล์ไม่มีเฉลยหรือเฉลยลายมืออ่านไม่ออก AI เติมให้ ติดป้าย `draft` (KF 44–51, OSPE 40-43/44 ฯลฯ) ผู้ตรวจควรยืนยัน
