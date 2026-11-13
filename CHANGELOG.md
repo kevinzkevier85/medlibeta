@@ -3,6 +3,9 @@
 ทุกเวอร์ชันบันทึกที่นี่ และใน `version.json` (หน้าเว็บแสดงจาก `version.json`)
 เลขเวอร์ชัน: `MAJOR.MINOR.PATCH` — เพิ่มฟีเจอร์ = MINOR, แก้บั๊ก = PATCH
 
+## v0.45.0 · 2026-11-13 · Medical Profession KF 52 + 50
+- MP1 KF 52 (10 ข้อ) + KF 50 (11 ข้อ) · เฉลยลายมืออ่านจากภาพ · ข้อจริยธรรมที่ไม่มีเฉลย AI draft
+
 ## v0.44.0 · 2026-11-13 · Commed I MCQ 48 + Commed II KF 47
 - CM1 MCQ 48 (22 ข้อ เฉลยลายมือ) · CM2 KF 47 (9 ข้อ)
 
