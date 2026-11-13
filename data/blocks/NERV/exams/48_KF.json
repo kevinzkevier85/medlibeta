@@ -1,0 +1,226 @@
+{
+ "meta": {
+  "set_id": "48_KF",
+  "block": "NERV",
+  "cohort": 48,
+  "type": "KF",
+  "title": "KF Nervous System · Med PSU 48",
+  "generated_by": "auditor/tools/build_kf.py from auditor/data/work/nerv_48_KF.kf.json — do not edit by hand"
+ },
+ "questions": [
+  {
+   "id": "NERV-48-KF-001",
+   "block": "NERV",
+   "cohort": 48,
+   "n": 1,
+   "type": "KF",
+   "case": "A 2 years old boy presented with high fever and poor oral intake for 2 days. Mother noticed seizure lasting 1 minute. PE: BT 39 c, PR 120, RR 30, BP 95/60. No motor weakness, DTR 3+, clonus negative, Babinski's sign dorsiflexion both legs, neck stiffness and Brudzinski's sign negative",
+   "items": [
+    {
+     "id": "1.1",
+     "prompt": "What are the problems in this child? (3 answers)",
+     "format": "short",
+     "accepted": [
+      "fever",
+      "seizure",
+      "extensor plantar",
+      "babinski"
+     ],
+     "key_text": "1. High fever 39°C · 2. Seizure · 3. Bilateral extensor plantar response (Babinski ปกติในเด็กเล็ก)",
+     "source_key": "เฉลย: 1. High fever 39°C · 2. Seizure · 3. Bilateral extensor plantar response (Babinski ปกติในเด็กเล็ก)"
+    },
+    {
+     "id": "1.2",
+     "prompt": "What are differential diagnosis in this child? (2 answers)",
+     "format": "short",
+     "accepted": [
+      "febrile",
+      "cns infection",
+      "meningitis"
+     ],
+     "key_text": "1. Simple febrile seizure · 2. CNS infection",
+     "source_key": "เฉลย: 1. Simple febrile seizure · 2. CNS infection"
+    },
+    {
+     "id": "1.3",
+     "prompt": "Please ask more clinical details of seizure in this child from his mother? (4 answers)",
+     "format": "short",
+     "accepted": [
+      "เริ่ม",
+      "นาน",
+      "กี่ครั้ง",
+      "หลังชัก",
+      "ลักษณะ",
+      "duration",
+      "postictal"
+     ],
+     "key_text": "1. ลักษณะการชัก/เริ่มต้นอย่างไร (focal/generalized) · 2. ชักนานเท่าไร · 3. จำนวนครั้งในการชักต่อวัน · 4. อาการหลังชัก (postictal: ซึม/อ่อนแรง)",
+     "source_key": "เฉลย: 1. ลักษณะการชัก/เริ่มต้นอย่างไร (focal/generalized) · 2. ชักนานเท่าไร · 3. จำนวนครั้งในการชักต่อวัน · 4. อาการหลังชัก (postictal: ซึม/อ่อนแรง)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF48",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "KF48-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [
+    "neurology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "NERV-48-KF-002",
+   "block": "NERV",
+   "cohort": 48,
+   "n": 2,
+   "type": "KF",
+   "case": "การมองเห็นและการกลอกตา (ตามภาพ visual pathway)",
+   "items": [
+    {
+     "id": "2.1",
+     "prompt": "มี lesion ที่ optic chiasm จะเกิดอะไร?",
+     "format": "short",
+     "accepted": [
+      "bitemporal",
+      "hemianopia"
+     ],
+     "key_text": "Bitemporal hemianopia (optic chiasm รับข้อมูลจาก nasal retinal fibers ซึ่งรับภาพจาก temporal visual field)",
+     "source_key": "เฉลย: Bitemporal hemianopia (optic chiasm รับข้อมูลจาก nasal retinal fibers ซึ่งรับภาพจาก temporal visual field)"
+    },
+    {
+     "id": "2.2",
+     "prompt": "หากทำ swing light test โดยที่ optic nerve ของตาซ้ายมี lesion ตาทั้ง 2 จะมีการตอบสนองอย่างไร?",
+     "format": "short",
+     "accepted": [
+      "absent left direct",
+      "absent right consensual",
+      "afferent",
+      "rapd"
+     ],
+     "key_text": "เมื่อฉายแสงเข้าตาซ้าย: absent left direct response และ absent right consensual response (afferent pupillary defect; ฉายตาขวาจะตอบสนองทั้งสองข้างปกติ)",
+     "source_key": "เฉลย: เมื่อฉายแสงเข้าตาซ้าย: absent left direct response และ absent right consensual response (afferent pupillary defect; ฉายตาขวาจะตอบสนองทั้งสองข้างปกติ)"
+    },
+    {
+     "id": "2.3",
+     "prompt": "มองไปทางซ้าย ใช้ extraocular muscle อะไรบ้าง?",
+     "format": "short",
+     "accepted": [
+      "left lateral rectus",
+      "right medial rectus"
+     ],
+     "key_text": "Left lateral rectus และ Right medial rectus",
+     "source_key": "เฉลย: Left lateral rectus และ Right medial rectus",
+     "keywords_all": [
+      "left lateral",
+      "right medial"
+     ]
+    },
+    {
+     "id": "2.4",
+     "prompt": "จงบอก nerve ที่มาเลี้ยง muscle ในข้อ 2.3",
+     "format": "short",
+     "accepted": [
+      "abducens",
+      "oculomotor"
+     ],
+     "key_text": "Abducens nerve (LR) และ Oculomotor nerve (MR)",
+     "source_key": "เฉลย: Abducens nerve (LR) และ Oculomotor nerve (MR)",
+     "keywords_all": [
+      "abducens",
+      "oculomotor"
+     ]
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF48",
+     "pages": [
+      3
+     ]
+    },
+    {
+     "paper": "KF48-KEY",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [
+    "neurology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "NERV-48-KF-003",
+   "block": "NERV",
+   "cohort": 48,
+   "n": 3,
+   "type": "KF",
+   "case": "ผู้ป่วยมี facial palsy, มี vesicle ที่ concha, vertigo และ hearing loss · Weber test: lateralization to left · Rinne test: AC > BC (positive)",
+   "items": [
+    {
+     "id": "3.1",
+     "prompt": "organism ใดที่ทำให้เกิดโรค?",
+     "format": "short",
+     "accepted": [
+      "varicella",
+      "zoster",
+      "vzv"
+     ],
+     "key_text": "Varicella-zoster virus",
+     "source_key": "เฉลย: Varicella-zoster virus"
+    },
+    {
+     "id": "3.2",
+     "prompt": "ผู้ป่วยมี hearing loss แบบใด?",
+     "format": "short",
+     "accepted": [
+      "sensorineural"
+     ],
+     "key_text": "Sensorineural hearing loss",
+     "source_key": "เฉลย: Sensorineural hearing loss"
+    },
+    {
+     "id": "3.3",
+     "prompt": "จง Diagnosis",
+     "format": "short",
+     "accepted": [
+      "ramsay hunt"
+     ],
+     "key_text": "Ramsay Hunt syndrome (herpes zoster oticus)",
+     "source_key": "เฉลย: Ramsay Hunt syndrome (herpes zoster oticus)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF48",
+     "pages": [
+      4
+     ]
+    },
+    {
+     "paper": "KF48-KEY",
+     "pages": [
+      4
+     ]
+    }
+   ],
+   "tags": [
+    "neurology"
+   ],
+   "source": "claude-mcp"
+  }
+ ]
+}
