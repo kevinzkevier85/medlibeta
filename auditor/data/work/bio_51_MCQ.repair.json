@@ -1,0 +1,419 @@
+{
+ "set_id": "bio_51_MCQ",
+ "questions": {
+  "5": {
+   "choices_override": {
+    "A": "Digoxin",
+    "B": "Simvastatin",
+    "C": "Rifampin",
+    "D": "Indinavir",
+    "E": "Ketoconazole"
+   },
+   "explanation": "ketoconazole ยับยั้ง P-gp (efflux) และ CYP3A4",
+   "option_why": {
+    "A": "digoxin เป็น substrate ของ P-gp",
+    "B": "simvastatin เป็น substrate ของ OATP/CYP3A4",
+    "C": "rifampin เป็น inducer ไม่ใช่ inhibitor",
+    "D": "indinavir เป็น PI ที่ยับยั้ง CYP3A4 ด้วย แต่โจทย์เลือก ketoconazole",
+    "E": "✓ ketoconazole = inhibitor ของ efflux transporter (P-gp)"
+   },
+   "key_concept": "• P-gp inhibitor: ketoconazole, verapamil, quinidine\n• P-gp inducer: rifampin, St John's wort\n• ยับยั้ง efflux → ระดับ substrate ↑",
+   "mechanism": [
+    "ketoconazole ยับยั้ง P-gp",
+    {
+     "s": "efflux ของ substrate ลดลง",
+     "answer": true
+    },
+    "ยาสะสมในเซลล์/พลาสมา",
+    "ระดับยา ↑"
+   ]
+  },
+  "7": {
+   "choices_override": {
+    "A": "No change",
+    "B": "Plasma concentration increase",
+    "C": "Lower than therapeutic index",
+    "D": "Decreased chance of side effects",
+    "E": "Faster renal elimination of the drug"
+   },
+   "ai_choices": [
+    "D",
+    "E"
+   ],
+   "explanation": "ยับยั้ง efflux transporter ที่ไต → ขับยาออกลดลง ระดับยาในพลาสมา ↑",
+   "option_why": {
+    "A": "ผลเปลี่ยนแน่นอน",
+    "B": "✓ plasma concentration เพิ่มขึ้น",
+    "C": "ไม่ใช่ระดับต่ำกว่า therapeutic range",
+    "D": "AI เติมให้: ผลข้างเคียงไม่ลดลง",
+    "E": "AI เติมให้: การกำจัดไม่เร็วขึ้น"
+   },
+   "key_concept": "• Renal efflux (OAT, MATE, P-gp) ขับยา\n• ยับยั้ง → CL ↓ → ระดับ ↑\n• เช่น probenecid",
+   "mechanism": [
+    "ยับยั้ง efflux transporter ที่ไต",
+    {
+     "s": "tubular secretion ↓",
+     "answer": true
+    },
+    "clearance ลดลง",
+    "plasma concentration ↑"
+   ]
+  },
+  "15": {
+   "choices_override": {
+    "A": "24 mg",
+    "B": "4 mg",
+    "C": "8 mg",
+    "D": "12 mg",
+    "E": "48 mg"
+   },
+   "ai_choices": [
+    "B",
+    "C",
+    "D",
+    "E"
+   ],
+   "explanation": "Dose = Cp × Vd ÷ F; โจทย์ F = 0.25 ได้ 24 mg (ตัวเลือกอื่น AI เติมให้)",
+   "option_why": {
+    "A": "✓ 24 mg (= Cp×Vd/F)",
+    "B": "AI เติมให้: 4 mg ไม่ได้หาร F",
+    "C": "AI เติมให้: 8 mg ผิด",
+    "D": "AI เติมให้: 12 mg ไม่ได้หาร F",
+    "E": "AI เติมให้: 48 mg ผิด"
+   },
+   "key_concept": "• loading dose = Cp × Vd / F\n• F ต่ำ → ต้องให้ยามากขึ้น\n• ข้อนี้เทียบกับ 52 ข้อ 16"
+  },
+  "21": {
+   "choices_override": {
+    "A": "Intrinsic activity",
+    "B": "Binding affinity",
+    "C": "Therapeutic index",
+    "D": "Therapeutic range",
+    "E": "Mechanism of action"
+   },
+   "ai_choices": [
+    "B",
+    "C",
+    "D",
+    "E"
+   ],
+   "explanation": "ความสามารถของ agonist ในการสร้างผลหลังจับ receptor = intrinsic activity (AI เติมตัวเลือกอื่น)",
+   "option_why": {
+    "A": "✓ intrinsic activity",
+    "B": "AI เติมให้: binding affinity คือความแน่นในการจับ",
+    "C": "AI เติมให้: therapeutic index = ความปลอดภัย",
+    "D": "AI เติมให้: therapeutic range = ช่วงระดับยา",
+    "E": "AI เติมให้: mechanism of action = กลไกทั่วไป"
+   },
+   "key_concept": "• β2 agonist → bronchodilation/vasodilation\n• Intrinsic activity = efficacy\n• Affinity ≠ efficacy"
+  },
+  "23": {
+   "choices_override": {
+    "A": "Antacid",
+    "B": "Benzodiazepine",
+    "C": "Sodium bicarbonate",
+    "D": "Activated charcoal",
+    "E": "Mucilin for softening feces"
+   },
+   "ai_choices": [
+    "E"
+   ],
+   "explanation": "Benzodiazepine ออกฤทธิ์ผ่าน GABA-A receptor",
+   "option_why": {
+    "A": "antacid = neutralization",
+    "B": "✓ benzodiazepine จับ GABA-A",
+    "C": "NaHCO₃ = neutralization",
+    "D": "activated charcoal = adsorption",
+    "E": "AI เติมให้: mucilin = bulk laxative"
+   },
+   "key_concept": "• กลไกไม่ผ่าน receptor: chemical, physical, osmotic\n• BZD เพิ่มความถี่ช่อง Cl⁻"
+  },
+  "26": {
+   "choices_override": {
+    "A": "Cmax/MIC",
+    "B": "T/MIC",
+    "C": "AUC/MIC = 125",
+    "D": "AUC/MIC = 400",
+    "E": "None of the above"
+   },
+   "ai_choices": [
+    "E"
+   ],
+   "explanation": "Vancomycin: AUC/MIC ≈ 400",
+   "option_why": {
+    "A": "Cmax/MIC เป็นของ aminoglycoside",
+    "B": "T/MIC ของ β-lactam",
+    "C": "AUC/MIC 125 ของ FQ",
+    "D": "✓ AUC/MIC ≈ 400 vancomycin",
+    "E": "AI เติมให้: ไม่มีข้อถูก"
+   },
+   "key_concept": "• vancomycin: AUC/MIC ≥ 400\n• β-lactam: T>MIC\n• aminoglycoside: Cmax/MIC"
+  },
+  "52": {
+   "choices_override": {
+    "A": "HER2",
+    "B": "ABCB",
+    "C": "BRCA1",
+    "D": "KRAS",
+    "E": "EGFR"
+   },
+   "ai_choices": [
+    "C",
+    "D",
+    "E"
+   ],
+   "explanation": "Trastuzumab ใช้กับมะเร็งที่มี HER2 overexpression ตรวจ HER2 (AI เติมตัวเลือก C–E)",
+   "option_why": {
+    "A": "✓ HER2 (ERBB2)",
+    "B": "ABCB1 = P-gp",
+    "C": "AI เติมให้: BRCA1",
+    "D": "AI เติมให้: KRAS",
+    "E": "AI เติมให้: EGFR"
+   },
+   "key_concept": "• Trastuzumab = anti-HER2\n• ตรวจ HER2 ด้วย IHC/FISH\n• HER2+ พบในมะเร็งเต้านม/กระเพาะ"
+  },
+  "60": {
+   "choices_override": {
+    "A": "Increase ADRs",
+    "B": "ลดการมาพบแพทย์",
+    "C": "Decrease drug resistance",
+    "D": "Reduce healthcare costs",
+    "E": "Improve patient adherence"
+   },
+   "ai_choices": [
+    "C",
+    "D",
+    "E"
+   ],
+   "explanation": "ใช้ยาไม่เหมาะสม → ADR เพิ่ม",
+   "option_why": {
+    "A": "✓ increase ADRs",
+    "B": "ลดการมาพบแพทย์ ไม่ใช่ผลที่ถูก",
+    "C": "AI เติมให้: ลดการดื้อยา (ผิด)",
+    "D": "AI เติมให้: ลดค่าใช้จ่าย (ผิด)",
+    "E": "AI เติมให้: เพิ่ม adherence (ผิด)"
+   },
+   "key_concept": "• ผลเสีย: ADR, resistance, ค่าใช้จ่าย\n• RDU ลดปัญหา"
+  },
+  "61": {
+   "choices_override": {
+    "A": "Subcutaneous",
+    "B": "Topical",
+    "C": "Liquid",
+    "D": "Capsule of oral",
+    "E": "Intravenous"
+   },
+   "ai_choices": [
+    "E"
+   ],
+   "explanation": "ยา oral ในแคปซูลมีโอกาส interaction สูงสุด (ผ่าน GI absorption, first-pass)",
+   "option_why": {
+    "A": "SC ข้ามระบบทางเดินอาหาร",
+    "B": "topical ดูดซึมน้อย",
+    "C": "ยาน้ำก็มี interaction ได้",
+    "D": "✓ capsule oral: ผ่านการดูดซึม/เมแทบอลิซึมหลายขั้น",
+    "E": "AI เติมให้: IV ไม่มี absorption interaction"
+   },
+   "key_concept": "• Oral มี interaction ที่ absorption/first-pass\n• ฉีด/ทา ลดโอกาสบางชนิด\n• ตรวจ interaction ก่อนสั่ง"
+  },
+  "57": {
+   "choices_override": {
+    "A": "Prescribe a new drug on market",
+    "B": "Prescribe injectable drug when patient requests",
+    "C": "Prescribe a drug with high risk of abuse for long duration",
+    "D": "Prescribe a lowest therapeutic dose in duration period",
+    "E": "Prescribe an antibiotic for a viral upper respiratory infection"
+   },
+   "ai_choices": [
+    "E"
+   ],
+   "explanation": "RDU = สั่งขนาดต่ำสุดที่ได้ผลในระยะเวลาเหมาะสม",
+   "option_why": {
+    "A": "ไม่ควรสั่งยาใหม่เพียงเพราะใหม่",
+    "B": "ไม่ควรสั่งยาฉีดตามคำขอ",
+    "C": "ไม่ควรสั่งยาเสี่ยง abuse ระยะยาว",
+    "D": "✓ ขนาดต่ำสุดที่ได้ผล",
+    "E": "AI เติมให้: antibiotic ใน viral URI ไม่เหมาะสม"
+   },
+   "key_concept": "• RDU: right drug/dose/duration\n• ลด ADR และการดื้อยา\n• เลี่ยง antibiotic ที่ไม่จำเป็น"
+  },
+  "1": {
+   "explanation": "Drug repurposing = นำยาที่ขึ้นทะเบียนแล้วมาหา indication ใหม่",
+   "option_why": {
+    "A": "เปลี่ยน dosage form = reformulation",
+    "B": "เปลี่ยนบรรจุภัณฑ์ ไม่ใช่ repurposing",
+    "C": "นำยาออกจากตลาด = withdrawal",
+    "D": "รวมยาสองตัวเป็นสูตรเดียว = fixed-dose combination",
+    "E": "✓ เพิ่มข้อบ่งใช้ของยาเดิม"
+   },
+   "key_concept": "• repurposing = ข้อบ่งใช้ใหม่ของยาเดิม\n• ลดเวลาและต้นทุนวิจัย"
+  },
+  "2": {
+   "explanation": "Enteral route = ผ่านทางเดินอาหาร/เยื่อบุ เช่น sublingual",
+   "option_why": {
+    "A": "inhaler = pulmonary",
+    "B": "✓ sublingual = ดูดซึมผ่านเยื่อบุใต้ลิ้น (enteral/mucosal)",
+    "C": "intradermal = ฉีด (parenteral)",
+    "D": "IV = parenteral",
+    "E": "SC = parenteral"
+   },
+   "key_concept": "• Enteral: oral, sublingual, rectal\n• Parenteral: IV, IM, SC, ID\n• sublingual ข้าม first-pass"
+  },
+  "19": {
+   "explanation": "Estrogen receptor เป็น nuclear receptor → มีผลต่อ gene transcription",
+   "option_why": {
+    "A": "ion channel ไม่ใช่",
+    "B": "enzyme-linked ไม่ใช่",
+    "C": "✓ intracellular receptor ที่ปรับ gene transcription",
+    "D": "Gs-coupled ไม่ใช่",
+    "E": "Gi-coupled ไม่ใช่"
+   },
+   "key_concept": "• Steroid/thyroid hormone → nuclear receptor\n• ผลช้า (ชั่วโมง) เพราะผ่านการถอดรหัส\n• Insulin = enzyme-linked"
+  },
+  "44": {
+   "explanation": "ยับยั้ง 5-lipoxygenase → leukotriene ลดลง (ใช้ในหืดกลางคืน)",
+   "option_why": {
+    "A": "histamine จาก mast cell ไม่ผ่าน 5-LOX",
+    "B": "bradykinin ไม่เกี่ยวกับ 5-LOX",
+    "C": "prostaglandin มาจาก COX",
+    "D": "✓ leukotriene (LTB4, LTC4…) จาก 5-LOX",
+    "E": "prostacyclin มาจาก COX"
+   },
+   "key_concept": "• AA → COX → PG/TX · AA → 5-LOX → LT\n• zileuton = 5-LOX inhibitor\n• montelukast = CysLT1 antagonist",
+   "mechanism": [
+    "zileuton ยับยั้ง 5-LOX",
+    {
+     "s": "AA → leukotrienes ลดลง",
+     "answer": true
+    },
+    "bronchoconstriction/อักเสบ ↓",
+    "อาการหืดดีขึ้น"
+   ]
+  },
+  "48": {
+   "explanation": "อาการแพ้เฉียบพลัน (ผื่น บวม หายใจลำบาก) หลังยา = type I hypersensitivity ผ่าน IgE",
+   "option_why": {
+    "A": "IgG ใน type II/III",
+    "B": "✓ IgE จับ mast cell → degranulation",
+    "C": "IgA เยื่อเมือก",
+    "D": "IgM ตอบสนองแรก",
+    "E": "IgD receptor ของ B cell"
+   },
+   "key_concept": "• Type I: IgE + mast cell\n• onset นาที\n• anaphylaxis → epinephrine IM"
+  },
+  "49": {
+   "explanation": "Penicillin เป็นสาเหตุหลักของ anaphylaxis จากยา",
+   "option_why": {
+    "A": "thiazide ก่อ photosensitivity/ผื่น",
+    "B": "phenytoin ก่อ SJS/DRESS",
+    "C": "quinidine ก่อ cinchonism/thrombocytopenia",
+    "D": "✓ penicillin",
+    "E": "rifampin ก่อ hepatotoxicity/flu-like"
+   },
+   "key_concept": "• Anaphylaxis: β-lactam เด่น\n• type I IgE\n• ซักประวัติแพ้ยาก่อนสั่ง"
+  },
+  "53": {
+   "explanation": "Warfarin dosing ใช้ CYP2C9 (เมแทบอลิซึม) และ VKORC1 (เป้า)",
+   "option_why": {
+    "A": "CYP2A1/UGT1A1 ไม่เกี่ยว",
+    "B": "✓ CYP2C9 + VKORC1",
+    "C": "CYP2C19 เกี่ยวกับ clopidogrel",
+    "D": "UGT1A1/SULF1A1 ไม่เกี่ยว",
+    "E": "ABCB1/CYP2C19 ไม่ใช่"
+   },
+   "key_concept": "• CYP2C9 variant → warfarin ลด dose\n• VKORC1 variant → ไวต่อ warfarin\n• ตรวจ INR ควบคู่",
+   "mechanism": [
+    "warfarin ถูกเมแทบ CYP2C9",
+    {
+     "s": "VKORC1 เป็นเป้า (ยับยั้ง vitamin K reductase)",
+     "answer": true
+    },
+    "polymorphism ทำให้ dose ต่างกัน",
+    "ปรับขนาดเริ่มต้น"
+   ]
+  },
+  "54": {
+   "explanation": "Simvastatin: SLCO1B1 (OATP1B1) variant เสี่ยง myopathy",
+   "option_why": {
+    "A": "ABCB1 = P-gp",
+    "B": "CYP2D6 ไม่ใช่หลัก",
+    "C": "✓ SLCO1B1 → ระดับ statin ↑ → myopathy",
+    "D": "UGT1A1 ไม่เกี่ยว",
+    "E": "SULF1A1 ไม่เกี่ยว"
+   },
+   "key_concept": "• SLCO1B1*5 เสี่ยง myopathy จาก simvastatin\n• OATP1B1 พา statin เข้าตับ\n• ปรับ/เปลี่ยน statin"
+  },
+  "63": {
+   "explanation": "ยา 2 ตัวทำให้ peak plasma concentration ลดในกระเพาะ = PK interaction ที่ absorption",
+   "option_why": {
+    "A": "✓ PK–absorption",
+    "B": "distribution ไม่ใช่",
+    "C": "metabolism ไม่ใช่",
+    "D": "PD antagonist เกี่ยวกับ receptor",
+    "E": "reverse agonist ไม่เกี่ยว"
+   },
+   "key_concept": "• ตัวอย่าง: antacid chelate tetracycline/quinolone\n• PK interaction: A-D-M-E\n• PD interaction: ผลที่ receptor/ระบบเดียวกัน"
+  },
+  "64": {
+   "explanation": "แหล่งที่ไม่น่าเชื่อถือสำหรับ DDI ในตัวเลือก = WebMD (เว็บทั่วไป)",
+   "option_why": {
+    "A": "Medscape เชื่อถือได้",
+    "B": "✓ WebMD เป็นเว็บข้อมูลผู้บริโภค ไม่ใช่แหล่งอ้างอิงทางวิชาการหลัก",
+    "C": "MIMS เป็นข้อมูลยา",
+    "D": "UpToDate เชื่อถือได้",
+    "E": "Pharmanet.co.th เป็นแหล่งข้อมูลยาไทย"
+   },
+   "key_concept": "• ใช้ Micromedex/Lexicomp/UpToDate/Medscape\n• ตรวจ interaction ก่อนจ่ายยา\n• ข้อนี้ไฟล์เฉลยเลือก WebMD"
+  }
+ },
+ "duplicate_groups": {},
+ "extra_edits": {},
+ "note": "Phase 3 repair · ข้อที่ไม่มีตัวเลือก/เฉลย ข้าม",
+ "skipped": [
+  "3",
+  "4",
+  "6",
+  "8",
+  "9",
+  "10",
+  "11",
+  "12",
+  "13",
+  "14",
+  "16",
+  "17",
+  "18",
+  "20",
+  "22",
+  "24",
+  "25",
+  "27",
+  "28",
+  "29",
+  "30",
+  "31",
+  "32",
+  "33",
+  "34",
+  "35",
+  "36",
+  "37",
+  "38",
+  "39",
+  "40",
+  "41",
+  "42",
+  "43",
+  "45",
+  "46",
+  "47",
+  "50",
+  "51",
+  "55",
+  "56",
+  "58",
+  "59",
+  "62"
+ ],
+ "skipped_reason": "ผู้จำจำโจทย์/ตัวเลือกไม่ได้ หรือไม่มีเฉลย"
+}

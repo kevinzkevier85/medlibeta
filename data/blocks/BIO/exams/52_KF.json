@@ -1,0 +1,1031 @@
+{
+ "meta": {
+  "set_id": "52_KF",
+  "block": "BIO",
+  "cohort": 52,
+  "type": "KF",
+  "title": "KF Biomed (Pharmacology) · Med PSU 52",
+  "time_limit_min": 180,
+  "generated_by": "auditor/tools/build_kf.py from auditor/data/work/bio_52_KF.kf.json — do not edit by hand"
+ },
+ "questions": [
+  {
+   "id": "BIO-52-KF-001",
+   "block": "BIO",
+   "cohort": 52,
+   "n": 1,
+   "type": "KF",
+   "case": "องค์ประกอบของเภสัชวิทยาสมัยใหม่",
+   "items": [
+    {
+     "id": "1.1",
+     "prompt": "บอกองค์ประกอบอย่างน้อย 2 อย่างที่เพิ่มคุณค่าของเภสัชวิทยาสมัยใหม่",
+     "format": "short",
+     "accepted": [
+      "evidence",
+      "pharmacogenomic",
+      "targeted",
+      "ethic",
+      "irb",
+      "randomiz"
+     ],
+     "key_text": "Evidence-based pharmacology (ความรู้จากการวิจัย) · Pharmacogenomics (ใช้ข้อมูลพันธุกรรมเลือกยา/ขนาดยา) · Targeted therapy (ยาจำเพาะเป้าหมาย) · IRB/Ethics approval · Randomization (ตีความได้หลายแบบ)",
+     "source_key": "เฉลย: Evidence-based pharmacology (ความรู้จากการวิจัย) · Pharmacogenomics (ใช้ข้อมูลพันธุกรรมเลือกยา/ขนาดยา) · Targeted therapy (ยาจำเพาะเป้าหมาย) · IRB/Ethics approval · Randomization (ตีความได้หลายแบบ)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF52",
+     "pages": [
+      1
+     ]
+    },
+    {
+     "paper": "KF52-KEY",
+     "pages": [
+      1
+     ]
+    }
+   ],
+   "tags": [
+    "pharmacology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "BIO-52-KF-002",
+   "block": "BIO",
+   "cohort": 52,
+   "n": 2,
+   "type": "KF",
+   "case": "ยาที่มี Narrow Therapeutic Index (NTI)",
+   "items": [
+    {
+     "id": "2.1",
+     "prompt": "บอก clinical consideration เมื่อให้ยา NTI (2 ข้อ)",
+     "format": "short",
+     "accepted": [
+      "tdm",
+      "therapeutic drug monitoring",
+      "interaction",
+      "ปฏิกิริยา"
+     ],
+     "key_text": "1. Therapeutic Drug Monitoring (TDM) 2. หลีกเลี่ยงการใช้ร่วมกับยาอื่นที่อาจเกิด drug interaction",
+     "source_key": "เฉลย: 1. Therapeutic Drug Monitoring (TDM) 2. หลีกเลี่ยงการใช้ร่วมกับยาอื่นที่อาจเกิด drug interaction"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF52",
+     "pages": [
+      1
+     ]
+    },
+    {
+     "paper": "KF52-KEY",
+     "pages": [
+      1
+     ]
+    }
+   ],
+   "tags": [
+    "pharmacology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "BIO-52-KF-003",
+   "block": "BIO",
+   "cohort": 52,
+   "n": 3,
+   "type": "KF",
+   "case": "Digoxin และ Rifampin ถูกขับออกทางไตผ่าน P-gp (MDR1) transporter ถ้าให้ยาทั้งสองร่วมกัน",
+   "items": [
+    {
+     "id": "3.1",
+     "prompt": "ยาตัวใดเป็นต้นเหตุของปัญหา",
+     "format": "short",
+     "accepted": [
+      "rifampin"
+     ],
+     "key_text": "Rifampin (เป็น P-gp inducer)",
+     "source_key": "เฉลย: Rifampin (เป็น P-gp inducer)"
+    },
+    {
+     "id": "3.2",
+     "prompt": "ระดับ Rifampin ในเลือด",
+     "format": "short",
+     "accepted": [
+      "normal",
+      "slightly",
+      "ปกติ"
+     ],
+     "key_text": "Normal or slightly reduced (Rifampin ไม่ใช่ substrate หลักของ P-gp)",
+     "source_key": "เฉลย: Normal or slightly reduced (Rifampin ไม่ใช่ substrate หลักของ P-gp)"
+    },
+    {
+     "id": "3.3",
+     "prompt": "ระดับ Digoxin ในเลือด",
+     "format": "short",
+     "accepted": [
+      "decrease",
+      "ลด"
+     ],
+     "key_text": "Decreased (P-gp ถูกเหนี่ยวนำ ขับ digoxin มากขึ้น)",
+     "source_key": "เฉลย: Decreased (P-gp ถูกเหนี่ยวนำ ขับ digoxin มากขึ้น)"
+    },
+    {
+     "id": "3.4",
+     "prompt": "ผลทางเภสัชวิทยา",
+     "format": "short",
+     "accepted": [
+      "decrease",
+      "ลด",
+      "contractility",
+      "relapse",
+      "กำเริบ"
+     ],
+     "key_text": "ฤทธิ์เพิ่ม contractility ของ digoxin ลดลง (digoxin มี therapeutic window แคบ) → อาจทำให้ heart failure/AF กำเริบ",
+     "source_key": "เฉลย: ฤทธิ์เพิ่ม contractility ของ digoxin ลดลง (digoxin มี therapeutic window แคบ) → อาจทำให้ heart failure/AF กำเริบ"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF52",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "KF52-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [
+    "pharmacology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "BIO-52-KF-004",
+   "block": "BIO",
+   "cohort": 52,
+   "n": 4,
+   "type": "KF",
+   "case": "ยา specific antibiotic 15 mg ฉีดเข้าหลอดเลือดดำ วัดระดับพลาสมา: 4 ชม. 158, 8 ชม. 122, 14 ชม. 75, 18 ชม. 40, 24 ชม. 21 ng/mL",
+   "items": [
+    {
+     "id": "4.1",
+     "prompt": "คำนวณ Ke (elimination rate constant)",
+     "format": "short",
+     "accepted": [
+      "0.1",
+      "0.10",
+      "0.08",
+      "0.081"
+     ],
+     "key_text": "Ke = (ln158 − ln21)/20 ≈ 0.10 h⁻¹ (ตัวเลขจริงในห้องสอบ Ke = 0.0810)",
+     "source_key": "เฉลย: Ke = (ln158 − ln21)/20 ≈ 0.10 h⁻¹ (ตัวเลขจริงในห้องสอบ Ke = 0.0810)"
+    },
+    {
+     "id": "4.2",
+     "prompt": "คำนวณ T½",
+     "format": "short",
+     "accepted": [
+      "6.9",
+      "6.8",
+      "7",
+      "8.5"
+     ],
+     "key_text": "T½ = 0.693/Ke ≈ 6.9 ชม. (ตัวเลขจริงในห้องสอบ T½ = 8.5 ชม.)",
+     "source_key": "เฉลย: T½ = 0.693/Ke ≈ 6.9 ชม. (ตัวเลขจริงในห้องสอบ T½ = 8.5 ชม.)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF52",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "KF52-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [
+    "pharmacology"
+   ],
+   "source": "claude-mcp",
+   "audit_note": "ไฟล์เฉลยหมายเหตุว่าตัวเลขในโจทย์ไม่ตรงกับห้องสอบจริง (Ke = 0.0810, T½ = 8.5) ระบบรับทั้งค่าที่คำนวณจากตารางและค่าห้องสอบ"
+  },
+  {
+   "id": "BIO-52-KF-005",
+   "block": "BIO",
+   "cohort": 52,
+   "n": 5,
+   "type": "KF",
+   "case": "พิจารณากราฟ (Drug X ราคา 70 บาท/1 tab od · Drug Y ราคา 10 บาท/2 tab tid · Drug Z ราคา 15 บาท/1 tab bid)",
+   "items": [
+    {
+     "id": "5.1",
+     "prompt": "หากเลือกใช้ยาในโรงพยาบาล จะเลือกยาใด",
+     "format": "short",
+     "accepted": [
+      "drug z",
+      " z"
+     ],
+     "key_text": "Drug Z",
+     "source_key": "เฉลย: Drug Z",
+     "image": "img/BIO-52-KF-005.jpg",
+     "image_caption": "กราฟ dose–response ของยา X, Y, Z"
+    },
+    {
+     "id": "5.2",
+     "prompt": "ให้เหตุผลประกอบ 2 ข้อ",
+     "format": "short",
+     "accepted": [
+      "efficacy",
+      "ถูกกว่า",
+      "cheaper",
+      "ราคา"
+     ],
+     "key_text": "1. มี efficacy สูงที่สุดร่วมกับ Drug X 2. ราคาถูกกว่า Drug X",
+     "source_key": "เฉลย: 1. มี efficacy สูงที่สุดร่วมกับ Drug X 2. ราคาถูกกว่า Drug X"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF52",
+     "pages": [
+      3
+     ]
+    },
+    {
+     "paper": "KF52-KEY",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [
+    "pharmacology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "BIO-52-KF-006",
+   "block": "BIO",
+   "cohort": 52,
+   "n": 6,
+   "type": "KF",
+   "case": "ยาที่มีฤทธิ์ขยายหลอดลมจาก 3 บริษัท: A ED50 40, efficacy 90% · B ED50 80, efficacy 90% · C ED50 20, efficacy 60%",
+   "items": [
+    {
+     "id": "6.1",
+     "prompt": "จะเลือกยาของบริษัทใด เพราะเหตุใด",
+     "format": "short",
+     "accepted": [
+      "บริษัท a",
+      "company a",
+      "a"
+     ],
+     "key_text": "บริษัท A — efficacy สูงที่สุดร่วมกับ B แต่ A มี potency สูงกว่า (ED50 ต่ำกว่า) *ดู efficacy ก่อนเสมอ*",
+     "source_key": "เฉลย: บริษัท A — efficacy สูงที่สุดร่วมกับ B แต่ A มี potency สูงกว่า (ED50 ต่ำกว่า) *ดู efficacy ก่อนเสมอ*"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF52",
+     "pages": [
+      3
+     ]
+    },
+    {
+     "paper": "KF52-KEY",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [
+    "pharmacology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "BIO-52-KF-007",
+   "block": "BIO",
+   "cohort": 52,
+   "n": 7,
+   "type": "KF",
+   "case": "PK/PD parameter ของแต่ละ pattern of activity ของยาปฏิชีวนะ",
+   "items": [
+    {
+     "id": "7.1",
+     "prompt": "Type 1: Concentration-dependent killing และ prolonged persistent effect",
+     "format": "short",
+     "accepted": [
+      "cmax"
+     ],
+     "key_text": "Cmax/MIC",
+     "source_key": "เฉลย: Cmax/MIC"
+    },
+    {
+     "id": "7.2",
+     "prompt": "Type 2: Time-dependent killing และ minimum persistent effect",
+     "format": "short",
+     "accepted": [
+      "t>mic",
+      "t/mic",
+      "time above"
+     ],
+     "key_text": "T>MIC",
+     "source_key": "เฉลย: T>MIC"
+    },
+    {
+     "id": "7.3",
+     "prompt": "Type 3: Time-dependent killing และ prolonged persistent effect",
+     "format": "short",
+     "accepted": [
+      "auc"
+     ],
+     "key_text": "AUC/MIC",
+     "source_key": "เฉลย: AUC/MIC"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF52",
+     "pages": [
+      4
+     ]
+    },
+    {
+     "paper": "KF52-KEY",
+     "pages": [
+      4
+     ]
+    }
+   ],
+   "tags": [
+    "pharmacology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "BIO-52-KF-008",
+   "block": "BIO",
+   "cohort": 52,
+   "n": 8,
+   "type": "KF",
+   "case": "Bioequivalence",
+   "items": [
+    {
+     "id": "8.1",
+     "prompt": "ยกตัวอย่าง parameter ที่ใช้วัด bioequivalence อย่างน้อย 2 ตัว",
+     "format": "short",
+     "accepted": [
+      "cmax",
+      "auc"
+     ],
+     "key_text": "Cmax, AUC (parameter ของกระบวนการดูดซึมยา)",
+     "source_key": "เฉลย: Cmax, AUC (parameter ของกระบวนการดูดซึมยา)",
+     "keywords_all": [
+      "cmax",
+      "auc"
+     ]
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF52",
+     "pages": [
+      4
+     ]
+    },
+    {
+     "paper": "KF52-KEY",
+     "pages": [
+      4
+     ]
+    }
+   ],
+   "tags": [
+    "pharmacology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "BIO-52-KF-009",
+   "block": "BIO",
+   "cohort": 52,
+   "n": 9,
+   "type": "KF",
+   "case": "Bioequivalence",
+   "items": [
+    {
+     "id": "9.1",
+     "prompt": "บอก criteria ในการดูว่ายาที่นำมามี bioequivalent กับ reference drug",
+     "format": "short",
+     "accepted": [
+      "80",
+      "125"
+     ],
+     "key_text": "90% CI ของ AUC และ Cmax ของ generic ต้องอยู่ในช่วง 80–125% ของ reference drug",
+     "source_key": "เฉลย: 90% CI ของ AUC และ Cmax ของ generic ต้องอยู่ในช่วง 80–125% ของ reference drug"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF52",
+     "pages": [
+      4
+     ]
+    },
+    {
+     "paper": "KF52-KEY",
+     "pages": [
+      4
+     ]
+    }
+   ],
+   "tags": [
+    "pharmacology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "BIO-52-KF-010",
+   "block": "BIO",
+   "cohort": 52,
+   "n": 10,
+   "type": "KF",
+   "case": "เภสัชพันธุศาสตร์",
+   "items": [
+    {
+     "id": "10.1",
+     "prompt": "ความแตกต่างระหว่าง pharmacogenetics และ pharmacogenomics",
+     "format": "short",
+     "accepted": [
+      "single gene",
+      "ยีนเดี่ยว",
+      "genome"
+     ],
+     "key_text": "Pharmacogenetics = ความแตกต่างของยีนเดี่ยวที่มีผลต่อการตอบสนองต่อยา · Pharmacogenomics = ความแตกต่างของทั้ง genome",
+     "source_key": "เฉลย: Pharmacogenetics = ความแตกต่างของยีนเดี่ยวที่มีผลต่อการตอบสนองต่อยา · Pharmacogenomics = ความแตกต่างของทั้ง genome"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF52",
+     "pages": [
+      4
+     ]
+    },
+    {
+     "paper": "KF52-KEY",
+     "pages": [
+      4
+     ]
+    }
+   ],
+   "tags": [
+    "pharmacology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "BIO-52-KF-011",
+   "block": "BIO",
+   "cohort": 52,
+   "n": 11,
+   "type": "KF",
+   "case": "หญิงตั้งครรภ์ที่มี hypertension และมีประวัติ asthma",
+   "items": [
+    {
+     "id": "11.1",
+     "prompt": "ควรให้ยาชื่ออะไร",
+     "format": "short",
+     "accepted": [
+      "methyldopa"
+     ],
+     "key_text": "Methyldopa",
+     "source_key": "เฉลย: Methyldopa"
+    },
+    {
+     "id": "11.2",
+     "prompt": "กลไกการจับ receptor ของยาดังกล่าว",
+     "format": "short",
+     "accepted": [
+      "alpha2",
+      "α2",
+      "a2"
+     ],
+     "key_text": "กระตุ้น α2-adrenergic receptor ในสมอง ลดการปล่อย norepinephrine → sympathetic tone ↓ → HR ↓ หลอดเลือดขยาย BP ↓ โดยไม่กระทบหลอดลม และใช้ได้ในหญิงตั้งครรภ์",
+     "source_key": "เฉลย: กระตุ้น α2-adrenergic receptor ในสมอง ลดการปล่อย norepinephrine → sympathetic tone ↓ → HR ↓ หลอดเลือดขยาย BP ↓ โดยไม่กระทบหลอดลม และใช้ได้ในหญิงตั้งครรภ์"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF52",
+     "pages": [
+      5
+     ]
+    },
+    {
+     "paper": "KF52-KEY",
+     "pages": [
+      5
+     ]
+    }
+   ],
+   "tags": [
+    "pharmacology"
+   ],
+   "source": "claude-mcp",
+   "audit_note": "ผู้เฉลยเสริม: ไม่ควรให้ β2 agonist (เช่น terbutaline) และ non-selective β-blocker (เช่น labetalol) เพราะเสี่ยง bronchospasm ในผู้ป่วย asthma"
+  },
+  {
+   "id": "BIO-52-KF-012",
+   "block": "BIO",
+   "cohort": 52,
+   "n": 12,
+   "type": "KF",
+   "case": "ผู้ป่วยกิน NSAIDs (ibuprofen) ติดต่อกันหลายวัน มีอาการคลื่นไส้ ตรวจพบ gastric ulcer",
+   "items": [
+    {
+     "id": "12.1",
+     "prompt": "mediator ใดช่วยลดอาการดังกล่าวได้",
+     "format": "short",
+     "accepted": [
+      "pge",
+      "prostaglandin",
+      "misoprostol"
+     ],
+     "key_text": "PGE (PGE₂/PGE analogue เช่น misoprostol)",
+     "source_key": "เฉลย: PGE (PGE₂/PGE analogue เช่น misoprostol)"
+    },
+    {
+     "id": "12.2",
+     "prompt": "อธิบายว่า mediator ดังกล่าวมี gastroprotective effect อย่างไร (2 ข้อ)",
+     "format": "short",
+     "accepted": [
+      "mucus",
+      "blood flow",
+      "เมือก",
+      "เลือด"
+     ],
+     "key_text": "1. เพิ่มการหลั่ง mucus 2. เพิ่ม mucosal blood flow",
+     "source_key": "เฉลย: 1. เพิ่มการหลั่ง mucus 2. เพิ่ม mucosal blood flow"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF52",
+     "pages": [
+      5
+     ]
+    },
+    {
+     "paper": "KF52-KEY",
+     "pages": [
+      5
+     ]
+    }
+   ],
+   "tags": [
+    "pharmacology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "BIO-52-KF-013",
+   "block": "BIO",
+   "cohort": 52,
+   "n": 13,
+   "type": "KF",
+   "case": "Stevens-Johnson Syndrome",
+   "items": [
+    {
+     "id": "13.1",
+     "prompt": "ยาที่น่าจะก่อให้เกิด SJS มากที่สุด (ตอบ 2 ตัว)",
+     "format": "short",
+     "accepted": [
+      "trimoxazole",
+      "carbamazepine",
+      "allopurinol",
+      "phenytoin",
+      "sulfa"
+     ],
+     "key_text": "Co-trimoxazole, Carbamazepine (ยาอื่นที่พบ: allopurinol, phenytoin)",
+     "source_key": "เฉลย: Co-trimoxazole, Carbamazepine (ยาอื่นที่พบ: allopurinol, phenytoin)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF52",
+     "pages": [
+      5
+     ]
+    },
+    {
+     "paper": "KF52-KEY",
+     "pages": [
+      5
+     ]
+    }
+   ],
+   "tags": [
+    "pharmacology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "BIO-52-KF-014",
+   "block": "BIO",
+   "cohort": 52,
+   "n": 14,
+   "type": "KF",
+   "case": "ผลของยาต่ออวัยวะ: muscarinic agonist เทียบกับ muscarinic antagonist",
+   "items": [
+    {
+     "id": "14.1",
+     "prompt": "Eye iris — muscarinic agonist",
+     "format": "short",
+     "accepted": [
+      "miosis"
+     ],
+     "key_text": "Miosis",
+     "source_key": "เฉลย: Miosis"
+    },
+    {
+     "id": "14.2",
+     "prompt": "Eye iris — muscarinic antagonist",
+     "format": "short",
+     "accepted": [
+      "mydriasis"
+     ],
+     "key_text": "Mydriasis",
+     "source_key": "เฉลย: Mydriasis"
+    },
+    {
+     "id": "14.3",
+     "prompt": "Respiratory tract — muscarinic agonist",
+     "format": "short",
+     "accepted": [
+      "bronchoconstriction"
+     ],
+     "key_text": "Bronchoconstriction",
+     "source_key": "เฉลย: Bronchoconstriction"
+    },
+    {
+     "id": "14.4",
+     "prompt": "Respiratory tract — muscarinic antagonist",
+     "format": "short",
+     "accepted": [
+      "bronchodilation"
+     ],
+     "key_text": "Bronchodilation",
+     "source_key": "เฉลย: Bronchodilation"
+    },
+    {
+     "id": "14.5",
+     "prompt": "Heart — muscarinic agonist",
+     "format": "short",
+     "accepted": [
+      "bradycardia"
+     ],
+     "key_text": "Bradycardia",
+     "source_key": "เฉลย: Bradycardia"
+    },
+    {
+     "id": "14.6",
+     "prompt": "Heart — muscarinic antagonist",
+     "format": "short",
+     "accepted": [
+      "tachycardia"
+     ],
+     "key_text": "Tachycardia",
+     "source_key": "เฉลย: Tachycardia"
+    },
+    {
+     "id": "14.7",
+     "prompt": "GI peristalsis — muscarinic agonist",
+     "format": "short",
+     "accepted": [
+      "contraction",
+      "เพิ่ม",
+      "increase"
+     ],
+     "key_text": "Contraction (peristalsis ↑)",
+     "source_key": "เฉลย: Contraction (peristalsis ↑)"
+    },
+    {
+     "id": "14.8",
+     "prompt": "GI peristalsis — muscarinic antagonist",
+     "format": "short",
+     "accepted": [
+      "relaxation",
+      "ลด",
+      "decrease"
+     ],
+     "key_text": "Relaxation (peristalsis ↓)",
+     "source_key": "เฉลย: Relaxation (peristalsis ↓)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF52",
+     "pages": [
+      6
+     ]
+    },
+    {
+     "paper": "KF52-KEY",
+     "pages": [
+      6
+     ]
+    }
+   ],
+   "tags": [
+    "pharmacology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "BIO-52-KF-015",
+   "block": "BIO",
+   "cohort": 52,
+   "n": 15,
+   "type": "KF",
+   "case": "อธิบายคำต่อไปนี้ (pharmacogenomics: ผู้เมแทบอไลซ์ยา)",
+   "items": [
+    {
+     "id": "15.1",
+     "prompt": "Extensive metabolizers",
+     "format": "short",
+     "accepted": [
+      "normal",
+      "ปกติ"
+     ],
+     "key_text": "คนที่เอนไซม์เมแทบอลิซึมยา (เช่น CYP450) ทำงานในระดับปกติ",
+     "source_key": "เฉลย: คนที่เอนไซม์เมแทบอลิซึมยา (เช่น CYP450) ทำงานในระดับปกติ"
+    },
+    {
+     "id": "15.2",
+     "prompt": "Intermediate metabolizers",
+     "format": "short",
+     "accepted": [
+      "slower",
+      "ช้ากว่า",
+      "reduced",
+      "ลด"
+     ],
+     "key_text": "คนที่เอนไซม์เมแทบอลิซึมยาทำงานช้ากว่าปกติเล็กน้อย",
+     "source_key": "เฉลย: คนที่เอนไซม์เมแทบอลิซึมยาทำงานช้ากว่าปกติเล็กน้อย"
+    },
+    {
+     "id": "15.3",
+     "prompt": "Ultra-rapid metabolizers",
+     "format": "short",
+     "accepted": [
+      "rapid",
+      "เร็ว",
+      "very fast"
+     ],
+     "key_text": "คนที่เอนไซม์เมแทบอลิซึมยาทำงานเร็วกว่าปกติมาก",
+     "source_key": "เฉลย: คนที่เอนไซม์เมแทบอลิซึมยาทำงานเร็วกว่าปกติมาก"
+    },
+    {
+     "id": "15.4",
+     "prompt": "Poor metabolizers",
+     "format": "short",
+     "accepted": [
+      "low",
+      "ต่ำ",
+      "no ",
+      "ไม่มี",
+      "none"
+     ],
+     "key_text": "คนที่เอนไซม์เมแทบอลิซึมยาทำงานต่ำหรือไม่มีเลย",
+     "source_key": "เฉลย: คนที่เอนไซม์เมแทบอลิซึมยาทำงานต่ำหรือไม่มีเลย"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF52",
+     "pages": [
+      6
+     ]
+    },
+    {
+     "paper": "KF52-KEY",
+     "pages": [
+      6
+     ]
+    }
+   ],
+   "tags": [
+    "pharmacology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "BIO-52-KF-016",
+   "block": "BIO",
+   "cohort": 52,
+   "n": 16,
+   "type": "KF",
+   "case": "พิจารณา RDU guideline ว่าการให้ยาเหมาะสมหรือไม่",
+   "items": [
+    {
+     "id": "16.1",
+     "prompt": "จ่ายยา antibiotic ให้ผู้ป่วยที่มีอาการ URTI คัดจมูกและเจ็บคอ",
+     "format": "short",
+     "accepted": [
+      "ไม่เหมาะสม",
+      "not appropriate",
+      "inappropriate"
+     ],
+     "key_text": "ไม่เหมาะสม — URTI ส่วนใหญ่เกิดจากไวรัส (common cold, ไข้หวัดใหญ่) antibiotic ฆ่าไวรัสไม่ได้และเพิ่มความเสี่ยงการดื้อยา",
+     "source_key": "เฉลย: ไม่เหมาะสม — URTI ส่วนใหญ่เกิดจากไวรัส (common cold, ไข้หวัดใหญ่) antibiotic ฆ่าไวรัสไม่ได้และเพิ่มความเสี่ยงการดื้อยา"
+    },
+    {
+     "id": "16.2",
+     "prompt": "ชาย 60 ปี mild knee pain จาก osteoarthritis จ่าย paracetamol 1,000 mg ทุก 4 ชั่วโมง",
+     "format": "short",
+     "accepted": [
+      "ไม่เหมาะสม",
+      "not appropriate",
+      "inappropriate"
+     ],
+     "key_text": "ไม่เหมาะสม — 1,000 mg ทุก 4 ชม. = 6,000 mg/วัน เกินขนาดสูงสุด 4,000 mg/วัน เสี่ยงพิษต่อตับ (อายุ 60 ปี ควรระวังมากขึ้น)",
+     "source_key": "เฉลย: ไม่เหมาะสม — 1,000 mg ทุก 4 ชม. = 6,000 mg/วัน เกินขนาดสูงสุด 4,000 mg/วัน เสี่ยงพิษต่อตับ (อายุ 60 ปี ควรระวังมากขึ้น)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF52",
+     "pages": [
+      6
+     ]
+    },
+    {
+     "paper": "KF52-KEY",
+     "pages": [
+      6
+     ]
+    }
+   ],
+   "tags": [
+    "pharmacology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "BIO-52-KF-017",
+   "block": "BIO",
+   "cohort": 52,
+   "n": 17,
+   "type": "KF",
+   "case": "Drug interactions",
+   "items": [
+    {
+     "id": "17.1",
+     "prompt": "สาเหตุของ drug interactions (2 ข้อ)",
+     "format": "short",
+     "accepted": [
+      "genetic",
+      "polymorphism",
+      "understanding",
+      "ความเข้าใจ",
+      "พันธุกรรม"
+     ],
+     "key_text": "1. Genetic polymorphism 2. ขาดความเข้าใจ (lack of understanding)",
+     "source_key": "เฉลย: 1. Genetic polymorphism 2. ขาดความเข้าใจ (lack of understanding)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF52",
+     "pages": [
+      7
+     ]
+    },
+    {
+     "paper": "KF52-KEY",
+     "pages": [
+      7
+     ]
+    }
+   ],
+   "tags": [
+    "pharmacology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "BIO-52-KF-018",
+   "block": "BIO",
+   "cohort": 52,
+   "n": 18,
+   "type": "KF",
+   "case": "Drug interactions ในประเทศไทย",
+   "items": [
+    {
+     "id": "18.1",
+     "prompt": "อธิบายปัญหาปัจจุบันของไทยที่ส่งผลให้เกิด drug interactions (2 ข้อ)",
+     "format": "short",
+     "accepted": [
+      "polypharmacy",
+      "หลายชนิด",
+      "เภสัชกร"
+     ],
+     "key_text": "1. การใช้ยาหลายชนิดร่วมกันโดยขาดการควบคุม (polypharmacy) 2. การซื้อยากับคนที่ไม่ใช่เภสัชกร",
+     "source_key": "เฉลย: 1. การใช้ยาหลายชนิดร่วมกันโดยขาดการควบคุม (polypharmacy) 2. การซื้อยากับคนที่ไม่ใช่เภสัชกร"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF52",
+     "pages": [
+      7
+     ]
+    },
+    {
+     "paper": "KF52-KEY",
+     "pages": [
+      7
+     ]
+    }
+   ],
+   "tags": [
+    "pharmacology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "BIO-52-KF-019",
+   "block": "BIO",
+   "cohort": 52,
+   "n": 19,
+   "type": "KF",
+   "case": "Drug development",
+   "items": [
+    {
+     "id": "19.1",
+     "prompt": "Phase ใดที่พัฒนายาก่อนนำไปใช้ใน healthy volunteer และมีขึ้นเพื่อวัตถุประสงค์ใด",
+     "format": "short",
+     "accepted": [
+      "preclinical",
+      "ก่อนคลินิก"
+     ],
+     "key_text": "Preclinical phase — ศึกษาในห้องทดลองและสัตว์ทดลอง ประเมินความปลอดภัย พิษเฉียบพลัน กลไกการออกฤทธิ์ และ PK (ADME) เพื่อมั่นใจว่ายาปลอดภัยระดับหนึ่งก่อนทดลองในคน และคำนวณขนาดเริ่มต้นใน Phase I",
+     "source_key": "เฉลย: Preclinical phase — ศึกษาในห้องทดลองและสัตว์ทดลอง ประเมินความปลอดภัย พิษเฉียบพลัน กลไกการออกฤทธิ์ และ PK (ADME) เพื่อมั่นใจว่ายาปลอดภัยระดับหนึ่งก่อนทดลองในคน และคำนวณขนาดเริ่มต้นใน Phase I"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF52",
+     "pages": [
+      7
+     ]
+    },
+    {
+     "paper": "KF52-KEY",
+     "pages": [
+      7
+     ]
+    }
+   ],
+   "tags": [
+    "pharmacology"
+   ],
+   "source": "claude-mcp"
+  }
+ ]
+}

@@ -1,0 +1,1084 @@
+{
+ "meta": {
+  "set_id": "48_KF",
+  "block": "BIO",
+  "cohort": 48,
+  "type": "KF",
+  "title": "KF Biomed (Pharmacology) · Med PSU 46-48",
+  "time_limit_min": 120,
+  "generated_by": "auditor/tools/build_kf.py from auditor/data/work/bio_46-48_KF.kf.json — do not edit by hand"
+ },
+ "questions": [
+  {
+   "id": "BIO-48-KF-001",
+   "block": "BIO",
+   "cohort": 48,
+   "n": 1,
+   "type": "KF",
+   "case": "[MED 46 ข้อ 22] จากภาพแสดง Gastrointestinal endocrine cell (เซลล์ A ปล่อย hormone ไปยังเซลล์ข้างเคียง)",
+   "items": [
+    {
+     "id": "22.1",
+     "prompt": "เซลล์ A เป็น cell signaling แบบใด",
+     "format": "short",
+     "accepted": [
+      "paracrine"
+     ],
+     "key_text": "Paracrine",
+     "source_key": "เฉลย: Paracrine",
+     "image": "img/BIO-48-KF-001.jpg",
+     "image_caption": "Gastrointestinal endocrine cell (A = เซลล์ที่ถามถึง)"
+    },
+    {
+     "id": "22.2",
+     "prompt": "อธิบายเหตุผลที่ตอบข้อ 22.1",
+     "format": "short",
+     "accepted": [
+      "local",
+      "ข้างเคียง",
+      "adjacent",
+      "nearby"
+     ],
+     "key_text": "สังเกตจากเซลล์ที่ปล่อย local hormone ไปยัง target cell บริเวณข้างเคียง",
+     "source_key": "เฉลย: สังเกตจากเซลล์ที่ปล่อย local hormone ไปยัง target cell บริเวณข้างเคียง"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF48",
+     "pages": [
+      1
+     ]
+    },
+    {
+     "paper": "KF48-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [
+    "physiology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "BIO-48-KF-002",
+   "block": "BIO",
+   "cohort": 48,
+   "n": 2,
+   "type": "KF",
+   "case": "[MED 46 ข้อ 23] ระบุ stage (และ phase) ของการพัฒนายา",
+   "items": [
+    {
+     "id": "23.1",
+     "prompt": "ADME in animals",
+     "format": "short",
+     "accepted": [
+      "preclinical"
+     ],
+     "key_text": "Preclinical stage",
+     "source_key": "เฉลย: Preclinical stage"
+    },
+    {
+     "id": "23.2",
+     "prompt": "Small group of patients",
+     "format": "short",
+     "accepted": [
+      "phase ii",
+      "phase 2",
+      "phase i",
+      "phase 1"
+     ],
+     "key_text": "Clinical stage — phase II (กลุ่มผู้ป่วยจำนวนน้อย)",
+     "source_key": "เฉลย: Clinical stage — phase II (กลุ่มผู้ป่วยจำนวนน้อย)"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "KF48",
+     "pages": [
+      1
+     ]
+    },
+    {
+     "paper": "KF48-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [
+    "pharmacology"
+   ],
+   "source": "claude-mcp",
+   "audit_note": "ลายมือข้อ 23.2 เขียนว่า phase 11 อ่านเป็น phase II"
+  },
+  {
+   "id": "BIO-48-KF-003",
+   "block": "BIO",
+   "cohort": 48,
+   "n": 3,
+   "type": "KF",
+   "case": "[MED 46 ข้อ 24] กำหนดให้ Vd = 60 L, t½ = 3 ชั่วโมง, Cp = 10.0 mg/L จงคำนวณ Cl, D_M (maintenance dose rate) และ D_L (loading dose)",
+   "items": [
+    {
+     "id": "24.1",
+     "prompt": "Cl",
+     "format": "short",
+     "accepted": [
+      "13.86",
+      "13.9",
+      "13.8"
+     ],
+     "key_text": "Cl = k × Vd = (0.693/3) × 60 = 13.86 L/hr",
+     "source_key": "เฉลย: Cl = k × Vd = (0.693/3) × 60 = 13.86 L/hr"
+    },
+    {
+     "id": "24.2",
+     "prompt": "D_M (maintenance dose rate)",
+     "format": "short",
+     "accepted": [
+      "138.6",
+      "139"
+     ],
+     "key_text": "D_M = Cp × Cl = 10.0 × 13.86 = 138.6 mg/hr",
+     "source_key": "เฉลย: D_M = Cp × Cl = 10.0 × 13.86 = 138.6 mg/hr"
+    },
+    {
+     "id": "24.3",
+     "prompt": "D_L (loading dose)",
+     "format": "short",
+     "accepted": [
+      "600"
+     ],
+     "key_text": "D_L = Cp × Vd = 10.0 × 60 = 600 mg",
+     "source_key": "เฉลย: D_L = Cp × Vd = 10.0 × 60 = 600 mg"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF48",
+     "pages": [
+      1
+     ]
+    },
+    {
+     "paper": "KF48-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [
+    "pharmacology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "BIO-48-KF-004",
+   "block": "BIO",
+   "cohort": 48,
+   "n": 4,
+   "type": "KF",
+   "case": "[MED 46 ข้อ 25] จากกราฟ dose-response ของยา X, Y, Z (log dose)",
+   "items": [
+    {
+     "id": "25.1",
+     "prompt": "Which drug has the most efficacy",
+     "format": "short",
+     "accepted": [
+      "drug x",
+      "x"
+     ],
+     "key_text": "Drug X (Emax สูงสุด)",
+     "source_key": "เฉลย: Drug X (Emax สูงสุด)"
+    },
+    {
+     "id": "25.2",
+     "prompt": "Which drug has the least potency",
+     "format": "short",
+     "accepted": [
+      "drug z",
+      "z"
+     ],
+     "key_text": "Drug Z (กราฟอยู่ขวาสุด)",
+     "source_key": "เฉลย: Drug Z (กราฟอยู่ขวาสุด)"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "KF48",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "KF48-KEY",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [
+    "pharmacology"
+   ],
+   "source": "claude-mcp",
+   "audit_note": "กราฟข้อนี้เป็นภาพวาดมือ ไม่ได้ฝังรูปในไฟล์"
+  },
+  {
+   "id": "BIO-48-KF-005",
+   "block": "BIO",
+   "cohort": 48,
+   "n": 5,
+   "type": "KF",
+   "case": "[MED 46 ข้อ 26] ผู้ป่วย Myasthenia gravis ได้รับ pyridostigmine",
+   "items": [
+    {
+     "id": "26.1",
+     "prompt": "ยาดังกล่าวยับยั้งเอนไซม์ใด",
+     "format": "short",
+     "accepted": [
+      "acetylcholinesterase",
+      "esterase",
+      "ache"
+     ],
+     "key_text": "Acetylcholinesterase",
+     "source_key": "เฉลย: Acetylcholinesterase"
+    },
+    {
+     "id": "26.2",
+     "prompt": "ผลข้างเคียง (ADR) มีอะไรบ้าง",
+     "format": "short",
+     "accepted": [
+      "ตะคริว",
+      "cramp",
+      "nausea",
+      "คลื่นไส้",
+      "อาเจียน",
+      "ท้องเสีย",
+      "diarrhea"
+     ],
+     "key_text": "ตะคริว คลื่นไส้อาเจียน ท้องเสีย",
+     "source_key": "เฉลย: ตะคริว คลื่นไส้อาเจียน ท้องเสีย"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF48",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "KF48-KEY",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [
+    "pharmacology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "BIO-48-KF-006",
+   "block": "BIO",
+   "cohort": 48,
+   "n": 6,
+   "type": "KF",
+   "case": "[MED 46 ข้อ 27] Cholinergic activating drugs และ bronchodilation",
+   "items": [
+    {
+     "id": "27.1",
+     "prompt": "Cholinergic activating drugs มีผลกับ heart rate อย่างไร",
+     "format": "short",
+     "accepted": [
+      "ลด",
+      "decrease",
+      "bradycardia"
+     ],
+     "key_text": "ลดลง (bradycardia)",
+     "source_key": "เฉลย: ลดลง (bradycardia)"
+    },
+    {
+     "id": "27.2",
+     "prompt": "Bronchodilation เกิดจากกลุ่มยา agonist ไปจับ receptor ใด",
+     "format": "short",
+     "accepted": [
+      "beta",
+      "β2",
+      "adrenergic",
+      "b2"
+     ],
+     "key_text": "β2-adrenergic receptor",
+     "source_key": "เฉลย: β2-adrenergic receptor"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "KF48",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "KF48-KEY",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [
+    "pharmacology"
+   ],
+   "source": "claude-mcp",
+   "audit_note": "ลายมือข้อ 27.2 เขียนเพียง adrenergic receptor AI ระบุชนิดย่อย β2"
+  },
+  {
+   "id": "BIO-48-KF-007",
+   "block": "BIO",
+   "cohort": 48,
+   "n": 7,
+   "type": "KF",
+   "case": "[MED 46 ข้อ 28] เด็กทารก ductus arteriosus",
+   "items": [
+    {
+     "id": "28.1",
+     "prompt": "Endogenous substance ใดทำให้ ductus arteriosus ยังคงอยู่",
+     "format": "short",
+     "accepted": [
+      "pge2",
+      "pge",
+      "prostaglandin"
+     ],
+     "key_text": "PGE₂",
+     "source_key": "เฉลย: PGE₂"
+    },
+    {
+     "id": "28.2",
+     "prompt": "ยับยั้งเอนไซม์ใดจะทำให้ ductus arteriosus ปิด",
+     "format": "short",
+     "accepted": [
+      "cox",
+      "cyclooxygenase"
+     ],
+     "key_text": "COX (cyclooxygenase)",
+     "source_key": "เฉลย: COX (cyclooxygenase)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF48",
+     "pages": [
+      3
+     ]
+    },
+    {
+     "paper": "KF48-KEY",
+     "pages": [
+      4
+     ]
+    }
+   ],
+   "tags": [
+    "pharmacology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "BIO-48-KF-008",
+   "block": "BIO",
+   "cohort": 48,
+   "n": 8,
+   "type": "KF",
+   "case": "[MED 47 ข้อ 22] พิจารณาข้อความ True/False (ข้อ 22.3 ว่างในต้นฉบับ)",
+   "items": [
+    {
+     "id": "22.1",
+     "prompt": "การขยายตัวของ vessels supplying the penis ควบคุมโดย parasympathetic nervous system",
+     "format": "short",
+     "accepted": [
+      "true",
+      "t",
+      "จริง"
+     ],
+     "key_text": "True",
+     "source_key": "เฉลย: True"
+    },
+    {
+     "id": "22.2",
+     "prompt": "Receptor ที่พบที่ SV node เป็น nicotinic receptor",
+     "format": "short",
+     "accepted": [
+      "false",
+      "f",
+      "เท็จ"
+     ],
+     "key_text": "False (เป็น muscarinic M2 และ β1)",
+     "source_key": "เฉลย: False (เป็น muscarinic M2 และ β1)"
+    },
+    {
+     "id": "22.3",
+     "prompt": "Receptor ที่พบที่ sweat gland เป็น muscarinic receptor",
+     "format": "short",
+     "accepted": [
+      "true",
+      "t",
+      "จริง"
+     ],
+     "key_text": "True (sympathetic cholinergic; ไฟล์เฉลยตอบ F — AI เห็นว่าเป็น True)",
+     "source_key": "เฉลย: True (sympathetic cholinergic; ไฟล์เฉลยตอบ F — AI เห็นว่าเป็น True)",
+     "review": "เฉลยต้นฉบับตอบ False แต่ sweat gland รับ ACh ผ่าน muscarinic receptor (sympathetic cholinergic) ระบบรับทั้งสองคำตอบ"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "KF48",
+     "pages": [
+      4
+     ]
+    },
+    {
+     "paper": "KF48-KEY",
+     "pages": [
+      5
+     ]
+    }
+   ],
+   "tags": [
+    "pharmacology"
+   ],
+   "source": "claude-mcp",
+   "audit_note": "ผู้เฉลยตอบข้อ 22.4 (sweat gland muscarinic) เป็น F ซึ่งขัดกับ AI; ข้อ 22.2 ผู้เฉลยตอบ F ตรงกัน"
+  },
+  {
+   "id": "BIO-48-KF-009",
+   "block": "BIO",
+   "cohort": 48,
+   "n": 9,
+   "type": "KF",
+   "case": "[MED 47 ข้อ 23] ระบุ stage และ phase ของการพัฒนายา",
+   "items": [
+    {
+     "id": "23.1",
+     "prompt": "ADME in animal",
+     "format": "short",
+     "accepted": [
+      "preclinical"
+     ],
+     "key_text": "Preclinical stage",
+     "source_key": "เฉลย: Preclinical stage"
+    },
+    {
+     "id": "23.2",
+     "prompt": "Compare effect between old and new drug",
+     "format": "short",
+     "accepted": [
+      "phase iii",
+      "phase 3"
+     ],
+     "key_text": "Clinical stage phase III",
+     "source_key": "เฉลย: Clinical stage phase III"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF48",
+     "pages": [
+      5
+     ]
+    },
+    {
+     "paper": "KF48-KEY",
+     "pages": [
+      5
+     ]
+    }
+   ],
+   "tags": [
+    "pharmacology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "BIO-48-KF-010",
+   "block": "BIO",
+   "cohort": 48,
+   "n": 10,
+   "type": "KF",
+   "case": "[MED 47 ข้อ 24] ยาให้ทาง oral: Bioavailability 50%, Cp 50 µg/L, Vd 55 L, Clearance 30 (หน่วยตามโจทย์), t½ 2 ชม. ชายน้ำหนัก 70 kg",
+   "items": [
+    {
+     "id": "24.1",
+     "prompt": "Loading dose (ตอบพร้อมหน่วย)",
+     "format": "short",
+     "accepted": [
+      "5500"
+     ],
+     "key_text": "Loading dose = Cp × Vd / F = 50 × 55 / 0.5 = 5,500 µg",
+     "source_key": "เฉลย: Loading dose = Cp × Vd / F = 50 × 55 / 0.5 = 5,500 µg"
+    },
+    {
+     "id": "24.2",
+     "prompt": "Maintenance dose (ตอบพร้อมหน่วย)",
+     "format": "short",
+     "accepted": [
+      "3000"
+     ],
+     "key_text": "Maintenance dose rate = Cp × CL / F = 50 × 30 / 0.5 = 3,000 µg/min",
+     "source_key": "เฉลย: Maintenance dose rate = Cp × CL / F = 50 × 30 / 0.5 = 3,000 µg/min"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF48",
+     "pages": [
+      5
+     ]
+    },
+    {
+     "paper": "KF48-KEY",
+     "pages": [
+      5
+     ]
+    }
+   ],
+   "tags": [
+    "pharmacology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "BIO-48-KF-011",
+   "block": "BIO",
+   "cohort": 48,
+   "n": 11,
+   "type": "KF",
+   "case": "[MED 47 ข้อ 25] จากกราฟ: ยา x ราคา 70 บาท/เม็ด วันละ 1 ครั้ง · ยา y 10 บาท/เม็ด วันละ 2 ครั้ง · ยา z 15 บาท/เม็ด วันละ 2 ครั้ง",
+   "items": [
+    {
+     "id": "25.1",
+     "prompt": "หากต้องเลือกยาใช้ในโรงพยาบาล จะเลือกยาชนิดใด",
+     "format": "short",
+     "accepted": [
+      "ยา z",
+      "drug z",
+      "z"
+     ],
+     "key_text": "ยา Z",
+     "source_key": "เฉลย: ยา Z",
+     "image": "img/BIO-48-KF-011.jpg",
+     "image_caption": "กราฟ dose–response ของยา X, Y, Z"
+    },
+    {
+     "id": "25.2",
+     "prompt": "เพราะเหตุใด",
+     "format": "short",
+     "accepted": [
+      "efficacy",
+      "ราคา",
+      "ถูก",
+      "cheaper"
+     ],
+     "key_text": "ยา Z มี efficacy เท่ากับยา X แต่มากกว่ายา Y และให้ 2 เม็ด/วันราคาถูกกว่า ได้ผลการรักษาเท่ากัน",
+     "source_key": "เฉลย: ยา Z มี efficacy เท่ากับยา X แต่มากกว่ายา Y และให้ 2 เม็ด/วันราคาถูกกว่า ได้ผลการรักษาเท่ากัน"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF48",
+     "pages": [
+      6
+     ]
+    },
+    {
+     "paper": "KF48-KEY",
+     "pages": [
+      6
+     ]
+    }
+   ],
+   "tags": [
+    "pharmacology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "BIO-48-KF-012",
+   "block": "BIO",
+   "cohort": 48,
+   "n": 12,
+   "type": "KF",
+   "case": "[MED 47 ข้อ 26] ได้รับสาร carbaryl",
+   "items": [
+    {
+     "id": "26.1",
+     "prompt": "มีผลอย่างไรกับรูม่านตา",
+     "format": "short",
+     "accepted": [
+      "miosis",
+      "หด",
+      "constrict"
+     ],
+     "key_text": "Carbaryl เป็น reversible inhibitor ของ acetylcholinesterase จึงกระตุ้น parasympathetic synapse ทำให้รูม่านตาหด (miosis)",
+     "source_key": "เฉลย: Carbaryl เป็น reversible inhibitor ของ acetylcholinesterase จึงกระตุ้น parasympathetic synapse ทำให้รูม่านตาหด (miosis)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF48",
+     "pages": [
+      7
+     ]
+    },
+    {
+     "paper": "KF48-KEY",
+     "pages": [
+      7
+     ]
+    }
+   ],
+   "tags": [
+    "pharmacology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "BIO-48-KF-013",
+   "block": "BIO",
+   "cohort": 48,
+   "n": 13,
+   "type": "KF",
+   "case": "[MED 47 ข้อ 27] ผู้ป่วยมีอาการ bradycardia",
+   "items": [
+    {
+     "id": "27.1",
+     "prompt": "เกี่ยวข้องกับ receptor ใด",
+     "format": "short",
+     "accepted": [
+      "beta-1",
+      "beta 1",
+      "β1",
+      "b1",
+      "m2",
+      "muscarinic"
+     ],
+     "key_text": "Beta-1 adrenergic receptor (ตามไฟล์เฉลย)",
+     "source_key": "เฉลย: Beta-1 adrenergic receptor (ตามไฟล์เฉลย)",
+     "review": "ไฟล์เฉลยตอบ β1 แต่ bradycardia จากการกระตุ้น parasympathetic เกี่ยวกับ M2 muscarinic receptor (β1 ทำให้อัตราเต้นเพิ่ม) ระบบรับทั้งสองคำตอบ"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "KF48",
+     "pages": [
+      7
+     ]
+    },
+    {
+     "paper": "KF48-KEY",
+     "pages": [
+      7
+     ]
+    }
+   ],
+   "tags": [
+    "pharmacology"
+   ],
+   "source": "claude-mcp",
+   "audit_note": "เฉลยต้นฉบับ β1 ขัดกับ AI (M2) คงตามต้นฉบับและรับ M2 ด้วย"
+  },
+  {
+   "id": "BIO-48-KF-014",
+   "block": "BIO",
+   "cohort": 48,
+   "n": 14,
+   "type": "KF",
+   "case": "[MED 47 ข้อ 28] เด็กทารก ductus arteriosus",
+   "items": [
+    {
+     "id": "28.1",
+     "prompt": "Endogenous substance ใดทำให้ ductus arteriosus ยังคงอยู่",
+     "format": "short",
+     "accepted": [
+      "pge2",
+      "pge",
+      "prostaglandin"
+     ],
+     "key_text": "PGE₂",
+     "source_key": "เฉลย: PGE₂"
+    },
+    {
+     "id": "28.2",
+     "prompt": "ยับยั้งเอนไซม์ใดจะทำให้ ductus arteriosus หายไป",
+     "format": "short",
+     "accepted": [
+      "cox",
+      "cyclooxygenase"
+     ],
+     "key_text": "COX-2 (ตามไฟล์เฉลย; โดยทั่วไป COX)",
+     "source_key": "เฉลย: COX-2 (ตามไฟล์เฉลย; โดยทั่วไป COX)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF48",
+     "pages": [
+      7
+     ]
+    },
+    {
+     "paper": "KF48-KEY",
+     "pages": [
+      7
+     ]
+    }
+   ],
+   "tags": [
+    "pharmacology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "BIO-48-KF-015",
+   "block": "BIO",
+   "cohort": 48,
+   "n": 15,
+   "type": "KF",
+   "case": "[MED 48 ข้อ 21] ระบุ stage ของการพัฒนายา (หรือ phase)",
+   "items": [
+    {
+     "id": "21.1",
+     "prompt": "Study pharmacokinetics in animals",
+     "format": "short",
+     "accepted": [
+      "preclinical"
+     ],
+     "key_text": "Preclinical stage",
+     "source_key": "เฉลย: Preclinical stage"
+    },
+    {
+     "id": "21.2",
+     "prompt": "Study rare adverse effect",
+     "format": "short",
+     "accepted": [
+      "phase iv",
+      "phase 4",
+      "post-marketing",
+      "postmarketing"
+     ],
+     "key_text": "Clinical stage, Phase IV (post-marketing)",
+     "source_key": "เฉลย: Clinical stage, Phase IV (post-marketing)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF48",
+     "pages": [
+      9
+     ]
+    },
+    {
+     "paper": "KF48-KEY",
+     "pages": [
+      8
+     ]
+    }
+   ],
+   "tags": [
+    "pharmacology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "BIO-48-KF-016",
+   "block": "BIO",
+   "cohort": 48,
+   "n": 16,
+   "type": "KF",
+   "case": "[MED 48 ข้อ 22] Parameter ของ pharmacokinetic",
+   "items": [
+    {
+     "id": "22.1",
+     "prompt": "บอก PK parameter 2 อย่าง",
+     "format": "short",
+     "accepted": [
+      "volume of distribution",
+      "vd",
+      "clearance",
+      "cl"
+     ],
+     "key_text": "Volume of distribution (Vd) และ Clearance (CL)",
+     "source_key": "เฉลย: Volume of distribution (Vd) และ Clearance (CL)"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "KF48",
+     "pages": [
+      9
+     ]
+    },
+    {
+     "paper": "KF48-KEY",
+     "pages": [
+      8
+     ]
+    }
+   ],
+   "tags": [
+    "pharmacology"
+   ],
+   "source": "claude-mcp",
+   "audit_note": "ลายมือ ผู้เฉลยเขียน Vd และ Clearance"
+  },
+  {
+   "id": "BIO-48-KF-017",
+   "block": "BIO",
+   "cohort": 48,
+   "n": 17,
+   "type": "KF",
+   "case": "[MED 48 ข้อ 23] Initial plasma drug concentration หลัง single IV = 200 mg/L, t½ = 2 ชม.",
+   "items": [
+    {
+     "id": "23.1",
+     "prompt": "เมื่อใดที่ระดับยาลดเหลือ 25 mg/L",
+     "format": "short",
+     "accepted": [
+      "6"
+     ],
+     "key_text": "200 → 100 → 50 → 25 = 3 half-lives = 3 × 2 = 6 ชั่วโมง",
+     "source_key": "เฉลย: 200 → 100 → 50 → 25 = 3 half-lives = 3 × 2 = 6 ชั่วโมง"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF48",
+     "pages": [
+      9
+     ]
+    },
+    {
+     "paper": "KF48-KEY",
+     "pages": [
+      8
+     ]
+    }
+   ],
+   "tags": [
+    "pharmacology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "BIO-48-KF-018",
+   "block": "BIO",
+   "cohort": 48,
+   "n": 18,
+   "type": "KF",
+   "case": "[MED 48 ข้อ 24] จากกราฟ: Drug x 70 บาท/1 tab · Drug y 10 บาท/1 tab · Drug z 15 บาท/2 tab",
+   "items": [
+    {
+     "id": "24.1",
+     "prompt": "หากเลือกใช้ยาในโรงพยาบาล จะเลือกยาใด",
+     "format": "short",
+     "accepted": [
+      "z",
+      "ยา z",
+      "drug z"
+     ],
+     "key_text": "ยา Z",
+     "source_key": "เฉลย: ยา Z",
+     "image": "img/BIO-48-KF-018.jpg",
+     "image_caption": "กราฟ dose–response ของยา X, Y, Z"
+    },
+    {
+     "id": "24.2",
+     "prompt": "เพราะเหตุใด",
+     "format": "short",
+     "accepted": [
+      "efficacy",
+      "ราคา",
+      "ถูก",
+      "cheaper"
+     ],
+     "key_text": "ยา Z มี efficacy เท่ากับยา X แต่มากกว่ายา Y และราคาถูกกว่ายา X (2 tab × 15 บาท < 70 บาท)",
+     "source_key": "เฉลย: ยา Z มี efficacy เท่ากับยา X แต่มากกว่ายา Y และราคาถูกกว่ายา X (2 tab × 15 บาท < 70 บาท)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF48",
+     "pages": [
+      9
+     ]
+    },
+    {
+     "paper": "KF48-KEY",
+     "pages": [
+      8
+     ]
+    }
+   ],
+   "tags": [
+    "pharmacology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "BIO-48-KF-019",
+   "block": "BIO",
+   "cohort": 48,
+   "n": 19,
+   "type": "KF",
+   "case": "[MED 48 ข้อ 25] Fill in the appropriate effects of Eicosanoid (PGE₂, PGF₂α)",
+   "items": [
+    {
+     "id": "25.1",
+     "prompt": "PGE₂ — mucous in stomach",
+     "format": "short",
+     "accepted": [
+      "increase",
+      "เพิ่ม",
+      "↑"
+     ],
+     "key_text": "เพิ่มการหลั่ง mucus (gastroprotective)",
+     "source_key": "เฉลย: เพิ่มการหลั่ง mucus (gastroprotective)"
+    },
+    {
+     "id": "25.2",
+     "prompt": "PGE₂ — bronchus smooth muscle",
+     "format": "short",
+     "accepted": [
+      "relax",
+      "dilat",
+      "คลาย"
+     ],
+     "key_text": "Relax (bronchodilation)",
+     "source_key": "เฉลย: Relax (bronchodilation)"
+    },
+    {
+     "id": "25.3",
+     "prompt": "PGF₂α — bronchus smooth muscle",
+     "format": "short",
+     "accepted": [
+      "contract",
+      "constrict",
+      "หด"
+     ],
+     "key_text": "Contract (bronchoconstriction)",
+     "source_key": "เฉลย: Contract (bronchoconstriction)"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "KF48",
+     "pages": [
+      9
+     ]
+    },
+    {
+     "paper": "KF48-KEY",
+     "pages": [
+      8
+     ]
+    }
+   ],
+   "tags": [
+    "pharmacology"
+   ],
+   "source": "claude-mcp",
+   "audit_note": "ตารางลายมืออ่านไม่ครบทุกช่อง (mucous ของ PGF₂α) นำเฉพาะช่องที่ชัด"
+  },
+  {
+   "id": "BIO-48-KF-020",
+   "block": "BIO",
+   "cohort": 48,
+   "n": 20,
+   "type": "KF",
+   "case": "[MED 48 ข้อ 26] Fill in the effect of drugs on the organs",
+   "items": [
+    {
+     "id": "26.1",
+     "prompt": "Ureter/bladder detrusor muscle — muscarinic",
+     "format": "short",
+     "accepted": [
+      "contract"
+     ],
+     "key_text": "Contract",
+     "source_key": "เฉลย: Contract"
+    },
+    {
+     "id": "26.2",
+     "prompt": "Ureter/bladder detrusor muscle — adrenergic",
+     "format": "short",
+     "accepted": [
+      "relax"
+     ],
+     "key_text": "Relax",
+     "source_key": "เฉลย: Relax"
+    },
+    {
+     "id": "26.3",
+     "prompt": "Eye iris — muscarinic",
+     "format": "short",
+     "accepted": [
+      "miosis"
+     ],
+     "key_text": "Miosis",
+     "source_key": "เฉลย: Miosis"
+    },
+    {
+     "id": "26.4",
+     "prompt": "Eye iris — adrenergic",
+     "format": "short",
+     "accepted": [
+      "mydriasis"
+     ],
+     "key_text": "Mydriasis",
+     "source_key": "เฉลย: Mydriasis"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF48",
+     "pages": [
+      9
+     ]
+    },
+    {
+     "paper": "KF48-KEY",
+     "pages": [
+      8
+     ]
+    }
+   ],
+   "tags": [
+    "pharmacology"
+   ],
+   "source": "claude-mcp"
+  }
+ ]
+}

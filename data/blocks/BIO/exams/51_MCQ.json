@@ -1,0 +1,955 @@
+{
+ "meta": {
+  "set_id": "51_MCQ",
+  "block": "BIO",
+  "cohort": 51,
+  "type": "MCQ",
+  "title": "MCQ Biomed (Pharmacology) · Med PSU 51",
+  "n_source_items": 64,
+  "skipped": [
+   "3",
+   "4",
+   "6",
+   "8",
+   "9",
+   "10",
+   "11",
+   "12",
+   "13",
+   "14",
+   "16",
+   "17",
+   "18",
+   "20",
+   "22",
+   "24",
+   "25",
+   "27",
+   "28",
+   "29",
+   "30",
+   "31",
+   "32",
+   "33",
+   "34",
+   "35",
+   "36",
+   "37",
+   "38",
+   "39",
+   "40",
+   "41",
+   "42",
+   "43",
+   "45",
+   "46",
+   "47",
+   "50",
+   "51",
+   "55",
+   "56",
+   "58",
+   "59",
+   "62"
+  ],
+  "generated_by": "auditor/tools/build_outputs.py — do not edit by hand"
+ },
+ "questions": [
+  {
+   "id": "BIO-51-MCQ-001",
+   "block": "BIO",
+   "cohort": 51,
+   "n": 1,
+   "type": "MCQ",
+   "stem": "What is drug repurpose?",
+   "options": {
+    "A": "Dosage form",
+    "B": "เปลี่ยนบรรจุภัณฑ์",
+    "C": "นำยาออกจากตลาด",
+    "D": "รวมยาสองตัวเป็นสูตรยาเดียว",
+    "E": "นำยาที่มีอยู่แล้วมาเพิ่ม indication"
+   },
+   "answer": "E",
+   "answer_status": "verified",
+   "explanation": "Drug repurposing = นำยาที่ขึ้นทะเบียนแล้วมาหา indication ใหม่",
+   "refs": [
+    {
+     "paper": "MCQ51",
+     "pages": [
+      1
+     ]
+    },
+    {
+     "paper": "MCQ51-KEY",
+     "pages": [
+      1
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "bio_51_MCQ_001",
+   "key_concept": "• repurposing = ข้อบ่งใช้ใหม่ของยาเดิม\n• ลดเวลาและต้นทุนวิจัย",
+   "option_why": {
+    "A": "เปลี่ยน dosage form = reformulation",
+    "B": "เปลี่ยนบรรจุภัณฑ์ ไม่ใช่ repurposing",
+    "C": "นำยาออกจากตลาด = withdrawal",
+    "D": "รวมยาสองตัวเป็นสูตรเดียว = fixed-dose combination",
+    "E": "✓ เพิ่มข้อบ่งใช้ของยาเดิม"
+   }
+  },
+  {
+   "id": "BIO-51-MCQ-002",
+   "block": "BIO",
+   "cohort": 51,
+   "n": 2,
+   "type": "MCQ",
+   "stem": "What type of administer that considered by enteral route",
+   "options": {
+    "A": "Inhaler",
+    "B": "Sublingual",
+    "C": "Intradermal",
+    "D": "Intraveinous",
+    "E": "Subcutanous"
+   },
+   "answer": "B",
+   "answer_status": "verified",
+   "explanation": "Enteral route = ผ่านทางเดินอาหาร/เยื่อบุ เช่น sublingual",
+   "refs": [
+    {
+     "paper": "MCQ51",
+     "pages": [
+      1
+     ]
+    },
+    {
+     "paper": "MCQ51-KEY",
+     "pages": [
+      1
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "bio_51_MCQ_002",
+   "key_concept": "• Enteral: oral, sublingual, rectal\n• Parenteral: IV, IM, SC, ID\n• sublingual ข้าม first-pass",
+   "option_why": {
+    "A": "inhaler = pulmonary",
+    "B": "✓ sublingual = ดูดซึมผ่านเยื่อบุใต้ลิ้น (enteral/mucosal)",
+    "C": "intradermal = ฉีด (parenteral)",
+    "D": "IV = parenteral",
+    "E": "SC = parenteral"
+   }
+  },
+  {
+   "id": "BIO-51-MCQ-005",
+   "block": "BIO",
+   "cohort": 51,
+   "n": 5,
+   "type": "MCQ",
+   "stem": "What is the inhibitor of the efflux transporter?",
+   "options": {
+    "A": "Digoxin",
+    "B": "Simvastatin",
+    "C": "Rifampin",
+    "D": "Indinavir",
+    "E": "Ketoconazole"
+   },
+   "answer": "E",
+   "answer_status": "verified",
+   "explanation": "ketoconazole ยับยั้ง P-gp (efflux) และ CYP3A4",
+   "refs": [
+    {
+     "paper": "MCQ51",
+     "pages": [
+      1
+     ]
+    },
+    {
+     "paper": "MCQ51-KEY",
+     "pages": [
+      1
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "bio_51_MCQ_005",
+   "key_concept": "• P-gp inhibitor: ketoconazole, verapamil, quinidine\n• P-gp inducer: rifampin, St John's wort\n• ยับยั้ง efflux → ระดับ substrate ↑",
+   "mechanism": [
+    "ketoconazole ยับยั้ง P-gp",
+    {
+     "s": "efflux ของ substrate ลดลง",
+     "answer": true
+    },
+    "ยาสะสมในเซลล์/พลาสมา",
+    "ระดับยา ↑"
+   ],
+   "option_why": {
+    "A": "digoxin เป็น substrate ของ P-gp",
+    "B": "simvastatin เป็น substrate ของ OATP/CYP3A4",
+    "C": "rifampin เป็น inducer ไม่ใช่ inhibitor",
+    "D": "indinavir เป็น PI ที่ยับยั้ง CYP3A4 ด้วย แต่โจทย์เลือก ketoconazole",
+    "E": "✓ ketoconazole = inhibitor ของ efflux transporter (P-gp)"
+   }
+  },
+  {
+   "id": "BIO-51-MCQ-007",
+   "block": "BIO",
+   "cohort": 51,
+   "n": 7,
+   "type": "MCQ",
+   "stem": "If efflux transporter in kidney is inhibited what will be the result?",
+   "options": {
+    "A": "No change",
+    "B": "Plasma concentration increase",
+    "C": "Lower than therapeutic index",
+    "D": "Decreased chance of side effects",
+    "E": "Faster renal elimination of the drug"
+   },
+   "answer": "B",
+   "answer_status": "verified",
+   "explanation": "ยับยั้ง efflux transporter ที่ไต → ขับยาออกลดลง ระดับยาในพลาสมา ↑\n⚠️ ช้อยส์ D, E AI เติมให้ครบ 5 ตัว",
+   "refs": [
+    {
+     "paper": "MCQ51",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "MCQ51-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "bio_51_MCQ_007",
+   "key_concept": "• Renal efflux (OAT, MATE, P-gp) ขับยา\n• ยับยั้ง → CL ↓ → ระดับ ↑\n• เช่น probenecid",
+   "mechanism": [
+    "ยับยั้ง efflux transporter ที่ไต",
+    {
+     "s": "tubular secretion ↓",
+     "answer": true
+    },
+    "clearance ลดลง",
+    "plasma concentration ↑"
+   ],
+   "option_why": {
+    "A": "ผลเปลี่ยนแน่นอน",
+    "B": "✓ plasma concentration เพิ่มขึ้น",
+    "C": "ไม่ใช่ระดับต่ำกว่า therapeutic range",
+    "D": "AI เติมให้: ผลข้างเคียงไม่ลดลง",
+    "E": "AI เติมให้: การกำจัดไม่เร็วขึ้น"
+   }
+  },
+  {
+   "id": "BIO-51-MCQ-015",
+   "block": "BIO",
+   "cohort": 51,
+   "n": 15,
+   "type": "MCQ",
+   "stem": "คำนวณหา LD โดยกำหนด F =0.25",
+   "options": {
+    "A": "24 mg",
+    "B": "4 mg",
+    "C": "8 mg",
+    "D": "12 mg",
+    "E": "48 mg"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "Dose = Cp × Vd ÷ F; โจทย์ F = 0.25 ได้ 24 mg (ตัวเลือกอื่น AI เติมให้)\n⚠️ ช้อยส์ B, C, D, E AI เติมให้ครบ 5 ตัว",
+   "refs": [
+    {
+     "paper": "MCQ51",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "MCQ51-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "bio_51_MCQ_015",
+   "key_concept": "• loading dose = Cp × Vd / F\n• F ต่ำ → ต้องให้ยามากขึ้น\n• ข้อนี้เทียบกับ 52 ข้อ 16",
+   "option_why": {
+    "A": "✓ 24 mg (= Cp×Vd/F)",
+    "B": "AI เติมให้: 4 mg ไม่ได้หาร F",
+    "C": "AI เติมให้: 8 mg ผิด",
+    "D": "AI เติมให้: 12 mg ไม่ได้หาร F",
+    "E": "AI เติมให้: 48 mg ผิด"
+   }
+  },
+  {
+   "id": "BIO-51-MCQ-019",
+   "block": "BIO",
+   "cohort": 51,
+   "n": 19,
+   "type": "MCQ",
+   "stem": "อะไรคือ receptor ของ estrogen hormone",
+   "options": {
+    "A": "ion-channel link receptor",
+    "B": "enzyme-link receptor",
+    "C": "gene transcription affecting receptor",
+    "D": "G-protein-coupled stimulation receptor",
+    "E": "G-protein-coupled inhibitory receptor"
+   },
+   "answer": "C",
+   "answer_status": "verified",
+   "explanation": "Estrogen receptor เป็น nuclear receptor → มีผลต่อ gene transcription",
+   "refs": [
+    {
+     "paper": "MCQ51",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "MCQ51-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "bio_51_MCQ_019",
+   "key_concept": "• Steroid/thyroid hormone → nuclear receptor\n• ผลช้า (ชั่วโมง) เพราะผ่านการถอดรหัส\n• Insulin = enzyme-linked",
+   "option_why": {
+    "A": "ion channel ไม่ใช่",
+    "B": "enzyme-linked ไม่ใช่",
+    "C": "✓ intracellular receptor ที่ปรับ gene transcription",
+    "D": "Gs-coupled ไม่ใช่",
+    "E": "Gi-coupled ไม่ใช่"
+   }
+  },
+  {
+   "id": "BIO-51-MCQ-021",
+   "block": "BIO",
+   "cohort": 51,
+   "n": 21,
+   "type": "MCQ",
+   "stem": "beta2 agonist จะไปจับกับ beta2 receptor ทำให้เกิด vasodilation vasodilation เรียกว่าอะไร",
+   "options": {
+    "A": "Intrinsic activity",
+    "B": "Binding affinity",
+    "C": "Therapeutic index",
+    "D": "Therapeutic range",
+    "E": "Mechanism of action"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "ความสามารถของ agonist ในการสร้างผลหลังจับ receptor = intrinsic activity (AI เติมตัวเลือกอื่น)\n⚠️ ช้อยส์ B, C, D, E AI เติมให้ครบ 5 ตัว",
+   "refs": [
+    {
+     "paper": "MCQ51",
+     "pages": [
+      3
+     ]
+    },
+    {
+     "paper": "MCQ51-KEY",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "bio_51_MCQ_021",
+   "key_concept": "• β2 agonist → bronchodilation/vasodilation\n• Intrinsic activity = efficacy\n• Affinity ≠ efficacy",
+   "option_why": {
+    "A": "✓ intrinsic activity",
+    "B": "AI เติมให้: binding affinity คือความแน่นในการจับ",
+    "C": "AI เติมให้: therapeutic index = ความปลอดภัย",
+    "D": "AI เติมให้: therapeutic range = ช่วงระดับยา",
+    "E": "AI เติมให้: mechanism of action = กลไกทั่วไป"
+   }
+  },
+  {
+   "id": "BIO-51-MCQ-023",
+   "block": "BIO",
+   "cohort": 51,
+   "n": 23,
+   "type": "MCQ",
+   "stem": "Which of the following mechanism of drug action is receptor binding?",
+   "options": {
+    "A": "Antacid",
+    "B": "Benzodiazepine",
+    "C": "Sodium bicarbonate",
+    "D": "Activated charcoal",
+    "E": "Mucilin for softening feces"
+   },
+   "answer": "B",
+   "answer_status": "verified",
+   "explanation": "Benzodiazepine ออกฤทธิ์ผ่าน GABA-A receptor\n⚠️ ช้อยส์ E AI เติมให้ครบ 5 ตัว",
+   "refs": [
+    {
+     "paper": "MCQ51",
+     "pages": [
+      3
+     ]
+    },
+    {
+     "paper": "MCQ51-KEY",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "bio_51_MCQ_023",
+   "key_concept": "• กลไกไม่ผ่าน receptor: chemical, physical, osmotic\n• BZD เพิ่มความถี่ช่อง Cl⁻",
+   "option_why": {
+    "A": "antacid = neutralization",
+    "B": "✓ benzodiazepine จับ GABA-A",
+    "C": "NaHCO₃ = neutralization",
+    "D": "activated charcoal = adsorption",
+    "E": "AI เติมให้: mucilin = bulk laxative"
+   }
+  },
+  {
+   "id": "BIO-51-MCQ-026",
+   "block": "BIO",
+   "cohort": 51,
+   "n": 26,
+   "type": "MCQ",
+   "stem": "ถามวว่า Vancomycin เป็น PK-PD parameters Type ไหน",
+   "options": {
+    "A": "Cmax/MIC",
+    "B": "T/MIC",
+    "C": "AUC/MIC = 125",
+    "D": "AUC/MIC = 400",
+    "E": "None of the above"
+   },
+   "answer": "D",
+   "answer_status": "verified",
+   "explanation": "Vancomycin: AUC/MIC ≈ 400\n⚠️ ช้อยส์ E AI เติมให้ครบ 5 ตัว",
+   "refs": [
+    {
+     "paper": "MCQ51",
+     "pages": [
+      3
+     ]
+    },
+    {
+     "paper": "MCQ51-KEY",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "bio_51_MCQ_026",
+   "key_concept": "• vancomycin: AUC/MIC ≥ 400\n• β-lactam: T>MIC\n• aminoglycoside: Cmax/MIC",
+   "option_why": {
+    "A": "Cmax/MIC เป็นของ aminoglycoside",
+    "B": "T/MIC ของ β-lactam",
+    "C": "AUC/MIC 125 ของ FQ",
+    "D": "✓ AUC/MIC ≈ 400 vancomycin",
+    "E": "AI เติมให้: ไม่มีข้อถูก"
+   }
+  },
+  {
+   "id": "BIO-51-MCQ-044",
+   "block": "BIO",
+   "cohort": 51,
+   "n": 44,
+   "type": "MCQ",
+   "stem": "A 45-year-old man came to the hospital with night coughing and wheezing. He was received an inhibit 5-lipoxygenase. Which of the following mediator will be decreased?",
+   "options": {
+    "A": "Histamine",
+    "B": "Bradykinin",
+    "C": "Prostaglandin",
+    "D": "Luekotriene",
+    "E": "Prostacycline"
+   },
+   "answer": "D",
+   "answer_status": "verified",
+   "explanation": "ยับยั้ง 5-lipoxygenase → leukotriene ลดลง (ใช้ในหืดกลางคืน)",
+   "refs": [
+    {
+     "paper": "MCQ51",
+     "pages": [
+      4
+     ]
+    },
+    {
+     "paper": "MCQ51-KEY",
+     "pages": [
+      4
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "bio_51_MCQ_044",
+   "key_concept": "• AA → COX → PG/TX · AA → 5-LOX → LT\n• zileuton = 5-LOX inhibitor\n• montelukast = CysLT1 antagonist",
+   "mechanism": [
+    "zileuton ยับยั้ง 5-LOX",
+    {
+     "s": "AA → leukotrienes ลดลง",
+     "answer": true
+    },
+    "bronchoconstriction/อักเสบ ↓",
+    "อาการหืดดีขึ้น"
+   ],
+   "option_why": {
+    "A": "histamine จาก mast cell ไม่ผ่าน 5-LOX",
+    "B": "bradykinin ไม่เกี่ยวกับ 5-LOX",
+    "C": "prostaglandin มาจาก COX",
+    "D": "✓ leukotriene (LTB4, LTC4…) จาก 5-LOX",
+    "E": "prostacyclin มาจาก COX"
+   }
+  },
+  {
+   "id": "BIO-51-MCQ-048",
+   "block": "BIO",
+   "cohort": 51,
+   "n": 48,
+   "type": "MCQ",
+   "stem": "Male patient comes with redness and edema in eye and skin, breathing difficulties 30 minutes after receiving treatment for sore throat infection. Which immunoglobulin is responsible for the symptoms.",
+   "options": {
+    "A": "IgG",
+    "B": "IgE",
+    "C": "IgA",
+    "D": "IgM",
+    "E": "IgD"
+   },
+   "answer": "B",
+   "answer_status": "verified",
+   "explanation": "อาการแพ้เฉียบพลัน (ผื่น บวม หายใจลำบาก) หลังยา = type I hypersensitivity ผ่าน IgE",
+   "refs": [
+    {
+     "paper": "MCQ51",
+     "pages": [
+      5
+     ]
+    },
+    {
+     "paper": "MCQ51-KEY",
+     "pages": [
+      5
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "bio_51_MCQ_048",
+   "key_concept": "• Type I: IgE + mast cell\n• onset นาที\n• anaphylaxis → epinephrine IM",
+   "option_why": {
+    "A": "IgG ใน type II/III",
+    "B": "✓ IgE จับ mast cell → degranulation",
+    "C": "IgA เยื่อเมือก",
+    "D": "IgM ตอบสนองแรก",
+    "E": "IgD receptor ของ B cell"
+   }
+  },
+  {
+   "id": "BIO-51-MCQ-049",
+   "block": "BIO",
+   "cohort": 51,
+   "n": 49,
+   "type": "MCQ",
+   "stem": "Which drug is frequently reported as an anaphylactic adverse drug reaction?",
+   "options": {
+    "A": "Thiazide",
+    "B": "Phenytoin",
+    "C": "Quinidine",
+    "D": "Penicillin",
+    "E": "Rifampin"
+   },
+   "answer": "D",
+   "answer_status": "verified",
+   "explanation": "Penicillin เป็นสาเหตุหลักของ anaphylaxis จากยา",
+   "refs": [
+    {
+     "paper": "MCQ51",
+     "pages": [
+      5
+     ]
+    },
+    {
+     "paper": "MCQ51-KEY",
+     "pages": [
+      5
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "bio_51_MCQ_049",
+   "key_concept": "• Anaphylaxis: β-lactam เด่น\n• type I IgE\n• ซักประวัติแพ้ยาก่อนสั่ง",
+   "option_why": {
+    "A": "thiazide ก่อ photosensitivity/ผื่น",
+    "B": "phenytoin ก่อ SJS/DRESS",
+    "C": "quinidine ก่อ cinchonism/thrombocytopenia",
+    "D": "✓ penicillin",
+    "E": "rifampin ก่อ hepatotoxicity/flu-like"
+   }
+  },
+  {
+   "id": "BIO-51-MCQ-052",
+   "block": "BIO",
+   "cohort": 51,
+   "n": 52,
+   "type": "MCQ",
+   "stem": "ถ้าต้องตรวจgene resistance ของTrastuzumab(herceptin)",
+   "options": {
+    "A": "HER2",
+    "B": "ABCB",
+    "C": "BRCA1",
+    "D": "KRAS",
+    "E": "EGFR"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "Trastuzumab ใช้กับมะเร็งที่มี HER2 overexpression ตรวจ HER2 (AI เติมตัวเลือก C–E)\n⚠️ ช้อยส์ C, D, E AI เติมให้ครบ 5 ตัว",
+   "refs": [
+    {
+     "paper": "MCQ51",
+     "pages": [
+      6
+     ]
+    },
+    {
+     "paper": "MCQ51-KEY",
+     "pages": [
+      6
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "bio_51_MCQ_052",
+   "key_concept": "• Trastuzumab = anti-HER2\n• ตรวจ HER2 ด้วย IHC/FISH\n• HER2+ พบในมะเร็งเต้านม/กระเพาะ",
+   "option_why": {
+    "A": "✓ HER2 (ERBB2)",
+    "B": "ABCB1 = P-gp",
+    "C": "AI เติมให้: BRCA1",
+    "D": "AI เติมให้: KRAS",
+    "E": "AI เติมให้: EGFR"
+   }
+  },
+  {
+   "id": "BIO-51-MCQ-053",
+   "block": "BIO",
+   "cohort": 51,
+   "n": 53,
+   "type": "MCQ",
+   "stem": "A 56-year-old woman was diagnosed with atrial fibrillation. The doctor plans to prescribe warfarin to prevent embolism. Which of the following genes should be screened and used as a guide for initial dose selection?",
+   "options": {
+    "A": "CYP2A1 and UGT1A1",
+    "B": "CYP2C9 and VKORC1",
+    "C": "CYP2C19 and VKORC1",
+    "D": "UGT1A1 and SULF1A1",
+    "E": "ABCB1 and CYP2C19"
+   },
+   "answer": "B",
+   "answer_status": "verified",
+   "explanation": "Warfarin dosing ใช้ CYP2C9 (เมแทบอลิซึม) และ VKORC1 (เป้า)",
+   "refs": [
+    {
+     "paper": "MCQ51",
+     "pages": [
+      6
+     ]
+    },
+    {
+     "paper": "MCQ51-KEY",
+     "pages": [
+      6
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "bio_51_MCQ_053",
+   "key_concept": "• CYP2C9 variant → warfarin ลด dose\n• VKORC1 variant → ไวต่อ warfarin\n• ตรวจ INR ควบคู่",
+   "mechanism": [
+    "warfarin ถูกเมแทบ CYP2C9",
+    {
+     "s": "VKORC1 เป็นเป้า (ยับยั้ง vitamin K reductase)",
+     "answer": true
+    },
+    "polymorphism ทำให้ dose ต่างกัน",
+    "ปรับขนาดเริ่มต้น"
+   ],
+   "option_why": {
+    "A": "CYP2A1/UGT1A1 ไม่เกี่ยว",
+    "B": "✓ CYP2C9 + VKORC1",
+    "C": "CYP2C19 เกี่ยวกับ clopidogrel",
+    "D": "UGT1A1/SULF1A1 ไม่เกี่ยว",
+    "E": "ABCB1/CYP2C19 ไม่ใช่"
+   }
+  },
+  {
+   "id": "BIO-51-MCQ-054",
+   "block": "BIO",
+   "cohort": 51,
+   "n": 54,
+   "type": "MCQ",
+   "stem": "ผู้ป่วยโดนวินิจฉัยว่าเป็น hyperlipidemia หมอจะจ่ายยา simvastatin จะต้องตรวจยีนใดก่อนเพื่อ ป้องกันการเป็น myopathy induced by statin?",
+   "options": {
+    "A": "ABCB1",
+    "B": "CYP2D6",
+    "C": "SLCO1B1",
+    "D": "UGT1A1",
+    "E": "SULF1A1"
+   },
+   "answer": "C",
+   "answer_status": "verified",
+   "explanation": "Simvastatin: SLCO1B1 (OATP1B1) variant เสี่ยง myopathy",
+   "refs": [
+    {
+     "paper": "MCQ51",
+     "pages": [
+      6
+     ]
+    },
+    {
+     "paper": "MCQ51-KEY",
+     "pages": [
+      6
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "bio_51_MCQ_054",
+   "key_concept": "• SLCO1B1*5 เสี่ยง myopathy จาก simvastatin\n• OATP1B1 พา statin เข้าตับ\n• ปรับ/เปลี่ยน statin",
+   "option_why": {
+    "A": "ABCB1 = P-gp",
+    "B": "CYP2D6 ไม่ใช่หลัก",
+    "C": "✓ SLCO1B1 → ระดับ statin ↑ → myopathy",
+    "D": "UGT1A1 ไม่เกี่ยว",
+    "E": "SULF1A1 ไม่เกี่ยว"
+   }
+  },
+  {
+   "id": "BIO-51-MCQ-057",
+   "block": "BIO",
+   "cohort": 51,
+   "n": 57,
+   "type": "MCQ",
+   "stem": "Which drug prescriptions follow RDU guidelines?",
+   "options": {
+    "A": "Prescribe a new drug on market",
+    "B": "Prescribe injectable drug when patient requests",
+    "C": "Prescribe a drug with high risk of abuse for long duration",
+    "D": "Prescribe a lowest therapeutic dose in duration period",
+    "E": "Prescribe an antibiotic for a viral upper respiratory infection"
+   },
+   "answer": "D",
+   "answer_status": "verified",
+   "explanation": "RDU = สั่งขนาดต่ำสุดที่ได้ผลในระยะเวลาเหมาะสม\n⚠️ ช้อยส์ E AI เติมให้ครบ 5 ตัว",
+   "refs": [
+    {
+     "paper": "MCQ51",
+     "pages": [
+      6
+     ]
+    },
+    {
+     "paper": "MCQ51-KEY",
+     "pages": [
+      6
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "bio_51_MCQ_057",
+   "key_concept": "• RDU: right drug/dose/duration\n• ลด ADR และการดื้อยา\n• เลี่ยง antibiotic ที่ไม่จำเป็น",
+   "option_why": {
+    "A": "ไม่ควรสั่งยาใหม่เพียงเพราะใหม่",
+    "B": "ไม่ควรสั่งยาฉีดตามคำขอ",
+    "C": "ไม่ควรสั่งยาเสี่ยง abuse ระยะยาว",
+    "D": "✓ ขนาดต่ำสุดที่ได้ผล",
+    "E": "AI เติมให้: antibiotic ใน viral URI ไม่เหมาะสม"
+   }
+  },
+  {
+   "id": "BIO-51-MCQ-060",
+   "block": "BIO",
+   "cohort": 51,
+   "n": 60,
+   "type": "MCQ",
+   "stem": "Which one is the significance consequence of inappropriate drug use",
+   "options": {
+    "A": "Increase ADRs",
+    "B": "ลดการมาพบแพทย์",
+    "C": "Decrease drug resistance",
+    "D": "Reduce healthcare costs",
+    "E": "Improve patient adherence"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "ใช้ยาไม่เหมาะสม → ADR เพิ่ม\n⚠️ ช้อยส์ C, D, E AI เติมให้ครบ 5 ตัว",
+   "refs": [
+    {
+     "paper": "MCQ51",
+     "pages": [
+      7
+     ]
+    },
+    {
+     "paper": "MCQ51-KEY",
+     "pages": [
+      7
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "bio_51_MCQ_060",
+   "key_concept": "• ผลเสีย: ADR, resistance, ค่าใช้จ่าย\n• RDU ลดปัญหา",
+   "option_why": {
+    "A": "✓ increase ADRs",
+    "B": "ลดการมาพบแพทย์ ไม่ใช่ผลที่ถูก",
+    "C": "AI เติมให้: ลดการดื้อยา (ผิด)",
+    "D": "AI เติมให้: ลดค่าใช้จ่าย (ผิด)",
+    "E": "AI เติมให้: เพิ่ม adherence (ผิด)"
+   }
+  },
+  {
+   "id": "BIO-51-MCQ-061",
+   "block": "BIO",
+   "cohort": 51,
+   "n": 61,
+   "type": "MCQ",
+   "stem": "What type of drug administration has highest likelihood of drug interaction?",
+   "options": {
+    "A": "Subcutaneous",
+    "B": "Topical",
+    "C": "Liquid",
+    "D": "Capsule of oral",
+    "E": "Intravenous"
+   },
+   "answer": "D",
+   "answer_status": "verified",
+   "explanation": "ยา oral ในแคปซูลมีโอกาส interaction สูงสุด (ผ่าน GI absorption, first-pass)\n⚠️ ช้อยส์ E AI เติมให้ครบ 5 ตัว",
+   "refs": [
+    {
+     "paper": "MCQ51",
+     "pages": [
+      7
+     ]
+    },
+    {
+     "paper": "MCQ51-KEY",
+     "pages": [
+      7
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "bio_51_MCQ_061",
+   "key_concept": "• Oral มี interaction ที่ absorption/first-pass\n• ฉีด/ทา ลดโอกาสบางชนิด\n• ตรวจ interaction ก่อนสั่ง",
+   "option_why": {
+    "A": "SC ข้ามระบบทางเดินอาหาร",
+    "B": "topical ดูดซึมน้อย",
+    "C": "ยาน้ำก็มี interaction ได้",
+    "D": "✓ capsule oral: ผ่านการดูดซึม/เมแทบอลิซึมหลายขั้น",
+    "E": "AI เติมให้: IV ไม่มี absorption interaction"
+   }
+  },
+  {
+   "id": "BIO-51-MCQ-063",
+   "block": "BIO",
+   "cohort": 51,
+   "n": 63,
+   "type": "MCQ",
+   "stem": "ถ้าแพทย์สั่งยา 2 ตัว แล้วก่อให้เกิด drug interaction in Gastric. ส่งผลให้เกิด reduce peak plasma concentration. ปฏิกิริยาที่เกิดขึ้น คืออะไร",
+   "options": {
+    "A": "PK – absorption",
+    "B": "PK – distribution",
+    "C": "PK – metabolism",
+    "D": "PD – antagonist",
+    "E": "PD - reverse agonist"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "ยา 2 ตัวทำให้ peak plasma concentration ลดในกระเพาะ = PK interaction ที่ absorption",
+   "refs": [
+    {
+     "paper": "MCQ51",
+     "pages": [
+      7
+     ]
+    },
+    {
+     "paper": "MCQ51-KEY",
+     "pages": [
+      7
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "bio_51_MCQ_063",
+   "key_concept": "• ตัวอย่าง: antacid chelate tetracycline/quinolone\n• PK interaction: A-D-M-E\n• PD interaction: ผลที่ receptor/ระบบเดียวกัน",
+   "option_why": {
+    "A": "✓ PK–absorption",
+    "B": "distribution ไม่ใช่",
+    "C": "metabolism ไม่ใช่",
+    "D": "PD antagonist เกี่ยวกับ receptor",
+    "E": "reverse agonist ไม่เกี่ยว"
+   }
+  },
+  {
+   "id": "BIO-51-MCQ-064",
+   "block": "BIO",
+   "cohort": 51,
+   "n": 64,
+   "type": "MCQ",
+   "stem": "แหล่งข้อมูลใดไม่มีความน่าเชื่อถือในการสืบค้นข้อมูลเกี่ยวกับ drug-drug interaction",
+   "options": {
+    "A": "Medscape",
+    "B": "WebMD",
+    "C": "MIMS",
+    "D": "UpToDate",
+    "E": "Pharmanet.co.th"
+   },
+   "answer": "B",
+   "answer_status": "verified",
+   "explanation": "แหล่งที่ไม่น่าเชื่อถือสำหรับ DDI ในตัวเลือก = WebMD (เว็บทั่วไป)",
+   "refs": [
+    {
+     "paper": "MCQ51",
+     "pages": [
+      8
+     ]
+    },
+    {
+     "paper": "MCQ51-KEY",
+     "pages": [
+      8
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "bio_51_MCQ_064",
+   "key_concept": "• ใช้ Micromedex/Lexicomp/UpToDate/Medscape\n• ตรวจ interaction ก่อนจ่ายยา\n• ข้อนี้ไฟล์เฉลยเลือก WebMD",
+   "option_why": {
+    "A": "Medscape เชื่อถือได้",
+    "B": "✓ WebMD เป็นเว็บข้อมูลผู้บริโภค ไม่ใช่แหล่งอ้างอิงทางวิชาการหลัก",
+    "C": "MIMS เป็นข้อมูลยา",
+    "D": "UpToDate เชื่อถือได้",
+    "E": "Pharmanet.co.th เป็นแหล่งข้อมูลยาไทย"
+   }
+  }
+ ]
+}
