@@ -3,6 +3,10 @@
 ทุกเวอร์ชันบันทึกที่นี่ และใน `version.json` (หน้าเว็บแสดงจาก `version.json`)
 เลขเวอร์ชัน: `MAJOR.MINOR.PATCH` — เพิ่มฟีเจอร์ = MINOR, แก้บั๊ก = PATCH
 
+## v0.43.0 · 2026-11-13 · บล็อกใหม่ Commed I / Commed II / Community Health Development
+- MCQ 52 ของ CM1 (29), CM2 (14), CD (24) + CM2 MCQ 48 (14)
+- เครื่องมืออ่านเฉลยไฮไลต์ฟ้าสว่าง + ตัวเลือก ก-จ
+
 ## v0.42.0 · 2026-11-13 · บล็อกใหม่ Biomed (Pharmacology)
 - MCQ 5 ชุด 164 ข้อ + KF 5 ชุด 82 ข้อ (MCQ 50, KF 50 ไม่มีเฉลย AI draft)
 - ข้อที่จำโจทย์ไม่ครบเติมช้อยส์ครบ 5 ติดป้าย AI เติม
