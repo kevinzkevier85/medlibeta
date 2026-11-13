@@ -1,6 +1,6 @@
 # HANDOFF — กระดาษส่งต่องาน (ยื่นให้ AI ตัวไหนก็ได้ อ่านใบนี้ใบเดียวแล้วทำต่อได้)
 > งานที่ทำค้างล่าสุด: ดู branch ที่ push ล่าสุด `git branch -r --sort=-committerdate | head -3` แล้ว `git log -5 --format=%B <branch>` — บรรทัด `ถัดไป:` คือขั้นต่อไป
-อัปเดต: 2026-11-13 (v0.41.0 · Immunity/Respiratory/KUB merge เข้า main แล้ว ไม่มี PR ค้าง) · เขียนโดย Claude (ผู้ใช้: Finn)
+อัปเดต: 2026-11-13 (v0.41.1 · Immunity/Respiratory/KUB merge เข้า main แล้ว ไม่มี PR ค้าง) · เขียนโดย Claude (ผู้ใช้: Finn)
 
 ## 0. บล็อก Immunity (IMM) — ครบทั้งบล็อกแล้ว, merge แล้ว (PR #78–#81, Drive `preclinic/2/immunity`)
 - block id `IMM` · inventory `imm_<รุ่น>_<MCQ|KF|OSPE>` 25 ชุด · ชุดรวม (41-43, 40-43) ใช้ `medlib_cohort: 43`
@@ -69,7 +69,7 @@
 ## 6. งานเหลือ (เรียงลำดับ — ไม่มี PR ค้าง)
 1. **รอคนตรวจ draft** (AI เฉลยเองเพราะไม่มีไฟล์เฉลย): IMM MCQ 48 · KF 47 · OSPE 40-43/47 · RESP KF 44–51, OSPE 40-43/44 · KUB MCQ 45–48 + KF 42-43/45/47 + OSPE 42-43/44/46
 2. issue **#76** (END-51-OSPE-007 ขอบบน capsule / B = glomerulosa?) เปิดอยู่ claude[bot] ตอบแล้ว → รอผู้แจ้ง/ผู้ตรวจตัดสิน
-3. CVS: เฉลยขัดที่ยังไม่มี `ai_answer` 3 MCQ (49-019 · 50-049 · 51-011) + KF 51-001/006 + OSPE 51-011
+3. CVS: ai_answer ครบแล้ว (v0.41.1) · 49-019 ไม่มีตัวเลือกถูก คงตามต้นฉบับ · KF 51-1.4/6.4 + OSPE 51-11.2 เฉลยขัด มี source_answer/proposed แล้ว รอคนตัดสิน
 4. บล็อกอื่นใน Drive `preclinic/2`: biomed, commed-1/2, community-dev, health-system, medprof-1 → **ทำเมื่อผู้ใช้สั่งเท่านั้น**
 5. ค้างเทคนิค: ผู้ใช้ตั้ง Cloudflare Worker (`docs/worker-setup.md`) · รัน `node _test/qa.mjs` บนเครื่อง Windows ยืนยันที่แก้ใน v0.41.0 (ยังไม่เคยรัน) · (v0.41.0 แก้แล้ว: autoMatch คำปฏิเสธ, ลายน้ำ imm_47_MCQ)
 6. ทุกชั่วโมงมีงานตั้งเวลาเช็ก GitHub issue ใหม่ (trigger ฝั่ง Claude ของ Finn)
