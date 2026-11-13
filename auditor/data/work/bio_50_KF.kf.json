@@ -1,0 +1,963 @@
+{
+ "set_id": "bio_50_KF",
+ "note": "KF Pharmacology MED PSU 50 · 22 ข้อ · ไม่มีไฟล์เฉลย AI เฉลยเองทั้งชุด (draft)",
+ "questions": [
+  {
+   "n": 1,
+   "page": 1,
+   "tags": [
+    "pharmacology"
+   ],
+   "case": "ระบุผลของยาว่าเป็น Systemic (S) หรือ Local (L) จากรูปแบบยา",
+   "answer_status": "draft",
+   "items": [
+    {
+     "id": "1.1",
+     "prompt": "Creams",
+     "format": "short",
+     "accepted": [
+      "l",
+      "local"
+     ],
+     "key_text": "L (Local)",
+     "source_key": "เฉลย: L (Local)"
+    },
+    {
+     "id": "1.2",
+     "prompt": "Pastes",
+     "format": "short",
+     "accepted": [
+      "l",
+      "local"
+     ],
+     "key_text": "L (Local)",
+     "source_key": "เฉลย: L (Local)"
+    },
+    {
+     "id": "1.3",
+     "prompt": "Syrups",
+     "format": "short",
+     "accepted": [
+      "s",
+      "systemic"
+     ],
+     "key_text": "S (Systemic)",
+     "source_key": "เฉลย: S (Systemic)"
+    },
+    {
+     "id": "1.4",
+     "prompt": "Tablets",
+     "format": "short",
+     "accepted": [
+      "s",
+      "systemic"
+     ],
+     "key_text": "S (Systemic)",
+     "source_key": "เฉลย: S (Systemic)"
+    }
+   ],
+   "audit_note": "ไม่มีไฟล์เฉลย AI เฉลยเอง"
+  },
+  {
+   "n": 2,
+   "page": 1,
+   "tags": [
+    "pharmacology"
+   ],
+   "case": "ข้อดีและข้อเสียของการให้ยาทาง Oral และ Intravenous",
+   "answer_status": "draft",
+   "items": [
+    {
+     "id": "2.1",
+     "prompt": "Oral — ข้อดี",
+     "format": "short",
+     "accepted": [
+      "สะดวก",
+      "ถูก",
+      "ปลอดภัย",
+      "convenient",
+      "cheap",
+      "non-invasive"
+     ],
+     "key_text": "สะดวก ราคาถูก ปลอดภัยกว่า ไม่ต้องฉีด (non-invasive)",
+     "source_key": "เฉลย: สะดวก ราคาถูก ปลอดภัยกว่า ไม่ต้องฉีด (non-invasive)"
+    },
+    {
+     "id": "2.2",
+     "prompt": "Oral — ข้อเสีย",
+     "format": "short",
+     "accepted": [
+      "first-pass",
+      "first pass",
+      "ช้า",
+      "slow",
+      "ดูดซึม"
+     ],
+     "key_text": "ผ่าน first-pass metabolism, onset ช้า, การดูดซึมแปรปรวน, ใช้ไม่ได้ในผู้ป่วยกินไม่ได้",
+     "source_key": "เฉลย: ผ่าน first-pass metabolism, onset ช้า, การดูดซึมแปรปรวน, ใช้ไม่ได้ในผู้ป่วยกินไม่ได้"
+    },
+    {
+     "id": "2.3",
+     "prompt": "IV — ข้อดี",
+     "format": "short",
+     "accepted": [
+      "100",
+      "f=100",
+      "เร็ว",
+      "rapid",
+      "แม่นยำ"
+     ],
+     "key_text": "Bioavailability 100%, onset เร็ว, ควบคุมขนาดแม่นยำ, ใช้ได้เมื่อกินไม่ได้",
+     "source_key": "เฉลย: Bioavailability 100%, onset เร็ว, ควบคุมขนาดแม่นยำ, ใช้ได้เมื่อกินไม่ได้"
+    },
+    {
+     "id": "2.4",
+     "prompt": "IV — ข้อเสีย",
+     "format": "short",
+     "accepted": [
+      "ติดเชื้อ",
+      "infection",
+      "invasive",
+      "เจ็บ",
+      "ราคา",
+      "แพง",
+      "adr"
+     ],
+     "key_text": "ต้องฉีด (invasive) เสี่ยงติดเชื้อ ผลข้างเคียงรุนแรงถ้าให้เร็ว/ผิดขนาด ต้องใช้บุคลากร ราคาสูงกว่า",
+     "source_key": "เฉลย: ต้องฉีด (invasive) เสี่ยงติดเชื้อ ผลข้างเคียงรุนแรงถ้าให้เร็ว/ผิดขนาด ต้องใช้บุคลากร ราคาสูงกว่า"
+    }
+   ],
+   "audit_note": "ไม่มีไฟล์เฉลย AI เฉลยเอง"
+  },
+  {
+   "n": 3,
+   "page": 2,
+   "tags": [
+    "pharmacology"
+   ],
+   "case": "Digoxin และ cyclosporine ถูกขับออกทางไตผ่าน efflux transporter เดียวกัน (P-gp) ถ้าให้ร่วมกัน",
+   "answer_status": "draft",
+   "items": [
+    {
+     "id": "3.1",
+     "prompt": "ผลที่เกิดขึ้น",
+     "format": "short",
+     "accepted": [
+      "increase",
+      "เพิ่ม",
+      "toxicity",
+      "พิษ"
+     ],
+     "key_text": "ระดับ digoxin ในเลือดเพิ่มขึ้น เสี่ยงพิษจาก digoxin",
+     "source_key": "เฉลย: ระดับ digoxin ในเลือดเพิ่มขึ้น เสี่ยงพิษจาก digoxin"
+    },
+    {
+     "id": "3.2",
+     "prompt": "สาเหตุ",
+     "format": "short",
+     "accepted": [
+      "p-gp",
+      "pgp",
+      "inhibit",
+      "ยับยั้ง",
+      "competit",
+      "แย่ง"
+     ],
+     "key_text": "Cyclosporine ยับยั้ง/แย่ง P-gp ที่ท่อไต ทำให้ digoxin ถูกขับออกลดลง",
+     "source_key": "เฉลย: Cyclosporine ยับยั้ง/แย่ง P-gp ที่ท่อไต ทำให้ digoxin ถูกขับออกลดลง"
+    }
+   ],
+   "exam_page": 2,
+   "audit_note": "ไม่มีไฟล์เฉลย AI เฉลยเอง"
+  },
+  {
+   "n": 4,
+   "page": 2,
+   "tags": [
+    "pharmacology"
+   ],
+   "case": "ให้ยาในคนปกติ (IV, IM, Oral) เติมคำในช่องว่าง",
+   "answer_status": "draft",
+   "items": [
+    {
+     "id": "4.1",
+     "prompt": "Route ที่ absorption rate ดีที่สุด",
+     "format": "short",
+     "accepted": [
+      "iv",
+      "intravenous"
+     ],
+     "key_text": "IV (ไม่ต้องผ่านการดูดซึม F = 100%)",
+     "source_key": "เฉลย: IV (ไม่ต้องผ่านการดูดซึม F = 100%)"
+    },
+    {
+     "id": "4.2",
+     "prompt": "Route ที่ onset เร็วที่สุด",
+     "format": "short",
+     "accepted": [
+      "iv",
+      "intravenous"
+     ],
+     "key_text": "IV",
+     "source_key": "เฉลย: IV"
+    },
+    {
+     "id": "4.3",
+     "prompt": "Route ที่ onset ช้า",
+     "format": "short",
+     "accepted": [
+      "oral"
+     ],
+     "key_text": "Oral",
+     "source_key": "เฉลย: Oral"
+    },
+    {
+     "id": "4.4",
+     "prompt": "Route ที่ plasma concentration สูงสุด",
+     "format": "short",
+     "accepted": [
+      "iv",
+      "intravenous"
+     ],
+     "key_text": "IV",
+     "source_key": "เฉลย: IV"
+    }
+   ],
+   "exam_page": 2,
+   "audit_note": "ไม่มีไฟล์เฉลย AI เฉลยเอง"
+  },
+  {
+   "n": 5,
+   "page": 2,
+   "tags": [
+    "pharmacology"
+   ],
+   "case": "Drug A (weak acid, pKa 3.2), B (weak acid, 4.5), C (weak base, 6.2), D (weak base, 10.0)",
+   "answer_status": "draft",
+   "items": [
+    {
+     "id": "5.1",
+     "prompt": "ยาไหนถูกขับออกมากเมื่อปัสสาวะเป็นกรด (urine acidification)",
+     "format": "short",
+     "accepted": [
+      "c",
+      "d"
+     ],
+     "key_text": "ยา C และ D (weak base แตกตัวมากในปัสสาวะกรด ถูกขับมาก)",
+     "source_key": "เฉลย: ยา C และ D (weak base แตกตัวมากในปัสสาวะกรด ถูกขับมาก)"
+    },
+    {
+     "id": "5.2",
+     "prompt": "ยาไหนถูกขับออกมากเมื่อปัสสาวะเป็นด่าง (urine alkalinization)",
+     "format": "short",
+     "accepted": [
+      "a",
+      "b"
+     ],
+     "key_text": "ยา A และ B (weak acid แตกตัวมากในปัสสาวะด่าง ถูกขับมาก)",
+     "source_key": "เฉลย: ยา A และ B (weak acid แตกตัวมากในปัสสาวะด่าง ถูกขับมาก)"
+    }
+   ],
+   "exam_page": 2,
+   "audit_note": "ไม่มีไฟล์เฉลย AI เฉลยเอง"
+  },
+  {
+   "n": 6,
+   "page": 2,
+   "tags": [
+    "pharmacology"
+   ],
+   "case": "ข้อมูลยาตรงกับสมการ Cₜ = 10 e^(−0.2t)",
+   "answer_status": "draft",
+   "items": [
+    {
+     "id": "6.1",
+     "prompt": "Kinetic behaviour ของยานี้",
+     "format": "short",
+     "accepted": [
+      "first",
+      "1st",
+      "ลำดับที่ 1"
+     ],
+     "key_text": "First-order kinetics",
+     "source_key": "เฉลย: First-order kinetics"
+    },
+    {
+     "id": "6.2",
+     "prompt": "Plasma concentration เริ่มต้น",
+     "format": "short",
+     "accepted": [
+      "10"
+     ],
+     "key_text": "C₀ = 10",
+     "source_key": "เฉลย: C₀ = 10"
+    },
+    {
+     "id": "6.3",
+     "prompt": "Plasma concentration เมื่อเวลาผ่านไป 1 ชั่วโมง",
+     "format": "short",
+     "accepted": [
+      "8.2",
+      "8.19",
+      "8.1"
+     ],
+     "key_text": "C = 10 e^(−0.2) ≈ 8.19",
+     "source_key": "เฉลย: C = 10 e^(−0.2) ≈ 8.19"
+    },
+    {
+     "id": "6.4",
+     "prompt": "Half-life",
+     "format": "short",
+     "accepted": [
+      "3.4",
+      "3.5",
+      "3.47"
+     ],
+     "key_text": "t½ = 0.693 / 0.2 ≈ 3.47 ชั่วโมง",
+     "source_key": "เฉลย: t½ = 0.693 / 0.2 ≈ 3.47 ชั่วโมง"
+    }
+   ],
+   "exam_page": 2,
+   "audit_note": "ไม่มีไฟล์เฉลย AI เฉลยเอง"
+  },
+  {
+   "n": 7,
+   "page": 3,
+   "tags": [
+    "pharmacology"
+   ],
+   "case": "ยามี oral bioavailability 50%, CL = 10 L/hr, Vd = 60 L, t½ = 8 hr, Cp = 1 mg/L",
+   "answer_status": "draft",
+   "items": [
+    {
+     "id": "7.1",
+     "prompt": "หา D_L เมื่อให้ยาทาง intravenous",
+     "format": "short",
+     "accepted": [
+      "60"
+     ],
+     "key_text": "D_L = Cp × Vd = 1 × 60 = 60 mg",
+     "source_key": "เฉลย: D_L = Cp × Vd = 1 × 60 = 60 mg"
+    },
+    {
+     "id": "7.2",
+     "prompt": "หา D_M เมื่อให้ยาทาง oral ทุก 8 ชั่วโมง",
+     "format": "short",
+     "accepted": [
+      "160",
+      "20"
+     ],
+     "key_text": "D_M = (Cp × CL / F) × τ = (1 × 10 / 0.5) × 8 = 160 mg ทุก 8 ชม. (20 mg/hr)",
+     "source_key": "เฉลย: D_M = (Cp × CL / F) × τ = (1 × 10 / 0.5) × 8 = 160 mg ทุก 8 ชม. (20 mg/hr)"
+    }
+   ],
+   "exam_page": 3,
+   "audit_note": "ไม่มีไฟล์เฉลย AI เฉลยเอง"
+  },
+  {
+   "n": 8,
+   "page": 3,
+   "tags": [
+    "pharmacology"
+   ],
+   "case": "PK/PD parameter ของ vancomycin",
+   "answer_status": "draft",
+   "items": [
+    {
+     "id": "8.1",
+     "prompt": "PK/PD parameter ที่บอกประสิทธิผลของ vancomycin",
+     "format": "short",
+     "accepted": [
+      "auc"
+     ],
+     "key_text": "AUC/MIC",
+     "source_key": "เฉลย: AUC/MIC"
+    },
+    {
+     "id": "8.2",
+     "prompt": "รูปแบบการออกฤทธิ์ต้านจุลชีพของ vancomycin",
+     "format": "short",
+     "accepted": [
+      "time-dependent",
+      "time dependent",
+      "persistent"
+     ],
+     "key_text": "Time-dependent killing with prolonged persistent effect (Type 3)",
+     "source_key": "เฉลย: Time-dependent killing with prolonged persistent effect (Type 3)"
+    }
+   ],
+   "exam_page": 3,
+   "audit_note": "ไม่มีไฟล์เฉลย AI เฉลยเอง"
+  },
+  {
+   "n": 9,
+   "page": 3,
+   "tags": [
+    "pharmacology"
+   ],
+   "case": "หญิงอายุ 68 ปี septic shock",
+   "answer_status": "draft",
+   "items": [
+    {
+     "id": "9.1",
+     "prompt": "ยาปฏิชีวนะที่เหมาะสมที่สุด (และ/หรือ)",
+     "format": "short",
+     "accepted": [
+      "meropenem",
+      "carbapenem",
+      "piperacillin",
+      "ceftriaxone",
+      "vancomycin",
+      "aminoglycoside",
+      "amikacin"
+     ],
+     "key_text": "Broad-spectrum antibiotics ทันที เช่น carbapenem (meropenem) หรือ piperacillin/tazobactam ± vancomycin",
+     "source_key": "เฉลย: Broad-spectrum antibiotics ทันที เช่น carbapenem (meropenem) หรือ piperacillin/tazobactam ± vancomycin"
+    }
+   ],
+   "exam_page": 3,
+   "audit_note": "ไม่มีไฟล์เฉลย AI เฉลยเอง"
+  },
+  {
+   "n": 10,
+   "page": 3,
+   "tags": [
+    "pharmacology"
+   ],
+   "case": "Bioequivalence",
+   "answer_status": "draft",
+   "items": [
+    {
+     "id": "10.1",
+     "prompt": "ยกตัวอย่าง parameter ที่ใช้วัด bioequivalence อย่างน้อย 2 ตัว",
+     "format": "short",
+     "accepted": [
+      "cmax",
+      "auc"
+     ],
+     "key_text": "Cmax, AUC",
+     "source_key": "เฉลย: Cmax, AUC",
+     "keywords_all": [
+      "cmax",
+      "auc"
+     ]
+    }
+   ],
+   "exam_page": 3,
+   "audit_note": "ไม่มีไฟล์เฉลย AI เฉลยเอง"
+  },
+  {
+   "n": 11,
+   "page": 3,
+   "tags": [
+    "pharmacology"
+   ],
+   "case": "Bioequivalence",
+   "answer_status": "draft",
+   "items": [
+    {
+     "id": "11.1",
+     "prompt": "ค่า criteria ที่บ่งบอกว่ายาเป็น bioequivalent กับ reference drug",
+     "format": "short",
+     "accepted": [
+      "80",
+      "125"
+     ],
+     "key_text": "90% CI ของ AUC และ Cmax อยู่ในช่วง 80–125% ของ reference drug",
+     "source_key": "เฉลย: 90% CI ของ AUC และ Cmax อยู่ในช่วง 80–125% ของ reference drug"
+    }
+   ],
+   "exam_page": 3,
+   "audit_note": "ไม่มีไฟล์เฉลย AI เฉลยเอง"
+  },
+  {
+   "n": 12,
+   "page": 3,
+   "tags": [
+    "pharmacology"
+   ],
+   "case": "พิจารณากราฟ (Drug X 70 บาท/1 tab od · Drug Y 10 บาท/2 tab tid · Drug Z 15 บาท/1 tab bid)",
+   "answer_status": "draft",
+   "items": [
+    {
+     "id": "12.1",
+     "prompt": "หากเลือกใช้ยาในโรงพยาบาล จะเลือกยาใด",
+     "format": "short",
+     "accepted": [
+      "z",
+      "drug z"
+     ],
+     "key_text": "Drug Z",
+     "source_key": "เฉลย: Drug Z",
+     "image": "img/BIO-50-KF-012.jpg",
+     "image_caption": "กราฟ dose–response ของยา X, Y, Z"
+    },
+    {
+     "id": "12.2",
+     "prompt": "ให้เหตุผลประกอบ 2 ข้อ",
+     "format": "short",
+     "accepted": [
+      "efficacy",
+      "ราคา",
+      "ถูก",
+      "cheaper"
+     ],
+     "key_text": "1. efficacy สูงเท่ากับ Drug X 2. ราคาถูกกว่า Drug X",
+     "source_key": "เฉลย: 1. efficacy สูงเท่ากับ Drug X 2. ราคาถูกกว่า Drug X"
+    }
+   ],
+   "exam_page": 3,
+   "audit_note": "ไม่มีไฟล์เฉลย AI เฉลยเอง"
+  },
+  {
+   "n": 13,
+   "page": 4,
+   "tags": [
+    "pharmacology"
+   ],
+   "case": "ยาขยายหลอดลมจาก 3 บริษัท: A ED50 40, efficacy 90% · B ED50 80, efficacy 90% · C ED50 20, efficacy 60%",
+   "answer_status": "draft",
+   "items": [
+    {
+     "id": "13.1",
+     "prompt": "จะเลือกยาของบริษัทใด เพราะ",
+     "format": "short",
+     "accepted": [
+      "a",
+      "บริษัท a"
+     ],
+     "key_text": "บริษัท A — efficacy สูงสุดร่วมกับ B แต่ potency สูงกว่า (ED50 ต่ำกว่า) ดู efficacy ก่อนเสมอ",
+     "source_key": "เฉลย: บริษัท A — efficacy สูงสุดร่วมกับ B แต่ potency สูงกว่า (ED50 ต่ำกว่า) ดู efficacy ก่อนเสมอ"
+    }
+   ],
+   "exam_page": 4,
+   "audit_note": "ไม่มีไฟล์เฉลย AI เฉลยเอง"
+  },
+  {
+   "n": 14,
+   "page": 4,
+   "tags": [
+    "pharmacology"
+   ],
+   "case": "Fill in the effect of drugs on the organ",
+   "answer_status": "draft",
+   "items": [
+    {
+     "id": "14.1",
+     "prompt": "Eye iris — muscarinic agonist",
+     "format": "short",
+     "accepted": [
+      "miosis"
+     ],
+     "key_text": "Miosis",
+     "source_key": "เฉลย: Miosis"
+    },
+    {
+     "id": "14.2",
+     "prompt": "Eye iris — muscarinic antagonist",
+     "format": "short",
+     "accepted": [
+      "mydriasis"
+     ],
+     "key_text": "Mydriasis",
+     "source_key": "เฉลย: Mydriasis"
+    },
+    {
+     "id": "14.3",
+     "prompt": "Respiratory tract — agonist",
+     "format": "short",
+     "accepted": [
+      "bronchoconstriction"
+     ],
+     "key_text": "Bronchoconstriction",
+     "source_key": "เฉลย: Bronchoconstriction"
+    },
+    {
+     "id": "14.4",
+     "prompt": "Respiratory tract — antagonist",
+     "format": "short",
+     "accepted": [
+      "bronchodilation"
+     ],
+     "key_text": "Bronchodilation",
+     "source_key": "เฉลย: Bronchodilation"
+    },
+    {
+     "id": "14.5",
+     "prompt": "Heart — agonist",
+     "format": "short",
+     "accepted": [
+      "bradycardia"
+     ],
+     "key_text": "Bradycardia",
+     "source_key": "เฉลย: Bradycardia"
+    },
+    {
+     "id": "14.6",
+     "prompt": "Heart — antagonist",
+     "format": "short",
+     "accepted": [
+      "tachycardia"
+     ],
+     "key_text": "Tachycardia",
+     "source_key": "เฉลย: Tachycardia"
+    },
+    {
+     "id": "14.7",
+     "prompt": "GI peristalsis — agonist",
+     "format": "short",
+     "accepted": [
+      "increase",
+      "เพิ่ม",
+      "contraction"
+     ],
+     "key_text": "Peristalsis ↑ (contraction)",
+     "source_key": "เฉลย: Peristalsis ↑ (contraction)"
+    },
+    {
+     "id": "14.8",
+     "prompt": "GI peristalsis — antagonist",
+     "format": "short",
+     "accepted": [
+      "decrease",
+      "ลด",
+      "relax"
+     ],
+     "key_text": "Peristalsis ↓ (relaxation)",
+     "source_key": "เฉลย: Peristalsis ↓ (relaxation)"
+    }
+   ],
+   "exam_page": 4,
+   "audit_note": "ไม่มีไฟล์เฉลย AI เฉลยเอง"
+  },
+  {
+   "n": 15,
+   "page": 4,
+   "tags": [
+    "pharmacology"
+   ],
+   "case": "จงเขียนกราฟและอธิบาย pulse rate, blood pressure และ peripheral resistance เมื่อให้ Epinephrine",
+   "answer_status": "draft",
+   "items": [
+    {
+     "id": "15.1",
+     "prompt": "Pulse rate",
+     "format": "short",
+     "accepted": [
+      "increase",
+      "เพิ่ม",
+      "tachycardia"
+     ],
+     "key_text": "เพิ่มขึ้น (β1 → HR ↑ และ contractility ↑)",
+     "source_key": "เฉลย: เพิ่มขึ้น (β1 → HR ↑ และ contractility ↑)"
+    },
+    {
+     "id": "15.2",
+     "prompt": "Blood pressure",
+     "format": "short",
+     "accepted": [
+      "systolic",
+      "เพิ่ม",
+      "increase"
+     ],
+     "key_text": "Systolic BP เพิ่ม (cardiac output ↑) ส่วน diastolic ลดลงหรือเปลี่ยนเล็กน้อย (β2 vasodilation ที่กล้ามเนื้อ)",
+     "source_key": "เฉลย: Systolic BP เพิ่ม (cardiac output ↑) ส่วน diastolic ลดลงหรือเปลี่ยนเล็กน้อย (β2 vasodilation ที่กล้ามเนื้อ)"
+    },
+    {
+     "id": "15.3",
+     "prompt": "Peripheral resistance",
+     "format": "short",
+     "accepted": [
+      "decrease",
+      "ลด",
+      "β2",
+      "beta2"
+     ],
+     "key_text": "ลดลงที่ขนาดต่ำ–ปานกลาง (β2 vasodilation ที่กล้ามเนื้อลาย); ขนาดสูงเพิ่มจาก α1",
+     "source_key": "เฉลย: ลดลงที่ขนาดต่ำ–ปานกลาง (β2 vasodilation ที่กล้ามเนื้อลาย); ขนาดสูงเพิ่มจาก α1"
+    }
+   ],
+   "exam_page": 4,
+   "audit_note": "ไม่มีไฟล์เฉลย AI เฉลยเอง"
+  },
+  {
+   "n": 16,
+   "page": 5,
+   "tags": [
+    "pharmacology"
+   ],
+   "case": "ผลของ TXA₂ และ PGI₂ ต่อ vessel และ platelet",
+   "answer_status": "draft",
+   "items": [
+    {
+     "id": "16.1",
+     "prompt": "TXA₂ — vessel",
+     "format": "short",
+     "accepted": [
+      "vasoconstriction",
+      "หดตัว",
+      "constrict"
+     ],
+     "key_text": "Vasoconstriction",
+     "source_key": "เฉลย: Vasoconstriction"
+    },
+    {
+     "id": "16.2",
+     "prompt": "TXA₂ — platelet",
+     "format": "short",
+     "accepted": [
+      "aggregation",
+      "กระตุ้น",
+      "activate"
+     ],
+     "key_text": "กระตุ้น platelet aggregation",
+     "source_key": "เฉลย: กระตุ้น platelet aggregation"
+    },
+    {
+     "id": "16.3",
+     "prompt": "PGI₂ — vessel",
+     "format": "short",
+     "accepted": [
+      "vasodilation",
+      "ขยาย",
+      "dilat"
+     ],
+     "key_text": "Vasodilation",
+     "source_key": "เฉลย: Vasodilation"
+    },
+    {
+     "id": "16.4",
+     "prompt": "PGI₂ — platelet",
+     "format": "short",
+     "accepted": [
+      "inhibit",
+      "ยับยั้ง",
+      "anti"
+     ],
+     "key_text": "ยับยั้ง platelet aggregation",
+     "source_key": "เฉลย: ยับยั้ง platelet aggregation"
+    }
+   ],
+   "exam_page": 5,
+   "audit_note": "ไม่มีไฟล์เฉลย AI เฉลยเอง"
+  },
+  {
+   "n": 17,
+   "page": 5,
+   "tags": [
+    "pharmacology"
+   ],
+   "case": "Stevens-Johnson Syndrome",
+   "answer_status": "draft",
+   "items": [
+    {
+     "id": "17.1",
+     "prompt": "ยาที่ทำให้เกิด SJS 2 ชนิด",
+     "format": "short",
+     "accepted": [
+      "trimoxazole",
+      "carbamazepine",
+      "allopurinol",
+      "phenytoin",
+      "sulfa"
+     ],
+     "key_text": "Co-trimoxazole, Carbamazepine, Allopurinol, Phenytoin (ตอบ 2 ตัว)",
+     "source_key": "เฉลย: Co-trimoxazole, Carbamazepine, Allopurinol, Phenytoin (ตอบ 2 ตัว)"
+    }
+   ],
+   "exam_page": 5,
+   "audit_note": "ไม่มีไฟล์เฉลย AI เฉลยเอง"
+  },
+  {
+   "n": 18,
+   "page": 5,
+   "tags": [
+    "pharmacology"
+   ],
+   "case": "เภสัชพันธุศาสตร์",
+   "answer_status": "draft",
+   "items": [
+    {
+     "id": "18.1",
+     "prompt": "ความแตกต่างระหว่าง pharmacogenetics และ pharmacogenomics",
+     "format": "short",
+     "accepted": [
+      "single gene",
+      "ยีนเดี่ยว",
+      "genome"
+     ],
+     "key_text": "Pharmacogenetics = ยีนเดี่ยวที่มีผลต่อการตอบสนองต่อยา · Pharmacogenomics = ทั้ง genome",
+     "source_key": "เฉลย: Pharmacogenetics = ยีนเดี่ยวที่มีผลต่อการตอบสนองต่อยา · Pharmacogenomics = ทั้ง genome"
+    }
+   ],
+   "exam_page": 5,
+   "audit_note": "ไม่มีไฟล์เฉลย AI เฉลยเอง"
+  },
+  {
+   "n": 19,
+   "page": 5,
+   "tags": [
+    "pharmacology"
+   ],
+   "case": "Genetic polymorphisms ของผู้เมแทบอไลซ์ยา",
+   "answer_status": "draft",
+   "items": [
+    {
+     "id": "19.1",
+     "prompt": "Extensive metabolizers",
+     "format": "short",
+     "accepted": [
+      "normal",
+      "ปกติ"
+     ],
+     "key_text": "เอนไซม์เมแทบอลิซึมยาทำงานปกติ",
+     "source_key": "เฉลย: เอนไซม์เมแทบอลิซึมยาทำงานปกติ"
+    },
+    {
+     "id": "19.2",
+     "prompt": "Intermediate metabolizers",
+     "format": "short",
+     "accepted": [
+      "slower",
+      "ช้ากว่า",
+      "reduced",
+      "ลด"
+     ],
+     "key_text": "ทำงานช้ากว่าปกติเล็กน้อย",
+     "source_key": "เฉลย: ทำงานช้ากว่าปกติเล็กน้อย"
+    },
+    {
+     "id": "19.3",
+     "prompt": "Rapid metabolizers",
+     "format": "short",
+     "accepted": [
+      "rapid",
+      "เร็ว",
+      "faster"
+     ],
+     "key_text": "ทำงานเร็วกว่าปกติ",
+     "source_key": "เฉลย: ทำงานเร็วกว่าปกติ"
+    },
+    {
+     "id": "19.4",
+     "prompt": "Poor metabolizers",
+     "format": "short",
+     "accepted": [
+      "low",
+      "ต่ำ",
+      "no ",
+      "ไม่มี",
+      "none"
+     ],
+     "key_text": "ทำงานต่ำหรือไม่มีเลย",
+     "source_key": "เฉลย: ทำงานต่ำหรือไม่มีเลย"
+    }
+   ],
+   "exam_page": 5,
+   "audit_note": "ไม่มีไฟล์เฉลย AI เฉลยเอง"
+  },
+  {
+   "n": 20,
+   "page": 6,
+   "tags": [
+    "pharmacology"
+   ],
+   "case": "What is inappropriate RDU",
+   "answer_status": "draft",
+   "items": [
+    {
+     "id": "20.1",
+     "prompt": "หญิง 18 ปี 60 kg ใช้ paracetamol 2 tablets ทุก 4 ชั่วโมง แก้ปวดหลัง",
+     "format": "short",
+     "accepted": [
+      "เกิน",
+      "max",
+      "4",
+      "hepatotox",
+      "ตับ",
+      "dose",
+      "ขนาด"
+     ],
+     "key_text": "ไม่เหมาะสม — 2 tab (500 mg) ทุก 4 ชม. = 6 g/วัน เกินขนาดสูงสุด 4 g/วัน เสี่ยงพิษต่อตับ",
+     "source_key": "เฉลย: ไม่เหมาะสม — 2 tab (500 mg) ทุก 4 ชม. = 6 g/วัน เกินขนาดสูงสุด 4 g/วัน เสี่ยงพิษต่อตับ"
+    },
+    {
+     "id": "20.2",
+     "prompt": "หญิง 20 ปี ใช้ stimulant laxative เพื่อลดน้ำหนัก",
+     "format": "short",
+     "accepted": [
+      "ไม่เหมาะสม",
+      "ดื้อ",
+      "dependence",
+      "electrolyte",
+      "inappropriate",
+      "misuse"
+     ],
+     "key_text": "ไม่เหมาะสม — ใช้ผิดข้อบ่งใช้ เสี่ยงติดยา/ลำไส้เสียการทำงาน เสียเกลือแร่/น้ำ",
+     "source_key": "เฉลย: ไม่เหมาะสม — ใช้ผิดข้อบ่งใช้ เสี่ยงติดยา/ลำไส้เสียการทำงาน เสียเกลือแร่/น้ำ"
+    }
+   ],
+   "exam_page": 6,
+   "audit_note": "ไม่มีไฟล์เฉลย AI เฉลยเอง"
+  },
+  {
+   "n": 21,
+   "page": 6,
+   "tags": [
+    "pharmacology"
+   ],
+   "case": "Drug interactions",
+   "answer_status": "draft",
+   "items": [
+    {
+     "id": "21.1",
+     "prompt": "Causes of drug interactions (อย่างน้อย 2 ข้อ)",
+     "format": "short",
+     "accepted": [
+      "polypharmacy",
+      "genetic",
+      "พันธุกรรม",
+      "หลายชนิด",
+      "ความรู้",
+      "understanding"
+     ],
+     "key_text": "Polypharmacy · Genetic polymorphism · การขาดความรู้/ความเข้าใจ · หลายโรคหลายแพทย์",
+     "source_key": "เฉลย: Polypharmacy · Genetic polymorphism · การขาดความรู้/ความเข้าใจ · หลายโรคหลายแพทย์"
+    }
+   ],
+   "exam_page": 6,
+   "audit_note": "ไม่มีไฟล์เฉลย AI เฉลยเอง"
+  },
+  {
+   "n": 22,
+   "page": 6,
+   "tags": [
+    "pharmacology"
+   ],
+   "case": "Drug-drug และ drug-food interaction",
+   "answer_status": "draft",
+   "items": [
+    {
+     "id": "22.1",
+     "prompt": "ยกตัวอย่างผลจาก drug-drug interaction และ drug-food interaction (2 ข้อ)",
+     "format": "short",
+     "accepted": [
+      "เพิ่ม",
+      "ลด",
+      "toxicity",
+      "พิษ",
+      "tyramine",
+      "warfarin",
+      "vitamin k",
+      "antacid"
+     ],
+     "key_text": "เช่น ระดับยาเพิ่ม/ลด → พิษหรือรักษาล้มเหลว (warfarin + vitamin K อาหาร, MAOI + tyramine, antacid ลดการดูดซึมยา)",
+     "source_key": "เฉลย: เช่น ระดับยาเพิ่ม/ลด → พิษหรือรักษาล้มเหลว (warfarin + vitamin K อาหาร, MAOI + tyramine, antacid ลดการดูดซึมยา)"
+    }
+   ],
+   "exam_page": 6,
+   "audit_note": "ไม่มีไฟล์เฉลย AI เฉลยเอง"
+  }
+ ],
+ "time_limit_min": 180
+}

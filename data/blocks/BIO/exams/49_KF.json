@@ -1,0 +1,823 @@
+{
+ "meta": {
+  "set_id": "49_KF",
+  "block": "BIO",
+  "cohort": 49,
+  "type": "KF",
+  "title": "KF Biomed (Pharmacology) · Med PSU 49",
+  "time_limit_min": 120,
+  "generated_by": "auditor/tools/build_kf.py from auditor/data/work/bio_49_KF.kf.json — do not edit by hand"
+ },
+ "questions": [
+  {
+   "id": "BIO-49-KF-001",
+   "block": "BIO",
+   "cohort": 49,
+   "n": 1,
+   "type": "KF",
+   "case": "เติมคำลงในช่องว่าง: Dosage form / Administration route ของ systemic effect และ local effect",
+   "items": [
+    {
+     "id": "1.1",
+     "prompt": "Local effect — dosage form",
+     "format": "short",
+     "accepted": [
+      "ointment",
+      "cream",
+      "paste",
+      "solution"
+     ],
+     "key_text": "Ointments, solution, creams, pastes",
+     "source_key": "เฉลย: Ointments, solution, creams, pastes"
+    },
+    {
+     "id": "1.2",
+     "prompt": "Local effect — administration route",
+     "format": "short",
+     "accepted": [
+      "topical"
+     ],
+     "key_text": "Topical",
+     "source_key": "เฉลย: Topical"
+    },
+    {
+     "id": "1.3",
+     "prompt": "Systemic effect — administration route",
+     "format": "short",
+     "accepted": [
+      "intravascular",
+      "iv"
+     ],
+     "key_text": "Intravascular (IV)",
+     "source_key": "เฉลย: Intravascular (IV)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF49",
+     "pages": [
+      1
+     ]
+    },
+    {
+     "paper": "KF49-KEY",
+     "pages": [
+      1
+     ]
+    }
+   ],
+   "tags": [
+    "pharmacology"
+   ],
+   "source": "claude-mcp",
+   "audit_note": "เฉลยลายมือ ตารางเรียงสลับ อ่านจากภาพ"
+  },
+  {
+   "id": "BIO-49-KF-002",
+   "block": "BIO",
+   "cohort": 49,
+   "n": 2,
+   "type": "KF",
+   "case": "เติมคำลงในช่องว่าง: Chemical reaction / Enzyme ของ Phase I และ Phase II",
+   "items": [
+    {
+     "id": "2.1",
+     "prompt": "Phase I — chemical reaction",
+     "format": "short",
+     "accepted": [
+      "oxidation",
+      "reduction",
+      "hydrolysis"
+     ],
+     "key_text": "Oxidation / Reduction / Hydrolysis",
+     "source_key": "เฉลย: Oxidation / Reduction / Hydrolysis"
+    },
+    {
+     "id": "2.2",
+     "prompt": "Phase I — enzyme",
+     "format": "short",
+     "accepted": [
+      "cytochrome",
+      "cyp"
+     ],
+     "key_text": "Cytochrome P450",
+     "source_key": "เฉลย: Cytochrome P450"
+    },
+    {
+     "id": "2.3",
+     "prompt": "Phase II — chemical reaction",
+     "format": "short",
+     "accepted": [
+      "conjugation"
+     ],
+     "key_text": "Conjugation",
+     "source_key": "เฉลย: Conjugation"
+    },
+    {
+     "id": "2.4",
+     "prompt": "Phase II — enzyme",
+     "format": "short",
+     "accepted": [
+      "ugt",
+      "transferase"
+     ],
+     "key_text": "UGT (UDP-glucuronosyltransferase) และ conjugating enzymes อื่น",
+     "source_key": "เฉลย: UGT (UDP-glucuronosyltransferase) และ conjugating enzymes อื่น"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "KF49",
+     "pages": [
+      1
+     ]
+    },
+    {
+     "paper": "KF49-KEY",
+     "pages": [
+      1
+     ]
+    }
+   ],
+   "tags": [
+    "pharmacology"
+   ],
+   "source": "claude-mcp",
+   "audit_note": "ลายมือช่อง enzyme ของ Phase II อ่านไม่ชัด AI สรุป"
+  },
+  {
+   "id": "BIO-49-KF-003",
+   "block": "BIO",
+   "cohort": 49,
+   "n": 3,
+   "type": "KF",
+   "case": "Alkalization vs Acidification (ยา A; pKa = … ยา B; pH = …)",
+   "items": [
+    {
+     "id": "3.1",
+     "prompt": "เมื่อให้สารที่มีฤทธิ์เป็นเบส (ปัสสาวะเป็นด่าง) ยาชนิดใดบ้างจะถูกขับออกมา",
+     "format": "short",
+     "accepted": [
+      "weak acid",
+      "กรดอ่อน",
+      "acid"
+     ],
+     "key_text": "ยาที่เป็นกรดอ่อน (weak acid) ถูกขับออกมากขึ้น เพราะแตกตัวมากในปัสสาวะด่าง",
+     "source_key": "เฉลย: ยาที่เป็นกรดอ่อน (weak acid) ถูกขับออกมากขึ้น เพราะแตกตัวมากในปัสสาวะด่าง"
+    },
+    {
+     "id": "3.2",
+     "prompt": "เมื่อให้สารที่มีฤทธิ์เป็นกรด (ปัสสาวะเป็นกรด) ยาชนิดใดบ้างจะถูกขับออกมา",
+     "format": "short",
+     "accepted": [
+      "weak base",
+      "เบสอ่อน",
+      "base"
+     ],
+     "key_text": "ยาที่เป็นเบสอ่อน (weak base) ถูกขับออกมากขึ้น เพราะแตกตัวมากในปัสสาวะกรด",
+     "source_key": "เฉลย: ยาที่เป็นเบสอ่อน (weak base) ถูกขับออกมากขึ้น เพราะแตกตัวมากในปัสสาวะกรด"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "KF49",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "KF49-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [
+    "pharmacology"
+   ],
+   "source": "claude-mcp",
+   "audit_note": "ไฟล์เฉลยไม่มีคำตอบข้อ 3 AI เขียนตามหลัก ion trapping"
+  },
+  {
+   "id": "BIO-49-KF-004",
+   "block": "BIO",
+   "cohort": 49,
+   "n": 4,
+   "type": "KF",
+   "case": "เขียนกราฟและอธิบาย peripheral resistance, pulse rate และ blood pressure เมื่อให้ Norepinephrine",
+   "items": [
+    {
+     "id": "4.1",
+     "prompt": "Peripheral resistance",
+     "format": "short",
+     "accepted": [
+      "increase",
+      "เพิ่ม",
+      "สูง",
+      "vasoconstriction"
+     ],
+     "key_text": "เพิ่มขึ้น — NE กระตุ้น α1 → vasoconstriction → พื้นที่หน้าตัดลด → แรงต้านเพิ่ม",
+     "source_key": "เฉลย: เพิ่มขึ้น — NE กระตุ้น α1 → vasoconstriction → พื้นที่หน้าตัดลด → แรงต้านเพิ่ม"
+    },
+    {
+     "id": "4.2",
+     "prompt": "Blood pressure",
+     "format": "short",
+     "accepted": [
+      "increase",
+      "เพิ่ม",
+      "สูง"
+     ],
+     "key_text": "เพิ่มขึ้น (จาก peripheral resistance ↑)",
+     "source_key": "เฉลย: เพิ่มขึ้น (จาก peripheral resistance ↑)"
+    },
+    {
+     "id": "4.3",
+     "prompt": "Pulse rate",
+     "format": "short",
+     "accepted": [
+      "decrease",
+      "ลด",
+      "bradycardia",
+      "baroreceptor"
+     ],
+     "key_text": "ลดลง — baroreceptor reflex (BP ↑ → vagal ↑ → HR ↓) แม้ NE กระตุ้น β1 โดยตรง",
+     "source_key": "เฉลย: ลดลง — baroreceptor reflex (BP ↑ → vagal ↑ → HR ↓) แม้ NE กระตุ้น β1 โดยตรง"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF49",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "KF49-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [
+    "pharmacology"
+   ],
+   "source": "claude-mcp",
+   "audit_note": "เฉลยลายมืออ่านบางส่วน (NE จับ α1 ได้ดีกว่า β ในขนาดที่ใช้; baroreceptor reflex)"
+  },
+  {
+   "id": "BIO-49-KF-005",
+   "block": "BIO",
+   "cohort": 49,
+   "n": 5,
+   "type": "KF",
+   "case": "Stevens-Johnson Syndrome",
+   "items": [
+    {
+     "id": "5.1",
+     "prompt": "บอกยาที่ทำให้เกิด SJS 2 ชนิด",
+     "format": "short",
+     "accepted": [
+      "trimoxazole",
+      "carbamazepine",
+      "allopurinol",
+      "phenytoin",
+      "sulfa"
+     ],
+     "key_text": "Co-trimoxazole, Carbamazepine, Allopurinol, Phenytoin (ตอบ 2 ตัว)",
+     "source_key": "เฉลย: Co-trimoxazole, Carbamazepine, Allopurinol, Phenytoin (ตอบ 2 ตัว)"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "KF49",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "KF49-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [
+    "pharmacology"
+   ],
+   "source": "claude-mcp",
+   "audit_note": "ไฟล์เฉลยไม่มีคำตอบข้อนี้ AI เติมให้"
+  },
+  {
+   "id": "BIO-49-KF-006",
+   "block": "BIO",
+   "cohort": 49,
+   "n": 6,
+   "type": "KF",
+   "case": "เภสัชพันธุศาสตร์",
+   "items": [
+    {
+     "id": "6.1",
+     "prompt": "ความแตกต่างระหว่าง pharmacogenetics และ pharmacogenomics",
+     "format": "short",
+     "accepted": [
+      "single gene",
+      "ยีนเดี่ยว",
+      "genome"
+     ],
+     "key_text": "Pharmacogenetics = ยีนเดี่ยวที่มีผลต่อการตอบสนองต่อยา · Pharmacogenomics = ทั้ง genome",
+     "source_key": "เฉลย: Pharmacogenetics = ยีนเดี่ยวที่มีผลต่อการตอบสนองต่อยา · Pharmacogenomics = ทั้ง genome"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "KF49",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "KF49-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [
+    "pharmacology"
+   ],
+   "source": "claude-mcp",
+   "audit_note": "ไฟล์เฉลยไม่มีคำตอบข้อนี้ AI เติมให้"
+  },
+  {
+   "id": "BIO-49-KF-007",
+   "block": "BIO",
+   "cohort": 49,
+   "n": 7,
+   "type": "KF",
+   "case": "Antibiotics อย่างน้อย 2 ชื่อ และ PK/PD parameter ของแต่ละ pattern",
+   "items": [
+    {
+     "id": "7.1",
+     "prompt": "Type 1: Concentration-dependent killing + prolonged persistent effect",
+     "format": "short",
+     "accepted": [
+      "cmax",
+      "aminoglycoside",
+      "fluoroquinolone"
+     ],
+     "key_text": "Cmax/MIC — Aminoglycosides, Fluoroquinolones",
+     "source_key": "เฉลย: Cmax/MIC — Aminoglycosides, Fluoroquinolones"
+    },
+    {
+     "id": "7.2",
+     "prompt": "Type 2: Time-dependent killing + minimum persistent effect",
+     "format": "short",
+     "accepted": [
+      "t>mic",
+      "t/mic",
+      "lactam",
+      "erythromycin",
+      "clindamycin"
+     ],
+     "key_text": "T>MIC — β-lactams, Erythromycin, Clindamycin",
+     "source_key": "เฉลย: T>MIC — β-lactams, Erythromycin, Clindamycin"
+    },
+    {
+     "id": "7.3",
+     "prompt": "Type 3: Time-dependent killing + prolonged persistent effect",
+     "format": "short",
+     "accepted": [
+      "auc",
+      "linezolid",
+      "azithromycin",
+      "doxycycline",
+      "vancomycin"
+     ],
+     "key_text": "AUC/MIC — Linezolid, Azithromycin, Doxycycline, Vancomycin",
+     "source_key": "เฉลย: AUC/MIC — Linezolid, Azithromycin, Doxycycline, Vancomycin"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF49",
+     "pages": [
+      3
+     ]
+    },
+    {
+     "paper": "KF49-KEY",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [
+    "pharmacology"
+   ],
+   "source": "claude-mcp",
+   "audit_note": "เฉลยลายมือ ตัวสะกดบางตัวอ่านยาก"
+  },
+  {
+   "id": "BIO-49-KF-008",
+   "block": "BIO",
+   "cohort": 49,
+   "n": 8,
+   "type": "KF",
+   "case": "Bioequivalence",
+   "items": [
+    {
+     "id": "8.1",
+     "prompt": "จงบอก parameter ของ bioequivalence",
+     "format": "short",
+     "accepted": [
+      "cmax",
+      "auc"
+     ],
+     "key_text": "Cmax, AUC (90% CI อยู่ในช่วง 80–125%)",
+     "source_key": "เฉลย: Cmax, AUC (90% CI อยู่ในช่วง 80–125%)",
+     "keywords_all": [
+      "cmax",
+      "auc"
+     ]
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "KF49",
+     "pages": [
+      3
+     ]
+    },
+    {
+     "paper": "KF49-KEY",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [
+    "pharmacology"
+   ],
+   "source": "claude-mcp",
+   "audit_note": "ไฟล์เฉลยไม่มีคำตอบข้อนี้ AI เติมให้"
+  },
+  {
+   "id": "BIO-49-KF-009",
+   "block": "BIO",
+   "cohort": 49,
+   "n": 9,
+   "type": "KF",
+   "case": "Bioavailability = 70%, t½, plasma concentration, volume of distribution (ตัวเลขในโจทย์ไม่ครบ) ให้ยา IV",
+   "items": [
+    {
+     "id": "9.1",
+     "prompt": "สูตรหา loading dose",
+     "format": "short",
+     "accepted": [
+      "vd",
+      "cp",
+      "css",
+      "/"
+     ],
+     "key_text": "Loading dose = (Vd × Css) / F",
+     "source_key": "เฉลย: Loading dose = (Vd × Css) / F"
+    },
+    {
+     "id": "9.2",
+     "prompt": "สูตรหา maintenance dose",
+     "format": "short",
+     "accepted": [
+      "cl",
+      "css",
+      "tau",
+      "interval"
+     ],
+     "key_text": "Maintenance dose rate = (CL × Css) / F",
+     "source_key": "เฉลย: Maintenance dose rate = (CL × Css) / F"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "KF49",
+     "pages": [
+      3
+     ]
+    },
+    {
+     "paper": "KF49-KEY",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [
+    "pharmacology"
+   ],
+   "source": "claude-mcp",
+   "audit_note": "โจทย์จำตัวเลขไม่ครบ AI ใส่เป็นสูตร"
+  },
+  {
+   "id": "BIO-49-KF-010",
+   "block": "BIO",
+   "cohort": 49,
+   "n": 10,
+   "type": "KF",
+   "case": "เติมคำลงในช่องว่าง: ผลของ muscarinic agonist และ antagonist ต่ออวัยวะ",
+   "items": [
+    {
+     "id": "10.1",
+     "prompt": "รูม่านตา — agonist",
+     "format": "short",
+     "accepted": [
+      "miosis"
+     ],
+     "key_text": "Miosis (รูม่านตาหด)",
+     "source_key": "เฉลย: Miosis (รูม่านตาหด)"
+    },
+    {
+     "id": "10.2",
+     "prompt": "รูม่านตา — antagonist",
+     "format": "short",
+     "accepted": [
+      "mydriasis"
+     ],
+     "key_text": "Mydriasis (รูม่านตาขยาย) + ปรับโฟกัสไม่ได้ (impaired accommodation)",
+     "source_key": "เฉลย: Mydriasis (รูม่านตาขยาย) + ปรับโฟกัสไม่ได้ (impaired accommodation)"
+    },
+    {
+     "id": "10.3",
+     "prompt": "หัวใจ — agonist",
+     "format": "short",
+     "accepted": [
+      "bradycardia"
+     ],
+     "key_text": "Bradycardia (atrial contractility ↓)",
+     "source_key": "เฉลย: Bradycardia (atrial contractility ↓)"
+    },
+    {
+     "id": "10.4",
+     "prompt": "หัวใจ — antagonist",
+     "format": "short",
+     "accepted": [
+      "tachycardia"
+     ],
+     "key_text": "Tachycardia",
+     "source_key": "เฉลย: Tachycardia"
+    },
+    {
+     "id": "10.5",
+     "prompt": "หลอดเลือด — agonist",
+     "format": "short",
+     "accepted": [
+      "vasodilation"
+     ],
+     "key_text": "Vasodilation",
+     "source_key": "เฉลย: Vasodilation"
+    },
+    {
+     "id": "10.6",
+     "prompt": "หลอดเลือด — antagonist",
+     "format": "short",
+     "accepted": [
+      "vasoconstriction",
+      "ไม่เปลี่ยน"
+     ],
+     "key_text": "Vasoconstriction (ตามเฉลยลายมือ)",
+     "source_key": "เฉลย: Vasoconstriction (ตามเฉลยลายมือ)"
+    },
+    {
+     "id": "10.7",
+     "prompt": "กระเพาะปัสสาวะ — agonist",
+     "format": "short",
+     "accepted": [
+      "contraction"
+     ],
+     "key_text": "Contraction",
+     "source_key": "เฉลย: Contraction"
+    },
+    {
+     "id": "10.8",
+     "prompt": "กระเพาะปัสสาวะ — antagonist",
+     "format": "short",
+     "accepted": [
+      "relaxation"
+     ],
+     "key_text": "Relaxation",
+     "source_key": "เฉลย: Relaxation"
+    },
+    {
+     "id": "10.9",
+     "prompt": "หลอดลม — agonist",
+     "format": "short",
+     "accepted": [
+      "bronchoconstriction"
+     ],
+     "key_text": "Bronchoconstriction",
+     "source_key": "เฉลย: Bronchoconstriction"
+    },
+    {
+     "id": "10.10",
+     "prompt": "หลอดลม — antagonist",
+     "format": "short",
+     "accepted": [
+      "bronchodilation"
+     ],
+     "key_text": "Bronchodilation",
+     "source_key": "เฉลย: Bronchodilation"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF49",
+     "pages": [
+      4
+     ]
+    },
+    {
+     "paper": "KF49-KEY",
+     "pages": [
+      4
+     ]
+    }
+   ],
+   "tags": [
+    "pharmacology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "BIO-49-KF-011",
+   "block": "BIO",
+   "cohort": 49,
+   "n": 11,
+   "type": "KF",
+   "case": "เติมคำลงในช่องว่าง: ข้อดี/ข้อเสียของ sublingual และ inhalation",
+   "items": [
+    {
+     "id": "11.1",
+     "prompt": "ข้อดีของ sublingual และ inhalation",
+     "format": "short",
+     "accepted": [
+      "first-pass",
+      "first pass",
+      "เร็ว",
+      "rapid",
+      "local",
+      "low dose",
+      "ขนาดต่ำ",
+      "systemic"
+     ],
+     "key_text": "หลีกเลี่ยง first-pass metabolism · ใช้ขนาดต่ำ · ออกฤทธิ์เร็ว (sublingual) · ออกฤทธิ์ที่ทางเดินหายใจโดยตรง ผลข้างเคียงทางระบบน้อย (inhalation)",
+     "source_key": "เฉลย: หลีกเลี่ยง first-pass metabolism · ใช้ขนาดต่ำ · ออกฤทธิ์เร็ว (sublingual) · ออกฤทธิ์ที่ทางเดินหายใจโดยตรง ผลข้างเคียงทางระบบน้อย (inhalation)"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "KF49",
+     "pages": [
+      4
+     ]
+    },
+    {
+     "paper": "KF49-KEY",
+     "pages": [
+      4
+     ]
+    }
+   ],
+   "tags": [
+    "pharmacology"
+   ],
+   "source": "claude-mcp",
+   "audit_note": "เฉลยลายมืออ่านบางส่วน AI สรุปข้อดี"
+  },
+  {
+   "id": "BIO-49-KF-012",
+   "block": "BIO",
+   "cohort": 49,
+   "n": 12,
+   "type": "KF",
+   "case": "การให้ยาต่อไปนี้ไม่เหมาะสมตามหลัก RDU อย่างไร",
+   "items": [
+    {
+     "id": "12.1",
+     "prompt": "ใช้ amoxicillin รักษาอาการเจ็บคอใน common cold",
+     "format": "short",
+     "accepted": [
+      "ไวรัส",
+      "virus",
+      "viral",
+      "ดื้อยา",
+      "resistance"
+     ],
+     "key_text": "Common cold ส่วนใหญ่เกิดจากไวรัส antibiotic ไม่มีประโยชน์และเสี่ยงต่อการดื้อยา",
+     "source_key": "เฉลย: Common cold ส่วนใหญ่เกิดจากไวรัส antibiotic ไม่มีประโยชน์และเสี่ยงต่อการดื้อยา"
+    },
+    {
+     "id": "12.2",
+     "prompt": "ให้ Tylenol (paracetamol) 10 เม็ดแก้ปวด แก้ไข้",
+     "format": "short",
+     "accepted": [
+      "ขนาด",
+      "เกิน",
+      "hepatotoxic",
+      "ตับ",
+      "overdose",
+      "dose"
+     ],
+     "key_text": "ขนาดเกินที่แนะนำ (ปกติสูงสุด 4 g/วัน) เสี่ยงพิษต่อตับ",
+     "source_key": "เฉลย: ขนาดเกินที่แนะนำ (ปกติสูงสุด 4 g/วัน) เสี่ยงพิษต่อตับ"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "KF49",
+     "pages": [
+      4
+     ]
+    },
+    {
+     "paper": "KF49-KEY",
+     "pages": [
+      4
+     ]
+    }
+   ],
+   "tags": [
+    "pharmacology"
+   ],
+   "source": "claude-mcp",
+   "audit_note": "ไฟล์เฉลยไม่มีคำตอบข้อนี้ AI เติมให้"
+  },
+  {
+   "id": "BIO-49-KF-013",
+   "block": "BIO",
+   "cohort": 49,
+   "n": 13,
+   "type": "KF",
+   "case": "Drug interaction",
+   "items": [
+    {
+     "id": "13.1",
+     "prompt": "Causes of drug interactions",
+     "format": "short",
+     "accepted": [
+      "polypharmacy",
+      "หลายคน",
+      "หลายชนิด",
+      "หลายโรค"
+     ],
+     "key_text": "Polypharmacy — ผู้ป่วยมีหลายโรค → พบแพทย์หลายคน/ซื้อยาจากเภสัชกรหลายคน → ได้ยาหลายชนิด",
+     "source_key": "เฉลย: Polypharmacy — ผู้ป่วยมีหลายโรค → พบแพทย์หลายคน/ซื้อยาจากเภสัชกรหลายคน → ได้ยาหลายชนิด"
+    },
+    {
+     "id": "13.2",
+     "prompt": "Effects of drug-drug interaction หรือ drug-food interaction",
+     "format": "short",
+     "accepted": [
+      "เพิ่ม",
+      "ลด",
+      "toxicity",
+      "พิษ",
+      "effect"
+     ],
+     "key_text": "เปลี่ยนระดับยา/ฤทธิ์ของยา (เพิ่มหรือลดผล) เกิดพิษหรือการรักษาล้มเหลว",
+     "source_key": "เฉลย: เปลี่ยนระดับยา/ฤทธิ์ของยา (เพิ่มหรือลดผล) เกิดพิษหรือการรักษาล้มเหลว"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "KF49",
+     "pages": [
+      5
+     ]
+    },
+    {
+     "paper": "KF49-KEY",
+     "pages": [
+      5
+     ]
+    }
+   ],
+   "tags": [
+    "pharmacology"
+   ],
+   "source": "claude-mcp",
+   "audit_note": "เฉลยเฉพาะข้อ 13.1; ข้อ 13.2 AI เติม"
+  }
+ ]
+}

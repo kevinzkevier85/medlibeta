@@ -1,14 +1,19 @@
 # HANDOFF — กระดาษส่งต่องาน (ยื่นให้ AI ตัวไหนก็ได้ อ่านใบนี้ใบเดียวแล้วทำต่อได้)
 > งานที่ทำค้างล่าสุด: ดู branch ที่ push ล่าสุด `git branch -r --sort=-committerdate | head -3` แล้ว `git log -5 --format=%B <branch>` — บรรทัด `ถัดไป:` คือขั้นต่อไป
-อัปเดต: 2026-11-13 (v0.41.1 · Immunity/Respiratory/KUB merge เข้า main แล้ว ไม่มี PR ค้าง) · เขียนโดย Claude (ผู้ใช้: Finn)
+อัปเดต: 2026-11-13 (v0.42.0 · Immunity/Respiratory/KUB merge เข้า main แล้ว ไม่มี PR ค้าง) · เขียนโดย Claude (ผู้ใช้: Finn)
 
-## 0. บล็อก Immunity (IMM) — ครบทั้งบล็อกแล้ว, merge แล้ว (PR #78–#81, Drive `preclinic/2/immunity`)
+## 0. บล็อก Biomed (BIO, Pharmacology) — ทำแล้ว (Drive `preclinic/2/biomed`)
+- block id `BIO` · inventory `bio_<รุ่น>_<MCQ|KF>` 10 ชุด · ชุดรวม 46-48 ใช้ `medlib_cohort: 48`
+- MCQ ✅ 52 (44 ข้อ) · 51 (20) · 49 (9) · 46-48 (40) · 50 (51 ข้อ ไม่มีเฉลย AI draft) — ข้อสอบรุ่น 49–51 เป็น "ข้อสอบจำ" ข้อที่ไม่มีตัวเลือก/เฉลยข้าม · ข้อที่ตัวเลือกไม่ครบ AI เติมครบ 5 (`ai_choices`)
+- KF ✅ 52 (19) · 51 (8) · 49 (13) · 46-48 (20 · MED 46 ข้อ 22–28, 47 ข้อ 22–28, 48 ข้อ 21–26) · 50 (22 ไม่มีเฉลย AI draft)
+- ผู้ตรวจควรดู: MCQ 52 ข้อ 43 (ไฟล์เฉลย alprostadil vs AI ibuprofen), ข้อ 10, 51; MCQ 49 ข้อ 20 vs MCQ 51 ข้อ 64 (เฉลยต่างกัน); KF 46-48 ข้อ 8 (sweat gland), ข้อ 13 (bradycardia β1 vs M2)
+- ไม่มีบล็อกอื่นค้าง: ที่เหลือใน Drive `preclinic/2` = commed-1, commed-2, community-dev, health-system, medprof-1 (ทำเมื่อผู้ใช้สั่ง)
+
+## 0.1 บล็อก Immunity (IMM) — ครบทั้งบล็อกแล้ว, merge แล้ว (PR #78–#81, Drive `preclinic/2/immunity`)
 - block id `IMM` · inventory `imm_<รุ่น>_<MCQ|KF|OSPE>` 25 ชุด · ชุดรวม (41-43, 40-43) ใช้ `medlib_cohort: 43`
 - MCQ ✅ 41-43, 44–52 · MCQ 48 = AI ตอบเอง 112/123 ข้อ draft (ข้าม 14, 32, 37, 48, 65, 73, 80, 85, 86, 87, 115 ที่โจทย์/ภาพไม่ชัด; ข้อ 25/39/96 ไม่มั่นใจ) · ⛔ MCQ 40 ข้ามทั้งชุด (โน้ตจำ ไม่มีตัวเลือก)
 - KF ✅ 9 ชุด (47 AI draft; 40-43, 48–49 บางข้อ draft) · OSPE ✅ 5 ชุด (40-43 และ 47 draft; 40-43 ไม่มีรูป)
 - ข้อ MCQ ที่ต้นฉบับขัดกับ AI คงตามต้นฉบับ + ความเห็น AI ใน option_why (ค้น "AI เห็นว่า")
-- ค้างเล็ก: imm_47_MCQ ยังมีลายน้ำ "-VICHAKAN MED47-" ติดท้ายตัวเลือกบางข้อ (48 ล้างแล้วใน parsed.json) → ล้างแล้ว build 47 ใหม่ได้
-- เครื่องมือ: `parse_mcq.py`/`parse_key.py` รองรับเลขข้อกระโดดถึง +60 · ชุดไม่มีเฉลย: key.json = `{"_note":…}` + blind.json (AI) → build_work ติด `drafted` เอง · เฉลยลายมือ/ไฮไลต์ดู `auditor/raw/<ชุด>/key_pNNN.png`
 
 ## 1. บล็อก Respiratory (RESP) — ครบทุกชุดแล้ว (Drive `preclinic/2/respiratory`)
 - (merge แล้ว PR #80) block id `RESP` · inventory `resp_<รุ่น>_<MCQ|KF|OSPE>` · `data/blocks/RESP/`
@@ -17,16 +22,7 @@
 
 ## 2. บล็อก KUB and Repro — merge แล้ว (PR #38)
 - branch **`finn-urinary-block`** · PR #38 · รวม main แล้ว (v0.32.0) · block id `KUB` (inventory `kub_<รุ่น>_<MCQ|KF|OSPE>`, 27 ชุด) · `data/blocks/KUB/`
-- สถานะรายชุด:
-  | ชุด | สถานะ |
-  |---|---|
-  | MCQ 44, 49, 50, 51, 52 | ✅ ครบ 318 ข้อ เฉลยแบบปี 52 แล้ว |
-  | MCQ 42-43 | ✅ ครบ 145 ข้อ (ข้อ 7 ข้าม) แบบฟอร์มปี 52 · ข้อ 26/37/93/144/145 AI ร่างเฉลย |
-  | MCQ 45 | ✅ 67 ข้อ AI ร่างเฉลยทั้งชุด (ข้าม 17, 28, 69) แบบปี 52 |
-  | MCQ 46 | ✅ 71 ข้อ AI ร่างเฉลย (ข้าม 21) แบบปี 52 |
-  | MCQ 47, 48 | ✅ 73 + 48 ข้อ AI ร่างเฉลยแบบปี 52 (ข้าม 47: 3, 15 · 48: 1, 13, 16, 20) · 48 ใช้ `--number-own-line --fix-glyphs` + เติมข้อ 1 มือใน parsed.json |
-  | KF ×10 | ✅ ครบ (42-43, 45, 47 ไม่มีเฉลย → AI ร่าง draft · 44, 46, 48–52 เฉลยลายมือ/พิมพ์) · 49, 50 ผู้เฉลยเตือน "ใช้วิจารณญาณ" |
-  | OSPE ×7 | ✅ ครบ 124 สถานี (48, 50, 51, 52 มีเฉลย · 42-43, 44, 46 ไม่มีเฉลย → AI ร่างเฉลยครบทุกสถานี) · ผู้ตรวจควรยืนยัน draft |
+- สถานะ: MCQ ครบ 10 ชุดแบบปี 52 (42-43/45–48 AI ร่างเฉลย) · KF ครบ 10 ชุด · OSPE ครบ 7 ชุด 124 สถานี (42-43, 44, 46 ไม่มีเฉลย AI ร่าง) — ผู้ตรวจควรยืนยัน draft
 - เมื่อครบบล็อก: version ใหม่ + PROGRESS.md (เพิ่มส่วน KUB) + อัปเดตไฟล์นี้
 - ตัวช่วย: `auditor/tools/parse_key.py` อ่านไฮไลต์ ส้ม/ฟ้า ได้ · เฉลยขีด/วงกลมลายมือต้องอ่านด้วยตา · ข้อที่ต้นฉบับเลือก 2 ตัว → `auditor/data/decisions.json` ใส่ `also_accept`
 - เขียนเฉลยแบบฟอร์มปี 52 (ดู CLAUDE.md "แบบฟอร์มเฉลย MCQ")
