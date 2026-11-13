@@ -10,7 +10,7 @@ from pathlib import Path
 
 AUD = Path(__file__).resolve().parents[1]
 Q_START = re.compile(r"^\s*(\d{1,3})\s*[.)]\s*(.*)$")
-OPT = re.compile(r"^\s*([A-Ea-e])\s*[.)]\s*(.*)$")  # older cohorts use a. b. c.
+OPT = re.compile(r"^\s*([A-Ea-eกขคงจ])\s*[.)]\s*(.*)$")  # older cohorts use a. b. c.
 HEADER = re.compile(r"^VICHAKARN MED PSU \d+$", re.I)  # running page header of this archive
 # Instruction box printed inside page 1 of later cohorts ("1. ข้อสอบ MCQ มีทั้งหมด 75 ข้อ", "2. นักศึกษามีเวลา…").
 # Its numbered lines would otherwise be read as questions 2, 3, …

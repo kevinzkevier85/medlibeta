@@ -14,7 +14,7 @@ from extract import fix_zero_bbox
 AUD = Path(__file__).resolve().parents[1]
 ZOOM = 2.0
 Q_START = re.compile(r"^\s*(\d{1,3})\s*[.)]")
-OPT = re.compile(r"^\s*([A-Ea-e])\s*[.)]?\s*(\S.*)?$")
+OPT = re.compile(r"^\s*([A-Ea-eกขคงจ])\s*[.)]?\s*(\S.*)?$")
 HEADER = re.compile(r"^VICHAKARN MED PSU", re.I)
 PINK_MIN = 0.12  # fraction of pink pixels in an option box that counts as highlighted
 
@@ -28,8 +28,9 @@ def is_pink(r, g, b):
     blue = b >= 245 and 170 <= r <= 210 and 200 <= g <= 232                      # light-blue pill highlight (KUB 44)
     green = g >= 225 and r <= 190 and b <= 190 and g - r >= 45 and g - b >= 45  # mint-green pill highlight (Respiratory 52)
     teal = 150 <= r <= 190 and 200 <= g <= 230 and 180 <= b <= 215 and g - r >= 30 and 8 <= g - b <= 30  # pale teal pill highlight (Respiratory 49)
+    cyan = b >= 250 and 150 <= r <= 185 and 230 <= g <= 250                    # bright-cyan pill highlight (Commed I 52)
     gray = 210 <= r <= 222 and max(r, g, b) - min(r, g, b) <= 2   # neutral grey highlight band (Respiratory 47)
-    return pink or lime or salmon or yellow or orange or blue or green or teal or gray
+    return pink or lime or salmon or yellow or orange or blue or green or teal or cyan or gray
 
 
 def pink_fraction(pix, rect):
@@ -107,7 +108,7 @@ def parse(set_id, bare_numbers=False):
                 continue
             mo = OPT.match(txt)
             if mo and rect.x0 < 200:
-                letter = mo.group(1).upper()
+                letter = {"ก": "A", "ข": "B", "ค": "C", "ง": "D", "จ": "E"}.get(mo.group(1), mo.group(1).upper())
                 box = pymupdf.Rect(rect.x0 - 6, rect.y0, rect.x1 + 6, rect.y1)
                 f = pink_fraction(pix, box)
                 if any(abs((r.y0 + r.y1) / 2 - (rect.y0 + rect.y1) / 2) < 8 and rect.x0 - 10 <= (r.x0 + r.x1) / 2 <= rect.x0 + 16 for r in rings):
