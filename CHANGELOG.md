@@ -3,6 +3,9 @@
 ทุกเวอร์ชันบันทึกที่นี่ และใน `version.json` (หน้าเว็บแสดงจาก `version.json`)
 เลขเวอร์ชัน: `MAJOR.MINOR.PATCH` — เพิ่มฟีเจอร์ = MINOR, แก้บั๊ก = PATCH
 
+## v0.44.0 · 2026-11-13 · Commed I MCQ 48 + Commed II KF 47
+- CM1 MCQ 48 (22 ข้อ เฉลยลายมือ) · CM2 KF 47 (9 ข้อ)
+
 ## v0.43.0 · 2026-11-13 · บล็อกใหม่ Commed I / Commed II / Community Health Development
 - MCQ 52 ของ CM1 (29), CM2 (14), CD (24) + CM2 MCQ 48 (14)
 - เครื่องมืออ่านเฉลยไฮไลต์ฟ้าสว่าง + ตัวเลือก ก-จ
