@@ -1,6 +1,6 @@
 # REVIEW — รายการรอผู้ใช้ตัดสิน
 
-ทั้งหมด 1116 รายการ
+ทั้งหมด 1197 รายการ
 วิธีตอบ: พิมพ์ในแชทเป็นบรรทัด เช่น `end_52_MCQ_027: คงเดิม` / `end_52_MCQ_063: C` / `end_52_MCQ_046: ตรวจใหม่`
 Claude จะบันทึกลง `auditor/data/decisions.json` แล้ว build ใหม่
 
@@ -59,6 +59,87 @@ Claude จะบันทึกลง `auditor/data/decisions.json` แล้ว
 | bio_50_MCQ_063 | None | A | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
 | bio_50_MCQ_064 | None | B | low | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
 | bio_52_MCQ_043 | A | D | high | เฉลยขัดกับ AI |   |
+| cvs_48_MCQ_002 | None | D | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| cvs_48_MCQ_003 | None | E | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| cvs_48_MCQ_004 | None | E | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| cvs_48_MCQ_005 | None | C | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| cvs_48_MCQ_006 | None | C | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| cvs_48_MCQ_007 | None | D | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| cvs_48_MCQ_008 | None | D | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| cvs_48_MCQ_009 | None | C | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| cvs_48_MCQ_010 | None | A | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| cvs_48_MCQ_012 | None | B | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| cvs_48_MCQ_013 | None | C | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| cvs_48_MCQ_014 | None | B | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| cvs_48_MCQ_015 | None | E | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| cvs_48_MCQ_016 | None | B | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| cvs_48_MCQ_017 | None | D | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| cvs_48_MCQ_018 | None | E | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| cvs_48_MCQ_020 | None | A | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| cvs_48_MCQ_021 | None | B | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| cvs_48_MCQ_022 | None | A | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| cvs_48_MCQ_024 | None | C | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| cvs_48_MCQ_025 | None | B | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| cvs_48_MCQ_026 | None | C | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| cvs_48_MCQ_028 | None | A | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| cvs_48_MCQ_029 | None | D | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| cvs_48_MCQ_030 | None | E | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| cvs_48_MCQ_031 | None | E | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| cvs_48_MCQ_033 | None | C | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| cvs_48_MCQ_034 | None | B | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| cvs_48_MCQ_035 | None | D | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| cvs_48_MCQ_036 | None | E | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| cvs_48_MCQ_037 | None | A | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| cvs_48_MCQ_038 | None | B | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| cvs_48_MCQ_039 | None | E | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| cvs_48_MCQ_040 | None | D | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| cvs_48_MCQ_041 | None | C | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| cvs_48_MCQ_042 | None | A | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| cvs_48_MCQ_043 | None | E | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| cvs_48_MCQ_044 | None | A | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| cvs_48_MCQ_047 | None | A | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| cvs_48_MCQ_048 | None | A | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| cvs_48_MCQ_050 | None | D | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| cvs_48_MCQ_051 | None | B | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| cvs_48_MCQ_052 | None | E | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| cvs_48_MCQ_053 | None | E | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| cvs_48_MCQ_054 | None | E | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| cvs_48_MCQ_056 | None | A | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| cvs_48_MCQ_057 | None | B | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| cvs_48_MCQ_058 | None | D | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| cvs_48_MCQ_059 | None | E | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| cvs_48_MCQ_061 | None | C | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| cvs_48_MCQ_062 | None | B | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| cvs_48_MCQ_063 | None | C | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| cvs_48_MCQ_065 | None | A | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| cvs_48_MCQ_067 | None | E | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| cvs_48_MCQ_069 | None | A | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| cvs_48_MCQ_070 | None | E | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| cvs_48_MCQ_071 | None | E | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| cvs_48_MCQ_072 | None | C | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| cvs_48_MCQ_073 | None | E | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| cvs_48_MCQ_074 | None | B | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| cvs_48_MCQ_075 | None | C | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| cvs_48_MCQ_076 | None | E | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| cvs_48_MCQ_077 | None | B | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| cvs_48_MCQ_078 | None | E | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| cvs_48_MCQ_081 | None | B | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| cvs_48_MCQ_082 | None | C | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| cvs_48_MCQ_084 | None | E | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| cvs_48_MCQ_085 | None | C | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| cvs_48_MCQ_086 | None | B | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| cvs_48_MCQ_087 | None | E | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| cvs_48_MCQ_088 | None | E | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| cvs_48_MCQ_089 | None | D | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| cvs_48_MCQ_090 | None | B | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| cvs_48_MCQ_091 | None | D | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| cvs_48_MCQ_092 | None | B | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| cvs_48_MCQ_093 | None | B | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| cvs_48_MCQ_094 | None | E | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| cvs_48_MCQ_095 | None | B | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| cvs_48_MCQ_097 | None | B | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| cvs_48_MCQ_098 | None | E | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| cvs_48_MCQ_099 | None | B | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
 | end_42-43_MCQ_001 | E | D | medium | เฉลยขัดกับ AI | เฉลยต้นฉบับวง E (vesicle) — การตัด prohormone เริ่มใน trans-Golgi และต่อเนื่องใน secretory vesicle; lecture/BRS ใช้คำว่า Golgi AI เลือก D อาจนับถูกทั้ง D และ E — D: trans-Golgi (lecture); E: secretory vesicle (USMLE); A: ไม่ใช่; B: สร้าง steroid; C: ตัด signal peptide |
 | end_42-43_MCQ_005 | None | None | None | AI เขียนข้อนี้ขึ้นใหม่จากโน้ตความจำในต้นฉบับ |  — A: เป็นกลไกของ peptide hormone; B: ไม่ใช่; C: เป็นของ insulin/growth factor; D: ถูก (ตรงกับคำตอบในเฉลยต้นฉบับ); E: เป็นของ Gq |
 | end_42-43_MCQ_023 | E | B | high | เฉลยขัดกับ AI | เฉลยต้นฉบับขีดช้อยส์ E (PNMT) แล้วเขียนว่า plasma/urine catecholamine/metanephrine/VMA (ไม่มีในช้อยส์) — chromogranin A (B) เป็น biomarker ของ neuroendocrine tumor รวม pheochromocytoma — B: ถูก — chromogranin A; E: เป็นเอนไซม์ ไม่ใช่ biomarker ที่ใช้; A: MTC; C: DOC เป็นของ 11β-OHD; D: เอนไซม์ใน medulla |
