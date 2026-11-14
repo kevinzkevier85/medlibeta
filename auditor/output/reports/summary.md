@@ -2,6 +2,7 @@
 
 | set_id | ข้อ | agree | disagree | drafted | unverified | ai_gen | skipped | needs_review |
 |---|---|---|---|---|---|---|---|---|
+| cvs_44_MCQ | 34 | 33 | 0 | 0 | 0 | 0 | 1 | 0 |
 | cvs_45_MCQ | 22 | 16 | 0 | 0 | 0 | 0 | 6 | 0 |
 | cvs_46_MCQ | 54 | 33 | 0 | 0 | 0 | 0 | 21 | 0 |
 | cvs_47_MCQ | 57 | 46 | 0 | 0 | 0 | 0 | 11 | 0 |
