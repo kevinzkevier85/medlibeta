@@ -1,0 +1,883 @@
+{
+ "meta": {
+  "set_id": "47_KF",
+  "block": "CVS",
+  "cohort": 47,
+  "type": "KF",
+  "title": "KF Cardiovascular System · Med PSU 47",
+  "time_limit_min": 120,
+  "generated_by": "auditor/tools/build_kf.py from auditor/data/work/cvs_47_KF.kf.json — do not edit by hand"
+ },
+ "questions": [
+  {
+   "id": "CVS-47-KF-001",
+   "block": "CVS",
+   "cohort": 47,
+   "n": 1,
+   "type": "KF",
+   "topic": "physiology",
+   "case": "นักศึกษาวิชาทหารหน้ามืดหลังยืนเข้าแถวกลางแดด 1 ชม. จับนอนราบแล้วอาการดีขึ้น",
+   "items": [
+    {
+     "id": "1.1",
+     "prompt": "กลไกทางสรีรวิทยาของอาการหน้ามืด",
+     "format": "short",
+     "accepted": [
+      "venous return",
+      "co"
+     ],
+     "keywords_all": [
+      "venous return"
+     ],
+     "key_text": "ยืนนาน + แดด → เลือดคั่งที่ขา/ผิวหนังขยาย → venous return ↓ → SV ↓ → CO ↓ → BP ↓ → เลือดไปสมองลดลง",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    },
+    {
+     "id": "1.2",
+     "prompt": "ทำไมนอนราบแล้วดีขึ้น",
+     "format": "short",
+     "accepted": [
+      "venous return"
+     ],
+     "keywords_all": [
+      "venous return"
+     ],
+     "key_text": "ลดแรงโน้มถ่วง → venous return ↑ → CO ↑ → BP ↑ → cerebral perfusion ↑",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    },
+    {
+     "id": "1.3a",
+     "prompt": "Parasympathetic activity",
+     "format": "short",
+     "accepted": [
+      "ลด",
+      "decrease"
+     ],
+     "keywords_all": [
+      "ลด"
+     ],
+     "key_text": "ลดลง",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    },
+    {
+     "id": "1.3b",
+     "prompt": "Heart rate",
+     "format": "short",
+     "accepted": [
+      "เพิ่ม",
+      "increase"
+     ],
+     "keywords_all": [
+      "เพิ่ม"
+     ],
+     "key_text": "เพิ่มขึ้น",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    },
+    {
+     "id": "1.3c",
+     "prompt": "Heart contractility",
+     "format": "short",
+     "accepted": [
+      "เพิ่ม",
+      "increase"
+     ],
+     "keywords_all": [
+      "เพิ่ม"
+     ],
+     "key_text": "เพิ่มขึ้น",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    },
+    {
+     "id": "1.3d",
+     "prompt": "Total peripheral resistance",
+     "format": "short",
+     "accepted": [
+      "เพิ่ม",
+      "increase"
+     ],
+     "keywords_all": [
+      "เพิ่ม"
+     ],
+     "key_text": "เพิ่มขึ้น",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    },
+    {
+     "id": "1.4a",
+     "prompt": "Blood flow ไปยัง Kidney ขณะวิ่ง",
+     "format": "short",
+     "accepted": [
+      "ลด",
+      "decrease"
+     ],
+     "keywords_all": [
+      "ลด"
+     ],
+     "key_text": "ลดลง",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    },
+    {
+     "id": "1.4b",
+     "prompt": "Blood flow ไปยัง Brain ขณะวิ่ง",
+     "format": "short",
+     "accepted": [
+      "เท่าเดิม",
+      "เท่า"
+     ],
+     "keywords_all": [
+      "เท่า"
+     ],
+     "key_text": "เท่าเดิม",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    },
+    {
+     "id": "1.4c",
+     "prompt": "Blood flow ไปยัง Heart ขณะวิ่ง",
+     "format": "short",
+     "accepted": [
+      "เพิ่ม",
+      "increase"
+     ],
+     "keywords_all": [
+      "เพิ่ม"
+     ],
+     "key_text": "เพิ่มขึ้น",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    },
+    {
+     "id": "1.4d",
+     "prompt": "Blood flow ไปยัง Muscle ขณะวิ่ง",
+     "format": "short",
+     "accepted": [
+      "เพิ่ม",
+      "increase"
+     ],
+     "keywords_all": [
+      "เพิ่ม"
+     ],
+     "key_text": "เพิ่มขึ้น",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "KF47",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "CVS-47-KF-002",
+   "block": "CVS",
+   "cohort": 47,
+   "n": 2,
+   "type": "KF",
+   "topic": "physiology",
+   "case": "นางรัศมี 25 ปี หนัก 70 kg สูง 155 cm รอบเอว 80 cm รอบสะโพก 95 cm",
+   "items": [
+    {
+     "id": "2.1",
+     "prompt": "หา BMI พร้อมวิธีคิดและหน่วย",
+     "format": "short",
+     "accepted": [
+      "29"
+     ],
+     "keywords_all": [
+      "29"
+     ],
+     "key_text": "70 / (1.55)² = 29.1 kg/m²",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    },
+    {
+     "id": "2.2",
+     "prompt": "แปลผล BMI ตามเกณฑ์ WHO",
+     "format": "short",
+     "accepted": [
+      "overweight"
+     ],
+     "keywords_all": [
+      "overweight"
+     ],
+     "key_text": "Overweight (pre-obese, 25–29.9)",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    },
+    {
+     "id": "2.3",
+     "prompt": "หา waist–hip ratio",
+     "format": "short",
+     "accepted": [
+      "0.84"
+     ],
+     "keywords_all": [
+      "0.84"
+     ],
+     "key_text": "80/95 = 0.84",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    },
+    {
+     "id": "2.4",
+     "prompt": "แปลผล WHR",
+     "format": "short",
+     "accepted": [
+      "ปกติ",
+      "normal"
+     ],
+     "keywords_all": [
+      "ปกติ"
+     ],
+     "key_text": "หญิง: < 0.85 = ปกติ (เกณฑ์ WHO เสี่ยงเมื่อ ≥ 0.85)",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    },
+    {
+     "id": "2.5",
+     "prompt": "เสี่ยงโรคอะไร 2 โรค",
+     "format": "short",
+     "accepted": [
+      "diabetes",
+      "hypertension"
+     ],
+     "keywords_all": [
+      "diabetes"
+     ],
+     "key_text": "Type 2 diabetes mellitus, Hypertension/ cardiovascular disease",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    },
+    {
+     "id": "2.6",
+     "prompt": "HR max ขณะออกกำลัง",
+     "format": "short",
+     "accepted": [
+      "195"
+     ],
+     "keywords_all": [
+      "195"
+     ],
+     "key_text": "220 − 25 = 195 bpm",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    },
+    {
+     "id": "2.7",
+     "prompt": "Target zone HR",
+     "format": "short",
+     "accepted": [
+      "117",
+      "166"
+     ],
+     "keywords_all": [
+      "166"
+     ],
+     "key_text": "60–85% ของ HR max = 117–166 bpm (หรือ 50–85% = 98–166 bpm)",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    },
+    {
+     "id": "2.8a",
+     "prompt": "ปัจจัยใน CVS ที่ทำให้ VO₂ max เพิ่ม (2 ข้อ)",
+     "format": "short",
+     "accepted": [
+      "stroke volume",
+      "capillary"
+     ],
+     "keywords_all": [
+      "stroke volume"
+     ],
+     "key_text": "Stroke volume ↑ (cardiac output max ↑), capillary density ↑, blood volume ↑",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    },
+    {
+     "id": "2.8b",
+     "prompt": "ปัจจัยในระบบ Muscular (1 ข้อ)",
+     "format": "short",
+     "accepted": [
+      "mitochondria",
+      "oxidative"
+     ],
+     "keywords_all": [
+      "mitochondria"
+     ],
+     "key_text": "Mitochondria ↑ / oxidative enzyme ↑ (a–v O₂ difference ↑)",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "KF47",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "CVS-47-KF-003",
+   "block": "CVS",
+   "cohort": 47,
+   "n": 3,
+   "type": "KF",
+   "topic": "physiology",
+   "case": "ผู้ป่วย BP 70/50 mmHg EDV 150 mL · HR 120, CO 5.5 L/min, SVR 1520, PCWP 13 (ปกติ HR 60–100, CO 4–8, SVR 1970–2390, PCWP 12–14)",
+   "items": [
+    {
+     "id": "3.1",
+     "prompt": "หา MAP พร้อมวิธีคิดและหน่วย",
+     "format": "short",
+     "accepted": [
+      "56",
+      "57"
+     ],
+     "keywords_all": [
+      "56"
+     ],
+     "key_text": "MAP = DP + ⅓(SP−DP) = 50 + ⅓(20) = 56.7 mmHg",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    },
+    {
+     "id": "3.2",
+     "prompt": "MAP ในข้อ 3.1 ต่ำ/ปกติ/สูง และ pulse pressure",
+     "format": "short",
+     "accepted": [
+      "แคบ",
+      "ต่ำ"
+     ],
+     "keywords_all": [
+      "แคบ"
+     ],
+     "key_text": "ต่ำกว่าปกติ (<60 mmHg) · PP = 20 mmHg → แคบ",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    },
+    {
+     "id": "3.3.1",
+     "prompt": "หา EF พร้อมวิธีคิด",
+     "format": "short",
+     "accepted": [
+      "31",
+      "30"
+     ],
+     "keywords_all": [
+      "31"
+     ],
+     "key_text": "SV = CO/HR = 5.5/0.12 = 45.8 mL · EF = SV/EDV = 45.8/150 ≈ 31%",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    },
+    {
+     "id": "3.3.2",
+     "prompt": "ผู้ป่วยเป็น shock แบบใด เพราะอะไร",
+     "format": "short",
+     "accepted": [
+      "distributive",
+      "septic"
+     ],
+     "keywords_all": [
+      "distributive"
+     ],
+     "key_text": "Distributive shock (septic/ neurogenic): SVR ↓ (1520 < 1970), CO ปกติ-สูง, HR ↑, PCWP ปกติ",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    },
+    {
+     "id": "3.4",
+     "prompt": "เข็มที่ให้สารน้ำไหลเร็วสุด",
+     "format": "short",
+     "accepted": [
+      "b"
+     ],
+     "keywords_all": [
+      "b"
+     ],
+     "key_text": "Q ∝ r⁴/L → B (d=1.7 cm, L=10 cm) · 1.7⁴/10 = 0.835 เทียบ A 0.146, C 0.033, D 0.143",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    },
+    {
+     "id": "3.5",
+     "prompt": "กราฟ VR vs CVP หลังให้ของเหลว",
+     "format": "short",
+     "accepted": [
+      "เลื่อน",
+      "msfp"
+     ],
+     "keywords_all": [
+      "เลื่อน"
+     ],
+     "key_text": "Mean systemic filling pressure ↑ → venous return curve เลื่อนขนานขึ้น/ขวา → VR และ CVP ที่จุดทำงาน ↑",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "KF47",
+     "pages": [
+      5
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "CVS-47-KF-004",
+   "block": "CVS",
+   "cohort": 47,
+   "n": 4,
+   "type": "KF",
+   "topic": "drugs",
+   "case": "ชาย 50 ปี ความดันโลหิตสูง LV hypertrophy และเบาหวาน ควรให้ยาอะไร",
+   "items": [
+    {
+     "id": "4.1",
+     "prompt": "ยา prototype 2 ชนิดและ drug class",
+     "format": "short",
+     "accepted": [
+      "enalapril",
+      "losartan"
+     ],
+     "keywords_all": [
+      "enalapril"
+     ],
+     "key_text": "Enalapril (ACE inhibitor) และ Losartan (ARB)",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    },
+    {
+     "id": "4.2",
+     "prompt": "Mechanism of action",
+     "format": "short",
+     "accepted": [
+      "ace",
+      "at1"
+     ],
+     "keywords_all": [
+      "ace"
+     ],
+     "key_text": "ACEi: ยับยั้ง ACE → Ang II ↓ → vasodilation, aldosterone ↓ · ARB: block AT1 receptor",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    },
+    {
+     "id": "4.3",
+     "prompt": "ข้อห้ามใช้ 3 ข้อ",
+     "format": "short",
+     "accepted": [
+      "ตั้งครรภ์",
+      "stenosis",
+      "hyperkalemia",
+      "angioedema"
+     ],
+     "keywords_all": [
+      "ตั้งครรภ์"
+     ],
+     "key_text": "หญิงตั้งครรภ์, bilateral renal artery stenosis, hyperkalemia, ประวัติ angioedema",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    },
+    {
+     "id": "4.4",
+     "prompt": "Lifestyle modification 4 ข้อ",
+     "format": "short",
+     "accepted": [
+      "เกลือ",
+      "ออกกำลัง",
+      "บุหรี่"
+     ],
+     "keywords_all": [
+      "เกลือ"
+     ],
+     "key_text": "ลดเกลือ, ออกกำลังกาย, ลดน้ำหนัก, งดบุหรี่/แอลกอฮอล์",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "KF47",
+     "pages": [
+      7
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "CVS-47-KF-005",
+   "block": "CVS",
+   "cohort": 47,
+   "n": 5,
+   "type": "KF",
+   "topic": "congenital",
+   "case": "เด็ก 1 ปี 6 เดือน ตัวเขียวหลังวิ่งเล่น ต้องนั่งยองๆ จึงดีขึ้น · Systolic ejection murmur 3/6 ที่ left upper parasternal border",
+   "items": [
+    {
+     "id": "5.1",
+     "prompt": "วินิจฉัยโรค",
+     "format": "short",
+     "accepted": [
+      "tetralogy",
+      "tof"
+     ],
+     "keywords_all": [
+      "tetralogy"
+     ],
+     "key_text": "Tetralogy of Fallot",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    },
+    {
+     "id": "5.2",
+     "prompt": "ลักษณะเด่น 4 ลักษณะ",
+     "format": "short",
+     "accepted": [
+      "vsd",
+      "overriding",
+      "pulmonary stenosis",
+      "rvh"
+     ],
+     "keywords_all": [
+      "pulmonary stenosis"
+     ],
+     "key_text": "VSD, Overriding aorta, Pulmonary stenosis, Right ventricular hypertrophy",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    },
+    {
+     "id": "5.3",
+     "prompt": "ทำไมนั่งยองถึงดีขึ้น",
+     "format": "short",
+     "accepted": [
+      "svr",
+      "shunt"
+     ],
+     "keywords_all": [
+      "svr"
+     ],
+     "key_text": "นั่งยอง/ knee-chest → SVR ↑ → ลด R→L shunt → เลือดไปปอดมากขึ้น → SaO₂ ↑",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    },
+    {
+     "id": "5.4",
+     "prompt": "Hypoxic spell: สาเหตุและกลไก 4 ข้อ",
+     "format": "short",
+     "accepted": [
+      "infundibular",
+      "shunt",
+      "svr"
+     ],
+     "keywords_all": [
+      "shunt"
+     ],
+     "key_text": "Infundibular spasm / PVR ↑, SVR ↓ ขณะออกกำลัง, R→L shunt เพิ่ม, hypoxemia → hyperventilation",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    },
+    {
+     "id": "5.5",
+     "prompt": "อธิบายการเกิด systolic ejection murmur",
+     "format": "short",
+     "accepted": [
+      "stenosis",
+      "turbulent"
+     ],
+     "keywords_all": [
+      "stenosis"
+     ],
+     "key_text": "เลือดผ่าน pulmonary stenosis (RVOT obstruction) → turbulent flow",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "KF47",
+     "pages": [
+      8
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "CVS-47-KF-006",
+   "block": "CVS",
+   "cohort": 47,
+   "n": 6,
+   "type": "KF",
+   "topic": "cad-hf",
+   "case": "ผู้ป่วยมา ER ด้วย chest pain EKG ดังภาพ (ST elevation II, III, aVF)",
+   "items": [
+    {
+     "id": "6.1",
+     "prompt": "หา Heart Rate",
+     "format": "short",
+     "accepted": [
+      "75",
+      "80"
+     ],
+     "keywords_all": [
+      "75"
+     ],
+     "key_text": "ประมาณ 75–80 bpm",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม",
+     "image": "img/CVS-47-KF-006.jpg",
+     "image_caption": "EKG ผู้ป่วย chest pain"
+    },
+    {
+     "id": "6.2",
+     "prompt": "ความผิดปกติบริเวณใดของเนื้อเยื่อหัวใจ",
+     "format": "short",
+     "accepted": [
+      "inferior"
+     ],
+     "keywords_all": [
+      "inferior"
+     ],
+     "key_text": "Inferior wall ของ left ventricle (transmural ischemia)",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    },
+    {
+     "id": "6.3",
+     "prompt": "หลอดเลือดหัวใจใดน่าจะมีพยาธิสภาพ",
+     "format": "short",
+     "accepted": [
+      "rca",
+      "right coronary"
+     ],
+     "keywords_all": [
+      "rca"
+     ],
+     "key_text": "Right coronary artery (RCA)",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    },
+    {
+     "id": "6.4",
+     "prompt": "วินิจฉัยที่ชัดเจนที่สุด",
+     "format": "short",
+     "accepted": [
+      "inferior",
+      "stemi"
+     ],
+     "keywords_all": [
+      "stemi"
+     ],
+     "key_text": "Acute inferior wall STEMI",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    },
+    {
+     "id": "6.5",
+     "prompt": "กลไกดังภาพเรียกว่า",
+     "format": "short",
+     "accepted": [
+      "rupture",
+      "atherosclerosis"
+     ],
+     "keywords_all": [
+      "rupture"
+     ],
+     "key_text": "Atherosclerosis → plaque rupture → thrombosis (ภาพ plaque rupture)",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    },
+    {
+     "id": "6.6",
+     "prompt": "การเปลี่ยนแปลงของพยาธิสภาพของหลอดเลือดหัวใจที่ทำให้เกิด chest pain 4 ข้อ",
+     "format": "short",
+     "accepted": [
+      "endothelial",
+      "foam",
+      "rupture",
+      "thrombus"
+     ],
+     "keywords_all": [
+      "plaque"
+     ],
+     "key_text": "Endothelial injury → lipid deposition/foam cell → fibrous cap + plaque growth → plaque rupture + thrombus → lumen ตีบ/อุด",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    },
+    {
+     "id": "6.7",
+     "prompt": "ควรให้ยาเปิดหลอดเลือดอะไร",
+     "format": "short",
+     "accepted": [
+      "alteplase",
+      "streptokinase",
+      "tpa"
+     ],
+     "keywords_all": [
+      "tpa"
+     ],
+     "key_text": "Thrombolytic: streptokinase, alteplase (tPA) หรือ primary PCI",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "KF47",
+     "pages": [
+      10
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "CVS-47-KF-007",
+   "block": "CVS",
+   "cohort": 47,
+   "n": 7,
+   "type": "KF",
+   "topic": "pathology",
+   "case": "เด็กชาย 7 ปี ไข้ ไอ เจ็บคอ 3 สัปดาห์ ต่อมาเพลีย ปวดข้อมือเข่า BT 38.7 BP 100/70 HR 110 · pericardial effusion · ข้อแดงบวมเจ็บ · ภาพ histopathology ของ pericardium",
+   "items": [
+    {
+     "id": "7.1",
+     "prompt": "วินิจฉัยโรค",
+     "format": "short",
+     "accepted": [
+      "rheumatic"
+     ],
+     "keywords_all": [
+      "rheumatic"
+     ],
+     "key_text": "Rheumatic heart disease (rheumatic fever)",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม",
+     "image": "img/CVS-47-KF-007.jpg",
+     "image_caption": "Histopathology pericardium"
+    },
+    {
+     "id": "7.2",
+     "prompt": "เชื้อที่เป็นสาเหตุ",
+     "format": "short",
+     "accepted": [
+      "streptococcus",
+      "pyogenes"
+     ],
+     "keywords_all": [
+      "streptococcus"
+     ],
+     "key_text": "Group A β-hemolytic Streptococcus (S. pyogenes)",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    },
+    {
+     "id": "7.3",
+     "prompt": "Pathogenesis",
+     "format": "short",
+     "accepted": [
+      "cross",
+      "mimicry"
+     ],
+     "keywords_all": [
+      "cross"
+     ],
+     "key_text": "S. pyogenes pharyngitis → antibody ต่อ M protein cross-react กับ self antigen (molecular mimicry) ที่หัวใจ/ข้อ → type II hypersensitivity → inflammation",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    },
+    {
+     "id": "7.4",
+     "prompt": "ลักษณะเด่น histopathology",
+     "format": "short",
+     "accepted": [
+      "aschoff",
+      "anitschkow"
+     ],
+     "keywords_all": [
+      "aschoff"
+     ],
+     "key_text": "Aschoff body: Anitschkow cell (caterpillar), Aschoff giant cell, fibrinoid necrosis",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    },
+    {
+     "id": "7.5",
+     "prompt": "โรคแทรกซ้อนทางหัวใจที่พบมากสุด",
+     "format": "short",
+     "accepted": [
+      "mitral"
+     ],
+     "keywords_all": [
+      "mitral"
+     ],
+     "key_text": "Mitral valve stenosis (mitral regurgitation ใน acute)",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "KF47",
+     "pages": [
+      12
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "CVS-47-KF-008",
+   "block": "CVS",
+   "cohort": 47,
+   "n": 8,
+   "type": "KF",
+   "topic": "cad-hf",
+   "case": "Mr.O 50 ปี และ Mr.M 65 ปี chest pain · Total CK 250→300 / 300→450 · CK-MB 2→18 / 5→13 · hs-cTn 20→25 / 18→20 (admit → 3 ชม.)",
+   "items": [
+    {
+     "id": "8.1",
+     "prompt": "ใครเป็น MI",
+     "format": "short",
+     "accepted": [
+      "mr.o",
+      "o"
+     ],
+     "keywords_all": [
+      "o"
+     ],
+     "key_text": "Mr.O (CK-MB เพิ่มจาก 2 → 18 มากกว่า 3 เท่า และ hs-cTn สูงกว่า URL)",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม",
+     "image": "img/CVS-47-KF-008.jpg",
+     "image_caption": "Cardiac enzyme timeline"
+    },
+    {
+     "id": "8.2",
+     "prompt": "เหตุผลสนับสนุน 3 ข้อ",
+     "format": "short",
+     "accepted": [
+      "ck-mb",
+      "url",
+      "rise"
+     ],
+     "keywords_all": [
+      "ck-mb"
+     ],
+     "key_text": "1) CK-MB ของ Mr.O เพิ่มขึ้น >3 เท่า (2→18) 2) hs-cTn ของ Mr.O สูงกว่า URL และเพิ่มขึ้น 3) มี rise pattern ภายใน 3 ชม. ส่วน Mr.M ค่าใกล้เคียงเดิม",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    },
+    {
+     "id": "8.3",
+     "prompt": "ระบุชื่อ cardiac enzyme A, B, C พร้อมข้อดี/ข้อเสียอย่างละ 1 ข้อ",
+     "format": "short",
+     "accepted": [
+      "myoglobin",
+      "ck-mb",
+      "troponin"
+     ],
+     "keywords_all": [
+      "troponin"
+     ],
+     "key_text": "A = Myoglobin (ขึ้นเร็วสุด แต่จำเพาะต่ำ) · B = CK-MB (ตรวจ reinfarction ได้ แต่จำเพาะน้อยกว่า troponin) · C = Troponin (specificity สูง ตรวจ late MI ได้ แต่ตรวจ reinfarction ยาก)",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "KF47",
+     "pages": [
+      14
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "claude-mcp"
+  }
+ ]
+}

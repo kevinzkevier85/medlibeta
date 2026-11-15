@@ -1,0 +1,868 @@
+{
+ "meta": {
+  "set_id": "48_KF",
+  "block": "CVS",
+  "cohort": 48,
+  "type": "KF",
+  "title": "KF Cardiovascular System · Med PSU 48",
+  "time_limit_min": 60,
+  "generated_by": "auditor/tools/build_kf.py from auditor/data/work/cvs_48_KF.kf.json — do not edit by hand"
+ },
+ "questions": [
+  {
+   "id": "CVS-48-KF-001",
+   "block": "CVS",
+   "cohort": 48,
+   "n": 1,
+   "type": "KF",
+   "topic": "cad-hf",
+   "case": "ชายไทย 55 ปี ไม่มีโรคประจำตัว ญาตินำส่ง รพ. เพราะแน่นหน้าอก 30 นาที ตรวจคลื่นไฟฟ้าหัวใจได้ดังภาพ (ST elevation ที่ V1–V5)",
+   "items": [
+    {
+     "id": "1.1",
+     "prompt": "ผู้ป่วยรายนี้มีอัตราการเต้นหัวใจเท่าไร",
+     "format": "short",
+     "accepted": [
+      "70",
+      "75"
+     ],
+     "keywords_all": [
+      "70"
+     ],
+     "key_text": "ประมาณ 70–75 bpm (ดูจาก R–R)",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม",
+     "image": "img/CVS-48-KF-001.jpg",
+     "image_caption": "EKG ผู้ป่วยแน่นหน้าอก"
+    },
+    {
+     "id": "1.2",
+     "prompt": "วินิจฉัยที่จำเพาะที่สุด",
+     "format": "short",
+     "accepted": [
+      "anterior",
+      "stemi"
+     ],
+     "keywords_all": [
+      "stemi"
+     ],
+     "key_text": "Acute anterior (extensive anterior) wall ST-elevation myocardial infarction (STEMI)",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    },
+    {
+     "id": "1.3",
+     "prompt": "ความผิดปกติที่หลอดเลือดหัวใจใด",
+     "format": "short",
+     "accepted": [
+      "lad",
+      "left anterior descending"
+     ],
+     "keywords_all": [
+      "lad"
+     ],
+     "key_text": "Left anterior descending artery (LAD)",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    },
+    {
+     "id": "1.4",
+     "prompt": "ยาจำเพาะเพื่อเปิดหลอดเลือดหัวใจ 1 ชื่อ",
+     "format": "short",
+     "accepted": [
+      "alteplase",
+      "streptokinase",
+      "tpa"
+     ],
+     "keywords_all": [
+      "tpa"
+     ],
+     "key_text": "Thrombolytic เช่น alteplase (tPA) หรือ streptokinase",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    },
+    {
+     "id": "1.5",
+     "prompt": "การตอบสนองของ coronary artery ต่อ plaque formation เรียกว่าอะไร",
+     "format": "short",
+     "accepted": [
+      "remodeling",
+      "compensatory",
+      "glagov"
+     ],
+     "keywords_all": [
+      "remodeling"
+     ],
+     "key_text": "Positive remodeling (compensatory expansion / Glagov phenomenon)",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    },
+    {
+     "id": "1.6",
+     "prompt": "พยาธิสภาพของหลอดเลือดที่เป็นสาเหตุของ ACS 3 ข้อ",
+     "format": "short",
+     "accepted": [
+      "rupture",
+      "erosion",
+      "thrombus"
+     ],
+     "keywords_all": [
+      "rupture"
+     ],
+     "key_text": "Plaque rupture, Plaque erosion, Thrombus formation (occlusive/mural thrombus), Calcified nodule",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    },
+    {
+     "id": "1.7",
+     "prompt": "พยาธิสภาพของหลอดเลือดในภาพสัมพันธ์กับ ST-segment ของ ECG อย่างไร",
+     "format": "short",
+     "accepted": [
+      "occlusive",
+      "st elevation"
+     ],
+     "keywords_all": [
+      "occlusive"
+     ],
+     "key_text": "Occlusive thrombus → transmural ischemia → ST elevation (STEMI) · Mural/intraplaque thrombus → subendocardial ischemia → ST depression/T inversion (NSTEMI/UA)",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "KF48",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "CVS-48-KF-002",
+   "block": "CVS",
+   "cohort": 48,
+   "n": 2,
+   "type": "KF",
+   "topic": "physiology",
+   "case": "หญิงไปเที่ยวสวนสนุก เล่นรถไฟเหาะ กลัวมาก วิงเวียน หน้ามืด ตาลาย คล้ายจะเป็นลม เพื่อนพาไปพักในที่ร่มให้นอนราบ ผ่านไปไม่นานอาการดีขึ้น",
+   "items": [
+    {
+     "id": "2.1",
+     "prompt": "ขณะกลัวมีการตอบสนองของ skeletal muscle blood flow, cutaneous blood flow, renal blood flow และ veins อย่างไร",
+     "format": "short",
+     "accepted": [
+      "skeletal",
+      "cutaneous"
+     ],
+     "keywords_all": [
+      "skeletal"
+     ],
+     "key_text": "Skeletal muscle ↑ (vasodilation), Cutaneous ↓, Renal ↓, Veins: venoconstriction / หรือ vasovagal: venous pooling → VR ↓",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    },
+    {
+     "id": "2.2",
+     "prompt": "ลำดับการเปลี่ยนแปลงของ cardiovascular parameters ที่ทำให้วิงเวียน ตาลาย",
+     "format": "short",
+     "accepted": [
+      "venous return",
+      "co"
+     ],
+     "keywords_all": [
+      "venous return"
+     ],
+     "key_text": "Vasodilation/venous pooling → venous return ↓ → SV ↓ → CO ↓ → MAP ↓ → cerebral perfusion ↓",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    },
+    {
+     "id": "2.3",
+     "prompt": "Cardiovascular reflex ใดตอบสนองเร็วที่สุด",
+     "format": "short",
+     "accepted": [
+      "baroreceptor"
+     ],
+     "keywords_all": [
+      "baroreceptor"
+     ],
+     "key_text": "Baroreceptor reflex",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    },
+    {
+     "id": "2.4",
+     "prompt": "ระบบประสาทอัตโนมัติตอบสนองอย่างไร",
+     "format": "short",
+     "accepted": [
+      "sympathetic"
+     ],
+     "keywords_all": [
+      "sympathetic"
+     ],
+     "key_text": "Sympathetic ↑ , Parasympathetic (vagal) ↓",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    },
+    {
+     "id": "2.5",
+     "prompt": "Heart rate, contractility, TPR, venous capacitance เปลี่ยนอย่างไร",
+     "format": "short",
+     "accepted": [
+      "hr",
+      "contractility",
+      "tpr"
+     ],
+     "keywords_all": [
+      "hr"
+     ],
+     "key_text": "HR ↑, contractility ↑, TPR ↑, venous capacitance ↓",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    },
+    {
+     "id": "2.6",
+     "prompt": "การนอนราบในที่ร่มช่วยบรรเทาอาการหรือไม่ อย่างไร",
+     "format": "short",
+     "accepted": [
+      "venous return",
+      "ช่วย"
+     ],
+     "keywords_all": [
+      "ช่วย"
+     ],
+     "key_text": "ช่วย: นอนราบ → venous return ↑ → CO ↑ → BP ↑ → cerebral perfusion ↑ · ที่ร่ม → cutaneous vasodilation ลดลง",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "KF48",
+     "pages": [
+      4
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "CVS-48-KF-003",
+   "block": "CVS",
+   "cohort": 48,
+   "n": 3,
+   "type": "KF",
+   "topic": "congenital",
+   "case": "เด็กอายุ 1 ปี ได้รับการวินิจฉัย Tetralogy of Fallot ตั้งแต่ 6 เดือน วันนี้มารดาโทรเรียกรถกู้ภัยเพราะเขียวหมดสติ จึงนอนหงายชิดอก (knee chest) แล้วอาการดีขึ้น",
+   "items": [
+    {
+     "id": "3.1",
+     "prompt": "โรค TOF ประกอบด้วยความผิดปกติอะไรบ้าง",
+     "format": "short",
+     "accepted": [
+      "vsd",
+      "overriding",
+      "pulmonary stenosis",
+      "rvh"
+     ],
+     "keywords_all": [
+      "pulmonary stenosis"
+     ],
+     "key_text": "VSD, Overriding aorta, Pulmonary stenosis, Right ventricular hypertrophy",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    },
+    {
+     "id": "3.2",
+     "prompt": "Hypoxic spell: พยาธิสรีรวิทยาและปัจจัยกระตุ้น (3 ชุด)",
+     "format": "short",
+     "accepted": [
+      "infundibular",
+      "shunt",
+      "svr"
+     ],
+     "keywords_all": [
+      "shunt"
+     ],
+     "key_text": "1) Infundibular spasm / PVR ↑ ← ร้องไห้ ตื่นเต้น 2) SVR ↓ ← ออกกำลัง ไข้ 3) R→L shunt ↑ ผ่าน VSD → hypoxemia → hyperventilation",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    },
+    {
+     "id": "3.3",
+     "prompt": "Knee chest position ทำให้ hypoxic spell ดีขึ้นด้วยกลไกใด (คำเดียว)",
+     "format": "short",
+     "accepted": [
+      "svr"
+     ],
+     "keywords_all": [
+      "svr"
+     ],
+     "key_text": "SVR เพิ่ม (↑ systemic vascular resistance)",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "KF48",
+     "pages": [
+      5
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "CVS-48-KF-004",
+   "block": "CVS",
+   "cohort": 48,
+   "n": 4,
+   "type": "KF",
+   "topic": "drugs",
+   "case": "ชาย 60 ปี ความดันโลหิตสูง LV hypertrophy เบาหวาน 10 ปี",
+   "items": [
+    {
+     "id": "4.1a",
+     "prompt": "ชื่อยา 2 ชื่อ",
+     "format": "short",
+     "accepted": [
+      "enalapril",
+      "losartan"
+     ],
+     "keywords_all": [
+      "enalapril"
+     ],
+     "key_text": "Enalapril และ Losartan",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    },
+    {
+     "id": "4.1b",
+     "prompt": "ชื่อกลุ่มยา 1 ชื่อ",
+     "format": "short",
+     "accepted": [
+      "ace",
+      "arb"
+     ],
+     "keywords_all": [
+      "ace"
+     ],
+     "key_text": "ACE inhibitor (หรือ ARB)",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    },
+    {
+     "id": "4.2",
+     "prompt": "กลไกการออกฤทธิ์",
+     "format": "short",
+     "accepted": [
+      "ace",
+      "at1"
+     ],
+     "keywords_all": [
+      "ace"
+     ],
+     "key_text": "ยับยั้ง ACE → Ang II ↓ → vasodilation + aldosterone ↓ → Na⁺/water ↓ · ARB block AT1 receptor",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    },
+    {
+     "id": "4.3",
+     "prompt": "ข้อห้ามใช้ 3 ข้อ",
+     "format": "short",
+     "accepted": [
+      "ตั้งครรภ์",
+      "stenosis",
+      "hyperkalemia",
+      "angioedema"
+     ],
+     "keywords_all": [
+      "ตั้งครรภ์"
+     ],
+     "key_text": "หญิงตั้งครรภ์, bilateral renal artery stenosis, hyperkalemia, ประวัติ angioedema",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    },
+    {
+     "id": "4.4",
+     "prompt": "Lifestyle modification 4 ข้อ",
+     "format": "short",
+     "accepted": [
+      "เกลือ",
+      "ออกกำลัง",
+      "บุหรี่"
+     ],
+     "keywords_all": [
+      "เกลือ"
+     ],
+     "key_text": "ลดเกลือ, ออกกำลังกาย, ลดน้ำหนัก, งดบุหรี่/แอลกอฮอล์",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "KF48",
+     "pages": [
+      6
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "CVS-48-KF-005",
+   "block": "CVS",
+   "cohort": 48,
+   "n": 5,
+   "type": "KF",
+   "topic": "cad-hf",
+   "case": "Cardiac biomarker ที่มีคุณสมบัติตามกราฟ (peak 12–24 ชม., detectable 4–6 ชม., กลับปกติ 2–3 วัน)",
+   "items": [
+    {
+     "id": "5.1",
+     "prompt": "ชื่อ biomarker",
+     "format": "short",
+     "accepted": [
+      "ck-mb"
+     ],
+     "keywords_all": [
+      "ck-mb"
+     ],
+     "key_text": "CK-MB",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม",
+     "image": "img/CVS-48-KF-005.jpg",
+     "image_caption": "Cardiac biomarker curve"
+    },
+    {
+     "id": "5.2",
+     "prompt": "ข้อดีทางคลินิก 2 ข้อ",
+     "format": "short",
+     "accepted": [
+      "reinfarction"
+     ],
+     "keywords_all": [
+      "reinfarction"
+     ],
+     "key_text": "ตรวจ reinfarction ได้ (กลับปกติ 2–3 วัน) · ใช้ประเมินขนาด infarct ได้ · จำเพาะต่อหัวใจกว่า total CK",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    },
+    {
+     "id": "5.3",
+     "prompt": "ข้อจำกัดทางคลินิก 2 ข้อ",
+     "format": "short",
+     "accepted": [
+      "specificity",
+      "skeletal"
+     ],
+     "keywords_all": [
+      "skeletal"
+     ],
+     "key_text": "จำเพาะน้อยกว่า troponin (พบใน skeletal muscle) · ขึ้นช้าใน 4–6 ชม. ไม่เหมาะ early diagnosis",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    },
+    {
+     "id": "5.4",
+     "prompt": "AMI หลังเริ่มอาการ 48 ชม. biomarker ใดสูงผิดปกติ 2 ชนิด",
+     "format": "short",
+     "accepted": [
+      "troponin",
+      "ldh"
+     ],
+     "keywords_all": [
+      "troponin"
+     ],
+     "key_text": "Cardiac troponin และ LDH",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "KF48",
+     "pages": [
+      7
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "CVS-48-KF-006",
+   "block": "CVS",
+   "cohort": 48,
+   "n": 6,
+   "type": "KF",
+   "topic": "physiology",
+   "case": "ชาย 55 ปี เจ็บหน้าอก เหนื่อย อ่อนเพลีย เหงื่อแตก ขณะวิ่งเหยาะ · Total CK 210→320 (0–190) · CK-MB 7→20 (0–4.87) · hs-cTnT 50→75 (0–14)",
+   "items": [
+    {
+     "id": "6.1",
+     "prompt": "มี MI หรือไม่",
+     "format": "short",
+     "accepted": [
+      "ใช่",
+      "yes"
+     ],
+     "keywords_all": [
+      "ใช่"
+     ],
+     "key_text": "ใช่ (มี myocardial infarction)",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    },
+    {
+     "id": "6.2",
+     "prompt": "แปลผลทางห้องปฏิบัติการ 2 ข้อ",
+     "format": "short",
+     "accepted": [
+      "url",
+      "rise"
+     ],
+     "keywords_all": [
+      "url"
+     ],
+     "key_text": "hs-cTnT สูงกว่า URL มาก (50 > 14) และเพิ่มขึ้น (rise) · CK-MB สูงกว่า URL และเพิ่มขึ้น >3 เท่า",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    },
+    {
+     "id": "6.3a",
+     "prompt": "Lactate threshold ของ pulmonary ventilation, blood lactate, O₂ consumption",
+     "format": "short",
+     "accepted": [
+      "lactate",
+      "ventilation"
+     ],
+     "keywords_all": [
+      "lactate"
+     ],
+     "key_text": "VO₂ ↑ เป็นเส้นตรง · lactate เริ่มสูงกว่า baseline เล็กน้อย · VE เริ่มเพิ่มชันกว่าเดิมหรือ non-linear",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    },
+    {
+     "id": "6.3b",
+     "prompt": "Onset of blood lactate accumulation (OBLA)",
+     "format": "short",
+     "accepted": [
+      "lactate",
+      "4 mmol"
+     ],
+     "keywords_all": [
+      "obla"
+     ],
+     "key_text": "Lactate สะสมเร็ว (~4 mmol/L) · VE เพิ่มชัน (hyperventilation) · VO₂ ใกล้ max",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    },
+    {
+     "id": "6.4",
+     "prompt": "สมการปฏิกิริยาเคมีของการเกิด CO₂ ขณะออกกำลังกาย",
+     "format": "short",
+     "accepted": [
+      "hco3",
+      "h2co3",
+      "co2"
+     ],
+     "keywords_all": [
+      "hco3"
+     ],
+     "key_text": "H⁺ + HCO₃⁻ ⇌ H₂CO₃ ⇌ H₂O + CO₂ (buffering lactic acid)",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    },
+    {
+     "id": "6.5",
+     "prompt": "เปรียบเทียบ CO, HR, SV ขณะพัก (untrained vs trained)",
+     "format": "short",
+     "accepted": [
+      "sv",
+      "hr",
+      "co"
+     ],
+     "keywords_all": [
+      "sv"
+     ],
+     "key_text": "Untrained: HR ~72, SV ~70 mL, CO ~5 L/min · Trained: HR ต่ำ (~50), SV สูง (~100 mL), CO เท่ากัน ~5 L/min",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    },
+    {
+     "id": "6.6",
+     "prompt": "ขณะออกกำลังกาย (untrained vs trained)",
+     "format": "short",
+     "accepted": [
+      "sv",
+      "co"
+     ],
+     "keywords_all": [
+      "sv"
+     ],
+     "key_text": "Untrained: HR max ~195, SV ~110, CO ~20 L/min · Trained: HR max ใกล้เคียง, SV ~160–180, CO ~30–35 L/min",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "KF48",
+     "pages": [
+      8
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "CVS-48-KF-007",
+   "block": "CVS",
+   "cohort": 48,
+   "n": 7,
+   "type": "KF",
+   "topic": "cad-hf",
+   "case": "ชายอายุ 60 ปี เบาหวาน ความดันสูง หมดสติ ไม่มี pulse จึงเริ่ม CPR · EKG sinusoidal wide-complex regular tachycardia · หลัง CPR 10 นาทีใส่ Swan-Ganz: BP 70/40, HR 110, CVP 15, CO 2.2, PCWP 20, SVR 1800 · ให้ยากระตุ้นความดัน: ก่อนให้ BP 70/40 HR 110 CO 2.2 SVR 1800 → หลังให้ BP 90/60 HR 112 CO 2.3 SVR 2200",
+   "items": [
+    {
+     "id": "7.1",
+     "prompt": "จังหวะหัวใจในรูปเรียกว่าอะไร",
+     "format": "short",
+     "accepted": [
+      "ventricular tachycardia",
+      "vt"
+     ],
+     "keywords_all": [
+      "ventricular tachycardia"
+     ],
+     "key_text": "Ventricular tachycardia (wide-complex)",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม",
+     "image": "img/CVS-48-KF-007.jpg",
+     "image_caption": "EKG ระหว่าง CPR"
+    },
+    {
+     "id": "7.2",
+     "prompt": "ยาต้านหัวใจเต้นผิดจังหวะระหว่าง CPR 2 ชนิด",
+     "format": "short",
+     "accepted": [
+      "amiodarone",
+      "lidocaine"
+     ],
+     "keywords_all": [
+      "amiodarone"
+     ],
+     "key_text": "Amiodarone และ Lidocaine",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    },
+    {
+     "id": "7.3",
+     "prompt": "Pulse pressure และ MAP",
+     "format": "short",
+     "accepted": [
+      "30",
+      "50"
+     ],
+     "keywords_all": [
+      "30"
+     ],
+     "key_text": "PP = 70−40 = 30 mmHg · MAP = 40 + ⅓(30) = 50 mmHg",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    },
+    {
+     "id": "7.4",
+     "prompt": "ลักษณะ pulse pressure",
+     "format": "short",
+     "accepted": [
+      "แคบ",
+      "narrow"
+     ],
+     "keywords_all": [
+      "แคบ"
+     ],
+     "key_text": "แคบ (narrow)",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    },
+    {
+     "id": "7.5",
+     "prompt": "EF เมื่อ EDV 80 mL",
+     "format": "short",
+     "accepted": [
+      "25"
+     ],
+     "keywords_all": [
+      "25"
+     ],
+     "key_text": "SV = CO/HR = 2.2/0.11 = 20 mL · EF = 20/80 = 25%",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    },
+    {
+     "id": "7.6",
+     "prompt": "Shock ใดมากที่สุด",
+     "format": "short",
+     "accepted": [
+      "cardiogenic"
+     ],
+     "keywords_all": [
+      "cardiogenic"
+     ],
+     "key_text": "Cardiogenic shock (CO ↓, CVP ↑, PCWP ↑, SVR ↑)",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    },
+    {
+     "id": "7.7",
+     "prompt": "ยากระตุ้นความดันที่ควรให้และเหตุผล",
+     "format": "short",
+     "accepted": [
+      "norepinephrine"
+     ],
+     "keywords_all": [
+      "norepinephrine"
+     ],
+     "key_text": "Norepinephrine — ดัน MAP ผ่าน α1 (SVR ↑ 1800→2200, BP 70/40→90/60) โดย CO แทบไม่เปลี่ยน",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    },
+    {
+     "id": "7.8",
+     "prompt": "ยาดังกล่าวมีผลต่อ mean systemic pressure (Pms) อย่างไร และกลไก",
+     "format": "short",
+     "accepted": [
+      "venoconstriction",
+      "α1"
+     ],
+     "keywords_all": [
+      "venoconstriction"
+     ],
+     "key_text": "Pms ↑ — α1 → venoconstriction (unstressed → stressed volume) ทำให้ venous return/Pms ↑",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "KF48",
+     "pages": [
+      9
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "CVS-48-KF-008",
+   "block": "CVS",
+   "cohort": 48,
+   "n": 8,
+   "type": "KF",
+   "topic": "pathology",
+   "case": "เด็กหญิง 12 ปี ไข้ ปวดข้อ 2 วัน เมื่อเดือนก่อนเจ็บคอแล้วหายเอง · BT 38.7 BP 110/70 PR 110 · pansystolic murmur best at apex · ข้อเข่า/ข้อมือ แดง บวม เจ็บ · ผื่นแดงขยายเป็นวง ที่ trunk แขนขา",
+   "items": [
+    {
+     "id": "8.1",
+     "prompt": "เชื้อที่เป็นสาเหตุที่พบบ่อยที่สุด",
+     "format": "short",
+     "accepted": [
+      "streptococcus",
+      "pyogenes"
+     ],
+     "keywords_all": [
+      "streptococcus"
+     ],
+     "key_text": "Group A β-hemolytic Streptococcus (S. pyogenes)",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    },
+    {
+     "id": "8.2",
+     "prompt": "พยาธิสภาพบริเวณใดของหัวใจ",
+     "format": "short",
+     "accepted": [
+      "mitral"
+     ],
+     "keywords_all": [
+      "mitral"
+     ],
+     "key_text": "Mitral valve (valvulitis/endocarditis) และ pericardium/myocardium (pancarditis)",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    },
+    {
+     "id": "8.3",
+     "prompt": "ชื่อพยาธิสภาพในวงกลมและชื่อเซลล์ที่ศรชี้",
+     "format": "short",
+     "accepted": [
+      "aschoff",
+      "anitschkow"
+     ],
+     "keywords_all": [
+      "aschoff"
+     ],
+     "key_text": "Aschoff body · เซลล์ที่ศรชี้ = Anitschkow cell (caterpillar cell)",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม",
+     "image": "img/CVS-48-KF-008.jpg",
+     "image_caption": "Histopathology"
+    },
+    {
+     "id": "8.4",
+     "prompt": "ผื่นผิวหนังมีชื่อเรียกจำเพาะว่าอะไร",
+     "format": "short",
+     "accepted": [
+      "erythema marginatum"
+     ],
+     "keywords_all": [
+      "marginatum"
+     ],
+     "key_text": "Erythema marginatum",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    },
+    {
+     "id": "8.5",
+     "prompt": "วินิจฉัยโรค",
+     "format": "short",
+     "accepted": [
+      "rheumatic"
+     ],
+     "keywords_all": [
+      "rheumatic"
+     ],
+     "key_text": "Acute rheumatic fever (Jones criteria)",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    },
+    {
+     "id": "8.6",
+     "prompt": "พยาธิสรีรวิทยา (4 คะแนน)",
+     "format": "short",
+     "accepted": [
+      "cross",
+      "mimicry"
+     ],
+     "keywords_all": [
+      "cross"
+     ],
+     "key_text": "S. pyogenes pharyngitis → antibody ต่อ M protein cross-react กับ self antigen (molecular mimicry, type II hypersensitivity) → inflammation ที่ heart/joint/skin/brain",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    },
+    {
+     "id": "8.7",
+     "prompt": "ความผิดปกติทางการเคลื่อนไหวที่พบได้",
+     "format": "short",
+     "accepted": [
+      "chorea"
+     ],
+     "keywords_all": [
+      "chorea"
+     ],
+     "key_text": "Sydenham chorea",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    },
+    {
+     "id": "8.8",
+     "prompt": "ภาวะแทรกซ้อนระยะเรื้อรังที่พบบ่อย",
+     "format": "short",
+     "accepted": [
+      "mitral"
+     ],
+     "keywords_all": [
+      "mitral"
+     ],
+     "key_text": "Chronic rheumatic heart disease: mitral stenosis",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "KF48",
+     "pages": [
+      11
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "claude-mcp"
+  }
+ ]
+}
