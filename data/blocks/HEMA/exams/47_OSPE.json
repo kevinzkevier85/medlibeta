@@ -1,0 +1,800 @@
+{
+ "meta": {
+  "set_id": "47_OSPE",
+  "block": "HEMA",
+  "cohort": 47,
+  "type": "OSPE",
+  "title": "OSPE Hematopoietic · Med PSU 47",
+  "generated_by": "auditor/tools/build_kf.py from auditor/data/work/hema_47_OSPE.kf.json — do not edit by hand"
+ },
+ "questions": [
+  {
+   "id": "HEMA-47-OSPE-001",
+   "block": "HEMA",
+   "cohort": 47,
+   "n": 1,
+   "type": "OSPE",
+   "station": 1,
+   "stem": "สถานี 1: ดู peripheral blood smear — รายงานผล วินิจฉัย และส่งตรวจเพิ่ม",
+   "items": [
+    {
+     "id": "1.1",
+     "prompt": "ผล blood smear",
+     "format": "short",
+     "accepted": [
+      "iron"
+     ],
+     "keywords_all": [
+      "iron"
+     ],
+     "key_text": "RBC hypochromic microcytic, pencil cell, anisopoikilocytosis · WBC normal · Platelet normal/เพิ่ม",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    },
+    {
+     "id": "1.2",
+     "prompt": "Diagnosis",
+     "format": "short",
+     "accepted": [
+      "iron"
+     ],
+     "keywords_all": [
+      "iron"
+     ],
+     "key_text": "Iron deficiency anemia",
+     "source_key": "เฉลย: Iron deficiency anemia"
+    },
+    {
+     "id": "1.3",
+     "prompt": "ส่งตรวจเพิ่มเพื่อยืนยัน",
+     "format": "short",
+     "accepted": [
+      "iron"
+     ],
+     "keywords_all": [
+      "iron"
+     ],
+     "key_text": "Iron study: ↓ serum iron, ↓ ferritin, ↑ TIBC",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "OSPE47",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "OSPE47-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [
+    "smear"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "HEMA-47-OSPE-002",
+   "block": "HEMA",
+   "cohort": 47,
+   "n": 2,
+   "type": "OSPE",
+   "station": 2,
+   "stem": "สถานี 2: ดู peripheral blood smear",
+   "items": [
+    {
+     "id": "2.1",
+     "prompt": "ผล blood smear",
+     "format": "short",
+     "accepted": [
+      "autoimmune"
+     ],
+     "keywords_all": [
+      "autoimmune"
+     ],
+     "key_text": "RBC normochromic normocytic, polychromasia, spherocyte/autoagglutination · WBC normal · Platelet adequate",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    },
+    {
+     "id": "2.2",
+     "prompt": "Diagnosis",
+     "format": "short",
+     "accepted": [
+      "autoimmune"
+     ],
+     "keywords_all": [
+      "autoimmune"
+     ],
+     "key_text": "Autoimmune hemolytic anemia",
+     "source_key": "เฉลย: Autoimmune hemolytic anemia"
+    },
+    {
+     "id": "2.3",
+     "prompt": "ส่งตรวจเพิ่มเพื่อยืนยัน",
+     "format": "short",
+     "accepted": [
+      "autoimmune"
+     ],
+     "keywords_all": [
+      "autoimmune"
+     ],
+     "key_text": "Direct Coombs test (DAT) positive; reticulocyte↑ LDH↑ bilirubin↑",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "OSPE47",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "OSPE47-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [
+    "smear"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "HEMA-47-OSPE-003",
+   "block": "HEMA",
+   "cohort": 47,
+   "n": 3,
+   "type": "OSPE",
+   "station": 3,
+   "stem": "สถานี 3: ดู peripheral blood smear",
+   "items": [
+    {
+     "id": "3.1",
+     "prompt": "ผล blood smear",
+     "format": "short",
+     "accepted": [
+      "dengue"
+     ],
+     "keywords_all": [
+      "dengue"
+     ],
+     "key_text": "RBC normochromic normocytic · WBC ลดลง พบ atypical lymphocyte · Platelet ลดลง",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    },
+    {
+     "id": "3.2",
+     "prompt": "Diagnosis",
+     "format": "short",
+     "accepted": [
+      "dengue"
+     ],
+     "keywords_all": [
+      "dengue"
+     ],
+     "key_text": "Dengue hemorrhagic fever",
+     "source_key": "เฉลย: Dengue hemorrhagic fever"
+    },
+    {
+     "id": "3.3",
+     "prompt": "ส่งตรวจเพิ่มเพื่อยืนยัน",
+     "format": "short",
+     "accepted": [
+      "dengue"
+     ],
+     "keywords_all": [
+      "dengue"
+     ],
+     "key_text": "NS1 Ag / Dengue IgM positive, Tourniquet test positive",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "OSPE47",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "OSPE47-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [
+    "smear"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "HEMA-47-OSPE-004",
+   "block": "HEMA",
+   "cohort": 47,
+   "n": 4,
+   "type": "OSPE",
+   "station": 4,
+   "stem": "สถานี 4: ดู peripheral blood smear",
+   "items": [
+    {
+     "id": "4.1",
+     "prompt": "ผล blood smear",
+     "format": "short",
+     "accepted": [
+      "apde"
+     ],
+     "keywords_all": [
+      "apde"
+     ],
+     "key_text": "RBC normochromic normocytic · WBC eosinophilia · Platelet ปกติ/เพิ่ม",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    },
+    {
+     "id": "4.2",
+     "prompt": "Diagnosis",
+     "format": "short",
+     "accepted": [
+      "apde"
+     ],
+     "keywords_all": [
+      "apde"
+     ],
+     "key_text": "Acquired platelet dysfunction with eosinophilia (APDE)",
+     "source_key": "เฉลย: Acquired platelet dysfunction with eosinophilia (APDE)"
+    },
+    {
+     "id": "4.3",
+     "prompt": "ส่งตรวจเพิ่มเพื่อยืนยัน",
+     "format": "short",
+     "accepted": [
+      "apde"
+     ],
+     "keywords_all": [
+      "apde"
+     ],
+     "key_text": "Stool exam หาพยาธิ · Platelet function test (aggregation/PFA-100)",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "OSPE47",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "OSPE47-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [
+    "smear"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "HEMA-47-OSPE-005",
+   "block": "HEMA",
+   "cohort": 47,
+   "n": 5,
+   "type": "OSPE",
+   "station": 5,
+   "stem": "สถานี 5: ดู peripheral blood smear",
+   "items": [
+    {
+     "id": "5.1",
+     "prompt": "ผล blood smear",
+     "format": "short",
+     "accepted": [
+      "acute"
+     ],
+     "keywords_all": [
+      "acute"
+     ],
+     "key_text": "RBC normocytic anemia · WBC พบ myeloblast (Auer rod) · Platelet ลดลง",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    },
+    {
+     "id": "5.2",
+     "prompt": "Diagnosis",
+     "format": "short",
+     "accepted": [
+      "acute"
+     ],
+     "keywords_all": [
+      "acute"
+     ],
+     "key_text": "Acute myelogenous leukemia",
+     "source_key": "เฉลย: Acute myelogenous leukemia"
+    },
+    {
+     "id": "5.3",
+     "prompt": "ส่งตรวจเพิ่มเพื่อยืนยัน",
+     "format": "short",
+     "accepted": [
+      "acute"
+     ],
+     "keywords_all": [
+      "acute"
+     ],
+     "key_text": "Bone marrow (blast ≥20%) · Flow cytometry/immunophenotyping · Cytogenetics",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "OSPE47",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "OSPE47-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [
+    "smear"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "HEMA-47-OSPE-006",
+   "block": "HEMA",
+   "cohort": 47,
+   "n": 6,
+   "type": "OSPE",
+   "station": 6,
+   "stem": "สถานี 6: จงบอกปฏิกิริยาของ Blood group (Cell grouping: anti-A, anti-B, anti-A,B, anti-H, D · Serum grouping: A cell, B cell, O cell)",
+   "items": [
+    {
+     "id": "6.1",
+     "prompt": "AB Rh+",
+     "format": "short",
+     "accepted": [
+      "4+"
+     ],
+     "keywords_all": [
+      "4+"
+     ],
+     "key_text": "Cell: anti-A 4+, anti-B 4+, anti-A,B 4+, anti-H 4+, D 4+ · Serum: A 0, B 0, O 0",
+     "source_key": "เฉลย: Cell: anti-A 4+, anti-B 4+, anti-A,B 4+, anti-H 4+, D 4+ · Serum: A 0, B 0, O 0",
+     "image": "img/HEMA-47-OSPE-006.jpg",
+     "image_caption": "ตาราง Blood group (exam)"
+    },
+    {
+     "id": "6.2",
+     "prompt": "A Rh+",
+     "format": "short",
+     "accepted": [
+      "4+",
+      "0"
+     ],
+     "keywords_all": [
+      "4+"
+     ],
+     "key_text": "Cell: anti-A 4+, anti-B 0, anti-A,B 4+, anti-H 4+, D 4+ · Serum: A 0, B 4+, O 0",
+     "source_key": "เฉลย: Cell: anti-A 4+, anti-B 0, anti-A,B 4+, anti-H 4+, D 4+ · Serum: A 0, B 4+, O 0"
+    },
+    {
+     "id": "6.3",
+     "prompt": "B Rh+",
+     "format": "short",
+     "accepted": [
+      "4+",
+      "0"
+     ],
+     "keywords_all": [
+      "4+"
+     ],
+     "key_text": "Cell: anti-A 0, anti-B 4+, anti-A,B 4+, anti-H 4+, D 4+ · Serum: A 4+, B 0, O 0",
+     "source_key": "เฉลย: Cell: anti-A 0, anti-B 4+, anti-A,B 4+, anti-H 4+, D 4+ · Serum: A 4+, B 0, O 0"
+    },
+    {
+     "id": "6.4",
+     "prompt": "O Rh−",
+     "format": "short",
+     "accepted": [
+      "4+",
+      "0"
+     ],
+     "keywords_all": [
+      "4+"
+     ],
+     "key_text": "Cell: anti-A 0, anti-B 0, anti-A,B 0, anti-H 4+, D 0 · Serum: A 4+, B 4+, O 0",
+     "source_key": "เฉลย: Cell: anti-A 0, anti-B 0, anti-A,B 0, anti-H 4+, D 0 · Serum: A 4+, B 4+, O 0"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE47",
+     "pages": [
+      3
+     ]
+    },
+    {
+     "paper": "OSPE47-KEY",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [
+    "blood bank"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "HEMA-47-OSPE-007",
+   "block": "HEMA",
+   "cohort": 47,
+   "n": 7,
+   "type": "OSPE",
+   "station": 7,
+   "stem": "สถานี 7: ภาพ histology (lymph node)",
+   "items": [
+    {
+     "id": "7.1",
+     "prompt": "Diagnosis",
+     "format": "short",
+     "accepted": [
+      "diffuse large",
+      "dlbcl"
+     ],
+     "keywords_all": [
+      "diffuse"
+     ],
+     "key_text": "Diffuse large B-cell lymphoma (DLBCL)",
+     "source_key": "เฉลย: Diffuse large B-cell lymphoma (DLBCL)",
+     "image": "img/HEMA-47-OSPE-007.jpg",
+     "image_caption": "Lymph node histology"
+    },
+    {
+     "id": "7.2",
+     "prompt": "เซลล์ที่จำเพาะกับโรค (อย่างน้อย 2)",
+     "format": "short",
+     "accepted": [
+      "germinal"
+     ],
+     "keywords_all": [
+      "germinal"
+     ],
+     "key_text": "Germinal center B-cell · Post-germinal center B-cell",
+     "source_key": "เฉลย: Germinal center B-cell · Post-germinal center B-cell"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE47",
+     "pages": [
+      4
+     ]
+    },
+    {
+     "paper": "OSPE47-KEY",
+     "pages": [
+      4
+     ]
+    }
+   ],
+   "tags": [
+    "histology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "HEMA-47-OSPE-008",
+   "block": "HEMA",
+   "cohort": 47,
+   "n": 8,
+   "type": "OSPE",
+   "station": 8,
+   "stem": "สถานี 8: ภาพ liver (gross)",
+   "items": [
+    {
+     "id": "8.1",
+     "prompt": "Diagnosis",
+     "format": "short",
+     "accepted": [
+      "metastatic"
+     ],
+     "keywords_all": [
+      "metastatic"
+     ],
+     "key_text": "Metastatic cancer of the liver",
+     "source_key": "เฉลย: Metastatic cancer of the liver",
+     "image": "img/HEMA-47-OSPE-008.jpg",
+     "image_caption": "Liver gross"
+    },
+    {
+     "id": "8.2",
+     "prompt": "ส่งตรวจเพื่อทราบ origin",
+     "format": "short",
+     "accepted": [
+      "biopsy",
+      "tumor marker"
+     ],
+     "keywords_all": [
+      "biopsy"
+     ],
+     "key_text": "Tissue biopsy + tumor marker (ตามทางคลินิก)",
+     "source_key": "เฉลย: Tissue biopsy + tumor marker (ตามทางคลินิก)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE47",
+     "pages": [
+      4
+     ]
+    },
+    {
+     "paper": "OSPE47-KEY",
+     "pages": [
+      4
+     ]
+    }
+   ],
+   "tags": [
+    "pathology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "HEMA-47-OSPE-009",
+   "block": "HEMA",
+   "cohort": 47,
+   "n": 9,
+   "type": "OSPE",
+   "station": 9,
+   "stem": "สถานี 9: ภาพ histology (binucleate cell)",
+   "items": [
+    {
+     "id": "9.1",
+     "prompt": "Diagnosis",
+     "format": "short",
+     "accepted": [
+      "hodgkin"
+     ],
+     "keywords_all": [
+      "hodgkin"
+     ],
+     "key_text": "Classical Hodgkin's lymphoma",
+     "source_key": "เฉลย: Classical Hodgkin's lymphoma",
+     "image": "img/HEMA-47-OSPE-009.jpg",
+     "image_caption": "Histology สถานี 9"
+    },
+    {
+     "id": "9.2",
+     "prompt": "เชื้อจำเพาะ",
+     "format": "short",
+     "accepted": [
+      "ebv",
+      "epstein"
+     ],
+     "keywords_all": [
+      "ebv"
+     ],
+     "key_text": "Epstein-Barr virus (EBV)",
+     "source_key": "เฉลย: Epstein-Barr virus (EBV)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE47",
+     "pages": [
+      5
+     ]
+    },
+    {
+     "paper": "OSPE47-KEY",
+     "pages": [
+      5
+     ]
+    }
+   ],
+   "tags": [
+    "histology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "HEMA-47-OSPE-010",
+   "block": "HEMA",
+   "cohort": 47,
+   "n": 10,
+   "type": "OSPE",
+   "station": 10,
+   "stem": "สถานี 10: histopathology lymph node, IHC ย้อมติด CD20",
+   "items": [
+    {
+     "id": "10.1",
+     "prompt": "Diagnosis",
+     "format": "short",
+     "accepted": [
+      "diffuse large",
+      "dlbcl"
+     ],
+     "keywords_all": [
+      "diffuse"
+     ],
+     "key_text": "Non-Hodgkin lymphoma — Diffuse large B-cell lymphoma (DLBCL)",
+     "source_key": "เฉลย: Non-Hodgkin lymphoma — Diffuse large B-cell lymphoma (DLBCL)",
+     "image": "img/HEMA-47-OSPE-010.jpg",
+     "image_caption": "Lymph node IHC CD20"
+    },
+    {
+     "id": "10.2",
+     "prompt": "ส่งตรวจเพื่อทราบ origin",
+     "format": "short",
+     "accepted": [
+      "immunohistochemistry",
+      "ihc",
+      "cd20"
+     ],
+     "keywords_all": [
+      "immunohistochemistry"
+     ],
+     "key_text": "Immunohistochemistry panel (CD20, CD3, CD10, BCL6, MUM1) — ลายมือเฉลย \"?\"",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "OSPE47",
+     "pages": [
+      5
+     ]
+    },
+    {
+     "paper": "OSPE47-KEY",
+     "pages": [
+      5
+     ]
+    }
+   ],
+   "tags": [
+    "histology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "HEMA-47-OSPE-011",
+   "block": "HEMA",
+   "cohort": 47,
+   "n": 11,
+   "type": "OSPE",
+   "station": 11,
+   "stem": "สถานี 11: ภาพ gross มดลูก",
+   "items": [
+    {
+     "id": "11.1",
+     "prompt": "Diagnosis",
+     "format": "short",
+     "accepted": [
+      "leiomyoma"
+     ],
+     "keywords_all": [
+      "leiomyoma"
+     ],
+     "key_text": "Uterine leiomyoma",
+     "source_key": "เฉลย: Uterine leiomyoma",
+     "image": "img/HEMA-47-OSPE-011.jpg",
+     "image_caption": "Uterus gross"
+    },
+    {
+     "id": "11.2",
+     "prompt": "อาการผิดปกติ",
+     "format": "short",
+     "accepted": [
+      "hypermenorrhea",
+      "menorrhagia"
+     ],
+     "keywords_all": [
+      "hypermenorrhea"
+     ],
+     "key_text": "Hypermenorrhea (ประจำเดือนมามาก)",
+     "source_key": "เฉลย: Hypermenorrhea (ประจำเดือนมามาก)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE47",
+     "pages": [
+      6
+     ]
+    },
+    {
+     "paper": "OSPE47-KEY",
+     "pages": [
+      6
+     ]
+    }
+   ],
+   "tags": [
+    "pathology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "HEMA-47-OSPE-012",
+   "block": "HEMA",
+   "cohort": 47,
+   "n": 12,
+   "type": "OSPE",
+   "station": 12,
+   "stem": "สถานี 12: biopsy ผิวหนังจากฝ่าเท้า",
+   "items": [
+    {
+     "id": "12.1",
+     "prompt": "Diagnosis",
+     "format": "short",
+     "accepted": [
+      "squamous"
+     ],
+     "keywords_all": [
+      "squamous"
+     ],
+     "key_text": "Squamous cell carcinoma",
+     "source_key": "เฉลย: Squamous cell carcinoma",
+     "image": "img/HEMA-47-OSPE-012.jpg",
+     "image_caption": "Skin biopsy ฝ่าเท้า"
+    },
+    {
+     "id": "12.2",
+     "prompt": "Histology ดู differentiation 2 อย่าง",
+     "format": "short",
+     "accepted": [
+      "keratin pearl",
+      "keratinocyte"
+     ],
+     "keywords_all": [
+      "keratin"
+     ],
+     "key_text": "Keratin pearls · Atypical keratinocytes (polygonal cell with atypical nuclei)",
+     "source_key": "เฉลย: Keratin pearls · Atypical keratinocytes (polygonal cell with atypical nuclei)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE47",
+     "pages": [
+      6
+     ]
+    },
+    {
+     "paper": "OSPE47-KEY",
+     "pages": [
+      6
+     ]
+    }
+   ],
+   "tags": [
+    "histology"
+   ],
+   "source": "claude-mcp"
+  }
+ ]
+}
