@@ -3,6 +3,9 @@
 ทุกเวอร์ชันบันทึกที่นี่ และใน `version.json` (หน้าเว็บแสดงจาก `version.json`)
 เลขเวอร์ชัน: `MAJOR.MINOR.PATCH` — เพิ่มฟีเจอร์ = MINOR, แก้บั๊ก = PATCH
 
+## v0.57.0 · 2026-11-15 · MSK MCQ + KF + OSPE
+- บล็อก MSK ใหม่: MCQ 49–52 · KF 50–52 · OSPE 49–52
+
 ## v0.56.0 · 2026-11-15 · HLC MCQ + KF
 - บล็อก HLC ใหม่ MCQ 8 ชุด + KF 7 ชุด
 
