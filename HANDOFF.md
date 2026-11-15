@@ -11,7 +11,8 @@
 - 🔄 HEMA (`data/blocks/HEMA`, v0.53.0): MCQ 42–47,49–51 ✅ · KF 42-43,45–51 ✅ (46–49,51 AI draft) · OSPE 43,45–47,49–51 ✅ (46,49–51 AI draft) · ค้าง: MCQ 48 (ไม่มีไฟล์ข้อสอบใน Drive) + ข้อ MCQ ที่ยังข้าม ~120 ข้อ = ต้นฉบับไม่มีตัวเลือก/เป็น "-" (กู้ที่ parse พลาดแล้ว 14 ข้อ ใน 43, 51) · ถัดไป: บล็อก Drive ที่เหลือ (higher-brain, human-lifecycle, musculoskeletal, medprof-2, preclinic/1)
 - ✅ HB (Higher Brain, `data/blocks/HB`, v0.55.0, PR #95): MCQ 46–52 · KF 47–52 (47,48,51,52 AI draft) · OSPE 46,49,50,51 ✅ · OSPE 52 AI draft จากรูป (ข้อ 11–12 เดา) · OSPE 47 = ไฟล์เดียวกับ NERV 47 ไม่นำเข้าซ้ำ
 - ✅ HLC (Human Lifecycle, `data/blocks/HLC`, v0.56.0, branch finn-hlc-build): MCQ 42–47,50,51 · KF 43–47,50,51 (AI draft: MCQ 43,47,51 / KF 46,47,51) · ข้ามข้อ "-" ในต้นฉบับ · ถัดไป: medprof-2, integumentary, integrated, clinical-priming, preclinic/1
-- ✅ MSK (Musculoskeletal, `data/blocks/MSK`, v0.57.0, branch finn-msk-build): MCQ 49–52 · KF 50–52 · OSPE 49–52 (MCQ 52 ข้อ 12 AI draft) · ถัดไป: medprof-2, integumentary, integrated, clinical-priming, preclinic/1
+- ✅ MSK (Musculoskeletal, `data/blocks/MSK`, v0.57.0, branch finn-msk-build): MCQ 49–52 · KF 50–52 · OSPE 49–52 (MCQ 52 ข้อ 12 AI draft) · ถัดไป: integumentary (มีแต่ไฟล์เฉลย MCQ_Skin 46 ×2), clinical-priming (ลายมือ), preclinic/1
+- ✅ MEDPROF2 (KF 44–47) + INTEG (MCQ 50, 51; AI draft ทั้งชุด) v0.58.0 branch finn-medprof-build · ข้ามข้อที่ไม่มีตัวเลือก/รูป
 - ⛔ ยังไม่ทำ (ต้องดูแลพิเศษ): **CM1 KF 49 / MCQ 49** (Drive มีแต่ไฟล์เฉลย ไม่มีไฟล์ข้อสอบ) · **CM2 KF 40** (สแกนเป็นภาพทั้งไฟล์ข้อสอบ 4 หน้า + เฉลยลายมือ ต้องอ่านจากภาพ) · **HS MCQ 52** (25 ข้อ แทบว่าง มีโจทย์ 6 ข้อไม่มีไฮไลต์ → ไม่ลงทะเบียน) · **medprof-1 KF 39, 42, 46** (50, 52 ทำแล้ว ดูบรรทัดถัดไป; 42/39/46 ยังไม่ทำ) (ตรวจแล้ว: ข้อสอบเป็นเรียงความ/จริยธรรม/ตรวจร่างกาย เฉลย=ลายมือที่ text layer เป็นขยะ ต้องอ่านจากภาพทุกหน้า · 46 มีแต่ไฟล์ข้อสอบ 1 หน้า ไม่มีเฉลย · 39 ใช้เฉลยรวม 39,42 · ชุด 52: Ottawa Charter ข้อ 5, vital sign/ตรวจ respiratory ข้อ 6–7, HT/valve ข้อ 8, ปวดท้อง HCC ข้อ 9, ใส่สายสวน/ตรวจภายใน ข้อ 10)
 - ผู้ตรวจควรดู: เฉลยที่ไฟล์วง 2 ตัว (CM2 52 ข้อ 14, 18 · CM2 48 ข้อ 9 · CD 52 ข้อ 34 — ใส่ also_accept ใน decisions.json) · CM1 52 ข้อ 28 (secondary vs tertiary), ข้อ 37 (Bismarck vs managed competition), ข้อ 50 (primordial vs primary) · CD 52 ข้อ 16 · CM2 48 ข้อ 12 (วัด)
 - เครื่องมือที่แก้: `parse_key.py` เพิ่มสีไฮไลต์ cyan · `parse_mcq.py`/`parse_key.py` รองรับตัวเลือก ก ข ค ง จ และปก "1. ข้อสอบมีทั้งหมด…" ที่เป็นไทยล้วน — **ห้าม re-parse ชุดเก่า** (จะเขียนทับ parsed.json ที่แก้มือ เช่น imm_47 ลบลายน้ำแล้ว)
@@ -37,7 +38,6 @@
 - ตัวช่วย: `auditor/tools/parse_key.py` อ่านไฮไลต์ ส้ม/ฟ้า ได้ · เฉลยขีด/วงกลมลายมือต้องอ่านด้วยตา · ข้อที่ต้นฉบับเลือก 2 ตัว → `auditor/data/decisions.json` ใส่ `also_accept`
 - เขียนเฉลยแบบฟอร์มปี 52 (ดู CLAUDE.md "แบบฟอร์มเฉลย MCQ")
 - ทุกชั่วโมงมีงานตั้งเวลาเช็ก GitHub issue ใหม่ (ฝั่ง Claude ของ Finn)
-
 ## 2. ผู้ใช้ (Finn) ต้องการ
 - ตอบภาษาไทย สั้น ภาษาคน · ถ้าจะถาม ให้ถามเป็นช้อยส์ให้ติ๊ก
 - "ทำไปเรื่อย ๆ ไม่ต้องถาม" · "ประหยัดโทเค็นที่สุด" = ประหยัดที่ **วิธีทำ** เท่านั้น **ผลลัพธ์ต้องคุณภาพเท่าบล็อก GI** (ผู้ใช้ย้ำ 2026-11-08): ห้ามข้ามข้อที่จำโจทย์มาไม่ครบ → AI เขียนโจทย์เต็ม (ai_generated) · ช้อยส์ไม่ครบ → เติมให้ครบ 5 (ai_choices) · ข้อมีรูป → ตัดรูปใส่ · explanation เต็ม (เหตุผล + Trap) · ข้ามได้เฉพาะข้อที่ต้นฉบับว่างเปล่าจริง (ขีด –)

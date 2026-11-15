@@ -3,6 +3,9 @@
 ทุกเวอร์ชันบันทึกที่นี่ และใน `version.json` (หน้าเว็บแสดงจาก `version.json`)
 เลขเวอร์ชัน: `MAJOR.MINOR.PATCH` — เพิ่มฟีเจอร์ = MINOR, แก้บั๊ก = PATCH
 
+## v0.58.0 · 2026-11-15 · MEDPROF2 KF + INTEG MCQ
+- บล็อก MEDPROF2 (KF 44–47) และ INTEG (MCQ 50, 51) ใหม่
+
 ## v0.57.0 · 2026-11-15 · MSK MCQ + KF + OSPE
 - บล็อก MSK ใหม่: MCQ 49–52 · KF 50–52 · OSPE 49–52
 

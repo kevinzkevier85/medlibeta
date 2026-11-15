@@ -1,6 +1,6 @@
 # REVIEW — รายการรอผู้ใช้ตัดสิน
 
-ทั้งหมด 1474 รายการ
+ทั้งหมด 1534 รายการ
 วิธีตอบ: พิมพ์ในแชทเป็นบรรทัด เช่น `end_52_MCQ_027: คงเดิม` / `end_52_MCQ_063: C` / `end_52_MCQ_046: ตรวจใหม่`
 Claude จะบันทึกลง `auditor/data/decisions.json` แล้ว build ใหม่
 
@@ -800,6 +800,66 @@ Claude จะบันทึกลง `auditor/data/decisions.json` แล้ว
 | imm_48_MCQ_122 | None | D | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
 | imm_48_MCQ_123 | None | E | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
 | imm_52_MCQ_092 | ['A', 'B'] | A | mid | ต้นฉบับวงไว้หลายตัว |   |
+| integ_50_MCQ_001 | None | C | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| integ_50_MCQ_003 | None | C | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| integ_50_MCQ_004 | None | C | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| integ_50_MCQ_005 | None | B | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| integ_50_MCQ_006 | None | A | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| integ_50_MCQ_007 | None | A | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| integ_50_MCQ_008 | None | A | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| integ_50_MCQ_009 | None | A | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| integ_50_MCQ_010 | None | C | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| integ_50_MCQ_011 | None | A | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| integ_50_MCQ_012 | None | B | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| integ_50_MCQ_013 | None | A | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| integ_50_MCQ_014 | None | A | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| integ_50_MCQ_015 | None | A | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| integ_50_MCQ_016 | None | C | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| integ_50_MCQ_017 | None | A | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| integ_50_MCQ_019 | None | B | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| integ_50_MCQ_020 | None | A | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| integ_50_MCQ_021 | None | B | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| integ_50_MCQ_022 | None | A | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| integ_50_MCQ_023 | None | A | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| integ_50_MCQ_024 | None | E | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| integ_50_MCQ_025 | None | A | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| integ_50_MCQ_026 | None | A | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| integ_50_MCQ_027 | None | B | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| integ_50_MCQ_028 | None | B | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| integ_50_MCQ_029 | None | B | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| integ_50_MCQ_031 | None | B | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| integ_50_MCQ_032 | None | B | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| integ_51_MCQ_002 | None | A | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| integ_51_MCQ_003 | None | C | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| integ_51_MCQ_004 | None | D | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| integ_51_MCQ_005 | None | E | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| integ_51_MCQ_006 | None | D | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| integ_51_MCQ_007 | None | D | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| integ_51_MCQ_008 | None | D | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| integ_51_MCQ_010 | None | A | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| integ_51_MCQ_011 | None | A | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| integ_51_MCQ_012 | None | C | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| integ_51_MCQ_013 | None | C | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| integ_51_MCQ_015 | None | A | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| integ_51_MCQ_018 | None | A | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| integ_51_MCQ_021 | None | D | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| integ_51_MCQ_023 | None | E | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| integ_51_MCQ_024 | None | A | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| integ_51_MCQ_033 | None | A | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| integ_51_MCQ_037 | None | C | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| integ_51_MCQ_038 | None | A | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| integ_51_MCQ_044 | None | A | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| integ_51_MCQ_045 | None | C | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| integ_51_MCQ_048 | None | A | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| integ_51_MCQ_049 | None | B | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| integ_51_MCQ_051 | None | A | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| integ_51_MCQ_053 | None | A | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| integ_51_MCQ_054 | None | E | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| integ_51_MCQ_055 | None | A | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| integ_51_MCQ_057 | None | D | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| integ_51_MCQ_058 | None | C | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| integ_51_MCQ_059 | None | D | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| integ_51_MCQ_060 | None | B | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
 | kub_42-43_MCQ_003 | D | A | low | เฉลยขัดกับ AI |   |
 | kub_42-43_MCQ_005 | C | B | low | เฉลยขัดกับ AI |   |
 | kub_42-43_MCQ_021 | C | D | high | เฉลยขัดกับ AI |   |
