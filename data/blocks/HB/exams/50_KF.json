@@ -1,0 +1,346 @@
+{
+ "meta": {
+  "set_id": "50_KF",
+  "block": "HB",
+  "cohort": 50,
+  "type": "KF",
+  "title": "KF Higher Brain Function · Med PSU 50",
+  "time_limit_min": 90,
+  "generated_by": "auditor/tools/build_kf.py from auditor/data/work/hb_50_KF.kf.json — do not edit by hand"
+ },
+ "questions": [
+  {
+   "id": "HB-50-KF-001",
+   "block": "HB",
+   "cohort": 50,
+   "n": 1,
+   "type": "KF",
+   "case": "ชาย 30 ปี 8 เดือนก่อนแยกตัว ขาดแรงจูงใจ ไม่แสดงอารมณ์; 1 เดือนก่อนเชื่อว่าตนเป็นพระพุทธเจ้า ทุกคนพูดถึงตน อ่านความคิดคนได้ ได้ยินเสียงวิจารณ์/สนทนา พูดตามและหัวเราะไม่มีเหตุผล",
+   "items": [
+    {
+     "id": "1.1a",
+     "prompt": "Negative symptoms (ศัพท์เทคนิค + อาการ)",
+     "format": "short",
+     "accepted": [
+      "asociality",
+      "avolition",
+      "alogia",
+      "flattening"
+     ],
+     "keywords_all": [
+      "asociality"
+     ],
+     "key_text": "Asociality · Avolition · Alogia · Affective flattening",
+     "source_key": "เฉลย: Asociality · Avolition · Alogia · Affective flattening"
+    },
+    {
+     "id": "1.1b",
+     "prompt": "Delusions",
+     "format": "short",
+     "accepted": [
+      "religious",
+      "reference",
+      "mind reading",
+      "broadcasting"
+     ],
+     "keywords_all": [
+      "religious"
+     ],
+     "key_text": "Religious (grandiose) delusion · Delusion of reference · Delusion of mind reading · Thought broadcasting",
+     "source_key": "เฉลย: Religious (grandiose) delusion · Delusion of reference · Delusion of mind reading · Thought broadcasting"
+    },
+    {
+     "id": "1.1c",
+     "prompt": "Hallucination และ catatonia",
+     "format": "short",
+     "accepted": [
+      "commenting",
+      "conversing",
+      "echolalia"
+     ],
+     "keywords_all": [
+      "commenting"
+     ],
+     "key_text": "Voice commenting · Voice conversing · Echolalia/catatonia (disorganized motor behavior)",
+     "source_key": "เฉลย: Voice commenting · Voice conversing · Echolalia/catatonia (disorganized motor behavior)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF50",
+     "pages": [
+      1
+     ]
+    },
+    {
+     "paper": "KF50-KEY",
+     "pages": [
+      1
+     ]
+    }
+   ],
+   "tags": [
+    "psych"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "HB-50-KF-002",
+   "block": "HB",
+   "cohort": 50,
+   "n": 2,
+   "type": "KF",
+   "case": "ชาย 45 ปี เวียนศีรษะเฉียบพลัน right-beating nystagmus ถูกยับยั้งด้วย fixation, head impulse corrective saccade ไปซ้าย, sway ซ้าย",
+   "items": [
+    {
+     "id": "2.1",
+     "prompt": "ตำแหน่งพยาธิสภาพ",
+     "format": "short",
+     "accepted": [
+      "left",
+      "vestibular"
+     ],
+     "keywords_all": [
+      "left"
+     ],
+     "key_text": "Left peripheral vestibular system (left VOR hypofunction)",
+     "source_key": "ปรับตามเฉลยของ KF 49 (ด้านตรงข้าม) — AI เติม"
+    },
+    {
+     "id": "2.2",
+     "prompt": "Diagnosis",
+     "format": "short",
+     "accepted": [
+      "vestibular neuritis"
+     ],
+     "keywords_all": [
+      "vestibular neuritis"
+     ],
+     "key_text": "Acute left vestibular neuritis",
+     "source_key": "เฉลย: Acute left vestibular neuritis"
+    },
+    {
+     "id": "2.3",
+     "prompt": "PE ที่บ่งชี้ peripheral vertigo",
+     "format": "short",
+     "accepted": [
+      "fixation suppression",
+      "head impulse"
+     ],
+     "keywords_all": [
+      "fixation suppression"
+     ],
+     "key_text": "Unidirectional horizontal nystagmus with fixation suppression · Head impulse test positive (corrective saccade) · Cerebellar signs ปกติ",
+     "source_key": "เฉลย: Unidirectional horizontal nystagmus with fixation suppression · Head impulse test positive (corrective saccade) · Cerebellar signs ปกติ"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "KF50",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "KF50-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [
+    "vestibular"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "HB-50-KF-003",
+   "block": "HB",
+   "cohort": 50,
+   "n": 3,
+   "type": "KF",
+   "case": "เด็กชาย 1 ปี ไข้ 3 วัน ซึม ชักเกร็งกระตุกแขนซ้าย fontanelle ตึง CSF: WBC 1500 PMN 90%, protein 100, glucose 20 (ปกติ 90)",
+   "items": [
+    {
+     "id": "3.1",
+     "prompt": "แปลผล CSF",
+     "format": "short",
+     "accepted": [
+      "neutrophil",
+      "protein",
+      "glucose"
+     ],
+     "keywords_all": [
+      "neutrophil"
+     ],
+     "key_text": "Neutrophil predominance (pleocytosis) · Protein เพิ่ม · Glucose ลดลง · RBC ไม่มี · ความดันเพิ่ม",
+     "source_key": "เฉลย: Neutrophil predominance (pleocytosis) · Protein เพิ่ม · Glucose ลดลง · RBC ไม่มี · ความดันเพิ่ม"
+    },
+    {
+     "id": "3.2",
+     "prompt": "โรคที่น่าจะเป็น",
+     "format": "short",
+     "accepted": [
+      "bacterial meningitis"
+     ],
+     "keywords_all": [
+      "bacterial meningitis"
+     ],
+     "key_text": "Acute bacterial meningitis",
+     "source_key": "เฉลย: Acute bacterial meningitis"
+    },
+    {
+     "id": "3.3",
+     "prompt": "PE ที่บอก IICP",
+     "format": "short",
+     "accepted": [
+      "papilledema",
+      "fontanelle",
+      "cushing"
+     ],
+     "keywords_all": [
+      "papilledema"
+     ],
+     "key_text": "ระดับความรู้สึกตัวลดลง/ซึม · Papilledema · Bulging anterior fontanelle · Cushing’s triad (bradycardia, hypertension, irregular respiration) · Headache/vomiting · Decerebrate/decorticate posture",
+     "source_key": "เฉลย: ระดับความรู้สึกตัวลดลง/ซึม · Papilledema · Bulging anterior fontanelle · Cushing’s triad (bradycardia, hypertension, irregular respiration) · Headache/vomiting · Decerebrate/decorticate posture"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF50",
+     "pages": [
+      3
+     ]
+    },
+    {
+     "paper": "KF50-KEY",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [
+    "neuro"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "HB-50-KF-004",
+   "block": "HB",
+   "cohort": 50,
+   "n": 4,
+   "type": "KF",
+   "case": "Case study: Eye — จากรอยโรคเครื่องหมายสีดำในรูป swinging flashlight test ให้ผลอย่างไร; รอยโรค right occipital lobe วาดลานสายตา",
+   "items": [
+    {
+     "id": "4.1",
+     "prompt": "ผล swinging flashlight test",
+     "format": "short",
+     "accepted": [
+      "rapd"
+     ],
+     "keywords_all": [
+      "rapd"
+     ],
+     "key_text": "Right RAPD positive (ตามลายมือเฉลย: ตาขวา non-reactive/ลดลง)",
+     "source_key": "เฉลย: Right RAPD positive (ตามลายมือเฉลย: ตาขวา non-reactive/ลดลง)",
+     "image": "img/HB-50-KF-004.jpg",
+     "image_caption": "Visual pathway + lesion"
+    },
+    {
+     "id": "4.2",
+     "prompt": "Visual field defect (right occipital lobe)",
+     "format": "short",
+     "accepted": [
+      "homonymous",
+      "macular sparing"
+     ],
+     "keywords_all": [
+      "homonymous"
+     ],
+     "key_text": "Left homonymous hemianopia with macular sparing (สาเหตุ vascular — PCA)",
+     "source_key": "เฉลย: Left homonymous hemianopia with macular sparing (สาเหตุ vascular — PCA)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF50",
+     "pages": [
+      4
+     ]
+    },
+    {
+     "paper": "KF50-KEY",
+     "pages": [
+      4
+     ]
+    }
+   ],
+   "tags": [
+    "neuroophth"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "HB-50-KF-005",
+   "block": "HB",
+   "cohort": 50,
+   "n": 5,
+   "type": "KF",
+   "case": "ผู้ป่วยกลอกตา: ตาซ้ายไม่สามารถ abduct",
+   "items": [
+    {
+     "id": "5.1",
+     "prompt": "Extraocular muscle ที่ผิดปกติ",
+     "format": "short",
+     "accepted": [
+      "lateral rectus"
+     ],
+     "keywords_all": [
+      "lateral rectus"
+     ],
+     "key_text": "Left lateral rectus (เฉลยลายมือเขียน \"internal/lateral rectus\" อ่านยาก)",
+     "source_key": "เฉลย: Left lateral rectus (เฉลยลายมือเขียน \"internal/lateral rectus\" อ่านยาก)",
+     "image": "img/HB-50-KF-005.jpg",
+     "image_caption": "Extraocular muscle test"
+    },
+    {
+     "id": "5.2",
+     "prompt": "Cranial nerve ที่เสีย",
+     "format": "short",
+     "accepted": [
+      "abducens"
+     ],
+     "keywords_all": [
+      "abducens"
+     ],
+     "key_text": "Left abducens nerve (CN VI)",
+     "source_key": "เฉลย: Left abducens nerve (CN VI)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF50",
+     "pages": [
+      5
+     ]
+    },
+    {
+     "paper": "KF50-KEY",
+     "pages": [
+      5
+     ]
+    }
+   ],
+   "tags": [
+    "neuroophth"
+   ],
+   "source": "claude-mcp"
+  }
+ ]
+}
