@@ -1,0 +1,633 @@
+{
+ "meta": {
+  "set_id": "45_KF",
+  "block": "HLC",
+  "cohort": 45,
+  "type": "KF",
+  "title": "KF Human Lifecycle · Med PSU 45",
+  "time_limit_min": 120,
+  "generated_by": "auditor/tools/build_kf.py from auditor/data/work/hlc_45_KF.kf.json — do not edit by hand"
+ },
+ "questions": [
+  {
+   "id": "HLC-45-KF-001",
+   "block": "HLC",
+   "cohort": 45,
+   "n": 1,
+   "type": "KF",
+   "case": "หญิงกินยาความดัน (enalapril) ประจำเดือนขาด 2 เดือน US พบถุงตั้งครรภ์ 2 cm yolk sac, heart beat",
+   "items": [
+    {
+     "id": "1.1",
+     "prompt": "อายุครรภ์จาก US",
+     "format": "short",
+     "accepted": [
+      "8"
+     ],
+     "keywords_all": [
+      "8"
+     ],
+     "key_text": "8 weeks GA",
+     "source_key": "เฉลย: 8 weeks GA"
+    },
+    {
+     "id": "1.2",
+     "prompt": "Enalapril ส่งผลช่วงอายุครรภ์เท่าไหร่",
+     "format": "short",
+     "accepted": [
+      "14",
+      "trimester"
+     ],
+     "keywords_all": [
+      "14"
+     ],
+     "key_text": "> 14 weeks (หลัง first trimester)",
+     "source_key": "เฉลย: > 14 weeks (หลัง first trimester)"
+    },
+    {
+     "id": "1.3",
+     "prompt": "ตรวจความพิการด้วย US ที่อายุครรภ์เท่าไหร่",
+     "format": "short",
+     "accepted": [
+      "19",
+      "22"
+     ],
+     "keywords_all": [
+      "19"
+     ],
+     "key_text": "19–22 wk GA (17–20 wk fertilization age)",
+     "source_key": "เฉลย: 19–22 wk GA (17–20 wk fertilization age)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF45",
+     "pages": [
+      1
+     ]
+    },
+    {
+     "paper": "KF45-KEY",
+     "pages": [
+      1
+     ]
+    }
+   ],
+   "tags": [
+    "pregnancy"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "HLC-45-KF-002",
+   "block": "HLC",
+   "cohort": 45,
+   "n": 2,
+   "type": "KF",
+   "case": "ผู้หญิงคนหนึ่ง placenta previa คลอด 30 wk น้ำหนัก 1200 g ต้องช่วยหายใจ",
+   "items": [
+    {
+     "id": "2.1",
+     "prompt": "ตำแหน่งปกติที่รกควรฝังตัว",
+     "format": "short",
+     "accepted": [
+      "posterior",
+      "fundus"
+     ],
+     "keywords_all": [
+      "posterior"
+     ],
+     "key_text": "Posterior fundus of uterus",
+     "source_key": "เฉลย: Posterior fundus of uterus"
+    },
+    {
+     "id": "2.2",
+     "prompt": "สาเหตุที่เด็กหายใจผิดปกติ",
+     "format": "short",
+     "accepted": [
+      "surfactant"
+     ],
+     "keywords_all": [
+      "surfactant"
+     ],
+     "key_text": "Pulmonary surfactant เริ่มสร้างที่ ~24 wk และ mature ที่ 34–35 wk เด็กคลอดก่อนจึงสร้างไม่พอ ปอดไม่ยืดหยุ่น ต้องช่วยหายใจ",
+     "source_key": "เฉลย: Pulmonary surfactant เริ่มสร้างที่ ~24 wk และ mature ที่ 34–35 wk เด็กคลอดก่อนจึงสร้างไม่พอ ปอดไม่ยืดหยุ่น ต้องช่วยหายใจ"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF45",
+     "pages": [
+      1
+     ]
+    },
+    {
+     "paper": "KF45-KEY",
+     "pages": [
+      1
+     ]
+    }
+   ],
+   "tags": [
+    "neonate"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "HLC-45-KF-003",
+   "block": "HLC",
+   "cohort": 45,
+   "n": 3,
+   "type": "KF",
+   "case": "หญิงตั้งครรภ์เป็น common cold แล้วพัฒนาเป็น pneumonia",
+   "items": [
+    {
+     "id": "3.1",
+     "prompt": "การเปลี่ยนแปลงที่ทำให้อาการรุนแรง (2 ข้อ)",
+     "format": "short",
+     "accepted": [
+      "humoral",
+      "pmn"
+     ],
+     "keywords_all": [
+      "humoral"
+     ],
+     "key_text": "↓ Immunological response ทั้ง humoral และ cellular · ↓ PMN function (WBC ↑ แต่ function ไม่ดี)",
+     "source_key": "เฉลย: ↓ Immunological response ทั้ง humoral และ cellular · ↓ PMN function (WBC ↑ แต่ function ไม่ดี)"
+    },
+    {
+     "id": "3.2",
+     "prompt": "ต้องเพิ่ม dose antibiotic เพราะการเปลี่ยนแปลงใด",
+     "format": "short",
+     "accepted": [
+      "cardiac output",
+      "progesterone"
+     ],
+     "keywords_all": [
+      "cardiac output"
+     ],
+     "key_text": "↑ cardiac output → ↑ hepatic และ renal blood flow → ↑ metabolism และ excretion · ↑ progesterone ทำให้ enzyme/transporter บางชนิดมากขึ้น → ↑ การกำจัดยา",
+     "source_key": "เฉลย: ↑ cardiac output → ↑ hepatic และ renal blood flow → ↑ metabolism และ excretion · ↑ progesterone ทำให้ enzyme/transporter บางชนิดมากขึ้น → ↑ การกำจัดยา"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF45",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "KF45-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [
+    "pregnancy"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "HLC-45-KF-004",
+   "block": "HLC",
+   "cohort": 45,
+   "n": 4,
+   "type": "KF",
+   "case": "หญิงตั้งครรภ์ต้องการยาลดความดัน",
+   "items": [
+    {
+     "id": "4.1",
+     "prompt": "เลือกยาอะไร เหตุผล",
+     "format": "short",
+     "accepted": [
+      "hydralazine",
+      "labetalol"
+     ],
+     "keywords_all": [
+      "hydralazine"
+     ],
+     "key_text": "Hydralazine, Labetalol เพราะปลอดภัยต่อทารกในครรภ์ · ถ้าใช้ยาอื่น เช่น Enalapril อาจเกิด severe neonatal renal insufficiency หรือ Propranolol อาจเกิด neonatal hypoglycemia และ respiratory depression",
+     "source_key": "เฉลย: Hydralazine, Labetalol เพราะปลอดภัยต่อทารกในครรภ์ · ถ้าใช้ยาอื่น เช่น Enalapril อาจเกิด severe neonatal renal insufficiency หรือ Propranolol อาจเกิด neonatal hypoglycemia และ respiratory depression"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF45",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "KF45-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [
+    "pharm"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "HLC-45-KF-005",
+   "block": "HLC",
+   "cohort": 45,
+   "n": 5,
+   "type": "KF",
+   "case": "พาเด็กอายุ 2 ขวบมาพบแพทย์ ให้ยา paracetamol กี่ mg",
+   "items": [
+    {
+     "id": "5.1",
+     "prompt": "น้ำหนักและขนาดยา",
+     "format": "short",
+     "accepted": [
+      "12",
+      "120",
+      "180"
+     ],
+     "keywords_all": [
+      "12"
+     ],
+     "key_text": "น้ำหนัก (2×2)+8 = 12 kg · Paracetamol 10–15 mg/kg ดังนั้นให้ 120–180 mg PO prn q 4–6 hr",
+     "source_key": "เฉลย: น้ำหนัก (2×2)+8 = 12 kg · Paracetamol 10–15 mg/kg ดังนั้นให้ 120–180 mg PO prn q 4–6 hr"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF45",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "KF45-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [
+    "pharm"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "HLC-45-KF-006",
+   "block": "HLC",
+   "cohort": 45,
+   "n": 6,
+   "type": "KF",
+   "case": "ทารกคลอดครบกำหนด pulmonary hypertension ของทารกแรกเกิด แสดงเขียวส่วนล่าง (preductal LV O2 sat สูง) ต่างจากส่วนบน",
+   "items": [
+    {
+     "id": "6.1",
+     "prompt": "กลไกการไหลเวียนเลือด",
+     "format": "short",
+     "accepted": [
+      "ppHN",
+      "pdA",
+      "right-to-left",
+      "pvr"
+     ],
+     "keywords_all": [
+      "ppHN"
+     ],
+     "key_text": "Persistent pulmonary HTN of the newborn: PVR สูง (เช่นใน RDS, pneumonia) PVR > SVR → เลือดจาก RV ไม่ไปปอดจริงแต่ผ่าน PDA เข้า systemic (right-to-left shunt) · ส่วนบน (preductal) ได้เลือดจาก LV (O2 sat สูง) ส่วนล่าง (postductal) ได้เลือดผสม LV + shunt ทำให้ O2 sat ต่ำ",
+     "source_key": "เฉลย: Persistent pulmonary HTN of the newborn: PVR สูง (เช่นใน RDS, pneumonia) PVR > SVR → เลือดจาก RV ไม่ไปปอดจริงแต่ผ่าน PDA เข้า systemic (right-to-left shunt) · ส่วนบน (preductal) ได้เลือดจาก LV (O2 sat สูง) ส่วนล่าง (postductal) ได้เลือดผสม LV + shunt ทำให้ O2 sat ต่ำ"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF45",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "KF45-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [
+    "neonate"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "HLC-45-KF-007",
+   "block": "HLC",
+   "cohort": 45,
+   "n": 7,
+   "type": "KF",
+   "case": "เด็กอายุ 12 ปี แม่สูง 160 cm พ่อสูง 169 cm น้ำหนัก 55 kg สูง 150 cm breast bud 1.5 cm ใต้ areola ไม่มีขนหัวหน่าว/รักแร้",
+   "items": [
+    {
+     "id": "7.1",
+     "prompt": "Tanner stage (breast และ pubic)",
+     "format": "short",
+     "accepted": [
+      "breast",
+      "stage ii"
+     ],
+     "keywords_all": [
+      "breast"
+     ],
+     "key_text": "Breast stage II, Pubic hair stage I",
+     "source_key": "เฉลย: Breast stage II, Pubic hair stage I"
+    },
+    {
+     "id": "7.2",
+     "prompt": "Mid-parental height",
+     "format": "short",
+     "accepted": [
+      "158"
+     ],
+     "keywords_all": [
+      "158"
+     ],
+     "key_text": "(160+169−13)/2 ± 8 = 158 ± 8 cm",
+     "source_key": "เฉลย: (160+169−13)/2 ± 8 = 158 ± 8 cm"
+    },
+    {
+     "id": "7.3",
+     "prompt": "1–2 ปีข้างหน้า ความสูง น้ำหนัก รูปร่าง",
+     "format": "short",
+     "accepted": [
+      "7",
+      "4"
+     ],
+     "keywords_all": [
+      "7"
+     ],
+     "key_text": "ความสูงเพิ่ม ~7 cm · น้ำหนักเพิ่ม ~4 kg · รูปร่าง: หน้าอกใหญ่ขึ้น ขนหัวหน่าว สิวขึ้น สะโพกผาย",
+     "source_key": "เฉลย: ความสูงเพิ่ม ~7 cm · น้ำหนักเพิ่ม ~4 kg · รูปร่าง: หน้าอกใหญ่ขึ้น ขนหัวหน่าว สิวขึ้น สะโพกผาย"
+    },
+    {
+     "id": "7.4",
+     "prompt": "คาดว่าจะมีประจำเดือนเมื่ออายุ",
+     "format": "short",
+     "accepted": [
+      "16"
+     ],
+     "keywords_all": [
+      "16"
+     ],
+     "key_text": "~16 ปี (ลายมือเฉลย: ประจำเดือนมักมาหลัง Tanner IV ~2 ปี)",
+     "source_key": "เฉลย: ~16 ปี (ลายมือเฉลย: ประจำเดือนมักมาหลัง Tanner IV ~2 ปี)"
+    },
+    {
+     "id": "7.5",
+     "prompt": "ความสูงเพิ่มหลังมีประจำเดือนครั้งแรก",
+     "format": "short",
+     "accepted": [
+      "7"
+     ],
+     "keywords_all": [
+      "7"
+     ],
+     "key_text": "~7 cm",
+     "source_key": "เฉลย: ~7 cm"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF45",
+     "pages": [
+      3
+     ]
+    },
+    {
+     "paper": "KF45-KEY",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [
+    "puberty"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "HLC-45-KF-008",
+   "block": "HLC",
+   "cohort": 45,
+   "n": 8,
+   "type": "KF",
+   "case": "พัฒนาการเด็กอายุ 3 ปี",
+   "items": [
+    {
+     "id": "8.1",
+     "prompt": "Gross motor",
+     "format": "short",
+     "accepted": [
+      "tricycle"
+     ],
+     "keywords_all": [
+      "tricycle"
+     ],
+     "key_text": "ปั่น tricycle · ยืนขาเดียวได้ 3 วินาที · เดินขึ้นลงบันไดสลับขาไม่ต้องเกาะ",
+     "source_key": "เฉลย: ปั่น tricycle · ยืนขาเดียวได้ 3 วินาที · เดินขึ้นลงบันไดสลับขาไม่ต้องเกาะ"
+    },
+    {
+     "id": "8.2",
+     "prompt": "Fine motor",
+     "format": "short",
+     "accepted": [
+      "วงกลม"
+     ],
+     "keywords_all": [
+      "วงกลม"
+     ],
+     "key_text": "วาดรูปวงกลม วาดหน้าคน ต่อ block ไม่เป็นสะพาน",
+     "source_key": "เฉลย: วาดรูปวงกลม วาดหน้าคน ต่อ block ไม่เป็นสะพาน"
+    },
+    {
+     "id": "8.3",
+     "prompt": "ภาษา",
+     "format": "short",
+     "accepted": [
+      "75"
+     ],
+     "keywords_all": [
+      "75"
+     ],
+     "key_text": "จัดกลุ่มสิ่งของ พูดได้ 3 คำ คนอื่นฟังเข้าใจ ~75%",
+     "source_key": "เฉลย: จัดกลุ่มสิ่งของ พูดได้ 3 คำ คนอื่นฟังเข้าใจ ~75%"
+    },
+    {
+     "id": "8.4",
+     "prompt": "การช่วยเหลือตนเอง",
+     "format": "short",
+     "accepted": [
+      "รองเท้า"
+     ],
+     "keywords_all": [
+      "รองเท้า"
+     ],
+     "key_text": "ใส่รองเท้า แกะกระดุม กินอาหารเอง",
+     "source_key": "เฉลย: ใส่รองเท้า แกะกระดุม กินอาหารเอง"
+    },
+    {
+     "id": "8.5",
+     "prompt": "คุณธรรม",
+     "format": "short",
+     "accepted": [
+      "คุณธรรม"
+     ],
+     "keywords_all": [
+      "คุณธรรม"
+     ],
+     "key_text": "คุณธรรมขั้นต้น (2–9 ปี) ทำแล้วได้ผลประโยชน์ vs หลีกเลี่ยงการถูกทำโทษ",
+     "source_key": "เฉลย: คุณธรรมขั้นต้น (2–9 ปี) ทำแล้วได้ผลประโยชน์ vs หลีกเลี่ยงการถูกทำโทษ"
+    },
+    {
+     "id": "8.6",
+     "prompt": "แนวทางป้องกันอุบัติเหตุ",
+     "format": "short",
+     "accepted": [
+      "entrapment",
+      "drowning"
+     ],
+     "keywords_all": [
+      "entrapment"
+     ],
+     "key_text": "Entrapment: ช่องราวต้องกว้าง <9 cm · Drowning: ต้องอยู่ในสายตาและระยะที่คว้าถึงได้ + เรียนว่ายน้ำ",
+     "source_key": "เฉลย: Entrapment: ช่องราวต้องกว้าง <9 cm · Drowning: ต้องอยู่ในสายตาและระยะที่คว้าถึงได้ + เรียนว่ายน้ำ"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF45",
+     "pages": [
+      4
+     ]
+    },
+    {
+     "paper": "KF45-KEY",
+     "pages": [
+      4
+     ]
+    }
+   ],
+   "tags": [
+    "pediatrics"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "HLC-45-KF-009",
+   "block": "HLC",
+   "cohort": 45,
+   "n": 9,
+   "type": "KF",
+   "case": "เติมคำเรียกแต่ละระดับ (ภูเขาน้ำแข็ง Freud) พร้อมตัวอย่างระดับละ 2 อย่าง",
+   "items": [
+    {
+     "id": "9.1",
+     "prompt": "Conscious / Subconscious / Unconscious",
+     "format": "short",
+     "accepted": [
+      "conscious",
+      "subconscious",
+      "unconscious"
+     ],
+     "keywords_all": [
+      "conscious"
+     ],
+     "key_text": "Conscious: thought, perception · Subconscious: memories, stored knowledge · Unconscious: fears, violent motives, sexual desires, shameful experiences, selfish need",
+     "source_key": "เฉลย: Conscious: thought, perception · Subconscious: memories, stored knowledge · Unconscious: fears, violent motives, sexual desires, shameful experiences, selfish need"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF45",
+     "pages": [
+      4
+     ]
+    },
+    {
+     "paper": "KF45-KEY",
+     "pages": [
+      4
+     ]
+    }
+   ],
+   "tags": [
+    "psychology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "HLC-45-KF-010",
+   "block": "HLC",
+   "cohort": 45,
+   "n": 10,
+   "type": "KF",
+   "case": "เขียนบทความเรื่อง Death & Dying",
+   "items": [
+    {
+     "id": "10.1",
+     "prompt": "ความตายเป็นสุขภาวะของส่วนรวม",
+     "format": "short",
+     "accepted": [
+      "ร่างกาย",
+      "จิตวิญญาณ"
+     ],
+     "keywords_all": [
+      "ร่างกาย"
+     ],
+     "key_text": "ต้องสะท้อนมิติทางด้านร่างกาย จิตใจ สังคม จิตวิญญาณ และครอบครัว",
+     "source_key": "เฉลย: ต้องสะท้อนมิติทางด้านร่างกาย จิตใจ สังคม จิตวิญญาณ และครอบครัว"
+    },
+    {
+     "id": "10.2",
+     "prompt": "หน้าที่ของแพทย์ใน “ตายดี”",
+     "format": "short",
+     "accepted": [
+      "palliative",
+      "สื่อสาร"
+     ],
+     "keywords_all": [
+      "palliative"
+     ],
+     "key_text": "ช่วยเหลือมิติต่างๆ ลดความทรมาน · สื่อสารและบอกข่าวร้าย · Symptomatic treatment รักษาอาการและความทุกข์ · เชื่อมโยงสื่อสารกับครอบครัวและผู้ดูแล · ดูแลแบบ palliative care",
+     "source_key": "เฉลย: ช่วยเหลือมิติต่างๆ ลดความทรมาน · สื่อสารและบอกข่าวร้าย · Symptomatic treatment รักษาอาการและความทุกข์ · เชื่อมโยงสื่อสารกับครอบครัวและผู้ดูแล · ดูแลแบบ palliative care"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF45",
+     "pages": [
+      5
+     ]
+    },
+    {
+     "paper": "KF45-KEY",
+     "pages": [
+      5
+     ]
+    }
+   ],
+   "tags": [
+    "ethics"
+   ],
+   "source": "claude-mcp"
+  }
+ ]
+}
