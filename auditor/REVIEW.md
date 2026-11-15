@@ -444,7 +444,7 @@ Claude จะบันทึกลง `auditor/data/decisions.json` แล้ว
 | hema_51_MCQ_011 | None | B | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
 | hema_51_MCQ_015 | None | C | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
 | hema_51_MCQ_027 | None | C | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
-| hema_51_MCQ_034 | None | A | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| hema_51_MCQ_033 | None | A | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
 | hema_51_MCQ_037 | None | A | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
 | hema_51_MCQ_043 | None | C | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
 | hema_51_MCQ_045 | None | C | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |

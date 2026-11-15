@@ -7,23 +7,10 @@
   "title": "MCQ Hematopoietic · Med PSU 43",
   "n_source_items": 86,
   "skipped": [
-   "20",
-   "22",
-   "24",
    "26",
-   "27",
-   "28",
-   "30",
-   "31",
-   "32",
-   "35",
    "36",
-   "53",
-   "57",
    "70",
-   "71",
-   "76",
-   "86"
+   "71"
   ],
   "generated_by": "auditor/tools/build_outputs.py — do not edit by hand"
  },
@@ -820,6 +807,59 @@
    }
   },
   {
+   "id": "HEMA-43-MCQ-020",
+   "block": "HEMA",
+   "cohort": 43,
+   "n": 20,
+   "type": "MCQ",
+   "stem": "จะเกิดอะไรใน RBC เมื่อ inherited deficiency Pyruvate kinase",
+   "options": {
+    "A": "increase intracellular H2O",
+    "B": "increase 2,3 BPG",
+    "C": "increase ATP concentration",
+    "D": "decrease K+ and Ca2+",
+    "E": "decrease Hb concentration"
+   },
+   "answer": "B",
+   "answer_status": "verified",
+   "explanation": "PK deficiency ทำให้ glycolysis หยุดที่ปลายทาง สารตัวกลางก่อนหน้าสะสม จึงเพิ่ม 2,3-BPG ขณะ ATP ลดลง",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      6
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      6
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "hema_43_MCQ_020",
+   "key_concept": "• PK deficiency: ATP ↓, 2,3-BPG ↑\n• Na/K pump เสีย → K+ และน้ำออก เซลล์ฝ่อ (echinocyte)",
+   "mechanism": [
+    "PK ขาด",
+    {
+     "s": "2,3-BPG สะสมเพิ่มขึ้น",
+     "answer": true
+    },
+    "ATP ลด",
+    "Na/K pump เสีย",
+    "hemolysis"
+   ],
+   "option_why": {
+    "A": "ATP ลดทำให้ pump เสีย เสียน้ำไม่ใช่เพิ่ม",
+    "B": "✓ สารก่อน PEP สะสม 2,3-BPG เพิ่ม Hb ปล่อย O2 ง่าย",
+    "C": "ATP ลดลงไม่ใช่เพิ่ม",
+    "D": "K+ และน้ำสูญเสียออก แต่ Ca2+ ไม่ลด",
+    "E": "ปริมาณ Hb ในเซลล์ไม่ลดโดยตรง"
+   }
+  },
+  {
    "id": "HEMA-43-MCQ-021",
    "block": "HEMA",
    "cohort": 43,
@@ -858,6 +898,49 @@
     "B": "PK สร้าง ATP",
     "C": "✓ LDH regenerates NAD⁺",
     "D": "DPGM → 2,3-BPG"
+   }
+  },
+  {
+   "id": "HEMA-43-MCQ-022",
+   "block": "HEMA",
+   "cohort": 43,
+   "n": 22,
+   "type": "MCQ",
+   "stem": "หญิง 40 ปŘ fatigue 2 weeks PE: mild pale mild jaundice. Palpable at tip of spleen. Hb 6.2 Hct 18 MCV 90 normal wbc platelet ควรสŠงตรวจอะไรตŠอ",
+   "options": {
+    "A": "serum iron",
+    "B": "hams test",
+    "C": "direct antiglobulin test",
+    "D": "BM biopsy",
+    "E": "hemoglobin electrophoresis"
+   },
+   "answer": "C",
+   "answer_status": "verified",
+   "explanation": "ซีด ดีซ่านเล็กน้อย ม้ามโต MCV ปกติ น่าคิด hemolytic anemia ตรวจแยก autoimmune ด้วย DAT",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      7
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      7
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "hema_43_MCQ_022",
+   "key_concept": "• Normocytic + jaundice + splenomegaly → hemolysis\n• AIHA ตรวจ DAT (Coombs)",
+   "option_why": {
+    "A": "serum iron ใช้ใน microcytic anemia",
+    "B": "Ham test ตรวจ PNH ไม่ใช่ลำดับแรก",
+    "C": "✓ DAT ตรวจ AIHA ซึ่งพบบ่อยสุดในผู้หญิงวัยกลางคน",
+    "D": "BM biopsy ใช้เมื่อสงสัย marrow failure",
+    "E": "Hb electrophoresis ใช้ใน hemoglobinopathy"
    }
   },
   {
@@ -905,6 +988,47 @@
    }
   },
   {
+   "id": "HEMA-43-MCQ-024",
+   "block": "HEMA",
+   "cohort": 43,
+   "n": 24,
+   "type": "MCQ",
+   "stem": "ผูšปśวยมาดšวยอาการซีด หลายเดือน Hb ตํ่า wbc ปกติ platelet increase Laboratory finding",
+   "options": {
+    "A": "low serum ferritin",
+    "B": "low erythropoietin",
+    "C": "IOW RDW",
+    "D": "I0W total binding iron capacity"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "ซีดเรื้อรัง plt สูง จาก iron deficiency anemia พบ ferritin ต่ำ",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      8
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      8
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "hema_43_MCQ_024",
+   "key_concept": "• IDA: ferritin ↓, TIBC ↑, RDW ↑, plt ↑\n• สรุป: ซีดเรื้อรัง plt สูง จาก iron deficiency anemia พบ ferritin ต่ำ",
+   "option_why": {
+    "A": "✓ ferritin ต่ำเป็นตัวบ่งชี้ storage iron หมด",
+    "B": "EPO มักสูงเพื่อชดเชยความซีด",
+    "C": "RDW สูง (anisocytosis) ไม่ใช่ต่ำ",
+    "D": "TIBC สูง ไม่ต่ำ"
+   }
+  },
+  {
    "id": "HEMA-43-MCQ-025",
    "block": "HEMA",
    "cohort": 43,
@@ -948,6 +1072,92 @@
    }
   },
   {
+   "id": "HEMA-43-MCQ-027",
+   "block": "HEMA",
+   "cohort": 43,
+   "n": 27,
+   "type": "MCQ",
+   "stem": "what is the mutation in hemoglobin Malay",
+   "options": {
+    "A": "large deletion",
+    "B": "missense mutation",
+    "C": "nonsense mutation",
+    "D": "frameshift mutation",
+    "E": "single base insertion"
+   },
+   "answer": "B",
+   "answer_status": "verified",
+   "explanation": "Hb Malay เกิดจากการเปลี่ยนเบสเดี่ยวทำให้กรดอะมิโนเปลี่ยนที่ β-globin (Asn→Ser) เป็น missense",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      8
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      8
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "hema_43_MCQ_027",
+   "key_concept": "• Hb Malay: β codon 19 missense\n• Missense = เปลี่ยนกรดอะมิโน 1 ตัว",
+   "option_why": {
+    "A": "ไม่ใช่การขาดชิ้นยีน",
+    "B": "✓ จุดกลายพันธุ์ทำให้กรดอะมิโนเปลี่ยน",
+    "C": "ไม่เกิด stop codon",
+    "D": "ไม่ใช่ frameshift",
+    "E": "ไม่ใช่การแทรกเบส"
+   }
+  },
+  {
+   "id": "HEMA-43-MCQ-028",
+   "block": "HEMA",
+   "cohort": 43,
+   "n": 28,
+   "type": "MCQ",
+   "stem": "Which of the following has the risk of Reye's syndrome if given when virus or varicella present ?",
+   "options": {
+    "A": "Aspirin",
+    "B": "Warfarin",
+    "C": "Enoxaparin",
+    "D": "Triclodipine",
+    "E": "Dipyridamole"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "Aspirin ในเด็กที่ติดไวรัส (varicella/influenza) เสี่ยง Reye syndrome",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      8
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      8
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "hema_43_MCQ_028",
+   "key_concept": "• Aspirin + viral infection ในเด็ก → Reye syndrome\n• Reye: hepatic failure + encephalopathy",
+   "option_why": {
+    "A": "✓ salicylate ทำลาย mitochondria ตับ-สมอง",
+    "B": "Warfarin ไม่เกี่ยว",
+    "C": "Enoxaparin ไม่เกี่ยว",
+    "D": "Ticlopidine ไม่เกี่ยว Reye",
+    "E": "Dipyridamole ไม่เกี่ยว"
+   }
+  },
+  {
    "id": "HEMA-43-MCQ-029",
    "block": "HEMA",
    "cohort": 43,
@@ -988,6 +1198,133 @@
     "C": "Bleeding ไม่ immune",
     "D": "Hyperkalemia ไม่",
     "E": "✓ Thrombocytopenia (anti-PF4)"
+   }
+  },
+  {
+   "id": "HEMA-43-MCQ-030",
+   "block": "HEMA",
+   "cohort": 43,
+   "n": 30,
+   "type": "MCQ",
+   "stem": "A patient with congestive heart failure after hip joint surgery and no history of stroke. What should the doctor give to prevent PE.",
+   "options": {
+    "A": "Subcutaneous heparin",
+    "B": "Aspirin 85 mg",
+    "C": "Aspirin 325 mg",
+    "D": "Warfarin with INT 2-4"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "ผู้ป่วยหลังผ่าตัดสะโพกต้องป้องกัน VTE/PE ด้วย heparin ใต้ผิวหนัง (LMWH/UFH)",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      9
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      9
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "hema_43_MCQ_030",
+   "key_concept": "• Post-op ortho: heparin/LMWH prophylaxis\n• สรุป: ผู้ป่วยหลังผ่าตัดสะโพกต้องป้องกัน VTE/PE ด้วย heparin ใต้ผิวหนัง (LMWH/UFH)",
+   "option_why": {
+    "A": "✓ heparin SC เป็นการป้องกันมาตรฐาน",
+    "B": "aspirin dose ต่ำไม่พอป้องกัน",
+    "C": "aspirin dose สูงไม่เหมาะ เสี่ยงเลือดออก",
+    "D": "warfarin INR 2-4 ใช้ระยะยาว ไม่ใช่เริ่มทันที"
+   }
+  },
+  {
+   "id": "HEMA-43-MCQ-031",
+   "block": "HEMA",
+   "cohort": 43,
+   "n": 31,
+   "type": "MCQ",
+   "stem": "ขšอใดคือ Side effect ของแมŠที่ไดšรับยา Warfarin ในชŠวง first trimester",
+   "options": {
+    "A": "Bone defect",
+    "B": "Missing eyelashes",
+    "C": "Pernicious anemia",
+    "D": "Neural tube defect",
+    "E": "Heart valve malformation"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "Warfarin ผ่านรก ในไตรมาสแรกก่อน warfarin embryopathy คือกระดูกผิดปกติ (nasal hypoplasia, stippled epiphyses)",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      9
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      9
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "hema_43_MCQ_031",
+   "key_concept": "• Warfarin embryopathy: bone defect, nasal hypoplasia\n• Warfarin ห้ามใช้ในตั้งครรภ์",
+   "option_why": {
+    "A": "✓ vit K-dependent bone proteins ถูกยับยั้ง",
+    "B": "ไม่เกี่ยวกับ warfarin",
+    "C": "ไม่ใช่ผลของ warfarin",
+    "D": "NTD เกิดจาก antiepileptic/ขาด folate",
+    "E": "หัวใจผิดปกติไม่ใช่ลักษณะเด่น"
+   }
+  },
+  {
+   "id": "HEMA-43-MCQ-032",
+   "block": "HEMA",
+   "cohort": 43,
+   "n": 32,
+   "type": "MCQ",
+   "stem": "ยาใดเปŨน drug of choice ของผูšปśวยที่เปŨน atherosclerosis บริเวณขา ซึ่งมีอาการ pain, clamping & weaken while walking",
+   "options": {
+    "A": "cilostazol",
+    "B": "clopidogrel",
+    "C": "abciximab",
+    "D": "Taminocrapoic acid",
+    "E": "warfarin"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "Intermittent claudication ใช้ cilostazol (PDE3 inhibitor) ช่วยขยายหลอดเลือดและลด platelet aggregation",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      10
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      10
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "hema_43_MCQ_032",
+   "key_concept": "• Claudication: cilostazol\n• PDE3 inhibition → vasodilation + antiplatelet",
+   "option_why": {
+    "A": "✓ cilostazol เป็นยาเลือกสำหรับ claudication",
+    "B": "clopidogrel ป้องกัน event แต่ไม่ลดอาการเดินได้",
+    "C": "abciximab ใช้ใน PCI",
+    "D": "aminocaproic acid เป็น antifibrinolytic",
+    "E": "warfarin ไม่ใช่ยาเลือก"
    }
   },
   {
@@ -1074,6 +1411,49 @@
     "C": "tPA ↑ ผิด",
     "D": "VWF release = DDAVP",
     "E": "✓ Inhibit plasminogen conversion"
+   }
+  },
+  {
+   "id": "HEMA-43-MCQ-035",
+   "block": "HEMA",
+   "cohort": 43,
+   "n": 35,
+   "type": "MCQ",
+   "stem": "ชาย 40 ปี chemotherapy ผลแลป normocytic anemia ถามว่าใช้ยาอะไรรักษา",
+   "options": {
+    "A": "folic acid",
+    "B": "darbepoetin",
+    "C": "vitamin B12",
+    "D": "ferrous sulfate",
+    "E": "dipyridamole"
+   },
+   "answer": "B",
+   "answer_status": "verified",
+   "explanation": "โลหิตจาง normocytic จากเคมีบำบัดตอบสนองต่อ ESA เช่น darbepoetin",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      11
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      11
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "hema_43_MCQ_035",
+   "key_concept": "• Chemo anemia: ESA\n• สรุป: โลหิตจาง normocytic จากเคมีบำบัดตอบสนองต่อ ESA เช่น darbepoetin",
+   "option_why": {
+    "A": "folic acid ใช้ใน megaloblastic",
+    "B": "✓ ESA ชดเชย EPO ที่ลดจาก marrow suppression",
+    "C": "B12 ใช้ใน megaloblastic",
+    "D": "iron ใช้เมื่อขาดเหล็ก",
+    "E": "dipyridamole เป็น antiplatelet"
    }
   },
   {
@@ -1747,6 +2127,49 @@
    }
   },
   {
+   "id": "HEMA-43-MCQ-053",
+   "block": "HEMA",
+   "cohort": 43,
+   "n": 53,
+   "type": "MCQ",
+   "stem": "ชาย 50 ปี hematemesis PE: superficial vein dilation, splenomegaly, ascites — What effect to coagulation",
+   "options": {
+    "A": "decrease vWF",
+    "B": "decrease fibrinogen",
+    "C": "decrease protein C",
+    "D": "decrease vitamin K",
+    "E": "increase plasmin"
+   },
+   "answer": "B",
+   "answer_status": "verified",
+   "explanation": "ตับแข็ง/portal hypertension ตับสร้างปัจจัยการแข็งตัวลดลง โดยเฉพาะ fibrinogen",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      16
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      16
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "hema_43_MCQ_053",
+   "key_concept": "• Cirrhosis: synthetic failure → fibrinogen ↓\n• สรุป: ตับแข็ง/portal hypertension ตับสร้างปัจจัยการแข็งตัวลดลง โดยเฉพาะ fibrinogen",
+   "option_why": {
+    "A": "vWF มักปกติหรือสูง",
+    "B": "✓ การสร้าง fibrinogen ลดลงจากตับเสีย",
+    "C": "protein C ลดเช่นกันแต่ไม่ใช่คำตอบหลัก",
+    "D": "vit K ขาดเมื่อมีน้ำดีคั่ง ไม่ใช่ตัวหลัก",
+    "E": "plasmin ไม่ใช่ผลตรงของโจทย์"
+   }
+  },
+  {
    "id": "HEMA-43-MCQ-054",
    "block": "HEMA",
    "cohort": 43,
@@ -1867,6 +2290,49 @@
     "B": "TACO",
     "C": "TRALI",
     "D": "FNHTR"
+   }
+  },
+  {
+   "id": "HEMA-43-MCQ-057",
+   "block": "HEMA",
+   "cohort": 43,
+   "n": 57,
+   "type": "MCQ",
+   "stem": "What is the storage temperature of platelet?",
+   "options": {
+    "A": "-15",
+    "B": "2",
+    "C": "22",
+    "D": "27",
+    "E": "37"
+   },
+   "answer": "C",
+   "answer_status": "verified",
+   "explanation": "เกล็ดเลือดเก็บที่ 20–24 °C พร้อมเขย่าตลอด",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      17
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      17
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "hema_43_MCQ_057",
+   "key_concept": "• Platelet: 20–24 °C + agitation\n• เก็บได้ 5–7 วัน",
+   "option_why": {
+    "A": "-15 °C คือ FFP/cryo",
+    "B": "2 °C เป็นอุณหภูมิเก็บ red cell",
+    "C": "✓ 22 °C เหมาะสม",
+    "D": "27 °C สูงเกิน",
+    "E": "37 °C เสี่ยงเชื้อเจริญ"
    }
   },
   {
@@ -2544,6 +3010,47 @@
    }
   },
   {
+   "id": "HEMA-43-MCQ-076",
+   "block": "HEMA",
+   "cohort": 43,
+   "n": 76,
+   "type": "MCQ",
+   "stem": "What is neoplastic risk individual high inducibility cyp1A1 when expose PAH",
+   "options": {
+    "A": "lung cancer",
+    "B": "hepatocellular carcinoma",
+    "C": "bone cancer",
+    "D": "breast cancer"
+   },
+   "answer": "A",
+   "answer_status": "verified",
+   "explanation": "CYP1A1 ถูก induce โดยสารในควันบุหรี่ เปลี่ยน PAH เป็น carcinogen จึงเสี่ยง lung cancer",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      22
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      22
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "hema_43_MCQ_076",
+   "key_concept": "• CYP1A1 high inducibility + smoking → lung cancer\n• สรุป: CYP1A1 ถูก induce โดยสารในควันบุหรี่ เปลี่ยน PAH เป็น carcinogen จึงเสี่ยง lung cancer",
+   "option_why": {
+    "A": "✓ CYP1A1 ใน lung activate benzo[a]pyrene",
+    "B": "ไม่ใช่มะเร็งหลัก",
+    "C": "ไม่เกี่ยว",
+    "D": "ไม่เกี่ยว"
+   }
+  },
+  {
    "id": "HEMA-43-MCQ-077",
    "block": "HEMA",
    "cohort": 43,
@@ -2917,6 +3424,49 @@
     "B": "HCC ตอบน้อย",
     "C": "SCC ปานกลาง",
     "D": "Melanoma ตอบน้อย"
+   }
+  },
+  {
+   "id": "HEMA-43-MCQ-086",
+   "block": "HEMA",
+   "cohort": 43,
+   "n": 86,
+   "type": "MCQ",
+   "stem": "75 years man who was diagnosis as cholangiocarcinoma profound lean body mass and loss weight accompanied with anorexia anemia Which substance associate with",
+   "options": {
+    "A": "NO",
+    "B": "IL1",
+    "C": "IL6",
+    "D": "Interferon",
+    "E": "tumor necrotic factor"
+   },
+   "answer": "E",
+   "answer_status": "verified",
+   "explanation": "Cachexia (anorexia, weight loss) จากมะเร็งสัมพันธ์กับ TNF-α (cachectin)",
+   "refs": [
+    {
+     "paper": "MCQ43",
+     "pages": [
+      25
+     ]
+    },
+    {
+     "paper": "MCQ43-KEY",
+     "pages": [
+      25
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "import",
+   "audit_ref": "hema_43_MCQ_086",
+   "key_concept": "• Cancer cachexia: TNF-α\n• สรุป: Cachexia (anorexia, weight loss) จากมะเร็งสัมพันธ์กับ TNF-α (cachectin)",
+   "option_why": {
+    "A": "NO ไม่ทำให้ cachexia",
+    "B": "IL-1 มีส่วนแต่ไม่ใช่หลัก",
+    "C": "IL-6 เกี่ยวกับ acute phase",
+    "D": "Interferon ไม่ใช่ตัวหลัก",
+    "E": "✓ TNF ยับยั้ง lipoprotein lipase เบื่ออาหาร"
    }
   }
  ]
