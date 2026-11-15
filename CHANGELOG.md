@@ -3,6 +3,9 @@
 ทุกเวอร์ชันบันทึกที่นี่ และใน `version.json` (หน้าเว็บแสดงจาก `version.json`)
 เลขเวอร์ชัน: `MAJOR.MINOR.PATCH` — เพิ่มฟีเจอร์ = MINOR, แก้บั๊ก = PATCH
 
+## v0.59.0 · 2026-11-15 · SKIN MCQ 46
+- บล็อก SKIN ใหม่ MCQ 46 (78 ข้อ, AI draft)
+
 ## v0.58.0 · 2026-11-15 · MEDPROF2 KF + INTEG MCQ
 - บล็อก MEDPROF2 (KF 44–47) และ INTEG (MCQ 50, 51) ใหม่
 
