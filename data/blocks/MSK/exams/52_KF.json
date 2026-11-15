@@ -1,0 +1,424 @@
+{
+ "meta": {
+  "set_id": "52_KF",
+  "block": "MSK",
+  "cohort": 52,
+  "type": "KF",
+  "title": "KF Musculoskeletal · Med PSU 52",
+  "time_limit_min": 60,
+  "generated_by": "auditor/tools/build_kf.py from auditor/data/work/msk_52_KF.kf.json — do not edit by hand"
+ },
+ "questions": [
+  {
+   "id": "MSK-52-KF-001",
+   "block": "MSK",
+   "cohort": 52,
+   "n": 1,
+   "type": "KF",
+   "case": "ชาย 45 ปี ปวดบวมเข่าขวา 2 วัน กดเจ็บ ร้อน บวม งอเข่าได้จำกัด ไม่มีประวัติบาดเจ็บ · เจาะข้อ WBC 30,000 (90% neutrophil) Gram stain/culture ไม่พบเชื้อ ดู polarized light (ภาพ)",
+   "items": [
+    {
+     "id": "1.1",
+     "prompt": "Problem list",
+     "format": "short",
+     "accepted": [
+      "monoarthritis",
+      "inflammatory"
+     ],
+     "keywords_all": [
+      "monoarthritis"
+     ],
+     "key_text": "Acute inflammatory monoarthritis ของเข่าขวา",
+     "source_key": "เฉลย: Acute inflammatory monoarthritis ของเข่าขวา"
+    },
+    {
+     "id": "1.2",
+     "prompt": "Differential diagnosis ที่เป็นไปได้มากที่สุด 2 อย่าง",
+     "format": "short",
+     "accepted": [
+      "septic",
+      "crystal"
+     ],
+     "keywords_all": [
+      "septic",
+      "crystal"
+     ],
+     "key_text": "Septic arthritis · Crystal-induced arthritis (ต้องนึกถึง septic arthritis เสมอเพราะอาการบวมแดงร้อนเหมือนกัน และอาจไม่มีไข้ในระยะ acute; แยก crystal-induced จาก bacterial infection ด้วยตรวจร่างกายอย่างเดียวไม่ได้)",
+     "source_key": "เฉลย: Septic arthritis · Crystal-induced arthritis (ต้องนึกถึง septic arthritis เสมอเพราะอาการบวมแดงร้อนเหมือนกัน และอาจไม่มีไข้ในระยะ acute; แยก crystal-induced จาก bacterial infection ด้วยตรวจร่างกายอย่างเดียวไม่ได้)"
+    },
+    {
+     "id": "1.3",
+     "prompt": "แปลผลน้ำไขข้อ",
+     "format": "short",
+     "accepted": [
+      "needle",
+      "inflammatory",
+      "neutrophil"
+     ],
+     "keywords_all": [
+      "needle"
+     ],
+     "key_text": "Needle-shaped crystals · Inflammatory synovial fluid (WBC 30,000/mm³) · Neutrophil predominance 90% · ไม่มีหลักฐานติดเชื้อแบคทีเรีย (ในข้อสอบจริงให้แค่ needle-shaped crystals ก็พอ ถ้า polarize จะเห็น negative birefringence)",
+     "source_key": "เฉลย: Needle-shaped crystals · Inflammatory synovial fluid (WBC 30,000/mm³) · Neutrophil predominance 90% · ไม่มีหลักฐานติดเชื้อแบคทีเรีย (ในข้อสอบจริงให้แค่ needle-shaped crystals ก็พอ ถ้า polarize จะเห็น negative birefringence)",
+     "image": "img/MSK-52-KF-001.jpg",
+     "image_caption": "ผลึกใต้ polarized light"
+    },
+    {
+     "id": "1.4",
+     "prompt": "วินิจฉัย",
+     "format": "short",
+     "accepted": [
+      "gout"
+     ],
+     "keywords_all": [
+      "gout"
+     ],
+     "key_text": "Acute gouty arthritis",
+     "source_key": "เฉลย: Acute gouty arthritis"
+    },
+    {
+     "id": "1.5",
+     "prompt": "รักษาเพื่อลดอาการ",
+     "format": "short",
+     "accepted": [
+      "colchicine",
+      "nsaid",
+      "corticosteroid",
+      "prednisolone"
+     ],
+     "keywords_all": [
+      "colchicine",
+      "nsaid",
+      "steroid"
+     ],
+     "key_text": "Colchicine หรือ NSAIDs (เช่น ibuprofen) หรือ Corticosteroids (เช่น oral prednisolone)",
+     "source_key": "เฉลย: Colchicine หรือ NSAIDs (เช่น ibuprofen) หรือ Corticosteroids (เช่น oral prednisolone)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF52",
+     "pages": [
+      1
+     ]
+    },
+    {
+     "paper": "KF52-KEY",
+     "pages": [
+      1
+     ]
+    }
+   ],
+   "tags": [
+    "rheum"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "MSK-52-KF-002",
+   "block": "MSK",
+   "cohort": 52,
+   "n": 2,
+   "type": "KF",
+   "case": "หญิง 45 ปี หยิบเหรียญที่วางราบบนโต๊ะด้วยมือขวาไม่ได้ ชาฝ่ามือด้านนิ้วโป้ง ชี้ กลาง และครึ่งนิ้วนางด้านเรเดียล thumb opposition อ่อนแรง (ภาพมือ)",
+   "items": [
+    {
+     "id": "2.1",
+     "prompt": "วินิจฉัย",
+     "format": "short",
+     "accepted": [
+      "carpal tunnel"
+     ],
+     "keywords_all": [
+      "carpal tunnel"
+     ],
+     "key_text": "Carpal tunnel syndrome (median nerve compression)",
+     "source_key": "เฉลย: Carpal tunnel syndrome (median nerve compression)",
+     "image": "img/MSK-52-KF-002.jpg",
+     "image_caption": "ภาพมือสองข้าง"
+    },
+    {
+     "id": "2.2",
+     "prompt": "กล้ามเนื้อ 3 มัดที่น่าจะอ่อนแรง",
+     "format": "short",
+     "accepted": [
+      "abductor pollicis brevis",
+      "opponens",
+      "flexor pollicis brevis"
+     ],
+     "keywords_all": [
+      "opponens"
+     ],
+     "key_text": "Abductor pollicis brevis · Opponens pollicis · Flexor pollicis brevis",
+     "source_key": "เฉลย: Abductor pollicis brevis · Opponens pollicis · Flexor pollicis brevis"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF52",
+     "pages": [
+      3
+     ]
+    },
+    {
+     "paper": "KF52-KEY",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [
+    "upper limb"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "MSK-52-KF-003",
+   "block": "MSK",
+   "cohort": 52,
+   "n": 3,
+   "type": "KF",
+   "case": "ชาย 35 ปี ปวดและขยับไหล่ขวาไม่ได้หลังรถจักรยานยนต์ชน x-ray ไม่พบกระดูกหัก (ภาพ)",
+   "items": [
+    {
+     "id": "3.1",
+     "prompt": "Positive clinical finding 2 อย่าง",
+     "format": "short",
+     "accepted": [
+      "acromion",
+      "deltoid",
+      "contour"
+     ],
+     "keywords_all": [
+      "acromion"
+     ],
+     "key_text": "Prominence of the acromion process · Loss of normal shoulder contour / flattening of the deltoid contour",
+     "source_key": "เฉลย: Prominence of the acromion process · Loss of normal shoulder contour / flattening of the deltoid contour",
+     "image": "img/MSK-52-KF-003.jpg",
+     "image_caption": "ไหล่ขวา"
+    },
+    {
+     "id": "3.2",
+     "prompt": "วินิจฉัย",
+     "format": "short",
+     "accepted": [
+      "anterior",
+      "dislocation"
+     ],
+     "keywords_all": [
+      "dislocation"
+     ],
+     "key_text": "Right anterior shoulder dislocation",
+     "source_key": "เฉลย: Right anterior shoulder dislocation"
+    },
+    {
+     "id": "3.3",
+     "prompt": "โครงสร้างที่อาจบาดเจ็บร่วม 2 อย่าง",
+     "format": "short",
+     "accepted": [
+      "axillary",
+      "posterior circumflex"
+     ],
+     "keywords_all": [
+      "axillary"
+     ],
+     "key_text": "Axillary nerve · Posterior circumflex humeral artery",
+     "source_key": "เฉลย: Axillary nerve · Posterior circumflex humeral artery"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF52",
+     "pages": [
+      4
+     ]
+    },
+    {
+     "paper": "KF52-KEY",
+     "pages": [
+      4
+     ]
+    }
+   ],
+   "tags": [
+    "upper limb"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "MSK-52-KF-004",
+   "block": "MSK",
+   "cohort": 52,
+   "n": 4,
+   "type": "KF",
+   "case": "ชาย 30 ปี ปวดบวมหน้าเข่าขวา เดินได้ งอเข่าได้ (ภาพ)",
+   "items": [
+    {
+     "id": "4.1",
+     "prompt": "โครงสร้างที่น่าจะบาดเจ็บ",
+     "format": "short",
+     "accepted": [
+      "prepatellar",
+      "patellar tendon",
+      "quadriceps"
+     ],
+     "keywords_all": [
+      "prepatellar"
+     ],
+     "key_text": "Prepatellar bursa · Patellar tendon · Quadriceps tendon",
+     "source_key": "เฉลย: Prepatellar bursa · Patellar tendon · Quadriceps tendon",
+     "image": "img/MSK-52-KF-004.jpg",
+     "image_caption": "เข่าขวาบวมด้านหน้า"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF52",
+     "pages": [
+      5
+     ]
+    },
+    {
+     "paper": "KF52-KEY",
+     "pages": [
+      5
+     ]
+    }
+   ],
+   "tags": [
+    "lower limb"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "MSK-52-KF-005",
+   "block": "MSK",
+   "cohort": 52,
+   "n": 5,
+   "type": "KF",
+   "case": "Anatomy ของ spine ที่ใช้ในการเจาะหลังและ epidural",
+   "items": [
+    {
+     "id": "5.1",
+     "prompt": "Lumbar puncture ปลอดภัยเมื่อเจาะใต้ปลาย spinal cord · ผู้ใหญ่นิยมเจาะ vertebral level ใด",
+     "format": "short",
+     "accepted": [
+      "l3",
+      "l4"
+     ],
+     "keywords_all": [
+      "l4"
+     ],
+     "key_text": "L3–L4 หรือ L4–L5 (conus medullaris ในผู้ใหญ่สิ้นสุดที่ L1–L2)",
+     "source_key": "เฉลย: L3–L4 หรือ L4–L5 (conus medullaris ในผู้ใหญ่สิ้นสุดที่ L1–L2)"
+    },
+    {
+     "id": "5.2",
+     "prompt": "ระหว่าง epidural รู้สึก \"pop\" เมื่อเข็มทะลุ ligament ใด",
+     "format": "short",
+     "accepted": [
+      "flavum"
+     ],
+     "keywords_all": [
+      "flavum"
+     ],
+     "key_text": "Ligamentum flavum",
+     "source_key": "เฉลย: Ligamentum flavum"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF52",
+     "pages": [
+      5
+     ]
+    },
+    {
+     "paper": "KF52-KEY",
+     "pages": [
+      5
+     ]
+    }
+   ],
+   "tags": [
+    "spine"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "MSK-52-KF-006",
+   "block": "MSK",
+   "cohort": 52,
+   "n": 6,
+   "type": "KF",
+   "case": "Pelvis AP: 6.1 ระบุโครงสร้าง A–I · 6.2 หญิง 71 ปี ปวดสะโพกซ้ายหลังล้ม",
+   "items": [
+    {
+     "id": "6.1",
+     "prompt": "A–I คืออะไร",
+     "format": "short",
+     "accepted": [
+      "greater trochanter",
+      "lesser trochanter",
+      "neck of femur",
+      "sacral foramen",
+      "obturator foramen",
+      "anterior inferior",
+      "ilioischial",
+      "iliopectineal",
+      "shenton"
+     ],
+     "keywords_all": [
+      "shenton",
+      "iliopectineal"
+     ],
+     "key_text": "A Greater trochanter · B Lesser trochanter · C Neck of femur · D Sacral foramen · E Obturator foramen · F Anterior inferior iliac spine · G Ilioischial line · H Iliopectineal line · I Shenton line",
+     "source_key": "เฉลย: A Greater trochanter · B Lesser trochanter · C Neck of femur · D Sacral foramen · E Obturator foramen · F Anterior inferior iliac spine · G Ilioischial line · H Iliopectineal line · I Shenton line",
+     "image": "img/MSK-52-KF-006.jpg",
+     "image_caption": "Pelvis AP ติดตัวอักษร A–I"
+    },
+    {
+     "id": "6.2",
+     "prompt": "มี fracture หรือไม่ ถ้ามีคือโครงสร้างใด (วงกลมแดง)",
+     "format": "short",
+     "accepted": [
+      "ischial tuberosity",
+      "ischial",
+      "avulsion"
+     ],
+     "keywords_all": [
+      "ischial"
+     ],
+     "key_text": "Left ischial tuberosity (ข้อนี้ยากมาก ผู้ตอบหลายคนตอบ left neck of femur, ischial tuberosity หรือไม่มี fracture; ภาพที่ใช้ตอบคือ avulsion fracture บริเวณวงกลมแดง · ตำแหน่ง avulsion ที่พบบ่อย: iliac crest, ASIS, AIIS, lesser/greater trochanter, ischial tuberosity, pubic symphysis)",
+     "source_key": "เฉลย: Left ischial tuberosity (ข้อนี้ยากมาก ผู้ตอบหลายคนตอบ left neck of femur, ischial tuberosity หรือไม่มี fracture; ภาพที่ใช้ตอบคือ avulsion fracture บริเวณวงกลมแดง · ตำแหน่ง avulsion ที่พบบ่อย: iliac crest, ASIS, AIIS, lesser/greater trochanter, ischial tuberosity, pubic symphysis)",
+     "image": "img/MSK-52-KF-007.jpg",
+     "image_caption": "Pelvis AP หญิง 71 ปี (วงกลมแดง = ตำแหน่งที่ผิดปกติ)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF52",
+     "pages": [
+      7
+     ]
+    },
+    {
+     "paper": "KF52-KEY",
+     "pages": [
+      6
+     ]
+    }
+   ],
+   "tags": [
+    "radiology"
+   ],
+   "source": "claude-mcp"
+  }
+ ]
+}
