@@ -1,0 +1,613 @@
+{
+ "meta": {
+  "set_id": "43_KF",
+  "block": "HLC",
+  "cohort": 43,
+  "type": "KF",
+  "title": "KF Human Lifecycle · Med PSU 43",
+  "time_limit_min": 120,
+  "generated_by": "auditor/tools/build_kf.py from auditor/data/work/hlc_43_KF.kf.json — do not edit by hand"
+ },
+ "questions": [
+  {
+   "id": "HLC-43-KF-001",
+   "block": "HLC",
+   "cohort": 43,
+   "n": 1,
+   "type": "KF",
+   "case": "ทารกแรกเกิดชาย ก้อนที่ sacrococcygeal area พบ ectoderm, mesoderm, endoderm",
+   "items": [
+    {
+     "id": "1.1",
+     "prompt": "การวินิจฉัย",
+     "format": "short",
+     "accepted": [
+      "teratoma"
+     ],
+     "keywords_all": [
+      "teratoma"
+     ],
+     "key_text": "Sacrococcygeal teratoma",
+     "source_key": "เฉลย: Sacrococcygeal teratoma"
+    },
+    {
+     "id": "1.2",
+     "prompt": "สาเหตุ",
+     "format": "short",
+     "accepted": [
+      "primitive streak"
+     ],
+     "keywords_all": [
+      "primitive streak"
+     ],
+     "key_text": "Remnant of primitive streak",
+     "source_key": "เฉลย: Remnant of primitive streak"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF43",
+     "pages": [
+      1
+     ]
+    },
+    {
+     "paper": "KF43-KEY",
+     "pages": [
+      1
+     ]
+    }
+   ],
+   "tags": [
+    "embryology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "HLC-43-KF-002",
+   "block": "HLC",
+   "cohort": 43,
+   "n": 2,
+   "type": "KF",
+   "case": "หญิงตั้งครรภ์ GA 10 wks ทานน้ำตาลแล้วเป็นเบาหวาน",
+   "items": [
+    {
+     "id": "2.1",
+     "prompt": "ฮอร์โมนที่ทำให้เกิดความผิดปกติ 2 ตัว",
+     "format": "short",
+     "accepted": [
+      "insulin",
+      "glucagon"
+     ],
+     "keywords_all": [
+      "insulin"
+     ],
+     "key_text": "Insulin, Glucagon (และ Estrogen, Progesterone, Human placental lactogen)",
+     "source_key": "เฉลย: Insulin, Glucagon (และ Estrogen, Progesterone, Human placental lactogen)"
+    },
+    {
+     "id": "2.2",
+     "prompt": "กลไก",
+     "format": "short",
+     "accepted": [
+      "hpl",
+      "insulin resistance"
+     ],
+     "keywords_all": [
+      "hpl"
+     ],
+     "key_text": "β-cell hypertrophy, hyperplasia, hypersecretion จาก estrogen/progesterone/HPL; HPL ทำให้เกิด prolonged hyperglycemia และ hyperinsulinemia; glucagon เมื่อทารกได้รับ glucose เพียงพอ เปลี่ยนเป็น insulin resistance",
+     "source_key": "เฉลย: β-cell hypertrophy, hyperplasia, hypersecretion จาก estrogen/progesterone/HPL; HPL ทำให้เกิด prolonged hyperglycemia และ hyperinsulinemia; glucagon เมื่อทารกได้รับ glucose เพียงพอ เปลี่ยนเป็น insulin resistance"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF43",
+     "pages": [
+      1
+     ]
+    },
+    {
+     "paper": "KF43-KEY",
+     "pages": [
+      1
+     ]
+    }
+   ],
+   "tags": [
+    "pregnancy"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "HLC-43-KF-003",
+   "block": "HLC",
+   "cohort": 43,
+   "n": 3,
+   "type": "KF",
+   "case": "แม่ตั้งครรภ์ 12 wks บุตรชาย 5 ปี อาการคล้าย DMD Gower sign + พี่ชายแม่เสียชีวิตด้วยโรคนี้",
+   "items": [
+    {
+     "id": "3.1",
+     "prompt": "วินิจฉัยบุตรชาย",
+     "format": "short",
+     "accepted": [
+      "duchenne"
+     ],
+     "keywords_all": [
+      "duchenne"
+     ],
+     "key_text": "Duchenne muscular dystrophy (DMD)",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    },
+    {
+     "id": "3.2",
+     "prompt": "ตรวจที่ดีที่สุด",
+     "format": "short",
+     "accepted": [
+      "mlpa"
+     ],
+     "keywords_all": [
+      "mlpa"
+     ],
+     "key_text": "Multiplex ligation-dependent probe amplification (MLPA) ของ DMD gene",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    },
+    {
+     "id": "3.3",
+     "prompt": "โอกาสลูกในครรภ์เป็นโรค",
+     "format": "short",
+     "accepted": [
+      "50",
+      "25"
+     ],
+     "keywords_all": [
+      "50"
+     ],
+     "key_text": "แม่เป็น carrier: ลูกชาย 50% เป็นโรค (ลูกทั้งหมด 25%)",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    },
+    {
+     "id": "3.4",
+     "prompt": "ถ้าผล DNA ปกติ ตรวจเพิ่ม",
+     "format": "short",
+     "accepted": [
+      "dystrophin",
+      "muscle biopsy"
+     ],
+     "keywords_all": [
+      "dystrophin"
+     ],
+     "key_text": "Muscle biopsy: dystrophin immunostaining/Western blot",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "KF43",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "KF43-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [
+    "genetics"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "HLC-43-KF-004",
+   "block": "HLC",
+   "cohort": 43,
+   "n": 4,
+   "type": "KF",
+   "case": "เด็กแรกเกิด 39 wks ป้องกัน hypothermia (ตาราง วิธี/กลไก)",
+   "items": [
+    {
+     "id": "4.1",
+     "prompt": "วิธีป้องกันและกลไก",
+     "format": "short",
+     "accepted": [
+      "convection",
+      "conduction",
+      "radiation",
+      "evaporation"
+     ],
+     "keywords_all": [
+      "convection"
+     ],
+     "key_text": "ปิดแอร์/พัดลมที่พัดโกรก → Convection · ใช้ผ้าอุ่นคลุมพื้นผิวที่เย็น → Conduction · วางเด็กห่างจากผนัง/กระจก/แอร์ → Radiation · เช็ดตัวทันทีหลังคลอดและห่อด้วยผ้า → Evaporation",
+     "source_key": "เฉลย: ปิดแอร์/พัดลมที่พัดโกรก → Convection · ใช้ผ้าอุ่นคลุมพื้นผิวที่เย็น → Conduction · วางเด็กห่างจากผนัง/กระจก/แอร์ → Radiation · เช็ดตัวทันทีหลังคลอดและห่อด้วยผ้า → Evaporation"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF43",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "KF43-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [
+    "neonate"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "HLC-43-KF-005",
+   "block": "HLC",
+   "cohort": 43,
+   "n": 5,
+   "type": "KF",
+   "case": "เด็กผู้หญิง 13 ปี เมนส์มาไม่สม่ำเสมอ เดือนละ 2 ครั้งบ้าง 2–3 เดือนครั้งบ้าง",
+   "items": [
+    {
+     "id": "5.1",
+     "prompt": "ปกติหรือไม่ พร้อมเหตุผล",
+     "format": "short",
+     "accepted": [
+      "ปกติ",
+      "ovulation"
+     ],
+     "keywords_all": [
+      "ปกติ"
+     ],
+     "key_text": "ปกติ: ช่วง 2 ปีแรกหลัง menarche รอบไม่สม่ำเสมอได้จาก abnormal ovulation (รอบ 20–45 วัน)",
+     "source_key": "เฉลย: ปกติ: ช่วง 2 ปีแรกหลัง menarche รอบไม่สม่ำเสมอได้จาก abnormal ovulation (รอบ 20–45 วัน)"
+    },
+    {
+     "id": "5.2",
+     "prompt": "วงจรประจำเดือน 4 ช่วง",
+     "format": "short",
+     "accepted": [
+      "proliferative",
+      "secretory",
+      "ovulation"
+     ],
+     "keywords_all": [
+      "proliferative"
+     ],
+     "key_text": "Menstruation (วัน 1–4): progesterone ลด → spiral arteries หดเกร็ง ขาดเลือด stratum functionalis หลุด · Proliferative (5–13): E2 สูง follicle โตเป็น Graafian → เยื่อบุ re-epithelialization gland ขยาย · Ovulation (14): ไข่ตก · Secretory (15–28): corpus luteum สร้าง progesterone → เยื่อบุหนาตัว gland สร้าง secretion",
+     "source_key": "เฉลย: Menstruation (วัน 1–4): progesterone ลด → spiral arteries หดเกร็ง ขาดเลือด stratum functionalis หลุด · Proliferative (5–13): E2 สูง follicle โตเป็น Graafian → เยื่อบุ re-epithelialization gland ขยาย · Ovulation (14): ไข่ตก · Secretory (15–28): corpus luteum สร้าง progesterone → เยื่อบุหนาตัว gland สร้าง secretion"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF43",
+     "pages": [
+      3
+     ]
+    },
+    {
+     "paper": "KF43-KEY",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [
+    "reproductive"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "HLC-43-KF-006",
+   "block": "HLC",
+   "cohort": 43,
+   "n": 6,
+   "type": "KF",
+   "case": "หญิงตั้งครรภ์ 12 wks เป็นเบาหวาน",
+   "items": [
+    {
+     "id": "6.1",
+     "prompt": "ให้ยาอะไร",
+     "format": "short",
+     "accepted": [
+      "insulin"
+     ],
+     "keywords_all": [
+      "insulin"
+     ],
+     "key_text": "Insulin",
+     "source_key": "เฉลย: Insulin"
+    },
+    {
+     "id": "6.2",
+     "prompt": "เหตุผล",
+     "format": "short",
+     "accepted": [
+      "รก",
+      "placenta"
+     ],
+     "keywords_all": [
+      "รก"
+     ],
+     "key_text": "ไม่ผ่านรก ไม่มีผลเสียต่อทารก",
+     "source_key": "เฉลย: ไม่ผ่านรก ไม่มีผลเสียต่อทารก"
+    },
+    {
+     "id": "6.3",
+     "prompt": "ผลของ gestational DM ต่อเด็ก",
+     "format": "short",
+     "accepted": [
+      "birth weight",
+      "hypoglycemia"
+     ],
+     "keywords_all": [
+      "birth weight"
+     ],
+     "key_text": "Excessive birth weight, preterm, hypoglycemia, T2DM + obese เมื่อเด็กโตขึ้น",
+     "source_key": "เฉลย: Excessive birth weight, preterm, hypoglycemia, T2DM + obese เมื่อเด็กโตขึ้น"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF43",
+     "pages": [
+      3
+     ]
+    },
+    {
+     "paper": "KF43-KEY",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [
+    "pregnancy"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "HLC-43-KF-007",
+   "block": "HLC",
+   "cohort": 43,
+   "n": 7,
+   "type": "KF",
+   "case": "ยาลดไข้ paracetamol syrup 120 mg/5 mL ให้ 40 mg ทุก 4 ชม.",
+   "items": [
+    {
+     "id": "7.1",
+     "prompt": "ต้องใช้ยากี่ mL",
+     "format": "short",
+     "accepted": [
+      "1.7",
+      "2"
+     ],
+     "keywords_all": [
+      "1.7"
+     ],
+     "key_text": "(5 × 40)/120 ≈ 1.7 mL ต่อครั้ง (ตัวอย่าง infant ไม่ใช่ newborn ปัดเป็น 2 mL/dose ได้ถ้าอยู่ใน 10–15 mg/kg)",
+     "source_key": "เฉลย: (5 × 40)/120 ≈ 1.7 mL ต่อครั้ง (ตัวอย่าง infant ไม่ใช่ newborn ปัดเป็น 2 mL/dose ได้ถ้าอยู่ใน 10–15 mg/kg)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF43",
+     "pages": [
+      4
+     ]
+    },
+    {
+     "paper": "KF43-KEY",
+     "pages": [
+      4
+     ]
+    }
+   ],
+   "tags": [
+    "pharm"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "HLC-43-KF-008",
+   "block": "HLC",
+   "cohort": 43,
+   "n": 8,
+   "type": "KF",
+   "case": "แม่พาบุตรชาย 2 ปีมารับวัคซีน สุขภาพแข็งแรง",
+   "items": [
+    {
+     "id": "8.1",
+     "prompt": "การเติบโต",
+     "format": "short",
+     "accepted": [
+      "12",
+      "89",
+      "47"
+     ],
+     "keywords_all": [
+      "12"
+     ],
+     "key_text": "น้ำหนัก (2×2)+8 = 12 kg · ส่วนสูง (2×6)+77 = 89 cm · เส้นรอบศีรษะ 47 cm",
+     "source_key": "เฉลย: น้ำหนัก (2×2)+8 = 12 kg · ส่วนสูง (2×6)+77 = 89 cm · เส้นรอบศีรษะ 47 cm"
+    },
+    {
+     "id": "8.2",
+     "prompt": "พัฒนาการ",
+     "format": "short",
+     "accepted": [
+      "parallel play",
+      "2 ขั้นตอน",
+      "preconventional"
+     ],
+     "keywords_all": [
+      "parallel play"
+     ],
+     "key_text": "Fine motor: ขีดเส้นตรง วาดวงกลม ต่อบล็อกเป็นรถไฟ · Gross motor: วิ่ง เตะบอล เดินเกาะราวลงบันได ขึ้นบันไดสลับเท้า · Personal-social: parallel play, เริ่มแสดงอารมณ์ตามธรรมชาติ · Language: ทำตามคำสั่ง 2 ขั้นตอน ชี้รูปได้ 5–10 รูป พูด 2 คำติดกัน พูดให้คนอื่นเข้าใจได้ >50% พูดได้ >50 คำ · Moral: ระดับ preconventional ทำเพื่อสนองความต้องการตนเอง ผลประโยชน์ และหลีกเลี่ยงการลงโทษ",
+     "source_key": "เฉลย: Fine motor: ขีดเส้นตรง วาดวงกลม ต่อบล็อกเป็นรถไฟ · Gross motor: วิ่ง เตะบอล เดินเกาะราวลงบันได ขึ้นบันไดสลับเท้า · Personal-social: parallel play, เริ่มแสดงอารมณ์ตามธรรมชาติ · Language: ทำตามคำสั่ง 2 ขั้นตอน ชี้รูปได้ 5–10 รูป พูด 2 คำติดกัน พูดให้คนอื่นเข้าใจได้ >50% พูดได้ >50 คำ · Moral: ระดับ preconventional ทำเพื่อสนองความต้องการตนเอง ผลประโยชน์ และหลีกเลี่ยงการลงโทษ"
+    },
+    {
+     "id": "8.3",
+     "prompt": "คำแนะนำป้องกันอุบัติเหตุ",
+     "format": "short",
+     "accepted": [
+      "entrapment",
+      "car seat",
+      "จมน้ำ"
+     ],
+     "keywords_all": [
+      "entrapment"
+     ],
+     "key_text": "ป้องกัน entrapment (ช่องราวเตียง/ผนัง ไม่เกิน 9 cm) · จมน้ำ: เฝ้าดูตลอดเวลา · นั่งในรถ: forward-facing car seat/ห่างจาก air bag · สิ่งแปลกปลอม: เก็บของเล่นและของชิ้นเล็ก เช่น เข็ม กระดุม ลูกอม ถั่ว ลูกโป่งแตก",
+     "source_key": "เฉลย: ป้องกัน entrapment (ช่องราวเตียง/ผนัง ไม่เกิน 9 cm) · จมน้ำ: เฝ้าดูตลอดเวลา · นั่งในรถ: forward-facing car seat/ห่างจาก air bag · สิ่งแปลกปลอม: เก็บของเล่นและของชิ้นเล็ก เช่น เข็ม กระดุม ลูกอม ถั่ว ลูกโป่งแตก"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF43",
+     "pages": [
+      4
+     ]
+    },
+    {
+     "paper": "KF43-KEY",
+     "pages": [
+      4
+     ]
+    }
+   ],
+   "tags": [
+    "pediatrics"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "HLC-43-KF-009",
+   "block": "HLC",
+   "cohort": 43,
+   "n": 9,
+   "type": "KF",
+   "case": "หญิงวัยหมดประจำเดือน vulva/vaginal atrophy",
+   "items": [
+    {
+     "id": "9.1",
+     "prompt": "กลไก 3 ข้อ",
+     "format": "short",
+     "accepted": [
+      "estrogen",
+      "ph",
+      "collagen"
+     ],
+     "keywords_all": [
+      "estrogen"
+     ],
+     "key_text": "Estrogen ลดลง → เยื่อบุบางลง (ลด superficial cell/ glycogen) · Lactobacilli ลด pH ช่องคลอดเพิ่ม · เลือดมาเลี้ยงและ collagen/elastin ลดลง",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    },
+    {
+     "id": "9.2",
+     "prompt": "อาการระบบอื่น 2 ข้อ",
+     "format": "short",
+     "accepted": [
+      "hot flush",
+      "osteoporosis"
+     ],
+     "keywords_all": [
+      "hot flush"
+     ],
+     "key_text": "Hot flush · Osteoporosis/ปัสสาวะบ่อย (urogenital atrophy)",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "KF43",
+     "pages": [
+      6
+     ]
+    },
+    {
+     "paper": "KF43-KEY",
+     "pages": [
+      6
+     ]
+    }
+   ],
+   "tags": [
+    "aging"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "HLC-43-KF-010",
+   "block": "HLC",
+   "cohort": 43,
+   "n": 10,
+   "type": "KF",
+   "case": "เขียนบทความ: ความตายเป็นสุขภาวะของครอบครัว และหน้าที่ของแพทย์ในการ “ตายดี”",
+   "items": [
+    {
+     "id": "10.1",
+     "prompt": "ความตายเป็นสุขภาวะของส่วนรวม (ประเด็น)",
+     "format": "short",
+     "accepted": [
+      "good death",
+      "ศักดิ์ศรี"
+     ],
+     "keywords_all": [
+      "good death"
+     ],
+     "key_text": "การตายอย่างสงบ (good death) เป็นสุขภาวะ: ผู้ป่วยไม่ทุกข์ทรมาน ครอบครัวพร้อมและมีส่วนร่วม ตายอย่างมีศักดิ์ศรี",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    },
+    {
+     "id": "10.2",
+     "prompt": "หน้าที่ของแพทย์",
+     "format": "short",
+     "accepted": [
+      "palliative",
+      "advance care plan"
+     ],
+     "keywords_all": [
+      "palliative"
+     ],
+     "key_text": "Palliative care ควบคุมอาการ · สื่อสารบอกข่าวร้ายและวางแผนล่วงหน้า (advance care plan) · เคารพความต้องการของผู้ป่วย · ดูแลครอบครัวและการสูญเสีย",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "KF43",
+     "pages": [
+      6
+     ]
+    },
+    {
+     "paper": "KF43-KEY",
+     "pages": [
+      6
+     ]
+    }
+   ],
+   "tags": [
+    "ethics"
+   ],
+   "source": "claude-mcp"
+  }
+ ]
+}
