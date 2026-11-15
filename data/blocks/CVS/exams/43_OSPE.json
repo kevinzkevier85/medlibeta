@@ -1,0 +1,2174 @@
+{
+ "meta": {
+  "set_id": "43_OSPE",
+  "block": "CVS",
+  "cohort": 43,
+  "type": "OSPE",
+  "title": "OSPE Cardiovascular System · Med PSU 41-43",
+  "time_limit_min": 60,
+  "generated_by": "auditor/tools/build_kf.py from auditor/data/work/cvs_41-43_OSPE.kf.json — do not edit by hand"
+ },
+ "questions": [
+  {
+   "id": "CVS-43-OSPE-001",
+   "block": "CVS",
+   "cohort": 43,
+   "n": 1,
+   "type": "OSPE",
+   "topic": "anatomy",
+   "station": 1,
+   "stem": "สถานี 1: ภาพ posterior mediastinum (โครงสร้าง A, B)",
+   "items": [
+    {
+     "id": "1.1",
+     "prompt": "โครงสร้าง A คืออะไร",
+     "format": "short",
+     "accepted": [
+      "left atrium"
+     ],
+     "keywords_all": [
+      "atrium"
+     ],
+     "key_text": "Left atrium",
+     "source_key": "เฉลย: Left atrium",
+     "image": "img/CVS-43-OSPE-001.jpg",
+     "image_caption": "ภาพหัวใจ/ปอด A–B"
+    },
+    {
+     "id": "1.2",
+     "prompt": "โครงสร้าง B คืออะไร",
+     "format": "short",
+     "accepted": [
+      "pulmonary vein"
+     ],
+     "keywords_all": [
+      "pulmonary vein"
+     ],
+     "key_text": "Right pulmonary vein",
+     "source_key": "เฉลย: Right pulmonary vein"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE43",
+     "pages": [
+      1
+     ]
+    },
+    {
+     "paper": "OSPE43-KEY",
+     "pages": [
+      1
+     ]
+    }
+   ],
+   "tags": [
+    "anatomy"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "CVS-43-OSPE-002",
+   "block": "CVS",
+   "cohort": 43,
+   "n": 2,
+   "type": "OSPE",
+   "topic": "anatomy",
+   "station": 2,
+   "stem": "สถานี 2: ภาพ mediastinum (โครงสร้าง C, D)",
+   "items": [
+    {
+     "id": "2.1",
+     "prompt": "โครงสร้าง C คืออะไร",
+     "format": "short",
+     "accepted": [
+      "bronchus"
+     ],
+     "keywords_all": [
+      "bronchus"
+     ],
+     "key_text": "Left pulmonary bronchus",
+     "source_key": "เฉลย: Left pulmonary bronchus",
+     "image": "img/CVS-43-OSPE-002.jpg",
+     "image_caption": "ภาพ mediastinum C–D"
+    },
+    {
+     "id": "2.2",
+     "prompt": "โครงสร้าง D คืออะไร",
+     "format": "short",
+     "accepted": [
+      "phrenic",
+      "pulmonary vein"
+     ],
+     "keywords_all": [
+      "phrenic"
+     ],
+     "key_text": "Phrenic nerve / left pulmonary vein (เฉลยลายมืออ่านยาก)",
+     "source_key": "เฉลย: Phrenic nerve / left pulmonary vein (เฉลยลายมืออ่านยาก)"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "OSPE43",
+     "pages": [
+      1
+     ]
+    },
+    {
+     "paper": "OSPE43-KEY",
+     "pages": [
+      1
+     ]
+    }
+   ],
+   "tags": [
+    "anatomy"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "CVS-43-OSPE-003",
+   "block": "CVS",
+   "cohort": 43,
+   "n": 3,
+   "type": "OSPE",
+   "topic": "ecg",
+   "station": 3,
+   "stem": "สถานี 3: จากกราฟ ECG หาค่า",
+   "items": [
+    {
+     "id": "3.1",
+     "prompt": "PR interval",
+     "format": "short",
+     "accepted": [
+      "0.12"
+     ],
+     "keywords_all": [
+      "0.12"
+     ],
+     "key_text": "3 ช่อง × 0.04 = 0.12 s",
+     "source_key": "เฉลย: 3 ช่อง × 0.04 = 0.12 s",
+     "image": "img/CVS-43-OSPE-003.jpg",
+     "image_caption": "ECG สถานี 3"
+    },
+    {
+     "id": "3.2",
+     "prompt": "ST interval",
+     "format": "short",
+     "accepted": [
+      "0.24"
+     ],
+     "keywords_all": [
+      "0.24"
+     ],
+     "key_text": "6 ช่อง × 0.04 = 0.24 s",
+     "source_key": "เฉลย: 6 ช่อง × 0.04 = 0.24 s"
+    },
+    {
+     "id": "3.3",
+     "prompt": "mean QRS",
+     "format": "short",
+     "accepted": [
+      "0.6"
+     ],
+     "keywords_all": [
+      "0.6"
+     ],
+     "key_text": "R (8 ช่อง) − S (2 ช่อง) = 6 ช่อง × 0.1 = 0.6 mV",
+     "source_key": "เฉลย: R (8 ช่อง) − S (2 ช่อง) = 6 ช่อง × 0.1 = 0.6 mV"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE43",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "OSPE43-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [
+    "ecg"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "CVS-43-OSPE-004",
+   "block": "CVS",
+   "cohort": 43,
+   "n": 4,
+   "type": "OSPE",
+   "topic": "ecg",
+   "station": 4,
+   "stem": "สถานี 4: จากกราฟ ECG หาค่าความถี่ (heart rate)",
+   "items": [
+    {
+     "id": "4.1",
+     "prompt": "ค่าความถี่ (Heart rate)",
+     "format": "short",
+     "accepted": [
+      "125"
+     ],
+     "keywords_all": [
+      "125"
+     ],
+     "key_text": "≈ 125 bpm",
+     "source_key": "เฉลย: ≈ 125 bpm",
+     "image": "img/CVS-43-OSPE-004.jpg",
+     "image_caption": "ECG สถานี 4"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE43",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "OSPE43-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [
+    "ecg"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "CVS-43-OSPE-005",
+   "block": "CVS",
+   "cohort": 43,
+   "n": 5,
+   "type": "OSPE",
+   "topic": "pathology",
+   "station": 5,
+   "stem": "สถานี 5: จากภาพที่ให้",
+   "items": [
+    {
+     "id": "5.1",
+     "prompt": "ภาพนี้คืออะไร",
+     "format": "short",
+     "accepted": [
+      "endocarditis"
+     ],
+     "keywords_all": [
+      "endocarditis"
+     ],
+     "key_text": "Infective endocarditis",
+     "source_key": "เฉลย: Infective endocarditis",
+     "image": "img/CVS-43-OSPE-005.jpg",
+     "image_caption": "ภาพสถานี 5"
+    },
+    {
+     "id": "5.2",
+     "prompt": "ตัวอย่างเชื้อที่เป็นสาเหตุ",
+     "format": "short",
+     "accepted": [
+      "viridans"
+     ],
+     "keywords_all": [
+      "viridans"
+     ],
+     "key_text": "Streptococcus viridans",
+     "source_key": "เฉลย: Streptococcus viridans"
+    },
+    {
+     "id": "5.3",
+     "prompt": "ความเสี่ยงที่ทำให้เกิดอาการดังกล่าว",
+     "format": "short",
+     "accepted": [
+      "injection",
+      "dental"
+     ],
+     "keywords_all": [
+      "dental"
+     ],
+     "key_text": "Injection drug users · หัตถการทางทันตกรรม/ผ่าตัดที่ทำให้เกิด transient bacteremia",
+     "source_key": "เฉลย: Injection drug users · หัตถการทางทันตกรรม/ผ่าตัดที่ทำให้เกิด transient bacteremia"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE43",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "OSPE43-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [
+    "pathology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "CVS-43-OSPE-006",
+   "block": "CVS",
+   "cohort": 43,
+   "n": 6,
+   "type": "OSPE",
+   "topic": "pathology",
+   "station": 6,
+   "stem": "สถานี 6: จากภาพ Chest X-ray วินิจฉัยอาการ",
+   "items": [
+    {
+     "id": "6.1",
+     "prompt": "วินิจฉัยอาการ",
+     "format": "short",
+     "accepted": [
+      "situs inversus",
+      "dextrocardia"
+     ],
+     "keywords_all": [
+      "situs inversus"
+     ],
+     "key_text": "Situs inversus with dextrocardia",
+     "source_key": "เฉลย: Situs inversus with dextrocardia",
+     "image": "img/CVS-43-OSPE-006.jpg",
+     "image_caption": "Chest X-ray สถานี 6"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE43",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "OSPE43-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [
+    "radiology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "CVS-43-OSPE-009",
+   "block": "CVS",
+   "cohort": 43,
+   "n": 9,
+   "type": "OSPE",
+   "topic": "anatomy",
+   "station": 9,
+   "stem": "สถานี 9: จากรูปที่ให้",
+   "items": [
+    {
+     "id": "9.1",
+     "prompt": "ภาพนี้คืออะไร",
+     "format": "short",
+     "accepted": [
+      "aschoff"
+     ],
+     "keywords_all": [
+      "aschoff"
+     ],
+     "key_text": "Aschoff body",
+     "source_key": "เฉลย: Aschoff body",
+     "image": "img/CVS-43-OSPE-009.jpg",
+     "image_caption": "Histology สถานี 9"
+    },
+    {
+     "id": "9.2",
+     "prompt": "บรรยายลักษณะ",
+     "format": "short",
+     "accepted": [
+      "collagen",
+      "anitschkow"
+     ],
+     "keywords_all": [
+      "anitschkow"
+     ],
+     "key_text": "Swollen eosinophilic collagen ล้อมรอบด้วย lymphocytes, plasma cells และ plump macrophages (Anitschkow cell)",
+     "source_key": "เฉลย: Swollen eosinophilic collagen ล้อมรอบด้วย lymphocytes, plasma cells และ plump macrophages (Anitschkow cell)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE43",
+     "pages": [
+      3
+     ]
+    },
+    {
+     "paper": "OSPE43-KEY",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [
+    "histology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "CVS-43-OSPE-010",
+   "block": "CVS",
+   "cohort": 43,
+   "n": 10,
+   "type": "OSPE",
+   "topic": "pathology",
+   "station": 10,
+   "stem": "สถานี 10: จากรูปที่ให้",
+   "items": [
+    {
+     "id": "10.1",
+     "prompt": "วินิจฉัยโรค",
+     "format": "short",
+     "accepted": [
+      "atherosclerosis"
+     ],
+     "keywords_all": [
+      "atherosclerosis"
+     ],
+     "key_text": "Atherosclerosis",
+     "source_key": "เฉลย: Atherosclerosis",
+     "image": "img/CVS-43-OSPE-010.jpg",
+     "image_caption": "ภาพสถานี 10"
+    },
+    {
+     "id": "10.2",
+     "prompt": "บรรยายลักษณะ",
+     "format": "short",
+     "accepted": [
+      "thrombosis",
+      "ulceration"
+     ],
+     "keywords_all": [
+      "thrombosis"
+     ],
+     "key_text": "Thrombosis, ulceration (plaque rupture)",
+     "source_key": "เฉลย: Thrombosis, ulceration (plaque rupture)"
+    },
+    {
+     "id": "10.3",
+     "prompt": "ปัจจัยเสี่ยง",
+     "format": "short",
+     "accepted": [
+      "dm",
+      "htn",
+      "smoking"
+     ],
+     "keywords_all": [
+      "smoking"
+     ],
+     "key_text": "DM, HTN, Dyslipidemia, Smoking, Stress",
+     "source_key": "เฉลย: DM, HTN, Dyslipidemia, Smoking, Stress"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE43",
+     "pages": [
+      3
+     ]
+    },
+    {
+     "paper": "OSPE43-KEY",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [
+    "pathology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "CVS-43-OSPE-011",
+   "block": "CVS",
+   "cohort": 43,
+   "n": 11,
+   "type": "OSPE",
+   "topic": "anatomy",
+   "station": 11,
+   "stem": "สถานี 11: จากรูปที่ให้ (histology)",
+   "items": [
+    {
+     "id": "11.1",
+     "prompt": "ภาพนี้คือหลอดเลือดชนิดใด",
+     "format": "short",
+     "accepted": [
+      "medium"
+     ],
+     "keywords_all": [
+      "medium"
+     ],
+     "key_text": "Medium-sized artery",
+     "source_key": "เฉลย: Medium-sized artery",
+     "image": "img/CVS-43-OSPE-011.jpg",
+     "image_caption": "Histology หลอดเลือด"
+    },
+    {
+     "id": "11.2",
+     "prompt": "ลูกศรชี้ลงไปที่ชั้นใด",
+     "format": "short",
+     "accepted": [
+      "intima"
+     ],
+     "keywords_all": [
+      "intima"
+     ],
+     "key_text": "Tunica intima",
+     "source_key": "เฉลย: Tunica intima"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE43",
+     "pages": [
+      4
+     ]
+    },
+    {
+     "paper": "OSPE43-KEY",
+     "pages": [
+      4
+     ]
+    }
+   ],
+   "tags": [
+    "histology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "CVS-43-OSPE-012",
+   "block": "CVS",
+   "cohort": 43,
+   "n": 12,
+   "type": "OSPE",
+   "topic": "anatomy",
+   "station": 12,
+   "stem": "สถานี 12: จากรูปหัวใจห้อง left atrium โต เกิดจากความผิดปกติจากลิ้นใด",
+   "items": [
+    {
+     "id": "12.1",
+     "prompt": "ความผิดปกติจากลิ้นใด",
+     "format": "short",
+     "accepted": [
+      "mitral"
+     ],
+     "keywords_all": [
+      "mitral"
+     ],
+     "key_text": "Mitral valve",
+     "source_key": "เฉลย: Mitral valve"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE43",
+     "pages": [
+      4
+     ]
+    },
+    {
+     "paper": "OSPE43-KEY",
+     "pages": [
+      4
+     ]
+    }
+   ],
+   "tags": [
+    "anatomy"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "CVS-43-OSPE-013",
+   "block": "CVS",
+   "cohort": 43,
+   "n": 13,
+   "type": "OSPE",
+   "topic": "anatomy",
+   "station": 13,
+   "stem": "สถานี 13: จากรูปหัวใจ (โครงสร้าง E, F)",
+   "items": [
+    {
+     "id": "13.1",
+     "prompt": "โครงสร้าง E คืออะไร",
+     "format": "short",
+     "accepted": [
+      "left anterior descending",
+      "lad"
+     ],
+     "keywords_all": [
+      "anterior descending"
+     ],
+     "key_text": "Left anterior descending artery",
+     "source_key": "เฉลย: Left anterior descending artery",
+     "image": "img/CVS-43-OSPE-013.jpg",
+     "image_caption": "หัวใจ (E, F)"
+    },
+    {
+     "id": "13.2",
+     "prompt": "โครงสร้าง F คืออะไร",
+     "format": "short",
+     "accepted": [
+      "great cardiac"
+     ],
+     "keywords_all": [
+      "great cardiac"
+     ],
+     "key_text": "Great cardiac vein",
+     "source_key": "เฉลย: Great cardiac vein"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE43",
+     "pages": [
+      4
+     ]
+    },
+    {
+     "paper": "OSPE43-KEY",
+     "pages": [
+      4
+     ]
+    }
+   ],
+   "tags": [
+    "anatomy"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "CVS-43-OSPE-014",
+   "block": "CVS",
+   "cohort": 43,
+   "n": 14,
+   "type": "OSPE",
+   "topic": "pathology",
+   "station": 14,
+   "stem": "สถานี 14: จากภาพ Chest X-ray วินิจฉัยความผิดปกติ",
+   "items": [
+    {
+     "id": "14.1",
+     "prompt": "วินิจฉัยความผิดปกติ",
+     "format": "short",
+     "accepted": [
+      "situs inversus",
+      "dextrocardia"
+     ],
+     "keywords_all": [
+      "situs inversus"
+     ],
+     "key_text": "Situs inversus with dextrocardia",
+     "source_key": "เฉลย: Situs inversus with dextrocardia",
+     "image": "img/CVS-43-OSPE-014.jpg",
+     "image_caption": "Chest X-ray สถานี 14"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE43",
+     "pages": [
+      4
+     ]
+    },
+    {
+     "paper": "OSPE43-KEY",
+     "pages": [
+      4
+     ]
+    }
+   ],
+   "tags": [
+    "radiology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "CVS-43-OSPE-015",
+   "block": "CVS",
+   "cohort": 43,
+   "n": 15,
+   "type": "OSPE",
+   "topic": "pathology",
+   "station": 15,
+   "stem": "สถานี 15: จากภาพ Chest X-ray วินิจฉัยความผิดปกติ",
+   "items": [
+    {
+     "id": "15.1",
+     "prompt": "วินิจฉัยความผิดปกติ",
+     "format": "short",
+     "accepted": [
+      "left atrial",
+      "double density"
+     ],
+     "keywords_all": [
+      "left atrial"
+     ],
+     "key_text": "Late left atrial hypertrophy (left atrial enlargement) พบ double density",
+     "source_key": "เฉลย: Late left atrial hypertrophy (left atrial enlargement) พบ double density",
+     "image": "img/CVS-43-OSPE-015.jpg",
+     "image_caption": "Chest X-ray สถานี 15"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE43",
+     "pages": [
+      5
+     ]
+    },
+    {
+     "paper": "OSPE43-KEY",
+     "pages": [
+      5
+     ]
+    }
+   ],
+   "tags": [
+    "radiology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "CVS-43-OSPE-016",
+   "block": "CVS",
+   "cohort": 43,
+   "n": 16,
+   "type": "OSPE",
+   "topic": "anatomy",
+   "station": 16,
+   "stem": "สถานี 16: จากรูปที่ให้",
+   "items": [
+    {
+     "id": "16.1",
+     "prompt": "วินิจฉัยภาพนี้",
+     "format": "short",
+     "accepted": [
+      "thrombosis"
+     ],
+     "keywords_all": [
+      "thrombosis"
+     ],
+     "key_text": "Thrombosis",
+     "source_key": "เฉลย: Thrombosis",
+     "image": "img/CVS-43-OSPE-016.jpg",
+     "image_caption": "Histology สถานี 16"
+    },
+    {
+     "id": "16.2",
+     "prompt": "บริเวณลูกศรชี้คืออะไร",
+     "format": "short",
+     "accepted": [
+      "zahn"
+     ],
+     "keywords_all": [
+      "zahn"
+     ],
+     "key_text": "Line of Zahn",
+     "source_key": "เฉลย: Line of Zahn"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE43",
+     "pages": [
+      5
+     ]
+    },
+    {
+     "paper": "OSPE43-KEY",
+     "pages": [
+      5
+     ]
+    }
+   ],
+   "tags": [
+    "histology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "CVS-43-OSPE-017",
+   "block": "CVS",
+   "cohort": 43,
+   "n": 17,
+   "type": "OSPE",
+   "topic": "ecg",
+   "station": 17,
+   "stem": "สถานี 17: จากกราฟ EKG 12 leads",
+   "items": [
+    {
+     "id": "17.1",
+     "prompt": "mean electrical axis อยู่ใน quadrant ใด",
+     "format": "short",
+     "accepted": [
+      "upper left",
+      "left"
+     ],
+     "keywords_all": [
+      "left"
+     ],
+     "key_text": "Upper left quadrant (left axis)",
+     "source_key": "เฉลย: Upper left quadrant (left axis)",
+     "image": "img/CVS-43-OSPE-017.jpg",
+     "image_caption": "ECG 12 leads"
+    },
+    {
+     "id": "17.2",
+     "prompt": "มุม mean electrical axis อยู่ระหว่างกี่องศา",
+     "format": "short",
+     "accepted": [
+      "-90",
+      "-30",
+      "−90"
+     ],
+     "keywords_all": [
+      "-30"
+     ],
+     "key_text": "−90° ถึง −30°",
+     "source_key": "เฉลย: −90° ถึง −30°"
+    },
+    {
+     "id": "17.3",
+     "prompt": "ปกติหรือไม่ แบบใด",
+     "format": "short",
+     "accepted": [
+      "left axis"
+     ],
+     "keywords_all": [
+      "left axis"
+     ],
+     "key_text": "ผิดปกติ — Left axis deviation",
+     "source_key": "เฉลย: ผิดปกติ — Left axis deviation"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE43",
+     "pages": [
+      5
+     ]
+    },
+    {
+     "paper": "OSPE43-KEY",
+     "pages": [
+      5
+     ]
+    }
+   ],
+   "tags": [
+    "ecg"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "CVS-43-OSPE-018",
+   "block": "CVS",
+   "cohort": 43,
+   "n": 18,
+   "type": "OSPE",
+   "topic": "pathology",
+   "station": 18,
+   "stem": "สถานี 18: จากภาพ Chest X-ray",
+   "items": [
+    {
+     "id": "18.1",
+     "prompt": "บริเวณลูกศรชี้คืออะไร",
+     "format": "short",
+     "accepted": [
+      "pulmonary artery"
+     ],
+     "keywords_all": [
+      "pulmonary artery"
+     ],
+     "key_text": "Main pulmonary artery",
+     "source_key": "เฉลย: Main pulmonary artery",
+     "image": "img/CVS-43-OSPE-018.jpg",
+     "image_caption": "Chest X-ray สถานี 18"
+    },
+    {
+     "id": "18.2",
+     "prompt": "วินิจฉัยภาพนี้",
+     "format": "short",
+     "accepted": [
+      "situs inversus"
+     ],
+     "keywords_all": [
+      "situs inversus"
+     ],
+     "key_text": "Situs inversus with dextrocardia",
+     "source_key": "เฉลย: Situs inversus with dextrocardia"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE43",
+     "pages": [
+      6
+     ]
+    },
+    {
+     "paper": "OSPE43-KEY",
+     "pages": [
+      6
+     ]
+    }
+   ],
+   "tags": [
+    "radiology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "CVS-43-OSPE-019",
+   "block": "CVS",
+   "cohort": 43,
+   "n": 19,
+   "type": "OSPE",
+   "topic": "pathology",
+   "station": 19,
+   "stem": "สถานี 19: บริเวณลูกศรสีน้ำเงินชี้ลงไปคืออะไร",
+   "items": [
+    {
+     "id": "19.1",
+     "prompt": "บริเวณลูกศรสีน้ำเงินคืออะไร",
+     "format": "short",
+     "accepted": [
+      "thymus"
+     ],
+     "keywords_all": [
+      "thymus"
+     ],
+     "key_text": "Thymus gland",
+     "source_key": "เฉลย: Thymus gland",
+     "image": "img/CVS-43-OSPE-019.jpg",
+     "image_caption": "ภาพสถานี 19"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE43",
+     "pages": [
+      6
+     ]
+    },
+    {
+     "paper": "OSPE43-KEY",
+     "pages": [
+      6
+     ]
+    }
+   ],
+   "tags": [
+    "radiology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "CVS-43-OSPE-020",
+   "block": "CVS",
+   "cohort": 43,
+   "n": 20,
+   "type": "OSPE",
+   "topic": "pathology",
+   "station": 20,
+   "stem": "สถานี 20: จากภาพ Chest X-ray",
+   "items": [
+    {
+     "id": "20.1",
+     "prompt": "Which valve is replaced by the prosthetic valve?",
+     "format": "short",
+     "accepted": [
+      "mitral",
+      "av valve",
+      "atrioventricular"
+     ],
+     "keywords_all": [
+      "valve"
+     ],
+     "key_text": "Atrioventricular (AV) valve — mitral valve",
+     "source_key": "เฉลย: Atrioventricular (AV) valve — mitral valve",
+     "image": "img/CVS-43-OSPE-020.jpg",
+     "image_caption": "Chest X-ray สถานี 20"
+    },
+    {
+     "id": "20.2",
+     "prompt": "วินิจฉัยภาพนี้",
+     "format": "short",
+     "accepted": [
+      "endocarditis"
+     ],
+     "keywords_all": [
+      "endocarditis"
+     ],
+     "key_text": "Infective endocarditis จนต้องเปลี่ยน valve (cardiomegaly)",
+     "source_key": "เฉลย: Infective endocarditis จนต้องเปลี่ยน valve (cardiomegaly)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE43",
+     "pages": [
+      6
+     ]
+    },
+    {
+     "paper": "OSPE43-KEY",
+     "pages": [
+      6
+     ]
+    }
+   ],
+   "tags": [
+    "radiology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "CVS-43-OSPE-021",
+   "block": "CVS",
+   "cohort": 43,
+   "n": 21,
+   "type": "OSPE",
+   "topic": "anatomy",
+   "station": 21,
+   "stem": "สถานี 21: จากรูป (right atrium)",
+   "items": [
+    {
+     "id": "21.1",
+     "prompt": "โครงสร้างหมายเลข 1",
+     "format": "short",
+     "accepted": [
+      "pectinate"
+     ],
+     "keywords_all": [
+      "pectinate"
+     ],
+     "key_text": "Pectinate muscle",
+     "source_key": "เฉลย: Pectinate muscle",
+     "image": "img/CVS-43-OSPE-021.jpg",
+     "image_caption": "Right atrium interior"
+    },
+    {
+     "id": "21.2",
+     "prompt": "โครงสร้างหมายเลข 2",
+     "format": "short",
+     "accepted": [
+      "crista terminalis"
+     ],
+     "keywords_all": [
+      "crista"
+     ],
+     "key_text": "Crista terminalis",
+     "source_key": "เฉลย: Crista terminalis"
+    },
+    {
+     "id": "21.3",
+     "prompt": "โครงสร้างหมายเลข 3",
+     "format": "short",
+     "accepted": [
+      "fossa ovalis"
+     ],
+     "keywords_all": [
+      "fossa"
+     ],
+     "key_text": "Fossa ovalis",
+     "source_key": "เฉลย: Fossa ovalis"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE43",
+     "pages": [
+      7
+     ]
+    },
+    {
+     "paper": "OSPE43-KEY",
+     "pages": [
+      7
+     ]
+    }
+   ],
+   "tags": [
+    "anatomy"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "CVS-43-OSPE-022",
+   "block": "CVS",
+   "cohort": 43,
+   "n": 22,
+   "type": "OSPE",
+   "topic": "anatomy",
+   "station": 22,
+   "stem": "สถานี 22: จากรูป (right ventricle)",
+   "items": [
+    {
+     "id": "22.1",
+     "prompt": "โครงสร้างหมายเลข 1",
+     "format": "short",
+     "accepted": [
+      "moderator"
+     ],
+     "keywords_all": [
+      "moderator"
+     ],
+     "key_text": "Moderator band",
+     "source_key": "เฉลย: Moderator band",
+     "image": "img/CVS-43-OSPE-022.jpg",
+     "image_caption": "Right ventricle interior"
+    },
+    {
+     "id": "22.2",
+     "prompt": "โครงสร้างหมายเลข 2",
+     "format": "short",
+     "accepted": [
+      "septal cusp"
+     ],
+     "keywords_all": [
+      "septal"
+     ],
+     "key_text": "Septal cusp (tricuspid valve)",
+     "source_key": "เฉลย: Septal cusp (tricuspid valve)"
+    },
+    {
+     "id": "22.3",
+     "prompt": "โครงสร้างหมายเลข 3 (be specific)",
+     "format": "short",
+     "accepted": [
+      "anterior papillary"
+     ],
+     "keywords_all": [
+      "papillary"
+     ],
+     "key_text": "Anterior papillary muscle",
+     "source_key": "เฉลย: Anterior papillary muscle"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE43",
+     "pages": [
+      7
+     ]
+    },
+    {
+     "paper": "OSPE43-KEY",
+     "pages": [
+      7
+     ]
+    }
+   ],
+   "tags": [
+    "anatomy"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "CVS-43-OSPE-023",
+   "block": "CVS",
+   "cohort": 43,
+   "n": 23,
+   "type": "OSPE",
+   "topic": "anatomy",
+   "station": 23,
+   "stem": "สถานี 23: จากรูป",
+   "items": [
+    {
+     "id": "23.1",
+     "prompt": "โครงสร้างหมายเลข 1 (be specific)",
+     "format": "short",
+     "accepted": [
+      "ascending aorta"
+     ],
+     "keywords_all": [
+      "ascending"
+     ],
+     "key_text": "Ascending aorta",
+     "source_key": "เฉลย: Ascending aorta",
+     "image": "img/CVS-43-OSPE-023.jpg",
+     "image_caption": "Anterior heart"
+    },
+    {
+     "id": "23.2",
+     "prompt": "โครงสร้างหมายเลข 2 (be specific)",
+     "format": "short",
+     "accepted": [
+      "auricle"
+     ],
+     "keywords_all": [
+      "auricle"
+     ],
+     "key_text": "Right atrium auricle",
+     "source_key": "เฉลย: Right atrium auricle"
+    },
+    {
+     "id": "23.3",
+     "prompt": "โครงสร้างหมายเลข 3 (be specific)",
+     "format": "short",
+     "accepted": [
+      "right marginal"
+     ],
+     "keywords_all": [
+      "marginal"
+     ],
+     "key_text": "Right marginal artery",
+     "source_key": "เฉลย: Right marginal artery"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE43",
+     "pages": [
+      7
+     ]
+    },
+    {
+     "paper": "OSPE43-KEY",
+     "pages": [
+      7
+     ]
+    }
+   ],
+   "tags": [
+    "anatomy"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "CVS-43-OSPE-024",
+   "block": "CVS",
+   "cohort": 43,
+   "n": 24,
+   "type": "OSPE",
+   "topic": "anatomy",
+   "station": 24,
+   "stem": "สถานี 24: จากรูป",
+   "items": [
+    {
+     "id": "24.1",
+     "prompt": "โครงสร้างหมายเลข 1",
+     "format": "short",
+     "accepted": [
+      "vagus"
+     ],
+     "keywords_all": [
+      "vagus"
+     ],
+     "key_text": "Vagus nerve",
+     "source_key": "เฉลย: Vagus nerve",
+     "image": "img/CVS-43-OSPE-024.jpg",
+     "image_caption": "Mediastinum สถานี 24"
+    },
+    {
+     "id": "24.2",
+     "prompt": "โครงสร้างหมายเลข 2",
+     "format": "short",
+     "accepted": [
+      "thoracic duct"
+     ],
+     "keywords_all": [
+      "thoracic duct"
+     ],
+     "key_text": "Thoracic duct",
+     "source_key": "เฉลย: Thoracic duct"
+    },
+    {
+     "id": "24.3",
+     "prompt": "โครงสร้างหมายเลข 3",
+     "format": "short",
+     "accepted": [
+      "vagus"
+     ],
+     "keywords_all": [
+      "vagus"
+     ],
+     "key_text": "Right vagus nerve (เฉลยลายมืออ่านยาก)",
+     "source_key": "เฉลย: Right vagus nerve (เฉลยลายมืออ่านยาก)"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "OSPE43",
+     "pages": [
+      8
+     ]
+    },
+    {
+     "paper": "OSPE43-KEY",
+     "pages": [
+      8
+     ]
+    }
+   ],
+   "tags": [
+    "anatomy"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "CVS-43-OSPE-025",
+   "block": "CVS",
+   "cohort": 43,
+   "n": 25,
+   "type": "OSPE",
+   "topic": "anatomy",
+   "station": 25,
+   "stem": "สถานี 25: จากรูป",
+   "items": [
+    {
+     "id": "25.1",
+     "prompt": "โครงสร้างหมายเลข 1 (be specific)",
+     "format": "short",
+     "accepted": [
+      "azygos"
+     ],
+     "keywords_all": [
+      "azygos"
+     ],
+     "key_text": "Azygos vein",
+     "source_key": "เฉลย: Azygos vein",
+     "image": "img/CVS-43-OSPE-025.jpg",
+     "image_caption": "Posterior mediastinum"
+    },
+    {
+     "id": "25.2",
+     "prompt": "โครงสร้างหมายเลข 2",
+     "format": "short",
+     "accepted": [
+      "splanchnic"
+     ],
+     "keywords_all": [
+      "splanchnic"
+     ],
+     "key_text": "Greater splanchnic nerve",
+     "source_key": "เฉลย: Greater splanchnic nerve"
+    },
+    {
+     "id": "25.3",
+     "prompt": "โครงสร้างหมายเลข 3",
+     "format": "short",
+     "accepted": [
+      "vagus"
+     ],
+     "keywords_all": [
+      "vagus"
+     ],
+     "key_text": "Vagus nerve",
+     "source_key": "เฉลย: Vagus nerve"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "OSPE43",
+     "pages": [
+      8
+     ]
+    },
+    {
+     "paper": "OSPE43-KEY",
+     "pages": [
+      8
+     ]
+    }
+   ],
+   "tags": [
+    "anatomy"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "CVS-43-OSPE-026",
+   "block": "CVS",
+   "cohort": 43,
+   "n": 26,
+   "type": "OSPE",
+   "topic": "anatomy",
+   "station": 26,
+   "stem": "สถานี 26: From the picture",
+   "items": [
+    {
+     "id": "26.1",
+     "prompt": "Identify the type and size of the vessel",
+     "format": "short",
+     "accepted": [
+      "large vein"
+     ],
+     "keywords_all": [
+      "vein"
+     ],
+     "key_text": "Large vein",
+     "source_key": "เฉลย: Large vein",
+     "image": "img/CVS-43-OSPE-026.jpg",
+     "image_caption": "Histology หลอดเลือด"
+    },
+    {
+     "id": "26.2",
+     "prompt": "What cells can be found in area No.1",
+     "format": "short",
+     "accepted": [
+      "smooth muscle"
+     ],
+     "keywords_all": [
+      "smooth muscle"
+     ],
+     "key_text": "Smooth muscle cells",
+     "source_key": "เฉลย: Smooth muscle cells"
+    },
+    {
+     "id": "26.3",
+     "prompt": "What is the layer No.2 called",
+     "format": "short",
+     "accepted": [
+      "adventitia"
+     ],
+     "keywords_all": [
+      "adventitia"
+     ],
+     "key_text": "Tunica adventitia",
+     "source_key": "เฉลย: Tunica adventitia"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE43",
+     "pages": [
+      8
+     ]
+    },
+    {
+     "paper": "OSPE43-KEY",
+     "pages": [
+      8
+     ]
+    }
+   ],
+   "tags": [
+    "histology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "CVS-43-OSPE-027",
+   "block": "CVS",
+   "cohort": 43,
+   "n": 27,
+   "type": "OSPE",
+   "topic": "anatomy",
+   "station": 27,
+   "stem": "สถานี 27: From the picture",
+   "items": [
+    {
+     "id": "27.1",
+     "prompt": "Identify the type and size of the vessel",
+     "format": "short",
+     "accepted": [
+      "medium"
+     ],
+     "keywords_all": [
+      "medium"
+     ],
+     "key_text": "Medium-sized artery",
+     "source_key": "เฉลย: Medium-sized artery",
+     "image": "img/CVS-43-OSPE-027.jpg",
+     "image_caption": "Histology หลอดเลือด"
+    },
+    {
+     "id": "27.2",
+     "prompt": "2 special characteristics",
+     "format": "short",
+     "accepted": [
+      "tunica media",
+      "elastic lamina"
+     ],
+     "keywords_all": [
+      "elastic"
+     ],
+     "key_text": "Tunica media well-developed (smooth muscle มาก) · External elastic lamina เห็นชัดเจน",
+     "source_key": "เฉลย: Tunica media well-developed (smooth muscle มาก) · External elastic lamina เห็นชัดเจน"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE43",
+     "pages": [
+      9
+     ]
+    },
+    {
+     "paper": "OSPE43-KEY",
+     "pages": [
+      9
+     ]
+    }
+   ],
+   "tags": [
+    "histology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "CVS-43-OSPE-028",
+   "block": "CVS",
+   "cohort": 43,
+   "n": 28,
+   "type": "OSPE",
+   "topic": "anatomy",
+   "station": 28,
+   "stem": "สถานี 28: From the picture",
+   "items": [
+    {
+     "id": "28.1",
+     "prompt": "Identify the cell No.1",
+     "format": "short",
+     "accepted": [
+      "purkinje"
+     ],
+     "keywords_all": [
+      "purkinje"
+     ],
+     "key_text": "Purkinje fibers",
+     "source_key": "เฉลย: Purkinje fibers",
+     "image": "img/CVS-43-OSPE-028.jpg",
+     "image_caption": "Histology สถานี 28"
+    },
+    {
+     "id": "28.2",
+     "prompt": "Identify the cell No.2",
+     "format": "short",
+     "accepted": [
+      "cardiac muscle"
+     ],
+     "keywords_all": [
+      "cardiac"
+     ],
+     "key_text": "Cardiac muscle",
+     "source_key": "เฉลย: Cardiac muscle"
+    },
+    {
+     "id": "28.3",
+     "prompt": "Where should the cell No.1 be found (be specific)",
+     "format": "short",
+     "accepted": [
+      "subendocardium"
+     ],
+     "keywords_all": [
+      "subendocardium"
+     ],
+     "key_text": "Subendocardium of ventricle",
+     "source_key": "เฉลย: Subendocardium of ventricle"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE43",
+     "pages": [
+      9
+     ]
+    },
+    {
+     "paper": "OSPE43-KEY",
+     "pages": [
+      9
+     ]
+    }
+   ],
+   "tags": [
+    "histology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "CVS-43-OSPE-029",
+   "block": "CVS",
+   "cohort": 43,
+   "n": 29,
+   "type": "OSPE",
+   "topic": "ecg",
+   "station": 29,
+   "stem": "สถานี 29: จากกราฟ ECG หาค่า",
+   "items": [
+    {
+     "id": "29.1",
+     "prompt": "PR interval",
+     "format": "short",
+     "accepted": [
+      "0.16"
+     ],
+     "keywords_all": [
+      "0.16"
+     ],
+     "key_text": "4 ช่อง × 0.04 = 0.16 s",
+     "source_key": "เฉลย: 4 ช่อง × 0.04 = 0.16 s",
+     "image": "img/CVS-43-OSPE-029.jpg",
+     "image_caption": "ECG สถานี 29"
+    },
+    {
+     "id": "29.2",
+     "prompt": "ST interval",
+     "format": "short",
+     "accepted": [
+      "0.32"
+     ],
+     "keywords_all": [
+      "0.32"
+     ],
+     "key_text": "8 ช่อง × 0.04 = 0.32 s",
+     "source_key": "เฉลย: 8 ช่อง × 0.04 = 0.32 s"
+    },
+    {
+     "id": "29.3",
+     "prompt": "mean QRS",
+     "format": "short",
+     "accepted": [
+      "2"
+     ],
+     "keywords_all": [
+      "2"
+     ],
+     "key_text": "≈ 2 mV (10 ช่อง × 0.2) ตามเฉลยลายมือ",
+     "source_key": "เฉลย: ≈ 2 mV (10 ช่อง × 0.2) ตามเฉลยลายมือ"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE43",
+     "pages": [
+      9
+     ]
+    },
+    {
+     "paper": "OSPE43-KEY",
+     "pages": [
+      9
+     ]
+    }
+   ],
+   "tags": [
+    "ecg"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "CVS-43-OSPE-030",
+   "block": "CVS",
+   "cohort": 43,
+   "n": 30,
+   "type": "OSPE",
+   "topic": "ecg",
+   "station": 30,
+   "stem": "สถานี 30: From the graph",
+   "items": [
+    {
+     "id": "30.1",
+     "prompt": "What is the heart rate",
+     "format": "short",
+     "accepted": [
+      "79"
+     ],
+     "keywords_all": [
+      "79"
+     ],
+     "key_text": "≈ 79 bpm (1500 / 19 ช่องเล็ก)",
+     "source_key": "เฉลย: ≈ 79 bpm (1500 / 19 ช่องเล็ก)",
+     "image": "img/CVS-43-OSPE-030.jpg",
+     "image_caption": "ECG สถานี 30"
+    },
+    {
+     "id": "30.2",
+     "prompt": "How would you place the electrode for lead III",
+     "format": "short",
+     "accepted": [
+      "left arm",
+      "left leg"
+     ],
+     "keywords_all": [
+      "left leg"
+     ],
+     "key_text": "Left arm = negative electrode · Left leg = positive electrode",
+     "source_key": "เฉลย: Left arm = negative electrode · Left leg = positive electrode"
+    },
+    {
+     "id": "30.3",
+     "prompt": "Why does aVR always appear negative",
+     "format": "short",
+     "accepted": [
+      "opposite",
+      "vector"
+     ],
+     "keywords_all": [
+      "opposite"
+     ],
+     "key_text": "Electrical vector ของหัวใจมีทิศตรงข้ามกับ electrode (aVR อยู่ทางขวาบน)",
+     "source_key": "เฉลย: Electrical vector ของหัวใจมีทิศตรงข้ามกับ electrode (aVR อยู่ทางขวาบน)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE43",
+     "pages": [
+      10
+     ]
+    },
+    {
+     "paper": "OSPE43-KEY",
+     "pages": [
+      10
+     ]
+    }
+   ],
+   "tags": [
+    "ecg"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "CVS-43-OSPE-031",
+   "block": "CVS",
+   "cohort": 43,
+   "n": 31,
+   "type": "OSPE",
+   "topic": "ecg",
+   "station": 31,
+   "stem": "สถานี 31: ECG horizontal plane",
+   "items": [
+    {
+     "id": "31.1",
+     "prompt": "เรียงลำดับ V1–V6 ให้ถูกต้อง",
+     "format": "short",
+     "accepted": [
+      "e d b a f c",
+      "edbafc"
+     ],
+     "keywords_all": [
+      "e"
+     ],
+     "key_text": "E, D, B, A, F, C",
+     "source_key": "เฉลย: E, D, B, A, F, C",
+     "image": "img/CVS-43-OSPE-031.jpg",
+     "image_caption": "ECG horizontal plane"
+    },
+    {
+     "id": "31.2",
+     "prompt": "ตำแหน่งการวางสำหรับ figure A",
+     "format": "short",
+     "accepted": [
+      "5th",
+      "midclavicular"
+     ],
+     "keywords_all": [
+      "5th"
+     ],
+     "key_text": "5th intercostal space, midclavicular line (V4)",
+     "source_key": "เฉลย: 5th intercostal space, midclavicular line (V4)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE43",
+     "pages": [
+      10
+     ]
+    },
+    {
+     "paper": "OSPE43-KEY",
+     "pages": [
+      10
+     ]
+    }
+   ],
+   "tags": [
+    "ecg"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "CVS-43-OSPE-032",
+   "block": "CVS",
+   "cohort": 43,
+   "n": 32,
+   "type": "OSPE",
+   "topic": "pathology",
+   "station": 32,
+   "stem": "สถานี 32: From the picture",
+   "items": [
+    {
+     "id": "32.1",
+     "prompt": "Diagnosis",
+     "format": "short",
+     "accepted": [
+      "thrombosis"
+     ],
+     "keywords_all": [
+      "thrombosis"
+     ],
+     "key_text": "Thrombosis",
+     "source_key": "เฉลย: Thrombosis",
+     "image": "img/CVS-43-OSPE-032.jpg",
+     "image_caption": "ภาพสถานี 32"
+    },
+    {
+     "id": "32.2",
+     "prompt": "3 major causes",
+     "format": "short",
+     "accepted": [
+      "endothelial",
+      "blood flow",
+      "hypercoagulab"
+     ],
+     "keywords_all": [
+      "virchow"
+     ],
+     "key_text": "Endothelial cell injury · Abnormal blood flow · Hypercoagulability (Virchow triad)",
+     "source_key": "เฉลย: Endothelial cell injury · Abnormal blood flow · Hypercoagulability (Virchow triad)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE43",
+     "pages": [
+      10
+     ]
+    },
+    {
+     "paper": "OSPE43-KEY",
+     "pages": [
+      10
+     ]
+    }
+   ],
+   "tags": [
+    "pathology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "CVS-43-OSPE-033",
+   "block": "CVS",
+   "cohort": 43,
+   "n": 33,
+   "type": "OSPE",
+   "topic": "pathology",
+   "station": 33,
+   "stem": "สถานี 33: From the picture",
+   "items": [
+    {
+     "id": "33.1",
+     "prompt": "Pathological finding",
+     "format": "short",
+     "accepted": [
+      "wavy",
+      "pmn"
+     ],
+     "keywords_all": [
+      "wavy"
+     ],
+     "key_text": "Wavy myocardium with PMN infiltration",
+     "source_key": "เฉลย: Wavy myocardium with PMN infiltration",
+     "image": "img/CVS-43-OSPE-033.jpg",
+     "image_caption": "Histology สถานี 33"
+    },
+    {
+     "id": "33.2",
+     "prompt": "Diagnosis",
+     "format": "short",
+     "accepted": [
+      "myocardial infarction"
+     ],
+     "keywords_all": [
+      "infarction"
+     ],
+     "key_text": "Acute myocardial infarction",
+     "source_key": "เฉลย: Acute myocardial infarction"
+    },
+    {
+     "id": "33.3",
+     "prompt": "Investigation",
+     "format": "short",
+     "accepted": [
+      "ck-mb",
+      "troponin"
+     ],
+     "keywords_all": [
+      "troponin"
+     ],
+     "key_text": "CK-MB, Cardiac troponin",
+     "source_key": "เฉลย: CK-MB, Cardiac troponin"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE43",
+     "pages": [
+      11
+     ]
+    },
+    {
+     "paper": "OSPE43-KEY",
+     "pages": [
+      11
+     ]
+    }
+   ],
+   "tags": [
+    "pathology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "CVS-43-OSPE-034",
+   "block": "CVS",
+   "cohort": 43,
+   "n": 34,
+   "type": "OSPE",
+   "topic": "pathology",
+   "station": 34,
+   "stem": "สถานี 34: From the picture",
+   "items": [
+    {
+     "id": "34.1",
+     "prompt": "Pathological finding",
+     "format": "short",
+     "accepted": [
+      "vegetation",
+      "chordae"
+     ],
+     "keywords_all": [
+      "vegetation"
+     ],
+     "key_text": "Vegetation of aortic valve · Chordae tendineae ของ mitral valve หนาและหดสั้นลง",
+     "source_key": "เฉลย: Vegetation of aortic valve · Chordae tendineae ของ mitral valve หนาและหดสั้นลง",
+     "image": "img/CVS-43-OSPE-034.jpg",
+     "image_caption": "ภาพสถานี 34"
+    },
+    {
+     "id": "34.2",
+     "prompt": "Diagnosis",
+     "format": "short",
+     "accepted": [
+      "endocarditis"
+     ],
+     "keywords_all": [
+      "endocarditis"
+     ],
+     "key_text": "Infective endocarditis",
+     "source_key": "เฉลย: Infective endocarditis"
+    },
+    {
+     "id": "34.3",
+     "prompt": "Microorganism",
+     "format": "short",
+     "accepted": [
+      "viridans"
+     ],
+     "keywords_all": [
+      "viridans"
+     ],
+     "key_text": "Streptococcus viridans",
+     "source_key": "เฉลย: Streptococcus viridans"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE43",
+     "pages": [
+      11
+     ]
+    },
+    {
+     "paper": "OSPE43-KEY",
+     "pages": [
+      11
+     ]
+    }
+   ],
+   "tags": [
+    "pathology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "CVS-43-OSPE-035",
+   "block": "CVS",
+   "cohort": 43,
+   "n": 35,
+   "type": "OSPE",
+   "topic": "pathology",
+   "station": 35,
+   "stem": "สถานี 35: From the picture",
+   "items": [
+    {
+     "id": "35.1",
+     "prompt": "Structure pointed by arrow",
+     "format": "short",
+     "accepted": [
+      "aschoff"
+     ],
+     "keywords_all": [
+      "aschoff"
+     ],
+     "key_text": "Aschoff body",
+     "source_key": "เฉลย: Aschoff body",
+     "image": "img/CVS-43-OSPE-035.jpg",
+     "image_caption": "Histology สถานี 35"
+    },
+    {
+     "id": "35.2",
+     "prompt": "Diagnosis",
+     "format": "short",
+     "accepted": [
+      "rheumatic"
+     ],
+     "keywords_all": [
+      "rheumatic"
+     ],
+     "key_text": "Rheumatic heart disease (rheumatic carditis)",
+     "source_key": "เฉลย: Rheumatic heart disease (rheumatic carditis)"
+    },
+    {
+     "id": "35.3",
+     "prompt": "Causative microorganism",
+     "format": "short",
+     "accepted": [
+      "pyogenes"
+     ],
+     "keywords_all": [
+      "pyogenes"
+     ],
+     "key_text": "Streptococcus pyogenes",
+     "source_key": "เฉลย: Streptococcus pyogenes"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE43",
+     "pages": [
+      11
+     ]
+    },
+    {
+     "paper": "OSPE43-KEY",
+     "pages": [
+      11
+     ]
+    }
+   ],
+   "tags": [
+    "pathology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "CVS-43-OSPE-036",
+   "block": "CVS",
+   "cohort": 43,
+   "n": 36,
+   "type": "OSPE",
+   "topic": "pathology",
+   "station": 36,
+   "stem": "สถานี 36: From the chest X-ray",
+   "items": [
+    {
+     "id": "36.1",
+     "prompt": "Which structure enlarges",
+     "format": "short",
+     "accepted": [
+      "pulmonary artery"
+     ],
+     "keywords_all": [
+      "pulmonary artery"
+     ],
+     "key_text": "Main pulmonary artery",
+     "source_key": "เฉลย: Main pulmonary artery",
+     "image": "img/CVS-43-OSPE-036.jpg",
+     "image_caption": "Chest X-ray สถานี 36"
+    },
+    {
+     "id": "36.2",
+     "prompt": "4 possible causes",
+     "format": "short",
+     "accepted": [
+      "pulmonary hypertension",
+      "stenosis",
+      "shunt"
+     ],
+     "keywords_all": [
+      "pulmonary hypertension"
+     ],
+     "key_text": "Pulmonary hypertension, Pulmonic stenosis, Left-to-right shunt (ASD/VSD/PDA), Idiopathic dilatation (AI เติม — เฉลยไม่ครบ)",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE43",
+     "pages": [
+      12
+     ]
+    },
+    {
+     "paper": "OSPE43-KEY",
+     "pages": [
+      12
+     ]
+    }
+   ],
+   "tags": [
+    "radiology"
+   ],
+   "source": "claude-mcp"
+  }
+ ]
+}
