@@ -1,0 +1,663 @@
+{
+ "meta": {
+  "set_id": "44_KF",
+  "block": "HLC",
+  "cohort": 44,
+  "type": "KF",
+  "title": "KF Human Lifecycle · Med PSU 44",
+  "time_limit_min": 120,
+  "generated_by": "auditor/tools/build_kf.py from auditor/data/work/hlc_44_KF.kf.json — do not edit by hand"
+ },
+ "questions": [
+  {
+   "id": "HLC-44-KF-001",
+   "block": "HLC",
+   "cohort": 44,
+   "n": 1,
+   "type": "KF",
+   "case": "ชะนีแนท (สถานการณ์คุมกำเนิดฉุกเฉิน)",
+   "items": [
+    {
+     "id": "1.1",
+     "prompt": "ยาป้องกันการตั้งครรภ์",
+     "format": "short",
+     "accepted": [
+      "levonorgestrel",
+      "emergency"
+     ],
+     "keywords_all": [
+      "levonorgestrel"
+     ],
+     "key_text": "Emergency contraceptive pills: high-dose progestin เช่น Levonorgestrel 0.75 mg × 2 เม็ด · Yuzpe method: COC ปกติให้ได้ dose ของ EE >100 µg",
+     "source_key": "เฉลย: Emergency contraceptive pills: high-dose progestin เช่น Levonorgestrel 0.75 mg × 2 เม็ด · Yuzpe method: COC ปกติให้ได้ dose ของ EE >100 µg"
+    },
+    {
+     "id": "1.2",
+     "prompt": "กลไกการออกฤทธิ์",
+     "format": "short",
+     "accepted": [
+      "ovulation",
+      "endometrium"
+     ],
+     "keywords_all": [
+      "ovulation"
+     ],
+     "key_text": "Inhibit or delay ovulation · Alter endometrium ป้องกันการฝังตัว",
+     "source_key": "เฉลย: Inhibit or delay ovulation · Alter endometrium ป้องกันการฝังตัว"
+    },
+    {
+     "id": "1.3",
+     "prompt": "กลไกสำคัญของยาป้องกันการตั้งครรภ์",
+     "format": "short",
+     "accepted": [
+      "implantation"
+     ],
+     "keywords_all": [
+      "implantation"
+     ],
+     "key_text": "Alter endometrium → prevent implantation of blastocyst",
+     "source_key": "เฉลย: Alter endometrium → prevent implantation of blastocyst"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF44",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "KF44-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [
+    "contraception"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "HLC-44-KF-002",
+   "block": "HLC",
+   "cohort": 44,
+   "n": 2,
+   "type": "KF",
+   "case": "ตั้งครรภ์ 2 เดือน ไม่มีปัสสาวะมา อัลตราซาวด์พบ heart beat และ yolk sac",
+   "items": [
+    {
+     "id": "2.1",
+     "prompt": "อายุครรภ์",
+     "format": "short",
+     "accepted": [
+      "8"
+     ],
+     "keywords_all": [
+      "8"
+     ],
+     "key_text": "GA = 8 weeks",
+     "source_key": "เฉลย: GA = 8 weeks"
+    },
+    {
+     "id": "2.2",
+     "prompt": "ตรงกับพัฒนาการช่วงใด",
+     "format": "short",
+     "accepted": [
+      "organogen"
+     ],
+     "keywords_all": [
+      "organogen"
+     ],
+     "key_text": "Organogenetic period (สัปดาห์ที่ 4–8)",
+     "source_key": "เฉลย: Organogenetic period (สัปดาห์ที่ 4–8)"
+    },
+    {
+     "id": "2.3",
+     "prompt": "ปกติรกอยู่ตำแหน่งไหน",
+     "format": "short",
+     "accepted": [
+      "posterior",
+      "fundus"
+     ],
+     "keywords_all": [
+      "posterior"
+     ],
+     "key_text": "Posterior fundus of uterus",
+     "source_key": "เฉลย: Posterior fundus of uterus"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF44",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "KF44-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [
+    "embryology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "HLC-44-KF-003",
+   "block": "HLC",
+   "cohort": 44,
+   "n": 3,
+   "type": "KF",
+   "case": "หญิงตั้งครรภ์มีอาการแสบร้อนกลางอก",
+   "items": [
+    {
+     "id": "3.1",
+     "prompt": "เรียกอาการนี้ว่า",
+     "format": "short",
+     "accepted": [
+      "heartburn",
+      "pyrosis"
+     ],
+     "keywords_all": [
+      "heartburn"
+     ],
+     "key_text": "Heartburn / Pyrosis",
+     "source_key": "เฉลย: Heartburn / Pyrosis"
+    },
+    {
+     "id": "3.2",
+     "prompt": "อวัยวะใด",
+     "format": "short",
+     "accepted": [
+      "esophag"
+     ],
+     "keywords_all": [
+      "esophag"
+     ],
+     "key_text": "Gastroesophageal (esophagus)",
+     "source_key": "เฉลย: Gastroesophageal (esophagus)"
+    },
+    {
+     "id": "3.3",
+     "prompt": "สาเหตุ",
+     "format": "short",
+     "accepted": [
+      "les",
+      "sphincter"
+     ],
+     "keywords_all": [
+      "les"
+     ],
+     "key_text": "GERD จากการตั้งครรภ์: มดลูกโตทำให้ความดันใน stomach สูงกว่า esophagus และ lower esophageal sphincter (LES) คลายตัวจาก progesterone",
+     "source_key": "เฉลย: GERD จากการตั้งครรภ์: มดลูกโตทำให้ความดันใน stomach สูงกว่า esophagus และ lower esophageal sphincter (LES) คลายตัวจาก progesterone"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF44",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "KF44-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [
+    "pregnancy"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "HLC-44-KF-004",
+   "block": "HLC",
+   "cohort": 44,
+   "n": 4,
+   "type": "KF",
+   "case": "ทารกแรกเกิด (preterm/term) หายใจเหนื่อยจากความดันปอดสูง",
+   "items": [
+    {
+     "id": "4.1",
+     "prompt": "ภาวะที่เกิด",
+     "format": "short",
+     "accepted": [
+      "pphn",
+      "pulmonary hypertension"
+     ],
+     "keywords_all": [
+      "pphn"
+     ],
+     "key_text": "Persistent pulmonary hypertension of newborn (PPHN)",
+     "source_key": "เฉลย: Persistent pulmonary hypertension of newborn (PPHN)"
+    },
+    {
+     "id": "4.2",
+     "prompt": "กลไก",
+     "format": "short",
+     "accepted": [
+      "foramen ovale",
+      "shunt"
+     ],
+     "keywords_all": [
+      "foramen ovale"
+     ],
+     "key_text": "หลังคลอดตัดสายสะดือไม่มีเลือด oxygenated จาก umbilical vein; เลือดจาก IVC เข้า RA → foramen ovale → LA → LV → ascending aorta; deoxygenated blood จาก SVC เข้า RA → RV → pulmonary a. ซึ่ง pulmonary vascular resistance สูง ductus arteriosus ยังเปิด เลือดจึง shunt ผ่าน foramen ovale (right-to-left)",
+     "source_key": "เฉลย: หลังคลอดตัดสายสะดือไม่มีเลือด oxygenated จาก umbilical vein; เลือดจาก IVC เข้า RA → foramen ovale → LA → LV → ascending aorta; deoxygenated blood จาก SVC เข้า RA → RV → pulmonary a. ซึ่ง pulmonary vascular resistance สูง ductus arteriosus ยังเปิด เลือดจึง shunt ผ่าน foramen ovale (right-to-left)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF44",
+     "pages": [
+      3
+     ]
+    },
+    {
+     "paper": "KF44-KEY",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [
+    "neonate"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "HLC-44-KF-005",
+   "block": "HLC",
+   "cohort": 44,
+   "n": 5,
+   "type": "KF",
+   "case": "หญิงอายุ 12 ปี เมนส์มาไม่สม่ำเสมอ (ต้นฉบับไม่มีเฉลยครบ)",
+   "items": [
+    {
+     "id": "5.1",
+     "prompt": "ปกติหรือไม่",
+     "format": "short",
+     "accepted": [
+      "ปกติ",
+      "anovulatory"
+     ],
+     "keywords_all": [
+      "ปกติ"
+     ],
+     "key_text": "ปกติ — ช่วง 2 ปีแรกหลัง menarche รอบไม่สม่ำเสมอได้จาก anovulatory cycles",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "KF44",
+     "pages": [
+      4
+     ]
+    },
+    {
+     "paper": "KF44-KEY",
+     "pages": [
+      4
+     ]
+    }
+   ],
+   "tags": [
+    "reproductive"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "HLC-44-KF-006",
+   "block": "HLC",
+   "cohort": 44,
+   "n": 6,
+   "type": "KF",
+   "case": "ยา 4 ชนิดในหญิงตั้งครรภ์: ตาราง Medication / Preg category / Teratogenic effects / Alternative",
+   "items": [
+    {
+     "id": "6.1",
+     "prompt": "Enalapril",
+     "format": "short",
+     "accepted": [
+      "renal",
+      "methyldopa"
+     ],
+     "keywords_all": [
+      "renal"
+     ],
+     "key_text": "Category D: severe neonatal renal insufficiency, ลด skull ossification → ทางเลือก Methyldopa",
+     "source_key": "เฉลย: Category D: severe neonatal renal insufficiency, ลด skull ossification → ทางเลือก Methyldopa"
+    },
+    {
+     "id": "6.2",
+     "prompt": "Cyclophosphamide",
+     "format": "short",
+     "accepted": [
+      "anomal",
+      "cyclosporin"
+     ],
+     "keywords_all": [
+      "anomal"
+     ],
+     "key_text": "Category D: multiple congenital anomalies, IUGR, stillbirth/abortion → ทางเลือก Cyclosporin (C)",
+     "source_key": "เฉลย: Category D: multiple congenital anomalies, IUGR, stillbirth/abortion → ทางเลือก Cyclosporin (C)"
+    },
+    {
+     "id": "6.3",
+     "prompt": "Hydroxychloroquine",
+     "format": "short",
+     "accepted": [
+      "ocular"
+     ],
+     "keywords_all": [
+      "ocular"
+     ],
+     "key_text": "Category C: ocular toxicity → ให้ต่อได้ (continue)",
+     "source_key": "เฉลย: Category C: ocular toxicity → ให้ต่อได้ (continue)"
+    },
+    {
+     "id": "6.4",
+     "prompt": "Prednisolone",
+     "format": "short",
+     "accepted": [
+      "premature rupture",
+      "low birth"
+     ],
+     "keywords_all": [
+      "premature rupture"
+     ],
+     "key_text": "Category C: เสี่ยง premature rupture of membranes และ low birth weight → ให้ต่อได้",
+     "source_key": "เฉลย: Category C: เสี่ยง premature rupture of membranes และ low birth weight → ให้ต่อได้"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF44",
+     "pages": [
+      5
+     ]
+    },
+    {
+     "paper": "KF44-KEY",
+     "pages": [
+      5
+     ]
+    }
+   ],
+   "tags": [
+    "pharm"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "HLC-44-KF-007",
+   "block": "HLC",
+   "cohort": 44,
+   "n": 7,
+   "type": "KF",
+   "case": "เด็ก 1 ปี 10 kg ให้ paracetamol 120 mg/5 mL ที่ low dose และ high dose",
+   "items": [
+    {
+     "id": "7.1",
+     "prompt": "Low dose (10 mg/kg)",
+     "format": "short",
+     "accepted": [
+      "4.2"
+     ],
+     "keywords_all": [
+      "4.2"
+     ],
+     "key_text": "10×10 = 100 mg → (5 mL × 100 mg)/120 mg = 4.2 mL/dose",
+     "source_key": "เฉลย: 10×10 = 100 mg → (5 mL × 100 mg)/120 mg = 4.2 mL/dose"
+    },
+    {
+     "id": "7.2",
+     "prompt": "High dose (15 mg/kg)",
+     "format": "short",
+     "accepted": [
+      "6.3"
+     ],
+     "keywords_all": [
+      "6.3"
+     ],
+     "key_text": "15×10 = 150 mg → (5 mL × 150 mg)/120 mg = 6.3 mL/dose (ในทางปฏิบัติสั่ง 5–6 mL PO prn q 4–6 hr)",
+     "source_key": "เฉลย: 15×10 = 150 mg → (5 mL × 150 mg)/120 mg = 6.3 mL/dose (ในทางปฏิบัติสั่ง 5–6 mL PO prn q 4–6 hr)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF44",
+     "pages": [
+      6
+     ]
+    },
+    {
+     "paper": "KF44-KEY",
+     "pages": [
+      6
+     ]
+    }
+   ],
+   "tags": [
+    "pharm"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "HLC-44-KF-008",
+   "block": "HLC",
+   "cohort": 44,
+   "n": 8,
+   "type": "KF",
+   "case": "Menopause",
+   "items": [
+    {
+     "id": "8.1",
+     "prompt": "vaginal atrophy จากอะไร 3 ข้อ",
+     "format": "short",
+     "accepted": [
+      "estrogen",
+      "collagen"
+     ],
+     "keywords_all": [
+      "estrogen"
+     ],
+     "key_text": "Estrogen ลดลง → ช่องคลอดสูญเสีย collagen, adipose tissue, ความสามารถกักน้ำ → ช่องคลอดหดสั้น/แคบ rugae แบน → เยื่อบุบางและเปราะ มีจุดเลือดออกใต้เยื่อเมือก เลือดออกง่ายเมื่อกระทบ",
+     "source_key": "เฉลย: Estrogen ลดลง → ช่องคลอดสูญเสีย collagen, adipose tissue, ความสามารถกักน้ำ → ช่องคลอดหดสั้น/แคบ rugae แบน → เยื่อบุบางและเปราะ มีจุดเลือดออกใต้เยื่อเมือก เลือดออกง่ายเมื่อกระทบ"
+    },
+    {
+     "id": "8.2",
+     "prompt": "อาการอื่น 2 ข้อ",
+     "format": "short",
+     "accepted": [
+      "hot flash",
+      "night sweat"
+     ],
+     "keywords_all": [
+      "hot flash"
+     ],
+     "key_text": "Hot flashes · Night sweating · Loss of libido · Nocturia · Pelvic pain",
+     "source_key": "เฉลย: Hot flashes · Night sweating · Loss of libido · Nocturia · Pelvic pain"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF44",
+     "pages": [
+      7
+     ]
+    },
+    {
+     "paper": "KF44-KEY",
+     "pages": [
+      7
+     ]
+    }
+   ],
+   "tags": [
+    "aging"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "HLC-44-KF-009",
+   "block": "HLC",
+   "cohort": 44,
+   "n": 9,
+   "type": "KF",
+   "case": "เด็กอายุ 2 ปี ตามโพย พัฒนาการทุกด้าน",
+   "items": [
+    {
+     "id": "9.1",
+     "prompt": "การเติบโต",
+     "format": "short",
+     "accepted": [
+      "12",
+      "89",
+      "47"
+     ],
+     "keywords_all": [
+      "12"
+     ],
+     "key_text": "น้ำหนัก (2×2)+8 = 12 kg · ส่วนสูง (2×6)+77 = 89 cm · เส้นรอบศีรษะ 47 cm",
+     "source_key": "เฉลย: น้ำหนัก (2×2)+8 = 12 kg · ส่วนสูง (2×6)+77 = 89 cm · เส้นรอบศีรษะ 47 cm"
+    },
+    {
+     "id": "9.2",
+     "prompt": "พัฒนาการ",
+     "format": "short",
+     "accepted": [
+      "parallel",
+      "2 ขั้นตอน"
+     ],
+     "keywords_all": [
+      "parallel"
+     ],
+     "key_text": "Fine motor ขีดเส้นตรง วาดวงกลม ต่อบล็อก · Gross motor วิ่ง เตะบอล เดินเกาะราวลงบันได · Personal-social parallel play · Language ทำตามคำสั่ง 2 ขั้นตอน พูด 2 คำติดกัน · Moral preconventional",
+     "source_key": "เฉลย: Fine motor ขีดเส้นตรง วาดวงกลม ต่อบล็อก · Gross motor วิ่ง เตะบอล เดินเกาะราวลงบันได · Personal-social parallel play · Language ทำตามคำสั่ง 2 ขั้นตอน พูด 2 คำติดกัน · Moral preconventional"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF44",
+     "pages": [
+      8
+     ]
+    },
+    {
+     "paper": "KF44-KEY",
+     "pages": [
+      8
+     ]
+    }
+   ],
+   "tags": [
+    "pediatrics"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "HLC-44-KF-010",
+   "block": "HLC",
+   "cohort": 44,
+   "n": 10,
+   "type": "KF",
+   "case": "ภูเขาน้ำแข็งจิตวิทยา (Freud topographic): เติมตัวอย่างลงไป",
+   "items": [
+    {
+     "id": "10.1",
+     "prompt": "Conscious / Preconscious / Unconscious",
+     "format": "short",
+     "accepted": [
+      "conscious",
+      "preconscious",
+      "unconscious"
+     ],
+     "keywords_all": [
+      "conscious"
+     ],
+     "key_text": "Conscious: รู้ตัว (awareness) · Preconscious: ego เชื่อม id กับ superego (defense mechanism) · Unconscious: id ความต้องการ ไม่รู้ตัว ไม่ยอมรับ/ปรากฏเป็น dream",
+     "source_key": "เฉลย: Conscious: รู้ตัว (awareness) · Preconscious: ego เชื่อม id กับ superego (defense mechanism) · Unconscious: id ความต้องการ ไม่รู้ตัว ไม่ยอมรับ/ปรากฏเป็น dream"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF44",
+     "pages": [
+      10
+     ]
+    },
+    {
+     "paper": "KF44-KEY",
+     "pages": [
+      10
+     ]
+    }
+   ],
+   "tags": [
+    "psychology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "HLC-44-KF-011",
+   "block": "HLC",
+   "cohort": 44,
+   "n": 11,
+   "type": "KF",
+   "case": "เขียนบทความ Death & Dying: ความตายเป็นสุขภาวะของส่วนรวม และหน้าที่ของแพทย์ในการ “ตายดี”",
+   "items": [
+    {
+     "id": "11.1",
+     "prompt": "ประเด็นสำคัญ",
+     "format": "short",
+     "accepted": [
+      "good death",
+      "palliative"
+     ],
+     "keywords_all": [
+      "good death"
+     ],
+     "key_text": "การตายดี (good death): ลดความทุกข์ทรมาน ผู้ป่วยตายอย่างมีศักดิ์ศรี ครอบครัวมีส่วนร่วม · แพทย์ให้ palliative care สื่อสารและวางแผนล่วงหน้า",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "KF44",
+     "pages": [
+      10
+     ]
+    },
+    {
+     "paper": "KF44-KEY",
+     "pages": [
+      10
+     ]
+    }
+   ],
+   "tags": [
+    "ethics"
+   ],
+   "source": "claude-mcp"
+  }
+ ]
+}
