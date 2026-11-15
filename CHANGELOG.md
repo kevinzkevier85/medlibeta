@@ -3,6 +3,9 @@
 ทุกเวอร์ชันบันทึกที่นี่ และใน `version.json` (หน้าเว็บแสดงจาก `version.json`)
 เลขเวอร์ชัน: `MAJOR.MINOR.PATCH` — เพิ่มฟีเจอร์ = MINOR, แก้บั๊ก = PATCH
 
+## v0.53.0 · 2026-11-15 · HEMA KF + OSPE
+- HEMA KF 9 ชุด + OSPE 7 ชุด (61 สถานี) · ชุดไม่มีเฉลยเป็น AI draft
+
 ## v0.52.0 · 2026-11-15 · HEMA MCQ
 - บล็อก HEMA ใหม่ MCQ 9 ชุด (~340 ข้อ)
 
