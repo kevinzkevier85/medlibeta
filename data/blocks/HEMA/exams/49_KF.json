@@ -1,0 +1,717 @@
+{
+ "meta": {
+  "set_id": "49_KF",
+  "block": "HEMA",
+  "cohort": 49,
+  "type": "KF",
+  "title": "KF Hematopoietic · Med PSU 49",
+  "time_limit_min": 120,
+  "generated_by": "auditor/tools/build_kf.py from auditor/data/work/hema_49_KF.kf.json — do not edit by hand"
+ },
+ "questions": [
+  {
+   "id": "HEMA-49-KF-001",
+   "block": "HEMA",
+   "cohort": 49,
+   "n": 1,
+   "type": "KF",
+   "case": "นศพ. ฟุบ หัวกระแทก รอยช้ำ · iron",
+   "items": [
+    {
+     "id": "1.1",
+     "prompt": "สารแต่ละ stage (1.1–1.4)",
+     "format": "short",
+     "accepted": [
+      "oxyhemoglobin",
+      "biliverdin",
+      "bilirubin"
+     ],
+     "keywords_all": [
+      "biliverdin"
+     ],
+     "key_text": "Pink/red = oxyhemoglobin · Purple = deoxyhemoglobin · Pale green = biliverdin · Yellow = bilirubin",
+     "source_key": "ไม่มีไฟล์เฉลย — AI เติม"
+    },
+    {
+     "id": "1.5",
+     "prompt": "สารใน 1.4 ขับทางปัสสาวะในรูป",
+     "format": "short",
+     "accepted": [
+      "urobilin"
+     ],
+     "keywords_all": [
+      "urobilin"
+     ],
+     "key_text": "Urobilin (จาก urobilinogen)",
+     "source_key": "ไม่มีไฟล์เฉลย — AI เติม"
+    },
+    {
+     "id": "1.6",
+     "prompt": "ผู้ป่วยธาตุเหล็กสูง: serum iron, ferritin, TIBC",
+     "format": "short",
+     "accepted": [
+      "↑",
+      "ferritin"
+     ],
+     "keywords_all": [
+      "ferritin"
+     ],
+     "key_text": "Serum iron ↑ · Ferritin ↑ · TIBC ↓/ปกติ (transferrin saturation ↑)",
+     "source_key": "ไม่มีไฟล์เฉลย — AI เติม"
+    },
+    {
+     "id": "1.7",
+     "prompt": "ADME ที่คุมสมดุลเหล็ก",
+     "format": "short",
+     "accepted": [
+      "absorption"
+     ],
+     "keywords_all": [
+      "absorption"
+     ],
+     "key_text": "Absorption",
+     "source_key": "ไม่มีไฟล์เฉลย — AI เติม"
+    },
+    {
+     "id": "1.8",
+     "prompt": "Protein คุมสมดุลเหล็ก",
+     "format": "short",
+     "accepted": [
+      "hepcidin"
+     ],
+     "keywords_all": [
+      "hepcidin"
+     ],
+     "key_text": "Hepcidin",
+     "source_key": "ไม่มีไฟล์เฉลย — AI เติม"
+    },
+    {
+     "id": "1.9",
+     "prompt": "เซลล์ที่ลูกศรชี้",
+     "format": "short",
+     "accepted": [
+      "echinocyte",
+      "burr"
+     ],
+     "keywords_all": [
+      "echinocyte"
+     ],
+     "key_text": "Echinocyte (burr cell)",
+     "source_key": "ไม่มีไฟล์เฉลย — AI เติม",
+     "image": "img/HEMA-49-KF-001.jpg",
+     "image_caption": "เซลล์ที่ลูกศรชี้"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "KF49",
+     "pages": [
+      1
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "HEMA-49-KF-002",
+   "block": "HEMA",
+   "cohort": 49,
+   "n": 2,
+   "type": "KF",
+   "case": "เด็กชาย 4 ปี ไข้ ซีดลง ตัวเหลือง ตับม้ามโต · Hb 7.8 MCV 60 MCH 20 RDW 24 retic 8% inclusion body +",
+   "items": [
+    {
+     "id": "2.1",
+     "prompt": "วินิจฉัย",
+     "format": "short",
+     "accepted": [
+      "hbh"
+     ],
+     "keywords_all": [
+      "hbh"
+     ],
+     "key_text": "HbH disease (α-thalassemia) มี acute hemolysis จากการติดเชื้อ",
+     "source_key": "ไม่มีไฟล์เฉลย — AI เติม"
+    },
+    {
+     "id": "2.2",
+     "prompt": "เหตุผล/ปัจจัยกระตุ้น 4 ข้อ",
+     "format": "short",
+     "accepted": [
+      "infection",
+      "inclusion"
+     ],
+     "keywords_all": [
+      "inclusion"
+     ],
+     "key_text": "ติดเชื้อ/ไข้ · ยา oxidant · ซีด microcytic hypochromic · hemolysis (jaundice, retic↑) · inclusion body +",
+     "source_key": "ไม่มีไฟล์เฉลย — AI เติม"
+    },
+    {
+     "id": "2.3",
+     "prompt": "ตรวจยืนยัน 2 วิธี",
+     "format": "short",
+     "accepted": [
+      "hb typing",
+      "pcr"
+     ],
+     "keywords_all": [
+      "pcr"
+     ],
+     "key_text": "Hb typing (Hb H + Bart’s) · Gap-PCR α-thal (--SEA)",
+     "source_key": "ไม่มีไฟล์เฉลย — AI เติม"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "KF49",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "HEMA-49-KF-003",
+   "block": "HEMA",
+   "cohort": 49,
+   "n": 3,
+   "type": "KF",
+   "case": "เด็กชาย 2 ปี อาเจียนเป็นเลือด กิน ferrous sulfate 325 mg 15 เม็ด",
+   "items": [
+    {
+     "id": "3.1",
+     "prompt": "กลไกพิษจากเหล็ก",
+     "format": "short",
+     "accepted": [
+      "free iron",
+      "ros"
+     ],
+     "keywords_all": [
+      "ros"
+     ],
+     "key_text": "Free iron เกิน transferrin → Fenton reaction สร้าง ROS → lipid peroxidation ทำลายเซลล์ (GI, ตับ) · กัดกร่อน mucosa · metabolic acidosis",
+     "source_key": "ไม่มีไฟล์เฉลย — AI เติม"
+    },
+    {
+     "id": "3.2",
+     "prompt": "อาการ 3–4 อย่าง",
+     "format": "short",
+     "accepted": [
+      "อาเจียน",
+      "ช็อก",
+      "acidosis"
+     ],
+     "keywords_all": [
+      "acidosis"
+     ],
+     "key_text": "อาเจียนเป็นเลือด · ปวดท้อง/ท้องเสียเป็นเลือด · ช็อก · metabolic acidosis · ตับวาย",
+     "source_key": "ไม่มีไฟล์เฉลย — AI เติม"
+    },
+    {
+     "id": "3.3",
+     "prompt": "Antidote และกลไก",
+     "format": "short",
+     "accepted": [
+      "deferoxamine"
+     ],
+     "keywords_all": [
+      "deferoxamine"
+     ],
+     "key_text": "Deferoxamine: chelate Fe3+ เป็น ferrioxamine ละลายน้ำ ขับทางปัสสาวะ",
+     "source_key": "ไม่มีไฟล์เฉลย — AI เติม"
+    },
+    {
+     "id": "3.4",
+     "prompt": "ผลข้างเคียง 2 อย่าง",
+     "format": "short",
+     "accepted": [
+      "hypotension",
+      "ototoxicity"
+     ],
+     "keywords_all": [
+      "hypotension"
+     ],
+     "key_text": "Hypotension (ฉีดเร็ว) · Ototoxicity/ตามัว · Yersinia infection · ARDS",
+     "source_key": "ไม่มีไฟล์เฉลย — AI เติม"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "KF49",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "HEMA-49-KF-004",
+   "block": "HEMA",
+   "cohort": 49,
+   "n": 4,
+   "type": "KF",
+   "case": "ทารก 3 วัน ซีดเหลือง · แม่ EA O Rh+ · พ่อ SAO B Rh−",
+   "items": [
+    {
+     "id": "4.1",
+     "prompt": "โรคที่ลูกเป็นไปได้ (3 โรค)",
+     "format": "short",
+     "accepted": [
+      "hbe",
+      "ovalocytosis",
+      "abo"
+     ],
+     "keywords_all": [
+      "abo"
+     ],
+     "key_text": "HbE trait · Southeast Asian ovalocytosis (SAO) · ABO hemolytic disease of the newborn (แม่ O พ่อ B)",
+     "source_key": "ไม่มีไฟล์เฉลย — AI เติม"
+    },
+    {
+     "id": "4.2",
+     "prompt": "ตรวจวินิจฉัย (โรคละ 2 วิธี + ผล)",
+     "format": "short",
+     "accepted": [
+      "hb typing",
+      "coombs",
+      "pcr"
+     ],
+     "keywords_all": [
+      "coombs"
+     ],
+     "key_text": "HbE trait: Hb typing HbE ~25% · DCIP positive | SAO: smear พบ ovalocyte/theta cell · PCR SLC4A1 27-bp deletion | ABO HDN: Direct Coombs positive · Bilirubin สูง",
+     "source_key": "ไม่มีไฟล์เฉลย — AI เติม"
+    },
+    {
+     "id": "4.3",
+     "prompt": "การรักษา (1 อย่าง)",
+     "format": "short",
+     "accepted": [
+      "phototherapy"
+     ],
+     "keywords_all": [
+      "phototherapy"
+     ],
+     "key_text": "Phototherapy",
+     "source_key": "ไม่มีไฟล์เฉลย — AI เติม"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "KF49",
+     "pages": [
+      4
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "HEMA-49-KF-005",
+   "block": "HEMA",
+   "cohort": 49,
+   "n": 5,
+   "type": "KF",
+   "case": "เด็กชาย 1 ปี จ้ำเขียวเอง · plt 350,000 aPTT 70 PT 11",
+   "items": [
+    {
+     "id": "5.1",
+     "prompt": "วินิจฉัย",
+     "format": "short",
+     "accepted": [
+      "hemophilia"
+     ],
+     "keywords_all": [
+      "hemophilia"
+     ],
+     "key_text": "Hemophilia A",
+     "source_key": "ไม่มีไฟล์เฉลย — AI เติม"
+    },
+    {
+     "id": "5.2",
+     "prompt": "ซักประวัติเพิ่ม 3 ข้อ",
+     "format": "short",
+     "accepted": [
+      "ครอบครัว",
+      "เลือดออก"
+     ],
+     "keywords_all": [
+      "ครอบครัว"
+     ],
+     "key_text": "ประวัติครอบครัวเลือดออกง่าย · เลือดออก/ข้อบวมหลังหัตถการหรือบาดเจ็บ · ประวัติใช้ยา/โรคประจำตัว",
+     "source_key": "ไม่มีไฟล์เฉลย — AI เติม"
+    },
+    {
+     "id": "5.3",
+     "prompt": "ตรวจยืนยัน 2 วิธี",
+     "format": "short",
+     "accepted": [
+      "mixing",
+      "factor viii"
+     ],
+     "keywords_all": [
+      "factor viii"
+     ],
+     "key_text": "Mixing study · Factor VIII activity assay",
+     "source_key": "ไม่มีไฟล์เฉลย — AI เติม"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "KF49",
+     "pages": [
+      6
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "HEMA-49-KF-006",
+   "block": "HEMA",
+   "cohort": 49,
+   "n": 6,
+   "type": "KF",
+   "case": "ชาย 65 ปี หลังผ่าตัดมะเร็งกระเพาะ 2 วัน เหนื่อย · CT: PE",
+   "items": [
+    {
+     "id": "6.1",
+     "prompt": "ยา IV ที่เลือกใช้ (2 ชนิด)",
+     "format": "short",
+     "accepted": [
+      "alteplase",
+      "heparin"
+     ],
+     "keywords_all": [
+      "alteplase"
+     ],
+     "key_text": "Alteplase (rt-PA, thrombolytic) แล้วตามด้วย Unfractionated heparin (UFH) — PE รุนแรง BP 90/50",
+     "source_key": "ไม่มีไฟล์เฉลย — AI เติม"
+    },
+    {
+     "id": "6.2",
+     "prompt": "กลไกของยา",
+     "format": "short",
+     "accepted": [
+      "plasmin",
+      "antithrombin"
+     ],
+     "keywords_all": [
+      "plasmin"
+     ],
+     "key_text": "Alteplase: กระตุ้น plasminogen → plasmin ย่อย fibrin clot · Heparin: จับ antithrombin เร่งยับยั้ง Xa/IIa",
+     "source_key": "ไม่มีไฟล์เฉลย — AI เติม"
+    },
+    {
+     "id": "6.3",
+     "prompt": "ข้อห้ามใช้ 4 ข้อ",
+     "format": "short",
+     "accepted": [
+      "bleeding",
+      "intracranial",
+      "surgery"
+     ],
+     "keywords_all": [
+      "bleeding"
+     ],
+     "key_text": "Active bleeding · Intracranial hemorrhage/stroke ล่าสุด · ผ่าตัดใหญ่/บาดเจ็บล่าสุด (relative) · Severe uncontrolled hypertension · Bleeding disorder",
+     "source_key": "ไม่มีไฟล์เฉลย — AI เติม"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "KF49",
+     "pages": [
+      6
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "HEMA-49-KF-007",
+   "block": "HEMA",
+   "cohort": 49,
+   "n": 7,
+   "type": "KF",
+   "case": "หญิง 30 ปี จุดเลือดออกตามตัว 1 เดือน plt 25,000 PT/aPTT ปกติ",
+   "items": [
+    {
+     "id": "7.1",
+     "prompt": "วินิจฉัย",
+     "format": "short",
+     "accepted": [
+      "itp",
+      "immune thrombocytopenia"
+     ],
+     "keywords_all": [
+      "itp"
+     ],
+     "key_text": "Immune thrombocytopenia (ITP)",
+     "source_key": "ไม่มีไฟล์เฉลย — AI เติม"
+    },
+    {
+     "id": "7.2",
+     "prompt": "กลไก",
+     "format": "short",
+     "accepted": [
+      "autoantibody",
+      "gpiib",
+      "spleen"
+     ],
+     "keywords_all": [
+      "autoantibody"
+     ],
+     "key_text": "Autoantibody (IgG) ต่อ GPIIb/IIIa → platelet ถูก macrophage ใน spleen จับกิน",
+     "source_key": "ไม่มีไฟล์เฉลย — AI เติม"
+    },
+    {
+     "id": "7.3",
+     "prompt": "รักษาเบื้องต้น",
+     "format": "short",
+     "accepted": [
+      "prednisolone",
+      "ivig"
+     ],
+     "keywords_all": [
+      "prednisolone"
+     ],
+     "key_text": "Prednisolone (± IVIG ถ้าเลือดออกมาก/plt ต่ำมาก)",
+     "source_key": "ไม่มีไฟล์เฉลย — AI เติม"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "KF49",
+     "pages": [
+      7
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "HEMA-49-KF-008",
+   "block": "HEMA",
+   "cohort": 49,
+   "n": 8,
+   "type": "KF",
+   "case": "หญิง 60 ปี ไข้ ปวดท้อง · WBC 17,500 band 22%",
+   "items": [
+    {
+     "id": "8.1",
+     "prompt": "วินิจฉัย 2 ข้อ",
+     "format": "short",
+     "accepted": [
+      "leukemoid",
+      "cml"
+     ],
+     "keywords_all": [
+      "leukemoid"
+     ],
+     "key_text": "Leukemoid reaction · Chronic myeloid leukemia (CML)",
+     "source_key": "ไม่มีไฟล์เฉลย — AI เติม"
+    },
+    {
+     "id": "8.2",
+     "prompt": "Smear พบอะไร",
+     "format": "short",
+     "accepted": [
+      "toxic",
+      "basophil"
+     ],
+     "keywords_all": [
+      "toxic"
+     ],
+     "key_text": "Leukemoid: left shift, toxic granulation, Döhle bodies · CML: myelocyte bulge, basophilia/eosinophilia",
+     "source_key": "ไม่มีไฟล์เฉลย — AI เติม"
+    },
+    {
+     "id": "8.3",
+     "prompt": "ตรวจยืนยัน + ผล",
+     "format": "short",
+     "accepted": [
+      "lap",
+      "bcr-abl"
+     ],
+     "keywords_all": [
+      "bcr-abl"
+     ],
+     "key_text": "LAP score: leukemoid สูง / CML ต่ำ · BCR-ABL1 t(9;22): leukemoid negative / CML positive",
+     "source_key": "ไม่มีไฟล์เฉลย — AI เติม"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "KF49",
+     "pages": [
+      8
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "HEMA-49-KF-009",
+   "block": "HEMA",
+   "cohort": 49,
+   "n": 9,
+   "type": "KF",
+   "case": "Cell ในภาพ และ ชาย 80 ปี เพลีย punch-out lesion",
+   "items": [
+    {
+     "id": "9.1.1",
+     "prompt": "Cell ในภาพคือเซลล์อะไร",
+     "format": "short",
+     "accepted": [
+      "blast"
+     ],
+     "keywords_all": [
+      "blast"
+     ],
+     "key_text": "Blast (lymphoblast/myeloblast) — เซลล์ใหญ่ nucleus โต chromatin ละเอียด มี nucleolus",
+     "source_key": "ไม่มีไฟล์เฉลย — AI เติม",
+     "image": "img/HEMA-49-KF-002.jpg",
+     "image_caption": "Cell ข้อ 9.1.1"
+    },
+    {
+     "id": "9.1.2",
+     "prompt": "วินิจฉัย",
+     "format": "short",
+     "accepted": [
+      "acute leukemia"
+     ],
+     "keywords_all": [
+      "leukemia"
+     ],
+     "key_text": "Acute leukemia (AML/ALL)",
+     "source_key": "ไม่มีไฟล์เฉลย — AI เติม"
+    },
+    {
+     "id": "9.2.1",
+     "prompt": "วินิจฉัย (ชาย 80 ปี punch-out lesion)",
+     "format": "short",
+     "accepted": [
+      "myeloma"
+     ],
+     "keywords_all": [
+      "myeloma"
+     ],
+     "key_text": "Multiple myeloma",
+     "source_key": "ไม่มีไฟล์เฉลย — AI เติม",
+     "image": "img/HEMA-49-KF-003.jpg",
+     "image_caption": "Skull X-ray: punch-out lesions"
+    },
+    {
+     "id": "9.2.2",
+     "prompt": "ตรวจเพิ่ม",
+     "format": "short",
+     "accepted": [
+      "spep",
+      "bone marrow",
+      "immunofixation"
+     ],
+     "keywords_all": [
+      "spep"
+     ],
+     "key_text": "SPEP/UPEP + immunofixation (M-protein) · Bone marrow plasma cell ≥10% · Serum free light chain · Ca, Cr",
+     "source_key": "ไม่มีไฟล์เฉลย — AI เติม"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "KF49",
+     "pages": [
+      9
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "HEMA-49-KF-010",
+   "block": "HEMA",
+   "cohort": 49,
+   "n": 10,
+   "type": "KF",
+   "case": "30 ปี thrombocytopenia ได้ platelet 6 unit ถุงที่ 5 ผื่น หอบ wheezing",
+   "items": [
+    {
+     "id": "10.1",
+     "prompt": "วินิจฉัยและอาการ",
+     "format": "short",
+     "accepted": [
+      "allergic",
+      "anaphylactic",
+      "urticaria"
+     ],
+     "keywords_all": [
+      "allergic"
+     ],
+     "key_text": "Acute allergic/anaphylactic transfusion reaction · wheezing, SpO2 ต่ำ, tachycardia, urticaria",
+     "source_key": "ไม่มีไฟล์เฉลย — AI เติม"
+    },
+    {
+     "id": "10.2",
+     "prompt": "กลไก",
+     "format": "short",
+     "accepted": [
+      "ige",
+      "histamine"
+     ],
+     "keywords_all": [
+      "ige"
+     ],
+     "key_text": "IgE-mediated hypersensitivity ต่อ plasma protein donor → mast cell degranulation (histamine)",
+     "source_key": "ไม่มีไฟล์เฉลย — AI เติม"
+    },
+    {
+     "id": "10.3",
+     "prompt": "รักษาเบื้องต้น 3 อย่าง",
+     "format": "short",
+     "accepted": [
+      "diphenhydramine",
+      "epinephrine"
+     ],
+     "keywords_all": [
+      "diphenhydramine"
+     ],
+     "key_text": "หยุดให้เลือด · Diphenhydramine · Corticosteroid · Epinephrine/bronchodilator",
+     "source_key": "ไม่มีไฟล์เฉลย — AI เติม"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "KF49",
+     "pages": [
+      10
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "claude-mcp"
+  }
+ ]
+}
