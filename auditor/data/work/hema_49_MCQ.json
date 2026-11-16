@@ -19,19 +19,28 @@
     "E": "Difficulties in isolation and purification"
    },
    "correct": "D",
-   "explanation": "ข้อจำกัดหลักของ pluripotent stem cell: ethics (AI draft)",
+   "explanation": "ข้อจำกัดสำคัญของ pluripotent stem cell (ESC/iPSC) คือเสี่ยงเกิด tumor (teratoma)",
    "image": null,
    "issues": [
     "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
    ],
    "option_why": {
-    "A": "Tumorigenesis ก็เป็นข้อจำกัดสำคัญ",
-    "B": "Differentiation capacity สูง",
-    "C": "Cell survival ไม่ใช่",
-    "D": "✓ Ethically problematic source (ESC)",
-    "E": "Isolation ยากเป็นของ adult SC"
+    "A": "pluripotent เพิ่มจำนวนได้ไม่จำกัด จึงอาจเกิด teratoma เมื่อมีเซลล์ที่ยังไม่แยกตัวหลงเหลือ",
+    "B": "ตรงข้าม pluripotent แยกตัวได้หลากหลายมาก",
+    "C": "การรอดชีวิตของเซลล์ไม่ใช่ข้อจำกัดหลักตามเฉลย",
+    "D": "✓ ประเด็นจริยธรรมเป็นของ ESC ไม่ใช่ pluripotent ทั้งหมด (iPSC ไม่มี)",
+    "E": "การแยกและทำให้บริสุทธิ์เป็นปัญหาทางเทคนิค ไม่ใช่ข้อจำกัดหลัก"
    },
-   "key_concept": "• ESC: ethics, tumorigenesis\n• Adult SC: isolation ยาก",
+   "key_concept": "• pluripotent: ESC, iPSC → เสี่ยง teratoma\n• iPSC ได้จากเซลล์ผู้ใหญ่ ลดปัญหาจริยธรรม",
+   "mechanism": [
+    "pluripotent cell แบ่งตัวไม่จำกัด",
+    "เซลล์ที่ไม่แยกตัวหลงเหลือหลังปลูกถ่าย",
+    {
+     "s": "เกิด teratoma/tumorigenesis",
+     "answer": true
+    },
+    "เป็นอุปสรรคทางคลินิก"
+   ],
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 49].pdf",
     "page": 1,
@@ -70,19 +79,19 @@
     "E": "Tibia"
    },
    "correct": "D",
-   "explanation": "เก็บ stem cell จากไขกระดูก: pelvis (iliac crest) (AI draft)",
+   "explanation": "ปลูกถ่ายไขกระดูกเก็บ stem cell จากกระดูกเชิงกราน (iliac crest) เพราะมีไขกระดูกแดงมาก",
    "image": null,
    "issues": [
     "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
    ],
    "option_why": {
-    "A": "Liver ไม่ใช่",
-    "B": "Spleen ไม่ใช่",
-    "C": "Rib ใช้บ้าง",
-    "D": "✓ Pelvis (iliac crest) แหล่งหลัก",
-    "E": "Tibia ไม่ใช่ในผู้ใหญ่"
+    "A": "ตับไม่ใช่แหล่งไขกระดูกในผู้ใหญ่",
+    "B": "ม้ามไม่ใช่แหล่งผลิตเม็ดเลือดปกติในผู้ใหญ่",
+    "C": "ซี่โครงเก็บได้แต่เจาะยากและปริมาณน้อย",
+    "D": "✓ pelvis (posterior iliac crest) มีไขกระดูกแดงมากและเจาะได้สะดวก",
+    "E": "tibia เป็นไขกระดูกเหลืองในผู้ใหญ่"
    },
-   "key_concept": "• BM harvest: posterior iliac crest\n• PBSC ผ่าน G-CSF",
+   "key_concept": "• ผู้ใหญ่: ไขกระดูกแดงอยู่ที่ pelvis, sternum, vertebrae, ribs\n• เด็ก: ไขกระดูกแดงที่ long bone",
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 49].pdf",
     "page": 1,
@@ -121,19 +130,28 @@
     "E": "GPVI"
    },
    "correct": "C",
-   "explanation": "Platelet aggregation สำคัญ: fibrinogen เชื่อม GPIIb/IIIa (AI draft)",
+   "explanation": "Fibrinogen เชื่อม platelet ผ่าน GPIIb/IIIa ในการจับกลุ่ม (aggregation)",
    "image": null,
    "issues": [
     "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
    ],
    "option_why": {
-    "A": "GPIb-V-IX = adhesion (VWF)",
-    "B": "Factor V ไม่",
-    "C": "✓ Fibrinogen (bridge GPIIb/IIIa)",
-    "D": "GPIa-IIa = collagen adhesion",
-    "E": "GPVI = collagen signaling"
+    "A": "GPIb-V-IX เป็นตัวจับ vWF สำหรับ adhesion ไม่ใช่ aggregation",
+    "B": "factor V เป็นปัจจัย coagulation",
+    "C": "✓ fibrinogen เป็นสะพานเชื่อม GPIIb/IIIa ของ platelet คู่ต่าง ๆ",
+    "D": "GPIa-IIa จับ collagen ใน adhesion",
+    "E": "GPVI จับ collagen เพื่อกระตุ้น platelet"
    },
-   "key_concept": "• Adhesion: GPIb–VWF\n• Aggregation: GPIIb/IIIa + fibrinogen",
+   "key_concept": "• adhesion: GPIb–vWF · aggregation: GPIIb/IIIa–fibrinogen\n• Glanzmann: GPIIb/IIIa ขาด\n• Bernard–Soulier: GPIb ขาด",
+   "mechanism": [
+    "platelet ถูกกระตุ้น",
+    "GPIIb/IIIa เปลี่ยนรูปจับ fibrinogen",
+    {
+     "s": "fibrinogen เชื่อมระหว่าง platelet",
+     "answer": true
+    },
+    "เกิด platelet plug"
+   ],
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 49].pdf",
     "page": 1,
@@ -172,19 +190,28 @@
     "E": "Decrease synthesis of ferritin"
    },
    "correct": "B",
-   "explanation": "Hereditary hemochromatosis: hepcidin ลดลง (AI draft)",
+   "explanation": "Hereditary hemochromatosis เกิดจาก hepcidin สร้างลดลง ทำให้ดูดซึมเหล็กเพิ่ม",
    "image": null,
    "issues": [
     "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
    ],
    "option_why": {
-    "A": "Ferritin ↑ เป็นผล",
-    "B": "✓ Hepcidin ↓ → ดูดเหล็กมาก",
-    "C": "Transferrin ไม่ใช่สาเหตุ",
-    "D": "ไม่ใช่",
-    "E": "Ferritin ↓ ไม่ใช่"
+    "A": "ferritin เพิ่มเป็นผลจาก iron overload ไม่ใช่สาเหตุ",
+    "B": "✓ hepcidin ต่ำ ferroportin เปิด เหล็กเข้าเลือดมาก",
+    "C": "transferrin ไม่ใช่สาเหตุ",
+    "D": "ร่างกายไม่สังเคราะห์ธาตุเหล็ก",
+    "E": "ferritin ลดไม่ใช่กลไก"
    },
-   "key_concept": "• HFE mutation → hepcidin ↓\n• Fe overload",
+   "key_concept": "• HFE mutation → hepcidin ต่ำ\n• iron overload: liver cirrhosis, DM, skin bronze\n• รักษา phlebotomy",
+   "mechanism": [
+    "HFE กลายพันธุ์",
+    "hepcidin สร้างลดลง",
+    {
+     "s": "ferroportin ทำงานมาก ดูดซึมเหล็กเพิ่ม",
+     "answer": true
+    },
+    "iron overload"
+   ],
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 49].pdf",
     "page": 2,
@@ -223,19 +250,28 @@
     "E": "1,3 DPG"
    },
    "correct": "C",
-   "explanation": "ไส้กรอก (nitrite) → methemoglobinemia (AI draft)",
+   "explanation": "กินไส้กรอก (nitrite) → methemoglobinemia ทำให้ SpO2 ต่ำและ dyspnea",
    "image": null,
    "issues": [
     "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
    ],
    "option_why": {
-    "A": "Lead ไม่",
-    "B": "Cyanide ไม่",
-    "C": "✓ Methemoglobin",
-    "D": "2,3 DPG ไม่",
-    "E": "1,3 DPG ไม่"
+    "A": "lead ทำ sideroblastic/ heme synthesis เสีย",
+    "B": "cyanide ยับยั้ง cytochrome oxidase ไม่ใช่ Hb",
+    "C": "✓ nitrite ออกซิไดซ์ Fe2+ เป็น Fe3+ ไม่จับ O2",
+    "D": "2,3-DPG ผลต่อ O2 dissociation ไม่ใช่ SpO2 ต่ำจากอาหาร",
+    "E": "1,3-DPG เป็นตัวกลางใน glycolysis"
    },
-   "key_concept": "• Nitrite → Fe³⁺ Hb\n• Methylene blue",
+   "key_concept": "• methemoglobin: Fe3+ ไม่จับ O2, ผิวเขียวคล้ำ\n• รักษา methylene blue\n• สาเหตุ: nitrite, dapsone, benzocaine",
+   "mechanism": [
+    "ไส้กรอกมี nitrite",
+    "ออกซิไดซ์ Fe2+ → Fe3+",
+    {
+     "s": "methemoglobin ไม่จับ O2",
+     "answer": true
+    },
+    "SpO2 ต่ำ หายใจลำบาก"
+   ],
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 49].pdf",
     "page": 2,
@@ -274,19 +310,19 @@
     "E": "Packed red cells"
    },
    "correct": "D",
-   "explanation": "TSAT 13%, TIBC สูง → iron deficiency → ferrous fumarate (AI draft)",
+   "explanation": "Hb 8, TSAT 13%, TIBC ต่ำ ในเด็ก = iron deficiency ให้ ferrous fumarate",
    "image": null,
    "issues": [
     "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
    ],
    "option_why": {
-    "A": "Folate ไม่",
-    "B": "B6 ไม่",
-    "C": "B12 ไม่",
-    "D": "✓ Ferrous fumarate",
-    "E": "PRC ไม่จำเป็น (Hb 8 เด็ก)"
+    "A": "folic acid ใช้ megaloblastic",
+    "B": "vitamin B6 ใช้ sideroblastic",
+    "C": "vitamin B12 ใช้ megaloblastic/pernicious",
+    "D": "✓ ธาตุเหล็กรับประทานเป็นการรักษา IDA",
+    "E": "PRC ไม่จำเป็นถ้าไม่มีอาการรุนแรง"
    },
-   "key_concept": "• IDA: TSAT <16%, TIBC ↑\n• สรุป: TSAT 13%, TIBC สูง → iron deficiency → ferrous fumarate (AI draft)",
+   "key_concept": "• IDA: ferritin ต่ำ, TIBC สูง, TSAT ต่ำ\n• ให้เหล็กรับประทาน 3–6 เดือน",
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 49].pdf",
     "page": 2,
@@ -325,19 +361,28 @@
     "E": "Transition to leukemia"
    },
    "correct": "C",
-   "explanation": "PNH: thrombosis เป็นภาวะแทรกซ้อนที่น่ากังวลสุด (AI draft)",
+   "explanation": "PNH (CD55/CD59 ขาด) ภาวะแทรกซ้อนที่น่ากลัวที่สุดคือ thrombosis",
    "image": null,
    "issues": [
     "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
    ],
    "option_why": {
-    "A": "Sepsis",
-    "B": "Bleeding",
-    "C": "✓ Thrombosis",
-    "D": "Heart failure",
-    "E": "Leukemia transformation"
+    "A": "sepsis พบได้แต่ไม่ใช่อันดับหนึ่ง",
+    "B": "bleeding พบจากเกล็ดเลือดต่ำ แต่เสี่ยงน้อยกว่า",
+    "C": "✓ thrombosis (Budd-Chiari) เป็นสาเหตุตายหลัก",
+    "D": "cardiac failure ไม่ใช่",
+    "E": "leukemia/MDS พบน้อย"
    },
-   "key_concept": "• PNH: thrombosis สาเหตุตายหลัก\n• Eculizumab",
+   "key_concept": "• PNH: GPI anchor ขาด (PIGA)\n• รักษา eculizumab\n• thrombosis เป็นสาเหตุตายหลัก",
+   "mechanism": [
+    "PIGA กลายพันธุ์",
+    "CD55/CD59 ขาดบนเม็ดเลือด",
+    {
+     "s": "complement ทำลาย RBC/platelet activation",
+     "answer": true
+    },
+    "hemolysis + thrombosis"
+   ],
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 49].pdf",
     "page": 2,
@@ -376,19 +421,19 @@
     "E": "Cryoprecipitate / =< 10 องศา / 12 months"
    },
    "correct": "C",
-   "explanation": "เก็บ platelet 20–24 °C เขย่าเบา ๆ (AI draft)",
+   "explanation": "Platelet concentrate เก็บที่ 20–24°C พร้อมเขย่าเบา ๆ",
    "image": null,
    "issues": [
     "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
    ],
    "option_why": {
-    "A": "PRC additive เก็บ 1–6 °C 42 วัน ข้อมูลไม่ครบ",
-    "B": "Irradiated PRC อายุสั้นลง ไม่ใช่ 35",
-    "C": "✓ Platelet 20–24 °C gentle agitation",
-    "D": "FFP ≤ −18 °C 12 เดือน (ไม่ใช่ 24)",
-    "E": "Cryo ≤ −18 °C ไม่ใช่ −10"
+    "A": "PRC เก็บ 1–6°C นาน 35–42 วัน (ตัวเลือกมีรายละเอียดไม่ตรง)",
+    "B": "irradiated PRC อายุสั้นลงตามฉายรังสี",
+    "C": "✓ platelet เก็บ 20–24°C เขย่าต่อเนื่อง อายุ 5 วัน",
+    "D": "FFP เก็บ ≤ −18°C นาน 12 เดือน",
+    "E": "cryoprecipitate เก็บ ≤ −18°C"
    },
-   "key_concept": "• PC 20–24 °C 5 วัน\n• FFP −18 °C 12 เดือน",
+   "key_concept": "• platelet 20–24°C + agitation (5 วัน)\n• PRC 1–6°C · FFP −18°C",
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 49].pdf",
     "page": 3,
@@ -427,19 +472,28 @@
     "E": "IM cyanocobalamin"
    },
    "correct": "A",
-   "explanation": "CKD + ferritin 25 + oral iron ไม่ทน → IV iron (AI draft)",
+   "explanation": "CKD + iron deficiency ที่กิน oral iron ไม่ได้ ให้ IV iron",
    "image": null,
    "issues": [
     "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
    ],
    "option_why": {
-    "A": "✓ IV iron",
-    "B": "Thiamine ไม่",
-    "C": "Folate ไม่",
-    "D": "Ferrous fumarate = oral ซ้ำ",
-    "E": "B12 ไม่"
+    "A": "✓ ferritin ต่ำ ไม่ทนยากิน GI effect ให้ IV iron",
+    "B": "thiamine ไม่ใช่",
+    "C": "folic acid ไม่ใช่",
+    "D": "fumarate ยังเป็น oral iron ที่ไม่ทน",
+    "E": "IM B12 ไม่ใช่โรคนี้"
    },
-   "key_concept": "• Oral ไม่ทน → IV iron\n• CKD: ESA + iron",
+   "key_concept": "• IV iron: oral intolerance, CKD, malabsorption\n• ferritin <30 = ขาดเหล็ก",
+   "mechanism": [
+    "CKD + IDA",
+    "oral iron ทนไม่ได้",
+    {
+     "s": "ให้ IV iron",
+     "answer": true
+    },
+    "Hb เพิ่ม"
+   ],
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 49].pdf",
     "page": 3,
@@ -478,19 +532,28 @@
     "E": "Dengue hemorrhagic fever"
    },
    "correct": "B",
-   "explanation": "Hypersegmented neutrophil + anisopoikilocytosis → nutritional deficiency (B12/folate) (AI draft)",
+   "explanation": "Anisopoikilocytosis + hypersegmented neutrophil = megaloblastic (nutritional deficiency)",
    "image": null,
    "issues": [
     "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
    ],
    "option_why": {
-    "A": "Thalassemia ไม่",
-    "B": "✓ Nutritional deficiency (megaloblastic)",
-    "C": "SAO ไม่",
-    "D": "TP ไม่",
-    "E": "DHF ไม่"
+    "A": "thalassemia มี microcytosis target cell",
+    "B": "✓ B12/folate ขาด DNA synthesis ผิด ทำ macro-ovalocyte และ hypersegment",
+    "C": "SAO พบ stomatocytic ovalocyte",
+    "D": "TTP พบ schistocyte",
+    "E": "dengue พบ atypical lymphocyte"
    },
-   "key_concept": "• Megaloblastic: macro-ovalocyte, hypersegmentation\n• สรุป: Hypersegmented neutrophil + anisopoikilocytosis → nutritional deficiency (B12/folate) (AI ",
+   "key_concept": "• megaloblastic: macro-ovalocyte, hypersegmented PMN, MCV สูง\n• B12/folate ขาด",
+   "mechanism": [
+    "B12/folate ขาด",
+    "DNA synthesis ช้า RNA ปกติ",
+    {
+     "s": "nuclear–cytoplasmic asynchrony",
+     "answer": true
+    },
+    "macro-ovalocyte, hypersegmented neutrophil"
+   ],
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 49].pdf",
     "page": 3,
@@ -529,19 +592,28 @@
     "E": "Factor VIII concentrate"
    },
    "correct": "A",
-   "explanation": "ครอบครัวเลือดออกประจำเดือนมาก + aPTT ยาว → VWD → desmopressin (AI draft)",
+   "explanation": "ประวัติเลือดออกในครอบครัว aPTT ยาว PT ปกติ ก่อนผ่าตัด เลือก desmopressin",
    "image": null,
    "issues": [
     "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
    ],
    "option_why": {
-    "A": "✓ Desmopressin (VWD type 1)",
-    "B": "Cryo ใช้ถ้า DDAVP ไม่ได้ผล",
-    "C": "TXA เสริม",
-    "D": "FFP ไม่",
-    "E": "FVIII conc ไม่ใช่ลำดับแรก"
+    "A": "✓ DDAVP ปล่อย vWF/FVIII ใช้ใน vWD ชนิด 1 และ mild hemophilia A",
+    "B": "cryoprecipitate ใช้เมื่อ DDAVP ไม่ได้ผล/ชนิดรุนแรง",
+    "C": "tranexamic acid ใช้เสริม",
+    "D": "FFP ปริมาณมากเกินจำเป็น",
+    "E": "FVIII concentrate ใช้ในรายรุนแรง"
    },
-   "key_concept": "• VWD: DDAVP, VWF concentrate\n• สรุป: ครอบครัวเลือดออกประจำเดือนมาก + aPTT ยาว → VWD → desmopressin (AI draft)",
+   "key_concept": "• vWD type 1: DDAVP, TXA\n• aPTT ยาวเพราะ FVIII ต่ำจาก vWF ขาด",
+   "mechanism": [
+    "vWF ขาด",
+    "FVIII ถูกทำลายเร็ว aPTT ยาว",
+    {
+     "s": "DDAVP เพิ่ม vWF/FVIII จาก endothelium",
+     "answer": true
+    },
+    "เลือดหยุดดีขึ้น"
+   ],
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 49].pdf",
     "page": 3,
@@ -580,19 +652,19 @@
     "E": "Fibrinogen"
    },
    "correct": "E",
-   "explanation": "Fibrinogen = substrate หลักของลิ่มเลือด (AI draft, ข้อความไม่ชัด)",
+   "explanation": "Fibrinogen เป็นปัจจัยสำคัญในการเกิดลิ่มเลือด (final substrate)",
    "image": null,
    "issues": [
     "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
    ],
    "option_why": {
-    "A": "Factor X",
-    "B": "Factor IX",
-    "C": "Factor VIII",
-    "D": "Factor VII",
-    "E": "✓ Fibrinogen → fibrin"
+    "A": "FX อยู่กลางสาย common pathway",
+    "B": "FIX อยู่ intrinsic",
+    "C": "FVIII อยู่ intrinsic",
+    "D": "FVII อยู่ extrinsic",
+    "E": "✓ fibrinogen ถูก thrombin เปลี่ยนเป็น fibrin"
    },
-   "key_concept": "• Fibrinogen → fibrin polymer\n• สรุป: Fibrinogen = substrate หลักของลิ่มเลือด (AI draft, ข้อความไม่ชัด)",
+   "key_concept": "• common pathway: X, V, II, I\n• ปัจจัยสุดท้ายคือ fibrin",
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 49].pdf",
     "page": 4,
@@ -631,19 +703,19 @@
     "E": "รัดตามคIา (systolic+diastolic)/2 เปKนเวลา 10 นาที"
    },
    "correct": "D",
-   "explanation": "Tourniquet test: (SBP+DBP)/2 ค้าง 5 นาที (AI draft)",
+   "explanation": "Tourniquet test รัดที่ค่าเฉลี่ย (SBP+DBP)/2 นาน 5 นาที",
    "image": null,
    "issues": [
     "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
    ],
    "option_why": {
-    "A": "รัดตาม systolic ผิด",
-    "B": "Diastolic 10 นาที ผิด",
-    "C": "Systolic 5 นาที ผิด",
-    "D": "✓ (S+D)/2 5 นาที",
-    "E": "(S+D)/2 10 นาที ผิด"
+    "A": "รัดที่ systolic ตัดการไหลเวียน",
+    "B": "diastolic ต่ำเกินไป และ 10 นาทีนานเกิน",
+    "C": "systolic ตัดเลือดผิดวิธี",
+    "D": "✓ ความดันเฉลี่ยที่ 5 นาที ตามมาตรฐาน",
+    "E": "10 นาทีนานเกินไป"
    },
-   "key_concept": "• Dengue tourniquet test\n• Positive >10 petechiae/sq in",
+   "key_concept": "• tourniquet test: ใช้ในไข้เลือดออก, ≥10 จุด/ตารางนิ้ว = บวก\n• รัด 5 นาที",
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 49].pdf",
     "page": 4,
@@ -682,19 +754,28 @@
     "E": "Increased synthesis of factor IX"
    },
    "correct": "A",
-   "explanation": "DDAVP: เพิ่ม release VIII/VWF จาก endothelium (AI draft)",
+   "explanation": "Desmopressin รักษา mild hemophilia A โดยเพิ่มการปล่อย factor VIII (และ vWF) จาก endothelium",
    "image": null,
    "issues": [
     "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
    ],
    "option_why": {
-    "A": "✓ Increased release factor VIII (พร้อม VWF)",
-    "B": "VWF release ก็ถูก",
-    "C": "IX ไม่",
-    "D": "Synthesis ไม่",
-    "E": "Synthesis IX ไม่"
+    "A": "✓ DDAVP กระตุ้น V2 receptor ปล่อย FVIII/vWF จาก Weibel–Palade body",
+    "B": "ปล่อย vWF ถูกต้องแต่เฉลยเน้น FVIII",
+    "C": "FIX ไม่เกี่ยว",
+    "D": "ไม่ได้เพิ่มการสังเคราะห์",
+    "E": "ไม่ได้เพิ่ม FIX"
    },
-   "key_concept": "• DDAVP V2 → Weibel–Palade release\n• VWF + FVIII",
+   "key_concept": "• DDAVP: เพิ่ม FVIII และ vWF 2–4 เท่า\n• ใช้ mild hemophilia A, vWD type 1",
+   "mechanism": [
+    "DDAVP จับ V2 บน endothelium",
+    "Weibel–Palade body หลั่งออก",
+    {
+     "s": "FVIII/vWF ในเลือดเพิ่ม",
+     "answer": true
+    },
+    "cascade ทำงานดีขึ้น"
+   ],
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 49].pdf",
     "page": 4,
@@ -733,19 +814,19 @@
     "E": "Basophil"
    },
    "correct": "E",
-   "explanation": "ผื่นคันหลังกิน aspirin → basophil/mast cell (AI draft)",
+   "explanation": "ผื่นคันหลังกินแอสไพริน = type I hypersensitivity, basophil/mast cell ปล่อย histamine",
    "image": null,
    "issues": [
     "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
    ],
    "option_why": {
-    "A": "Monocyte",
-    "B": "Lymphocyte",
-    "C": "Neutrophil",
-    "D": "Eosinophil",
-    "E": "✓ Basophil (mast cell degranulation)"
+    "A": "monocyte ไม่ใช่เซลล์หลักของอาการแพ้เฉียบพลัน",
+    "B": "lymphocyte ไม่ใช่",
+    "C": "neutrophil ไม่ใช่",
+    "D": "eosinophil พบในโรคแพ้เรื้อรัง/ปรสิต",
+    "E": "✓ basophil/mast cell มี IgE ปล่อย histamine"
    },
-   "key_concept": "• Aspirin: pseudoallergy/ IgE\n• Histamine release",
+   "key_concept": "• aspirin → COX inhibition → leukotriene เพิ่ม\n• basophil/mast cell degranulate",
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 49].pdf",
     "page": 4,
@@ -784,19 +865,19 @@
     "E": "Agranulocytosis"
    },
    "correct": "E",
-   "explanation": "Hyperthyroid ยา antithyroid + ไข้ → agranulocytosis (AI draft)",
+   "explanation": "ไข้ ติดเชื้อ + ไม่มี neutrophil = agranulocytosis",
    "image": null,
    "issues": [
     "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
    ],
    "option_why": {
-    "A": "Aplastic",
-    "B": "AML",
-    "C": "MDS",
-    "D": "Hypersplenism",
-    "E": "✓ Agranulocytosis จาก PTU/methimazole"
+    "A": "aplastic anemia เสียทุก lineage",
+    "B": "AML มี blast",
+    "C": "MDS มี dysplasia",
+    "D": "hypersplenism ลดทุก lineage ปานกลาง",
+    "E": "✓ neutrophil <500 ทำให้ติดเชื้อรุนแรง"
    },
-   "key_concept": "• Antithyroid: agranulocytosis\n• ไข้ + ติดเชื้อ",
+   "key_concept": "• agranulocytosis: ANC <500, drug-induced (clozapine, PTU, dipyrone)\n• ติดเชื้อรุนแรงรวดเร็ว",
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 49].pdf",
     "page": 5,
@@ -835,19 +916,19 @@
     "E": "……………………………….."
    },
    "correct": "D",
-   "explanation": "Warfarin + GI bleed: หยุด warfarin, IV vit K + FFP (AI draft)",
+   "explanation": "Warfarin + เลือดออก GI: ต้องหยุด warfarin ให้ vit K IV และ FFP (ตามเฉลย D แต่ข้อความระบุ 'ให้ต่อ' เป็นข้อบกพร่องของตัวเลือก)",
    "image": null,
    "issues": [
     "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
    ],
    "option_why": {
-    "A": "ให้ oral vit K",
-    "B": "IV vit K อย่างเดียว",
-    "C": "Oral + FFP",
-    "D": "✓ IV vit K + FFP",
-    "E": "—"
+    "A": "vitamin K ปากออกฤทธิ์ช้า ใช้กรณีไม่ฉุกเฉิน",
+    "B": "vit K IV อย่างเดียวไม่ทดแทนปัจจัยทัน",
+    "C": "oral vit K + FFP ไม่เร็วพอ",
+    "D": "✓ vit K IV + FFP แก้ INR เร็วที่สุดในเลือดออกรุนแรง (ตามเฉลย)",
+    "E": "ตัวเลือกไม่สมบูรณ์"
    },
-   "key_concept": "• Major bleeding: vit K IV + FFP/PCC\n• หยุด warfarin",
+   "key_concept": "• warfarin reversal: vit K IV + FFP/PCC\n• life-threatening bleeding: PCC ดีกว่า FFP",
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 49].pdf",
     "page": 5,
@@ -886,19 +967,28 @@
     "E": "Kell"
    },
    "correct": "E",
-   "explanation": "DHTR หลัง transfusion 10 วัน → Kidd/Kell/Duffy (AI draft: Kell)",
+   "explanation": "Kell เป็น blood group ที่มักเกี่ยวข้องกับ delayed hemolytic transfusion reaction ใน thalassemia",
    "image": null,
    "issues": [
     "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
    ],
    "option_why": {
-    "A": "MNS",
-    "B": "ABO ทำ AHTR ทันที",
-    "C": "P1Pk",
-    "D": "Duffy",
-    "E": "✓ Kell"
+    "A": "MNS อาจก่อ DHTR แต่ไม่บ่อยเท่า Kell",
+    "B": "ABO ปกติถูกตรวจ matching แล้ว",
+    "C": "P1Pk เกิดได้น้อย",
+    "D": "Duffy ก็เกิดได้ แต่ Kell/Rh เด่นในผู้ป่วยธาลัสซีเมีย",
+    "E": "✓ anti-K เกิดจาก alloimmunization ใน thalassemia"
    },
-   "key_concept": "• DHTR: anamnestic ใน 3–14 วัน\n• Kidd, Duffy, Kell",
+   "key_concept": "• thalassemia ได้เลือดบ่อย เกิด alloantibody: Rh, Kell, Duffy\n• DHTR: 3–14 วันหลังให้เลือด",
+   "mechanism": [
+    "เลือดซ้ำ ๆ ใน thalassemia",
+    "antibody ระดับต่ำ ตรวจ IAT ไม่พบ",
+    {
+     "s": "กระตุ้น anamnestic response",
+     "answer": true
+    },
+    "delayed hemolysis หลัง 10 วัน"
+   ],
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 49].pdf",
     "page": 5,
@@ -937,19 +1027,19 @@
     "E": "O para-Bombay phenotype"
    },
    "correct": "C",
-   "explanation": "h/h Se/se B/O → O Bombay",
+   "explanation": "h/h ไม่สร้าง H antigen ทำให้แสดงเป็น group O (Bombay)",
    "image": null,
    "issues": [
     "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
    ],
    "option_why": {
-    "A": "B",
-    "B": "O",
-    "C": "✓ O Bombay",
-    "D": "B para-Bombay",
-    "E": "O para-Bombay"
+    "A": "B allele แสดงออกไม่ได้ถ้าไม่มี H",
+    "B": "ไม่มี H ไม่มี B substance",
+    "C": "✓ hh = Bombay phenotype ตรวจ O ปกติ",
+    "D": "para-Bombay มี H บางส่วน (Se)",
+    "E": "para-Bombay ต้องมี H เล็กน้อย"
    },
-   "key_concept": "• Bombay: hh ไม่มี H\n• สรุป: h/h Se/se B/O → O Bombay",
+   "key_concept": "• Bombay: hh, ไม่มี H antigen, anti-H ในซีรั่ม\n• ตรวจ forward เป็น O แต่ให้เลือดกลุ่ม O ปกติไม่ได้",
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 49].pdf",
     "page": 6,
@@ -988,19 +1078,19 @@
     "E": "Peripheral venous"
    },
    "correct": "D",
-   "explanation": "Lymphoblast → T-ALL (thymus origin) (AI draft)",
+   "explanation": "Lymphoblast สูงมาก = ALL ต้นกำเนิดจาก thymus (T-ALL) / ไขกระดูก; เฉลย thymus",
    "image": null,
    "issues": [
     "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
    ],
    "option_why": {
-    "A": "Liver",
-    "B": "Tonsil",
-    "C": "Spleen",
-    "D": "✓ Thymus (T-lymphoblast)",
-    "E": "Peripheral vein ไม่"
+    "A": "ตับสร้างเม็ดเลือดเฉพาะในทารกในครรภ์ ไม่ใช่แหล่งกำเนิด lymphoblast ผู้ใหญ่",
+    "B": "tonsil เป็น lymphoid peripheral",
+    "C": "spleen เป็น peripheral lymphoid",
+    "D": "✓ thymus เป็นที่พัฒนา T cell (T-ALL)",
+    "E": "peripheral venous ไม่ใช่แหล่งกำเนิด"
    },
-   "key_concept": "• T-ALL: thymus\n• B-ALL: BM",
+   "key_concept": "• T-ALL: ต่อมน้ำเหลืองกลางอก (thymus)\n• B-ALL: ไขกระดูก",
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 49].pdf",
     "page": 6,
@@ -1039,19 +1129,19 @@
     "E": "………………………"
    },
    "correct": "C",
-   "explanation": "ถ้าไม่รักษา (smear dysplasia) → acute leukemia (AI draft — ไม่เห็นรูป)",
+   "explanation": "Hb 9 + smear ที่เป็น MDS ถ้าไม่รักษาจะพัฒนาเป็น acute leukemia",
    "image": "img/HEMA-49-MCQ-021.jpg",
    "issues": [
     "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
    ],
    "option_why": {
-    "A": "Pancytopenia",
-    "B": "Agglutination",
-    "C": "✓ Acute leukemia",
-    "D": "Chronic leukemia",
-    "E": "—"
+    "A": "pancytopenia เป็นอาการอยู่แล้ว",
+    "B": "agglutination ไม่ใช่",
+    "C": "✓ MDS ที่ไม่รักษาเสี่ยงกลายเป็น AML",
+    "D": "chronic leukemia ไม่ใช่",
+    "E": "ข้ออื่นไม่ใช่"
    },
-   "key_concept": "• MDS → AML\n• สรุป: ถ้าไม่รักษา (smear dysplasia) → acute leukemia (AI draft — ไม่เห็นรูป)",
+   "key_concept": "• MDS: dysplasia, cytopenia\n• ~30% → AML",
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 49].pdf",
     "page": 7,
@@ -1090,19 +1180,28 @@
     "E": "Drug-induced thrombocytopenia"
    },
    "correct": "B",
-   "explanation": "Fever, petechiae, plt ต่ำ, BUN/Cr ↑, smear schistocyte → TTP (AI draft)",
+   "explanation": "ไข้ จุดเลือดออก เกล็ดเลือดต่ำ ซีด ไตเสีย = TTP (schistocyte)",
    "image": null,
    "issues": [
     "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
    ],
    "option_why": {
-    "A": "DIC",
-    "B": "✓ TTP",
-    "C": "ITP",
-    "D": "HUS",
-    "E": "Drug-induced"
+    "A": "DIC มี PT/aPTT ยาว",
+    "B": "✓ TTP: pentad และ schistocyte จาก ADAMTS13 ขาด",
+    "C": "ITP ไม่มีซีด/ไตเสีย",
+    "D": "HUS พบในเด็ก ตาม E. coli",
+    "E": "drug-induced ไม่มี schistocyte"
    },
-   "key_concept": "• TTP: MAHA, fever, renal\n• สรุป: Fever, petechiae, plt ต่ำ, BUN/Cr ↑, smear schistocyte → TTP (AI draft)",
+   "key_concept": "• TTP: fever, MAHA, thrombocytopenia, renal, neuro\n• ADAMTS13 ขาด → ultralarge vWF",
+   "mechanism": [
+    "ADAMTS13 ขาด",
+    "ultralarge vWF จับ platelet",
+    {
+     "s": "microthrombi ในหลอดเลือดเล็ก",
+     "answer": true
+    },
+    "MAHA + เกล็ดเลือดต่ำ + ไตเสีย"
+   ],
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 49].pdf",
     "page": 7,
@@ -1184,19 +1283,28 @@
     "E": "High MCHC"
    },
    "correct": "C",
-   "explanation": "Massive bleed: red cell count ต่ำ (AI draft)",
+   "explanation": "เสียเลือดเฉียบพลันมาก Hb ยังไม่ลด แต่ red cell count ต่ำ (mechanism)",
    "image": null,
    "issues": [
     "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
    ],
    "option_why": {
-    "A": "MCV ต่ำ ไม่",
-    "B": "MCH ต่ำ ไม่",
-    "C": "✓ Red cell count ลด",
-    "D": "MCV สูง ไม่ใช่เฉียบพลัน",
-    "E": "MCHC สูง ไม่"
+    "A": "MCV ต่ำเกิดใน IDA เรื้อรัง",
+    "B": "MCH ต่ำเกิดใน IDA/thalassemia",
+    "C": "✓ เสียเลือด → จำนวน RBC ลดลง ก่อน MCV เปลี่ยน",
+    "D": "MCV สูงไม่ใช่ผลของเสียเลือดเฉียบพลัน",
+    "E": "MCHC สูงไม่ใช่"
    },
-   "key_concept": "• Acute blood loss: normocytic, Hb ↓\n• สรุป: Massive bleed: red cell count ต่ำ (AI draft)",
+   "key_concept": "• เสียเลือดเฉียบพลัน: normocytic normochromic\n• Hb/Hct ลดใน 24–72 ชม.",
+   "mechanism": [
+    "เสียเลือดมาก",
+    "RBC mass ลดทันที",
+    {
+     "s": "red cell count ต่ำ",
+     "answer": true
+    },
+    "tachycardia, BP ตก"
+   ],
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 49].pdf",
     "page": 8,
@@ -1235,19 +1343,28 @@
     "E": "………………………"
    },
    "correct": "B",
-   "explanation": "Polycythemia vera: RBC เพิ่มอย่างอัตโนมัติ (autonomous, EPO ต่ำ) (AI draft)",
+   "explanation": "Polycythemia vera เม็ดเลือดแดงเพิ่มเองอัตโนมัติจาก JAK2 ไม่ขึ้นกับ EPO",
    "image": null,
    "issues": [
     "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
    ],
    "option_why": {
-    "A": "EPO ↑ = secondary",
-    "B": "✓ Autonomous production (JAK2)",
-    "C": "—",
-    "D": "—",
-    "E": "—"
+    "A": "EPO เพิ่มเป็นกลไกของ secondary polycythemia ส่วน PV มี EPO ต่ำ",
+    "B": "✓ JAK2 V617F ทำให้ erythroid progenitor ขยายตัวเองโดยไม่ต้องมี EPO",
+    "C": "(ตัวเลือกว่างในต้นฉบับ) ไม่ใช่กลไกที่ถูกต้อง",
+    "D": "(ตัวเลือกว่างในต้นฉบับ) ไม่ใช่กลไกที่ถูกต้อง",
+    "E": "(ตัวเลือกว่างในต้นฉบับ) ไม่ใช่กลไกที่ถูกต้อง"
    },
-   "key_concept": "• PV: EPO ต่ำ JAK2\n• สรุป: Polycythemia vera: RBC เพิ่มอย่างอัตโนมัติ (autonomous, EPO ต่ำ) (AI draft)",
+   "key_concept": "• PV: JAK2 V617F ~95%, EPO ต่ำ\n• secondary: EPO สูงจาก hypoxia หรือเนื้องอก",
+   "mechanism": [
+    "JAK2 กลายพันธุ์",
+    "ส่งสัญญาณ EPO-R ตลอดเวลา",
+    {
+     "s": "RBC ผลิตเพิ่มอัตโนมัติ",
+     "answer": true
+    },
+    "Hct สูง เลือดหนืด"
+   ],
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 49].pdf",
     "page": 8,
@@ -1286,19 +1403,19 @@
     "E": "Human immunodeficiency virus infection"
    },
    "correct": "D",
-   "explanation": "Irradiated PRC: intrauterine transfusion (TA-GVHD risk) (AI draft)",
+   "explanation": "Irradiated PRC ใช้ใน intrauterine transfusion เพื่อป้องกัน TA-GVHD",
    "image": null,
    "issues": [
     "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
    ],
    "option_why": {
-    "A": "Allergic reaction → washed",
-    "B": "CMV → leukoreduce",
-    "C": "High birthweight ไม่",
-    "D": "✓ Intrauterine transfusion → irradiate",
+    "A": "allergic reaction ใช้ washed PRC",
+    "B": "CMV ใช้ leukocyte-depleted/CMV-safe",
+    "C": "birth weight สูงไม่ใช่ข้อบ่งชี้",
+    "D": "✓ ทารกในครรภ์ภูมิคุ้มกันไม่สมบูรณ์ เสี่ยง GVHD จึงต้องฉายรังสี",
     "E": "HIV ไม่ใช่ข้อบ่งชี้"
    },
-   "key_concept": "• Irradiate: IUT, HSCT, immunodeficiency\n• สรุป: Irradiated PRC: intrauterine transfusion (TA-GVHD risk) (AI draft)",
+   "key_concept": "• irradiated: ป้องกัน TA-GVHD ในผู้ป่วยภูมิคุ้มกันต่ำ/ญาติสายตรง/IUT\n• allergic: washed · CMV: leukodepleted",
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 49].pdf",
     "page": 8,
@@ -1337,19 +1454,28 @@
     "E": "VWF"
    },
    "correct": "A",
-   "explanation": "Propagation: factor XI (และ VIII/IX) ขยาย thrombin burst (AI draft)",
+   "explanation": "ใน propagation phase ของ cell-based model, factor XI บนผิว platelet ช่วยสร้าง thrombin burst",
    "image": null,
    "issues": [
     "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
    ],
    "option_why": {
-    "A": "✓ Factor XI (thrombin → XI)",
-    "B": "Tissue factor = initiation",
-    "C": "Factor VII = initiation",
-    "D": "Thrombin เป็นผลลัพธ์",
-    "E": "VWF ไม่ใช่"
+    "A": "✓ FXIa ที่ผิว platelet กระตุ้น FIX เพิ่มการสร้าง tenase และ thrombin",
+    "B": "tissue factor อยู่ใน initiation phase",
+    "C": "FVII อยู่ใน initiation phase",
+    "D": "thrombin เป็นผลลัพธ์ ไม่ใช่ตัวเริ่ม propagation",
+    "E": "vWF ช่วย adhesion ไม่ใช่การสร้าง thrombin"
    },
-   "key_concept": "• Cell-based: initiation, amplification, propagation\n• สรุป: Propagation: factor XI (และ VIII/IX) ขยาย thrombin burst (AI draft)",
+   "key_concept": "• initiation: TF–FVIIa บนเซลล์ TF · propagation: บน platelet · termination\n• FXI ถูก thrombin กระตุ้นบนผิว platelet",
+   "mechanism": [
+    "thrombin เล็กน้อยจาก initiation",
+    "กระตุ้น platelet และ FXI",
+    {
+     "s": "FXIa → FIXa → tenase",
+     "answer": true
+    },
+    "thrombin burst"
+   ],
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 49].pdf",
     "page": 8,
@@ -1431,19 +1557,28 @@
     "E": "Lead toxicity"
    },
    "correct": "E",
-   "explanation": "Stippling + spherocyte + retic ต่ำ → lead toxicity (AI draft)",
+   "explanation": "เด็กโลหิตจางที่มี basophilic stippling + microcytic จาก lead toxicity",
    "image": null,
    "issues": [
     "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
    ],
    "option_why": {
-    "A": "Immune ไม่",
-    "B": "Alloantibody",
-    "C": "Mismatch",
-    "D": "Antibody",
-    "E": "✓ Lead toxicity"
+    "A": "immune destruction พบ spherocyte/DAT บวก",
+    "B": "alloantibody เกิดหลังให้เลือด",
+    "C": "antigen–antibody mismatch เกิดในการให้เลือดผิดหมู่",
+    "D": "antibody ไม่ระบุกลไก",
+    "E": "✓ lead ยับยั้ง ALA dehydratase/ferrochelatase และ pyrimidine 5'-nucleotidase ทำให้เกิด stippling"
    },
-   "key_concept": "• Lead: basophilic stippling\n• สรุป: Stippling + spherocyte + retic ต่ำ → lead toxicity (AI draft)",
+   "key_concept": "• lead: basophilic stippling, microcytic\n• ยับยั้ง ALAD และ ferrochelatase\n• รักษา chelation (EDTA, DMSA)",
+   "mechanism": [
+    "ตะกั่วเข้าร่างกาย",
+    "ยับยั้ง ALAD/ferrochelatase และ P5N",
+    {
+     "s": "heme synthesis ลด RNA ไม่ถูกย่อย",
+     "answer": true
+    },
+    "basophilic stippling + โลหิตจาง"
+   ],
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 49].pdf",
     "page": 9,
