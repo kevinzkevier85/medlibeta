@@ -1,0 +1,1319 @@
+{
+ "meta": {
+  "set_id": "43_KF",
+  "block": "HEMA",
+  "cohort": 43,
+  "type": "KF",
+  "title": "KF Hematopoietic · Med PSU 42-43",
+  "time_limit_min": 120,
+  "generated_by": "auditor/tools/build_kf.py from auditor/data/work/hema_42-43_KF.kf.json — do not edit by hand"
+ },
+ "questions": [
+  {
+   "id": "HEMA-43-KF-001",
+   "block": "HEMA",
+   "cohort": 43,
+   "n": 1,
+   "type": "KF",
+   "case": "จงตอบคำถามเกี่ยวกับยา antiplatelet/anticoagulant",
+   "items": [
+    {
+     "id": "1.1",
+     "prompt": "กลไกการออกฤทธิ์ของ Clopidogrel",
+     "format": "short",
+     "accepted": [
+      "p2y12",
+      "adp"
+     ],
+     "keywords_all": [
+      "adp"
+     ],
+     "key_text": "Irreversible P2Y12 (ADP receptor) inhibitor → ยับยั้ง platelet activation และการแสดง GPIIb/IIIa → ลด platelet aggregation",
+     "source_key": "เฉลย: Irreversible P2Y12 (ADP receptor) inhibitor → ยับยั้ง platelet activation และการแสดง GPIIb/IIIa → ลด platelet aggregation"
+    },
+    {
+     "id": "1.2",
+     "prompt": "Side effect ของ Warfarin 2 ข้อ",
+     "format": "short",
+     "accepted": [
+      "bleeding",
+      "skin necrosis",
+      "chondrodysplasia"
+     ],
+     "keywords_all": [
+      "bleeding"
+     ],
+     "key_text": "Bleeding · Skin necrosis · Chondrodysplasia punctata (ทารกในครรภ์)",
+     "source_key": "เฉลย: Bleeding · Skin necrosis · Chondrodysplasia punctata (ทารกในครรภ์)"
+    },
+    {
+     "id": "1.3",
+     "prompt": "กลไกการออกฤทธิ์ของ Desmopressin",
+     "format": "short",
+     "accepted": [
+      "vwf",
+      "factor viii",
+      "v2"
+     ],
+     "keywords_all": [
+      "vwf"
+     ],
+     "key_text": "กระตุ้นหลั่ง VWF และ factor VIII จาก endothelial cell (V2 receptor)",
+     "source_key": "เฉลย: กระตุ้นหลั่ง VWF และ factor VIII จาก endothelial cell (V2 receptor)"
+    },
+    {
+     "id": "1.4",
+     "prompt": "กลไกการออกฤทธิ์ของ Dipyridamole",
+     "format": "short",
+     "accepted": [
+      "phosphodiesterase",
+      "cAMP",
+      "adenosine"
+     ],
+     "keywords_all": [
+      "phosphodiesterase"
+     ],
+     "key_text": "ยับยั้ง phosphodiesterase 3 ใน platelet → cAMP ↑ → ลด granule secretion/aggregation; ยับยั้ง adenosine uptake → vasodilation",
+     "source_key": "เฉลย: ยับยั้ง phosphodiesterase 3 ใน platelet → cAMP ↑ → ลด granule secretion/aggregation; ยับยั้ง adenosine uptake → vasodilation"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF43",
+     "pages": [
+      1
+     ]
+    },
+    {
+     "paper": "KF43-KEY",
+     "pages": [
+      1
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "HEMA-43-KF-002",
+   "block": "HEMA",
+   "cohort": 43,
+   "n": 2,
+   "type": "KF",
+   "case": "จงตอบคำถามเกี่ยวกับ iron supplement",
+   "items": [
+    {
+     "id": "2.1",
+     "prompt": "Indication ของ iron supplement 2 ข้อ",
+     "format": "short",
+     "accepted": [
+      "iron deficiency",
+      "pregnancy"
+     ],
+     "keywords_all": [
+      "iron deficiency"
+     ],
+     "key_text": "Iron deficiency anemia (hemorrhage, prematurity, pregnancy, malabsorption)",
+     "source_key": "เฉลย: Iron deficiency anemia (hemorrhage, prematurity, pregnancy, malabsorption)"
+    },
+    {
+     "id": "2.2",
+     "prompt": "ยาที่ลดการดูดซึม iron (1 กลุ่ม)",
+     "format": "short",
+     "accepted": [
+      "tetracycline",
+      "antacid",
+      "fluoroquinolone"
+     ],
+     "keywords_all": [
+      "antacid"
+     ],
+     "key_text": "Tetracycline, Fluoroquinolone, Antacid, Levodopa, Methyldopa",
+     "source_key": "เฉลย: Tetracycline, Fluoroquinolone, Antacid, Levodopa, Methyldopa"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF43",
+     "pages": [
+      1
+     ]
+    },
+    {
+     "paper": "KF43-KEY",
+     "pages": [
+      1
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "HEMA-43-KF-003",
+   "block": "HEMA",
+   "cohort": 43,
+   "n": 3,
+   "type": "KF",
+   "case": "CBC: RBC 1×10⁶, WBC 50.2×10³ · smear: promyelocyte 1%, myelocyte 5%, metamyelocyte 15%, band 35%, seg 15%, lymph 20%, mono 4%, eos 3%, baso 2%",
+   "items": [
+    {
+     "id": "3.1",
+     "prompt": "โรคที่เป็นไปได้ 2 โรค",
+     "format": "short",
+     "accepted": [
+      "cml",
+      "leukemoid"
+     ],
+     "keywords_all": [
+      "cml"
+     ],
+     "key_text": "Chronic myeloid leukemia (CML) และ Leukemoid reaction (left shift พบ immature cell)",
+     "source_key": "เฉลย: Chronic myeloid leukemia (CML) และ Leukemoid reaction (left shift พบ immature cell)"
+    },
+    {
+     "id": "3.2",
+     "prompt": "การทดสอบ: ชื่อและวิธี",
+     "format": "short",
+     "accepted": [
+      "philadelphia",
+      "bcr-abl",
+      "lap"
+     ],
+     "keywords_all": [
+      "philadelphia"
+     ],
+     "key_text": "Cytogenetic study/FISH หา Philadelphia chromosome t(9;22) · RT-PCR BCR-ABL (+ ใน CML) · LAP score ต่ำใน CML สูงใน leukemoid reaction",
+     "source_key": "เฉลย: Cytogenetic study/FISH หา Philadelphia chromosome t(9;22) · RT-PCR BCR-ABL (+ ใน CML) · LAP score ต่ำใน CML สูงใน leukemoid reaction"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF43",
+     "pages": [
+      1
+     ]
+    },
+    {
+     "paper": "KF43-KEY",
+     "pages": [
+      1
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "HEMA-43-KF-004",
+   "block": "HEMA",
+   "cohort": 43,
+   "n": 4,
+   "type": "KF",
+   "case": "หญิง 30 ปี มาฝากครรภ์ OF positive, DCIP negative, Hb typing A A2 (A2 = 2.5%)",
+   "items": [
+    {
+     "id": "4.1",
+     "prompt": "วินิจฉัยและเหตุผล",
+     "format": "short",
+     "accepted": [
+      "alpha",
+      "α"
+     ],
+     "keywords_all": [
+      "alpha"
+     ],
+     "key_text": "α-thalassemia trait (α⁰) เพราะ OF + , DCIP − (ไม่ใช่ HbE/HbH) และ A2 2.5% (<3.5% ไม่ใช่ β-thal trait)",
+     "source_key": "เฉลย: α-thalassemia trait (α⁰) เพราะ OF + , DCIP − (ไม่ใช่ HbE/HbH) และ A2 2.5% (<3.5% ไม่ใช่ β-thal trait)"
+    },
+    {
+     "id": "4.2",
+     "prompt": "การทดสอบสำหรับผู้ป่วยรายนี้",
+     "format": "short",
+     "accepted": [
+      "gap",
+      "pcr",
+      "dna"
+     ],
+     "keywords_all": [
+      "dna"
+     ],
+     "key_text": "DNA analysis — Gap-PCR หา gene deletion (SEA)",
+     "source_key": "เฉลย: DNA analysis — Gap-PCR หา gene deletion (SEA)"
+    },
+    {
+     "id": "4.3",
+     "prompt": "Genotype ของพ่อเมื่อลูกเป็น thalassemia",
+     "format": "short",
+     "accepted": [
+      "--/αα",
+      "hbh",
+      "trait"
+     ],
+     "keywords_all": [
+      "trait"
+     ],
+     "key_text": "พ่อ α-thal trait (--/αα) หรือ HbH disease (ลูกเป็น Hb Bart hydrops fetalis ได้)",
+     "source_key": "เฉลยไม่ครบ/ไม่มีในต้นฉบับ — AI เติม"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF43",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "KF43-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "HEMA-43-KF-005",
+   "block": "HEMA",
+   "cohort": 43,
+   "n": 5,
+   "type": "KF",
+   "case": "รับเลือด 5 unit ภายใน 2 ชม. แล้ว Body temp 35 °C, platelet ลดลง",
+   "items": [
+    {
+     "id": "5.1",
+     "prompt": "เกิดจากอะไร",
+     "format": "short",
+     "accepted": [
+      "massive",
+      "hypothermia",
+      "dilutional"
+     ],
+     "keywords_all": [
+      "dilutional"
+     ],
+     "key_text": "Massive blood transfusion: hypothermia (ไม่อุ่นเลือด) + dilutional thrombocytopenia/coagulopathy จากให้ PRC ปริมาณมากไม่ให้ plasma/platelet",
+     "source_key": "เฉลย: Massive blood transfusion: hypothermia (ไม่อุ่นเลือด) + dilutional thrombocytopenia/coagulopathy จากให้ PRC ปริมาณมากไม่ให้ plasma/platelet"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF43",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "KF43-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "HEMA-43-KF-006",
+   "block": "HEMA",
+   "cohort": 43,
+   "n": 6,
+   "type": "KF",
+   "case": "PTT, TT, PT สูง · donor O Rh+, recipient O Rh− (ไม่เคยได้รับเลือด)",
+   "items": [
+    {
+     "id": "6.1",
+     "prompt": "ถ้า รพ. ไม่มีเลือด Rh− จะให้เลือดและส่วนประกอบหมู่ใด (ABO และ Rh) 2 ข้อ",
+     "format": "short",
+     "accepted": [
+      "o rh+",
+      "ffp",
+      "pc"
+     ],
+     "keywords_all": [
+      "group o"
+     ],
+     "key_text": "PRC group O Rh+ และ FFP/PC group O (หรือ AB) — Rh+ ได้ในกรณีฉุกเฉิน",
+     "source_key": "เฉลยไม่ครบ/ไม่มีในต้นฉบับ — AI เติม"
+    },
+    {
+     "id": "6.2",
+     "prompt": "ต้องให้ anti-D ร่วมด้วยหรือไม่",
+     "format": "short",
+     "accepted": [
+      "anti-d",
+      "neutralize"
+     ],
+     "keywords_all": [
+      "anti-d"
+     ],
+     "key_text": "ถ้าให้ platelet concentrate Rh+ ควรให้ Anti-D IgG ร่วมด้วย เพื่อ neutralize antigen D ที่ปนมากับ RBC contamination",
+     "source_key": "เฉลย: ถ้าให้ platelet concentrate Rh+ ควรให้ Anti-D IgG ร่วมด้วย เพื่อ neutralize antigen D ที่ปนมากับ RBC contamination"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF43",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "KF43-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "HEMA-43-KF-007",
+   "block": "HEMA",
+   "cohort": 43,
+   "n": 7,
+   "type": "KF",
+   "case": "ประวัติผู้ป่วยที่น่าสงสัยมะเร็งถ่ายทอดทางพันธุกรรม 5 ข้อ",
+   "items": [
+    {
+     "id": "7.1",
+     "prompt": "ประวัติ 5 ข้อ",
+     "format": "short",
+     "accepted": [
+      "multiple",
+      "early onset",
+      "paired",
+      "ญาติ"
+     ],
+     "keywords_all": [
+      "early onset"
+     ],
+     "key_text": "เกิด primary cancer หลายอวัยวะ (เช่น breast + ovarian) · เกิดอายุน้อย (early onset) · เกิดใน paired organ/ซ้ายขวา · ญาติสายตรงเป็นมะเร็งชนิดเดียวกัน · ญาติสายตรงเป็นมะเร็งที่สัมพันธ์กัน",
+     "source_key": "เฉลย: เกิด primary cancer หลายอวัยวะ (เช่น breast + ovarian) · เกิดอายุน้อย (early onset) · เกิดใน paired organ/ซ้ายขวา · ญาติสายตรงเป็นมะเร็งชนิดเดียวกัน · ญาติสายตรงเป็นมะเร็งที่สัมพันธ์กัน"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF43",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "KF43-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "HEMA-43-KF-008",
+   "block": "HEMA",
+   "cohort": 43,
+   "n": 8,
+   "type": "KF",
+   "case": "จงตอบคำถามเกี่ยวกับยาเคมีบำบัด",
+   "items": [
+    {
+     "id": "8.1",
+     "prompt": "กลไก Leucovorin rescue",
+     "format": "short",
+     "accepted": [
+      "dhfr",
+      "folinic",
+      "substrate"
+     ],
+     "keywords_all": [
+      "folinic"
+     ],
+     "key_text": "MTX ยับยั้ง DHFR → ขาด tetrahydrofolate → ยับยั้งการสร้าง DNA → BM suppression · folinic acid ทดแทน substrate (ข้ามขั้น DHFR) ให้ normal cell สร้าง DNA/RNA ได้ ลด ADR",
+     "source_key": "เฉลย: MTX ยับยั้ง DHFR → ขาด tetrahydrofolate → ยับยั้งการสร้าง DNA → BM suppression · folinic acid ทดแทน substrate (ข้ามขั้น DHFR) ให้ normal cell สร้าง DNA/RNA ได้ ลด ADR"
+    },
+    {
+     "id": "8.2",
+     "prompt": "Toxic chemotherapy (โจทย์ไม่ครบ) ตัวอย่าง",
+     "format": "short",
+     "accepted": [
+      "cardiotoxicity",
+      "nephrotoxicity",
+      "hemorrhagic cystitis"
+     ],
+     "keywords_all": [
+      "cardiotoxicity"
+     ],
+     "key_text": "Doxorubicin → cardiotoxicity · Cisplatin → nephrotoxicity · Cyclophosphamide → hemorrhagic cystitis",
+     "source_key": "เฉลยไม่ครบ/ไม่มีในต้นฉบับ — AI เติม"
+    },
+    {
+     "id": "8.3",
+     "prompt": "ข้อแตกต่าง small molecule vs monoclonal antibody ต่อ tyrosine kinase",
+     "format": "short",
+     "accepted": [
+      "extracellular",
+      "atp"
+     ],
+     "keywords_all": [
+      "extracellular"
+     ],
+     "key_text": "Monoclonal Ab จับ extracellular domain ป้องกัน ligand binding · Small molecule แพร่เข้าเซลล์ไปแย่งจับ ATP-binding site ของ TK",
+     "source_key": "เฉลย: Monoclonal Ab จับ extracellular domain ป้องกัน ligand binding · Small molecule แพร่เข้าเซลล์ไปแย่งจับ ATP-binding site ของ TK"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF43",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "KF43-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "HEMA-43-KF-009",
+   "block": "HEMA",
+   "cohort": 43,
+   "n": 9,
+   "type": "KF",
+   "case": "ชาย 10 ปี ไข้ไอ 5 วัน กินยา 3 วันก่อนซีดเพลีย ปัสสาวะสีโค้ก · OF +, DCIP weak +, ไม่มี HbCS, Hb 4.8, Hct 15, WBC 10,200, N 85%, plt ต่ำเล็กน้อย, retic 18%",
+   "items": [
+    {
+     "id": "9.1",
+     "prompt": "คำนวณ RPI",
+     "format": "short",
+     "accepted": [
+      "3"
+     ],
+     "keywords_all": [
+      "3"
+     ],
+     "key_text": "RPI = retic × (Hct/45) / maturation factor 2 = 18 × (15/45) / 2 = 3",
+     "source_key": "เฉลย: RPI = retic × (Hct/45) / maturation factor 2 = 18 × (15/45) / 2 = 3"
+    },
+    {
+     "id": "9.2a",
+     "prompt": "ตาราง: Extravascular hemolysis (Low/Normal/High MCV)",
+     "format": "short",
+     "accepted": [
+      "thalassemia",
+      "aiha",
+      "spherocytosis"
+     ],
+     "keywords_all": [
+      "thalassemia"
+     ],
+     "key_text": "Low MCV: Thalassemia · Normal MCV: AIHA (warm), Hereditary spherocytosis · (HbH disease)",
+     "source_key": "เฉลยไม่ครบ/ไม่มีในต้นฉบับ — AI เติม"
+    },
+    {
+     "id": "9.2b",
+     "prompt": "ตาราง: Intravascular hemolysis",
+     "format": "short",
+     "accepted": [
+      "g6pd",
+      "aiha",
+      "cold"
+     ],
+     "keywords_all": [
+      "g6pd"
+     ],
+     "key_text": "G6PD deficiency, AIHA (cold type), HbH disease (Thalassemia)",
+     "source_key": "เฉลยไม่ครบ/ไม่มีในต้นฉบับ — AI เติม"
+    },
+    {
+     "id": "9.3",
+     "prompt": "วินิจฉัยผู้ป่วยรายนี้",
+     "format": "short",
+     "accepted": [
+      "hbh"
+     ],
+     "keywords_all": [
+      "hbh"
+     ],
+     "key_text": "HbH disease ที่เกิด acute hemolysis (OF +, DCIP weakly +) — ตามเฉลยลายมือ HbH / α-thal",
+     "source_key": "เฉลย: HbH disease (อ่านลายมือ)"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "KF43",
+     "pages": [
+      3
+     ]
+    },
+    {
+     "paper": "KF43-KEY",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "HEMA-43-KF-010",
+   "block": "HEMA",
+   "cohort": 43,
+   "n": 10,
+   "type": "KF",
+   "case": "จงตอบคำถามเกี่ยวกับ folate, iron, EPO",
+   "items": [
+    {
+     "id": "10.1",
+     "prompt": "ข้อบ่งใช้ของ Folate 3 ข้อ",
+     "format": "short",
+     "accepted": [
+      "megaloblastic",
+      "neural tube",
+      "thalassemia"
+     ],
+     "keywords_all": [
+      "neural tube"
+     ],
+     "key_text": "Folate deficiency/megaloblastic anemia · Pregnancy ป้องกัน neural tube defect · Thalassemia hemolysis",
+     "source_key": "เฉลย: Folate deficiency/megaloblastic anemia · Pregnancy ป้องกัน neural tube defect · Thalassemia hemolysis"
+    },
+    {
+     "id": "10.2",
+     "prompt": "ยายับยั้งการสังเคราะห์ folate 1 ชนิด และยายับยั้งการดูดซึม",
+     "format": "short",
+     "accepted": [
+      "methotrexate",
+      "pyrimethamine",
+      "phenytoin"
+     ],
+     "keywords_all": [
+      "methotrexate"
+     ],
+     "key_text": "Methotrexate, Pyrimethamine, Sulfonamide (folate reductase inhibitor) · Phenytoin, progestin/estrogen ลดการดูดซึม",
+     "source_key": "เฉลย: Methotrexate, Pyrimethamine, Sulfonamide (folate reductase inhibitor) · Phenytoin, progestin/estrogen ลดการดูดซึม"
+    },
+    {
+     "id": "10.3",
+     "prompt": "Chronic toxicity ของ iron",
+     "format": "short",
+     "accepted": [
+      "bronzing",
+      "cirrhosis",
+      "heart failure"
+     ],
+     "keywords_all": [
+      "bronzing"
+     ],
+     "key_text": "Bronzing skin, cirrhosis, diabetes mellitus, bone/joint pain, heart failure (hemochromatosis)",
+     "source_key": "เฉลย: Bronzing skin, cirrhosis, diabetes mellitus, bone/joint pain, heart failure (hemochromatosis)"
+    },
+    {
+     "id": "10.4",
+     "prompt": "ผลข้างเคียง Erythropoietin 3 ข้อ",
+     "format": "short",
+     "accepted": [
+      "thromboembolism",
+      "hypertension",
+      "flu"
+     ],
+     "keywords_all": [
+      "hypertension"
+     ],
+     "key_text": "Thromboembolism · Flu-like symptom · Hypertension/hypertensive encephalopathy, seizure, edema",
+     "source_key": "เฉลย: Thromboembolism · Flu-like symptom · Hypertension/hypertensive encephalopathy, seizure, edema"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF43",
+     "pages": [
+      4
+     ]
+    },
+    {
+     "paper": "KF43-KEY",
+     "pages": [
+      4
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "HEMA-43-KF-011",
+   "block": "HEMA",
+   "cohort": 43,
+   "n": 11,
+   "type": "KF",
+   "case": "ผู้ป่วยหญิง 25 ปี ซีดเหลือง ปัสสาวะเข้ม 1 วัน ไข้ เจ็บคอ ไอแห้ง 3 วันก่อน · Hb 5.7, retic 14%, plt 347,000, inclusion body +, OF +, DCIP weak +, Hb typing A HbH 5.7% HbCS 2.4%, DNA: SEA with HbCS",
+   "items": [
+    {
+     "id": "11.1",
+     "prompt": "ปัจจัย acute hemolysis และอธิบาย",
+     "format": "short",
+     "accepted": [
+      "oxidative",
+      "unstable",
+      "infection"
+     ],
+     "keywords_all": [
+      "oxidative"
+     ],
+     "key_text": "Non-deletional HbH disease (HbH-CS): ไข้/ติดเชื้อ → oxidative stress → unstable Hb ตกตะกอนและแตกง่าย → hemolytic crisis",
+     "source_key": "เฉลย: Non-deletional HbH disease (HbH-CS): ไข้/ติดเชื้อ → oxidative stress → unstable Hb ตกตะกอนและแตกง่าย → hemolytic crisis"
+    },
+    {
+     "id": "11.2",
+     "prompt": "Hb typing คืออะไร หลักการ ประโยชน์",
+     "format": "short",
+     "accepted": [
+      "electrophoresis",
+      "hplc"
+     ],
+     "keywords_all": [
+      "electrophoresis"
+     ],
+     "key_text": "ตรวจชนิดและปริมาณ Hb ด้วย electrophoresis/chromatography (CAE, LPLC, HPLC, CE) อาศัยขนาด/ประจุ · วินิจฉัยแยก thalassemia, hemoglobinopathy, carrier วางแผนครอบครัว",
+     "source_key": "เฉลย: ตรวจชนิดและปริมาณ Hb ด้วย electrophoresis/chromatography (CAE, LPLC, HPLC, CE) อาศัยขนาด/ประจุ · วินิจฉัยแยก thalassemia, hemoglobinopathy, carrier วางแผนครอบครัว"
+    },
+    {
+     "id": "11.3",
+     "prompt": "วินิจฉัยและแนวทางรักษา",
+     "format": "short",
+     "accepted": [
+      "hbh",
+      "transfusion",
+      "folic"
+     ],
+     "keywords_all": [
+      "hbh"
+     ],
+     "key_text": "Acute hemolytic crisis of HbH disease · transfusion เมื่อ severe · iron chelation ถ้า overload · folic acid · หลีกเลี่ยง oxidative compound",
+     "source_key": "เฉลย: Acute hemolytic crisis of HbH disease · transfusion เมื่อ severe · iron chelation ถ้า overload · folic acid · หลีกเลี่ยง oxidative compound"
+    },
+    {
+     "id": "11.4",
+     "prompt": "ประโยชน์ DNA analysis",
+     "format": "short",
+     "accepted": [
+      "วางแผน",
+      "ความเสี่ยง"
+     ],
+     "keywords_all": [
+      "วางแผน"
+     ],
+     "key_text": "สนับสนุนการวินิจฉัยและทราบความเสี่ยงการถ่ายทอดไปยังลูก วางแผนครอบครัว",
+     "source_key": "เฉลย: สนับสนุนการวินิจฉัยและทราบความเสี่ยงการถ่ายทอดไปยังลูก วางแผนครอบครัว"
+    },
+    {
+     "id": "11.5",
+     "prompt": "ถ้ามีลูกจะเป็น thalassemia ชนิดรุนแรงหรือไม่",
+     "format": "short",
+     "accepted": [
+      "hydrops",
+      "bart"
+     ],
+     "keywords_all": [
+      "hydrops"
+     ],
+     "key_text": "มีโอกาสเป็น Hb Bart hydrops fetalis หากแต่งงานกับผู้เป็น α-thal trait (--/αα) หรือ HbH disease",
+     "source_key": "เฉลย: มีโอกาสเป็น Hb Bart hydrops fetalis หากแต่งงานกับผู้เป็น α-thal trait (--/αα) หรือ HbH disease"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF43",
+     "pages": [
+      4
+     ]
+    },
+    {
+     "paper": "KF43-KEY",
+     "pages": [
+      4
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "HEMA-43-KF-012",
+   "block": "HEMA",
+   "cohort": 43,
+   "n": 12,
+   "type": "KF",
+   "case": "ชาย 3 ปี pallor, fatigue, dark urine · ได้ amoxicillin 1 วันก่อน · Hb 5.5, retic 15% · UA: reddish brown, blood 4+, RBC 3/HPF",
+   "items": [
+    {
+     "id": "12.1",
+     "prompt": "สาเหตุที่ทำให้เกิดอาการนี้",
+     "format": "short",
+     "accepted": [
+      "g6pd",
+      "oxidative"
+     ],
+     "keywords_all": [
+      "g6pd"
+     ],
+     "key_text": "Oxidative stress (ยา amoxicillin/ติดเชื้อ) ทำให้เกิด acute hemolysis ใน G6PD deficiency",
+     "source_key": "เฉลย: Oxidative stress (ยา amoxicillin/ติดเชื้อ) ทำให้เกิด acute hemolysis ใน G6PD deficiency"
+    },
+    {
+     "id": "12.2",
+     "prompt": "Reticulocyte count สูงและต่ำต่างกันอย่างไร",
+     "format": "short",
+     "accepted": [
+      "effective",
+      "ineffective"
+     ],
+     "keywords_all": [
+      "effective"
+     ],
+     "key_text": "สูง = effective erythropoiesis (ไขกระดูกตอบสนอง) · ต่ำ = ineffective erythropoiesis/ไขกระดูกไม่ตอบสนอง",
+     "source_key": "เฉลย: สูง = effective erythropoiesis (ไขกระดูกตอบสนอง) · ต่ำ = ineffective erythropoiesis/ไขกระดูกไม่ตอบสนอง"
+    },
+    {
+     "id": "12.3",
+     "prompt": "UA มีอะไรขัดแย้งกัน เพราะเหตุใด",
+     "format": "short",
+     "accepted": [
+      "hemoglobinuria",
+      "strip"
+     ],
+     "keywords_all": [
+      "hemoglobinuria"
+     ],
+     "key_text": "Blood 4+ แต่ RBC เพียง 3/HPF เพราะมี hemoglobinuria จาก hemolysis — strip test ตรวจ Hb ได้ แต่ไม่เห็นเม็ดเลือดแดงใต้กล้อง",
+     "source_key": "เฉลย: Blood 4+ แต่ RBC เพียง 3/HPF เพราะมี hemoglobinuria จาก hemolysis — strip test ตรวจ Hb ได้ แต่ไม่เห็นเม็ดเลือดแดงใต้กล้อง"
+    },
+    {
+     "id": "12.4",
+     "prompt": "ส่งตรวจเพิ่มเติม",
+     "format": "short",
+     "accepted": [
+      "fluorescent",
+      "g6pd"
+     ],
+     "keywords_all": [
+      "fluorescent"
+     ],
+     "key_text": "Screening: fluorescent spot test · Confirm: G6PD enzyme level",
+     "source_key": "เฉลย: Screening: fluorescent spot test · Confirm: G6PD enzyme level"
+    },
+    {
+     "id": "12.5",
+     "prompt": "วิธีรักษา",
+     "format": "short",
+     "accepted": [
+      "hydration",
+      "transfusion"
+     ],
+     "keywords_all": [
+      "hydration"
+     ],
+     "key_text": "หลีกเลี่ยง trigger · hydration (IV fluid) ป้องกัน renal failure · transfusion ถ้า severe",
+     "source_key": "เฉลย: หลีกเลี่ยง trigger · hydration (IV fluid) ป้องกัน renal failure · transfusion ถ้า severe"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF43",
+     "pages": [
+      5
+     ]
+    },
+    {
+     "paper": "KF43-KEY",
+     "pages": [
+      5
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "HEMA-43-KF-013",
+   "block": "HEMA",
+   "cohort": 43,
+   "n": 13,
+   "type": "KF",
+   "case": "จ้ำเลือด 1 สัปดาห์ ตรวจปกติหมดยกเว้น platelet ต่ำ (ข้อมูล ITP)",
+   "items": [
+    {
+     "id": "13.1",
+     "prompt": "กลไกความผิดปกติ",
+     "format": "short",
+     "accepted": [
+      "autoantibody",
+      "igg"
+     ],
+     "keywords_all": [
+      "autoantibody"
+     ],
+     "key_text": "ร่างกายสร้าง autoantibody (IgG) ทำลาย platelet (IgG-mediated platelet destruction) → thrombocytopenia → ecchymosis",
+     "source_key": "เฉลย: ร่างกายสร้าง autoantibody (IgG) ทำลาย platelet (IgG-mediated platelet destruction) → thrombocytopenia → ecchymosis"
+    },
+    {
+     "id": "13.2",
+     "prompt": "น่าจะเป็นโรคอะไร เพราะอะไร",
+     "format": "short",
+     "accepted": [
+      "itp",
+      "immune thrombocytopenia"
+     ],
+     "keywords_all": [
+      "itp"
+     ],
+     "key_text": "Immune thrombocytopenia (ITP) — platelet ต่ำ ไม่มี cytopenia อื่น ไม่มี family history และ exclude สาเหตุอื่นของ thrombocytopenia แล้ว",
+     "source_key": "เฉลย: Immune thrombocytopenia (ITP) — platelet ต่ำ ไม่มี cytopenia อื่น ไม่มี family history และ exclude สาเหตุอื่นของ thrombocytopenia แล้ว"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF43",
+     "pages": [
+      6
+     ]
+    },
+    {
+     "paper": "KF43-KEY",
+     "pages": [
+      6
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "HEMA-43-KF-014",
+   "block": "HEMA",
+   "cohort": 43,
+   "n": 14,
+   "type": "KF",
+   "case": "ชาย 30 ปี อุบัติเหตุ ได้ PRC O Rh+ 5 unit ใน 2 ชม. · RR 25 HR 110 BP 80/50 T 35 · aPTT/PT ยาว Hb 8 plt 30,000 · ผู้ป่วยกรุ๊ป O Negative ไม่เคยรับเลือด",
+   "items": [
+    {
+     "id": "14.1",
+     "prompt": "Body temp ลด และผลแล็บเกิดจากอะไร",
+     "format": "short",
+     "accepted": [
+      "hypothermia",
+      "dilutional"
+     ],
+     "keywords_all": [
+      "dilutional"
+     ],
+     "key_text": "Massive transfusion: ไม่ได้อุ่นเลือด → hypothermia · dilutional thrombocytopenia/coagulopathy จากให้ PRC ปริมาณมากไม่ให้ plasma/platelet",
+     "source_key": "เฉลย: Massive transfusion: ไม่ได้อุ่นเลือด → hypothermia · dilutional thrombocytopenia/coagulopathy จากให้ PRC ปริมาณมากไม่ให้ plasma/platelet"
+    },
+    {
+     "id": "14.2",
+     "prompt": "ถ้าไม่มีเลือด O Negative ควรให้อะไรแทน (2 ข้อ)",
+     "format": "short",
+     "accepted": [
+      "prc",
+      "ffp",
+      "pc"
+     ],
+     "keywords_all": [
+      "ffp"
+     ],
+     "key_text": "PRC group O Rh+ และ FFP/PC group O (ตามเฉลย)",
+     "source_key": "เฉลยไม่ครบ/ไม่มีในต้นฉบับ — AI เติม"
+    },
+    {
+     "id": "14.3",
+     "prompt": "ต้องให้ anti-D หรือไม่",
+     "format": "short",
+     "accepted": [
+      "anti-d"
+     ],
+     "keywords_all": [
+      "anti-d"
+     ],
+     "key_text": "ถ้าให้ platelet concentrate Rh+ ควรให้ Anti-D IgG ร่วมด้วยเพื่อ neutralize antigen D ที่ปนมากับ RBC",
+     "source_key": "เฉลย: ถ้าให้ platelet concentrate Rh+ ควรให้ Anti-D IgG ร่วมด้วยเพื่อ neutralize antigen D ที่ปนมากับ RBC"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF43",
+     "pages": [
+      7
+     ]
+    },
+    {
+     "paper": "KF43-KEY",
+     "pages": [
+      7
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "HEMA-43-KF-015",
+   "block": "HEMA",
+   "cohort": 43,
+   "n": 15,
+   "type": "KF",
+   "case": "ผู้ป่วยได้รับ blood transfusion แล้วเกิดไข้ขณะให้เลือด",
+   "items": [
+    {
+     "id": "15.1",
+     "prompt": "สาเหตุของไข้ขณะได้รับเลือด 2 ข้อ",
+     "format": "short",
+     "accepted": [
+      "acute hemolytic",
+      "febrile"
+     ],
+     "keywords_all": [
+      "febrile"
+     ],
+     "key_text": "Acute hemolytic transfusion reaction (ABO mismatch) · Febrile non-hemolytic transfusion reaction (alloantibody ต่อ WBC/platelet)",
+     "source_key": "เฉลย: Acute hemolytic transfusion reaction (ABO mismatch) · Febrile non-hemolytic transfusion reaction (alloantibody ต่อ WBC/platelet)"
+    },
+    {
+     "id": "15.2",
+     "prompt": "ส่งตรวจทางห้องปฏิบัติการอะไรเพื่อช่วยวินิจฉัย",
+     "format": "short",
+     "accepted": [
+      "compatibility",
+      "urinalysis",
+      "cbc"
+     ],
+     "keywords_all": [
+      "compatibility"
+     ],
+     "key_text": "Compatibility test (crossmatch/clerical check) · Urinalysis, renal function test · CBC (RBC, WBC, platelet) · DAT",
+     "source_key": "เฉลยไม่ครบ/ไม่มีในต้นฉบับ — AI เติม"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF43",
+     "pages": [
+      7
+     ]
+    },
+    {
+     "paper": "KF43-KEY",
+     "pages": [
+      7
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "HEMA-43-KF-016",
+   "block": "HEMA",
+   "cohort": 43,
+   "n": 16,
+   "type": "KF",
+   "case": "หญิง 70 ปี ซีดเพลีย ตับม้ามไม่โต RBC 2.5 ล้าน WBC 2000 plt 100,000 Hb 8.5 · BM hypercellular dysplastic erythroid/megakaryocyte blast 15% · karyotype 46,XX del(5q)",
+   "items": [
+    {
+     "id": "16.1",
+     "prompt": "วินิจฉัย",
+     "format": "short",
+     "accepted": [
+      "mds",
+      "myelodysplastic"
+     ],
+     "keywords_all": [
+      "myelodysplastic"
+     ],
+     "key_text": "Myelodysplastic syndrome (MDS)",
+     "source_key": "เฉลย: Myelodysplastic syndrome (MDS)"
+    },
+    {
+     "id": "16.2",
+     "prompt": "เหตุผลประกอบการวินิจฉัย 4 ข้อ",
+     "format": "short",
+     "accepted": [
+      "cytopenia",
+      "dysplasia",
+      "cytogenetic"
+     ],
+     "keywords_all": [
+      "dysplasia"
+     ],
+     "key_text": "Peripheral blood cytopenia · BM dysplasia + blast · Clonal cytogenetic abnormality เช่น del(5q), del(20q) · ไม่มี hepatosplenomegaly",
+     "source_key": "เฉลย: Peripheral blood cytopenia · BM dysplasia + blast · Clonal cytogenetic abnormality เช่น del(5q), del(20q) · ไม่มี hepatosplenomegaly"
+    },
+    {
+     "id": "16.3",
+     "prompt": "4 ปีต่อมา BM blast 35% การดำเนินโรค",
+     "format": "short",
+     "accepted": [
+      "aml",
+      "acute myeloid"
+     ],
+     "keywords_all": [
+      "aml"
+     ],
+     "key_text": "เปลี่ยนเป็น Acute myeloid leukemia (AML) เพราะ myeloblast ≥ 20%",
+     "source_key": "เฉลย: เปลี่ยนเป็น Acute myeloid leukemia (AML) เพราะ myeloblast ≥ 20%"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF43",
+     "pages": [
+      7
+     ]
+    },
+    {
+     "paper": "KF43-KEY",
+     "pages": [
+      7
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "HEMA-43-KF-017",
+   "block": "HEMA",
+   "cohort": 43,
+   "n": 17,
+   "type": "KF",
+   "case": "จงตอบคำถามเกี่ยวกับยาเคมีบำบัด",
+   "items": [
+    {
+     "id": "17.1",
+     "prompt": "Leucovorin rescue",
+     "format": "short",
+     "accepted": [
+      "folinic",
+      "methotrexate"
+     ],
+     "keywords_all": [
+      "folinic"
+     ],
+     "key_text": "Folinic acid เป็น substrate ทดแทนในการสร้าง DNA/RNA ลด ADR (BM suppression) จาก methotrexate",
+     "source_key": "เฉลย: Folinic acid เป็น substrate ทดแทนในการสร้าง DNA/RNA ลด ADR (BM suppression) จาก methotrexate"
+    },
+    {
+     "id": "17.2",
+     "prompt": "Toxicity จาก chemotherapy 3 ตัวอย่าง",
+     "format": "short",
+     "accepted": [
+      "cardiotoxicity",
+      "nephrotoxicity",
+      "hemorrhagic cystitis"
+     ],
+     "keywords_all": [
+      "cardiotoxicity"
+     ],
+     "key_text": "Doxorubicin/trastuzumab → cardiotoxicity · Cisplatin/carboplatin → nephrotoxicity · Cyclophosphamide → hemorrhagic cystitis",
+     "source_key": "เฉลย: Doxorubicin/trastuzumab → cardiotoxicity · Cisplatin/carboplatin → nephrotoxicity · Cyclophosphamide → hemorrhagic cystitis"
+    },
+    {
+     "id": "17.3",
+     "prompt": "ความแตกต่าง small molecule กับ monoclonal antibody",
+     "format": "short",
+     "accepted": [
+      "extracellular",
+      "atp"
+     ],
+     "keywords_all": [
+      "atp"
+     ],
+     "key_text": "Monoclonal Ab แย่งจับ extracellular domain ป้องกัน ligand binding · Small molecule แพร่เข้าเซลล์แย่งจับ ATP-binding site ของ TK",
+     "source_key": "เฉลย: Monoclonal Ab แย่งจับ extracellular domain ป้องกัน ligand binding · Small molecule แพร่เข้าเซลล์แย่งจับ ATP-binding site ของ TK"
+    },
+    {
+     "id": "17.4",
+     "prompt": "วิธีสังเกตมะเร็งแบบถ่ายทอดทางพันธุกรรม 5 ข้อ",
+     "format": "short",
+     "accepted": [
+      "early onset",
+      "paired",
+      "multiple"
+     ],
+     "keywords_all": [
+      "early onset"
+     ],
+     "key_text": "Primary cancer หลายอวัยวะ · early onset · paired organ/ symmetry · ญาติสายตรงเป็นชนิดเดียวกัน · ญาติสายตรงเป็นชนิดที่สัมพันธ์กัน",
+     "source_key": "เฉลย: Primary cancer หลายอวัยวะ · early onset · paired organ/ symmetry · ญาติสายตรงเป็นชนิดเดียวกัน · ญาติสายตรงเป็นชนิดที่สัมพันธ์กัน"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF43",
+     "pages": [
+      8
+     ]
+    },
+    {
+     "paper": "KF43-KEY",
+     "pages": [
+      8
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "HEMA-43-KF-018",
+   "block": "HEMA",
+   "cohort": 43,
+   "n": 18,
+   "type": "KF",
+   "case": "ผู้หญิง พบก้อนเนื้อ biopsy เจอ keratin (โจทย์ไม่ครบ)",
+   "items": [
+    {
+     "id": "18.1",
+     "prompt": "ชื่อเชื้อที่ทำให้เกิดพยาธิสภาพ",
+     "format": "short",
+     "accepted": [
+      "hpv",
+      "papillomavirus"
+     ],
+     "keywords_all": [
+      "papillomavirus"
+     ],
+     "key_text": "Human papillomavirus (HPV)",
+     "source_key": "เฉลย: Human papillomavirus (HPV)"
+    },
+    {
+     "id": "18.2",
+     "prompt": "วินิจฉัยโรค",
+     "format": "short",
+     "accepted": [
+      "squamous",
+      "cervix"
+     ],
+     "keywords_all": [
+      "squamous"
+     ],
+     "key_text": "Squamous cell carcinoma of cervix",
+     "source_key": "เฉลย: Squamous cell carcinoma of cervix"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF43",
+     "pages": [
+      9
+     ]
+    },
+    {
+     "paper": "KF43-KEY",
+     "pages": [
+      9
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "HEMA-43-KF-019",
+   "block": "HEMA",
+   "cohort": 43,
+   "n": 19,
+   "type": "KF",
+   "case": "หญิงเลือดออกมาก tumor ที่ cervix พบ anaplastic cell, keratin เริ่มลุกลาม",
+   "items": [
+    {
+     "id": "19.1",
+     "prompt": "น่าจะเป็นโรคอะไร",
+     "format": "short",
+     "accepted": [
+      "squamous"
+     ],
+     "keywords_all": [
+      "squamous"
+     ],
+     "key_text": "Squamous cell carcinoma of cervix",
+     "source_key": "เฉลย: Squamous cell carcinoma of cervix"
+    },
+    {
+     "id": "19.2",
+     "prompt": "ถ้าเคยติดเชื้อ สงสัยเชื้ออะไร",
+     "format": "short",
+     "accepted": [
+      "hpv",
+      "papillomavirus"
+     ],
+     "keywords_all": [
+      "papillomavirus"
+     ],
+     "key_text": "Human papillomavirus (HPV 16/18)",
+     "source_key": "เฉลย: Human papillomavirus (HPV 16/18)"
+    },
+    {
+     "id": "19.3",
+     "prompt": "ลักษณะ anaplastic cell 4 ข้อ",
+     "format": "short",
+     "accepted": [
+      "pleomorphism",
+      "polarity",
+      "mitoses"
+     ],
+     "keywords_all": [
+      "pleomorphism"
+     ],
+     "key_text": "Pleomorphism (variable size/shape) · Abnormal nuclear morphology (N:C ratio สูง, hyperchromatic, large nucleoli) · Loss of polarity · Mitoses มาก",
+     "source_key": "เฉลย: Pleomorphism (variable size/shape) · Abnormal nuclear morphology (N:C ratio สูง, hyperchromatic, large nucleoli) · Loss of polarity · Mitoses มาก"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF43",
+     "pages": [
+      9
+     ]
+    },
+    {
+     "paper": "KF43-KEY",
+     "pages": [
+      9
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "claude-mcp"
+  }
+ ]
+}

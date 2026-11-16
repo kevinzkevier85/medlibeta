@@ -1,0 +1,809 @@
+{
+ "meta": {
+  "set_id": "43_OSPE",
+  "block": "HEMA",
+  "cohort": 43,
+  "type": "OSPE",
+  "title": "OSPE Hematopoietic · Med PSU 43",
+  "generated_by": "auditor/tools/build_kf.py from auditor/data/work/hema_43_OSPE.kf.json — do not edit by hand"
+ },
+ "questions": [
+  {
+   "id": "HEMA-43-OSPE-001",
+   "block": "HEMA",
+   "cohort": 43,
+   "n": 1,
+   "type": "OSPE",
+   "station": 1,
+   "stem": "สถานี 1: ภาพ liver ชายอายุ 65 ปี มี underlying chronic hepatitis B",
+   "items": [
+    {
+     "id": "1.1",
+     "prompt": "Diagnosis",
+     "format": "short",
+     "accepted": [
+      "hepatocellular carcinoma",
+      "hcc"
+     ],
+     "keywords_all": [
+      "hepatocellular"
+     ],
+     "key_text": "Hepatocellular carcinoma (HCC)",
+     "source_key": "เฉลย: Hepatocellular carcinoma (HCC)",
+     "image": "img/HEMA-43-OSPE-001.jpg",
+     "image_caption": "Liver ชาย 65 ปี"
+    },
+    {
+     "id": "1.2",
+     "prompt": "Tumor marker",
+     "format": "short",
+     "accepted": [
+      "afp",
+      "alpha"
+     ],
+     "keywords_all": [
+      "afp"
+     ],
+     "key_text": "AFP (alpha-fetoprotein)",
+     "source_key": "เฉลย: AFP (alpha-fetoprotein)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE43",
+     "pages": [
+      1
+     ]
+    },
+    {
+     "paper": "OSPE43-KEY",
+     "pages": [
+      1
+     ]
+    }
+   ],
+   "tags": [
+    "pathology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "HEMA-43-OSPE-002",
+   "block": "HEMA",
+   "cohort": 43,
+   "n": 2,
+   "type": "OSPE",
+   "station": 2,
+   "stem": "สถานี 2: ภาพ histology",
+   "items": [
+    {
+     "id": "2.1",
+     "prompt": "Diagnosis",
+     "format": "short",
+     "accepted": [
+      "adenocarcinoma",
+      "colon"
+     ],
+     "keywords_all": [
+      "adenocarcinoma"
+     ],
+     "key_text": "Adenocarcinoma of colon",
+     "source_key": "เฉลย: Adenocarcinoma of colon",
+     "image": "img/HEMA-43-OSPE-002.jpg",
+     "image_caption": "Histology สถานี 2"
+    },
+    {
+     "id": "2.2",
+     "prompt": "Cell origin",
+     "format": "short",
+     "accepted": [
+      "glandular",
+      "epithelial"
+     ],
+     "keywords_all": [
+      "epithelial"
+     ],
+     "key_text": "Glandular epithelial cell",
+     "source_key": "เฉลย: Glandular epithelial cell"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE43",
+     "pages": [
+      1
+     ]
+    },
+    {
+     "paper": "OSPE43-KEY",
+     "pages": [
+      1
+     ]
+    }
+   ],
+   "tags": [
+    "histology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "HEMA-43-OSPE-003",
+   "block": "HEMA",
+   "cohort": 43,
+   "n": 3,
+   "type": "OSPE",
+   "station": 3,
+   "stem": "สถานี 3: ผล Hb typing: HbF ~3, HbE ~35, HbA2 ~6, abnormal Hb รวม 58",
+   "items": [
+    {
+     "id": "3.1",
+     "prompt": "Hb type ที่พบ",
+     "format": "short",
+     "accepted": [
+      "hbe",
+      "hba2",
+      "abnormal"
+     ],
+     "keywords_all": [
+      "hbe"
+     ],
+     "key_text": "HbF, HbE (+A2) พร้อม abnormal Hb — ลายมือเฉลย: \"HbE+A2 ≈ 41\" แสดง HbE trait",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    },
+    {
+     "id": "3.2",
+     "prompt": "วินิจฉัยโรค",
+     "format": "short",
+     "accepted": [
+      "hbe trait",
+      "abnormal"
+     ],
+     "keywords_all": [
+      "hbe"
+     ],
+     "key_text": "Abnormal Hb ร่วมกับ HbE trait",
+     "source_key": "เฉลย: Abnormal Hb ร่วมกับ HbE trait"
+    },
+    {
+     "id": "3.3",
+     "prompt": "ตรวจเพิ่มเพื่อยืนยัน",
+     "format": "short",
+     "accepted": [
+      "gap-pcr",
+      "reverse dot blot"
+     ],
+     "keywords_all": [
+      "pcr"
+     ],
+     "key_text": "Gap-PCR / Reverse dot blot hybridization",
+     "source_key": "เฉลย: Gap-PCR / Reverse dot blot hybridization"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "OSPE43",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "OSPE43-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [
+    "hb typing"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "HEMA-43-OSPE-004",
+   "block": "HEMA",
+   "cohort": 43,
+   "n": 4,
+   "type": "OSPE",
+   "station": 4,
+   "stem": "สถานี 4: ภาพ histology จากเท้า",
+   "items": [
+    {
+     "id": "4.1",
+     "prompt": "วินิจฉัย",
+     "format": "short",
+     "accepted": [
+      "melanoma"
+     ],
+     "keywords_all": [
+      "melanoma"
+     ],
+     "key_text": "Malignant melanoma",
+     "source_key": "เฉลย: Malignant melanoma",
+     "image": "img/HEMA-43-OSPE-004.jpg",
+     "image_caption": "Histology เท้า"
+    },
+    {
+     "id": "4.2",
+     "prompt": "Cell origin",
+     "format": "short",
+     "accepted": [
+      "melanocyte"
+     ],
+     "keywords_all": [
+      "melanocyte"
+     ],
+     "key_text": "Melanocyte",
+     "source_key": "เฉลย: Melanocyte"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE43",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "OSPE43-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [
+    "histology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "HEMA-43-OSPE-005",
+   "block": "HEMA",
+   "cohort": 43,
+   "n": 5,
+   "type": "OSPE",
+   "station": 5,
+   "stem": "สถานี 5: ภาพ histology",
+   "items": [
+    {
+     "id": "5.1",
+     "prompt": "วินิจฉัย",
+     "format": "short",
+     "accepted": [
+      "follicular lymphoma"
+     ],
+     "keywords_all": [
+      "follicular"
+     ],
+     "key_text": "Follicular lymphoma",
+     "source_key": "เฉลย: Follicular lymphoma",
+     "image": "img/HEMA-43-OSPE-005.jpg",
+     "image_caption": "Histology สถานี 5"
+    },
+    {
+     "id": "5.2",
+     "prompt": "Gene ที่เกี่ยวข้อง",
+     "format": "short",
+     "accepted": [
+      "bcl2",
+      "t(14;18)"
+     ],
+     "keywords_all": [
+      "bcl2"
+     ],
+     "key_text": "BCL2 จาก t(14;18)",
+     "source_key": "เฉลย: BCL2 จาก t(14;18)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE43",
+     "pages": [
+      3
+     ]
+    },
+    {
+     "paper": "OSPE43-KEY",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [
+    "histology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "HEMA-43-OSPE-006",
+   "block": "HEMA",
+   "cohort": 43,
+   "n": 6,
+   "type": "OSPE",
+   "station": 6,
+   "stem": "สถานี 6: ภาพ histology CD20 positive",
+   "items": [
+    {
+     "id": "6.1",
+     "prompt": "เซลล์ต้นกำเนิดของพยาธิสภาพ",
+     "format": "short",
+     "accepted": [
+      "b lymphocyte",
+      "b cell"
+     ],
+     "keywords_all": [
+      "b"
+     ],
+     "key_text": "Mature B lymphocyte",
+     "source_key": "เฉลย: Mature B lymphocyte",
+     "image": "img/HEMA-43-OSPE-006.jpg",
+     "image_caption": "Histology CD20+"
+    },
+    {
+     "id": "6.2",
+     "prompt": "เชื้อที่สัมพันธ์",
+     "format": "short",
+     "accepted": [
+      "ebv",
+      "epstein"
+     ],
+     "keywords_all": [
+      "ebv"
+     ],
+     "key_text": "Epstein-Barr virus (EBV)",
+     "source_key": "เฉลย: Epstein-Barr virus (EBV)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE43",
+     "pages": [
+      3
+     ]
+    },
+    {
+     "paper": "OSPE43-KEY",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [
+    "histology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "HEMA-43-OSPE-007",
+   "block": "HEMA",
+   "cohort": 43,
+   "n": 7,
+   "type": "OSPE",
+   "station": 7,
+   "stem": "สถานี 7: ภาพ histology",
+   "items": [
+    {
+     "id": "7.1",
+     "prompt": "เซลล์จำเพาะกับโรค",
+     "format": "short",
+     "accepted": [
+      "reed",
+      "sternberg"
+     ],
+     "keywords_all": [
+      "reed"
+     ],
+     "key_text": "Reed-Sternberg cell",
+     "source_key": "เฉลย: Reed-Sternberg cell",
+     "image": "img/HEMA-43-OSPE-007.jpg",
+     "image_caption": "Histology สถานี 7"
+    },
+    {
+     "id": "7.2",
+     "prompt": "ต้นกำเนิดของโรค",
+     "format": "short",
+     "accepted": [
+      "b cell"
+     ],
+     "keywords_all": [
+      "b"
+     ],
+     "key_text": "Mature B cell (Hodgkin lymphoma)",
+     "source_key": "เฉลย: Mature B cell (Hodgkin lymphoma)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE43",
+     "pages": [
+      3
+     ]
+    },
+    {
+     "paper": "OSPE43-KEY",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [
+    "histology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "HEMA-43-OSPE-008",
+   "block": "HEMA",
+   "cohort": 43,
+   "n": 8,
+   "type": "OSPE",
+   "station": 8,
+   "stem": "สถานี 8: เด็กชาย 7 เดือน เหลือง หอบเหนื่อย 2 สัปดาห์ tachycardia splenomegaly",
+   "items": [
+    {
+     "id": "8.1",
+     "prompt": "ผล smear",
+     "format": "short",
+     "accepted": [
+      "hypochromic",
+      "microcytic",
+      "poikilocytosis"
+     ],
+     "keywords_all": [
+      "hypochromic"
+     ],
+     "key_text": "RBC hypochromic microcytic, poikilocytosis, anisocytosis · WBC normal · Platelet adequate",
+     "source_key": "เฉลย: RBC hypochromic microcytic, poikilocytosis, anisocytosis · WBC normal · Platelet adequate",
+     "image": "img/HEMA-43-OSPE-008.jpg",
+     "image_caption": "Blood smear สถานี 8"
+    },
+    {
+     "id": "8.2",
+     "prompt": "วินิจฉัย",
+     "format": "short",
+     "accepted": [
+      "thalassemia"
+     ],
+     "keywords_all": [
+      "thalassemia"
+     ],
+     "key_text": "Thalassemia (extravascular hemolysis)",
+     "source_key": "เฉลย: Thalassemia (extravascular hemolysis)"
+    },
+    {
+     "id": "8.3",
+     "prompt": "ตรวจเพิ่ม",
+     "format": "short",
+     "accepted": [
+      "hb typing"
+     ],
+     "keywords_all": [
+      "hb typing"
+     ],
+     "key_text": "Hb typing",
+     "source_key": "เฉลย: Hb typing"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE43",
+     "pages": [
+      4
+     ]
+    },
+    {
+     "paper": "OSPE43-KEY",
+     "pages": [
+      4
+     ]
+    }
+   ],
+   "tags": [
+    "smear"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "HEMA-43-OSPE-009",
+   "block": "HEMA",
+   "cohort": 43,
+   "n": 9,
+   "type": "OSPE",
+   "station": 9,
+   "stem": "สถานี 9: เด็กหญิง 5 ขวบ เลือดกำเดาออก รอยช้ำ หลังสุกใส",
+   "items": [
+    {
+     "id": "9.1",
+     "prompt": "ผล smear",
+     "format": "short",
+     "accepted": [
+      "normochromic",
+      "giant platelet"
+     ],
+     "keywords_all": [
+      "giant"
+     ],
+     "key_text": "RBC normochromic normocytic · WBC normal · Platelet ลดลง พบ giant platelet",
+     "source_key": "เฉลย: RBC normochromic normocytic · WBC normal · Platelet ลดลง พบ giant platelet",
+     "image": "img/HEMA-43-OSPE-009.jpg",
+     "image_caption": "Blood smear สถานี 9"
+    },
+    {
+     "id": "9.2",
+     "prompt": "วินิจฉัย",
+     "format": "short",
+     "accepted": [
+      "itp",
+      "immune thrombocytopenia"
+     ],
+     "keywords_all": [
+      "itp"
+     ],
+     "key_text": "Immune thrombocytopenia (ITP)",
+     "source_key": "เฉลย: Immune thrombocytopenia (ITP)"
+    },
+    {
+     "id": "9.3",
+     "prompt": "ตรวจเพิ่มและผล",
+     "format": "short",
+     "accepted": [
+      "bone marrow",
+      "megakaryocyte"
+     ],
+     "keywords_all": [
+      "megakaryocyte"
+     ],
+     "key_text": "Bone marrow examination: megakaryocyte เพิ่มขึ้น",
+     "source_key": "เฉลย: Bone marrow examination: megakaryocyte เพิ่มขึ้น"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE43",
+     "pages": [
+      4
+     ]
+    },
+    {
+     "paper": "OSPE43-KEY",
+     "pages": [
+      4
+     ]
+    }
+   ],
+   "tags": [
+    "smear"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "HEMA-43-OSPE-010",
+   "block": "HEMA",
+   "cohort": 43,
+   "n": 10,
+   "type": "OSPE",
+   "station": 10,
+   "stem": "สถานี 10: เด็กชาย 6 ปี ซีดเรื้อรัง ปากนกกระจอก koilonychia",
+   "items": [
+    {
+     "id": "10.1",
+     "prompt": "ผล smear",
+     "format": "short",
+     "accepted": [
+      "hypochromic",
+      "microcytic"
+     ],
+     "keywords_all": [
+      "hypochromic"
+     ],
+     "key_text": "RBC hypochromic microcytic, poikilocytosis, anisocytosis · WBC normal · Platelet adequate/เพิ่ม",
+     "source_key": "เฉลย: RBC hypochromic microcytic, poikilocytosis, anisocytosis · WBC normal · Platelet adequate/เพิ่ม",
+     "image": "img/HEMA-43-OSPE-010.jpg",
+     "image_caption": "Blood smear สถานี 10"
+    },
+    {
+     "id": "10.2",
+     "prompt": "วินิจฉัย",
+     "format": "short",
+     "accepted": [
+      "iron deficiency"
+     ],
+     "keywords_all": [
+      "iron deficiency"
+     ],
+     "key_text": "Iron deficiency anemia",
+     "source_key": "เฉลย: Iron deficiency anemia"
+    },
+    {
+     "id": "10.3",
+     "prompt": "ตรวจเพิ่ม 2 อย่าง + ผล",
+     "format": "short",
+     "accepted": [
+      "serum iron",
+      "ferritin",
+      "tibc"
+     ],
+     "keywords_all": [
+      "ferritin"
+     ],
+     "key_text": "Iron study: ↓ serum iron, ↓ serum ferritin, ↑ TIBC",
+     "source_key": "เฉลย: Iron study: ↓ serum iron, ↓ serum ferritin, ↑ TIBC"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE43",
+     "pages": [
+      5
+     ]
+    },
+    {
+     "paper": "OSPE43-KEY",
+     "pages": [
+      5
+     ]
+    }
+   ],
+   "tags": [
+    "smear"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "HEMA-43-OSPE-011",
+   "block": "HEMA",
+   "cohort": 43,
+   "n": 11,
+   "type": "OSPE",
+   "station": 11,
+   "stem": "สถานี 11: หญิง 20 ปี ไข้ 3 วัน petechiae ไม่ซีด ไม่เหลือง",
+   "items": [
+    {
+     "id": "11.1",
+     "prompt": "ผล smear",
+     "format": "short",
+     "accepted": [
+      "atypical lymphocyte",
+      "normochromic"
+     ],
+     "keywords_all": [
+      "atypical"
+     ],
+     "key_text": "RBC normochromic normocytic · WBC normal/ลดลง พบ atypical lymphocyte · Platelet ลดลง",
+     "source_key": "เฉลย: RBC normochromic normocytic · WBC normal/ลดลง พบ atypical lymphocyte · Platelet ลดลง",
+     "image": "img/HEMA-43-OSPE-011.jpg",
+     "image_caption": "Blood smear สถานี 11"
+    },
+    {
+     "id": "11.2",
+     "prompt": "วินิจฉัย",
+     "format": "short",
+     "accepted": [
+      "dengue"
+     ],
+     "keywords_all": [
+      "dengue"
+     ],
+     "key_text": "Dengue hemorrhagic fever",
+     "source_key": "เฉลย: Dengue hemorrhagic fever"
+    },
+    {
+     "id": "11.3",
+     "prompt": "ตรวจเพิ่มและผล",
+     "format": "short",
+     "accepted": [
+      "ns1"
+     ],
+     "keywords_all": [
+      "ns1"
+     ],
+     "key_text": "NS1 Ag positive",
+     "source_key": "เฉลย: NS1 Ag positive"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE43",
+     "pages": [
+      5
+     ]
+    },
+    {
+     "paper": "OSPE43-KEY",
+     "pages": [
+      5
+     ]
+    }
+   ],
+   "tags": [
+    "smear"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "HEMA-43-OSPE-012",
+   "block": "HEMA",
+   "cohort": 43,
+   "n": 12,
+   "type": "OSPE",
+   "station": 12,
+   "stem": "สถานี 12: อ่านสเมียร์เลือด",
+   "items": [
+    {
+     "id": "12.1",
+     "prompt": "ผล smear",
+     "format": "short",
+     "accepted": [
+      "myeloblast",
+      "myelocyte",
+      "band"
+     ],
+     "keywords_all": [
+      "myelocyte"
+     ],
+     "key_text": "RBC hypochromic microcytic (ตามเฉลย) · WBC เพิ่มขึ้น พบ myeloblast, promyelocyte, myelocyte, metamyelocyte, band · Platelet normal/เพิ่ม",
+     "source_key": "เฉลย: RBC hypochromic microcytic (ตามเฉลย) · WBC เพิ่มขึ้น พบ myeloblast, promyelocyte, myelocyte, metamyelocyte, band · Platelet normal/เพิ่ม",
+     "image": "img/HEMA-43-OSPE-012.jpg",
+     "image_caption": "Blood smear สถานี 12"
+    },
+    {
+     "id": "12.2",
+     "prompt": "วินิจฉัย",
+     "format": "short",
+     "accepted": [
+      "chronic myeloid leukemia",
+      "cml"
+     ],
+     "keywords_all": [
+      "cml"
+     ],
+     "key_text": "Chronic myeloid leukemia (CML)",
+     "source_key": "เฉลย: Chronic myeloid leukemia (CML)"
+    },
+    {
+     "id": "12.3",
+     "prompt": "ตรวจเพิ่มและผล",
+     "format": "short",
+     "accepted": [
+      "philadelphia",
+      "bcr-abl"
+     ],
+     "keywords_all": [
+      "bcr-abl"
+     ],
+     "key_text": "Chromosome study: Philadelphia chromosome t(9;22) positive · RT-PCR BCR-ABL gene positive",
+     "source_key": "เฉลย: Chromosome study: Philadelphia chromosome t(9;22) positive · RT-PCR BCR-ABL gene positive"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE43",
+     "pages": [
+      6
+     ]
+    },
+    {
+     "paper": "OSPE43-KEY",
+     "pages": [
+      6
+     ]
+    }
+   ],
+   "tags": [
+    "smear"
+   ],
+   "source": "claude-mcp"
+  }
+ ]
+}

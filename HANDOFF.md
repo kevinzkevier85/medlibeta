@@ -7,28 +7,29 @@
 - ✅ CM1 MCQ 48 (22/29 ข้อ · เฉลยลายมือ: X น้ำเงินที่ตัวอักษร หรือวงกลม/กรอบแดง = เฉลย · ข้อ 22–24 อ่านยาก ควรตรวจ · ข้อ 12 มี 2 คำตอบ · ข้อ 13–19 ข้าม) · ✅ CM2 KF 47 (ส่วน 1–2; ส่วน 3 sampling ไม่ใส่)
 - ✅ MP1 (Medical Profession) KF 52 (10 ข้อ) + KF 50 (11 ข้อ; ไฟล์ข้อสอบเป็นวิชา Med Profession II) · เฉลยลายมือ/สไลด์ · **draft**: KF 52 ข้อ 1–4, KF 50 ข้อ 1–4, 10, 11 (ไฟล์ไม่มีเฉลย AI เขียน) · ข้อ KF 52 10.3 และ KF 50 6.1/6.3 ลายมืออ่านยาก ควรตรวจ · KF 42 ทำแล้ว (ข้อ 5 เยี่ยมบ้านเฉลยว่าง = draft) · KF 39: ข้อสอบ 4 หน้า ไม่ตรงกับไฟล์เฉลย (คนละเทอม) จึงข้าม · KF 46: ไม่มีเฉลย
 - 🔄 NERV (Nervous System ปี 3, `data/blocks/NERV`, inventory `nerv_<รุ่น>_<MCQ|KF|OSPE>` ลงทะเบียน 21 ชุด): **MCQ ครบทุกชุดแล้ว** 52 (77) · 51 (62) · 50 (70) · 49 (59) · 47 (126 **AI draft ทั้งชุด** เพราะเฉลยลายมือ 4-up อ่านไม่ได้) · 46 (56) · 45 (20) · **ตรวจ**: 52 ข้อ 38/54 · 51 ข้อ 12, 65 (AI เห็นต่าง) · 50 ข้อ 13, 19, 63, 64 · 49 ข้อ 51 · 46 ข้อ 41, 46, 50 · 47 ข้อ 30, 42, 49, 76 · **KF ✅ 45–52 · OSPE ✅ 52 (24) 51 (25) 50 (24) 48 (10) 47 (61 สถานี เฉลยลายมือ ภาพครอปจาก slide) 46 (15) 42-43 (29)** · ข้อ 19 OSPE 52 ไฟล์เฉลยเรียงตรงข้ามภาพ ใช้ตามภาพ · KF 47 ข้อ 7.2 ลายมืออ่านยาก · ชุดอื่นของ Drive `preclinic/3` ยังไม่ทำ (hematopoietic, higher-brain, human-lifecycle, musculoskeletal, medprof-2)
+- ⚠️ **CVS ไม่ครบ (ผู้ใช้สั่งเช็กทั้งบล็อก 2026-11-13)**: บล็อก CVS มีแค่รุ่น 49–52 (import เก่า) · MCQ 50 มี 36/100 · 51 มี 39/100 · 49 ขาด 38-39 · 52 ขาด 6 · KF 50 มี 4/8 · KF 49 ขาด ข้อ 6 · OSPE 50 ขาด ข้อ 2 · Drive ยังมีที่ไม่ได้ทำ: MCQ 40,42,44,45,46,47,48 · KF 40,41&43,44–48 · OSPE 41-43,44,46,48 → ต้องทำ CVS ใหม่ผ่าน auditor (inventory `cvs_*`)
+- 🔄 HEMA (`data/blocks/HEMA`, v0.53.0): MCQ 42–47,49–51 ✅ · KF 42-43,45–51 ✅ (46–49,51 AI draft) · OSPE 43,45–47,49–51 ✅ (46,49–51 AI draft) · ค้าง: MCQ 48 (ไม่มีไฟล์ข้อสอบใน Drive) + ข้อ MCQ ที่ยังข้าม ~120 ข้อ = ต้นฉบับไม่มีตัวเลือก/เป็น "-" (กู้ที่ parse พลาดแล้ว 14 ข้อ ใน 43, 51) · ถัดไป: บล็อก Drive ที่เหลือ (higher-brain, human-lifecycle, musculoskeletal, medprof-2, preclinic/1)
+- ✅ HB (Higher Brain, `data/blocks/HB`, v0.55.0, PR #95): MCQ 46–52 · KF 47–52 (47,48,51,52 AI draft) · OSPE 46,49,50,51 ✅ · OSPE 52 AI draft จากรูป (ข้อ 11–12 เดา) · OSPE 47 = ไฟล์เดียวกับ NERV 47 ไม่นำเข้าซ้ำ
+- ✅ HLC (Human Lifecycle, `data/blocks/HLC`, v0.56.0, branch finn-hlc-build): MCQ 42–47,50,51 · KF 43–47,50,51 (AI draft: MCQ 43,47,51 / KF 46,47,51) · ข้ามข้อ "-" ในต้นฉบับ · ถัดไป: medprof-2, integumentary, integrated, clinical-priming, preclinic/1
+- ✅ MSK (Musculoskeletal, `data/blocks/MSK`, v0.57.0, branch finn-msk-build): MCQ 49–52 · KF 50–52 · OSPE 49–52 (MCQ 52 ข้อ 12 AI draft) · ถัดไป: medprof-2, integumentary, integrated, clinical-priming, preclinic/1
 - ⛔ ยังไม่ทำ (ต้องดูแลพิเศษ): **CM1 KF 49 / MCQ 49** (Drive มีแต่ไฟล์เฉลย ไม่มีไฟล์ข้อสอบ) · **CM2 KF 40** (สแกนเป็นภาพทั้งไฟล์ข้อสอบ 4 หน้า + เฉลยลายมือ ต้องอ่านจากภาพ) · **HS MCQ 52** (25 ข้อ แทบว่าง มีโจทย์ 6 ข้อไม่มีไฮไลต์ → ไม่ลงทะเบียน) · **medprof-1 KF 39, 42, 46** (50, 52 ทำแล้ว ดูบรรทัดถัดไป; 42/39/46 ยังไม่ทำ) (ตรวจแล้ว: ข้อสอบเป็นเรียงความ/จริยธรรม/ตรวจร่างกาย เฉลย=ลายมือที่ text layer เป็นขยะ ต้องอ่านจากภาพทุกหน้า · 46 มีแต่ไฟล์ข้อสอบ 1 หน้า ไม่มีเฉลย · 39 ใช้เฉลยรวม 39,42 · ชุด 52: Ottawa Charter ข้อ 5, vital sign/ตรวจ respiratory ข้อ 6–7, HT/valve ข้อ 8, ปวดท้อง HCC ข้อ 9, ใส่สายสวน/ตรวจภายใน ข้อ 10)
 - ผู้ตรวจควรดู: เฉลยที่ไฟล์วง 2 ตัว (CM2 52 ข้อ 14, 18 · CM2 48 ข้อ 9 · CD 52 ข้อ 34 — ใส่ also_accept ใน decisions.json) · CM1 52 ข้อ 28 (secondary vs tertiary), ข้อ 37 (Bismarck vs managed competition), ข้อ 50 (primordial vs primary) · CD 52 ข้อ 16 · CM2 48 ข้อ 12 (วัด)
 - เครื่องมือที่แก้: `parse_key.py` เพิ่มสีไฮไลต์ cyan · `parse_mcq.py`/`parse_key.py` รองรับตัวเลือก ก ข ค ง จ และปก "1. ข้อสอบมีทั้งหมด…" ที่เป็นไทยล้วน — **ห้าม re-parse ชุดเก่า** (จะเขียนทับ parsed.json ที่แก้มือ เช่น imm_47 ลบลายน้ำแล้ว)
-
 ## 0. บล็อก Biomed (BIO, Pharmacology) — ทำแล้ว (Drive `preclinic/2/biomed`)
 - block id `BIO` · inventory `bio_<รุ่น>_<MCQ|KF>` 10 ชุด · ชุดรวม 46-48 ใช้ `medlib_cohort: 48`
 - MCQ ✅ 52 (44 ข้อ) · 51 (20) · 49 (9) · 46-48 (40) · 50 (51 ข้อ ไม่มีเฉลย AI draft) — ข้อสอบรุ่น 49–51 เป็น "ข้อสอบจำ" ข้อที่ไม่มีตัวเลือก/เฉลยข้าม · ข้อที่ตัวเลือกไม่ครบ AI เติมครบ 5 (`ai_choices`)
 - KF ✅ 52 (19) · 51 (8) · 49 (13) · 46-48 (20 · MED 46 ข้อ 22–28, 47 ข้อ 22–28, 48 ข้อ 21–26) · 50 (22 ไม่มีเฉลย AI draft)
 - ผู้ตรวจควรดู: MCQ 52 ข้อ 43 (ไฟล์เฉลย alprostadil vs AI ibuprofen), ข้อ 10, 51; MCQ 49 ข้อ 20 vs MCQ 51 ข้อ 64 (เฉลยต่างกัน); KF 46-48 ข้อ 8 (sweat gland), ข้อ 13 (bradycardia β1 vs M2)
 - Drive ที่ยังไม่ทำ: `preclinic/3` (hematopoietic, higher-brain, human-lifecycle, musculoskeletal, nervous KF/OSPE, medprof-2 …) · `preclinic/1` (genome, intromed, physics, neoplasia, microbe-parasite …) · รายชื่อไฟล์: `drive_walk_api.py --path preclinic/3 --depth 6`
-
 ## 0.1 บล็อก Immunity (IMM) — ครบทั้งบล็อกแล้ว, merge แล้ว (PR #78–#81, Drive `preclinic/2/immunity`)
 - block id `IMM` · inventory `imm_<รุ่น>_<MCQ|KF|OSPE>` 25 ชุด · ชุดรวม (41-43, 40-43) ใช้ `medlib_cohort: 43`
 - MCQ ✅ 41-43, 44–52 · MCQ 48 = AI ตอบเอง 112/123 ข้อ draft (ข้าม 14, 32, 37, 48, 65, 73, 80, 85, 86, 87, 115 ที่โจทย์/ภาพไม่ชัด; ข้อ 25/39/96 ไม่มั่นใจ) · ⛔ MCQ 40 ข้ามทั้งชุด (โน้ตจำ ไม่มีตัวเลือก)
 - KF ✅ 9 ชุด (47 AI draft; 40-43, 48–49 บางข้อ draft) · OSPE ✅ 5 ชุด (40-43 และ 47 draft; 40-43 ไม่มีรูป)
 - ข้อ MCQ ที่ต้นฉบับขัดกับ AI คงตามต้นฉบับ + ความเห็น AI ใน option_why (ค้น "AI เห็นว่า")
-
 ## 1. บล็อก Respiratory (RESP) — ครบทุกชุดแล้ว (Drive `preclinic/2/respiratory`)
 - (merge แล้ว PR #80) block id `RESP` · inventory `resp_<รุ่น>_<MCQ|KF|OSPE>` · `data/blocks/RESP/`
 - MCQ ✅ 11 ชุด (40 = AI เขียนจากโพย) · KF ✅ 11 ชุด · OSPE ✅ 10 ชุด (51 รวม 51-1/51-2 เป็น 17 สถานี · 40-43 ภาพบางสถานีตัดออก) · ข้อที่ไฟล์ไม่มีเฉลยหรือเฉลยลายมืออ่านไม่ออก AI เติมให้ ติดป้าย `draft` (KF 44–51, OSPE 40-43/44 ฯลฯ) ผู้ตรวจควรยืนยัน
 - MCQ รุ่นเก่าเป็น "ข้อสอบจำ" ข้อที่ไม่มีช้อยส์/ซ้ำ ข้าม · เฉลยต้นฉบับใช้วงกลม/ขีดเฉียง/ไฮไลต์หลายแบบ (parse_key.py รองรับแล้ว ข้อที่อ่านไม่ได้ต้องดู `auditor/raw/<ชุด>/key_pNNN.png` เอง)
-
 ## 2. บล็อก KUB and Repro — merge แล้ว (PR #38)
 - branch **`finn-urinary-block`** · PR #38 · รวม main แล้ว (v0.32.0) · block id `KUB` (inventory `kub_<รุ่น>_<MCQ|KF|OSPE>`, 27 ชุด) · `data/blocks/KUB/`
 - สถานะ: MCQ ครบ 10 ชุดแบบปี 52 (42-43/45–48 AI ร่างเฉลย) · KF ครบ 10 ชุด · OSPE ครบ 7 ชุด 124 สถานี (42-43, 44, 46 ไม่มีเฉลย AI ร่าง) — ผู้ตรวจควรยืนยัน draft
@@ -41,8 +42,7 @@
 - ตอบภาษาไทย สั้น ภาษาคน · ถ้าจะถาม ให้ถามเป็นช้อยส์ให้ติ๊ก
 - "ทำไปเรื่อย ๆ ไม่ต้องถาม" · "ประหยัดโทเค็นที่สุด" = ประหยัดที่ **วิธีทำ** เท่านั้น **ผลลัพธ์ต้องคุณภาพเท่าบล็อก GI** (ผู้ใช้ย้ำ 2026-11-08): ห้ามข้ามข้อที่จำโจทย์มาไม่ครบ → AI เขียนโจทย์เต็ม (ai_generated) · ช้อยส์ไม่ครบ → เติมให้ครบ 5 (ai_choices) · ข้อมีรูป → ตัดรูปใส่ · explanation เต็ม (เหตุผล + Trap) · ข้ามได้เฉพาะข้อที่ต้นฉบับว่างเปล่าจริง (ขีด –)
 - มี GitHub issue ใหม่ (เช่น "[เฉลย] END-47-MCQ-006 ควรเป็น E" จากปุ่มแจ้งเฉลยในเว็บ) → แก้เองได้เลย แล้วเปิด PR ใส่ `Closes #เลข`
-- **ผู้ใช้สั่ง 2026-11-13: "ทำต่อเองเลย อย่าถามอีก รันยาว ๆ"** → ทำบล็อกถัดไปต่อเอง ไม่ต้องถามก่อนเริ่มบล็อกใหม่ (ลำดับ: preclinic/3 nervous → hematopoietic → higher-brain → human-lifecycle → musculoskeletal แล้ว preclinic/1)
-
+- **ผู้ใช้สั่ง 2026-11-13: "ทำต่อเองเลย อย่าถามอีก รันยาว ๆ"** → ทำบล็อกถัดไปต่อเอง ไม่ต้องถามก่อนเริ่มบล็อกใหม่ (ลำดับ: preclinic/3 nervous → hematopoietic → higher-brain → human-lifecycle → musculoskeletal แล้ว preclinic/1) · **2026-11-15 ผู้ใช้สั่งเพิ่ม: ข้อ/ชุดที่ข้ามไว้หรือยังไม่ทำ (เช่น CVS OSPE 49/50 ข้อ 2, MCQ 40, OSPE 41-43 ข้อ 7-8, OSPE 48 ข้อ 7/17, HEMA ที่ไม่มีเฉลย, ⛔ CM1/MP1/HS ที่ค้าง) ต้องกลับมาทำให้หมดทุกอัน อย่าทิ้ง**
 ## 3. สถานะข้อมูล
 | บล็อก | MCQ | KF | OSPE |
 |---|---|---|---|
@@ -53,7 +53,6 @@
 | IMM | 11 ชุด (40 ข้าม · 48 draft) | 9 ชุด | 5 ชุด |
 | CVS | MCQ 42,44–51 · KF 40,44–48 · OSPE 41-43,44,46,48 ผ่าน auditor (v0.51.0; MCQ 48, KF 45–48 = AI draft) · MCQ 40, 52 ยังไม่ทำ · KF/OSPE 49–52 import เก่า | – | – |
 - ข้อที่เฉลยต้นฉบับ ≠ AI: มี `ai_answer` ในข้อ + ปุ่ม "เชื่อต้นฉบับ/เชื่อ AI" · ก่อนกดใช้เฉลยรุ่นอื่นส่วนใหญ่ (`same_side`)
-
 ## 4. วิธีทำงานกับข้อมูล (สำคัญ)
 - **ห้ามแก้** `data/blocks/*/exams/*.json` ที่มี `generated_by` ด้วยมือ → แก้ต้นทางใน `auditor/` แล้ว build ใหม่
   - เปลี่ยนเฉลย MCQ: เพิ่มใน `auditor/data/decisions.json` `{"<set>_<NNN>": {"answer":"E","note":"…"}}` → `python3 auditor/tools/build_work.py --set <set>` → `python3 auditor/tools/build_outputs.py --block <end|gi>`
