@@ -234,19 +234,19 @@
     "E": "Cortex of lymph node"
    },
    "correct": "D",
-   "explanation": "Plasma cell (myeloma) มาจาก bone marrow (B cell lineage) (AI draft)",
+   "explanation": "Plasma cell ของ multiple myeloma เจริญจาก B cell ที่ไขกระดูก",
    "image": null,
    "issues": [
     "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
    ],
    "option_why": {
-    "A": "Liver",
-    "B": "Spleen",
-    "C": "Thymus",
-    "D": "✓ Bone marrow",
-    "E": "Cortex lymph node"
+    "A": "ตับไม่ใช่แหล่งกำเนิด plasma cell",
+    "B": "ม้ามเป็น peripheral lymphoid organ ที่พบ plasma cell ได้บ้าง แต่ไม่ใช่ต้นกำเนิดของเซลล์มะเร็ง",
+    "C": "thymus เป็นที่พัฒนา T cell ไม่ใช่ plasma cell",
+    "D": "✓ myeloma เกิดจาก plasma cell ที่ฝังตัวและเพิ่มจำนวนในไขกระดูก",
+    "E": "lymph node cortex เป็นที่ B cell ถูกกระตุ้น แต่เซลล์ myeloma ย้ายกลับไขกระดูก"
    },
-   "key_concept": "• Myeloma: clonal plasma cell ใน BM\n• Plasma cell มาจาก B cell",
+   "key_concept": "• myeloma: CRAB (Ca↑, renal, anemia, bone lesion)\n• M-protein, Bence Jones, rouleaux",
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 51].pdf",
     "page": 1,
@@ -285,19 +285,28 @@
     "E": "Howell-Jolly bodies"
    },
    "correct": "B",
-   "explanation": "หลังให้ EPO: reticulocyte ↑ → polychromasia (AI draft)",
+   "explanation": "EPO กระตุ้นไขกระดูก reticulocyte เพิ่ม เห็น polychromasia ใน smear",
    "image": null,
    "issues": [
     "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
    ],
    "option_why": {
-    "A": "Heinz body = oxidant",
-    "B": "✓ Polychromasia (retic ↑)",
-    "C": "Macro-ovalocyte = B12/folate",
-    "D": "Stippling = lead/thal",
-    "E": "HJ = asplenia"
+    "A": "Heinz body พบใน G6PD/unstable Hb",
+    "B": "✓ EPO เร่งปล่อยเรติคิวโลไซต์ ย้อมเป็น polychromasia",
+    "C": "macro-ovalocyte พบใน megaloblastic anemia",
+    "D": "basophilic stippling พบใน lead/thalassemia",
+    "E": "Howell–Jolly body พบเมื่อ asplenia"
    },
-   "key_concept": "• EPO → erythropoiesis ↑ → retic ↑\n• สรุป: หลังให้ EPO: reticulocyte ↑ → polychromasia (AI draft)",
+   "key_concept": "• EPO ใช้ในโลหิตจางจาก CKD\n• ผลตรวจ: reticulocyte ↑, polychromasia",
+   "mechanism": [
+    "EPO จับ receptor ที่ erythroid precursor",
+    "เพิ่มการผลิต RBC และปล่อย reticulocyte เร็ว",
+    {
+     "s": "smear พบ polychromasia",
+     "answer": true
+    },
+    "Hb ค่อย ๆ เพิ่ม"
+   ],
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 51].pdf",
     "page": 1,
@@ -336,19 +345,19 @@
     "E": "No further investigation"
    },
    "correct": "E",
-   "explanation": "ทารก 1 วัน CBC ปกติ (MCV 102 lymph เด่น) → ไม่ต้องตรวจเพิ่ม (AI draft)",
+   "explanation": "ทารกวันแรก MCV 102, Hb 16 เป็นค่าปกติของแรกเกิด ไม่ต้องตรวจเพิ่ม",
    "image": null,
    "issues": [
     "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
    ],
    "option_why": {
-    "A": "Hemoculture ไม่จำเป็น",
-    "B": "B12 ไม่",
-    "C": "NS1 ไม่",
-    "D": "Heterophile ไม่",
-    "E": "✓ ไม่ต้องตรวจเพิ่ม (ค่าปกติแรกเกิด)"
+    "A": "ไม่มีไข้หรือสัญญาณติดเชื้อ จึงไม่ต้องเพาะเชื้อ",
+    "B": "MCV สูงในทารกแรกเกิดเป็นปกติ ไม่ใช่ขาด B12",
+    "C": "NS1 ใช้ตรวจ dengue ไม่เกี่ยว",
+    "D": "heterophile ใช้ตรวจ EBV ไม่เกี่ยว",
+    "E": "✓ ค่า CBC อยู่ในช่วงปกติของทารกแรกเกิด"
    },
-   "key_concept": "• แรกเกิด: MCV สูง, lymphocyte เด่น\n• สรุป: ทารก 1 วัน CBC ปกติ (MCV 102 lymph เด่น) → ไม่ต้องตรวจเพิ่ม (AI draft)",
+   "key_concept": "• แรกเกิด: Hb 14–20, MCV 95–120, lymphocyte เด่น\n• ค่าลดลงภายในสัปดาห์ถึงเดือน",
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 51].pdf",
     "page": 2,
@@ -473,19 +482,28 @@
     "E": "–"
    },
    "correct": "B",
-   "explanation": "รอยช้ำสีเขียว = biliverdin (AI draft)",
+   "explanation": "สีเขียวของรอยช้ำคือ biliverdin จาก heme ถูก heme oxygenase ย่อย",
    "image": null,
    "issues": [
     "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
    ],
    "option_why": {
-    "A": "Bilirubin = เหลือง",
-    "B": "✓ Biliverdin = เขียว",
-    "C": "Hemosiderin = น้ำตาล",
-    "D": "Hemoglobin = แดง",
-    "E": "—"
+    "A": "bilirubin เป็นสีเหลืองที่เกิดหลัง biliverdin",
+    "B": "✓ biliverdin เป็นสีเขียวในลำดับแรกของการย่อย heme",
+    "C": "hemosiderin เป็นสีน้ำตาลทอง",
+    "D": "hemoglobin เป็นสีแดงในช่วงแรก",
+    "E": "ตัวเลือกว่าง ไม่ใช่คำตอบ"
    },
-   "key_concept": "• Bruise: แดง→เขียว (biliverdin)→เหลือง (bilirubin)\n• สรุป: รอยช้ำสีเขียว = biliverdin (AI draft)",
+   "key_concept": "• รอยช้ำ: แดง → ม่วง/น้ำเงิน → เขียว (biliverdin) → เหลือง (bilirubin) → น้ำตาล (hemosiderin)\n• heme → biliverdin → bilirubin ด้วย heme oxygenase และ biliverdin reductase",
+   "mechanism": [
+    "เลือดออกใต้ผิว",
+    "heme oxygenase เปลี่ยน heme",
+    {
+     "s": "เกิด biliverdin สีเขียว",
+     "answer": true
+    },
+    "เปลี่ยนเป็น bilirubin สีเหลือง"
+   ],
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 51].pdf",
     "page": 2,
@@ -653,19 +671,28 @@
     "E": "–"
    },
    "correct": "C",
-   "explanation": "Rapoport–Luebering shunt: DPGM ↑ → 2,3-BPG ↑ (AI draft)",
+   "explanation": "Rapoport–Luebering shunt เพิ่มการสร้าง 2,3-BPG จาก 1,3-BPG ผ่าน bisphosphoglycerate mutase",
    "image": null,
    "issues": [
     "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
    ],
    "option_why": {
-    "A": "Methemoglobin reductase ไม่เกี่ยว",
-    "B": "1,3-BPG ใช้เป็น substrate",
-    "C": "✓ เพิ่มการทำงานของ 2,3-BPG shunt",
-    "D": "ลด DPGM ผิด",
-    "E": "—"
+    "A": "methemoglobin reductase ไม่เกี่ยวกับ shunt นี้",
+    "B": "1,3-BPG เป็นสารตั้งต้น ไม่ใช่ผลลัพธ์ที่เพิ่มการสังเคราะห์",
+    "C": "✓ shunt เพิ่มกิจกรรม/ผลิต 2,3-BPG ใน RBC",
+    "D": "ตัวเลือกไม่สมบูรณ์ ไม่ใช่คำตอบ",
+    "E": "ตัวเลือกว่าง ไม่ใช่คำตอบ"
    },
-   "key_concept": "• 1,3-BPG → 2,3-BPG (DPGM)\n• ลดการสร้าง ATP แต่ปล่อย O₂ มาก",
+   "key_concept": "• 2,3-BPG ลด O2 affinity ของ Hb (right shift)\n• สูงใน hypoxia, altitude, anemia",
+   "mechanism": [
+    "glycolysis ได้ 1,3-BPG",
+    "bisphosphoglycerate mutase เปลี่ยนเป็น 2,3-BPG",
+    {
+     "s": "2,3-BPG จับ deoxy-Hb",
+     "answer": true
+    },
+    "O2 ปล่อยให้เนื้อเยื่อง่ายขึ้น"
+   ],
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 51].pdf",
     "page": 2,
@@ -1177,19 +1204,19 @@
     "E": "Change RBC shape"
    },
    "correct": "C",
-   "explanation": "Hb Tak: O₂ affinity เพิ่ม (AI draft)",
+   "explanation": "Hb Tak (elongated β) มี oxygen affinity สูง",
    "image": null,
    "issues": [
     "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
    ],
    "option_why": {
-    "A": "Crystal = HbC",
-    "B": "Unstable = Hb Koln ฯลฯ",
-    "C": "✓ Increased O₂ affinity",
-    "D": "Deposit ไม่ใช่",
-    "E": "Sickle = HbS"
+    "A": "crystal Hb พบใน Hb C/S",
+    "B": "unstable Hb พบใน Hb Köln",
+    "C": "✓ Hb Tak มี affinity ต่อ O2 สูง จึงปล่อย O2 ยาก",
+    "D": "deposit ที่เยื่อหุ้ม RBC พบใน HbE/ thalassemia",
+    "E": "รูปร่าง RBC เปลี่ยนใน sickle cell"
    },
-   "key_concept": "• Hb Tak: β-chain elongation, high affinity\n• Polycythemia",
+   "key_concept": "• high-affinity Hb: erythrocytosis\n• Hb Tak พบในคนไทย",
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 51].pdf",
     "page": 3,
@@ -1443,19 +1470,28 @@
     "E": "Ferrous sulfate"
    },
    "correct": "A",
-   "explanation": "macro-ovalocyte และ hypersegmented neutrophil คือ megaloblastic anemia ต้องให้ folic acid (MCV 120)",
+   "explanation": "Macro-ovalocyte + hypersegmented neutrophil = megaloblastic anemia ให้ folic acid",
    "image": null,
    "issues": [
     "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
    ],
    "option_why": {
-    "A": "✓ เติม folate ที่ขาด",
-    "B": "steroid ใช้ใน AIHA",
-    "C": "ESA ไม่ใช่สาเหตุ",
-    "D": "transfusion ใช้เมื่อฉุกเฉิน",
-    "E": "ferrous sulfate ใช้ใน IDA"
+    "A": "✓ megaloblastic จาก folate ขาด รักษาด้วย folic acid",
+    "B": "steroid ใช้ autoimmune hemolysis",
+    "C": "ESA ใช้ CKD/MDS",
+    "D": "transfusion ไม่จำเป็นถ้าไม่มีอาการรุนแรง",
+    "E": "iron ใช้ microcytic"
    },
-   "key_concept": "• Macro-ovalocyte + hypersegmentation → megaloblastic\n• รักษาด้วย folic acid/B12",
+   "key_concept": "• MCV >100 + hypersegmented → B12/folate ขาด\n• ตรวจ B12 ก่อนให้ folate เพื่อไม่ปิดบัง neurological",
+   "mechanism": [
+    "folate ขาด",
+    "DNA synthesis ช้า",
+    {
+     "s": "megaloblast + hypersegmented neutrophil",
+     "answer": true
+    },
+    "ให้ folic acid แก้"
+   ],
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 51].pdf",
     "page": 4,
@@ -1580,19 +1616,28 @@
     "E": "-"
    },
    "correct": "A",
-   "explanation": "Omeprazole ลด acid → ลดการดูดซึมเหล็ก (AI draft)",
+   "explanation": "Omeprazole ลดกรดในกระเพาะ ทำให้ดูดซึมเหล็กลดลง",
    "image": null,
    "issues": [
     "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
    ],
    "option_why": {
-    "A": "✓ PPI ลดการดูดซึม Fe",
-    "B": "Ciprofloxacin chelation ก็ได้",
-    "C": "Erythromycin ไม่",
-    "D": "Fluconazole ไม่",
-    "E": "—"
+    "A": "✓ PPI ลดกรด Fe3+ → Fe2+ ลดลง",
+    "B": "ciprofloxacin จับเหล็กได้แต่ไม่ลด iron response ตามเฉลย",
+    "C": "erythromycin ไม่ลดการดูดซึมเหล็ก",
+    "D": "fluconazole ไม่ลดการดูดซึมเหล็ก",
+    "E": "ตัวเลือกว่าง ไม่ใช่คำตอบ"
    },
-   "key_concept": "• Fe ต้อง acid\n• PPI, antacid ↓ absorption",
+   "key_concept": "• เหล็กดูดซึมที่ duodenum ต้องกรดเพื่อ reduce เป็น Fe2+\n• vit C ช่วย, ชา/แคลเซียม/PPI ลดการดูดซึม",
+   "mechanism": [
+    "PPI ลดกรดกระเพาะ",
+    "Fe3+ ไม่ถูกรีดิวซ์เป็น Fe2+",
+    {
+     "s": "การดูดซึมเหล็กลดลง",
+     "answer": true
+    },
+    "response ต่อยาเสริมเหล็กแย่ลง"
+   ],
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 51].pdf",
     "page": 4,
@@ -1846,19 +1891,28 @@
     "E": "Toxin induced endothelial injury"
    },
    "correct": "C",
-   "explanation": "Plt 12,000 + PT/aPTT ปกติ → ITP: autoantibody ต่อ GPIIb–IIIa (AI draft)",
+   "explanation": "ITP: autoantibody ต่อ GPIIb/IIIa ทำให้ platelet ถูกทำลายที่ม้าม",
    "image": null,
    "issues": [
     "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
    ],
    "option_why": {
-    "A": "Dysmegakaryopoiesis ไม่",
-    "B": "Maturation ไม่",
-    "C": "✓ Autoantibody GPIIb/IIIa",
-    "D": "ADAMTS13 = TTP",
-    "E": "Toxin = HUS"
+    "A": "dysmegakaryopoiesis พบใน MDS",
+    "B": "ภาวะ maturation ผิดปกติไม่ใช่กลไกหลัก",
+    "C": "✓ IgG ต่อ GPIIb/IIIa → macrophage ทำลาย platelet",
+    "D": "anti-ADAMTS13 คือ TTP (มี schistocyte)",
+    "E": "endothelial injury คือ HUS/TMA"
    },
-   "key_concept": "• ITP: isolated thrombocytopenia\n• สรุป: Plt 12,000 + PT/aPTT ปกติ → ITP: autoantibody ต่อ GPIIb–IIIa (AI draft)",
+   "key_concept": "• ITP: isolated thrombocytopenia, PT/aPTT ปกติ\n• รักษา steroid, IVIG",
+   "mechanism": [
+    "สร้าง autoantibody ต่อ GPIIb/IIIa",
+    "platelet ถูกเคลือบ IgG",
+    {
+     "s": "macrophage ม้ามทำลาย platelet",
+     "answer": true
+    },
+    "เกล็ดเลือดต่ำ เลือดออกใต้ผิว"
+   ],
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 51].pdf",
     "page": 4,
@@ -1940,19 +1994,28 @@
     "E": "Activated FVIII"
    },
    "correct": "C",
-   "explanation": "ทารก ICH + PT/aPTT ยาว → vitamin K deficiency → prothrombin ↓ (AI draft)",
+   "explanation": "ทารกแรกเกิดชัก เลือดออกในสมอง PT/aPTT ยาว = prothrombin (FII) ลดลง",
    "image": null,
    "issues": [
     "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
    ],
    "option_why": {
-    "A": "FXIII ไม่ใช่ vit K",
-    "B": "Tissue factor ไม่",
-    "C": "✓ Prothrombin (vit K–dependent)",
-    "D": "Activated FX ไม่ได้ลดโดยตรง",
-    "E": "FVIIIa ไม่"
+    "A": "FXIII ขาด PT/aPTT ปกติ",
+    "B": "tissue factor ไม่ใช่ factor ในเลือดที่ขาด",
+    "C": "✓ prothrombin ขาดทำให้ทั้ง PT และ aPTT ยาว",
+    "D": "activated FX ไม่ใช่ตัวที่ขาดเพราะมีเฉพาะ zymogen",
+    "E": "activated FVIII ไม่ใช่ตัวที่ขาด"
    },
-   "key_concept": "• VKDB: II, VII, IX, X ↓\n• สรุป: ทารก ICH + PT/aPTT ยาว → vitamin K deficiency → prothrombin ↓ (AI draft)",
+   "key_concept": "• PT+aPTT ยาว = common pathway ขาด (II, V, X, I)\n• ทารกแรกเกิดขาด vit K: II, VII, IX, X",
+   "mechanism": [
+    "ขาด vit K หรือ FII พร่อง",
+    "prothrombin ต่ำ",
+    {
+     "s": "PT/aPTT ยาว สร้าง thrombin ไม่พอ",
+     "answer": true
+    },
+    "ICH ในทารก"
+   ],
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 51].pdf",
     "page": 5,
@@ -2249,19 +2312,19 @@
     "E": "Bone marrow study"
    },
    "correct": "A",
-   "explanation": "Hemarthrosis + bleeding → aPTT/PT เป็นการตรวจแรก (AI draft)",
+   "explanation": "เลือดออกในข้อ ซักประวัติสงสัย hemophilia ตรวจ aPTT/PT ก่อน",
    "image": null,
    "issues": [
     "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
    ],
    "option_why": {
-    "A": "✓ aPTT/PT",
-    "B": "Bleeding time ไม่ใช่ hemophilia",
-    "C": "D-dimer ไม่",
-    "D": "Fibrinogen ไม่",
-    "E": "BM ไม่"
+    "A": "✓ aPTT ยาว PT ปกติ ชี้ hemophilia",
+    "B": "bleeding time ปกติใน hemophilia",
+    "C": "D-dimer ใช้ใน DIC/VTE",
+    "D": "fibrinogen ปกติใน hemophilia",
+    "E": "ไขกระดูกไม่จำเป็นเมื่อ CBC ปกติ"
    },
-   "key_concept": "• Hemophilia: aPTT ยาว PT ปกติ\n• สรุป: Hemarthrosis + bleeding → aPTT/PT เป็นการตรวจแรก (AI draft)",
+   "key_concept": "• hemophilia A/B: aPTT ยาว PT ปกติ\n• hemarthrosis เป็นลักษณะเด่น",
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 51].pdf",
     "page": 6,
@@ -2300,19 +2363,19 @@
     "E": "APDE"
    },
    "correct": "A",
-   "explanation": "ครอบครัวเดียวกัน + hemarthrosis + aPTT ยาว → hemophilia (AI draft)",
+   "explanation": "เลือดออกหลังถอนฟัน + hemarthrosis + aPTT ยาว + ญาติเป็น = hemophilia",
    "image": null,
    "issues": [
     "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
    ],
    "option_why": {
-    "A": "✓ Hemophilia",
-    "B": "ITP ไม่",
-    "C": "DIC ไม่",
-    "D": "TTP ไม่",
-    "E": "APDE ไม่"
+    "A": "✓ hemophilia ถ่ายทอด X-linked, aPTT ยาว",
+    "B": "ITP aPTT ปกติ",
+    "C": "DIC มี PT/aPTT ยาวร่วมกับ fibrinogen ต่ำ",
+    "D": "TTP มี schistocyte",
+    "E": "ตัวเลือกไม่ชัดเจน"
    },
-   "key_concept": "• X-linked: VIII/IX\n• Hemarthrosis",
+   "key_concept": "• hemophilia: เลือดออกในข้อ กล้ามเนื้อ\n• aPTT ยาว PT ปกติ",
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 51].pdf",
     "page": 6,
@@ -2437,19 +2500,28 @@
     "E": "Von Willebrand disease"
    },
    "correct": "E",
-   "explanation": "ช้ำง่ายตั้งแต่เด็ก + menorrhagia + aPTT ยาว + ประวัติครอบครัว → VWD (AI draft)",
+   "explanation": "ช้ำง่ายตั้งแต่เด็ก ประจำเดือนมาก aPTT ยาว PT ปกติ ครอบครัวมีประวัติ = von Willebrand disease",
    "image": null,
    "issues": [
     "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
    ],
    "option_why": {
-    "A": "Hemophilia B ชายเป็นหลัก",
-    "B": "FXI พบน้อย",
-    "C": "Hypofibrinogenemia PT ยาว",
-    "D": "Acquired ไม่มีประวัติ",
-    "E": "✓ VWD"
+    "A": "hemophilia B พบในชาย X-linked",
+    "B": "FXI deficiency ไม่เน้นเลือดออกเยื่อเมือก",
+    "C": "hypofibrinogenemia ทำให้ PT ยาว",
+    "D": "acquired hemophilia A ไม่มีประวัติครอบครัว",
+    "E": "✓ vWD เป็นความผิดปกติเลือดออกทางพันธุกรรมที่พบบ่อยที่สุด"
    },
-   "key_concept": "• VWD: autosomal, mucosal bleeding\n• สรุป: ช้ำง่ายตั้งแต่เด็ก + menorrhagia + aPTT ยาว + ประวัติครอบครัว → VWD (AI draft)",
+   "key_concept": "• vWD: mucocutaneous bleeding, menorrhagia\n• vWF ช่วย platelet adhesion และปกป้อง FVIII",
+   "mechanism": [
+    "vWF ขาด",
+    "platelet adhesion เสีย",
+    {
+     "s": "เลือดออกเยื่อเมือก, FVIII ลดทำ aPTT ยาว",
+     "answer": true
+    },
+    "ช้ำง่าย ประจำเดือนมาก"
+   ],
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 51].pdf",
     "page": 6,
@@ -2832,19 +2904,19 @@
     "E": "NS1"
    },
    "correct": "A",
-   "explanation": "Atypical lymphocyte + pharyngitis → Monospot test (AI draft)",
+   "explanation": "สงสัย infectious mononucleosis ยืนยันด้วย Monospot (heterophile antibody)",
    "image": null,
    "issues": [
     "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
    ],
    "option_why": {
-    "A": "✓ Monospot (heterophile)",
-    "B": "Throat culture ไม่ใช่ confirm IM",
-    "C": "EBV-specific Ab ใช้ถ้า monospot ลบ",
-    "D": "LN biopsy ไม่จำเป็น",
-    "E": "NS1 = dengue"
+    "A": "✓ Monospot ตรวจ heterophile antibody ได้เร็วและเป็นการคัดกรอง",
+    "B": "throat culture หา group A strep",
+    "C": "EBV-specific antibody ยืนยันได้แต่เฉลยเลือก Monospot",
+    "D": "lymph node biopsy ไม่จำเป็น",
+    "E": "NS1 ใช้ dengue"
    },
-   "key_concept": "• IM: EBV, Monospot, atypical lymphocyte\n• สรุป: Atypical lymphocyte + pharyngitis → Monospot test (AI draft)",
+   "key_concept": "• IM: fever, pharyngitis, lymphadenopathy, atypical lymphocyte\n• heterophile ลบ → ตรวจ EBV VCA IgM",
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 51].pdf",
     "page": 7,
@@ -3012,19 +3084,19 @@
     "E": "Peripheral blood"
    },
    "correct": "E",
-   "explanation": "Atypical lymphocyte ที่เห็นในเลือดส่วนปลาย (AI draft, ข้อความไม่ครบ)",
+   "explanation": "Lymphocyte เด่น + atypical ใน IM มาจาก peripheral blood (พบในกระแสเลือด)",
    "image": null,
    "issues": [
     "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
    ],
    "option_why": {
-    "A": "Liver",
-    "B": "Tonsil",
-    "C": "Thymus",
-    "D": "Bone marrow",
-    "E": "✓ Peripheral blood"
+    "A": "ตับไม่ใช่แหล่งที่พบเซลล์",
+    "B": "tonsil อาจโตแต่โจทย์ถามจุดที่พบเซลล์",
+    "C": "thymus ไม่ใช่",
+    "D": "bone marrow คือแหล่งผลิต",
+    "E": "✓ เซลล์ที่พบในการตรวจ smear อยู่ใน peripheral blood"
    },
-   "key_concept": "• Reactive lymphocyte ใน IM\n• สรุป: Atypical lymphocyte ที่เห็นในเลือดส่วนปลาย (AI draft, ข้อความไม่ครบ)",
+   "key_concept": "• atypical lymphocyte = reactive T cell ต่อ EBV\n• พบใน peripheral blood smear",
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 51].pdf",
     "page": 7,
@@ -3321,17 +3393,17 @@
     "E": ""
    },
    "correct": "C",
-   "explanation": "Blast 80% lymphoblast เด็ก 4 ปี → ALL (AI draft)",
+   "explanation": "Blast 80% ในเด็ก 4 ขวบ = ALL",
    "image": null,
    "issues": [
     "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
    ],
    "option_why": {
-    "A": "Myeloma",
-    "B": "CML",
-    "C": "✓ ALL"
+    "A": "myeloma พบผู้สูงอายุ",
+    "B": "CML พบ granulocyte ทุกระยะ",
+    "C": "✓ lymphoblast เด่น + ตับม้ามโต ในเด็ก = ALL"
    },
-   "key_concept": "• Childhood ALL: B-ALL พบมาก\n• สรุป: Blast 80% lymphoblast เด็ก 4 ปี → ALL (AI draft)",
+   "key_concept": "• ALL: พบบ่อยที่สุดในเด็ก\n• CALLA (CD10), TdT บวก",
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 51].pdf",
     "page": 8,
@@ -3370,19 +3442,28 @@
     "E": "t (15;17)"
    },
    "correct": "E",
-   "explanation": "APL: t(15;17) PML–RARα (AI draft)",
+   "explanation": "APL เกี่ยวข้องกับ t(15;17) ได้ PML–RARα",
    "image": null,
    "issues": [
     "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
    ],
    "option_why": {
-    "A": "t(8;21)",
-    "B": "t(9;22)",
-    "C": "t(9;11)",
-    "D": "inv(16)",
-    "E": "✓ t(15;17)"
+    "A": "t(8;21) พบ AML ที่ M2",
+    "B": "t(9;22) พบ CML",
+    "C": "t(9;11) พบ AML monocytic",
+    "D": "inv(16) พบ AML M4eo",
+    "E": "✓ PML–RARα ทำให้ promyelocyte ค้าง ตอบสนอง ATRA"
    },
-   "key_concept": "• APL: ATRA\n• สรุป: APL: t(15;17) PML–RARα (AI draft)",
+   "key_concept": "• APL: DIC, Auer rod, ATRA ได้ผล\n• t(15;17) → PML-RARA",
+   "mechanism": [
+    "t(15;17)",
+    "PML–RARα ยับยั้งการเจริญ",
+    {
+     "s": "promyelocyte ค้างและเพิ่มจำนวน",
+     "answer": true
+    },
+    "APL พร้อมภาวะเลือดออก"
+   ],
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 51].pdf",
     "page": 8,
@@ -3421,19 +3502,19 @@
     "E": "BCR-ABL fusion gene"
    },
    "correct": "A",
-   "explanation": "Plt สูง 950,000 ไม่มีอาการ → CALR/JAK2 (essential thrombocythemia) (AI draft)",
+   "explanation": "เกล็ดเลือดสูงโดยบังเอิญไม่มี BCR-ABL อาจเป็น ET พบ CALR",
    "image": null,
    "issues": [
     "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
    ],
    "option_why": {
-    "A": "✓ CALR mutation",
-    "B": "TP53 ไม่",
-    "C": "inv16 = AML",
-    "D": "t(15;17) = APL",
-    "E": "BCR-ABL = CML"
+    "A": "✓ CALR กลายพันธุ์พบใน ET ที่ JAK2 ลบ",
+    "B": "TP53 ไม่ใช่",
+    "C": "inv16 เป็นของ AML",
+    "D": "t(15;17) เป็นของ APL",
+    "E": "BCR-ABL เป็นของ CML"
    },
-   "key_concept": "• ET: JAK2 60%, CALR 25%, MPL\n• สรุป: Plt สูง 950,000 ไม่มีอาการ → CALR/JAK2 (essential thrombocythemia) (AI draft)",
+   "key_concept": "• ET: JAK2 ~50%, CALR ~25%, MPL ~5%\n• ต้อง exclude CML ด้วย BCR-ABL",
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 51].pdf",
     "page": 8,
@@ -3472,19 +3553,19 @@
     "E": "Chronic lymphocytic leukemia"
    },
    "correct": "E",
-   "explanation": "WBC 50,000 small mature lymphocyte → CLL (AI draft)",
+   "explanation": "WBC 50,000 lymphocyte เด่น เซลล์เล็กสุก ผู้สูงอายุ = CLL",
    "image": null,
    "issues": [
     "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
    ],
    "option_why": {
-    "A": "Myeloma ไม่",
-    "B": "Hodgkin ไม่",
-    "C": "CML ไม่",
-    "D": "ALL ไม่",
-    "E": "✓ CLL"
+    "A": "myeloma พบ plasma cell",
+    "B": "Hodgkin พบ Reed–Sternberg",
+    "C": "CML พบ granulocyte",
+    "D": "ALL พบ blast",
+    "E": "✓ CLL: mature lymphocyte, smudge cell"
    },
-   "key_concept": "• CLL: smudge cell, อายุ >60\n• สรุป: WBC 50,000 small mature lymphocyte → CLL (AI draft)",
+   "key_concept": "• CLL: CD5+/CD19+/CD23+\n• smudge cell",
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 51].pdf",
     "page": 9,
@@ -3523,18 +3604,18 @@
     "E": ""
    },
    "correct": "C",
-   "explanation": "พ่อ A Rh+ แม่ AB Rh+ → ลูกเป็น O ไม่ได้ (AI draft)",
+   "explanation": "พ่อ A Rh+ แม่ AB Rh+ ลูกเป็น O ไม่ได้ เพราะแม่ไม่มี O allele",
    "image": null,
    "issues": [
     "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
    ],
    "option_why": {
-    "A": "A เป็นได้",
-    "B": "B เป็นได้ถ้าพ่อ AO",
-    "C": "✓ O ไม่ได้ (แม่ AB)",
-    "D": "AB เป็นได้"
+    "A": "ลูกเป็น A ได้",
+    "B": "ลูกเป็น B ได้ (A พ่อเป็น AO รับ O ต่อ B จากแม่)",
+    "C": "✓ แม่ AB ไม่มี O allele ลูกจึงเป็น O ไม่ได้",
+    "D": "ลูกเป็น AB ได้"
    },
-   "key_concept": "• AB × A → A, B, AB; ไม่มี O\n• สรุป: พ่อ A Rh+ แม่ AB Rh+ → ลูกเป็น O ไม่ได้ (AI draft)",
+   "key_concept": "• แม่ AB ให้ A หรือ B เสมอ\n• ลูก O ต้องรับ O จากพ่อและแม่",
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 51].pdf",
     "page": 9,
@@ -3616,19 +3697,28 @@
     "E": "Anti- fy a"
    },
    "correct": "E",
-   "explanation": "LDPRC แล้ว Hb ลด + jaundice (DHTR) → anti-Fy a ในกลุ่ม antibody ทำ DHTR (AI draft)",
+   "explanation": "Thalassemia ที่ได้เลือดซ้ำ เกิด alloantibody ต่อ Duffy (anti-Fya) ทำให้ delayed hemolysis",
    "image": null,
    "issues": [
     "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
    ],
    "option_why": {
-    "A": "Anti-M IgM ไม่ค่อยทำ hemolysis",
-    "B": "Anti-N ไม่",
-    "C": "Anti-Le a ไม่ hemolysis",
-    "D": "Anti-Le b ไม่",
-    "E": "✓ Anti-Fy a (Duffy) ทำ DHTR"
+    "A": "anti-M มักเป็น IgM ไม่ค่อยทำ hemolysis",
+    "B": "anti-N เช่นเดียวกัน",
+    "C": "anti-Lea มักไม่ทำ hemolysis รุนแรง",
+    "D": "anti-Leb ก็ไม่ทำ hemolysis รุนแรง",
+    "E": "✓ anti-Fya เป็น IgG ทำให้ hemolytic reaction"
    },
-   "key_concept": "• DHTR: Kidd, Duffy, Kell\n• Lewis: IgM ไม่ข้ามเลือดเป็นหลัก",
+   "key_concept": "• Rh, Kell, Duffy, Kidd เป็นตัวสำคัญของ delayed hemolysis\n• Lewis/MN มักไม่ clinically significant",
+   "mechanism": [
+    "alloimmunization จากการให้เลือดซ้ำ",
+    "anti-Fya IgG เคลือบ RBC",
+    {
+     "s": "extravascular hemolysis",
+     "answer": true
+    },
+    "Hb ลด ตัวเหลือง ไข้"
+   ],
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 51].pdf",
     "page": 9,
@@ -3968,19 +4058,19 @@
     "E": "Group O FFP group AB platelet"
    },
    "correct": "C",
-   "explanation": "ผู้ป่วยกรุ๊ป B: FFP ควรเป็น B หรือ AB, platelet B (หรือ AB) (AI draft)",
+   "explanation": "ผู้ป่วยกลุ่ม B ให้ FFP กลุ่ม AB (ไม่มี anti-A/B) และ platelet กลุ่ม B",
    "image": null,
    "issues": [
     "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
    ],
    "option_why": {
-    "A": "FFP A ไม่เข้ากัน",
-    "B": "FFP O ไม่เหมาะ (anti-B)",
-    "C": "✓ FFP AB + platelet B",
-    "D": "FFP O ไม่เหมาะ",
-    "E": "FFP O ไม่เหมาะ"
+    "A": "FFP กลุ่ม A มี anti-B ทำปฏิกิริยากับ RBC กลุ่ม B",
+    "B": "FFP กลุ่ม O มี anti-A,B ไม่เหมาะ",
+    "C": "✓ AB FFP ไม่มี antibody และ platelet B เข้ากับผู้ป่วย",
+    "D": "FFP O มี anti-A,B ไม่เหมาะ",
+    "E": "FFP O มี anti-A,B ไม่เหมาะ"
    },
-   "key_concept": "• FFP: plasma ไม่ควรมี antibody ต่อ red cell ผู้ป่วย\n• AB plasma = universal",
+   "key_concept": "• FFP: ใช้หมู่ที่ไม่มี antibody ต่อ RBC ผู้ป่วย (AB universal)\n• platelet ควรหมู่เดียวกัน",
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 51].pdf",
     "page": 10,
