@@ -70,7 +70,7 @@
    },
    "answer": "C",
    "answer_status": "draft",
-   "explanation": "Cardiac output เพิ่มตั้งแต่ไตรมาสแรกและสูงสุดกลางไตรมาส",
+   "explanation": "Cardiac output เป็นการเปลี่ยนแปลงที่เกิดเร็วที่สุดและเด่นช่วงกลางไตรมาส (เพิ่ม 30–50%)",
    "refs": [
     {
      "paper": "MCQ51",
@@ -82,13 +82,22 @@
    "tags": [],
    "source": "import",
    "audit_ref": "hlc_51_MCQ_001",
-   "key_concept": "• Pregnancy: CO ↑ 30–50%\n• สรุป: Cardiac output เพิ่มตั้งแต่ไตรมาสแรกและสูงสุดกลางไตรมาส",
+   "key_concept": "• CO = SV × HR เพิ่ม 30–50%\n• SVR ลด BP diastolic ลดกลางครรภ์\n• plasma volume เพิ่มมากกว่า RBC → physiologic anemia",
+   "mechanism": [
+    "progesterone/estrogen ขยายหลอดเลือด SVR ลด",
+    "ไตกักเกลือน้ำ plasma volume เพิ่ม",
+    {
+     "s": "SV และ HR เพิ่ม → CO เพิ่ม",
+     "answer": true
+    },
+    "สูงสุดกลางไตรมาสสอง"
+   ],
    "option_why": {
-    "A": "SV เพิ่ม",
-    "B": "SVR ลดลง",
-    "C": "✓ CO เพิ่ม",
-    "D": "HR เพิ่ม",
-    "E": "Plasma volume เพิ่ม"
+    "A": "stroke volume เพิ่ม ไม่ใช่ลด",
+    "B": "SVR ลดลงจาก progesterone ไม่ใช่เพิ่ม",
+    "C": "✓ CO เพิ่มจาก SV และ HR เพิ่ม ตั้งแต่ ~5 wk สูงสุดกลางครรภ์",
+    "D": "HR เพิ่ม 10–20 bpm ไม่ลด",
+    "E": "plasma volume เพิ่ม ~50% ไม่ลด"
    },
    "audit_note": "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
   },
@@ -108,7 +117,7 @@
    },
    "answer": "A",
    "answer_status": "draft",
-   "explanation": "ครรภ์ 36 สัปดาห์มึนศีรษะจากมดลูกกด IVC (supine hypotensive syndrome)",
+   "explanation": "ครรภ์ 36 สัปดาห์ มดลูกโตกด IVC ในท่านอนหงาย → supine hypotension ทำให้หน้ามืด",
    "refs": [
     {
      "paper": "MCQ51",
@@ -120,13 +129,22 @@
    "tags": [],
    "source": "import",
    "audit_ref": "hlc_51_MCQ_002",
-   "key_concept": "• Supine hypotension in pregnancy\n• สรุป: ครรภ์ 36 สัปดาห์มึนศีรษะจากมดลูกกด IVC (supine hypotensive syndrome)",
+   "key_concept": "• supine hypotensive syndrome ไตรมาส 3\n• แก้: นอนตะแคงซ้าย\n• IVC compression → venous return ↓",
+   "mechanism": [
+    "นอนหงาย มดลูกใหญ่",
+    "กด IVC",
+    {
+     "s": "venous return ↓ → CO ↓ BP ตก",
+     "answer": true
+    },
+    "หน้ามืด เวียนศีรษะ"
+   ],
    "option_why": {
-    "A": "✓ Compress IVC",
-    "B": "Vagal",
-    "C": "Dehydration",
-    "D": "Contractility",
-    "E": "SVR"
+    "A": "✓ มดลูกกด IVC → เลือดดำกลับหัวใจลด CO ลด เวียนศีรษะ",
+    "B": "vagal tone ไม่ใช่กลไกหลัก",
+    "C": "dehydration เป็นสาเหตุได้ แต่เฉลยเน้น IVC compression",
+    "D": "contractility ปกติในครรภ์",
+    "E": "SVR ลดไม่ใช่เพิ่ม"
    },
    "audit_note": "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
   },
@@ -146,7 +164,7 @@
    },
    "answer": "C",
    "answer_status": "draft",
-   "explanation": "Minute ventilation เพิ่มจาก tidal volume ที่เพิ่ม",
+   "explanation": "Minute ventilation เพิ่มจาก tidal volume เพิ่ม โดย RR คงที่",
    "refs": [
     {
      "paper": "MCQ51",
@@ -158,13 +176,22 @@
    "tags": [],
    "source": "import",
    "audit_ref": "hlc_51_MCQ_003",
-   "key_concept": "• Pregnancy: respiratory alkalosis\n• สรุป: Minute ventilation เพิ่มจาก tidal volume ที่เพิ่ม",
+   "key_concept": "• progesterone กระตุ้น respiratory center\n• PaCO2 ~30, respiratory alkalosis compensated\n• FRC, RV ลด; IC เพิ่ม",
+   "mechanism": [
+    "progesterone กระตุ้นศูนย์หายใจ",
+    "tidal volume เพิ่ม",
+    {
+     "s": "minute ventilation เพิ่ม",
+     "answer": true
+    },
+    "PaCO2 ลด ช่วยกำจัด CO2 ทารก"
+   ],
    "option_why": {
-    "A": "TV เพิ่ม",
-    "B": "FRC ลดลง",
-    "C": "✓ MV เพิ่ม",
-    "D": "PaCO2 ลดลง",
-    "E": "กะบังลมสูงขึ้น"
+    "A": "TV เพิ่ม ไม่ลด",
+    "B": "FRC ลดเพราะมดลูกดันกระบังลม",
+    "C": "✓ MV = TV × RR เพิ่ม ~30–50% จาก progesterone",
+    "D": "PaCO2 ลดเหลือ ~30 mmHg",
+    "E": "กระบังลมถูกดันขึ้น"
    },
    "audit_note": "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
   },
@@ -184,7 +211,7 @@
    },
    "answer": "A",
    "answer_status": "draft",
-   "explanation": "GFR เพิ่ม 50% ในการตั้งครรภ์",
+   "explanation": "GFR เพิ่ม ~50% ในครรภ์ปกติ",
    "refs": [
     {
      "paper": "MCQ51",
@@ -196,13 +223,22 @@
    "tags": [],
    "source": "import",
    "audit_ref": "hlc_51_MCQ_004",
-   "key_concept": "• Pregnancy: ↑ GFR, ↓ creatinine\n• สรุป: GFR เพิ่ม 50% ในการตั้งครรภ์",
+   "key_concept": "• GFR ↑ → serum Cr/BUN ↓\n• Cr 0.8 ในครรภ์ถือว่าผิดปกติ\n• hydronephrosis ขวามากกว่า",
+   "mechanism": [
+    "blood volume และ RPF เพิ่ม",
+    "filtration pressure สูง",
+    {
+     "s": "GFR เพิ่ม ~50%",
+     "answer": true
+    },
+    "creatinine ในเลือดต่ำลง"
+   ],
    "option_why": {
-    "A": "✓ GFR ↑",
-    "B": "RPF เพิ่ม",
-    "C": "Cr clearance เพิ่ม",
-    "D": "Cr ลดลง",
-    "E": "ไตใหญ่ขึ้น"
+    "A": "✓ RPF และ GFR เพิ่ม",
+    "B": "RPF เพิ่มไม่ลด",
+    "C": "creatinine clearance เพิ่ม",
+    "D": "serum creatinine ลด (~0.5)",
+    "E": "ไตขยายใหญ่ขึ้น (hydronephrosis ทางสรีรวิทยา)"
    },
    "audit_note": "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
   },
@@ -222,7 +258,7 @@
    },
    "answer": "C",
    "answer_status": "draft",
-   "explanation": "Physiologic anemia จาก plasma volume เพิ่มมากกว่ามวล RBC",
+   "explanation": "ครรภ์ทำให้เกิด physiologic anemia เพราะ plasma volume เพิ่มมากกว่า RBC mass",
    "refs": [
     {
      "paper": "MCQ51",
@@ -234,13 +270,22 @@
    "tags": [],
    "source": "import",
    "audit_ref": "hlc_51_MCQ_005",
-   "key_concept": "• Dilutional anemia\n• สรุป: Physiologic anemia จาก plasma volume เพิ่มมากกว่ามวล RBC",
+   "key_concept": "• hypercoagulable: factor VII, VIII, X, fibrinogen เพิ่ม\n• Hb<11 ไตรมาส 1,3 = ซีด\n• เสริมธาตุเหล็กและ folate",
+   "mechanism": [
+    "plasma volume เพิ่ม ~50%",
+    "RBC mass เพิ่มน้อยกว่า",
+    {
+     "s": "เลือดเจือจาง Hb/Hct ลด",
+     "answer": true
+    },
+    "physiologic anemia"
+   ],
    "option_why": {
-    "A": "Hb ลดลง",
-    "B": "Platelet ลดเล็กน้อย",
-    "C": "✓ Physiologic anemia",
-    "D": "Hct ลด",
-    "E": "Clotting factors เพิ่ม"
+    "A": "Hb ลดจากเลือดจาง ไม่เพิ่ม",
+    "B": "platelet คงที่หรือลดเล็กน้อย",
+    "C": "✓ plasma เพิ่ม 50%, RBC เพิ่ม 20–30% → Hb ลดจากการเจือจาง",
+    "D": "Hct ลดลงตามการเจือจาง",
+    "E": "clotting factors เพิ่มขึ้น ไม่ลด"
    },
    "audit_note": "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
   },
@@ -260,7 +305,7 @@
    },
    "answer": "C",
    "answer_status": "draft",
-   "explanation": "3 วันหลังปฏิสนธิ เป็น morula",
+   "explanation": "3 วันหลังปฏิสนธิ ตัวอ่อนเป็น morula (16 เซลล์)",
    "refs": [
     {
      "paper": "MCQ51",
@@ -272,13 +317,13 @@
    "tags": [],
    "source": "import",
    "audit_ref": "hlc_51_MCQ_006",
-   "key_concept": "• Day 3: 16-cell morula\n• สรุป: 3 วันหลังปฏิสนธิ เป็น morula",
+   "key_concept": "• zygote → morula (วัน 3) → blastocyst (วัน 5) → implant (6–10)\n• gastrulation wk 3",
    "option_why": {
-    "A": "Zygote ภายใน 1 วัน",
-    "B": "Blastocyst วันที่ 5",
-    "C": "✓ Morula ~day 3–4",
-    "D": "Gastrula สัปดาห์ 3",
-    "E": "Trilaminar สัปดาห์ 3"
+    "A": "zygote คือวันที่ 1",
+    "B": "blastocyst คือวันที่ 5",
+    "C": "✓ วันที่ 3–4 ก้อนเซลล์ตันเป็น morula",
+    "D": "gastrula สัปดาห์ที่ 3",
+    "E": "trilaminar disc สัปดาห์ที่ 3"
    },
    "audit_note": "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
   },
@@ -298,7 +343,7 @@
    },
    "answer": "C",
    "answer_status": "draft",
-   "explanation": "Spina bifida เกิดจาก neural tube ปิดไม่สมบูรณ์",
+   "explanation": "Spina bifida เกิดจาก neural tube ปิดไม่สมบูรณ์ที่ caudal neuropore",
    "refs": [
     {
      "paper": "MCQ51",
@@ -310,13 +355,22 @@
    "tags": [],
    "source": "import",
    "audit_ref": "hlc_51_MCQ_007",
-   "key_concept": "• NTD\n• สรุป: Spina bifida เกิดจาก neural tube ปิดไม่สมบูรณ์",
+   "key_concept": "• neural tube ปิด wk 4\n• โฟเลตป้องกัน NTD\n• AFP สูงในน้ำคร่ำ",
+   "mechanism": [
+    "neural fold ยกและยึดกัน",
+    "caudal neuropore ปิด ~day 28",
+    {
+     "s": "ปิดไม่สนิท neural tube defect",
+     "answer": true
+    },
+    "spina bifida"
+   ],
    "option_why": {
-    "A": "Notochord",
-    "B": "Primitive streak",
-    "C": "✓ Neural tube",
-    "D": "Somites",
-    "E": "Yolk sac"
+    "A": "notochord เหนี่ยวนำ neural plate แต่ไม่ใช่สาเหตุตรง",
+    "B": "primitive streak เกี่ยวกับ gastrulation",
+    "C": "✓ caudal neuropore ปิดไม่สนิท เกิด spina bifida",
+    "D": "somite สร้างกระดูก/กล้ามเนื้อ",
+    "E": "yolk sac ไม่เกี่ยว"
    },
    "audit_note": "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
   },
@@ -336,7 +390,7 @@
    },
    "answer": "E",
    "answer_status": "draft",
-   "explanation": "CHD เกิดช่วง organogenesis",
+   "explanation": "พิการแต่กำเนิดของหัวใจเกิดช่วง organogenesis (wk 3–8)",
    "refs": [
     {
      "paper": "MCQ51",
@@ -348,13 +402,13 @@
    "tags": [],
    "source": "import",
    "audit_ref": "hlc_51_MCQ_008",
-   "key_concept": "• Heart: wk 3–8\n• สรุป: CHD เกิดช่วง organogenesis",
+   "key_concept": "• organogenesis wk 3–8\n• หัวใจเต้น ~wk 4\n• wk 1–2 all-or-none",
    "option_why": {
-    "A": "Fertilization",
-    "B": "Implantation",
-    "C": "Gastrulation",
-    "D": "Blastulation",
-    "E": "✓ Organogenesis"
+    "A": "fertilization ไม่ใช่",
+    "B": "implantation ไม่ใช่",
+    "C": "gastrulation สร้าง germ layer ไม่ใช่การสร้างอวัยวะ",
+    "D": "blastulation ก่อนหน้า",
+    "E": "✓ organogenesis สร้างหัวใจ ไวต่อ teratogen"
    },
    "audit_note": "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
   },
@@ -374,7 +428,7 @@
    },
    "answer": "D",
    "answer_status": "draft",
-   "explanation": "6 สัปดาห์เป็นช่วง organogenesis ไวต่อยา",
+   "explanation": "6 สัปดาห์เป็นช่วง organogenesis ที่ teratogen เสี่ยงสูง",
    "refs": [
     {
      "paper": "MCQ51",
@@ -386,13 +440,22 @@
    "tags": [],
    "source": "import",
    "audit_ref": "hlc_51_MCQ_009",
-   "key_concept": "• Sensitive period\n• สรุป: 6 สัปดาห์เป็นช่วง organogenesis ไวต่อยา",
+   "key_concept": "• organogenesis wk 3–8 = critical period\n• phenobarbital: cleft, cardiac defect",
+   "mechanism": [
+    "wk 3–8 เซลล์แบ่งตัวและเปลี่ยนสภาพ",
+    "สัมผัส teratogen",
+    {
+     "s": "organogenesis ถูกรบกวน",
+     "answer": true
+    },
+    "พิการแต่กำเนิด"
+   ],
    "option_why": {
-    "A": "Lung",
-    "B": "Placenta",
-    "C": "Heartbeat",
-    "D": "✓ Organogenesis",
-    "E": "Brain"
+    "A": "lung maturation เป็นช่วงปลายครรภ์",
+    "B": "placental transfer เกิดต่อเนื่อง",
+    "C": "หัวใจเต้นเริ่ม wk 4 ไม่ใช่เหตุผลของความไว",
+    "D": "✓ สร้างอวัยวะหลัก ไวต่อ teratogen",
+    "E": "brain growth ต่อเนื่องถึงหลังคลอด"
    },
    "audit_note": "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
   },
@@ -412,7 +475,7 @@
    },
    "answer": "D",
    "answer_status": "draft",
-   "explanation": "20 สัปดาห์ เน้น growth และ functional maturation",
+   "explanation": "อายุครรภ์ 20 สัปดาห์คือ fetal period: เจริญเติบโตและปรับสภาพการทำงาน",
    "refs": [
     {
      "paper": "MCQ51",
@@ -424,13 +487,13 @@
    "tags": [],
    "source": "import",
    "audit_ref": "hlc_51_MCQ_010",
-   "key_concept": "• Fetal period\n• สรุป: 20 สัปดาห์ เน้น growth และ functional maturation",
+   "key_concept": "• embryonic = wk 3–8, fetal = wk 9–birth\n• fetal: growth + functional maturation",
    "option_why": {
-    "A": "Germ layer",
-    "B": "Neural tube",
-    "C": "Organ formation",
-    "D": "✓ Growth and maturation",
-    "E": "Placenta"
+    "A": "germ layer เป็นช่วง wk 3",
+    "B": "neural tube ปิด wk 4",
+    "C": "organ formation = wk 3–8",
+    "D": "✓ ช่วง fetal เน้นขนาดตัวและ maturation ของอวัยวะ",
+    "E": "placenta ครบตั้งแต่ ~wk 12"
    },
    "audit_note": "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
   },
@@ -450,7 +513,7 @@
    },
    "answer": "D",
    "answer_status": "draft",
-   "explanation": "RDS ระดับเบา ที่ 32–34 สัปดาห์ (ตัวเลือก)",
+   "explanation": "RDS ไม่รุนแรงมักพบที่ 32–34 สัปดาห์ เพราะ surfactant เริ่มเพียงพอ",
    "refs": [
     {
      "paper": "MCQ51",
@@ -462,13 +525,13 @@
    "tags": [],
    "source": "import",
    "audit_ref": "hlc_51_MCQ_014",
-   "key_concept": "• Late preterm: mild RDS\n• สรุป: RDS ระดับเบา ที่ 32–34 สัปดาห์ (ตัวเลือก)",
+   "key_concept": "• surfactant จาก type II pneumocyte เริ่ม ~24 wk, พอเพียง ~34–36 wk\n• ให้ steroid ก่อนคลอดช่วยปอด\n• L/S ratio ≥2 = ปอดพร้อม",
    "option_why": {
-    "A": "26–28",
-    "B": "28–30",
-    "C": "30–32",
-    "D": "✓ 32–34",
-    "E": "34–36"
+    "A": "26–28 wk RDS รุนแรง",
+    "B": "28–30 wk RDS ปานกลาง–รุนแรง",
+    "C": "30–32 wk ยังมี RDS บ่อย",
+    "D": "✓ 32–34 wk surfactant เริ่มสร้างมากขึ้น อาการเบา",
+    "E": "34–36 wk เป็นช่วง late preterm RDS น้อย"
    },
    "audit_note": "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
   },
@@ -488,7 +551,7 @@
    },
    "answer": "B",
    "answer_status": "draft",
-   "explanation": "อายุครรภ์เป็นข้อพิจารณาหลักในการเลือกยา",
+   "explanation": "ครรภ์ 8 เดือน ผู้ป่วยซึมเศร้าคุมได้ด้วย nortriptyline ไม่ต้องเปลี่ยน แต่ต้องดูอายุครรภ์ (ใกล้คลอด)",
    "refs": [
     {
      "paper": "MCQ51",
@@ -500,13 +563,13 @@
    "tags": [],
    "source": "import",
    "audit_ref": "hlc_51_MCQ_019",
-   "key_concept": "• Teratogenic window\n• สรุป: อายุครรภ์เป็นข้อพิจารณาหลักในการเลือกยา",
+   "key_concept": "• ช่วงใกล้คลอด ยาอาจทำให้ neonatal withdrawal\n• TCA anticholinergic เสี่ยงในทารก\n• ไม่หยุดยาทันที ต้องปรึกษา",
    "option_why": {
-    "A": "ราคา",
-    "B": "✓ Gestational age",
-    "C": "แผนรักษา",
-    "D": "ยาร่วม",
-    "E": "คุณสมบัติ"
+    "A": "ค่ายาไม่ใช่เหตุผลทางคลินิก",
+    "B": "✓ อายุครรภ์ใกล้คลอด ต้องพิจารณา neonatal adaptation/ถอนยา",
+    "C": "แผนการรักษาไม่ใช่ปัจจัยที่เฉลยเลือก",
+    "D": "ยาที่ใช้ร่วมไม่ใช่ปัจจัยหลัก",
+    "E": "คุณสมบัติทางเคมีไม่ใช่ข้อพิจารณา"
    },
    "audit_note": "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
   },
@@ -523,7 +586,7 @@
    },
    "answer": "B",
    "answer_status": "draft",
-   "explanation": "TTN เกิดจากการดูดซึมน้ำปอดลดลง",
+   "explanation": "TTN จาก fetal lung fluid ถูกดูดซึมกลับช้า",
    "refs": [
     {
      "paper": "MCQ51",
@@ -535,10 +598,19 @@
    "tags": [],
    "source": "import",
    "audit_ref": "hlc_51_MCQ_022",
-   "key_concept": "• TTN\n• สรุป: TTN เกิดจากการดูดซึมน้ำปอดลดลง",
+   "key_concept": "• TTN: C-section, term\n• ดีขึ้นใน 24–72 ชม.",
+   "mechanism": [
+    "ไม่มีแรงบีบทรวงอก",
+    "ของเหลวถูกดูดซึมช้า",
+    {
+     "s": "ค้างใน interstitium",
+     "answer": true
+    },
+    "หายใจเร็ว"
+   ],
    "option_why": {
-    "A": "Surfactant ลดคือ RDS",
-    "B": "✓ Lung fluid reabsorption ↓"
+    "A": "surfactant ขาดเป็น RDS",
+    "B": "✓ clearance ของของเหลวลดลง"
    },
    "audit_note": "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
   },
@@ -555,7 +627,7 @@
    },
    "answer": "B",
    "answer_status": "draft",
-   "explanation": "เช็ดตัวให้แห้งเพื่อกัน evaporation",
+   "explanation": "ลดการระเหยด้วยการเช็ดตัวทารกให้แห้งทันที",
    "refs": [
     {
      "paper": "MCQ51",
@@ -567,10 +639,10 @@
    "tags": [],
    "source": "import",
    "audit_ref": "hlc_51_MCQ_023",
-   "key_concept": "• Evaporation: dry\n• สรุป: เช็ดตัวให้แห้งเพื่อกัน evaporation",
+   "key_concept": "• evaporation เสียความร้อนมากที่สุดหลังคลอด\n• เปลี่ยนผ้าเปียก",
    "option_why": {
-    "A": "หมวกกัน conduction/radiation",
-    "B": "✓ เช็ดตัวแห้ง"
+    "A": "หมวกลดการสูญเสียทาง radiation/convection ไม่ใช่ evaporation หลัก",
+    "B": "✓ เช็ดแห้งลดความร้อนที่เสียจากน้ำระเหยบนผิว"
    },
    "audit_note": "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
   },
@@ -589,7 +661,7 @@
    },
    "answer": "A",
    "answer_status": "draft",
-   "explanation": "ผู้ปกครองกำหนดเวลาจอตามคำแนะนำอย่างมีขอบเขตและอบอุ่น เป็น authoritative",
+   "explanation": "วางกฎชัด + อธิบาย + อบอุ่น = Authoritative",
    "refs": [
     {
      "paper": "MCQ51",
@@ -601,12 +673,12 @@
    "tags": [],
    "source": "import",
    "audit_ref": "hlc_51_MCQ_027",
-   "key_concept": "• Authoritative: firm + warm\n• สรุป: ผู้ปกครองกำหนดเวลาจอตามคำแนะนำอย่างมีขอบเขตและอบอุ่น เป็น authoritative",
+   "key_concept": "• Baumrind: authoritative ดีที่สุด\n• กฎชัด ใช้เหตุผล",
    "option_why": {
-    "A": "✓ Authoritative",
-    "B": "Authoritarian",
-    "C": "Permissive",
-    "D": "Uninvolved"
+    "A": "✓ authoritative: ตั้งเวลาเล่นเกม + ยืดหยุ่น + ให้เหตุผล",
+    "B": "authoritarian: บังคับ ไม่ยืดหยุ่น",
+    "C": "permissive: ตามใจ",
+    "D": "uninvolved: ไม่ใส่ใจ"
    },
    "audit_note": "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
   },
@@ -626,7 +698,7 @@
    },
    "answer": "C",
    "answer_status": "draft",
-   "explanation": "ตุ๊กตาเศร้า คือ animistic thinking",
+   "explanation": "พูดว่าหมีเศร้า = animistic thinking",
    "refs": [
     {
      "paper": "MCQ51",
@@ -638,13 +710,13 @@
    "tags": [],
    "source": "import",
    "audit_ref": "hlc_51_MCQ_028",
-   "key_concept": "• Preoperational animism\n• สรุป: ตุ๊กตาเศร้า คือ animistic thinking",
+   "key_concept": "• Piaget preoperational 2–7 ปี\n• animism, egocentrism, centration",
    "option_why": {
-    "A": "Conservation",
-    "B": "Egocentrism",
-    "C": "✓ Animism",
-    "D": "Symbolic function",
-    "E": "Centration"
+    "A": "conservation เป็นความเข้าใจปริมาตรคงที่ (7 ปี)",
+    "B": "egocentrism คือมุมมองตนเอง",
+    "C": "✓ animism: เชื่อว่าสิ่งไม่มีชีวิตมีความรู้สึก",
+    "D": "symbolic function คือการเล่นสมมติ",
+    "E": "centration คือโฟกัสมิติเดียว"
    },
    "audit_note": "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
   },
@@ -664,7 +736,7 @@
    },
    "answer": "C",
    "answer_status": "draft",
-   "explanation": "ทารก 2 เดือนท้องผูกใช้ glycerin suppository",
+   "explanation": "ทารก 2 เดือนท้องผูก ใช้ glycerin suppository",
    "refs": [
     {
      "paper": "MCQ51",
@@ -676,13 +748,13 @@
    "tags": [],
    "source": "import",
    "audit_ref": "hlc_51_MCQ_029",
-   "key_concept": "• Infant constipation\n• สรุป: ทารก 2 เดือนท้องผูกใช้ glycerin suppository",
+   "key_concept": "• ทารกท้องผูก: glycerin suppository\n• เลี่ยง stimulant/ยาที่ดูดซึมระบบ",
    "option_why": {
-    "A": "Psyllium",
-    "B": "Bisacodyl",
-    "C": "✓ Glycerin",
-    "D": "Methylcellulose",
-    "E": "MOM"
+    "A": "psyllium ต้องน้ำมาก ไม่เหมาะ",
+    "B": "bisacodyl kick ลำไส้ ใช้ในทารกไม่ควร",
+    "C": "✓ glycerin suppository ใช้เฉพาะที่ ปลอดภัย",
+    "D": "methylcellulose เป็น bulk ไม่เหมาะทารก",
+    "E": "Mg hydroxide เสี่ยง hypermagnesemia"
    },
    "audit_note": "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
   },
@@ -701,7 +773,7 @@
    },
    "answer": "D",
    "answer_status": "draft",
-   "explanation": "ไตเสียทำให้ renal filtration ลด สะสมยา ADR",
+   "explanation": "ทารกไตทำงานไม่ดี ยาที่ขับทางไตออกช้า เฉลยเลือก renal filtration rate",
    "refs": [
     {
      "paper": "MCQ51",
@@ -713,12 +785,12 @@
    "tags": [],
    "source": "import",
    "audit_ref": "hlc_51_MCQ_030",
-   "key_concept": "• Renal impairment → accumulation\n• สรุป: ไตเสียทำให้ renal filtration ลด สะสมยา ADR",
+   "key_concept": "• GFR ทารกแรกเกิด ~ 30% ผู้ใหญ่\n• dose adjust\n• ไตพัฒนาเต็มที่ ~1 ปี",
    "option_why": {
-    "A": "Bioavailability",
-    "B": "Hepatic uptake",
-    "C": "Vd",
-    "D": "✓ Renal filtration (ลดลง)"
+    "A": "bioavailability ไม่ใช่ปัจจัยที่เฉลยเลือก",
+    "B": "hepatic uptake ไม่ใช่เรื่องไต",
+    "C": "Vd ของทารกมีน้ำมากแต่ไม่ใช่ข้อนี้",
+    "D": "✓ GFR ต่ำ ยาขับทางไตช้า"
    },
    "audit_note": "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
   },
@@ -737,7 +809,7 @@
    },
    "answer": "C",
    "answer_status": "draft",
-   "explanation": "ภาวะไตวายควรหลีกเลี่ยงการให้นมตามเฉลย AI",
+   "explanation": "แม่ไตวายควรเลี่ยงให้นม (ตามเฉลย)",
    "refs": [
     {
      "paper": "MCQ51",
@@ -749,12 +821,12 @@
    "tags": [],
    "source": "import",
    "audit_ref": "hlc_51_MCQ_031",
-   "key_concept": "• Contraindication to breastfeeding: HIV, galactosemia\n• สรุป: ภาวะไตวายควรหลีกเลี่ยงการให้นมตามเฉลย AI",
+   "key_concept": "• ข้อห้ามให้นม: HIV, TB ระยะติดต่อ, galactosemia ของเด็ก\n• โรคทั่วไปให้นมได้",
    "option_why": {
-    "A": "Diabetes ให้นมได้",
-    "B": "HT",
-    "C": "✓ Renal failure",
-    "D": "หวัด"
+    "A": "diabetes ให้นมได้",
+    "B": "hypertension ให้นมได้",
+    "C": "✓ renal failure ยาที่ใช้และสถานะของแม่ไม่เหมาะ",
+    "D": "หวัดให้นมได้ ใส่หน้ากาก"
    },
    "audit_note": "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
   },
@@ -774,7 +846,7 @@
    },
    "answer": "D",
    "answer_status": "draft",
-   "explanation": "เด็ก 2 ปีช่องกระหม่อมหน้ายังไม่ปิดเต็มที่ช้ากว่ากำหนด (ควรปิด 12–18 เดือน)",
+   "explanation": "เด็ก 2 ปี มี 4 ซี่ ฟันน้อยกว่าที่ควร ต้องประเมิน",
    "refs": [
     {
      "paper": "MCQ51",
@@ -786,13 +858,13 @@
    "tags": [],
    "source": "import",
    "audit_ref": "hlc_51_MCQ_033",
-   "key_concept": "• AF closes by 18 mo\n• สรุป: เด็ก 2 ปีช่องกระหม่อมหน้ายังไม่ปิดเต็มที่ช้ากว่ากำหนด (ควรปิด 12–18 เดือน)",
+   "key_concept": "• ฟันครบ 20 ซี่ ~2.5–3 ปี\n• anterior fontanel ปิด 9–18 เดือน\n• 2 ปีที่ fontanel ไม่ปิดต้องหาสาเหตุ (rickets, hypothyroid)",
    "option_why": {
-    "A": "ส่วนสูงปกติ",
-    "B": "น้ำหนักปกติ",
-    "C": "ฟันขึ้นแล้ว 4 ซี่",
-    "D": "✓ Fontanelle ควรปิดแล้ว",
-    "E": "HC ปกติ"
+    "A": "85 cm ปกติ",
+    "B": "12 kg ปกติ",
+    "C": "ฟัน 4 ซี่ ต่ำกว่า ~16 ซี่ที่ควรมี",
+    "D": "✓ fontanel 1×1 cm ใกล้ปิด ปกติสำหรับ 2 ปีแต่ยังไม่ปิด",
+    "E": "HC 48 ปกติ"
    },
    "audit_note": "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
   },
@@ -812,7 +884,7 @@
    },
    "answer": "D",
    "answer_status": "draft",
-   "explanation": "อายุ 18 เดือนยังไม่มีฟันถือว่าช้า (ฟันซี่แรกควรขึ้นภายใน 12–13 เดือน)",
+   "explanation": "1.5 ปีไม่มีฟันเลย ต้องประเมิน",
    "refs": [
     {
      "paper": "MCQ51",
@@ -824,13 +896,13 @@
    "tags": [],
    "source": "import",
    "audit_ref": "hlc_51_MCQ_036",
-   "key_concept": "• Teething delay >13 mo\n• สรุป: อายุ 18 เดือนยังไม่มีฟันถือว่าช้า (ฟันซี่แรกควรขึ้นภายใน 12–13 เดือน)",
+   "key_concept": "• ไม่มีฟัน 13 เดือน = delayed eruption\n• พิจารณา hypothyroid, rickets",
    "option_why": {
-    "A": "น้ำหนักปกติ",
-    "B": "ความยาวปกติ",
-    "C": "Fontanelle ปิดแล้วปกติ",
-    "D": "✓ ไม่มีฟันช้า",
-    "E": "HC ปกติเล็กน้อย"
+    "A": "11 kg ปกติ",
+    "B": "80 cm ปกติ",
+    "C": "ปิดแล้วปกติ",
+    "D": "✓ ควรมีฟัน ~8–12 ซี่แล้ว",
+    "E": "HC 45 ปกติ"
    },
    "audit_note": "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
   },
@@ -848,7 +920,7 @@
    },
    "answer": "A",
    "answer_status": "draft",
-   "explanation": "เด็ก 5 ปีผูกเชือกรองเท้าได้ในเกณฑ์ 5–6 ปี",
+   "explanation": "5 ปีผูกเชือกรองเท้าได้",
    "refs": [
     {
      "paper": "MCQ51",
@@ -860,11 +932,11 @@
    "tags": [],
    "source": "import",
    "audit_ref": "hlc_51_MCQ_037",
-   "key_concept": "• 5 y: ties shoelace\n• สรุป: เด็ก 5 ปีผูกเชือกรองเท้าได้ในเกณฑ์ 5–6 ปี",
+   "key_concept": "• fine motor ตามวัย\n• ผูกเชือก 5–6 ปี",
    "option_why": {
-    "A": "✓ Tie shoelace",
-    "B": "Tricycle 3 ปี",
-    "C": "Circle 3 ปี"
+    "A": "✓ ผูกเชือกรองเท้า 5–6 ปี",
+    "B": "สามล้อ 3 ปี",
+    "C": "วาดวงกลม 3 ปี"
    },
    "audit_note": "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
   },
@@ -884,7 +956,7 @@
    },
    "answer": "D",
    "answer_status": "draft",
-   "explanation": "เด็ก 2.5 ปีต่อต้านให้ทางเลือกที่เหมาะสม",
+   "explanation": "เด็ก 2.5 ปีไม่ฟังคำสั่ง ให้ทางเลือกที่เหมาะสมช่วยฝึก autonomy",
    "refs": [
     {
      "paper": "MCQ51",
@@ -896,13 +968,13 @@
    "tags": [],
    "source": "import",
    "audit_ref": "hlc_51_MCQ_040",
-   "key_concept": "• Toddler autonomy\n• สรุป: เด็ก 2.5 ปีต่อต้านให้ทางเลือกที่เหมาะสม",
+   "key_concept": "• Erikson autonomy vs shame\n• ให้ทางเลือกจำกัด",
    "option_why": {
-    "A": "ลงโทษ",
-    "B": "เพิกเฉย",
-    "C": "อธิบายตลอด",
-    "D": "✓ Offer choices",
-    "E": "ให้รางวัล"
+    "A": "ลงโทษทำให้ดื้อมากขึ้น",
+    "B": "เมินไม่ได้ปรับพฤติกรรม",
+    "C": "อธิบายยาวเกินความเข้าใจ",
+    "D": "✓ ให้ทางเลือก 2 ข้อ ตอบโจทย์ autonomy",
+    "E": "สัญญาให้ของขวัญเป็นการติดสินบน"
    },
    "audit_note": "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
   },
@@ -922,7 +994,7 @@
    },
    "answer": "A",
    "answer_status": "draft",
-   "explanation": "รอบเดือนไม่สม่ำเสมอใน 2 ปีแรกหลัง menarche เป็นปกติ",
+   "explanation": "ประจำเดือนไม่สม่ำเสมอใน 2 ปีแรกหลัง menarche เป็นเรื่องปกติ",
    "refs": [
     {
      "paper": "MCQ51",
@@ -934,12 +1006,12 @@
    "tags": [],
    "source": "import",
    "audit_ref": "hlc_51_MCQ_045",
-   "key_concept": "• Menarche: anovulatory cycles\n• สรุป: รอบเดือนไม่สม่ำเสมอใน 2 ปีแรกหลัง menarche เป็นปกติ",
+   "key_concept": "• cycle 21–45 วัน ปกติใน 2 ปีแรก\n• anovulation ปกติ\n• แจ้งเมื่อเลือดออกมากผิดปกติ",
    "option_why": {
-    "A": "✓ ปกติใน 2 ปีแรก",
-    "B": "ไม่ต้อง US",
-    "C": "ไม่ต้องหลีกเลี่ยงออกกำลัง",
-    "D": "ไม่ต้องยาคุม",
+    "A": "✓ HPO axis ยังไม่เจริญ anovulatory cycles พบบ่อย",
+    "B": "ไม่ต้อง US เพราะอาการไม่รุนแรง",
+    "C": "ไม่ต้องจำกัดการออกกำลัง",
+    "D": "ไม่ต้องกิน OCP",
     "E": "ไม่ทำให้มีบุตรยาก"
    },
    "audit_note": "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
@@ -960,7 +1032,7 @@
    },
    "answer": "D",
    "answer_status": "draft",
-   "explanation": "อัณฑะอยู่ใน inguinal hernia และ amenorrhea ในวัยรุ่น = intersex (CAIS)",
+   "explanation": "46,XY มีลักษณะภายนอกเป็นหญิง = intersex (CAIS)",
    "refs": [
     {
      "paper": "MCQ51",
@@ -972,13 +1044,13 @@
    "tags": [],
    "source": "import",
    "audit_ref": "hlc_51_MCQ_052",
-   "key_concept": "• CAIS: 46,XY, female phenotype\n• สรุป: อัณฑะอยู่ใน inguinal hernia และ amenorrhea ในวัยรุ่น = intersex (CAIS)",
+   "key_concept": "• CAIS: XY, androgen receptor ไม่ตอบสนอง, testis ในขาหนีบ\n• sex ≠ gender identity",
    "option_why": {
-    "A": "Male",
-    "B": "Queer",
-    "C": "Female",
-    "D": "✓ Intersex (DSD)",
-    "E": "Nonbinary"
+    "A": "karyotype XY แต่ไม่มีอวัยวะภายในชาย",
+    "B": "queer เป็น identity",
+    "C": "ภายนอกหญิงแต่ไม่ใช่ biologically female ล้วน",
+    "D": "✓ ลักษณะทางเพศไม่ตรงกับเพศสรีระทั้งหมดคือ intersex",
+    "E": "nonbinary เป็น identity"
    },
    "audit_note": "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
   },
@@ -998,7 +1070,7 @@
    },
    "answer": "D",
    "answer_status": "draft",
-   "explanation": "ต้องขอ consent ทุกครั้ง",
+   "explanation": "ต้องได้รับ consent ทุกครั้ง",
    "refs": [
     {
      "paper": "MCQ51",
@@ -1010,13 +1082,13 @@
    "tags": [],
    "source": "import",
    "audit_ref": "hlc_51_MCQ_053",
-   "key_concept": "• Consent\n• สรุป: ต้องขอ consent ทุกครั้ง",
+   "key_concept": "• consent ต้องสมัครใจ ชัดเจน ถอนได้\n• ไม่ตำหนิผู้ถูกกระทำ",
    "option_why": {
-    "A": "Abstinence",
-    "B": "เลิก",
-    "C": "อายุยินยอม",
-    "D": "✓ Consent every time",
-    "E": "Self-respect"
+    "A": "abstinence ไม่ใช่คำตอบเรื่องถูกบังคับ",
+    "B": "เลิกเป็นการตัดสินใจของเธอ",
+    "C": "อายุ consent ไม่ใช่ประเด็น",
+    "D": "✓ consent ต้องชัดเจน ทุกครั้ง",
+    "E": "ตำหนิเหยื่อไม่ถูกต้อง"
    },
    "audit_note": "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
   },
@@ -1036,7 +1108,7 @@
    },
    "answer": "B",
    "answer_status": "draft",
-   "explanation": "Phone sex เสี่ยงต่ำสุด",
+   "explanation": "Phone sex ไม่มีการสัมผัส ความเสี่ยงต่ำที่สุด",
    "refs": [
     {
      "paper": "MCQ51",
@@ -1048,13 +1120,13 @@
    "tags": [],
    "source": "import",
    "audit_ref": "hlc_51_MCQ_054",
-   "key_concept": "• Safer sex\n• สรุป: Phone sex เสี่ยงต่ำสุด",
+   "key_concept": "• ความเสี่ยงต่ำสุด = ไม่มีการสัมผัสของเหลว\n• ใช้ถุงยาง",
    "option_why": {
-    "A": "Oral sex",
-    "B": "✓ Phone sex",
-    "C": "Shared toys",
-    "D": "Anal",
-    "E": "Mutual masturbation"
+    "A": "oral sex ติด STI ได้",
+    "B": "✓ phone sex ไม่มีการสัมผัส",
+    "C": "แชร์ sex toys ติดเชื้อ",
+    "D": "anal intercourse เสี่ยงสูง",
+    "E": "mutual masturbation ความเสี่ยงต่ำแต่ไม่เป็นศูนย์"
    },
    "audit_note": "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
   },
@@ -1074,7 +1146,7 @@
    },
    "answer": "D",
    "answer_status": "draft",
-   "explanation": "สนับสนุนเสื้อผ้าและพูดคุยเรื่องเพศสภาพ",
+   "explanation": "เด็ก 6 ขวบสำรวจเพศ สนับสนุนและพูดคุยบริบทสังคม",
    "refs": [
     {
      "paper": "MCQ51",
@@ -1086,13 +1158,13 @@
    "tags": [],
    "source": "import",
    "audit_ref": "hlc_51_MCQ_055",
-   "key_concept": "• Gender-diverse child support\n• สรุป: สนับสนุนเสื้อผ้าและพูดคุยเรื่องเพศสภาพ",
+   "key_concept": "• gender exploration ปกติ\n• พ่อแม่รับฟังและสนับสนุน",
    "option_why": {
-    "A": "หลีกเลี่ยง",
-    "B": "ส่ง dysphoria",
-    "C": "จำกัดการเล่น",
-    "D": "✓ สนับสนุนและพูดคุย",
-    "E": "สรุป transgender"
+    "A": "หลีกเลี่ยงการพูดทำให้เด็กรู้สึกผิด",
+    "B": "ยังไม่ใช่ dysphoria",
+    "C": "จำกัดไม่ช่วย",
+    "D": "✓ ยอมรับ รับฟัง และสอนบริบทสังคม",
+    "E": "ไม่ควรสรุปล่วงหน้า"
    },
    "audit_note": "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
   },
@@ -1112,7 +1184,7 @@
    },
    "answer": "E",
    "answer_status": "draft",
-   "explanation": "วัยทองเซลล์ superficial ลดลง",
+   "explanation": "หลัง menopause ผนังช่องคลอดบางลง superficial cell ลด",
    "refs": [
     {
      "paper": "MCQ51",
@@ -1124,13 +1196,22 @@
    "tags": [],
    "source": "import",
    "audit_ref": "hlc_51_MCQ_056",
-   "key_concept": "• Atrophic vaginitis\n• สรุป: วัยทองเซลล์ superficial ลดลง",
+   "key_concept": "• genitourinary syndrome of menopause\n• maturation index เลื่อนไป parabasal",
+   "mechanism": [
+    "estrogen ลด",
+    "เยื่อบุบางลง glycogen ลด",
+    {
+     "s": "superficial cell ลด",
+     "answer": true
+    },
+    "แห้ง เจ็บ"
+   ],
    "option_why": {
-    "A": "pH เพิ่ม",
-    "B": "—",
-    "C": "Lactobacilli ลด",
-    "D": "Parabasal เพิ่ม",
-    "E": "✓ Superficial cells ↓"
+    "A": "pH เพิ่มไม่ลด",
+    "B": "ข้อความไม่สมบูรณ์",
+    "C": "Lactobacilli ลดตาม glycogen แต่ไม่ใช่ข้อที่เฉลยเลือก",
+    "D": "parabasal cell เพิ่ม ไม่ลด",
+    "E": "✓ estrogen ลด glycogen ลด superficial cell ลด"
    },
    "audit_note": "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
   },
@@ -1149,7 +1230,7 @@
    },
    "answer": "D",
    "answer_status": "draft",
-   "explanation": "Hot flash จาก KNDy neuron hypertrophy และสัญญาณผิดปกติ",
+   "explanation": "Hot flash จาก KNDy neuron โตและสัญญาณเปลี่ยนเมื่อ estrogen ลด",
    "refs": [
     {
      "paper": "MCQ51",
@@ -1161,12 +1242,21 @@
    "tags": [],
    "source": "import",
    "audit_ref": "hlc_51_MCQ_058",
-   "key_concept": "• KNDy: hot flash\n• สรุป: Hot flash จาก KNDy neuron hypertrophy และสัญญาณผิดปกติ",
+   "key_concept": "• KNDy neuron: kisspeptin, NKB, dynorphin\n• fezolinetant (NK3 antagonist) รักษา hot flash",
+   "mechanism": [
+    "estrogen ลดหลัง menopause",
+    "KNDy neuron hypertrophy",
+    {
+     "s": "สัญญาณ NKB เพิ่มรบกวนศูนย์ความร้อน",
+     "answer": true
+    },
+    "hot flash"
+   ],
    "option_why": {
-    "A": "NKB เพิ่ม",
-    "B": "Estrogen ลด",
-    "C": "Hypothalamic sensitivity",
-    "D": "✓ KNDy hypertrophy"
+    "A": "neurokinin B เพิ่มไม่ลด",
+    "B": "estrogen ลด ไม่เพิ่ม",
+    "C": "ความไวไฮโปธาลามัสไม่ใช่คำตอบ",
+    "D": "✓ estrogen ลด KNDy hypertrophy กระตุ้น thermoregulation"
    },
    "audit_note": "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
   },
@@ -1186,7 +1276,7 @@
    },
    "answer": "C",
    "answer_status": "draft",
-   "explanation": "ลด trans-fat เพื่อลดโรคหัวใจ",
+   "explanation": "ผู้สูงอายุควรลด trans-fat เพื่อลดโรคหัวใจและหลอดเลือด",
    "refs": [
     {
      "paper": "MCQ51",
@@ -1198,13 +1288,13 @@
    "tags": [],
    "source": "import",
    "audit_ref": "hlc_51_MCQ_061",
-   "key_concept": "• Healthy aging diet\n• สรุป: ลด trans-fat เพื่อลดโรคหัวใจ",
+   "key_concept": "• trans-fat: LDL↑ HDL↓\n• ผู้สูงอายุต้องการโปรตีนเพียงพอ",
    "option_why": {
-    "A": "โปรตีนไม่จำเป็นต้องลด",
-    "B": "ไข่แดงไม่จำเป็น",
-    "C": "✓ Trans-fat",
-    "D": "ถั่ว",
-    "E": "น้ำตาล"
+    "A": "ไม่ควรลดโปรตีนที่ไม่จำเป็น",
+    "B": "ไข่แดงไม่ต้องจำกัดเข้มงวด",
+    "C": "✓ trans-fat เพิ่ม LDL ลด HDL",
+    "D": "ถั่วดีต่อสุขภาพ",
+    "E": "น้ำตาลเพิ่มเป็นผลเสีย"
    },
    "audit_note": "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
   },
@@ -1223,7 +1313,7 @@
    },
    "answer": "C",
    "answer_status": "draft",
-   "explanation": "แรงกล้ามเนื้อลดจากการเสื่อมของเส้นประสาทที่เลี้ยง (denervation)",
+   "explanation": "อ่อนแรงในผู้สูงอายุจาก motor neuron เสื่อม",
    "refs": [
     {
      "paper": "MCQ51",
@@ -1235,12 +1325,21 @@
    "tags": [],
    "source": "import",
    "audit_ref": "hlc_51_MCQ_070",
-   "key_concept": "• Sarcopenia: motor unit loss\n• สรุป: แรงกล้ามเนื้อลดจากการเสื่อมของเส้นประสาทที่เลี้ยง (denervation)",
+   "key_concept": "• sarcopenia: ลด type II fiber\n• motor unit ลด",
+   "mechanism": [
+    "motor neuron เสื่อม",
+    "กล้ามเนื้อขาดเส้นประสาท",
+    {
+     "s": "fiber ฝ่อ",
+     "answer": true
+    },
+    "อ่อนแรง"
+   ],
    "option_why": {
-    "A": "Type 1 ลดเมื่ออายุ",
-    "B": "Endomysium",
-    "C": "✓ Denervation",
-    "D": "Mitochondria ลด"
+    "A": "type 2 fiber ลด ไม่ใช่ type 1 เพิ่ม",
+    "B": "endomysium ไม่ใช่สาเหตุหลัก",
+    "C": "✓ denervation ทำให้ muscle fiber ฝ่อ (sarcopenia)",
+    "D": "mitochondria ลด"
    },
    "audit_note": "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
   },
@@ -1259,7 +1358,7 @@
    },
    "answer": "B",
    "answer_status": "draft",
-   "explanation": "ซึมเศร้าและความจำผิดปกติ ประเมินจิตเวชก่อน (pseudodementia)",
+   "explanation": "ซึมเศร้าที่มี cognitive complaint = pseudodementia ต้องประเมินจิตเวชและให้ antidepressant",
    "refs": [
     {
      "paper": "MCQ51",
@@ -1271,12 +1370,12 @@
    "tags": [],
    "source": "import",
    "audit_ref": "hlc_51_MCQ_072",
-   "key_concept": "• Depression vs dementia\n• สรุป: ซึมเศร้าและความจำผิดปกติ ประเมินจิตเวชก่อน (pseudodementia)",
+   "key_concept": "• pseudodementia: ตอบ 'ไม่รู้'\n• รักษา depression",
    "option_why": {
-    "A": "Cholinesterase inhibitors",
-    "B": "✓ Psychiatric evaluation",
-    "C": "SDH",
-    "D": "Reassure"
+    "A": "ไม่ใช่ Alzheimer",
+    "B": "✓ ซึมเศร้ากับการตอบ 'ไม่รู้'",
+    "C": "ไม่มีอาการทางระบบประสาท",
+    "D": "ไม่ควรรอ 6 เดือน"
    },
    "audit_note": "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
   },
@@ -1294,7 +1393,7 @@
    },
    "answer": "B",
    "answer_status": "draft",
-   "explanation": "สำรวจความเข้าใจของผู้ป่วยก่อนบอก",
+   "explanation": "ถามผู้ป่วยว่ารู้อะไรและอยากรู้แค่ไหนก่อน",
    "refs": [
     {
      "paper": "MCQ51",
@@ -1306,11 +1405,11 @@
    "tags": [],
    "source": "import",
    "audit_ref": "hlc_51_MCQ_075",
-   "key_concept": "• Breaking bad news: ask-tell-ask\n• สรุป: สำรวจความเข้าใจของผู้ป่วยก่อนบอก",
+   "key_concept": "• SPIKES: perception → invitation\n• สิทธิผู้ป่วย",
    "option_why": {
-    "A": "บอกตรงๆ",
-    "B": "✓ Explore patient understanding",
-    "C": "บอกจะมีชีวิต"
+    "A": "บอกตรง ๆ ทันทีโหดร้าย",
+    "B": "✓ สำรวจความเข้าใจและความต้องการข้อมูลของผู้ป่วย",
+    "C": "ให้ความหวังเท็จ"
    },
    "audit_note": "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
   },
@@ -1329,7 +1428,7 @@
    },
    "answer": "C",
    "answer_status": "draft",
-   "explanation": "ปวดหลัง DM และไตเสื่อมใช้ paracetamol",
+   "explanation": "เบาหวาน+ไตเสื่อม ปวดหลังใช้ paracetamol",
    "refs": [
     {
      "paper": "MCQ51",
@@ -1341,12 +1440,12 @@
    "tags": [],
    "source": "import",
    "audit_ref": "hlc_51_MCQ_078",
-   "key_concept": "• Renal impairment: avoid NSAIDs\n• สรุป: ปวดหลัง DM และไตเสื่อมใช้ paracetamol",
+   "key_concept": "• NSAID + CKD = เสี่ยงไตวาย\n• paracetamol ตัวแรก",
    "option_why": {
-    "A": "Naproxen",
-    "B": "Ibuprofen",
-    "C": "✓ Paracetamol",
-    "D": "Norgesic"
+    "A": "naproxen NSAID เสี่ยงไต",
+    "B": "ibuprofen เสี่ยงไต",
+    "C": "✓ paracetamol ปลอดภัยต่อไต",
+    "D": "Norgesic มี orphenadrine เสี่ยง anticholinergic"
    },
    "audit_note": "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
   },
@@ -1378,13 +1477,22 @@
    "tags": [],
    "source": "import",
    "audit_ref": "hlc_51_MCQ_079",
-   "key_concept": "• Thiazide: hypoK, hypoNa, orthostasis\n• สรุป: HCTZ ทำให้ orthostatic hypotension",
+   "key_concept": "• thiazide: hypoK, hypoNa, hyperuricemia, hyperglycemia\n• ระวังล้ม",
+   "mechanism": [
+    "HCTZ ขับน้ำและเกลือ",
+    "ปริมาตรเลือดลด",
+    {
+     "s": "ความดันตกเวลายืน",
+     "answer": true
+    },
+    "orthostatic hypotension"
+   ],
    "option_why": {
-    "A": "Diarrhea",
-    "B": "Hyperkalemia ไม่ใช่",
-    "C": "Hypoglycemia ไม่ใช่",
-    "D": "ไตวาย",
-    "E": "✓ Orthostatic hypotension"
+    "A": "ไม่ใช่ท้องเสีย",
+    "B": "HCTZ ทำให้ hypokalemia ไม่ใช่ hyperkalemia",
+    "C": "ไม่ทำ hypoglycemia (ทำ hyperglycemia)",
+    "D": "ไม่ใช่ไตวายโดยตรง",
+    "E": "✓ ลดปริมาตรเลือด ผู้สูงอายุหน้ามืด"
    },
    "audit_note": "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
   },
@@ -1404,7 +1512,7 @@
    },
    "answer": "C",
    "answer_status": "draft",
-   "explanation": "Furosemide ตรวจ serum electrolytes",
+   "explanation": "Furosemide ต้องตรวจ electrolytes",
    "refs": [
     {
      "paper": "MCQ51",
@@ -1416,13 +1524,13 @@
    "tags": [],
    "source": "import",
    "audit_ref": "hlc_51_MCQ_080",
-   "key_concept": "• Loop diuretic: electrolytes\n• สรุป: Furosemide ตรวจ serum electrolytes",
+   "key_concept": "• loop diuretic: hypoK, hypoMg, ototoxicity\n• ตรวจ K ใน 1–2 สัปดาห์",
    "option_why": {
-    "A": "CBC",
-    "B": "HR",
-    "C": "✓ Electrolytes",
-    "D": "LFT",
-    "E": "BUN/Cr"
+    "A": "CBC ไม่จำเป็น",
+    "B": "HR ไม่ใช่ตัวติดตามหลัก",
+    "C": "✓ เสี่ยง hypoK hypoNa hypoMg",
+    "D": "LFT ไม่เกี่ยว",
+    "E": "BUN/Cr ควรตามแต่ electrolyte เร่งด่วนกว่า"
    },
    "audit_note": "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
   }
