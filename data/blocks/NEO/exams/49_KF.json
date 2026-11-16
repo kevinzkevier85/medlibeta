@@ -1,0 +1,810 @@
+{
+ "meta": {
+  "set_id": "49_KF",
+  "block": "NEO",
+  "cohort": 49,
+  "type": "KF",
+  "title": "KF Neoplasia · Med PSU 49",
+  "time_limit_min": 120,
+  "generated_by": "auditor/tools/build_kf.py from auditor/data/work/neo_49_KF.kf.json — do not edit by hand"
+ },
+ "questions": [
+  {
+   "id": "NEO-49-KF-001",
+   "block": "NEO",
+   "cohort": 49,
+   "n": 1,
+   "type": "KF",
+   "case": "ชายไทย 50 ปี ผมก้อนที่ผิวหนัง ต่อมาพบว่าก้อนเนื้องอกที่พบคือ squamous cell carcinoma",
+   "items": [
+    {
+     "id": "1.1",
+     "prompt": "ความแตกต่างระหว่าง Bowen disease (carcinoma in situ) กับ squamous cell carcinoma",
+     "format": "short",
+     "accepted": [
+      "basement membrane",
+      "invasion"
+     ],
+     "keywords_all": [
+      "basement membrane"
+     ],
+     "key_text": "Bowen disease ไม่มีการ invasion ผ่าน basement membrane ส่วน SCC มี invasion ผ่าน basement membrane",
+     "source_key": "เฉลย: Bowen disease ไม่มีการ invasion ผ่าน basement membrane ส่วน SCC มี invasion ผ่าน basement membrane"
+    },
+    {
+     "id": "1.2",
+     "prompt": "Prognostic factors ของโรค",
+     "format": "short",
+     "accepted": [
+      "tnm",
+      "size",
+      "ขนาด",
+      "อายุ"
+     ],
+     "keywords_all": [
+      "tnm",
+      "stage"
+     ],
+     "key_text": "ภูมิคุ้มกันต่ำ · ขนาด tumor · ตำแหน่ง tumor · TNM stage · อายุ · sun exposure",
+     "source_key": "เฉลย: ภูมิคุ้มกันต่ำ · ขนาด tumor · ตำแหน่ง tumor · TNM stage · อายุ · sun exposure"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF49",
+     "pages": [
+      1
+     ]
+    },
+    {
+     "paper": "KF49-KEY",
+     "pages": [
+      1
+     ]
+    }
+   ],
+   "tags": [
+    "pathology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "NEO-49-KF-002",
+   "block": "NEO",
+   "cohort": 49,
+   "n": 2,
+   "type": "KF",
+   "case": "ชายไทย 72 ปี พบก้อนที่ปอดจากการตรวจสุขภาพ ส่งชิ้นเนื้อพบ adenocarcinoma of lung",
+   "items": [
+    {
+     "id": "2.1",
+     "prompt": "ปัจจัยเสี่ยงต่อการเกิดมะเร็ง",
+     "format": "short",
+     "accepted": [
+      "smoking",
+      "asbestos",
+      "pollution"
+     ],
+     "keywords_all": [
+      "smoking"
+     ],
+     "key_text": "Smoking · Asbestos · Air pollution",
+     "source_key": "เฉลย: Smoking · Asbestos · Air pollution"
+    },
+    {
+     "id": "2.2",
+     "prompt": "ปัจจัยที่ทำให้พยากรณ์โรคไม่ดี (unfavorable prognosis)",
+     "format": "short",
+     "accepted": [
+      "invasion",
+      "pleural effusion"
+     ],
+     "keywords_all": [
+      "effusion"
+     ],
+     "key_text": "Vascular/local invasion · Malignant pleural effusion",
+     "source_key": "เฉลย: Vascular/local invasion · Malignant pleural effusion"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF49",
+     "pages": [
+      1
+     ]
+    },
+    {
+     "paper": "KF49-KEY",
+     "pages": [
+      1
+     ]
+    }
+   ],
+   "tags": [
+    "lung"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "NEO-49-KF-003",
+   "block": "NEO",
+   "cohort": 49,
+   "n": 3,
+   "type": "KF",
+   "case": "อัตราการตายจากมะเร็งในแคนาดา ค.ศ. 2000 (crude 211.0/100,000) และ 2011 (204.2/100,000)",
+   "items": [
+    {
+     "id": "3.1",
+     "prompt": "วิธีหา age-standardized mortality rate เทียบโครงสร้างประชากรปี 1997 (อายุ <40 = 61.6%, ≥40 = 38.4%)",
+     "format": "short",
+     "accepted": [
+      "0.616",
+      "0.384",
+      "weight"
+     ],
+     "keywords_all": [
+      "0.616"
+     ],
+     "key_text": "Age-standardized rate = (0.616 × mortality rate กลุ่มอายุ <40) + (0.384 × mortality rate กลุ่มอายุ ≥40)",
+     "source_key": "เฉลยลายมืออ่านยาก — AI เติม"
+    },
+    {
+     "id": "3.2",
+     "prompt": "เปรียบเทียบ age-standardized กับ crude mortality rate เมื่อ ASR 2000 = 177.9, 2011 = 163.6",
+     "format": "short",
+     "accepted": [
+      "standard",
+      "crude",
+      "โครงสร้างอายุ",
+      "เปรียบเทียบ"
+     ],
+     "keywords_all": [
+      "standard"
+     ],
+     "key_text": "ASR ปรับด้วย standard population จึงเปรียบเทียบข้ามปีได้โดยไม่ถูกบิดเบือนจากการเปลี่ยนโครงสร้างอายุ ขณะที่ crude rate ได้รับผลจากโครงสร้างประชากร (ประชากรสูงอายุเพิ่ม) · ASR ลดลงมากกว่า crude แสดงว่าอัตราตายจริงลดลง",
+     "source_key": "เฉลยลายมืออ่านยาก — AI เติม"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF49",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "KF49-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [
+    "epidemiology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "NEO-49-KF-004",
+   "block": "NEO",
+   "cohort": 49,
+   "n": 4,
+   "type": "KF",
+   "case": "แผนภูมิ ASR ของมะเร็งตับและท่อน้ำดีในจังหวัดต่าง ๆ ของไทย และแผนภูมิ % ของ histological type ในผู้ชาย 2016–2018",
+   "items": [
+    {
+     "id": "4.1",
+     "prompt": "อธิบายแผนภูมิ",
+     "format": "short",
+     "accepted": [
+      "อีสาน",
+      "ตะวันออกเฉียงเหนือ",
+      "hepatocellular",
+      "cholangiocarcinoma"
+     ],
+     "keywords_all": [
+      "cholangiocarcinoma"
+     ],
+     "key_text": "แผนภูมิแรกแสดงว่าภาคตะวันออกเฉียงเหนือมี ASR ของมะเร็งตับและท่อน้ำดีสูง และผู้ชายสูงกว่าผู้หญิง · แผนภูมิที่สองแสดงว่าเกือบทุกพื้นที่เป็น hepatocellular carcinoma และ cholangiocarcinoma โดยสัดส่วนของแต่ละ histological type แตกต่างกันตามจังหวัด",
+     "source_key": "เฉลยลายมืออ่านยาก — AI เติม",
+     "image": "img/NEO-49-KF-004.jpg",
+     "image_caption": "แผนภูมิมะเร็งตับและท่อน้ำดีในไทย"
+    },
+    {
+     "id": "4.2",
+     "prompt": "อภิปรายความแตกต่างของอุบัติการณ์และ histological type ของมะเร็งตับและท่อน้ำดี",
+     "format": "short",
+     "accepted": [
+      "พยาธิ",
+      "opisthorchis",
+      "liver fluke",
+      "ปลาดิบ"
+     ],
+     "keywords_all": [
+      "พยาธิ",
+      "liver fluke"
+     ],
+     "key_text": "ภาคตะวันออกเฉียงเหนือและภาคเหนือมี cholangiocarcinoma สูงจากพยาธิใบไม้ตับ (Opisthorchis viverrini) จากการกินปลาดิบ ส่วนภาคกลางมี HCC สัดส่วนมากกว่า",
+     "source_key": "เฉลยลายมืออ่านยาก — AI เติม"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF49",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "KF49-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [
+    "epidemiology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "NEO-49-KF-005",
+   "block": "NEO",
+   "cohort": 49,
+   "n": 5,
+   "type": "KF",
+   "case": "ชายไทย 65 ปี เสียงแหบ 2 ปี พบก้อนที่กล่องเสียง 2 cm และก้อนที่คอ 1.5 cm ตัดก้อนที่คอส่งตรวจพบต่อมน้ำเหลืองชนิด squamous cell ในก้อน",
+   "items": [
+    {
+     "id": "5.1",
+     "prompt": "วินิจฉัยความผิดปกติของต่อมน้ำเหลือง",
+     "format": "short",
+     "accepted": [
+      "squamous cell carcinoma",
+      "metasta"
+     ],
+     "keywords_all": [
+      "squamous"
+     ],
+     "key_text": "Squamous cell carcinoma (metastasis จากกล่องเสียง)",
+     "source_key": "เฉลย: Squamous cell carcinoma (metastasis จากกล่องเสียง)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF49",
+     "pages": [
+      3
+     ]
+    },
+    {
+     "paper": "KF49-KEY",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [
+    "head and neck"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "NEO-49-KF-006",
+   "block": "NEO",
+   "cohort": 49,
+   "n": 6,
+   "type": "KF",
+   "case": "บอก histological characteristic ของ malignancy 2 อย่างจากภาพ",
+   "items": [
+    {
+     "id": "6.1",
+     "prompt": "Histological characteristics ของ malignancy",
+     "format": "short",
+     "accepted": [
+      "pleomorphism",
+      "abnormal mitosis",
+      "ground glass"
+     ],
+     "keywords_all": [
+      "pleomorphism"
+     ],
+     "key_text": "Pleomorphism (ขนาดและรูปร่างต่างกัน) · Abnormal mitosis · Ground-glass chromatin",
+     "source_key": "เฉลย: Pleomorphism (ขนาดและรูปร่างต่างกัน) · Abnormal mitosis · Ground-glass chromatin",
+     "image": "img/NEO-49-KF-006.jpg",
+     "image_caption": "ภาพ histology มะเร็ง"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF49",
+     "pages": [
+      3
+     ]
+    },
+    {
+     "paper": "KF49-KEY",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [
+    "pathology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "NEO-49-KF-007",
+   "block": "NEO",
+   "cohort": 49,
+   "n": 7,
+   "type": "KF",
+   "case": "หญิง 25 ปี พบก้อนที่เต้านม 3 cm เป็นมา 3 เดือน",
+   "items": [
+    {
+     "id": "7.1",
+     "prompt": "โรคที่เป็นไปได้ 2 โรค",
+     "format": "short",
+     "accepted": [
+      "fibroadenoma",
+      "invasive ductal"
+     ],
+     "keywords_all": [
+      "fibroadenoma"
+     ],
+     "key_text": "Fibroadenoma (benign) · Invasive ductal carcinoma (malignant)",
+     "source_key": "เฉลย: Fibroadenoma (benign) · Invasive ductal carcinoma (malignant)"
+    },
+    {
+     "id": "7.2",
+     "prompt": "เนื้อก้อนมีลักษณะตามภาพ ระบุชนิดของมะเร็งที่พบในผู้ป่วยนี้",
+     "format": "short",
+     "accepted": [
+      "fibroadenoma"
+     ],
+     "keywords_all": [
+      "fibroadenoma"
+     ],
+     "key_text": "Fibroadenoma (ลักษณะ slit-like glandular space)",
+     "source_key": "เฉลย: Fibroadenoma (ลักษณะ slit-like glandular space)",
+     "image": "img/NEO-49-KF-007.jpg",
+     "image_caption": "Histology และก้อน gross ของ fibroadenoma"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF49",
+     "pages": [
+      4
+     ]
+    },
+    {
+     "paper": "KF49-KEY",
+     "pages": [
+      4
+     ]
+    }
+   ],
+   "tags": [
+    "breast"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "NEO-49-KF-008",
+   "block": "NEO",
+   "cohort": 49,
+   "n": 8,
+   "type": "KF",
+   "case": "ลักษณะเนื้องอกที่เห็นด้วยตาเปล่าและเซลล์ต้นกำเนิด (เนื้องอกขนาด 4 cm)",
+   "items": [
+    {
+     "id": "8.1",
+     "prompt": "ลักษณะภายนอกของเนื้องอก (Gross)",
+     "format": "short",
+     "accepted": [
+      "เหลือง",
+      "capsule",
+      "hemorrhage",
+      "necrosis"
+     ],
+     "keywords_all": [
+      "เหลือง"
+     ],
+     "key_text": "เนื้องอกสีเหลือง เป็นก้อนมีเยื่อหุ้ม ขนาด 4 cm ขอบเขตชัดเจน มีบางส่วนเลือดออก (hemorrhage) และเนื้อตาย (necrosis)",
+     "source_key": "เฉลยลายมืออ่านยาก — AI เติม",
+     "image": "img/NEO-49-KF-008.jpg",
+     "image_caption": "เนื้องอก gross"
+    },
+    {
+     "id": "8.2",
+     "prompt": "เนื้องอกพัฒนาจากเซลล์อะไร",
+     "format": "short",
+     "accepted": [
+      "adipocyte"
+     ],
+     "keywords_all": [
+      "adipocyte"
+     ],
+     "key_text": "Adipocyte",
+     "source_key": "เฉลย: Adipocyte"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF49",
+     "pages": [
+      4
+     ]
+    },
+    {
+     "paper": "KF49-KEY",
+     "pages": [
+      4
+     ]
+    }
+   ],
+   "tags": [
+    "pathology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "NEO-49-KF-009",
+   "block": "NEO",
+   "cohort": 49,
+   "n": 9,
+   "type": "KF",
+   "case": "ชายไทยไม่ได้ประกอบอาชีพ ปวดท้องซ้ายบนมีก้อนที่ท้องซ้ายบนติดตับอ่อน ตัวเหลืองตาเหลือง ผิวเหลือง ไขมันและคอเลสเตอรอลในเลือดสูง (Hyperlipidemia/Hypercholesterolemia)",
+   "items": [
+    {
+     "id": "9.1",
+     "prompt": "ระบุชื่อและตำแหน่งของมะเร็ง",
+     "format": "short",
+     "accepted": [
+      "pancreatic",
+      "head of pancreas"
+     ],
+     "keywords_all": [
+      "pancrea"
+     ],
+     "key_text": "Pancreatic cancer ที่ head of pancreas",
+     "source_key": "เฉลย: Pancreatic cancer ที่ head of pancreas"
+    },
+    {
+     "id": "9.2",
+     "prompt": "ภาวะอะไรมักพบในผู้ป่วยกลุ่มนี้",
+     "format": "short",
+     "accepted": [
+      "jaundice",
+      "obstructive"
+     ],
+     "keywords_all": [
+      "jaundice"
+     ],
+     "key_text": "Jaundice จากท่อน้ำดีส่วนปลายถูกกดจากก้อน (obstructive jaundice) อาจมี painless jaundice และ Courvoisier sign",
+     "source_key": "เฉลยลายมืออ่านยาก — AI เติม"
+    },
+    {
+     "id": "9.3",
+     "prompt": "ผู้ป่วยมีตัวเหลือง ตาเหลืองและผิวเหลืองเพราะอะไร",
+     "format": "short",
+     "accepted": [
+      "conjugated",
+      "bilirubin",
+      "อุดตัน"
+     ],
+     "keywords_all": [
+      "bilirubin"
+     ],
+     "key_text": "Conjugated bilirubin (CB) หรือ unconjugated bilirubin (UCB) ที่ขับไม่ได้เพราะท่อน้ำดีอุดตัน ทำให้ bilirubin ไหลย้อนเข้าเลือด",
+     "source_key": "เฉลยลายมืออ่านยาก — AI เติม"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF49",
+     "pages": [
+      5
+     ]
+    },
+    {
+     "paper": "KF49-KEY",
+     "pages": [
+      5
+     ]
+    }
+   ],
+   "tags": [
+    "gi"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "NEO-49-KF-010",
+   "block": "NEO",
+   "cohort": 49,
+   "n": 10,
+   "type": "KF",
+   "case": "ผู้ป่วยหญิงกลืนลำบากและเจ็บเวลากลืนโดยเฉพาะตอนกลืนของแข็งมากกว่าของเหลว และเสียงแหบ พบก้อนบริเวณหลอดอาหารส่วนบนและเลือดออก",
+   "items": [
+    {
+     "id": "10.1",
+     "prompt": "ชื่อของมะเร็งที่พบ",
+     "format": "short",
+     "accepted": [
+      "esophageal",
+      "squamous cell carcinoma"
+     ],
+     "keywords_all": [
+      "squamous"
+     ],
+     "key_text": "Esophageal cancer (squamous cell carcinoma)",
+     "source_key": "เฉลย: Esophageal cancer (squamous cell carcinoma)"
+    },
+    {
+     "id": "10.2",
+     "prompt": "ชนิดของเซลล์ที่พบในการตรวจก้อนเนื้อมะเร็ง",
+     "format": "short",
+     "accepted": [
+      "squamous"
+     ],
+     "keywords_all": [
+      "squamous"
+     ],
+     "key_text": "Squamous cells",
+     "source_key": "เฉลย: Squamous cells"
+    },
+    {
+     "id": "10.3",
+     "prompt": "เสียงแหบร่วมด้วยเกิดจาก invasion ไปยังเส้นประสาทใด",
+     "format": "short",
+     "accepted": [
+      "recurrent laryngeal",
+      "pharyngoesophageal"
+     ],
+     "keywords_all": [
+      "laryngeal",
+      "pharyngoesophageal"
+     ],
+     "key_text": "Recurrent laryngeal nerve (ตามเฉลยลายมืออ่านได้ว่า pharyngoesophageal nerve)",
+     "source_key": "เฉลยลายมืออ่านยาก — AI เติม"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF49",
+     "pages": [
+      5
+     ]
+    },
+    {
+     "paper": "KF49-KEY",
+     "pages": [
+      5
+     ]
+    }
+   ],
+   "tags": [
+    "gi"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "NEO-49-KF-011",
+   "block": "NEO",
+   "cohort": 49,
+   "n": 11,
+   "type": "KF",
+   "case": "ผู้ป่วยชายอายุ 74 ปี พบก้อนเนื้อยื่นออกเป็น polyp ที่ลำไส้และมีอาการอ่อนแรง ตัวซูบผอม มีปริมาณกล้ามเนื้อลดลง",
+   "items": [
+    {
+     "id": "11.1",
+     "prompt": "อาการอ่อนแรงและกลุ่มอาการอื่น ๆ ดังกล่าว มีชื่อเรียกว่าอะไร",
+     "format": "short",
+     "accepted": [
+      "cachexia"
+     ],
+     "keywords_all": [
+      "cachexia"
+     ],
+     "key_text": "Cachexia",
+     "source_key": "เฉลย: Cachexia"
+    },
+    {
+     "id": "11.2",
+     "prompt": "กลุ่มอาการดังกล่าวมักพบในกลุ่มโรคใด",
+     "format": "short",
+     "accepted": [
+      "malignant",
+      "cancer"
+     ],
+     "keywords_all": [
+      "cancer"
+     ],
+     "key_text": "Malignant cancer",
+     "source_key": "เฉลย: Malignant cancer"
+    },
+    {
+     "id": "11.3",
+     "prompt": "ปัจจัยที่ทำให้เกิดการอักเสบจนทำให้กล้ามเนื้อลดลง 3 ข้อ",
+     "format": "short",
+     "accepted": [
+      "tnf",
+      "il-1",
+      "il-6"
+     ],
+     "keywords_all": [
+      "tnf"
+     ],
+     "key_text": "TNF-alpha · IL-1 · IL-6",
+     "source_key": "เฉลย: TNF-alpha · IL-1 · IL-6"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF49",
+     "pages": [
+      6
+     ]
+    },
+    {
+     "paper": "KF49-KEY",
+     "pages": [
+      6
+     ]
+    }
+   ],
+   "tags": [
+    "paraneoplastic"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "NEO-49-KF-012",
+   "block": "NEO",
+   "cohort": 49,
+   "n": 12,
+   "type": "KF",
+   "case": "ผู้ป่วยหญิง 40 ปี มีเลือดออกในช่องคลอดผิดปกติ พบก้อนที่ปากมดลูก 3 cm สีขาว ขอบขรุขระ น้ำชิ้นเนื้อตรวจพบ carcinoma with keratin producing (ภาพ)",
+   "items": [
+    {
+     "id": "12.1",
+     "prompt": "Microbial carcinogen ใดทำให้เกิดมะเร็งนี้",
+     "format": "short",
+     "accepted": [
+      "hpv"
+     ],
+     "keywords_all": [
+      "hpv"
+     ],
+     "key_text": "HPV",
+     "source_key": "เฉลย: HPV",
+     "image": "img/NEO-49-KF-012.jpg",
+     "image_caption": "Squamous cell carcinoma ปากมดลูก"
+    },
+    {
+     "id": "12.2",
+     "prompt": "การทำงานของ viral oncoprotein E6 E7",
+     "format": "short",
+     "accepted": [
+      "p53",
+      "rb"
+     ],
+     "keywords_all": [
+      "p53",
+      "rb"
+     ],
+     "key_text": "E6 ยับยั้ง p53 และกระตุ้น telomerase · E7 ยับยั้ง p21 และ RB",
+     "source_key": "เฉลย: E6 ยับยั้ง p53 และกระตุ้น telomerase · E7 ยับยั้ง p21 และ RB"
+    },
+    {
+     "id": "12.3",
+     "prompt": "ชนิดของเชื้อที่เสี่ยงสูง 2 ชนิด",
+     "format": "short",
+     "accepted": [
+      "16",
+      "18"
+     ],
+     "keywords_all": [
+      "16"
+     ],
+     "key_text": "HPV 16 และ HPV 18",
+     "source_key": "เฉลย: HPV 16 และ HPV 18"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF49",
+     "pages": [
+      6
+     ]
+    },
+    {
+     "paper": "KF49-KEY",
+     "pages": [
+      6
+     ]
+    }
+   ],
+   "tags": [
+    "gynecology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "NEO-49-KF-013",
+   "block": "NEO",
+   "cohort": 49,
+   "n": 13,
+   "type": "KF",
+   "case": "ชายอายุ 50 ปี ปวดท้องร่วมกับท้องผูกสลับท้องเสีย (bowel habit change) ส่องกล้องพบก้อนที่ลำไส้ใหญ่ ได้รับการวินิจฉัยว่าเป็น colorectal cancer ผู้ป่วยมีประวัติพ่อเป็นโรคเมื่ออายุ 50 ปี และสูบบุหรี่ตั้งแต่อายุ 30 ปี",
+   "items": [
+    {
+     "id": "13.1",
+     "prompt": "Risk factor 1 อย่างของผู้ป่วยนี้",
+     "format": "short",
+     "accepted": [
+      "family",
+      "พ่อ",
+      "อายุ",
+      "สูบบุหรี่"
+     ],
+     "keywords_all": [
+      "family",
+      "พ่อ"
+     ],
+     "key_text": "พ่อเป็นโรคเดียวกัน (family history) · อายุ · สูบบุหรี่",
+     "source_key": "เฉลย: พ่อเป็นโรคเดียวกัน (family history) · อายุ · สูบบุหรี่"
+    },
+    {
+     "id": "13.2",
+     "prompt": "ลูกควรตรวจหามะเร็งลำไส้ใหญ่ตั้งแต่อายุเท่าใด",
+     "format": "short",
+     "accepted": [
+      "30",
+      "40"
+     ],
+     "keywords_all": [
+      "30",
+      "40"
+     ],
+     "key_text": "ประมาณ 30–40 ปี (เร็วกว่าอายุที่พ่อเป็นโรค 10 ปี)",
+     "source_key": "เฉลยลายมืออ่านยาก — AI เติม"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF49",
+     "pages": [
+      7
+     ]
+    },
+    {
+     "paper": "KF49-KEY",
+     "pages": [
+      7
+     ]
+    }
+   ],
+   "tags": [
+    "gi"
+   ],
+   "source": "claude-mcp"
+  }
+ ]
+}
