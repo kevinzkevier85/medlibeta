@@ -209,8 +209,8 @@ def build_medlib(sets):
             if a["key_page"]:
                 refs.append({"paper": pid["key"], "pages": [a["key_page"]]})
             exp = re.sub(r"^\((.*?)\)\*\* — ", lambda m: m.group(1) + " — ", q["explanation"])
-            if q["issues"]:
-                exp += "\n⚠️ " + " · ".join(q["issues"])
+            # issues (e.g. "AI wrote the answer") go to audit_note, not into the one-line explanation (docs/mcq-explain-brief.md)
+            audit_note = " · ".join(q["issues"]) if q["issues"] else ""
             n = int(q["number"])
             qid_ml = f"{B}-{c}-MCQ-{n:03d}"
             qs.append({"id": f"{B}-{c}-MCQ-{n:03d}", "block": B, "cohort": c, "n": n, "type": "MCQ",
@@ -222,6 +222,7 @@ def build_medlib(sets):
                          if medlib_status(a) == "disputed" and a["ai_answer"] in q["choices"] and q["choices"].get(a["ai_answer"]) and a["ai_answer"] != q["correct"] else {})
                       | {f: q[f] for f in ("key_concept", "mechanism") if q.get(f)}
                       | ({"option_why": {k: v for k, v in q["option_why"].items() if q["choices"].get(k)}} if q.get("option_why") else {})
+                      | ({"audit_note": audit_note} if audit_note else {})
                       | ({"image": q["image"]} if q.get("image") else {})
                       | ({"image_caption": q["image_caption"]} if q.get("image_caption") else {}))
         out = {"meta": {"set_id": set_name, "block": B, "cohort": c, "type": t,
