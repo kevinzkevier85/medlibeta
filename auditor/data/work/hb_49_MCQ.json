@@ -19,17 +19,26 @@
     "E": "optic disk"
    },
    "correct": "A",
-   "explanation": "Fovea มีเฉพาะ cone หนาแน่นและไม่มีหลอดเลือดบัง จึงมี visual acuity ดีที่สุด",
+   "explanation": "Fovea มี cone หนาแน่นและไม่มีเส้นเลือดบัง ให้ความคมชัดสูงสุด",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "✓ Fovea cone density สูงสุด 1:1 กับ ganglion",
-    "B": "Retina ทั้งหมด acuity ต่ำกว่า",
-    "C": "Ganglion cell ไม่ใช่ตำแหน่งรับภาพ",
-    "D": "Bipolar cell ไม่ใช่",
-    "E": "Optic disc ไม่มี photoreceptor"
+    "A": "✓ fovea มี cone 1:1 กับ ganglion cell ภาพคมที่สุด",
+    "B": "retina ทั้งแผ่นมีความละเอียดต่ำกว่าส่วนกลาง",
+    "C": "ganglion cell เป็นเซลล์ส่งสัญญาณ ไม่ใช่ตำแหน่งรับภาพ",
+    "D": "bipolar cell เป็นตัวต่อ ไม่ใช่ตำแหน่งที่ให้ acuity",
+    "E": "optic disc เป็นจุดบอด ไม่มี photoreceptor"
    },
-   "key_concept": "• Fovea = highest acuity\n• Optic disc = blind spot",
+   "key_concept": "• fovea: cone เท่านั้น ไม่มีเส้นเลือด\n• ratio cone:ganglion ใกล้ 1:1 → acuity สูง\n• optic disc = blind spot",
+   "mechanism": [
+    "แสงตกบน fovea",
+    "cone ต่อ bipolar และ ganglion แบบ 1:1",
+    {
+     "s": "convergence ต่ำ ความละเอียดสูงสุด",
+     "answer": true
+    },
+    "ภาพชัดที่จุดมอง"
+   ],
    "audit": {
     "source_file": "preclinic/3/higher-brain/mcq/ข้อสอบ mcq/MCQ_Higher brain [Med PSU 49].pdf",
     "page": 1,
@@ -68,17 +77,26 @@
     "E": "Loss of consensual pupil light reflex in the left eye"
    },
    "correct": "C",
-   "explanation": "Optic nerve ขวาเสียทำให้ direct reflex ขวาเสีย แต่ direct reflex ของตาซ้ายยังปกติ จึงข้อ C ไม่ควรเกิด",
+   "explanation": "Optic nerve ขวาเสีย: direct reflex ขวาหาย และ consensual ที่ซ้ายหาย แต่ direct reflex ซ้ายยังปกติ",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "Acuity ตาขวาลดลงเกิดได้",
-    "B": "การเห็นสีตาขวาเสียได้",
-    "C": "✓ Direct reflex ตาซ้ายปกติ เพราะ afferent ซ้ายยังดี",
-    "D": "Direct reflex ตาขวาเสีย",
-    "E": "Consensual reflex ตาซ้ายเสียเมื่อฉายแสงตาขวา"
+    "A": "acuity ตาขวาลดลงตามการเสียของ nerve",
+    "B": "การรับสีของตาขวาเสีย",
+    "C": "✓ direct reflex ซ้ายผ่านเส้นประสาทซ้ายปกติ จึงไม่ควรเสีย",
+    "D": "afferent ขวาเสีย direct reflex ขวาหาย",
+    "E": "consensual ซ้ายต้องใช้ afferent จากตาขวา จึงหาย"
    },
-   "key_concept": "• Optic nerve lesion: afferent defect ipsilateral\n• สรุป: Optic nerve ขวาเสียทำให้ direct reflex ขวาเสีย แต่ direct reflex ของตาซ้ายยังปกติ จึงข้อ C",
+   "key_concept": "• afferent pupillary defect: ตาที่ nerve เสีย direct หาย, consensual ในตาอีกข้างหาย\n• ฉายแสงตาดี: ปกติทั้งสองข้าง",
+   "mechanism": [
+    "แสงเข้าตาขวา",
+    "optic nerve ขวาเสีย ไม่ส่งสัญญาณ",
+    {
+     "s": "ไม่มีสัญญาณไป pretectal ทั้งสองข้าง",
+     "answer": true
+    },
+    "direct ขวา + consensual ซ้ายหาย"
+   ],
    "audit": {
     "source_file": "preclinic/3/higher-brain/mcq/ข้อสอบ mcq/MCQ_Higher brain [Med PSU 49].pdf",
     "page": 1,
@@ -117,17 +135,26 @@
     "E": "Right superior quadrantanopia 311-313 Higher brain function and special sensation ข8อสอบ MCQ 1.ข้อสอบมีทั้งหมด 68 ข้อ (ข้อสอบจริงมีจำนวน 130 ข้อ) 3.ข้อสอบจริงเป็นภาษาอังกฤษทั้งหมด"
    },
    "correct": "B",
-   "explanation": "รอยโรค cuneus ขวา (upper bank ของ calcarine) ทำให้ left inferior quadrantanopia",
+   "explanation": "Lesion ที่ cuneus ขวา (บนของ calcarine) ทำให้เสียลานสายตาล่างซ้าย = left inferior quadrantanopia",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "Homonymous hemianopia ต้องเสียทั้ง calcarine",
-    "B": "✓ Cuneus = superior bank รับ inferior field",
-    "C": "Superior quadrant เกิดที่ lingual gyrus",
-    "D": "ไม่ใช่คำตอบที่ถูกต้องของโจทย์ข้อนี้",
-    "E": "ไม่ใช่คำตอบที่ถูกต้องของโจทย์ข้อนี้"
+    "A": "hemianopia ต้อง lesion ทั้ง calcarine หรือ optic tract",
+    "B": "✓ cuneus รับ superior retina ของด้านเดียวกัน → inferior field ด้านตรงข้าม",
+    "C": "superior quadrantanopia เกิดจาก lingual gyrus/Meyer loop",
+    "D": "ลานสายตาเสียด้านตรงข้าม คือซ้าย ไม่ใช่ขวา",
+    "E": "ลานสายตาเสียด้านตรงข้ามและส่วนล่าง"
    },
-   "key_concept": "• Cuneus → inferior visual field\n• Lingual → superior visual field",
+   "key_concept": "• cuneus (บน calcarine) = inferior visual field\n• lingual gyrus (ล่าง calcarine) = superior field\n• Meyer loop (temporal) = superior; parietal = inferior",
+   "mechanism": [
+    "lesion cuneus ขวา",
+    "เสียการรับ superior retina",
+    {
+     "s": "เสีย inferior field ซ้าย",
+     "answer": true
+    },
+    "left inferior quadrantanopia"
+   ],
    "audit": {
     "source_file": "preclinic/3/higher-brain/mcq/ข้อสอบ mcq/MCQ_Higher brain [Med PSU 49].pdf",
     "page": 1,
@@ -166,17 +193,17 @@
     "E": "Amacrine cell"
    },
    "correct": "B",
-   "explanation": "Axon ของ ganglion cell รวมกันเป็น optic nerve",
+   "explanation": "Ganglion cell axon รวมกันเป็น optic nerve",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "Bipolar ส่งต่อให้ ganglion",
-    "B": "✓ Ganglion cell axon",
-    "C": "Rod เป็น photoreceptor",
-    "D": "Cone เป็น photoreceptor",
-    "E": "Amacrine เป็น interneuron"
+    "A": "bipolar cell ส่งต่อไป ganglion เท่านั้น",
+    "B": "✓ axon ของ ganglion cell คือ optic nerve",
+    "C": "rod เป็นตัวรับแสง",
+    "D": "cone เป็นตัวรับแสง",
+    "E": "amacrine เป็น interneuron"
    },
-   "key_concept": "• Retinal output = ganglion cell\n• สรุป: Axon ของ ganglion cell รวมกันเป็น optic nerve",
+   "key_concept": "• เรตินา: photoreceptor → bipolar → ganglion\n• ผลผลิตเดียวที่ออกจากเรตินาคือ ganglion axon",
    "audit": {
     "source_file": "preclinic/3/higher-brain/mcq/ข้อสอบ mcq/MCQ_Higher brain [Med PSU 49].pdf",
     "page": 2,
@@ -215,17 +242,26 @@
     "E": "Lateral geniculate body"
    },
    "correct": "C",
-   "explanation": "Bitemporal hemianopia เกิดจากรอยโรคที่ optic chiasm (เช่น pituitary tumor)",
+   "explanation": "Bitemporal hemianopia จาก lesion ที่ optic chiasm (เช่น pituitary adenoma)",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "Optic nerve ทำให้ตาบอดข้างเดียว",
-    "B": "Optic tract ทำให้ homonymous",
-    "C": "✓ Chiasm ไขว้ nasal fibers",
-    "D": "Radiation ทำให้ quadrantanopia",
-    "E": "LGB ทำให้ homonymous"
+    "A": "optic nerve เสียทำให้ตาบอดข้างเดียว",
+    "B": "optic tract เสียทำให้ homonymous hemianopia",
+    "C": "✓ chiasm ตัดเส้นใยจาก nasal retina ซึ่งรับลานตา temporal",
+    "D": "visual radiation ทำให้ homonymous quadrantanopia/hemianopia",
+    "E": "LGN เสียทำให้ homonymous hemianopia"
    },
-   "key_concept": "• Chiasm lesion → bitemporal hemianopia\n• สรุป: Bitemporal hemianopia เกิดจากรอยโรคที่ optic chiasm (เช่น pituitary tumor)",
+   "key_concept": "• chiasm: nasal fibers ไขว้ → bitemporal\n• pituitary adenoma กดจากด้านล่าง → superior bitemporal\n• craniopharyngioma กดจากบน → inferior",
+   "mechanism": [
+    "ก้อนกด chiasm",
+    "เส้นใย nasal retina ไขว้ถูกตัด",
+    {
+     "s": "เสีย temporal field ทั้งสองตา",
+     "answer": true
+    },
+    "bitemporal hemianopia"
+   ],
    "audit": {
     "source_file": "preclinic/3/higher-brain/mcq/ข้อสอบ mcq/MCQ_Higher brain [Med PSU 49].pdf",
     "page": 2,
@@ -264,16 +300,25 @@
     "E": ""
    },
    "correct": "D",
-   "explanation": "ของเหลวสะสมใน anterior chamber เพิ่ม IOP ทำให้ปวดและมองไม่ชัด คือ glaucoma",
+   "explanation": "Glaucoma จาก aqueous humor ระบายไม่ได้ ความดันตาสูง (ข้อความโจทย์อธิบายของเหลวสะสมใน anterior cavity)",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "Cataract เลนส์ขุ่น ไม่ปวด",
-    "B": "Pterygium เนื้อเยื่อเยื่อบุตา",
-    "C": "Retinoblastoma ในเด็ก",
-    "D": "✓ Glaucoma จาก aqueous humor ระบายไม่ได้"
+    "A": "cataract คือเลนส์ขุ่น ไม่ใช่ความดันตา",
+    "B": "pterygium คือเนื้อเยื่อเยื่อบุตาลุกลามกระจกตา",
+    "C": "retinoblastoma เป็นมะเร็งเด็ก",
+    "D": "✓ ของเหลวใน anterior chamber ระบายไม่ทัน IOP สูงทำให้ปวดและตามัว"
    },
-   "key_concept": "• Glaucoma: ↑ IOP, optic neuropathy\n• สรุป: ของเหลวสะสมใน anterior chamber เพิ่ม IOP ทำให้ปวดและมองไม่ชัด คือ glaucoma",
+   "key_concept": "• glaucoma: IOP สูง → optic nerve เสียหาย\n• angle-closure ปวดมาก ตามัว\n• aqueous ผลิตที่ ciliary body ระบายที่ trabecular meshwork",
+   "mechanism": [
+    "aqueous ผลิตตามปกติ",
+    "ทางระบายอุดตัน",
+    {
+     "s": "IOP สูงขึ้น",
+     "answer": true
+    },
+    "ปวดตา ตามัว ทำลาย optic nerve"
+   ],
    "audit": {
     "source_file": "preclinic/3/higher-brain/mcq/ข้อสอบ mcq/MCQ_Higher brain [Med PSU 49].pdf",
     "page": 2,
@@ -312,15 +357,15 @@
     "E": ""
    },
    "correct": "A",
-   "explanation": "เลนส์ขุ่นในผู้สูงอายุ คือ cataract",
+   "explanation": "เลนส์ขุ่น = cataract",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "✓ Cataract",
-    "B": "Glaucoma ไม่ใช่เลนส์ขุ่น",
-    "C": "Retinoblastoma เกิดในเด็ก"
+    "A": "✓ cataract คือ lens opacity",
+    "B": "glaucoma คือ IOP สูง",
+    "C": "retinoblastoma เป็นเนื้องอกเรตินา"
    },
-   "key_concept": "• Cataract: lens opacity\n• สรุป: เลนส์ขุ่นในผู้สูงอายุ คือ cataract",
+   "key_concept": "• สาเหตุ: อายุ เบาหวาน steroid UV\n• รักษาผ่าตัดใส่ IOL",
    "audit": {
     "source_file": "preclinic/3/higher-brain/mcq/ข้อสอบ mcq/MCQ_Higher brain [Med PSU 49].pdf",
     "page": 2,
@@ -359,16 +404,25 @@
     "E": ""
    },
    "correct": "C",
-   "explanation": "Posterior hypothalamus เป็นศูนย์เก็บความร้อน เสียแล้วทนความหนาวไม่ได้",
+   "explanation": "Posterior hypothalamus ควบคุมการเก็บและสร้างความร้อน เสียแล้วทนหนาวไม่ได้",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "Arcuate คุมฮอร์โมน",
-    "B": "Lateral feeding center",
-    "C": "✓ Posterior nucleus heat conservation",
-    "D": "VMH satiety"
+    "A": "arcuate nucleus คุม feeding/ปล่อย hormone",
+    "B": "lateral nucleus คือ feeding center",
+    "C": "✓ posterior nucleus เมื่อเสียจะไม่ตอบสนองต่อความเย็น",
+    "D": "VMH คือ satiety center"
    },
-   "key_concept": "• Posterior = heat conservation, anterior = heat loss\n• สรุป: Posterior hypothalamus เป็นศูนย์เก็บความร้อน เสียแล้วทนความหนาวไม่ได้",
+   "key_concept": "• anterior = cooling · posterior = heat conservation/production\n• posterior lesion → poikilothermia",
+   "mechanism": [
+    "ความเย็นกระตุ้นรับรู้",
+    "posterior hypothalamus สั่ง shivering/vasoconstriction",
+    {
+     "s": "เมื่อเสียไม่สั่งการ",
+     "answer": true
+    },
+    "อุณหภูมิร่างกายต่ำ"
+   ],
    "audit": {
     "source_file": "preclinic/3/higher-brain/mcq/ข้อสอบ mcq/MCQ_Higher brain [Med PSU 49].pdf",
     "page": 3,
@@ -407,16 +461,16 @@
     "E": ""
    },
    "correct": "B",
-   "explanation": "น้ำหนักลด ไม่อยากอาหาร จาก lateral hypothalamic nucleus (feeding center) ถูกทำลาย",
+   "explanation": "Lateral hypothalamus เป็น feeding center เสียหายแล้วไม่อยากอาหารและน้ำหนักลด",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "Arcuate คุม NPY/POMC",
-    "B": "✓ Lateral nucleus เสียทำให้ aphagia",
-    "C": "VMH เสียทำให้ hyperphagia",
-    "D": "DMN ไม่ใช่"
+    "A": "arcuate nucleus คุม feeding ทั้งสองทางแต่ไม่ใช่ศูนย์กระตุ้นให้กินโดยตรง",
+    "B": "✓ lateral nucleus สั่งให้กิน ถ้าเสียเกิด aphagia",
+    "C": "ventromedial nucleus เสียทำให้กินไม่หยุด ตรงข้ามกับโจทย์",
+    "D": "dorsomedial nucleus ไม่ใช่ศูนย์หลักของการกินและการอดอาหาร"
    },
-   "key_concept": "• LH = hunger; VMH = satiety\n• สรุป: น้ำหนักลด ไม่อยากอาหาร จาก lateral hypothalamic nucleus (feeding center) ถูกทำลาย",
+   "key_concept": "• lateral = feeding center · VMH = satiety center\n• lateral lesion → aphagia น้ำหนักลด",
    "audit": {
     "source_file": "preclinic/3/higher-brain/mcq/ข้อสอบ mcq/MCQ_Higher brain [Med PSU 49].pdf",
     "page": 3,
@@ -459,13 +513,13 @@
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "Central output",
-    "B": "Centromedial output",
-    "C": "Ventromedial ไม่ใช่นิวเคลียสของ amygdala",
-    "D": "Basolateral รับข้อมูลจาก cortex",
-    "E": "✓ Corticomedial รับ olfactory"
+    "A": "central nucleus ส่งออก autonomic",
+    "B": "centromedial เป็นทางออก",
+    "C": "ventromedial ไม่ใช่นิวเคลียสของ amygdala",
+    "D": "basolateral รับจาก cortex/thalamus",
+    "E": "✓ corticomedial รับ olfactory ตรง"
    },
-   "key_concept": "• Olfaction bypasses thalamus → cortico-medial amygdala\n• สรุป: Corticomedial amygdala รับข้อมูลกลิ่นโดยตรงจาก olfactory bulb",
+   "key_concept": "• กลิ่นเป็นประสาทสัมผัสเดียวที่ไม่ผ่าน thalamus ก่อนเข้า cortex\n• corticomedial = olfactory",
    "audit": {
     "source_file": "preclinic/3/higher-brain/mcq/ข้อสอบ mcq/MCQ_Higher brain [Med PSU 49].pdf",
     "page": 3,
@@ -504,17 +558,26 @@
     "E": "Raphe nuclei"
    },
    "correct": "A",
-   "explanation": "ช่วง REM limbic system ทำงานมาก",
+   "explanation": "REM: limbic system ทำงานมาก",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "✓ Limbic ↑",
-    "B": "Prefrontal ↓",
-    "C": "LC off",
-    "D": "Posterior cingulate ไม่ใช่",
-    "E": "Raphe off"
+    "A": "✓ limbic (amygdala, cingulate) active ใน REM",
+    "B": "prefrontal ทำงานลดลง",
+    "C": "locus coeruleus เงียบ (REM-off)",
+    "D": "posterior cingulate ไม่ใช่บริเวณเด่น",
+    "E": "raphe เงียบ (REM-off)"
    },
-   "key_concept": "• REM: limbic ↑\n• สรุป: ช่วง REM limbic system ทำงานมาก",
+   "key_concept": "• REM-on: pontine cholinergic\n• REM-off: LC, raphe\n• REM: limbic ↑ PFC ↓",
+   "mechanism": [
+    "cholinergic REM-on neuron active",
+    "LC/raphe หยุดยิง",
+    {
+     "s": "limbic active ความฝันเกิด",
+     "answer": true
+    },
+    "PFC ลดทำให้ฝันไร้เหตุผล"
+   ],
    "audit": {
     "source_file": "preclinic/3/higher-brain/mcq/ข้อสอบ mcq/MCQ_Higher brain [Med PSU 49].pdf",
     "page": 3,
@@ -553,17 +616,17 @@
     "E": "REM sleep"
    },
    "correct": "B",
-   "explanation": "Sleep spindle ใน stage II เกิดจาก thalamocortical interaction",
+   "explanation": "Stage II (sleep spindle, K-complex) เกิดจาก thalamocortical interaction",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "Stage I คือ theta",
-    "B": "✓ Stage II มี spindle และ K complex",
-    "C": "Stage III delta",
-    "D": "Stage IV delta",
-    "E": "REM beta-like"
+    "A": "stage I มี theta wave",
+    "B": "✓ spindle เกิดจาก thalamic reticular nucleus ร่วมกับ cortex",
+    "C": "stage III มี delta wave",
+    "D": "stage IV มี delta wave (รวมกับ III เป็น N3)",
+    "E": "REM คล้ายตื่น"
    },
-   "key_concept": "• N2: spindles from thalamic reticular nucleus\n• สรุป: Sleep spindle ใน stage II เกิดจาก thalamocortical interaction",
+   "key_concept": "• N2: sleep spindle + K-complex\n• N3: delta wave",
    "audit": {
     "source_file": "preclinic/3/higher-brain/mcq/ข้อสอบ mcq/MCQ_Higher brain [Med PSU 49].pdf",
     "page": 4,
@@ -602,17 +665,26 @@
     "E": "Medial geniculate nucleus of thalamus"
    },
    "correct": "E",
-   "explanation": "Auditory fear conditioning ต้องผ่าน medial geniculate nucleus ไปยัง amygdala",
+   "explanation": "Auditory fear conditioning ต้องการ medial geniculate nucleus ส่งเสียงไป amygdala",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "Orbital cortex ควบคุม",
-    "B": "Ventral basal ganglion ไม่ใช่",
-    "C": "mPFC ยับยั้ง",
-    "D": "MD thalamus ไม่ใช่",
-    "E": "✓ MGN auditory relay"
+    "A": "orbital cortex คุมการตัดสินใจ",
+    "B": "ventral basal ganglia เกี่ยวกับ reward",
+    "C": "mPFC ยับยั้งความกลัว ไม่จำเป็นต่อการเรียนรู้",
+    "D": "mediodorsal thalamus เกี่ยวกับ memory/PFC",
+    "E": "✓ MGN ส่งสัญญาณเสียงไป lateral amygdala"
    },
-   "key_concept": "• Auditory fear: MGN → lateral amygdala\n• สรุป: Auditory fear conditioning ต้องผ่าน medial geniculate nucleus ไปยัง amygdala",
+   "key_concept": "• fear conditioning: MGN → lateral amygdala\n• ทางลัด thalamus→amygdala เร็วกว่า cortex",
+   "mechanism": [
+    "เสียงเข้า MGN",
+    "MGN ส่งไป lateral amygdala",
+    {
+     "s": "เรียนรู้ CS–US",
+     "answer": true
+    },
+    "ความกลัวต่อเสียง"
+   ],
    "audit": {
     "source_file": "preclinic/3/higher-brain/mcq/ข้อสอบ mcq/MCQ_Higher brain [Med PSU 49].pdf",
     "page": 4,
@@ -651,17 +723,17 @@
     "E": "Hippocampal hypertrophy"
    },
    "correct": "D",
-   "explanation": "PTSD: medial prefrontal cortex activation ลดลง จึงยับยั้ง amygdala ไม่ได้",
+   "explanation": "PTSD พบ mPFC ทำงานลดลง ทำให้ยับยั้ง amygdala ไม่ได้",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "Amygdala ทำงานมากไม่ใช่ hyperplasia",
-    "B": "Cingulate ไม่ใช่หลัก",
-    "C": "Amygdala hyperactive ไม่ใช่ deactivation",
-    "D": "✓ mPFC ↓",
-    "E": "Hippocampus ฝ่อ"
+    "A": "amygdala ไวเกิน ไม่ใช่ hyperplasia",
+    "B": "anterior cingulate/mPFC ทำงานลดลง",
+    "C": "amygdala hyperactive ไม่ใช่ deactivated",
+    "D": "✓ mPFC ลดลง สูญเสียการยับยั้งความกลัว",
+    "E": "hippocampus ฝ่อ ไม่ใช่ hypertrophy"
    },
-   "key_concept": "• PTSD: amygdala ↑, mPFC ↓, hippocampus ↓\n• สรุป: PTSD: medial prefrontal cortex activation ลดลง จึงยับยั้ง amygdala ไม่ได้",
+   "key_concept": "• PTSD: amygdala ↑ mPFC ↓ hippocampus ↓\n• extinction learning เสีย",
    "audit": {
     "source_file": "preclinic/3/higher-brain/mcq/ข้อสอบ mcq/MCQ_Higher brain [Med PSU 49].pdf",
     "page": 4,
@@ -700,17 +772,17 @@
     "E": "เห็นอุบัติเหตุรถชน แต่ไม่สนใจ เพราะกำลังรีบ"
    },
    "correct": "B",
-   "explanation": "Ventromedial prefrontal cortex เกี่ยวกับการตัดสินใจเชิงจริยธรรม เช่นเลือกนโยบายเพื่อคนส่วนใหญ่",
+   "explanation": "Ventromedial PFC เกี่ยวกับการตัดสินใจเชิงศีลธรรมที่คำนึงถึงประโยชน์ส่วนรวม",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "เอาผลงานผู้อื่นผิดจริยธรรม",
-    "B": "✓ ตัดสินใจเพื่อประโยชน์ส่วนรวม",
-    "C": "เป็นผู้บริจาคอวัยวะ",
-    "D": "เพื่อชื่อเสียง",
-    "E": "ไม่สนใจเพราะรีบ"
+    "A": "การเคลมผลงานผู้อื่นเป็นพฤติกรรมไร้ศีลธรรม ซึ่ง vmPFC ปกติยับยั้ง",
+    "B": "✓ vmPFC ผสมอารมณ์กับเหตุผลเพื่อตัดสินเพื่อส่วนรวม",
+    "C": "เป็น organ donor เป็นการตัดสินใจส่วนบุคคล ไม่ใช่การชั่งน้ำหนักประโยชน์ส่วนรวม",
+    "D": "การตีพิมพ์เพื่อชื่อเสียงตนเองเป็นการตัดสินที่เห็นแก่ตัว",
+    "E": "เห็นอุบัติเหตุแล้วไม่สนใจเป็นการขาดความเห็นอกเห็นใจ ซึ่ง vmPFC ปกติช่วยยับยั้ง"
    },
-   "key_concept": "• vmPFC: moral decision, empathy\n• สรุป: Ventromedial prefrontal cortex เกี่ยวกับการตัดสินใจเชิงจริยธรรม เช่นเลือกนโยบายเพื่อคนส่วน",
+   "key_concept": "• vmPFC เสียหาย → ตัดสินทางสังคมผิด ไม่ยั้งคิด\n• Phineas Gage",
    "audit": {
     "source_file": "preclinic/3/higher-brain/mcq/ข้อสอบ mcq/MCQ_Higher brain [Med PSU 49].pdf",
     "page": 4,
@@ -749,16 +821,16 @@
     "E": ""
    },
    "correct": "C",
-   "explanation": "การสูญเสียการรับกลิ่นโดยไม่มีความผิดปกติของจมูก จากความผิดปกติของ piriform cortex (primary olfactory cortex)",
+   "explanation": "สูญเสียกลิ่นโดยจมูกปกติ = ปัญหาที่ olfactory tract",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "Piriform cortex เป็น primary olfactory cortex",
-    "B": "Prefrontal เป็น association",
-    "C": "✓ Olfactory tract",
-    "D": "Amygdala ไม่ใช่"
+    "A": "piriform cortex เสียทำให้จำแนกกลิ่นผิด ไม่ใช่สูญเสียกลิ่น",
+    "B": "prefrontal เกี่ยวกับการตัดสินใจเรื่องกลิ่น",
+    "C": "✓ olfactory tract นำสัญญาณไป cortex",
+    "D": "amygdala เกี่ยวกับอารมณ์ต่อกลิ่น ไม่ใช่การรับกลิ่นเอง"
    },
-   "key_concept": "• Primary olfactory cortex = piriform\n• สรุป: การสูญเสียการรับกลิ่นโดยไม่มีความผิดปกติของจมูก จากความผิดปกติของ piriform cortex (primary",
+   "key_concept": "• anosmia: olfactory nerve/bulb/tract\n• trauma (cribriform plate) ตัด olfactory n.",
    "audit": {
     "source_file": "preclinic/3/higher-brain/mcq/ข้อสอบ mcq/MCQ_Higher brain [Med PSU 49].pdf",
     "page": 5,
@@ -797,17 +869,26 @@
     "E": "Dysarthria"
    },
    "correct": "C",
-   "explanation": "พูดคล่องแต่ไม่ตรงประเด็น ไม่เข้าใจภาษา คือ sensory (Wernicke) aphasia",
+   "explanation": "พูดคล่องแต่ไม่สื่อความหมาย = sensory (Wernicke) aphasia",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "Global aphasia พูดไม่คล่อง",
-    "B": "Motor aphasia พูดไม่คล่อง",
-    "C": "✓ Sensory aphasia: fluent, poor comprehension",
-    "D": "ไม่ใช่คำตอบที่ถูกต้องของโจทย์ข้อนี้",
-    "E": "ไม่ใช่คำตอบที่ถูกต้องของโจทย์ข้อนี้"
+    "A": "global ทั้งพูดและเข้าใจเสีย",
+    "B": "motor aphasia พูดติดขัดแต่เข้าใจ",
+    "C": "✓ Wernicke พูดลื่นแต่ไม่มีความหมาย และไม่เข้าใจ",
+    "D": "psychosis มีอาการอื่นร่วม",
+    "E": "dysarthria เป็นปัญหาการออกเสียง ไม่ใช่เนื้อหา"
    },
-   "key_concept": "• Wernicke: fluent, impaired comprehension\n• สรุป: พูดคล่องแต่ไม่ตรงประเด็น ไม่เข้าใจภาษา คือ sensory (Wernicke) aphasia",
+   "key_concept": "• Wernicke: fluent, ไม่เข้าใจ, lesion superior temporal gyrus\n• Broca: nonfluent, เข้าใจดี",
+   "mechanism": [
+    "lesion Wernicke area",
+    "เสียความเข้าใจภาษา",
+    {
+     "s": "พูดคล่องแต่ไร้ความหมาย",
+     "answer": true
+    },
+    "sensory aphasia"
+   ],
    "audit": {
     "source_file": "preclinic/3/higher-brain/mcq/ข้อสอบ mcq/MCQ_Higher brain [Med PSU 49].pdf",
     "page": 5,
@@ -889,17 +970,17 @@
     "E": "Eosinophilic cytoplasmic inclusions in cytoplasm of neurons"
    },
    "correct": "D",
-   "explanation": "Alzheimer มี neurofibrillary tangles (tau) และ amyloid plaques",
+   "explanation": "Alzheimer พบ neurofibrillary tangle (tau) ในไซโตพลาซึมของ neuron",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "Vascular degeneration คือ vascular dementia",
-    "B": "Demyelination คือ MS",
-    "C": "Pick bodies คือ FTD",
-    "D": "✓ Neurofibrillary tangles ใน neuron",
-    "E": "Eosinophilic inclusion ไม่ใช่ AD"
+    "A": "vascular เป็น vascular dementia",
+    "B": "demyelination เป็น MS",
+    "C": "Pick body เป็น frontotemporal dementia",
+    "D": "✓ NFT (hyperphosphorylated tau) + amyloid plaque",
+    "E": "eosinophilic inclusion เช่น Lewy body (DLB/PD)"
    },
-   "key_concept": "• AD: plaques + tangles\n• สรุป: Alzheimer มี neurofibrillary tangles (tau) และ amyloid plaques",
+   "key_concept": "• AD: amyloid plaque นอกเซลล์, NFT ในเซลล์\n• เริ่ม hippocampus/entorhinal\n• APOE4 เสี่ยง",
    "audit": {
     "source_file": "preclinic/3/higher-brain/mcq/ข้อสอบ mcq/MCQ_Higher brain [Med PSU 49].pdf",
     "page": 5,
@@ -942,12 +1023,12 @@
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "Donepezil ยับยั้ง AChE",
-    "B": "✓ Rivastigmine ยับยั้งทั้งสอง",
-    "C": "Memantine NMDA antagonist",
-    "D": "Atropine antimuscarinic"
+    "A": "donepezil ยับยั้ง AChE เป็นหลัก",
+    "B": "✓ rivastigmine ยับยั้งทั้งสองเอนไซม์",
+    "C": "memantine เป็น NMDA antagonist",
+    "D": "atropine เป็น antimuscarinic"
    },
-   "key_concept": "• Rivastigmine: AChE + BuChE\n• สรุป: Rivastigmine ยับยั้งทั้ง AChE และ BuChE",
+   "key_concept": "• AD: AChEI (donepezil, rivastigmine, galantamine) + memantine\n• ADR: GI, bradycardia",
    "audit": {
     "source_file": "preclinic/3/higher-brain/mcq/ข้อสอบ mcq/MCQ_Higher brain [Med PSU 49].pdf",
     "page": 5,
@@ -986,16 +1067,16 @@
     "E": ""
    },
    "correct": "D",
-   "explanation": "Astigmatism (กระจกตาโค้งไม่เท่ากัน) แก้ด้วย cylindrical lens",
+   "explanation": "Astigmatism แก้ด้วยเลนส์ทรงกระบอก (cylindrical)",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "Concave แก้สายตาสั้น",
-    "B": "Convex แก้สายตายาว",
-    "C": "Progressive แก้สายตายาวตามวัย",
-    "D": "✓ Cylindrical lens"
+    "A": "concave แก้สายตาสั้น",
+    "B": "convex แก้สายตายาว",
+    "C": "progressive แก้สายตายาวตามวัย",
+    "D": "✓ cylindrical แก้การโค้งไม่เท่ากันของกระจกตา"
    },
-   "key_concept": "• Astigmatism: cylindrical lens\n• สรุป: Astigmatism (กระจกตาโค้งไม่เท่ากัน) แก้ด้วย cylindrical lens",
+   "key_concept": "• myopia: concave · hyperopia: convex · astigmatism: cylindrical\n• presbyopia: bifocal/progressive",
    "audit": {
     "source_file": "preclinic/3/higher-brain/mcq/ข้อสอบ mcq/MCQ_Higher brain [Med PSU 49].pdf",
     "page": 6,
@@ -1034,16 +1115,16 @@
     "E": ""
    },
    "correct": "D",
-   "explanation": "Generalized seizure เกิดจาก paroxysmal depolarization shift ที่ยืดเยื้อ",
+   "explanation": "ชักทั้งตัวจาก paroxysmal depolarization shift (PDS) ต่อเนื่อง",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "Na efflux ไม่ใช่",
-    "B": "Cl efflux ไม่ใช่",
-    "C": "Refractory ยาวจะยับยั้ง",
-    "D": "✓ Sustained PDS"
+    "A": "Na+ efflux ไม่ทำให้เซลล์กระตุ้น",
+    "B": "Cl- efflux ทำให้ depolarize ไม่ใช่ PDS",
+    "C": "refractory period ยาวคือยับยั้ง ไม่ใช่ชัก",
+    "D": "✓ PDS คือ depolarization ยาวพร้อมกลุ่ม action potential เป็นพื้นฐานของ interictal spike"
    },
-   "key_concept": "• Seizure: PDS\n• สรุป: Generalized seizure เกิดจาก paroxysmal depolarization shift ที่ยืดเยื้อ",
+   "key_concept": "• PDS = ยกตัวของ membrane potential ยาว\n• neuron ชักถูกกระตุ้นซ้ำ",
    "audit": {
     "source_file": "preclinic/3/higher-brain/mcq/ข้อสอบ mcq/MCQ_Higher brain [Med PSU 49].pdf",
     "page": 6,
@@ -1082,17 +1163,17 @@
     "E": "viral meningitis provoked seizure"
    },
    "correct": "E",
-   "explanation": "ชักเกร็งครั้งเดียวขณะติดเชื้อ (acute symptomatic seizure) ตามเฉลยเลือกข้อ E (ข้อความตัวเลือกถูกตัดในต้นฉบับ)",
+   "explanation": "ชักครั้งเดียวระหว่าง viral meningitis โดยไม่มีรอยโรคอื่น = provoked seizure",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "Focal motor ไม่เหมาะ",
-    "B": "Generalized tonic seizure คือชนิดของชัก ไม่ใช่กลไก",
-    "C": "Absence ไม่ใช่",
-    "D": "ไม่ใช่คำตอบที่ถูกต้องของโจทย์ข้อนี้",
-    "E": "✓ ไม่ใช่คำตอบที่ถูกต้องของโจทย์ข้อนี้"
+    "A": "focal ไม่ตรงกับ generalized",
+    "B": "generalized tonic เป็นชนิดแต่โจทย์ถามสาเหตุ",
+    "C": "absence ไม่ใช่ชักเกร็ง",
+    "D": "meningitis เป็นโรค ไม่ใช่กลไกชัก",
+    "E": "✓ การอักเสบของเยื่อหุ้มสมองกระตุ้นชักแบบ acute symptomatic"
    },
-   "key_concept": "• Acute symptomatic seizure จาก CNS infection\n• สรุป: ชักเกร็งครั้งเดียวขณะติดเชื้อ (acute symptomatic seizure) ตามเฉลยเลือกข้อ E (ข้อความตัวเลื",
+   "key_concept": "• provoked seizure: สาเหตุเฉียบพลัน (ไข้ เยื่อหุ้มสมองอักเสบ เมตาบอลิก)\n• ไม่ได้เป็น epilepsy",
    "audit": {
     "source_file": "preclinic/3/higher-brain/mcq/ข้อสอบ mcq/MCQ_Higher brain [Med PSU 49].pdf",
     "page": 6,
@@ -1131,17 +1212,26 @@
     "E": "carbamazepine"
    },
    "correct": "E",
-   "explanation": "Trigeminal neuralgia: drug of choice คือ carbamazepine",
+   "explanation": "Trigeminal neuralgia ใช้ carbamazepine เป็นยาเลือกแรก",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "Phenytoin ลำดับรอง",
-    "B": "Valproate ไม่ใช่",
-    "C": "Phenobarbital ไม่ใช่",
-    "D": "Levetiracetam ไม่ใช่",
-    "E": "✓ Carbamazepine"
+    "A": "phenytoin ไม่ใช่ยาหลัก",
+    "B": "valproate ไม่ใช่ยาหลัก",
+    "C": "phenobarbital ไม่ใช่ยาหลัก",
+    "D": "levetiracetam ไม่ใช่ยาหลัก",
+    "E": "✓ carbamazepine ปิด Na channel ลดการยิงซ้ำของ nerve"
    },
-   "key_concept": "• TN: carbamazepine\n• สรุป: Trigeminal neuralgia: drug of choice คือ carbamazepine",
+   "key_concept": "• TN: ปวดแปล๊บ electric shock\n• carbamazepine/oxcarbazepine first-line",
+   "mechanism": [
+    "trigeminal nerve ยิงผิดปกติซ้ำ",
+    "carbamazepine ปิด Na channel",
+    {
+     "s": "ลด repetitive firing",
+     "answer": true
+    },
+    "ปวดทุเลา"
+   ],
    "audit": {
     "source_file": "preclinic/3/higher-brain/mcq/ข้อสอบ mcq/MCQ_Higher brain [Med PSU 49].pdf",
     "page": 6,
@@ -1180,16 +1270,16 @@
     "E": ""
    },
    "correct": "A",
-   "explanation": "HLA-B*15:02 ต้องหลีกเลี่ยง carbamazepine เพราะเสี่ยง SJS/TEN",
+   "explanation": "HLA-B*1502 เป็นข้อห้ามของ carbamazepine เพราะ SJS/TEN",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "✓ Carbamazepine",
-    "B": "Valproate ไม่เกี่ยว",
-    "C": "Phenytoin เกี่ยวกับ HLA-B*15:02 รอง",
-    "D": "Lamotrigine ไม่ใช่หลัก"
+    "A": "✓ carbamazepine เสี่ยง SJS/TEN",
+    "B": "valproate ไม่สัมพันธ์ HLA นี้",
+    "C": "phenytoin พบเกี่ยวกับ HLA-B*1502 น้อยกว่า",
+    "D": "lamotrigine เสี่ยงผื่น แต่ไม่ใช่ HLA นี้"
    },
-   "key_concept": "• HLA-B*15:02 → CBZ\n• สรุป: HLA-B*15:02 ต้องหลีกเลี่ยง carbamazepine เพราะเสี่ยง SJS/TEN",
+   "key_concept": "• HLA-B*1502 พบมากในชาวเอเชีย\n• ตรวจก่อนเริ่มยา",
    "audit": {
     "source_file": "preclinic/3/higher-brain/mcq/ข้อสอบ mcq/MCQ_Higher brain [Med PSU 49].pdf",
     "page": 7,
@@ -1228,17 +1318,17 @@
     "E": "Depression"
    },
    "correct": "A",
-   "explanation": "อารมณ์ครึกครื้น ภูมิใจ พูดมาก ใช้เงินมาก นอนน้อย คือ mania",
+   "explanation": "อารมณ์สูง เชื่อมั่นเกินตน พูดมาก ใช้เงินฟุ่มเฟือย นอนน้อย = mania",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "✓ Mania",
-    "B": "Delusion",
-    "C": "Illusion",
-    "D": "Anxiety",
-    "E": "Depression"
+    "A": "✓ manic episode",
+    "B": "delusion เป็นความเชื่อผิด",
+    "C": "illusion คือรับรู้ผิด",
+    "D": "anxiety ไม่ใช่ mood สูง",
+    "E": "depression เป็นอารมณ์ตรงข้าม"
    },
-   "key_concept": "• Mania criteria\n• สรุป: อารมณ์ครึกครื้น ภูมิใจ พูดมาก ใช้เงินมาก นอนน้อย คือ mania",
+   "key_concept": "• mania ≥1 สัปดาห์\n• รักษา lithium/valproate",
    "audit": {
     "source_file": "preclinic/3/higher-brain/mcq/ข้อสอบ mcq/MCQ_Higher brain [Med PSU 49].pdf",
     "page": 7,
@@ -1277,17 +1367,17 @@
     "E": "Ventral tegmental area, nucleus accumbens, prefrontal cortex"
    },
    "correct": "E",
-   "explanation": "การติดสุราและ psychosis เกี่ยวข้อง mesolimbic pathway (VTA → nucleus accumbens → prefrontal/limbic)",
+   "explanation": "ติดแอลกอฮอล์ใช้ mesolimbic pathway: VTA → nucleus accumbens (ventral striatum)",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "SN-caudate-putamen เป็น nigrostriatal",
-    "B": "ไม่ใช่ mesolimbic",
-    "C": "ไม่ตรง",
-    "D": "ไม่ตรง",
-    "E": "✓ VTA → NAc → PFC (reward/mesolimbic-mesocortical)"
+    "A": "substantia nigra → caudate/putamen คือ nigrostriatal ควบคุมการเคลื่อนไหว",
+    "B": "nigra → accumbens ไม่ตรงกับเส้นทาง dopamine จริง",
+    "C": "VTA → caudate/dorsal striatum ไม่ใช่เส้นทาง reward หลัก",
+    "D": "ตัวเลือกนี้ไม่ตรงกับเส้นทาง mesolimbic",
+    "E": "✓ VTA ส่ง dopamine ไป nucleus accumbens ทำให้เกิด reward"
    },
-   "key_concept": "• Mesolimbic: VTA → NAc\n• สรุป: การติดสุราและ psychosis เกี่ยวข้อง mesolimbic pathway (VTA → nucleus accumbens → prefronta",
+   "key_concept": "• mesolimbic = reward/addiction\n• nigrostriatal = เคลื่อนไหว",
    "audit": {
     "source_file": "preclinic/3/higher-brain/mcq/ข้อสอบ mcq/MCQ_Higher brain [Med PSU 49].pdf",
     "page": 7,
@@ -1330,13 +1420,13 @@
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "CN III อยู่ผนังด้านข้าง",
-    "B": "CN IV อยู่ผนังด้านข้าง",
-    "C": "✓ CN VI อยู่ภายในแนบ ICA",
-    "D": "V1 อยู่ผนังข้าง",
-    "E": "V2 อยู่ผนังข้าง"
+    "A": "CN III อยู่ที่ผนังด้านข้าง",
+    "B": "CN IV อยู่ที่ผนังด้านข้าง",
+    "C": "✓ abducens ลอยในไซนัสชิด ICA",
+    "D": "V1 อยู่ที่ผนังด้านข้าง",
+    "E": "V2 อยู่ที่ผนังด้านข้างใต้ V1"
    },
-   "key_concept": "• Cavernous sinus: ICA + CN VI inside; III, IV, V1, V2 lateral wall\n• สรุป: ใน cavernous sinus CN VI อยู่ติด ICA มากที่สุด",
+   "key_concept": "• ผนังข้าง: III, IV, V1, V2\n• ใน sinus: ICA + VI\n• aneurysm ICA → CN VI palsy ก่อน",
    "audit": {
     "source_file": "preclinic/3/higher-brain/mcq/ข้อสอบ mcq/MCQ_Higher brain [Med PSU 49].pdf",
     "page": 7,
@@ -1375,17 +1465,17 @@
     "E": "Clozapine"
    },
    "correct": "E",
-   "explanation": "Clozapine เป็นยา last-line สำหรับ refractory schizophrenia",
+   "explanation": "Clozapine เป็นยาทางเลือกสุดท้ายใน treatment-resistant psychosis",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "Lurasidone first-line",
-    "B": "Paliperidone first-line",
-    "C": "Risperidone first-line",
-    "D": "Quetiapine first-line",
-    "E": "✓ Clozapine ใช้เมื่อยาอื่นล้มเหลว"
+    "A": "lurasidone เป็น atypical ที่ใช้ทั่วไป",
+    "B": "paliperidone เป็น atypical ทั่วไป",
+    "C": "risperidone เป็นตัวเลือกแรกทั่วไป",
+    "D": "quetiapine เป็นตัวเลือกทั่วไป",
+    "E": "✓ clozapine ใช้เมื่อล้มเหลว ≥2 ตัว เพราะ agranulocytosis"
    },
-   "key_concept": "• Clozapine: treatment-resistant schizophrenia\n• สรุป: Clozapine เป็นยา last-line สำหรับ refractory schizophrenia",
+   "key_concept": "• clozapine: treatment-resistant, suicidality\n• ต้องตรวจ ANC",
    "audit": {
     "source_file": "preclinic/3/higher-brain/mcq/ข้อสอบ mcq/MCQ_Higher brain [Med PSU 49].pdf",
     "page": 8,
@@ -1424,14 +1514,14 @@
     "E": ""
    },
    "correct": "A",
-   "explanation": "Benzodiazepine เป็น anticonvulsant ส่วน Z-drug ไม่ใช่ เพราะจับ α1 เฉพาะ",
+   "explanation": "BZD มีฤทธิ์กันชัก ขณะที่ Z-drug (selective α1) ไม่ใช่",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "✓ BZD ออกฤทธิ์กันชักได้ แต่ Z-drug ไม่",
-    "B": "Onset ไม่ต่างกันชัดเจน"
+    "A": "✓ BZD จับ GABA-A หลาย subunit จึงกันชักและคลายกล้ามเนื้อ ส่วน Z-drug เลือก α1 เป็นหลัก",
+    "B": "onset ใกล้เคียงกันและไม่ใช่ความต่างหลัก"
    },
-   "key_concept": "• Z-drug: α1-selective hypnotic, no anticonvulsant\n• สรุป: Benzodiazepine เป็น anticonvulsant ส่วน Z-drug ไม่ใช่ เพราะจับ α1 เฉพาะ",
+   "key_concept": "• Z-drug (zolpidem, zaleplon) เลือก α1 → hypnotic\n• BZD: anxiolytic, anticonvulsant, muscle relaxant",
    "audit": {
     "source_file": "preclinic/3/higher-brain/mcq/ข้อสอบ mcq/MCQ_Higher brain [Med PSU 49].pdf",
     "page": 8,
@@ -1470,17 +1560,26 @@
     "E": "Increase activity of voltage gated K+ channel"
    },
    "correct": "A",
-   "explanation": "Caffeine ยับยั้ง adenosine receptor ใน CNS",
+   "explanation": "คาเฟอีนบล็อก adenosine receptor ทำให้ตื่นตัว",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "✓ Block adenosine receptor",
-    "B": "ไม่ลด GABA โดยตรง",
+    "A": "✓ adenosine ปกติทำให้ง่วง การบล็อกจึงกระตุ้น",
+    "B": "ไม่ได้ลดการสร้าง GABA",
     "C": "ไม่ใช่ NMDA antagonist",
-    "D": "ไม่ใช่ serotonin",
-    "E": "ไม่ใช่ K channel"
+    "D": "ไม่ได้ยับยั้ง 5-HT receptor",
+    "E": "ไม่ได้เพิ่ม K+ channel"
    },
-   "key_concept": "• Caffeine: adenosine antagonist\n• สรุป: Caffeine ยับยั้ง adenosine receptor ใน CNS",
+   "key_concept": "• caffeine = adenosine A1/A2A antagonist\n• ผลต่อสมองและหัวใจ",
+   "mechanism": [
+    "adenosine สะสมทำให้ง่วง",
+    "caffeine แย่งจับ receptor",
+    {
+     "s": "บล็อก adenosine",
+     "answer": true
+    },
+    "ตื่นตัว"
+   ],
    "audit": {
     "source_file": "preclinic/3/higher-brain/mcq/ข้อสอบ mcq/MCQ_Higher brain [Med PSU 49].pdf",
     "page": 8,
@@ -1523,13 +1622,13 @@
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "Efflux transporter ไม่ใช่",
-    "B": "ไม่ใช่ receptor",
-    "C": "ไม่ใช่ α2 blocker",
-    "D": "✓ ยับยั้ง NET/DAT",
-    "E": "Vesicle transporter คือ reserpine"
+    "A": "efflux transporter ไม่ใช่เป้า",
+    "B": "ไม่ใช่ DA receptor agonist",
+    "C": "blocking α2 ไม่ใช่กลไก",
+    "D": "✓ ปิด DAT/NET เพิ่ม DA/NE ใน synapse",
+    "E": "vesicle transporter เป็นเป้าของ reserpine"
    },
-   "key_concept": "• Methylphenidate: DAT/NET inhibitor\n• สรุป: Methylphenidate ยับยั้ง NE/DA transporter",
+   "key_concept": "• ADHD stimulant\n• atomoxetine: NET",
    "audit": {
     "source_file": "preclinic/3/higher-brain/mcq/ข้อสอบ mcq/MCQ_Higher brain [Med PSU 49].pdf",
     "page": 8,
@@ -1568,15 +1667,15 @@
     "E": ""
    },
    "correct": "A",
-   "explanation": "ADR ของ THC ที่ต้องหยุดยาคือ psychosis",
+   "explanation": "ผลข้างเคียงรุนแรงที่ต้องหยุด THC คือ psychosis",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "✓ Psychosis รุนแรง",
-    "B": "Sedation ทนได้",
-    "C": "Constipation เล็กน้อย"
+    "A": "✓ psychosis ต้องหยุดยา",
+    "B": "sedation ลดขนาดได้",
+    "C": "constipation ไม่ใช่เหตุหยุดยา"
    },
-   "key_concept": "• THC: psychosis\n• สรุป: ADR ของ THC ที่ต้องหยุดยาคือ psychosis",
+   "key_concept": "• THC ADR: psychosis, tachycardia\n• CBD ไม่ psychoactive",
    "audit": {
     "source_file": "preclinic/3/higher-brain/mcq/ข้อสอบ mcq/MCQ_Higher brain [Med PSU 49].pdf",
     "page": 8,
@@ -1615,17 +1714,26 @@
     "E": "Inhibit constrictor muscle"
    },
    "correct": "A",
-   "explanation": "Cyclopegic effect ของ atropine คือเป็นอัมพาตของ ciliary muscle ทำให้ปรับโฟกัสไม่ได้",
+   "explanation": "Atropine ทำให้ cycloplegia โดยทำให้ ciliary muscle เป็นอัมพาต",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "✓ ทำให้ ciliary เป็นอัมพาต",
-    "B": "Contract ciliary เป็นของ cholinergic",
-    "C": "Atropine ไม่กระตุ้น dilator โดยตรง",
-    "D": "ไม่ยับยั้ง dilator",
-    "E": "ยับยั้ง constrictor เป็นผล mydriasis แต่ไม่ใช่ cyclopegia"
+    "A": "✓ antimuscarinic ทำให้ ciliary muscle หย่อน มองใกล้ไม่ได้",
+    "B": "cholinergic agonist ทำให้ ciliary หดตัว",
+    "C": "กระตุ้น dilator เป็นผลของ sympathomimetic",
+    "D": "ผลต่อ dilator ไม่ใช่",
+    "E": "ยับยั้ง constrictor ทำ mydriasis ไม่ใช่ cycloplegia"
    },
-   "key_concept": "• Atropine: mydriasis + cycloplegia\n• สรุป: Cyclopegic effect ของ atropine คือเป็นอัมพาตของ ciliary muscle ทำให้ปรับโฟกัสไม่ได้",
+   "key_concept": "• atropine: mydriasis + cycloplegia\n• ใช้ตรวจจอตาในเด็ก",
+   "mechanism": [
+    "atropine บล็อก M3",
+    "ciliary muscle หย่อน",
+    {
+     "s": "cycloplegia",
+     "answer": true
+    },
+    "ปรับโฟกัสใกล้ไม่ได้"
+   ],
    "audit": {
     "source_file": "preclinic/3/higher-brain/mcq/ข้อสอบ mcq/MCQ_Higher brain [Med PSU 49].pdf",
     "page": 9,
@@ -1664,17 +1772,17 @@
     "E": "Lateral geniculate nucleus"
    },
    "correct": "E",
-   "explanation": "Lateral geniculate nucleus ไม่อยู่ใน pupillary light reflex pathway",
+   "explanation": "LGN เสียไม่กระทบ pupillary light reflex เพราะ reflex ใช้ pretectal ไม่ผ่าน LGN",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "Optic tract มี fiber ไป pretectal",
-    "B": "Ciliary ganglion เป็น efferent",
-    "C": "✓ Pretectal nucleus อยู่ใน reflex (ไฟล์เฉลยวงด้วย)",
-    "D": "Edinger-Westphal เป็น parasympathetic",
-    "E": "✓ LGN ไม่อยู่ใน reflex arc"
+    "A": "optic tract นำสัญญาณไป pretectal",
+    "B": "ciliary ganglion เป็นส่วนของ efferent",
+    "C": "✓ pretectal nucleus เป็นศูนย์กลางของ reflex (ต้นฉบับยอมรับตามกลุ่ม)",
+    "D": "Edinger–Westphal เป็น preganglionic parasympathetic",
+    "E": "✓ LGN เป็นทางของการรับรู้ภาพ ไม่เกี่ยวกับ reflex"
    },
-   "key_concept": "• PLR: retina → pretectal → EW → ciliary ganglion\n• สรุป: Lateral geniculate nucleus ไม่อยู่ใน pupillary light reflex pathway",
+   "key_concept": "• PLR: retina → optic n. → pretectal → EW (bilateral) → ciliary ganglion → sphincter\n• LGN สำหรับ visual perception",
    "also_accept": [
     "C"
    ],
@@ -1726,17 +1834,17 @@
     "E": "Optic tract"
    },
    "correct": "D",
-   "explanation": "ลูกศรแดงในภาพ visual field test ชี้ blind spot ซึ่งตรงกับ optic disc",
+   "explanation": "ลูกศรสีแดงในภาพ visual field ชี้ที่ blind spot ตรงกับ optic disc",
    "image": "img/HB-49-MCQ-036.jpg",
    "issues": [],
    "option_why": {
-    "A": "Fovea คือ central field",
-    "B": "Retina กว้าง",
-    "C": "Macula คือ central",
-    "D": "✓ Optic disc = blind spot",
-    "E": "Optic tract ไม่ใช่"
+    "A": "fovea เป็นจุดมองชัด ไม่ใช่จุดบอด",
+    "B": "retina กว้างเกินไป",
+    "C": "macula เป็นศูนย์กลางจอตา",
+    "D": "✓ optic disc ไม่มี photoreceptor เป็นจุดบอด",
+    "E": "optic tract อยู่หลัง chiasm"
    },
-   "key_concept": "• Blind spot = optic disc (no photoreceptors)\n• สรุป: ลูกศรแดงในภาพ visual field test ชี้ blind spot ซึ่งตรงกับ optic disc",
+   "key_concept": "• blind spot อยู่ ~15° temporal ของจุดมอง\n• optic disc ไม่มี rod/cone",
    "audit": {
     "source_file": "preclinic/3/higher-brain/mcq/ข้อสอบ mcq/MCQ_Higher brain [Med PSU 49].pdf",
     "page": 9,
@@ -1775,17 +1883,17 @@
     "E": "CBN"
    },
    "correct": "C",
-   "explanation": "CBD เป็น non-psychoactive cannabinoid",
+   "explanation": "CBD ไม่ psychoactive",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "THC psychoactive",
-    "B": "THCV มีฤทธิ์เล็กน้อย",
-    "C": "✓ CBD ไม่ psychoactive",
-    "D": "CBDL ไม่ใช่",
-    "E": "CBN psychoactive อ่อน"
+    "A": "THC เป็น psychoactive หลัก",
+    "B": "THCV มีฤทธิ์ต่อ CB1",
+    "C": "✓ CBD ไม่จับ CB1 ตรง ๆ จึงไม่ psychoactive",
+    "D": "CBDL ไม่ใช่ตัวเลือกที่เฉลยเลือก",
+    "E": "CBN มีฤทธิ์เล็กน้อย"
    },
-   "key_concept": "• CBD non-psychoactive\n• สรุป: CBD เป็น non-psychoactive cannabinoid",
+   "key_concept": "• CBD: antiepileptic (Dravet, LGS)\n• THC: psychoactive, ต้านอาเจียน",
    "audit": {
     "source_file": "preclinic/3/higher-brain/mcq/ข้อสอบ mcq/MCQ_Higher brain [Med PSU 49].pdf",
     "page": 9,
@@ -1824,17 +1932,17 @@
     "E": "base of cochlea duct"
    },
    "correct": "E",
-   "explanation": "เสียงความถี่สูงถูกรับที่ base ของ cochlea",
+   "explanation": "ฟังเสียงความถี่สูงไม่ได้ = ปัญหาที่ฐาน (base) ของ cochlear duct",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "Incus เป็นกระดูกหู",
-    "B": "Malleus",
-    "C": "Stapes",
-    "D": "Kinocilium เป็นขน",
-    "E": "✓ Base ของ cochlea duct รับความถี่สูง"
+    "A": "incus เป็นกระดูกหูชั้นกลาง",
+    "B": "malleus เป็นกระดูกหูชั้นกลาง",
+    "C": "stapes เป็นกระดูกหูชั้นกลาง",
+    "D": "kinocilium เป็นส่วนของ hair cell",
+    "E": "✓ base ของ cochlea ตอบสนองความถี่สูง (basilar membrane แคบและแข็ง)"
    },
-   "key_concept": "• High freq → base; low freq → apex\n• สรุป: เสียงความถี่สูงถูกรับที่ base ของ cochlea",
+   "key_concept": "• tonotopy: base = high, apex = low\n• presbycusis เริ่มที่ความถี่สูง",
    "audit": {
     "source_file": "preclinic/3/higher-brain/mcq/ข้อสอบ mcq/MCQ_Higher brain [Med PSU 49].pdf",
     "page": 10,
@@ -1873,17 +1981,17 @@
     "E": "Symmetrical voluntary facial movement mimicking laughter"
    },
    "correct": "C",
-   "explanation": "Emotional facial paresis เสียความสมมาตรของการแสดงอารมณ์ตามธรรมชาติ (ขำ)",
+   "explanation": "emotional facial paresis เสียการแสดงสีหน้าเมื่อตอบสนองต่อมุกตลก",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "การยกคิ้วใช้ voluntary",
-    "B": "รอยย่นหน้าผากใช้ voluntary",
-    "C": "✓ ตอบสนองต่อมุกด้วยสีหน้าโดยอัตโนมัติ",
-    "D": "ยิ้มตามสั่งยังทำได้",
-    "E": "ใช้ voluntary เช่นกัน"
+    "A": "การยกคิ้วเป็นการเคลื่อนไหวที่ทำได้ผ่านเส้นทางปกติ",
+    "B": "การย่นหน้าผากควบคุมโดยทั้งสองซีกของ motor cortex",
+    "C": "✓ การแสดงสีหน้าอัตโนมัติผ่าน limbic–extrapyramidal เสียในผู้ป่วยกลุ่มนี้",
+    "D": "การยิ้มตามสั่งทำได้ผ่าน corticobulbar",
+    "E": "การเคลื่อนไหวเลียนแบบเสียงหัวเราะตามสั่งทำได้"
    },
-   "key_concept": "• Emotional facial: limbic/ extrapyramidal pathway\n• สรุป: Emotional facial paresis เสียความสมมาตรของการแสดงอารมณ์ตามธรรมชาติ (ขำ)",
+   "key_concept": "• voluntary: motor cortex–corticobulbar\n• emotional: limbic/basal ganglia pathway\n• สองทางแยกกัน",
    "audit": {
     "source_file": "preclinic/3/higher-brain/mcq/ข้อสอบ mcq/MCQ_Higher brain [Med PSU 49].pdf",
     "page": 10,
@@ -1922,17 +2030,17 @@
     "E": "residual"
    },
    "correct": "B",
-   "explanation": "ถอนตัวจากสังคม ขาดความมั่นใจ แต่ยังเรียนต่อได้ คือ prodromal phase",
+   "explanation": "ถอนตัวสังคมและขาดความมั่นใจก่อนเกิดอาการเต็มคือ prodromal phase",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "Premorbid ก่อนมีอาการ",
-    "B": "✓ Prodromal",
-    "C": "Acute มี psychosis",
-    "D": "Chronic",
-    "E": "Residual"
+    "A": "premorbid คือก่อนมีอาการใด ๆ",
+    "B": "✓ prodromal มีการเปลี่ยนแปลงพฤติกรรมก่อน psychosis",
+    "C": "acute มี positive symptoms ชัด",
+    "D": "chronic คือระยะต่อเนื่อง",
+    "E": "residual คือหลัง acute เหลือ negative symptom"
    },
-   "key_concept": "• Schizophrenia phases\n• สรุป: ถอนตัวจากสังคม ขาดความมั่นใจ แต่ยังเรียนต่อได้ คือ prodromal phase",
+   "key_concept": "• schizophrenia: premorbid → prodromal → active → residual\n• prodrome: ถอนตัว คุณภาพงานลด",
    "audit": {
     "source_file": "preclinic/3/higher-brain/mcq/ข้อสอบ mcq/MCQ_Higher brain [Med PSU 49].pdf",
     "page": 10,
@@ -1971,15 +2079,15 @@
     "E": ""
    },
    "correct": "B",
-   "explanation": "หูซ้ายไม่ได้ยิน Weber ไปซ้าย Rinne ซ้ายลบ คือ conductive loss เช่น cerumen",
+   "explanation": "Weber lateralize ซ้าย + Rinne ซ้ายลบ = conductive loss ซ้าย เช่น cerumen",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "Labyrinthitis เป็น sensorineural",
-    "B": "✓ Cerumen impaction conductive",
-    "C": "Vestibular neuritis ไม่ทำให้หูหนวก"
+    "A": "labyrinthitis เป็น sensorineural",
+    "B": "✓ cerumen impaction ทำให้ conductive loss",
+    "C": "vestibular neuritis ไม่ทำให้หูหนวก"
    },
-   "key_concept": "• Conductive: Weber → affected ear, Rinne negative\n• สรุป: หูซ้ายไม่ได้ยิน Weber ไปซ้าย Rinne ซ้ายลบ คือ conductive loss เช่น cerumen",
+   "key_concept": "• conductive: Weber → หูที่เสีย, Rinne BC>AC\n• sensorineural: Weber → หูดี",
    "audit": {
     "source_file": "preclinic/3/higher-brain/mcq/ข้อสอบ mcq/MCQ_Higher brain [Med PSU 49].pdf",
     "page": 11,
@@ -2018,17 +2126,17 @@
     "E": "Blockage of ear canal"
    },
    "correct": "C",
-   "explanation": "Sensorineural deafness ในเด็กเกิดจากสูญเสีย hair cell",
+   "explanation": "หนวกแบบ sensorineural ในเด็กเกิดจาก hair cell สูญเสีย",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "Otitis media conductive",
-    "B": "Otosclerosis conductive",
-    "C": "✓ Hair cell loss",
-    "D": "Ear drum rupture conductive",
-    "E": "Canal blockage conductive"
+    "A": "otitis media ทำ conductive",
+    "B": "otosclerosis ทำ conductive",
+    "C": "✓ hair cell เสียทำให้ sensorineural",
+    "D": "ear drum แตกทำ conductive",
+    "E": "ear canal ตัน ทำ conductive"
    },
-   "key_concept": "• SNHL: hair cell/nerve\n• สรุป: Sensorineural deafness ในเด็กเกิดจากสูญเสีย hair cell",
+   "key_concept": "• sensorineural: hair cell, CN VIII\n• conductive: ear canal, drum, ossicles",
    "audit": {
     "source_file": "preclinic/3/higher-brain/mcq/ข้อสอบ mcq/MCQ_Higher brain [Med PSU 49].pdf",
     "page": 11,
@@ -2067,15 +2175,15 @@
     "E": ""
    },
    "correct": "B",
-   "explanation": "ยาที่ใช้ในคลับเรียกว่า club drug",
+   "explanation": "Club drug คือกลุ่มยาที่ใช้ในสถานบันเทิง (MDMA, ketamine, GHB)",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "K drug เป็นชื่อเรียกเฉพาะ",
-    "B": "✓ Club drug",
-    "C": "Breaking bad ไม่ใช่"
+    "A": "K drug ไม่ใช่ชื่อกลุ่ม",
+    "B": "✓ club drug คือชื่อกลุ่ม",
+    "C": "Breaking Bad เป็นซีรีส์"
    },
-   "key_concept": "• Club drugs: ecstasy, ketamine, GHB\n• สรุป: ยาที่ใช้ในคลับเรียกว่า club drug",
+   "key_concept": "• club drugs: ecstasy, ketamine, GHB, flunitrazepam\n• ใช้ในสถานบันเทิงและเสี่ยง drug-facilitated crime",
    "audit": {
     "source_file": "preclinic/3/higher-brain/mcq/ข้อสอบ mcq/MCQ_Higher brain [Med PSU 49].pdf",
     "page": 11,
@@ -2114,16 +2222,25 @@
     "E": ""
    },
    "correct": "D",
-   "explanation": "Cholinergic agonist (pilocarpine) ทำให้ ciliary muscle หดตัวเปิด trabecular meshwork",
+   "explanation": "Cholinergic agonist (pilocarpine) ทำให้ ciliary muscle หดตัว เปิด trabecular meshwork",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "Alpha agonist ลด aqueous",
-    "B": "Beta blocker ลดการสร้าง",
-    "C": "CAI ลดการสร้าง",
-    "D": "✓ Cholinergic agonist หด ciliary"
+    "A": "α agonist ลดการผลิต aqueous",
+    "B": "β blocker ลดการผลิต aqueous",
+    "C": "CAI ลดการผลิต aqueous",
+    "D": "✓ cholinergic ทำ miosis และ ciliary contraction เพิ่ม outflow"
    },
-   "key_concept": "• Pilocarpine: ciliary contraction\n• สรุป: Cholinergic agonist (pilocarpine) ทำให้ ciliary muscle หดตัวเปิด trabecular meshwork",
+   "key_concept": "• glaucoma drugs: ↓production (β-blocker, CAI, α2), ↑outflow (PGF2α, pilocarpine)\n• pilocarpine: angle-closure ฉุกเฉิน",
+   "mechanism": [
+    "pilocarpine จับ M3",
+    "ciliary muscle หดตัว",
+    {
+     "s": "ดึง trabecular meshwork เปิด",
+     "answer": true
+    },
+    "aqueous ระบายดีขึ้น"
+   ],
    "audit": {
     "source_file": "preclinic/3/higher-brain/mcq/ข้อสอบ mcq/MCQ_Higher brain [Med PSU 49].pdf",
     "page": 11,
@@ -2162,15 +2279,15 @@
     "E": ""
    },
    "correct": "A",
-   "explanation": "ช่วง REM limbic system ทำงาน",
+   "explanation": "REM: limbic system active",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "✓ Limbic",
-    "B": "Prefrontal ลดลง",
-    "C": "Raphe off"
+    "A": "✓ limbic active ใน REM",
+    "B": "PFC ทำงานลดลง",
+    "C": "raphe เงียบใน REM"
    },
-   "key_concept": "• REM: limbic ↑\n• สรุป: ช่วง REM limbic system ทำงาน",
+   "key_concept": "• REM-off: raphe, LC\n• REM-on: pontine cholinergic",
    "audit": {
     "source_file": "preclinic/3/higher-brain/mcq/ข้อสอบ mcq/MCQ_Higher brain [Med PSU 49].pdf",
     "page": 11,
@@ -2209,17 +2326,17 @@
     "E": "acetylcholine"
    },
    "correct": "A",
-   "explanation": "น้ำมะนาวเปรี้ยวเป็น taste stimulus ที่หลั่ง serotonin ตามเฉลยต้นฉบับ",
+   "explanation": "น้ำมะนาวเปรี้ยวกระตุ้นการหลั่งน้ำลายผ่าน ACh (parasympathetic) ตามเฉลย serotonin",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "✓ Serotonin",
-    "B": "Dopamine",
-    "C": "Epinephrine",
-    "D": "Norepinephrine",
-    "E": "Acetylcholine"
+    "A": "✓ ตามเฉลยต้นฉบับ (AI: การหลั่งน้ำลายใช้ ACh)",
+    "B": "dopamine ไม่ใช่สารตัวนี้",
+    "C": "epinephrine ไม่เกี่ยวกับเรื่องนี้",
+    "D": "norepinephrine ไม่ใช่การหลั่งน้ำลายแบบ watery",
+    "E": "ACh เป็น NT parasympathetic ต่อมน้ำลาย (AI เห็นว่าถูก)"
    },
-   "key_concept": "• Sour taste: serotonin from type III cell\n• สรุป: น้ำมะนาวเปรี้ยวเป็น taste stimulus ที่หลั่ง serotonin ตามเฉลยต้นฉบับ",
+   "key_concept": "• salivation: parasympathetic ACh → watery\n• sympathetic → saliva ข้น",
    "audit": {
     "source_file": "preclinic/3/higher-brain/mcq/ข้อสอบ mcq/MCQ_Higher brain [Med PSU 49].pdf",
     "page": 12,
@@ -2258,17 +2375,17 @@
     "E": "Pedunculopontine nucleus"
    },
    "correct": "E",
-   "explanation": "Narcolepsy เกี่ยวข้องกับ pedunculopontine nucleus (REM-on)",
+   "explanation": "Narcolepsy เกี่ยวกับ pedunculopontine nucleus (REM-on cholinergic)",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "Solitary nucleus รับ taste",
-    "B": "Nucleus ambiguus motor",
-    "C": "Retrotrapezoid nucleus คุมการหายใจ",
-    "D": "Pre-Bötzinger คุมจังหวะหายใจ",
-    "E": "✓ PPN เกี่ยวกับ REM sleep"
+    "A": "solitary nucleus รับ taste/visceral",
+    "B": "nucleus ambiguus ส่ง motor ของ vagus/glossopharyngeal",
+    "C": "retrotrapezoid คุมการหายใจ",
+    "D": "pre-Bötzinger คุมจังหวะหายใจ",
+    "E": "✓ PPN เป็น REM-on ที่ทำงานผิดปกติใน narcolepsy"
    },
-   "key_concept": "• Narcolepsy: orexin, REM dysregulation\n• สรุป: Narcolepsy เกี่ยวข้องกับ pedunculopontine nucleus (REM-on)",
+   "key_concept": "• narcolepsy: orexin ขาด, REM intrusion\n• cataplexy ผ่านกลไกเดียวกับ REM atonia",
    "audit": {
     "source_file": "preclinic/3/higher-brain/mcq/ข้อสอบ mcq/MCQ_Higher brain [Med PSU 49].pdf",
     "page": 12,
@@ -2307,15 +2424,15 @@
     "E": ""
    },
    "correct": "A",
-   "explanation": "Short-term memory เก็บที่ hippocampus (ตามเฉลย)",
+   "explanation": "Short-term memory ต้องใช้ hippocampus (ตามเฉลยต้นฉบับ)",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "✓ Hippocampus",
-    "B": "Basal ganglia เกี่ยวกับ procedural",
-    "C": "Cerebellum เกี่ยวกับการเคลื่อนไหว"
+    "A": "✓ hippocampus สำคัญใน memory consolidation",
+    "B": "basal ganglia เก็บ procedural memory",
+    "C": "cerebellum เก็บ motor learning"
    },
-   "key_concept": "• Hippocampus: new memory formation\n• สรุป: Short-term memory เก็บที่ hippocampus (ตามเฉลย)",
+   "key_concept": "• working memory ใช้ PFC · long-term declarative ต้องใช้ hippocampus\n• procedural: basal ganglia/cerebellum",
    "audit": {
     "source_file": "preclinic/3/higher-brain/mcq/ข้อสอบ mcq/MCQ_Higher brain [Med PSU 49].pdf",
     "page": 12,
@@ -2354,17 +2471,26 @@
     "E": "MEN1"
    },
    "correct": "A",
-   "explanation": "Retinoblastoma เกี่ยวข้องกับ RB gene",
+   "explanation": "Retinoblastoma จากการกลายพันธุ์ของ RB gene (calcification, leukocoria)",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "✓ RB tumor suppressor",
-    "B": "p27 ไม่ใช่",
-    "C": "p53 ไม่ใช่",
-    "D": "APC คือ colon",
-    "E": "MEN1 ไม่ใช่"
+    "A": "✓ RB1 ควบคุม G1/S checkpoint เมื่อเสียเกิดมะเร็ง",
+    "B": "p27 เป็น CDK inhibitor ไม่ใช่สาเหตุหลัก",
+    "C": "p53 เกี่ยวกับ Li-Fraumeni",
+    "D": "APC เกี่ยวกับ FAP",
+    "E": "MEN1 เกี่ยวกับ MEN type 1"
    },
-   "key_concept": "• Retinoblastoma: RB1, leukocoria, calcification\n• สรุป: Retinoblastoma เกี่ยวข้องกับ RB gene",
+   "key_concept": "• retinoblastoma: leukocoria, strabismus, Ca2+ calcification\n• Knudson two-hit hypothesis",
+   "mechanism": [
+    "RB1 กลายพันธุ์ทั้งสองอัลลีล",
+    "E2F ไม่ถูกยับยั้ง",
+    {
+     "s": "เซลล์ผ่าน G1/S ไม่หยุด",
+     "answer": true
+    },
+    "retinoblastoma"
+   ],
    "audit": {
     "source_file": "preclinic/3/higher-brain/mcq/ข้อสอบ mcq/MCQ_Higher brain [Med PSU 49].pdf",
     "page": 12,
@@ -2403,16 +2529,16 @@
     "E": ""
    },
    "correct": "C",
-   "explanation": "Acute otitis media ในเด็กส่วนใหญ่เกิดจาก Streptococcus pneumoniae",
+   "explanation": "Otitis media ในเด็กหลังหวัดมักเกิดจาก S. pneumoniae",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "TB ไม่ใช่",
-    "B": "Pseudomonas ใน external otitis",
-    "C": "✓ S. pneumoniae พบบ่อยสุด",
-    "D": "S. aureus พบน้อย"
+    "A": "TB ไม่ใช่สาเหตุทั่วไป",
+    "B": "Pseudomonas พบใน otitis externa/chronic",
+    "C": "✓ S. pneumoniae เป็นเชื้อหลักของ AOM",
+    "D": "S. aureus พบน้อยกว่า"
    },
-   "key_concept": "• AOM: S. pneumoniae, H. influenzae\n• สรุป: Acute otitis media ในเด็กส่วนใหญ่เกิดจาก Streptococcus pneumoniae",
+   "key_concept": "• AOM: S. pneumoniae, H. influenzae, M. catarrhalis\n• eustachian tube เด็กสั้นแนวนอน",
    "audit": {
     "source_file": "preclinic/3/higher-brain/mcq/ข้อสอบ mcq/MCQ_Higher brain [Med PSU 49].pdf",
     "page": 13,
@@ -2451,15 +2577,15 @@
     "E": ""
    },
    "correct": "C",
-   "explanation": "Bilateral anterior temporal lobe (amygdala) lesion ทำให้ placidity (Klüver-Bucy)",
+   "explanation": "Klüver–Bucy จาก bilateral anterior temporal/amygdala เสีย = placidity",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "Anorexia ไม่ใช่",
-    "B": "Akinetic mutism คือ cingulate",
-    "C": "✓ Placidity"
+    "A": "anorexia ไม่ใช่ (พบ hyperphagia)",
+    "B": "akinetic mutism เป็น frontal/cingulate",
+    "C": "✓ amygdala เสียทำให้สงบ ไม่กลัว"
    },
-   "key_concept": "• Klüver-Bucy\n• สรุป: Bilateral anterior temporal lobe (amygdala) lesion ทำให้ placidity (Klüver-Bucy)",
+   "key_concept": "• Klüver–Bucy: placidity, hyperorality, hypersexuality, visual agnosia\n• amygdala เสีย ไม่แสดงความกลัว/ก้าวร้าว",
    "audit": {
     "source_file": "preclinic/3/higher-brain/mcq/ข้อสอบ mcq/MCQ_Higher brain [Med PSU 49].pdf",
     "page": 13,
@@ -2498,15 +2624,15 @@
     "E": ""
    },
    "correct": "C",
-   "explanation": "Nystagmus ที่ถูกยับยั้งด้วย fixation คือ peripheral vestibular (fixation suppression nystagmus)",
+   "explanation": "nystagmus ที่หยุดเมื่อมองสิ่งตรึง = peripheral vestibular; เฉลยเลือก fixation suppression nystagmus",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "Vomit เป็นอาการ",
-    "B": "CN intact ไม่ใช่คำตอบ",
-    "C": "✓ Fixation suppression บ่งชี้ peripheral"
+    "A": "vomit เป็นอาการ ไม่ใช่การวินิจฉัย",
+    "B": "CN intact ไม่ตรง เพราะมี vestibular dysfunction",
+    "C": "✓ nystagmus ที่ถูกกดด้วยการจ้อง บ่งถึง peripheral lesion"
    },
-   "key_concept": "• Peripheral vestibular: suppresses with fixation\n• สรุป: Nystagmus ที่ถูกยับยั้งด้วย fixation คือ peripheral vestibular (fixation suppression nysta",
+   "key_concept": "• peripheral vertigo: nystagmus ถูกกดด้วย fixation\n• central: ไม่ถูกกด",
    "audit": {
     "source_file": "preclinic/3/higher-brain/mcq/ข้อสอบ mcq/MCQ_Higher brain [Med PSU 49].pdf",
     "page": 13,
@@ -2545,17 +2671,17 @@
     "E": "transmissible spongiform encephalopathy"
    },
    "correct": "E",
-   "explanation": "Rapidly progressive dementia คือ prion disease (transmissible spongiform encephalopathy)",
+   "explanation": "สมองเสื่อมเร็วมากเป็นลักษณะของ prion disease (CJD)",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "Alzheimer ช้า",
-    "B": "Parkinsonism ไม่ใช่",
-    "C": "Huntington ช้า",
-    "D": "Brain infarction ไม่ใช่",
-    "E": "✓ CJD: rapid dementia, myoclonus"
+    "A": "Alzheimer ค่อยเป็นค่อยไป",
+    "B": "Parkinsonism มีเคลื่อนไหวช้า",
+    "C": "Huntington มี chorea",
+    "D": "infarct เป็นเฉียบพลัน",
+    "E": "✓ TSE/CJD เสื่อมภายในเดือน มี myoclonus"
    },
-   "key_concept": "• CJD: prion, rapid dementia\n• สรุป: Rapidly progressive dementia คือ prion disease (transmissible spongiform encephalopathy)",
+   "key_concept": "• CJD: rapidly progressive dementia, myoclonus, 14-3-3\n• spongiform change",
    "audit": {
     "source_file": "preclinic/3/higher-brain/mcq/ข้อสอบ mcq/MCQ_Higher brain [Med PSU 49].pdf",
     "page": 13,
@@ -2594,17 +2720,17 @@
     "E": "abnormal hypersynchronous electrical neuronal activity"
    },
    "correct": "E",
-   "explanation": "ตัวแข็งเกร็ง ~1 นาที เกิดจาก rapid calcium influx ตามเฉลยต้นฉบับ",
+   "explanation": "ชักเกร็ง 1 นาทีจาก hypersynchronous neuronal activity",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "Extrapyramidal ไม่ใช่ชัก",
-    "B": "Abruption ไม่ใช่",
-    "C": "Hyperdepolarization ไม่ใช่",
-    "D": "Calcium influx เข้ากล้ามเนื้อ (ตัวเลือก)",
-    "E": "✓ ไม่ใช่คำตอบที่ถูกต้องของโจทย์ข้อนี้"
+    "A": "extrapyramidal เป็นการเคลื่อนไหวผิดปกติแต่ไม่หมดสติ",
+    "B": "ไม่ใช่การขาดของ action potential",
+    "C": "hyperdepolarization ไม่ใช่คำที่ถูก",
+    "D": "Ca influx ในกล้ามเนื้อคือ MH",
+    "E": "✓ neuron ยิงพร้อมกันผิดปกติ = seizure"
    },
-   "key_concept": "• Tonic seizure: sustained depolarization\n• สรุป: ตัวแข็งเกร็ง ~1 นาที เกิดจาก rapid calcium influx ตามเฉลยต้นฉบับ",
+   "key_concept": "• seizure = abnormal hypersynchronous discharge\n• EEG spike",
    "audit": {
     "source_file": "preclinic/3/higher-brain/mcq/ข้อสอบ mcq/MCQ_Higher brain [Med PSU 49].pdf",
     "page": 13,
@@ -2643,17 +2769,17 @@
     "E": "pontomedullary angle"
    },
    "correct": "B",
-   "explanation": "House-Brackmann grade 3 (facial palsy) จากรอยโรคหูชั้นกลางตามเฉลยต้นฉบับ",
+   "explanation": "House–Brackmann grade 3 คือ facial palsy ปานกลาง ตำแหน่งอยู่ที่หูชั้นกลาง (facial canal) ตามเฉลย",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "Outer ear ไม่ใช่",
-    "B": "✓ Middle ear (facial canal)",
-    "C": "Inner ear",
-    "D": "IAC",
-    "E": "CPA"
+    "A": "outer ear ไม่เกี่ยวกับ CN VII",
+    "B": "✓ facial nerve วิ่งผ่านหูชั้นกลาง",
+    "C": "inner ear คือ cochlea/vestibule",
+    "D": "internal acoustic canal ก็ผ่านแต่เฉลยเลือกหูชั้นกลาง",
+    "E": "CPA ใกล้ brainstem"
    },
-   "key_concept": "• Facial nerve path through middle ear\n• สรุป: House-Brackmann grade 3 (facial palsy) จากรอยโรคหูชั้นกลางตามเฉลยต้นฉบับ",
+   "key_concept": "• HB grading ประเมิน facial nerve function\n• Bell palsy: facial canal",
    "audit": {
     "source_file": "preclinic/3/higher-brain/mcq/ข้อสอบ mcq/MCQ_Higher brain [Med PSU 49].pdf",
     "page": 14,
@@ -2692,17 +2818,17 @@
     "E": "impact cerumen"
    },
    "correct": "E",
-   "explanation": "หูซ้ายไม่ได้ยิน Weber ไปซ้าย Rinne ซ้ายลบ คือ conductive loss จาก cerumen",
+   "explanation": "Weber lateralize ซ้าย + Rinne ซ้ายลบ = conductive loss เช่น cerumen",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "Vestibular neuritis",
-    "B": "Labyrinthitis",
-    "C": "SSNHL เป็น sensorineural",
-    "D": "Meniere sensorineural",
-    "E": "✓ Cerumen conductive"
+    "A": "vestibular neuritis ไม่ทำหูหนวก",
+    "B": "labyrinthitis ทำ sensorineural",
+    "C": "SSNHL ทำ sensorineural Weber ไปทางหูดี",
+    "D": "Meniere ทำ sensorineural",
+    "E": "✓ cerumen ทำ conductive loss"
    },
-   "key_concept": "• Conductive: Weber → affected side\n• สรุป: หูซ้ายไม่ได้ยิน Weber ไปซ้าย Rinne ซ้ายลบ คือ conductive loss จาก cerumen",
+   "key_concept": "• conductive: Weber → หูเสีย\n• SNHL: Weber → หูดี",
    "audit": {
     "source_file": "preclinic/3/higher-brain/mcq/ข้อสอบ mcq/MCQ_Higher brain [Med PSU 49].pdf",
     "page": 14,
@@ -2741,17 +2867,26 @@
     "E": "vitamin E"
    },
    "correct": "A",
-   "explanation": "Night blindness เกิดจากขาดวิตามิน A",
+   "explanation": "ตาบอดกลางคืนจากขาด vitamin A",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "✓ Vit A สร้าง rhodopsin",
-    "B": "Vit B ไม่ใช่",
-    "C": "Vit C ไม่ใช่",
-    "D": "Vit D ไม่ใช่",
-    "E": "Vit E ไม่ใช่"
+    "A": "✓ vitamin A สร้าง retinal ใน rhodopsin",
+    "B": "B vitamins ไม่ใช่สาเหตุ",
+    "C": "vitamin C ขาดทำ scurvy",
+    "D": "vitamin D ขาดทำ rickets",
+    "E": "vitamin E ขาดทำ neuropathy"
    },
-   "key_concept": "• Vit A deficiency: night blindness\n• สรุป: Night blindness เกิดจากขาดวิตามิน A",
+   "key_concept": "• vit A: rhodopsin, xerophthalmia, Bitot spot\n• rod ไวต่อแสงน้อย",
+   "mechanism": [
+    "vitamin A ขาด",
+    "rhodopsin (retinal) สร้างไม่พอ",
+    {
+     "s": "rod ตอบสนองแสงน้อยไม่ได้",
+     "answer": true
+    },
+    "ตาบอดกลางคืน"
+   ],
    "audit": {
     "source_file": "preclinic/3/higher-brain/mcq/ข้อสอบ mcq/MCQ_Higher brain [Med PSU 49].pdf",
     "page": 14,
@@ -2790,17 +2925,17 @@
     "E": "preconscious"
    },
    "correct": "E",
-   "explanation": "Preconscious ทำหน้าที่เป็น censor ความต้องการที่ไม่เหมาะสม",
+   "explanation": "Preconscious ทำหน้าที่ censor ความปรารถนาที่ไม่เหมาะสม",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "ID impulses",
-    "B": "Ego mediates",
-    "C": "Conscious",
-    "D": "Unconscious",
-    "E": "✓ Preconscious (censor)"
+    "A": "id คือแรงขับ",
+    "B": "ego จัดการความจริง",
+    "C": "conscious คือสิ่งที่รับรู้",
+    "D": "unconscious เก็บความปรารถนา",
+    "E": "✓ preconscious เป็นตัวกรองระหว่างจิตไร้สำนึกกับสำนึก"
    },
-   "key_concept": "• Topographic: censor between unconscious and conscious\n• สรุป: Preconscious ทำหน้าที่เป็น censor ความต้องการที่ไม่เหมาะสม",
+   "key_concept": "• censor อยู่ระหว่าง unconscious และ preconscious\n• preconscious เรียกคืนได้ถ้าตั้งใจ",
    "audit": {
     "source_file": "preclinic/3/higher-brain/mcq/ข้อสอบ mcq/MCQ_Higher brain [Med PSU 49].pdf",
     "page": 14,
@@ -2839,17 +2974,17 @@
     "E": "unconscious"
    },
    "correct": "B",
-   "explanation": "Ego ต่อรองความขัดแย้งเพื่อปรับตัวกับความเป็นจริง",
+   "explanation": "Ego ไกล่เกลี่ยความขัดแย้งระหว่าง id กับ superego และความจริง",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "Id ต้องการสุข",
-    "B": "✓ Ego สมดุลระหว่าง id/superego/reality",
-    "C": "Superego ศีลธรรม",
-    "D": "Conscious",
-    "E": "Unconscious"
+    "A": "id ต้องการสนองทันที",
+    "B": "✓ ego ปรับตัวกับความจริง",
+    "C": "superego คือมโนธรรม",
+    "D": "conscious เป็นระดับของจิต",
+    "E": "unconscious เป็นระดับของจิต"
    },
-   "key_concept": "• Ego: reality principle\n• สรุป: Ego ต่อรองความขัดแย้งเพื่อปรับตัวกับความเป็นจริง",
+   "key_concept": "• id: pleasure · ego: reality · superego: morality\n• ego ใช้ defense mechanism ลดความตึงเครียด",
    "audit": {
     "source_file": "preclinic/3/higher-brain/mcq/ข้อสอบ mcq/MCQ_Higher brain [Med PSU 49].pdf",
     "page": 15,
