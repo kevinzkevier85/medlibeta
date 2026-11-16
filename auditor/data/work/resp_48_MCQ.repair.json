@@ -12,7 +12,7 @@
     "A": "100 ต่ำเกิน",
     "B": "150 คือที่ระดับน้ำทะเล (ไม่หัก PH₂O)",
     "C": "130 ไม่ตรงสูตร",
-    "D": "160 เกิน",
+    "D": "160 คือ PO2 ของอากาศแห้งที่ระดับน้ำทะเล (760 × 0.21) ไม่ใช่ PAO2 ที่ความดัน 620 mmHg",
     "E": "✓ ≈ 120 mmHg"
    },
    "key_concept": "• PiO₂ = FiO₂(PB − 47)\n• PB ต่ำ → PiO₂ ต่ำ"
@@ -100,7 +100,7 @@
     "A": "asthma ลด ventilation → V/Q ลด",
     "B": "✓ pulmonary embolism: Q ลด V/Q เพิ่ม",
     "C": "airway obstruction ทำ V/Q ลด",
-    "D": "pulmonary edema ลด V",
+    "D": "pulmonary edema ลด ventilation ของถุงลม V/Q จึงต่ำลง",
     "E": "atelectasis V = 0 (shunt)"
    },
    "key_concept": "• V/Q ↑: PE, hemorrhage\n• V/Q ↓: airway obstruction, atelectasis"
@@ -109,8 +109,8 @@
    "explanation": "ผู้สูงอายุสูญเสีย elastic recoil ทำให้ residual volume เพิ่ม ส่วน FEV₁, VC, FVC ลด",
    "option_why": {
     "A": "FEV₁ ลดตามอายุ",
-    "B": "VC ลด",
-    "C": "FVC ลด",
+    "B": "vital capacity ลดลงตามอายุ เพราะ residual volume เพิ่มขึ้น",
+    "C": "FVC ลดลงตามอายุจาก elastic recoil และกำลังกล้ามเนื้อที่ลดลง",
     "D": "airway diameter แคบลง",
     "E": "✓ residual volume เพิ่ม"
    },
@@ -207,7 +207,7 @@
   "13": {
    "explanation": "V/Q ลด → PAO₂ ลด PACO₂ เพิ่ม (เฉลยต้นฉบับ E: increased PO₂; AI เลือก B: PCO₂ เพิ่ม)",
    "option_why": {
-    "A": "PN₂ ไม่ลด",
+    "A": "PN2 ในถุงลมแทบไม่เปลี่ยน เพราะไนโตรเจนไม่ถูกแลกเปลี่ยน สิ่งที่เปลี่ยนคือ PO2 และ PCO2",
     "B": "PCO₂ เพิ่มตามหลักสรีรวิทยา (AI เลือกตัวนี้)",
     "C": "PN₂ ไม่เพิ่ม",
     "D": "PO₂ ไม่เพิ่ม",
@@ -274,7 +274,7 @@
     "A": "7.2 ไม่ตรงสูตร",
     "B": "✓ 7.8 (ตามเฉลยต้นฉบับ แต่ใช้ 8 L เป็น VT ผิด)",
     "C": "6.0 L/min ถูกตามสูตร (AI เลือกตัวนี้)",
-    "D": "8.2 เกิน",
+    "D": "8.2 มากกว่า total ventilation ซึ่งเป็นไปไม่ได้ เพราะต้องหัก dead space ventilation ออก",
     "E": "0.72 หน่วยผิด"
    },
    "key_concept": "• VE = VT × f\n• VT = 8/10 = 0.8 L\n• ข้อนี้เฉลยต้นฉบับขัดกับ AI"
@@ -571,7 +571,7 @@
     "A": "✓ 13",
     "B": "2.6 ผิดหน่วย",
     "C": "20 คือค่า Hb 15",
-    "D": "26 ผิด",
+    "D": "26 เป็นสองเท่าของค่าจริง: 10 g/dL × 1.3 mL/g = 13 mL/dL",
     "E": "1.3 คือ O₂ ต่อ 1 g"
    },
    "key_concept": "• capacity = Hb × 1.34\n• normal Hb 15 → 20 mL/dL"
@@ -624,10 +624,10 @@
    "explanation": "mucolytic สำหรับเสมหะเหนียว = bromhexine",
    "option_why": {
     "A": "✓ bromhexine",
-    "B": "benzonatate กดไอ",
-    "C": "dextromethorphan กดไอ",
+    "B": "benzonatate เป็นยากดไอโดยทำให้ stretch receptor ในปอดชา ไม่ได้ละลายเสมหะ",
+    "C": "dextromethorphan เป็นยากดศูนย์ไอ ไม่มีฤทธิ์ละลายเสมหะ และทำให้เสมหะคั่งได้",
     "D": "loratadine antihistamine",
-    "E": "codeine กดไอ"
+    "E": "codeine เป็นยากดศูนย์ไอ (antitussive) ไม่ได้ละลายหรือลดความเหนียวของเสมหะ"
    },
    "key_concept": "• mucolytic: bromhexine, acetylcysteine\n• antitussive: DXM, codeine"
   },
@@ -725,7 +725,7 @@
     "A": "✓ palpitation / tachycardia",
     "B": "ท้องเสียไม่ใช่",
     "C": "ความดันตกพบน้อย",
-    "D": "ชักพบน้อย",
+    "D": "ชักไม่ใช่ผลข้างเคียงที่พบบ่อยของ β2 agonist (พบใน theophylline เกินขนาด)",
     "E": "bradycardia ไม่ใช่"
    },
    "key_concept": "• β₂ agonist: tremor, tachycardia, hypokalemia\n• β₁ ที่หัวใจ"
@@ -1030,7 +1030,7 @@
    "option_why": {
     "A": "cromolyn stabilize mast cell",
     "B": "montelukast = LTRA",
-    "C": "beclomethasone = ICS",
+    "C": "beclomethasone เป็น inhaled corticosteroid ออกฤทธิ์ผ่าน glucocorticoid receptor ไม่ใช่ β2",
     "D": "✓ albuterol (β₂ agonist)",
     "E": "zileuton ยับยั้ง 5-LO"
    },
@@ -1075,7 +1075,7 @@
     "A": "diffusion defect ไม่ใช่",
     "B": "✓ V/Q mismatch (ตามเฉลยต้นฉบับ)",
     "C": "hypoventilation จากการอุดทางเดินหายใจส่วนบน (AI เลือกตัวนี้)",
-    "D": "FiO₂ ปกติ",
+    "D": "เด็กหายใจอากาศปกติ FiO2 ไม่ได้ลดลง ปัญหาคือหลอดลมถูกอุด",
     "E": "O₂ binding ปกติ"
    },
    "key_concept": "• upper airway obstruction → alveolar hypoventilation\n• ข้อนี้เฉลยต้นฉบับขัดกับ AI"
