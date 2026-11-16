@@ -142,10 +142,10 @@
   "15": {
    "explanation": "Henderson–Hasselbalch: กรดอ่อน pKa 3.5 ที่ pH 1.5 ส่วนที่ไม่แตกตัว = 1/(1+10^(1.5−3.5)) ≈ 99%",
    "option_why": {
-    "A": "0.25% ผิด",
+    "A": "0.25% น้อยเกินไป; pH ต่ำกว่า pKa 2 หน่วย กรดอ่อนอยู่ในรูปไม่แตกตัว ~99% ไม่ใช่ส่วนน้อย",
     "B": "1% = สัดส่วนแตกตัว ไม่ใช่ไม่แตกตัว",
-    "C": "10% ผิด",
-    "D": "90% ผิด",
+    "C": "10% จะได้เมื่อ pH สูงกว่า pKa 1 หน่วย ไม่ใช่ต่ำกว่า 2 หน่วย",
+    "D": "90% จะได้เมื่อ pH ต่ำกว่า pKa เพียง 1 หน่วย (อัตราส่วน 10:1) แต่โจทย์ต่างกัน 2 หน่วย",
     "E": "✓ ≈99% non-ionized (pH ต่ำกว่า pKa 2 หน่วย)"
    },
    "key_concept": "• กรดอ่อน: pH < pKa → non-ionized มาก ดูดซึมดี\n• ต่าง 2 หน่วย → อัตราส่วน 100:1\n• Aspirin ดูดซึมที่กระเพาะได้",
@@ -163,10 +163,10 @@
    "explanation": "Dose (mg) = Cp × Vd ÷ F = 20 µg/L × 300 L ÷ 0.25 = 24,000 µg = 24 mg",
    "option_why": {
     "A": "4 mg ผิดหน่วย/สูตร",
-    "B": "8 mg ผิด",
+    "B": "8 ไม่ตรงกับผลคำนวณจากสูตร loading dose = (Vd × ความเข้มข้นเป้าหมาย) ÷ F ซึ่งได้ 24",
     "C": "12 mg = ไม่ได้หาร F",
     "D": "✓ 24 mg = (20×300)/0.25",
-    "E": "48 mg ผิด"
+    "E": "48 เป็นสองเท่าของค่าที่คำนวณได้จากสูตร (Vd × C) ÷ F"
    },
    "key_concept": "• Loading dose = Cp × Vd / F\n• F = 0.25 → ต้องให้ยามากขึ้น 4 เท่า\n• ระวังหน่วย µg ↔ mg"
   },
@@ -240,8 +240,8 @@
     "A": "ion channel ไม่ใช่",
     "B": "✓ tyrosine kinase enzyme-linked receptor",
     "C": "gene transcription = nuclear receptor",
-    "D": "Gi = GPCR",
-    "E": "Gs = GPCR"
+    "D": "Gi เป็น G protein ของ GPCR (เช่น α2, M2) ไม่ใช่ชนิดของ insulin receptor",
+    "E": "Gs เป็น G protein ของ GPCR (เช่น β receptor) ไม่ใช่ชนิดของ insulin receptor"
    },
    "key_concept": "• Enzyme-linked: insulin, growth factor\n• Ion channel: nicotinic, GABA-A\n• Nuclear: steroid, thyroid hormone"
   },
