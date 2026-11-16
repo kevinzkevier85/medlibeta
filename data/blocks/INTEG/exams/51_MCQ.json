@@ -53,7 +53,7 @@
    },
    "answer": "A",
    "answer_status": "draft",
-   "explanation": "ข้อเข่าอักเสบเป็นหนองจาก S. aureus มี collagen adhesin จับกับ cartilage (AI ตอบ)\n⚠️ ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้",
+   "explanation": "ข้อเข่าอักเสบเป็นหนองมักจาก S. aureus ซึ่งมี collagen adhesin เกาะ cartilage/collagen ของข้อ (AI ตอบ)",
    "refs": [
     {
      "paper": "MCQ51",
@@ -65,11 +65,12 @@
    "tags": [],
    "source": "import",
    "audit_ref": "integ_51_MCQ_002",
-   "key_concept": "• S. aureus septic arthritis: collagen adhesin\n• สรุป: ข้อเข่าอักเสบเป็นหนองจาก S. aureus มี collagen adhesin จับกับ cartilage (AI ตอบ)",
+   "key_concept": "• S. aureus: adhesin, protein A, coagulase, TSST-1\n• Septic arthritis ผู้ใหญ่: S. aureus พบบ่อยสุด",
    "option_why": {
-    "A": "✓ Collagen adhesin ช่วยให้เกาะข้อ",
-    "B": "Hyaluronidase: spreading factor ไม่ใช่ปัจจัยหลักของข้อ"
-   }
+    "A": "✓ Collagen adhesin ช่วยให้เชื้อเกาะ collagen ของข้อ",
+    "B": "Hyaluronidase เป็น spreading factor ไม่ใช่ปัจจัยหลักของการเกาะที่ข้อ"
+   },
+   "audit_note": "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
   },
   {
    "id": "INTEG-51-MCQ-003",
@@ -86,7 +87,7 @@
    },
    "answer": "C",
    "answer_status": "draft",
-   "explanation": "ใช้ steroid ขนาดสูง มีไอ ปอดอักเสบ และ Gram stain แบบ branching beaded จึงนึกถึง Nocardia (AI ตอบ)\n⚠️ ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้",
+   "explanation": "ใช้ steroid ขนาดสูง ปอดอักเสบ Gram stain เป็น branching beaded filament นึกถึง Nocardia (AI ตอบ)",
    "refs": [
     {
      "paper": "MCQ51",
@@ -98,13 +99,14 @@
    "tags": [],
    "source": "import",
    "audit_ref": "integ_51_MCQ_003",
-   "key_concept": "• Nocardia in steroid users\n• สรุป: ใช้ steroid ขนาดสูง มีไอ ปอดอักเสบ และ Gram stain แบบ branching beaded จึงนึกถึง Nocardia ",
+   "key_concept": "• Nocardia: branching, partially acid-fast, steroid/ภูมิคุ้มกันต่ำ\n• รักษา: TMP-SMX",
    "option_why": {
-    "A": "Aspergillus: ราไม่ใช่ gram stain",
-    "B": "Actinomyces: anaerobe ไม่ใช่ partially acid-fast",
-    "C": "✓ Nocardia: immunocompromised pulmonary",
-    "D": "TB: ไม่เห็นด้วย gram"
+    "A": "Aspergillus เป็นราที่ย้อม GMS ไม่ใช่ Gram",
+    "B": "Actinomyces เป็น anaerobe ไม่ใช่ partial acid-fast",
+    "C": "✓ Nocardia ติดเชื้อในผู้ภูมิคุ้มกันต่ำ Gram positive แตกแขนง",
+    "D": "TB ไม่เห็นชัดใน Gram stain"
    },
+   "audit_note": "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้",
    "image": "img/INTEG-51-MCQ-003.jpg",
    "image_caption": "Chest X-ray และ Gram stain"
   },
@@ -123,7 +125,7 @@
    },
    "answer": "D",
    "answer_status": "draft",
-   "explanation": "Leech therapy เกี่ยวข้องกับ Aeromonas hydrophila (gut flora ของ leech)\n⚠️ ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้",
+   "explanation": "หลังใช้ปลิง (leech) เกิด sepsis จาก Aeromonas hydrophila ซึ่งอยู่ใน gut ของปลิง",
    "refs": [
     {
      "paper": "MCQ51",
@@ -135,13 +137,14 @@
    "tags": [],
    "source": "import",
    "audit_ref": "integ_51_MCQ_004",
-   "key_concept": "• Leech: Aeromonas\n• สรุป: Leech therapy เกี่ยวข้องกับ Aeromonas hydrophila (gut flora ของ leech)",
+   "key_concept": "• Leech therapy: Aeromonas → ให้ ciprofloxacin/ceftriaxone ป้องกัน\n• ปลิงช่วย venous congestion หลังปลูกเนื้อเยื่อ",
    "option_why": {
-    "A": "Acinetobacter: ไม่ใช่",
-    "B": "Pseudomonas: ไม่เฉพาะ",
-    "C": "E. coli: ไม่เฉพาะ",
-    "D": "✓ Aeromonas hydrophila: leech symbiont"
-   }
+    "A": "Acinetobacter พบในโรงพยาบาลแต่ไม่เกี่ยวกับปลิง",
+    "B": "Pseudomonas พบในน้ำและแผลไหม้ แต่ไม่ใช่เชื้อประจำของปลิง",
+    "C": "E. coli เป็นเชื้อลำไส้คน",
+    "D": "✓ Aeromonas hydrophila เป็น symbiont ในลำไส้ปลิง"
+   },
+   "audit_note": "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
   },
   {
    "id": "INTEG-51-MCQ-005",
@@ -159,7 +162,7 @@
    },
    "answer": "E",
    "answer_status": "draft",
-   "explanation": "หลังใช้ leech เกิด sepsis จาก Aeromonas hydrophila\n⚠️ ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้",
+   "explanation": "ปลิงมี Aeromonas hydrophila เป็นเชื้อในลำไส้ ทำให้ติดเชื้อแผลและ sepsis",
    "refs": [
     {
      "paper": "MCQ51",
@@ -171,14 +174,15 @@
    "tags": [],
    "source": "import",
    "audit_ref": "integ_51_MCQ_005",
-   "key_concept": "• Leech: Aeromonas\n• สรุป: หลังใช้ leech เกิด sepsis จาก Aeromonas hydrophila",
+   "key_concept": "• Aeromonas: น้ำจืด, leech, gram-negative bacillus\n• Vibrio vulnificus: อาหารทะเลดิบ ตับแข็ง",
    "option_why": {
-    "A": "E. coli: ไม่เฉพาะ",
-    "B": "Pseudomonas: ไม่เฉพาะ",
-    "C": "Acinetobacter: ไม่เฉพาะ",
-    "D": "Vibrio vulnificus: ทะเล",
-    "E": "✓ Aeromonas hydrophila: leech"
-   }
+    "A": "E. coli ไม่เกี่ยวกับปลิง",
+    "B": "Pseudomonas ไม่ใช่เชื้อประจำของปลิง",
+    "C": "Acinetobacter พบในผู้ป่วย ICU",
+    "D": "Vibrio vulnificus เกี่ยวกับอาหารทะเลและน้ำเค็ม",
+    "E": "✓ Aeromonas hydrophila สัมพันธ์กับปลิงและน้ำจืด"
+   },
+   "audit_note": "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
   },
   {
    "id": "INTEG-51-MCQ-006",
@@ -196,7 +200,7 @@
    },
    "answer": "D",
    "answer_status": "draft",
-   "explanation": "ยาคุมฉุกเฉินขนาดสูงในช่วงก่อนตกไข่ทำให้ ovulation ล่าช้า\n⚠️ ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้",
+   "explanation": "ยาคุมฉุกเฉินขนาดสูง (levonorgestrel) ก่อน LH surge ทำให้ตกไข่ช้า/ยับยั้งการตกไข่",
    "refs": [
     {
      "paper": "MCQ51",
@@ -208,14 +212,23 @@
    "tags": [],
    "source": "import",
    "audit_ref": "integ_51_MCQ_006",
-   "key_concept": "• EC: delay ovulation\n• สรุป: ยาคุมฉุกเฉินขนาดสูงในช่วงก่อนตกไข่ทำให้ ovulation ล่าช้า",
+   "key_concept": "• Levonorgestrel EC: ยับยั้ง/เลื่อนการตกไข่ ใช้ภายใน 72 ชม.\n• ไม่ใช่ยาทำแท้ง",
+   "mechanism": [
+    "กินยาก่อนตกไข่ (วันที่ 10)",
+    {
+     "s": "Progestin ยับยั้ง LH surge",
+     "answer": true
+    },
+    "ไข่ไม่ตกหรือเลื่อน จึงไม่ปฏิสนธิ"
+   ],
    "option_why": {
-    "A": "Cervical mucus: ผลรอง",
-    "B": "ไม่ป้องกัน implantation เป็นหลัก",
-    "C": "ไม่ได้ป้องกัน sperm เข้าไข่",
-    "D": "✓ Delay/inhibit ovulation (LH surge)",
-    "E": "Endometrium ไม่ใช่กลไกหลัก"
-   }
+    "A": "ทำให้มูกข้นเป็นผลเสริมไม่ใช่กลไกหลัก",
+    "B": "ไม่ป้องกันการฝังตัวเป็นหลัก",
+    "C": "ไม่ได้กั้นอสุจิเจาะไข่โดยตรง",
+    "D": "✓ ยับยั้ง LH surge ทำให้ตกไข่ช้า",
+    "E": "ไม่ทำให้เยื่อบุโพรงมดลูกฝ่อ"
+   },
+   "audit_note": "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
   },
   {
    "id": "INTEG-51-MCQ-007",
@@ -233,7 +246,7 @@
    },
    "answer": "D",
    "answer_status": "draft",
-   "explanation": "DMPA มีผลข้างเคียงที่พบบ่อยคือ breakthrough bleeding\n⚠️ ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้",
+   "explanation": "DMPA (ยาฉีดคุม 3 เดือน) ผลข้างเคียงบ่อยคือเลือดออกกะปริบกะปรอย",
    "refs": [
     {
      "paper": "MCQ51",
@@ -245,14 +258,15 @@
    "tags": [],
    "source": "import",
    "audit_ref": "integ_51_MCQ_007",
-   "key_concept": "• DMPA: irregular bleeding\n• สรุป: DMPA มีผลข้างเคียงที่พบบ่อยคือ breakthrough bleeding",
+   "key_concept": "• DMPA: irregular bleeding → amenorrhea, bone density ↓, น้ำหนักเพิ่ม\n• กลับมาตกไข่ช้า",
    "option_why": {
-    "A": "Dysmenorrhea ลดลง",
-    "B": "Discharge ไม่ใช่",
-    "C": "Headache ไม่บ่อย",
-    "D": "✓ Breakthrough bleeding/irregular bleeding",
-    "E": "Vomiting ไม่บ่อย"
-   }
+    "A": "ปวดประจำเดือนลดลง ไม่เพิ่ม",
+    "B": "ตกขาวผิดปกติไม่ใช่ผลข้างเคียงหลัก",
+    "C": "ปวดหัวพบได้น้อยกว่า",
+    "D": "✓ Breakthrough bleeding พบบ่อยที่สุด",
+    "E": "อาเจียนไม่ใช่ผลข้างเคียงหลัก"
+   },
+   "audit_note": "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
   },
   {
    "id": "INTEG-51-MCQ-008",
@@ -270,7 +284,7 @@
    },
    "answer": "D",
    "answer_status": "draft",
-   "explanation": "Oxytocin ทำให้เกิด milk let-down\n⚠️ ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้",
+   "explanation": "Oxytocin ทำให้เกิด milk let-down ผ่าน neuroendocrine reflex จากการดูดนม",
    "refs": [
     {
      "paper": "MCQ51",
@@ -282,14 +296,23 @@
    "tags": [],
    "source": "import",
    "audit_ref": "integ_51_MCQ_008",
-   "key_concept": "• Let-down: oxytocin\n• สรุป: Oxytocin ทำให้เกิด milk let-down",
+   "key_concept": "• Prolactin = สร้างน้ำนม, Oxytocin = ปล่อยน้ำนม\n• ลูกดูด → hypothalamus → posterior pituitary",
+   "mechanism": [
+    "ลูกดูดนมกระตุ้นหัวนม",
+    {
+     "s": "Posterior pituitary หลั่ง oxytocin",
+     "answer": true
+    },
+    "Myoepithelial cell บีบ น้ำนมไหล"
+   ],
    "option_why": {
-    "A": "Estrogen เตรียมต่อมน้ำนม",
-    "B": "Progesterone: ยับยั้งน้ำนมช่วงตั้งครรภ์",
-    "C": "Prolactin: สร้างน้ำนม",
-    "D": "✓ Oxytocin: ejection",
-    "E": "Androgen: ไม่เกี่ยว"
-   }
+    "A": "Estrogen เตรียมท่อน้ำนม",
+    "B": "Progesterone เตรียมต่อมน้ำนม",
+    "C": "Prolactin สร้างน้ำนม ไม่ใช่การหลั่งออก",
+    "D": "✓ Oxytocin ทำให้ myoepithelial cell บีบ",
+    "E": "Androgen ไม่เกี่ยว"
+   },
+   "audit_note": "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
   },
   {
    "id": "INTEG-51-MCQ-010",
@@ -306,7 +329,7 @@
    },
    "answer": "A",
    "answer_status": "draft",
-   "explanation": "ช่วงสัปดาห์ที่ 9–10 รกเริ่มรับช่วงสร้าง progesterone แทน corpus luteum (luteoplacental shift)\n⚠️ ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้",
+   "explanation": "สัปดาห์ที่ 9–10 รกรับช่วงสร้าง progesterone แทน corpus luteum (luteoplacental shift)",
    "refs": [
     {
      "paper": "MCQ51",
@@ -318,13 +341,22 @@
    "tags": [],
    "source": "import",
    "audit_ref": "integ_51_MCQ_010",
-   "key_concept": "• Luteoplacental shift 7–9 wk\n• สรุป: ช่วงสัปดาห์ที่ 9–10 รกเริ่มรับช่วงสร้าง progesterone แทน corpus luteum (luteoplacental shi",
+   "key_concept": "• Corpus luteum ผลิต progesterone ถึง ~8–10 สัปดาห์\n• hCG รักษา corpus luteum",
+   "mechanism": [
+    "hCG รักษา corpus luteum ช่วงแรก",
+    {
+     "s": "รกพัฒนาและสร้าง progesterone เอง",
+     "answer": true
+    },
+    "corpus luteum ลดบทบาท การตั้งครรภ์คงอยู่"
+   ],
    "option_why": {
-    "A": "✓ Placenta takes over progesterone จาก corpus luteum",
-    "B": "Fetal thyroid เริ่มราว 10–12 wk แต่ไม่ใช่ luteoplacental",
-    "C": "Maternal coagulation ไม่เกี่ยว",
-    "D": "Hb shift yolk sac → liver ไม่ใช่ luteoplacental"
-   }
+    "A": "✓ รกสร้าง progesterone แทน corpus luteum",
+    "B": "Fetal thyroid เริ่มทำงานปลายไตรมาสแรก ไม่ใช่ประเด็นนี้",
+    "C": "Coagulation factor เพิ่มตลอดตั้งครรภ์ ไม่เกี่ยวกับ luteoplacental",
+    "D": "เปลี่ยนที่สร้างเม็ดเลือดจาก yolk sac ไปตับเป็นเรื่องอื่น"
+   },
+   "audit_note": "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
   },
   {
    "id": "INTEG-51-MCQ-011",
@@ -342,7 +374,7 @@
    },
    "answer": "A",
    "answer_status": "draft",
-   "explanation": "ชาที่นิ้วโป้ง ชี้ กลางและอาการแย่ลงเมื่อพิมพ์/ยกของ คือ carpal tunnel syndrome\n⚠️ ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้",
+   "explanation": "ชาที่นิ้วโป้ง ชี้ กลาง และแย่ลงเมื่อพิมพ์/ยกของ คือ carpal tunnel syndrome",
    "refs": [
     {
      "paper": "MCQ51",
@@ -354,14 +386,15 @@
    "tags": [],
    "source": "import",
    "audit_ref": "integ_51_MCQ_011",
-   "key_concept": "• CTS\n• สรุป: ชาที่นิ้วโป้ง ชี้ กลางและอาการแย่ลงเมื่อพิมพ์/ยกของ คือ carpal tunnel syndrome",
+   "key_concept": "• CTS: median nerve, thumb-index-middle, ชากลางคืน, Phalen/Tinel\n• Pronator syndrome ชาฝ่ามือด้วย",
    "option_why": {
-    "A": "✓ CTS: median nerve",
-    "B": "RA: ไม่ชาตาม dermatome",
-    "C": "Pronator teres syndrome: ชาฝ่ามือ",
-    "D": "De Quervain: ปวดข้อมือด้านนิ้วโป้ง",
-    "E": "Cubital tunnel: ulnar"
-   }
+    "A": "✓ CTS กด median nerve ที่ carpal tunnel",
+    "B": "RA ไม่ชาตาม dermatome ของ median",
+    "C": "Pronator teres syndrome ชาฝ่ามือด้วย",
+    "D": "de Quervain ปวดข้อมือด้านนิ้วโป้ง",
+    "E": "Cubital tunnel กด ulnar nerve"
+   },
+   "audit_note": "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
   },
   {
    "id": "INTEG-51-MCQ-012",
@@ -379,7 +412,7 @@
    },
    "answer": "C",
    "answer_status": "draft",
-   "explanation": "Finkelstein positive คือ de Quervain: APL และ EPB อักเสบ\n⚠️ ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้",
+   "explanation": "Finkelstein positive คือ de Quervain tenosynovitis ที่ APL และ EPB",
    "refs": [
     {
      "paper": "MCQ51",
@@ -391,14 +424,15 @@
    "tags": [],
    "source": "import",
    "audit_ref": "integ_51_MCQ_012",
-   "key_concept": "• de Quervain: APL + EPB\n• สรุป: Finkelstein positive คือ de Quervain: APL และ EPB อักเสบ",
+   "key_concept": "• de Quervain: APL + EPB\n• พบในแม่หลังคลอด/ยกเด็ก",
    "option_why": {
-    "A": "EPL: ไม่ใช่",
-    "B": "APB: ไม่ใช่ tendon ใน compartment 1",
-    "C": "✓ APL อยู่ใน first dorsal compartment",
-    "D": "FCR: ไม่ใช่",
-    "E": "EDB: ที่เท้า"
-   }
+    "A": "EPL ไม่ใช่ใน first compartment",
+    "B": "APB เป็นกล้ามเนื้อ thenar",
+    "C": "✓ APL อักเสบใน first dorsal compartment",
+    "D": "FCR อยู่ด้านหน้า",
+    "E": "EDB อยู่ที่เท้า"
+   },
+   "audit_note": "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
   },
   {
    "id": "INTEG-51-MCQ-013",
@@ -416,7 +450,7 @@
    },
    "answer": "C",
    "answer_status": "draft",
-   "explanation": "Steroid ระยะยาวเสี่ยง AVN femoral head ซึ่งพบ crescent sign\n⚠️ ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้",
+   "explanation": "Steroid ระยะยาวเสี่ยง AVN ของ femoral head ซึ่งเห็น crescent sign ใน x-ray",
    "refs": [
     {
      "paper": "MCQ51",
@@ -428,14 +462,15 @@
    "tags": [],
    "source": "import",
    "audit_ref": "integ_51_MCQ_013",
-   "key_concept": "• AVN: crescent sign\n• สรุป: Steroid ระยะยาวเสี่ยง AVN femoral head ซึ่งพบ crescent sign",
+   "key_concept": "• AVN: steroid, แอลกอฮอล์, sickle cell → crescent sign\n• MRI ไวที่สุดในการวินิจฉัยระยะแรก",
    "option_why": {
-    "A": "Snowstorm: ไม่ใช่ลักษณะ AVN",
-    "B": "Osteophyte: OA",
-    "C": "✓ Crescent sign (subchondral lucency)",
-    "D": "Joint narrowing: ระยะหลัง/OA",
-    "E": "-"
-   }
+    "A": "Snowstorm appearance ไม่ใช่ AVN",
+    "B": "Osteophyte เป็นของ OA",
+    "C": "✓ Crescent sign คือ subchondral collapse ใน AVN",
+    "D": "ช่องข้อแคบพบใน OA/AVN ระยะท้าย",
+    "E": "ตัวเลือกว่างในต้นฉบับ (ผู้จำข้อสอบจำไม่ได้)"
+   },
+   "audit_note": "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
   },
   {
    "id": "INTEG-51-MCQ-015",
@@ -453,7 +488,7 @@
    },
    "answer": "A",
    "answer_status": "draft",
-   "explanation": "Bilateral hemianopia (bitemporal) คือรอยโรคที่ optic chiasm\n⚠️ ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้",
+   "explanation": "Bilateral hemianopia (bitemporal) คือรอยโรคที่ optic chiasm",
    "refs": [
     {
      "paper": "MCQ51",
@@ -465,14 +500,15 @@
    "tags": [],
    "source": "import",
    "audit_ref": "integ_51_MCQ_015",
-   "key_concept": "• Chiasm: bitemporal\n• สรุป: Bilateral hemianopia (bitemporal) คือรอยโรคที่ optic chiasm",
+   "key_concept": "• Chiasm lesion: bitemporal hemianopia (pituitary adenoma, craniopharyngioma)\n• หลัง chiasm: homonymous",
    "option_why": {
-    "A": "✓ Chiasm: bitemporal",
-    "B": "Optic radiation: homonymous",
-    "C": "Occipital lobe: homonymous macular sparing",
-    "D": "Optic tract: homonymous",
-    "E": "Optic nerve: monocular"
-   }
+    "A": "✓ Chiasm ทำให้เสีย visual field ด้านนอก (temporal) ทั้งสองตา",
+    "B": "Optic radiation ทำให้ homonymous",
+    "C": "Occipital lobe ทำให้ homonymous macular sparing",
+    "D": "Optic tract ทำให้ homonymous",
+    "E": "Optic nerve ทำให้ตาข้างเดียวมืด"
+   },
+   "audit_note": "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
   },
   {
    "id": "INTEG-51-MCQ-018",
@@ -490,7 +526,7 @@
    },
    "answer": "A",
    "answer_status": "draft",
-   "explanation": "Claw hand คือ lower plexus (C8–T1) หรือ Klumpke\n⚠️ ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้",
+   "explanation": "Claw hand คือรอยโรค lower trunk (C8–T1) หรือ Klumpke",
    "refs": [
     {
      "paper": "MCQ51",
@@ -502,14 +538,15 @@
    "tags": [],
    "source": "import",
    "audit_ref": "integ_51_MCQ_018",
-   "key_concept": "• Klumpke: claw hand\n• สรุป: Claw hand คือ lower plexus (C8–T1) หรือ Klumpke",
+   "key_concept": "• Klumpke: C8–T1, claw hand, Horner syndrome\n• Erb: C5–C6 waiter’s tip",
    "option_why": {
-    "A": "✓ C8–T1 Klumpke: ulnar claw",
-    "B": "C3–C5: phrenic",
-    "C": "C5–C8",
-    "D": "C5–T1 ทั้ง plexus",
-    "E": "C1–C3: cervical plexus"
-   }
+    "A": "✓ C8–T1 กระทบ intrinsic muscle ของมือ จึงเกิด claw",
+    "B": "C3–C5 คือ phrenic nerve",
+    "C": "C5–C8 ไม่ใช่รูปแบบของ claw",
+    "D": "C5–T1 เสียทั้ง plexus",
+    "E": "C1–C3 เป็น cervical plexus"
+   },
+   "audit_note": "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
   },
   {
    "id": "INTEG-51-MCQ-021",
@@ -527,7 +564,7 @@
    },
    "answer": "D",
    "answer_status": "draft",
-   "explanation": "Omphalocele พบร่วมกับ trisomy 13/18 (AI ตอบ)\n⚠️ ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้",
+   "explanation": "Omphalocele (sac มีลำไส้และตับ) พบร่วมกับ trisomy 13/18 (AI ตอบ)",
    "refs": [
     {
      "paper": "MCQ51",
@@ -539,14 +576,15 @@
    "tags": [],
    "source": "import",
    "audit_ref": "integ_51_MCQ_021",
-   "key_concept": "• Omphalocele: trisomy 13/18\n• สรุป: Omphalocele พบร่วมกับ trisomy 13/18 (AI ตอบ)",
+   "key_concept": "• Omphalocele: เยื่อหุ้ม + chromosomal anomaly (13, 18), Beckwith-Wiedemann\n• Gastroschisis: ไม่มีเยื่อหุ้ม ไม่สัมพันธ์ chromosome",
    "option_why": {
-    "A": "Pulmonary hypoplasia: CDH",
-    "B": "PKD: ไม่ใช่",
-    "C": "Neuroblastoma: ไม่ใช่",
-    "D": "✓ Trisomy 13: chromosomal anomalies",
-    "E": "Lung cyst: ไม่ใช่"
-   }
+    "A": "Pulmonary hypoplasia สัมพันธ์ CDH และ oligohydramnios",
+    "B": "PKD ไม่ใช่ความผิดปกติร่วมของ omphalocele",
+    "C": "Neuroblastoma ไม่สัมพันธ์",
+    "D": "✓ Trisomy 13 และ 18 พบร่วมกับ omphalocele",
+    "E": "Lung cyst ไม่สัมพันธ์"
+   },
+   "audit_note": "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
   },
   {
    "id": "INTEG-51-MCQ-023",
@@ -564,7 +602,7 @@
    },
    "answer": "E",
    "answer_status": "draft",
-   "explanation": "Acute pancreatitis ปวดร้าวไปกลางหลัง (mid-back)\n⚠️ ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้",
+   "explanation": "ตับอ่อนอักเสบเฉียบพลันปวดร้าวไปกลางหลัง (mid-back) เพราะตับอ่อนอยู่หลังเยื่อบุช่องท้อง",
    "refs": [
     {
      "paper": "MCQ51",
@@ -576,14 +614,15 @@
    "tags": [],
    "source": "import",
    "audit_ref": "integ_51_MCQ_023",
-   "key_concept": "• Pancreatitis: referred to back\n• สรุป: Acute pancreatitis ปวดร้าวไปกลางหลัง (mid-back)",
+   "key_concept": "• Acute pancreatitis: epigastric pain ร้าวไปหลัง, amylase/lipase ↑\n• Gallstone และแอลกอฮอล์เป็นสาเหตุหลัก",
    "option_why": {
-    "A": "Right shoulder: gallbladder/diaphragm",
-    "B": "Right flank: ไต",
-    "C": "Groin: ureter",
-    "D": "Scapula: biliary",
-    "E": "✓ Mid-back: pancreas retroperitoneal"
-   }
+    "A": "ไหล่ขวาเป็น referred pain ของ gallbladder/กระบังลม",
+    "B": "สีข้างขวาเป็นของไต",
+    "C": "ขาหนีบเป็นของ ureter",
+    "D": "สะบักเป็นของ biliary tract",
+    "E": "✓ กลางหลังเป็นอาการร้าวของตับอ่อน"
+   },
+   "audit_note": "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
   },
   {
    "id": "INTEG-51-MCQ-024",
@@ -598,7 +637,7 @@
    },
    "answer": "A",
    "answer_status": "draft",
-   "explanation": "GERD รักษาด้วย PPI ยับยั้ง H+/K+ ATPase แบบ irreversible\n⚠️ ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้",
+   "explanation": "GERD ใช้ PPI ซึ่งยับยั้ง H⁺/K⁺ ATPase แบบไม่ย้อนกลับ (irreversible)",
    "refs": [
     {
      "paper": "MCQ51",
@@ -610,11 +649,20 @@
    "tags": [],
    "source": "import",
    "audit_ref": "integ_51_MCQ_024",
-   "key_concept": "• PPI: irreversible H+/K+ ATPase\n• สรุป: GERD รักษาด้วย PPI ยับยั้ง H+/K+ ATPase แบบ irreversible",
+   "key_concept": "• PPI: omeprazole, ยับยั้ง H⁺/K⁺ ATPase ที่ parietal cell\n• H2 blocker ได้ผลน้อยกว่า PPI",
+   "mechanism": [
+    "PPI ถูกกระตุ้นในกรด",
+    {
+     "s": "จับ H⁺/K⁺ ATPase แบบ covalent",
+     "answer": true
+    },
+    "กรดในกระเพาะลดลง อาการ GERD ดีขึ้น"
+   ],
    "option_why": {
-    "A": "✓ Irreversible: PPI (omeprazole)",
-    "B": "Reversible: P-CAB ใหม่กว่า"
-   }
+    "A": "✓ PPI จับ pump แบบ covalent (irreversible) ได้ผลมากที่สุด",
+    "B": "P-CAB เป็นแบบย้อนกลับได้ (ยาใหม่) ไม่ใช่ PPI"
+   },
+   "audit_note": "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
   },
   {
    "id": "INTEG-51-MCQ-033",
@@ -632,7 +680,7 @@
    },
    "answer": "A",
    "answer_status": "draft",
-   "explanation": "ไข้วันที่ 2 ใช้ NS1 antigen ตรวจ dengue\n⚠️ ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้",
+   "explanation": "ไข้วันที่ 2 ในพื้นที่ระบาด dengue ตรวจ NS1 antigen ได้ผลบวกตั้งแต่วันที่ 1–5",
    "refs": [
     {
      "paper": "MCQ51",
@@ -644,14 +692,15 @@
    "tags": [],
    "source": "import",
    "audit_ref": "integ_51_MCQ_033",
-   "key_concept": "• Dengue early: NS1\n• สรุป: ไข้วันที่ 2 ใช้ NS1 antigen ตรวจ dengue",
+   "key_concept": "• Dengue: NS1/PCR ช่วงต้น (วัน 1–5), IgM หลังวัน 5\n• Warning signs: ปวดท้อง อาเจียน เลือดออก",
    "option_why": {
-    "A": "✓ NS1 ตรวจได้ในวัน 1–5",
+    "A": "✓ NS1 antigen ขึ้นช่วงแรก",
     "B": "IgM ขึ้นหลังวันที่ 5",
-    "C": "IgG บอกประวัติ",
-    "D": "Blood culture: ไม่ใช่",
-    "E": "Tourniquet: ไม่ confirm"
-   }
+    "C": "IgG บอกประวัติติดเชื้อเดิม",
+    "D": "Blood culture ไม่ใช้วินิจฉัย dengue",
+    "E": "Tourniquet test เป็นสัญญาณเตือน ไม่ใช่การยืนยัน"
+   },
+   "audit_note": "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
   },
   {
    "id": "INTEG-51-MCQ-037",
@@ -669,7 +718,7 @@
    },
    "answer": "C",
    "answer_status": "draft",
-   "explanation": "Holosystolic murmur ที่ apex ร้าวไป left axilla คือ mitral regurgitation\n⚠️ ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้",
+   "explanation": "Holosystolic murmur ที่ apex ร้าวไปรักแร้ซ้าย คือ mitral regurgitation",
    "refs": [
     {
      "paper": "MCQ51",
@@ -681,14 +730,15 @@
    "tags": [],
    "source": "import",
    "audit_ref": "integ_51_MCQ_037",
-   "key_concept": "• MR: holosystolic apex → axilla\n• สรุป: Holosystolic murmur ที่ apex ร้าวไป left axilla คือ mitral regurgitation",
+   "key_concept": "• MR: holosystolic at apex → axilla\n• AS: crescendo-decrescendo → carotid",
    "option_why": {
-    "A": "MS: diastolic rumble",
-    "B": "VSD: left sternal border",
-    "C": "✓ MR: apex → axilla",
-    "D": "AS: ejection crescendo",
-    "E": "TR: left sternal border"
-   }
+    "A": "Mitral stenosis เป็น diastolic rumble",
+    "B": "VSD ได้ยินชัดที่ left sternal border",
+    "C": "✓ MR ได้ยินที่ apex ร้าวรักแร้ซ้าย",
+    "D": "Aortic stenosis เป็น ejection murmur ร้าวคอ",
+    "E": "TR ได้ยินที่ left sternal border"
+   },
+   "audit_note": "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
   },
   {
    "id": "INTEG-51-MCQ-038",
@@ -705,7 +755,7 @@
    },
    "answer": "A",
    "answer_status": "draft",
-   "explanation": "Omphalocele สัมพันธ์กับ trisomy 13/18 (AI ตอบ)\n⚠️ ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้",
+   "explanation": "Omphalocele พบร่วมกับ trisomy 13/18 (AI ตอบ)",
    "refs": [
     {
      "paper": "MCQ51",
@@ -717,13 +767,14 @@
    "tags": [],
    "source": "import",
    "audit_ref": "integ_51_MCQ_038",
-   "key_concept": "• Omphalocele: chromosomal\n• สรุป: Omphalocele สัมพันธ์กับ trisomy 13/18 (AI ตอบ)",
+   "key_concept": "• Omphalocele: ผนังหน้าท้องมีเยื่อหุ้ม, chromosomal anomaly\n• Gastroschisis: ลำไส้ลอยอิสระ",
    "option_why": {
-    "A": "✓ Trisomy 13",
-    "B": "PKD: ไม่ใช่",
-    "C": "Lung cyst: ไม่ใช่",
-    "D": "Pulmonary hypoplasia: CDH"
-   }
+    "A": "✓ Trisomy 13 สัมพันธ์ omphalocele",
+    "B": "PKD ไม่ใช่ความผิดปกติร่วมที่คลาสสิก",
+    "C": "Lung cyst ไม่สัมพันธ์",
+    "D": "Pulmonary hypoplasia สัมพันธ์ CDH"
+   },
+   "audit_note": "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
   },
   {
    "id": "INTEG-51-MCQ-044",
@@ -741,7 +792,7 @@
    },
    "answer": "A",
    "answer_status": "draft",
-   "explanation": "ไวรัส RNA (influenza) ถูกจับโดย RIG-I-like receptors ในไซโตพลาสซึม\n⚠️ ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้",
+   "explanation": "ไวรัส RNA เช่น influenza ถูกจับโดย RIG-I-like receptor ใน cytoplasm",
    "refs": [
     {
      "paper": "MCQ51",
@@ -753,14 +804,23 @@
    "tags": [],
    "source": "import",
    "audit_ref": "integ_51_MCQ_044",
-   "key_concept": "• RIG-I: viral RNA\n• สรุป: ไวรัส RNA (influenza) ถูกจับโดย RIG-I-like receptors ในไซโตพลาสซึม",
+   "key_concept": "• RIG-I/MDA5 → MAVS → type I interferon\n• TLR3/7/8 ตรวจ RNA ใน endosome",
+   "mechanism": [
+    "ไวรัส RNA เข้าเซลล์",
+    {
+     "s": "RIG-I จับ viral RNA ใน cytoplasm",
+     "answer": true
+    },
+    "Type I interferon และการป้องกันไวรัส"
+   ],
    "option_why": {
-    "A": "✓ RLR: RNA virus",
-    "B": "Collectins: จับ carbohydrate",
-    "C": "CLR: fungi",
-    "D": "NLR: bacterial/danger",
-    "E": "Complement: ไม่ใช่ PRR หลักสำหรับไวรัสนี้"
-   }
+    "A": "✓ RLR ตรวจจับ viral RNA ใน cytoplasm",
+    "B": "Collectin จับ carbohydrate ของจุลชีพ",
+    "C": "C-type lectin receptor จับ fungal glycan",
+    "D": "NLR ตรวจจับสัญญาณอันตรายภายในเซลล์",
+    "E": "Complement ไม่ใช่ PRR หลักต่อไวรัสนี้"
+   },
+   "audit_note": "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
   },
   {
    "id": "INTEG-51-MCQ-045",
@@ -778,7 +838,7 @@
    },
    "answer": "C",
    "answer_status": "draft",
-   "explanation": "Neisseria meningitidis ถูกกำจัดโดย complement-mediated lysis (MAC) (AI ตอบ)\n⚠️ ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้",
+   "explanation": "Neisseria meningitidis ถูกกำจัดด้วย complement (MAC) จึงขาด terminal complement เสี่ยงซ้ำ (AI ตอบ)",
    "refs": [
     {
      "paper": "MCQ51",
@@ -790,14 +850,23 @@
    "tags": [],
    "source": "import",
    "audit_ref": "integ_51_MCQ_045",
-   "key_concept": "• Neisseria: MAC\n• สรุป: Neisseria meningitidis ถูกกำจัดโดย complement-mediated lysis (MAC) (AI ตอบ)",
+   "key_concept": "• Terminal complement (C5–C9) deficiency → recurrent Neisseria\n• Meningococcus: gram-negative diplococci",
+   "mechanism": [
+    "Neisseria เข้ากระแสเลือด/CSF",
+    {
+     "s": "Complement จับและสร้าง MAC (C5b–9)",
+     "answer": true
+    },
+    "เยื่อเซลล์แบคทีเรียแตก เชื้อตาย"
+   ],
    "option_why": {
-    "A": "Chemotaxis: ผลรอง",
-    "B": "Opsonization: ช่วยแต่ไม่หลัก",
-    "C": "✓ MAC lysis: ต้านเชื้อ Neisseria",
-    "D": "Inflammation: ผลรอง",
-    "E": "Fixation: ขั้นตอน"
-   }
+    "A": "Chemotaxis ดึงเม็ดเลือดขาวแต่ไม่ฆ่าเชื้อ Neisseria โดยตรง",
+    "B": "Opsonization ช่วยแต่ไม่ใช่หลักของ Neisseria",
+    "C": "✓ MAC lysis เป็นกลไกหลักต่อ Neisseria",
+    "D": "การกระตุ้นอักเสบเป็นผลรอง",
+    "E": "Complement fixation เป็นขั้นตอนไม่ใช่กลไกฆ่า"
+   },
+   "audit_note": "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
   },
   {
    "id": "INTEG-51-MCQ-048",
@@ -815,7 +884,7 @@
    },
    "answer": "A",
    "answer_status": "draft",
-   "explanation": "Eosinophilia + cutaneous larva migrans (สุนัข) มี IgE-mediated eosinophil activation\n⚠️ ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้",
+   "explanation": "Eosinophilia ร่วมกับผื่นเคลื่อนที่ (cutaneous larva migrans จากสุนัข) ต้านพยาธิด้วย IgE และ eosinophil",
    "refs": [
     {
      "paper": "MCQ51",
@@ -827,14 +896,23 @@
    "tags": [],
    "source": "import",
    "audit_ref": "integ_51_MCQ_048",
-   "key_concept": "• Helminths: IgE/eosinophils\n• สรุป: Eosinophilia + cutaneous larva migrans (สุนัข) มี IgE-mediated eosinophil activation",
+   "key_concept": "• Helminth: Th2 → IgE + eosinophil\n• Th1: intracellular bacteria, Th2: helminth",
+   "mechanism": [
+    "พยาธิตัวอ่อนจากสุนัขเข้าผิวหนัง",
+    {
+     "s": "Th2 กระตุ้น IgE และ eosinophil",
+     "answer": true
+    },
+    "Eosinophil ปล่อย major basic protein ทำลายพยาธิ"
+   ],
    "option_why": {
-    "A": "✓ IgE + eosinophil: ต่อต้านหนอนพยาธิ",
-    "B": "CTL: ไวรัส",
-    "C": "Th1: intracellular bacteria",
-    "D": "Complement lysis: ไม่ใช่",
-    "E": "Neutrophil oxidative: ไม่ใช่"
-   }
+    "A": "✓ IgE-mediated eosinophil activation เป็นกลไกต้านหนอนพยาธิ",
+    "B": "CTL ต้านเซลล์ติดไวรัส",
+    "C": "Th1 กระตุ้น macrophage ต้านเชื้อภายในเซลล์",
+    "D": "Complement lysis ต้านแบคทีเรีย",
+    "E": "Neutrophil oxidative killing ต้านแบคทีเรีย"
+   },
+   "audit_note": "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
   },
   {
    "id": "INTEG-51-MCQ-049",
@@ -852,7 +930,7 @@
    },
    "answer": "B",
    "answer_status": "draft",
-   "explanation": "ช่วงตั้งครรภ์ glucose แม่ลดขณะอดอาหารเพราะ placenta/fetus ใช้ glucose ต่อเนื่อง\n⚠️ ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้",
+   "explanation": "ตั้งครรภ์ น้ำตาลหลังอดอาหารต่ำเพราะรกและทารกใช้ glucose ต่อเนื่องจากเลือดแม่",
    "refs": [
     {
      "paper": "MCQ51",
@@ -864,14 +942,23 @@
    "tags": [],
    "source": "import",
    "audit_ref": "integ_51_MCQ_049",
-   "key_concept": "• Pregnancy: fasting hypoglycemia\n• สรุป: ช่วงตั้งครรภ์ glucose แม่ลดขณะอดอาหารเพราะ placenta/fetus ใช้ glucose ต่อเนื่อง",
+   "key_concept": "• Pregnancy: fasting glucose ต่ำลง แต่ postprandial สูงขึ้น (insulin resistance)\n• hPL ทำให้ insulin resistance",
+   "mechanism": [
+    "ทารกและรกใช้ glucose จากแม่ต่อเนื่อง",
+    {
+     "s": "ระหว่างอดอาหาร glucose แม่ต่ำลง",
+     "answer": true
+    },
+    "แม่หน้ามืดเมื่อข้ามอาหารเช้า"
+   ],
    "option_why": {
-    "A": "Glucagon ไม่ลด",
-    "B": "✓ Continuous fetoplacental glucose use",
+    "A": "Glucagon ไม่ลดลง",
+    "B": "✓ Fetoplacental unit ใช้ glucose ตลอดเวลา",
     "C": "Glycogen ไม่ใช่สาเหตุหลัก",
-    "D": "Insulin resistance เพิ่ม ไม่ใช่ sensitivity",
-    "E": "Renal glucose loss ไม่ใช่"
-   }
+    "D": "Insulin sensitivity ลดลง (insulin resistance)",
+    "E": "ไม่ได้เสีย glucose ทางไตมากพอ"
+   },
+   "audit_note": "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
   },
   {
    "id": "INTEG-51-MCQ-051",
@@ -888,7 +975,7 @@
    },
    "answer": "A",
    "answer_status": "draft",
-   "explanation": "Cardiac output ในตั้งครรภ์เพิ่มจาก HR และ stroke volume\n⚠️ ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้",
+   "explanation": "ตั้งครรภ์ cardiac output เพิ่มจาก heart rate และ stroke volume ที่เพิ่มขึ้น",
    "refs": [
     {
      "paper": "MCQ51",
@@ -900,13 +987,22 @@
    "tags": [],
    "source": "import",
    "audit_ref": "integ_51_MCQ_051",
-   "key_concept": "• Pregnancy: CO ↑ (HR + SV)\n• สรุป: Cardiac output ในตั้งครรภ์เพิ่มจาก HR และ stroke volume",
+   "key_concept": "• Pregnancy: blood volume ↑ 40–50%, CO ↑, SVR ↓, BP ลดช่วงกลาง\n• Plasma volume ↑ มากกว่า RBC → physiologic anemia",
+   "mechanism": [
+    "Progesterone ขยายหลอดเลือด SVR ลด",
+    "Blood volume เพิ่ม",
+    {
+     "s": "HR และ SV เพิ่ม cardiac output สูงขึ้น",
+     "answer": true
+    }
+   ],
    "option_why": {
-    "A": "✓ HR + SV เพิ่ม",
-    "B": "SVR ลดลง",
-    "C": "SV เพิ่ม",
-    "D": "Venous return เพิ่ม"
-   }
+    "A": "✓ HR และ SV เพิ่มทำให้ CO เพิ่ม ~40%",
+    "B": "SVR ลดลงไม่ใช่เพิ่ม",
+    "C": "SV เพิ่ม ไม่ลด",
+    "D": "Venous return เพิ่มจากปริมาตรเลือด"
+   },
+   "audit_note": "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
   },
   {
    "id": "INTEG-51-MCQ-053",
@@ -923,7 +1019,7 @@
    },
    "answer": "A",
    "answer_status": "draft",
-   "explanation": "Primary HSV ไม่มี maternal IgG ผ่านรกให้ทารก ทำให้ neonatal herpes เสี่ยงสูง\n⚠️ ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้",
+   "explanation": "Primary HSV ไม่มี maternal IgG ผ่านรกให้ทารก จึงเสี่ยง neonatal herpes สูง",
    "refs": [
     {
      "paper": "MCQ51",
@@ -935,13 +1031,14 @@
    "tags": [],
    "source": "import",
    "audit_ref": "integ_51_MCQ_053",
-   "key_concept": "• Neonatal HSV: primary maternal infection\n• สรุป: Primary HSV ไม่มี maternal IgG ผ่านรกให้ทารก ทำให้ neonatal herpes เสี่ยงสูง",
+   "key_concept": "• Primary genital HSV ใกล้คลอด → neonatal herpes risk สูง (30–50%)\n• ผ่าตัดคลอดช่วยลดความเสี่ยง",
    "option_why": {
-    "A": "✓ Primary infection: ไม่มี antibody",
-    "B": "HSV ไม่ผ่านรกเป็นหลัก",
-    "C": "IgG เป็นป้องกันแต่ไม่มีใน primary",
-    "D": "Shedding เกิดในช่วงท้าย แต่ไม่อธิบายความเสี่ยงสูง"
-   }
+    "A": "✓ Primary infection ใกล้คลอดยังไม่มี IgG ให้ทารก",
+    "B": "HSV ไม่ข้ามรกเป็นหลัก ติดตอนคลอด",
+    "C": "IgG ป้องกันได้เฉพาะเมื่อแม่มีมาก่อน",
+    "D": "Asymptomatic shedding พบทั่วไปแต่ไม่อธิบายความเสี่ยงสูงของ primary"
+   },
+   "audit_note": "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
   },
   {
    "id": "INTEG-51-MCQ-054",
@@ -959,7 +1056,7 @@
    },
    "answer": "E",
    "answer_status": "draft",
-   "explanation": "Anterior mediastinal mass กด SVC: thymoma\n⚠️ ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้",
+   "explanation": "ก้อนใน anterior mediastinum กด SVC นึกถึง thymoma",
    "refs": [
     {
      "paper": "MCQ51",
@@ -971,14 +1068,15 @@
    "tags": [],
    "source": "import",
    "audit_ref": "integ_51_MCQ_054",
-   "key_concept": "• Anterior mediastinum: 4T, thymoma\n• สรุป: Anterior mediastinal mass กด SVC: thymoma",
+   "key_concept": "• Anterior mediastinum: Thymoma, Teratoma, Thyroid, Terrible lymphoma\n• Posterior: neurogenic tumor",
    "option_why": {
-    "A": "Neurogenic: posterior",
-    "B": "Bronchogenic cyst: middle",
-    "C": "Esophageal: posterior",
-    "D": "Aneurysm: posterior",
-    "E": "✓ Thymoma: anterior"
-   }
+    "A": "Neurogenic tumor อยู่ posterior",
+    "B": "Bronchogenic cyst อยู่ middle",
+    "C": "Esophageal tumor อยู่ posterior/middle",
+    "D": "Aortic aneurysm อยู่ posterior/middle",
+    "E": "✓ Thymoma อยู่ anterior"
+   },
+   "audit_note": "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
   },
   {
    "id": "INTEG-51-MCQ-055",
@@ -996,7 +1094,7 @@
    },
    "answer": "A",
    "answer_status": "draft",
-   "explanation": "pH 7.28 PaCO2 65 HCO3 30 สอดคล้อง acute-on-chronic respiratory acidosis (AI ตอบ)\n⚠️ ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้",
+   "explanation": "pH 7.28 PaCO₂ 65 HCO₃⁻ 30 สอดคล้อง acute-on-chronic respiratory acidosis (AI ตอบ)",
    "refs": [
     {
      "paper": "MCQ51",
@@ -1008,14 +1106,15 @@
    "tags": [],
    "source": "import",
    "audit_ref": "integ_51_MCQ_055",
-   "key_concept": "• Acute-on-chronic respiratory acidosis\n• สรุป: pH 7.28 PaCO2 65 HCO3 30 สอดคล้อง acute-on-chronic respiratory acidosis (AI ตอบ)",
+   "key_concept": "• Acute resp acidosis: HCO₃⁻ ↑ 1 ต่อ PaCO₂ ↑ 10\n• Chronic: HCO₃⁻ ↑ 3.5 ต่อ PaCO₂ ↑ 10",
    "option_why": {
-    "A": "✓ Acute on chronic: HCO3 ระหว่าง acute กับ chronic",
-    "B": "Mixed: HCO3 ต้องต่ำ",
-    "C": "Metabolic acidosis: HCO3 ต่ำ",
-    "D": "Acute: HCO3 ~26",
-    "E": "Chronic: HCO3 ~32 และ pH ใกล้ปกติ"
-   }
+    "A": "✓ HCO₃⁻ 30 สูงกว่า acute แต่น้อยกว่า chronic",
+    "B": "Mixed ต้อง HCO₃⁻ ต่ำ",
+    "C": "Metabolic acidosis ต้อง HCO₃⁻ ต่ำ",
+    "D": "Acute: HCO₃⁻ ~26",
+    "E": "Chronic: HCO₃⁻ ~32 และ pH ใกล้ปกติ"
+   },
+   "audit_note": "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
   },
   {
    "id": "INTEG-51-MCQ-057",
@@ -1033,7 +1132,7 @@
    },
    "answer": "D",
    "answer_status": "draft",
-   "explanation": "Aspiration ท่านอนหงายเข้า right lower lobe superior (posterior) segment\n⚠️ ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้",
+   "explanation": "Aspiration ในท่านอนหงายเข้า right lower lobe ที่ superior segment เพราะ bronchus ตรงและชันตามเส้นของแรงโน้มถ่วง",
    "refs": [
     {
      "paper": "MCQ51",
@@ -1045,14 +1144,15 @@
    "tags": [],
    "source": "import",
    "audit_ref": "integ_51_MCQ_057",
-   "key_concept": "• Supine aspiration: RLL superior\n• สรุป: Aspiration ท่านอนหงายเข้า right lower lobe superior (posterior) segment",
+   "key_concept": "• Supine: RLL superior segment + RUL posterior\n• Upright: RLL basal",
    "option_why": {
-    "A": "Left upper: ไม่ใช่",
-    "B": "Right upper lateral: ไม่ใช่",
-    "C": "Right middle: ไม่ใช่",
-    "D": "✓ RLL superior segment ในท่า supine",
-    "E": "Left lower basal: ไม่ใช่"
-   }
+    "A": "Left upper lobe lingula ไม่ใช่ท่านอนหงายทั่วไป",
+    "B": "RUL มักพบเมื่อนอนตะแคงขวา",
+    "C": "RML ไม่ใช่ตำแหน่งหลัก",
+    "D": "✓ RLL superior segment พบมากที่สุดเมื่อนอนหงาย",
+    "E": "LLL basal พบเมื่อยืนหรือนั่ง"
+   },
+   "audit_note": "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
   },
   {
    "id": "INTEG-51-MCQ-058",
@@ -1070,7 +1170,7 @@
    },
    "answer": "C",
    "answer_status": "draft",
-   "explanation": "Asthma มี airway hyperresponsiveness\n⚠️ ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้",
+   "explanation": "Asthma มี airway hyperresponsiveness ต่อ dust และการออกกำลัง",
    "refs": [
     {
      "paper": "MCQ51",
@@ -1082,14 +1182,23 @@
    "tags": [],
    "source": "import",
    "audit_ref": "integ_51_MCQ_058",
-   "key_concept": "• Asthma: hyperresponsiveness\n• สรุป: Asthma มี airway hyperresponsiveness",
+   "key_concept": "• Asthma: reversible obstruction, hyperresponsiveness, eosinophil\n• FEV₁ เพิ่มหลังยาขยายหลอดลม",
+   "mechanism": [
+    "ได้รับสิ่งกระตุ้น (dust, ออกกำลัง)",
+    {
+     "s": "หลอดลมไวเกิน หดตัวและอักเสบ",
+     "answer": true
+    },
+    "ไอ หวีด ตอนกลางคืน"
+   ],
    "option_why": {
-    "A": "Smooth muscle ↑ เป็นผลระยะยาว",
-    "B": "Compliance ปกติ",
-    "C": "✓ Airway hypersensitivity: ลักษณะหลัก",
+    "A": "Smooth muscle ↑ เป็นผลระยะยาว (remodeling)",
+    "B": "Compliance ปกติในช่วงนอกอาการ",
+    "C": "✓ Airway hyperresponsiveness เป็นลักษณะหลัก",
     "D": "Surfactant ปกติ",
     "E": "Surface tension ปกติ"
-   }
+   },
+   "audit_note": "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
   },
   {
    "id": "INTEG-51-MCQ-059",
@@ -1107,7 +1216,7 @@
    },
    "answer": "D",
    "answer_status": "draft",
-   "explanation": "กระเพาะหดแข็ง cobblestone นึกถึง gastric adenocarcinoma (diffuse type, AI ตอบ)\n⚠️ ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้",
+   "explanation": "กระเพาะหดแข็ง cobblestone ชวนให้นึกถึง gastric adenocarcinoma (linitis plastica) (AI ตอบ)",
    "refs": [
     {
      "paper": "MCQ51",
@@ -1119,14 +1228,15 @@
    "tags": [],
    "source": "import",
    "audit_ref": "integ_51_MCQ_059",
-   "key_concept": "• Linitis plastica\n• สรุป: กระเพาะหดแข็ง cobblestone นึกถึง gastric adenocarcinoma (diffuse type, AI ตอบ)",
+   "key_concept": "• Linitis plastica = diffuse signet ring gastric CA\n• Intestinal type: H. pylori, intestinal metaplasia",
    "option_why": {
-    "A": "Atrophic gastritis: ผนังบาง",
-    "B": "Acute erosive: ผิวถลอก",
-    "C": "PUD: ulcer",
-    "D": "✓ Gastric adenocarcinoma (linitis plastica)",
-    "E": "ZES: ulcer หลายตำแหน่ง"
-   }
+    "A": "Atrophic gastritis ผนังบางแต่ไม่แข็ง",
+    "B": "Acute erosive gastritis เป็นแผลถลอก",
+    "C": "PUD เป็นแผลเฉพาะที่",
+    "D": "✓ Gastric adenocarcinoma ชนิด diffuse ทำให้ผนังแข็งหนา",
+    "E": "ZES ทำให้แผลหลายตำแหน่ง"
+   },
+   "audit_note": "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
   },
   {
    "id": "INTEG-51-MCQ-060",
@@ -1144,7 +1254,7 @@
    },
    "answer": "B",
    "answer_status": "draft",
-   "explanation": "ACEI ขยาย efferent arteriole ทำให้ GFR ลดเล็กน้อย\n⚠️ ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้",
+   "explanation": "ACEI ขยาย efferent arteriole ทำให้ GFR ลดเล็กน้อย",
    "refs": [
     {
      "paper": "MCQ51",
@@ -1156,14 +1266,23 @@
    "tags": [],
    "source": "import",
    "audit_ref": "integ_51_MCQ_060",
-   "key_concept": "• ACEI: efferent dilation\n• สรุป: ACEI ขยาย efferent arteriole ทำให้ GFR ลดเล็กน้อย",
+   "key_concept": "• ACEI/ARB: GFR ลดเล็กน้อย (<30%) ยอมรับได้\n• Creatinine เพิ่ม >30% ให้หยุดยา",
+   "mechanism": [
+    "ACEI ลด angiotensin II",
+    {
+     "s": "Efferent arteriole ขยาย",
+     "answer": true
+    },
+    "ความดัน glomerulus ลด GFR ลด"
+   ],
    "option_why": {
-    "A": "Afferent constriction: NSAID",
-    "B": "✓ Efferent vasodilation: ACEI",
+    "A": "Afferent constriction เกิดจาก NSAID",
+    "B": "✓ Efferent dilation เกิดจาก ACEI/ARB",
     "C": "Efferent constriction เพิ่ม GFR",
-    "D": "Intraglomerular pressure ลด",
-    "E": "RPF ไม่ใช่หลัก"
-   }
+    "D": "Intraglomerular pressure ลดลง",
+    "E": "RPF ไม่ใช่สาเหตุหลัก"
+   },
+   "audit_note": "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
   }
  ]
 }

@@ -19,17 +19,17 @@
     "E": "Lateral somatic mesoderm"
    },
    "correct": "E",
-   "explanation": "กระดูกแขนขาพัฒนามาจาก lateral plate (somatic) mesoderm",
+   "explanation": "กระดูกแขน (humerus) เจริญจาก lateral plate somatic mesoderm ของ limb bud",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "Neural tube",
-    "B": "Neural crest",
-    "C": "Sclerotome → axial skeleton",
-    "D": "Dermomyotome → muscle/dermis",
-    "E": "✓ Lateral somatic mesoderm"
+    "A": "Neural tube พัฒนาเป็น CNS",
+    "B": "Neural crest ให้ melanocyte, Schwann cell, กระดูกใบหน้าบางส่วน",
+    "C": "Sclerotome ให้กระดูกสันหลังและซี่โครง",
+    "D": "Dermomyotome ให้ผิวหนังชั้นหนังแท้และกล้ามเนื้อ",
+    "E": "✓ Lateral plate (somatic) mesoderm ให้กระดูกและกระดูกอ่อนของ limb"
    },
-   "key_concept": "• Limb skeleton: lateral plate mesoderm\n• สรุป: กระดูกแขนขาพัฒนามาจาก lateral plate (somatic) mesoderm",
+   "key_concept": "• Limb bone/cartilage ← somatic lateral plate mesoderm\n• Limb muscle ← myotome (VML); Limb skin ← dermatome/ectoderm",
    "audit": {
     "source_file": "preclinic/3/musculoskeletal/mcq/ข้อสอบ mcq/MCQ_Musculo [Med PSU 50].pdf",
     "page": 1,
@@ -68,17 +68,17 @@
     "E": "Lambdoid"
    },
    "correct": "A",
-   "explanation": "กะโหลกสามเหลี่ยม เกิดจาก frontal (metopic) suture ปิดก่อน",
+   "explanation": "กะโหลกสามเหลี่ยมจากรอยต่อบริเวณหน้าผาก (metopic/frontal) ปิดก่อนเวลา (trigonocephaly)",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "✓ Frontal (metopic)",
-    "B": "Sagittal",
-    "C": "Coronal",
-    "D": "Occipital",
-    "E": "Lambdoid"
+    "A": "✓ รอยต่อหน้าผาก (frontal/metopic) ปิดก่อน ทำให้หน้าผากแหลมสามเหลี่ยม",
+    "B": "Sagittal ปิดก่อน ทำให้กะโหลกยาว",
+    "C": "Coronal ปิดก่อน ทำให้กะโหลกสั้นกว้าง",
+    "D": "Occipital ไม่ใช่ชื่อรอยต่อที่พบบ่อย",
+    "E": "Lambdoid ปิดก่อน ทำให้ท้ายทอยแบน"
    },
-   "key_concept": "• Trigonocephaly\n• สรุป: กะโหลกสามเหลี่ยม เกิดจาก frontal (metopic) suture ปิดก่อน",
+   "key_concept": "• Craniosynostosis: ชื่อ-รูปร่างตามรอยต่อที่ปิดก่อน\n• Metopic: trigonocephaly, sagittal: scaphocephaly",
    "audit": {
     "source_file": "preclinic/3/musculoskeletal/mcq/ข้อสอบ mcq/MCQ_Musculo [Med PSU 50].pdf",
     "page": 1,
@@ -117,17 +117,25 @@
     "E": "Zone of polarizing activity (ZPA)"
    },
    "correct": "D",
-   "explanation": "AER กำหนดการเจริญแนว proximal–distal ของ limb bud",
+   "explanation": "AER (apical ectodermal ridge) ที่ปลาย limb bud กำหนดการเจริญแนว proximal–distal",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "Notochord",
-    "B": "Dorsal mesoderm",
-    "C": "Ventral mesoderm",
-    "D": "✓ AER",
-    "E": "ZPA กำหนดแนว anterior–posterior"
+    "A": "Notochord ชักนำ neural tube",
+    "B": "Dorsal mesoderm ไม่ใช่ตัวกำหนด proximal–distal",
+    "C": "Ventral mesoderm ไม่ใช่ตัวกำหนดแกนนี้",
+    "D": "✓ AER หลั่ง FGF ให้ mesoderm เจริญต่อ",
+    "E": "ZPA กำหนดแกน anterior–posterior ผ่าน Shh"
    },
-   "key_concept": "• AER: FGF8/10 proximodistal growth\n• สรุป: AER กำหนดการเจริญแนว proximal–distal ของ limb bud",
+   "key_concept": "• AER (FGF8/10) → proximal-distal; ZPA (Shh) → anterior-posterior\n• Wnt7a → dorsal-ventral",
+   "mechanism": [
+    "AER หลั่ง FGF",
+    {
+     "s": "ชักนำ mesoderm ใต้ AER ให้แบ่งตัว",
+     "answer": true
+    },
+    "limb bud ยาวออกตามแกน proximal–distal"
+   ],
    "audit": {
     "source_file": "preclinic/3/musculoskeletal/mcq/ข้อสอบ mcq/MCQ_Musculo [Med PSU 50].pdf",
     "page": 1,
@@ -166,17 +174,17 @@
     "E": "Induction of zone of polarizing area (ZPA)"
    },
    "correct": "B",
-   "explanation": "Resegmentation ของ sclerotome ทำให้ spinal nerve ผ่านระหว่างกระดูกสันหลังและเลี้ยง myotome ที่สอดคล้อง",
+   "explanation": "Resegmentation of sclerotome ทำให้ spinal nerve ผ่านระหว่าง vertebra",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "Limb formation",
-    "B": "✓ Resegmentation",
-    "C": "D-V patterning",
-    "D": "AER",
-    "E": "ZPA"
+    "A": "Limb formation เป็นการสร้างแขนขา",
+    "B": "✓ Sclerotome แยกครึ่งหัวหางแล้วรวมกับปล้องข้างเคียง ทำให้ nerve ออกระหว่าง vertebra",
+    "C": "Dorsoventral patterning กำหนดด้านหลัง-หน้าของ limb",
+    "D": "AER ชักนำการยาวของ limb",
+    "E": "ZPA ชักนำแกน anterior–posterior"
    },
-   "key_concept": "• Sclerotome resegmentation\n• สรุป: Resegmentation ของ sclerotome ทำให้ spinal nerve ผ่านระหว่างกระดูกสันหลังและเลี้ยง myotome",
+   "key_concept": "• Resegmentation: vertebra ครอบคลุมสองปล้อง myotome\n• Intervertebral foramen คือช่องออกของ spinal nerve",
    "audit": {
     "source_file": "preclinic/3/musculoskeletal/mcq/ข้อสอบ mcq/MCQ_Musculo [Med PSU 50].pdf",
     "page": 2,
@@ -215,17 +223,17 @@
     "E": "Dorsolateral (DML) of dermomyotome"
    },
    "correct": "E",
-   "explanation": "กล้ามเนื้อหลังมาจาก dorsolateral (epaxial) dermomyotome",
+   "explanation": "กล้ามเนื้อหลัง (epaxial) มาจาก dorsolateral (DML) ของ dermomyotome",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "Somitomere",
-    "B": "Somatic lateral plate",
-    "C": "Splanchnic",
-    "D": "VML → hypaxial",
-    "E": "✓ DML → epaxial"
+    "A": "Somitomere ให้กล้ามเนื้อใบหน้า/ศีรษะ",
+    "B": "Somatic lateral plate ให้ผนังลำตัวและกระดูก limb",
+    "C": "Splanchnic lateral plate ให้กล้ามเนื้อเรียบและหัวใจ",
+    "D": "VML ให้กล้ามเนื้อ hypaxial (limb และผนังท้อง)",
+    "E": "✓ DML ให้กล้ามเนื้อ epaxial (กล้ามเนื้อหลัง)"
    },
-   "key_concept": "• Epaxial muscles: DML\n• สรุป: กล้ามเนื้อหลังมาจาก dorsolateral (epaxial) dermomyotome",
+   "key_concept": "• DML → epaxial (back muscle), VML → hypaxial (limb, abdomen)\n• Epaxial ← dorsal ramus, hypaxial ← ventral ramus",
    "audit": {
     "source_file": "preclinic/3/musculoskeletal/mcq/ข้อสอบ mcq/MCQ_Musculo [Med PSU 50].pdf",
     "page": 2,
@@ -264,17 +272,17 @@
     "E": "Sirenomelia"
    },
    "correct": "E",
-   "explanation": "ขาสองข้างติดกัน ไม่มีอวัยวะเพศ หลอดเลือดสะดือเส้นเดียว คือ sirenomelia",
+   "explanation": "ขาติดกัน ไม่มีอวัยวะเพศภายนอกและมีหลอดเลือดแดงเดียว คือ sirenomelia",
    "image": "img/MSK-50-MCQ-006.jpg",
    "issues": [],
    "option_why": {
-    "A": "Amelia",
-    "B": "Phocomelia",
-    "C": "Adactyly",
-    "D": "Syndactyly",
-    "E": "✓ Sirenomelia"
+    "A": "Amelia คือไม่มีแขน/ขา",
+    "B": "Phocomelia คือส่วนต้นหาย",
+    "C": "Adactyly คือนิ้วหาย",
+    "D": "Syndactyly คือนิ้วติดกัน",
+    "E": "✓ Sirenomelia คือขาติดกันและอวัยวะสร้างผิดปกติ (single umbilical artery)"
    },
-   "key_concept": "• Sirenomelia (mermaid)\n• สรุป: ขาสองข้างติดกัน ไม่มีอวัยวะเพศ หลอดเลือดสะดือเส้นเดียว คือ sirenomelia",
+   "key_concept": "• Sirenomelia (mermaid): ขาเชื่อมกัน, renal agenesis\n• Caudal regression spectrum",
    "audit": {
     "source_file": "preclinic/3/musculoskeletal/mcq/ข้อสอบ mcq/MCQ_Musculo [Med PSU 50].pdf",
     "page": 2,
@@ -313,17 +321,17 @@
     "E": "Lateral arm"
    },
    "correct": "C",
-   "explanation": "C8 radiculopathy ชาที่นิ้วก้อย",
+   "explanation": "ก้อนกด C8 root ทำให้ชานิ้วก้อย (C8 dermatome)",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "Thumb C6",
-    "B": "Middle C7",
-    "C": "✓ Little finger C8",
-    "D": "Medial arm T1",
-    "E": "Lateral arm C5"
+    "A": "นิ้วโป้ง = C6",
+    "B": "นิ้วกลาง = C7",
+    "C": "✓ นิ้วก้อย = C8",
+    "D": "แขนด้านใน (medial arm) = T1/T2",
+    "E": "แขนด้านนอก = C5/C6"
    },
-   "key_concept": "• C8: little finger\n• สรุป: C8 radiculopathy ชาที่นิ้วก้อย",
+   "key_concept": "• Dermatome: C6 thumb, C7 middle, C8 little\n• C8: ชาขอบ ulnar ของมือ",
    "audit": {
     "source_file": "preclinic/3/musculoskeletal/mcq/ข้อสอบ mcq/MCQ_Musculo [Med PSU 50].pdf",
     "page": 3,
@@ -362,17 +370,17 @@
     "E": "Musculocutaneous"
    },
    "correct": "D",
-   "explanation": "ชา/เจ็บที่นิ้วหัวแม่มือคือ median nerve (carpal tunnel)",
+   "explanation": "ชา เจ็บ ที่นิ้วโป้ง (หญิง 62 ปี) พบบ่อยที่สุดจาก median nerve (carpal tunnel)",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "Ulnar",
-    "B": "Radial",
-    "C": "Axillary",
-    "D": "✓ Median",
-    "E": "Musculocutaneous"
+    "A": "Ulnar เลี้ยงนิ้วก้อย",
+    "B": "Radial เลี้ยงหลังมือด้านนิ้วโป้ง",
+    "C": "Axillary เลี้ยงไหล่",
+    "D": "✓ Median เลี้ยงนิ้วโป้ง ชี้ กลาง",
+    "E": "Musculocutaneous เลี้ยง lateral forearm"
    },
-   "key_concept": "• Median: thumb, index, middle\n• สรุป: ชา/เจ็บที่นิ้วหัวแม่มือคือ median nerve (carpal tunnel)",
+   "key_concept": "• CTS: median nerve ใต้ flexor retinaculum\n• ผู้หญิงวัยกลางคน ชากลางคืน",
    "audit": {
     "source_file": "preclinic/3/musculoskeletal/mcq/ข้อสอบ mcq/MCQ_Musculo [Med PSU 50].pdf",
     "page": 3,
@@ -411,17 +419,17 @@
     "E": "Pronator quadratus"
    },
    "correct": "B",
-   "explanation": "Brachioradialis ไม่ใช่ flexor compartment (อยู่ extensor compartment, radial n.)",
+   "explanation": "Brachioradialis ไม่ได้อยู่ใน flexor compartment เป็นกล้ามเนื้อใน posterior compartment (ใช้ radial nerve)",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "Biceps flexor",
-    "B": "✓ Brachioradialis (extensor compartment)",
-    "C": "Coracobrachialis flexor",
-    "D": "PL forearm flexor",
-    "E": "PQ forearm flexor"
+    "A": "Biceps brachii อยู่ anterior compartment ของแขน",
+    "B": "✓ Brachioradialis เป็น extensor group ที่งอศอกได้ (radial nerve)",
+    "C": "Coracobrachialis อยู่ anterior compartment ของแขน",
+    "D": "Palmaris longus อยู่ anterior compartment ของปลายแขน",
+    "E": "Pronator quadratus อยู่ anterior compartment ของปลายแขน"
    },
-   "key_concept": "• Brachioradialis: radial nerve\n• สรุป: Brachioradialis ไม่ใช่ flexor compartment (อยู่ extensor compartment, radial n.)",
+   "key_concept": "• Brachioradialis: radial nerve แต่ทำ elbow flexion\n• แขน anterior: biceps, brachialis, coracobrachialis (musculocutaneous)",
    "audit": {
     "source_file": "preclinic/3/musculoskeletal/mcq/ข้อสอบ mcq/MCQ_Musculo [Med PSU 50].pdf",
     "page": 3,
@@ -460,17 +468,17 @@
     "E": "Musculocutaneous"
    },
    "correct": "A",
-   "explanation": "กระดูก surgical neck/head ของ humerus หัก ทำให้ axillary nerve บาดเจ็บ",
+   "explanation": "ล้มกระแทกไหล่ ชาที่ไหล่ด้านข้างและอ่อนแรง abduction คือ axillary nerve (surgical neck)",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "✓ Axillary → deltoid",
-    "B": "Radial shaft",
-    "C": "Subscapular",
-    "D": "Suprascapular",
-    "E": "Musculocutaneous"
+    "A": "✓ Axillary ผ่าน surgical neck ของ humerus เลี้ยง deltoid/teres minor",
+    "B": "Radial อยู่ที่ radial groove",
+    "C": "Subscapular nerve เลี้ยง subscapularis",
+    "D": "Suprascapular เลี้ยง supraspinatus/infraspinatus",
+    "E": "Musculocutaneous เลี้ยง biceps"
    },
-   "key_concept": "• Axillary: deltoid + teres minor\n• สรุป: กระดูก surgical neck/head ของ humerus หัก ทำให้ axillary nerve บาดเจ็บ",
+   "key_concept": "• Shoulder dislocation anterior → axillary nerve\n• Deltoid atrophy + ชา regimental badge area",
    "audit": {
     "source_file": "preclinic/3/musculoskeletal/mcq/ข้อสอบ mcq/MCQ_Musculo [Med PSU 50].pdf",
     "page": 3,
@@ -509,17 +517,17 @@
     "E": "Abductor digiti minimi"
    },
    "correct": "C",
-   "explanation": "ท่ากางนิ้วออกจากแกนกลาง = dorsal interossei (DAB)",
+   "explanation": "การกางนิ้ว (abduction) ใช้ dorsal interossei (DAB)",
    "image": "img/MSK-50-MCQ-011.jpg",
    "issues": [],
    "option_why": {
-    "A": "Lumbrical",
-    "B": "Palmar interossei adduct",
-    "C": "✓ Dorsal interossei",
-    "D": "APB",
-    "E": "ADM abduct นิ้วก้อย"
+    "A": "Lumbrical งอ MCP เหยียด IP",
+    "B": "Palmar interossei หุบนิ้ว (PAD)",
+    "C": "✓ Dorsal interossei กางนิ้ว (DAB)",
+    "D": "APB กางนิ้วโป้ง",
+    "E": "ADM กางนิ้วก้อย"
    },
-   "key_concept": "• DAB\n• สรุป: ท่ากางนิ้วออกจากแกนกลาง = dorsal interossei (DAB)",
+   "key_concept": "• PAD (palmar adduct), DAB (dorsal abduct)\n• Interossei: ulnar nerve",
    "audit": {
     "source_file": "preclinic/3/musculoskeletal/mcq/ข้อสอบ mcq/MCQ_Musculo [Med PSU 50].pdf",
     "page": 4,
@@ -558,17 +566,17 @@
     "E": "Musculocutaneous"
    },
    "correct": "A",
-   "explanation": "Claw hand ในภาพจากรอยโรค ulnar nerve",
+   "explanation": "การหุบ/กางนิ้วเสียจาก ulnar nerve (เลี้ยง interossei)",
    "image": "img/MSK-50-MCQ-012.jpg",
    "issues": [],
    "option_why": {
-    "A": "✓ Ulnar",
-    "B": "Median",
-    "C": "Radial",
-    "D": "Axillary",
-    "E": "Musculocutaneous"
+    "A": "✓ Ulnar nerve เลี้ยง interossei และ medial lumbricals",
+    "B": "Median เลี้ยง thenar และ lateral lumbricals",
+    "C": "Radial เลี้ยง extensor ทำให้ wrist drop",
+    "D": "Axillary เลี้ยงไหล่",
+    "E": "Musculocutaneous เลี้ยง biceps"
    },
-   "key_concept": "• Ulnar claw\n• สรุป: Claw hand ในภาพจากรอยโรค ulnar nerve",
+   "key_concept": "• Ulnar injury: claw hand, Froment sign, ชานิ้วก้อย\n• Ulnar paradox: injury สูง claw น้อยกว่า",
    "audit": {
     "source_file": "preclinic/3/musculoskeletal/mcq/ข้อสอบ mcq/MCQ_Musculo [Med PSU 50].pdf",
     "page": 4,
@@ -607,17 +615,17 @@
     "E": "Musculocutaneous"
    },
    "correct": "B",
-   "explanation": "เหยียดข้อมือและนิ้วไม่ได้ ชาหลังมือ คือ radial nerve",
+   "explanation": "ล้มจากจักรยาน กระดูกแขนหัก ข้อมือตก (wrist drop) คือ radial nerve",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "Median",
-    "B": "✓ Radial",
-    "C": "Ulnar",
-    "D": "Axillary",
-    "E": "Musculocutaneous"
+    "A": "Median ทำให้ ape hand",
+    "B": "✓ Radial ผ่าน radial groove เหยียดข้อมือ",
+    "C": "Ulnar ทำให้ claw hand",
+    "D": "Axillary ทำให้ deltoid อ่อน",
+    "E": "Musculocutaneous ทำให้ศอกงอไม่ได้"
    },
-   "key_concept": "• Radial: wrist drop\n• สรุป: เหยียดข้อมือและนิ้วไม่ได้ ชาหลังมือ คือ radial nerve",
+   "key_concept": "• Radial: wrist drop, midshaft humerus fracture\n• ชาหลังมือด้านนิ้วโป้ง",
    "audit": {
     "source_file": "preclinic/3/musculoskeletal/mcq/ข้อสอบ mcq/MCQ_Musculo [Med PSU 50].pdf",
     "page": 4,
@@ -656,17 +664,17 @@
     "E": "Flexor digitorum superficialis"
    },
    "correct": "A",
-   "explanation": "กล้ามเนื้อทำท่า MCP งอ IP เหยียดตามภาพ คือ lumbricals",
+   "explanation": "Lumbrical งอ MCP และเหยียด IP ของนิ้ว (ตามเฉลยต้นฉบับ)",
    "image": "img/MSK-50-MCQ-014.jpg",
    "issues": [],
    "option_why": {
-    "A": "✓ Lumbrical",
-    "B": "Interossei",
-    "C": "Opponens",
-    "D": "FDP",
-    "E": "FDS"
+    "A": "✓ Lumbrical งอ MCP เหยียด IP",
+    "B": "Interossei ทำ abduction/adduction และเสริม MCP flexion",
+    "C": "Opponens pollicis ทำ opposition",
+    "D": "FDP งอ DIP",
+    "E": "FDS งอ PIP"
    },
-   "key_concept": "• Lumbricals: flex MCP, extend IP\n• สรุป: กล้ามเนื้อทำท่า MCP งอ IP เหยียดตามภาพ คือ lumbricals",
+   "key_concept": "• Lumbrical: flex MCP + extend IP (ท่า intrinsic plus)\n• Interosseous: ab/adduct",
    "audit": {
     "source_file": "preclinic/3/musculoskeletal/mcq/ข้อสอบ mcq/MCQ_Musculo [Med PSU 50].pdf",
     "page": 4,
@@ -705,17 +713,17 @@
     "E": "Flexor digitorum superficialis"
    },
    "correct": "B",
-   "explanation": "Tendon ที่อยู่ด้านใน (medial) ของ radial artery ที่ข้อมือคือ FCR",
+   "explanation": "เส้นเอ็นที่อยู่ด้านใน (medial) ของ radial artery ที่ข้อมือคือ flexor carpi radialis",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "PL",
-    "B": "✓ FCR",
-    "C": "FCU",
-    "D": "FDP",
-    "E": "FDS"
+    "A": "Palmaris longus อยู่ตรงกลางข้อมือ",
+    "B": "✓ FCR อยู่ติด radial artery ด้านใน",
+    "C": "FCU อยู่ด้าน ulnar",
+    "D": "FDP อยู่ลึกใน carpal tunnel",
+    "E": "FDS อยู่ใน carpal tunnel"
    },
-   "key_concept": "• Radial artery: lateral to FCR\n• สรุป: Tendon ที่อยู่ด้านใน (medial) ของ radial artery ที่ข้อมือคือ FCR",
+   "key_concept": "• Radial pulse: ด้านข้างของ FCR\n• FCR ใช้จับชีพจร",
    "audit": {
     "source_file": "preclinic/3/musculoskeletal/mcq/ข้อสอบ mcq/MCQ_Musculo [Med PSU 50].pdf",
     "page": 5,
@@ -754,17 +762,17 @@
     "E": "Flexor digiti minimi"
    },
    "correct": "A",
-   "explanation": "Lumbricals ได้รับเส้นประสาททั้ง median (ชุด 1–2) และ ulnar (ชุด 3–4)",
+   "explanation": "Lumbrical ได้ทั้ง median (lateral 2) และ ulnar (medial 2)",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "✓ Lumbrical",
-    "B": "Interossei ulnar",
-    "C": "Palmaris brevis ulnar",
-    "D": "Adductor pollicis ulnar",
-    "E": "FDM ulnar"
+    "A": "✓ Lumbrical 1–2 median, 3–4 ulnar",
+    "B": "Interossei ทั้งหมดเป็น ulnar nerve",
+    "C": "Palmaris brevis เป็น ulnar",
+    "D": "Adductor pollicis เป็น ulnar",
+    "E": "Flexor digiti minimi เป็น ulnar"
    },
-   "key_concept": "• Lumbricals: dual innervation\n• สรุป: Lumbricals ได้รับเส้นประสาททั้ง median (ชุด 1–2) และ ulnar (ชุด 3–4)",
+   "key_concept": "• Hand: ulnar เลี้ยงส่วนใหญ่ ยกเว้น LOAF (median)\n• LOAF: lateral 2 lumbricals, opponens, APB, FPB",
    "audit": {
     "source_file": "preclinic/3/musculoskeletal/mcq/ข้อสอบ mcq/MCQ_Musculo [Med PSU 50].pdf",
     "page": 5,
@@ -803,17 +811,17 @@
     "E": "Dorsal scapular"
    },
    "correct": "C",
-   "explanation": "Posterior circumflex humeral artery เสี่ยงเมื่อ surgical neck หัก",
+   "explanation": "หัว humerus หัก/เคลื่อน ทำลาย posterior circumflex humeral artery ที่เลี้ยงหัว humerus",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "Axillary",
-    "B": "Brachial",
-    "C": "✓ PCHA",
-    "D": "Circumflex scapular",
-    "E": "Dorsal scapular"
+    "A": "Axillary ใหญ่ ไม่ใช่หลอดเลือดหลักของหัวกระดูก",
+    "B": "Brachial อยู่ที่แขน",
+    "C": "✓ PCHA เลี้ยงหัว humerus ผ่าน quadrangular space",
+    "D": "Circumflex scapular อยู่ที่ triangular space",
+    "E": "Dorsal scapular เลี้ยง rhomboid"
    },
-   "key_concept": "• Surgical neck: axillary n. + PCHA\n• สรุป: Posterior circumflex humeral artery เสี่ยงเมื่อ surgical neck หัก",
+   "key_concept": "• Surgical neck: axillary nerve + PCHA\n• AVN ของหัว humerus จาก PCHA",
    "audit": {
     "source_file": "preclinic/3/musculoskeletal/mcq/ข้อสอบ mcq/MCQ_Musculo [Med PSU 50].pdf",
     "page": 5,
@@ -852,17 +860,17 @@
     "E": "Middle subscapular"
    },
    "correct": "B",
-   "explanation": "Supraspinatus และ infraspinatus ลีบ จาก suprascapular nerve",
+   "explanation": "ปวดไหล่หลังแบบคลุมเครือ นึกถึง suprascapular nerve (suprascapular notch) ที่เลี้ยง supraspinatus/infraspinatus",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "Radial",
-    "B": "✓ Suprascapular",
-    "C": "Dorsal scapular",
-    "D": "Musculocutaneous",
-    "E": "Subscapular"
+    "A": "Radial ไม่เกี่ยวไหล่หลัง",
+    "B": "✓ Suprascapular เสียทำให้ปวดไหล่หลังและอ่อน ER/abduction",
+    "C": "Dorsal scapular เลี้ยง rhomboid",
+    "D": "Musculocutaneous เลี้ยง biceps",
+    "E": "Middle subscapular เลี้ยง subscapularis"
    },
-   "key_concept": "• Suprascapular: rotator cuff\n• สรุป: Supraspinatus และ infraspinatus ลีบ จาก suprascapular nerve",
+   "key_concept": "• Suprascapular entrapment: ปวดไหล่หลัง, infraspinatus ฝ่อ\n• Supraspinatus: abduct 0–15°",
    "audit": {
     "source_file": "preclinic/3/musculoskeletal/mcq/ข้อสอบ mcq/MCQ_Musculo [Med PSU 50].pdf",
     "page": 5,
@@ -901,17 +909,17 @@
     "E": "Brachial plexitis"
    },
    "correct": "D",
-   "explanation": "ปวดคอร้าวนิ้วกลาง triceps อ่อนแรง ชาหลังมือ คือ C7 radiculopathy",
+   "explanation": "ปวดคอร้าวนิ้วกลาง และ triceps อ่อนแรง คือ C7 radiculopathy",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "C6 myelopathy",
-    "B": "C7 myelopathy",
-    "C": "C6",
-    "D": "✓ C7 radiculopathy",
-    "E": "Plexitis"
+    "A": "C6 myelopathy เกิดจากไขสันหลังไม่ใช่ราก",
+    "B": "C7 myelopathy เป็นไขสันหลัง ไม่ใช่รากประสาท",
+    "C": "C6 radiculopathy ชานิ้วโป้ง",
+    "D": "✓ C7 radiculopathy ชานิ้วกลาง triceps อ่อน",
+    "E": "Brachial plexitis เจ็บหลังต้นไหล่ ไม่เป็น dermatome เดียว"
    },
-   "key_concept": "• C7: triceps, middle finger\n• สรุป: ปวดคอร้าวนิ้วกลาง triceps อ่อนแรง ชาหลังมือ คือ C7 radiculopathy",
+   "key_concept": "• C7: triceps, นิ้วกลาง, wrist flexion\n• Radiculopathy = LMN เฉพาะรากเดียว",
    "audit": {
     "source_file": "preclinic/3/musculoskeletal/mcq/ข้อสอบ mcq/MCQ_Musculo [Med PSU 50].pdf",
     "page": 6,
@@ -950,17 +958,17 @@
     "E": "Lumbosacral plexopathy"
    },
    "correct": "B",
-   "explanation": "น่องลีบ plantarflexion อ่อน Achilles reflex ลด ชาขอบนอกเท้า คือ S1 radiculopathy",
+   "explanation": "น่องลีบ plantarflexion อ่อน Achilles reflex ลด คือ S1 radiculopathy",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "L5 myelopathy",
-    "B": "✓ S1 radiculopathy",
-    "C": "Lumbar plexopathy",
-    "D": "Sciatic",
-    "E": "LS plexopathy"
+    "A": "L5 myelopathy ไม่ใช่ตำแหน่งของ cord",
+    "B": "✓ S1 root ควบคุม plantarflexion และ Achilles reflex",
+    "C": "Lumbar plexopathy กระทบหลายรากบน",
+    "D": "Sciatic neuropathy กระทบทั้ง peroneal และ tibial",
+    "E": "Lumbosacral plexopathy กระทบหลายราก"
    },
-   "key_concept": "• S1: Achilles reflex\n• สรุป: น่องลีบ plantarflexion อ่อน Achilles reflex ลด ชาขอบนอกเท้า คือ S1 radiculopathy",
+   "key_concept": "• S1: Achilles reflex, plantarflexion, ชาข้างเท้า\n• L5: dorsiflexion, EHL",
    "audit": {
     "source_file": "preclinic/3/musculoskeletal/mcq/ข้อสอบ mcq/MCQ_Musculo [Med PSU 50].pdf",
     "page": 6,
@@ -999,17 +1007,17 @@
     "E": "Uncovertebral body"
    },
    "correct": "D",
-   "explanation": "Spondylolysis เกิดจาก pars interarticularis defect",
+   "explanation": "Spondylolysis เกิดจากรอยแตก/ความผิดปกติที่ pars interarticularis",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "Body",
-    "B": "Spinous",
-    "C": "Atlantoaxial",
-    "D": "✓ Pars",
-    "E": "Uncovertebral"
+    "A": "Vertebral body เกี่ยวกับ compression fracture",
+    "B": "Spinous process ไม่ใช่ตำแหน่งหลัก",
+    "C": "Atlantoaxial ไม่เกี่ยว",
+    "D": "✓ Pars interarticularis defect = spondylolysis",
+    "E": "Uncovertebral เกี่ยวกับ cervical spondylosis"
    },
-   "key_concept": "• Spondylolysis: pars fracture\n• สรุป: Spondylolysis เกิดจาก pars interarticularis defect",
+   "key_concept": "• Spondylolysis: pars defect, “Scotty dog collar”\n• Spondylolisthesis: เลื่อนของ vertebra",
    "audit": {
     "source_file": "preclinic/3/musculoskeletal/mcq/ข้อสอบ mcq/MCQ_Musculo [Med PSU 50].pdf",
     "page": 6,
@@ -1048,17 +1056,17 @@
     "E": "Splenius"
    },
    "correct": "A",
-   "explanation": "ยกไหล่ต้านแรงใช้ trapezius (upper fibers)",
+   "explanation": "การยกไหล่ (shoulder shrug) ใช้ trapezius ส่วนบนเป็นหลัก",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "✓ Trapezius",
-    "B": "Latissimus",
-    "C": "Levator scapulae",
-    "D": "Rhomboid",
-    "E": "Splenius"
+    "A": "✓ Trapezius (spinal accessory n.) ยก scapula",
+    "B": "Latissimus dorsi ดึงแขนลง",
+    "C": "Levator scapulae ช่วยยก แต่ไม่ใช่หลัก",
+    "D": "Rhomboid ดึง scapula เข้าหากลาง",
+    "E": "Splenius หมุนศีรษะและคอ"
    },
-   "key_concept": "• Shrug: trapezius, levator\n• สรุป: ยกไหล่ต้านแรงใช้ trapezius (upper fibers)",
+   "key_concept": "• Trapezius: CN XI, ยก/หมุน/ดึง scapula\n• Shrug test ตรวจ CN XI",
    "audit": {
     "source_file": "preclinic/3/musculoskeletal/mcq/ข้อสอบ mcq/MCQ_Musculo [Med PSU 50].pdf",
     "page": 6,
@@ -1097,17 +1105,17 @@
     "E": "Intertubercular groove"
    },
    "correct": "E",
-   "explanation": "Latissimus dorsi เกาะที่ intertubercular groove",
+   "explanation": "Latissimus dorsi เกาะที่ intertubercular groove ของ humerus",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "Greater",
-    "B": "Lesser",
-    "C": "Deltoid tuberosity",
-    "D": "Lateral epicondyle",
-    "E": "✓ Intertubercular groove"
+    "A": "Greater tuberosity เป็นของ supraspinatus/infraspinatus/teres minor",
+    "B": "Lesser tuberosity เป็นของ subscapularis",
+    "C": "Deltoid tuberosity เป็นของ deltoid",
+    "D": "Lateral epicondyle เป็นต้นของ extensor",
+    "E": "✓ Intertubercular groove เป็นของ lat dorsi, teres major, pectoralis major"
    },
-   "key_concept": "• Lat dorsi: floor of bicipital groove\n• สรุป: Latissimus dorsi เกาะที่ intertubercular groove",
+   "key_concept": "• “Lady between two majors”: lat dorsi ที่ groove ระหว่าง pec major และ teres major\n• Lat dorsi: thoracodorsal nerve",
    "audit": {
     "source_file": "preclinic/3/musculoskeletal/mcq/ข้อสอบ mcq/MCQ_Musculo [Med PSU 50].pdf",
     "page": 7,
@@ -1146,17 +1154,17 @@
     "E": "Posterior longitudinal ligament"
    },
    "correct": "C",
-   "explanation": "Ligamentum nuchae เป็นส่วนต่อของ supraspinous ligament",
+   "explanation": "Ligamentum nuchae คือส่วนต่อเนื่องของ supraspinous ligament ที่คอ",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "Teres",
-    "B": "Flavum",
-    "C": "✓ Nuchae",
-    "D": "ALL",
-    "E": "PLL"
+    "A": "Ligamentum teres อยู่ที่สะโพกและตับ",
+    "B": "Ligamentum flavum เชื่อม lamina",
+    "C": "✓ Ligamentum nuchae ต่อจาก supraspinous ligament ขึ้นไปที่ occiput",
+    "D": "ALL อยู่ด้านหน้า vertebral body",
+    "E": "PLL อยู่ด้านหลัง vertebral body"
    },
-   "key_concept": "• Supraspinous → nuchae\n• สรุป: Ligamentum nuchae เป็นส่วนต่อของ supraspinous ligament",
+   "key_concept": "• Supraspinous → ligamentum nuchae (C7 ขึ้นไป)\n• Interspinous เชื่อมระหว่าง spinous process",
    "audit": {
     "source_file": "preclinic/3/musculoskeletal/mcq/ข้อสอบ mcq/MCQ_Musculo [Med PSU 50].pdf",
     "page": 7,
@@ -1195,17 +1203,17 @@
     "E": "Posterior tibial vein"
    },
    "correct": "B",
-   "explanation": "Great saphenous vein ไหลเข้า femoral vein",
+   "explanation": "Great saphenous vein ไหลเข้า femoral vein ที่ saphenofemoral junction",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "Fibular",
-    "B": "✓ Femoral",
-    "C": "Popliteal",
-    "D": "Ant tibial",
-    "E": "Post tibial"
+    "A": "Fibular (peroneal) vein เป็น deep vein ของขา",
+    "B": "✓ Femoral vein รับ GSV ที่ saphenofemoral junction",
+    "C": "Popliteal รับ small saphenous",
+    "D": "Anterior tibial เป็น deep vein",
+    "E": "Posterior tibial เป็น deep vein"
    },
-   "key_concept": "• GSV → femoral at saphenous opening\n• สรุป: Great saphenous vein ไหลเข้า femoral vein",
+   "key_concept": "• GSV → femoral; SSV → popliteal\n• GSV ใช้ในการ CABG",
    "audit": {
     "source_file": "preclinic/3/musculoskeletal/mcq/ข้อสอบ mcq/MCQ_Musculo [Med PSU 50].pdf",
     "page": 7,
@@ -1244,17 +1252,17 @@
     "E": "Lateral to extensor hallucis longus tendon"
    },
    "correct": "E",
-   "explanation": "DP pulse คลำด้านข้างของ EHL tendon",
+   "explanation": "คลำ dorsalis pedis pulse ด้านนอกของ tendon EHL",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "PT",
-    "B": "Achilles",
-    "C": "Peroneal",
-    "D": "FHL",
-    "E": "✓ Lateral to EHL"
+    "A": "ด้านในของ medial malleolus คือ posterior tibial pulse",
+    "B": "หลัง Achilles ไม่ใช่จุดคลำ",
+    "C": "ด้านนอก lateral malleolus ไม่ใช่จุดคลำชีพจร",
+    "D": "ด้านในเอ็น FHL ไม่ใช่จุดคลำ",
+    "E": "✓ DP คลำได้ด้านข้างเอ็น EHL"
    },
-   "key_concept": "• Dorsalis pedis\n• สรุป: DP pulse คลำด้านข้างของ EHL tendon",
+   "key_concept": "• DP: ระหว่าง EHL และ EDL\n• PT: หลัง medial malleolus",
    "audit": {
     "source_file": "preclinic/3/musculoskeletal/mcq/ข้อสอบ mcq/MCQ_Musculo [Med PSU 50].pdf",
     "page": 7,
@@ -1293,17 +1301,17 @@
     "E": "Hamstring"
    },
    "correct": "D",
-   "explanation": "Trendelenburg sign บวก = gluteus medius",
+   "explanation": "Trendelenburg บวกบ่งชี้ gluteus medius อ่อนแรง",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "QF",
-    "B": "Piriformis",
-    "C": "Iliopsoas",
-    "D": "✓ Gluteus medius",
-    "E": "Hamstring"
+    "A": "Quadratus femoris หมุนสะโพกออก",
+    "B": "Piriformis หมุนสะโพกออก",
+    "C": "Iliopsoas งอสะโพก",
+    "D": "✓ Gluteus medius ยึดเชิงกรานขณะยืนขาเดียว",
+    "E": "Hamstring เหยียดสะโพก"
    },
-   "key_concept": "• Trendelenburg\n• สรุป: Trendelenburg sign บวก = gluteus medius",
+   "key_concept": "• Superior gluteal nerve → gluteus medius/minimus\n• เชิงกรานฝั่งตรงข้ามตก",
    "audit": {
     "source_file": "preclinic/3/musculoskeletal/mcq/ข้อสอบ mcq/MCQ_Musculo [Med PSU 50].pdf",
     "page": 7,
@@ -1342,17 +1350,17 @@
     "E": "Quadratus femoris"
    },
    "correct": "C",
-   "explanation": "Gluteus maximus เป็นตัว extend ต้นขาหลัก",
+   "explanation": "Gluteus maximus เป็นตัวเหยียดสะโพก (thigh extension) หลัก",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "Sartorius",
-    "B": "Add brevis",
-    "C": "✓ Glut max",
-    "D": "Piriformis",
-    "E": "QF"
+    "A": "Sartorius งอและหมุนสะโพก",
+    "B": "Adductor brevis ทำหน้าที่หุบต้นขา ไม่ใช่เหยียด",
+    "C": "✓ Gluteus maximus เหยียดสะโพก (inferior gluteal n.)",
+    "D": "Piriformis หมุนออก",
+    "E": "Quadratus femoris หมุนออก"
    },
-   "key_concept": "• Hip extension\n• สรุป: Gluteus maximus เป็นตัว extend ต้นขาหลัก",
+   "key_concept": "• Hip extension: gluteus maximus, hamstring\n• Inferior gluteal nerve",
    "audit": {
     "source_file": "preclinic/3/musculoskeletal/mcq/ข้อสอบ mcq/MCQ_Musculo [Med PSU 50].pdf",
     "page": 8,
@@ -1391,17 +1399,17 @@
     "E": "Medial circumflex femoral artery"
    },
    "correct": "E",
-   "explanation": "Femoral neck หัก เสี่ยง medial circumflex femoral artery",
+   "explanation": "Femoral neck fracture เสี่ยงทำลาย medial circumflex femoral artery (MFCA) เลี้ยงหัวกระดูกและเกิด AVN",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "Obturator",
-    "B": "Internal iliac",
-    "C": "Superior gluteal",
-    "D": "Desc genicular",
-    "E": "✓ MCFA"
+    "A": "Obturator เลี้ยงหัวกระดูกผ่าน ligamentum teres เล็กน้อย",
+    "B": "Internal iliac เป็นหลอดเลือดใหญ่ในเชิงกราน",
+    "C": "Superior gluteal เลี้ยงกล้ามเนื้อก้น",
+    "D": "Descending genicular เลี้ยงเข่า",
+    "E": "✓ MFCA เป็นแหล่งเลือดหลักของ femoral head และ neck"
    },
-   "key_concept": "• AVN of femoral head\n• สรุป: Femoral neck หัก เสี่ยง medial circumflex femoral artery",
+   "key_concept": "• Femoral neck fracture → AVN (MFCA)\n• Hip dislocation ก็เสี่ยง AVN",
    "audit": {
     "source_file": "preclinic/3/musculoskeletal/mcq/ข้อสอบ mcq/MCQ_Musculo [Med PSU 50].pdf",
     "page": 8,
@@ -1440,17 +1448,17 @@
     "E": "Common peroneal neuropathy"
    },
    "correct": "A",
-   "explanation": "ชาต้นขาด้านหน้า-ใน และขาด้านใน reflex เข่าลด คือ femoral neuropathy",
+   "explanation": "ชาที่ต้นขาด้านหน้า-ใน (anteromedial thigh) นึกถึง femoral neuropathy",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "✓ Femoral",
-    "B": "Saphenous",
-    "C": "Lumbar plexus",
-    "D": "Sacral",
-    "E": "Common peroneal"
+    "A": "✓ Femoral nerve เลี้ยงต้นขาด้านหน้าและ anteromedial",
+    "B": "Saphenous เลี้ยงขาด้านในต่ำกว่าเข่า",
+    "C": "Lumbar plexopathy กระทบหลายเส้น",
+    "D": "Sacral plexopathy กระทบหลังต้นขา",
+    "E": "CPN เลี้ยงขาด้านนอก"
    },
-   "key_concept": "• Femoral: patellar reflex\n• สรุป: ชาต้นขาด้านหน้า-ใน และขาด้านใน reflex เข่าลด คือ femoral neuropathy",
+   "key_concept": "• Femoral n.: quadriceps, anterior thigh, knee jerk\n• Saphenous: ขาด้านในต่ำกว่าเข่า",
    "audit": {
     "source_file": "preclinic/3/musculoskeletal/mcq/ข้อสอบ mcq/MCQ_Musculo [Med PSU 50].pdf",
     "page": 8,
@@ -1489,17 +1497,17 @@
     "E": "Posterior talofibular ligament"
    },
    "correct": "D",
-   "explanation": "Inversion sprain ฉีก ATFL",
+   "explanation": "Inversion injury ฉีกที่ anterior talofibular ligament (ATFL) ก่อน",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "Long plantar",
-    "B": "Ant tibiotalar",
-    "C": "Post tibiotalar",
-    "D": "✓ ATFL",
-    "E": "—"
+    "A": "Long plantar พยุงอุ้งเท้า",
+    "B": "Anterior tibiotalar เป็นส่วนของ deltoid",
+    "C": "Posterior tibiotalar เป็นส่วนของ deltoid",
+    "D": "✓ ATFL ฉีกบ่อยที่สุดใน inversion",
+    "E": "PTFL ฉีกยากที่สุด"
    },
-   "key_concept": "• ATFL\n• สรุป: Inversion sprain ฉีก ATFL",
+   "key_concept": "• Lateral ankle: ATFL > CFL > PTFL\n• Eversion: deltoid ligament",
    "audit": {
     "source_file": "preclinic/3/musculoskeletal/mcq/ข้อสอบ mcq/MCQ_Musculo [Med PSU 50].pdf",
     "page": 8,
@@ -1538,17 +1546,17 @@
     "E": "Knee extension with dorsiflexion of foot"
    },
    "correct": "E",
-   "explanation": "ยืด gastrocnemius ต้อง extend เข่า + dorsiflex",
+   "explanation": "ยืด gastrocnemius เต็มที่ต้องเหยียดเข่าและกระดกข้อเท้า (dorsiflexion)",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "Dorsiflex อย่างเดียว",
-    "B": "Knee ext อย่างเดียว",
-    "C": "Knee ext + plantar",
-    "D": "Knee flex + plantar",
-    "E": "✓ Knee ext + dorsiflex"
+    "A": "Dorsiflexion อย่างเดียวถ้าเข่างอยืด soleus มากกว่า",
+    "B": "เหยียดเข่าอย่างเดียวยังไม่ยืด gastrocnemius เต็มที่",
+    "C": "Knee extension + plantarflexion ทำให้หย่อน",
+    "D": "Knee flexion + plantarflexion ทำให้หย่อนมาก",
+    "E": "✓ Knee extension + dorsiflexion ยืด gastrocnemius ที่ข้ามสองข้อ"
    },
-   "key_concept": "• Gastrocnemius\n• สรุป: ยืด gastrocnemius ต้อง extend เข่า + dorsiflex",
+   "key_concept": "• Gastrocnemius ข้ามเข่าและข้อเท้า\n• งอเข่าเพื่อยืด soleus",
    "audit": {
     "source_file": "preclinic/3/musculoskeletal/mcq/ข้อสอบ mcq/MCQ_Musculo [Med PSU 50].pdf",
     "page": 9,
@@ -1587,17 +1595,17 @@
     "E": "Superficial peroneal neuropathy"
    },
    "correct": "D",
-   "explanation": "Foot drop ชา anterolateral calf และหลังเท้า คือ common peroneal neuropathy",
+   "explanation": "Foot drop 2 สัปดาห์ จาก common peroneal neuropathy (กดที่คอ fibula)",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "Sciatic",
-    "B": "LS plexus",
-    "C": "Deep peroneal",
-    "D": "✓ Common peroneal",
-    "E": "Superficial"
+    "A": "Sciatic เสียทำให้อ่อนทั้ง tibial และ peroneal",
+    "B": "Lumbosacral plexopathy กระทบหลายราก",
+    "C": "Deep peroneal เสียทำให้ dorsiflexion เสียแต่ eversion ปกติ",
+    "D": "✓ Common peroneal เสียทำให้ foot drop + eversion เสีย + ชาหลังเท้า",
+    "E": "Superficial peroneal เสียทำให้ eversion เสีย"
    },
-   "key_concept": "• Common peroneal\n• สรุป: Foot drop ชา anterolateral calf และหลังเท้า คือ common peroneal neuropathy",
+   "key_concept": "• CPN: dorsiflexion + eversion, steppage gait\n• Fibular neck compression",
    "audit": {
     "source_file": "preclinic/3/musculoskeletal/mcq/ข้อสอบ mcq/MCQ_Musculo [Med PSU 50].pdf",
     "page": 9,
@@ -1636,17 +1644,17 @@
     "E": "Pes anserinus bursa"
    },
    "correct": "E",
-   "explanation": "ปวดเข่าด้านใน inferomedial patella คือ pes anserine bursa",
+   "explanation": "ปวดเข่าด้านในเมื่อขึ้นบันได นึกถึง pes anserine bursitis",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "ITB",
-    "B": "Patellar tendon",
-    "C": "Prepatellar",
-    "D": "Medial meniscus",
-    "E": "✓ Pes anserine bursa"
+    "A": "ITB ปวดด้านนอก",
+    "B": "Patellar tendon ปวดใต้ลูกสะบ้า",
+    "C": "Prepatellar bursa บวมหน้าเข่า",
+    "D": "Medial meniscus ปวดแนวข้อ มีล็อก",
+    "E": "✓ Pes anserine bursa อยู่เข่าด้านในใต้แนวข้อ"
    },
-   "key_concept": "• Pes anserine bursitis\n• สรุป: ปวดเข่าด้านใน inferomedial patella คือ pes anserine bursa",
+   "key_concept": "• Pes anserine: sartorius, gracilis, semitendinosus\n• พบในหญิงอ้วน OA เข่า",
    "audit": {
     "source_file": "preclinic/3/musculoskeletal/mcq/ข้อสอบ mcq/MCQ_Musculo [Med PSU 50].pdf",
     "page": 9,
@@ -1685,17 +1693,17 @@
     "E": "Gastrocnemius"
    },
    "correct": "D",
-   "explanation": "Tibialis posterior ทั้ง plantarflexion และ inversion",
+   "explanation": "Tibialis posterior ทำ plantarflexion และ inversion",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "Plantaris",
-    "B": "Tib ant",
-    "C": "Popliteus",
-    "D": "✓ Tib post",
-    "E": "Gastrocnemius"
+    "A": "Plantaris ช่วย plantarflexion อ่อน ๆ",
+    "B": "Tibialis anterior ทำ dorsiflexion + inversion",
+    "C": "Popliteus ปลดล็อกเข่า",
+    "D": "✓ Tibialis posterior ทำ plantarflexion + inversion",
+    "E": "Gastrocnemius ทำ plantarflexion + งอเข่า"
    },
-   "key_concept": "• Tib post\n• สรุป: Tibialis posterior ทั้ง plantarflexion และ inversion",
+   "key_concept": "• Inversion: TA, TP\n• Eversion: peroneus",
    "audit": {
     "source_file": "preclinic/3/musculoskeletal/mcq/ข้อสอบ mcq/MCQ_Musculo [Med PSU 50].pdf",
     "page": 9,
@@ -1734,17 +1742,17 @@
     "E": "Posterior cruciate ligament"
    },
    "correct": "D",
-   "explanation": "Lachman test บวก คือ ACL ฉีก",
+   "explanation": "บิดเข่าแล้วเข่าไม่มั่นคง ในนักฟุตบอล นึกถึง ACL tear",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "MM",
-    "B": "LM",
-    "C": "Popliteus",
-    "D": "✓ ACL",
-    "E": "PCL"
+    "A": "Medial meniscus ปวดแนวข้อและล็อก",
+    "B": "Lateral meniscus ปวดแนวข้อด้านนอก",
+    "C": "Popliteus ไม่ใช่เอ็นยึดเข่าหลัก",
+    "D": "✓ ACL ฉีกจากบิด/หยุดกะทันหัน เสียงดัง บวมเร็ว ข้อไม่มั่นคง",
+    "E": "PCL ฉีกจากการกระแทกหน้าแข้ง"
    },
-   "key_concept": "• Lachman: ACL\n• สรุป: Lachman test บวก คือ ACL ฉีก",
+   "key_concept": "• ACL: Lachman, anterior drawer\n• PCL: posterior drawer, dashboard injury",
    "audit": {
     "source_file": "preclinic/3/musculoskeletal/mcq/ข้อสอบ mcq/MCQ_Musculo [Med PSU 50].pdf",
     "page": 10,
@@ -1783,17 +1791,17 @@
     "E": "Chondrocyte"
    },
    "correct": "C",
-   "explanation": "ช่วง intermediate (reparative) ของการสมานกระดูก osteoblast สร้างกระดูก",
+   "explanation": "Osteoblast เป็นเซลล์หลักที่สร้างกระดูกใหม่",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "Fibroblast",
-    "B": "Osteocyte",
-    "C": "✓ Osteoblast",
-    "D": "Osteoclast รีโมเดล",
-    "E": "Chondrocyte"
+    "A": "Fibroblast สร้างเนื้อเยื่อเกี่ยวพัน",
+    "B": "Osteocyte เฝ้าดูแลกระดูกที่โตเต็มที่",
+    "C": "✓ Osteoblast สร้าง osteoid และทำให้แคลเซียมเกาะ",
+    "D": "Osteoclast สลายกระดูก",
+    "E": "Chondrocyte สร้าง cartilage"
    },
-   "key_concept": "• Reparative: soft → hard callus\n• สรุป: ช่วง intermediate (reparative) ของการสมานกระดูก osteoblast สร้างกระดูก",
+   "key_concept": "• Osteoblast: สร้าง, osteoclast: สลาย\n• RANKL/OPG ควบคุม osteoclast",
    "audit": {
     "source_file": "preclinic/3/musculoskeletal/mcq/ข้อสอบ mcq/MCQ_Musculo [Med PSU 50].pdf",
     "page": 10,
@@ -1832,17 +1840,17 @@
     "E": "Rheumatoid arthritis"
    },
    "correct": "C",
-   "explanation": "Vitamin D ต่ำในผู้ใหญ่ คือ osteomalacia",
+   "explanation": "กระดูกหักพยาธิจาก cortical bone บางและ mineralization บกพร่อง คือ osteomalacia",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "Rickets เด็ก",
-    "B": "OA",
-    "C": "✓ Osteomalacia",
-    "D": "Achondroplasia",
-    "E": "RA"
+    "A": "Rickets เกิดในเด็ก",
+    "B": "OA ไม่ทำให้กระดูกบาง",
+    "C": "✓ Osteomalacia: osteoid ไม่ mineralize ในผู้ใหญ่ (ขาด vitamin D)",
+    "D": "Achondroplasia เป็นโรคพันธุกรรมของ growth plate",
+    "E": "RA ทำให้ osteopenia รอบข้อ"
    },
-   "key_concept": "• Osteomalacia\n• สรุป: Vitamin D ต่ำในผู้ใหญ่ คือ osteomalacia",
+   "key_concept": "• Osteomalacia: Looser zone, ALP ↑, Ca/P ↓\n• Rickets = เด็ก",
    "audit": {
     "source_file": "preclinic/3/musculoskeletal/mcq/ข้อสอบ mcq/MCQ_Musculo [Med PSU 50].pdf",
     "page": 10,
@@ -1881,17 +1889,17 @@
     "E": "Fibrous dysplasia"
    },
    "correct": "E",
-   "explanation": "Ground-glass + Chinese letter woven bone คือ fibrous dysplasia",
+   "explanation": "ก้อนใหญ่ที่ maxilla ในผู้ชาย 35 ปี พบ fibro-osseous ภาพ ground-glass คือ fibrous dysplasia",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "Osteochondroma",
-    "B": "Chondrosarcoma",
-    "C": "Fibrosarcoma",
-    "D": "Osteosarcoma",
-    "E": "✓ Fibrous dysplasia"
+    "A": "Osteochondroma คือติ่งกระดูกอ่อนที่ metaphysis",
+    "B": "Chondrosarcoma พบใน pelvis/long bone",
+    "C": "Fibrosarcoma เป็นมะเร็งเนื้อเยื่อเกี่ยวพัน",
+    "D": "Osteosarcoma: sunburst, วัยรุ่น",
+    "E": "✓ Fibrous dysplasia: ground-glass, woven bone ในเนื้อเยื่อ fibrous"
    },
-   "key_concept": "• McCune-Albright: GNAS\n• สรุป: Ground-glass + Chinese letter woven bone คือ fibrous dysplasia",
+   "key_concept": "• Fibrous dysplasia: GNAS mutation, McCune–Albright\n• Woven bone แบบ “Chinese characters”",
    "audit": {
     "source_file": "preclinic/3/musculoskeletal/mcq/ข้อสอบ mcq/MCQ_Musculo [Med PSU 50].pdf",
     "page": 10,
@@ -1930,17 +1938,17 @@
     "E": "Rheumatoid arthritis"
    },
    "correct": "C",
-   "explanation": "ปวดเข่า joint space แคบ กระดูกอ่อนสึก คือ OA",
+   "explanation": "ปวดข้อเสื่อมเรื้อรังในหญิง 60 ปี คือ osteoarthritis",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "Osteoporosis",
-    "B": "Osteomyelitis",
-    "C": "✓ OA",
-    "D": "ไม่ใช่คำตอบที่ถูกต้องของโจทย์ข้อนี้",
-    "E": "ไม่ใช่คำตอบที่ถูกต้องของโจทย์ข้อนี้"
+    "A": "Osteoporosis ไม่ปวดข้อโดยตรง",
+    "B": "Osteomyelitis มีไข้",
+    "C": "✓ Osteoarthritis ปวดเมื่อใช้งาน",
+    "D": "Gout เฉียบพลันรุนแรง",
+    "E": "RA ฝืดเช้านาน สมมาตร"
    },
-   "key_concept": "• OA\n• สรุป: ปวดเข่า joint space แคบ กระดูกอ่อนสึก คือ OA",
+   "key_concept": "• OA: ปวดเมื่อใช้งาน ฝืดสั้น\n• RA: ฝืด >1 ชม.",
    "audit": {
     "source_file": "preclinic/3/musculoskeletal/mcq/ข้อสอบ mcq/MCQ_Musculo [Med PSU 50].pdf",
     "page": 11,
@@ -1979,17 +1987,17 @@
     "E": "Juvenile idiopathic arthritis"
    },
    "correct": "D",
-   "explanation": "HLA-B27 คือ ankylosing spondylitis",
+   "explanation": "Ankylosing spondylitis สัมพันธ์กับ HLA-B27",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "OA",
-    "B": "Gout",
-    "C": "RA",
-    "D": "✓ AS",
-    "E": "JIA"
+    "A": "OA ไม่สัมพันธ์ B27",
+    "B": "Gout ไม่สัมพันธ์ HLA",
+    "C": "RA สัมพันธ์ DR4",
+    "D": "✓ AS สัมพันธ์ B27",
+    "E": "JIA สัมพันธ์บางชนิด"
    },
-   "key_concept": "• HLA-B27\n• สรุป: HLA-B27 คือ ankylosing spondylitis",
+   "key_concept": "• HLA-B27: AS, reactive, psoriatic, IBD arthritis\n• AS: sacroiliitis, bamboo spine",
    "audit": {
     "source_file": "preclinic/3/musculoskeletal/mcq/ข้อสอบ mcq/MCQ_Musculo [Med PSU 50].pdf",
     "page": 11,
@@ -2028,17 +2036,17 @@
     "E": "Hyperlipidemia"
    },
    "correct": "B",
-   "explanation": "Tophus (pink amorphous) ใน gout สัมพันธ์กับ hyperuricemia",
+   "explanation": "ข้อเข่าปวดเรื้อรังมีก้อน (tophi) สัมพันธ์กับ hyperuricemia",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "K",
-    "B": "✓ Uric acid",
-    "C": "Ca",
-    "D": "Na",
-    "E": "Lipid"
+    "A": "K สูงไม่ก่อ gout",
+    "B": "✓ Hyperuricemia ก่อ gout และ tophus",
+    "C": "Ca สูงก่อ pseudogout บางส่วนแต่ไม่ใช่ tophi",
+    "D": "Na สูงไม่เกี่ยว",
+    "E": "Lipid สูงก่อ xanthoma"
    },
-   "key_concept": "• Gout: hyperuricemia\n• สรุป: Tophus (pink amorphous) ใน gout สัมพันธ์กับ hyperuricemia",
+   "key_concept": "• Gout: MSU, tophi, อาจเกิด CKD\n• Acute: colchicine, NSAID, steroid",
    "audit": {
     "source_file": "preclinic/3/musculoskeletal/mcq/ข้อสอบ mcq/MCQ_Musculo [Med PSU 50].pdf",
     "page": 11,
@@ -2077,17 +2085,17 @@
     "E": "Immune-mediated necrotizing myositis"
    },
    "correct": "B",
-   "explanation": "Heliotrope/Gottron + perifascicular atrophy คือ dermatomyositis",
+   "explanation": "อ่อนแรงใกล้ลำตัวนาน 1 ปี ร่วมกับ heliotrope/Gottron นึกถึง dermatomyositis (ตามเฉลย)",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "PM",
-    "B": "✓ DM",
-    "C": "Statin",
-    "D": "IBM",
-    "E": "IMNM"
+    "A": "Polymyositis ไม่มีผื่นผิวหนัง",
+    "B": "✓ Dermatomyositis: proximal weakness + ผื่นเฉพาะ",
+    "C": "Statin myopathy มีประวัติยา",
+    "D": "IBM อ่อนแรงไม่สมมาตร ผู้สูงอายุ",
+    "E": "Necrotizing myositis มักเฉียบพลันและ CK สูงมาก"
    },
-   "key_concept": "• DM\n• สรุป: Heliotrope/Gottron + perifascicular atrophy คือ dermatomyositis",
+   "key_concept": "• DM: heliotrope, Gottron papule, perifascicular atrophy\n• PM: CD8, endomysial inflammation",
    "audit": {
     "source_file": "preclinic/3/musculoskeletal/mcq/ข้อสอบ mcq/MCQ_Musculo [Med PSU 50].pdf",
     "page": 11,
@@ -2126,17 +2134,25 @@
     "E": "Duchenne muscular dystrophy"
    },
    "correct": "D",
-   "explanation": "อ่อนแรงที่ไม่ดีขึ้นเมื่อทำซ้ำ และ AChR ลบ น้ำหนักลด คือ Lambert-Eaton จาก small cell lung cancer",
+   "explanation": "ชายสูงอายุ น้ำหนักลด อ่อนแรงใกล้ลำตัว ปากแห้ง คือ LEMS จาก small cell lung cancer",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "DM",
-    "B": "MG",
-    "C": "HCV",
-    "D": "✓ SCLC (LEMS)",
-    "E": "DMD"
+    "A": "DM ไม่ทำให้อ่อนแรงแบบ LEMS",
+    "B": "MG อ่อนแรงมากขึ้นเมื่อใช้งาน ไม่ใช่เพิ่มด้วย repetitive",
+    "C": "Hep C ไม่ใช่สาเหตุเฉพาะ",
+    "D": "✓ SCLC ก่อ LEMS (anti-VGCC)",
+    "E": "Duchenne ในเด็กชาย"
    },
-   "key_concept": "• LEMS: paraneoplastic\n• สรุป: อ่อนแรงที่ไม่ดีขึ้นเมื่อทำซ้ำ และ AChR ลบ น้ำหนักลด คือ Lambert-Eaton จาก small cell lung ",
+   "key_concept": "• LEMS: anti-presynaptic VGCC, SCLC, reflex ลด, incremental EMG\n• MG: anti-AChR, thymoma",
+   "mechanism": [
+    "SCLC สร้างแอนติบอดีต่อ VGCC",
+    {
+     "s": "VGCC ที่ presynaptic ถูกบล็อก",
+     "answer": true
+    },
+    "Ca ไม่เข้า ACh ปล่อยน้อย อ่อนแรงใกล้ลำตัว"
+   ],
    "audit": {
     "source_file": "preclinic/3/musculoskeletal/mcq/ข้อสอบ mcq/MCQ_Musculo [Med PSU 50].pdf",
     "page": 12,
@@ -2175,17 +2191,17 @@
     "E": "Pseudo-myasthenic syndrome"
    },
    "correct": "B",
-   "explanation": "ผู้ใหญ่อ่อนแรง cardiomegaly และ dystrophin ลดบางส่วน คือ Becker",
+   "explanation": "ชายอายุ 44 ปี อ่อนแรง 4/5 ทุกแขนขา ตามเฉลย Becker muscular dystrophy",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "PM",
-    "B": "✓ Becker",
-    "C": "ALS",
-    "D": "Duchenne",
-    "E": "Pseudo-MG"
+    "A": "Polymyositis มี CK สูง อ่อนแรงใกล้ลำตัวทั้งสองข้าง",
+    "B": "✓ Becker: dystrophin บางส่วน อาการเริ่มช้า",
+    "C": "ALS มี UMN + LMN",
+    "D": "Duchenne เริ่มเด็กและเสียชีวิตก่อนวัยนี้",
+    "E": "Pseudo-myasthenic syndrome เป็นเรื่องอื่น"
    },
-   "key_concept": "• Becker: partial dystrophin\n• สรุป: ผู้ใหญ่อ่อนแรง cardiomegaly และ dystrophin ลดบางส่วน คือ Becker",
+   "key_concept": "• Becker: เริ่มวัยรุ่น–ผู้ใหญ่, ตัวหนาน่อง, cardiomyopathy\n• Duchenne: เด็ก, Gower sign",
    "audit": {
     "source_file": "preclinic/3/musculoskeletal/mcq/ข้อสอบ mcq/MCQ_Musculo [Med PSU 50].pdf",
     "page": 12,
@@ -2224,17 +2240,17 @@
     "E": "Ultrasonography knee"
    },
    "correct": "C",
-   "explanation": "ข้อเข่าอักเสบมีไข้ ต้องเจาะข้อ",
+   "explanation": "ข้อเข่าปวด 2 วัน ไม่มีประวัติบาดเจ็บ ต้องเจาะข้อ (arthrocentesis)",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "CBC",
-    "B": "X-ray",
-    "C": "✓ Arthrocentesis",
-    "D": "—",
-    "E": "—"
+    "A": "CBC ไม่ชี้โรคข้อ",
+    "B": "Film ไม่แยก septic",
+    "C": "✓ Arthrocentesis แยก crystal vs septic",
+    "D": "Uric acid อาจปกติ",
+    "E": "US เห็นน้ำ"
    },
-   "key_concept": "• Aspirate first\n• สรุป: ข้อเข่าอักเสบมีไข้ ต้องเจาะข้อ",
+   "key_concept": "• Acute monoarthritis ต้องเจาะข้อ\n• Septic = ฉุกเฉิน",
    "audit": {
     "source_file": "preclinic/3/musculoskeletal/mcq/ข้อสอบ mcq/MCQ_Musculo [Med PSU 50].pdf",
     "page": 12,
@@ -2273,17 +2289,17 @@
     "E": "Colchicine"
    },
    "correct": "C",
-   "explanation": "Septic arthritis รักษา antibiotic + drainage",
+   "explanation": "Septic arthritis ต้อง antibiotic + drainage",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "Naproxen",
-    "B": "Antibiotic",
-    "C": "✓ Antibiotic + drainage",
-    "D": "—",
-    "E": "ไม่ใช่คำตอบที่ถูกต้องของโจทย์ข้อนี้"
+    "A": "Naproxen ไม่รักษาเชื้อ",
+    "B": "Antibiotic อย่างเดียวไม่พอถ้ามีหนองมาก",
+    "C": "✓ Antibiotic + drainage เป็นมาตรฐาน",
+    "D": "Steroid ทำให้แย่ลง",
+    "E": "Colchicine ใช้ใน gout"
    },
-   "key_concept": "• Septic arthritis\n• สรุป: Septic arthritis รักษา antibiotic + drainage",
+   "key_concept": "• Septic arthritis: antibiotic + ระบายข้อ\n• ครอบคลุม S. aureus",
    "audit": {
     "source_file": "preclinic/3/musculoskeletal/mcq/ข้อสอบ mcq/MCQ_Musculo [Med PSU 50].pdf",
     "page": 12,
@@ -2322,17 +2338,17 @@
     "E": "Systemic lupus erythematosus"
    },
    "correct": "D",
-   "explanation": "ข้อ PIP/MCP สมมาตร ข้อฝืดตอนเช้า osteopenia erosion คือ RA",
+   "explanation": "ปวด PIP, MCP และข้ออื่นแบบสมมาตรในหญิง 25 ปี นึกถึง RA",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "Septic",
-    "B": "PsA",
-    "C": "Gout",
-    "D": "✓ RA",
-    "E": "SLE"
+    "A": "Septic ข้อเดียวร้อนมีไข้",
+    "B": "PsA มักมีผื่น psoriasis, DIP",
+    "C": "Gout เฉียบพลันข้อเดียว",
+    "D": "✓ RA: ข้อเล็กสมมาตร ฝืดเช้า",
+    "E": "SLE ข้ออักเสบไม่ทำลายข้อ"
    },
-   "key_concept": "• RA\n• สรุป: ข้อ PIP/MCP สมมาตร ข้อฝืดตอนเช้า osteopenia erosion คือ RA",
+   "key_concept": "• RA: MCP/PIP, ฝืดเช้า >1 ชม., RF/ACPA\n• SLE arthritis non-erosive",
    "audit": {
     "source_file": "preclinic/3/musculoskeletal/mcq/ข้อสอบ mcq/MCQ_Musculo [Med PSU 50].pdf",
     "page": 13,
@@ -2371,17 +2387,17 @@
     "E": "Median compression syndrome"
    },
    "correct": "C",
-   "explanation": "ล้มเอามือยันแล้วข้อมือปวด distal radius fracture (Colles)",
+   "explanation": "ล้มมือเท้าชนพื้น ปวดข้อมือ กดเจ็บ anatomical snuffbox/ปลายเรเดียส นึกถึง distal radius fracture",
    "image": "img/MSK-50-MCQ-049.jpg",
    "issues": [],
    "option_why": {
-    "A": "Contusion",
-    "B": "Ulnar",
-    "C": "✓ Distal radius fracture",
-    "D": "Radial head",
-    "E": "CTS"
+    "A": "Contusion เจ็บแต่ไม่เสียรูป",
+    "B": "Ulnar nerve เสียชาที่นิ้วก้อย",
+    "C": "✓ Distal radius fracture (Colles) จากล้มมือเท้า",
+    "D": "Head of radius หักมักล้มด้านศอก",
+    "E": "Median compression (CTS) ไม่เกี่ยวกับการบาดเจ็บเฉียบพลัน"
    },
-   "key_concept": "• FOOSH: Colles\n• สรุป: ล้มเอามือยันแล้วข้อมือปวด distal radius fracture (Colles)",
+   "key_concept": "• Colles: dinner-fork deformity\n• FOOSH → distal radius/scaphoid",
    "audit": {
     "source_file": "preclinic/3/musculoskeletal/mcq/ข้อสอบ mcq/MCQ_Musculo [Med PSU 50].pdf",
     "page": 13,
@@ -2420,17 +2436,17 @@
     "E": "Palmar digital artery"
    },
    "correct": "C",
-   "explanation": "Mallet finger เกิดจาก extensor tendon/ligament ขาดจาก axial load",
+   "explanation": "ท่ามือผิดรูปจากการบาดเจ็บ (mallet/boutonnière) เกี่ยวกับ extensor ligament/tendon",
    "image": "img/MSK-50-MCQ-050.jpg",
    "issues": [],
    "option_why": {
-    "A": "Fracture",
-    "B": "Radial",
-    "C": "✓ Extensor ligament",
-    "D": "Flexor",
-    "E": "Artery"
+    "A": "Bone fracture ผิดรูปแต่ไม่ใช่ตามเฉลย",
+    "B": "Radial nerve ทำให้ wrist drop",
+    "C": "✓ Extensor tendon/ligament ขาดทำให้นิ้วเหยียดไม่ได้",
+    "D": "Flexor ทำให้งอไม่ได้",
+    "E": "Palmar digital artery เกี่ยวกับเลือด"
    },
-   "key_concept": "• Mallet: terminal extensor tendon\n• สรุป: Mallet finger เกิดจาก extensor tendon/ligament ขาดจาก axial load",
+   "key_concept": "• Mallet finger: extensor ที่ DIP\n• Boutonnière: central slip",
    "audit": {
     "source_file": "preclinic/3/musculoskeletal/mcq/ข้อสอบ mcq/MCQ_Musculo [Med PSU 50].pdf",
     "page": 13,
@@ -2469,17 +2485,17 @@
     "E": "Subscapularis"
    },
    "correct": "E",
-   "explanation": "หลังฟื้นฟูหมุนเข้าเหลือ 10° กล้ามเนื้อที่ยังเสียหายคือ subscapularis",
+   "explanation": "ล้มไหล่หมุนออกมาก subscapularis (IR) ฉีก",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "Teres major",
-    "B": "Supraspinatus",
-    "C": "Infraspinatus",
-    "D": "Teres minor",
-    "E": "✓ Subscapularis"
+    "A": "Teres major หมุนเข้า/หุบ",
+    "B": "Supraspinatus abduct",
+    "C": "Infraspinatus หมุนออก",
+    "D": "Teres minor หมุนออก",
+    "E": "✓ Subscapularis หมุนเข้า ฉีกจากหมุนออกแรง"
    },
-   "key_concept": "• IR: subscapularis\n• สรุป: หลังฟื้นฟูหมุนเข้าเหลือ 10° กล้ามเนื้อที่ยังเสียหายคือ subscapularis",
+   "key_concept": "• Rotator cuff: SITS\n• Lift-off test ตรวจ subscapularis",
    "audit": {
     "source_file": "preclinic/3/musculoskeletal/mcq/ข้อสอบ mcq/MCQ_Musculo [Med PSU 50].pdf",
     "page": 14,
@@ -2518,17 +2534,17 @@
     "E": "Blood vessels"
    },
    "correct": "B",
-   "explanation": "ปวดหลังร้าวลงขา คือ spinal nerve root",
+   "explanation": "ปวดหลังร้าวขา (lumbar) ที่ spinal nerve ถูกกด",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "Vertebra",
-    "B": "✓ Spinal nerve",
-    "C": "Ligaments",
-    "D": "Muscle",
-    "E": "Vessel"
+    "A": "Vertebra ปวดแบบไม่ร้าวขา",
+    "B": "✓ Spinal nerve ถูกกดเกิด radicular pain",
+    "C": "Ligament ปวดเฉพาะที่",
+    "D": "Back muscle ปวดตึง",
+    "E": "หลอดเลือดปวดแบบ claudication"
    },
-   "key_concept": "• Radiculopathy\n• สรุป: ปวดหลังร้าวลงขา คือ spinal nerve root",
+   "key_concept": "• Radicular pain: ปวดร้าวตาม dermatome\n• HIVD ที่ L4–5/L5–S1",
    "audit": {
     "source_file": "preclinic/3/musculoskeletal/mcq/ข้อสอบ mcq/MCQ_Musculo [Med PSU 50].pdf",
     "page": 14,
@@ -2567,17 +2583,17 @@
     "E": "Subluxation"
    },
    "correct": "C",
-   "explanation": "ภาพ X-ray สันหลังคด คือ scoliosis",
+   "explanation": "กระดูกสันหลังคดด้านข้างคือ scoliosis",
    "image": "img/MSK-50-MCQ-053.jpg",
    "issues": [],
    "option_why": {
-    "A": "Kyphosis",
-    "B": "Lordosis",
-    "C": "✓ Scoliosis",
-    "D": "Angulation",
-    "E": "Subluxation"
+    "A": "Kyphosis คือโค้งหลังมาก",
+    "B": "Lordosis คือแอ่นหน้า",
+    "C": "✓ Scoliosis คือคดด้านข้าง Cobb angle",
+    "D": "Angulation คือการหักมุม",
+    "E": "Subluxation คือเลื่อนบางส่วน"
    },
-   "key_concept": "• Scoliosis: lateral curve\n• สรุป: ภาพ X-ray สันหลังคด คือ scoliosis",
+   "key_concept": "• Scoliosis: Cobb > 10°, Adam forward bend test\n• Adolescent idiopathic พบมากสุด",
    "audit": {
     "source_file": "preclinic/3/musculoskeletal/mcq/ข้อสอบ mcq/MCQ_Musculo [Med PSU 50].pdf",
     "page": 15,
@@ -2616,17 +2632,17 @@
     "E": "Common peroneal nerve"
    },
    "correct": "C",
-   "explanation": "เจ็บส้นเท้าตอนวิ่ง plantarflex ไม่ได้ คือ Achilles tendon rupture",
+   "explanation": "เจ็บส้นเท้าเฉียบพลันขณะวิ่งนึกถึง Achilles tendon rupture",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "Tibial",
-    "B": "Calcaneus",
-    "C": "✓ Achilles",
-    "D": "—",
-    "E": "—"
+    "A": "Tibial nerve ทำให้ชาฝ่าเท้า",
+    "B": "Calcaneus fracture ต้องกระแทก",
+    "C": "✓ Achilles tendon rupture ได้ยินเสียงแตก Thompson test บวก",
+    "D": "Superficial peroneal ชาหลังเท้า",
+    "E": "CPN foot drop"
    },
-   "key_concept": "• Achilles rupture\n• สรุป: เจ็บส้นเท้าตอนวิ่ง plantarflex ไม่ได้ คือ Achilles tendon rupture",
+   "key_concept": "• Achilles rupture: ชาย 30–50 ปี กีฬา\n• Fluoroquinolone เพิ่มความเสี่ยง",
    "audit": {
     "source_file": "preclinic/3/musculoskeletal/mcq/ข้อสอบ mcq/MCQ_Musculo [Med PSU 50].pdf",
     "page": 15,
@@ -2665,17 +2681,17 @@
     "E": "Patella displacement"
    },
    "correct": "B",
-   "explanation": "ขางอ-หมุนเข้า หลังอุบัติเหตุ คือ hip dislocation",
+   "explanation": "ปวดสะโพกหลังอุบัติเหตุเฉียบพลัน นึกถึง hip dislocation",
    "image": "img/MSK-50-MCQ-055.jpg",
    "issues": [],
    "option_why": {
-    "A": "Knee",
-    "B": "✓ Hip dislocation",
-    "C": "Bursitis",
-    "D": "ไม่ใช่คำตอบที่ถูกต้องของโจทย์ข้อนี้",
-    "E": "ไม่ใช่คำตอบที่ถูกต้องของโจทย์ข้อนี้"
+    "A": "Knee dislocation อยู่ที่เข่า",
+    "B": "✓ Hip dislocation หลังบาดเจ็บรุนแรง ปวดทันที",
+    "C": "Trochanteric bursitis เป็นเรื้อรัง",
+    "D": "Hamstring strain ปวดหลังต้นขา",
+    "E": "Patella displacement เกิดที่เข่า"
    },
-   "key_concept": "• Posterior hip dislocation\n• สรุป: ขางอ-หมุนเข้า หลังอุบัติเหตุ คือ hip dislocation",
+   "key_concept": "• Posterior hip dislocation: dashboard injury\n• เร่งดึงกลับภายใน 6 ชม.",
    "audit": {
     "source_file": "preclinic/3/musculoskeletal/mcq/ข้อสอบ mcq/MCQ_Musculo [Med PSU 50].pdf",
     "page": 15,
@@ -2714,17 +2730,17 @@
     "E": "Lateral plantar"
    },
    "correct": "D",
-   "explanation": "ยกเท้าขึ้นไม่ได้ ชาด้านข้างขา คือ common peroneal",
+   "explanation": "ก้อนที่ขาด้านหน้า-ด้านนอก (anterolateral) กดเส้นประสาท common peroneal",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "Tibial",
-    "B": "Superficial",
-    "C": "Deep",
-    "D": "✓ Common peroneal",
-    "E": "Lateral plantar"
+    "A": "Tibial เลี้ยง posterior compartment",
+    "B": "Superficial peroneal เลี้ยง lateral compartment",
+    "C": "Deep peroneal เลี้ยง anterior compartment",
+    "D": "✓ Common peroneal ผ่านคอ fibula เสียได้ทั้งสอง branch",
+    "E": "Lateral plantar อยู่ที่ฝ่าเท้า"
    },
-   "key_concept": "• Common peroneal\n• สรุป: ยกเท้าขึ้นไม่ได้ ชาด้านข้างขา คือ common peroneal",
+   "key_concept": "• CPN แยกเป็น superficial และ deep peroneal\n• ก้อนที่คอ fibula ทำให้ foot drop",
    "audit": {
     "source_file": "preclinic/3/musculoskeletal/mcq/ข้อสอบ mcq/MCQ_Musculo [Med PSU 50].pdf",
     "page": 16,
@@ -2763,17 +2779,17 @@
     "E": "Culture"
    },
    "correct": "E",
-   "explanation": "การเพาะเชื้อห้ามใช้ anticoagulant (heparin อาจยับยั้ง)",
+   "explanation": "การเพาะเชื้อน้ำไขข้อไม่ควรใส่สารกันเลือดแข็ง/สารเติมแต่ง เพราะอาจยับยั้งเชื้อ",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "Cell count ใช้ EDTA",
-    "B": "Differentiation",
-    "C": "Crystal",
-    "D": "Gram",
-    "E": "✓ Culture"
+    "A": "Cell count ใช้ EDTA ได้",
+    "B": "WBC differential ใช้ EDTA ได้",
+    "C": "Crystal analysis ห้ามใช้ EDTA แต่ heparin ได้ (ตัวเลือกนี้ไม่ใช่คำตอบ)",
+    "D": "Gram stain ใช้ได้ใน anticoagulant บางชนิด",
+    "E": "✓ Culture ต้องใช้หลอดปราศจากเชื้อไม่มีสารเติมแต่ง"
    },
-   "key_concept": "• Culture: sterile no additive\n• สรุป: การเพาะเชื้อห้ามใช้ anticoagulant (heparin อาจยับยั้ง)",
+   "key_concept": "• Synovial fluid: cell count (EDTA), crystal (heparin), culture (sterile ไม่มี additive)\n• Lithium heparin ใช้ crystal",
    "audit": {
     "source_file": "preclinic/3/musculoskeletal/mcq/ข้อสอบ mcq/MCQ_Musculo [Med PSU 50].pdf",
     "page": 16,
@@ -2812,17 +2828,17 @@
     "E": "Gouty arthritis"
    },
    "correct": "C",
-   "explanation": "WBC >100,000 glucose ต่ำ PMN เด่น คือ septic arthritis",
+   "explanation": "ข้อเข่าปวดบวมแดงเฉียบพลันมีไข้ ต้องคิด septic arthritis",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "OA",
-    "B": "RA",
-    "C": "✓ Septic",
-    "D": "Reactive",
-    "E": "Gout"
+    "A": "OA ไม่บวมแดงเฉียบพลัน",
+    "B": "RA ข้อหลายข้อ",
+    "C": "✓ Septic arthritis ปวด บวม แดง ร้อน ไข้",
+    "D": "Reactive arthritis หลังติดเชื้อ",
+    "E": "Gout ก็เฉียบพลันได้ แต่ต้องแยกด้วยเจาะข้อ"
    },
-   "key_concept": "• Septic synovial fluid\n• สรุป: WBC >100,000 glucose ต่ำ PMN เด่น คือ septic arthritis",
+   "key_concept": "• Monoarthritis เฉียบพลัน: septic vs gout vs trauma\n• เจาะข้อเสมอ",
    "audit": {
     "source_file": "preclinic/3/musculoskeletal/mcq/ข้อสอบ mcq/MCQ_Musculo [Med PSU 50].pdf",
     "page": 16,
@@ -2861,17 +2877,17 @@
     "E": "Hypermagnesemia"
    },
    "correct": "C",
-   "explanation": "ผลึกรูปสี่เหลี่ยมคือ CPPD สัมพันธ์กับ hyperparathyroidism",
+   "explanation": "หญิง 62 ปี ปวดข้อเฉียบพลัน บวม (pseudogout) สัมพันธ์กับ hyperparathyroidism",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "HT",
-    "B": "Hyperthyroid",
-    "C": "✓ Hyperparathyroidism",
-    "D": "Hyperuricemia คือ gout",
-    "E": "Hypermagnesemia"
+    "A": "ความดันสูงไม่เกี่ยว",
+    "B": "Hyperthyroidism ไม่ใช่สาเหตุหลัก",
+    "C": "✓ Hyperparathyroidism เสี่ยง CPPD (pseudogout)",
+    "D": "Hyperuricemia ก่อ gout",
+    "E": "Hypermagnesemia ไม่สัมพันธ์"
    },
-   "key_concept": "• CPPD: hyperPTH, hemochromatosis\n• สรุป: ผลึกรูปสี่เหลี่ยมคือ CPPD สัมพันธ์กับ hyperparathyroidism",
+   "key_concept": "• CPPD: hemochromatosis, hyperparathyroidism, hypomagnesemia, hypophosphatasia\n• Rhomboid crystal, positive birefringence",
    "audit": {
     "source_file": "preclinic/3/musculoskeletal/mcq/ข้อสอบ mcq/MCQ_Musculo [Med PSU 50].pdf",
     "page": 16,
@@ -2910,17 +2926,17 @@
     "E": "Ulnar Sunderland V"
    },
    "correct": "A",
-   "explanation": "หมดสติจากแอลกอฮอล์แล้วยกมือไม่ได้ ชาหลังมือ คือ radial neurapraxia",
+   "explanation": "เมาแล้วหลับทับแขน wrist drop: radial neurapraxia (Saturday night palsy) หายได้เองใน 6–8 สัปดาห์",
    "image": "img/MSK-50-MCQ-060.jpg",
    "issues": [],
    "option_why": {
-    "A": "✓ Radial neurapraxia",
-    "B": "Median axonotmesis",
-    "C": "Axillary",
-    "D": "Mixed",
-    "E": "Ulnar"
+    "A": "✓ Radial neurapraxia: conduction block กดชั่วคราว",
+    "B": "Median axonotmesis ไม่ตรงอาการ wrist drop",
+    "C": "Axillary neurotmesis ไม่ใช่การกดทับ",
+    "D": "Mixed ไม่ใช่ลักษณะนี้",
+    "E": "Sunderland V ขาดสมบูรณ์ต้องผ่าตัด"
    },
-   "key_concept": "• Saturday night palsy\n• สรุป: หมดสติจากแอลกอฮอล์แล้วยกมือไม่ได้ ชาหลังมือ คือ radial neurapraxia",
+   "key_concept": "• Neurapraxia: myelin เสีย axon ดี หายเร็ว\n• Axonotmesis: 1 มม./วัน",
    "audit": {
     "source_file": "preclinic/3/musculoskeletal/mcq/ข้อสอบ mcq/MCQ_Musculo [Med PSU 50].pdf",
     "page": 17,
@@ -2959,17 +2975,17 @@
     "E": "Initiate responses with fibroblast proliferation"
    },
    "correct": "D",
-   "explanation": "Secondary healing: relative stability และ partial weight bearing",
+   "explanation": "Secondary bone healing เกิดภายใต้ relative stability และ micromovement ทำให้เกิด callus",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "Cutting cone คือ primary",
-    "B": "Primary",
-    "C": "Perfect stability คือ primary",
-    "D": "✓ Relative stability",
-    "E": "Fibroblast"
+    "A": "Cutting cone เป็น primary healing",
+    "B": "หายโดย cortex ไม่มี callus คือ primary healing",
+    "C": "Perfect stability = primary healing",
+    "D": "✓ Relative stability + partial weight bearing กระตุ้น callus",
+    "E": "Fibroblast proliferation เป็นขั้นหนึ่งของทุกการหาย"
    },
-   "key_concept": "• Secondary: callus\n• สรุป: Secondary healing: relative stability และ partial weight bearing",
+   "key_concept": "• Secondary healing: cast/IM nail, callus, 4 ขั้น\n• Primary: plate fixation, absolute stability",
    "audit": {
     "source_file": "preclinic/3/musculoskeletal/mcq/ข้อสอบ mcq/MCQ_Musculo [Med PSU 50].pdf",
     "page": 17,
@@ -3008,17 +3024,17 @@
     "E": "Cellular migration into hematoma formation"
    },
    "correct": "C",
-   "explanation": "Reparative phase ของเอ็น: เซลล์และ matrix เพิ่ม",
+   "explanation": "ระยะ reparative ของการหายกระดูกมีการสร้างเซลล์และ matrix เพิ่ม (callus)",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "Phagocytosis คือ inflammatory",
-    "B": "Inflammatory",
-    "C": "✓ Cellular and matrix production",
-    "D": "Collagen III เพิ่ม",
-    "E": "Migration to hematoma"
+    "A": "Phagocytosis เป็นระยะ inflammatory",
+    "B": "Inflammatory cell/IL-6 เพิ่มในระยะอักเสบ",
+    "C": "✓ Reparative: cell + matrix production",
+    "D": "Collagen III ไม่ลด แต่เปลี่ยนเป็น I ช่วง remodeling",
+    "E": "การอพยพเซลล์เข้า hematoma เป็นช่วงแรก"
    },
-   "key_concept": "• Tendon healing phases\n• สรุป: Reparative phase ของเอ็น: เซลล์และ matrix เพิ่ม",
+   "key_concept": "• Healing: inflammation → repair (soft/hard callus) → remodeling\n• Collagen III → I ในช่วง remodeling",
    "audit": {
     "source_file": "preclinic/3/musculoskeletal/mcq/ข้อสอบ mcq/MCQ_Musculo [Med PSU 50].pdf",
     "page": 17,
@@ -3057,17 +3073,17 @@
     "E": "A 70-year-old man with diabetes who has an open fracture of the femur and also a vascular injury."
    },
    "correct": "E",
-   "explanation": "DM ร่วมกับ open fracture เสี่ยงหายช้าที่สุด",
+   "explanation": "ผู้ป่วยเบาหวานอายุ 70 ที่กระดูกหักแบบเปิด หายผิดปกติได้มากที่สุด",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "Athlete",
-    "B": "Osteoporosis",
-    "C": "Child",
-    "D": "Child closed",
-    "E": "✓ DM + open fracture"
+    "A": "นักกีฬาหญิงกระดูกร้าวจากล้า หายได้ดีถ้าพัก",
+    "B": "โรคกระดูกพรุนหายช้าแต่ยังหายได้",
+    "C": "เด็ก 6 ปี open fracture หายได้ดี",
+    "D": "เด็ก 3 ปี closed fracture หายง่าย",
+    "E": "✓ เบาหวาน อายุมาก open fracture: perfusion ต่ำ ติดเชื้อ หายยาก"
    },
-   "key_concept": "• Risk factors: DM, smoking, open fx\n• สรุป: DM ร่วมกับ open fracture เสี่ยงหายช้าที่สุด",
+   "key_concept": "• ปัจจัยหายยาก: DM, สูบบุหรี่, open fracture, อายุมาก, NSAID\n• เด็กหายเร็วที่สุด",
    "audit": {
     "source_file": "preclinic/3/musculoskeletal/mcq/ข้อสอบ mcq/MCQ_Musculo [Med PSU 50].pdf",
     "page": 17,
@@ -3106,17 +3122,17 @@
     "E": "–"
    },
    "correct": "A",
-   "explanation": "Schwann cell เปลี่ยนเป็น repair cell สำคัญสุดต่อ axonal regeneration",
+   "explanation": "Axon regeneration ต้องมี Schwann cell เปลี่ยนเป็น repair cell ก่อน (ตามเฉลย) จึงเกิด growth cone",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "✓ Schwann repair cell",
-    "B": "Growth factors",
-    "C": "Retrograde signal",
-    "D": "Growth cone",
-    "E": "ไม่ใช่คำตอบที่ถูกต้องของโจทย์ข้อนี้"
+    "A": "✓ Schwann cell เปลี่ยนเป็น repair cell สร้างทางนำและหลั่ง trophic factor",
+    "B": "การเพิ่ม growth-promoting factor สำคัญแต่ตามหลัง",
+    "C": "Retrograde signal กระตุ้น cell body",
+    "D": "Growth cone นำ axon ไปสู่เป้าหมาย",
+    "E": "ตัวเลือกว่างในต้นฉบับ"
    },
-   "key_concept": "• Wallerian degeneration\n• สรุป: Schwann cell เปลี่ยนเป็น repair cell สำคัญสุดต่อ axonal regeneration",
+   "key_concept": "• Wallerian degeneration → Schwann repair cell → regenerating axon\n• Axon งอก ~1 มม./วัน",
    "audit": {
     "source_file": "preclinic/3/musculoskeletal/mcq/ข้อสอบ mcq/MCQ_Musculo [Med PSU 50].pdf",
     "page": 18,
@@ -3155,17 +3171,25 @@
     "E": "Bind to ACh receptor inducing prolonged depolarization"
    },
    "correct": "E",
-   "explanation": "Succinylcholine จับ ACh receptor เกิด depolarization นาน",
+   "explanation": "Succinylcholine จับ ACh receptor depolarize นาน (depolarizing block)",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "K efflux",
-    "B": "Dantrolene",
-    "C": "Cl influx",
-    "D": "Na conductance ↓",
-    "E": "✓ Prolonged depolarization"
+    "A": "K⁺ efflux ทำให้ hyperpolarize ไม่ใช่กลไก SCh",
+    "B": "ปิด Ca²⁺ release จาก SR เป็นของ dantrolene",
+    "C": "Cl⁻ influx hyperpolarize เป็นของ GABA agonist",
+    "D": "ลด Na⁺ conductance เป็นของ local anesthetic",
+    "E": "✓ จับ nicotinic ACh receptor depolarize นาน"
    },
-   "key_concept": "• Depolarizing NMBA\n• สรุป: Succinylcholine จับ ACh receptor เกิด depolarization นาน",
+   "key_concept": "• SCh: เร็ว สั้น fasciculation\n• เสี่ยง hyperkalemia ใน burn/crush",
+   "mechanism": [
+    "SCh จับ nicotinic receptor",
+    {
+     "s": "Depolarize นาน ไม่ repolarize",
+     "answer": true
+    },
+    "กล้ามเนื้อเกร็งแล้วอัมพาต"
+   ],
    "audit": {
     "source_file": "preclinic/3/musculoskeletal/mcq/ข้อสอบ mcq/MCQ_Musculo [Med PSU 50].pdf",
     "page": 18,
@@ -3204,17 +3228,17 @@
     "E": "Succinylcholine"
    },
    "correct": "E",
-   "explanation": "Hyperkalemia หลัง spinal cord injury จาก succinylcholine",
+   "explanation": "ชายตกนั่งร้าน ใส่ท่อช่วยหายใจ ต้องการ NMB ออกฤทธิ์เร็ว ใช้ succinylcholine (rapid sequence)",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "Baclofen",
-    "B": "Dantrolene",
-    "C": "Rocuronium",
-    "D": "Pancuronium",
-    "E": "✓ Succinylcholine"
+    "A": "Baclofen เป็นยาลดเกร็ง ไม่ใช้ใส่ท่อ",
+    "B": "Dantrolene รักษา MH",
+    "C": "Rocuronium ออกฤทธิ์เร็วแต่ไม่เท่า SCh",
+    "D": "Pancuronium ออกฤทธิ์ช้า",
+    "E": "✓ SCh ออกฤทธิ์เร็วที่สุด 30–60 วินาที"
    },
-   "key_concept": "• SCh: hyperkalemia\n• สรุป: Hyperkalemia หลัง spinal cord injury จาก succinylcholine",
+   "key_concept": "• RSI: succinylcholine (1 มก./กก.) หรือ rocuronium\n• SCh ต้องระวัง hyperkalemia",
    "audit": {
     "source_file": "preclinic/3/musculoskeletal/mcq/ข้อสอบ mcq/MCQ_Musculo [Med PSU 50].pdf",
     "page": 18,
@@ -3253,17 +3277,17 @@
     "E": "–"
    },
    "correct": "D",
-   "explanation": "Atropine ยับยั้ง parasympathetic (muscarinic) ลดผลข้างเคียง neostigmine",
+   "explanation": "Atropine/glycopyrrolate ให้พร้อม neostigmine เพื่อยับยั้งผล muscarinic (parasympathetic) ที่ไม่ต้องการ",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "Enhance NMB",
-    "B": "Reverse GI",
-    "C": "Muscarinic heart",
-    "D": "✓ Inhibit parasympathetic",
-    "E": "—"
+    "A": "ไม่ได้เพิ่มผล non-depolarizing",
+    "B": "ไม่ใช่ยากระตุ้นการเคลื่อนไหวลำไส้",
+    "C": "ไม่ได้ออกฤทธิ์เฉพาะที่หัวใจ",
+    "D": "✓ ยับยั้งระบบ parasympathetic (muscarinic) ที่เกิดจาก neostigmine",
+    "E": "ตัวเลือกว่างในต้นฉบับ"
    },
-   "key_concept": "• Atropine antimuscarinic\n• สรุป: Atropine ยับยั้ง parasympathetic (muscarinic) ลดผลข้างเคียง neostigmine",
+   "key_concept": "• Reversal: neostigmine + atropine/glycopyrrolate\n• Neostigmine ↑ ACh → bradycardia, salivation",
    "audit": {
     "source_file": "preclinic/3/musculoskeletal/mcq/ข้อสอบ mcq/MCQ_Musculo [Med PSU 50].pdf",
     "page": 18,
@@ -3302,17 +3326,17 @@
     "E": "Indomethacin"
    },
    "correct": "B",
-   "explanation": "หัวใจ angina stable ควรเลือก naproxen (CV risk ต่ำสุด)",
+   "explanation": "ผู้ป่วย stable angina ที่ต้องใช้ NSAID เลือก naproxen ที่เสี่ยงหัวใจน้อยสุด",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "Piroxicam",
-    "B": "✓ Naproxen",
-    "C": "Celecoxib",
-    "D": "Diclofenac",
-    "E": "Indomethacin"
+    "A": "Piroxicam เสี่ยง GI สูง",
+    "B": "✓ Naproxen เสี่ยงหัวใจน้อยกว่า COX-2 และ NSAID อื่น",
+    "C": "Celecoxib เสี่ยง CVD เพิ่ม",
+    "D": "Diclofenac เสี่ยง CVD สูง",
+    "E": "Indomethacin เสี่ยง GI/CNS"
    },
-   "key_concept": "• CV risk: naproxen lowest\n• สรุป: หัวใจ angina stable ควรเลือก naproxen (CV risk ต่ำสุด)",
+   "key_concept": "• NSAID กับโรคหัวใจ: naproxen (ต่ำสุด), diclofenac/COX-2 สูง\n• เลี่ยง NSAID ใน HF/CKD",
    "audit": {
     "source_file": "preclinic/3/musculoskeletal/mcq/ข้อสอบ mcq/MCQ_Musculo [Med PSU 50].pdf",
     "page": 19,
@@ -3351,17 +3375,26 @@
     "E": "Inhibition of the formation of toxic acetaminophen metabolites"
    },
    "correct": "B",
-   "explanation": "NAC จับ toxic metabolite (NAPQI) และเติม glutathione",
+   "explanation": "NAC รักษาพิษ paracetamol โดยเป็น precursor ของ glutathione จับ NAPQI (conjugation) (ตามเฉลยต้นฉบับ)",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "CYP inhibition",
-    "B": "✓ Conjugation (glutathione)",
-    "C": "Free radicals",
-    "D": "Renal excretion",
-    "E": "Inhibit formation"
+    "A": "ไม่ได้ยับยั้ง P450 เป็นหลัก",
+    "B": "✓ NAC/glutathione จับ NAPQI โดยตรง",
+    "C": "ลดอนุมูลอิสระเป็นผลเสริม",
+    "D": "ไม่ได้เร่งการขับ paracetamol",
+    "E": "ยับยั้งการเกิด NAPQI เป็นกลไกของ cimetidine ไม่ใช่ NAC"
    },
-   "key_concept": "• NAC: glutathione\n• สรุป: NAC จับ toxic metabolite (NAPQI) และเติม glutathione",
+   "key_concept": "• NAC: เติม glutathione, ใช้ภายใน 8–10 ชม.\n• NAPQI สร้างโดย CYP2E1",
+   "mechanism": [
+    "Paracetamol เกินขนาด ผ่าน CYP2E1 ได้ NAPQI",
+    "Glutathione หมด",
+    {
+     "s": "NAC เติม glutathione จับ NAPQI",
+     "answer": true
+    },
+    "ลดพิษต่อตับ"
+   ],
    "audit": {
     "source_file": "preclinic/3/musculoskeletal/mcq/ข้อสอบ mcq/MCQ_Musculo [Med PSU 50].pdf",
     "page": 19,
@@ -3400,17 +3433,26 @@
     "E": "Inhibit prostaglandin mediated vasodilation"
    },
    "correct": "E",
-   "explanation": "NSAID ยับยั้ง prostaglandin ทำให้ vasodilation ไตลดลง",
+   "explanation": "NSAID ยับยั้ง prostaglandin-mediated vasodilation ที่ afferent arteriole ทำให้ GFR ลดและ oliguria",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "Irritation",
-    "B": "COX",
-    "C": "ACE",
-    "D": "ADH",
-    "E": "✓ PG-mediated vasodilation"
+    "A": "ไม่ใช่การระคายเคืองไตโดยตรง",
+    "B": "ยับยั้ง COX เป็นกลไกต้นทาง แต่ผลที่ทำให้ oliguria คือการสูญเสีย vasodilation",
+    "C": "ไม่ได้ยับยั้ง angiotensin II (นั่นคือ ACEI)",
+    "D": "ไม่ได้เพิ่ม ADH",
+    "E": "✓ PG ที่ขยาย afferent ลด จึง GFR ลด"
    },
-   "key_concept": "• NSAID nephropathy\n• สรุป: NSAID ยับยั้ง prostaglandin ทำให้ vasodilation ไตลดลง",
+   "key_concept": "• NSAID + HTN + ACEI/diuretic = triple whammy AKI\n• Prostaglandin รักษา renal blood flow",
+   "mechanism": [
+    "NSAID ยับยั้ง COX",
+    "Prostaglandin ขยาย afferent ลดลง",
+    {
+     "s": "Afferent arteriole หด",
+     "answer": true
+    },
+    "GFR ลดและ oliguria"
+   ],
    "audit": {
     "source_file": "preclinic/3/musculoskeletal/mcq/ข้อสอบ mcq/MCQ_Musculo [Med PSU 50].pdf",
     "page": 19,
@@ -3449,17 +3491,25 @@
     "E": "Induce inflammation by prostaglandin"
    },
    "correct": "B",
-   "explanation": "Aspirin ขนาดต่ำลดการขับ urate ทำให้ gout กำเริบ",
+   "explanation": "ชายเป็น gout กำเริบหลังยา (เช่น thiazide/aspirin) ที่ลดการขับ urate",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "URAT1",
-    "B": "✓ ↓ urate excretion",
-    "C": "Synthesis",
-    "D": "NLRP3",
-    "E": "PG"
+    "A": "ยับยั้ง URAT1 จะขับ urate เพิ่ม (probenecid) ไม่ทำให้กำเริบ",
+    "B": "✓ ยาที่ลดการขับ urate ทำให้ urate สูงและ gout กำเริบ",
+    "C": "เพิ่มการสร้าง urate คือการกินพิวรีนสูง",
+    "D": "การเพิ่ม NLRP3 เป็นกลไกอักเสบของผลึก",
+    "E": "Prostaglandin ไม่ใช่สาเหตุหลักของ gout flare"
    },
-   "key_concept": "• Low-dose aspirin: urate retention\n• สรุป: Aspirin ขนาดต่ำลดการขับ urate ทำให้ gout กำเริบ",
+   "key_concept": "• ยาที่เพิ่ม urate: thiazide, loop, low-dose aspirin, pyrazinamide\n• Uricosuric ลด urate",
+   "mechanism": [
+    "ยาลดการขับ urate ที่ไต",
+    {
+     "s": "Urate ในเลือดสูงขึ้น",
+     "answer": true
+    },
+    "ผลึก MSU ตกตะกอนและเกิด gout flare"
+   ],
    "audit": {
     "source_file": "preclinic/3/musculoskeletal/mcq/ข้อสอบ mcq/MCQ_Musculo [Med PSU 50].pdf",
     "page": 19,

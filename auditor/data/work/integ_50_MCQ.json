@@ -19,19 +19,28 @@
     "E": "Aspirin"
    },
    "correct": "C",
-   "explanation": "Warfarin ในไตรมาสแรกทำให้ nasal hypoplasia และ stippled epiphyses (warfarin embryopathy)",
-   "image": null,
+   "explanation": "Warfarin ในไตรมาสแรกทำให้ nasal hypoplasia และ stippled epiphyses (warfarin embryopathy) หญิงมีโรคหัวใจจึงใช้ยานี้ได้",
+   "image": "img/INTEG-50-MCQ-001.jpg",
    "issues": [
     "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
    ],
    "option_why": {
-    "A": "Metoprolol: ไม่ใช่สาเหตุ nasal hypoplasia",
-    "B": "Alcohol: fetal alcohol syndrome (หน้าแบน ริมฝีปากบนบาง)",
-    "C": "✓ Warfarin: nasal hypoplasia + ใช้ในหัวใจ",
-    "D": "Phenytoin: fetal hydantoin (hypoplastic nails, cleft)",
-    "E": "Aspirin: ไม่ใช่สาเหตุทั่วไป"
+    "A": "Metoprolol ไม่เป็น teratogen ที่ทำให้จมูกแบน",
+    "B": "Alcohol ก่อ fetal alcohol syndrome: ริมฝีปากบนบาง philtrum เรียบ",
+    "C": "✓ Warfarin ยับยั้ง vitamin K-dependent protein ในกระดูกอ่อน ทำให้จมูกแบนและ epiphysis จุด",
+    "D": "Phenytoin ก่อ fetal hydantoin: เล็บ/นิ้วเล็ก ปากแหว่ง",
+    "E": "Aspirin ไม่เป็นสาเหตุของ embryopathy แบบนี้"
    },
-   "key_concept": "• Warfarin embryopathy: nasal hypoplasia\n• สรุป: Warfarin ในไตรมาสแรกทำให้ nasal hypoplasia และ stippled epiphyses (warfarin embryopathy)",
+   "key_concept": "• Warfarin: teratogen (nasal hypoplasia), heparin ใช้ได้ในตั้งครรภ์\n• Phenytoin: hydantoin syndrome, Alcohol: FAS",
+   "mechanism": [
+    "Warfarin ผ่านรกในไตรมาสแรก",
+    {
+     "s": "ยับยั้ง vitamin K-dependent osteocalcin/matrix Gla protein",
+     "answer": true
+    },
+    "การสร้างกระดูกอ่อนบกพร่อง จมูกแบน"
+   ],
+   "image_caption": "ทารกแรกเกิด (จมูกแบน)",
    "audit": {
     "source_file": "preclinic/3/integrated/mcq/ข้อสอบ mcq/MCQ_Integrate [Med PSU 50].pdf",
     "page": 1,
@@ -113,18 +122,26 @@
     "E": ""
    },
    "correct": "C",
-   "explanation": "pH ต่ำ PaCO2 สูง HCO3 สูงชดเชย คือ respiratory acidosis จาก hypoventilation (chronic)",
+   "explanation": "pH ต่ำ PaCO₂ สูงมาก HCO₃⁻ สูงชดเชยแสดง respiratory acidosis จาก hypoventilation ที่มีไตชดเชยแล้ว",
    "image": null,
    "issues": [
     "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
    ],
    "option_why": {
-    "A": "Mixed acidosis: HCO3 ต้องต่ำ",
-    "B": "Metabolic alkalosis: pH จะสูง",
-    "C": "✓ Respiratory acidosis จาก hypoventilation มีไตชดเชย",
-    "D": "Hyperventilation ทำให้ PaCO2 ต่ำ"
+    "A": "Mixed acidosis ต้อง HCO₃⁻ ต่ำ แต่ค่านี้สูง",
+    "B": "Metabolic alkalosis ต้อง pH สูง",
+    "C": "✓ PaCO₂ สูง + HCO₃⁻ สูงชดเชย = chronic respiratory acidosis",
+    "D": "Hyperventilation ทำให้ PaCO₂ ต่ำ"
    },
-   "key_concept": "• Resp acidosis: PaCO2 สูง HCO3 ชดเชย\n• สรุป: pH ต่ำ PaCO2 สูง HCO3 สูงชดเชย คือ respiratory acidosis จาก hypoventilation (chronic)",
+   "key_concept": "• Respiratory acidosis: PaCO₂ ↑, pH ↓, ไตชดเชย HCO₃⁻ ↑\n• Hyperventilation = PaCO₂ ↓ (alkalosis)",
+   "mechanism": [
+    "Hypoventilation ทำให้ CO₂ คั่ง",
+    {
+     "s": "PaCO₂ ↑ ทำให้ pH ↓",
+     "answer": true
+    },
+    "ไตเก็บ HCO₃⁻ เพิ่มเพื่อชดเชย"
+   ],
    "audit": {
     "source_file": "preclinic/3/integrated/mcq/ข้อสอบ mcq/MCQ_Integrate [Med PSU 50].pdf",
     "page": 2,
@@ -163,19 +180,19 @@
     "E": "FRC"
    },
    "correct": "C",
-   "explanation": "โรคปอดอุดกั้นทำให้ FEV1/FVC ลดลง ส่วน RV, TLC, FRC เพิ่ม",
+   "explanation": "ในโรคปอดอุดกั้น FEV₁/FVC ลดลง ส่วน RV, TLC, FRC เพิ่มจาก air trapping",
    "image": null,
    "issues": [
     "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
    ],
    "option_why": {
-    "A": "RV/TLC เพิ่ม (air trapping)",
-    "B": "RV เพิ่ม",
-    "C": "✓ FEV1/FVC ลดลง",
-    "D": "TLC เพิ่มหรือปกติ",
-    "E": "FRC เพิ่ม"
+    "A": "RV/TLC เพิ่มจากอากาศค้างปอด",
+    "B": "RV เพิ่มจาก air trapping",
+    "C": "✓ FEV₁/FVC ลด เพราะหายใจออกยากขึ้น",
+    "D": "TLC เพิ่มหรือปกติในโรคอุดกั้น",
+    "E": "FRC เพิ่มจากปอดโป่งพอง"
    },
-   "key_concept": "• Obstructive: FEV1/FVC ลด\n• สรุป: โรคปอดอุดกั้นทำให้ FEV1/FVC ลดลง ส่วน RV, TLC, FRC เพิ่ม",
+   "key_concept": "• Obstructive: FEV₁/FVC < 0.7, RV/FRC/TLC ↑\n• Restrictive: ทุก volume ↓ FEV₁/FVC ปกติหรือ ↑",
    "audit": {
     "source_file": "preclinic/3/integrated/mcq/ข้อสอบ mcq/MCQ_Integrate [Med PSU 50].pdf",
     "page": 2,
@@ -214,17 +231,26 @@
     "E": ""
    },
    "correct": "B",
-   "explanation": "Tension pneumothorax ทำให้ venous return ลด จึง LV preload ลด",
+   "explanation": "Tension pneumothorax ความดันในทรวงอกสูง ลด venous return จึง preload ของ LV ลด",
    "image": null,
    "issues": [
     "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
    ],
    "option_why": {
-    "A": "LV contractility ไม่ลดโดยตรง",
-    "B": "✓ LV filling (preload) ลดจาก venous return ลดลง",
-    "C": "O2 content ไม่เกี่ยวโดยตรง"
+    "A": "Contractility ของ LV ไม่ลดโดยตรงในระยะแรก",
+    "B": "✓ Preload ลดเพราะ venous return ลดจากความดันทรวงอก",
+    "C": "O₂ content ไม่ใช่ตัวที่ลดตามคำถามนี้"
    },
-   "key_concept": "• Tension PTX: preload ลด\n• สรุป: Tension pneumothorax ทำให้ venous return ลด จึง LV preload ลด",
+   "key_concept": "• Tension PTX: mediastinum เลื่อน, venous return ↓, cardiac output ↓\n• รักษาเร่งด่วน: needle decompression",
+   "mechanism": [
+    "อากาศติดและความดันเพิ่มในช่องเยื่อหุ้มปอด",
+    "ความดันกด vena cava",
+    {
+     "s": "Venous return ลด จึง LV preload ลด",
+     "answer": true
+    },
+    "Cardiac output ตก ความดันต่ำ"
+   ],
    "audit": {
     "source_file": "preclinic/3/integrated/mcq/ข้อสอบ mcq/MCQ_Integrate [Med PSU 50].pdf",
     "page": 2,
@@ -263,19 +289,27 @@
     "E": "Imperforate hymen"
    },
    "correct": "A",
-   "explanation": "ประจำเดือนไม่สม่ำเสมอและไม่มี biphasic temperature คือ anovulation",
+   "explanation": "ประจำเดือนไม่สม่ำเสมอและไม่มี biphasic temperature แสดงว่าไม่มีการตกไข่ (anovulation)",
    "image": null,
    "issues": [
     "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
    ],
    "option_why": {
-    "A": "✓ Anovulation: ไม่ตกไข่ ไม่มี biphasic",
-    "B": "Tubal atresia: ประจำเดือนปกติ",
-    "C": "Cervical stenosis: ไม่อธิบาย biphasic",
-    "D": "Endometrial hyperplasia: ผล ไม่ใช่สาเหตุ",
-    "E": "Imperforate hymen: ไม่มีประจำเดือน"
+    "A": "✓ Anovulation ไม่มี progesterone จึงไม่มี biphasic temp",
+    "B": "Tubal atresia ไม่กระทบรอบเดือนและอุณหภูมิ",
+    "C": "Cervical stenosis กระทบทางไหลออก ไม่ใช่ biphasic",
+    "D": "Endometrial hyperplasia เป็นผลของ anovulation",
+    "E": "Imperforate hymen ทำให้ไม่มีประจำเดือนออก"
    },
-   "key_concept": "• Anovulation: no biphasic\n• สรุป: ประจำเดือนไม่สม่ำเสมอและไม่มี biphasic temperature คือ anovulation",
+   "key_concept": "• Ovulation → progesterone → อุณหภูมิ ↑ 0.3–0.5°C ครึ่งหลังของรอบ\n• Monophasic = anovulation เช่น PCOS",
+   "mechanism": [
+    "ไม่มี LH surge",
+    {
+     "s": "ไม่ตกไข่ ไม่มี corpus luteum",
+     "answer": true
+    },
+    "ไม่มี progesterone ไม่เกิด biphasic"
+   ],
    "audit": {
     "source_file": "preclinic/3/integrated/mcq/ข้อสอบ mcq/MCQ_Integrate [Med PSU 50].pdf",
     "page": 2,
@@ -314,16 +348,24 @@
     "E": ""
    },
    "correct": "A",
-   "explanation": "Prolactin สูงกดการหลั่ง GnRH/LH ทำให้ไม่ตกไข่ระหว่างให้นมแม่",
+   "explanation": "ให้นมบุตรเต็มที่ prolactin สูงกด GnRH/LH จึงไม่ตกไข่ (lactational amenorrhea)",
    "image": null,
    "issues": [
     "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
    ],
    "option_why": {
-    "A": "✓ Prolactin กด GnRH → lactational amenorrhea",
-    "B": "Oxytocin ทำให้น้ำนมไหล"
+    "A": "✓ Prolactin กด GnRH → ไม่ตกไข่",
+    "B": "Oxytocin ทำให้น้ำนมไหลและมดลูกบีบ ไม่ใช่ตัวกดการตกไข่"
    },
-   "key_concept": "• Lactational amenorrhea: prolactin\n• สรุป: Prolactin สูงกดการหลั่ง GnRH/LH ทำให้ไม่ตกไข่ระหว่างให้นมแม่",
+   "key_concept": "• Prolactin ยับยั้ง hypothalamic GnRH\n• LAM ได้ผลเมื่อ ให้นมแม่อย่างเดียว ลูก <6 เดือน ยังไม่มีประจำเดือน",
+   "mechanism": [
+    "ลูกดูดนม",
+    {
+     "s": "Prolactin สูง กด GnRH",
+     "answer": true
+    },
+    "LH/FSH ต่ำ ไม่ตกไข่"
+   ],
    "audit": {
     "source_file": "preclinic/3/integrated/mcq/ข้อสอบ mcq/MCQ_Integrate [Med PSU 50].pdf",
     "page": 3,
@@ -362,17 +404,17 @@
     "E": ""
    },
    "correct": "A",
-   "explanation": "หลังตกไข่เริ่มด้วย subnuclear vacuoles ของ glycogen ในต่อม endometrium",
+   "explanation": "หลังตกไข่ progesterone ทำให้เกิด subnuclear vacuole ที่สะสม glycogen เป็นการเปลี่ยนแปลงแรกสุด",
    "image": null,
    "issues": [
     "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
    ],
    "option_why": {
-    "A": "✓ Subnuclear vacuoles ปรากฏก่อน (วันที่ 16–17)",
-    "B": "Tortuous secretory glands ตามมา",
-    "C": "Spiral artery ตามมาภายหลัง"
+    "A": "✓ Subnuclear vacuoles ปรากฏราววันที่ 16–17",
+    "B": "ต่อมคดเคี้ยวมี secretion ตามมาภายหลัง",
+    "C": "Spiral artery พัฒนาภายหลังอีก"
    },
-   "key_concept": "• Early secretory: subnuclear vacuoles\n• สรุป: หลังตกไข่เริ่มด้วย subnuclear vacuoles ของ glycogen ในต่อม endometrium",
+   "key_concept": "• Secretory phase: vacuole → tortuous gland → spiral artery\n• Progesterone ควบคุมการเปลี่ยนแปลงของ secretory phase",
    "audit": {
     "source_file": "preclinic/3/integrated/mcq/ข้อสอบ mcq/MCQ_Integrate [Med PSU 50].pdf",
     "page": 3,
@@ -411,19 +453,27 @@
     "E": "Gastrointestinal losses"
    },
    "correct": "A",
-   "explanation": "Urine osm ต่ำ Na สูง สอดคล้องกับ ADH ไม่ทำงานที่ collecting duct (nephrogenic DI)",
+   "explanation": "Urine osm ต่ำมากและ Na สูงบ่งชี้ว่า collecting duct ไม่ตอบสนอง ADH จึงไม่ concentrate ปัสสาวะ",
    "image": null,
    "issues": [
     "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
    ],
    "option_why": {
-    "A": "✓ Collecting duct: ขาด ADH effect จึง urine เจือจาง",
-    "B": "PCT: reabsorb isosmotic",
-    "C": "DCT: dilute แต่ไม่ concentrate",
-    "D": "Thick ascending limb: ยา loop diuretic ลด medullary gradient แต่คำถามถามการ concentrating",
-    "E": "GI loss: ไม่ใช่ segment"
+    "A": "✓ Collecting duct เป็นที่ ADH เพิ่ม water reabsorption ทำให้ปัสสาวะเข้มข้น",
+    "B": "PCT reabsorb แบบ isosmotic",
+    "C": "DCT ช่วยเจือจางแต่ไม่ใช่ที่ concentrate",
+    "D": "Thick ascending limb คือที่ loop diuretic ออกฤทธิ์ ลด medullary gradient แต่คำถามเน้นการ concentrate",
+    "E": "GI loss ไม่ใช่ส่วนของ nephron"
    },
-   "key_concept": "• Collecting duct: water via ADH\n• สรุป: Urine osm ต่ำ Na สูง สอดคล้องกับ ADH ไม่ทำงานที่ collecting duct (nephrogenic DI)",
+   "key_concept": "• Collecting duct + ADH → aquaporin-2 → urine เข้มข้น\n• Nephrogenic DI: collecting duct ไม่ตอบสนอง ADH",
+   "mechanism": [
+    "ADH จับ V2 receptor ที่ collecting duct",
+    {
+     "s": "Aquaporin-2 แทรกเยื่อ ดึงน้ำกลับ",
+     "answer": true
+    },
+    "ปัสสาวะเข้มข้น (ถ้าบกพร่อง ปัสสาวะเจือจาง Na ในเลือดสูง)"
+   ],
    "audit": {
     "source_file": "preclinic/3/integrated/mcq/ข้อสอบ mcq/MCQ_Integrate [Med PSU 50].pdf",
     "page": 3,
@@ -462,18 +512,26 @@
     "E": ""
    },
    "correct": "C",
-   "explanation": "ACEI ขยาย efferent arteriole ทำให้ intraglomerular pressure ลดและ GFR ลด",
+   "explanation": "ACEI ลด angiotensin II ทำให้ efferent arteriole ขยาย ความดัน glomerulus ลดและ GFR ลดเล็กน้อย",
    "image": null,
    "issues": [
     "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
    ],
    "option_why": {
-    "A": "Pressure จะลด ไม่เพิ่ม",
-    "B": "Afferent constriction เกิดกับ NSAID",
-    "C": "✓ Efferent vasodilation ลด pressure",
-    "D": "RPF ไม่ใช่สาเหตุหลัก"
+    "A": "ความดัน intraglomerular ลดลงไม่ใช่เพิ่ม",
+    "B": "Afferent constriction เกิดจาก NSAID",
+    "C": "✓ Efferent dilation → ความดันใน glomerulus ลด",
+    "D": "RPF ไม่ใช่สาเหตุหลักของ GFR ลดใน ACEI"
    },
-   "key_concept": "• ACEI: efferent dilation\n• สรุป: ACEI ขยาย efferent arteriole ทำให้ intraglomerular pressure ลดและ GFR ลด",
+   "key_concept": "• Angiotensin II หด efferent; ACEI/ARB ขยาย efferent → GFR ↓\n• NSAID หด afferent → GFR ↓",
+   "mechanism": [
+    "ACEI ลด angiotensin II",
+    {
+     "s": "Efferent arteriole ขยาย",
+     "answer": true
+    },
+    "ความดันใน glomerulus ลด GFR ลด"
+   ],
    "audit": {
     "source_file": "preclinic/3/integrated/mcq/ข้อสอบ mcq/MCQ_Integrate [Med PSU 50].pdf",
     "page": 3,
@@ -512,16 +570,16 @@
     "E": ""
    },
    "correct": "A",
-   "explanation": "Diabetic nephropathy: nodular Kimmelstiel–Wilson glomerulosclerosis",
+   "explanation": "Diabetic nephropathy พบ nodular glomerulosclerosis (Kimmelstiel–Wilson) และโปรตีนในปัสสาวะมาก",
    "image": null,
    "issues": [
     "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
    ],
    "option_why": {
-    "A": "✓ Kimmelstiel–Wilson nodules",
-    "B": "Crescent: RPGN"
+    "A": "✓ Kimmelstiel–Wilson nodule เป็นลักษณะคลาสสิกของ DM",
+    "B": "Crescent พบใน RPGN"
    },
-   "key_concept": "• DN: KW nodules\n• สรุป: Diabetic nephropathy: nodular Kimmelstiel–Wilson glomerulosclerosis",
+   "key_concept": "• DM: mesangial expansion, nodular sclerosis, thick GBM\n• Crescent: RPGN (anti-GBM, ANCA)",
    "audit": {
     "source_file": "preclinic/3/integrated/mcq/ข้อสอบ mcq/MCQ_Integrate [Med PSU 50].pdf",
     "page": 3,
@@ -560,19 +618,27 @@
     "E": "Stimulation of dopamine receptors"
    },
    "correct": "B",
-   "explanation": "อาการ muscarinic จากยับยั้ง acetylcholinesterase (organophosphate) ACh สะสม",
+   "explanation": "น้ำลาย น้ำตา ปวดท้อง จาก muscarinic overstimulation เพราะยับยั้ง acetylcholinesterase (organophosphate)",
    "image": null,
    "issues": [
     "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
    ],
    "option_why": {
-    "A": "Sympathetic inhibition: ไม่ทำให้น้ำลายมาก",
-    "B": "✓ AChE inhibition: ACh สะสม",
-    "C": "β agonist: ไม่ใช่ muscarinic",
-    "D": "Muscarinic blockade: ปากแห้ง",
-    "E": "Dopamine: ไม่เกี่ยว"
+    "A": "Sympathetic inhibition ไม่ทำให้น้ำลายมาก",
+    "B": "✓ AChE inhibition ทำให้ ACh สะสมกระตุ้น muscarinic",
+    "C": "β-agonist ไม่ใช่อาการ muscarinic",
+    "D": "Muscarinic blockade ทำให้ปากแห้ง",
+    "E": "Dopamine ไม่เกี่ยว"
    },
-   "key_concept": "• OP poisoning: AChE inhibition\n• สรุป: อาการ muscarinic จากยับยั้ง acetylcholinesterase (organophosphate) ACh สะสม",
+   "key_concept": "• OP: SLUDGE (salivation, lacrimation, urination, defecation, GI, emesis)\n• รักษา: atropine + pralidoxime",
+   "mechanism": [
+    "Organophosphate ยับยั้ง AChE",
+    {
+     "s": "ACh สะสมที่ synapse",
+     "answer": true
+    },
+    "Muscarinic stimulation: น้ำลาย น้ำตา ปวดท้อง"
+   ],
    "audit": {
     "source_file": "preclinic/3/integrated/mcq/ข้อสอบ mcq/MCQ_Integrate [Med PSU 50].pdf",
     "page": 4,
@@ -611,19 +677,27 @@
     "E": "Vitamin C"
    },
    "correct": "A",
-   "explanation": "Wernicke–Korsakoff เกิดจากขาด thiamine (B1)",
+   "explanation": "Wernicke–Korsakoff เกิดจากขาด thiamine (vitamin B₁) ในผู้ติดสุรา",
    "image": null,
    "issues": [
     "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
    ],
    "option_why": {
-    "A": "✓ Thiamine ตรงกับ Wernicke",
-    "B": "B6: neuropathy",
-    "C": "Folate: megaloblastic",
-    "D": "B12: subacute combined degeneration",
-    "E": "Vit C: scurvy"
+    "A": "✓ Thiamine (B₁) ขาดทำให้ ophthalmoplegia ataxia confusion",
+    "B": "B₆ ขาดทำให้ neuropathy/ชัก",
+    "C": "Folate ขาดทำให้ megaloblastic anemia",
+    "D": "B₁₂ ขาดทำให้ subacute combined degeneration",
+    "E": "Vitamin C ขาดทำให้ scurvy"
    },
-   "key_concept": "• Wernicke: B1\n• สรุป: Wernicke–Korsakoff เกิดจากขาด thiamine (B1)",
+   "key_concept": "• Wernicke triad: ophthalmoplegia, ataxia, confusion\n• ให้ thiamine ก่อนให้ glucose",
+   "mechanism": [
+    "ผู้ติดสุราขาด thiamine",
+    {
+     "s": "Pyruvate dehydrogenase/transketolase ทำงานไม่ได้",
+     "answer": true
+    },
+    "พลังงานเซลล์ประสาท (mammillary body) บกพร่อง"
+   ],
    "audit": {
     "source_file": "preclinic/3/integrated/mcq/ข้อสอบ mcq/MCQ_Integrate [Med PSU 50].pdf",
     "page": 4,
@@ -662,16 +736,16 @@
     "E": ""
    },
    "correct": "A",
-   "explanation": "Congruent homonymous hemianopia บ่งชี้รอยโรคหลัง chiasm โดยเฉพาะ optic radiation",
+   "explanation": "Congruent homonymous hemianopia จากรอยโรคหลัง optic chiasm โดยเฉพาะ optic radiation",
    "image": null,
    "issues": [
     "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
    ],
    "option_why": {
-    "A": "✓ Optic radiation ทำ hemianopia ตรงข้าม",
-    "B": "Chiasm: bitemporal hemianopia"
+    "A": "✓ Optic radiation หลัง chiasm ทำให้เห็นครึ่งซีกเดียวกันทั้งสองตา",
+    "B": "Chiasm ทำให้ bitemporal hemianopia"
    },
-   "key_concept": "• Retrochiasmal: homonymous\n• สรุป: Congruent homonymous hemianopia บ่งชี้รอยโรคหลัง chiasm โดยเฉพาะ optic radiation",
+   "key_concept": "• รอยโรคก่อน chiasm: monocular, chiasm: bitemporal, หลัง chiasm: homonymous\n• Congruent มากขึ้นเมื่อรอยโรคไปทาง occipital",
    "audit": {
     "source_file": "preclinic/3/integrated/mcq/ข้อสอบ mcq/MCQ_Integrate [Med PSU 50].pdf",
     "page": 4,
@@ -710,19 +784,19 @@
     "E": "Natural killer cells"
    },
    "correct": "A",
-   "explanation": "2 สัปดาห์หลัง MI เซลล์เด่นคือ macrophage (granulation tissue)",
+   "explanation": "หลัง MI 1–2 สัปดาห์ macrophage เด่นกำจัดเซลล์ตายและเข้าสู่ระยะ granulation",
    "image": null,
    "issues": [
     "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
    ],
    "option_why": {
-    "A": "✓ Macrophage เด่นใน 1–2 สัปดาห์",
+    "A": "✓ Macrophage เด่นช่วง 7–14 วัน",
     "B": "Neutrophil เด่น 1–3 วัน",
-    "C": "Eosinophil: ไม่ใช่",
-    "D": "Epithelioid: granuloma",
-    "E": "NK: ไม่ใช่"
+    "C": "Eosinophil ไม่ใช่เซลล์เด่น",
+    "D": "Epithelioid cell พบใน granuloma",
+    "E": "NK cell ไม่ใช่เซลล์เด่น"
    },
-   "key_concept": "• MI day 7–14: macrophage/granulation\n• สรุป: 2 สัปดาห์หลัง MI เซลล์เด่นคือ macrophage (granulation tissue)",
+   "key_concept": "• MI: 0–1d coagulative necrosis, 1–3d neutrophil, 3–7d macrophage, 1–2wk granulation, >2mo scar\n• Rupture เสี่ยงที่ 3–7 วัน",
    "audit": {
     "source_file": "preclinic/3/integrated/mcq/ข้อสอบ mcq/MCQ_Integrate [Med PSU 50].pdf",
     "page": 4,
@@ -761,19 +835,27 @@
     "E": "Dysplasia"
    },
    "correct": "C",
-   "explanation": "Hypertension ทำให้ myocyte โตขึ้น (hypertrophy) เพราะเซลล์หัวใจแบ่งตัวไม่ได้",
+   "explanation": "ความดันสูงเรื้อรังทำให้ myocyte โตขึ้น (hypertrophy) เพราะเซลล์กล้ามเนื้อหัวใจแบ่งตัวไม่ได้",
    "image": null,
    "issues": [
     "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
    ],
    "option_why": {
-    "A": "Hyperplasia: myocyte ไม่แบ่ง",
-    "B": "Atrophy: ลดขนาด",
-    "C": "✓ Hypertrophy: เพิ่มขนาด",
-    "D": "Metaplasia: เปลี่ยนชนิดเซลล์",
-    "E": "Dysplasia: ผิดปกติของรูปร่าง"
+    "A": "Hyperplasia ไม่เกิดใน myocyte ผู้ใหญ่",
+    "B": "Atrophy คือเซลล์เล็กลง",
+    "C": "✓ Hypertrophy เป็นการปรับตัวต่อ afterload",
+    "D": "Metaplasia คือเปลี่ยนชนิดเซลล์",
+    "E": "Dysplasia คือเซลล์ผิดปกติ"
    },
-   "key_concept": "• LVH: myocyte hypertrophy\n• สรุป: Hypertension ทำให้ myocyte โตขึ้น (hypertrophy) เพราะเซลล์หัวใจแบ่งตัวไม่ได้",
+   "key_concept": "• Pressure overload → concentric LVH\n• Volume overload → eccentric hypertrophy",
+   "mechanism": [
+    "ความดันสูงเรื้อรัง (afterload ↑)",
+    {
+     "s": "Myocyte สร้าง sarcomere เพิ่ม โตขึ้น",
+     "answer": true
+    },
+    "ผนัง LV หนาแบบ concentric"
+   ],
    "audit": {
     "source_file": "preclinic/3/integrated/mcq/ข้อสอบ mcq/MCQ_Integrate [Med PSU 50].pdf",
     "page": 4,
@@ -812,19 +894,27 @@
     "E": "Biliary epithelial cell"
    },
    "correct": "A",
-   "explanation": "Hepatic stellate (Ito) cell สร้างคอลลาเจนในตับแข็ง",
+   "explanation": "Hepatic stellate (Ito) cell เปลี่ยนเป็น myofibroblast สร้าง collagen ทำให้ตับแข็งและ portal hypertension",
    "image": null,
    "issues": [
     "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
    ],
    "option_why": {
-    "A": "✓ Stellate cell → fibrogenesis",
-    "B": "Kupffer: macrophage",
-    "C": "Endothelium: capillarization",
-    "D": "Hepatocyte: ตาย",
-    "E": "Biliary epithelium: ไม่ใช่"
+    "A": "✓ Stellate cell เป็นเซลล์หลักของ fibrogenesis",
+    "B": "Kupffer cell เป็น macrophage ปล่อย cytokine",
+    "C": "Sinusoidal endothelium เกิด capillarization",
+    "D": "Hepatocyte ตายและสร้างใหม่",
+    "E": "Biliary epithelium เกี่ยวกับ cholestasis"
    },
-   "key_concept": "• Cirrhosis: stellate cells\n• สรุป: Hepatic stellate (Ito) cell สร้างคอลลาเจนในตับแข็ง",
+   "key_concept": "• Stellate cell: เก็บ vitamin A เมื่อพัก, กลายเป็น myofibroblast เมื่อกระตุ้น\n• Cirrhosis: fibrosis + regenerative nodule",
+   "mechanism": [
+    "เซลล์ตับบาดเจ็บ/อักเสบเรื้อรัง",
+    {
+     "s": "Stellate cell กระตุ้นกลายเป็น myofibroblast",
+     "answer": true
+    },
+    "สร้าง collagen มาก เกิด fibrosis และ portal hypertension"
+   ],
    "audit": {
     "source_file": "preclinic/3/integrated/mcq/ข้อสอบ mcq/MCQ_Integrate [Med PSU 50].pdf",
     "page": 5,
@@ -906,16 +996,16 @@
     "E": ""
    },
    "correct": "B",
-   "explanation": "ตับม้ามโต ผื่นฝ่ามือฝ่าเท้า และรอยโรครอบปากคือ congenital syphilis",
+   "explanation": "ตับม้ามโต ผื่นรอบปากและฝ่ามือฝ่าเท้าในทารก คือ congenital syphilis",
    "image": null,
    "issues": [
     "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
    ],
    "option_why": {
-    "A": "CMV: microcephaly, petechiae",
-    "B": "✓ Syphilis: rhagades, palms/soles rash"
+    "A": "CMV: microcephaly, petechiae, ตับม้ามโต แต่ไม่มีผื่นฝ่ามือฝ่าเท้า",
+    "B": "✓ Syphilis ก่อผื่นฝ่ามือฝ่าเท้า รอยแตกรอบปาก (rhagades)"
    },
-   "key_concept": "• Congenital syphilis: palm/sole rash\n• สรุป: ตับม้ามโต ผื่นฝ่ามือฝ่าเท้า และรอยโรครอบปากคือ congenital syphilis",
+   "key_concept": "• Congenital syphilis: snuffles, rhagades, hepatosplenomegaly, ผื่นฝ่ามือฝ่าเท้า\n• Hutchinson teeth, saddle nose",
    "audit": {
     "source_file": "preclinic/3/integrated/mcq/ข้อสอบ mcq/MCQ_Integrate [Med PSU 50].pdf",
     "page": 5,
@@ -954,19 +1044,19 @@
     "E": "T1–T2"
    },
    "correct": "A",
-   "explanation": "Waiter’s tip จาก Erb palsy ราก C5–C6",
+   "explanation": "Waiter’s tip จาก upper brachial plexus injury (Erb palsy) ที่ราก C5–C6",
    "image": null,
    "issues": [
     "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
    ],
    "option_why": {
-    "A": "✓ C5–C6 (upper trunk)",
-    "B": "C7–C8",
-    "C": "C8–T1 Klumpke",
-    "D": "C3–C4 phrenic",
-    "E": "T1–T2"
+    "A": "✓ C5–C6 (upper trunk) ทำให้ไหล่หมุนเข้าใน ศอกเหยียด",
+    "B": "C7–C8 ทำให้ขาดการเหยียดนิ้ว/ข้อมือ",
+    "C": "C8–T1 คือ Klumpke (claw hand)",
+    "D": "C3–C4 เป็น phrenic nerve",
+    "E": "T1–T2 ไม่ใช่ brachial plexus ส่วนบน"
    },
-   "key_concept": "• Erb: C5–C6\n• สรุป: Waiter’s tip จาก Erb palsy ราก C5–C6",
+   "key_concept": "• Erb: C5–C6 (waiter’s tip), Klumpke: C8–T1 (claw hand)\n• พบในทารกคลอดยาก",
    "audit": {
     "source_file": "preclinic/3/integrated/mcq/ข้อสอบ mcq/MCQ_Integrate [Med PSU 50].pdf",
     "page": 5,
@@ -1005,17 +1095,17 @@
     "E": ""
    },
    "correct": "B",
-   "explanation": "กระเพาะเหี่ยวแข็ง cobblestone จาก linitis plastica (diffuse signet-ring)",
+   "explanation": "กระเพาะเหี่ยวแข็งและผิว cobblestone คือ linitis plastica จาก diffuse signet-ring adenocarcinoma (AI ตอบ)",
    "image": null,
    "issues": [
     "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
    ],
    "option_why": {
-    "A": "Atrophic gastritis: ไม่เหี่ยวแข็ง",
-    "B": "✓ Linitis plastica: ผนังแข็งหดตัว",
-    "C": "MALT lymphoma: ก้อน/ulcer"
+    "A": "Atrophic gastritis ผนังบางแต่ไม่แข็ง",
+    "B": "✓ Linitis plastica ผนังแข็งหนา กระเพาะหด",
+    "C": "MALT lymphoma เป็นก้อน/แผลตื้น"
    },
-   "key_concept": "• Linitis plastica\n• สรุป: กระเพาะเหี่ยวแข็ง cobblestone จาก linitis plastica (diffuse signet-ring)",
+   "key_concept": "• Diffuse gastric cancer: signet ring, E-cadherin loss\n• Linitis plastica = leather-bottle stomach",
    "audit": {
     "source_file": "preclinic/3/integrated/mcq/ข้อสอบ mcq/MCQ_Integrate [Med PSU 50].pdf",
     "page": 5,
@@ -1054,16 +1144,16 @@
     "E": ""
    },
    "correct": "A",
-   "explanation": "Rapid urease (CLO) test ได้ผลเร็วที่สุดระหว่างส่องกล้อง",
+   "explanation": "Rapid urease (CLO) test ให้ผลเร็วขณะส่องกล้อง",
    "image": null,
    "issues": [
     "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
    ],
    "option_why": {
-    "A": "✓ CLO: ผลใน 1–24 ชม.",
-    "B": "Biopsy histology/culture ช้ากว่า"
+    "A": "✓ CLO test ให้ผลใน 1–24 ชั่วโมง",
+    "B": "Histology/culture ใช้เวลานานกว่า"
    },
-   "key_concept": "• H. pylori: rapid urease test\n• สรุป: Rapid urease (CLO) test ได้ผลเร็วที่สุดระหว่างส่องกล้อง",
+   "key_concept": "• H. pylori: urease breath test, stool Ag, CLO test\n• Culture ไวต่อยาปฏิชีวนะแต่ช้า",
    "audit": {
     "source_file": "preclinic/3/integrated/mcq/ข้อสอบ mcq/MCQ_Integrate [Med PSU 50].pdf",
     "page": 6,
@@ -1102,17 +1192,25 @@
     "E": ""
    },
    "correct": "A",
-   "explanation": "Lactase deficiency ทำให้ osmotic diarrhea หลังดื่มนม",
+   "explanation": "ขาด lactase ทำให้ lactose ตกค้างในลำไส้ ดึงน้ำเข้า (osmotic diarrhea)",
    "image": null,
    "issues": [
     "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
    ],
    "option_why": {
-    "A": "✓ Lactase: lactose",
-    "B": "Sucrase: sucrose",
-    "C": "Aminopeptidase: peptides"
+    "A": "✓ Lactase ย่อย lactose ในนม",
+    "B": "Sucrase ย่อย sucrose",
+    "C": "Aminopeptidase ย่อยเปปไทด์"
    },
-   "key_concept": "• Lactose intolerance\n• สรุป: Lactase deficiency ทำให้ osmotic diarrhea หลังดื่มนม",
+   "key_concept": "• Lactose intolerance: ท้องเสียหลังดื่มนม\n• Osmotic diarrhea หยุดเมื่ออดอาหาร",
+   "mechanism": [
+    "ขาด lactase ที่ brush border",
+    {
+     "s": "Lactose ไม่ถูกย่อยค้างในลำไส้",
+     "answer": true
+    },
+    "ดึงน้ำเข้า ท้องเสีย ท้องอืด"
+   ],
    "audit": {
     "source_file": "preclinic/3/integrated/mcq/ข้อสอบ mcq/MCQ_Integrate [Med PSU 50].pdf",
     "page": 6,
@@ -1151,19 +1249,27 @@
     "E": "Increased antibody affinity (affinity maturation) with higher avidity and higher antibody titers"
    },
    "correct": "E",
-   "explanation": "หลัง booster เกิด affinity maturation และ antibody สูงขึ้น",
+   "explanation": "หลัง booster เกิด affinity maturation ทำให้แอนติบอดีมี affinity สูงขึ้นและมีปริมาณมาก",
    "image": null,
    "issues": [
     "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
    ],
    "option_why": {
-    "A": "Specificity ไม่เปลี่ยนมาก",
-    "B": "Affinity ต้องเพิ่ม",
-    "C": "IgE class switch: allergy",
-    "D": "Antibody level เพิ่ม",
-    "E": "✓ Affinity maturation + ปริมาณมากขึ้น"
+    "A": "Specificity ไม่ใช่สิ่งที่เปลี่ยนมาก",
+    "B": "Affinity เพิ่มไม่ใช่ลด",
+    "C": "IgE class switch พบในภูมิแพ้",
+    "D": "ระดับแอนติบอดีเพิ่มไม่ใช่ลด",
+    "E": "✓ Affinity maturation ด้วย somatic hypermutation"
    },
-   "key_concept": "• Secondary response: affinity maturation\n• สรุป: หลัง booster เกิด affinity maturation และ antibody สูงขึ้น",
+   "key_concept": "• Secondary response: เร็ว แรง IgG ↑ affinity ↑\n• Germinal center: SHM + class switching",
+   "mechanism": [
+    "วัคซีนครั้งแรกกระตุ้น memory B cell",
+    {
+     "s": "Booster กระตุ้น B cell ใน germinal center ทำ somatic hypermutation",
+     "answer": true
+    },
+    "แอนติบอดีมี affinity และปริมาณสูงขึ้น"
+   ],
    "audit": {
     "source_file": "preclinic/3/integrated/mcq/ข้อสอบ mcq/MCQ_Integrate [Med PSU 50].pdf",
     "page": 6,
@@ -1202,18 +1308,26 @@
     "E": ""
    },
    "correct": "A",
-   "explanation": "Rheumatic heart disease เกิดจาก molecular mimicry ของ antibody ต่อ M protein ข้ามกับ cardiac antigen",
+   "explanation": "Rheumatic heart disease เกิดจาก molecular mimicry แอนติบอดีต่อ M protein ของ GAS ข้ามกับ antigen หัวใจ",
    "image": null,
    "issues": [
     "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
    ],
    "option_why": {
-    "A": "✓ Molecular mimicry (type II)",
-    "B": "Immune complex: ไม่ใช่หลัก",
-    "C": "Direct infection: ไม่ใช่",
-    "D": "Complement ไม่ใช่ primary lesion"
+    "A": "✓ Cross-reactive antibody (type II hypersensitivity)",
+    "B": "Immune complex ไม่ใช่กลไกหลักของ RHD",
+    "C": "ไม่ใช่การติดเชื้อโดยตรงที่ลิ้นหัวใจ",
+    "D": "Complement เป็นผลพวง"
    },
-   "key_concept": "• RHD: molecular mimicry\n• สรุป: Rheumatic heart disease เกิดจาก molecular mimicry ของ antibody ต่อ M protein ข้ามกับ cardi",
+   "key_concept": "• RHD: GAS pharyngitis → mimicry → carditis, Aschoff body\n• Jones criteria",
+   "mechanism": [
+    "GAS คอหอยอักเสบ",
+    {
+     "s": "แอนติบอดีต่อ M protein จับ antigen หัวใจ",
+     "answer": true
+    },
+    "อักเสบที่ลิ้นหัวใจ ไมโอคาร์เดียม"
+   ],
    "audit": {
     "source_file": "preclinic/3/integrated/mcq/ข้อสอบ mcq/MCQ_Integrate [Med PSU 50].pdf",
     "page": 6,
@@ -1252,16 +1366,16 @@
     "E": ""
    },
    "correct": "A",
-   "explanation": "CD8+ T cell รับ peptide บน MHC class I",
+   "explanation": "CD8⁺ T cell รู้จัก peptide บน MHC class I",
    "image": null,
    "issues": [
     "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
    ],
    "option_why": {
-    "A": "✓ MHC I ↔ CD8",
-    "B": "MHC II ↔ CD4"
+    "A": "✓ MHC I มีที่ทุกเซลล์มีนิวเคลียส จับ CD8",
+    "B": "MHC II แสดงบน APC จับ CD4"
    },
-   "key_concept": "• MHC I: CD8\n• สรุป: CD8+ T cell รับ peptide บน MHC class I",
+   "key_concept": "• MHC I × CD8 = 8\n• MHC II × CD4 = 8 (2×4)",
    "audit": {
     "source_file": "preclinic/3/integrated/mcq/ข้อสอบ mcq/MCQ_Integrate [Med PSU 50].pdf",
     "page": 6,
@@ -1300,18 +1414,18 @@
     "E": ""
    },
    "correct": "B",
-   "explanation": "OA สะโพกใน x-ray พบ osteophyte (ร่วมกับ joint space narrowing, sclerosis)",
+   "explanation": "OA ที่สะโพกใน x-ray เห็น osteophyte (ร่วมกับช่องข้อแคบและ subchondral sclerosis)",
    "image": null,
    "issues": [
     "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
    ],
    "option_why": {
-    "A": "Head collapse: AVN",
-    "B": "✓ Osteophyte: ลักษณะ OA",
-    "C": "Irregular surface: RA/อักเสบ",
-    "D": "Heterogeneous: ไม่เฉพาะ"
+    "A": "Head collapse เป็นของ AVN",
+    "B": "✓ Osteophyte เป็นลักษณะ OA",
+    "C": "Irregular surface เป็นของข้ออักเสบ",
+    "D": "Heterogeneous ไม่เฉพาะ OA"
    },
-   "key_concept": "• OA: osteophyte\n• สรุป: OA สะโพกใน x-ray พบ osteophyte (ร่วมกับ joint space narrowing, sclerosis)",
+   "key_concept": "• OA x-ray: joint space narrowing, osteophyte, sclerosis, subchondral cyst\n• RA: erosion, osteopenia รอบข้อ",
    "audit": {
     "source_file": "preclinic/3/integrated/mcq/ข้อสอบ mcq/MCQ_Integrate [Med PSU 50].pdf",
     "page": 7,
@@ -1350,18 +1464,18 @@
     "E": ""
    },
    "correct": "B",
-   "explanation": "OA เข่า quadriceps ฝ่อ เริ่มออกกำลังแบบไม่กดข้อด้วย straight leg raise",
+   "explanation": "OA เข่าที่ quadriceps ฝ่อ เริ่มด้วย straight leg raise ไม่ลงน้ำหนักบนข้อ",
    "image": null,
    "issues": [
     "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
    ],
    "option_why": {
-    "A": "Semi-squat รับน้ำหนักข้อมาก",
-    "B": "✓ Straight leg raise เสริม quadriceps โดยไม่ลงน้ำหนัก",
-    "C": "Knee to chest เพิ่ม flexion",
-    "D": "Side step ไม่ใช่ quadriceps"
+    "A": "Semi-squat ลงน้ำหนักบนข้อมาก",
+    "B": "✓ Straight leg raise เสริมกล้าม quadriceps โดยไม่กดข้อ",
+    "C": "Knee to chest เพิ่มการงอข้อ",
+    "D": "Side step ไม่เน้น quadriceps"
    },
-   "key_concept": "• OA knee: SLR\n• สรุป: OA เข่า quadriceps ฝ่อ เริ่มออกกำลังแบบไม่กดข้อด้วย straight leg raise",
+   "key_concept": "• OA เข่า: ออกกำลัง quadriceps แบบไม่ลงน้ำหนัก\n• ลดน้ำหนักช่วยลดแรงบนข้อ",
    "audit": {
     "source_file": "preclinic/3/integrated/mcq/ข้อสอบ mcq/MCQ_Integrate [Med PSU 50].pdf",
     "page": 7,
@@ -1400,19 +1514,19 @@
     "E": "Extensor digitorum brevis"
    },
    "correct": "B",
-   "explanation": "de Quervain tenosynovitis เกี่ยวกับ APL และ EPB (first dorsal compartment)",
+   "explanation": "de Quervain tenosynovitis เกี่ยวข้องกับ APL และ EPB ใน first dorsal compartment",
    "image": null,
    "issues": [
     "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
    ],
    "option_why": {
-    "A": "APB: thenar muscle",
+    "A": "APB เป็นกล้ามเนื้อ thenar ไม่ใช่ compartment แรก",
     "B": "✓ APL อยู่ใน first dorsal compartment",
-    "C": "EPL: third compartment",
-    "D": "FCR: ด้านหน้า",
-    "E": "Extensor digitorum brevis: ที่เท้า"
+    "C": "EPL อยู่ใน third compartment",
+    "D": "FCR อยู่ด้านหน้าข้อมือ",
+    "E": "EDB อยู่ที่เท้า"
    },
-   "key_concept": "• de Quervain: APL + EPB\n• สรุป: de Quervain tenosynovitis เกี่ยวกับ APL และ EPB (first dorsal compartment)",
+   "key_concept": "• de Quervain: APL + EPB, Finkelstein test\n• พบในแม่หลังคลอด",
    "audit": {
     "source_file": "preclinic/3/integrated/mcq/ข้อสอบ mcq/MCQ_Integrate [Med PSU 50].pdf",
     "page": 7,
@@ -1500,11 +1614,19 @@
     "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
    ],
    "option_why": {
-    "A": "Norepinephrine: ไม่ใช่ first-line",
-    "B": "✓ Epinephrine: first-line anaphylaxis",
-    "C": "Dobutamine: ไม่ใช่"
+    "A": "Norepinephrine ไม่ใช่ first-line",
+    "B": "✓ Epinephrine IM ลด bronchospasm และเพิ่ม BP",
+    "C": "Dobutamine ไม่ใช่ยาหลัก"
    },
-   "key_concept": "• Anaphylaxis: epinephrine IM\n• สรุป: Anaphylaxis ให้ epinephrine IM เป็นอันดับแรก",
+   "key_concept": "• Anaphylaxis: epinephrine IM 0.3–0.5 mg ต้นขา\n• ตามด้วย antihistamine/steroid เป็นการรักษาเสริม",
+   "mechanism": [
+    "สัมผัสสารแพ้ (IgE-mediated)",
+    {
+     "s": "Epinephrine จับ α/β receptor ขยายหลอดลมและเพิ่มความดัน",
+     "answer": true
+    },
+    "อาการ shock/บวมหลอดลมดีขึ้น"
+   ],
    "audit": {
     "source_file": "preclinic/3/integrated/mcq/ข้อสอบ mcq/MCQ_Integrate [Med PSU 50].pdf",
     "page": 7,
@@ -1543,16 +1665,24 @@
     "E": ""
    },
    "correct": "B",
-   "explanation": "RA ร่วมกับ anemia ที่ TIBC ปกติหรือต่ำ คือ anemia of inflammation (chronic disease)",
+   "explanation": "RA ที่ซีดและ TIBC ปกติ/ต่ำ คือ anemia of inflammation (hepcidin สูง)",
    "image": null,
    "issues": [
     "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
    ],
    "option_why": {
-    "A": "IDA: TIBC สูง",
-    "B": "✓ Anemia of inflammation: hepcidin ↑ TIBC ปกติ/ต่ำ"
+    "A": "IDA มี TIBC สูง",
+    "B": "✓ ACD: hepcidin ↑ เก็บเหล็กใน macrophage TIBC ปกติ/ต่ำ"
    },
-   "key_concept": "• ACD: TIBC low-normal\n• สรุป: RA ร่วมกับ anemia ที่ TIBC ปกติหรือต่ำ คือ anemia of inflammation (chronic disease)",
+   "key_concept": "• ACD: ferritin ↑ TIBC ↓ iron ↓\n• IDA: ferritin ↓ TIBC ↑",
+   "mechanism": [
+    "การอักเสบเรื้อรัง IL-6 สูง",
+    {
+     "s": "Hepcidin ↑ ปิดกั้น ferroportin",
+     "answer": true
+    },
+    "เหล็กไม่ถูกปล่อยจาก macrophage เกิดโลหิตจาง"
+   ],
    "audit": {
     "source_file": "preclinic/3/integrated/mcq/ข้อสอบ mcq/MCQ_Integrate [Med PSU 50].pdf",
     "page": 8,
