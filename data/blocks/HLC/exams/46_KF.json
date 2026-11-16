@@ -1,0 +1,725 @@
+{
+ "meta": {
+  "set_id": "46_KF",
+  "block": "HLC",
+  "cohort": 46,
+  "type": "KF",
+  "title": "KF Human Lifecycle · Med PSU 46",
+  "time_limit_min": 90,
+  "generated_by": "auditor/tools/build_kf.py from auditor/data/work/hlc_46_KF.kf.json — do not edit by hand"
+ },
+ "questions": [
+  {
+   "id": "HLC-46-KF-001",
+   "block": "HLC",
+   "cohort": 46,
+   "n": 1,
+   "type": "KF",
+   "case": "หญิงตั้งครรภ์ acute pyelonephritis",
+   "items": [
+    {
+     "id": "1.1",
+     "prompt": "การเปลี่ยนแปลงของ urinary system ที่เพิ่มโอกาสเป็นโรค",
+     "format": "short",
+     "accepted": [
+      "progesterone",
+      "stasis",
+      "dilation"
+     ],
+     "keywords_all": [
+      "progesterone"
+     ],
+     "key_text": "Progesterone ทำให้ smooth muscle ของ ureter คลาย ร่วมกับมดลูกกด → hydroureter/ureteral dilation → urinary stasis, vesicoureteral reflux, glycosuria → เสี่ยงติดเชื้อ",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    },
+    {
+     "id": "1.2",
+     "prompt": "ต้องเพิ่มขนาดยาเพราะการเปลี่ยนแปลงใด",
+     "format": "short",
+     "accepted": [
+      "gfr",
+      "renal blood flow",
+      "volume"
+     ],
+     "keywords_all": [
+      "gfr"
+     ],
+     "key_text": "↑ cardiac output → ↑ GFR/renal blood flow ทำให้ขับยาเร็วขึ้น · ↑ blood volume (Vd เพิ่ม) · ↑ hepatic metabolism",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "KF46",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [
+    "pregnancy"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "HLC-46-KF-002",
+   "block": "HLC",
+   "cohort": 46,
+   "n": 2,
+   "type": "KF",
+   "case": "SLE วางแผนมีบุตร (Prednisolone, Hydroxychloroquine, Mycophenolate) และ US ที่ครรภ์ 2 เดือน",
+   "items": [
+    {
+     "id": "2.1.1",
+     "prompt": "ยาใดไม่สามารถใช้ในระหว่างตั้งครรภ์",
+     "format": "short",
+     "accepted": [
+      "mycophenolate"
+     ],
+     "keywords_all": [
+      "mycophenolate"
+     ],
+     "key_text": "Mycophenolate mofetil",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    },
+    {
+     "id": "2.1.2",
+     "prompt": "ผลต่อการตั้งครรภ์",
+     "format": "short",
+     "accepted": [
+      "แท้ง",
+      "teratogen"
+     ],
+     "keywords_all": [
+      "แท้ง"
+     ],
+     "key_text": "Teratogenic: แท้ง และความพิการแต่กำเนิด (ปากแหว่งเพดานโหว่ หู หัวใจ)",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    },
+    {
+     "id": "2.2.1",
+     "prompt": "อายุครรภ์จาก US (gestational sac + yolk sac + fetal heart beat)",
+     "format": "short",
+     "accepted": [
+      "8"
+     ],
+     "keywords_all": [
+      "8"
+     ],
+     "key_text": "~8 weeks",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    },
+    {
+     "id": "2.2.2",
+     "prompt": "ตรวจความพิการด้วย US ได้เมื่อ",
+     "format": "short",
+     "accepted": [
+      "18",
+      "22"
+     ],
+     "keywords_all": [
+      "18"
+     ],
+     "key_text": "~18–22 weeks (anomaly scan)",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    },
+    {
+     "id": "2.2.3",
+     "prompt": "พบ VSD แนะนำตรวจโครโมโซมด้วยวิธีใด",
+     "format": "short",
+     "accepted": [
+      "amniocentesis"
+     ],
+     "keywords_all": [
+      "amniocentesis"
+     ],
+     "key_text": "Amniocentesis (karyotype/microarray)",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "KF46",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [
+    "pharm"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "HLC-46-KF-003",
+   "block": "HLC",
+   "cohort": 46,
+   "n": 3,
+   "type": "KF",
+   "case": "ตั้งครรภ์ 12 wk SLE ใช้ Prednisolone, Hydroxychloroquine, Cyclophosphamide, Enalapril",
+   "items": [
+    {
+     "id": "3.1",
+     "prompt": "ควรงดยาอะไร",
+     "format": "short",
+     "accepted": [
+      "cyclophosphamide",
+      "enalapril"
+     ],
+     "keywords_all": [
+      "cyclophosphamide"
+     ],
+     "key_text": "Cyclophosphamide และ Enalapril",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    },
+    {
+     "id": "3.2",
+     "prompt": "เพราะอะไร",
+     "format": "short",
+     "accepted": [
+      "teratogen",
+      "renal"
+     ],
+     "keywords_all": [
+      "teratogen"
+     ],
+     "key_text": "Cyclophosphamide: teratogen (anomalies, แท้ง) · Enalapril: neonatal renal failure, oligohydramnios, skull hypoplasia",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    },
+    {
+     "id": "3.3",
+     "prompt": "เปลี่ยนเป็นยาอะไร",
+     "format": "short",
+     "accepted": [
+      "azathioprine",
+      "labetalol"
+     ],
+     "keywords_all": [
+      "azathioprine"
+     ],
+     "key_text": "Azathioprine (immunosuppressant ปลอดภัย) และ Labetalol/Methyldopa/Nifedipine สำหรับความดัน",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "KF46",
+     "pages": [
+      4
+     ]
+    }
+   ],
+   "tags": [
+    "pharm"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "HLC-46-KF-004",
+   "block": "HLC",
+   "cohort": 46,
+   "n": 4,
+   "type": "KF",
+   "case": "เด็ก 1 ขวบ 10 kg Acetaminophen 120 mg/5 mL",
+   "items": [
+    {
+     "id": "4.1",
+     "prompt": "Low dose",
+     "format": "short",
+     "accepted": [
+      "4.2"
+     ],
+     "keywords_all": [
+      "4.2"
+     ],
+     "key_text": "10 mg/kg/dose = 100 mg = 4.2 mL",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    },
+    {
+     "id": "4.2",
+     "prompt": "High dose",
+     "format": "short",
+     "accepted": [
+      "6.3"
+     ],
+     "keywords_all": [
+      "6.3"
+     ],
+     "key_text": "15 mg/kg/dose = 150 mg = 6.3 mL",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "KF46",
+     "pages": [
+      4
+     ]
+    }
+   ],
+   "tags": [
+    "pharm"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "HLC-46-KF-005",
+   "block": "HLC",
+   "cohort": 46,
+   "n": 5,
+   "type": "KF",
+   "case": "ทารกครบกำหนด 37 wk เปลี่ยนจาก intrauterine เป็น extrauterine เมื่อเริ่มหายใจ",
+   "items": [
+    {
+     "id": "5.1",
+     "prompt": "Oxygen ในเลือด",
+     "format": "short",
+     "accepted": [
+      "เพิ่ม"
+     ],
+     "keywords_all": [
+      "เพิ่ม"
+     ],
+     "key_text": "เพิ่มขึ้น",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    },
+    {
+     "id": "5.2",
+     "prompt": "Pulmonary vascular resistance",
+     "format": "short",
+     "accepted": [
+      "ลด"
+     ],
+     "keywords_all": [
+      "ลด"
+     ],
+     "key_text": "ลดลง",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    },
+    {
+     "id": "5.3",
+     "prompt": "Pulmonary artery pressure",
+     "format": "short",
+     "accepted": [
+      "ลด"
+     ],
+     "keywords_all": [
+      "ลด"
+     ],
+     "key_text": "ลดลง",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    },
+    {
+     "id": "5.4",
+     "prompt": "Systemic blood pressure",
+     "format": "short",
+     "accepted": [
+      "เพิ่ม"
+     ],
+     "keywords_all": [
+      "เพิ่ม"
+     ],
+     "key_text": "เพิ่มขึ้น (SVR เพิ่มเมื่อตัดสายสะดือ)",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    },
+    {
+     "id": "5.5",
+     "prompt": "เลือดออกจากปอดเข้าหัวใจห้อง",
+     "format": "short",
+     "accepted": [
+      "left atrium",
+      "pulmonary vein"
+     ],
+     "keywords_all": [
+      "left atrium"
+     ],
+     "key_text": "Left atrium ผ่าน pulmonary veins",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    },
+    {
+     "id": "5.6",
+     "prompt": "เลือดส่งไปเลี้ยงร่างกายทางห้อง",
+     "format": "short",
+     "accepted": [
+      "left ventricle",
+      "aorta"
+     ],
+     "keywords_all": [
+      "left ventricle"
+     ],
+     "key_text": "Left ventricle ผ่าน aorta",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "KF46",
+     "pages": [
+      5
+     ]
+    }
+   ],
+   "tags": [
+    "neonate"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "HLC-46-KF-006",
+   "block": "HLC",
+   "cohort": 46,
+   "n": 6,
+   "type": "KF",
+   "case": "รูปแบบการเลี้ยงดู 4 แบบ",
+   "items": [
+    {
+     "id": "6.1",
+     "prompt": "รูปแบบและลักษณะ",
+     "format": "short",
+     "accepted": [
+      "authoritative",
+      "authoritarian",
+      "permissive",
+      "neglectful"
+     ],
+     "keywords_all": [
+      "authoritative"
+     ],
+     "key_text": "Authoritative: คาดหวัง+อบอุ่น ให้เหตุผล · Authoritarian: เข้มงวด ควบคุม ขาดความอบอุ่น · Permissive: ตามใจ ขาดกฎ แต่อบอุ่น · Neglectful/Uninvolved: ไม่ใส่ใจ ทั้งกฎและความอบอุ่นต่ำ",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "KF46",
+     "pages": [
+      5
+     ]
+    }
+   ],
+   "tags": [
+    "psychology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "HLC-46-KF-007",
+   "block": "HLC",
+   "cohort": 46,
+   "n": 7,
+   "type": "KF",
+   "case": "พัฒนาการเด็กอายุ 1 ปี",
+   "items": [
+    {
+     "id": "7.1",
+     "prompt": "Gross motor",
+     "format": "short",
+     "accepted": [
+      "เกาะ"
+     ],
+     "keywords_all": [
+      "เกาะ"
+     ],
+     "key_text": "ยืนเกาะเดินเลาะ ยืนเองชั่วครู่ อาจเดินได้ตามที่เกาะ",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    },
+    {
+     "id": "7.2",
+     "prompt": "Fine motor",
+     "format": "short",
+     "accepted": [
+      "pincer"
+     ],
+     "keywords_all": [
+      "pincer"
+     ],
+     "key_text": "Pincer grasp หยิบของชิ้นเล็ก ปล่อยของเข้าภาชนะ",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    },
+    {
+     "id": "7.3",
+     "prompt": "Self-help",
+     "format": "short",
+     "accepted": [
+      "ถ้วย"
+     ],
+     "keywords_all": [
+      "ถ้วย"
+     ],
+     "key_text": "ดื่มถ้วยได้ ใช้มือหยิบอาหาร ช่วยแต่งตัว",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    },
+    {
+     "id": "7.4",
+     "prompt": "Receptive language",
+     "format": "short",
+     "accepted": [
+      "ทำตาม"
+     ],
+     "keywords_all": [
+      "ทำตาม"
+     ],
+     "key_text": "ทำตามคำสั่งง่ายๆ หันตามชื่อ",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    },
+    {
+     "id": "7.5",
+     "prompt": "Expressive language",
+     "format": "short",
+     "accepted": [
+      "พูด",
+      "ชี้"
+     ],
+     "keywords_all": [
+      "พูด"
+     ],
+     "key_text": "พูด 1–2 คำ (แม่ พ่อ) ชี้บอกความต้องการ",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    },
+    {
+     "id": "7.6",
+     "prompt": "การดูแลและป้องกันอุบัติเหตุ 2 ข้อ",
+     "format": "short",
+     "accepted": [
+      "สำลัก",
+      "น้ำ"
+     ],
+     "keywords_all": [
+      "สำลัก"
+     ],
+     "key_text": "เก็บของชิ้นเล็กป้องกันสำลัก · เฝ้าใกล้น้ำ/car seat หันหลัง/ที่กั้นบันได",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "KF46",
+     "pages": [
+      6
+     ]
+    }
+   ],
+   "tags": [
+    "pediatrics"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "HLC-46-KF-008",
+   "block": "HLC",
+   "cohort": 46,
+   "n": 8,
+   "type": "KF",
+   "case": "เด็กชาย 14 ปี สูง 148 cm (P10) หนัก 40 kg (P25) testicular volume 4 ml ไม่มีขนหัวหน่าว; แม่สูง 160 menarche 14 ปี พ่อสูง 175",
+   "items": [
+    {
+     "id": "8.1",
+     "prompt": "Percentile และ Tanner stage",
+     "format": "short",
+     "accepted": [
+      "p10",
+      "p25",
+      "stage ii"
+     ],
+     "keywords_all": [
+      "p10"
+     ],
+     "key_text": "ส่วนสูง P10 · น้ำหนัก P25 · Testicular Tanner stage II · Pubic Tanner stage I",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    },
+    {
+     "id": "8.2",
+     "prompt": "Midparental height",
+     "format": "short",
+     "accepted": [
+      "174"
+     ],
+     "keywords_all": [
+      "174"
+     ],
+     "key_text": "(160+175+13)/2 = 174 cm (±8)",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    },
+    {
+     "id": "8.3",
+     "prompt": "คาดการณ์ 2–3 ปีข้างหน้า",
+     "format": "short",
+     "accepted": [
+      "peak height",
+      "tanner iv",
+      "174"
+     ],
+     "keywords_all": [
+      "peak height"
+     ],
+     "key_text": "Constitutional delay of growth and puberty: ความสูงเพิ่มเร็ว ~8–10 cm/ปี peak height velocity ที่ Tanner IV (~อายุ 14–15 ปี) ขนาดอัณฑะและขนหัวหน่าวเข้าสู่ stage III–IV และสูงได้ใกล้ target ~174 cm",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "KF46",
+     "pages": [
+      7
+     ]
+    }
+   ],
+   "tags": [
+    "puberty"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "HLC-46-KF-009",
+   "block": "HLC",
+   "cohort": 46,
+   "n": 9,
+   "type": "KF",
+   "case": "วัยหมดประจำเดือน",
+   "items": [
+    {
+     "id": "9.1.1",
+     "prompt": "หญิง 60 ปี ช่องคลอดแห้งแสบเจ็บขณะมีเพศสัมพันธ์ ไม่มีร้อนวูบวาบ: วินิจฉัย",
+     "format": "short",
+     "accepted": [
+      "genitourinary",
+      "atrophy"
+     ],
+     "keywords_all": [
+      "genitourinary"
+     ],
+     "key_text": "Genitourinary syndrome of menopause (vaginal atrophy)",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    },
+    {
+     "id": "9.1.2",
+     "prompt": "การรักษา 2 ข้อ",
+     "format": "short",
+     "accepted": [
+      "estrogen",
+      "lubricant"
+     ],
+     "keywords_all": [
+      "estrogen"
+     ],
+     "key_text": "Topical vaginal estrogen · Vaginal moisturizer/lubricant (water-based)",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    },
+    {
+     "id": "9.2.1",
+     "prompt": "หญิง 54 ปี หมดประจำเดือน 1 ปี ร้อนวูบวาบตอนกลางคืน: วินิจฉัย",
+     "format": "short",
+     "accepted": [
+      "vasomotor",
+      "hot flash"
+     ],
+     "keywords_all": [
+      "vasomotor"
+     ],
+     "key_text": "Menopausal vasomotor symptoms (hot flashes)",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    },
+    {
+     "id": "9.2.2",
+     "prompt": "การรักษา 2 ข้อ",
+     "format": "short",
+     "accepted": [
+      "hormone",
+      "ssri"
+     ],
+     "keywords_all": [
+      "hormone"
+     ],
+     "key_text": "Menopausal hormone therapy (estrogen) · SSRI/SNRI หรือ gabapentin · ปรับพฤติกรรม หลีกเลี่ยงสิ่งกระตุ้น",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "KF46",
+     "pages": [
+      8
+     ]
+    }
+   ],
+   "tags": [
+    "aging"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "HLC-46-KF-010",
+   "block": "HLC",
+   "cohort": 46,
+   "n": 10,
+   "type": "KF",
+   "case": "End of life plan",
+   "items": [
+    {
+     "id": "10.1",
+     "prompt": "To-do and Not-to-do list (หัตถการที่อยากให้ทำ/ไม่ทำ)",
+     "format": "short",
+     "accepted": [
+      "cpr",
+      "palliative"
+     ],
+     "keywords_all": [
+      "cpr"
+     ],
+     "key_text": "To-do: ควบคุมอาการปวดและความทรมาน (palliative care) ดูแลด้านจิตใจและจิตวิญญาณ · Not-to-do: CPR, ใส่ท่อช่วยหายใจ, อยู่ ICU (DNR) ตามความต้องการของผู้ป่วย",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    },
+    {
+     "id": "10.2",
+     "prompt": "ความหมายเชิงคุณค่าของ good death",
+     "format": "short",
+     "accepted": [
+      "ศักดิ์ศรี",
+      "ไม่ทุกข์"
+     ],
+     "keywords_all": [
+      "ศักดิ์ศรี"
+     ],
+     "key_text": "การตายที่ไม่ทุกข์ทรมาน สงบ มีศักดิ์ศรี ตามความต้องการของผู้ป่วย ครอบครัวพร้อมและได้บอกลา",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    },
+    {
+     "id": "10.3",
+     "prompt": "เงื่อนไข surrogate decision-maker (power of attorney)",
+     "format": "short",
+     "accepted": [
+      "ลายลักษณ์อักษร",
+      "ขาดความสามารถ"
+     ],
+     "keywords_all": [
+      "ลายลักษณ์อักษร"
+     ],
+     "key_text": "ผู้ป่วยแต่งตั้งล่วงหน้าเป็นลายลักษณ์อักษร · ผู้แต่งตั้งบรรลุนิติภาวะ ไว้ใจได้ เข้าใจความต้องการ · ใช้เมื่อผู้ป่วยขาดความสามารถตัดสินใจ",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "KF46",
+     "pages": [
+      9
+     ]
+    }
+   ],
+   "tags": [
+    "ethics"
+   ],
+   "source": "claude-mcp"
+  }
+ ]
+}
