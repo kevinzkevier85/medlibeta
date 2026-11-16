@@ -1,6 +1,6 @@
 # REVIEW — รายการรอผู้ใช้ตัดสิน
 
-ทั้งหมด 1474 รายการ
+ทั้งหมด 1650 รายการ
 วิธีตอบ: พิมพ์ในแชทเป็นบรรทัด เช่น `end_52_MCQ_027: คงเดิม` / `end_52_MCQ_063: C` / `end_52_MCQ_046: ตรวจใหม่`
 Claude จะบันทึกลง `auditor/data/decisions.json` แล้ว build ใหม่
 
@@ -800,6 +800,66 @@ Claude จะบันทึกลง `auditor/data/decisions.json` แล้ว
 | imm_48_MCQ_122 | None | D | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
 | imm_48_MCQ_123 | None | E | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
 | imm_52_MCQ_092 | ['A', 'B'] | A | mid | ต้นฉบับวงไว้หลายตัว |   |
+| integ_50_MCQ_001 | None | C | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| integ_50_MCQ_003 | None | C | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| integ_50_MCQ_004 | None | C | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| integ_50_MCQ_005 | None | B | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| integ_50_MCQ_006 | None | A | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| integ_50_MCQ_007 | None | A | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| integ_50_MCQ_008 | None | A | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| integ_50_MCQ_009 | None | A | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| integ_50_MCQ_010 | None | C | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| integ_50_MCQ_011 | None | A | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| integ_50_MCQ_012 | None | B | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| integ_50_MCQ_013 | None | A | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| integ_50_MCQ_014 | None | A | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| integ_50_MCQ_015 | None | A | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| integ_50_MCQ_016 | None | C | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| integ_50_MCQ_017 | None | A | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| integ_50_MCQ_019 | None | B | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| integ_50_MCQ_020 | None | A | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| integ_50_MCQ_021 | None | B | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| integ_50_MCQ_022 | None | A | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| integ_50_MCQ_023 | None | A | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| integ_50_MCQ_024 | None | E | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| integ_50_MCQ_025 | None | A | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| integ_50_MCQ_026 | None | A | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| integ_50_MCQ_027 | None | B | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| integ_50_MCQ_028 | None | B | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| integ_50_MCQ_029 | None | B | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| integ_50_MCQ_031 | None | B | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| integ_50_MCQ_032 | None | B | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| integ_51_MCQ_002 | None | A | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| integ_51_MCQ_003 | None | C | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| integ_51_MCQ_004 | None | D | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| integ_51_MCQ_005 | None | E | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| integ_51_MCQ_006 | None | D | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| integ_51_MCQ_007 | None | D | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| integ_51_MCQ_008 | None | D | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| integ_51_MCQ_010 | None | A | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| integ_51_MCQ_011 | None | A | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| integ_51_MCQ_012 | None | C | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| integ_51_MCQ_013 | None | C | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| integ_51_MCQ_015 | None | A | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| integ_51_MCQ_018 | None | A | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| integ_51_MCQ_021 | None | D | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| integ_51_MCQ_023 | None | E | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| integ_51_MCQ_024 | None | A | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| integ_51_MCQ_033 | None | A | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| integ_51_MCQ_037 | None | C | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| integ_51_MCQ_038 | None | A | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| integ_51_MCQ_044 | None | A | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| integ_51_MCQ_045 | None | C | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| integ_51_MCQ_048 | None | A | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| integ_51_MCQ_049 | None | B | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| integ_51_MCQ_051 | None | A | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| integ_51_MCQ_053 | None | A | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| integ_51_MCQ_054 | None | E | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| integ_51_MCQ_055 | None | A | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| integ_51_MCQ_057 | None | D | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| integ_51_MCQ_058 | None | C | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| integ_51_MCQ_059 | None | D | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| integ_51_MCQ_060 | None | B | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
 | kub_42-43_MCQ_003 | D | A | low | เฉลยขัดกับ AI |   |
 | kub_42-43_MCQ_005 | C | B | low | เฉลยขัดกับ AI |   |
 | kub_42-43_MCQ_021 | C | D | high | เฉลยขัดกับ AI |   |
@@ -1136,6 +1196,44 @@ Claude จะบันทึกลง `auditor/data/decisions.json` แล้ว
 | kub_52_MCQ_060 | B | A | mid | เฉลยขัดกับ AI | AI ตอบ Leydig cell; ต้นฉบับ Sertoli cell (tumor หลั่ง estrogen)  |
 | kub_52_MCQ_096 | D | C | mid | เฉลยขัดกับ AI |   |
 | msk_52_MCQ_036 | ['C', 'D'] | C | mid | ต้นฉบับวงไว้หลายตัว |   |
+| neo_51_MCQ_001 | None | C | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| neo_51_MCQ_002 | None | E | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| neo_51_MCQ_003 | None | D | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| neo_51_MCQ_004 | None | A | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| neo_51_MCQ_005 | None | C | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| neo_51_MCQ_006 | None | C | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| neo_51_MCQ_007 | None | E | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| neo_51_MCQ_008 | None | E | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| neo_51_MCQ_010 | None | B | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| neo_51_MCQ_011 | None | B | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| neo_51_MCQ_013 | None | D | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| neo_51_MCQ_014 | None | B | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| neo_51_MCQ_015 | None | C | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| neo_51_MCQ_016 | None | E | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| neo_51_MCQ_017 | None | E | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| neo_51_MCQ_020 | None | E | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| neo_51_MCQ_022 | None | E | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| neo_51_MCQ_024 | None | A | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| neo_51_MCQ_026 | None | B | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| neo_51_MCQ_027 | None | A | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| neo_51_MCQ_029 | None | A | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| neo_51_MCQ_030 | None | A | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| neo_51_MCQ_031 | None | C | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| neo_51_MCQ_033 | None | E | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| neo_51_MCQ_034 | None | A | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| neo_51_MCQ_036 | None | A | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| neo_51_MCQ_037 | None | A | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| neo_51_MCQ_040 | None | A | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| neo_51_MCQ_041 | None | E | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| neo_51_MCQ_042 | None | E | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| neo_51_MCQ_043 | None | D | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| neo_51_MCQ_044 | None | D | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| neo_51_MCQ_045 | None | D | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| neo_51_MCQ_046 | None | C | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| neo_51_MCQ_047 | None | D | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| neo_51_MCQ_048 | None | C | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| neo_51_MCQ_049 | None | C | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| neo_51_MCQ_050 | None | A | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
 | nerv_46_MCQ_041 | D | E | mid | เฉลยขัดกับ AI |   |
 | nerv_46_MCQ_058 | None | C | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
 | nerv_47_MCQ_001 | None | A | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
@@ -1480,3 +1578,81 @@ Claude จะบันทึกลง `auditor/data/decisions.json` แล้ว
 | resp_52_MCQ_044 | E | B | mid | เฉลยขัดกับ AI |   |
 | resp_52_MCQ_065 | None | D | hi | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ | ต้นฉบับเขียนว่า ไม่มีคำตอบตามสไลด์ (SCLC: chromogranin, synaptophysin, CD56, NSE) — AI ร่างเฉลย D  |
 | resp_52_MCQ_079 | A | B | hi | เฉลยขัดกับ AI |   |
+| skin_46a_MCQ_001 | None | E | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| skin_46a_MCQ_002 | None | B | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| skin_46a_MCQ_003 | None | A | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| skin_46a_MCQ_004 | None | D | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| skin_46a_MCQ_005 | None | B | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| skin_46a_MCQ_006 | None | B | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| skin_46a_MCQ_007 | None | D | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| skin_46a_MCQ_008 | None | A | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| skin_46a_MCQ_009 | None | C | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| skin_46a_MCQ_010 | None | C | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| skin_46a_MCQ_011 | None | B | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| skin_46a_MCQ_012 | None | A | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| skin_46a_MCQ_013 | None | A | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| skin_46a_MCQ_014 | None | D | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| skin_46a_MCQ_015 | None | C | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| skin_46a_MCQ_016 | None | B | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| skin_46a_MCQ_017 | None | A | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| skin_46a_MCQ_018 | None | A | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| skin_46a_MCQ_019 | None | E | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| skin_46a_MCQ_020 | None | C | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| skin_46a_MCQ_021 | None | B | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| skin_46a_MCQ_022 | None | B | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| skin_46a_MCQ_023 | None | E | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| skin_46a_MCQ_024 | None | E | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| skin_46a_MCQ_025 | None | A | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| skin_46a_MCQ_026 | None | D | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| skin_46a_MCQ_027 | None | B | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| skin_46a_MCQ_028 | None | D | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| skin_46a_MCQ_029 | None | C | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| skin_46a_MCQ_030 | None | C | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| skin_46a_MCQ_031 | None | B | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| skin_46a_MCQ_032 | None | A | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| skin_46a_MCQ_033 | None | A | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| skin_46a_MCQ_035 | None | E | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| skin_46a_MCQ_036 | None | A | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| skin_46a_MCQ_037 | None | B | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| skin_46a_MCQ_038 | None | E | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| skin_46a_MCQ_039 | None | A | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| skin_46a_MCQ_040 | None | B | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| skin_46a_MCQ_041 | None | A | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| skin_46a_MCQ_042 | None | C | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| skin_46a_MCQ_043 | None | E | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| skin_46a_MCQ_044 | None | D | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| skin_46a_MCQ_045 | None | B | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| skin_46a_MCQ_046 | None | A | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| skin_46a_MCQ_047 | None | B | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| skin_46a_MCQ_048 | None | A | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| skin_46a_MCQ_049 | None | C | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| skin_46a_MCQ_050 | None | E | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| skin_46a_MCQ_051 | None | D | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| skin_46a_MCQ_052 | None | E | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| skin_46a_MCQ_053 | None | B | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| skin_46a_MCQ_054 | None | C | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| skin_46a_MCQ_055 | None | A | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| skin_46a_MCQ_056 | None | A | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| skin_46a_MCQ_057 | None | A | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| skin_46a_MCQ_058 | None | D | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| skin_46a_MCQ_059 | None | A | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| skin_46a_MCQ_060 | None | D | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| skin_46a_MCQ_061 | None | A | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| skin_46a_MCQ_062 | None | B | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| skin_46a_MCQ_063 | None | B | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| skin_46a_MCQ_064 | None | C | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| skin_46a_MCQ_065 | None | C | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| skin_46a_MCQ_066 | None | E | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| skin_46a_MCQ_070 | None | B | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| skin_46a_MCQ_071 | None | D | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| skin_46a_MCQ_072 | None | D | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| skin_46a_MCQ_073 | None | C | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| skin_46a_MCQ_074 | None | D | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| skin_46a_MCQ_075 | None | C | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| skin_46a_MCQ_078 | None | E | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| skin_46a_MCQ_079 | None | A | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| skin_46a_MCQ_080 | None | C | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| skin_46a_MCQ_081 | None | B | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| skin_46a_MCQ_082 | None | C | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| skin_46a_MCQ_083 | None | B | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
+| skin_46a_MCQ_084 | None | E | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
