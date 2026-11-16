@@ -1,0 +1,836 @@
+{
+ "set_id": "cvs_48_OSPE",
+ "note": "OSPE CVS Med PSU 48 · 16 สถานี · เฉลยลายมือจากไฟล์เฉลย (สถานี 7, 17 ไม่มีเฉลย ข้าม · สถานี 16, 18 ไม่มีเฉลยต้นฉบับ AI เติม)",
+ "questions": [
+  {
+   "n": 1,
+   "page": 1,
+   "tags": [
+    "radiology"
+   ],
+   "case": "สถานี 1: จากภาพ Chest X-ray (ลูกศรสีดำชี้โครงสร้าง)",
+   "answer_status": "verified",
+   "items": [
+    {
+     "id": "1.1",
+     "prompt": "ชื่อโครงสร้างที่ลูกศรสีดำชี้",
+     "format": "short",
+     "accepted": [
+      "left atrium"
+     ],
+     "keywords_all": [
+      "left atrium"
+     ],
+     "key_text": "Left atrium (double density, LA > RA)",
+     "source_key": "เฉลย: Left atrium (double density, LA > RA)",
+     "image": "img/CVS-48-OSPE-001.jpg",
+     "image_caption": "Chest X-ray สถานี 1"
+    },
+    {
+     "id": "1.2",
+     "prompt": "สาเหตุที่ทำให้โครงสร้างโต 3 ข้อ",
+     "format": "short",
+     "accepted": [
+      "mitral stenosis",
+      "patent ductus",
+      "ventricular septal"
+     ],
+     "keywords_all": [
+      "mitral stenosis"
+     ],
+     "key_text": "Mitral stenosis, Patent ductus arteriosus, Ventricular septal defect",
+     "source_key": "เฉลย: Mitral stenosis, Patent ductus arteriosus, Ventricular septal defect"
+    }
+   ],
+   "exam_page": 1
+  },
+  {
+   "n": 2,
+   "page": 2,
+   "tags": [
+    "radiology"
+   ],
+   "case": "สถานี 2: ตำแหน่งลิ้นหัวใจเทียมในภาพเอ็กซเรย์ทรวงอก",
+   "answer_status": "verified",
+   "items": [
+    {
+     "id": "2.1",
+     "prompt": "ตำแหน่งที่ 1",
+     "format": "short",
+     "accepted": [
+      "aortic"
+     ],
+     "keywords_all": [
+      "aortic"
+     ],
+     "key_text": "Aortic valve",
+     "source_key": "เฉลย: Aortic valve",
+     "image": "img/CVS-48-OSPE-002.jpg",
+     "image_caption": "Chest X-ray ลิ้นเทียม"
+    },
+    {
+     "id": "2.2",
+     "prompt": "ตำแหน่งที่ 2",
+     "format": "short",
+     "accepted": [
+      "mitral"
+     ],
+     "keywords_all": [
+      "mitral"
+     ],
+     "key_text": "Mitral valve",
+     "source_key": "เฉลย: Mitral valve"
+    }
+   ],
+   "exam_page": 2
+  },
+  {
+   "n": 3,
+   "page": 2,
+   "tags": [
+    "pathology"
+   ],
+   "case": "สถานี 3: จากภาพที่ให้",
+   "answer_status": "verified",
+   "items": [
+    {
+     "id": "3.1",
+     "prompt": "ให้การวินิจฉัย",
+     "format": "short",
+     "accepted": [
+      "atherosclerosis"
+     ],
+     "keywords_all": [
+      "atherosclerosis"
+     ],
+     "key_text": "Atherosclerosis",
+     "source_key": "เฉลย: Atherosclerosis",
+     "image": "img/CVS-48-OSPE-003.jpg",
+     "image_caption": "ภาพสถานี 3"
+    },
+    {
+     "id": "3.2",
+     "prompt": "ปัจจัยเสี่ยง 3 อย่าง",
+     "format": "short",
+     "accepted": [
+      "smoking",
+      "hypertension",
+      "diabetes"
+     ],
+     "keywords_all": [
+      "smoking"
+     ],
+     "key_text": "Smoking, Hypertension, Diabetes mellitus",
+     "source_key": "เฉลย: Smoking, Hypertension, Diabetes mellitus"
+    }
+   ],
+   "exam_page": 2
+  },
+  {
+   "n": 4,
+   "page": 3,
+   "tags": [
+    "pathology"
+   ],
+   "case": "สถานี 4: histopathology ของ cardiac muscle",
+   "answer_status": "verified",
+   "items": [
+    {
+     "id": "4.1",
+     "prompt": "ให้การวินิจฉัย",
+     "format": "short",
+     "accepted": [
+      "myocardial infarction"
+     ],
+     "keywords_all": [
+      "infarction"
+     ],
+     "key_text": "Myocardial infarction",
+     "source_key": "เฉลย: Myocardial infarction",
+     "image": "img/CVS-48-OSPE-004.jpg",
+     "image_caption": "Histopathology cardiac muscle"
+    },
+    {
+     "id": "4.2",
+     "prompt": "ลักษณะพยาธิสภาพ 2 อย่าง",
+     "format": "short",
+     "accepted": [
+      "coagulative",
+      "neutrophil"
+     ],
+     "keywords_all": [
+      "coagulative"
+     ],
+     "key_text": "Coagulative necrosis · Neutrophil infiltration",
+     "source_key": "เฉลย: Coagulative necrosis · Neutrophil infiltration"
+    },
+    {
+     "id": "4.3",
+     "prompt": "สาเหตุที่พบบ่อยสุด",
+     "format": "short",
+     "accepted": [
+      "coronary artery disease",
+      "cad"
+     ],
+     "keywords_all": [
+      "coronary"
+     ],
+     "key_text": "Coronary artery disease (CAD)",
+     "source_key": "เฉลย: Coronary artery disease (CAD)"
+    }
+   ],
+   "exam_page": 3
+  },
+  {
+   "n": 5,
+   "page": 3,
+   "tags": [
+    "pathology"
+   ],
+   "case": "สถานี 5: จากภาพ (พยาธิสภาพที่ลูกศรชี้)",
+   "answer_status": "draft",
+   "items": [
+    {
+     "id": "5.1",
+     "prompt": "พยาธิสภาพที่พบ (ลูกศรชี้)",
+     "format": "short",
+     "accepted": [
+      "embol"
+     ],
+     "keywords_all": [
+      "embol"
+     ],
+     "key_text": "Pulmonary thromboembolism (embolus ใน pulmonary artery)",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม",
+     "image": "img/CVS-48-OSPE-005.jpg",
+     "image_caption": "ภาพสถานี 5"
+    },
+    {
+     "id": "5.2",
+     "prompt": "รอยโรคที่มักเป็นสาเหตุ",
+     "format": "short",
+     "accepted": [
+      "deep vein",
+      "dvt"
+     ],
+     "keywords_all": [
+      "deep vein"
+     ],
+     "key_text": "Deep vein thrombosis (DVT)",
+     "source_key": "เฉลย: Deep vein thrombosis (DVT)"
+    },
+    {
+     "id": "5.3",
+     "prompt": "ภาวะแทรกซ้อนในปอด",
+     "format": "short",
+     "accepted": [
+      "pulmonary hypertension"
+     ],
+     "keywords_all": [
+      "pulmonary hypertension"
+     ],
+     "key_text": "Chronic thromboembolic pulmonary hypertension",
+     "source_key": "เฉลย: Chronic thromboembolic pulmonary hypertension"
+    }
+   ],
+   "exam_page": 3
+  },
+  {
+   "n": 6,
+   "page": 4,
+   "tags": [
+    "pathology"
+   ],
+   "case": "สถานี 6: จากรูป",
+   "answer_status": "verified",
+   "items": [
+    {
+     "id": "6.1",
+     "prompt": "ลักษณะพยาธิสภาพ",
+     "format": "short",
+     "accepted": [
+      "hypertrophy"
+     ],
+     "keywords_all": [
+      "hypertrophy"
+     ],
+     "key_text": "Cardiac muscle hypertrophy (ผนังกล้ามเนื้อหัวใจหนา)",
+     "source_key": "เฉลย: Cardiac muscle hypertrophy (ผนังกล้ามเนื้อหัวใจหนา)",
+     "image": "img/CVS-48-OSPE-006.jpg",
+     "image_caption": "ภาพสถานี 6"
+    },
+    {
+     "id": "6.2",
+     "prompt": "โรคประจำตัวที่พบบ่อย",
+     "format": "short",
+     "accepted": [
+      "hypertension"
+     ],
+     "keywords_all": [
+      "hypertension"
+     ],
+     "key_text": "Hypertension",
+     "source_key": "เฉลย: Hypertension"
+    },
+    {
+     "id": "6.3",
+     "prompt": "ภาวะแทรกซ้อนที่พบบ่อย",
+     "format": "short",
+     "accepted": [
+      "heart failure"
+     ],
+     "keywords_all": [
+      "heart failure"
+     ],
+     "key_text": "Heart failure",
+     "source_key": "เฉลย: Heart failure"
+    }
+   ],
+   "exam_page": 4
+  },
+  {
+   "n": 8,
+   "page": 5,
+   "tags": [
+    "anatomy"
+   ],
+   "case": "สถานี 8: anterior surface of the heart",
+   "answer_status": "verified",
+   "items": [
+    {
+     "id": "8.1",
+     "prompt": "ชื่อจำเพาะที่อยู่ตามแนวลวดสีฟ้า หมายเลข 1",
+     "format": "short",
+     "accepted": [
+      "transverse sinus"
+     ],
+     "keywords_all": [
+      "transverse"
+     ],
+     "key_text": "Transverse sinus",
+     "source_key": "เฉลย: Transverse sinus",
+     "image": "img/CVS-48-OSPE-008.jpg",
+     "image_caption": "Anterior heart"
+    },
+    {
+     "id": "8.2",
+     "prompt": "หลอดเลือดหมายเลข 2",
+     "format": "short",
+     "accepted": [
+      "anterior cardiac"
+     ],
+     "keywords_all": [
+      "anterior cardiac"
+     ],
+     "key_text": "Anterior cardiac vein",
+     "source_key": "เฉลย: Anterior cardiac vein"
+    },
+    {
+     "id": "8.3",
+     "prompt": "หลอดเลือดหมายเลข 3",
+     "format": "short",
+     "accepted": [
+      "right marginal"
+     ],
+     "keywords_all": [
+      "marginal"
+     ],
+     "key_text": "Right marginal branch (of right coronary artery)",
+     "source_key": "เฉลย: Right marginal branch (of right coronary artery)"
+    }
+   ],
+   "exam_page": 5
+  },
+  {
+   "n": 9,
+   "page": 5,
+   "tags": [
+    "anatomy"
+   ],
+   "case": "สถานี 9: internal structure of the heart",
+   "answer_status": "verified",
+   "items": [
+    {
+     "id": "9.1",
+     "prompt": "โครงสร้างหมายเลข 1",
+     "format": "short",
+     "accepted": [
+      "pectinate"
+     ],
+     "keywords_all": [
+      "pectinate"
+     ],
+     "key_text": "Pectinate muscle",
+     "source_key": "เฉลย: Pectinate muscle",
+     "image": "img/CVS-48-OSPE-009.jpg",
+     "image_caption": "Internal heart"
+    },
+    {
+     "id": "9.2",
+     "prompt": "โครงสร้างในวงหมายเลข 2",
+     "format": "short",
+     "accepted": [
+      "fossa ovalis"
+     ],
+     "keywords_all": [
+      "fossa"
+     ],
+     "key_text": "Fossa ovalis",
+     "source_key": "เฉลย: Fossa ovalis"
+    },
+    {
+     "id": "9.3",
+     "prompt": "ชื่อจำเพาะของห้องหัวใจ",
+     "format": "short",
+     "accepted": [
+      "right atrium"
+     ],
+     "keywords_all": [
+      "right atrium"
+     ],
+     "key_text": "Right atrium",
+     "source_key": "เฉลย: Right atrium"
+    }
+   ],
+   "exam_page": 5
+  },
+  {
+   "n": 10,
+   "page": 6,
+   "tags": [
+    "anatomy"
+   ],
+   "case": "สถานี 10: Mediastinum",
+   "answer_status": "verified",
+   "items": [
+    {
+     "id": "10.1",
+     "prompt": "โครงสร้างหมายเลข 1",
+     "format": "short",
+     "accepted": [
+      "ligamentum arteriosum"
+     ],
+     "keywords_all": [
+      "ligamentum"
+     ],
+     "key_text": "Ligamentum arteriosum",
+     "source_key": "เฉลย: Ligamentum arteriosum",
+     "image": "img/CVS-48-OSPE-010.jpg",
+     "image_caption": "Mediastinum สถานี 10"
+    },
+    {
+     "id": "10.2",
+     "prompt": "โครงสร้างหมายเลข 2",
+     "format": "short",
+     "accepted": [
+      "recurrent laryngeal"
+     ],
+     "keywords_all": [
+      "recurrent"
+     ],
+     "key_text": "Recurrent laryngeal nerve",
+     "source_key": "เฉลย: Recurrent laryngeal nerve"
+    },
+    {
+     "id": "10.3",
+     "prompt": "โครงสร้างหมายเลข 3",
+     "format": "short",
+     "accepted": [
+      "papillary"
+     ],
+     "keywords_all": [
+      "papillary"
+     ],
+     "key_text": "Papillary muscle (ตามเฉลย)",
+     "source_key": "เฉลย: Papillary muscle (ตามเฉลย)"
+    }
+   ],
+   "exam_page": 6
+  },
+  {
+   "n": 11,
+   "page": 7,
+   "tags": [
+    "anatomy"
+   ],
+   "case": "สถานี 11: Sagittal section of thorax",
+   "answer_status": "verified",
+   "items": [
+    {
+     "id": "11.1",
+     "prompt": "โครงสร้างหมายเลข 1",
+     "format": "short",
+     "accepted": [
+      "phrenic"
+     ],
+     "keywords_all": [
+      "phrenic"
+     ],
+     "key_text": "Phrenic nerve",
+     "source_key": "เฉลย: Phrenic nerve",
+     "image": "img/CVS-48-OSPE-011.jpg",
+     "image_caption": "Sagittal section of thorax"
+    },
+    {
+     "id": "11.2",
+     "prompt": "ก้อนหมายเลข 2",
+     "format": "short",
+     "accepted": [
+      "sympathetic"
+     ],
+     "keywords_all": [
+      "sympathetic"
+     ],
+     "key_text": "Sympathetic trunk ganglion",
+     "source_key": "เฉลย: Sympathetic trunk ganglion"
+    },
+    {
+     "id": "11.3",
+     "prompt": "ชื่อจำเพาะของเส้นหมายเลข 3",
+     "format": "short",
+     "accepted": [
+      "greater splanchnic"
+     ],
+     "keywords_all": [
+      "splanchnic"
+     ],
+     "key_text": "Greater splanchnic nerve",
+     "source_key": "เฉลย: Greater splanchnic nerve"
+    }
+   ],
+   "exam_page": 7
+  },
+  {
+   "n": 12,
+   "page": 7,
+   "tags": [
+    "histology"
+   ],
+   "case": "สถานี 12: จุลกายวิภาคของหลอดเลือด",
+   "answer_status": "verified",
+   "items": [
+    {
+     "id": "12.1",
+     "prompt": "โครงสร้างบริเวณปีกกา หมายเลข 1 อยู่ในชั้นใด",
+     "format": "short",
+     "accepted": [
+      "tunica media",
+      "media"
+     ],
+     "keywords_all": [
+      "media"
+     ],
+     "key_text": "Tunica media",
+     "source_key": "เฉลย: Tunica media",
+     "image": "img/CVS-48-OSPE-012.jpg",
+     "image_caption": "Histology หลอดเลือด"
+    },
+    {
+     "id": "12.2",
+     "prompt": "ชื่อเซลล์ปลายลูกศรหมายเลข 2",
+     "format": "short",
+     "accepted": [
+      "endothelial"
+     ],
+     "keywords_all": [
+      "endothelial"
+     ],
+     "key_text": "Endothelial cell",
+     "source_key": "เฉลย: Endothelial cell"
+    },
+    {
+     "id": "12.3",
+     "prompt": "ขนาดและชนิดของหลอดเลือด",
+     "format": "short",
+     "accepted": [
+      "large artery",
+      "elastic"
+     ],
+     "keywords_all": [
+      "large artery"
+     ],
+     "key_text": "Large artery (elastic artery)",
+     "source_key": "เฉลย: Large artery (elastic artery)"
+    }
+   ],
+   "exam_page": 7
+  },
+  {
+   "n": 13,
+   "page": 8,
+   "tags": [
+    "histology"
+   ],
+   "case": "สถานี 13: ภาพถ่ายด้วยกล้องจุลทรรศน์",
+   "answer_status": "verified",
+   "items": [
+    {
+     "id": "13.1",
+     "prompt": "หลอดเลือดปลายลูกศรหมายเลข 1",
+     "format": "short",
+     "accepted": [
+      "venule"
+     ],
+     "keywords_all": [
+      "venule"
+     ],
+     "key_text": "Venule (hepatic portal venule)",
+     "source_key": "เฉลย: Venule (hepatic portal venule)",
+     "image": "img/CVS-48-OSPE-013.jpg",
+     "image_caption": "Histology ตับ"
+    },
+    {
+     "id": "13.2",
+     "prompt": "หลอดเลือดปลายลูกศรหมายเลข 2",
+     "format": "short",
+     "accepted": [
+      "arteriole",
+      "hepatic artery"
+     ],
+     "keywords_all": [
+      "arteriole"
+     ],
+     "key_text": "Arteriole (hepatic artery)",
+     "source_key": "เฉลย: Arteriole (hepatic artery)"
+    },
+    {
+     "id": "13.3",
+     "prompt": "หลอดเลือดปลายลูกศรหมายเลข 3",
+     "format": "short",
+     "accepted": [
+      "sinusoid"
+     ],
+     "keywords_all": [
+      "sinusoid"
+     ],
+     "key_text": "Sinusoidal capillary",
+     "source_key": "เฉลย: Sinusoidal capillary"
+    }
+   ],
+   "exam_page": 8
+  },
+  {
+   "n": 14,
+   "page": 8,
+   "tags": [
+    "histology"
+   ],
+   "case": "สถานี 14: จุลกายวิภาคของหลอดเลือด",
+   "answer_status": "verified",
+   "items": [
+    {
+     "id": "14.1",
+     "prompt": "ขนาดและชนิดของหลอดเลือด",
+     "format": "short",
+     "accepted": [
+      "medium",
+      "muscular"
+     ],
+     "keywords_all": [
+      "medium"
+     ],
+     "key_text": "Medium-sized artery (muscular artery)",
+     "source_key": "เฉลย: Medium-sized artery (muscular artery)",
+     "image": "img/CVS-48-OSPE-014.jpg",
+     "image_caption": "Histology หลอดเลือด"
+    },
+    {
+     "id": "14.2",
+     "prompt": "ลักษณะจำเพาะ 2 ลักษณะ",
+     "format": "short",
+     "accepted": [
+      "smooth muscle",
+      "elastic lamina"
+     ],
+     "keywords_all": [
+      "elastic"
+     ],
+     "key_text": "Tunica media หนา มี smooth muscle ~25–40 ชั้น · Internal/External elastic lamina ชัดเจน",
+     "source_key": "เฉลย: Tunica media หนา มี smooth muscle ~25–40 ชั้น · Internal/External elastic lamina ชัดเจน"
+    }
+   ],
+   "exam_page": 8
+  },
+  {
+   "n": 15,
+   "page": 9,
+   "tags": [
+    "ecg"
+   ],
+   "case": "สถานี 15: ECG (กระดาษกราฟมาตรฐาน 25 mm/s)",
+   "answer_status": "verified",
+   "items": [
+    {
+     "id": "15.1",
+     "prompt": "อัตราการเต้นของหัวใจ (พร้อมหน่วย)",
+     "format": "short",
+     "accepted": [
+      "75"
+     ],
+     "keywords_all": [
+      "75"
+     ],
+     "key_text": "75 bpm (1500/20)",
+     "source_key": "เฉลย: 75 bpm (1500/20)",
+     "image": "img/CVS-48-OSPE-015.jpg",
+     "image_caption": "ECG สถานี 15"
+    },
+    {
+     "id": "15.2",
+     "prompt": "PR interval",
+     "format": "short",
+     "accepted": [
+      "0.24"
+     ],
+     "keywords_all": [
+      "0.24"
+     ],
+     "key_text": "0.24 s (6 ช่อง × 0.04)",
+     "source_key": "เฉลย: 0.24 s (6 ช่อง × 0.04)"
+    },
+    {
+     "id": "15.3",
+     "prompt": "QRS duration",
+     "format": "short",
+     "accepted": [
+      "0.1"
+     ],
+     "keywords_all": [
+      "0.1"
+     ],
+     "key_text": "0.1 s (2.5 ช่อง × 0.04)",
+     "source_key": "เฉลย: 0.1 s (2.5 ช่อง × 0.04)"
+    },
+    {
+     "id": "15.4",
+     "prompt": "ความผิดปกติที่พบ",
+     "format": "short",
+     "accepted": [
+      "hyperkalemia"
+     ],
+     "keywords_all": [
+      "hyperkalemia"
+     ],
+     "key_text": "Hyperkalemia (tall T wave)",
+     "source_key": "เฉลย: Hyperkalemia (tall T wave)"
+    }
+   ],
+   "exam_page": 9
+  },
+  {
+   "n": 16,
+   "page": 9,
+   "tags": [
+    "ecg"
+   ],
+   "case": "สถานี 16: ECG ด้วย precordial chest lead 6 leads",
+   "answer_status": "draft",
+   "items": [
+    {
+     "id": "16.1",
+     "prompt": "Precordial lead หมายเลข 2 และตำแหน่งวาง electrode",
+     "format": "short",
+     "accepted": [
+      "v2",
+      "4th"
+     ],
+     "keywords_all": [
+      "v2"
+     ],
+     "key_text": "V2 — 4th intercostal space ชิดขอบ sternum ด้านซ้าย",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม",
+     "image": "img/CVS-48-OSPE-016.jpg",
+     "image_caption": "ECG precordial leads"
+    },
+    {
+     "id": "16.2",
+     "prompt": "Precordial lead หมายเลข 4 และตำแหน่งวาง electrode",
+     "format": "short",
+     "accepted": [
+      "v4",
+      "5th",
+      "midclavicular"
+     ],
+     "keywords_all": [
+      "v4"
+     ],
+     "key_text": "V4 — 5th intercostal space midclavicular line",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    },
+    {
+     "id": "16.3",
+     "prompt": "Precordial lead หมายเลข 6 และตำแหน่งวาง electrode",
+     "format": "short",
+     "accepted": [
+      "v6",
+      "midaxillary"
+     ],
+     "keywords_all": [
+      "v6"
+     ],
+     "key_text": "V6 — 5th intercostal space midaxillary line",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    }
+   ],
+   "exam_page": 10
+  },
+  {
+   "n": 18,
+   "page": 9,
+   "tags": [
+    "ecg"
+   ],
+   "case": "สถานี 18: สลับ electrode แขนขวา (RA) กับแขนซ้าย (LA)",
+   "answer_status": "draft",
+   "items": [
+    {
+     "id": "18.1",
+     "prompt": "Lead ใดกลับหัว (inverted)",
+     "format": "short",
+     "accepted": [
+      "lead i",
+      "i"
+     ],
+     "keywords_all": [
+      "i"
+     ],
+     "key_text": "Lead I",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม",
+     "image": "img/CVS-48-OSPE-018.jpg",
+     "image_caption": "Einthoven triangle"
+    },
+    {
+     "id": "18.2",
+     "prompt": "Lead ใดสลับที่กัน",
+     "format": "short",
+     "accepted": [
+      "ii",
+      "iii",
+      "avr",
+      "avl"
+     ],
+     "keywords_all": [
+      "avr"
+     ],
+     "key_text": "II ⇄ III และ aVR ⇄ aVL",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    },
+    {
+     "id": "18.3",
+     "prompt": "Lead ใดไม่เปลี่ยนแปลง",
+     "format": "short",
+     "accepted": [
+      "avf"
+     ],
+     "keywords_all": [
+      "avf"
+     ],
+     "key_text": "aVF",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    }
+   ],
+   "exam_page": 11
+  }
+ ],
+ "time_limit_min": 60
+}

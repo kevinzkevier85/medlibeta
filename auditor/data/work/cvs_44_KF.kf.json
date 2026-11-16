@@ -1,0 +1,730 @@
+{
+ "set_id": "cvs_44_KF",
+ "note": "KF CVS Med PSU 44 · 9 ข้อ · เฉลยลายมือจากภาพ (ข้อ 3.2, 4.1, 4.4, 5.5, 7.5, 8, 9 ไม่ครบ/อ่านยาก AI เติมเป็น draft)",
+ "questions": [
+  {
+   "n": 1,
+   "page": 1,
+   "tags": [],
+   "case": "เด็กหญิงตื่นสาย 1 ชม. กระโดดลุกจากเตียง วิงเวียน หน้ามืด แล้วหัวใจเต้นเร็วขึ้น เดินเข้าห้องน้ำแล้วอาการดีขึ้น",
+   "answer_status": "verified",
+   "items": [
+    {
+     "id": "1.1",
+     "prompt": "ร่างกายเปลี่ยนแปลงอย่างไรจนเกิดอาการหน้ามืด",
+     "format": "short",
+     "accepted": [
+      "venous return",
+      "preload"
+     ],
+     "keywords_all": [
+      "venous return"
+     ],
+     "key_text": "supine → standing → เลือดคั่งที่ขา → venous return ↓ → cardiac output ↓ → ความดัน ↓ → เลือดไปสมองไม่พอ",
+     "source_key": "เฉลย: supine → standing → เลือดคั่งที่ขา → venous return ↓ → cardiac output ↓ → ความดัน ↓ → เลือดไปสมองไม่พอ",
+     "explanation": "ยืนเร็ว → เลือดคั่งขา → VR ↓ → CO ↓ → BP ↓ → cerebral perfusion ↓"
+    },
+    {
+     "id": "1.2",
+     "prompt": "ร่างกาย compensate อย่างไร",
+     "format": "short",
+     "accepted": [
+      "baroreceptor",
+      "sympathetic"
+     ],
+     "keywords_all": [
+      "baroreceptor"
+     ],
+     "key_text": "Baroreceptor reflex รับรู้ BP ↓ → sympathetic ↑ → contractility ↑ HR ↑ CO ↑ + vasoconstriction → BP ↑",
+     "source_key": "เฉลย: Baroreceptor reflex รับรู้ BP ↓ → sympathetic ↑ → contractility ↑ HR ↑ CO ↑ + vasoconstriction → BP ↑"
+    },
+    {
+     "id": "1.3a",
+     "prompt": "Heart rate เปลี่ยนอย่างไร และ receptor ที่ใช้",
+     "format": "short",
+     "accepted": [
+      "baroreceptor"
+     ],
+     "keywords_all": [
+      "baroreceptor"
+     ],
+     "key_text": "เพิ่มขึ้น · Baroreceptor reflex",
+     "source_key": "เฉลย: เพิ่มขึ้น · Baroreceptor reflex"
+    },
+    {
+     "id": "1.3b",
+     "prompt": "Total peripheral resistance เปลี่ยนอย่างไร และ receptor ที่ใช้",
+     "format": "short",
+     "accepted": [
+      "baroreceptor",
+      "vasoconstriction"
+     ],
+     "keywords_all": [
+      "vasoconstriction"
+     ],
+     "key_text": "เพิ่มขึ้น (vasoconstriction) · Baroreceptor reflex (เฉลยเขียน muscle pump ?)",
+     "source_key": "เฉลย: เพิ่มขึ้น (vasoconstriction) · Baroreceptor reflex (เฉลยเขียน muscle pump ?)"
+    },
+    {
+     "id": "1.3c",
+     "prompt": "Venous capacity เปลี่ยนอย่างไร และ receptor ที่ใช้",
+     "format": "short",
+     "accepted": [
+      "venoconstriction",
+      "sympathetic",
+      "muscle pump"
+     ],
+     "keywords_all": [
+      "ลด"
+     ],
+     "key_text": "ลดลง (venoconstriction) · เฉลยเขียน muscle pump",
+     "source_key": "เฉลย: ลดลง (venoconstriction) · เฉลยเขียน muscle pump"
+    },
+    {
+     "id": "1.3d",
+     "prompt": "Cardiac contractility เปลี่ยนอย่างไร และ receptor ที่ใช้",
+     "format": "short",
+     "accepted": [
+      "baroreceptor"
+     ],
+     "keywords_all": [
+      "baroreceptor"
+     ],
+     "key_text": "เพิ่มขึ้น · Baroreceptor reflex",
+     "source_key": "เฉลย: เพิ่มขึ้น · Baroreceptor reflex"
+    },
+    {
+     "id": "1.4",
+     "prompt": "เหตุใดการเดินเข้าห้องน้ำทำให้อาการดีขึ้น",
+     "format": "short",
+     "accepted": [
+      "muscle pump",
+      "venous return"
+     ],
+     "keywords_all": [
+      "muscle pump"
+     ],
+     "key_text": "Muscle pump ช่วยเพิ่ม venous return",
+     "source_key": "เฉลย: Muscle pump ช่วยเพิ่ม venous return"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "page": 2,
+   "tags": [],
+   "case": "หญิง 25 ปี น้ำหนัก 64 kg สูง 160 cm วิ่ง 5 km ใน 45 นาที ใช้ O₂ 1.8 L/min arterial O₂ content 190 mL/L venous 130 mL/L · ก่อนออกกำลัง HR 85 BP 110/82 RR 15 · หยุดทันที BP 152/72 RR 34",
+   "answer_status": "verified",
+   "items": [
+    {
+     "id": "2.1",
+     "prompt": "คำนวณ BMI",
+     "format": "short",
+     "accepted": [
+      "25"
+     ],
+     "keywords_all": [
+      "25"
+     ],
+     "key_text": "BMI = 64 / (1.6)² = 25 kg/m²",
+     "source_key": "เฉลย: BMI = 64 / (1.6)² = 25 kg/m²"
+    },
+    {
+     "id": "2.2",
+     "prompt": "แปลผล BMI ตาม WHO",
+     "format": "short",
+     "accepted": [
+      "overweight"
+     ],
+     "keywords_all": [
+      "overweight"
+     ],
+     "key_text": "Overweight (25–29.9)",
+     "source_key": "เฉลย: Overweight (25–29.9)"
+    },
+    {
+     "id": "2.3",
+     "prompt": "คำนวณ predicted maximal heart rate",
+     "format": "short",
+     "accepted": [
+      "195"
+     ],
+     "keywords_all": [
+      "195"
+     ],
+     "key_text": "220 − 25 = 195 bpm (ไม่มีเฉลยลายมือ — AI เติม)",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ"
+    },
+    {
+     "id": "2.4",
+     "prompt": "คำนวณ cardiac output",
+     "format": "short",
+     "accepted": [
+      "30"
+     ],
+     "keywords_all": [
+      "30"
+     ],
+     "key_text": "CO = VO₂ / (CaO₂ − CvO₂) = 1.8 / 0.06 = 30 L/min (ไม่มีเฉลยลายมือ — AI เติม)",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ"
+    },
+    {
+     "id": "2.5",
+     "prompt": "เหตุใด SBP ↑ แต่ DBP ↓ ขณะออกกำลัง",
+     "format": "short",
+     "accepted": [
+      "sympathetic",
+      "vasodilation"
+     ],
+     "keywords_all": [
+      "vasodilation"
+     ],
+     "key_text": "SBP ↑ จาก sympathetic → HR↑ → CO↑ → BP↑ · DBP ↓ จาก vasodilation ที่ skeletal muscle → resistance ↓",
+     "source_key": "เฉลย: SBP ↑ จาก sympathetic → HR↑ → CO↑ → BP↑ · DBP ↓ จาก vasodilation ที่ skeletal muscle → resistance ↓"
+    },
+    {
+     "id": "2.6",
+     "prompt": "เหตุใดหยุดทันที HR ยังสูง",
+     "format": "short",
+     "accepted": [
+      "compensate",
+      "co"
+     ],
+     "keywords_all": [
+      "compensate"
+     ],
+     "key_text": "เป็นการ compensate เพื่อเพิ่ม CO (BP ตกหลังหยุด / เลี้ยงหนี้ O₂)",
+     "source_key": "เฉลย: เป็นการ compensate เพื่อเพิ่ม CO (BP ตกหลังหยุด / เลี้ยงหนี้ O₂)"
+    },
+    {
+     "id": "2.7",
+     "prompt": "เหตุใดออกกำลังจึงมี muscular blood flow เพิ่ม",
+     "format": "short",
+     "accepted": [
+      "vasodilation"
+     ],
+     "keywords_all": [
+      "vasodilation"
+     ],
+     "key_text": "Vasodilation ของ skeletal muscle (metabolites/local) → resistance ↓ → blood flow ↑",
+     "source_key": "เฉลย: Vasodilation ของ skeletal muscle (metabolites/local) → resistance ↓ → blood flow ↑"
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "page": 4,
+   "tags": [],
+   "case": "ชายอายุ 35 ปี ถูกแทงบริเวณ sternum ใต้ราวนม BP 80/50 HR 120 RR 22 · SBP ลดลงมากกว่า 20 mmHg ตอนหายใจเข้า JVD · เสียงหัวใจเบา (quiet) · แผลลึก 5 cm มีเลือดออก · ปลายมือเย็น",
+   "answer_status": "draft",
+   "items": [
+    {
+     "id": "3.1",
+     "prompt": "คำนวณ MAP",
+     "format": "short",
+     "accepted": [
+      "60"
+     ],
+     "keywords_all": [
+      "60"
+     ],
+     "key_text": "MAP = DP + ⅓(SP − DP) = 50 + ⅓(80 − 50) = 60 mmHg",
+     "source_key": "เฉลย: MAP = DP + ⅓(SP − DP) = 50 + ⅓(80 − 50) = 60 mmHg"
+    },
+    {
+     "id": "3.2",
+     "prompt": "หัวใจห้องใดน่าจะบาดเจ็บ และเพราะเหตุใด",
+     "format": "short",
+     "accepted": [
+      "right ventricle",
+      "rv"
+     ],
+     "keywords_all": [
+      "right ventricle"
+     ],
+     "key_text": "Right ventricle (อยู่ด้านหน้าใต้ sternum) — เฉลยลายมือ \"ใต้ราวนม = RV?\"",
+     "source_key": "เฉลย: ใต้ราวนม = RV (อ่านยาก)"
+    },
+    {
+     "id": "3.3a",
+     "prompt": "Shock ภาวะที่ 1 และเหตุผล",
+     "format": "short",
+     "accepted": [
+      "hypovolemic"
+     ],
+     "keywords_all": [
+      "hypovolemic"
+     ],
+     "key_text": "Hypovolemic shock — active bleeding เสียเลือดมาก และ HR ↑",
+     "source_key": "เฉลย: Hypovolemic shock — active bleeding เสียเลือดมาก และ HR ↑"
+    },
+    {
+     "id": "3.3b",
+     "prompt": "Shock ภาวะที่ 2 และเหตุผล",
+     "format": "short",
+     "accepted": [
+      "obstructive",
+      "tamponade"
+     ],
+     "keywords_all": [
+      "obstructive"
+     ],
+     "key_text": "Obstructive shock — pulsus paradoxus (cardiac tamponade)",
+     "source_key": "เฉลย: Obstructive shock — pulsus paradoxus (cardiac tamponade)"
+    },
+    {
+     "id": "3.4a",
+     "prompt": "CVP เปลี่ยนอย่างไร",
+     "format": "short",
+     "accepted": [
+      "เพิ่ม",
+      "↑"
+     ],
+     "keywords_all": [
+      "เพิ่ม"
+     ],
+     "key_text": "เพิ่มขึ้น (tamponade → JVD)",
+     "source_key": "เฉลย: เพิ่มขึ้น (tamponade → JVD)"
+    },
+    {
+     "id": "3.4b",
+     "prompt": "SVR เปลี่ยนอย่างไร และเหตุใด",
+     "format": "short",
+     "accepted": [
+      "เพิ่ม",
+      "↑"
+     ],
+     "keywords_all": [
+      "เพิ่ม"
+     ],
+     "key_text": "เพิ่มขึ้น เพราะ compensate",
+     "source_key": "เฉลย: เพิ่มขึ้น เพราะ compensate"
+    },
+    {
+     "id": "3.4c",
+     "prompt": "CO เปลี่ยนอย่างไร และเหตุใด",
+     "format": "short",
+     "accepted": [
+      "ลด",
+      "↓"
+     ],
+     "keywords_all": [
+      "ลด"
+     ],
+     "key_text": "ลดลง เพราะหัวใจถูกบีบ (pulsus paradoxus)",
+     "source_key": "เฉลย: ลดลง เพราะหัวใจถูกบีบ (pulsus paradoxus)"
+    },
+    {
+     "id": "3.5",
+     "prompt": "Flowchart กลไก SBP ลด >20 mmHg ตอนหายใจเข้า (pulsus paradoxus)",
+     "format": "short",
+     "accepted": [
+      "pulsus paradoxus",
+      "tamponade"
+     ],
+     "keywords_all": [
+      "pulsus paradoxus"
+     ],
+     "key_text": "Inspiration → venous return เข้า RV ↑ → septum bow ซ้าย (ใน tamponade) → LV filling ↓ → SV ↓ → SBP ↓ > 20 mmHg (AI เติม)",
+     "source_key": "เฉลยเป็นภาพ flowchart (อ่านไม่ได้)"
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "page": 6,
+   "tags": [],
+   "case": "ชายนั่งดูทีวีอยู่บ้านเจ็บหน้าอก ร้าวไปต้นแขน ไม่มีโรคประจำตัว เคยออกกำลังแล้วเจ็บ พักแล้วหาย จนถึง 1 สัปดาห์ก่อน · No pitting edema, basilar rales, no murmur, S4 ปรากฏ · BP 130/80 HR 100 RR 22",
+   "answer_status": "verified",
+   "items": [
+    {
+     "id": "4.1",
+     "prompt": "อธิบายกลไกเจ็บหน้าอกอย่างละเอียด",
+     "format": "short",
+     "accepted": [
+      "atherosclerosis",
+      "plaque",
+      "thrombosis"
+     ],
+     "keywords_all": [
+      "atherosclerosis"
+     ],
+     "key_text": "O₂ demand ↑ / O₂ supply ↓ จาก atherosclerosis → lumen แคบ → coronary blood flow ↓ → plaque rupture → thrombosis → blood flow ↓↓ → myocardial ischemia",
+     "source_key": "เฉลย: O₂ demand ↑ / O₂ supply ↓ จาก atherosclerosis → lumen แคบ → coronary blood flow ↓ → plaque rupture → thrombosis → blood flow ↓↓ → myocardial ischemia"
+    },
+    {
+     "id": "4.2",
+     "prompt": "จัดอยู่ในกลุ่มอาการอะไร",
+     "format": "short",
+     "accepted": [
+      "coronary artery disease",
+      "acs"
+     ],
+     "keywords_all": [
+      "coronary"
+     ],
+     "key_text": "Coronary artery disease (ACS)",
+     "source_key": "เฉลย: Coronary artery disease (ACS)"
+    },
+    {
+     "id": "4.3a",
+     "prompt": "ควรส่งตรวจเพิ่มเติม (1)",
+     "format": "short",
+     "accepted": [
+      "stress test"
+     ],
+     "keywords_all": [
+      "stress"
+     ],
+     "key_text": "Exercise stress test",
+     "source_key": "เฉลย: Exercise stress test"
+    },
+    {
+     "id": "4.3b",
+     "prompt": "ควรส่งตรวจเพิ่มเติม (2)",
+     "format": "short",
+     "accepted": [
+      "ecg"
+     ],
+     "keywords_all": [
+      "ecg"
+     ],
+     "key_text": "ECG",
+     "source_key": "เฉลย: ECG"
+    },
+    {
+     "id": "4.3c",
+     "prompt": "ควรส่งตรวจเพิ่มเติม (3)",
+     "format": "short",
+     "accepted": [
+      "cardiac enzyme",
+      "troponin"
+     ],
+     "keywords_all": [
+      "cardiac"
+     ],
+     "key_text": "Cardiac enzyme (troponin)",
+     "source_key": "เฉลย: Cardiac enzyme (troponin)"
+    },
+    {
+     "id": "4.4",
+     "prompt": "อธิบายกลไกปวดร้าวไปต้นแขน",
+     "format": "short",
+     "accepted": [
+      "synapse",
+      "referred",
+      "t1"
+     ],
+     "keywords_all": [
+      "synapse"
+     ],
+     "key_text": "Cardiac plexus ไป synapse บริเวณเดียวกับเส้นประสาทที่ไปเลี้ยงแขน (T1–T4) สมองแยกตำแหน่งความเจ็บไม่ได้ จึงปวดร้าวบริเวณต้นแขนด้วย",
+     "source_key": "เฉลย: Cardiac plexus ไป synapse บริเวณเดียวกับเส้นประสาทที่ไปเลี้ยงแขน (T1–T4) สมองแยกตำแหน่งความเจ็บไม่ได้ จึงปวดร้าวบริเวณต้นแขนด้วย"
+    },
+    {
+     "id": "4.5",
+     "prompt": "ปัจจัยที่ควบคุมได้ 5 ข้อ",
+     "format": "short",
+     "accepted": [
+      "hypertension",
+      "dyslipidemia",
+      "smoking",
+      "diabetes"
+     ],
+     "keywords_all": [
+      "hypertension"
+     ],
+     "key_text": "Hypertension, Dyslipidemia, Smoking, Diabetes, Exercise",
+     "source_key": "เฉลย: Hypertension, Dyslipidemia, Smoking, Diabetes, Exercise"
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "page": 7,
+   "tags": [],
+   "case": "โจทย์เกี่ยวกับยาลดความดันในผู้ป่วย DM",
+   "answer_status": "verified",
+   "items": [
+    {
+     "id": "5.1",
+     "prompt": "บอก prototype",
+     "format": "short",
+     "accepted": [
+      "enalapril"
+     ],
+     "keywords_all": [
+      "enalapril"
+     ],
+     "key_text": "Enalapril",
+     "source_key": "เฉลย: Enalapril"
+    },
+    {
+     "id": "5.2",
+     "prompt": "บอก generic name",
+     "format": "short",
+     "accepted": [
+      "enalapril",
+      "ace inhibitor"
+     ],
+     "keywords_all": [
+      "ace"
+     ],
+     "key_text": "ตามเฉลย — ไม่มี (prototype = Enalapril จัดอยู่ในกลุ่ม ACE inhibitor)",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ"
+    },
+    {
+     "id": "5.3",
+     "prompt": "บอก mechanism of action",
+     "format": "short",
+     "accepted": [
+      "ace",
+      "vasodilation"
+     ],
+     "keywords_all": [
+      "ace"
+     ],
+     "key_text": "ยับยั้ง ACE → vasodilation → resistance ↓ → BP ↓ · ลดการดูดกลับของ Na⁺ → blood volume ↓ → CO ↓ → BP ↓",
+     "source_key": "เฉลย: ยับยั้ง ACE → vasodilation → resistance ↓ → BP ↓ · ลดการดูดกลับของ Na⁺ → blood volume ↓ → CO ↓ → BP ↓"
+    },
+    {
+     "id": "5.4",
+     "prompt": "บอก ADR 5 ข้อ (ไม่ซ้ำระบบ)",
+     "format": "short",
+     "accepted": [
+      "cough",
+      "angioedema",
+      "hypotension"
+     ],
+     "keywords_all": [
+      "cough"
+     ],
+     "key_text": "Dry cough, Hypotension, Angioedema, Fetopathic potential (teratogenic), Acute renal insufficiency",
+     "source_key": "เฉลย: Dry cough, Hypotension, Angioedema, Fetopathic potential (teratogenic), Acute renal insufficiency"
+    },
+    {
+     "id": "5.5",
+     "prompt": "แนะนำ lifestyle modification",
+     "format": "short",
+     "accepted": [
+      "ออกกำลัง",
+      "เกลือ",
+      "บุหรี่"
+     ],
+     "keywords_all": [
+      "ออกกำลัง"
+     ],
+     "key_text": "ออกกำลังกาย, ควบคุมอาหาร/ลดเกลือ, หยุดสูบบุหรี่ (เฉลยลายมืออ่านยาก)",
+     "source_key": "เฉลยลายมืออ่านยาก"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "page": 8,
+   "tags": [],
+   "case": "เด็กน้ำหนักแรกคลอด 3500 g อายุ 6 สัปดาห์ หายใจเร็ว เหนื่อย เหงื่อออกหน้าผากตอนดูดนม ดูดนมนานกินยาก โตช้า · tachycardia tachypnea cardiomegaly hepatomegaly murmur LUSB · วินิจฉัย PDA with CHF",
+   "answer_status": "verified",
+   "items": [
+    {
+     "id": "6.1",
+     "prompt": "อธิบายกลไกการเกิด CHF",
+     "format": "short",
+     "accepted": [
+      "left-to-right",
+      "shunt",
+      "pulmonary"
+     ],
+     "keywords_all": [
+      "shunt"
+     ],
+     "key_text": "PDA → เลือดไหลจาก aorta → pulmonary artery (P aorta > P PA) = left-to-right shunt → เลือดไปปอดมาก → pulmonary congestion/edema → tachypnea · CO ↓ → HR ↑ (tachycardia) → HF",
+     "source_key": "เฉลย: PDA → เลือดไหลจาก aorta → pulmonary artery (P aorta > P PA) = left-to-right shunt → เลือดไปปอดมาก → pulmonary congestion/edema → tachypnea · CO ↓ → HR ↑ (tachycardia) → HF"
+    },
+    {
+     "id": "6.2",
+     "prompt": "อธิบายการไหลเวียนเลือด",
+     "format": "short",
+     "accepted": [
+      "aorta",
+      "pulmonary artery"
+     ],
+     "keywords_all": [
+      "aorta"
+     ],
+     "key_text": "เลือดไหลจากหลอดเลือด Aorta ไป Pulmonary artery ผ่าน ductus ซ้ำเข้าปอด → LA → LV → Ao (มี shunt เพิ่ม)",
+     "source_key": "เฉลยเป็นแผนภาพ"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "page": 9,
+   "tags": [],
+   "case": "เด็กชาย 7 ปี เจ็บคอเมื่อ 3 สัปดาห์ก่อน ต่อมาเพลีย ปวดข้อมือข้อเท้า BP 100/70 HR 110 BT 38.7 · pericardial effusion · ข้อแดงและกดเจ็บ · พบ Aschoff body ที่ pericardium",
+   "answer_status": "draft",
+   "items": [
+    {
+     "id": "7.1",
+     "prompt": "วินิจฉัย",
+     "format": "short",
+     "accepted": [
+      "rheumatic"
+     ],
+     "keywords_all": [
+      "rheumatic"
+     ],
+     "key_text": "Rheumatic heart disease (rheumatic fever)",
+     "source_key": "เฉลย: Rheumatic heart disease (rheumatic fever)"
+    },
+    {
+     "id": "7.2",
+     "prompt": "เชื้อที่เกี่ยวข้อง",
+     "format": "short",
+     "accepted": [
+      "streptococcus",
+      "pyogenes"
+     ],
+     "keywords_all": [
+      "streptococcus"
+     ],
+     "key_text": "Streptococcus pyogenes (Group A Streptococcus)",
+     "source_key": "เฉลย: Streptococcus pyogenes (Group A Streptococcus)"
+    },
+    {
+     "id": "7.3",
+     "prompt": "Pathogenesis",
+     "format": "short",
+     "accepted": [
+      "cross-reaction",
+      "molecular mimicry"
+     ],
+     "keywords_all": [
+      "cross"
+     ],
+     "key_text": "ติดเชื้อ S. pyogenes (sore throat) → cross-reaction กับ self antigen ของหัวใจ → immune system โจมตี → vegetation, fibrinous pericarditis, Aschoff body",
+     "source_key": "เฉลย: ติดเชื้อ S. pyogenes (sore throat) → cross-reaction กับ self antigen ของหัวใจ → immune system โจมตี → vegetation, fibrinous pericarditis, Aschoff body"
+    },
+    {
+     "id": "7.4",
+     "prompt": "ลักษณะ Aschoff body",
+     "format": "short",
+     "accepted": [
+      "anitschkow",
+      "aschoff cell",
+      "fibrinoid"
+     ],
+     "keywords_all": [
+      "anitschkow"
+     ],
+     "key_text": "กลุ่มเซลล์ประกอบด้วย Aschoff cell, Anitschkow cell, fibrinoid necrosis",
+     "source_key": "เฉลย: กลุ่มเซลล์ประกอบด้วย Aschoff cell, Anitschkow cell, fibrinoid necrosis"
+    },
+    {
+     "id": "7.5",
+     "prompt": "Complication ที่เกี่ยวข้องกับหัวใจ และที่พบบ่อยที่สุด",
+     "format": "short",
+     "accepted": [
+      "mitral"
+     ],
+     "keywords_all": [
+      "mitral"
+     ],
+     "key_text": "Mitral valve stenosis (เรื้อรัง) · ที่พบบ่อยสุดคือ mitral valve (เฉลยว่าง — AI เติม)",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ"
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "page": 10,
+   "tags": [],
+   "case": "ชาย 67 ปีเจ็บหน้าอก เหงื่อแตก สูบบุหรี่ 1 ซองวัน 30 ปี HT · Cardiac enzyme: Total creatine 180→420, CK-MB 5→30, Cardiac troponin 15→60 (admit → 9 ชม.) ",
+   "answer_status": "verified",
+   "items": [
+    {
+     "id": "8.1",
+     "prompt": "ผู้ป่วยมีกล้ามเนื้อหัวใจตายหรือไม่",
+     "format": "short",
+     "accepted": [
+      "ใช่",
+      "yes",
+      "mi"
+     ],
+     "keywords_all": [
+      "ใช่"
+     ],
+     "key_text": "ใช่ (มี myocardial infarction)",
+     "source_key": "เฉลย: ใช่ (มี myocardial infarction)"
+    },
+    {
+     "id": "8.2",
+     "prompt": "เหตุผล 2 ข้อ",
+     "format": "short",
+     "accepted": [
+      "url",
+      "troponin"
+     ],
+     "keywords_all": [
+      "troponin"
+     ],
+     "key_text": "Cardiac troponin และ CK-MB สูงกว่า URL มากกว่า 3 เท่า และมีการเพิ่มขึ้น/ลดลงต่อเนื่อง (rise and fall)",
+     "source_key": "เฉลย: Cardiac troponin และ CK-MB สูงกว่า URL มากกว่า 3 เท่า และมีการเพิ่มขึ้น/ลดลงต่อเนื่อง (rise and fall)"
+    },
+    {
+     "id": "8.3a",
+     "prompt": "ข้อดีของ cardiac troponin",
+     "format": "short",
+     "accepted": [
+      "specificity",
+      "late mi"
+     ],
+     "keywords_all": [
+      "specificity"
+     ],
+     "key_text": "Specificity สูง ไม่มาจากกล้ามเนื้อลาย/ไม่ใช่จากกล้ามเนื้อ · ใช้ตรวจ late MI ได้",
+     "source_key": "เฉลย: Specificity สูง ไม่มาจากกล้ามเนื้อลาย/ไม่ใช่จากกล้ามเนื้อ · ใช้ตรวจ late MI ได้"
+    },
+    {
+     "id": "8.3b",
+     "prompt": "ข้อจำกัดของ cardiac troponin",
+     "format": "short",
+     "accepted": [
+      "sensitivity",
+      "reinfarction"
+     ],
+     "keywords_all": [
+      "reinfarction"
+     ],
+     "key_text": "Sensitivity ในช่วงแรกไม่พอ · ใช้ตรวจ reinfarction ไม่ได้",
+     "source_key": "เฉลย: Sensitivity ในช่วงแรกไม่พอ · ใช้ตรวจ reinfarction ไม่ได้"
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "page": 10,
+   "tags": [],
+   "case": "ชาย 50 ปี ไข้หนาวสั่น ท้องเสีย 3 วัน BT 39.5 BP 110/70 นอนให้น้ำเกลือและยาปฏิชีวนะทางหลอดเลือดดำ แล้วเก็บเลือดตรวจเชื้อจากสายน้ำเกลือ 20 mL แบ่งใส่ 2 ขวด ขวดละ 10 mL ตั้งอุณหภูมิห้อง 1 ชม. ก่อนส่งห้องปฏิบัติการ",
+   "answer_status": "draft",
+   "items": [
+    {
+     "id": "9.1",
+     "prompt": "ข้อผิดพลาดในการเก็บ hemoculture 3 ข้อ",
+     "format": "short",
+     "accepted": [
+      "ก่อนให้ยา",
+      "เส้นเลือด",
+      "37"
+     ],
+     "keywords_all": [
+      "ก่อน"
+     ],
+     "key_text": "ควรเก็บเลือดก่อนให้ยาปฏิชีวนะ · ควรเจาะจากเส้นเลือดดำ (ไม่ใช่จากสายน้ำเกลือ) · (ข้อ 3 ว่าง: ควรส่ง/ตั้งที่ 35–37 °C ไม่ใช่อุณหภูมิห้อง · ควรเก็บ 2–3 ชุดต่างตำแหน่ง)",
+     "source_key": "เฉลยครบ 2 ข้อ ข้อ 3 ไม่มี — AI เติม"
+    }
+   ]
+  }
+ ],
+ "time_limit_min": 120
+}
