@@ -2,1236 +2,1560 @@
  "set_id": "hb_47_MCQ",
  "questions": {
   "1": {
-   "explanation": "การเพิ่ม neurotransmitter ในช่อง synapse ทำได้โดยยับยั้ง reuptake ที่ presynaptic transporter",
+   "explanation": "ยับยั้ง reuptake ที่ presynaptic transporter ทำให้สารสื่อประสาทค้างใน synapse มากขึ้น",
    "option_why": {
-    "A": "เพิ่ม MAO จะสลาย NT มากขึ้น",
-    "B": "✓ ยับยั้ง reuptake ทำให้ NT คงอยู่นานขึ้น (เช่น SSRI)",
-    "C": "Cl- influx ทำให้เซลล์ถูกยับยั้ง",
-    "D": "เพิ่ม storage ไม่เพิ่ม NT ใน synapse โดยตรง",
-    "E": "ไม่ใช่คำตอบที่ถูกต้องของโจทย์ข้อนี้"
+    "A": "MAO ที่เพิ่มจะทำลายสารสื่อประสาท ปริมาณจึงลดลง",
+    "B": "✓ ปิด transporter (SERT/NET/DAT) สารไม่ถูกดูดกลับ ระดับใน synapse เพิ่ม",
+    "C": "Cl- influx ที่ cell body ทำให้เซลล์ถูกยับยั้ง ไม่เพิ่มปริมาณสาร",
+    "D": "เพิ่มการเก็บใน vesicle ลดสารที่ปล่อยออก",
+    "E": "ลดการปล่อยสารตรง ๆ จึงลดปริมาณ"
    },
-   "key_concept": "• Reuptake inhibition → ↑ synaptic NT\n• สรุป: การเพิ่ม neurotransmitter ในช่อง synapse ทำได้โดยยับยั้ง reuptake ที่ presynaptic transpor"
+   "key_concept": "• เพิ่ม NT ใน synapse: ยับยั้ง reuptake, ยับยั้ง MAO/COMT, เพิ่ม release\n• SSRI/TCA/methylphenidate ออกฤทธิ์ที่ transporter",
+   "mechanism": [
+    "ยาจับ presynaptic transporter",
+    "ปิดการดูดกลับ",
+    {
+     "s": "NT ค้างใน synaptic cleft นานขึ้น",
+     "answer": true
+    },
+    "กระตุ้น postsynaptic receptor มากขึ้น"
+   ]
   },
   "2": {
-   "explanation": "ยาที่ผ่าน BBB ได้ดีต้องละลายในไขมันและไม่มีประจุ",
+   "explanation": "ยา CNS ผ่าน BBB ได้ดีต้องละลายไขมัน (lipophilic) และไม่มีประจุ",
    "option_why": {
-    "A": "ประจุบวกผ่านยาก",
-    "B": "✓ Lipophilic ผ่าน BBB ได้ดี",
-    "C": "Hydrophilic ผ่านยาก",
-    "D": "โมเลกุลใหญ่ผ่านยาก",
-    "E": "ประจุลบผ่านยาก"
+    "A": "ประจุบวกผ่าน tight junction ของ BBB ไม่ได้",
+    "B": "✓ lipophilic แพร่ผ่านเยื่อไขมันของ endothelium ได้",
+    "C": "hydrophilic ติดอยู่ในน้ำ ผ่านเยื่อไขมันไม่ได้",
+    "D": "โมเลกุลใหญ่ซับซ้อนผ่านยาก",
+    "E": "ประจุลบผ่านไม่ได้"
    },
-   "key_concept": "• CNS drug: lipophilic, small, non-ionized\n• สรุป: ยาที่ผ่าน BBB ได้ดีต้องละลายในไขมันและไม่มีประจุ"
+   "key_concept": "• BBB ผ่านง่าย: เล็ก ละลายไขมัน ไม่มีประจุ\n• BBB endothelium มี tight junction และ efflux pump (P-gp)"
   },
   "3": {
-   "explanation": "GABA เป็น inhibitory NT หลักของสมอง ส่วน glutamate เป็น excitatory",
+   "explanation": "GABA เป็น inhibitory neurotransmitter ล้วน",
    "option_why": {
-    "A": "Glutamate เป็น excitatory",
-    "B": "✓ GABA เปิด Cl- channel ยับยั้ง",
-    "C": "Dopamine มีทั้ง excitatory และ inhibitory ขึ้นกับ receptor",
-    "D": "Serotonin มีทั้งสองแบบ",
-    "E": "ACh ส่วนใหญ่ excitatory"
+    "A": "glutamate เป็น excitatory หลัก",
+    "B": "✓ GABA เปิด Cl- channel ทำให้ hyperpolarize",
+    "C": "dopamine กระตุ้นหรือยับยั้งขึ้นกับ receptor",
+    "D": "serotonin กระตุ้น/ยับยั้งขึ้นกับ receptor",
+    "E": "ACh ทำงานทั้ง excitatory และ inhibitory"
    },
-   "key_concept": "• GABA/glycine = inhibitory NT\n• สรุป: GABA เป็น inhibitory NT หลักของสมอง ส่วน glutamate เป็น excitatory"
+   "key_concept": "• inhibitory: GABA, glycine\n• excitatory: glutamate\n• DA/5-HT/ACh ขึ้นกับชนิด receptor"
   },
   "4": {
-   "explanation": "Ca2+ influx ผ่าน voltage-gated Ca channel ทำให้ vesicle หลั่ง NT",
+   "explanation": "Ca2+ เข้า presynaptic terminal กระตุ้น vesicle fusion และปล่อย NT",
    "option_why": {
-    "A": "K+ ทำให้ repolarize",
-    "B": "Na+ ทำให้ depolarize",
-    "C": "Mg2+ บล็อก NMDA",
-    "D": "Cl- ยับยั้งเซลล์",
-    "E": "✓ Ca2+ กระตุ้น exocytosis ของ vesicle"
+    "A": "K+ ออกทำให้ repolarize",
+    "B": "Na+ เข้าสร้าง action potential แต่ไม่ใช่ตัวกระตุ้น exocytosis",
+    "C": "Mg2+ ยับยั้ง NMDA channel",
+    "D": "Cl- ทำให้เซลล์ถูกยับยั้ง",
+    "E": "✓ Ca2+ ผ่าน voltage-gated Ca channel จับ synaptotagmin ปล่อย vesicle"
    },
-   "key_concept": "• Ca2+ → SNARE → vesicle fusion\n• สรุป: Ca2+ influx ผ่าน voltage-gated Ca channel ทำให้ vesicle หลั่ง NT"
+   "key_concept": "• action potential → Ca influx → exocytosis (SNARE)\n• botulinum toxin ตัด SNARE ยับยั้ง release",
+   "mechanism": [
+    "action potential ถึง terminal",
+    "voltage-gated Ca channel เปิด",
+    {
+     "s": "Ca2+ เข้า จับ synaptotagmin",
+     "answer": true
+    },
+    "vesicle หลอมรวมปล่อย NT"
+   ]
   },
   "5": {
-   "explanation": "Morphine ถูกเมแทบอไลซ์ที่ตับอย่างมากใน first-pass metabolism ทำให้ oral bioavailability ต่ำ",
+   "explanation": "Morphine มี first-pass metabolism สูง จึงกินแล้ว bioavailability ต่ำ",
    "option_why": {
-    "A": "ไม่ถูกย่อยด้วย cholinesterase",
-    "B": "Active metabolite คือ M6G ไม่ใช่ M3G",
-    "C": "ดูดซึมทาง GI ได้ดีพอสมควร",
-    "D": "ขับทางไตเป็นหลัก",
-    "E": "✓ First-pass metabolism มาก"
+    "A": "ถูกเมตาบอไลต์ด้วย glucuronidation ไม่ใช่ cholinesterase",
+    "B": "M3G เป็น metabolite ที่ไม่ active ที่ opioid receptor (M6G คือ active)",
+    "C": "ดูดซึมทาง GI ได้ดี แต่ผ่านตับเยอะ",
+    "D": "ขับทางไตเป็นหลัก ไม่ใช่น้ำดี",
+    "E": "✓ ถูกทำลายที่ตับก่อนเข้าระบบ ทำให้ oral bioavailability ~25%"
    },
-   "key_concept": "• Morphine: first-pass ↑, M6G active, renal excretion\n• สรุป: Morphine ถูกเมแทบอไลซ์ที่ตับอย่างมากใน first-pass metabolism ทำให้ oral bioavailability ต่"
+   "key_concept": "• morphine: UGT2B7 → M3G (inactive), M6G (active)\n• oral dose > IV dose\n• ขับทางไต: ระวังในไตวาย"
   },
   "6": {
-   "explanation": "Respiratory depression จาก morphine เกิดผ่าน mu opioid receptor ที่ brainstem",
+   "explanation": "Respiratory depression จาก morphine ผ่าน μ receptor",
    "option_why": {
-    "A": "✓ Mu receptor ทำให้กดการหายใจ",
-    "B": "Dynorphin receptor เป็นชื่อ peptide",
-    "C": "Delta ไม่ใช่หลัก",
-    "D": "GABA ไม่ใช่ target ของ morphine โดยตรง",
-    "E": "Glutamate ไม่ใช่"
+    "A": "✓ μ opioid receptor ที่ brainstem ลดความไวต่อ CO2",
+    "B": "dynorphin (κ) ทำ dysphoria/sedation",
+    "C": "δ receptor ผลต่อการหายใจน้อยกว่า",
+    "D": "GABA ไม่ใช่ receptor ของ morphine",
+    "E": "glutamate ไม่ใช่ receptor ของ morphine"
    },
-   "key_concept": "• Mu receptor: analgesia, respiratory depression, miosis\n• สรุป: Respiratory depression จาก morphine เกิดผ่าน mu opioid receptor ที่ brainstem"
+   "key_concept": "• μ: analgesia, respiratory depression, miosis, constipation, euphoria\n• antidote: naloxone",
+   "mechanism": [
+    "morphine จับ μ receptor ที่ brainstem",
+    "ความไวของ chemoreceptor ต่อ CO2 ลด",
+    {
+     "s": "กดศูนย์หายใจ",
+     "answer": true
+    },
+    "RR ลด"
+   ]
   },
   "7": {
-   "explanation": "Morphine ห้ามใช้ใน head injury เพราะกดการหายใจทำให้ CO2 สูง เพิ่ม ICP และบดบังอาการ",
+   "explanation": "Head injury เป็นข้อห้ามใช้ morphine เพราะกดการหายใจ CO2 คั่ง ICP สูง และบดบังอาการประเมินระบบประสาท",
    "option_why": {
-    "A": "ผู้ติดเฮโรอีนไม่ใช่ข้อห้ามสัมบูรณ์",
-    "B": "✓ Head injury เป็นข้อห้าม",
-    "C": "ใช้ระหว่างคลอดอย่างระวัง",
-    "D": "ใช้ premedication ได้",
-    "E": "ใช้ใน burn ได้"
+    "A": "ผู้ติด heroin ยังให้ปวดหลังผ่าตัดได้ภายใต้การติดตาม",
+    "B": "✓ CO2 คั่ง → vasodilation → ICP เพิ่ม และ miosis/sedation ปิดบังอาการ",
+    "C": "ระหว่างคลอดใช้ได้ (ระวังการกดหายใจทารก)",
+    "D": "premedication ใช้ได้",
+    "E": "ปวดไฟไหม้รุนแรงใช้ได้"
    },
-   "key_concept": "• Opioid contraindication: head injury ↑ ICP\n• สรุป: Morphine ห้ามใช้ใน head injury เพราะกดการหายใจทำให้ CO2 สูง เพิ่ม ICP และบดบังอาการ"
+   "key_concept": "• ข้อห้าม: head injury, respiratory depression, acute asthma\n• opioid → hypercapnia → ↑ICP",
+   "mechanism": [
+    "morphine กดการหายใจ",
+    "PaCO2 สูง",
+    {
+     "s": "หลอดเลือดสมองขยาย ICP เพิ่ม",
+     "answer": true
+    },
+    "บดบังการประเมินระบบประสาท"
+   ]
   },
   "8": {
-   "explanation": "CYP2D6 poor metabolizer เปลี่ยน codeine เป็น morphine ไม่ได้ จึงบรรเทาปวดไม่ได้ผล",
+   "explanation": "CYP2D6 poor metabolizer เปลี่ยน codeine เป็น morphine ไม่ได้ จึงไม่ลดปวด",
    "option_why": {
-    "A": "ระดับ codeine อาจเพิ่ม",
-    "B": "การหายใจไม่ลดเพราะ morphine ต่ำ",
-    "C": "✓ ขาด active morphine จึงไม่ได้ผล",
-    "D": "ระดับ morphine ลดลง",
-    "E": "ไม่มี miosis"
+    "A": "ระดับ codeine ไม่ลด แต่อาจสูงขึ้น",
+    "B": "RR ไม่ลดเพราะไม่มี morphine",
+    "C": "✓ prodrug ไม่ถูกกระตุ้น จึงไม่ได้ผลระงับปวด",
+    "D": "morphine ลดลงไม่เพิ่ม",
+    "E": "ไม่เกิด miosis เพราะไม่มี morphine"
    },
-   "key_concept": "• Codeine prodrug → morphine ผ่าน CYP2D6\n• สรุป: CYP2D6 poor metabolizer เปลี่ยน codeine เป็น morphine ไม่ได้ จึงบรรเทาปวดไม่ได้ผล"
+   "key_concept": "• codeine เป็น prodrug → morphine ด้วย CYP2D6\n• ultrarapid → morphine มาก เสี่ยงกดหายใจ\n• poor → ไม่ได้ผล",
+   "mechanism": [
+    "CYP2D6 ทำงานน้อย",
+    "codeine เปลี่ยนเป็น morphine ไม่ได้",
+    {
+     "s": "ไม่มี active metabolite",
+     "answer": true
+    },
+    "ปวดไม่ทุเลา"
+   ]
   },
   "9": {
-   "explanation": "Local anesthetic ต้องใช้ทั้ง ionized และ unionized form จึงออกฤทธิ์ (unionized ผ่านเยื่อ ionized จับ Na channel)",
+   "explanation": "Local anesthetic ต้องการทั้งรูป unionized (ผ่านเยื่อ) และ ionized (จับ Na channel)",
    "option_why": {
-    "A": "ไม่กระตุ้น GABA",
-    "B": "ไม่บล็อก glutamate",
-    "C": "✓ ทั้งสองรูปมีบทบาทในกลไกบล็อก Na channel",
-    "D": "ไม่บล็อก K efflux",
-    "E": "ไม่เพิ่ม Cl influx"
+    "A": "ไม่ออกฤทธิ์ผ่าน GABA",
+    "B": "ไม่ใช่ glutamate antagonist",
+    "C": "✓ unionized ผ่านเยื่อเข้าเซลล์ ionized จับ Na channel ด้านใน",
+    "D": "ไม่บล็อก K channel เป็นหลัก",
+    "E": "ไม่เพิ่ม Cl- influx"
    },
-   "key_concept": "• LA บล็อก voltage-gated Na channel\n• สรุป: Local anesthetic ต้องใช้ทั้ง ionized และ unionized form จึงออกฤทธิ์ (unionized ผ่านเยื่อ i"
+   "key_concept": "• LA ปิด voltage-gated Na channel\n• weak base: pKa สูง ionized มาก ออกฤทธิ์ช้า\n• ในเนื้อเยื่ออักเสบ pH ต่ำ ยาออกฤทธิ์ได้ไม่ดี"
   },
   "10": {
-   "explanation": "Epinephrine ทำให้หลอดเลือดหดตัว ลดเลือดออกและยืดระยะเวลาออกฤทธิ์",
+   "explanation": "ผสม epinephrine ใน LA เพื่อหดหลอดเลือด ลดเลือดออก และยืดระยะเวลาออกฤทธิ์",
    "option_why": {
-    "A": "ยืดระยะเวลาออกฤทธิ์ ไม่ลด",
-    "B": "ลด systemic absorption",
-    "C": "ลด onset ไม่ใช่ชะลอ",
+    "A": "epinephrine ทำให้ duration นานขึ้น ไม่ลด",
+    "B": "ลดการดูดซึมเข้าระบบ ไม่เพิ่ม",
+    "C": "ไม่ได้ทำให้ onset ช้า",
     "D": "ไม่เพิ่ม conduction velocity",
-    "E": "✓ vasoconstriction ลดเลือดออกในเนื้อเยื่อ"
+    "E": "✓ α1 vasoconstriction ลดเลือดออกและคงยาที่ตำแหน่ง"
    },
-   "key_concept": "• LA + epinephrine: ↓ absorption, ↑ duration, ↓ bleeding\n• สรุป: Epinephrine ทำให้หลอดเลือดหดตัว ลดเลือดออกและยืดระยะเวลาออกฤทธิ์"
+   "key_concept": "• epinephrine + LA: duration ↑ systemic absorption ↓ bleeding ↓\n• ห้ามใช้ที่ปลายนิ้ว/องคชาต",
+   "mechanism": [
+    "epinephrine กระตุ้น α1",
+    "หลอดเลือดหดตัว",
+    {
+     "s": "เลือดออกลด ยาถูกดูดช้า",
+     "answer": true
+    },
+    "ฤทธิ์นานขึ้น พิษระบบลดลง"
+   ]
   },
   "11": {
-   "explanation": "การชักเกิดจาก Ca2+ influx ที่ทำให้เซลล์ถูกกระตุ้นมาก (paroxysmal depolarization shift)",
+   "explanation": "ชักเกร็งทั้งตัว: Ca2+ influx เข้า neuron เพิ่ม glutamate release และการกระตุ้นมากผิดปกติ",
    "option_why": {
-    "A": "Na efflux ไม่ทำให้เกิดชัก",
-    "B": "K influx ทำให้ hyperpolarize",
-    "C": "✓ Ca influx ทำให้ depolarize/release NT",
-    "D": "Mg efflux ไม่ใช่",
-    "E": "Cl efflux ไม่ใช่"
+    "A": "Na+ ออกไม่ทำให้ depolarize",
+    "B": "K+ เข้าทำให้ hyperpolarize/ยับยั้ง",
+    "C": "✓ Ca2+ เข้า presynaptic เพิ่มการปล่อย glutamate และ burst firing",
+    "D": "Mg2+ ออกทำให้ NMDA ไม่ถูกบล็อก (แต่ไม่ใช่ข้อหลัก)",
+    "E": "Cl- ออกทำให้ depolarize แต่ไม่ใช่กลไกหลักของโจทย์"
    },
-   "key_concept": "• Seizure: Na+/Ca2+ influx, excitatory\n• สรุป: การชักเกิดจาก Ca2+ influx ที่ทำให้เซลล์ถูกกระตุ้นมาก (paroxysmal depolarization shift)"
+   "key_concept": "• seizure: excitation > inhibition\n• Ca2+ influx → glutamate release\n• ยากันชัก: ปิด Na/Ca channel หรือเพิ่ม GABA",
+   "mechanism": [
+    "neuron depolarize ซ้ำ",
+    "Ca2+ เข้ามาก",
+    {
+     "s": "glutamate ถูกปล่อยมาก neuron อื่นถูกกระตุ้นตาม",
+     "answer": true
+    },
+    "ชักทั่วร่างกาย"
+   ]
   },
   "12": {
-   "explanation": "ปวดหัวรุนแรงกะทันหัน BP สูง ไขมันสูง จึงสงสัย hemorrhagic stroke ที่ทำให้ focal seizure",
+   "explanation": "ปวดหัวรุนแรงเฉียบพลัน + ชากระตุกมือซ้าย + HTN เก่า = hemorrhagic stroke",
    "option_why": {
-    "A": "MS ไม่เกิดเฉียบพลัน",
-    "B": "Meningioma โตช้า",
-    "C": "Craniopharyngioma ไม่ใช่",
-    "D": "✓ Hemorrhagic stroke สัมพันธ์ HTN",
-    "E": "Viral encephalitis มีไข้"
+    "A": "MS เป็นโรคเรื้อรัง มักไม่เฉียบพลันรุนแรงแบบนี้",
+    "B": "meningioma โตช้า",
+    "C": "craniopharyngioma ทำ visual/endocrine",
+    "D": "✓ HTN เรื้อรังทำให้ vessel แตก ปวดหัวรุนแรงกะทันหัน + อ่อนแรงข้างเดียว",
+    "E": "เชื้อไวรัสมักมีไข้"
    },
-   "key_concept": "• HTN + sudden headache → hemorrhagic stroke\n• สรุป: ปวดหัวรุนแรงกะทันหัน BP สูง ไขมันสูง จึงสงสัย hemorrhagic stroke ที่ทำให้ focal seizure"
+   "key_concept": "• thunderclap headache + focal deficit + HTN = ICH\n• CT สมองไม่ใช้สีเพื่อแยก\n• BP สูงเป็นปัจจัยเสี่ยงหลัก",
+   "mechanism": [
+    "HTN เรื้อรัง",
+    "Charcot-Bouchard aneurysm แตก",
+    {
+     "s": "เลือดออกในสมอง",
+     "answer": true
+    },
+    "ปวดหัวรุนแรงและอ่อนแรง"
+   ]
   },
   "13": {
-   "explanation": "ชักเกร็งกระตุกทั้งตัว 1-2 นาที หมดสติ ลิ้นถูกกัด คือ generalized tonic-clonic seizure",
+   "explanation": "ชักครั้งแรกในคนปกติ 1–2 นาที หลังชักซึม = generalized seizure",
    "option_why": {
-    "A": "Epilepsy เป็นโรคโดยรวม ต้องมีชักซ้ำ",
-    "B": "Dystonia ไม่หมดสติ",
-    "C": "Syncope ไม่เกร็งกระตุก",
-    "D": "Status ต้องชักเกิน 5 นาที",
-    "E": "✓ GTC seizure ตรงลักษณะ"
+    "A": "epilepsy ต้องชักซ้ำโดยไม่มีสาเหตุกระตุ้น",
+    "B": "dystonia ไม่หมดสติ",
+    "C": "syncope ไม่เกร็งนาน และฟื้นเร็ว",
+    "D": "status epilepticus ≥5 นาที",
+    "E": "✓ มีอาการชักทั่วร่างกายครั้งเดียว มี postictal state ชัดเจน"
    },
-   "key_concept": "• GTC: tonic-clonic, tongue bite, postictal\n• สรุป: ชักเกร็งกระตุกทั้งตัว 1-2 นาที หมดสติ ลิ้นถูกกัด คือ generalized tonic-clonic seizure"
+   "key_concept": "• generalized tonic-clonic: เกร็ง → กระตุก → postictal\n• status epilepticus ≥5 นาที\n• epilepsy: ≥2 ครั้งไม่มีสาเหตุกระตุ้น"
   },
   "14": {
-   "explanation": "กระตุกแขนซ้ำๆ โดยรู้สึกตัว คือ focal motor seizure",
+   "explanation": "กระตุกซ้ำแขนซ้ายโดยรู้ตัวดี = focal motor seizure (aware)",
    "option_why": {
-    "A": "✓ Focal motor ไม่เสียความรู้สึกตัว",
-    "B": "Epileptic spasm เป็นกลุ่มลำตัว",
-    "C": "ต้องเสียความรู้สึกตัว",
-    "D": "Atonic คือสูญเสียโทน",
-    "E": "Myoclonic เป็นกระตุกสั้น"
+    "A": "✓ focal aware motor seizure",
+    "B": "epileptic spasm เป็นชุดในทารกทั้งตัว",
+    "C": "focal impaired awareness ต้องสูญเสียการรู้ตัว",
+    "D": "atonic คือล้มลงอ่อนปวกเปียก",
+    "E": "myoclonic คือกระตุกสั้นมากแบบเฉียบ"
    },
-   "key_concept": "• Focal aware motor seizure\n• สรุป: กระตุกแขนซ้ำๆ โดยรู้สึกตัว คือ focal motor seizure"
+   "key_concept": "• ILAE: focal aware vs impaired awareness\n• motor cortex ควบคุมแขนด้านตรงข้าม"
   },
   "15": {
-   "explanation": "อาการนำ (aura) คลื่นไส้ปวดท้องก่อน GTC บ่งชี้ focal onset เลือก carbamazepine และหลีกเลี่ยง valproate ในคนอ้วน",
+   "explanation": "Focal → generalized seizure ใช้ carbamazepine (first-line focal)",
    "option_why": {
-    "A": "Diazepam ใช้ฉุกเฉิน",
-    "B": "Valproate ทำให้น้ำหนักเพิ่ม",
-    "C": "Gabapentin ไม่ใช่ first line",
-    "D": "✓ Carbamazepine เหมาะกับ focal seizure",
-    "E": "Phenobarbital ใช้น้อย"
+    "A": "diazepam ใช้ยุติชักเฉียบพลัน ไม่ใช่ยาคุมระยะยาว",
+    "B": "valproate ทำน้ำหนักขึ้น ผู้ป่วยอ้วนเลี่ยง",
+    "C": "gabapentin ไม่ใช่ยาตัวแรก",
+    "D": "✓ carbamazepine ปิด Na channel ใช้กับ focal seizure ไม่ทำน้ำหนักขึ้น",
+    "E": "phenobarbital มี sedation มาก"
    },
-   "key_concept": "• Focal → carbamazepine; valproate weight gain\n• สรุป: อาการนำ (aura) คลื่นไส้ปวดท้องก่อน GTC บ่งชี้ focal onset เลือก carbamazepine และหลีกเลี่ย"
+   "key_concept": "• focal: carbamazepine, lamotrigine, levetiracetam\n• valproate: weight gain, teratogenic\n• absence: ethosuximide"
   },
   "16": {
-   "explanation": "Rhythmic jerking ของแขนซ้าย (focal) ส่วน frontal lobe (motor cortex)",
+   "explanation": "เริ่มด้วยกระตุกแขนซ้ายแล้วเกร็งทั้งตัว = focal origin ที่ motor cortex (frontal)",
    "option_why": {
-    "A": "Thalamus ไม่ใช่",
-    "B": "✓ Frontal lobe motor area",
-    "C": "Occipital เกี่ยวกับการมองเห็น",
-    "D": "Caudate ไม่ใช่",
-    "E": "Putamen ไม่ใช่"
+    "A": "thalamus เป็น relay/absence",
+    "B": "✓ primary motor cortex (precentral gyrus) ใน frontal lobe ควบคุมแขน",
+    "C": "occipital ทำ visual aura",
+    "D": "caudate ไม่ใช่จุดกำเนิดชัก",
+    "E": "putamen ไม่ใช่จุดกำเนิดชัก"
    },
-   "key_concept": "• Focal motor seizure ← precentral gyrus\n• สรุป: Rhythmic jerking ของแขนซ้าย (focal) ส่วน frontal lobe (motor cortex)"
+   "key_concept": "• Jacksonian march จาก motor cortex\n• focal → bilateral tonic-clonic"
   },
   "17": {
-   "explanation": "Hypnotic ที่ดีควรทำให้หลับเร็ว ไม่รบกวน REM",
+   "explanation": "Hypnotic ในอุดมคติคือทำให้หลับเร็ว (shorten sleep onset)",
    "option_why": {
     "A": "ไม่ควรกด REM",
-    "B": "ไม่เกี่ยวกับการฝัน",
-    "C": "ไม่ใช่เป้าหมาย",
-    "D": "✓ Sleep onset สั้น",
-    "E": "ไม่ควรออกฤทธิ์ยาวจน hangover"
+    "B": "ฝันมากไม่ใช่เป้าหมาย",
+    "C": "NREM นานสุดไม่ใช่เป้าหมาย",
+    "D": "✓ ลด sleep latency โดยไม่รบกวน sleep architecture",
+    "E": "ไม่ควรหลับนานเกินจนง่วงวันต่อมา"
    },
-   "key_concept": "• Ideal hypnotic: short onset, minimal REM effect\n• สรุป: Hypnotic ที่ดีควรทำให้หลับเร็ว ไม่รบกวน REM"
+   "key_concept": "• hypnotic ดี: onset เร็ว, ไม่ hangover, ไม่ติด\n• BZD กด REM/SWS"
   },
   "18": {
-   "explanation": "ตามเฉลยต้นฉบับผู้สูงอายุเลือก lorazepam (ออกฤทธิ์สั้น-ปานกลาง ไม่มี active metabolite)",
+   "explanation": "ผู้สูงอายุนอนไม่หลับ ใช้ lorazepam (short-intermediate, ไม่มี active metabolite) ตามเฉลย",
    "option_why": {
-    "A": "Zaleplon ออกฤทธิ์สั้นมาก",
-    "B": "Diazepam ออกฤทธิ์ยาว สะสมในผู้สูงอายุ",
-    "C": "✓ เฉลยต้นฉบับเลือก",
-    "D": "Suvorexant ยังใหม่",
-    "E": "Zolpidem เสี่ยงล้ม"
+    "A": "zaleplon สั้นมากแต่ไม่ใช่เฉลย",
+    "B": "diazepam ยาว สะสม ล้ม",
+    "C": "✓ lorazepam ถูก glucuronidate ปลอดภัยกว่าในผู้สูงอายุ",
+    "D": "suvorexant เป็นทางเลือกใหม่ แต่ตามเฉลยเลือก lorazepam",
+    "E": "zolpidem เสี่ยงล้ม/ความจำ"
    },
-   "key_concept": "• ผู้สูงอายุ: ใช้ยาออกฤทธิ์สั้น\n• สรุป: ตามเฉลยต้นฉบับผู้สูงอายุเลือก lorazepam (ออกฤทธิ์สั้น-ปานกลาง ไม่มี active metabolite)"
+   "key_concept": "• เลือก BZD ที่ไม่มี active metabolite ใน elderly\n• Beers: เลี่ยง Z-drug"
   },
   "19": {
-   "explanation": "พิษ diazepam แก้ด้วย flumazenil (GABA-A antagonist)",
+   "explanation": "Flumazenil แก้พิษ diazepam",
    "option_why": {
-    "A": "Chlorpheniramine เป็น antihistamine",
-    "B": "Thiopental เป็น barbiturate",
-    "C": "✓ Flumazenil แก้ benzodiazepine",
-    "D": "Suvorexant เป็น orexin antagonist",
-    "E": "Zolpidem เป็น agonist"
+    "A": "chlorpheniramine เป็น antihistamine",
+    "B": "thiopental ทำให้ง่วงเพิ่ม",
+    "C": "✓ flumazenil แย่งจับ BZD site ที่ GABA-A",
+    "D": "suvorexant ทำให้ง่วง",
+    "E": "zolpidem ทำให้ง่วง"
    },
-   "key_concept": "• BZD overdose → flumazenil\n• สรุป: พิษ diazepam แก้ด้วย flumazenil (GABA-A antagonist)"
+   "key_concept": "• flumazenil: BZD antagonist half-life สั้น\n• ระวังชักถ้าติด BZD",
+   "mechanism": [
+    "diazepam เสริม GABA-A",
+    "กดสมอง",
+    {
+     "s": "flumazenil แย่งจับ BZD site",
+     "answer": true
+    },
+    "กลับ sedation"
+   ]
   },
   "20": {
-   "explanation": "Benzodiazepine จับ GABA-A receptor เพิ่มความถี่การเปิด Cl- channel",
+   "explanation": "BZD ออกฤทธิ์ที่ GABA-A receptor",
    "option_why": {
-    "A": "Dopamine receptor ไม่ใช่",
-    "B": "Glutamate receptor ไม่ใช่",
-    "C": "✓ GABA-A",
-    "D": "GABA-B เป็น target ของ baclofen",
-    "E": "Nicotinic ไม่ใช่"
+    "A": "dopamine receptor เป้าหมายของ antipsychotic",
+    "B": "glutamate receptor ไม่ใช่เป้าหมาย",
+    "C": "✓ BZD site ที่ GABA-A เพิ่มความถี่เปิด Cl- channel",
+    "D": "GABA-B คือเป้าหมายของ baclofen",
+    "E": "nicotinic ไม่เกี่ยว"
    },
-   "key_concept": "• BZD → GABA-A\n• สรุป: Benzodiazepine จับ GABA-A receptor เพิ่มความถี่การเปิด Cl- channel"
+   "key_concept": "• BZD: เพิ่มความถี่เปิด Cl- channel\n• barbiturate: เพิ่มระยะเวลาเปิด\n• baclofen: GABA-B"
   },
   "21": {
-   "explanation": "Methylphenidate ยับยั้ง reuptake transporter ของ dopamine/NE",
+   "explanation": "Methylphenidate ยับยั้ง reuptake transporter ของ dopamine/norepinephrine",
    "option_why": {
-    "A": "Vesicle transporter คือ reserpine",
-    "B": "α2 ไม่ใช่ target",
-    "C": "✓ DAT/NET reuptake transporter",
-    "D": "Efflux transporter ไม่ใช่",
-    "E": "ไม่ใช่ receptor agonist"
+    "A": "vesicle transporter คือเป้าหมายของ reserpine/amphetamine บางส่วน",
+    "B": "α2 คือเป้าหมายของ clonidine/guanfacine",
+    "C": "✓ ยับยั้ง DAT/NET เพิ่ม DA/NE ใน synapse",
+    "D": "efflux transporter ไม่ใช่เป้า",
+    "E": "ไม่ใช่ DA receptor agonist"
    },
-   "key_concept": "• Methylphenidate: DAT/NET inhibitor\n• สรุป: Methylphenidate ยับยั้ง reuptake transporter ของ dopamine/NE"
+   "key_concept": "• ADHD: methylphenidate, amphetamine (stimulant)\n• atomoxetine = NET inhibitor",
+   "mechanism": [
+    "methylphenidate จับ DAT/NET",
+    "ยับยั้ง reuptake",
+    {
+     "s": "DA/NE ค้างใน synapse",
+     "answer": true
+    },
+    "ปรับสมาธิ ADHD"
+   ]
   },
   "22": {
-   "explanation": "CNS stimulant ใช้ใน narcolepsy และ ADHD",
+   "explanation": "CNS stimulant ใช้รักษา narcolepsy และ ADHD",
    "option_why": {
-    "A": "ทำให้ tachycardia",
-    "B": "ทำให้ hypertension",
-    "C": "ลดความอยากอาหาร",
-    "D": "ทำให้นอนไม่หลับ",
-    "E": "✓ Narcolepsy เป็นข้อบ่งใช้"
+    "A": "ทำ tachycardia เป็นผลเสีย",
+    "B": "ทำความดันสูงเป็นผลเสีย",
+    "C": "ลดความอยากอาหาร ไม่ใช่เพิ่ม",
+    "D": "ทำนอนไม่หลับ เป็นผลเสีย",
+    "E": "✓ ทำให้ตื่นตัว ใช้ใน narcolepsy"
    },
-   "key_concept": "• Stimulant: ADHD, narcolepsy\n• สรุป: CNS stimulant ใช้ใน narcolepsy และ ADHD"
+   "key_concept": "• ข้อบ่งใช้: ADHD, narcolepsy\n• ADR: tachycardia, HTN, insomnia, anorexia"
   },
   "23": {
-   "explanation": "ต้อหินมุมแคบห้ามใช้ยา anticholinergic ชนิด TCA ควรเลือก SSRI เช่น fluvoxamine",
+   "explanation": "Narrow-angle glaucoma เลี่ยง anticholinergic (TCA) เลือก SSRI เช่น fluvoxamine",
    "option_why": {
-    "A": "Desipramine anticholinergic",
-    "B": "✓ SSRI ไม่มี anticholinergic effect",
-    "C": "Amitriptyline anticholinergic มาก",
-    "D": "Nortriptyline เป็น TCA",
-    "E": "Imipramine anticholinergic"
+    "A": "desipramine เป็น TCA มีฤทธิ์ anticholinergic",
+    "B": "✓ SSRI ไม่มี anticholinergic effect เสี่ยงน้อย",
+    "C": "amitriptyline anticholinergic แรงมาก",
+    "D": "nortriptyline เป็น TCA anticholinergic",
+    "E": "imipramine เป็น TCA anticholinergic"
    },
-   "key_concept": "• Narrow angle glaucoma: avoid anticholinergic\n• SSRI ปลอดภัย"
+   "key_concept": "• narrow-angle glaucoma + anticholinergic → ตาบอดจากความดันตาสูง\n• SSRI ปลอดภัยกว่าสำหรับ glaucoma",
+   "mechanism": [
+    "TCA บล็อก muscarinic",
+    "รูม่านตาขยาย มุมตาปิด",
+    {
+     "s": "IOP พุ่งสูง angle closure",
+     "answer": true
+    },
+    "เลี่ยงโดยใช้ SSRI"
+   ]
   },
   "24": {
-   "explanation": "Imipramine มีฤทธิ์ anticholinergic ลดการหดตัวของกระเพาะปัสสาวะ จึงใช้ใน overactive bladder/enuresis",
+   "explanation": "Imipramine (TCA) ใช้ใน overactive bladder เพราะ anticholinergic ลด detrusor contraction",
    "option_why": {
-    "A": "Carbamazepine ไม่ใช่",
-    "B": "Fluoxetine ไม่ใช่",
-    "C": "Haloperidol ไม่ใช่",
-    "D": "Clozapine ไม่ใช่",
-    "E": "✓ Imipramine มี anticholinergic effect"
+    "A": "carbamazepine ไม่ใช่ยา OAB",
+    "B": "fluoxetine ไม่ลด detrusor",
+    "C": "haloperidol ไม่ใช่ยา OAB",
+    "D": "clozapine ทำ drooling/ปัสสาวะราด",
+    "E": "✓ anticholinergic + α agonist effect ช่วยเพิ่มความจุกระเพาะ"
    },
-   "key_concept": "• TCA: anticholinergic → ↓ bladder contraction\n• สรุป: Imipramine มีฤทธิ์ anticholinergic ลดการหดตัวของกระเพาะปัสสาวะ จึงใช้ใน overactive bladder"
+   "key_concept": "• TCA ใช้ enuresis/ OAB\n• ระวัง urinary retention"
   },
   "25": {
-   "explanation": "Fluoxetine + MAOI (moclobemide) → serotonin syndrome",
+   "explanation": "SSRI + MAOI → serotonin syndrome",
    "option_why": {
-    "A": "NMS มาจาก D2 blocker",
-    "B": "Agranulocytosis คือ clozapine",
-    "C": "Tardive dyskinesia คือ antipsychotic ระยะยาว",
-    "D": "Cheese effect เกิดกับ MAOI + tyramine",
-    "E": "✓ SSRI + MAOI → serotonin syndrome"
+    "A": "NMS จาก dopamine blocker",
+    "B": "agranulocytosis จาก clozapine",
+    "C": "tardive dyskinesia จาก antipsychotic ระยะยาว",
+    "D": "cheese effect จาก tyramine + MAOI",
+    "E": "✓ serotonin เกินจากสองกลไก: reuptake + degradation ถูกยับยั้ง"
    },
-   "key_concept": "• SSRI + MAOI → serotonin syndrome\n• สรุป: Fluoxetine + MAOI (moclobemide) → serotonin syndrome"
+   "key_concept": "• serotonin syndrome: hyperthermia, clonus, agitation, autonomic instability\n• รักษา cyproheptadine\n• เว้นช่วง fluoxetine 5 สัปดาห์ก่อน MAOI",
+   "mechanism": [
+    "fluoxetine ยับยั้ง SERT",
+    "moclobemide ยับยั้ง MAO-A",
+    {
+     "s": "5-HT สะสมมากเกิน",
+     "answer": true
+    },
+    "serotonin syndrome"
+   ]
   },
   "26": {
-   "explanation": "Amitriptyline ลดปวด neuropathic โดยยับยั้ง reuptake ของ NE และ 5-HT เสริม descending inhibition",
+   "explanation": "Amitriptyline ลดปวด neuropathic ผ่าน NE และ 5-HT reuptake blockade (descending inhibition)",
    "option_why": {
-    "A": "ไม่ได้กระตุ้นการหลั่ง",
-    "B": "บล็อก Na channel เป็นของ carbamazepine",
-    "C": "บล็อก NMDA เป็นของ ketamine",
-    "D": "✓ บล็อก NE และ 5-HT reuptake",
-    "E": "NE/DA reuptake ไม่ใช่ TCA"
+    "A": "ไม่กระตุ้นการปล่อย",
+    "B": "บล็อก Na ช่องเป็นฤทธิ์รอง",
+    "C": "ไม่ใช่ NMDA blocker",
+    "D": "✓ เพิ่ม NE/5-HT ใน descending pain pathway",
+    "E": "NE/DA ไม่ใช่เส้นทางหลักของ amitriptyline"
    },
-   "key_concept": "• TCA: SNRI-like analgesia\n• สรุป: Amitriptyline ลดปวด neuropathic โดยยับยั้ง reuptake ของ NE และ 5-HT เสริม descending inhib"
+   "key_concept": "• neuropathic pain: TCA, SNRI, gabapentinoid\n• descending inhibitory pathway ใช้ NE/5-HT",
+   "mechanism": [
+    "TCA ยับยั้ง NET/SERT",
+    "NE/5-HT เพิ่มที่ dorsal horn",
+    {
+     "s": "เสริม descending inhibition",
+     "answer": true
+    },
+    "ลดการส่งสัญญาณปวด"
+   ]
   },
   "27": {
    "explanation": "Haloperidol บล็อก D2 ใน striatum ทำให้ parkinsonism",
    "option_why": {
-    "A": "D2 stimulation จะลด EPS",
-    "B": "✓ D2 ถูกยับยั้ง",
-    "C": "5HT2 ไม่ใช่",
-    "D": "D1 ไม่ใช่",
-    "E": "ไม่ใช่คำตอบที่ถูกต้องของโจทย์ข้อนี้"
+    "A": "ไม่ใช่ถูกกระตุ้น แต่ถูกบล็อก",
+    "B": "✓ D2 antagonist ที่ nigrostriatal → dopamine/ACh imbalance",
+    "C": "5-HT2 ถูกบล็อกโดย atypical ไม่ใช่กลไกของ parkinsonism จาก haloperidol",
+    "D": "D1 ไม่ใช่ตำแหน่งที่ haloperidol ออกฤทธิ์เป็นหลัก",
+    "E": "ไม่ใช่ muscarinic stimulate"
    },
-   "key_concept": "• Antipsychotic: D2 block in nigrostriatal → EPS\n• สรุป: Haloperidol บล็อก D2 ใน striatum ทำให้ parkinsonism"
+   "key_concept": "• EPS จาก D2 block\n• แก้: benztropine",
+   "mechanism": [
+    "haloperidol บล็อก D2 ใน striatum",
+    "dopamine ลด ACh เด่น",
+    {
+     "s": "direct pathway ถูกกด",
+     "answer": true
+    },
+    "parkinsonism"
+   ]
   },
   "28": {
-   "explanation": "บล็อก D2 ที่ tuberoinfundibular ทำให้ prolactin สูง ปวดเต้านมและเต้านมโต",
+   "explanation": "Haloperidol บล็อก D2 ที่ tuberoinfundibular ทำให้ prolactin สูง เต้านมโต",
    "option_why": {
-    "A": "✓ D2 ที่ tuberoinfundibular ถูกยับยั้ง",
-    "B": "Muscarinic ไม่ใช่",
-    "C": "ไม่ใช่คำตอบที่ถูกต้องของโจทย์ข้อนี้",
-    "D": "ไม่ใช่คำตอบที่ถูกต้องของโจทย์ข้อนี้",
-    "E": "ไม่ใช่คำตอบที่ถูกต้องของโจทย์ข้อนี้"
+    "A": "✓ dopamine ปกติยับยั้ง prolactin เมื่อบล็อก prolactin เพิ่ม",
+    "B": "muscarinic ไม่ใช่กลไกของเต้านมโต",
+    "C": "D1 ไม่ใช่ตำแหน่งที่ haloperidol ออกฤทธิ์เป็นหลัก",
+    "D": "5-HT ไม่ใช่กลไกของเต้านมโตจากยานี้",
+    "E": "H1 ทำให้ง่วง ไม่เกี่ยวกับ prolactin"
    },
-   "key_concept": "• D2 block → hyperprolactinemia\n• สรุป: บล็อก D2 ที่ tuberoinfundibular ทำให้ prolactin สูง ปวดเต้านมและเต้านมโต"
+   "key_concept": "• dopamine = prolactin inhibiting factor\n• antipsychotic → hyperprolactinemia → galactorrhea",
+   "mechanism": [
+    "D2 ที่ tuberoinfundibular ถูกบล็อก",
+    "dopamine ยับยั้ง prolactin ลดลง",
+    {
+     "s": "prolactin สูง",
+     "answer": true
+    },
+    "เต้านมโต/ปวด"
+   ]
   },
   "29": {
-   "explanation": "Risperidone เป็น atypical antipsychotic ยับยั้งทั้ง 5-HT2A และ D2",
+   "explanation": "Risperidone (atypical) บล็อกทั้ง 5-HT2A และ D2",
    "option_why": {
-    "A": "Promethazine เป็น H1",
-    "B": "✓ Risperidone ยับยั้ง 5-HT2A/D2",
-    "C": "Thiothixene typical",
-    "D": "Thioridazine typical",
-    "E": "Chlorpromazine typical"
+    "A": "promethazine เป็น antihistamine/phenothiazine",
+    "B": "✓ risperidone SDA: 5-HT2A + D2 antagonist",
+    "C": "thiothixene typical",
+    "D": "thioridazine typical",
+    "E": "chlorpromazine typical"
    },
-   "key_concept": "• Atypical: 5-HT2A + D2 antagonist\n• สรุป: Risperidone เป็น atypical antipsychotic ยับยั้งทั้ง 5-HT2A และ D2"
+   "key_concept": "• atypical: บล็อก 5-HT2A + D2\n• ผล EPS น้อยกว่า typical"
   },
   "30": {
-   "explanation": "NMS เกิดบ่อยกับ high-potency typical antipsychotic เช่น haloperidol",
+   "explanation": "ไข้ rigidity ซึม CK สูง = NMS จาก D2 blocker potency สูงเช่น haloperidol",
    "option_why": {
-    "A": "✓ Haloperidol เสี่ยง NMS สูงสุดในตัวเลือก",
-    "B": "Chlorpromazine ความเสี่ยงต่ำกว่า",
-    "C": "Fluphenazine ก็เสี่ยงแต่เฉลยเลือก haloperidol",
-    "D": "Olanzapine เสี่ยงน้อย",
-    "E": "Metoclopramide มีโอกาสน้อย"
+    "A": "✓ haloperidol high potency เสี่ยง NMS สูงสุด",
+    "B": "chlorpromazine เสี่ยงต่ำกว่า",
+    "C": "fluphenazine high potency ก็เสี่ยงแต่เฉลยเลือก haloperidol",
+    "D": "olanzapine เสี่ยงต่ำ",
+    "E": "metoclopramide พบน้อย"
    },
-   "key_concept": "• NMS: fever, rigidity, CK ↑\n• สรุป: NMS เกิดบ่อยกับ high-potency typical antipsychotic เช่น haloperidol"
+   "key_concept": "• NMS: hyperthermia, rigidity, AMS, CK สูง\n• รักษา: หยุดยา, dantrolene, bromocriptine",
+   "mechanism": [
+    "D2 ถูกบล็อกมาก",
+    "hypothalamic thermoregulation เสีย กล้ามเนื้อเกร็ง",
+    {
+     "s": "ผลิตความร้อนมาก CK สูง",
+     "answer": true
+    },
+    "NMS"
+   ]
   },
   "31": {
-   "explanation": "Phenytoin ทำให้ hirsutism และ gingival hyperplasia",
+   "explanation": "Phenytoin ทำ hirsutism",
    "option_why": {
-    "A": "Carbamazepine ไม่ทำให้ขนขึ้น",
-    "B": "Valproate ผมร่วง",
-    "C": "Gabapentin ไม่ใช่",
-    "D": "Ethosuximide ไม่ใช่",
-    "E": "✓ Phenytoin ทำให้ hirsutism"
+    "A": "carbamazepine ทำ hyponatremia/ผื่น",
+    "B": "valproate ทำผมร่วง",
+    "C": "gabapentin ทำง่วง",
+    "D": "ethosuximide ทำ GI upset",
+    "E": "✓ phenytoin: hirsutism, gingival hyperplasia"
    },
-   "key_concept": "• Phenytoin: hirsutism, gum hyperplasia\n• สรุป: Phenytoin ทำให้ hirsutism และ gingival hyperplasia"
+   "key_concept": "• phenytoin ADR: nystagmus, gingival hyperplasia, hirsutism\n• เด็กหญิงอาจมีผลต่อรูปลักษณ์"
   },
   "32": {
-   "explanation": "Valproic acid สัมพันธ์กับ neural tube defect/spina bifida",
+   "explanation": "Valproate ทำ neural tube defect (spina bifida)",
    "option_why": {
-    "A": "Primidone ไม่เด่น",
-    "B": "✓ Valproate ทำให้ NTD",
-    "C": "Gabapentin ไม่เด่น",
-    "D": "Phenobarbital ไม่เด่น",
-    "E": "Phenytoin ทำให้ fetal hydantoin syndrome"
+    "A": "primidone ไม่ใช่สาเหตุหลัก",
+    "B": "✓ valproate teratogenic NTD 1–2%",
+    "C": "gabapentin ความเสี่ยงต่ำ",
+    "D": "phenobarbital เสี่ยง cleft/หัวใจ",
+    "E": "phenytoin ทำ fetal hydantoin syndrome"
    },
-   "key_concept": "• Valproate: NTD, folate deficiency\n• สรุป: Valproic acid สัมพันธ์กับ neural tube defect/spina bifida"
+   "key_concept": "• valproate: NTD, ลด IQ เด็ก\n• ให้ folic acid ก่อนตั้งครรภ์"
   },
   "33": {
-   "explanation": "Carbamazepine บล็อก voltage-gated Na channel (ไฟล์เฉลยวง B,C)",
+   "explanation": "Carbamazepine บล็อก voltage-gated Na channel (และมีผลบน Ca channel บางส่วน)",
    "option_why": {
-    "A": "ไม่บล็อก K",
-    "B": "✓ Na channel blocker",
-    "C": "เฉลยวงด้วย (also_accept)",
-    "D": "GABA transaminase คือ vigabatrin",
-    "E": "NMDA คือ felbamate"
+    "A": "ไม่บล็อก K channel",
+    "B": "✓ ปิด Na channel ในสภาพ inactivated",
+    "C": "✓ ฤทธิ์ต่อ Ca channel มีรายงาน ต้นฉบับยอมรับ",
+    "D": "vigabatrin ยับยั้ง GABA-T",
+    "E": "ไม่ใช่ NMDA blocker"
    },
-   "key_concept": "• Carbamazepine: Na channel blocker\n• สรุป: Carbamazepine บล็อก voltage-gated Na channel (ไฟล์เฉลยวง B,C)"
+   "key_concept": "• carbamazepine, phenytoin, lamotrigine = Na channel blocker\n• use-dependent block"
   },
   "34": {
-   "explanation": "HLA-B*15:02 สัมพันธ์กับ carbamazepine ทำให้ SJS/TEN",
+   "explanation": "Carbamazepine สัมพันธ์กับ HLA-B*15:02 SJS/TEN",
    "option_why": {
-    "A": "Chlorpromazine ไม่เกี่ยวข้อง",
-    "B": "Valproate ไม่เกี่ยวข้อง",
-    "C": "✓ Carbamazepine เกี่ยวข้อง HLA-B*15:02",
-    "D": "Tiagabine ไม่เกี่ยว",
-    "E": "Lamotrigine เกี่ยวกับ SJS แต่ไม่ใช่ HLA นี้เป็นหลัก"
+    "A": "chlorpromazine ไม่เกี่ยว",
+    "B": "valproate ไม่เกี่ยว",
+    "C": "✓ HLA-B*15:02 + carbamazepine → SJS/TEN (ชาวเอเชีย)",
+    "D": "tiagabine ไม่เกี่ยว",
+    "E": "lamotrigine ผื่นได้แต่ไม่ใช่ HLA นี้"
    },
-   "key_concept": "• HLA-B*15:02 → CBZ SJS/TEN\n• สรุป: HLA-B*15:02 สัมพันธ์กับ carbamazepine ทำให้ SJS/TEN"
+   "key_concept": "• ตรวจ HLA-B*15:02 ก่อนใช้ carbamazepine ในคนเอเชีย\n• HLA-B*58:01 ↔ allopurinol"
   },
   "35": {
-   "explanation": "ซึมเศร้าเกี่ยวกับ NE, 5-HT และ DA ที่ลดลง",
+   "explanation": "ซึมเศร้าเกี่ยวกับ NE, 5-HT, DA ลดลง (monoamine hypothesis)",
    "option_why": {
-    "A": "ACh ไม่ใช่หลัก",
-    "B": "✓ Monoamines NE/5-HT/DA เกี่ยวข้องกับซึมเศร้า",
+    "A": "ACh ไม่ใช่หลักของ depression",
+    "B": "✓ NE, 5-HT, DA ลดลงใน MDD",
     "C": "GABA ไม่ใช่หลัก",
     "D": "GABA ไม่ใช่หลัก",
     "E": "GABA ไม่ใช่หลัก"
    },
-   "key_concept": "• Depression: ↓ NE, 5-HT, DA\n• สรุป: ซึมเศร้าเกี่ยวกับ NE, 5-HT และ DA ที่ลดลง"
+   "key_concept": "• monoamine hypothesis\n• antidepressant เพิ่ม 5-HT/NE/DA"
   },
   "36": {
-   "explanation": "อาการ psychotic 2 สัปดาห์ (น้อยกว่า 6 เดือน) ตามเฉลยคือ schizophreniform disorder",
+   "explanation": "อาการ mania 2 สัปดาห์ร่วมความเชื่อว่าเป็นกษัตริย์ ตามเฉลยเข้าเกณฑ์ schizophreniform (psychosis 1–6 เดือน)",
    "option_why": {
-    "A": "Bipolar ต้องมีอารมณ์เด่น",
-    "B": "Schizophrenia ต้อง ≥6 เดือน",
-    "C": "Schizoaffective ต้องมี mood episode ร่วม",
-    "D": "✓ Schizophreniform: 1–6 เดือน",
-    "E": "Delusional disorder ไม่มี mood symptom ชัด"
+    "A": "bipolar ต้องไม่มี psychosis เมื่ออารมณ์กลับปกติ แต่เฉลยเลือกตามระยะเวลาและกลุ่มอาการ psychosis",
+    "B": "schizophrenia ต้องมีอาการต่อเนื่องอย่างน้อย 6 เดือน",
+    "C": "schizoaffective ต้องมี psychosis ≥2 สัปดาห์โดยไม่มี mood episode",
+    "D": "✓ schizophreniform: อาการเหมือน schizophrenia แต่ระยะ 1–6 เดือน",
+    "E": "delusional disorder มีเพียงความเชื่อผิดโดยไม่มี mania ครบกลุ่มอาการ"
    },
-   "key_concept": "• Schizophreniform 1–6 mo; schizophrenia ≥6 mo\n• สรุป: อาการ psychotic 2 สัปดาห์ (น้อยกว่า 6 เดือน) ตามเฉลยคือ schizophreniform disorder"
+   "key_concept": "• schizophreniform 1–6 เดือน · schizophrenia ≥6 เดือน\n• brief psychotic disorder <1 เดือน\n• mood + psychosis ให้แยก bipolar/schizoaffective"
   },
   "37": {
-   "explanation": "เมื่อเจอภัยคุกคาม sympathetic ทำให้ bronchodilation",
+   "explanation": "ภัยคุกคามเฉียบพลัน sympathetic ทำให้หลอดลมขยาย",
    "option_why": {
-    "A": "Tachycardia ไม่ใช่ bradycardia",
-    "B": "กระเพาะปัสสาวะคลายตัว",
-    "C": "✓ Bronchial relaxation",
-    "D": "Pupil dilate",
-    "E": "น้ำลายลดลง"
+    "A": "sympathetic เพิ่มอัตราการเต้นหัวใจ ไม่ทำให้ bradycardia",
+    "B": "sympathetic ทำให้กระเพาะปัสสาวะคลาย ไม่ใช่หดตัว",
+    "C": "✓ β2 ขยายหลอดลมเพิ่มการรับ O2",
+    "D": "sympathetic ทำให้รูม่านตาขยาย ไม่ใช่หด",
+    "E": "sympathetic ทำให้น้ำลายข้นและลดลง ไม่ใช่ hypersalivation"
    },
-   "key_concept": "• Fight-or-flight: sympathetic\n• สรุป: เมื่อเจอภัยคุกคาม sympathetic ทำให้ bronchodilation"
+   "key_concept": "• fight-or-flight: HR↑, bronchodilate, pupil dilate\n• parasympathetic = ตรงข้าม",
+   "mechanism": [
+    "ภัยคุกคาม",
+    "sympathetic หลั่ง epinephrine",
+    {
+     "s": "β2 ขยายหลอดลม",
+     "answer": true
+    },
+    "รับ O2 มากขึ้น"
+   ]
   },
   "38": {
-   "explanation": "Amygdala เป็นโครงสร้างสำคัญของ fear และ fight-or-flight",
+   "explanation": "Amygdala ประมวลความกลัวและกระตุ้น fight-or-flight",
    "option_why": {
-    "A": "Hippocampus เกี่ยวกับความจำ",
-    "B": "Cingulate เกี่ยวกับอารมณ์/ความสนใจ",
-    "C": "NAc เกี่ยวกับรางวัล",
-    "D": "PFC ควบคุม",
-    "E": "✓ Amygdala กระตุ้นการตอบสนองต่อภัย"
+    "A": "hippocampus เป็น memory",
+    "B": "cingulate เป็นอารมณ์/attention",
+    "C": "nucleus accumbens เป็น reward",
+    "D": "prefrontal เป็นยับยั้ง/ตัดสินใจ",
+    "E": "✓ amygdala → hypothalamus → sympathetic"
    },
-   "key_concept": "• Amygdala = fear center\n• สรุป: Amygdala เป็นโครงสร้างสำคัญของ fear และ fight-or-flight"
+   "key_concept": "• amygdala = fear\n• PFC ยับยั้ง amygdala"
   },
   "39": {
-   "explanation": "ความรู้สึกคล้ายแมลงไต่ใต้ผิวหนังคือ tactile hallucination (formication)",
+   "explanation": "ความรู้สึกแมลงไต่ใต้ผิวหนัง = tactile hallucination",
    "option_why": {
-    "A": "Auditory เสียง",
-    "B": "✓ Tactile สัมผัส",
-    "C": "Visual ภาพ",
-    "D": "Gustatory รส",
-    "E": "Olfactory กลิ่น"
+    "A": "auditory คือได้ยินเสียง",
+    "B": "✓ tactile คือความรู้สึกสัมผัสผิดปกติ",
+    "C": "visual คือเห็น",
+    "D": "gustatory คือรส",
+    "E": "olfactory คือกลิ่น"
    },
-   "key_concept": "• Formication = tactile hallucination\n• สรุป: ความรู้สึกคล้ายแมลงไต่ใต้ผิวหนังคือ tactile hallucination (formication)"
+   "key_concept": "• formication พบใน cocaine/alcohol withdrawal\n• hallucination = ไม่มีสิ่งเร้า"
   },
   "40": {
-   "explanation": "การตีความกิ่งไม้เป็นสัตว์ประหลาดคือ illusion (มีสิ่งเร้าจริงแต่ตีความผิด)",
+   "explanation": "เห็นกิ่งไม้เป็นปีศาจ = illusion (บิดเบือนสิ่งเร้าจริง)",
    "option_why": {
-    "A": "Depression คืออารมณ์",
-    "B": "Delusion เป็นความเชื่อผิด",
-    "C": "Mania",
-    "D": "✓ Illusion",
-    "E": "Hallucination ไม่มีสิ่งเร้า"
+    "A": "depression เป็นอารมณ์",
+    "B": "delusion เป็นความเชื่อผิด",
+    "C": "mania เป็นอารมณ์",
+    "D": "✓ illusion คือการรับรู้ผิดต่อสิ่งเร้าจริง",
+    "E": "hallucination ไม่มีสิ่งเร้า"
    },
-   "key_concept": "• Illusion = misinterpretation of real stimulus\n• สรุป: การตีความกิ่งไม้เป็นสัตว์ประหลาดคือ illusion (มีสิ่งเร้าจริงแต่ตีความผิด)"
+   "key_concept": "• illusion: มีสิ่งเร้าจริงแต่รับรู้ผิด\n• hallucination: ไม่มีสิ่งเร้า"
   },
   "41": {
-   "explanation": "การติดสุราและความอยาก (craving) เกี่ยวข้องกับ mesolimbic reward pathway",
+   "explanation": "Craving ของการเสพติดเกี่ยวกับ mesolimbic reward pathway",
    "option_why": {
-    "A": "Spinothalamic เป็น pain pathway",
-    "B": "✓ Mesolimbic เกี่ยวกับรางวัลและ craving",
-    "C": "Nigrostriatal เกี่ยวกับการเคลื่อนไหว",
-    "D": "Mesocortical เกี่ยวกับ negative symptom",
-    "E": "Tuberoinfundibular คุม prolactin"
+    "A": "spinothalamic คือ ปวด/อุณหภูมิ",
+    "B": "✓ mesolimbic (VTA → nucleus accumbens) = reward",
+    "C": "nigrostriatal = เคลื่อนไหว",
+    "D": "mesocortical = negative symptoms",
+    "E": "tuberoinfundibular = prolactin"
    },
-   "key_concept": "• Addiction: mesolimbic (VTA → NAc)\n• สรุป: การติดสุราและความอยาก (craving) เกี่ยวข้องกับ mesolimbic reward pathway"
+   "key_concept": "• mesolimbic: reward, positive symptoms\n• การเสพติด → dopamine ใน NAc เพิ่ม",
+   "mechanism": [
+    "สารเสพติดกระตุ้น VTA",
+    "dopamine ใน nucleus accumbens เพิ่ม",
+    {
+     "s": "เกิด reward/ craving",
+     "answer": true
+    },
+    "ใช้ซ้ำ"
+   ]
   },
   "42": {
-   "explanation": "รอยโรค temporal lobe สองข้างทำให้ Klüver-Bucy: placidity, hypersexuality, hyperphagia",
+   "explanation": "Bilateral temporal lobe (Klüver–Bucy) ทำให้ placidity",
    "option_why": {
-    "A": "พบ hypersexuality ไม่ใช่ hypo",
-    "B": "Visual agnosia มากกว่า illusion",
-    "C": "Hypergraphia พบใน temporal lobe epilepsy",
-    "D": "พบ hyperphagia",
-    "E": "✓ Placidity (เฉยชา) พบใน Klüver-Bucy"
+    "A": "hypersexuality ไม่ใช่ hypo",
+    "B": "visual illusion ไม่ใช่",
+    "C": "hypergraphia เป็น temporal lobe epilepsy",
+    "D": "hyperphagia ไม่ใช่ hypophagia",
+    "E": "✓ แสดงอารมณ์น้อย สงบ"
    },
-   "key_concept": "• Klüver-Bucy: placidity, hyperorality, hypersexuality\n• สรุป: รอยโรค temporal lobe สองข้างทำให้ Klüver-Bucy: placidity, hypersexuality, hyperphagia"
+   "key_concept": "• Klüver–Bucy: placidity, hyperorality, hypersexuality, visual agnosia\n• amygdala เสียหาย"
   },
   "43": {
-   "explanation": "Preconscious เป็นความคิดที่เก็บไว้นอก awareness แต่เรียกคืนได้",
+   "explanation": "Preconscious คือเนื้อหาที่ไม่ได้อยู่ในการรับรู้ขณะนี้ แต่เรียกคืนได้ ตามเฉลยต้นฉบับ",
    "option_why": {
-    "A": "Censor เป็นตัวกรอง",
-    "B": "Unconscious เรียกคืนไม่ได้โดยตรง",
-    "C": "Barrier ไม่ใช่ศัพท์ topographic",
-    "D": "Conscious คือรู้ตัวอยู่",
-    "E": "✓ Preconscious ถูกเก็บไว้ ดึงกลับได้"
+    "A": "censor เป็นตัวกรองระหว่างระดับจิต ไม่ใช่ระดับของจิต",
+    "B": "unconscious เก็บเนื้อหาที่เข้าถึงโดยตรงไม่ได้ ซึ่งแตกต่างจากข้อที่เฉลยเลือก",
+    "C": "barrier ไม่ใช่ศัพท์ใน topographic theory",
+    "D": "conscious คือสิ่งที่รับรู้อยู่ตอนนี้",
+    "E": "✓ preconscious ตามเฉลยต้นฉบับ เก็บไว้นอกการรับรู้ชั่วคราว"
    },
-   "key_concept": "• Topographic: conscious / preconscious / unconscious\n• สรุป: Preconscious เป็นความคิดที่เก็บไว้นอก awareness แต่เรียกคืนได้"
+   "key_concept": "• Freud topographic: conscious · preconscious · unconscious\n• preconscious เรียกคืนได้โดยตั้งใจ ส่วน unconscious ต้องผ่านการวิเคราะห์"
   },
   "44": {
-   "explanation": "ผู้ป่วยรู้ตัวว่ากังวล หมายความว่าความวิตกอยู่ใน conscious awareness",
+   "explanation": "GAD ที่รู้ตัวและมี insight ตรงกับการที่ preconscious ทำหน้าที่ censor ได้ตามปกติ",
    "option_why": {
-    "A": "Acting out ไม่ใช่คำอธิบาย topographic",
-    "B": "ไม่เกี่ยวกับ preconscious",
-    "C": "ทุกคนมี unconscious",
-    "D": "ไม่ได้บอก wish",
-    "E": "✓ ความวิตกอยู่ใน conscious จึงมี insight"
+    "A": "acting out เป็น defense ที่แสดงออกทางพฤติกรรม ไม่ใช่ข้อสรุปจากโจทย์",
+    "B": "โจทย์บอกว่าเขารู้ตัวดี จึงไม่ใช่ว่า censor เสีย",
+    "C": "conscious ไม่ได้เก็บเนื้อหาที่ถูกกดไว้",
+    "D": "unconscious ไม่ใช่ส่วนที่เข้าถึงได้ ผู้ป่วยมี insight จึงไม่ตรง",
+    "E": "✓ ผู้ป่วยตระหนักถึงอาการและเข้าใจโรค สอดคล้องกับระบบ preconscious/conscious ทำงานได้"
    },
-   "key_concept": "• Insight → content in consciousness\n• สรุป: ผู้ป่วยรู้ตัวว่ากังวล หมายความว่าความวิตกอยู่ใน conscious awareness"
+   "key_concept": "• censor อยู่ระหว่าง unconscious กับ preconscious\n• insight ดี → ego ทำงานได้\n• GAD: กังวล ≥6 เดือน"
   },
   "45": {
-   "explanation": "การเปลี่ยนความเศร้าเป็นอาการทางกายคือ somatization",
+   "explanation": "การแปลงความเศร้าเป็นอาการกายคือ somatization",
    "option_why": {
-    "A": "Regression ถอยหลังพัฒนาการ",
-    "B": "Hypochondriasis กังวลว่าเป็นโรค",
-    "C": "Projection โยนให้ผู้อื่น",
-    "D": "Introjection รับเอาลักษณะผู้อื่น",
-    "E": "✓ Somatization"
+    "A": "regression คือถอยไปพฤติกรรมวัยเด็ก",
+    "B": "hypochondriasis เป็นโรค ไม่ใช่กลไกป้องกันตัว",
+    "C": "projection คือโยนความรู้สึกของตนไปให้ผู้อื่น",
+    "D": "introjection คือซึมซับลักษณะของผู้อื่นเข้าตน",
+    "E": "✓ somatization แปลงอารมณ์ที่รับไม่ได้เป็นอาการทางกาย"
    },
-   "key_concept": "• Somatization: emotion → physical symptom\n• สรุป: การเปลี่ยนความเศร้าเป็นอาการทางกายคือ somatization"
+   "key_concept": "• somatization เป็น immature defense\n• ซึมเศร้ามักมาด้วยอาการกายในคนไทย\n• อาการกายไม่มีพยาธิสภาพชัดเจน",
+   "mechanism": [
+    "อารมณ์เศร้าที่ยอมรับไม่ได้",
+    "ถูก ego แปลงสภาพ",
+    {
+     "s": "somatization",
+     "answer": true
+    },
+    "ปวดท้อง คลื่นไส้ทดแทน"
+   ]
   },
   "46": {
-   "explanation": "การกำจัดความสุขโดยรู้ตัว (self-denial) คือ asceticism",
+   "explanation": "Asceticism คือการขจัดความสุขโดยรู้ตัวเพื่อลดความขัดแย้งภายใน",
    "option_why": {
-    "A": "Sublimation เปลี่ยนเป็นสิ่งสร้างสรรค์",
-    "B": "Suppression เก็บกดอย่างรู้ตัว แต่ไม่ได้ขจัดความสุข",
-    "C": "Isolation of affect แยกอารมณ์",
-    "D": "✓ Asceticism ขจัดความสุขโดยรู้ตัว",
-    "E": "Repression ไร้สำนึก"
+    "A": "sublimation แปลงแรงขับเป็นกิจกรรมที่สังคมยอมรับ",
+    "B": "suppression กดความคิดโดยรู้ตัว แต่ไม่ได้ตัดความสุข",
+    "C": "isolation of affect แยกอารมณ์ออกจากความคิด",
+    "D": "✓ asceticism กำจัดอารมณ์ที่เป็นความสุขอย่างตั้งใจ",
+    "E": "repression ทำโดยไม่รู้ตัว"
    },
-   "key_concept": "• Asceticism: eliminates pleasure consciously\n• สรุป: การกำจัดความสุขโดยรู้ตัว (self-denial) คือ asceticism"
+   "key_concept": "• ascetic: ตัดความสุขโดยรู้ตัว\n• repression ไม่รู้ตัว vs suppression รู้ตัว"
   },
   "47": {
-   "explanation": "วัยเรียน (latency) เด็กพัฒนาทักษะและความสามารถ",
+   "explanation": "วัย latency (6–12 ปี) เด็กพัฒนาทักษะและความสามารถ",
    "option_why": {
-    "A": "Genital คือวัยรุ่น",
-    "B": "Phallic คือ Oedipal",
-    "C": "Oral",
-    "D": "✓ Latency พัฒนาทักษะ",
-    "E": "Anal"
+    "A": "genital stage คือวัยรุ่นสร้างความสัมพันธ์",
+    "B": "phallic stage คือ Oedipus/Electra",
+    "C": "oral stage คือพึ่งพาปากในวัยทารก",
+    "D": "✓ latency แรงขับสงบ ใช้พลังงานไปพัฒนาทักษะการเรียนและสังคม",
+    "E": "anal stage คือฝึกขับถ่าย"
    },
-   "key_concept": "• Latency stage: skill development\n• สรุป: วัยเรียน (latency) เด็กพัฒนาทักษะและความสามารถ"
+   "key_concept": "• Freud: oral 0–1 · anal 1–3 · phallic 3–6 · latency 6–12 · genital 12+\n• Erikson ที่ตรงกัน: industry vs inferiority"
   },
   "48": {
-   "explanation": "การแข่งขันกับแม่โดยไม่รู้ตัวคือ Oedipus/Electra complex ใน phallic stage",
+   "explanation": "ความรู้สึกแข่งกับแม่โดยไม่รู้ตัวเกี่ยวกับ Electra complex ของ phallic stage",
    "option_why": {
-    "A": "Genital stage ไม่ใช่",
-    "B": "✓ Phallic stage เกิด Oedipus/Electra",
-    "C": "Oral stage",
-    "D": "Latency stage",
-    "E": "Anal stage"
+    "A": "genital stage เกี่ยวกับความสัมพันธ์ผู้ใหญ่",
+    "B": "✓ phallic (3–6 ปี) เด็กหญิงแข่งกับแม่เพื่อความรักจากพ่อ",
+    "C": "oral เป็นเรื่องการพึ่งพาและความอิ่ม",
+    "D": "latency เป็นช่วงสงบของแรงขับ",
+    "E": "anal เป็นเรื่องการควบคุมตนเอง"
    },
-   "key_concept": "• Phallic: Oedipus/Electra\n• สรุป: การแข่งขันกับแม่โดยไม่รู้ตัวคือ Oedipus/Electra complex ใน phallic stage"
+   "key_concept": "• Oedipus (ชาย) / Electra (หญิง) อยู่ใน phallic stage\n• fixation ทำให้ปัญหาความสัมพันธ์ในผู้ใหญ่"
   },
   "49": {
-   "explanation": "การถูกวิจารณ์สม่ำเสมอ คือ high expressed emotion ซึ่งเพิ่มโอกาสกลับเป็นซ้ำ",
+   "explanation": "ครอบครัวที่วิจารณ์ผู้ป่วยบ่อยคือ high expressed emotion เพิ่ม relapse",
    "option_why": {
-    "A": "✓ High expressed emotion",
-    "B": "Pseudomutuality ปกปิดความขัดแย้ง",
-    "C": "Schism ขัดแย้งระหว่างพ่อแม่",
-    "D": "Pseudohostility ซ่อนความขัดแย้ง",
-    "E": "ไม่ใช่คำตอบที่ถูกต้องของโจทย์ข้อนี้"
+    "A": "✓ HEE: วิจารณ์ ก้าวร้าว ยุ่งเกินไป สัมพันธ์กับ relapse ใน schizophrenia",
+    "B": "pseudomutual คือแสร้งปรองดองเพื่อปิดความขัดแย้ง",
+    "C": "schism คือพ่อแม่แย่งชิงความภักดีของลูก",
+    "D": "pseudohostility คือทะเลาะเพื่อปิดบังความใกล้ชิดจริง",
+    "E": "double bind คือสื่อสารขัดแย้งสองระดับ ไม่ใช่การวิจารณ์ซ้ำ ๆ"
    },
-   "key_concept": "• High EE ↑ relapse in schizophrenia\n• สรุป: การถูกวิจารณ์สม่ำเสมอ คือ high expressed emotion ซึ่งเพิ่มโอกาสกลับเป็นซ้ำ"
+   "key_concept": "• HEE → relapse เพิ่มประมาณ 2–3 เท่า\n• family psychoeducation ลด EE"
   },
   "50": {
-   "explanation": "Negative symptom (poverty of speech, withdrawal) เกี่ยวกับ mesocortical pathway",
+   "explanation": "Negative symptoms จาก mesocortical pathway ที่ dopamine ลดลง",
    "option_why": {
-    "A": "Tuberoinfundibular คุม prolactin",
-    "B": "Mesolimbic คือ positive symptom",
-    "C": "✓ Mesocortical dopamine ต่ำ ทำให้ negative symptom",
-    "D": "Dorsal tegmental ไม่ใช่",
-    "E": "Nigrostriatal เกี่ยวกับ EPS"
+    "A": "tuberoinfundibular ควบคุม prolactin",
+    "B": "mesolimbic เกิน dopamine ทำ positive symptoms",
+    "C": "✓ mesocortical → prefrontal ลดลง ทำให้ขาดแรงจูงใจ พูดน้อย ถอนตัว",
+    "D": "dorsal tegmental ไม่ใช่ทาง dopamine หลักของ schizophrenia",
+    "E": "nigrostriatal ควบคุมการเคลื่อนไหว"
    },
-   "key_concept": "• Mesocortical ↓ DA → negative symptom\n• สรุป: Negative symptom (poverty of speech, withdrawal) เกี่ยวกับ mesocortical pathway"
+   "key_concept": "• mesolimbic ↑ → positive · mesocortical ↓ → negative\n• typical antipsychotic ไม่ช่วย negative symptoms",
+   "mechanism": [
+    "dopamine ที่ส่งไป prefrontal ลดลง",
+    "prefrontal hypofunction",
+    {
+     "s": "negative symptoms",
+     "answer": true
+    },
+    "พูดน้อย ขาดพลัง ถอนตัว"
+   ]
   },
   "51": {
-   "explanation": "ความเชื่อว่าความคิดของตนถูกคนอื่นรู้ คือ thought broadcasting",
+   "explanation": "รู้สึกว่าคนรอบข้างรู้ความคิดตนเอง = thought broadcasting",
    "option_why": {
-    "A": "Voice discussing เป็นประสาทหลอน",
-    "B": "Delusion of reference คือเหตุการณ์ภายนอกเกี่ยวกับตน",
-    "C": "✓ Thought broadcasting",
-    "D": "Persecutory delusion คือถูกข่มเหง",
-    "E": "Asocial ไม่ใช่"
+    "A": "voice discussing เป็น hallucination ได้ยินเสียงสนทนา",
+    "B": "delusion of reference คือเชื่อว่าสิ่งรอบตัวมีความหมายเกี่ยวกับตน",
+    "C": "✓ thought broadcasting คือเชื่อว่าความคิดถูกกระจายให้ผู้อื่นรู้",
+    "D": "persecutory คือเชื่อว่าถูกทำร้าย",
+    "E": "asocial เป็นอาการด้านลบ"
    },
-   "key_concept": "• Thought broadcasting: thoughts known to others\n• สรุป: ความเชื่อว่าความคิดของตนถูกคนอื่นรู้ คือ thought broadcasting"
+   "key_concept": "• first-rank: thought broadcasting, insertion, withdrawal\n• passivity phenomena"
   },
   "52": {
-   "explanation": "ขาดความริเริ่มและแรงจูงใจคือ avolition (negative symptom)",
+   "explanation": "ขาดความริเริ่มและแรงจูงใจ = avolition",
    "option_why": {
-    "A": "Alogia คือพูดน้อย",
-    "B": "✓ Avolition",
-    "C": "Affective flattening คืออารมณ์แบน",
-    "D": "Asocial คือถอนตัว",
-    "E": "Anhedonia คือไม่สนใจสุข"
+    "A": "alogia คือพูดน้อย",
+    "B": "✓ avolition คือขาดแรงขับให้เริ่มกิจกรรม",
+    "C": "affective flattening คืออารมณ์ราบเรียบ",
+    "D": "asociality คือไม่สนใจสังคม",
+    "E": "anhedonia คือไม่รู้สึกมีความสุข"
    },
-   "key_concept": "• Avolition: lack of motivation\n• สรุป: ขาดความริเริ่มและแรงจูงใจคือ avolition (negative symptom)"
+   "key_concept": "• negative: alogia, avolition, affective flattening, asociality, anhedonia\n• เรียกรวมว่า 5 A's ใช้ประเมินด้วย SANS"
   },
   "53": {
-   "explanation": "Endocannabinoid คือ anandamide และ 2-arachidonoylglycerol (2-AG)",
+   "explanation": "2-arachidonoylglycerol (2-AG) เป็น endocannabinoid ที่ร่างกายสร้าง",
    "option_why": {
-    "A": "CBD เป็น phytocannabinoid",
-    "B": "Cannabinol phyto",
-    "C": "✓ 2-AG ร่างกายสร้าง",
-    "D": "THC phyto",
-    "E": "CBG phyto"
+    "A": "cannabidiol (CBD) มาจากพืช",
+    "B": "cannabinol เป็นผลิตภัณฑ์เสื่อมสภาพของ THC จากพืช",
+    "C": "✓ 2-AG สร้างจาก phospholipid ในร่างกาย",
+    "D": "THC มาจากพืช",
+    "E": "cannabigerol มาจากพืช"
    },
-   "key_concept": "• Endocannabinoid: AEA, 2-AG\n• สรุป: Endocannabinoid คือ anandamide และ 2-arachidonoylglycerol (2-AG)"
+   "key_concept": "• endocannabinoid: anandamide, 2-AG\n• phytocannabinoid: THC, CBD, CBN, CBG"
   },
   "54": {
-   "explanation": "CB2 receptor พบที่ immune system เช่น spleen",
+   "explanation": "CB2 receptor พบมากที่เนื้อเยื่อภูมิคุ้มกัน เช่น ม้าม",
    "option_why": {
-    "A": "NAc เป็น CB1",
-    "B": "Hypothalamus เป็น CB1",
-    "C": "Basal ganglia เป็น CB1",
-    "D": "✓ Spleen มี CB2",
-    "E": "Spinal cord มี CB1"
+    "A": "nucleus accumbens มี CB1 เป็นหลัก",
+    "B": "hypothalamus มี CB1 คุมความอยากอาหาร",
+    "C": "basal ganglia มี CB1 มาก",
+    "D": "✓ CB2 อยู่ที่เซลล์ภูมิคุ้มกัน spleen, tonsil",
+    "E": "spinal cord มี CB1 เป็นหลัก"
    },
-   "key_concept": "• CB1: CNS; CB2: immune/spleen\n• สรุป: CB2 receptor พบที่ immune system เช่น spleen"
+   "key_concept": "• CB1: CNS, ทำ psychoactive effect\n• CB2: immune, ลดการอักเสบ"
   },
   "55": {
-   "explanation": "Disorientation/ภาวะสับสนจาก THC เป็นอาการสำคัญที่ต้องหยุดยา",
+   "explanation": "Disorientation เป็นผลต่อ CNS ที่รุนแรงต้องหยุด THC",
    "option_why": {
-    "A": "Headache เล็กน้อย",
-    "B": "✓ Disorientation บ่งชี้พิษต่อประสาท",
-    "C": "Loss of coordination พบได้บ่อย",
-    "D": "Bradycardia ไม่เด่น",
-    "E": "Conjunctivitis เล็กน้อย"
+    "A": "ปวดศีรษะเล็กน้อยไม่ถึงกับต้องหยุดยา",
+    "B": "✓ disorientation บ่งถึง psychosis/delirium จึงต้องหยุด",
+    "C": "loss of coordination ลดขนาดยาได้",
+    "D": "bradycardia ไม่ใช่ผลที่พบ (พบ tachycardia)",
+    "E": "conjunctival injection ไม่อันตราย"
    },
-   "key_concept": "• THC: psychosis/disorientation → stop\n• สรุป: Disorientation/ภาวะสับสนจาก THC เป็นอาการสำคัญที่ต้องหยุดยา"
+   "key_concept": "• THC: tachycardia, red eye, dry mouth\n• ADR รุนแรง: psychosis, disorientation"
   },
   "56": {
-   "explanation": "Nabilone เป็นอนุพันธ์ cannabinoid ใช้รักษาคลื่นไส้อาเจียนจากเคมีบำบัด",
+   "explanation": "Nabilone เป็น synthetic cannabinoid ใช้ต้านอาเจียนจากเคมีบำบัด",
    "option_why": {
-    "A": "Domperidone D2 antagonist",
-    "B": "Ondansetron 5-HT3 antagonist",
-    "C": "Metoclopramide D2 antagonist",
-    "D": "Droperidol antipsychotic",
-    "E": "✓ Nabilone cannabinoid"
+    "A": "domperidone เป็น D2 antagonist (peripheral)",
+    "B": "ondansetron เป็น 5-HT3 antagonist",
+    "C": "metoclopramide เป็น D2 antagonist และ prokinetic",
+    "D": "droperidol เป็น D2 antagonist",
+    "E": "✓ nabilone เลียนแบบ THC ทำให้ CB1 ในศูนย์อาเจียน"
    },
-   "key_concept": "• Nabilone/dronabinol: antiemetic cannabinoids\n• สรุป: Nabilone เป็นอนุพันธ์ cannabinoid ใช้รักษาคลื่นไส้อาเจียนจากเคมีบำบัด"
+   "key_concept": "• nabilone/dronabinol ใช้ chemotherapy N/V\n• ADR: ง่วง วิงเวียน"
   },
   "57": {
-   "explanation": "Musculocutaneous nerve เสียหายยังเหลือ brachioradialis (radial nerve) งอข้อศอกได้",
+   "explanation": "Brachioradialis รับ radial nerve จึงยังช่วยงอข้อศอกได้",
    "option_why": {
-    "A": "Coracobrachialis ถูก MC แต่แยกก่อน",
-    "B": "Brachialis ถูก MC เป็นหลัก",
-    "C": "Short head biceps ถูก MC",
-    "D": "✓ Brachioradialis ถูก radial n.",
-    "E": "Long head biceps ถูก MC"
+    "A": "coracobrachialis รับ musculocutaneous nerve",
+    "B": "brachialis รับ MC เป็นหลัก (ได้ radial บางส่วน)",
+    "C": "short head biceps รับ MC",
+    "D": "✓ brachioradialis รับ radial nerve",
+    "E": "long head biceps รับ MC"
    },
-   "key_concept": "• Brachioradialis: radial nerve\n• สรุป: Musculocutaneous nerve เสียหายยังเหลือ brachioradialis (radial nerve) งอข้อศอกได้"
+   "key_concept": "• MC nerve: coracobrachialis, biceps, brachialis\n• brachioradialis เป็น flexor ที่ radial n. ส่ง"
   },
   "58": {
-   "explanation": "Rotator cuff (supraspinatus/infraspinatus) ถูกเลี้ยงด้วย suprascapular nerve",
+   "explanation": "ปวด shoulder + rotator cuff tendinopathy เกี่ยวกับ suprascapular nerve",
    "option_why": {
-    "A": "Radial nerve ไม่เลี้ยง rotator cuff",
-    "B": "Thoracodorsal เลี้ยง latissimus",
-    "C": "✓ Suprascapular nerve",
-    "D": "Musculocutaneous เลี้ยงกล้ามเนื้อแขนหน้า",
-    "E": "Dorsal scapular เลี้ยง rhomboid"
+    "A": "radial ส่ง triceps/extensor ของแขนล่าง",
+    "B": "thoracodorsal ส่ง latissimus dorsi",
+    "C": "✓ suprascapular ส่ง supraspinatus และ infraspinatus",
+    "D": "musculocutaneous ส่ง flexor ของแขนท่อนบน",
+    "E": "dorsal scapular ส่ง rhomboid"
    },
-   "key_concept": "• Suprascapular n.: supra/infraspinatus\n• สรุป: Rotator cuff (supraspinatus/infraspinatus) ถูกเลี้ยงด้วย suprascapular nerve"
+   "key_concept": "• rotator cuff: supraspinatus, infraspinatus, teres minor, subscapularis\n• suprascapular n. ผ่าน suprascapular notch"
   },
   "59": {
-   "explanation": "หัก shaft ของ humerus เสี่ยง brachial/deep brachial artery (ตามเฉลย AI)",
+   "explanation": "Humeral shaft หัก เสี่ยงหลอดเลือด brachial ตามเฉลย (AI: เสี่ยง radial nerve และ deep brachial a. ด้วย)",
    "option_why": {
-    "A": "Ulnar อยู่ปลายแขน",
-    "B": "✓ Brachial artery อยู่ติด shaft",
-    "C": "Posterior circumflex เสี่ยงใน surgical neck",
-    "D": "Radial อยู่ปลายแขน",
-    "E": "Axillary เสี่ยงที่ใกล้ข้อไหล่"
+    "A": "ulnar artery อยู่ที่ปลายแขน",
+    "B": "✓ brachial artery วิ่งตามกระดูก humerus ด้านใน",
+    "C": "PCHA อยู่ที่ surgical neck",
+    "D": "radial artery อยู่ที่ปลายแขน",
+    "E": "axillary artery อยู่ที่ระดับไหล่"
    },
-   "key_concept": "• Humeral shaft: radial nerve, brachial/deep brachial artery\n• สรุป: หัก shaft ของ humerus เสี่ยง brachial/deep brachial artery (ตามเฉลย AI)"
+   "key_concept": "• shaft fracture → radial nerve (spiral groove)\n• surgical neck → axillary nerve + PCHA"
   },
   "60": {
-   "explanation": "แผลที่หลังปลายแขน ข้อมือและนิ้วเหยียดไม่ได้คือ radial nerve (posterior interosseous)",
+   "explanation": "แผลหลังปลายแขนทำให้ extension ของข้อมือและนิ้วเสีย = radial nerve",
    "option_why": {
-    "A": "Median ทำให้งอข้อมือลำบาก",
-    "B": "✓ Radial n. เลี้ยงกล้ามเนื้อเหยียด",
-    "C": "Musculocutaneous เกี่ยวกับ biceps",
-    "D": "Axillary เกี่ยวกับ deltoid",
-    "E": "Ulnar เกี่ยวกับ claw hand"
+    "A": "median nerve ส่ง flexor ของปลายแขน",
+    "B": "✓ radial nerve ส่ง extensor compartment ทั้งหมด",
+    "C": "musculocutaneous ส่ง flexor ของแขน",
+    "D": "axillary ส่ง deltoid",
+    "E": "ulnar ส่ง intrinsic ของมือ"
    },
-   "key_concept": "• Radial: wrist/finger extension\n• สรุป: แผลที่หลังปลายแขน ข้อมือและนิ้วเหยียดไม่ได้คือ radial nerve (posterior interosseous)"
+   "key_concept": "• radial: wrist drop, ชาหลังมือ\n• posterior interosseous n. ส่ง extensor ของนิ้ว"
   },
   "61": {
-   "explanation": "ในช่องงอของข้อมือ tendon ที่อยู่ด้านนอกสุด (lateral) คือ flexor carpi radialis",
+   "explanation": "FCR อยู่ด้านข้าง (lateral) สุดของ flexor compartment ที่ข้อมือ",
    "option_why": {
-    "A": "FCU อยู่ medial",
-    "B": "✓ FCR อยู่ lateral",
-    "C": "Palmaris longus อยู่กลาง",
-    "D": "FDS อยู่ลึก",
-    "E": "FDP อยู่ลึก"
+    "A": "FCU อยู่ด้าน medial",
+    "B": "✓ FCR อยู่ติด radial side",
+    "C": "palmaris longus อยู่กลาง",
+    "D": "FDS อยู่ลึกกว่าชั้นตื้น",
+    "E": "FDP อยู่ลึกที่สุด"
    },
-   "key_concept": "• Lateral → medial: FCR, PL, FDS, FCU\n• สรุป: ในช่องงอของข้อมือ tendon ที่อยู่ด้านนอกสุด (lateral) คือ flexor carpi radialis"
+   "key_concept": "• เรียงจาก lateral ไป medial: FCR, PL, FCU\n• palmaris longus อยู่เหนือ flexor retinaculum"
   },
   "62": {
-   "explanation": "การกางนิ้วโป้งออกจากฝ่ามือทำโดย abductor pollicis brevis",
+   "explanation": "Abductor pollicis brevis กางนิ้วโป้งออกจากฝ่ามือ",
    "option_why": {
-    "A": "Lumbricals ไม่ใช่",
-    "B": "✓ APB palmar abduction",
-    "C": "EPB เหยียดนิ้วโป้ง",
-    "D": "Adductor pollicis ดึงเข้า",
-    "E": "EPL เหยียด"
+    "A": "lumbrical งอ MCP และเหยียด IP ของนิ้วอื่น",
+    "B": "✓ APB กางนิ้วโป้งตั้งฉากกับฝ่ามือ",
+    "C": "EPB เหยียด MCP ของนิ้วโป้ง",
+    "D": "adductor pollicis ดึงนิ้วโป้งเข้า",
+    "E": "EPL เหยียด IP ของนิ้วโป้ง"
    },
-   "key_concept": "• APB: thumb abduction (median n.)\n• สรุป: การกางนิ้วโป้งออกจากฝ่ามือทำโดย abductor pollicis brevis"
+   "key_concept": "• thenar: APB, FPB, opponens pollicis (median nerve)\n• adductor pollicis: ulnar nerve"
   },
   "63": {
-   "explanation": "กล้ามเนื้อ internal rotator ของไหล่และ triceps ถูกเลี้ยงโดย C6-C7",
+   "explanation": "อ่อนแรงจาก C6–C7 ตามเฉลย (AI: Erb คือ C5–C6)",
    "option_why": {
-    "A": "C8,T1 เลี้ยงมือ",
-    "B": "✓ C6,C7 เลี้ยง subscapularis/pec/triceps",
-    "C": "C5–T1 คือ total plexus",
-    "D": "C7,C8 เลี้ยง triceps บางส่วน",
-    "E": "C5,C6 คือ Erb palsy"
+    "A": "C8–T1 คือ Klumpke palsy",
+    "B": "✓ ตามเฉลยต้นฉบับ C6–C7 กระทบ internal rotator และ triceps",
+    "C": "C5–T1 คือ total plexus palsy",
+    "D": "C7–C8 ไม่ตรงกับการกระจายอาการ",
+    "E": "C5–C6 คือ Erb palsy (AI เห็นว่าคำตอบอาจเป็นข้อนี้)"
    },
-   "key_concept": "• Triceps C6-C8; IR C5-C7\n• สรุป: กล้ามเนื้อ internal rotator ของไหล่และ triceps ถูกเลี้ยงโดย C6-C7"
+   "key_concept": "• Erb: C5–C6 waiter's tip · Klumpke: C8–T1\n• internal rotators: subscapularis, pec major; triceps: C7"
   },
   "64": {
-   "explanation": "Lumbricals: 2 อันนอกเลี้ยงโดย median, 2 อันในโดย ulnar",
+   "explanation": "Lumbricals ได้ทั้ง median (1–2) และ ulnar (3–4)",
    "option_why": {
-    "A": "FDM ulnar",
-    "B": "Palmaris brevis ulnar",
-    "C": "Adductor pollicis ulnar",
-    "D": "✓ Lumbricals มีทั้งสองเส้นประสาท",
-    "E": "Interossei ulnar"
+    "A": "flexor digiti minimi ได้ ulnar อย่างเดียว",
+    "B": "palmaris brevis ได้ ulnar อย่างเดียว",
+    "C": "adductor pollicis ได้ ulnar อย่างเดียว",
+    "D": "✓ lumbrical 1–2 median, 3–4 ulnar",
+    "E": "interossei ได้ ulnar ทั้งหมด"
    },
-   "key_concept": "• Lumbricals: median (1,2) + ulnar (3,4)\n• สรุป: Lumbricals: 2 อันนอกเลี้ยงโดย median, 2 อันในโดย ulnar"
+   "key_concept": "• median ส่ง LOAF: lumbrical 1–2, opponens, APB, FPB\n• ulnar ส่ง intrinsic ที่เหลือ"
   },
   "65": {
-   "explanation": "Lordosis คือการโค้งเข้าของ lumbar มากผิดปกติ",
+   "explanation": "Lordosis คือการเพิ่มความโค้งแอ่นของ lumbar",
    "option_why": {
-    "A": "Spondylosis คือข้อเสื่อม",
-    "B": "✓ Lordosis",
-    "C": "Scoliosis โค้งด้านข้าง",
-    "D": "Kyphosis โค้งหลัง",
-    "E": "Stenosis ตีบแคบ"
+    "A": "spondylosis คือข้อกระดูกสันหลังเสื่อม",
+    "B": "✓ lordosis คือ lumbar curve ที่แอ่นมากเกินไป",
+    "C": "scoliosis คือโค้งด้านข้าง",
+    "D": "kyphosis คือ thoracic curve ที่โค้งมาก",
+    "E": "spinal stenosis คือโพรงตีบ"
    },
-   "key_concept": "• Lordosis: ↑ lumbar curve\n• สรุป: Lordosis คือการโค้งเข้าของ lumbar มากผิดปกติ"
+   "key_concept": "• lordosis: lumbar/cervical · kyphosis: thoracic\n• พบในหญิงตั้งครรภ์และ obesity"
   },
   "66": {
-   "explanation": "Trigger point ที่ L1 transverse process ต่อ 12th rib คือ quadratus lumborum",
+   "explanation": "Trigger point ระหว่าง L1 และซี่โครง 12 = quadratus lumborum",
    "option_why": {
-    "A": "✓ Quadratus lumborum",
-    "B": "Longissimus ไม่ใช่",
-    "C": "Intertransversarii ไม่ใช่",
-    "D": "Rotators ไม่ใช่",
-    "E": "ไม่ใช่คำตอบที่ถูกต้องของโจทย์ข้อนี้"
+    "A": "✓ QL เกาะ 12th rib, L1–L4 transverse process และ iliac crest",
+    "B": "longissimus ไม่เกาะตำแหน่งนี้",
+    "C": "intertransversarii เชื่อมระหว่าง transverse process",
+    "D": "rotators เชื่อมระหว่าง vertebra ที่ติดกัน",
+    "E": "multifidus ยึดกระดูกสันหลังหลายระดับ ไม่ใช่ตำแหน่งนี้"
    },
-   "key_concept": "• QL: 12th rib → iliac crest\n• สรุป: Trigger point ที่ L1 transverse process ต่อ 12th rib คือ quadratus lumborum"
+   "key_concept": "• QL ทำ lateral flexion และยึด 12th rib\n• เจ็บเมื่อพลิกตัว เดิน นั่ง"
   },
   "67": {
-   "explanation": "การเดินด้วยไม้ค้ำยันรักแร้ใช้ latissimus dorsi ดึงลำตัวและกด shoulder girdle",
+   "explanation": "Latissimus dorsi สำคัญในการเดินด้วยไม้ค้ำยันเพราะดึงตัวและกด shoulder girdle",
    "option_why": {
-    "A": "Serratus posterior inferior ช่วยหายใจ",
-    "B": "Teres major ช่วยรอง",
-    "C": "Teres minor rotator cuff",
-    "D": "Levator scapulae ยกสะบัก",
-    "E": "✓ Latissimus dorsi กดและ extend"
+    "A": "serratus posterior inferior ช่วยหายใจ",
+    "B": "teres major ช่วย adduct/internal rotate",
+    "C": "teres minor เป็น rotator cuff",
+    "D": "levator scapulae ยกกระดูกสะบัก",
+    "E": "✓ latissimus ยกลำตัวขึ้นจากไม้ค้ำโดยกดไหล่ลง"
    },
-   "key_concept": "• Crutch walking: latissimus dorsi\n• สรุป: การเดินด้วยไม้ค้ำยันรักแร้ใช้ latissimus dorsi ดึงลำตัวและกด shoulder girdle"
+   "key_concept": "• crutch walking: lat dorsi, triceps, pec major\n• lat dorsi: extend, adduct, medially rotate"
   },
   "68": {
-   "explanation": "ปวดคอร้าวลงนิ้วกลาง triceps อ่อนแรง คือ C7 radiculopathy",
+   "explanation": "อ่อนแรง triceps + ชานิ้วกลาง = C7 radiculopathy",
    "option_why": {
-    "A": "C6 myelopathy ไม่ตรง",
-    "B": "Myelopathy มีอาการสองข้าง",
-    "C": "C6 ทำ biceps/ thumb",
-    "D": "✓ C7 radiculopathy: triceps, middle finger",
-    "E": "Plexopathy ไม่ใช่"
+    "A": "C6 myelopathy มี UMN sign",
+    "B": "C7 myelopathy มี UMN sign และผล 2 ข้าง",
+    "C": "C6 radiculopathy ชานิ้วโป้งและ biceps อ่อน",
+    "D": "✓ C7 root ส่ง triceps และรับความรู้สึกนิ้วกลาง และผลข้างเดียวตรงกับ radiculopathy",
+    "E": "brachial plexus กระจายกว้างกว่า"
    },
-   "key_concept": "• C7: triceps, middle finger\n• สรุป: ปวดคอร้าวลงนิ้วกลาง triceps อ่อนแรง คือ C7 radiculopathy"
+   "key_concept": "• C6: biceps/thumb · C7: triceps/middle finger · C8: finger flexor/little finger\n• radiculopathy: LMN ตาม dermatome/myotome",
+   "mechanism": [
+    "disc ที่ C6–C7 กดรากประสาท C7",
+    "triceps และผิวหนังนิ้วกลางขาดประสาท",
+    {
+     "s": "C7 radiculopathy",
+     "answer": true
+    },
+    "เจ็บร้าวคอลงแขน"
+   ]
   },
   "69": {
-   "explanation": "ปวดด้าน medial knee ใต้ patella ตรง medial tibial condyle คือ pes anserine bursitis",
+   "explanation": "ปวดกลางเข่าด้านใน ใต้และเหนือ medial tibial condyle = pes anserine bursitis",
    "option_why": {
-    "A": "ITB syndrome อยู่ lateral",
-    "B": "Patellar tendinitis อยู่ใต้ patella",
-    "C": "Prepatellar bursitis อยู่หน้า patella",
-    "D": "✓ Pes anserine bursitis",
-    "E": "ไม่ใช่คำตอบที่ถูกต้องของโจทย์ข้อนี้"
+    "A": "ITB syndrome ปวดด้านข้างเข่า",
+    "B": "patellar tendinitis ปวดใต้สะบ้า",
+    "C": "prepatellar bursitis บวมหน้าสะบ้า",
+    "D": "✓ pes anserinus (sartorius, gracilis, semitendinosus) บริเวณ medial tibial condyle",
+    "E": "medial meniscus tear ปวดแนวข้อและมี locking ไม่ใช่ปวดใต้เข่า"
    },
-   "key_concept": "• Pes anserinus: sartorius, gracilis, semitendinosus\n• สรุป: ปวดด้าน medial knee ใต้ patella ตรง medial tibial condyle คือ pes anserine bursitis"
+   "key_concept": "• pes anserinus: Say Grace before Tea\n• พบในผู้หญิงอ้วนที่เป็น OA เข่า"
   },
   "70": {
-   "explanation": "Trendelenburg test บวกคือ gluteus medius อ่อนแรง",
+   "explanation": "Trendelenburg บวก = gluteus medius อ่อนแรง",
    "option_why": {
-    "A": "Quadratus femoris หมุนออก",
-    "B": "Piriformis หมุนออก",
-    "C": "Iliopsoas งอสะโพก",
-    "D": "✓ Gluteus medius abductor",
-    "E": "Hamstring เหยียดสะโพก"
+    "A": "quadratus femoris หมุนสะโพกออก",
+    "B": "piriformis หมุนสะโพกออก",
+    "C": "iliopsoas งอสะโพก",
+    "D": "✓ gluteus medius ยึดเชิงกรานตอนยืนขาเดียว",
+    "E": "hamstring เหยียดสะโพก งอเข่า"
    },
-   "key_concept": "• Gluteus medius: hip abduction, pelvic stabilization\n• สรุป: Trendelenburg test บวกคือ gluteus medius อ่อนแรง"
+   "key_concept": "• superior gluteal nerve → medius/minimus\n• เชิงกรานฝั่งตรงข้ามตกเมื่อยกขา",
+   "mechanism": [
+    "gluteus medius อ่อนแรง",
+    "ยึดเชิงกรานไม่ได้",
+    {
+     "s": "เชิงกรานฝั่งยกขาตก",
+     "answer": true
+    },
+    "Trendelenburg บวก"
+   ]
   },
   "71": {
-   "explanation": "Foot drop ร่วมกับ tibialis anterior, EHL, peroneus longus อ่อนแรง ชา anterolateral calf คือ common peroneal neuropathy",
+   "explanation": "Foot drop + ชา anterolateral = common peroneal neuropathy",
    "option_why": {
-    "A": "✓ Common peroneal n. รวม deep และ superficial",
-    "B": "Deep peroneal ไม่ทำให้ peroneus longus อ่อน",
-    "C": "ไม่ใช่คำตอบที่ถูกต้องของโจทย์ข้อนี้",
-    "D": "ไม่ใช่คำตอบที่ถูกต้องของโจทย์ข้อนี้",
-    "E": "ไม่ใช่คำตอบที่ถูกต้องของโจทย์ข้อนี้"
+    "A": "✓ common peroneal ส่ง TA, EHL, peroneus และรับความรู้สึก anterolateral",
+    "B": "deep peroneal ไม่ส่ง peroneus longus",
+    "C": "sciatic กระทบ hamstring/plantarflexion ด้วย",
+    "D": "lumbosacral กระจายกว้างกว่า",
+    "E": "superficial peroneal ไม่ทำให้ TA/EHL อ่อนแรง"
    },
-   "key_concept": "• Common peroneal: foot drop + lateral calf sensory\n• สรุป: Foot drop ร่วมกับ tibialis anterior, EHL, peroneus longus อ่อนแรง ชา anterolateral calf คื"
+   "key_concept": "• common peroneal n. รัดที่คอ fibula\n• deep: TA, EHL, ชา first web space"
   },
   "72": {
    "explanation": "Small saphenous vein ไหลเข้า popliteal vein",
    "option_why": {
-    "A": "Fibular vein ไม่ใช่",
-    "B": "✓ Popliteal vein",
-    "C": "Posterior tibial ไม่ใช่",
-    "D": "Anterior tibial ไม่ใช่",
-    "E": "GSV ไม่ใช่"
+    "A": "fibular vein ไม่ใช่ปลายทาง SSV",
+    "B": "✓ SSV ขึ้นหลัง lateral malleolus แล้วเข้า popliteal vein ที่ popliteal fossa",
+    "C": "posterior tibial vein ไม่ใช่",
+    "D": "anterior tibial vein ไม่ใช่",
+    "E": "GSV เป็นอีกเส้นหนึ่งที่เข้า femoral vein"
    },
-   "key_concept": "• SSV → popliteal vein\n• สรุป: Small saphenous vein ไหลเข้า popliteal vein"
+   "key_concept": "• GSV → femoral (saphenofemoral junction)\n• SSV → popliteal (saphenopopliteal junction)"
   },
   "73": {
-   "explanation": "Medial circumflex femoral artery เป็นแหล่งเลือดหลักของ femoral head",
+   "explanation": "MCFA เสี่ยงขาดเลือดเมื่อ femoral neck หัก",
    "option_why": {
-    "A": "Obturator เลี้ยงน้อย",
-    "B": "Descending genicular อยู่เข่า",
-    "C": "✓ MCFA",
-    "D": "External iliac อยู่ไกล",
-    "E": "Superior gluteal ไม่ใช่"
+    "A": "obturator a. ให้กิ่งเข้า ligamentum teres เล็กน้อย",
+    "B": "descending genicular อยู่ใกล้เข่า",
+    "C": "✓ MCFA ให้ retinacular branch เลี้ยง femoral head",
+    "D": "external iliac เป็นต้นทางไกล",
+    "E": "superior gluteal เลี้ยงกล้ามเนื้อก้น"
    },
-   "key_concept": "• Femoral neck fracture → AVN\n• สรุป: Medial circumflex femoral artery เป็นแหล่งเลือดหลักของ femoral head"
+   "key_concept": "• MCFA เลี้ยง head/neck ส่วนใหญ่\n• femoral neck fracture → AVN",
+   "mechanism": [
+    "femoral neck หัก",
+    "retinacular vessels จาก MCFA ฉีกขาด",
+    {
+     "s": "femoral head ขาดเลือด",
+     "answer": true
+    },
+    "avascular necrosis"
+   ]
   },
   "74": {
-   "explanation": "ยืด gastrocnemius ต้อง extend เข่าและ dorsiflex เท้า",
+   "explanation": "เหยียดเข่าแล้ว dorsiflex ยืด gastrocnemius ได้เต็มที่",
    "option_why": {
-    "A": "Knee flex ทำให้ gastrocnemius หย่อน",
-    "B": "Plantarflex ทำให้หย่อน",
-    "C": "Knee flex + plantarflex หย่อน",
-    "D": "Dorsiflex อย่างเดียวถ้าเข่างอ ไม่ครบ",
-    "E": "✓ Knee extension + dorsiflexion"
+    "A": "งอเข่าทำให้ gastrocnemius หย่อน",
+    "B": "plantarflex ทำให้หดสั้น",
+    "C": "งอเข่า + plantarflex หดสั้นทั้งสองข้อ",
+    "D": "dorsiflex อย่างเดียวยืดได้เฉพาะ soleus",
+    "E": "✓ gastrocnemius ข้ามเข่าและข้อเท้า ต้องเหยียดเข่า + dorsiflex"
    },
-   "key_concept": "• Gastrocnemius crosses knee + ankle\n• สรุป: ยืด gastrocnemius ต้อง extend เข่าและ dorsiflex เท้า"
+   "key_concept": "• gastrocnemius ข้าม 2 ข้อ\n• soleus ข้ามข้อเดียว ต้องงอเข่าเพื่อยืด"
   },
   "75": {
-   "explanation": "ชีพจร posterior tibial คลำได้หลัง medial malleolus",
+   "explanation": "ชีพจร posterior tibial คลำหลัง medial malleolus",
    "option_why": {
-    "A": "ด้านข้าง EHL คือ dorsalis pedis",
-    "B": "หน้า lateral malleolus ไม่ใช่",
-    "C": "หลัง lateral malleolus คือ peroneal",
-    "D": "หน้า medial malleolus ไม่ใช่",
-    "E": "✓ Posterior to medial malleolus"
+    "A": "ด้านข้าง EHL tendon คือ dorsalis pedis",
+    "B": "หน้า lateral malleolus ไม่มีชีพจรหลัก",
+    "C": "หลัง lateral malleolus คือ peroneal tendons",
+    "D": "หน้า medial malleolus คือ saphenous vein",
+    "E": "✓ posterior tibial a. อยู่หลัง medial malleolus (Tom, Dick, And Very Nervous Harry)"
    },
-   "key_concept": "• PT pulse: behind medial malleolus\n• สรุป: ชีพจร posterior tibial คลำได้หลัง medial malleolus"
+   "key_concept": "• DP pulse: ด้านข้าง EHL บนหลังเท้า\n• PT pulse: หลัง medial malleolus"
   },
   "76": {
-   "explanation": "Inversion + plantarflexion injury ฉีก anterior talofibular ligament (ATFL) บ่อยสุด",
+   "explanation": "Inversion + plantarflexion ฉีก ATFL (anterior talofibular ligament)",
    "option_why": {
-    "A": "Posterior tibiotalar อยู่ medial",
-    "B": "✓ ATFL บาดเจ็บบ่อยที่สุด",
-    "C": "ไม่ใช่คำตอบที่ถูกต้องของโจทย์ข้อนี้",
-    "D": "ไม่ใช่คำตอบที่ถูกต้องของโจทย์ข้อนี้",
-    "E": "ไม่ใช่คำตอบที่ถูกต้องของโจทย์ข้อนี้"
+    "A": "posterior tibiotalar อยู่ medial (deltoid)",
+    "B": "✓ ATFL เป็น lateral ligament ที่อ่อนที่สุดและบาดเจ็บบ่อยสุด",
+    "C": "tibiocalcaneal เป็นส่วนของ deltoid ด้าน medial",
+    "D": "PTFL ฉีกยากสุด ต้องบาดเจ็บรุนแรง",
+    "E": "anterior tibiotalar อยู่ medial ใน deltoid"
    },
-   "key_concept": "• Lateral ankle sprain: ATFL\n• สรุป: Inversion + plantarflexion injury ฉีก anterior talofibular ligament (ATFL) บ่อยสุด"
+   "key_concept": "• lateral sprain: ATFL → CFL → PTFL\n• eversion injury → deltoid ligament"
   },
   "77": {
-   "explanation": "Sclerotome พัฒนาเป็นกระดูกสันหลังและซี่โครง",
+   "explanation": "Sclerotome พัฒนาเป็นกระดูกสันหลัง",
    "option_why": {
-    "A": "Dermatome → dermis",
-    "B": "✓ Sclerotome → vertebrae",
-    "C": "Lateral plate → ผนังร่างกาย",
-    "D": "Myotome → muscle",
-    "E": "Neural crest → neuron"
+    "A": "dermatome สร้างหนังแท้",
+    "B": "✓ sclerotome migrate ไปล้อม notochord สร้างกระดูกสันหลัง",
+    "C": "lateral plate mesoderm สร้างผนังลำตัว/แขนขา",
+    "D": "myotome สร้างกล้ามเนื้อ",
+    "E": "neural crest สร้างโครงสร้างกะโหลกและประสาทส่วนปลาย"
    },
-   "key_concept": "• Sclerotome → axial skeleton\n• สรุป: Sclerotome พัฒนาเป็นกระดูกสันหลังและซี่โครง"
+   "key_concept": "• somite → sclerotome, myotome, dermatome\n• sclerotome → vertebra, ribs"
   },
   "78": {
-   "explanation": "เมื่อ upper limb หมุนออกด้านข้าง 90° กล้ามเนื้อ flexor อยู่ด้านหน้า (ventral)",
+   "explanation": "หมุนแขนออก 90° wk 7 ทำให้ flexor อยู่ด้านหน้า (ventral)",
    "option_why": {
-    "A": "Extensor อยู่ด้านหลัง",
-    "B": "Flexor อยู่ด้านหน้า",
-    "C": "ฝ่ามืออยู่หน้า",
-    "D": "✓ Flexor ventral",
-    "E": "นิ้วโป้งอยู่ด้านข้าง"
+    "A": "extensor อยู่ด้านหลัง (dorsal)",
+    "B": "flexor อยู่ด้านหน้า ไม่ใช่หลัง",
+    "C": "ฝ่ามืออยู่ด้านหน้า (anterior)",
+    "D": "✓ หลังหมุน flexor compartment อยู่ ventral",
+    "E": "นิ้วโป้งอยู่ด้านข้าง (lateral)"
    },
-   "key_concept": "• UL rotates laterally; LL rotates medially\n• สรุป: เมื่อ upper limb หมุนออกด้านข้าง 90° กล้ามเนื้อ flexor อยู่ด้านหน้า (ventral)"
+   "key_concept": "• upper limb หมุนออก 90°, lower limb หมุนเข้า 90°\n• ทำให้ extensor ด้านหลังแขน flexor ด้านหน้า"
   },
   "79": {
-   "explanation": "Sagittal suture ปิดก่อนวัยทำให้กะโหลกยาวแคบ (scaphocephaly)",
+   "explanation": "Sagittal suture ปิดก่อน → กะโหลกยาวแคบ (scaphocephaly)",
    "option_why": {
-    "A": "Metopic ทำ trigonocephaly",
-    "B": "Frontal ไม่ใช่",
-    "C": "✓ Sagittal → scaphocephaly",
-    "D": "Coronal ทำ brachycephaly",
-    "E": "Lambdoid ทำ posterior plagiocephaly"
+    "A": "metopic ปิดเร็ว → trigonocephaly",
+    "B": "frontal suture ไม่ใช่ชื่อที่ถูก",
+    "C": "✓ sagittal ปิดเร็ว กะโหลกโตทางหน้า–หลังเท่านั้น",
+    "D": "coronal ปิดเร็ว → brachycephaly",
+    "E": "lambdoid ปิดเร็ว → plagiocephaly"
    },
-   "key_concept": "• Sagittal synostosis: scaphocephaly\n• สรุป: Sagittal suture ปิดก่อนวัยทำให้กะโหลกยาวแคบ (scaphocephaly)"
+   "key_concept": "• scaphocephaly = sagittal synostosis พบบ่อยสุด\n• craniosynostosis: กะโหลกโตตามทิศตั้งฉากกับ suture ที่ปิด",
+   "mechanism": [
+    "sagittal suture ปิดก่อนกำหนด",
+    "กะโหลกขยายด้านข้างไม่ได้",
+    {
+     "s": "โตทางหน้า-หลังแทน",
+     "answer": true
+    },
+    "ศีรษะยาวและแคบ"
+   ]
   },
   "80": {
-   "explanation": "Interzonal mesenchyme เปลี่ยนเป็น cartilage ได้เป็นข้อ cartilaginous เช่น pubic symphysis",
+   "explanation": "Cartilaginous joint เช่น pubic symphysis เกิดจาก interzonal mesenchyme เปลี่ยนเป็นกระดูกอ่อน",
    "option_why": {
-    "A": "✓ Pubic symphysis (cartilaginous)",
-    "B": "Hip joint เป็น synovial",
-    "C": "Knee เป็น synovial",
-    "D": "Suture เป็น fibrous",
-    "E": "Syndesmosis เป็น fibrous"
+    "A": "✓ pubic symphysis เป็น secondary cartilaginous joint",
+    "B": "hip joint เป็น synovial joint มี joint cavity",
+    "C": "knee joint เป็น synovial joint",
+    "D": "suture เป็น fibrous joint",
+    "E": "syndesmosis เป็น fibrous joint"
    },
-   "key_concept": "• Fibrous, cartilaginous, synovial joints\n• สรุป: Interzonal mesenchyme เปลี่ยนเป็น cartilage ได้เป็นข้อ cartilaginous เช่น pubic symphysis"
+   "key_concept": "• interzone → synovial (cavitate) / cartilaginous / fibrous ตามแต่ละข้อ\n• symphysis, IV disc = cartilaginous"
   },
   "81": {
-   "explanation": "ตำแหน่ง A ในภาพเอ็กซเรย์ศอกชี้ที่ radial head",
+   "explanation": "A คือ radial head",
    "option_why": {
-    "A": "Lateral condyle อยู่ด้านบน",
-    "B": "Capitulum อยู่บนปลาย humerus",
-    "C": "Medial epicondyle อยู่ด้านใน",
-    "D": "✓ Radial head อยู่ด้านล่างต่อ capitulum",
-    "E": "Trochlea อยู่ medial"
+    "A": "lateral condyle อยู่ปลายล่างของ humerus",
+    "B": "capitulum เป็นพื้นผิว humerus ที่รับ radial head",
+    "C": "medial epicondyle เป็นปุ่มด้านใน humerus",
+    "D": "✓ A ชี้ radial head ปลายบนของ radius",
+    "E": "trochlea ต่อกับ ulna"
    },
-   "key_concept": "• Radial head articulates with capitulum\n• สรุป: ตำแหน่ง A ในภาพเอ็กซเรย์ศอกชี้ที่ radial head"
+   "key_concept": "• elbow: capitulum–radial head, trochlea–trochlear notch\n• radial head จับได้ใต้ lateral epicondyle เวลาหมุนปลายแขน"
   },
   "82": {
-   "explanation": "ตำแหน่ง B ในภาพข้อเท้าคือ talus",
+   "explanation": "B คือ talus",
    "option_why": {
-    "A": "✓ Talus อยู่ใต้ tibia",
-    "B": "Medial malleolus อยู่ด้านข้าง tibia",
-    "C": "Calcaneus อยู่ใต้ talus",
-    "D": "Cuboid อยู่ด้านนอกเท้า",
-    "E": "Lateral malleolus ปลาย fibula"
+    "A": "✓ talus อยู่ใต้ tibia รับน้ำหนักข้อเท้า",
+    "B": "medial malleolus เป็นปลายล่าง tibia",
+    "C": "calcaneus เป็นกระดูกส้นเท้า",
+    "D": "cuboid อยู่ข้างเท้าด้านนอก",
+    "E": "lateral malleolus เป็นปลายล่าง fibula"
    },
-   "key_concept": "• Ankle mortise: tibia, fibula, talus\n• สรุป: ตำแหน่ง B ในภาพข้อเท้าคือ talus"
+   "key_concept": "• ankle mortise: tibia + fibula + talus\n• talus ไม่มีกล้ามเนื้อเกาะ เลือดมาน้อย เสี่ยง AVN"
   },
   "83": {
-   "explanation": "บาดเจ็บไหล่ควรถ่าย AP และ transcapular (scapular Y) view",
+   "explanation": "ไหล่บาดเจ็บใช้ shoulder AP + transscapular (Y) view",
    "option_why": {
-    "A": "Humerus view ไม่ใช่ข้อไหล่",
-    "B": "Oblique ไม่พอ",
-    "C": "Humerus lateral ไม่ใช่",
-    "D": "✓ Shoulder AP + transscapular",
-    "E": "Lateral ธรรมดาไม่ได้ภาพ glenohumeral"
+    "A": "humerus view ไม่เห็นข้อไหล่เต็ม",
+    "B": "AP oblique ไม่ครบการประเมิน dislocation",
+    "C": "humerus lateral ไม่ใช่ view ของไหล่",
+    "D": "✓ AP + transscapular ประเมิน glenohumeral dislocation ได้",
+    "E": "shoulder lateral อาจทำไม่ได้ในผู้บาดเจ็บ"
    },
-   "key_concept": "• Shoulder trauma series: AP, scapular Y, axillary\n• สรุป: บาดเจ็บไหล่ควรถ่าย AP และ transcapular (scapular Y) view"
+   "key_concept": "• trauma series: AP, scapular Y, axillary\n• ใช้ดู anterior/posterior dislocation"
   },
   "84": {
-   "explanation": "การประเมิน C2 (dens) ใช้ open mouth view",
+   "explanation": "C2 (dens) เห็นดีด้วย open mouth view",
    "option_why": {
-    "A": "✓ Open mouth view เห็น dens",
-    "B": "Oblique เห็น foramina",
-    "C": "AP ทั่วไป",
-    "D": "Lateral เห็นแนวกระดูก",
-    "E": "AP oblique"
+    "A": "✓ open mouth ผ่านปากเห็น dens และ C1–C2",
+    "B": "PA oblique ไม่ใช่",
+    "C": "AP ซ้อนทับกับกระดูกอื่น",
+    "D": "lateral เห็นแนวรวม แต่ไม่ดีที่สุดสำหรับ dens",
+    "E": "AP oblique ดู foramen"
    },
-   "key_concept": "• Open mouth view: C1-C2\n• สรุป: การประเมิน C2 (dens) ใช้ open mouth view"
+   "key_concept": "• open mouth = odontoid fracture, C1 burst\n• lateral = alignment"
   },
   "85": {
-   "explanation": "ขาด pseudocholinesterase ทำให้ succinylcholine ออกฤทธิ์นานผิดปกติ",
+   "explanation": "Succinylcholine ถูกย่อยโดย plasma cholinesterase ถ้าขาดจะอัมพาตนาน",
    "option_why": {
-    "A": "✓ Succinylcholine ถูกย่อยโดย plasma cholinesterase",
-    "B": "Vecuronium ถูกย่อยที่ตับ",
-    "C": "—",
-    "D": "Rocuronium ถูกขับทางตับ",
-    "E": "Atracurium ถูกย่อยด้วย Hofmann"
+    "A": "✓ sux ถูกทำลายโดย pseudocholinesterase",
+    "B": "vecuronium กำจัดทางตับ",
+    "C": "pancuronium กำจัดทางไต",
+    "D": "rocuronium กำจัดทางตับ",
+    "E": "atracurium สลายเองแบบ Hofmann"
    },
-   "key_concept": "• Succinylcholine: pseudocholinesterase\n• สรุป: ขาด pseudocholinesterase ทำให้ succinylcholine ออกฤทธิ์นานผิดปกติ"
+   "key_concept": "• sux: depolarizing, half-life สั้นเพราะ cholinesterase\n• dibucaine number ตรวจ variant",
+   "mechanism": [
+    "sux ต้องถูก pseudocholinesterase ย่อย",
+    "enzyme ขาด",
+    {
+     "s": "sux ค้างที่ NMJ นาน",
+     "answer": true
+    },
+    "paralysis ยืดเยื้อ (apnea)"
+   ]
   },
   "86": {
-   "explanation": "Succinylcholine ทำให้ fasciculation และปวดกล้ามเนื้อหลังผ่าตัด",
+   "explanation": "Succinylcholine ทำ fasciculation แล้วเมื่อยล้า/ปวดกล้ามเนื้อหลังผ่าตัด",
    "option_why": {
-    "A": "✓ Succinylcholine depolarizing NMBA",
-    "B": "Vecuronium ไม่ทำให้ fasciculation",
-    "C": "Pancuronium ไม่ทำ",
-    "D": "Baclofen ไม่ใช่ NMBA",
-    "E": "Tizanidine ไม่ใช่"
+    "A": "✓ sux depolarize ทำกล้ามเนื้อกระตุกพร้อมกัน เกิด myalgia",
+    "B": "vecuronium เป็น non-depolarizing ไม่ทำ fasciculation",
+    "C": "pancuronium เป็น non-depolarizing",
+    "D": "baclofen ใช้คลายกล้ามเนื้อ spasticity",
+    "E": "tizanidine เป็น α2 agonist ใช้ spasticity"
    },
-   "key_concept": "• Succinylcholine: fasciculation → myalgia\n• สรุป: Succinylcholine ทำให้ fasciculation และปวดกล้ามเนื้อหลังผ่าตัด"
+   "key_concept": "• sux ADR: myalgia, hyperkalemia, MH, bradycardia\n• ป้องกัน myalgia ด้วย pretreatment non-depolarizer",
+   "mechanism": [
+    "sux จับ nicotinic receptor",
+    "กล้ามเนื้อ depolarize พร้อมกัน",
+    {
+     "s": "fasciculation",
+     "answer": true
+    },
+    "ปวดกล้ามเนื้อหลังผ่าตัด"
+   ]
   },
   "87": {
-   "explanation": "Pancuronium (non-depolarizing) ถูกกลับฤทธิ์ด้วย neostigmine",
+   "explanation": "Neostigmine กลับฤทธิ์ pancuronium (non-depolarizing)",
    "option_why": {
-    "A": "Phenobarbital ไม่ใช่",
-    "B": "Atropine ใช้ร่วมกับ neostigmine",
-    "C": "✓ Neostigmine ยับยั้ง AChE",
-    "D": "Dopamine ไม่ใช่",
-    "E": "Diazepam ไม่ใช่"
+    "A": "phenobarbital เป็นยากันชัก",
+    "B": "atropine ใช้คู่เพื่อลดผล muscarinic",
+    "C": "✓ neostigmine ยับยั้ง AChE เพิ่ม ACh แย่ง blocker",
+    "D": "dopamine ไม่เกี่ยว",
+    "E": "diazepam ไม่เกี่ยว"
    },
-   "key_concept": "• NDMB reversal: neostigmine + atropine\n• สรุป: Pancuronium (non-depolarizing) ถูกกลับฤทธิ์ด้วย neostigmine"
+   "key_concept": "• reversal: neostigmine + atropine/glycopyrrolate\n• sugammadex สำหรับ rocuronium/vecuronium",
+   "mechanism": [
+    "pancuronium แย่ง ACh",
+    "neostigmine ยับยั้ง AChE",
+    {
+     "s": "ACh สะสมที่ NMJ ชนะ blocker",
+     "answer": true
+    },
+    "กล้ามเนื้อกลับมาทำงาน"
+   ]
   },
   "88": {
-   "explanation": "ยาปฏิชีวนะบางกลุ่มเสริมฤทธิ์ NMBA (ตามเฉลย AI เลือก penicillin)",
+   "explanation": "Penicillin มีรายงานเสริมฤทธิ์ NMB ตามเฉลยต้นฉบับ (AI: ทั่วไปกลุ่ม aminoglycoside มีผลชัดกว่า)",
    "option_why": {
-    "A": "✓ Antibiotic เสริม neuromuscular blockade",
-    "B": "Amoxicillin ผลน้อย",
-    "C": "Morphine ไม่ใช่ปฏิกิริยาที่สำคัญ",
-    "D": "Epinephrine ไม่ใช่",
-    "E": "Atropine ไม่ใช่"
+    "A": "✓ ตามเฉลยต้นฉบับถือเป็นยาที่มี interaction",
+    "B": "amoxicillin ถูกจัดเป็นตัวเลือกผิด ทั้งที่อยู่กลุ่มเดียวกัน",
+    "C": "morphine ไม่ใช่ปฏิกิริยา NMB โดยตรง",
+    "D": "epinephrine ไม่เสริมฤทธิ์ NMB",
+    "E": "atropine ใช้คู่กับ reversal ไม่เสริม blockade"
    },
-   "key_concept": "• Aminoglycosides/antibiotics potentiate NMBA\n• สรุป: ยาปฏิชีวนะบางกลุ่มเสริมฤทธิ์ NMBA (ตามเฉลย AI เลือก penicillin)"
+   "key_concept": "• ยาเสริมฤทธิ์ NMB: aminoglycosides, Mg, volatile anesthetic\n• ยาที่ต้านฤทธิ์ NMB: ACE inhibitor"
   },
   "89": {
-   "explanation": "Diclofenac ช่วงปลายตั้งครรภ์ทำให้ ductus arteriosus ปิดก่อนกำหนด",
+   "explanation": "NSAID ช่วงปลายครรภ์ทำให้ ductus arteriosus ปิดก่อนกำหนด (PDA เป็นผิดปกติคือปิด)",
    "option_why": {
-    "A": "ไม่ทำ hepatotoxicity ต่อทารก",
-    "B": "ไม่กดไขกระดูก",
-    "C": "เลือดออกเป็นผลรอง",
-    "D": "แผลกระเพาะเป็นของมารดา",
-    "E": "✓ PG ลดลง ductus ปิดเร็ว"
+    "A": "ตับพิษพบในผู้ใหญ่ ไม่ใช่ผลต่อทารกจาก diclofenac",
+    "B": "marrow suppression ไม่ใช่ผลของ diclofenac",
+    "C": "เลือดออกนานเป็นผลต่อแม่",
+    "D": "peptic ulcer เป็นผลต่อแม่",
+    "E": "✓ ยับยั้ง prostaglandin ทำให้ ductus ผิดปกติ (ตามเฉลย PDA)"
    },
-   "key_concept": "• NSAID late pregnancy: premature DA closure\n• สรุป: Diclofenac ช่วงปลายตั้งครรภ์ทำให้ ductus arteriosus ปิดก่อนกำหนด"
+   "key_concept": "• NSAID ไตรมาส 3: ductus ปิดเร็ว, oligohydramnios\n• ใช้ indomethacin ปิด PDA ในทารก",
+   "mechanism": [
+    "diclofenac ยับยั้ง COX",
+    "PGE2 ที่คง ductus ลด",
+    {
+     "s": "ductus เปลี่ยนแปลงผิดปกติ",
+     "answer": true
+    },
+    "ผลต่อไหลเวียนทารก"
+   ]
   },
   "90": {
-   "explanation": "ไข้หวัดในเด็กให้ aspirin ทำให้เกิด Reye syndrome",
+   "explanation": "Aspirin ในเด็กติดเชื้อไวรัส → Reye syndrome (confusion + transaminase สูง)",
    "option_why": {
-    "A": "Ibuprofen ปลอดภัยกว่า",
-    "B": "Paracetamol ปลอดภัย",
-    "C": "✓ Aspirin เกี่ยวกับ Reye",
-    "D": "Celecoxib ไม่ใช่",
-    "E": "Diclofenac ไม่ใช่"
+    "A": "ibuprofen ไม่ทำ Reye",
+    "B": "paracetamol ไม่ทำ Reye ขนาดปกติ",
+    "C": "✓ aspirin ทำลาย mitochondria ตับ ร่วมกับไวรัส",
+    "D": "celecoxib ไม่ทำ Reye",
+    "E": "diclofenac ไม่ทำ Reye"
    },
-   "key_concept": "• Aspirin + viral infection → Reye\n• สรุป: ไข้หวัดในเด็กให้ aspirin ทำให้เกิด Reye syndrome"
+   "key_concept": "• Reye: encephalopathy + fatty liver ในเด็กที่ได้ aspirin\n• ห้าม aspirin ในเด็กที่เป็นไวรัส",
+   "mechanism": [
+    "aspirin + ไวรัส",
+    "mitochondria ตับถูกทำลาย",
+    {
+     "s": "ตับวาย ammonia สูง",
+     "answer": true
+    },
+    "สับสน Reye syndrome"
+   ]
   },
   "91": {
-   "explanation": "พิษ paracetamol แก้ด้วย N-acetylcysteine",
+   "explanation": "NAC เป็น antidote ของ paracetamol",
    "option_why": {
-    "A": "Glutathione ให้ทางหลอดเลือดไม่ใช่ทางเลือกหลัก",
-    "B": "Domperidone แก้อาเจียนเท่านั้น",
-    "C": "NAPQI คือสารพิษ",
-    "D": "Aspirin ไม่ใช่",
-    "E": "✓ NAC เติม glutathione"
+    "A": "glutathione ให้ทางหลอดเลือดเข้าเซลล์ไม่ดี จึงให้ NAC",
+    "B": "domperidone รักษาอาการคลื่นไส้ ไม่แก้พิษ",
+    "C": "NAPQI เป็นสารพิษ ไม่ใช่ยา",
+    "D": "aspirin ไม่ใช่ antidote",
+    "E": "✓ NAC เป็นสารตั้งต้น glutathione จับ NAPQI"
    },
-   "key_concept": "• NAC = antidote of paracetamol\n• สรุป: พิษ paracetamol แก้ด้วย N-acetylcysteine"
+   "key_concept": "• paracetamol OD: ให้ NAC ภายใน 8–10 ชม.\n• alcoholic เสี่ยงมากเพราะ glutathione ต่ำ"
   },
   "92": {
-   "explanation": "ประวัติแผลกระเพาะควรเลือก COX-2 selective เช่น celecoxib",
+   "explanation": "ผู้ป่วยแผลกระเพาะเลือก COX-2 selective เช่น celecoxib",
    "option_why": {
-    "A": "Indomethacin เสี่ยงแผล",
-    "B": "Mefenamic เสี่ยงแผล",
-    "C": "Baclofen ไม่ใช่ NSAID",
-    "D": "✓ Celecoxib เสี่ยง GI ต่ำ",
-    "E": "Piroxicam เสี่ยงแผล"
+    "A": "indomethacin เสี่ยงแผลสูง",
+    "B": "mefenamic acid เสี่ยง GI",
+    "C": "baclofen เป็น muscle relaxant ไม่ใช่ยาแก้ปวดอักเสบ",
+    "D": "✓ celecoxib ไม่ยับยั้ง COX-1 ที่ปกป้องกระเพาะ",
+    "E": "piroxicam เสี่ยง GI สูง"
    },
-   "key_concept": "• Peptic ulcer → COX-2 inhibitor\n• สรุป: ประวัติแผลกระเพาะควรเลือก COX-2 selective เช่น celecoxib"
+   "key_concept": "• COX-2 selective: celecoxib, etoricoxib แผล GI น้อย\n• ระวัง CV risk"
   },
   "93": {
-   "explanation": "Colchicine ต้องหยุดเมื่อมีอาการคลื่นไส้อาเจียน/ท้องเสีย (สัญญาณ toxicity)",
+   "explanation": "Colchicine ถ้ามีคลื่นไส้อาเจียน/ท้องเสียเป็นสัญญาณพิษต้องหยุด",
    "option_why": {
-    "A": "Acute gout คือข้อบ่งใช้",
-    "B": "✓ GI toxicity เป็นสัญญาณให้หยุด",
-    "C": "Headache ไม่ใช่",
-    "D": "Infusion reaction ไม่เกี่ยว",
-    "E": "Tophi ไม่ใช่เหตุให้หยุด"
+    "A": "gout flare เป็นข้อบ่งชี้ ไม่ใช่เหตุหยุดยา",
+    "B": "✓ GI toxicity เป็นสัญญาณแรกของพิษ colchicine",
+    "C": "ปวดหัวไม่ใช่เหตุหยุด",
+    "D": "infusion reaction ไม่เกี่ยวกับยาเม็ด",
+    "E": "tophi ไม่ใช่เหตุหยุดยา"
    },
-   "key_concept": "• Colchicine: stop if N/V/D\n• สรุป: Colchicine ต้องหยุดเมื่อมีอาการคลื่นไส้อาเจียน/ท้องเสีย (สัญญาณ toxicity)"
+   "key_concept": "• colchicine ADR: GI, myopathy, marrow suppression\n• ขนาดสูงเป็นพิษ"
   },
   "94": {
-   "explanation": "ผู้ป่วย gout กำเริบบ่อย ควรเริ่ม urate-lowering therapy (allopurinol)",
+   "explanation": "Gout ซ้ำและ urinary uric acid ปกติ (underexcretion ไม่ใช่) ใช้ allopurinol ลดการสร้าง",
    "option_why": {
-    "A": "Glucocorticoid ใช้ระงับอาการ",
-    "B": "✓ Allopurinol first-line urate lowering",
-    "C": "Pegloticase สำหรับ refractory",
-    "D": "Probenecid เมื่อ underexcretor",
-    "E": "ไม่ใช่คำตอบที่ถูกต้องของโจทย์ข้อนี้"
+    "A": "glucocorticoid ใช้ตอนเฉียบพลัน",
+    "B": "✓ allopurinol ยับยั้ง xanthine oxidase ป้องกันระยะยาว",
+    "C": "pegloticase สำหรับ gout ดื้อยา",
+    "D": "probenecid ใช้ถ้าขับ uric acid ต่ำ",
+    "E": "diclofenac ใช้ระยะเฉียบพลัน"
    },
-   "key_concept": "• Recurrent gout → allopurinol\n• สรุป: ผู้ป่วย gout กำเริบบ่อย ควรเริ่ม urate-lowering therapy (allopurinol)"
+   "key_concept": "• urate-lowering: allopurinol (overproducer), probenecid (underexcretor)\n• เริ่มหลังหาย flare"
   },
   "95": {
-   "explanation": "Pegloticase เป็น uricase เปลี่ยน uric acid เป็น allantoin",
+   "explanation": "Pegloticase เป็น uricase เปลี่ยน uric acid → allantoin ที่ละลายและขับได้",
    "option_why": {
-    "A": "Colchicine ไม่ลด uric",
-    "B": "Allopurinol ยับยั้ง xanthine oxidase",
-    "C": "Benzbromarone uricosuric",
-    "D": "✓ Pegloticase uricase",
-    "E": "Febuxostat ยับยั้ง XO"
+    "A": "colchicine ยับยั้ง microtubule",
+    "B": "allopurinol ยับยั้ง xanthine oxidase",
+    "C": "benzbromarone เพิ่มการขับ",
+    "D": "✓ pegloticase เป็นเอนไซม์ uricase",
+    "E": "febuxostat ยับยั้ง xanthine oxidase"
    },
-   "key_concept": "• Uricase → allantoin\n• สรุป: Pegloticase เป็น uricase เปลี่ยน uric acid เป็น allantoin"
+   "key_concept": "• uricase: allantoin (คนไม่มีเอนไซม์นี้)\n• pegloticase ใช้ gout ดื้อยา",
+   "mechanism": [
+    "pegloticase เป็น uricase",
+    "uric acid → allantoin",
+    {
+     "s": "ละลายง่ายขับทางไต",
+     "answer": true
+    },
+    "ระดับ uric acid ลดลง"
+   ]
   },
   "96": {
-   "explanation": "Probenecid ยับยั้ง URAT1 ที่ proximal tubule เพิ่มการขับ uric acid",
+   "explanation": "Probenecid ยับยั้ง URAT1 ที่ท่อไต",
    "option_why": {
-    "A": "COX ไม่ใช่",
-    "B": "XO คือ allopurinol",
-    "C": "Leukocyte function ไม่ใช่",
-    "D": "✓ ยับยั้ง URAT1",
-    "E": "Microtubule คือ colchicine"
+    "A": "ยับยั้ง COX คือ NSAID",
+    "B": "ยับยั้ง xanthine oxidase คือ allopurinol",
+    "C": "ยับยั้ง leukocyte function คือ colchicine",
+    "D": "✓ URAT1 ดูด uric acid กลับ ยับยั้งจึงเพิ่มการขับ",
+    "E": "ยับยั้ง microtubule คือ colchicine"
    },
-   "key_concept": "• Probenecid: URAT1 inhibitor\n• สรุป: Probenecid ยับยั้ง URAT1 ที่ proximal tubule เพิ่มการขับ uric acid"
+   "key_concept": "• uricosuric: probenecid, benzbromarone\n• ต้องดื่มน้ำมากป้องกันนิ่ว",
+   "mechanism": [
+    "probenecid จับ URAT1",
+    "การดูดกลับ uric acid ลด",
+    {
+     "s": "ขับ uric acid ทางปัสสาวะมากขึ้น",
+     "answer": true
+    },
+    "ระดับ uric acid ในเลือดลด"
+   ]
   },
   "97": {
-   "explanation": "มะเร็งปอดชนิดเซลล์เล็ก ปากแห้ง ตาแข้ง หนังตาตก คือ Lambert-Eaton syndrome",
+   "explanation": "SCLC + อ่อนแรง ปากแห้ง ตาตก ชิ้นเนื้อปกติ = Lambert–Eaton",
    "option_why": {
-    "A": "Necrotizing myositis ไม่มี autonomic",
-    "B": "✓ LEMS: anti-VGCC, paraneoplastic",
-    "C": "ไม่ใช่คำตอบที่ถูกต้องของโจทย์ข้อนี้",
-    "D": "ไม่ใช่คำตอบที่ถูกต้องของโจทย์ข้อนี้",
-    "E": "ไม่ใช่คำตอบที่ถูกต้องของโจทย์ข้อนี้"
+    "A": "necrotizing myositis มีการอักเสบในชิ้นเนื้อ",
+    "B": "✓ LEMS: antibody ต่อ presynaptic VGCC ในมะเร็งปอด",
+    "C": "MG ไม่มีอาการ autonomic และดีขึ้นด้วยการพัก",
+    "D": "DMD เกิดในเด็กชาย",
+    "E": "dermatomyositis มีผื่นและชิ้นเนื้ออักเสบ"
    },
-   "key_concept": "• LEMS: anti-presynaptic VGCC, SCLC\n• สรุป: มะเร็งปอดชนิดเซลล์เล็ก ปากแห้ง ตาแข้ง หนังตาตก คือ Lambert-Eaton syndrome"
+   "key_concept": "• LEMS: paraneoplastic (SCLC), autonomic + proximal weakness\n• ดีขึ้นด้วยการใช้งานซ้ำ ต่างจาก MG",
+   "mechanism": [
+    "SCLC กระตุ้น antibody",
+    "ต่อ voltage-gated Ca channel ปลายประสาท",
+    {
+     "s": "ACh ถูกปล่อยลดลง",
+     "answer": true
+    },
+    "อ่อนแรง ปากแห้ง ตาตก"
+   ]
   },
   "98": {
-   "explanation": "Rimmed vacuoles เป็นลักษณะของ inclusion body myositis ไม่ใช่ DMD",
+   "explanation": "Rimmed vacuoles ไม่ใช่ลักษณะของ DMD แต่พบใน inclusion body myositis",
    "option_why": {
-    "A": "X-linked จริง",
-    "B": "Pseudohypertrophy จริง",
-    "C": "Cardiomegaly พบได้",
-    "D": "Dystrophin ผิดปกติจริง",
-    "E": "✓ Rimmed vacuoles ไม่ใช่ DMD"
+    "A": "DMD เป็น X-linked recessive",
+    "B": "กล้ามเนื้อน่อง pseudohypertrophy",
+    "C": "cardiomyopathy พบได้",
+    "D": "dystrophin ผิดปกติเป็นสาเหตุ",
+    "E": "✓ rimmed vacuoles ใช่ของ IBM ไม่ใช่ DMD"
    },
-   "key_concept": "• DMD: dystrophin, pseudohypertrophy\n• สรุป: Rimmed vacuoles เป็นลักษณะของ inclusion body myositis ไม่ใช่ DMD"
+   "key_concept": "• DMD: necrosis + regeneration, fibrofatty replacement\n• rimmed vacuoles = inclusion body myositis"
   },
   "99": {
-   "explanation": "Type I fiber (slow twitch) ไม่ได้ใช้เคลื่อนไหวฉับพลัน คือหน้าที่ของ type II",
+   "explanation": "Type I fiber ไม่เหมาะกับการเคลื่อนไหวเร็วฉับพลัน (นั่นคือ type II)",
    "option_why": {
-    "A": "✓ การเคลื่อนไหวฉับพลันเป็นของ type II",
-    "B": "Mitochondria สูง",
-    "C": "ใช้ O2 สร้าง ATP",
-    "D": "Aerobic exercise",
-    "E": "ย้อมเข้มที่ pH 4.2"
+    "A": "✓ type I เป็น slow-twitch เหมาะงานทน ไม่ใช่ sudden movement",
+    "B": "type I มี mitochondria มาก",
+    "C": "type I ใช้ oxidative phosphorylation",
+    "D": "ใช้ในกิจกรรม aerobic",
+    "E": "type I ติดสีเข้มที่ ATPase pH 4.2"
    },
-   "key_concept": "• Type I: oxidative, slow, endurance\n• สรุป: Type I fiber (slow twitch) ไม่ได้ใช้เคลื่อนไหวฉับพลัน คือหน้าที่ของ type II"
+   "key_concept": "• type I: slow, oxidative, ทนล้า, myoglobin สูง\n• type II: fast, glycolytic, ใช้ในงานฉับพลัน"
   },
   "100": {
-   "explanation": "Endomysial CD8+ T cell infiltrate = polymyositis",
+   "explanation": "Mononuclear infiltrate ใน endomysium ที่เป็น CD8+ = polymyositis",
    "option_why": {
-    "A": "Necrotizing ไม่มี infiltrate มาก",
-    "B": "GBS เป็นของเส้นประสาท",
-    "C": "Dermatomyositis perimysial",
-    "D": "✓ Polymyositis CD8+ endomysial",
-    "E": "Inclusion body มี rimmed vacuoles"
+    "A": "necrotizing myopathy ไม่มีการอักเสบเด่น",
+    "B": "Guillain–Barré เป็นโรคเส้นประสาท",
+    "C": "dermatomyositis อักเสบที่ perimysium/perivascular มี CD4/B cell",
+    "D": "✓ polymyositis: CD8 T cell บุก endomysium ที่มี MHC-I",
+    "E": "IBM มี rimmed vacuoles และเกิดอายุมาก"
    },
-   "key_concept": "• Polymyositis: CD8+ endomysial\n• สรุป: Endomysial CD8+ T cell infiltrate = polymyositis"
+   "key_concept": "• PM: endomysial CD8 · DM: perimysial CD4/B\n• IBM: rimmed vacuoles, ช้า, ไม่ตอบสนอง steroid",
+   "mechanism": [
+    "CD8 T cell จดจำแอนติเจน MHC-I บนใยกล้ามเนื้อ",
+    "ปล่อย perforin/granzyme",
+    {
+     "s": "ใยกล้ามเนื้อตาย",
+     "answer": true
+    },
+    "polymyositis"
+   ]
   },
   "101": {
-   "explanation": "Ankylosing spondylitis สัมพันธ์กับ HLA-B27",
+   "explanation": "ปวดหลัง stiffness ตอนเช้า + uveitis + sacroiliac fusion = ankylosing spondylitis (HLA-B27)",
    "option_why": {
-    "A": "B15 ไม่ใช่",
-    "B": "B19 ไม่ใช่",
-    "C": "✓ HLA-B27 เกี่ยวข้อง",
-    "D": "B31 ไม่ใช่",
-    "E": "B9 ไม่ใช่"
+    "A": "HLA-B15 ไม่เกี่ยวกับ AS",
+    "B": "HLA-B19 ไม่ใช่",
+    "C": "✓ HLA-B27 สัมพันธ์กับ seronegative spondyloarthropathy",
+    "D": "HLA-B31 ไม่ใช่",
+    "E": "HLA-B9 ไม่ใช่"
    },
-   "key_concept": "• AS: HLA-B27\n• สรุป: Ankylosing spondylitis สัมพันธ์กับ HLA-B27"
+   "key_concept": "• AS: bamboo spine, sacroiliitis, uveitis\n• HLA-B27: AS, reactive arthritis, psoriatic arthritis"
   },
   "102": {
-   "explanation": "ผลึกรูปสี่เหลี่ยมขนมเปียกปูนจาก calcium pyrophosphate คือ pseudogout",
+   "explanation": "ผลึก rhomboid ของ calcium pyrophosphate = pseudogout (CPPD)",
    "option_why": {
-    "A": "Gout คือ monosodium urate",
-    "B": "Infectious ต้องเห็นเชื้อ",
-    "C": "AS ไม่มีผลึก",
+    "A": "gout เป็น urate เข็มและ negative birefringence",
+    "B": "septic ต้องพบเชื้อ",
+    "C": "ankylosing spondylitis ไม่มีผลึก",
     "D": "RA ไม่มีผลึก",
-    "E": "✓ CPPD → pseudogout"
+    "E": "✓ CPPD: rhomboid, weakly positive birefringence"
    },
-   "key_concept": "• CPPD: rhomboid, weakly positive birefringence\n• สรุป: ผลึกรูปสี่เหลี่ยมขนมเปียกปูนจาก calcium pyrophosphate คือ pseudogout"
+   "key_concept": "• gout: needle, negative birefringence (yellow when parallel)\n• pseudogout: rhomboid, positive birefringence"
   },
   "103": {
-   "explanation": "Osteoarthritis (DIP, ปวดดีขึ้นเมื่อพัก) เกิดจากการเสื่อมของ articular cartilage",
+   "explanation": "OA (DIP โต ปวดดีขึ้นเมื่อพัก) จาก articular cartilage เสื่อม",
    "option_why": {
-    "A": "ไม่ใช่ cortical bone",
-    "B": "Pannus คือ RA",
-    "C": "ไม่ใช่ ligament inflammation",
-    "D": "✓ Cartilage degeneration",
-    "E": "น้ำไขข้อไม่ลดปริมาตร"
+    "A": "cortical bone ไม่ใช่เป้าหลัก",
+    "B": "pannus เป็นของ RA",
+    "C": "ligament อักเสบเฉียบพลันไม่ใช่",
+    "D": "✓ OA เริ่มจาก cartilage เสื่อม แล้วเกิด osteophyte และ sclerosis",
+    "E": "synovial fluid ไม่ได้ลดลง"
    },
-   "key_concept": "• OA: cartilage degeneration, Heberden nodes\n• สรุป: Osteoarthritis (DIP, ปวดดีขึ้นเมื่อพัก) เกิดจากการเสื่อมของ articular cartilage"
+   "key_concept": "• OA: Heberden node (DIP), pain with use\n• RA: MCP/PIP, morning stiffness, pannus",
+   "mechanism": [
+    "ใช้งานข้อมาก อ้วน",
+    "cartilage สึกกร่อน",
+    {
+     "s": "bone ใต้ cartilage แข็ง osteophyte",
+     "answer": true
+    },
+    "ปวดตอนใช้งาน ดีขึ้นเมื่อพัก"
+   ]
   },
   "104": {
-   "explanation": "Pannus ใน RA เกิดจากการอักเสบเรื้อรังของ synovium",
+   "explanation": "Pannus ใน RA เกิดจาก chronic inflammation ของ synovium",
    "option_why": {
-    "A": "Fibroadipose necrosis ไม่ใช่",
-    "B": "Calcification ไม่ใช่",
-    "C": "✓ Chronic synovitis → pannus",
-    "D": "Cartilage degeneration คือ OA",
-    "E": "Dislocation ไม่ใช่"
+    "A": "fibroadipose necrosis ไม่ใช่",
+    "B": "calcification ไม่ใช่",
+    "C": "✓ synovitis เรื้อรังทำให้ synovium หนา กลายเป็น pannus",
+    "D": "cartilage degeneration เป็นผลตามหลัง",
+    "E": "bone dislocation เป็นผลตามหลัง"
    },
-   "key_concept": "• RA: pannus, synovial hyperplasia\n• สรุป: Pannus ใน RA เกิดจากการอักเสบเรื้อรังของ synovium"
+   "key_concept": "• RA: CD4 T cell + TNF-α, IL-1, IL-6\n• pannus ทำลาย cartilage และ bone",
+   "mechanism": [
+    "autoimmune ต่อ synovium",
+    "synovial hyperplasia + lymphoid follicle",
+    {
+     "s": "pannus คลุม cartilage",
+     "answer": true
+    },
+    "กัดกร่อนข้อ"
+   ]
   },
   "105": {
-   "explanation": "ใน remodeling phase ของกระดูกหัก osteoclast ดูดซับ woven bone ร่วมกับ osteoblast",
+   "explanation": "Osteoclast ทำหน้าที่หลักใน remodeling phase ของกระดูกหัก",
    "option_why": {
-    "A": "Chondrocyte สร้าง soft callus",
-    "B": "Osteoblast สร้างกระดูกแต่ต้องมี osteoclast",
-    "C": "✓ Osteoclast รีโมเดลโดยดูดซับ",
-    "D": "Osteocyte ดูแลเมทริกซ์",
-    "E": "Chondroblast สร้างกระดูกอ่อน"
+    "A": "chondrocyte สร้าง soft callus",
+    "B": "osteoblast สร้างกระดูกใหม่ใน hard callus",
+    "C": "✓ osteoclast ละลาย woven bone เพื่อปั้นเป็น lamellar bone",
+    "D": "osteocyte รับรู้แรง",
+    "E": "chondroblast สร้างกระดูกอ่อน"
    },
-   "key_concept": "• Remodeling: osteoclast resorption + osteoblast\n• สรุป: ใน remodeling phase ของกระดูกหัก osteoclast ดูดซับ woven bone ร่วมกับ osteoblast"
+   "key_concept": "• fracture healing: hematoma → soft callus → hard callus → remodeling\n• remodeling ใช้เวลาเดือน–ปี"
   },
   "106": {
-   "explanation": "ขาด vitamin D ในผู้ใหญ่ทำให้ osteomalacia",
+   "explanation": "Vitamin D ขาดในผู้ใหญ่ = osteomalacia",
    "option_why": {
-    "A": "Rickets ในเด็ก",
-    "B": "✓ Osteomalacia ผู้ใหญ่",
-    "C": "Achondroplasia พันธุกรรม",
-    "D": "RA ภูมิคุ้มกัน",
-    "E": "OA เสื่อม"
+    "A": "rickets เกิดในเด็กที่กระดูกยังเติบโต",
+    "B": "✓ osteomalacia: osteoid ไม่ calcify",
+    "C": "achondroplasia เป็น FGFR3 mutation",
+    "D": "RA เป็น autoimmune",
+    "E": "OA เป็นเสื่อมสภาพ"
    },
-   "key_concept": "• Vit D deficiency: rickets (child), osteomalacia (adult)\n• สรุป: ขาด vitamin D ในผู้ใหญ่ทำให้ osteomalacia"
+   "key_concept": "• เด็ก: rickets · ผู้ใหญ่: osteomalacia\n• Ca/PO4 ต่ำ ALP สูง"
   },
   "107": {
-   "explanation": "Osteosarcoma มี Codman triangle/sunburst และสร้าง osteoid matrix",
+   "explanation": "Osteosarcoma ผลิต osteoid (Codman triangle, sunburst)",
    "option_why": {
-    "A": "Chondroid คือ chondrosarcoma",
-    "B": "Round cell คือ Ewing",
-    "C": "Fibroblast ไม่ใช่",
-    "D": "Giant cell คือ GCT",
-    "E": "✓ Osteoid matrix ในเนื้องอก"
+    "A": "chondroid matrix = chondrosarcoma",
+    "B": "round cell = Ewing sarcoma",
+    "C": "fibroblast = fibrosarcoma",
+    "D": "giant cell = GCT",
+    "E": "✓ tumor ผลิต osteoid โดยเซลล์ malignant"
    },
-   "key_concept": "• Osteosarcoma: osteoid, metaphysis\n• สรุป: Osteosarcoma มี Codman triangle/sunburst และสร้าง osteoid matrix"
+   "key_concept": "• osteosarcoma: metaphysis เข่า, RB/p53\n• Codman triangle, sunburst"
   },
   "108": {
-   "explanation": "Ground-glass + Chinese letter woven bone คือ fibrous dysplasia",
+   "explanation": "Fibrous dysplasia: ground-glass + Chinese letter woven bone",
    "option_why": {
-    "A": "Osteochondroma มี cartilage cap",
-    "B": "Chondrosarcoma",
-    "C": "—",
-    "D": "Osteosarcoma มี atypia",
-    "E": "✓ Fibrous dysplasia"
+    "A": "osteochondroma เป็นเดือยกระดูกมี cartilage cap",
+    "B": "chondrosarcoma ผลิต chondroid",
+    "C": "fibrosarcoma ไม่มี woven bone",
+    "D": "osteosarcoma มี atypia และ osteoid",
+    "E": "✓ fibrous dysplasia: GNAS mutation woven bone ในเนื้อเยื่อเส้นใย"
    },
-   "key_concept": "• Fibrous dysplasia: Chinese letter bone, GNAS\n• สรุป: Ground-glass + Chinese letter woven bone คือ fibrous dysplasia"
+   "key_concept": "• McCune–Albright: fibrous dysplasia + café-au-lait + precocious puberty\n• ground-glass on X-ray"
   },
   "109": {
-   "explanation": "น้ำไขข้อปกติมี protein ประมาณ 1–3 g/dL (ต้นฉบับพิมพ์เป็น mg/dL)",
+   "explanation": "Synovial fluid ปกติ protein ต่ำ (ตามเฉลย 1–3)",
    "option_why": {
-    "A": "ปกติมี neutrophil น้อย",
-    "B": "String test ปกติยาว >3 cm",
-    "C": "✓ ตามเฉลย AI protein 1-3",
-    "D": "ปกติใส เหลืองอ่อน",
-    "E": "Glucose ใกล้เลือด"
+    "A": "neutrophil น้อยมาก ไม่ใช่ส่วนใหญ่",
+    "B": "string test ปกติยาวกว่า 5 ซม.",
+    "C": "✓ protein ต่ำกว่าพลาสมาประมาณหนึ่งในสาม",
+    "D": "ปกติใสสีเหลืองฟาง",
+    "E": "glucose ใกล้เคียงน้ำตาลเลือด"
    },
-   "key_concept": "• Normal synovial: clear, viscous, WBC <200\n• สรุป: น้ำไขข้อปกติมี protein ประมาณ 1–3 g/dL (ต้นฉบับพิมพ์เป็น mg/dL)"
+   "key_concept": "• normal synovial: ใส ความหนืดสูง WBC <200\n• inflammatory: WBC 2,000–50,000\n• septic: >50,000"
   },
   "110": {
-   "explanation": "Gram negative diplococci ในข้อ = Neisseria gonorrhoeae",
+   "explanation": "Gram-negative diplococci ในข้ออักเสบ = Neisseria gonorrhoeae",
    "option_why": {
-    "A": "H. influenzae coccobacilli",
-    "B": "TB acid-fast",
-    "C": "Pseudomonas rods",
-    "D": "S. pyogenes GPC chains",
-    "E": "✓ Gonococcus arthritis"
+    "A": "H. influenzae เป็น coccobacillus",
+    "B": "TB เป็น acid-fast bacillus",
+    "C": "Pseudomonas เป็น rod",
+    "D": "S. pyogenes เป็น gram-positive cocci",
+    "E": "✓ gonococcus เป็นสาเหตุ septic arthritis ในคนหนุ่มสาวที่มีเพศสัมพันธ์"
    },
-   "key_concept": "• Septic arthritis: GNDC → N. gonorrhoeae\n• สรุป: Gram negative diplococci ในข้อ = Neisseria gonorrhoeae"
+   "key_concept": "• young adult septic arthritis: N. gonorrhoeae\n• older: S. aureus"
   },
   "111": {
-   "explanation": "OA เป็น non-inflammatory จึงมี WBC <1,000/µL ในน้ำไขข้อ",
+   "explanation": "OA ของเหลวข้อเป็น non-inflammatory WBC <1,000",
    "option_why": {
-    "A": "Glucose <25 พบใน septic",
-    "B": "Neutrophil >30% พบใน inflammatory",
-    "C": "String test <5 cm พบใน inflammatory",
-    "D": "RBC สูงมากพบใน hemarthrosis",
-    "E": "✓ WBC <1,000 ใน OA"
+    "A": "glucose ต่ำมากบ่งถึงติดเชื้อ",
+    "B": "neutrophil >30% บ่งถึงอักเสบ",
+    "C": "string test ปกติ/OA ยาว >5 ซม.",
+    "D": "RBC สูงมากบ่งถึงเลือดออกในข้อ",
+    "E": "✓ OA: WBC <2,000 ใสและหนืด"
    },
-   "key_concept": "• OA: non-inflammatory fluid\n• สรุป: OA เป็น non-inflammatory จึงมี WBC <1,000/µL ในน้ำไขข้อ"
+   "key_concept": "• OA: non-inflammatory fluid\n• RA/gout: inflammatory\n• septic: >50,000"
   },
   "112": {
-   "explanation": "ผลึก needle negative birefringence = monosodium urate ของ gout",
+   "explanation": "MTP ปวดเฉียบพลัน + needle crystal negative birefringence = gout",
    "option_why": {
-    "A": "Hemophilic arthropathy มี RBC มาก",
+    "A": "hemophilic arthropathy เลือดออกในข้อ",
     "B": "RA ไม่มีผลึก",
-    "C": "✓ Gout",
-    "D": "ไม่ใช่คำตอบที่ถูกต้องของโจทย์ข้อนี้",
-    "E": "ไม่ใช่คำตอบที่ถูกต้องของโจทย์ข้อนี้"
+    "C": "✓ gouty arthritis: monosodium urate ผลึก negative birefringence",
+    "D": "septic ต้องมีเชื้อและ WBC สูงกว่า",
+    "E": "CPPD ผลึก positive birefringence"
    },
-   "key_concept": "• Gout: negative birefringent needle crystals\n• สรุป: ผลึก needle negative birefringence = monosodium urate ของ gout"
+   "key_concept": "• podagra (first MTP) classic\n• uric acid + needle-shaped crystals",
+   "mechanism": [
+    "uric acid สูง",
+    "MSU ตกผลึกในข้อ",
+    {
+     "s": "neutrophil กิน crystal ปล่อย IL-1 อักเสบ",
+     "answer": true
+    },
+    "ปวดบวมแดงเฉียบพลัน"
+   ]
   }
  },
  "duplicate_groups": {},
