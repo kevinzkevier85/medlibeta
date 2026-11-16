@@ -1,0 +1,636 @@
+{
+ "meta": {
+  "set_id": "46_OSPE",
+  "block": "HB",
+  "cohort": 46,
+  "type": "OSPE",
+  "title": "OSPE Higher Brain Function · Med PSU 46",
+  "generated_by": "auditor/tools/build_kf.py from auditor/data/work/hb_46_OSPE.kf.json — do not edit by hand"
+ },
+ "questions": [
+  {
+   "id": "HB-46-OSPE-001",
+   "block": "HB",
+   "cohort": 46,
+   "n": 1,
+   "type": "OSPE",
+   "station": 1,
+   "stem": "สถานี 1: สมองซีกซ้ายแสดง Broca area (สีชมพู/ม่วง)",
+   "items": [
+    {
+     "id": "1.1",
+     "prompt": "Brodmann area พื้นที่สีชมพู",
+     "format": "short",
+     "accepted": [
+      "44"
+     ],
+     "keywords_all": [
+      "44"
+     ],
+     "key_text": "44",
+     "source_key": "เฉลย: 44",
+     "image": "img/HB-46-OSPE-001.jpg",
+     "image_caption": "Language areas (Broca)"
+    },
+    {
+     "id": "1.2",
+     "prompt": "Brodmann area พื้นที่สีม่วง",
+     "format": "short",
+     "accepted": [
+      "45"
+     ],
+     "keywords_all": [
+      "45"
+     ],
+     "key_text": "45",
+     "source_key": "เฉลย: 45"
+    },
+    {
+     "id": "1.3",
+     "prompt": "บริเวณที่สองสีรวมกันชื่อ",
+     "format": "short",
+     "accepted": [
+      "broca"
+     ],
+     "keywords_all": [
+      "broca"
+     ],
+     "key_text": "Broca’s area",
+     "source_key": "เฉลย: Broca’s area"
+    },
+    {
+     "id": "1.4",
+     "prompt": "พยาธิสภาพที่บริเวณนี้เป็นโรค",
+     "format": "short",
+     "accepted": [
+      "broca"
+     ],
+     "keywords_all": [
+      "broca"
+     ],
+     "key_text": "Broca’s aphasia",
+     "source_key": "เฉลย: Broca’s aphasia"
+    },
+    {
+     "id": "1.5",
+     "prompt": "สาเหตุมักเกิดจาก infarction ของเส้นเลือด",
+     "format": "short",
+     "accepted": [
+      "middle cerebral",
+      "mca"
+     ],
+     "keywords_all": [
+      "middle cerebral"
+     ],
+     "key_text": "Middle cerebral artery",
+     "source_key": "เฉลย: Middle cerebral artery"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE46",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "OSPE46-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [
+    "neuroanatomy"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "HB-46-OSPE-002",
+   "block": "HB",
+   "cohort": 46,
+   "n": 2,
+   "type": "OSPE",
+   "station": 2,
+   "stem": "สถานี 2: สมองซีกซ้ายแสดงพื้นที่ภาษา",
+   "items": [
+    {
+     "id": "2.1",
+     "prompt": "Brodmann area ของพื้นที่สีส้ม",
+     "format": "short",
+     "accepted": [
+      "41",
+      "42"
+     ],
+     "keywords_all": [
+      "41"
+     ],
+     "key_text": "41, 42",
+     "source_key": "เฉลย: 41, 42",
+     "image": "img/HB-46-OSPE-002.jpg",
+     "image_caption": "Language areas (Wernicke)"
+    },
+    {
+     "id": "2.2",
+     "prompt": "พื้นที่สีส้มชื่อ",
+     "format": "short",
+     "accepted": [
+      "temporal",
+      "auditory"
+     ],
+     "keywords_all": [
+      "temporal"
+     ],
+     "key_text": "Superior temporal gyrus / primary auditory cortex",
+     "source_key": "เฉลย: Superior temporal gyrus / primary auditory cortex"
+    },
+    {
+     "id": "2.3",
+     "prompt": "พยาธิสภาพที่บริเวณนั้นเป็นโรค",
+     "format": "short",
+     "accepted": [
+      "receptive",
+      "wernicke"
+     ],
+     "keywords_all": [
+      "receptive"
+     ],
+     "key_text": "Receptive aphasia",
+     "source_key": "เฉลย: Receptive aphasia"
+    },
+    {
+     "id": "2.4",
+     "prompt": "เส้นสีเขียว",
+     "format": "short",
+     "accepted": [
+      "arcuate"
+     ],
+     "keywords_all": [
+      "arcuate"
+     ],
+     "key_text": "Arcuate fasciculus",
+     "source_key": "เฉลย: Arcuate fasciculus"
+    },
+    {
+     "id": "2.5",
+     "prompt": "พยาธิสภาพของเส้นสีเขียวเป็นโรค",
+     "format": "short",
+     "accepted": [
+      "conduction"
+     ],
+     "keywords_all": [
+      "conduction"
+     ],
+     "key_text": "Conduction aphasia",
+     "source_key": "เฉลย: Conduction aphasia"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE46",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "OSPE46-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [
+    "neuroanatomy"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "HB-46-OSPE-003",
+   "block": "HB",
+   "cohort": 46,
+   "n": 3,
+   "type": "OSPE",
+   "station": 3,
+   "stem": "สถานี 3: histology ของกระดูก (A, B, C)",
+   "items": [
+    {
+     "id": "3.1",
+     "prompt": "System นี้ชื่อว่า",
+     "format": "short",
+     "accepted": [
+      "haversian"
+     ],
+     "keywords_all": [
+      "haversian"
+     ],
+     "key_text": "Haversian system (osteon)",
+     "source_key": "เฉลย: Haversian system (osteon)",
+     "image": "img/HB-46-OSPE-003.jpg",
+     "image_caption": "Compact bone histology"
+    },
+    {
+     "id": "3.2",
+     "prompt": "A",
+     "format": "short",
+     "accepted": [
+      "haversian canal"
+     ],
+     "keywords_all": [
+      "haversian canal"
+     ],
+     "key_text": "Haversian canal",
+     "source_key": "เฉลย: Haversian canal"
+    },
+    {
+     "id": "3.3",
+     "prompt": "B",
+     "format": "short",
+     "accepted": [
+      "lacuna"
+     ],
+     "keywords_all": [
+      "lacuna"
+     ],
+     "key_text": "Lacuna",
+     "source_key": "เฉลย: Lacuna"
+    },
+    {
+     "id": "3.4",
+     "prompt": "C",
+     "format": "short",
+     "accepted": [
+      "lamella"
+     ],
+     "keywords_all": [
+      "lamella"
+     ],
+     "key_text": "Lamellae",
+     "source_key": "เฉลย: Lamellae"
+    },
+    {
+     "id": "3.5",
+     "prompt": "อะไรอยู่ใน structure B",
+     "format": "short",
+     "accepted": [
+      "osteocyte"
+     ],
+     "keywords_all": [
+      "osteocyte"
+     ],
+     "key_text": "Osteocyte",
+     "source_key": "เฉลย: Osteocyte"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE46",
+     "pages": [
+      3
+     ]
+    },
+    {
+     "paper": "OSPE46-KEY",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [
+    "histology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "HB-46-OSPE-004",
+   "block": "HB",
+   "cohort": 46,
+   "n": 4,
+   "type": "OSPE",
+   "station": 4,
+   "stem": "สถานี 4: hypothalamus — บริเวณ A (sagittal) และ B (coronal)",
+   "items": [
+    {
+     "id": "4.1",
+     "prompt": "บริเวณ A คือ",
+     "format": "short",
+     "accepted": [
+      "mammillary"
+     ],
+     "keywords_all": [
+      "mammillary"
+     ],
+     "key_text": "Mammillary (posterior) region",
+     "source_key": "เฉลย: Mammillary (posterior) region",
+     "image": "img/HB-46-OSPE-004.jpg",
+     "image_caption": "Hypothalamus (sagittal และ coronal)"
+    },
+    {
+     "id": "4.2",
+     "prompt": "ยกตัวอย่าง nucleus ในบริเวณนั้น 1 nucleus",
+     "format": "short",
+     "accepted": [
+      "mammillary",
+      "posterior"
+     ],
+     "keywords_all": [
+      "mammillary"
+     ],
+     "key_text": "Lateral/medial mammillary nucleus, posterior nucleus",
+     "source_key": "เฉลย: Lateral/medial mammillary nucleus, posterior nucleus"
+    },
+    {
+     "id": "4.3",
+     "prompt": "ยกตัวอย่าง nucleus ในบริเวณ B 1 nucleus",
+     "format": "short",
+     "accepted": [
+      "septal"
+     ],
+     "keywords_all": [
+      "septal"
+     ],
+     "key_text": "Septal nuclei",
+     "source_key": "เฉลย: Septal nuclei"
+    },
+    {
+     "id": "4.4",
+     "prompt": "nucleus ดังกล่าวทำหน้าที่อะไร",
+     "format": "short",
+     "accepted": [
+      "reward",
+      "pleasure",
+      "emotion"
+     ],
+     "keywords_all": [
+      "reward"
+     ],
+     "key_text": "เกี่ยวข้องกับรางวัล ความสุข และการยับยั้งการตอบสนองทางอารมณ์",
+     "source_key": "เฉลย: เกี่ยวข้องกับรางวัล ความสุข และการยับยั้งการตอบสนองทางอารมณ์"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE46",
+     "pages": [
+      3
+     ]
+    },
+    {
+     "paper": "OSPE46-KEY",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [
+    "neuroanatomy"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "HB-46-OSPE-005",
+   "block": "HB",
+   "cohort": 46,
+   "n": 5,
+   "type": "OSPE",
+   "station": 5,
+   "stem": "สถานี 5: ภาพตัดแนวนอนของสมอง A และ B",
+   "items": [
+    {
+     "id": "5.1",
+     "prompt": "Structure A",
+     "format": "short",
+     "accepted": [
+      "amygdala"
+     ],
+     "keywords_all": [
+      "amygdala"
+     ],
+     "key_text": "Amygdala",
+     "source_key": "เฉลย: Amygdala",
+     "image": "img/HB-46-OSPE-005.jpg",
+     "image_caption": "Amygdala และ hippocampus (horizontal section)"
+    },
+    {
+     "id": "5.2",
+     "prompt": "2 major efferent pathways ของ A",
+     "format": "short",
+     "accepted": [
+      "stria terminalis",
+      "amygdalofugal"
+     ],
+     "keywords_all": [
+      "stria terminalis"
+     ],
+     "key_text": "Stria terminalis · Ventral amygdalofugal pathway",
+     "source_key": "เฉลย: Stria terminalis · Ventral amygdalofugal pathway"
+    },
+    {
+     "id": "5.3",
+     "prompt": "Structure B",
+     "format": "short",
+     "accepted": [
+      "hippocampus"
+     ],
+     "keywords_all": [
+      "hippocampus"
+     ],
+     "key_text": "Hippocampus",
+     "source_key": "เฉลย: Hippocampus"
+    },
+    {
+     "id": "5.4",
+     "prompt": "1 major efferent pathway ของ B",
+     "format": "short",
+     "accepted": [
+      "fornix"
+     ],
+     "keywords_all": [
+      "fornix"
+     ],
+     "key_text": "Columns of fornix / post-commissural fornix",
+     "source_key": "เฉลย: Columns of fornix / post-commissural fornix"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE46",
+     "pages": [
+      4
+     ]
+    },
+    {
+     "paper": "OSPE46-KEY",
+     "pages": [
+      4
+     ]
+    }
+   ],
+   "tags": [
+    "neuroanatomy"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "HB-46-OSPE-006",
+   "block": "HB",
+   "cohort": 46,
+   "n": 6,
+   "type": "OSPE",
+   "station": 6,
+   "stem": "สถานี 6: hippocampal formation (A, B, C)",
+   "items": [
+    {
+     "id": "6.1",
+     "prompt": "A",
+     "format": "short",
+     "accepted": [
+      "ammon",
+      "cornu"
+     ],
+     "keywords_all": [
+      "ammon"
+     ],
+     "key_text": "Ammon’s horn (CA)",
+     "source_key": "เฉลย: Ammon’s horn (CA)",
+     "image": "img/HB-46-OSPE-006.jpg",
+     "image_caption": "Hippocampal formation"
+    },
+    {
+     "id": "6.2",
+     "prompt": "B",
+     "format": "short",
+     "accepted": [
+      "subiculum"
+     ],
+     "keywords_all": [
+      "subiculum"
+     ],
+     "key_text": "Subiculum",
+     "source_key": "เฉลย: Subiculum"
+    },
+    {
+     "id": "6.3",
+     "prompt": "C (แถบสีขาวที่ปลายลูกศร)",
+     "format": "short",
+     "accepted": [
+      "alveus"
+     ],
+     "keywords_all": [
+      "alveus"
+     ],
+     "key_text": "Alveus",
+     "source_key": "เฉลย: Alveus"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE46",
+     "pages": [
+      5
+     ]
+    },
+    {
+     "paper": "OSPE46-KEY",
+     "pages": [
+      5
+     ]
+    }
+   ],
+   "tags": [
+    "neuroanatomy"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "HB-46-OSPE-007",
+   "block": "HB",
+   "cohort": 46,
+   "n": 7,
+   "type": "OSPE",
+   "station": 7,
+   "stem": "สถานี 7: กะโหลกศีรษะทารก A = กระดูก parietal, B = เส้น sagittal",
+   "items": [
+    {
+     "id": "7.1",
+     "prompt": "กระดูก A สร้างอย่างไร",
+     "format": "short",
+     "accepted": [
+      "intramembranous"
+     ],
+     "keywords_all": [
+      "intramembranous"
+     ],
+     "key_text": "Intramembranous ossification",
+     "source_key": "เฉลย: Intramembranous ossification",
+     "image": "img/HB-46-OSPE-007.jpg",
+     "image_caption": "Skull (infant)"
+    },
+    {
+     "id": "7.2",
+     "prompt": "เส้น B ชื่อว่า",
+     "format": "short",
+     "accepted": [
+      "sagittal"
+     ],
+     "keywords_all": [
+      "sagittal"
+     ],
+     "key_text": "Sagittal suture",
+     "source_key": "เฉลย: Sagittal suture"
+    },
+    {
+     "id": "7.3",
+     "prompt": "ถ้า B ปิดก่อนวัยจะทำให้กะโหลกเป็นอย่างไร",
+     "format": "short",
+     "accepted": [
+      "long",
+      "narrow"
+     ],
+     "keywords_all": [
+      "long"
+     ],
+     "key_text": "Cranium becomes long and narrow",
+     "source_key": "เฉลย: Cranium becomes long and narrow"
+    },
+    {
+     "id": "7.4",
+     "prompt": "ความผิดปกติใน 7.3 (technical term)",
+     "format": "short",
+     "accepted": [
+      "scaphocephaly"
+     ],
+     "keywords_all": [
+      "scaphocephaly"
+     ],
+     "key_text": "Scaphocephaly",
+     "source_key": "เฉลย: Scaphocephaly"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE46",
+     "pages": [
+      5
+     ]
+    },
+    {
+     "paper": "OSPE46-KEY",
+     "pages": [
+      5
+     ]
+    }
+   ],
+   "tags": [
+    "skull"
+   ],
+   "source": "claude-mcp"
+  }
+ ]
+}
