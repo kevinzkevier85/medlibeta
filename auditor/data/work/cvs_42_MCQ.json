@@ -24,8 +24,8 @@
    "issues": [],
    "option_why": {
     "A": "✓ LV (lateral/posterior wall ← LCx)",
-    "B": "RV ← RCA",
-    "C": "Anterior wall ← LAD",
+    "B": "right ventricle ได้เลือดจาก RCA (acute marginal branch) ไม่ใช่ LCx",
+    "C": "anterior wall ได้เลือดจาก LAD ไม่ใช่ LCx",
     "D": "Inferior wall ← RCA/PDA (right dominant)",
     "E": "Posterior wall บางส่วนอยู่ใน LV จาก LCx แต่ต้นฉบับเลือก A"
    },
@@ -519,7 +519,7 @@
    "issues": [],
    "option_why": {
     "A": "Atherosclerosis ไม่ทำให้เล็กลง โดยตรง",
-    "B": "AS ไม่ใช่",
+    "B": "ใน aortic stenosis dicrotic notch ไม่ชัดหรือหายไป เพราะลิ้นแข็งปิดไม่กระชับ ไม่ได้ใหญ่ขึ้น",
     "C": "PDA ลด/ไม่เห็นชัด แต่ไม่ absent",
     "D": "✓ ตรงกับ S2 (aortic valve closure)",
     "E": "ไม่ใช่ pathology"
@@ -568,7 +568,7 @@
    "issues": [],
    "option_why": {
     "A": "HR ไม่ใช่ preload โดยตรง",
-    "B": "SV เป็นผล",
+    "B": "stroke volume ที่เพิ่มเป็นผลของ preload ที่เพิ่ม ไม่ใช่สาเหตุ",
     "C": "✓ EDV ↑ = preload ↑",
     "D": "ESV ลดไม่ใช่ preload",
     "E": "Aortic pressure = afterload"
@@ -616,11 +616,11 @@
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "Brain 160",
-    "B": "Renal 96",
-    "C": "Muscle 141",
+    "A": "สมอง: R = 120/0.75 = 160 ต่ำกว่าหัวใจ (480)",
+    "B": "ไต: R = 120/1.25 = 96 ต่ำกว่าหัวใจมาก",
+    "C": "กล้ามเนื้อ: R ≈ 141 ต่ำกว่าหัวใจ",
     "D": "✓ Heart 480 สูงสุด",
-    "E": "Liver 80"
+    "E": "ตับ: R = 80 ต่ำที่สุดในกลุ่ม เพราะเลือดไหลผ่านมาก"
    },
    "key_concept": "• R = MAP/Q\n• flow น้อย → resistance สูง\n• Liver ต่ำสุด",
    "audit": {
@@ -714,10 +714,10 @@
    "issues": [],
    "option_why": {
     "A": "✓ +120 mV",
-    "B": "−120",
-    "C": "+130",
-    "D": "+240",
-    "E": "−240"
+    "B": "เครื่องหมายผิด: Ca2+ นอกเซลล์มากกว่าในเซลล์ ศักย์สมดุลของไอออนบวกจึงเป็นบวก",
+    "C": "+130 ไม่ตรง: E = (60/2) × log(2/0.0002) = 30 × 4 = +120",
+    "D": "+240 ได้เมื่อลืมหารด้วยประจุ +2 ของ Ca2+",
+    "E": "−240 ผิดทั้งเครื่องหมายและลืมหารด้วยประจุ +2"
    },
    "key_concept": "• E_ion = (60/z) log(out/in)\n• Ca²⁺ z=2\n• Ratio 10⁴ → ×4",
    "audit": {
@@ -811,7 +811,7 @@
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "K_ATP ไม่",
+    "A": "ATP-sensitive K+ channel เปิดเมื่อ ATP ต่ำ ทำให้ hyperpolarize ไม่เกี่ยวกับ pacemaker potential",
     "B": "Fast Na⁺ ไม่ใช่ SA",
     "C": "✓ L-type Ca²⁺ เปิด → phase 0",
     "D": "T-type closes ไม่ใช่"
@@ -862,8 +862,8 @@
     "A": "Vena cava มากแต่ตามต้นฉบับเลือก vein",
     "B": "✓ Vein compliance สูงสุด",
     "C": "Aorta ต่ำกว่า 24×",
-    "D": "Arteriole ต่ำ",
-    "E": "Venule รอง"
+    "D": "arteriole มีผนังกล้ามเนื้อหนา compliance ต่ำ ทำหน้าที่เป็น resistance vessel",
+    "E": "venule มี compliance สูงแต่ปริมาตรรวมน้อยกว่า vein ขนาดใหญ่"
    },
    "key_concept": "• Veins ~24× compliant ของ arteries\n• Veins = capacitance vessels",
    "audit": {
@@ -908,11 +908,11 @@
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "1/2",
-    "B": "1/4",
-    "C": "1/8",
+    "A": "1/2 คิดแบบแปรผันตรงกับรัศมี แต่ flow แปรผันตาม r⁴",
+    "B": "1/4 คิดแบบ r² (พื้นที่หน้าตัด) แต่ Poiseuille ใช้ r⁴",
+    "C": "1/8 คิดแบบ r³ ที่ถูกคือ (1/2)⁴",
     "D": "✓ 1/16",
-    "E": "1/32"
+    "E": "1/32 คิดแบบ r⁵ ที่ถูกคือ (1/2)⁴ = 1/16"
    },
    "key_concept": "• Poiseuille: Q ∝ r⁴\n• Resistance ∝ 1/r⁴\n• เส้นผ่านศูนย์กลางครึ่ง → flow 1/16",
    "audit": {
@@ -1049,11 +1049,11 @@
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "1",
-    "B": "1.5",
-    "C": "2",
+    "A": "1 ไม่ตรง: net filtration pressure = (30−1) − (26−3) = 6 แล้วคูณ Kf 0.5",
+    "B": "1.5 ไม่ตรงกับ Kf × NFP = 0.5 × 6",
+    "C": "2 ไม่ตรงกับ Kf × NFP = 0.5 × 6",
     "D": "✓ 3",
-    "E": "6"
+    "E": "6 คือ net filtration pressure ยังไม่ได้คูณ Kf 0.5"
    },
    "key_concept": "• NFP = (Pc−Pi)−(πc−πi)\n• Flow = Kf × NFP",
    "audit": {
@@ -1148,10 +1148,10 @@
    "issues": [],
    "option_why": {
     "A": "Lactate dilate ไม่ constrict",
-    "B": "NO dilate",
+    "B": "nitric oxide ทำให้หลอดเลือดขยายผ่าน cGMP ไม่ใช่หดตัว",
     "C": "✓ β2 → vasodilation",
     "D": "Sympathetic cholinergic ก็ dilate muscle (AI: ข้อ D ก็ถูก)",
-    "E": "?"
+    "E": "ตัวเลือกนี้ต้นฉบับจดไม่ได้ จึงไม่ใช่คำตอบ"
    },
    "key_concept": "• β2: dilate skeletal muscle\n• α1: constrict\n• Sympathetic cholinergic dilates muscle",
    "audit": {
@@ -1248,7 +1248,7 @@
     "A": "HR เพิ่มไม่ลด",
     "B": "Contractility เพิ่ม",
     "C": "Baroreceptor firing ลด",
-    "D": "(ไม่ชัด)",
+    "D": "ตัวเลือกนี้ต้นฉบับจดไม่ครบ ไม่ทราบว่าเพิ่มอะไร จึงไม่ใช่คำตอบ",
     "E": "✓ TPR ↑ ชดเชย"
    },
    "key_concept": "• Orthostatic: baroreflex symp ↑\n• TPR ↑, HR ↑\n• VR ↓ จาก venous pooling",
@@ -1346,7 +1346,7 @@
     "A": "✓ ลด flow ไป liver/splanchnic",
     "B": "Brain คงที่",
     "C": "Heart เพิ่ม",
-    "D": "Kidney ลด",
+    "D": "ขณะออกกำลัง sympathetic ทำให้หลอดเลือดไตหดตัว เลือดไปไตลดลง",
     "E": "Small intestine ลด"
    },
    "key_concept": "• Exercise: muscle, heart, skin ↑\n• Splanchnic, renal ↓\n• Brain คงที่",
@@ -1540,8 +1540,8 @@
     "A": "Metoprolol บัง hypoglycemia",
     "B": "Enalapril ไม่ทำ hyperglycemia",
     "C": "✓ Loop diuretic (furosemide)",
-    "D": "Reserpine ไม่",
-    "E": "Losartan ไม่"
+    "D": "reserpine ทำให้ซึมเศร้าและคัดจมูก ไม่รบกวนระดับน้ำตาล",
+    "E": "losartan ไม่ทำให้น้ำตาลในเลือดสูง และช่วยปกป้องไตในเบาหวาน"
    },
    "key_concept": "• Thiazide ทำ hyperglycemia เด่นกว่า\n• Loop diuretic ก็ได้\n• β-blocker บัง hypoglycemia",
    "audit": {
@@ -1686,7 +1686,7 @@
    "option_why": {
     "A": "✓ Ang I ↑ (ไม่ถูกเปลี่ยนเป็น Ang II)",
     "B": "Bradykinin ↑ จริง แต่ต้นฉบับเลือก A",
-    "C": "Ang II ↓",
+    "C": "enalapril ยับยั้ง ACE angiotensin II จึงลดลง ไม่เพิ่ม",
     "D": "Renin ↑ (feedback) แต่ต้นฉบับเลือก A",
     "E": "ANP ไม่ใช่"
    },
@@ -1930,8 +1930,8 @@
     "A": "✓ Myxoma",
     "B": "Rhabdomyoma ในเด็ก",
     "C": "Angiosarcoma หายาก",
-    "D": "Fibroma",
-    "E": "Lipoma"
+    "D": "fibroma เป็นเนื้องอกหัวใจที่พบในเด็ก และพบน้อยกว่า myxoma",
+    "E": "lipoma ของหัวใจพบได้น้อยกว่า myxoma มาก"
    },
    "key_concept": "• Adults: myxoma (LA)\n• Children: rhabdomyoma (TSC)\n• Metastasis > primary",
    "audit": {
@@ -2077,7 +2077,7 @@
     "B": "✓ β-blocker",
     "C": "Statin ให้ด้วยแต่ต้นฉบับเลือก atenolol",
     "D": "Nitrate บรรเทาอาการ",
-    "E": "Dobutamine ห้าม"
+    "E": "dobutamine เพิ่มการบีบตัวและการใช้ออกซิเจนของหัวใจ ทำให้ภาวะขาดเลือดแย่ลง"
    },
    "key_concept": "• ACS: ASA, P2Y12, heparin, β-blocker, statin\n• Nitrate ลดอาการ\n• Avoid dihydropyridine IR",
    "audit": {
@@ -2308,7 +2308,7 @@
     "B": "✓ VSD pansystolic LLSB",
     "C": "PDA continuous murmur",
     "D": "Coarctation ฟังหลัง",
-    "E": "TGA เขียว"
+    "E": "TGA มีอาการเขียวรุนแรงตั้งแต่แรกเกิด ไม่ใช่เหนื่อยเล็กน้อยตอนอายุ 5 ปี"
    },
    "key_concept": "• VSD: holosystolic LLSB\n• L→R shunt\n• ใหญ่ → Eisenmenger",
    "audit": {
@@ -2354,7 +2354,7 @@
    "issues": [],
    "option_why": {
     "A": "PS → main PA",
-    "B": "PR ไม่ใช่",
+    "B": "pulmonic regurgitation ทำให้ pulmonary artery โต (ขอบซ้าย) ไม่ใช่เงานูนด้านขวาของหลอดลม",
     "C": "✓ Marfan → aortic root/ascending aorta dilatation → right paratracheal bulge"
    },
    "key_concept": "• Ascending aorta = right border\n• Marfan: aortic root dilation, MVP\n• Aneurysm → widened mediastinum",

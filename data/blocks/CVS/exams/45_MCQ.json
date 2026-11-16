@@ -114,7 +114,7 @@
    },
    "answer": "B",
    "answer_status": "verified",
-   "explanation": "QRS = ventricular depolarization (AI เลือก B)",
+   "explanation": "QRS complex แสดง ventricular depolarization จึงเป็นส่วนของ ECG ที่บ่งถึง ventricle (ไม่มีเฉลยต้นฉบับ AI เลือก B)",
    "refs": [
     {
      "paper": "MCQ45",
@@ -132,7 +132,7 @@
    "tags": [],
    "source": "import",
    "audit_ref": "cvs_45_MCQ_003",
-   "key_concept": "• P = atrial depol\n• QRS = ventricular depol\n• T = ventricular repol",
+   "key_concept": "• P wave = atrial depolarization\n• QRS = ventricular depolarization\n• T wave = ventricular repolarization",
    "option_why": {
     "A": "P wave = atria",
     "B": "✓ QRS complex = ventricular depolarization",
@@ -267,8 +267,8 @@
    "key_concept": "• HyperK: peaked T → wide QRS\n• HypoK: flat T, U wave\n• HyperCa: short QT",
    "option_why": {
     "A": "✓ Hyperkalemia → tall, peaked T",
-    "B": "Hyponatremia ไม่",
-    "C": "Hypernatremia ไม่",
+    "B": "hyponatremia ไม่ทำให้ T wave สูงแหลม",
+    "C": "hypernatremia ไม่มีการเปลี่ยนแปลง ECG ที่จำเพาะ",
     "D": "Hypokalemia → flat T, U",
     "E": "Hypercalcemia → short QT"
    }
@@ -354,11 +354,11 @@
    "audit_ref": "cvs_45_MCQ_008",
    "key_concept": "• EF = (EDV−ESV)/EDV\n• ปกติ 55–70%\n• SV = EDV − ESV",
    "option_why": {
-    "A": "41",
+    "A": "41% ต่ำเกิน: EF = (135−65)/135 ≈ 52%",
     "B": "✓ 70/135 ≈ 51–52%",
-    "C": "56",
-    "D": "60",
-    "E": "86"
+    "C": "56% สูงกว่าค่าที่คำนวณได้ 70/135 ≈ 52%",
+    "D": "60% สูงกว่าค่าที่คำนวณได้ 70/135 ≈ 52%",
+    "E": "86% สูงเกินมาก จะได้เมื่อ ESV เหลือเพียง ~19 mL"
    }
   },
   {
@@ -398,10 +398,10 @@
    "audit_ref": "cvs_45_MCQ_009",
    "key_concept": "• SV = EDV−ESV = 80 mL\n• CO = SV×HR = 4,800\n• v = Q/A; A = πr²",
    "option_why": {
-    "A": "240",
-    "B": "382",
-    "C": "764",
-    "D": "1,200",
+    "A": "240 ไม่ตรง: flow = SV 80 × HR 60 = 4,800 mL/min ÷ พื้นที่ πr² 3.14 cm²",
+    "B": "382 ได้เมื่อใช้เส้นผ่านศูนย์กลาง (2 cm) แทนรัศมีในการคิดพื้นที่",
+    "C": "764 เป็นครึ่งหนึ่งของค่าจริง (คิดพื้นที่ผิด 2 เท่า)",
+    "D": "1,200 ไม่ตรงกับ 4,800 ÷ 3.14 ≈ 1,528 cm/min",
     "E": "✓ 4,800 / 3.14 ≈ 1,528 cm/min"
    }
   },
@@ -443,7 +443,7 @@
    "key_concept": "• Cimetidine = CYP inhibitor\n• Inducers (phenytoin, phenobarbital, rifampin) ↓ ยา\n• Quinidine toxic: cinchonism, QT",
    "option_why": {
     "A": "Digoxin ระดับสูงขึ้นจาก quinidine ไม่ใช่ตรงข้าม",
-    "B": "Morphine ไม่",
+    "B": "morphine ไม่ยับยั้ง CYP จึงไม่เพิ่มระดับ quinidine",
     "C": "Phenytoin เป็น inducer",
     "D": "✓ Cimetidine inhibit CYP3A4/2D6 → quinidine ↑ toxic",
     "E": "Phenobarbital inducer ลดระดับ quinidine"
@@ -586,7 +586,7 @@
     "B": "Aortic stenosis → LVH CTR ↑ (ภายหลัง)",
     "C": "MS → LA โต CTR อาจปกติ/เพิ่ม",
     "D": "Effusion CTR ↑",
-    "E": "VSD CTR ↑"
+    "E": "VSD ที่มี shunt มากทำให้หัวใจโต cardiothoracic ratio จึงเพิ่ม"
    }
   },
   {
@@ -670,10 +670,10 @@
    "audit_ref": "cvs_45_MCQ_019",
    "key_concept": "• TOF: boot shape\n• TGA: egg on string\n• TAPVR: snowman",
    "option_why": {
-    "A": "VSD ไม่",
+    "A": "VSD ทำให้หัวใจห้องซ้ายโตและ pulmonary vascularity เพิ่ม ไม่ใช่ boot shape",
     "B": "✓ TOF: apex ยกจาก RVH, concave PA",
-    "C": "Myxoma ไม่",
-    "D": "PDA ไม่",
+    "C": "myxoma เป็นเนื้องอกใน atrium ไม่เปลี่ยนรูปหัวใจเป็น boot shape",
+    "D": "PDA ทำให้ห้องซ้ายและ aorta โต ไม่ใช่ boot shape",
     "E": "TGA = egg on string"
    }
   },
