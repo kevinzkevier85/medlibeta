@@ -1,6 +1,6 @@
 # REVIEW — รายการรอผู้ใช้ตัดสิน
 
-ทั้งหมด 1473 รายการ
+ทั้งหมด 1474 รายการ
 วิธีตอบ: พิมพ์ในแชทเป็นบรรทัด เช่น `end_52_MCQ_027: คงเดิม` / `end_52_MCQ_063: C` / `end_52_MCQ_046: ตรวจใหม่`
 Claude จะบันทึกลง `auditor/data/decisions.json` แล้ว build ใหม่
 
@@ -1135,6 +1135,7 @@ Claude จะบันทึกลง `auditor/data/decisions.json` แล้ว
 | kub_52_MCQ_045 | B | A | mid | เฉลยขัดกับ AI |   |
 | kub_52_MCQ_060 | B | A | mid | เฉลยขัดกับ AI | AI ตอบ Leydig cell; ต้นฉบับ Sertoli cell (tumor หลั่ง estrogen)  |
 | kub_52_MCQ_096 | D | C | mid | เฉลยขัดกับ AI |   |
+| msk_52_MCQ_036 | ['C', 'D'] | C | mid | ต้นฉบับวงไว้หลายตัว |   |
 | nerv_46_MCQ_041 | D | E | mid | เฉลยขัดกับ AI |   |
 | nerv_46_MCQ_058 | None | C | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |
 | nerv_47_MCQ_001 | None | A | mid | ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้ |   |

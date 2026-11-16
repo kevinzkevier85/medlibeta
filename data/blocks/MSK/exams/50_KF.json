@@ -1,0 +1,459 @@
+{
+ "meta": {
+  "set_id": "50_KF",
+  "block": "MSK",
+  "cohort": 50,
+  "type": "KF",
+  "title": "KF Musculoskeletal · Med PSU 50",
+  "time_limit_min": 90,
+  "generated_by": "auditor/tools/build_kf.py from auditor/data/work/msk_50_KF.kf.json — do not edit by hand"
+ },
+ "questions": [
+  {
+   "id": "MSK-50-KF-001",
+   "block": "MSK",
+   "cohort": 50,
+   "n": 1,
+   "type": "KF",
+   "case": "หญิง 25 ปี ปวดข้อมือ 3 เดือน ข้อฝืดเช้า 1 ชม. ไข้ต่ำ 38.3°C PIP ทั้งสองมือบวมเจ็บ มีแผลในช่องปาก (ภาพ)",
+   "items": [
+    {
+     "id": "1.1",
+     "prompt": "Problem list (5 คะแนน)",
+     "format": "short",
+     "accepted": [
+      "joint pain",
+      "stiffness",
+      "fever",
+      "pip",
+      "oral"
+     ],
+     "keywords_all": [
+      "stiff",
+      "oral"
+     ],
+     "key_text": "ปวดข้อแย่ลง 1 เดือน ข้อฝืดเช้า 1 ชม. · ไข้ต่ำ 38.3°C · PIP ทั้งสองมือบวมและเจ็บ · แผลในช่องปาก",
+     "source_key": "เฉลย: ปวดข้อแย่ลง 1 เดือน ข้อฝืดเช้า 1 ชม. · ไข้ต่ำ 38.3°C · PIP ทั้งสองมือบวมและเจ็บ · แผลในช่องปาก",
+     "image": "img/MSK-50-KF-001.jpg",
+     "image_caption": "แผลในช่องปาก (oral ulcer)"
+    },
+    {
+     "id": "1.2",
+     "prompt": "วินิจฉัยที่เป็นไปได้มากที่สุด",
+     "format": "short",
+     "accepted": [
+      "sle",
+      "lupus"
+     ],
+     "keywords_all": [
+      "lupus"
+     ],
+     "key_text": "Systemic lupus erythematosus (SLE)",
+     "source_key": "เฉลย: Systemic lupus erythematosus (SLE)"
+    },
+    {
+     "id": "1.3",
+     "prompt": "ตรวจเพิ่มเพื่อประเมินระบบและยืนยันวินิจฉัย",
+     "format": "short",
+     "accepted": [
+      "ana",
+      "anti-dsdna",
+      "anti-sm"
+     ],
+     "keywords_all": [
+      "ana"
+     ],
+     "key_text": "Antinuclear antibody (ANA) · Anti-dsDNA · Anti-Smith (Anti-Sm)",
+     "source_key": "เฉลย: Antinuclear antibody (ANA) · Anti-dsDNA · Anti-Smith (Anti-Sm)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF50",
+     "pages": [
+      1
+     ]
+    },
+    {
+     "paper": "KF50-KEY",
+     "pages": [
+      1
+     ]
+    }
+   ],
+   "tags": [
+    "rheum"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "MSK-50-KF-002",
+   "block": "MSK",
+   "cohort": 50,
+   "n": 2,
+   "type": "KF",
+   "case": "ชาย 65 ปี ปวดข้อเท้าขวา 3 วัน ประวัติปวด 1st MTP/ข้อเท้า/เข่าเป็น ๆ หาย ๆ 10 ปี มีตุ่มไม่เจ็บที่ olecranon และ lateral malleolus · น้ำไขข้อ WBC 40,000 (PMN 90%) Gram stain ลบ พบผลึก (ภาพ)",
+   "items": [
+    {
+     "id": "2.1",
+     "prompt": "Problem list",
+     "format": "short",
+     "accepted": [
+      "intermittent",
+      "nodule",
+      "crystal"
+     ],
+     "keywords_all": [
+      "nodule"
+     ],
+     "key_text": "ปวด 1st MTP/ข้อเท้า/เข่าขวาเป็น ๆ หาย ๆ 10 ปี · ตุ่มไม่เจ็บ (tophi) ที่ olecranon และ lateral malleolus · น้ำไขข้อ WBC <100,000 PMN >75% พบผลึก",
+     "source_key": "เฉลย: ปวด 1st MTP/ข้อเท้า/เข่าขวาเป็น ๆ หาย ๆ 10 ปี · ตุ่มไม่เจ็บ (tophi) ที่ olecranon และ lateral malleolus · น้ำไขข้อ WBC <100,000 PMN >75% พบผลึก",
+     "image": "img/MSK-50-KF-002.jpg",
+     "image_caption": "ผลึกในน้ำไขข้อ (polarized light)"
+    },
+    {
+     "id": "2.2",
+     "prompt": "แปลผลผลึก",
+     "format": "short",
+     "accepted": [
+      "needle"
+     ],
+     "keywords_all": [
+      "needle"
+     ],
+     "key_text": "Needle-shaped crystal",
+     "source_key": "เฉลย: Needle-shaped crystal"
+    },
+    {
+     "id": "2.3",
+     "prompt": "วินิจฉัย",
+     "format": "short",
+     "accepted": [
+      "gout"
+     ],
+     "keywords_all": [
+      "gout"
+     ],
+     "key_text": "Gouty arthritis",
+     "source_key": "เฉลย: Gouty arthritis"
+    },
+    {
+     "id": "2.4",
+     "prompt": "รักษาอาการเฉียบพลัน",
+     "format": "short",
+     "accepted": [
+      "colchicine"
+     ],
+     "keywords_all": [
+      "colchicine"
+     ],
+     "key_text": "Colchicine",
+     "source_key": "เฉลย: Colchicine"
+    },
+    {
+     "id": "2.5",
+     "prompt": "รักษาระยะยาว",
+     "format": "short",
+     "accepted": [
+      "allopurinol",
+      "febuxostat",
+      "probenecid"
+     ],
+     "keywords_all": [
+      "allopurinol"
+     ],
+     "key_text": "Allopurinol · Febuxostat · Uricosuric agents: Probenecid",
+     "source_key": "เฉลย: Allopurinol · Febuxostat · Uricosuric agents: Probenecid"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF50",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "KF50-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [
+    "rheum"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "MSK-50-KF-003",
+   "block": "MSK",
+   "cohort": 50,
+   "n": 3,
+   "type": "KF",
+   "case": "หญิง 36 ปี ตกจากที่สูง 3 เมตร ปวดหลังมาก ไม่มี neuro deficit (ภาพ CT/MRI)",
+   "items": [
+    {
+     "id": "3.1",
+     "prompt": "โครงสร้างที่บาดเจ็บ",
+     "format": "short",
+     "accepted": [
+      "l1",
+      "compression",
+      "posterior longitudinal",
+      "interspinous"
+     ],
+     "keywords_all": [
+      "l1"
+     ],
+     "key_text": "L1 vertebral body (compression fracture) · ligament ที่เสียหาย เช่น posterior longitudinal ligament หรือ interspinous ligament",
+     "source_key": "เฉลย: L1 vertebral body (compression fracture) · ligament ที่เสียหาย เช่น posterior longitudinal ligament หรือ interspinous ligament",
+     "image": "img/MSK-50-KF-003.jpg",
+     "image_caption": "CT และ MRI lumbar spine"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF50",
+     "pages": [
+      3
+     ]
+    },
+    {
+     "paper": "KF50-KEY",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [
+    "spine"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "MSK-50-KF-004",
+   "block": "MSK",
+   "cohort": 50,
+   "n": 4,
+   "type": "KF",
+   "case": "ช่างกระจก 45 ปี ถูกกระจกบาดแขนด้านหน้า Allen test positive (Ulnar artery) ไม่มีกระดูกหัก (ภาพ)",
+   "items": [
+    {
+     "id": "4.1",
+     "prompt": "โครงสร้างที่บาดเจ็บ ข้อ 1",
+     "format": "short",
+     "accepted": [
+      "ulnar artery"
+     ],
+     "keywords_all": [
+      "ulnar artery"
+     ],
+     "key_text": "Ulnar artery",
+     "source_key": "เฉลย: Ulnar artery",
+     "image": "img/MSK-50-KF-004.jpg",
+     "image_caption": "แผลที่ปลายแขนด้าน volar"
+    },
+    {
+     "id": "4.2",
+     "prompt": "ข้อ 2",
+     "format": "short",
+     "accepted": [
+      "ulnar nerve"
+     ],
+     "keywords_all": [
+      "ulnar nerve"
+     ],
+     "key_text": "Ulnar nerve",
+     "source_key": "เฉลย: Ulnar nerve"
+    },
+    {
+     "id": "4.3",
+     "prompt": "ข้อ 3",
+     "format": "short",
+     "accepted": [
+      "median nerve"
+     ],
+     "keywords_all": [
+      "median"
+     ],
+     "key_text": "Median nerve",
+     "source_key": "เฉลย: Median nerve"
+    },
+    {
+     "id": "4.4",
+     "prompt": "ข้อ 4",
+     "format": "short",
+     "accepted": [
+      "flexor carpi ulnaris",
+      "fcu"
+     ],
+     "keywords_all": [
+      "carpi ulnaris"
+     ],
+     "key_text": "Flexor carpi ulnaris muscle",
+     "source_key": "เฉลย: Flexor carpi ulnaris muscle"
+    },
+    {
+     "id": "4.5",
+     "prompt": "ข้อ 5",
+     "format": "short",
+     "accepted": [
+      "palmaris longus"
+     ],
+     "keywords_all": [
+      "palmaris"
+     ],
+     "key_text": "Palmaris longus muscle",
+     "source_key": "เฉลย: Palmaris longus muscle"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF50",
+     "pages": [
+      4
+     ]
+    },
+    {
+     "paper": "KF50-KEY",
+     "pages": [
+      4
+     ]
+    }
+   ],
+   "tags": [
+    "upper limb"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "MSK-50-KF-005",
+   "block": "MSK",
+   "cohort": 50,
+   "n": 5,
+   "type": "KF",
+   "case": "ชาย 30 ปี ปวดบวมหน้าเข่าซ้าย เดินได้ งอเข่าได้ (ภาพ)",
+   "items": [
+    {
+     "id": "5.1",
+     "prompt": "โครงสร้างที่น่าจะบาดเจ็บ",
+     "format": "short",
+     "accepted": [
+      "prepatellar",
+      "infrapatellar",
+      "quadriceps"
+     ],
+     "keywords_all": [
+      "prepatellar"
+     ],
+     "key_text": "Prepatellar bursa · Infrapatellar bursa · Quadriceps tendon",
+     "source_key": "เฉลย: Prepatellar bursa · Infrapatellar bursa · Quadriceps tendon",
+     "image": "img/MSK-50-KF-005.jpg",
+     "image_caption": "เข่าซ้ายบวมด้านหน้า"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF50",
+     "pages": [
+      4
+     ]
+    },
+    {
+     "paper": "KF50-KEY",
+     "pages": [
+      4
+     ]
+    }
+   ],
+   "tags": [
+    "lower limb"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "MSK-50-KF-006",
+   "block": "MSK",
+   "cohort": 50,
+   "n": 6,
+   "type": "KF",
+   "case": "Radiology: 6.1 เรียกชื่อกระดูกใน x-ray (a–h) · 6.2 ตำแหน่งผิดปกติและพยาธิสภาพ",
+   "items": [
+    {
+     "id": "6.1",
+     "prompt": "a–h คือโครงสร้างอะไร",
+     "format": "short",
+     "accepted": [
+      "clavicle",
+      "coracoid",
+      "greater tuberosity",
+      "epicondyle",
+      "neck of radius"
+     ],
+     "keywords_all": [
+      "coracoid"
+     ],
+     "key_text": "a Clavicle · b Coracoid process · c Head of humerus · d Greater tuberosity · e Shaft of humerus · f Lateral epicondyle · g Medial epicondyle · h Neck of radius",
+     "source_key": "เฉลย: a Clavicle · b Coracoid process · c Head of humerus · d Greater tuberosity · e Shaft of humerus · f Lateral epicondyle · g Medial epicondyle · h Neck of radius",
+     "image": "img/MSK-50-KF-006.jpg",
+     "image_caption": "X-ray humerus ติดตัวอักษร a–h"
+    },
+    {
+     "id": "6.2.1",
+     "prompt": "ตำแหน่งกระดูกที่ผิดปกติ",
+     "format": "short",
+     "accepted": [
+      "proximal humerus",
+      "metaphysis"
+     ],
+     "keywords_all": [
+      "proximal humerus"
+     ],
+     "key_text": "Proximal humerus บริเวณ metaphysis ใกล้ humeral head",
+     "source_key": "เฉลย: Proximal humerus บริเวณ metaphysis ใกล้ humeral head",
+     "image": "img/MSK-50-KF-007.jpg",
+     "image_caption": "X-ray หัวไหล่"
+    },
+    {
+     "id": "6.2.2",
+     "prompt": "พยาธิสภาพ",
+     "format": "short",
+     "accepted": [
+      "proximal humerus fracture",
+      "fracture"
+     ],
+     "keywords_all": [
+      "fracture"
+     ],
+     "key_text": "Proximal humerus fracture",
+     "source_key": "เฉลย: Proximal humerus fracture"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF50",
+     "pages": [
+      5
+     ]
+    },
+    {
+     "paper": "KF50-KEY",
+     "pages": [
+      5
+     ]
+    }
+   ],
+   "tags": [
+    "radiology"
+   ],
+   "source": "claude-mcp"
+  }
+ ]
+}

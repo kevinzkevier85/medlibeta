@@ -1,0 +1,420 @@
+{
+ "meta": {
+  "set_id": "51_OSPE",
+  "block": "MSK",
+  "cohort": 51,
+  "type": "OSPE",
+  "title": "OSPE Musculoskeletal · Med PSU 51",
+  "generated_by": "auditor/tools/build_kf.py from auditor/data/work/msk_51_OSPE.kf.json — do not edit by hand"
+ },
+ "questions": [
+  {
+   "id": "MSK-51-OSPE-001",
+   "block": "MSK",
+   "cohort": 51,
+   "n": 1,
+   "type": "OSPE",
+   "station": 1,
+   "stem": "สถานี 1: dissection ลูกศรแดงและน้ำเงิน",
+   "items": [
+    {
+     "id": "1.1",
+     "prompt": "ลูกศรแดง",
+     "format": "short",
+     "accepted": [
+      "axillary artery"
+     ],
+     "keywords_all": [
+      "axillary artery"
+     ],
+     "key_text": "Axillary artery",
+     "source_key": "เฉลย: Axillary artery",
+     "image": "img/MSK-51-OSPE-001.jpg",
+     "image_caption": "Brachial plexus dissection"
+    },
+    {
+     "id": "1.2",
+     "prompt": "ลูกศรน้ำเงิน",
+     "format": "short",
+     "accepted": [
+      "ulnar nerve"
+     ],
+     "keywords_all": [
+      "ulnar nerve"
+     ],
+     "key_text": "Ulnar nerve",
+     "source_key": "เฉลย: Ulnar nerve"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE51",
+     "pages": [
+      1
+     ]
+    },
+    {
+     "paper": "OSPE51-KEY",
+     "pages": [
+      1
+     ]
+    }
+   ],
+   "tags": [
+    "upper limb"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "MSK-51-OSPE-004",
+   "block": "MSK",
+   "cohort": 51,
+   "n": 4,
+   "type": "OSPE",
+   "station": 4,
+   "stem": "สถานี 4: กล้ามเนื้อหลังปลายแขน A และ B",
+   "items": [
+    {
+     "id": "4.1",
+     "prompt": "Structure A",
+     "format": "short",
+     "accepted": [
+      "extensor digitorum"
+     ],
+     "keywords_all": [
+      "extensor digitorum"
+     ],
+     "key_text": "Extensor digitorum",
+     "source_key": "เฉลย: Extensor digitorum",
+     "image": "img/MSK-51-OSPE-004.jpg",
+     "image_caption": "Forearm extensors"
+    },
+    {
+     "id": "4.2",
+     "prompt": "Structure B",
+     "format": "short",
+     "accepted": [
+      "extensor carpi ulnaris"
+     ],
+     "keywords_all": [
+      "extensor carpi ulnaris"
+     ],
+     "key_text": "Extensor carpi ulnaris",
+     "source_key": "เฉลย: Extensor carpi ulnaris"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE51",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "OSPE51-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [
+    "upper limb"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "MSK-51-OSPE-005",
+   "block": "MSK",
+   "cohort": 51,
+   "n": 5,
+   "type": "OSPE",
+   "station": 5,
+   "stem": "สถานี 5: dissection ข้อมือ",
+   "items": [
+    {
+     "id": "5.1",
+     "prompt": "Structure A",
+     "format": "short",
+     "accepted": [
+      "ulnar nerve"
+     ],
+     "keywords_all": [
+      "ulnar nerve"
+     ],
+     "key_text": "Ulnar nerve",
+     "source_key": "เฉลย: Ulnar nerve",
+     "image": "img/MSK-51-OSPE-005.jpg",
+     "image_caption": "Carpal tunnel / wrist dissection"
+    },
+    {
+     "id": "5.2",
+     "prompt": "Structure B",
+     "format": "short",
+     "accepted": [
+      "median nerve"
+     ],
+     "keywords_all": [
+      "median nerve"
+     ],
+     "key_text": "Median nerve",
+     "source_key": "เฉลย: Median nerve"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE51",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "OSPE51-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [
+    "upper limb"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "MSK-51-OSPE-006",
+   "block": "MSK",
+   "cohort": 51,
+   "n": 6,
+   "type": "OSPE",
+   "station": 6,
+   "stem": "สถานี 6: กล้ามเนื้อด้านหน้าปลายแขน A และ B",
+   "items": [
+    {
+     "id": "6.1",
+     "prompt": "Structure A",
+     "format": "short",
+     "accepted": [
+      "brachioradialis"
+     ],
+     "keywords_all": [
+      "brachioradialis"
+     ],
+     "key_text": "Brachioradialis",
+     "source_key": "เฉลย: Brachioradialis",
+     "image": "img/MSK-51-OSPE-006.jpg",
+     "image_caption": "Anterior forearm muscles"
+    },
+    {
+     "id": "6.2",
+     "prompt": "Structure B",
+     "format": "short",
+     "accepted": [
+      "pronator teres"
+     ],
+     "keywords_all": [
+      "pronator teres"
+     ],
+     "key_text": "Pronator teres",
+     "source_key": "เฉลย: Pronator teres"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE51",
+     "pages": [
+      3
+     ]
+    },
+    {
+     "paper": "OSPE51-KEY",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [
+    "upper limb"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "MSK-51-OSPE-007",
+   "block": "MSK",
+   "cohort": 51,
+   "n": 7,
+   "type": "OSPE",
+   "station": 7,
+   "stem": "สถานี 7: ภาพ gross กระดูกและ histology",
+   "items": [
+    {
+     "id": "7.1",
+     "prompt": "ลักษณะ histology",
+     "format": "short",
+     "accepted": [
+      "atypical",
+      "osteoid"
+     ],
+     "keywords_all": [
+      "atypical"
+     ],
+     "key_text": "Atypical cells, lace-like osteoid matrix",
+     "source_key": "เฉลย: Atypical cells, lace-like osteoid matrix",
+     "image": "img/MSK-51-OSPE-007.jpg",
+     "image_caption": "Bone tumor gross + histology"
+    },
+    {
+     "id": "7.2",
+     "prompt": "วินิจฉัย",
+     "format": "short",
+     "accepted": [
+      "osteosarcoma"
+     ],
+     "keywords_all": [
+      "osteosarcoma"
+     ],
+     "key_text": "Osteosarcoma",
+     "source_key": "เฉลย: Osteosarcoma"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE51",
+     "pages": [
+      4
+     ]
+    },
+    {
+     "paper": "OSPE51-KEY",
+     "pages": [
+      4
+     ]
+    }
+   ],
+   "tags": [
+    "pathology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "MSK-51-OSPE-008",
+   "block": "MSK",
+   "cohort": 51,
+   "n": 8,
+   "type": "OSPE",
+   "station": 8,
+   "stem": "สถานี 8: ภาพ gross และ histology",
+   "items": [
+    {
+     "id": "8.1",
+     "prompt": "ลักษณะ histology",
+     "format": "short",
+     "accepted": [
+      "cartilage cap",
+      "endochondral"
+     ],
+     "keywords_all": [
+      "cartilage cap"
+     ],
+     "key_text": "Cartilage cap, endochondral ossification",
+     "source_key": "เฉลย: Cartilage cap, endochondral ossification",
+     "image": "img/MSK-51-OSPE-008.jpg",
+     "image_caption": "Bone lesion gross + histology"
+    },
+    {
+     "id": "8.2",
+     "prompt": "วินิจฉัย",
+     "format": "short",
+     "accepted": [
+      "osteochondroma"
+     ],
+     "keywords_all": [
+      "osteochondroma"
+     ],
+     "key_text": "Osteochondroma",
+     "source_key": "เฉลย: Osteochondroma"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE51",
+     "pages": [
+      4
+     ]
+    },
+    {
+     "paper": "OSPE51-KEY",
+     "pages": [
+      4
+     ]
+    }
+   ],
+   "tags": [
+    "pathology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "MSK-51-OSPE-011",
+   "block": "MSK",
+   "cohort": 51,
+   "n": 11,
+   "type": "OSPE",
+   "station": 11,
+   "stem": "สถานี 11: กล้ามเนื้อหลัง A และ B",
+   "items": [
+    {
+     "id": "11.1",
+     "prompt": "Structure A",
+     "format": "short",
+     "accepted": [
+      "longissimus"
+     ],
+     "keywords_all": [
+      "longissimus"
+     ],
+     "key_text": "Longissimus",
+     "source_key": "เฉลย: Longissimus",
+     "image": "img/MSK-51-OSPE-011.jpg",
+     "image_caption": "Back muscles (erector spinae)"
+    },
+    {
+     "id": "11.2",
+     "prompt": "Structure B",
+     "format": "short",
+     "accepted": [
+      "iliocostalis"
+     ],
+     "keywords_all": [
+      "iliocostalis"
+     ],
+     "key_text": "Iliocostalis",
+     "source_key": "เฉลย: Iliocostalis"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "OSPE51",
+     "pages": [
+      5
+     ]
+    },
+    {
+     "paper": "OSPE51-KEY",
+     "pages": [
+      5
+     ]
+    }
+   ],
+   "tags": [
+    "back"
+   ],
+   "source": "claude-mcp"
+  }
+ ]
+}
