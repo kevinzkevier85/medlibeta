@@ -403,11 +403,11 @@
     "= 45 mmol HCO3⁻ ใหม่"
    ],
    "option_why": {
-    "A": "0 ไม่ถูก",
-    "B": "5 ไม่ถูก",
-    "C": "15 ไม่ถูก",
+    "A": "0 จะได้เมื่อไม่มีการขับกรดเลย แต่มี titratable acid 25 และ NH4+ 20",
+    "B": "5 คือผลต่างของ titratable acid กับ NH4+ ที่ถูกคือนำมาบวกกัน (25+20)",
+    "C": "15 ไม่ตรงกับสูตร HCO3- ใหม่ = titratable acid + NH4+ − urine HCO3- = 45",
     "D": "✓ 45",
-    "E": "65 บวกซ้ำ"
+    "E": "65 เกินจริง เพราะนำค่าอื่นมาบวกซ้ำ ที่ถูกคือ 25+20−0 = 45"
    },
    "audit_note": "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
   },
@@ -482,7 +482,7 @@
     "A": "✓ ปริมาตรพลาสมาที่ถูกกรองต่อนาที",
     "B": "clearance ของสาร (ไม่ใช่นิยาม GFR โดยตรง)",
     "C": "urine flow rate",
-    "D": "RBF/RPF",
+    "D": "ปริมาตรเลือดที่ไหลผ่านไตต่อนาทีคือ renal blood flow ไม่ใช่ปริมาตรที่ถูกกรอง",
     "E": "excretion rate"
    },
    "audit_note": "AI เขียนข้อนี้ขึ้นใหม่จากโน้ตความจำในต้นฉบับ"
@@ -1184,8 +1184,8 @@
    "key_concept": "• midstream ≥ 10⁵ · catheter ≥ 10⁴–5×10⁴ · suprapubic: เชื้อใดก็ได้\n• ผู้มีอาการ: ≥ 10² ก็พิจารณา\n• ข้อซ้ำกับ 45 ข้อ 29",
    "option_why": {
     "A": "10³ ต่ำเกินสำหรับ midstream (ใช้ในอาการ/สวน)",
-    "B": "5×10³ ต่ำ",
-    "C": "10⁴ ต่ำ",
+    "B": "5,000 CFU/mL ต่ำเกิน อาจเป็นการปนเปื้อนจาก urethra ในการเก็บแบบ midstream",
+    "C": "10,000 CFU/mL ยังต่ำกว่าเกณฑ์มาตรฐาน 10⁵ ของ midstream clean catch",
     "D": "5×10⁴ เกณฑ์ cath ในเด็ก",
     "E": "✓ > 10⁵ CFU/mL (Kass)"
    },
@@ -1722,7 +1722,7 @@
    "tags": [],
    "source": "import",
    "audit_ref": "kub_46_MCQ_045",
-   "key_concept": "• luteal phase คงที่ ~14 วัน; follicular phase ผันแปร\n• รอบ 28 วัน → ไข่ตกวันที่ 14\n• รอบ 35 วัน → วันที่ 21",
+   "key_concept": "• luteal phase คงที่ประมาณ 14 วัน ส่วน follicular phase ยาวสั้นต่างกัน\n• วันไข่ตก = ความยาวรอบ − 14\n• รอบ 28 วันไข่ตกวันที่ 14 รอบ 26 วันไข่ตกวันที่ 12",
    "mechanism": [
     "luteal phase คงที่ 14 วัน",
     "รอบ 35 วัน",
@@ -2324,7 +2324,7 @@
     "A": "ไม่ใช่ oxytocin receptor",
     "B": "dopamine เกี่ยวข้องบ้าง แต่ไม่ใช่ตัวหลัก",
     "C": "✓ α-adrenergic (vasospasm)",
-    "D": "β ไม่ใช่",
+    "D": "ergot alkaloid ไม่ได้กระตุ้น β receptor ซึ่งจะทำให้หลอดเลือดขยายและมดลูกคลายตัว",
     "E": "AI เติมให้: ไม่ใช่ Ca channel blocker"
    },
    "audit_note": "ช้อยส์ E AI เติมให้ครบ 5 ตัว · ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
@@ -2437,7 +2437,7 @@
    "option_why": {
     "A": "✓ peripheral zone",
     "B": "central zone ไม่ใช่",
-    "C": "transitional zone = BPH",
+    "C": "transitional zone เป็นตำแหน่งของ BPH ส่วน PIN และมะเร็งต่อมลูกหมากเกิดที่ peripheral zone",
     "D": "fibromuscular zone ไม่ใช่",
     "E": "AI เติมให้: periurethral zone = BPH"
    },
