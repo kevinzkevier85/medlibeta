@@ -142,7 +142,16 @@
     "D": "Cyclin D เกี่ยวกับ mantle cell lymphoma และเต้านมบางส่วน",
     "E": "RET เกี่ยวกับ MEN2/medullary thyroid"
    },
-   "key_concept": "• HER2 amplification: เต้านม กระเพาะ รังไข่ → trastuzumab\n• BRCA1/2 เป็น tumor suppressor ของ hereditary breast/ovarian"
+   "key_concept": "• HER2 amplification: เต้านม กระเพาะ รังไข่ → trastuzumab\n• BRCA1/2 เป็น tumor suppressor ของ hereditary breast/ovarian",
+   "mechanism": [
+    "ยีน ERBB2 (HER2) ถูก amplify ในเซลล์เต้านม/รังไข่",
+    {
+     "s": "ตัวรับ HER2 ถูกแสดงออกมากเกิน",
+     "answer": true
+    },
+    "ส่งสัญญาณเจริญเติบโตตลอดเวลา",
+    "เซลล์มะเร็งแบ่งตัวเร็ว (ให้ trastuzumab ได้)"
+   ]
   },
   "16": {
    "explanation": "CML มี Philadelphia chromosome t(9;22) ได้ BCR-ABL",
@@ -183,7 +192,16 @@
     "D": "ไม่ได้ส่งเสริม transcription",
     "E": "Mismatch repair เป็นหน้าที่ของ MSH/MLH"
    },
-   "key_concept": "• มะเร็ง 90% มี telomerase ทำงาน → immortality\n• Telomere สั้นลงทุกการแบ่งเซลล์ในเซลล์ปกติ"
+   "key_concept": "• มะเร็ง 90% มี telomerase ทำงาน → immortality\n• Telomere สั้นลงทุกการแบ่งเซลล์ในเซลล์ปกติ",
+   "mechanism": [
+    "Telomere สั้นลงทุกครั้งที่เซลล์แบ่งตัว",
+    {
+     "s": "Telomerase ต่อ telomere ให้ยาว",
+     "answer": true
+    },
+    "เซลล์ไม่เข้าสู่ senescence",
+    "เซลล์มะเร็งแบ่งตัวได้ไม่จำกัด (immortal)"
+   ]
   },
   "19": {
    "explanation": "Follicular lymphoma มี t(14;18) เพิ่ม BCL2 ต้านการตายของเซลล์ (anti-apoptosis)",
@@ -301,7 +319,16 @@
     "D": "✓ CTL เป็นเซลล์ effector ต่อ tumor antigen",
     "E": "Eosinophil เกี่ยวกับภูมิแพ้และหนอนพยาธิ"
    },
-   "key_concept": "• CTL (CD8) รู้จัก antigen บน MHC I → perforin/granzyme\n• NK cell: missing-self"
+   "key_concept": "• CTL (CD8) รู้จัก antigen บน MHC I → perforin/granzyme\n• NK cell: missing-self",
+   "mechanism": [
+    "Antigen ของเซลล์มะเร็งถูกแสดงบน MHC I",
+    "CD8 T cell รู้จัก antigen",
+    {
+     "s": "CTL หลั่ง perforin/granzyme",
+     "answer": true
+    },
+    "เซลล์มะเร็งเกิด apoptosis"
+   ]
   },
   "29": {
    "explanation": "Immunotherapy มะเร็งใช้เซลล์ภูมิคุ้มกันที่ engineer ให้รู้จัก antigen มะเร็ง (เช่น CAR-T)",
@@ -312,7 +339,16 @@
     "D": "การกระตุ้น phagocytosis ไม่ใช่การรักษาหลัก",
     "E": "Antigen ที่พบทั้งในเซลล์ปกติจะทำให้เป็นพิษต่อเนื้อเยื่อปกติ"
    },
-   "key_concept": "• Immunotherapy: checkpoint inhibitor, CAR-T, vaccine, monoclonal antibody\n• CAR-T เล็ง CD19 ใน B-ALL"
+   "key_concept": "• Immunotherapy: checkpoint inhibitor, CAR-T, vaccine, monoclonal antibody\n• CAR-T เล็ง CD19 ใน B-ALL",
+   "mechanism": [
+    "วิศวกรรม T cell ให้มี receptor ต่อ antigen มะเร็ง",
+    {
+     "s": "T cell ที่ engineered จับเซลล์มะเร็งเฉพาะ",
+     "answer": true
+    },
+    "ปล่อย cytotoxic mediator",
+    "กำจัดเซลล์มะเร็ง"
+   ]
   },
   "30": {
    "explanation": "APC นำเสนอ neoantigen ให้ T cell เกิด cancer-specific T cell",
@@ -323,7 +359,16 @@
     "D": "B cell สร้างแอนติบอดีไม่ใช่ T cell",
     "E": "การกด T cell ขัดกับการสร้าง T cell"
    },
-   "key_concept": "• Neoantigen จาก mutation → T cell priming โดย dendritic cell\n• TMB สูง ตอบสนอง immunotherapy ดี"
+   "key_concept": "• Neoantigen จาก mutation → T cell priming โดย dendritic cell\n• TMB สูง ตอบสนอง immunotherapy ดี",
+   "mechanism": [
+    "เซลล์มะเร็งมี mutation ได้ neoantigen",
+    {
+     "s": "APC นำเสนอ neoantigen บน MHC ให้ T cell",
+     "answer": true
+    },
+    "T cell กระตุ้นและแบ่งตัว",
+    "เกิด cancer-specific T cell"
+   ]
   },
   "31": {
    "explanation": "ตามเฉลยต้นฉบับ กลไกคือการหลั่ง IL-10 กดภูมิคุ้มกัน (AI เห็นว่า PD-1/PD-L1 ที่ tumor เป็นกลไก checkpoint มาตรฐาน)",
@@ -345,7 +390,16 @@
     "D": "ไม่ได้เน้น humoral immunity",
     "E": "การคงอยู่ของ memory T cell เป็นผลหลังกระตุ้น"
    },
-   "key_concept": "• Vaccine มะเร็ง = therapeutic vaccine ใช้ neoantigen\n• HPV/HBV vaccine = primary prevention"
+   "key_concept": "• Vaccine มะเร็ง = therapeutic vaccine ใช้ neoantigen\n• HPV/HBV vaccine = primary prevention",
+   "mechanism": [
+    "ฉีด neoantigen หรือ vaccine ให้ผู้ป่วย",
+    "APC จับและนำเสนอให้ T cell",
+    {
+     "s": "กระตุ้น neoantigen-specific T cell",
+     "answer": true
+    },
+    "T cell ฆ่าเซลล์มะเร็ง"
+   ]
   },
   "33": {
    "explanation": "ตามเฉลยต้นฉบับ กลไกของ monoclonal antibody คือ complement-mediated cytotoxicity (นอกจากนี้ยังมี ADCC)",
@@ -367,7 +421,16 @@
     "D": "✓ CAR-T ใช้ T cell ของผู้ป่วยเอง modify แล้ว infuse กลับ",
     "E": "รังสีเป็น radiotherapy"
    },
-   "key_concept": "• CAR-T: autologous T cell + CAR (scFv + CD3ζ + costim)\n• ผลข้างเคียง cytokine release syndrome"
+   "key_concept": "• CAR-T: autologous T cell + CAR (scFv + CD3ζ + costim)\n• ผลข้างเคียง cytokine release syndrome",
+   "mechanism": [
+    "เก็บ T cell ของผู้ป่วย",
+    "ดัดแปลงให้แสดง chimeric antigen receptor",
+    {
+     "s": "ใส่ T cell กลับเข้าผู้ป่วย",
+     "answer": true
+    },
+    "T cell จับ antigen มะเร็งและทำลายเซลล์"
+   ]
   },
   "35": {
    "explanation": "Age-standardized rate ปรับโครงสร้างอายุเพื่อเปรียบเทียบข้ามประเทศ",
@@ -444,7 +507,16 @@
     "D": "Oncogene activation (เช่น KRAS) เป็นผลลัพธ์",
     "E": "ROS มีส่วนแต่ไม่ใช่กลไกแรก"
    },
-   "key_concept": "• Procarcinogen → P-450 → ultimate carcinogen → DNA adduct → mutation\n• AI เห็นว่าตัวเลือก B/D ก็เป็นผลปลายทางที่ถูกได้"
+   "key_concept": "• Procarcinogen → P-450 → ultimate carcinogen → DNA adduct → mutation\n• AI เห็นว่าตัวเลือก B/D ก็เป็นผลปลายทางที่ถูกได้",
+   "mechanism": [
+    "สารก่อมะเร็งในควันบุหรี่ (procarcinogen)",
+    {
+     "s": "Cytochrome P-450 เปลี่ยนเป็น ultimate carcinogen",
+     "answer": true
+    },
+    "จับ DNA เกิด adduct และ mutation",
+    "มะเร็งปอด"
+   ]
   },
   "42": {
    "explanation": "SCC ที่ใบหน้าเกี่ยวข้องกับ UV จึงเป็นอาชีพที่รับแดดมาก (lifeguard)",
@@ -507,7 +579,16 @@
     "D": "IGF-1 กระตุ้นสร้างกล้ามเนื้อ",
     "E": "PTHrP ทำให้ hypercalcemia ของมะเร็ง"
    },
-   "key_concept": "• Cachexia mediators: TNF-α, IL-1, IL-6, PIF\n• Cachexia = ลดน้ำหนัก กล้ามเนื้อ ไขมัน"
+   "key_concept": "• Cachexia mediators: TNF-α, IL-1, IL-6, PIF\n• Cachexia = ลดน้ำหนัก กล้ามเนื้อ ไขมัน",
+   "mechanism": [
+    "มะเร็งหลั่ง cytokine (IL-6, TNF)",
+    {
+     "s": "กระตุ้น proteolysis ในกล้ามเนื้อ",
+     "answer": true
+    },
+    "กล้ามเนื้อสลาย",
+    "Cachexia"
+   ]
   },
   "48": {
    "explanation": "SCLC ที่มี Cushing syndrome มักมี SIADH ร่วมด้วย",
@@ -518,7 +599,16 @@
     "D": "Red cell aplasia พบใน thymoma",
     "E": "✓ SIADH (ADH ectopic) พบบ่อยใน SCLC"
    },
-   "key_concept": "• SCLC: ectopic ACTH (Cushing), ADH (SIADH), Lambert–Eaton\n• SCC ปอด: PTHrP → hypercalcemia"
+   "key_concept": "• SCLC: ectopic ACTH (Cushing), ADH (SIADH), Lambert–Eaton\n• SCC ปอด: PTHrP → hypercalcemia",
+   "mechanism": [
+    "Small cell carcinoma เป็น neuroendocrine tumor",
+    {
+     "s": "สร้าง ADH ออกมานอกที่ (ectopic)",
+     "answer": true
+    },
+    "ไตเก็บน้ำ Na ในเลือดต่ำ",
+    "SIADH"
+   ]
   },
   "49": {
    "explanation": "ตามเฉลยต้นฉบับ acanthosis nigricans paraneoplastic สัมพันธ์กับ gastric adenocarcinoma (AI เห็นว่า DM/insulin resistance พบบ่อยกว่า)",
@@ -529,7 +619,16 @@
     "D": "✓ Gastric adenocarcinoma คือ paraneoplastic ที่ต้นฉบับเลือก",
     "E": "PCOS มี insulin resistance ร่วม"
    },
-   "key_concept": "• AN พบบ่อย: insulin resistance/obesity/PCOS\n• AN รุนแรงฉับพลันในผู้สูงอายุ: หา gastric adenocarcinoma"
+   "key_concept": "• AN พบบ่อย: insulin resistance/obesity/PCOS\n• AN รุนแรงฉับพลันในผู้สูงอายุ: หา gastric adenocarcinoma",
+   "mechanism": [
+    "Gastric adenocarcinoma หลั่ง growth factor (TGF-α)",
+    {
+     "s": "กระตุ้น keratinocyte และ fibroblast ผิวหนัง",
+     "answer": true
+    },
+    "ผิวหนาและเม็ดสีเพิ่ม",
+    "Acanthosis nigricans (paraneoplastic)"
+   ]
   },
   "51": {
    "explanation": "ตามเฉลยต้นฉบับเลือก E (การเกิด cross-link ของ DNA) แต่ AI เห็นว่า antimetabolite ยับยั้งเอนไซม์สร้าง DNA (A)",
@@ -540,7 +639,16 @@
     "D": "Ionizing water เป็นรังสีรักษา",
     "E": "✓ Cross-link DNA เป็นของ alkylating agent (ตามเฉลยต้นฉบับ)"
    },
-   "key_concept": "• Antimetabolite: MTX, 5-FU, cytarabine, gemcitabine (S phase)\n• Alkylating: cross-link DNA, cell-cycle nonspecific"
+   "key_concept": "• Antimetabolite: MTX, 5-FU, cytarabine, gemcitabine (S phase)\n• Alkylating: cross-link DNA, cell-cycle nonspecific",
+   "mechanism": [
+    "Antimetabolite เลียนแบบ nucleotide/folate",
+    {
+     "s": "ยับยั้งเอนไซม์สร้าง DNA ในระยะ S",
+     "answer": true
+    },
+    "เซลล์สังเคราะห์ DNA ไม่ได้",
+    "เซลล์ที่แบ่งตัวเร็วตาย"
+   ]
   },
   "52": {
    "explanation": "เคมีบำบัดฆ่าเซลล์ที่แบ่งตัวเร็วทั้งหมด รวมรากผม จึงผมร่วง",
@@ -600,7 +708,16 @@
     "D": "M ไวที่สุด",
     "E": "Early S ไวปานกลาง"
    },
-   "key_concept": "• Radiosensitive: G2/M, resistant: late S\n• Hypoxia ทำให้ดื้อรังสี"
+   "key_concept": "• Radiosensitive: G2/M, resistant: late S\n• Hypoxia ทำให้ดื้อรังสี",
+   "mechanism": [
+    "เซลล์ในระยะ late S มี homologous recombination ซ่อม DNA",
+    {
+     "s": "ซ่อม DNA ที่ถูกรังสีทำลายได้ดี",
+     "answer": true
+    },
+    "เซลล์รอดจากรังสี",
+    "ดื้อรังสีมากสุดในระยะนี้"
+   ]
   },
   "58": {
    "explanation": "รังสีที่ท้องน้อยทำให้ท้องเสียระยะสั้นจากเยื่อบุลำไส้อักเสบ",
@@ -611,7 +728,16 @@
     "D": "คลื่นไส้อาจพบ แต่เด่นรองลงมา",
     "E": "น้ำหนักลดเป็นผลระยะยาวหรือรวม"
    },
-   "key_concept": "• Acute RT effects: ตามตำแหน่งที่ฉาย (ลำไส้ → ท้องเสีย)\n• Late effects: fibrosis, stricture"
+   "key_concept": "• Acute RT effects: ตามตำแหน่งที่ฉาย (ลำไส้ → ท้องเสีย)\n• Late effects: fibrosis, stricture",
+   "mechanism": [
+    "รังสีโดนเยื่อบุลำไส้",
+    "เซลล์เยื่อบุที่แบ่งตัวเร็วตาย",
+    {
+     "s": "การดูดซึมเสียและเยื่อบุอักเสบ",
+     "answer": true
+    },
+    "ท้องเสียระยะสั้น"
+   ]
   },
   "59": {
    "explanation": "ตามเฉลยต้นฉบับการฉายรังสีทวารหนักใช้ใส่เครื่องมือ (brachytherapy) (ผู้เฉลยไม่แน่ใจ AI เห็นว่า external beam เป็นแบบมาตรฐาน)",

@@ -109,7 +109,15 @@
     "D": "HSV ก่อแผลตุ่มพอง",
     "E": "EBV ก่อ NPC, Burkitt lymphoma"
    },
-   "key_concept": "• HPV 6/11: papilloma/condyloma (low-risk)\n• HPV 16/18: SCC ปากมดลูก (high-risk)"
+   "key_concept": "• HPV 6/11: papilloma/condyloma (low-risk)\n• HPV 16/18: SCC ปากมดลูก (high-risk)",
+   "mechanism": [
+    "HPV ชนิด low-risk (6/11) ติดเยื่อบุกล่องเสียง",
+    {
+     "s": "กระตุ้นการแบ่งตัวของ squamous cell",
+     "answer": true
+    },
+    "ก้อน papilloma ไม่ร้าย"
+   ]
   },
   "11": {
    "explanation": "Invasive ductal carcinoma ไม่มี myoepithelial cell ล้อมก้อน (บ่งว่ารุกราน)",
@@ -208,7 +216,15 @@
     "D": "✓ HER2 เป็น oncogene gain-of-function",
     "E": "MMR gene เป็น loss-of-function"
    },
-   "key_concept": "• Oncogene: gain of function (HER2, RAS, MYC)\n• Tumor suppressor: loss of function (p53, RB, BRCA)"
+   "key_concept": "• Oncogene: gain of function (HER2, RAS, MYC)\n• Tumor suppressor: loss of function (p53, RB, BRCA)",
+   "mechanism": [
+    "HER2 ถูก amplify",
+    {
+     "s": "ตัวรับส่งสัญญาณเจริญเติบโตตลอดเวลา (gain-of-function)",
+     "answer": true
+    },
+    "มะเร็งเต้านมโตเร็ว"
+   ]
   },
   "23": {
    "explanation": "ตามเฉลยต้นฉบับ กลไกที่รู้จักของมะเร็งเต้านมคือ DNA mismatch repair ไม่ทำงาน (AI เห็นว่า double-strand break repair ผ่าน BRCA ก็เป็นกลไกหลัก)",
@@ -219,7 +235,16 @@
     "D": "✓ ตามเฉลยต้นฉบับ DNA repair defect",
     "E": "AI เห็นว่า dsDNA break repair (BRCA1/2) เป็นกลไกหลัก"
    },
-   "key_concept": "• Hereditary breast: BRCA1/2 → homologous recombination ผิดปกติ\n• Lynch syndrome: mismatch repair"
+   "key_concept": "• Hereditary breast: BRCA1/2 → homologous recombination ผิดปกติ\n• Lynch syndrome: mismatch repair",
+   "mechanism": [
+    "DNA mismatch/repair ไม่ทำงาน",
+    {
+     "s": "ความผิดพลาดของ DNA สะสม",
+     "answer": true
+    },
+    "Oncogene และ tumor suppressor กลายพันธุ์",
+    "มะเร็งเต้านม"
+   ]
   },
   "24": {
    "explanation": "การตอบสนองของภูมิคุ้มกันต่อมะเร็ง (ตามเฉลย) คือ apoptosis ของเซลล์มะเร็ง",
@@ -251,7 +276,16 @@
     "D": "Perforin/granzyme เป็นผลปลายทางของ NK/CTL",
     "E": "✓ ADCC คือกลไกคลาสสิกของ mAb (rituximab)"
    },
-   "key_concept": "• mAb: ADCC, CDC, receptor blockade\n• Rituximab = anti-CD20"
+   "key_concept": "• mAb: ADCC, CDC, receptor blockade\n• Rituximab = anti-CD20",
+   "mechanism": [
+    "mAb จับ antigen ของเซลล์มะเร็ง",
+    "NK cell จับส่วน Fc ของแอนติบอดี",
+    {
+     "s": "เกิด ADCC หลั่ง perforin/granzyme",
+     "answer": true
+    },
+    "เซลล์มะเร็งตาย"
+   ]
   },
   "29": {
    "explanation": "SCLC ที่ทำให้ Cushing syndrome (ectopic ACTH) ผู้สูบบุหรี่ ก้อนปอดส่วนกลาง",
@@ -262,7 +296,15 @@
     "D": "✓ Small cell carcinoma หลั่ง ACTH ได้",
     "E": "Squamous cell carcinoma เกี่ยวกับ PTHrP"
    },
-   "key_concept": "• SCLC: ACTH, ADH, Lambert–Eaton\n• สูบบุหรี่ + ก้อนกลางปอด"
+   "key_concept": "• SCLC: ACTH, ADH, Lambert–Eaton\n• สูบบุหรี่ + ก้อนกลางปอด",
+   "mechanism": [
+    "Small cell carcinoma ปอดสร้าง ACTH นอกที่",
+    {
+     "s": "ACTH กระตุ้นต่อมหมวกไตสร้าง cortisol เกิน",
+     "answer": true
+    },
+    "Cushing syndrome"
+   ]
   },
   "30": {
    "explanation": "Squamous cell carcinoma ปอดสร้าง PTHrP ทำให้ hypercalcemia",
@@ -292,7 +334,15 @@
     "D": "✓ Acanthosis nigricans เกี่ยวกับ gastric adenocarcinoma",
     "E": "Dermatomyositis เกี่ยวกับ ovarian/lung cancer"
    },
-   "key_concept": "• Paraneoplastic skin: acanthosis nigricans (gastric), dermatomyositis (ovarian)\n• Trousseau: pancreatic"
+   "key_concept": "• Paraneoplastic skin: acanthosis nigricans (gastric), dermatomyositis (ovarian)\n• Trousseau: pancreatic",
+   "mechanism": [
+    "Gastric adenocarcinoma หลั่ง growth factor",
+    {
+     "s": "กระตุ้น keratinocyte ผิวหนัง",
+     "answer": true
+    },
+    "Acanthosis nigricans"
+   ]
   },
   "32": {
    "explanation": "Myasthenia gravis กับก้อนใน mediastinum คือ thymoma",
@@ -367,7 +417,16 @@
     "D": "H. heilmannii พบน้อยกว่า",
     "E": "HPV ก่อปากมดลูก/ช่องปาก"
    },
-   "key_concept": "• H. pylori: gastric adenocarcinoma, MALT lymphoma\n• EBV ก็พบในกระเพาะ แต่ H. pylori สำคัญกว่า"
+   "key_concept": "• H. pylori: gastric adenocarcinoma, MALT lymphoma\n• EBV ก็พบในกระเพาะ แต่ H. pylori สำคัญกว่า",
+   "mechanism": [
+    "H. pylori ติดเยื่อบุกระเพาะ",
+    "CagA และการอักเสบเรื้อรัง",
+    {
+     "s": "เยื่อบุแบ่งตัวมากและกลายพันธุ์",
+     "answer": true
+    },
+    "Gastric adenocarcinoma"
+   ]
   },
   "43": {
    "explanation": "กล้ามเนื้อ (กลุ่มเซลล์แบ่งตัวช้า) ถูกกระทบจากเคมีบำบัดน้อยที่สุด",
@@ -389,7 +448,16 @@
     "D": "SCC ปอดเกี่ยวกับบุหรี่",
     "E": "Urothelial carcinoma ก็เป็นผลของ cyclophosphamide (acrolein) แต่เฉลยเลือก AML"
    },
-   "key_concept": "• Alkylating agent: secondary AML, hemorrhagic cystitis\n• Mesna ป้องกัน cystitis"
+   "key_concept": "• Alkylating agent: secondary AML, hemorrhagic cystitis\n• Mesna ป้องกัน cystitis",
+   "mechanism": [
+    "Cyclophosphamide (alkylating agent) ทำลาย DNA",
+    {
+     "s": "ทำลาย DNA ของเซลล์ต้นกำเนิดไขกระดูกด้วย",
+     "answer": true
+    },
+    "เกิด mutation",
+    "Secondary AML"
+   ]
   },
   "47": {
    "explanation": "Arsenic ก่อมะเร็งโดยการเปลี่ยนสภาพเป็น carcinogen ผ่าน cytochrome P-450 (เฉลยวงทั้ง C และ E ผมยึด E)",
@@ -400,7 +468,16 @@
     "D": "การเพิ่ม telomerase ไม่ใช่กลไกหลัก",
     "E": "✓ Metabolic conversion โดย P-450 สร้าง carcinogen"
    },
-   "key_concept": "• Arsenic: skin/lung/bladder cancer, palmar hyperkeratosis\n• Procarcinogen → P-450 → carcinogen"
+   "key_concept": "• Arsenic: skin/lung/bladder cancer, palmar hyperkeratosis\n• Procarcinogen → P-450 → carcinogen",
+   "mechanism": [
+    "Arsenic เข้าร่างกาย",
+    {
+     "s": "P-450 เปลี่ยนเป็นตัวก่อมะเร็ง",
+     "answer": true
+    },
+    "ทำลาย DNA และเกิด mutation",
+    "มะเร็งผิวหนัง/ปอด"
+   ]
   },
   "48": {
    "explanation": "Pyrimidine dimer จาก UV เพิ่มความเสี่ยง skin cancer (xeroderma pigmentosum)",
@@ -410,7 +487,16 @@
     "C": "ตับเสี่ยงจาก HBV/aflatoxin",
     "D": "ตัวเลือกว่างในต้นฉบับ"
    },
-   "key_concept": "• XP: NER บกพร่อง → UV-induced skin cancer\n• Pyrimidine dimer = thymine dimer"
+   "key_concept": "• XP: NER บกพร่อง → UV-induced skin cancer\n• Pyrimidine dimer = thymine dimer",
+   "mechanism": [
+    "UV ทำให้ DNA ติดกันเป็น pyrimidine dimer",
+    {
+     "s": "ซ่อมแซมไม่ได้ (XP) จึงเกิด mutation",
+     "answer": true
+    },
+    "เซลล์ผิวกลายพันธุ์",
+    "มะเร็งผิวหนัง"
+   ]
   },
   "50": {
    "explanation": "HCC จาก HBV พบ cirrhosis ร่วมได้มากที่สุด",
@@ -432,7 +518,16 @@
     "D": "Inhibit apoptosis เป็นกลไกเสริม",
     "E": "ไม่ใช่การยับยั้ง growth factor"
    },
-   "key_concept": "• H. pylori: CagA, chronic gastritis, intestinal metaplasia\n• MALT lymphoma ลดลงเมื่อกำจัดเชื้อ"
+   "key_concept": "• H. pylori: CagA, chronic gastritis, intestinal metaplasia\n• MALT lymphoma ลดลงเมื่อกำจัดเชื้อ",
+   "mechanism": [
+    "H. pylori ติดกระเพาะ",
+    {
+     "s": "กระตุ้นการแบ่งตัวของเยื่อบุกระเพาะ",
+     "answer": true
+    },
+    "DNA เสียหายสะสม",
+    "Gastric cancer"
+   ]
   },
   "52": {
    "explanation": "Benign tumor มีขอบเขตชัดเจน",
