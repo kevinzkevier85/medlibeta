@@ -1,0 +1,565 @@
+{
+ "meta": {
+  "set_id": "51_KF",
+  "block": "NEO",
+  "cohort": 51,
+  "type": "KF",
+  "title": "KF Neoplasia · Med PSU 51",
+  "time_limit_min": 120,
+  "generated_by": "auditor/tools/build_kf.py from auditor/data/work/neo_51_KF.kf.json — do not edit by hand"
+ },
+ "questions": [
+  {
+   "id": "NEO-51-KF-001",
+   "block": "NEO",
+   "cohort": 51,
+   "n": 1,
+   "type": "KF",
+   "case": "ผู้ป่วยตัวเหลือง เป็นมะเร็งทางเดินท่อน้ำดี",
+   "items": [
+    {
+     "id": "1.1",
+     "prompt": "Tumor marker ที่ตรวจ",
+     "format": "short",
+     "accepted": [
+      "ca 19-9",
+      "ca19-9"
+     ],
+     "keywords_all": [
+      "19-9"
+     ],
+     "key_text": "CA 19-9",
+     "source_key": "เฉลย: CA 19-9"
+    },
+    {
+     "id": "1.2",
+     "prompt": "หมู่เลือดที่ตรวจ tumor marker ข้อ 1.1 แล้วไม่พบหรือพบต่ำ",
+     "format": "short",
+     "accepted": [
+      "lewis"
+     ],
+     "keywords_all": [
+      "lewis"
+     ],
+     "key_text": "Lewis-negative (ประชากร 5–10% ไม่มี Lewis antigen)",
+     "source_key": "เฉลย: Lewis-negative (ประชากร 5–10% ไม่มี Lewis antigen)"
+    },
+    {
+     "id": "1.3",
+     "prompt": "เหตุผลที่ทำให้ผลต่ำกว่าที่ควรเป็น",
+     "format": "short",
+     "accepted": [
+      "false negative",
+      "lewis"
+     ],
+     "keywords_all": [
+      "false negative",
+      "lewis"
+     ],
+     "key_text": "ผู้ป่วย Lewis-negative ไม่มี Lewis antigen จึงเกิด false negative ได้ ทั้งที่ CA 19-9 พบสูงในมะเร็งท่อน้ำดีราว 70%",
+     "source_key": "เฉลย: ผู้ป่วย Lewis-negative ไม่มี Lewis antigen จึงเกิด false negative ได้ ทั้งที่ CA 19-9 พบสูงในมะเร็งท่อน้ำดีราว 70%"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF51",
+     "pages": [
+      1
+     ]
+    },
+    {
+     "paper": "KF51-KEY",
+     "pages": [
+      1
+     ]
+    }
+   ],
+   "tags": [
+    "gi"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "NEO-51-KF-002",
+   "block": "NEO",
+   "cohort": 51,
+   "n": 2,
+   "type": "KF",
+   "case": "พบก้อนเนื้อที่ต่อมน้ำเหลืองที่คอ ตัดชิ้นเนื้อตรวจ (สงสัย lymphoma กับ carcinoma)",
+   "items": [
+    {
+     "id": "2.1",
+     "prompt": "การย้อมพิเศษเพื่อแยกชนิดเซลล์",
+     "format": "short",
+     "accepted": [
+      "immunohistochem",
+      "ihc"
+     ],
+     "keywords_all": [
+      "immunohistochem"
+     ],
+     "key_text": "Immunohistochemistry (ใช้ antibody จำเพาะกับ antigen)",
+     "source_key": "เฉลย: Immunohistochemistry (ใช้ antibody จำเพาะกับ antigen)"
+    },
+    {
+     "id": "2.2",
+     "prompt": "Marker ของ tumor cell เพื่อแยก lymphoma กับ carcinoma",
+     "format": "short",
+     "accepted": [
+      "ck",
+      "cd20",
+      "cd3",
+      "ae1"
+     ],
+     "keywords_all": [
+      "cd20",
+      "cytokeratin",
+      "ck"
+     ],
+     "key_text": "Carcinoma: CK, AE1/AE3, EMA · Lymphoma: CD3, CD20 (carcinoma มาจาก epithelium, lymphoma มาจาก lymphocyte)",
+     "source_key": "เฉลย: Carcinoma: CK, AE1/AE3, EMA · Lymphoma: CD3, CD20 (carcinoma มาจาก epithelium, lymphoma มาจาก lymphocyte)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF51",
+     "pages": [
+      1
+     ]
+    },
+    {
+     "paper": "KF51-KEY",
+     "pages": [
+      1
+     ]
+    }
+   ],
+   "tags": [
+    "pathology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "NEO-51-KF-003",
+   "block": "NEO",
+   "cohort": 51,
+   "n": 3,
+   "type": "KF",
+   "case": "แผนภูมิแท่งแสดง incidence rate และ mortality ในผู้ชายปี 2020 ของมะเร็งหลายชนิด (ไม่มีกราฟในต้นฉบับ)",
+   "items": [
+    {
+     "id": "3.1",
+     "prompt": "เรียงลำดับมะเร็งที่ incidence rate สูงสุด 3 อันดับแรก (ให้วิเคราะห์กราฟและใช้สูตร)",
+     "format": "short",
+     "accepted": [
+      "new cases",
+      "population at risk",
+      "lung",
+      "prostate"
+     ],
+     "keywords_all": [
+      "population at risk",
+      "incidence"
+     ],
+     "key_text": "Incidence rate = จำนวนผู้ป่วยรายใหม่ / ประชากรที่เสี่ยงทั้งหมด (ตามกราฟ GLOBOCAN 2020 ผู้ชาย: lung, prostate, colorectal)",
+     "source_key": "เฉลยบางส่วนไม่ครบ — AI เติม"
+    },
+    {
+     "id": "3.2",
+     "prompt": "โรคที่ร้ายแรงที่สุดจาก mortality rate สูงสุด 3 อันดับแรก",
+     "format": "short",
+     "accepted": [
+      "new deaths",
+      "population at risk",
+      "lung",
+      "liver"
+     ],
+     "keywords_all": [
+      "mortality",
+      "population at risk"
+     ],
+     "key_text": "Mortality rate = จำนวนผู้เสียชีวิตรายใหม่ / ประชากรที่เสี่ยงทั้งหมด (ผู้ชายตามกราฟ 2020: lung, liver, colorectal/stomach)",
+     "source_key": "เฉลยบางส่วนไม่ครบ — AI เติม"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "KF51",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "KF51-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [
+    "epidemiology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "NEO-51-KF-004",
+   "block": "NEO",
+   "cohort": 51,
+   "n": 4,
+   "type": "KF",
+   "case": "พบก้อนที่ตับอ่อนสงสัยมะเร็ง ให้รูป histology",
+   "items": [
+    {
+     "id": "4.1",
+     "prompt": "วินิจฉัยโรค (histological diagnosis)",
+     "format": "short",
+     "accepted": [
+      "adenocarcinoma"
+     ],
+     "keywords_all": [
+      "adenocarcinoma"
+     ],
+     "key_text": "Adenocarcinoma (irregular gland formation, desmoplasia, abnormal nuclear morphology เช่น high N:C ratio และ hyperchromatic nuclei)",
+     "source_key": "เฉลย: Adenocarcinoma (irregular gland formation, desmoplasia, abnormal nuclear morphology เช่น high N:C ratio และ hyperchromatic nuclei)",
+     "image": "img/NEO-51-KF-004.jpg",
+     "image_caption": "Histology ตับอ่อน"
+    },
+    {
+     "id": "4.2",
+     "prompt": "อาการเบื่ออาหาร น้ำหนักลด มีชื่อทางการแพทย์ว่าอะไร",
+     "format": "short",
+     "accepted": [
+      "cachexia"
+     ],
+     "keywords_all": [
+      "cachexia"
+     ],
+     "key_text": "Cancer cachexia",
+     "source_key": "เฉลย: Cancer cachexia"
+    },
+    {
+     "id": "4.3",
+     "prompt": "Mediator ที่เกี่ยวข้อง 3 อัน",
+     "format": "short",
+     "accepted": [
+      "tnf",
+      "il-1",
+      "il-6"
+     ],
+     "keywords_all": [
+      "tnf"
+     ],
+     "key_text": "TNF-alpha · IL-1 · IL-6",
+     "source_key": "เฉลย: TNF-alpha · IL-1 · IL-6"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF51",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "KF51-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [
+    "gi"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "NEO-51-KF-006",
+   "block": "NEO",
+   "cohort": 51,
+   "n": 6,
+   "type": "KF",
+   "case": "ชายอายุ 45 ปี พบก้อนเนื้อขนาด 7 cm เบื่ออาหาร น้ำหนักลด 5 kg ประวัติครอบครัว: แม่เสียชีวิตจากมะเร็งตับ ตรวจพบ HBsAg positive",
+   "items": [
+    {
+     "id": "6.1",
+     "prompt": "โรคที่น่าจะเป็น",
+     "format": "short",
+     "accepted": [
+      "hepatocellular",
+      "hcc"
+     ],
+     "keywords_all": [
+      "hepatocellular"
+     ],
+     "key_text": "Hepatocellular carcinoma",
+     "source_key": "เฉลย: Hepatocellular carcinoma"
+    },
+    {
+     "id": "6.2",
+     "prompt": "ปัจจัยเสี่ยงตามโจทย์",
+     "format": "short",
+     "accepted": [
+      "hbsag",
+      "hepatitis b",
+      "family",
+      "vertical"
+     ],
+     "keywords_all": [
+      "hep",
+      "family"
+     ],
+     "key_text": "HBsAg positive · ประวัติครอบครัว (แม่เป็นมะเร็งตับ) · Vertical transmission จากแม่ (HBV ถ่ายทอดได้ ส่วน HCC ถ่ายทอดสู่ลูกไม่ได้)",
+     "source_key": "เฉลย: HBsAg positive · ประวัติครอบครัว (แม่เป็นมะเร็งตับ) · Vertical transmission จากแม่ (HBV ถ่ายทอดได้ ส่วน HCC ถ่ายทอดสู่ลูกไม่ได้)"
+    },
+    {
+     "id": "6.3",
+     "prompt": "Tumor marker",
+     "format": "short",
+     "accepted": [
+      "afp",
+      "alpha-fetoprotein",
+      "pivka"
+     ],
+     "keywords_all": [
+      "afp"
+     ],
+     "key_text": "Alpha-fetoprotein (AFP) / PIVKA-II",
+     "source_key": "เฉลย: Alpha-fetoprotein (AFP) / PIVKA-II"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF51",
+     "pages": [
+      3
+     ]
+    },
+    {
+     "paper": "KF51-KEY",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [
+    "gi"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "NEO-51-KF-007",
+   "block": "NEO",
+   "cohort": 51,
+   "n": 7,
+   "type": "KF",
+   "case": "ภาพ gross และ histology ของ colon",
+   "items": [
+    {
+     "id": "7.1",
+     "prompt": "Gross pathology",
+     "format": "short",
+     "accepted": [
+      "ulcer",
+      "pericolic",
+      "ก้อน"
+     ],
+     "keywords_all": [
+      "pericolic",
+      "ulcer"
+     ],
+     "key_text": "ก้อนแข็งยื่นออกด้านนอก มีผิวไม่เรียบ/แผลตรงกลางบุ๋ม (ulcerated) ลุกลามถึง pericolic fat",
+     "source_key": "เฉลยบางส่วนไม่ครบ — AI เติม",
+     "image": "img/NEO-51-KF-007.jpg",
+     "image_caption": "Gross และ histology ลำไส้ใหญ่"
+    },
+    {
+     "id": "7.2",
+     "prompt": "Histological diagnosis",
+     "format": "short",
+     "accepted": [
+      "adenocarcinoma"
+     ],
+     "keywords_all": [
+      "adenocarcinoma"
+     ],
+     "key_text": "Adenocarcinoma of colon: invasion ผ่าน muscularis mucosae เซลล์เรียงตัวเป็น gland พบ dysplasia, loss of polarity และ disorganized growth",
+     "source_key": "เฉลย: Adenocarcinoma of colon: invasion ผ่าน muscularis mucosae เซลล์เรียงตัวเป็น gland พบ dysplasia, loss of polarity และ disorganized growth"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF51",
+     "pages": [
+      3
+     ]
+    },
+    {
+     "paper": "KF51-KEY",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [
+    "gi"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "NEO-51-KF-008",
+   "block": "NEO",
+   "cohort": 51,
+   "n": 8,
+   "type": "KF",
+   "case": "ก้อนจากเต้านม",
+   "items": [
+    {
+     "id": "8.1",
+     "prompt": "Gross pathology",
+     "format": "short",
+     "accepted": [
+      "ขอบชัดเจน",
+      "circumscribed",
+      "demarcated",
+      "สีขาว"
+     ],
+     "keywords_all": [
+      "ขอบชัดเจน",
+      "demarcated"
+     ],
+     "key_text": "ก้อนมีขอบชัดเจน หน้าตัดสีขาว เนื้อแข็ง",
+     "source_key": "เฉลย: ก้อนมีขอบชัดเจน หน้าตัดสีขาว เนื้อแข็ง",
+     "image": "img/NEO-51-KF-008.jpg",
+     "image_caption": "ก้อนเต้านม gross"
+    },
+    {
+     "id": "8.2",
+     "prompt": "วินิจฉัยจาก histology",
+     "format": "short",
+     "accepted": [
+      "fibroadenoma"
+     ],
+     "keywords_all": [
+      "fibroadenoma"
+     ],
+     "key_text": "Fibroadenoma (เนื้องอกมี 2 ชนิดเซลล์ คือ glandular epithelial cells และ stromal cells)",
+     "source_key": "เฉลย: Fibroadenoma (เนื้องอกมี 2 ชนิดเซลล์ คือ glandular epithelial cells และ stromal cells)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF51",
+     "pages": [
+      4
+     ]
+    },
+    {
+     "paper": "KF51-KEY",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [
+    "breast"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "NEO-51-KF-009",
+   "block": "NEO",
+   "cohort": 51,
+   "n": 9,
+   "type": "KF",
+   "case": "ก้อนที่เต้านม invasive ductal carcinoma",
+   "items": [
+    {
+     "id": "9.1",
+     "prompt": "บรรยาย gross",
+     "format": "short",
+     "accepted": [
+      "แข็ง",
+      "ขอบไม่ชัด",
+      "stellate"
+     ],
+     "keywords_all": [
+      "ขอบไม่ชัด"
+     ],
+     "key_text": "ก้อนแข็ง สีขาว ขอบไม่ชัด",
+     "source_key": "เฉลย: ก้อนแข็ง สีขาว ขอบไม่ชัด",
+     "image": "img/NEO-51-KF-009.jpg",
+     "image_caption": "Gross/histology เต้านม"
+    },
+    {
+     "id": "9.2",
+     "prompt": "บรรยาย histology (ภาษาอังกฤษ)",
+     "format": "short",
+     "accepted": [
+      "irregular nests",
+      "myoepithelial",
+      "pleomorphic",
+      "desmoplastic"
+     ],
+     "keywords_all": [
+      "myoepithelial"
+     ],
+     "key_text": "Cells arranged in irregular nests and cords · Pleomorphic nuclei with high mitotic activity · Loss of myoepithelial layer · Desmoplastic stroma with invasion into surrounding tissues",
+     "source_key": "เฉลย: Cells arranged in irregular nests and cords · Pleomorphic nuclei with high mitotic activity · Loss of myoepithelial layer · Desmoplastic stroma with invasion into surrounding tissues"
+    },
+    {
+     "id": "9.3",
+     "prompt": "วินิจฉัยโดยใช้ medical term",
+     "format": "short",
+     "accepted": [
+      "invasive ductal"
+     ],
+     "keywords_all": [
+      "invasive ductal"
+     ],
+     "key_text": "Invasive ductal carcinoma",
+     "source_key": "เฉลย: Invasive ductal carcinoma"
+    },
+    {
+     "id": "9.4",
+     "prompt": "ยีนที่ mutation ที่ทำให้เกิดโรค 2 ยีน",
+     "format": "short",
+     "accepted": [
+      "brca1",
+      "brca2"
+     ],
+     "keywords_all": [
+      "brca"
+     ],
+     "key_text": "BRCA1 · BRCA2 (เกี่ยวกับ DNA repair)",
+     "source_key": "เฉลย: BRCA1 · BRCA2 (เกี่ยวกับ DNA repair)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF51",
+     "pages": [
+      5
+     ]
+    },
+    {
+     "paper": "KF51-KEY",
+     "pages": [
+      5
+     ]
+    }
+   ],
+   "tags": [
+    "breast"
+   ],
+   "source": "claude-mcp"
+  }
+ ]
+}
