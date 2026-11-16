@@ -1,0 +1,737 @@
+{
+ "meta": {
+  "set_id": "50_KF",
+  "block": "HEMA",
+  "cohort": 50,
+  "type": "KF",
+  "title": "KF Hematopoietic · Med PSU 50",
+  "time_limit_min": 100,
+  "generated_by": "auditor/tools/build_kf.py from auditor/data/work/hema_50_KF.kf.json — do not edit by hand"
+ },
+ "questions": [
+  {
+   "id": "HEMA-50-KF-001",
+   "block": "HEMA",
+   "cohort": 50,
+   "n": 1,
+   "type": "KF",
+   "case": "เด็กหญิง 2 วัน ซีด ตัวเหลือง · แม่ few target cell, EA (A 76, A2 4.7, E 19), O Rh+ · พ่อ ovalocytosis with theta cell 2+, AA2 (A2 2.5), B Rh−",
+   "items": [
+    {
+     "id": "1.1",
+     "prompt": "ลูกมีโอกาสเป็นโรคใด (3 โรค)",
+     "format": "short",
+     "accepted": [
+      "hbe",
+      "hemolytic disease",
+      "ovalocytosis"
+     ],
+     "keywords_all": [
+      "hemolytic"
+     ],
+     "key_text": "HbE trait · Hemolytic disease of the fetus and newborn (ABO/Rh) · Southeast Asian ovalocytosis (SAO)",
+     "source_key": "เฉลย: HbE trait · Hemolytic disease of the fetus and newborn (ABO/Rh) · Southeast Asian ovalocytosis (SAO)"
+    },
+    {
+     "id": "1.2a",
+     "prompt": "HbE trait: วิธีตรวจและผลที่คาด",
+     "format": "short",
+     "accepted": [
+      "hb typing",
+      "hbe"
+     ],
+     "keywords_all": [
+      "hb typing"
+     ],
+     "key_text": "Hb typing (CE/HPLC) พบ HbE ~25% · Gap-PCR/DNA ไม่พบ deletion",
+     "source_key": "เฉลยลายมืออ่านยาก/ไม่ครบ — AI เติม"
+    },
+    {
+     "id": "1.2b",
+     "prompt": "HDFN: วิธีตรวจและผลที่คาด",
+     "format": "short",
+     "accepted": [
+      "direct coombs",
+      "bilirubin"
+     ],
+     "keywords_all": [
+      "coombs"
+     ],
+     "key_text": "Direct Coombs test positive · Bilirubin level สูง",
+     "source_key": "เฉลย: Direct Coombs test positive · Bilirubin level สูง"
+    },
+    {
+     "id": "1.2c",
+     "prompt": "SAO: วิธีตรวจและผลที่คาด",
+     "format": "short",
+     "accepted": [
+      "ovalocyte",
+      "theta",
+      "slc4a1"
+     ],
+     "keywords_all": [
+      "ovalocyte"
+     ],
+     "key_text": "Peripheral blood smear พบ ovalocyte with theta cell · Gap-PCR พบ SLC4A1 27-bp deletion",
+     "source_key": "เฉลย: Peripheral blood smear พบ ovalocyte with theta cell · Gap-PCR พบ SLC4A1 27-bp deletion"
+    },
+    {
+     "id": "1.3",
+     "prompt": "วิธีรักษา (1 อย่าง)",
+     "format": "short",
+     "accepted": [
+      "phototherapy"
+     ],
+     "keywords_all": [
+      "phototherapy"
+     ],
+     "key_text": "Phototherapy",
+     "source_key": "เฉลย: Phototherapy"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF50",
+     "pages": [
+      1
+     ]
+    },
+    {
+     "paper": "KF50-KEY",
+     "pages": [
+      1
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "HEMA-50-KF-002",
+   "block": "HEMA",
+   "cohort": 50,
+   "n": 2,
+   "type": "KF",
+   "case": "สามีภรรยา: พ่อ OF +, DCIP +, HbE 94%, A2 5%, F 1% · แม่ OF +, DCIP −, HbA 96%, A2 4%",
+   "items": [
+    {
+     "id": "2.1",
+     "prompt": "จาก screening test ลูกเสี่ยง thalassemia ชนิดรุนแรงใด",
+     "format": "short",
+     "accepted": [
+      "bart",
+      "β-thal",
+      "hbe"
+     ],
+     "keywords_all": [
+      "bart"
+     ],
+     "key_text": "Hb Bart hydrops fetalis และ β-thalassemia/HbE (โอกาส ~1/16 ตามลายมือ)",
+     "source_key": "เฉลยลายมืออ่านยาก/ไม่ครบ — AI เติม"
+    },
+    {
+     "id": "2.2",
+     "prompt": "จาก Hb typing ลูกเสี่ยง thalassemia ชนิดรุนแรงใด",
+     "format": "short",
+     "accepted": [
+      "β-thal",
+      "hbe"
+     ],
+     "keywords_all": [
+      "β-thal"
+     ],
+     "key_text": "Homozygous HbE (ไม่รุนแรง) และ β-thal/HbE (พ่อ HbE homozygote, แม่ β-thal trait A2 4%) → β-thalassemia/HbE 50%",
+     "source_key": "เฉลยลายมืออ่านยาก/ไม่ครบ — AI เติม"
+    },
+    {
+     "id": "2.3",
+     "prompt": "ส่งตรวจ thalassemia ด้วยวิธีใดเพิ่ม",
+     "format": "short",
+     "accepted": [
+      "pcr",
+      "dna"
+     ],
+     "keywords_all": [
+      "pcr"
+     ],
+     "key_text": "Gap-PCR / DNA analysis (α-thal และ β-thal mutation)",
+     "source_key": "เฉลย: Gap-PCR / DNA analysis (α-thal และ β-thal mutation)"
+    },
+    {
+     "id": "2.4",
+     "prompt": "ลูกมีโอกาสเป็น HbE trait กี่ %",
+     "format": "short",
+     "accepted": [
+      "100"
+     ],
+     "keywords_all": [
+      "100"
+     ],
+     "key_text": "100% (พ่อ HbE homozygote ส่ง βE ให้ลูกทุกคน)",
+     "source_key": "เฉลย: 100% (พ่อ HbE homozygote ส่ง βE ให้ลูกทุกคน)"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "KF50",
+     "pages": [
+      3
+     ]
+    },
+    {
+     "paper": "KF50-KEY",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "HEMA-50-KF-003",
+   "block": "HEMA",
+   "cohort": 50,
+   "n": 3,
+   "type": "KF",
+   "case": "หญิง 58 ปี CKD ล้างไตทางช่องท้อง อ่อนเพลีย ซีด Hb 9.2 · แพทย์สั่งยา 2 ชนิด",
+   "items": [
+    {
+     "id": "3.1",
+     "prompt": "ยา 2 ชนิด",
+     "format": "short",
+     "accepted": [
+      "darbepoetin",
+      "ferric carboxymaltose"
+     ],
+     "keywords_all": [
+      "darbepoetin"
+     ],
+     "key_text": "Darbepoetin alfa (ESA) และ Ferric carboxymaltose (IV iron)",
+     "source_key": "เฉลย: Darbepoetin alfa (ESA) และ Ferric carboxymaltose (IV iron)"
+    },
+    {
+     "id": "3.2",
+     "prompt": "เหตุผลที่สั่ง",
+     "format": "short",
+     "accepted": [
+      "epo",
+      "iron"
+     ],
+     "keywords_all": [
+      "epo"
+     ],
+     "key_text": "CKD ขาด EPO → anemia of CKD จึงให้ ESA กระตุ้น RBC production · ให้เหล็กเพื่อให้ ESA ได้ผล (functional/absolute iron deficiency)",
+     "source_key": "เฉลย: CKD ขาด EPO → anemia of CKD จึงให้ ESA กระตุ้น RBC production · ให้เหล็กเพื่อให้ ESA ได้ผล (functional/absolute iron deficiency)"
+    },
+    {
+     "id": "3.3",
+     "prompt": "MOA ของยาทั้งสอง",
+     "format": "short",
+     "accepted": [
+      "erythroid",
+      "iron"
+     ],
+     "keywords_all": [
+      "erythroid"
+     ],
+     "key_text": "Darbepoetin: recombinant erythropoietin กระตุ้น erythroid precursor (half-life ยาวกว่า EPO) · Ferric carboxymaltose: IV iron ให้เหล็กสำหรับ hemoglobin synthesis",
+     "source_key": "เฉลย: Darbepoetin: recombinant erythropoietin กระตุ้น erythroid precursor (half-life ยาวกว่า EPO) · Ferric carboxymaltose: IV iron ให้เหล็กสำหรับ hemoglobin synthesis"
+    },
+    {
+     "id": "3.4",
+     "prompt": "ผลข้างเคียงและข้อควรระวัง",
+     "format": "short",
+     "accepted": [
+      "pure red cell aplasia",
+      "hypertension",
+      "anaphylaxis"
+     ],
+     "keywords_all": [
+      "anaphylaxis"
+     ],
+     "key_text": "Darbepoetin: pure red cell aplasia, hypertension, SJS · Ferric carboxymaltose: anaphylaxis, iron overload, hypertension",
+     "source_key": "เฉลย: Darbepoetin: pure red cell aplasia, hypertension, SJS · Ferric carboxymaltose: anaphylaxis, iron overload, hypertension"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF50",
+     "pages": [
+      3
+     ]
+    },
+    {
+     "paper": "KF50-KEY",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "HEMA-50-KF-004",
+   "block": "HEMA",
+   "cohort": 50,
+   "n": 4,
+   "type": "KF",
+   "case": "เด็กชาย 1 ปี จ้ำเขียวหน้าแข้งเอง 3 เดือน ไม่มีไข้ · ecchymosis 3–4 cm · Hb 12 WBC 7,000 plt 350,000 aPTT 70 PT 11",
+   "items": [
+    {
+     "id": "4.1",
+     "prompt": "วินิจฉัย",
+     "format": "short",
+     "accepted": [
+      "hemophilia"
+     ],
+     "keywords_all": [
+      "hemophilia"
+     ],
+     "key_text": "Hemophilia A (aPTT ยาว PT ปกติ plt ปกติ)",
+     "source_key": "เฉลย: Hemophilia A (aPTT ยาว PT ปกติ plt ปกติ)"
+    },
+    {
+     "id": "4.2",
+     "prompt": "ซักประวัติเพิ่ม 3 ข้อ",
+     "format": "short",
+     "accepted": [
+      "ครอบครัว",
+      "เลือดออก"
+     ],
+     "keywords_all": [
+      "ครอบครัว"
+     ],
+     "key_text": "ประวัติคนในครอบครัวเลือดออกผิดปกติ · ประวัติเลือดออกหลังหัตถการ/ข้อบวม · ประวัติการใช้ยา/ตั้งครรภ์/คลอด",
+     "source_key": "เฉลย: ประวัติคนในครอบครัวเลือดออกผิดปกติ · ประวัติเลือดออกหลังหัตถการ/ข้อบวม · ประวัติการใช้ยา/ตั้งครรภ์/คลอด"
+    },
+    {
+     "id": "4.3",
+     "prompt": "วิธีตรวจยืนยัน 2 วิธี",
+     "format": "short",
+     "accepted": [
+      "factor viii",
+      "mixing"
+     ],
+     "keywords_all": [
+      "mixing"
+     ],
+     "key_text": "Factor VIII (และ IX) activity assay · Mixing study (แก้ด้วย normal plasma)",
+     "source_key": "เฉลย: Factor VIII (และ IX) activity assay · Mixing study (แก้ด้วย normal plasma)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF50",
+     "pages": [
+      4
+     ]
+    },
+    {
+     "paper": "KF50-KEY",
+     "pages": [
+      4
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "HEMA-50-KF-005",
+   "block": "HEMA",
+   "cohort": 50,
+   "n": 5,
+   "type": "KF",
+   "case": "Acquired platelet dysfunction with eosinophilia (APDE) ดู blood smear · CBC eosinophil สูง",
+   "items": [
+    {
+     "id": "5.1",
+     "prompt": "ส่งตรวจอะไรเพิ่ม",
+     "format": "short",
+     "accepted": [
+      "stool"
+     ],
+     "keywords_all": [
+      "stool"
+     ],
+     "key_text": "Stool examination (หา parasite)",
+     "source_key": "เฉลย: Stool examination (หา parasite)"
+    },
+    {
+     "id": "5.2",
+     "prompt": "การรักษา",
+     "format": "short",
+     "accepted": [
+      "albendazole",
+      "ivermectin"
+     ],
+     "keywords_all": [
+      "albendazole"
+     ],
+     "key_text": "ยาถ่ายพยาธิ เช่น Albendazole / Ivermectin",
+     "source_key": "เฉลย: ยาถ่ายพยาธิ เช่น Albendazole / Ivermectin"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF50",
+     "pages": [
+      5
+     ]
+    },
+    {
+     "paper": "KF50-KEY",
+     "pages": [
+      5
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "HEMA-50-KF-006",
+   "block": "HEMA",
+   "cohort": 50,
+   "n": 6,
+   "type": "KF",
+   "case": "ลิ่มเลือดอุดตันที่ขา",
+   "items": [
+    {
+     "id": "6.1",
+     "prompt": "ยา 2 ชนิดที่ MOA ต่างกัน",
+     "format": "short",
+     "accepted": [
+      "enoxaparin",
+      "warfarin"
+     ],
+     "keywords_all": [
+      "warfarin"
+     ],
+     "key_text": "Enoxaparin (LMWH) และ Warfarin",
+     "source_key": "เฉลย: Enoxaparin (LMWH) และ Warfarin"
+    },
+    {
+     "id": "6.2",
+     "prompt": "กลไกการออกฤทธิ์",
+     "format": "short",
+     "accepted": [
+      "antithrombin",
+      "xa",
+      "vitamin k"
+     ],
+     "keywords_all": [
+      "vitamin k"
+     ],
+     "key_text": "Enoxaparin: จับ antithrombin ยับยั้ง factor Xa (และ IIa เล็กน้อย) · Warfarin: ยับยั้ง vitamin K epoxide reductase → ลด factor II, VII, IX, X",
+     "source_key": "เฉลย: Enoxaparin: จับ antithrombin ยับยั้ง factor Xa (และ IIa เล็กน้อย) · Warfarin: ยับยั้ง vitamin K epoxide reductase → ลด factor II, VII, IX, X"
+    },
+    {
+     "id": "6.3",
+     "prompt": "Antidote และกลไก",
+     "format": "short",
+     "accepted": [
+      "protamine",
+      "vitamin k"
+     ],
+     "keywords_all": [
+      "protamine"
+     ],
+     "key_text": "Enoxaparin: Protamine sulfate (จับ heparin เป็น complex ลดฤทธิ์ anticoagulant) · Warfarin: Vitamin K (ทดแทน/ฟื้นการสร้าง factor II, VII, IX, X)",
+     "source_key": "เฉลย: Enoxaparin: Protamine sulfate (จับ heparin เป็น complex ลดฤทธิ์ anticoagulant) · Warfarin: Vitamin K (ทดแทน/ฟื้นการสร้าง factor II, VII, IX, X)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF50",
+     "pages": [
+      5
+     ]
+    },
+    {
+     "paper": "KF50-KEY",
+     "pages": [
+      5
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "HEMA-50-KF-007",
+   "block": "HEMA",
+   "cohort": 50,
+   "n": 7,
+   "type": "KF",
+   "case": "Peripheral blood smear ของ Leukemoid reaction",
+   "items": [
+    {
+     "id": "7.1",
+     "prompt": "Cause และ pathophysiology",
+     "format": "short",
+     "accepted": [
+      "infection",
+      "g-csf",
+      "cytokine"
+     ],
+     "keywords_all": [
+      "cytokine"
+     ],
+     "key_text": "Severe infection, inflammation, malignancy → cytokine (G-CSF, IL-6) → ไขกระดูกผลิต WBC เพิ่ม ปล่อย immature cell",
+     "source_key": "เฉลย: Severe infection, inflammation, malignancy → cytokine (G-CSF, IL-6) → ไขกระดูกผลิต WBC เพิ่ม ปล่อย immature cell"
+    },
+    {
+     "id": "7.2",
+     "prompt": "Lab confirmation",
+     "format": "short",
+     "accepted": [
+      "lap",
+      "bcr-abl"
+     ],
+     "keywords_all": [
+      "lap"
+     ],
+     "key_text": "LAP score สูง · BCR-ABL negative (แยกจาก CML)",
+     "source_key": "เฉลย: LAP score สูง · BCR-ABL negative (แยกจาก CML)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF50",
+     "pages": [
+      6
+     ]
+    },
+    {
+     "paper": "KF50-KEY",
+     "pages": [
+      6
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "HEMA-50-KF-008",
+   "block": "HEMA",
+   "cohort": 50,
+   "n": 8,
+   "type": "KF",
+   "case": "อาการ AML + peripheral blood smear AML",
+   "items": [
+    {
+     "id": "8.1",
+     "prompt": "Diagnosis",
+     "format": "short",
+     "accepted": [
+      "aml",
+      "acute myeloid"
+     ],
+     "keywords_all": [
+      "aml"
+     ],
+     "key_text": "Acute myeloid leukemia (AML)",
+     "source_key": "เฉลย: Acute myeloid leukemia (AML)"
+    },
+    {
+     "id": "8.2",
+     "prompt": "Lab confirmation",
+     "format": "short",
+     "accepted": [
+      "bone marrow",
+      "flow cytometry"
+     ],
+     "keywords_all": [
+      "bone marrow"
+     ],
+     "key_text": "Bone marrow biopsy/aspiration (blast ≥20%) · Flow cytometry · Genetic & molecular study",
+     "source_key": "เฉลย: Bone marrow biopsy/aspiration (blast ≥20%) · Flow cytometry · Genetic & molecular study"
+    },
+    {
+     "id": "8.3",
+     "prompt": "ทำไมมี anemia และ thrombocytopenia",
+     "format": "short",
+     "accepted": [
+      "bone marrow failure",
+      "blast"
+     ],
+     "keywords_all": [
+      "bone marrow"
+     ],
+     "key_text": "Bone marrow failure: blast แทนที่เซลล์ปกติ → erythropoiesis ↓ → anemia · megakaryopoiesis ↓ → thrombocytopenia",
+     "source_key": "เฉลย: Bone marrow failure: blast แทนที่เซลล์ปกติ → erythropoiesis ↓ → anemia · megakaryopoiesis ↓ → thrombocytopenia"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF50",
+     "pages": [
+      6
+     ]
+    },
+    {
+     "paper": "KF50-KEY",
+     "pages": [
+      6
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "HEMA-50-KF-009",
+   "block": "HEMA",
+   "cohort": 50,
+   "n": 9,
+   "type": "KF",
+   "case": "หญิง 18 ปี ซีด 3 เดือน เพลีย · aplastic anemia วางแผน BMT · Hct 18 Hb 6 WBC 3,500 plt 54,000 · aPTT 35 PT 13",
+   "items": [
+    {
+     "id": "9.1",
+     "prompt": "ต้องให้ red cell ไหม เหตุผล และชนิด",
+     "format": "short",
+     "accepted": [
+      "irradiated",
+      "leukoreduced",
+      "hb"
+     ],
+     "keywords_all": [
+      "irradiated"
+     ],
+     "key_text": "ต้องให้ เพราะ Hb 6 มีอาการ · ให้ irradiated leukoreduced PRC เพราะจะรับ BMT (ป้องกัน TA-GVHD, HLA alloimmunization)",
+     "source_key": "เฉลยลายมืออ่านยาก/ไม่ครบ — AI เติม"
+    },
+    {
+     "id": "9.2",
+     "prompt": "ต้องให้ platelet ไหม เหตุผล",
+     "format": "short",
+     "accepted": [
+      "ไม่ต้อง",
+      "bleeding"
+     ],
+     "keywords_all": [
+      "ไม่ต้อง"
+     ],
+     "key_text": "ไม่ต้องให้ เพราะ plt 54,000 ไม่มี bleeding (ให้เมื่อ <10,000 หรือมี bleeding) ถ้าให้ใช้ irradiated leukoreduced",
+     "source_key": "เฉลยลายมืออ่านยาก/ไม่ครบ — AI เติม"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "KF50",
+     "pages": [
+      7
+     ]
+    },
+    {
+     "paper": "KF50-KEY",
+     "pages": [
+      7
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "HEMA-50-KF-010",
+   "block": "HEMA",
+   "cohort": 50,
+   "n": 10,
+   "type": "KF",
+   "case": "Female thrombocytopenia ได้ platelet concentrate 6 units แล้วผื่น หายใจหอบ · T 37, BP 120/70, PR 125, RR 25, SpO₂ 88%, wheezing, generalized urticaria",
+   "items": [
+    {
+     "id": "10.1",
+     "prompt": "Diagnosis",
+     "format": "short",
+     "accepted": [
+      "allergic",
+      "anaphylactic"
+     ],
+     "keywords_all": [
+      "allergic"
+     ],
+     "key_text": "Acute allergic (anaphylactic) transfusion reaction",
+     "source_key": "เฉลย: Acute allergic (anaphylactic) transfusion reaction"
+    },
+    {
+     "id": "10.2",
+     "prompt": "อาการทางคลินิกที่สนับสนุน",
+     "format": "short",
+     "accepted": [
+      "wheezing",
+      "urticaria",
+      "tachycardia"
+     ],
+     "keywords_all": [
+      "urticaria"
+     ],
+     "key_text": "Respiratory distress (wheezing, SOB, SpO₂ ต่ำ) · Tachycardia · Generalized urticaria",
+     "source_key": "เฉลย: Respiratory distress (wheezing, SOB, SpO₂ ต่ำ) · Tachycardia · Generalized urticaria"
+    },
+    {
+     "id": "10.3",
+     "prompt": "กลไกการเกิด",
+     "format": "short",
+     "accepted": [
+      "ige",
+      "mast cell",
+      "histamine"
+     ],
+     "keywords_all": [
+      "ige"
+     ],
+     "key_text": "IgE-mediated hypersensitivity ต่อ plasma protein ของ donor → mast cell degranulation (histamine, leukotriene) → vasodilation, bronchoconstriction, vascular permeability ↑",
+     "source_key": "เฉลย: IgE-mediated hypersensitivity ต่อ plasma protein ของ donor → mast cell degranulation (histamine, leukotriene) → vasodilation, bronchoconstriction, vascular permeability ↑"
+    },
+    {
+     "id": "10.4",
+     "prompt": "รักษาเบื้องต้น 3 วิธี",
+     "format": "short",
+     "accepted": [
+      "diphenhydramine",
+      "albuterol",
+      "methylprednisolone"
+     ],
+     "keywords_all": [
+      "diphenhydramine"
+     ],
+     "key_text": "หยุดการให้เลือด · Diphenhydramine IV/IM · Albuterol · Methylprednisolone (epinephrine ถ้า anaphylaxis)",
+     "source_key": "เฉลย: หยุดการให้เลือด · Diphenhydramine IV/IM · Albuterol · Methylprednisolone (epinephrine ถ้า anaphylaxis)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF50",
+     "pages": [
+      8
+     ]
+    },
+    {
+     "paper": "KF50-KEY",
+     "pages": [
+      8
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "claude-mcp"
+  }
+ ]
+}

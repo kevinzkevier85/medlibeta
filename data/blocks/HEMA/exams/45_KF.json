@@ -1,0 +1,998 @@
+{
+ "meta": {
+  "set_id": "45_KF",
+  "block": "HEMA",
+  "cohort": 45,
+  "type": "KF",
+  "title": "KF Hematopoietic · Med PSU 45",
+  "time_limit_min": 120,
+  "generated_by": "auditor/tools/build_kf.py from auditor/data/work/hema_45_KF.kf.json — do not edit by hand"
+ },
+ "questions": [
+  {
+   "id": "HEMA-45-KF-001",
+   "block": "HEMA",
+   "cohort": 45,
+   "n": 1,
+   "type": "KF",
+   "case": "จงตอบคำถามเกี่ยวกับ bruise color, methemoglobin, G6PD",
+   "items": [
+    {
+     "id": "1.1a",
+     "prompt": "Stage 1 (pink/red) ของสีรอยช้ำ คือสารใด",
+     "format": "short",
+     "accepted": [
+      "oxyhemoglobin"
+     ],
+     "keywords_all": [
+      "oxyhemoglobin"
+     ],
+     "key_text": "Oxyhemoglobin",
+     "source_key": "เฉลย: Oxyhemoglobin"
+    },
+    {
+     "id": "1.1b",
+     "prompt": "Stage 2 (purple)",
+     "format": "short",
+     "accepted": [
+      "deoxyhemoglobin"
+     ],
+     "keywords_all": [
+      "deoxy"
+     ],
+     "key_text": "Deoxyhemoglobin",
+     "source_key": "เฉลย: Deoxyhemoglobin"
+    },
+    {
+     "id": "1.1c",
+     "prompt": "Stage 3 (pale green)",
+     "format": "short",
+     "accepted": [
+      "biliverdin"
+     ],
+     "keywords_all": [
+      "biliverdin"
+     ],
+     "key_text": "Biliverdin",
+     "source_key": "เฉลย: Biliverdin"
+    },
+    {
+     "id": "1.1d",
+     "prompt": "Stage 4 (yellow)",
+     "format": "short",
+     "accepted": [
+      "bilirubin"
+     ],
+     "keywords_all": [
+      "bilirubin"
+     ],
+     "key_text": "Bilirubin",
+     "source_key": "เฉลย: Bilirubin"
+    },
+    {
+     "id": "1.1e",
+     "prompt": "Protein ที่นำสาร stage 4 ไปยังตับ",
+     "format": "short",
+     "accepted": [
+      "albumin"
+     ],
+     "keywords_all": [
+      "albumin"
+     ],
+     "key_text": "Albumin",
+     "source_key": "เฉลย: Albumin"
+    },
+    {
+     "id": "1.2a",
+     "prompt": "สาเหตุ inherited methemoglobin 1 อย่าง",
+     "format": "short",
+     "accepted": [
+      "reductase",
+      "hbm"
+     ],
+     "keywords_all": [
+      "reductase"
+     ],
+     "key_text": "Methemoglobin reductase deficiency (NADH-cytochrome b5 reductase) หรือ abnormal Hb (HbM)",
+     "source_key": "เฉลย: Methemoglobin reductase deficiency (NADH-cytochrome b5 reductase) หรือ abnormal Hb (HbM)"
+    },
+    {
+     "id": "1.2b",
+     "prompt": "สาเหตุ acquired methemoglobin 1 อย่าง",
+     "format": "short",
+     "accepted": [
+      "sulfonamide",
+      "nitrate",
+      "aniline"
+     ],
+     "keywords_all": [
+      "nitrate"
+     ],
+     "key_text": "ยา/สารเคมี เช่น sulfonamide, nitrate, aniline",
+     "source_key": "เฉลย: ยา/สารเคมี เช่น sulfonamide, nitrate, aniline"
+    },
+    {
+     "id": "1.3",
+     "prompt": "ตะกอนใน blood smear ย้อมพิเศษของ G6PD deficiency คืออะไร เกิดอย่างไร",
+     "format": "short",
+     "accepted": [
+      "heinz",
+      "nadph",
+      "gsh"
+     ],
+     "keywords_all": [
+      "heinz"
+     ],
+     "key_text": "Heinz body = inclusion body ของ denatured Hb · G6PD ขาด → NADPH ↓ → GSH ↓ → neutralize oxidant ไม่ได้ → SH group ของ Hb ถูก oxidize → globin denature ตกตะกอน",
+     "source_key": "เฉลย: Heinz body = inclusion body ของ denatured Hb · G6PD ขาด → NADPH ↓ → GSH ↓ → neutralize oxidant ไม่ได้ → SH group ของ Hb ถูก oxidize → globin denature ตกตะกอน",
+     "image": "img/HEMA-45-KF-001.jpg",
+     "image_caption": "Blood smear ย้อมพิเศษ G6PD deficiency"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF45",
+     "pages": [
+      1
+     ]
+    },
+    {
+     "paper": "KF45-KEY",
+     "pages": [
+      1
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "HEMA-45-KF-002",
+   "block": "HEMA",
+   "cohort": 45,
+   "n": 2,
+   "type": "KF",
+   "case": "เด็ก 12 ปี ไข้ เจ็บคอ ไอแห้ง 3 วัน ซีดเหลือง ปัสสาวะเข้ม 1 วัน · OF +, DCIP weak + · Hb ต่ำ bilirubin สูง retic 6% inclusion body + · Hb typing A A2 Bart H (Bart 2.8, H 2.9, A2 1.3%)",
+   "items": [
+    {
+     "id": "2.1",
+     "prompt": "Acute hemolysis เกิดจากปัจจัยและกลไกใด",
+     "format": "short",
+     "accepted": [
+      "oxidative",
+      "unstable"
+     ],
+     "keywords_all": [
+      "oxidative"
+     ],
+     "key_text": "HbH disease: ไข้/ติดเชื้อ → oxidative stress → unstable Hb ตกตะกอนและแตกง่าย → hemolytic crisis",
+     "source_key": "เฉลย: HbH disease: ไข้/ติดเชื้อ → oxidative stress → unstable Hb ตกตะกอนและแตกง่าย → hemolytic crisis"
+    },
+    {
+     "id": "2.2",
+     "prompt": "ทำไม DCIP weakly positive",
+     "format": "short",
+     "accepted": [
+      "unstable",
+      "น้อย"
+     ],
+     "keywords_all": [
+      "น้อย"
+     ],
+     "key_text": "HbH disease สร้าง unstable Hb ปริมาณน้อย จึงเห็นตะกอนขุ่นไม่ชัดเหมือน HbE",
+     "source_key": "เฉลย: HbH disease สร้าง unstable Hb ปริมาณน้อย จึงเห็นตะกอนขุ่นไม่ชัดเหมือน HbE"
+    },
+    {
+     "id": "2.3",
+     "prompt": "Genotype ของผู้ป่วย",
+     "format": "short",
+     "accepted": [
+      "--/-α",
+      "hbh"
+     ],
+     "keywords_all": [
+      "--/-α"
+     ],
+     "key_text": "--/-α (α⁰-thal + α⁺-thal deletion) HbH disease",
+     "source_key": "เฉลย: --/-α (α⁰-thal + α⁺-thal deletion) HbH disease"
+    },
+    {
+     "id": "2.4",
+     "prompt": "ส่งตรวจทางโมเลกุลอะไรเพิ่ม",
+     "format": "short",
+     "accepted": [
+      "gap",
+      "pcr"
+     ],
+     "keywords_all": [
+      "gap"
+     ],
+     "key_text": "Gap-PCR หา gene deletion (SEA, α3.7, α4.2)",
+     "source_key": "เฉลย: Gap-PCR หา gene deletion (SEA, α3.7, α4.2)"
+    },
+    {
+     "id": "2.5",
+     "prompt": "ถ้าแต่งงานกับหญิง β-thal trait ลูกจะมี phenotype ใดและโอกาสเท่าใด",
+     "format": "short",
+     "accepted": [
+      "25%",
+      "trait"
+     ],
+     "keywords_all": [
+      "25%"
+     ],
+     "key_text": "HbH disease × β-thal trait: ลูกได้ α-thal และ β-thal ผสม — ตามเฉลยลายมือ (ไม่ครบ): ปกติ/ trait ประมาณ 25% ต่อกลุ่ม",
+     "source_key": "เฉลยไม่ครบ/อ่านยาก — AI เติม"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "KF45",
+     "pages": [
+      2
+     ]
+    },
+    {
+     "paper": "KF45-KEY",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "HEMA-45-KF-003",
+   "block": "HEMA",
+   "cohort": 45,
+   "n": 3,
+   "type": "KF",
+   "case": "เด็กหญิง 2 วัน ซีดเหลือง · แม่ ovalocytosis with theta cell 2+, AA2 (A2 2%), O Rh+ · พ่อ few target cell, EA (E 20%), A Rh−",
+   "items": [
+    {
+     "id": "3.1",
+     "prompt": "ลูกมีโอกาสเป็นโรคอะไร (3 โรค)",
+     "format": "short",
+     "accepted": [
+      "hbe",
+      "ovalocytosis",
+      "abo"
+     ],
+     "keywords_all": [
+      "abo"
+     ],
+     "key_text": "HbE trait · Southeast Asian ovalocytosis (SAO) · ABO hemolytic disease of newborn (HDN)",
+     "source_key": "เฉลย: HbE trait · Southeast Asian ovalocytosis (SAO) · ABO hemolytic disease of newborn (HDN)"
+    },
+    {
+     "id": "3.2",
+     "prompt": "การวินิจฉัยยืนยัน HbE trait (2 วิธี)",
+     "format": "short",
+     "accepted": [
+      "hb typing"
+     ],
+     "keywords_all": [
+      "hb typing"
+     ],
+     "key_text": "Hb typing พบ HbE · (DNA analysis)",
+     "source_key": "เฉลย: Hb typing พบ HbE · (DNA analysis)"
+    },
+    {
+     "id": "3.3",
+     "prompt": "การวินิจฉัยยืนยัน SAO (2 วิธี)",
+     "format": "short",
+     "accepted": [
+      "ovalocytosis",
+      "27",
+      "slc4a1"
+     ],
+     "keywords_all": [
+      "ovalocytosis"
+     ],
+     "key_text": "Peripheral blood smear พบ ovalocytosis with theta cell · Gap-PCR/DNA พบ 27-nucleotide deletion ใน SLC4A1 (band 3)",
+     "source_key": "เฉลย: Peripheral blood smear พบ ovalocytosis with theta cell · Gap-PCR/DNA พบ 27-nucleotide deletion ใน SLC4A1 (band 3)"
+    },
+    {
+     "id": "3.4",
+     "prompt": "การวินิจฉัยยืนยัน ABO HDN (2 วิธี)",
+     "format": "short",
+     "accepted": [
+      "coombs",
+      "group a"
+     ],
+     "keywords_all": [
+      "coombs"
+     ],
+     "key_text": "Direct Coombs test + · Blood group ของลูก (group A) · (Indirect Coombs +)",
+     "source_key": "เฉลย: Direct Coombs test + · Blood group ของลูก (group A) · (Indirect Coombs +)"
+    },
+    {
+     "id": "3.5",
+     "prompt": "วิธีรักษา (1 อย่าง)",
+     "format": "short",
+     "accepted": [
+      "phototherapy"
+     ],
+     "keywords_all": [
+      "phototherapy"
+     ],
+     "key_text": "Phototherapy เปลี่ยน unconjugated bilirubin เป็น conjugated รักษา neonatal jaundice",
+     "source_key": "เฉลย: Phototherapy เปลี่ยน unconjugated bilirubin เป็น conjugated รักษา neonatal jaundice"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF45",
+     "pages": [
+      3
+     ]
+    },
+    {
+     "paper": "KF45-KEY",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "HEMA-45-KF-004",
+   "block": "HEMA",
+   "cohort": 45,
+   "n": 4,
+   "type": "KF",
+   "case": "ชาย 60 ปี ลำไส้อุดตัน พบก้อนลำไส้ด้านขวา 3 cm · ชิ้นเนื้อ anaplasia สร้าง mucin มาก ลุกลามเนื้อเยื่อข้างเคียง",
+   "items": [
+    {
+     "id": "4.1",
+     "prompt": "วินิจฉัย",
+     "format": "short",
+     "accepted": [
+      "adenocarcinoma",
+      "colorectal"
+     ],
+     "keywords_all": [
+      "adenocarcinoma"
+     ],
+     "key_text": "Adenocarcinoma of colon (colorectal cancer)",
+     "source_key": "เฉลย: Adenocarcinoma of colon (colorectal cancer)"
+    },
+    {
+     "id": "4.2",
+     "prompt": "Precancerous lesion ที่อาจพบ",
+     "format": "short",
+     "accepted": [
+      "ulcerative colitis",
+      "adenoma"
+     ],
+     "keywords_all": [
+      "ulcerative"
+     ],
+     "key_text": "Ulcerative colitis (และ adenomatous polyp)",
+     "source_key": "เฉลย: Ulcerative colitis (และ adenomatous polyp)"
+    },
+    {
+     "id": "4.3",
+     "prompt": "กลไกการเกิด 2 ข้อ",
+     "format": "short",
+     "accepted": [
+      "apc",
+      "microsatellite"
+     ],
+     "keywords_all": [
+      "microsatellite"
+     ],
+     "key_text": "Multistep carcinogenesis (APC, p53, KRAS, SMAD2/4 ร่วมกับ telomerase) · Microsatellite instability (DNA mismatch repair gene: hMSH2, MSH6, hPMS2, hMLH1)",
+     "source_key": "เฉลย: Multistep carcinogenesis (APC, p53, KRAS, SMAD2/4 ร่วมกับ telomerase) · Microsatellite instability (DNA mismatch repair gene: hMSH2, MSH6, hPMS2, hMLH1)"
+    },
+    {
+     "id": "4.4",
+     "prompt": "ลักษณะ histology ที่ใช้ดู differentiation",
+     "format": "short",
+     "accepted": [
+      "gland",
+      "mucin"
+     ],
+     "keywords_all": [
+      "gland"
+     ],
+     "key_text": "Cancer cell จัดเรียงเป็น gland (เบียดซ้อนไม่เป็นระเบียบ ทะลุ muscularis mucosa) สร้าง mucin อาจพบ signet ring cell · well/poorly differentiated",
+     "source_key": "เฉลย: Cancer cell จัดเรียงเป็น gland (เบียดซ้อนไม่เป็นระเบียบ ทะลุ muscularis mucosa) สร้าง mucin อาจพบ signet ring cell · well/poorly differentiated"
+    },
+    {
+     "id": "4.5",
+     "prompt": "ลักษณะ anaplasia 4 อย่าง",
+     "format": "short",
+     "accepted": [
+      "pleomorphism",
+      "mitoses",
+      "polarity"
+     ],
+     "keywords_all": [
+      "pleomorphism"
+     ],
+     "key_text": "Pleomorphism · Abnormal nuclear morphology (N:C สูง nucleoli ใหญ่ chromatin ผิดปกติ) · Mitoses · Loss of polarity",
+     "source_key": "เฉลย: Pleomorphism · Abnormal nuclear morphology (N:C สูง nucleoli ใหญ่ chromatin ผิดปกติ) · Mitoses · Loss of polarity"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF45",
+     "pages": [
+      4
+     ]
+    },
+    {
+     "paper": "KF45-KEY",
+     "pages": [
+      4
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "HEMA-45-KF-005",
+   "block": "HEMA",
+   "cohort": 45,
+   "n": 5,
+   "type": "KF",
+   "case": "เด็กชายอาเจียน ทาน ferrous sulfate 15 เม็ดก่อนมา รพ.",
+   "items": [
+    {
+     "id": "5.1",
+     "prompt": "กลไก toxic จากเหล็ก",
+     "format": "short",
+     "accepted": [
+      "corrosive",
+      "mitochondrial"
+     ],
+     "keywords_all": [
+      "corrosive"
+     ],
+     "key_text": "Direct corrosive effect ต่อ GI mucosa · Cellular toxicity: free iron → impaired oxidative phosphorylation, mitochondrial dysfunction, cell death",
+     "source_key": "เฉลย: Direct corrosive effect ต่อ GI mucosa · Cellular toxicity: free iron → impaired oxidative phosphorylation, mitochondrial dysfunction, cell death"
+    },
+    {
+     "id": "5.2",
+     "prompt": "อาการภาวะเหล็กเกิน 4 อย่าง",
+     "format": "short",
+     "accepted": [
+      "gi",
+      "acidosis",
+      "coma"
+     ],
+     "keywords_all": [
+      "acidosis"
+     ],
+     "key_text": "GI (N/V/D, hematemesis, erosion) · CVS (hypotension, palpitation) · Metabolic acidosis · CNS (lethargy, coma)",
+     "source_key": "เฉลย: GI (N/V/D, hematemesis, erosion) · CVS (hypotension, palpitation) · Metabolic acidosis · CNS (lethargy, coma)"
+    },
+    {
+     "id": "5.3",
+     "prompt": "Antidote และกลไก",
+     "format": "short",
+     "accepted": [
+      "deferoxamine",
+      "chelate"
+     ],
+     "keywords_all": [
+      "deferoxamine"
+     ],
+     "key_text": "Deferoxamine — chelate iron ใน ferritin/hemosiderin และ free iron",
+     "source_key": "เฉลย: Deferoxamine — chelate iron ใน ferritin/hemosiderin และ free iron"
+    },
+    {
+     "id": "5.4",
+     "prompt": "ผลข้างเคียงของ deferoxamine 2 อย่าง",
+     "format": "short",
+     "accepted": [
+      "hypotension",
+      "hearing",
+      "renal"
+     ],
+     "keywords_all": [
+      "hypotension"
+     ],
+     "key_text": "Hypotension, allergic reaction, renal impairment, hearing loss, ปัสสาวะสีแดง (vin rosé)",
+     "source_key": "เฉลย: Hypotension, allergic reaction, renal impairment, hearing loss, ปัสสาวะสีแดง (vin rosé)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF45",
+     "pages": [
+      5
+     ]
+    },
+    {
+     "paper": "KF45-KEY",
+     "pages": [
+      5
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "HEMA-45-KF-006",
+   "block": "HEMA",
+   "cohort": 45,
+   "n": 6,
+   "type": "KF",
+   "case": "หญิงไทย 30 ปี ประจำเดือนมากกว่าปกติ 2 เดือน จ้ำเลือด · ecchymosis, petechiae · Hb 13, WBC 8,000, plt 20,000",
+   "items": [
+    {
+     "id": "6.1",
+     "prompt": "วินิจฉัย",
+     "format": "short",
+     "accepted": [
+      "itp",
+      "immune thrombocytopenia"
+     ],
+     "keywords_all": [
+      "itp"
+     ],
+     "key_text": "Immune thrombocytopenia (ITP) — mucocutaneous bleeding + platelet ต่ำ",
+     "source_key": "เฉลย: Immune thrombocytopenia (ITP) — mucocutaneous bleeding + platelet ต่ำ"
+    },
+    {
+     "id": "6.2",
+     "prompt": "กลไกการเกิด 3 ข้อ",
+     "format": "short",
+     "accepted": [
+      "igg",
+      "impaired",
+      "cytotoxic"
+     ],
+     "keywords_all": [
+      "igg"
+     ],
+     "key_text": "IgG-mediated platelet destruction ที่ RE system · Impaired platelet production (megakaryocyte) · Cytotoxic T cell-mediated platelet destruction",
+     "source_key": "เฉลย: IgG-mediated platelet destruction ที่ RE system · Impaired platelet production (megakaryocyte) · Cytotoxic T cell-mediated platelet destruction"
+    },
+    {
+     "id": "6.3",
+     "prompt": "ส่งตรวจเพิ่มเพื่อหาสาเหตุ 2 ข้อ",
+     "format": "short",
+     "accepted": [
+      "bone marrow",
+      "exclude"
+     ],
+     "keywords_all": [
+      "bone marrow"
+     ],
+     "key_text": "Bone marrow aspiration พบ normal megakaryocytic series · Exclude other causes of thrombocytopenia",
+     "source_key": "เฉลย: Bone marrow aspiration พบ normal megakaryocytic series · Exclude other causes of thrombocytopenia"
+    },
+    {
+     "id": "6.4",
+     "prompt": "รักษา 1 ข้อ",
+     "format": "short",
+     "accepted": [
+      "corticosteroid",
+      "ivig",
+      "anti-d"
+     ],
+     "keywords_all": [
+      "corticosteroid"
+     ],
+     "key_text": "Corticosteroids / IVIG / Anti-D (ให้ escape immune ไปทำลาย RBC แทน)",
+     "source_key": "เฉลย: Corticosteroids / IVIG / Anti-D (ให้ escape immune ไปทำลาย RBC แทน)"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF45",
+     "pages": [
+      6
+     ]
+    },
+    {
+     "paper": "KF45-KEY",
+     "pages": [
+      6
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "HEMA-45-KF-007",
+   "block": "HEMA",
+   "cohort": 45,
+   "n": 7,
+   "type": "KF",
+   "case": "โรค coronary artery disease ได้ aspirin 81 mg",
+   "items": [
+    {
+     "id": "7.1",
+     "prompt": "Aspirin กลุ่มยาและกลไก",
+     "format": "short",
+     "accepted": [
+      "cox",
+      "txa2"
+     ],
+     "keywords_all": [
+      "cox"
+     ],
+     "key_text": "Antiplatelet · irreversible COX-1/COX-2 inhibitor → TXA₂ synthesis ↓ → platelet aggregation ↓",
+     "source_key": "เฉลย: Antiplatelet · irreversible COX-1/COX-2 inhibitor → TXA₂ synthesis ↓ → platelet aggregation ↓"
+    },
+    {
+     "id": "7.2",
+     "prompt": "ผลข้างเคียง 4 ข้อ (ไม่ซ้ำระบบ)",
+     "format": "short",
+     "accepted": [
+      "bleeding",
+      "gi",
+      "bronchospasm",
+      "tinnitus"
+     ],
+     "keywords_all": [
+      "bleeding"
+     ],
+     "key_text": "Bleeding (dose related) · GI irritation/peptic ulcer · Hypersensitivity/bronchospasm (ระวังใน asthma) · Tinnitus · Reye syndrome ในเด็กติดไวรัส",
+     "source_key": "เฉลย: Bleeding (dose related) · GI irritation/peptic ulcer · Hypersensitivity/bronchospasm (ระวังใน asthma) · Tinnitus · Reye syndrome ในเด็กติดไวรัส"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF45",
+     "pages": [
+      7
+     ]
+    },
+    {
+     "paper": "KF45-KEY",
+     "pages": [
+      7
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "HEMA-45-KF-008",
+   "block": "HEMA",
+   "cohort": 45,
+   "n": 8,
+   "type": "KF",
+   "case": "ผู้ป่วยมะเร็งได้รับ chemotherapy",
+   "items": [
+    {
+     "id": "8.1a",
+     "prompt": "กลไก Rituximab",
+     "format": "short",
+     "accepted": [
+      "cd20"
+     ],
+     "keywords_all": [
+      "cd20"
+     ],
+     "key_text": "Anti-CD20 monoclonal antibody — ต่อ B-cell neoplasm",
+     "source_key": "เฉลย: Anti-CD20 monoclonal antibody — ต่อ B-cell neoplasm"
+    },
+    {
+     "id": "8.1b",
+     "prompt": "กลไก Vincristine",
+     "format": "short",
+     "accepted": [
+      "tubulin",
+      "microtubule"
+     ],
+     "keywords_all": [
+      "tubulin"
+     ],
+     "key_text": "Antimicrotubule — block tubulin assembly",
+     "source_key": "เฉลย: Antimicrotubule — block tubulin assembly"
+    },
+    {
+     "id": "8.1c",
+     "prompt": "กลไก Doxorubicin",
+     "format": "short",
+     "accepted": [
+      "intercalate",
+      "topoisomerase"
+     ],
+     "keywords_all": [
+      "intercalate"
+     ],
+     "key_text": "Anthracycline — generate free radical, intercalate DNA base pair, ยับยั้ง topoisomerase II",
+     "source_key": "เฉลย: Anthracycline — generate free radical, intercalate DNA base pair, ยับยั้ง topoisomerase II"
+    },
+    {
+     "id": "8.2a",
+     "prompt": "Side effect Rituximab",
+     "format": "short",
+     "accepted": [
+      "pml",
+      "leukoencephalopathy"
+     ],
+     "keywords_all": [
+      "pml"
+     ],
+     "key_text": "Progressive multifocal leukoencephalopathy (PML)",
+     "source_key": "เฉลย: Progressive multifocal leukoencephalopathy (PML)"
+    },
+    {
+     "id": "8.2b",
+     "prompt": "Side effect Cyclophosphamide",
+     "format": "short",
+     "accepted": [
+      "cystitis"
+     ],
+     "keywords_all": [
+      "cystitis"
+     ],
+     "key_text": "Hemorrhagic cystitis, alopecia, BM suppression",
+     "source_key": "เฉลย: Hemorrhagic cystitis, alopecia, BM suppression"
+    },
+    {
+     "id": "8.2c",
+     "prompt": "Side effect Doxorubicin",
+     "format": "short",
+     "accepted": [
+      "cardiotoxicity"
+     ],
+     "keywords_all": [
+      "cardiotoxicity"
+     ],
+     "key_text": "Cardiotoxicity, tissue necrosis (extravasation)",
+     "source_key": "เฉลย: Cardiotoxicity, tissue necrosis (extravasation)"
+    },
+    {
+     "id": "8.2d",
+     "prompt": "Side effect Vincristine",
+     "format": "short",
+     "accepted": [
+      "neuropathy"
+     ],
+     "keywords_all": [
+      "neuropathy"
+     ],
+     "key_text": "Peripheral neuropathy, neurotoxicity, paralytic ileus",
+     "source_key": "เฉลย: Peripheral neuropathy, neurotoxicity, paralytic ileus"
+    }
+   ],
+   "answer_status": "verified",
+   "refs": [
+    {
+     "paper": "KF45",
+     "pages": [
+      8
+     ]
+    },
+    {
+     "paper": "KF45-KEY",
+     "pages": [
+      8
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "HEMA-45-KF-009",
+   "block": "HEMA",
+   "cohort": 45,
+   "n": 9,
+   "type": "KF",
+   "case": "ผู้หญิงมะเร็งเม็ดเลือดขาว ไข้ หนาวสั่น GI bleed เล็กน้อย Hb 6, plt 79,000",
+   "items": [
+    {
+     "id": "9.1",
+     "prompt": "ต้องให้ red cell หรือไม่ ชนิดไหน เหตุผล",
+     "format": "short",
+     "accepted": [
+      "irradiated",
+      "ldprc",
+      "hb"
+     ],
+     "keywords_all": [
+      "irradiated"
+     ],
+     "key_text": "ให้ — Irradiated leukoreduced PRC (Irr-LDPRC) เพราะ Hb <7 · เป็น leukemia (immunodeficiency) และเสี่ยงได้รับ transplantation ในอนาคต",
+     "source_key": "เฉลย: ให้ — Irradiated leukoreduced PRC (Irr-LDPRC) เพราะ Hb <7 · เป็น leukemia (immunodeficiency) และเสี่ยงได้รับ transplantation ในอนาคต"
+    },
+    {
+     "id": "9.2",
+     "prompt": "ต้องให้เกล็ดเลือดไหม เหตุผล",
+     "format": "short",
+     "accepted": [
+      "ไม่ให้",
+      "bleeding"
+     ],
+     "keywords_all": [
+      "ไม่ให้"
+     ],
+     "key_text": "ไม่ให้ เพราะ plt 79,000 ไม่มี spontaneous/active bleeding รุนแรง จึงยังไม่จำเป็น",
+     "source_key": "เฉลย: ไม่ให้ เพราะ plt 79,000 ไม่มี spontaneous/active bleeding รุนแรง จึงยังไม่จำเป็น"
+    },
+    {
+     "id": "9.3a",
+     "prompt": "ผู้ป่วยได้รับเลือดแล้วไข้ สั่น ผื่น vital sign ปกติ: ภาวะที่เกิด",
+     "format": "short",
+     "accepted": [
+      "fnhtr",
+      "allergic"
+     ],
+     "keywords_all": [
+      "fnhtr"
+     ],
+     "key_text": "Febrile non-hemolytic transfusion reaction / Allergic reaction (TA-GVHD น่าสงสัยถ้าไม่ได้ irradiate)",
+     "source_key": "เฉลยไม่ครบ/อ่านยาก — AI เติม"
+    },
+    {
+     "id": "9.3b",
+     "prompt": "วิธีจัดการ",
+     "format": "short",
+     "accepted": [
+      "acetaminophen",
+      "antihistamine",
+      "steroid"
+     ],
+     "keywords_all": [
+      "antihistamine"
+     ],
+     "key_text": "หยุดเลือด/ลดอัตรา · Acetaminophen · Antihistamine · Steroids",
+     "source_key": "เฉลยไม่ครบ/อ่านยาก — AI เติม"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "KF45",
+     "pages": [
+      9
+     ]
+    },
+    {
+     "paper": "KF45-KEY",
+     "pages": [
+      9
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "HEMA-45-KF-010",
+   "block": "HEMA",
+   "cohort": 45,
+   "n": 10,
+   "type": "KF",
+   "case": "ชาย 10 ปี ไข้ ไอ น้ำมูก 5 วัน ได้ยา 3 วันก่อนซีดเพลีย ปัสสาวะสีโค้ก · OF +, DCIP weak +, ไม่มี HbCS, Hb 4.8, Hct 15, WBC 10,200, N 85%, retic 18%",
+   "items": [
+    {
+     "id": "10.1",
+     "prompt": "คำนวณ RPI",
+     "format": "short",
+     "accepted": [
+      "3"
+     ],
+     "keywords_all": [
+      "3"
+     ],
+     "key_text": "RPI = 18 × (15/45) / 2 = 3",
+     "source_key": "เฉลย: RPI = 18 × (15/45) / 2 = 3"
+    },
+    {
+     "id": "10.2a",
+     "prompt": "Iron deficiency: erythropoiesis / hemolysis",
+     "format": "short",
+     "accepted": [
+      "ineffective"
+     ],
+     "keywords_all": [
+      "ineffective"
+     ],
+     "key_text": "Ineffective / Non-hemolysis",
+     "source_key": "เฉลย: Ineffective / Non-hemolysis"
+    },
+    {
+     "id": "10.2b",
+     "prompt": "Thalassemia: erythropoiesis / hemolysis",
+     "format": "short",
+     "accepted": [
+      "ineffective",
+      "extravascular"
+     ],
+     "keywords_all": [
+      "ineffective"
+     ],
+     "key_text": "Ineffective / Extravascular",
+     "source_key": "เฉลย: Ineffective / Extravascular"
+    },
+    {
+     "id": "10.2c",
+     "prompt": "G6PD deficiency: erythropoiesis / hemolysis",
+     "format": "short",
+     "accepted": [
+      "effective",
+      "intravascular"
+     ],
+     "keywords_all": [
+      "intravascular"
+     ],
+     "key_text": "Effective / Intravascular (และ extravascular)",
+     "source_key": "เฉลย: Effective / Intravascular (และ extravascular)"
+    },
+    {
+     "id": "10.2d",
+     "prompt": "AIHA: erythropoiesis / hemolysis",
+     "format": "short",
+     "accepted": [
+      "effective",
+      "extravascular"
+     ],
+     "keywords_all": [
+      "extravascular"
+     ],
+     "key_text": "Effective / Extravascular (warm) · Intravascular (cold)",
+     "source_key": "เฉลย: Effective / Extravascular (warm) · Intravascular (cold)"
+    },
+    {
+     "id": "10.2e",
+     "prompt": "Hereditary spherocytosis: erythropoiesis / hemolysis",
+     "format": "short",
+     "accepted": [
+      "effective",
+      "extravascular"
+     ],
+     "keywords_all": [
+      "extravascular"
+     ],
+     "key_text": "Effective / Extravascular",
+     "source_key": "เฉลย: Effective / Extravascular"
+    },
+    {
+     "id": "10.3",
+     "prompt": "วินิจฉัย",
+     "format": "short",
+     "accepted": [
+      "hbh"
+     ],
+     "keywords_all": [
+      "hbh"
+     ],
+     "key_text": "HbH disease (α-thal) ที่เกิด acute hemolysis (ตามลายมือ: β-thal trait / HbH disease)",
+     "source_key": "เฉลย: HbH disease (อ่านลายมือ)"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "KF45",
+     "pages": [
+      10
+     ]
+    },
+    {
+     "paper": "KF45-KEY",
+     "pages": [
+      10
+     ]
+    }
+   ],
+   "tags": [],
+   "source": "claude-mcp"
+  }
+ ]
+}

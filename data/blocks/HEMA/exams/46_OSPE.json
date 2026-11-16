@@ -1,0 +1,725 @@
+{
+ "meta": {
+  "set_id": "46_OSPE",
+  "block": "HEMA",
+  "cohort": 46,
+  "type": "OSPE",
+  "title": "OSPE Hematopoietic · Med PSU 46",
+  "generated_by": "auditor/tools/build_kf.py from auditor/data/work/hema_46_OSPE.kf.json — do not edit by hand"
+ },
+ "questions": [
+  {
+   "id": "HEMA-46-OSPE-001",
+   "block": "HEMA",
+   "cohort": 46,
+   "n": 1,
+   "type": "OSPE",
+   "station": 1,
+   "stem": "สถานี 1: ซีด อ่อนเพลีย เหนื่อยง่าย",
+   "items": [
+    {
+     "id": "1.1",
+     "prompt": "ผล blood smear (RBC / WBC / Platelet)",
+     "format": "short",
+     "accepted": [
+      "iron"
+     ],
+     "keywords_all": [
+      "iron"
+     ],
+     "key_text": "RBC hypochromic microcytic, pencil cell, anisopoikilocytosis · WBC normal · Platelet normal/เพิ่ม",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม",
+     "image": "img/HEMA-46-OSPE-001.jpg",
+     "image_caption": "Blood smear สถานี 1"
+    },
+    {
+     "id": "1.2",
+     "prompt": "ส่งตรวจเพิ่ม",
+     "format": "short",
+     "accepted": [
+      "iron"
+     ],
+     "keywords_all": [
+      "iron"
+     ],
+     "key_text": "CBC: MCV↓ MCH↓ · Iron study: ↓ serum iron, ↓ ferritin, ↑ TIBC, ↓ transferrin saturation",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    },
+    {
+     "id": "1.3",
+     "prompt": "Diagnosis",
+     "format": "short",
+     "accepted": [
+      "iron"
+     ],
+     "keywords_all": [
+      "iron"
+     ],
+     "key_text": "Iron deficiency anemia",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "OSPE46",
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "tags": [
+    "smear"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "HEMA-46-OSPE-002",
+   "block": "HEMA",
+   "cohort": 46,
+   "n": 2,
+   "type": "OSPE",
+   "station": 2,
+   "stem": "สถานี 2: ซีด ตับม้ามโตเล็กน้อย ปัสสาวะเข้ม",
+   "items": [
+    {
+     "id": "2.1",
+     "prompt": "ผล blood smear (RBC / WBC / Platelet)",
+     "format": "short",
+     "accepted": [
+      "thalassemia"
+     ],
+     "keywords_all": [
+      "thalassemia"
+     ],
+     "key_text": "RBC hypochromic microcytic, target cell, anisopoikilocytosis · WBC normal · Platelet adequate",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม",
+     "image": "img/HEMA-46-OSPE-002.jpg",
+     "image_caption": "Blood smear สถานี 2"
+    },
+    {
+     "id": "2.2",
+     "prompt": "ส่งตรวจเพิ่ม",
+     "format": "short",
+     "accepted": [
+      "thalassemia"
+     ],
+     "keywords_all": [
+      "thalassemia"
+     ],
+     "key_text": "Screening: One-tube osmotic fragility test positive, DCIP · Confirm: Hb typing, Gap-PCR (α/β-thal mutation)",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    },
+    {
+     "id": "2.3",
+     "prompt": "Diagnosis",
+     "format": "short",
+     "accepted": [
+      "thalassemia"
+     ],
+     "keywords_all": [
+      "thalassemia"
+     ],
+     "key_text": "Thalassemia",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "OSPE46",
+     "pages": [
+      3
+     ]
+    }
+   ],
+   "tags": [
+    "smear"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "HEMA-46-OSPE-003",
+   "block": "HEMA",
+   "cohort": 46,
+   "n": 3,
+   "type": "OSPE",
+   "station": 3,
+   "stem": "สถานี 3: ไข้ 5 วัน (ไม่มีอาการอื่น)",
+   "items": [
+    {
+     "id": "3.1",
+     "prompt": "ผล blood smear (RBC / WBC / Platelet)",
+     "format": "short",
+     "accepted": [
+      "dengue"
+     ],
+     "keywords_all": [
+      "dengue"
+     ],
+     "key_text": "RBC normochromic normocytic · WBC ลดลง พบ atypical lymphocyte · Platelet ลดลง",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม",
+     "image": "img/HEMA-46-OSPE-003.jpg",
+     "image_caption": "Blood smear สถานี 3"
+    },
+    {
+     "id": "3.2",
+     "prompt": "ส่งตรวจเพิ่ม",
+     "format": "short",
+     "accepted": [
+      "dengue"
+     ],
+     "keywords_all": [
+      "dengue"
+     ],
+     "key_text": "Screening: Tourniquet test positive, ↑ hematocrit · Confirm: NS1 antigen / Dengue IgM positive",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    },
+    {
+     "id": "3.3",
+     "prompt": "Diagnosis",
+     "format": "short",
+     "accepted": [
+      "dengue"
+     ],
+     "keywords_all": [
+      "dengue"
+     ],
+     "key_text": "Dengue hemorrhagic fever",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "OSPE46",
+     "pages": [
+      4
+     ]
+    }
+   ],
+   "tags": [
+    "smear"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "HEMA-46-OSPE-004",
+   "block": "HEMA",
+   "cohort": 46,
+   "n": 4,
+   "type": "OSPE",
+   "station": 4,
+   "stem": "สถานี 4: จุดเลือดออกตามตัว 2 สัปดาห์",
+   "items": [
+    {
+     "id": "4.1",
+     "prompt": "ผล blood smear (RBC / WBC / Platelet)",
+     "format": "short",
+     "accepted": [
+      "platelet"
+     ],
+     "keywords_all": [
+      "platelet"
+     ],
+     "key_text": "RBC normochromic normocytic · WBC eosinophilia · Platelet ปกติ/เพิ่ม (หน้าที่ผิดปกติ)",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม",
+     "image": "img/HEMA-46-OSPE-004.jpg",
+     "image_caption": "Blood smear สถานี 4"
+    },
+    {
+     "id": "4.2",
+     "prompt": "ส่งตรวจเพิ่ม",
+     "format": "short",
+     "accepted": [
+      "platelet"
+     ],
+     "keywords_all": [
+      "platelet"
+     ],
+     "key_text": "Stool examination หาพยาธิ · Platelet function test (aggregation/PFA-100)",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    },
+    {
+     "id": "4.3",
+     "prompt": "Diagnosis",
+     "format": "short",
+     "accepted": [
+      "platelet"
+     ],
+     "keywords_all": [
+      "platelet"
+     ],
+     "key_text": "Acquired platelet dysfunction with eosinophilia (APDE)",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "OSPE46",
+     "pages": [
+      5
+     ]
+    }
+   ],
+   "tags": [
+    "smear"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "HEMA-46-OSPE-005",
+   "block": "HEMA",
+   "cohort": 46,
+   "n": 5,
+   "type": "OSPE",
+   "station": 5,
+   "stem": "สถานี 5: อายุ 65 ปี ตรวจสุขภาพประจำปี พบตับม้ามโตเล็กน้อย",
+   "items": [
+    {
+     "id": "5.1",
+     "prompt": "ผล blood smear (RBC / WBC / Platelet)",
+     "format": "short",
+     "accepted": [
+      "myeloid"
+     ],
+     "keywords_all": [
+      "myeloid"
+     ],
+     "key_text": "RBC normocytic anemia · WBC เพิ่มขึ้น พบ myeloblast, promyelocyte, myelocyte, metamyelocyte, band (ทุกระยะ) · Platelet normal/เพิ่ม",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม",
+     "image": "img/HEMA-46-OSPE-005.jpg",
+     "image_caption": "Blood smear สถานี 5"
+    },
+    {
+     "id": "5.2",
+     "prompt": "ส่งตรวจเพิ่ม",
+     "format": "short",
+     "accepted": [
+      "myeloid"
+     ],
+     "keywords_all": [
+      "myeloid"
+     ],
+     "key_text": "Screening: CBC/smear, LAP score ต่ำ · Confirm: Chromosome study Philadelphia t(9;22), RT-PCR BCR-ABL positive",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    },
+    {
+     "id": "5.3",
+     "prompt": "Diagnosis",
+     "format": "short",
+     "accepted": [
+      "myeloid"
+     ],
+     "keywords_all": [
+      "myeloid"
+     ],
+     "key_text": "Chronic myeloid leukemia",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "OSPE46",
+     "pages": [
+      6
+     ]
+    }
+   ],
+   "tags": [
+    "smear"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "HEMA-46-OSPE-006",
+   "block": "HEMA",
+   "cohort": 46,
+   "n": 6,
+   "type": "OSPE",
+   "station": 6,
+   "stem": "สถานี 6: Hb typing คู่สามีภรรยา — สามี MCV 64.5: HbA 61%, HbF 33%, HbA2 6% · ภรรยา MCV 68.5: HbA 98%, HbA2 2%",
+   "items": [
+    {
+     "id": "6.1",
+     "prompt": "แปลผล Hb typing ของสามี",
+     "format": "short",
+     "accepted": [
+      "thalassemia disease",
+      "β+"
+     ],
+     "keywords_all": [
+      "thalassemia"
+     ],
+     "key_text": "β+-thalassemia disease (HbF สูง 33%, HbA2 6%)",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    },
+    {
+     "id": "6.2",
+     "prompt": "แปลผล Hb typing ของภรรยา",
+     "format": "short",
+     "accepted": [
+      "α-thal",
+      "alpha"
+     ],
+     "keywords_all": [
+      "α"
+     ],
+     "key_text": "α-thalassemia 1 trait (HbA2 ต่ำ MCV ต่ำ)",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    },
+    {
+     "id": "6.3",
+     "prompt": "ต้องทำกับทารกไหม เพราะอะไร",
+     "format": "short",
+     "accepted": [
+      "bart",
+      "hydrops",
+      "ต้อง"
+     ],
+     "keywords_all": [
+      "ต้อง"
+     ],
+     "key_text": "ต้องทำ prenatal diagnosis เพราะเสี่ยง Hb Bart’s hydrops fetalis / β-thal major",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "OSPE46",
+     "pages": [
+      7
+     ]
+    }
+   ],
+   "tags": [
+    "hb typing"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "HEMA-46-OSPE-007",
+   "block": "HEMA",
+   "cohort": 46,
+   "n": 7,
+   "type": "OSPE",
+   "station": 7,
+   "stem": "สถานี 7: ภาพ liver ชายอายุ 65 ปี",
+   "items": [
+    {
+     "id": "7.1",
+     "prompt": "Diagnosis",
+     "format": "short",
+     "accepted": [
+      "hepatocellular"
+     ],
+     "keywords_all": [
+      "hepatocellular"
+     ],
+     "key_text": "Hepatocellular carcinoma",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม",
+     "image": "img/HEMA-46-OSPE-007.jpg",
+     "image_caption": "Liver ชาย 65 ปี"
+    },
+    {
+     "id": "7.2",
+     "prompt": "ปัจจัยเสี่ยง 1 อย่าง",
+     "format": "short",
+     "accepted": [
+      "hepatitis",
+      "cirrhosis",
+      "aflatoxin"
+     ],
+     "keywords_all": [
+      "hepatitis"
+     ],
+     "key_text": "Chronic hepatitis B/C infection (หรือ cirrhosis, aflatoxin)",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "OSPE46",
+     "pages": [
+      7
+     ]
+    }
+   ],
+   "tags": [
+    "pathology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "HEMA-46-OSPE-008",
+   "block": "HEMA",
+   "cohort": 46,
+   "n": 8,
+   "type": "OSPE",
+   "station": 8,
+   "stem": "สถานี 8: biopsy lymph node (follicular pattern)",
+   "items": [
+    {
+     "id": "8.1",
+     "prompt": "Diagnosis",
+     "format": "short",
+     "accepted": [
+      "follicular"
+     ],
+     "keywords_all": [
+      "follicular"
+     ],
+     "key_text": "Follicular lymphoma",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม",
+     "image": "img/HEMA-46-OSPE-008.jpg",
+     "image_caption": "Lymph node biopsy (follicular)"
+    },
+    {
+     "id": "8.2",
+     "prompt": "Chromosome abnormality",
+     "format": "short",
+     "accepted": [
+      "t(14;18)",
+      "bcl2"
+     ],
+     "keywords_all": [
+      "t(14;18)"
+     ],
+     "key_text": "t(14;18) → IGH-BCL2 overexpression",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "OSPE46",
+     "pages": [
+      8
+     ]
+    }
+   ],
+   "tags": [
+    "histology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "HEMA-46-OSPE-009",
+   "block": "HEMA",
+   "cohort": 46,
+   "n": 9,
+   "type": "OSPE",
+   "station": 9,
+   "stem": "สถานี 9: biopsy lymph node + IHC CD20 positive",
+   "items": [
+    {
+     "id": "9.1",
+     "prompt": "Diagnosis",
+     "format": "short",
+     "accepted": [
+      "diffuse large",
+      "dlbcl"
+     ],
+     "keywords_all": [
+      "diffuse"
+     ],
+     "key_text": "Diffuse large B-cell lymphoma",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม",
+     "image": "img/HEMA-46-OSPE-009.jpg",
+     "image_caption": "Lymph node biopsy CD20+"
+    },
+    {
+     "id": "9.2",
+     "prompt": "Cell ต้นกำเนิด",
+     "format": "short",
+     "accepted": [
+      "b-cell",
+      "b lymphocyte",
+      "germinal"
+     ],
+     "keywords_all": [
+      "b"
+     ],
+     "key_text": "Mature B-lymphocyte (germinal center / post-germinal center B-cell)",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "OSPE46",
+     "pages": [
+      9
+     ]
+    }
+   ],
+   "tags": [
+    "histology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "HEMA-46-OSPE-010",
+   "block": "HEMA",
+   "cohort": 46,
+   "n": 10,
+   "type": "OSPE",
+   "station": 10,
+   "stem": "สถานี 10: ภาพ histology (binucleate cell)",
+   "items": [
+    {
+     "id": "10.1",
+     "prompt": "Diagnosis",
+     "format": "short",
+     "accepted": [
+      "hodgkin"
+     ],
+     "keywords_all": [
+      "hodgkin"
+     ],
+     "key_text": "Classical Hodgkin's lymphoma",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม",
+     "image": "img/HEMA-46-OSPE-010.jpg",
+     "image_caption": "Reed-Sternberg cell"
+    },
+    {
+     "id": "10.2",
+     "prompt": "Cell จำเพาะ",
+     "format": "short",
+     "accepted": [
+      "reed",
+      "sternberg"
+     ],
+     "keywords_all": [
+      "reed"
+     ],
+     "key_text": "Reed-Sternberg cell",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "OSPE46",
+     "pages": [
+      9
+     ]
+    }
+   ],
+   "tags": [
+    "histology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "HEMA-46-OSPE-011",
+   "block": "HEMA",
+   "cohort": 46,
+   "n": 11,
+   "type": "OSPE",
+   "station": 11,
+   "stem": "สถานี 11: biopsy ผิวหนังฝ่าเท้า",
+   "items": [
+    {
+     "id": "11.1",
+     "prompt": "Diagnosis",
+     "format": "short",
+     "accepted": [
+      "squamous"
+     ],
+     "keywords_all": [
+      "squamous"
+     ],
+     "key_text": "Squamous cell carcinoma",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม",
+     "image": "img/HEMA-46-OSPE-011.jpg",
+     "image_caption": "Skin biopsy ฝ่าเท้า"
+    },
+    {
+     "id": "11.2",
+     "prompt": "Differentiation",
+     "format": "short",
+     "accepted": [
+      "keratin",
+      "well"
+     ],
+     "keywords_all": [
+      "keratin"
+     ],
+     "key_text": "Well-differentiated (keratin pearls, intercellular bridges)",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "OSPE46",
+     "pages": [
+      10
+     ]
+    }
+   ],
+   "tags": [
+    "histology"
+   ],
+   "source": "claude-mcp"
+  },
+  {
+   "id": "HEMA-46-OSPE-012",
+   "block": "HEMA",
+   "cohort": 46,
+   "n": 12,
+   "type": "OSPE",
+   "station": 12,
+   "stem": "สถานี 12: biopsy ผิวหนัง scalp (เม็ดสีสีน้ำตาล เซลล์รูปกระสวย)",
+   "items": [
+    {
+     "id": "12.1",
+     "prompt": "Diagnosis",
+     "format": "short",
+     "accepted": [
+      "melanoma"
+     ],
+     "keywords_all": [
+      "melanoma"
+     ],
+     "key_text": "Malignant melanoma",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม",
+     "image": "img/HEMA-46-OSPE-012.jpg",
+     "image_caption": "Skin biopsy scalp"
+    },
+    {
+     "id": "12.2",
+     "prompt": "ปัจจัยเสี่ยง 1 อย่าง",
+     "format": "short",
+     "accepted": [
+      "uv",
+      "sun"
+     ],
+     "keywords_all": [
+      "uv"
+     ],
+     "key_text": "UV light / แสงแดดมาก",
+     "source_key": "ไม่มีเฉลยในต้นฉบับ — AI เติม"
+    }
+   ],
+   "answer_status": "draft",
+   "refs": [
+    {
+     "paper": "OSPE46",
+     "pages": [
+      11
+     ]
+    }
+   ],
+   "tags": [
+    "histology"
+   ],
+   "source": "claude-mcp"
+  }
+ ]
+}
