@@ -1,7 +1,6 @@
 # HANDOFF — กระดาษส่งต่องาน (ยื่นให้ AI ตัวไหนก็ได้ อ่านใบนี้ใบเดียวแล้วทำต่อได้)
 > งานที่ทำค้างล่าสุด: ดู branch ที่ push ล่าสุด `git branch -r --sort=-committerdate | head -3` แล้ว `git log -5 --format=%B <branch>` — บรรทัด `ถัดไป:` คือขั้นต่อไป
 อัปเดต: 2026-11-13 (v0.47.0 · Immunity/Respiratory/KUB merge เข้า main แล้ว ไม่มี PR ค้าง) · เขียนโดย Claude (ผู้ใช้: Finn)
-
 ## 0.0 บล็อก Commed I / Commed II / Community Health Dev (CM1, CM2, CD) — ทำบางส่วน (Drive `preclinic/2/commed-1|commed-2|community-dev`)
 - ✅ CM1 MCQ 52 (29/33) · CM2 MCQ 52 (14/15) + 48 (14/15) · CD MCQ 52 (24/37) — ข้อสอบจำ ข้อว่าง/ตัวเลือกไม่มีข้ามหมด
 - ✅ CM1 MCQ 48 (22/29 ข้อ · เฉลยลายมือ: X น้ำเงินที่ตัวอักษร หรือวงกลม/กรอบแดง = เฉลย · ข้อ 22–24 อ่านยาก ควรตรวจ · ข้อ 12 มี 2 คำตอบ · ข้อ 13–19 ข้าม) · ✅ CM2 KF 47 (ส่วน 1–2; ส่วน 3 sampling ไม่ใส่)
