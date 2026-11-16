@@ -1,0 +1,343 @@
+{
+ "set_id": "neo_50_KF",
+ "note": "KF Neoplasia Med PSU 50 · 9 ข้อ (ข้อ 8 ไม่มีโจทย์ ข้อ 4 รูปกราฟไม่มีในต้นฉบับ) · เฉลยลายมือ",
+ "questions": [
+  {
+   "n": 1,
+   "page": 1,
+   "tags": [
+    "gynecology"
+   ],
+   "case": "หญิง 43 ปี ถูกตรวจพบก้อนที่ท้องล่าง (ไม่แน่ใจข้างขวา) เมื่อทำ MRI สงสัยเป็นมะเร็งรังไข่ (ovarian cancer)",
+   "answer_status": "verified",
+   "items": [
+    {
+     "id": "1.1",
+     "prompt": "ต้องสั่งตรวจ tumor marker ใด หากต้องการคำนวณ ROMA score",
+     "format": "short",
+     "accepted": [
+      "ca125",
+      "he4"
+     ],
+     "keywords_all": [
+      "he4"
+     ],
+     "key_text": "CA125 + HE4 (ร่วมกับ menopausal status)",
+     "source_key": "เฉลย: CA125 + HE4 (ร่วมกับ menopausal status)"
+    },
+    {
+     "id": "1.2",
+     "prompt": "วินิจฉัยว่าเป็นมะเร็ง stage III แต่ผล tumor marker ออกมาต่ำกว่าที่เป็น อะไรเป็นข้อผิดพลาดทางห้องปฏิบัติการที่ทำให้ผลไม่สอดคล้องกับอาการทางคลินิก",
+     "format": "short",
+     "accepted": [
+      "hook effect"
+     ],
+     "keywords_all": [
+      "hook"
+     ],
+     "key_text": "Hook effect (ระดับ marker สูงมากจนเกิน ทำให้ผลต่ำเทียม)",
+     "source_key": "เฉลย: Hook effect (ระดับ marker สูงมากจนเกิน ทำให้ผลต่ำเทียม)"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "page": 1,
+   "tags": [
+    "pathology"
+   ],
+   "case": "หญิง 45 ปี ตรวจ pap smear ประจำปีพบความผิดปกติ ส่องกล้องและตัดชิ้นเนื้อจากปากมดลูก ผลเป็น squamous carcinoma in situ (ภาพ)",
+   "answer_status": "verified",
+   "items": [
+    {
+     "id": "2.1",
+     "prompt": "Histologic characteristic ของเซลล์มะเร็ง 2 อย่าง",
+     "format": "short",
+     "accepted": [
+      "n/c",
+      "nucleus",
+      "dysplasia"
+     ],
+     "keywords_all": [
+      "n/c",
+      "dysplasia"
+     ],
+     "key_text": "High N/C ratio · Dysplasia (เซลล์ผิดรูปเต็มความหนาของเยื่อบุผิว)",
+     "source_key": "เฉลย: High N/C ratio · Dysplasia (เซลล์ผิดรูปเต็มความหนาของเยื่อบุผิว)",
+     "image": "img/NEO-50-KF-002.jpg",
+     "image_caption": "Histology ปากมดลูก"
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "page": 2,
+   "tags": [
+    "lung"
+   ],
+   "case": "ชายอายุมาพบแพทย์ด้วยไอเรื้อรัง เจ็บหน้าอก CT พบก้อนขนาด 5 cm ที่ปอดขวากลีบล่างใกล้ทรวงอกข้างหน้า",
+   "answer_status": "verified",
+   "items": [
+    {
+     "id": "3.1",
+     "prompt": "ย้อมอะไรเพื่อยืนยัน histological pathology",
+     "format": "short",
+     "accepted": [
+      "hematoxylin",
+      "h&e"
+     ],
+     "keywords_all": [
+      "hematoxylin"
+     ],
+     "key_text": "Hematoxylin & Eosin (H&E)",
+     "source_key": "เฉลย: Hematoxylin & Eosin (H&E)"
+    },
+    {
+     "id": "3.2",
+     "prompt": "Immunohistochemistry เพื่อยืนยัน primary lung cancer ย้อมอะไร",
+     "format": "short",
+     "accepted": [
+      "cytokeratin",
+      "ttf"
+     ],
+     "keywords_all": [
+      "ttf"
+     ],
+     "key_text": "Cytokeratin และ Thyroid transcription factor-1 (TTF-1)",
+     "source_key": "เฉลย: Cytokeratin และ Thyroid transcription factor-1 (TTF-1)"
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "page": 2,
+   "tags": [
+    "epidemiology"
+   ],
+   "case": "กราฟ incident rate และ mortality rate ของมะเร็งในผู้หญิงของไทยและสหรัฐฯ (ไม่มีกราฟในต้นฉบับ)",
+   "answer_status": "draft",
+   "items": [
+    {
+     "id": "4.2",
+     "prompt": "ทำไมสัดส่วน mortality rate/incidence rate ของ breast cancer น้อยกว่า lung cancer จงยกเหตุผล 2 ข้อ",
+     "format": "short",
+     "accepted": [
+      "screening",
+      "ลุกลาม",
+      "รุนแรง"
+     ],
+     "keywords_all": [
+      "screening"
+     ],
+     "key_text": "Breast cancer มี screening ที่ดีกว่า (mammography/ตรวจพบระยะแรก) และ lung cancer มีความรุนแรง/ระยะลุกลามเมื่อพบมากกว่า breast cancer (ผู้ตอบไม่แน่ใจ)",
+     "source_key": "เฉลยลายมืออ่านยาก — AI เติม"
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "page": 3,
+   "tags": [
+    "paraneoplastic"
+   ],
+   "case": "ชายอายุ 68 ปี มาด้วยอาการตาเหลืองตัวเหลือง เบื่ออาหาร น้ำหนักลด พบก้อนที่ตับ ผลสรุปเป็นก้อน malignant (ภาพตัดขวางตับ)",
+   "answer_status": "verified",
+   "items": [
+    {
+     "id": "5.1",
+     "prompt": "วินิจฉัยพยาธิสภาพจาก histology",
+     "format": "short",
+     "accepted": [
+      "n/c",
+      "malignant",
+      "mitosis"
+     ],
+     "keywords_all": [
+      "n/c"
+     ],
+     "key_text": "Malignant cells เช่น N/C ratio สูง ขนาดไม่เท่ากัน mitosis (ลักษณะของ malignancy)",
+     "source_key": "เฉลยลายมืออ่านยาก — AI เติม"
+    },
+    {
+     "id": "5.2",
+     "prompt": "อาการเบื่ออาหารร่วมกับน้ำหนักลด เรียกว่าอะไร",
+     "format": "short",
+     "accepted": [
+      "cachexia"
+     ],
+     "keywords_all": [
+      "cachexia"
+     ],
+     "key_text": "Cachexia",
+     "source_key": "เฉลย: Cachexia"
+    },
+    {
+     "id": "5.3",
+     "prompt": "Mediators 3 ตัว",
+     "format": "short",
+     "accepted": [
+      "tnf",
+      "il-1",
+      "il-6"
+     ],
+     "keywords_all": [
+      "tnf"
+     ],
+     "key_text": "Tumor necrosis factor alpha (TNF-α) · IL-1 · IL-6",
+     "source_key": "เฉลย: Tumor necrosis factor alpha (TNF-α) · IL-1 · IL-6"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "page": 4,
+   "tags": [
+    "lung"
+   ],
+   "case": "ชายไทย 70 ปี ภูมิลำเนาเชียงใหม่ ทำงานโรงงานแร่ใยหิน เจ็บแน่นหน้าอก ไอ น้ำหนักลด สูบบุหรี่วันละ 2 ซอง 20 ปี CT พบก้อนปอด 5 cm และก้อนที่สมองหลายก้อน ตรวจ biopsy (ภาพ)",
+   "answer_status": "verified",
+   "items": [
+    {
+     "id": "6.1",
+     "prompt": "วินิจฉัยด้วยลักษณะทาง histology",
+     "format": "short",
+     "accepted": [
+      "adenocarcinoma"
+     ],
+     "keywords_all": [
+      "adenocarcinoma"
+     ],
+     "key_text": "Lung cancer ชนิด adenocarcinoma",
+     "source_key": "เฉลย: Lung cancer ชนิด adenocarcinoma",
+     "image": "img/NEO-50-KF-006.jpg",
+     "image_caption": "Histology adenocarcinoma ปอด"
+    },
+    {
+     "id": "6.2",
+     "prompt": "ปัจจัยเสี่ยง 2 ข้อ",
+     "format": "short",
+     "accepted": [
+      "smoking",
+      "asbestos"
+     ],
+     "keywords_all": [
+      "smoking"
+     ],
+     "key_text": "สูบบุหรี่ (smoking) · แร่ใยหิน (asbestos) (ต้นฉบับอ่านเป็น diabetes แต่ asbestos ตรงกับโจทย์)",
+     "source_key": "เฉลยลายมืออ่านยาก — AI เติม"
+    },
+    {
+     "id": "6.3",
+     "prompt": "ยีนตรวจเพื่อเลือก targeted therapy (NSCLC) 2 ยีน",
+     "format": "short",
+     "accepted": [
+      "egfr",
+      "braf"
+     ],
+     "keywords_all": [
+      "egfr"
+     ],
+     "key_text": "EGFR · BRAF",
+     "source_key": "เฉลย: EGFR · BRAF"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "page": 5,
+   "tags": [
+    "gi"
+   ],
+   "case": "ชายอายุ 45 ปี อาชีพตำรวจ พบก้อนที่ตับขนาด 7 cm 3 เดือน เจ็บแน่นท้องด้านขวาบน เบื่ออาหาร น้ำหนักลด 5 kg ประวัติครอบครัว: มารดาเสียชีวิตด้วยมะเร็งตับ ตรวจ HBsAg positive ผ่าตัดเห็น gross ตับ",
+   "answer_status": "verified",
+   "items": [
+    {
+     "id": "7.1",
+     "prompt": "โรคที่เป็นไปได้มากที่สุด",
+     "format": "short",
+     "accepted": [
+      "hepatocellular",
+      "hcc"
+     ],
+     "keywords_all": [
+      "hepatocellular"
+     ],
+     "key_text": "Hepatocellular carcinoma",
+     "source_key": "เฉลย: Hepatocellular carcinoma",
+     "image": "img/NEO-50-KF-007.jpg",
+     "image_caption": "Gross ตับมีก้อนใหญ่"
+    },
+    {
+     "id": "7.2",
+     "prompt": "ปัจจัยเสี่ยง (ตัวอย่าง)",
+     "format": "short",
+     "accepted": [
+      "hepatitis b",
+      "family"
+     ],
+     "keywords_all": [
+      "hepatitis b"
+     ],
+     "key_text": "Hepatitis B virus · Family history",
+     "source_key": "เฉลย: Hepatitis B virus · Family history"
+    },
+    {
+     "id": "7.3",
+     "prompt": "Tumor marker ที่สัมพันธ์กับโรคนี้มากที่สุด",
+     "format": "short",
+     "accepted": [
+      "afp",
+      "alpha"
+     ],
+     "keywords_all": [
+      "afp"
+     ],
+     "key_text": "Alpha-fetoprotein (AFP)",
+     "source_key": "เฉลย: Alpha-fetoprotein (AFP)"
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "page": 6,
+   "tags": [
+    "breast"
+   ],
+   "case": "ภาพ histology และ gross ของก้อนเต้านม",
+   "answer_status": "verified",
+   "items": [
+    {
+     "id": "9.1",
+     "prompt": "ลักษณะ gross pathology",
+     "format": "short",
+     "accepted": [
+      "well-demarcated",
+      "demarcated",
+      "circumscribed"
+     ],
+     "keywords_all": [
+      "demarcated"
+     ],
+     "key_text": "Well-demarcated (ขอบเขตชัดเจน)",
+     "source_key": "เฉลย: Well-demarcated (ขอบเขตชัดเจน)",
+     "image": "img/NEO-50-KF-009.jpg",
+     "image_caption": "Histology และ gross"
+    },
+    {
+     "id": "9.2",
+     "prompt": "วินิจฉัยจากลักษณะ histology",
+     "format": "short",
+     "accepted": [
+      "fibroadenoma"
+     ],
+     "keywords_all": [
+      "fibroadenoma"
+     ],
+     "key_text": "Fibroadenoma of breast",
+     "source_key": "เฉลย: Fibroadenoma of breast"
+    }
+   ]
+  }
+ ],
+ "time_limit_min": 90
+}
