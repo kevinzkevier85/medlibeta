@@ -33,7 +33,9 @@ def is_pink(r, g, b):
     cyan = b >= 250 and 150 <= r <= 185 and 230 <= g <= 250                    # bright-cyan pill highlight (Commed I 52)
     gray = 210 <= r <= 222 and max(r, g, b) - min(r, g, b) <= 2   # neutral grey highlight band (Respiratory 47)
     green2 = g >= 195 and r <= 160 and b <= 160 and g - r >= 55 and g - b >= 55  # medium green pill (Nervous 51)
-    return pink or lime or salmon or yellow or orange or blue or green or green2 or teal or cyan or gray
+    paleyellow = r >= 250 and g >= 240 and 150 <= b <= 215 and r - b >= 40   # pale yellow box (Neoplasia 50)
+    palegreen = g >= 250 and 215 <= r <= 232 and 210 <= b <= 228   # pale green fill (Neoplasia 50)
+    return palegreen or paleyellow or pink or lime or salmon or yellow or orange or blue or green or green2 or teal or cyan or gray
 
 
 def pink_fraction(pix, rect):
