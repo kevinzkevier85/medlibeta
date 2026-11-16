@@ -35,26 +35,26 @@
    "key_concept": "• CKD: EPO ↓\n• ESA + iron"
   },
   "6": {
-   "explanation": "เซลล์ในภาพมาจาก bone marrow (blood cell lineage)",
+   "explanation": "Plasma cell/เซลล์ในภาพมีต้นกำเนิดที่ไขกระดูก",
    "option_why": {
-    "A": "Liver (fetal เท่านั้น)",
-    "B": "Spleen",
-    "C": "Thymus (T cell maturation)",
-    "D": "✓ Bone marrow",
-    "E": "Cortex lymph node ไม่ใช่"
+    "A": "ตับสร้างเม็ดเลือดเฉพาะช่วงทารกในครรภ์",
+    "B": "ม้ามเป็น peripheral lymphoid organ ไม่ใช่แหล่งกำเนิด",
+    "C": "thymus เป็นที่พัฒนา T cell",
+    "D": "✓ hematopoietic stem cell อยู่ที่ไขกระดูก จึงเป็นต้นกำเนิดของเม็ดเลือดและ plasma cell",
+    "E": "cortex ต่อมน้ำเหลืองเป็นที่ B cell ถูกกระตุ้นแต่ไม่ใช่ต้นกำเนิด"
    },
-   "key_concept": "• Hematopoietic cells origin: BM\n• T cell mature ที่ thymus"
+   "key_concept": "• เม็ดเลือดทุกชนิดมาจาก HSC ในไขกระดูก\n• B cell เจริญในไขกระดูก T cell เจริญใน thymus"
   },
   "8": {
-   "explanation": "ทารก 1 วัน CBC ปกติ (Hb 16.5, MCV 98) → ไม่ต้องทำอะไร",
+   "explanation": "ทารกแรกเกิดวันที่ 1 ค่า Hb 16.5 MCV 98 เป็นค่าปกติ ไม่ต้องทำอะไรเพิ่ม",
    "option_why": {
-    "A": "เสริมเหล็กไม่จำเป็น",
-    "B": "EPO ไม่",
-    "C": "Antibiotic ไม่",
-    "D": "ตรวจเพิ่มไม่จำเป็น",
-    "E": "✓ ค่าปกติของทารกแรกเกิด ไม่ต้องทำอะไร"
+    "A": "ไม่ได้ซีดจึงไม่ต้องเสริมเหล็ก",
+    "B": "EPO ไม่จำเป็นเพราะไม่ได้ซีด",
+    "C": "ไม่มีสัญญาณติดเชื้อ",
+    "D": "ค่าเลือดอยู่ในช่วงปกติ ไม่ต้องสืบค้นโรคเลือด",
+    "E": "✓ ทารกแรกเกิดมี Hb และ MCV สูงกว่าผู้ใหญ่ตามปกติ"
    },
-   "key_concept": "• แรกเกิด: Hb 14–20, MCV ~100–120\n• ไม่ต้อง treat"
+   "key_concept": "• แรกเกิด: Hb 14–20, MCV 95–120\n• Hb ลดเป็น physiologic anemia ที่ 6–8 สัปดาห์"
   },
   "9": {
    "explanation": "Ferrous (Fe²⁺) ดูดซึมตรง + ห้ามใน hemochromatosis (AI draft)",
@@ -79,99 +79,153 @@
    "key_concept": "• IVH: Hb ถูกกรองออกทางไต\n• G6PD oxidant hemolysis"
   },
   "12": {
-   "explanation": "Pyruvate kinase deficiency → ATP ลด → hemolysis",
+   "explanation": "Pyruvate kinase deficiency ทำให้ glycolysis ลด ATP ไม่พอ RBC แตก",
    "option_why": {
-    "A": "G6PD → NADPH ไม่ใช่ ATP",
-    "B": "✓ PK ผลิต ATP",
-    "C": "PGM ไม่ใช่",
-    "D": "Methemoglobin reductase ไม่",
-    "E": "DPGM ไม่ใช่"
+    "A": "G6PD อยู่ใน pentose phosphate pathway ไม่ใช่ glycolysis",
+    "B": "✓ PK ผลิต ATP ขั้นสุดท้ายของ glycolysis ถ้าขาด ATP ต่ำ",
+    "C": "PGM ขาดพบน้อย",
+    "D": "methemoglobin reductase เกี่ยวกับการลด MetHb",
+    "E": "2,3-DPG mutase ไม่ใช่สาเหตุ hemolysis"
    },
-   "key_concept": "• PK: glycolysis ATP ↓\n• Non-spherocytic hemolysis"
+   "key_concept": "• PK deficiency: chronic hemolytic anemia, echinocyte\n• RBC พึ่ง glycolysis อย่างเดียวผลิต ATP",
+   "mechanism": [
+    "PK ขาด",
+    "ATP จาก glycolysis ลด",
+    {
+     "s": "Na/K-ATPase และ membrane pump เสีย",
+     "answer": true
+    },
+    "RBC แตกง่าย"
+   ]
   },
   "13": {
-   "explanation": "COPD (chronic hypoxia): DPGM ↑ → 2,3-BPG ↑",
+   "explanation": "COPD → hypoxia ทำให้ RBC เพิ่มกิจกรรม diphosphoglycerate mutase สร้าง 2,3-BPG ชดเชย",
    "option_why": {
-    "A": "1,3 BPG ไม่ใช่การ compensate",
-    "B": "Methemoglobin reductase ไม่",
-    "C": "2,3 BPG ↓ ผิด",
-    "D": "✓ DPG mutase ↑ → 2,3-BPG ↑",
-    "E": "G3P ↓ ไม่ใช่"
+    "A": "1,3-BPG เป็นสารตั้งต้น ไม่ใช่ตัวชดเชย",
+    "B": "methemoglobin reductase ไม่ใช่การชดเชย hypoxia",
+    "C": "ใน hypoxia 2,3-BPG เพิ่ม ไม่ลด",
+    "D": "✓ BPG mutase เพิ่ม 2,3-BPG ลด O2 affinity ปล่อย O2 ให้เนื้อเยื่อ",
+    "E": "G3P ไม่ใช่ตัวหลัก"
    },
-   "key_concept": "• Hypoxia → 2,3-BPG ↑ → right shift\n• สรุป: COPD (chronic hypoxia): DPGM ↑ → 2,3-BPG ↑"
+   "key_concept": "• hypoxia → 2,3-BPG ↑ → right shift\n• COPD เรื้อรังมี polycythemia ร่วม",
+   "mechanism": [
+    "COPD มี hypoxia",
+    "bisphosphoglycerate mutase เพิ่ม",
+    {
+     "s": "2,3-BPG สูงขึ้น",
+     "answer": true
+    },
+    "Hb ปล่อย O2 ง่ายขึ้น"
+   ]
   },
   "15": {
-   "explanation": "กินไส้กรอก (nitrite) → methemoglobinemia (SpO₂ 80% PaO₂ ปกติ)",
+   "explanation": "กินไส้กรอก (nitrite) → methemoglobinemia SpO2 ต่ำแต่ PaO2 ปกติ",
    "option_why": {
-    "A": "Lead ไม่",
-    "B": "Cyanide ไม่",
-    "C": "Mercury ไม่",
-    "D": "2,3-DPG ไม่",
-    "E": "✓ Methemoglobin"
+    "A": "lead ไม่ทำ SpO2 ต่ำ",
+    "B": "cyanide ยับยั้ง cytochrome oxidase",
+    "C": "mercury ไม่ใช่",
+    "D": "2,3-DPG ปรับ O2 affinity",
+    "E": "✓ Fe3+ ใน MetHb ไม่จับ O2 ทำให้ SpO2 ต่ำ"
    },
-   "key_concept": "• Nitrite → Fe³⁺\n• Methylene blue"
+   "key_concept": "• MetHb: PaO2 ปกติ SpO2 ~85%\n• chocolate brown blood",
+   "mechanism": [
+    "nitrite ออกซิไดซ์ heme",
+    "Fe2+ → Fe3+",
+    {
+     "s": "MetHb จับ O2 ไม่ได้",
+     "answer": true
+    },
+    "dyspnea SpO2 ต่ำ"
+   ]
   },
   "29": {
-   "explanation": "พ่อ β⁺/β⁺ แม่ β⁺/βE · ลูกรับ HbE 50% (AI draft)",
+   "explanation": "พ่อ β+/β+ แม่ β+/βE: ลูกได้รับ βE จากแม่ 50%",
    "option_why": {
-    "A": "0%",
-    "B": "25%",
-    "C": "✓ 50% (ได้ βE จากแม่ ½)",
-    "D": "75%",
-    "E": "100%"
+    "A": "ลูกมีโอกาสรับ βE จากแม่ จึงไม่ใช่ 0%",
+    "B": "25% ต่ำเกินไป",
+    "C": "✓ แม่มี 1 allele จาก 2 เป็น βE โอกาส 50%",
+    "D": "75% ไม่ถูกตามกฎ Mendel",
+    "E": "100% ถ้าแม่ homozygous"
    },
-   "key_concept": "• βE จากแม่ ½\n• พ่อให้ β⁺ ทุกกรณี"
+   "key_concept": "• autosomal recessive: allele ละ 50% จากพาหะ\n• พ่อ β+/β+ ไม่มี βE",
+   "mechanism": [
+    "พ่อให้ β+ เสมอ",
+    "แม่ให้ β+ หรือ βE อย่างละ 50%",
+    {
+     "s": "โอกาสได้ βE = 50%",
+     "answer": true
+    },
+    "ลูก β+/βE"
+   ]
   },
   "32": {
-   "explanation": "เส้นประสาทอักเสบ + pellagra-like + hypochromic iron ↑ → sideroblastic จากขาด vitamin B6 (AI draft)",
+   "explanation": "ไม่มี B6 (pyridoxine) ทำให้ ALAS ทำงานไม่ได้ เกิด sideroblastic anemia และอาการแบบ pellagra",
    "option_why": {
-    "A": "✓ ขาด B6 → ALAS2 cofactor ↓",
-    "B": "B9 ไม่",
-    "C": "B12 ไม่",
-    "D": "ALA synthesis defect ก็ถูกกลไก",
-    "E": "ALAS ↑ ไม่ใช่"
+    "A": "✓ B6 เป็น cofactor ของ ALAS และ niacin synthesis",
+    "B": "folate ขาดทำ megaloblastic",
+    "C": "B12 ขาดทำ megaloblastic + neuropathy",
+    "D": "ALAS ผิดปกติโดยตรงเป็นผลของ B6 ขาด",
+    "E": "ALAS substrate เพิ่มไม่ใช่สาเหตุ"
    },
-   "key_concept": "• B6 = ALAS cofactor\n• Sideroblastic: ring sideroblast"
+   "key_concept": "• sideroblastic: ring sideroblast, iron สูง\n• B6 → ALAS (heme) และ tryptophan → niacin",
+   "mechanism": [
+    "B6 ขาด",
+    "ALAS ขาด cofactor",
+    {
+     "s": "heme synthesis ลด iron สะสมใน mitochondria",
+     "answer": true
+    },
+    "hypochromic microcytic + iron สูง"
+   ]
   },
   "34": {
-   "explanation": "Iron deficiency (ferritin 7.4, TIBC สูง) → ferrous fumarate",
+   "explanation": "IDA (ferritin 7, TIBC สูง) ให้ ferrous fumarate",
    "option_why": {
-    "A": "Prasugrel ไม่",
-    "B": "Idarucizumab ไม่",
-    "C": "Folic acid ไม่",
-    "D": "✓ Ferrous fumarate"
+    "A": "prasugrel เป็น antiplatelet",
+    "B": "idarucizumab เป็นยาต้าน dabigatran",
+    "C": "folic acid ใช้ megaloblastic",
+    "D": "✓ เหล็กรับประทานแก้ iron deficiency"
    },
-   "key_concept": "• IDA: ferritin ↓ TIBC ↑\n• Oral iron first-line"
+   "key_concept": "• IDA: serum iron ต่ำ, ferritin ต่ำ, TIBC สูง\n• รักษา oral iron"
   },
   "36": {
-   "explanation": "IDA ไม่ตอบสนอง oral iron (adherent, ไม่มี GI) → IV iron (AI draft)",
+   "explanation": "IDA ที่กินเหล็กแล้ว Hb ไม่ขึ้นทั้งที่ทนยาได้ ให้ iron IV (ดูดซึมไม่ดีหรือเสียเลือดต่อเนื่อง)",
    "option_why": {
-    "A": "EPO ไม่",
-    "B": "Vit C ช่วยเล็กน้อย",
-    "C": "Transfusion เฉพาะรุนแรง",
-    "D": "✓ IV iron เมื่อ oral ไม่ได้ผล",
-    "E": "เพิ่มขนาดไม่ช่วย (malabsorption)"
+    "A": "EPO ไม่ใช่การรักษา IDA",
+    "B": "vitamin C ช่วยดูดซึมได้เล็กน้อย",
+    "C": "transfusion ไม่จำเป็นถ้าไม่ช็อก",
+    "D": "✓ IV iron ข้ามปัญหาการดูดซึมและแก้ไขได้เร็ว",
+    "E": "เพิ่มขนาดยากินเพิ่มผลข้างเคียงโดยไม่ได้เพิ่มการดูดซึม"
    },
-   "key_concept": "• Oral fail → IV iron\n• ตรวจหา blood loss/ malabsorption"
+   "key_concept": "• สาเหตุล้มเหลว: ไม่ comply, malabsorption, เสียเลือดต่อ\n• IV iron เมื่อ oral ไม่ได้ผล"
   },
   "37": {
-   "explanation": "IDA ไม่ตอบสนอง ferrous fumarate → IV iron (AI draft)",
+   "explanation": "ให้ oral iron ไม่ดีขึ้น เปลี่ยนเป็น IV iron",
    "option_why": {
-    "A": "✓ IV iron",
-    "B": "Folic acid ไม่ช่วย IDA"
+    "A": "✓ IV iron เมื่อ oral ไม่ได้ผล",
+    "B": "folic acid ไม่ใช่การรักษา IDA"
    },
-   "key_concept": "• Oral iron failure → IV\n• สรุป: IDA ไม่ตอบสนอง ferrous fumarate → IV iron (AI draft)"
+   "key_concept": "• oral iron ล้มเหลวให้ IV iron\n• หาสาเหตุเสียเลือดร่วม"
   },
   "41": {
-   "explanation": "Menorrhagia + ครอบครัว epistaxis + aPTT ยาว PT ปกติ → VWD",
+   "explanation": "ช้ำง่าย ประจำเดือนมาก aPTT ยาว PT ปกติ ครอบครัวเลือดกำเดา = von Willebrand disease",
    "option_why": {
-    "A": "Hemophilia A มักผู้ชาย",
-    "B": "✓ VWD",
-    "C": "Acquired hemophilia ไม่มีประวัติครอบครัว",
-    "D": "FXI ก็ aPTT ยาว แต่พบน้อยกว่า",
-    "E": "APDE ไม่"
+    "A": "hemophilia A พบในชาย",
+    "B": "✓ vWD เป็นโรคเลือดออกทางพันธุกรรมที่พบบ่อยที่สุด",
+    "C": "acquired hemophilia A ไม่มีประวัติครอบครัว",
+    "D": "FXI deficiency เลือดออกไม่เด่นที่เยื่อเมือก",
+    "E": "ตัวเลือกไม่ชัดเจน"
    },
-   "key_concept": "• VWD: mucosal bleeding, aPTT ↑\n• สรุป: Menorrhagia + ครอบครัว epistaxis + aPTT ยาว PT ปกติ → VWD"
+   "key_concept": "• vWD: mucocutaneous bleeding\n• aPTT ยาวจาก FVIII ต่ำ",
+   "mechanism": [
+    "vWF ขาด",
+    "platelet adhesion เสียและ FVIII ไม่เสถียร",
+    {
+     "s": "เลือดออกเยื่อเมือก, aPTT ยาว",
+     "answer": true
+    },
+    "ประจำเดือนมาก ช้ำง่าย"
+   ]
   },
   "42": {
    "explanation": "ภาพ purpura/จุดเลือดออกจากหลอดเลือด: ขาด vitamin C (scurvy) (AI draft — ไม่เห็นรูป)",
@@ -196,102 +250,111 @@
    "key_concept": "• ITP: IgG anti-GPIIb/IIIa\n• Isolated thrombocytopenia"
   },
   "44": {
-   "explanation": "SLE + schistocyte + renal → TTP (AI draft)",
+   "explanation": "SLE + schistocyte + ไตเสีย + เกล็ดเลือดต่ำ + PT/aPTT ปกติ = TTP",
    "option_why": {
-    "A": "✓ TTP (ADAMTS13)",
-    "B": "HUS ไม่มี neuro",
-    "C": "Drug induced ไม่",
-    "D": "ITP ไม่มี schistocyte",
-    "E": "DIC ต้อง PT/aPTT ยาว"
+    "A": "✓ TTP จาก anti-ADAMTS13 ใน SLE ได้บ่อย",
+    "B": "HUS พบหลังติดเชื้อ E. coli",
+    "C": "drug-induced ไม่มี schistocyte",
+    "D": "ITP ไม่มี MAHA",
+    "E": "DIC มี PT/aPTT ยาว"
    },
-   "key_concept": "• TTP pentad: MAHA, plt ↓, fever, renal, neuro\n• สรุป: SLE + schistocyte + renal → TTP (AI draft)"
+   "key_concept": "• TTP: MAHA, thrombocytopenia, neuro, renal, fever\n• PT/aPTT ปกติแยกจาก DIC",
+   "mechanism": [
+    "SLE สร้าง anti-ADAMTS13",
+    "ultralarge vWF ไม่ถูกตัด",
+    {
+     "s": "platelet microthrombi",
+     "answer": true
+    },
+    "schistocyte + ไตเสีย + เกล็ดเลือดต่ำ"
+   ]
   },
   "47": {
-   "explanation": "เสียทารกซ้ำ + thrombosis → antiphospholipid (lupus anticoagulant) (AI draft)",
+   "explanation": "แท้งซ้ำ + thrombosis = antiphospholipid syndrome (lupus anticoagulant)",
    "option_why": {
-    "A": "VWF ไม่",
-    "B": "Plasmin ไม่",
-    "C": "Prothrombin ไม่",
-    "D": "✓ Lupus anticoagulant (APS)",
-    "E": "PAI ไม่ใช่สาเหตุ"
+    "A": "vWF ขาดทำให้เลือดออก",
+    "B": "plasmin ขาดอาจทำ thrombosis แต่ไม่ใช่สาเหตุแท้งซ้ำ",
+    "C": "prothrombin ขาดทำเลือดออก",
+    "D": "✓ lupus anticoagulant (APS) ทำ thrombosis และแท้งซ้ำ",
+    "E": "PAI สูงทำให้เสีย fibrinolysis แต่ไม่ใช่ APS"
    },
-   "key_concept": "• APS: recurrent miscarriage + thrombosis\n• aPTT ยาว ไม่แก้ด้วย mixing"
+   "key_concept": "• APS: thrombosis + pregnancy loss + aPTT ยาว (ไม่แก้ด้วยเลือดปกติ)\n• รักษา warfarin/heparin"
   },
   "48": {
-   "explanation": "ขาด TFPI → เสี่ยง thrombosis (AI draft)",
+   "explanation": "TFPI ขาดทำให้ extrinsic pathway ถูกยับยั้งไม่ได้ เสี่ยงลิ่มเลือด",
    "option_why": {
-    "A": "α2-antiplasmin ↓ → bleeding",
-    "B": "✓ TFPI deficiency → thrombosis",
-    "C": "PAI-1 ↓ → bleeding",
-    "D": "PAI-2 ไม่",
-    "E": "TAFI ↓ → fibrinolysis ↑"
+    "A": "α2-antiplasmin ขาดทำให้เลือดออก",
+    "B": "✓ TFPI ยับยั้ง TF–FVIIa–FXa จึงขาดแล้ว thrombosis",
+    "C": "PAI-1 ขาดทำให้เลือดออก ไม่ใช่ thrombosis",
+    "D": "PAI-2 พบในรก ไม่ใช่สาเหตุ",
+    "E": "TAFI ขาดทำให้ fibrinolysis เพิ่ม"
    },
-   "key_concept": "• Anticoagulants ธรรมชาติ: AT, protein C/S, TFPI\n• สรุป: ขาด TFPI → เสี่ยง thrombosis (AI draft)"
+   "key_concept": "• natural anticoagulant: antithrombin, protein C/S, TFPI\n• fibrinolysis inhibitors ขาด → เลือดออก"
   },
   "51": {
-   "explanation": "Tourniquet test: (SBP+DBP)/2 ค้าง 5 นาที positive >10 จุด/ตารางนิ้ว",
+   "explanation": "Tourniquet test ใช้ (SBP+DBP)/2 นาน 5 นาที ผลบวก >10 จุดต่อ 1 ตารางนิ้ว",
    "option_why": {
-    "A": "SBP/2 ผิด",
-    "B": "DBP/2 ผิด",
-    "C": "✓ (SBP+DBP)/2 5 นาที",
-    "D": "10 นาที ผิด",
-    "E": "(SBP−DBP)/2 ผิด"
+    "A": "SBP/2 ความดันต่ำเกินไป",
+    "B": "DBP/2 ความดันต่ำเกินไป",
+    "C": "✓ ความดันเฉลี่ย 5 นาที ตามแนวทาง WHO",
+    "D": "ความดันและเวลาไม่ตรงมาตรฐาน WHO",
+    "E": "(SBP−DBP)/2 ไม่ใช่สูตรที่ใช้ และ 10 นาทีนานเกินไป"
    },
-   "key_concept": "• Dengue: tourniquet test\n• Positive >10 petechiae/sq in"
+   "key_concept": "• WHO: tourniquet ที่ MAP นาน 5 นาที\n• ผลบวกพบในไข้เลือดออกและโรคที่หลอดเลือดเปราะ"
   },
   "53": {
-   "explanation": "เลือดออกง่ายในครอบครัว → ตรวจ vWF",
+   "explanation": "เลือดออกเหงือกในครอบครัว multiple ecchymosis ยืนยัน vWD ด้วยการตรวจ vWF",
    "option_why": {
-    "A": "Fibrinogen ไม่",
-    "B": "Factor VII ไม่",
-    "C": "Factor VIII ไม่ใช่หลัก",
-    "D": "✓ vWF",
-    "E": "Factor X ไม่"
+    "A": "fibrinogen ตรวจ afibrinogenemia",
+    "B": "FVII เกี่ยวข้องกับ PT",
+    "C": "FVIII ยาวในทั้ง hemophilia และ vWD",
+    "D": "✓ vWF antigen/activity ยืนยัน vWD",
+    "E": "factor X เป็นปัจจัยใน common pathway ไม่ใช่ตัวยืนยัน vWD"
    },
-   "key_concept": "• VWD: ตรวจ VWF:Ag, activity, FVIII\n• สรุป: เลือดออกง่ายในครอบครัว → ตรวจ vWF"
+   "key_concept": "• vWD: vWF:Ag, vWF:RCo, FVIII, multimer\n• เลือดออกเยื่อเมือกเด่น"
   },
   "71": {
-   "explanation": "Burkitt lymphoma มาจาก B lymphocyte",
+   "explanation": "Burkitt lymphoma เกิดจาก B lymphocyte (t(8;14) c-MYC)",
    "option_why": {
-    "A": "T cell ไม่",
-    "B": "✓ B lymphocyte (germinal center)",
-    "C": "NK ไม่",
-    "D": "Neutrophil ไม่",
-    "E": "Monocyte ไม่"
+    "A": "T cell ไม่ใช่",
+    "B": "✓ Burkitt เป็น B-cell lymphoma ที่มี c-MYC",
+    "C": "NK cell ไม่ใช่",
+    "D": "neutrophil ไม่ใช่",
+    "E": "monocyte ไม่ใช่"
    },
-   "key_concept": "• Burkitt: t(8;14) MYC, EBV\n• สรุป: Burkitt lymphoma มาจาก B lymphocyte"
+   "key_concept": "• t(8;14) c-MYC–IgH\n• starry sky, EBV (endemic)"
   },
   "73": {
-   "explanation": "Plt 1.2 ล้าน + stroke → essential thrombocythemia",
+   "explanation": "เกล็ดเลือด 1.2 ล้านและ stroke = essential thrombocythemia",
    "option_why": {
-    "A": "ALL",
-    "B": "CLL",
-    "C": "CML",
-    "D": "✓ ET"
+    "A": "ALL มี blast และ cytopenia",
+    "B": "CLL มี lymphocytosis",
+    "C": "CML มี WBC สูงและ BCR-ABL",
+    "D": "✓ ET: platelet สูงมาก CBC อื่นปกติ เสี่ยง thrombosis"
    },
-   "key_concept": "• ET: JAK2/CALR/MPL\n• Thrombosis risk"
+   "key_concept": "• ET: JAK2/CALR/MPL\n• รักษา hydroxyurea, aspirin"
   },
   "77": {
-   "explanation": "Blast 90% → immunophenotyping เพื่อ definitive diagnosis (ALL vs AML)",
+   "explanation": "Blast 90% ต้องตรวจ immunophenotyping เพื่อยืนยันชนิด leukemia",
    "option_why": {
-    "A": "✓ Immunophenotyping",
-    "B": "SPE ไม่",
-    "C": "JAK2 ไม่",
-    "D": "Smear ไม่เพียงพอ",
-    "E": "Ph ไม่ใช่ลำดับแรก"
+    "A": "✓ flow cytometry แยก AML/ALL จาก lineage marker",
+    "B": "protein electrophoresis ใช้ myeloma",
+    "C": "JAK2 ใช้ MPN",
+    "D": "smear ช่วยสงสัย แต่ไม่ยืนยัน",
+    "E": "Philadelphia ใช้ CML"
    },
-   "key_concept": "• Acute leukemia: flow cytometry\n• สรุป: Blast 90% → immunophenotyping เพื่อ definitive diagnosis (ALL vs AML)"
+   "key_concept": "• acute leukemia: blast ≥20%\n• definite dx: flow cytometry + cytochemistry"
   },
   "78": {
-   "explanation": "APL: t(15;17) PML–RARα",
+   "explanation": "APL เกี่ยวข้องกับ t(15;17)",
    "option_why": {
-    "A": "t(8;21) AML-M2",
-    "B": "t(9;22) CML",
-    "C": "t(9;11) M5",
-    "D": "inv(16) M4eo",
-    "E": "✓ t(15;17) APL"
+    "A": "t(8;21) พบ AML M2",
+    "B": "t(9;22) พบ CML",
+    "C": "t(9;11) พบ AML monocytic",
+    "D": "inv(16) พบ AML M4eo",
+    "E": "✓ PML–RARα ตอบ ATRA"
    },
-   "key_concept": "• APL: ATRA, DIC\n• สรุป: APL: t(15;17) PML–RARα"
+   "key_concept": "• APL: DIC, ATRA\n• t(15;17) → PML–RARα"
   },
   "81": {
    "explanation": "พ่อ A แม่ AB → ลูก A, B, AB (AI draft)",
@@ -302,15 +365,15 @@
    "key_concept": "• ABO inheritance\n• AB × AO → A, B, AB"
   },
   "82": {
-   "explanation": "h/h Se/se B/O → O Bombay (ไม่มี H → ไม่แสดง B)",
+   "explanation": "hh ไม่มี H antigen = Bombay phenotype",
    "option_why": {
-    "A": "B phenotype ไม่",
-    "B": "O ปกติ ไม่",
-    "C": "✓ O Bombay",
-    "D": "B para-Bombay ไม่ใช่เพราะ hh",
-    "E": "O para-Bombay ไม่ใช่"
+    "A": "ไม่มี H จึงแสดง B ไม่ได้",
+    "B": "ไม่ใช่เพราะ para-Bombay",
+    "C": "✓ hh ตรวจแล้วเหมือน group O แต่ซีรั่มมี anti-H",
+    "D": "para-Bombay มี H เล็กน้อย",
+    "E": "para-Bombay มี H เล็กน้อย"
    },
-   "key_concept": "• Bombay: hh\n• ไม่มี H → ไม่สร้าง A/B"
+   "key_concept": "• Bombay: hh, anti-H ซีรั่ม\n• ให้เลือด Bombay เท่านั้น"
   },
   "86": {
    "explanation": "Single-donor platelet เก็บ 20–24 °C 5 วัน",
@@ -324,15 +387,24 @@
    "key_concept": "• PC: 20–24 °C 5 วัน\n• FFP −18 °C 12 เดือน"
   },
   "88": {
-   "explanation": "PPH + massive transfusion → cryoprecipitate ให้ fibrinogen",
+   "explanation": "PPH + massive transfusion ให้ cryoprecipitate เพื่อเติม fibrinogen",
    "option_why": {
-    "A": "✓ Fibrinogen",
+    "A": "✓ cryo อุดมด้วย fibrinogen, FVIII, vWF, FXIII",
     "B": "vWF มีใน cryo แต่เป้าหมายคือ fibrinogen",
-    "C": "TF ไม่",
-    "D": "Factor VII ไม่มีใน cryo",
-    "E": "Factor X ไม่มี"
+    "C": "TF ไม่ใช่ factor ที่เติม",
+    "D": "FVII ไม่มีใน cryo",
+    "E": "FX ไม่มีใน cryo"
    },
-   "key_concept": "• Cryo: fibrinogen, VIII, VWF, XIII\n• Fibrinogen <150 → cryo"
+   "key_concept": "• massive transfusion: fibrinogen <150 → cryo\n• PPH ใช้ fibrinogen concentrate/cryo",
+   "mechanism": [
+    "PPH + ให้เลือดมาก",
+    "fibrinogen ถูกใช้และเจือจาง",
+    {
+     "s": "cryo เติม fibrinogen",
+     "answer": true
+    },
+    "เลือดแข็งตัวดีขึ้น"
+   ]
   },
   "95": {
    "explanation": "ไข้หลังให้ platelet: cytokine passive (FNHTR)",
@@ -346,14 +418,23 @@
    "key_concept": "• FNHTR จาก cytokine ใน platelet ที่เก็บ\n• Leukoreduction ลด"
   },
   "97": {
-   "explanation": "CGD: mutation ของ gene NADPH oxidase ใน phagocyte",
+   "explanation": "CGD จาก NADPH oxidase ของ phagocyte กลายพันธุ์",
    "option_why": {
-    "A": "✓ NADPH oxidase mutation",
-    "B": "ไม่ใช่การให้เลือด",
-    "C": "ไม่ใช่",
-    "D": "ไม่ใช่"
+    "A": "✓ NADPH oxidase เสียทำให้สร้าง superoxide ไม่ได้",
+    "B": "irradiated PRC ไม่เกี่ยว",
+    "C": "premedication ไม่เกี่ยว",
+    "D": "LPPRC ไม่เกี่ยว"
    },
-   "key_concept": "• CGD: NBT/DHR\n• X-linked gp91phox"
+   "key_concept": "• CGD: catalase+ organism, NBT test ลบ\n• X-linked (CYBB) พบมากสุด",
+   "mechanism": [
+    "NADPH oxidase กลายพันธุ์",
+    "ไม่สร้าง respiratory burst",
+    {
+     "s": "ฆ่าแบคทีเรีย catalase-positive ไม่ได้",
+     "answer": true
+    },
+    "granuloma ติดเชื้อซ้ำ"
+   ]
   }
  },
  "duplicate_groups": {},
