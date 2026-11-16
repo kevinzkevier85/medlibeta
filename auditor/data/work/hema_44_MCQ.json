@@ -117,17 +117,26 @@
     "E": "Hb Pakse"
    },
    "correct": "C",
-   "explanation": "Polycythemia + HbA2 5.4% + abnormal Hb 91.9% → Hb Tak",
+   "explanation": "หน้าแดง คัน ปวดหัว จากเม็ดเลือดแดงมาก ร่วมกับ abnormal Hb 92% = Hb Tak ซึ่งจับออกซิเจนแน่นเกิน",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "HbS ไม่",
-    "B": "HbC ไม่",
-    "C": "✓ Hb Tak",
-    "D": "Hb Malay ไม่",
-    "E": "Hb Pakse ไม่"
+    "A": "HbS ทำให้ซีดจาก hemolysis และ sickling ไม่ใช่เลือดข้น",
+    "B": "HbC ทำให้ซีดเล็กน้อย มี target cell และ crystal",
+    "C": "✓ Hb Tak มี O2 affinity สูง เนื้อเยื่อขาด O2 กระตุ้น EPO เกิด erythrocytosis",
+    "D": "Hb Malay เป็น β+ thalassemic hemoglobinopathy ทำให้ซีด",
+    "E": "Hb Pakse เป็น α-chain variant คล้าย Hb Constant Spring ทำให้ซีด"
    },
-   "key_concept": "• Hb Tak: β-chain elongation (high O₂ affinity)\n• Hb Malay: cryptic splice β\n• Hb Pakse: α-chain variant",
+   "key_concept": "• Hb Tak: β chain ยาวขึ้น 11 กรดอะมิโน, high O2 affinity → polycythemia\n• homozygous Hb Tak ไม่ซีด แต่เลือดข้น",
+   "mechanism": [
+    "Hb Tak จับ O2 แน่น ไม่ปล่อยให้เนื้อเยื่อ",
+    "ไตรับรู้ภาวะขาด O2 หลั่ง EPO",
+    {
+     "s": "ไขกระดูกสร้าง RBC เพิ่ม (secondary erythrocytosis)",
+     "answer": true
+    },
+    "หน้าแดง คัน ปวดหัว"
+   ],
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 44].pdf",
     "page": 1,
@@ -215,17 +224,26 @@
     "E": "BM failure"
    },
    "correct": "C",
-   "explanation": "EPO ต่ำ → renal failure (ไตผลิต EPO)",
+   "explanation": "EPO สร้างที่ไต ไตวายจึงทำให้ระดับ EPO ต่ำ",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "Hypoxia → EPO ↑",
-    "B": "Anemia → EPO ↑",
-    "C": "✓ Renal failure → EPO ↓",
-    "D": "Liver failure ไม่ใช่หลัก",
-    "E": "BM failure → EPO ↑"
+    "A": "hypoxia กระตุ้นให้ EPO สูงขึ้น",
+    "B": "anemia ทำให้ EPO สูงขึ้นชดเชย",
+    "C": "✓ peritubular interstitial cell ของไตเสียหาย สร้าง EPO ไม่ได้",
+    "D": "ตับสร้าง EPO ส่วนน้อย ตับวายไม่ทำให้ EPO ต่ำชัด",
+    "E": "ไขกระดูกล้มเหลวทำให้ซีด EPO จึงสูง"
    },
-   "key_concept": "• EPO ผลิตจาก peritubular fibroblast ของไต\n• CKD → anemia → ให้ rhEPO",
+   "key_concept": "• EPO: 90% จากไต (peritubular cell) กระตุ้นด้วย HIF เมื่อ O2 ต่ำ\n• EPO ต่ำ: CKD, polycythemia vera",
+   "mechanism": [
+    "ไตวายเรื้อรัง",
+    "เซลล์สร้าง EPO ถูกทำลาย",
+    {
+     "s": "EPO ในเลือดต่ำ",
+     "answer": true
+    },
+    "normocytic anemia"
+   ],
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 44].pdf",
     "page": 2,
@@ -362,17 +380,26 @@
     "E": "1/32"
    },
    "correct": "C",
-   "explanation": "พ่อ β-trait + HbH, แม่ β-thal/HbE + α-trait → ลูก β-thal + HbH = 1/2×1/4 = 1/8",
+   "explanation": "โอกาสลูกเป็น β-thalassemia ร่วมกับ HbH คิดจากการคูณโอกาสของยีน β และยีน α ได้ 1/8 ตามเฉลย",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "½",
-    "B": "¼",
-    "C": "✓ 1/8 (β-thal ½ × HbH ¼)",
-    "D": "1/16",
-    "E": "1/32"
+    "A": "1/2 เป็นโอกาสของยีนเดียวจากพ่อหรือแม่คนเดียว",
+    "B": "1/4 คิดเพียงยีนชุดเดียว (β หรือ α) ยังไม่คูณอีกชุด",
+    "C": "✓ คูณโอกาสได้ชุดยีน β ที่ต้องการ กับโอกาสได้ชุดยีน α แบบ HbH = 1/8",
+    "D": "1/16 น้อยเกิน เกิดเมื่อทั้งสองชุดยีนมีโอกาส 1/4",
+    "E": "1/32 น้อยเกินจากการคูณซ้ำ"
    },
-   "key_concept": "• β-thal จากพ่อ ½\n• HbH (α-thal) ต้อง 3 gene deletion\n• คูณความน่าจะเป็นอิสระ",
+   "key_concept": "• ยีน α (โครโมโซม 16) และ β (โครโมโซม 11) ถ่ายทอดอิสระ จึงคูณโอกาสกัน\n• HbH = เหลือยีน α ทำงาน 1 ใน 4 (--/-α)",
+   "mechanism": [
+    "แยกคิดยีน β: โอกาสลูกได้ genotype ที่ต้องการ",
+    "แยกคิดยีน α: โอกาสลูกได้ --/-α",
+    {
+     "s": "ยีนสองชุดอิสระกัน นำโอกาสมาคูณ",
+     "answer": true
+    },
+    "ได้ 1/8"
+   ],
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 44].pdf",
     "page": 2,
@@ -658,16 +685,25 @@
     "E": "E. Anti-Human neutrophil antigen"
    },
    "correct": "E",
-   "explanation": "TRALI หลัง FFP: anti-HNA/anti-HLA antibody → noncardiogenic pulmonary edema",
+   "explanation": "หอบและไข้หลังได้ FFP ร่วมกับ infiltration สองข้าง = TRALI ตรวจหา anti-HNA ในพลาสมาผู้บริจาค",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "ABO ไม่เกี่ยว",
-    "B": "Autoantibody / JVP ไม่ใช่ (JVP ใช้แยก TACO)",
-    "D": "Hb typing ไม่",
-    "E": "✓ Anti-human neutrophil antigen"
+    "A": "ABO type ใช้หาการให้เลือดผิดหมู่ ซึ่งมาด้วย hemolysis",
+    "B": "autoantibody/JVP ใช้แยก TACO (JVP สูง) ไม่บอกกลไก TRALI",
+    "D": "Hb typing ไม่เกี่ยวกับปฏิกิริยาจากการให้เลือด",
+    "E": "✓ antibody ต่อ neutrophil antigen (หรือ HLA) ของผู้บริจาคเป็นกลไกของ TRALI"
    },
-   "key_concept": "• TRALI: dyspnea+bilateral infiltrates ภายใน 6 ชม.\n• TACO: JVP ↑ BNP ↑\n• Donor anti-HLA/HNA",
+   "key_concept": "• TRALI: ภายใน 6 ชม. หลังให้เลือด, non-cardiogenic pulmonary edema\n• พบบ่อยกับพลาสมาจากผู้บริจาคหญิงที่เคยตั้งครรภ์",
+   "mechanism": [
+    "พลาสมาผู้บริจาคมี anti-HNA/anti-HLA",
+    "จับ neutrophil ของผู้รับในหลอดเลือดปอด",
+    {
+     "s": "neutrophil ปล่อยสารทำลาย capillary ปอดรั่ว",
+     "answer": true
+    },
+    "pulmonary edema สองข้าง + ไข้"
+   ],
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 44].pdf",
     "page": 4,
@@ -804,17 +840,17 @@
     "E": "Absent heptoglobin"
    },
    "correct": "D",
-   "explanation": "Intravascular hemolysis: hemoglobinemia ↑, hemoglobinuria, hemosiderinuria, haptoglobin ↓ · ต้นฉบับเลือก D",
+   "explanation": "ข้อที่ไม่ใช่ลักษณะของ intravascular hemolysis ตามเฉลยคือ hemoglobulinemia (คำนี้ไม่ใช่ hemoglobinemia)",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "Jaundice พบ",
-    "B": "Hemoglobinuria พบ",
-    "C": "Hemosiderinuria พบ",
-    "D": "✓ ต้นฉบับ: ข้อที่ถือว่าไม่ใช่ลักษณะ (ตัวเลือกพิมพ์ 'hemoglobulinemia')",
-    "E": "Haptoglobin ↓ พบ"
+    "A": "jaundice พบได้จาก unconjugated bilirubin สูง",
+    "B": "hemoglobinuria พบเมื่อ free Hb เกิน haptoglobin",
+    "C": "hemosiderinuria พบในภาวะเรื้อรัง จากเหล็กสะสมในท่อไต",
+    "D": "✓ hemoglobulinemia (globulin ในเลือด) ไม่ใช่ลักษณะ; ของจริงคือ hemoglobinemia",
+    "E": "haptoglobin หมดไปเพราะจับ free Hb"
    },
-   "key_concept": "• IVH: free Hb, hemoglobinuria, haptoglobin ↓\n• EVH: spleen, ไม่มี hemoglobinuria",
+   "key_concept": "• intravascular: hemoglobinemia, hemoglobinuria, hemosiderinuria, haptoglobin ↓, LDH ↑\n• extravascular: ม้ามโต, spherocyte, ไม่มี hemoglobinuria",
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 44].pdf",
     "page": 4,
@@ -994,17 +1030,26 @@
     "E": "APDE"
    },
    "correct": "C",
-   "explanation": "ไม่มีตัวโจทย์ครบ · ต้นฉบับ: consumptive coagulopathy (DIC)",
+   "explanation": "ภาพผู้ป่วยเลือดออกร่วมกับ PT/aPTT ยาวและเกล็ดเลือดต่ำ เกิดจาก consumptive coagulopathy (DIC)",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "Vit K deficiency ไม่ใช่",
-    "B": "VWD ไม่ใช่",
-    "C": "✓ Consumptive coagulopathy (DIC)",
-    "D": "ITP ไม่",
-    "E": "APDE ไม่ใช่ตัวเลือก"
+    "A": "vitamin K deficiency เกล็ดเลือดปกติ",
+    "B": "von Willebrand disease PT และเกล็ดเลือดปกติ",
+    "C": "✓ factor และเกล็ดเลือดถูกใช้ไปพร้อมกันในลิ่มเลือดทั่วร่างกาย",
+    "D": "ITP มีแต่เกล็ดเลือดต่ำ coagulogram ปกติ",
+    "E": "APDE เกล็ดเลือดจำนวนปกติ coagulogram ปกติ"
    },
-   "key_concept": "• DIC: PT/aPTT ยาว, fibrinogen ↓, D-dimer ↑\n• สาเหตุ: sepsis, trauma, malignancy",
+   "key_concept": "• DIC: PT/aPTT ยาว, platelet ↓, fibrinogen ↓, D-dimer ↑\n• แยกโรคเลือดออกด้วย platelet count + PT + aPTT",
+   "mechanism": [
+    "โรคต้นเหตุกระตุ้น coagulation ทั่วร่างกาย",
+    "เกิด microthrombi",
+    {
+     "s": "factor และเกล็ดเลือดถูกใช้หมด",
+     "answer": true
+    },
+    "เลือดออกหลายตำแหน่ง"
+   ],
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 44].pdf",
     "page": 5,
@@ -1286,17 +1331,17 @@
     "E": "จ าไมัไดัละ"
    },
    "correct": "C",
-   "explanation": "Normocytic anemia ใน CKD → erythropoietin",
+   "explanation": "ตามเฉลยต้นฉบับ normocytic anemia ในโจทย์นี้ (บริบทไตเสื่อม) รักษาด้วย erythropoietin",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "Folate ไม่",
-    "B": "B12 ไม่",
-    "C": "✓ Erythropoietin",
-    "D": "Dipyridamole antiplatelet",
-    "E": "ตัวเลือกจำไม่ได้"
+    "A": "folate ใช้กับ macrocytic anemia",
+    "B": "vitamin B12 ใช้กับ macrocytic anemia",
+    "C": "✓ normocytic anemia จาก EPO ต่ำ ให้ ESA",
+    "D": "dipyridamole เป็นยาต้านเกล็ดเลือด ไม่รักษาโลหิตจาง",
+    "E": "ตัวเลือกนี้ผู้จดข้อสอบจำไม่ได้ จึงไม่ใช่คำตอบ"
    },
-   "key_concept": "• Anemia of CKD: EPO deficiency\n• rhEPO + iron",
+   "key_concept": "• normocytic: CKD, chronic disease, เสียเลือดเฉียบพลัน, ไขกระดูกล้มเหลว\n• microcytic → เหล็ก · macrocytic → B12/folate",
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 44].pdf",
     "page": 6,
@@ -1394,17 +1439,26 @@
     "E": "cyanocobalamin"
    },
    "correct": "C",
-   "explanation": "Tetracycline chelate iron ลดการดูดซึม",
+   "explanation": "Tetracycline จับกับเหล็ก (chelation) ในลำไส้ ทำให้ดูดซึมลดลงทั้งคู่",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "Folic acid ไม่",
-    "B": "Pyridoxine ไม่",
-    "C": "✓ Tetracycline",
-    "D": "EPO ไม่",
-    "E": "B12 ไม่"
+    "A": "folic acid ไม่รบกวนการดูดซึมเหล็ก",
+    "B": "pyridoxine ไม่รบกวนการดูดซึมเหล็ก",
+    "C": "✓ tetracycline จับ Fe2+/Fe3+ เป็นสารเชิงซ้อนที่ไม่ดูดซึม",
+    "D": "erythropoietin เพิ่มการใช้เหล็ก ไม่ลดการดูดซึม",
+    "E": "cyanocobalamin ไม่รบกวนการดูดซึมเหล็ก"
    },
-   "key_concept": "• Tetracycline + Fe/Ca/antacid: chelation\n• แยกเวลากิน 2–3 ชม.",
+   "key_concept": "• tetracycline/quinolone จับ cation (Fe, Ca, Mg, Al) ต้องเว้นห่าง 2 ชม.\n• antacid/PPI ลดการดูดซึมเหล็กจาก pH สูง",
+   "mechanism": [
+    "กินเหล็กพร้อม tetracycline",
+    "เกิด chelate complex ในลำไส้",
+    {
+     "s": "ทั้งเหล็กและยาดูดซึมลดลง",
+     "answer": true
+    },
+    "รักษาไม่ได้ผล"
+   ],
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 44].pdf",
     "page": 6,
@@ -1486,17 +1540,17 @@
     "E": "60 32 ขัอใดควรใหัยา Cyanocobalamine A. Anemia with dysphagia Cheilosis gastritis B. Infant overgrowth C. ขาด intrinsic factor D. Gastric ulcer bleeding E. Anemia of small rbc containing hypohemoglobi"
    },
    "correct": "C",
-   "explanation": "Bone marrow cellularity ผู้ใหญ่ ~40–60% (100 − อายุ ± 10)",
+   "explanation": "cellularity ของไขกระดูก ≈ 100 − อายุ ชายอายุ 40 ปีจึง ~60% (ต้นฉบับพิมพ์ตัวเลือกซ้ำ จึงยอมรับสองข้อ)",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "30 ต่ำไป",
-    "B": "40 (C) ต้นฉบับ",
-    "C": "✓ 40 (ต้นฉบับยอมรับ)",
-    "D": "50 ก็อยู่ในช่วง",
-    "E": "✓ 60 (ต้นฉบับยอมรับ)"
+    "A": "30% ต่ำเกินสำหรับอายุ 40 เป็นค่าของคนอายุ ~70",
+    "B": "40% ต่ำกว่าค่าคาดหมายของอายุ 40",
+    "C": "✓ ตามเฉลยต้นฉบับ (ตัวเลือกพิมพ์ซ้ำกับ B)",
+    "D": "50% เป็นค่าของคนอายุ ~50",
+    "E": "✓ 100 − 40 = 60% ตรงตามสูตร"
    },
-   "key_concept": "• Cellularity ≈ 100 − อายุ\n• ผู้ใหญ่ 40 ปี ≈ 50–60%\n• Hypocellular <30%",
+   "key_concept": "• cellularity (%) ≈ 100 − อายุ (±10)\n• hypocellular = aplastic anemia · hypercellular = leukemia, MPN",
    "also_accept": [
     "E"
    ],
@@ -1545,17 +1599,26 @@
     "E": "Low MCHC"
    },
    "correct": "D",
-   "explanation": "เสียเลือดเฉียบพลัน → reticulocyte ปล่อย → anisocytosis → RDW ↑ (AI draft)",
+   "explanation": "เสียเลือดมากเฉียบพลัน ไขกระดูกปล่อย reticulocyte ตัวใหญ่ออกมาปนกับ RBC เดิม ทำให้ RDW สูง (ตามเฉลย)",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "Low RPI ไม่ใช่ (RPI ↑)",
-    "B": "Low RBC เป็นผลแต่ไม่ใช่ mechanism",
-    "C": "High MCH ไม่",
-    "D": "✓ High RDW (retic ใหญ่ ปะปนกับเม็ดเลือดเดิม)",
-    "E": "Low MCHC ไม่"
+    "A": "RPI สูงขึ้นเมื่อไขกระดูกตอบสนองต่อการเสียเลือด ไม่ต่ำ",
+    "B": "RBC ต่ำเป็นผลโดยตรง ไม่ใช่กลไกตอบสนองของร่างกาย (AI: ระยะแรกเป็นข้อที่เห็นชัดสุด)",
+    "C": "MCH ไม่เพิ่มจากการเสียเลือด",
+    "D": "✓ reticulocyte ขนาดใหญ่ปนกับ RBC ปกติ ขนาดเซลล์หลากหลายขึ้น",
+    "E": "MCHC ต่ำพบในภาวะขาดเหล็กเรื้อรัง"
    },
-   "key_concept": "• Acute blood loss: เริ่ม normocytic\n• Retic ↑ → RDW ↑, MCV ↑เล็กน้อย\n• RPI ↑ ภายใน 3–5 วัน",
+   "key_concept": "• เสียเลือดเฉียบพลัน: normocytic, reticulocyte ขึ้นใน 3–5 วัน\n• RDW สูง = ขนาด RBC ไม่เท่ากัน (anisocytosis)",
+   "mechanism": [
+    "เสียเลือดมาก",
+    "hypoxia กระตุ้น EPO",
+    {
+     "s": "ไขกระดูกปล่อย reticulocyte ตัวใหญ่ → RDW สูง",
+     "answer": true
+    },
+    "Hb ค่อย ๆ กลับมา"
+   ],
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 44].pdf",
     "page": 7,
@@ -1643,17 +1706,17 @@
     "E": "RDW"
    },
    "correct": "B",
-   "explanation": "Reticulocyte count = ประเมินการสร้าง RBC ใหม่",
+   "explanation": "Reticulocyte count บอกการตอบสนองของไขกระดูกในการสร้างเม็ดเลือดแดงได้ดีที่สุด",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "Platelet count ไม่",
-    "B": "✓ Reticulocyte count",
-    "C": "CBC กว้าง",
-    "D": "WBC ไม่",
-    "E": "RDW ไม่"
+    "A": "platelet count บอกสายเกล็ดเลือด",
+    "B": "✓ reticulocyte คือ RBC ตัวอ่อนที่เพิ่งออกจากไขกระดูก",
+    "C": "CBC บอกความรุนแรงของโลหิตจาง ไม่บอกอัตราการสร้าง",
+    "D": "white cell count บอกสายเม็ดเลือดขาว",
+    "E": "RDW บอกความหลากหลายของขนาด RBC"
    },
-   "key_concept": "• Retic count/RPI: marrow response\n• Hct ต่ำ + retic ต่ำ = production ↓",
+   "key_concept": "• reticulocyte สูง: hemolysis, เสียเลือด · ต่ำ: ไขกระดูกสร้างไม่ได้/ขาดสารอาหาร\n• ใช้ corrected reticulocyte / RPI ในคนซีด",
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 44].pdf",
     "page": 7,
@@ -1789,16 +1852,25 @@
     "E": "bilirubin conjugation 5.biliverdin conjugation"
    },
    "correct": "A",
-   "explanation": "Rate-limiting ของ heme degradation = heme oxygenase (heme oxidation)",
+   "explanation": "ขั้นกำหนดอัตราของการสลาย heme คือ heme oxygenase เปลี่ยน heme เป็น biliverdin (heme oxidation)",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "✓ Heme oxidation (heme oxygenase)",
-    "B": "Bilirubin oxidation ไม่",
-    "C": "Biliverdin reductase ไม่ใช่",
-    "E": "Bilirubin conjugation ไม่ใช่"
+    "A": "✓ heme oxygenase เปิดวง porphyrin ได้ biliverdin + CO + Fe",
+    "B": "bilirubin ไม่ถูก oxidize ในทางสลายปกติ",
+    "C": "biliverdin ถูก reduce (ไม่ใช่ oxidize) เป็น bilirubin",
+    "E": "bilirubin conjugation (UGT1A1) เกิดทีหลังในตับ ไม่ใช่ขั้นกำหนดอัตราของการสลาย heme"
    },
-   "key_concept": "• Heme → biliverdin (HO-1/2) rate-limiting\n• Biliverdin → bilirubin (biliverdin reductase)",
+   "key_concept": "• heme → (heme oxygenase) biliverdin → (biliverdin reductase) bilirubin → (UGT1A1) conjugated\n• การสลาย heme เป็นแหล่ง CO ภายในร่างกาย",
+   "mechanism": [
+    "macrophage กิน RBC แก่",
+    {
+     "s": "heme oxygenase ออกซิไดซ์ heme (rate-limiting)",
+     "answer": true
+    },
+    "ได้ biliverdin แล้วรีดิวซ์เป็น bilirubin",
+    "ตับ conjugate แล้วขับทางน้ำดี"
+   ],
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 44].pdf",
     "page": 8,
@@ -1837,17 +1909,17 @@
     "E": "CAF"
    },
    "correct": "D",
-   "explanation": "CAV (cyclophosphamide, doxorubicin, vincristine) ใช้ small cell lung cancer",
+   "explanation": "สูตรเคมีบำบัดของ small cell lung cancer คือ CAV (cyclophosphamide, doxorubicin, vincristine)",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "ABVD = Hodgkin",
-    "B": "CHOP = NHL",
-    "C": "R-CHOP = B-cell NHL",
-    "D": "✓ CAV = SCLC",
-    "E": "CAF = breast"
+    "A": "ABVD ใช้ใน Hodgkin lymphoma",
+    "B": "CHOP ใช้ใน non-Hodgkin lymphoma",
+    "C": "R-CHOP ใช้ใน B-cell lymphoma (CD20+)",
+    "D": "✓ CAV เป็นสูตรของ small cell lung cancer",
+    "E": "CAF ใช้ในมะเร็งเต้านม"
    },
-   "key_concept": "• SCLC: cisplatin-etoposide, CAV\n• Hodgkin: ABVD",
+   "key_concept": "• ABVD–Hodgkin · (R-)CHOP–NHL · CAF/CMF–breast · BEP–testicular\n• A ในสูตร = Adriamycin (doxorubicin) ระวังพิษต่อหัวใจ",
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 44].pdf",
     "page": 8,
@@ -1981,17 +2053,17 @@
     "E": "cannot determined"
    },
    "correct": "D",
-   "explanation": "H/H (Bombay) ไม่ expresses A/B → forward typing เป็น O · ต้นฉบับ AB (ตัวเลือก)",
+   "explanation": "มี H antigen (H/H) และยีน A กับ B → เม็ดเลือดแดงมีทั้ง A และ B antigen = หมู่ AB",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "A",
-    "B": "B",
-    "C": "O (ตามกลไก Bombay)",
-    "D": "✓ ต้นฉบับ: AB (ตามโจทย์ genotype A/B)",
-    "E": "Cannot determined"
+    "A": "หมู่ A ต้องไม่มียีน B",
+    "B": "หมู่ B ต้องไม่มียีน A",
+    "C": "หมู่ O เกิดเมื่อไม่มียีน A/B หรือไม่มี H (Bombay)",
+    "D": "✓ H ถูกเติมน้ำตาลทั้งแบบ A และ B → AB ทั้ง forward และ reverse",
+    "E": "genotype ครบ จึงระบุได้"
    },
-   "key_concept": "• Bombay: hh ไม่มี H → RBC ไม่มี A/B\n• Reverse typing: anti-A, B, H",
+   "key_concept": "• H antigen เป็นสารตั้งต้นของ A และ B antigen\n• hh (Bombay) ตรวจได้เป็น O แม้มียีน A/B",
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 44].pdf",
     "page": 8,
@@ -2174,17 +2246,26 @@
     "E": "Dipyridamole"
    },
    "correct": "A",
-   "explanation": "Aspirin + viral/varicella → Reye syndrome",
+   "explanation": "Aspirin ในเด็กที่ติดเชื้อไวรัส (influenza, varicella) เสี่ยง Reye syndrome",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "✓ Aspirin",
-    "B": "Warfarin ไม่",
-    "C": "Enoxaparin ไม่",
-    "D": "Ticlopidine ไม่",
-    "E": "Dipyridamole ไม่"
+    "A": "✓ salicylate ทำลาย mitochondria ของตับในเด็กที่ติดไวรัส",
+    "B": "warfarin เสี่ยงเลือดออก ไม่เกี่ยวกับ Reye",
+    "C": "enoxaparin เสี่ยงเลือดออกและ HIT",
+    "D": "ticlopidine เสี่ยง neutropenia และ TTP",
+    "E": "dipyridamole ทำปวดหัวและความดันต่ำ"
    },
-   "key_concept": "• Reye: aspirin + influenza/varicella\n• hepatic steatosis + encephalopathy",
+   "key_concept": "• Reye: ตับวายเฉียบพลัน + encephalopathy ในเด็ก\n• ไข้ในเด็กใช้ paracetamol",
+   "mechanism": [
+    "เด็กติดไวรัสได้รับ aspirin",
+    "mitochondria ตับเสียหาย β-oxidation หยุด",
+    {
+     "s": "ไขมันสะสมในตับ ammonia สูง",
+     "answer": true
+    },
+    "สมองบวม ซึม ชัก"
+   ],
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 44].pdf",
     "page": 9,
@@ -2369,17 +2450,17 @@
     "E": "Natural killer cell"
    },
    "correct": "A",
-   "explanation": "MHC I ↓ เลี่ยงภูมิ CTL → CAR T-cell ไม่ต้องพึ่ง MHC",
+   "explanation": "เซลล์มะเร็งที่ลด MHC class I เฉลยต้นฉบับเลือก CAR T-cell ซึ่งจับ antigen บนผิวเซลล์ได้โดยไม่ต้องอาศัย MHC",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "✓ CAR T-cell (ไม่ขึ้นกับ MHC)",
-    "B": "Macrophage ไม่เฉพาะ",
-    "C": "DC ไม่",
-    "D": "CTL ต้อง MHC I",
-    "E": "NK cell ฆ่าเมื่อ MHC I ต่ำ (ก็ถูก แต่ต้นฉบับ A)"
+    "A": "✓ CAR ใช้ส่วนของ antibody จับ antigen โดยตรง ไม่ขึ้นกับ MHC",
+    "B": "macrophage ไม่ได้อาศัยการขาด MHC I ในการฆ่า",
+    "C": "dendritic cell ทำหน้าที่นำเสนอ antigen ไม่ได้ฆ่าเซลล์มะเร็งโดยตรง",
+    "D": "cytotoxic T cell ต้องเห็น antigen บน MHC I จึงฆ่าไม่ได้",
+    "E": "NK cell ฆ่าเซลล์ที่ขาด MHC I ตามหลัก missing self (AI เห็นว่าข้อนี้ตรงที่สุด) แต่คงตามต้นฉบับ"
    },
-   "key_concept": "• CAR T: scFv จับ antigen ตรง\n• NK: missing-self",
+   "key_concept": "• NK cell: ถูกยับยั้งด้วย MHC I → เซลล์ที่ไม่มี MHC I ถูกฆ่า\n• CAR-T: จดจำ antigen ผิวเซลล์แบบไม่พึ่ง MHC เช่น CD19",
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 44].pdf",
     "page": 10,
@@ -2563,17 +2644,17 @@
     "E": "hyperchromic normocytic"
    },
    "correct": "D",
-   "explanation": "ทารกแรกเกิด: normochromic macrocytic (MCV ~100–120)",
+   "explanation": "ทารกแรกเกิดมีเม็ดเลือดแดง normochromic macrocytic (MCV ~100–120 fL)",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "Hypochromic microcytic ไม่",
-    "B": "Hypochromic normocytic ไม่",
-    "C": "Normochromic microcytic ไม่",
-    "D": "✓ Normochromic macrocytic",
-    "E": "Hyperchromic ไม่ใช่"
+    "A": "hypochromic microcytic พบในขาดเหล็ก/thalassemia",
+    "B": "hypochromic normocytic ไม่ใช่ภาพปกติของทารก",
+    "C": "normochromic microcytic ไม่ใช่ภาพปกติของทารก",
+    "D": "✓ RBC ของทารกตัวใหญ่กว่าผู้ใหญ่ และมี Hb ปกติ",
+    "E": "hyperchromic พบใน spherocytosis"
    },
-   "key_concept": "• Newborn: Hb 17–20 MCV ~110\n• MCV ลดลงใน 3 เดือน",
+   "key_concept": "• แรกเกิด: Hb 14–20 g/dL, MCV 100–120, มี nRBC ได้\n• MCV ลดลงสู่ค่าต่ำสุดช่วง 6 เดือน–2 ปี",
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 44].pdf",
     "page": 10,
@@ -2612,17 +2693,26 @@
     "E": "Conjugated bilirubin"
    },
    "correct": "D",
-   "explanation": "G6PD + primaquine → intravascular hemolysis → Hb dimer สูงใน serum",
+   "explanation": "G6PD deficiency ได้ primaquine เกิด intravascular hemolysis ฮีโมโกลบินอิสระ (αβ dimer) ในซีรัมสูงมาก",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "Ferritin ไม่",
-    "B": "Myoglobin ไม่",
-    "C": "Haptoglobin ↓",
-    "D": "✓ Hemoglobin dimer (free Hb)",
-    "E": "Conjugated bilirubin ไม่ ↑"
+    "A": "ferritin สะท้อนเหล็กสะสม ไม่สูงเฉียบพลันจาก hemolysis",
+    "B": "myoglobin สูงเมื่อกล้ามเนื้อสลาย",
+    "C": "haptoglobin ลดลงจนหมดเพราะจับ free Hb",
+    "D": "✓ Hb ที่หลุดจาก RBC แตกตัวเป็น dimer อยู่ในพลาสมา",
+    "E": "bilirubin ที่สูงจาก hemolysis เป็น unconjugated"
    },
-   "key_concept": "• Oxidant → Heinz body → IVH\n• Haptoglobin ↓, hemoglobinuria",
+   "key_concept": "• intravascular hemolysis: free Hb ↑, haptoglobin ↓, hemoglobinuria\n• G6PD: Heinz body, bite cell",
+   "mechanism": [
+    "primaquine สร้าง oxidative stress",
+    "G6PD ขาด NADPH/GSH ไม่พอ Hb ตกตะกอน",
+    {
+     "s": "RBC แตกในหลอดเลือด ปล่อย Hb dimer",
+     "answer": true
+    },
+    "ปัสสาวะสีโคล่า haptoglobin หมด"
+   ],
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 44].pdf",
     "page": 11,
