@@ -290,7 +290,16 @@
     "D": "hyaline cast ละลายง่าย (ลด) แต่ไม่ใช่คำตอบหลัก",
     "E": "crystal มักตกตะกอนเพิ่ม ไม่ใช่ลด"
    },
-   "key_concept": "• ส่งตรวจภายใน 2 ชม. หรือแช่เย็น\n• ทิ้งนาน: แบคทีเรีย ↑, pH ↑ (urea→NH3), cast/เซลล์สลาย, crystal ตกตะกอน\n• glucose ลดจากแบคทีเรียใช้"
+   "key_concept": "• ส่งตรวจภายใน 2 ชม. หรือแช่เย็น\n• ทิ้งนาน: แบคทีเรีย ↑, pH ↑ (urea→NH3), cast/เซลล์สลาย, crystal ตกตะกอน\n• glucose ลดจากแบคทีเรียใช้",
+   "mechanism": [
+    "ปัสสาวะทิ้งไว้ 2 ชั่วโมง",
+    "แบคทีเรียแบ่งตัว",
+    {
+     "s": "จำนวนแบคทีเรียเพิ่ม",
+     "answer": true
+    },
+    "urea แตกเป็น NH₃ pH สูงขึ้น"
+   ]
   },
   "16": {
    "choices_override": {
@@ -425,7 +434,15 @@
     "D": "S. saprophyticus >100,000 midstream เข้าเกณฑ์ปริมาณ แต่เชื้อนี้ nitrite มักลบ (AI เลือกข้อนี้)",
     "E": "Candida 20,000 จาก cath ไม่เข้าเกณฑ์ UTI แบคทีเรีย"
    },
-   "key_concept": "• เกณฑ์เพาะเชื้อ: midstream ≥ 10⁵ · catheter ≥ 5×10⁴ · suprapubic: เชื้อใดก็ได้\n• nitrite + = Gram-negative (Enterobacterales) · leukocyte esterase + = pyuria\n• S. saprophyticus พบในหญิงสาววัยเจริญพันธุ์"
+   "key_concept": "• เกณฑ์เพาะเชื้อ: midstream ≥ 10⁵ · catheter ≥ 5×10⁴ · suprapubic: เชื้อใดก็ได้\n• nitrite + = Gram-negative (Enterobacterales) · leukocyte esterase + = pyuria\n• S. saprophyticus พบในหญิงสาววัยเจริญพันธุ์",
+   "mechanism": [
+    "UTI: WBC และ nitrite บวก",
+    "เชื้อ gram-negative เปลี่ยน nitrate เป็น nitrite",
+    {
+     "s": "ผลบ่งชี้ pyelonephritis/cystitis",
+     "answer": true
+    }
+   ]
   },
   "22": {
    "explanation": "ATN: oliguria, ปัสสาวะสีน้ำตาลเข้ม (muddy brown cast), ไม่มี RBC/WBC, creatinine สูง",
@@ -568,7 +585,16 @@
     "D": "neutrophil → PSGN/ลูปัสแบบ proliferative",
     "E": "mesangial expansion → IgA/diabetic/MPGN"
    },
-   "key_concept": "• RPGN: Type I anti-GBM (linear IF) · Type II immune complex · Type III pauci-immune (ANCA)\n• crescent ที่ Bowman space ทำให้ GFR ตกเร็ว (วันถึงสัปดาห์)\n• แยก: PSGN = lumpy-bumpy · RPGN = crescent"
+   "key_concept": "• RPGN: Type I anti-GBM (linear IF) · Type II immune complex · Type III pauci-immune (ANCA)\n• crescent ที่ Bowman space ทำให้ GFR ตกเร็ว (วันถึงสัปดาห์)\n• แยก: PSGN = lumpy-bumpy · RPGN = crescent",
+   "mechanism": [
+    "RPGN มี crescent",
+    "epithelial cell ของ Bowman's capsule เพิ่มจำนวน",
+    {
+     "s": "เกิด crescent",
+     "answer": true
+    },
+    "glomerulus ถูกกด GFR ตกเร็ว"
+   ]
   },
   "29": {
    "choices_override": {
@@ -594,7 +620,15 @@
     "D": "loop of Henle ไม่ใช่ต้นกำเนิดของ RCC",
     "E": "urothelium → urothelial carcinoma (ไม่มี polycythemia)"
    },
-   "key_concept": "• RCC: hematuria, flank pain, mass (triad) · paraneoplastic: EPO, PTHrP, renin, ACTH\n• clear cell RCC: VHL mutation (3p) · ฟอกเป็นสีเหลืองเมื่อตัด\n• เสี่ยง: บุหรี่, อ้วน, VHL"
+   "key_concept": "• RCC: hematuria, flank pain, mass (triad) · paraneoplastic: EPO, PTHrP, renin, ACTH\n• clear cell RCC: VHL mutation (3p) · ฟอกเป็นสีเหลืองเมื่อตัด\n• เสี่ยง: บุหรี่, อ้วน, VHL",
+   "mechanism": [
+    "เนื้องอกไตสร้าง EPO",
+    {
+     "s": "renal cell carcinoma มาจาก proximal tubule",
+     "answer": true
+    },
+    "polycythemia + hematuria"
+   ]
   },
   "30": {
    "choices_override": {
@@ -668,7 +702,15 @@
     "D": "pelvic splanchnic (AI เติม) = parasympathetic",
     "E": "obturator nerve (AI เติม) ไม่เกี่ยวกับ perineum"
    },
-   "key_concept": "• pudendal n. (S2–4): external urethral/anal sphincter, ischiocavernosus, bulbospongiosus, sensation perineum\n• ปลายหยดสุดท้ายของปัสสาวะ/ การหลั่ง: bulbospongiosus บีบ\n• เป็นที่ gluteal region → ออก lesser sciatic foramen → Alcock's canal"
+   "key_concept": "• pudendal n. (S2–4): external urethral/anal sphincter, ischiocavernosus, bulbospongiosus, sensation perineum\n• ปลายหยดสุดท้ายของปัสสาวะ/ การหลั่ง: bulbospongiosus บีบ\n• เป็นที่ gluteal region → ออก lesser sciatic foramen → Alcock's canal",
+   "mechanism": [
+    "กล้ามเนื้อหูรูดท่อปัสสาวะภายนอกอัมพาต",
+    "กลั้นปัสสาวะไม่ได้/ขับไม่หมด",
+    {
+     "s": "ปัสสาวะไม่สุด",
+     "answer": true
+    }
+   ]
   },
   "34": {
    "choices_override": {
@@ -780,7 +822,15 @@
     "D": "deep perineal fascia ไม่ใช่ชั้นที่กัก",
     "E": "✓ ischiorectal fossa (เฉลยต้นฉบับ)"
    },
-   "key_concept": "• extravasation หลัง spongy urethra ฉีกใต้ perineal membrane → superficial pouch → scrotum, penis, ผนังหน้าท้องล่าง (ติด Colles' fascia)\n• ข้อนี้ต้นฉบับกับ AI ไม่ตรงกัน เก็บตามต้นฉบับ"
+   "key_concept": "• extravasation หลัง spongy urethra ฉีกใต้ perineal membrane → superficial pouch → scrotum, penis, ผนังหน้าท้องล่าง (ติด Colles' fascia)\n• ข้อนี้ต้นฉบับกับ AI ไม่ตรงกัน เก็บตามต้นฉบับ",
+   "mechanism": [
+    "ท่อปัสสาวะ penile แตก",
+    "ปัสสาวะรั่วใต้ Buck's fascia",
+    {
+     "s": "ลงสู่ perineal pouch/ischiorectal fossa",
+     "answer": true
+    }
+   ]
   },
   "40": {
    "explanation": "Ischiorectal fossa มี inferior rectal nerve/vessels วิ่งผ่าน",
@@ -791,7 +841,15 @@
     "D": "✓ inferior rectal nerve วิ่งผ่าน ischiorectal fossa",
     "E": "pelvic splanchnic อยู่ในอุ้งเชิงกราน"
    },
-   "key_concept": "• ischiorectal fossa: fat + inferior rectal n./vessels, pudendal canal ที่ผนังข้าง\n• ติดเชื้อ/abscess ลามข้ามสองข้างผ่าน retroanal space\n• anal canal ผ่านกลางสอง fossa"
+   "key_concept": "• ischiorectal fossa: fat + inferior rectal n./vessels, pudendal canal ที่ผนังข้าง\n• ติดเชื้อ/abscess ลามข้ามสองข้างผ่าน retroanal space\n• anal canal ผ่านกลางสอง fossa",
+   "mechanism": [
+    "ischiorectal fossa มี inferior rectal nerve",
+    {
+     "s": "ถูกทำลาย",
+     "answer": true
+    },
+    "รู้สึกและควบคุม sphincter ทวารเสีย"
+   ]
   },
   "41": {
    "explanation": "Primordial follicle: primary oocyte หยุดที่ prophase I (diplotene) — crossing over ของ non-sister chromatid เกิดแล้ว",
@@ -802,7 +860,15 @@
     "D": "disjunction คือ anaphase I",
     "E": "✓ crossing over (pachytene) เสร็จแล้ว และ chromatin พร้อมที่ diplotene"
    },
-   "key_concept": "• ลำดับ prophase I: leptotene → zygotene → pachytene → diplotene → diakinesis\n• primary oocyte หยุดที่ diplotene จนถึงวัยเจริญพันธุ์ (LH surge ทำให้ต่อ)\n• meiosis II หยุดที่ metaphase II จนกว่าอสุจิเข้า"
+   "key_concept": "• ลำดับ prophase I: leptotene → zygotene → pachytene → diplotene → diakinesis\n• primary oocyte หยุดที่ diplotene จนถึงวัยเจริญพันธุ์ (LH surge ทำให้ต่อ)\n• meiosis II หยุดที่ metaphase II จนกว่าอสุจิเข้า",
+   "mechanism": [
+    "primordial follicle หยุดที่ prophase I",
+    {
+     "s": "crossing over ของ non-sister chromatid",
+     "answer": true
+    },
+    "เกิด genetic variation"
+   ]
   },
   "42": {
    "choices_override": {
@@ -823,7 +889,15 @@
     "D": "AI เติมให้: mucus สำหรับหล่อลื่น (ไม่ใช่หน้าที่หลัก)",
     "E": "ไม่ได้กระตุ้นการเคลื่อนที่ของ spermatocyte"
    },
-   "key_concept": "• uterine tube epithelium: ciliated + peg (secretory) cell\n• ฮอร์โมน: estrogen เพิ่ม cilia · progesterone เพิ่มสารคัดหลั่ง\n• ท่อนำไข่ตีบ → ท้องนอกมดลูก/มีบุตรยาก"
+   "key_concept": "• uterine tube epithelium: ciliated + peg (secretory) cell\n• ฮอร์โมน: estrogen เพิ่ม cilia · progesterone เพิ่มสารคัดหลั่ง\n• ท่อนำไข่ตีบ → ท้องนอกมดลูก/มีบุตรยาก",
+   "mechanism": [
+    "peg cell เป็น secretory cell ในท่อนำไข่",
+    "สร้าง secretion",
+    {
+     "s": "เลี้ยงไข่และอสุจิ",
+     "answer": true
+    }
+   ]
   },
   "43": {
    "stem_override": "A woman, whose normal menstrual cycle is 28 days, had her last menstruation on the 1st of last month. What will happen on the 18th day?",
@@ -1135,7 +1209,15 @@
     "D": "resolution: กลับสู่ปกติ",
     "E": "AI เติมให้: desire (Kaplan) อยู่ก่อน excitement"
    },
-   "key_concept": "• Masters & Johnson: excitement → plateau → orgasm → resolution (+ refractory ในชาย)\n• orgasm ชาย: emission + ejaculation (sympathetic + pudendal)\n• orgasm หญิง: 0.8 วินาที/ครั้ง กล้ามเนื้อ 3–15 ครั้ง"
+   "key_concept": "• Masters & Johnson: excitement → plateau → orgasm → resolution (+ refractory ในชาย)\n• orgasm ชาย: emission + ejaculation (sympathetic + pudendal)\n• orgasm หญิง: 0.8 วินาที/ครั้ง กล้ามเนื้อ 3–15 ครั้ง",
+   "mechanism": [
+    "สิ้นสุดการกระตุ้นทางเพศ",
+    "กล้ามเนื้อเชิงกรานบีบตัวเป็นจังหวะ",
+    {
+     "s": "orgasm phase",
+     "answer": true
+    }
+   ]
   },
   "59": {
    "choices_override": {
@@ -1176,7 +1258,15 @@
     "D": "AI เติมให้: choriocarcinoma (hCG)",
     "E": "AI เติมให้: dysgerminoma (LDH)"
    },
-   "key_concept": "• endometrial hyperplasia → endometrioid ca (type I, estrogen-driven, PTEN)\n• เสี่ยง: อ้วน, PCOS, estrogen โดดๆ, nulliparity\n• type II (serous) ไม่เกี่ยวกับ estrogen"
+   "key_concept": "• endometrial hyperplasia → endometrioid ca (type I, estrogen-driven, PTEN)\n• เสี่ยง: อ้วน, PCOS, estrogen โดดๆ, nulliparity\n• type II (serous) ไม่เกี่ยวกับ estrogen",
+   "mechanism": [
+    "estrogen กระตุ้น endometrium ต่อเนื่อง",
+    "ไม่มี progesterone ต้าน",
+    {
+     "s": "endometrial hyperplasia",
+     "answer": true
+    }
+   ]
   },
   "61": {
    "explanation": "Partial hydatidiform mole = 69,XXX/XXY (triploid): ไข่ปกติ + อสุจิ 2 ตัว",
@@ -1187,7 +1277,15 @@
     "D": "complete mole: อสุจิ 1 ตัวที่ duplicate + ไข่ไม่มี",
     "E": "3 อสุจิ + ไข่ไม่มี เป็นไปได้น้อย"
    },
-   "key_concept": "• complete mole: 46,XX paternal ทั้งหมด · hCG สูงมาก · ไม่มีทารก · เสี่ยง choriocarcinoma\n• partial mole: 69,XXY · มีเนื้อเยื่อทารก/ชิ้นส่วน · hCG สูงน้อยกว่า\n• ภาพ US: snowstorm (complete)"
+   "key_concept": "• complete mole: 46,XX paternal ทั้งหมด · hCG สูงมาก · ไม่มีทารก · เสี่ยง choriocarcinoma\n• partial mole: 69,XXY · มีเนื้อเยื่อทารก/ชิ้นส่วน · hCG สูงน้อยกว่า\n• ภาพ US: snowstorm (complete)",
+   "mechanism": [
+    "ไข่ปกติ 1 ใบ รับอสุจิ 2 ตัว",
+    "ได้ 69 โครโมโซม triploid",
+    {
+     "s": "partial hydatidiform mole",
+     "answer": true
+    }
+   ]
   },
   "62": {
    "choices_override": {
@@ -1208,7 +1306,15 @@
     "D": "granulosa cell: Call-Exner body",
     "E": "AI เติมให้: mature cystic teratoma ประกอบด้วยเนื้อเยื่อที่โตเต็มวัย"
    },
-   "key_concept": "• teratoma: ectoderm/mesoderm/endoderm · immature = มี neuroepithelium ปนอยู่ (ร้าย)\n• mature cystic (dermoid) พบมากสุด วัยเจริญพันธุ์ · อาจมี struma ovarii\n• ก้อนใหญ่ 20 ซม. ในหญิงสาว สงสัย germ cell tumor"
+   "key_concept": "• teratoma: ectoderm/mesoderm/endoderm · immature = มี neuroepithelium ปนอยู่ (ร้าย)\n• mature cystic (dermoid) พบมากสุด วัยเจริญพันธุ์ · อาจมี struma ovarii\n• ก้อนใหญ่ 20 ซม. ในหญิงสาว สงสัย germ cell tumor",
+   "mechanism": [
+    "germ cell เจริญเป็นหลาย germ layer",
+    "squamous, neuroepithelium",
+    {
+     "s": "mature teratoma รังไข่",
+     "answer": true
+    }
+   ]
   },
   "63": {
    "choices_override": {
@@ -1253,7 +1359,15 @@
     "D": "Yuzpe: ขนาดนี้ผิดและเว้น 24 ชม. ไม่ถูก",
     "E": "เว้น 36 ชม. ไม่ถูก"
    },
-   "key_concept": "• EC: levonorgestrel 1.5 mg ครั้งเดียว หรือ 0.75 mg × 2 (12 ชม.) ภายใน 72 ชม. (ดีสุดเร็วที่สุด)\n• Yuzpe: EE + norgestrel เว้น 12 ชม.\n• ทางเลือก: ulipristal (5 วัน), IUD ทองแดง (5 วัน)"
+   "key_concept": "• EC: levonorgestrel 1.5 mg ครั้งเดียว หรือ 0.75 mg × 2 (12 ชม.) ภายใน 72 ชม. (ดีสุดเร็วที่สุด)\n• Yuzpe: EE + norgestrel เว้น 12 ชม.\n• ทางเลือก: ulipristal (5 วัน), IUD ทองแดง (5 วัน)",
+   "mechanism": [
+    "ยาคุมฉุกเฉินเลื่อน/ยับยั้งการตกไข่",
+    "ปริมาณ levonorgestrel สูง",
+    {
+     "s": "ป้องกันการตั้งครรภ์ภายใน 72 ชม.",
+     "answer": true
+    }
+   ]
   },
   "65": {
    "explanation": "DMPA 150 mg ฉีดทุก 3 เดือน = ยาคุมฉีดที่นานเกิน 2 เดือน",
@@ -1264,7 +1378,15 @@
     "D": "NET-EN 200 mg ฉีดทุก 2 เดือน (ไม่ถึง 3 เดือน)",
     "E": "✓ medroxyprogesterone acetate 150 mg ทุก 3 เดือน"
    },
-   "key_concept": "• DMPA 150 mg IM ทุก 12–13 สัปดาห์ · NET-EN 200 mg ทุก 8 สัปดาห์\n• side effect DMPA: ประจำเดือนไม่มา, กระดูกบาง, น้ำหนักเพิ่ม, กลับมามีลูกช้า\n• Cyclofem (monthly) = progestin + estrogen"
+   "key_concept": "• DMPA 150 mg IM ทุก 12–13 สัปดาห์ · NET-EN 200 mg ทุก 8 สัปดาห์\n• side effect DMPA: ประจำเดือนไม่มา, กระดูกบาง, น้ำหนักเพิ่ม, กลับมามีลูกช้า\n• Cyclofem (monthly) = progestin + estrogen",
+   "mechanism": [
+    "medroxyprogesterone ยับยั้ง LH surge",
+    "ไม่ตกไข่",
+    {
+     "s": "คุมกำเนิดได้ 3 เดือน",
+     "answer": true
+    }
+   ]
   },
   "66": {
    "choices_override": {
@@ -1368,7 +1490,15 @@
     "D": "hypotension ไม่ใช่ผลหลัก",
     "E": "hyperglycemia เกิดได้เล็กน้อย แต่ tremor พบบ่อยกว่า"
    },
-   "key_concept": "• β2: bronchodilation, tremor, tachycardia, hypoK, hyperglycemia, uterine relaxation\n• ใช้: asthma/ COPD, preterm labor, hyperK\n• ข้อนี้มีซ้ำในชุด (70, 110, 140)"
+   "key_concept": "• β2: bronchodilation, tremor, tachycardia, hypoK, hyperglycemia, uterine relaxation\n• ใช้: asthma/ COPD, preterm labor, hyperK\n• ข้อนี้มีซ้ำในชุด (70, 110, 140)",
+   "mechanism": [
+    "salbutamol กระตุ้น β₂",
+    "กระตุ้น β₂ ที่กล้ามเนื้อลายด้วย",
+    {
+     "s": "เกิดสั่น (tremor)",
+     "answer": true
+    }
+   ]
   },
   "71": {
    "choices_override": {
@@ -1514,7 +1644,15 @@
     "D": "tunica vaginalis → hydrocele",
     "E": "✓ pampiniform plexus (หลอดเลือดดำ)"
    },
-   "key_concept": "• ซ้ายพบบ่อย: left testicular vein ไหลมุมฉากเข้า left renal vein\n• คลำ 'bag of worms' ยืนแล้วเด่น\n• ผลต่อ spermatogenesis: อุณหภูมิ ↑ → infertility"
+   "key_concept": "• ซ้ายพบบ่อย: left testicular vein ไหลมุมฉากเข้า left renal vein\n• คลำ 'bag of worms' ยืนแล้วเด่น\n• ผลต่อ spermatogenesis: อุณหภูมิ ↑ → infertility",
+   "mechanism": [
+    "เลือดดำ left testicular vein ไหลเข้า left renal vein",
+    "ความดันสูงหรือถูกกด",
+    {
+     "s": "pampiniform plexus ขยาย varicocele",
+     "answer": true
+    }
+   ]
   },
   "80": {
    "explanation": "องคชาตขาดเลือดออกไม่หยุด: กดที่โคนองคชาตเพื่อห้ามเลือด",
@@ -1536,7 +1674,15 @@
     "D": "circumcision ไม่คุมกำเนิด",
     "E": "penile nerve block คือยาชา"
    },
-   "key_concept": "• vasectomy: ตัด ductus deferens ที่ scrotum · ตรวจน้ำอสุจิ 3 เดือนหลังทำ\n• ยังมี testosterone ปกติ (testis ยังทำงาน)\n• เปลี่ยนกลับ (vasovasostomy) ไม่รับประกัน"
+   "key_concept": "• vasectomy: ตัด ductus deferens ที่ scrotum · ตรวจน้ำอสุจิ 3 เดือนหลังทำ\n• ยังมี testosterone ปกติ (testis ยังทำงาน)\n• เปลี่ยนกลับ (vasovasostomy) ไม่รับประกัน",
+   "mechanism": [
+    "ตัดท่อ vas deferens",
+    "อสุจิไม่ออกมาในน้ำอสุจิ",
+    {
+     "s": "คุมกำเนิดชาย vasectomy",
+     "answer": true
+    }
+   ]
   },
   "82": {
    "explanation": "มะเร็งผิวหนัง scrotum แพร่ไป superficial inguinal lymph nodes",
@@ -1593,7 +1739,15 @@
     "D": "AI เติมให้: varicocele ไม่เกี่ยว",
     "E": "AI เติมให้: cryptorchidism เป็นความผิดปกติแต่กำเนิด"
    },
-   "key_concept": "• mumps orchitis: หลังวัยรุ่น ~25–30% ของชายติดเชื้อ ส่วนใหญ่ข้างเดียว\n• ผลข้างเคียง: atrophy, ลดการสร้างอสุจิ\n• ป้องกัน: วัคซีน MMR"
+   "key_concept": "• mumps orchitis: หลังวัยรุ่น ~25–30% ของชายติดเชื้อ ส่วนใหญ่ข้างเดียว\n• ผลข้างเคียง: atrophy, ลดการสร้างอสุจิ\n• ป้องกัน: วัคซีน MMR",
+   "mechanism": [
+    "คางทูม ไวรัสติดต่อมน้ำลายและอัณฑะ",
+    "orchitis",
+    {
+     "s": "อสุจิเสียหาย เป็นหมัน",
+     "answer": true
+    }
+   ]
   },
   "86": {
    "explanation": "เซลล์ที่มากที่สุดใน seminiferous epithelium ที่เห็นใน light microscope: primary spermatocyte",
@@ -1746,7 +1900,15 @@
     "D": "sympathetic หด afferent → GFR ↓",
     "E": "✓ ANP → GFR ↑"
    },
-   "key_concept": "• ANP: ↑GFR, ↓Na⁺ reabsorb ที่ CD, ↓renin/aldosterone/ADH\n• ตัวเพิ่ม GFR: ANP, ↓π_GC, afferent ขยาย\n• ตัวลด GFR: sympathetic, NSAID, ANG II สูง"
+   "key_concept": "• ANP: ↑GFR, ↓Na⁺ reabsorb ที่ CD, ↓renin/aldosterone/ADH\n• ตัวเพิ่ม GFR: ANP, ↓π_GC, afferent ขยาย\n• ตัวลด GFR: sympathetic, NSAID, ANG II สูง",
+   "mechanism": [
+    "ANP ขยาย afferent และหด efferent",
+    "ความดันใน glomerulus เพิ่ม",
+    {
+     "s": "GFR เพิ่ม",
+     "answer": true
+    }
+   ]
   },
   "95": {
    "explanation": "Acidosis กระตุ้นการสร้างและขับ NH4⁺ (ammoniagenesis) ที่ไต",
@@ -1818,7 +1980,15 @@
     "D": "glycolysis ใน medulla เป็นการใช้ glucose แบบปกติ",
     "E": "AI เติมให้: glycogenolysis ใน medulla ไม่ใช่ประเด็น"
    },
-   "key_concept": "• fasting: ตับ glycogenolysis → gluconeogenesis; ไตทำ ~20–25% ของ glucose ในช่วงอดนาน\n• ไต cortex ทำ gluconeogenesis (PEPCK) · medulla ใช้ glycolysis (ไม่มี mitochondria มาก)\n• acidosis เพิ่ม renal gluconeogenesis"
+   "key_concept": "• fasting: ตับ glycogenolysis → gluconeogenesis; ไตทำ ~20–25% ของ glucose ในช่วงอดนาน\n• ไต cortex ทำ gluconeogenesis (PEPCK) · medulla ใช้ glycolysis (ไม่มี mitochondria มาก)\n• acidosis เพิ่ม renal gluconeogenesis",
+   "mechanism": [
+    "อดอาหาร 10 ชั่วโมง",
+    "glycogen ลด",
+    {
+     "s": "gluconeogenesis ที่ไต cortex เพิ่ม",
+     "answer": true
+    }
+   ]
   },
   "99": {
    "explanation": "Metabolic acidosis เพิ่ม ammoniagenesis ที่ proximal tubule (glutamine transamination/deamination ↑)",
@@ -1829,7 +1999,15 @@
     "D": "reabsorption ของ ammonia ไม่ใช่",
     "E": "✓ glutamine metabolism ↑ (renal ammoniagenesis)"
    },
-   "key_concept": "• กรดเรื้อรัง → glutaminase, GDH, PEPCK ↑ ในไต\n• NH4⁺ ขับเป็นบัฟเฟอร์ + สร้าง HCO3⁻ ใหม่\n• ammoniagenesis ใช้เวลา 2–3 วันถึงสูงสุด"
+   "key_concept": "• กรดเรื้อรัง → glutaminase, GDH, PEPCK ↑ ในไต\n• NH4⁺ ขับเป็นบัฟเฟอร์ + สร้าง HCO3⁻ ใหม่\n• ammoniagenesis ใช้เวลา 2–3 วันถึงสูงสุด",
+   "mechanism": [
+    "metabolic acidosis",
+    "ไตเพิ่ม glutamine metabolism",
+    {
+     "s": "transamination ได้ NH₄⁺ ขับ H⁺ มากขึ้น",
+     "answer": true
+    }
+   ]
   },
   "100": {
    "explanation": "ต้นฉบับเฉลย A (ข้อเสนอแบบจำมา); ตำราว่า creatinine เกิดจาก creatine/creatine phosphate แบบ non-enzymatic และถูกขับด้วย filtration + secretion",
@@ -1873,7 +2051,15 @@
     "D": "cystitis → WBC/RBC รูปปกติ",
     "E": "✓ acute glomerulonephritis"
    },
-   "key_concept": "• glomerular hematuria: dysmorphic RBC (acanthocyte), RBC cast, proteinuria\n• non-glomerular: RBC รูปร่างปกติ ไม่มี cast\n• nephritic: HTN, hematuria, oliguria, edema"
+   "key_concept": "• glomerular hematuria: dysmorphic RBC (acanthocyte), RBC cast, proteinuria\n• non-glomerular: RBC รูปร่างปกติ ไม่มี cast\n• nephritic: HTN, hematuria, oliguria, edema",
+   "mechanism": [
+    "glomerulus อักเสบ RBC ผ่านผนัง",
+    "RBC บิดเบี้ยว dysmorphic",
+    {
+     "s": "RBC cast บ่ง glomerular bleeding",
+     "answer": true
+    }
+   ]
   },
   "104": {
    "explanation": "Scrotum เกิดจาก labioscrotal (genital) swelling",
@@ -1884,7 +2070,15 @@
     "D": "gubernaculum ดึงอัณฑะลง",
     "E": "✓ labioscrotal swelling → scrotum (ชาย) / labia majora (หญิง)"
    },
-   "key_concept": "• indifferent stage: tubercle, urethral fold, labioscrotal swelling\n• ชาย (DHT): tubercle → penis · fold → penile urethra · swelling → scrotum\n• หญิง: tubercle → clitoris · fold → labia minora · swelling → labia majora"
+   "key_concept": "• indifferent stage: tubercle, urethral fold, labioscrotal swelling\n• ชาย (DHT): tubercle → penis · fold → penile urethra · swelling → scrotum\n• หญิง: tubercle → clitoris · fold → labia minora · swelling → labia majora",
+   "mechanism": [
+    "labioscrotal swelling ใน indifferent stage",
+    "ถ้ามี androgen",
+    {
+     "s": "พัฒนาเป็น scrotum",
+     "answer": true
+    }
+   ]
   },
   "105": {
    "choices_override": {

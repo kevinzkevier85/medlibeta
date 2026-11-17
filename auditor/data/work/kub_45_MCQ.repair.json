@@ -25,7 +25,16 @@
     "D": "ductus deferens อยู่เหนือ/หลังต่อม ไม่ถูกกดโดยตรง",
     "E": "ท่อของ seminal vesicle ไปรวมเป็น ejaculatory duct ผ่านต่อม"
    },
-   "key_concept": "• BPH: โตที่ transition zone ล้อมรอบ prostatic urethra → LUTS\n• prostate ca: peripheral zone (คลำได้จาก PR)\n• ยา: α1-blocker, 5α-reductase inhibitor"
+   "key_concept": "• BPH: โตที่ transition zone ล้อมรอบ prostatic urethra → LUTS\n• prostate ca: peripheral zone (คลำได้จาก PR)\n• ยา: α1-blocker, 5α-reductase inhibitor",
+   "mechanism": [
+    "prostate โต",
+    "กดท่อปัสสาวะที่ผ่านกลาง prostate",
+    {
+     "s": "prostatic urethra ตีบ",
+     "answer": true
+    },
+    "ปัสสาวะลำบาก"
+   ]
   },
   "2": {
    "choices_override": {
@@ -151,7 +160,15 @@
     "D": "volume ไม่ใช่ตัวกำหนด Kf",
     "E": "AI เติมให้: hematocrit ไม่ใช่ตัวกำหนด Kf"
    },
-   "key_concept": "• GFR = Kf × NFP\n• Kf ↓: mesangial contraction (ANG II), glomerulosclerosis, DM\n• nephrotic: permeability เปลี่ยน"
+   "key_concept": "• GFR = Kf × NFP\n• Kf ↓: mesangial contraction (ANG II), glomerulosclerosis, DM\n• nephrotic: permeability เปลี่ยน",
+   "mechanism": [
+    "Kf = permeability × พื้นที่",
+    {
+     "s": "พื้นที่ผิวเพิ่ม Kf เพิ่ม",
+     "answer": true
+    },
+    "GFR เพิ่ม"
+   ]
   },
   "8": {
    "explanation": "NFP = (P_GC − P_BS) − π_GC > 0 → P_BS < 40 − 20 = 20 mmHg → 10",
@@ -226,7 +243,15 @@
     "D": "✓ Na⁺, K⁺, 2Cl⁻ ตรง stoichiometry ของ NKCC",
     "E": "Cl⁻ ถูก secrete ไม่ถูกต้อง"
    },
-   "key_concept": "• NKCC2: thick ascending limb · loop diuretic ยับยั้ง → ขับ Na, Ca, Mg\n• ยับยั้งการสร้าง medullary gradient\n• side effect: ototoxicity, hypoK, hypoCa"
+   "key_concept": "• NKCC2: thick ascending limb · loop diuretic ยับยั้ง → ขับ Na, Ca, Mg\n• ยับยั้งการสร้าง medullary gradient\n• side effect: ototoxicity, hypoK, hypoCa",
+   "mechanism": [
+    "furosemide จับ NKCC ที่ thick ascending limb",
+    {
+     "s": "ยับยั้งการดูดกลับ Na⁺ K⁺ 2Cl⁻",
+     "answer": true
+    },
+    "น้ำถูกขับออกมาก"
+   ]
   },
   "12": {
    "explanation": "TF/P osm: proximal ≈ 1 · late distal ≈ 1 (ถึง >1 ถ้ามี ADH) · collecting duct > 1 (AI ร่างเฉลย)",
@@ -303,7 +328,15 @@
     "D": "NH4⁺ ไม่เพิ่มเมื่อเลือดเป็นด่าง",
     "E": "NH4⁺ ↑ ผิดทิศ"
    },
-   "key_concept": "• salicylate กระตุ้นศูนย์หายใจ → resp alkalosis\n• ไตขับ HCO3⁻ (urine ด่าง) ลด NH4⁺\n• ผสม AG metabolic acidosis"
+   "key_concept": "• salicylate กระตุ้นศูนย์หายใจ → resp alkalosis\n• ไตขับ HCO3⁻ (urine ด่าง) ลด NH4⁺\n• ผสม AG metabolic acidosis",
+   "mechanism": [
+    "salicylate ทำ metabolic acidosis",
+    "ไตเพิ่ม NH₄⁺",
+    {
+     "s": "HCO₃⁻ ลด NH₄⁺ เพิ่ม",
+     "answer": true
+    }
+   ]
   },
   "16": {
    "choices_override": {
@@ -361,7 +394,15 @@
     "D": "ไม่ใช่: PAH จับ albumin น้อยมาก",
     "E": "ไม่ใช่: ไม่ถูกเมตาบอลิซึม"
    },
-   "key_concept": "• C_PAH ≈ effective RPF · RBF = RPF/(1 − Hct)\n• inulin = GFR · creatinine ≈ GFR\n• filtration fraction = GFR/RPF ≈ 0.2"
+   "key_concept": "• C_PAH ≈ effective RPF · RBF = RPF/(1 − Hct)\n• inulin = GFR · creatinine ≈ GFR\n• filtration fraction = GFR/RPF ≈ 0.2",
+   "mechanism": [
+    "PAH ถูกกรองและหลั่งที่ proximal tubule",
+    "เกือบทั้งหมดถูกขับ",
+    {
+     "s": "ใช้วัด renal plasma flow",
+     "answer": true
+    }
+   ]
   },
   "19": {
    "explanation": "MPGN มักก้าวหน้าเป็น chronic glomerulonephritis / CKD (AI ร่างเฉลย)",
@@ -383,7 +424,15 @@
     "D": "S. aureus เป็น Gram-positive",
     "E": "Pseudomonas กลิ่นหอมหวาน (grape-like)"
    },
-   "key_concept": "• urease + (Proteus, Klebsiella): นิ่ว struvite, urine ด่าง\n• Pseudomonas: pyocyanin กลิ่นองุ่น\n• เป็น Gram-negative rod ตามโจทย์"
+   "key_concept": "• urease + (Proteus, Klebsiella): นิ่ว struvite, urine ด่าง\n• Pseudomonas: pyocyanin กลิ่นองุ่น\n• เป็น Gram-negative rod ตามโจทย์",
+   "mechanism": [
+    "แบคทีเรียมี urease",
+    "เปลี่ยน urea เป็น NH₃",
+    {
+     "s": "กลิ่นฉุนของปัสสาวะ",
+     "answer": true
+    }
+   ]
   },
   "21": {
    "explanation": "Smoking เป็น risk factor หลักของ urothelial carcinoma (ข้อซ้ำกับข้อ 5)",
@@ -418,7 +467,15 @@
     "D": "AI เติมให้: statin ไม่ใช่สาเหตุทั่วไป",
     "E": "AI เติมให้: metformin ไม่ใช่"
    },
-   "key_concept": "• AIN คลาสสิก: ไข้, ผื่น, eosinophilia, WBC cast, sterile pyuria\n• สาเหตุ: β-lactam, NSAID, PPI, sulfa, rifampin\n• รักษา: หยุดยา ± steroid"
+   "key_concept": "• AIN คลาสสิก: ไข้, ผื่น, eosinophilia, WBC cast, sterile pyuria\n• สาเหตุ: β-lactam, NSAID, PPI, sulfa, rifampin\n• รักษา: หยุดยา ± steroid",
+   "mechanism": [
+    "ยา/สารกระตุ้น interstitial nephritis",
+    "เม็ดเลือดขาว eosinophil เข้าไต",
+    {
+     "s": "oliguria ผื่นไข้",
+     "answer": true
+    }
+   ]
   },
   "23": {
    "stem_override": "A woman in the second trimester has terminal dysuria. She has no fever and feels well. What is the most likely diagnosis?",
@@ -466,7 +523,15 @@
     "D": "hyaline cast พบได้ปกติ",
     "E": "granular cast = tubular injury (ATN)"
    },
-   "key_concept": "• nephrotic: proteinuria > 3.5 g/d + lipiduria (oval fat body, Maltese cross)\n• nephritic: RBC cast\n• waxy/broad cast = CKD"
+   "key_concept": "• nephrotic: proteinuria > 3.5 g/d + lipiduria (oval fat body, Maltese cross)\n• nephritic: RBC cast\n• waxy/broad cast = CKD",
+   "mechanism": [
+    "nephrotic ไขมันสูง",
+    "ไขมันออกมาในปัสสาวะ",
+    {
+     "s": "fatty cast/oval fat body",
+     "answer": true
+    }
+   ]
   },
   "25": {
    "explanation": "DI → ไม่มี ADH/ไม่ตอบสนอง → water diuresis (ปัสสาวะเจือจาง)",
