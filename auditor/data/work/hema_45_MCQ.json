@@ -264,17 +264,26 @@
     "E": "Hb Pakse"
    },
    "correct": "C",
-   "explanation": "HbA2 5.4% HbF 12% abnormal Hb 91.9% + polycythemia → Hb Tak (high-oxygen-affinity variant)",
+   "explanation": "Hct 50% หน้าแดง คัน ปวดหัว ร่วมกับ abnormal Hb 92% = Hb Tak ที่จับออกซิเจนแน่นเกิน",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "HbS ใน sickling",
-    "B": "HbC ไม่",
-    "C": "✓ Hb Tak (β-chain elongation) พบในคนไทย",
-    "D": "Hb Malay = cryptic splice site β",
-    "E": "Hb Pakse เป็น α-chain variant"
+    "A": "HbS ทำให้ซีดจาก sickling ไม่ทำเลือดข้น",
+    "B": "HbC ทำให้ซีดเล็กน้อยและมี target cell",
+    "C": "✓ Hb Tak มี O2 affinity สูง → เนื้อเยื่อขาด O2 → erythrocytosis",
+    "D": "Hb Malay เป็น thalassemic variant ทำให้ซีด",
+    "E": "Hb Pakse เป็น α-chain termination variant ทำให้ซีด"
    },
-   "key_concept": "• Hb Tak: β-chain extension, ↑ HbA2/F\n• Polycythemia/flush จาก Hb ที่ O₂ affinity สูง",
+   "key_concept": "• Hb Tak: high-affinity Hb พบในคนไทย\n• homozygous: Hct สูง ไม่ซีด",
+   "mechanism": [
+    "Hb Tak ไม่ปล่อย O2 ให้เนื้อเยื่อ",
+    "ไตหลั่ง EPO เพิ่ม",
+    {
+     "s": "RBC เพิ่ม Hct 50%",
+     "answer": true
+    },
+    "หน้าแดง คัน ปวดหัว"
+   ],
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 45].pdf",
     "page": 2,
@@ -313,17 +322,26 @@
     "E": "100%"
    },
    "correct": "C",
-   "explanation": "พ่อ β-thal trait (HbA2 6%) · แม่ HbE/HbE? (E 90 F 10) → ลูก 50% เสี่ยง HbE/β-thal หรือ trait",
+   "explanation": "พ่อเป็น β-thal trait (A2 6%) แม่เป็น homozygous HbE: ลูกครึ่งหนึ่งได้ β-thal จากพ่อคู่กับ βE จากแม่ = β-thal/HbE disease 50%",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "0%",
-    "B": "25%",
-    "C": "✓ 50% (พ่อเป็น β-thal trait ส่ง β-thal 50%)",
-    "D": "75%",
-    "E": "100%"
+    "A": "0% ไม่ถูก เพราะพ่อส่ง β-thal allele ได้",
+    "B": "25% ใช้เมื่อพ่อแม่เป็นพาหะทั้งคู่",
+    "C": "✓ แม่ส่ง βE เสมอ พ่อส่ง β-thal ได้ 1/2 → 50%",
+    "D": "75% ไม่ตรงกับการถ่ายทอดคู่นี้",
+    "E": "100% เกิดได้ถ้าพ่อเป็น homozygous β-thal"
    },
-   "key_concept": "• β-thal trait × HbE homozygote → 50% HbE/β-thal\n• Autosomal recessive\n• HbA2 >3.5% = β-thal trait",
+   "key_concept": "• OF บวก + DCIP ลบ + A2 สูง = β-thal trait\n• DCIP บวก + E 90% = homozygous HbE",
+   "mechanism": [
+    "พ่อ β-thal trait ส่ง β-thal หรือ βA อย่างละ 1/2",
+    "แม่ EE ส่ง βE ทุกครั้ง",
+    {
+     "s": "ลูกเป็น β-thal/βE ครึ่งหนึ่ง",
+     "answer": true
+    },
+    "อีกครึ่งเป็น HbE trait"
+   ],
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 45].pdf",
     "page": 2,
@@ -568,17 +586,26 @@
     "E": "Decrease zinc intake"
    },
    "correct": "C",
-   "explanation": "Macrocytic (MCV 120) + retic ต่ำ + neuropathy → B12 deficiency (intrinsic factor deficiency = pernicious anemia)",
+   "explanation": "MCV 120 reticulocyte ต่ำ ร่วมกับอาการชา = ขาด vitamin B12 จาก intrinsic factor deficiency (pernicious anemia)",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "Folate ไม่ทำ neuropathy",
-    "B": "B6 ไม่ใช่",
-    "C": "✓ Intrinsic factor deficiency → B12 ↓",
-    "D": "Low iron = microcytic",
-    "E": "Zinc ไม่ใช่"
+    "A": "การใช้ folate เพิ่มพบในตั้งครรภ์/hemolysis และไม่มีอาการทางระบบประสาท",
+    "B": "vitamin B6 เกี่ยวกับ sideroblastic anemia (microcytic)",
+    "C": "✓ ขาด intrinsic factor ดูดซึม B12 ไม่ได้ → megaloblastic + ระบบประสาทเสื่อม",
+    "D": "เหล็กต่ำทำ microcytic ไม่ใช่ MCV 120",
+    "E": "สังกะสีต่ำไม่ทำ megaloblastic anemia"
    },
-   "key_concept": "• B12 deficiency: macrocytic, neuropathy, hypersegmented neutrophil\n• Pernicious anemia: anti-IF antibody",
+   "key_concept": "• B12 ขาด: megaloblastic + subacute combined degeneration\n• folate ขาด: megaloblastic ไม่มีอาการประสาท",
+   "mechanism": [
+    "autoantibody ทำลาย parietal cell/intrinsic factor",
+    "ดูดซึม B12 ที่ ileum ไม่ได้",
+    {
+     "s": "DNA synthesis เสีย + myelin เสื่อม",
+     "answer": true
+    },
+    "MCV สูง reticulocyte ต่ำ ชา"
+   ],
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 45].pdf",
     "page": 4,
@@ -872,17 +899,26 @@
     "E": "+ 0 0 0 +"
    },
    "correct": "A",
-   "explanation": "Group O (O allele deletion) → ไม่มี A/B antigen; serum มี anti-A, anti-B",
+   "explanation": "O allele (deletion ตำแหน่ง 258/261) ไม่สร้าง transferase จึงไม่มี A/B antigen แต่มี anti-A และ anti-B ในซีรัม",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "✓ ตามต้นฉบับ: forward + (cell ไม่ agglutinate?), แปลผลรูปแบบ O",
-    "B": "รูปแบบ B",
-    "C": "รูปแบบ A",
-    "D": "รูปแบบ AB",
-    "E": "รูปแบบอื่น"
+    "A": "✓ ซีรัมจับ A cell และ B cell (+,+) ไม่จับ O cell และเม็ดเลือดไม่ทำปฏิกิริยากับ anti-A/anti-B (0,0,0)",
+    "B": "ผลกลับด้าน: ซีรัมไม่จับ A/B cell เป็นไปไม่ได้ในคนหมู่ O",
+    "C": "ซีรัมหมู่ O ไม่จับ O cell จึงไม่ควรบวก",
+    "D": "รูปแบบนี้เป็นของหมู่ A (จับ B cell และ anti-A บวก)",
+    "E": "รูปแบบนี้เป็นของหมู่ B (จับ A cell และ anti-B บวก)"
    },
-   "key_concept": "• Group O: RBC ไม่มี A/B, plasma มี anti-A anti-B\n• Forward/reverse grouping",
+   "key_concept": "• forward typing: เม็ดเลือดผู้ป่วย + anti-A/anti-B\n• reverse typing: ซีรัมผู้ป่วย + A cell/B cell",
+   "mechanism": [
+    "frameshift deletion ในยีน ABO",
+    "ได้เอนไซม์ที่ไม่ทำงาน ไม่เติมน้ำตาลบน H antigen",
+    {
+     "s": "เม็ดเลือดไม่มี A/B antigen (forward ลบ)",
+     "answer": true
+    },
+    "ซีรัมมี anti-A, anti-B (reverse บวก)"
+   ],
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 45].pdf",
     "page": 5,
@@ -1067,17 +1103,26 @@
     "E": "Protein electrophoresis"
    },
    "correct": "B",
-   "explanation": "Pancytopenia + tear drop (myelofibrosis) → bone marrow biopsy",
+   "explanation": "pancytopenia ปวดกระดูก และ teardrop cell บ่งว่าไขกระดูกถูกแทนที่ ต้องตรวจ bone marrow",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "Inclusion body ไม่",
-    "B": "✓ Bone marrow examination",
-    "C": "Hb typing ไม่",
-    "D": "LAP score ไม่ใช่",
-    "E": "SPE ไม่ใช่"
+    "A": "inclusion body ใช้หา HbH ไม่อธิบาย pancytopenia",
+    "B": "✓ teardrop + pancytopenia = myelofibrosis/marrow infiltration ต้องดูไขกระดูก",
+    "C": "Hb typing ใช้กับ thalassemia",
+    "D": "LAP score ใช้แยก CML กับ leukemoid reaction",
+    "E": "protein electrophoresis ใช้เมื่อสงสัย myeloma โดยตรง"
    },
-   "key_concept": "• Tear drop → myelofibrosis/marrow infiltration\n• Pancytopenia → BM aspirate/biopsy",
+   "key_concept": "• teardrop cell (dacrocyte): myelofibrosis, มะเร็งแพร่กระจายไขกระดูก\n• leukoerythroblastic picture = ไขกระดูกถูกรุกราน",
+   "mechanism": [
+    "ไขกระดูกถูกแทนที่ด้วยพังผืด/เซลล์มะเร็ง",
+    "เซลล์เม็ดเลือดถูกบีบออกและสร้างนอกไขกระดูก",
+    {
+     "s": "pancytopenia + teardrop cell",
+     "answer": true
+    },
+    "ยืนยันด้วย bone marrow biopsy"
+   ],
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 45].pdf",
     "page": 6,
@@ -1116,17 +1161,26 @@
     "E": "KRAS"
    },
    "correct": "B",
-   "explanation": "t(14;18) → BCL2 activation (follicular lymphoma)",
+   "explanation": "t(14;18) ย้าย BCL2 ไปอยู่ใต้ promoter ของ IgH ทำให้ BCL2 แสดงออกมากเกิน (follicular lymphoma)",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "BRCA1 ไม่",
-    "B": "✓ BCL2 (IgH–BCL2)",
-    "C": "APC ไม่",
-    "D": "MYC = t(8;14)",
-    "E": "KRAS ไม่"
+    "A": "BRCA1 เป็น tumor suppressor ของมะเร็งเต้านม/รังไข่",
+    "B": "✓ BCL2 ยับยั้ง apoptosis เซลล์ B จึงไม่ตาย",
+    "C": "APC เป็น tumor suppressor ของมะเร็งลำไส้ใหญ่",
+    "D": "MYC ถูกกระตุ้นใน t(8;14) Burkitt lymphoma",
+    "E": "KRAS กลายพันธุ์แบบ point mutation ในมะเร็งตับอ่อน/ลำไส้"
    },
-   "key_concept": "• t(14;18): follicular lymphoma → BCL2 ↑ → anti-apoptosis\n• t(8;14): Burkitt MYC",
+   "key_concept": "• t(14;18) BCL2 – follicular · t(8;14) MYC – Burkitt · t(11;14) cyclin D1 – mantle cell\n• t(9;22) BCR-ABL – CML · t(15;17) – APL",
+   "mechanism": [
+    "t(14;18)",
+    "BCL2 อยู่ใต้ IgH enhancer",
+    {
+     "s": "BCL2 มากเกิน ยับยั้ง apoptosis",
+     "answer": true
+    },
+    "B cell สะสมเป็น follicular lymphoma"
+   ],
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 45].pdf",
     "page": 7,
@@ -1165,17 +1219,17 @@
     "E": "Myeloid derived suppressor cell"
    },
    "correct": "D",
-   "explanation": "PD-L1 แสดงบน tumor และ tumor infiltrating cells · ต้นฉบับ D",
+   "explanation": "ตามเฉลยต้นฉบับ PD-L1 พบบนเซลล์ภูมิคุ้มกันที่แทรกในเนื้องอก (tumor-infiltrating lymphocyte) ร่วมกับเซลล์มะเร็ง",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "NK cell ไม่",
-    "B": "Cytotoxic T cell expresses PD-1",
-    "C": "APC ก็ expresses PD-L1 แต่ต้นฉบับเลือก D",
-    "D": "✓ ต้นฉบับ: tumor infiltrating lymphocyte",
-    "E": "MDSC ก็แสดงได้"
+    "A": "NK cell แสดง PD-1 ได้บ้าง ไม่ใช่แหล่งหลักของ PD-L1",
+    "B": "cytotoxic T cell แสดง PD-1 (ตัวรับ) เป็นหลัก",
+    "C": "antigen presenting cell แสดง PD-L1 ได้จริง (AI เห็นว่าเป็นคำตอบที่ตำราใช้บ่อย) แต่คงตามต้นฉบับ",
+    "D": "✓ ตามเฉลยต้นฉบับ: เซลล์ภูมิคุ้มกันใน tumor microenvironment ถูกชักนำให้แสดง PD-L1",
+    "E": "MDSC แสดง PD-L1 ได้ แต่ไม่ใช่ข้อที่เฉลยเลือก"
    },
-   "key_concept": "• PD-1 บน T cell, PD-L1 บน tumor/APC\n• Checkpoint inhibitor: pembrolizumab, nivolumab",
+   "key_concept": "• PD-1 อยู่บน T cell · PD-L1 อยู่บนเซลล์มะเร็งและเซลล์ภูมิคุ้มกันในเนื้องอก\n• ยา: nivolumab/pembrolizumab (anti-PD-1), atezolizumab (anti-PD-L1)",
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 45].pdf",
     "page": 7,
@@ -1263,17 +1317,17 @@
     "E": "Alopecia"
    },
    "correct": "B",
-   "explanation": "Imatinib ADR: muscle cramp, edema, GI, myelosuppression",
+   "explanation": "Imatinib มีผลข้างเคียงเด่นคือบวมน้ำ ตะคริว และปวดกล้ามเนื้อ/ข้อ",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "Infusion reaction = antibody",
-    "B": "✓ Muscle cramp, joint pain",
-    "C": "Hypertension ไม่ใช่เด่น",
-    "D": "ILD เป็นของยาอื่น",
-    "E": "Alopecia ไม่"
+    "A": "infusion reaction เป็นของ monoclonal antibody ที่ให้ทางหลอดเลือด เช่น rituximab",
+    "B": "✓ imatinib (ยากิน): fluid retention, muscle cramp, arthralgia",
+    "C": "hypertension เด่นในยาต้าน VEGF เช่น bevacizumab",
+    "D": "interstitial lung disease เด่นใน gefitinib/erlotinib, bleomycin",
+    "E": "alopecia เด่นใน cytotoxic chemotherapy"
    },
-   "key_concept": "• Imatinib: BCR-ABL TKI\n• ADR: cramps, fluid retention, cytopenia\n• Resistance: T315I",
+   "key_concept": "• imatinib ยับยั้ง BCR-ABL tyrosine kinase ใช้ใน CML และ GIST (c-KIT)\n• ADR: บวมรอบตา ตะคริว คลื่นไส้",
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 45].pdf",
     "page": 7,
@@ -1312,17 +1366,26 @@
     "E": "Hyperthermia"
    },
    "correct": "C",
-   "explanation": "ให้ PRBC อย่างเดียว (ไม่มี plasma/platelet) → dilutional coagulopathy (massive transfusion)",
+   "explanation": "ให้แต่ packed red cell ปริมาณมาก ไม่มี factor และเกล็ดเลือด จึงเกิด dilutional coagulopathy",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "Hypokalemia ได้จาก transfusion แต่ hyperK มากกว่า",
-    "B": "Hypocalcemia ไม่ hyper",
-    "C": "✓ Coagulopathy (dilution)",
-    "D": "Acidosis มากกว่า alkalosis",
-    "E": "Hyperthermia ไม่"
+    "A": "เลือดเก็บนานมี K สูง ทำ hyperkalemia ไม่ใช่ hypokalemia",
+    "B": "citrate จับแคลเซียม ทำ hypocalcemia ไม่ใช่ hypercalcemia",
+    "C": "✓ factor และ platelet ถูกเจือจาง เลือดแข็งตัวไม่ได้",
+    "D": "alkalosis เกิดภายหลังจาก citrate ถูกเปลี่ยนเป็น bicarbonate ไม่ใช่ผลหลักตามเฉลย",
+    "E": "เลือดเย็นทำ hypothermia ไม่ใช่ hyperthermia"
    },
-   "key_concept": "• Massive transfusion: dilutional coagulopathy, hypocalcemia, hyperK\n• ให้ FFP/platelet อัตราส่วน 1:1:1",
+   "key_concept": "• massive transfusion ให้ PRC:FFP:platelet ≈ 1:1:1\n• ภาวะแทรกซ้อน: hypocalcemia, hyperkalemia, hypothermia, coagulopathy",
+   "mechanism": [
+    "เสียเลือดมาก ได้แต่ PRC",
+    "coagulation factor และเกล็ดเลือดไม่ถูกทดแทน",
+    {
+     "s": "ถูกเจือจาง (dilutional coagulopathy)",
+     "answer": true
+    },
+    "เลือดออกไม่หยุด"
+   ],
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 45].pdf",
     "page": 7,
@@ -1459,17 +1522,26 @@
     "E": "Polycythemia"
    },
    "correct": "E",
-   "explanation": "2,3-BPG ↑ ใน hypoxia/chronic anemia/ high altitude · ต้นฉบับ polycythemia",
+   "explanation": "ตามเฉลยต้นฉบับ polycythemia (ที่เกิดจาก hypoxia เรื้อรัง) มี 2,3-BPG เพิ่มเพื่อช่วยปล่อยออกซิเจน",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "HT ไม่",
-    "B": "Hypothyroid ไม่",
-    "C": "DM ไม่ (DM ↓)",
-    "D": "Asthma อาจ hypoxia แต่ต้นฉบับ E",
-    "E": "✓ Polycythemia (chronic hypoxia ต้นเหตุ)"
+    "A": "hypertension ไม่มีผลต่อ 2,3-BPG",
+    "B": "hypothyroidism ทำให้ 2,3-BPG ลดลง (hyperthyroid เพิ่ม)",
+    "C": "DM ไม่ใช่ภาวะหลักที่เพิ่ม 2,3-BPG",
+    "D": "asthma กำเริบสั้น ๆ ไม่เพิ่ม 2,3-BPG ชัดเจนเท่า hypoxia เรื้อรัง",
+    "E": "✓ secondary polycythemia จาก hypoxia เรื้อรังมี 2,3-BPG สูงร่วม"
    },
-   "key_concept": "• 2,3-BPG ↑: hypoxia, anemia, altitude\n• 2,3-BPG ↑ → O₂ curve shift right",
+   "key_concept": "• 2,3-BPG เพิ่ม: hypoxia เรื้อรัง, ที่สูง, anemia, hyperthyroid\n• 2,3-BPG เลื่อน O2 dissociation curve ไปทางขวา",
+   "mechanism": [
+    "hypoxia เรื้อรัง",
+    "glycolysis ของ RBC เบนเข้า Rapoport–Luebering shunt",
+    {
+     "s": "2,3-BPG เพิ่ม ลด O2 affinity",
+     "answer": true
+    },
+    "ปล่อย O2 ให้เนื้อเยื่อมากขึ้น"
+   ],
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 45].pdf",
     "page": 8,
@@ -1508,17 +1580,17 @@
     "E": "lymph node metastasis\""
    },
    "correct": "B",
-   "explanation": "TNM = Tumor size, Node, Metastasis — ไม่ใช้ tumor grade",
+   "explanation": "TNM staging ไม่ใช้ tumor grade (grade คือระดับ differentiation ไม่ใช่การลุกลาม)",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "Tumor size ใช้ (T)",
-    "B": "✓ Grade (histologic) ไม่ใช้ใน TNM",
-    "C": "Tumor (primary) ใช้",
-    "D": "Tumor extension ใช้",
-    "E": "Node ใช้"
+    "A": "ขนาดก้อนเป็นส่วนของ T",
+    "B": "✓ grade บอกความเหมือนเนื้อเยื่อเดิม ไม่อยู่ใน TNM",
+    "C": "tumor (T) เป็นองค์ประกอบของ TNM",
+    "D": "การลุกลามเฉพาะที่เป็นส่วนของ T",
+    "E": "การกระจายต่อมน้ำเหลืองคือ N"
    },
-   "key_concept": "• TNM = anatomical stage\n• Grade = differentiation (แยกต่างหาก)",
+   "key_concept": "• stage (TNM) = การแพร่กระจาย · grade = differentiation\n• stage พยากรณ์โรคได้ดีกว่า grade",
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 45].pdf",
     "page": 8,
@@ -1653,17 +1725,26 @@
     "E": "rifampin"
    },
    "correct": "A",
-   "explanation": "Tetracycline จับ iron (chelation) ลดการดูด",
+   "explanation": "Tetracycline จับกับเหล็กในลำไส้ ทำให้เหล็กดูดซึมลดลง (ตามเฉลย)",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "✓ Tetracycline chelates Fe",
-    "B": "Omeprazole ลด acid (ลดการดูดเหล็ก แต่ต้นฉบับเลือก A)",
-    "C": "Verapamil ไม่",
-    "D": "Ketoconazole ไม่",
-    "E": "Rifampin ไม่"
+    "A": "✓ tetracycline chelate กับ Fe ทำให้ทั้งยาและเหล็กดูดซึมน้อย",
+    "B": "omeprazole ลดกรดจึงลดการดูดซึมเหล็กได้เช่นกัน (AI เห็นว่าถูกได้) แต่ต้นฉบับเลือก tetracycline",
+    "C": "verapamil ไม่มีผลต่อการดูดซึมเหล็ก",
+    "D": "ketoconazole ไม่มีผลต่อการดูดซึมเหล็ก",
+    "E": "rifampin ไม่มีผลต่อการดูดซึมเหล็ก"
    },
-   "key_concept": "• Fe absorption ↓: tetracycline, antacid, PPI, tea\n• Fe absorption ↑: vitamin C",
+   "key_concept": "• ยาที่จับ cation: tetracycline, quinolone, levothyroxine\n• เว้นระยะเหล็กกับยาเหล่านี้อย่างน้อย 2 ชม.",
+   "mechanism": [
+    "กินเหล็กพร้อม tetracycline",
+    "เกิดสารเชิงซ้อนไม่ละลาย",
+    {
+     "s": "เหล็กดูดซึมลดลง",
+     "answer": true
+    },
+    "Hb ไม่ขึ้นตามคาด"
+   ],
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 45].pdf",
     "page": 9,
@@ -1896,17 +1977,26 @@
     "E": "protein 4.1"
    },
    "correct": "A",
-   "explanation": "Hereditary spherocytosis: spectrin (หรือ ankyrin) deficiency ต้นฉบับ A",
+   "explanation": "ซีด เหลือง ม้ามโต spherocyte จำนวนมาก = hereditary spherocytosis ตามเฉลยคือ spectrin",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "✓ Spectrin",
-    "B": "Band 3 พบ รอง",
-    "C": "Actin ไม่",
-    "D": "Ankyrin พบมากสุด แต่ต้นฉบับเลือก spectrin",
-    "E": "Protein 4.1 → elliptocytosis"
+    "A": "✓ spectrin บกพร่อง เยื่อหุ้มเสียความยืดหยุ่น เซลล์กลม",
+    "B": "band 3 บกพร่องทำ HS ได้ แต่ไม่ใช่ข้อที่เฉลยเลือก",
+    "C": "actin บกพร่องพบน้อยมาก",
+    "D": "ankyrin พบบ่อยในตำราตะวันตก (AI เห็นว่าเป็นไปได้) แต่คงตามต้นฉบับ",
+    "E": "protein 4.1 ทำ hereditary elliptocytosis"
    },
-   "key_concept": "• HS: ankyrin, spectrin, band 3\n• EMA binding test, osmotic fragility",
+   "key_concept": "• HS: osmotic fragility เพิ่ม, MCHC สูง, EMA binding ลด\n• ภาวะแทรกซ้อน: นิ่วถุงน้ำดี, aplastic crisis จาก parvovirus B19",
+   "mechanism": [
+    "โปรตีนโครงร่างเยื่อหุ้มบกพร่อง",
+    "เยื่อหุ้มหลุดเป็น microvesicle",
+    {
+     "s": "เซลล์กลมเป็น spherocyte",
+     "answer": true
+    },
+    "ถูกทำลายที่ม้าม"
+   ],
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 45].pdf",
     "page": 10,
@@ -1945,17 +2035,17 @@
     "E": "Asplenia"
    },
    "correct": "A",
-   "explanation": "ต้นฉบับ: EDTA นานไป → artifact (รูปไม่มี)",
+   "explanation": "ภาพเม็ดเลือดแดงมีหนาม (crenated/echinocyte) เป็น artifact จากเลือดแช่ EDTA นานเกิน",
    "image": "img/HEMA-45-MCQ-044.jpg",
    "issues": [],
    "option_why": {
-    "A": "✓ EDTA ค้างนาน (artifact เช่น spherocyte/cell crenation)",
-    "B": "Abetalipoproteinemia = acanthocyte",
-    "C": "Fat metabolism ไม่",
-    "D": "G6PD = bite/Heinz",
-    "E": "Asplenia = HJ body"
+    "A": "✓ เก็บเลือดใน EDTA นาน RBC หดเป็น echinocyte",
+    "B": "abetalipoproteinemia ทำ acanthocyte (หนามไม่สม่ำเสมอ)",
+    "C": "ความผิดปกติของไขมัน/โรคตับทำ acanthocyte หรือ target cell",
+    "D": "G6PD deficiency ทำ bite cell และ Heinz body",
+    "E": "asplenia ทำ Howell–Jolly body และ target cell"
    },
-   "key_concept": "• EDTA artifact: crenated cell, platelet satellitism\n• ต้องดูภาพประกอบ",
+   "key_concept": "• echinocyte (burr cell): หนามสั้นสม่ำเสมอ – artifact, uremia\n• acanthocyte (spur cell): หนามยาวไม่สม่ำเสมอ – โรคตับ, abetalipoproteinemia",
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 45].pdf",
     "page": 10,

@@ -255,17 +255,26 @@
     "E": "ITP"
    },
    "correct": "A",
-   "explanation": "EPO ↑ ที่ high altitude (hypoxia)",
+   "explanation": "อยู่ที่สูง ออกซิเจนในอากาศต่ำ ไตรับรู้ hypoxia จึงหลั่ง EPO เพิ่ม",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "✓ Hypoxia → HIF → EPO ↑",
-    "B": "Polycythemia → EPO ↓",
-    "C": "CKD → EPO ↓",
-    "D": "Acute asthma ไม่ใช่ chronic hypoxia",
-    "E": "ITP ไม่เกี่ยว"
+    "A": "✓ hypoxia จากที่สูงกระตุ้น HIF ในไต → EPO สูง",
+    "B": "polycythemia (vera) มี RBC มาก กด EPO ให้ต่ำ",
+    "C": "ไตวายเรื้อรังสร้าง EPO ไม่ได้ ระดับจึงต่ำ",
+    "D": "หอบหืดกำเริบเฉียบพลันสั้นเกินกว่าจะทำให้ EPO สูงชัดเจน",
+    "E": "ITP เป็นโรคเกล็ดเลือด ไม่กระทบ EPO"
    },
-   "key_concept": "• EPO ↑: hypoxia, altitude, anemia\n• EPO ↓: CKD, polycythemia vera",
+   "key_concept": "• EPO สูง: hypoxia เรื้อรัง, ซีด, เนื้องอกสร้าง EPO\n• EPO ต่ำ: CKD, polycythemia vera",
+   "mechanism": [
+    "ความดันออกซิเจนในอากาศต่ำ",
+    "เซลล์ peritubular ของไตขาด O2 HIF ทำงาน",
+    {
+     "s": "หลั่ง EPO เพิ่ม",
+     "answer": true
+    },
+    "ไขกระดูกสร้าง RBC มากขึ้น"
+   ],
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 42].pdf",
     "page": 2,
@@ -304,17 +313,17 @@
     "E": "NK cell"
    },
    "correct": "B",
-   "explanation": "Macrophage กำจัด dead cell (phagocytosis)",
+   "explanation": "Macrophage ทำหน้าที่เก็บกินเซลล์ที่ตายและเศษเซลล์",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "Lymphocyte ไม่",
-    "B": "✓ Macrophage กำจัดเซลล์ตาย",
-    "C": "Basophil ไม่",
-    "D": "Eosinophil ไม่",
-    "E": "NK ฆ่า target"
+    "A": "lymphocyte ทำหน้าที่ภูมิคุ้มกันจำเพาะ ไม่ได้เก็บกินซากเซลล์",
+    "B": "✓ macrophage เป็น professional phagocyte กิน apoptotic cell",
+    "C": "basophil หลั่ง histamine ในปฏิกิริยาแพ้",
+    "D": "eosinophil ต่อต้านพยาธิและเกี่ยวกับภูมิแพ้",
+    "E": "NK cell ฆ่าเซลล์ติดไวรัส/มะเร็ง แต่ไม่ได้เก็บซาก"
    },
-   "key_concept": "• Efferocytosis โดย macrophage\n• สรุป: Macrophage กำจัด dead cell (phagocytosis)",
+   "key_concept": "• macrophage มาจาก monocyte อยู่ตามเนื้อเยื่อ\n• ในม้าม macrophage กำจัด RBC แก่",
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 42].pdf",
     "page": 2,
@@ -401,17 +410,17 @@
     "E": "Sideroblastic"
    },
    "correct": "D",
-   "explanation": "Howell–Jolly + basophilic stippling → hemolytic (ต้นฉบับ D)",
+   "explanation": "Howell–Jolly body ร่วมกับ basophilic stippling พบใน hemolytic anemia ที่ไขกระดูกเร่งสร้างเม็ดเลือด (เช่น thalassemia)",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "Iron overload ไม่",
-    "B": "Iron deficiency ไม่",
-    "C": "Aplastic ไม่",
-    "D": "✓ Hemolytic (ต้นฉบับ)",
-    "E": "Sideroblastic พบ stippling แต่ต้นฉบับเลือก D"
+    "A": "iron overload พบ siderotic granule (Pappenheimer body)",
+    "B": "iron deficiency พบ hypochromic microcytic ไม่มี inclusion เหล่านี้",
+    "C": "aplastic anemia เซลล์น้อย ไม่มี inclusion เด่น",
+    "D": "✓ erythropoiesis ที่เร่งและผิดปกติทำให้มีเศษนิวเคลียสและ RNA ค้าง",
+    "E": "sideroblastic พบ Pappenheimer body และ ring sideroblast"
    },
-   "key_concept": "• Basophilic stippling: lead, thal, MDS\n• HJ: asplenia/hyposplenism",
+   "key_concept": "• Howell–Jolly = เศษ DNA (asplenia, hemolysis รุนแรง, megaloblastic)\n• basophilic stippling = RNA/ribosome (thalassemia, lead)",
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 42].pdf",
     "page": 3,
@@ -499,16 +508,16 @@
     "E": ""
    },
    "correct": "A",
-   "explanation": "GM-CSF เป็น cytokine ของ white cell (ต้นฉบับ A, D)",
+   "explanation": "GM-CSF เป็น cytokine กระตุ้นการสร้างเม็ดเลือดขาวสาย granulocyte และ monocyte (ต้นฉบับยอมรับ IL-6 ด้วย)",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "✓ GM-CSF กระตุ้น granulocyte/monocyte",
-    "B": "TNF-α pro-inflammatory",
-    "C": "TGF-β ยับยั้ง",
-    "D": "✓ IL-6 กระตุ้น hematopoiesis/acute phase (ต้นฉบับยอมรับ)"
+    "A": "✓ GM-CSF กระตุ้น progenitor ของ granulocyte–macrophage",
+    "B": "TNF-α เป็น cytokine การอักเสบ และกดการสร้างเม็ดเลือด",
+    "C": "TGF-β1 ยับยั้งการแบ่งตัวของ stem cell",
+    "D": "✓ IL-6 กระตุ้น stem cell และการสร้างเม็ดเลือดขาวในภาวะอักเสบ"
    },
-   "key_concept": "• WBC cytokines: G-CSF, GM-CSF, IL-3, IL-5\n• สรุป: GM-CSF เป็น cytokine ของ white cell (ต้นฉบับ A, D)",
+   "key_concept": "• G-CSF → neutrophil · GM-CSF → granulocyte + monocyte · IL-5 → eosinophil\n• IL-3 กระตุ้นหลายสาย (multi-CSF)",
    "also_accept": [
     "D"
    ],
@@ -560,17 +569,26 @@
     "E": "Chimeric tyrosine kinase protein from balance translocation 364-341 Hematopoietic system and Biology of Neoplasia"
    },
    "correct": "B",
-   "explanation": "Polycythemia vera: JAK2 V617F point mutation (tyrosine kinase)",
+   "explanation": "Hb 20.5 ร่วมกับ WBC และเกล็ดเลือดสูง ม้ามโต EPO ต่ำ = polycythemia vera จาก JAK2 V617F (point mutation ของ tyrosine kinase)",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "del 5q = MDS",
-    "B": "✓ Point mutation of tyrosine kinase (JAK2)",
-    "C": "Germline ไม่ใช่",
-    "D": "ไม่ใช่คำตอบที่ถูกต้องของโจทย์ข้อนี้",
-    "E": "ไม่ใช่คำตอบที่ถูกต้องของโจทย์ข้อนี้"
+    "A": "del(5q) พบใน myelodysplastic syndrome",
+    "B": "✓ JAK2 V617F เป็น point mutation ของ non-receptor tyrosine kinase",
+    "C": "mismatch repair gene เกี่ยวกับ Lynch syndrome",
+    "D": "homozygous deletion ของ tumor suppressor เช่น RB ไม่ใช่กลไก PV",
+    "E": "chimeric tyrosine kinase จาก translocation คือ BCR-ABL ของ CML"
    },
-   "key_concept": "• PV: Hct ↑, EPO ต่ำ, JAK2 V617F\n• Phlebotomy + hydroxyurea",
+   "key_concept": "• PV: panmyelosis, EPO ต่ำ, JAK2 V617F ~95%\n• CML: t(9;22) BCR-ABL fusion",
+   "mechanism": [
+    "JAK2 V617F",
+    "JAK-STAT ส่งสัญญาณเองโดยไม่ต้องมี EPO",
+    {
+     "s": "เซลล์ไขกระดูกทั้งสามสายเพิ่ม",
+     "answer": true
+    },
+    "เลือดหนืด ปวดหัว ม้ามโต"
+   ],
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 42].pdf",
     "page": 3,
@@ -609,17 +627,17 @@
     "E": "Viral infection"
    },
    "correct": "C",
-   "explanation": "Monocytosis พบบ่อยจาก tuberculosis (chronic infection)",
+   "explanation": "สาเหตุที่พบบ่อยของ monocytosis ตามเฉลยคือการติดเชื้อเรื้อรัง เช่น วัณโรค",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "CML อาจ แต่ไม่บ่อยที่สุด",
-    "B": "AMKL ไม่",
-    "C": "✓ TB (chronic infection)",
-    "D": "IM → lymphocytosis",
-    "E": "Viral infection → lymphocytosis"
+    "A": "CML ทำ granulocyte เพิ่มเป็นหลัก",
+    "B": "AML ชนิด monocytic ทำได้แต่พบน้อยกว่าการติดเชื้อ",
+    "C": "✓ การติดเชื้อเรื้อรังแบบ granuloma กระตุ้น monocyte/macrophage",
+    "D": "infectious mononucleosis ทำ atypical lymphocyte แม้ชื่อคล้าย",
+    "E": "ไวรัสทั่วไปทำ lymphocytosis"
    },
-   "key_concept": "• Monocytosis: TB, endocarditis, CMML, recovery from neutropenia\n• สรุป: Monocytosis พบบ่อยจาก tuberculosis (chronic infection)",
+   "key_concept": "• monocytosis: TB, endocarditis, โรคอักเสบเรื้อรัง, CMML\n• macrophage เป็นเซลล์หลักของ granuloma",
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 42].pdf",
     "page": 4,
@@ -658,17 +676,26 @@
     "E": "dengue hemorrhagic fever"
    },
    "correct": "A",
-   "explanation": "Lymphocytopenia พบบ่อยจาก HIV infection",
+   "explanation": "HIV ทำลาย CD4+ T cell จึงเป็นสาเหตุสำคัญของ lymphocytopenia",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "✓ HIV (CD4 ↓)",
-    "B": "Hemolytic ไม่",
-    "C": "Myeloma ไม่",
-    "D": "IM → lymphocytosis",
-    "E": "Dengue อาจ ↓ แต่ HIV คลาสสิก"
+    "A": "✓ HIV ติดและทำลาย CD4+ T lymphocyte",
+    "B": "hemolytic anemia กระทบเม็ดเลือดแดง",
+    "C": "multiple myeloma เป็นโรคของ plasma cell ไม่ทำ lymphocyte ต่ำเด่น",
+    "D": "infectious mononucleosis ทำ lymphocyte สูง",
+    "E": "dengue ทำ leukopenia แต่มี atypical lymphocyte เพิ่ม"
    },
-   "key_concept": "• Lymphopenia: HIV, steroid, SLE, chemo\n• สรุป: Lymphocytopenia พบบ่อยจาก HIV infection",
+   "key_concept": "• lymphopenia: HIV, steroid, เคมีบำบัด, รังสี\n• CD4 <200 = AIDS",
+   "mechanism": [
+    "HIV จับ CD4 และ CCR5/CXCR4",
+    "ไวรัสเพิ่มจำนวนใน CD4+ T cell",
+    {
+     "s": "เซลล์ถูกทำลายต่อเนื่อง",
+     "answer": true
+    },
+    "lymphocytopenia ติดเชื้อฉวยโอกาส"
+   ],
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 42].pdf",
     "page": 4,
@@ -707,17 +734,26 @@
     "E": "APDE"
    },
    "correct": "D",
-   "explanation": "CGD: NADPH oxidase defect",
+   "explanation": "Phagocyte สร้าง free radical ฆ่าเชื้อไม่ได้ = chronic granulomatous disease (ขาด NADPH oxidase)",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "Pelger–Huët = nuclear lobulation",
-    "B": "Chediak–Higashi = lysosome",
-    "C": "HES = eosinophil",
-    "D": "✓ CGD = ไม่ผลิต superoxide",
-    "E": "APDE ไม่ใช่"
+    "A": "Pelger–Huët เป็นนิวเคลียส neutrophil สองกลีบ ทำงานปกติ",
+    "B": "Chediak–Higashi เป็นความผิดปกติของ lysosome trafficking มี giant granule",
+    "C": "hypereosinophilic syndrome เป็น eosinophil สูงทำลายอวัยวะ",
+    "D": "✓ NADPH oxidase บกพร่อง ไม่มี respiratory burst",
+    "E": "APDE เป็นความผิดปกติของเกล็ดเลือด"
    },
-   "key_concept": "• CGD: NBT/DHR negative\n• สรุป: CGD: NADPH oxidase defect",
+   "key_concept": "• CGD: ติดเชื้อ catalase-positive ซ้ำ ๆ\n• ตรวจ DHR flow cytometry / NBT",
+   "mechanism": [
+    "NADPH oxidase บกพร่อง",
+    "สร้าง superoxide ไม่ได้",
+    {
+     "s": "ฆ่าเชื้อใน phagosome ไม่ได้",
+     "answer": true
+    },
+    "ติดเชื้อซ้ำ เกิด granuloma"
+   ],
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 42].pdf",
     "page": 4,
@@ -756,17 +792,26 @@
     "E": "Chronic granulomatous disease 364-341 Hematopoietic system and Biology of Neoplasia"
    },
    "correct": "C",
-   "explanation": "Toxic granulation, vacuolation, Döhle body → bacterial infection",
+   "explanation": "toxic granulation, vacuolization และ Döhle body ใน neutrophil เป็นลักษณะของการติดเชื้อแบคทีเรีย",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "Viral → atypical lymph",
-    "B": "Malaria → parasite in RBC",
-    "C": "✓ Bacterial infection/sepsis",
-    "D": "Parasite → eosinophil",
-    "E": "CGD ไม่ใช่"
+    "A": "ไวรัสทำ lymphocytosis/atypical lymphocyte",
+    "B": "มาลาเรียเห็นเชื้อใน RBC",
+    "C": "✓ แบคทีเรียกระตุ้นไขกระดูกปล่อย neutrophil ที่มี toxic change",
+    "D": "พยาธิทำ eosinophilia",
+    "E": "CGD เป็นความผิดปกติการทำงาน ไม่ใช่ลักษณะ smear นี้"
    },
-   "key_concept": "• Toxic change: bacterial infection/ G-CSF\n• สรุป: Toxic granulation, vacuolation, Döhle body → bacterial infection",
+   "key_concept": "• toxic change + left shift = bacterial infection/sepsis\n• Döhle body = เศษ RER สีฟ้าในไซโทพลาซึม",
+   "mechanism": [
+    "ติดเชื้อแบคทีเรีย",
+    "G-CSF/cytokine เร่งการสร้างและปล่อย neutrophil",
+    {
+     "s": "neutrophil สุกไม่เต็มที่มี toxic granulation/Döhle body",
+     "answer": true
+    },
+    "พบร่วมกับ left shift"
+   ],
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 42].pdf",
     "page": 4,
@@ -805,17 +850,17 @@
     "E": "Chediak-Higashi Disease"
    },
    "correct": "A",
-   "explanation": "Atypical lymphocyte 15% + fever + LN → infectious mononucleosis",
+   "explanation": "ไข้ ต่อมน้ำเหลืองโต lymphocyte 60% atypical lymphocyte 15% เกล็ดเลือดปกติ = infectious mononucleosis",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "✓ IM (EBV)",
-    "B": "Dengue มี plt ต่ำ",
-    "C": "CGD ไม่",
-    "D": "LAD ไม่",
-    "E": "CHS ไม่"
+    "A": "✓ EBV ทำ atypical lymphocyte >10% ร่วมกับไข้และต่อมน้ำเหลืองโต",
+    "B": "dengue มีเกล็ดเลือดต่ำและ WBC ต่ำ",
+    "C": "CGD เป็นโรคแต่กำเนิดติดเชื้อแบคทีเรียซ้ำ",
+    "D": "LAD มี neutrophil สูงมาก สะดือหลุดช้า",
+    "E": "Chediak–Higashi มี albinism และ giant granule"
    },
-   "key_concept": "• IM: atypical lymphocyte, Downey cell\n• EBV: heterophile",
+   "key_concept": "• IM: ไข้ เจ็บคอ ต่อมน้ำเหลืองโต ม้ามโต\n• ตรวจ heterophile antibody (Monospot)",
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 42].pdf",
     "page": 5,
@@ -854,16 +899,25 @@
     "E": ""
    },
    "correct": "B",
-   "explanation": "ใช้ nitrate → methemoglobinemia (chocolate blood, cyanosis)",
+   "explanation": "ได้ nitrate (isosorbide dinitrate) แล้วตัวเขียว เลือดสีช็อกโกแลต = methemoglobinemia",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "Methemoglobin (Fe³⁺) จาก oxidant",
-    "B": "✓ ไม่ใช่",
-    "C": "ไม่ใช่",
-    "D": "ไม่ใช่"
+    "A": "spherocytosis ทำซีดเหลือง ไม่ทำเลือดสีน้ำตาล",
+    "B": "✓ nitrate ออกซิไดซ์ Fe2+ เป็น Fe3+ จับ O2 ไม่ได้",
+    "C": "2,3-BPG ปรับการปล่อย O2 ไม่เปลี่ยนสีเลือด",
+    "D": "G6PD deficiency ทำ hemolysis ไม่ใช่เลือดสีช็อกโกแลต"
    },
-   "key_concept": "• Methemoglobinemia: nitrate, dapsone\n• รักษา methylene blue",
+   "key_concept": "• สาเหตุ methemoglobin: nitrate/nitrite, dapsone, benzocaine\n• รักษา methylene blue",
+   "mechanism": [
+    "nitrate เป็น oxidant",
+    "Fe2+ ใน heme → Fe3+",
+    {
+     "s": "methemoglobin จับ O2 ไม่ได้",
+     "answer": true
+    },
+    "เขียว เลือดสีช็อกโกแลต"
+   ],
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 42].pdf",
     "page": 5,
@@ -950,17 +1004,26 @@
     "E": "congestive heart failure 364-341 Hematopoietic system and Biology of Neoplasia"
    },
    "correct": "E",
-   "explanation": "2,3-DPG ↑ ใน CHF (hypoxia)",
+   "explanation": "2,3-DPG เพิ่มในภาวะเนื้อเยื่อขาดออกซิเจนเรื้อรัง เช่น congestive heart failure",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "Hypothyroid ไม่",
-    "B": "HT ไม่",
-    "C": "Hyperventilation (alkalosis) ↑ ในบางภาวะ แต่ต้นฉบับ E",
-    "D": "DM ไม่",
-    "E": "✓ CHF/hypoxia → 2,3-BPG ↑"
+    "A": "hypothyroid ทำให้ 2,3-DPG ลดลง",
+    "B": "hypertension ไม่เปลี่ยน 2,3-DPG",
+    "C": "hyperventilation ทำ alkalosis ซึ่งโยงกับ 2,3-DPG แต่ไม่ใช่ข้อที่เฉลยเลือก",
+    "D": "DM ไม่ใช่ภาวะหลักที่เพิ่ม 2,3-DPG",
+    "E": "✓ หัวใจล้มเหลว เนื้อเยื่อได้ O2 น้อย RBC เพิ่ม 2,3-DPG ชดเชย"
    },
-   "key_concept": "• Hypoxia → 2,3-BPG ↑\n• Right shift curve",
+   "key_concept": "• 2,3-DPG ↑: hypoxia เรื้อรัง, anemia, ที่สูง, heart failure\n• ผล: O2 dissociation curve เลื่อนขวา",
+   "mechanism": [
+    "cardiac output ต่ำ",
+    "เนื้อเยื่อขาด O2 เรื้อรัง",
+    {
+     "s": "RBC สร้าง 2,3-DPG เพิ่ม",
+     "answer": true
+    },
+    "Hb ปล่อย O2 ง่ายขึ้น"
+   ],
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 42].pdf",
     "page": 5,
@@ -1096,16 +1159,16 @@
     "E": ""
    },
    "correct": "D",
-   "explanation": "α-thal 2 trait (−α/αα) → CBC ปกติ normochromic normocytic",
+   "explanation": "α-thalassemia 2 trait (ขาดยีน α 1 ยีน) เป็น silent carrier เม็ดเลือดแดงเกือบปกติ ตามเฉลย = normochromic normocytic",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "Hypochromic microcytic ใน α-thal 1 trait",
-    "B": "ไม่ใช่",
-    "C": "ไม่ใช่",
-    "D": "✓ α-thal 2 trait (silent carrier) ปกติ"
+    "A": "hypochromic microcytic พบใน α-thal 1 trait (ขาด 2 ยีน) และ β-thal trait",
+    "B": "hypochromic normocytic ไม่ใช่ลักษณะจำเพาะ",
+    "C": "hyperchromic microcytic ไม่ใช่ลักษณะของ thalassemia",
+    "D": "✓ ขาดยีนเดียว globin เกือบสมดุล RBC ปกติหรือเล็กลงเพียงเล็กน้อย"
    },
-   "key_concept": "• α⁺-thal trait: silent\n• α⁰ trait: microcytic",
+   "key_concept": "• α-thal 2 (-α/αα): silent · α-thal 1 (--/αα): MCV ต่ำ · HbH (--/-α) · Bart's hydrops (--/--)\n• OF test มักบวกใน α-thal 1 แต่อาจลบใน α-thal 2",
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 42].pdf",
     "page": 6,
@@ -1206,17 +1269,17 @@
     "E": "red cell distribution width index"
    },
    "correct": "B",
-   "explanation": "Reticulocyte count ประเมินการสร้าง RBC",
+   "explanation": "Reticulocyte count เป็นตัวบอกการตอบสนองสร้างเม็ดเลือดแดงของไขกระดูก",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "Platelet ไม่",
-    "B": "✓ Retic count",
-    "C": "CBC กว้าง",
-    "D": "WBC ไม่",
-    "E": "RDW ไม่"
+    "A": "platelet count บอกสายเกล็ดเลือด",
+    "B": "✓ reticulocyte คือ RBC อ่อนที่เพิ่งออกจากไขกระดูก",
+    "C": "CBC บอกระดับความซีด ไม่บอกอัตราการสร้าง",
+    "D": "WBC count บอกสายเม็ดเลือดขาว",
+    "E": "RDW บอกความต่างของขนาด RBC"
    },
-   "key_concept": "• Retic/RPI = marrow response\n• สรุป: Reticulocyte count ประเมินการสร้าง RBC",
+   "key_concept": "• reticulocyte สูง = ไขกระดูกตอบสนองดี (hemolysis, เสียเลือด)\n• reticulocyte ต่ำ = สร้างไม่ได้ (ขาดสารอาหาร, ไขกระดูกฝ่อ)",
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 42].pdf",
     "page": 7,
@@ -1255,17 +1318,26 @@
     "E": "bone osteolysis"
    },
    "correct": "D",
-   "explanation": "Thal major ตายจาก CHF (iron overload cardiomyopathy)",
+   "explanation": "Thalassemia major เสียชีวิตจากภาวะเหล็กเกินสะสมในหัวใจ ทำให้ congestive heart failure",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "Splenomegaly ไม่ใช่สาเหตุตาย",
-    "B": "Cirrhosis เป็น",
-    "C": "Renal ไม่",
-    "D": "✓ CHF จาก hemochromatosis",
-    "E": "Bone ไม่"
+    "A": "ม้ามโตทำให้ซีดมากขึ้น แต่ไม่ใช่สาเหตุตายหลัก",
+    "B": "ตับแข็งจากเหล็กเกินพบได้ แต่รองจากหัวใจ",
+    "C": "ไตวายไม่ใช่ภาวะแทรกซ้อนหลัก",
+    "D": "✓ เหล็กจากการให้เลือดสะสมในกล้ามเนื้อหัวใจ → cardiomyopathy",
+    "E": "กระดูกเปลี่ยนรูปไม่ทำให้เสียชีวิต"
    },
-   "key_concept": "• Transfusion-dependent thal: cardiac siderosis เป็นสาเหตุตายหลัก\n• Chelation",
+   "key_concept": "• เหล็กเกิน: หัวใจ ตับ ต่อมไร้ท่อ\n• ป้องกันด้วย iron chelation (deferoxamine, deferasirox)",
+   "mechanism": [
+    "ให้เลือดประจำ + ดูดซึมเหล็กเพิ่ม",
+    "เหล็กสะสมในกล้ามเนื้อหัวใจ",
+    {
+     "s": "เกิด cardiomyopathy และ arrhythmia",
+     "answer": true
+    },
+    "หัวใจล้มเหลว"
+   ],
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 42].pdf",
     "page": 7,
@@ -1304,17 +1376,26 @@
     "E": "PNH"
    },
    "correct": "E",
-   "explanation": "PNH: RBC ไว complement (CD55/59 ขาด) ต้นฉบับ C,E",
+   "explanation": "PNH เป็น hemolytic anemia ที่เม็ดเลือดแดงไวต่อ complement เป็นพิเศษ (ต้นฉบับยอมรับอีกข้อ)",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "Thalassemia ไม่",
-    "B": "G6PD oxidative",
-    "C": "✓ HbC ต้นฉบับยอมรับ",
-    "D": "HS ไม่ complement",
-    "E": "✓ PNH"
+    "A": "thalassemia แตกจาก globin ไม่สมดุล ไม่เกี่ยวกับ complement",
+    "B": "G6PD deficiency แตกจาก oxidative stress",
+    "C": "✓ ต้นฉบับยอมรับข้อนี้ด้วย แต่ HbC แตกจากเซลล์แข็งและถูกม้ามทำลายเป็นหลัก",
+    "D": "HS แตกที่ม้ามจากรูปร่างกลม",
+    "E": "✓ ขาด CD55/CD59 complement จึงเจาะเยื่อหุ้ม RBC ได้"
    },
-   "key_concept": "• PNH: complement-mediated IVH\n• Ham test, CD55/59",
+   "key_concept": "• PNH: PIGA mutation, ขาด GPI anchor\n• ตรวจ flow cytometry CD55/CD59 (เดิมใช้ Ham test)",
+   "mechanism": [
+    "ขาด GPI anchor",
+    "ไม่มี CD55 (DAF) และ CD59 (MIRL) บนผิว RBC",
+    {
+     "s": "complement สร้าง MAC เจาะเซลล์",
+     "answer": true
+    },
+    "intravascular hemolysis"
+   ],
    "also_accept": [
     "C"
    ],
@@ -1366,16 +1447,16 @@
     "E": ""
    },
    "correct": "A",
-   "explanation": "Intravascular hemolysis ไม่มี splenomegaly เป็นลักษณะ",
+   "explanation": "ม้ามโตเป็นลักษณะของ extravascular hemolysis ไม่ใช่ intravascular",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "✓ Splenomegaly พบใน extravascular",
-    "B": "Hemosiderinuria พบ",
-    "C": "Hemoglobinuria พบ",
-    "D": "Haptoglobin ต่ำ พบ"
+    "A": "✓ ม้ามโตเกิดเมื่อ RBC ถูกทำลายในม้าม (extravascular)",
+    "B": "hemosiderinuria พบใน intravascular hemolysis เรื้อรัง",
+    "C": "hemoglobinuria เป็นลักษณะเด่นของ intravascular",
+    "D": "haptoglobin หมดเพราะจับ free Hb ในหลอดเลือด"
    },
-   "key_concept": "• IVH: hemoglobinuria/hemosiderinuria\n• EVH: splenomegaly",
+   "key_concept": "• intravascular: hemoglobinemia, hemoglobinuria, hemosiderinuria\n• extravascular: ม้ามโต, spherocyte, bilirubin สูง",
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 42].pdf",
     "page": 7,
@@ -1461,17 +1542,26 @@
     "E": "δεγ"
    },
    "correct": "D",
-   "explanation": "Prenatal screening: α-thal (α⁰ SEA) ป้องกัน Hb Bart hydrops",
+   "explanation": "การคัดกรองก่อนคลอดต้องตรวจหา α-thalassemia 1 (α0) เพราะคู่พาหะเสี่ยงลูกเป็น Hb Bart's hydrops fetalis",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "γ ไม่ใช่",
-    "B": "δ ไม่ใช่",
-    "C": "α⁺ ไม่รุนแรง",
-    "D": "✓ α (α⁰-thal)",
-    "E": "δεγ ไม่ใช่"
+    "A": "γ-thalassemia ไม่ก่อโรครุนแรงหลังคลอด",
+    "B": "δ-thalassemia ไม่มีอาการทางคลินิก",
+    "C": "α+ (ขาด 1 ยีน) อย่างเดียวไม่ทำให้เกิด hydrops",
+    "D": "✓ α0 สองฝ่าย → ลูกไม่มียีน α เลย ตายในครรภ์และแม่เสี่ยงครรภ์เป็นพิษ",
+    "E": "δεγ-thalassemia พบน้อยมาก ไม่อยู่ในโปรแกรมคัดกรอง"
    },
-   "key_concept": "• Screen α-thal และ β-thal ในคู่ครอง\n• Hb Bart hydrops",
+   "key_concept": "• โรคเป้าหมายคัดกรองในไทย: Hb Bart's hydrops, homozygous β-thal, β-thal/HbE\n• คัดกรองด้วย OF/MCV + DCIP",
+   "mechanism": [
+    "พ่อแม่เป็น α-thal 1 trait ทั้งคู่",
+    "ลูกมีโอกาส 25% ไม่มียีน α",
+    {
+     "s": "สร้างได้แต่ Hb Bart's (γ4) ไม่ปล่อย O2",
+     "answer": true
+    },
+    "hydrops fetalis"
+   ],
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 42].pdf",
     "page": 8,
@@ -1510,17 +1600,26 @@
     "E": "Hemoglobin electrophoresis"
    },
    "correct": "C",
-   "explanation": "Hb 6.2 normocytic + jaundice + splenomegaly → DAT (AIHA)",
+   "explanation": "ซีดเร็ว เหลือง ม้ามโตเล็กน้อย MCV ปกติ = สงสัย autoimmune hemolytic anemia ตรวจ direct antiglobulin test",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "Serum iron ไม่",
-    "B": "Ham test = PNH",
-    "C": "✓ DAT",
-    "D": "BM biopsy ไม่ใช่ลำดับแรก",
-    "E": "Hb electrophoresis ไม่"
+    "A": "serum iron ใช้เมื่อสงสัยขาดเหล็ก (microcytic)",
+    "B": "Ham's test ใช้กับ PNH ซึ่งมักมี pancytopenia/hemoglobinuria",
+    "C": "✓ DAT (Coombs) หา antibody/complement บนผิว RBC",
+    "D": "bone marrow biopsy ยังไม่จำเป็นเมื่อ WBC และเกล็ดเลือดปกติ",
+    "E": "Hb electrophoresis ใช้กับ thalassemia ซึ่งเป็นเรื้อรังและ MCV ต่ำ"
    },
-   "key_concept": "• AIHA: DAT +\n• Normocytic + retic ↑",
+   "key_concept": "• AIHA: warm (IgG) – ม้ามทำลาย, spherocyte\n• หญิงอายุน้อยเป็น AIHA ต้องนึกถึง SLE",
+   "mechanism": [
+    "สร้าง autoantibody ต่อ RBC",
+    "IgG เคลือบ RBC",
+    {
+     "s": "macrophage ในม้ามกิน RBC → DAT บวก",
+     "answer": true
+    },
+    "ซีด เหลือง ม้ามโต"
+   ],
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 42].pdf",
     "page": 8,
@@ -1559,16 +1658,16 @@
     "E": ""
    },
    "correct": "D",
-   "explanation": "Pancytopenia + MCV 124 + retic ต่ำ → bone marrow aplasia/failure",
+   "explanation": "pancytopenia ร่วมกับ reticulocyte ต่ำ ตามเฉลยต้นฉบับ = bone marrow aplasia",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "IF deficiency ไม่ pancytopenia รุนแรงขนาดนี้",
-    "B": "Abnormal chromosome ไม่",
-    "C": "EVH retic ↑",
-    "D": "✓ BM aplasia"
+    "A": "ขาด intrinsic factor ทำ MCV สูงและ pancytopenia ได้เช่นกัน (AI เห็นว่าต้องแยกด้วย B12 level) แต่คงตามต้นฉบับ",
+    "B": "abnormal chromosome (MDS) เป็นไปได้ แต่ไม่ใช่ข้อที่เฉลยเลือก",
+    "C": "extravascular hemolysis ต้องมี reticulocyte สูง",
+    "D": "✓ ไขกระดูกฝ่อ สร้างเม็ดเลือดไม่ได้ทั้งสามสาย reticulocyte ต่ำ"
    },
-   "key_concept": "• Retic ต่ำ = production ↓\n• Pancytopenia → BM biopsy",
+   "key_concept": "• pancytopenia + reticulocyte ต่ำ: aplastic anemia, megaloblastic, MDS\n• aplastic anemia อาจมี MCV สูงเล็กน้อย; ยืนยันด้วย bone marrow biopsy",
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 42].pdf",
     "page": 8,
@@ -1703,17 +1802,17 @@
     "E": "1.5 lower"
    },
    "correct": "C",
-   "explanation": "Heparin: aPTT เป้าหมาย 1.5–2.5 เท่าของ control",
+   "explanation": "การให้ heparin ปรับขนาดให้ aPTT ยาวเป็น 1.5–2.5 เท่าของค่าควบคุม",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "เท่าเดิม ไม่",
-    "B": "1–1.2 น้อยไป",
-    "C": "✓ 1.5–2.5 เท่า",
-    "D": "2–3 สูง",
-    "E": "1.5 ต่ำกว่า ไม่ใช่"
+    "A": "aPTT เท่าเดิมแปลว่ายังไม่ได้ฤทธิ์ต้านการแข็งตัว",
+    "B": "1–1.2 เท่ายังต่ำกว่าระดับรักษา",
+    "C": "✓ 1.5–2.5 เท่าเป็นช่วงรักษาของ unfractionated heparin",
+    "D": "2–3 เป็นเป้าหมาย INR ของ warfarin",
+    "E": "ต่ำกว่า 1.5 เท่ายังไม่ถึงระดับรักษา"
    },
-   "key_concept": "• Monitor UFH ด้วย aPTT 1.5–2.5×\n• LMWH ไม่ต้อง monitor ปกติ",
+   "key_concept": "• UFH ติดตามด้วย aPTT · warfarin ติดตามด้วย INR (2–3)\n• LMWH ไม่ต้องติดตามเป็นประจำ (ใช้ anti-Xa เมื่อจำเป็น)",
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 42].pdf",
     "page": 9,
@@ -1813,17 +1912,26 @@
     "E": "heart valve malformation 364-341 Hematopoietic system and Biology of Neoplasia"
    },
    "correct": "A",
-   "explanation": "Warfarin ไตรมาส 3 → fetal warfarin syndrome (bone/nasal defect, bleeding) · ต้นฉบับ A",
+   "explanation": "warfarin ผ่านรก รบกวนโปรตีนที่ต้องอาศัย vitamin K ในกระดูก เฉลยเลือก bone defect",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "✓ Bone defect (stippled epiphysis)",
-    "B": "Missing eyelash ไม่",
-    "C": "Pernicious ไม่",
-    "D": "NTD ไม่",
-    "E": "Valve malformation ไม่เกี่ยว"
+    "A": "✓ ยับยั้ง γ-carboxylation ของ osteocalcin → กระดูกผิดปกติ (stippled epiphyses, nasal hypoplasia)",
+    "B": "ขนตาหายไม่ใช่ผลของ warfarin",
+    "C": "pernicious anemia เกิดจากขาด intrinsic factor",
+    "D": "neural tube defect สัมพันธ์กับ valproate/ขาด folate",
+    "E": "ลิ้นหัวใจผิดรูปไม่ใช่ลักษณะของ warfarin embryopathy"
    },
-   "key_concept": "• Warfarin teratogen โดยเฉพาะ 6–12 wk\n• ใช้ heparin แทนในหญิงตั้งครรภ์",
+   "key_concept": "• warfarin embryopathy เด่นช่วงสัปดาห์ 6–12; ปลายครรภ์เสี่ยงเลือดออกในทารก\n• หญิงตั้งครรภ์ใช้ heparin/LMWH แทน (ไม่ผ่านรก)",
+   "mechanism": [
+    "warfarin ผ่านรก",
+    "ยับยั้ง vitamin K–dependent carboxylation ในทารก",
+    {
+     "s": "โปรตีนกระดูก (osteocalcin) ไม่ทำงาน",
+     "answer": true
+    },
+    "กระดูกและกระดูกอ่อนผิดปกติ"
+   ],
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 42].pdf",
     "page": 9,
@@ -1862,17 +1970,26 @@
     "E": "Warfarin"
    },
    "correct": "A",
-   "explanation": "Intermittent claudication: cilostazol",
+   "explanation": "ปวดขาเวลาเดินจากหลอดเลือดแดงขาตีบ (intermittent claudication) ใช้ cilostazol",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "✓ Cilostazol (PDE3 inhibitor)",
-    "B": "Clopidogrel antiplatelet",
-    "C": "Abciximab PCI",
-    "D": "Aminocaproate antifibrinolytic",
-    "E": "Warfarin ไม่"
+    "A": "✓ PDE3 inhibitor: ขยายหลอดเลือดและต้านเกล็ดเลือด เพิ่มระยะทางเดิน",
+    "B": "clopidogrel ลดเหตุการณ์หลอดเลือด แต่ไม่ลดอาการ claudication",
+    "C": "abciximab เป็น GPIIb/IIIa inhibitor ชนิดฉีด ใช้ระหว่าง PCI",
+    "D": "aminocaproate เป็น antifibrinolytic ทำให้ลิ่มเลือดคงตัว",
+    "E": "warfarin ไม่มีข้อบ่งใช้ใน claudication"
    },
-   "key_concept": "• PAD: cilostazol, exercise, statin, ASA\n• สรุป: Intermittent claudication: cilostazol",
+   "key_concept": "• cilostazol ห้ามใช้ในผู้ป่วย heart failure\n• PAD: หยุดบุหรี่ ออกกำลัง antiplatelet statin",
+   "mechanism": [
+    "cilostazol ยับยั้ง PDE3",
+    "cAMP ในกล้ามเนื้อเรียบหลอดเลือดและเกล็ดเลือดเพิ่ม",
+    {
+     "s": "หลอดเลือดขาขยาย เกล็ดเลือดจับกลุ่มลดลง",
+     "answer": true
+    },
+    "ปวดขาเวลาเดินลดลง"
+   ],
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 42].pdf",
     "page": 10,
@@ -1954,17 +2071,26 @@
     "E": "vitamin B12"
    },
    "correct": "D",
-   "explanation": "CKD + normocytic anemia → epoetin alfa",
+   "explanation": "ไตวายเรื้อรังซีดแบบ normocytic จากขาด EPO รักษาด้วย epoetin alfa",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "Iron dextran เสริม",
-    "B": "Ferrous sulfate เสริม",
-    "C": "Folic acid ไม่",
-    "D": "✓ Epoetin alfa",
-    "E": "B12 ไม่"
+    "A": "iron dextran ใช้เมื่อขาดเหล็กและกินไม่ได้",
+    "B": "ferrous sulfate ใช้เมื่อขาดเหล็ก (microcytic)",
+    "C": "folic acid ใช้ใน megaloblastic anemia",
+    "D": "✓ ทดแทน erythropoietin ที่ไตสร้างไม่ได้",
+    "E": "vitamin B12 ใช้ใน megaloblastic anemia (MCV สูง)"
    },
-   "key_concept": "• Anemia of CKD: EPO deficiency\n• สรุป: CKD + normocytic anemia → epoetin alfa",
+   "key_concept": "• anemia of CKD: normocytic normochromic\n• ESA ต้องมีเหล็กเพียงพอจึงได้ผล",
+   "mechanism": [
+    "ไตเสื่อม",
+    "EPO ต่ำ",
+    {
+     "s": "ไขกระดูกสร้าง RBC น้อย → ให้ epoetin",
+     "answer": true
+    },
+    "Hb เพิ่ม เหนื่อยน้อยลง"
+   ],
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 42].pdf",
     "page": 10,
@@ -2003,16 +2129,25 @@
     "E": ""
    },
    "correct": "A",
-   "explanation": "TSAT 85% + ferritin ↑ → deferoxamine",
+   "explanation": "transferrin saturation 85% ferritin สูง = iron overload รักษาด้วย deferoxamine (iron chelator)",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "✓ Deferoxamine (chelator)",
-    "B": "Desmopressin ไม่",
-    "C": "Iron dextran ห้าม",
-    "D": "Dipyridamole ไม่"
+    "A": "✓ deferoxamine จับเหล็กแล้วขับออกทางปัสสาวะ",
+    "B": "desmopressin ใช้ใน vWD/hemophilia A/DI",
+    "C": "iron dextran เป็นการให้เหล็กเพิ่ม ยิ่งแย่",
+    "D": "dipyridamole เป็นยาต้านเกล็ดเลือด"
    },
-   "key_concept": "• Iron overload: chelation/phlebotomy\n• สรุป: TSAT 85% + ferritin ↑ → deferoxamine",
+   "key_concept": "• iron chelator: deferoxamine (ฉีด), deferasirox/deferiprone (กิน)\n• hereditary hemochromatosis รักษาหลักด้วย phlebotomy",
+   "mechanism": [
+    "เหล็กเกินสะสมในเนื้อเยื่อและข้อ",
+    "deferoxamine จับ Fe3+ เป็น ferrioxamine",
+    {
+     "s": "ขับออกทางปัสสาวะ/อุจจาระ",
+     "answer": true
+    },
+    "เหล็กสะสมลดลง"
+   ],
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 42].pdf",
     "page": 10,
@@ -2051,17 +2186,17 @@
     "E": "Cyanocobalamine"
    },
    "correct": "B",
-   "explanation": "Folic acid ลด neural tube defect",
+   "explanation": "Folic acid ก่อนและช่วงต้นการตั้งครรภ์ลดความเสี่ยง neural tube defect",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "Iron ไม่",
-    "B": "✓ Folic acid",
-    "C": "Pyrimidine ไม่",
-    "D": "EPO ไม่",
-    "E": "B12 ไม่ใช่หลัก"
+    "A": "เหล็กป้องกันโลหิตจาง ไม่ป้องกัน NTD",
+    "B": "✓ folate จำเป็นต่อการสังเคราะห์ DNA ขณะ neural tube ปิด (สัปดาห์ 3–4)",
+    "C": "pyridoxine ไม่ป้องกัน NTD",
+    "D": "erythropoietin เป็นฮอร์โมนสร้างเม็ดเลือด",
+    "E": "cyanocobalamin ไม่ใช่ตัวหลักในการป้องกัน NTD"
    },
-   "key_concept": "• Folate ก่อนตั้งครรภ์ 400 µg/วัน\n• Neural tube defect",
+   "key_concept": "• folic acid 0.4 mg/วัน ก่อนตั้งครรภ์ ≥1 เดือน (4 mg ถ้าเคยมีบุตร NTD)\n• neural tube ปิดวันที่ ~28 หลังปฏิสนธิ",
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 42].pdf",
     "page": 11,
@@ -2100,16 +2235,16 @@
     "E": ""
    },
    "correct": "A",
-   "explanation": "ABO gene เข้ารหัส glycosyltransferase (enzyme)",
+   "explanation": "ยีน ABO สร้างเอนไซม์ glycosyltransferase ที่เติมน้ำตาลบน H antigen",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "✓ Enzyme (glycosyltransferase)",
-    "B": "Receptor ไม่",
-    "C": "Cytoskeleton ไม่",
-    "D": "Transcription factor ไม่"
+    "A": "✓ A allele → N-acetylgalactosaminyltransferase, B allele → galactosyltransferase",
+    "B": "ไม่ได้สร้าง receptor",
+    "C": "ไม่ได้สร้างโปรตีน cytoskeleton",
+    "D": "ไม่ได้สร้าง transcription factor"
    },
-   "key_concept": "• A: GalNAc transferase\n• B: Gal transferase\n• O: ไม่ทำงาน",
+   "key_concept": "• ABO antigen เป็นคาร์โบไฮเดรต ยีนจึงกำหนดเอนไซม์ ไม่ใช่ตัว antigen\n• O allele: frameshift ได้เอนไซม์ไม่ทำงาน",
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 42].pdf",
     "page": 11,
@@ -2148,17 +2283,17 @@
     "E": "allele d has mutation on epitopic coding region"
    },
    "correct": "A",
-   "explanation": "RHD allele d เกิดจาก deletion ใหญ่ (ใน Caucasian) ",
+   "explanation": "Rh ลบ (allele d) ส่วนใหญ่เกิดจากยีน RHD หายไปทั้งยีน (large deletion)",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "✓ d = RHD gene deletion",
-    "B": "ไม่ใช่ exon mutation",
-    "C": "ไม่ใช่ catalytic",
-    "D": "ไม่ใช่",
-    "E": "ไม่ใช่"
+    "A": "✓ ไม่มียีน RHD จึงไม่มี D antigen บนเม็ดเลือด",
+    "B": "ไม่ใช่ mutation เฉพาะ exon 2,3",
+    "C": "RhD ไม่ใช่เอนไซม์ จึงไม่มี catalytic domain",
+    "D": "ไม่ใช่ mutation ตำแหน่งจับโปรตีน",
+    "E": "ไม่ใช่ point mutation เฉพาะจุด"
    },
-   "key_concept": "• Rh-negative (Caucasian): RHD deletion\n• Asian: RHD ที่ไม่ express (partial)",
+   "key_concept": "• d ไม่มี antigen จริง = ไม่มีโปรตีน RhD\n• เพราะไม่มีโปรตีนเลย RhD จึงกระตุ้นภูมิได้แรงมากในคน Rh ลบ",
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 42].pdf",
     "page": 11,
@@ -2197,17 +2332,17 @@
     "E": "cDE 364-341 Hematopoietic system and Biology of Neoplasia"
    },
    "correct": "E",
-   "explanation": "Rh Cc D ee: allele ที่เป็นไปได้น้อยสุด cDE",
+   "explanation": "ฟีโนไทป์ CcDee ไม่มี E antigen จึงเป็นไปไม่ได้ที่จะมี haplotype cDE",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "CDe พบมาก",
-    "B": "Cde พบน้อยบ้าง",
-    "C": "cDe พบบ่อยปานกลาง",
-    "D": "cde (Rh−)",
-    "E": "✓ cDE ผิดกับ genotype ee"
+    "A": "CDe เป็นไปได้ (เป็น haplotype ที่พบบ่อย)",
+    "B": "Cde เป็นไปได้ถ้าอีกข้างเป็น cDe",
+    "C": "cDe เป็นไปได้",
+    "D": "cde เป็นไปได้ถ้าอีกข้างเป็น CDe",
+    "E": "✓ cDE มี E แต่ผู้ป่วยเป็น ee จึงเป็นไปไม่ได้"
    },
-   "key_concept": "• Rh haplotype: Ce, ce, cE, CE\n• ee ไม่มี E",
+   "key_concept": "• Rh haplotype ถ่ายทอดเป็นชุด: CDe, cde, cDE, cDe ...\n• ee = ทั้งสอง haplotype ต้องเป็น e",
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 42].pdf",
     "page": 11,
@@ -2246,17 +2381,26 @@
     "E": "ABO"
    },
    "correct": "A",
-   "explanation": "DHTR พบบ่อยจาก Kidd (anti-Jk)",
+   "explanation": "Kidd เป็นหมู่เลือดที่ทำให้เกิด delayed hemolytic transfusion reaction บ่อยที่สุด",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "✓ Kidd (Jka/Jkb)",
-    "B": "Kell",
-    "C": "MNS",
-    "D": "Diego",
-    "E": "ABO เกิด immediate"
+    "A": "✓ anti-Jk ระดับลดเร็วจนตรวจไม่พบ แล้วกลับขึ้นใหม่หลังได้เลือด",
+    "B": "Kell ทำ DHTR ได้ แต่ antibody มักคงอยู่ตรวจพบได้",
+    "C": "MNS ทำ DHTR ได้น้อยกว่า",
+    "D": "Diego พบน้อย",
+    "E": "ABO ทำ acute hemolytic reaction ไม่ใช่ delayed"
    },
-   "key_concept": "• DHTR: anamnestic response ใน 3–14 วัน\n• Kidd antibody ลดลงจนตรวจไม่เจอ",
+   "key_concept": "• DHTR: 3–14 วันหลังได้เลือด จาก anamnestic response\n• Kidd antibody จับ complement ได้ ทำ hemolysis รุนแรง",
+   "mechanism": [
+    "เคยถูกกระตุ้นสร้าง anti-Jk",
+    "ระดับ antibody ลดจน crossmatch ตรวจไม่พบ",
+    {
+     "s": "ได้เลือด Jk บวกอีกครั้ง antibody พุ่งขึ้น",
+     "answer": true
+    },
+    "hemolysis หลังได้เลือดหลายวัน"
+   ],
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 42].pdf",
     "page": 12,
@@ -2357,17 +2501,26 @@
     "E": "hypothermia"
    },
    "correct": "B",
-   "explanation": "Gamma irradiation ป้องกัน TA-GVHD",
+   "explanation": "การฉายรังสีแกมมาผลิตภัณฑ์เลือดป้องกัน TA-GVHD",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "Alloimmunization ใช้ leukoreduction",
-    "B": "✓ TA-GVHD",
-    "C": "FNHTR ใช้ leukoreduction",
-    "D": "Sepsis ไม่",
-    "E": "Hypothermia ไม่"
+    "A": "alloimmunization ลดด้วย leukocyte reduction",
+    "B": "✓ รังสีทำให้ lymphocyte ของผู้บริจาคแบ่งตัวไม่ได้",
+    "C": "FNHTR ลดด้วย leukocyte reduction",
+    "D": "sepsis ป้องกันด้วยเทคนิคปลอดเชื้อและการเก็บรักษา",
+    "E": "hypothermia ป้องกันด้วยการอุ่นเลือด"
    },
-   "key_concept": "• Irradiate: inactivates donor T cell\n• ผู้ป่วย immunocompromised",
+   "key_concept": "• irradiated: ผู้ป่วยภูมิต่ำ, ทารกในครรภ์, ผู้รับเลือดจากญาติ, ปลูกถ่ายไขกระดูก\n• leukoreduced: ลด FNHTR, CMV, HLA alloimmunization",
+   "mechanism": [
+    "T lymphocyte ผู้บริจาคยังมีชีวิตในถุงเลือด",
+    "ผู้รับกำจัดไม่ได้",
+    {
+     "s": "รังสีแกมมาทำลาย DNA ของ lymphocyte",
+     "answer": true
+    },
+    "ป้องกัน TA-GVHD"
+   ],
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 42].pdf",
     "page": 12,
@@ -2406,16 +2559,16 @@
     "E": "Temp -20 and shelf life 12 months 364-341 Hematopoietic system and Biology of Neoplasia"
    },
    "correct": "E",
-   "explanation": "FFP เก็บ −20 °C นาน 12 เดือน",
+   "explanation": "Fresh frozen plasma เก็บที่ −20°C หรือต่ำกว่า ได้นาน 12 เดือน",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "0 °C ไม่",
-    "B": "4 °C ไม่",
-    "C": "0 °C ไม่",
-    "E": "✓ −20 °C, 12 เดือน (≤ −18 °C)"
+    "A": "0°C ไม่เย็นพอ factor เสื่อม",
+    "B": "4°C เป็นอุณหภูมิเก็บ red cell",
+    "C": "0°C ไม่เย็นพอ และอายุไม่ถึงตามนี้",
+    "E": "✓ แช่แข็ง −20°C รักษา labile factor (V, VIII) ได้ 1 ปี"
    },
-   "key_concept": "• FFP: −18 °C หรือต่ำกว่า 1 ปี\n• หลังละลาย ใช้ใน 24 ชม.",
+   "key_concept": "• PRC 1–6°C · platelet 20–24°C เขย่า 5 วัน · FFP ≤−18°C 1 ปี\n• FFP ละลายแล้วใช้ภายใน 24 ชม.",
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 42].pdf",
     "page": 12,
@@ -2454,17 +2607,17 @@
     "E": "-10 oC"
    },
    "correct": "A",
-   "explanation": "Platelet เก็บ 20–24 °C (22 °C) เขย่าตลอด",
+   "explanation": "เกล็ดเลือดเก็บที่อุณหภูมิห้อง ~22°C พร้อมเขย่าตลอด",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "✓ 22 °C",
-    "B": "27 °C ไม่",
-    "C": "4 °C ทำให้ clear เร็ว",
-    "D": "0 °C ไม่",
-    "E": "−10 °C ไม่"
+    "A": "✓ 20–24°C รักษาการทำงานของเกล็ดเลือด",
+    "B": "27°C สูงเกิน เสี่ยงแบคทีเรียโต",
+    "C": "4°C เกล็ดเลือดเปลี่ยนรูปและถูกกำจัดเร็วหลังให้",
+    "D": "0°C เกล็ดเลือดเสียหาย",
+    "E": "−10°C เกล็ดเลือดแข็งและแตก"
    },
-   "key_concept": "• PC: 20–24 °C, agitation, 5 วัน\n• สรุป: Platelet เก็บ 20–24 °C (22 °C) เขย่าตลอด",
+   "key_concept": "• platelet: 20–24°C + agitation อายุ 5 วัน\n• เสี่ยงปนเปื้อนแบคทีเรียมากที่สุดในบรรดาผลิตภัณฑ์เลือด",
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 42].pdf",
     "page": 13,
@@ -2552,17 +2705,26 @@
     "E": "stop warfarin"
    },
    "correct": "B",
-   "explanation": "INR>9 ไม่มี bleeding → หยุด warfarin + vitamin K (ไม่ต้อง FFP)",
+   "explanation": "INR >9 จาก warfarin โดยไม่มีเลือดออกรุนแรง: ให้ vitamin K (เฉลยต้นฉบับเลือกข้อ B; หลักปฏิบัติคือหยุด warfarin ชั่วคราวร่วมด้วย)",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "ให้ warfarin ต่อ ผิด",
-    "B": "✓ หยุด warfarin + vitamin K (ตามต้นฉบับ)",
-    "C": "FFP ใช้เมื่อ bleeding",
-    "D": "ไม่ใช่",
-    "E": "ไม่ใช่คำตอบที่ถูกต้องของโจทย์ข้อนี้"
+    "A": "เกล็ดเลือดปกติ ไม่ต้องให้ platelet",
+    "B": "✓ vitamin K แก้ฤทธิ์ warfarin โดยตรง เพียงพอเมื่อไม่มีเลือดออกรุนแรง",
+    "C": "FFP และ platelet ไม่จำเป็นเมื่อไม่มีเลือดออกคุกคามชีวิต",
+    "D": "FFP ใช้เมื่อมีเลือดออกรุนแรงหรือต้องผ่าตัดด่วน",
+    "E": "หยุด warfarin อย่างเดียว INR ลดช้าเกินไปเมื่อ INR >9 (AI: ควรหยุดยาร่วมกับให้ vitamin K)"
    },
-   "key_concept": "• INR>9 ไม่ bleeding: vit K oral\n• Bleeding: vit K IV + PCC/FFP",
+   "key_concept": "• INR สูงไม่มีเลือดออก: หยุดยา ± vitamin K กิน\n• เลือดออกรุนแรง: vitamin K IV + PCC/FFP",
+   "mechanism": [
+    "warfarin ยับยั้ง VKORC1",
+    "factor II, VII, IX, X ที่ทำงานได้ลดลง INR สูง",
+    {
+     "s": "vitamin K คืนการ γ-carboxylation",
+     "answer": true
+    },
+    "INR ลดลงใน 24 ชม."
+   ],
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 42].pdf",
     "page": 13,
@@ -2650,17 +2812,17 @@
     "E": "PRC2unit LPRC"
    },
    "correct": "B",
-   "explanation": "Hb 6.5 + BP ต่ำ RR 40 (shock) → PRC 1 unit แล้วประเมินซ้ำ",
+   "explanation": "Hb 6.5 ร่วมกับความดันต่ำและหายใจเร็ว = มีอาการจากซีด ควรให้ PRC ตามเฉลย 1 unit แล้วประเมินซ้ำ",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "Observe ไม่",
-    "B": "✓ PRC 1 unit (ต้นฉบับ)",
-    "C": "PRC 2 unit ไม่จำเป็นก่อนประเมิน",
-    "D": "LPRC ไม่จำเป็น",
-    "E": "ไม่ใช่"
+    "A": "สังเกตอาการไม่พอ เพราะมี BP ต่ำและ RR 40",
+    "B": "✓ ให้ทีละ 1 unit แล้วประเมินซ้ำ (single-unit strategy)",
+    "C": "2 unit พร้อมกันเกินจำเป็นในผู้ป่วยอายุน้อยที่ไม่เสียเลือดต่อเนื่อง",
+    "D": "leukocyte-poor ใช้ในผู้ที่ต้องได้เลือดประจำหรือเคยมี FNHTR",
+    "E": "ไม่มีข้อบ่งชี้ทั้งจำนวน 2 unit และชนิด leukocyte-poor"
    },
-   "key_concept": "• Restrictive transfusion: 1 unit then reassess\n• Hb <7 transfuse",
+   "key_concept": "• ให้เลือดเมื่อ Hb <7 หรือมีอาการ (ขาด O2, hemodynamic ไม่คงที่)\n• PRC 1 unit เพิ่ม Hb ~1 g/dL",
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 42].pdf",
     "page": 14,
@@ -2804,17 +2966,17 @@
     "E": "24-hour post transfusion platelet count 364-341 Hematopoietic system and Biology of Neoplasia"
    },
    "correct": "A",
-   "explanation": "Platelet ต่ำหลัง transfusion หลายครั้ง → ตรวจ DAT/HLA antibody / PTP",
+   "explanation": "ให้เกล็ดเลือดแล้วไม่ขึ้นในผู้ป่วยที่ได้เลือดบ่อย เฉลยต้นฉบับเลือก direct antiglobulin test เป็นการตรวจเริ่มต้น",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "✓ Direct antiglobulin test ตามต้นฉบับ",
-    "B": "ไม่ใช่",
-    "C": "ไม่ใช่",
-    "D": "ไม่ใช่",
-    "E": "ไม่ใช่"
+    "A": "✓ ตามเฉลยต้นฉบับ: หาหลักฐานการทำลายจากภูมิคุ้มกัน",
+    "B": "blood typing/screening ทำก่อนให้เลือดอยู่แล้ว",
+    "C": "HLA typing ทำเมื่อยืนยันแล้วว่าเป็น immune refractoriness",
+    "D": "1-hour post-transfusion count (CCI) ใช้แยกสาเหตุ immune กับ non-immune (AI เห็นว่าเป็นขั้นแรกตามแนวทางทั่วไป) แต่คงตามต้นฉบับ",
+    "E": "24-hour count บอกการอยู่รอดของเกล็ดเลือด ใช้ดูสาเหตุ non-immune"
    },
-   "key_concept": "• Post-transfusion thrombocytopenia: alloimmunization (HLA/HPA)\n• Platelet refractoriness",
+   "key_concept": "• platelet refractoriness: immune (anti-HLA) vs non-immune (ไข้ ติดเชื้อ ม้ามโต DIC)\n• CCI ที่ 1 ชม. ต่ำ = immune",
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 42].pdf",
     "page": 14,
@@ -2853,17 +3015,26 @@
     "E": "Giving CPM after transfusion"
    },
    "correct": "A",
-   "explanation": "LDPC (leukocyte-depleted platelet) ป้องกัน HLA alloimmunization",
+   "explanation": "ป้องกันการสร้าง HLA alloantibody ด้วยผลิตภัณฑ์เลือดที่กรองเม็ดเลือดขาวออก (leukocyte-depleted)",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "✓ LDPC",
-    "B": "LPPC",
-    "C": "Irradiated RBC ป้องกัน GVHD",
-    "D": "IVIG ไม่ใช่",
-    "E": "CPM ไม่ใช่"
+    "A": "✓ เม็ดเลือดขาวเป็นแหล่ง HLA antigen หลัก การกรองออกจึงลดการกระตุ้นภูมิ",
+    "B": "leukocyte-poor ลดเม็ดเลือดขาวได้น้อยกว่า ป้องกัน FNHTR ได้แต่ไม่พอป้องกัน HLA alloimmunization",
+    "C": "การฉายรังสีป้องกัน TA-GVHD ไม่ได้ลด antigen",
+    "D": "IVIG ก่อนให้เลือดไม่ป้องกันการสร้าง antibody",
+    "E": "ยาแก้แพ้หลังให้เลือดใช้ลดอาการแพ้ ไม่เกี่ยวกับ HLA"
    },
-   "key_concept": "• HLA alloimmunization: leukoreduction\n• Irradiate: GVHD",
+   "key_concept": "• leukodepleted: ลด HLA alloimmunization, FNHTR, CMV\n• ผู้ป่วยที่ต้องได้เกล็ดเลือดประจำควรใช้ทุกครั้ง",
+   "mechanism": [
+    "เลือดผู้บริจาคมีเม็ดเลือดขาวที่มี HLA",
+    "ผู้รับสร้าง anti-HLA",
+    {
+     "s": "กรองเม็ดเลือดขาวออกก่อนให้",
+     "answer": true
+    },
+    "ลดการเกิด platelet refractoriness"
+   ],
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 42].pdf",
     "page": 15,
@@ -2902,17 +3073,26 @@
     "E": "Platelet and fresh frozen plasma transfusion"
    },
    "correct": "A",
-   "explanation": "Massive bleeding + PRC 6 units → dilutional thrombocytopenia → platelet (ต้นฉบับ A, E)",
+   "explanation": "เสียเลือดมาก ได้ PRC 6 unit ยังเลือดออก PT/aPTT ยาว เกล็ดเลือด 35,000 = dilutional coagulopathy ต้องให้เกล็ดเลือด (และ FFP)",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "✓ Platelet transfusion",
-    "B": "PRC เพิ่ม",
-    "C": "Observe ไม่",
-    "D": "ไม่ใช่",
-    "E": "✓ ต้นฉบับยอมรับ"
+    "A": "✓ เกล็ดเลือด <50,000 ขณะเลือดออก ต้องให้ platelet",
+    "B": "Hb 8.8 ยังพอ การให้ PRC เพิ่มยิ่งเจือจาง factor",
+    "C": "สังเกตอาการไม่ได้ เพราะยังเลือดออกต่อเนื่อง",
+    "D": "FFP อย่างเดียวไม่แก้เกล็ดเลือดต่ำ",
+    "E": "✓ แก้ทั้งเกล็ดเลือดต่ำและ factor ต่ำ ครบที่สุด"
    },
-   "key_concept": "• Massive transfusion: dilutional coagulopathy\n• ให้ FFP/plt สัดส่วน 1:1:1",
+   "key_concept": "• massive transfusion: ให้ PRC:FFP:platelet สัดส่วนใกล้ 1:1:1\n• เป้าหมายขณะเลือดออก: platelet >50,000, INR <1.5, fibrinogen >150",
+   "mechanism": [
+    "ได้ PRC จำนวนมาก",
+    "factor และเกล็ดเลือดถูกเจือจางและถูกใช้ไป",
+    {
+     "s": "coagulopathy เลือดไม่หยุด",
+     "answer": true
+    },
+    "ต้องเติมเกล็ดเลือดและพลาสมา"
+   ],
    "also_accept": [
     "E"
    ],
@@ -2964,16 +3144,25 @@
     "E": ""
    },
    "correct": "A",
-   "explanation": "Iron overload: toxic metabolite/free iron สร้าง ROS",
+   "explanation": "พิษของเหล็กเกินเกิดจากเหล็กอิสระสร้าง free radical (toxic metabolite) ทำลายเซลล์",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "✓ Toxic metabolite (free iron → ROS)",
-    "B": "ALA ไม่ใช่",
-    "C": "ไม่ใช่โดยตรง",
-    "D": "จับ transferrin เป็นปกติ"
+    "A": "✓ เหล็กอิสระเร่งปฏิกิริยา Fenton ได้ hydroxyl radical ทำลายเยื่อหุ้มและ mitochondria",
+    "B": "ALA เกี่ยวกับการสังเคราะห์ heme/พิษตะกั่ว",
+    "C": "การกัดเยื่อบุทางเดินอาหารเป็นพิษเฉพาะที่ของการกินเหล็กเกินขนาดเฉียบพลัน ไม่ใช่กลไกของ iron overload",
+    "D": "เหล็กที่จับ transferrin ไม่เป็นพิษ พิษเกิดเมื่อเกินความจุของ transferrin"
    },
-   "key_concept": "• Iron overload: NTBI → ROS → organ damage\n• สรุป: Iron overload: toxic metabolite/free iron สร้าง ROS",
+   "key_concept": "• non-transferrin-bound iron เป็นตัวก่อพิษ\n• อวัยวะเป้าหมาย: หัวใจ ตับ ตับอ่อน ต่อมไร้ท่อ",
+   "mechanism": [
+    "เหล็กเกินความจุ transferrin/ferritin",
+    "เกิดเหล็กอิสระในเซลล์",
+    {
+     "s": "Fenton reaction สร้าง hydroxyl radical",
+     "answer": true
+    },
+    "lipid peroxidation เซลล์ตาย พังผืด"
+   ],
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 42].pdf",
     "page": 15,
@@ -3061,17 +3250,17 @@
     "E": "impaired fibrin clot lysis"
    },
    "correct": "B",
-   "explanation": "ทารก bleeding ผิวหนัง plt ปกติ → poor vascular integrity/ collagen (Ehlers–Danlos)",
+   "explanation": "เกล็ดเลือดและ PT/aPTT ปกติ แต่จ้ำเลือดง่ายและแผลเป็นกว้าง เฉลยต้นฉบับ = ผนังหลอดเลือดไม่แข็งแรง (poor vascular integrity)",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "Collagen defect (EDS) มี scar",
-    "B": "✓ Poor vascular integrity ต้นฉบับ",
-    "C": "Clot retraction ไม่",
-    "D": "ไม่ใช่",
-    "E": "ไม่ใช่คำตอบที่ถูกต้องของโจทย์ข้อนี้"
+    "A": "collagen defect (เช่น Ehlers–Danlos) เป็นสาเหตุพื้นฐานได้ (AI เห็นว่าใกล้เคียงมาก) แต่ต้นฉบับเลือกผลที่เกิดกับหลอดเลือด",
+    "B": "✓ หลอดเลือดและเนื้อเยื่อพยุงเปราะ แผลแยกง่าย หายเป็นแผลเป็นกว้าง",
+    "C": "clot retraction เสียพบใน Glanzmann ซึ่ง bleeding time ยาว",
+    "D": "การสร้าง fibrin เสียต้องมี PT/aPTT ผิดปกติ",
+    "E": "fibrinolysis ผิดปกติไม่ทำให้แผลเป็นกว้าง"
    },
-   "key_concept": "• EDS: skin hyperextensibility, easy bruising\n• Plt ปกติ",
+   "key_concept": "• เลือดออกง่ายแต่ platelet/PT/aPTT ปกติ → นึกถึง vascular disorder, FXIII deficiency\n• Ehlers–Danlos: ผิวยืด ข้อหลวม แผลเป็นแบบ cigarette paper",
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 42].pdf",
     "page": 16,
@@ -3110,16 +3299,25 @@
     "E": ""
    },
    "correct": "C",
-   "explanation": "Breastfed ไม่ได้ vitamin K → ICH (late VKDB)",
+   "explanation": "ทารก 2 เดือน คลอดที่บ้าน (ไม่ได้ฉีด vitamin K) กินนมแม่ล้วน เลือดออกในสมอง PT ยาวมาก = vitamin K deficiency bleeding ชนิด late",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "Liver immaturity ไม่หลัก",
-    "B": "Normal flora น้อยปัจจัยรอง",
-    "C": "✓ Low vitamin K จาก breast milk",
-    "D": "ไม่ใช่คำตอบที่ถูกต้องของโจทย์ข้อนี้"
+    "A": "ตับยังไม่สมบูรณ์เป็นปัจจัยเสริม แต่ไม่ใช่สาเหตุหลักในรายนี้",
+    "B": "normal flora น้อยเป็นปัจจัยเสริมในทารก แต่เฉลยเน้นนมแม่",
+    "C": "✓ นมแม่มี vitamin K ต่ำ (ตัว K ในตัวเลือกหมายถึง vitamin K) และไม่ได้รับ vitamin K แรกเกิด",
+    "D": "โรคพันธุกรรมของ factor มักมี PT หรือ aPTT ผิดปกติอย่างใดอย่างหนึ่ง และไม่สัมพันธ์กับประวัตินี้"
    },
-   "key_concept": "• VKDB: PT ↑\n• ป้องกันด้วย vitamin K แรกเกิด",
+   "key_concept": "• late VKDB: 2–12 สัปดาห์ เลือดออกในสมองบ่อย\n• ป้องกัน: vitamin K 1 mg IM แรกเกิดทุกราย",
+   "mechanism": [
+    "ไม่ได้ vitamin K แรกเกิด + นมแม่ล้วน",
+    "vitamin K ในร่างกายต่ำ",
+    {
+     "s": "factor II, VII, IX, X ไม่ทำงาน PT ยาว",
+     "answer": true
+    },
+    "เลือดออกในสมอง"
+   ],
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 42].pdf",
     "page": 16,
@@ -3158,17 +3356,17 @@
     "E": "fibrinolasis เพิ่ม"
    },
    "correct": "C",
-   "explanation": "GI bleed + FFP + platelet ยังไม่ดี + no clot → ต้นฉบับ C, D, E",
+   "explanation": "เลือดออกมาก ให้ FFP และเกล็ดเลือดแล้วเลือดยังไม่แข็งตัว เฉลยต้นฉบับ = ปัญหาที่ผนังหลอดเลือด (ต้นฉบับยอมรับ anticoagulant/fibrinolysis เพิ่มด้วย)",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "ขาด VIII ไม่ใช่",
-    "B": "Afibrinogenemia",
-    "C": "✓ Vascular membrane (ต้นฉบับ)",
-    "D": "✓ Anticoagulant (ต้นฉบับ)",
-    "E": "✓ ต้นฉบับยอมรับ"
+    "A": "ขาด factor VIII ถูกแก้ได้ด้วย FFP ที่ให้ไปแล้ว",
+    "B": "afibrinogenemia ได้ fibrinogen จาก FFP บางส่วนแล้ว และเป็นแต่กำเนิด",
+    "C": "✓ ตามเฉลยต้นฉบับ: รอยโรคที่หลอดเลือดยังเปิดอยู่ การเติม factor จึงไม่หยุดเลือด",
+    "D": "✓ มีสารต้านการแข็งตัวในเลือด (เช่น heparin, inhibitor) ทำให้เติม factor แล้วยังไม่แข็งตัว",
+    "E": "✓ fibrinolysis มากเกินสลายลิ่มเลือดที่เกิดใหม่ทันที"
    },
-   "key_concept": "• no clot ใน coagulogram: fibrinogen ต่ำ/ยาป้องกัน\n• ต้องแยก hypofibrinogenemia",
+   "key_concept": "• เติม factor + platelet แล้วไม่ดีขึ้น: คิดถึง inhibitor, hyperfibrinolysis, surgical bleeding\n• hyperfibrinolysis รักษาด้วย tranexamic acid",
    "also_accept": [
     "D",
     "E"
@@ -3320,16 +3518,25 @@
     "E": "เพิ่ม effect ของ oxaliplatin"
    },
    "correct": "D",
-   "explanation": "Leucovorin เสริมฤทธิ์ 5-FU (stabilize TS-FdUMP complex)",
+   "explanation": "ในสูตร FOLFOX ให้ leucovorin เพื่อเสริมฤทธิ์ของ 5-FU",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "ไม่ใช่ nutrition",
-    "B": "ลด toxic 5-FU ไม่ (ใน MTX)",
-    "D": "✓ เพิ่ม effect ของ 5-FU",
-    "E": "ไม่ใช่"
+    "A": "leucovorin ไม่ได้ให้เพื่อโภชนาการ",
+    "B": "leucovorin ลดพิษของ methotrexate ไม่ใช่ของ 5-FU",
+    "D": "✓ folinic acid ทำให้ FdUMP จับ thymidylate synthase แน่นขึ้น",
+    "E": "ไม่ได้เสริมฤทธิ์ oxaliplatin"
    },
-   "key_concept": "• FOLFOX: 5-FU + leucovorin + oxaliplatin\n• Leucovorin → ↑ TS inhibition",
+   "key_concept": "• leucovorin + MTX = rescue (ลดพิษ) · leucovorin + 5-FU = เสริมฤทธิ์\n• 5-FU ยับยั้ง thymidylate synthase",
+   "mechanism": [
+    "5-FU เปลี่ยนเป็น FdUMP",
+    "leucovorin ให้ reduced folate (5,10-methylene-THF)",
+    {
+     "s": "เกิด ternary complex ที่เสถียรกับ thymidylate synthase",
+     "answer": true
+    },
+    "ยับยั้งการสร้าง dTMP ได้นานขึ้น"
+   ],
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 42].pdf",
     "page": 17,
@@ -3368,17 +3575,26 @@
     "E": "Prednisolone"
    },
    "correct": "B",
-   "explanation": "Cyclophosphamide → hemorrhagic cystitis (acrolein)",
+   "explanation": "Cyclophosphamide ถูกเปลี่ยนเป็น acrolein ซึ่งระคายกระเพาะปัสสาวะ ทำให้ hemorrhagic cystitis",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "Rituximab infusion reaction",
-    "B": "✓ Cyclophosphamide",
-    "C": "Hydroxyurea myelosuppression",
-    "D": "Vinca neuropathy",
-    "E": "Prednisolone Cushing"
+    "A": "rituximab ทำ infusion reaction",
+    "B": "✓ metabolite acrolein ทำลายเยื่อบุกระเพาะปัสสาวะ",
+    "C": "hydroxyurea ทำ myelosuppression (และจริง ๆ H ใน CHOP คือ doxorubicin)",
+    "D": "vinca alkaloid ทำ neuropathy",
+    "E": "prednisolone ทำน้ำตาลสูง ติดเชื้อง่าย"
    },
-   "key_concept": "• ป้องกันด้วย mesna + hydration\n• สรุป: Cyclophosphamide → hemorrhagic cystitis (acrolein)",
+   "key_concept": "• ป้องกันด้วย mesna + ให้น้ำมาก\n• R-CHOP จริง: rituximab, cyclophosphamide, doxorubicin, vincristine, prednisolone",
+   "mechanism": [
+    "cyclophosphamide ถูก CYP เปลี่ยนที่ตับ",
+    "ได้ acrolein ขับทางปัสสาวะ",
+    {
+     "s": "acrolein ทำลาย urothelium",
+     "answer": true
+    },
+    "ปัสสาวะเป็นเลือด"
+   ],
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 42].pdf",
     "page": 17,
@@ -3417,17 +3633,17 @@
     "E": "Bevacizumab 364-341 Hematopoietic system and Biology of Neoplasia"
    },
    "correct": "A",
-   "explanation": "Imatinib = tyrosine kinase inhibitor",
+   "explanation": "Imatinib เป็น tyrosine kinase inhibitor (ยับยั้ง BCR-ABL)",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "✓ Imatinib",
-    "B": "Hydroxyurea antimetabolite",
-    "C": "Vincristine vinca",
-    "D": "5-FU antimetabolite",
-    "E": "Bevacizumab anti-VEGF"
+    "A": "✓ imatinib ยับยั้ง BCR-ABL, c-KIT, PDGFR",
+    "B": "hydroxyurea ยับยั้ง ribonucleotide reductase",
+    "C": "vincristine ยับยั้ง microtubule",
+    "D": "fluorouracil เป็น antimetabolite",
+    "E": "bevacizumab เป็น monoclonal antibody ต่อ VEGF"
    },
-   "key_concept": "• BCR-ABL TKI\n• สรุป: Imatinib = tyrosine kinase inhibitor",
+   "key_concept": "• -tinib = tyrosine kinase inhibitor · -mab = monoclonal antibody\n• imatinib ใช้ใน CML และ GIST",
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 42].pdf",
     "page": 17,
@@ -3528,16 +3744,16 @@
     "E": ""
    },
    "correct": "A",
-   "explanation": "Cytarabine = antimetabolite (pyrimidine analog)",
+   "explanation": "Cytarabine เป็นยาเคมีบำบัดกลุ่ม antimetabolite (pyrimidine analog)",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "✓ Cytarabine",
-    "B": "Doxorubicin antibiotics",
-    "C": "Irinotecan topo I",
-    "D": "Vincristine vinca"
+    "A": "✓ cytarabine (Ara-C) ยับยั้ง DNA polymerase ออกฤทธิ์ S phase",
+    "B": "doxorubicin เป็น anthracycline (antitumor antibiotic)",
+    "C": "irinotecan เป็น topoisomerase I inhibitor",
+    "D": "vincristine เป็น vinca alkaloid ยับยั้ง microtubule"
    },
-   "key_concept": "• Antimetabolites: MTX, 5-FU, cytarabine, 6-MP\n• สรุป: Cytarabine = antimetabolite (pyrimidine analog)",
+   "key_concept": "• antimetabolite: methotrexate, 5-FU, cytarabine, 6-MP, gemcitabine\n• antimetabolite ออกฤทธิ์จำเพาะ S phase",
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 42].pdf",
     "page": 18,
@@ -3625,16 +3841,16 @@
     "E": ""
    },
    "correct": "C",
-   "explanation": "Tamoxifen เป้า estrogen receptor (SERM)",
+   "explanation": "Tamoxifen ออกฤทธิ์ที่ estrogen receptor (SERM)",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "DNA ไม่",
-    "B": "Microtubule ไม่",
-    "C": "✓ Estrogen receptor",
-    "D": "Progesterone ไม่"
+    "A": "DNA เป็นเป้าหมายของ alkylating agent",
+    "B": "microtubule เป็นเป้าหมายของ vinca/taxane",
+    "C": "✓ ต้าน estrogen ที่เต้านม แต่กระตุ้นที่มดลูกและกระดูก",
+    "D": "progesterone receptor ไม่ใช่เป้าหมายของ tamoxifen"
    },
-   "key_concept": "• Tamoxifen: ER antagonist ที่เต้านม\n• เสี่ยง endometrial cancer, DVT",
+   "key_concept": "• tamoxifen: มะเร็งเต้านม ER-positive\n• ADR: endometrial cancer, thromboembolism, hot flush",
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 42].pdf",
     "page": 18,
@@ -3673,17 +3889,17 @@
     "E": "CYFRA 21-1 364-341 Hematopoietic system and Biology of Neoplasia"
    },
    "correct": "D",
-   "explanation": "CA 19-9 สำหรับ pancreatic cancer",
+   "explanation": "Tumor marker ของมะเร็งตับอ่อนคือ CA19-9",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "AFP = HCC",
-    "B": "CEA = colorectal",
-    "C": "CA 15-3 = breast",
-    "D": "✓ CA 19-9",
-    "E": "CYFRA 21-1 = lung"
+    "A": "AFP ใช้กับ HCC และ germ cell tumor",
+    "B": "CEA ใช้กับมะเร็งลำไส้ใหญ่",
+    "C": "CA15-3 ใช้กับมะเร็งเต้านม",
+    "D": "✓ CA19-9 ใช้กับมะเร็งตับอ่อนและทางเดินน้ำดี",
+    "E": "CYFRA 21-1 ใช้กับมะเร็งปอดชนิด non-small cell"
    },
-   "key_concept": "• CA 19-9: pancreas/biliary\n• สรุป: CA 19-9 สำหรับ pancreatic cancer",
+   "key_concept": "• CA125–ovary · PSA–prostate · hCG–choriocarcinoma\n• ใช้ติดตามการรักษามากกว่าวินิจฉัย",
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 42].pdf",
     "page": 18,
@@ -3771,17 +3987,26 @@
     "E": "Familial genetic mutation"
    },
    "correct": "B",
-   "explanation": "ภูมิคุ้มกันต่ำ → มะเร็งจากไวรัส (oncogenic virus)",
+   "explanation": "ผู้ป่วยภูมิคุ้มกันถูกกด เสี่ยงมะเร็งจากไวรัสก่อมะเร็งมากที่สุด",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "UV ไม่",
-    "B": "✓ Oncogenic virus (EBV, HPV, HHV8)",
-    "C": "Chemical ไม่",
-    "D": "Pro-oncogene mutation ไม่",
-    "E": "Familial ไม่"
+    "A": "UV เพิ่มมะเร็งผิวหนังได้ แต่ไม่ใช่ปัจจัยที่เพิ่มเด่นที่สุดจากภูมิต่ำ",
+    "B": "✓ ภูมิคุ้มกันปกติควบคุม EBV, HHV-8, HPV; เมื่อภูมิต่ำไวรัสก่อมะเร็งได้",
+    "C": "สารเคมีก่อมะเร็งไม่ขึ้นกับภูมิคุ้มกันเป็นหลัก",
+    "D": "proto-oncogene mutation เป็นกลไกในเซลล์ ไม่ใช่ปัจจัยเสี่ยงจากภูมิต่ำ",
+    "E": "พันธุกรรมครอบครัวไม่เกี่ยวกับการกดภูมิ"
    },
-   "key_concept": "• Transplant: EBV PTLD, HPV, KS\n• สรุป: ภูมิคุ้มกันต่ำ → มะเร็งจากไวรัส (oncogenic virus)",
+   "key_concept": "• มะเร็งในผู้ป่วยภูมิต่ำ: EBV-lymphoma, Kaposi sarcoma (HHV-8), มะเร็งปากมดลูก (HPV)\n• post-transplant lymphoproliferative disorder จาก EBV",
+   "mechanism": [
+    "ภูมิคุ้มกันถูกกด",
+    "T cell ควบคุมเซลล์ติดไวรัสไม่ได้",
+    {
+     "s": "oncogenic virus ทำให้เซลล์เพิ่มจำนวนไม่หยุด",
+     "answer": true
+    },
+    "เกิดมะเร็ง"
+   ],
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 42].pdf",
     "page": 19,
@@ -3820,17 +4045,17 @@
     "E": "PD-L1"
    },
    "correct": "E",
-   "explanation": "Exhausted T cell แสดง PD-1; tumor แสดง PD-L1 · ต้นฉบับ E",
+   "explanation": "ตามเฉลยต้นฉบับ PD-L1 แสดงออกสูงในสภาวะที่ T cell หมดแรง (exhausted) ในเนื้องอก",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "IDO ไม่",
-    "B": "PD-1 บน T cell",
-    "C": "VEGF ไม่",
-    "D": "FasL ไม่",
-    "E": "✓ PD-L1 (ต้นฉบับ)"
+    "A": "IDO เป็นเอนไซม์กดภูมิจากเซลล์มะเร็ง ไม่ใช่ marker ของ T cell exhaustion",
+    "B": "PD-1 เป็น marker บน exhausted T cell โดยตรง (AI เห็นว่าตรงกว่า) แต่คงตามต้นฉบับ",
+    "C": "VEGF เป็นสารสร้างหลอดเลือด",
+    "D": "Fas-L ชักนำ apoptosis ของ T cell",
+    "E": "✓ ตามเฉลยต้นฉบับ: ligand ที่จับ PD-1 แล้วทำให้ T cell หมดแรง"
    },
-   "key_concept": "• PD-1/PD-L1 axis\n• Checkpoint inhibitor",
+   "key_concept": "• PD-1 (บน T cell) จับ PD-L1 (บนเซลล์มะเร็ง/APC) → ยับยั้ง T cell\n• immune checkpoint inhibitor ปลดเบรกนี้",
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 42].pdf",
     "page": 19,
@@ -3869,17 +4094,17 @@
     "E": "HTLV 364-341 Hematopoietic system and Biology of Neoplasia"
    },
    "correct": "D",
-   "explanation": "HPV vaccine = cancer prevention vaccine",
+   "explanation": "วัคซีนป้องกันมะเร็งที่มีใช้คือวัคซีน HPV (และ HBV)",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "EBV ไม่มี",
-    "B": "ไม่ใช่",
-    "C": "HHV8 ไม่มี",
-    "D": "✓ HPV (cervical ca)",
-    "E": "HTLV ไม่มี"
+    "A": "EBV ยังไม่มีวัคซีนใช้ทั่วไป",
+    "B": "Marek's disease virus เป็นวัคซีนในไก่ ไม่ใช่ในคน",
+    "C": "HHV-8 ยังไม่มีวัคซีน",
+    "D": "✓ HPV vaccine ป้องกันมะเร็งปากมดลูก (ตัวเลือกพิมพ์เป็น HPC)",
+    "E": "HTLV ยังไม่มีวัคซีน"
    },
-   "key_concept": "• Cancer-preventing vaccines: HPV, HBV\n• สรุป: HPV vaccine = cancer prevention vaccine",
+   "key_concept": "• วัคซีนป้องกันมะเร็งในคน: HPV, HBV\n• HPV 16/18 ก่อมะเร็งผ่าน E6 (ทำลาย p53) และ E7 (ยับยั้ง RB)",
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 42].pdf",
     "page": 19,
@@ -3918,15 +4143,15 @@
     "E": ""
    },
    "correct": "A",
-   "explanation": "CAR-T: ดัดแปลง T cell ภายนอกแล้วฉีดกลับ",
+   "explanation": "นำ T cell ออกมาดัดแปลงพันธุกรรมภายนอกแล้วฉีดกลับ = CAR-T cell therapy",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "✓ CAR-T",
-    "B": "TCR-T",
-    "C": "Modify T cell กว้าง"
+    "A": "✓ ใส่ chimeric antigen receptor ให้ T cell จดจำ antigen มะเร็ง (เช่น CD19)",
+    "B": "TCR-T เป็นอีกเทคนิคที่ใส่ T-cell receptor แต่ไม่ใช่ข้อที่เฉลยเลือก",
+    "C": "modify T cell เป็นคำกว้าง ไม่ใช่ชื่อวิธีการ"
    },
-   "key_concept": "• Adoptive cell therapy: CAR-T, TIL, TCR-T\n• สรุป: CAR-T: ดัดแปลง T cell ภายนอกแล้วฉีดกลับ",
+   "key_concept": "• CAR-T: ใช้ใน B-ALL, lymphoma (anti-CD19), myeloma (anti-BCMA)\n• ADR: cytokine release syndrome, neurotoxicity",
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 42].pdf",
     "page": 20,
@@ -3965,15 +4190,15 @@
     "E": ""
    },
    "correct": "A",
-   "explanation": "Hereditary cancer: breast + ovarian ในคนเดียวกัน (BRCA)",
+   "explanation": "มะเร็งเต้านมและรังไข่ปฐมภูมิในคนเดียวกันบ่งถึงมะเร็งทางพันธุกรรม (BRCA)",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "✓ Primary breast + ovarian ในคนเดียว",
-    "B": "ญาติฝั่งเดียว 1 คน ไม่เพียงพอ",
-    "C": "Breast ca อายุ 60 sporadic"
+    "A": "✓ มะเร็งปฐมภูมิหลายตำแหน่งในคนเดียวเป็นลักษณะเด่นของ hereditary cancer",
+    "B": "ญาติเป็นมะเร็งเต้านมคนเดียวยังไม่จำเพาะ ต้องดูจำนวนและอายุ",
+    "C": "มะเร็งเต้านมอายุ 60 ปีเป็นแบบ sporadic ทั่วไป"
    },
-   "key_concept": "• Hereditary: early onset, multiple primary, family cluster\n• สรุป: Hereditary cancer: breast + ovarian ในคนเดียวกัน (BRCA)",
+   "key_concept": "• ลักษณะ hereditary cancer: อายุน้อย, หลายตำแหน่ง/สองข้าง, หลายคนในครอบครัว\n• BRCA1/2 → breast + ovary",
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 42].pdf",
     "page": 20,
@@ -4012,17 +4237,26 @@
     "E": "malignant germ cell tumor"
    },
    "correct": "E",
-   "explanation": "45,X + SRY (+) → gonadoblastoma / malignant germ cell tumor",
+   "explanation": "45,X ที่มีชิ้นส่วนโครโมโซม Y (SRY บวก) เสี่ยง gonadoblastoma/malignant germ cell tumor ใน streak gonad",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "Breast ไม่",
-    "B": "Ovarian ไม่มี ovary",
-    "C": "Pituitary ไม่",
-    "D": "Endometrial ไม่",
-    "E": "✓ Germ cell tumor (gonadoblastoma, Y material)"
+    "A": "มะเร็งเต้านมไม่เพิ่มใน Turner",
+    "B": "ovarian (epithelial) cancer ไม่ใช่ความเสี่ยงจำเพาะ",
+    "C": "pituitary adenoma ไม่เกี่ยว",
+    "D": "endometrial cancer เสี่ยงเมื่อได้ estrogen อย่างเดียว ไม่เกี่ยวกับ SRY",
+    "E": "✓ dysgenetic gonad ที่มี Y material กลายเป็น gonadoblastoma → dysgerminoma"
    },
-   "key_concept": "• Y material ใน dysgenetic gonad → gonadoblastoma\n• สรุป: 45,X + SRY (+) → gonadoblastoma / malignant germ cell tumor",
+   "key_concept": "• Turner ที่มี Y material ควรตัด gonad ป้องกัน\n• gonadoblastoma เป็นต้นกำเนิดของ dysgerminoma",
+   "mechanism": [
+    "streak gonad มีเซลล์ที่มีโครโมโซม Y",
+    "germ cell ใน gonad ผิดปกติถูกกระตุ้น",
+    {
+     "s": "เกิด gonadoblastoma",
+     "answer": true
+    },
+    "กลายเป็น malignant germ cell tumor"
+   ],
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 42].pdf",
     "page": 20,
@@ -4147,17 +4381,17 @@
     "E": "Signal transduction 364-341 Hematopoietic system and Biology of Neoplasia"
    },
    "correct": "D",
-   "explanation": "DNA mismatch repair = tumor suppressor/ caretaker ไม่ใช่ proto-oncogene product",
+   "explanation": "DNA mismatch repair เป็นผลผลิตของ tumor suppressor (caretaker) gene ไม่ใช่ proto-oncogene",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "Growth factor (PDGF) proto-oncogene",
-    "B": "GF receptor (EGFR)",
-    "C": "Transcription factor (MYC)",
-    "D": "✓ MMR เป็น caretaker TSG",
-    "E": "Signal transduction (RAS)"
+    "A": "growth factor (เช่น PDGF/sis) เป็นผลผลิต proto-oncogene",
+    "B": "growth factor receptor (เช่น HER2, EGFR) เป็นผลผลิต proto-oncogene",
+    "C": "transcription factor (เช่น MYC) เป็นผลผลิต proto-oncogene",
+    "D": "✓ MLH1/MSH2 เป็นยีนซ่อม DNA เสียแล้วเกิดมะเร็งแบบ loss of function",
+    "E": "signal transducer (เช่น RAS, ABL) เป็นผลผลิต proto-oncogene"
    },
-   "key_concept": "• Proto-oncogene: GF, receptor, transducer, TF\n• สรุป: DNA mismatch repair = tumor suppressor/ caretaker ไม่ใช่ proto-oncogene product",
+   "key_concept": "• proto-oncogene: gain of function, allele เดียวก็พอ\n• tumor suppressor/DNA repair: loss of function ต้องเสียทั้งสอง allele",
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 42].pdf",
     "page": 20,
@@ -4196,17 +4430,26 @@
     "E": "MLH1"
    },
    "correct": "E",
-   "explanation": "Lynch syndrome: microsatellite instability → MMR gene (MLH1/MSH2)",
+   "explanation": "มะเร็งลำไส้ใหญ่อายุน้อย หลายคนในครอบครัว และ microsatellite instability = Lynch syndrome (MLH1)",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "APC = FAP",
-    "B": "TP53 ไม่",
-    "C": "RAS ไม่",
-    "D": "(ตัวเลือก)",
-    "E": "✓ MMR gene"
+    "A": "APC เป็นยีนของ FAP ซึ่งมี polyp นับร้อยและไม่มี MSI",
+    "B": "TP53 เกี่ยวกับ Li-Fraumeni",
+    "C": "RAS เป็น somatic mutation ในลำดับ adenoma–carcinoma",
+    "D": "MYC เป็น oncogene ไม่ถ่ายทอดในครอบครัวแบบนี้",
+    "E": "✓ mismatch repair gene (MLH1, MSH2, MSH6, PMS2) เสีย → MSI"
    },
-   "key_concept": "• Lynch: HNPCC, MSI-high\n• MLH1, MSH2, MSH6, PMS2",
+   "key_concept": "• Lynch: colon, endometrium, ovary, กระเพาะ\n• FAP: APC, polyp จำนวนมาก, เสี่ยงมะเร็ง 100%",
+   "mechanism": [
+    "MLH1 กลายพันธุ์",
+    "ซ่อม mismatch ระหว่างจำลอง DNA ไม่ได้",
+    {
+     "s": "microsatellite instability สะสม mutation",
+     "answer": true
+    },
+    "มะเร็งลำไส้ใหญ่อายุน้อย"
+   ],
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 42].pdf",
     "page": 21,
@@ -4245,17 +4488,17 @@
     "E": "100%"
    },
    "correct": "E",
-   "explanation": "FAP: ความเสี่ยง CRC ~100% ถ้าไม่ตัดลำไส้",
+   "explanation": "FAP ที่ไม่รักษาจะเป็นมะเร็งลำไส้ใหญ่เกือบ 100%",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "12.5%",
-    "B": "25%",
-    "C": "50%",
-    "D": "75%",
-    "E": "✓ 100% (APC)"
+    "A": "12.5% ต่ำเกินจริงมาก",
+    "B": "25% ต่ำเกินจริงมาก",
+    "C": "50% เป็นโอกาสถ่ายทอดยีนให้ลูก ไม่ใช่โอกาสเป็นมะเร็ง",
+    "D": "75% ยังต่ำกว่าความจริง",
+    "E": "✓ polyp นับร้อยถึงพัน ทำให้เกิดมะเร็งเกือบทุกรายภายในอายุ ~40 ปี"
    },
-   "key_concept": "• FAP: APC mutation, polyp หลายร้อย\n• Prophylactic colectomy",
+   "key_concept": "• FAP: APC (5q) autosomal dominant\n• ป้องกันด้วย prophylactic colectomy",
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 42].pdf",
     "page": 21,
@@ -4355,16 +4598,25 @@
     "E": ""
    },
    "correct": "C",
-   "explanation": "RAS = signal transducer (GTPase)",
+   "explanation": "RAS สร้างโปรตีน signal transducer (GTP-binding protein)",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "Growth factor ไม่",
-    "B": "Receptor ไม่",
-    "C": "✓ Signal transducer",
-    "D": "Transcription factor ไม่"
+    "A": "growth factor เป็นผลผลิตของ sis (PDGF)",
+    "B": "growth factor receptor เป็นผลผลิตของ ERBB2, RET",
+    "C": "✓ RAS ส่งสัญญาณจาก receptor ไป RAF–MEK–ERK",
+    "D": "transcription factor เป็นผลผลิตของ MYC, FOS, JUN"
    },
-   "key_concept": "• RAS: G-protein, GTP/GDP\n• สรุป: RAS = signal transducer (GTPase)",
+   "key_concept": "• RAS กลายพันธุ์ → เสีย GTPase ค้างในสถานะ active\n• พบบ่อยในมะเร็งตับอ่อน ลำไส้ ปอด",
+   "mechanism": [
+    "growth factor จับ receptor",
+    "RAS จับ GTP ส่งสัญญาณต่อ",
+    {
+     "s": "RAS กลายพันธุ์สลาย GTP ไม่ได้",
+     "answer": true
+    },
+    "ส่งสัญญาณแบ่งตัวตลอดเวลา"
+   ],
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 42].pdf",
     "page": 21,
@@ -4403,17 +4655,17 @@
     "E": "Mutationของ tumor suppressor gene"
    },
    "correct": "C",
-   "explanation": "Knudson two-hit: อธิบาย hereditary cancer (ต้นฉบับ C)",
+   "explanation": "Knudson two-hit hypothesis เฉลยต้นฉบับเลือกการอธิบายร่วมของกรรมพันธุ์กับปัจจัยที่เกิดภายหลัง (hit แรกจากพันธุกรรม hit สองจากสิ่งแวดล้อม)",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "Hereditary cancer (retinoblastoma)",
-    "B": "Multiple-step ไม่",
-    "C": "✓ Environment & genetic (ต้นฉบับ)",
-    "D": "Oncogene mutation ไม่",
-    "E": "ไม่ใช่"
+    "A": "hereditary cancer อธิบายได้เพียง hit แรก",
+    "B": "multistep carcinogenesis เป็นแนวคิดของการสะสมหลาย mutation",
+    "C": "✓ ตามเฉลยต้นฉบับ: hit แรกถ่ายทอด + hit สองเกิดภายหลังจากสิ่งแวดล้อม",
+    "D": "oncogene ใช้ allele เดียวก็ก่อมะเร็ง ไม่ต้อง two-hit",
+    "E": "tumor suppressor gene ต้องเสียสอง allele เป็นใจความของ two-hit (AI เห็นว่าตรงที่สุด) แต่คงตามต้นฉบับ"
    },
-   "key_concept": "• Two-hit: TSG (Rb) 2 alleles\n• Hereditary: 1 hit germline",
+   "key_concept": "• two-hit: retinoblastoma – hereditary (germline hit + somatic hit) เกิดเร็วและสองตา\n• sporadic ต้อง somatic hit สองครั้งในเซลล์เดียว",
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 42].pdf",
     "page": 22,
@@ -4452,17 +4704,26 @@
     "E": "Acinetobactor baumannii"
    },
    "correct": "A",
-   "explanation": "Nasopharyngeal carcinoma ← EBV (ต้นฉบับ A, C)",
+   "explanation": "มะเร็งหลังโพรงจมูก (nasopharyngeal carcinoma) สัมพันธ์กับ EBV (ต้นฉบับยอมรับอีกข้อ)",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "✓ EBV",
-    "B": "CMV ไม่",
-    "C": "✓ Influenza (ต้นฉบับยอมรับ)",
-    "D": "H. influenzae ไม่",
-    "E": "Acinetobacter ไม่"
+    "A": "✓ EBV พบในเซลล์มะเร็ง NPC ชนิด undifferentiated",
+    "B": "CMV ไม่ก่อมะเร็งหลังโพรงจมูก",
+    "C": "✓ ต้นฉบับยอมรับข้อนี้ด้วย แต่ influenza ไม่ใช่ไวรัสก่อมะเร็งตามตำรา",
+    "D": "Haemophilus influenzae เป็นแบคทีเรียก่อการติดเชื้อทางเดินหายใจ",
+    "E": "Acinetobacter เป็นเชื้อในโรงพยาบาล ไม่ก่อมะเร็ง"
    },
-   "key_concept": "• NPC: EBV, undifferentiated, lymphoepithelial\n• สรุป: Nasopharyngeal carcinoma ← EBV (ต้นฉบับ A, C)",
+   "key_concept": "• EBV: NPC, Burkitt lymphoma, Hodgkin lymphoma, PTLD\n• NPC พบบ่อยในเอเชียตะวันออกเฉียงใต้/จีนใต้",
+   "mechanism": [
+    "EBV ติดเยื่อบุหลังโพรงจมูก",
+    "โปรตีน LMP1 กระตุ้นการแบ่งตัวและยับยั้ง apoptosis",
+    {
+     "s": "เซลล์เยื่อบุกลายเป็นมะเร็ง",
+     "answer": true
+    },
+    "ก้อนหลังโพรงจมูก"
+   ],
    "also_accept": [
     "C"
    ],
@@ -4514,17 +4775,17 @@
     "E": "Squamous cell carcinoma of cervix"
    },
    "correct": "C",
-   "explanation": "Multiple osteolytic lesions 60F → ต้นฉบับ C (melanoma)",
+   "explanation": "รอยโรคกระดูกสันหลังสลายหลายตำแหน่ง เฉลยต้นฉบับเลือก malignant melanoma ในบรรดาตัวเลือกที่ให้",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "Hodgkin ไม่",
-    "B": "Follicular lymphoma ไม่",
-    "C": "✓ Malignant melanoma (ต้นฉบับ)",
-    "D": "Ovarian ไม่",
-    "E": "Cervical SCC ไม่"
+    "A": "Hodgkin lymphoma ลามกระดูกได้น้อย และมักเป็น sclerotic",
+    "B": "follicular lymphoma ไม่ค่อยทำ osteolytic หลายตำแหน่ง",
+    "C": "✓ ตามเฉลยต้นฉบับ: melanoma แพร่กระจายทางเลือดไปได้ทุกอวัยวะรวมกระดูก เป็น lytic",
+    "D": "ovarian adenocarcinoma กระจายในช่องท้องเป็นหลัก",
+    "E": "มะเร็งปากมดลูกลามเฉพาะที่และต่อมน้ำเหลืองเป็นหลัก"
    },
-   "key_concept": "• Osteolytic mets: myeloma, lung, kidney, melanoma\n• สรุป: Multiple osteolytic lesions 60F → ต้นฉบับ C (melanoma)",
+   "key_concept": "• osteolytic หลายตำแหน่งในผู้สูงอายุ: นึกถึง myeloma, มะเร็งเต้านม ปอด ไต ไทรอยด์\n• prostate มักเป็น osteoblastic",
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 42].pdf",
     "page": 22,
@@ -4563,17 +4824,17 @@
     "E": "Stage 4 364-341 Hematopoietic system and Biology of Neoplasia"
    },
    "correct": "E",
-   "explanation": "Rectal cancer + liver mets → stage IV",
+   "explanation": "มะเร็งทวารหนักที่กระจายไปตับ = มี distant metastasis จึงเป็น stage 4",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "I",
-    "B": "II",
-    "C": "III (nodes)",
-    "D": "IIIb",
-    "E": "✓ Stage IV (M1)"
+    "A": "stage 1 จำกัดในผนังลำไส้",
+    "B": "stage 2 ทะลุผนังแต่ไม่มีต่อมน้ำเหลือง",
+    "C": "stage 3 มีต่อมน้ำเหลืองแต่ไม่มีการกระจายไกล",
+    "D": "stage 3b ยังเป็นกลุ่มที่ไม่มี distant metastasis",
+    "E": "✓ M1 (ตับ) = stage IV ไม่ว่า T และ N เป็นเท่าใด"
    },
-   "key_concept": "• Distant mets = Stage IV\n• สรุป: Rectal cancer + liver mets → stage IV",
+   "key_concept": "• มะเร็งลำไส้ใหญ่กระจายไปตับผ่าน portal vein\n• M1 = stage IV เสมอ",
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 42].pdf",
     "page": 22,
@@ -4674,17 +4935,26 @@
     "E": "IDO"
    },
    "correct": "C",
-   "explanation": "Cachexia จาก TNF-α (cachectin) จาก tumor/macrophage",
+   "explanation": "Cachexia จากมะเร็งเกิดจาก TNF (cachectin) ที่เนื้องอกและ macrophage หลั่ง",
    "image": null,
    "issues": [],
    "option_why": {
-    "A": "IL-6 มีส่วน",
-    "B": "IL-10 ไม่",
-    "C": "✓ TNF (ตามเฉลย)",
-    "D": "IFN-α ไม่",
-    "E": "IDO ไม่"
+    "A": "IL-6 มีส่วนร่วมได้ แต่ตัวหลักตามเฉลยคือ TNF",
+    "B": "IL-10 เป็น cytokine ต้านการอักเสบ",
+    "C": "✓ TNF-α กดความอยากอาหาร เร่งสลายไขมันและกล้ามเนื้อ",
+    "D": "interferon alpha ไม่ใช่ตัวหลักของ cachexia",
+    "E": "IDO เป็นเอนไซม์กดภูมิคุ้มกัน"
    },
-   "key_concept": "• TNF-α: cachexia\n• ใน cancer: IL-6, IL-1",
+   "key_concept": "• cachexia: TNF-α, IL-1, IL-6\n• ต่างจากอดอาหาร: เสียมวลกล้ามเนื้อมากและแก้ด้วยอาหารไม่ได้",
+   "mechanism": [
+    "เนื้องอก/ macrophage หลั่ง TNF-α",
+    "กดศูนย์ความอยากอาหารและยับยั้ง lipoprotein lipase",
+    {
+     "s": "สลายไขมันและโปรตีนกล้ามเนื้อ",
+     "answer": true
+    },
+    "ผอมแห้ง ซีด"
+   ],
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 42].pdf",
     "page": 23,

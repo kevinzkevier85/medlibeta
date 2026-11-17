@@ -42,15 +42,24 @@
    "key_concept": "• Cachexia: TNF-α, IL-1, IL-6, IFN-γ\n• Anorexia + muscle/fat wasting"
   },
   "6": {
-   "explanation": "CKD → uremic platelet dysfunction (qualitative defect)",
+   "explanation": "ไตวายเรื้อรังมีของเสีย (uremic toxin) รบกวนการทำงานของเกล็ดเลือด จึงเลือดออกง่ายทั้งที่จำนวนปกติ",
    "option_why": {
-    "A": "✓ Uremia ทำให้ platelet function ผิดปกติ (qualitative)",
-    "B": "จำนวน platelet มักปกติ",
-    "C": "Coagulation factor ปกติ",
-    "D": "VWF ปกติ/ไม่ใช่สาเหตุ",
-    "E": "VWF ปกติ"
+    "A": "✓ uremia ทำให้เกล็ดเลือดเกาะและจับกลุ่มไม่ดี = qualitative defect",
+    "B": "จำนวนเกล็ดเลือดใน CKD มักปกติ",
+    "C": "coagulation factor ไม่ลดใน CKD",
+    "D": "vWF ทำงานผิดปกติเป็นส่วนประกอบได้ แต่กลไกหลักคือเกล็ดเลือดทำงานเสีย",
+    "E": "ปริมาณ vWF ใน CKD ไม่ลดลง"
    },
-   "key_concept": "• Uremic bleeding: platelet adhesion/aggregation ↓\n• รักษา: dialysis, DDAVP, estrogen"
+   "key_concept": "• uremic bleeding: bleeding time ยาว, platelet count และ PT/aPTT ปกติ\n• แก้ด้วย dialysis, desmopressin",
+   "mechanism": [
+    "ไตวาย ของเสียคั่ง",
+    "uremic toxin รบกวน platelet adhesion/aggregation",
+    {
+     "s": "เกล็ดเลือดทำงานไม่ได้ทั้งที่จำนวนปกติ",
+     "answer": true
+    },
+    "จ้ำเลือดขึ้นเอง"
+   ]
   },
   "7": {
    "explanation": "แม่ A/A2/H และพ่อ CS+Bart → ตรวจ ARMS สำหรับ α-thal (genotype α-thal ซับซ้อน)",
@@ -62,15 +71,24 @@
    "key_concept": "• ARMS/gap-PCR: α-thal\n• RDB/reverse dot blot: β-thal mutation"
   },
   "8": {
-   "explanation": "พ่อ: OF+ DCIP− (β-thal trait/ ไม่ใช่ HbE) · แม่: OF− DCIP+ (HbE) → ลูก β-thal 25%",
+   "explanation": "จากผลคัดกรอง พ่อและแม่เป็นพาหะคนละแบบ โอกาสลูกเป็นโรค β-thalassemia ตามเฉลย = 25%",
    "option_why": {
-    "A": "0% ไม่ถูก",
-    "B": "✓ 25% (HbE/β-thal = 1/4)",
-    "C": "50% ไม่ถูก",
-    "D": "75% ไม่ถูก",
-    "E": "100% ไม่ถูก"
+    "A": "0% ไม่ถูก เพราะทั้งพ่อและแม่ส่ง allele ผิดปกติของยีน β ได้",
+    "B": "✓ พ่อส่ง allele ผิดปกติ 1/2 × แม่ส่ง 1/2 = 1/4",
+    "C": "50% เป็นโอกาสเมื่อฝ่ายหนึ่งเป็น homozygous",
+    "D": "75% ไม่ตรงกับการถ่ายทอดแบบ recessive ของคู่พาหะ",
+    "E": "100% เกิดเมื่อทั้งคู่เป็น homozygous"
    },
-   "key_concept": "• β-thal trait × HbE trait → 25% HbE/β-thal\n• OF+ = thal; DCIP+ = HbE"
+   "key_concept": "• OF คัดกรอง thalassemia trait · DCIP คัดกรอง HbE\n• β-thal trait × HbE trait → ลูก β-thal/HbE 25%",
+   "mechanism": [
+    "พ่อเป็นพาหะ ส่ง allele ผิดปกติได้ 1/2",
+    "แม่เป็นพาหะ ส่ง allele ผิดปกติได้ 1/2",
+    {
+     "s": "ลูกได้ทั้งสอง allele = 1/4",
+     "answer": true
+    },
+    "เป็นโรค 25%"
+   ]
   },
   "9": {
    "explanation": "Acute hemolysis + microcytic + schistocyte + spherocyte → HbE/β-thal (F 40, E 60)",
@@ -95,15 +113,24 @@
    "key_concept": "• Hb Bart = γ4 ในทารก α-thal\n• HbH = β4 ในผู้ใหญ่"
   },
   "12": {
-   "explanation": "Hemolysis: LDH ↑, indirect bilirubin ↑, haptoglobin ↓",
+   "explanation": "ซีดเร็ว reticulocyte 12% = hemolysis: LDH สูง unconjugated bilirubin สูง haptoglobin ต่ำ",
    "option_why": {
-    "A": "✓ LDH ↑ unconjugated bili ↑ haptoglobin ↓ ตามแบบ hemolysis",
-    "B": "Haptoglobin ↑ ไม่ใช่ hemolysis",
-    "C": "Bilirubin ↓ ไม่ใช่",
-    "D": "LDH ↓ ไม่ใช่",
-    "E": "ไม่ใช่คำตอบที่ถูกต้องของโจทย์ข้อนี้"
+    "A": "✓ RBC แตกปล่อย LDH และ Hb; Hb ถูกเปลี่ยนเป็น bilirubin และจับ haptoglobin จนหมด",
+    "B": "haptoglobin ต้องลดลง ไม่เพิ่ม",
+    "C": "unconjugated bilirubin ต้องเพิ่ม ไม่ลด",
+    "D": "LDH ต้องเพิ่ม เพราะหลุดจาก RBC ที่แตก",
+    "E": "LDH และ bilirubin ต้องเพิ่ม ไม่ลด"
    },
-   "key_concept": "• Hemolysis: retic ↑, LDH ↑, haptoglobin ↓, indirect bili ↑\n• MCV 90 + retic 12%"
+   "key_concept": "• hemolysis: reticulocyte ↑ LDH ↑ indirect bilirubin ↑ haptoglobin ↓\n• แยกจากเสียเลือด: bilirubin และ LDH ไม่สูง",
+   "mechanism": [
+    "RBC แตก",
+    "ปล่อย LDH และ hemoglobin",
+    {
+     "s": "Hb → unconjugated bilirubin; haptoglobin ถูกใช้หมด",
+     "answer": true
+    },
+    "ไขกระดูกชดเชย reticulocyte สูง"
+   ]
   },
   "13": {
    "explanation": "Hemosiderinuria = key ของ chronic intravascular hemolysis (PNH)",
@@ -137,25 +164,43 @@
    "key_concept": "• Asplenia: ไม่ filter\n• Howell–Jolly, target cell, NRBC"
   },
   "16": {
-   "explanation": "PNH: complication ที่น่ากังวลที่สุดคือ thrombosis",
+   "explanation": "PNH ภาวะแทรกซ้อนที่อันตรายและเป็นสาเหตุการตายหลักคือ thrombosis",
    "option_why": {
-    "A": "Sepsis พบได้แต่ไม่ใช่หลัก",
-    "B": "Renal failure พบ",
-    "C": "Heart failure ไม่ใช่",
-    "D": "✓ Life-threatening thrombus (Budd–Chiari, cerebral vein)"
+    "A": "sepsis พบได้จาก neutropenia แต่ไม่ใช่สาเหตุตายหลัก",
+    "B": "renal failure เกิดจาก hemoglobinuria เรื้อรัง แต่รองจาก thrombosis",
+    "C": "heart failure ไม่ใช่ภาวะแทรกซ้อนเด่นของ PNH",
+    "D": "✓ ลิ่มเลือดในตำแหน่งผิดปกติ (hepatic, portal, cerebral vein) อันตรายถึงชีวิต"
    },
-   "key_concept": "• PNH: hemolysis, thrombosis, BM failure\n• Eculizumab (anti-C5)"
+   "key_concept": "• PNH: hemolysis + pancytopenia + thrombosis\n• รักษา eculizumab (anti-C5)",
+   "mechanism": [
+    "เม็ดเลือดขาด CD55/CD59",
+    "complement ทำลาย RBC และกระตุ้นเกล็ดเลือด; free Hb จับ NO",
+    {
+     "s": "เกิดลิ่มเลือดในหลอดเลือดดำ",
+     "answer": true
+    },
+    "Budd–Chiari, stroke"
+   ]
   },
   "17": {
-   "explanation": "เลือดออกเฉียบพลัน: Hct/red cell volume ↓ (retic ยังไม่ขึ้นทันที) ต้นฉบับ A,E",
+   "explanation": "เสียเลือดทาง GI มากเฉียบพลัน ปริมาตรเม็ดเลือดแดงลดลง และ reticulocyte ยังไม่ทันเพิ่ม (ต้นฉบับยอมรับสองข้อ)",
    "option_why": {
-    "A": "✓ Low reticulocyte count (ระยะแรก)",
-    "B": "RDW ปกติ/↑",
-    "C": "MCH ปกติ",
-    "D": "MCV ปกติ",
-    "E": "✓ Low red cell volume"
+    "A": "✓ ระยะแรก ไขกระดูกยังไม่ทันตอบสนอง reticulocyte จึงยังต่ำ",
+    "B": "RDW ไม่ลดลงจากการเสียเลือด",
+    "C": "MCH ไม่เพิ่มจากการเสียเลือด",
+    "D": "MCV ไม่เพิ่มในระยะเฉียบพลัน",
+    "E": "✓ เสีย RBC ออกจากร่างกายโดยตรง red cell volume ลด"
    },
-   "key_concept": "• Acute bleed: Hb/Hct ลด normocytic\n• Retic ↑ หลัง 3–5 วัน"
+   "key_concept": "• เสียเลือดเฉียบพลัน: Hb/Hct ยังไม่ลดในชั่วโมงแรก เพราะเสียทั้ง RBC และ plasma\n• reticulocyte เพิ่มใน 3–5 วัน",
+   "mechanism": [
+    "เลือดออกมาก",
+    "เสีย RBC และ plasma พร้อมกัน",
+    {
+     "s": "red cell volume ลด ไขกระดูกยังไม่ทันสร้าง",
+     "answer": true
+    },
+    "ต่อมาน้ำเข้าหลอดเลือด Hb จึงลด"
+   ]
   },
   "18": {
    "explanation": "PAI-1 ยับยั้ง fibrinolysis → ส่งเสริม thrombus",
@@ -229,26 +274,44 @@
    "key_concept": "• Reye: aspirin + viral\n• ตับไขมัน + encephalopathy"
   },
   "26": {
-   "explanation": "Intermittent claudication: cilostazol (PDE3 inhibitor)",
+   "explanation": "Cilostazol เป็นยาที่ใช้ลดอาการ intermittent claudication",
    "option_why": {
-    "A": "✓ Cilostazol ลด claudication",
-    "B": "Dipyridamole ไม่",
-    "C": "Aspirin ป้องกัน",
-    "D": "Heparin ไม่",
-    "E": "Clopidogrel ป้องกัน"
+    "A": "✓ ยับยั้ง PDE3 เพิ่ม cAMP: ต้านเกล็ดเลือด + ขยายหลอดเลือดขา",
+    "B": "dipyridamole ต้านเกล็ดเลือด แต่ไม่มีข้อบ่งใช้ใน claudication",
+    "C": "aspirin ป้องกันเหตุการณ์หลอดเลือด แต่ไม่ลดอาการปวดขาเวลาเดิน",
+    "D": "heparin เป็น anticoagulant ใช้ในภาวะเฉียบพลัน",
+    "E": "clopidogrel ป้องกันเหตุการณ์หลอดเลือด ไม่เพิ่มระยะทางเดิน"
    },
-   "key_concept": "• PAD claudication: cilostazol, exercise\n• Cilostazol ห้ามใน HF"
+   "key_concept": "• cilostazol: PDE3 inhibitor ห้ามใช้ใน heart failure\n• dipyridamole: ยับยั้ง adenosine reuptake + PDE",
+   "mechanism": [
+    "cilostazol ยับยั้ง PDE3",
+    "cAMP ในเกล็ดเลือดและกล้ามเนื้อเรียบหลอดเลือดเพิ่ม",
+    {
+     "s": "หลอดเลือดขยายและเกล็ดเลือดจับกลุ่มน้อยลง",
+     "answer": true
+    },
+    "เดินได้ไกลขึ้น"
+   ]
   },
   "28": {
-   "explanation": "CKD anemia → epoetin alfa (EPO)",
+   "explanation": "ESRD เป็น normocytic anemia จากขาด erythropoietin รักษาด้วย epoetin alfa",
    "option_why": {
-    "A": "Vitamin K ไม่",
-    "B": "Folic acid ไม่",
-    "C": "B12 ไม่",
-    "D": "Ferrous sulfate ใช้เสริม แต่ไม่ใช่ DOC",
-    "E": "✓ Epoetin alfa"
+    "A": "vitamin K ใช้แก้ coagulation factor ต่ำ",
+    "B": "folic acid ใช้ใน megaloblastic anemia",
+    "C": "vitamin B12 ใช้ใน megaloblastic anemia",
+    "D": "ferrous sulphate ใช้เมื่อขาดเหล็ก (microcytic) หรือเสริม ESA",
+    "E": "✓ ทดแทน EPO ที่ไตสร้างไม่ได้"
    },
-   "key_concept": "• Anemia of CKD: EPO deficiency\n• ESA + iron"
+   "key_concept": "• anemia of CKD: EPO ต่ำ → ESA (epoetin, darbepoetin)\n• ESA ADR: ความดันสูง thrombosis",
+   "mechanism": [
+    "ไตเสื่อมระยะสุดท้าย",
+    "สร้าง EPO ไม่ได้",
+    {
+     "s": "erythropoiesis ลด → ให้ epoetin",
+     "answer": true
+    },
+    "Hb เพิ่ม อาการเหนื่อยดีขึ้น"
+   ]
   },
   "29": {
    "explanation": "Iron overload รักษาด้วย deferoxamine",
@@ -271,36 +334,63 @@
    "key_concept": "• MTX: DHFR inhibitor → leucovorin rescue\n• Glucarpidase ใน toxicity รุนแรง"
   },
   "31": {
-   "explanation": "Amifostine ป้องกัน nephrotoxicity ของ cisplatin",
+   "explanation": "Amifostine ใช้ลดพิษต่อไตของ cisplatin",
    "option_why": {
-    "A": "Deferoxamine = iron",
-    "B": "Protamine = heparin",
-    "C": "Leucovorin = MTX",
-    "D": "✓ Amifostine (cytoprotective)"
+    "A": "deferoxamine เป็น iron chelator",
+    "B": "protamine sulfate แก้ฤทธิ์ heparin",
+    "C": "leucovorin ใช้ rescue methotrexate",
+    "D": "✓ amifostine เป็น thiol จับ free radical จาก cisplatin"
    },
-   "key_concept": "• Cisplatin: nephro/oto-toxic\n• Amifostine, hydration"
+   "key_concept": "• คู่ป้องกันพิษ: cisplatin–amifostine, doxorubicin–dexrazoxane, ifosfamide–mesna, MTX–leucovorin\n• cisplatin: nephrotoxic, ototoxic, neuropathy",
+   "mechanism": [
+    "cisplatin สะสมในเซลล์ท่อไต",
+    "เกิด reactive species",
+    {
+     "s": "amifostine จับ free radical",
+     "answer": true
+    },
+    "ลด nephrotoxicity"
+   ]
   },
   "32": {
-   "explanation": "Etoposide (topo II inhibitor) ทำงาน S/G2 phase",
+   "explanation": "Etoposide ยับยั้ง topoisomerase II ออกฤทธิ์ช่วง S (ถึง G2) ของ cell cycle",
    "option_why": {
-    "A": "✓ Etoposide (S/G2)",
-    "B": "Vincristine = M",
-    "C": "Bleomycin = G2",
-    "D": "Tamoxifen = hormonal",
-    "E": "Docetaxel = M"
+    "A": "✓ topoisomerase II inhibitor ทำ DNA ขาดขณะจำลองตัว",
+    "B": "vincristine ยับยั้ง microtubule ออกฤทธิ์ระยะ M",
+    "C": "bleomycin ออกฤทธิ์ระยะ G2",
+    "D": "tamoxifen เป็น SERM ไม่ใช่ยา cell-cycle specific",
+    "E": "docetaxel ทำ microtubule เสถียร ออกฤทธิ์ระยะ M"
    },
-   "key_concept": "• Etoposide: topo II\n• Vinca/taxane: M phase"
+   "key_concept": "• S phase: antimetabolite, topoisomerase inhibitor\n• M phase: vinca alkaloid, taxane · G2: bleomycin",
+   "mechanism": [
+    "etoposide จับ topoisomerase II",
+    "เอนไซม์ตัด DNA แล้วต่อกลับไม่ได้",
+    {
+     "s": "DNA double-strand break ระหว่าง S phase",
+     "answer": true
+    },
+    "เซลล์ตาย"
+   ]
   },
   "33": {
-   "explanation": "Allopurinol ยับยั้ง xanthine oxidase → ลดการเผาผลาญ 6-MP → toxicity",
+   "explanation": "Allopurinol ยับยั้ง xanthine oxidase ซึ่งทำลาย mercaptopurine จึงทำให้ระดับ 6-MP สูงเป็นพิษ",
    "option_why": {
-    "A": "MTX ไม่ผ่าน XO",
-    "B": "Bleomycin ไม่",
-    "C": "Cisplatin ไม่",
-    "D": "✓ Mercaptopurine ผ่าน XO → ต้องลดขนาด",
-    "E": "Mitomycin ไม่"
+    "A": "methotrexate ไม่ถูกทำลายด้วย xanthine oxidase",
+    "B": "bleomycin ไม่เกี่ยวกับ xanthine oxidase",
+    "C": "cisplatin ขับทางไต ไม่เกี่ยวกับ xanthine oxidase",
+    "D": "✓ 6-MP (และ azathioprine) ถูกทำลายโดย xanthine oxidase ต้องลดขนาด 75% หรือเลี่ยง",
+    "E": "mitomycin ไม่เกี่ยวกับ xanthine oxidase"
    },
-   "key_concept": "• Allopurinol + 6-MP/azathioprine: ลดขนาด 75%\n• XO metabolize 6-MP"
+   "key_concept": "• 6-MP/azathioprine + allopurinol/febuxostat → myelosuppression รุนแรง\n• TPMT ต่ำก็ทำให้ 6-MP เป็นพิษ",
+   "mechanism": [
+    "allopurinol ยับยั้ง xanthine oxidase",
+    "6-MP ไม่ถูกเปลี่ยนเป็น thiouric acid",
+    {
+     "s": "ระดับ 6-MP และ metabolite ออกฤทธิ์สูง",
+     "answer": true
+    },
+    "กดไขกระดูกรุนแรง"
+   ]
   },
   "35": {
    "explanation": "Doxorubicin → dilated cardiomyopathy",
@@ -314,15 +404,15 @@
    "key_concept": "• Doxorubicin: cumulative dose cardiotoxicity\n• Dexrazoxane ป้องกัน"
   },
   "36": {
-   "explanation": "CAF ใช้รักษา breast cancer",
+   "explanation": "สูตรเคมีบำบัดมะเร็งเต้านมคือ CAF (cyclophosphamide, doxorubicin, 5-FU)",
    "option_why": {
-    "A": "CHOP = NHL",
-    "B": "✓ CAF = breast",
-    "C": "CAV = SCLC",
-    "D": "BEP = germ cell",
-    "E": "VAD = myeloma"
+    "A": "CHOP ใช้ใน non-Hodgkin lymphoma",
+    "B": "✓ CAF เป็นสูตรของมะเร็งเต้านม",
+    "C": "CAV ใช้ใน small cell lung cancer",
+    "D": "BEP ใช้ในมะเร็งอัณฑะ/germ cell",
+    "E": "VAD ใช้ใน multiple myeloma"
    },
-   "key_concept": "• Breast: CAF/AC\n• Germ cell: BEP"
+   "key_concept": "• breast: CAF, CMF, AC-T · lymphoma: CHOP/ABVD · testis: BEP\n• doxorubicin (A) ระวังพิษต่อหัวใจ"
   },
   "37": {
    "explanation": "NADPH oxidase defect → Chronic granulomatous disease",
@@ -336,15 +426,15 @@
    "key_concept": "• CGD: NBT/DHR test\n• Catalase + organisms"
   },
   "38": {
-   "explanation": "Multiple osteolytic ใน 60 ปี ไม่มี mass → ต้นฉบับ prostate adenoca (osteoblastic ปกติ) · AI: myeloma/breast",
+   "explanation": "เฉลยต้นฉบับ: รอยโรคกระดูกสันหลังหลายตำแหน่ง = prostate adenocarcinoma (ข้อมูลโจทย์ที่จดมาน่าจะคลาดเคลื่อนเรื่องเพศและชนิดรอยโรค)",
    "option_why": {
-    "A": "Melanoma",
-    "B": "Colon ca",
-    "C": "✓ Prostate adenocarcinoma (ตามเฉลย)",
-    "D": "Urothelial",
-    "E": "Esophageal SCC"
+    "A": "melanoma กระจายไปกระดูกได้แต่ไม่ใช่อันดับต้น",
+    "B": "colon adenocarcinoma มักกระจายไปตับก่อน",
+    "C": "✓ ตามเฉลยต้นฉบับ: มะเร็งต่อมลูกหมากกระจายมากระดูกสันหลังบ่อย (AI: ปกติเป็น osteoblastic และพบในเพศชาย)",
+    "D": "urothelial carcinoma กระจายไปกระดูกได้น้อยกว่า",
+    "E": "squamous cell carcinoma ของหลอดอาหารมักลามเฉพาะที่"
    },
-   "key_concept": "• Prostate: osteoblastic\n• Osteolytic: myeloma, breast, lung, kidney"
+   "key_concept": "• มะเร็งที่ชอบไปกระดูก: prostate (blastic), breast (mixed), lung, kidney, thyroid (lytic)\n• กระจายสู่กระดูกสันหลังผ่าน Batson venous plexus"
   },
   "39": {
    "explanation": "Lung mass + hypercalcemia → squamous cell carcinoma (PTHrP)",
@@ -400,15 +490,15 @@
    "key_concept": "• Tumor evasion: FasL, PD-L1, TGF-β\n• T cell checkpoints: PD-1, CTLA-4"
   },
   "44": {
-   "explanation": "Modified T cell (CAR-T) ไม่ต้องพึ่ง MHC I",
+   "explanation": "เซลล์มะเร็งลด MHC class I เฉลยต้นฉบับเลือก modified T-cell (CAR-T) ซึ่งจับ antigen ผิวเซลล์โดยไม่ต้องใช้ MHC",
    "option_why": {
-    "A": "✓ CAR T-cell",
-    "B": "DC ไม่ฆ่า",
-    "C": "CTL ต้อง MHC I",
-    "D": "NK ฆ่าเมื่อ MHC I ต่ำ (ก็ถูก)",
-    "E": "Macrophage ไม่เฉพาะ"
+    "A": "✓ CAR ใช้ส่วน antibody จับ antigen โดยตรง ไม่ขึ้นกับ MHC",
+    "B": "dendritic cell นำเสนอ antigen ไม่ได้ฆ่าเซลล์มะเร็งเอง",
+    "C": "cytotoxic T cell ต้องอาศัย MHC class I จึงฆ่าไม่ได้",
+    "D": "NK cell ฆ่าเซลล์ที่ไม่มี MHC I ตามหลัก missing self (AI เห็นว่าตรงที่สุด) แต่คงตามต้นฉบับ",
+    "E": "activated macrophage ไม่ได้อาศัยการขาด MHC I"
    },
-   "key_concept": "• CAR-T: antigen binding อิสระจาก MHC\n• NK: missing self"
+   "key_concept": "• NK: MHC I ยับยั้ง → ไม่มี MHC I จึงถูกฆ่า\n• CAR-T: จดจำ antigen ผิวเซลล์เช่น CD19 แบบ MHC-independent"
   },
   "46": {
    "explanation": "แม่ Rh− unsensitized: RhIg ที่ 28 สัปดาห์ (และหลังคลอด) · ต้นฉบับแม่ Rh+ ลูก Rh−",
@@ -442,36 +532,63 @@
    "key_concept": "• Hb Malay: β-globin CD19 AAC→AGC ทำ cryptic splice\n• Hb Tak: frame-shift βtak\n• HbE: cryptic splice site (β26) ด้วย"
   },
   "50": {
-   "explanation": "เลือดออก: red cell volume (Hct) ลดลง",
+   "explanation": "เมื่อเสียเลือด ผลโดยตรงคือปริมาตรเม็ดเลือดแดงลดลง ค่าดัชนีเม็ดเลือดยังไม่เปลี่ยน",
    "option_why": {
-    "A": "MCH ปกติ",
-    "B": "MCHC ปกติ",
-    "C": "RDW อาจ ↑",
-    "D": "Reticulocyte ↑ ภายหลัง",
-    "E": "✓ Red blood cell volume/Hct ↓"
+    "A": "MCH ไม่เพิ่มจากการเสียเลือด",
+    "B": "MCHC ไม่เพิ่มจากการเสียเลือด",
+    "C": "RDW ไม่ลดลง (อาจเพิ่มภายหลังเมื่อ reticulocyte ออกมา)",
+    "D": "reticulocyte จะเพิ่มขึ้นในวันต่อมา ไม่ใช่ต่ำเป็นการตอบสนอง",
+    "E": "✓ เสีย RBC ออกจากระบบไหลเวียนโดยตรง"
    },
-   "key_concept": "• Acute bleeding: Hb ↓ normocytic\n• Retic ↑ หลัง 3–5 วัน"
+   "key_concept": "• เสียเลือดเฉียบพลัน = normocytic normochromic\n• ร่างกายชดเชย: tachycardia, vasoconstriction, ดึงน้ำเข้าหลอดเลือด, EPO เพิ่ม",
+   "mechanism": [
+    "เลือดออก",
+    "เสีย RBC พร้อม plasma",
+    {
+     "s": "red blood cell volume ลดลง",
+     "answer": true
+    },
+    "EPO กระตุ้น reticulocyte ตามมา"
+   ]
   },
   "51": {
-   "explanation": "Target cell จาก LCAT deficiency (cholesterol/membrane ผิดปกติ) AI draft",
+   "explanation": "เซลล์ในภาพ (target cell/acanthocyte จากไขมันเยื่อหุ้มเกิน) พบในภาวะขาด LCAT",
    "option_why": {
-    "A": "HMG-CoA reductase ไม่เกี่ยว",
-    "B": "✓ LCAT deficiency → target cell",
-    "C": "Cholesterol ester ไม่ใช่เอนไซม์",
-    "D": "ACAT ไม่",
-    "E": "LPL ไม่"
+    "A": "HMG-CoA reductase เป็นเอนไซม์สร้าง cholesterol เป้าหมายของ statin",
+    "B": "✓ LCAT ขาด cholesterol อิสระสะสมบนเยื่อหุ้ม RBC ทำให้พื้นที่ผิวเกิน",
+    "C": "cholesterol ester ไม่ใช่เอนไซม์",
+    "D": "ACAT ทำ esterify cholesterol ในเซลล์ ไม่เกี่ยวกับเยื่อหุ้ม RBC",
+    "E": "lipoprotein lipase ขาดทำ chylomicron สูง ไม่เปลี่ยนรูปร่าง RBC แบบนี้"
    },
-   "key_concept": "• LCAT deficiency: target cell, corneal opacity\n• Abetalipoproteinemia: acanthocyte"
+   "key_concept": "• target cell: โรคตับ, thalassemia, HbC, asplenia, LCAT deficiency\n• LCAT esterify cholesterol บน HDL",
+   "mechanism": [
+    "LCAT ขาด",
+    "free cholesterol ในพลาสมาสูง",
+    {
+     "s": "cholesterol แทรกเยื่อหุ้ม RBC พื้นที่ผิวเพิ่ม",
+     "answer": true
+    },
+    "เห็นเป็น target cell"
+   ]
   },
   "52": {
-   "explanation": "Le + Se → Le(a−b+)",
+   "explanation": "มียีน Le และ Se: สร้าง Lea แล้วถูกเปลี่ยนเป็น Leb เกือบหมด → Le(a−b+)",
    "option_why": {
-    "A": "Le(a+b−) = nonsecretor",
-    "B": "✓ Le(a−b+)",
-    "C": "Le(a−b−) = lele",
-    "D": "Le(a+b+) ไม่พบ"
+    "A": "Le(a+b−) พบเมื่อมี Le แต่เป็น non-secretor (se/se)",
+    "B": "✓ secretor เปลี่ยน Lea เป็น Leb",
+    "C": "Le(a−b−) พบเมื่อไม่มียีน Le (le/le)",
+    "D": "Le(a+b+) พบน้อย ในทารกหรือ secretor ชนิดอ่อน"
    },
-   "key_concept": "• Le+Se → Leb\n• Le+sese → Lea"
+   "key_concept": "• Lewis antigen สร้างในสารคัดหลั่งแล้วดูดซับบน RBC\n• Le + Se → Leb · Le + se/se → Lea · le/le → ไม่มี",
+   "mechanism": [
+    "ยีน Le สร้าง fucosyltransferase ได้ Lea",
+    "ยีน Se สร้าง H type 1 ในสารคัดหลั่ง",
+    {
+     "s": "Le เติม fucose บน H type 1 ได้ Leb",
+     "answer": true
+    },
+    "phenotype Le(a−b+)"
+   ]
   },
   "53": {
    "explanation": "P. falciparum และ P. vivax ต่างพบ multiple/double infection (ต้นฉบับ A)",
@@ -484,14 +601,14 @@
    "key_concept": "• Multiple ring: falciparum เด่น\n• Schüffner: vivax"
   },
   "54": {
-   "explanation": "Distant metastasis เป็นปัจจัยพยากรณ์ที่แย่ที่สุด",
+   "explanation": "ปัจจัยพยากรณ์โรคที่แย่ที่สุดคือการแพร่กระจายไปอวัยวะไกล (distant metastasis)",
    "option_why": {
-    "A": "Tumor size",
-    "B": "Node involvement",
-    "C": "Differentiation",
-    "D": "✓ Distant metastasis (M1 = stage IV)"
+    "A": "ขนาดก้อน (T) มีผลน้อยกว่า M",
+    "B": "lymph node (N) แย่กว่า T แต่ยังน้อยกว่า M",
+    "C": "differentiation (grade) พยากรณ์ได้น้อยกว่า stage",
+    "D": "✓ M1 = stage IV พยากรณ์โรคแย่ที่สุด"
    },
-   "key_concept": "• TNM: M1 prognosis แย่สุด\n• Stage IV"
+   "key_concept": "• พยากรณ์โรค: stage สำคัญกว่า grade\n• TNM: M > N > T"
   },
   "55": {
    "explanation": "aPTT ยาว PT ปกติ + bleeding ในครอบครัว + menorrhagia → von Willebrand disease",
@@ -516,15 +633,15 @@
    "key_concept": "• แรกเกิด: HbF 60–80%\n• HbA เพิ่มตามอายุ"
   },
   "57": {
-   "explanation": "β-thal trait: HbA2 (α2δ2) ↑",
+   "explanation": "β-thalassemia trait มี HbA2 (α2δ2) เพิ่มขึ้น",
    "option_why": {
-    "A": "γ4 = Bart",
-    "B": "β4 = HbH",
-    "C": "α2β2 = HbA",
-    "D": "✓ α2δ2 = HbA2 ↑",
-    "E": "α2γ2 = HbF"
+    "A": "γ4 คือ Hb Bart's ของ α-thalassemia",
+    "B": "β4 คือ HbH ของ α-thalassemia",
+    "C": "α2β2 คือ HbA ซึ่งลดลง",
+    "D": "✓ δ chain จับ α แทน β ที่สร้างน้อย HbA2 >3.5%",
+    "E": "α2γ2 คือ HbF เพิ่มได้เล็กน้อย ไม่ใช่ตัววินิจฉัย"
    },
-   "key_concept": "• β-thal trait: HbA2 >3.5%\n• HbF อาจ ↑ เล็กน้อย"
+   "key_concept": "• β-thal trait: MCV ต่ำ + HbA2 >3.5%\n• HbE trait: DCIP บวก, E 25–30%"
   },
   "60": {
    "explanation": "DIC + d-dimer → fibrinogen level, PT/aPTT, platelet สนับสนุน",
