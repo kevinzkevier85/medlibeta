@@ -32,7 +32,7 @@
    },
    "answer": "A",
    "answer_status": "verified",
-   "explanation": "ยานอนหลับที่ดีควรทำให้เริ่มหลับเร็ว (short sleep onset) โดยไม่รบกวนระยะการนอนปกติ",
+   "explanation": "ยานอนหลับในอุดมคติทำให้หลับเร็ว (short sleep onset) โดยไม่รบกวนโครงสร้างการนอน",
    "refs": [
     {
      "paper": "MCQ48",
@@ -50,12 +50,12 @@
    "tags": [],
    "source": "import",
    "audit_ref": "hb_48_MCQ_005",
-   "key_concept": "• Ideal hypnotic: short onset, preserve REM\n• สรุป: ยานอนหลับที่ดีควรทำให้เริ่มหลับเร็ว (short sleep onset) โดยไม่รบกวนระยะการนอนปกติ",
+   "key_concept": "• hypnotic ที่ดี: onset เร็ว, ไม่ hangover, ไม่ติด\n• BZD กด REM และ SWS",
    "option_why": {
-    "A": "✓ ลดเวลานำสู่การหลับ",
-    "B": "ไม่ควรเพิ่ม NREM มากผิดปกติ",
-    "C": "ไม่ควรกด REM",
-    "D": "ไม่ใช่เป้าหมายหลัก"
+    "A": "✓ ลดเวลาเข้านอนให้สั้นลงคือเป้าหมายหลักของ hypnotic",
+    "B": "เพิ่ม NREM ไม่ใช่เป้าหมาย และ BZD ทำให้ SWS ลดลง",
+    "C": "การกด REM เป็นผลเสียของยา ไม่ใช่คุณสมบัติที่ดี",
+    "D": "เพิ่มเวลานอนมากเกินทำให้ง่วงวันถัดไป (hangover)"
    }
   },
   {
@@ -72,7 +72,7 @@
    },
    "answer": "A",
    "answer_status": "verified",
-   "explanation": "Benzodiazepine จับ GABA-A receptor เพิ่มความถี่การเปิด Cl- channel",
+   "explanation": "BZD ออกฤทธิ์ที่ GABA-A receptor",
    "refs": [
     {
      "paper": "MCQ48",
@@ -90,11 +90,20 @@
    "tags": [],
    "source": "import",
    "audit_ref": "hb_48_MCQ_008",
-   "key_concept": "• BZD → GABA-A\n• สรุป: Benzodiazepine จับ GABA-A receptor เพิ่มความถี่การเปิด Cl- channel",
+   "key_concept": "• BZD เพิ่มความถี่เปิด Cl- channel\n• barbiturate เพิ่มระยะเวลาเปิด",
+   "mechanism": [
+    "BZD จับ GABA-A",
+    "เพิ่มความถี่การเปิด Cl- channel",
+    {
+     "s": "Cl- เข้า neuron มากขึ้น",
+     "answer": true
+    },
+    "hyperpolarize ลด excitability"
+   ],
    "option_why": {
-    "A": "✓ GABA-A คือ target หลัก",
-    "B": "GABA-B เป็น target ของ baclofen",
-    "C": "Nicotinic ไม่ใช่"
+    "A": "✓ จับ BZD site ที่ GABA-A เพิ่มความถี่เปิด Cl- channel",
+    "B": "GABA-B เป็นเป้าหมายของ baclofen ไม่ใช่ BZD",
+    "C": "nicotinic เป็นเป้าหมายของ ACh/NMB"
    }
   },
   {
@@ -113,7 +122,7 @@
    },
    "answer": "E",
    "answer_status": "verified",
-   "explanation": "Methylphenidate ยับยั้ง NE/DA transporter ทำให้ NT ใน synapse เพิ่ม",
+   "explanation": "Methylphenidate ยับยั้ง NE/DA reuptake transporter",
    "refs": [
     {
      "paper": "MCQ48",
@@ -131,13 +140,22 @@
    "tags": [],
    "source": "import",
    "audit_ref": "hb_48_MCQ_009",
-   "key_concept": "• Methylphenidate: DAT/NET inhibitor\n• สรุป: Methylphenidate ยับยั้ง NE/DA transporter ทำให้ NT ใน synapse เพิ่ม",
+   "key_concept": "• ADHD: methylphenidate, amphetamine\n• atomoxetine ยับยั้ง NET",
+   "mechanism": [
+    "ยาจับ DAT/NET",
+    "ยับยั้ง reuptake",
+    {
+     "s": "NE/DA ค้างใน synapse",
+     "answer": true
+    },
+    "สมาธิดีขึ้น"
+   ],
    "option_why": {
-    "A": "α2 ไม่ใช่ target โดยตรง",
-    "B": "Efflux transporter ไม่ใช่",
-    "C": "ไม่ใช่ receptor agonist",
-    "D": "Vesicle transporter คือ reserpine",
-    "E": "✓ ยับยั้ง NE/DA reuptake transporter"
+    "A": "α2 เป็นเป้าหมายของ clonidine/guanfacine",
+    "B": "efflux transporter ไม่ใช่เป้าหมายของยา",
+    "C": "methylphenidate ไม่ใช่ DA receptor agonist",
+    "D": "vesicle transporter เป็นเป้าของ reserpine",
+    "E": "✓ ปิด NET/DAT เพิ่ม NE/DA ใน synapse"
    }
   },
   {
@@ -156,7 +174,7 @@
    },
    "answer": "C",
    "answer_status": "verified",
-   "explanation": "ชักเกร็งทั้งตัวเกิดจาก Ca2+ influx ทำให้เซลล์กระตุ้นมาก",
+   "explanation": "ชักเกร็ง: Ca2+ influx เพิ่มการปล่อย glutamate และการกระตุ้นมากเกิน",
    "refs": [
     {
      "paper": "MCQ48",
@@ -174,13 +192,22 @@
    "tags": [],
    "source": "import",
    "audit_ref": "hb_48_MCQ_012",
-   "key_concept": "• Seizure: excess Na+/Ca2+ influx\n• สรุป: ชักเกร็งทั้งตัวเกิดจาก Ca2+ influx ทำให้เซลล์กระตุ้นมาก",
+   "key_concept": "• seizure: excitation > inhibition\n• ยากันชักปิด Na/Ca channel หรือเพิ่ม GABA",
+   "mechanism": [
+    "neuron depolarize ซ้ำ",
+    "Ca2+ เข้ามาก",
+    {
+     "s": "glutamate ถูกปล่อยมากกระตุ้น neuron ข้างเคียง",
+     "answer": true
+    },
+    "ชักทั้งตัว"
+   ],
    "option_why": {
-    "A": "Na efflux ไม่ใช่",
-    "B": "K influx hyperpolarize",
-    "C": "✓ Ca2+ influx",
-    "D": "Mg efflux ไม่ใช่",
-    "E": "Cl efflux ไม่ใช่"
+    "A": "Na+ efflux ไม่ทำให้เซลล์กระตุ้น",
+    "B": "K+ influx ทำให้ hyperpolarize",
+    "C": "✓ Ca2+ เข้าเพิ่ม excitatory release และ burst firing",
+    "D": "Mg2+ efflux ทำให้ NMDA ปลดบล็อกแต่ไม่ใช่ข้อหลัก",
+    "E": "Cl- efflux ทำให้ depolarize แต่ไม่ใช่กลไกหลัก"
    }
   },
   {
@@ -199,7 +226,7 @@
    },
    "answer": "D",
    "answer_status": "verified",
-   "explanation": "ไข้ ซึม Brudzinski sign บวก สงสัยเยื่อหุ้มสมองอักเสบ ต้องทำ lumbar puncture",
+   "explanation": "ไข้ ซึม Brudzinski บวก สงสัย meningitis ต้องเจาะ lumbar puncture",
    "refs": [
     {
      "paper": "MCQ48",
@@ -217,13 +244,22 @@
    "tags": [],
    "source": "import",
    "audit_ref": "hb_48_MCQ_013",
-   "key_concept": "• Meningeal signs → LP\n• สรุป: ไข้ ซึม Brudzinski sign บวก สงสัยเยื่อหุ้มสมองอักเสบ ต้องทำ lumbar puncture",
+   "key_concept": "• meningitis: ไข้ คอแข็ง Brudzinski/Kernig\n• LP ถ้าไม่มี signs of ↑ICP\n• ให้ antibiotic ทันที",
+   "mechanism": [
+    "เชื้อเข้าเยื่อหุ้มสมอง",
+    "การอักเสบทำให้ meningeal irritation",
+    {
+     "s": "Brudzinski บวก ต้องเจาะ CSF ยืนยัน",
+     "answer": true
+    },
+    "เริ่มรักษาตามเชื้อ"
+   ],
    "option_why": {
-    "A": "CT ใช้ก่อน LP เมื่อมี mass effect",
-    "B": "UA ไม่ใช่",
-    "C": "Film abdomen ไม่ใช่",
-    "D": "✓ LP วินิจฉัย meningitis",
-    "E": "EEG ไม่ใช่"
+    "A": "CT ใช้เมื่อสงสัย mass/ICP สูงก่อนเจาะ ไม่ใช่การวินิจฉัย meningitis",
+    "B": "UA ใช้หา UTI",
+    "C": "film abdomen ไม่เกี่ยวกับอาการ",
+    "D": "✓ CSF analysis ยืนยัน meningitis และหาเชื้อ",
+    "E": "EEG ใช้ในโรคชัก"
    }
   },
   {
@@ -242,7 +278,7 @@
    },
    "answer": "D",
    "answer_status": "verified",
-   "explanation": "Staring spell + automatism (chewing, blink) คือ focal seizure with impaired awareness",
+   "explanation": "จ้องนิ่ง เคี้ยว กระพริบ มือเคลื่อนไหวไร้จุดหมาย = focal impaired awareness seizure",
    "refs": [
     {
      "paper": "MCQ48",
@@ -260,13 +296,13 @@
    "tags": [],
    "source": "import",
    "audit_ref": "hb_48_MCQ_014",
-   "key_concept": "• Focal impaired awareness: staring, automatism\n• สรุป: Staring spell + automatism (chewing, blink) คือ focal seizure with impaired awareness",
+   "key_concept": "• focal impaired awareness: staring + automatism (lip smacking, chewing)\n• มักมาจาก temporal lobe\n• absence 3-Hz ไม่มี automatism ซับซ้อน",
    "option_why": {
-    "A": "Absence ไม่มี automatism ซับซ้อนและสั้นกว่า",
-    "B": "Focal motor ไม่เสียความรู้สึกตัว",
-    "C": "Generalized ไม่ใช่",
-    "D": "✓ Focal impaired awareness",
-    "E": "Atonic ไม่ใช่"
+    "A": "absence ไม่มี automatism ซับซ้อนและสั้นกว่า",
+    "B": "focal motor ยังรู้ตัว",
+    "C": "generalized ไม่ได้เริ่มจากจุดเดียว",
+    "D": "✓ automatism + สูญเสียการรู้ตัว = focal impaired awareness",
+    "E": "atonic คือล้มลงอ่อนปวกเปียก"
    }
   },
   {
@@ -285,7 +321,7 @@
    },
    "answer": "A",
    "answer_status": "verified",
-   "explanation": "เด็กมีไข้ติดเชื้อทางเดินหายใจแล้วชักเดียว ตื่นแล้วปกติ น่าจะเป็น febrile seizure ตัวเลือกใกล้เคียงคือติดเชื้อไวรัส",
+   "explanation": "ชักตอนไข้ใน 1 ปี รู้ตัวเร็ว ไม่มีโรคประจำตัว = febrile seizure (ตามเฉลยเลือกข้อแรก)",
    "refs": [
     {
      "paper": "MCQ48",
@@ -303,13 +339,13 @@
    "tags": [],
    "source": "import",
    "audit_ref": "hb_48_MCQ_016",
-   "key_concept": "• Febrile seizure: age 6 mo–5 y, simple\n• สรุป: เด็กมีไข้ติดเชื้อทางเดินหายใจแล้วชักเดียว ตื่นแล้วปกติ น่าจะเป็น febrile seizure ตัวเลือกใ",
+   "key_concept": "• simple febrile seizure: 6 เดือน–5 ปี, <15 นาที, ทั่วทั้งตัว, ครั้งเดียวใน 24 ชม.\n• ไม่ต้อง LP ถ้ารู้ตัวดีและมีแหล่งไข้ชัด",
    "option_why": {
-    "A": "✓ ตัวเลือกใกล้เคียงสุดกับ febrile illness",
-    "B": "Absence ไม่ใช่ tonic-clonic",
-    "C": "Generalized epilepsy ต้องชักซ้ำไม่มีไข้",
-    "D": "ไม่ใช่คำตอบที่ถูกต้องของโจทย์ข้อนี้",
-    "E": "ไม่ใช่คำตอบที่ถูกต้องของโจทย์ข้อนี้"
+    "A": "✓ ตามเฉลยต้นฉบับ (AI: ภาพนี้เข้ากับ febrile seizure มากกว่า)",
+    "B": "absence ไม่ใช่ชักเกร็งทั้งตัว",
+    "C": "generalized epilepsy ต้องชักซ้ำโดยไม่มีไข้",
+    "D": "focal motor ไม่ใช่ชักทั้งตัว",
+    "E": "fever-provoked seizure ตรงกับภาพทางคลินิก (AI เสนอข้อนี้)"
    }
   },
   {
@@ -328,7 +364,7 @@
    },
    "answer": "A",
    "answer_status": "verified",
-   "explanation": "Perampanel เป็น AMPA receptor antagonist ใช้เป็นยากันชัก",
+   "explanation": "ยากันชักบางตัวบล็อก AMPA (glutamate) เช่น perampanel",
    "refs": [
     {
      "paper": "MCQ48",
@@ -346,13 +382,13 @@
    "tags": [],
    "source": "import",
    "audit_ref": "hb_48_MCQ_023",
-   "key_concept": "• AED targets: Na channel, GABA, glutamate (AMPA/NMDA)\n• สรุป: Perampanel เป็น AMPA receptor antagonist ใช้เป็นยากันชัก",
+   "key_concept": "• perampanel = AMPA antagonist\n• ยากันชักเป้า: Na/Ca channel, GABA, glutamate",
    "option_why": {
-    "A": "✓ Glutamate–AMPA receptor",
-    "B": "ACh–muscarinic ไม่ใช่เป้าหมาย",
-    "C": "Substance P ไม่ใช่ NMDA",
-    "D": "Dopamine ไม่ใช่",
-    "E": "GABA ไม่ใช่ NMDA"
+    "A": "✓ glutamate–AMPA receptor เป็นเป้าของ perampanel",
+    "B": "ACh–muscarinic ไม่ใช่เป้ายากันชัก",
+    "C": "substance P ไม่ได้จับ NMDA receptor",
+    "D": "dopamine receptor ไม่ใช่เป้ายากันชัก",
+    "E": "GABA ไม่ได้จับ NMDA receptor"
    }
   },
   {
@@ -371,7 +407,7 @@
    },
    "answer": "C",
    "answer_status": "verified",
-   "explanation": "Carbamazepine ยับยั้ง repetitive firing ของ action potential โดยบล็อก Na channel",
+   "explanation": "Carbamazepine ยับยั้ง repetitive firing ของ action potential โดยปิด Na channel ในสภาพ inactivated",
    "refs": [
     {
      "paper": "MCQ48",
@@ -389,13 +425,22 @@
    "tags": [],
    "source": "import",
    "audit_ref": "hb_48_MCQ_024",
-   "key_concept": "• Carbamazepine: Na channel blocker\n• สรุป: Carbamazepine ยับยั้ง repetitive firing ของ action potential โดยบล็อก Na channel",
+   "key_concept": "• carbamazepine, phenytoin, lamotrigine = Na channel blocker\n• use-dependent block",
+   "mechanism": [
+    "carbamazepine จับ Na channel inactivated",
+    "ขัดขวางการ recovery",
+    {
+     "s": "ลด repetitive firing",
+     "answer": true
+    },
+    "ยับยั้งการชัก"
+   ],
    "option_why": {
-    "A": "ไม่ได้เพิ่ม glutamate reuptake",
+    "A": "ไม่เพิ่ม glutamate reuptake",
     "B": "ไม่กระตุ้น glutamate",
-    "C": "✓ ยับยั้ง repetitive firing",
-    "D": "Vigabatrin ยับยั้ง GABA-T",
-    "E": "ไม่ได้กระตุ้น GABA-A"
+    "C": "✓ use-dependent Na channel block ลด repetitive firing",
+    "D": "ยับยั้ง GABA-T คือ vigabatrin",
+    "E": "เพิ่ม GABA-A คือ BZD/barbiturate"
    }
   },
   {
@@ -414,7 +459,7 @@
    },
    "answer": "B",
    "answer_status": "verified",
-   "explanation": "Rifampicin เป็น CYP inducer เร่งสลาย phenytoin ทำให้ระดับยาลดลง",
+   "explanation": "Rifampicin เหนี่ยวนำ CYP ทำให้ระดับ phenytoin ลดลง",
    "refs": [
     {
      "paper": "MCQ48",
@@ -432,13 +477,22 @@
    "tags": [],
    "source": "import",
    "audit_ref": "hb_48_MCQ_025",
-   "key_concept": "• Rifampicin induces CYP → ↓ levels\n• สรุป: Rifampicin เป็น CYP inducer เร่งสลาย phenytoin ทำให้ระดับยาลดลง",
+   "key_concept": "• rifampicin = potent CYP inducer\n• ระดับยาร่วมลด ต้องปรับขนาด",
+   "mechanism": [
+    "rifampicin เหนี่ยวนำ CYP2C9/3A4",
+    "phenytoin ถูกเมตาบอไลต์เร็ว",
+    {
+     "s": "ระดับในเลือดลดลง",
+     "answer": true
+    },
+    "เสี่ยงชักกำเริบ"
+   ],
    "option_why": {
-    "A": "มีผลต่อระดับ phenytoin",
-    "B": "✓ ระดับลดลง",
-    "C": "Inhibitor จึงจะ overdose",
-    "D": "ไม่เกี่ยวกับ TB",
-    "E": "มี interaction"
+    "A": "เกิด interaction แน่นอน",
+    "B": "✓ rifampicin เหนี่ยวนำเอนไซม์ตับเพิ่มการกำจัด phenytoin",
+    "C": "ระดับยาลดลง ไม่ใช่เพิ่ม",
+    "D": "ไม่เกี่ยวกับการรักษาวัณโรค",
+    "E": "ยาคู่นี้มี interaction ชัดเจน"
    }
   },
   {
@@ -457,7 +511,7 @@
    },
    "answer": "A",
    "answer_status": "verified",
-   "explanation": "อารมณ์ครึกครื้น ภูมิใจเกินจริง พูดเร็ว ความคิดแล่น คือ mania",
+   "explanation": "Expansive mood, inflated self-esteem, pressured speech, racing thoughts = mania",
    "refs": [
     {
      "paper": "MCQ48",
@@ -475,13 +529,13 @@
    "tags": [],
    "source": "import",
    "audit_ref": "hb_48_MCQ_028",
-   "key_concept": "• Mania symptoms\n• สรุป: อารมณ์ครึกครื้น ภูมิใจเกินจริง พูดเร็ว ความคิดแล่น คือ mania",
+   "key_concept": "• mania: ≥1 สัปดาห์, ↓sleep, pressured speech, grandiosity\n• lithium/valproate",
    "option_why": {
-    "A": "✓ Mania",
-    "B": "Anxiety กังวล",
-    "C": "Illusion",
-    "D": "Depression",
-    "E": "Hallucination"
+    "A": "✓ อาการครบกลุ่ม manic episode",
+    "B": "anxiety ไม่มี mood สูงและ grandiosity",
+    "C": "illusion คือบิดเบือนสิ่งเร้า",
+    "D": "depression เป็นอารมณ์ตรงข้าม",
+    "E": "hallucination ไม่ใช่อาการหลัก"
    }
   },
   {
@@ -499,7 +553,7 @@
    },
    "answer": "D",
    "answer_status": "verified",
-   "explanation": "ความกังวล หงุดหงิด นอนหลับยาก เกี่ยวข้องกับ GABA ที่ลดลง",
+   "explanation": "กังวล หงุดหงิด นอนยาก สัมพันธ์กับ GABA ที่ลดลง",
    "refs": [
     {
      "paper": "MCQ48",
@@ -517,12 +571,12 @@
    "tags": [],
    "source": "import",
    "audit_ref": "hb_48_MCQ_029",
-   "key_concept": "• Anxiety: ↓ GABA activity\n• สรุป: ความกังวล หงุดหงิด นอนหลับยาก เกี่ยวข้องกับ GABA ที่ลดลง",
+   "key_concept": "• anxiolytic (BZD) เพิ่ม GABA\n• anxiety: GABA ↓, NE/5-HT ผิดปกติ",
    "option_why": {
-    "A": "Glutamate excitatory",
-    "B": "Dopamine ไม่ใช่หลัก",
-    "C": "ACh ไม่ใช่",
-    "D": "✓ GABA inhibitory"
+    "A": "glutamate เป็น excitatory แต่ anxiolytic ไม่ได้ออกฤทธิ์ที่นี่",
+    "B": "dopamine ไม่ใช่สารหลักของ anxiety",
+    "C": "ACh ไม่ใช่สารหลัก",
+    "D": "✓ GABA ยับยั้ง จึงลดลง ทำให้ตื่นตัวและกังวล"
    }
   },
   {
@@ -541,7 +595,7 @@
    },
    "answer": "B",
    "answer_status": "verified",
-   "explanation": "เมื่อตื่นเต้น sympathetic ทำให้ม่านตาขยาย",
+   "explanation": "พูดต่อหน้าสาธารณะกระตุ้น sympathetic ทำให้รูม่านตาขยาย",
    "refs": [
     {
      "paper": "MCQ48",
@@ -559,13 +613,22 @@
    "tags": [],
    "source": "import",
    "audit_ref": "hb_48_MCQ_030",
-   "key_concept": "• Fight-or-flight: mydriasis, tachycardia\n• สรุป: เมื่อตื่นเต้น sympathetic ทำให้ม่านตาขยาย",
+   "key_concept": "• fight-or-flight: HR↑, pupil dilate, bronchodilate, dry mouth\n• โรคกลัวสังคมกระตุ้น sympathetic ได้ง่าย",
+   "mechanism": [
+    "ความกลัวพูดต่อหน้าคน",
+    "amygdala กระตุ้น sympathetic",
+    {
+     "s": "หลั่ง catecholamine",
+     "answer": true
+    },
+    "รูม่านตาขยาย ใจสั่น"
+   ],
    "option_why": {
-    "A": "หัวใจเต้นเร็ว",
-    "B": "✓ Pupil dilation",
-    "C": "น้ำลายลด",
+    "A": "sympathetic ทำให้หัวใจเต้นเร็ว ไม่ใช่ช้า",
+    "B": "✓ รูม่านตาขยายจาก sympathetic",
+    "C": "น้ำลายแห้งไม่ใช่มาก",
     "D": "กระเพาะปัสสาวะคลาย",
-    "E": "หลอดลมขยาย"
+    "E": "หลอดลมขยายไม่ใช่หดเกร็ง"
    }
   },
   {
@@ -584,7 +647,7 @@
    },
    "answer": "A",
    "answer_status": "verified",
-   "explanation": "การได้กลิ่นเหม็นโดยไม่มีสิ่งเร้า คือ olfactory hallucination",
+   "explanation": "ได้กลิ่นเหม็นโดยไม่มีกลิ่นจริง = olfactory hallucination",
    "refs": [
     {
      "paper": "MCQ48",
@@ -602,13 +665,13 @@
    "tags": [],
    "source": "import",
    "audit_ref": "hb_48_MCQ_031",
-   "key_concept": "• Olfactory hallucination: phantosmia\n• สรุป: การได้กลิ่นเหม็นโดยไม่มีสิ่งเร้า คือ olfactory hallucination",
+   "key_concept": "• พบใน temporal lobe epilepsy (uncinate fit)\n• hallucination ไม่มีสิ่งเร้าจริง",
    "option_why": {
-    "A": "✓ Olfactory",
-    "B": "Tactile สัมผัส",
-    "C": "Gustatory รส",
-    "D": "Visual",
-    "E": "Auditory"
+    "A": "✓ olfactory คือประสาทรับกลิ่น",
+    "B": "tactile คือสัมผัส",
+    "C": "gustatory คือรส",
+    "D": "visual คือการเห็น",
+    "E": "auditory คือเสียง"
    }
   },
   {
@@ -627,7 +690,7 @@
    },
    "answer": "C",
    "answer_status": "verified",
-   "explanation": "ความอยากสุรา (craving) กระตุ้น amygdala และ reward circuit",
+   "explanation": "Craving เมื่อเห็นสิ่งกระตุ้นเกี่ยวกับ amygdala (cue-induced)",
    "refs": [
     {
      "paper": "MCQ48",
@@ -645,13 +708,13 @@
    "tags": [],
    "source": "import",
    "audit_ref": "hb_48_MCQ_034",
-   "key_concept": "• Craving: amygdala, NAc, PFC\n• สรุป: ความอยากสุรา (craving) กระตุ้น amygdala และ reward circuit",
+   "key_concept": "• addiction circuit: VTA–NAc–amygdala–PFC\n• cue-induced craving ใช้ amygdala",
    "option_why": {
-    "A": "Pons ไม่ใช่",
-    "B": "Medulla ไม่ใช่",
-    "C": "✓ Amygdala",
-    "D": "Cerebellum ไม่ใช่",
-    "E": "Pituitary ไม่ใช่"
+    "A": "pons คุมการหายใจ/ หลับ",
+    "B": "medulla คุมสัญญาณชีพ",
+    "C": "✓ amygdala เชื่อมสิ่งกระตุ้นกับอารมณ์และ craving",
+    "D": "cerebellum คุมการทรงตัว",
+    "E": "pituitary เป็นต่อมไร้ท่อ"
    }
   },
   {
@@ -670,7 +733,7 @@
    },
    "answer": "D",
    "answer_status": "verified",
-   "explanation": "Unconscious คือส่วนที่ไม่สื่อสารกับ conscious โดยตรง",
+   "explanation": "Unconscious เป็นส่วนของจิตที่ไม่สื่อสารกับส่วนอื่นโดยตรง",
    "refs": [
     {
      "paper": "MCQ48",
@@ -688,13 +751,13 @@
    "tags": [],
    "source": "import",
    "audit_ref": "hb_48_MCQ_035",
-   "key_concept": "• Unconscious inaccessible\n• สรุป: Unconscious คือส่วนที่ไม่สื่อสารกับ conscious โดยตรง",
+   "key_concept": "• Freud topographic: conscious, preconscious, unconscious\n• unconscious เปิดเผยผ่านความฝัน/free association",
    "option_why": {
-    "A": "Id เป็น structural model",
-    "B": "Ego",
-    "C": "Conscious",
-    "D": "✓ Unconscious",
-    "E": "Preconscious"
+    "A": "id อยู่ใน unconscious แต่เป็นโครงสร้าง ไม่ใช่ระดับ",
+    "B": "ego อยู่ทั้งสามระดับ",
+    "C": "conscious สื่อสารกับภายนอกได้",
+    "D": "✓ unconscious เข้าถึงโดยตรงไม่ได้",
+    "E": "preconscious เรียกคืนได้"
    }
   },
   {
@@ -731,13 +794,13 @@
    "tags": [],
    "source": "import",
    "audit_ref": "hb_48_MCQ_038",
-   "key_concept": "• Mature: sublimation, altruism, humor\n• สรุป: Sublimation เป็น mature defense mechanism",
+   "key_concept": "• mature: sublimation, humor, altruism, suppression\n• immature: splitting, projection, acting out",
    "option_why": {
-    "A": "Splitting เป็น immature",
-    "B": "✓ Sublimation mature",
-    "C": "Sexualization immature",
-    "D": "Somatization immature",
-    "E": "Schizoid fantasy immature"
+    "A": "splitting เป็น immature/borderline",
+    "B": "✓ sublimation เปลี่ยนแรงขับเป็นกิจกรรมที่สังคมยอมรับ",
+    "C": "sexualization เป็น immature",
+    "D": "somatization เป็น immature",
+    "E": "schizoid fantasy เป็น immature"
    }
   },
   {
@@ -756,7 +819,7 @@
    },
    "answer": "E",
    "answer_status": "verified",
-   "explanation": "กระดูกหักที่ proximal humerus (surgical neck) เสี่ยง posterior circumflex humeral artery",
+   "explanation": "Humerus proximal หัก เสี่ยง posterior circumflex humeral artery",
    "refs": [
     {
      "paper": "MCQ48",
@@ -768,13 +831,13 @@
    "tags": [],
    "source": "import",
    "audit_ref": "hb_48_MCQ_045",
-   "key_concept": "• Surgical neck: axillary n. + posterior circumflex humeral a.\n• สรุป: กระดูกหักที่ proximal humerus (surgical neck) เสี่ยง posterior circumflex humeral artery",
+   "key_concept": "• surgical neck: axillary n. + PCHA\n• shaft: radial n. + profunda",
    "option_why": {
-    "A": "Ulnar อยู่ปลายแขน",
-    "B": "Radial อยู่ปลายแขน",
-    "C": "Axillary ต้นกำเนิดของ circumflex",
-    "D": "Profunda brachii อยู่ shaft",
-    "E": "✓ ตัวเลือก circumflex humeral"
+    "A": "ulnar อยู่ปลายแขน",
+    "B": "radial อยู่ปลายแขน",
+    "C": "axillary เป็นต้นทางใหญ่ ไม่ใช่กิ่งใกล้คอกระดูก",
+    "D": "profunda brachii ตามร่อง radial",
+    "E": "✓ circumflex humeral อยู่ surgical neck"
    }
   },
   {
@@ -793,7 +856,7 @@
    },
    "answer": "A",
    "answer_status": "verified",
-   "explanation": "Ulnar nerve ผ่านเหนือ flexor retinaculum (Guyon canal) ไม่ผ่าน carpal tunnel",
+   "explanation": "Ulnar nerve ผ่านด้านหน้า flexor retinaculum ใน Guyon canal ไม่ผ่านใต้",
    "refs": [
     {
      "paper": "MCQ48",
@@ -805,13 +868,13 @@
    "tags": [],
    "source": "import",
    "audit_ref": "hb_48_MCQ_049",
-   "key_concept": "• Carpal tunnel: median, 4 FDS, 4 FDP, FPL\n• สรุป: Ulnar nerve ผ่านเหนือ flexor retinaculum (Guyon canal) ไม่ผ่าน carpal tunnel",
+   "key_concept": "• carpal tunnel: median n. + 9 tendons (FDS 4, FDP 4, FPL)\n• ulnar n. + a. ผ่าน Guyon canal",
    "option_why": {
-    "A": "✓ Ulnar อยู่นอก tunnel",
-    "B": "Median ผ่าน tunnel",
-    "C": "FPL ผ่าน tunnel",
-    "D": "FDP ผ่าน tunnel",
-    "E": "FDS ผ่าน tunnel"
+    "A": "✓ ulnar ผ่าน Guyon canal ตื้นต่อ retinaculum",
+    "B": "median ผ่านใต้ retinaculum ใน carpal tunnel",
+    "C": "FPL ผ่าน carpal tunnel",
+    "D": "FDP ผ่าน carpal tunnel",
+    "E": "FDS ผ่าน carpal tunnel"
    }
   },
   {
@@ -830,7 +893,7 @@
    },
    "answer": "A",
    "answer_status": "verified",
-   "explanation": "ชาและอ่อนแรงที่นิ้วก้อย คือ ulnar nerve",
+   "explanation": "สูญเสียประสานงานนิ้วก้อย + ชา = ulnar nerve",
    "refs": [
     {
      "paper": "MCQ48",
@@ -842,13 +905,13 @@
    "tags": [],
    "source": "import",
    "audit_ref": "hb_48_MCQ_050",
-   "key_concept": "• Ulnar: little finger sensory + hypothenar\n• สรุป: ชาและอ่อนแรงที่นิ้วก้อย คือ ulnar nerve",
+   "key_concept": "• ulnar: claw hand, ชานิ้วก้อย\n• median: ape hand",
    "option_why": {
-    "A": "✓ Ulnar",
-    "B": "Radial",
-    "C": "Axillary",
-    "D": "Median",
-    "E": "Musculocutaneous"
+    "A": "✓ ulnar ส่งนิ้วก้อยและ intrinsic ของมือ",
+    "B": "radial ส่ง extensor",
+    "C": "axillary ส่ง deltoid",
+    "D": "median ส่งนิ้วโป้ง–กลางและ thenar ไม่ใช่นิ้วก้อย",
+    "E": "MC ส่ง biceps"
    }
   },
   {
@@ -864,7 +927,7 @@
    },
    "answer": "A",
    "answer_status": "verified",
-   "explanation": "Aripiprazole เป็น atypical antipsychotic (partial D2 agonist)",
+   "explanation": "Aripiprazole เป็น atypical antipsychotic",
    "refs": [
     {
      "paper": "MCQ48",
@@ -882,10 +945,10 @@
    "tags": [],
    "source": "import",
    "audit_ref": "hb_48_MCQ_054",
-   "key_concept": "• Atypical: 5-HT2A + D2\n• สรุป: Aripiprazole เป็น atypical antipsychotic (partial D2 agonist)",
+   "key_concept": "• atypical: risperidone, olanzapine, clozapine, aripiprazole\n• typical: haloperidol, chlorpromazine",
    "option_why": {
-    "A": "✓ Aripiprazole",
-    "B": "Haloperidol เป็น typical"
+    "A": "✓ aripiprazole เป็น D2 partial agonist + 5-HT2A antagonist",
+    "B": "haloperidol เป็น typical antipsychotic"
    }
   },
   {
@@ -904,7 +967,7 @@
    },
    "answer": "C",
    "answer_status": "verified",
-   "explanation": "CYP2D6 polymorphism ทำให้ระดับ neuroleptic แตกต่างกัน",
+   "explanation": "CYP2D6 polymorphism ทำให้ระดับ antipsychotic ต่างกัน ต้องปรับขนาด",
    "refs": [
     {
      "paper": "MCQ48",
@@ -922,13 +985,13 @@
    "tags": [],
    "source": "import",
    "audit_ref": "hb_48_MCQ_058",
-   "key_concept": "• Pharmacogenetics: CYP2D6\n• สรุป: CYP2D6 polymorphism ทำให้ระดับ neuroleptic แตกต่างกัน",
+   "key_concept": "• poor metabolizer: ระดับยาสูง ADR มาก\n• ultrarapid: ไม่ได้ผล",
    "option_why": {
-    "A": "Malnutrition ไม่ใช่หลัก",
-    "B": "Smoking ส่งผล CYP1A2",
-    "C": "✓ CYP2D6 polymorphism",
-    "D": "Aspirin ไม่ใช่",
-    "E": "ประวัติครอบครัวเบาหวานไม่ใช่"
+    "A": "malnutrition ไม่ใช่ปัจจัยหลัก",
+    "B": "สูบบุหรี่กระทบ CYP1A2 (olanzapine/clozapine) ไม่ใช่ข้อที่เฉลยเลือก",
+    "C": "✓ CYP2D6 เมตาบอไลต์ยากลุ่มนี้หลายตัว (risperidone, haloperidol)",
+    "D": "aspirin ไม่มีผลต่อเมตาบอลิซึมของยากลุ่มนี้",
+    "E": "family history ไม่เกี่ยวกับขนาดยา"
    }
   },
   {
@@ -945,7 +1008,7 @@
    },
    "answer": "C",
    "answer_status": "verified",
-   "explanation": "Fluoxetine เป็น SSRI ที่ออกฤทธิ์ทางคลินิกหลัง ~2 สัปดาห์",
+   "explanation": "Fluoxetine ออกฤทธิ์ต้านซึมเศร้าเต็มที่ใช้เวลาประมาณ 2 สัปดาห์",
    "refs": [
     {
      "paper": "MCQ48",
@@ -963,11 +1026,11 @@
    "tags": [],
    "source": "import",
    "audit_ref": "hb_48_MCQ_059",
-   "key_concept": "• SSRI: delayed onset 2–4 weeks\n• สรุป: Fluoxetine เป็น SSRI ที่ออกฤทธิ์ทางคลินิกหลัง ~2 สัปดาห์",
+   "key_concept": "• SSRI ยับยั้ง SERT\n• ฤทธิ์เต็มใช้เวลา 2–6 สัปดาห์ (down-regulate 5-HT1A)",
    "option_why": {
-    "A": "Fluoxetine ยับยั้ง serotonin",
-    "B": "ไม่ใช่ tricyclic",
-    "C": "✓ Onset ~2 สัปดาห์"
+    "A": "ไม่ได้ยับยั้ง dopamine หลัก",
+    "B": "fluoxetine เป็น SSRI ไม่ใช่ tricyclic",
+    "C": "✓ onset ของ antidepressant ประมาณ 2–4 สัปดาห์"
    }
   },
   {
@@ -1004,13 +1067,22 @@
    "tags": [],
    "source": "import",
    "audit_ref": "hb_48_MCQ_060",
-   "key_concept": "• SSRI + MAOI contraindicated\n• สรุป: SSRI + MAOI เสี่ยง serotonin syndrome สูงสุด",
+   "key_concept": "• serotonin syndrome: ไข้ clonus agitation\n• SSRI+MAOI ห้ามใช้ร่วม ต้องเว้นช่วง",
+   "mechanism": [
+    "SSRI ยับยั้ง reuptake",
+    "MAOI ยับยั้งการสลาย 5-HT",
+    {
+     "s": "5-HT สะสมมากเกิน",
+     "answer": true
+    },
+    "serotonin syndrome"
+   ],
    "option_why": {
-    "A": "SNRI + TCA เสี่ยงได้แต่น้อยกว่า",
-    "B": "SSRI + TCA ปานกลาง",
-    "C": "✓ SSRI + MAOI เสี่ยงสูงสุด",
-    "D": "SSRI + opioid เสี่ยง",
-    "E": "Opioid + TCA เสี่ยงน้อย"
+    "A": "SNRI+TCA เสี่ยงปานกลาง",
+    "B": "SSRI+TCA เสี่ยงปานกลาง",
+    "C": "✓ MAOI ยับยั้งการสลาย 5-HT ร่วมกับ SSRI ทำให้ 5-HT เกินมาก",
+    "D": "SSRI+opioid เสี่ยงน้อยกว่า",
+    "E": "opioid+TCA เสี่ยงน้อยกว่า"
    }
   },
   {
@@ -1029,7 +1101,7 @@
    },
    "answer": "E",
    "answer_status": "verified",
-   "explanation": "ราชวิทยาลัยแพทย์แนะนำ cannabinoid สำหรับ Dravet syndrome",
+   "explanation": "ราชวิทยาลัยอายุรแพทย์แนะนำ cannabinoid ใน Dravet syndrome (CBD)",
    "refs": [
     {
      "paper": "MCQ48",
@@ -1047,13 +1119,13 @@
    "tags": [],
    "source": "import",
    "audit_ref": "hb_48_MCQ_063",
-   "key_concept": "• Cannabidiol: Dravet, LGS\n• สรุป: ราชวิทยาลัยแพทย์แนะนำ cannabinoid สำหรับ Dravet syndrome",
+   "key_concept": "• CBD ใช้ใน Dravet, LGS\n• THC ใช้ chemotherapy N/V, spasticity",
    "option_why": {
-    "A": "Stroke ไม่ใช่",
-    "B": "Seizure ทั่วไปไม่ใช่",
-    "C": "Severe pain ไม่ใช่",
-    "D": "End-stage cancer palliative",
-    "E": "✓ Dravet/LGS ได้รับข้อบ่งชี้"
+    "A": "stroke ไม่อยู่ในข้อบ่งชี้",
+    "B": "seizure ทั่วไปไม่ใช่ข้อบ่งชี้ ต้องเป็นชนิดเฉพาะ",
+    "C": "severe pain ไม่ได้รับการแนะนำ",
+    "D": "end-stage cancer ไม่อยู่ในข้อแนะนำหลักตามเฉลย",
+    "E": "✓ Dravet และ Lennox–Gastaut ใช้ CBD ได้"
    }
   },
   {
@@ -1069,7 +1141,7 @@
    },
    "answer": "A",
    "answer_status": "verified",
-   "explanation": "Valproate ทำให้ neural tube defect (spina bifida)",
+   "explanation": "Valproate ในครรภ์ทำให้ neural tube defect",
    "refs": [
     {
      "paper": "MCQ48",
@@ -1087,10 +1159,10 @@
    "tags": [],
    "source": "import",
    "audit_ref": "hb_48_MCQ_065",
-   "key_concept": "• Valproate: NTD\n• สรุป: Valproate ทำให้ neural tube defect (spina bifida)",
+   "key_concept": "• valproate teratogenic NTD ให้ folic acid\n• ผลต่อ IQ เด็ก",
    "option_why": {
-    "A": "✓ Spina bifida",
-    "B": "Agranulocytosis คือ carbamazepine/clozapine"
+    "A": "✓ valproate: spina bifida",
+    "B": "agranulocytosis เป็นผลของ carbamazepine/clozapine"
    }
   },
   {
@@ -1109,7 +1181,7 @@
    },
    "answer": "A",
    "answer_status": "verified",
-   "explanation": "Lateral approach ต่อ calcaneus เสี่ยง sural nerve",
+   "explanation": "Lateral approach calcaneus เสี่ยง sural nerve",
    "refs": [
     {
      "paper": "MCQ48",
@@ -1127,13 +1199,13 @@
    "tags": [],
    "source": "import",
    "audit_ref": "hb_48_MCQ_070",
-   "key_concept": "• Sural nerve: lateral calcaneus\n• สรุป: Lateral approach ต่อ calcaneus เสี่ยง sural nerve",
+   "key_concept": "• sural n. ตามหลัง lateral malleolus\n• lateral approach: ระวัง sural n. และ peroneal tendons",
    "option_why": {
-    "A": "✓ Sural nerve อยู่หลัง lateral malleolus",
-    "B": "Dorsalis pedis อยู่ด้านบน",
-    "C": "Lateral plantar artery อยู่ใต้เท้า",
-    "D": "Lateral plantar nerve อยู่ใต้เท้า",
-    "E": "Superficial peroneal อยู่หน้า"
+    "A": "✓ sural nerve วิ่งหลัง lateral malleolus ใกล้แผล",
+    "B": "dorsalis pedis อยู่หลังเท้า",
+    "C": "lateral plantar artery อยู่ใต้เท้า",
+    "D": "lateral plantar nerve อยู่ใต้เท้า",
+    "E": "superficial peroneal อยู่หน้าข้อเท้า"
    }
   },
   {
@@ -1151,7 +1223,7 @@
    },
    "answer": "C",
    "answer_status": "verified",
-   "explanation": "Small saphenous vein ไหลเข้า popliteal vein (ไฟล์เฉลยวง D ด้วย)",
+   "explanation": "SSV ไหลเข้า popliteal vein",
    "refs": [
     {
      "paper": "MCQ48",
@@ -1172,12 +1244,12 @@
    "also_accept": [
     "D"
    ],
-   "key_concept": "• SSV → popliteal vein\n• สรุป: Small saphenous vein ไหลเข้า popliteal vein (ไฟล์เฉลยวง D ด้วย)",
+   "key_concept": "• GSV → femoral vein · SSV → popliteal vein\n• SSV ขึ้นหลังข้อเท้าด้านนอก",
    "option_why": {
-    "A": "Fibular ไม่ใช่",
-    "B": "Femoral ไม่ใช่",
-    "C": "✓ Popliteal",
-    "D": "✓ ไฟล์เฉลยวงด้วย (also_accept)"
+    "A": "fibular vein ไม่ใช่ปลายทาง SSV",
+    "B": "femoral vein รับ GSV",
+    "C": "✓ SSV เข้า popliteal vein ที่ popliteal fossa",
+    "D": "✓ anterior tibial vein ไม่ใช่"
    }
   }
  ]
