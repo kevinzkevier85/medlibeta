@@ -22,7 +22,7 @@
     "B": "gender identity = การรับรู้เพศตนเอง",
     "C": "ไม่ต้องรักษา",
     "D": "ไม่ใช่ gender dysphoria",
-    "E": "ไม่ใช่ ED"
+    "E": "การชอบเพศเดียวกันไม่ใช่ erectile dysfunction เพราะยังแข็งตัวได้ตามปกติเมื่อมีสิ่งเร้าที่ตรงกับรสนิยม"
    },
    "key_concept": "• orientation ≠ identity\n• ไม่ใช่โรค\n• ให้คำปรึกษาไม่ตัดสิน"
   },
@@ -124,10 +124,10 @@
    "explanation": "ท้องเสีย → NAGMA: ไตดูดกลับ HCO₃⁻ หมด (urine HCO₃⁻ ↓), ขับ NH₄⁺ ↑, urine anion gap ลด/ลบ",
    "audit_note": "AI blind ตอบ D (คิดเป็น serum AG); ถ้า 'anion gap' = urine AG ต้นฉบับ E ถูก",
    "option_why": {
-    "A": "ไม่ใช่",
-    "B": "ไม่ใช่",
-    "C": "ไม่ใช่",
-    "D": "ไม่ใช่",
+    "A": "urine HCO3- ไม่เพิ่ม เพราะไตดูดกลับ HCO3- จนหมดเพื่อชดเชยที่เสียทางอุจจาระ และ NH4+ ต้องเพิ่ม ไม่ลด",
+    "B": "urine HCO3- ต้องลด ไม่เพิ่ม และ NH4+ ต้องเพิ่มเพื่อขับกรด",
+    "C": "urine HCO3- ลดและ NH4+ เพิ่มถูกแล้ว แต่ urine anion gap ต้องลด (เป็นลบ) เพราะ NH4+ ออกพร้อม Cl-",
+    "D": "NH4+ ต้องเพิ่ม ไม่ลด เพราะไตปกติเร่งขับกรดเมื่อเสีย HCO3- ทางลำไส้",
     "E": "✓ ↓ ↑ ↓"
    },
    "key_concept": "• urine AG = Na + K − Cl\n• ลบ = NH₄⁺Cl ถูกขับมาก (GI loss)\n• บวก = RTA"
@@ -135,11 +135,11 @@
   "10": {
    "explanation": "new HCO₃⁻ = TA + NH₄⁺ − urine HCO₃⁻ = 25 + 20 − 0 = 45",
    "option_why": {
-    "A": "0",
-    "B": "5",
-    "C": "15",
+    "A": "0 จะได้เมื่อไม่มีการขับกรดเลย แต่มี titratable acid 25 และ NH4+ 20",
+    "B": "5 คือผลต่างของ titratable acid กับ NH4+ ที่ถูกคือนำมาบวกกัน (25+20)",
+    "C": "15 ไม่ตรงกับสูตร HCO3- ใหม่ = titratable acid + NH4+ − urine HCO3- = 45",
     "D": "✓ 45",
-    "E": "65"
+    "E": "65 เกินจริง เพราะนำค่าอื่นมาบวกซ้ำ ที่ถูกคือ 25+20−0 = 45"
    },
    "key_concept": "• ไม่ใช้ GFR/plasma HCO₃⁻\n• NAE\n• ข้อซ้ำหลายรุ่น"
   },
@@ -236,7 +236,7 @@
   "19": {
    "explanation": "Waxy (broad) cast พบใน chronic renal failure (cast ค้างใน tubule ที่ขยาย)",
    "option_why": {
-    "A": "RBC cast = GN",
+    "A": "RBC cast บ่งถึง glomerulonephritis ระยะ active ไม่ใช่ไตวายเรื้อรัง",
     "B": "WBC cast = pyelonephritis/AIN",
     "C": "hyaline พบปกติ",
     "D": "fatty cast = nephrotic",
@@ -291,11 +291,11 @@
   "26": {
    "explanation": "Luteal phase ~14 วัน รอบ 26 วัน ตกไข่ = 26 − 14 = วันที่ 12",
    "option_why": {
-    "A": "11",
+    "A": "วันที่ 11 เร็วไปหนึ่งวัน: คำนวณ 26 − 14 = วันที่ 12",
     "B": "✓ 12",
     "C": "14 ใช้กับรอบ 28 วัน",
-    "D": "15",
-    "E": "16"
+    "D": "วันที่ 15 ช้าเกินไป: ไข่ตกประมาณ 14 วันก่อนประจำเดือนรอบถัดไป คือ 26 − 14 = วันที่ 12",
+    "E": "วันที่ 16 ช้าเกินไป: รอบ 26 วัน ไข่ตกราววันที่ 12 (luteal phase คงที่ 14 วัน)"
    },
    "key_concept": "• ovulation = cycle − 14\n• follicular phase แปรผัน\n• LH surge"
   },
@@ -439,11 +439,11 @@
   "40": {
    "explanation": "ถึงจุดสุดยอดทั้งคู่และพอใจ ระยะสั้นไม่ใช่โรคถ้าไม่มี distress",
    "option_why": {
-    "A": "ไม่ใช่",
-    "B": "ไม่ใช่",
-    "C": "ไม่ใช่",
+    "A": "ผู้หญิงถึงจุดสุดยอดและพึงพอใจ จึงไม่เข้าเกณฑ์ sexual interest/arousal disorder",
+    "B": "ผู้หญิงถึง orgasm ได้ จึงไม่ใช่ orgasmic disorder",
+    "C": "ผู้ชายมีความต้องการและมีเพศสัมพันธ์ได้ จึงไม่ใช่ hypoactive sexual desire",
     "D": "✓ ไม่มีปัญหา",
-    "E": "ไม่ใช่"
+    "E": "โจทย์ไม่มีข้อมูลเรื่องรสนิยมทางเพศ และ orientation ไม่ใช่ความผิดปกติ"
    },
    "key_concept": "• dysfunction ต้องมี distress\n• ≥6 เดือน\n• เทียบ PE"
   },
@@ -638,11 +638,11 @@
   "45": {
    "explanation": "ท่อ 1 (uterine artery) ข้ามด้านบน ท่อ 2 (ureter) ลอดใต้ (water under the bridge)",
    "option_why": {
-    "A": "สลับ",
-    "B": "ไม่ใช่",
+    "A": "สลับตำแหน่งกัน: uterine artery ทอดข้ามอยู่เหนือ ureter (water under the bridge)",
+    "B": "โครงสร้างหมายเลข 2 เป็นท่อที่ลอดใต้หลอดเลือด คือ ureter ไม่ใช่ตัวมดลูก และหมายเลข 1 คือหลอดเลือด",
     "C": "✓ 1 = uterine artery, 2 = ureter",
-    "D": "ไม่ใช่",
-    "E": "ไม่ใช่"
+    "D": "หมายเลข 2 เป็นท่อที่ลอดใต้ uterine artery คือ ureter ไม่ใช่มดลูก",
+    "E": "หมายเลข 1 เป็นหลอดเลือดที่ทอดข้าม ไม่ใช่ตัวมดลูก และหมายเลข 2 คือ ureter"
    },
    "key_concept": "• ureter ลอดใต้ uterine a. ห่าง cervix ~2 cm\n• ระวังตอนผูก uterine a. ใน hysterectomy\n• ใน cardinal ligament"
   }

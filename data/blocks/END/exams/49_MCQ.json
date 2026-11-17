@@ -84,7 +84,7 @@
    },
    "answer": "C",
    "answer_status": "verified",
-   "explanation": "preganglionic sympathetic หลั่ง acetylcholine → nicotinic receptor บน chromaffin cell → หลั่ง catecholamine\n⚠️ โจทย์ถามได้สองแบบ: 'สัญญาณที่กระตุ้นการหลั่ง' = acetylcholine (C) · 'catecholamine ที่หลั่งออกมา' = norepinephrine (D) · ต้นฉบับวงทั้งสองตัว (ผู้เฉลยไม่แน่ใจ) จึงนับถูกทั้ง C และ D\n⚠️ ผู้เฉลยวงทั้ง acetylcholine และ norepinephrine และเขียนว่าไม่แน่ใจว่าโจทย์ถามอะไร · แก้ตาม issue #59: ต้นฉบับวงทั้ง C (acetylcholine = สัญญาณกระตุ้น) และ D (norepinephrine = catecholamine ที่หลั่งออกมา) ผู้เฉลยเขียนว่าไม่แน่ใจว่าโจทย์ถามอะไร จึงนับถูกทั้งสองตัว",
+   "explanation": "preganglionic sympathetic หลั่ง acetylcholine จับ nicotinic receptor บน chromaffin cell ทำให้หลั่ง catecholamine",
    "refs": [
     {
      "paper": "MCQ49",
@@ -124,7 +124,8 @@
     "C": "✓ splanchnic nerve หลั่ง ACh → N receptor",
     "D": "✓ (นับถูกด้วย) ถ้าตีความว่าถามตัวที่หลั่งออกมา — NE เป็น catecholamine ที่ adrenal medulla หลั่ง (~20%) · ต้นฉบับวงไว้ด้วย",
     "E": "VIP เสริมได้เล็กน้อย ไม่ใช่สัญญาณหลัก"
-   }
+   },
+   "audit_note": "ผู้เฉลยวงทั้ง acetylcholine และ norepinephrine และเขียนว่าไม่แน่ใจว่าโจทย์ถามอะไร · แก้ตาม issue #59: ต้นฉบับวงทั้ง C (acetylcholine = สัญญาณกระตุ้น) และ D (norepinephrine = catecholamine ที่หลั่งออกมา) ผู้เฉลยเขียนว่าไม่แน่ใจว่าโจทย์ถามอะไร จึงนับถูกทั้งสองตัว"
   },
   {
    "id": "END-49-MCQ-003",
@@ -255,7 +256,7 @@
    },
    "answer": "C",
    "answer_status": "disputed",
-   "explanation": "AI เลือก E (fed state: muscle รับ glucose ↑) · เฉลยต้นฉบับ C (ไม่ตรงกับสรีรวิทยา)\n⚠️ ต้นฉบับพิมพ์ตัวอักษรช้อยส์ซ้ำ (a. a. b. c. d.) จัดเรียงใหม่เป็น A–E · เฉลยขัดกับ AI",
+   "explanation": "AI เลือก E (fed state: muscle รับ glucose ↑) · เฉลยต้นฉบับ C (ไม่ตรงกับสรีรวิทยา)",
    "refs": [
     {
      "paper": "MCQ49",
@@ -299,7 +300,8 @@
     "C": "✓ เฉลยต้นฉบับ: แต่ hepatic glycogenolysis ลดลงตอนอิ่ม (เกิดตอนอด)",
     "D": "ไตไม่ขับ glucose ในคนปกติ",
     "E": "AI เลือก: insulin → GLUT4 → muscle รับ glucose หลักหลังอาหาร"
-   }
+   },
+   "audit_note": "ต้นฉบับพิมพ์ตัวอักษรช้อยส์ซ้ำ (a. a. b. c. d.) จัดเรียงใหม่เป็น A–E · เฉลยขัดกับ AI"
   },
   {
    "id": "END-49-MCQ-006",
@@ -318,7 +320,7 @@
    },
    "answer": "A",
    "answer_status": "verified",
-   "explanation": "niacin กระตุ้น GPR109A ที่ผิวหนัง → prostaglandin (PGD₂/PGE₂) → flushing คัน\n⚠️ ช้อยส์ E AI เติมให้ครบ 5 ตัว",
+   "explanation": "niacin กระตุ้น GPR109A ที่ผิวหนัง → prostaglandin (PGD₂/PGE₂) → flushing คัน",
    "refs": [
     {
      "paper": "MCQ49",
@@ -352,10 +354,11 @@
    "option_why": {
     "A": "✓ ป้องกันด้วย aspirin 30 นาทีก่อนกินยา",
     "B": "ไม่ได้เกิดจาก histamine (antihistamine ไม่ช่วย)",
-    "C": "ไม่เกี่ยว",
-    "D": "ไม่เกี่ยว",
+    "C": "acetylcholine ไม่ใช่ตัวกลางของอาการร้อนวูบวาบจาก niacin",
+    "D": "substance P เกี่ยวกับการส่งสัญญาณปวด ไม่ใช่ flushing จาก niacin",
     "E": "bradykinin = angioedema จาก ACEI"
-   }
+   },
+   "audit_note": "ช้อยส์ E AI เติมให้ครบ 5 ตัว"
   },
   {
    "id": "END-49-MCQ-007",
@@ -430,7 +433,7 @@
    },
    "answer": "C",
    "answer_status": "verified",
-   "explanation": "วินิจฉัย osteoporosis เพื่อประเมินความเสี่ยงกระดูกหัก แล้วตัดสินใจรักษา\n⚠️ ช้อยส์ E AI เติมให้ครบ 5 ตัว",
+   "explanation": "วินิจฉัย osteoporosis เพื่อประเมินความเสี่ยงกระดูกหัก แล้วตัดสินใจรักษา",
    "refs": [
     {
      "paper": "MCQ49",
@@ -461,7 +464,8 @@
     "C": "✓ fracture คือผลลัพธ์ที่ต้องป้องกัน (BMD + FRAX)",
     "D": "ไม่ใช่เป้าหมาย",
     "E": "Ca ในเลือดปกติใน osteoporosis"
-   }
+   },
+   "audit_note": "ช้อยส์ E AI เติมให้ครบ 5 ตัว"
   },
   {
    "id": "END-49-MCQ-009",
@@ -536,7 +540,7 @@
    },
    "answer": "C",
    "answer_status": "disputed",
-   "explanation": "AI เลือก B (Ca 1.5 mmol/L ต่ำ → tetany) · เฉลยต้นฉบับ C\n⚠️ ค่า calcium ในต้นฉบับเขียนซ้อนกัน (2.0 1.5 mmol/L) · เฉลยขัดกับ AI",
+   "explanation": "AI เลือก B (Ca 1.5 mmol/L ต่ำ → tetany) · เฉลยต้นฉบับ C",
    "refs": [
     {
      "paper": "MCQ49",
@@ -581,7 +585,8 @@
     "C": "✓ เฉลยต้นฉบับ: osteoporosis ไม่ใช่อาการเฉียบพลันของ Ca ต่ำ (ผู้ออกข้อสอบอาจตั้งใจตีความ 1.5 mmol/L แบบอื่น)",
     "D": "นิ่วไต = hypercalcemia",
     "E": "ท้องผูก = hypercalcemia"
-   }
+   },
+   "audit_note": "ค่า calcium ในต้นฉบับเขียนซ้อนกัน (2.0 1.5 mmol/L) · เฉลยขัดกับ AI"
   },
   {
    "id": "END-49-MCQ-011",
@@ -656,7 +661,7 @@
    },
    "answer": "B",
    "answer_status": "disputed",
-   "explanation": "AI เลือก A (CYP3A4 inducer เร่งทำลาย prednisolone → adrenal insufficiency) · เฉลยต้นฉบับ B\n⚠️ ถ้อยคำโจทย์กำกวม (ไม่ระบุยาอื่น) · ช้อยส์ E AI เติมให้ครบ 5 ตัว · เฉลยขัดกับ AI",
+   "explanation": "AI เลือก A (CYP3A4 inducer เร่งทำลาย prednisolone → adrenal insufficiency) · เฉลยต้นฉบับ B",
    "refs": [
     {
      "paper": "MCQ49",
@@ -694,7 +699,8 @@
     "C": "11β-HSD1 เปลี่ยน cortisone → cortisol (เพิ่มฤทธิ์)",
     "D": "ยับยั้ง 11β-HSD2 (เช่นชะเอม) → apparent mineralocorticoid excess → HT, K ต่ำ",
     "E": "CBG เพิ่มลด free steroid เล็กน้อย ไม่ใช่กลไก drug interaction หลัก"
-   }
+   },
+   "audit_note": "ถ้อยคำโจทย์กำกวม (ไม่ระบุยาอื่น) · ช้อยส์ E AI เติมให้ครบ 5 ตัว · เฉลยขัดกับ AI"
   },
   {
    "id": "END-49-MCQ-013",
@@ -825,7 +831,7 @@
    },
    "answer": "E",
    "answer_status": "disputed",
-   "explanation": "AI เลือก D (β-cell หลั่ง insulin ชดเชย) · เฉลยต้นฉบับ E\n⚠️ เฉลยขัดกับ AI",
+   "explanation": "AI เลือก D (β-cell หลั่ง insulin ชดเชย) · เฉลยต้นฉบับ E",
    "refs": [
     {
      "paper": "MCQ49",
@@ -867,7 +873,8 @@
     "C": "glucosuria เกิดเมื่อ glucose > ~180 แล้ว ไม่ได้ทำให้ glucose ปกติ",
     "D": "AI เลือก: compensatory hyperinsulinemia ทำให้ glucose ยังปกติ",
     "E": "✓ เฉลยต้นฉบับ: แต่สมองใช้ GLUT1/3 ไม่ขึ้นกับ insulin จึงไม่เพิ่มเพื่อชดเชย"
-   }
+   },
+   "audit_note": "เฉลยขัดกับ AI"
   },
   {
    "id": "END-49-MCQ-016",
@@ -943,7 +950,7 @@
    },
    "answer": "B",
    "answer_status": "disputed",
-   "explanation": "AI เลือก D (ทารก salt wasting + ดำ = CAH → ต่อมโตสองข้าง) · เฉลยต้นฉบับ B\n⚠️ เฉลยขัดกับ AI",
+   "explanation": "AI เลือก D (ทารก salt wasting + ดำ = CAH → ต่อมโตสองข้าง) · เฉลยต้นฉบับ B",
    "refs": [
     {
      "paper": "MCQ49",
@@ -984,7 +991,8 @@
     "C": "ไม่ตรงกับภาวะใด",
     "D": "AI เลือก: 21-OH deficiency → ACTH ↑ → bilateral diffuse hyperplasia",
     "E": "multinodular พบใน ACTH-independent macronodular hyperplasia"
-   }
+   },
+   "audit_note": "เฉลยขัดกับ AI"
   },
   {
    "id": "END-49-MCQ-018",
@@ -1003,7 +1011,7 @@
    },
    "answer": "D",
    "answer_status": "verified",
-   "explanation": "CYP27B1 = 1α-hydroxylase → mutation ทำให้สร้าง calcitriol ไม่ได้ → rickets\n⚠️ ช้อยส์ D ในไฟล์ข้อสอบพิมพ์ผิดเป็น 17 hydroxylase",
+   "explanation": "CYP27B1 = 1α-hydroxylase → mutation ทำให้สร้าง calcitriol ไม่ได้ → rickets",
    "refs": [
     {
      "paper": "MCQ49",
@@ -1040,7 +1048,8 @@
     "C": "calcitriol ต่ำ → NaPi-IIb ลด",
     "D": "✓ vitamin D-dependent rickets type 1",
     "E": "Ca ต่ำ → PTH เพิ่ม"
-   }
+   },
+   "audit_note": "ช้อยส์ D ในไฟล์ข้อสอบพิมพ์ผิดเป็น 17 hydroxylase"
   },
   {
    "id": "END-49-MCQ-019",
@@ -1059,7 +1068,7 @@
    },
    "answer": "A",
    "answer_status": "verified",
-   "explanation": "HT + K ต่ำ + aldosterone สูง + renin ต่ำ = primary hyperaldosteronism (Conn)\n⚠️ หน่วยในต้นฉบับ (mmol/dL, ng/dL/hour) น่าจะพิมพ์ผิด",
+   "explanation": "HT + K ต่ำ + aldosterone สูง + renin ต่ำ = primary hyperaldosteronism (Conn)",
    "refs": [
     {
      "paper": "MCQ49",
@@ -1099,7 +1108,8 @@
     "C": "Addison: aldosterone ต่ำ K สูง BP ต่ำ",
     "D": "cortisol ต่ำ aldosterone ปกติ",
     "E": "CAH ส่วนใหญ่ aldosterone ต่ำ (21-OH)"
-   }
+   },
+   "audit_note": "หน่วยในต้นฉบับ (mmol/dL, ng/dL/hour) น่าจะพิมพ์ผิด"
   },
   {
    "id": "END-49-MCQ-020",
@@ -1294,7 +1304,7 @@
    },
    "answer": "B",
    "answer_status": "verified",
-   "explanation": "pars nervosa (posterior pituitary) หลั่ง ADH → ควบคุมน้ำในร่างกาย\n⚠️ ช้อยส์ E AI เติมให้ครบ 5 ตัว",
+   "explanation": "pars nervosa (posterior pituitary) หลั่ง ADH → ควบคุมน้ำในร่างกาย",
    "refs": [
     {
      "paper": "MCQ49",
@@ -1331,7 +1341,8 @@
     "C": "PTH/calcitonin/vitamin D",
     "D": "FSH/LH จาก anterior pituitary",
     "E": "insulin/glucagon"
-   }
+   },
+   "audit_note": "ช้อยส์ E AI เติมให้ครบ 5 ตัว"
   },
   {
    "id": "END-49-MCQ-024",
@@ -1409,7 +1420,7 @@
    },
    "answer": "D",
    "answer_status": "draft",
-   "explanation": "Friedewald: LDL-C = TC − HDL − TG/5 = 280 − 50 − 30 = 200 mg/dL\n⚠️ AI เขียนข้อนี้ขึ้นใหม่จากโน้ตความจำในต้นฉบับ",
+   "explanation": "Friedewald: LDL-C = TC − HDL − TG/5 = 280 − 50 − 30 = 200 mg/dL",
    "refs": [
     {
      "paper": "MCQ49",
@@ -1432,12 +1443,13 @@
    "audit_ref": "end_49_MCQ_025",
    "key_concept": "• Friedewald ใช้ไม่ได้เมื่อ TG > 400 mg/dL → วัด LDL ตรงหรือใช้ non-HDL\n• TG/5 = ค่าประมาณ VLDL-cholesterol\n• non-HDL-C = TC − HDL (= LDL + VLDL) → ข้อนี้ = 230",
    "option_why": {
-    "A": "คิดผิด",
-    "B": "คิดผิด",
-    "C": "คิดผิด",
+    "A": "80 mg/dL ต่ำเกิน: Friedewald LDL = TC − HDL − TG/5 = 280 − 50 − 30",
+    "B": "130 mg/dL ต่ำเกิน: ลืมว่า TC 280 หัก HDL 50 และ TG/5 30 เหลือ 200",
+    "C": "170 mg/dL ได้เมื่อหัก TG ทั้งหมดหรือหารผิด ที่ถูกคือหัก TG/5 = 30",
     "D": "✓ 280 − 50 − 150/5",
     "E": "ลืมลบ TG/5 (เป็น non-HDL-C)"
-   }
+   },
+   "audit_note": "AI เขียนข้อนี้ขึ้นใหม่จากโน้ตความจำในต้นฉบับ"
   },
   {
    "id": "END-49-MCQ-026",
@@ -1560,7 +1572,7 @@
    },
    "answer": "E",
    "answer_status": "disputed",
-   "explanation": "AI เลือก B (bitemporal + คางยื่น มือเท้าโต = acromegaly → GH สูง) · เฉลยต้นฉบับ E\n⚠️ เฉลยขัดกับ AI",
+   "explanation": "AI เลือก B (bitemporal + คางยื่น มือเท้าโต = acromegaly → GH สูง) · เฉลยต้นฉบับ E",
    "refs": [
     {
      "paper": "MCQ49",
@@ -1598,7 +1610,8 @@
     "C": "TSH adenoma → hyperthyroid",
     "D": "prolactin → galactorrhea/hypogonadism",
     "E": "✓ เฉลยต้นฉบับ: แต่ ACTH adenoma ทำ Cushing disease ไม่ใช่ acromegaly"
-   }
+   },
+   "audit_note": "เฉลยขัดกับ AI"
   },
   {
    "id": "END-49-MCQ-029",
@@ -1617,7 +1630,7 @@
    },
    "answer": "E",
    "answer_status": "disputed",
-   "explanation": "AI เลือก C (steroid myopathy จาก protein synthesis ↓) · เฉลยต้นฉบับ E\n⚠️ เฉลยขัดกับ AI",
+   "explanation": "AI เลือก C (steroid myopathy จาก protein synthesis ↓) · เฉลยต้นฉบับ E",
    "refs": [
     {
      "paper": "MCQ49",
@@ -1655,7 +1668,8 @@
     "C": "AI เลือก: glucocorticoid ลด protein synthesis + เพิ่ม proteolysis (atrogin-1, MuRF1) → type II fiber atrophy",
     "D": "ไม่ใช่กลไกหลัก",
     "E": "✓ เฉลยต้นฉบับ: steroid ลดการดูดซึม Ca จริง แต่ทำให้ osteoporosis/ปวดกระดูกมากกว่า"
-   }
+   },
+   "audit_note": "เฉลยขัดกับ AI"
   },
   {
    "id": "END-49-MCQ-030",
@@ -1709,7 +1723,7 @@
     "A": "LDL ลดตามฤทธิ์ยา ไม่ใช่ความผิดปกติ",
     "B": "uric acid เป็นเรื่องของโรค gout ไม่ใช่ ADR",
     "C": "✓ myotoxicity ทั้งคู่ + ระดับยาสูงขึ้นจากการแย่ง CYP3A4/P-gp",
-    "D": "ไม่เกี่ยว",
+    "D": "น้ำตาลในเลือดไม่ใช่ค่าที่ต้องติดตามจากการใช้ colchicine ร่วมกับ statin ซึ่งเสี่ยง myopathy",
     "E": "ไม่ใช่การตรวจทั่วไป"
    }
   },
@@ -1730,7 +1744,7 @@
    },
    "answer": "A",
    "answer_status": "disputed",
-   "explanation": "fasting: insulin ต่ำ → ปลดการยับยั้ง α-cell → glucagon ↑\n⚠️ ตัวกระตุ้นโดยตรงที่สุดคือ hypoglycemia ซึ่งไม่มีในช้อยส์ · ในเฉลยต้นฉบับไม่ได้วงคำตอบ (ใส่ ?) · ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้",
+   "explanation": "fasting: insulin ต่ำ → ปลดการยับยั้ง α-cell → glucagon ↑",
    "refs": [
     {
      "paper": "MCQ49",
@@ -1767,7 +1781,8 @@
     "C": "FFA สูงยับยั้ง glucagon เล็กน้อย",
     "D": "somatostatin ยับยั้งทั้ง insulin และ glucagon",
     "E": "cholinergic กระตุ้นได้ แต่ไม่ใช่สัญญาณหลักตอนอด"
-   }
+   },
+   "audit_note": "ตัวกระตุ้นโดยตรงที่สุดคือ hypoglycemia ซึ่งไม่มีในช้อยส์ · ในเฉลยต้นฉบับไม่ได้วงคำตอบ (ใส่ ?) · ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
   },
   {
    "id": "END-49-MCQ-032",
@@ -2011,7 +2026,7 @@
    },
    "answer": "C",
    "answer_status": "verified",
-   "explanation": "DM จากตัดตับอ่อนทั้งหมด = other specific type (type 3c)\n⚠️ แก้เฉลยตาม issue #28: DM หลัง total pancreatectomy = other specific type (โรคของตับอ่อนส่วน exocrine) แม้ต้องฉีด insulin",
+   "explanation": "DM จากตัดตับอ่อนทั้งหมด = other specific type (type 3c)",
    "refs": [
     {
      "paper": "MCQ49",
@@ -2039,7 +2054,8 @@
     "C": "✓ diseases of the exocrine pancreas",
     "D": "สาเหตุชัดเจน",
     "E": "ศัพท์เก่า ไม่ใช่หมวดของ ADA"
-   }
+   },
+   "audit_note": "แก้เฉลยตาม issue #28: DM หลัง total pancreatectomy = other specific type (โรคของตับอ่อนส่วน exocrine) แม้ต้องฉีด insulin"
   },
   {
    "id": "END-49-MCQ-037",

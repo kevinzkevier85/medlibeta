@@ -473,10 +473,10 @@
     }
    ],
    "option_why": {
-    "A": "0.25% ผิด",
+    "A": "0.25% น้อยเกินไป; pH ต่ำกว่า pKa 2 หน่วย กรดอ่อนอยู่ในรูปไม่แตกตัว ~99% ไม่ใช่ส่วนน้อย",
     "B": "1% = สัดส่วนแตกตัว ไม่ใช่ไม่แตกตัว",
-    "C": "10% ผิด",
-    "D": "90% ผิด",
+    "C": "10% จะได้เมื่อ pH สูงกว่า pKa 1 หน่วย ไม่ใช่ต่ำกว่า 2 หน่วย",
+    "D": "90% จะได้เมื่อ pH ต่ำกว่า pKa เพียง 1 หน่วย (อัตราส่วน 10:1) แต่โจทย์ต่างกัน 2 หน่วย",
     "E": "✓ ≈99% non-ionized (pH ต่ำกว่า pKa 2 หน่วย)"
    }
   },
@@ -517,10 +517,10 @@
    "key_concept": "• Loading dose = Cp × Vd / F\n• F = 0.25 → ต้องให้ยามากขึ้น 4 เท่า\n• ระวังหน่วย µg ↔ mg",
    "option_why": {
     "A": "4 mg ผิดหน่วย/สูตร",
-    "B": "8 mg ผิด",
+    "B": "8 ไม่ตรงกับผลคำนวณจากสูตร loading dose = (Vd × ความเข้มข้นเป้าหมาย) ÷ F ซึ่งได้ 24",
     "C": "12 mg = ไม่ได้หาร F",
     "D": "✓ 24 mg = (20×300)/0.25",
-    "E": "48 mg ผิด"
+    "E": "48 เป็นสองเท่าของค่าที่คำนวณได้จากสูตร (Vd × C) ÷ F"
    }
   },
   {
@@ -790,8 +790,8 @@
     "A": "ion channel ไม่ใช่",
     "B": "✓ tyrosine kinase enzyme-linked receptor",
     "C": "gene transcription = nuclear receptor",
-    "D": "Gi = GPCR",
-    "E": "Gs = GPCR"
+    "D": "Gi เป็น G protein ของ GPCR (เช่น α2, M2) ไม่ใช่ชนิดของ insulin receptor",
+    "E": "Gs เป็น G protein ของ GPCR (เช่น β receptor) ไม่ใช่ชนิดของ insulin receptor"
    }
   },
   {
@@ -1344,7 +1344,7 @@
    },
    "answer": "A",
    "answer_status": "disputed",
-   "explanation": "ข้อนี้ไฟล์เฉลยเลือก alprostadil (PGE1) แต่ยาที่ปิด PDA คือ NSAIDs (ibuprofen/indomethacin) [AI เห็นว่า D]\n⚠️ เฉลยขัดกับ AI",
+   "explanation": "ข้อนี้ไฟล์เฉลยเลือก alprostadil (PGE1) แต่ยาที่ปิด PDA คือ NSAIDs (ibuprofen/indomethacin) [AI เห็นว่า D]",
    "refs": [
     {
      "paper": "MCQ52",
@@ -1370,7 +1370,8 @@
     "C": "celecoxib ไม่ใช่ยามาตรฐานปิด PDA",
     "D": "AI เห็นว่า ibuprofen (NSAID ยับยั้ง COX → PG ↓ → ท่อปิด) เป็นยาปิด PDA มาตรฐาน",
     "E": "epoprostenol = PGI2 ใช้ pulmonary hypertension"
-   }
+   },
+   "audit_note": "เฉลยขัดกับ AI"
   },
   {
    "id": "BIO-52-MCQ-045",
@@ -1750,7 +1751,7 @@
    },
    "answer": "D",
    "answer_status": "verified",
-   "explanation": "RDU = สั่งยาขนาดต่ำสุดที่ได้ผล ในระยะเวลาที่เหมาะสม\n⚠️ ช้อยส์ E AI เติมให้ครบ 5 ตัว",
+   "explanation": "RDU = สั่งยาขนาดต่ำสุดที่ได้ผล ในระยะเวลาที่เหมาะสม",
    "refs": [
     {
      "paper": "MCQ52",
@@ -1775,7 +1776,8 @@
     "C": "ไม่ควรสั่งยาเสี่ยง abuse ระยะยาว",
     "D": "✓ ขนาดต่ำสุดที่ได้ผล ระยะเวลาเหมาะสม",
     "E": "AI เติมให้: สั่งยาปฏิชีวนะให้โรคไวรัส (ไม่เหมาะสม)"
-   }
+   },
+   "audit_note": "ช้อยส์ E AI เติมให้ครบ 5 ตัว"
   },
   {
    "id": "BIO-52-MCQ-060",

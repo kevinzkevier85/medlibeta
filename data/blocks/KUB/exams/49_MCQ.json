@@ -242,7 +242,7 @@
    },
    "answer": "A",
    "answer_status": "disputed",
-   "explanation": "NFP = P_GC − π_GC − P_BS = 50 − 30 − P_BS ต้อง > 0 จึงกรองได้ → ในตัวเลือกคือ 10 mmHg (ตามเฉลย)\n⚠️ เฉลยขัดกับ AI",
+   "explanation": "NFP = P_GC − π_GC − P_BS = 50 − 30 − P_BS ต้อง > 0 จึงกรองได้ → ในตัวเลือกคือ 10 mmHg (ตามเฉลย)",
    "refs": [
     {
      "paper": "MCQ49",
@@ -268,7 +268,8 @@
     "C": "30 mmHg NFP ติดลบ",
     "D": "50 mmHg ไม่กรอง",
     "E": "80 mmHg ไม่กรอง"
-   }
+   },
+   "audit_note": "เฉลยขัดกับ AI"
   },
   {
    "id": "KUB-49-MCQ-007",
@@ -286,7 +287,7 @@
    },
    "answer": "D",
    "answer_status": "verified",
-   "explanation": "ผ่าตัดบริเวณ sacrum/presacral ทำลาย hypogastric nerves → ปัสสาวะไม่สุด (ต้นฉบับนับถูกทั้งขวาและซ้าย)\n⚠️ เฉลยต้นฉบับวงทั้ง right และ left hypogastric nerve",
+   "explanation": "ผ่าตัดบริเวณ sacrum/presacral ทำลาย hypogastric nerves → ปัสสาวะไม่สุด (ต้นฉบับนับถูกทั้งขวาและซ้าย)",
    "refs": [
     {
      "paper": "MCQ49",
@@ -314,7 +315,8 @@
     "C": "superior rectal เป็นหลอดเลือด",
     "D": "✓ right hypogastric nerve",
     "E": "✓ left hypogastric nerve"
-   }
+   },
+   "audit_note": "เฉลยต้นฉบับวงทั้ง right และ left hypogastric nerve"
   },
   {
    "id": "KUB-49-MCQ-008",
@@ -384,7 +386,7 @@
    },
    "answer": "E",
    "answer_status": "disputed",
-   "explanation": "ท้องเสีย → NAGMA: ไตดูดกลับ HCO₃⁻ หมด (urine HCO₃⁻ ↓), ขับ NH₄⁺ ↑, urine anion gap ลด/ลบ\n⚠️ เฉลยขัดกับ AI",
+   "explanation": "ท้องเสีย → NAGMA: ไตดูดกลับ HCO₃⁻ หมด (urine HCO₃⁻ ↓), ขับ NH₄⁺ ↑, urine anion gap ลด/ลบ",
    "refs": [
     {
      "paper": "MCQ49",
@@ -405,12 +407,13 @@
    "ai_answer": "D",
    "key_concept": "• urine AG = Na + K − Cl\n• ลบ = NH₄⁺Cl ถูกขับมาก (GI loss)\n• บวก = RTA",
    "option_why": {
-    "A": "ไม่ใช่",
-    "B": "ไม่ใช่",
-    "C": "ไม่ใช่",
-    "D": "ไม่ใช่",
+    "A": "urine HCO3- ไม่เพิ่ม เพราะไตดูดกลับ HCO3- จนหมดเพื่อชดเชยที่เสียทางอุจจาระ และ NH4+ ต้องเพิ่ม ไม่ลด",
+    "B": "urine HCO3- ต้องลด ไม่เพิ่ม และ NH4+ ต้องเพิ่มเพื่อขับกรด",
+    "C": "urine HCO3- ลดและ NH4+ เพิ่มถูกแล้ว แต่ urine anion gap ต้องลด (เป็นลบ) เพราะ NH4+ ออกพร้อม Cl-",
+    "D": "NH4+ ต้องเพิ่ม ไม่ลด เพราะไตปกติเร่งขับกรดเมื่อเสีย HCO3- ทางลำไส้",
     "E": "✓ ↓ ↑ ↓"
-   }
+   },
+   "audit_note": "เฉลยขัดกับ AI"
   },
   {
    "id": "KUB-49-MCQ-010",
@@ -448,11 +451,11 @@
    "audit_ref": "kub_49_MCQ_010",
    "key_concept": "• ไม่ใช้ GFR/plasma HCO₃⁻\n• NAE\n• ข้อซ้ำหลายรุ่น",
    "option_why": {
-    "A": "0",
-    "B": "5",
-    "C": "15",
+    "A": "0 จะได้เมื่อไม่มีการขับกรดเลย แต่มี titratable acid 25 และ NH4+ 20",
+    "B": "5 คือผลต่างของ titratable acid กับ NH4+ ที่ถูกคือนำมาบวกกัน (25+20)",
+    "C": "15 ไม่ตรงกับสูตร HCO3- ใหม่ = titratable acid + NH4+ − urine HCO3- = 45",
     "D": "✓ 45",
-    "E": "65"
+    "E": "65 เกินจริง เพราะนำค่าอื่นมาบวกซ้ำ ที่ถูกคือ 25+20−0 = 45"
    }
   },
   {
@@ -471,7 +474,7 @@
    },
    "answer": "E",
    "answer_status": "disputed",
-   "explanation": "มีทั้ง nephritic (dysmorphic RBC, HTN, oliguria) และ nephrotic (albuminuria, edema) ในผู้ใหญ่ = MPGN\n⚠️ เฉลยขัดกับ AI",
+   "explanation": "มีทั้ง nephritic (dysmorphic RBC, HTN, oliguria) และ nephrotic (albuminuria, edema) ในผู้ใหญ่ = MPGN",
    "refs": [
     {
      "paper": "MCQ49",
@@ -497,7 +500,8 @@
     "C": "RPGN ไตเสื่อมเร็วมาก crescents",
     "D": "membranous เป็น nephrotic",
     "E": "✓ MPGN"
-   }
+   },
+   "audit_note": "เฉลยขัดกับ AI"
   },
   {
    "id": "KUB-49-MCQ-012",
@@ -687,7 +691,7 @@
    },
    "answer": "C",
    "answer_status": "disputed",
-   "explanation": "MPGN ดำเนินโรคช้าแบบ chronic GN ~50% เป็น ESRD ใน 10 ปี (ตามเฉลย)\n⚠️ เฉลยขัดกับ AI",
+   "explanation": "MPGN ดำเนินโรคช้าแบบ chronic GN ~50% เป็น ESRD ใน 10 ปี (ตามเฉลย)",
    "refs": [
     {
      "paper": "MCQ49",
@@ -713,7 +717,8 @@
     "C": "✓ MPGN",
     "D": "membranous ส่วนหนึ่งหายเอง",
     "E": "IgA ค่อยๆ เสื่อมบางราย"
-   }
+   },
+   "audit_note": "เฉลยขัดกับ AI"
   },
   {
    "id": "KUB-49-MCQ-017",
@@ -837,7 +842,7 @@
    "audit_ref": "kub_49_MCQ_019",
    "key_concept": "• broad cast = tubule ขยาย (CKD)\n• muddy brown = ATN\n• cast เกิดที่ DCT/CD",
    "option_why": {
-    "A": "RBC cast = GN",
+    "A": "RBC cast บ่งถึง glomerulonephritis ระยะ active ไม่ใช่ไตวายเรื้อรัง",
     "B": "WBC cast = pyelonephritis/AIN",
     "C": "hyaline พบปกติ",
     "D": "fatty cast = nephrotic",
@@ -1140,11 +1145,11 @@
    "audit_ref": "kub_49_MCQ_026",
    "key_concept": "• ovulation = cycle − 14\n• follicular phase แปรผัน\n• LH surge",
    "option_why": {
-    "A": "11",
+    "A": "วันที่ 11 เร็วไปหนึ่งวัน: คำนวณ 26 − 14 = วันที่ 12",
     "B": "✓ 12",
     "C": "14 ใช้กับรอบ 28 วัน",
-    "D": "15",
-    "E": "16"
+    "D": "วันที่ 15 ช้าเกินไป: ไข่ตกประมาณ 14 วันก่อนประจำเดือนรอบถัดไป คือ 26 − 14 = วันที่ 12",
+    "E": "วันที่ 16 ช้าเกินไป: รอบ 26 วัน ไข่ตกราววันที่ 12 (luteal phase คงที่ 14 วัน)"
    }
   },
   {
@@ -1335,7 +1340,7 @@
    },
    "answer": "A",
    "answer_status": "verified",
-   "explanation": "หลัง radical prostatectomy PSA ควรลดจนตรวจไม่พบ ใช้ติดตามการกลับเป็นซ้ำดีที่สุด\n⚠️ ช้อยส์ C, D, E AI เติมให้ครบ 5 ตัว",
+   "explanation": "หลัง radical prostatectomy PSA ควรลดจนตรวจไม่พบ ใช้ติดตามการกลับเป็นซ้ำดีที่สุด",
    "refs": [
     {
      "paper": "MCQ49",
@@ -1360,7 +1365,8 @@
     "C": "bone scan ใช้เมื่อ PSA สูง/ปวดกระดูก",
     "D": "DRE ไม่ไวหลังผ่าตัด",
     "E": "acid phosphatase เลิกใช้"
-   }
+   },
+   "audit_note": "ช้อยส์ C, D, E AI เติมให้ครบ 5 ตัว"
   },
   {
    "id": "KUB-49-MCQ-032",
@@ -1752,11 +1758,11 @@
    "audit_ref": "kub_49_MCQ_040",
    "key_concept": "• dysfunction ต้องมี distress\n• ≥6 เดือน\n• เทียบ PE",
    "option_why": {
-    "A": "ไม่ใช่",
-    "B": "ไม่ใช่",
-    "C": "ไม่ใช่",
+    "A": "ผู้หญิงถึงจุดสุดยอดและพึงพอใจ จึงไม่เข้าเกณฑ์ sexual interest/arousal disorder",
+    "B": "ผู้หญิงถึง orgasm ได้ จึงไม่ใช่ orgasmic disorder",
+    "C": "ผู้ชายมีความต้องการและมีเพศสัมพันธ์ได้ จึงไม่ใช่ hypoactive sexual desire",
     "D": "✓ ไม่มีปัญหา",
-    "E": "ไม่ใช่"
+    "E": "โจทย์ไม่มีข้อมูลเรื่องรสนิยมทางเพศ และ orientation ไม่ใช่ความผิดปกติ"
    }
   },
   {
@@ -1775,7 +1781,7 @@
    },
    "answer": "A",
    "answer_status": "verified",
-   "explanation": "Tubule ใช้ fatty acid β-oxidation เป็นแหล่งพลังงานหลัก CKD จาก DM/HT ทำ FAO ลด ไขมันสะสม ไตเสื่อม (ตามเฉลย)\n⚠️ ช้อยส์ B, C, D, E AI เติมให้ครบ 5 ตัว",
+   "explanation": "Tubule ใช้ fatty acid β-oxidation เป็นแหล่งพลังงานหลัก CKD จาก DM/HT ทำ FAO ลด ไขมันสะสม ไตเสื่อม (ตามเฉลย)",
    "refs": [
     {
      "paper": "MCQ49",
@@ -1800,7 +1806,8 @@
     "C": "gluconeogenesis ก็ลด แต่เฉลยปีนี้ตอบ FAO",
     "D": "ketogenesis ที่ตับ",
     "E": "PPP ไม่ใช่หลัก"
-   }
+   },
+   "audit_note": "ช้อยส์ B, C, D, E AI เติมให้ครบ 5 ตัว"
   },
   {
    "id": "KUB-49-MCQ-042",
@@ -1818,7 +1825,7 @@
    },
    "answer": "B",
    "answer_status": "disputed",
-   "explanation": "ปริมาตรลด → renin ↑ → Ang II/aldosterone ↑ → ดูด Na⁺/น้ำ → ECF เพิ่มกลับ (ตามเฉลย)\n⚠️ เฉลยขัดกับ AI",
+   "explanation": "ปริมาตรลด → renin ↑ → Ang II/aldosterone ↑ → ดูด Na⁺/น้ำ → ECF เพิ่มกลับ (ตามเฉลย)",
    "refs": [
     {
      "paper": "MCQ49",
@@ -1844,7 +1851,8 @@
     "C": "aldosterone ทำ K⁺ ลด",
     "D": "[H⁺] เพิ่มจากท้องเสีย ไม่ใช่ผลของ renin (เฉลยรุ่น 52 ตอบข้อนี้)",
     "E": "oncotic ไม่ใช่"
-   }
+   },
+   "audit_note": "เฉลยขัดกับ AI"
   },
   {
    "id": "KUB-49-MCQ-043",
@@ -1968,11 +1976,11 @@
    "audit_ref": "kub_49_MCQ_045",
    "key_concept": "• ureter ลอดใต้ uterine a. ห่าง cervix ~2 cm\n• ระวังตอนผูก uterine a. ใน hysterectomy\n• ใน cardinal ligament",
    "option_why": {
-    "A": "สลับ",
-    "B": "ไม่ใช่",
+    "A": "สลับตำแหน่งกัน: uterine artery ทอดข้ามอยู่เหนือ ureter (water under the bridge)",
+    "B": "โครงสร้างหมายเลข 2 เป็นท่อที่ลอดใต้หลอดเลือด คือ ureter ไม่ใช่ตัวมดลูก และหมายเลข 1 คือหลอดเลือด",
     "C": "✓ 1 = uterine artery, 2 = ureter",
-    "D": "ไม่ใช่",
-    "E": "ไม่ใช่"
+    "D": "หมายเลข 2 เป็นท่อที่ลอดใต้ uterine artery คือ ureter ไม่ใช่มดลูก",
+    "E": "หมายเลข 1 เป็นหลอดเลือดที่ทอดข้าม ไม่ใช่ตัวมดลูก และหมายเลข 2 คือ ureter"
    },
    "image": "img/KUB-49-MCQ-045.jpg"
   },
@@ -1992,7 +2000,7 @@
    },
    "answer": "C",
    "answer_status": "disputed",
-   "explanation": "Lateral femoral cutaneous nerve (L2–3) รับความรู้สึกด้านข้างต้นขา ถูกกดใต้ inguinal ligament\n⚠️ เฉลยขัดกับ AI",
+   "explanation": "Lateral femoral cutaneous nerve (L2–3) รับความรู้สึกด้านข้างต้นขา ถูกกดใต้ inguinal ligament",
    "refs": [
     {
      "paper": "MCQ49",
@@ -2018,7 +2026,8 @@
     "C": "✓ lateral (femoral cutaneous) nerve",
     "D": "genitofemoral รับ scrotum/ต้นขาหน้าเล็กน้อย",
     "E": "perineal รับ perineum"
-   }
+   },
+   "audit_note": "เฉลยขัดกับ AI"
   },
   {
    "id": "KUB-49-MCQ-047",
@@ -2208,7 +2217,7 @@
    },
    "answer": "A",
    "answer_status": "verified",
-   "explanation": "ตื่นตัวทางเพศกับเพศเดียวกัน = sexual orientation ไม่ใช่โรค ไม่ต้องรักษา\n⚠️ ช้อยส์ D, E AI เติมให้ครบ 5 ตัว",
+   "explanation": "ตื่นตัวทางเพศกับเพศเดียวกัน = sexual orientation ไม่ใช่โรค ไม่ต้องรักษา",
    "refs": [
     {
      "paper": "MCQ49",
@@ -2232,8 +2241,9 @@
     "B": "gender identity = การรับรู้เพศตนเอง",
     "C": "ไม่ต้องรักษา",
     "D": "ไม่ใช่ gender dysphoria",
-    "E": "ไม่ใช่ ED"
-   }
+    "E": "การชอบเพศเดียวกันไม่ใช่ erectile dysfunction เพราะยังแข็งตัวได้ตามปกติเมื่อมีสิ่งเร้าที่ตรงกับรสนิยม"
+   },
+   "audit_note": "ช้อยส์ D, E AI เติมให้ครบ 5 ตัว"
   }
  ]
 }

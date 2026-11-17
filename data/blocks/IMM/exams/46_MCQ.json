@@ -150,7 +150,7 @@
    "option_why": {
     "A": "✓ IL-4 → B cell switch IgE",
     "B": "IL-5 → eosinophil/IgA",
-    "C": "IL-12 → Th1",
+    "C": "IL-12 ชักนำ Th1 และ IFN-γ ไม่ใช่ cytokine หลักตามเฉลยสำหรับการสร้าง IgG",
     "D": "TNF-α ไม่ใช่",
     "E": "TNF-γ ไม่มี"
    }
@@ -203,7 +203,7 @@
    "option_why": {
     "A": "✓ Th ไม่ถูกกระตุ้น → ไม่ switch",
     "B": "B cell ไม่ใช่",
-    "C": "NK ไม่ใช่",
+    "C": "NK cell ฆ่าเซลล์ติดไวรัสและเซลล์มะเร็งที่ขาด MHC I ไม่เกี่ยวกับ class switching ของ B cell",
     "D": "neutrophil ไม่ใช่",
     "E": "macrophage ไม่ใช่"
    }
@@ -245,9 +245,9 @@
    "key_concept": "• Tfh/Th ช่วย class switch\n• CD40L–CD40\n• hyper IgM: CD40L defect",
    "option_why": {
     "A": "✓ Th (CD40L + cytokine)",
-    "B": "Tc ไม่ใช่",
+    "B": "cytotoxic T cell ฆ่าเซลล์ติดเชื้อ ไม่ได้ช่วย B cell เปลี่ยน isotype",
     "C": "Treg ไม่ใช่",
-    "D": "DC ไม่ใช่",
+    "D": "dendritic cell นำเสนอ antigen ให้ T cell ไม่ได้ให้สัญญาณ CD40L แก่ B cell โดยตรง",
     "E": "macrophage ไม่ใช่"
    }
   },
@@ -598,7 +598,7 @@
     "ลด replication"
    ],
    "option_why": {
-    "A": "C5 ไม่ใช่",
+    "A": "C5 เป็น complement ไม่เพิ่มขึ้นจำเพาะในการติดเชื้อไวรัสระยะแรก",
     "B": "IL-1 ทั่วไป",
     "C": "✓ IFN type I (innate antiviral)",
     "D": "macrophage เป็นเซลล์",
@@ -645,7 +645,7 @@
     "B": "IFN type I ต้านทั่วไป",
     "C": "IFN type II ไม่ใช่",
     "D": "Tc ฆ่าเซลล์ติดเชื้อ",
-    "E": "Th ช่วย"
+    "E": "helper T cell ช่วยกระตุ้นการสร้าง antibody แต่ไม่ได้ neutralize ไวรัสเอง"
    }
   },
   {
@@ -685,7 +685,7 @@
    "key_concept": "• latent HSV ใน neuron (trigeminal)\n• CMI คุม reactivation\n• acyclovir",
    "option_why": {
     "A": "✓ Tc (CTL)",
-    "B": "Th ช่วย",
+    "B": "helper T cell ช่วยสั่งการ แต่ตัวทำลายเซลล์ที่ไวรัสแฝงตัว/กลับมาแบ่งตัวคือ cytotoxic T cell",
     "C": "NK ช่วยระยะต้น",
     "D": "macrophage ไม่ใช่",
     "E": "antibody จัดการไวรัสนอกเซลล์"
@@ -728,8 +728,8 @@
    "key_concept": "• Aspergillus: neutrophil (ROS, NET)\n• neutropenia/CGD เสี่ยง\n• voriconazole",
    "option_why": {
     "A": "B cell ไม่ใช่",
-    "B": "Tc ไม่ใช่",
-    "C": "NK ไม่ใช่",
+    "B": "cytotoxic T cell ฆ่าเซลล์ติดเชื้อภายในเซลล์ ไม่ใช่ตัวหลักต่อราเส้นใยขนาดใหญ่",
+    "C": "NK cell ฆ่าเซลล์ติดไวรัสและเซลล์มะเร็งที่ขาด MHC I ไม่ใช่เซลล์หลักในกรณีนี้",
     "D": "✓ neutrophil ฆ่า hyphae",
     "E": "eosinophil ไม่ใช่"
    }
@@ -817,7 +817,7 @@
     "B": "hypersensitivity ไม่ใช่",
     "C": "✓ immunosuppression จาก chemo",
     "D": "leukemia เองไม่ใช่สาเหตุโดยตรง",
-    "E": "intracellular killing defect = CGD"
+    "E": "intracellular killing defect เป็นลักษณะของ CGD (โรคแต่กำเนิด) ไม่ใช่ผลจากเคมีบำบัด"
    }
   },
   {
@@ -859,7 +859,7 @@
     "A": "IgG ไม่เข้า hepatocyte",
     "B": "IFN-γ ช่วย",
     "C": "✓ CTL ฆ่าเซลล์ตับที่ติดเชื้อ",
-    "D": "Th ช่วย",
+    "D": "helper T cell ช่วยสั่งการ แต่ตัวฆ่า hepatocyte ที่ติดเชื้อคือ cytotoxic T cell",
     "E": "macrophage ไม่ใช่"
    }
   },
@@ -899,7 +899,7 @@
    "audit_ref": "imm_46_MCQ_020",
    "key_concept": "• antibody ต่อ merozoite: บล็อก invasion\n• P. vivax จับ Duffy antigen\n• CTL ใช้ liver stage",
    "option_why": {
-    "A": "induce phagocyte อ้อม",
+    "A": "antibody ช่วย opsonization ได้ แต่บทบาทสำคัญที่สุดตามเฉลยคือกันไม่ให้ merozoite เกาะเข้าเม็ดเลือดแดง",
     "B": "complement ไม่ใช่หลัก",
     "C": "antibody ไม่ฆ่า intracellular protozoa",
     "D": "✓ block attachment ต่อ RBC",
@@ -1028,7 +1028,7 @@
    "audit_ref": "imm_46_MCQ_023",
    "key_concept": "• SLE: ANA (sensitive), anti-dsDNA/anti-Sm (specific)\n• complement ต่ำ\n• type III",
    "option_why": {
-    "A": "RF ใน RA",
+    "A": "rheumatoid factor พบใน rheumatoid arthritis ไม่จำเพาะต่อ SLE",
     "B": "✓ anti-dsDNA จำเพาะ SLE",
     "C": "ANA ไวแต่ไม่จำเพาะ",
     "D": "ANCA ไม่ใช่",
@@ -1115,10 +1115,10 @@
    "key_concept": "• hyperacute: ABO + preformed Ab\n• acute: HLA mismatch\n• crossmatch",
    "option_why": {
     "A": "✓ ABO blood group → hyperacute",
-    "B": "HLA-A",
-    "C": "HLA-B",
-    "D": "HLA-C",
-    "E": "HLA-DQ"
+    "B": "HLA-A ไม่ตรงกันทำ acute rejection ใน สัปดาห์–เดือน ไม่ใช่ภายในไม่กี่นาที",
+    "C": "HLA-B ไม่ตรงกันทำ acute rejection ไม่ใช่ hyperacute",
+    "D": "HLA-C มีบทบาทน้อยในการปฏิเสธอวัยวะ และไม่ทำ hyperacute rejection",
+    "E": "HLA-DQ ไม่ตรงกันทำ acute/chronic rejection ไม่ใช่ทันทีขณะผ่าตัด"
    }
   },
   {
@@ -1161,7 +1161,7 @@
     "B": "severe graft rejection กว้างไป",
     "C": "donor T cell ไม่ใช่",
     "D": "donor macrophage ไม่ใช่",
-    "E": "ไม่มีข้อใดถูกต้อง"
+    "E": "มีข้อที่ถูกอยู่แล้ว: acute rejection เกิดจาก T cell ของผู้รับถูกกระตุ้น"
    }
   },
   {
@@ -1266,7 +1266,7 @@
    },
    "answer": "C",
    "answer_status": "verified",
-   "explanation": "Rhinovirus/ข้อนี้: C Biosafety — เก็บสิ่งส่งตรวจในห้องปิด",
+   "explanation": "ตามหลัก biosafety เก็บสิ่งส่งตรวจ influenza ในห้องปิดที่ไม่ระบายอากาศออกสู่ภายนอกโดยตรง ร่วมกับ PPE",
    "refs": [
     {
      "paper": "MCQ46",
@@ -1909,9 +1909,9 @@
    ],
    "option_why": {
     "A": "✓ exotoxin in sympathetic (เฉลย)",
-    "B": "exotoxin in parasympathetic",
-    "C": "endotoxin in sympathetic",
-    "D": "endotoxin in parasympathetic",
+    "B": "tetanospasmin เป็น exotoxin จริง แต่ไม่ได้ออกฤทธิ์ที่ parasympathetic ตามเฉลย",
+    "C": "C. tetani เป็น gram-positive ไม่มี endotoxin",
+    "D": "C. tetani เป็น gram-positive ไม่มี endotoxin และไม่ได้ออกฤทธิ์ที่ parasympathetic",
     "E": "endotoxin ทั้งสอง"
    }
   },
@@ -2213,7 +2213,7 @@
     "B": "✓ dengue (ตามเฉลยต้นฉบับ)",
     "C": "malaria ไม่ใช่",
     "D": "leptospirosis ตรงกับ biphasic + conjunctival + calf tenderness (AI เห็นว่า D)",
-    "E": "TB ไม่ใช่"
+    "E": "วัณโรคเป็นโรคเรื้อรัง ไข้ต่ำ ๆ น้ำหนักลด ไม่ใช่ไข้เฉียบพลันแบบสองระยะหลังล่องแพ"
    }
   },
   {
@@ -2254,7 +2254,7 @@
    "option_why": {
     "A": "✓ invade ผ่านผิวหนังที่มีแผล",
     "B": "กินไม่ใช่หลัก",
-    "C": "สูดไม่ใช่",
+    "C": "Leptospira ไม่ติดต่อทางการหายใจ แต่เข้าทางผิวหนังที่มีแผลหรือเยื่อบุเมื่อสัมผัสน้ำปนเปื้อนฉี่สัตว์",
     "D": "chigger = scrub typhus",
     "E": "สัตว์กัดไม่ใช่"
    }
@@ -2775,7 +2775,7 @@
     "A": "HSV-1 ไม่ใช่",
     "B": "VZV ไม่ใช่",
     "C": "HSV-2 ไม่ใช่",
-    "D": "EBV ลบ",
+    "D": "ผลตรวจ anti-EBV เป็นลบ และ EBV ไม่ทำ owl's eye inclusion",
     "E": "✓ CMV: owl's eye"
    }
   },
@@ -2817,7 +2817,7 @@
    "option_why": {
     "A": "✓ blood transfusion",
     "B": "droplet ไม่ใช่",
-    "C": "RT ไม่ใช่",
+    "C": "ทางเดินหายใจไม่ใช่ทางติดต่อของ Zika ซึ่งติดทางยุง เพศสัมพันธ์ และเลือด",
     "D": "airborne ไม่ใช่",
     "E": "kissing ไม่ใช่"
    }
@@ -3376,9 +3376,9 @@
    "audit_ref": "imm_46_MCQ_081",
    "key_concept": "• H. influenzae: β-lactamase\n• S. pneumoniae: PBP alteration\n• amox-clav",
    "option_why": {
-    "A": "decrease uptake",
-    "B": "efflux",
-    "C": "target amplification",
+    "A": "การลดการนำยาเข้าเซลล์ไม่ใช่กลไกหลักของ H. influenzae ต่อ penicillin",
+    "B": "efflux pump ไม่ใช่กลไกหลักต่อ β-lactam ในเชื้อนี้",
+    "C": "target amplification ไม่ใช่กลไกที่พบใน H. influenzae",
     "D": "✓ enzymatic inactivation (β-lactamase)",
     "E": "sequestration"
    }
@@ -3399,7 +3399,7 @@
    },
    "answer": "C",
    "answer_status": "verified",
-   "explanation": "HIV + candidiasis: fluconazole 1st line",
+   "explanation": "ผู้ป่วย HIV ที่ติดเชื้อ Candida ใช้ fluconazole เป็นยาลำดับแรก",
    "refs": [
     {
      "paper": "MCQ46",
@@ -3550,7 +3550,7 @@
    "option_why": {
     "A": "foscarnet: nephrotoxicity",
     "B": "acyclovir: nephro/CNS",
-    "C": "nevirapine: rash",
+    "C": "nevirapine มีผลข้างเคียงเด่นคือผื่นและตับอักเสบ ไม่ใช่โลหิตจาง",
     "D": "bictegravir ไม่ใช่",
     "E": "✓ zidovudine: bone marrow suppression"
    }
@@ -3571,7 +3571,7 @@
    },
    "answer": "E",
    "answer_status": "verified",
-   "explanation": "Efavirenz = NNRTI",
+   "explanation": "Efavirenz เป็น NNRTI จับ reverse transcriptase นอกตำแหน่ง active site",
    "refs": [
     {
      "paper": "MCQ46",
@@ -3591,10 +3591,10 @@
    "audit_ref": "imm_46_MCQ_087",
    "key_concept": "• NNRTI: efavirenz, nevirapine\n• NRTI: zidovudine, tenofovir\n• INSTI: -tegravir",
    "option_why": {
-    "A": "PI",
-    "B": "FI",
-    "C": "CCRI",
-    "D": "NRTI",
+    "A": "protease inhibitor คือยากลุ่ม -navir เช่น lopinavir",
+    "B": "fusion inhibitor คือ enfuvirtide",
+    "C": "CCR5 inhibitor คือ maraviroc",
+    "D": "NRTI เป็น nucleoside analog เช่น zidovudine, tenofovir",
     "E": "✓ NNRTI"
    }
   },
@@ -3635,10 +3635,10 @@
    "key_concept": "• primaquine: hypnozoite + gametocytocide\n• ต้องตรวจ G6PD\n• chloroquine: blood stage",
    "option_why": {
     "A": "growing trophozoite",
-    "B": "schizont",
+    "B": "blood schizont ถูกฆ่าด้วย chloroquine/artemisinin ไม่ใช่ primaquine",
     "C": "✓ gametocyte",
-    "D": "ring",
-    "E": "primary schizont"
+    "D": "ring form เป็นระยะในเม็ดเลือดแดง ใช้ chloroquine/artemisinin",
+    "E": "primary tissue schizont ไม่ใช่ข้อที่เฉลยเลือก (primaquine เด่นที่ hypnozoite และ gametocyte)"
    }
   },
   {

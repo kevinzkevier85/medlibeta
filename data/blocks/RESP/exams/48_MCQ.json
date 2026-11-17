@@ -92,7 +92,7 @@
     "A": "100 ต่ำเกิน",
     "B": "150 คือที่ระดับน้ำทะเล (ไม่หัก PH₂O)",
     "C": "130 ไม่ตรงสูตร",
-    "D": "160 เกิน",
+    "D": "160 คือ PO2 ของอากาศแห้งที่ระดับน้ำทะเล (760 × 0.21) ไม่ใช่ PAO2 ที่ความดัน 620 mmHg",
     "E": "✓ ≈ 120 mmHg"
    }
   },
@@ -135,7 +135,7 @@
     "A": "asthma ลด ventilation → V/Q ลด",
     "B": "✓ pulmonary embolism: Q ลด V/Q เพิ่ม",
     "C": "airway obstruction ทำ V/Q ลด",
-    "D": "pulmonary edema ลด V",
+    "D": "pulmonary edema ลด ventilation ของถุงลม V/Q จึงต่ำลง",
     "E": "atelectasis V = 0 (shunt)"
    }
   },
@@ -176,8 +176,8 @@
    "key_concept": "• อายุมาก: recoil ↓ → RV ↑\n• chest wall แข็งขึ้น\n• VC, FEV₁ ↓",
    "option_why": {
     "A": "FEV₁ ลดตามอายุ",
-    "B": "VC ลด",
-    "C": "FVC ลด",
+    "B": "vital capacity ลดลงตามอายุ เพราะ residual volume เพิ่มขึ้น",
+    "C": "FVC ลดลงตามอายุจาก elastic recoil และกำลังกล้ามเนื้อที่ลดลง",
     "D": "airway diameter แคบลง",
     "E": "✓ residual volume เพิ่ม"
    }
@@ -370,7 +370,7 @@
    },
    "answer": "E",
    "answer_status": "disputed",
-   "explanation": "เฉลยต้นฉบับ E (membrane หนา) AI เห็นว่าในหืด PaO₂ ลดจาก V/Q mismatch/ alveolar PCO₂ เพิ่ม (A)\n⚠️ เฉลยขัดกับ AI",
+   "explanation": "เฉลยต้นฉบับ E (membrane หนา) AI เห็นว่าในหืด PaO₂ ลดจาก V/Q mismatch/ alveolar PCO₂ เพิ่ม (A)",
    "refs": [
     {
      "paper": "MCQ48",
@@ -396,7 +396,8 @@
     "C": "alveolar surface area ลดคือ emphysema",
     "D": "alveolar–capillary PO₂ difference ลดทำ diffusion ลด",
     "E": "✓ respiratory membrane หนา (ตามเฉลยต้นฉบับ)"
-   }
+   },
+   "audit_note": "เฉลยขัดกับ AI"
   },
   {
    "id": "RESP-48-MCQ-010",
@@ -502,7 +503,7 @@
    },
    "answer": "D",
    "answer_status": "disputed",
-   "explanation": "ระหว่างหายใจออก (เฉลย D: transpulmonary pressure ลบ; AI เลือก C: ปริมาตรปอดน้อยกว่า FRC)\n⚠️ เฉลยขัดกับ AI",
+   "explanation": "ระหว่างหายใจออก (เฉลย D: transpulmonary pressure ลบ; AI เลือก C: ปริมาตรปอดน้อยกว่า FRC)",
    "refs": [
     {
      "paper": "MCQ48",
@@ -528,7 +529,8 @@
     "C": "ปริมาตรน้อยกว่า FRC ในการหายใจออกแรง (AI เลือกตัวนี้)",
     "D": "✓ transpulmonary pressure ติดลบ (ตามเฉลยต้นฉบับ; Ptp ปกติเป็นบวก)",
     "E": "intrapleural pressure ติดลบน้อยลงไม่ใช่มากขึ้น"
-   }
+   },
+   "audit_note": "เฉลยขัดกับ AI"
   },
   {
    "id": "RESP-48-MCQ-013",
@@ -546,7 +548,7 @@
    },
    "answer": "E",
    "answer_status": "disputed",
-   "explanation": "V/Q ลด → PAO₂ ลด PACO₂ เพิ่ม (เฉลยต้นฉบับ E: increased PO₂; AI เลือก B: PCO₂ เพิ่ม)\n⚠️ เฉลยขัดกับ AI",
+   "explanation": "V/Q ลด → PAO₂ ลด PACO₂ เพิ่ม (เฉลยต้นฉบับ E: increased PO₂; AI เลือก B: PCO₂ เพิ่ม)",
    "refs": [
     {
      "paper": "MCQ48",
@@ -567,12 +569,13 @@
    "ai_answer": "B",
    "key_concept": "• V/Q ↓: PAO₂ ↓ PACO₂ ↑\n• ข้อนี้เฉลยต้นฉบับขัดกับ AI",
    "option_why": {
-    "A": "PN₂ ไม่ลด",
+    "A": "PN2 ในถุงลมแทบไม่เปลี่ยน เพราะไนโตรเจนไม่ถูกแลกเปลี่ยน สิ่งที่เปลี่ยนคือ PO2 และ PCO2",
     "B": "PCO₂ เพิ่มตามหลักสรีรวิทยา (AI เลือกตัวนี้)",
     "C": "PN₂ ไม่เพิ่ม",
     "D": "PO₂ ไม่เพิ่ม",
     "E": "✓ increased PO₂ (ตามเฉลยต้นฉบับ)"
-   }
+   },
+   "audit_note": "เฉลยขัดกับ AI"
   },
   {
    "id": "RESP-48-MCQ-014",
@@ -685,7 +688,7 @@
    },
    "answer": "D",
    "answer_status": "disputed",
-   "explanation": "transection เหนือ pons: ศูนย์ medulla ยังคุมจังหวะ; ตามเฉลยต้นฉบับ D (AI เลือก A: voluntary control หายไป)\n⚠️ เฉลยขัดกับ AI",
+   "explanation": "transection เหนือ pons: ศูนย์ medulla ยังคุมจังหวะ; ตามเฉลยต้นฉบับ D (AI เลือก A: voluntary control หายไป)",
    "refs": [
     {
      "paper": "MCQ48",
@@ -711,7 +714,8 @@
     "C": "Hering-Breuer ยังทำงานผ่าน vagus",
     "D": "✓ central chemoreceptor ไม่ควบคุม ventilation (ตามเฉลยต้นฉบับ)",
     "E": "peripheral chemoreceptor ยังทำงาน"
-   }
+   },
+   "audit_note": "เฉลยขัดกับ AI"
   },
   {
    "id": "RESP-48-MCQ-017",
@@ -772,7 +776,7 @@
    },
    "answer": "B",
    "answer_status": "disputed",
-   "explanation": "VA = (VT − VD) × f; VT = 0.8 L → VA = (0.8 − 0.2) × 10 = 6.0 L/min (เฉลยต้นฉบับ B คำนวณ VT ผิด AI เลือก C)\n⚠️ เฉลยขัดกับ AI",
+   "explanation": "VA = (VT − VD) × f; VT = 0.8 L → VA = (0.8 − 0.2) × 10 = 6.0 L/min (เฉลยต้นฉบับ B คำนวณ VT ผิด AI เลือก C)",
    "refs": [
     {
      "paper": "MCQ48",
@@ -796,9 +800,10 @@
     "A": "7.2 ไม่ตรงสูตร",
     "B": "✓ 7.8 (ตามเฉลยต้นฉบับ แต่ใช้ 8 L เป็น VT ผิด)",
     "C": "6.0 L/min ถูกตามสูตร (AI เลือกตัวนี้)",
-    "D": "8.2 เกิน",
+    "D": "8.2 มากกว่า total ventilation ซึ่งเป็นไปไม่ได้ เพราะต้องหัก dead space ventilation ออก",
     "E": "0.72 หน่วยผิด"
-   }
+   },
+   "audit_note": "เฉลยขัดกับ AI"
   },
   {
    "id": "RESP-48-MCQ-019",
@@ -859,7 +864,7 @@
    },
    "answer": "B",
    "answer_status": "disputed",
-   "explanation": "ปัจจัยจำกัด O₂ diffusion ใน normal subject: เฉลยต้นฉบับ B (surface area) AI เลือก E (membrane thickness)\n⚠️ เฉลยขัดกับ AI",
+   "explanation": "ปัจจัยจำกัด O₂ diffusion ใน normal subject: เฉลยต้นฉบับ B (surface area) AI เลือก E (membrane thickness)",
    "refs": [
     {
      "paper": "MCQ48",
@@ -885,7 +890,8 @@
     "C": "BP ไม่เกี่ยว",
     "D": "Hct ไม่เกี่ยว",
     "E": "ความหนา membrane (AI เลือกตัวนี้)"
-   }
+   },
+   "audit_note": "เฉลยขัดกับ AI"
   },
   {
    "id": "RESP-48-MCQ-021",
@@ -989,7 +995,7 @@
    },
    "answer": "A",
    "answer_status": "disputed",
-   "explanation": "ทารก 28 สัปดาห์ (RDS) ขาด surfactant → compliance ลด (เฉลยต้นฉบับ A: airway resistance เพิ่ม; AI เลือก D)\n⚠️ เฉลยขัดกับ AI",
+   "explanation": "ทารก 28 สัปดาห์ (RDS) ขาด surfactant → compliance ลด (เฉลยต้นฉบับ A: airway resistance เพิ่ม; AI เลือก D)",
    "refs": [
     {
      "paper": "MCQ48",
@@ -1015,7 +1021,8 @@
     "C": "transpulmonary pressure ที่ต้องใช้เพิ่ม",
     "D": "lung compliance ลด ตรงกับ RDS (AI เลือกตัวนี้)",
     "E": "surface tension เพิ่มไม่ลด"
-   }
+   },
+   "audit_note": "เฉลยขัดกับ AI"
   },
   {
    "id": "RESP-48-MCQ-024",
@@ -1162,7 +1169,7 @@
    },
    "answer": "D",
    "answer_status": "disputed",
-   "explanation": "พิษยาฆ่าแมลง (organophosphate) ทำให้ respiratory muscle ล้า; เฉลยต้นฉบับ D (histotoxic) ต้นฉบับขีดทั้ง C และ D\n⚠️ ต้นฉบับวงไว้หลายตัว",
+   "explanation": "พิษยาฆ่าแมลง (organophosphate) ทำให้ respiratory muscle ล้า; เฉลยต้นฉบับ D (histotoxic) ต้นฉบับขีดทั้ง C และ D",
    "refs": [
     {
      "paper": "MCQ48",
@@ -1187,7 +1194,8 @@
     "C": "over-utilization ต้นฉบับขีดร่วมด้วย",
     "D": "✓ histotoxic hypoxia: เซลล์ใช้ O₂ ไม่ได้",
     "E": "anemic ไม่เกี่ยว"
-   }
+   },
+   "audit_note": "ต้นฉบับวงไว้หลายตัว"
   },
   {
    "id": "RESP-48-MCQ-028",
@@ -1248,7 +1256,7 @@
    },
    "answer": "D",
    "answer_status": "disputed",
-   "explanation": "PO₂ alveolar ต่ำกว่าอากาศแห้ง: เฉลยต้นฉบับ D (inspired air ผสม residual air) AI เลือก E (O₂ แพร่เข้า capillary)\n⚠️ เฉลยขัดกับ AI",
+   "explanation": "PO₂ alveolar ต่ำกว่าอากาศแห้ง: เฉลยต้นฉบับ D (inspired air ผสม residual air) AI เลือก E (O₂ แพร่เข้า capillary)",
    "refs": [
     {
      "paper": "MCQ48",
@@ -1274,7 +1282,8 @@
     "C": "anatomical shunt ไม่ใช่",
     "D": "✓ inspired air ผสมกับ residual air (ตามเฉลยต้นฉบับ)",
     "E": "O₂ แพร่เข้า pulmonary capillary (AI เลือกตัวนี้)"
-   }
+   },
+   "audit_note": "เฉลยขัดกับ AI"
   },
   {
    "id": "RESP-48-MCQ-030",
@@ -1292,7 +1301,7 @@
    },
    "answer": "A",
    "answer_status": "disputed",
-   "explanation": "pulmonary edema จาก hypoxia: เฉลยต้นฉบับ A (hydrostatic pressure เพิ่มจาก HPV); AI เลือก C (permeability)\n⚠️ เฉลยขัดกับ AI",
+   "explanation": "pulmonary edema จาก hypoxia: เฉลยต้นฉบับ A (hydrostatic pressure เพิ่มจาก HPV); AI เลือก C (permeability)",
    "refs": [
     {
      "paper": "MCQ48",
@@ -1318,7 +1327,8 @@
     "C": "permeability เพิ่ม (AI เลือกตัวนี้)",
     "D": "lymph drainage ลดไม่ใช่",
     "E": "oncotic เพิ่มลดการรั่ว"
-   }
+   },
+   "audit_note": "เฉลยขัดกับ AI"
   },
   {
    "id": "RESP-48-MCQ-031",
@@ -1422,7 +1432,7 @@
    },
    "answer": "E",
    "answer_status": "disputed",
-   "explanation": "oxygen–Hb affinity ลดลง (curve shift ขวา) ใน high altitude (↑2,3-DPG) ตามเฉลยต้นฉบับ E\n⚠️ เฉลยขัดกับ AI",
+   "explanation": "oxygen–Hb affinity ลดลง (curve shift ขวา) ใน high altitude (↑2,3-DPG) ตามเฉลยต้นฉบับ E",
    "refs": [
     {
      "paper": "MCQ48",
@@ -1448,7 +1458,8 @@
     "C": "hypothermia ทำ affinity เพิ่ม",
     "D": "HbF affinity สูงกว่า",
     "E": "✓ high altitude: 2,3-DPG เพิ่ม affinity ลด"
-   }
+   },
+   "audit_note": "เฉลยขัดกับ AI"
   },
   {
    "id": "RESP-48-MCQ-034",
@@ -1681,7 +1692,7 @@
    },
    "answer": "B",
    "answer_status": "disputed",
-   "explanation": "zone 1 ลดเมื่อ arterial pressure เพิ่ม (เฉลยต้นฉบับ B: positive pressure ventilation; AI เลือก D)\n⚠️ เฉลยขัดกับ AI",
+   "explanation": "zone 1 ลดเมื่อ arterial pressure เพิ่ม (เฉลยต้นฉบับ B: positive pressure ventilation; AI เลือก D)",
    "refs": [
     {
      "paper": "MCQ48",
@@ -1707,7 +1718,8 @@
     "C": "supine ลด zone 1 ได้",
     "D": "arterial BP เพิ่ม ทำให้ zone 1 ลด (AI เลือกตัวนี้)",
     "E": "ยกขาเพิ่ม venous return"
-   }
+   },
+   "audit_note": "เฉลยขัดกับ AI"
   },
   {
    "id": "RESP-48-MCQ-040",
@@ -1725,7 +1737,7 @@
    },
    "answer": "E",
    "answer_status": "disputed",
-   "explanation": "CO poisoning: O₂ capacity ลด, SaO₂ ลด, PaO₂ ปกติ (เฉลยต้นฉบับ E; AI เลือก B)\n⚠️ เฉลยขัดกับ AI",
+   "explanation": "CO poisoning: O₂ capacity ลด, SaO₂ ลด, PaO₂ ปกติ (เฉลยต้นฉบับ E; AI เลือก B)",
    "refs": [
     {
      "paper": "MCQ48",
@@ -1751,7 +1763,8 @@
     "C": "HbO₂ saturation ลดไม่เพิ่ม",
     "D": "PO₂ ปกติไม่เพิ่ม",
     "E": "✓ decreased HbO₂ saturation"
-   }
+   },
+   "audit_note": "เฉลยขัดกับ AI"
   },
   {
    "id": "RESP-48-MCQ-041",
@@ -1855,7 +1868,7 @@
    },
    "answer": "A",
    "answer_status": "disputed",
-   "explanation": "Haldane effect: O₂ เพิ่มทำให้ Hb จับ CO₂ น้อยลง; เฉลยต้นฉบับ A (PaO₂ ลด → venous PO₂ ลด) AI เลือก D\n⚠️ เฉลยขัดกับ AI",
+   "explanation": "Haldane effect: O₂ เพิ่มทำให้ Hb จับ CO₂ น้อยลง; เฉลยต้นฉบับ A (PaO₂ ลด → venous PO₂ ลด) AI เลือก D",
    "refs": [
     {
      "paper": "MCQ48",
@@ -1881,7 +1894,8 @@
     "C": "COHb เพิ่ม ไม่ลด PaO₂ จริง",
     "D": "O₂ saturation เพิ่ม → CO₂ ถูกปล่อย PaCO₂ เพิ่ม (AI เลือกตัวนี้)",
     "E": "carbamino-Hb เพิ่มไม่ลด PaO₂"
-   }
+   },
+   "audit_note": "เฉลยขัดกับ AI"
   },
   {
    "id": "RESP-48-MCQ-044",
@@ -1985,7 +1999,7 @@
    },
    "answer": "C",
    "answer_status": "disputed",
-   "explanation": "upright lung: เฉลยต้นฉบับ C (alveolar pressure); AI เลือก B (PAO₂ ที่ apex สูงกว่า base)\n⚠️ เฉลยขัดกับ AI",
+   "explanation": "upright lung: เฉลยต้นฉบับ C (alveolar pressure); AI เลือก B (PAO₂ ที่ apex สูงกว่า base)",
    "refs": [
     {
      "paper": "MCQ48",
@@ -2011,7 +2025,8 @@
     "C": "✓ alveolar pressure (ตามเฉลยต้นฉบับ)",
     "D": "compliance ที่ base สูงกว่า",
     "E": "intrapleural ติดลบกว่าที่ apex (เป็นบวกน้อยกว่า)"
-   }
+   },
+   "audit_note": "เฉลยขัดกับ AI"
   },
   {
    "id": "RESP-48-MCQ-047",
@@ -2052,7 +2067,7 @@
     "A": "✓ 13",
     "B": "2.6 ผิดหน่วย",
     "C": "20 คือค่า Hb 15",
-    "D": "26 ผิด",
+    "D": "26 เป็นสองเท่าของค่าจริง: 10 g/dL × 1.3 mL/g = 13 mL/dL",
     "E": "1.3 คือ O₂ ต่อ 1 g"
    }
   },
@@ -2115,7 +2130,7 @@
    },
    "answer": "A",
    "answer_status": "disputed",
-   "explanation": "stridor + vocal cord adduction ขณะหายใจเข้า = กล้ามเนื้อเปิดสายเสียงอ่อนแรง (posterior cricoarytenoid) เฉลยต้นฉบับ A (thyroarytenoid)\n⚠️ เฉลยขัดกับ AI",
+   "explanation": "stridor + vocal cord adduction ขณะหายใจเข้า = กล้ามเนื้อเปิดสายเสียงอ่อนแรง (posterior cricoarytenoid) เฉลยต้นฉบับ A (thyroarytenoid)",
    "refs": [
     {
      "paper": "MCQ48",
@@ -2141,7 +2156,8 @@
     "C": "cricothyroid ตึงสายเสียง",
     "D": "vocalis ควบคุมความตึงสายเสียง",
     "E": "posterior cricoarytenoid คือ abductor เดียว (AI เลือกตัวนี้)"
-   }
+   },
+   "audit_note": "เฉลยขัดกับ AI"
   },
   {
    "id": "RESP-48-MCQ-050",
@@ -2266,10 +2282,10 @@
    "key_concept": "• mucolytic: bromhexine, acetylcysteine\n• antitussive: DXM, codeine",
    "option_why": {
     "A": "✓ bromhexine",
-    "B": "benzonatate กดไอ",
-    "C": "dextromethorphan กดไอ",
+    "B": "benzonatate เป็นยากดไอโดยทำให้ stretch receptor ในปอดชา ไม่ได้ละลายเสมหะ",
+    "C": "dextromethorphan เป็นยากดศูนย์ไอ ไม่มีฤทธิ์ละลายเสมหะ และทำให้เสมหะคั่งได้",
     "D": "loratadine antihistamine",
-    "E": "codeine กดไอ"
+    "E": "codeine เป็นยากดศูนย์ไอ (antitussive) ไม่ได้ละลายหรือลดความเหนียวของเสมหะ"
    }
   },
   {
@@ -2503,7 +2519,7 @@
    },
    "answer": "A",
    "answer_status": "disputed",
-   "explanation": "ภาพ CXR กรอบสี่เหลี่ยม: เฉลยต้นฉบับ A (metallic); AI เลือก B (air)\n⚠️ เฉลยขัดกับ AI",
+   "explanation": "ภาพ CXR กรอบสี่เหลี่ยม: เฉลยต้นฉบับ A (metallic); AI เลือก B (air)",
    "refs": [
     {
      "paper": "MCQ48",
@@ -2530,6 +2546,7 @@
     "D": "soft tissue density เทา",
     "E": "fat density เทาเข้ม"
    },
+   "audit_note": "เฉลยขัดกับ AI",
    "image": "img/RESP-48-MCQ-058.jpg",
    "image_caption": "CXR: กรอบสี่เหลี่ยมชี้บริเวณที่ถามความหนาแน่น"
   },
@@ -2635,7 +2652,7 @@
    },
    "answer": "D",
    "answer_status": "disputed",
-   "explanation": "ถุงซีสต์หลายก้อนที่ปอด = congenital cystic lesion; เฉลยต้นฉบับ D (arrest ของ lung bud separation) AI เลือก B (abnormal branching)\n⚠️ เฉลยขัดกับ AI",
+   "explanation": "ถุงซีสต์หลายก้อนที่ปอด = congenital cystic lesion; เฉลยต้นฉบับ D (arrest ของ lung bud separation) AI เลือก B (abnormal branching)",
    "refs": [
     {
      "paper": "MCQ48",
@@ -2661,7 +2678,8 @@
     "C": "surfactant ไม่ใช่",
     "D": "✓ arrest ของ lung bud separation (ตามเฉลยต้นฉบับ)",
     "E": "alveolar proliferation ไม่ใช่"
-   }
+   },
+   "audit_note": "เฉลยขัดกับ AI"
   },
   {
    "id": "RESP-48-MCQ-062",
@@ -2702,7 +2720,7 @@
     "A": "✓ palpitation / tachycardia",
     "B": "ท้องเสียไม่ใช่",
     "C": "ความดันตกพบน้อย",
-    "D": "ชักพบน้อย",
+    "D": "ชักไม่ใช่ผลข้างเคียงที่พบบ่อยของ β2 agonist (พบใน theophylline เกินขนาด)",
     "E": "bradycardia ไม่ใช่"
    }
   },
@@ -2765,7 +2783,7 @@
    },
    "answer": "B",
    "answer_status": "disputed",
-   "explanation": "COPD: เฉลยต้นฉบับ B (alveolar attachment ลด) AI เลือก D (pathologic site ที่ air space และ bronchus)\n⚠️ เฉลยขัดกับ AI",
+   "explanation": "COPD: เฉลยต้นฉบับ B (alveolar attachment ลด) AI เลือก D (pathologic site ที่ air space และ bronchus)",
    "refs": [
     {
      "paper": "MCQ48",
@@ -2791,7 +2809,8 @@
     "C": "Reid index เพิ่มใน chronic bronchitis",
     "D": "รอยโรคที่ air space และ bronchus (AI เลือกตัวนี้)",
     "E": "กลไก hypoxemia คือ V/Q mismatch"
-   }
+   },
+   "audit_note": "เฉลยขัดกับ AI"
   },
   {
    "id": "RESP-48-MCQ-065",
@@ -3540,7 +3559,7 @@
    },
    "answer": "B",
    "answer_status": "disputed",
-   "explanation": "pneumothorax ที่เกิดทันทีใน 50 ปี; เฉลยต้นฉบับ B (bronchopleural fistula); AI เลือก E (lung blebs)\n⚠️ เฉลยขัดกับ AI",
+   "explanation": "pneumothorax ที่เกิดทันทีใน 50 ปี; เฉลยต้นฉบับ B (bronchopleural fistula); AI เลือก E (lung blebs)",
    "refs": [
     {
      "paper": "MCQ48",
@@ -3566,7 +3585,8 @@
     "C": "emphysema เป็นโรคพื้นฐาน",
     "D": "bronchogenic cyst ไม่ใช่",
     "E": "blebs แตก = spontaneous pneumothorax (AI เลือกตัวนี้)"
-   }
+   },
+   "audit_note": "เฉลยขัดกับ AI"
   },
   {
    "id": "RESP-48-MCQ-083",
@@ -3670,7 +3690,7 @@
    },
    "answer": "E",
    "answer_status": "disputed",
-   "explanation": "descending aorta ถูกบังโดยรอยโรคที่ left lower lobe/ posterior (เฉลยต้นฉบับ E: left pleural effusion; AI เลือก C)\n⚠️ เฉลยขัดกับ AI",
+   "explanation": "descending aorta ถูกบังโดยรอยโรคที่ left lower lobe/ posterior (เฉลยต้นฉบับ E: left pleural effusion; AI เลือก C)",
    "refs": [
     {
      "paper": "MCQ48",
@@ -3696,7 +3716,8 @@
     "C": "pneumonia LUL บัง aortic knob (AI เลือกตัวนี้)",
     "D": "anterior mediastinal mass บังขอบหัวใจ",
     "E": "✓ left pleural effusion (ตามเฉลยต้นฉบับ)"
-   }
+   },
+   "audit_note": "เฉลยขัดกับ AI"
   },
   {
    "id": "RESP-48-MCQ-086",
@@ -3714,7 +3735,7 @@
    },
    "answer": "A",
    "answer_status": "disputed",
-   "explanation": "ผนังเซลล์ต้าน phagocytosis: เฉลยต้นฉบับ A (Klebsiella capsule); AI เลือก E (S. pneumoniae)\n⚠️ เฉลยขัดกับ AI",
+   "explanation": "ผนังเซลล์ต้าน phagocytosis: เฉลยต้นฉบับ A (Klebsiella capsule); AI เลือก E (S. pneumoniae)",
    "refs": [
     {
      "paper": "MCQ48",
@@ -3740,7 +3761,8 @@
     "C": "H. influenzae มี capsule แต่ไม่ใช่ข้อหลัก",
     "D": "influenza ไม่มี wall",
     "E": "S. pneumoniae polysaccharide capsule (AI เลือกตัวนี้)"
-   }
+   },
+   "audit_note": "เฉลยขัดกับ AI"
   },
   {
    "id": "RESP-48-MCQ-087",
@@ -3961,7 +3983,7 @@
    "option_why": {
     "A": "cromolyn stabilize mast cell",
     "B": "montelukast = LTRA",
-    "C": "beclomethasone = ICS",
+    "C": "beclomethasone เป็น inhaled corticosteroid ออกฤทธิ์ผ่าน glucocorticoid receptor ไม่ใช่ β2",
     "D": "✓ albuterol (β₂ agonist)",
     "E": "zileuton ยับยั้ง 5-LO"
    }
@@ -4111,7 +4133,7 @@
    },
    "answer": "B",
    "answer_status": "disputed",
-   "explanation": "foreign body ที่ larynx/trachea ส่วนบน มี stridor: เฉลยต้นฉบับ B (V/Q mismatch); AI เลือก C (hypoventilation)\n⚠️ เฉลยขัดกับ AI",
+   "explanation": "foreign body ที่ larynx/trachea ส่วนบน มี stridor: เฉลยต้นฉบับ B (V/Q mismatch); AI เลือก C (hypoventilation)",
    "refs": [
     {
      "paper": "MCQ48",
@@ -4135,9 +4157,10 @@
     "A": "diffusion defect ไม่ใช่",
     "B": "✓ V/Q mismatch (ตามเฉลยต้นฉบับ)",
     "C": "hypoventilation จากการอุดทางเดินหายใจส่วนบน (AI เลือกตัวนี้)",
-    "D": "FiO₂ ปกติ",
+    "D": "เด็กหายใจอากาศปกติ FiO2 ไม่ได้ลดลง ปัญหาคือหลอดลมถูกอุด",
     "E": "O₂ binding ปกติ"
-   }
+   },
+   "audit_note": "เฉลยขัดกับ AI"
   },
   {
    "id": "RESP-48-MCQ-096",
