@@ -29,7 +29,7 @@
    },
    "answer": "B",
    "answer_status": "draft",
-   "explanation": "ที่ 24 สัปดาห์ fundus สูงเหนือสะดือเล็กน้อย (≈24 cm) เป็นปกติ",
+   "explanation": "ที่ 24 สัปดาห์ยอดมดลูกอยู่เหนือสะดือประมาณ 1/4 ของระยะสะดือถึงลิ้นปี่",
    "refs": [
     {
      "paper": "MCQ47",
@@ -41,13 +41,13 @@
    "tags": [],
    "source": "import",
    "audit_ref": "hlc_47_MCQ_001",
-   "key_concept": "• Fundal height ≈ GA in weeks\n• สรุป: ที่ 24 สัปดาห์ fundus สูงเหนือสะดือเล็กน้อย (≈24 cm) เป็นปกติ",
+   "key_concept": "• fundal height ≈ อายุครรภ์ (ซม.) ช่วง 20–34 สัปดาห์\n• 20 wk = ระดับสะดือ, 12 wk = เหนือ symphysis\n• HR เพิ่ม 10–20 bpm, BP ลดลงช่วงกลางครรภ์",
    "option_why": {
-    "A": "Parasternal heave ไม่ปกติ",
-    "B": "✓ Fundus เหนือสะดือ ¼ ปกติ",
-    "C": "บวมมืออาจเป็น preeclampsia",
-    "D": "ชีพจร 110 เร็วไป",
-    "E": "BP 140/80 สูง"
+    "A": "parasternal heave ข้างซ้ายบ่งถึง right ventricular hypertrophy ไม่ใช่ปกติในครรภ์",
+    "B": "✓ fundal height ~24 cm อยู่ราวระดับสะดือ/เหนือสะดือเล็กน้อย ตรงกับ 24 wk",
+    "C": "บวมที่มือจนกดแน่นบอกถึงภาวะ preeclampsia ได้ ไม่ใช่ปกติ",
+    "D": "ชีพจร 110 เป็น tachycardia เกินช่วงปกติ (ปกติเพิ่มแค่ 10–20 ครั้ง/นาที)",
+    "E": "BP 140/80 ถึงเกณฑ์ความดันสูงในครรภ์ ไม่ใช่ปกติ"
    },
    "audit_note": "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
   },
@@ -67,7 +67,7 @@
    },
    "answer": "A",
    "answer_status": "draft",
-   "explanation": "ตั้งครรภ์ 6 สัปดาห์พบ glycosuria 1+ ได้ปกติ",
+   "explanation": "ช่วง 6 สัปดาห์ glucose ในปัสสาวะ 1+ เกิดได้ปกติเพราะ GFR สูงขึ้นและการดูดซึมกลับกลูโคสที่ท่อไตลดลง",
    "refs": [
     {
      "paper": "MCQ47",
@@ -79,13 +79,22 @@
    "tags": [],
    "source": "import",
    "audit_ref": "hlc_47_MCQ_002",
-   "key_concept": "• Pregnancy: ↑ GFR, glycosuria\n• สรุป: ตั้งครรภ์ 6 สัปดาห์พบ glycosuria 1+ ได้ปกติ",
+   "key_concept": "• GFR เพิ่ม ~50% ตั้งแต่ไตรมาสแรก\n• glucosuria เล็กน้อยปกติในครรภ์ แต่ต้องคัดกรองเบาหวาน\n• protein >300 mg/24h = ผิดปกติ",
+   "mechanism": [
+    "GFR เพิ่มจาก renal plasma flow ↑",
+    "กลูโคสผ่านการกรองมากกว่า transport max ของท่อไต",
+    {
+     "s": "พบ glucose ในปัสสาวะ 1+ โดยน้ำตาลเลือดปกติ",
+     "answer": true
+    },
+    "ถือเป็นปกติของการตั้งครรภ์"
+   ],
    "option_why": {
-    "A": "✓ Glucose 1+ ปกติ",
-    "B": "Ketone ผิดปกติ",
-    "C": "Protein 1+ ผิดปกติ",
-    "D": "Hct 10 ต่ำ",
-    "E": "WBC 15,000 สูงเกินไตรมาสแรก"
+    "A": "✓ GFR เพิ่มจนกลูโคสเกินความสามารถดูดซึมกลับ จึงพบ glucosuria เล็กน้อยได้",
+    "B": "ketone 2+ บ่งชี้ ketosis จากอดอาหาร/อาเจียนมาก ไม่ใช่ปกติ",
+    "C": "protein 1+ ในปัสสาวะเกินปกติ ต้องสงสัยโรคไต/UTI",
+    "D": "Hct ปกติ ~30–40% หน่วยเป็น mg/dl ไม่ถูกต้อง",
+    "E": "WBC 15,000 ปกติช่วงท้ายครรภ์ (สูงได้ถึง 15–16k) แต่ที่ 6 wk ยังไม่ถึง"
    },
    "audit_note": "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
   },
@@ -105,7 +114,7 @@
    },
    "answer": "A",
    "answer_status": "draft",
-   "explanation": "ไม่พบน้ำคร่ำที่ 20 สัปดาห์ เกิดจาก renal agenesis (ไม่มีปัสสาวะ)",
+   "explanation": "Renal agenesis → ไม่มีปัสสาวะ จึงมองไม่เห็นน้ำคร่ำที่ 20 สัปดาห์ (anhydramnios)",
    "refs": [
     {
      "paper": "MCQ47",
@@ -117,13 +126,22 @@
    "tags": [],
    "source": "import",
    "audit_ref": "hlc_47_MCQ_003",
-   "key_concept": "• Anhydramnios: renal agenesis\n• สรุป: ไม่พบน้ำคร่ำที่ 20 สัปดาห์ เกิดจาก renal agenesis (ไม่มีปัสสาวะ)",
+   "key_concept": "• หลัง ~16 wk น้ำคร่ำส่วนใหญ่มาจากปัสสาวะทารก\n• atresia ของทางเดินอาหารส่วนบน → polyhydramnios\n• anhydramnios + ไต/กระเพาะปัสสาวะไม่เห็น = bilateral renal agenesis",
+   "mechanism": [
+    "ไตทั้งสองข้างไม่เกิด",
+    "ไม่มีปัสสาวะเข้าถุงน้ำคร่ำ",
+    {
+     "s": "น้ำคร่ำหายไปเกือบหมด (anhydramnios)",
+     "answer": true
+    },
+    "ตามด้วย Potter sequence และ pulmonary hypoplasia"
+   ],
    "option_why": {
-    "A": "✓ Renal agenesis",
-    "B": "Chorioangioma ทำ polyhydramnios",
-    "C": "Duodenal atresia ทำ poly",
-    "D": "Pulmonary hypoplasia เป็นผลตามมา",
-    "E": "TEF ทำ poly"
+    "A": "✓ ไม่มีไต = ไม่มีปัสสาวะซึ่งเป็นแหล่งหลักของน้ำคร่ำหลัง wk 16–20",
+    "B": "chorioangioma ทำให้ polyhydramnios ไม่ใช่ไม่มีน้ำคร่ำ",
+    "C": "duodenal atresia กลืนน้ำคร่ำไม่ได้ น้ำคร่ำมากขึ้น (double bubble)",
+    "D": "pulmonary hypoplasia เป็นผลของน้ำคร่ำน้อย ไม่ใช่สาเหตุ",
+    "E": "TE fistula/atresia ก็ทำให้น้ำคร่ำมากเพราะกลืนไม่ได้"
    },
    "audit_note": "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
   },
@@ -142,7 +160,7 @@
    },
    "answer": "D",
    "answer_status": "draft",
-   "explanation": "Down syndrome ในมารดาอายุมากส่วนใหญ่เกิดจาก nondisjunction",
+   "explanation": "ทารก Down จากมารดาอายุ 37 ปี ส่วนใหญ่เกิด nondisjunction ในการแบ่งเซลล์ meiosis I ของไข่",
    "refs": [
     {
      "paper": "MCQ47",
@@ -154,12 +172,21 @@
    "tags": [],
    "source": "import",
    "audit_ref": "hlc_47_MCQ_004",
-   "key_concept": "• Trisomy 21: meiotic nondisjunction\n• สรุป: Down syndrome ในมารดาอายุมากส่วนใหญ่เกิดจาก nondisjunction",
+   "key_concept": "• Down: trisomy 21 จาก nondisjunction ~95%, translocation ~4%, mosaic ~1%\n• เสี่ยงเพิ่มตามอายุมารดา\n• พบ VSD/AVSD, duodenal atresia, simian crease",
+   "mechanism": [
+    "ไข่ที่อยู่ค้างใน meiosis I นานตามอายุมารดา",
+    "โครโมโซม 21 ไม่แยกออกจากกัน",
+    {
+     "s": "เกิด nondisjunction → ไข่มี 21 สองชุด",
+     "answer": true
+    },
+    "ปฏิสนธิแล้วได้ trisomy 21"
+   ],
    "option_why": {
-    "A": "Post-zygotic mosaicism",
-    "B": "Mitosis",
-    "C": "Robertsonian ~4%",
-    "D": "✓ Nondisjunction"
+    "A": "post-zygotic mutation ทำให้ mosaicism พบน้อยกว่ามาก",
+    "B": "mitosis ของ DNA เป็นการแบ่งปกติของเซลล์ร่างกาย ไม่ก่อ trisomy 21 ตามธรรมชาติ",
+    "C": "Robertsonian translocation พบ ~4% มักไม่ผูกกับอายุมารดา",
+    "D": "✓ อายุมารดาสูง → ครอโมโซมไม่แยกจากกันใน meiosis ได้ trisomy 21 ~95%"
    },
    "audit_note": "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
   },
@@ -179,7 +206,7 @@
    },
    "answer": "C",
    "answer_status": "draft",
-   "explanation": "น้ำคร่ำแตกที่ 24 สัปดาห์ผลร้ายแรงสุดคือ pulmonary hypoplasia",
+   "explanation": "PROM ที่ 24 สัปดาห์ → น้ำคร่ำน้อย → ปอดไม่เจริญ (pulmonary hypoplasia)",
    "refs": [
     {
      "paper": "MCQ47",
@@ -191,13 +218,22 @@
    "tags": [],
    "source": "import",
    "audit_ref": "hlc_47_MCQ_005",
-   "key_concept": "• PPROM <24 wk: lung hypoplasia\n• สรุป: น้ำคร่ำแตกที่ 24 สัปดาห์ผลร้ายแรงสุดคือ pulmonary hypoplasia",
+   "key_concept": "• oligohydramnios ก่อน ~28 wk → pulmonary hypoplasia\n• fetal breathing + น้ำคร่ำช่วยขยายปอด\n• น้อยกว่า 5 cm AFI = oligohydramnios",
+   "mechanism": [
+    "น้ำคร่ำรั่วตั้งแต่ 24 wk",
+    "ทรวงอกถูกบีบ fetal breathing ลดลง",
+    {
+     "s": "ถุงลมไม่พัฒนา ปอดเล็ก (hypoplasia)",
+     "answer": true
+    },
+    "หายใจล้มเหลวหลังคลอด"
+   ],
    "option_why": {
-    "A": "Flat face",
-    "B": "Club foot",
-    "C": "✓ Pulmonary hypoplasia",
-    "D": "FGR",
-    "E": "Hip"
+    "A": "flat face จาก compression เป็นส่วนของ Potter facies แต่ไม่ใช่ผลที่รุนแรงที่สุด",
+    "B": "club foot เกิดได้จากน้ำคร่ำน้อย แต่ไม่ใช่ชีวิตคุกคาม",
+    "C": "✓ ช่วงปอดกำลังสร้างถุงลม น้ำคร่ำน้อยทำให้ปอดเล็ก เป็นสาเหตุตายหลัก",
+    "D": "FGR เกิดจากรก/แม่ มากกว่า PROM",
+    "E": "hip dislocation เกี่ยวกับท่าเด็กและ breech"
    },
    "audit_note": "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
   },
@@ -217,7 +253,7 @@
    },
    "answer": "B",
    "answer_status": "draft",
-   "explanation": "Quadruple test เสี่ยงสูงที่ 16 สัปดาห์ ควรตรวจ cfDNA (screening) ก่อนวินิจฉัย",
+   "explanation": "ผลคัดกรองเสี่ยงสูงที่ 16 สัปดาห์ ทางเลือกไม่ invasive คือ cell-free fetal DNA",
    "refs": [
     {
      "paper": "MCQ47",
@@ -229,13 +265,13 @@
    "tags": [],
    "source": "import",
    "audit_ref": "hlc_47_MCQ_009",
-   "key_concept": "• cfDNA: high sensitivity screening\n• สรุป: Quadruple test เสี่ยงสูงที่ 16 สัปดาห์ ควรตรวจ cfDNA (screening) ก่อนวินิจฉัย",
+   "key_concept": "• cfDNA: screen ที่ไว/จำเพาะสูง ไม่ invasive\n• cfDNA บวก → ยืนยันด้วย amniocentesis\n• CVS 10–13 wk, amnio ≥15 wk",
    "option_why": {
-    "A": "Amnio เป็น diagnostic",
-    "B": "✓ cfDNA",
-    "C": "CVS diagnostic",
-    "D": "Cordocentesis",
-    "E": "Integrated test"
+    "A": "amniocentesis เป็นการยืนยันแบบ invasive มีความเสี่ยงแท้ง ใช้เมื่อ cfDNA เป็นบวก",
+    "B": "✓ cfDNA จาก maternal blood ตรวจ trisomy 21 ได้แม่นยำ ไม่เสี่ยงแท้ง",
+    "C": "CVS ทำ 10–13 wk เลยช่วงเวลาแล้ว",
+    "D": "cordocentesis เสี่ยงสูง ไม่ใช่การคัดกรอง",
+    "E": "integrated test ทำไตรมาสแรก+สอง ซ้ำซ้อนกับ quad test"
    },
    "audit_note": "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
   },
@@ -255,7 +291,7 @@
    },
    "answer": "B",
    "answer_status": "draft",
-   "explanation": "Amnion และ chorion เชื่อมกันสมบูรณ์ ที่ 14–16 สัปดาห์",
+   "explanation": "Amnion และ chorion เชื่อมติดกันสมบูรณ์ที่ประมาณ 14–16 สัปดาห์",
    "refs": [
     {
      "paper": "MCQ47",
@@ -267,13 +303,22 @@
    "tags": [],
    "source": "import",
    "audit_ref": "hlc_47_MCQ_010",
-   "key_concept": "• Fusion of amniochorionic membranes ~14–16 wk\n• สรุป: Amnion และ chorion เชื่อมกันสมบูรณ์ ที่ 14–16 สัปดาห์",
+   "key_concept": "• amnion + chorion fuse ราว 14–16 wk\n• ก่อนนั้นมี chorionic (extraembryonic) cavity คั่น\n• amnion fuse ผิดปกติ → amniotic band",
+   "mechanism": [
+    "amniotic cavity ขยายตัวต่อเนื่อง",
+    "ดันเบียดจน chorionic cavity ลดลง",
+    {
+     "s": "amnion ติดกับ chorion เป็น amniochorionic membrane ที่ 14–16 wk",
+     "answer": true
+    },
+    "ผนังถุงน้ำคร่ำสมบูรณ์"
+   ],
    "option_why": {
-    "A": "12–14",
-    "B": "✓ 14–16",
-    "C": "16–18",
-    "D": "18–20",
-    "E": "20–22"
+    "A": "12–14 wk ยังไม่ fuse กันเต็มที่ ยังมี chorionic cavity",
+    "B": "✓ 14–16 wk amniotic cavity ขยายจน obliterate chorionic cavity",
+    "C": "16–18 wk fuse ไปก่อนแล้ว",
+    "D": "18–20 wk เลยช่วงไปแล้ว",
+    "E": "20–22 wk เลยช่วงไปมาก"
    },
    "audit_note": "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
   },
@@ -293,7 +338,7 @@
    },
    "answer": "A",
    "answer_status": "draft",
-   "explanation": "Villous trophoblast ทำหน้าที่แลกเปลี่ยนสารอาหารและออกซิเจน",
+   "explanation": "Villous trophoblast ของ chorion (chorion frondosum) เป็นส่วนแลกเปลี่ยนอาหารและออกซิเจน",
    "refs": [
     {
      "paper": "MCQ47",
@@ -305,13 +350,13 @@
    "tags": [],
    "source": "import",
    "audit_ref": "hlc_47_MCQ_011",
-   "key_concept": "• Villous trophoblast: exchange\n• สรุป: Villous trophoblast ทำหน้าที่แลกเปลี่ยนสารอาหารและออกซิเจน",
+   "key_concept": "• villous trophoblast (syncytio + cytotrophoblast) = จุดแลกเปลี่ยน\n• extravillous: interstitial, endovascular ทำ spiral artery remodeling\n• syncytiotrophoblast หลั่ง hCG",
    "option_why": {
-    "A": "✓ Villi trophoblast",
-    "B": "Arterial",
-    "C": "Interstitial",
-    "D": "Exo",
-    "E": "Endo"
+    "A": "✓ villi ที่มี trophoblast ล้อมหลอดเลือดทารกเป็นพื้นที่แลกเปลี่ยนก๊าซ/สารอาหาร",
+    "B": "arterial trophoblast ไม่ใช่ชื่อโครงสร้างที่มีจริง",
+    "C": "interstitial trophoblast ฝังลึกใน decidua ทำ spiral artery remodeling",
+    "D": "extravillous trophoblast ฝังตัวและบุกรุก ไม่ใช่ส่วนแลกเปลี่ยน",
+    "E": "endovascular trophoblast สร้างหลอดเลือดแม่ ไม่ได้ทำหน้าที่แลกเปลี่ยน"
    },
    "audit_note": "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
   },
@@ -331,7 +376,7 @@
    },
    "answer": "C",
    "answer_status": "draft",
-   "explanation": "Diaphragmatic hernia ทำให้ปอดพัฒนาไม่ดี (hypoplasia)",
+   "explanation": "Congenital diaphragmatic hernia ลำไส้เข้าอกกดปอด ปอดไม่เจริญ",
    "refs": [
     {
      "paper": "MCQ47",
@@ -343,13 +388,22 @@
    "tags": [],
    "source": "import",
    "audit_ref": "hlc_47_MCQ_012",
-   "key_concept": "• CDH → pulmonary hypoplasia\n• สรุป: Diaphragmatic hernia ทำให้ปอดพัฒนาไม่ดี (hypoplasia)",
+   "key_concept": "• CDH: ปอดเล็ก + pulmonary hypertension\n• ช่องว่างที่ posterolateral (Bochdalek) ซ้ายพบบ่อย\n• ท้องแฟบ + เสียงลำไส้ในอก",
+   "mechanism": [
+    "pleuroperitoneal membrane ปิดไม่สมบูรณ์",
+    "ลำไส้/ตับเลื่อนเข้าช่องอก",
+    {
+     "s": "กดเบียดปอดข้างนั้น ปอดเจริญไม่เต็มที่",
+     "answer": true
+    },
+    "pulmonary hypoplasia"
+   ],
    "option_why": {
-    "A": "Renal agenesis ก็มีผลแต่ทางอ้อม",
-    "B": "Chorioangioma",
-    "C": "✓ CDH กดปอดในครรภ์",
-    "D": "Hypoplasia เป็นผล",
-    "E": "VSD"
+    "A": "renal agenesis ทำปอดเล็กทางอ้อมผ่านน้ำคร่ำน้อย แต่ตัวเลือกนี้ไม่ตรงกับข้อ",
+    "B": "chorioangioma เป็นเนื้องอกรก ไม่กระทบปอดโดยตรง",
+    "C": "✓ อวัยวะในช่องท้องเข้ามากดปอดตั้งแต่ระหว่างสร้างปอด จึงทำ hypoplasia",
+    "D": "pulmonary hypoplasia เป็นผลลัพธ์ ไม่ใช่เงื่อนไขที่ทำให้เกิด",
+    "E": "VSD ไม่กระทบการเจริญของปอด"
    },
    "audit_note": "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
   },
@@ -369,7 +423,7 @@
    },
    "answer": "B",
    "answer_status": "draft",
-   "explanation": "ไตทารกเริ่มผลิตปัสสาวะที่ 12 สัปดาห์",
+   "explanation": "ไตทารกเริ่มผลิตปัสสาวะราวสัปดาห์ที่ 12",
    "refs": [
     {
      "paper": "MCQ47",
@@ -381,13 +435,13 @@
    "tags": [],
    "source": "import",
    "audit_ref": "hlc_47_MCQ_013",
-   "key_concept": "• Fetal urine ~9–12 wk\n• สรุป: ไตทารกเริ่มผลิตปัสสาวะที่ 12 สัปดาห์",
+   "key_concept": "• metanephros เริ่มทำงาน ~wk 12\n• หลัง wk 16 ปัสสาวะเป็นแหล่งหลักของน้ำคร่ำ",
    "option_why": {
-    "A": "10",
-    "B": "✓ 12",
-    "C": "14",
-    "D": "16",
-    "E": "18"
+    "A": "10 wk metanephros ยังไม่เริ่มทำงาน",
+    "B": "✓ metanephros เริ่มผลิตปัสสาวะ ~12 wk",
+    "C": "14 wk เริ่มไปแล้ว",
+    "D": "16 wk เริ่มไปแล้วนาน",
+    "E": "18 wk เริ่มไปแล้วนาน"
    },
    "audit_note": "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
   },
@@ -407,7 +461,7 @@
    },
    "answer": "B",
    "answer_status": "draft",
-   "explanation": "ปากแหว่งเพดานโหว่ไวช่วง 5–8 สัปดาห์",
+   "explanation": "Cleft lip/palate ไวที่สุดช่วง 5–8 สัปดาห์ ตอนที่ facial prominence และ palatal shelf เชื่อมกัน",
    "refs": [
     {
      "paper": "MCQ47",
@@ -419,13 +473,13 @@
    "tags": [],
    "source": "import",
    "audit_ref": "hlc_47_MCQ_015",
-   "key_concept": "• Lip: wk 5–7\n• สรุป: ปากแหว่งเพดานโหว่ไวช่วง 5–8 สัปดาห์",
+   "key_concept": "• upper lip fuse wk 6–7, palate fuse wk 8–12\n• ช่วงเสี่ยงสุด = organogenesis wk 3–8\n• สาเหตุ: พันธุกรรม+ปัจจัยแวดล้อม (phenytoin, folate ขาด)",
    "option_why": {
-    "A": "3–4",
-    "B": "✓ 5–8",
-    "C": "10–12",
-    "D": "14–15",
-    "E": "18–20"
+    "A": "wk 3–4 เป็นช่วงสร้างระบบประสาท/หัวใจ",
+    "B": "✓ wk 5–8 facial prominence และ palatal shelf กำลังเชื่อมกัน",
+    "C": "wk 10–12 palate ปิดทางส่วนหลังเสร็จแล้ว",
+    "D": "wk 14–15 เกินช่วงเสี่ยงแล้ว",
+    "E": "wk 18–20 ไม่ใช่ช่วงสร้างเพดานปาก"
    },
    "audit_note": "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
   },
@@ -445,7 +499,7 @@
    },
    "answer": "E",
    "answer_status": "draft",
-   "explanation": "คลื่นไส้อาเจียนในครรภ์ 6 สัปดาห์ใช้ dimenhydrinate",
+   "explanation": "Morning sickness ในครรภ์ เลือก antihistamine ที่ใช้มานาน เช่น dimenhydrinate",
    "refs": [
     {
      "paper": "MCQ47",
@@ -457,13 +511,13 @@
    "tags": [],
    "source": "import",
    "audit_ref": "hlc_47_MCQ_017",
-   "key_concept": "• Morning sickness: antihistamine, pyridoxine\n• สรุป: คลื่นไส้อาเจียนในครรภ์ 6 สัปดาห์ใช้ dimenhydrinate",
+   "key_concept": "• ลำดับยา: pyridoxine ± doxylamine → antihistamine → ondansetron\n• ยาแก้เวียนศีรษะ vertigo ไม่ใช่ยาหลัก",
    "option_why": {
-    "A": "Folic acid",
-    "B": "Cobalamin",
-    "C": "Betahistine",
-    "D": "Flunarizine",
-    "E": "✓ Dimenhydrinate"
+    "A": "folic acid ป้องกัน NTD ไม่ใช่ยาแก้คลื่นไส้",
+    "B": "cobalamin (B12) ไม่ใช่ยาแก้คลื่นไส้",
+    "C": "betahistine ใช้ vertigo จาก Meniere",
+    "D": "flunarizine ใช้ป้องกัน migraine/vertigo ไม่แนะนำในครรภ์",
+    "E": "✓ H1 blocker ที่มีข้อมูลความปลอดภัยในครรภ์ ลดคลื่นไส้เวียนหัว"
    },
    "audit_note": "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
   },
@@ -483,7 +537,7 @@
    },
    "answer": "B",
    "answer_status": "draft",
-   "explanation": "ทารกคลอดก่อนกำหนดอุณหภูมิ 36.0 ๐C เสี่ยง metabolic acidosis จาก cold stress",
+   "explanation": "Preterm 32 wk อุณหภูมิ 36.0°C hypothermia ทำให้เกิด metabolic acidosis",
    "refs": [
     {
      "paper": "MCQ47",
@@ -495,13 +549,22 @@
    "tags": [],
    "source": "import",
    "audit_ref": "hlc_47_MCQ_018",
-   "key_concept": "• Cold stress → hypoglycemia, acidosis\n• สรุป: ทารกคลอดก่อนกำหนดอุณหภูมิ 36.0 ๐C เสี่ยง metabolic acidosis จาก cold stress",
+   "key_concept": "• เด็ก preterm เสียความร้อนง่าย: ผิวบาง ไขมันน้อย พื้นที่ผิวมาก\n• hypothermia → hypoglycemia, acidosis, apnea\n• รักษา: kangaroo care, incubator",
+   "mechanism": [
+    "พื้นผิวมาก ไขมันน้อย เสียความร้อน",
+    "เผาผลาญ brown fat เพิ่ม ใช้ O2/glucose",
+    {
+     "s": "เนื้อเยื่อขาดออกซิเจน สร้าง lactate",
+     "answer": true
+    },
+    "metabolic acidosis"
+   ],
    "option_why": {
-    "A": "Hypoglycemia ไม่ใช่ hyper",
-    "B": "✓ Metabolic acidosis",
-    "C": "Bradycardia",
-    "D": "Pulmonary hemorrhage",
-    "E": "PDA"
+    "A": "hypothermia ทำให้เกิด hypoglycemia จากการใช้พลังงานสูง ไม่ใช่ hyperglycemia",
+    "B": "✓ เผาผลาญ brown fat ใช้ O2 สูง → anaerobic metabolism → lactic acidosis",
+    "C": "hypothermia ทำให้ bradycardia ไม่ใช่ tachycardia",
+    "D": "pulmonary hemorrhage เกิดตามหลังภาวะอื่น ไม่ใช่ผลโดยตรงของอุณหภูมิ",
+    "E": "PDA เกี่ยวกับความไม่เจริญของ ductus ไม่ใช่ผลของอุณหภูมิ"
    },
    "audit_note": "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
   },
@@ -521,7 +584,7 @@
    },
    "answer": "D",
    "answer_status": "draft",
-   "explanation": "หลังคลอดเพิ่มการดูดซึมน้ำในปอด (ENaC)",
+   "explanation": "หลังคลอดทางช่องคลอด ปอดดูดซึม fetal lung fluid เพิ่มขึ้นเพื่อปรับตัวสู่การหายใจ",
    "refs": [
     {
      "paper": "MCQ47",
@@ -533,13 +596,22 @@
    "tags": [],
    "source": "import",
    "audit_ref": "hlc_47_MCQ_019",
-   "key_concept": "• Neonatal adaptation: lung fluid absorption\n• สรุป: หลังคลอดเพิ่มการดูดซึมน้ำในปอด (ENaC)",
+   "key_concept": "• ปรับตัวหลังคลอด: catecholamine ↑, TSH ↑, cortisol ↑\n• ปอดล้าง fluid ผ่าน ENaC ที่ถุงลม\n• TTN เมื่อ clearance ช้า",
+   "mechanism": [
+    "เจ็บท้อง+คลอดทางช่องคลอด หลั่ง catecholamine",
+    "กระตุ้น ENaC ที่เยื่อบุถุงลม",
+    {
+     "s": "ดูดซึม fetal lung fluid ออกจากถุงลม",
+     "answer": true
+    },
+    "หายใจเอาอากาศเข้าได้ดี"
+   ],
    "option_why": {
-    "A": "TSH เพิ่ม",
-    "B": "GFR เพิ่ม",
-    "C": "Catecholamine เพิ่ม",
-    "D": "✓ ดูดซึมน้ำปอดเพิ่ม",
-    "E": "Insulin ลด"
+    "A": "TSH เพิ่ม (surge) หลังคลอด ไม่ใช่ลด",
+    "B": "GFR เพิ่มขึ้นหลังคลอด ไม่ลด",
+    "C": "catecholamine surge หลังคลอดเพื่อปรับตัว ไม่ลด",
+    "D": "✓ ผ่านช่องคลอด + catecholamine → ENaC ดูดน้ำออกจากถุงลม",
+    "E": "insulin ลด/glucose ลดเล็กน้อยหลังตัดสาย ไม่ใช่เพิ่ม"
    },
    "audit_note": "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
   },
@@ -559,7 +631,7 @@
    },
    "answer": "A",
    "answer_status": "draft",
-   "explanation": "การทดลองลิงกับแม่ปลอมคือ attachment theory (Harlow)",
+   "explanation": "การทดลองลิงของ Harlow แสดงว่าความผูกพัน (attachment) ต้องการความอบอุ่นจากสัมผัส ไม่ใช่แค่อาหาร",
    "refs": [
     {
      "paper": "MCQ47",
@@ -571,13 +643,13 @@
    "tags": [],
    "source": "import",
    "audit_ref": "hlc_47_MCQ_020",
-   "key_concept": "• Harlow: contact comfort\n• สรุป: การทดลองลิงกับแม่ปลอมคือ attachment theory (Harlow)",
+   "key_concept": "• Harlow: contact comfort สำคัญกว่าอาหาร\n• Bowlby/Ainsworth: secure, avoidant, ambivalent\n• ขาด attachment → ปัญหาอารมณ์/สังคม",
    "option_why": {
-    "A": "✓ Attachment",
-    "B": "Temperament",
-    "C": "Cognitive",
-    "D": "Psychosocial",
-    "E": "Psychosexual"
+    "A": "✓ ลูกลิงเลือกหุ่นที่ขนนุ่มอบอุ่นมากกว่าหุ่นลวดที่มีนม → attachment",
+    "B": "temperament เป็นบุคลิกพื้นฐานตั้งแต่เกิด ไม่ใช่เรื่องสัมผัสแม่",
+    "C": "cognitive (Piaget) เป็นเรื่องการคิด",
+    "D": "psychosocial (Erikson) เป็นวิกฤตแต่ละขั้นวัย",
+    "E": "psychosexual (Freud) เป็นเรื่องความต้องการทางเพศในแต่ละช่วง"
    },
    "audit_note": "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
   },
@@ -597,7 +669,7 @@
    },
    "answer": "B",
    "answer_status": "draft",
-   "explanation": "เด็ก 2 ขวบอยากทำเอง คือ autonomy vs shame & doubt",
+   "explanation": "อยากตักช้อนเองในเด็ก 2 ปี = Autonomy vs Shame & Doubt",
    "refs": [
     {
      "paper": "MCQ47",
@@ -609,13 +681,13 @@
    "tags": [],
    "source": "import",
    "audit_ref": "hlc_47_MCQ_021",
-   "key_concept": "• Erikson toddler\n• สรุป: เด็ก 2 ขวบอยากทำเอง คือ autonomy vs shame & doubt",
+   "key_concept": "• Erikson: trust, autonomy, initiative, industry, identity\n• ผู้ปกครองห้ามมากไป → shame & doubt\n• virtue: will",
    "option_why": {
-    "A": "Trust",
-    "B": "✓ Autonomy",
-    "C": "Initiative",
-    "D": "Industry",
-    "E": "Identity"
+    "A": "trust เป็นวัยทารก 0–1 ปี",
+    "B": "✓ toddler 1–3 ปี ต้องการทำเองและควบคุมตัวเอง",
+    "C": "initiative ช่วง 3–6 ปี",
+    "D": "industry ช่วง 6–12 ปี",
+    "E": "identity เป็นวัยรุ่น"
    },
    "audit_note": "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
   },
@@ -634,7 +706,7 @@
    },
    "answer": "B",
    "answer_status": "draft",
-   "explanation": "Authoritarian = demanding, low warmth",
+   "explanation": "Authoritarian parenting = เรียกร้องสูง อบอุ่นต่ำ",
    "refs": [
     {
      "paper": "MCQ47",
@@ -646,12 +718,12 @@
    "tags": [],
    "source": "import",
    "audit_ref": "hlc_47_MCQ_022",
-   "key_concept": "• Baumrind styles\n• สรุป: Authoritarian = demanding, low warmth",
+   "key_concept": "• Baumrind: authoritative, authoritarian, permissive, neglectful\n• authoritative ได้ผลดีที่สุด\n• authoritarian: เด็กกลัว ไม่กล้าแสดงความคิด",
    "option_why": {
-    "A": "Authoritative",
-    "B": "✓ Authoritarian",
-    "C": "Permissive",
-    "D": "ไม่ใช่คำตอบที่ถูกต้องของโจทย์ข้อนี้"
+    "A": "high expectations + assertive เป็น authoritative (ดีที่สุด)",
+    "B": "✓ demandingness สูง warmth ต่ำ = authoritarian",
+    "C": "autocratic + lenient ขัดกันเอง",
+    "D": "เฉยเมยและไม่ใส่ใจ = neglectful/uninvolved"
    },
    "audit_note": "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
   },
@@ -671,7 +743,7 @@
    },
    "answer": "A",
    "answer_status": "draft",
-   "explanation": "G6PD deficiency ห้ามใช้ sulfonamide",
+   "explanation": "G6PD deficiency ห้ามใช้ sulfonamide เพราะทำให้เม็ดเลือดแดงแตก",
    "refs": [
     {
      "paper": "MCQ47",
@@ -683,13 +755,22 @@
    "tags": [],
    "source": "import",
    "audit_ref": "hlc_47_MCQ_023",
-   "key_concept": "• G6PD: oxidant drugs\n• สรุป: G6PD deficiency ห้ามใช้ sulfonamide",
+   "key_concept": "• ยาห้ามใน G6PD: sulfa, primaquine, dapsone, nitrofurantoin\n• NADPH ต่ำ → glutathione ไม่พอต้านปฏิกิริยา oxidative\n• พบ Heinz body, bite cell",
+   "mechanism": [
+    "รับยา oxidant (sulfonamide)",
+    "เกิด reactive oxygen ใน RBC",
+    {
+     "s": "G6PD ขาด NADPH/GSH ไม่พอ ฮีโมโกลบินตกตะกอน",
+     "answer": true
+    },
+    "RBC แตก hemolytic anemia"
+   ],
    "option_why": {
-    "A": "✓ Sulfonamide",
-    "B": "Penicillin",
-    "C": "Erythromycin",
-    "D": "Cyclosporin",
-    "E": "Chlorpheniramine"
+    "A": "✓ sulfonamide เป็น oxidant ทำ hemolysis ใน G6PD",
+    "B": "penicillin ปลอดภัยใน G6PD",
+    "C": "erythromycin ปลอดภัยโดยทั่วไป",
+    "D": "cyclosporin ไม่ทำ hemolysis จาก G6PD",
+    "E": "chlorphenamine ใช้ได้ ไม่ใช่ oxidant"
    },
    "audit_note": "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
   },
@@ -709,7 +790,7 @@
    },
    "answer": "A",
    "answer_status": "draft",
-   "explanation": "ไข้เลือดออกใช้ paracetamol",
+   "explanation": "Dengue ให้ paracetamol ลดไข้ เพราะไม่กด platelet",
    "refs": [
     {
      "paper": "MCQ47",
@@ -721,13 +802,13 @@
    "tags": [],
    "source": "import",
    "audit_ref": "hlc_47_MCQ_024",
-   "key_concept": "• Dengue: paracetamol\n• สรุป: ไข้เลือดออกใช้ paracetamol",
+   "key_concept": "• dengue ห้าม aspirin/NSAID\n• เฝ้าระวัง plasma leakage ช่วงไข้ลง\n• paracetamol ตามน้ำหนัก",
    "option_why": {
-    "A": "✓ Paracetamol",
-    "B": "Aspirin",
-    "C": "Ibuprofen",
-    "D": "Amoxicillin",
-    "E": "Dicloxacillin"
+    "A": "✓ paracetamol ลดไข้ ไม่รบกวนการแข็งตัวเลือด",
+    "B": "aspirin กด platelet เสี่ยงเลือดออกและ Reye syndrome",
+    "C": "ibuprofen NSAID เสี่ยงเลือดออกใน dengue",
+    "D": "amoxicillin เป็นยาปฏิชีวนะ ไม่ลดไข้และไม่ใช่เชื้อแบคทีเรีย",
+    "E": "dicloxacillin ใช้ staphylococcus ไม่เกี่ยว dengue"
    },
    "audit_note": "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
   },
@@ -747,7 +828,7 @@
    },
    "answer": "B",
    "answer_status": "draft",
-   "explanation": "ทารกแรกเกิดพิจารณา upper segment : length (สัดส่วนร่างกาย) ตามเฉลย AI",
+   "explanation": "ทารกครบกำหนด upper:lower segment ประมาณ 1.7:1 ใช้ตามเทียบ proportion ของลำตัว",
    "refs": [
     {
      "paper": "MCQ47",
@@ -759,13 +840,13 @@
    "tags": [],
    "source": "import",
    "audit_ref": "hlc_47_MCQ_025",
-   "key_concept": "• US:LS ratio ~1.7 at birth\n• สรุป: ทารกแรกเกิดพิจารณา upper segment : length (สัดส่วนร่างกาย) ตามเฉลย AI",
+   "key_concept": "• สัดส่วนทารก: ศีรษะ ~1/4 ความยาวตัว\n• US:LS ลดจาก 1.7 เป็น 1.0 เมื่ออายุ 7–10 ปี\n• achondroplasia ผิดปกติ ratio",
    "option_why": {
-    "A": "Arm",
-    "B": "✓ Upper segment",
-    "C": "Lower",
-    "D": "Weight",
-    "E": "Fontanelle"
+    "A": "แขนต่อความยาวตัว ไม่ใช่ ratio ที่ใช้ประเมินบ่อย",
+    "B": "✓ upper segment:length ใช้ดูสัดส่วนลำตัว/แขนขา",
+    "C": "lower segment:length ไม่ใช่ตัวเลือกที่เฉลยเลือก",
+    "D": "weight:length ใช้ประเมิน nutrition ไม่ใช่โครงสร้าง",
+    "E": "fontanelle:head circumference ไม่ใช่ ratio มาตรฐาน"
    },
    "audit_note": "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
   },
@@ -785,7 +866,7 @@
    },
    "answer": "C",
    "answer_status": "draft",
-   "explanation": "ประเมินการเติบโตทารกควรทราบ weight/height ของพ่อแม่",
+   "explanation": "การประเมินการเจริญเติบโตของทารกต้องดูความสูงน้ำหนักของพ่อแม่ (genetic potential)",
    "refs": [
     {
      "paper": "MCQ47",
@@ -797,13 +878,13 @@
    "tags": [],
    "source": "import",
    "audit_ref": "hlc_47_MCQ_026",
-   "key_concept": "• Genetic potential\n• สรุป: ประเมินการเติบโตทารกควรทราบ weight/height ของพ่อแม่",
+   "key_concept": "• growth potential = genetic + nutrition + hormone\n• mid-parental height ใช้ประเมินเป้าหมาย\n• ตรวจ growth chart ตามอายุ",
    "option_why": {
-    "A": "โรคแม่",
-    "B": "น้ำหนักแม่",
-    "C": "✓ พ่อแม่",
-    "D": "Birth wt",
-    "E": "Sleep"
+    "A": "โรคแม่ช่วงตั้งครรภ์ ไม่ใช่ข้อมูลหลักตอนนี้",
+    "B": "น้ำหนักแม่เพิ่มช่วงตั้งครรภ์ ไม่ใช่ข้อมูลหลัก",
+    "C": "✓ ขนาดพ่อแม่บอกศักยภาพการเจริญเติบโตของลูก",
+    "D": "BW/GA สำคัญแต่เฉลยเลือกข้อ C",
+    "E": "การนอนไม่ใช่ตัวกำหนดการเจริญเติบโต"
    },
    "audit_note": "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
   },
@@ -823,7 +904,7 @@
    },
    "answer": "A",
    "answer_status": "draft",
-   "explanation": "เด็ก 6 ขวบผูกเชือกรองเท้าได้",
+   "explanation": "6 ปีผูกเชือกรองเท้าได้",
    "refs": [
     {
      "paper": "MCQ47",
@@ -835,13 +916,13 @@
    "tags": [],
    "source": "import",
    "audit_ref": "hlc_47_MCQ_027",
-   "key_concept": "• 6 y: ties shoelaces\n• สรุป: เด็ก 6 ขวบผูกเชือกรองเท้าได้",
+   "key_concept": "• fine motor: tower 6 cubes 2 ปี, สามเหลี่ยม 5 ปี\n• ผูกเชือกรองเท้า 5–6 ปี",
    "option_why": {
-    "A": "✓ Tie shoelace",
-    "B": "Tricycle 3 ปี",
-    "C": "6 cubes 2 ปี",
-    "D": "Triangle 5 ปี",
-    "E": "Pretend 2 ปี"
+    "A": "✓ ผูกเชือกรองเท้าได้ประมาณ 5–6 ปี",
+    "B": "ขี่สามล้อได้ที่ 3 ปี",
+    "C": "ต่อบล็อก 6 ก้อนได้ที่ 2 ปี",
+    "D": "วาดสามเหลี่ยมได้ที่ 5 ปี",
+    "E": "pretend play เป็นกิจกรรมที่เริ่มตั้งแต่ 2 ปี"
    },
    "audit_note": "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
   },
@@ -861,7 +942,7 @@
    },
    "answer": "C",
    "answer_status": "draft",
-   "explanation": "ดูดนิ้วตอนนอนคือ self-soothing",
+   "explanation": "เด็ก 9 เดือนดูดนิ้วเพื่อปลอบตัวเอง (self-soothing) เป็นพฤติกรรมปกติ",
    "refs": [
     {
      "paper": "MCQ47",
@@ -873,13 +954,13 @@
    "tags": [],
    "source": "import",
    "audit_ref": "hlc_47_MCQ_028",
-   "key_concept": "• Infant self-soothing\n• สรุป: ดูดนิ้วตอนนอนคือ self-soothing",
+   "key_concept": "• thumb sucking เป็นปกติ\n• ถ้าเกิน 4–5 ปีอาจกระทบฟัน\n• ไม่ต้องกังวลในวัยทารก",
    "option_why": {
-    "A": "Suckling reflex",
-    "B": "Lonely",
-    "C": "✓ Self-soothing",
-    "D": "Anxiety",
-    "E": "Regression"
+    "A": "suckling reflex เป็น reflex ตั้งแต่แรกเกิด",
+    "B": "loneliness ไม่ใช่การตีความที่ถูก",
+    "C": "✓ ดูดนิ้วตอนง่วงเพื่อสงบตัวเอง",
+    "D": "anxiety ไม่ใช่ข้อสรุปจากการดูดนิ้วอย่างเดียว",
+    "E": "regression เป็นถอยพัฒนาการ ไม่ใช่"
    },
    "audit_note": "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
   },
@@ -899,7 +980,7 @@
    },
    "answer": "A",
    "answer_status": "draft",
-   "explanation": "เด็ก 6 ปีเล่นกระบะทรายได้ (ตัวเลือกที่ปลอดภัย)",
+   "explanation": "เด็ก 6 ขวบเล่นกระบะทรายได้ปลอดภัยและเหมาะวัย",
    "refs": [
     {
      "paper": "MCQ47",
@@ -911,13 +992,13 @@
    "tags": [],
    "source": "import",
    "audit_ref": "hlc_47_MCQ_029",
-   "key_concept": "• Safe play\n• สรุป: เด็ก 6 ปีเล่นกระบะทรายได้ (ตัวเลือกที่ปลอดภัย)",
+   "key_concept": "• เลือกของเล่นตามวัยและความปลอดภัย\n• เลี่ยงสำลักในเด็กเล็ก",
    "option_why": {
-    "A": "✓ Sandbox",
-    "B": "Trampoline เสี่ยง",
-    "C": "สเก็ตบอร์ดเสี่ยง",
-    "D": "ลูกโป่ง สำลัก",
-    "E": "Bungee อันตราย"
+    "A": "✓ sandbox ปลอดภัยและส่งเสริมจินตนาการ",
+    "B": "trampoline เสี่ยงหกล้มกระดูกหัก",
+    "C": "สเก็ตบอร์ดต้องการการทรงตัวและป้องกัน",
+    "D": "ลูกโป่งเสี่ยงสำลัก",
+    "E": "bungee jumping อันตรายเกินวัย"
    },
    "audit_note": "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
   },
@@ -937,7 +1018,7 @@
    },
    "answer": "A",
    "answer_status": "draft",
-   "explanation": "ของขวัญเด็ก 1 ปีคือหนังสือนิทาน",
+   "explanation": "เด็ก 1 ปีควรได้หนังสือภาพช่วยภาษาและสายสัมพันธ์",
    "refs": [
     {
      "paper": "MCQ47",
@@ -949,13 +1030,13 @@
    "tags": [],
    "source": "import",
    "audit_ref": "hlc_47_MCQ_030",
-   "key_concept": "• 1 y gift\n• สรุป: ของขวัญเด็ก 1 ปีคือหนังสือนิทาน",
+   "key_concept": "• อ่านนิทานให้ลูกฟังทุกวัน\n• ของเล่นไม่ควรมีชิ้นส่วนเล็ก",
    "option_why": {
-    "A": "✓ Story book",
-    "B": "Barbie",
-    "C": "Paint",
-    "D": "ลูกปัด",
-    "E": "Skateboard"
+    "A": "✓ นิทานช่วยภาษา",
+    "B": "Barbie ชิ้นส่วนเล็กสำลักได้",
+    "C": "สีเทียนเสี่ยงกิน",
+    "D": "เชือกและลูกปัด เสี่ยงรัดคอและสำลัก",
+    "E": "skateboard อันตรายเกินวัย"
    },
    "audit_note": "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
   },
@@ -975,7 +1056,7 @@
    },
    "answer": "D",
    "answer_status": "draft",
-   "explanation": "Mid-parental height ชาย = (167+160+13)/2 = 170",
+   "explanation": "เด็กชายประเมินตามความสูงพ่อแม่ (mid-parental height) +6.5 ซม. ได้ราว 170 ซม.",
    "refs": [
     {
      "paper": "MCQ47",
@@ -987,13 +1068,22 @@
    "tags": [],
    "source": "import",
    "audit_ref": "hlc_47_MCQ_031",
-   "key_concept": "• MPH boy = (F+M+13)/2\n• สรุป: Mid-parental height ชาย = (167+160+13)/2 = 170",
+   "key_concept": "• boy: (พ่อ+แม่+13)/2\n• girl: (พ่อ+แม่−13)/2\n• target ±8.5 cm",
+   "mechanism": [
+    "พ่อ 167 + แม่ 160",
+    "บวก 13 cm สำหรับเด็กชาย",
+    {
+     "s": "หารสองได้ ~170 cm",
+     "answer": true
+    },
+    "เทียบกับ growth chart"
+   ],
    "option_why": {
-    "A": "160",
-    "B": "163",
-    "C": "167",
-    "D": "✓ 170",
-    "E": "173"
+    "A": "160 cm ต่ำกว่า mid-parental",
+    "B": "163 cm ต่ำกว่า",
+    "C": "167 cm เท่าพ่อ ไม่ได้บวก 6.5",
+    "D": "✓ (167+160+13)/2 = 170 cm",
+    "E": "173 cm สูงเกินไป"
    },
    "audit_note": "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
   },
@@ -1013,7 +1103,7 @@
    },
    "answer": "B",
    "answer_status": "draft",
-   "explanation": "Thelarche 3 เดือน (tanner II) กำลังเข้า growth spurt ปีนี้โตเร็ว",
+   "explanation": "เด็กหญิง breast bud 3 เดือน Tanner 2 อยู่ในช่วง growth spurt ปีนี้จะสูงขึ้นรวดเร็ว",
    "refs": [
     {
      "paper": "MCQ47",
@@ -1025,13 +1115,22 @@
    "tags": [],
    "source": "import",
    "audit_ref": "hlc_47_MCQ_032",
-   "key_concept": "• Girls: peak velocity Tanner II–III\n• สรุป: Thelarche 3 เดือน (tanner II) กำลังเข้า growth spurt ปีนี้โตเร็ว",
+   "key_concept": "• growth spurt เด็กหญิงเริ่ม Tanner 2\n• menarche ที่ Tanner 4\n• สูงสุด 8–9 cm/ปี",
+   "mechanism": [
+    "estrogen ช่วงเริ่ม puberty",
+    "กระตุ้น GH/IGF-1",
+    {
+     "s": "growth spurt รวดเร็ว",
+     "answer": true
+    },
+    "ก่อน menarche"
+   ],
    "option_why": {
-    "A": "+5 cm น้อยไป",
-    "B": "✓ โตเร็ว",
-    "C": "Menarche ~2 ปี",
-    "D": "Final ht ไม่เท่าแม่เสมอ",
-    "E": "น้ำหนัก"
+    "A": "โตเกิน 5 cm/ปีได้ ข้อนี้ระบุตัวเลขตายตัว",
+    "B": "✓ Tanner 2 เป็นช่วงเริ่มต้น growth spurt สูงสุด 8–9 cm/ปี",
+    "C": "menarche มักห่างจาก thelarche ~2–2.5 ปี",
+    "D": "Max height ใช้ mid-parental (ลบ 6.5) ไม่เท่าแม่เสมอ",
+    "E": "น้ำหนักเพิ่ม 5 kg ระบุไม่ได้แน่นอน"
    },
    "audit_note": "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
   },
@@ -1051,7 +1150,7 @@
    },
    "answer": "D",
    "answer_status": "draft",
-   "explanation": "Adrenarche เกิดจาก DHEA(S) ทำให้ขนหัวหน่าวและกลิ่นตัว",
+   "explanation": "Pubic hair + กลิ่นตัว โดย breast ยังไม่โต = adrenarche จาก DHEA",
    "refs": [
     {
      "paper": "MCQ47",
@@ -1063,13 +1162,22 @@
    "tags": [],
    "source": "import",
    "audit_ref": "hlc_47_MCQ_033",
-   "key_concept": "• Adrenarche: DHEA-S\n• สรุป: Adrenarche เกิดจาก DHEA(S) ทำให้ขนหัวหน่าวและกลิ่นตัว",
+   "key_concept": "• adrenarche = DHEA/DHEA-S จาก zona reticularis\n• pubarche ไม่ต้องใช้ gonadotropin\n• thelarche = estrogen",
+   "mechanism": [
+    "adrenal zona reticularis ตื่นตัว",
+    "หลั่ง DHEA/DHEA-S",
+    {
+     "s": "ทำให้เกิด pubic hair/body odor",
+     "answer": true
+    },
+    "โดยยังไม่มี breast development"
+   ],
    "option_why": {
-    "A": "Estrogen",
-    "B": "Progesterone",
-    "C": "Testosterone",
-    "D": "✓ DHEA",
-    "E": "Androgen"
+    "A": "estrogen ทำ breast development ซึ่งยัง Tanner 1",
+    "B": "progesterone ไม่เกี่ยวกับ pubarche",
+    "C": "testosterone ไม่ใช่ที่มาของ adrenarche ในเด็กหญิง",
+    "D": "✓ adrenal androgen เพิ่ม → pubic hair/body odor",
+    "E": "androgen กว้างเกินไป เฉลยเลือก DHEA เฉพาะ"
    },
    "audit_note": "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
   },
@@ -1089,7 +1197,7 @@
    },
    "answer": "B",
    "answer_status": "draft",
-   "explanation": "Intimacy คือการแบ่งปัน (sharing) ตนเอง",
+   "explanation": "Intimacy = การแบ่งปันตัวตนของตนเองให้ผู้อื่น (Erikson วัยหนุ่มสาว)",
    "refs": [
     {
      "paper": "MCQ47",
@@ -1101,13 +1209,13 @@
    "tags": [],
    "source": "import",
    "audit_ref": "hlc_47_MCQ_034",
-   "key_concept": "• Intimacy = sharing\n• สรุป: Intimacy คือการแบ่งปัน (sharing) ตนเอง",
+   "key_concept": "• intimacy vs isolation = 18–40 ปี\n• virtue: love\n• ต้องมี identity ก่อน",
    "option_why": {
-    "A": "Mirroring",
-    "B": "✓ Sharing",
-    "C": "Opening",
-    "D": "Bonding",
-    "E": "Committing"
+    "A": "mirroring ไม่ใช่นิยามของ intimacy",
+    "B": "✓ intimacy คือ sharing oneself ความใกล้ชิดแบบเปิดเผย",
+    "C": "opening oneself ใกล้เคียงแต่เฉลยเลือกข้อ sharing",
+    "D": "bonding เป็น attachment",
+    "E": "committing เป็นขั้นตอนของ commitment"
    },
    "audit_note": "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
   },
@@ -1127,7 +1235,7 @@
    },
    "answer": "A",
    "answer_status": "draft",
-   "explanation": "การมุ่งฝึกเป็นนักบินคือ identity",
+   "explanation": "อยากเป็นนักบินแล้วฝึก = การสร้าง identity",
    "refs": [
     {
      "paper": "MCQ47",
@@ -1139,13 +1247,13 @@
    "tags": [],
    "source": "import",
    "audit_ref": "hlc_47_MCQ_035",
-   "key_concept": "• Identity\n• สรุป: การมุ่งฝึกเป็นนักบินคือ identity",
+   "key_concept": "• Erikson: identity vs role confusion 12–20\n• การเลือกเป้าหมายอาชีพ = identity",
    "option_why": {
-    "A": "✓ Identity",
-    "B": "Initiative",
-    "C": "Industry",
-    "D": "Autonomy",
-    "E": "Generativity"
+    "A": "✓ วัยรุ่นสร้างอัตลักษณ์และเลือกอาชีพ",
+    "B": "initiative เป็นเด็กเล็ก",
+    "C": "industry เป็นวัยเรียน",
+    "D": "autonomy เป็นเด็กวัยหัดเดิน",
+    "E": "generativity เป็นวัยกลางคน"
    },
    "audit_note": "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
   },
@@ -1165,7 +1273,7 @@
    },
    "answer": "D",
    "answer_status": "draft",
-   "explanation": "46,XX มีช่องคลอดตัน ไม่มีมดลูก (MRKH) เป็นเพศหญิง",
+   "explanation": "46,XX + vulva ปกติ ไม่มี vagina/uterus (MRKH) เป็นเพศหญิงทางชีววิทยา",
    "refs": [
     {
      "paper": "MCQ47",
@@ -1177,13 +1285,13 @@
    "tags": [],
    "source": "import",
    "audit_ref": "hlc_47_MCQ_036",
-   "key_concept": "• MRKH: 46,XX female\n• สรุป: 46,XX มีช่องคลอดตัน ไม่มีมดลูก (MRKH) เป็นเพศหญิง",
+   "key_concept": "• MRKH: 46,XX รังไข่ปกติ ไม่มีมดลูก/ช่องคลอดส่วนบน\n• เพศชีววิทยา ≠ gender identity ≠ sexual orientation\n• ประจำเดือนไม่มาแต่มี secondary sex characteristic ปกติ",
    "option_why": {
-    "A": "He male",
-    "B": "Gay",
-    "C": "Transgender",
-    "D": "✓ Female",
-    "E": "Transgender"
+    "A": "karyotype XX = หญิง ไม่ใช่ชาย",
+    "B": "gay เป็น sexual orientation ไม่ใช่เพศทางชีววิทยา",
+    "C": "transgender เป็น gender identity ไม่ใช่ชีววิทยา",
+    "D": "✓ 46,XX รังไข่ปกติ ผู้ป่วยเป็นหญิง",
+    "E": "transgender ไม่เกี่ยวกับ karyotype"
    },
    "audit_note": "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
   },
@@ -1203,7 +1311,7 @@
    },
    "answer": "E",
    "answer_status": "draft",
-   "explanation": "วัยรุ่นหญิงควรใช้ condom ร่วม implant (dual method)",
+   "explanation": "วัยรุ่นที่มีเพศสัมพันธ์สม่ำเสมอ ต้องป้องกันตั้งครรภ์ + โรคติดต่อ dual method",
    "refs": [
     {
      "paper": "MCQ47",
@@ -1215,13 +1323,13 @@
    "tags": [],
    "source": "import",
    "audit_ref": "hlc_47_MCQ_037",
-   "key_concept": "• Dual protection\n• สรุป: วัยรุ่นหญิงควรใช้ condom ร่วม implant (dual method)",
+   "key_concept": "• dual protection: condom + LARC\n• LARC (implant, IUD) ได้ผลสูงสุด\n• condom อย่างเดียวไม่พอ",
    "option_why": {
-    "A": "Condom",
-    "B": "Implant",
-    "C": "OCP",
-    "D": "IUD",
-    "E": "✓ Dual"
+    "A": "ถุงยางป้องกัน STI แต่ล้มเหลวได้ ~13%",
+    "B": "implant ป้องกันตั้งครรภ์ดีแต่ไม่ป้องกัน STI",
+    "C": "ยาเม็ดต้องกินสม่ำเสมอ ล้มเหลวในวัยรุ่นสูง",
+    "D": "IUD ไม่ป้องกัน STI",
+    "E": "✓ ถุงยาง + implant ป้องกันทั้ง STI และตั้งครรภ์สูงสุด"
    },
    "audit_note": "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
   },
@@ -1241,7 +1349,7 @@
    },
    "answer": "D",
    "answer_status": "draft",
-   "explanation": "หลั่งภายใน 2 นาที คือ premature ejaculation",
+   "explanation": "หลั่งเร็วก่อน 2 นาที = premature ejaculation",
    "refs": [
     {
      "paper": "MCQ47",
@@ -1253,13 +1361,13 @@
    "tags": [],
    "source": "import",
    "audit_ref": "hlc_47_MCQ_038",
-   "key_concept": "• PE <1–2 min\n• สรุป: หลั่งภายใน 2 นาที คือ premature ejaculation",
+   "key_concept": "• PE: หลั่งก่อน ~1 นาทีหลังสอดใส่\n• รักษา: SSRI, start-stop",
    "option_why": {
-    "A": "Arousal disorder",
-    "B": "Orgasmic disorder",
-    "C": "Fantasy",
-    "D": "✓ Premature ejaculation",
-    "E": "Satisfaction"
+    "A": "arousal disorder เป็นเรื่องความตื่นตัว",
+    "B": "orgasmic disorder เป็นเรื่องไม่ถึงจุดสุดยอด",
+    "C": "loss of fantasy เป็น desire disorder",
+    "D": "✓ ถึงจุดสุดยอดเร็วกว่า ~1–2 นาทีหลังสอดใส่",
+    "E": "balanced satisfaction ไม่ตรงกับอาการ"
    },
    "audit_note": "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
   },
@@ -1279,7 +1387,7 @@
    },
    "answer": "A",
    "answer_status": "draft",
-   "explanation": "วัยหมดประจำเดือนเกิดจากรังไข่เสื่อม",
+   "explanation": "ประจำเดือนหมดเพราะรังไข่เสื่อมตามอายุ (menopause)",
    "refs": [
     {
      "paper": "MCQ47",
@@ -1291,13 +1399,22 @@
    "tags": [],
    "source": "import",
    "audit_ref": "hlc_47_MCQ_039",
-   "key_concept": "• Menopause: ovarian failure\n• สรุป: วัยหมดประจำเดือนเกิดจากรังไข่เสื่อม",
+   "key_concept": "• menopause: ไม่มีประจำเดือน 12 เดือน\n• estrogen ลด FSH/LH เพิ่ม\n• สาเหตุที่ ovary",
+   "mechanism": [
+    "อายุมาก ovarian follicle หมด",
+    "estrogen/inhibin ลด",
+    {
+     "s": "ไม่มีประจำเดือน = menopause",
+     "answer": true
+    },
+    "FSH/LH สูงขึ้นชดเชย"
+   ],
    "option_why": {
-    "A": "✓ Ovary",
-    "B": "Thyroid",
-    "C": "Pituitary",
-    "D": "Hypothalamus",
-    "E": "Uterus"
+    "A": "✓ รังไข่หมดฟอลลิเคิลจึงไม่ตอบสนอง FSH",
+    "B": "thyroid ไม่ใช่สาเหตุของ menopause",
+    "C": "pituitary หลั่ง FSH/LH เพิ่ม (ไม่ใช่เสื่อม)",
+    "D": "hypothalamus ยังหลั่ง GnRH ได้",
+    "E": "uterus เสื่อมเป็นผลตามหลัง"
    },
    "audit_note": "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
   },
@@ -1317,7 +1434,7 @@
    },
    "answer": "A",
    "answer_status": "draft",
-   "explanation": "Metabolic presbycusis จาก stria vascularis",
+   "explanation": "Metabolic presbycusis เกิดจาก stria vascularis ฝ่อ",
    "refs": [
     {
      "paper": "MCQ47",
@@ -1329,13 +1446,22 @@
    "tags": [],
    "source": "import",
    "audit_ref": "hlc_47_MCQ_040",
-   "key_concept": "• Metabolic presbycusis\n• สรุป: Metabolic presbycusis จาก stria vascularis",
+   "key_concept": "• presbycusis 4 แบบ\n• metabolic: audiogram flat",
+   "mechanism": [
+    "stria vascularis ฝ่อ",
+    "endocochlear potential ลด",
+    {
+     "s": "hair cell ตอบสนองได้ไม่ดี",
+     "answer": true
+    },
+    "การได้ยินลดทุกความถี่"
+   ],
    "option_why": {
-    "A": "✓ Stria vascularis",
-    "B": "Basilar",
-    "C": "Hair cell",
-    "D": "Synaptic",
-    "E": "Lipofuscin"
+    "A": "✓ stria vascularis ผลิต endocochlear potential",
+    "B": "basilar membrane หนา = mechanical",
+    "C": "hair cell หาย = sensory",
+    "D": "synapse เสีย = neural",
+    "E": "lipofuscin ใน ganglion = neural"
    },
    "audit_note": "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
   },
@@ -1354,7 +1480,7 @@
    },
    "answer": "B",
    "answer_status": "draft",
-   "explanation": "ปอดชรา elastic recoil ลด compliance ปอดเพิ่ม",
+   "explanation": "ปอดสูงวัย lung compliance เพิ่ม (elastic recoil ลด) แต่ chest wall แข็ง",
    "refs": [
     {
      "paper": "MCQ47",
@@ -1366,12 +1492,21 @@
    "tags": [],
    "source": "import",
    "audit_ref": "hlc_47_MCQ_041",
-   "key_concept": "• Aging lung: ↑ compliance, ↓ recoil\n• สรุป: ปอดชรา elastic recoil ลด compliance ปอดเพิ่ม",
+   "key_concept": "• สูงวัย: elastic recoil ลด, FRC เพิ่ม\n• chest wall compliance ลด\n• FEV1 ลดทุกปี",
+   "mechanism": [
+    "elastic fiber เสื่อม",
+    "recoil ลด",
+    {
+     "s": "lung compliance เพิ่ม",
+     "answer": true
+    },
+    "air trapping, residual volume ↑"
+   ],
    "option_why": {
-    "A": "Artery stiffens",
-    "B": "✓ Lung compliance ↑",
-    "C": "Chest wall compliance ↓",
-    "D": "Calcification"
+    "A": "หลอดเลือดแข็ง compliance ลด",
+    "B": "✓ elastic fiber ลด ปอดยืดง่ายขึ้น compliance เพิ่ม",
+    "C": "ผนังทรวงอกแข็งขึ้น compliance ลด",
+    "D": "calcification ของกระดูกอ่อน ไม่ใช่การเปลี่ยนแปลงหลัก"
    },
    "audit_note": "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
   },
@@ -1391,7 +1526,7 @@
    },
    "answer": "C",
    "answer_status": "draft",
-   "explanation": "Frontal lobe เกี่ยวกับ cognition",
+   "explanation": "Frontal lobe ควบคุมการรู้คิดและสติปัญญา",
    "refs": [
     {
      "paper": "MCQ47",
@@ -1403,13 +1538,13 @@
    "tags": [],
    "source": "import",
    "audit_ref": "hlc_47_MCQ_042",
-   "key_concept": "• Executive function\n• สรุป: Frontal lobe เกี่ยวกับ cognition",
+   "key_concept": "• frontal: executive function, planning\n• สูงวัย frontal atrophy เร็ว",
    "option_why": {
-    "A": "Insula",
-    "B": "Parietal",
-    "C": "✓ Frontal",
-    "D": "Occipital",
-    "E": "Temporal"
+    "A": "insula เกี่ยวกับ interoception",
+    "B": "parietal เกี่ยวกับ sensory integration",
+    "C": "✓ frontal คือ executive function ที่ลดตามอายุ",
+    "D": "occipital คือการมองเห็น",
+    "E": "temporal คือ memory/ภาษา"
    },
    "audit_note": "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
   },
@@ -1429,7 +1564,7 @@
    },
    "answer": "E",
    "answer_status": "draft",
-   "explanation": "Impulsive, hypergraphia เกี่ยวกับ temporal lobe",
+   "explanation": "ตอบตามเฉลยต้นฉบับ occipital (AI: frontal น่าจะถูกกว่า)",
    "refs": [
     {
      "paper": "MCQ47",
@@ -1441,13 +1576,13 @@
    "tags": [],
    "source": "import",
    "audit_ref": "hlc_47_MCQ_043",
-   "key_concept": "• Temporal lobe epilepsy: hypergraphia\n• สรุป: Impulsive, hypergraphia เกี่ยวกับ temporal lobe",
+   "key_concept": "• impulsivity มักจาก frontal\n• hypergraphia สัมพันธ์ temporal lobe epilepsy",
    "option_why": {
-    "A": "Cerebellum",
-    "B": "Frontal",
-    "C": "Parietal",
-    "D": "Skull",
-    "E": "✓ Temporal (Geschwind)"
+    "A": "cerebellum คุมการทรงตัว",
+    "B": "frontal คุม impulse (AI เห็นว่าน่าจะถูก)",
+    "C": "parietal คือ sensory",
+    "D": "base of skull ไม่ใช่สมอง",
+    "E": "✓ ตามเฉลยต้นฉบับ"
    },
    "audit_note": "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
   },
@@ -1465,7 +1600,7 @@
    },
    "answer": "C",
    "answer_status": "draft",
-   "explanation": "มะเร็งแพร่กระจายหลังรักษา ควรวางแผน advance care planning",
+   "explanation": "มะเร็งแพร่กระจายแล้ว ควรทำ advance care planning",
    "refs": [
     {
      "paper": "MCQ47",
@@ -1477,11 +1612,11 @@
    "tags": [],
    "source": "import",
    "audit_ref": "hlc_47_MCQ_044",
-   "key_concept": "• Advanced cancer: ACP\n• สรุป: มะเร็งแพร่กระจายหลังรักษา ควรวางแผน advance care planning",
+   "key_concept": "• ACP เริ่มเมื่อโรคลุกลาม\n• ระบุความต้องการผู้ป่วย",
    "option_why": {
-    "A": "Sedation",
-    "B": "End of life",
-    "C": "✓ Advance care"
+    "A": "palliative sedation ใช้ปลายชีวิต",
+    "B": "end of life care ใช้ใกล้เสียชีวิต",
+    "C": "✓ advance care ปรึกษาเรื่องการดูแลล่วงหน้า"
    },
    "audit_note": "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
   },
@@ -1501,7 +1636,7 @@
    },
    "answer": "A",
    "answer_status": "draft",
-   "explanation": "ช่วงให้นมควรหลีกเลี่ยง diazepam",
+   "explanation": "Diazepam ควรเลี่ยงตอนให้นม",
    "refs": [
     {
      "paper": "MCQ47",
@@ -1513,13 +1648,13 @@
    "tags": [],
    "source": "import",
    "audit_ref": "hlc_47_MCQ_045",
-   "key_concept": "• Lactation: avoid BZD\n• สรุป: ช่วงให้นมควรหลีกเลี่ยง diazepam",
+   "key_concept": "• เลี่ยง BZD ยาวตอนให้นม\n• antihistamine/NSAID สั้น ๆ ได้",
    "option_why": {
-    "A": "✓ Diazepam",
-    "B": "Ibuprofen ใช้ได้",
-    "C": "Diclofenac ใช้ได้",
-    "D": "Loratadine",
-    "E": "CPM"
+    "A": "✓ half-life ยาว สะสม ทารกง่วง",
+    "B": "ibuprofen ใช้ได้ในน้ำนม",
+    "C": "diclofenac ใช้ได้ระยะสั้น",
+    "D": "loratadine ปริมาณในน้ำนมต่ำ",
+    "E": "chlorpheniramine ใช้ได้ระยะสั้น"
    },
    "audit_note": "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
   },
@@ -1539,7 +1674,7 @@
    },
    "answer": "E",
    "answer_status": "draft",
-   "explanation": "ไมเกรนช่วงให้นมใช้ paracetamol",
+   "explanation": "ไมเกรนตอนให้นม ใช้ paracetamol ปลอดภัย",
    "refs": [
     {
      "paper": "MCQ47",
@@ -1551,13 +1686,13 @@
    "tags": [],
    "source": "import",
    "audit_ref": "hlc_47_MCQ_046",
-   "key_concept": "• Lactation migraine: paracetamol\n• สรุป: ไมเกรนช่วงให้นมใช้ paracetamol",
+   "key_concept": "• เลือก paracetamol ก่อนตอนให้นม\n• เลี่ยง ergot",
    "option_why": {
-    "A": "Ibuprofen",
-    "B": "Ergotamine ห้าม",
-    "C": "Amiodarone",
-    "D": "Celecoxib",
-    "E": "✓ Paracetamol"
+    "A": "ibuprofen ใช้ได้แต่ไม่ใช่ตัวแรก",
+    "B": "ergotamine ผ่านน้ำนมทำเด็กอาเจียนและชัก",
+    "C": "amiodarone ไม่ใช่ยาไมเกรน",
+    "D": "celecoxib ข้อมูลน้อย",
+    "E": "✓ paracetamol ปลอดภัยที่สุด"
    },
    "audit_note": "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
   },
@@ -1575,7 +1710,7 @@
    },
    "answer": "C",
    "answer_status": "draft",
-   "explanation": "ผู้สูงอายุนอนไม่หลับ lorazepam",
+   "explanation": "ผู้สูงอายุใช้ lorazepam สั้นปลอดภัยกว่า",
    "refs": [
     {
      "paper": "MCQ47",
@@ -1587,11 +1722,11 @@
    "tags": [],
    "source": "import",
    "audit_ref": "hlc_47_MCQ_047",
-   "key_concept": "• Elderly BZD\n• สรุป: ผู้สูงอายุนอนไม่หลับ lorazepam",
+   "key_concept": "• Beers criteria เลี่ยง long-acting BZD\n• เริ่มขนาดต่ำ",
    "option_why": {
-    "A": "Diazepam",
-    "B": "Midazolam",
-    "C": "✓ Lorazepam"
+    "A": "diazepam ยาวสะสม",
+    "B": "midazolam ออกฤทธิ์สั้นมากใช้ทำหัตถการ",
+    "C": "✓ lorazepam ไม่มี active metabolite"
    },
    "audit_note": "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
   },
@@ -1610,7 +1745,7 @@
    },
    "answer": "D",
    "answer_status": "draft",
-   "explanation": "Gentamicin ทำให้ nephrotoxicity",
+   "explanation": "Gentamicin ใน 80 ปี → nephrotoxicity",
    "refs": [
     {
      "paper": "MCQ47",
@@ -1622,12 +1757,21 @@
    "tags": [],
    "source": "import",
    "audit_ref": "hlc_47_MCQ_048",
-   "key_concept": "• Aminoglycoside nephrotoxic\n• สรุป: Gentamicin ทำให้ nephrotoxicity",
+   "key_concept": "• aminoglycoside: nephro + ototoxicity\n• ปรับขนาดตาม CrCl\n• ตรวจ creatinine",
+   "mechanism": [
+    "สะสมใน proximal tubule",
+    "เกิด tubular necrosis",
+    {
+     "s": "ไตเสียหาย nephrotoxicity",
+     "answer": true
+    },
+    "creatinine สูงขึ้น"
+   ],
    "option_why": {
-    "A": "Neuro",
-    "B": "Cardio",
-    "C": "Hepato",
-    "D": "✓ Nephro"
+    "A": "neurotoxicity พบได้แต่ไม่ใช่ที่หลัก",
+    "B": "cardiotoxicity ไม่ใช่",
+    "C": "hepatotoxicity ไม่ใช่",
+    "D": "✓ ไตเสื่อมและยาถูกขับทางไต เพิ่มความเสี่ยง"
    },
    "audit_note": "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
   },
@@ -1645,7 +1789,7 @@
    },
    "answer": "C",
    "answer_status": "draft",
-   "explanation": "Nortriptyline ในผู้สูงอายุตรวจ creatinine",
+   "explanation": "Nortriptyline ในผู้สูงอายุ ต้องดูการทำงานของไต (creatinine)",
    "refs": [
     {
      "paper": "MCQ47",
@@ -1657,11 +1801,11 @@
    "tags": [],
    "source": "import",
    "audit_ref": "hlc_47_MCQ_049",
-   "key_concept": "• Renal function\n• สรุป: Nortriptyline ในผู้สูงอายุตรวจ creatinine",
+   "key_concept": "• สูงอายุ GFR ลด\n• ปรับขนาดตาม CrCl",
    "option_why": {
-    "A": "BUN",
-    "B": "Bilirubin",
-    "C": "✓ Creatinine"
+    "A": "BUN ไม่จำเพาะเท่า creatinine",
+    "B": "bilirubin ดูตับ",
+    "C": "✓ creatinine คำนวณ CrCl ปรับขนาดยา"
    },
    "audit_note": "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
   },
@@ -1681,7 +1825,7 @@
    },
    "answer": "D",
    "answer_status": "draft",
-   "explanation": "ยาหลายตัว (aspirin + naproxen + HCTZ) เป็น drug interaction",
+   "explanation": "Naproxen + aspirin + HCTZ เป็น drug interaction",
    "refs": [
     {
      "paper": "MCQ47",
@@ -1693,13 +1837,13 @@
    "tags": [],
    "source": "import",
    "audit_ref": "hlc_47_MCQ_050",
-   "key_concept": "• NSAID + aspirin/HCTZ\n• สรุป: ยาหลายตัว (aspirin + naproxen + HCTZ) เป็น drug interaction",
+   "key_concept": "• NSAID + aspirin เพิ่มเลือดออก\n• NSAID ลดฤทธิ์ diuretic/antihypertensive\n• triple whammy ต่อไต",
    "option_why": {
-    "A": "Precaution",
-    "B": "Dose error",
-    "C": "Indication error",
-    "D": "✓ Interaction",
-    "E": "Contraindication"
+    "A": "precaution ไม่ใช่ปัญหาหลัก",
+    "B": "ขนาดยาไม่ใช่ข้อผิดพลาด",
+    "C": "ยาตรงข้อบ่งใช้",
+    "D": "✓ NSAID + aspirin + diuretic ทำให้ไต/เลือดออกเสี่ยง",
+    "E": "ไม่มี contraindication เด่น"
    },
    "audit_note": "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
   },
@@ -1719,7 +1863,7 @@
    },
    "answer": "E",
    "answer_status": "draft",
-   "explanation": "ไตเสื่อมให้ glipizide ฯลฯ เป็น contraindication",
+   "explanation": "Glipizide ในผู้ป่วยไตเสื่อมเป็น contraindication/ควรเลี่ยง",
    "refs": [
     {
      "paper": "MCQ47",
@@ -1731,13 +1875,13 @@
    "tags": [],
    "source": "import",
    "audit_ref": "hlc_47_MCQ_051",
-   "key_concept": "• Renal insufficiency\n• สรุป: ไตเสื่อมให้ glipizide ฯลฯ เป็น contraindication",
+   "key_concept": "• sulfonylurea สะสมในไตเสื่อม\n• ใช้ insulin/linagliptin แทน",
    "option_why": {
-    "A": "Precaution",
-    "B": "Dose",
-    "C": "Indication",
-    "D": "Interaction",
-    "E": "✓ Contraindication"
+    "A": "precaution ไม่เพียงพอ",
+    "B": "ขนาดไม่ใช่ปัญหา",
+    "C": "ยาตรงข้อบ่งใช้",
+    "D": "ไม่มี drug interaction เด่น",
+    "E": "✓ ไตเสื่อมสะสมยา ทำ hypoglycemia"
    },
    "audit_note": "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
   },
@@ -1757,7 +1901,7 @@
    },
    "answer": "E",
    "answer_status": "draft",
-   "explanation": "ไม่ควรให้ยาคนอื่น ต้องมาพบแพทย์เพื่อวินิจฉัย",
+   "explanation": "ไม่ควรจ่ายยาให้คนที่ไม่ได้ตรวจ ต้องให้มาพบแพทย์เพื่อวินิจฉัย",
    "refs": [
     {
      "paper": "MCQ47",
@@ -1769,13 +1913,13 @@
    "tags": [],
    "source": "import",
    "audit_ref": "hlc_47_MCQ_052",
-   "key_concept": "• Rational drug use\n• สรุป: ไม่ควรให้ยาคนอื่น ต้องมาพบแพทย์เพื่อวินิจฉัย",
+   "key_concept": "• จริยธรรม: ไม่จ่ายยาโดยไม่ตรวจ\n• steroid ใช้ผิดทำผิวบาง",
    "option_why": {
-    "A": "ต้องรู้ยาที่ใช้",
-    "B": "ไม่อยากให้",
-    "C": "ให้เพราะ steroid ปลอดภัย",
-    "D": "ให้เพราะเศรษฐกิจ",
-    "E": "✓ ต้องมาหาหมอ"
+    "A": "ประวัติยาเดิมสำคัญแต่ไม่ใช่เหตุผลหลัก",
+    "B": "ปฏิเสธโดยไม่มีเหตุผล",
+    "C": "steroid มีผลข้างเคียงมาก",
+    "D": "ไม่ถูกจริยธรรม",
+    "E": "✓ ต้องวินิจฉัยก่อนให้ยา"
    },
    "audit_note": "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
   },
@@ -1795,7 +1939,7 @@
    },
    "answer": "C",
    "answer_status": "draft",
-   "explanation": "ไวรัส URI ไม่ควรให้ antibiotic: indication error",
+   "explanation": "ไข้หวัดไวรัสไม่ต้องใช้ยาปฏิชีวนะ = indication error",
    "refs": [
     {
      "paper": "MCQ47",
@@ -1807,13 +1951,13 @@
    "tags": [],
    "source": "import",
    "audit_ref": "hlc_47_MCQ_053",
-   "key_concept": "• Viral URI: no antibiotic\n• สรุป: ไวรัส URI ไม่ควรให้ antibiotic: indication error",
+   "key_concept": "• URI ส่วนใหญ่เกิดจากไวรัส\n• amoxi-clav ไม่จำเป็น",
    "option_why": {
-    "A": "Dose error",
-    "B": "Precaution",
-    "C": "✓ Indication error",
-    "D": "Interaction",
-    "E": "Contraindication"
+    "A": "ขนาดไม่ใช่ปัญหา",
+    "B": "precaution ไม่เกี่ยว",
+    "C": "✓ ให้ antibiotic ที่ไม่มีข้อบ่งชี้",
+    "D": "interaction ไม่เด่น",
+    "E": "ไม่มี contraindication"
    },
    "audit_note": "ไม่มีเฉลยต้นฉบับ AI ทำเฉลยให้"
   }
