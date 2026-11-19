@@ -20,7 +20,16 @@
     "D": "B ถูกแทนที่น้อยกว่า ไม่ใช่ผลหลัก",
     "E": "AI เติมให้: ผลตรงข้ามกับที่เกิดขึ้น"
    },
-   "key_concept": "• displacement จาก protein binding site\n• free drug ↑ → ฤทธิ์/พิษ ↑ ชั่วคราว\n• ยาที่ binding สูง: warfarin, phenytoin"
+   "key_concept": "• displacement จาก protein binding site\n• free drug ↑ → ฤทธิ์/พิษ ↑ ชั่วคราว\n• ยาที่ binding สูง: warfarin, phenytoin",
+   "mechanism": [
+    "ยา B จับ albumin แน่นกว่ายา A",
+    "ให้ร่วมกัน ยา B แย่งตำแหน่งจับ",
+    {
+     "s": "ยา A ถูกไล่ออก ส่วนอิสระ (free) เพิ่ม",
+     "answer": true
+    },
+    "ฤทธิ์และพิษของยา A เพิ่มขึ้น"
+   ]
   },
   "53": {
    "choices_override": {
@@ -127,7 +136,16 @@
     "D": "clonidine ไม่ทำให้กรดเพิ่ม",
     "E": "AI เติมให้: glycopyrrolate ลด secretion ปลอดภัยกว่า"
    },
-   "key_concept": "• ACh ↑ → gastric acid ↑\n• AChE inhibitor ระวังในแผลกระเพาะ\n• antimuscarinic ลดกรดได้"
+   "key_concept": "• ACh ↑ → gastric acid ↑\n• AChE inhibitor ระวังในแผลกระเพาะ\n• antimuscarinic ลดกรดได้",
+   "mechanism": [
+    "physostigmine ยับยั้ง acetylcholinesterase",
+    "ACh สะสมที่ M3 ของ parietal cell",
+    {
+     "s": "หลั่งกรดในกระเพาะเพิ่ม",
+     "answer": true
+    },
+    "แผล peptic ulcer แย่ลง"
+   ]
   },
   "74": {
    "choices_override": {
@@ -169,7 +187,16 @@
     "D": "✓ AChE ยับยั้ง → ACh ค้างนาน",
     "E": "AI เติมให้: MAO สลายโมโนเอมีน"
    },
-   "key_concept": "• ACh สลายโดย AChE\n• AChE inhibitor: neostigmine, physostigmine\n• NE สลายโดย MAO/COMT/NET"
+   "key_concept": "• ACh สลายโดย AChE\n• AChE inhibitor: neostigmine, physostigmine\n• NE สลายโดย MAO/COMT/NET",
+   "mechanism": [
+    "ปลายประสาท parasympathetic หลั่ง ACh",
+    "ACh ถูกทำลายโดย acetylcholinesterase",
+    {
+     "s": "ยับยั้ง AChE",
+     "answer": true
+    },
+    "ACh ที่ synapse เพิ่มขึ้น"
+   ]
   },
   "76": {
    "choices_override": {
@@ -190,7 +217,16 @@
     "D": "sumatriptan ระวัง HTN แต่โจทย์เน้น asthma",
     "E": "AI เติมให้: verapamil ไม่เกี่ยวกับ asthma"
    },
-   "key_concept": "• nonselective β-blocker → bronchospasm\n• ใช้ propranolol ป้องกันไมเกรนได้ แต่เลี่ยงใน asthma\n• เลือก β1-selective หรือ CCB"
+   "key_concept": "• nonselective β-blocker → bronchospasm\n• ใช้ propranolol ป้องกันไมเกรนได้ แต่เลี่ยงใน asthma\n• เลือก β1-selective หรือ CCB",
+   "mechanism": [
+    "propranolol เป็น non-selective β-blocker",
+    {
+     "s": "บล็อก β2 ที่หลอดลม",
+     "answer": true
+    },
+    "หลอดลมหดเกร็ง",
+    "หอบหืดกำเริบ จึงต้องเลี่ยง"
+   ]
   },
   "26": {
    "explanation": "Absolute refractory period เกิดช่วง depolarization ถึงต้น repolarization (Na⁺ channel inactivated) — ไฟล์เฉลยวง A และ B",
@@ -201,7 +237,16 @@
     "D": "Na-K pump ไม่ใช่สาเหตุ",
     "E": "K⁺ ลดไม่ใช่นิยาม"
    },
-   "key_concept": "• Absolute RP: ไม่ตอบสนองต่อสิ่งเร้าใด ๆ\n• Na⁺ channel inactivation\n• Relative RP: ใช้สิ่งเร้ารุนแรงได้"
+   "key_concept": "• Absolute RP: ไม่ตอบสนองต่อสิ่งเร้าใด ๆ\n• Na⁺ channel inactivation\n• Relative RP: ใช้สิ่งเร้ารุนแรงได้",
+   "mechanism": [
+    "Na+ channel เปิด เกิด depolarization",
+    {
+     "s": "inactivation gate ปิด channel ใช้งานซ้ำไม่ได้",
+     "answer": true
+    },
+    "ไม่ว่าสิ่งเร้าแรงเท่าใดก็ไม่เกิด action potential ใหม่",
+    "เมื่อ repolarize channel กลับสู่สถานะพร้อม จึงเข้าสู่ relative refractory period"
+   ]
   },
   "28": {
    "explanation": "Enzyme inhibitor ลด metabolism → ยาอยู่นานขึ้น",
@@ -212,7 +257,16 @@
     "D": "antacid ลดการดูดซึมได้",
     "E": "รับประทานตอนอาหาร อาจลด/เพิ่มการดูดซึม"
    },
-   "key_concept": "• inducer: CL ↑ → duration ↓\n• inhibitor: CL ↓ → duration ↑\n• ตัวอย่าง inhibitor: ketoconazole, cimetidine"
+   "key_concept": "• inducer: CL ↑ → duration ↓\n• inhibitor: CL ↓ → duration ↑\n• ตัวอย่าง inhibitor: ketoconazole, cimetidine",
+   "mechanism": [
+    "ยาถูกกำจัดด้วยเอนไซม์ตับ",
+    "ให้ร่วมกับ enzyme inhibitor",
+    {
+     "s": "อัตราการทำลายยาลดลง half-life ยาวขึ้น",
+     "answer": true
+    },
+    "ระดับยาคงอยู่นาน ฤทธิ์นานขึ้น"
+   ]
   },
   "29": {
    "explanation": "ยาที่จับ receptor แล้วไม่ก่อผล และถูกแทนที่ด้วย agonist ได้ = reversible (competitive) antagonist",
@@ -256,7 +310,16 @@
     "D": "✓ losartan (ARB) ไม่เพิ่ม bradykinin จึงไม่ทำให้ไอ ใช้แทน ACEI ได้ ไฟล์เฉลยวงข้อนี้ด้วย",
     "E": "dinoprostone = PGE2 ใช้เหนี่ยวนำคลอด"
    },
-   "key_concept": "• ACEI → bradykinin ↑ → ไอแห้ง\n• ARB ไม่มีผลต่อ bradykinin\n• ข้อนี้ไฟล์เฉลยวงทั้ง C และ D"
+   "key_concept": "• ACEI → bradykinin ↑ → ไอแห้ง\n• ARB ไม่มีผลต่อ bradykinin\n• ข้อนี้ไฟล์เฉลยวงทั้ง C และ D",
+   "mechanism": [
+    "ACE inhibitor ยับยั้งการสลาย bradykinin",
+    "bradykinin สะสมในทางเดินหายใจ",
+    "ไอแห้ง",
+    {
+     "s": "เปลี่ยนเป็น ARB ซึ่งบล็อก AT1 โดยไม่กระทบ bradykinin (ตามเฉลยข้อแรกที่วงคือ enalapril ซึ่งเป็นตัวก่อเหตุ)",
+     "answer": true
+    }
+   ]
   },
   "35": {
    "explanation": "Willow bark (salicin → salicylate ยับยั้ง COX) ลด PGF2α ที่ทำให้มดลูกบีบรัดตัว (ปวดประจำเดือน)",
@@ -380,7 +443,16 @@
     "D": "✓ ไม่ผ่าน hepatic first-pass (F = 100%)",
     "E": "ให้ครั้งเดียวไม่ใช่ข้อได้เปรียบเฉพาะ IV"
    },
-   "key_concept": "• IV: F = 100%, onset เร็ว\n• oral: first-pass, ดูดซึมแปรปรวน\n• ข้อนี้ B ก็ถูกด้วย"
+   "key_concept": "• IV: F = 100%, onset เร็ว\n• oral: first-pass, ดูดซึมแปรปรวน\n• ข้อนี้ B ก็ถูกด้วย",
+   "mechanism": [
+    "ยากินถูกดูดซึมเข้า portal vein",
+    "ผ่านตับก่อนเข้าระบบ (first-pass metabolism)",
+    {
+     "s": "ให้ทาง IV ยาเข้ากระแสเลือดโดยตรง ไม่ผ่านตับก่อน",
+     "answer": true
+    },
+    "bioavailability 100%"
+   ]
   },
   "59": {
    "explanation": "ผลที่ไม่ต้องการแต่หลีกเลี่ยงไม่ได้ที่ขนาดยาปกติ = side effect",
@@ -413,7 +485,16 @@
     "D": "hypoalbuminemia ทำให้ free drug ↑",
     "E": "renal impairment ไม่เกี่ยวกับ onset"
    },
-   "key_concept": "• pH กระทบ ionization และ dissolution\n• gastric emptying ช้า → onset ช้า\n• ปัจจัยการดูดซึม"
+   "key_concept": "• pH กระทบ ionization และ dissolution\n• gastric emptying ช้า → onset ช้า\n• ปัจจัยการดูดซึม",
+   "mechanism": [
+    "ยาเม็ดต้องแตกตัวและละลายก่อนดูดซึม",
+    "pH ในทางเดินอาหารกำหนดสัดส่วนยาที่ไม่แตกตัวเป็นไอออน",
+    {
+     "s": "pH เปลี่ยน สัดส่วนที่ดูดซึมได้เปลี่ยน",
+     "answer": true
+    },
+    "ออกฤทธิ์ช้าหรือเร็วต่างกันในแต่ละคน"
+   ]
   },
   "62": {
    "explanation": "Weak acid ถูกขับมากขึ้นเมื่อปัสสาวะเป็นด่าง (urinary alkalinization) เช่น sodium bicarbonate",
@@ -455,7 +536,16 @@
     "D": "competitive antagonist: shift ขวา",
     "E": "agonist อย่างเดียวให้กราฟ C"
    },
-   "key_concept": "• Competitive: shift ขวา Emax คงที่\n• Irreversible/non-competitive: Emax ↓\n• Partial agonist: Emax ต่ำเอง"
+   "key_concept": "• Competitive: shift ขวา Emax คงที่\n• Irreversible/non-competitive: Emax ↓\n• Partial agonist: Emax ต่ำเอง",
+   "mechanism": [
+    "agonist จับ receptor ได้ผลสูงสุด Emax",
+    "เติม antagonist ที่จับถาวรหรือจับคนละตำแหน่ง",
+    {
+     "s": "จำนวน receptor ที่ใช้งานได้ลดลง เพิ่ม agonist ก็ชนะไม่ได้",
+     "answer": true
+    },
+    "กราฟ Emax ลดลง (ไม่ใช่แค่เลื่อนขวา)"
+   ]
   },
   "67": {
    "explanation": "Thyroid hormone receptor เป็น intracellular (nuclear) receptor → ปรับ gene transcription",
@@ -466,7 +556,16 @@
     "D": "Gi-coupled ไม่ใช่",
     "E": "tyrosine kinase ไม่ใช่"
    },
-   "key_concept": "• Steroid/thyroid → nuclear receptor\n• T3 จับ TR แล้วถอดรหัส\n• ผลช้า"
+   "key_concept": "• Steroid/thyroid → nuclear receptor\n• T3 จับ TR แล้วถอดรหัส\n• ผลช้า",
+   "mechanism": [
+    "ฮอร์โมนละลายไขมันผ่านเยื่อหุ้มเซลล์",
+    "จับ receptor ในเซลล์/นิวเคลียส",
+    {
+     "s": "complex จับ DNA ที่ hormone response element ปรับ gene transcription",
+     "answer": true
+    },
+    "สังเคราะห์โปรตีนใหม่ ออกฤทธิ์ช้าแต่นาน"
+   ]
   },
   "68": {
    "explanation": "ผลขยายหลอดลมของยา = ความสามารถก่อผล (intrinsic activity/efficacy)",
@@ -477,7 +576,16 @@
     "D": "therapeutic range = ช่วงระดับยา",
     "E": "mechanism of action = กลไก"
    },
-   "key_concept": "• Intrinsic activity = efficacy ต่อ receptor\n• Affinity ≠ efficacy\n• β2 agonist → bronchodilation"
+   "key_concept": "• Intrinsic activity = efficacy ต่อ receptor\n• Affinity ≠ efficacy\n• β2 agonist → bronchodilation",
+   "mechanism": [
+    "ยาจับ receptor (affinity)",
+    "complex ยา–receptor กระตุ้นสัญญาณภายในเซลล์",
+    {
+     "s": "ความสามารถทำให้เกิดผลหลังจับ = intrinsic activity",
+     "answer": true
+    },
+    "เกิดผลเช่น หลอดลม/หลอดเลือดขยาย"
+   ]
   },
   "69": {
    "explanation": "Gαs ที่ถูกกระตุ้นจาก β-adrenergic receptor จะไปกระตุ้น adenylyl cyclase เป็นเป้าแรก",
@@ -508,7 +616,16 @@
     "D": "ให้ไม่จำกัดไม่ได้",
     "E": "✓ ห้าม double dose เมื่อลืม"
    },
-   "key_concept": "• TI = TD50/ED50\n• ยา TI ต่ำ: warfarin, digoxin, lithium\n• ติดตามระดับยา"
+   "key_concept": "• TI = TD50/ED50\n• ยา TI ต่ำ: warfarin, digoxin, lithium\n• ติดตามระดับยา",
+   "mechanism": [
+    "therapeutic index = TD50/ED50",
+    "ค่าต่ำแปลว่าระดับรักษากับระดับพิษอยู่ใกล้กัน",
+    {
+     "s": "ระดับยาเปลี่ยนเล็กน้อยก็หลุดช่วงรักษา",
+     "answer": true
+    },
+    "ลืมกินยาหรือกินซ้ำจึงเสี่ยงไม่ได้ผลหรือเป็นพิษ"
+   ]
   },
   "71": {
    "explanation": "Phenelzine (MAOI) + wine/cheese → tyramine สะสม → hypertensive crisis",
@@ -539,7 +656,16 @@
     "D": "✓ hypernatremia (กักโซเดียม/น้ำ)",
     "E": "hypercalcemia ไม่ใช่"
    },
-   "key_concept": "• NSAID ยับยั้ง PG ที่ไต → Na⁺/น้ำ ↑\n• ผลอื่น: GI bleeding, AKI\n• ข้อนี้ GI bleeding ไม่อยู่ในตัวเลือก"
+   "key_concept": "• NSAID ยับยั้ง PG ที่ไต → Na⁺/น้ำ ↑\n• ผลอื่น: GI bleeding, AKI\n• ข้อนี้ GI bleeding ไม่อยู่ในตัวเลือก",
+   "mechanism": [
+    "NSAID ยับยั้ง COX ในไต",
+    "prostaglandin ที่ขยาย afferent arteriole และยับยั้งการดูดกลับ Na+ ลดลง",
+    {
+     "s": "ไตกักเกลือและน้ำ",
+     "answer": true
+    },
+    "บวม ความดันสูง (ตัวเลือกตามเฉลยคือ hypernatremia)"
+   ]
   },
   "77": {
    "explanation": "Atropine แก้ muscarinic symptom จาก malathion (OP) แต่ไม่แก้ muscle cramps (nicotinic)",
@@ -550,7 +676,16 @@
     "D": "lacrimation = muscarinic",
     "E": "diarrhea = muscarinic"
    },
-   "key_concept": "• OP: ACh ↑ ทั้ง M และ N\n• atropine แก้ M (SLUDGE)\n• pralidoxime แก้ N/ฟื้น AChE"
+   "key_concept": "• OP: ACh ↑ ทั้ง M และ N\n• atropine แก้ M (SLUDGE)\n• pralidoxime แก้ N/ฟื้น AChE",
+   "mechanism": [
+    "malathion ยับยั้ง AChE ทำให้ ACh เกินทั้ง muscarinic และ nicotinic",
+    "atropine บล็อกเฉพาะ muscarinic receptor",
+    {
+     "s": "อาการ nicotinic ที่กล้ามเนื้อลาย (ตะคริว กระตุก อ่อนแรง) ไม่ดีขึ้น",
+     "answer": true
+    },
+    "ต้องให้ pralidoxime ร่วมเพื่อคืนการทำงานของ AChE"
+   ]
   },
   "78": {
    "explanation": "Scombroid = histamine poisoning จากปลา → H1 antagonist",
@@ -572,7 +707,16 @@
     "D": "PGI ยับยั้งเกล็ดเลือด การยับยั้งทำให้เลือดหยุดง่าย",
     "E": "LOX ไม่ใช่"
    },
-   "key_concept": "• hirudin ยับยั้ง thrombin\n• TXA2 กระตุ้น platelet aggregation\n• ยาต้านเกล็ดเลือดเสริมเลือดไหล"
+   "key_concept": "• hirudin ยับยั้ง thrombin\n• TXA2 กระตุ้น platelet aggregation\n• ยาต้านเกล็ดเลือดเสริมเลือดไหล",
+   "mechanism": [
+    "บาดแผลกระตุ้นเกล็ดเลือด",
+    "เกล็ดเลือดสร้าง TXA2 จาก COX-1",
+    "TXA2 ทำให้เกล็ดเลือดจับกลุ่มและหลอดเลือดหดตัว",
+    {
+     "s": "ยับยั้ง TXA2 เกล็ดเลือดไม่จับกลุ่ม เลือดยิ่งหยุดยาก",
+     "answer": true
+    }
+   ]
   },
   "80": {
    "explanation": "Willow bark ลดปวดประจำเดือนโดยยับยั้ง COX ลด PGF2α ที่มดลูก",
@@ -583,7 +727,16 @@
     "D": "histamine ไม่ใช่",
     "E": "serotonin ไม่ใช่"
    },
-   "key_concept": "• Dysmenorrhea: PGF2α ↑\n• NSAID/salicylate ยับยั้ง COX\n• เหมือนข้อ 35"
+   "key_concept": "• Dysmenorrhea: PGF2α ↑\n• NSAID/salicylate ยับยั้ง COX\n• เหมือนข้อ 35",
+   "mechanism": [
+    "เยื่อบุมดลูกสลาย ปล่อย arachidonic acid",
+    "COX เปลี่ยนเป็น prostaglandin",
+    {
+     "s": "PGF2α ทำให้มดลูกบีบตัวและหลอดเลือดหดตัว",
+     "answer": true
+    },
+    "ปวดประจำเดือน (NSAID ยับยั้ง COX จึงลดปวด)"
+   ]
   },
   "81": {
    "explanation": "Enalapril (ACEI) → ไอแห้ง จาก bradykinin สะสม",

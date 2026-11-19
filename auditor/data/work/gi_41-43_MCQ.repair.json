@@ -146,7 +146,16 @@
     "D": "ETEC ใช้ได้",
     "E": "cholera ใช้ได้ (แต่ ORS สำคัญกว่า)"
    },
-   "key_concept": "• toxic megacolon\n• HUS ใน EHEC\n• ห้ามในเด็ก < 2 ปี"
+   "key_concept": "• toxic megacolon\n• HUS ใน EHEC\n• ห้ามในเด็ก < 2 ปี",
+   "mechanism": [
+    "Shigella ทำลายเยื่อบุลำไส้ใหญ่ ถ่ายเป็นมูกเลือด",
+    "loperamide ลด motility",
+    "เชื้อและ toxin อยู่ในลำไส้นานขึ้น",
+    {
+     "s": "เสี่ยง toxic megacolon จึงห้ามใช้",
+     "answer": true
+    }
+   ]
   },
   "2": {
    "explanation": "Anal canal ใต้ pectinate line บุด้วย stratified squamous epithelium",
@@ -249,7 +258,16 @@
     "D": "glucose ในลำไส้กระตุ้นการหลั่ง GIP ไม่ใช่ secretin",
     "E": "amino acid → CCK"
    },
-   "key_concept": "• pH < 4.5\n• S cell\n• secretin → HCO₃⁻"
+   "key_concept": "• pH < 4.5\n• S cell\n• secretin → HCO₃⁻",
+   "mechanism": [
+    "กรดจากกระเพาะเข้า duodenum",
+    "กรดกระตุ้น S cell",
+    {
+     "s": "หลั่ง secretin",
+     "answer": true
+    },
+    "กระตุ้นตับอ่อนหลั่ง HCO₃⁻ เพื่อสะเทิน"
+   ]
   },
   "9": {
    "choices_override": {
@@ -290,7 +308,16 @@
     "D": "ileal brake ชะลอการบีบตัวของกระเพาะและลำไส้ส่วนต้น การคลุกเคล้าจึงลดลง ไม่เพิ่ม",
     "E": "transit time เพิ่ม"
    },
-   "key_concept": "• ไขมันใน ileum → GLP-1, PYY\n• ชะลอ gastric emptying\n• อิ่มนาน"
+   "key_concept": "• ไขมันใน ileum → GLP-1, PYY\n• ชะลอ gastric emptying\n• อิ่มนาน",
+   "mechanism": [
+    "อาหารไขมันถึง ileum",
+    "ileal brake ยับยั้ง gastric emptying และ motility",
+    {
+     "s": "hyperactive ทำให้ท้องอืดแน่น",
+     "answer": true
+    },
+    "เกิด dyspepsia"
+   ]
   },
   "11": {
    "explanation": "ตามเฉลยต้นฉบับ progesterone — ตับเป็นแหล่งกำจัด steroid hormone ตัดตับ → progesterone เพิ่ม",
@@ -316,7 +343,15 @@
     "D": "Plummer-Vinson = ขาดเหล็ก",
     "E": "aspiration ไม่ใช่หลัก"
    },
-   "key_concept": "• sliding hiatal hernia\n• GERD\n• Barrett"
+   "key_concept": "• sliding hiatal hernia\n• GERD\n• Barrett",
+   "mechanism": [
+    "hiatal hernia ทำให้ LES ไม่แน่น",
+    "กรดไหลย้อนขึ้นหลอดอาหาร",
+    {
+     "s": "เยื่อบุอักเสบ (esophagitis)",
+     "answer": true
+    }
+   ]
   },
   "13": {
    "choices_override": {
@@ -568,7 +603,15 @@
     "D": "translation ไม่เกี่ยว",
     "E": "transcription ไม่เกี่ยว"
    },
-   "key_concept": "• vit C รักษา Fe ในรูป Fe²⁺\n• scurvy\n• Ehlers-Danlos (lysyl hydroxylase)"
+   "key_concept": "• vit C รักษา Fe ในรูป Fe²⁺\n• scurvy\n• Ehlers-Danlos (lysyl hydroxylase)",
+   "mechanism": [
+    "ขาดเหล็กทำให้ prolyl/lysyl hydroxylase ทำงานไม่ได้",
+    {
+     "s": "hydroxylation ของ proline และ lysine บกพร่อง",
+     "answer": true
+    },
+    "collagen cross-link ไม่แข็งแรง"
+   ]
   },
   "29": {
    "explanation": "Cholic acid มี OH 3 หมู่ (trihydroxy) ละลายน้ำดีที่สุด (ตามเฉลย)",
@@ -607,7 +650,16 @@
     "D": "✓ Zollinger-Ellison syndrome",
     "E": "Cl⁻ secretion = secretory"
    },
-   "key_concept": "• ZES ท้องเสียมีทั้ง secretory + malabsorption\n• lipase ถูกทำลายที่ pH ต่ำ\n• steatorrhea"
+   "key_concept": "• ZES ท้องเสียมีทั้ง secretory + malabsorption\n• lipase ถูกทำลายที่ pH ต่ำ\n• steatorrhea",
+   "mechanism": [
+    "ZES ผลิต gastrin มาก",
+    "กรดเกินความสามารถ pancreatic enzyme/HCO₃⁻",
+    "enzyme ถูกกรดทำลาย ย่อยไขมันไม่ได้",
+    {
+     "s": "อาหารไม่ถูกดูดซึม ดึงน้ำเข้าลำไส้ (osmotic diarrhea)",
+     "answer": true
+    }
+   ]
   },
   "32": {
    "choices_override": {
@@ -628,7 +680,16 @@
     "D": "enzyme ถูกผลิตแต่ออกไม่ได้",
     "E": "CFTR เสีย ductal cell หลั่ง bicarbonate ไม่ได้ น้ำย่อยจึงมี bicarbonate ต่ำ ไม่สูง"
    },
-   "key_concept": "• Cl⁻/HCO₃⁻ exchanger ต้องมี Cl⁻ ใน lumen\n• duct อุดตัน\n• pancreatic insufficiency"
+   "key_concept": "• Cl⁻/HCO₃⁻ exchanger ต้องมี Cl⁻ ใน lumen\n• duct อุดตัน\n• pancreatic insufficiency",
+   "mechanism": [
+    "CFTR ผิดปกติใน duct ตับอ่อน",
+    "Cl⁻ และ HCO₃⁻ หลั่งน้อย",
+    {
+     "s": "น้ำย่อยเป็น acid/ข้นเหนียว",
+     "answer": true
+    },
+    "ท่อตันและ enzyme เสีย"
+   ]
   },
   "33": {
    "choices_override": {
@@ -650,7 +711,16 @@
     "D": "SGLT2 ที่ไต",
     "E": "GLUT2 basolateral"
    },
-   "key_concept": "• glucose-galactose malabsorption\n• fructose ยังดูดได้\n• ท้องเสียตั้งแต่เกิด"
+   "key_concept": "• glucose-galactose malabsorption\n• fructose ยังดูดได้\n• ท้องเสียตั้งแต่เกิด",
+   "mechanism": [
+    "SGLT1 กลายพันธุ์",
+    "glucose-galactose ไม่ถูกดูดซึมที่ลำไส้เล็ก",
+    {
+     "s": "น้ำตาลอยู่ในลำไส้ ดึงน้ำเข้า",
+     "answer": true
+    },
+    "ท้องเสียแบบ osmotic"
+   ]
   },
   "101": {
    "explanation": "ตามเฉลยต้นฉบับ left lumbar (ตาม slide) — AI/ตำรา: นิ่วท่อน้ำดีปวดร้าวไปไหล่ขวา/ใต้สะบักขวา",
@@ -786,7 +856,16 @@
     "D": "inferior thyroid ไม่เกี่ยว",
     "E": "superior rectal → rectal varices"
    },
-   "key_concept": "• hematemesis\n• band ligation\n• octreotide"
+   "key_concept": "• hematemesis\n• band ligation\n• octreotide",
+   "mechanism": [
+    "cirrhosis เลือดผ่านตับลำบาก",
+    "portal hypertension",
+    "เลือดไหลผ่าน porto-systemic collateral",
+    {
+     "s": "esophageal varices แตก อาเจียนเป็นเลือด",
+     "answer": true
+    }
+   ]
   },
   "115": {
    "explanation": "Caudal foregut (ถึง ampulla) เลี้ยงด้วย celiac trunk",
@@ -808,7 +887,16 @@
     "D": "esophageal atresia ตั้งแต่เกิด",
     "E": "Meckel เลือดออก"
    },
-   "key_concept": "• olive mass\n• hypochloremic metabolic alkalosis\n• pyloromyotomy"
+   "key_concept": "• olive mass\n• hypochloremic metabolic alkalosis\n• pyloromyotomy",
+   "mechanism": [
+    "pyloric muscle หนาตัว",
+    "กระเพาะอาหารบีบเข้า duodenum ไม่ได้",
+    {
+     "s": "อาเจียนพุ่งไม่มีน้ำดี",
+     "answer": true
+    },
+    "pyloric stenosis"
+   ]
   },
   "117": {
    "explanation": "Taste bud อยู่ใน stratified squamous epithelium ของลิ้น",
@@ -830,7 +918,15 @@
     "D": "pylorus = mucous/G cell",
     "E": "insula ไม่ใช่"
    },
-   "key_concept": "• body/fundus: parietal + chief\n• antrum: gastrin\n• pernicious anemia: body"
+   "key_concept": "• body/fundus: parietal + chief\n• antrum: gastrin\n• pernicious anemia: body",
+   "mechanism": [
+    "parietal cell พบมากที่ body ของกระเพาะ",
+    {
+     "s": "body หลั่ง HCl",
+     "answer": true
+    },
+    "antrum หลั่ง gastrin"
+   ]
   },
   "122": {
    "explanation": "Central lacteal ใน villus · duodenum มี villi สูงหนาแน่น (ตามเฉลย)",
@@ -902,7 +998,16 @@
     "D": "✓ GIP",
     "E": "VIP เป็น neurotransmitter"
    },
-   "key_concept": "• incretin\n• GLP-1 จาก L cell\n• insulin ↑"
+   "key_concept": "• incretin\n• GLP-1 จาก L cell\n• insulin ↑",
+   "mechanism": [
+    "กินคาร์โบไฮเดรตสูง",
+    "glucose ในลำไส้เล็กกระตุ้น K cell",
+    {
+     "s": "GIP หลั่ง เข้า portal vein",
+     "answer": true
+    },
+    "GIP กระตุ้น insulin (incretin)"
+   ]
   },
   "131": {
    "explanation": "Secondary peristalsis เกิดจากหลอดอาหารถูกยืด · primary เกิดจาก bolus ที่ pharynx",
@@ -913,7 +1018,16 @@
     "D": "✓ distend esophageal wall",
     "E": "bolus เข้าหลอดอาหารส่วนบน = primary ต่อเนื่อง"
    },
-   "key_concept": "• secondary: กรดไหลย้อน/อาหารค้าง\n• myenteric + vagovagal\n• GERD"
+   "key_concept": "• secondary: กรดไหลย้อน/อาหารค้าง\n• myenteric + vagovagal\n• GERD",
+   "mechanism": [
+    "bolus ค้างในหลอดอาหาร",
+    "ผนังหลอดอาหารถูกยืด",
+    {
+     "s": "กระตุ้น secondary peristalsis",
+     "answer": true
+    },
+    "เคลื่อน bolus ลงกระเพาะ"
+   ]
   },
   "132": {
    "explanation": "Receptive relaxation: กระเพาะขยายรับอาหารโดยความดันไม่เพิ่ม",
@@ -946,7 +1060,15 @@
     "D": "monocyte ไม่ใช่ (ในเลือด)",
     "E": "macrophage ทั่วไป (Kupffer คือเฉพาะ)"
    },
-   "key_concept": "• first-pass filter\n• RES\n• cytokine"
+   "key_concept": "• first-pass filter\n• RES\n• cytokine",
+   "mechanism": [
+    "จุลชีพจากลำไส้เข้า portal vein",
+    {
+     "s": "Kupffer cell ในไซนูซอยด์ตับจับกิน",
+     "answer": true
+    },
+    "ป้องกันเชื้อเข้ากระแสเลือด"
+   ]
   },
   "136": {
    "explanation": "ตัด ileum → ดูดน้ำดีกลับไม่ได้ → ตับสร้าง bile acid ชดเชยเพิ่ม",
@@ -957,7 +1079,16 @@
     "D": "portal vein ลด",
     "E": "hepatic vein ไม่เกี่ยว"
    },
-   "key_concept": "• 7α-hydroxylase ↑\n• pool ลด → steatorrhea\n• FGF19 ลด"
+   "key_concept": "• 7α-hydroxylase ↑\n• pool ลด → steatorrhea\n• FGF19 ลด",
+   "mechanism": [
+    "ตัด ileum ทำให้ bile acid ไม่ถูกดูดกลับ",
+    "bile acid ในเลือดพอร์ทัลลด",
+    "ตับสร้าง bile acid ใหม่เพิ่ม (feedback ลด)",
+    {
+     "s": "การสังเคราะห์ bile acid ในตับเพิ่ม",
+     "answer": true
+    }
+   ]
   },
   "137": {
    "explanation": "ตามเฉลยต้นฉบับ aldosterone — ตับสลาย steroid hormone ตัดตับแล้ว hormone สูงขึ้น",
@@ -972,7 +1103,16 @@
     "D": "การ conjugate bilirubin เกิดที่ตับ เมื่อเนื้อตับลดลง conjugated bilirubin ไม่เพิ่ม",
     "E": "angiotensinogen ลด (สร้างที่ตับ)"
    },
-   "key_concept": "• ตับเสีย → secondary hyperaldosteronism\n• estrogen สูง\n• ascites"
+   "key_concept": "• ตับเสีย → secondary hyperaldosteronism\n• estrogen สูง\n• ascites",
+   "mechanism": [
+    "ตัดตับออก",
+    "metabolism hormone ลดลง",
+    {
+     "s": "aldosterone ในเลือดสูง (ตามเฉลย)",
+     "answer": true
+    },
+    "เกลือและน้ำคั่ง"
+   ]
   },
   "138": {
    "explanation": "ถ่ายหลังมื้ออาหาร = gastrocolic reflex",
@@ -983,7 +1123,16 @@
     "D": "adaptive relaxation ที่กระเพาะ",
     "E": "circular contraction ไม่จำเพาะ"
    },
-   "key_concept": "• mass movement\n• ทารกเด่นชัด\n• gastrin/CCK + neural"
+   "key_concept": "• mass movement\n• ทารกเด่นชัด\n• gastrin/CCK + neural",
+   "mechanism": [
+    "อาหารเข้ากระเพาะ",
+    "กระเพาะขยาย ส่งสัญญาณไปลำไส้ใหญ่",
+    {
+     "s": "gastrocolic reflex",
+     "answer": true
+    },
+    "ลำไส้ใหญ่บีบตัว ถ่ายหลังอาหาร"
+   ]
   },
   "139": {
    "explanation": "ตามเฉลยต้นฉบับ motilin (MMC จากกระเพาะถึง distal ileum)",
@@ -1030,7 +1179,15 @@
     "D": "NE ยับยั้ง",
     "E": "CCK ใน intestinal phase"
    },
-   "key_concept": "• cephalic ~20% ของ enzyme\n• intestinal phase ~70%\n• vagotomy ลด"
+   "key_concept": "• cephalic ~20% ของ enzyme\n• intestinal phase ~70%\n• vagotomy ลด",
+   "mechanism": [
+    "cephalic phase มองและกลิ่นอาหาร",
+    "กระตุ้น vagus",
+    {
+     "s": "ปล่อย ACh กระตุ้นตับอ่อนหลั่ง enzyme",
+     "answer": true
+    }
+   ]
   },
   "145": {
    "explanation": "Fructose ดูดผ่าน GLUT5",
@@ -1052,7 +1209,15 @@
     "D": "enterokinase ไม่ใช่ transporter",
     "E": "มีคำตอบที่ถูก: กรดอะมิโนยังดูดซึมได้ในรูป di/tripeptide ผ่าน PepT1"
    },
-   "key_concept": "• COLA: cystine, ornithine, lysine, arginine\n• นิ่ว cystine\n• Hartnup คล้ายกัน"
+   "key_concept": "• COLA: cystine, ornithine, lysine, arginine\n• นิ่ว cystine\n• Hartnup คล้ายกัน",
+   "mechanism": [
+    "cystinuria ขาดตัวขนส่ง cystine/basic AA",
+    "กรดอะมิโนรูป di/tripeptide ยังดูดได้ผ่าน PepT1",
+    {
+     "s": "ได้รับ basic AA เพียงพอ",
+     "answer": true
+    }
+   ]
   },
   "150": {
    "explanation": "Acid test แล้วฉีด gastrin analog + แผลที่ duodenum = Zollinger-Ellison",
@@ -1077,7 +1242,15 @@
     "D": "H. pylori ไม่อยู่หลอดอาหาร",
     "E": "brain tumor → Cushing ulcer"
    },
-   "key_concept": "• sliding\n• อ้วน\n• PPI"
+   "key_concept": "• sliding\n• อ้วน\n• PPI",
+   "mechanism": [
+    "hiatal hernia ทำให้ LES หลวม",
+    "กรดไหลย้อน GERD",
+    {
+     "s": "เยื่อบุหลอดอาหารอักเสบ esophagitis",
+     "answer": true
+    }
+   ]
   },
   "154": {
    "explanation": "หลังไฟไหม้ = stress gastritis/Curling ulcer = acute gastritis",
@@ -1088,7 +1261,16 @@
     "D": "Mallory-Weiss อาเจียน",
     "E": "Barrett ไม่เลือดออก"
    },
-   "key_concept": "• mucosal ischemia\n• PPI ป้องกัน\n• Cushing ulcer = ICP"
+   "key_concept": "• mucosal ischemia\n• PPI ป้องกัน\n• Cushing ulcer = ICP",
+   "mechanism": [
+    "แผลไหม้ใหญ่ stress",
+    "เลือดไปเยื่อบุกระเพาะลด",
+    "กรดทำลาย mucosa",
+    {
+     "s": "acute gastritis/stress ulcer เกิด melena",
+     "answer": true
+    }
+   ]
   },
   "155": {
    "explanation": "หลอดอาหารส่วนล่างเป็น adenocarcinoma (จาก Barrett) · ส่วนบน/กลางเป็น SCC",
@@ -1180,7 +1362,15 @@
     "D": "cholangiocarcinoma พบน้อยกว่า",
     "E": "lipoma ไม่ใช่"
    },
-   "key_concept": "• surveillance US + AFP ทุก 6 เดือน\n• HBV ทำ HCC ได้แม้ไม่มีตับแข็ง\n• LI-RADS"
+   "key_concept": "• surveillance US + AFP ทุก 6 เดือน\n• HBV ทำ HCC ได้แม้ไม่มีตับแข็ง\n• LI-RADS",
+   "mechanism": [
+    "cirrhosis ทำให้ตับอักเสบเรื้อรัง",
+    "hepatocyte แบ่งตัวซ้ำเกิด dysplasia",
+    {
+     "s": "กลายเป็น hepatocellular carcinoma",
+     "answer": true
+    }
+   ]
   },
   "165": {
    "explanation": "น้ำหนักลดมาก + ปวดหลัง + obstructive jaundice = มะเร็งตับอ่อน (หัว)",
@@ -1228,7 +1418,16 @@
     "D": "✓ Clostridium spp.",
     "E": "norovirus ไม่ใช่"
    },
-   "key_concept": "• toxin A/B\n• oral vancomycin\n• FMT"
+   "key_concept": "• toxin A/B\n• oral vancomycin\n• FMT",
+   "mechanism": [
+    "ใช้ยาปฏิชีวนะนาน",
+    "normal flora ถูกทำลาย",
+    "C. difficile เจริญ ปล่อย toxin",
+    {
+     "s": "pseudomembranous colitis",
+     "answer": true
+    }
+   ]
   },
   "170": {
    "explanation": "Diverticulosis: ผู้สูงอายุ ขาดใยอาหาร sigmoid ภาวะแทรกซ้อน = ทะลุ อักเสบ peritonitis",
@@ -1287,7 +1486,16 @@
     "D": "Paragonimus → ปอด",
     "E": "Necator → ซีด"
    },
-   "key_concept": "• scotch tape\n• autoinfection\n• รักษาทั้งบ้าน"
+   "key_concept": "• scotch tape\n• autoinfection\n• รักษาทั้งบ้าน",
+   "mechanism": [
+    "ไข่ pinworm ติดนิ้วเมื่อเกา",
+    "กลืนไข่ ตัวเต็มวัยในลำไส้",
+    {
+     "s": "ตัวเมียคลานออกทวารหนักกลางคืน วางไข่",
+     "answer": true
+    },
+    "คันก้น"
+   ]
   },
   "175": {
    "explanation": "พยาธิที่ทำให้ลำไส้อุดตัน = Ascaris (ตัวโตเป็นก้อน)",
@@ -1309,7 +1517,15 @@
     "D": "Strongyloides → hyperinfection",
     "E": "Capillaria → malabsorption"
    },
-   "key_concept": "• whipworm\n• ไข่รูปถัง\n• albendazole"
+   "key_concept": "• whipworm\n• ไข่รูปถัง\n• albendazole",
+   "mechanism": [
+    "Trichuris ฝังหัวในเยื่อบุ cecum/colon",
+    "ติดเชื้อหนัก ถ่ายบ่อย เบ่ง",
+    {
+     "s": "rectal prolapse",
+     "answer": true
+    }
+   ]
   },
   "177": {
    "explanation": "ติดผ่านดินและผิวหนัง = hookworm (Necator)",
@@ -1320,7 +1536,16 @@
     "D": "✓ Necator americanus",
     "E": "Enterobius จากไข่"
    },
-   "key_concept": "• filariform larva\n• ground itch\n• iron deficiency"
+   "key_concept": "• filariform larva\n• ground itch\n• iron deficiency",
+   "mechanism": [
+    "ตัวอ่อน filariform ในดิน",
+    "ไชผ่านผิวหนังเท้า",
+    "ผ่านปอดและกลืนลง",
+    {
+     "s": "Necator americanus เกาะลำไส้เล็ก",
+     "answer": true
+    }
+   ]
   },
   "178": {
    "explanation": "Capillaria philippinensis พบในปลาน้ำจืดดิบ",
@@ -1390,7 +1615,15 @@
     "D": "Echinococcus ไม่อยู่ลำไส้คน",
     "E": "Giardia เป็น protozoa"
    },
-   "key_concept": "• dwarf tapeworm\n• เด็ก\n• praziquantel"
+   "key_concept": "• dwarf tapeworm\n• เด็ก\n• praziquantel",
+   "mechanism": [
+    "H. nana ไข่ฟักในลำไส้คนเอง",
+    "ตัวอ่อนไชเข้า villus พัฒนาและกลับสู่ lumen",
+    {
+     "s": "เกิด autoinfection ไม่ต้องผ่านโฮสต์กลาง",
+     "answer": true
+    }
+   ]
   },
   "187": {
    "explanation": "พยาธิใบไม้แบน ไม่มี cephalic cone ขนาด 44×20 mm สีเนื้อ = Fasciolopsis buski",
@@ -1441,7 +1674,16 @@
     "D": "steatorrhea ไม่ใช่",
     "E": "explosive ไม่จำเพาะ"
    },
-   "key_concept": "• rotavirus: malabsorption + NSP4 + ENS\n• secondary lactase deficiency\n• ORS"
+   "key_concept": "• rotavirus: malabsorption + NSP4 + ENS\n• secondary lactase deficiency\n• ORS",
+   "mechanism": [
+    "rotavirus ทำลาย enterocyte ที่ปลาย villus",
+    "brush-border enzyme (lactase) ลด",
+    {
+     "s": "น้ำตาลไม่ถูกย่อย ดึงน้ำเข้า lumen",
+     "answer": true
+    },
+    "osmotic diarrhea"
+   ]
   },
   "195": {
    "explanation": "Campylobacter → Guillain-Barré: antibody ต่อเชื้อ cross-react กับ neuron (type II)",
@@ -1495,7 +1737,15 @@
     "D": "amoebic dysentery ไม่ใช่",
     "E": "celiac ก็ทำได้ แต่คำตอบกว้างกว่าคือ A"
    },
-   "key_concept": "• Clinitest\n• stool pH < 5.5\n• lactose intolerance"
+   "key_concept": "• Clinitest\n• stool pH < 5.5\n• lactose intolerance",
+   "mechanism": [
+    "คาร์โบไฮเดรตไม่ถูกดูดซึม",
+    "แบคทีเรียหมัก",
+    {
+     "s": "reducing substance ในอุจจาระ",
+     "answer": true
+    }
+   ]
   },
   "208": {
    "explanation": "Vitamin B12 สร้างโดยแบคทีเรียเท่านั้น",
@@ -1626,7 +1876,16 @@
     "D": "การแก้ hyponatremia เป็นผลพลอยได้ เป้าหมายหลักของ ORS คือทดแทนน้ำที่เสียไป",
     "E": "การแก้ hypokalemia เป็นผลพลอยได้ เป้าหมายหลักของ ORS คือทดแทนน้ำที่เสียไป"
    },
-   "key_concept": "• SGLT1\n• low-osmolarity\n• ป้องกันตาย"
+   "key_concept": "• SGLT1\n• low-osmolarity\n• ป้องกันตาย",
+   "mechanism": [
+    "ถ่ายเหลวเสียน้ำและเกลือแร่",
+    "ORS จับ Na⁺–glucose ผ่าน SGLT1",
+    {
+     "s": "น้ำถูกดูดตาม",
+     "answer": true
+    },
+    "rehydration"
+   ]
   },
   "219": {
    "explanation": "ตัด terminal ileum → bile salt diarrhea → cholestyramine",
@@ -1648,7 +1907,15 @@
     "D": "✓ attapulgite",
     "E": "diphenoxylate opioid"
    },
-   "key_concept": "• adsorbent: kaolin, attapulgite, bismuth\n• ผลน้อย\n• รบกวนการดูดซึมยาอื่น"
+   "key_concept": "• adsorbent: kaolin, attapulgite, bismuth\n• ผลน้อย\n• รบกวนการดูดซึมยาอื่น",
+   "mechanism": [
+    "attapulgite เป็นแร่ดินเหนียว",
+    {
+     "s": "จับ toxin และน้ำในลำไส้",
+     "answer": true
+    },
+    "อุจจาระแข็งขึ้น"
+   ]
   },
   "222": {
    "explanation": "IBS ท้องเสียเรื้อรัง → loperamide",
@@ -1704,7 +1971,16 @@
     "D": "persistence = ปกติ",
     "E": "lipase ไม่ใช่"
    },
-   "key_concept": "• osmotic\n• hydrogen breath test\n• คนเอเชียพบบ่อย"
+   "key_concept": "• osmotic\n• hydrogen breath test\n• คนเอเชียพบบ่อย",
+   "mechanism": [
+    "ขาด lactase ที่ brush border",
+    "lactose ไม่ถูกย่อย",
+    {
+     "s": "ดึงน้ำเข้า lumen แบคทีเรียหมักได้แก๊ส",
+     "answer": true
+    },
+    "ท้องเสียหลังดื่มนม"
+   ]
   },
   "231": {
    "explanation": "Basophilic stippling ในเม็ดเลือดแดง = พิษตะกั่ว",
@@ -1861,7 +2137,15 @@
     "D": "power propulsion ดันเร็ว",
     "E": "MMC อดอาหาร"
    },
-   "key_concept": "• circular muscle\n• ICC\n• ไม่ดันไปข้างหน้า"
+   "key_concept": "• circular muscle\n• ICC\n• ไม่ดันไปข้างหน้า",
+   "mechanism": [
+    "segmentation เป็นการบีบแบ่งสลับ",
+    {
+     "s": "circular muscle ผสมอาหารกับน้ำย่อย",
+     "answer": true
+    },
+    "เพิ่มการสัมผัสกับเยื่อบุ"
+   ]
   },
   "314": {
    "explanation": "นอนหลับ flow ต่ำ duct ดูด Na⁺/Cl⁻ กลับได้มาก → osmolarity ต่ำสุด",
@@ -1971,7 +2255,15 @@
     "D": "rectal distension = defecation reflex",
     "E": "MMC = ลำไส้เล็ก"
    },
-   "key_concept": "• gastrocolic + duodenocolic\n• 1–3 ครั้ง/วัน\n• หลังอาหารเช้า"
+   "key_concept": "• gastrocolic + duodenocolic\n• 1–3 ครั้ง/วัน\n• หลังอาหารเช้า",
+   "mechanism": [
+    "อาหารเข้า duodenum",
+    "duodenocolic reflex",
+    {
+     "s": "เริ่ม mass movement ของอุจจาระในลำไส้ใหญ่",
+     "answer": true
+    }
+   ]
   },
   "324": {
    "explanation": "ตามเฉลยต้นฉบับ motilin (fasting pattern = MMC)",
@@ -1996,7 +2288,15 @@
     "D": "Cl⁻/HCO₃⁻ ไม่ใช่",
     "E": "SGLT3 = glucose sensor"
    },
-   "key_concept": "• 2Na⁺ : 1 glucose\n• ยังทำงานใน cholera\n• ORS ลดการตาย"
+   "key_concept": "• 2Na⁺ : 1 glucose\n• ยังทำงานใน cholera\n• ORS ลดการตาย",
+   "mechanism": [
+    "ลำไส้ขนส่ง Na⁺ พร้อม glucose",
+    "SGLT1 ทำงาน",
+    {
+     "s": "น้ำถูกดูดตาม ลดภาวะขาดน้ำ",
+     "answer": true
+    }
+   ]
   },
   "326": {
    "explanation": "Secretory diarrhea จาก Vibrio cholerae (cAMP สูง CFTR เปิด)",
@@ -2066,7 +2366,16 @@
     "D": "haustra ชัดขึ้น",
     "E": "transit ช้าลง"
    },
-   "key_concept": "• ท้องผูกจาก segmentation มาก\n• opioid\n• IBS-C"
+   "key_concept": "• ท้องผูกจาก segmentation มาก\n• opioid\n• IBS-C",
+   "mechanism": [
+    "colonic segmentation เพิ่ม",
+    "อุจจาระอยู่นานขึ้น",
+    {
+     "s": "ดูดน้ำและ electrolyte มากขึ้น",
+     "answer": true
+    },
+    "อุจจาระแข็ง"
+   ]
   },
   "332": {
    "explanation": "ผลแทรกซ้อนสำคัญของ hiatal hernia = esophagitis (จาก reflux)",
@@ -2077,7 +2386,15 @@
     "D": "Zenker ไม่เกี่ยว",
     "E": "aspiration รอง"
    },
-   "key_concept": "• GERD\n• Barrett\n• Cameron ulcer"
+   "key_concept": "• GERD\n• Barrett\n• Cameron ulcer",
+   "mechanism": [
+    "hiatal hernia ทำให้ LES หลวม",
+    "กรดไหลย้อน",
+    {
+     "s": "esophagitis เป็นภาวะแทรกซ้อนสำคัญ",
+     "answer": true
+    }
+   ]
   },
   "333": {
    "choices_override": {
@@ -2230,7 +2547,16 @@
     "D": "ไม่ใช่ parasympathomimetic (ยกเว้น erythromycin)",
     "E": "VIP ไม่ใช่"
    },
-   "key_concept": "• antibiotic-associated diarrhea\n• C. difficile 10–20%\n• probiotic ช่วยได้"
+   "key_concept": "• antibiotic-associated diarrhea\n• C. difficile 10–20%\n• probiotic ช่วยได้",
+   "mechanism": [
+    "amoxicillin ทำลาย normal flora",
+    "C. difficile เพิ่มจำนวน",
+    {
+     "s": "สร้าง toxin ทำให้ pseudomembranous colitis",
+     "answer": true
+    },
+    "ท้องเสีย"
+   ]
   },
   "345": {
    "explanation": "หลังผ่าตัดช่องท้อง → adhesion → small bowel obstruction",
@@ -2385,7 +2711,15 @@
     "D": "✓ Ascaris lumbricoides",
     "E": "Capillaria ไม่ผ่านปอด"
    },
-   "key_concept": "• eosinophilic pneumonitis\n• hookworm/Strongyloides ก็ได้\n• หายเอง"
+   "key_concept": "• eosinophilic pneumonitis\n• hookworm/Strongyloides ก็ได้\n• หายเอง",
+   "mechanism": [
+    "ตัวอ่อน Ascaris ไชเข้า alveoli",
+    "ถูกไอขึ้นและกลืนลง",
+    {
+     "s": "เกิดการอักเสบแบบ eosinophilic ในปอด (Loeffler)",
+     "answer": true
+    }
+   ]
   },
   "355": {
    "stem_override": "A 45-year-old man has watery loose stools. Stool examination shows spherical to elliptical cyst-like bodies with a large central vacuole, a narrow rim of cytoplasm and multiple nuclei. What is the causative agent?",
@@ -2571,7 +2905,15 @@
     "D": "sucrose ไม่ช่วยชัด",
     "E": "galactose ไม่ช่วยชัด"
    },
-   "key_concept": "• vit D หลัก\n• นมแหล่ง Ca ดี\n• phytate/oxalate ลดการดูดซึม"
+   "key_concept": "• vit D หลัก\n• นมแหล่ง Ca ดี\n• phytate/oxalate ลดการดูดซึม",
+   "mechanism": [
+    "lactose ถูกย่อยเป็น glucose + galactose",
+    "เพิ่มความเป็นกรดและ osmolarity",
+    {
+     "s": "เพิ่ม solubility ของ Ca²⁺ ดูดซึมดีขึ้น",
+     "answer": true
+    }
+   ]
   },
   "370": {
    "explanation": "Copper deficiency พบบ่อยในทารก (คลอดก่อนกำหนด/กินนมวัวอย่างเดียว) (AI ทำเฉลย)",
@@ -2596,7 +2938,15 @@
     "D": "osteoporosis ไม่ใช่",
     "E": "dizziness ไม่ใช่"
    },
-   "key_concept": "• diarrhea, dermatitis, dementia (death)\n• Hartnup, carcinoid, isoniazid\n• ข้าวโพดเป็นหลัก"
+   "key_concept": "• diarrhea, dermatitis, dementia (death)\n• Hartnup, carcinoid, isoniazid\n• ข้าวโพดเป็นหลัก",
+   "mechanism": [
+    "ขาด niacin",
+    "เกิดสาม D: dermatitis, diarrhea, dementia",
+    {
+     "s": "เรียก pellagra",
+     "answer": true
+    }
+   ]
   },
   "372": {
    "explanation": "Hepatic encephalopathy + ท้องผูก → lactulose",
@@ -2663,7 +3013,15 @@
     "D": "D₂ antagonist = metoclopramide",
     "E": "5-HT₃ antagonist = ondansetron"
    },
-   "key_concept": "• ปล่อย ACh ใน myenteric\n• QT ยาว\n• prucalopride"
+   "key_concept": "• ปล่อย ACh ใน myenteric\n• QT ยาว\n• prucalopride",
+   "mechanism": [
+    "cisapride จับ 5-HT₄ receptor",
+    {
+     "s": "เพิ่ม ACh จาก myenteric plexus",
+     "answer": true
+    },
+    "เพิ่ม motility ของทางเดินอาหาร"
+   ]
   },
   "377": {
    "explanation": "Metoclopramide คุมไม่ได้ → เสริม dexamethasone",
