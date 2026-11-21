@@ -80,7 +80,7 @@ ok(await ev("!!document.querySelector('.opt[aria-pressed=\"true\"]') && !documen
 await click('[data-z="submit"]'); await sleep(100); await click('[data-z="submit"]'); await sleep(300);
 ok((await ev("location.hash")).includes("/sum/"), "submit → summary");
 await go("#/set/DEMO/52_MCQ/hist");
-ok((await ev("document.querySelectorAll('tbody tr').length")) === 2, "history lists finished rounds (empty abandoned rounds hidden)");
+ok((await ev("document.querySelectorAll('.rcard').length")) === 2, "history lists finished rounds (empty abandoned rounds hidden)");
 
 // single question page + PDF
 await go("#/q/DEMO-52-MCQ-005");
@@ -107,11 +107,15 @@ await go("#/q/CVS-52-MCQ-005");
 await click('.opt[data-opt="A"]'); await sleep(200);
 ok(await ev("!!document.querySelector('.why') && !!document.querySelector('.chain') && !!document.querySelector('.keyrow.src')"), "CVS: why per choice + mechanism chain + original key row");
 await ev("document.querySelector('.report').open = true");
+await click('[data-rep-cat="key"]'); await sleep(50);
+ok(await ev("!document.querySelector('.repkey').hidden"), "report: picking เฉลยผิด shows the which-answer part");
 await setVal('[data-rep-key]', "A"); await click('[data-z="setkey"]'); await sleep(200);
 ok(await ev("window.__medlib.PROG.marks.keyOverride['CVS-52-MCQ-005'] === 'A' && !!document.querySelector('.badge.mine')"), "my key saved on this device and shown");
 await click('[data-z="unkey"]'); await sleep(150);
 await ev("document.querySelector('.report').open = true");
-await setVal('[data-rep-reason]', "ทดสอบ เหตุผลยาวพอ", "input"); await click('[data-z="report"]'); await sleep(400);
+await setVal('[data-rep-reason]', "ทดสอบ เหตุผลยาวพอ", "input"); await click('[data-z="report"]'); await sleep(200);
+ok((await text()).includes("เลือกก่อนว่าอะไรมีปัญหา"), "report needs a category first");
+await click('[data-rep-cat="explain"]'); await click('[data-z="report"]'); await sleep(400);
 ok((await text()).includes("คัดลอกข้อความ"), "report without a queue falls back to copy / GitHub issue link");
 
 // KF / OSPE

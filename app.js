@@ -120,7 +120,18 @@
   const refDoc = (r) => r.lecture || r.paper;
   const findSet = (b, sid) => b && b.sets.find((s) => s.id === sid);
   const allExams = (b) => b.exams.concat(USER.questions.filter((q) => q.block === b.id).map((q) => Object.assign({}, q, { _personal: true })));
-  const examsOf = (b) => (S().showDrafts ? allExams(b) : allExams(b).filter((q) => q.answer_status === "verified" || q.answer_status === "corrected"));
+  // a set switched off in Settings (settings.hiddenSets: ["END/52_MCQ", …]) leaves the block page, stats, review and random practice
+  const setKey = (b, sid) => `${b.id}/${sid}`;
+  const setOff = (b, sid) => (S().hiddenSets || []).includes(setKey(b, sid));
+  const onSets = (b) => b.sets.filter((s) => !setOff(b, s.id));
+  const liveExams = (b) => allExams(b).filter((q) => !q._set || !setOff(b, q._set));   // questions added by hand have no set: always on
+  const examsOf = (b) => (S().showDrafts ? liveExams(b) : liveExams(b).filter((q) => q.answer_status === "verified" || q.answer_status === "corrected"));
+  function setHidden(keys, off) {   // keys: ["END/52_MCQ", …]
+    const h = new Set(S().hiddenSets || []); keys.forEach((k) => (off ? h.add(k) : h.delete(k)));
+    const list = [...h].sort(), def = [...(APP.defaults.settings.hiddenSets || [])].sort();
+    if (JSON.stringify(list) === JSON.stringify(def)) delete USER.settings.hiddenSets; else USER.settings.hiddenSets = list;
+    saveUser();
+  }
   function findQuestion(id) {
     for (const b of APP.blocks) { const q = allExams(b).find((x) => x.id === id); if (q) return { b, q }; }
     return null;
@@ -180,6 +191,45 @@
     if (actLabel) t.querySelector("button").onclick = () => { act(); t.remove(); };
     document.body.append(t); toastT = setTimeout(() => t.remove(), 6000);
   }
+  /* ---------- floating "ติดต่อ" pop-up (every page): pick a topic, write, send to the worker's /report as kind "contact" ---------- */
+  const CONTACT_CATS = [["bug", "เว็บใช้งานผิดปกติ"], ["content", "ข้อมูล / ข้อสอบผิด"], ["request", "ขอข้อสอบ / ฟีเจอร์เพิ่ม"], ["other", "อื่น ๆ"]];
+  const CT = { open: false, sent: null };
+  function contactHTML() {
+    const chat = `<div class="cmsg bot">สวัสดี มีอะไรให้ช่วยไหม เลือกเรื่องด้านล่าง แล้วเล่าสั้น ๆ ได้เลย<small>ถ้าเป็นปัญหาของข้อสอบข้อหนึ่ง ใช้ปุ่ม "แจ้งปัญหาข้อนี้" ใต้ข้อนั้นจะส่งเลขข้อให้อัตโนมัติ</small></div>`
+      + (CT.sent ? `<div class="cmsg me">${esc(CT.sent.text)}</div><div class="cmsg bot">${CT.sent.html}</div>` : "");
+    return `<button class="cfab" data-act="contact" aria-expanded="${CT.open}" aria-controls="cpanel" title="ติดต่อผู้ดูแล">
+        <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/></svg><span>${CT.open ? "ปิด" : "ติดต่อ"}</span></button>
+      ${CT.open ? `<section class="cpanel" id="cpanel" role="dialog" aria-label="ติดต่อผู้ดูแล"><header><b>ติดต่อผู้ดูแล MedLib</b><button class="linkbtn" data-act="contact" aria-label="ปิด">✕</button></header>
+        <div class="cbody">${chat}</div>
+        ${CT.sent && CT.sent.ok ? `<div class="cfoot"><button class="btn sm" data-act="contactnew">เขียนเรื่องใหม่</button></div>` : `<div class="cfoot"><div class="chips">${CONTACT_CATS.map(([k, l]) => `<button type="button" class="chip" data-act="ccat" data-c="${k}" aria-pressed="false">${l}</button>`).join("")}</div>
+          <textarea id="ctext" rows="3" placeholder="พิมพ์ข้อความ…"></textarea>
+          <div class="btns"><button class="btn primary sm" data-act="contactsend">ส่ง</button><span class="hint" id="cmsg"></span></div></div>`}</section>` : ""}`;
+  }
+  function drawContact() {
+    let el = document.getElementById("contact");
+    if (!el) { el = document.createElement("div"); el.id = "contact"; el.className = "contact"; document.body.append(el); }
+    el.innerHTML = contactHTML();
+    if (CT.open) { const x = document.getElementById("ctext"); if (x) x.focus(); }
+  }
+  async function contactSend() {
+    const cats = [...document.querySelectorAll('#cpanel [data-act="ccat"][aria-pressed="true"]')].map((b) => b.dataset.c);
+    const text = ($("#ctext").value || "").trim(), msg = $("#cmsg");
+    if (!cats.length) { msg.textContent = "เลือกเรื่องก่อน"; return; }
+    if (text.length < 3) { msg.textContent = "พิมพ์ข้อความสั้น ๆ ก่อนส่ง"; return; }
+    const url = (APP.config.report_url || APP.config.drive_proxy_url || "").replace(/\/+$/, "");
+    msg.textContent = "กำลังส่ง…";
+    let num = null;
+    if (url) {
+      try { const r = await fetch(url + "/report", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ kind: "contact", category: cats, reason: text, page: location.href }) }); if (r.ok) num = (await r.json().catch(() => ({}))).number || 0; } catch (e) { num = null; }
+    }
+    const names = cats.map((c) => (CONTACT_CATS.find((x) => x[0] === c) || [c, c])[1]).join(", ");
+    if (num !== null) CT.sent = { ok: true, text, html: `ได้รับแล้ว ขอบคุณ ผู้ดูแลจะอ่านเร็ว ๆ นี้${num ? ` (เรื่องที่ #${num})` : ""}` };
+    else {
+      const body = `เรื่อง: ${names}\n${text}\n${location.href}`, repo = APP.config.repo;
+      CT.sent = { ok: false, text, html: `ส่งอัตโนมัติไม่ได้ (ยังไม่ได้ตั้งคิว) · <button class="linkbtn" data-copy="${esc(body)}">คัดลอกข้อความ</button>${repo ? ` · <a target="_blank" rel="noopener" href="https://github.com/${esc(repo)}/issues/new?labels=contact&title=${enc(`[ติดต่อ] ${names}`)}&body=${enc(body)}">เปิด GitHub Issue</a>` : ""}` };
+    }
+    drawContact();
+  }
   const FONT_LV = ["normal", "large", "xl", "xxl"];
   const FONT_TH = { normal: "ปกติ", large: "ใหญ่", xl: "ใหญ่มาก", xxl: "ใหญ่สุด" };
   const fontLv = () => Math.max(0, FONT_LV.indexOf(S().fontSize));
@@ -230,7 +280,8 @@
     $("#side").innerHTML = [
       `<span class="lbl">${lecMode ? "Lecture · บล็อก" : "ข้อสอบ · บล็อก"}</span>`,
       `<a class="nav ${!cur && (view === undefined || view === "" || view === "lec") ? "on" : ""}" href="${lecMode ? "#/lec" : "#/"}">ทั้งหมด</a>`,
-      ...visibleBlocks().map((b) => `<a class="nav ${cur === b.id ? "on" : ""}" href="${lecMode ? `#/lec/${enc(b.id)}` : `#/b/${enc(b.id)}`}" style="--blk:${esc(b.color || "var(--artery)")}"><i class="dot"></i>${esc(b.name)}</a>`),
+      ...byYear(visibleBlocks()).flatMap(([y, bs]) => [`<span class="lbl yr">${esc(yearName(y))}</span>`,
+        ...bs.map((b) => `<a class="nav ${cur === b.id ? "on" : ""}" href="${lecMode ? `#/lec/${enc(b.id)}` : `#/b/${enc(b.id)}`}" style="--blk:${esc(b.color || "var(--artery)")}"><i class="dot"></i>${esc(b.name)}</a>`)]),
     ].join("");
     const IC = (d) => `<svg class="ic" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">${d}</svg>`;
     const ICONS = {
@@ -256,23 +307,63 @@
   const problemsBanner = () => APP.problems.length
     ? `<div class="banner"><strong>ข้อมูลบางส่วนโหลดไม่ได้</strong> เว็บข้ามส่วนนั้นไปก่อน ตรวจละเอียดด้วยคำสั่ง <code>node tools/validate.cjs</code><ul>${APP.problems.map((p) => `<li>${esc(p)}</li>`).join("")}</ul></div>` : "";
 
+  // year of a block from block.json › year ("ปี 2", 3, "3" …) → 1..6, or 0 when missing
+  const yearOf = (b) => Number((String(b.year == null ? "" : b.year).match(/\d+/) || [])[0]) || 0;
+  const yearName = (y) => (y ? `ปี ${y}` : "อื่น ๆ");
+  function byYear(blocks) {
+    const g = new Map(); blocks.forEach((b) => { const y = yearOf(b); if (!g.has(y)) g.set(y, []); g.get(y).push(b); });
+    return [...g.entries()].sort(([a], [b]) => (a || 99) - (b || 99));
+  }
+
   function viewHome() {
     const blocks = visibleBlocks();
-    const cards = blocks.map((b) => {
-      const ex = allExams(b).filter((q) => QZ.counts(q)), res = QZ.blockResults(b);   // draft/disputed do not count
+    const card = (b) => {
+      const ex = liveExams(b).filter((q) => QZ.counts(q)), res = QZ.blockResults(b);   // draft/disputed and switched-off sets do not count
       const done = ex.filter((q) => q.id in res).length, ok = ex.filter((q) => res[q.id] >= 0.999).length, pct = ex.length ? Math.round((done / ex.length) * 100) : 0;
-      return `<a class="card" href="#/b/${enc(b.id)}" style="--blk:${esc(b.color || "var(--artery)")}">
+      return `<a class="card" href="#/b/${enc(b.id)}" data-bmodal="${esc(b.id)}" style="--blk:${esc(b.color || "var(--artery)")}">
         <span class="code">${esc(b.id)}${b._sample ? `<span class="pill">ตัวอย่าง</span>` : ""}</span>
-        <span class="cname">${esc(b.name)}${b.year ? ` <span class="hint">· ${esc(b.year)}</span>` : ""}</span>
-        <span class="stats"><span>${b.sets.length} ชุดข้อสอบ</span><span>${allExams(b).length} ข้อ</span></span>
+        <span class="cname">${esc(b.name)}</span>
+        <span class="stats"><span>${onSets(b).length} ชุดข้อสอบ${onSets(b).length < b.sets.length ? ` (ปิด ${b.sets.length - onSets(b).length})` : ""}</span><span>${liveExams(b).length} ข้อ</span>${b.lectures.length ? `<span>${b.lectures.length} lecture</span>` : ""}</span>
         <span class="meter"><span style="width:${pct}%"></span></span>
         <span class="hint">${done ? `ทำแล้ว ${done}/${ex.length} ข้อ · ถูกล่าสุด ${ok}` : "ยังไม่ได้เริ่ม"}</span></a>`;
-    }).join("");
+    };
+    const groups = byYear(blocks).map(([y, bs]) => `<section class="yeargrp"><h3>${esc(yearName(y))} <span class="hint">${bs.length} บล็อก</span></h3><div class="grid">${bs.map(card).join("")}</div></section>`).join("");
     main.innerHTML = `${problemsBanner()}
-      <div class="head"><h2>ข้อสอบเก่า</h2><p class="hint">เลือกบล็อกเพื่อทำข้อสอบทีละชุดหรือฝึกข้ามชุด · อ่าน lecture ได้ที่โหมด <a href="#/lec">Lecture</a> ด้านบน · ความคืบหน้าเก็บในเบราว์เซอร์นี้</p></div>
+      <div class="head"><h2>ข้อสอบเก่า</h2><p class="hint">เลือกบล็อกเพื่อเปิด MCQ / KF / OSPE / Lecture · ความคืบหน้าเก็บในเบราว์เซอร์นี้</p></div>
       ${resumeBox()}${reviewBox(blocks)}
-      <div class="grid">${cards || `<div class="card empty"><span>ไม่มีบล็อกที่แสดงอยู่</span><a href="#/settings">เปิดการแสดงบล็อกในหน้าตั้งค่า</a></div>`}</div>`;
+      ${groups || `<div class="grid"><div class="card empty"><span>ไม่มีบล็อกที่แสดงอยู่</span><a href="#/settings">เปิดการแสดงบล็อกในหน้าตั้งค่า</a></div></div>`}`;
   }
+
+  /* ---------- block pop-up from the home grid: tabs MCQ / KF / OSPE / Lecture, then pick a cohort or a lecture ---------- */
+  const BM = { id: null, tab: null, back: null };
+  const BM_TYPES = ["MCQ", "KF", "OSPE"];
+  function bmTabs(b) { return BM_TYPES.filter((t) => b.sets.some((s) => s.type === t)).concat(["lec"]); }
+  function drawBlockModal() {
+    let el = document.getElementById("bmodal");
+    if (!BM.id) { if (el) el.remove(); document.body.classList.remove("modal-open"); return; }
+    const b = findBlock(BM.id); if (!b) { BM.id = null; return drawBlockModal(); }
+    const tabs = bmTabs(b); if (!tabs.includes(BM.tab)) BM.tab = tabs[0];
+    let body;
+    if (BM.tab === "lec") {
+      body = b.lectures.length ? `<div class="bmlist">${b.lectures.map((l) => { const r = readOf(b, l.id) || {}; return `<a class="bmrow" href="#/lec/${enc(b.id)}/${enc(l.id)}${r.page ? "/" + r.page : ""}"><span class="t">${esc(l.title)}</span><span class="hint">${l.pages ? `${l.pages} หน้า` : ""}${r.done ? " · ✓ อ่านจบแล้ว" : r.page ? ` · อ่านถึงหน้า ${r.page}` : ""}</span></a>`; }).join("")}</div>`
+        : `<div class="empty">บล็อกนี้ยังไม่มี lecture ในคลัง</div>`;
+    } else {
+      const ss = b.sets.filter((s) => s.type === BM.tab).sort((x, y) => y.cohort - x.cohort);
+      body = `<div class="pgrid">${ss.map((s) => QZ.setCardHTML(b, s)).join("")}</div>`;
+    }
+    if (!el) { el = document.createElement("div"); el.id = "bmodal"; el.className = "bmodal"; document.body.append(el); }
+    el.innerHTML = `<div class="bmback" data-bmclose="1"></div>
+      <section class="bmsheet" role="dialog" aria-modal="true" aria-labelledby="bmtitle" style="--blk:${esc(b.color || "var(--artery)")}">
+        <header><div><h2 id="bmtitle"><i class="dot"></i>${esc(b.name)}</h2><span class="hint">${esc(yearName(yearOf(b)))} · ${onSets(b).length} ชุด · ${liveExams(b).length} ข้อ</span></div>
+          <button class="linkbtn bmx" data-act="bmclose" aria-label="ปิด">✕</button></header>
+        <nav class="tabs" role="tablist">${tabs.map((t) => `<button class="tab ${BM.tab === t ? "on" : ""}" role="tab" aria-selected="${BM.tab === t}" data-act="bmtab" data-t="${t}">${t === "lec" ? "Lecture" : t}<small>${t === "lec" ? b.lectures.length : b.sets.filter((s) => s.type === t).length}</small></button>`).join("")}</nav>
+        <div class="bmbody">${body}</div>
+        <footer><a class="btn sm" href="#/b/${enc(b.id)}" data-bmfull="1">เปิดหน้าบล็อกเต็ม (สุ่มข้อ · ทบทวนจุดอ่อน · หัวข้อ) →</a></footer>
+      </section>`;
+    document.body.classList.add("modal-open");
+  }
+  function openBlockModal(id) { BM.id = id; BM.tab = null; BM.back = document.activeElement; drawBlockModal(); const t = $("#bmodal .tab.on"); if (t) t.focus(); }
+  function closeBlockModal() { if (!BM.id) return; BM.id = null; drawBlockModal(); if (BM.back && document.body.contains(BM.back)) BM.back.focus(); }
 
   function resumeBox() {
     const L = QZ.lastActive(); if (!L) return "";
@@ -294,7 +385,7 @@
   function viewBlock(id) {
     const b = findBlock(id);
     if (!b) return notFound(`ไม่พบบล็อก ${id}`);
-    const nSetQ = b.sets.reduce((a, s) => a + s.questions.length, 0);
+    const nSetQ = onSets(b).reduce((a, s) => a + s.questions.length, 0);
     const mine = USER.questions.filter((q) => q.block === b.id);
     main.innerHTML = `<div class="crumbs"><a href="#/">ข้อสอบ</a><span>/</span><span>${esc(b.name)}</span></div>
       <div class="head blockhead" style="--blk:${esc(b.color || "var(--artery)")}"><h2><i class="dot"></i>${esc(b.name)}</h2>
@@ -837,6 +928,17 @@
       return `<div class="setrow"><label for="hide-${esc(b.id)}">แสดงบล็อก ${esc(b.name)}<small>ค่ากลาง: ${d.hiddenBlocks.includes(b.id) ? "ซ่อน" : "แสดง"}</small></label>
         <select id="hide-${esc(b.id)}" data-hide="${esc(b.id)}">${opt("show", hidden ? "hide" : "show", "แสดง")}${opt("hide", hidden ? "hide" : "show", "ซ่อน")}</select></div>`;
     }).join("");
+    const TYPES = ["MCQ", "KF", "OSPE"];
+    const setsRows = enabledBlocks().filter((b) => b.sets.length).map((b) => {
+      const on = onSets(b).length;
+      const groups = TYPES.concat([...new Set(b.sets.map((x) => x.type))].filter((t) => !TYPES.includes(t))).map((t) => {
+        const ss = b.sets.filter((x) => x.type === t).sort((x, y) => y.cohort - x.cohort);
+        return ss.length ? `<div class="swgroup"><span class="swtype">${esc(t)}</span><div class="swlist">${ss.map((x) => `<label class="switch"><input type="checkbox" role="switch" data-setoff="${esc(setKey(b, x.id))}" ${setOff(b, x.id) ? "" : "checked"}><i aria-hidden="true"></i><span>ชุด ${esc(x.cohort)}<small>· ${x.questions.length} ข้อ</small></span></label>`).join("")}</div></div>` : "";
+      }).join("");
+      return `<details class="setblk" data-blk="${esc(b.id)}"><summary><b>${esc(b.name)}</b><span class="hint" data-setcount="${esc(b.id)}">เปิด ${on}/${b.sets.length} ชุด</span></summary>
+        <div class="btns"><button class="btn sm" data-act="setsall" data-b="${esc(b.id)}" data-on="1">เปิดทั้งหมด</button><button class="btn sm" data-act="setsall" data-b="${esc(b.id)}" data-on="0">ปิดทั้งหมด</button></div>${groups}</details>`;
+    }).join("");
+    const nOff = (S().hiddenSets || []).length;
     const nRounds = Object.values(PROG.rounds).reduce((a, l) => a + l.length, 0);
     const v = APP.version;
     main.innerHTML = `<div class="head"><h2>ตั้งค่า</h2><p class="hint">เริ่มจากค่ากลางใน <code>defaults.json</code> สิ่งที่แก้ตรงนี้เก็บไว้ในเบราว์เซอร์นี้เท่านั้น</p></div>
@@ -849,6 +951,10 @@
         ${blocksRows}
       </div>
       <div class="btns"><button class="btn danger" data-act="reset">รีเซ็ตการตั้งค่ากลับค่ากลาง</button><span class="hint">ปรับเป็นค่าส่วนตัวไว้ ${Object.keys(mine).length} เรื่อง</span></div>
+
+      ${setsRows ? `<div class="section" id="sets"><h3>เปิด/ปิดชุดข้อสอบ${own("hiddenSets")}</h3>
+        <p class="hint">ชุดที่ปิดจะไม่ขึ้นในหน้าบล็อก ไม่นับในสถิติ ชุดสุ่ม และทบทวนวันนี้ ความคืบหน้าเดิมยังเก็บไว้ เปิดกลับเมื่อไรก็กลับมาครบ · ตอนนี้ปิดอยู่ <b data-setcount="all">${nOff}</b> ชุด</p>
+        ${setsRows}</div>` : ""}
 
       ${syncHTML()}
       <div class="section"><h3>ย้ายข้อมูลไปเครื่องอื่น / สำรองข้อมูล</h3>
@@ -877,8 +983,16 @@
         <div class="log">${(v.history || []).map((h) => `<div><strong class="mono">v${esc(h.version)}</strong> <span class="hint">· ${esc(fmtDate(h.date))}${h.title ? " · " + esc(h.title) : ""}</span><ul>${(h.changes || []).map((c) => `<li>${esc(c)}</li>`).join("")}</ul></div>`).join("")}</div></div>`;
     toastMsg = null;
     if (section === "about") $("#about").scrollIntoView({ block: "start" });
+    if (section && section.startsWith("sets") && $("#sets")) {   // #/settings/sets or #/settings/sets-END (opens that block)
+      const d = $(`#sets details[data-blk="${CSS.escape(section.slice(5))}"]`); if (d) d.open = true;
+      (d || $("#sets")).scrollIntoView({ block: "start" });
+    }
   }
 
+  function setCounts(b) {
+    const el = document.querySelector(`[data-setcount="${CSS.escape(b.id)}"]`); if (el) el.textContent = `เปิด ${onSets(b).length}/${b.sets.length} ชุด`;
+    const all = document.querySelector(`[data-setcount="all"]`); if (all) all.textContent = String((S().hiddenSets || []).length);
+  }
   async function exportUser() {
     const data = { format: "medlib-personal", schema: V.SCHEMA_VERSION, app_version: APP.version.version, exported: new Date().toISOString(), settings: USER.settings, questions: USER.questions, progress: PROG };
     const json = JSON.stringify(data);
@@ -987,16 +1101,17 @@
     }
   }
 
-  const ML = { $, esc, enc, main, APP, S, visibleBlocks, findBlock, findSet, docOf, findQuestion, examsOf, allExams, armed, toast, parseHash, notFound,
+  const ML = { $, esc, enc, main, APP, S, visibleBlocks, findBlock, findSet, setOff, docOf, findQuestion, examsOf, allExams, armed, toast, parseHash, notFound,
     route: () => route(), prog: () => PROG, saveProg, syncSoon };
   const QZ = window.MedLibQuizUI(ML);
 
   let lastHash = location.hash;
   window.addEventListener("hashchange", () => {
     const h = location.hash, prev = lastHash; lastHash = h;
+    if (BM.id) { BM.id = null; drawBlockModal(); }   // picked a set / lecture in the pop-up → the page opens, the pop-up goes
     route();
     if (h.startsWith("#/pdf") || h.startsWith("#/lec/") || h.startsWith("#/settings/about")) return;
-    const runOf = (x) => (/^#\/set\/[^/]+\/[^/]+\/run\//.test(x) ? x.split("/").slice(0, 5).join("/") : "");
+    const runOf = (x) => (/^#\/set\/[^/]+\/[^/]+\/(run|rev)\//.test(x) ? x.replace(/\/\d+$/, "") : "");   // same round, other question → no jump to top
     if (!runOf(h) || runOf(h) !== runOf(prev)) window.scrollTo(0, 0);
     else { const c = $(".qcard"); if (c && c.getBoundingClientRect().top < 0) c.scrollIntoView({ block: "start" }); }
   });
@@ -1004,7 +1119,12 @@
 
   /* ---------- events ---------- */
   document.addEventListener("click", async (ev) => {
+    const bm = ev.target.closest("a[data-bmodal]");   // home grid: open the block pop-up (ctrl/⌘/middle click still opens the page)
+    if (bm && !ev.ctrlKey && !ev.metaKey && !ev.shiftKey && ev.button === 0) { ev.preventDefault(); openBlockModal(bm.dataset.bmodal); return; }
+    if (ev.target.closest("[data-bmclose]")) { closeBlockModal(); return; }
     const t = ev.target.closest("button, img[data-zoom]"); if (!t) return;
+    if (t.dataset.act === "bmclose") { closeBlockModal(); return; }
+    if (t.dataset.act === "bmtab") { BM.tab = t.dataset.t; drawBlockModal(); const x = $(`#bmodal [data-t="${t.dataset.t}"]`); if (x) x.focus(); return; }
     if (await QZ.onClick(t)) return;
     if (t.dataset.pg) { if (location.hash.startsWith("#/lec/")) return RD.goto(Math.max(1, (RD.cur || 1) + Number(t.dataset.pg))); return pdfGo(Number(t.dataset.pg)); }
     if (t.dataset.zm) return RD.zoomBy(Number(t.dataset.zm));
@@ -1022,6 +1142,10 @@
       return route();
     }
     const act = t.dataset.act;
+    if (act === "contact") { CT.open = !CT.open; drawContact(); if (!CT.open) { const f = $(".cfab"); if (f) f.focus(); } return; }
+    if (act === "contactnew") { CT.sent = null; return drawContact(); }
+    if (act === "ccat") { t.setAttribute("aria-pressed", String(t.getAttribute("aria-pressed") !== "true")); return; }
+    if (act === "contactsend") return contactSend();
     if (act === "fontup" || act === "fontdown") {
       const nx = FONT_LV[Math.min(FONT_LV.length - 1, Math.max(0, fontLv() + (act === "fontup" ? 1 : -1)))];
       if (nx === APP.defaults.settings.fontSize) delete USER.settings.fontSize; else USER.settings.fontSize = nx;
@@ -1046,6 +1170,12 @@
       return;
     }
     if (act === "reset") { if (!armed(t)) return; USER.settings = {}; saveUser(); applyTheme(); toastMsg = { text: "กลับไปใช้ค่ากลางทั้งหมดแล้ว" }; return route(); }
+    if (act === "setsall") {   // switch every set of one block on/off without re-drawing the page (keeps <details> open)
+      const b = findBlock(t.dataset.b); if (!b) return;
+      setHidden(b.sets.map((x) => setKey(b, x.id)), t.dataset.on !== "1");
+      document.querySelectorAll(`[data-setoff^="${CSS.escape(b.id)}/"]`).forEach((el) => { el.checked = t.dataset.on === "1"; });
+      return setCounts(b);
+    }
     if (act === "syncnew") return syncNew();
     if (act === "syncnow") return syncNow();
     if (act === "syncoff") { if (!armed(t)) return; setSyncState(null); SY.msg = { text: "เลิกซิงก์ในเครื่องนี้แล้ว ความคืบหน้ายังอยู่ในเครื่อง" }; return route(); }
@@ -1085,6 +1215,11 @@
       if (v === APP.defaults.settings[k]) delete USER.settings[k]; else USER.settings[k] = v;
       saveUser(); applyTheme(); return route();
     }
+    if (t.dataset.setoff) {
+      const k = t.dataset.setoff; setHidden([k], !t.checked);
+      const b = findBlock(k.split("/")[0]); if (b) setCounts(b);
+      return;
+    }
     if (t.dataset.hide) {
       const id = t.dataset.hide; const h = S().hiddenBlocks.filter((x) => x !== id); if (t.value === "hide") h.push(id);
       const same = JSON.stringify([...h].sort()) === JSON.stringify([...APP.defaults.settings.hiddenBlocks].sort());
@@ -1114,6 +1249,8 @@
     }
   });
   document.addEventListener("keydown", (ev) => {
+    if (ev.key === "Escape" && BM.id) { closeBlockModal(); return; }
+    if (ev.key === "Escape" && CT.open) { CT.open = false; drawContact(); const f = $(".cfab"); if (f) f.focus(); return; }
     if (ev.key === "Escape") { const z = $("img.zoom"); if (z) { z.classList.remove("zoom"); z.style.transform = ""; return; } if (POP.open) { history.back(); return; } }
     if (POP.open) { if (ev.key === "ArrowRight") popAction("next"); if (ev.key === "ArrowLeft") popAction("prev"); return; }
     if (/INPUT|TEXTAREA|SELECT/.test(ev.target.tagName) || ev.ctrlKey || ev.metaKey || ev.altKey) return;
@@ -1184,12 +1321,13 @@
     ]);
     APP.version = ver;
     APP.config = Object.assign({}, site, Object.fromEntries(Object.entries(cfg).filter(([, v]) => v)));
-    APP.defaults = { settings: Object.assign({ defaultTab: "exam", showDrafts: true, fontSize: "normal", hiddenBlocks: [], showSample: false, theme: "auto" }, defs.settings) };
+    APP.defaults = { settings: Object.assign({ defaultTab: "exam", showDrafts: true, fontSize: "normal", hiddenBlocks: [], hiddenSets: [], showSample: false, theme: "auto" }, defs.settings) };
     applyTheme();
     applyFont();
     await loadBlocks("data/blocks", false);
     await loadBlocks("samples/blocks", true);
     route();
+    drawContact();
     syncSoon();
   }
   /* ---------- PWA: install + offline (sw.js) ---------- */

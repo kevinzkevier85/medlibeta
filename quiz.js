@@ -174,17 +174,23 @@ window.MedLibQuizUI = function (ML) {
     return `<div class="dispute"><p><b>เฉลยไม่ตรงกัน</b> — ต้นฉบับ: <b>${esc(q.answer)}</b> · AI: <b>${esc(q.ai_answer)}</b>${others}</p>
       <p>ตอนนี้ตัดสินด้วย <b>${esc(use)}</b> (${why})</p><div class="btns">${btn(q.answer, "เชื่อต้นฉบับ")}${btn(q.ai_answer, "เชื่อ AI")}</div></div>`;
   }
+  // what can be wrong with a question; "key" opens the "which answer is right" part (MCQ), "options" is MCQ only
+  const REP_CATS = [["stem", "โจทย์ผิด / ไม่ครบ"], ["options", "ตัวเลือกผิด / ไม่ครบ"], ["key", "เฉลยผิด"], ["explain", "คำอธิบายผิด / ไม่ชัด"], ["image", "รูปหาย / ไม่ชัด"], ["other", "อื่น ๆ"]];
+  const REP_HINT = { stem: "เช่น โจทย์ขาดค่า lab, พิมพ์ผิดตรง …", options: "เช่น ตัวเลือก C ซ้ำกับ D, ตัวเลือกขาด …", key: "เหตุผล / แหล่งอ้างอิง เช่น ตาม lecture L04 หน้า 12", explain: "ส่วนไหนผิด หรืออ่านแล้วไม่เข้าใจตรงไหน", image: "รูปไหน หายหรือไม่ชัดอย่างไร", other: "เล่าสั้น ๆ ว่าเจออะไร" };
   function reportHTML(b, q, mine) {
     const rep = marks().reported[q.id];
     const opts = q.type === "MCQ" ? Object.keys(q.options) : [];
+    const cats = REP_CATS.filter(([k]) => k !== "options" || opts.length);
     return `<div class="doubtrow">
       ${mine ? `<span class="badge mine">เครื่องนี้ใช้เฉลย ${esc(mine)} ของฉัน</span><button class="linkbtn" data-z="unkey" data-q="${esc(q.id)}">กลับไปใช้เฉลยกลาง</button>` : ""}
       ${rep ? `<span class="badge">แจ้งผู้ดูแลแล้ว</span>` : ""}
-      <details class="report"><summary>แจ้งเฉลยน่าสงสัย${opts.length ? " / ใช้เฉลยของฉัน" : ""}</summary>
-        ${opts.length ? `<label>ฉันคิดว่าคำตอบที่ถูกคือ <select data-rep-key="1"><option value="">ไม่แน่ใจ</option>${opts.map((k) => `<option ${mine === k ? "selected" : ""}>${k}</option>`).join("")}</select></label>
-        <label class="chk"><input type="checkbox" data-rep-local="1" ${mine ? "checked" : ""}> ใช้คำตอบนี้ให้คะแนนในเครื่องฉัน ระหว่างรอผู้ดูแลตรวจ</label>` : ""}
-        <label>เหตุผล / แหล่งอ้างอิง<textarea data-rep-reason="1" rows="3" placeholder="เช่น ตาม lecture L04 หน้า 12 ..."></textarea></label>
-        <div class="btns"><button class="btn primary sm" data-z="report" data-q="${esc(q.id)}">ส่งถึงผู้ดูแล</button>${opts.length ? `<button class="btn sm" data-z="setkey" data-q="${esc(q.id)}">บันทึกเฉลยของฉันอย่างเดียว</button>` : ""}<span class="hint" data-rep-msg="1"></span></div>
+      <details class="report"><summary>แจ้งปัญหาข้อนี้${opts.length ? " / ใช้เฉลยของฉัน" : ""}</summary>
+        <fieldset class="repcats"><legend>อะไรมีปัญหา <small>(เลือกได้หลายข้อ)</small></legend>
+          ${cats.map(([k, l]) => `<label class="chip"><input type="checkbox" data-rep-cat="${k}"><span>${l}</span></label>`).join("")}</fieldset>
+        ${opts.length ? `<div class="repkey" hidden><label>คำตอบที่คิดว่าถูก <select data-rep-key="1"><option value="">ไม่แน่ใจ</option>${opts.map((k) => `<option ${mine === k ? "selected" : ""}>${k}</option>`).join("")}</select></label>
+          <label class="chk"><input type="checkbox" data-rep-local="1" ${mine ? "checked" : ""}> ใช้คำตอบนี้ให้คะแนนในเครื่องฉัน ระหว่างรอผู้ดูแลตรวจ</label></div>` : ""}
+        <label>รายละเอียด<textarea data-rep-reason="1" rows="3" placeholder="เลือกหัวข้อด้านบนก่อน แล้วเล่าสั้น ๆ"></textarea></label>
+        <div class="btns"><button class="btn primary sm" data-z="report" data-q="${esc(q.id)}">ส่งถึงผู้ดูแล</button>${opts.length ? `<button class="btn sm repkey" data-z="setkey" data-q="${esc(q.id)}" hidden>บันทึกเฉลยของฉันอย่างเดียว</button>` : ""}<span class="hint" data-rep-msg="1"></span></div>
       </details></div>`;
   }
   function noteHTML(q) {
@@ -271,6 +277,7 @@ window.MedLibQuizUI = function (ML) {
     const limit = limitOf(s), est = !Number(s.meta.time_limit_min);
     const pref = P().prefs || {};
     let h = headHTML(b, s, "");
+    if (!s.mix && ML.setOff(b, s.id)) h += `<div class="note"><b>ชุดนี้ปิดไว้ในตั้งค่า</b> <span class="hint">ยังทำได้ แต่ไม่ขึ้นในหน้าบล็อก และไม่นับในสถิติ/ทบทวน · <a href="#/settings/sets-${enc(b.id)}">เปิดชุดนี้</a></span></div>`;
     if (act) {
       const st = C.roundStats(act, qmapOf(s), kov());
       h += `<div class="resume"><div><b>รอบที่ค้างอยู่</b> <span class="pill">${MODE_SHORT[act.mode]}</span> <span class="pill">${KIND_TH[act.kind] || ""}</span><div class="hint">ตอบแล้ว ${st.answered}/${st.total}${act.mode === "practice" ? ` · ถูก ${st.ok}` : ""} · เริ่ม ${new Date(act.started).toLocaleString("th-TH", { dateStyle: "short", timeStyle: "short" })}</div></div>
@@ -394,21 +401,25 @@ window.MedLibQuizUI = function (ML) {
     const blank = qs.filter((q) => !r.chk[q.id]);
     const flagged = qs.filter((q) => marks().flag[q.id]);
     const unsure = qs.filter((q) => !C.counts(q, kov()));
-    const jump = (q) => (r.done ? `#/q/${enc(q.id)}` : `${B}/run/${r.qids.indexOf(q.id) + 1}`);
+    const jump = (q) => `${B}/${r.done ? `rev/${enc(r.id)}` : "run"}/${r.qids.indexOf(q.id) + 1}`;
     const no = (q) => r.qids.indexOf(q.id) + 1;
     const by = {};
     qs.filter((q) => r.chk[q.id] && C.counts(q, kov())).forEach((q) => {
       const ls = [...new Set((q.refs || []).filter((x) => x.lecture).map((x) => x.lecture))];
       (ls.length ? ls : ["ไม่ระบุ"]).forEach((l) => { const o = by[l] = by[l] || { n: 0, s: 0, ids: [] }; const sc = C.qScore(q, r, kov()) || 0; o.n++; o.s += sc; if (sc < 0.999) o.ids.push(q); });
     });
-    h += `<div class="scorebox"><div class="big">${st.score} / ${st.checked}</div><div><b>${st.pct}%</b> · ${MODE_TH[r.mode]} · ${KIND_TH[r.kind] || ""}${r.mode !== "practice" || r.elapsed ? ` · ใช้เวลา ${mmss(r.elapsed)}` : ""}${st.uncounted ? ` · ไม่นับ ${st.uncounted} ข้อ` : ""}<div class="hint">${new Date(r.started).toLocaleString("th-TH", { dateStyle: "medium", timeStyle: "short" })}${blank.length ? ` · ยังไม่ได้ทำ ${blank.length} ข้อ` : ""}${r.done ? "" : " · รอบนี้ยังไม่จบ"}</div></div></div>`;
-    if (!r.done) h += `<div class="btns"><a class="btn primary" href="${B}/run/${(r.idx || 0) + 1}">กลับไปทำต่อ</a></div>`;
+    const cnt = roundCounts(r, qmap), re = C.retryIds(r, qmap, kov()).length;
+    h += `<div class="scorebox counts"><div class="rnums big"><span class="n ok">${cnt.ok}<small>ถูก</small></span><span class="n wrong">${cnt.wrong}<small>ผิด</small></span><span class="n blank">${cnt.blank}<small>ไม่ได้ทำ</small></span>${cnt.uncounted ? `<span class="n">${cnt.uncounted}<small>ไม่นับคะแนน</small></span>` : ""}</div>
+      <div><b>คะแนน ${st.score} จาก ${st.checked} ข้อที่ตรวจ</b><div class="hint">${MODE_TH[r.mode]} · ${KIND_TH[r.kind] || ""}${r.mode !== "practice" || r.elapsed ? ` · ใช้เวลา ${mmss(r.elapsed)}` : ""} · ${new Date(r.started).toLocaleString("th-TH", { dateStyle: "medium", timeStyle: "short" })}${r.done ? "" : " · รอบนี้ยังไม่จบ"}</div></div></div>`;
+    h += `<div class="btns">${r.done ? `<a class="btn" href="${B}/rev/${enc(r.id)}/1">ดูคำตอบรอบนี้</a>${re ? `<button class="btn primary" data-z="retryround" data-r="${esc(r.id)}">ทำข้อผิด/ข้อที่เหลือซ้ำ (${re})</button>` : ""}<a class="btn" href="${B}">เริ่มรอบใหม่ทั้งชุด</a>` : `<a class="btn primary" href="${B}/run/${(r.idx || 0) + 1}">กลับไปทำต่อ</a>`}<a class="btn ghost" href="${B}/hist">ประวัติทุกรอบ</a></div>`;
+    // answer grid: every question of the round, coloured by result; click → that answer
+    h += `<h3>ทุกข้อในรอบนี้</h3><div class="qrow grid">${r.qids.filter((id) => qmap[id]).map((id) => { const q = qmap[id], x = C.status(q, r, kov()), cls = x === "ok" || x === "wrong" || x === "partial" ? x : x === "answered" ? "answered" : ""; return `<a class="qc ${cls}" href="${jump(q)}" title="ข้อ ${no(q)}">${no(q)}</a>`; }).join("")}</div>`;
     // retry picker: wrong answers + questions that don't count (answer key not confirmed)
     const pickRow = (q, tag) => `<label class="chk"><input type="checkbox" data-wrongpick="${esc(q.id)}" checked> <a href="${jump(q)}">ข้อ ${no(q)}</a>${tag} <span class="hint">${esc(String(q.stem || q.case || "").slice(0, 70))}…</span></label>`;
     if ((wrong.length || unsure.length) && r.done) {
       h += `<h3>${[wrong.length ? `ข้อที่ผิด (${wrong.length})` : "", unsure.length ? `ไม่นับคะแนน (${unsure.length})` : ""].filter(Boolean).join(" + ")} · เลือกข้อที่จะทำซ้ำ</h3><div class="pickwrong">${wrong.map((q) => pickRow(q, "")).join("")}${unsure.map((q) => pickRow(q, ` <span class="badge warn">ไม่นับคะแนน</span>`)).join("")}</div>
-        <div class="btns"><button class="btn primary" data-z="retry" data-r="${r.id}">ทำข้อที่เลือกซ้ำเป็นรอบใหม่</button><a class="btn" href="${B}">ทำทั้งชุดอีกครั้ง</a></div>`;
-    } else if (r.done) h += `<div class="btns"><span class="badge good">ไม่มีข้อที่ผิด</span><a class="btn" href="${B}">ทำทั้งชุดอีกครั้ง</a></div>`;
+        <div class="btns"><button class="btn" data-z="retry" data-r="${r.id}">ทำเฉพาะข้อที่เลือกซ้ำ</button></div>`;
+    } else if (r.done) h += `<div class="btns"><span class="badge good">ไม่มีข้อที่ผิด</span></div>`;
     // lectures behind this round's wrong answers, most wrong first
     const toRead = {};
     wrong.filter((q) => C.counts(q, kov())).forEach((q) => Object.keys(lecRefs(q)).forEach((l) => { toRead[l] = (toRead[l] || 0) + 1; }));
@@ -435,28 +446,104 @@ window.MedLibQuizUI = function (ML) {
   }
 
   /* ---------- history + graph ---------- */
-  function chartSVG(points) {
-    if (points.length < 2) return "";
-    const W = 640, H = 180, pad = 28;
-    const x = (i) => pad + (i * (W - pad * 2)) / (points.length - 1), y = (v) => H - pad - (v / 100) * (H - pad * 2);
-    const line = points.map((p, i) => `${i ? "L" : "M"}${x(i).toFixed(1)},${y(p.pct).toFixed(1)}`).join(" ");
-    return `<svg class="chart" viewBox="0 0 ${W} ${H}" role="img" aria-label="คะแนนแต่ละรอบ">
-      ${[0, 50, 100].map((v) => `<line x1="${pad}" x2="${W - pad}" y1="${y(v)}" y2="${y(v)}" class="gl"/><text x="4" y="${y(v) + 4}" class="ax">${v}%</text>`).join("")}
-      <path d="${line}" class="lnp"/>${points.map((p, i) => `<circle cx="${x(i)}" cy="${y(p.pct)}" r="4" class="pt"><title>${esc(p.label)} · ${p.pct}%</title></circle>`).join("")}</svg>`;
+  // Stacked bars, one per round: number of questions right / wrong / not done (counts, not %).
+  // points: [{ok, wrong, blank, label, tip}]
+  function barsSVG(points) {
+    if (!points.length) return "";
+    const W = 640, H = 200, padL = 30, padB = 34, top = 12;
+    const max = Math.max(1, ...points.map((p) => p.ok + p.wrong + p.blank));
+    const step = Math.pow(10, Math.floor(Math.log10(max))), nice = Math.ceil(max / step) * step;
+    const ticks = [0, nice / 2, nice].map((v) => Math.round(v));
+    const slot = (W - padL - 8) / points.length, bw = Math.max(6, Math.min(36, slot * 0.6));
+    const y = (v) => H - padB - (v / nice) * (H - padB - top);
+    const bar = (p, i) => {
+      const x = padL + slot * i + (slot - bw) / 2; let acc = 0;
+      const seg = (n, cls) => { if (!n) return ""; const y1 = y(acc + n), y0 = y(acc); acc += n; return `<rect x="${x.toFixed(1)}" y="${y1.toFixed(1)}" width="${bw.toFixed(1)}" height="${(y0 - y1).toFixed(1)}" class="${cls}"/>`; };
+      const showLbl = points.length <= 12 || i % Math.ceil(points.length / 12) === 0;
+      return `<g><title>${esc(p.tip || p.label)} · ถูก ${p.ok} · ผิด ${p.wrong} · ไม่ได้ทำ ${p.blank}</title>${seg(p.ok, "b-ok")}${seg(p.wrong, "b-wrong")}${seg(p.blank, "b-blank")}
+        ${showLbl ? `<text x="${(x + bw / 2).toFixed(1)}" y="${H - padB + 14}" class="ax" text-anchor="middle">${esc(p.label)}</text>` : ""}</g>`;
+    };
+    return `<svg class="chart bars" viewBox="0 0 ${W} ${H}" role="img" aria-label="จำนวนข้อถูก ผิด และไม่ได้ทำ ของแต่ละรอบ">
+      ${ticks.map((v) => `<line x1="${padL}" x2="${W - 4}" y1="${y(v)}" y2="${y(v)}" class="gl"/><text x="${padL - 6}" y="${y(v) + 4}" class="ax" text-anchor="end">${v}</text>`).join("")}
+      ${points.map(bar).join("")}</svg>
+      <div class="barlegend"><span><i class="lg ok"></i>ถูก</span><span><i class="lg wrong"></i>ผิด</span><span><i class="lg blank"></i>ไม่ได้ทำ</span><span class="hint">หน่วย: จำนวนข้อ</span></div>`;
   }
+  // counts of one round: ok / wrong (incl. partial) / blank (not checked) / uncounted (key not confirmed)
+  function roundCounts(r, qmap) {
+    const st = C.roundStats(r, qmap, kov());
+    return Object.assign(st, { blank: Math.max(0, st.total - st.checked - st.uncounted) });
+  }
+  const shortDate = (t) => new Date(t).toLocaleDateString("th-TH", { day: "numeric", month: "short" });
+
+  /* ---------- history: one card per round, retry rounds under the round they came from ---------- */
   function viewHistory(b, s) {
     const qmap = qmapOf(s), B = base(b, s);
-    const rounds = roundsOf(b, s).filter((r) => !r.abandoned || Object.keys(r.chk).length);
+    const rounds = roundsOf(b, s).filter((r) => !r.abandoned || Object.keys(r.chk).length || !r.done);
     let h = headHTML(b, s, "hist");
-    if (!rounds.length) { ML.main.innerHTML = h + `<div class="empty">ยังไม่มีประวัติ ทุกรอบที่ทำจะถูกเก็บไว้ที่นี่</div>`; return; }
-    const pts = rounds.filter((r) => r.done && !r.abandoned && r.kind !== "retry" && C.roundStats(r, qmap, kov()).checked).map((r) => ({ pct: C.roundStats(r, qmap, kov()).pct, label: new Date(r.started).toLocaleDateString("th-TH") }));
-    h += pts.length >= 2 ? `<h3>พัฒนาการ (รอบทั้งชุด)</h3>${chartSVG(pts)}` : `<p class="hint">ทำทั้งชุดครบ 2 รอบขึ้นไปจะเห็นกราฟพัฒนาการ</p>`;
-    h += `<div class="tablewrap"><table><thead><tr><th>วันที่</th><th>แบบ</th><th>โหมด</th><th>คะแนน</th><th>เวลา</th><th></th></tr></thead><tbody>${rounds.slice().reverse().map((r) => {
-      const st = C.roundStats(r, qmap, kov());
-      return `<tr><td>${new Date(r.started).toLocaleString("th-TH", { dateStyle: "short", timeStyle: "short" })}</td><td>${KIND_TH[r.kind] || ""}${r.abandoned ? " · ไม่ครบ" : !r.done ? " · กำลังทำ" : ""}</td><td>${MODE_SHORT[r.mode]}</td><td>${st.score}/${st.checked} (${st.pct}%)</td><td>${mmss(r.elapsed || 0)}</td><td><a href="${B}/sum/${r.id}">ดูผล</a></td></tr>`;
-    }).join("")}</tbody></table></div>
+    if (!rounds.length) { ML.main.innerHTML = h + `<div class="empty">ยังไม่มีประวัติ ทุกรอบที่ทำจะถูกเก็บไว้ที่นี่ <a href="${B}">เริ่มทำชุดนี้</a></div>`; return; }
+    const done = rounds.filter((r) => r.done && roundCounts(r, qmap).checked);
+    if (done.length) h += `<h3>ผลแต่ละรอบ</h3>${barsSVG(done.map((r) => { const c = roundCounts(r, qmap); return { ok: c.ok, wrong: c.wrong, blank: c.blank, label: shortDate(r.started), tip: `${new Date(r.started).toLocaleString("th-TH", { dateStyle: "medium", timeStyle: "short" })} · ${KIND_TH[r.kind] || ""}` }; }))}`;
+    const ids = new Set(rounds.map((r) => r.id));
+    const kids = (id) => rounds.filter((r) => r.parent === id);
+    const tops = rounds.filter((r) => !r.parent || !ids.has(r.parent)).slice().reverse();   // newest first
+    const card = (r, depth) => {
+      const c = roundCounts(r, qmap), re = C.retryIds(r, qmap, kov()).length, active = !r.done;
+      const seg = (n, cls) => (n ? `<i class="${cls}" style="flex:${n}"></i>` : "");
+      const state = active ? `<span class="pill now">กำลังทำ · ข้อ ${(r.idx || 0) + 1}/${c.total}</span>` : r.abandoned ? `<span class="pill">ทำไม่ครบ</span>` : "";
+      return `<article class="rcard${depth ? " child" : ""}" data-round="${esc(r.id)}">
+        <div class="rtop"><div><b>${new Date(r.started).toLocaleString("th-TH", { dateStyle: "medium", timeStyle: "short" })}</b>
+          <div class="pills"><span class="pill">${KIND_TH[r.kind] || "ทั้งชุด"}</span><span class="pill">${MODE_SHORT[r.mode]}</span>${state}${r.elapsed ? `<span class="hint">ใช้เวลา ${mmss(r.elapsed)}</span>` : ""}</div></div>
+          <div class="rnums"><span class="n ok">${c.ok}<small>ถูก</small></span><span class="n wrong">${c.wrong}<small>ผิด</small></span><span class="n blank">${c.blank}<small>ไม่ได้ทำ</small></span>${c.uncounted ? `<span class="n">${c.uncounted}<small>ไม่นับ</small></span>` : ""}</div></div>
+        <div class="rbar">${seg(c.ok, "ok")}${seg(c.wrong, "wrong")}${seg(c.uncounted, "unc")}${seg(c.blank, "blank")}</div>
+        <div class="btns">${active ? `<a class="btn primary sm" href="${B}/run/${(r.idx || 0) + 1}">ทำต่อ</a>` : `<a class="btn sm" href="${B}/rev/${enc(r.id)}/1">ดูคำตอบ</a><a class="btn sm" href="${B}/sum/${enc(r.id)}">สรุปผล</a>`}
+          ${!active && re ? `<button class="btn primary sm" data-z="retryround" data-r="${esc(r.id)}">ทำข้อผิด/ข้อที่เหลือซ้ำ (${re})</button>` : ""}
+          <button class="btn danger sm" data-z="delround" data-r="${esc(r.id)}">ลบรอบนี้</button></div>
+      </article>${kids(r.id).slice().reverse().map((k) => card(k, depth + 1)).join("")}`;
+    };
+    h += `<div class="btns"><a class="btn" href="${B}">เริ่มรอบใหม่ทั้งชุด</a><span class="hint">${rounds.length} รอบ · ใหม่สุดอยู่บน · รอบทำซ้ำอยู่ใต้รอบที่มาจาก</span></div>
+      <div class="rlist">${tops.map((r) => card(r, 0)).join("")}</div>
       <div class="btns"><button class="btn danger" data-z="clearhist">ลบประวัติชุดนี้ทั้งหมด</button></div>`;
     ML.main.innerHTML = h;
+  }
+
+  /* ---------- look back at one round (#/set/<b>/<s>/rev/<round>/<n>): its answers with the key, read only ---------- */
+  let revWrongOnly = false;
+  function viewReview(b, s, rid, pos) {
+    const r = roundsOf(b, s).find((x) => x.id === rid);
+    if (!r) return ML.notFound("ไม่พบรอบนี้ (อาจถูกลบไปแล้ว)");
+    const qmap = qmapOf(s), B = base(b, s);
+    const all = r.qids.filter((id) => qmap[id]);
+    const bad = (id) => { const st = C.status(qmap[id], r, kov()); return st !== "ok"; };
+    const list = revWrongOnly ? all.filter(bad) : all;
+    const at = (id) => r.qids.indexOf(id) + 1;
+    let i = Math.max(0, Math.min(r.qids.length - 1, (Number(pos) || 1) - 1));
+    if (!list.includes(r.qids[i]) && list.length) i = r.qids.indexOf(list[0]);
+    const q = qmap[r.qids[i]];
+    const c = roundCounts(r, qmap);
+    const strip = list.map((id) => {
+      const st = C.status(qmap[id], r, kov()), cls = st === "ok" || st === "wrong" || st === "partial" ? st : st === "blank" ? "" : "answered";
+      return `<button class="qc ${cls} ${id === q.id ? "cur" : ""}" data-rgo="${at(id)}" title="ข้อ ${at(id)}">${at(id)}</button>`;
+    }).join("");
+    const li = list.indexOf(q.id), prev = list[li - 1], next = list[li + 1];
+    ML.main.innerHTML = headHTML(b, s, "hist") + `
+      <div class="revhead"><div><b>ดูคำตอบรอบ ${new Date(r.started).toLocaleString("th-TH", { dateStyle: "medium", timeStyle: "short" })}</b>
+        <div class="hint">${KIND_TH[r.kind] || ""} · ${MODE_SHORT[r.mode]} · ถูก ${c.ok} · ผิด ${c.wrong} · ไม่ได้ทำ ${c.blank}</div></div>
+        <div class="btns"><button class="btn sm ${revWrongOnly ? "" : "primary"}" data-z="revall">ทุกข้อ (${all.length})</button><button class="btn sm ${revWrongOnly ? "primary" : ""}" data-z="revwrong">เฉพาะข้อที่ไม่ถูก (${all.filter(bad).length})</button><a class="btn sm" href="${B}/hist">กลับประวัติ</a></div></div>
+      ${list.length ? `<div class="qhdr"><div class="qnav open"><div class="qrow">${strip}</div></div></div>
+      <article class="qcard"><div class="qhead"><div class="qnum">ข้อ ${i + 1} <small>/ ${r.qids.length} · ${esc(q.type)}${s.mix ? ` · ชุด ${q.cohort}` : ""}</small>${uncountedBadge(q)}</div>
+        <button class="flagbtn" data-z="flag" data-q="${esc(q.id)}" aria-pressed="${!!marks().flag[q.id]}">${marks().flag[q.id] ? "ปักธงไว้ทบทวนแล้ว" : "ปักธงไว้ทบทวน"}</button></div>
+        ${questionHTML(b, q, r, true, false)}${noteHTML(q)}</article>
+      <div class="qfoot"><button class="btn" data-rgo="${prev ? at(prev) : ""}" ${prev ? "" : "disabled"}>← ข้อก่อนหน้า</button>
+        <button class="btn" data-rgo="${next ? at(next) : ""}" ${next ? "" : "disabled"}>ข้อถัดไป →</button></div>` : `<div class="empty">รอบนี้ถูกทุกข้อ</div>`}`;
+    const cur = ML.main.querySelector(".qc.cur"); if (cur) cur.scrollIntoView({ block: "nearest", inline: "center" });
+  }
+  // start a practice round of the given questions, made from round `from` (keeps its shuffle settings)
+  function retryFrom(b, s, from, ids) {
+    const qmap = qmapOf(s), order = (from.qids || ids).filter((id) => ids.includes(id));
+    startRound(b, s, { kind: "retry", mode: "practice", shuffleQ: !!from.shuffleQ, shuffleC: !!from.shuffleC, parent: from.id || null });
+    const r = activeRound(b, s); r.qids = from.shuffleQ ? C.shuffle(order) : order;
+    r.choiceOrder = Object.fromEntries(Object.entries(r.choiceOrder).filter(([k]) => qmap[k] && ids.includes(k)));
+    save();
   }
 
   /* ---------- Guidereader: set level + block plan ---------- */
@@ -611,6 +698,7 @@ window.MedLibQuizUI = function (ML) {
       const cohorts = [...new Set([...b.sets.filter((s) => s.type === tab).map((s) => s.cohort), ...b.papers.filter((p) => p.type === tab).map((p) => p.cohort)])].sort((x, y) => y - x);
       h += `<div class="pgrid">${cohorts.map((c) => {
         const s = b.sets.find((x) => x.cohort === c && x.type === tab);
+        if (s && ML.setOff(b, s.id)) return `<div class="pcard off"><span class="ptop"><b>ชุด ${c} · ${esc(tab)}</b><span class="n">${s.questions.length} ข้อ</span></span><span class="prog">ปิดไว้ · <a href="#/settings/sets-${enc(b.id)}">เปิดในตั้งค่า</a></span></div>`;
         if (!s) {
           const pdfs = b.papers.filter((p) => p.cohort === c && p.type === tab).map((p) => `<a class="pdflink" href="#/pdf/${enc(b.id)}/${enc(p.id)}/1" data-pdfpop="${esc(b.id)}|${esc(p.id)}|1">${p.role === "key" ? "PDF เฉลย" : "PDF ข้อสอบ"}</a>`).join("");
           return `<div class="pcard off"><span class="ptop"><b>ชุด ${c} · ${esc(tab)}</b></span><span class="prog">ยังไม่มีแบบออนไลน์</span>${pdfs ? `<span class="pdfs">${pdfs}</span>` : ""}</div>`;
@@ -622,6 +710,14 @@ window.MedLibQuizUI = function (ML) {
     }
     if (mixes.length) h += `<div class="mixlist"><span class="hint">ชุดที่สร้างไว้:</span>${mixes.map(([id, m]) => `<span class="mixitem"><a href="#/set/${enc(b.id)}/@${enc(id)}">${esc(m.title)} (${m.qids.length})</a><button class="linkbtn" data-z="delmix" data-m="${esc(id)}" title="ลบชุดนี้">✕</button></span>`).join("")}</div>`;
     return h;
+  }
+  // one cohort card for the home pop-up: opens the set page (pick a mode there) or resumes the round in progress
+  function setCardHTML(b, s) {
+    const head = `<span class="ptop"><b>ชุด ${esc(s.cohort)} · ${esc(s.type)}</b><span class="n">${s.questions.length} ข้อ</span></span>`;
+    if (ML.setOff(b, s.id)) return `<div class="pcard off">${head}<span class="prog">ปิดไว้ · <a href="#/settings/sets-${enc(b.id)}">เปิดในตั้งค่า</a></span></div>`;
+    const pr = setProgress(b, s), act = activeRound(b, s), pct = pr.total ? Math.round((pr.done / pr.total) * 100) : 0;
+    const prog = act ? `ทำต่อ · ข้อ ${(act.idx || 0) + 1}` : !pr.total ? "เฉลยทั้งชุดยังไม่ยืนยัน · ไม่นับคะแนน" : pr.done ? `ทำแล้ว ${pr.done}/${pr.total} · ถูก ${pr.ok}` : "ยังไม่ได้ทำ";
+    return `<a class="pcard" href="${act ? `${base(b, s)}/run/${(act.idx || 0) + 1}` : base(b, s)}">${head}<span class="sbar"><i style="width:${pct}%"></i></span><span class="prog">${prog}</span></a>`;
   }
   function makeMix(b, title, qids) {
     if (!qids.length) return;
@@ -636,7 +732,7 @@ window.MedLibQuizUI = function (ML) {
   function lastActive() {
     let best = null;
     ML.visibleBlocks().forEach((b) => Object.entries(P().rounds).filter(([k]) => k.startsWith(b.id + "/")).forEach(([k, list]) => {
-      const s = setLike(b, k.slice(b.id.length + 1)); if (!s || !Array.isArray(list)) return;
+      const s = setLike(b, k.slice(b.id.length + 1)); if (!s || !Array.isArray(list) || (!s.mix && ML.setOff(b, s.id))) return;
       // the same round the set page opens (activeRound), so the button and the page agree
       const r = list.filter((x) => x && !x.done && Array.isArray(x.qids)).pop();
       if (r && (!best || (r.at || r.started || 0) > (best.r.at || best.r.started || 0))) best = { b, s, r };
@@ -678,10 +774,10 @@ window.MedLibQuizUI = function (ML) {
         ${lecTable}${rows ? `<div class="tablewrap"><table class="toptbl"><thead><tr><th>หัวข้อ (อ่อนสุดก่อน)</th><th>ทำแล้ว</th><th>คะแนน</th><th></th></tr></thead><tbody>${rows}</tbody></table></div>` : ""}</div>`);
       const qmap = Object.fromEntries(qs.map((q) => [q.id, q]));   // same questions as the cards (respects showDrafts)
       Object.entries(P().rounds).filter(([k, list]) => k.startsWith(b.id + "/") && Array.isArray(list)).forEach(([k, list]) => {
-        const s = setLike(b, k.slice(b.id.length + 1)); if (!s) return;
+        const s = setLike(b, k.slice(b.id.length + 1)); if (!s || (!s.mix && ML.setOff(b, s.id))) return;
         list.filter((r) => r && Array.isArray(r.qids) && r.chk && r.done && !r.abandoned && r.kind !== "retry").forEach((r) => {
-          const st = C.roundStats(r, qmap, kov()), when = r.finished || r.started || 0;
-          if (st.checked) pts.push({ t: when, pct: st.pct, label: `${when ? new Date(when).toLocaleDateString("th-TH") + " · " : ""}${b.name} ${s.title || s.id}` });
+          const st = roundCounts(r, qmap), when = r.finished || r.started || 0;
+          if (st.checked) pts.push({ t: when, ok: st.ok, wrong: st.wrong, blank: st.blank, label: shortDate(when), tip: `${when ? new Date(when).toLocaleDateString("th-TH") + " · " : ""}${b.name} ${s.title || s.id}` });
         });
       });
     });
@@ -690,7 +786,7 @@ window.MedLibQuizUI = function (ML) {
     weak.sort((a, b) => a.x.pct - b.x.pct);
     if (weak.length) h += `<div class="quickrow"><button class="btn primary weakest" data-z="mixtopic" data-b="${esc(weak[0].b.id)}" data-tp="${esc(weak[0].x.key)}">ฝึกหัวข้อที่อ่อนสุด: ${esc(weak[0].name)} (${weak[0].x.pct}%)</button></div>`;
     pts.sort((a, b) => a.t - b.t);
-    h += pts.length >= 2 ? `<h3>คะแนนแต่ละรอบ</h3>${chartSVG(pts)}` : `<p class="hint">ทำครบ 2 รอบขึ้นไปจะเห็นกราฟ</p>`;
+    h += pts.length ? `<h3>ผลแต่ละรอบ (ทั้งชุด, ทุกบล็อก)</h3>${barsSVG(pts.slice(-30))}${pts.length > 30 ? `<p class="hint">แสดง 30 รอบล่าสุด</p>` : ""}` : "";
     ML.main.innerHTML = h + `<div class="statgrid">${cards.join("")}</div></div>`;
   }
 
@@ -725,12 +821,20 @@ window.MedLibQuizUI = function (ML) {
     if (sub === "run") return viewRun(b, s, arg);
     if (sub === "sum") return viewSummary(b, s, arg);
     if (sub === "hist") return viewHistory(b, s);
+    if (sub === "rev") return viewReview(b, s, arg, ML.parseHash()[5]);
     if (sub === "guide") return viewGuide(b, s);
     return viewOverview(b, s);
   }
   function ctx() {
     const h = ML.parseHash();
-    if (h[0] === "set") { const b = ML.findBlock(h[1]), s = setLike(b, h[2]); return { b, s, r: b && s ? activeRound(b, s) : null, sub: h[3], arg: h[4] }; }
+    if (h[0] === "set") {
+      const b = ML.findBlock(h[1]), s = setLike(b, h[2]);
+      if (b && s && h[3] === "rev") {   // looking back at a finished round: actions (self-grade, flag) go to that round and its question
+        const r = roundsOf(b, s).find((x) => x.id === h[4]) || null, qid = r && r.qids[Math.max(0, (Number(h[5]) || 1) - 1)];
+        return { b, s, r, sub: "rev", arg: h[4], single: !!qid, q: qid ? qmapOf(s)[qid] : null };
+      }
+      return { b, s, r: b && s ? activeRound(b, s) : null, sub: h[3], arg: h[4] };
+    }
     if (h[0] === "q") { const f = ML.findQuestion(h[1]); return f ? { b: f.b, s: null, q: f.q, r: single[f.q.id], single: true } : {}; }
     if (h[0] === "b") return { b: ML.findBlock(h[1]) };
     return {};
@@ -742,6 +846,7 @@ window.MedLibQuizUI = function (ML) {
     const c = ctx();
     if (t.dataset.zoom) { t.classList.toggle("zoom"); t.style.transform = ""; return true; }
     if (t.dataset.go !== undefined) { if (t.dataset.go && c.s) location.replace(`${base(c.b, c.s)}/run/${t.dataset.go}`); return true; }
+    if (t.dataset.rgo !== undefined) { if (t.dataset.rgo && c.s && c.sub === "rev") location.replace(`${base(c.b, c.s)}/rev/${enc(c.arg)}/${t.dataset.rgo}`); return true; }
     if (t.dataset.opt) {
       const q = curQ(c), r = c.r; if (!q || !r || r.chk[q.id]) return true;
       r.ans[q.id] = t.dataset.opt;
@@ -784,13 +889,27 @@ window.MedLibQuizUI = function (ML) {
     if (z === "retry") {
       const ids = [...document.querySelectorAll("[data-wrongpick]:checked")].map((x) => x.dataset.wrongpick);
       if (!ids.length) { ML.toast("เลือกข้อที่จะทำซ้ำอย่างน้อย 1 ข้อ"); return true; }
-      const from = roundsOf(c.b, c.s).find((x) => x.id === t.dataset.r) || {};
-      const qmap = qmapOf(c.s), order = (from.qids || ids).filter((id) => ids.includes(id));
-      startRound(c.b, c.s, { kind: "retry", mode: "practice", shuffleQ: !!from.shuffleQ, shuffleC: !!from.shuffleC, parent: from.id || null });
-      const r = activeRound(c.b, c.s); r.qids = from.shuffleQ ? C.shuffle(order) : order;
-      r.choiceOrder = Object.fromEntries(Object.entries(r.choiceOrder).filter(([k]) => qmap[k] && ids.includes(k)));
-      save(); return true;
+      retryFrom(c.b, c.s, roundsOf(c.b, c.s).find((x) => x.id === t.dataset.r) || {}, ids); return true;
     }
+    if (z === "retryround") {   // history card: redo every not-right question of that round (any round, not only the latest)
+      const from = roundsOf(c.b, c.s).find((x) => x.id === t.dataset.r); if (!from) return true;
+      const ids = C.retryIds(from, qmapOf(c.s), kov()); if (!ids.length) return true;
+      if (activeRound(c.b, c.s) && !ML.armed(t, "มีรอบที่ทำค้างอยู่ · กดอีกครั้งเพื่อเริ่มรอบใหม่")) return true;
+      retryFrom(c.b, c.s, from, ids); return true;
+    }
+    if (z === "delround") {
+      if (!ML.armed(t, "กดอีกครั้งเพื่อลบ")) return true;
+      const key = keyOfSet(c.b, c.s), list = roundsOf(c.b, c.s), i = list.findIndex((x) => x.id === t.dataset.r); if (i < 0) return true;
+      const gone = list[i], ts = (P().ts || {})[`delround:${gone.id}`];
+      C.deleteRound(P(), key, gone.id); save(); rerender();
+      ML.toast("ลบรอบนี้แล้ว", "เลิกทำ", () => {
+        const l = roundsOf(c.b, c.s); l.splice(Math.min(i, l.length), 0, gone);
+        if (ts === undefined) delete P().ts[`delround:${gone.id}`]; else P().ts[`delround:${gone.id}`] = ts;
+        save(); rerender();
+      });
+      return true;
+    }
+    if (z === "revall" || z === "revwrong") { revWrongOnly = z === "revwrong"; rerender(); return true; }
     if (z === "clearhist") { if (!ML.armed(t)) return true; P().rounds[keyOfSet(c.b, c.s)] = []; C.touch(P(), "clear", keyOfSet(c.b, c.s)); save(); rerender(); return true; }
     if (z === "pad") { padOpen = !padOpen; rerender(); return true; }
     if (z === "etab") { examTab.tab = t.dataset.t; rerender(); return true; }
@@ -843,11 +962,14 @@ window.MedLibQuizUI = function (ML) {
       const qq = ML.findQuestion(id); if (!qq) return true;
       const k = box.querySelector("[data-rep-key]"), local = box.querySelector("[data-rep-local]");
       const reason = box.querySelector("[data-rep-reason]").value.trim(), msg = box.querySelector("[data-rep-msg]");
-      const want = k ? k.value : "";
-      if (z === "setkey") { if (!want) { msg.textContent = "เลือกคำตอบที่คิดว่าถูกก่อน"; return true; } marks().keyOverride[id] = want; C.touch(P(), "keyOverride", id); save(); rerender(); return true; }
-      if (reason.length < 3) { msg.textContent = "ใส่เหตุผลสั้น ๆ ก่อนส่ง"; return true; }
+      const cats = [...box.querySelectorAll("[data-rep-cat]:checked")].map((x) => x.dataset.repCat);
+      const want = k && cats.includes("key") ? k.value : "";
+      if (z === "setkey") { const v = k ? k.value : ""; if (!v) { msg.textContent = "เลือกคำตอบที่คิดว่าถูกก่อน"; return true; } marks().keyOverride[id] = v; C.touch(P(), "keyOverride", id); save(); rerender(); return true; }
+      if (!cats.length) { msg.textContent = "เลือกก่อนว่าอะไรมีปัญหา"; return true; }
+      if (reason.length < 3) { msg.textContent = "ใส่รายละเอียดสั้น ๆ ก่อนส่ง"; return true; }
       if (want && local && local.checked) { marks().keyOverride[id] = want; C.touch(P(), "keyOverride", id); }
-      const payload = { qid: id, set: qq.q._set || "", answer: qq.q.type === "MCQ" ? qq.q.answer : "(KF/OSPE)", override: want, reason, page: location.href };
+      const catTxt = cats.map((c) => (REP_CATS.find((x) => x[0] === c) || [c, c])[1]).join(", ");
+      const payload = { qid: id, set: qq.q._set || "", answer: qq.q.type === "MCQ" ? qq.q.answer : "(KF/OSPE)", override: want, category: cats, reason, page: location.href };
       const url = (ML.APP.config.report_url || ML.APP.config.drive_proxy_url || "").replace(/\/+$/, "");
       msg.textContent = "กำลังส่ง…";
       let sent = false;
@@ -855,15 +977,21 @@ window.MedLibQuizUI = function (ML) {
         try { const res = await fetch(url + "/report", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(payload) }); sent = res.ok; } catch (e) { sent = false; }
       }
       if (sent) { marks().reported[id] = Date.now(); C.touch(P(), "reported", id); save(); ML.toast("ส่งถึงผู้ดูแลแล้ว ขอบคุณที่ช่วยตรวจ"); rerender(); return true; }
-      const body = `ข้อ ${id}\nเฉลยในเว็บ: ${payload.answer}\nควรเป็น: ${want || "-"}\nเหตุผล: ${reason}\n${location.href}`;
+      const body = `ข้อ ${id}\nปัญหา: ${catTxt}\nเฉลยในเว็บ: ${payload.answer}${want ? `\nควรเป็น: ${want}` : ""}\nรายละเอียด: ${reason}\n${location.href}`;
       const repo = ML.APP.config.repo;
       save();
-      msg.innerHTML = `ส่งอัตโนมัติไม่ได้ (ยังไม่ได้ตั้งคิวแจ้ง) · <button class="linkbtn" data-copy="${esc(body)}">คัดลอกข้อความ</button>${repo ? ` · <a target="_blank" rel="noopener" href="https://github.com/${esc(repo)}/issues/new?labels=answer-report&title=${enc("[เฉลย] " + id)}&body=${enc(body)}">เปิด GitHub Issue</a>` : ""}`;
+      msg.innerHTML = `ส่งอัตโนมัติไม่ได้ (ยังไม่ได้ตั้งคิวแจ้ง) · <button class="linkbtn" data-copy="${esc(body)}">คัดลอกข้อความ</button>${repo ? ` · <a target="_blank" rel="noopener" href="https://github.com/${esc(repo)}/issues/new?labels=answer-report&title=${enc(`[${catTxt}] ${id}`)}&body=${enc(body)}">เปิด GitHub Issue</a>` : ""}`;
       return true;
     }
     return false;
   }
   function onChange(t) {
+    if (t.dataset.repCat) {   // report form: "เฉลยผิด" shows the which-answer part; the hint follows the first picked category
+      const box = t.closest(".report"), cats = [...box.querySelectorAll("[data-rep-cat]:checked")].map((x) => x.dataset.repCat);
+      box.querySelectorAll(".repkey").forEach((el) => { el.hidden = !cats.includes("key"); });
+      box.querySelector("[data-rep-reason]").placeholder = cats.length ? REP_HINT[cats[0]] : "เลือกหัวข้อด้านบนก่อน แล้วเล่าสั้น ๆ";
+      return true;
+    }
     const c = ctx();
     if (t.dataset.zf && c.r) { c.r[t.dataset.zf] = t.value; save(); const v = visible(c.b, c.s, c.r); location.replace(`${base(c.b, c.s)}/run/${v.length ? c.r.qids.indexOf(v[0].id) + 1 : 1}`); return true; }
     if (t.dataset.zplan) { P().prefs = Object.assign(P().prefs || {}, { planTier: Number(t.value) }); save(); rerender(); return true; }
@@ -889,6 +1017,11 @@ window.MedLibQuizUI = function (ML) {
   }
   function onKey(ev) {
     const h = location.hash;
+    if (/^#\/set\/[^/]+\/[^/]+\/rev\//.test(h)) {   // look-back page: ← → only
+      const btn = ev.key === "ArrowRight" ? $(".qfoot [data-rgo]:last-child") : ev.key === "ArrowLeft" ? $(".qfoot [data-rgo]") : null;
+      if (btn && !btn.disabled) { ev.preventDefault(); btn.click(); return true; }
+      return false;
+    }
     if (!(/^#\/set\/[^/]+\/[^/]+\/run\//.test(h) || h.startsWith("#/q/"))) return false;
     const k = ev.key.toUpperCase();
     const btn = /^[A-E]$/.test(k) ? document.querySelectorAll(".opts .opt")["ABCDE".indexOf(k)] : /^[1-5]$/.test(k) ? document.querySelectorAll(".opts .opt")[Number(k) - 1]
@@ -897,5 +1030,5 @@ window.MedLibQuizUI = function (ML) {
     return false;
   }
 
-  return { counts: (q) => C.counts(q, kov()), qPos, view, viewSingle, viewStats, reviewCounts, lastActive, examTabHTML, planHTML, onClick, onChange, onInput, onKey, stop, blockResults };
+  return { counts: (q) => C.counts(q, kov()), qPos, view, viewSingle, viewStats, reviewCounts, lastActive, examTabHTML, setCardHTML, planHTML, onClick, onChange, onInput, onKey, stop, blockResults };
 };

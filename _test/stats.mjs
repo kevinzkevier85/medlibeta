@@ -65,24 +65,24 @@ await t("no progress → ยังไม่มีข้อมูล, no NaN", as
   assert.match(await p.textContent("#stats"), /ยังไม่มีข้อมูล/);
   assert.ok(!/NaN/.test(await p.textContent("#main")));
 });
-await t("weakest topic first, practice button, chart with 2 points", async () => {
+await t("weakest topic first, practice button, chart with 2 bars (counts)", async () => {
   const p = await open(progress());
   const rows = await p.$$eval('[data-blk="END"] table.toptbl tbody tr', (trs) => trs.map((tr) => tr.cells[0].textContent));
   assert.strictEqual(rows[0], "Thyroid");
-  assert.strictEqual(await p.$$eval("svg.chart circle", (c) => c.length), 2);
+  assert.strictEqual(await p.$$eval("svg.chart.bars > g", (g) => g.length), 2);
+  assert.match(await p.textContent(".barlegend"), /จำนวนข้อ/);
   assert.ok(!/NaN/.test(await p.textContent("#main")));
   await p.click('[data-z="mixtopic"].weakest');
   await p.waitForFunction(() => location.hash.includes("/@"));
   const mix = await p.evaluate(() => Object.values(window.__medlib.PROG.mixes).find((m) => m.title === "Thyroid · ทุกชุด"));
   assert.ok(mix && mix.block === "END");
 });
-await t("under 5 done in every topic → no weakest button; 1 round → chart hint", async () => {
+await t("under 5 done in every topic → no weakest button; 1 round → 1 bar", async () => {
   const p = await open(progress({ nThy: 3, nRounds: 1 }));
   // adrenal has 6 done but is 100%; thyroid (weaker) has only 3 → the button may only offer a topic with ≥ 5 done
   const w = await p.$('[data-z="mixtopic"].weakest');
   if (w) assert.match(await w.textContent(), /Adrenal/);
-  assert.match(await p.textContent("#stats"), /ทำครบ 2 รอบขึ้นไปจะเห็นกราฟ/);
-  assert.strictEqual(await p.$("svg.chart"), null);
+  assert.strictEqual(await p.$$eval("svg.chart.bars > g", (g) => g.length), 1);
 });
 await t("block without topics (DEMO) → score card, no topic table", async () => {
   const p = await open(progress({ demo: true }), true);
