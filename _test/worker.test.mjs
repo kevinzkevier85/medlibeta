@@ -57,4 +57,28 @@ await t("no KV binding → 501", async () => {
   const e = fakeEnv(); delete e.SYNC;
   assert.strictEqual((await call("POST", "/sync/new", null, ORIGIN, e)).status, 501);
 });
+// /report → GitHub: catch what the worker would send (no network)
+async function report(body) {
+  const sent = []; const real = globalThis.fetch;
+  globalThis.fetch = async (u, o) => { sent.push({ u: String(u), body: JSON.parse(o.body) }); return new Response(JSON.stringify({ number: 7 }), { status: 201 }); };
+  try { const r = await call("POST", "/report", JSON.stringify(body), ORIGIN, fakeEnv({ GITHUB_TOKEN: "t", GITHUB_REPO: "o/r" })); return { status: r.status, issue: sent[0] && sent[0].body }; }
+  finally { globalThis.fetch = real; }
+}
+await t("report with categories → title and body name the problem", async () => {
+  const { status, issue } = await report({ qid: "END-52-MCQ-005", set: "52_MCQ", answer: "A", override: "C", category: ["stem", "key", "bogus"], reason: "โจทย์ขาดค่า lab" });
+  assert.strictEqual(status, 201);
+  assert.match(issue.title, /^\[โจทย์, เฉลย\] END-52-MCQ-005 ควรเป็น C$/);
+  assert.match(issue.body, /\*\*ปัญหา:\*\* โจทย์, เฉลย/); assert.deepStrictEqual(issue.labels, ["answer-report"]);
+});
+await t("report from an older page (no category) still works", async () => {
+  const { status, issue } = await report({ qid: "END-52-MCQ-005", answer: "A", reason: "เฉลยน่าจะผิด" });
+  assert.strictEqual(status, 201); assert.match(issue.title, /^\[เฉลย\] END-52-MCQ-005$/);
+});
+await t("contact: no question id needed, own label, bad qid still refused for reports", async () => {
+  const { status, issue } = await report({ kind: "contact", category: ["bug"], reason: "กดปุ่มทำต่อแล้วไม่ไปไหน\nบน iPhone" });
+  assert.strictEqual(status, 201);
+  assert.match(issue.title, /^\[ติดต่อ\] เว็บใช้งานผิดปกติ · กดปุ่มทำต่อแล้วไม่ไปไหน$/); assert.deepStrictEqual(issue.labels, ["contact"]);
+  assert.strictEqual((await report({ qid: "nope", reason: "abc" })).status, 400);
+  assert.strictEqual((await report({ kind: "contact", reason: "x" })).status, 400, "reason too short");
+});
 console.log(`\n${pass} ผ่าน`);

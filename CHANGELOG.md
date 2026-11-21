@@ -3,6 +3,15 @@
 ทุกเวอร์ชันบันทึกที่นี่ และใน `version.json` (หน้าเว็บแสดงจาก `version.json`)
 เลขเวอร์ชัน: `MAJOR.MINOR.PATCH` — เพิ่มฟีเจอร์ = MINOR, แก้บั๊ก = PATCH
 
+## v0.65.0 · 2026-11-21 · หน้าแรกแบ่งปี · เมนูใหม่ · ประวัติใหม่ · แจ้งปัญหา/ติดต่อ · toggle
+- เมนูข้างปีพับได้ · หน้าแรกปีละ 3 บล็อก + ดูทั้งหมด · ทำต่อ/ทบทวน = แถบ breadcrumb · toolbar = button group + dropdown (เมนูย่อยธีม) · ตั้งค่าแสดง/ซ่อน = สวิตช์
+- หน้าแรกแบ่งตามปี + pop-up บล็อก (MCQ / KF / OSPE / Lecture) · เมนูข้างแบ่งปี (อ่านปีจาก block.json › year ไม่ต้องแก้ข้อมูล)
+- ประวัติเป็นการ์ดต่อรอบ: ดูคำตอบ · ทำข้อผิดซ้ำจากรอบไหนก็ได้ · ลบทีละรอบ (tombstone `delround:` ใน mergeProgress) · หน้า `#/set/<b>/<s>/rev/<round>/<n>`
+- สรุปผล/กราฟเป็นจำนวนข้อ แทน %
+- แจ้งปัญหาข้อนี้แบบเลือกหมวด · ปุ่มลอย "ติดต่อ" · worker รับ `category` และ `kind: "contact"` (ต้องวางโค้ด worker ใหม่) · workflow ไม่รันบอทกับ issue `[ติดต่อ]`
+- ตั้งค่า › เปิด/ปิดชุดข้อสอบ (`settings.hiddenSets`)
+- เทสใหม่: _test/history.mjs, report.mjs, home.mjs, settoggle.mjs · อัปเดต quizcore/worker/stats/qa
+
 ## v0.64.0 · 2026-11-16 · เฉลย MCQ ทุกบล็อกผ่านเกณฑ์
 - บล็อกเก่า 11 บล็อก: ย้ายหมายเหตุ ⚠️ ไป audit_note + เขียนเหตุผลตัวเลือกใหม่ ~900 จุด
 - CVS 52: tools/fix_cvs52_explain.cjs · ทุกบล็อกเข้า explain_gate
