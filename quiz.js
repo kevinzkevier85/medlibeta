@@ -739,7 +739,8 @@ window.MedLibQuizUI = function (ML) {
     }));
     if (!best) return null;
     const { b, s, r } = best;
-    return { href: `${base(b, s)}/run/${(r.idx || 0) + 1}`, title: s.mix ? s.title : `${b.name} · ชุด ${s.cohort} ${s.type}`, pos: (r.idx || 0) + 1, n: r.qids.length };
+    return { href: `${base(b, s)}/run/${(r.idx || 0) + 1}`, title: s.mix ? s.title : `${b.name} · ชุด ${s.cohort} ${s.type}`, pos: (r.idx || 0) + 1, n: r.qids.length,
+      b, setLabel: s.mix ? s.title : `ชุด ${s.cohort} ${s.type}`, setHref: base(b, s) };   // pieces for the home breadcrumb
   }
 
   // review queue of one block: due now / waiting (questions removed from the block are left out)

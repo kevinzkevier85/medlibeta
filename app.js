@@ -280,8 +280,12 @@
     $("#side").innerHTML = [
       `<span class="lbl">${lecMode ? "Lecture · บล็อก" : "ข้อสอบ · บล็อก"}</span>`,
       `<a class="nav ${!cur && (view === undefined || view === "" || view === "lec") ? "on" : ""}" href="${lecMode ? "#/lec" : "#/"}">ทั้งหมด</a>`,
-      ...byYear(visibleBlocks()).flatMap(([y, bs]) => [`<span class="lbl yr">${esc(yearName(y))}</span>`,
-        ...bs.map((b) => `<a class="nav ${cur === b.id ? "on" : ""}" href="${lecMode ? `#/lec/${enc(b.id)}` : `#/b/${enc(b.id)}`}" style="--blk:${esc(b.color || "var(--artery)")}"><i class="dot"></i>${esc(b.name)}</a>`)]),
+      // years are folders: ปี 1 / ปี 2 / ปี 3 open and close; the year of the block on screen is always open
+      ...byYear(visibleBlocks()).flatMap(([y, bs]) => {
+        const open = NAVY.has(y) || bs.some((b) => b.id === cur);
+        return [`<button class="nav yrbtn" data-act="navyr" data-y="${y}" aria-expanded="${open}" aria-controls="yr-${y}"><span>${esc(yearName(y))}</span><small>${bs.length}</small><i class="chev" aria-hidden="true"></i></button>`,
+          `<div class="yrlist" id="yr-${y}"${open ? "" : " hidden"}>${bs.map((b) => `<a class="nav ${cur === b.id ? "on" : ""}" href="${lecMode ? `#/lec/${enc(b.id)}` : `#/b/${enc(b.id)}`}" style="--blk:${esc(b.color || "var(--artery)")}"><i class="dot"></i>${esc(b.name)}</a>`).join("")}</div>`];
+      }),
     ].join("");
     const IC = (d) => `<svg class="ic" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">${d}</svg>`;
     const ICONS = {
@@ -295,13 +299,58 @@
     };
     const thId = themeIds.includes(S().theme) ? S().theme : "auto";
     const th = [{ auto: ICONS.auto, light: ICONS.light, dark: ICONS.dark }[thId] || ICONS.palette, "ธีม: " + themeName(thId)];
-    $("#tools").innerHTML = `<a class="ibtn ${view === "stats" ? "on" : ""}" href="#/stats" title="สถิติของฉัน" aria-label="สถิติ">${ICONS.stats}</a>`
-      + `<a class="ibtn ${view === "add" ? "on" : ""}" href="#/add" title="เพิ่มข้อสอบ" aria-label="เพิ่มข้อสอบ">${ICONS.add}</a>`
-      + `<button class="ibtn fsbtn" data-act="fontdown" title="ลดขนาดตัวอักษรโจทย์ (ตอนนี้: ${FONT_TH[FONT_LV[fontLv()]]})" aria-label="ลดขนาดตัวอักษรโจทย์"${fontLv() === 0 ? " disabled" : ""}>A−</button>`
-      + `<button class="ibtn fsbtn" data-act="fontup" title="ขยายขนาดตัวอักษรโจทย์ (ตอนนี้: ${FONT_TH[FONT_LV[fontLv()]]})" aria-label="ขยายขนาดตัวอักษรโจทย์"${fontLv() === FONT_LV.length - 1 ? " disabled" : ""}>A+</button>`
-      + `<button class="ibtn" data-act="theme" title="${th[1]} (กดเพื่อสลับ)" aria-label="${th[1]}">${th[0]}</button>`
-      + `<a class="ibtn ${view === "settings" ? "on" : ""}" href="#/settings" title="ตั้งค่า / ส่งออกข้อมูล · v${esc(v.version)}" aria-label="ตั้งค่า">${ICONS.settings}</a>`;
+    // shadcn ButtonGroup look: [สถิติ | เพิ่ม]  [A− | A+ | ธีม]  [ตั้งค่า | ▾ menu]
+    const more = IC('<path d="M6 9l6 6 6-6"/>');
+    $("#tools").innerHTML = `<div class="bgroup" role="group" aria-label="หน้า"><a class="gbtn ${view === "stats" ? "on" : ""}" href="#/stats" title="สถิติของฉัน" aria-label="สถิติ">${ICONS.stats}</a>`
+      + `<a class="gbtn hide-sm ${view === "add" ? "on" : ""}" href="#/add" title="เพิ่มข้อสอบ" aria-label="เพิ่มข้อสอบ">${ICONS.add}</a></div>`
+      + `<div class="bgroup" role="group" aria-label="การแสดงผล"><button class="gbtn fsbtn" data-act="fontdown" title="ลดขนาดตัวอักษรโจทย์ (ตอนนี้: ${FONT_TH[FONT_LV[fontLv()]]})" aria-label="ลดขนาดตัวอักษรโจทย์"${fontLv() === 0 ? " disabled" : ""}>A−</button>`
+      + `<button class="gbtn fsbtn" data-act="fontup" title="ขยายขนาดตัวอักษรโจทย์ (ตอนนี้: ${FONT_TH[FONT_LV[fontLv()]]})" aria-label="ขยายขนาดตัวอักษรโจทย์"${fontLv() === FONT_LV.length - 1 ? " disabled" : ""}>A+</button>`
+      + `<button class="gbtn" data-act="theme" title="${th[1]} (กดเพื่อสลับ)" aria-label="${th[1]}">${th[0]}</button></div>`
+      + `<div class="bgroup" role="group" aria-label="ตั้งค่า"><a class="gbtn ${view === "settings" ? "on" : ""}" href="#/settings" title="ตั้งค่า · v${esc(v.version)}" aria-label="ตั้งค่า">${ICONS.settings}</a>`
+      + `<button class="gbtn narrow" id="ddbtn" data-act="ddmenu" aria-haspopup="menu" aria-expanded="${DD.open}" aria-controls="ddmenu" title="เมนูตั้งค่า" aria-label="เมนูตั้งค่า">${more}</button></div>`;
+    if (DD.open) drawMenu();
   }
+
+  /* ---------- settings dropdown menu (shadcn DropdownMenu look): groups, separators, a theme sub-menu ---------- */
+  const DD = { open: false, sub: false };
+  const MI = (d) => `<svg class="mi" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">${d}</svg>`;
+  const MICONS = {
+    gear: MI('<circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M4.9 19.1L7 17M17 7l2.1-2.1"/>'),
+    toggle: MI('<rect x="2" y="7" width="20" height="10" rx="5"/><circle cx="16" cy="12" r="3"/>'),
+    palette: MI('<path d="M12 3a9 9 0 1 0 0 18c1.1 0 1.8-.8 1.8-1.7 0-1-.8-1.4-.8-2.4 0-.9.8-1.7 1.7-1.7H16a5 5 0 0 0 5-5c0-4-4-7.2-9-7.2z"/>'),
+    sync: MI('<path d="M21 12a9 9 0 0 1-15.5 6.3L3 16"/><path d="M3 12a9 9 0 0 1 15.5-6.3L21 8"/><path d="M21 3v5h-5M3 21v-5h5"/>'),
+    download: MI('<path d="M12 3v12"/><path d="M7 10l5 5 5-5"/><path d="M5 21h14"/>'),
+    plus: MI('<path d="M12 5v14M5 12h14"/>'),
+    phone: MI('<rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/>'),
+    info: MI('<circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/>'),
+    check: MI('<path d="M5 12l5 5 9-10"/>'),
+    right: MI('<path d="M9 6l6 6-6 6"/>'),
+    trash: MI('<path d="M4 7h16M10 11v6M14 11v6M6 7l1 13h10l1-13M9 7V4h6v3"/>'),
+  };
+  function menuHTML() {
+    const cur = S().theme || "auto", item = (attrs, icon, label, extra = "") => `<${attrs.startsWith("href") ? "a" : "button"} class="mitem" role="menuitem" tabindex="-1" ${attrs}>${icon}<span>${label}</span>${extra}</${attrs.startsWith("href") ? "a" : "button"}>`;
+    return `<div class="mgroup">${item('href="#/settings"', MICONS.gear, "ตั้งค่าทั้งหมด")}${item('href="#/settings/sets"', MICONS.toggle, "เปิด/ปิดชุดข้อสอบ")}
+        <div class="msub"><button class="mitem" role="menuitem" tabindex="-1" aria-haspopup="menu" aria-expanded="${DD.sub}" data-act="ddsub">${MICONS.palette}<span>ธีม</span><small>${esc(themeName(cur))}</small>${MICONS.right}</button>
+          ${DD.sub ? `<div class="mmenu subm" role="menu" aria-label="ธีม">${THEMES.map(([id, nm, c]) => `<button class="mitem" role="menuitemradio" aria-checked="${cur === id}" tabindex="-1" data-act="pickTheme" data-theme-id="${id}"><i class="sw" style="background:linear-gradient(135deg,${c[0]} 0 50%,${c[1]} 50% 100%)"></i><span>${esc(nm)}</span>${cur === id ? MICONS.check : ""}</button>`).join("")}</div>` : ""}</div></div>
+      <div class="msep" role="separator"></div>
+      <div class="mgroup">${item('href="#/settings/sync"', MICONS.sync, "ซิงก์ข้ามเครื่อง")}${item('data-act="export"', MICONS.download, "ส่งออกความคืบหน้า")}${item('href="#/add"', MICONS.plus, "เพิ่มข้อสอบ")}${item('href="#/settings/app"', MICONS.phone, "ติดตั้งแอป / ใช้ออฟไลน์")}</div>
+      <div class="msep" role="separator"></div>
+      <div class="mgroup">${item('href="#/settings/about"', MICONS.info, "เวอร์ชันและสิ่งที่เปลี่ยน", `<small>v${esc(APP.version.version)}</small>`)}</div>
+      <div class="msep" role="separator"></div>
+      <div class="mgroup">${item('href="#/settings/data"', MICONS.trash, "ลบข้อมูลในเครื่อง…")}</div>`;
+  }
+  function drawMenu() {
+    let m = document.getElementById("ddmenu");
+    if (!DD.open) { if (m) m.remove(); return; }
+    const btn = document.getElementById("ddbtn"); if (!btn) return;
+    if (!m) { m = document.createElement("div"); m.id = "ddmenu"; m.className = "mmenu"; m.setAttribute("role", "menu"); m.setAttribute("aria-label", "เมนูตั้งค่า"); document.body.append(m); }
+    m.innerHTML = menuHTML();
+    const r = btn.getBoundingClientRect();
+    m.style.top = `${Math.round(r.bottom + 6)}px`; m.style.right = `${Math.max(8, Math.round(innerWidth - r.right))}px`;
+  }
+  const menuItems = () => [...document.querySelectorAll("#ddmenu .mitem")];
+  function openMenu(focusFirst) { DD.open = true; DD.sub = false; drawMenu(); const b = $("#ddbtn"); if (b) b.setAttribute("aria-expanded", "true"); if (focusFirst) { const f = menuItems()[0]; if (f) f.focus(); } }
+  function closeMenu(refocus) { if (!DD.open) return; DD.open = false; DD.sub = false; drawMenu(); const b = $("#ddbtn"); if (b) { b.setAttribute("aria-expanded", "false"); if (refocus) b.focus(); } }
 
   /* ---------- exam mode ---------- */
   const problemsBanner = () => APP.problems.length
@@ -327,11 +376,30 @@
         <span class="meter"><span style="width:${pct}%"></span></span>
         <span class="hint">${done ? `ทำแล้ว ${done}/${ex.length} ข้อ · ถูกล่าสุด ${ok}` : "ยังไม่ได้เริ่ม"}</span></a>`;
     };
-    const groups = byYear(blocks).map(([y, bs]) => `<section class="yeargrp"><h3>${esc(yearName(y))} <span class="hint">${bs.length} บล็อก</span></h3><div class="grid">${bs.map(card).join("")}</div></section>`).join("");
+    // each year shows a preview (blocks already started first), "ดูทั้งหมด" shows the rest in place
+    const started = (b) => { const res = QZ.blockResults(b); return Object.keys(res).length > 0; };
+    const groups = byYear(blocks).map(([y, bs]) => {
+      const order = bs.filter(started).concat(bs.filter((b) => !started(b))), open = HOMEY.has(y), more = order.length > HOME_PREVIEW;
+      const nStarted = bs.filter(started).length;
+      return `<section class="yeargrp" data-y="${y}"><div class="yghead"><h3>${esc(yearName(y))}</h3><span class="hint">${bs.length} บล็อก${nStarted ? ` · เริ่มแล้ว ${nStarted}` : ""}</span>
+          ${more ? `<button class="btn ghost sm" data-act="homeyr" data-y="${y}" aria-expanded="${open}">${open ? "ย่อ ▴" : `ดูทั้งหมด ${bs.length} บล็อก ▾`}</button>` : ""}</div>
+        <div class="grid">${order.map((b, i) => card(b).replace("<a class=\"card\"", `<a class="card"${!open && i >= HOME_PREVIEW ? " hidden" : ""}`)).join("")}</div></section>`;
+    }).join("");
     main.innerHTML = `${problemsBanner()}
       <div class="head"><h2>ข้อสอบเก่า</h2><p class="hint">เลือกบล็อกเพื่อเปิด MCQ / KF / OSPE / Lecture · ความคืบหน้าเก็บในเบราว์เซอร์นี้</p></div>
-      ${resumeBox()}${reviewBox(blocks)}
+      ${quickBar(blocks)}
       ${groups || `<div class="grid"><div class="card empty"><span>ไม่มีบล็อกที่แสดงอยู่</span><a href="#/settings">เปิดการแสดงบล็อกในหน้าตั้งค่า</a></div></div>`}`;
+  }
+  // per-viewer UI memory (which years are open in the menu / on the home page); storage may be blocked → in memory only
+  const HOME_PREVIEW = 3;
+  const loadSet = (k) => { try { return new Set(JSON.parse(localStorage.getItem(k) || "[]")); } catch (e) { return new Set(); } };
+  const saveSet = (k, s) => { try { localStorage.setItem(k, JSON.stringify([...s])); } catch (e) { /* memory only */ } };
+  const HOMEY = loadSet("medlib.homeyears"), NAVY = loadSet("medlib.navyears");
+  function toggleHomeYear(y) {
+    if (HOMEY.has(y)) HOMEY.delete(y); else HOMEY.add(y); saveSet("medlib.homeyears", HOMEY);
+    const sec = $(`.yeargrp[data-y="${y}"]`); if (!sec) return; const open = HOMEY.has(y);
+    sec.querySelectorAll(".grid > a.card").forEach((c, i) => { c.hidden = !open && i >= HOME_PREVIEW; });
+    const btn = sec.querySelector('[data-act="homeyr"]'); if (btn) { btn.setAttribute("aria-expanded", String(open)); btn.textContent = open ? "ย่อ ▴" : `ดูทั้งหมด ${sec.querySelectorAll(".grid > a.card").length} บล็อก ▾`; }
   }
 
   /* ---------- block pop-up from the home grid: tabs MCQ / KF / OSPE / Lecture, then pick a cohort or a lecture ---------- */
@@ -365,19 +433,28 @@
   function openBlockModal(id) { BM.id = id; BM.tab = null; BM.back = document.activeElement; drawBlockModal(); const t = $("#bmodal .tab.on"); if (t) t.focus(); }
   function closeBlockModal() { if (!BM.id) return; BM.id = null; drawBlockModal(); if (BM.back && document.body.contains(BM.back)) BM.back.focus(); }
 
-  function resumeBox() {
-    const L = QZ.lastActive(); if (!L) return "";
-    return `<a class="resume" id="resume" href="${L.href}"><span>ทำต่อจากล่าสุด</span><b>${esc(L.title)}</b><span class="hint">ข้อ ${L.pos}/${L.n}</span><i aria-hidden="true">→</i></a>`;
-  }
-  // "ทบทวนวันนี้": one button per block with questions due; hidden when the queue is empty
-  function reviewBox(blocks) {
+  // Home shortcuts as one breadcrumb bar (shadcn Breadcrumb look):
+  //   ▶ ทำต่อจากล่าสุด   Gastrointestinal › ชุด 52 MCQ › ข้อ 1/95
+  //   ↻ ทบทวนวันนี้       Endocrine 32 · Cardiovascular 1 · …
+  const ICO = {
+    play: '<svg class="ic" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M10 8.5l5 3.5-5 3.5z" fill="currentColor"/></svg>',
+    redo: '<svg class="ic" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5"/></svg>',
+  };
+  const SEP = `<li class="sep" role="presentation" aria-hidden="true">›</li>`;
+  function quickBar(blocks) {
+    const L = QZ.lastActive();
     const rc = blocks.map((b) => [b, QZ.reviewCounts(b)]).filter(([, c]) => c.queued);
-    if (!rc.length) return "";
-    const due = rc.filter(([, c]) => c.due), queued = rc.reduce((a, [, c]) => a + c.queued, 0);
-    return `<div class="reviewbox" id="review"><b>ทบทวนวันนี้</b>
-      ${due.length ? `<div class="btns">${due.map(([b, c]) => `<button class="btn primary" data-z="review" data-b="${esc(b.id)}">${esc(b.name)} · ${c.due} ข้อ</button>`).join("")}</div>`
-        : `<span class="hint">ยังไม่มีข้อครบกำหนดวันนี้ · ในคิว ${queued} ข้อ</span>`}
-      <span class="hint">ข้อที่ตอบผิดหรือปักธงจะกลับมาใน 1 → 3 → 7 วัน ตอบถูกครบ 3 ครั้งออกจากคิว</span></div>`;
+    if (!L && !rc.length) return "";
+    let h = `<nav class="quick" aria-label="ทางลัด">`;
+    if (L) h += `<div class="qline" id="resumebar"><span class="qlbl">${ICO.play}ทำต่อจากล่าสุด</span>
+      <ol class="crumb"><li><a href="#/b/${enc(L.b.id)}">${esc(L.b.name)}</a></li>${SEP}<li><a href="${L.setHref}">${esc(L.setLabel)}</a></li>${SEP}<li><a class="cur" id="resume" href="${L.href}">ข้อ ${L.pos}/${L.n} →</a></li></ol></div>`;
+    if (rc.length) {
+      const due = rc.filter(([, c]) => c.due), queued = rc.reduce((a, [, c]) => a + c.queued, 0);
+      h += `<div class="qline" id="review"><span class="qlbl" title="ข้อที่ตอบผิดหรือปักธงจะกลับมาใน 1 → 3 → 7 วัน ตอบถูกครบ 3 ครั้งออกจากคิว">${ICO.redo}ทบทวนวันนี้</span>
+        ${due.length ? `<ol class="crumb dots">${due.map(([b, c], i) => `${i ? `<li class="sep" role="presentation" aria-hidden="true">·</li>` : ""}<li><button class="linkish" data-z="review" data-b="${esc(b.id)}">${esc(b.name)} <b class="cnt">${c.due}</b></button></li>`).join("")}</ol>`
+          : `<span class="hint">ยังไม่มีข้อครบกำหนดวันนี้ · ในคิว ${queued} ข้อ</span>`}</div>`;
+    }
+    return h + `</nav>`;
   }
 
   function notFound(msg) { main.innerHTML = `<div class="note"><h3>${esc(msg)}</h3><a href="#/">กลับหน้าแรก</a></div>`; }
@@ -923,11 +1000,11 @@
     const opt = (v, cur, label) => `<option value="${esc(v)}" ${String(cur) === String(v) ? "selected" : ""}>${esc(label)}</option>`;
     const lbl = { lec: "Lecture", exam: "ข้อสอบ", plan: "แผนอ่าน", true: "แสดง", false: "ซ่อน", normal: "ปกติ", large: "ใหญ่", xl: "ใหญ่มาก", xxl: "ใหญ่สุด", auto: "ตามเครื่อง", light: "สว่าง", dark: "มืด" };
     const pdfCount = await idbCount().catch(() => 0);
-    const blocksRows = enabledBlocks().map((b) => {
-      const hidden = s.hiddenBlocks.includes(b.id);
-      return `<div class="setrow"><label for="hide-${esc(b.id)}">แสดงบล็อก ${esc(b.name)}<small>ค่ากลาง: ${d.hiddenBlocks.includes(b.id) ? "ซ่อน" : "แสดง"}</small></label>
-        <select id="hide-${esc(b.id)}" data-hide="${esc(b.id)}">${opt("show", hidden ? "hide" : "show", "แสดง")}${opt("hide", hidden ? "hide" : "show", "ซ่อน")}</select></div>`;
-    }).join("");
+    // on/off rows use the same switch as the set toggles (shadcn Switch look)
+    const tog = (id, attrs, on, title, sub) => `<div class="setrow"><label for="${id}">${title}<small>${sub}</small></label>
+      <label class="switch solo"><input type="checkbox" role="switch" id="${id}" ${attrs} ${on ? "checked" : ""}><i aria-hidden="true"></i></label></div>`;
+    const blocksRows = byYear(enabledBlocks()).map(([y, bs]) => `<div class="setrow sub"><b>${esc(yearName(y))}</b><span class="hint">${bs.filter((b) => !s.hiddenBlocks.includes(b.id)).length}/${bs.length} บล็อกที่แสดง</span></div>`
+      + bs.map((b) => tog(`hide-${esc(b.id)}`, `data-hide="${esc(b.id)}"`, !s.hiddenBlocks.includes(b.id), `แสดงบล็อก ${esc(b.name)}`, `ค่ากลาง: ${d.hiddenBlocks.includes(b.id) ? "ซ่อน" : "แสดง"}`)).join("")).join("");
     const TYPES = ["MCQ", "KF", "OSPE"];
     const setsRows = enabledBlocks().filter((b) => b.sets.length).map((b) => {
       const on = onSets(b).length;
@@ -945,11 +1022,11 @@
       <div class="settings">
         <div class="setrow col"><label>ธีม${own("theme")}<small>ค่ากลาง: ${themeName(d.theme || "auto")} · ตอนนี้: ${themeName(s.theme || "auto")}</small></label>
           <div class="swatches" role="radiogroup" aria-label="ธีม">${THEMES.map(([id, nm, c]) => `<button type="button" class="sw ${(s.theme || "auto") === id ? "on" : ""}" role="radio" aria-checked="${(s.theme || "auto") === id}" data-act="pickTheme" data-theme-id="${id}"><i style="background:linear-gradient(135deg,${c[0]} 0 50%,${c[1]} 50% 100%)"></i><span>${esc(nm)}</span></button>`).join("")}</div></div>
-        <div class="setrow"><label for="s-draft">แสดงข้อสอบที่เฉลยยังไม่ยืนยัน${own("showDrafts")}<small>ค่ากลาง: ${lbl[d.showDrafts]}</small></label><select id="s-draft" data-set="showDrafts" data-bool="1">${opt(true, s.showDrafts, "แสดง")}${opt(false, s.showDrafts, "ซ่อน")}</select></div>
+        ${tog("s-draft", 'data-set="showDrafts" data-bool="1"', s.showDrafts, `แสดงข้อสอบที่เฉลยยังไม่ยืนยัน${own("showDrafts")}`, `ค่ากลาง: ${lbl[d.showDrafts]}`)}
         <div class="setrow"><label for="s-font">ขนาดตัวอักษรโจทย์${own("fontSize")}<small>ค่ากลาง: ${lbl[d.fontSize]}</small></label><select id="s-font" data-set="fontSize">${FONT_LV.map((k) => opt(k, s.fontSize, FONT_TH[k])).join("")}</select></div>
-        <div class="setrow"><label for="s-sample">แสดงบล็อกตัวอย่าง (DEMO)${own("showSample")}<small>ค่ากลาง: ${lbl[d.showSample]}</small></label><select id="s-sample" data-set="showSample" data-bool="1">${opt(true, s.showSample, "แสดง")}${opt(false, s.showSample, "ซ่อน")}</select></div>
-        ${blocksRows}
+        ${tog("s-sample", 'data-set="showSample" data-bool="1"', s.showSample, `แสดงบล็อกตัวอย่าง (DEMO)${own("showSample")}`, `ค่ากลาง: ${lbl[d.showSample]}`)}
       </div>
+      <div class="section" id="blocks"><h3>บล็อกที่แสดง${own("hiddenBlocks")}</h3><div class="settings">${blocksRows}</div></div>
       <div class="btns"><button class="btn danger" data-act="reset">รีเซ็ตการตั้งค่ากลับค่ากลาง</button><span class="hint">ปรับเป็นค่าส่วนตัวไว้ ${Object.keys(mine).length} เรื่อง</span></div>
 
       ${setsRows ? `<div class="section" id="sets"><h3>เปิด/ปิดชุดข้อสอบ${own("hiddenSets")}</h3>
@@ -957,7 +1034,7 @@
         ${setsRows}</div>` : ""}
 
       ${syncHTML()}
-      <div class="section"><h3>ย้ายข้อมูลไปเครื่องอื่น / สำรองข้อมูล</h3>
+      <div class="section" id="data"><h3>ย้ายข้อมูลไปเครื่องอื่น / สำรองข้อมูล</h3>
         <p class="hint">ในเครื่องนี้มี: ${nRounds} รอบที่ทำข้อสอบ · ปักธง ${Object.keys(PROG.marks.flag).length} ข้อ · โน้ต ${Object.keys(PROG.marks.notes).length} ข้อ · เฉลยของฉัน ${Object.keys(PROG.marks.keyOverride).length} ข้อ · อ่าน lecture ${Object.keys(PROG.read).length} บท · ข้อสอบที่เพิ่มเอง ${USER.questions.length} ข้อ</p>
         <p class="hint">ส่งออกเป็นไฟล์ แล้วนำเข้าที่อีกเครื่อง (มือถือ ↔ คอม) ข้อมูลจะรวมกันรายข้อ ไม่ทับของเดิม</p>
         <div class="btns">
@@ -982,11 +1059,10 @@
         <p>MedLib <b class="mono">v${esc(v.version)}</b> · ${esc(fmtDate(v.date))}</p>
         <div class="log">${(v.history || []).map((h) => `<div><strong class="mono">v${esc(h.version)}</strong> <span class="hint">· ${esc(fmtDate(h.date))}${h.title ? " · " + esc(h.title) : ""}</span><ul>${(h.changes || []).map((c) => `<li>${esc(c)}</li>`).join("")}</ul></div>`).join("")}</div></div>`;
     toastMsg = null;
-    if (section === "about") $("#about").scrollIntoView({ block: "start" });
     if (section && section.startsWith("sets") && $("#sets")) {   // #/settings/sets or #/settings/sets-END (opens that block)
       const d = $(`#sets details[data-blk="${CSS.escape(section.slice(5))}"]`); if (d) d.open = true;
       (d || $("#sets")).scrollIntoView({ block: "start" });
-    }
+    } else if (section && /^[a-z]+$/.test(section) && document.getElementById(section)) document.getElementById(section).scrollIntoView({ block: "start" });   // about, sync, app, data, blocks
   }
 
   function setCounts(b) {
@@ -1109,6 +1185,7 @@
   window.addEventListener("hashchange", () => {
     const h = location.hash, prev = lastHash; lastHash = h;
     if (BM.id) { BM.id = null; drawBlockModal(); }   // picked a set / lecture in the pop-up → the page opens, the pop-up goes
+    if (DD.open) { DD.open = false; DD.sub = false; drawMenu(); }
     route();
     if (h.startsWith("#/pdf") || h.startsWith("#/lec/") || h.startsWith("#/settings/about")) return;
     const runOf = (x) => (/^#\/set\/[^/]+\/[^/]+\/(run|rev)\//.test(x) ? x.replace(/\/\d+$/, "") : "");   // same round, other question → no jump to top
@@ -1116,14 +1193,30 @@
     else { const c = $(".qcard"); if (c && c.getBoundingClientRect().top < 0) c.scrollIntoView({ block: "start" }); }
   });
   window.addEventListener("pagehide", () => saveProg());
+  window.addEventListener("resize", () => { if (DD.open) drawMenu(); });
 
   /* ---------- events ---------- */
   document.addEventListener("click", async (ev) => {
+    if (DD.open && !ev.target.closest("#ddmenu, #ddbtn")) closeMenu(false);   // click outside closes the menu
+    {
+      const d = ev.target.closest("#ddbtn, #ddmenu [data-act]");
+      if (d && d.id === "ddbtn") { if (DD.open) closeMenu(false); else openMenu(ev.detail === 0); return; }   // keyboard click (detail 0) → focus first item
+      if (d && d.dataset.act === "ddsub") { DD.sub = !DD.sub; drawMenu(); const f = DD.sub ? $("#ddmenu .subm .mitem") : $('#ddmenu [data-act="ddsub"]'); if (f) f.focus(); return; }
+      if (d && d.dataset.act === "export") { closeMenu(true); toast(await exportUser()); return; }
+      if (d && d.dataset.act === "pickTheme") { DD.open = false; DD.sub = false; drawMenu(); }   // falls through to the normal theme handler below
+    }
     const bm = ev.target.closest("a[data-bmodal]");   // home grid: open the block pop-up (ctrl/⌘/middle click still opens the page)
     if (bm && !ev.ctrlKey && !ev.metaKey && !ev.shiftKey && ev.button === 0) { ev.preventDefault(); openBlockModal(bm.dataset.bmodal); return; }
     if (ev.target.closest("[data-bmclose]")) { closeBlockModal(); return; }
     const t = ev.target.closest("button, img[data-zoom]"); if (!t) return;
     if (t.dataset.act === "bmclose") { closeBlockModal(); return; }
+    if (t.dataset.act === "navyr") {   // open/close one year in the menu, in place (no redraw)
+      const y = Number(t.dataset.y), open = t.getAttribute("aria-expanded") !== "true";
+      if (open) NAVY.add(y); else NAVY.delete(y); saveSet("medlib.navyears", NAVY);
+      t.setAttribute("aria-expanded", String(open)); const l = document.getElementById("yr-" + y); if (l) l.hidden = !open;
+      return;
+    }
+    if (t.dataset.act === "homeyr") { toggleHomeYear(Number(t.dataset.y)); return; }
     if (t.dataset.act === "bmtab") { BM.tab = t.dataset.t; drawBlockModal(); const x = $(`#bmodal [data-t="${t.dataset.t}"]`); if (x) x.focus(); return; }
     if (await QZ.onClick(t)) return;
     if (t.dataset.pg) { if (location.hash.startsWith("#/lec/")) return RD.goto(Math.max(1, (RD.cur || 1) + Number(t.dataset.pg))); return pdfGo(Number(t.dataset.pg)); }
@@ -1211,7 +1304,7 @@
     const t = ev.target;
     if (QZ.onChange(t)) return;
     if (t.dataset.set) {
-      const k = t.dataset.set; let v = t.value; if (t.dataset.bool) v = v === "true";
+      const k = t.dataset.set; let v = t.type === "checkbox" ? t.checked : t.value; if (t.dataset.bool && t.type !== "checkbox") v = v === "true";
       if (v === APP.defaults.settings[k]) delete USER.settings[k]; else USER.settings[k] = v;
       saveUser(); applyTheme(); return route();
     }
@@ -1221,7 +1314,7 @@
       return;
     }
     if (t.dataset.hide) {
-      const id = t.dataset.hide; const h = S().hiddenBlocks.filter((x) => x !== id); if (t.value === "hide") h.push(id);
+      const id = t.dataset.hide; const h = S().hiddenBlocks.filter((x) => x !== id); if (t.type === "checkbox" ? !t.checked : t.value === "hide") h.push(id);
       const same = JSON.stringify([...h].sort()) === JSON.stringify([...APP.defaults.settings.hiddenBlocks].sort());
       if (same) delete USER.settings.hiddenBlocks; else USER.settings.hiddenBlocks = h;
       saveUser(); return route();
@@ -1249,6 +1342,19 @@
     }
   });
   document.addEventListener("keydown", (ev) => {
+    if (DD.open && ev.target.closest && ev.target.closest("#ddmenu, #ddbtn")) {   // menu keys: ↑ ↓ move, → ← open/close the theme list, Esc / Tab close
+      const items = menuItems().filter((x) => !x.closest(".subm") || DD.sub), i = items.indexOf(document.activeElement);
+      if (ev.key === "ArrowDown" || ev.key === "ArrowUp") {
+        ev.preventDefault(); const n = items.length; if (!n) return;
+        const j = ev.key === "ArrowDown" ? (i + 1) % n : i <= 0 ? n - 1 : i - 1; items[j].focus(); return;
+      }
+      if (ev.key === "ArrowRight" && document.activeElement && document.activeElement.dataset.act === "ddsub" && !DD.sub) { ev.preventDefault(); document.activeElement.click(); return; }
+      if ((ev.key === "ArrowLeft" || ev.key === "Escape") && DD.sub) { ev.preventDefault(); DD.sub = false; drawMenu(); const f = $('#ddmenu [data-act="ddsub"]'); if (f) f.focus(); return; }
+      if (ev.key === "Escape") { ev.preventDefault(); closeMenu(true); return; }
+      if (ev.key === "Tab") { closeMenu(false); return; }
+      if (ev.key === "Home" || ev.key === "End") { ev.preventDefault(); const f = ev.key === "Home" ? items[0] : items[items.length - 1]; if (f) f.focus(); return; }
+    }
+    if (ev.key === "ArrowDown" && ev.target.id === "ddbtn" && !DD.open) { ev.preventDefault(); openMenu(true); return; }
     if (ev.key === "Escape" && BM.id) { closeBlockModal(); return; }
     if (ev.key === "Escape" && CT.open) { CT.open = false; drawContact(); const f = $(".cfab"); if (f) f.focus(); return; }
     if (ev.key === "Escape") { const z = $("img.zoom"); if (z) { z.classList.remove("zoom"); z.style.transform = ""; return; } if (POP.open) { history.back(); return; } }

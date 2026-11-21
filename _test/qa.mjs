@@ -156,9 +156,9 @@ ok((await ev("JSON.parse(localStorage.getItem('medlib.user.v1')).settings.fontSi
 await click('[data-act="reset"]'); await sleep(100); await click('[data-act="reset"]'); await sleep(200);
 ok((await ev("Object.keys(JSON.parse(localStorage.getItem('medlib.user.v1')).settings).length")) === 0, "reset (two clicks) returns to defaults");
 const navBefore = await ev("document.querySelectorAll('#side a.nav').length");
-await setVal("#s-sample", "false");
+await click("#s-sample"); await sleep(200);
 ok((await ev("document.querySelectorAll('#side a.nav').length")) === navBefore - 1, "hiding sample removes DEMO from menu");
-await setVal("#s-sample", "true");
+await click("#s-sample"); await sleep(200);
 const imported = await ev(`(async () => {
   const before = window.__medlib.PROG.rounds['DEMO/52_MCQ'].length;
   const other = { format: 'medlib-personal', schema: 2, settings: {}, questions: [], progress: { rounds: { 'DEMO/52_MCQ': [{ id: 'fromphone', kind: 'full', mode: 'practice', qids: ['DEMO-52-MCQ-005'], ans: { 'DEMO-52-MCQ-005': 'B' }, chk: { 'DEMO-52-MCQ-005': true }, ov: {}, started: 5, elapsed: 0, done: true }] }, marks: { flag: { 'CVS-52-MCQ-001': true } } } };

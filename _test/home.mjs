@@ -26,7 +26,7 @@ for (const [label, opts] of [["desktop", { viewport: { width: 1200, height: 900 
   await p.waitForSelector(".yeargrp");
 
   await t(`${label}: blocks grouped by year, in year order, every block once`, async () => {
-    const heads = await p.$$eval(".yeargrp > h3", (h) => h.map((x) => x.firstChild.textContent.trim()));
+    const heads = await p.$$eval(".yeargrp .yghead h3", (h) => h.map((x) => x.textContent.trim()));
     assert.ok(heads.length >= 2 && heads.every((h) => /^ปี \d$|^อื่น ๆ$/.test(h)), heads.join("|"));
     const ys = heads.filter((h) => h.startsWith("ปี")).map((h) => Number(h.slice(3)));
     assert.deepStrictEqual(ys, [...ys].sort((a, b) => a - b));
@@ -57,6 +57,66 @@ for (const [label, opts] of [["desktop", { viewport: { width: 1200, height: 900 
     assert.ok(!(await p.evaluate(() => document.body.classList.contains("modal-open"))), "page scroll unlocked");
   });
   await t(`${label}: no page errors`, async () => { assert.deepStrictEqual(errors, []); });
+  await ctx.close();
+}
+{
+  const ctx = await browser.newContext({ viewport: { width: 1200, height: 900 }, serviceWorkers: "block" });
+  const p = await ctx.newPage(); p.setDefaultTimeout(10000);
+  const errors = []; p.on("pageerror", (e) => errors.push(e.message));
+  await p.goto(BASE + "#/");
+  await p.waitForFunction(() => window.__medlib && window.__medlib.APP.blocks.length > 0);
+  await p.waitForSelector(".yeargrp");
+  const visible = (sel) => p.$$eval(sel, (x) => x.filter((e) => e.offsetParent !== null).length);
+
+  await t("menu: years start folded on home, a year opens and closes in place", async () => {
+    assert.strictEqual(await visible("#side .yrlist a.nav"), 0);
+    await p.click('#side [data-act="navyr"][data-y="2"]');
+    assert.ok(await visible("#side #yr-2 a.nav") >= 5);
+    assert.strictEqual(await p.getAttribute('#side [data-y="2"]', "aria-expanded"), "true");
+    await p.click('#side [data-act="navyr"][data-y="2"]');
+    assert.strictEqual(await visible("#side #yr-2 a.nav"), 0);
+  });
+  await t("menu: the year of the open block is unfolded", async () => {
+    await p.evaluate(() => { location.hash = "#/b/NERV"; }); await sleep(200);
+    assert.ok(await visible('#side a.nav.on') === 1);
+    await p.evaluate(() => { location.hash = "#/"; }); await sleep(200);
+  });
+  await t("home: each year previews 3 blocks, ดูทั้งหมด shows the rest", async () => {
+    const y2 = '.yeargrp[data-y="2"]';
+    assert.strictEqual(await visible(`${y2} a.card`), 3);
+    await p.click(`${y2} [data-act="homeyr"]`);
+    assert.ok(await visible(`${y2} a.card`) > 3);
+    await p.click(`${y2} [data-act="homeyr"]`);
+    assert.strictEqual(await visible(`${y2} a.card`), 3);
+  });
+  await t("toolbar: button groups + settings menu (keyboard, theme sub-menu, Escape)", async () => {
+    assert.strictEqual((await p.$$("#tools .bgroup")).length, 3);
+    await p.focus("#ddbtn"); await p.keyboard.press("ArrowDown");
+    await p.waitForSelector("#ddmenu");
+    assert.strictEqual(await p.evaluate(() => document.activeElement.textContent.trim()), "ตั้งค่าทั้งหมด");
+    await p.keyboard.press("ArrowDown"); await p.keyboard.press("ArrowDown");
+    assert.match(await p.evaluate(() => document.activeElement.textContent), /ธีม/);
+    await p.keyboard.press("ArrowRight");
+    assert.ok(await p.$("#ddmenu .subm"));
+    await p.click('#ddmenu .subm [data-theme-id="dark"]'); await sleep(150);
+    assert.strictEqual(await p.evaluate(() => document.documentElement.dataset.theme), "dark");
+    assert.strictEqual(await p.$("#ddmenu"), null, "picking closes the menu");
+    await p.click("#ddbtn"); await p.waitForSelector("#ddmenu");
+    await p.keyboard.press("Escape"); assert.strictEqual(await p.$("#ddmenu"), null);
+    await p.click("#ddbtn"); await p.click('#ddmenu a[href="#/settings/sync"]'); await sleep(200);
+    assert.strictEqual(await p.evaluate(() => location.hash), "#/settings/sync");
+    assert.strictEqual(await p.$("#ddmenu"), null);
+  });
+  await t("settings: show/hide rows are switches; hiding a block takes it off the menu", async () => {
+    assert.strictEqual(await p.getAttribute("#s-draft", "role"), "switch");
+    assert.strictEqual(await p.$("select#s-sample"), null);
+    const before = (await p.$$("#side a.nav")).length;
+    await p.click('label.switch:has(#hide-GI)'); await sleep(200);
+    assert.strictEqual((await p.$$("#side a.nav")).length, before - 1);
+    await p.click('label.switch:has(#hide-GI)'); await sleep(200);
+    assert.strictEqual((await p.$$("#side a.nav")).length, before);
+  });
+  await t("no page errors (menu/settings)", async () => { assert.deepStrictEqual(errors, []); });
   await ctx.close();
 }
 console.log(`${pass} ผ่าน`);
