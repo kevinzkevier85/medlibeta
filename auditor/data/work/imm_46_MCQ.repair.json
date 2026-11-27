@@ -21,7 +21,15 @@
     "D": "peptidoglycan = PAMP (TLR2)",
     "E": "LPS = PAMP (TLR4)"
    },
-   "key_concept": "• opsonin: IgG (FcγR), C3b (CR1)\n• PRR รู้จัก PAMP โดยตรง\n• ADCC ใช้ FcR"
+   "key_concept": "• opsonin: IgG (FcγR), C3b (CR1)\n• PRR รู้จัก PAMP โดยตรง\n• ADCC ใช้ FcR",
+   "mechanism": [
+    "แบคทีเรียถูกเคลือบด้วย antibody",
+    "Fc ของ antibody จับ Fc receptor บน macrophage",
+    {
+     "s": "ทำให้ phagocytosis เกิดขึ้น (opsonization)",
+     "answer": true
+    }
+   ]
   },
   "3": {
    "explanation": "IL-4 กระตุ้น class switch เป็น IgE/IgG4",
@@ -74,7 +82,15 @@
     "D": "dendritic cell นำเสนอ antigen ให้ T cell ไม่ได้ให้สัญญาณ CD40L แก่ B cell โดยตรง",
     "E": "macrophage ไม่ใช่"
    },
-   "key_concept": "• Tfh/Th ช่วย class switch\n• CD40L–CD40\n• hyper IgM: CD40L defect"
+   "key_concept": "• Tfh/Th ช่วย class switch\n• CD40L–CD40\n• hyper IgM: CD40L defect",
+   "mechanism": [
+    "B cell จับ antigen และได้ signal จาก Th",
+    "CD40L กระตุ้น B cell",
+    {
+     "s": "Th ช่วยให้เกิด isotype switching",
+     "answer": true
+    }
+   ]
   },
   "6": {
    "explanation": "ถ้า costimulation ไม่เกิด T cell จะเป็น anergy",
@@ -137,7 +153,15 @@
     "D": "Th17 ไม่ใช่",
     "E": "Treg ไม่ใช่"
    },
-   "key_concept": "• intracellular bacteria: Th1/IFN-γ\n• Listeria: GP rod, tumbling motility\n• L. monocytogenes escape phagosome"
+   "key_concept": "• intracellular bacteria: Th1/IFN-γ\n• Listeria: GP rod, tumbling motility\n• L. monocytogenes escape phagosome",
+   "mechanism": [
+    "Listeria อยู่ในเซลล์ intracellular",
+    "macrophage ต้องถูกกระตุ้นด้วย IFN-γ",
+    {
+     "s": "Th1 ช่วยกำจัด Listeria",
+     "answer": true
+    }
+   ]
   },
   "11": {
    "explanation": "Dendritic cell เป็น professional APC หลักที่รู้จัก antigen และ present ให้ T cell",
@@ -156,7 +180,15 @@
     "D": "macrophage ไม่ใช่",
     "E": "neutrophil ไม่ใช่"
    },
-   "key_concept": "• meningococcemia: LOS → cytokine storm\n• terminal complement defect → recurrent Neisseria\n• Waterhouse-Friderichsen"
+   "key_concept": "• meningococcemia: LOS → cytokine storm\n• terminal complement defect → recurrent Neisseria\n• Waterhouse-Friderichsen",
+   "mechanism": [
+    "N. meningitidis ปล่อย LPS",
+    "complement ถูกกระตุ้นมาก",
+    {
+     "s": "เกิด complement activation ทำให้เกิด sepsis",
+     "answer": true
+    }
+   ]
   },
   "13": {
    "explanation": "3 วันแรกของ rhinovirus เพิ่มขึ้น IFN type I",
@@ -199,7 +231,15 @@
     "D": "macrophage ไม่ใช่",
     "E": "antibody จัดการไวรัสนอกเซลล์"
    },
-   "key_concept": "• latent HSV ใน neuron (trigeminal)\n• CMI คุม reactivation\n• acyclovir"
+   "key_concept": "• latent HSV ใน neuron (trigeminal)\n• CMI คุม reactivation\n• acyclovir",
+   "mechanism": [
+    "HSV แฝงในปมประสาท",
+    "ไม่มี antigen ให้ Ab จับ",
+    {
+     "s": "cytotoxic T cell (Tc) ฆ่าเซลล์ที่ติดเชื้อ",
+     "answer": true
+    }
+   ]
   },
   "16": {
    "explanation": "Neutrophil สำคัญต่อ Aspergillus (hyphae ใหญ่)",
@@ -210,7 +250,15 @@
     "D": "✓ neutrophil ฆ่า hyphae",
     "E": "eosinophil ไม่ใช่"
    },
-   "key_concept": "• Aspergillus: neutrophil (ROS, NET)\n• neutropenia/CGD เสี่ยง\n• voriconazole"
+   "key_concept": "• Aspergillus: neutrophil (ROS, NET)\n• neutropenia/CGD เสี่ยง\n• voriconazole",
+   "mechanism": [
+    "Aspergillus เป็น hyphae ขนาดใหญ่",
+    "neutrophil ผูกและหลั่ง enzyme/ROS",
+    {
+     "s": "neutrophil สำคัญต่อการกำจัด Aspergillus",
+     "answer": true
+    }
+   ]
   },
   "17": {
    "explanation": "กลไกกำจัดเชื้อรา hyphae: degranulation (neutrophil ปล่อย ROS/enzymes)",
@@ -221,7 +269,15 @@
     "D": "✓ degranulation ของ neutrophil/eosinophil",
     "E": "phagocytosis กลืน hyphae ใหญ่ไม่ได้"
    },
-   "key_concept": "• hyphae ใหญ่เกิน phagocytose → extracellular killing\n• degranulation + ROS + NET\n• yeast = phagocytose"
+   "key_concept": "• hyphae ใหญ่เกิน phagocytose → extracellular killing\n• degranulation + ROS + NET\n• yeast = phagocytose",
+   "mechanism": [
+    "hyphae ใหญ่เกินกลืน",
+    "neutrophil หลั่ง granule ใส่เชื้อ",
+    {
+     "s": "degranulation ปล่อย enzyme ทำลาย hyphae",
+     "answer": true
+    }
+   ]
   },
   "18": {
    "explanation": "Acute leukemia + chemotherapy → neutropenia/immunosuppression ทำให้ติด Aspergillus",
@@ -243,7 +299,15 @@
     "D": "helper T cell ช่วยสั่งการ แต่ตัวฆ่า hepatocyte ที่ติดเชื้อคือ cytotoxic T cell",
     "E": "macrophage ไม่ใช่"
    },
-   "key_concept": "• liver stage: CD8 + IFN-γ\n• blood stage: antibody\n• intracellular → CTL"
+   "key_concept": "• liver stage: CD8 + IFN-γ\n• blood stage: antibody\n• intracellular → CTL",
+   "mechanism": [
+    "P. falciparum ในระยะตับ",
+    "เซลล์ตับที่ติดเชื้อถูกแสดงบน MHC I",
+    {
+     "s": "Tc ฆ่าเซลล์ตับที่ติดเชื้อ",
+     "answer": true
+    }
+   ]
   },
   "20": {
    "explanation": "Antibody ต้าน P. vivax บล็อก merozoite attachment/invasion",
@@ -254,7 +318,15 @@
     "D": "✓ block attachment ต่อ RBC",
     "E": "macrophage activation ใช้ IFN-γ"
    },
-   "key_concept": "• antibody ต่อ merozoite: บล็อก invasion\n• P. vivax จับ Duffy antigen\n• CTL ใช้ liver stage"
+   "key_concept": "• antibody ต่อ merozoite: บล็อก invasion\n• P. vivax จับ Duffy antigen\n• CTL ใช้ liver stage",
+   "mechanism": [
+    "antibody จับ merozoite",
+    "ขัดขวางการเกาะ (attachment) ของ protozoa เข้าเซลล์",
+    {
+     "s": "ป้องกันการเข้าสู่ RBC",
+     "answer": true
+    }
+   ]
   },
   "21": {
    "explanation": "Angioedema หลังกินกุ้ง = type I; mast cell",
@@ -331,7 +403,15 @@
     "D": "innate ผิดปกติ",
     "E": "✓ B cell ผิดปกติ"
    },
-   "key_concept": "• antibody deficiency: sinopulmonary encapsulated\n• XLA: BTK\n• IVIG"
+   "key_concept": "• antibody deficiency: sinopulmonary encapsulated\n• XLA: BTK\n• IVIG",
+   "mechanism": [
+    "เด็กมี pneumonia และ tonsillitis ซ้ำ",
+    "immunoglobulin ต่ำ",
+    {
+     "s": "B cell ทำงานผิดปกติ (agammaglobulinemia)",
+     "answer": true
+    }
+   ]
   },
   "28": {
    "explanation": "S. aureus + Candida + WBC สูง Ig ปกติ = phagocytosis defect",
@@ -692,7 +772,15 @@
     "D": "capsid ปกป้อง genome",
     "E": "✓ envelope glycoprotein จับ receptor"
    },
-   "key_concept": "• enveloped virus: glycoprotein\n• naked virus: capsid protein\n• entry: attachment → fusion/endocytosis"
+   "key_concept": "• enveloped virus: glycoprotein\n• naked virus: capsid protein\n• entry: attachment → fusion/endocytosis",
+   "mechanism": [
+    "ไวรัสต้องเกาะกับ receptor ของโฮสต์ก่อนเข้าเซลล์",
+    "envelope protein จับ receptor",
+    {
+     "s": "envelope สำคัญที่สุดในการเข้าสู่เซลล์ของโฮสต์",
+     "answer": true
+    }
+   ]
   },
   "59": {
    "explanation": "Prion เป็นโปรตีนติดเชื้อ",
@@ -780,7 +868,15 @@
     "D": "✓ concomitant immunity (schisto/malaria)",
     "E": "latent ไม่ใช่"
    },
-   "key_concept": "• concomitant: ปรสิตเดิมอยู่ แต่ต้านการติดซ้ำ\n• sterile immunity = กำจัดเชื้อ\n• premunition (malaria)"
+   "key_concept": "• concomitant: ปรสิตเดิมอยู่ แต่ต้านการติดซ้ำ\n• sterile immunity = กำจัดเชื้อ\n• premunition (malaria)",
+   "mechanism": [
+    "พยาธิกระตุ้นภูมิคุ้มกัน",
+    "ภูมิคุ้มกันพร้อมกันเกิดขึ้นขณะติดเชื้ออยู่",
+    {
+     "s": "ป้องกันการติดเชื้อซ้ำ (concomitant immunity)",
+     "answer": true
+    }
+   ]
   },
   "67": {
    "explanation": "Cysticercosis จากกินไข่ T. solium",
@@ -857,7 +953,16 @@
     "D": "clindamycin: C. diff colitis",
     "E": "tetracycline: ฟัน, hepatotoxic"
    },
-   "key_concept": "• aminoglycoside: oto/nephro\n• clindamycin: pseudomembranous\n• tetracycline: teeth"
+   "key_concept": "• aminoglycoside: oto/nephro\n• clindamycin: pseudomembranous\n• tetracycline: teeth",
+   "mechanism": [
+    "amikacin เป็น aminoglycoside",
+    "ถูกดูดซึมเข้า proximal tubule cells",
+    "ยาสะสมในเซลล์ท่อไต",
+    {
+     "s": "เกิด nephrotoxicity",
+     "answer": true
+    }
+   ]
   },
   "76": {
    "explanation": "Clindamycin เป็นสาเหตุ pseudomembranous colitis บ่อยสุด",
@@ -868,7 +973,16 @@
     "D": "clindamycin (ซ้ำตัวเลือก)",
     "E": "tetracycline ไม่ใช่"
    },
-   "key_concept": "• C. difficile: clindamycin, cephalosporin, FQ\n• metronidazole/vancomycin/fidaxomicin\n• toxin A/B"
+   "key_concept": "• C. difficile: clindamycin, cephalosporin, FQ\n• metronidazole/vancomycin/fidaxomicin\n• toxin A/B",
+   "mechanism": [
+    "clindamycin ยับยั้งแบคทีเรียกลุ่ม normal flora",
+    "flora ลดลง",
+    {
+     "s": "C. difficile เจริญและสร้าง toxin",
+     "answer": true
+    },
+    "เกิด pseudomembranous colitis"
+   ]
   },
   "79": {
    "explanation": "β-lactam PK/PD = time-dependent killing",
@@ -890,7 +1004,15 @@
     "D": "folate ไม่ใช่",
     "E": "✓ DNA gyrase + topo IV"
    },
-   "key_concept": "• FQ: gyrase/topo IV\n• ผลข้างเคียง: tendon\n• ห้ามเด็ก/ตั้งครรภ์"
+   "key_concept": "• FQ: gyrase/topo IV\n• ผลข้างเคียง: tendon\n• ห้ามเด็ก/ตั้งครรภ์",
+   "mechanism": [
+    "fluoroquinolone เข้าสู่แบคทีเรีย",
+    "จับ DNA gyrase/topoisomerase IV",
+    {
+     "s": "ยับยั้งการคลาย DNA เพื่อให้ replication หยุด",
+     "answer": true
+    }
+   ]
   },
   "81": {
    "explanation": "H. influenzae ดื้อ penicillin จาก β-lactamase (enzymatic inactivation)",
@@ -901,7 +1023,15 @@
     "D": "✓ enzymatic inactivation (β-lactamase)",
     "E": "sequestration"
    },
-   "key_concept": "• H. influenzae: β-lactamase\n• S. pneumoniae: PBP alteration\n• amox-clav"
+   "key_concept": "• H. influenzae: β-lactamase\n• S. pneumoniae: PBP alteration\n• amox-clav",
+   "mechanism": [
+    "H. influenzae สร้าง β-lactamase",
+    "เอนไซม์ไฮโดรไลซ์วง β-lactam",
+    {
+     "s": "penicillin ถูกทำลาย (enzymatic inactivation)",
+     "answer": true
+    }
+   ]
   },
   "82": {
    "explanation": "ผู้ป่วย HIV ที่ติดเชื้อ Candida ใช้ fluconazole เป็นยาลำดับแรก",
@@ -923,7 +1053,15 @@
     "D": "CYP450 = azole",
     "E": "cell wall = echinocandin"
    },
-   "key_concept": "• polyene: pore\n• nephrotoxicity\n• azole: CYP51"
+   "key_concept": "• polyene: pore\n• nephrotoxicity\n• azole: CYP51",
+   "mechanism": [
+    "Amphotericin B จับ ergosterol",
+    "สร้างรูในเยื่อหุ้มเซลล์เชื้อรา",
+    {
+     "s": "ทำลาย permeability ของ fungal cell membrane",
+     "answer": true
+    }
+   ]
   },
   "84": {
    "explanation": "HIV + Aspergillosis ตามัว (visual disturbance) = voriconazole",
@@ -956,7 +1094,15 @@
     "D": "NRTI เป็น nucleoside analog เช่น zidovudine, tenofovir",
     "E": "✓ NNRTI"
    },
-   "key_concept": "• NNRTI: efavirenz, nevirapine\n• NRTI: zidovudine, tenofovir\n• INSTI: -tegravir"
+   "key_concept": "• NNRTI: efavirenz, nevirapine\n• NRTI: zidovudine, tenofovir\n• INSTI: -tegravir",
+   "mechanism": [
+    "efavirenz เป็น NNRTI",
+    "จับ allosteric site ของ reverse transcriptase",
+    {
+     "s": "ยับยั้งการสังเคราะห์ DNA ของ HIV",
+     "answer": true
+    }
+   ]
   },
   "88": {
    "explanation": "Primaquine ฆ่า gametocyte (และ hypnozoite)",
