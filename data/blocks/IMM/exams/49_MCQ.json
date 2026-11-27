@@ -424,11 +424,11 @@
    "key_concept": "• fungal PAMP: β-glucan (Dectin-1), mannan (mannose receptor)\n• LPS (TLR4), peptidoglycan (TLR2)\n• Dectin-1 → Syk/CARD9",
    "mechanism": [
     "Candida เข้าสู่ร่างกาย",
-    "β-glucan โผล่",
     {
-     "s": "Dectin-1 จับ",
+     "s": "β-glucan โผล่",
      "answer": true
     },
+    "Dectin-1 จับ",
     "phagocytosis + cytokine",
     "Th17/neutrophil"
    ],
@@ -529,11 +529,11 @@
    "key_concept": "• fungi (intracellular): Th1/IFN-γ\n• IL-17 ใน mucocutaneous\n• IFN-γ defect → ติดเชื้อรา/mycobacteria",
    "mechanism": [
     "เชื้อราเข้า macrophage",
-    "Th1 หลั่ง IFN-γ",
     {
-     "s": "macrophage activation",
+     "s": "Th1 หลั่ง IFN-γ",
      "answer": true
     },
+    "macrophage activation",
     "ROS/NO",
     "ฆ่าเชื้อ"
    ],
@@ -1059,7 +1059,7 @@
     "Strep pharyngitis",
     "anti-M protein antibody",
     {
-     "s": "cross-react กับ cardiac antigen",
+     "s": "cross-react กับ cardiac antigen (molecular mimicry)",
      "answer": true
     },
     "carditis/arthritis",
@@ -1321,11 +1321,11 @@
    "audit_ref": "imm_49_MCQ_025",
    "key_concept": "• MHC II: DC, macrophage, B cell\n• MHC I: nucleated\n• กระตุ้น MHC II ด้วย IFN-γ",
    "mechanism": [
-    "B cell จับ antigen",
     {
-     "s": "present บน MHC II",
+     "s": "B cell จับ antigen",
      "answer": true
     },
+    "present บน MHC II",
     "CD4 T cell",
     "T-B collaboration",
     "antibody"
@@ -1480,11 +1480,11 @@
    "audit_ref": "imm_49_MCQ_028",
    "key_concept": "• T cell: mycobacteria, fungi, virus\n• SCID = combined\n• DiGeorge: thymus",
    "mechanism": [
-    "T cell ผิดปกติ",
     {
-     "s": "ติด TB/candida",
+     "s": "T cell ผิดปกติ",
      "answer": true
     },
+    "ติด TB/candida",
     "opportunistic",
     "เด็กเล็ก",
     "T cell defect"
@@ -1533,11 +1533,11 @@
    "audit_ref": "imm_49_MCQ_029",
    "key_concept": "• encapsulated + sinopulmonary = antibody deficiency\n• XLA: BTK\n• IVIG",
    "mechanism": [
-    "ขาด antibody",
     {
-     "s": "opsonization ลด",
+     "s": "ขาด antibody",
      "answer": true
     },
+    "opsonization ลด",
     "encapsulated ซ้ำ",
     "pneumonia",
     "IVIG"
@@ -1958,11 +1958,11 @@
    "key_concept": "• Legionella: BCYE, urine antigen\n• pneumonia + GI/neuro\n• แหล่งน้ำ/แอร์",
    "mechanism": [
     "สูดละอองน้ำ",
-    "Legionella ใน macrophage",
     {
-     "s": "เพาะต้อง BCYE",
+     "s": "Legionella ใน macrophage",
      "answer": true
     },
+    "เพาะต้อง BCYE",
     "pneumonia + ท้องเสีย",
     "macrolide/FQ"
    ],
@@ -2272,16 +2272,6 @@
    "source": "import",
    "audit_ref": "imm_49_MCQ_044",
    "key_concept": "• measles: airborne R₀ 12–18\n• วัคซีน MMR ดีที่สุด\n• ข้อนี้ต้นฉบับ A / AI คิดว่า E",
-   "mechanism": [
-    "measles airborne",
-    "ผู้ไม่มีภูมิรับ",
-    {
-     "s": "ต้นฉบับเลือกหน้ากาก",
-     "answer": true
-    },
-    "ลดการแพร่",
-    "วัคซีนป้องกันดีที่สุด"
-   ],
    "option_why": {
     "A": "✓ wear mask (ต้นฉบับ)",
     "B": "distancing",
@@ -2436,7 +2426,7 @@
    "mechanism": [
     "dermatophyte บน keratin",
     {
-     "s": "azole ยับยั้ง CYP51",
+     "s": "ketoconazole (azole ทาเฉพาะที่) ยับยั้ง CYP51",
      "answer": true
     },
     "ergosterol ลด",
@@ -2487,13 +2477,13 @@
    "audit_ref": "imm_49_MCQ_048",
    "key_concept": "• Anopheles = malaria · Aedes = dengue · Culex = filariasis · sandfly = leishmania\n• ยุงตัวเมียกัดกลางคืน\n• sporozoite ใน salivary gland",
    "mechanism": [
-    "ยุงกัดคนเป็นมาเลเรีย",
-    "gametocyte เข้ายุง",
-    "sporogony",
     {
-     "s": "sporozoite ที่ salivary gland",
+     "s": "ยุง Anopheles กัดคนเป็นมาลาเรีย",
      "answer": true
     },
+    "gametocyte เข้ายุง",
+    "sporogony",
+    "sporozoite ที่ salivary gland",
     "กัดคนต่อไป"
    ],
    "option_why": {
@@ -2805,11 +2795,11 @@
    "audit_ref": "imm_49_MCQ_054",
    "key_concept": "• FQ resistance: gyrA, parC mutation, efflux, qnr\n• macrolide: erm/mef\n• aminoglycoside: AME",
    "mechanism": [
-    "FQ จับ gyrase/topo IV",
     {
-     "s": "mutation ที่ target",
+     "s": "ciprofloxacin (FQ) จับ gyrase/topo IV",
      "answer": true
     },
+    "mutation ที่ target",
     "ยาจับไม่ได้",
     "DNA replication ต่อ",
     "ดื้อ"
@@ -3654,11 +3644,11 @@
    "key_concept": "• cyclosporine: nephrotoxicity, hypertension, tremor, gingival hyperplasia\n• เลี่ยง nephrotoxin: aminoglycoside, NSAID, amphotericin\n• CYP3A4 inhibitor/inducer ระวัง",
    "mechanism": [
     "cyclosporine ทำ afferent vasoconstriction",
-    "aminoglycoside สะสม tubule",
     {
-     "s": "nephrotoxicity เสริมกัน",
+     "s": "amikacin (aminoglycoside) สะสมใน tubule",
      "answer": true
     },
+    "nephrotoxicity เสริมกัน",
     "Cr ↑",
     "เลี่ยงการใช้ร่วมกัน"
    ],

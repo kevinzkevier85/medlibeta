@@ -149,12 +149,12 @@
    },
    "key_concept": "• pharyngitis แบคทีเรียหลัก = GAS (ASO, rapid strep test)\n• ภาวะแทรกซ้อน: rheumatic fever, PSGN\n• รักษา penicillin",
    "mechanism": [
-    "GAS ติดเยื่อบุคอ",
-    "M protein/streptolysin",
     {
-     "s": "pharyngitis มีไข้/คออักเสบ",
+     "s": "GAS ติดเยื่อบุคอ",
      "answer": true
     },
+    "M protein/streptolysin",
+    "pharyngitis มีไข้/คออักเสบ",
     "rapid strep/culture",
     "penicillin"
    ],
@@ -267,12 +267,12 @@
    },
    "key_concept": "• lobar pneumonia = S. pneumoniae · bronchopneumonia = S. aureus/H. influenzae\n• Klebsiella: alcoholics, currant jelly\n• Mycoplasma: young adult, cold agglutinin",
    "mechanism": [
-    "สูดเชื้อ",
-    "alveolar fill neutrophil/fibrin",
     {
-     "s": "lobar consolidation",
+     "s": "สูดเชื้อ Streptococcus pneumoniae",
      "answer": true
     },
+    "alveolar fill neutrophil/fibrin",
+    "lobar consolidation",
     "เสมหะเขียว/สนิม",
     "penicillin/amoxicillin"
    ],
@@ -487,12 +487,12 @@
    },
    "key_concept": "• neonatal meningitis: GBS, E. coli, Listeria\n• เด็ก > 3 เดือน–ผู้ใหญ่: S. pneumoniae, N. meningitidis\n• Gram จำแนกตัวเลือก",
    "mechanism": [
-    "GBS ติดผ่านช่องคลอด/ในทารก",
-    "bacteremia",
     {
-     "s": "CSF Gram-positive cocci",
+     "s": "Streptococcus agalactiae (GBS) ติดผ่านช่องคลอด/ในทารก",
      "answer": true
     },
+    "bacteremia",
+    "CSF Gram-positive cocci",
     "meningitis",
     "ampicillin + cefotaxime"
    ],
@@ -985,16 +985,6 @@
     "E": "AI เห็นว่า pre-exposure prophylaxis (MMR) ป้องกันได้ดีที่สุด"
    },
    "key_concept": "• measles: airborne, R₀ 12–18\n• วัคซีน MMR คือวิธีป้องกันที่ดีที่สุด\n• ข้อนี้เฉลยต้นฉบับ A แต่ AI เห็นว่า E ตรงกว่า",
-   "mechanism": [
-    "ไวรัส measles airborne",
-    "ผู้ไม่มีภูมิรับเชื้อ",
-    {
-     "s": "ต้นฉบับเลือกหน้ากาก (A)",
-     "answer": true
-    },
-    "ลดการแพร่",
-    "วัคซีนป้องกันดีที่สุด"
-   ],
    "image_caption": "ผื่น maculopapular ในเด็ก",
    "audit": {
     "source_file": "preclinic/2/immunity/mcq/ข้อสอบ mcq/MCQ_immune [Med PSU 50].pdf",
@@ -1574,11 +1564,11 @@
    },
    "key_concept": "• carbapenemase: KPC, NDM-1, VIM, OXA-48 (CRE)\n• β-lactamase: ESBL ← carbapenem ใช้ได้\n• porin loss + efflux ในบางเชื้อ",
    "mechanism": [
-    "เชื้อมี carbapenemase",
     {
-     "s": "ย่อย carbapenem",
+     "s": "เชื้อมี carbapenemase",
      "answer": true
     },
+    "ย่อย carbapenem",
     "ยาไม่ถึง PBP",
     "ไม่ฆ่าเชื้อ",
     "CRE"
@@ -1958,7 +1948,7 @@
     "HIV RT error-prone",
     "เกิด mutation",
     {
-     "s": "ยา NRTI จับ RT ไม่ได้/ถูกตัดออก",
+     "s": "ยา NRTI เช่น tenofovir จับ RT ไม่ได้",
      "answer": true
     },
     "ไวรัสดื้อ",
@@ -2132,11 +2122,11 @@
    },
    "key_concept": "• azole resistance: CYP51A mutation, efflux, overexpression\n• Aspergillus ดื้อ azole เพิ่มขึ้น\n• echinocandin/ampho B ใช้เมื่อดื้อ",
    "mechanism": [
-    "azole จับ CYP51",
     {
-     "s": "CYP51A กลายพันธุ์",
+     "s": "azole เช่น ketoconazole จับ CYP51",
      "answer": true
     },
+    "CYP51A กลายพันธุ์",
     "จับยาไม่ดี",
     "ergosterol ยังสร้างได้",
     "ดื้อ azole"
@@ -2546,11 +2536,11 @@
    "key_concept": "• acute (≤ 5–7 วัน): RT-PCR · หลังนั้น IgM\n• antibody ใช้ convalescent\n• viremia สูงช่วงมีไข้",
    "mechanism": [
     "ไข้ 2 วัน",
+    "viremia สูง",
     {
-     "s": "viremia สูง",
+     "s": "RT-PCR ขยาย RNA",
      "answer": true
     },
-    "RT-PCR ขยาย RNA",
     "พบ genome",
     "ยืนยัน"
    ],
@@ -2605,11 +2595,11 @@
    "key_concept": "• prozone: Ab มากเกิน → false negative → เจือจางซ้ำ\n• VDRL/RPR ใช้ติดตามการรักษา\n• FTA-ABS/TPPA เป็น treponemal",
    "mechanism": [
     "Ab มากเกินไป",
+    "จับ antigen ไม่เกิด lattice",
     {
-     "s": "จับ antigen ไม่เกิด lattice",
+     "s": "RPR (flocculation) ไม่เห็นตะกอน",
      "answer": true
     },
-    "flocculation ไม่เห็น",
     "false negative",
     "เจือจางซ้ำ"
    ],
@@ -2867,12 +2857,12 @@
    },
    "key_concept": "• MHC II: DC, macrophage, B cell\n• MHC I: nucleated cell\n• กระตุ้น MHC II ด้วย IFN-γ ในเซลล์อื่นได้",
    "mechanism": [
-    "B cell จับ antigen ด้วย BCR",
-    "internalize",
     {
-     "s": "present บน MHC II",
+     "s": "B cell จับ antigen ด้วย BCR",
      "answer": true
     },
+    "internalize",
+    "present บน MHC II",
     "CD4 T cell",
     "T-B collaboration"
    ],
@@ -3115,11 +3105,11 @@
    "key_concept": "• helminth: Th2 → IL-4 (IgE), IL-5 (eosinophil)\n• eosinophil FcεR + MBP\n• IL-5 = eosinophil growth/survival",
    "mechanism": [
     "IgE จับ helminth",
-    "IL-5 ↑ eosinophil",
     {
-     "s": "eosinophil จับ FcεR",
+     "s": "IL-5 ↑ eosinophil",
      "answer": true
     },
+    "eosinophil จับ FcεR",
     "ปล่อย MBP",
     "ฆ่าพยาธิ"
    ],
@@ -4005,11 +3995,11 @@
    },
    "key_concept": "• MMF: IMPDH inhibitor, lymphocyte-specific\n• CNI ลด IL-2\n• azathioprine = purine analog",
    "mechanism": [
-    "MMF → MPA",
     {
-     "s": "ยับยั้ง IMPDH",
+     "s": "MMF → MPA",
      "answer": true
     },
+    "ยับยั้ง IMPDH",
     "guanine ลด",
     "DNA synthesis ใน S phase ลด",
     "lymphocyte proliferation ลด"
@@ -4066,7 +4056,7 @@
    "mechanism": [
     "autoimmune flare",
     {
-     "s": "glucocorticoid ยับยั้ง NF-κB",
+     "s": "prednisolone (glucocorticoid) ยับยั้ง NF-κB",
      "answer": true
     },
     "cytokine ลด",

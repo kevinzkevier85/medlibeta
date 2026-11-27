@@ -55,16 +55,6 @@
    "source": "import",
    "audit_ref": "imm_52_MCQ_001",
    "key_concept": "• lymph node = secondary lymphoid organ ที่ lymph ไหลผ่าน (afferent → subcapsular sinus → cortex follicle → paracortex → medulla)\n• cortex = B cell follicle, paracortex = T cell/DC\n• Peyer's patch/MALT รับ antigen จากลำไส้ ไม่ผ่าน afferent lymph",
-   "mechanism": [
-    "เชื้อเข้าผิวหนัง",
-    "dendritic cell จับ antigen เข้า lymphatic",
-    "lymph ไหลเข้า subcapsular sinus ของ lymph node",
-    {
-     "s": "antigen ถูก present ให้ T/B cell ใน cortex–paracortex เริ่ม adaptive response",
-     "answer": true
-    },
-    "germinal center เกิด → antibody"
-   ],
    "option_why": {
     "A": "E. coli เป็นเชื้อลำไส้ กระตุ้นผ่าน Peyer's patch/mesenteric node เป็นหลัก",
     "B": "Herpes simplex เป็นไวรัส ถูกจัดการด้วย CD8/NK เป็นหลัก ไม่ใช่โจทย์ lymph node ผิวหนัง",
@@ -274,12 +264,12 @@
    "mechanism": [
     "helminth กระตุ้น DC/epithelium → IL-4",
     "naive CD4 → Th2",
-    "IL-4 → B cell สลับเป็น IgE; IL-5 → eosinophil",
-    "IgE เคลือบพยาธิ",
     {
-     "s": "eosinophil จับ Fcε receptor ปล่อย MBP/EPO ทำ ADCC",
+     "s": "Th2 cytokines: IL-4 → IgE; IL-5 → eosinophil",
      "answer": true
-    }
+    },
+    "IgE เคลือบพยาธิ",
+    "eosinophil จับ Fcε receptor ปล่อย MBP/EPO ทำ ADCC"
    ],
    "option_why": {
     "A": "IFN-γ (Th1) ใช้กับ intracellular bacteria/virus",
@@ -803,11 +793,11 @@
    "key_concept": "• secondary response: lag สั้น, titer สูง, IgG เด่น\n• memory B cell threshold ต่ำ/affinity สูง\n• booster = ปลุก memory cell",
    "mechanism": [
     "booster ให้ antigen เดิม",
-    "memory B cell จำและจับ",
     {
-     "s": "กระตุ้นเร็วด้วย Tfh",
+     "s": "memory B cell จำและจับ",
      "answer": true
     },
+    "กระตุ้นเร็วด้วย Tfh",
     "แบ่งตัวเป็น plasma cell",
     "IgG titer สูงในไม่กี่วัน"
    ],
@@ -2127,12 +2117,12 @@
    "audit_ref": "imm_52_MCQ_047",
    "key_concept": "• terminal complement (C5–C9) → Neisseria ซ้ำ · C1/C2/C4 → SLE-like + encapsulated · C3 → pyogenic ซ้ำ\n• CH50 ต่ำ = classical/terminal ผิดปกติ\n• แนะนำ meningococcal vaccine",
    "mechanism": [
-    "MAC (C5b–9) ไม่ประกอบ",
-    "Neisseria ไม่ถูก lysis",
     {
-     "s": "ติดเชื้อ Neisseria bacteremia/meningitis ซ้ำ",
+     "s": "complement deficiency: MAC (C5b–9) ไม่ประกอบ",
      "answer": true
     },
+    "Neisseria ไม่ถูก lysis",
+    "ติดเชื้อ Neisseria bacteremia/meningitis ซ้ำ",
     "opsonization/antibody ปกติ",
     "CH50 ต่ำ Ig ปกติ"
    ],
@@ -2180,11 +2170,11 @@
    "audit_ref": "imm_52_MCQ_048",
    "key_concept": "• antibody deficiency: sinopulmonary, encapsulated (S. pneumoniae, H. influenzae), Giardia, Ig ↓\n• XLA: BTK, B cell ไม่มี · CVID: B cell ปกติ แต่ Ig ↓\n• IgA deficiency มักไม่มีอาการ",
    "mechanism": [
-    "Ig ต่ำ opsonization/neutralization ลด",
     {
-     "s": "ติดเชื้อ encapsulated ซ้ำ",
+     "s": "antibody deficiency: Ig ต่ำ opsonization/neutralization ลด",
      "answer": true
     },
+    "ติดเชื้อ encapsulated ซ้ำ",
     "otitis/sinusitis/pneumonia",
     "T cell ปกติ",
     "รักษาด้วย IVIG"
@@ -2339,11 +2329,11 @@
    "audit_ref": "imm_52_MCQ_051",
    "key_concept": "• T cell defect: fungi, virus, PJP, mycobacteria · DiGeorge (22q11), HIV\n• CD4 ต่ำ + opportunistic = cellular immunodeficiency\n• combined = T + B ผิดปกติ (SCID)",
    "mechanism": [
-    "CD4 T cell ต่ำ",
     {
-     "s": "Th1/CTL function ลด",
+     "s": "T-cell deficiency: CD4 T cell ต่ำ",
      "answer": true
     },
+    "Th1/CTL function ลด",
     "เชื้อฉวยโอกาสแพร่",
     "thrush + PJP",
     "failure to thrive"
@@ -2499,11 +2489,11 @@
    "key_concept": "• Treg: CD4+ CD25+ FoxP3+ · IPEX = FoxP3 mutation\n• IL-10, TGF-β, CTLA-4 กดภูมิ\n• peripheral tolerance",
    "mechanism": [
     "autoreactive T cell หลุด thymus",
-    "Treg รู้จัก self antigen",
     {
-     "s": "หลั่ง IL-10/TGF-β",
+     "s": "Treg รู้จัก self antigen",
      "answer": true
     },
+    "หลั่ง IL-10/TGF-β",
     "กด effector T cell/DC",
     "คง self-tolerance"
    ],
@@ -2711,11 +2701,11 @@
    "key_concept": "• Treg: FoxP3, IL-10, TGF-β\n• central tolerance (thymus) vs peripheral tolerance (Treg, anergy)\n• IPEX = FoxP3 mutation → autoimmune หลายอวัยวะ",
    "mechanism": [
     "self-reactive T cell หลุดออก",
-    "Treg รู้จัก self",
     {
-     "s": "ยับยั้งด้วย IL-10/TGF-β/CTLA-4",
+     "s": "Treg รู้จัก self",
      "answer": true
     },
+    "ยับยั้งด้วย IL-10/TGF-β/CTLA-4",
     "effector T cell ถูกกด",
     "ไม่เกิด autoimmunity"
    ],
@@ -2819,7 +2809,7 @@
     "autoantibody/immune complex",
     "อักเสบเฉียบพลัน",
     {
-     "s": "glucocorticoid ยับยั้ง NF-κB/cytokine",
+     "s": "prednisolone (glucocorticoid) ยับยั้ง NF-κB/cytokine",
      "answer": true
     },
     "อาการลดลง",
@@ -2870,11 +2860,11 @@
    "key_concept": "• Legionella: BCYE agar, urine antigen, water source/แอร์, hyponatremia, GI + neuro\n• Mycoplasma: cold agglutinin, no Gram stain, Eaton agar\n• H. influenzae: chocolate agar, satellite phenomenon",
    "mechanism": [
     "สูดละอองน้ำปนเชื้อ",
-    "Legionella เข้า alveolar macrophage",
     {
-     "s": "เพาะแยกต้องใช้ BCYE agar",
+     "s": "Legionella เข้า alveolar macrophage",
      "answer": true
     },
+    "เพาะแยกต้องใช้ BCYE agar",
     "pneumonia + ไข้สูง + ท้องเสีย",
     "รักษา macrolide/fluoroquinolone"
    ],
@@ -3510,11 +3500,11 @@
     "เข้าทาง respiratory",
     "replicate ที่ lymph node",
     "primary viremia → liver/spleen",
+    "secondary viremia",
     {
-     "s": "secondary viremia",
+     "s": "ผื่นที่ผิวหนัง (chicken pox/VZV)",
      "answer": true
-    },
-    "ผื่นที่ผิวหนัง"
+    }
    ],
    "option_why": {
     "A": "EBV เกี่ยวกับ B cell/mononucleosis",
@@ -3724,11 +3714,11 @@
    "key_concept": "• erythrocytic cycle: vivax/ovale 48 ชม., malariae 72 ชม., falciparum 48 ชม. (irregular), knowlesi 24 ชม.\n• hypnozoite เฉพาะ vivax/ovale\n• falciparum ทำ cytoadherence",
    "mechanism": [
     "sporozoite เข้าตับ",
-    "บางส่วนเป็น hypnozoite",
     {
-     "s": "พักตัวเป็นเดือน–ปี",
+     "s": "บางส่วนเป็น hypnozoite",
      "answer": true
     },
+    "พักตัวเป็นเดือน–ปี",
     "กลับ activation",
     "relapse"
    ],
