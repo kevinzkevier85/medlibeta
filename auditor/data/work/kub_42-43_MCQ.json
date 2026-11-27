@@ -142,7 +142,7 @@
    "mechanism": [
     "RBF ลด → ต้องเพิ่มเลือดเข้า glomerulus",
     {
-     "s": "afferent ขยาย → RBF กลับมา",
+     "s": "afferent ขยาย (dilate) + efferent หด (constrict)",
      "answer": true
     },
     "GFR ลด → ต้องเพิ่มแรงดันใน glomerulus",
@@ -867,11 +867,11 @@
    "key_concept": "• salicylate กระตุ้น respiratory center → hyperventilation → respiratory alkalosis\n• ไตชดเชยโดยขับ HCO3⁻ ออก (ปัสสาวะเป็นด่าง) · ลด NH4⁺ excretion\n• ผสม metabolic acidosis (AG ↑) จากกรด salicylic/lactate/ketone",
    "mechanism": [
     "salicylate เป็นพิษ",
+    "หายใจเร็ว → respiratory alkalosis",
     {
-     "s": "หายใจเร็ว → respiratory alkalosis",
+     "s": "urine HCO₃⁻ ↑, urine NH₄⁺ ↓, AG ↑ (กรดอินทรีย์สะสม)",
      "answer": true
     },
-    "ไตขับ HCO3⁻ (urine HCO3⁻ ↑ NH4⁺ ↓)",
     "กรดในเลือดสะสม → AG ↑"
    ],
    "audit": {
@@ -1157,14 +1157,6 @@
     "E": "Candida 20,000 จาก cath ไม่เข้าเกณฑ์ UTI แบคทีเรีย"
    },
    "key_concept": "• เกณฑ์เพาะเชื้อ: midstream ≥ 10⁵ · catheter ≥ 5×10⁴ · suprapubic: เชื้อใดก็ได้\n• nitrite + = Gram-negative (Enterobacterales) · leukocyte esterase + = pyuria\n• S. saprophyticus พบในหญิงสาววัยเจริญพันธุ์",
-   "mechanism": [
-    "UTI: WBC และ nitrite บวก",
-    "เชื้อ gram-negative เปลี่ยน nitrate เป็น nitrite",
-    {
-     "s": "ผลบ่งชี้ pyelonephritis/cystitis",
-     "answer": true
-    }
-   ],
    "audit": {
     "source_file": "preclinic/2/urinary/mcq/ข้อสอบ mcq/MCQ_KUB and Repro [Med PSU 42-43].pdf",
     "page": 5,
@@ -1445,11 +1437,11 @@
    "key_concept": "• V2 antagonist: ขับน้ำอิสระ (aquaresis) เพิ่ม Na⁺ ในเลือด\n• V1a antagonist: ขยายหลอดเลือด · conivaptan = V1a/V2\n• ระวังแก้ Na⁺ เร็วเกิน (osmotic demyelination)",
    "mechanism": [
     "SIADH → ADH มากเกิน",
-    "น้ำคั่ง → hyponatremia",
     {
-     "s": "V1a/V2 antagonist ปิดตัวรับ",
+     "s": "น้ำคั่ง → hyponatremia",
      "answer": true
     },
+    "V1a/V2 antagonist ปิดตัวรับ",
     "AQP2 ลด → ขับน้ำอิสระ",
     "Na⁺ ในเลือดสูงขึ้น"
    ],
@@ -1849,12 +1841,12 @@
    },
    "key_concept": "• pudendal n. (S2–4): external urethral/anal sphincter, ischiocavernosus, bulbospongiosus, sensation perineum\n• ปลายหยดสุดท้ายของปัสสาวะ/ การหลั่ง: bulbospongiosus บีบ\n• เป็นที่ gluteal region → ออก lesser sciatic foramen → Alcock's canal",
    "mechanism": [
-    "กล้ามเนื้อหูรูดท่อปัสสาวะภายนอกอัมพาต",
-    "กลั้นปัสสาวะไม่ได้/ขับไม่หมด",
     {
-     "s": "ปัสสาวะไม่สุด",
+     "s": "pudendal nerve เสีย กล้ามเนื้อหูรูดภายนอก/bulbospongiosus อัมพาต",
      "answer": true
-    }
+    },
+    "กลั้นปัสสาวะไม่ได้/ขับไม่หมด",
+    "ปัสสาวะไม่สุด"
    ],
    "audit": {
     "source_file": "preclinic/2/urinary/mcq/ข้อสอบ mcq/MCQ_KUB and Repro [Med PSU 42-43].pdf",
@@ -2581,12 +2573,12 @@
    "key_concept": "• testosterone → DHT ด้วย 5α-reductase\n• DHT: prostate, penis/scrotum, ขน, สิว, ผมร่วง\n• finasteride (5α-reductase inhibitor) รักษา BPH",
    "mechanism": [
     "testosterone เข้าเซลล์ prostate",
-    {
-     "s": "5α-reductase → DHT",
-     "answer": true
-    },
+    "5α-reductase → DHT",
     "DHT จับ androgen receptor แรงกว่า",
-    "การเจริญของ prostate/อวัยวะเพศนอก"
+    {
+     "s": "การเจริญของ prostate/อวัยวะเพศนอก",
+     "answer": true
+    }
    ],
    "audit": {
     "source_file": "preclinic/2/urinary/mcq/ข้อสอบ mcq/MCQ_KUB and Repro [Med PSU 42-43].pdf",
@@ -3595,11 +3587,11 @@
    "key_concept": "• EC: levonorgestrel 1.5 mg ครั้งเดียว หรือ 0.75 mg × 2 (12 ชม.) ภายใน 72 ชม. (ดีสุดเร็วที่สุด)\n• Yuzpe: EE + norgestrel เว้น 12 ชม.\n• ทางเลือก: ulipristal (5 วัน), IUD ทองแดง (5 วัน)",
    "mechanism": [
     "ยาคุมฉุกเฉินเลื่อน/ยับยั้งการตกไข่",
-    "ปริมาณ levonorgestrel สูง",
     {
-     "s": "ป้องกันการตั้งครรภ์ภายใน 72 ชม.",
+     "s": "levonorgestrel 0.75 mg ทันทีและซ้ำอีก 12 ชม.",
      "answer": true
-    }
+    },
+    "ป้องกันการตั้งครรภ์ภายใน 72 ชม."
    ],
    "audit": {
     "source_file": "preclinic/2/urinary/mcq/ข้อสอบ mcq/MCQ_KUB and Repro [Med PSU 42-43].pdf",
@@ -5011,7 +5003,7 @@
    "mechanism": [
     "GFR และ RBF สูงเกิน",
     {
-     "s": "afferent หด → RBF ลดลง",
+     "s": "afferent หด (constrict) + efferent ขยาย (dilate)",
      "answer": true
     },
     "efferent ขยาย → P_GC ลด → GFR ลดลง",
@@ -5300,11 +5292,11 @@
    },
    "key_concept": "• acidosis → glutaminase ↑ → NH4⁺ ↑ → ขับพร้อม Cl⁻\n• hyperK ลด NH4⁺ ขับ (type 4 RTA) · hypoK เพิ่ม ammoniagenesis\n• urine anion gap (UAG) ใช้ประเมิน NH4⁺",
    "mechanism": [
-    "กรดในเลือดเพิ่ม",
     {
-     "s": "glutamine → NH4⁺ ใน PCT เพิ่ม",
+     "s": "กรดในเลือดเพิ่ม",
      "answer": true
     },
+    "glutamine → NH4⁺ ใน PCT เพิ่ม",
     "NH4⁺ ถูกขับ + HCO3⁻ ใหม่",
     "บัฟเฟอร์กรดได้มากขึ้น"
    ],
@@ -6265,11 +6257,11 @@
    },
    "key_concept": "• proximal tubule ผิดปกติ: ทั้ง glucose, amino acid, phosphate, bicarbonate รั่ว\n• distal RTA (type 1): hypoK + นิ่ว + ปัสสาวะด่าง\n• type 4: hyperK",
    "mechanism": [
-    "proximal tubule เสียหน้าที่",
     {
-     "s": "reabsorption ลด (glucose, amino acid, HCO3⁻)",
+     "s": "proximal tubule เสียหน้าที่ (proximal RTA)",
      "answer": true
     },
+    "reabsorption ลด (glucose, amino acid, HCO3⁻)",
     "glycosuria + aminoaciduria + acidosis",
     "K⁺ ถูกขับมาก → hypoK, อ่อนแรง"
    ],
