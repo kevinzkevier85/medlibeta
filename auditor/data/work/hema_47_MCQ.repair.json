@@ -345,7 +345,15 @@
     "D": "nutritional (B12/folate) ทำ MCV สูงได้ (AI เห็นว่าน่าคิดถึงเช่นกัน) แต่ไม่มีม้ามโตและ WBC สูงแบบนี้",
     "E": "abnormal hemoglobin (thalassemia) ทำ MCV ต่ำ"
    },
-   "key_concept": "• AIHA: Coombs บวก, spherocyte, reticulocytosis\n• MCV สูงเทียม: reticulocyte มาก, cold agglutinin"
+   "key_concept": "• AIHA: Coombs บวก, spherocyte, reticulocytosis\n• MCV สูงเทียม: reticulocyte มาก, cold agglutinin",
+   "mechanism": [
+    "เม็ดเลือดแดงถูกภูมิคุ้มกันทำลาย",
+    "antibody เคลือบผิวเม็ดเลือดแดง",
+    {
+     "s": "immune-mediated hemolysis (Coombs บวก)",
+     "answer": true
+    }
+   ]
   },
   "24": {
    "explanation": "ตัด duodenum ซึ่งเป็นที่ดูดซึมเหล็ก → ขาดเหล็ก (MCV 60) transferrin saturation ลดลง",
@@ -733,7 +741,15 @@
     "D": "TNF เป็น cytokine การอักเสบ ไม่ได้เลือกสายแบบนี้",
     "E": "IL-5 กระตุ้นการสร้าง eosinophil"
    },
-   "key_concept": "• G-CSF → neutrophil · M-CSF → monocyte · IL-5 → eosinophil · EPO → RBC · TPO → platelet\n• IFN-γ จาก Th1/NK เป็นตัวกระตุ้น macrophage หลัก"
+   "key_concept": "• G-CSF → neutrophil · M-CSF → monocyte · IL-5 → eosinophil · EPO → RBC · TPO → platelet\n• IFN-γ จาก Th1/NK เป็นตัวกระตุ้น macrophage หลัก",
+   "mechanism": [
+    {
+     "s": "IFN-γ ยับยั้งการสร้าง granulocyte",
+     "answer": true
+    },
+    "แต่กระตุ้น monocyte/macrophage",
+    "granulocytopoiesis ลด monocytopoiesis เพิ่ม"
+   ]
   },
   "49": {
    "explanation": "Amifostine ลดพิษต่อไตของ cisplatin โดยจับ free radical",
@@ -763,7 +779,15 @@
     "C": "steroid ขนาดสูงไม่หยุด intravascular hemolysis จาก IgM",
     "D": "antihistamine ใช้ใน allergic reaction"
    },
-   "key_concept": "• acute hemolytic reaction: IgM anti-A/B + complement → intravascular hemolysis\n• หลักปฏิบัติ: หยุดเลือดทันที ให้สารน้ำรักษาปัสสาวะ ตรวจซ้ำหมู่เลือด"
+   "key_concept": "• acute hemolytic reaction: IgM anti-A/B + complement → intravascular hemolysis\n• หลักปฏิบัติ: หยุดเลือดทันที ให้สารน้ำรักษาปัสสาวะ ตรวจซ้ำหมู่เลือด",
+   "mechanism": [
+    "ได้เลือดผิดหมู่ (A ได้ B)",
+    {
+     "s": "anti-B ใน plasma จับเม็ดเลือดแดง B กระตุ้น complement",
+     "answer": true
+    },
+    "acute hemolytic transfusion reaction → ทำ plasmapheresis"
+   ]
   },
   "2": {
    "explanation": "ข้อจำกัดหลักของ adult stem cell: แยกและทำให้บริสุทธิ์ยาก",
