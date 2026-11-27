@@ -1187,12 +1187,12 @@
    "key_concept": "• dicrotic notch (incisura) บน arterial waveform = aortic valve ปิด\n• เกิดพร้อมเสียง S2 และเป็นจุดเริ่ม diastole\n• ใน aortic regurgitation notch ไม่ชัดหรือหายไป",
    "mechanism": [
     "สิ้นสุด ejection: ventricular pressure < aortic pressure",
-    "เลือดใน aorta ไหลย้อนกลับชั่วขณะ",
-    "Aortic valve ปิด",
     {
-     "s": "เลือดกระทบลิ้นที่ปิด + elastic recoil → pressure ขึ้นเล็กน้อย",
+     "s": "เลือดใน aorta ไหลย้อนกลับชั่วขณะ",
      "answer": true
     },
+    "Aortic valve ปิด",
+    "เลือดกระทบลิ้นที่ปิด + elastic recoil → pressure ขึ้นเล็กน้อย",
     "Dicrotic notch (incisura) = จุดเริ่ม diastole บน arterial curve, ตรงกับ S2"
    ],
    "refs": [
@@ -1386,10 +1386,12 @@
    "key_concept": "• a = atrial contraction · c = tricuspid valve โป่งขณะ ventricle บีบ\n• x descent = atrial relaxation · v = เลือดดำเติม atrium ขณะ tricuspid ปิด\n• y descent = tricuspid เปิด เลือดไหลลง ventricle\n• giant v wave = tricuspid regurgitation · cannon a wave = AV dissociation",
    "mechanism": [
     "Ventricular systole: tricuspid valve ปิด",
-    "Systemic venous return ยังไหลเข้า RA",
+    {
+     "s": "Systemic venous return ยังไหลเข้า RA",
+     "answer": true
+    },
     {
      "s": "RA volume/pressure ↑",
-     "answer": true,
      "note": "= v wave"
     },
     "Tricuspid เปิดตอน diastole → RA pressure ลด = y descent"
@@ -1460,16 +1462,14 @@
    "mechanism": [
     {
      "s": "Vessel radius (diameter) ↑",
-     "note": "ที่ velocity เท่าเดิม"
+     "note": "ที่ velocity เท่าเดิม",
+     "answer": true
     },
     {
      "s": "Reynolds number ↑",
      "note": "Re = ρ·v·D / η"
     },
-    {
-     "s": "Re > ~2000 → turbulent flow",
-     "answer": true
-    }
+    "Re > ~2000 → turbulent flow"
    ],
    "refs": [
     {
@@ -1583,16 +1583,13 @@
    "mechanism": [
     "Late diastole: atrial contraction",
     {
-     "s": "เติมเลือดเพิ่ม 20–30%"
-    },
-    {
-     "s": "EDV ↑",
+     "s": "เติมเลือดเพิ่ม 20–30%",
      "answer": true
     },
+    "EDV ↑",
     "Preload ↑ → sarcomere stretch ↑",
     {
      "s": "SV ↑",
-     "answer": true,
      "note": "Frank–Starling"
     }
    ],
@@ -1988,12 +1985,12 @@
    "mechanism": [
     "MAP ↑",
     "Cerebral arteriolar wall stretch ↑",
-    "Stretch-activated cation channels → depolarization",
-    "Ca²⁺ influx → smooth muscle contraction",
     {
-     "s": "Vasoconstriction → resistance ↑",
+     "s": "Stretch-activated cation channel เปิด (intrinsic myogenic mechanism)",
      "answer": true
     },
+    "Ca²⁺ influx → smooth muscle contraction",
+    "Vasoconstriction → resistance ↑",
     "CBF คงที่ (MAP ↓ → กลับทิศ = vasodilation)"
    ],
    "refs": [
@@ -2048,13 +2045,11 @@
     "GFR ↑",
     "NaCl delivery ไป macula densa ↑",
     {
-     "s": "Macula densa ส่ง adenosine/ATP",
-     "note": "tubuloglomerular feedback"
-    },
-    {
-     "s": "Afferent arteriole หดตัว (resistance ↑)",
+     "s": "Macula densa ส่ง adenosine/ATP (tubuloglomerular feedback)",
+     "note": "tubuloglomerular feedback",
      "answer": true
     },
+    "Afferent arteriole หดตัว (resistance ↑)",
     "GFR กลับปกติ"
    ],
    "refs": [
@@ -2429,16 +2424,14 @@
    "explanation": "Heavy two-leg press (static, มวลกล้ามเนื้อใหญ่) เพิ่ม SBP มากที่สุด",
    "key_concept": "• Static exercise เพิ่ม BP (pressure load) มากกว่า dynamic exercise ที่ TPR ลดจาก vasodilation (volume load)\n• ยิ่งมวลกล้ามเนื้อใหญ่และ load หนัก BP ยิ่งสูง — Valsalva ร่วมด้วยเพิ่ม BP อีก",
    "mechanism": [
-    "Heavy static (isometric) leg press",
+    {
+     "s": "Heavy static (isometric) leg press",
+     "answer": true
+    },
     "กล้ามเนื้อมวลใหญ่หดตัวค้าง",
     "หลอดเลือดในกล้ามเนื้อถูกบีบ + metaboreflex/pressor reflex",
-    {
-     "s": "TPR ไม่ลด/เพิ่ม + CO ↑"
-    },
-    {
-     "s": "SBP ↑ มากที่สุด",
-     "answer": true
-    }
+    "TPR ไม่ลด/เพิ่ม + CO ↑",
+    "SBP ↑ มากที่สุด"
    ],
    "refs": [
     {
@@ -2892,15 +2885,13 @@
    "explanation": "Loop สูงขึ้นพร้อม ESV เล็กลง = contractility เพิ่ม (positive inotrope)",
    "key_concept": "• แยก PV loop:\n• preload = เปลี่ยนที่ EDV (มุมขวาล่าง)\n• afterload = ความสูง + ESV ↑\n• contractility = slope ของ ESPVR",
    "mechanism": [
-    "Positive inotrope (เช่น dobutamine, digoxin)",
-    "Intracellular Ca²⁺ ↑ → contractility ↑",
     {
-     "s": "ESPVR ชันขึ้น"
-    },
-    {
-     "s": "Peak systolic pressure ↑ + ESV ↓",
+     "s": "Positive inotrope (เช่น dobutamine, digoxin)",
      "answer": true
     },
+    "Intracellular Ca²⁺ ↑ → contractility ↑",
+    "ESPVR ชันขึ้น",
+    "Peak systolic pressure ↑ + ESV ↓",
     "SV ↑, EF ↑"
    ],
    "refs": [
@@ -3247,14 +3238,12 @@
    "mechanism": [
     "Nitroglycerin → NO ↑",
     "Soluble guanylyl cyclase ↑ → cGMP ↑",
-    "Sildenafil ยับยั้ง PDE5 (สลาย cGMP ไม่ได้)",
     {
-     "s": "cGMP คั่งมาก → profound vasodilation"
-    },
-    {
-     "s": "Severe hypotension",
+     "s": "Sildenafil ยับยั้ง PDE5 (สลาย cGMP ไม่ได้)",
      "answer": true
-    }
+    },
+    "cGMP คั่งมาก → profound vasodilation",
+    "Severe hypotension"
    ],
    "refs": [
     {
@@ -3501,14 +3490,12 @@
    "explanation": "ไอแห้งเรื้อรังจาก bradykinin คั่ง = ACE inhibitor (enalapril)",
    "key_concept": "• ACE inhibitor ทำให้ bradykinin สะสม เกิดไอแห้งและ angioedema\n• ADR อื่น: hyperkalemia, ความดันตกเมื่อเริ่มยา, ไตแย่ลงใน bilateral renal artery stenosis\n• ห้ามใช้ในหญิงตั้งครรภ์ · ถ้าไอให้เปลี่ยนเป็น ARB",
    "mechanism": [
-    "Enalapril ยับยั้ง ACE (kininase II)",
     {
-     "s": "Bradykinin + substance P สะสมในทางเดินหายใจ"
-    },
-    {
-     "s": "Dry cough",
+     "s": "Enalapril ยับยั้ง ACE (kininase II)",
      "answer": true
-    }
+    },
+    "Bradykinin + substance P สะสมในทางเดินหายใจ",
+    "Dry cough"
    ],
    "refs": [
     {
@@ -3793,15 +3780,13 @@
    "explanation": "Bilateral pitting leg edema หลังเริ่มยา HTN = amlodipine",
    "key_concept": "• Edema จาก DHP-CCB เป็น dose-dependent ไม่ตอบสนองต่อ diuretic\n• แก้ด้วยลด dose หรือเพิ่ม ACEi/ARB (venodilation)",
    "mechanism": [
-    "Amlodipine → precapillary arteriolar dilation (venule ไม่ขยาย)",
     {
-     "s": "Capillary hydrostatic pressure ↑"
-    },
-    "Fluid filtration ออกนอกหลอดเลือด ↑",
-    {
-     "s": "Bilateral pitting ankle edema",
+     "s": "Amlodipine → precapillary arteriolar dilation (venule ไม่ขยาย)",
      "answer": true
-    }
+    },
+    "Capillary hydrostatic pressure ↑",
+    "Fluid filtration ออกนอกหลอดเลือด ↑",
+    "Bilateral pitting ankle edema"
    ],
    "refs": [
     {
