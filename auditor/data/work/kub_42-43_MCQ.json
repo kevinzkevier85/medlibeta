@@ -81,11 +81,11 @@
    "key_concept": "• Starling ที่ glomerulus: P_GC ดันออก · P_BS และ π_GC ต้านไว้\n• filtrate ไม่มีโปรตีน → π_BS = 0\n• ผลคูณ NFP × K_f = GFR",
    "mechanism": [
     "P_GC = 50 ดันของเหลวออก",
+    "หักแรงต้าน P_BS 10 + π_GC 25",
     {
-     "s": "หักแรงต้าน P_BS 10 + π_GC 25",
+     "s": "NFP = 50 − 35 = 15 mmHg",
      "answer": true
     },
-    "NFP = 50 − 35 = 15 mmHg",
     "GFR = K_f × NFP"
    ],
    "audit": {
@@ -142,7 +142,7 @@
    "mechanism": [
     "RBF ลด → ต้องเพิ่มเลือดเข้า glomerulus",
     {
-     "s": "afferent ขยาย → RBF กลับมา",
+     "s": "afferent ขยาย (dilate) + efferent หด (constrict)",
      "answer": true
     },
     "GFR ลด → ต้องเพิ่มแรงดันใน glomerulus",
@@ -199,11 +199,11 @@
    },
    "key_concept": "• ลด GFR: sympathetic, ANG II ปริมาณสูง, NSAID (afferent หด), tubular obstruction, ↑π_GC\n• เพิ่ม GFR: ANP, ↓π_GC, afferent ขยาย, efferent หดพอควร\n• นึกถึง 'หลอดเลือดที่หดก่อน glomerulus = GFR ลด'",
    "mechanism": [
-    "เสียเลือด/ตกใจ → sympathetic ↑",
     {
-     "s": "หด afferent arteriole",
+     "s": "เสียเลือด/ตกใจ → sympathetic ↑",
      "answer": true
     },
+    "หด afferent arteriole",
     "P_GC ↓",
     "GFR ↓ RBF ↓"
    ],
@@ -476,11 +476,11 @@
    },
    "key_concept": "• natriuresis: ANP, diuretic, ↑ ECF volume, ↑ BP (pressure natriuresis)\n• antinatriuresis: aldosterone, ANG II, sympathetic, ↑π_peritubular\n• acetazolamide: urine เป็นด่าง, metabolic acidosis, ใช้รักษา altitude sickness/glaucoma",
    "mechanism": [
-    "acetazolamide ยับยั้ง carbonic anhydrase",
     {
-     "s": "H⁺ secretion ↓ → HCO3⁻/Na⁺ reabsorption ↓",
+     "s": "acetazolamide ยับยั้ง carbonic anhydrase",
      "answer": true
     },
+    "H⁺ secretion ↓ → HCO3⁻/Na⁺ reabsorption ↓",
     "Na⁺ และน้ำเหลือใน lumen มากขึ้น",
     "natriuresis + diuresis + urine ด่าง"
    ],
@@ -534,11 +534,11 @@
    },
    "key_concept": "• osm ปัสสาวะขึ้นกับ gradient ของ medulla (countercurrent) + ADH\n• เลือดไหล medulla มาก (เช่น ANP, bradykinin, PGE2) → gradient ลด → เข้มข้นไม่ได้\n• ปัสสาวะเจือจาง: ดื่มน้ำมาก, ADH ต่ำ, loop diuretic",
    "mechanism": [
-    "medullary blood flow ↑",
     {
-     "s": "ชะ NaCl/urea ในไขสันหลังไต",
+     "s": "medullary blood flow ↑",
      "answer": true
     },
+    "ชะ NaCl/urea ในไขสันหลังไต",
     "medullary gradient ลดจาก 1200",
     "ดูดน้ำกลับน้อย → urine เจือจาง"
    ],
@@ -700,12 +700,12 @@
    "key_concept": "• C_H2O = V − C_osm = V − (U_osm × V)/P_osm\n• urine เจือจางกว่าพลาสมา → C_H2O บวก · เข้มข้นกว่า → ลบ\n• isosmotic → C_H2O = 0",
    "mechanism": [
     "V = 150",
-    {
-     "s": "C_osm = (300 × 150) / 300 = 150",
-     "answer": true
-    },
+    "C_osm = (300 × 150) / 300 = 150",
     "C_H2O = V − C_osm",
-    "= 150 − 150 = 0"
+    {
+     "s": "= 150 − 150 = 0",
+     "answer": true
+    }
    ],
    "audit": {
     "source_file": "preclinic/2/urinary/mcq/ข้อสอบ mcq/MCQ_KUB and Repro [Med PSU 42-43].pdf",
@@ -756,6 +756,14 @@
     "E": "urobilinogen ไม่มีสีและไม่ทำฟองเหลือง"
    },
    "key_concept": "• bilirubin ละลายน้ำ (conjugated) ขึ้นเมื่อ obstructive/hepatocellular jaundice\n• urobilinogen ↑: hemolysis, ตับอักเสบ · ↓ ใน obstruction\n• dipstick: ตรวจ bilirubin + urobilinogen แยกชนิด jaundice",
+   "mechanism": [
+    "ท่อน้ำดีอุดตันหรือตับอักเสบ conjugated bilirubin ในเลือดสูง",
+    "conjugated bilirubin ละลายน้ำ ถูกกรองออกทางปัสสาวะ",
+    {
+     "s": "bilirubin ในปัสสาวะ: สีน้ำตาลเหลือง เขย่าแล้วฟองเหลือง",
+     "answer": true
+    }
+   ],
    "audit": {
     "source_file": "preclinic/2/urinary/mcq/ข้อสอบ mcq/MCQ_KUB and Repro [Med PSU 42-43].pdf",
     "page": 4,
@@ -805,6 +813,15 @@
     "E": "crystal มักตกตะกอนเพิ่ม ไม่ใช่ลด"
    },
    "key_concept": "• ส่งตรวจภายใน 2 ชม. หรือแช่เย็น\n• ทิ้งนาน: แบคทีเรีย ↑, pH ↑ (urea→NH3), cast/เซลล์สลาย, crystal ตกตะกอน\n• glucose ลดจากแบคทีเรียใช้",
+   "mechanism": [
+    "ปัสสาวะทิ้งไว้ 2 ชั่วโมง",
+    "แบคทีเรียแบ่งตัว",
+    {
+     "s": "จำนวนแบคทีเรียเพิ่ม",
+     "answer": true
+    },
+    "urea แตกเป็น NH₃ pH สูงขึ้น"
+   ],
    "audit": {
     "source_file": "preclinic/2/urinary/mcq/ข้อสอบ mcq/MCQ_KUB and Repro [Med PSU 42-43].pdf",
     "page": 4,
@@ -858,11 +875,11 @@
    "key_concept": "• salicylate กระตุ้น respiratory center → hyperventilation → respiratory alkalosis\n• ไตชดเชยโดยขับ HCO3⁻ ออก (ปัสสาวะเป็นด่าง) · ลด NH4⁺ excretion\n• ผสม metabolic acidosis (AG ↑) จากกรด salicylic/lactate/ketone",
    "mechanism": [
     "salicylate เป็นพิษ",
+    "หายใจเร็ว → respiratory alkalosis",
     {
-     "s": "หายใจเร็ว → respiratory alkalosis",
+     "s": "urine HCO₃⁻ ↑, urine NH₄⁺ ↓, AG ↑ (กรดอินทรีย์สะสม)",
      "answer": true
     },
-    "ไตขับ HCO3⁻ (urine HCO3⁻ ↑ NH4⁺ ↓)",
     "กรดในเลือดสะสม → AG ↑"
    ],
    "audit": {
@@ -987,12 +1004,12 @@
    },
    "key_concept": "• uncompensated = ยังไม่มีการชดเชยทางระบบอื่น → pH ผิดปกติชัด\n• HCO3⁻/H2CO3 ปกติ 20:1 · ลดเมื่อ metabolic acidosis\n• fixed acid เช่น lactic, ketoacid, uremia",
    "mechanism": [
-    "fixed acid เข้ามามาก",
-    "HCO3⁻ ถูกใช้บัฟเฟอร์",
     {
-     "s": "pH ต่ำ (ยังไม่ชดเชย)",
+     "s": "fixed acid เข้ามามาก",
      "answer": true
     },
+    "HCO3⁻ ถูกใช้บัฟเฟอร์",
+    "pH ต่ำ (ยังไม่ชดเชย)",
     "ต่อมาหายใจเร็ว → PCO2 ↓ (compensated)"
    ],
    "audit": {
@@ -1374,6 +1391,14 @@
     "E": "ischemic heart disease ไม่ใช่ข้อบ่งใช้โดยตรง"
    },
    "key_concept": "• ข้อบ่งใช้ furosemide: pulmonary edema, CHF, edema จากตับ/ไต, hypercalcemia, ARF oliguria\n• side effect: ototoxicity, hypoK, hypoMg, hypoCa, hyperuricemia, metabolic alkalosis\n• ห้ามใช้ร่วม aminoglycoside (หูเสี่ยง)",
+   "mechanism": [
+    "furosemide บล็อก NKCC2 ที่ thick ascending limb",
+    "ขับ Na⁺ และน้ำออกมาก",
+    {
+     "s": "ใช้เพิ่มปัสสาวะใน acute renal failure (oliguric)",
+     "answer": true
+    }
+   ],
    "audit": {
     "source_file": "preclinic/2/urinary/mcq/ข้อสอบ mcq/MCQ_KUB and Repro [Med PSU 42-43].pdf",
     "page": 6,
@@ -1428,11 +1453,11 @@
    "key_concept": "• V2 antagonist: ขับน้ำอิสระ (aquaresis) เพิ่ม Na⁺ ในเลือด\n• V1a antagonist: ขยายหลอดเลือด · conivaptan = V1a/V2\n• ระวังแก้ Na⁺ เร็วเกิน (osmotic demyelination)",
    "mechanism": [
     "SIADH → ADH มากเกิน",
-    "น้ำคั่ง → hyponatremia",
     {
-     "s": "V1a/V2 antagonist ปิดตัวรับ",
+     "s": "น้ำคั่ง → hyponatremia",
      "answer": true
     },
+    "V1a/V2 antagonist ปิดตัวรับ",
     "AQP2 ลด → ขับน้ำอิสระ",
     "Na⁺ ในเลือดสูงขึ้น"
    ],
@@ -1491,6 +1516,15 @@
     "E": "FSGS: เป็นส่วน ๆ"
    },
    "key_concept": "• membranous: nephrotic ในผู้ใหญ่, HBV, SLE, ยา (NSAID), มะเร็ง · 'spike and dome' + granular IF\n• minimal change: เด็ก, EM เท่านั้น · FSGS: ผู้ใหญ่ HIV/heroin\n• nephrotic: proteinuria > 3.5 g/d, hypoalbuminemia, edema, hyperlipidemia",
+   "mechanism": [
+    "HBV antigen–antibody immune complex",
+    "immune complex สะสมใต้ podocyte (subepithelial)",
+    {
+     "s": "GBM หนาตัวแบบ diffuse จาก immune complex (membranous)",
+     "answer": true
+    },
+    "proteinuria ระดับ nephrotic"
+   ],
    "audit": {
     "source_file": "preclinic/2/urinary/mcq/ข้อสอบ mcq/MCQ_KUB and Repro [Med PSU 42-43].pdf",
     "page": 6,
@@ -1545,6 +1579,15 @@
     "E": "mesangial expansion → IgA/diabetic/MPGN"
    },
    "key_concept": "• RPGN: Type I anti-GBM (linear IF) · Type II immune complex · Type III pauci-immune (ANCA)\n• crescent ที่ Bowman space ทำให้ GFR ตกเร็ว (วันถึงสัปดาห์)\n• แยก: PSGN = lumpy-bumpy · RPGN = crescent",
+   "mechanism": [
+    "RPGN มี crescent",
+    {
+     "s": "epithelial cell ของ Bowman's capsule เพิ่มจำนวน",
+     "answer": true
+    },
+    "เกิด crescent",
+    "glomerulus ถูกกด GFR ตกเร็ว"
+   ],
    "audit": {
     "source_file": "preclinic/2/urinary/mcq/ข้อสอบ mcq/MCQ_KUB and Repro [Med PSU 42-43].pdf",
     "page": 6,
@@ -1596,6 +1639,14 @@
     "E": "urothelium → urothelial carcinoma (ไม่มี polycythemia)"
    },
    "key_concept": "• RCC: hematuria, flank pain, mass (triad) · paraneoplastic: EPO, PTHrP, renin, ACTH\n• clear cell RCC: VHL mutation (3p) · ฟอกเป็นสีเหลืองเมื่อตัด\n• เสี่ยง: บุหรี่, อ้วน, VHL",
+   "mechanism": [
+    "เนื้องอกไตสร้าง EPO",
+    {
+     "s": "renal cell carcinoma มาจาก proximal tubule",
+     "answer": true
+    },
+    "polycythemia + hematuria"
+   ],
    "audit": {
     "source_file": "preclinic/2/urinary/mcq/ข้อสอบ mcq/MCQ_KUB and Repro [Med PSU 42-43].pdf",
     "page": 6,
@@ -1656,12 +1707,12 @@
    "key_concept": "• RCC paraneoplastic: erythrocytosis (EPO), hypercalcemia (PTHrP), HTN (renin), Cushing (ACTH), amyloidosis\n• ข้อสอบนี้ต้นฉบับกับ AI ไม่ตรงกัน เก็บตามต้นฉบับ",
    "mechanism": [
     "clear cell RCC",
-    {
-     "s": "สร้าง EPO ผิดปกติ",
-     "answer": true
-    },
+    "สร้าง EPO ผิดปกติ",
     "ไขกระดูกสร้าง RBC มาก",
-    "polycythemia"
+    {
+     "s": "polycythemia",
+     "answer": true
+    }
    ],
    "audit": {
     "source_file": "preclinic/2/urinary/mcq/ข้อสอบ mcq/MCQ_KUB and Repro [Med PSU 42-43].pdf",
@@ -1714,6 +1765,14 @@
     "E": "RPGN เกิดเร็วเป็นสัปดาห์ ไม่ใช่เรื้อรัง"
    },
    "key_concept": "• broad (renal failure) cast = nephron ขยายจาก CKD\n• SG ตรึง 1.010–1.001 (isosthenuria) = ไตเสียหน้าที่ concentrate\n• anemia จาก EPO ลด · HTN จาก volume + renin",
+   "mechanism": [
+    "glomerulonephritis เรื้อรังทำลาย nephron ทีละน้อย",
+    {
+     "s": "chronic glomerulonephritis (ไตวายเรื้อรัง)",
+     "answer": true
+    },
+    "EPO ลดจึงซีด BUN/Cr สูง คลื่นไส้ บวม"
+   ],
    "audit": {
     "source_file": "preclinic/2/urinary/mcq/ข้อสอบ mcq/MCQ_KUB and Repro [Med PSU 42-43].pdf",
     "page": 7,
@@ -1814,6 +1873,14 @@
     "E": "obturator nerve (AI เติม) ไม่เกี่ยวกับ perineum"
    },
    "key_concept": "• pudendal n. (S2–4): external urethral/anal sphincter, ischiocavernosus, bulbospongiosus, sensation perineum\n• ปลายหยดสุดท้ายของปัสสาวะ/ การหลั่ง: bulbospongiosus บีบ\n• เป็นที่ gluteal region → ออก lesser sciatic foramen → Alcock's canal",
+   "mechanism": [
+    {
+     "s": "pudendal nerve เสีย กล้ามเนื้อหูรูดภายนอก/bulbospongiosus อัมพาต",
+     "answer": true
+    },
+    "กลั้นปัสสาวะไม่ได้/ขับไม่หมด",
+    "ปัสสาวะไม่สุด"
+   ],
    "audit": {
     "source_file": "preclinic/2/urinary/mcq/ข้อสอบ mcq/MCQ_KUB and Repro [Med PSU 42-43].pdf",
     "page": 7,
@@ -2144,6 +2211,14 @@
     "E": "✓ ischiorectal fossa (เฉลยต้นฉบับ)"
    },
    "key_concept": "• extravasation หลัง spongy urethra ฉีกใต้ perineal membrane → superficial pouch → scrotum, penis, ผนังหน้าท้องล่าง (ติด Colles' fascia)\n• ข้อนี้ต้นฉบับกับ AI ไม่ตรงกัน เก็บตามต้นฉบับ",
+   "mechanism": [
+    "ท่อปัสสาวะ penile แตก",
+    "ปัสสาวะรั่วใต้ Buck's fascia",
+    {
+     "s": "ลงสู่ perineal pouch/ischiorectal fossa",
+     "answer": true
+    }
+   ],
    "audit": {
     "source_file": "preclinic/2/urinary/mcq/ข้อสอบ mcq/MCQ_KUB and Repro [Med PSU 42-43].pdf",
     "page": 8,
@@ -2193,6 +2268,14 @@
     "E": "pelvic splanchnic อยู่ในอุ้งเชิงกราน"
    },
    "key_concept": "• ischiorectal fossa: fat + inferior rectal n./vessels, pudendal canal ที่ผนังข้าง\n• ติดเชื้อ/abscess ลามข้ามสองข้างผ่าน retroanal space\n• anal canal ผ่านกลางสอง fossa",
+   "mechanism": [
+    {
+     "s": "ischiorectal fossa มี inferior rectal nerve",
+     "answer": true
+    },
+    "ถูกทำลาย",
+    "รู้สึกและควบคุม sphincter ทวารเสีย"
+   ],
    "audit": {
     "source_file": "preclinic/2/urinary/mcq/ข้อสอบ mcq/MCQ_KUB and Repro [Med PSU 42-43].pdf",
     "page": 9,
@@ -2242,6 +2325,14 @@
     "E": "✓ crossing over (pachytene) เสร็จแล้ว และ chromatin พร้อมที่ diplotene"
    },
    "key_concept": "• ลำดับ prophase I: leptotene → zygotene → pachytene → diplotene → diakinesis\n• primary oocyte หยุดที่ diplotene จนถึงวัยเจริญพันธุ์ (LH surge ทำให้ต่อ)\n• meiosis II หยุดที่ metaphase II จนกว่าอสุจิเข้า",
+   "mechanism": [
+    "primordial follicle หยุดที่ prophase I",
+    {
+     "s": "crossing over ของ non-sister chromatid",
+     "answer": true
+    },
+    "เกิด genetic variation"
+   ],
    "audit": {
     "source_file": "preclinic/2/urinary/mcq/ข้อสอบ mcq/MCQ_KUB and Repro [Med PSU 42-43].pdf",
     "page": 9,
@@ -2293,6 +2384,14 @@
     "E": "ไม่ได้กระตุ้นการเคลื่อนที่ของ spermatocyte"
    },
    "key_concept": "• uterine tube epithelium: ciliated + peg (secretory) cell\n• ฮอร์โมน: estrogen เพิ่ม cilia · progesterone เพิ่มสารคัดหลั่ง\n• ท่อนำไข่ตีบ → ท้องนอกมดลูก/มีบุตรยาก",
+   "mechanism": [
+    "peg cell เป็น secretory cell ในท่อนำไข่",
+    "สร้าง secretion",
+    {
+     "s": "เลี้ยงไข่และอสุจิ",
+     "answer": true
+    }
+   ],
    "audit": {
     "source_file": "preclinic/2/urinary/mcq/ข้อสอบ mcq/MCQ_KUB and Repro [Med PSU 42-43].pdf",
     "page": 9,
@@ -2507,12 +2606,12 @@
    "key_concept": "• testosterone → DHT ด้วย 5α-reductase\n• DHT: prostate, penis/scrotum, ขน, สิว, ผมร่วง\n• finasteride (5α-reductase inhibitor) รักษา BPH",
    "mechanism": [
     "testosterone เข้าเซลล์ prostate",
-    {
-     "s": "5α-reductase → DHT",
-     "answer": true
-    },
+    "5α-reductase → DHT",
     "DHT จับ androgen receptor แรงกว่า",
-    "การเจริญของ prostate/อวัยวะเพศนอก"
+    {
+     "s": "การเจริญของ prostate/อวัยวะเพศนอก",
+     "answer": true
+    }
    ],
    "audit": {
     "source_file": "preclinic/2/urinary/mcq/ข้อสอบ mcq/MCQ_KUB and Repro [Med PSU 42-43].pdf",
@@ -2565,6 +2664,14 @@
     "E": "CT lower genital organ ไม่ใช่ตัวเลือกหลัก"
    },
    "key_concept": "• prostate ca: acinar adenocarcinoma, แพร่ไปกระดูก (osteoblastic) ผ่าน Batson's venous plexus\n• PSA สูงหลังรักษา = เหลือ/กลับมา\n• ตรวจ staging: bone scan + MRI/CT เมื่อ PSA สูงมาก",
+   "mechanism": [
+    "มะเร็งต่อมลูกหมาก คลำได้ผิวขรุขระแข็ง",
+    "แพร่ผ่าน vertebral venous plexus ไปกระดูก (osteoblastic)",
+    {
+     "s": "ตรวจ bone scan หาการแพร่กระจาย",
+     "answer": true
+    }
+   ],
    "audit": {
     "source_file": "preclinic/2/urinary/mcq/ข้อสอบ mcq/MCQ_KUB and Repro [Med PSU 42-43].pdf",
     "page": 10,
@@ -2827,6 +2934,14 @@
     "E": "AI เติมให้: Paget = เซลล์ใหญ่ที่หัวนม"
    },
    "key_concept": "• lobular: E-cadherin หาย, Indian file, เป็นได้สองเต้า, แพร่ GI/ovary/meninges\n• ductal (NST) พบบ่อยสุด\n• BRCA1: triple-negative/ basal-like",
+   "mechanism": [
+    "สูญเสีย CDH1 (E-cadherin)",
+    "เซลล์มะเร็งไม่ยึดกัน เรียงเป็นแถวเดี่ยว (Indian file)",
+    {
+     "s": "invasive lobular carcinoma",
+     "answer": true
+    }
+   ],
    "audit": {
     "source_file": "preclinic/2/urinary/mcq/ข้อสอบ mcq/MCQ_KUB and Repro [Med PSU 42-43].pdf",
     "page": 11,
@@ -3165,6 +3280,14 @@
     "E": "AI เติมให้: desire (Kaplan) อยู่ก่อน excitement"
    },
    "key_concept": "• Masters & Johnson: excitement → plateau → orgasm → resolution (+ refractory ในชาย)\n• orgasm ชาย: emission + ejaculation (sympathetic + pudendal)\n• orgasm หญิง: 0.8 วินาที/ครั้ง กล้ามเนื้อ 3–15 ครั้ง",
+   "mechanism": [
+    "สิ้นสุดการกระตุ้นทางเพศ",
+    "กล้ามเนื้อเชิงกรานบีบตัวเป็นจังหวะ",
+    {
+     "s": "orgasm phase",
+     "answer": true
+    }
+   ],
    "audit": {
     "source_file": "preclinic/2/urinary/mcq/ข้อสอบ mcq/MCQ_KUB and Repro [Med PSU 42-43].pdf",
     "page": 12,
@@ -3216,6 +3339,14 @@
     "E": "HSV เห็น multinucleated giant cell"
    },
    "key_concept": "• trichomoniasis: ตกขาวเหลืองเขียว ฟอง, strawberry cervix, pH > 4.5, motile flagellate\n• รักษา: metronidazole (คู่ด้วย)\n• แยก: BV (clue cell, whiff test), candida (curdy, hyphae)",
+   "mechanism": [
+    {
+     "s": "Trichomonas vaginalis (protozoa มี flagella)",
+     "answer": true
+    },
+    "เกาะเยื่อบุช่องคลอดทำให้อักเสบ",
+    "ตกขาวเขียวเหลืองเป็นฟอง wet smear เห็นตัวเคลื่อนที่"
+   ],
    "audit": {
     "source_file": "preclinic/2/urinary/mcq/ข้อสอบ mcq/MCQ_KUB and Repro [Med PSU 42-43].pdf",
     "page": 12,
@@ -3268,6 +3399,14 @@
     "E": "AI เติมให้: dysgerminoma (LDH)"
    },
    "key_concept": "• endometrial hyperplasia → endometrioid ca (type I, estrogen-driven, PTEN)\n• เสี่ยง: อ้วน, PCOS, estrogen โดดๆ, nulliparity\n• type II (serous) ไม่เกี่ยวกับ estrogen",
+   "mechanism": [
+    "estrogen กระตุ้น endometrium ต่อเนื่อง",
+    "ไม่มี progesterone ต้าน",
+    {
+     "s": "endometrial hyperplasia",
+     "answer": true
+    }
+   ],
    "audit": {
     "source_file": "preclinic/2/urinary/mcq/ข้อสอบ mcq/MCQ_KUB and Repro [Med PSU 42-43].pdf",
     "page": 12,
@@ -3320,6 +3459,14 @@
     "E": "3 อสุจิ + ไข่ไม่มี เป็นไปได้น้อย"
    },
    "key_concept": "• complete mole: 46,XX paternal ทั้งหมด · hCG สูงมาก · ไม่มีทารก · เสี่ยง choriocarcinoma\n• partial mole: 69,XXY · มีเนื้อเยื่อทารก/ชิ้นส่วน · hCG สูงน้อยกว่า\n• ภาพ US: snowstorm (complete)",
+   "mechanism": [
+    {
+     "s": "ไข่ปกติ 1 ใบ รับอสุจิ 2 ตัว",
+     "answer": true
+    },
+    "ได้ 69 โครโมโซม triploid",
+    "partial hydatidiform mole"
+   ],
    "audit": {
     "source_file": "preclinic/2/urinary/mcq/ข้อสอบ mcq/MCQ_KUB and Repro [Med PSU 42-43].pdf",
     "page": 13,
@@ -3371,6 +3518,14 @@
     "E": "AI เติมให้: mature cystic teratoma ประกอบด้วยเนื้อเยื่อที่โตเต็มวัย"
    },
    "key_concept": "• teratoma: ectoderm/mesoderm/endoderm · immature = มี neuroepithelium ปนอยู่ (ร้าย)\n• mature cystic (dermoid) พบมากสุด วัยเจริญพันธุ์ · อาจมี struma ovarii\n• ก้อนใหญ่ 20 ซม. ในหญิงสาว สงสัย germ cell tumor",
+   "mechanism": [
+    "germ cell เจริญเป็นหลาย germ layer",
+    "squamous, neuroepithelium",
+    {
+     "s": "mature teratoma รังไข่",
+     "answer": true
+    }
+   ],
    "audit": {
     "source_file": "preclinic/2/urinary/mcq/ข้อสอบ mcq/MCQ_KUB and Repro [Med PSU 42-43].pdf",
     "page": 13,
@@ -3487,6 +3642,14 @@
     "E": "เว้น 36 ชม. ไม่ถูก"
    },
    "key_concept": "• EC: levonorgestrel 1.5 mg ครั้งเดียว หรือ 0.75 mg × 2 (12 ชม.) ภายใน 72 ชม. (ดีสุดเร็วที่สุด)\n• Yuzpe: EE + norgestrel เว้น 12 ชม.\n• ทางเลือก: ulipristal (5 วัน), IUD ทองแดง (5 วัน)",
+   "mechanism": [
+    "ยาคุมฉุกเฉินเลื่อน/ยับยั้งการตกไข่",
+    {
+     "s": "levonorgestrel 0.75 mg ทันทีและซ้ำอีก 12 ชม.",
+     "answer": true
+    },
+    "ป้องกันการตั้งครรภ์ภายใน 72 ชม."
+   ],
    "audit": {
     "source_file": "preclinic/2/urinary/mcq/ข้อสอบ mcq/MCQ_KUB and Repro [Med PSU 42-43].pdf",
     "page": 13,
@@ -3536,6 +3699,14 @@
     "E": "✓ medroxyprogesterone acetate 150 mg ทุก 3 เดือน"
    },
    "key_concept": "• DMPA 150 mg IM ทุก 12–13 สัปดาห์ · NET-EN 200 mg ทุก 8 สัปดาห์\n• side effect DMPA: ประจำเดือนไม่มา, กระดูกบาง, น้ำหนักเพิ่ม, กลับมามีลูกช้า\n• Cyclofem (monthly) = progestin + estrogen",
+   "mechanism": [
+    {
+     "s": "medroxyprogesterone ยับยั้ง LH surge",
+     "answer": true
+    },
+    "ไม่ตกไข่",
+    "คุมกำเนิดได้ 3 เดือน"
+   ],
    "audit": {
     "source_file": "preclinic/2/urinary/mcq/ข้อสอบ mcq/MCQ_KUB and Repro [Med PSU 42-43].pdf",
     "page": 13,
@@ -3591,11 +3762,11 @@
     "estrogen เพียงอย่างเดียว",
     "เยื่อบุมดลูกโตต่อเนื่อง",
     "hyperplasia/atypia",
+    "progestin ทำให้ differentiate/หลุด",
     {
-     "s": "progestin ทำให้ differentiate/หลุด",
+     "s": "ลดความเสี่ยง endometrial cancer",
      "answer": true
-    },
-    "ลดความเสี่ยง endometrial cancer"
+    }
    ],
    "audit": {
     "source_file": "preclinic/2/urinary/mcq/ข้อสอบ mcq/MCQ_KUB and Repro [Med PSU 42-43].pdf",
@@ -3766,6 +3937,14 @@
     "E": "AI เลือกข้อนี้: nifedipine เป็น tocolytic ที่ใช้เช่นกัน"
    },
    "key_concept": "• preterm labor (24–34 สัปดาห์): tocolytic + steroid (ปอดทารก) + MgSO4 (neuroprotection)\n• tocolytic ใช้ได้ 48 ชม. รอ steroid\n• ข้อนี้ต้นฉบับกับ AI ไม่ตรงกัน เก็บตามต้นฉบับ",
+   "mechanism": [
+    {
+     "s": "salbutamol กระตุ้น β2 receptor ที่ myometrium",
+     "answer": true
+    },
+    "cAMP เพิ่ม กล้ามเนื้อมดลูกคลายตัว",
+    "ยับยั้งการหดตัวในการเจ็บครรภ์คลอดก่อนกำหนด"
+   ],
    "audit": {
     "source_file": "preclinic/2/urinary/mcq/ข้อสอบ mcq/MCQ_KUB and Repro [Med PSU 42-43].pdf",
     "page": 14,
@@ -3815,6 +3994,14 @@
     "E": "hyperglycemia เกิดได้เล็กน้อย แต่ tremor พบบ่อยกว่า"
    },
    "key_concept": "• β2: bronchodilation, tremor, tachycardia, hypoK, hyperglycemia, uterine relaxation\n• ใช้: asthma/ COPD, preterm labor, hyperK\n• ข้อนี้มีซ้ำในชุด (70, 110, 140)",
+   "mechanism": [
+    "salbutamol กระตุ้น β₂",
+    "กระตุ้น β₂ ที่กล้ามเนื้อลายด้วย",
+    {
+     "s": "เกิดสั่น (tremor)",
+     "answer": true
+    }
+   ],
    "audit": {
     "source_file": "preclinic/2/urinary/mcq/ข้อสอบ mcq/MCQ_KUB and Repro [Med PSU 42-43].pdf",
     "page": 14,
@@ -4086,6 +4273,14 @@
     "E": "✓ เฉลยต้นฉบับ: ความล้มเหลวของการรวมผนังหน้าท้อง/เชิงกรานช่วง 1 เดือนแรก"
    },
    "key_concept": "• ผนังหน้าท้องส่วนล่างปิดโดย mesoderm ระหว่าง cloacal membrane สัปดาห์ที่ 4–6\n• bladder exstrophy/epispadias เกิดจาก defect ตรงนี้\n• ข้อนี้ต้นฉบับกับ AI ไม่ตรงกัน เก็บตามต้นฉบับ",
+   "mechanism": [
+    {
+     "s": "ผนังหน้าท้องส่วนล่างและเชิงกรานเชื่อมกันไม่สมบูรณ์ในระยะตัวอ่อน",
+     "answer": true
+    },
+    "ผนังด้านหน้ากระเพาะปัสสาวะไม่เกิด",
+    "bladder exstrophy เยื่อบุกระเพาะปัสสาวะโผล่ที่หน้าท้อง"
+   ],
    "audit": {
     "source_file": "preclinic/2/urinary/mcq/ข้อสอบ mcq/MCQ_KUB and Repro [Med PSU 42-43].pdf",
     "page": 15,
@@ -4135,6 +4330,14 @@
     "E": "priapism: แข็งตัวค้างเจ็บ"
    },
    "key_concept": "• phimosis ในเด็ก: physiologic จนอายุ 3–5 ปี · ถ้ายังเป็น: steroid cream → ขลิบ\n• paraphimosis = ฉุกเฉิน (หัวขาดเลือด)\n• balanitis xerotica obliterans ทำให้เป็นรอยตีบ",
+   "mechanism": [
+    {
+     "s": "phimosis: ปลายหนังหุ้มองคชาตตีบ รูดไม่ได้",
+     "answer": true
+    },
+    "ปัสสาวะออกไม่สะดวก",
+    "ปัสสาวะขังในหนังหุ้มปลาย ป่องเวลาปัสสาวะ"
+   ],
    "audit": {
     "source_file": "preclinic/2/urinary/mcq/ข้อสอบ mcq/MCQ_KUB and Repro [Med PSU 42-43].pdf",
     "page": 16,
@@ -4186,6 +4389,14 @@
     "E": "priapism: แข็งตัวค้างเจ็บ"
    },
    "key_concept": "• paraphimosis: หนังรั้งกลับแล้วไม่กลับ → บวม เจ็บ เสี่ยง gangrene\n• แก้: compression + manual reduction → dorsal slit\n• ข้อนี้ต้นฉบับกับ AI ไม่ตรงกัน เก็บตามต้นฉบับ",
+   "mechanism": [
+    "หนังหุ้มปลายถูกรูดค้างไว้หลัง glans",
+    "รัดจนเลือดดำและน้ำเหลืองคั่ง",
+    {
+     "s": "paraphimosis: glans บวมและเจ็บ",
+     "answer": true
+    }
+   ],
    "audit": {
     "source_file": "preclinic/2/urinary/mcq/ข้อสอบ mcq/MCQ_KUB and Repro [Med PSU 42-43].pdf",
     "page": 16,
@@ -4235,6 +4446,14 @@
     "E": "K. granulomatis → Donovan body (granuloma inguinale)"
    },
    "key_concept": "• gonorrhea: purulent urethral discharge, Gram-neg intracellular diplococci\n• non-specific urethritis มักเป็น Chlamydia\n• รักษา: ceftriaxone + (doxycycline/azithro ครอบคลุม chlamydia)",
+   "mechanism": [
+    {
+     "s": "Neisseria gonorrhoeae (gram-negative diplococci รูปเมล็ดกาแฟ)",
+     "answer": true
+    },
+    "เกาะเยื่อบุท่อปัสสาวะด้วย pili",
+    "urethritis ปัสสาวะแสบ มีหนองไหล"
+   ],
    "audit": {
     "source_file": "preclinic/2/urinary/mcq/ข้อสอบ mcq/MCQ_KUB and Repro [Med PSU 42-43].pdf",
     "page": 16,
@@ -4284,6 +4503,14 @@
     "E": "✓ pampiniform plexus (หลอดเลือดดำ)"
    },
    "key_concept": "• ซ้ายพบบ่อย: left testicular vein ไหลมุมฉากเข้า left renal vein\n• คลำ 'bag of worms' ยืนแล้วเด่น\n• ผลต่อ spermatogenesis: อุณหภูมิ ↑ → infertility",
+   "mechanism": [
+    "เลือดดำ left testicular vein ไหลเข้า left renal vein",
+    "ความดันสูงหรือถูกกด",
+    {
+     "s": "pampiniform plexus ขยาย varicocele",
+     "answer": true
+    }
+   ],
    "audit": {
     "source_file": "preclinic/2/urinary/mcq/ข้อสอบ mcq/MCQ_KUB and Repro [Med PSU 42-43].pdf",
     "page": 16,
@@ -4382,6 +4609,14 @@
     "E": "penile nerve block คือยาชา"
    },
    "key_concept": "• vasectomy: ตัด ductus deferens ที่ scrotum · ตรวจน้ำอสุจิ 3 เดือนหลังทำ\n• ยังมี testosterone ปกติ (testis ยังทำงาน)\n• เปลี่ยนกลับ (vasovasostomy) ไม่รับประกัน",
+   "mechanism": [
+    "ตัดท่อ vas deferens",
+    "อสุจิไม่ออกมาในน้ำอสุจิ",
+    {
+     "s": "คุมกำเนิดชาย vasectomy",
+     "answer": true
+    }
+   ],
    "audit": {
     "source_file": "preclinic/2/urinary/mcq/ข้อสอบ mcq/MCQ_KUB and Repro [Med PSU 42-43].pdf",
     "page": 17,
@@ -4582,6 +4817,14 @@
     "E": "AI เติมให้: cryptorchidism เป็นความผิดปกติแต่กำเนิด"
    },
    "key_concept": "• mumps orchitis: หลังวัยรุ่น ~25–30% ของชายติดเชื้อ ส่วนใหญ่ข้างเดียว\n• ผลข้างเคียง: atrophy, ลดการสร้างอสุจิ\n• ป้องกัน: วัคซีน MMR",
+   "mechanism": [
+    "คางทูม ไวรัสติดต่อมน้ำลายและอัณฑะ",
+    "orchitis",
+    {
+     "s": "อสุจิเสียหาย เป็นหมัน",
+     "answer": true
+    }
+   ],
    "audit": {
     "source_file": "preclinic/2/urinary/mcq/ข้อสอบ mcq/MCQ_KUB and Repro [Med PSU 42-43].pdf",
     "page": 18,
@@ -4738,11 +4981,11 @@
    "key_concept": "• C_PAH ≈ RPF (PAH ถูกขับเกือบหมด) · RBF = RPF/(1 − Hct)\n• inulin = GFR · PAH = RPF\n• โจทย์น่าจะจำคำถามผิด (ถาม RPF แต่เขียน RBF) ผู้เฉลยตั้งข้อสังเกตไว้",
    "mechanism": [
     "V = 1, U_PAH = 16, P_PAH = 0.02",
+    "RPF = U × V / P = 16/0.02",
     {
-     "s": "RPF = U × V / P = 16/0.02",
+     "s": "= 800 mL/min",
      "answer": true
     },
-    "= 800 mL/min",
     "(RBF = RPF ÷ (1 − Hct) ≈ 1,333)"
    ],
    "audit": {
@@ -4857,7 +5100,7 @@
    "mechanism": [
     "GFR และ RBF สูงเกิน",
     {
-     "s": "afferent หด → RBF ลดลง",
+     "s": "afferent หด (constrict) + efferent ขยาย (dilate)",
      "answer": true
     },
     "efferent ขยาย → P_GC ลด → GFR ลดลง",
@@ -4971,12 +5214,12 @@
    },
    "key_concept": "• hyponatremia แยกตาม volume: hypovolemic (เสียเกลือ), euvolemic (SIADH, ไทรอยด์ต่ำ, polydipsia), hypervolemic (CHF, ตับ, ไต)\n• SIADH: urine osm สูง, Na⁺ ปัสสาวะสูง, ไม่บวม, แก้ด้วย fluid restriction/V2 antagonist\n• แก้ Na⁺ เร็วเกิน → osmotic demyelination",
    "mechanism": [
-    "ADH หลั่งมากไม่สัมพันธ์กับ osm",
-    "AQP2 ที่ collecting duct เพิ่ม",
     {
-     "s": "ดูดน้ำกลับมาก → ECF เจือจาง",
+     "s": "ADH หลั่งมากไม่สัมพันธ์กับ osm",
      "answer": true
     },
+    "AQP2 ที่ collecting duct เพิ่ม",
+    "ดูดน้ำกลับมาก → ECF เจือจาง",
     "Na⁺ ในเลือดต่ำ"
    ],
    "audit": {
@@ -5088,6 +5331,14 @@
     "E": "✓ ANP → GFR ↑"
    },
    "key_concept": "• ANP: ↑GFR, ↓Na⁺ reabsorb ที่ CD, ↓renin/aldosterone/ADH\n• ตัวเพิ่ม GFR: ANP, ↓π_GC, afferent ขยาย\n• ตัวลด GFR: sympathetic, NSAID, ANG II สูง",
+   "mechanism": [
+    {
+     "s": "ANP ขยาย afferent และหด efferent",
+     "answer": true
+    },
+    "ความดันใน glomerulus เพิ่ม",
+    "GFR เพิ่ม"
+   ],
    "audit": {
     "source_file": "preclinic/2/urinary/mcq/ข้อสอบ mcq/MCQ_KUB and Repro [Med PSU 42-43].pdf",
     "page": 20,
@@ -5138,11 +5389,11 @@
    },
    "key_concept": "• acidosis → glutaminase ↑ → NH4⁺ ↑ → ขับพร้อม Cl⁻\n• hyperK ลด NH4⁺ ขับ (type 4 RTA) · hypoK เพิ่ม ammoniagenesis\n• urine anion gap (UAG) ใช้ประเมิน NH4⁺",
    "mechanism": [
-    "กรดในเลือดเพิ่ม",
     {
-     "s": "glutamine → NH4⁺ ใน PCT เพิ่ม",
+     "s": "กรดในเลือดเพิ่ม",
      "answer": true
     },
+    "glutamine → NH4⁺ ใน PCT เพิ่ม",
     "NH4⁺ ถูกขับ + HCO3⁻ ใหม่",
     "บัฟเฟอร์กรดได้มากขึ้น"
    ],
@@ -5247,11 +5498,11 @@
    },
    "key_concept": "• respiratory acidosis: pH ↓, PCO2 ↑ (ไตชดเชย HCO3⁻ ↑ ในเรื้อรัง)\n• COPD: V/Q mismatch, hypoxemia + hypercapnia\n• บอกจาก 3 ค่า: pH → ดูทิศ · PCO2 → ดูสาเหตุ respiratory",
    "mechanism": [
-    "COPD → air trapping",
     {
-     "s": "hypoventilation → CO2 retention",
+     "s": "COPD → air trapping",
      "answer": true
     },
+    "hypoventilation → CO2 retention",
     "PCO2 ↑ → H₂CO₃ ↑",
     "pH ↓ (respiratory acidosis)"
    ],
@@ -5306,6 +5557,14 @@
     "E": "AI เติมให้: glycogenolysis ใน medulla ไม่ใช่ประเด็น"
    },
    "key_concept": "• fasting: ตับ glycogenolysis → gluconeogenesis; ไตทำ ~20–25% ของ glucose ในช่วงอดนาน\n• ไต cortex ทำ gluconeogenesis (PEPCK) · medulla ใช้ glycolysis (ไม่มี mitochondria มาก)\n• acidosis เพิ่ม renal gluconeogenesis",
+   "mechanism": [
+    "อดอาหาร 10 ชั่วโมง",
+    "glycogen ลด",
+    {
+     "s": "gluconeogenesis ที่ไต cortex เพิ่ม",
+     "answer": true
+    }
+   ],
    "audit": {
     "source_file": "preclinic/2/urinary/mcq/ข้อสอบ mcq/MCQ_KUB and Repro [Med PSU 42-43].pdf",
     "page": 21,
@@ -5357,6 +5616,14 @@
     "E": "✓ glutamine metabolism ↑ (renal ammoniagenesis)"
    },
    "key_concept": "• กรดเรื้อรัง → glutaminase, GDH, PEPCK ↑ ในไต\n• NH4⁺ ขับเป็นบัฟเฟอร์ + สร้าง HCO3⁻ ใหม่\n• ammoniagenesis ใช้เวลา 2–3 วันถึงสูงสุด",
+   "mechanism": [
+    "metabolic acidosis",
+    "ไตเพิ่ม glutamine metabolism",
+    {
+     "s": "transamination ได้ NH₄⁺ ขับ H⁺ มากขึ้น",
+     "answer": true
+    }
+   ],
    "audit": {
     "source_file": "preclinic/2/urinary/mcq/ข้อสอบ mcq/MCQ_KUB and Repro [Med PSU 42-43].pdf",
     "page": 21,
@@ -5457,6 +5724,14 @@
     "E": "urobilinogen ไม่มีสีเหลืองน้ำตาลเขย่าแล้วเป็นฟอง"
    },
    "key_concept": "• conjugated bilirubin ละลายน้ำ ขับทางไตได้\n• urobilinogen ↑ ใน hemolysis · bilirubin ↑ ใน obstruction/ตับ\n• ข้อซ้ำกับข้อ 14",
+   "mechanism": [
+    "ท่อน้ำดีอุดตันหรือตับอักเสบ conjugated bilirubin ในเลือดสูง",
+    "conjugated bilirubin ละลายน้ำ ถูกกรองออกทางปัสสาวะ",
+    {
+     "s": "bilirubin ในปัสสาวะ: สีน้ำตาลเหลือง เขย่าแล้วฟองเหลือง",
+     "answer": true
+    }
+   ],
    "audit": {
     "source_file": "preclinic/2/urinary/mcq/ข้อสอบ mcq/MCQ_KUB and Repro [Med PSU 42-43].pdf",
     "page": 21,
@@ -5557,6 +5832,14 @@
     "E": "✓ acute glomerulonephritis"
    },
    "key_concept": "• glomerular hematuria: dysmorphic RBC (acanthocyte), RBC cast, proteinuria\n• non-glomerular: RBC รูปร่างปกติ ไม่มี cast\n• nephritic: HTN, hematuria, oliguria, edema",
+   "mechanism": [
+    "glomerulus อักเสบ RBC ผ่านผนัง",
+    "RBC บิดเบี้ยว dysmorphic",
+    {
+     "s": "RBC cast บ่ง glomerular bleeding",
+     "answer": true
+    }
+   ],
    "audit": {
     "source_file": "preclinic/2/urinary/mcq/ข้อสอบ mcq/MCQ_KUB and Repro [Med PSU 42-43].pdf",
     "page": 22,
@@ -5606,6 +5889,14 @@
     "E": "✓ labioscrotal swelling → scrotum (ชาย) / labia majora (หญิง)"
    },
    "key_concept": "• indifferent stage: tubercle, urethral fold, labioscrotal swelling\n• ชาย (DHT): tubercle → penis · fold → penile urethra · swelling → scrotum\n• หญิง: tubercle → clitoris · fold → labia minora · swelling → labia majora",
+   "mechanism": [
+    {
+     "s": "labioscrotal swelling ใน indifferent stage",
+     "answer": true
+    },
+    "ถ้ามี androgen",
+    "พัฒนาเป็น scrotum"
+   ],
    "audit": {
     "source_file": "preclinic/2/urinary/mcq/ข้อสอบ mcq/MCQ_KUB and Repro [Med PSU 42-43].pdf",
     "page": 22,
@@ -5870,6 +6161,15 @@
     "E": "metabolic alkalosis ทำให้ K⁺ ต่ำทางอ้อม"
    },
    "key_concept": "• digoxin แข่งกับ K⁺ ที่ Na⁺/K⁺-ATPase\n• เพิ่มพิษ: hypoK, hypoMg, hyperCa, ไตวาย\n• ข้อซ้ำกับข้อ 24",
+   "mechanism": [
+    "ให้ cardiac glycoside ร่วมกับ diuretic",
+    "diuretic ขับ K⁺ ออกทางปัสสาวะ",
+    {
+     "s": "hypokalemia",
+     "answer": true
+    },
+    "K⁺ ต่ำทำให้ digoxin จับ Na⁺/K⁺-ATPase มากขึ้น เสี่ยงพิษ"
+   ],
    "audit": {
     "source_file": "preclinic/2/urinary/mcq/ข้อสอบ mcq/MCQ_KUB and Repro [Med PSU 42-43].pdf",
     "page": 23,
@@ -5919,6 +6219,14 @@
     "E": "hyperglycemia เกิดได้เล็กน้อย"
    },
    "key_concept": "• β2: bronchodilation, tremor, tachycardia, hypoK\n• ข้อซ้ำกับข้อ 70, 140",
+   "mechanism": [
+    "salbutamol กระตุ้น β2 receptor",
+    "β2 ที่กล้ามเนื้อลายเพิ่มการหดตัวถี่",
+    {
+     "s": "tremor (มือสั่น)",
+     "answer": true
+    }
+   ],
    "audit": {
     "source_file": "preclinic/2/urinary/mcq/ข้อสอบ mcq/MCQ_KUB and Repro [Med PSU 42-43].pdf",
     "page": 23,
@@ -5970,6 +6278,14 @@
     "E": "AI เติมให้: furosemide ทำ hypokalemia ไม่ใช่ hyperkalemia"
    },
    "key_concept": "• loop diuretic: ototoxicity, hypoK, hypoMg, hypoCa, hyperuricemia, alkalosis\n• ระวังใช้ร่วม aminoglycoside\n• thiazide: hyperCa, hypoNa, hyperglycemia",
+   "mechanism": [
+    "furosemide บล็อก Na⁺-K⁺-2Cl⁻ cotransporter",
+    "NKCC1 ใน stria vascularis ของหูชั้นในถูกยับยั้ง endolymph ผิดปกติ",
+    {
+     "s": "hearing loss (ototoxicity)",
+     "answer": true
+    }
+   ],
    "audit": {
     "source_file": "preclinic/2/urinary/mcq/ข้อสอบ mcq/MCQ_KUB and Repro [Med PSU 42-43].pdf",
     "page": 24,
@@ -6021,6 +6337,14 @@
     "E": "chronic cystitis → squamous cell carcinoma (โดยเฉพาะ schistosomiasis)"
    },
    "key_concept": "• urothelial ca: บุหรี่, สารเคมี aniline/arylamine, cyclophosphamide, phenacetin\n• SCC กระเพาะปัสสาวะ: Schistosoma haematobium, นิ่วเรื้อรัง\n• อาการ: painless hematuria",
+   "mechanism": [
+    {
+     "s": "สูบบุหรี่",
+     "answer": true
+    },
+    "สารก่อมะเร็ง (aromatic amine) ถูกขับออกทางปัสสาวะ",
+    "สัมผัสเยื่อบุกระเพาะปัสสาวะนาน → urothelial carcinoma"
+   ],
    "audit": {
     "source_file": "preclinic/2/urinary/mcq/ข้อสอบ mcq/MCQ_KUB and Repro [Med PSU 42-43].pdf",
     "page": 24,
@@ -6071,11 +6395,11 @@
    },
    "key_concept": "• proximal tubule ผิดปกติ: ทั้ง glucose, amino acid, phosphate, bicarbonate รั่ว\n• distal RTA (type 1): hypoK + นิ่ว + ปัสสาวะด่าง\n• type 4: hyperK",
    "mechanism": [
-    "proximal tubule เสียหน้าที่",
     {
-     "s": "reabsorption ลด (glucose, amino acid, HCO3⁻)",
+     "s": "proximal tubule เสียหน้าที่ (proximal RTA)",
      "answer": true
     },
+    "reabsorption ลด (glucose, amino acid, HCO3⁻)",
     "glycosuria + aminoaciduria + acidosis",
     "K⁺ ถูกขับมาก → hypoK, อ่อนแรง"
    ],
@@ -6128,6 +6452,14 @@
     "E": "✓ ARPKD (PKHD1) + congenital hepatic fibrosis"
    },
    "key_concept": "• ARPKD: ทารก/เด็ก, Potter sequence, ตับแข็งแบบ congenital hepatic fibrosis\n• ADPKD: ผู้ใหญ่, PKD1/2, ซีสต์ตับ, berry aneurysm\n• แยก: ARPKD autosomal recessive (เด็ก)",
+   "mechanism": [
+    "PKHD1 (fibrocystin) กลายพันธุ์",
+    "ท่อไตส่วนเก็บและท่อน้ำดีในตับพัฒนาผิดปกติ",
+    {
+     "s": "ARPKD ร่วมกับ congenital hepatic fibrosis",
+     "answer": true
+    }
+   ],
    "audit": {
     "source_file": "preclinic/2/urinary/mcq/ข้อสอบ mcq/MCQ_KUB and Repro [Med PSU 42-43].pdf",
     "page": 24,
@@ -6330,6 +6662,15 @@
     "E": "AI เติมให้: genitofemoral ไม่เกี่ยว"
    },
    "key_concept": "• erection (parasympathetic) = point · emission (sympathetic) = shoot · ejaculation (somatic) = squirt\n• ข้อเดียวกับข้อ 34",
+   "mechanism": [
+    "ผ่าตัดต่อมลูกหมากใกล้ neurovascular bundle",
+    {
+     "s": "pelvic splanchnic nerve (parasympathetic S2–S4) ถูกทำลาย",
+     "answer": true
+    },
+    "ไม่มี NO หลอดเลือดใน corpora ไม่ขยาย",
+    "erectile dysfunction"
+   ],
    "audit": {
     "source_file": "preclinic/2/urinary/mcq/ข้อสอบ mcq/MCQ_KUB and Repro [Med PSU 42-43].pdf",
     "page": 25,
@@ -6479,6 +6820,15 @@
     "E": "superficial transverse perineal เป็น perineal muscle"
    },
    "key_concept": "• pelvic diaphragm = levator ani (puborectalis, pubococcygeus, iliococcygeus) + coccygeus\n• อ่อนแรง → prolapse, urinary incontinence\n• ฝึก Kegel ช่วยเสริม",
+   "mechanism": [
+    "คลอดบุตรหลายครั้ง",
+    "กล้ามเนื้อพื้นเชิงกรานยืดและบาดเจ็บ",
+    {
+     "s": "levator ani อ่อนแรง",
+     "answer": true
+    },
+    "อวัยวะในเชิงกรานหย่อน"
+   ],
    "audit": {
     "source_file": "preclinic/2/urinary/mcq/ข้อสอบ mcq/MCQ_KUB and Repro [Med PSU 42-43].pdf",
     "page": 26,
@@ -6630,6 +6980,14 @@
     "E": "epididymitis มักไม่ทำลาย spermatogenesis โดยตรง"
    },
    "key_concept": "• spermatogenesis ต้องอุณหภูมิ 2–4 °C ต่ำกว่า core\n• เพิ่มความร้อน: varicocele, cryptorchidism, ไข้, เสื้อรัด\n• ข้อนี้ต้นฉบับกับ AI ไม่ตรงกัน เก็บตามต้นฉบับ",
+   "mechanism": [
+    {
+     "s": "varicocele: pampiniform plexus ขยาย",
+     "answer": true
+    },
+    "เลือดคั่ง อุณหภูมิอัณฑะสูงขึ้น",
+    "spermatogenesis ลดลง"
+   ],
    "audit": {
     "source_file": "preclinic/2/urinary/mcq/ข้อสอบ mcq/MCQ_KUB and Repro [Med PSU 42-43].pdf",
     "page": 27,
@@ -6728,6 +7086,14 @@
     "E": "RB → retinoblastoma/osteosarcoma"
    },
    "key_concept": "• BRCA1 (17q): breast triple-negative, ovarian · BRCA2 (13q): breast ชาย, prostate, pancreas\n• TP53: Li-Fraumeni\n• ตรวจ + ทำ risk-reducing surgery",
+   "mechanism": [
+    {
+     "s": "BRCA1 กลายพันธุ์ (germline)",
+     "answer": true
+    },
+    "ซ่อม DNA double-strand break แบบ homologous recombination ไม่ได้",
+    "เสี่ยงมะเร็งเต้านมและรังไข่"
+   ],
    "audit": {
     "source_file": "preclinic/2/urinary/mcq/ข้อสอบ mcq/MCQ_KUB and Repro [Med PSU 42-43].pdf",
     "page": 27,
@@ -6878,11 +7244,11 @@
    },
    "key_concept": "• estrogen สูงต่อเนื่อง ~48 ชม. → positive feedback → LH surge\n• ไข่ตก ~36 ชม. หลัง surge\n• ข้อเดียวกับข้อ 55",
    "mechanism": [
-    "follicle โต → estrogen สูง",
     {
-     "s": "positive feedback ต่อ hypothalamus/pituitary",
+     "s": "follicle โต → estrogen สูง",
      "answer": true
     },
+    "positive feedback ต่อ hypothalamus/pituitary",
     "LH surge",
     "ไข่ตก"
    ],
@@ -6935,6 +7301,14 @@
     "E": "cloaca เกี่ยวกับทวาร/ทางเดินปัสสาวะ"
    },
    "key_concept": "• MRKH: primary amenorrhea, ovary ปกติ → secondary sex ปกติ\n• แยกจาก androgen insensitivity (46,XY, ไม่มีขนหัวหน่าว)\n• ตรวจ: US/MRI อุ้งเชิงกราน, karyotype",
+   "mechanism": [
+    {
+     "s": "Müllerian (paramesonephric) duct ไม่เจริญ",
+     "answer": true
+    },
+    "ไม่มี uterus และ vagina ส่วนบน",
+    "46,XX อวัยวะเพศภายนอกปกติแต่ไม่มีประจำเดือน"
+   ],
    "audit": {
     "source_file": "preclinic/2/urinary/mcq/ข้อสอบ mcq/MCQ_KUB and Repro [Med PSU 42-43].pdf",
     "page": 28,
@@ -6986,6 +7360,14 @@
     "E": "AI เติมให้: premature ejaculation ไม่เกี่ยวกับการหลั่งซ้ำ"
    },
    "key_concept": "• ชายมี refractory period (นาทีถึงชั่วโมง ยาวขึ้นตามอายุ)\n• หญิงอาจเกิด multiple orgasm\n• วงจร Masters–Johnson: excitement → plateau → orgasm → resolution (+ refractory)",
+   "mechanism": [
+    "ถึง orgasm แล้วหนึ่งครั้ง",
+    "ผู้ชายเข้าสู่ refractory period ซึ่งยาวขึ้นตามอายุ",
+    {
+     "s": "เป็นภาวะปกติ",
+     "answer": true
+    }
+   ],
    "audit": {
     "source_file": "preclinic/2/urinary/mcq/ข้อสอบ mcq/MCQ_KUB and Repro [Med PSU 42-43].pdf",
     "page": 28,
@@ -7040,6 +7422,14 @@
     "E": "AI เติมให้: dysgerminoma ไม่สร้าง estrogen"
    },
    "key_concept": "• granulosa cell tumor: estrogen ↑ → precocious puberty, hyperplasia, Call-Exner body\n• ข้อ 60 ต้นฉบับเฉลย endometrioid · ข้อ 132 เฉลย granulosa (ผู้เฉลยลังเล)\n• ข้อนี้ต้นฉบับกับ AI ไม่ตรงกัน เก็บตามต้นฉบับ",
+   "mechanism": [
+    {
+     "s": "granulosa cell tumor ของรังไข่",
+     "answer": true
+    },
+    "สร้าง estrogen",
+    "กระตุ้น endometrium หนาตัว (hyperplasia) ประจำเดือนผิดปกติ"
+   ],
    "audit": {
     "source_file": "preclinic/2/urinary/mcq/ข้อสอบ mcq/MCQ_KUB and Repro [Med PSU 42-43].pdf",
     "page": 28,
@@ -7205,6 +7595,14 @@
     "E": "AI เติมให้: gallstones เพิ่มความเสี่ยงเล็กน้อย"
    },
    "key_concept": "• ข้อห้ามยาคุมรวม: VTE เดิม, ไมเกรนมี aura, สูบบุหรี่ > 35 ปี, มะเร็งเต้านม, โรคตับ\n• ประโยชน์: ลดมะเร็งรังไข่/endometrium\n• เสี่ยงสูงสุด: DVT/PE",
+   "mechanism": [
+    "estrogen ในยาเม็ดคุมกำเนิดชนิดรวม",
+    "ตับสร้าง clotting factor เพิ่ม antithrombin ลด",
+    {
+     "s": "thromboembolism",
+     "answer": true
+    }
+   ],
    "audit": {
     "source_file": "preclinic/2/urinary/mcq/ข้อสอบ mcq/MCQ_KUB and Repro [Med PSU 42-43].pdf",
     "page": 29,
@@ -7311,6 +7709,14 @@
     "E": "AI เติมให้: mifepristone = antiprogestin"
    },
    "key_concept": "• SERM: tamoxifen (breast ca), raloxifene (osteoporosis), clomiphene (ovulation induction)\n• ผลข้างเคียง raloxifene: VTE, hot flashes\n• ยาอื่น osteoporosis: bisphosphonate, denosumab, teriparatide",
+   "mechanism": [
+    {
+     "s": "raloxifene (SERM) เป็น agonist ที่ estrogen receptor ของกระดูก",
+     "answer": true
+    },
+    "ลด bone resorption",
+    "รักษา osteoporosis โดยไม่กระตุ้นเต้านม/มดลูก"
+   ],
    "audit": {
     "source_file": "preclinic/2/urinary/mcq/ข้อสอบ mcq/MCQ_KUB and Repro [Med PSU 42-43].pdf",
     "page": 29,
@@ -7412,6 +7818,14 @@
     "E": "carboprost ใช้ postpartum hemorrhage"
    },
    "key_concept": "• induction/augmentation: oxytocin · cervical ripening: dinoprostone (PGE2)/misoprostol\n• PPH: oxytocin, methylergonovine, carboprost, misoprostol\n• oxytocin: ระวัง water intoxication",
+   "mechanism": [
+    {
+     "s": "oxytocin จับ receptor ที่ myometrium",
+     "answer": true
+    },
+    "Ca²⁺ ในเซลล์เพิ่ม",
+    "มดลูกหดตัว ชักนำการคลอด"
+   ],
    "audit": {
     "source_file": "preclinic/2/urinary/mcq/ข้อสอบ mcq/MCQ_KUB and Repro [Med PSU 42-43].pdf",
     "page": 30,
@@ -7461,6 +7875,14 @@
     "E": "hyperglycemia เล็กน้อย"
    },
    "key_concept": "• β2: tremor, tachycardia, hypoK, hyperglycemia\n• ข้อซ้ำกับ 70, 110",
+   "mechanism": [
+    "salbutamol กระตุ้น β2 receptor",
+    "β2 ที่กล้ามเนื้อลายเพิ่มการหดตัวถี่",
+    {
+     "s": "tremor (มือสั่น)",
+     "answer": true
+    }
+   ],
    "audit": {
     "source_file": "preclinic/2/urinary/mcq/ข้อสอบ mcq/MCQ_KUB and Repro [Med PSU 42-43].pdf",
     "page": 30,
@@ -7661,6 +8083,14 @@
     "E": "BXO: ผิวหนังขาวแข็งที่ glans"
    },
    "key_concept": "• Peyronie: plaque ที่ tunica albuginea → โค้งงอ เจ็บ ED\n• สัมพันธ์: Dupuytren's contracture\n• รักษา: collagenase, ผ่าตัด",
+   "mechanism": [
+    "บาดเจ็บซ้ำที่ tunica albuginea",
+    "เกิด fibrous plaque",
+    {
+     "s": "Peyronie's disease: องคชาตโค้งเวลาแข็งตัว",
+     "answer": true
+    }
+   ],
    "audit": {
     "source_file": "preclinic/2/urinary/mcq/ข้อสอบ mcq/MCQ_KUB and Repro [Med PSU 42-43].pdf",
     "page": 31,

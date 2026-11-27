@@ -705,11 +705,11 @@
    },
    "key_concept": "• HER2 amplification: เต้านม กระเพาะ รังไข่ → trastuzumab\n• BRCA1/2 เป็น tumor suppressor ของ hereditary breast/ovarian",
    "mechanism": [
-    "ยีน ERBB2 (HER2) ถูก amplify ในเซลล์เต้านม/รังไข่",
     {
-     "s": "ตัวรับ HER2 ถูกแสดงออกมากเกิน",
+     "s": "ยีน ERBB2 (HER2) ถูก amplify ในเซลล์เต้านม/รังไข่",
      "answer": true
     },
+    "ตัวรับ HER2 ถูกแสดงออกมากเกิน",
     "ส่งสัญญาณเจริญเติบโตตลอดเวลา",
     "เซลล์มะเร็งแบ่งตัวเร็ว (ให้ trastuzumab ได้)"
    ],
@@ -763,11 +763,11 @@
    },
    "key_concept": "• BCR-ABL = constitutive tyrosine kinase → imatinib\n• จำคู่ translocation กับโรคให้ได้",
    "mechanism": [
-    "t(9;22) เกิด BCR-ABL",
     {
-     "s": "Tyrosine kinase ทำงานตลอดเวลา",
+     "s": "t(9;22) เกิด BCR-ABL",
      "answer": true
     },
+    "Tyrosine kinase ทำงานตลอดเวลา",
     "เม็ดเลือดขาวแบ่งตัวมากเกิน CML"
    ],
    "audit": {
@@ -928,11 +928,11 @@
    "key_concept": "• BCL2 ยับยั้ง apoptosis (ป้องกัน cytochrome c release)\n• Burkitt: MYC, Mantle cell: cyclin D1",
    "mechanism": [
     "t(14;18) ย้าย BCL2 ไปใต้ promoter ของ IgH",
+    "BCL2 ทำงานมากเกิน ยับยั้ง apoptosis",
     {
-     "s": "BCL2 ทำงานมากเกิน ยับยั้ง apoptosis",
+     "s": "เซลล์ B รอดนานและสะสมเป็น lymphoma",
      "answer": true
-    },
-    "เซลล์ B รอดนานและสะสมเป็น lymphoma"
+    }
    ],
    "audit": {
     "source_file": "preclinic/1/neoplasia/mcq/ข้อสอบ mcq/MCQ_Neoplasia [Med PSU 52].pdf",
@@ -1549,6 +1549,14 @@
     "E": "AI เห็นว่า tumor แสดง PD-L1 จับ PD-1 บน T cell เป็นกลไกที่แท้จริง (ตัวเลือกพิมพ์ว่า PD-1 บน tumor)"
    },
    "key_concept": "• Checkpoint: PD-1/PD-L1, CTLA-4 ทำให้ T cell exhaustion\n• Pembrolizumab/nivolumab: anti-PD-1",
+   "mechanism": [
+    "เซลล์มะเร็งแสดง PD-L1 จับ PD-1 บน T cell",
+    {
+     "s": "T cell ถูกยับยั้ง (สร้าง IL-10, หยุดทำงาน)",
+     "answer": true
+    },
+    "หลบภูมิคุ้มกัน"
+   ],
    "audit": {
     "source_file": "preclinic/1/neoplasia/mcq/ข้อสอบ mcq/MCQ_Neoplasia [Med PSU 52].pdf",
     "page": 9,
@@ -1656,6 +1664,14 @@
     "E": "Anti-angiogenesis เป็นของ bevacizumab"
    },
    "key_concept": "• mAb: ADCC, CDC, receptor blockade, checkpoint blockade\n• AI เห็นว่าหลายตัวเลือกถูก ข้อนี้เลือกตามเฉลยต้นฉบับ",
+   "mechanism": [
+    "monoclonal antibody จับ antigen บนเซลล์มะเร็ง",
+    "กระตุ้น complement",
+    {
+     "s": "complement-mediated cytotoxicity ทำลายเซลล์มะเร็ง",
+     "answer": true
+    }
+   ],
    "audit": {
     "source_file": "preclinic/1/neoplasia/mcq/ข้อสอบ mcq/MCQ_Neoplasia [Med PSU 52].pdf",
     "page": 10,
@@ -1910,6 +1926,14 @@
     "E": "PIK3CA เป็น oncogene พบ somatic"
    },
    "key_concept": "• BRCA1/2: autosomal dominant, DNA repair, ผู้หญิงอายุน้อย ประวัติครอบครัว\n• BRCA1 ยังเสี่ยงรังไข่",
+   "mechanism": [
+    {
+     "s": "BRCA1 germline mutation ถ่ายทอดในครอบครัว",
+     "answer": true
+    },
+    "ซ่อม DNA double-strand break ไม่ได้",
+    "เสี่ยงมะเร็งเต้านม (เป็นในหลายคน อายุน้อย)"
+   ],
    "audit": {
     "source_file": "preclinic/1/neoplasia/mcq/ข้อสอบ mcq/MCQ_Neoplasia [Med PSU 52].pdf",
     "page": 11,
@@ -2115,6 +2139,14 @@
     "E": "Radiologic technologist เสี่ยงรังสี ionizing"
    },
    "key_concept": "• SCC ผิวหนัง: UV, ผู้สูงอายุ, ผิวขาว\n• เขม่า (soot) → scrotal SCC (Percivall Pott)",
+   "mechanism": [
+    {
+     "s": "อาชีพตากแดด (lifeguard) รับรังสี UV มาก",
+     "answer": true
+    },
+    "UV ทำลาย DNA ของ keratinocyte",
+    "squamous cell carcinoma"
+   ],
    "audit": {
     "source_file": "preclinic/1/neoplasia/mcq/ข้อสอบ mcq/MCQ_Neoplasia [Med PSU 52].pdf",
     "page": 12,
@@ -2164,6 +2196,15 @@
     "E": "H. pylori สัมพันธ์มะเร็งกระเพาะ"
    },
    "key_concept": "• Oncogenic virus: HBV/HCV–HCC, HPV–cervix, EBV–NPC/Burkitt, HTLV-1–ATL\n• HBV integrate เข้า genome ได้",
+   "mechanism": [
+    {
+     "s": "HBV เข้าเซลล์ตับและอยู่ได้นาน",
+     "answer": true
+    },
+    "การอักเสบเรื้อรังและการสร้างเซลล์ใหม่ซ้ำ",
+    "การกลายพันธุ์สะสม",
+    "เกิด hepatocellular carcinoma (HCC)"
+   ],
    "audit": {
     "source_file": "preclinic/1/neoplasia/mcq/ข้อสอบ mcq/MCQ_Neoplasia [Med PSU 52].pdf",
     "page": 12,
@@ -2270,6 +2311,14 @@
     "E": "Colorectal ไม่เกี่ยวกับ CBD"
    },
    "key_concept": "• Courvoisier sign: painless jaundice + gallbladder โต → CA head ตับอ่อน/ท่อน้ำดี\n• Klatskin tumor: hilar cholangiocarcinoma",
+   "mechanism": [
+    {
+     "s": "extrahepatic cholangiocarcinoma ที่ท่อน้ำดีรวม",
+     "answer": true
+    },
+    "ก้อนอุดท่อน้ำดี",
+    "ตัวเหลือง (obstructive jaundice)"
+   ],
    "audit": {
     "source_file": "preclinic/1/neoplasia/mcq/ข้อสอบ mcq/MCQ_Neoplasia [Med PSU 52].pdf",
     "page": 13,
@@ -2320,11 +2369,11 @@
    },
    "key_concept": "• Cachexia mediators: TNF-α, IL-1, IL-6, PIF\n• Cachexia = ลดน้ำหนัก กล้ามเนื้อ ไขมัน",
    "mechanism": [
-    "มะเร็งหลั่ง cytokine (IL-6, TNF)",
     {
-     "s": "กระตุ้น proteolysis ในกล้ามเนื้อ",
+     "s": "มะเร็งหลั่ง cytokine (IL-6, TNF)",
      "answer": true
     },
+    "กระตุ้น proteolysis ในกล้ามเนื้อ",
     "กล้ามเนื้อสลาย",
     "Cachexia"
    ],
@@ -2379,12 +2428,12 @@
    "key_concept": "• SCLC: ectopic ACTH (Cushing), ADH (SIADH), Lambert–Eaton\n• SCC ปอด: PTHrP → hypercalcemia",
    "mechanism": [
     "Small cell carcinoma เป็น neuroendocrine tumor",
-    {
-     "s": "สร้าง ADH ออกมานอกที่ (ectopic)",
-     "answer": true
-    },
+    "สร้าง ADH ออกมานอกที่ (ectopic)",
     "ไตเก็บน้ำ Na ในเลือดต่ำ",
-    "SIADH"
+    {
+     "s": "SIADH",
+     "answer": true
+    }
    ],
    "audit": {
     "source_file": "preclinic/1/neoplasia/mcq/ข้อสอบ mcq/MCQ_Neoplasia [Med PSU 52].pdf",
@@ -2436,11 +2485,11 @@
    },
    "key_concept": "• AN พบบ่อย: insulin resistance/obesity/PCOS\n• AN รุนแรงฉับพลันในผู้สูงอายุ: หา gastric adenocarcinoma",
    "mechanism": [
-    "Gastric adenocarcinoma หลั่ง growth factor (TGF-α)",
     {
-     "s": "กระตุ้น keratinocyte และ fibroblast ผิวหนัง",
+     "s": "Gastric adenocarcinoma หลั่ง growth factor (TGF-α)",
      "answer": true
     },
+    "กระตุ้น keratinocyte และ fibroblast ผิวหนัง",
     "ผิวหนาและเม็ดสีเพิ่ม",
     "Acanthosis nigricans (paraneoplastic)"
    ],
@@ -2595,11 +2644,11 @@
    },
    "key_concept": "• Chemo: ไม่จำเพาะต่อมะเร็ง กระทบเซลล์แบ่งตัวเร็วทุกชนิด\n• ผลข้างเคียงทั่วไป: alopecia, mucositis, myelosuppression",
    "mechanism": [
-    "ยาเคมีบำบัดทำลายเซลล์ที่แบ่งตัวเร็ว",
     {
-     "s": "Matrix ของรูขุมขนถูกทำลาย",
+     "s": "ยาเคมีบำบัดทำลายเซลล์ที่แบ่งตัวเร็ว",
      "answer": true
     },
+    "Matrix ของรูขุมขนถูกทำลาย",
     "ผมร่วง (anagen effluvium)"
    ],
    "audit": {
@@ -2801,11 +2850,11 @@
    },
    "key_concept": "• Radiosensitive: G2/M, resistant: late S\n• Hypoxia ทำให้ดื้อรังสี",
    "mechanism": [
-    "เซลล์ในระยะ late S มี homologous recombination ซ่อม DNA",
     {
-     "s": "ซ่อม DNA ที่ถูกรังสีทำลายได้ดี",
+     "s": "เซลล์ในระยะ late S มี homologous recombination ซ่อม DNA",
      "answer": true
     },
+    "ซ่อม DNA ที่ถูกรังสีทำลายได้ดี",
     "เซลล์รอดจากรังสี",
     "ดื้อรังสีมากสุดในระยะนี้"
    ],
@@ -2904,11 +2953,11 @@
    "mechanism": [
     "รังสีโดนเยื่อบุลำไส้",
     "เซลล์เยื่อบุที่แบ่งตัวเร็วตาย",
+    "การดูดซึมเสียและเยื่อบุอักเสบ",
     {
-     "s": "การดูดซึมเสียและเยื่อบุอักเสบ",
+     "s": "ท้องเสียระยะสั้น",
      "answer": true
-    },
-    "ท้องเสียระยะสั้น"
+    }
    ],
    "audit": {
     "source_file": "preclinic/1/neoplasia/mcq/ข้อสอบ mcq/MCQ_Neoplasia [Med PSU 52].pdf",

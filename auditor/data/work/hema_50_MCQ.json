@@ -556,12 +556,12 @@
    },
    "key_concept": "• PK deficiency: chronic hemolytic anemia, echinocyte\n• RBC พึ่ง glycolysis อย่างเดียวผลิต ATP",
    "mechanism": [
-    "PK ขาด",
-    "ATP จาก glycolysis ลด",
     {
-     "s": "Na/K-ATPase และ membrane pump เสีย",
+     "s": "PK ขาด",
      "answer": true
     },
+    "ATP จาก glycolysis ลด",
+    "Na/K-ATPase และ membrane pump เสีย",
     "RBC แตกง่าย"
    ],
    "audit": {
@@ -615,11 +615,11 @@
    "key_concept": "• hypoxia → 2,3-BPG ↑ → right shift\n• COPD เรื้อรังมี polycythemia ร่วม",
    "mechanism": [
     "COPD มี hypoxia",
-    "bisphosphoglycerate mutase เพิ่ม",
     {
-     "s": "2,3-BPG สูงขึ้น",
+     "s": "bisphosphoglycerate mutase เพิ่ม",
      "answer": true
     },
+    "2,3-BPG สูงขึ้น",
     "Hb ปล่อย O2 ง่ายขึ้น"
    ],
    "audit": {
@@ -1476,12 +1476,12 @@
    },
    "key_concept": "• sideroblastic: ring sideroblast, iron สูง\n• B6 → ALAS (heme) และ tryptophan → niacin",
    "mechanism": [
-    "B6 ขาด",
-    "ALAS ขาด cofactor",
     {
-     "s": "heme synthesis ลด iron สะสมใน mitochondria",
+     "s": "B6 ขาด",
      "answer": true
     },
+    "ALAS ขาด cofactor",
+    "heme synthesis ลด iron สะสมใน mitochondria",
     "hypochromic microcytic + iron สูง"
    ],
    "audit": {
@@ -1763,12 +1763,12 @@
    },
    "key_concept": "• vWD: mucocutaneous bleeding\n• aPTT ยาวจาก FVIII ต่ำ",
    "mechanism": [
-    "vWF ขาด",
-    "platelet adhesion เสียและ FVIII ไม่เสถียร",
     {
-     "s": "เลือดออกเยื่อเมือก, aPTT ยาว",
+     "s": "von Willebrand disease: vWF ขาด",
      "answer": true
     },
+    "platelet adhesion เสียและ FVIII ไม่เสถียร",
+    "เลือดออกเยื่อเมือก, aPTT ยาว",
     "ประจำเดือนมาก ช้ำง่าย"
    ],
    "audit": {
@@ -1922,7 +1922,7 @@
     "SLE สร้าง anti-ADAMTS13",
     "ultralarge vWF ไม่ถูกตัด",
     {
-     "s": "platelet microthrombi",
+     "s": "platelet microthrombi (TTP)",
      "answer": true
     },
     "schistocyte + ไตเสีย + เกล็ดเลือดต่ำ"
@@ -2019,6 +2019,14 @@
     "E": "PAI สูงทำให้เสีย fibrinolysis แต่ไม่ใช่ APS"
    },
    "key_concept": "• APS: thrombosis + pregnancy loss + aPTT ยาว (ไม่แก้ด้วยเลือดปกติ)\n• รักษา warfarin/heparin",
+   "mechanism": [
+    {
+     "s": "lupus anticoagulant (antiphospholipid antibody)",
+     "answer": true
+    },
+    "กระตุ้นการแข็งตัวในร่างกาย (paradoxical)",
+    "หลอดเลือดดำอุดตันซ้ำ แท้งซ้ำ"
+   ],
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 50].pdf",
     "page": 8,
@@ -2306,6 +2314,14 @@
     "D": "✓ ET: platelet สูงมาก CBC อื่นปกติ เสี่ยง thrombosis"
    },
    "key_concept": "• ET: JAK2/CALR/MPL\n• รักษา hydroxyurea, aspirin",
+   "mechanism": [
+    {
+     "s": "essential thrombocythemia: เกล็ดเลือดสูงมาก",
+     "answer": true
+    },
+    "เกล็ดเลือดทำงานผิดปกติ เกิดลิ่มเลือด",
+    "ischemic stroke"
+   ],
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 50].pdf",
     "page": 10,
@@ -2404,6 +2420,14 @@
     "E": "✓ PML–RARα ตอบ ATRA"
    },
    "key_concept": "• APL: DIC, ATRA\n• t(15;17) → PML–RARα",
+   "mechanism": [
+    "การย้ายตำแหน่งโครโมโซม 15 กับ 17",
+    "ยีน PML และ RARA ถูกรวมเป็น fusion gene",
+    {
+     "s": "t(15;17) สร้าง PML-RARA ซึ่งเป็นสาเหตุของ APL",
+     "answer": true
+    }
+   ],
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 50].pdf",
     "page": 10,
@@ -2655,6 +2679,14 @@
     "E": "✓ Passively transfused cytokines (IL-1,6,TNF)"
    },
    "key_concept": "• FNHTR จาก cytokine ใน platelet ที่เก็บ\n• Leukoreduction ลด",
+   "mechanism": [
+    "เก็บเกล็ดเลือดที่ 22 °C",
+    {
+     "s": "cytokine สะสมในถุงเลือดระหว่างเก็บ",
+     "answer": true
+    },
+    "ถ่ายเข้าผู้ป่วยทำให้มีไข้ (febrile reaction)"
+   ],
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 50].pdf",
     "page": 12,
@@ -2747,12 +2779,12 @@
    },
    "key_concept": "• CGD: catalase+ organism, NBT test ลบ\n• X-linked (CYBB) พบมากสุด",
    "mechanism": [
-    "NADPH oxidase กลายพันธุ์",
-    "ไม่สร้าง respiratory burst",
     {
-     "s": "ฆ่าแบคทีเรีย catalase-positive ไม่ได้",
+     "s": "NADPH oxidase กลายพันธุ์",
      "answer": true
     },
+    "ไม่สร้าง respiratory burst",
+    "ฆ่าแบคทีเรีย catalase-positive ไม่ได้",
     "granuloma ติดเชื้อซ้ำ"
    ],
    "audit": {

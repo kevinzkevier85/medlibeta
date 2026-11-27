@@ -20,7 +20,16 @@
     "D": "enzyme-linked ไม่ใช่",
     "E": "AI เติมให้: voltage-gated channel ไม่ใช่"
    },
-   "key_concept": "• Steroid hormone receptor อยู่ใน cytoplasm/nucleus\n• ผลช้าเพราะต้องถอดรหัส\n• Insulin = enzyme-linked"
+   "key_concept": "• Steroid hormone receptor อยู่ใน cytoplasm/nucleus\n• ผลช้าเพราะต้องถอดรหัส\n• Insulin = enzyme-linked",
+   "mechanism": [
+    "ฮอร์โมนละลายไขมันผ่านเยื่อหุ้มเซลล์",
+    "จับ receptor ในเซลล์/นิวเคลียส",
+    {
+     "s": "complex จับ DNA ที่ hormone response element ปรับ gene transcription",
+     "answer": true
+    },
+    "สังเคราะห์โปรตีนใหม่ ออกฤทธิ์ช้าแต่นาน"
+   ]
   },
   "18": {
    "choices_override": {
@@ -43,7 +52,16 @@
     "D": "AI เติมให้: HLA-B*15:02 (carbamazepine SJS)",
     "E": "AI เติมให้: TPMT (thiopurine)"
    },
-   "key_concept": "• SLCO1B1*5 → statin ระดับ ↑ → myopathy\n• OATP1B1 พา statin เข้าตับ\n• เปลี่ยนเป็น statin อื่นหรือลดขนาด"
+   "key_concept": "• SLCO1B1*5 → statin ระดับ ↑ → myopathy\n• OATP1B1 พา statin เข้าตับ\n• เปลี่ยนเป็น statin อื่นหรือลดขนาด",
+   "mechanism": [
+    {
+     "s": "simvastatin ต้องถูกนำเข้าตับผ่าน OATP1B1 (ยีน SLCO1B1)",
+     "answer": true
+    },
+    "variant ทำให้ transporter ทำงานลดลง",
+    "ระดับ statin ในเลือดสูงขึ้น",
+    "กล้ามเนื้อได้รับยามาก เกิด myopathy"
+   ]
   },
   "7": {
    "explanation": "UpToDate เป็นแหล่งอ้างอิงทางคลินิกที่น่าเชื่อถือที่สุดในตัวเลือก (evidence-based, ผ่านการทบทวน)",
@@ -65,7 +83,16 @@
     "D": "antimuscarinic ทำให้หัวใจเต้นเร็ว",
     "E": "urinary retention ไม่ใช่ urgency"
    },
-   "key_concept": "• Scopolamine: ง่วง ปากแห้ง ตามัว\n• ใช้แปะป้องกัน motion sickness\n• ผ่าน BBB ได้ดี"
+   "key_concept": "• Scopolamine: ง่วง ปากแห้ง ตามัว\n• ใช้แปะป้องกัน motion sickness\n• ผ่าน BBB ได้ดี",
+   "mechanism": [
+    "scopolamine เป็น antimuscarinic ที่ละลายไขมันดี",
+    "ผ่าน blood–brain barrier ได้",
+    "บล็อก muscarinic receptor ในสมอง",
+    {
+     "s": "ง่วงซึม (sedation)",
+     "answer": true
+    }
+   ]
   },
   "13": {
    "explanation": "ยับยั้ง 5-lipoxygenase → leukotriene ลดลง",
@@ -116,7 +143,16 @@
     "D": "betaxolol β1 selective แต่ไม่ใช่ยาเลือกในครรภ์",
     "E": "amphetamine ไม่ใช่ยาลดความดัน"
    },
-   "key_concept": "• ความดันสูงในครรภ์: methyldopa, labetalol, nifedipine\n• asthma → เลี่ยง nonselective β-blocker\n• เลี่ยง ACEI/ARB ในครรภ์"
+   "key_concept": "• ความดันสูงในครรภ์: methyldopa, labetalol, nifedipine\n• asthma → เลี่ยง nonselective β-blocker\n• เลี่ยง ACEI/ARB ในครรภ์",
+   "mechanism": [
+    "หญิงตั้งครรภ์ความดันสูงและเป็นหืด",
+    "β-blocker เสี่ยงหลอดลมตีบ ส่วน ACEI/ARB เป็นพิษต่อทารก",
+    {
+     "s": "methyldopa กระตุ้น α2 ในสมอง ลด sympathetic outflow",
+     "answer": true
+    },
+    "ลดความดันโดยปลอดภัยต่อทารกและไม่กระทบหลอดลม"
+   ]
   },
   "17": {
    "explanation": "Warfarin pharmacogenetics: CYP2C9 (เมแทบอลิซึม) + VKORC1 (เป้าหมาย)",
@@ -127,7 +163,16 @@
     "D": "✓ CYP2C9 + VKORC1",
     "E": "CYP2C19 เกี่ยวกับ clopidogrel"
    },
-   "key_concept": "• CYP2C9 variant → warfarin ลด dose\n• VKORC1 variant → ไวต่อยา\n• HLA-B*15:02 → carbamazepine"
+   "key_concept": "• CYP2C9 variant → warfarin ลด dose\n• VKORC1 variant → ไวต่อยา\n• HLA-B*15:02 → carbamazepine",
+   "mechanism": [
+    {
+     "s": "warfarin ถูกเมแทบอไลต์โดย CYP2C9 และออกฤทธิ์ที่ VKORC1",
+     "answer": true
+    },
+    "variant ของ CYP2C9 ทำลายยาช้า; variant ของ VKORC1 ไวต่อยา",
+    "ขนาดปกติให้ฤทธิ์มากเกิน",
+    "INR สูง เลือดออกง่าย จึงต้องตรวจยีนเพื่อปรับขนาด"
+   ]
   },
   "20": {
    "explanation": "ข้อนี้ไฟล์เฉลยเลือก Pharmanet.co.th [AI เห็นว่า WebMD ไม่น่าเชื่อถือกว่า; MCQ 51 ข้อ 64 เฉลย WebMD]",

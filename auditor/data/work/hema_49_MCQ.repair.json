@@ -10,16 +10,7 @@
     "D": "✓ ประเด็นจริยธรรมเป็นของ ESC ไม่ใช่ pluripotent ทั้งหมด (iPSC ไม่มี)",
     "E": "การแยกและทำให้บริสุทธิ์เป็นปัญหาทางเทคนิค ไม่ใช่ข้อจำกัดหลัก"
    },
-   "key_concept": "• pluripotent: ESC, iPSC → เสี่ยง teratoma\n• iPSC ได้จากเซลล์ผู้ใหญ่ ลดปัญหาจริยธรรม",
-   "mechanism": [
-    "pluripotent cell แบ่งตัวไม่จำกัด",
-    "เซลล์ที่ไม่แยกตัวหลงเหลือหลังปลูกถ่าย",
-    {
-     "s": "เกิด teratoma/tumorigenesis",
-     "answer": true
-    },
-    "เป็นอุปสรรคทางคลินิก"
-   ]
+   "key_concept": "• pluripotent: ESC, iPSC → เสี่ยง teratoma\n• iPSC ได้จากเซลล์ผู้ใหญ่ ลดปัญหาจริยธรรม"
   },
   "2": {
    "explanation": "ปลูกถ่ายไขกระดูกเก็บ stem cell จากกระดูกเชิงกราน (iliac crest) เพราะมีไขกระดูกแดงมาก",
@@ -64,11 +55,11 @@
    "key_concept": "• HFE mutation → hepcidin ต่ำ\n• iron overload: liver cirrhosis, DM, skin bronze\n• รักษา phlebotomy",
    "mechanism": [
     "HFE กลายพันธุ์",
-    "hepcidin สร้างลดลง",
     {
-     "s": "ferroportin ทำงานมาก ดูดซึมเหล็กเพิ่ม",
+     "s": "hepcidin สร้างลดลง",
      "answer": true
     },
+    "ferroportin ทำงานมาก ดูดซึมเหล็กเพิ่ม",
     "iron overload"
    ]
   },
@@ -116,11 +107,11 @@
    "mechanism": [
     "PIGA กลายพันธุ์",
     "CD55/CD59 ขาดบนเม็ดเลือด",
+    "complement ทำลาย RBC/platelet activation",
     {
-     "s": "complement ทำลาย RBC/platelet activation",
+     "s": "hemolysis + thrombosis",
      "answer": true
-    },
-    "hemolysis + thrombosis"
+    }
    ]
   },
   "8": {
@@ -165,12 +156,12 @@
    },
    "key_concept": "• megaloblastic: macro-ovalocyte, hypersegmented PMN, MCV สูง\n• B12/folate ขาด",
    "mechanism": [
-    "B12/folate ขาด",
-    "DNA synthesis ช้า RNA ปกติ",
     {
-     "s": "nuclear–cytoplasmic asynchrony",
+     "s": "B12/folate ขาด",
      "answer": true
     },
+    "DNA synthesis ช้า RNA ปกติ",
+    "nuclear–cytoplasmic asynchrony",
     "macro-ovalocyte, hypersegmented neutrophil"
    ]
   },
@@ -227,12 +218,12 @@
    },
    "key_concept": "• DDAVP: เพิ่ม FVIII และ vWF 2–4 เท่า\n• ใช้ mild hemophilia A, vWD type 1",
    "mechanism": [
-    "DDAVP จับ V2 บน endothelium",
-    "Weibel–Palade body หลั่งออก",
     {
-     "s": "FVIII/vWF ในเลือดเพิ่ม",
+     "s": "DDAVP จับ V2 บน endothelium",
      "answer": true
     },
+    "Weibel–Palade body หลั่งออก",
+    "FVIII/vWF ในเลือดเพิ่ม",
     "cascade ทำงานดีขึ้น"
    ]
   },
@@ -245,7 +236,15 @@
     "D": "eosinophil พบในโรคแพ้เรื้อรัง/ปรสิต",
     "E": "✓ basophil/mast cell มี IgE ปล่อย histamine"
    },
-   "key_concept": "• aspirin → COX inhibition → leukotriene เพิ่ม\n• basophil/mast cell degranulate"
+   "key_concept": "• aspirin → COX inhibition → leukotriene เพิ่ม\n• basophil/mast cell degranulate",
+   "mechanism": [
+    "แพ้ aspirin กระตุ้น mast cell/basophil",
+    {
+     "s": "basophil หลั่ง histamine",
+     "answer": true
+    },
+    "ผื่นคันเฉียบพลัน"
+   ]
   },
   "16": {
    "explanation": "ไข้ ติดเชื้อ + ไม่มี neutrophil = agranulocytosis",
@@ -256,7 +255,15 @@
     "D": "hypersplenism ลดทุก lineage ปานกลาง",
     "E": "✓ neutrophil <500 ทำให้ติดเชื้อรุนแรง"
    },
-   "key_concept": "• agranulocytosis: ANC <500, drug-induced (clozapine, PTU, dipyrone)\n• ติดเชื้อรุนแรงรวดเร็ว"
+   "key_concept": "• agranulocytosis: ANC <500, drug-induced (clozapine, PTU, dipyrone)\n• ติดเชื้อรุนแรงรวดเร็ว",
+   "mechanism": [
+    "ยา (เช่น PTU/sulfa) กด granulocyte precursor",
+    {
+     "s": "neutrophil ต่ำมาก (agranulocytosis)",
+     "answer": true
+    },
+    "ติดเชื้อง่าย มีไข้"
+   ]
   },
   "17": {
    "explanation": "Warfarin + เลือดออก GI: ต้องหยุด warfarin ให้ vit K IV และ FFP (ตามเฉลย D แต่ข้อความระบุ 'ให้ต่อ' เป็นข้อบกพร่องของตัวเลือก)",
@@ -280,12 +287,12 @@
    },
    "key_concept": "• thalassemia ได้เลือดบ่อย เกิด alloantibody: Rh, Kell, Duffy\n• DHTR: 3–14 วันหลังให้เลือด",
    "mechanism": [
-    "เลือดซ้ำ ๆ ใน thalassemia",
-    "antibody ระดับต่ำ ตรวจ IAT ไม่พบ",
     {
-     "s": "กระตุ้น anamnestic response",
+     "s": "ให้เลือดซ้ำใน thalassemia ถูกกระตุ้นสร้าง anti-Kell",
      "answer": true
     },
+    "antibody ระดับต่ำ ตรวจ IAT ไม่พบ",
+    "กระตุ้น anamnestic response",
     "delayed hemolysis หลัง 10 วัน"
    ]
   },
@@ -333,12 +340,12 @@
    },
    "key_concept": "• TTP: fever, MAHA, thrombocytopenia, renal, neuro\n• ADAMTS13 ขาด → ultralarge vWF",
    "mechanism": [
-    "ADAMTS13 ขาด",
-    "ultralarge vWF จับ platelet",
     {
-     "s": "microthrombi ในหลอดเลือดเล็ก",
+     "s": "TTP: ADAMTS13 ขาด",
      "answer": true
     },
+    "ultralarge vWF จับ platelet",
+    "microthrombi ในหลอดเลือดเล็ก",
     "MAHA + เกล็ดเลือดต่ำ + ไตเสีย"
    ]
   },
@@ -424,12 +431,12 @@
    },
    "key_concept": "• lead: basophilic stippling, microcytic\n• ยับยั้ง ALAD และ ferrochelatase\n• รักษา chelation (EDTA, DMSA)",
    "mechanism": [
-    "ตะกั่วเข้าร่างกาย",
-    "ยับยั้ง ALAD/ferrochelatase และ P5N",
     {
-     "s": "heme synthesis ลด RNA ไม่ถูกย่อย",
+     "s": "ตะกั่วเข้าร่างกาย",
      "answer": true
     },
+    "ยับยั้ง ALAD/ferrochelatase และ P5N",
+    "heme synthesis ลด RNA ไม่ถูกย่อย",
     "basophilic stippling + โลหิตจาง"
    ]
   }

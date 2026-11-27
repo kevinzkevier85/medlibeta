@@ -226,6 +226,15 @@
    "source": "import",
    "audit_ref": "cvs_50_MCQ_005",
    "key_concept": "• Disc ยื่นไปด้านหน้า → กด splanchnic nerves/sympathetic trunk; ยื่นหลัง-ข้าง → กด spinal nerve\n• Greater splanchnic (T5–T9) → ปวด epigastrium\n• ไฟล์เฉลยรุ่นนี้ตอบ C ตรงกับที่ผู้ใช้ตัดสินแก้ 52_MCQ ข้อ 5",
+   "mechanism": [
+    "disc herniation T8–T9 กดเส้นประสาท",
+    "ปวดท้องร้าวจาก visceral",
+    {
+     "s": "เส้นประสาทที่ผ่านระดับนี้คือ greater splanchnic nerve",
+     "answer": true
+    },
+    "นำความรู้สึกปวดเข้า spinal cord"
+   ],
    "option_why": {
     "A": "Intercostal n. ถูกกดเมื่อ disc ยื่นไปด้านหลัง-ข้าง",
     "B": "Vagus อยู่หน้า esophagus",
@@ -354,6 +363,14 @@
    "source": "import",
    "audit_ref": "cvs_50_MCQ_010",
    "key_concept": "• ASD ที่ปาก SVC = sinus venosus type มักมี anomalous pulmonary venous return ร่วม\n• secundum ASD (ตรง fossa ovalis) พบบ่อยที่สุด\n• primum ASD เกิดจาก endocardial cushion defect",
+   "mechanism": [
+    "ASD ทำให้เลือด L→R",
+    "เลือดไหลเข้า RA ก่อน",
+    {
+     "s": "เกิด sinus venosus ASD",
+     "answer": true
+    }
+   ],
    "option_why": {
     "A": "Endocardial cushion → primum ASD",
     "B": "Foramen ovale → secundum ASD",
@@ -443,14 +460,13 @@
    "audit_ref": "cvs_50_MCQ_017",
    "key_concept": "• โจทย์ถามผลของ 'BP ที่ลด' = ผลของ baroreceptor reflex\n• Reflex เพิ่ม HR, contractility, TPR และลด venous compliance (venoconstriction ดันเลือดกลับหัวใจ)\n• โจทย์คลาสสิกจาก Costanzo Physiology — คำตอบคือ venous compliance/unstressed volume\n• Trap: CO ลดจริงแต่เป็นผลของ blood volume ที่หาย ไม่ใช่ผลของ reflex",
    "mechanism": [
-    "เสียเลือด 35% → BP ↓",
-    "Baroreceptor firing ↓",
-    "Sympathetic ↑",
+    "เสียเลือด 35% blood volume ลด",
+    "venous return ลด",
     {
-     "s": "Venoconstriction → venous compliance ↓ (unstressed volume ↓)",
+     "s": "cardiac output ลด ทำให้ BP ลด",
      "answer": true
     },
-    "+ HR ↑, contractility ↑, TPR ↑ → พยายามรักษา BP"
+    "baroreflex ชดเชย: HR, contractility, TPR เพิ่ม"
    ],
    "option_why": {
     "A": "เสนอ — baroreflex → venoconstriction → venous compliance (unstressed volume) ลดลง",
@@ -493,6 +509,14 @@
    "source": "import",
    "audit_ref": "cvs_50_MCQ_024",
    "key_concept": "• Ventricular myocyte: phase 0 = fast Na⁺, phase 2 = L-type Ca²⁺, phase 3 = K⁺\n• SA/AV node: phase 0 = L-type Ca²⁺ (ช้า) — ไม่มี fast Na⁺\n• Trap: อย่าสับสน upstroke ของ pacemaker cell (Ca²⁺) กับ myocyte (Na⁺)",
+   "mechanism": [
+    "phase 0 คือ upstroke",
+    {
+     "s": "Na⁺ channel เปิดเร็ว",
+     "answer": true
+    },
+    "ทำให้ depolarize เร็ว"
+   ],
    "option_why": {
     "A": "✓ fast voltage-gated Na⁺ inward current (INa) ทำ phase 0",
     "B": "K⁺ ทำ repolarization; Ca²⁺ (L-type) ทำ plateau phase 2 และ phase 0 ของ SA/AV node"
@@ -534,6 +558,14 @@
    "source": "import",
    "audit_ref": "cvs_50_MCQ_026",
    "key_concept": "• Intrinsic rate: SA node 60–100 (70–80), AV node/junction 40–60, His bundle ~40, Purkinje 15–40\n• Complete AV block → escape จากส่วนล่าง ventricle ช้า 20–40 และ QRS กว้าง",
+   "mechanism": [
+    "AV node ถูกบล็อกสมบูรณ์",
+    "escape rhythm ที่ ventricle ช้า",
+    {
+     "s": "HR 20–40 bpm",
+     "answer": true
+    }
+   ],
    "option_why": {
     "A": "0–20 ต่ำเกินไป (Purkinje อยู่ 15–40)",
     "B": "✓ ventricular/His–Purkinje escape ~20–40/min",
@@ -579,13 +611,13 @@
    "audit_ref": "cvs_50_MCQ_032",
    "key_concept": "• EDV ขึ้นกับ venous return และ filling time\n• ลด EDV: เสียเลือด, ขาดน้ำ, ยืนตรง (pooling), tachycardia มาก",
    "mechanism": [
-    "Exercise",
+    {
+     "s": "Exercise",
+     "answer": true
+    },
     "Muscle pump + respiratory pump + venoconstriction",
     "Venous return ↑",
-    {
-     "s": "EDV ↑ (preload ↑)",
-     "answer": true
-    }
+    "EDV ↑ (preload ↑)"
    ],
    "option_why": {
     "A": "Hemorrhage → volume ↓ → EDV ↓",
@@ -726,11 +758,11 @@
    "audit_ref": "cvs_50_MCQ_048",
    "key_concept": "• Valsalva = หายใจออกแรงขณะ glottis ปิด → intrathoracic pressure สูง\n• เกิดในการยกของหนัก เบ่งถ่าย ไอแรง\n• ทำให้ SBP/DBP สูงขึ้นมากขณะยกน้ำหนัก (ซ้ำกับแนวข้อ static exercise)",
    "mechanism": [
-    "ยกของหนัก → เบ่งกลั้นหายใจ (glottis ปิด)",
     {
-     "s": "Intrathoracic pressure ↑",
+     "s": "ยกของหนัก → เบ่งกลั้นหายใจ (glottis ปิด)",
      "answer": true
     },
+    "Intrathoracic pressure ↑",
     "Venous return ↓ → CO ↓",
     "Baroreflex → HR ↑ (phase II) แล้ว BP overshoot + bradycardia หลังปล่อย (phase IV)"
    ],
@@ -822,6 +854,14 @@
    "source": "import",
    "audit_ref": "cvs_50_MCQ_054",
    "key_concept": "• Nitrates: ADR สำคัญ = throbbing headache, flushing, hypotension\n• β-blocker (propranolol, metoprolol) และ verapamil ใช้ป้องกัน migraine ได้ → เหมาะใน HTN + migraine\n• Trap: β-blocker ไม่ใช่ข้อห้าม แต่เป็นตัวเลือกที่ดีในผู้ป่วยกลุ่มนี้",
+   "mechanism": [
+    "ความดันสูงและไมเกรน",
+    {
+     "s": "nitrate ขยายหลอดเลือดสมอง",
+     "answer": true
+    },
+    "ห้ามใช้"
+   ],
    "option_why": {
     "A": "✓ nitrate ขยายหลอดเลือดสมอง → ปวดศีรษะรุนแรง ทำ migraine แย่ลง",
     "B": "Metoprolol ใช้ป้องกัน migraine ได้ (และรักษา HTN)",
@@ -867,12 +907,12 @@
    "audit_ref": "cvs_50_MCQ_056",
    "key_concept": "• ห้ามใช้ nitrate ทุกรูปแบบภายใน 24 ชม. หลัง sildenafil (48 ชม. หลัง tadalafil)\n• ซ้ำ 52_MCQ ข้อ 56",
    "mechanism": [
-    "Nitrate → NO → cGMP ↑",
-    "Sildenafil ยับยั้ง PDE5",
     {
-     "s": "cGMP คั่ง → vasodilation รุนแรง",
+     "s": "Isosorbide dinitrate (nitrate) → NO → cGMP ↑",
      "answer": true
     },
+    "Sildenafil ยับยั้ง PDE5",
+    "cGMP คั่ง → vasodilation รุนแรง",
     "Syncope + severe hypotension"
    ],
    "option_why": {
@@ -919,6 +959,14 @@
    "source": "import",
    "audit_ref": "cvs_50_MCQ_060",
    "key_concept": "• WPW = accessory pathway (bundle of Kent) ข้าม AV node → pre-excitation\n• ECG triad: PR สั้น (< 0.12 s), delta wave (slurred upstroke), QRS กว้าง\n• delta wave เป็นลักษณะที่จำเพาะที่สุด",
+   "mechanism": [
+    "WPW มี accessory pathway",
+    "impulse ผ่านทางนั้นเร็วขึ้น",
+    {
+     "s": "เกิด delta wave และ PR สั้น",
+     "answer": true
+    }
+   ],
    "option_why": {
     "A": "ตรงข้าม — WPW ทำ PR สั้น",
     "B": "QRS กว้างและ slurred upstroke จริง แต่คำว่า 'slurred QRS duration' ไม่ชัด",
@@ -963,6 +1011,14 @@
    "source": "import",
    "audit_ref": "cvs_50_MCQ_062",
    "key_concept": "• ห้ามในครรภ์: ACEi, ARB, direct renin inhibitor\n• ปลอดภัย: methyldopa, labetalol, nifedipine (hydralazine IV ใน acute)",
+   "mechanism": [
+    {
+     "s": "captopril (ACE inhibitor) ห้ามใช้ในครรภ์",
+     "answer": true
+    },
+    "รบกวนการสร้างไตของทารก",
+    "ไตทารกผิดปกติ oligohydramnios"
+   ],
    "option_why": {
     "A": "✓ ACE inhibitor ห้ามในครรภ์ (fetal renal toxicity)",
     "B": "Methyldopa ปลอดภัยในครรภ์ (first-line)",
@@ -1306,6 +1362,14 @@
    "source": "import",
    "audit_ref": "cvs_50_MCQ_079",
    "key_concept": "• ยาที่ลด mortality ใน HFrEF: ARNI/ACEi/ARB, β-blocker (carvedilol, bisoprolol, metoprolol succinate), MRA, SGLT2i\n• ลดอาการ/การนอนรพ.แต่ไม่ลด mortality: loop diuretic, digoxin",
+   "mechanism": [
+    "HFrEF ยาช่วยลด mortality",
+    {
+     "s": "digoxin ไม่ลดการตาย",
+     "answer": true
+    },
+    "ใช้เพื่อคุมอาการ"
+   ],
    "option_why": {
     "A": "ARNI ลด mortality (PARADIGM-HF)",
     "B": "Evidence-based β-blocker ลด mortality",
@@ -1393,6 +1457,14 @@
    "source": "import",
    "audit_ref": "cvs_50_MCQ_082",
    "key_concept": "• Vulnerable plaque: thin cap, lipid core ใหญ่, inflammation\n• ซ้ำ 52_MCQ ข้อ 96",
+   "mechanism": [
+    {
+     "s": "plaque ที่มี thin fibrous cap และ lipid core ใหญ่",
+     "answer": true
+    },
+    "แตกง่าย",
+    "เกิด thrombus ทำให้ ACS"
+   ],
    "option_why": {
     "A": "✓ thin fibrous cap แตกง่าย → thrombosis → ACS",
     "B": "ไม่ใช่ลักษณะ",
@@ -1436,6 +1508,14 @@
    "source": "import",
    "audit_ref": "cvs_50_MCQ_085",
    "key_concept": "• SVC syndrome: สาเหตุหลักคือ malignancy (lung cancer, lymphoma)\n• ซ้ำ 52_MCQ ข้อ 99",
+   "mechanism": [
+    "บีบอัด SVC จากก้อนปอดมะเร็ง",
+    "เลือดดำจากแขน/หน้าคั่ง",
+    {
+     "s": "SVC syndrome",
+     "answer": true
+    }
+   ],
    "option_why": {
     "A": "PE ไม่ทำหน้า/แขนบวม",
     "B": "DVT ไม่ทำหน้าบวม",
@@ -1611,6 +1691,14 @@
    "source": "import",
    "audit_ref": "cvs_50_MCQ_096",
    "key_concept": "• Lymphedema = non-pitting, no inflammation\n• สาเหตุ: node dissection, radiation, filariasis\n• Pitting edema = hydrostatic ↑ / oncotic ↓",
+   "mechanism": [
+    "ตัดต่อมน้ำเหลืองรักแร้",
+    {
+     "s": "ท่อน้ำเหลืองอุดตัน",
+     "answer": true
+    },
+    "น้ำเหลืองคั่ง แขนบวม"
+   ],
    "option_why": {
     "A": "✓ ตัด lymph node → ระบายน้ำเหลืองไม่ได้ → โปรตีนคั่งในช่องว่าง ใต้ผิวไม่บุ๋ม",
     "B": "Over water intake ให้ pitting edema ทั่วตัว",
@@ -1721,6 +1809,14 @@
    "source": "import",
    "audit_ref": "cvs_50_MCQ_103",
    "key_concept": "• Resistance = ΔP / flow\n• ขณะพัก skeletal muscle flow ต่อ 100 g ต่ำมาก (~3–4 mL/min/100 g) เพราะ arteriolar tone สูง → resistance ต่อน้ำหนักสูงที่สุด และเพิ่ม flow ได้ ~20 เท่าตอนออกกำลังกาย\n• ถ้าคิดทั้งอวัยวะ อวัยวะที่ flow รวมน้อยจะมี resistance รวมสูง\n• Trap: ต้องดูว่าตารางในโจทย์คิดต่อน้ำหนักหรือทั้งอวัยวะ",
+   "mechanism": [
+    "ขณะพัก sympathetic โทนสูง",
+    "หลอดเลือดกล้ามเนื้อหดตัว",
+    {
+     "s": "resistance สูงที่ skeletal muscle",
+     "answer": true
+    }
+   ],
    "option_why": {
     "A": "Skin flow ต่ำขณะพักแต่ขึ้นกับอุณหภูมิ",
     "B": "Brain flow สูง resistance ต่ำ",

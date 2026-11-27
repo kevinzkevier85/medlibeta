@@ -568,11 +568,11 @@
    "audit_ref": "neo_52_MCQ_015",
    "key_concept": "• HER2 amplification: เต้านม กระเพาะ รังไข่ → trastuzumab\n• BRCA1/2 เป็น tumor suppressor ของ hereditary breast/ovarian",
    "mechanism": [
-    "ยีน ERBB2 (HER2) ถูก amplify ในเซลล์เต้านม/รังไข่",
     {
-     "s": "ตัวรับ HER2 ถูกแสดงออกมากเกิน",
+     "s": "ยีน ERBB2 (HER2) ถูก amplify ในเซลล์เต้านม/รังไข่",
      "answer": true
     },
+    "ตัวรับ HER2 ถูกแสดงออกมากเกิน",
     "ส่งสัญญาณเจริญเติบโตตลอดเวลา",
     "เซลล์มะเร็งแบ่งตัวเร็ว (ให้ trastuzumab ได้)"
    ],
@@ -620,11 +620,11 @@
    "audit_ref": "neo_52_MCQ_016",
    "key_concept": "• BCR-ABL = constitutive tyrosine kinase → imatinib\n• จำคู่ translocation กับโรคให้ได้",
    "mechanism": [
-    "t(9;22) เกิด BCR-ABL",
     {
-     "s": "Tyrosine kinase ทำงานตลอดเวลา",
+     "s": "t(9;22) เกิด BCR-ABL",
      "answer": true
     },
+    "Tyrosine kinase ทำงานตลอดเวลา",
     "เม็ดเลือดขาวแบ่งตัวมากเกิน CML"
    ],
    "option_why": {
@@ -767,11 +767,11 @@
    "key_concept": "• BCL2 ยับยั้ง apoptosis (ป้องกัน cytochrome c release)\n• Burkitt: MYC, Mantle cell: cyclin D1",
    "mechanism": [
     "t(14;18) ย้าย BCL2 ไปใต้ promoter ของ IgH",
+    "BCL2 ทำงานมากเกิน ยับยั้ง apoptosis",
     {
-     "s": "BCL2 ทำงานมากเกิน ยับยั้ง apoptosis",
+     "s": "เซลล์ B รอดนานและสะสมเป็น lymphoma",
      "answer": true
-    },
-    "เซลล์ B รอดนานและสะสมเป็น lymphoma"
+    }
    ],
    "option_why": {
     "A": "Osteosarcoma สัมพันธ์ RB/p53",
@@ -1316,6 +1316,14 @@
    "source": "import",
    "audit_ref": "neo_52_MCQ_031",
    "key_concept": "• Checkpoint: PD-1/PD-L1, CTLA-4 ทำให้ T cell exhaustion\n• Pembrolizumab/nivolumab: anti-PD-1",
+   "mechanism": [
+    "เซลล์มะเร็งแสดง PD-L1 จับ PD-1 บน T cell",
+    {
+     "s": "T cell ถูกยับยั้ง (สร้าง IL-10, หยุดทำงาน)",
+     "answer": true
+    },
+    "หลบภูมิคุ้มกัน"
+   ],
    "option_why": {
     "A": "CTLA-4 สูงกดการกระตุ้น T cell แต่ไม่ใช่ตัวเลือกที่เฉลยกำหนด",
     "B": "PD-1 ลดลงจะทำให้ T cell ทำงานเพิ่ม ไม่ใช่กลไกกด",
@@ -1411,6 +1419,14 @@
    "source": "import",
    "audit_ref": "neo_52_MCQ_033",
    "key_concept": "• mAb: ADCC, CDC, receptor blockade, checkpoint blockade\n• AI เห็นว่าหลายตัวเลือกถูก ข้อนี้เลือกตามเฉลยต้นฉบับ",
+   "mechanism": [
+    "monoclonal antibody จับ antigen บนเซลล์มะเร็ง",
+    "กระตุ้น complement",
+    {
+     "s": "complement-mediated cytotoxicity ทำลายเซลล์มะเร็ง",
+     "answer": true
+    }
+   ],
    "option_why": {
     "A": "Direct cytotoxicity เป็นของ antibody-drug conjugate",
     "B": "✓ CMC เป็นกลไกหนึ่งของ mAb (เช่น rituximab)",
@@ -1635,6 +1651,14 @@
    "source": "import",
    "audit_ref": "neo_52_MCQ_038",
    "key_concept": "• BRCA1/2: autosomal dominant, DNA repair, ผู้หญิงอายุน้อย ประวัติครอบครัว\n• BRCA1 ยังเสี่ยงรังไข่",
+   "mechanism": [
+    {
+     "s": "BRCA1 germline mutation ถ่ายทอดในครอบครัว",
+     "answer": true
+    },
+    "ซ่อม DNA double-strand break ไม่ได้",
+    "เสี่ยงมะเร็งเต้านม (เป็นในหลายคน อายุน้อย)"
+   ],
    "option_why": {
     "A": "NF1 ก่อ neurofibromatosis",
     "B": "PTEN ก่อ Cowden syndrome",
@@ -1816,6 +1840,14 @@
    "source": "import",
    "audit_ref": "neo_52_MCQ_042",
    "key_concept": "• SCC ผิวหนัง: UV, ผู้สูงอายุ, ผิวขาว\n• เขม่า (soot) → scrotal SCC (Percivall Pott)",
+   "mechanism": [
+    {
+     "s": "อาชีพตากแดด (lifeguard) รับรังสี UV มาก",
+     "answer": true
+    },
+    "UV ทำลาย DNA ของ keratinocyte",
+    "squamous cell carcinoma"
+   ],
    "option_why": {
     "A": "Surgeon ไม่ได้รับ UV มาก",
     "B": "Mechanic เสี่ยงน้ำมัน/สารเคมี",
@@ -1859,6 +1891,15 @@
    "source": "import",
    "audit_ref": "neo_52_MCQ_043",
    "key_concept": "• Oncogenic virus: HBV/HCV–HCC, HPV–cervix, EBV–NPC/Burkitt, HTLV-1–ATL\n• HBV integrate เข้า genome ได้",
+   "mechanism": [
+    {
+     "s": "HBV เข้าเซลล์ตับและอยู่ได้นาน",
+     "answer": true
+    },
+    "การอักเสบเรื้อรังและการสร้างเซลล์ใหม่ซ้ำ",
+    "การกลายพันธุ์สะสม",
+    "เกิด hepatocellular carcinoma (HCC)"
+   ],
    "option_why": {
     "A": "EBV สัมพันธ์ Burkitt, NPC",
     "B": "✓ HBV เป็นสาเหตุหลักของ HCC",
@@ -1953,6 +1994,14 @@
    "source": "import",
    "audit_ref": "neo_52_MCQ_046",
    "key_concept": "• Courvoisier sign: painless jaundice + gallbladder โต → CA head ตับอ่อน/ท่อน้ำดี\n• Klatskin tumor: hilar cholangiocarcinoma",
+   "mechanism": [
+    {
+     "s": "extrahepatic cholangiocarcinoma ที่ท่อน้ำดีรวม",
+     "answer": true
+    },
+    "ก้อนอุดท่อน้ำดี",
+    "ตัวเหลือง (obstructive jaundice)"
+   ],
    "option_why": {
     "A": "✓ Extrahepatic cholangiocarcinoma ก่อก้อนในท่อน้ำดีโดยตรง",
     "B": "HCC อยู่ในเนื้อตับ มักไม่อุดตัน CBD",
@@ -1997,11 +2046,11 @@
    "audit_ref": "neo_52_MCQ_047",
    "key_concept": "• Cachexia mediators: TNF-α, IL-1, IL-6, PIF\n• Cachexia = ลดน้ำหนัก กล้ามเนื้อ ไขมัน",
    "mechanism": [
-    "มะเร็งหลั่ง cytokine (IL-6, TNF)",
     {
-     "s": "กระตุ้น proteolysis ในกล้ามเนื้อ",
+     "s": "มะเร็งหลั่ง cytokine (IL-6, TNF)",
      "answer": true
     },
+    "กระตุ้น proteolysis ในกล้ามเนื้อ",
     "กล้ามเนื้อสลาย",
     "Cachexia"
    ],
@@ -2050,12 +2099,12 @@
    "key_concept": "• SCLC: ectopic ACTH (Cushing), ADH (SIADH), Lambert–Eaton\n• SCC ปอด: PTHrP → hypercalcemia",
    "mechanism": [
     "Small cell carcinoma เป็น neuroendocrine tumor",
-    {
-     "s": "สร้าง ADH ออกมานอกที่ (ectopic)",
-     "answer": true
-    },
+    "สร้าง ADH ออกมานอกที่ (ectopic)",
     "ไตเก็บน้ำ Na ในเลือดต่ำ",
-    "SIADH"
+    {
+     "s": "SIADH",
+     "answer": true
+    }
    ],
    "option_why": {
     "A": "Polycythemia พบใน renal/HCC",
@@ -2101,11 +2150,11 @@
    "audit_ref": "neo_52_MCQ_049",
    "key_concept": "• AN พบบ่อย: insulin resistance/obesity/PCOS\n• AN รุนแรงฉับพลันในผู้สูงอายุ: หา gastric adenocarcinoma",
    "mechanism": [
-    "Gastric adenocarcinoma หลั่ง growth factor (TGF-α)",
     {
-     "s": "กระตุ้น keratinocyte และ fibroblast ผิวหนัง",
+     "s": "Gastric adenocarcinoma หลั่ง growth factor (TGF-α)",
      "answer": true
     },
+    "กระตุ้น keratinocyte และ fibroblast ผิวหนัง",
     "ผิวหนาและเม็ดสีเพิ่ม",
     "Acanthosis nigricans (paraneoplastic)"
    ],
@@ -2205,11 +2254,11 @@
    "audit_ref": "neo_52_MCQ_052",
    "key_concept": "• Chemo: ไม่จำเพาะต่อมะเร็ง กระทบเซลล์แบ่งตัวเร็วทุกชนิด\n• ผลข้างเคียงทั่วไป: alopecia, mucositis, myelosuppression",
    "mechanism": [
-    "ยาเคมีบำบัดทำลายเซลล์ที่แบ่งตัวเร็ว",
     {
-     "s": "Matrix ของรูขุมขนถูกทำลาย",
+     "s": "ยาเคมีบำบัดทำลายเซลล์ที่แบ่งตัวเร็ว",
      "answer": true
     },
+    "Matrix ของรูขุมขนถูกทำลาย",
     "ผมร่วง (anagen effluvium)"
    ],
    "option_why": {
@@ -2350,11 +2399,11 @@
    "audit_ref": "neo_52_MCQ_056",
    "key_concept": "• Radiosensitive: G2/M, resistant: late S\n• Hypoxia ทำให้ดื้อรังสี",
    "mechanism": [
-    "เซลล์ในระยะ late S มี homologous recombination ซ่อม DNA",
     {
-     "s": "ซ่อม DNA ที่ถูกรังสีทำลายได้ดี",
+     "s": "เซลล์ในระยะ late S มี homologous recombination ซ่อม DNA",
      "answer": true
     },
+    "ซ่อม DNA ที่ถูกรังสีทำลายได้ดี",
     "เซลล์รอดจากรังสี",
     "ดื้อรังสีมากสุดในระยะนี้"
    ],
@@ -2404,11 +2453,11 @@
    "mechanism": [
     "รังสีโดนเยื่อบุลำไส้",
     "เซลล์เยื่อบุที่แบ่งตัวเร็วตาย",
+    "การดูดซึมเสียและเยื่อบุอักเสบ",
     {
-     "s": "การดูดซึมเสียและเยื่อบุอักเสบ",
+     "s": "ท้องเสียระยะสั้น",
      "answer": true
-    },
-    "ท้องเสียระยะสั้น"
+    }
    ],
    "option_why": {
     "A": "✓ ท้องเสียจากลำไส้ถูกฉายรังสี",

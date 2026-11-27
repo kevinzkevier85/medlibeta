@@ -176,13 +176,13 @@
    },
    "key_concept": "• GLUT2: low affinity high capacity → ทำงานเมื่อ glucose สูง (ตับ, β-cell, ลำไส้, ไต) = glucose sensor\n• GLUT1 (RBC, สมอง), GLUT3 (neuron), GLUT4 (muscle, adipose — insulin), GLUT5 (fructose)\n• ขั้นแรกของการหลั่ง insulin: glucose → GLUT2 → glucokinase → ATP",
    "mechanism": [
-    {
-     "s": "GLUT2 ทำงานลดลง",
-     "answer": true
-    },
+    "GLUT2 ทำงานลดลง",
     "glucose เข้า β-cell ช้า → ATP ↑ ช้า",
     "insulin หลั่งน้อย/ช้า + ตับรับ glucose น้อย",
-    "glucose ในเลือดสูง (โดยเฉพาะหลังอาหาร)"
+    {
+     "s": "glucose ในเลือดสูง (โดยเฉพาะหลังอาหาร)",
+     "answer": true
+    }
    ],
    "audit": {
     "source_file": "preclinic/2/endocrine/mcq/ข้อสอบ mcq/MCQ_Endocrine [Med PSU 49].pdf",
@@ -308,11 +308,11 @@
    "mechanism": [
     "หลังอาหาร glucose ↑ → insulin ↑",
     "insulin → PI3K/Akt ที่ muscle",
+    "GLUT4 translocation → muscle glucose uptake ↑",
     {
-     "s": "GLUT4 translocation → muscle glucose uptake ↑",
+     "s": "ตับ: glycogenesis ↑ glycogenolysis ↓",
      "answer": true
-    },
-    "ตับ: glycogenesis ↑ glycogenolysis ↓"
+    }
    ],
    "audit": {
     "source_file": "preclinic/2/endocrine/mcq/ข้อสอบ mcq/MCQ_Endocrine [Med PSU 49].pdf",
@@ -562,11 +562,11 @@
    "key_concept": "• ขน TG: chylomicron (อาหาร, apoB-48) และ VLDL (ตับ, apoB-100)\n• ขน cholesterol: LDL (ไปเนื้อเยื่อ) และ HDL (กลับตับ)\n• VLDL → (LPL) → IDL → (hepatic lipase) → LDL",
    "mechanism": [
     "ตับสร้าง TG จาก carb/FFA ส่วนเกิน",
-    "บรรจุเป็น VLDL ปล่อยเข้าเลือด",
     {
-     "s": "LPL ที่ capillary ตัด TG → FFA",
+     "s": "บรรจุเป็น VLDL ปล่อยเข้าเลือด",
      "answer": true
     },
+    "LPL ที่ capillary ตัด TG → FFA",
     "muscle ใช้ · adipose เก็บ"
    ],
    "audit": {
@@ -622,11 +622,10 @@
    },
    "key_concept": "• Ca ปกติ 2.2–2.6 mmol/L (8.5–10.5 mg/dL) → 1.5 = hypocalcemia\n• hypocalcemia: tetany, Chvostek, Trousseau, paresthesia, QT ยาว · hypercalcemia: นิ่ว ปวดกระดูก ท้องผูก ซึม QT สั้น\n• ต่อจากข้อ 7: Ca สูงจาก thiazide → อาการกลุ่ม hypercalcemia\n• ข้อนี้ในเว็บเลือก 'เชื่อ AI' ได้",
    "mechanism": [
-    "ผ่าตัด thyroid → parathyroid เสียหาย",
-    "PTH ↓ → Ca ↓",
-    "threshold ของ Na⁺ channel ที่เส้นประสาทลด",
+    "ใช้ corticosteroid นาน",
+    "ยับยั้งการสร้างกระดูกและลดการดูดซึม Ca",
     {
-     "s": "neuromuscular excitability ↑ → tetany",
+     "s": "osteoporosis",
      "answer": true
     }
    ],
@@ -692,13 +691,13 @@
    },
    "key_concept": "• ADR metformin: GI upset (บ่อยสุด), B12 ↓, lactic acidosis (ร้ายแรง)\n• งด: eGFR < 30, ก่อนฉีด contrast, hypoxia, ตับวาย, เหล้า\n• ไม่ทำให้ hypoglycemia และไม่เพิ่มน้ำหนัก",
    "mechanism": [
-    "metformin สะสม (ไตเสื่อม/hypoxia)",
+    {
+     "s": "metformin สะสม (ไตเสื่อม/hypoxia)",
+     "answer": true
+    },
     "ยับยั้ง complex I / mGPD ที่ตับ",
     "lactate เปลี่ยนเป็น glucose ไม่ได้",
-    {
-     "s": "lactate คั่ง → lactic acidosis",
-     "answer": true
-    }
+    "lactate คั่ง → lactic acidosis"
    ],
    "audit": {
     "source_file": "preclinic/2/endocrine/mcq/ข้อสอบ mcq/MCQ_Endocrine [Med PSU 49].pdf",
@@ -760,11 +759,11 @@
    },
    "key_concept": "• prednisolone ถูกทำลายด้วย CYP3A4\n• inducer (rifampicin, phenytoin, carbamazepine) → steroid ↓ → อาการ adrenal insufficiency → ต้องเพิ่มขนาด\n• inhibitor (ketoconazole, clarithromycin, ritonavir) → steroid ↑ → Cushingoid\n• ข้อนี้ในเว็บเลือก 'เชื่อ AI' ได้",
    "mechanism": [
-    "ยาร่วม (เช่น rifampicin) induce CYP3A4",
     {
-     "s": "prednisolone ถูก metabolize เร็วขึ้น",
+     "s": "ยาร่วม (เช่น rifampicin) induce CYP3A4",
      "answer": true
     },
+    "prednisolone ถูก metabolize เร็วขึ้น",
     "ระดับ glucocorticoid ในเลือดลด",
     "ต่อม adrenal ถูกกดไว้จาก steroid เดิม → adrenal insufficiency (คลื่นไส้ อ่อนแรง)"
    ],
@@ -831,13 +830,13 @@
    },
    "key_concept": "• ต่อจากข้อ 12 (แกน steroid): StAR = rate-limiting step ขน cholesterol เข้า inner mitochondrial membrane\n• lipoid CAH: steroid ทุกตัวต่ำ → ACTH ↑ → ต่อมโต ไขมันคั่ง, salt wasting\n• เทียบ: 21-OH = salt wasting + virilization · 11β-OH = HT + virilization · 17α-OH = HT ไม่มี sex steroid",
    "mechanism": [
-    {
-     "s": "StAR ต่ำ → cholesterol เข้า mitochondria ไม่ได้",
-     "answer": true
-    },
+    "StAR ต่ำ → cholesterol เข้า mitochondria ไม่ได้",
     "สร้าง pregnenolone ไม่ได้ → steroid ทุกตัวต่ำ",
     "cortisol ↓ → ACTH ↑ → ต่อมโต ไขมันคั่ง",
-    "aldosterone ↓ → salt wasting, K ↑"
+    {
+     "s": "aldosterone ↓ → salt wasting, K ↑",
+     "answer": true
+    }
    ],
    "audit": {
     "source_file": "preclinic/2/endocrine/mcq/ข้อสอบ mcq/MCQ_Endocrine [Med PSU 49].pdf",
@@ -959,15 +958,6 @@
     "E": "✓ เฉลยต้นฉบับ: แต่สมองใช้ GLUT1/3 ไม่ขึ้นกับ insulin จึงไม่เพิ่มเพื่อชดเชย"
    },
    "key_concept": "• ต่อจากข้อ 5: insulin resistance ช่วงแรก glucose ปกติเพราะ β-cell หลั่ง insulin มากขึ้น\n• β-cell ล้า → IFG/IGT → T2DM\n• การรับ glucose ที่ไม่ขึ้นกับ insulin: สมอง, RBC, ตับ (GLUT2) — ไม่ได้ปรับเพิ่มเพื่อชดเชย\n• ข้อนี้ในเว็บเลือก 'เชื่อ AI' ได้",
-   "mechanism": [
-    "insulin resistance ที่ muscle/liver",
-    "glucose เริ่มสูงขึ้น",
-    {
-     "s": "β-cell หลั่ง insulin เพิ่ม (ชดเชย)",
-     "answer": true
-    },
-    "glucose กลับมาปกติ จนกว่า β-cell จะล้า"
-   ],
    "audit": {
     "source_file": "preclinic/2/endocrine/mcq/ข้อสอบ mcq/MCQ_Endocrine [Med PSU 49].pdf",
     "page": 4,
@@ -1024,12 +1014,12 @@
    },
    "key_concept": "• ต่อจากข้อ 4 (membrane receptor): steroid/thyroid ใช้ intracellular receptor → ออกฤทธิ์ช้า (ชั่วโมง) นาน\n• cytoplasmic receptor (จับแล้วเข้า nucleus): glucocorticoid, mineralocorticoid, androgen · nuclear receptor: estrogen, progesterone, T3, vitamin D\n• aldosterone สั่งสร้าง ENaC, Na/K-ATPase ที่ collecting duct",
    "mechanism": [
-    "aldosterone ซึมผ่าน cell membrane",
-    "จับ mineralocorticoid receptor ใน cytoplasm",
     {
-     "s": "hormone-receptor complex เข้า nucleus จับ DNA",
+     "s": "aldosterone ซึมผ่าน cell membrane",
      "answer": true
     },
+    "จับ mineralocorticoid receptor ใน cytoplasm",
+    "hormone-receptor complex เข้า nucleus จับ DNA",
     "mRNA → protein (ENaC, Na/K-ATPase)"
    ],
    "audit": {
@@ -1090,13 +1080,12 @@
    },
    "key_concept": "• ต่อจากข้อ 13 (lipoid CAH): ทุกแบบของ CAH → cortisol ↓ → ACTH ↑ → ต่อมโตสองข้าง\n• 21-OH deficiency (บ่อยสุด ~95%): salt wasting ใน 2 สัปดาห์แรก, ดำ, เด็กหญิงอวัยวะเพศกำกวม, 17-OH progesterone ↑\n• ทารกชายมักมาด้วย salt-wasting crisis เพราะอวัยวะเพศปกติ\n• ถ้าต่อมฝ่อในทารก นึกถึง adrenal hypoplasia congenita (DAX1) — ข้อนี้เลือก 'เชื่อ AI' ได้",
    "mechanism": [
-    "ขาด 21-hydroxylase → cortisol + aldosterone ↓",
     {
-     "s": "ACTH ↑ → bilateral diffuse adrenal hyperplasia",
+     "s": "adrenal cortex ฝ่อ (ขาดเอนไซม์/ภาวะ adrenal insufficiency)",
      "answer": true
     },
-    "aldosterone ↓ → salt wasting → น้ำหนักลด ขาดน้ำ",
-    "ACTH (POMC/MSH) ↑ → hyperpigmentation"
+    "cortisol ต่ำ ACTH สูง",
+    "ผิวคล้ำ น้ำหนักลด"
    ],
    "audit": {
     "source_file": "preclinic/2/endocrine/mcq/ข้อสอบ mcq/MCQ_Endocrine [Med PSU 49].pdf",
@@ -1228,13 +1217,13 @@
    },
    "key_concept": "• ARR (aldosterone/renin) สูง → คัดกรอง primary aldosteronism\n• สาเหตุ: bilateral hyperplasia (บ่อยสุด), aldosterone-producing adenoma\n• ไม่ค่อยบวม (aldosterone escape จาก ANP)\n• ต่อจากข้อ 16: aldosterone สั่ง ENaC + Na/K-ATPase → Na ค้าง K/H ออก",
    "mechanism": [
-    "adrenal หลั่ง aldosterone เอง",
+    {
+     "s": "primary hyperaldosteronism: adrenal หลั่ง aldosterone เอง",
+     "answer": true
+    },
     "Na reabsorption ↑ → volume ↑ → HT",
     "K⁺/H⁺ ถูกขับ → hypokalemia, alkalosis",
-    {
-     "s": "volume สูงกด renin → aldosterone สูง/renin ต่ำ",
-     "answer": true
-    }
+    "volume สูงกด renin → aldosterone สูง/renin ต่ำ"
    ],
    "audit": {
     "source_file": "preclinic/2/endocrine/mcq/ข้อสอบ mcq/MCQ_Endocrine [Med PSU 49].pdf",
@@ -1356,11 +1345,11 @@
    },
    "key_concept": "• ต่อจากข้อ 20: ขั้นตอนหา Cushing — (1) ยืนยัน cortisol เกิน: 24-h UFC, late-night salivary cortisol, 1-mg dex test (2) วัด ACTH\n• ACTH ต่ำ → adrenal (adenoma, carcinoma) หรือ exogenous steroid\n• ACTH สูง → high-dose dex/CRH test: กดได้ = pituitary · กดไม่ได้ = ectopic (SCLC, carcinoid)",
    "mechanism": [
-    "adrenal adenoma สร้าง cortisol เอง",
     {
-     "s": "cortisol สูง กด CRH/ACTH (ACTH < 5)",
+     "s": "adrenal adenoma สร้าง cortisol เอง",
      "answer": true
     },
+    "cortisol สูง กด CRH/ACTH (ACTH < 5)",
     "circadian rhythm หาย",
     "อาการ Cushing; ต่อมอีกข้างฝ่อ"
    ],
@@ -1482,11 +1471,11 @@
    "mechanism": [
     "plasma osmolality ↑ → osmoreceptor ใน hypothalamus",
     "supraoptic nucleus สร้าง ADH ส่งตาม axon",
+    "pars nervosa หลั่ง ADH เข้าเลือด",
     {
-     "s": "pars nervosa หลั่ง ADH เข้าเลือด",
+     "s": "V2 → aquaporin-2 → ดูดน้ำกลับ",
      "answer": true
-    },
-    "V2 → aquaporin-2 → ดูดน้ำกลับ"
+    }
    ],
    "audit": {
     "source_file": "preclinic/2/endocrine/mcq/ข้อสอบ mcq/MCQ_Endocrine [Med PSU 49].pdf",
@@ -1546,11 +1535,11 @@
    },
    "key_concept": "• ต่อจากข้อ 23: Sheehan ทำลาย anterior pituitary เป็นหลัก (posterior มักรอด)\n• อาการแรก: ให้นมไม่ได้ (prolactin ↓) แล้วไม่มีประจำเดือน (LH/FSH ↓)\n• ACTH ต่ำ → cortisol ต่ำ → hypoglycemia, hyponatremia (aldosterone ปกติ — Na ต่ำจาก ADH ↑) ไม่ดำ\n• anterior pituitary โต 2 เท่าช่วงตั้งครรภ์ แต่เลือดเลี้ยงไม่เพิ่ม → ขาดเลือดง่าย",
    "mechanism": [
-    "ตกเลือดหลังคลอด → hypotension",
     {
-     "s": "anterior pituitary ที่โตขึ้นขาดเลือด → necrosis",
+     "s": "Sheehan syndrome: ตกเลือดหลังคลอด → hypotension",
      "answer": true
     },
+    "anterior pituitary ที่โตขึ้นขาดเลือด → necrosis",
     "prolactin, LH/FSH, ACTH, TSH ↓",
     "ไม่มีน้ำนม ไม่มีประจำเดือน, cortisol ↓ → hypoglycemia, hypotension"
    ],
@@ -1666,6 +1655,14 @@
     "E": "lymphocyte + Hürthle cell"
    },
    "key_concept": "• papillary: บ่อยสุด, รังสีบริเวณคอเป็นปัจจัยเสี่ยง, nuclear groove, pseudoinclusion, Orphan Annie (ground glass), psammoma body, ไป lymph node\n• follicular: ต้องมี invasion, ไปทางเลือด\n• medullary: C cell, calcitonin, amyloid, RET (MEN2)\n• anaplastic: สูงอายุ โตเร็ว",
+   "mechanism": [
+    "ก้อนที่ต่อมไทรอยด์ ผล FNA มี nuclear groove/Orphan Annie eye",
+    {
+     "s": "papillary carcinoma แพร่ทางน้ำเหลือง",
+     "answer": true
+    },
+    "ก้อนแข็งที่ต่อมไทรอยด์"
+   ],
    "audit": {
     "source_file": "preclinic/2/endocrine/mcq/ข้อสอบ mcq/MCQ_Endocrine [Med PSU 49].pdf",
     "page": 7,
@@ -1782,15 +1779,6 @@
     "E": "✓ เฉลยต้นฉบับ: แต่ ACTH adenoma ทำ Cushing disease ไม่ใช่ acromegaly"
    },
    "key_concept": "• acromegaly: มือเท้าโต, prognathism, frontal bossing, ลิ้นโต, เหงื่อออก, DM, HT, cardiomegaly\n• ก้อนใหญ่ใน sella → กด optic chiasm → bitemporal hemianopia\n• คัดกรอง IGF-1 · ยืนยัน OGTT ไม่กด GH\n• ข้อนี้ในเว็บเลือก 'เชื่อ AI' ได้",
-   "mechanism": [
-    "somatotroph macroadenoma",
-    {
-     "s": "GH หลั่งเกิน → IGF-1 ↑",
-     "answer": true
-    },
-    "กระดูก/soft tissue หลังปิด epiphysis โต → มือเท้าโต คางยื่น",
-    "ก้อนโตขึ้นด้านบน → กด optic chiasm → bitemporal defect"
-   ],
    "audit": {
     "source_file": "preclinic/2/endocrine/mcq/ข้อสอบ mcq/MCQ_Endocrine [Med PSU 49].pdf",
     "page": 8,
@@ -1855,13 +1843,12 @@
    },
    "key_concept": "• steroid myopathy: proximal weakness (ลุกจากเก้าอี้ลำบาก), CK ปกติ, ต่างจาก statin myopathy (CK สูง ปวด)\n• ผลของ glucocorticoid ต่อกระดูก: ลด osteoblast, ลดดูดซึม Ca, เพิ่ม RANKL → osteoporosis\n• ต่อจากข้อ 20: proximal myopathy เป็นหนึ่งในอาการ Cushing\n• ข้อนี้ในเว็บเลือก 'เชื่อ AI' ได้",
    "mechanism": [
-    "dexamethasone ระยะยาว",
+    "ใช้ dexamethasone นาน",
     {
-     "s": "protein synthesis ในกล้ามเนื้อ ↓ (mTOR ↓)",
+     "s": "ลดการดูดซึม Ca ที่ลำไส้ และเพิ่มการสลายกล้ามเนื้อ",
      "answer": true
     },
-    "proteolysis ↑ (ubiquitin-proteasome: atrogin-1, MuRF1)",
-    "type II fiber atrophy → proximal muscle weakness"
+    "ปวดและอ่อนแรงกล้ามเนื้อ (steroid myopathy)"
    ],
    "audit": {
     "source_file": "preclinic/2/endocrine/mcq/ข้อสอบ mcq/MCQ_Endocrine [Med PSU 49].pdf",
@@ -1988,11 +1975,11 @@
    "key_concept": "• ต่อจากข้อ 5: fasting = glucagon เด่น\n• กระตุ้น glucagon: glucose ต่ำ, insulin ต่ำ (intra-islet), amino acid (arginine), sympathetic (β), cortisol\n• ยับยั้ง glucagon: glucose สูง, insulin, somatostatin, GLP-1\n• T1DM ขาด insulin → glucagon สูงไม่หยุด → DKA",
    "mechanism": [
     "อดอาหาร → glucose ↓",
-    "β-cell หลั่ง insulin ↓",
     {
-     "s": "การยับยั้ง α-cell ภายใน islet หายไป",
+     "s": "β-cell หลั่ง insulin ↓",
      "answer": true
     },
+    "การยับยั้ง α-cell ภายใน islet หายไป",
     "α-cell หลั่ง glucagon ↑ → glycogenolysis/gluconeogenesis"
    ],
    "audit": {
@@ -2180,12 +2167,12 @@
    "key_concept": "• prolactin เป็นฮอร์โมนเดียวของ anterior pituitary ที่ hypothalamus คุมแบบ 'ยับยั้ง' เป็นหลัก\n• stalk effect: ก้อนอื่นกด stalk → prolactin สูงเล็กน้อย (< 100–150 ng/mL) อย่าวินิจฉัยเป็น prolactinoma\n• ยา dopamine antagonist (antipsychotic, metoclopramide) → prolactin ↑ แบบเดียวกัน\n• ต่อจากข้อ 23: stalk เสียอาจเกิด DI ด้วย (ADH ส่งไม่ถึง)",
    "mechanism": [
     "pituitary stalk ถูกตัด/กด",
-    {
-     "s": "dopamine จาก hypothalamus ไปไม่ถึง anterior pituitary",
-     "answer": true
-    },
+    "dopamine จาก hypothalamus ไปไม่ถึง anterior pituitary",
     "lactotroph หลุดจากการยับยั้ง",
-    "prolactin ↑ (ฮอร์โมนอื่นลดเพราะขาด releasing hormone)"
+    {
+     "s": "prolactin ↑ (ฮอร์โมนอื่นลดเพราะขาด releasing hormone)",
+     "answer": true
+    }
    ],
    "audit": {
     "source_file": "preclinic/2/endocrine/mcq/ข้อสอบ mcq/MCQ_Endocrine [Med PSU 49].pdf",
@@ -2297,6 +2284,14 @@
     "E": "ศัพท์เก่า ไม่ใช่หมวดของ ADA"
    },
    "key_concept": "• ADA: T1DM, T2DM, GDM, other specific types\n• other specific: MODY, โรคตับอ่อน (pancreatectomy, pancreatitis, CF, hemochromatosis), endocrinopathy (Cushing, acromegaly), ยา (steroid)\n• type 3c ขาดทั้ง insulin และ glucagon → hypoglycemia ง่าย",
+   "mechanism": [
+    "total pancreatectomy ตัดตับอ่อน",
+    "ไม่มี insulin และ glucagon",
+    {
+     "s": "เบาหวานชนิดทุติยภูมิ (other specific type)",
+     "answer": true
+    }
+   ],
    "audit": {
     "source_file": "preclinic/2/endocrine/mcq/ข้อสอบ mcq/MCQ_Endocrine [Med PSU 49].pdf",
     "page": 10,
@@ -2363,6 +2358,14 @@
     "E": "ใช้ได้ในผู้สูงอายุ (ห้ามในตั้งครรภ์/ให้นม)"
    },
    "key_concept": "• ต่อจากข้อ 33: RAI = ทำลายต่อม → ผลถาวร\n• ข้อห้าม: ตั้งครรภ์, ให้นมบุตร, Graves ophthalmopathy รุนแรง (อาจแย่ลง)\n• ก่อน RAI หยุด thionamide 3–5 วัน (ไม่ให้ขัดการจับ iodine)",
+   "mechanism": [
+    "radioactive iodine สะสมในต่อมไทรอยด์",
+    "รังสีทำลายเซลล์ follicle",
+    {
+     "s": "hypothyroidism (ผลข้างเคียง)",
+     "answer": true
+    }
+   ],
    "audit": {
     "source_file": "preclinic/2/endocrine/mcq/ข้อสอบ mcq/MCQ_Endocrine [Med PSU 49].pdf",
     "page": 10,
@@ -2413,11 +2416,11 @@
    },
    "key_concept": "• ต่อจากข้อ 9 และ 14: VLDL → (LPL) → IDL → LDL; apoE เป็นใบผ่านให้ remnant เข้าตับ\n• apoE2/E2 → type III dysbetalipoproteinemia: TC และ TG สูงพอกัน, palmar crease xanthoma, tuberoeruptive xanthoma, เสี่ยง CAD/PAD\n• apo สำคัญ: B-48 (chylomicron), B-100 (VLDL/LDL), A-I (HDL, กระตุ้น LCAT), C-II (กระตุ้น LPL), E (remnant uptake)",
    "mechanism": [
+    "apoE ผิดปกติ (E2/E2)",
     {
-     "s": "apoE ผิดปกติ (E2/E2)",
+     "s": "IDL/chylomicron remnant จับ LDL receptor/LRP ที่ตับไม่ได้",
      "answer": true
     },
-    "IDL/chylomicron remnant จับ LDL receptor/LRP ที่ตับไม่ได้",
     "remnant คั่งในเลือด",
     "palmar xanthoma + atherosclerosis"
    ],

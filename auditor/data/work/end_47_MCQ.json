@@ -31,13 +31,13 @@
    },
    "key_concept": "• lipoprotein: CM (TG อาหาร, apoB-48) · VLDL (TG ตับ, apoB-100) · IDL → LDL (cholesterol) · HDL (reverse cholesterol transport)\n• TG ใน CM/VLDL ถูก LPL (apoC-II) ปล่อย FFA ให้กล้ามเนื้อ/ไขมัน\n• หลังอาหาร: CM · อดอาหาร/ตับสร้าง: VLDL",
    "mechanism": [
-    "ตับสร้าง VLDL (TG + apoB-100)",
-    "VLDL ในเลือดรับ apoC-II จาก HDL",
-    "LPL ที่ capillary ย่อย TG ใน VLDL",
     {
-     "s": "FFA ถูกส่งให้ muscle ใช้เป็นพลังงาน/adipose เก็บ",
+     "s": "ตับสร้าง VLDL (TG + apoB-100)",
      "answer": true
     },
+    "VLDL ในเลือดรับ apoC-II จาก HDL",
+    "LPL ที่ capillary ย่อย TG ใน VLDL",
+    "FFA ถูกส่งให้ muscle ใช้เป็นพลังงาน/adipose เก็บ",
     "VLDL เหลือ IDL → LDL"
    ],
    "audit": {
@@ -480,13 +480,13 @@
    },
    "key_concept": "• ลำดับยา: alendronate/risedronate → zoledronate/denosumab (กินไม่ได้) → teriparatide (very high risk/หักหลายครั้ง)\n• alendronate: กินท้องว่าง น้ำเปล่า นั่ง 30 นาที (esophagitis) · ONJ, atypical femur fx\n• ติดตาม BMD/turnover marker",
    "mechanism": [
-    "bisphosphonate จับ hydroxyapatite",
-    "osteoclast กินยา",
-    "ยับยั้ง FPP synthase",
     {
-     "s": "osteoclast apoptosis → resorption ↓",
+     "s": "alendronate (bisphosphonate) จับ hydroxyapatite",
      "answer": true
     },
+    "osteoclast กินยา",
+    "ยับยั้ง FPP synthase",
+    "osteoclast apoptosis → resorption ↓",
     "BMD ↑ fracture ↓"
    ],
    "audit": {
@@ -539,12 +539,12 @@
    },
    "key_concept": "• แยกสาเหตุ Cushing: ACTH ต่ำ → adrenal (adenoma/carcinoma) หรือ exogenous · ACTH สูง → pituitary หรือ ectopic\n• Cushing: circadian rhythm ของ cortisol หาย, urinary free cortisol ↑\n• DST: ไม่กด = Cushing; high-dose กด = pituitary",
    "mechanism": [
-    "ก้อนที่ adrenal หลั่ง cortisol เอง",
-    "cortisol ↑ กด CRH/ACTH",
     {
-     "s": "ACTH ต่ำมาก (< 5)",
+     "s": "ก้อนที่ adrenal หลั่ง cortisol เอง",
      "answer": true
     },
+    "cortisol ↑ กด CRH/ACTH",
+    "ACTH ต่ำมาก (< 5)",
     "circadian rhythm หาย, UFC ↑",
     "Cushing syndrome ACTH-independent"
    ],
@@ -660,11 +660,11 @@
     "adrenal cortex ถูกทำลาย",
     "cortisol ↓ aldosterone ↓",
     "ไม่มี negative feedback → ACTH (POMC) ↑",
+    "MSH-like effect → ผิวคล้ำ · Na ↓ K ↑ acidosis BP ต่ำ",
     {
-     "s": "MSH-like effect → ผิวคล้ำ · Na ↓ K ↑ acidosis BP ต่ำ",
+     "s": "Addison disease",
      "answer": true
-    },
-    "Addison disease"
+    }
    ],
    "audit": {
     "source_file": "preclinic/2/endocrine/mcq/ข้อสอบ mcq/MCQ_Endocrine [Med PSU 47].pdf",
@@ -718,6 +718,14 @@
     "E": "AI เลือกข้อนี้: LPL/apoC-II ขาด → TG ใน chylomicron/VLDL ไม่ถูกย่อย → milky + eruptive xanthoma"
    },
    "key_concept": "• milky fasting serum + eruptive xanthoma + pancreatitis ในเด็ก = LPL/apoC-II deficiency (type I) หรือ TG สูงมาก\n• type III (apoE2): ผู้ใหญ่ palmar xanthoma serum ขุ่นน้อยกว่า\n• ข้อนี้เฉลยต้นฉบับกับ AI ต่างกัน — ดูหมายเหตุของข้อ",
+   "mechanism": [
+    "ขาด apoE หรือ LDL receptor",
+    {
+     "s": "chylomicron remnant เข้าตับไม่ได้",
+     "answer": true
+    },
+    "ไขมันคั่งในเลือด เกิด xanthoma"
+   ],
    "audit": {
     "source_file": "preclinic/2/endocrine/mcq/ข้อสอบ mcq/MCQ_Endocrine [Med PSU 47].pdf",
     "page": 3,
@@ -957,12 +965,12 @@
    },
    "key_concept": "• acromegaly: ผ่าตัด transsphenoidal ก่อน → ยา: octreotide/lanreotide (SSTR2), pegvisomant (GHR antagonist), cabergoline\n• ติดตามด้วย IGF-1\n• ห้ามใช้ยาที่เพิ่ม GH/IGF-1 (somatropin, mecasermin)",
    "mechanism": [
-    "octreotide จับ SSTR2 บน somatotroph",
-    "Gi → cAMP ↓",
     {
-     "s": "GH หลั่งลดลง",
+     "s": "octreotide จับ SSTR2 บน somatotroph",
      "answer": true
     },
+    "Gi → cAMP ↓",
+    "GH หลั่งลดลง",
     "IGF-1 จากตับลดลง",
     "อาการ acromegaly ดีขึ้น"
    ],
@@ -1359,11 +1367,11 @@
    "key_concept": "• PTC: นิวเคลียส (Orphan Annie eye, groove, pseudoinclusion), papillae, psammoma bodies\n• แพร่ทาง lymphatic (cervical node) · prognosis ดี\n• follicular ca: แพร่ทางเลือด (กระดูก ปอด) ต้องดู invasion",
    "mechanism": [
     "follicular cell กลายพันธุ์ (BRAF V600E/RET-PTC)",
-    "เติบโตเป็น papillae",
     {
-     "s": "นิวเคลียสใส ซ้อนกัน มี groove และ pseudoinclusion",
+     "s": "เติบโตเป็น papillae",
      "answer": true
     },
+    "นิวเคลียสใส ซ้อนกัน มี groove และ pseudoinclusion",
     "แพร่ทาง lymphatic ไป cervical node",
     "ผ่าตัด + RAI ± TSH suppression"
    ],
@@ -1548,11 +1556,11 @@
    "key_concept": "• ลด LDL: statin (synthesis ↓, LDLR ↑) · ezetimibe (absorption ↓) · BAS (bile acid ↓ → ตับใช้ cholesterol) · PCSK9i (LDLR สูง)\n• ezetimibe + statin ลด LDL เพิ่มอีก ~20%\n• ผลข้างเคียงน้อย",
    "mechanism": [
     "cholesterol จากอาหาร/น้ำดีถึง brush border",
-    "ezetimibe จับ NPC1L1",
     {
-     "s": "การดูดซึม cholesterol เข้า enterocyte ลดลง",
+     "s": "ezetimibe จับ NPC1L1",
      "answer": true
     },
+    "การดูดซึม cholesterol เข้า enterocyte ลดลง",
     "chylomicron มี cholesterol น้อยลง → ตับได้รับน้อยลง",
     "LDL receptor ↑ → LDL ในเลือดลด ~20%"
    ],
@@ -1665,12 +1673,12 @@
    },
    "key_concept": "• metformin ห้ามใน eGFR < 30, ตับวาย, ติดสุรา, shock, ฉีด contrast (เสี่ยง lactic acidosis)\n• ผลข้างเคียงทั่วไป: ท้องเสีย, ขาด vitamin B12\n• ใช้เดี่ยวไม่ทำ hypoglycemia",
    "mechanism": [
-    "metformin ยับยั้ง mitochondrial complex I → AMPK",
-    "gluconeogenesis จาก lactate ที่ตับลดลง",
     {
-     "s": "lactate สะสมในเลือด โดยเฉพาะเมื่อไต/ตับเสีย",
+     "s": "metformin ยับยั้ง mitochondrial complex I → AMPK",
      "answer": true
     },
+    "gluconeogenesis จาก lactate ที่ตับลดลง",
+    "lactate สะสมในเลือด โดยเฉพาะเมื่อไต/ตับเสีย",
     "pH เลือดลดลง",
     "lactic acidosis (anion gap สูง)"
    ],
@@ -2224,13 +2232,13 @@
    },
    "key_concept": "• กระตุ้น insulin: glucose, amino acid, incretin, vagal, sulfonylurea · ยับยั้ง: somatostatin, α2 (epinephrine), hypoglycemia, fasting\n• ออกกำลัง/ผ่าตัด/เครียด → catecholamine ↑ → insulin ↓\n• oral glucose หลั่ง insulin มากกว่า IV (incretin effect)",
    "mechanism": [
-    "กินคาร์โบไฮเดรต",
-    "glucose ในเลือด ↑ + GLP-1/GIP ↑",
-    "glucose เข้า β-cell → ATP ↑ → ปิด K-ATP",
     {
-     "s": "insulin หลั่งเพิ่มขึ้น",
+     "s": "กินคาร์โบไฮเดรต",
      "answer": true
     },
+    "glucose ในเลือด ↑ + GLP-1/GIP ↑",
+    "glucose เข้า β-cell → ATP ↑ → ปิด K-ATP",
+    "insulin หลั่งเพิ่มขึ้น",
     "glucose ลดลงสู่ปกติ"
    ],
    "audit": {
@@ -2283,12 +2291,12 @@
    },
    "key_concept": "• statin ที่ผ่าน CYP3A4: simvastatin, lovastatin (มาก), atorvastatin (ปานกลาง) · ไม่ผ่าน: rosuvastatin, pravastatin, pitavastatin\n• CYP3A4 inhibitor: ketoconazole, itraconazole, clarithromycin, ritonavir, grapefruit, cyclosporine\n• fibrate (gemfibrozil) + statin ก็เสี่ยง myopathy",
    "mechanism": [
-    "ketoconazole ยับยั้ง CYP3A4",
-    "simvastatin ถูก metabolize ได้น้อยลง",
     {
-     "s": "ระดับ simvastatin ในเลือดสูงขึ้นหลายเท่า",
+     "s": "ketoconazole ยับยั้ง CYP3A4",
      "answer": true
     },
+    "simvastatin ถูก metabolize ได้น้อยลง",
+    "ระดับ simvastatin ในเลือดสูงขึ้นหลายเท่า",
     "myopathy/rhabdomyolysis",
     "หยุดยา/เปลี่ยนเป็น statin ที่ไม่ผ่าน CYP3A4"
    ],
@@ -2392,12 +2400,12 @@
    "key_concept": "• primary hypothyroid → FT4 ↓ → TRH ↑ → TSH ↑ และ prolactin ↑\n• ผล: galactorrhea, amenorrhea, pituitary hyperplasia (อาจคล้าย adenoma) — รักษาด้วย levothyroxine หาย\n• prolactin สูงจากสาเหตุอื่น: prolactinoma, ยา dopamine antagonist, CKD, stalk effect, ตั้งครรภ์",
    "mechanism": [
     "ไทรอยด์ไม่สร้าง hormone (FT4 ต่ำ)",
-    "ไม่มี negative feedback → TRH ↑ จาก hypothalamus",
-    "TRH จับ receptor (Gq) บน thyrotroph และ lactotroph",
     {
-     "s": "lactotroph หลั่ง prolactin เพิ่ม",
+     "s": "ไม่มี negative feedback → TRH ↑ จาก hypothalamus",
      "answer": true
     },
+    "TRH จับ receptor (Gq) บน thyrotroph และ lactotroph",
+    "lactotroph หลั่ง prolactin เพิ่ม",
     "galactorrhea + TSH สูงมาก (pituitary โต)"
    ],
    "audit": {
@@ -2450,13 +2458,13 @@
    },
    "key_concept": "• ยา DM ที่ทำ hypoglycemia เมื่อใช้เดี่ยว: insulin, sulfonylurea, glinide\n• ไม่ทำ: metformin, TZD, SGLT2i, DPP-4i, GLP-1 RA, α-glucosidase inhibitor\n• glibenclamide ครึ่งชีวิตยาว + metabolite active → เสี่ยงสูงในผู้สูงอายุ/ไตเสีย",
    "mechanism": [
-    "glibenclamide ปิด K-ATP ที่ β-cell",
-    "depolarize → insulin หลั่ง",
-    "การหลั่งไม่ขึ้นกับ glucose",
     {
-     "s": "insulin มากเกินเมื่อไม่ได้กิน/ออกกำลัง",
+     "s": "glibenclamide ปิด K-ATP ที่ β-cell",
      "answer": true
     },
+    "depolarize → insulin หลั่ง",
+    "การหลั่งไม่ขึ้นกับ glucose",
+    "insulin มากเกินเมื่อไม่ได้กิน/ออกกำลัง",
     "glucose ต่ำ (41 mg/dL) หมดสติ"
    ],
    "audit": {
@@ -2727,11 +2735,11 @@
    "mechanism": [
     "GH จับ GH receptor (dimer)",
     "JAK2 autophosphorylate",
+    "STAT5 ถูก phosphorylate และเข้า nucleus",
     {
-     "s": "STAT5 ถูก phosphorylate และเข้า nucleus",
+     "s": "IGF-1 gene transcription ↑",
      "answer": true
     },
-    "IGF-1 gene transcription ↑",
     "IGF-1 ทำให้โต"
    ],
    "audit": {
@@ -2906,7 +2914,7 @@
     "lipolysis ↑ → FFA → ตับ ketogenesis ↑",
     "ketone สะสม HCO₃⁻ ลด",
     {
-     "s": "metabolic acidosis (HCO₃⁻ 6) + glucose 420 + ketonuria 4+",
+     "s": "HCO₃⁻ ลด → metabolic acidosis (diabetic ketoacidosis)",
      "answer": true
     },
     "คลื่นไส้ อาเจียน osmotic diuresis"
@@ -2961,13 +2969,13 @@
    },
    "key_concept": "• ยายับยั้ง steroidogenesis: metyrapone (11β-OHase), ketoconazole (หลายขั้น), osilodrostat (11β-OHase), mitotane (ทำลาย cortex)\n• metyrapone ADR: hirsutism/acne (androgen ↑), HTN/hypoK (11-deoxycorticosterone ↑), adrenal insufficiency\n• ใช้ก่อนผ่าตัด/เมื่อผ่าตัดไม่ได้",
    "mechanism": [
-    "metyrapone ยับยั้ง 11β-hydroxylase",
-    "cortisol ↓ (ขั้นสุดท้ายจาก 11-deoxycortisol)",
-    "ACTH ↑ (feedback ลด)",
     {
-     "s": "precursor ไหลไปทาง androgen → hirsutism, acne",
+     "s": "metyrapone ยับยั้ง 11β-hydroxylase",
      "answer": true
     },
+    "cortisol ↓ (ขั้นสุดท้ายจาก 11-deoxycortisol)",
+    "ACTH ↑ (feedback ลด)",
+    "precursor ไหลไปทาง androgen → hirsutism, acne",
     "11-deoxycorticosterone ↑ → HTN"
    ],
    "audit": {
@@ -3083,12 +3091,12 @@
    "mechanism": [
     "ผ่าตัดไทรอยด์ ตัด/ทำลาย parathyroid",
     "PTH ลดลง",
-    {
-     "s": "Ca²⁺ ในเลือดต่ำ (1.5 mmol/L)",
-     "answer": true
-    },
+    "Ca²⁺ ในเลือดต่ำ (1.5 mmol/L)",
     "threshold ของ Na⁺ channel ลด → neuromuscular excitability ↑",
-    "tetany, Chvostek/Trousseau +"
+    {
+     "s": "tetany, Chvostek/Trousseau +",
+     "answer": true
+    }
    ],
    "audit": {
     "source_file": "preclinic/2/endocrine/mcq/ข้อสอบ mcq/MCQ_Endocrine [Med PSU 47].pdf",
@@ -3216,11 +3224,11 @@
    },
    "key_concept": "• primary: Ca↑ PO₄↓ PTH↑ (adenoma ~85%) · secondary: Ca↓/ปกติ PO₄↑ PTH↑ (CKD) · tertiary: autonomous Ca↑ PO₄↑\n• primary: hyperplasia 4 ต่อม (~10–15%) หรือ MEN1/2A · ca น้อยกว่า 1%\n• PTHrP (มะเร็ง): Ca↑ PTH↓",
    "mechanism": [
-    "parathyroid adenoma หลั่ง PTH เกิน",
     {
-     "s": "PTH ↑ → Ca ในเลือดสูง (12 mg/dL)",
+     "s": "parathyroid adenoma หลั่ง PTH เกิน",
      "answer": true
     },
+    "PTH ↑ → Ca ในเลือดสูง (12 mg/dL)",
     "ไต: PO₄ ขับ ↑ → PO₄ ต่ำ (2.8)",
     "กระดูกสลาย",
     "stones, bones, groans, moans"
@@ -3697,12 +3705,12 @@
    },
    "key_concept": "• GnRH agonist ให้ต่อเนื่อง → down-regulation (ให้เป็นช่วง pulse → กระตุ้น) · ช่วงแรกเกิด flare (ใช้ anti-androgen ร่วม)\n• GnRH antagonist (degarelix, abarelix) ไม่ flare\n• ใช้ใน prostate ca, endometriosis, precocious puberty",
    "mechanism": [
-    "GnRH agonist ให้ต่อเนื่อง",
-    "GnRH receptor ที่ gonadotroph ถูก down-regulate",
     {
-     "s": "LH/FSH ↓",
+     "s": "leuprolide (GnRH agonist) ให้ต่อเนื่อง",
      "answer": true
     },
+    "GnRH receptor ที่ gonadotroph ถูก down-regulate",
+    "LH/FSH ↓",
     "testosterone ↓ (medical castration)",
     "ก้อนมะเร็งต่อมลูกหมากหดตัว"
    ],

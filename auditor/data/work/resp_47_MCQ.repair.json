@@ -57,7 +57,16 @@
     "D": "atelectasis พบวันแรก ๆ",
     "E": "myocardial infarction มักมาด้วยเจ็บแน่นหน้าอก และไม่สัมพันธ์กับการนอนนานหลังกระดูกสะโพกหักเท่า PE"
    },
-   "key_concept": "• DVT → PE หลังผ่าตัดกระดูกใหญ่\n• ป้องกันด้วย anticoagulant"
+   "key_concept": "• DVT → PE หลังผ่าตัดกระดูกใหญ่\n• ป้องกันด้วย anticoagulant",
+   "mechanism": [
+    "หลังผ่าตัดกระดูกขาหัก นอนนาน",
+    "ลิ่มเลือดที่ deep vein หลุด",
+    "ไปอุดหลอดเลือดปอด",
+    {
+     "s": "เกิด pulmonary thromboembolism หายใจลำบากฉับพลัน",
+     "answer": true
+    }
+   ]
   },
   "60": {
    "choices_override": {
@@ -81,7 +90,15 @@
     "D": "ทั้งคู่ลดไม่ใช่",
     "E": "pH และ PCO₂ เพิ่มไม่ใช่"
    },
-   "key_concept": "• ฟองอากาศ PO₂ ~150, PCO₂ ~0\n• ต้องไล่ฟองอากาศออก"
+   "key_concept": "• ฟองอากาศ PO₂ ~150, PCO₂ ~0\n• ต้องไล่ฟองอากาศออก",
+   "mechanism": [
+    "ฟองอากาศมี PO₂ สูงและ PCO₂ ต่ำเกือบ 0",
+    "ก๊าซในตัวอย่างสมดุลกับฟองอากาศ",
+    {
+     "s": "PO₂ เพิ่ม PCO₂ ลด",
+     "answer": true
+    }
+   ]
   },
   "67": {
    "choices_override": {
@@ -105,7 +122,16 @@
     "D": "surfactant ไม่เพิ่ม",
     "E": "mucus เพิ่มใน chronic bronchitis"
    },
-   "key_concept": "• smoking: oxidant ยับยั้ง α1-AT\n• elastin ถูกทำลาย"
+   "key_concept": "• smoking: oxidant ยับยั้ง α1-AT\n• elastin ถูกทำลาย",
+   "mechanism": [
+    "สูบบุหรี่นานกระตุ้น neutrophil/macrophage",
+    "elastase เพิ่ม",
+    {
+     "s": "ทำลาย elastin ในผนังถุงลม",
+     "answer": true
+    },
+    "emphysema"
+   ]
   },
   "3": {
    "stem_override": "A herpes zoster lesion appears at the umbilical region. Which spinal nerve level does this correspond to?",
@@ -128,7 +154,16 @@
     "D": "greater splanchnic ไม่เกี่ยว",
     "E": "✓ recurrent laryngeal nerve (วนใต้ aortic arch)"
    },
-   "key_concept": "• left RLN วนรอบ ligamentum arteriosum\n• aortopulmonary window ใกล้ RLN"
+   "key_concept": "• left RLN วนรอบ ligamentum arteriosum\n• aortopulmonary window ใกล้ RLN",
+   "mechanism": [
+    "ก้อนที่ aortopulmonary window",
+    {
+     "s": "กด left recurrent laryngeal nerve",
+     "answer": true
+    },
+    "กล้ามเนื้อกล่องเสียงอ่อนแรง",
+    "เสียงแหบ"
+   ]
   },
   "57": {
    "choices_override": {
@@ -201,7 +236,16 @@
     "D": "oblique arytenoid ปิด posterior glottis",
     "E": "transverse arytenoid ปิด posterior glottis"
    },
-   "key_concept": "• PCA = เปิดสายเสียง\n• เสียหาย → adducted cords → stridor"
+   "key_concept": "• PCA = เปิดสายเสียง\n• เสียหาย → adducted cords → stridor",
+   "mechanism": [
+    {
+     "s": "posterior cricoarytenoid เป็น abductor ของ vocal cord",
+     "answer": true
+    },
+    "กล้ามเนื้อนี้อ่อนแรง",
+    "vocal cord abduct ไม่ได้",
+    "เหลือ adduction เด่น"
+   ]
   },
   "8": {
    "explanation": "epithelium ciliated + club cells ไม่มี cartilage/gland smooth muscle บาง = terminal bronchiole",
@@ -223,7 +267,16 @@
     "D": "ciliated cuboidal อยู่ bronchiole",
     "E": "transitional อยู่ทางเดินปัสสาวะ"
    },
-   "key_concept": "• bronchus: pseudostratified ciliated + goblet cell\n• smoker → squamous metaplasia"
+   "key_concept": "• bronchus: pseudostratified ciliated + goblet cell\n• smoker → squamous metaplasia",
+   "mechanism": [
+    "ทำเหมืองถ่านหิน 30 ปี",
+    "ฝุ่นระคายเยื่อบุหลอดลม",
+    {
+     "s": "เยื่อบุ pseudostratified columnar อักเสบเรื้อรัง",
+     "answer": true
+    },
+    "ไอเรื้อรังและเหนื่อย"
+   ]
   },
   "10": {
    "explanation": "ทารกคลอดก่อนกำหนด ground glass = RDS ขาด surfactant จาก pneumocyte type II",
@@ -234,7 +287,16 @@
     "D": "Clara cell ไม่เกี่ยว",
     "E": "dust cell = macrophage"
    },
-   "key_concept": "• type II ผลิต surfactant\n• คลอดก่อน 34 สัปดาห์เสี่ยง"
+   "key_concept": "• type II ผลิต surfactant\n• คลอดก่อน 34 สัปดาห์เสี่ยง",
+   "mechanism": [
+    "ทารกคลอดก่อนกำหนด",
+    "type II pneumocyte ยังไม่พร้อมสร้าง surfactant",
+    {
+     "s": "ผิดปกติที่ type II pneumocyte",
+     "answer": true
+    },
+    "ground glass ใน CXR"
+   ]
   },
   "11": {
    "explanation": "congenital diaphragmatic hernia เกิดจาก pleuroperitoneal membrane ปิดไม่สนิท",
@@ -245,7 +307,16 @@
     "D": "dorsal mesentery สร้าง crura",
     "E": "somatic mesoderm ไม่ใช่เหตุหลัก"
    },
-   "key_concept": "• Bochdalek: ซ้ายหลัง\n• ปอดเล็ก"
+   "key_concept": "• Bochdalek: ซ้ายหลัง\n• ปอดเล็ก",
+   "mechanism": [
+    {
+     "s": "pleuroperitoneal membrane ปิดไม่สมบูรณ์",
+     "answer": true
+    },
+    "กระบังลมมีรู",
+    "ลำไส้เข้าช่องอก",
+    "เกิด congenital diaphragmatic hernia"
+   ]
   },
   "12": {
    "explanation": "forced inspiration ใช้ accessory muscles: scalene และ sternocleidomastoid",
@@ -256,7 +327,15 @@
     "D": "external + innermost ผสมไม่ถูก",
     "E": "internal + SCM ผสมไม่ถูก"
    },
-   "key_concept": "• quiet: diaphragm + external intercostal\n• forced: + scalene, SCM"
+   "key_concept": "• quiet: diaphragm + external intercostal\n• forced: + scalene, SCM",
+   "mechanism": [
+    "forced inspiration ต้องขยายทรวงอกมากขึ้น",
+    {
+     "s": "scalene และ sternocleidomastoid ยกซี่โครงบนและ sternum",
+     "answer": true
+    },
+    "ปริมาตรทรวงอกเพิ่ม ลมเข้ามาก"
+   ]
   },
   "15": {
    "explanation": "RDS: เฉลยต้นฉบับ E (airway resistance เพิ่ม); AI เลือก D (ต้องใช้ transpulmonary pressure มากขึ้น)",
@@ -267,7 +346,15 @@
     "D": "transpulmonary pressure ที่ต้องใช้เพิ่ม (AI เลือกตัวนี้)",
     "E": "✓ airway resistance เพิ่ม (ตามเฉลยต้นฉบับ)"
    },
-   "key_concept": "• RDS: surfactant ↓ → ST ↑ → compliance ↓\n• ข้อนี้เฉลยต้นฉบับขัดกับ AI"
+   "key_concept": "• RDS: surfactant ↓ → ST ↑ → compliance ↓\n• ข้อนี้เฉลยต้นฉบับขัดกับ AI",
+   "mechanism": [
+    "RDS ขาด surfactant",
+    "ถุงลมและหลอดลมเล็กแฟบ",
+    {
+     "s": "airway resistance เพิ่มขึ้น",
+     "answer": true
+    }
+   ]
   },
   "16": {
    "explanation": "airway resistance ต่ำสุดที่ปริมาตรปอดสูง (TLC ตามที่เขียนเป็น TRV)",
@@ -277,7 +364,15 @@
     "C": "vagal ทำ bronchoconstriction",
     "D": "forced expiration บีบหลอดลม"
    },
-   "key_concept": "• lung volume ↑ → radial traction → R ↓\n• resistance สูงเมื่อปริมาตรปอดต่ำ"
+   "key_concept": "• lung volume ↑ → radial traction → R ↓\n• resistance สูงเมื่อปริมาตรปอดต่ำ",
+   "mechanism": [
+    "ปริมาตรปอดสูงสุด",
+    "radial traction ดึง airway ให้กว้าง",
+    {
+     "s": "airway resistance ต่ำสุดที่ปริมาตรสูงสุด (TRV ตามตัวเลือก)",
+     "answer": true
+    }
+   ]
   },
   "17": {
    "explanation": "หืดรุนแรง cyanosis รักษาด้วย β₂ agonist",
@@ -288,7 +383,15 @@
     "D": "nicotinic agonist ไม่ช่วย",
     "E": "muscarinic agonist ทำหลอดลมหด"
    },
-   "key_concept": "• acute asthma: SABA + O₂ ± steroid\n• rescue: SABA"
+   "key_concept": "• acute asthma: SABA + O₂ ± steroid\n• rescue: SABA",
+   "mechanism": [
+    "หืดรุนแรง หลอดลมหดเกร็ง",
+    {
+     "s": "ให้ β₂ adrenergic agonist",
+     "answer": true
+    },
+    "cAMP เพิ่ม หลอดลมขยายเร็ว"
+   ]
   },
   "18": {
    "explanation": "ที่ TLC หลอดลมถูกยืดจึง anatomic dead space สูงกว่าที่ RV (AI ร่างเฉลย)",
@@ -299,7 +402,15 @@
     "D": "intrapleural pressure ติดลบมากที่ TLC",
     "E": "✓ anatomic dead space สูงกว่าที่ TLC"
    },
-   "key_concept": "• lung volume ↑ → airway ถูกดึงกว้าง\n• dead space ↑"
+   "key_concept": "• lung volume ↑ → airway ถูกดึงกว้าง\n• dead space ↑",
+   "mechanism": [
+    "ที่ TLC ปอดขยายเต็มที่",
+    "radial traction ยืดหลอดลมให้กว้างและยาว",
+    {
+     "s": "anatomic dead space มากกว่าที่ RV",
+     "answer": true
+    }
+   ]
   },
   "19": {
    "explanation": "fibrosis ลด compliance เพิ่ม elastic work ของการหายใจ",
@@ -309,7 +420,15 @@
     "C": "emphysema compliance เพิ่ม",
     "D": "✓ fibrosis → elastic work เพิ่ม"
    },
-   "key_concept": "• elastic work: compliance ลด\n• resistive work: airway resistance เพิ่ม"
+   "key_concept": "• elastic work: compliance ลด\n• resistive work: airway resistance เพิ่ม",
+   "mechanism": [
+    {
+     "s": "fibrosis ทำให้ปอดแข็ง",
+     "answer": true
+    },
+    "compliance ลด",
+    "ต้องใช้แรงดันมากขึ้นเพื่อขยายปอด elastic work เพิ่ม"
+   ]
   },
   "20": {
    "explanation": "ปริมาตรอากาศในปอดหลังหายใจออกปกติ = FRC",
@@ -342,7 +461,15 @@
     "D": "✓ FEV₁ ลด compliance ลด",
     "E": "compliance เพิ่ม = emphysema"
    },
-   "key_concept": "• restrictive: ปริมาตรทุกตัวลด\n• FEV₁/FVC ปกติหรือสูง"
+   "key_concept": "• restrictive: ปริมาตรทุกตัวลด\n• FEV₁/FVC ปกติหรือสูง",
+   "mechanism": [
+    "restrictive disease ปอดแข็ง ขยายยาก",
+    {
+     "s": "lung compliance ลด และ FEV₁ ลดตามปริมาตร",
+     "answer": true
+    },
+    "FEV₁/FVC ปกติหรือสูง"
+   ]
   },
   "24": {
    "explanation": "upright lung: apex มี V/Q สูงกว่า base (perfusion ลดมากกว่า ventilation)",
@@ -350,7 +477,15 @@
     "A": "ventilation ที่ base มากกว่า",
     "B": "✓ V/Q ratio ที่ apex สูงกว่า"
    },
-   "key_concept": "• gravity: base ได้ both V และ Q มากกว่า\n• apex PAO₂ สูง PACO₂ ต่ำ"
+   "key_concept": "• gravity: base ได้ both V และ Q มากกว่า\n• apex PAO₂ สูง PACO₂ ต่ำ",
+   "mechanism": [
+    "ท่ายืน gravity",
+    "perfusion ที่ apex ลดมากกว่า ventilation",
+    {
+     "s": "V/Q ratio ที่ apex สูงกว่า base",
+     "answer": true
+    }
+   ]
   },
   "25": {
    "explanation": "zone 1 ลดเมื่อนอนหงาย (เฉลยต้นฉบับ C); AI เลือก B (PEEP)",
@@ -359,7 +494,15 @@
     "B": "PEEP เพิ่ม alveolar pressure ทำ zone 1 เพิ่ม (AI เลือกตัวนี้)",
     "C": "✓ supine position (ตามเฉลยต้นฉบับ)"
    },
-   "key_concept": "• supine ลดความต่างระดับ hydrostatic\n• PEEP/shock เพิ่ม zone 1\n• ข้อนี้เฉลยต้นฉบับขัดกับ AI"
+   "key_concept": "• supine ลดความต่างระดับ hydrostatic\n• PEEP/shock เพิ่ม zone 1\n• ข้อนี้เฉลยต้นฉบับขัดกับ AI",
+   "mechanism": [
+    {
+     "s": "นอนหงาย (supine)",
+     "answer": true
+    },
+    "ความดันหลอดเลือดปอดทั่วปอดใกล้เคียงกัน",
+    "zone 1 (PA > Pa) ลดลง"
+   ]
   },
   "26": {
    "explanation": "ออกกำลังกาย cardiac output เพิ่ม: เฉลยต้นฉบับ E (V/Q ลด) AI เลือก B (diffusion เพิ่ม)",
@@ -370,7 +513,16 @@
     "D": "pulmonary pressure เพิ่มเล็กน้อย",
     "E": "✓ V/Q ลด (ตามเฉลยต้นฉบับ)"
    },
-   "key_concept": "• exercise: recruitment/distension ของ capillary\n• diffusing capacity ↑\n• ข้อนี้เฉลยต้นฉบับขัดกับ AI"
+   "key_concept": "• exercise: recruitment/distension ของ capillary\n• diffusing capacity ↑\n• ข้อนี้เฉลยต้นฉบับขัดกับ AI",
+   "mechanism": [
+    "ออกกำลังกาย",
+    "cardiac output และ blood flow เพิ่ม",
+    "perfusion เพิ่มมากกว่า ventilation ในบางส่วน",
+    {
+     "s": "V/Q ratio ลด",
+     "answer": true
+    }
+   ]
   },
   "27": {
    "explanation": "left heart failure → capillary hydrostatic pressure เพิ่ม → pulmonary edema",
@@ -381,7 +533,16 @@
     "D": "✓ capillary hydrostatic pressure เพิ่ม",
     "E": "permeability เพิ่มไม่ใช่ลด"
    },
-   "key_concept": "• Starling: Pc ↑ → filtration ↑\n• cardiogenic pulmonary edema"
+   "key_concept": "• Starling: Pc ↑ → filtration ↑\n• cardiogenic pulmonary edema",
+   "mechanism": [
+    "left heart failure",
+    "เลือดคั่งใน pulmonary vein",
+    {
+     "s": "capillary hydrostatic pressure เพิ่ม",
+     "answer": true
+    },
+    "น้ำซึมออก pulmonary edema"
+   ]
   },
   "28": {
    "explanation": "PB 520 → PiO₂ = 0.21(520 − 47) ≈ 99 mmHg",
@@ -402,7 +563,15 @@
     "D": "PaO₂ ลดคือผล",
     "E": "surface area ลด = emphysema"
    },
-   "key_concept": "• Fick: D ∝ A/T\n• fibrosis → T ↑"
+   "key_concept": "• Fick: D ∝ A/T\n• fibrosis → T ↑",
+   "mechanism": [
+    {
+     "s": "fibrosis ทำให้ respiratory membrane หนา",
+     "answer": true
+    },
+    "การแพร่ O₂ ช้าลง",
+    "PaO₂ ลดลง"
+   ]
   },
   "30": {
    "explanation": "PaCO₂ เพิ่มในคนปกติเมื่อ hypoventilation",
@@ -413,7 +582,15 @@
     "D": "ปีนเขา hyperventilate PaCO₂ ลด",
     "E": "O₂ 100% ไม่เพิ่ม PaCO₂"
    },
-   "key_concept": "• PaCO₂ ∝ VCO₂/VA\n• hyperventilation → PaCO₂ ลด"
+   "key_concept": "• PaCO₂ ∝ VCO₂/VA\n• hyperventilation → PaCO₂ ลด",
+   "mechanism": [
+    {
+     "s": "hypoventilation",
+     "answer": true
+    },
+    "CO₂ ถูกกำจัดไม่ทัน",
+    "PaCO₂ เพิ่ม"
+   ]
   },
   "31": {
    "explanation": "CO เป็น diffusion-limited gas (จับ Hb แน่น PCO ใน plasma ไม่เพิ่ม)",
@@ -424,7 +601,15 @@
     "D": "CO₂ perfusion-limited",
     "E": "N₂O perfusion-limited"
    },
-   "key_concept": "• perfusion-limited: O₂, CO₂, N₂O\n• diffusion-limited: CO, O₂ ในโรค/ออกกำลัง"
+   "key_concept": "• perfusion-limited: O₂, CO₂, N₂O\n• diffusion-limited: CO, O₂ ในโรค/ออกกำลัง",
+   "mechanism": [
+    "CO จับ Hb แน่นมาก",
+    "PCO ใน plasma ไม่สูงขึ้นระหว่างผ่าน capillary",
+    {
+     "s": "CO จึงเป็น diffusion-limited gas",
+     "answer": true
+    }
+   ]
   },
   "32": {
    "explanation": "fetal Hb (HbF) มี affinity ต่อ O₂ สูงกว่า HbA (จับ 2,3-DPG น้อย)",
@@ -435,7 +620,15 @@
     "D": "chronic hypoxia เพิ่ม 2,3-DPG → affinity ลด",
     "E": "✓ HbF affinity สูง"
    },
-   "key_concept": "• left shift: ↓temp ↓H⁺ ↓CO₂ ↓2,3-DPG, HbF, CO\n• HbF: ไม่จับ 2,3-DPG"
+   "key_concept": "• left shift: ↓temp ↓H⁺ ↓CO₂ ↓2,3-DPG, HbF, CO\n• HbF: ไม่จับ 2,3-DPG",
+   "mechanism": [
+    {
+     "s": "HbF มี 2,3-DPG จับได้น้อย",
+     "answer": true
+    },
+    "affinity ต่อ O₂ สูงกว่า HbA",
+    "ดึง O₂ จากแม่ได้ดี"
+   ]
   },
   "33": {
    "explanation": "sickle cell: Hb น้อยลง/ผิดรูป O₂ content ลด (PaO₂ ปกติ)",
@@ -446,7 +639,15 @@
     "D": "✓ decreased O₂ content",
     "E": "content ลดไม่เพิ่ม"
    },
-   "key_concept": "• PaO₂ ขึ้นกับปอด\n• content ขึ้นกับ Hb"
+   "key_concept": "• PaO₂ ขึ้นกับปอด\n• content ขึ้นกับ Hb",
+   "mechanism": [
+    "sickle cell ทำให้ Hb ผิดรูป",
+    "RBC ถูกทำลาย Hb ลด",
+    {
+     "s": "O₂ content ลด",
+     "answer": true
+    }
+   ]
   },
   "34": {
    "explanation": "อยู่บนที่สูงเรื้อรัง 2,3-DPG เพิ่ม → oxyhemoglobin curve shift ขวา",
@@ -456,7 +657,16 @@
     "C": "2,3-DPG เพิ่มไม่ลด",
     "D": "respiratory alkalosis ไม่ใช่ acidosis"
    },
-   "key_concept": "• altitude: hyperventilation, ↑EPO, ↑2,3-DPG\n• respiratory alkalosis"
+   "key_concept": "• altitude: hyperventilation, ↑EPO, ↑2,3-DPG\n• respiratory alkalosis",
+   "mechanism": [
+    "อยู่ที่สูง O₂ ต่ำ",
+    "2,3-DPG เพิ่ม",
+    {
+     "s": "curve shift ขวา",
+     "answer": true
+    },
+    "ปล่อย O₂ ได้ง่ายขึ้น"
+   ]
   },
   "35": {
    "explanation": "CO₂ ใน venous blood ส่วนใหญ่เป็น HCO₃⁻ ใน plasma",
@@ -467,7 +677,15 @@
     "D": "dissolved ใน plasma ~7%",
     "E": "carbamino-Hb ~23%"
    },
-   "key_concept": "• 70% HCO₃⁻ · 23% carbamino · 7% dissolved\n• chloride shift"
+   "key_concept": "• 70% HCO₃⁻ · 23% carbamino · 7% dissolved\n• chloride shift",
+   "mechanism": [
+    "CO₂ เข้า RBC",
+    "carbonic anhydrase สร้าง H₂CO₃ แล้วแตกตัว",
+    {
+     "s": "ขนส่งเป็น HCO₃⁻ ในพลาสมาเป็นส่วนใหญ่",
+     "answer": true
+    }
+   ]
   },
   "36": {
    "explanation": "ตอนหลับ reticular activating system ลดการทำงาน → ventilation ลด",
@@ -478,7 +696,15 @@
     "D": "DRG เป็น inspiratory ปกติ",
     "E": "✓ reticular activating system"
    },
-   "key_concept": "• wakefulness drive ลดตอนหลับ\n• ตอนหลับ PaCO₂ เพิ่มเล็กน้อย"
+   "key_concept": "• wakefulness drive ลดตอนหลับ\n• ตอนหลับ PaCO₂ เพิ่มเล็กน้อย",
+   "mechanism": [
+    "นอนหลับ",
+    {
+     "s": "reticular activating system ลดการกระตุ้น",
+     "answer": true
+    },
+    "ventilation และความไวต่อ CO₂ ลดลง"
+   ]
   },
   "37": {
    "explanation": "deep slow breathing (apneusis) จากรอยตัดที่ mid pons",
@@ -489,7 +715,16 @@
     "D": "between pons–medulla หายใจ gasping",
     "E": "between midbrain–pons ยังปกติ"
    },
-   "key_concept": "• apneustic center ใน lower pons\n• pneumotaxic center upper pons"
+   "key_concept": "• apneustic center ใน lower pons\n• pneumotaxic center upper pons",
+   "mechanism": [
+    {
+     "s": "brainstem ถูกตัดที่ mid pons",
+     "answer": true
+    },
+    "ขาดการยับยั้งจาก pneumotaxic center",
+    "apneustic center ทำงานเกิน",
+    "หายใจลึกและช้า"
+   ]
   },
   "38": {
    "explanation": "central chemoreceptor ตอบสนอง H⁺ ใน CSF เป็นหลัก (pH ของ CSF)",
@@ -499,7 +734,16 @@
     "C": "arterial CO₂ กระตุ้นทางอ้อม",
     "D": "arterial O₂ กระตุ้น peripheral chemoreceptor"
    },
-   "key_concept": "• CO₂ ข้าม BBB → H⁺ ใน CSF → กระตุ้น\n• central ตอบ H⁺ ไม่ตอบ O₂"
+   "key_concept": "• CO₂ ข้าม BBB → H⁺ ใน CSF → กระตุ้น\n• central ตอบ H⁺ ไม่ตอบ O₂",
+   "mechanism": [
+    "CO₂ ข้าม BBB",
+    "CO₂ รวมกับน้ำเป็น H⁺ ใน CSF",
+    {
+     "s": "pH ใน CSF ลดกระตุ้น central chemoreceptor",
+     "answer": true
+    },
+    "ventilation เพิ่ม"
+   ]
   },
   "39": {
    "explanation": "pulmonary embolism SaO₂ 85% กระตุ้น carotid และ aortic (peripheral) chemoreceptor",
@@ -509,7 +753,16 @@
     "C": "medullary chemoreceptor ไม่ตอบ O₂",
     "D": "✓ carotid and aortic chemoreceptor"
    },
-   "key_concept": "• peripheral chemoreceptor ตอบ PaO₂ ต่ำ\n• glomus cells"
+   "key_concept": "• peripheral chemoreceptor ตอบ PaO₂ ต่ำ\n• glomus cells",
+   "mechanism": [
+    "pulmonary embolism ทำให้ PaO₂ ลด (SpO₂ 85%)",
+    {
+     "s": "carotid และ aortic body รับรู้ hypoxia",
+     "answer": true
+    },
+    "ส่ง CN IX/X ไปยัง medulla",
+    "ventilation เพิ่ม"
+   ]
   },
   "40": {
    "explanation": "glossopharyngeal nerve (CN IX) นำสัญญาณจาก carotid body chemoreceptor",
@@ -520,7 +773,15 @@
     "D": "aortic chemoreceptor ผ่าน vagus (CN X)",
     "E": "✓ carotid body reflex (CN IX)"
    },
-   "key_concept": "• carotid body → CN IX\n• aortic body → CN X"
+   "key_concept": "• carotid body → CN IX\n• aortic body → CN X",
+   "mechanism": [
+    "CN IX นำสัญญาณจาก carotid body",
+    {
+     "s": "carotid body chemoreceptor reflex เสียไป",
+     "answer": true
+    },
+    "ventilation ไม่ตอบสนองต่อ hypoxia"
+   ]
   },
   "41": {
    "explanation": "oxymetazoline ใช้เกิน 3–5 วัน → rebound congestion",
@@ -531,7 +792,15 @@
     "D": "salt retention = mineralocorticoid",
     "E": "urinary sphincter ไม่ใช่"
    },
-   "key_concept": "• rhinitis medicamentosa\n• จำกัดการใช้ ≤ 3 วัน"
+   "key_concept": "• rhinitis medicamentosa\n• จำกัดการใช้ ≤ 3 วัน",
+   "mechanism": [
+    "oxymetazoline เป็น α agonist หดหลอดเลือดจมูก",
+    "ใช้นานตัวรับลดการตอบสนอง",
+    {
+     "s": "หลอดเลือดขยายกลับ คัดจมูกมากขึ้น (rebound congestion)",
+     "answer": true
+    }
+   ]
   },
   "42": {
    "explanation": "omalizumab จับ Fc-epsilon (Fcε) site ของ IgE ปิดกั้นไม่ให้จับ mast cell",
@@ -539,7 +808,16 @@
     "A": "H₁ receptor คือ antihistamine",
     "B": "✓ Fcε receptor / IgE"
    },
-   "key_concept": "• omalizumab = anti-IgE\n• ใช้ในหืดรุนแรง allergic"
+   "key_concept": "• omalizumab = anti-IgE\n• ใช้ในหืดรุนแรง allergic",
+   "mechanism": [
+    "omalizumab เป็น anti-IgE",
+    {
+     "s": "จับ Fcε3 domain ของ IgE",
+     "answer": true
+    },
+    "IgE จับ mast cell ไม่ได้",
+    "ลดอาการหืดควบคุมยาก"
+   ]
   },
   "43": {
    "explanation": "brompheniramine (first-generation antihistamine) มีฤทธิ์ anticholinergic ทำให้ปัสสาวะคั่ง",
@@ -547,7 +825,16 @@
     "A": "hypertension ไม่ใช่",
     "B": "✓ urinary retention"
    },
-   "key_concept": "• first-gen H₁: ง่วง, ปากแห้ง, urinary retention\n• anticholinergic effect"
+   "key_concept": "• first-gen H₁: ง่วง, ปากแห้ง, urinary retention\n• anticholinergic effect",
+   "mechanism": [
+    "brompheniramine ต้าน H1 และ muscarinic",
+    "บล็อก M3 ที่กระเพาะปัสสาวะ",
+    "detrusor หดน้อยลง",
+    {
+     "s": "urinary retention",
+     "answer": true
+    }
+   ]
   },
   "46": {
    "explanation": "levofloxacin (fluoroquinolone) ทำให้ QT ยาว → torsades de pointes",
@@ -557,7 +844,15 @@
     "C": "pancytopenia ไม่ใช่",
     "D": "✓ torsades de pointes (QT prolongation)"
    },
-   "key_concept": "• FQ: QT prolong, tendon rupture\n• เลี่ยงใน QT ยาว"
+   "key_concept": "• FQ: QT prolong, tendon rupture\n• เลี่ยงใน QT ยาว",
+   "mechanism": [
+    "levofloxacin บล็อก hERG K⁺ channel",
+    "QT ยาว",
+    {
+     "s": "เสี่ยง torsades de pointes",
+     "answer": true
+    }
+   ]
   },
   "47": {
    "explanation": "isoniazid ทำให้ peripheral neuropathy (ชา) จากขาด pyridoxine",
@@ -568,7 +863,16 @@
     "D": "levofloxacin ทำ tendinopathy",
     "E": "pyrazinamide ทำ hyperuricemia"
    },
-   "key_concept": "• INH: ให้ vitamin B6\n• neuropathy + hepatitis"
+   "key_concept": "• INH: ให้ vitamin B6\n• neuropathy + hepatitis",
+   "mechanism": [
+    {
+     "s": "isoniazid ทำให้ขาด pyridoxine",
+     "answer": true
+    },
+    "เส้นประสาทขาด B6",
+    "peripheral neuropathy",
+    "ชา ปลายแขนขา"
+   ]
   },
   "48": {
    "explanation": "ก้อนที่ hilum ในคนสูบบุหรี่ พบเซลล์ squamous = squamous cell carcinoma",
@@ -576,7 +880,15 @@
     "A": "✓ squamous cell carcinoma",
     "B": "small cell ก็ central แต่ histology ไม่ใช่"
    },
-   "key_concept": "• SCC: central, smoker, keratin\n• small cell: neuroendocrine"
+   "key_concept": "• SCC: central, smoker, keratin\n• small cell: neuroendocrine",
+   "mechanism": [
+    "สูบบุหรี่ระคายหลอดลมใหญ่",
+    "squamous metaplasia → dysplasia",
+    {
+     "s": "squamous cell carcinoma ก้อนบริเวณ hilum",
+     "answer": true
+    }
+   ]
   },
   "49": {
    "explanation": "ลมเข้า pleural space ข้างขวา mediastinum เบี่ยงซ้าย ไม่มีซี่โครงหัก = spontaneous pneumothorax จาก lung bleb",
@@ -586,7 +898,16 @@
     "C": "sequestration ไม่ใช่",
     "D": "emphysema เป็นโรคพื้นฐาน"
    },
-   "key_concept": "• bleb/bulla → spontaneous pneumothorax\n• tension: mediastinal shift"
+   "key_concept": "• bleb/bulla → spontaneous pneumothorax\n• tension: mediastinal shift",
+   "mechanism": [
+    {
+     "s": "bleb ใน pleura ชายหนุ่ม",
+     "answer": true
+    },
+    "bleb แตก",
+    "อากาศรั่วเข้าช่อง pleura",
+    "pneumothorax; breath sound หายด้านขวา"
+   ]
   },
   "51": {
    "explanation": "goblet metaplasia + smooth muscle hyperplasia + eosinophil = asthma (bronchitis)",
@@ -596,7 +917,16 @@
     "C": "chronic bronchitis ไม่มี eosinophil เด่น",
     "D": "✓ asthma"
    },
-   "key_concept": "• asthma: eosinophil, smooth muscle hypertrophy\n• goblet cell hyperplasia"
+   "key_concept": "• asthma: eosinophil, smooth muscle hypertrophy\n• goblet cell hyperplasia",
+   "mechanism": [
+    "หืดเรื้อรัง",
+    "goblet cell metaplasia และ smooth muscle hyperplasia",
+    "เสมหะหนาและหลอดลมแคบ",
+    {
+     "s": "เสียชีวิตจาก asthma (status asthmaticus)",
+     "answer": true
+    }
+   ]
   },
   "52": {
    "explanation": "pneumocyte โตมี inclusion ที่ nucleus + cytoplasm = CMV pneumonia",
@@ -607,7 +937,16 @@
     "D": "candidiasis มี pseudohyphae",
     "E": "histoplasmosis yeast ใน macrophage"
    },
-   "key_concept": "• CMV: intranuclear + cytoplasmic inclusion\n• immunosuppressed"
+   "key_concept": "• CMV: intranuclear + cytoplasmic inclusion\n• immunosuppressed",
+   "mechanism": [
+    "หลังปลูกถ่ายไตได้ยากดภูมิ",
+    "ภูมิคุ้มกันต่ำ",
+    {
+     "s": "ติดเชื้อฉวยโอกาส CMV",
+     "answer": true
+    },
+    "ไข้ ไอ เหนื่อย"
+   ]
   },
   "53": {
    "explanation": "mucous gland hyperplasia + lymphocyte + mucus ใน lumen + ผนัง alveolus ปกติ = chronic bronchitis",
@@ -618,7 +957,15 @@
     "D": "acute bronchitis ไม่เรื้อรัง",
     "E": "asthma มี eosinophil"
    },
-   "key_concept": "• chronic bronchitis: Reid index ↑\n• alveolar wall ปกติ"
+   "key_concept": "• chronic bronchitis: Reid index ↑\n• alveolar wall ปกติ",
+   "mechanism": [
+    "สูบบุหรี่ระคายหลอดลม",
+    "mucous gland hyperplasia",
+    {
+     "s": "ไอมีเสมหะเรื้อรัง (chronic bronchitis)",
+     "answer": true
+    }
+   ]
   },
   "54": {
    "explanation": "diaphragmatic hernia มักร่วมกับ pulmonary hypoplasia",
@@ -628,7 +975,15 @@
     "C": "abnormal fissure ไม่ใช่",
     "D": "sequestration ไม่ใช่"
    },
-   "key_concept": "• CDH → ลำไส้เบียดปอด → hypoplasia\n• พบบ่อยด้านซ้าย (Bochdalek)"
+   "key_concept": "• CDH → ลำไส้เบียดปอด → hypoplasia\n• พบบ่อยด้านซ้าย (Bochdalek)",
+   "mechanism": [
+    "กระบังลมไม่ปิด",
+    "ลำไส้เบียดปอดตอนพัฒนา",
+    {
+     "s": "ปอดไม่เจริญ pulmonary hypoplasia",
+     "answer": true
+    }
+   ]
   },
   "56": {
    "explanation": "ทอนซิลอักเสบ ส่ง throat swab",
@@ -659,7 +1014,16 @@
     "D": "respiratory acidosis PCO₂ สูง",
     "E": "respiratory alkalosis pH สูง"
    },
-   "key_concept": "• Winter: PCO₂ = 1.5·HCO₃⁻ + 8 ±2\n• compensation เหมาะสม"
+   "key_concept": "• Winter: PCO₂ = 1.5·HCO₃⁻ + 8 ±2\n• compensation เหมาะสม",
+   "mechanism": [
+    "pH 7.2 ต่ำ",
+    "HCO₃⁻ 12 ต่ำ",
+    {
+     "s": "เป็น metabolic acidosis",
+     "answer": true
+    },
+    "PCO₂ ต่ำเพื่อชดเชย"
+   ]
   },
   "61": {
    "explanation": "homogeneous opacity บน CXR: เฉลยต้นฉบับ E (pleural effusion); AI เลือก B (hemothorax)",
@@ -712,7 +1076,15 @@
     "D": "TB ต้องเป็น granuloma",
     "E": "cancer ไม่ใช่ neutrophil"
    },
-   "key_concept": "• pneumonia: neutrophil ใน alveoli\n• S. pneumoniae พบบ่อย"
+   "key_concept": "• pneumonia: neutrophil ใน alveoli\n• S. pneumoniae พบบ่อย",
+   "mechanism": [
+    "แบคทีเรียติดเชื้อในถุงลม",
+    "neutrophil เข้าถุงลมจำนวนมาก",
+    {
+     "s": "pneumonia (consolidation)",
+     "answer": true
+    }
+   ]
   },
   "66": {
    "explanation": "cavitation + infiltration + calcification กลีบบนซ้าย (สงสัย TB) ยืนยันด้วย sputum AFB culture",
@@ -734,7 +1106,15 @@
     "D": "emphysema PaO₂ ลด",
     "E": "chronic bronchitis PaO₂ ลด"
    },
-   "key_concept": "• CO จับ Hb แน่น → SaO₂ ลด\n• PaO₂ ปกติ\n• รักษา 100% O₂"
+   "key_concept": "• CO จับ Hb แน่น → SaO₂ ลด\n• PaO₂ ปกติ\n• รักษา 100% O₂",
+   "mechanism": [
+    "ไฟไหม้ สูดเขม่าควัน",
+    "CO จับ Hb แน่นกว่า O₂ ราว 200 เท่า",
+    {
+     "s": "CO poisoning เนื้อเยื่อขาด O₂",
+     "answer": true
+    }
+   ]
   },
   "69": {
    "explanation": "ทารกในครรภ์ 16 สัปดาห์ (pseudoglandular stage) ยังไม่มี type I pneumocyte จึงพบ ciliated columnar epithelium ของ bronchus",
@@ -764,7 +1144,15 @@
     "D": "total obstruction → resorption atelectasis",
     "E": "✓ compression จากของเหลวใน pleural space"
    },
-   "key_concept": "• compression atelectasis: effusion/pneumothorax\n• resorption: obstruction"
+   "key_concept": "• compression atelectasis: effusion/pneumothorax\n• resorption: obstruction",
+   "mechanism": [
+    "blunt chest injury เลือด/น้ำในช่อง pleura",
+    "ของเหลวกดเนื้อปอด",
+    {
+     "s": "atelectasis จาก compression ของ fluid ใน pleural cavity",
+     "answer": true
+    }
+   ]
   },
   "72": {
    "explanation": "เจาะเนื้อเยื่อหลอดลมด้วยเข็มแล้วเกิด pneumothorax = iatrogenic",
@@ -775,7 +1163,15 @@
     "D": "primary spontaneous ในชายหนุ่ม",
     "E": "secondary spontaneous ในโรคปอดเดิม"
    },
-   "key_concept": "• iatrogenic: biopsy, central line\n• observe/aspirate/chest tube"
+   "key_concept": "• iatrogenic: biopsy, central line\n• observe/aspirate/chest tube",
+   "mechanism": [
+    "เข็มทะลุ pleura ตอนเจาะ",
+    "อากาศรั่วเข้าช่อง pleura",
+    {
+     "s": "iatrogenic pneumothorax",
+     "answer": true
+    }
+   ]
   },
   "73": {
    "explanation": "chronic bronchitis เสมหะเหนียว ใช้ mucolytic carbocysteine",
@@ -786,7 +1182,15 @@
     "D": "dextromethorphan เป็นยากดศูนย์ไอ ไม่มีฤทธิ์ละลายเสมหะ และทำให้เสมหะคั่งได้",
     "E": "noscapine เป็นยากดไอกลุ่ม opioid ที่ไม่เสพติด ไม่มีฤทธิ์ละลายเสมหะ"
    },
-   "key_concept": "• mucolytic: carbocysteine, bromhexine, acetylcysteine\n• ไม่ควรกดไอเมื่อมีเสมหะมาก"
+   "key_concept": "• mucolytic: carbocysteine, bromhexine, acetylcysteine\n• ไม่ควรกดไอเมื่อมีเสมหะมาก",
+   "mechanism": [
+    "chronic bronchitis มีเสมหะเหนียว",
+    {
+     "s": "carbocysteine เป็น mucolytic",
+     "answer": true
+    },
+    "ลดความเหนียวเสมหะ ขับออกง่าย"
+   ]
   }
  },
  "extra_edits": {}

@@ -13,7 +13,16 @@
     "B": "✓ neutrophil เป็นเซลล์แรกใน acute inflammation",
     "C": "macrophage = chronic"
    },
-   "key_concept": "• acute: neutrophil · chronic: macrophage/lymphocyte\n• IL-8, C5a ดึง neutrophil\n• pus"
+   "key_concept": "• acute: neutrophil · chronic: macrophage/lymphocyte\n• IL-8, C5a ดึง neutrophil\n• pus",
+   "mechanism": [
+    "บาดเจ็บหรือเชื้อกระตุ้น",
+    "หลอดเลือดเปิดและ cytokine เพิ่ม",
+    "neutrophil ออกจากหลอดเลือด",
+    {
+     "s": "ลักษณะสำคัญคือ neutrophil influx",
+     "answer": true
+    }
+   ]
   },
   "2": {
    "explanation": "Fastidious bacteria (เช่น Haemophilus, Neisseria) เลี้ยงบน chocolate agar",
@@ -131,7 +140,15 @@
     "D": "✓ sacral ganglion",
     "E": "trigeminal = HSV-1"
    },
-   "key_concept": "• HSV-1: trigeminal · HSV-2: sacral\n• genital herpes\n• acyclovir"
+   "key_concept": "• HSV-1: trigeminal · HSV-2: sacral\n• genital herpes\n• acyclovir",
+   "mechanism": [
+    "HSV-2 ติดเยื่อบุอวัยวะเพศ",
+    "ไวรัสเดินทางย้อนตามเส้นประสาท",
+    {
+     "s": "แฝงที่ sacral ganglion แล้ว reactivate",
+     "answer": true
+    }
+   ]
   },
   "14": {
    "explanation": "Tetanus ไม่ติดต่อจากคนสู่คน (ข้อนี้ต้นฉบับเลือก blood transfusion)",
@@ -185,12 +202,12 @@
    },
    "key_concept": "• positive selection: cortex (MHC restriction)\n• negative selection: medulla (self-tolerance)\n• double positive CD4/CD8",
    "mechanism": [
-    "thymocyte DP ใน cortex",
-    "จับ MHC ของ cortical epithelium",
     {
-     "s": "positive selection",
+     "s": "thymocyte DP ใน cortex",
      "answer": true
     },
+    "จับ MHC ของ cortical epithelium",
+    "positive selection",
     "ผ่านไป medulla",
     "negative selection"
    ]
@@ -212,7 +229,15 @@
     "B": "proliferation ตามมา",
     "C": "differentiation ตามมา"
    },
-   "key_concept": "• TCR + MHC = signal 1\n• CD28–B7 = signal 2\n• ครบ → proliferation/differentiation"
+   "key_concept": "• TCR + MHC = signal 1\n• CD28–B7 = signal 2\n• ครบ → proliferation/differentiation",
+   "mechanism": [
+    "TCR จับ peptide–MHC",
+    "เกิด signal ผ่าน CD3",
+    {
+     "s": "T cell activation",
+     "answer": true
+    }
+   ]
   },
   "23": {
    "explanation": "Fc ของ antibody จับ Fc receptor และ complement",
@@ -222,7 +247,15 @@
     "C": "heavy chain กว้าง",
     "D": "light chain ไม่ใช่"
    },
-   "key_concept": "• Fab = antigen binding · Fc = effector\n• FcR, C1q\n• IgG/IgM"
+   "key_concept": "• Fab = antigen binding · Fc = effector\n• FcR, C1q\n• IgG/IgM",
+   "mechanism": [
+    {
+     "s": "Fc ของ antibody จับ Fc receptor บนเซลล์",
+     "answer": true
+    },
+    "จับ complement C1q",
+    "ทำหน้าที่ effector function"
+   ]
   },
   "25": {
    "explanation": "Nematode: IL-4 (Th2)",
@@ -233,7 +266,15 @@
     "D": "IFN-γ = Th1",
     "E": "TNF ไม่ใช่"
    },
-   "key_concept": "• helminth: Th2 → IL-4 (IgE), IL-5, IL-13\n• eosinophil + IgE\n• Th1 = intracellular"
+   "key_concept": "• helminth: Th2 → IL-4 (IgE), IL-5, IL-13\n• eosinophil + IgE\n• Th1 = intracellular",
+   "mechanism": [
+    "nematode กระตุ้น Th2",
+    "หลั่ง cytokine",
+    {
+     "s": "IL-4 กระตุ้น IgE และ eosinophil",
+     "answer": true
+    }
+   ]
   },
   "27": {
    "explanation": "SLE ที่มี hemolytic anemia — anti-dsDNA จำเพาะ",
@@ -244,7 +285,15 @@
     "D": "antiphospholipid = APS",
     "E": "anti-smooth muscle = autoimmune hepatitis"
    },
-   "key_concept": "• SLE: ANA (ไว), anti-dsDNA/anti-Sm (จำเพาะ)\n• Coombs: AIHA\n• complement ต่ำ"
+   "key_concept": "• SLE: ANA (ไว), anti-dsDNA/anti-Sm (จำเพาะ)\n• Coombs: AIHA\n• complement ต่ำ",
+   "mechanism": [
+    "ผื่น ข้ออักเสบ hemolytic anemia นึกถึง SLE",
+    "SLE มี autoantibody ต่อ nuclear antigen",
+    {
+     "s": "anti-double stranded DNA (จำเพาะ SLE)",
+     "answer": true
+    }
+   ]
   },
   "29": {
    "explanation": "4th gen CMIA/CLIA ลด window period ด้วย p24 antigen",
@@ -255,7 +304,15 @@
     "D": "✓ p24 antigen",
     "E": "whole viral lysate ไม่ใช่"
    },
-   "key_concept": "• 4th gen: antibody + p24\n• p24 ขึ้นก่อน antibody\n• NAT เร็วที่สุด"
+   "key_concept": "• 4th gen: antibody + p24\n• p24 ขึ้นก่อน antibody\n• NAT เร็วที่สุด",
+   "mechanism": [
+    "4th gen ตรวจทั้ง antibody และ antigen",
+    "p24 ขึ้นก่อน antibody",
+    {
+     "s": "ตรวจ HIV-1 p24 antigen ลด window period",
+     "answer": true
+    }
+   ]
   },
   "31": {
    "explanation": "หลัก biosafety: ล้างมือก่อนและหลังทำงาน",
@@ -317,7 +374,15 @@
     "C": "distress ไม่ใช่",
     "D": "ข้อ D ไม่ชัดเจน"
    },
-   "key_concept": "• quinine: cinchonism, hypoglycemia, QT, blackwater fever\n• blackwater = hemoglobinuria\n• chloroquine ไม่ใช่"
+   "key_concept": "• quinine: cinchonism, hypoglycemia, QT, blackwater fever\n• blackwater = hemoglobinuria\n• chloroquine ไม่ใช่",
+   "mechanism": [
+    "ใช้ quinine รักษามาลาเรีย falciparum",
+    "เม็ดเลือดแดงแตกในหลอดเลือดรุนแรง",
+    {
+     "s": "blackwater fever: ปัสสาวะสีดำจาก hemoglobinuria",
+     "answer": true
+    }
+   ]
   },
   "45": {
    "explanation": "IgA พบในนมแม่ (secretory IgA)",
@@ -327,7 +392,15 @@
     "C": "IgG ส่งผ่านรกเป็นหลัก มีในน้ำนมน้อยกว่า IgA",
     "D": "IgM มีในน้ำนมได้เล็กน้อย แต่ชนิดหลักคือ secretory IgA"
    },
-   "key_concept": "• breast milk: sIgA\n• IgG ผ่านรก\n• passive mucosal immunity"
+   "key_concept": "• breast milk: sIgA\n• IgG ผ่านรก\n• passive mucosal immunity",
+   "mechanism": [
+    "plasma cell ในต่อมน้ำนมสร้าง dimeric IgA",
+    "ขนส่งผ่านเยื่อบุด้วย poly-Ig receptor",
+    {
+     "s": "secretory IgA ในนมแม่ ปกป้องลำไส้ทารก",
+     "answer": true
+    }
+   ]
   },
   "46": {
    "explanation": "Griseofulvin ยับยั้ง mitosis (microtubule)",
@@ -337,7 +410,15 @@
     "C": "cell wall = echinocandin",
     "D": "impaired membrane = polyene"
    },
-   "key_concept": "• griseofulvin: microtubule → dermatophyte\n• azole: ergosterol\n• terbinafine: squalene epoxidase"
+   "key_concept": "• griseofulvin: microtubule → dermatophyte\n• azole: ergosterol\n• terbinafine: squalene epoxidase",
+   "mechanism": [
+    "griseofulvin จับ microtubule ของเชื้อรา",
+    "ขัดการก่อตัวของ spindle",
+    {
+     "s": "หยุดการแบ่งตัวของเชื้อราในระยะ mitosis",
+     "answer": true
+    }
+   ]
   },
   "47": {
    "explanation": "Stavudine (NRTI) ทำให้ peripheral neuropathy",
@@ -346,7 +427,15 @@
     "B": "nevirapine: rash/hepatitis",
     "C": "efavirenz มีผลข้างเคียงเด่นทางระบบประสาทส่วนกลาง (ฝันร้าย มึนงง) ไม่ใช่ปลายประสาทอักเสบ"
    },
-   "key_concept": "• NRTI mitochondrial toxicity: d4T, ddI, AZT\n• neuropathy, lactic acidosis, pancreatitis\n• tenofovir ปลอดภัยกว่า"
+   "key_concept": "• NRTI mitochondrial toxicity: d4T, ddI, AZT\n• neuropathy, lactic acidosis, pancreatitis\n• tenofovir ปลอดภัยกว่า",
+   "mechanism": [
+    {
+     "s": "stavudine เป็น NRTI",
+     "answer": true
+    },
+    "ยับยั้ง mitochondrial DNA polymerase",
+    "เกิด peripheral neuropathy"
+   ]
   }
  },
  "duplicate_groups": {},

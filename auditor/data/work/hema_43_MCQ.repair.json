@@ -62,12 +62,12 @@
    },
    "key_concept": "• EPO ต่ำ: CKD, polycythemia vera\n• EPO สูง: hypoxia, anemia, เนื้องอกสร้าง EPO",
    "mechanism": [
-    "เนื้อไตถูกทำลายเรื้อรัง",
-    "เซลล์สร้าง EPO ลดลง",
     {
-     "s": "EPO ในเลือดต่ำ",
+     "s": "เนื้อไตถูกทำลายเรื้อรัง",
      "answer": true
     },
+    "เซลล์สร้าง EPO ลดลง",
+    "EPO ในเลือดต่ำ",
     "normocytic anemia"
    ]
   },
@@ -80,7 +80,15 @@
     "D": "abetalipoproteinemia ทำ acanthocyte",
     "E": "MAHA ทำ schistocyte"
    },
-   "key_concept": "• burr cell: artifact, uremia · spur cell: โรคตับ, abetalipoproteinemia\n• หนาม burr สั้นสม่ำเสมอ หนาม spur ยาวไม่สม่ำเสมอ"
+   "key_concept": "• burr cell: artifact, uremia · spur cell: โรคตับ, abetalipoproteinemia\n• หนาม burr สั้นสม่ำเสมอ หนาม spur ยาวไม่สม่ำเสมอ",
+   "mechanism": [
+    {
+     "s": "เลือดเก็บไว้นาน ATP ลด",
+     "answer": true
+    },
+    "เยื่อหุ้มเซลล์ RBC เปลี่ยนรูป",
+    "เกิด burr cell (echinocyte)"
+   ]
   },
   "10": {
    "explanation": "Phagocyte สร้าง free radical ฆ่าเชื้อไม่ได้ = chronic granulomatous disease",
@@ -95,11 +103,11 @@
    "mechanism": [
     "NADPH oxidase บกพร่อง",
     "สร้าง superoxide ไม่ได้",
+    "ฆ่าเชื้อใน phagosome ไม่ได้",
     {
-     "s": "ฆ่าเชื้อใน phagosome ไม่ได้",
+     "s": "ติดเชื้อซ้ำ เกิด granuloma",
      "answer": true
-    },
-    "ติดเชื้อซ้ำ เกิด granuloma"
+    }
    ]
   },
   "11": {
@@ -113,12 +121,12 @@
    },
    "key_concept": "• PV: JAK2 V617F ~95%, EPO ต่ำ, panmyelosis\n• รักษา phlebotomy, aspirin, hydroxyurea",
    "mechanism": [
-    "JAK2 V617F",
-    "JAK-STAT ทำงานตลอด",
     {
-     "s": "erythroid/myeloid/megakaryocyte เพิ่มจำนวน",
+     "s": "JAK2 V617F",
      "answer": true
     },
+    "JAK-STAT ทำงานตลอด",
+    "erythroid/myeloid/megakaryocyte เพิ่มจำนวน",
     "เลือดหนืด ปวดหัว ม้ามโต"
    ]
   },
@@ -201,11 +209,11 @@
    "mechanism": [
     "sulfamethoxazole สร้าง oxidative stress",
     "G6PD ขาด NADPH ไม่พอ รักษา glutathione ไม่ได้",
+    "Hb ตกตะกอน RBC แตกในหลอดเลือด",
     {
-     "s": "Hb ตกตะกอน RBC แตกในหลอดเลือด",
+     "s": "Hb dimer ในเลือดสูง ปัสสาวะสีเข้ม",
      "answer": true
-    },
-    "Hb dimer ในเลือดสูง ปัสสาวะสีเข้ม"
+    }
    ]
   },
   "17": {
@@ -217,7 +225,15 @@
     "D": "target cell พบใน thalassemia/โรคตับ",
     "E": "codocyte คือชื่อเดียวกับ target cell"
    },
-   "key_concept": "• abetalipoproteinemia: MTP mutation, ขาด apoB, ดูดซึมไขมัน/วิตามิน E ไม่ได้\n• อาการ: steatorrhea, ataxia, retinitis pigmentosa"
+   "key_concept": "• abetalipoproteinemia: MTP mutation, ขาด apoB, ดูดซึมไขมัน/วิตามิน E ไม่ได้\n• อาการ: steatorrhea, ataxia, retinitis pigmentosa",
+   "mechanism": [
+    "ขาด apolipoprotein B (abetalipoproteinemia)",
+    "lipid ผิดปกติในเยื่อหุ้มเซลล์ RBC",
+    {
+     "s": "RBC รูปหนามจึงเป็น acanthocyte",
+     "answer": true
+    }
+   ]
   },
   "18": {
    "explanation": "เม็ดเลือดแดงไม่มี mitochondria จึงได้พลังงานจาก glycolysis แล้วเปลี่ยน pyruvate เป็น lactate (homolactic fermentation)",
@@ -238,7 +254,15 @@
     "C": "Ferrochelatase cofactor",
     "D": "ALA synthase coenzyme (B6)"
    },
-   "key_concept": "• Sideroblastic: B6, ALAS2\n• Iron ↑ ring sideroblast"
+   "key_concept": "• Sideroblastic: B6, ALAS2\n• Iron ↑ ring sideroblast",
+   "mechanism": [
+    {
+     "s": "ขาด ALA synthase (sideroblastic)",
+     "answer": true
+    },
+    "สร้าง heme ไม่ได้ เหล็กคั่งใน mitochondria",
+    "ซีด ตับม้ามโต"
+   ]
   },
   "21": {
    "explanation": "Lactate dehydrogenase เปลี่ยน pyruvate เป็น lactate พร้อมคืน NAD+ ให้ glycolysis เดินต่อ",
@@ -302,11 +326,11 @@
    "mechanism": [
     "heparin จับ platelet factor 4",
     "สร้าง IgG ต่อ complex",
+    "IgG กระตุ้นเกล็ดเลือดผ่าน Fc receptor",
     {
-     "s": "IgG กระตุ้นเกล็ดเลือดผ่าน Fc receptor",
+     "s": "เกล็ดเลือดต่ำแต่เกิดลิ่มเลือด",
      "answer": true
-    },
-    "เกล็ดเลือดต่ำแต่เกิดลิ่มเลือด"
+    }
    ]
   },
   "33": {
@@ -386,7 +410,15 @@
     "D": "RBC morphology (spherocyte) ไม่จำเพาะ",
     "E": "globulin สูงไม่จำเพาะต่อ hemolysis"
    },
-   "key_concept": "• DAT บวก: AIHA, hemolytic transfusion reaction, HDN, ยาบางชนิด\n• warm AIHA: IgG · cold AIHA: IgM + C3"
+   "key_concept": "• DAT บวก: AIHA, hemolytic transfusion reaction, HDN, ยาบางชนิด\n• warm AIHA: IgG · cold AIHA: IgM + C3",
+   "mechanism": [
+    "เม็ดเลือดแดงถูกภูมิคุ้มกันทำลาย (autoimmune)",
+    "antibody เคลือบผิวเม็ดเลือดแดง",
+    {
+     "s": "direct antiglobulin test (Coombs) บวก",
+     "answer": true
+    }
+   ]
   },
   "41": {
    "explanation": "Hemolysis: LDH สูง unconjugated bilirubin สูง haptoglobin ต่ำ",
@@ -412,11 +444,11 @@
    "mechanism": [
     "เยื่อหุ้ม RBC หายไปบางส่วน",
     "พื้นที่ผิว/ปริมาตรลดลง เซลล์กลม",
+    "รับน้ำเข้าได้น้อยก่อนแตก",
     {
-     "s": "รับน้ำเข้าได้น้อยก่อนแตก",
+     "s": "osmotic fragility เพิ่ม",
      "answer": true
-    },
-    "osmotic fragility เพิ่ม"
+    }
    ]
   },
   "43": {
@@ -432,11 +464,11 @@
    "mechanism": [
     "เม็ดเลือดขาด CD55/CD59",
     "complement กระตุ้นเกล็ดเลือด และ free Hb จับ NO",
+    "เกิดลิ่มเลือดดำ",
     {
-     "s": "เกิดลิ่มเลือดดำ",
+     "s": "Budd–Chiari, cerebral vein thrombosis",
      "answer": true
-    },
-    "Budd–Chiari, cerebral vein thrombosis"
+    }
    ]
   },
   "44": {
@@ -448,7 +480,15 @@
     "D": "WBC count บอกสายเม็ดเลือดขาว",
     "E": "RDW บอกความต่างของขนาดเซลล์"
    },
-   "key_concept": "• reticulocyte สูง: hemolysis/เสียเลือด · ต่ำ: สร้างไม่ได้\n• ใช้ RPI ปรับตามระดับ Hct"
+   "key_concept": "• reticulocyte สูง: hemolysis/เสียเลือด · ต่ำ: สร้างไม่ได้\n• ใช้ RPI ปรับตามระดับ Hct",
+   "mechanism": [
+    "ซีดกระตุ้นไขกระดูกสร้างเม็ดเลือดแดงใหม่",
+    "เม็ดเลือดแดงอ่อนออกสู่กระแสเลือด",
+    {
+     "s": "reticulocyte count สูง (บอกการสร้างทดแทน)",
+     "answer": true
+    }
+   ]
   },
   "45": {
    "explanation": "Heinz body คือฮีโมโกลบินที่เสียสภาพตกตะกอนในเม็ดเลือดแดง",
@@ -508,7 +548,15 @@
     "A": "✓ Vit K deficiency (breastfed, แม่ vit K ต่ำ)",
     "B": "Hereditary ไม่น่า"
    },
-   "key_concept": "• VKDB\n• PT/aPTT ยาว"
+   "key_concept": "• VKDB\n• PT/aPTT ยาว",
+   "mechanism": [
+    {
+     "s": "ทารกกินนมแม่มังสวิรัติ ขาด vitamin K",
+     "answer": true
+    },
+    "factor II, VII, IX, X ไม่ถูก carboxylate",
+    "aPT และ aPTT ยาว เลือดออกง่าย"
+   ]
   },
   "50": {
    "explanation": "Tissue plasminogen activator (tPA) เป็นตัวหลักของ fibrinolysis ตามสรีรวิทยา",
@@ -539,7 +587,16 @@
     "D": "clot retraction เป็นขั้นหลังเกิดลิ่มเลือดแล้ว",
     "E": "antithrombin เป็นสารต้านการแข็งตัว ไม่ใช่ hemostasis"
    },
-   "key_concept": "• primary: vasoconstriction → adhesion (GPIb–vWF) → activation → aggregation (GPIIb/IIIa)\n• secondary: coagulation cascade สร้าง fibrin"
+   "key_concept": "• primary: vasoconstriction → adhesion (GPIb–vWF) → activation → aggregation (GPIIb/IIIa)\n• secondary: coagulation cascade สร้าง fibrin",
+   "mechanism": [
+    "ผนังหลอดเลือดเสียหาย",
+    "collagen และ vWF เกาะเกล็ดเลือด",
+    {
+     "s": "GPIIb/IIIa ผูกกับ fibrinogen",
+     "answer": true
+    },
+    "เกล็ดเลือดรวมกลุ่มเป็น primary hemostasis"
+   ]
   },
   "52": {
    "explanation": "Ristocetin ลดลง, ADP/collagen ปกติ → VWD",
@@ -575,11 +632,11 @@
    "mechanism": [
     "T cell ผู้บริจาคในถุงเลือด",
     "ผู้รับภูมิต่ำกำจัดไม่ได้",
+    "ฉายรังสีทำให้ T cell แบ่งตัวไม่ได้",
     {
-     "s": "ฉายรังสีทำให้ T cell แบ่งตัวไม่ได้",
+     "s": "ไม่เกิด GVHD",
      "answer": true
-    },
-    "ไม่เกิด GVHD"
+    }
    ]
   },
   "58": {
@@ -593,12 +650,12 @@
    },
    "key_concept": "• เลือดออกรุนแรงจาก warfarin: หยุดยา + vitamin K IV + PCC/FFP\n• PT/INR ยาวเด่นเพราะ factor VII half-life สั้น",
    "mechanism": [
-    "warfarin ยับยั้ง VKORC1",
-    "factor II, VII, IX, X ลดลง INR >9",
     {
-     "s": "vitamin K คืนการสร้าง factor ที่ทำงานได้",
+     "s": "warfarin ยับยั้ง VKORC1",
      "answer": true
     },
+    "factor II, VII, IX, X ลดลง INR >9",
+    "vitamin K คืนการสร้าง factor ที่ทำงานได้",
     "INR ลดลง เลือดหยุด"
    ]
   },
@@ -624,12 +681,12 @@
    },
    "key_concept": "• naturally occurring antibody: ABO (IgM)\n• immune antibody: Rh, Kell, Kidd, Duffy (IgG)",
    "mechanism": [
-    "ให้เลือดผิดหมู่ ABO",
-    "anti-A/B (IgM) จับ RBC ทันที",
     {
-     "s": "complement ทำงานถึง MAC",
+     "s": "ให้เลือดผิดหมู่ ABO",
      "answer": true
     },
+    "anti-A/B (IgM) จับ RBC ทันที",
+    "complement ทำงานถึง MAC",
     "intravascular hemolysis เฉียบพลัน"
    ]
   },
@@ -658,7 +715,7 @@
     "พลาสมาผู้บริจาคมีโปรตีน (เช่น IgA)",
     "ผู้รับมี IgE/anti-IgA",
     {
-     "s": "mast cell degranulate",
+     "s": "mast cell degranulate (anaphylaxis)",
      "answer": true
     },
     "หลอดลมหดเกร็ง บวม ความดันตก"
@@ -687,11 +744,11 @@
    "mechanism": [
     "ให้ PRC จำนวนมาก",
     "factor และเกล็ดเลือดถูกเจือจาง/ใช้ไป",
+    "เลือดแข็งตัวไม่ได้",
     {
-     "s": "เลือดแข็งตัวไม่ได้",
+     "s": "เติม FFP + platelet",
      "answer": true
-    },
-    "เติม FFP + platelet"
+    }
    ]
   },
   "65": {
@@ -734,12 +791,12 @@
    },
    "key_concept": "• ป้องกันด้วย mesna และให้น้ำมาก\n• ifosfamide ก็ทำได้เช่นกัน",
    "mechanism": [
-    "cyclophosphamide ถูกเปลี่ยนที่ตับ",
-    "ได้ acrolein ขับทางไต",
     {
-     "s": "ทำลาย urothelium",
+     "s": "cyclophosphamide ถูกเปลี่ยนที่ตับ",
      "answer": true
     },
+    "ได้ acrolein ขับทางไต",
+    "ทำลาย urothelium",
     "ปัสสาวะเป็นเลือด"
    ]
   },
@@ -752,7 +809,15 @@
     "D": "fluorouracil เป็น antimetabolite",
     "E": "bevacizumab เป็น anti-VEGF antibody"
    },
-   "key_concept": "• imatinib: CML (Ph+), GIST\n• ADR: บวมน้ำ ตะคริว"
+   "key_concept": "• imatinib: CML (Ph+), GIST\n• ADR: บวมน้ำ ตะคริว",
+   "mechanism": [
+    "BCR-ABL เป็น tyrosine kinase ที่ผิดปกติใน CML",
+    {
+     "s": "imatinib จับตำแหน่ง ATP ของ kinase",
+     "answer": true
+    },
+    "ยับยั้งการส่งสัญญาณทำให้เซลล์ตาย"
+   ]
   },
   "69": {
    "explanation": "เคมีบำบัดทำให้เซลล์แตก กรดยูริกสูง (hyperuricemia) ไม่ใช่ต่ำ",
@@ -807,11 +872,11 @@
    "mechanism": [
     "streak gonad มี Y chromosome material",
     "germ cell เจริญผิดปกติ",
+    "เกิด gonadoblastoma",
     {
-     "s": "เกิด gonadoblastoma",
+     "s": "กลายเป็น malignant germ cell tumor",
      "answer": true
-    },
-    "กลายเป็น malignant germ cell tumor"
+    }
    ]
   },
   "77": {
@@ -836,12 +901,12 @@
    },
    "key_concept": "• กลไก oncogene activation: point mutation (RAS), amplification (HER2, N-MYC), translocation (BCR-ABL)\n• oncogene = gain of function",
    "mechanism": [
-    "เกิด translocation",
-    "proto-oncogene ไปอยู่ใต้ promoter แรงหรือเชื่อมกับยีนอื่น",
     {
-     "s": "แสดงออกมากเกิน/ได้โปรตีนที่ทำงานตลอด",
+     "s": "เกิด translocation",
      "answer": true
     },
+    "proto-oncogene ไปอยู่ใต้ promoter แรงหรือเชื่อมกับยีนอื่น",
+    "แสดงออกมากเกิน/ได้โปรตีนที่ทำงานตลอด",
     "เซลล์แบ่งตัวไม่หยุด"
    ]
   },
@@ -853,7 +918,15 @@
     "C": "✓ RAS ส่งสัญญาณจาก receptor ไป MAPK pathway",
     "D": "transcription factor เป็นผลผลิตของ MYC"
    },
-   "key_concept": "• RAS กลายพันธุ์ → สลาย GTP ไม่ได้ ทำงานค้าง\n• KRAS พบใน pancreas, colon, lung"
+   "key_concept": "• RAS กลายพันธุ์ → สลาย GTP ไม่ได้ ทำงานค้าง\n• KRAS พบใน pancreas, colon, lung",
+   "mechanism": [
+    {
+     "s": "RAS เป็น intracellular signal transducer",
+     "answer": true
+    },
+    "RAS กลายพันธุ์ค้างสถานะ active",
+    "ส่งสัญญาณแบ่งเซลล์ตลอด → มะเร็ง"
+   ]
   },
   "81": {
    "explanation": "เฉลยต้นฉบับเลือก chest X-ray เป็นการตรวจที่ลดการตายจากมะเร็งในประเทศพัฒนาแล้ว (อิงมะเร็งปอดเป็นสาเหตุตายอันดับหนึ่ง)",
@@ -875,12 +948,12 @@
    },
    "key_concept": "• sCa++mous: squamous → hypercalcemia\n• small cell: SIADH, Cushing, Lambert–Eaton",
    "mechanism": [
-    "เซลล์มะเร็งหลั่ง PTHrP",
-    "จับ PTH receptor ที่กระดูกและไต",
     {
-     "s": "สลายกระดูก ดูดกลับ Ca",
+     "s": "squamous cell carcinoma ปอดหลั่ง PTHrP",
      "answer": true
     },
+    "จับ PTH receptor ที่กระดูกและไต",
+    "สลายกระดูก ดูดกลับ Ca",
     "hypercalcemia"
    ]
   },
@@ -894,12 +967,12 @@
    },
    "key_concept": "• tumor suppressor: RB, TP53, APC, BRCA, VHL (loss of function)\n• oncogene: RAS, MYC, ABL, HER2 (gain of function)",
    "mechanism": [
-    "RB1 เสียทั้งสอง allele",
-    "E2F ไม่ถูกยับยั้ง",
     {
-     "s": "เซลล์ผ่าน G1/S โดยไม่ถูกควบคุม",
+     "s": "RB1 เสียทั้งสอง allele",
      "answer": true
     },
+    "E2F ไม่ถูกยับยั้ง",
+    "เซลล์ผ่าน G1/S โดยไม่ถูกควบคุม",
     "retinoblastoma, osteosarcoma"
    ]
   },
@@ -992,7 +1065,15 @@
     "D": "BM biopsy ใช้เมื่อสงสัย marrow failure",
     "E": "Hb electrophoresis ใช้ใน hemoglobinopathy"
    },
-   "key_concept": "• Normocytic + jaundice + splenomegaly → hemolysis\n• AIHA ตรวจ DAT (Coombs)"
+   "key_concept": "• Normocytic + jaundice + splenomegaly → hemolysis\n• AIHA ตรวจ DAT (Coombs)",
+   "mechanism": [
+    "เม็ดเลือดแดงถูกภูมิคุ้มกันทำลาย (autoimmune)",
+    "antibody เคลือบผิวเม็ดเลือดแดง",
+    {
+     "s": "direct antiglobulin test (Coombs) บวก",
+     "answer": true
+    }
+   ]
   },
   "24": {
    "explanation": "ซีดเรื้อรังร่วมกับเกล็ดเลือดสูง = iron deficiency anemia ผลที่พบคือ serum ferritin ต่ำ",
@@ -1024,7 +1105,15 @@
     "D": "Ticlopidine ไม่เกี่ยว Reye",
     "E": "Dipyridamole ไม่เกี่ยว"
    },
-   "key_concept": "• Aspirin + viral infection ในเด็ก → Reye syndrome\n• Reye: hepatic failure + encephalopathy"
+   "key_concept": "• Aspirin + viral infection ในเด็ก → Reye syndrome\n• Reye: hepatic failure + encephalopathy",
+   "mechanism": [
+    {
+     "s": "aspirin ในเด็กที่ติดไวรัส/อีสุกอีใส",
+     "answer": true
+    },
+    "รบกวน mitochondria ของตับ",
+    "Reye's syndrome (ตับวาย สมองบวม)"
+   ]
   },
   "30": {
    "explanation": "หลังผ่าตัดสะโพกร่วมกับหัวใจล้มเหลว เสี่ยง DVT/PE สูง ป้องกันด้วย heparin ฉีดใต้ผิวหนัง",
@@ -1054,7 +1143,15 @@
     "D": "NTD เกิดจาก antiepileptic/ขาด folate",
     "E": "หัวใจผิดปกติไม่ใช่ลักษณะเด่น"
    },
-   "key_concept": "• Warfarin embryopathy: bone defect, nasal hypoplasia\n• Warfarin ห้ามใช้ในตั้งครรภ์"
+   "key_concept": "• Warfarin embryopathy: bone defect, nasal hypoplasia\n• Warfarin ห้ามใช้ในตั้งครรภ์",
+   "mechanism": [
+    "warfarin ผ่านรกใน first trimester",
+    "ยับยั้ง vitamin K-dependent carboxylation ของกระดูก",
+    {
+     "s": "ความผิดปกติของกระดูก (bone defect)",
+     "answer": true
+    }
+   ]
   },
   "32": {
    "explanation": "Intermittent claudication ใช้ cilostazol (PDE3 inhibitor) ช่วยขยายหลอดเลือดและลด platelet aggregation",
@@ -1065,7 +1162,15 @@
     "D": "aminocaproic acid เป็น antifibrinolytic",
     "E": "warfarin ไม่ใช่ยาเลือก"
    },
-   "key_concept": "• Claudication: cilostazol\n• PDE3 inhibition → vasodilation + antiplatelet"
+   "key_concept": "• Claudication: cilostazol\n• PDE3 inhibition → vasodilation + antiplatelet",
+   "mechanism": [
+    {
+     "s": "cilostazol ยับยั้ง phosphodiesterase III",
+     "answer": true
+    },
+    "cAMP เพิ่ม หลอดเลือดขยายและต้านเกล็ดเลือด",
+    "ลดอาการ claudication"
+   ]
   },
   "35": {
    "explanation": "โลหิตจาง normocytic จากเคมีบำบัด รักษาด้วย darbepoetin (ESA)",
@@ -1076,7 +1181,15 @@
     "D": "ferrous sulfate ใช้เมื่อขาดเหล็ก (microcytic)",
     "E": "dipyridamole เป็นยาต้านเกล็ดเลือด"
    },
-   "key_concept": "• ESA ใช้ใน: CKD, chemotherapy-induced anemia\n• ADR: ความดันสูง, thrombosis"
+   "key_concept": "• ESA ใช้ใน: CKD, chemotherapy-induced anemia\n• ADR: ความดันสูง, thrombosis",
+   "mechanism": [
+    "เคมีบำบัดกดไขกระดูก EPO ไม่พอ",
+    {
+     "s": "darbepoetin (EPO analogue) กระตุ้นไขกระดูก",
+     "answer": true
+    },
+    "สร้างเม็ดเลือดแดงเพิ่ม"
+   ]
   },
   "53": {
    "explanation": "ตับแข็ง (หลอดเลือดขอด ม้ามโต ท้องมาน) สร้าง coagulation factor ลดลง รวมถึง fibrinogen",
@@ -1121,11 +1234,11 @@
    "mechanism": [
     "สูดควันที่มี PAH",
     "CYP1A1 ถูกเหนี่ยวนำสูง",
+    "PAH ถูกเปลี่ยนเป็น epoxide ที่จับ DNA",
     {
-     "s": "PAH ถูกเปลี่ยนเป็น epoxide ที่จับ DNA",
+     "s": "mutation สะสม เกิดมะเร็งปอด",
      "answer": true
-    },
-    "mutation สะสม เกิดมะเร็งปอด"
+    }
    ]
   },
   "86": {
@@ -1139,12 +1252,12 @@
    },
    "key_concept": "• cachexia: TNF-α, IL-1, IL-6\n• เสียทั้งไขมันและกล้ามเนื้อ แก้ด้วยอาหารอย่างเดียวไม่ได้",
    "mechanism": [
-    "เนื้องอกและ macrophage หลั่ง TNF-α",
-    "กดศูนย์หิวและยับยั้ง lipoprotein lipase",
     {
-     "s": "สลายไขมัน/โปรตีนกล้ามเนื้อ",
+     "s": "เนื้องอกและ macrophage หลั่ง TNF-α",
      "answer": true
     },
+    "กดศูนย์หิวและยับยั้ง lipoprotein lipase",
+    "สลายไขมัน/โปรตีนกล้ามเนื้อ",
     "ผอมแห้ง เบื่ออาหาร ซีด"
    ]
   }

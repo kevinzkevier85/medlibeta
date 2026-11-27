@@ -1217,6 +1217,14 @@
     "E": "รูปร่าง RBC เปลี่ยนใน sickle cell"
    },
    "key_concept": "• high-affinity Hb: erythrocytosis\n• Hb Tak พบในคนไทย",
+   "mechanism": [
+    "Hb Tak มี C-terminal ยาวผิดปกติ",
+    "คงสภาพ R-state (relaxed)",
+    {
+     "s": "oxygen affinity สูง → polycythemia",
+     "answer": true
+    }
+   ],
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 51].pdf",
     "page": 3,
@@ -1486,11 +1494,11 @@
    "mechanism": [
     "folate ขาด",
     "DNA synthesis ช้า",
+    "megaloblast + hypersegmented neutrophil",
     {
-     "s": "megaloblast + hypersegmented neutrophil",
+     "s": "ให้ folic acid แก้",
      "answer": true
-    },
-    "ให้ folic acid แก้"
+    }
    ],
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 51].pdf",
@@ -1630,12 +1638,12 @@
    },
    "key_concept": "• เหล็กดูดซึมที่ duodenum ต้องกรดเพื่อ reduce เป็น Fe2+\n• vit C ช่วย, ชา/แคลเซียม/PPI ลดการดูดซึม",
    "mechanism": [
-    "PPI ลดกรดกระเพาะ",
-    "Fe3+ ไม่ถูกรีดิวซ์เป็น Fe2+",
     {
-     "s": "การดูดซึมเหล็กลดลง",
+     "s": "omeprazole (PPI) ลดกรดกระเพาะ",
      "answer": true
     },
+    "Fe3+ ไม่ถูกรีดิวซ์เป็น Fe2+",
+    "การดูดซึมเหล็กลดลง",
     "response ต่อยาเสริมเหล็กแย่ลง"
    ],
    "audit": {
@@ -1905,12 +1913,12 @@
    },
    "key_concept": "• ITP: isolated thrombocytopenia, PT/aPTT ปกติ\n• รักษา steroid, IVIG",
    "mechanism": [
-    "สร้าง autoantibody ต่อ GPIIb/IIIa",
-    "platelet ถูกเคลือบ IgG",
     {
-     "s": "macrophage ม้ามทำลาย platelet",
+     "s": "สร้าง autoantibody ต่อ GPIIb/IIIa",
      "answer": true
     },
+    "platelet ถูกเคลือบ IgG",
+    "macrophage ม้ามทำลาย platelet",
     "เกล็ดเลือดต่ำ เลือดออกใต้ผิว"
    ],
    "audit": {
@@ -2009,11 +2017,11 @@
    "key_concept": "• PT+aPTT ยาว = common pathway ขาด (II, V, X, I)\n• ทารกแรกเกิดขาด vit K: II, VII, IX, X",
    "mechanism": [
     "ขาด vit K หรือ FII พร่อง",
-    "prothrombin ต่ำ",
     {
-     "s": "PT/aPTT ยาว สร้าง thrombin ไม่พอ",
+     "s": "prothrombin ต่ำ",
      "answer": true
     },
+    "PT/aPTT ยาว สร้าง thrombin ไม่พอ",
     "ICH ในทารก"
    ],
    "audit": {
@@ -2514,12 +2522,12 @@
    },
    "key_concept": "• vWD: mucocutaneous bleeding, menorrhagia\n• vWF ช่วย platelet adhesion และปกป้อง FVIII",
    "mechanism": [
-    "vWF ขาด",
-    "platelet adhesion เสีย",
     {
-     "s": "เลือดออกเยื่อเมือก, FVIII ลดทำ aPTT ยาว",
+     "s": "von Willebrand disease: vWF ขาด",
      "answer": true
     },
+    "platelet adhesion เสีย",
+    "เลือดออกเยื่อเมือก, FVIII ลดทำ aPTT ยาว",
     "ช้ำง่าย ประจำเดือนมาก"
    ],
    "audit": {
@@ -3404,6 +3412,14 @@
     "C": "✓ lymphoblast เด่น + ตับม้ามโต ในเด็ก = ALL"
    },
    "key_concept": "• ALL: พบบ่อยที่สุดในเด็ก\n• CALLA (CD10), TdT บวก",
+   "mechanism": [
+    {
+     "s": "blast เพิ่มในไขกระดูกและเลือด (ALL)",
+     "answer": true
+    },
+    "แทนที่เม็ดเลือดปกติ",
+    "ซีด ติดเชื้อ เลือดออก ตับม้ามโต"
+   ],
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 51].pdf",
     "page": 8,
@@ -3456,12 +3472,12 @@
    },
    "key_concept": "• APL: DIC, Auer rod, ATRA ได้ผล\n• t(15;17) → PML-RARA",
    "mechanism": [
-    "t(15;17)",
-    "PML–RARα ยับยั้งการเจริญ",
     {
-     "s": "promyelocyte ค้างและเพิ่มจำนวน",
+     "s": "t(15;17)",
      "answer": true
     },
+    "PML–RARα ยับยั้งการเจริญ",
+    "promyelocyte ค้างและเพิ่มจำนวน",
     "APL พร้อมภาวะเลือดออก"
    ],
    "audit": {
@@ -3566,6 +3582,14 @@
     "E": "✓ CLL: mature lymphocyte, smudge cell"
    },
    "key_concept": "• CLL: CD5+/CD19+/CD23+\n• smudge cell",
+   "mechanism": [
+    {
+     "s": "เซลล์ lymphocyte โตเต็มวัยสะสมมาก (CLL)",
+     "answer": true
+    },
+    "smudge cell ในเลือด",
+    "ต่อมน้ำเหลืองโต อ่อนเพลีย (ผู้สูงอายุ)"
+   ],
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 51].pdf",
     "page": 9,
@@ -3712,11 +3736,11 @@
    "key_concept": "• Rh, Kell, Duffy, Kidd เป็นตัวสำคัญของ delayed hemolysis\n• Lewis/MN มักไม่ clinically significant",
    "mechanism": [
     "alloimmunization จากการให้เลือดซ้ำ",
-    "anti-Fya IgG เคลือบ RBC",
     {
-     "s": "extravascular hemolysis",
+     "s": "anti-Fya IgG เคลือบ RBC",
      "answer": true
     },
+    "extravascular hemolysis",
     "Hb ลด ตัวเหลือง ไข้"
    ],
    "audit": {

@@ -12,12 +12,12 @@
    },
    "key_concept": "• เพิ่ม NT ใน synapse: ยับยั้ง reuptake, ยับยั้ง MAO/COMT, เพิ่ม release\n• SSRI/TCA/methylphenidate ออกฤทธิ์ที่ transporter",
    "mechanism": [
-    "ยาจับ presynaptic transporter",
-    "ปิดการดูดกลับ",
     {
-     "s": "NT ค้างใน synaptic cleft นานขึ้น",
+     "s": "ยาจับ presynaptic transporter",
      "answer": true
     },
+    "ปิดการดูดกลับ",
+    "NT ค้างใน synaptic cleft นานขึ้น",
     "กระตุ้น postsynaptic receptor มากขึ้น"
    ]
   },
@@ -85,12 +85,12 @@
    },
    "key_concept": "• μ: analgesia, respiratory depression, miosis, constipation, euphoria\n• antidote: naloxone",
    "mechanism": [
-    "morphine จับ μ receptor ที่ brainstem",
-    "ความไวของ chemoreceptor ต่อ CO2 ลด",
     {
-     "s": "กดศูนย์หายใจ",
+     "s": "morphine จับ μ receptor ที่ brainstem",
      "answer": true
     },
+    "ความไวของ chemoreceptor ต่อ CO2 ลด",
+    "กดศูนย์หายใจ",
     "RR ลด"
    ]
   },
@@ -108,7 +108,7 @@
     "morphine กดการหายใจ",
     "PaCO2 สูง",
     {
-     "s": "หลอดเลือดสมองขยาย ICP เพิ่ม",
+     "s": "หลอดเลือดสมองขยาย ICP เพิ่ม (ห้ามใน head injury)",
      "answer": true
     },
     "บดบังการประเมินระบบประสาท"
@@ -127,11 +127,11 @@
    "mechanism": [
     "CYP2D6 ทำงานน้อย",
     "codeine เปลี่ยนเป็น morphine ไม่ได้",
+    "ไม่มี active metabolite",
     {
-     "s": "ไม่มี active metabolite",
+     "s": "ปวดไม่ทุเลา",
      "answer": true
-    },
-    "ปวดไม่ทุเลา"
+    }
    ]
   },
   "9": {
@@ -143,7 +143,15 @@
     "D": "ไม่บล็อก K channel เป็นหลัก",
     "E": "ไม่เพิ่ม Cl- influx"
    },
-   "key_concept": "• LA ปิด voltage-gated Na channel\n• weak base: pKa สูง ionized มาก ออกฤทธิ์ช้า\n• ในเนื้อเยื่ออักเสบ pH ต่ำ ยาออกฤทธิ์ได้ไม่ดี"
+   "key_concept": "• LA ปิด voltage-gated Na channel\n• weak base: pKa สูง ionized มาก ออกฤทธิ์ช้า\n• ในเนื้อเยื่ออักเสบ pH ต่ำ ยาออกฤทธิ์ได้ไม่ดี",
+   "mechanism": [
+    "local anesthetic ต้องผ่านเยื่อหุ้มเซลล์ในรูป unionized",
+    "รูป ionized จับ Na channel จากด้านใน",
+    {
+     "s": "ต้องมีทั้งสองรูปจึงออกฤทธิ์ได้",
+     "answer": true
+    }
+   ]
   },
   "10": {
    "explanation": "ผสม epinephrine ใน LA เพื่อหดหลอดเลือด ลดเลือดออก และยืดระยะเวลาออกฤทธิ์",
@@ -177,11 +185,11 @@
    "key_concept": "• seizure: excitation > inhibition\n• Ca2+ influx → glutamate release\n• ยากันชัก: ปิด Na/Ca channel หรือเพิ่ม GABA",
    "mechanism": [
     "neuron depolarize ซ้ำ",
-    "Ca2+ เข้ามาก",
     {
-     "s": "glutamate ถูกปล่อยมาก neuron อื่นถูกกระตุ้นตาม",
+     "s": "Ca2+ เข้ามาก",
      "answer": true
     },
+    "glutamate ถูกปล่อยมาก neuron อื่นถูกกระตุ้นตาม",
     "ชักทั่วร่างกาย"
    ]
   },
@@ -236,7 +244,15 @@
     "D": "✓ carbamazepine ปิด Na channel ใช้กับ focal seizure ไม่ทำน้ำหนักขึ้น",
     "E": "phenobarbital มี sedation มาก"
    },
-   "key_concept": "• focal: carbamazepine, lamotrigine, levetiracetam\n• valproate: weight gain, teratogenic\n• absence: ethosuximide"
+   "key_concept": "• focal: carbamazepine, lamotrigine, levetiracetam\n• valproate: weight gain, teratogenic\n• absence: ethosuximide",
+   "mechanism": [
+    "ปวดท้องเป็นพัก ๆ นึกถึง focal seizure/neuralgia",
+    {
+     "s": "carbamazepine บล็อก voltage-gated Na⁺ channel",
+     "answer": true
+    },
+    "ลดการยิงสัญญาณซ้ำของเซลล์ประสาท"
+   ]
   },
   "16": {
    "explanation": "เริ่มด้วยกระตุกแขนซ้ายแล้วเกร็งทั้งตัว = focal origin ที่ motor cortex (frontal)",
@@ -300,7 +316,16 @@
     "D": "GABA-B คือเป้าหมายของ baclofen",
     "E": "nicotinic ไม่เกี่ยว"
    },
-   "key_concept": "• BZD: เพิ่มความถี่เปิด Cl- channel\n• barbiturate: เพิ่มระยะเวลาเปิด\n• baclofen: GABA-B"
+   "key_concept": "• BZD: เพิ่มความถี่เปิด Cl- channel\n• barbiturate: เพิ่มระยะเวลาเปิด\n• baclofen: GABA-B",
+   "mechanism": [
+    {
+     "s": "GABA-A receptor เป็น Cl⁻ channel",
+     "answer": true
+    },
+    "benzodiazepine จับตำแหน่ง allosteric",
+    "เพิ่มความถี่การเปิด Cl⁻ channel",
+    "เกิดการยับยั้งระบบประสาท"
+   ]
   },
   "21": {
    "explanation": "Methylphenidate ยับยั้ง reuptake transporter ของ dopamine/norepinephrine",
@@ -314,11 +339,11 @@
    "key_concept": "• ADHD: methylphenidate, amphetamine (stimulant)\n• atomoxetine = NET inhibitor",
    "mechanism": [
     "methylphenidate จับ DAT/NET",
-    "ยับยั้ง reuptake",
     {
-     "s": "DA/NE ค้างใน synapse",
+     "s": "ยับยั้ง reuptake",
      "answer": true
     },
+    "DA/NE ค้างใน synapse",
     "ปรับสมาธิ ADHD"
    ]
   },
@@ -346,11 +371,11 @@
    "mechanism": [
     "TCA บล็อก muscarinic",
     "รูม่านตาขยาย มุมตาปิด",
+    "IOP พุ่งสูง angle closure",
     {
-     "s": "IOP พุ่งสูง angle closure",
+     "s": "เลี่ยงโดยใช้ SSRI เช่น fluvoxamine",
      "answer": true
-    },
-    "เลี่ยงโดยใช้ SSRI"
+    }
    ]
   },
   "24": {
@@ -362,7 +387,15 @@
     "D": "clozapine ทำ drooling/ปัสสาวะราด",
     "E": "✓ anticholinergic + α agonist effect ช่วยเพิ่มความจุกระเพาะ"
    },
-   "key_concept": "• TCA ใช้ enuresis/ OAB\n• ระวัง urinary retention"
+   "key_concept": "• TCA ใช้ enuresis/ OAB\n• ระวัง urinary retention",
+   "mechanism": [
+    {
+     "s": "imipramine (TCA)",
+     "answer": true
+    },
+    "มีฤทธิ์ต้าน muscarinic (anticholinergic)",
+    "กระเพาะปัสสาวะบีบตัวน้อยลง ใช้รักษา enuresis/overactive bladder"
+   ]
   },
   "25": {
    "explanation": "SSRI + MAOI → serotonin syndrome",
@@ -377,11 +410,11 @@
    "mechanism": [
     "fluoxetine ยับยั้ง SERT",
     "moclobemide ยับยั้ง MAO-A",
+    "5-HT สะสมมากเกิน",
     {
-     "s": "5-HT สะสมมากเกิน",
+     "s": "serotonin syndrome",
      "answer": true
-    },
-    "serotonin syndrome"
+    }
    ]
   },
   "26": {
@@ -396,11 +429,11 @@
    "key_concept": "• neuropathic pain: TCA, SNRI, gabapentinoid\n• descending inhibitory pathway ใช้ NE/5-HT",
    "mechanism": [
     "TCA ยับยั้ง NET/SERT",
-    "NE/5-HT เพิ่มที่ dorsal horn",
     {
-     "s": "เสริม descending inhibition",
+     "s": "NE/5-HT เพิ่มที่ dorsal horn",
      "answer": true
     },
+    "เสริม descending inhibition",
     "ลดการส่งสัญญาณปวด"
    ]
   },
@@ -415,12 +448,12 @@
    },
    "key_concept": "• EPS จาก D2 block\n• แก้: benztropine",
    "mechanism": [
-    "haloperidol บล็อก D2 ใน striatum",
-    "dopamine ลด ACh เด่น",
     {
-     "s": "direct pathway ถูกกด",
+     "s": "haloperidol บล็อก D2 ใน striatum",
      "answer": true
     },
+    "dopamine ลด ACh เด่น",
+    "direct pathway ถูกกด",
     "parkinsonism"
    ]
   },
@@ -435,12 +468,12 @@
    },
    "key_concept": "• dopamine = prolactin inhibiting factor\n• antipsychotic → hyperprolactinemia → galactorrhea",
    "mechanism": [
-    "D2 ที่ tuberoinfundibular ถูกบล็อก",
-    "dopamine ยับยั้ง prolactin ลดลง",
     {
-     "s": "prolactin สูง",
+     "s": "D2 ที่ tuberoinfundibular ถูกบล็อก",
      "answer": true
     },
+    "dopamine ยับยั้ง prolactin ลดลง",
+    "prolactin สูง",
     "เต้านมโต/ปวด"
    ]
   },
@@ -453,7 +486,15 @@
     "D": "thioridazine typical",
     "E": "chlorpromazine typical"
    },
-   "key_concept": "• atypical: บล็อก 5-HT2A + D2\n• ผล EPS น้อยกว่า typical"
+   "key_concept": "• atypical: บล็อก 5-HT2A + D2\n• ผล EPS น้อยกว่า typical",
+   "mechanism": [
+    {
+     "s": "risperidone บล็อกทั้ง dopamine D2 และ serotonin 5-HT2A",
+     "answer": true
+    },
+    "ลด positive symptom และผลข้างเคียง EPS",
+    "atypical antipsychotic"
+   ]
   },
   "30": {
    "explanation": "ไข้ rigidity ซึม CK สูง = NMS จาก D2 blocker potency สูงเช่น haloperidol",
@@ -466,12 +507,12 @@
    },
    "key_concept": "• NMS: hyperthermia, rigidity, AMS, CK สูง\n• รักษา: หยุดยา, dantrolene, bromocriptine",
    "mechanism": [
-    "D2 ถูกบล็อกมาก",
-    "hypothalamic thermoregulation เสีย กล้ามเนื้อเกร็ง",
     {
-     "s": "ผลิตความร้อนมาก CK สูง",
+     "s": "haloperidol บล็อก D2 มาก",
      "answer": true
     },
+    "hypothalamic thermoregulation เสีย กล้ามเนื้อเกร็ง",
+    "ผลิตความร้อนมาก CK สูง",
     "NMS"
    ]
   },
@@ -484,7 +525,15 @@
     "D": "ethosuximide ทำ GI upset",
     "E": "✓ phenytoin: hirsutism, gingival hyperplasia"
    },
-   "key_concept": "• phenytoin ADR: nystagmus, gingival hyperplasia, hirsutism\n• เด็กหญิงอาจมีผลต่อรูปลักษณ์"
+   "key_concept": "• phenytoin ADR: nystagmus, gingival hyperplasia, hirsutism\n• เด็กหญิงอาจมีผลต่อรูปลักษณ์",
+   "mechanism": [
+    {
+     "s": "phenytoin",
+     "answer": true
+    },
+    "กระตุ้นการสร้าง collagen และการเจริญของรูขุมขน",
+    "ขนขึ้นที่ใบหน้า (hirsutism)"
+   ]
   },
   "32": {
    "explanation": "Valproate ทำ neural tube defect (spina bifida)",
@@ -495,7 +544,15 @@
     "D": "phenobarbital เสี่ยง cleft/หัวใจ",
     "E": "phenytoin ทำ fetal hydantoin syndrome"
    },
-   "key_concept": "• valproate: NTD, ลด IQ เด็ก\n• ให้ folic acid ก่อนตั้งครรภ์"
+   "key_concept": "• valproate: NTD, ลด IQ เด็ก\n• ให้ folic acid ก่อนตั้งครรภ์",
+   "mechanism": [
+    {
+     "s": "valproic acid รบกวน folate metabolism",
+     "answer": true
+    },
+    "neural tube ปิดไม่สมบูรณ์",
+    "spina bifida ในทารก"
+   ]
   },
   "33": {
    "explanation": "Carbamazepine บล็อก voltage-gated Na channel (และมีผลบน Ca channel บางส่วน)",
@@ -506,7 +563,15 @@
     "D": "vigabatrin ยับยั้ง GABA-T",
     "E": "ไม่ใช่ NMDA blocker"
    },
-   "key_concept": "• carbamazepine, phenytoin, lamotrigine = Na channel blocker\n• use-dependent block"
+   "key_concept": "• carbamazepine, phenytoin, lamotrigine = Na channel blocker\n• use-dependent block",
+   "mechanism": [
+    "carbamazepine จับ voltage-gated Na⁺ channel ตอนไม่ทำงาน",
+    "ยับยั้งการยิงซ้ำของ action potential",
+    {
+     "s": "บล็อก voltage-gated sodium channel (ตามเฉลย)",
+     "answer": true
+    }
+   ]
   },
   "34": {
    "explanation": "Carbamazepine สัมพันธ์กับ HLA-B*15:02 SJS/TEN",
@@ -517,7 +582,15 @@
     "D": "tiagabine ไม่เกี่ยว",
     "E": "lamotrigine ผื่นได้แต่ไม่ใช่ HLA นี้"
    },
-   "key_concept": "• ตรวจ HLA-B*15:02 ก่อนใช้ carbamazepine ในคนเอเชีย\n• HLA-B*58:01 ↔ allopurinol"
+   "key_concept": "• ตรวจ HLA-B*15:02 ก่อนใช้ carbamazepine ในคนเอเชีย\n• HLA-B*58:01 ↔ allopurinol",
+   "mechanism": [
+    "ผู้ป่วยมียีน HLA-B*15:02",
+    {
+     "s": "carbamazepine กระตุ้น T cell ในคนที่มียีนนี้",
+     "answer": true
+    },
+    "เสี่ยง Stevens-Johnson syndrome จึงหลีกเลี่ยง"
+   ]
   },
   "35": {
    "explanation": "ซึมเศร้าเกี่ยวกับ NE, 5-HT, DA ลดลง (monoamine hypothesis)",
@@ -570,7 +643,15 @@
     "D": "prefrontal เป็นยับยั้ง/ตัดสินใจ",
     "E": "✓ amygdala → hypothalamus → sympathetic"
    },
-   "key_concept": "• amygdala = fear\n• PFC ยับยั้ง amygdala"
+   "key_concept": "• amygdala = fear\n• PFC ยับยั้ง amygdala",
+   "mechanism": [
+    {
+     "s": "amygdala ประเมินสิ่งคุกคาม",
+     "answer": true
+    },
+    "กระตุ้น hypothalamus และ sympathetic",
+    "fight-or-flight response"
+   ]
   },
   "39": {
    "explanation": "ความรู้สึกแมลงไต่ใต้ผิวหนัง = tactile hallucination",
@@ -606,11 +687,11 @@
    "key_concept": "• mesolimbic: reward, positive symptoms\n• การเสพติด → dopamine ใน NAc เพิ่ม",
    "mechanism": [
     "สารเสพติดกระตุ้น VTA",
-    "dopamine ใน nucleus accumbens เพิ่ม",
     {
-     "s": "เกิด reward/ craving",
+     "s": "mesolimbic pathway: dopamine ใน nucleus accumbens เพิ่ม",
      "answer": true
     },
+    "เกิด reward/ craving",
     "ใช้ซ้ำ"
    ]
   },
@@ -722,12 +803,12 @@
    },
    "key_concept": "• mesolimbic ↑ → positive · mesocortical ↓ → negative\n• typical antipsychotic ไม่ช่วย negative symptoms",
    "mechanism": [
-    "dopamine ที่ส่งไป prefrontal ลดลง",
-    "prefrontal hypofunction",
     {
-     "s": "negative symptoms",
+     "s": "mesocortical pathway: dopamine ไป prefrontal ลดลง",
      "answer": true
     },
+    "prefrontal hypofunction",
+    "negative symptoms",
     "พูดน้อย ขาดพลัง ถอนตัว"
    ]
   },
@@ -784,7 +865,15 @@
     "D": "bradycardia ไม่ใช่ผลที่พบ (พบ tachycardia)",
     "E": "conjunctival injection ไม่อันตราย"
    },
-   "key_concept": "• THC: tachycardia, red eye, dry mouth\n• ADR รุนแรง: psychosis, disorientation"
+   "key_concept": "• THC: tachycardia, red eye, dry mouth\n• ADR รุนแรง: psychosis, disorientation",
+   "mechanism": [
+    "ใช้ cannabinoid (THC) ขนาดสูง",
+    "กระตุ้น CB1 ใน mesolimbic มากเกิน",
+    {
+     "s": "เกิด psychosis/disorientation จึงต้องหยุดยา",
+     "answer": true
+    }
+   ]
   },
   "56": {
    "explanation": "Nabilone เป็น synthetic cannabinoid ใช้ต้านอาเจียนจากเคมีบำบัด",
@@ -960,12 +1049,12 @@
    },
    "key_concept": "• superior gluteal nerve → medius/minimus\n• เชิงกรานฝั่งตรงข้ามตกเมื่อยกขา",
    "mechanism": [
-    "gluteus medius อ่อนแรง",
-    "ยึดเชิงกรานไม่ได้",
     {
-     "s": "เชิงกรานฝั่งยกขาตก",
+     "s": "gluteus medius อ่อนแรง",
      "answer": true
     },
+    "ยึดเชิงกรานไม่ได้",
+    "เชิงกรานฝั่งยกขาตก",
     "Trendelenburg บวก"
    ]
   },
@@ -1077,12 +1166,12 @@
    },
    "key_concept": "• scaphocephaly = sagittal synostosis พบบ่อยสุด\n• craniosynostosis: กะโหลกโตตามทิศตั้งฉากกับ suture ที่ปิด",
    "mechanism": [
-    "sagittal suture ปิดก่อนกำหนด",
-    "กะโหลกขยายด้านข้างไม่ได้",
     {
-     "s": "โตทางหน้า-หลังแทน",
+     "s": "sagittal suture ปิดก่อนกำหนด",
      "answer": true
     },
+    "กะโหลกขยายด้านข้างไม่ได้",
+    "โตทางหน้า-หลังแทน",
     "ศีรษะยาวและแคบ"
    ]
   },
@@ -1152,12 +1241,12 @@
    },
    "key_concept": "• sux: depolarizing, half-life สั้นเพราะ cholinesterase\n• dibucaine number ตรวจ variant",
    "mechanism": [
-    "sux ต้องถูก pseudocholinesterase ย่อย",
-    "enzyme ขาด",
     {
-     "s": "sux ค้างที่ NMJ นาน",
+     "s": "succinylcholine ต้องถูก pseudocholinesterase ย่อย",
      "answer": true
     },
+    "enzyme ขาด",
+    "sux ค้างที่ NMJ นาน",
     "paralysis ยืดเยื้อ (apnea)"
    ]
   },
@@ -1172,12 +1261,12 @@
    },
    "key_concept": "• sux ADR: myalgia, hyperkalemia, MH, bradycardia\n• ป้องกัน myalgia ด้วย pretreatment non-depolarizer",
    "mechanism": [
-    "sux จับ nicotinic receptor",
-    "กล้ามเนื้อ depolarize พร้อมกัน",
     {
-     "s": "fasciculation",
+     "s": "succinylcholine จับ nicotinic receptor",
      "answer": true
     },
+    "กล้ามเนื้อ depolarize พร้อมกัน",
+    "fasciculation",
     "ปวดกล้ามเนื้อหลังผ่าตัด"
    ]
   },
@@ -1193,11 +1282,11 @@
    "key_concept": "• reversal: neostigmine + atropine/glycopyrrolate\n• sugammadex สำหรับ rocuronium/vecuronium",
    "mechanism": [
     "pancuronium แย่ง ACh",
-    "neostigmine ยับยั้ง AChE",
     {
-     "s": "ACh สะสมที่ NMJ ชนะ blocker",
+     "s": "neostigmine ยับยั้ง AChE",
      "answer": true
     },
+    "ACh สะสมที่ NMJ ชนะ blocker",
     "กล้ามเนื้อกลับมาทำงาน"
    ]
   },
@@ -1243,12 +1332,12 @@
    },
    "key_concept": "• Reye: encephalopathy + fatty liver ในเด็กที่ได้ aspirin\n• ห้าม aspirin ในเด็กที่เป็นไวรัส",
    "mechanism": [
-    "aspirin + ไวรัส",
-    "mitochondria ตับถูกทำลาย",
     {
-     "s": "ตับวาย ammonia สูง",
+     "s": "aspirin + ไวรัส",
      "answer": true
     },
+    "mitochondria ตับถูกทำลาย",
+    "ตับวาย ammonia สูง",
     "สับสน Reye syndrome"
    ]
   },
@@ -1261,7 +1350,16 @@
     "D": "aspirin ไม่ใช่ antidote",
     "E": "✓ NAC เป็นสารตั้งต้น glutathione จับ NAPQI"
    },
-   "key_concept": "• paracetamol OD: ให้ NAC ภายใน 8–10 ชม.\n• alcoholic เสี่ยงมากเพราะ glutathione ต่ำ"
+   "key_concept": "• paracetamol OD: ให้ NAC ภายใน 8–10 ชม.\n• alcoholic เสี่ยงมากเพราะ glutathione ต่ำ",
+   "mechanism": [
+    "paracetamol ถูกแปลงเป็น NAPQI ที่ตับ",
+    "NAPQI ใช้ glutathione (GSH) จนหมด",
+    "ทำลายเซลล์ตับ",
+    {
+     "s": "N-acetylcysteine เติม GSH ช่วยแก้พิษ",
+     "answer": true
+    }
+   ]
   },
   "92": {
    "explanation": "ผู้ป่วยแผลกระเพาะเลือก COX-2 selective เช่น celecoxib",
@@ -1307,12 +1405,12 @@
    },
    "key_concept": "• uricase: allantoin (คนไม่มีเอนไซม์นี้)\n• pegloticase ใช้ gout ดื้อยา",
    "mechanism": [
-    "pegloticase เป็น uricase",
-    "uric acid → allantoin",
     {
-     "s": "ละลายง่ายขับทางไต",
+     "s": "pegloticase เป็น uricase",
      "answer": true
     },
+    "uric acid → allantoin",
+    "ละลายง่ายขับทางไต",
     "ระดับ uric acid ลดลง"
    ]
   },
@@ -1348,11 +1446,11 @@
    "key_concept": "• LEMS: paraneoplastic (SCLC), autonomic + proximal weakness\n• ดีขึ้นด้วยการใช้งานซ้ำ ต่างจาก MG",
    "mechanism": [
     "SCLC กระตุ้น antibody",
-    "ต่อ voltage-gated Ca channel ปลายประสาท",
     {
-     "s": "ACh ถูกปล่อยลดลง",
+     "s": "antibody ต่อ voltage-gated Ca channel ปลายประสาท (Lambert-Eaton)",
      "answer": true
     },
+    "ACh ถูกปล่อยลดลง",
     "อ่อนแรง ปากแห้ง ตาตก"
    ]
   },
@@ -1391,11 +1489,11 @@
    "mechanism": [
     "CD8 T cell จดจำแอนติเจน MHC-I บนใยกล้ามเนื้อ",
     "ปล่อย perforin/granzyme",
+    "ใยกล้ามเนื้อตาย",
     {
-     "s": "ใยกล้ามเนื้อตาย",
+     "s": "polymyositis",
      "answer": true
-    },
-    "polymyositis"
+    }
    ]
   },
   "101": {
@@ -1451,12 +1549,12 @@
    },
    "key_concept": "• RA: CD4 T cell + TNF-α, IL-1, IL-6\n• pannus ทำลาย cartilage และ bone",
    "mechanism": [
-    "autoimmune ต่อ synovium",
-    "synovial hyperplasia + lymphoid follicle",
     {
-     "s": "pannus คลุม cartilage",
+     "s": "autoimmune: chronic inflammation ของ synovium",
      "answer": true
     },
+    "synovial hyperplasia + lymphoid follicle",
+    "pannus คลุม cartilage",
     "กัดกร่อนข้อ"
    ]
   },
@@ -1549,11 +1647,11 @@
    "key_concept": "• podagra (first MTP) classic\n• uric acid + needle-shaped crystals",
    "mechanism": [
     "uric acid สูง",
-    "MSU ตกผลึกในข้อ",
     {
-     "s": "neutrophil กิน crystal ปล่อย IL-1 อักเสบ",
+     "s": "MSU ตกผลึกในข้อ (gouty arthritis)",
      "answer": true
     },
+    "neutrophil กิน crystal ปล่อย IL-1 อักเสบ",
     "ปวดบวมแดงเฉียบพลัน"
    ]
   }

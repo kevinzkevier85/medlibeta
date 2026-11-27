@@ -51,6 +51,14 @@
    "source": "import",
    "audit_ref": "imm_46_MCQ_001",
    "key_concept": "• pus = neutrophil + debris + แบคทีเรีย\n• pyogenic: S. aureus, GAS\n• neutrophil = first responder",
+   "mechanism": [
+    "แบคทีเรียเรียก neutrophil มาจำนวนมาก",
+    "neutrophil จับกินแล้วตาย ร่วมกับเนื้อเยื่อสลาย",
+    {
+     "s": "หนองประกอบด้วย neutrophil เป็นหลัก",
+     "answer": true
+    }
+   ],
    "option_why": {
     "A": "✓ neutrophil ตายสะสมเป็น pus",
     "B": "mast cell ไม่ใช่",
@@ -94,6 +102,14 @@
    "source": "import",
    "audit_ref": "imm_46_MCQ_002",
    "key_concept": "• opsonin: IgG (FcγR), C3b (CR1)\n• PRR รู้จัก PAMP โดยตรง\n• ADCC ใช้ FcR",
+   "mechanism": [
+    "แบคทีเรียถูกเคลือบด้วย antibody",
+    {
+     "s": "Fc ของ antibody จับ Fc receptor บน macrophage",
+     "answer": true
+    },
+    "ทำให้ phagocytosis เกิดขึ้น (opsonization)"
+   ],
    "option_why": {
     "A": "DNA ไม่ใช่",
     "B": "RNA ไม่ใช่",
@@ -243,6 +259,14 @@
    "source": "import",
    "audit_ref": "imm_46_MCQ_005",
    "key_concept": "• Tfh/Th ช่วย class switch\n• CD40L–CD40\n• hyper IgM: CD40L defect",
+   "mechanism": [
+    "B cell จับ antigen และได้ signal จาก Th",
+    "CD40L กระตุ้น B cell",
+    {
+     "s": "Th ช่วยให้เกิด isotype switching",
+     "answer": true
+    }
+   ],
    "option_why": {
     "A": "✓ Th (CD40L + cytokine)",
     "B": "cytotoxic T cell ฆ่าเซลล์ติดเชื้อ ไม่ได้ช่วย B cell เปลี่ยน isotype",
@@ -289,11 +313,11 @@
    "mechanism": [
     "TCR จับ MHC (signal 1)",
     "ไม่มี B7–CD28",
+    "ไม่ได้ signal 2",
     {
-     "s": "ไม่ได้ signal 2",
+     "s": "anergy",
      "answer": true
     },
-    "anergy",
     "tolerance"
    ],
    "option_why": {
@@ -464,6 +488,14 @@
    "source": "import",
    "audit_ref": "imm_46_MCQ_010",
    "key_concept": "• intracellular bacteria: Th1/IFN-γ\n• Listeria: GP rod, tumbling motility\n• L. monocytogenes escape phagosome",
+   "mechanism": [
+    "Listeria อยู่ในเซลล์ intracellular",
+    "macrophage ต้องถูกกระตุ้นด้วย IFN-γ",
+    {
+     "s": "Th1 ช่วยกำจัด Listeria",
+     "answer": true
+    }
+   ],
    "option_why": {
     "A": "Tc ฆ่าเซลล์ติดเชื้อ แต่ข้อสอบเลือก Th1",
     "B": "✓ Th1 → IFN-γ → macrophage",
@@ -544,6 +576,14 @@
    "source": "import",
    "audit_ref": "imm_46_MCQ_012",
    "key_concept": "• meningococcemia: LOS → cytokine storm\n• terminal complement defect → recurrent Neisseria\n• Waterhouse-Friderichsen",
+   "mechanism": [
+    "N. meningitidis ปล่อย LPS",
+    "complement ถูกกระตุ้นมาก",
+    {
+     "s": "เกิด complement activation ทำให้เกิด sepsis",
+     "answer": true
+    }
+   ],
    "option_why": {
     "A": "B cell ไม่ใช่",
     "B": "T cell ไม่ใช่",
@@ -640,6 +680,14 @@
    "source": "import",
    "audit_ref": "imm_46_MCQ_014",
    "key_concept": "• neutralization = antibody หลัก\n• rabies: vaccine + RIG\n• antibody ป้องกันก่อนเข้า neuron",
+   "mechanism": [
+    {
+     "s": "antibody จับ glycoprotein ของ rabies virus",
+     "answer": true
+    },
+    "ไวรัสจับ receptor ของเซลล์ไม่ได้",
+    "neutralize infectivity"
+   ],
    "option_why": {
     "A": "✓ antibody neutralize",
     "B": "IFN type I ต้านทั่วไป",
@@ -683,6 +731,14 @@
    "source": "import",
    "audit_ref": "imm_46_MCQ_015",
    "key_concept": "• latent HSV ใน neuron (trigeminal)\n• CMI คุม reactivation\n• acyclovir",
+   "mechanism": [
+    "HSV แฝงในปมประสาท",
+    "ไม่มี antigen ให้ Ab จับ",
+    {
+     "s": "cytotoxic T cell (Tc) ฆ่าเซลล์ที่ติดเชื้อ",
+     "answer": true
+    }
+   ],
    "option_why": {
     "A": "✓ Tc (CTL)",
     "B": "helper T cell ช่วยสั่งการ แต่ตัวทำลายเซลล์ที่ไวรัสแฝงตัว/กลับมาแบ่งตัวคือ cytotoxic T cell",
@@ -726,6 +782,14 @@
    "source": "import",
    "audit_ref": "imm_46_MCQ_016",
    "key_concept": "• Aspergillus: neutrophil (ROS, NET)\n• neutropenia/CGD เสี่ยง\n• voriconazole",
+   "mechanism": [
+    "Aspergillus เป็น hyphae ขนาดใหญ่",
+    "neutrophil ผูกและหลั่ง enzyme/ROS",
+    {
+     "s": "neutrophil สำคัญต่อการกำจัด Aspergillus",
+     "answer": true
+    }
+   ],
    "option_why": {
     "A": "B cell ไม่ใช่",
     "B": "cytotoxic T cell ฆ่าเซลล์ติดเชื้อภายในเซลล์ ไม่ใช่ตัวหลักต่อราเส้นใยขนาดใหญ่",
@@ -769,6 +833,14 @@
    "source": "import",
    "audit_ref": "imm_46_MCQ_017",
    "key_concept": "• hyphae ใหญ่เกิน phagocytose → extracellular killing\n• degranulation + ROS + NET\n• yeast = phagocytose",
+   "mechanism": [
+    "hyphae ใหญ่เกินกลืน",
+    "neutrophil หลั่ง granule ใส่เชื้อ",
+    {
+     "s": "degranulation ปล่อย enzyme ทำลาย hyphae",
+     "answer": true
+    }
+   ],
    "option_why": {
     "A": "complement ทำ MAC ไม่ได้บน hyphae",
     "B": "apoptosis ไม่ใช่",
@@ -812,6 +884,14 @@
    "source": "import",
    "audit_ref": "imm_46_MCQ_018",
    "key_concept": "• neutropenic host: Aspergillus, Candida, Pseudomonas\n• invasive aspergillosis\n• voriconazole",
+   "mechanism": [
+    {
+     "s": "chemotherapy กดไขกระดูก (immunosuppression)",
+     "answer": true
+    },
+    "neutrophil ต่ำมาก",
+    "Aspergillus ฉวยโอกาสติดเชื้อ"
+   ],
    "option_why": {
     "A": "อายุไม่ใช่",
     "B": "hypersensitivity ไม่ใช่",
@@ -855,6 +935,14 @@
    "source": "import",
    "audit_ref": "imm_46_MCQ_019",
    "key_concept": "• liver stage: CD8 + IFN-γ\n• blood stage: antibody\n• intracellular → CTL",
+   "mechanism": [
+    "P. falciparum ในระยะตับ",
+    "เซลล์ตับที่ติดเชื้อถูกแสดงบน MHC I",
+    {
+     "s": "Tc ฆ่าเซลล์ตับที่ติดเชื้อ",
+     "answer": true
+    }
+   ],
    "option_why": {
     "A": "IgG ไม่เข้า hepatocyte",
     "B": "IFN-γ ช่วย",
@@ -898,6 +986,14 @@
    "source": "import",
    "audit_ref": "imm_46_MCQ_020",
    "key_concept": "• antibody ต่อ merozoite: บล็อก invasion\n• P. vivax จับ Duffy antigen\n• CTL ใช้ liver stage",
+   "mechanism": [
+    "antibody จับ merozoite",
+    {
+     "s": "ขัดขวางการเกาะ (attachment) ของ protozoa เข้าเซลล์",
+     "answer": true
+    },
+    "ป้องกันการเข้าสู่ RBC"
+   ],
    "option_why": {
     "A": "antibody ช่วย opsonization ได้ แต่บทบาทสำคัญที่สุดตามเฉลยคือกันไม่ให้ merozoite เกาะเข้าเม็ดเลือดแดง",
     "B": "complement ไม่ใช่หลัก",
@@ -941,6 +1037,14 @@
    "source": "import",
    "audit_ref": "imm_46_MCQ_021",
    "key_concept": "• type I: IgE + mast cell\n• histamine → angioedema\n• anaphylaxis: epinephrine",
+   "mechanism": [
+    "กินกุ้ง allergen จับ IgE บน mast cell",
+    {
+     "s": "mast cell degranulate หลั่ง histamine",
+     "answer": true
+    },
+    "หลอดเลือดรั่ว → angioedema"
+   ],
    "option_why": {
     "A": "✓ mast cell degranulation",
     "B": "macrophage ไม่ใช่",
@@ -984,6 +1088,14 @@
    "source": "import",
    "audit_ref": "imm_46_MCQ_022",
    "key_concept": "• RA: anti-CCP specificity ~95%\n• RF IgM anti-Fc\n• HLA-DR4",
+   "mechanism": [
+    "ข้อต่อเล็กอักเสบ นึกถึง RA",
+    "citrullinated protein ในข้อกระตุ้น autoantibody",
+    {
+     "s": "anti-CCP (จำเพาะ RA)",
+     "answer": true
+    }
+   ],
    "option_why": {
     "A": "ANA ใน SLE",
     "B": "RF ไวแต่ไม่จำเพาะ",
@@ -1027,6 +1139,14 @@
    "source": "import",
    "audit_ref": "imm_46_MCQ_023",
    "key_concept": "• SLE: ANA (sensitive), anti-dsDNA/anti-Sm (specific)\n• complement ต่ำ\n• type III",
+   "mechanism": [
+    "ผื่นผีเสื้อ/อาการหลายระบบ นึกถึง SLE",
+    "SLE มี autoantibody ต่อ dsDNA",
+    {
+     "s": "anti-dsDNA (จำเพาะและบอกความรุนแรงของไต)",
+     "answer": true
+    }
+   ],
    "option_why": {
     "A": "rheumatoid factor พบใน rheumatoid arthritis ไม่จำเพาะต่อ SLE",
     "B": "✓ anti-dsDNA จำเพาะ SLE",
@@ -1156,6 +1276,14 @@
    "source": "import",
    "audit_ref": "imm_46_MCQ_026",
    "key_concept": "• acute: วัน–เดือน T cell\n• hyperacute: นาที\n• chronic: เดือน–ปี",
+   "mechanism": [
+    "ปลูกถ่ายไต 3 เดือน",
+    {
+     "s": "T cell ของผู้รับจดจำ MHC ของไตใหม่ (alloantigen)",
+     "answer": true
+    },
+    "acute cellular rejection ไตทำงานลด"
+   ],
    "option_why": {
     "A": "✓ recipient T cell activation",
     "B": "severe graft rejection กว้างไป",
@@ -1199,6 +1327,14 @@
    "source": "import",
    "audit_ref": "imm_46_MCQ_027",
    "key_concept": "• antibody deficiency: sinopulmonary encapsulated\n• XLA: BTK\n• IVIG",
+   "mechanism": [
+    "เด็กมี pneumonia และ tonsillitis ซ้ำ",
+    "immunoglobulin ต่ำ",
+    {
+     "s": "B cell ทำงานผิดปกติ (agammaglobulinemia)",
+     "answer": true
+    }
+   ],
    "option_why": {
     "A": "neutralizing microbe ผิดปกติ",
     "B": "phagocytosis ผิดปกติ",
@@ -1242,6 +1378,14 @@
    "source": "import",
    "audit_ref": "imm_46_MCQ_028",
    "key_concept": "• phagocyte defect: catalase +\n• LAD: WBC สูงมาก\n• CGD: DHR",
+   "mechanism": [
+    "Ig ปกติแต่ติดเชื้อแบคทีเรีย/ราซ้ำ",
+    {
+     "s": "phagocyte ฆ่าเชื้อไม่ได้ (เช่น CGD ขาด NADPH oxidase)",
+     "answer": true
+    },
+    "เชื้อ catalase-positive และราติดเชื้อง่าย"
+   ],
    "option_why": {
     "A": "neutralization ปกติ",
     "B": "✓ phagocytosis defect (CGD/LAD)",
@@ -1416,11 +1560,11 @@
    "key_concept": "• LPS: lipid A → TLR4 → TNF/IL-1\n• Gram-negative sepsis\n• DIC/shock",
    "mechanism": [
     "แบคทีเรียตาย",
-    "LPS หลุด",
     {
-     "s": "TLR4 กระตุ้น macrophage",
+     "s": "LPS หลุด",
      "answer": true
     },
+    "TLR4 กระตุ้น macrophage",
     "TNF/IL-1/IL-6 สูง",
     "septic shock"
    ],
@@ -1553,6 +1697,14 @@
    "source": "import",
    "audit_ref": "imm_46_MCQ_035",
    "key_concept": "• transduction: generalized/specialized\n• conjugation: plasmid\n• transformation: naked",
+   "mechanism": [
+    "bacteriophage นำ DNA แบคทีเรียติดไปด้วย",
+    "ฉีดเข้าแบคทีเรียตัวใหม่",
+    {
+     "s": "transduction: ยีนถูกถ่ายทอด",
+     "answer": true
+    }
+   ],
    "option_why": {
     "A": "transformation = naked DNA",
     "B": "✓ transduction = phage",
@@ -1596,6 +1748,14 @@
    "source": "import",
    "audit_ref": "imm_46_MCQ_036",
    "key_concept": "• catheter infection: Staph epidermidis, Pseudomonas\n• biofilm = EPS matrix\n• เปลี่ยน catheter",
+   "mechanism": [
+    {
+     "s": "เชื้อสร้าง biofilm (exopolysaccharide)",
+     "answer": true
+    },
+    "เกาะผิวสายสวน",
+    "หลบภูมิและยา ติดเชื้อเรื้อรัง"
+   ],
    "option_why": {
     "A": "toxin ไม่ใช่",
     "B": "✓ biofilm เกาะพื้นผิว",
@@ -1897,16 +2057,6 @@
    "source": "import",
    "audit_ref": "imm_46_MCQ_043",
    "key_concept": "• tetanospasmin: SNARE cleavage ที่ inhibitory interneuron\n• Clostridium tetani = exotoxin\n• spastic paralysis",
-   "mechanism": [
-    "C. tetani ในแผล",
-    "ผลิต tetanospasmin",
-    {
-     "s": "retrograde transport ไป CNS",
-     "answer": true
-    },
-    "ตัด synaptobrevin",
-    "spastic paralysis"
-   ],
    "option_why": {
     "A": "✓ exotoxin in sympathetic (เฉลย)",
     "B": "tetanospasmin เป็น exotoxin จริง แต่ไม่ได้ออกฤทธิ์ที่ parasympathetic ตามเฉลย",
@@ -2036,6 +2186,14 @@
    "source": "import",
    "audit_ref": "imm_46_MCQ_046",
    "key_concept": "• Legionella: BCYE (cysteine + iron)\n• urine antigen\n• cooling tower",
+   "mechanism": [
+    "เชื้อย้อม Gram ไม่ขึ้น ต้องการ cysteine และ iron",
+    "เจริญบน buffered charcoal yeast extract agar",
+    {
+     "s": "Legionella pneumophila",
+     "answer": true
+    }
+   ],
    "option_why": {
     "A": "✓ Legionella BCYE",
     "B": "Chlamydia เพาะ cell culture",
@@ -2079,6 +2237,14 @@
    "source": "import",
    "audit_ref": "imm_46_MCQ_047",
    "key_concept": "• Legionella: urine antigen เร็ว\n• DFA/PCR\n• BCYE culture",
+   "mechanism": [
+    "Legionella ในปอด antigen ถูกขับทางปัสสาวะ",
+    {
+     "s": "ตรวจ urine antigen ได้เร็ว",
+     "answer": true
+    },
+    "วินิจฉัย Legionnaires' disease"
+   ],
    "option_why": {
     "A": "blood culture ไวต่ำ",
     "B": "✓ urine antigen (L. pneumophila sg1)",
@@ -2165,6 +2331,14 @@
    "source": "import",
    "audit_ref": "imm_46_MCQ_049",
    "key_concept": "• PID: N. gonorrhoeae + C. trachomatis\n• ceftriaxone ไม่ฆ่า Chlamydia\n• ต้องให้ doxycycline",
+   "mechanism": [
+    "ให้ ceftriaxone ฆ่า gonococcus แล้ว",
+    "แต่ยังมี co-infection ที่ยาไม่ครอบคลุม",
+    {
+     "s": "Chlamydia trachomatis ลามขึ้นเป็น PID ปวดท้องน้อย",
+     "answer": true
+    }
+   ],
    "option_why": {
     "A": "✓ Chlamydia ร่วมกับ gonorrhea",
     "B": "H. ducreyi = chancroid",
@@ -2251,6 +2425,14 @@
    "source": "import",
    "audit_ref": "imm_46_MCQ_051",
    "key_concept": "• Leptospira: น้ำปนปัสสาวะสัตว์ → skin cut/เยื่อบุ\n• conjunctival suffusion\n• doxy/penicillin",
+   "mechanism": [
+    "ลุยน้ำ/ล่องแก่ง สัมผัสน้ำปนปัสสาวะสัตว์",
+    {
+     "s": "Leptospira ไชผ่านผิวหนังที่มีแผล/เยื่อบุ",
+     "answer": true
+    },
+    "ไข้ ปวดกล้ามเนื้อน่อง ตาแดง"
+   ],
    "option_why": {
     "A": "✓ invade ผ่านผิวหนังที่มีแผล",
     "B": "กินไม่ใช่หลัก",
@@ -2294,6 +2476,14 @@
    "source": "import",
    "audit_ref": "imm_46_MCQ_052",
    "key_concept": "• scrub typhus: Orientia, chigger, eschar\n• doxycycline\n• Weil-Felix OX-K",
+   "mechanism": [
+    "Orientia tsutsugamushi จาก chigger กัด",
+    "แผล eschar คล้ายบุหรี่จี้",
+    {
+     "s": "scrub typhus: ไข้สูง ปวดกล้ามเนื้อ",
+     "answer": true
+    }
+   ],
    "option_why": {
     "A": "✓ scrub typhus: eschar",
     "B": "dengue ไม่มี eschar",
@@ -2382,6 +2572,14 @@
    "source": "import",
    "audit_ref": "imm_46_MCQ_054",
    "key_concept": "• struvite stone: Proteus (urease)\n• alkaline urine\n• staghorn",
+   "mechanism": [
+    {
+     "s": "Proteus mirabilis สร้าง urease",
+     "answer": true
+    },
+    "urea เป็น ammonia ปัสสาวะเป็นด่าง",
+    "struvite stone (นิ่วหลายก้อน)"
+   ],
    "option_why": {
     "A": "✓ Proteus: urease → struvite",
     "B": "Klebsiella ไม่ใช่หลัก",
@@ -2554,6 +2752,14 @@
    "source": "import",
    "audit_ref": "imm_46_MCQ_058",
    "key_concept": "• enveloped virus: glycoprotein\n• naked virus: capsid protein\n• entry: attachment → fusion/endocytosis",
+   "mechanism": [
+    "ไวรัสต้องเกาะกับ receptor ของโฮสต์ก่อนเข้าเซลล์",
+    "envelope protein จับ receptor",
+    {
+     "s": "envelope สำคัญที่สุดในการเข้าสู่เซลล์ของโฮสต์",
+     "answer": true
+    }
+   ],
    "option_why": {
     "A": "endosome ของ host",
     "B": "cell membrane ของ host",
@@ -2640,6 +2846,14 @@
    "source": "import",
    "audit_ref": "imm_46_MCQ_060",
    "key_concept": "• HSV-1: trigeminal · HSV-2: sacral\n• VZV: DRG/trigeminal\n• reactivation: เครียด UV",
+   "mechanism": [
+    "HSV ติดเยื่อบุแล้วเดินทางย้อนตามเส้นประสาท",
+    {
+     "s": "แฝงใน trigeminal ganglion",
+     "answer": true
+    },
+    "reactivate → ตุ่มน้ำรอบปาก"
+   ],
    "option_why": {
     "A": "lymph node ไม่ใช่",
     "B": "lymphocyte ไม่ใช่",
@@ -2728,6 +2942,14 @@
    "source": "import",
    "audit_ref": "imm_46_MCQ_062",
    "key_concept": "• HSV-1: gingivostomatitis, herpes labialis\n• ติดผ่านน้ำลาย\n• acyclovir",
+   "mechanism": [
+    {
+     "s": "HSV ติดเยื่อบุแล้วเดินทางย้อนตามเส้นประสาท",
+     "answer": true
+    },
+    "แฝงใน trigeminal ganglion",
+    "reactivate → ตุ่มน้ำรอบปาก"
+   ],
    "option_why": {
     "A": "✓ HSV",
     "B": "VZV ไม่ใช่",
@@ -2771,6 +2993,14 @@
    "source": "import",
    "audit_ref": "imm_46_MCQ_063",
    "key_concept": "• CMV: owl's eye inclusion, mononucleosis-like heterophile-negative\n• ganciclovir\n• congenital/immunocompromised",
+   "mechanism": [
+    {
+     "s": "CMV ติดในผู้ภูมิคุ้มกันต่ำ",
+     "answer": true
+    },
+    "เซลล์โตมี inclusion ตานกฮูก (owl's eye)",
+    "mononucleosis-like แต่ anti-EBV ลบ"
+   ],
    "option_why": {
     "A": "HSV-1 ไม่ใช่",
     "B": "VZV ไม่ใช่",
@@ -2900,6 +3130,14 @@
    "source": "import",
    "audit_ref": "imm_46_MCQ_066",
    "key_concept": "• concomitant: ปรสิตเดิมอยู่ แต่ต้านการติดซ้ำ\n• sterile immunity = กำจัดเชื้อ\n• premunition (malaria)",
+   "mechanism": [
+    "พยาธิกระตุ้นภูมิคุ้มกัน",
+    "ภูมิคุ้มกันพร้อมกันเกิดขึ้นขณะติดเชื้ออยู่",
+    {
+     "s": "ป้องกันการติดเชื้อซ้ำ (concomitant immunity)",
+     "answer": true
+    }
+   ],
    "option_why": {
     "A": "natural ไม่ใช่",
     "B": "residual ไม่ใช่",
@@ -2943,6 +3181,14 @@
    "source": "import",
    "audit_ref": "imm_46_MCQ_067",
    "key_concept": "• cysticercosis: ไข่ T. solium (fecal-oral)\n• taeniasis: กินเนื้อดิบ\n• neurocysticercosis",
+   "mechanism": [
+    {
+     "s": "กินไข่ Taenia solium ปนเปื้อน",
+     "answer": true
+    },
+    "ตัวอ่อน (cysticercus) กระจายไปฝังใต้ผิวหนัง/สมอง",
+    "cysticercosis: ก้อนใต้ผิวหนัง"
+   ],
    "option_why": {
     "A": "✓ ingest T. solium egg",
     "B": "T. saginata egg ไม่ก่อ",
@@ -2986,6 +3232,14 @@
    "source": "import",
    "audit_ref": "imm_46_MCQ_068",
    "key_concept": "• trichinosis: periorbital edema, myalgia, eosinophilia\n• หมูดิบ\n• albendazole",
+   "mechanism": [
+    {
+     "s": "กินเนื้อหมูดิบมีตัวอ่อน Trichinella spiralis",
+     "answer": true
+    },
+    "ตัวอ่อนเข้ากระแสเลือดฝังในกล้ามเนื้อ",
+    "ไข้ ปวดกล้ามเนื้อ eosinophil สูง"
+   ],
    "option_why": {
     "A": "✓ Trichinella",
     "B": "W. bancrofti ไม่ใช่",
@@ -3115,6 +3369,14 @@
    "source": "import",
    "audit_ref": "imm_46_MCQ_072",
    "key_concept": "• visceral leishmaniasis: amastigote\n• kala-azar: ไข้ ม้ามโต pancytopenia\n• sandfly",
+   "mechanism": [
+    "เม็ดเลือดแดงแตก/ตับม้ามโต leishmania",
+    "amastigote ใน macrophage ของไขกระดูก",
+    {
+     "s": "Leishmania donovani (visceral leishmaniasis)",
+     "answer": true
+    }
+   ],
    "option_why": {
     "A": "✓ L. donovani",
     "B": "W. bancrofti ไม่ใช่",
@@ -3160,6 +3422,14 @@
    "source": "import",
    "audit_ref": "imm_46_MCQ_074",
    "key_concept": "• eosinophilic meningitis: Angiostrongylus\n• หอยทาก/หอยโข่ง\n• steroids",
+   "mechanism": [
+    {
+     "s": "กินหอยทาก/หอยโข่งดิบ มีตัวอ่อน Angiostrongylus cantonensis",
+     "answer": true
+    },
+    "ตัวอ่อนไชไปสมอง",
+    "eosinophilic meningitis"
+   ],
    "option_why": {
     "A": "กินปูดิบ = Paragonimus",
     "B": "กินปลาดิบ = Gnathostoma/Opisthorchis",
@@ -3203,6 +3473,15 @@
    "source": "import",
    "audit_ref": "imm_46_MCQ_075",
    "key_concept": "• aminoglycoside: oto/nephro\n• clindamycin: pseudomembranous\n• tetracycline: teeth",
+   "mechanism": [
+    {
+     "s": "amikacin เป็น aminoglycoside",
+     "answer": true
+    },
+    "ถูกดูดซึมเข้า proximal tubule cells",
+    "ยาสะสมในเซลล์ท่อไต",
+    "เกิด nephrotoxicity"
+   ],
    "option_why": {
     "A": "imipenem: rash, seizure",
     "B": "✓ amikacin: oto/nephro-toxicity",
@@ -3246,6 +3525,15 @@
    "source": "import",
    "audit_ref": "imm_46_MCQ_076",
    "key_concept": "• C. difficile: clindamycin, cephalosporin, FQ\n• metronidazole/vancomycin/fidaxomicin\n• toxin A/B",
+   "mechanism": [
+    {
+     "s": "clindamycin ยับยั้งแบคทีเรียกลุ่ม normal flora",
+     "answer": true
+    },
+    "flora ลดลง",
+    "C. difficile เจริญและสร้าง toxin",
+    "เกิด pseudomembranous colitis"
+   ],
    "option_why": {
     "A": "✓ clindamycin",
     "B": "amikacin ไม่ใช่",
@@ -3332,6 +3620,14 @@
    "source": "import",
    "audit_ref": "imm_46_MCQ_080",
    "key_concept": "• FQ: gyrase/topo IV\n• ผลข้างเคียง: tendon\n• ห้ามเด็ก/ตั้งครรภ์",
+   "mechanism": [
+    "fluoroquinolone เข้าสู่แบคทีเรีย",
+    "จับ DNA gyrase/topoisomerase IV",
+    {
+     "s": "ยับยั้งการคลาย DNA เพื่อให้ replication หยุด",
+     "answer": true
+    }
+   ],
    "option_why": {
     "A": "30S ไม่ใช่",
     "B": "50S ไม่ใช่",
@@ -3375,6 +3671,14 @@
    "source": "import",
    "audit_ref": "imm_46_MCQ_081",
    "key_concept": "• H. influenzae: β-lactamase\n• S. pneumoniae: PBP alteration\n• amox-clav",
+   "mechanism": [
+    "H. influenzae สร้าง β-lactamase",
+    "เอนไซม์ไฮโดรไลซ์วง β-lactam",
+    {
+     "s": "penicillin ถูกทำลาย (enzymatic inactivation)",
+     "answer": true
+    }
+   ],
    "option_why": {
     "A": "การลดการนำยาเข้าเซลล์ไม่ใช่กลไกหลักของ H. influenzae ต่อ penicillin",
     "B": "efflux pump ไม่ใช่กลไกหลักต่อ β-lactam ในเชื้อนี้",
@@ -3461,6 +3765,14 @@
    "source": "import",
    "audit_ref": "imm_46_MCQ_083",
    "key_concept": "• polyene: pore\n• nephrotoxicity\n• azole: CYP51",
+   "mechanism": [
+    "Amphotericin B จับ ergosterol",
+    "สร้างรูในเยื่อหุ้มเซลล์เชื้อรา",
+    {
+     "s": "ทำลาย permeability ของ fungal cell membrane",
+     "answer": true
+    }
+   ],
    "option_why": {
     "A": "✓ impairment of membrane permeability",
     "B": "inhibit mitosis = griseofulvin",
@@ -3504,6 +3816,14 @@
    "source": "import",
    "audit_ref": "imm_46_MCQ_084",
    "key_concept": "• voriconazole: visual, hepatotoxic\n• IA drug of choice: voriconazole\n• ampho B: kidney",
+   "mechanism": [
+    "Aspergillus ติดเชื้อในผู้ป่วย HIV",
+    {
+     "s": "voriconazole (triazole) ยับยั้ง 14α-demethylase",
+     "answer": true
+    },
+    "ergosterol ลด เยื่อหุ้มราเสีย; ผลข้างเคียง: มองเห็นผิดปกติ"
+   ],
    "option_why": {
     "A": "itraconazole ไม่ใช่",
     "B": "✓ voriconazole: visual disturbance",
@@ -3547,6 +3867,14 @@
    "source": "import",
    "audit_ref": "imm_46_MCQ_085",
    "key_concept": "• AZT: anemia, neutropenia\n• tenofovir: kidney\n• abacavir: HLA-B*5701",
+   "mechanism": [
+    {
+     "s": "zidovudine (AZT)",
+     "answer": true
+    },
+    "ยับยั้ง DNA polymerase ของไขกระดูกด้วย",
+    "กดไขกระดูก → anemia"
+   ],
    "option_why": {
     "A": "foscarnet: nephrotoxicity",
     "B": "acyclovir: nephro/CNS",
@@ -3590,6 +3918,14 @@
    "source": "import",
    "audit_ref": "imm_46_MCQ_087",
    "key_concept": "• NNRTI: efavirenz, nevirapine\n• NRTI: zidovudine, tenofovir\n• INSTI: -tegravir",
+   "mechanism": [
+    {
+     "s": "efavirenz เป็น NNRTI",
+     "answer": true
+    },
+    "จับ allosteric site ของ reverse transcriptase",
+    "ยับยั้งการสังเคราะห์ DNA ของ HIV"
+   ],
    "option_why": {
     "A": "protease inhibitor คือยากลุ่ม -navir เช่น lopinavir",
     "B": "fusion inhibitor คือ enfuvirtide",
@@ -3633,6 +3969,14 @@
    "source": "import",
    "audit_ref": "imm_46_MCQ_088",
    "key_concept": "• primaquine: hypnozoite + gametocytocide\n• ต้องตรวจ G6PD\n• chloroquine: blood stage",
+   "mechanism": [
+    {
+     "s": "primaquine ออกฤทธิ์ต่อ hypnozoite ในตับและ gametocyte",
+     "answer": true
+    },
+    "สร้าง oxidative metabolite",
+    "กำจัดระยะในตับ ป้องกันการกลับเป็นซ้ำ"
+   ],
    "option_why": {
     "A": "growing trophozoite",
     "B": "blood schizont ถูกฆ่าด้วย chloroquine/artemisinin ไม่ใช่ primaquine",
@@ -3674,6 +4018,14 @@
    "source": "import",
    "audit_ref": "imm_46_MCQ_089",
    "key_concept": "• 4th gen = antibody + p24\n• p24 ขึ้นก่อน antibody\n• ลด window ~1 สัปดาห์",
+   "mechanism": [
+    "4th gen ตรวจทั้ง antibody และ antigen",
+    {
+     "s": "p24 antigen ขึ้นก่อน antibody",
+     "answer": true
+    },
+    "ลด window period"
+   ],
    "option_why": {
     "A": "anti-HIV A ไม่ใช่",
     "B": "anti-HIV B ไม่ใช่",

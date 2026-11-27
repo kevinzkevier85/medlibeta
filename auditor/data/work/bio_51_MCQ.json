@@ -215,11 +215,11 @@
    },
    "key_concept": "• P-gp inhibitor: ketoconazole, verapamil, quinidine\n• P-gp inducer: rifampin, St John's wort\n• ยับยั้ง efflux → ระดับ substrate ↑",
    "mechanism": [
-    "ketoconazole ยับยั้ง P-gp",
     {
-     "s": "efflux ของ substrate ลดลง",
+     "s": "ketoconazole ยับยั้ง P-gp",
      "answer": true
     },
+    "efflux ของ substrate ลดลง",
     "ยาสะสมในเซลล์/พลาสมา",
     "ระดับยา ↑"
    ],
@@ -319,12 +319,12 @@
    "key_concept": "• Renal efflux (OAT, MATE, P-gp) ขับยา\n• ยับยั้ง → CL ↓ → ระดับ ↑\n• เช่น probenecid",
    "mechanism": [
     "ยับยั้ง efflux transporter ที่ไต",
-    {
-     "s": "tubular secretion ↓",
-     "answer": true
-    },
+    "tubular secretion ↓",
     "clearance ลดลง",
-    "plasma concentration ↑"
+    {
+     "s": "plasma concentration ↑",
+     "answer": true
+    }
    ],
    "audit": {
     "source_file": "preclinic/2/biomed/mcq/ข้อสอบ mcq/MCQ_Pharmacology [Med PSU 51].pdf",
@@ -864,6 +864,15 @@
     "E": "Gi-coupled ไม่ใช่"
    },
    "key_concept": "• Steroid/thyroid hormone → nuclear receptor\n• ผลช้า (ชั่วโมง) เพราะผ่านการถอดรหัส\n• Insulin = enzyme-linked",
+   "mechanism": [
+    "ฮอร์โมนละลายไขมันผ่านเยื่อหุ้มเซลล์",
+    "จับ receptor ในเซลล์/นิวเคลียส",
+    {
+     "s": "complex จับ DNA ที่ hormone response element ปรับ gene transcription",
+     "answer": true
+    },
+    "สังเคราะห์โปรตีนใหม่ ออกฤทธิ์ช้าแต่นาน"
+   ],
    "audit": {
     "source_file": "preclinic/2/biomed/mcq/ข้อสอบ mcq/MCQ_Pharmacology [Med PSU 51].pdf",
     "page": 2,
@@ -958,6 +967,15 @@
     "E": "AI เติมให้: mechanism of action = กลไกทั่วไป"
    },
    "key_concept": "• β2 agonist → bronchodilation/vasodilation\n• Intrinsic activity = efficacy\n• Affinity ≠ efficacy",
+   "mechanism": [
+    "ยาจับ receptor (affinity)",
+    "complex ยา–receptor กระตุ้นสัญญาณภายในเซลล์",
+    {
+     "s": "ความสามารถทำให้เกิดผลหลังจับ = intrinsic activity",
+     "answer": true
+    },
+    "เกิดผลเช่น หลอดลม/หลอดเลือดขยาย"
+   ],
    "audit": {
     "source_file": "preclinic/2/biomed/mcq/ข้อสอบ mcq/MCQ_Pharmacology [Med PSU 51].pdf",
     "page": 3,
@@ -1057,6 +1075,15 @@
     "E": "AI เติมให้: mucilin = bulk laxative"
    },
    "key_concept": "• กลไกไม่ผ่าน receptor: chemical, physical, osmotic\n• BZD เพิ่มความถี่ช่อง Cl⁻",
+   "mechanism": [
+    {
+     "s": "benzodiazepine จับ allosteric site บน GABA-A receptor",
+     "answer": true
+    },
+    "เพิ่มความถี่การเปิด Cl- channel เมื่อมี GABA",
+    "Cl- เข้าเซลล์ membrane hyperpolarize",
+    "กดการทำงานของเซลล์ประสาท"
+   ],
    "audit": {
     "source_file": "preclinic/2/biomed/mcq/ข้อสอบ mcq/MCQ_Pharmacology [Med PSU 51].pdf",
     "page": 3,
@@ -2165,6 +2192,15 @@
     "E": "IgD receptor ของ B cell"
    },
    "key_concept": "• Type I: IgE + mast cell\n• onset นาที\n• anaphylaxis → epinephrine IM",
+   "mechanism": [
+    "เคยได้รับยาและสร้าง IgE จำเพาะ",
+    "IgE เกาะบน mast cell/basophil",
+    {
+     "s": "ได้รับยาอีกครั้ง ยาเชื่อม IgE ทำให้ degranulate",
+     "answer": true
+    },
+    "histamine ทำให้บวม ผื่น หลอดลมตีบ ภายในไม่กี่นาที"
+   ],
    "audit": {
     "source_file": "preclinic/2/biomed/mcq/ข้อสอบ mcq/MCQ_Pharmacology [Med PSU 51].pdf",
     "page": 5,
@@ -2214,6 +2250,15 @@
     "E": "rifampin ก่อ hepatotoxicity/flu-like"
    },
    "key_concept": "• Anaphylaxis: β-lactam เด่น\n• type I IgE\n• ซักประวัติแพ้ยาก่อนสั่ง",
+   "mechanism": [
+    {
+     "s": "penicillin เป็น hapten จับโปรตีนในร่างกาย",
+     "answer": true
+    },
+    "สร้าง IgE จำเพาะ",
+    "ได้ยาซ้ำ IgE บน mast cell ถูกเชื่อม",
+    "anaphylaxis ภายในไม่กี่นาที"
+   ],
    "audit": {
     "source_file": "preclinic/2/biomed/mcq/ข้อสอบ mcq/MCQ_Pharmacology [Med PSU 51].pdf",
     "page": 5,
@@ -2351,6 +2396,15 @@
     "E": "AI เติมให้: EGFR"
    },
    "key_concept": "• Trastuzumab = anti-HER2\n• ตรวจ HER2 ด้วย IHC/FISH\n• HER2+ พบในมะเร็งเต้านม/กระเพาะ",
+   "mechanism": [
+    "เซลล์มะเร็งเต้านมบางชนิดมี HER2 มากเกิน",
+    "HER2 ส่งสัญญาณให้เซลล์แบ่งตัว",
+    {
+     "s": "trastuzumab จับ HER2 ยับยั้งสัญญาณและชักนำ ADCC",
+     "answer": true
+    },
+    "ได้ผลเฉพาะเนื้องอกที่ HER2 บวก จึงต้องตรวจก่อน"
+   ],
    "audit": {
     "source_file": "preclinic/2/biomed/mcq/ข้อสอบ mcq/MCQ_Pharmacology [Med PSU 51].pdf",
     "page": 6,
@@ -2462,6 +2516,15 @@
     "E": "SULF1A1 ไม่เกี่ยว"
    },
    "key_concept": "• SLCO1B1*5 เสี่ยง myopathy จาก simvastatin\n• OATP1B1 พา statin เข้าตับ\n• ปรับ/เปลี่ยน statin",
+   "mechanism": [
+    {
+     "s": "simvastatin ต้องถูกนำเข้าตับผ่าน OATP1B1 (ยีน SLCO1B1)",
+     "answer": true
+    },
+    "variant ทำให้ transporter ทำงานลดลง",
+    "ระดับ statin ในเลือดสูงขึ้น",
+    "กล้ามเนื้อได้รับยามาก เกิด myopathy"
+   ],
    "audit": {
     "source_file": "preclinic/2/biomed/mcq/ข้อสอบ mcq/MCQ_Pharmacology [Med PSU 51].pdf",
     "page": 6,
@@ -2887,6 +2950,15 @@
     "E": "reverse agonist ไม่เกี่ยว"
    },
    "key_concept": "• ตัวอย่าง: antacid chelate tetracycline/quinolone\n• PK interaction: A-D-M-E\n• PD interaction: ผลที่ receptor/ระบบเดียวกัน",
+   "mechanism": [
+    "ยาสองตัวพบกันในกระเพาะ",
+    "จับกันเป็นสารเชิงซ้อนหรือเปลี่ยน pH",
+    {
+     "s": "การดูดซึมลดลง (PK ขั้น absorption)",
+     "answer": true
+    },
+    "peak plasma concentration ลดลง"
+   ],
    "audit": {
     "source_file": "preclinic/2/biomed/mcq/ข้อสอบ mcq/MCQ_Pharmacology [Med PSU 51].pdf",
     "page": 7,
