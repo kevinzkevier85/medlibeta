@@ -350,7 +350,15 @@
     "D": "major basic protein = eosinophil",
     "E": "EPO = eosinophil"
    },
-   "key_concept": "• mast cell: histamine, tryptase\n• IgE + mast cell\n• tryptase ใช้ยืนยัน anaphylaxis"
+   "key_concept": "• mast cell: histamine, tryptase\n• IgE + mast cell\n• tryptase ใช้ยืนยัน anaphylaxis",
+   "mechanism": [
+    "แพ้โปรตีนนมวัว allergen จับ IgE บน mast cell",
+    "mast cell degranulate",
+    {
+     "s": "tryptase หลั่งออกมา (marker ของ mast cell)",
+     "answer": true
+    }
+   ]
   },
   "33": {
    "explanation": "เหยียบตะปูสนิม + แผลหนอง (ได้รับวัคซีนแล้ว) = C. tetani",
@@ -370,7 +378,15 @@
     "C": "✓ artesunate สร้าง free radical → damage proteins",
     "E": "electron transport = atovaquone"
    },
-   "key_concept": "• artemisinin: endoperoxide + heme-iron → radical\n• atovaquone: bc1\n• DHA-PIP"
+   "key_concept": "• artemisinin: endoperoxide + heme-iron → radical\n• atovaquone: bc1\n• DHA-PIP",
+   "mechanism": [
+    "artesunate มี endoperoxide bridge",
+    "ถูก heme-iron กระตุ้นเกิด free radical",
+    {
+     "s": "ทำลายโปรตีนของเชื้อ",
+     "answer": true
+    }
+   ]
   },
   "35": {
    "explanation": "ผื่นคันซ้ำ 2–3 วันหลังสัมผัส = type IV cytotoxic T cell",
@@ -381,7 +397,15 @@
     "D": "✓ cytotoxic T cell (ตามเฉลย)",
     "E": "neutrophil ไม่ใช่"
    },
-   "key_concept": "• contact dermatitis: type IV (CD8/Th1)\n• 24–72 ชม.\n• patch test"
+   "key_concept": "• contact dermatitis: type IV (CD8/Th1)\n• 24–72 ชม.\n• patch test",
+   "mechanism": [
+    "nickel จากสายนาฬิกาจับโปรตีนผิวหนัง (hapten)",
+    "T cell ที่ sensitized จดจำได้",
+    {
+     "s": "cytotoxic T cell ทำลายเซลล์ผิว (type IV) ผื่นขึ้นหลัง 2–3 วัน",
+     "answer": true
+    }
+   ]
   },
   "38": {
    "explanation": "EBV ให้ heterophile antibody positive ใน mononucleosis",
@@ -444,7 +468,15 @@
     "D": "NRTI (nucleoside) ไม่ใช่ (tenofovir เป็น nucleotide)",
     "E": "NNRTI ไม่ใช่"
    },
-   "key_concept": "• tenofovir: nucleotide analog\n• NRTI: zidovudine, lamivudine\n• TDF: kidney/bone"
+   "key_concept": "• tenofovir: nucleotide analog\n• NRTI: zidovudine, lamivudine\n• TDF: kidney/bone",
+   "mechanism": [
+    {
+     "s": "tenofovir เป็น nucleotide reverse transcriptase inhibitor",
+     "answer": true
+    },
+    "ไม่มี 3'-OH เมื่อแทรกเข้าสาย DNA",
+    "chain termination ไวรัสสร้าง DNA ไม่ได้"
+   ]
   },
   "45": {
    "explanation": "Th cell ช่วยการผลิต antibody ด้วยการหลั่ง cytokine",
@@ -493,7 +525,15 @@
     "C": "kill intracellular protozoa ไม่ได้",
     "E": "activate complement lysis RBC ไม่ใช่"
    },
-   "key_concept": "• antibody: บล็อก merozoite invasion\n• CTL: liver stage\n• TNF/IFN-γ"
+   "key_concept": "• antibody: บล็อก merozoite invasion\n• CTL: liver stage\n• TNF/IFN-γ",
+   "mechanism": [
+    "merozoite ออกจากเม็ดเลือดแดงที่แตก",
+    "antibody จับ merozoite กันเข้าเซลล์ใหม่",
+    {
+     "s": "จำกัดการแพร่กระจาย (limit spread)",
+     "answer": true
+    }
+   ]
   },
   "51": {
    "explanation": "Bacteroides fragilis ใช้ cefoxitin (cephamycin ครอบคลุม anaerobe)",
@@ -504,7 +544,15 @@
     "D": "cefuroxime ไม่ครอบคลุม",
     "E": "cefazolin ไม่ครอบคลุม"
    },
-   "key_concept": "• anaerobe ใน cephalosporin: cefoxitin, cefotetan\n• metronidazole/clindamycin\n• intra-abdominal"
+   "key_concept": "• anaerobe ใน cephalosporin: cefoxitin, cefotetan\n• metronidazole/clindamycin\n• intra-abdominal",
+   "mechanism": [
+    "Bacteroides fragilis เป็น anaerobe ในลำไส้",
+    {
+     "s": "cefoxitin (cephamycin) ทน β-lactamase ของ anaerobe",
+     "answer": true
+    },
+    "รักษาติดเชื้อในช่องท้องได้"
+   ]
   },
   "52": {
    "explanation": "AZT (zidovudine) ทำให้ anemia",
@@ -515,7 +563,15 @@
     "D": "dolutegravir ปลอดภัย",
     "E": "atazanavir: hyperbilirubinemia"
    },
-   "key_concept": "• AZT: anemia, neutropenia\n• d4T: neuropathy\n• tenofovir: kidney"
+   "key_concept": "• AZT: anemia, neutropenia\n• d4T: neuropathy\n• tenofovir: kidney",
+   "mechanism": [
+    {
+     "s": "zidovudine (AZT)",
+     "answer": true
+    },
+    "ยับยั้ง DNA polymerase ของเซลล์ไขกระดูกด้วย",
+    "กดไขกระดูก → anemia"
+   ]
   },
   "54": {
    "explanation": "Cervical LN โตจาก proliferation ของ lymphocyte",
@@ -545,7 +601,15 @@
     "D": "ไม่ใช้ยาเดียวเสมอ",
     "E": "✓ ใช้ยาร่วมกัน non-overlapping toxicity"
    },
-   "key_concept": "• triple therapy: CNI + antimetabolite + steroid\n• ลดขนาดแต่ละตัว\n• ลด toxicity"
+   "key_concept": "• triple therapy: CNI + antimetabolite + steroid\n• ลดขนาดแต่ละตัว\n• ลด toxicity",
+   "mechanism": [
+    "ยากดภูมิแต่ละตัวมีพิษต่างกัน",
+    {
+     "s": "ใช้ร่วมกันหลายตัวที่ ADR ไม่ซ้ำกัน ขนาดต่ำลง",
+     "answer": true
+    },
+    "กดภูมิได้ดีและลดพิษ"
+   ]
   },
   "56": {
    "explanation": "T cell ทำงานกับ B cell ที่ white pulp (spleen)",
@@ -634,7 +698,15 @@
     "C": "increase permeability",
     "D": "✓ methylation ที่ 50S (erm)"
    },
-   "key_concept": "• macrolide resistance: erm, mef\n• MLSB\n• azithromycin"
+   "key_concept": "• macrolide resistance: erm, mef\n• MLSB\n• azithromycin",
+   "mechanism": [
+    {
+     "s": "erm gene ทำให้เกิด methylation ที่ 23S rRNA ของ 50S",
+     "answer": true
+    },
+    "erythromycin จับ ribosome ไม่ได้",
+    "ดื้อยา รักษาล้มเหลว"
+   ]
   },
   "63": {
    "explanation": "สมองเน่าจากอะมีบา = Naegleria fowleri",
@@ -727,7 +799,15 @@
     "D": "✓ fluconazole inhibit CYP2C9/3A4",
     "E": "amphotericin B ไม่ใช่"
    },
-   "key_concept": "• azole + warfarin → INR ↑\n• CYP inhibitor: azoles, macrolides\n• griseofulvin induces"
+   "key_concept": "• azole + warfarin → INR ↑\n• CYP inhibitor: azoles, macrolides\n• griseofulvin induces",
+   "mechanism": [
+    {
+     "s": "fluconazole ยับยั้ง CYP2C9",
+     "answer": true
+    },
+    "warfarin ถูกทำลายช้า ระดับยาสูง",
+    "เลือดออกรุนแรง"
+   ]
   },
   "71": {
    "explanation": "Disulfiram-like reaction: cefuroxime (ต้นฉบับ)",
@@ -775,7 +855,15 @@
     "D": "macrophage ไม่ใช่",
     "E": "NK ช่วยต้นๆ"
    },
-   "key_concept": "• viral: Th1/CTL\n• Th1 → IFN-γ\n• IFN type I"
+   "key_concept": "• viral: Th1/CTL\n• Th1 → IFN-γ\n• IFN type I",
+   "mechanism": [
+    "ไวรัสติดเซลล์ APC นำเสนอ antigen",
+    "IL-12 กระตุ้น T helper",
+    {
+     "s": "Th1 cell หลั่ง IFN-γ ต้านไวรัส",
+     "answer": true
+    }
+   ]
   }
  },
  "duplicate_groups": {},
