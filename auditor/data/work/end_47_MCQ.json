@@ -31,13 +31,13 @@
    },
    "key_concept": "• lipoprotein: CM (TG อาหาร, apoB-48) · VLDL (TG ตับ, apoB-100) · IDL → LDL (cholesterol) · HDL (reverse cholesterol transport)\n• TG ใน CM/VLDL ถูก LPL (apoC-II) ปล่อย FFA ให้กล้ามเนื้อ/ไขมัน\n• หลังอาหาร: CM · อดอาหาร/ตับสร้าง: VLDL",
    "mechanism": [
-    "ตับสร้าง VLDL (TG + apoB-100)",
-    "VLDL ในเลือดรับ apoC-II จาก HDL",
-    "LPL ที่ capillary ย่อย TG ใน VLDL",
     {
-     "s": "FFA ถูกส่งให้ muscle ใช้เป็นพลังงาน/adipose เก็บ",
+     "s": "ตับสร้าง VLDL (TG + apoB-100)",
      "answer": true
     },
+    "VLDL ในเลือดรับ apoC-II จาก HDL",
+    "LPL ที่ capillary ย่อย TG ใน VLDL",
+    "FFA ถูกส่งให้ muscle ใช้เป็นพลังงาน/adipose เก็บ",
     "VLDL เหลือ IDL → LDL"
    ],
    "audit": {
@@ -480,13 +480,13 @@
    },
    "key_concept": "• ลำดับยา: alendronate/risedronate → zoledronate/denosumab (กินไม่ได้) → teriparatide (very high risk/หักหลายครั้ง)\n• alendronate: กินท้องว่าง น้ำเปล่า นั่ง 30 นาที (esophagitis) · ONJ, atypical femur fx\n• ติดตาม BMD/turnover marker",
    "mechanism": [
-    "bisphosphonate จับ hydroxyapatite",
-    "osteoclast กินยา",
-    "ยับยั้ง FPP synthase",
     {
-     "s": "osteoclast apoptosis → resorption ↓",
+     "s": "alendronate (bisphosphonate) จับ hydroxyapatite",
      "answer": true
     },
+    "osteoclast กินยา",
+    "ยับยั้ง FPP synthase",
+    "osteoclast apoptosis → resorption ↓",
     "BMD ↑ fracture ↓"
    ],
    "audit": {
@@ -2224,13 +2224,13 @@
    },
    "key_concept": "• กระตุ้น insulin: glucose, amino acid, incretin, vagal, sulfonylurea · ยับยั้ง: somatostatin, α2 (epinephrine), hypoglycemia, fasting\n• ออกกำลัง/ผ่าตัด/เครียด → catecholamine ↑ → insulin ↓\n• oral glucose หลั่ง insulin มากกว่า IV (incretin effect)",
    "mechanism": [
-    "กินคาร์โบไฮเดรต",
-    "glucose ในเลือด ↑ + GLP-1/GIP ↑",
-    "glucose เข้า β-cell → ATP ↑ → ปิด K-ATP",
     {
-     "s": "insulin หลั่งเพิ่มขึ้น",
+     "s": "กินคาร์โบไฮเดรต",
      "answer": true
     },
+    "glucose ในเลือด ↑ + GLP-1/GIP ↑",
+    "glucose เข้า β-cell → ATP ↑ → ปิด K-ATP",
+    "insulin หลั่งเพิ่มขึ้น",
     "glucose ลดลงสู่ปกติ"
    ],
    "audit": {
@@ -2392,12 +2392,12 @@
    "key_concept": "• primary hypothyroid → FT4 ↓ → TRH ↑ → TSH ↑ และ prolactin ↑\n• ผล: galactorrhea, amenorrhea, pituitary hyperplasia (อาจคล้าย adenoma) — รักษาด้วย levothyroxine หาย\n• prolactin สูงจากสาเหตุอื่น: prolactinoma, ยา dopamine antagonist, CKD, stalk effect, ตั้งครรภ์",
    "mechanism": [
     "ไทรอยด์ไม่สร้าง hormone (FT4 ต่ำ)",
-    "ไม่มี negative feedback → TRH ↑ จาก hypothalamus",
-    "TRH จับ receptor (Gq) บน thyrotroph และ lactotroph",
     {
-     "s": "lactotroph หลั่ง prolactin เพิ่ม",
+     "s": "ไม่มี negative feedback → TRH ↑ จาก hypothalamus",
      "answer": true
     },
+    "TRH จับ receptor (Gq) บน thyrotroph และ lactotroph",
+    "lactotroph หลั่ง prolactin เพิ่ม",
     "galactorrhea + TSH สูงมาก (pituitary โต)"
    ],
    "audit": {
@@ -2906,7 +2906,7 @@
     "lipolysis ↑ → FFA → ตับ ketogenesis ↑",
     "ketone สะสม HCO₃⁻ ลด",
     {
-     "s": "metabolic acidosis (HCO₃⁻ 6) + glucose 420 + ketonuria 4+",
+     "s": "HCO₃⁻ ลด → metabolic acidosis (diabetic ketoacidosis)",
      "answer": true
     },
     "คลื่นไส้ อาเจียน osmotic diuresis"
@@ -3697,12 +3697,12 @@
    },
    "key_concept": "• GnRH agonist ให้ต่อเนื่อง → down-regulation (ให้เป็นช่วง pulse → กระตุ้น) · ช่วงแรกเกิด flare (ใช้ anti-androgen ร่วม)\n• GnRH antagonist (degarelix, abarelix) ไม่ flare\n• ใช้ใน prostate ca, endometriosis, precocious puberty",
    "mechanism": [
-    "GnRH agonist ให้ต่อเนื่อง",
-    "GnRH receptor ที่ gonadotroph ถูก down-regulate",
     {
-     "s": "LH/FSH ↓",
+     "s": "leuprolide (GnRH agonist) ให้ต่อเนื่อง",
      "answer": true
     },
+    "GnRH receptor ที่ gonadotroph ถูก down-regulate",
+    "LH/FSH ↓",
     "testosterone ↓ (medical castration)",
     "ก้อนมะเร็งต่อมลูกหมากหดตัว"
    ],
