@@ -137,7 +137,15 @@
     "D": "CK ↑ จากกล้ามเนื้อบาดเจ็บ ไม่ใช่การกินอาหารเสริม",
     "E": "uric acid ไม่เกี่ยวกับ whey โดยตรง"
    },
-   "key_concept": "• creatinine มาจาก creatine ในกล้ามเนื้อ (~2%/วัน)\n• นักกีฬากล้ามเนื้อมาก Cr ↑ โดย GFR ปกติ\n• ใช้ cystatin C ประเมิน GFR ได้แม่นกว่า"
+   "key_concept": "• creatinine มาจาก creatine ในกล้ามเนื้อ (~2%/วัน)\n• นักกีฬากล้ามเนื้อมาก Cr ↑ โดย GFR ปกติ\n• ใช้ cystatin C ประเมิน GFR ได้แม่นกว่า",
+   "mechanism": [
+    "กิน whey protein/creatine supplement",
+    "creatine เปลี่ยนเป็น creatinine แบบ non-enzymatic",
+    {
+     "s": "creatinine ในเลือดสูงขึ้น",
+     "answer": true
+    }
+   ]
   },
   "10": {
    "explanation": "DKA ทำให้ไตเพิ่ม ammoniagenesis (glutamine deamination) และ gluconeogenesis ขณะที่ lactic fermentation ไม่ใช่กระบวนการที่เพิ่ม (AI ร่างเฉลย ความมั่นใจต่ำ)",
@@ -148,7 +156,15 @@
     "D": "✓ lactic fermentation ไม่เพิ่มในภาวะนี้ (ไตใช้ aerobic)",
     "E": "oxidative deamination ของ glutamate เพิ่ม (GDH)"
    },
-   "key_concept": "• acidosis เหนี่ยวนำ glutaminase + GDH ที่ PCT\n• NH4⁺ ขับออกเป็นบัฟเฟอร์ปัสสาวะ\n• ข้อนี้กำกวม ผู้ตรวจควรตรวจโจทย์ต้นฉบับ"
+   "key_concept": "• acidosis เหนี่ยวนำ glutaminase + GDH ที่ PCT\n• NH4⁺ ขับออกเป็นบัฟเฟอร์ปัสสาวะ\n• ข้อนี้กำกวม ผู้ตรวจควรตรวจโจทย์ต้นฉบับ",
+   "mechanism": [
+    "เซลล์ขาดออกซิเจนหรือ mitochondria ทำงานลด (เช่น จาก metformin)",
+    "pyruvate ถูกเปลี่ยนเป็น lactate แทน",
+    {
+     "s": "lactic fermentation เพิ่ม → lactic acidosis",
+     "answer": true
+    }
+   ]
   },
   "11": {
    "stem_override": "What is the definition of GFR?",
@@ -214,7 +230,15 @@
     "D": "น้ำคือตัวทำละลาย ไม่ทำให้ hypertonic",
     "E": "bicarbonate ไม่เกี่ยว gradient"
    },
-   "key_concept": "• TAL ดูด NaCl แต่ไม่ดูดน้ำ → medulla hypertonic\n• urea recycling เพิ่ม ~40–50% ของ gradient\n• ADH เปิด AQP2/UT-A1 ให้เข้มข้นขึ้น"
+   "key_concept": "• TAL ดูด NaCl แต่ไม่ดูดน้ำ → medulla hypertonic\n• urea recycling เพิ่ม ~40–50% ของ gradient\n• ADH เปิด AQP2/UT-A1 ให้เข้มข้นขึ้น",
+   "mechanism": [
+    "thick ascending limb ขน Na⁺ ออกโดยไม่ให้น้ำตาม",
+    {
+     "s": "Na⁺ สะสมใน medullary interstitium",
+     "answer": true
+    },
+    "interstitium hypertonic ดึงน้ำจาก collecting duct"
+   ]
   },
   "15": {
    "skip_reason": "ตัวเลือกไม่ตรงกับค่าที่คำนวณได้ (filtered 420 − Tm ≈ 45 mg/min) โจทย์ไม่ระบุ Tm"
@@ -408,7 +432,15 @@
     "D": "hypertonic ที่ antidiuresis ไม่ใช่ที่ macula densa",
     "E": "AI เติมให้: isotonic ใน antidiuresis ไม่ใช่ลักษณะของ macula densa"
    },
-   "key_concept": "• TAL ดูด NaCl แต่น้ำผ่านไม่ได้ → hypotonic\n• ปลาย distal tubule: ปรับด้วย ADH\n• diluting segment = TAL + early DCT"
+   "key_concept": "• TAL ดูด NaCl แต่น้ำผ่านไม่ได้ → hypotonic\n• ปลาย distal tubule: ปรับด้วย ADH\n• diluting segment = TAL + early DCT",
+   "mechanism": [
+    "thick ascending limb ดูดกลับ NaCl แต่น้ำผ่านไม่ได้",
+    "ของเหลวเจือจางลง",
+    {
+     "s": "ของเหลวใน early distal tubule เป็น hypotonic",
+     "answer": true
+    }
+   ]
   },
   "24": {
    "explanation": "AG = 141 − (120 + 13) = 8 ปกติ → hyperchloremic (non-AG) acidosis เช่น diarrhea",
@@ -528,7 +560,15 @@
     "D": "RCC มีความเสี่ยงสูงขึ้นแต่เป็นผลช้า",
     "E": "✓ papillary necrosis (analgesic nephropathy)"
    },
-   "key_concept": "• analgesic nephropathy: phenacetin, aspirin, NSAIDs\n• papillary necrosis + chronic interstitial nephritis\n• เสี่ยงมะเร็งเยื่อบุ renal pelvis"
+   "key_concept": "• analgesic nephropathy: phenacetin, aspirin, NSAIDs\n• papillary necrosis + chronic interstitial nephritis\n• เสี่ยงมะเร็งเยื่อบุ renal pelvis",
+   "mechanism": [
+    "ใช้ phenacetin ขนาดสูงนาน",
+    "metabolite ทำลายเซลล์และลด prostaglandin ทำให้ medulla ขาดเลือด",
+    {
+     "s": "renal papillary necrosis",
+     "answer": true
+    }
+   ]
   },
   "31": {
    "explanation": "ไตโตมีถุงน้ำ (ADPKD) สัมพันธ์กับ berry aneurysm",
@@ -539,7 +579,15 @@
     "D": "ischemic cardiomyopathy ไม่ใช่",
     "E": "pulmonary fibrosis ไม่ใช่"
    },
-   "key_concept": "• ADPKD: PKD1/2, cyst ในตับ, MVP, berry aneurysm\n• ARPKD: เด็ก, hepatic fibrosis\n• ตายจาก SAH หรือไตวาย"
+   "key_concept": "• ADPKD: PKD1/2, cyst ในตับ, MVP, berry aneurysm\n• ARPKD: เด็ก, hepatic fibrosis\n• ตายจาก SAH หรือไตวาย",
+   "mechanism": [
+    "ADPKD (PKD1/PKD2) ผิดปกติ",
+    "polycystin ผิดปกติทำผนังหลอดเลือดอ่อนแอ",
+    {
+     "s": "berry aneurysm ในสมอง",
+     "answer": true
+    }
+   ]
   },
   "32": {
    "explanation": "ผลึก hexagonal (รูปหกเหลี่ยม) ในปัสสาวะ = cystine จาก cystinuria",
@@ -550,7 +598,15 @@
     "D": "infection/ยา → struvite/sulfa crystals",
     "E": "renal calculi ไม่จำเพาะ"
    },
-   "key_concept": "• cystinuria: defect COLA transporter (cystine, ornithine, lysine, arginine)\n• sodium cyanide-nitroprusside test\n• รักษา: ด่างปัสสาวะ + ดื่มน้ำ + tiopronin"
+   "key_concept": "• cystinuria: defect COLA transporter (cystine, ornithine, lysine, arginine)\n• sodium cyanide-nitroprusside test\n• รักษา: ด่างปัสสาวะ + ดื่มน้ำ + tiopronin",
+   "mechanism": [
+    {
+     "s": "inherited cystinuria: transporter ของ dibasic amino acid ที่ proximal tubule เสีย",
+     "answer": true
+    },
+    "cystine ไม่ถูกดูดกลับ",
+    "cystine ละลายน้อย ตกผลึกหกเหลี่ยมในปัสสาวะ"
+   ]
   },
   "34": {
    "explanation": "เด็ก 5 ปี บวม proteinuria 4+, albumin ต่ำ, lipid สูง ตอบสนอง prednisone ดี = minimal change disease",
@@ -581,7 +637,15 @@
     "D": "alkaline pH ละลาย cast ได้ (acid เสริม)",
     "E": "inflammation distal tubule ไม่ใช่ปัจจัยหลัก"
    },
-   "key_concept": "• ปัจจัย: flow ต่ำ, acid pH, ปัสสาวะเข้มข้น, โปรตีน\n• RBC cast = glomerulonephritis\n• WBC cast = pyelonephritis/AIN"
+   "key_concept": "• ปัจจัย: flow ต่ำ, acid pH, ปัสสาวะเข้มข้น, โปรตีน\n• RBC cast = glomerulonephritis\n• WBC cast = pyelonephritis/AIN",
+   "mechanism": [
+    {
+     "s": "เซลล์ท่อไตหลุดลอก",
+     "answer": true
+    },
+    "ติดใน Tamm-Horsfall protein matrix",
+    "เกิด cast"
+   ]
   },
   "36": {
    "explanation": "ผู้หญิงมีอาการทางเดินปัสสาวะ + เชื้อ ≥10² CFU/mL ถือว่าติดเชื้อ ควรรักษา UTI",
@@ -636,7 +700,15 @@
     "D": "nephrotic มี albumin ต่ำ (ที่นี่ 4.2 ปกติ)",
     "E": "✓ intrinsic renal: ratio ~10–15, Cr สูง"
    },
-   "key_concept": "• prerenal: ratio >20, FeNa <1%\n• intrinsic: ratio ~10–15, FeNa >2%\n• postrenal: อุดตัน"
+   "key_concept": "• prerenal: ratio >20, FeNa <1%\n• intrinsic: ratio ~10–15, FeNa >2%\n• postrenal: อุดตัน",
+   "mechanism": [
+    "ไตเสียหายที่ตัวเนื้อไต",
+    "BUN และ creatinine สูงคู่กัน (BUN/Cr < 15)",
+    {
+     "s": "intrinsic renal azotemia",
+     "answer": true
+    }
+   ]
   },
   "41": {
    "explanation": "Furosemide ดื้อ/อาการไม่ดีขึ้นในหัวใจล้มเหลว → เสริม thiazide ปิดการดูดกลับที่ DCT (sequential nephron blockade) (AI ร่างเฉลย)",
@@ -647,7 +719,15 @@
     "D": "K-sparing ก็เสริมได้แต่ฤทธิ์ขับน้ำน้อย",
     "E": "tolvaptan ใช้เฉพาะ hyponatremia"
    },
-   "key_concept": "• loop: ยับยั้ง NKCC2\n• thiazide: ยับยั้ง NCC → Na⁺ ส่งต่อมากขึ้นแล้วถูกบล็อก\n• เสี่ยง hypoK/hypoNa"
+   "key_concept": "• loop: ยับยั้ง NKCC2\n• thiazide: ยับยั้ง NCC → Na⁺ ส่งต่อมากขึ้นแล้วถูกบล็อก\n• เสี่ยง hypoK/hypoNa",
+   "mechanism": [
+    "ใช้ loop diuretic นาน",
+    "distal tubule ปรับตัวดูดกลับ Na⁺ เพิ่ม (diuretic resistance)",
+    {
+     "s": "เพิ่ม thiazide บล็อก NCC ที่ distal tubule",
+     "answer": true
+    }
+   ]
   },
   "42": {
    "explanation": "Congestive heart failure ที่บวม/หายใจลำบาก → loop diuretic (furosemide) ลดปริมาตรเร็ว (AI ร่างเฉลย)",
@@ -658,7 +738,15 @@
     "D": "spironolactone ลดตายใน HFrEF แต่ฤทธิ์ขับน้ำช้า",
     "E": "tolvaptan ใช้ hyponatremia"
    },
-   "key_concept": "• loop ยาหลักสำหรับ congestion\n• spironolactone เพิ่ม survival\n• ตรวจ K⁺ เสมอ"
+   "key_concept": "• loop ยาหลักสำหรับ congestion\n• spironolactone เพิ่ม survival\n• ตรวจ K⁺ เสมอ",
+   "mechanism": [
+    "หัวใจวาย ของเหลวคั่ง บวมและหอบ",
+    {
+     "s": "furosemide (loop diuretic) บล็อก NKCC2",
+     "answer": true
+    },
+    "ขับน้ำและ Na⁺ ลด preload อาการดีขึ้น"
+   ]
   },
   "43": {
    "explanation": "อาการอ่อนเพลียหลังเดินบนที่สูง → acute mountain sickness รักษาด้วย acetazolamide (carbonic anhydrase inhibitor)",
@@ -859,7 +947,15 @@
     "D": "seminoma เป็นก้อนแข็ง ไม่ transilluminate",
     "E": "varicocele เหมือน bag of worms"
    },
-   "key_concept": "• hydrocele: transilluminate ได้\n• varicocele: ด้านซ้ายพบบ่อย\n• ก้อนแข็งไม่ transilluminate: คิดมะเร็ง"
+   "key_concept": "• hydrocele: transilluminate ได้\n• varicocele: ด้านซ้ายพบบ่อย\n• ก้อนแข็งไม่ transilluminate: คิดมะเร็ง",
+   "mechanism": [
+    "tunica vaginalis สร้างของเหลวมากกว่าดูดกลับ",
+    "ของเหลวสะสมรอบอัณฑะ",
+    {
+     "s": "hydrocele: ถุงอัณฑะโต ไม่เจ็บ ส่องไฟผ่านได้",
+     "answer": true
+    }
+   ]
   },
   "58": {
    "explanation": "Nodule ใน prostate + PSA 17 ng/mL + ไม่มีการติดเชื้อ → adenocarcinoma",
@@ -889,7 +985,15 @@
     "D": "วันที่ 15 ช้าเกินไป: ไข่ตกประมาณ 14 วันก่อนประจำเดือนรอบถัดไป คือ 26 − 14 = วันที่ 12",
     "E": "วันที่ 16 ช้าเกินไป: รอบ 26 วัน ไข่ตกราววันที่ 12 (luteal phase คงที่ 14 วัน)"
    },
-   "key_concept": "• luteal phase คงที่ ≈ 14 วัน\n• ovulation = ความยาวรอบ − 14\n• LH surge → ไข่ตกใน 24–36 ชม."
+   "key_concept": "• luteal phase คงที่ ≈ 14 วัน\n• ovulation = ความยาวรอบ − 14\n• LH surge → ไข่ตกใน 24–36 ชม.",
+   "mechanism": [
+    "ระยะ luteal คงที่ประมาณ 14 วัน",
+    "รอบเดือน 26 วัน ลบ 14",
+    {
+     "s": "ตกไข่ประมาณวันที่ 12",
+     "answer": true
+    }
+   ]
   },
   "60": {
    "explanation": "วันที่ 18 ของรอบ 35 วัน อยู่ก่อนไข่ตก (วันที่ 21) = proliferative phase: ต่อมตรงยาว ช่องแคบ (AI ร่างเฉลย ความมั่นใจต่ำ; stromal mitosis ก็เป็น proliferative)",
@@ -911,7 +1015,15 @@
     "D": "HPV ทำให้เกิดหูดหงอนไก่และรอยโรคปากมดลูก ไม่ทำให้ตกขาวเขียวมีกลิ่น และไม่ใช่เชื้อที่มี flagella",
     "E": "N. gonorrhoeae เป็น Gram-negative diplococci"
    },
-   "key_concept": "• trichomonas: strawberry cervix, pH > 4.5\n• รักษา: metronidazole\n• ต้องรักษาคู่นอน"
+   "key_concept": "• trichomonas: strawberry cervix, pH > 4.5\n• รักษา: metronidazole\n• ต้องรักษาคู่นอน",
+   "mechanism": [
+    {
+     "s": "Trichomonas vaginalis (protozoa มี flagella)",
+     "answer": true
+    },
+    "เกาะเยื่อบุช่องคลอดทำให้อักเสบ",
+    "ตกขาวเขียวเหลืองเป็นฟอง wet smear เห็นตัวเคลื่อนที่"
+   ]
   },
   "62": {
    "explanation": "รังไข่ก้อน + endometrial hyperplasia จาก estrogen เกิน → granulosa cell tumor",
@@ -922,7 +1034,15 @@
     "D": "choriocarcinoma สร้าง hCG ไม่ได้สร้าง estrogen จึงไม่ทำให้ endometrial hyperplasia",
     "E": "endometrioid carcinoma ไม่ใช่เหตุหลักของ hyperplasia ที่โจทย์ถาม"
    },
-   "key_concept": "• granulosa: Call-Exner bodies, inhibin\n• ทำให้ precocious puberty/AUB\n• เสี่ยง endometrial CA"
+   "key_concept": "• granulosa: Call-Exner bodies, inhibin\n• ทำให้ precocious puberty/AUB\n• เสี่ยง endometrial CA",
+   "mechanism": [
+    {
+     "s": "granulosa cell tumor ของรังไข่",
+     "answer": true
+    },
+    "สร้าง estrogen",
+    "กระตุ้น endometrium หนาตัว (hyperplasia) เลือดออกผิดปกติ"
+   ]
   },
   "63": {
    "explanation": "Schiller-Duval bodies = yolk sac tumor → AFP",
@@ -992,7 +1112,15 @@
     "D": "✓ BRCA1",
     "E": "HER2 เป็น oncogene ของ tumor ไม่ใช่ germline"
    },
-   "key_concept": "• BRCA1: breast + ovarian, triple negative\n• BRCA2: breast (ชายได้) + pancreatic\n• autosomal dominant"
+   "key_concept": "• BRCA1: breast + ovarian, triple negative\n• BRCA2: breast (ชายได้) + pancreatic\n• autosomal dominant",
+   "mechanism": [
+    {
+     "s": "BRCA1 กลายพันธุ์ (germline) ถ่ายทอดในครอบครัว",
+     "answer": true
+    },
+    "ซ่อม DNA double-strand break ไม่ได้",
+    "เสี่ยงมะเร็งเต้านมและรังไข่"
+   ]
   },
   "67": {
    "choices_override": {
@@ -1044,7 +1172,15 @@
     "D": "✓ combined OCP (ethinyl estradiol)",
     "E": "DMPA เสี่ยงต่ำกว่า"
    },
-   "key_concept": "• estrogen เพิ่ม clotting factors\n• ห้ามใน VTE, migraine with aura, smoker >35\n• ทางเลือก: progestin-only"
+   "key_concept": "• estrogen เพิ่ม clotting factors\n• ห้ามใน VTE, migraine with aura, smoker >35\n• ทางเลือก: progestin-only",
+   "mechanism": [
+    {
+     "s": "ยาเม็ดคุมกำเนิดชนิดรวม (มี estrogen)",
+     "answer": true
+    },
+    "ตับสร้าง clotting factor เพิ่ม antithrombin ลด",
+    "เกิด superficial และ deep vein thrombosis"
+   ]
   },
   "70": {
    "explanation": "สิวหลังกิน COC จาก progestin ที่มีฤทธิ์ androgenic สูง เช่น levonorgestrel",
@@ -1074,7 +1210,15 @@
     "D": "PLC–IP₃ เป็นทางของ V1/oxytocin receptor ที่กล้ามเนื้อมดลูก",
     "E": "NKCC เป็นเป้าของ loop diuretic"
    },
-   "key_concept": "• oxytocin & ADH: nonapeptides คล้ายกัน\n• water intoxication ขณะ induce labor\n• V2: Gs–cAMP → AQP2"
+   "key_concept": "• oxytocin & ADH: nonapeptides คล้ายกัน\n• water intoxication ขณะ induce labor\n• V2: Gs–cAMP → AQP2",
+   "mechanism": [
+    "ให้ oxytocin ขนาดสูงร่วมกับสารน้ำ hypotonic",
+    {
+     "s": "oxytocin โครงสร้างคล้าย ADH จึงกระตุ้น ADH (V2) receptor",
+     "answer": true
+    },
+    "ดูดกลับน้ำเพิ่ม → hyponatremia"
+   ]
   },
   "72": {
    "explanation": "เลื่อนประจำเดือน → norethisterone (progestin) กินต่อเนื่อง ไม่ให้ endometrium หลุด",
@@ -1104,7 +1248,15 @@
     "D": "Ureaplasma: urethritis",
     "E": "Calymmatobacterium (Klebsiella granulomatis): granuloma inguinale ไม่เจ็บ"
    },
-   "key_concept": "• chancroid: แผลเจ็บ + bubo\n• ย้อมเป็น ‘school of fish’\n• รักษา: azithromycin/ceftriaxone"
+   "key_concept": "• chancroid: แผลเจ็บ + bubo\n• ย้อมเป็น ‘school of fish’\n• รักษา: azithromycin/ceftriaxone",
+   "mechanism": [
+    {
+     "s": "Haemophilus ducreyi ติดทางเพศสัมพันธ์",
+     "answer": true
+    },
+    "papule → pustule → แผลขอบไม่เรียบ",
+    "แผลเจ็บ (chancroid) ต่อมน้ำเหลืองโต"
+   ]
   },
   "74": {
    "explanation": "ไม่สามารถคงการแข็งตัวระหว่างมีเพศสัมพันธ์ = erectile disorder",
