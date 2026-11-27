@@ -17,7 +17,8 @@ permissions:
   id-token: write
 jobs:
   fix:
-    if: github.event_name == 'issues' || contains(github.event.comment.body, '@claude')
+    # "[ติดต่อ] …" issues from the website's contact button are for people to read, not for the auto-fix (an @claude comment still works)
+    if: (github.event_name == 'issues' && !startsWith(github.event.issue.title, '[ติดต่อ]')) || contains(github.event.comment.body, '@claude')
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4

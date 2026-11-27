@@ -3,9 +3,10 @@
 //
 // 1) GET  <worker-url>/file/<drive_file_id>
 //    fetches that PDF from Google Drive with a key that only Cloudflare knows (never reaches GitHub or browsers).
-// 2) POST <worker-url>/report   body: {"qid","set","answer","override","reason","page"}
-//    a friend reports a doubtful answer key from the website → the worker opens a GitHub Issue
+// 2) POST <worker-url>/report   body: {"qid","set","answer","override","category":["stem"|"options"|"key"|"explain"|"image"|"other"],"reason","page"}
+//    a friend reports a problem with one question from the website → the worker opens a GitHub Issue
 //    (label "answer-report") so Claude can read the queue with `gh issue list -l answer-report`.
+//    body {"kind":"contact","category":["bug"|"content"|"request"|"other"],"reason","page"} (no qid) → issue labelled "contact".
 // 3) Progress sync across devices (no account, a code works like a key):
 //    POST <worker-url>/sync/new          → {"code":"k7m2-p9qx-4fh8"}
 //    GET  <worker-url>/sync/<code>       → the saved progress file, or 404
@@ -30,6 +31,9 @@ const newCode = () => {
   const s = Array.from(b, (x) => CODE_CHARS[x % CODE_CHARS.length]).join("");
   return `${s.slice(0, 4)}-${s.slice(4, 8)}-${s.slice(8)}`;
 };
+// what a report can be about (same keys as quiz.js REP_CATS / app.js CONTACT_CATS); unknown keys are dropped
+const REPORT_CATS = { stem: "โจทย์", options: "ตัวเลือก", key: "เฉลย", explain: "คำอธิบาย", image: "รูป", other: "อื่น ๆ" };
+const CONTACT_CATS = { bug: "เว็บใช้งานผิดปกติ", content: "ข้อมูล/ข้อสอบผิด", request: "ขอข้อสอบ/ฟีเจอร์เพิ่ม", other: "อื่น ๆ" };
 const clip = (s, n) => String(s == null ? "" : s).replace(/[\u0000-\u0008\u000b-\u001f]/g, "").slice(0, n);
 
 export default {
@@ -86,22 +90,35 @@ export default {
       const raw = await request.text();
       if (raw.length > 4000) return reply(413, "too long");
       let r; try { r = JSON.parse(raw); } catch { return reply(400, "bad json"); }
-      if (!QID.test(r.qid || "")) return reply(400, "bad question id");
       const reason = clip(r.reason, 1500).trim();
       if (reason.length < 3) return reply(400, "please give a reason");
-      const title = `[เฉลย] ${r.qid}${r.override ? ` ควรเป็น ${clip(r.override, 20)}` : ""}`;
-      const body = [
-        `**ข้อ:** \`${r.qid}\` · ชุด \`${clip(r.set, 40)}\``,
-        `**เฉลยในเว็บ:** ${clip(r.answer, 200) || "-"}`,
-        r.override ? `**ผู้แจ้งคิดว่าควรเป็น:** ${clip(r.override, 200)}` : "",
-        "", "**เหตุผล:**", reason, "",
-        r.page ? `หน้าเว็บ: ${clip(r.page, 300)}` : "",
-        "_ส่งจากปุ่ม \"แจ้งเฉลยน่าสงสัย\" ใน MedLib (ไม่มีข้อมูลผู้แจ้ง)_",
-      ].filter((x) => x !== "").join("\n");
+      const pick = (list, names) => (Array.isArray(list) ? list : []).filter((c) => names[c]).slice(0, 6).map((c) => names[c]);
+      let title, body, labels;
+      if (r.kind === "contact") {   // floating "ติดต่อ" button: not about one question → never sent to the auto-fix bot
+        const cats = pick(r.category, CONTACT_CATS);
+        title = `[ติดต่อ] ${cats.join(", ") || "ทั่วไป"} · ${clip(reason.split("\n")[0], 60)}`;
+        body = [`**เรื่อง:** ${cats.join(", ") || "-"}`, "", reason, "", r.page ? `หน้าเว็บ: ${clip(r.page, 300)}` : "",
+          "_ส่งจากปุ่ม \"ติดต่อ\" ใน MedLib (ไม่มีข้อมูลผู้แจ้ง)_"].filter((x) => x !== "").join("\n");
+        labels = ["contact"];
+      } else {
+        if (!QID.test(r.qid || "")) return reply(400, "bad question id");
+        const cats = pick(r.category, REPORT_CATS);   // older pages send no category → treated as an answer-key report
+        title = `[${cats.join(", ") || "เฉลย"}] ${r.qid}${r.override ? ` ควรเป็น ${clip(r.override, 20)}` : ""}`;
+        body = [
+          `**ข้อ:** \`${r.qid}\` · ชุด \`${clip(r.set, 40)}\``,
+          cats.length ? `**ปัญหา:** ${cats.join(", ")}` : "",
+          `**เฉลยในเว็บ:** ${clip(r.answer, 200) || "-"}`,
+          r.override ? `**ผู้แจ้งคิดว่าควรเป็น:** ${clip(r.override, 200)}` : "",
+          "", "**รายละเอียด:**", reason, "",
+          r.page ? `หน้าเว็บ: ${clip(r.page, 300)}` : "",
+          "_ส่งจากปุ่ม \"แจ้งปัญหาข้อนี้\" ใน MedLib (ไม่มีข้อมูลผู้แจ้ง)_",
+        ].filter((x) => x !== "").join("\n");
+        labels = ["answer-report"];
+      }
       const g = await fetch(`https://api.github.com/repos/${env.GITHUB_REPO}/issues`, {
         method: "POST",
         headers: { Authorization: `Bearer ${env.GITHUB_TOKEN}`, Accept: "application/vnd.github+json", "User-Agent": "medlib-worker", "Content-Type": "application/json" },
-        body: JSON.stringify({ title, body, labels: ["answer-report"] }),
+        body: JSON.stringify({ title, body, labels }),
       });
       if (!g.ok) return reply(502, `GitHub returned ${g.status}`);
       const issue = await g.json();

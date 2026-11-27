@@ -46,8 +46,8 @@ await t("swipe left → next question; swipe right → back; vertical swipe does
 });
 await t("home: ทำต่อจากล่าสุด goes back to the question you were on", async () => {
   await go("#/"); await p.waitForSelector("#resume");
-  assert.match(await p.textContent("#resume"), /ทำต่อจากล่าสุด/);
-  assert.match(await p.textContent("#resume"), /52/);
+  assert.match(await p.textContent("#resumebar"), /ทำต่อจากล่าสุด/);
+  assert.match(await p.textContent("#resumebar"), /52/);
   await p.click("#resume"); await p.waitForFunction(() => location.hash.endsWith("/run/2"));
 });
 await t("zoomed picture: two-finger pinch scales it, closing resets", async () => {

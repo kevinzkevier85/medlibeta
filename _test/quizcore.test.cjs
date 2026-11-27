@@ -178,4 +178,18 @@ t("disputed: the person's pick wins", () => {
   const q = { id: "D", type: "MCQ", options: { A: "a", B: "b" }, answer: "A", ai_answer: "B" };
   assert.strictEqual(Q.qScore(q, { ans: { D: "B" } }, { D: "B" }), 1);
 });
+t("deleteRound: gone here, and a stale copy from another device does not bring it back", () => {
+  const r1 = { id: "r1", started: 10, qids: [], chk: {} }, r2 = { id: "r2", started: 20, qids: [], chk: {} };
+  const here = { rounds: { "END/52_MCQ": [r1, r2] } }, there = JSON.parse(JSON.stringify(here));
+  assert.ok(Q.deleteRound(here, "END/52_MCQ", "r1", 99));
+  assert.deepStrictEqual(here.rounds["END/52_MCQ"].map((r) => r.id), ["r2"]);
+  assert.ok(!Q.deleteRound(here, "END/52_MCQ", "nope", 99));
+  for (const m of [Q.mergeProgress(here, there), Q.mergeProgress(there, here)]) assert.deepStrictEqual(m.rounds["END/52_MCQ"].map((r) => r.id), ["r2"]);
+});
+t("retryIds: wrong, partial and not-checked questions, in round order", () => {
+  const m = (id, ans) => ({ id, type: "MCQ", options: { A: "a", B: "b" }, answer: ans, answer_status: "verified" });
+  const qmap = { a: m("a", "A"), b: m("b", "A"), c: m("c", "A"), d: m("d", "A") };
+  const r = { qids: ["d", "c", "b", "a"], ans: { a: "A", b: "B", d: "A" }, chk: { a: true, b: true }, ov: {} };
+  assert.deepStrictEqual(Q.retryIds(r, qmap, {}), ["d", "c", "b"]);
+});
 console.log(`\n${pass} ผ่าน`);
