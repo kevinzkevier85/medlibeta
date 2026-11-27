@@ -446,7 +446,16 @@
     "D": "Methylene blue = methemoglobinemia",
     "E": "Vitamin K ต้าน warfarin"
    },
-   "key_concept": "• Heparin → protamine\n• Warfarin → vitamin K/ FFP/ PCC"
+   "key_concept": "• Heparin → protamine\n• Warfarin → vitamin K/ FFP/ PCC",
+   "mechanism": [
+    "heparin มีประจุลบแรง",
+    "protamine มีประจุบวก",
+    "จับกันเป็นสารเชิงซ้อนที่ไม่ออกฤทธิ์",
+    {
+     "s": "protamine sulfate ทำให้ heparin เป็นกลาง",
+     "answer": true
+    }
+   ]
   },
   "51": {
    "explanation": "การให้ heparin ปรับขนาดให้ aPTT ยาวเป็น 1.5–2.5 เท่าของค่าควบคุม",
@@ -847,7 +856,16 @@
     "D": "Cross-link = cisplatin",
     "E": "Microtubule = vinca/taxane"
    },
-   "key_concept": "• Anthracycline: intercalate + topo II\n• Cardiotoxic"
+   "key_concept": "• Anthracycline: intercalate + topo II\n• Cardiotoxic",
+   "mechanism": [
+    "doxorubicin สอดแทรกระหว่างคู่เบสของ DNA",
+    "ขัดการทำงานของ topoisomerase II",
+    "DNA ขาดและเซลล์ตาย",
+    {
+     "s": "ออกฤทธิ์โดย intercalation",
+     "answer": true
+    }
+   ]
   },
   "94": {
    "explanation": "MTX ยับยั้ง DHFR (dihydrofolate reductase)",
@@ -939,7 +957,16 @@
     "D": "Cyclophosphamide alkylating",
     "E": "Paclitaxel stabilizes microtubule (ยับยั้ง disassembly)"
    },
-   "key_concept": "• Vinca: ยับยั้ง polymerization\n• Taxane: ยับยั้ง depolymerization"
+   "key_concept": "• Vinca: ยับยั้ง polymerization\n• Taxane: ยับยั้ง depolymerization",
+   "mechanism": [
+    "vincristine จับ tubulin",
+    "ขัดการประกอบ microtubule ของ spindle",
+    "chromosome แยกไม่ได้ในระยะ metaphase",
+    {
+     "s": "หยุด mitosis",
+     "answer": true
+    }
+   ]
   },
   "102": {
    "explanation": "Tamoxifen ออกฤทธิ์ที่ estrogen receptor (SERM)",
@@ -949,7 +976,15 @@
     "C": "✓ ต้าน estrogen ที่เต้านม แต่กระตุ้นที่มดลูกและกระดูก",
     "D": "progesterone receptor ไม่ใช่เป้าหมายของ tamoxifen"
    },
-   "key_concept": "• tamoxifen: มะเร็งเต้านม ER-positive\n• ADR: endometrial cancer, thromboembolism, hot flush"
+   "key_concept": "• tamoxifen: มะเร็งเต้านม ER-positive\n• ADR: endometrial cancer, thromboembolism, hot flush",
+   "mechanism": [
+    "tamoxifen เป็น SERM ที่ breast",
+    "จับ estrogen receptor ในเซลล์มะเร็งเต้านม",
+    {
+     "s": "ยับยั้งการทำงานของ estrogen receptor",
+     "answer": true
+    }
+   ]
   },
   "103": {
    "explanation": "Tumor marker ของมะเร็งตับอ่อนคือ CA19-9",
@@ -1103,7 +1138,15 @@
     "D": "✓ Gene amplification (ต้นฉบับยอมรับ)",
     "E": "✓ Chromosomal translocation"
    },
-   "key_concept": "• Mechanisms: translocation, amplification, point mutation\n• Bcr-abl, MYC"
+   "key_concept": "• Mechanisms: translocation, amplification, point mutation\n• Bcr-abl, MYC",
+   "mechanism": [
+    "gene ถูกย้ายตำแหน่งแบบ chromosomal translocation",
+    "ยีนส่งเสริมการเติบโตถูกวางใกล้ promoter แรง",
+    {
+     "s": "proto-oncogene กลายเป็น oncogene",
+     "answer": true
+    }
+   ]
   },
   "119": {
    "explanation": "RAS สร้างโปรตีน signal transducer (GTP-binding protein)",
@@ -1133,7 +1176,15 @@
     "D": "oncogene ใช้ allele เดียวก็ก่อมะเร็ง ไม่ต้อง two-hit",
     "E": "tumor suppressor gene ต้องเสียสอง allele เป็นใจความของ two-hit (AI เห็นว่าตรงที่สุด) แต่คงตามต้นฉบับ"
    },
-   "key_concept": "• two-hit: retinoblastoma – hereditary (germline hit + somatic hit) เกิดเร็วและสองตา\n• sporadic ต้อง somatic hit สองครั้งในเซลล์เดียว"
+   "key_concept": "• two-hit: retinoblastoma – hereditary (germline hit + somatic hit) เกิดเร็วและสองตา\n• sporadic ต้อง somatic hit สองครั้งในเซลล์เดียว",
+   "mechanism": [
+    "gene suppressor ถูกทำลาย 1 อัลลีลตั้งแต่เกิด",
+    "อัลลีลที่สองถูกทำลายภายหลัง (second hit)",
+    {
+     "s": "จึงเกิดมะเร็งได้ (two-hit hypothesis)",
+     "answer": true
+    }
+   ]
   },
   "122": {
    "explanation": "มะเร็งหลังโพรงจมูก (nasopharyngeal carcinoma) สัมพันธ์กับ EBV (ต้นฉบับยอมรับอีกข้อ)",
