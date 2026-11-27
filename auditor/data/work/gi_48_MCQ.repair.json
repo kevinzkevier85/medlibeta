@@ -385,7 +385,15 @@
     "D": "✓ enterokinase",
     "E": "pepsin มาจากกระเพาะ"
    },
-   "key_concept": "• brush border peptidases: aminopeptidase, dipeptidase\n• di/tripeptide ผ่าน PEPT1\n• ขาด enterokinase → protein malabsorption"
+   "key_concept": "• brush border peptidases: aminopeptidase, dipeptidase\n• di/tripeptide ผ่าน PEPT1\n• ขาด enterokinase → protein malabsorption",
+   "mechanism": [
+    {
+     "s": "enterokinase ที่ brush border ตัด trypsinogen เป็น trypsin",
+     "answer": true
+    },
+    "trypsin กระตุ้น proenzyme อื่น",
+    "ย่อยโปรตีน"
+   ]
   },
   "21": {
    "explanation": "LCFA ถูกประกอบเป็น chylomicron ใหญ่เกินเข้า capillary จึงเข้า lacteal (lymph)",
@@ -487,7 +495,15 @@
     "D": "✓ pudendal nerve",
     "E": "lesser splanchnic = sympathetic"
    },
-   "key_concept": "• S2–S4\n• คลอดยาก → ทำลาย\n• fecal incontinence"
+   "key_concept": "• S2–S4\n• คลอดยาก → ทำลาย\n• fecal incontinence",
+   "mechanism": [
+    "external anal sphincter เป็นกล้ามเนื้อลาย",
+    {
+     "s": "pudendal nerve (S2–S4) เลี้ยง",
+     "answer": true
+    },
+    "เสียหายจึงควบคุมการกลั้นไม่ได้"
+   ]
   },
   "26": {
    "stem_override": "A 40-year-old woman with knee pain has been buying and taking NSAIDs. She develops epigastric pain, and endoscopy shows a clean-based ulcer. What is the most likely diagnosis?",
@@ -620,7 +636,15 @@
     "D": "cholestasis: ALP สูง",
     "E": "hemolysis: enzyme ปกติ"
    },
-   "key_concept": "• ALT จำเพาะตับกว่า\n• HAV/HBV/HEV\n• ตรวจ serology"
+   "key_concept": "• ALT จำเพาะตับกว่า\n• HAV/HBV/HEV\n• ตรวจ serology",
+   "mechanism": [
+    "ไวรัสทำลาย hepatocyte",
+    "ALT สูงกว่า AST",
+    {
+     "s": "viral hepatitis (ALP ปกติ bilirubin สูง)",
+     "answer": true
+    }
+   ]
   },
   "31": {
    "stem_override": "A man with long-term heavy alcohol use is suspected of alcoholic liver cirrhosis. Which liver function test pattern best supports this?",
@@ -676,7 +700,15 @@
     "D": "urobilinogen ไม่ลด",
     "E": "bilirubin ไม่บวก"
    },
-   "key_concept": "• hemolysis/Gilbert\n• acholuric jaundice\n• LDH, haptoglobin"
+   "key_concept": "• hemolysis/Gilbert\n• acholuric jaundice\n• LDH, haptoglobin",
+   "mechanism": [
+    "unconjugated bilirubin สูง (จับ albumin ไม่ละลายน้ำ)",
+    "ไม่ออกทางปัสสาวะ",
+    {
+     "s": "urine bilirubin ลบ แต่ urobilinogen เพิ่ม",
+     "answer": true
+    }
+   ]
   },
   "33": {
    "explanation": "สับสน + asterixis + ตับอักเสบรุนแรง = hepatic encephalopathy → NH₃ ในเลือดสูง",
@@ -722,7 +754,15 @@
     "D": "ค่าทั้งหมดอยู่ในเกณฑ์ปกติ ไม่สะท้อนโรคตับจากแอลกอฮอล์",
     "E": "> 1000 = acute injury/ischemia"
    },
-   "key_concept": "• AST:ALT > 2\n• albumin ต่ำ = chronic\n• GGT, MCV สูง"
+   "key_concept": "• AST:ALT > 2\n• albumin ต่ำ = chronic\n• GGT, MCV สูง",
+   "mechanism": [
+    "ดื่มสุรา ทำลาย mitochondria",
+    "AST > ALT (~2:1)",
+    {
+     "s": "AST 130, ALT 60 ร่วม albumin ต่ำ (alcoholic liver disease)",
+     "answer": true
+    }
+   ]
   },
   "35": {
    "explanation": "ตับแข็ง (albumin ต่ำ PT ยาว UGIB) → portal hypertension → caput medusae",
@@ -933,7 +973,15 @@
     "D": "Enterobius ใช้ scotch tape",
     "E": "Ancylostoma เห็นไข่"
    },
-   "key_concept": "• autoinfection\n• steroid/HTLV-1\n• ivermectin"
+   "key_concept": "• autoinfection\n• steroid/HTLV-1\n• ivermectin",
+   "mechanism": [
+    "ภูมิคุ้มกันต่ำ (HIV)",
+    "autoinfection เพิ่มขึ้นมาก",
+    {
+     "s": "Strongyloides stercoralis พบ larvae ในอุจจาระ",
+     "answer": true
+    }
+   ]
   },
   "47": {
    "choices_override": {
@@ -1040,7 +1088,15 @@
     "D": "D. caninum cysticercoid → ตืดในลำไส้",
     "E": "H. nana cysticercoid → ตืดในลำไส้"
    },
-   "key_concept": "• คนเป็น intermediate host\n• ตับ ปอด\n• albendazole + PAIR/ผ่าตัด"
+   "key_concept": "• คนเป็น intermediate host\n• ตับ ปอด\n• albendazole + PAIR/ผ่าตัด",
+   "mechanism": [
+    {
+     "s": "กลืนไข่ Echinococcus granulosus (จากสุนัข)",
+     "answer": true
+    },
+    "oncosphere ผ่านผนังลำไส้ไปตับ/ปอด",
+    "เกิด hydatid cyst"
+   ]
   },
   "52": {
    "choices_override": {
@@ -1080,7 +1136,15 @@
     "D": "alpha toxin = C. perfringens",
     "E": "✓ Shiga toxin"
    },
-   "key_concept": "• ยับยั้ง 60S\n• HUS\n• ห้าม antimotility"
+   "key_concept": "• ยับยั้ง 60S\n• HUS\n• ห้าม antimotility",
+   "mechanism": [
+    "ท้องเสียแล้วกลายเป็นถ่ายเป็นเลือด",
+    {
+     "s": "Shiga toxin ยับยั้ง 60S ribosome ทำลายเยื่อบุและ endothelium",
+     "answer": true
+    },
+    "ลำไส้ใหญ่อักเสบมีเลือดออก"
+   ]
   },
   "54": {
    "choices_override": {
@@ -1247,7 +1311,15 @@
     "D": "กล้ามเนื้อไม่ใช่",
     "E": "ต่อมไร้ท่อไม่ใช่"
    },
-   "key_concept": "• myoclonic jerk\n• neurogenic pulmonary edema\n• วัคซีน EV71"
+   "key_concept": "• myoclonic jerk\n• neurogenic pulmonary edema\n• วัคซีน EV71",
+   "mechanism": [
+    "EV71 ทำ HFMD",
+    "ไวรัสมี neurotropism ไปก้านสมอง",
+    {
+     "s": "ต้องระวังภาวะแทรกซ้อนทางระบบประสาท",
+     "answer": true
+    }
+   ]
   },
   "60": {
    "choices_override": {
@@ -1297,7 +1369,15 @@
     "D": "cholera: rice-water",
     "E": "strongyloidiasis: larva"
    },
-   "key_concept": "• trophozoite ลูกแพร์\n• malabsorption\n• metronidazole/tinidazole"
+   "key_concept": "• trophozoite ลูกแพร์\n• malabsorption\n• metronidazole/tinidazole",
+   "mechanism": [
+    {
+     "s": "Giardia lamblia เกาะเยื่อบุลำไส้เล็กด้วย ventral disc",
+     "answer": true
+    },
+    "villi และ brush border เสียหาย",
+    "ท้องเสีย อุจจาระมันเหม็น"
+   ]
   },
   "62": {
    "choices_override": {
@@ -1351,7 +1431,15 @@
     "D": "attapulgite ดูดซับ ผลน้อย",
     "E": "diphenoxylate เข้าสมอง"
    },
-   "key_concept": "• μ-opioid ใน myenteric plexus\n• ห้ามใน dysentery\n• alosetron"
+   "key_concept": "• μ-opioid ใน myenteric plexus\n• ห้ามใน dysentery\n• alosetron",
+   "mechanism": [
+    {
+     "s": "loperamide จับ μ-opioid receptor ในลำไส้",
+     "answer": true
+    },
+    "ลด peristalsis",
+    "ท้องเสียลดลง"
+   ]
   },
   "64": {
    "explanation": "Cisapride (5-HT₄ agonist) ทำ QT ยาว หัวใจเต้นผิดจังหวะ จึงถูกถอนจากตลาด",
@@ -1470,7 +1558,15 @@
     "D": "vit E hemolysis ทารกคลอดก่อน",
     "E": "✓ vitamin K"
    },
-   "key_concept": "• ฉีด vit K 1 mg แรกเกิด\n• PT ยาว\n• factor II VII IX X"
+   "key_concept": "• ฉีด vit K 1 mg แรกเกิด\n• PT ยาว\n• factor II VII IX X",
+   "mechanism": [
+    "ทารกแรกเกิด vitamin K ต่ำ นมแม่มี vitamin K น้อย",
+    "factor II, VII, IX, X ไม่ถูก γ-carboxylate",
+    {
+     "s": "ขาด vitamin K เลือดออกที่สายสะดือ",
+     "answer": true
+    }
+   ]
   },
   "69": {
    "explanation": "ธาตุเหล็ก (ferrous sulfate) รักษา iron deficiency (microcytic) ในหญิงตั้งครรภ์",
@@ -1568,7 +1664,15 @@
     "D": "✓ mebendazole",
     "E": "omeprazole ลดกรด"
    },
-   "key_concept": "• Capillaria: ปลาน้ำจืดดิบ\n• protein-losing enteropathy\n• albendazole ก็ใช้ได้"
+   "key_concept": "• Capillaria: ปลาน้ำจืดดิบ\n• protein-losing enteropathy\n• albendazole ก็ใช้ได้",
+   "mechanism": [
+    {
+     "s": "mebendazole จับ β-tubulin ของพยาธิ",
+     "answer": true
+    },
+    "ยับยั้ง microtubule และการดูดซึม glucose",
+    "พยาธิตาย"
+   ]
   },
   "74": {
    "choices_override": {
