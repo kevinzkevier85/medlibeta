@@ -688,12 +688,12 @@
    },
    "key_concept": "• lymphopenia: HIV, steroid, เคมีบำบัด, รังสี\n• CD4 <200 = AIDS",
    "mechanism": [
-    "HIV จับ CD4 และ CCR5/CXCR4",
-    "ไวรัสเพิ่มจำนวนใน CD4+ T cell",
     {
-     "s": "เซลล์ถูกทำลายต่อเนื่อง",
+     "s": "HIV จับ CD4 และ CCR5/CXCR4",
      "answer": true
     },
+    "ไวรัสเพิ่มจำนวนใน CD4+ T cell",
+    "เซลล์ถูกทำลายต่อเนื่อง",
     "lymphocytopenia ติดเชื้อฉวยโอกาส"
    ],
    "audit": {
@@ -748,11 +748,11 @@
    "mechanism": [
     "NADPH oxidase บกพร่อง",
     "สร้าง superoxide ไม่ได้",
+    "ฆ่าเชื้อใน phagosome ไม่ได้",
     {
-     "s": "ฆ่าเชื้อใน phagosome ไม่ได้",
+     "s": "ติดเชื้อซ้ำ เกิด granuloma",
      "answer": true
-    },
-    "ติดเชื้อซ้ำ เกิด granuloma"
+    }
    ],
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 42].pdf",
@@ -1991,12 +1991,12 @@
    },
    "key_concept": "• cilostazol ห้ามใช้ในผู้ป่วย heart failure\n• PAD: หยุดบุหรี่ ออกกำลัง antiplatelet statin",
    "mechanism": [
-    "cilostazol ยับยั้ง PDE3",
-    "cAMP ในกล้ามเนื้อเรียบหลอดเลือดและเกล็ดเลือดเพิ่ม",
     {
-     "s": "หลอดเลือดขาขยาย เกล็ดเลือดจับกลุ่มลดลง",
+     "s": "cilostazol ยับยั้ง PDE3",
      "answer": true
     },
+    "cAMP ในกล้ามเนื้อเรียบหลอดเลือดและเกล็ดเลือดเพิ่ม",
+    "หลอดเลือดขาขยาย เกล็ดเลือดจับกลุ่มลดลง",
     "ปวดขาเวลาเดินลดลง"
    ],
    "audit": {
@@ -2150,11 +2150,11 @@
    "key_concept": "• iron chelator: deferoxamine (ฉีด), deferasirox/deferiprone (กิน)\n• hereditary hemochromatosis รักษาหลักด้วย phlebotomy",
    "mechanism": [
     "เหล็กเกินสะสมในเนื้อเยื่อและข้อ",
-    "deferoxamine จับ Fe3+ เป็น ferrioxamine",
     {
-     "s": "ขับออกทางปัสสาวะ/อุจจาระ",
+     "s": "deferoxamine จับ Fe3+ เป็น ferrioxamine",
      "answer": true
     },
+    "ขับออกทางปัสสาวะ/อุจจาระ",
     "เหล็กสะสมลดลง"
    ],
    "audit": {
@@ -2524,11 +2524,11 @@
    "mechanism": [
     "T lymphocyte ผู้บริจาคยังมีชีวิตในถุงเลือด",
     "ผู้รับกำจัดไม่ได้",
+    "รังสีแกมมาทำลาย DNA ของ lymphocyte",
     {
-     "s": "รังสีแกมมาทำลาย DNA ของ lymphocyte",
+     "s": "ป้องกัน TA-GVHD",
      "answer": true
-    },
-    "ป้องกัน TA-GVHD"
+    }
    ],
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 42].pdf",
@@ -3605,12 +3605,12 @@
    },
    "key_concept": "• ป้องกันด้วย mesna + ให้น้ำมาก\n• R-CHOP จริง: rituximab, cyclophosphamide, doxorubicin, vincristine, prednisolone",
    "mechanism": [
-    "cyclophosphamide ถูก CYP เปลี่ยนที่ตับ",
-    "ได้ acrolein ขับทางปัสสาวะ",
     {
-     "s": "acrolein ทำลาย urothelium",
+     "s": "cyclophosphamide ถูก CYP เปลี่ยนที่ตับ",
      "answer": true
     },
+    "ได้ acrolein ขับทางปัสสาวะ",
+    "acrolein ทำลาย urothelium",
     "ปัสสาวะเป็นเลือด"
    ],
    "audit": {
@@ -3822,13 +3822,13 @@
    },
    "key_concept": "• Vinca: ยับยั้ง polymerization\n• Taxane: ยับยั้ง depolymerization",
    "mechanism": [
-    "vincristine จับ tubulin",
+    {
+     "s": "vincristine จับ tubulin",
+     "answer": true
+    },
     "ขัดการประกอบ microtubule ของ spindle",
     "chromosome แยกไม่ได้ในระยะ metaphase",
-    {
-     "s": "หยุด mitosis",
-     "answer": true
-    }
+    "หยุด mitosis"
    ],
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 42].pdf",
@@ -4477,12 +4477,12 @@
    },
    "key_concept": "• Lynch: colon, endometrium, ovary, กระเพาะ\n• FAP: APC, polyp จำนวนมาก, เสี่ยงมะเร็ง 100%",
    "mechanism": [
-    "MLH1 กลายพันธุ์",
-    "ซ่อม mismatch ระหว่างจำลอง DNA ไม่ได้",
     {
-     "s": "microsatellite instability สะสม mutation",
+     "s": "MLH1 กลายพันธุ์",
      "answer": true
     },
+    "ซ่อม mismatch ระหว่างจำลอง DNA ไม่ได้",
+    "microsatellite instability สะสม mutation",
     "มะเร็งลำไส้ใหญ่อายุน้อย"
    ],
    "audit": {
@@ -4583,12 +4583,12 @@
    },
    "key_concept": "• Mechanisms: translocation, amplification, point mutation\n• Bcr-abl, MYC",
    "mechanism": [
-    "gene ถูกย้ายตำแหน่งแบบ chromosomal translocation",
-    "ยีนส่งเสริมการเติบโตถูกวางใกล้ promoter แรง",
     {
-     "s": "proto-oncogene กลายเป็น oncogene",
+     "s": "gene ถูกย้ายตำแหน่งแบบ chromosomal translocation",
      "answer": true
-    }
+    },
+    "ยีนส่งเสริมการเติบโตถูกวางใกล้ promoter แรง",
+    "proto-oncogene กลายเป็น oncogene"
    ],
    "also_accept": [
     "D"
@@ -4767,12 +4767,12 @@
    },
    "key_concept": "• EBV: NPC, Burkitt lymphoma, Hodgkin lymphoma, PTLD\n• NPC พบบ่อยในเอเชียตะวันออกเฉียงใต้/จีนใต้",
    "mechanism": [
-    "EBV ติดเยื่อบุหลังโพรงจมูก",
-    "โปรตีน LMP1 กระตุ้นการแบ่งตัวและยับยั้ง apoptosis",
     {
-     "s": "เซลล์เยื่อบุกลายเป็นมะเร็ง",
+     "s": "EBV ติดเยื่อบุหลังโพรงจมูก",
      "answer": true
     },
+    "โปรตีน LMP1 กระตุ้นการแบ่งตัวและยับยั้ง apoptosis",
+    "เซลล์เยื่อบุกลายเป็นมะเร็ง",
     "ก้อนหลังโพรงจมูก"
    ],
    "also_accept": [

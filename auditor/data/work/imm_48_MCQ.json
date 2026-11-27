@@ -33,11 +33,11 @@
    },
    "key_concept": "• eschar + ไข้ + lymphadenopathy → scrub typhus\n• พาหะ = chigger mite (larva) · reservoir = หนู\n• รักษา doxycycline",
    "mechanism": [
-    "ถูก chigger กัด",
     {
-     "s": "Orientia เข้าผิวหนัง เกิด eschar",
+     "s": "ถูก chigger กัด",
      "answer": true
     },
+    "Orientia เข้าผิวหนัง เกิด eschar",
     "แพร่ทางเลือด/น้ำเหลือง",
     "vasculitis ไข้ ปวดกล้ามเนื้อ"
    ],
@@ -471,11 +471,11 @@
    },
    "key_concept": "• หยุดยาที่เป็นต้นเหตุก่อน\n• metronidazole/vancomycin PO\n• ห้ามให้ยาหยุดถ่าย",
    "mechanism": [
-    "metronidazole เข้าเซลล์แบคทีเรีย anaerobe",
     {
-     "s": "ถูกรีดิวซ์เป็นอนุมูลอิสระ",
+     "s": "metronidazole เข้าเซลล์แบคทีเรีย anaerobe",
      "answer": true
     },
+    "ถูกรีดิวซ์เป็นอนุมูลอิสระ",
     "ทำลาย DNA ของเชื้อ",
     "เชื้อตาย"
    ],
@@ -701,11 +701,11 @@
    },
    "key_concept": "• favipiravir: RdRp inhibitor\n• oseltamivir: influenza\n• ยากลุ่ม NRTI ใช้ HIV/HBV",
    "mechanism": [
-    "favipiravir เข้าเซลล์",
     {
-     "s": "ถูกเปลี่ยนเป็นรูปออกฤทธิ์",
+     "s": "favipiravir เข้าเซลล์",
      "answer": true
     },
+    "ถูกเปลี่ยนเป็นรูปออกฤทธิ์",
     "ยับยั้ง RdRp",
     "การสังเคราะห์ RNA ลดลง"
    ],
@@ -2198,12 +2198,12 @@
    "key_concept": "• NRTI = nucleoside analog ไม่มี 3'-OH\n• ต้องถูก phosphorylate ในเซลล์\n• ตัวอย่าง zidovudine, lamivudine, tenofovir",
    "mechanism": [
     "NRTI เข้าเซลล์",
-    {
-     "s": "ถูก phosphorylate เป็น triphosphate",
-     "answer": true
-    },
+    "ถูก phosphorylate เป็น triphosphate",
     "แทรกในสาย DNA ที่ RT สร้าง",
-    "ไม่มี 3'-OH → chain termination"
+    {
+     "s": "ไม่มี 3'-OH → chain termination",
+     "answer": true
+    }
    ],
    "audit": {
     "source_file": "preclinic/2/immunity/mcq/ข้อสอบ mcq/MCQ_immune [Med PSU 48].pdf",
@@ -2606,11 +2606,11 @@
    },
    "key_concept": "• oseltamivir = neuraminidase inhibitor\n• ลดการปล่อยไวรัส\n• ให้ภายใน 48 ชม.",
    "mechanism": [
-    "oseltamivir จับ neuraminidase",
     {
-     "s": "ยับยั้งการตัด sialic acid",
+     "s": "oseltamivir จับ neuraminidase",
      "answer": true
     },
+    "ยับยั้งการตัด sialic acid",
     "ไวรัสใหม่ติดอยู่กับเซลล์",
     "แพร่ต่อไม่ได้"
    ],
@@ -2718,11 +2718,11 @@
    "key_concept": "• TB: granuloma มี caseous necrosis กลาง\n• Langhans giant cell + epithelioid\n• AFB ย้อม Ziehl-Neelsen",
    "mechanism": [
     "Mycobacterium tuberculosis ถูก macrophage กิน",
+    "Th1 หลั่ง IFN-γ กระตุ้น macrophage",
     {
-     "s": "Th1 หลั่ง IFN-γ กระตุ้น macrophage",
+     "s": "เกิด granuloma",
      "answer": true
     },
-    "เกิด granuloma",
     "central caseous necrosis"
    ],
    "audit": {
@@ -3786,11 +3786,11 @@
    "key_concept": "• UPEC: P-fimbriae, type 1 pili\n• เกาะ uroepithelium\n• ป้องกันถูกชะล้างด้วยปัสสาวะ",
    "mechanism": [
     "E. coli ที่ทำให้ UTI มีขนเกาะ",
-    "P-fimbriae จับ receptor บนเยื่อบุทางเดินปัสสาวะ",
     {
-     "s": "เชื้อเกาะและรุกราน (ascend) ทำให้เกิด pyelonephritis",
+     "s": "P-fimbriae จับ receptor บนเยื่อบุทางเดินปัสสาวะ",
      "answer": true
-    }
+    },
+    "เชื้อเกาะและรุกราน (ascend) ทำให้เกิด pyelonephritis"
    ],
    "audit": {
     "source_file": "preclinic/2/immunity/mcq/ข้อสอบ mcq/MCQ_immune [Med PSU 48].pdf",
@@ -4750,11 +4750,11 @@
    "key_concept": "• TSST-1 = superantigen\n• จับ MHC II + TCR Vβ นอกร่อง\n• T cell กระตุ้น 5–30% → IL-2, TNF ↑",
    "mechanism": [
     "S. aureus สร้าง TSST-1",
+    "จับ MHC II และ TCR Vβ ข้ามกลไกจำเพาะ",
     {
-     "s": "จับ MHC II และ TCR Vβ ข้ามกลไกจำเพาะ",
+     "s": "T cell ถูกกระตุ้นจำนวนมาก",
      "answer": true
     },
-    "T cell ถูกกระตุ้นจำนวนมาก",
     "cytokine storm → shock"
    ],
    "audit": {
@@ -5175,11 +5175,11 @@
    "key_concept": "• IgE + mast cell degranulation\n• wheal = permeability ↑ · flare = vasodilation\n• antihistamine บรรเทา",
    "mechanism": [
     "แพ้พิษผึ้ง IgE จับ mast cell",
+    "antigen cross-link IgE",
     {
-     "s": "antigen cross-link IgE",
+     "s": "degranulation หลั่ง histamine",
      "answer": true
     },
-    "degranulation หลั่ง histamine",
     "wheal and flare"
    ],
    "audit": {
@@ -5336,11 +5336,11 @@
    },
    "key_concept": "• hyperacute: นาที–ชั่วโมง (Ab)\n• acute: สัปดาห์–เดือน (T cell)\n• chronic: เดือน–ปี",
    "mechanism": [
-    "recipient T cell เจอ HLA donor",
     {
-     "s": "CD4/CD8 ถูกกระตุ้น",
+     "s": "recipient T cell เจอ HLA donor",
      "answer": true
     },
+    "CD4/CD8 ถูกกระตุ้น",
     "cytotoxic T cell ทำลาย tubular",
     "Cr ↑ ปัสสาวะลด"
    ],
@@ -6322,11 +6322,11 @@
    },
    "key_concept": "• CNI: cyclosporine, tacrolimus\n• mTOR: sirolimus, everolimus\n• antimetabolite: azathioprine, MMF",
    "mechanism": [
-    "tacrolimus จับ FKBP12",
     {
-     "s": "คอมเพล็กซ์ยับยั้ง calcineurin",
+     "s": "tacrolimus จับ FKBP12",
      "answer": true
     },
+    "คอมเพล็กซ์ยับยั้ง calcineurin",
     "NFAT ไม่ถูก dephosphorylate",
     "IL-2 ลด → T cell ลด"
    ],

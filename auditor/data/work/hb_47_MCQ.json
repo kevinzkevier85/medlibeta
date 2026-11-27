@@ -31,12 +31,12 @@
    },
    "key_concept": "• เพิ่ม NT ใน synapse: ยับยั้ง reuptake, ยับยั้ง MAO/COMT, เพิ่ม release\n• SSRI/TCA/methylphenidate ออกฤทธิ์ที่ transporter",
    "mechanism": [
-    "ยาจับ presynaptic transporter",
-    "ปิดการดูดกลับ",
     {
-     "s": "NT ค้างใน synaptic cleft นานขึ้น",
+     "s": "ยาจับ presynaptic transporter",
      "answer": true
     },
+    "ปิดการดูดกลับ",
+    "NT ค้างใน synaptic cleft นานขึ้น",
     "กระตุ้น postsynaptic receptor มากขึ้น"
    ],
    "audit": {
@@ -294,12 +294,12 @@
    },
    "key_concept": "• μ: analgesia, respiratory depression, miosis, constipation, euphoria\n• antidote: naloxone",
    "mechanism": [
-    "morphine จับ μ receptor ที่ brainstem",
-    "ความไวของ chemoreceptor ต่อ CO2 ลด",
     {
-     "s": "กดศูนย์หายใจ",
+     "s": "morphine จับ μ receptor ที่ brainstem",
      "answer": true
     },
+    "ความไวของ chemoreceptor ต่อ CO2 ลด",
+    "กดศูนย์หายใจ",
     "RR ลด"
    ],
    "audit": {
@@ -1051,13 +1051,13 @@
    },
    "key_concept": "• BZD: เพิ่มความถี่เปิด Cl- channel\n• barbiturate: เพิ่มระยะเวลาเปิด\n• baclofen: GABA-B",
    "mechanism": [
-    "GABA-A receptor เป็น Cl⁻ channel",
+    {
+     "s": "GABA-A receptor เป็น Cl⁻ channel",
+     "answer": true
+    },
     "benzodiazepine จับตำแหน่ง allosteric",
     "เพิ่มความถี่การเปิด Cl⁻ channel",
-    {
-     "s": "เกิดการยับยั้งระบบประสาท",
-     "answer": true
-    }
+    "เกิดการยับยั้งระบบประสาท"
    ],
    "audit": {
     "source_file": "preclinic/3/higher-brain/mcq/ข้อสอบ mcq/MCQ_Higher brain [Med PSU 47].pdf",
@@ -1110,11 +1110,11 @@
    "key_concept": "• ADHD: methylphenidate, amphetamine (stimulant)\n• atomoxetine = NET inhibitor",
    "mechanism": [
     "methylphenidate จับ DAT/NET",
-    "ยับยั้ง reuptake",
     {
-     "s": "DA/NE ค้างใน synapse",
+     "s": "ยับยั้ง reuptake",
      "answer": true
     },
+    "DA/NE ค้างใน synapse",
     "ปรับสมาธิ ADHD"
    ],
    "audit": {
@@ -1325,11 +1325,11 @@
    "mechanism": [
     "fluoxetine ยับยั้ง SERT",
     "moclobemide ยับยั้ง MAO-A",
+    "5-HT สะสมมากเกิน",
     {
-     "s": "5-HT สะสมมากเกิน",
+     "s": "serotonin syndrome",
      "answer": true
-    },
-    "serotonin syndrome"
+    }
    ],
    "audit": {
     "source_file": "preclinic/3/higher-brain/mcq/ข้อสอบ mcq/MCQ_Higher brain [Med PSU 47].pdf",
@@ -1382,11 +1382,11 @@
    "key_concept": "• neuropathic pain: TCA, SNRI, gabapentinoid\n• descending inhibitory pathway ใช้ NE/5-HT",
    "mechanism": [
     "TCA ยับยั้ง NET/SERT",
-    "NE/5-HT เพิ่มที่ dorsal horn",
     {
-     "s": "เสริม descending inhibition",
+     "s": "NE/5-HT เพิ่มที่ dorsal horn",
      "answer": true
     },
+    "เสริม descending inhibition",
     "ลดการส่งสัญญาณปวด"
    ],
    "audit": {
@@ -1439,12 +1439,12 @@
    },
    "key_concept": "• EPS จาก D2 block\n• แก้: benztropine",
    "mechanism": [
-    "haloperidol บล็อก D2 ใน striatum",
-    "dopamine ลด ACh เด่น",
     {
-     "s": "direct pathway ถูกกด",
+     "s": "haloperidol บล็อก D2 ใน striatum",
      "answer": true
     },
+    "dopamine ลด ACh เด่น",
+    "direct pathway ถูกกด",
     "parkinsonism"
    ],
    "audit": {
@@ -1497,12 +1497,12 @@
    },
    "key_concept": "• dopamine = prolactin inhibiting factor\n• antipsychotic → hyperprolactinemia → galactorrhea",
    "mechanism": [
-    "D2 ที่ tuberoinfundibular ถูกบล็อก",
-    "dopamine ยับยั้ง prolactin ลดลง",
     {
-     "s": "prolactin สูง",
+     "s": "D2 ที่ tuberoinfundibular ถูกบล็อก",
      "answer": true
     },
+    "dopamine ยับยั้ง prolactin ลดลง",
+    "prolactin สูง",
     "เต้านมโต/ปวด"
    ],
    "audit": {
@@ -3639,12 +3639,12 @@
    },
    "key_concept": "• superior gluteal nerve → medius/minimus\n• เชิงกรานฝั่งตรงข้ามตกเมื่อยกขา",
    "mechanism": [
-    "gluteus medius อ่อนแรง",
-    "ยึดเชิงกรานไม่ได้",
     {
-     "s": "เชิงกรานฝั่งยกขาตก",
+     "s": "gluteus medius อ่อนแรง",
      "answer": true
     },
+    "ยึดเชิงกรานไม่ได้",
+    "เชิงกรานฝั่งยกขาตก",
     "Trendelenburg บวก"
    ],
    "audit": {
@@ -4098,12 +4098,12 @@
    },
    "key_concept": "• scaphocephaly = sagittal synostosis พบบ่อยสุด\n• craniosynostosis: กะโหลกโตตามทิศตั้งฉากกับ suture ที่ปิด",
    "mechanism": [
-    "sagittal suture ปิดก่อนกำหนด",
-    "กะโหลกขยายด้านข้างไม่ได้",
     {
-     "s": "โตทางหน้า-หลังแทน",
+     "s": "sagittal suture ปิดก่อนกำหนด",
      "answer": true
     },
+    "กะโหลกขยายด้านข้างไม่ได้",
+    "โตทางหน้า-หลังแทน",
     "ศีรษะยาวและแคบ"
    ],
    "audit": {
@@ -4518,11 +4518,11 @@
    "key_concept": "• reversal: neostigmine + atropine/glycopyrrolate\n• sugammadex สำหรับ rocuronium/vecuronium",
    "mechanism": [
     "pancuronium แย่ง ACh",
-    "neostigmine ยับยั้ง AChE",
     {
-     "s": "ACh สะสมที่ NMJ ชนะ blocker",
+     "s": "neostigmine ยับยั้ง AChE",
      "answer": true
     },
+    "ACh สะสมที่ NMJ ชนะ blocker",
     "กล้ามเนื้อกลับมาทำงาน"
    ],
    "audit": {
@@ -4682,12 +4682,12 @@
    },
    "key_concept": "• Reye: encephalopathy + fatty liver ในเด็กที่ได้ aspirin\n• ห้าม aspirin ในเด็กที่เป็นไวรัส",
    "mechanism": [
-    "aspirin + ไวรัส",
-    "mitochondria ตับถูกทำลาย",
     {
-     "s": "ตับวาย ammonia สูง",
+     "s": "aspirin + ไวรัส",
      "answer": true
     },
+    "mitochondria ตับถูกทำลาย",
+    "ตับวาย ammonia สูง",
     "สับสน Reye syndrome"
    ],
    "audit": {
@@ -4945,12 +4945,12 @@
    },
    "key_concept": "• uricase: allantoin (คนไม่มีเอนไซม์นี้)\n• pegloticase ใช้ gout ดื้อยา",
    "mechanism": [
-    "pegloticase เป็น uricase",
-    "uric acid → allantoin",
     {
-     "s": "ละลายง่ายขับทางไต",
+     "s": "pegloticase เป็น uricase",
      "answer": true
     },
+    "uric acid → allantoin",
+    "ละลายง่ายขับทางไต",
     "ระดับ uric acid ลดลง"
    ],
    "audit": {
@@ -5219,11 +5219,11 @@
    "mechanism": [
     "CD8 T cell จดจำแอนติเจน MHC-I บนใยกล้ามเนื้อ",
     "ปล่อย perforin/granzyme",
+    "ใยกล้ามเนื้อตาย",
     {
-     "s": "ใยกล้ามเนื้อตาย",
+     "s": "polymyositis",
      "answer": true
-    },
-    "polymyositis"
+    }
    ],
    "audit": {
     "source_file": "preclinic/3/higher-brain/mcq/ข้อสอบ mcq/MCQ_Higher brain [Med PSU 47].pdf",

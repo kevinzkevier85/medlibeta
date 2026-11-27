@@ -288,11 +288,11 @@
    "mechanism": [
     "หลังอาหาร glucose ↑ → insulin ↑",
     "insulin → PI3K/Akt ที่ muscle",
+    "GLUT4 translocation → muscle glucose uptake ↑",
     {
-     "s": "GLUT4 translocation → muscle glucose uptake ↑",
+     "s": "ตับ: glycogenesis ↑ glycogenolysis ↓",
      "answer": true
-    },
-    "ตับ: glycogenesis ↑ glycogenolysis ↓"
+    }
    ],
    "option_why": {
     "A": "สมองใช้ GLUT1/3 ไม่ขึ้นกับ insulin — ไม่เพิ่มตอนอิ่ม",
@@ -508,11 +508,11 @@
    "key_concept": "• ขน TG: chylomicron (อาหาร, apoB-48) และ VLDL (ตับ, apoB-100)\n• ขน cholesterol: LDL (ไปเนื้อเยื่อ) และ HDL (กลับตับ)\n• VLDL → (LPL) → IDL → (hepatic lipase) → LDL",
    "mechanism": [
     "ตับสร้าง TG จาก carb/FFA ส่วนเกิน",
-    "บรรจุเป็น VLDL ปล่อยเข้าเลือด",
     {
-     "s": "LPL ที่ capillary ตัด TG → FFA",
+     "s": "บรรจุเป็น VLDL ปล่อยเข้าเลือด",
      "answer": true
     },
+    "LPL ที่ capillary ตัด TG → FFA",
     "muscle ใช้ · adipose เก็บ"
    ],
    "option_why": {
@@ -628,13 +628,13 @@
    "audit_ref": "end_49_MCQ_011",
    "key_concept": "• ADR metformin: GI upset (บ่อยสุด), B12 ↓, lactic acidosis (ร้ายแรง)\n• งด: eGFR < 30, ก่อนฉีด contrast, hypoxia, ตับวาย, เหล้า\n• ไม่ทำให้ hypoglycemia และไม่เพิ่มน้ำหนัก",
    "mechanism": [
-    "metformin สะสม (ไตเสื่อม/hypoxia)",
+    {
+     "s": "metformin สะสม (ไตเสื่อม/hypoxia)",
+     "answer": true
+    },
     "ยับยั้ง complex I / mGPD ที่ตับ",
     "lactate เปลี่ยนเป็น glucose ไม่ได้",
-    {
-     "s": "lactate คั่ง → lactic acidosis",
-     "answer": true
-    }
+    "lactate คั่ง → lactic acidosis"
    ],
    "option_why": {
     "A": "✓ ยับยั้ง mitochondrial complex I/mGPD → gluconeogenesis จาก lactate ↓",
@@ -685,11 +685,11 @@
    "ai_answer": "A",
    "key_concept": "• prednisolone ถูกทำลายด้วย CYP3A4\n• inducer (rifampicin, phenytoin, carbamazepine) → steroid ↓ → อาการ adrenal insufficiency → ต้องเพิ่มขนาด\n• inhibitor (ketoconazole, clarithromycin, ritonavir) → steroid ↑ → Cushingoid\n• ข้อนี้ในเว็บเลือก 'เชื่อ AI' ได้",
    "mechanism": [
-    "ยาร่วม (เช่น rifampicin) induce CYP3A4",
     {
-     "s": "prednisolone ถูก metabolize เร็วขึ้น",
+     "s": "ยาร่วม (เช่น rifampicin) induce CYP3A4",
      "answer": true
     },
+    "prednisolone ถูก metabolize เร็วขึ้น",
     "ระดับ glucocorticoid ในเลือดลด",
     "ต่อม adrenal ถูกกดไว้จาก steroid เดิม → adrenal insufficiency (คลื่นไส้ อ่อนแรง)"
    ],
@@ -742,13 +742,13 @@
    "audit_ref": "end_49_MCQ_013",
    "key_concept": "• ต่อจากข้อ 12 (แกน steroid): StAR = rate-limiting step ขน cholesterol เข้า inner mitochondrial membrane\n• lipoid CAH: steroid ทุกตัวต่ำ → ACTH ↑ → ต่อมโต ไขมันคั่ง, salt wasting\n• เทียบ: 21-OH = salt wasting + virilization · 11β-OH = HT + virilization · 17α-OH = HT ไม่มี sex steroid",
    "mechanism": [
-    {
-     "s": "StAR ต่ำ → cholesterol เข้า mitochondria ไม่ได้",
-     "answer": true
-    },
+    "StAR ต่ำ → cholesterol เข้า mitochondria ไม่ได้",
     "สร้าง pregnenolone ไม่ได้ → steroid ทุกตัวต่ำ",
     "cortisol ↓ → ACTH ↑ → ต่อมโต ไขมันคั่ง",
-    "aldosterone ↓ → salt wasting, K ↑"
+    {
+     "s": "aldosterone ↓ → salt wasting, K ↑",
+     "answer": true
+    }
    ],
    "option_why": {
     "A": "✓ aldosterone ↓ → เสีย Na, K สูง, BP ต่ำ",
@@ -916,12 +916,12 @@
    "audit_ref": "end_49_MCQ_016",
    "key_concept": "• ต่อจากข้อ 4 (membrane receptor): steroid/thyroid ใช้ intracellular receptor → ออกฤทธิ์ช้า (ชั่วโมง) นาน\n• cytoplasmic receptor (จับแล้วเข้า nucleus): glucocorticoid, mineralocorticoid, androgen · nuclear receptor: estrogen, progesterone, T3, vitamin D\n• aldosterone สั่งสร้าง ENaC, Na/K-ATPase ที่ collecting duct",
    "mechanism": [
-    "aldosterone ซึมผ่าน cell membrane",
-    "จับ mineralocorticoid receptor ใน cytoplasm",
     {
-     "s": "hormone-receptor complex เข้า nucleus จับ DNA",
+     "s": "aldosterone ซึมผ่าน cell membrane",
      "answer": true
     },
+    "จับ mineralocorticoid receptor ใน cytoplasm",
+    "hormone-receptor complex เข้า nucleus จับ DNA",
     "mRNA → protein (ENaC, Na/K-ATPase)"
    ],
    "option_why": {
@@ -1215,11 +1215,11 @@
    "audit_ref": "end_49_MCQ_021",
    "key_concept": "• ต่อจากข้อ 20: ขั้นตอนหา Cushing — (1) ยืนยัน cortisol เกิน: 24-h UFC, late-night salivary cortisol, 1-mg dex test (2) วัด ACTH\n• ACTH ต่ำ → adrenal (adenoma, carcinoma) หรือ exogenous steroid\n• ACTH สูง → high-dose dex/CRH test: กดได้ = pituitary · กดไม่ได้ = ectopic (SCLC, carcinoid)",
    "mechanism": [
-    "adrenal adenoma สร้าง cortisol เอง",
     {
-     "s": "cortisol สูง กด CRH/ACTH (ACTH < 5)",
+     "s": "adrenal adenoma สร้าง cortisol เอง",
      "answer": true
     },
+    "cortisol สูง กด CRH/ACTH (ACTH < 5)",
     "circadian rhythm หาย",
     "อาการ Cushing; ต่อมอีกข้างฝ่อ"
    ],
@@ -1768,11 +1768,11 @@
    "key_concept": "• ต่อจากข้อ 5: fasting = glucagon เด่น\n• กระตุ้น glucagon: glucose ต่ำ, insulin ต่ำ (intra-islet), amino acid (arginine), sympathetic (β), cortisol\n• ยับยั้ง glucagon: glucose สูง, insulin, somatostatin, GLP-1\n• T1DM ขาด insulin → glucagon สูงไม่หยุด → DKA",
    "mechanism": [
     "อดอาหาร → glucose ↓",
-    "β-cell หลั่ง insulin ↓",
     {
-     "s": "การยับยั้ง α-cell ภายใน islet หายไป",
+     "s": "β-cell หลั่ง insulin ↓",
      "answer": true
     },
+    "การยับยั้ง α-cell ภายใน islet หายไป",
     "α-cell หลั่ง glucagon ↑ → glycogenolysis/gluconeogenesis"
    ],
    "option_why": {
@@ -1937,12 +1937,12 @@
    "key_concept": "• prolactin เป็นฮอร์โมนเดียวของ anterior pituitary ที่ hypothalamus คุมแบบ 'ยับยั้ง' เป็นหลัก\n• stalk effect: ก้อนอื่นกด stalk → prolactin สูงเล็กน้อย (< 100–150 ng/mL) อย่าวินิจฉัยเป็น prolactinoma\n• ยา dopamine antagonist (antipsychotic, metoclopramide) → prolactin ↑ แบบเดียวกัน\n• ต่อจากข้อ 23: stalk เสียอาจเกิด DI ด้วย (ADH ส่งไม่ถึง)",
    "mechanism": [
     "pituitary stalk ถูกตัด/กด",
-    {
-     "s": "dopamine จาก hypothalamus ไปไม่ถึง anterior pituitary",
-     "answer": true
-    },
+    "dopamine จาก hypothalamus ไปไม่ถึง anterior pituitary",
     "lactotroph หลุดจากการยับยั้ง",
-    "prolactin ↑ (ฮอร์โมนอื่นลดเพราะขาด releasing hormone)"
+    {
+     "s": "prolactin ↑ (ฮอร์โมนอื่นลดเพราะขาด releasing hormone)",
+     "answer": true
+    }
    ],
    "option_why": {
     "A": "✓ prolactin ถูกคุมด้วยการยับยั้ง (dopamine) เป็นหลัก",
@@ -2144,11 +2144,11 @@
    "audit_ref": "end_49_MCQ_038",
    "key_concept": "• ต่อจากข้อ 9 และ 14: VLDL → (LPL) → IDL → LDL; apoE เป็นใบผ่านให้ remnant เข้าตับ\n• apoE2/E2 → type III dysbetalipoproteinemia: TC และ TG สูงพอกัน, palmar crease xanthoma, tuberoeruptive xanthoma, เสี่ยง CAD/PAD\n• apo สำคัญ: B-48 (chylomicron), B-100 (VLDL/LDL), A-I (HDL, กระตุ้น LCAT), C-II (กระตุ้น LPL), E (remnant uptake)",
    "mechanism": [
+    "apoE ผิดปกติ (E2/E2)",
     {
-     "s": "apoE ผิดปกติ (E2/E2)",
+     "s": "IDL/chylomicron remnant จับ LDL receptor/LRP ที่ตับไม่ได้",
      "answer": true
     },
-    "IDL/chylomicron remnant จับ LDL receptor/LRP ที่ตับไม่ได้",
     "remnant คั่งในเลือด",
     "palmar xanthoma + atherosclerosis"
    ],

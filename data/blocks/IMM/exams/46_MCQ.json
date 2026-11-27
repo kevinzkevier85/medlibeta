@@ -305,11 +305,11 @@
    "mechanism": [
     "TCR จับ MHC (signal 1)",
     "ไม่มี B7–CD28",
+    "ไม่ได้ signal 2",
     {
-     "s": "ไม่ได้ signal 2",
+     "s": "anergy",
      "answer": true
     },
-    "anergy",
     "tolerance"
    ],
    "option_why": {
@@ -964,11 +964,11 @@
    "key_concept": "• antibody ต่อ merozoite: บล็อก invasion\n• P. vivax จับ Duffy antigen\n• CTL ใช้ liver stage",
    "mechanism": [
     "antibody จับ merozoite",
-    "ขัดขวางการเกาะ (attachment) ของ protozoa เข้าเซลล์",
     {
-     "s": "ป้องกันการเข้าสู่ RBC",
+     "s": "ขัดขวางการเกาะ (attachment) ของ protozoa เข้าเซลล์",
      "answer": true
-    }
+    },
+    "ป้องกันการเข้าสู่ RBC"
    ],
    "option_why": {
     "A": "antibody ช่วย opsonization ได้ แต่บทบาทสำคัญที่สุดตามเฉลยคือกันไม่ให้ merozoite เกาะเข้าเม็ดเลือดแดง",
@@ -1496,11 +1496,11 @@
    "key_concept": "• LPS: lipid A → TLR4 → TNF/IL-1\n• Gram-negative sepsis\n• DIC/shock",
    "mechanism": [
     "แบคทีเรียตาย",
-    "LPS หลุด",
     {
-     "s": "TLR4 กระตุ้น macrophage",
+     "s": "LPS หลุด",
      "answer": true
     },
+    "TLR4 กระตุ้น macrophage",
     "TNF/IL-1/IL-6 สูง",
     "septic shock"
    ],
@@ -3300,13 +3300,13 @@
    "audit_ref": "imm_46_MCQ_075",
    "key_concept": "• aminoglycoside: oto/nephro\n• clindamycin: pseudomembranous\n• tetracycline: teeth",
    "mechanism": [
-    "amikacin เป็น aminoglycoside",
+    {
+     "s": "amikacin เป็น aminoglycoside",
+     "answer": true
+    },
     "ถูกดูดซึมเข้า proximal tubule cells",
     "ยาสะสมในเซลล์ท่อไต",
-    {
-     "s": "เกิด nephrotoxicity",
-     "answer": true
-    }
+    "เกิด nephrotoxicity"
    ],
    "option_why": {
     "A": "imipenem: rash, seizure",
@@ -3352,12 +3352,12 @@
    "audit_ref": "imm_46_MCQ_076",
    "key_concept": "• C. difficile: clindamycin, cephalosporin, FQ\n• metronidazole/vancomycin/fidaxomicin\n• toxin A/B",
    "mechanism": [
-    "clindamycin ยับยั้งแบคทีเรียกลุ่ม normal flora",
-    "flora ลดลง",
     {
-     "s": "C. difficile เจริญและสร้าง toxin",
+     "s": "clindamycin ยับยั้งแบคทีเรียกลุ่ม normal flora",
      "answer": true
     },
+    "flora ลดลง",
+    "C. difficile เจริญและสร้าง toxin",
     "เกิด pseudomembranous colitis"
    ],
    "option_why": {
@@ -3729,12 +3729,12 @@
    "audit_ref": "imm_46_MCQ_087",
    "key_concept": "• NNRTI: efavirenz, nevirapine\n• NRTI: zidovudine, tenofovir\n• INSTI: -tegravir",
    "mechanism": [
-    "efavirenz เป็น NNRTI",
-    "จับ allosteric site ของ reverse transcriptase",
     {
-     "s": "ยับยั้งการสังเคราะห์ DNA ของ HIV",
+     "s": "efavirenz เป็น NNRTI",
      "answer": true
-    }
+    },
+    "จับ allosteric site ของ reverse transcriptase",
+    "ยับยั้งการสังเคราะห์ DNA ของ HIV"
    ],
    "option_why": {
     "A": "protease inhibitor คือยากลุ่ม -navir เช่น lopinavir",
