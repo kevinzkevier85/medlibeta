@@ -316,7 +316,7 @@
     "morphine กดการหายใจ",
     "PaCO2 สูง",
     {
-     "s": "หลอดเลือดสมองขยาย ICP เพิ่ม",
+     "s": "หลอดเลือดสมองขยาย ICP เพิ่ม (ห้ามใน head injury)",
      "answer": true
     },
     "บดบังการประเมินระบบประสาท"
@@ -361,11 +361,11 @@
    "mechanism": [
     "CYP2D6 ทำงานน้อย",
     "codeine เปลี่ยนเป็น morphine ไม่ได้",
+    "ไม่มี active metabolite",
     {
-     "s": "ไม่มี active metabolite",
+     "s": "ปวดไม่ทุเลา",
      "answer": true
-    },
-    "ปวดไม่ทุเลา"
+    }
    ],
    "option_why": {
     "A": "ระดับ codeine ไม่ลด แต่อาจสูงขึ้น",
@@ -515,11 +515,11 @@
    "key_concept": "• seizure: excitation > inhibition\n• Ca2+ influx → glutamate release\n• ยากันชัก: ปิด Na/Ca channel หรือเพิ่ม GABA",
    "mechanism": [
     "neuron depolarize ซ้ำ",
-    "Ca2+ เข้ามาก",
     {
-     "s": "glutamate ถูกปล่อยมาก neuron อื่นถูกกระตุ้นตาม",
+     "s": "Ca2+ เข้ามาก",
      "answer": true
     },
+    "glutamate ถูกปล่อยมาก neuron อื่นถูกกระตุ้นตาม",
     "ชักทั่วร่างกาย"
    ],
    "option_why": {
@@ -1041,11 +1041,11 @@
    "mechanism": [
     "TCA บล็อก muscarinic",
     "รูม่านตาขยาย มุมตาปิด",
+    "IOP พุ่งสูง angle closure",
     {
-     "s": "IOP พุ่งสูง angle closure",
+     "s": "เลี่ยงโดยใช้ SSRI เช่น fluvoxamine",
      "answer": true
-    },
-    "เลี่ยงโดยใช้ SSRI"
+    }
    ],
    "option_why": {
     "A": "desipramine เป็น TCA มีฤทธิ์ anticholinergic",
@@ -1367,12 +1367,12 @@
    "audit_ref": "hb_47_MCQ_030",
    "key_concept": "• NMS: hyperthermia, rigidity, AMS, CK สูง\n• รักษา: หยุดยา, dantrolene, bromocriptine",
    "mechanism": [
-    "D2 ถูกบล็อกมาก",
-    "hypothalamic thermoregulation เสีย กล้ามเนื้อเกร็ง",
     {
-     "s": "ผลิตความร้อนมาก CK สูง",
+     "s": "haloperidol บล็อก D2 มาก",
      "answer": true
     },
+    "hypothalamic thermoregulation เสีย กล้ามเนื้อเกร็ง",
+    "ผลิตความร้อนมาก CK สูง",
     "NMS"
    ],
    "option_why": {
@@ -1828,11 +1828,11 @@
    "key_concept": "• mesolimbic: reward, positive symptoms\n• การเสพติด → dopamine ใน NAc เพิ่ม",
    "mechanism": [
     "สารเสพติดกระตุ้น VTA",
-    "dopamine ใน nucleus accumbens เพิ่ม",
     {
-     "s": "เกิด reward/ craving",
+     "s": "mesolimbic pathway: dopamine ใน nucleus accumbens เพิ่ม",
      "answer": true
     },
+    "เกิด reward/ craving",
     "ใช้ซ้ำ"
    ],
    "option_why": {
@@ -2208,12 +2208,12 @@
    "audit_ref": "hb_47_MCQ_050",
    "key_concept": "• mesolimbic ↑ → positive · mesocortical ↓ → negative\n• typical antipsychotic ไม่ช่วย negative symptoms",
    "mechanism": [
-    "dopamine ที่ส่งไป prefrontal ลดลง",
-    "prefrontal hypofunction",
     {
-     "s": "negative symptoms",
+     "s": "mesocortical pathway: dopamine ไป prefrontal ลดลง",
      "answer": true
     },
+    "prefrontal hypofunction",
+    "negative symptoms",
     "พูดน้อย ขาดพลัง ถอนตัว"
    ],
    "option_why": {
@@ -3570,12 +3570,12 @@
    "audit_ref": "hb_47_MCQ_085",
    "key_concept": "• sux: depolarizing, half-life สั้นเพราะ cholinesterase\n• dibucaine number ตรวจ variant",
    "mechanism": [
-    "sux ต้องถูก pseudocholinesterase ย่อย",
-    "enzyme ขาด",
     {
-     "s": "sux ค้างที่ NMJ นาน",
+     "s": "succinylcholine ต้องถูก pseudocholinesterase ย่อย",
      "answer": true
     },
+    "enzyme ขาด",
+    "sux ค้างที่ NMJ นาน",
     "paralysis ยืดเยื้อ (apnea)"
    ],
    "option_why": {
@@ -3616,12 +3616,12 @@
    "audit_ref": "hb_47_MCQ_086",
    "key_concept": "• sux ADR: myalgia, hyperkalemia, MH, bradycardia\n• ป้องกัน myalgia ด้วย pretreatment non-depolarizer",
    "mechanism": [
-    "sux จับ nicotinic receptor",
-    "กล้ามเนื้อ depolarize พร้อมกัน",
     {
-     "s": "fasciculation",
+     "s": "succinylcholine จับ nicotinic receptor",
      "answer": true
     },
+    "กล้ามเนื้อ depolarize พร้อมกัน",
+    "fasciculation",
     "ปวดกล้ามเนื้อหลังผ่าตัด"
    ],
    "option_why": {
@@ -4087,11 +4087,11 @@
    "key_concept": "• LEMS: paraneoplastic (SCLC), autonomic + proximal weakness\n• ดีขึ้นด้วยการใช้งานซ้ำ ต่างจาก MG",
    "mechanism": [
     "SCLC กระตุ้น antibody",
-    "ต่อ voltage-gated Ca channel ปลายประสาท",
     {
-     "s": "ACh ถูกปล่อยลดลง",
+     "s": "antibody ต่อ voltage-gated Ca channel ปลายประสาท (Lambert-Eaton)",
      "answer": true
     },
+    "ACh ถูกปล่อยลดลง",
     "อ่อนแรง ปากแห้ง ตาตก"
    ],
    "option_why": {
@@ -4372,12 +4372,12 @@
    "audit_ref": "hb_47_MCQ_104",
    "key_concept": "• RA: CD4 T cell + TNF-α, IL-1, IL-6\n• pannus ทำลาย cartilage และ bone",
    "mechanism": [
-    "autoimmune ต่อ synovium",
-    "synovial hyperplasia + lymphoid follicle",
     {
-     "s": "pannus คลุม cartilage",
+     "s": "autoimmune: chronic inflammation ของ synovium",
      "answer": true
     },
+    "synovial hyperplasia + lymphoid follicle",
+    "pannus คลุม cartilage",
     "กัดกร่อนข้อ"
    ],
    "option_why": {
@@ -4678,11 +4678,11 @@
    "key_concept": "• podagra (first MTP) classic\n• uric acid + needle-shaped crystals",
    "mechanism": [
     "uric acid สูง",
-    "MSU ตกผลึกในข้อ",
     {
-     "s": "neutrophil กิน crystal ปล่อย IL-1 อักเสบ",
+     "s": "MSU ตกผลึกในข้อ (gouty arthritis)",
      "answer": true
     },
+    "neutrophil กิน crystal ปล่อย IL-1 อักเสบ",
     "ปวดบวมแดงเฉียบพลัน"
    ],
    "option_why": {

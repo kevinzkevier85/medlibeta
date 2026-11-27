@@ -335,7 +335,7 @@
     "EDTA เปิดเผย epitope บน GPIIb/IIIa",
     "antibody ทำให้เกล็ดเลือดเกาะกลุ่มในหลอด",
     {
-     "s": "เครื่องนับเกล็ดเลือดได้ต่ำกว่าจริง",
+     "s": "เครื่องนับเกล็ดเลือดได้ต่ำกว่าจริง (pseudothrombocytopenia)",
      "answer": true
     },
     "เสี่ยงรักษาเกินจำเป็น"
@@ -390,12 +390,12 @@
    },
    "key_concept": "• HS: ankyrin, spectrin, band 3, protein 4.2 (vertical interaction)\n• MCHC สูง, osmotic fragility เพิ่ม, รักษา splenectomy",
    "mechanism": [
-    "โปรตีนยึดเยื่อหุ้มกับ cytoskeleton บกพร่อง",
-    "เยื่อหุ้มหลุดออก พื้นที่ผิวลด",
     {
-     "s": "RBC กลายเป็น spherocyte",
+     "s": "spectrin (โปรตีนยึดเยื่อหุ้มกับ cytoskeleton) บกพร่อง",
      "answer": true
     },
+    "เยื่อหุ้มหลุดออก พื้นที่ผิวลด",
+    "RBC กลายเป็น spherocyte",
     "ติดและถูกทำลายที่ม้าม"
    ],
    "audit": {
@@ -758,12 +758,12 @@
    },
    "key_concept": "• microcytic + hemolysis + hepatosplenomegaly = thalassemia\n• ยืนยันด้วย Hb typing",
    "mechanism": [
-    "globin chain ไม่สมดุล",
-    "chain ส่วนเกินตกตะกอนทำลาย RBC precursor",
     {
-     "s": "ineffective erythropoiesis + hemolysis",
+     "s": "การสร้าง Hb ผิดปกติ: globin chain ไม่สมดุล",
      "answer": true
     },
+    "chain ส่วนเกินตกตะกอนทำลาย RBC precursor",
+    "ineffective erythropoiesis + hemolysis",
     "ซีด เหลือง ตับม้ามโต"
    ],
    "audit": {
@@ -819,7 +819,7 @@
     "เนื้อไตเสียหาย",
     "peritubular cell สร้าง EPO ลด",
     {
-     "s": "ไขกระดูกผลิต RBC ลด → ให้ ESA ทดแทน",
+     "s": "ไขกระดูกผลิต RBC ลด → ให้ ESA (darbepoetin alfa)",
      "answer": true
     },
     "Hb เพิ่มขึ้น"
@@ -981,12 +981,12 @@
    },
    "key_concept": "• scurvy: เหงือกบวมเลือดออก, perifollicular hemorrhage, แผลหายช้า\n• นมวัวมี vitamin C ต่ำ",
    "mechanism": [
-    "ขาด vitamin C",
-    "prolyl/lysyl hydroxylase ทำงานไม่ได้",
     {
-     "s": "collagen ไม่แข็งแรง หลอดเลือดเปราะ",
+     "s": "ขาด vitamin C",
      "answer": true
     },
+    "prolyl/lysyl hydroxylase ทำงานไม่ได้",
+    "collagen ไม่แข็งแรง หลอดเลือดเปราะ",
     "เลือดออกเหงือกและใต้ผิวหนัง"
    ],
    "audit": {
@@ -1380,11 +1380,11 @@
    "mechanism": [
     "vWF ขาด",
     "เกล็ดเลือดเกาะผนังหลอดเลือดไม่ได้ และ FVIII อายุสั้น",
+    "bleeding time และ aPTT ยาว",
     {
-     "s": "bleeding time และ aPTT ยาว",
+     "s": "แก้ด้วย cryoprecipitate ที่มี vWF + FVIII",
      "answer": true
-    },
-    "แก้ด้วยผลิตภัณฑ์ที่มี vWF + FVIII"
+    }
    ],
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 47].pdf",
@@ -1436,12 +1436,12 @@
    },
    "key_concept": "• TTP: ADAMTS13 ขาด, schistocyte, coagulogram ปกติ\n• รักษา plasma exchange ห้ามให้เกล็ดเลือด",
    "mechanism": [
-    "ADAMTS13 ขาด",
-    "ultralarge vWF จับเกล็ดเลือดเป็น microthrombi",
     {
-     "s": "เกล็ดเลือดถูกใช้ไป RBC ถูกฉีก",
+     "s": "TTP: ADAMTS13 ขาด",
      "answer": true
     },
+    "ultralarge vWF จับเกล็ดเลือดเป็น microthrombi",
+    "เกล็ดเลือดถูกใช้ไป RBC ถูกฉีก",
     "ซีด เหลือง petechiae อาการทางสมอง"
    ],
    "audit": {
@@ -1815,12 +1815,12 @@
    },
    "key_concept": "• myeloma: M-protein, Bence Jones protein, rouleaux\n• cast nephropathy จาก light chain",
    "mechanism": [
-    "plasma cell clone เพิ่มในไขกระดูก",
-    "หลั่ง cytokine กระตุ้น osteoclast + สร้าง light chain",
     {
-     "s": "กระดูกสลาย แคลเซียมสูง light chain อุดท่อไต",
+     "s": "multiple myeloma: plasma cell clone เพิ่มในไขกระดูก",
      "answer": true
     },
+    "หลั่ง cytokine กระตุ้น osteoclast + สร้าง light chain",
+    "กระดูกสลาย แคลเซียมสูง light chain อุดท่อไต",
     "ปวดหลัง ไตวาย ซีด"
    ],
    "audit": {
@@ -1873,12 +1873,12 @@
    },
    "key_concept": "• PV: เม็ดเลือดเพิ่มทั้ง 3 สาย, EPO ต่ำ\n• อาการ: ปวดหัว คันหลังอาบน้ำ thrombosis",
    "mechanism": [
-    "JAK2 V617F",
-    "JAK-STAT ทำงานตลอดโดยไม่ต้องมี EPO",
     {
-     "s": "เซลล์ไขกระดูกทั้งสามสายเพิ่มจำนวน",
+     "s": "JAK2 V617F",
      "answer": true
     },
+    "JAK-STAT ทำงานตลอดโดยไม่ต้องมี EPO",
+    "เซลล์ไขกระดูกทั้งสามสายเพิ่มจำนวน",
     "Hb สูง เลือดหนืด ปวดหัว"
    ],
    "audit": {
@@ -2580,15 +2580,6 @@
     "D": "antihistamine ใช้ใน allergic reaction"
    },
    "key_concept": "• acute hemolytic reaction: IgM anti-A/B + complement → intravascular hemolysis\n• หลักปฏิบัติ: หยุดเลือดทันที ให้สารน้ำรักษาปัสสาวะ ตรวจซ้ำหมู่เลือด",
-   "mechanism": [
-    "RBC กลุ่ม B เข้าผู้ป่วยกลุ่ม A",
-    "anti-B (IgM) จับและกระตุ้น complement",
-    {
-     "s": "intravascular hemolysis เฉียบพลัน",
-     "answer": true
-    },
-    "ไข้ ช็อก ไตวาย DIC"
-   ],
    "audit": {
     "source_file": "preclinic/3/hematopoietic/mcq/ข้อสอบ mcq/MCQ_Hemato [Med PSU 47].pdf",
     "page": 9,
