@@ -846,12 +846,12 @@
    },
    "key_concept": "• β-lactam: T>MIC\n• ให้บ่อย/แบบ infusion\n• FQ: AUC/MIC",
    "mechanism": [
-    "ยากลุ่ม time-dependent ฆ่าเชื้อเมื่อระดับยาเหนือ MIC",
-    "ผลขึ้นกับระยะเวลา ไม่ขึ้นกับความเข้มข้นสูงสุด",
     {
-     "s": "ต้องรักษา T>MIC ให้นานที่สุด",
+     "s": "ceftriaxone (β-lactam) เป็นยากลุ่ม time-dependent ฆ่าเชื้อเมื่อระดับยาเกิน MIC",
      "answer": true
     },
+    "ผลขึ้นกับระยะเวลา ไม่ขึ้นกับความเข้มข้นสูงสุด",
+    "ต้องรักษา T>MIC ให้นานที่สุด",
     "ให้ยาบ่อยครั้งหรือหยดต่อเนื่อง"
    ],
    "audit": {
@@ -1028,11 +1028,11 @@
    "mechanism": [
     "ยากลุ่ม time-dependent ฆ่าเชื้อเมื่อระดับยาเหนือ MIC",
     "ผลขึ้นกับระยะเวลา ไม่ขึ้นกับความเข้มข้นสูงสุด",
+    "ต้องรักษา T>MIC ให้นานที่สุด",
     {
-     "s": "ต้องรักษา T>MIC ให้นานที่สุด",
+     "s": "ให้ยาบ่อยครั้งหรือหยดต่อเนื่อง",
      "answer": true
-    },
-    "ให้ยาบ่อยครั้งหรือหยดต่อเนื่อง"
+    }
    ],
    "audit": {
     "source_file": "preclinic/2/biomed/mcq/ข้อสอบ mcq/MCQ_Pharmacology [Med PSU 50].pdf",
@@ -1460,11 +1460,11 @@
    "key_concept": "• Gq: PLC → IP₃/DAG\n• Gs: cAMP ↑\n• Gi: cAMP ↓",
    "mechanism": [
     "agonist จับ Gq-coupled receptor",
+    "Gαq กระตุ้น PLC",
     {
-     "s": "Gαq กระตุ้น PLC",
+     "s": "PIP₂ → IP₃ + DAG",
      "answer": true
     },
-    "PIP₂ → IP₃ + DAG",
     "Ca²⁺ ↑ / PKC"
    ],
    "audit": {
@@ -1581,11 +1581,11 @@
    "mechanism": [
     "therapeutic index = TD50/ED50",
     "ค่าต่ำแปลว่าระดับรักษากับระดับพิษอยู่ใกล้กัน",
+    "ระดับยาเปลี่ยนเล็กน้อยก็หลุดช่วงรักษา",
     {
-     "s": "ระดับยาเปลี่ยนเล็กน้อยก็หลุดช่วงรักษา",
+     "s": "ลืมกินยาหรือกินซ้ำจึงเสี่ยงไม่ได้ผลหรือเป็นพิษ",
      "answer": true
-    },
-    "ลืมกินยาหรือกินซ้ำจึงเสี่ยงไม่ได้ผลหรือเป็นพิษ"
+    }
    ],
    "audit": {
     "source_file": "preclinic/2/biomed/mcq/ข้อสอบ mcq/MCQ_Pharmacology [Med PSU 50].pdf",
@@ -1761,11 +1761,11 @@
    "mechanism": [
     "parasympathetic หลั่ง ACh",
     "จับ M3 receptor ที่ต่อมน้ำลาย",
+    "Gq เพิ่ม IP3 และ Ca2+",
     {
-     "s": "Gq เพิ่ม IP3 และ Ca2+",
+     "s": "หลั่งน้ำลายใสปริมาณมาก",
      "answer": true
-    },
-    "หลั่งน้ำลายใสปริมาณมาก"
+    }
    ],
    "audit": {
     "source_file": "preclinic/2/biomed/mcq/ข้อสอบ mcq/MCQ_Pharmacology [Med PSU 50].pdf",
@@ -2735,12 +2735,12 @@
    },
    "key_concept": "• CYP2C9 variant → dose ลด\n• VKORC1 variant → ไวต่อยา\n• ตรวจ INR",
    "mechanism": [
-    "warfarin ถูกเมแทบอไลต์โดย CYP2C9 และออกฤทธิ์ที่ VKORC1",
-    "variant ของ CYP2C9 ทำลายยาช้า; variant ของ VKORC1 ไวต่อยา",
     {
-     "s": "ขนาดปกติให้ฤทธิ์มากเกิน",
+     "s": "warfarin ถูกเมแทบอไลต์โดย CYP2C9 และออกฤทธิ์ที่ VKORC1",
      "answer": true
     },
+    "variant ของ CYP2C9 ทำลายยาช้า; variant ของ VKORC1 ไวต่อยา",
+    "ขนาดปกติให้ฤทธิ์มากเกิน",
     "INR สูง เลือดออกง่าย จึงต้องตรวจยีนเพื่อปรับขนาด"
    ],
    "audit": {
@@ -3070,11 +3070,11 @@
    "mechanism": [
     "paracetamol ขนาดสูงหรือใช้ไม่เหมาะสม",
     "ถูก CYP2E1 เปลี่ยนเป็น NAPQI มากขึ้น",
+    "glutathione หมด NAPQI จับโปรตีนเซลล์ตับ",
     {
-     "s": "glutathione หมด NAPQI จับโปรตีนเซลล์ตับ",
+     "s": "ตับอักเสบ/ตับวาย",
      "answer": true
-    },
-    "ตับอักเสบ/ตับวาย"
+    }
    ],
    "audit": {
     "source_file": "preclinic/2/biomed/mcq/ข้อสอบ mcq/MCQ_Pharmacology [Med PSU 50].pdf",
