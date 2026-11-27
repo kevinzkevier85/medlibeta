@@ -299,7 +299,15 @@
     "A": "valproate ไม่สัมพันธ์กับ HLA-B*1502",
     "B": "✓ carbamazepine + HLA-B*1502 → Stevens-Johnson syndrome"
    },
-   "key_concept": "• HLA-B*1502 พบมากในคนเอเชีย\n• ตรวจก่อนใช้ carbamazepine\n• HLA-B*5801 ↔ allopurinol"
+   "key_concept": "• HLA-B*1502 พบมากในคนเอเชีย\n• ตรวจก่อนใช้ carbamazepine\n• HLA-B*5801 ↔ allopurinol",
+   "mechanism": [
+    {
+     "s": "ผู้ป่วยมียีน HLA-B*15:02",
+     "answer": true
+    },
+    "carbamazepine กระตุ้น T cell ในคนที่มียีนนี้",
+    "เสี่ยง Stevens-Johnson syndrome จึงหลีกเลี่ยง"
+   ]
   },
   "21": {
    "explanation": "Phenytoin ทำให้ hirsutism และ gingival hyperplasia",
@@ -310,7 +318,15 @@
     "D": "perampanel ทำอารมณ์ก้าวร้าว/วิงเวียน",
     "E": "levetiracetam ทำ irritability"
    },
-   "key_concept": "• phenytoin: nystagmus, ataxia, hirsutism, gingival hyperplasia, megaloblastic anemia\n• teratogen: fetal hydantoin\n• zero-order kinetics ขนาดสูง"
+   "key_concept": "• phenytoin: nystagmus, ataxia, hirsutism, gingival hyperplasia, megaloblastic anemia\n• teratogen: fetal hydantoin\n• zero-order kinetics ขนาดสูง",
+   "mechanism": [
+    {
+     "s": "phenytoin",
+     "answer": true
+    },
+    "กระตุ้นการสร้าง collagen และการเจริญของรูขุมขน",
+    "ขนขึ้นที่ใบหน้า (hirsutism)"
+   ]
   },
   "22": {
    "explanation": "Phenobarbital เสริม GABA-A เหมือน benzodiazepine",
@@ -321,7 +337,15 @@
     "D": "✓ benzodiazepine เพิ่มความถี่เปิด Cl channel ของ GABA-A (barbiturate เพิ่มระยะเวลาเปิด)",
     "E": "vigabatrin ยับยั้ง GABA transaminase"
    },
-   "key_concept": "• BZD: เพิ่มความถี่เปิด Cl- channel\n• barbiturate: เพิ่มระยะเวลาเปิด\n• ทั้งคู่จับ GABA-A คนละตำแหน่ง"
+   "key_concept": "• BZD: เพิ่มความถี่เปิด Cl- channel\n• barbiturate: เพิ่มระยะเวลาเปิด\n• ทั้งคู่จับ GABA-A คนละตำแหน่ง",
+   "mechanism": [
+    "phenobarbital เพิ่มการทำงานของ GABA-A (เปิด Cl⁻ channel นานขึ้น)",
+    {
+     "s": "benzodiazepine ออกฤทธิ์ที่ GABA-A เหมือนกัน (เพิ่มความถี่การเปิด)",
+     "answer": true
+    },
+    "neurotransmitter เดียวกัน (GABA)"
+   ]
   },
   "23": {
    "explanation": "Phenobarbital เป็น CYP3A4 inducer ทำให้ itraconazole ถูกทำลายเร็วจนระดับยาไม่พอ",
@@ -349,7 +373,15 @@
     "C": "dantrolene ใช้รักษา malignant hyperthermia",
     "D": "naloxone ต้าน opioid ไม่ใช่ BZD"
    },
-   "key_concept": "• flumazenil: BZD antagonist, ระวังทำชักใน BZD dependence\n• naloxone: opioid\n• อาจต้องให้ซ้ำเพราะ half-life สั้น"
+   "key_concept": "• flumazenil: BZD antagonist, ระวังทำชักใน BZD dependence\n• naloxone: opioid\n• อาจต้องให้ซ้ำเพราะ half-life สั้น",
+   "mechanism": [
+    "ดื่มสุราร่วมกับ benzodiazepine กด CNS มาก",
+    {
+     "s": "flumazenil เป็น antagonist ที่ GABA-A benzodiazepine site",
+     "answer": true
+    },
+    "แก้ฤทธิ์กด CNS ของ benzodiazepine"
+   ]
   },
   "25": {
    "explanation": "ผู้สูงอายุเลี่ยง benzodiazepine ใช้ diphenhydramine (ตามเฉลย)",
@@ -428,7 +460,15 @@
     "D": "anxiety ไม่มีอารมณ์สูงและพูดมากแบบนี้",
     "E": "depression เป็นอารมณ์ตรงข้าม"
    },
-   "key_concept": "• mania ≥1 สัปดาห์: elevated mood, ↓sleep, pressured speech, grandiosity\n• ยา: lithium, valproate\n• bipolar I"
+   "key_concept": "• mania ≥1 สัปดาห์: elevated mood, ↓sleep, pressured speech, grandiosity\n• ยา: lithium, valproate\n• bipolar I",
+   "mechanism": [
+    {
+     "s": "อารมณ์ครึกครื้นผิดปกติ (mania)",
+     "answer": true
+    },
+    "self-esteem สูง พูดมาก ใช้เงินเกินตัว",
+    "วินิจฉัย mania"
+   ]
   },
   "31": {
    "explanation": "เชื่อว่าตนเป็นพระเจ้า มีพลังวิเศษ = delusion (grandiose)",
@@ -439,7 +479,15 @@
     "D": "depression เป็นอารมณ์",
     "E": "illusion คือบิดเบือนสิ่งเร้าจริง"
    },
-   "key_concept": "• delusion = fixed false belief\n• hallucination = perception without stimulus\n• grandiose delusion พบใน mania/schizophrenia"
+   "key_concept": "• delusion = fixed false belief\n• hallucination = perception without stimulus\n• grandiose delusion พบใน mania/schizophrenia",
+   "mechanism": [
+    {
+     "s": "เชื่อว่าตนเป็นพระเจ้ามีพลังวิเศษ",
+     "answer": true
+    },
+    "ความเชื่อผิดที่แก้ไม่ได้ ไม่ตรงความจริง",
+    "delusion (grandiose)"
+   ]
   },
   "32": {
    "explanation": "ความเครียดเฉียบพลัน sympathetic เพิ่ม blood glucose",
@@ -520,7 +568,15 @@
     "D": "✓ ตามเฉลยต้นฉบับ เลือก levodopa (การขาด dopamine ทำให้เกิดอาการแบบ NMS)",
     "E": "alprazolam ไม่ทำ NMS"
    },
-   "key_concept": "• NMS: ไข้สูง rigidity, autonomic instability, CK สูง\n• สาเหตุ: D2 blocker หรือหยุด dopamine agonist/levodopa\n• รักษา: dantrolene, bromocriptine"
+   "key_concept": "• NMS: ไข้สูง rigidity, autonomic instability, CK สูง\n• สาเหตุ: D2 blocker หรือหยุด dopamine agonist/levodopa\n• รักษา: dantrolene, bromocriptine",
+   "mechanism": [
+    {
+     "s": "ให้ levodopa เพิ่ม dopamine (หรือหยุด dopaminergic ทันที)",
+     "answer": true
+    },
+    "เกิดภาวะ neuroleptic malignant-like",
+    "ไข้สูง เหงื่อออก กล้ามเนื้อเกร็ง ความดันแปรปรวน"
+   ]
   },
   "37": {
    "explanation": "Haloperidol บล็อก D2 ที่ nigrostriatal ทำให้ acute dystonia",
@@ -580,7 +636,15 @@
     "D": "trimipramine เป็น TCA",
     "E": "amitriptyline เป็น TCA"
    },
-   "key_concept": "• SSRI: fluoxetine, sertraline, paroxetine, citalopram\n• SSRI เป็นยาแรกของ MDD"
+   "key_concept": "• SSRI: fluoxetine, sertraline, paroxetine, citalopram\n• SSRI เป็นยาแรกของ MDD",
+   "mechanism": [
+    {
+     "s": "fluoxetine บล็อก serotonin transporter (SERT)",
+     "answer": true
+    },
+    "serotonin ที่ synapse เพิ่ม",
+    "รักษาซึมเศร้า (SSRI)"
+   ]
   },
   "41": {
    "explanation": "Enuresis ในเด็กใช้ imipramine (TCA) ตามเฉลย",
@@ -591,7 +655,15 @@
     "D": "trimipramine ไม่ใช่ตัวเลือกที่ใช้ทั่วไป",
     "E": "amitriptyline ไม่ใช่ตัวเลือกที่ใช้ทั่วไป"
    },
-   "key_concept": "• enuresis: desmopressin เป็นตัวแรก, alarm\n• imipramine ใช้ได้แต่เสี่ยงหัวใจ"
+   "key_concept": "• enuresis: desmopressin เป็นตัวแรก, alarm\n• imipramine ใช้ได้แต่เสี่ยงหัวใจ",
+   "mechanism": [
+    {
+     "s": "imipramine (TCA)",
+     "answer": true
+    },
+    "มีฤทธิ์ต้าน muscarinic (anticholinergic)",
+    "กระเพาะปัสสาวะบีบตัวน้อยลง ใช้รักษา enuresis/overactive bladder"
+   ]
   },
   "42": {
    "explanation": "Endocannabinoid คือ anandamide (N-arachidonoylethanolamine)",
@@ -611,7 +683,15 @@
     "C": "constipation ไม่ใช่ผลหลักของ cannabinoid",
     "D": "dystonia ไม่ใช่ผลหลัก"
    },
-   "key_concept": "• cannabinoid ADR: dizziness, dry mouth, tachycardia, psychosis\n• หยุดยาเมื่อมี psychosis"
+   "key_concept": "• cannabinoid ADR: dizziness, dry mouth, tachycardia, psychosis\n• หยุดยาเมื่อมี psychosis",
+   "mechanism": [
+    {
+     "s": "ใช้ cannabinoid (THC) ขนาดสูง",
+     "answer": true
+    },
+    "กระตุ้น CB1 ใน mesolimbic มากเกิน",
+    "เกิด psychosis/disorientation จึงต้องหยุดยา"
+   ]
   },
   "44": {
    "explanation": "Piroxicam ยับยั้ง COX ทำให้ PGE2 ที่ปกป้องกระเพาะลดลง",
