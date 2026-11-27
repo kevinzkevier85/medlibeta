@@ -412,7 +412,15 @@
     "A": "✓ Verapamil เพิ่มเพื่อ control BP ต่อ",
     "B": "Hydralazine ทำ flushing/reflex tachycardia ซ้ำ"
    },
-   "key_concept": "• ACEi + thiazide + CCB เป็นสูตรมาตรฐาน\n• Hydralazine = reflex tachycardia ต้องใช้ร่วม β-blocker"
+   "key_concept": "• ACEi + thiazide + CCB เป็นสูตรมาตรฐาน\n• Hydralazine = reflex tachycardia ต้องใช้ร่วม β-blocker",
+   "mechanism": [
+    "ได้ HCTZ แล้วความดันยังสูง",
+    {
+     "s": "verapamil (CCB) บล็อก L-type Ca²⁺ ขยายหลอดเลือด",
+     "answer": true
+    },
+    "ความดันลดลง"
+   ]
   },
   "34": {
    "explanation": "Sildenafil (PDE5i) + nitroglycerin → cGMP ↑ มาก → severe hypotension",
@@ -442,7 +450,15 @@
     "B": "Digoxin ไม่ใช่ยาเร่งด่วน",
     "C": "Adrenaline ให้ทุก cycle แต่ไม่ใช่ antiarrhythmic"
    },
-   "key_concept": "• Amiodarone: K⁺ block (class III)\n• VF/pulseless VT: shock → epinephrine → amiodarone"
+   "key_concept": "• Amiodarone: K⁺ block (class III)\n• VF/pulseless VT: shock → epinephrine → amiodarone",
+   "mechanism": [
+    "หัวใจเต้นผิดจังหวะ",
+    {
+     "s": "amiodarone บล็อก K⁺ channel (class III) ยืด repolarization",
+     "answer": true
+    },
+    "ลดการเต้นผิดจังหวะ"
+   ]
   },
   "36": {
    "explanation": "WPW + chest pain/AF ใช้ procainamide (class Ia) · ไม่ใช้ AV nodal blocker",
@@ -453,7 +469,15 @@
     "D": "Verapamil ห้ามใน WPW AF",
     "E": "Digoxin ห้ามใน WPW"
    },
-   "key_concept": "• WPW: หลีกเลี่ยง AV nodal blocker (BB, CCB, digoxin)\n• เลือก procainamide / ibutilide / cardioversion"
+   "key_concept": "• WPW: หลีกเลี่ยง AV nodal blocker (BB, CCB, digoxin)\n• เลือก procainamide / ibutilide / cardioversion",
+   "mechanism": [
+    "WPW มี accessory pathway",
+    {
+     "s": "procainamide (class IA) บล็อก Na⁺ channel ชะลอ conduction",
+     "answer": true
+    },
+    "ลด reentry tachycardia"
+   ]
   },
   "37": {
    "explanation": "Hypokalemia เพิ่ม digoxin toxicity เพราะ K⁺ แย่งจับ Na⁺/K⁺-ATPase",
@@ -483,7 +507,15 @@
     "D": "Minoxidil ไม่ใช้ HF",
     "E": "✓ Carvedilol: β-blocker ลด mortality + negative inotropic"
    },
-   "key_concept": "• HF mortality ↓: ACEi/ARB, β-blocker (carvedilol, metoprolol, bisoprolol), spironolactone\n• Carvedilol ลด contractility และ remodeling"
+   "key_concept": "• HF mortality ↓: ACEi/ARB, β-blocker (carvedilol, metoprolol, bisoprolol), spironolactone\n• Carvedilol ลด contractility และ remodeling",
+   "mechanism": [
+    "หัวใจวายเรื้อรัง",
+    {
+     "s": "carvedilol (β-blocker + α-blocker) ลด remodeling",
+     "answer": true
+    },
+    "ลด mortality"
+   ]
   },
   "40": {
    "explanation": "Pericardial effusion ทำ cardiac silhouette ใหญ่ขึ้น (CTR ↑)",
@@ -564,7 +596,15 @@
     "D": "Pulm. blood flow เพิ่ม ไม่ลด",
     "E": "✓ Pulmonary arterial hypertension (Eisenmenger path)"
    },
-   "key_concept": "• VSD: L→R shunt → pulm. flow ↑ → PAH\n• PVR ↑ ถาวร → Eisenmenger (R→L)\n• CHF ในเด็ก: tachypnea, poor feeding"
+   "key_concept": "• VSD: L→R shunt → pulm. flow ↑ → PAH\n• PVR ↑ ถาวร → Eisenmenger (R→L)\n• CHF ในเด็ก: tachypnea, poor feeding",
+   "mechanism": [
+    "VSD เลือดไหลซ้ายไปขวามาก",
+    "ปอดได้เลือดมากเกิน หลอดเลือดปอดหนาตัว",
+    {
+     "s": "pulmonary arterial hypertension",
+     "answer": true
+    }
+   ]
   },
   "51": {
    "explanation": "CHF เด็ก: กินนมนาน เหนื่อย เหงื่อออกขณะกิน",
@@ -593,7 +633,15 @@
     "D": "✓ R→L shunt ผสมเลือดดำ",
     "E": "SVR ลดไม่ทำ cyanosis"
    },
-   "key_concept": "• TOF: VSD + overriding aorta + PS + RVH\n• R→L shunt → cyanosis\n• Tet spell: squatting เพิ่ม SVR"
+   "key_concept": "• TOF: VSD + overriding aorta + PS + RVH\n• R→L shunt → cyanosis\n• Tet spell: squatting เพิ่ม SVR",
+   "mechanism": [
+    "TOF มี VSD และ pulmonary stenosis",
+    {
+     "s": "เลือดดำผสมเลือดแดงผ่าน VSD ไปเลี้ยงร่างกาย (right-to-left shunt)",
+     "answer": true
+    },
+    "เขียว (cyanosis)"
+   ]
   },
   "54": {
    "explanation": "ทารกเขียวมาก ไม่มี murmur + CXR egg-on-a-string → TGA",
@@ -656,7 +704,15 @@
     "D": "D = PE (DVT → PE → paradoxical embolism ผ่าน PFO ได้ stroke)",
     "E": "Tension pneumothorax ไม่ใช่"
    },
-   "key_concept": "• DVT → PE → chest pain, dyspnea\n• Paradoxical embolism ผ่าน PFO → stroke\n• Cancer → hypercoagulable"
+   "key_concept": "• DVT → PE → chest pain, dyspnea\n• Paradoxical embolism ผ่าน PFO → stroke\n• Cancer → hypercoagulable",
+   "mechanism": [
+    "ผนัง aorta ชั้น intima ฉีก",
+    {
+     "s": "เลือดแทรกเข้าผนัง (dissection)",
+     "answer": true
+    },
+    "เจ็บหน้าอกร้าวหลัง ชีพจรสองข้างต่างกัน"
+   ]
   }
  },
  "duplicate_groups": {},

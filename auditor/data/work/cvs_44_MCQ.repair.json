@@ -269,7 +269,15 @@
     "C": "digoxin ไม่มีผลข้างเคียง/ปฏิกิริยาแบบที่โจทย์ถาม (ไม่เสริมฤทธิ์ขยายหลอดเลือดของ nitrate)",
     "D": "dobutamine ไม่มีผลข้างเคียง/ปฏิกิริยาแบบที่โจทย์ถาม (เป็นยาเพิ่มการบีบตัวของหัวใจ)"
    },
-   "key_concept": "• PDE5i + nitrate = contraindicated\n• cGMP สะสม\n• severe hypotension"
+   "key_concept": "• PDE5i + nitrate = contraindicated\n• cGMP สะสม\n• severe hypotension",
+   "mechanism": [
+    "nitroglycerin ปล่อย NO เพิ่ม cGMP",
+    {
+     "s": "sildenafil ยับยั้ง PDE5 เพิ่ม cGMP เช่นกัน",
+     "answer": true
+    },
+    "cGMP สูงมาก หลอดเลือดขยาย ความดันตกรุนแรง"
+   ]
   },
   "23": {
    "explanation": "Amiodarone (iodine-rich) → hyper/hypothyroidism",
@@ -297,7 +305,15 @@
     "B": "HCTZ → hypoK",
     "C": "Propranolol hyperK เล็กน้อย แต่ไม่เด่น"
    },
-   "key_concept": "• ACEi: hyperK, cough, angioedema\n• HCTZ: hypoK"
+   "key_concept": "• ACEi: hyperK, cough, angioedema\n• HCTZ: hypoK",
+   "mechanism": [
+    {
+     "s": "enalapril (ACE inhibitor) ยับยั้ง angiotensin II",
+     "answer": true
+    },
+    "aldosterone ลด ไตขับ K⁺ น้อยลง",
+    "hyperkalemia (ผลข้างเคียง)"
+   ]
   },
   "25": {
    "explanation": "Thiazide ทำให้ hyperglycemia (impair insulin)",
