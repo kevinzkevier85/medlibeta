@@ -182,7 +182,15 @@
     "D": "ต้นหายใจออก ยังลบ",
     "E": "✓ end of forced expiration → intrapleural pressure เป็นบวก"
    },
-   "key_concept": "• normal expiration: −5 cmH₂O ที่ FRC\n• forced expiration: กล้ามเนื้อหน้าท้อง/ intercostal ภายใน บีบอกให้ pressure > 0"
+   "key_concept": "• normal expiration: −5 cmH₂O ที่ FRC\n• forced expiration: กล้ามเนื้อหน้าท้อง/ intercostal ภายใน บีบอกให้ pressure > 0",
+   "mechanism": [
+    "forced expiration กล้ามเนื้อหายใจออกหดแรง",
+    "ความดันในช่องอกสูง",
+    {
+     "s": "pleural pressure เป็นบวกที่ปลาย forced expiration",
+     "answer": true
+    }
+   ]
   },
   "13": {
    "explanation": "pneumothorax: อากาศเข้า pleural space ทำให้ intrapleural pressure เท่าบรรยากาศ ปอดแฟบ ผนังอกเด้งออก",
@@ -307,7 +315,15 @@
     "D": "✓ decreased FEV1, normal compliance",
     "E": "compliance ลดพบใน restrictive"
    },
-   "key_concept": "• COPD: FEV1/FVC ลด\n• emphysema: compliance เพิ่ม\n• chronic bronchitis: compliance ปกติ"
+   "key_concept": "• COPD: FEV1/FVC ลด\n• emphysema: compliance เพิ่ม\n• chronic bronchitis: compliance ปกติ",
+   "mechanism": [
+    "COPD airway ตีบ ลมออกช้า",
+    "FEV₁/FVC ลดลง",
+    {
+     "s": "FEV₁ ลด แต่ lung compliance ปกติ (ตามเฉลย)",
+     "answer": true
+    }
+   ]
   },
   "20": {
    "explanation": "zone 1 = alveolar pressure > arterial pressure ไม่มี flow; blood transfusion เพิ่ม arterial/venous pressure ทำให้ zone 1 ลด (เฉลยต้นฉบับ D; AI เลือก PEEP)",
@@ -318,7 +334,15 @@
     "D": "✓ blood transfusion เพิ่ม perfusion pressure ทำให้ zone 1 ลด",
     "E": "ยืนตรง ทำให้ apex เป็น zone 1 มากขึ้น"
    },
-   "key_concept": "• zone 1: PA > Pa > Pv (ไม่มี flow)\n• เพิ่ม Pa หรือลด PA → zone 1 ลด\n• upright → apex zone 1"
+   "key_concept": "• zone 1: PA > Pa > Pv (ไม่มี flow)\n• เพิ่ม Pa หรือลด PA → zone 1 ลด\n• upright → apex zone 1",
+   "mechanism": [
+    {
+     "s": "blood transfusion เพิ่ม blood volume",
+     "answer": true
+    },
+    "pulmonary arterial pressure เพิ่ม",
+    "Pa > PA มากขึ้น zone 1 ลดลง"
+   ]
   },
   "21": {
    "explanation": "left heart failure → left atrial/pulmonary venous pressure เพิ่ม → capillary hydrostatic pressure เพิ่ม → น้ำรั่วเข้า interstitium",
@@ -516,7 +540,16 @@
     "D": "✓ proprioceptor กระตุ้นการหายใจทันที",
     "E": "chemoreceptor ไม่ใช่ตัวหลักตอนนี้"
    },
-   "key_concept": "• เริ่มออกกำลังกาย: neural/proprioceptive\n• ภายหลัง: K⁺, metabolites, temperature\n• ABG แทบไม่เปลี่ยนใน moderate exercise"
+   "key_concept": "• เริ่มออกกำลังกาย: neural/proprioceptive\n• ภายหลัง: K⁺, metabolites, temperature\n• ABG แทบไม่เปลี่ยนใน moderate exercise",
+   "mechanism": [
+    "ออกกำลังกาย กล้ามเนื้อและข้อเคลื่อนไหว",
+    {
+     "s": "proprioceptor ในกล้ามเนื้อและข้อถูกกระตุ้น",
+     "answer": true
+    },
+    "ส่ง afferent ไปศูนย์หายใจ",
+    "ventilation เพิ่มในนาทีแรก"
+   ]
   },
   "33": {
    "explanation": "oxymetazoline (α₁/α₂ agonist) ใช้นานเกิน 3 วัน → rebound congestion (rhinitis medicamentosa)",
@@ -546,7 +579,15 @@
     "D": "budesonide ใช้ถ้ามี exacerbation/eosinophil สูง",
     "E": "prednisolone ไม่ใช้เป็นประจำ"
    },
-   "key_concept": "• COPD maintenance: LAMA ± LABA\n• ICS เฉพาะ exacerbation บ่อย\n• SABA เป็น rescue"
+   "key_concept": "• COPD maintenance: LAMA ± LABA\n• ICS เฉพาะ exacerbation บ่อย\n• SABA เป็น rescue",
+   "mechanism": [
+    "COPD vagal tone ทำให้หลอดลมหดและหลั่งเมือก",
+    {
+     "s": "inhaled tiotropium บล็อก M3 ระยะยาว",
+     "answer": true
+    },
+    "หลอดลมขยาย เมือกลด เหนื่อยลดลง"
+   ]
   },
   "35": {
    "explanation": "acute dyspnea + bilateral wheeze + RR 30 (หืดกำเริบเฉียบพลัน) ใช้ SABA inhaled salbutamol ก่อน",
@@ -557,7 +598,15 @@
     "D": "hydrocortisone IV เพิ่มภายหลังถ้ารุนแรง",
     "E": "mifepristone ไม่เกี่ยว"
    },
-   "key_concept": "• acute asthma: SABA + O₂ ± systemic steroid\n• ICS = controller ไม่ใช่ rescue"
+   "key_concept": "• acute asthma: SABA + O₂ ± systemic steroid\n• ICS = controller ไม่ใช่ rescue",
+   "mechanism": [
+    "acute bronchospasm หวีดทั้งสองข้าง",
+    {
+     "s": "inhaled salbutamol (SABA) ออกฤทธิ์เร็ว",
+     "answer": true
+    },
+    "หลอดลมขยาย"
+   ]
   },
   "36": {
    "explanation": "หญิงไม่สูบบุหรี่ น้ำหนักลด มี mitosis มาก → adenocarcinoma มักเป็น peripheral nodule",
@@ -568,7 +617,15 @@
     "D": "ทั้งสองอย่าง ไม่เฉพาะ",
     "E": "apical infiltrate พบใน TB"
    },
-   "key_concept": "• adenocarcinoma: peripheral, ไม่สูบ, หญิง\n• squamous/small cell: central, สูบบุหรี่"
+   "key_concept": "• adenocarcinoma: peripheral, ไม่สูบ, หญิง\n• squamous/small cell: central, สูบบุหรี่",
+   "mechanism": [
+    "ผู้หญิงไม่สูบบุหรี่ มะเร็งปอดมักเป็น adenocarcinoma",
+    "เกิดจาก airway ส่วนปลาย",
+    {
+     "s": "มักพบเป็น peripheral nodule",
+     "answer": true
+    }
+   ]
   },
   "37": {
    "explanation": "ไข้ต่ำ ไอเรื้อรัง น้ำหนักลด ไอเป็นเลือด cavity → TB พบ epithelioid cells + caseous necrosis",
@@ -782,7 +839,15 @@
     "D": "compression เกิดจากของเหลว/อากาศกด",
     "E": "รวมสองชนิดไม่ใช่"
    },
-   "key_concept": "• resorption: obstruction\n• compression: effusion/pneumothorax\n• contraction: fibrosis (TB)"
+   "key_concept": "• resorption: obstruction\n• compression: effusion/pneumothorax\n• contraction: fibrosis (TB)",
+   "mechanism": [
+    "วัณโรคปอดเก่าทิ้งพังผืด",
+    "fibrosis ดึงรั้งเนื้อปอด",
+    {
+     "s": "contraction (cicatrization) atelectasis",
+     "answer": true
+    }
+   ]
   },
   "52": {
    "explanation": "สำลักตอนยืน/นั่ง สิ่งแปลกปลอมไหลเข้า right main bronchus (กว้าง สั้น ตรง) ลง right lower lobe",
@@ -793,7 +858,15 @@
     "D": "right upper lobe เมื่อนอนตะแคง",
     "E": "right middle lobe พบน้อย"
    },
-   "key_concept": "• ยืน/นั่ง → RLL\n• นอนหงาย → RLL superior segment\n• นอนตะแคงขวา → RUL"
+   "key_concept": "• ยืน/นั่ง → RLL\n• นอนหงาย → RLL superior segment\n• นอนตะแคงขวา → RUL",
+   "mechanism": [
+    "ยืนตัวตรง gravity ดึงลง",
+    "right main bronchus กว้าง สั้น ตรง",
+    {
+     "s": "สิ่งสำลักตกลง right lower lobe",
+     "answer": true
+    }
+   ]
   },
   "53": {
    "explanation": "หลังได้ surfactant ในทารก RDS lung compliance เพิ่ม ส่วน surface tension และ resistance ลด",
@@ -877,7 +950,15 @@
     "D": "right lateral ไม่ใช่ท่าตรวจ fluid",
     "E": "✓ right lateral decubitus"
    },
-   "key_concept": "• decubitus: ด้านที่สงสัยลงล่าง\n• เห็น fluid layer ≥ 10 mL\n• ยืนยัน free-flowing vs loculated"
+   "key_concept": "• decubitus: ด้านที่สงสัยลงล่าง\n• เห็น fluid layer ≥ 10 mL\n• ยืนยัน free-flowing vs loculated",
+   "mechanism": [
+    "ของเหลวไหลตาม gravity",
+    "ท่านอนตะแคงทำให้น้ำไหลไปด้านล่าง",
+    {
+     "s": "lateral decubitus เห็นน้ำเป็นแนวราบชัด",
+     "answer": true
+    }
+   ]
   }
  },
  "extra_edits": {}
